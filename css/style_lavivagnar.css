@@ -18,19 +18,19 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 ::-webkit-scrollbar-button:vertical:start {
-    background: url('https://seicing.com/res/rollup.png');
+    background: url('http://seicing.com/res/rollup.png');
 }
 
 ::-webkit-scrollbar-button:vertical:end {
-    background: url('https://seicing.com/res/rolldown.png');
+    background: url('http://seicing.com/res/rolldown.png');
 }
 
 ::-webkit-scrollbar-button:horizontal:start {
-    background: url('https://seicing.com/res/rollleft.png');
+    background: url('http://seicing.com/res/rollleft.png');
 }
 
 ::-webkit-scrollbar-button:horizontal:end {
-    background: url('https://seicing.com/res/rollright.png');
+    background: url('http://seicing.com/res/rollright.png');
 }
 
 ::-webkit-scrollbar-track {
@@ -90,7 +90,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url(https://seicing.com/res/img01.jpg) repeat-x left top;
+    background: #EEEBDA url(http://seicing.com/res/img01.jpg) repeat-x left top;
     font-size: 9pt;
     font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
     color: #ffffff;
@@ -135,7 +135,7 @@ a {
 }
 
 #wrapper {
-    background: url(https://seicing.com/res/img03l.png) repeat-y center top;
+    background: url(http://seicing.com/res/img03l.png) repeat-y center top;
     background-size: cover cover;
     z-index: -20;
 }
@@ -147,12 +147,12 @@ a {
 }
 
 #wrapper2 {
-    background: url(https://seicing.com/res/img02l.png) no-repeat center top;
+    background: url(http://seicing.com/res/img02l.png) no-repeat center top;
     background-size: cover cover;
 }
 
 #wrapper3 {
-    background: url(https://seicing.com/res/img04l.png) no-repeat center bottom;
+    background: url(http://seicing.com/res/img04l.png) no-repeat center bottom;
     background-size: cover cover;
 }
 

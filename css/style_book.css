@@ -61,7 +61,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url(https://seicing.com/res/img01.jpg) repeat-x left top;
+    background: #EEEBDA url(http://seicing.com/res/img01.jpg) repeat-x left top;
     font-size: 12pt;
     font-family: "微软雅黑", "Microsoft YaHei";
     color: rgb(54, 13, 13);
@@ -102,7 +102,7 @@ a {
 }
 
 #wrapper {
-    background: url(https://seicing.com/res/img0355.jpg) repeat-y center top;
+    background: url(http://seicing.com/res/img0355.jpg) repeat-y center top;
     background-size: cover cover;
 }
 
