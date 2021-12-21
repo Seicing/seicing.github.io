@@ -34,7 +34,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url($res/img01.jpg) repeat-x left top;
+    background: #EEEBDA url(https://seicing.com/res/img01.jpg) repeat-x left top;
     font-size: 9pt;
     color: #4D4D4D;
 }
@@ -78,7 +78,7 @@ a {
 }
 
 #wrapper {
-    background: url($res/img03b.png) repeat-y center top;
+    background: url(https://seicing.com/res/img03b.png) repeat-y center top;
     background-size: cover cover;
 }
 
@@ -89,7 +89,7 @@ a {
 }
 
 #wrapper2 {
-    background: url($res/img02b.png) no-repeat center top;
+    background: url(https://seicing.com/res/img02b.png) no-repeat center top;
     background-size: cover cover;
 }
 

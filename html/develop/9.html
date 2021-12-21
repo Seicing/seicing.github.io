@@ -1,19 +1,46 @@
-<meta charset="UTF-8" />
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-<!--Title-->
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('https://seicing.com/js/list/develop.html');
+    })
+</script>
+</head>
 
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
 <div style="position:relative;">
     <span style="font-family:宋体">寻路、物件制作、文件处理</span>
     <div style="position:absolute; z-index:2; top:10px">
-        <img src="$res/131414.png" alt="">
+        <img src="https://seicing.com/res/131414.png" alt="">
     </div>
-</div>
-
-<!--Content-->
-<div id="lavipage" page="9"></div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="9"></div>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/dhhdh.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/dhhdh.gif">
 <br><br> 因为demo里面是要做跟随玩家前进的队友的，不仅如此，敌人想要接近玩家也得需要遵循一定的规则，所以在这段时间里研究了一下寻路
 
 <br> 为了好好地测试寻路系统，还把房间进行了扩建，弄成跳台关卡的感觉，这个房间是非最终内容的旧版tile，但是以这种方法发挥余热也算对得起它了
@@ -21,23 +48,23 @@
 <br>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/dgsh.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/dgsh.jpg">
 <br><br> 给房间消失在黑暗的地方做了过渡，这个很蛋疼，幸好这次demo并不需要做这种地形
 
 <br>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/hweh.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/hweh.jpg">
 <br><br> 虽然最后还是换成了熔岩，好热啊，掉下去可要命了
 <br>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/QQ截图20200525021915.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/QQ截图20200525021915.jpg">
 <br><br> 制作这个地图的时候还顺便规定好角色的跳跃力，目前的设置是余极限距离可以跳3.2格
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/ehsh.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/ehsh.jpg">
 <br><br>
 
 <br> 平地上的寻路没有什么大问题，跳跃的话，由unity它自动生成提供给ai判断跳跃的点
@@ -45,7 +72,7 @@
 <br>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/posbo.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/posbo.gif">
 <br><br> 可怜
 
 <br> 后面解决了问题后雪人仔进行连续跳跃的时候还可能因为速度问题掉下去，不过不是什么大问题，最后修正成果
@@ -53,24 +80,24 @@
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/edhgw.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/edhgw.gif">
 <br><br> 终于跳过去了，大约是没什么问题了
 <br> 这部分不是我负责的，所以只是粗略记录一下相关内容，具体就略过了
 <br> 在草泥马解决这个蛋疼的寻路的时候，我一边在重新绘制需要用到的tile，并且一边制作地图需要的物件
 <br>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/edh.png" width="800px">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/edh.png" width="800px">
 <br><br> 树木之类的东西则是选择独立uv，之前打算和地图共享同一个uv，被草泥马辱骂了
 <br>
 
 <br><br>
-<img src="$res/2fatcatpool/develop/5/gehh.png">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/gehh.png">
 <br><br> 建模、修正以及放到游戏里实装这些就不废话，目前的话就记录一下几个比较重要的点
 <br> ①.模型里面所有的面都一定要绑定到骨头里，不然会出现互相打架的情况，产生以下的效果：
 <br>
 
-<img src="$res/2fatcatpool/develop/5/ewh.png">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/ewh.png">
 <br> 没有绑定骨骼的树干和树叶本身90°垂直了，极其蛋疼，，，
 <br><br> ②.不同种类的模型适用不同的导出方式，主要有几类:
 
@@ -78,13 +105,13 @@
 <br> 2.Tile场景类，导出之前要手动把uv格子调整到原来的96.5%（这个草泥马可能会处理）
 <br> 3.动作类，只需要导出骨骼，这一点直接使用blender里面的默认设置“战撸”（具体其实就是图里这样剔除了多余的东西）
 <br>
-<img src="$res/2fatcatpool/develop/5/QQ截图20200525023436.jpg"><img src="$res/2fatcatpool/develop/5/QQ截图20200525023431.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/QQ截图20200525023436.jpg"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/QQ截图20200525023431.jpg">
 <br><br> ③.实装到unity的时候，都适用于新建材质后，材质指定特定的贴图，然后让模型对应的材质信息适用对应的贴图，ok
 
 
 <br> 遇到动画不会动的场合下，是unity的版本更新造成的问题，它自动适用了新的动画，而要让单一循环的动画播放起来的话，使用旧版的legacy才能正常播放而不是默认的generic
 <br>
-<img src="$res/2fatcatpool/develop/5/erherwh.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/erherwh.jpg">
 <br><br> ④.把所有成功实装到unity里面的模型进行prefab化
 
 
@@ -94,11 +121,11 @@
 <br> 3.Model拖动到Prefab目录下的正确位置，然后删掉场景的Model对象
 <br> 4.点击Prefab，选择面板的Open Prefab，在里面进行例如Mesh碰撞判定之类的配置<br> 配置完成后使用配置好的Prefab进行调用
 <br>
-<img src="$res/2fatcatpool/develop/5/QQ截图20200525023930.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/QQ截图20200525023930.jpg">
 <br><br> 暂时的效果预览
 
 <br>
-<img src="$res/2fatcatpool/develop/5/dsg.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/5/dsg.jpg">
 <br><br> 最后还是记录一下vscode里面要用到的对git操作相关的命令吧，因为特殊缘故，原来使用的源树林檎炸裂了，到底为啥俺暂且蒙在鼓里
 
 
@@ -128,19 +155,29 @@
 
 
 
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
 
-<!--List-->
+            </div>
+
+        </div>
+    </div>
+</body>
 
 
-<!--Bottom-->
-<a href="$html/index.html"><b>回到首页</b></a>
-
-<!--Head-->
-<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#sidebar').load('$js/list/develop.html');
-    })
-</script>
-
-<!--Tail-->
+</html>

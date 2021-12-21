@@ -1,16 +1,43 @@
-<meta charset="UTF-8" />
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-<!--Title-->
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('https://seicing.com/js/list/develop.html');
+    })
+</script>
+</head>
 
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
 <div style="position:relative;">
     <span style="font-family:宋体">加法、UV动画、粒子效果</span>
     <div style="position:absolute; z-index:2; top:10px">
-        <img src="$res/131414.png" alt="">
+        <img src="https://seicing.com/res/131414.png" alt="">
     </div>
-</div>
-
-<!--Content-->
-<div id="lavipage" page="6"></div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="6"></div>
 
 加法其实在上一篇里面就已经做好了，所谓的加法就是把两个素材的RGB值相加，得到更接近白色的颜色，模拟发光效果，所以业界偶尔也会把混合模式的加法称之为发光<br> 假如我熔岩的颜色是(255,165,0)，地板的颜色是(179,168,150)，把熔岩放在地板上使用加法计算两者重叠的颜色是(434,333,150)，然后省略掉溢出部分的(255,255,150)就是最终的叠加颜色
 
@@ -18,7 +45,7 @@
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/QQ截图20200307191027.jpg"><img src="$res/2fatcatpool/develop/2/QQ截图20200307191034.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307191027.jpg"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307191034.jpg">
 <br><br> 这样的熔岩池会显得很热很亮，这就是加法的妙处，这个是图像方面基础中的基础
 
 
@@ -27,7 +54,7 @@
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/QQ截图20200307191357.jpg"> <img src="$res/2fatcatpool/develop/2/QQ截图20200307191452.jpg"> <img src="$res/2fatcatpool/develop/2/QQ截图20200307191516.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307191357.jpg"> <img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307191452.jpg"> <img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307191516.jpg">
 <br><br> 3d的好处就是足够的矢量，这种动画如果在2d里面实现的话会麻烦不少
 
 <br> 舍弃一定的灵动性，把绘制的压力减轻，估计这是现在很多人选择做3d的原因，2d美术实在是太需要实力和耐心了
@@ -35,11 +62,11 @@
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/dgadh.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/dgadh.gif">
 <br><br> 墙壁上的发光符文也是用加法和类似的alpha关键帧做出来！
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/gdsgdsg.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/gdsgdsg.gif">
 <br><br> 最后图像方面最重要的一个东西就是粒子效果
 
 
@@ -48,20 +75,20 @@
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/QQ截图20200307192511.jpg" width="370px"> <img src="$res/2fatcatpool/develop/2/QQ截图20200307192522.jpg" width="370px"> <img src="$res/2fatcatpool/develop/2/sadfggag.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307192511.jpg" width="370px"> <img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307192522.jpg" width="370px"> <img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/sadfggag.gif">
 <br><br> 这个工具的指标都挺明了的，基本上捣鼓一下就知道怎么用
 <br> 粒子效果常常用来做火焰之类的特效，所以这里就用火把上的火焰开刀了
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/QQ截图20200307192948.jpg"> <img src="$res/2fatcatpool/develop/2/gesdgesg.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/QQ截图20200307192948.jpg"> <img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/gesdgesg.gif">
 <br><br> 加了个热气粒子，看着就很热的样子
 <br> 熔岩上的热气也是，这里就用了一下自己定制的新指标，给初始化那加了一个发射位置随机的东西，让粒子生成的地方不是一个点，而是一个面，让粒子可以覆盖整个熔岩池，而不是挤在一起
 <br> 这些工具都可以通过自定义指标获得不同的效果，只要思路够灵活，在未来的制作中也要多多参考别人的做法
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/2/sagasgagsg.gif" width="800px">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/2/sagasgagsg.gif" width="800px">
 <br><br> 热气腾腾的房间
 <br> 接下来就是重新绘制地图块了，这个毕竟只是旧版本的地图块，用来技术测试用，现在技术没什么问题了，可以继续下一步了
 <br> <br>
@@ -81,19 +108,29 @@
 
 
 
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
 
-<!--List-->
+            </div>
+
+        </div>
+    </div>
+</body>
 
 
-<!--Bottom-->
-<a href="$html/index.html"><b>回到首页</b></a>
-
-<!--Head-->
-<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#sidebar').load('$js/list/develop.html');
-    })
-</script>
-
-<!--Tail-->
+</html>

@@ -1,96 +1,123 @@
-<meta charset="UTF-8" />
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-<!--Title-->
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('https://seicing.com/js/list/develop.html');
+    })
+</script>
+</head>
 
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
 <div style="position:relative;">
     <span style="font-family:宋体">地图制作·上</span>
     <div style="position:absolute; z-index:2; top:10px">
-        <img src="$res/131414.png" alt="">
+        <img src="https://seicing.com/res/131414.png" alt="">
     </div>
-</div>
-
-<!--Content-->
-<div id="lavipage" page="11"></div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="11"></div>
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/wsfgwgwg.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/wsfgwgwg.jpg">
 <br><br> 开始制作地图
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719013934.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719013934.jpg">
 <br><br> 测试用的地形大概长这样，按照这个感觉用tile建模法建模出来看看
 <br> 结果地狱啊，，，
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719014405.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719014405.jpg">
 <br><br> 大概的地形建模好了，放到游戏里的实际效果
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719014616.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719014616.jpg">
 <br><br> 方块感太可怕了，这样的地图看起来更像在玩MC，不够真实
 <br> 手动把地图的边缘修改为斜边的感觉，感觉像样了不少
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719015430.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719015430.jpg">
 <br><br> 但是衍生出一个问题就是拉斜之后地面边缘的石头怎么办
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719015553.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719015553.jpg">
 <br><br> 邪道：面片战斗术，缺点就是太过耗时耗力了
 <br> 其实想过画出曲线然后生成图像线的做法，但是不会做
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719015910.jpg">
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719015917.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719015910.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719015917.jpg">
 <br><br> 正道：使用tile工具生成面之后，选择侧边进行拉动，省时省力
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719020014.jpg">
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719020023.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719020014.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719020023.jpg">
 <br><br> 事实上这套做法的前提下我们已经逐渐放弃了死板的tile风格画面，使用类似的偏自由的大tile模式了
 <br> 进行处理后加入装饰物，开始有游戏地图的感觉了
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719020558.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719020558.jpg">
 <br><br> 之后的地图考虑到部件会比较多，所以确定了一个模版，使用脚本读取地图模型的名字自动赋予对应的碰撞属性
 <br> 障碍物：_NP(Notpass)
 <br> 可通行：_CP(Canpass)
 <br> 滑落属性：_BF(BackFall)
 <br> 这样可以减免很多不必要的麻烦
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719020840.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719020840.jpg">
 <br><br> 地图最右面的那两个坡不需要处理uv，直接重置掉让所有面用同一个贴图才行
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719021126.jpg"><img src="$res/2fatcatpool/develop/7/QQ截图20200719021257.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719021126.jpg"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719021257.jpg">
 <br><br> 另一方面还是得想办法减少制作地图的成本，例如让草泥马把建模插件进行魔改，弄出九宫格对齐，方便做大量铺砌
 <br> 目前地图渲染本身就先做到这里，黄昏时的效果，挺浪漫的
 
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719021947.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719021947.jpg">
 <br><br> 场景先到这里，下面就是解决其他技术上的问题
 <br> 这个建立在全地图都使用真光的基础，为了可以上ns，我们打算安排上烘培场地阴影+人物实时投影的中级画质模式，以及人物完全用圈圈影的低画质模式
 <br>
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719022318.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719022318.jpg">
 <br><br> 原生烘培出来的阴影非常混乱，所以不处理是不行的
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719022436.jpg"><img src="$res/2fatcatpool/develop/7/QQ截图20200719022447.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719022436.jpg"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719022447.jpg">
 <br><br> 处理杂乱的影子信息，让里面的明暗对比更加暴力，显得更有原来的感觉
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ图片20200719022732.jpg"><img src="$res/2fatcatpool/develop/7/QQ图片20200719022741.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ图片20200719022732.jpg"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ图片20200719022741.jpg">
 <br><br> 真光以及烘培光的效果对比，几乎没有差别
 
 <br> 烘培场地阴影有一个问题就是烘培出来的影子是假的，不会和人物进行互动，为了解决这个情况一般都是用代码进行模拟变暗
 <br> 在ps时期的幻想水浒传2里面就有这样的一个模拟阴影效果，只是他们是2d素材，效果不算太好
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ图片20200719023047.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ图片20200719023047.gif">
 <br><br> 原理是规划那些地方是有阴影的，让软件记录这个信息，物件走到阴影内部的时候会根据指定点附近的颜色取色，得出混合色
 <br> 现在科技发达，这些东西都是有现成的插件的
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ图片20200719021555.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ图片20200719021555.gif">
 <br><br> 实际效果，感觉没有多大的问题，实际上在草地地图上试了一下烘培，有一种比实时光还要好看的错觉（
 
 <br><br>
-<img src="$res/2fatcatpool/develop/7/QQ截图20200719023353.jpg">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/7/QQ截图20200719023353.jpg">
 <br><br> 接下来将会继续深化以及跟进地图方面的技术
 
 <br><br><br>
@@ -110,19 +137,29 @@
 
 
 
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
 
-<!--List-->
+            </div>
+
+        </div>
+    </div>
+</body>
 
 
-<!--Bottom-->
-<a href="$html/index.html"><b>回到首页</b></a>
-
-<!--Head-->
-<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#sidebar').load('$js/list/develop.html');
-    })
-</script>
-
-<!--Tail-->
+</html>

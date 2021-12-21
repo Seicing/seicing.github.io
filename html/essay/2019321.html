@@ -1,22 +1,49 @@
-<meta charset="UTF-8" />
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-<!--Title-->
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('https://seicing.com/js/list/essay.html');
+    })
+</script>
+</head>
 
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
 <div style="position:relative;">
     <span style="font-family:宋体">2019.3.21</span>
     <div style="position:absolute; z-index:2; top:10px">
-        <img src="$res/131414.png" alt="">
+        <img src="https://seicing.com/res/131414.png" alt="">
     </div>
-</div>
-
-<!--Content-->
-<div id="lavipage" page="8"></div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="8"></div>
 <span>
     使用鼠标可以很轻易地调整射击角度攻击敌人 <br>
-    <img src="$res/fatcatpool/essay/wfwaghwsh.png"><br> 但是如果使用只能输入八个方向的手柄或者是纯键盘，在不移动的前提下，就会出现这种情况 <br>
-    <img src="$res/fatcatpool/essay/阿双方各沙钢.gif"> <br> 今晚的课题就是解决这个蛋疼的问题 <br> <br> “角度修正辅助功能” <br> 所谓的角度修正，就是在角色朝向正确的前提下，容忍一定的角度偏差，使得攻击带有偏角补偿 <br>
-    <img src="$res/fatcatpool/essay/我去让其他其他区.gif"> <br> 这个例子就是加入了角度偏差后，只要角度差得不太远，就可以在这两个方向攻击到敌人 <br>
-    <img src="$res/fatcatpool/essay/wetqetgqt.gif"> <br> 和鼠标指定角度类似，发射出去的箭朝着特定敌人的方向发射，而这个敌人到底怎么指定，这个机制有什么限制，就是今晚的课题
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/wfwaghwsh.png"><br> 但是如果使用只能输入八个方向的手柄或者是纯键盘，在不移动的前提下，就会出现这种情况 <br>
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/阿双方各沙钢.gif"> <br> 今晚的课题就是解决这个蛋疼的问题 <br> <br> “角度修正辅助功能” <br> 所谓的角度修正，就是在角色朝向正确的前提下，容忍一定的角度偏差，使得攻击带有偏角补偿 <br>
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/我去让其他其他区.gif"> <br> 这个例子就是加入了角度偏差后，只要角度差得不太远，就可以在这两个方向攻击到敌人 <br>
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/wetqetgqt.gif"> <br> 和鼠标指定角度类似，发射出去的箭朝着特定敌人的方向发射，而这个敌人到底怎么指定，这个机制有什么限制，就是今晚的课题
     <br> <br> <br>
 
     <b>锁定机制重制</b> <br> 原有的锁定键功能是锁定一个敌人，显示其血条，然后就没了 <br> 现在的锁定功能会拆分成
@@ -34,7 +61,7 @@
 <span style="color:#FF0000">集中锁定</span>模式的前提下，就会开启
 <span style="color:#FF0000">角度修正辅助功能</span><br> 就是和上面的图一样，角色的射击角度会产生容忍偏差值，而且角色会维持按下锁定键时候发射的角度进行移动，哪怕你在后退
 <br>
-<img src="$res/fatcatpool/essay/问题问题问题.gif"> <br> 进入角度修正辅助功能后，哪怕角色往其他方向移动，也会维持这个射击角度进行移动，直到你松开锁定键
+<img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/问题问题问题.gif"> <br> 进入角度修正辅助功能后，哪怕角色往其他方向移动，也会维持这个射击角度进行移动，直到你松开锁定键
 <br> 要注意的是，不单指远程攻击，近程攻击也会适用这个机制
 <br> 现在开始，所有技能都分为
 <span style="color:#FF0000">朝向独立</span>和
@@ -42,7 +69,7 @@
 <span style="color:#FF0000">朝向独立</span>：集中锁定状态下，仅仅是攻击的时候会改变朝向，攻击后角色的朝向依旧会保持你方向键的方向，哪怕是依旧按着锁定键<br>
 <span style="color:#FF0000">朝向继承</span>：就是上面说的，集中锁定状态下，进行攻击后，会维持上次攻击后的方向，直到松开锁定键<br><br> 朝向独立的技能大多数是近战，朝向继承的技能大多数是可以用来边打边跑的远程攻击
 <br> 当然，使用鼠标的话，可以把这个功能关掉完全手动瞄准
-<br>当然，这个只是偏角功能，假如你集中锁定了左面的敌人，但是你朝向是下方，那么你发射弩箭也只会朝着正下方发射，不会自动转向射到左面的敌人<br><img src="$res/fatcatpool/essay/所有都是有何深意和.png"> <br> <br><br><br> 伴随这个系统而来的新系统就是
+<br>当然，这个只是偏角功能，假如你集中锁定了左面的敌人，但是你朝向是下方，那么你发射弩箭也只会朝着正下方发射，不会自动转向射到左面的敌人<br><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/所有都是有何深意和.png"> <br> <br><br><br> 伴随这个系统而来的新系统就是
 <span style="color:#FF0000">伪搓招系统</span><br> 所谓的伪搓招就是指，设定按键的时候，支持组合键了
 <br> 例如在手柄上设定了锁定键是“
 <span style="color:#FF0000">LT</span>”，普通攻击是“
@@ -58,19 +85,29 @@
 
 
 
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
 
-<!--List-->
+            </div>
+
+        </div>
+    </div>
+</body>
 
 
-<!--Bottom-->
-<a href="$html/index.html"><b>回到首页</b></a>
-
-<!--Head-->
-<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#sidebar').load('$js/list/essay.html');
-    })
-</script>
-
-<!--Tail-->
+</html>
