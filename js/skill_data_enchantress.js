@@ -396,7 +396,7 @@ new Skill("doll_forest", 5, 0, {
         </tr>
     </table>
 
- <a href="http://seicing.com/res/dnfclass/skillgif/女巫/偏爱.gif" onmouseout="hiddenPic();" onmousemove="showPic(event,'http://seicing.com/res/dnfclass/skillgif/女巫/偏爱.gif');">这里输入文字</a>
+ <a href="https://seicing.com/res/dnfclass/skillgif/女巫/偏爱.gif" onmouseout="hiddenPic();" onmousemove="showPic(event,'https://seicing.com/res/dnfclass/skillgif/女巫/偏爱.gif');">这里输入文字</a>
 
                 <img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/魔法攻击.png" title="魔法攻击"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/攻击.png" title="攻击"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/抓取.png" title="抓取"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/固定伤害.png" title="固定伤害"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/BUFF.png" title="BUFF">
   <img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/魔法攻击.png" title="魔法攻击"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/攻击.png" title="攻击"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/固定伤害.png" title="固定伤害"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/BUFF.png" title="BUFF"><img src="https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/icon/skill/无色技能.png" title="无色技能">

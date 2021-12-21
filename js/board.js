@@ -38,7 +38,7 @@ function newComment(text, author, time, floor) {
 
     if (author == 'python script -D') {
         var msg = document.createElement('div');
-        msg.innerHTML = (floor + 1) + '楼  Posted by: ' + '   ' + ' <img src="http://seicing.com/res/seicingsign.png"><font color="red">精锐战猫</font> ' + ' | ' + time;
+        msg.innerHTML = (floor + 1) + '楼  Posted by: ' + '   ' + ' <img src="https://seicing.com/res/seicingsign.png"><font color="red">精锐战猫</font> ' + ' | ' + time;
         msg.align = 'right';
         layer.appendChild(msg);
     } else {
@@ -49,7 +49,7 @@ function newComment(text, author, time, floor) {
     }
 
     var img = document.createElement('img');
-    img.src = 'http://seicing.com/res/131414.png';
+    img.src = 'https://seicing.com/res/131414.png';
     img.draggable = false;
     layer.appendChild(img);
 
