@@ -61,7 +61,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url(http://seicing.com/res/img01.jpg) repeat-x left top;
+    background: #EEEBDA url($res/img01.jpg) repeat-x left top;
     font-size: 9pt;
     color: #4D4D4D;
 }
@@ -110,7 +110,7 @@ a {
 a:hover {}
 
 #wrapper {
-    background: url(http://seicing.com/res/img03.jpg) repeat-y center top;
+    background: url($res/img03.jpg) repeat-y center top;
     background-size: cover cover;
 }
 
