@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    text-align: left;
+    border: 1px solid #CABC85;
+    padding: 1px 1px 1px 1px;
+}

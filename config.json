@@ -1,0 +1,61 @@
+{
+    "res": {
+        "elitefatcat": {
+            "url": "https://e.coding.net/seicing/elitefatcat.git",
+            "head": "https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/",
+            "path": "res/2fatcatpool"
+        },
+        "fatcatpool": {
+            "url": "https://e.coding.net/seicing/fatcatpool.git",
+            "head": "https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/",
+            "path": "res/fatcatpool"
+        },
+        "dnfclass2": {
+            "url": "https://e.coding.net/seicing/dnfclass2.git",
+            "head": "https://seicing.coding.net/p/dnfclass2/d/dnfclass2/git/raw/master/",
+            "path": "res/dfclass"
+        },
+        "3fatcatpool": {
+            "url": "https://e.coding.net/seicing/3fatcatpool.git",
+            "head": "https://seicing.coding.net/p/3fatcatpool/d/3fatcatpool/git/raw/master/",
+            "path": "res/3fatcatpool"
+        },
+        "dclass": {
+            "url": "https://e.coding.net/seicing/dclass.git",
+            "head": "https://seicing.coding.net/p/dclass/d/dclass/git/raw/master/",
+            "path": "res/dnfclass3"
+        }
+    },
+    "module": {
+        "dnfclass/技能模版": "headless",
+        "dnfclass": "headless",
+        "aoe2/2": "headless",
+        "aoe2/cam": "headless",
+        "aoe2/cam/ano": "headless",
+        "aoe2/cam/bno": "headless",
+        "aoe2/heroes": "headless",
+        "aoe2/buildings": "headless",
+        "aoe2/unit": "headless",
+        "aoe2/unitaoe4": "headless",
+        "aoe2/4": "headless",
+        "aoe2/buildingsaoe1": "headless",
+        "aoe2/buildingsaoe4": "headless",
+        "aoe2/buildingsaoe4/landmark": "headless",
+        "aoe2/unitaoe1": "headless",
+        "aoe3/3": "headless",
+        "lastarr": "headless",
+        "book": "book",
+        "large": "large",
+        "picture": "picture",
+        "closers": "picture",
+        "largelv": "lavivagnarlarge",
+        "fatcatpoolelite": "lavivagnar",
+        "lavivagnar": "lavivagnar",
+        "lavivagnar/system": "lavivagnar",
+        "lavivagnar/character": "lavivagnar2",
+        "lavivagnar/story": "lavivagnar",
+        "lavivagnar/set": "lavivagnar",
+        "lavivagnar/meiji": "lavivagnar",
+        "lavivagnar/khulan": "lavivagnar3"
+    }
+}

@@ -1,0 +1,110 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">2020.7.20</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="62"></div>
+
+<b>回避率</b><br> 主控角色不存在这个概念，所有攻击都需要躲过去，不然100%会被打中
+<br> 但是在AI操控的队友前提下这个概念是存在的，他们很难判断自己是否处于危险之中，为了确保他们的生存几率，他们会拥有回避率这个概念免疫一定的伤害值
+<br> 速度影响AI角色的回避率，速度越高越容易躲过敌人的攻击，回避率=速度/(速度+40)，当判定回避成功时AI不会受到任何伤害和硬直
+<br> 敌人部分攻击会附带回避率减免属性，直接减去队友自身的回避率得到判定时实际适用的回避率，例如50速度的世清回避率是55.6%，但是某个敌人的攻击会减免50%回避率，世清将会有5.6%的几率躲过这个攻击
+<br> 主要AI角色的回避率如下
+<br> <br>
+
+<table id="customers" frame="box" style="width:800px">
+    <tr>
+        <td style="background-color:#000000">
+            <span style="color:#ffffff">姓名</span>
+        </td>
+        <td style="background-color:#000000">
+            <span style="color:#ffffff">速度</span>
+        </td>
+        <td style="background-color:#000000">
+            <span style="color:#ffffff">回避率</span>
+        </td>
+        <td style="background-color:#000000">
+            <span style="color:#ffffff">姓名</span>
+        </td>
+        <td style="background-color:#000000">
+            <span style="color:#ffffff">速度</span>
+        </td>
+        <td style="background-color:#000000">
+            <span style="color:#ffffff">回避率</span>
+        </td>
+    </tr>
+    <tr>
+        <td>Khulan</td>
+        <td>9</td>
+        <td>18.4%</td>
+        <td>Brilliant Spirit</td>
+        <td>56</td>
+        <td>58.3%</td>
+    </tr>
+    <tr>
+        <td>Iuimi</td>
+        <td>22</td>
+        <td>35.5%</td>
+        <td>Ven</td>
+        <td>12</td>
+        <td>23.1%</td>
+    </tr>
+    <tr>
+        <td>Iris</td>
+        <td>7</td>
+        <td>14.9%</td>
+        <td>Sarchlent</td>
+        <td>13</td>
+        <td>24.5%</td>
+    </tr>
+    <tr>
+        <td>Louich</td>
+        <td>21</td>
+        <td>34.4%</td>
+        <td>Sayamagne</td>
+        <td>5</td>
+        <td>11.1%</td>
+    </tr>
+    <tr>
+        <td>Aszgina</td>
+        <td>17</td>
+        <td>29.8%</td>
+        <td>Kruv'</td>
+        <td>32</td>
+        <td>44.4% *</td>
+    </tr>
+    <tr>
+        <td>Ekaterina</td>
+        <td>9</td>
+        <td>18.4%</td>
+        <td>Eyeo</td>
+        <td>13</td>
+        <td>24.5%</td>
+    </tr>
+</table>
+* Blood Void最大加持下可以达到94.4%
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/essay.html');
+    })
+</script>
+
+<!--Tail-->

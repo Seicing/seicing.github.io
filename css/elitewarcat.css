@@ -1,0 +1,43 @@
+﻿
+.dnfmyth {
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #F8C63D), color-stop(1, #CC66E7));
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+}
+
+.dnfep {
+    color: #FFB11B;
+    font-weight:bold 
+}
+
+.dnfun {
+    color: #FF00FF;
+    font-weight:bold 
+}
+
+.dnfra {
+    color: #B36BFF;
+    font-weight:bold 
+}
+
+.dnfco {
+    color: #68D5ED;
+    font-weight:bold 
+}
+
+.dnfle {
+    color: #FF7800;
+    font-weight:bold 
+}
+
+.dnfch {
+    color: #FF6666;
+    font-weight:bold 
+}
+
+.dnfset {
+    color: #78FF1E;
+    font-weight:bold 
+}

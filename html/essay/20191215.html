@@ -1,0 +1,58 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">2019.12.15</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="40"></div>
+<b>判断</b><br> 根据区域的分割以及怪物的性能来判断是否采取跳跃到跳台的方法来追击玩家
+<br> ·怪物没有跳跃性能的话，不会跳跃追逐玩家
+<br> ·怪物拥有跳跃性能，但是区域内不包括跳台的话，不会跳跃追逐玩家
+<br> ·怪物拥有跳跃性能，区域内也包括跳台，但是区域内的陆地边缘没有和另一个区域的陆地边缘接续的话，依旧不会跳跃追逐玩家
+<br> ·满足上面三种条件的怪物才会跳跃追逐玩家
+<br> APC的判定和怪物有所不同 <br> ·玩家跳跃到跳台上落地后，APC会跟着玩家跳跃过来 <br> ·如果跳台的大小低于一定水平的话，APC不会跟着跳过来
+<br> <br>
+<b>表现</b><br> APC会采用人形怪物特有的跳跃动作跟随玩家跳跃
+<br> 怪物如果有跳跃动作的话，也会跟着使用跳跃动作进行跳跃
+<br> 没有跳跃动作的话，怪物会闪现过来
+<br> <br>
+
+
+<b>特殊情况处理</b><br> 怪物以及APC的跳跃本质上只是播放动画，他们在进行跳跃的时候，会强制性地从一个点跳跃到另一个点
+<br> 跳跃时如果遭受到攻击的话，会中止跳跃然后坠落
+<br> 跳跃成功的话，假如落点被玩家阻挡的话，跳跃者会挤开玩家，而不是玩家挤出跳跃者，让跳跃者坠地
+<br>
+<br> 队友和敌人被打下绝壁时的处理：
+<br> 敌人会就这样被即死
+<br> 队友会掉落后，以倒地姿态突然出现在绝壁的边缘，身上不断闪烁以表示他无敌，一段时间后恢复正常
+<br> <br> 队友和敌人被打下低地的处理：
+<br> 两者都要计算落地点和玩家位置之间的距离，以这个单位的常态速度为标准，如果能够在系统判断的寻路路径中五秒内回到玩家身边，就采取走路回到玩家身边的方法走回去
+<br> 如果超过这个时间的话，采取以下行动：
+<br> ·APC：播放吟唱动画，5秒后释放瞬移魔法回到玩家身边
+<br> ·怪物：进入狂暴状态，尽可能快速地回到玩家身边，接近玩家后这个狂暴状态解除
+<br>
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/essay.html');
+    })
+</script>
+
+<!--Tail-->

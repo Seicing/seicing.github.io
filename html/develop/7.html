@@ -1,0 +1,113 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">游戏美术制作的探究</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="7"></div>
+
+开始进行新版地图的制作了
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/新建图像.jpg" width="370px"><img src="$res/2fatcatpool/develop/3/新建图像2.jpg" width="370px">
+<br><br> 在描绘之前随便涂鸦了一下找了一下感觉
+<br> 以“天空的河谷”为主题的地图，虽然涂得不怎么样……但主要的基调还是确立了的
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319035319.jpg">
+<br><br> 先把需要用到的地块（Terrain）描绘出来，这里把每个地形都描绘出了“九宫格”式的样子
+
+<br> 九宫格其实就是把地形之间的过渡画出来，减少3d地图那种渐变地形的扑街感，保留最大限度的2d清晰感
+
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319035827.jpg" width="370px"> <img src="$res/2fatcatpool/develop/3/QQ截图20200319040103.jpg" width="370px">
+<br><br> 这种terrain的过渡的感觉就是3d游戏的标配……但是拉比巴那是用制作2d游戏思路做的游戏，不能沾染上3d的气息
+
+<br> 3d的无序是造成很多游戏从2d时代进化到3d后的閪屎化的根源
+
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319040229.jpg">
+<br><br> 随便拼了一个有地势的地图，测试一下在unity的渲染下效果如何
+
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/wsagag.jpg">
+<br><br> 好3D啊
+<br> 岩石和碎石之类的可能要加法线贴图和凹凸贴图，这样会显得画面更加自然
+<br> 而花可能就不能这样贴上去了，不够自然，需要用到有立体感的面片贴图
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319035336.jpg">
+<br><br> 把地图里的一些非地块、要用模型形式来表现的物件的贴图进行了描绘
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319040647.jpg" width="370px"> <img src="$res/2fatcatpool/develop/3/QQ截图20200319041221.jpg" width="370px">
+<br><br> 这些贴图是要使用“反UV法”（建模时一个一个选择面片贴到对应的uv上，而不是切好之后再画）制作模型用的，上面调研了一下，没什么技术上的难题
+<br> 我打算用这个共用UV制作同一个地图里的物件，但是被程序员草泥马给点艹了，他认为这游戏既然那么2d，所以他打算直接往游戏里引用雪碧（Sprite），又叫精灵，其实可以理解成自动把2d贴图转化为片面<br> 至于这个共用UV他强烈要求要全部切割为独立png，这样方便优化
+<br> 就是需要注意一点，在布兰达里面要让UV显示透明的话，需要手动设置一下通道，否则会出现上面图二的情况
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319041339.jpg" width="370px"> <img src="$res/2fatcatpool/develop/3/QQ截图20200319041352.jpg" width="370px">
+<br><br> 在材质处点选Z通道，调整为0，这时候面片会完全透明，随后在纹理处把透明通道打开就ok了
+<br> 目前只是在调研一下制作办法，还没有正式地制作地图和装饰物件，上面的素材也会进行进一步深化，只是要慢慢来 <br> 在调研的过程中搞了一下名为yPanel的插件，功能是让描绘贴图的时候图层化，方便贴图的绘制
+
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319041832.jpg">
+<br><br> 直接在模型上面画画，这样省下了很多纠结UV的功夫，之前可谓是蛋疼死我了
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319041927.jpg">
+<br><br> 画好之后把UV导出就可以直接使用了，欠揍
+<br> 在那之后还捣鼓了一下凹凸贴图和法线贴图，不过unity的渲染器目前还没做这两个，而且仅仅是这两个是不够的，物体的凹凸感还需要其他的一些处理
+<br> 接下来的几天还是先等草泥马捣鼓一下其他东西，接下来的两天我打算画一下余的立绘，用在UI界面里面，所以地图的制作工作先暂停一下
+<br> 不过值得一提的是今天用了一个很蛋疼的方法解决了之前瓦片地图篇提到的放大模式的bug
+<br> 草泥马打算用放大法解决，但是他老人家在忙活的时候我打开布兰达捣鼓了一下地图突然发现了一个很简单的解决办法，完全不需要把uv贴图画得那么蛋疼
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319042741.jpg"> <img src="$res/2fatcatpool/develop/3/QQ截图20200319042909.jpg">
+<br><br> 先把轴心弄成各自为政，然后缩放到大约原来的99%左右
+<br> tile和tile之间产生了缝隙！这样就可以把因为放大而模糊的边界给忽略过去了！
+<br><br>
+<img src="$res/2fatcatpool/develop/3/QQ截图20200319043030.jpg">
+<br><br> 左面是原来的地图，可以看到里面的缝隙，而在修改后的右面的地图可以看到缝隙完全不存在了！
+<br> 这件事教会了我们一个道理，如果遇到难题的话，就摸鱼吧，摸着摸着说不定解决办法就突然想出来了
+<br>（这个方法有一个缺点就是在之后修改地图的话，新增的图块会保持原大小而不是缩小后的大小，要同步到之前的话就要把这些图块剔除出来再修改，当然也有避免的办法，就是布兰达档里面维持原生大小，等需要导出的时候再手动缩小，不要覆盖保存到原档）
+<br><br>
+
+<div style='text-align:right'>2020年3月19日</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/develop.html');
+    })
+</script>
+
+<!--Tail-->

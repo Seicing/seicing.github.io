@@ -1,0 +1,124 @@
+﻿<meta charset="UTF-8" />
+
+<!--Title-->
+<div style="position:relative;">
+    <span style="font-family:宋体">属性计算方案</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/23233.png" alt="">
+    </div>
+    <br /> <br />
+</div>
+
+<!--Content-->
+<table id="counting" frame="box" width="750px">
+    <tr>
+        <td style="text-align: left" colspan="5">角色基础属性</td>
+
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">体力</td>
+        <td style="text-align: left"><input type="text" id="counting_input1" value="1200" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的血量，是一个如果为0角色就会死亡的属性</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">精神</td>
+        <td style="text-align: left"><input type="text" id="counting_input2" value="300" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的气力值，使用技能时的消费资源</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">气质</td>
+        <td style="text-align: left"><input type="text" id="counting_input3" value="10" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色气力的纯度，影响秒间精神值的回复量</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">敏捷</td>
+        <td style="text-align: left"><input type="text" id="counting_input4" value="12" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的动作速度，影响角色技能演出的速度</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">致命</td>
+        <td style="text-align: left"><input type="text" id="counting_input5" value="5" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的暴击伤害加成，致命越高角色的暴击伤害越高</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">潜力</td>
+        <td style="text-align: left"><input type="text" id="counting_input6" value="37" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的实力成长</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">武力</td>
+        <td style="text-align: left"><input type="text" id="counting_input7" value="17" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的物理破环力，影响技能直接接触部分的威力</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">智力</td>
+        <td style="text-align: left"><input type="text" id="counting_input8" value="8" oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">角色的气质破环力，影响技能间接接触部分的威力</td>
+    </tr>
+
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击武力加成</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input9" value="150" oninput="value=value.replace(/[^\d]/g,'')">%</td>
+
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击智力加成</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input10" value="80" oninput="value=value.replace(/[^\d]/g,'')">%</td>
+
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击固定伤害</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input11" value="0" oninput="value=value.replace(/[^\d]/g,'')"></td>
+
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 以太伤害</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input12" value="0" oninput="value=value.replace(/[^\d]/g,'')"></td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 敌对应攻击属性的防御力</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input13" value="20" oninput="value=value.replace(/[^\d]/g,'')"></td>
+    </tr>
+
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击造成的总伤害</td>
+
+        <td style="text-align: left" colspan="3" id="counting1"></td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击造成的总伤害暴击</td>
+
+        <td style="text-align: left" colspan="3" id="counting2"></td>
+    </tr>
+
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击演出时间</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input14" value="1" oninput="value=value.replace(/[^\d]/g,'')">秒</td>
+
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 攻击实际所需时间</td>
+
+        <td style="text-align: left" colspan="3" id="counting3"></td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 回满精神所需要的时间</td>
+
+        <td style="text-align: left" colspan="3" id="counting4"></td>
+    </tr>
+
+</table>
+
+
+<!--List-->
+<a href="$html/lavivagnar/index-lavivagnar.html"><b>回到目录</b></a>
+
+<!--Bottom-->
+<a href="$html/lavivagnar/index-lavivagnar.html"><b>回到目录</b></a>
+
+<!--Head-->
+<link href="$css/table_lv2.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--Tail-->
+<script language="javascript" src="$js/count.js"></script>
+<script language="javascript" src="$js/skill_data_lavivagnarcount.js"></script>

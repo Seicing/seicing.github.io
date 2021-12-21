@@ -1,0 +1,727 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+
+<!--Content-->
+<div id="lavipage" page="7"></div>
+<div style="text-align: center">
+
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu01.gif" width="64" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+        </tr>
+        <tr>
+
+            <td colspan="3">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td><img src="$res/2fatcatpool/lang2/menu04.gif" width="16" height="40"></td>
+                        <td width="25%" style="text-align: center">
+                            <span style="color:#00FF00">魔法</span>
+                        </td>
+
+                        <td width="25%" style="text-align: center"><a href="l2_msummon.htm">召唤</a></td>
+                        <td width="25%" style="text-align: center"><a href="l2_mtroop.htm">佣兵</a></td>
+                        <td width="25%" style="text-align: center"><a href="l2_mmaptopo.htm">地形</a></td>
+                        <td>
+                            <p style="text-align: right"><img src="$res/2fatcatpool/lang2/menu04.gif" width="16" height="40"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu02.gif" width="64" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+        </tr>
+    </table>
+
+</div>
+<hr noshade size="1">
+
+<ul>
+    <li>
+        <p style="text-align: left">梦2的魔法一共23种（把召唤也计算在内），各人所能使用魔法的种类记载在<a href="l2_no04.htm">人物数据</a>的81、83、84位。其中83位决定了是否会使用魔法以及会使用前7种魔法的哪几种。81、84位则分别决定了会使用16-23种、8-15种魔法的哪几种。如果将3个位置都改成FF，人物将可以使用全部的23种魔法。<br> &nbsp;
+    </li>
+    <li>
+        <p style="text-align: left">给出的魔法射程是基本数值。而魔法覆盖的范围大小与魔法伤害与施法者的等级有关，与当前职业无关。<span style="background-color: #FFFFFF"><span  style="color:#FF0000">等级1-3</span></span>可以发挥魔法的基本水准，
+            <span style="color:#FF0000"><span style="background-color: #FFFFFF">等级4-7</span></span>的时候魔法范围<b><span  style="color:#00FFFF">+1</span></b>。等级<span style="background-color: #FFFFFF"><span  style="color:#FF0000">8-10</span></span>的时候相对1-3级魔法范围<b><span  style="color:#00FFFF">+2</span></b>。魔法伤害的详细情况详见本专题转载的<b>ReverseArk</b>兄的精彩研究文章《<b>L2</b>魔法攻防机制
+            <a href="l2_research03.htm">彻底解析</a>》</li>
+</ul>
+
+<div style="text-align: center">
+
+
+    <table width="100%" id="customers" frame="box">
+        <tr>
+            <td style="text-align: center" style="background-color:#000000" width="30">
+                编号
+            </td>
+            <td width="60" style="text-align: center" style="background-color:#000000">
+                <p style="text-align: center">名称</p>
+            </td>
+            <td width="100" style="text-align: center" style="background-color:#000000">
+
+            </td>
+            <td width="140" style="text-align: center" style="background-color:#000000">
+                <p style="text-align: center">
+                    <span style="color:#FFFFFF">魔法射程（效果）</span>
+                </p>
+            </td>
+            <td style="text-align: center" style="background-color:#000000" width="30">
+                <span style="color:#FFFFFF">习得等级</span>
+            </td>
+            <td style="text-align: center" style="background-color:#000000" width="30">
+                <span style="color:#FFFFFF">MP</span>
+            </td>
+            <td style="text-align: center" style="background-color:#000000">
+                <span style="color:#FFFFFF">说明</span>
+            </td>
+            <td width="60" style="text-align: center" style="background-color:#000000">
+                <span style="color:#FFFFFF">代码</span>
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">1</span></b>
+            </td>
+            <td style="text-align: center">
+                魔法之矢
+            </td>
+            <td style="text-align: center">
+                マジックアロー<br>
+                <b>Magic Arrow</b>
+            </td>
+            <td style="text-align: center">
+                5（敌单体）
+            </td>
+            <td style="text-align: center">
+                1
+            </td>
+            <td style="text-align: center">
+                1
+            </td>
+            <td>
+            </td>
+            <td style="text-align: center">
+                00 03 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">2</span></b>
+            </td>
+            <td style="text-align: center">
+                爆炎
+            </td>
+            <td style="text-align: center">
+                ブラスト<br>
+                <b>Blast</b>
+            </td>
+            <td style="text-align: center">
+                2（敌单体）
+            </td>
+            <td style="text-align: center">
+                6
+            </td>
+            <td style="text-align: center">
+                10
+            </td>
+            <td>
+            </td>
+            <td style="text-align: center">
+                00 05 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">3</span></b>
+            </td>
+            <td style="text-align: center">
+                落雷
+            </td>
+            <td style="text-align: center">
+                サンダー<br>
+                <b>Thunder</b>
+            </td>
+            <td style="text-align: center">
+                7（敌部队）
+            </td>
+            <td style="text-align: center">
+                5
+            </td>
+            <td style="text-align: center">
+                4
+            </td>
+            <td>
+                对水面敌人特效<br> 增加伤害1
+            </td>
+            <td style="text-align: center">
+                00 09 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">4</span></b>
+            </td>
+            <td style="text-align: center">
+                火球
+            </td>
+            <td style="text-align: center">
+                ファイヤーボール<br>
+                <b>Fireball</b>
+            </td>
+            <td style="text-align: center">
+                4（直径7的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+            </td>
+            <td style="text-align: center">
+                00 11 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">5</span></b>
+            </td>
+            <td style="text-align: center">
+                陨石
+            </td>
+            <td style="text-align: center">
+                メテオ<br>
+                <b>Meteor</b>
+            </td>
+            <td style="text-align: center">
+                10（直径5的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                8
+            </td>
+            <td>
+                可毁坏建筑物
+            </td>
+            <td style="text-align: center">
+                00 21 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">6</span></b>
+            </td>
+            <td style="text-align: center">
+                暴风雪
+            </td>
+            <td style="text-align: center">
+                ブリザード<br>
+                <b>Blizzard</b>
+            </td>
+            <td style="text-align: center">
+                0（直径9的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td>
+            </td>
+            <td style="text-align: center">
+                00 41 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">7</span></b>
+            </td>
+            <td style="text-align: center">
+                龙卷风
+            </td>
+            <td style="text-align: center">
+                トルネード<br>
+                <b>Tornado</b>
+            </td>
+            <td style="text-align: center">
+                0（直径7的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                对飞行系敌人特效<br> 增加伤害1
+            </td>
+            <td style="text-align: center">
+                00 81 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">8</span></b>
+            </td>
+            <td style="text-align: center">
+                除灵
+            </td>
+            <td style="text-align: center">
+                ターンアンテッド<br>
+                <b>Turn Undead</b>
+            </td>
+            <td style="text-align: center">
+                0（直径9的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                5
+            </td>
+            <td>
+                对敌不死、灵系佣兵特效，瞬间消灭
+            </td>
+            <td style="text-align: center">
+                00 01 01
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">9</span></b>
+            </td>
+            <td style="text-align: center">
+                地震
+            </td>
+            <td style="text-align: center">
+                アースクエイク<br>
+                <b>Earthquake</b>
+            </td>
+            <td style="text-align: center">
+                0（直径11的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td style="text-align: center">
+                12
+            </td>
+            <td>
+                可毁坏建筑物<br> 对飞行系敌人无效
+            </td>
+            <td style="text-align: center">
+                00 01 02
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">10</span></b>
+            </td>
+            <td style="text-align: center">
+                区域回复1
+            </td>
+            <td style="text-align: center">
+                ヒール1<br>
+                <b>Heal 1</b>
+            </td>
+            <td style="text-align: center">
+                6（直径3的十字范围）<br> 对象：我军+NPC
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                <b>hp+3</b>
+            </td>
+            <td style="text-align: center">
+                00 01 04
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">11</span></b>
+            </td>
+            <td style="text-align: center">
+                区域回复2
+            </td>
+            <td style="text-align: center">
+                ヒール2<br>
+                <b>Heal&nbsp; 2</b>
+            </td>
+            <td style="text-align: center">
+                6（直径3的十字范围）<br> 对象：我军+NPC
+            </td>
+            <td style="text-align: center">
+                4
+            </td>
+            <td style="text-align: center">
+                4
+            </td>
+            <td>
+                <b>hp+9</b>
+            </td>
+            <td style="text-align: center">
+                00 01 08
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">12</span></b>
+            </td>
+            <td style="text-align: center">
+                部队回复1
+            </td>
+            <td style="text-align: center">
+                フォースヒール1<br>
+                <b>Force Heal 1</b>
+            </td>
+            <td style="text-align: center">
+                6（非敌方部队）
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td>
+                <b>hp+3</b>
+            </td>
+            <td style="text-align: center">
+                00 01 10
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">13</span></b>
+            </td>
+            <td style="text-align: center">
+                部队回复2
+            </td>
+            <td style="text-align: center">
+                フォースヒール2<br>
+                <b>Force Heal 2</b>
+            </td>
+            <td style="text-align: center">
+                6（非敌方部队）
+            </td>
+            <td style="text-align: center">
+                5
+            </td>
+            <td style="text-align: center">
+                6
+            </td>
+            <td>
+                <b>hp+9</b>
+            </td>
+            <td style="text-align: center">
+                00 01 20
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">14</span></b>
+            </td>
+            <td style="text-align: center">
+                催眠
+            </td>
+            <td style="text-align: center">
+                スリープ<br>
+                <b>Sleep</b>
+            </td>
+            <td style="text-align: center">
+                4（直径3的十字范围）<br> 对象：敌复数
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                使敌方佣兵无法攻击移动
+            </td>
+            <td style="text-align: center">
+                00 01 40
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">15</span></b>
+            </td>
+            <td style="text-align: center">
+                沉默
+            </td>
+            <td style="text-align: center">
+                ミュート<br>
+                <b>Mute</b>
+            </td>
+            <td style="text-align: center">
+                5（敌指挥官）
+            </td>
+            <td style="text-align: center">
+                4
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td>
+                使敌方指挥官无法使用魔法
+            </td>
+            <td style="text-align: center">
+                00 01 80
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">16</span></b>
+            </td>
+            <td style="text-align: center">
+                防御提升
+            </td>
+            <td style="text-align: center">
+                ブロテクション<br>
+                <b>Protection</b>
+            </td>
+            <td style="text-align: center">
+                5（非敌方部队）
+            </td>
+            <td style="text-align: center">
+                6
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                防御修正<b>+4</b>
+            </td>
+            <td style="text-align: center">
+                01 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">17</span></b>
+            </td>
+            <td style="text-align: center">
+                攻击提升
+            </td>
+            <td style="text-align: center">
+                アタック<br>
+                <b>Attack</b>
+            </td>
+            <td style="text-align: center">
+                5（非敌方部队）
+            </td>
+            <td style="text-align: center">
+                5
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                攻击修正<b>+4</b>
+            </td>
+            <td style="text-align: center">
+                02 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">18</span></b>
+            </td>
+            <td style="text-align: center">
+                束缚
+            </td>
+            <td style="text-align: center">
+                ゾーン<br>
+                <b>Zone</b>
+            </td>
+            <td style="text-align: center">
+                6（敌指挥官）
+            </td>
+            <td style="text-align: center">
+                7
+            </td>
+            <td style="text-align: center">
+                6
+            </td>
+            <td>
+                使敌方指挥官攻防修正暂时为0
+            </td>
+            <td style="text-align: center">
+                04 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">19</span></b>
+            </td>
+            <td style="text-align: center">
+                传送
+            </td>
+            <td style="text-align: center">
+                テレポート<br>
+                <b>Teleport</b>
+            </td>
+            <td style="text-align: center">
+                16（非敌方部队）
+            </td>
+            <td style="text-align: center">
+                4
+            </td>
+            <td style="text-align: center">
+                5
+            </td>
+            <td>
+            </td>
+            <td style="text-align: center">
+                08 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">20</span></b>
+            </td>
+            <td style="text-align: center">
+                幻像
+            </td>
+            <td style="text-align: center">
+                イリュージョン<br>
+                <b>Illusion</b>
+            </td>
+            <td style="text-align: center">
+                0 （自身）
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                制造幻像分散敌人的攻击<br> 数量=6-残余佣兵
+            </td>
+            <td style="text-align: center">
+                10 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">21</span></b>
+            </td>
+            <td style="text-align: center">
+                魔防提升
+            </td>
+            <td style="text-align: center">
+                レジスト<br>
+                <b>Resist</b>
+            </td>
+            <td style="text-align: center">
+                8（非敌方部队）
+            </td>
+            <td style="text-align: center">
+                4
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td>
+                魔法耐性+25
+            </td>
+            <td style="text-align: center">
+                20 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">22</span></b>
+            </td>
+            <td style="text-align: center">
+                魅惑
+            </td>
+            <td style="text-align: center">
+                チャーム<br>
+                <b>Charm</b>
+            </td>
+            <td style="text-align: center">
+                4（敌部队）
+            </td>
+            <td style="text-align: center">
+                3
+            </td>
+            <td style="text-align: center">
+                6
+            </td>
+            <td>
+                将敌方部队暂时转化为友军NPC
+            </td>
+            <td style="text-align: center">
+                40 01 00
+            </td>
+        </tr>
+        <tr>
+            <td width="30" style="text-align: center" bg style="color:#FFFF00">
+                <b><span  style="color:#000000">23</span></b>
+            </td>
+            <td style="text-align: center">
+                召唤
+            </td>
+            <td style="text-align: center">
+                <b>Summon</b>
+            </td>
+            <td style="text-align: center">
+                0（自身）
+            </td>
+            <td style="text-align: center">
+                2
+            </td>
+            <td style="text-align: center">
+                不定
+            </td>
+            <td>
+                召唤部队协助作战
+            </td>
+            <td style="text-align: center">
+                80 01 00
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/tablelang2.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="$css/tablelang.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/lang2.html');
+    })
+</script>
+
+
+<!--Tail-->

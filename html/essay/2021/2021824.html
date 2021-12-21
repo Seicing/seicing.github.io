@@ -1,0 +1,44 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">2021.8.24</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="148"></div>
+巡逻(Patrol)、警戒(Warning)、坚守(Defense)、进攻(Attack)  <br>
+巡逻：区域拥有两个点，怪物会在起始点出发，寻路前往消失点消失<br>
+警戒：怪物会尝试在区域内积极进攻玩家<br>
+坚守：怪物总是坚守在原地，并且尽可能使用自己的手段攻击进入范围的玩家<br>
+进攻：怪物完全无视区域，全地图追击玩家<br>
+<br>
+单次(Once)、刷新(Refresh)、循环(Circulate)<br>
+单次：怪物被击杀后就不会出现<br>
+刷新：怪物被击杀后，会在生成点刷新出现<br>
+循环：怪物被击杀后，会在生成点刷新出现，并且在玩家视野外会获得1000%移动速度的加成 <br>
+<br>
+可视(Visible)、不可视(Invisible)<br>
+可视：即使刷新点在玩家视野内，怪物依然会强制刷新<br>
+不可视：刷新点在玩家视野内就不会执行刷新和循环的指令<br>
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/essay.html');
+    })
+</script>
+
+<!--Tail-->

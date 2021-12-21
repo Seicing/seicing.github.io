@@ -1,0 +1,39 @@
+ a:link {
+     text-decoration: none
+ }
+ 
+ a:visited {
+     text-decoration: none
+ }
+ 
+ a:active {
+     text-decoration: none
+ }
+ 
+ a:hover {
+     background-color: #ffffff;
+     color: #ff6666
+ }
+ 
+ body {
+     font-family: "arial";
+     font-size: 9pt
+ }
+ 
+ td {
+     font-family: "arial";
+     font-size: 9pt
+ }
+ 
+ body {
+     --SCROLLBAR-FACE-COLOR: #000000;
+     SCROLLBAR-HIGHLIGHT-COLOR: #fffacd;
+     SCROLLBAR-SHADOW-COLOR: #fffacd;
+     SCROLLBAR-3DLIGHT-COLOR: #000000;
+     SCROLLBAR-ARROW-COLOR: #ffffff;
+     SCROLLBAR-TRACK-COLOR: #000000;
+     SCROLLBAR-DARKSHADOW-COLOR: #20253a;
+ 
+ }
+ 
+ 

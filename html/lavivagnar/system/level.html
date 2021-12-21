@@ -1,0 +1,63 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+
+<div style="position:relative;">
+    <span style="font-family:宋体">成长系统</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/23233.png" alt="">
+    </div>
+    <br /> <br />
+</div>
+
+<!--Content-->
+<div id="lavipage" page="2"></div>
+等级系统进行删除，关于等级的数值成长统统删除<br> 由于等级删除，角色的属性进行调整，并且完全重做减伤率计算、属性增长机制以及装备系统 <br> <br>
+
+
+<span style="color: #CABC85"> <b>成长系统</b></span> <br> 因为删除了等级，所以数值成长的获取方法进行重新编排
+<ol>
+    <li>通过开启灵魂环获得成长属性 </li>
+    <li>不同角色的灵魂环都是不同的，而且灵魂环本身会有取舍，有些开放条件还是不一定会去做的支线，角色的最终属性完全是看玩家的喜好而成长而来 </li>
+</ol><br>
+
+<span style="color: #CABC85"> <b>装备系统</b></span> <br> 装备系统从原先的改成三个槽，依次为武器概念、战斗概念×2
+<br> <br>
+<span style="color: #CABC85"> 武器概念 </span>
+<ol>
+    <li>按照比率修正角色的武力、智力、敏捷 </li>
+    <li>例子：十王审判（手弩）：武力修正1.2、智力修正1.2、敏捷修正1.2 </li>
+    <li>某角色的面板属性依次为武力80、智力45、敏捷100，穿着武器概念后会变成武力96、智力54、敏捷120 </li>
+</ol>
+<br />
+<span style="color: #CABC85"> 战斗概念 </span>
+<ol>
+    <li>不提供属性（一般来说），单纯提供角色特殊能力的装备 </li>
+    <li>例子：吞火者（免疫灼烧状态），某角色装备后在熔岩池走路绝对不会被灼烧 </li>
+    <li>例外：力量之源（提升角色10%武力值），装备后角色武力值提升10% </li>
+</ol><br>
+
+<span style="color: #CABC85"> <b>修正系统</b></span> <br> 原先的职业修正系统进行改版，把附魔修正删除，保留职业修正
+<ol>
+    <li>角色选择的职业会提供职业修正，角色的修正会进行叠加 </li>
+    <li>例子：火枪手（武力修正+1，致命修正+1）、龙骑兵（武力修正+2，致命修正+2），按照这条线路进化下来的角色会总共获得3武力修正和3致命修正 </li>
+    <li>职业修正会在角色的装备计算之后进行最终加成，每1修正提升10%的属性 </li>
+    <li>例如选择了龙骑兵职业的某个人在装备计算后武力为50，致命为30，这个人的最终属性为武力65，致命为39 </li>
+</ol>
+
+<!--List-->
+
+<!--Bottom-->
+<a href="$html/lavivagnar/index-lavivagnar.html"><b>回到目录</b></a>
+
+<!--Head-->
+<link href="$css/table_lv.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/system.html');
+    })
+</script>
+
+<!--Tail-->

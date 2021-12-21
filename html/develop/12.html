@@ -1,0 +1,119 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">地图制作·中</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="12"></div>
+把上文中提到的画质设置实装到游戏里<br> 
+游戏里分成低、中、高三种画质，分别是“人物使用椭圆素材影、地图烘培”，“人物实时投影、地图烘培”和“全实时光影” 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/1.gif"><br>
+<img src="$res/2fatcatpool/develop/8/2.gif"><br>
+<img src="$res/2fatcatpool/develop/8/3.gif">
+<br><br> 
+ 
+某天的早晨我出街的时候观察了一下地面的影子，发现巴那的影子的一个不足就是没有颜色<br> 
+清晨的太阳是黄色的，照射到树木上出现的影子出现了对比强烈的蓝色影子<br> 
+于是给影子临时加上了颜色，调整了一下光影 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200817235357.jpg"> 
+<br><br> 
+比之前的顺眼了不少，之前的太刺眼了 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200817235541.jpg"> 
+<img src="$res/2fatcatpool/develop/8/QQ截图20200817235812.jpg"> 
+<br><br> 
+变化就是余现在走到暗处，身上的影子会被染色，配合自身的渲染出现一种陶瓷娃娃的感觉<br>
+不过没所谓<br>
+接下来就是给地图的物件安排上顶点动画<br>
+之前的草之类的装饰物实际上是使用骨骼来运动的，相当耗能，所以把它们的骨头全都删了，维持静止，然后使用顶点动画给与他们动态 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818000028.jpg"> 
+<br><br> 
+翻新一波草 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818000150.jpg"> 
+<br><br> 
+给地图添附了密密麻麻的草地测试一下压力<br> 
+最后的结果是还可以维持60帧，可以继续下一步 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/地地道道.jpg"><img src="$res/2fatcatpool/develop/8/无污染费.gif"> 
+<br><br> 
+所谓的顶点动画说白了就是用代码偏移模型的顶点，让他们的坐标按照一定规律来回变化<br> 
+我们做的顶点动画比较简单，规定好适用顶点的高度之后偏移xyz三个轴模拟飘动效果<br> 
+做顶点动画的时候还发现了模型有一点问题，总结一下遇到的问题，以后要注意一下 
+<br><br> 
+<img src="$res/2fatcatpool/develop/8/第三个还是得会.jpg"> 
+<br><br> 
+需要顶点动画摇摆的，这个要去掉<br>
+选中的话，多个分段模型将会合并在一起，一些只需要一部分进行飘动的就要把这个去掉 
+<br><br> 
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818003508.jpg"> 
+<br><br> 
+导入模型后这些全都去掉 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/无符文.jpg"> 
+<img src="$res/2fatcatpool/develop/8/史蒂芬根深蒂固.jpg"> 
+<br><br> 
+Lightmaps使得物体也会参与到烘培光的渲染中，适合用在那些大型、固定的装饰物<br> 
+Light Probe就是水浒传，身处暗的环境就会变暗<br> 
+不点的话，阴影将会是实时的 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818004450.jpg">  
+<br><br> 
+从布兰达导出的时候要勾这个白色的选项，就会确保布兰达导出时强制同步有你睇的坐标系<br> 
+右面的这个按钮也得点成白色，作用是让布兰德的缩放和有你睇的缩放一致<br> 
+就是这些 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818004604.jpg">  <img src="$res/2fatcatpool/develop/8/QQ截图20200818004952.jpg">  
+<br><br> 
+之前用法线和凹凸贴图搞了半天，最后还是发现了一件事<br>
+对于我们这种锁视觉的游戏，法线并没有什么卵用，区别在于把一幅静态图生成为另一幅静态图片，完全无法在动态中感受到凹凸感<br>
+所以山头的凹凸感需要暴力建模黏上去模拟了，出现了凹凸感，很不错<br>
+问题是这几个需要大量贴在峭壁上的模型面数太多了，要实际应用的话是不可行的，需要减面<br>
+地图底部的尖岩也打算用这种独立模型的办法做了 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818004647.jpg">  
+<br><br> 
+最后就是水了 
+
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ图片20200818005137.gif">  <img src="$res/2fatcatpool/develop/8/QQ图片20200818005142.jpg">  
+<br><br> 
+经过两晚的推敲最终确定的水体效果 
+<br><br>
+<img src="$res/2fatcatpool/develop/8/QQ截图20200818010304.jpg">   
+<br><br> 
+目前地图的模型样子，把底部的尖锐岩石删除了，等待日后的独立建模来实现<br> 
+给地图添加了水体的建模，目前还没有试过具体的效果，下一节就会把地图制作相关的内容彻底弄明白<br> 
+<br><br><br>
+
+
+
+<div style='text-align:right'>2020年8月17日</div>
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/develop.html');
+    })
+</script>
+
+<!--Tail-->

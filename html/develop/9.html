@@ -1,0 +1,146 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">寻路、物件制作、文件处理</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="9"></div>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/dhhdh.gif">
+<br><br> 因为demo里面是要做跟随玩家前进的队友的，不仅如此，敌人想要接近玩家也得需要遵循一定的规则，所以在这段时间里研究了一下寻路
+
+<br> 为了好好地测试寻路系统，还把房间进行了扩建，弄成跳台关卡的感觉，这个房间是非最终内容的旧版tile，但是以这种方法发挥余热也算对得起它了
+
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/dgsh.jpg">
+<br><br> 给房间消失在黑暗的地方做了过渡，这个很蛋疼，幸好这次demo并不需要做这种地形
+
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/hweh.jpg">
+<br><br> 虽然最后还是换成了熔岩，好热啊，掉下去可要命了
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/QQ截图20200525021915.jpg">
+<br><br> 制作这个地图的时候还顺便规定好角色的跳跃力，目前的设置是余极限距离可以跳3.2格
+
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/ehsh.jpg">
+<br><br>
+
+<br> 平地上的寻路没有什么大问题，跳跃的话，由unity它自动生成提供给ai判断跳跃的点
+<br> 当然一次过是不可能的，牺牲一下小雪人了
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/posbo.gif">
+<br><br> 可怜
+
+<br> 后面解决了问题后雪人仔进行连续跳跃的时候还可能因为速度问题掉下去，不过不是什么大问题，最后修正成果
+<br>
+
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/edhgw.gif">
+<br><br> 终于跳过去了，大约是没什么问题了
+<br> 这部分不是我负责的，所以只是粗略记录一下相关内容，具体就略过了
+<br> 在草泥马解决这个蛋疼的寻路的时候，我一边在重新绘制需要用到的tile，并且一边制作地图需要的物件
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/edh.png" width="800px">
+<br><br> 树木之类的东西则是选择独立uv，之前打算和地图共享同一个uv，被草泥马辱骂了
+<br>
+
+<br><br>
+<img src="$res/2fatcatpool/develop/5/gehh.png">
+<br><br> 建模、修正以及放到游戏里实装这些就不废话，目前的话就记录一下几个比较重要的点
+<br> ①.模型里面所有的面都一定要绑定到骨头里，不然会出现互相打架的情况，产生以下的效果：
+<br>
+
+<img src="$res/2fatcatpool/develop/5/ewh.png">
+<br> 没有绑定骨骼的树干和树叶本身90°垂直了，极其蛋疼，，，
+<br><br> ②.不同种类的模型适用不同的导出方式，主要有几类:
+
+<br> 1.物件模型类，导出的时候一定要把所有的贴图信息去掉，只保留材质信息
+<br> 2.Tile场景类，导出之前要手动把uv格子调整到原来的96.5%（这个草泥马可能会处理）
+<br> 3.动作类，只需要导出骨骼，这一点直接使用blender里面的默认设置“战撸”（具体其实就是图里这样剔除了多余的东西）
+<br>
+<img src="$res/2fatcatpool/develop/5/QQ截图20200525023436.jpg"><img src="$res/2fatcatpool/develop/5/QQ截图20200525023431.jpg">
+<br><br> ③.实装到unity的时候，都适用于新建材质后，材质指定特定的贴图，然后让模型对应的材质信息适用对应的贴图，ok
+
+
+<br> 遇到动画不会动的场合下，是unity的版本更新造成的问题，它自动适用了新的动画，而要让单一循环的动画播放起来的话，使用旧版的legacy才能正常播放而不是默认的generic
+<br>
+<img src="$res/2fatcatpool/develop/5/erherwh.jpg">
+<br><br> ④.把所有成功实装到unity里面的模型进行prefab化
+
+
+<br> 具体的流程就是：
+<br> 1.Model检查内部，配置缩放、材质（场景缩放1.0，物件缩放0.6）,<span style="color:red">这里强制性要求是这个比例的缩放，如果物件太大还要进一步缩小的，在prefab里面缩小！</span>
+<br> 2.Model拖动到场景，不要属于某个层级
+<br> 3.Model拖动到Prefab目录下的正确位置，然后删掉场景的Model对象
+<br> 4.点击Prefab，选择面板的Open Prefab，在里面进行例如Mesh碰撞判定之类的配置<br> 配置完成后使用配置好的Prefab进行调用
+<br>
+<img src="$res/2fatcatpool/develop/5/QQ截图20200525023930.jpg">
+<br><br> 暂时的效果预览
+
+<br>
+<img src="$res/2fatcatpool/develop/5/dsg.jpg">
+<br><br> 最后还是记录一下vscode里面要用到的对git操作相关的命令吧，因为特殊缘故，原来使用的源树林檎炸裂了，到底为啥俺暂且蒙在鼓里
+
+
+<br> 用vscode直接打开git文件夹，主要执行几个命令：
+<br>
+<span style="color:red">git add</span> ：把修改过的文件登记到准备上存列表中<br>
+<span style="color:red">git commit -m '更新策划案机制'</span>：引号里面写上这次提交的备注内容<br>
+<span style="color:red">git push</span>：推送，输入id“Seicing”以及密码（有123的那个）后就开始上存<br>
+<span style="color:red">git pull</span>：拉取别人的修改内容<br> 以及注意开工之前最好先pull一发拉取最新的内容，免得两个人撞车引发更加可怕的林檎爆裂事件
+<br> 以上，真是蛋疼的人生
+
+<br><br>
+
+
+
+<div style='text-align:right'>2020年5月24日</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/develop.html');
+    })
+</script>
+
+<!--Tail-->

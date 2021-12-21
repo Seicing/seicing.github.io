@@ -1,0 +1,234 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">2019.7.28</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="20"></div>
+装备系统进行大改 <br><br> 原有的武器核心不进行改动，依旧是对角色的基础力量和智力进行百分比加成得出总物攻
+<br> 除此之外武器核心拥有不同的效果这个设定依旧保留
+<br><br> 战斗概念（辅具）大改动
+<br> 战斗概念的主动部分因为和现有的决战技系统过于同化并且让按键增加，所以删除，只保留战斗概念的被动部分
+<br> 这个是角色实际上的装备，不同的战斗概念会影响角色不同的属性变化，每个角色可以装备两个
+<br> 和原版相比只是去掉了主动使用的部分，正式地变成更加传统意义上的装备
+<br> 原有的一些拥有主动功能的战斗概念现在会被抽离为消耗品道具的形式登记到动作槽上面使用
+<br><br> 装扮
+<br> 这次打算新加进去的装备槽
+<br> 通常来说不会对角色的属性造成任何影响，装扮的作用单纯就是改变你角色当前的外观
+<br> 但是部分装扮将会改变角色某个技能的性能，让角色可以使用特殊时期的技能，更好地体验剧情
+<br> 例：世清的地下倒立金字塔剧情中，和夏修伦制定狙击哈扎德的计划后，世清会获得一个名为“狙击者”的，背上背着巨型狙击枪的装扮，装备这个装扮之后，世清的剑凭的远程火枪攻击将会变成射程更远的狙击模式
+<br><br> 目前打算计划的每个角色的装扮有以下：
+<br>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">世清</td>
+    </tr>
+    <tr>
+        <td>神从世清</td>
+        <td>神从穿着的常见的礼服<br> </td>
+    </tr>
+    <tr>
+        <td>冒险家世清</td>
+        <td>带有兜帽，穿在身上方便行动并且遮风挡雨的冒险家的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>暗杀者世清</td>
+        <td>背后的巨大狙击枪向别人说明了他的致命性<br>改变剑凭的子弹发射的性能 </td>
+    </tr>
+    <tr>
+        <td>皇帝世清</td>
+        <td>西景帝国最高统治者的象征<br>非战时移动速度+30%</td>
+    </tr>
+    <tr>
+        <td>超越者世清</td>
+        <td>自由自在地控制远古的力量<br>改变剑凭的凭神觉醒的性能</td>
+    </tr>
+</table>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">余</td>
+    </tr>
+    <tr>
+        <td>夷手余</td>
+        <td>一般的蚩幽一族为了方便活动穿着的衣服<br> </td>
+    </tr>
+    <tr>
+        <td>王鞑剌奴余</td>
+        <td>蚩幽一族的王所穿着的由兽毛编织而成的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>帝国之花余</td>
+        <td>嫁给帝国皇帝时穿着的豪华的西景民族婚典礼服<br></td>
+    </tr>
+    <tr>
+        <td>常服余</td>
+        <td>西景人常见的方便战斗的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>皇后余</td>
+        <td>西景帝国最高统治者的象征<br>非战时移动速度+30%</td>
+    </tr>
+    <tr>
+        <td>超越者余</td>
+        <td>自由自在地控制远古的力量<br>改变祸敷祢的凭神觉醒的性能</td>
+    </tr>
+</table>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">丞</td>
+    </tr>
+    <tr>
+        <td>机械师丞</td>
+        <td>依旧处于求学时期的机械师们所穿的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>首席机械师丞</td>
+        <td>通过了首席机械师的机械师们所穿的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>终结者丞</td>
+        <td>机械手臂和电子侦查器取代了失去的左手和左眼<br></td>
+    </tr>
+    <tr>
+        <td>元首丞</td>
+        <td>不失大体的尤伊元首的制服<br> </td>
+    </tr>
+    <tr>
+        <td>造物主丞</td>
+        <td>拥有独自建造一个国家的史无前例的机械师的装扮<br>部分技能的性能更变</td>
+    </tr>
+</table>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">西尔诺</td>
+    </tr>
+    <tr>
+        <td>祈祷者西尔诺</td>
+        <td>幼年时期所穿着的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>黑色长袍西尔诺</td>
+        <td>加入黑色长袍组织后成为黑暗中的爪牙<br> </td>
+    </tr>
+    <tr>
+        <td>黑色长袍西尔诺·拉维瓦纳</td>
+        <td>加入黑色长袍组织后成为黑暗中的爪牙，金发版本<br> </td>
+    </tr>
+    <tr>
+        <td>神西尔诺</td>
+        <td>端正的打扮下面掩盖着的是凶暴而狂气的内心<br></td>
+    </tr>
+    <tr>
+        <td>神西尔诺·拉维瓦纳</td>
+        <td>端正的打扮下面掩盖着的是凶暴而狂气的内心，金发版本<br></td>
+    </tr>
+    <tr>
+        <td>东煌西尔诺</td>
+        <td>西景东煌地区常见的服饰打扮<br> </td>
+    </tr>
+    <tr>
+        <td>东煌西尔诺·拉维瓦纳</td>
+        <td>西景东煌地区常见的服饰打扮，金发版本<br> </td>
+    </tr>
+    <tr>
+        <td>幻想之翼镇魂曲西尔诺</td>
+        <td>解放了真正的力量的西尔诺究极形态<br>部分技能的性能更变</td>
+    </tr>
+</table>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">泰拉</td>
+    </tr>
+    <tr>
+        <td>魔法学徒泰拉</td>
+        <td>依旧处于求学时期的格林沃兹魔法学院的魔法师们所穿的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>佣兵泰拉</td>
+        <td>被人所害被迫流浪天涯的魔法师所穿的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>勇者泰拉</td>
+        <td>被圣剑所选择的魔法师所穿的服饰<br></td>
+    </tr>
+    <tr>
+        <td>达到了根源的泰拉</td>
+        <td>体内的魔力可以让世界焚烧殆尽的魔法师的装扮<br>部分技能的性能更变</td>
+    </tr>
+</table>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">阿拉贡</td>
+    </tr>
+    <tr>
+        <td>海贼阿拉贡</td>
+        <td>在未知的大海上寻求着机遇的海上掠夺者的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>提督阿拉贡</td>
+        <td>拥有独自承担一个海上舰队的海贼船上的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>海上恶魔阿拉贡</td>
+        <td>经历过无数次战斗洗礼的凶恶的海上掠夺者的服饰<br></td>
+    </tr>
+    <tr>
+        <td>直达大海尽头的阿拉贡</td>
+        <td>征服了世界上所有大海的传说中的航海家的服饰<br>部分技能的性能更变</td>
+    </tr>
+</table>
+<table id="customers" frame="box">
+    <tr>
+        <td colspan="2">阿玛兰达</td>
+    </tr>
+    <tr>
+        <td>没落骑士阿玛兰达</td>
+        <td>没落的骑士一族的后裔所穿的服饰<br> </td>
+    </tr>
+    <tr>
+        <td>暗杀者阿辛</td>
+        <td>成为黑暗中最致命的杀手<br> </td>
+    </tr>
+    <tr>
+        <td>死亡骑士阿辛</td>
+        <td>成为黑暗中最致命的杀手，无面具版<br> </td>
+    </tr>
+    <tr>
+        <td>白色死神无名</td>
+        <td>脱离了暗杀者组织用自己的手段达成目的的暗杀者的服饰<br></td>
+    </tr>
+    <tr>
+        <td>白色骑士无名</td>
+        <td>脱离了暗杀者组织用自己的手段达成目的的暗杀者的服饰，无面具版<br></td>
+    </tr>
+    <tr>
+        <td>超越存在的无名</td>
+        <td>超越了人类的存在介质以难以置信的形态存在着的超生物<br>部分技能的性能更变</td>
+    </tr>
+</table>
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/essay.html');
+    })
+</script>
+
+
+
+<!--Tail-->

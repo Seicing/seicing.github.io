@@ -1,0 +1,121 @@
+﻿<meta charset="UTF-8" />
+
+<!--Title-->
+
+<!--Content-->
+<div id="lavipage" page="9"></div>
+<div class="postCont">
+    <p>フリーの3DCG制作ツール「Blender」。「3Dは金銭的にもスキル的にもハードル高そう…」と思っていたあなたのために、何回かに分けて「Blender」で実際にものを作りながら、基礎を身につけていきたいと思います！<br /> 今回はBlenderの高機能っぷりと、ちょっと癖のある基本動作について。
+        <span id="more-3678"></span></p>
+    <p></p>
+    <p>はじめまして。デザインやその他諸々を担当しているJBです。<br />
+        <a href="https://nvtrlab.jp/column/1-3" title="無料ライブラリ「Vuforia」でARアプリを作る！③【自作モデルデータに置き換え篇】">先日Andy氏のARの記事</a>でもご紹介しました「Blender」。3DはARと相性いいですよね！3Dのモデルデータとかを作れると、アプリ開発の幅が広がるのではなかろうかと。今まで「3Dとかやったことないし」という人も、ぜひともチャレンジしてみましょう！</p>
+    <div id="toc_container" class="no_bullets">
+        <p class="toc_title">目次</p>
+        <ul class="toc_list">
+            <li><a href="#Blender"><span class="toc_number toc_depth_1">1</span> Blenderとは</a></li>
+            <li><a href="#i"><span class="toc_number toc_depth_1">2</span> まずは「超独特」な使い勝手を知ろう！</a>
+                <ul>
+                    <li><a href="#1"><span class="toc_number toc_depth_2">2.1</span> 1. 画面構成</a></li>
+                    <li><a href="#2_Blender3D_View"><span class="toc_number toc_depth_2">2.2</span> 2. Blenderのキモ、3D View</a>
+                        <ul>
+                            <li><a href="#i-2"><span class="toc_number toc_depth_3">2.2.1</span> ■ モードの切り替え</a></li>
+                            <li><a href="#i-3"><span class="toc_number toc_depth_3">2.2.2</span> ■ マウス操作</a></li>
+                            <li><a href="#i-4"><span class="toc_number toc_depth_3">2.2.3</span> ■ 空間座標</a></li>
+                            <li><a href="#i-5"><span class="toc_number toc_depth_3">2.2.4</span> ■ 視点の切り替え</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#i-6"><span class="toc_number toc_depth_1">3</span> 今回のシメ</a></li>
+        </ul>
+    </div>
+    <h2 id="step1"><span id="Blender">Blenderとは</span></h2>
+    <p>さっきから同じことばかり言っていますが、Blenderはオープンソースの3DCG制作ツールです。<br /> 世界中の有志による開発が続いていて絶賛進化中のこのアプリ、何と無償！しかも高機能！Blenderでこんなハイクオリティな作品が作れてしまいます。
+    </p>
+    <p><a href="http://www.youtube.com/watch?v=1XZGulDxz9o&#038;hd=1" title="Blender Demo Reel 2013" target="_blank">Blender Demo Reel 2013</a>　※動画が流れます</p>
+    <p><iframe width="560" height="315" src="//www.youtube.com/embed/1XZGulDxz9o?rel=0" frameborder="0" allowfullscreen></iframe></p>
+    <p>すごい…無償なのに…</p>
+    <p>というわけで、Vuforia + Unity + Blenderの無料コンボで結構なARアプリとか作れちゃう様な気がしてしょうがないわけですよ。個人開発者さんや小規模開発会社さんにはありがたいですね！（※開発規模によってライセンスは要確認です。）</p>
+    <p>
+        最新版はBlender公式サイトからダウンロード可能です。<br />
+        <strong>blender.org &#8211; Get Blender</strong>＊<a href="http://www.blender.org/download/get-blender/" title="Blender ダウンロードページ（公式）" target="_blank">http://www.blender.org/download/get-blender/</a></p>
+    <p>Windows版は<a href="http://blender.jp/modules/xfsection/article.php?articleid=277" title="Blenderの入手とインストール | Blender.jp">Blender.jpさんの記事</a>にインストールの方法が詳しく書いてあります。<br /> Macユーザーは、ダウンロードしたフォルダ内にあるBlender.appから直接起動可能です。
+        <div id="attachment_1257" style="width: 610px" class="wp-caption alignleft">
+            <img src="$res/2fatcatpool/refer/blender1/blender_start.jpg" />
+            <p class="wp-caption-text">立ち上げるとこんな画面。真ん中の画は、バージョンによって変わります（これは2.68a）。</p>
+        </div>
+    </p>
+    <p></p>
+    <h2 id="step2"><span id="i">まずは「超独特」な使い勝手を知ろう！</span></h2>
+    <p>Blenderむずかしいっす…と感じる最大の要因（ではなかろうか）と思うのが、「UIや操作が独特」なこと。<br /> 実際に作り始める前に、どんな感じで独特なのか、基本的な部分を身につけておきましょう！
+    </p>
+    <h3><span id="1">1. 画面構成</span></h3>
+    <p>デフォルトで起動すると、こんな感じです。どれが何なのか、大まかにご紹介します。</p>
+    <img src="$res/2fatcatpool/refer/blender1/blender_gamen-600x323.jpg" />
+    <ul>
+        <li><strong>情報バー：</strong>よくあるやつです。保存したり環境設定したり。</li>
+        <li><strong>3D View：</strong>3Dオブジェクトを色々操作する場所。メインの作業場です。</li>
+        <li><strong>Outline View：</strong>オブジェクト同士の関係性などを階層表示。</li>
+        <li><strong>Propaties：</strong>カメラやライト、物理演算など、いろいろな要素の属性を操作。</li>
+        <li><strong>Timeline：</strong>アニメーションキーフレームを打つときなどに。</li>
+    </ul>
+    <p>
+        各Viewにはヘッダー（の割には下だったりしますが）がついていて、色々なボタンが配置されています（Viewの種類によって中身は変わります）。ヘッダーにあるEditorTypeでViewの種類が切り替えられますが、最初はデフォルトでOKです。</p>
+    <p>もう見た感じ「いじる場所が多い…」と引いてしまいますが、最初のうちは使う部分が限られているのでご安心を！</p>
+
+    <h3><span id="2_Blender3D_View">2. Blenderのキモ、3D View</span></h3>
+    <p>メインの作業を行うことが多い3D View。真ん中にある立方体がいわゆる「メッシュオブジェクト」です。これをいじって形を作っていきます。ここからは、いじる前段階の超！超！基本事項を説明します。</p>
+    <img src="$res/2fatcatpool/refer/blender1/blender_3DView-600x326.jpg" />
+    <h4><span id="i-2">■ モードの切り替え</span></h4>
+    <p><span class="keybord">Tab</span>キーで、<strong>Objectモード</strong>と<strong>Editモード</strong>の切り替えが出来ます。モードによって出来ることが変わります。</p>
+    <ul>
+        <li>
+            <strong>Objectモード</strong>…オブジェクトを移動させたり、拡大縮小させたりできます。主に位置関係の調整、オブジェクトの追加・削除時などに活躍。
+        </li>
+        <li>
+            <strong>Editモード</strong>…メッシュオブジェクト自体を編集して、形を変えたりします。
+        </li>
+    </ul>
+    <p>他にもいくつかモードがありますが、それは追々必要になってから…。<br /> オブジェクトの形ができるまでは、ほとんど
+        <strong>Edit</strong>モードでの作業になります！</p>
+    <h4><span id="i-3">■ マウス操作</span></h4>
+    <p>「マウス操作なんて普通と一緒じゃないの？」と思いきや、これがクセが強いんです…。<br /> 何と
+        <span class="red">右クリックでつかんで、左クリックで操作確定</span>なんですねー！ややこしい！でも使う頻度が高いので、すぐ慣れますよ！（あくまで3D View上の話なので、他のViewは左クリックがメインで大丈夫です。）<br /> ちなみに選択されたオブジェクトや点・辺・面（次回のモデリング篇で触れます！）などは、オレンジ色に変わります。
+        <br /> 真ん中のスクロールホイールは、スクロールでView視点の拡大縮小、クリック＆ドラッグで視点の向きをグリグリ変えることができます。
+    </p>
+    <h4><span id="i-4">■ 空間座標</span></h4>
+    <p>3Dなので、立体空間なワケです。左下の座標軸アイコンや選択オブジェクトのマニピュレータを見てみて下さい。赤い矢印がX軸（横軸）、緑の矢印がY軸（奥行き）、青の矢印がZ軸（縦軸）で、空間を表現しています。<br />
+        <img src="$res/2fatcatpool/refer/blender1/blender_xyz-600x326.jpg" /><br /> 他の3Dモデリングツールは、Yが縦軸、Zが奥行きの場合が多いので、乗り換え組はちょっとこんがらがるかもしれませんね…。
+    </p>
+    <h4><span id="i-5">■ 視点の切り替え</span></h4>
+    <p>オブジェクトが思ったとおりの形になっているかどうかは、色々な方向から見ないといけません。そんな時、視点の切り替えにはテンキーが便利です。</p>
+    <img src="$res/2fatcatpool/refer/blender1/numpad-600x326.jpg" />
+
+    <p>頑張って覚えなくても、使いながらで身に付いていくと思います！</p>
+    <p>ちなみに<span class="keybord">5</span>キーの透視投影／平行投影というのは、パース（遠近感）がついているかどうかの切り替えと思ってください。現実世界の見え方に近いのは透視投影ですが、モデリング時はパースがない方がやりやすいので、平行投影にしておく方がベターです。</p>
+    <div class="caution_desc card_gray">ノートPCでテンキーがついていない場合は、情報バーのFileからUserPreferenceを開いて、Inputタブにある[Emulate Numpad]をONにしてみて下さい（左の方にあります）。普通の数字キーがテンキーと同じ役割で使えるようになりますよ！</div>
+    <h2><span id="i-6">今回のシメ</span></h2>
+    <p>とりあえず今回はここまでです。いかがでしたか？</p>
+    <p>「まだ何も出来ないじゃないか！」っていう段階なのでつまらないかもしれませんが、色々グリグリさわってみて感覚をつかんでみてください！次回からはお題に沿って、実際に作って行きますよ！</p>
+    <p>というわけで、続きは次の「モデリング編」までお待ちください;)</p>
+</div>
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index-study.html"><b>回到目录</b></a>
+
+<!--Head-->
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<link href="$css/link.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--Tail-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/study.html');
+    })
+</script>

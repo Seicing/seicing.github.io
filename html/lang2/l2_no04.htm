@@ -1,0 +1,408 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+
+<!--Content-->
+<div id="lavipage" page="8"></div>
+<div style="text-align: center">
+
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu01.gif" width="64" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+        </tr>
+        <tr>
+
+            <td colspan="3">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td><img src="$res/2fatcatpool/lang2/menu04.gif" width="16" height="40"></td>
+                        <td width="25%" style="text-align: center">
+                            <span style="color:#00FF00"><a href="l2_no01.htm">名称</a></span>
+                        </td>
+
+                        <td width="25%" style="text-align: center"><a href="l2_no02.htm">职业(一)</a></td>
+                        <td width="25%" style="text-align: center"><a href="l2_no03.htm">职业(二)</a></td>
+                        <td width="25%" style="text-align: center">
+                            <span style="color:#00FF00">人物数据</span>
+                        </td>
+                        <td>
+                            <p style="text-align: right"><img src="$res/2fatcatpool/lang2/menu04.gif" width="16" height="40"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu02.gif" width="64" height="8"></td>
+            <td><img src="$res/2fatcatpool/lang2/menu03.gif" width="112" height="8"></td>
+        </tr>
+    </table>
+
+</div>
+<hr noshade size="1">
+
+<div style="text-align: center">
+    <table cellpadding="0" cellspacing="0" width="95%">
+        <tr>
+            <td width="50%" style="text-align: center">
+                <ul>
+                    <li>
+                        <p style="text-align: left">以下是alvin使用Gens模拟，金山游侠修改的分析结论。如果想了解的更多，请参看<b>ReverseArk</b>兄更加精彩的分析：<br>
+                            <br>
+                            <a href="l2_research02.htm" target="_blank">梦幻模拟战2&nbsp; 
+              （MD）人物内存数据之完全解析</a></p>
+                    </li>
+                </ul>
+            </td>
+
+            <td width="50%" style="text-align: center" rowspan="2"><img src="$res/2fatcatpool/lang2/tool02.gif" width="256" height="191"></td>
+        </tr>
+        <tr>
+            <td width="50%" style="text-align: center"><img src="$res/2fatcatpool/lang2/tool01.gif" width="335" height="104"></td>
+        </tr>
+    </table>
+
+</div>
+
+<hr noshade size="1">
+
+<div style="text-align: center">
+
+    <table id="customers" frame="box" width="95%">
+        <tr>
+            <td style="text-align: center" width="48">顺序</td>
+            <td style="text-align: center" width="80">
+                <p style="text-align: center">作用</td>
+            <td>
+                <p style="text-align: center">说明</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第1位</td>
+            <td style="text-align: center">
+                <p style="text-align: center">指挥官名称</td>
+            <td>“01”代表艾尔文（エルウィン）。代码表参考<a href="l2_no01.htm">指挥官名称列表</a></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第2位</td>
+            <td style="text-align: center">职业</td>
+            <td>“01”代表战士（ファイター）。代码表参考职业列表<a href="l2_no02.htm">（1）</a>与<a href="l2_no03.htm">（2）</a></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第3位</td>
+            <td style="text-align: center">指挥官HP</td>
+            <td>“0A”代表“HP10”、即满血状态。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第4位</td>
+            <td style="text-align: center">行动状态</td>
+            <td>“00”未行动，“01”已经行动，“08”睡眠，“10”沉默，“80”被击退。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第5位</td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第6位</td>
+            <td style="text-align: center">地图上形象<br> (部队ID)
+            </td>
+            <td>“00”代表艾尔文。这个数值的排列顺序是各章动态变化的，与本章登场的角色有关。<br> 00～13用作指挥官形象，也就是说每章出场敌我指挥官最多合计20人。
+                <br> 14～23是我方可能雇佣的15种佣兵＋市民的形象
+                <br> 24～是敌方本章可能出现的佣兵形象。
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第7位</td>
+            <td style="text-align: center">Y轴坐标</td>
+            <td>“11”代表17。艾尔文的位置、从左上角向下数17格。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第8位</td>
+            <td style="text-align: center">X轴坐标</td>
+            <td>“0B”代表11。艾尔文的位置、从左上角向右数11格。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第9位</td>
+            <td style="text-align: center">装备武器</td>
+            <td>“01”代表装备了武器“匕首”。代码表参考<a href="l2_item.htm">道具图鉴<br>
+          </a>
+                <span style="color:#00FF00">*通过修改，此位置也可以放防具与饰物。防具、饰物同理。</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第10位</td>
+            <td style="text-align: center">辅助魔法效果</td>
+            <td>“00”代表部队目前没有辅助魔法在生效。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第11位</td>
+            <td style="text-align: center">装备饰物</td>
+            <td>“00”代表没有装备饰物。代码表参考<a href="l2_item.htm">道具图鉴</a></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">第12位</td>
+            <td style="text-align: center">装备防具</td>
+            <td>“16”代表装备了防具“法袍”。代码表参考<a href="l2_item.htm">道具图鉴</a></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第13位</span>
+            </td>
+            <td style="text-align: center">佣兵所属</td>
+            <td>“01”代表是艾尔文的部下</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第14位</span>
+            </td>
+            <td style="text-align: center">佣兵兵种</td>
+            <td>“64”代表佣兵是步兵（Soldier），代码表参考<a href="l2_no03.htm">职业列表（2）</a></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第15位</span>
+            </td>
+            <td style="text-align: center">佣兵HP</td>
+            <td>“0A”代表此小队佣兵为HP10。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第16位</span>
+            </td>
+            <td style="text-align: center">佣兵行动状态</td>
+            <td>“00”未行动，“01”已行动。表示方法同第4位</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第17位</span>
+            </td>
+            <td style="text-align: center">佣兵=部队ID</td>
+            <td>“00”代表艾尔文。与第6位相同。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第18位</span>
+            </td>
+            <td style="text-align: center">部队序号</td>
+            <td>“01”代表是第1小队。指挥官最多带7只部队，1-6是普通佣兵，7是召唤部队。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第19位</span>
+            </td>
+            <td style="text-align: center">佣兵Y轴坐标</td>
+            <td>“11”代表17。此部队的位置、从左上角向下数17格。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF00FF">第20位</span>
+            </td>
+            <td style="text-align: center">佣兵X轴坐标</td>
+            <td>“0A”代表10。此部队的位置、从左上角向右数10格。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"></td>
+            <td style="text-align: center"></td>
+            <td>
+                <span style="color:#00FF00">*第25-32位、第37-44位、第49-56位、第61-68位、第73-80位、第85-92位分别是其他各队佣兵（召唤部队）的相应数据。</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FFFFFF"><b>第21位</b></span>
+            </td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FFFFFF"><b>第22位</b></span>
+            </td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FFFFFF"><b>第23位</b></span>
+            </td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FFFFFF"><b>第24位</b></span>
+            </td>
+            <td style="text-align: center">指令</td>
+            <td>“00”代表当前指令是“移动”。
+                <span style="color:#00FF00">*00移动 01攻击 02防御 03手动</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第33位</b></span>
+            </td>
+            <td style="text-align: center">？</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第34位</b></span>
+            </td>
+            <td style="text-align: center">所属势力</td>
+            <td>“01”代表我军。<br>
+                <span style="color:#00FF00">*01我方（蓝），03友军（绿），04敌军（红），08敌军第二势力（红）</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第35位</b></span>
+            </td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第36位</b></span>
+            </td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第45位</b></td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第46位</b></td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第47位</b></td>
+            <td style="text-align: center">指挥官经验</td>
+            <td>“00”代表当前经验为0。具体多少经验升级根据职业而定。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第48位</b></td>
+            <td style="text-align: center">指挥官等级</td>
+            <td>“01”代表当前等级为1级。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b><span  style="color:#FF0000">第57位</span></b></td>
+            <td style="text-align: center">最大MP</td>
+            <td>“00”代表魔法值上限为0。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b><span  style="color:#FF0000">第58位</span></b></td>
+            <td style="text-align: center">MP</td>
+            <td>“00”代表当前魔法值为0。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b><span  style="color:#FF0000">第59位</span></b></td>
+            <td style="text-align: center">防御力</td>
+            <td>“12”代表指挥官自身防御力DF18（扣除装备品影响）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b><span  style="color:#FF0000">第60位</span></b></td>
+            <td style="text-align: center">攻击力</td>
+            <td>“17”代表指挥官自身攻击力AT23（扣除装备品影响）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第69位</b></td>
+            <td style="text-align: center">移动力</td>
+            <td>“05”代表指挥官移动力为MV5（扣除装备品影响）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第70位</b></td>
+            <td style="text-align: center">指挥范围</td>
+            <td>“02”代表指挥官指挥范围为2（扣除装备品影响）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第71位</b></td>
+            <td style="text-align: center">防御修正</td>
+            <td>“03”指挥官对佣兵的防御修正为+3（扣除装备品影响）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第72位</b></td>
+            <td style="text-align: center">攻击修正</td>
+            <td>“01”指挥官对佣兵的攻击修正为+1（扣除装备品影响）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第81位</b></span>
+            </td>
+            <td style="text-align: center">魔法16-23</td>
+            <td>“00”无可用魔法。决定了第16-23种魔法可用与否。<br> 代码参考
+                <a href="l2_mmagic.htm">魔法列表</a>。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第82位</b></span>
+            </td>
+            <td style="text-align: center">职业魔法防御</td>
+            <td>“32”，艾尔文当前职业为战士，职业魔法防御50。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第83位</b></span>
+            </td>
+            <td style="text-align: center">魔法1-7</td>
+            <td>“00”不会使用魔法，01可以使用魔法。也决定了第1-7种魔法可用与否。<br> 代码参考
+                <a href="l2_mmagic.htm">魔法列表</a>。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <span style="color:#FF0000"><b>第84位</b></span>
+            </td>
+            <td style="text-align: center">魔法8-15</td>
+            <td>“00”无可用魔法。决定了第8-15种魔法可用与否。<br> 代码参考
+                <a href="l2_mmagic.htm">魔法列表</a>。</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第93位</b></td>
+            <td style="text-align: center">召唤兽MP</td>
+            <td>“00”，目前无召唤部队，MP为0</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第94位</b></td>
+            <td style="text-align: center">魅惑前所属</td>
+            <td>&nbsp;中了魅惑魔法之前部队所属势力（我军，友军，敌军，敌军第二势力）</td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第95位</b></td>
+            <td style="text-align: center">指挥官肖像</td>
+            <td>“01”代表艾尔文（正常表情），代码表参考<a href="l2_face.htm">人物图鉴</a></td>
+        </tr>
+        <tr>
+            <td style="text-align: center"><b>第96位</b></td>
+            <td style="text-align: center">？</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/tablelang2.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="$css/tablelang.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/lang2.html');
+    })
+</script>
+
+
+<!--Tail-->

@@ -1,0 +1,115 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">2019.6.17</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="14"></div>
+<img src="$res/fatcatpool/essay/QQ截图20190617005643.png"><br><br>
+<b>1.持续时间</b> <br> 定义这个异常状态的持续时间，单位是毫秒
+<br> 例：一个中毒效果持续10秒的话，持续时间就是10000
+<br> 如果是0的话就是无限持续
+<br>
+<br>
+<br>
+<b>2.伤害属性</b><br> 定义这个异常状态的伤害类型，计算伤害的时候会计算对应的防御力
+<br> 可以选择的类型有：斩击、打击、贯穿、火、水、风、土、光、暗、以太
+<br>
+
+<br><br>
+<b>3.伤害方式</b><br> 二选一，无法共存
+<br> 累积爆发：这个异常状态会在持续时间结束后一口气爆发所有的伤害，持续时不会减少体力
+<br> 持续流失：按照定义的伤害量，计算对应的防御力之后，每秒流失体力
+<br>
+<br>
+<br>
+<b>4.伤害</b><br> 定义这个异常每秒减少的体力值
+<br>
+<br>
+<br>
+<b>5.重伤率</b><br> 重伤（减少HP最大值，使得角色直到造访存档点之前都无法通过自然手段回复到最大HP）
+<br> 定义这个异常造成伤害的百分之多少会转化为角色的重伤值
+<br>
+<br>
+<br>
+<b>6.标记</b><br> 本体标记：定义这个异常状态的mark
+<br> 外来标记：定义这个异常状态可以响应的其他异常状态的mark
+<br>
+<br>
+<br>
+<b>7.状态</b><br> 位移：角色处于位移时……
+<br> 浮空：角色处于浮空状态时……
+<br> 倒地：角色倒地时……
+<br>
+<br>
+<br>
+<b>8.变化</b><br> 标记以及状态所定义的条件满足时，就会产生每个条件独立的变化
+<br> 变化的属性分成五种：持续时间、伤害、重伤率、伤害属性、伤害方式
+<br>
+<br> 其中持续时间、伤害、重伤率适用的变化方式分为：赋值，率变化以及量变化
+<br> 赋值：定义的数值会覆盖原有的数值
+<br> 率变化：定义的数值会和原数值相乘
+<br> 量变化：定义的数值会和原数值相加
+<br>
+<br> 伤害属性、伤害方式只能改变选项
+<br>
+<br>
+<br>
+<b>9.Face</b><br> 定义异常状态的图标和名称
+<br><br><br><br> 例子：
+
+<br><br><br> [name]
+<br> 中毒
+<br><br> [face image]<br> `res/icon/蛇毒.png`
+<br><br> [duration] <br> 10000
+<br><br> [damage attribute] <br> dark
+<br><br> [damage mode] <br> continuous
+<br><br> [damage point] <br> 150
+<br><br> [injury rate] <br> 0.35
+<br><br> [mark] <br> `[snakepoison]`
+<br><br> [exmark] <br> `[scorpionpoison]`
+<br><br> [change] <br> `[moving]``500``3``0.03``3``2``3`` `` `<br> `[scorpionpoison]``1000``1``0``1``-2000``1``1``ether`<br>
+
+<br><br><br> 上面的异常状态被描述为，持续10秒，每秒造成150点暗属性伤害的持续流失型中毒
+<br> 中毒时造成的35%伤害会转化为重伤
+<br> 当移动时，持续时间会每秒增加0.5秒持续时间、3%的重伤率以及2点暗属性伤害
+<br> 当遭受了毒蝎的攻击中了它们的毒的话，毒性会和这个毒中和，这个毒的持续时间变成1秒，并且无视防御（也就是以太伤害的模式）回复2000点HP
+<br><br> [change]的每个子项的意思分别是
+<br> `响应的mark名``持续时间``变化方式``重伤率``变化方式``伤害``变化方式``伤害方式``伤害属性`
+<br> 变化方式中，1-赋值；2-率变化；3-量变化
+<br> 伤害方式，1-累积爆发；2-持续流失
+<br> 伤害属性则是直接填写对应的英文
+<br>空白就是不作出改变
+
+
+
+
+
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/essay.html');
+    })
+</script>
+
+
+
+<!--Tail-->

@@ -1,0 +1,57 @@
+#customers {
+    border-collapse: collapse;
+}
+
+#customers td,
+#customers th {
+    text-align: center;
+    border: 1px solid #888888;
+    padding: 3px 7px 2px 7px;
+    height: 35px;
+    color: #000000;
+}
+
+#customers tr.alt td {
+    color: #000000;
+    background-color: #F5F8FA;
+}
+
+
+.verydisco img {
+    width: auto;
+    max-width: 240px;
+    height: auto;
+    max-height: 200px;
+    overflow-y:hidden
+}
+
+
+table tr th {
+    font-weight: 300;
+}
+
+#ciyaus {
+    border-collapse: collapse;
+}
+
+#ciyaus td,
+#ciyaus th {
+    text-align: center;
+    border: 1px solid #888888;
+    padding: 3px 7px 2px 7px;
+    height: 35px;
+    color: #000000;
+}
+
+#ciyaus tr.alt td {
+    color: #000000;
+    background-color: #F5F8FA;
+}
+
+#ciyaus tr:nth-of-type(even) {
+    background-color: #F5F8FA;
+}
+
+p {
+    line-height: 8px;
+}

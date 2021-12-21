@@ -1,0 +1,10 @@
+@import url($css/table.css);
+#customers {
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    text-align: left;
+    background-color: #F2F2F2;
+}

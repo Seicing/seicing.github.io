@@ -1,0 +1,27 @@
+@import url($css/table.css);
+#customers {
+    width: 100%;
+}
+
+#ciyaus {
+    width: 100%;
+}
+
+#empire {
+    border-collapse: collapse;
+}
+
+#empire td,
+#empire th {
+    width: 150px;
+    max-height: 150px;
+    border: 1px solid #888888;
+    text-align: center;
+}
+
+#empire img {
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    max-height: 150px;
+}

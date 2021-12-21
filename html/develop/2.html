@@ -1,0 +1,75 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">武器Avatar</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="2"></div>
+今天攻克了的难关是武器的阿凡达(Avatar) <br> 由于余在设定里特殊的“掠夺”系统，让她可以在敌人身上缴获各种各样的武器
+<br> 所以一个很重要的东西就是要解决武器的阿凡达问题以适应同一个骨骼下适用于各种各样的武器
+<br><br> 最开始的时候的思路是这样的——<br><br>
+<img src="$res/2fatcatpool/develop/QQ截图20200131232149.png"><br>1.武器和本体骨骼绑定的fbx，用来标识这个武器骨骼已经绑在本体上了<br><br>
+<img src="$res/2fatcatpool/develop/QQ截图20200131232139.png"><br>2.武器的独立建模<br><br>
+<img src="$res/2fatcatpool/develop/QQ截图20200131232421.png"><br>3.本体模型<br> 思路就是通过1这个fbx提供绑定关系，把3的内容通过1映射到2上面
+
+<br> 最后草泥马说做不了，必须要在本体直接安排上绑定关系
+
+<br><br>
+<img src="$res/2fatcatpool/develop/QQ截图20200131232110.png"><br><br>所以把3的本体模型复制了一把武器和骨头进去，让它可以对应起来，让3的武器的空间坐标根据1这个关系进行修正<br><br>
+<img src="$res/2fatcatpool/develop/dsgsg.jpg"><br><br>蛋疼的情况出现了，似乎发生了重复绑定后，空间坐标修正出了点问题<br> 似乎是把自己绕进去了，整理一下思路……
+<br><br> 为什么要用最开始那个绑定思路呢？是因为想保持本体模型的纯洁性，不再给本体模型加一大堆乱七八糟的骨头，所以就考虑用映射法把信息给传递过去，但是不行
+
+<br> 但是我好像忘记了一点，
+<b>武器其实就是配件的一种</b>，没有放武器进去，一来是因为建模的时候没做，二来是不同武器也许需要用到不同的骨头，直接拼进去的话泛用性会很低<br> 然而想了一下，目前可能会出现的几种武器——爪、长枪、火炮、剑、长弓……他们大概可以分成两种类型，就是
+<b>首端绑定</b>和<b>中央绑定</b>，区别就是剑这些绑定在骨头的一端，长枪这些绑定在骨头的中央<br> 其实这两个本质上没有任何区别的感觉，因为我可以绑一半，当另一半没有，这样不就解决了武器的绑定点和两种情况的问题了？
+<br><br> 想通之后，直接把武器和骨骼放到本体模型上
+
+<br><br>
+<img src="$res/2fatcatpool/develop/QQ截图20200131233422.png" width="800px"><br><br> 效果看起来还是能接受的
+<br><br>
+<img src="$res/2fatcatpool/develop/EBBC61BFD5434A8E9330E6340D210174.gif"><br> <br>然后在这个基础上，制作独立的测试用武器
+<br><br>
+<img src="$res/2fatcatpool/develop/QQ截图20200131233604.png" width="800px"><br><br> 让unity识别武器之间相同的骨骼，让这个独立的模型绑定到本体的骨骼上
+<br><br>
+<img src="$res/2fatcatpool/develop/sfgag.gif">武器阿凡达！成功！<br><br> 其实这次制作就是督促想东西不要太死板的感觉，其实这个武器阿凡达是很简单的一个工序，但是为了所谓的“泛用性”，把自己绕进去了，蛋疼
+
+<br> 下一个需要攻克的难关是“渲染”，目前已经和草泥马讨论了几个方案，就看接下来的实现了
+<br>
+<br>
+
+<div style='text-align:right'>2020年2月1日</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/develop.html');
+    })
+</script>
+
+<!--Tail-->

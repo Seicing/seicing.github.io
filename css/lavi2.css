@@ -1,0 +1,32 @@
+﻿/*return top*/
+
+.izl-rmenu {
+    margin-right: 0;
+    width: 26px;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+}
+
+.izl-rmenu .btn_top {
+    position: relative;
+    left: 900px;
+    background-image: url(to2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+    height: 52px;
+    width: 26px;
+    /*
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+    */
+}
+
+.izl-rmenu .btn_top:hover {
+    background-image: url(to2.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}

@@ -1,0 +1,471 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+
+<div style="position:relative;">
+    <span style="font-family:宋体">2019.6.22</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/131414.png" alt="">
+    </div>
+</div>
+
+<!--Content-->
+<div id="lavipage" page="15"></div>
+
+
+【地区】 <br> 游戏内根据地域会把城市分为【北西原】、【南西原】、【中央西景】、【北尤伊】、【南尤伊】、【红云】、【白夜】、【西艾特拉塔】、【中央艾特拉塔】以及【三角洲】地区 <br> 这些地区的城市里的商品会共用一套【地区行情】 <br> <br> <br><br> 【行情】
+
+
+
+<br> 行情是交易系统中一个重要的概念，又分为【地区行情】以及【都市行情】
+<br> 一般来说，一个城市里面出售的商品的【最终价格】就是【原始价格】*【地区行情】*【都市行情】
+<br><br> 都市里面的【都市行情】是某个都市独享的，每个月都会清0，并且会在每个星期的星期一根据它是正还是负，消减或者增加20%，尽量往0的方向平衡
+
+<br> 【地区行情】会在每个星期的星期一随机增加或者减少
+<br><br> 在市场进行【采购】的时候，【地区行情】会根据购买的数量增加，进行【出售】的时候【地区行情】会根据购买的数量减少
+
+<br> 【都市行情】也适用上面的规律，但是其他都市的【都市行情】在进行交易时是不会被影响的
+<br><br> 【行情】影响的价格是【一类】商品
+
+<br> 例如说原价55的白银和152的黄金，进行购入10个白银之后，地区行情和都市行情上升，乘起来的加成率为1.17，这样白银和黄金的价格会变成64和178
+<br>
+
+<br> <br> <br><br> 【商品】
+
+
+<br> 商品的来源有三种：【大货】、【市场】和【制作】
+<br> 【大货】是指在每个港口附近随机出现的走私商人，他会用完全随机的价格把自己的商品卖给你，不了解行情的话很容易被骗，不过有副官的话会提醒你
+<br> 【市场】就是正常的交易买卖
+<br> 【制作】阿拉贡在野外地图进行冒险的时候杀死怪物收集到的材料进行合成的话就可以制作成可交易的商品
+<br>
+<br> <br> <br><br> 【交易】
+
+
+<br> 正常来说，商人们会用市价8折的价钱收购你的商品
+<br> 有副官的场合下，或者自己有相关技能的前提下，会尝试讲价以更高的价格卖出
+<br> 收购的时候也是，自己和副官会尝试讲价以更低的价格购入
+<br>
+<br> <br> <br> <br> 暂定的各地原始价格表
+
+<br>
+<table id="customers">
+
+    <tr>
+        <td>种类</td>
+        <td>分类名称</td>
+        <td>北西原</td>
+        <td>南西原</td>
+        <td>中西景</td>
+        <td>北尤伊</td>
+        <td>南尤伊</td>
+        <td>红云</td>
+        <td>白夜</td>
+        <td>西艾特拉塔
+        </td>
+        <td>中央艾特拉塔
+        </td>
+        <td>三角洲</td>
+    </tr>
+    <tr>
+        <td rowspan="2">补给品</td>
+        <td>资材</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>能源石</td>
+        <td>7</td>
+        <td>7</td>
+        <td>6</td>
+        <td>14</td>
+        <td>13</td>
+        <td>11</td>
+        <td>12</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td rowspan="5">金属</td>
+        <td>黄金</td>
+        <td>256</td>
+        <td>264</td>
+        <td>231</td>
+        <td>235</td>
+        <td>227</td>
+        <td>208</td>
+        <td>229</td>
+        <td>263</td>
+        <td>269</td>
+        <td>310</td>
+    </tr>
+    <tr>
+        <td>铜</td>
+        <td>74</td>
+        <td>76</td>
+        <td>52</td>
+        <td>108</td>
+        <td>101</td>
+        <td>43</td>
+        <td>109</td>
+        <td>78</td>
+        <td>76</td>
+        <td>72</td>
+    </tr>
+    <tr>
+        <td>铁</td>
+        <td>53</td>
+        <td>56</td>
+        <td>52</td>
+        <td>79</td>
+        <td>78</td>
+        <td>35</td>
+        <td>59</td>
+        <td>55</td>
+        <td>53</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>铝合金</td>
+        <td>62</td>
+        <td>65</td>
+        <td>66</td>
+        <td>82</td>
+        <td>84</td>
+        <td>62</td>
+        <td>68</td>
+        <td>53</td>
+        <td>52</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>白银</td>
+        <td>68</td>
+        <td>66</td>
+        <td>43</td>
+        <td>69</td>
+        <td>65</td>
+        <td>85</td>
+        <td>89</td>
+        <td>56</td>
+        <td>55</td>
+        <td>59</td>
+    </tr>
+    <tr>
+        <td rowspan="9">奢侈品</td>
+        <td>珊瑚</td>
+        <td>55</td>
+        <td>98</td>
+        <td>105</td>
+        <td>53</td>
+        <td>45</td>
+        <td>88</td>
+        <td>86</td>
+        <td>39</td>
+        <td>32</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>染料</td>
+        <td>52</td>
+        <td>49</td>
+        <td>38</td>
+        <td>52</td>
+        <td>53</td>
+        <td>55</td>
+        <td>54</td>
+        <td>85</td>
+        <td>84</td>
+        <td>89</td>
+    </tr>
+    <tr>
+        <td>宝石</td>
+        <td>92</td>
+        <td>79</td>
+        <td>82</td>
+        <td>63</td>
+        <td>66</td>
+        <td>58</td>
+        <td>56</td>
+        <td>102</td>
+        <td>109</td>
+        <td>106</td>
+    </tr>
+    <tr>
+        <td>水晶玉</td>
+        <td>11</td>
+        <td>10</td>
+        <td>9</td>
+        <td>11</td>
+        <td>11</td>
+        <td>20</td>
+        <td>12</td>
+        <td>13</td>
+        <td>10</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>香水</td>
+        <td>53</td>
+        <td>58</td>
+        <td>40</td>
+        <td>68</td>
+        <td>65</td>
+        <td>82</td>
+        <td>86</td>
+        <td>66</td>
+        <td>65</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td>艺术品</td>
+        <td>35</td>
+        <td>33</td>
+        <td>30</td>
+        <td>42</td>
+        <td>41</td>
+        <td>42</td>
+        <td>42</td>
+        <td>33</td>
+        <td>30</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>绒毯</td>
+        <td>83</td>
+        <td>81</td>
+        <td>62</td>
+        <td>86</td>
+        <td>84</td>
+        <td>52</td>
+        <td>88</td>
+        <td>62</td>
+        <td>58</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>瓷器</td>
+        <td>33</td>
+        <td>33</td>
+        <td>32</td>
+        <td>80</td>
+        <td>80</td>
+        <td>72</td>
+        <td>72</td>
+        <td>68</td>
+        <td>68</td>
+        <td>69</td>
+    </tr>
+    <tr>
+        <td>玉器</td>
+        <td>31</td>
+        <td>39</td>
+        <td>20</td>
+        <td>82</td>
+        <td>89</td>
+        <td>87</td>
+        <td>89</td>
+        <td>72</td>
+        <td>76</td>
+        <td>77</td>
+    </tr>
+    <tr>
+        <td rowspan="8">食用品</td>
+        <td>香料</td>
+        <td>49</td>
+        <td>25</td>
+        <td>50</td>
+        <td>119</td>
+        <td>108</td>
+        <td>128</td>
+        <td>135</td>
+        <td>76</td>
+        <td>75</td>
+        <td>69</td>
+    </tr>
+    <tr>
+        <td>盐</td>
+        <td>55</td>
+        <td>55</td>
+        <td>56</td>
+        <td>42</td>
+        <td>41</td>
+        <td>39</td>
+        <td>34</td>
+        <td>55</td>
+        <td>55</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td>糖</td>
+        <td>68</td>
+        <td>70</td>
+        <td>89</td>
+        <td>55</td>
+        <td>57</td>
+        <td>42</td>
+        <td>55</td>
+        <td>61</td>
+        <td>62</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>肉制品</td>
+        <td>28</td>
+        <td>26</td>
+        <td>42</td>
+        <td>41</td>
+        <td>32</td>
+        <td>39</td>
+        <td>52</td>
+        <td>29</td>
+        <td>25</td>
+        <td>33</td>
+    </tr>
+    <tr>
+        <td>谷类</td>
+        <td>15</td>
+        <td>21</td>
+        <td>64</td>
+        <td>60</td>
+        <td>38</td>
+        <td>65</td>
+        <td>62</td>
+        <td>41</td>
+        <td>42</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>食用油</td>
+        <td>20</td>
+        <td>20</td>
+        <td>40</td>
+        <td>35</td>
+        <td>35</td>
+        <td>40</td>
+        <td>45</td>
+        <td>28</td>
+        <td>28</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>酒类</td>
+        <td>50</td>
+        <td>60</td>
+        <td>40</td>
+        <td>42</td>
+        <td>38</td>
+        <td>32</td>
+        <td>22</td>
+        <td>31</td>
+        <td>28</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>水产品</td>
+        <td>47</td>
+        <td>82</td>
+        <td>108</td>
+        <td>89</td>
+        <td>50</td>
+        <td>75</td>
+        <td>43</td>
+        <td>40</td>
+        <td>32</td>
+        <td>33</td>
+    </tr>
+    <tr>
+        <td rowspan="5">面料</td>
+        <td>丝织物</td>
+        <td>56</td>
+        <td>54</td>
+        <td>48</td>
+        <td>120</td>
+        <td>100</td>
+        <td>120</td>
+        <td>140</td>
+        <td>110</td>
+        <td>122</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>毛织物</td>
+        <td>85</td>
+        <td>89</td>
+        <td>51</td>
+        <td>32</td>
+        <td>35</td>
+        <td>41</td>
+        <td>50</td>
+        <td>38</td>
+        <td>35</td>
+        <td>55</td>
+    </tr>
+    <tr>
+        <td>麻织物</td>
+        <td>23</td>
+        <td>28</td>
+        <td>20</td>
+        <td>23</td>
+        <td>22</td>
+        <td>40</td>
+        <td>59</td>
+        <td>22</td>
+        <td>23</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>棉织物</td>
+        <td>52</td>
+        <td>59</td>
+        <td>33</td>
+        <td>58</td>
+        <td>54</td>
+        <td>28</td>
+        <td>58</td>
+        <td>38</td>
+        <td>32</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>真皮</td>
+        <td>40</td>
+        <td>42</td>
+        <td>38</td>
+        <td>46</td>
+        <td>50</td>
+        <td>38</td>
+        <td>35</td>
+        <td>55</td>
+        <td>53</td>
+        <td>60</td>
+    </tr>
+</table>
+
+
+<!--List-->
+
+
+<!--Bottom-->
+<a href="$html/index.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/essay.html');
+    })
+</script>
+
+
+
+<!--Tail-->

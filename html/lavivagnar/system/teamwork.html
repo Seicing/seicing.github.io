@@ -1,0 +1,79 @@
+<meta charset="UTF-8" />
+
+<!--Title-->
+<div style="position:relative;">
+    <span style="font-family:宋体">团队协作AI编辑系统</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="$res/23233.png" alt="">
+    </div>
+    <br /> <br />
+</div>
+
+
+<!--Content-->
+<div id="lavipage" page="7"></div>
+<p>队伍里有npc的话可以通过灵魂环中的指令编辑决定npc的动作倾向 </p>
+
+<span style="color: #CABC85"> <b>进攻欲望</b></span>
+<ul>
+    <li>侵略性的（会主动地攻击能见到的敌人，敌人逃跑也会主动追上去） </li>
+    <li>谨慎的（会跟随主角，遭遇敌人会尝试攻击，敌人远离后会放弃追踪） </li>
+    <li>和平的（跟随主角，绝对不会主动攻击敌人） </li>
+    <li>随和的（不刻意要求，跟从其他设定的效果） </li>
+</ul>
+
+<span style="color: #CABC85"> <b>技能释放</b></span>
+<ul>
+    <li>竭尽全力（会释放所有的技能，包括决胜技） </li>
+    <li>保留余力（不会消耗太大的精力去释放技能，不会使用决胜技） </li>
+    <li>消耗为主（不会刻意释放技能，只会不断地尝试普通攻击会消耗敌人的体力） </li>
+    <li>自由作战（不刻意要求，跟从其他设定的效果） </li>
+</ul>
+
+<span style="color: #CABC85"> <b>队友支援</b></span>
+<ul>
+    <li>全力支援（可以获得增益伤害buff的前提下，会优先尝试触发） </li>
+    <li>全力控制（会不断地限制敌人的行动） </li>
+    <li>全力保护（会不断地用自身的身体挡伤害去保护玩家） </li>
+    <li>全力治疗（会躲在玩家的后方尝试使用回复类技能或道具） </li>
+</ul>
+
+<span style="color: #CABC85"> <b>概念</b></span>
+<ul>
+    <li>维持（如果概念是长时间触发的持续buff会长期维持） </li>
+    <li>猛烈地（如果概念是单发的，会一到冷却时间就使用） </li>
+    <li>消极地（偶尔会使用） </li>
+    <li>不使用（终止使用所有概念主动效果） </li>
+</ul>
+
+<span style="color: #CABC85"> <b>攻击目标</b></span>
+<ul>
+    <li>强敌优先（优先攻击boss，忽略小兵） </li>
+    <li>全面压制（忽视boss，优先清除小兵） </li>
+    <li>集中剿灭（优先攻击数量较少的敌人种类） </li>
+    <li>自由作战（攻击目标让npc自己决定） </li>
+</ul>
+
+<span style="color: #CABC85"> <b>作战保留度</b></span>
+<ul>
+    <li>至死方休（无论什么时候都往前冲） </li>
+    <li>要注意敌人（HP低于75%的场合下会后退） </li>
+    <li>危险！（HP低于50%的场合下会后退） </li>
+    <li>不顾一切（HP低于25%的场合下会后退） </li>
+</ul>
+
+<!--List-->
+
+<!--Bottom-->
+<a href="$html/lavivagnar/index-lavivagnar.html"><b>回到目录</b></a>
+
+<!--Head-->
+<link href="$css/table_lv.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sidebar').load('$js/list/system.html');
+    })
+</script>
+
+<!--Tail-->

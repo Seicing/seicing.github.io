@@ -1,0 +1,15 @@
+#customers {
+    border-collapse: collapse;
+}
+
+#customers td,
+#customers th {
+    text-align: left;
+    border: 1px solid #CABC85;
+    padding: 3px 7px 2px 7px;
+    height: 35px;
+}
+
+table tr th {
+    font-weight: 300;
+}
