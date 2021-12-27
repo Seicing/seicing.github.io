@@ -28,8 +28,9 @@
         font-size: 18px;
         font-style: italic;
         font-weight: bold;
-        background-image: url(https://seicing.com/res/DialogHeader.png), url(https://seicing.com/res/DialogCenter.png), url(https://seicing.com/res/DialogBottom.png);
-        background-repeat: no-repeat, repeat, no-repeat;
+        background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
+            url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
+            url(https://seicing.com/res/DialogCenter.png) top repeat-y;
     }
 
     #banaheader {
@@ -59,12 +60,12 @@
     <div style="position:absolute; display:inline-block;">
         <table id="tablebana" cellpadding="3">
             <tr>
-                <td id="banaheader" style="padding:1px 0px 0px 2px;">
+                <td id="banaheader" style="padding:-1px 0px 0px -2px;">
                     余
                 </td>
             </tr>
             <tr>
-                <td width="342px" style="padding:4px 0px 0px 2px;">
+                <td width="342px" style="padding:-4px 0px 0px -2px;">
                     说到底我们蚩幽一族好像历史上经常发生这种情况啊，明明是狩猎者的象征的白狼，却频频沦为被掠食者追赶的猎物
                 </td>
                 <td width="150px"></td>
