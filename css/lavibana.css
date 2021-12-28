@@ -1,0 +1,48 @@
+﻿@font-face {
+    font-family: "lavi";
+    src: url("https://seicing.com/res/SourceHanSansCN-Medium.otf"),
+}
+
+#tablebana {
+    width: 492px;
+    text-align: left;
+    color: #ffffff;
+    font-family: "lavi";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+#banaheader {
+    font-size: 21px;
+    color: #DACF88;
+}
+
+#dia1 {
+    float: left;
+    margin-bottom: 9px;
+    background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
+        url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
+        url(https://seicing.com/res/DialogCenter.png) top repeat-y;
+}
+
+#dia2 {
+    float: right;
+    margin-bottom: 9px;
+    background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
+        url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
+        url(https://seicing.com/res/DialogCenter.png) top repeat-y;
+}
+
+#金{
+    color: #DACF88
+}
+
+#绿{
+    color: #00ff00
+}
+
+#红{
+    color: #ff0000
+}
