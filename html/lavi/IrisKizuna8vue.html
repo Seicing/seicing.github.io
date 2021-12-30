@@ -37,7 +37,7 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.special">
+        <div :id="diaindex.special" :style="diaindex.specialstyle">
             <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
                 <tr v-html="diaindex.string1st"> </tr>
                 <tr v-html="diaindex.string2nd"> </tr>
@@ -109,6 +109,11 @@
                             json[i].tableid = 'tablebana2';
                         }
 
+                        if (json[i].special != 'dia3') {
+                            json[i].specialstyle = 'position:static';
+                        } else {
+                            json[i].specialstyle = 'position:relative;left:15%;';
+                        }
 
                     }
                 })
