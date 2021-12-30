@@ -35,6 +35,14 @@
         url(https://seicing.com/res/DialogCenter.png) top repeat-y;
 }
 
+#dia3 { 
+    float: center;
+    margin-bottom: 9px;
+    background: url(https://seicing.com/res/DialogHeadernon.png) top no-repeat,
+        url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
+        url(https://seicing.com/res/DialogCenter.png) top repeat-y;
+}
+
 #金{
     color: #DACF88
 }
