@@ -18,12 +18,6 @@
         "special": "dia2"
     },
     {
-        "name": "余",
-        "face": "余",
-        "string": "<span id='大'>你会付出代价的</span>",
-        "special": "dia1"
-    },
-    {
         "name": "世清",
         "face": "世清",
         "string": "这个<span id='绿'>肥肥的余头雪人</span>，跟你长得一模一样啊，别挣扎了，你就是小雪人",
@@ -33,6 +27,12 @@
         "name": "余",
         "face": "余",
         "string": "呜",
+        "special": "dia1"
+    },
+    {
+        "name": "余",
+        "face": "余",
+        "string": "<span id='大'>你会付出代价的</span>",
         "special": "dia1"
     },
     {
