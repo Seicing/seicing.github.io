@@ -88,19 +88,19 @@
                         if (json[i].name != '') {
                             json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
                         } else {
-                            json[i].string1st = '<td></td>';
+                            json[i].string1st = '<td id="banaheader2"></td>';
                         }
 
                         if (json[i].face != '') {
                             json[i].facein = 'background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:0 0 15px 0;';
                         } else {
-                            json[i].facein = ' ';
+                            json[i].facein = 'border-radius:0 0 15px 0;';
                         }
 
                         if (json[i].special != 'dia3') {
                             json[i].string2nd = '<td width="300px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="180px"></td>';
                         } else {
-                            json[i].string2nd = '<td width="480px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td> ';
+                            json[i].string2nd = '<td width="475px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="5px"></td>';
                         }
                     }
                 })
