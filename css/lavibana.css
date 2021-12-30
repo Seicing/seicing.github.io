@@ -20,7 +20,6 @@
 }
 
 #dia1 {
-    border-radius:0 0 10px 0;
     float: left;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
@@ -28,8 +27,7 @@
         url(https://seicing.com/res/DialogCenter.png) top repeat-y;
 }
 
-#dia2 {
-    border-radius:0 0 10px 0;
+#dia2 { 
     float: right;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
