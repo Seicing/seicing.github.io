@@ -38,8 +38,8 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div v-html="diaindex.specialin">
-            <table id="tablebana" cellpadding="5" v-html="diaindex.facein">
+        <div v-id="diaindex.special">
+            <table id="tablebana" cellpadding="5" v-style="diaindex.facein">
                 <tr>
                     <td id="banaheader" style="padding: 5px 0px 10px 10px;">
                         <div v-html="diaindex.name"></div>
@@ -94,9 +94,9 @@
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
                         json[i].name = json[i]['name'];
-                        json[i].facein = 'style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:0 0 15px 0;"';
+                        json[i].facein = 'background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:0 0 15px 0;';
                         json[i].string = json[i]['string'];
-                        json[i].specialin = 'id="' + json[i]['special'] + '"';
+                        json[i].special = json[i]['special'];
 
                     }
                 })
