@@ -52,7 +52,7 @@
 }
 
 #dia3 { 
-    text-align: center;
+    float: left;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeadernon.png) top no-repeat,
         url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
