@@ -9,6 +9,7 @@
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/labibana.html');
@@ -34,596 +35,16 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="2"></div>
 
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                ？？？
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                又见面了啊，年轻人
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
+<div id="app">
+    <div v-for="diaindex in aasb">
+        <div :id="diaindex.special" :style="diaindex.specialstyle">
+            <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
+                <tr v-html="diaindex.string1st"> </tr>
+                <tr v-html="diaindex.string2nd"> </tr>
+            </table>
+        </div>
+    </div>
 </div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                ！
-            </td>
-            <td width="180px"></td>
-        </tr>
-
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                阿齐兹国王……
-            </td>
-            <td width="180px"></td>
-        </tr>
-
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                语气友善一点吧，年轻人 <br>
-                不，西景的皇帝阁下
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我现在的身份已经不能居高临下跟你说话了呢
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                阿齐兹王，你这样说话用我们的话来说就是阴阳怪气
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                看起来我们是同一类的人，都不太会说话
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我们都各退一步，好好说话吧
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                ……
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                最近，索菲亚和我的关系缓和了一些 <br>
-                跟我说了很多冒险时候发生的故事
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                能让人感受到发自内心的喜悦呢 <br>
-                最后我也决定放弃强迫她和别人联姻了
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                阁下可以理解自己女儿的想法我很高兴
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我对我刚刚展现出来的敌意抱歉
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                实际上…… <br>
-                我比你想象中还要关心自己的孩子
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                对于我们来说，最不幸的事情就是作为伊拉修莱德王族的后裔
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                作为“艾特拉塔之盾”的我们有抵御来自东方的异教徒的“责任” <br>
-                我和我的兄弟姐妹都付出了自己的代价去守护这个国家
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                从出生那一天起就要冷酷地执行自己的使命，和厌恶的权势女人联姻，亲手杀死怀有异心兄弟
-
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                不知道是多久之前开始我就感受不到任何感情了
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                也在不知不觉间，我也把强求自己的孩子也成为“盾”这件事，变得无比偏执
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                不过已经无所谓了
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                无所谓？
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                作为伊拉修莱德王族，伊拉修莱德的孩子们也是王族需要守护的对象
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                ……感觉就是个借口
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                真不像阁下会说的话
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我一直都无法接受家族给与我的诅咒 <br>
-                因为自身的不幸，自私地想要让孩子也像自己一样成为国家的垫脚石
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                厌恶自己的宿命，把义务推卸给自己的孩子 <br>
-                一代而又一代地重复下去，那就是作为“盾”我们悲运的根源
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                想明白这点之后……我就明白了自己作为伊拉修莱德的国王，真正要做的是什么
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                索菲亚是我自豪的女儿，在她历练成真正的伊拉修莱德女王，认识到自己的责任之前，给我好好地照顾好她吧
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我的女儿就交给你了
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                不要说这些会让人误会的话
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                你是聪明人，就是在感情方面一点都不坦率
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/阿齐兹王.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                阿齐兹王
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                希望下次见到你是在我们伊拉修莱德最华丽的金色礼堂 <br>
-                而且我可以直呼你的名字
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                ……
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;border-radius:0 0 15px 0;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我们确实是同一类人，至少在不坦率这点上
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-
 
                         </div>
                         <div class="izl-rmenu">
@@ -649,5 +70,55 @@
     </div>
 </body>
 
+<script type="text/javascript">
+    var imgAll = [];
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            aasb: []
+        },
+        created() {
+            fetch('https://seicing.com/js/dia/IrisKizuna8.json')
+                .then(response => response.json())
+                .then(json => {
+                    this.aasb = json
+                    for (var i = 0; i < json.length; i++) {
+                        json[i].special = json[i]['special'];
+
+                        if (json[i].name != '') {
+                            json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
+                        } else {
+                            json[i].string1st = '<td id="banaheader2"></td>';
+                        }
+
+                        if (json[i].face != '') {
+                            json[i].facein = 'background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:0 0 15px 0;';
+                        } else {
+                            json[i].facein = 'border-radius:0 0 15px 0;';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].string2nd = '<td width="300px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="180px"></td>';
+                        } else {
+                            json[i].string2nd = '<td width="475px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="5px"></td>';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].tableid = 'tablebana';
+                        } else {
+                            json[i].tableid = 'tablebana2';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].specialstyle = 'position:static';
+                        } else {
+                            json[i].specialstyle = 'position:relative;left:15%;';
+                        }
+
+                    }
+                })
+        }
+    })
+</script>
 
 </html>

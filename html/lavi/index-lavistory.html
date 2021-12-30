@@ -9,6 +9,7 @@
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/labibana.html');
@@ -33,128 +34,16 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="1"></div>
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/余.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                余
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                别说傻话了 <br>
-                早点睡觉吧，熬夜都是<span id="金">小雪人</span> <br>
-                什么？你说谁是<span id="金">小雪人</span>啊
-            </td>
-            <td width="180px"></td>
-        </tr>
-
-    </table>
+<div id="app">
+    <div v-for="diaindex in aasb">
+        <div :id="diaindex.special" :style="diaindex.specialstyle">
+            <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
+                <tr v-html="diaindex.string1st"> </tr>
+                <tr v-html="diaindex.string2nd"> </tr>
+            </table>
+        </div>
+    </div>
 </div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/余.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                余
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                我真的是<span id="金">小雪人</span>吗……
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                难道不是吗
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/余.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                余
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                <span id="红">你会付出代价的</span>
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia2">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/世清.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                世清
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                这个<span id="绿">肥肥的余头雪人</span>，跟你长得一模一样啊，别挣扎了，你就是小雪人
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/余.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                余
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                <span id="小">呜呜呜</span>
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
-<div id="dia1">
-    <table id="tablebana" cellpadding="5"
-        style="background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/余.png) center right no-repeat;">
-        <tr>
-            <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                余
-            </td>
-        </tr>
-        <tr>
-            <td width="300px" style="padding: 0px 0px 10px 10px;">
-                <span id="大">你这个大笨蛋！</span> <br>
-            </td>
-            <td width="180px"></td>
-        </tr>
-    </table>
-</div>
-
 
                         </div>
                         <div class="izl-rmenu">
@@ -180,5 +69,55 @@
     </div>
 </body>
 
+<script type="text/javascript">
+    var imgAll = [];
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            aasb: []
+        },
+        created() {
+            fetch('https://seicing.com/js/dia/Mode.json')
+                .then(response => response.json())
+                .then(json => {
+                    this.aasb = json
+                    for (var i = 0; i < json.length; i++) {
+                        json[i].special = json[i]['special'];
+
+                        if (json[i].name != '') {
+                            json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
+                        } else {
+                            json[i].string1st = '<td id="banaheader2"></td>';
+                        }
+
+                        if (json[i].face != '') {
+                            json[i].facein = 'background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:0 0 15px 0;';
+                        } else {
+                            json[i].facein = 'border-radius:0 0 15px 0;';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].string2nd = '<td width="300px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="180px"></td>';
+                        } else {
+                            json[i].string2nd = '<td width="475px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="5px"></td>';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].tableid = 'tablebana';
+                        } else {
+                            json[i].tableid = 'tablebana2';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].specialstyle = 'position:static';
+                        } else {
+                            json[i].specialstyle = 'position:relative;left:15%;';
+                        }
+
+                    }
+                })
+        }
+    })
+</script>
 
 </html>
