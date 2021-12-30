@@ -38,8 +38,8 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div v-id="diaindex.special">
-            <table id="tablebana" cellpadding="5" v-style="diaindex.facein">
+        <div :id="diaindex.special">
+            <table id="tablebana" cellpadding="5" :style="diaindex.facein">
                 <tr>
                     <td id="banaheader" style="padding: 5px 0px 10px 10px;">
                         <div v-html="diaindex.name"></div>
