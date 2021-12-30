@@ -38,16 +38,16 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div v-html="specialin">
-            <table id="tablebana" cellpadding="5" v-html="facein">
+        <div v-html="diaindex.specialin">
+            <table id="tablebana" cellpadding="5" v-html="diaindex.facein">
                 <tr>
                     <td id="banaheader" style="padding: 5px 0px 10px 10px;">
-                        <div v-html="name"></div>
+                        <div v-html="diaindex.name"></div>
                     </td>
                 </tr>
                 <tr>
                     <td width="300px" style="padding: 0px 0px 10px 10px;">
-                        <div v-html="string"></div>
+                        <div v-html="diaindex.string"></div>
                     </td>
                     <td width="180px"></td>
                 </tr>
