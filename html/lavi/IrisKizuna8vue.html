@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/labibana.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="3"></div>
+
+
+<div id="app">
+    <div v-for="index in aasb">
+        <div v-id="special">
+            <table id="tablebana" cellpadding="5" v-style="facein">
+                <tr>
+                    <td id="banaheader" style="padding: 5px 0px 10px 10px;">
+                        <div v-html="name"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="300px" style="padding: 0px 0px 10px 10px;">
+                        <div v-html="string"></div>
+                    </td>
+                    <td width="180px"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var imgAll = [];
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            aasb: []
+        },
+        created() {
+            fetch('https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/dia/main.json')
+                .then(response => response.json())
+                .then(json => {
+                    this.aasb = json
+                    for (var i = 0; i < json.length; i++) {
+                        json[i].name = json[i]['name'];
+                        json[i].facein = 'background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:0 0 15px 0;';
+                        json[i].string = json[i]['string'];
+                        json[i].special = json[i]['special'];
+
+                    }
+                })
+        }
+    })
+</script>
+
+</html>
