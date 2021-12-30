@@ -25,7 +25,7 @@
 }
 
 #dia1 {
-    float: left;
+    text-align: left;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
         url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
@@ -33,7 +33,7 @@
 }
 
 #dia2 { 
-    float: right;
+    text-align: right;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
         url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
@@ -41,7 +41,7 @@
 }
 
 #dia3 { 
-    float: center;
+    text-align: center;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeadernon.png) top no-repeat,
         url(https://seicing.com/res/DialogBottom.png) bottom no-repeat,
