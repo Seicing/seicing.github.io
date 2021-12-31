@@ -155,9 +155,11 @@
     }
 
     window.onload = tipsp()
+
     function tipsp() {
-        var tipsp1 = getQueryVariable("year")
-        document.getElementById(tipsp1).click();
+        var tipsp1 = getQueryVariable("nenbun")
+        var tipsp2 = tipsp1 + "button";
+        document.getElementById(tipsp2).click();
     }
 </script>
 
