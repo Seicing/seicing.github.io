@@ -14,6 +14,7 @@ function getQueryVariable(variable) {
 
 window.onload = tipsp()
 
+
 function tipsp() {
     var tipsp1 = getQueryVariable("nenbun")
     var tipsp2 = tipsp1 + "button";
