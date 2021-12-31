@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -42,7 +48,7 @@
 
 <table id="customers">
     <tr>
-        <td  width="150" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
+        <td width="150" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
         <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">枪骑兵(Lancer Cavalry)</span></td>
     </tr>
     <tr>
@@ -51,52 +57,51 @@
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">生命值</span></td>
         <td>1</td>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">掉落物品</span></td>
-        <td  colspan="13">无</td>
-       
+        <td colspan="13">无</td>
+
     </tr>
-  <tr>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px"
-        >斩击抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px">水抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
-    <td width="25px">10</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
-    <td width="25px">0</td>
-  </tr>
     <tr>
-        <td  colspan="2"  style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
-        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍)  <br>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">斩击抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">水抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
+        <td width="25px">10</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
+        <td width="25px">0</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
+        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍) <br>
             一击就可以杀死的骚扰性杂兵
         </td>
     </tr>
     <tr>
-        <td  rowspan="1"   style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
-  
-         <td>冲锋</td>
-        
-        <td colspan="18" style="text-align:left"> 
-            冷却时间：3秒  <br>
+        <td rowspan="1" style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
+
+        <td>冲锋</td>
+
+        <td colspan="18" style="text-align:left">
+            冷却时间：3秒 <br>
             短暂停止后快速向着一个方向突进，对一直线的敌人造成伤害
-              <br>
-              冲锋造成<span style="color: #ff0000">150</span>斩击伤害
+            <br>
+            冲锋造成<span style="color: #ff0000">150</span>斩击伤害
         </td>
     </tr>
-    
+
     <tr>
         <td colspan="20" style="text-align:left">
-           <i>匈奴人在入侵艾特拉塔的早期取得一连串胜利的秘密是他们那高度的纪律性，每个匈奴勇士都是熟练的战士，并且绝对服从他们指挥官的命令，战斗开始时，指挥官发射一种名为“响箭”的箭矢，根据响箭的声音和颜色的不同下达不同的战术指令，最常见的战术是他们的连环冲锋，手握“腾格里”权现的匈奴枪骑兵排成一列一列，按照特定的节奏同时朝着敌军冲锋，冲锋后马上急速上升让后续的部队继续冲锋，在多次恐怖的冲击之后敌人开始溃不成军，匈奴枪骑兵们就会散开进行自由作战，收割敌人的生命</i>  
+            <i>匈奴人在入侵艾特拉塔的早期取得一连串胜利的秘密是他们那高度的纪律性，每个匈奴勇士都是熟练的战士，并且绝对服从他们指挥官的命令，战斗开始时，指挥官发射一种名为“响箭”的箭矢，根据响箭的声音和颜色的不同下达不同的战术指令，最常见的战术是他们的连环冲锋，手握“腾格里”权现的匈奴枪骑兵排成一列一列，按照特定的节奏同时朝着敌军冲锋，冲锋后马上急速上升让后续的部队继续冲锋，在多次恐怖的冲击之后敌人开始溃不成军，匈奴枪骑兵们就会散开进行自由作战，收割敌人的生命</i>
         </td>
     </tr>
 </table>
@@ -105,7 +110,7 @@
 
 <table id="customers">
     <tr>
-        <td  width="150" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
+        <td width="150" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
         <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">弓骑兵(Archer Cavalry)</span></td>
     </tr>
     <tr>
@@ -114,58 +119,57 @@
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">生命值</span></td>
         <td>1</td>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">掉落物品</span></td>
-        <td  colspan="13">无</td>
-       
+        <td colspan="13">无</td>
+
     </tr>
-  <tr>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px"
-        >斩击抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px">水抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
-    <td width="25px">10</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
-    <td width="25px">0</td>
-  </tr>
     <tr>
-        <td  colspan="2"  style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
-        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍)  <br>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">斩击抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">水抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
+        <td width="25px">10</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
+        <td width="25px">0</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
+        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍) <br>
             一击就可以杀死的骚扰性杂兵
         </td>
     </tr>
     <tr>
-        <td  rowspan="2"   style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
-  
-         <td>射击</td>
-        
-        <td colspan="18" style="text-align:left"> 
-            冷却时间：3秒、攻击距离：20  <br>
+        <td rowspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
+
+        <td>射击</td>
+
+        <td colspan="18" style="text-align:left">
+            冷却时间：3秒、攻击距离：20 <br>
             朝着玩家直线发射箭矢，准备发射时可以移动，但是移动速度会下降，射出的箭矢可以通过攻击弹反回去 <br>
             箭矢造成<span style="color: #ff0000">120</span>穿刺伤害
         </td>
     </tr>
     <tr>
-       
-         <td>警戒</td>
-        
-        <td colspan="18" style="text-align:left"> 
-        弓骑兵会时刻和玩家保持距离，如果玩家接近了，她会尽可能地远离玩家
+
+        <td>警戒</td>
+
+        <td colspan="18" style="text-align:left">
+            弓骑兵会时刻和玩家保持距离，如果玩家接近了，她会尽可能地远离玩家
         </td>
     </tr>
     <tr>
         <td colspan="20" style="text-align:left">
-           <i>在战斗开始时，弓兵的作用是执行先制攻击，一排排的射手排成战列之后同时开弓向敌军射击，射出的箭矢将会覆盖一小片区域，主要是以敌军的方阵为目标，在射击后双方都会出现减员，这使得方阵开始缺少足以维持正常实力的兵力而出现弱点，甚至士气也会因此受到打击，在接下来的白刃战中溃不成军，匈奴弓骑兵使用腾格里的弓形态，她们的战术是利用自身的优势一波接一波地使用齐射骚扰敌军，当敌军开始进军时，她们会急速撤退，在撤退途中继续射击，敌人在拉锯战中疲于奔命的时候，埋伏的枪骑兵们会突袭因为疲劳而失去抵抗能力的猎物</i>  
+            <i>在战斗开始时，弓兵的作用是执行先制攻击，一排排的射手排成战列之后同时开弓向敌军射击，射出的箭矢将会覆盖一小片区域，主要是以敌军的方阵为目标，在射击后双方都会出现减员，这使得方阵开始缺少足以维持正常实力的兵力而出现弱点，甚至士气也会因此受到打击，在接下来的白刃战中溃不成军，匈奴弓骑兵使用腾格里的弓形态，她们的战术是利用自身的优势一波接一波地使用齐射骚扰敌军，当敌军开始进军时，她们会急速撤退，在撤退途中继续射击，敌人在拉锯战中疲于奔命的时候，埋伏的枪骑兵们会突袭因为疲劳而失去抵抗能力的猎物</i>
         </td>
     </tr>
 </table>
@@ -173,8 +177,9 @@
 
 <table id="customers">
     <tr>
-        <td  width="150" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
-        <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">英雄枪骑兵(Tarkan Lancer Cavalry)</span></td>
+        <td width="150" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
+        <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">英雄枪骑兵(Tarkan Lancer
+                Cavalry)</span></td>
     </tr>
     <tr>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">等级类别</span></td>
@@ -182,50 +187,49 @@
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">生命值</span></td>
         <td>3</td>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">掉落物品</span></td>
-        <td  colspan="13">无</td>
-       
+        <td colspan="13">无</td>
+
     </tr>
-  <tr>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px"
-        >斩击抗性</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px">水抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
-    <td width="25px">9999</td>
-  </tr>
     <tr>
-        <td  colspan="2"  style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
-        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍)  <br>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">斩击抗性</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">水抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
+        <td width="25px">9999</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
+        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍) <br>
             需要与其进行缠斗的精英级部队
         </td>
     </tr>
     <tr>
-        <td  rowspan="1"   style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
-  
-         <td>连续冲锋</td>
-        
-        <td colspan="18" style="text-align:left"> 
-            冷却时间：3秒  <br>
+        <td rowspan="1" style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
+
+        <td>连续冲锋</td>
+
+        <td colspan="18" style="text-align:left">
+            冷却时间：3秒 <br>
             短暂停止后快速向着一个方向突进，对一直线的敌人造成伤害，然后马上调转马头朝着反方向继续一次冲锋 <br>
             每支冲锋造成<span style="color: #ff0000">120</span>穿刺伤害
         </td>
-    </tr> 
+    </tr>
     <tr>
         <td colspan="20" style="text-align:left">
-           <i>最熟练、最致命的匈奴战士被称为鞑坎(Tarkan)，这是匈奴人的武士阶级，他们不需要缴纳任何的税金，拥有自己的仆从和房产，也就是所谓的“战斗贵族”，他们在战斗时通常作为小队指挥官作战，作战命令被确实地传达到军队后，这群战士会身先士卒冲在最前线，以难以置信的战斗狂热撕裂敌人，为了使敌人更加恐惧，在战斗时更加可怖，他们会带上可怕的面具，面具内部有减缓痛楚的麻药，除非把他们的脑袋砍下来，这群战斗机器不会轻易地停止杀戮</i>  
+            <i>最熟练、最致命的匈奴战士被称为鞑坎(Tarkan)，这是匈奴人的武士阶级，他们不需要缴纳任何的税金，拥有自己的仆从和房产，也就是所谓的“战斗贵族”，他们在战斗时通常作为小队指挥官作战，作战命令被确实地传达到军队后，这群战士会身先士卒冲在最前线，以难以置信的战斗狂热撕裂敌人，为了使敌人更加恐惧，在战斗时更加可怖，他们会带上可怕的面具，面具内部有减缓痛楚的麻药，除非把他们的脑袋砍下来，这群战斗机器不会轻易地停止杀戮</i>
         </td>
     </tr>
 </table>
@@ -234,8 +238,9 @@
 
 <table id="customers">
     <tr>
-        <td  width="150" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
-        <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">英雄弓骑兵(Tarkan Archer Cavalry)</span></td>
+        <td width="150" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
+        <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">英雄弓骑兵(Tarkan Archer
+                Cavalry)</span></td>
     </tr>
     <tr>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">等级类别</span></td>
@@ -243,58 +248,57 @@
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">生命值</span></td>
         <td>3</td>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">掉落物品</span></td>
-        <td  colspan="13">无</td>
-       
+        <td colspan="13">无</td>
+
     </tr>
-  <tr>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px"
-        >斩击抗性</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px">水抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
-    <td width="25px">9999</td>
-  </tr>
     <tr>
-        <td  colspan="2"  style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
-        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍)  <br>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">斩击抗性</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">水抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
+        <td width="25px">9999</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
+        <td colspan="18" style="text-align:left">飞行状态(无视重力、无视击飞、无视跨越型地形障碍) <br>
             需要与其进行缠斗的精英级部队
         </td>
     </tr>
     <tr>
-        <td  rowspan="2"   style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
-  
-         <td>射击</td>
-        
-        <td colspan="18" style="text-align:left"> 
-            冷却时间：3秒、攻击距离：20  <br>
+        <td rowspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
+
+        <td>射击</td>
+
+        <td colspan="18" style="text-align:left">
+            冷却时间：3秒、攻击距离：20 <br>
             朝着玩家发射由三支箭组成的扇型弹幕，准备发射时可以移动，但是移动速度会下降，射出的箭矢可以通过攻击弹反回去 <br>
             每支箭矢造成<span style="color: #ff0000">120</span>穿刺伤害
         </td>
     </tr>
     <tr>
-       
-         <td>警戒</td>
-        
-        <td colspan="18" style="text-align:left"> 
-        英雄弓骑兵会时刻和玩家保持距离，如果玩家接近了，她会尽可能地远离玩家
+
+        <td>警戒</td>
+
+        <td colspan="18" style="text-align:left">
+            英雄弓骑兵会时刻和玩家保持距离，如果玩家接近了，她会尽可能地远离玩家
         </td>
     </tr>
     <tr>
         <td colspan="20" style="text-align:left">
-           <i>每一个匈奴人都懂得射箭，地位较高的鞑坎阶级更是拥有不同的箭来区别他们和低级士兵的区别，据说匈奴高级弓箭手上战场时候，箭袋的标准配置是五支重箭、十八支轻箭以及红绿蓝三支“响箭”，匈奴指挥官开战的时候都会发射红色的响箭示意攻击，而蓝色和绿色分别意味着“诱饵”和“撤退”，技艺娴熟的弓箭手一次可以发射多支箭矢打击敌人，当轻箭消耗完毕后，弓箭手们会开始撤退，然后在撤退的途中使用重箭狙击敌军</i>  
+            <i>每一个匈奴人都懂得射箭，地位较高的鞑坎阶级更是拥有不同的箭来区别他们和低级士兵的区别，据说匈奴高级弓箭手上战场时候，箭袋的标准配置是五支重箭、十八支轻箭以及红绿蓝三支“响箭”，匈奴指挥官开战的时候都会发射红色的响箭示意攻击，而蓝色和绿色分别意味着“诱饵”和“撤退”，技艺娴熟的弓箭手一次可以发射多支箭矢打击敌人，当轻箭消耗完毕后，弓箭手们会开始撤退，然后在撤退的途中使用重箭狙击敌军</i>
         </td>
     </tr>
 </table>
@@ -305,7 +309,7 @@
 
 <table id="customers">
     <tr>
-        <td  width="150" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
+        <td width="150" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
         <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">散兵(Skirmisher)</span></td>
     </tr>
     <tr>
@@ -314,42 +318,41 @@
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">生命值</span></td>
         <td>1145</td>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">掉落物品</span></td>
-        <td  colspan="13">无</td>
-       
+        <td colspan="13">无</td>
+
     </tr>
-  <tr>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px"
-        >斩击抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px">水抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
-    <td width="25px">10</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
-    <td width="25px">0</td>
-  </tr>
     <tr>
-        <td  colspan="2"  style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">斩击抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">水抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
+        <td width="25px">10</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
+        <td width="25px">0</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
         <td colspan="18" style="text-align:left">普通的步行敌人 <br>
             拥有断末魔的敌人
         </td>
     </tr>
     <tr>
-        <td  rowspan="2"   style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
-  
-         <td>剑舞</td>
-        
-        <td colspan="18" style="text-align:left"> 
+        <td rowspan="2" style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
+
+        <td>剑舞</td>
+
+        <td colspan="18" style="text-align:left">
             冷却时间：3秒 <br>
             进入准备攻击姿势后快速挥刀攻击，随后利用攻击的惯性大幅度翻转自身，利用螺旋作用力使出强力的劈斩攻击 <br>
             挥刀造成<span style="color: #ff0000">70</span>火属性伤害 <br>
@@ -357,17 +360,17 @@
         </td>
     </tr>
     <tr>
-       
-         <td>烧夷</td>
-        
-        <td colspan="18" style="text-align:left"> 
-        【断末魔】：散兵死亡后，手里的阿拉兹权现会掉落，让地面燃烧起来，让玩家进入灼烧状态 <br>
-        阿拉兹权现掉落到水里不会燃烧起来
+
+        <td>烧夷</td>
+
+        <td colspan="18" style="text-align:left">
+            【断末魔】：散兵死亡后，手里的阿拉兹权现会掉落，让地面燃烧起来，让玩家进入灼烧状态 <br>
+            阿拉兹权现掉落到水里不会燃烧起来
         </td>
     </tr>
     <tr>
         <td colspan="20" style="text-align:left">
-           <i>和组成阵列的枪骑兵不同，散兵们利用自身单体作战能力优势独自作战，他们在匈奴军队担当侦察和骚扰，利用自身的速度优势突袭敌方的阵地，在冲锋的时候他们在侧翼包抄敌人，敌人四散而逃之后他们负责追击敌人，以及焚毁敌人的房屋掠夺战利品，他们为了更加敏捷地行动，一般不会使用其他士兵沉重的腾格里权现，而是使用阿拉兹权现，一种类似于火把的短剑，这使得他们可以轻易地挥动使用技巧杀伤敌人，并且焚毁房屋</i>  
+            <i>和组成阵列的枪骑兵不同，散兵们利用自身单体作战能力优势独自作战，他们在匈奴军队担当侦察和骚扰，利用自身的速度优势突袭敌方的阵地，在冲锋的时候他们在侧翼包抄敌人，敌人四散而逃之后他们负责追击敌人，以及焚毁敌人的房屋掠夺战利品，他们为了更加敏捷地行动，一般不会使用其他士兵沉重的腾格里权现，而是使用阿拉兹权现，一种类似于火把的短剑，这使得他们可以轻易地挥动使用技巧杀伤敌人，并且焚毁房屋</i>
         </td>
     </tr>
 </table>
@@ -378,8 +381,9 @@
 
 <table id="customers">
     <tr>
-        <td  width="150" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
-        <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">匈奴王寄真各(Gizeiger the Hun)</span></td>
+        <td width="150" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/啊啊是啊是啊是啊.png" width="150px"></td>
+        <td style="background-color:#000000" colspan="18"><span style="color: #FFFFFF">匈奴王寄真各(Gizeiger the Hun)</span>
+        </td>
     </tr>
     <tr>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">等级类别</span></td>
@@ -387,94 +391,93 @@
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">生命值</span></td>
         <td>15800</td>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">掉落物品</span></td>
-        <td  colspan="13">无</td>
-       
+        <td colspan="13">无</td>
+
     </tr>
-  <tr>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px"
-        >斩击抗性</span></td>
-    <td width="25px">20</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
-    <td width="25px">20</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
-    <td width="25px">20</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
-    <td width="25px">9999</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF"  width="45px">水抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
-    <td width="25px">0</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
-    <td width="25px">35</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
-    <td width="25px">20</td>
-    <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
-    <td width="25px">-20</td>
-  </tr>
     <tr>
-        <td  colspan="5"  style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">斩击抗性</span></td>
+        <td width="25px">20</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">打击抗性</span></td>
+        <td width="25px">20</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">贯穿抗性</span></td>
+        <td width="25px">20</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">火抗</span></td>
+        <td width="25px">9999</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">水抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">风抗</span></td>
+        <td width="25px">0</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">地抗</span></td>
+        <td width="25px">35</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">光抗</span></td>
+        <td width="25px">20</td>
+        <td style="background-color:#a3a3a3"><span style="color: #FFFFFF" width="45px">暗抗</span></td>
+        <td width="25px">-20</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="background-color:#a3a3a3"><span style="color: #FFFFFF">特性</span></td>
         <td colspan="18" style="text-align:left">匈奴指挥官，本体是一个强力的弓骑兵 <br>
             召唤各种匈奴士兵形成方阵战斗
         </td>
     </tr>
     <tr>
-        <td  rowspan="5"   style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
-  
-         <td>射箭1</td>
-        
-        <td colspan="18" style="text-align:left"> 
+        <td rowspan="5" style="background-color:#a3a3a3"><span style="color: #FFFFFF">行为</span></td>
+
+        <td>射箭1</td>
+
+        <td colspan="18" style="text-align:left">
             冷却时间：5秒 <br>
             狙击玩家连续发射三支箭 <br>
-            箭矢造成<span style="color: #ff0000">150</span>穿透伤害 <br> 
+            箭矢造成<span style="color: #ff0000">150</span>穿透伤害 <br>
         </td>
     </tr>
     <tr>
-      
-        
-         <td>射箭2</td>
-        
-        <td colspan="18" style="text-align:left"> 
+
+
+        <td>射箭2</td>
+
+        <td colspan="18" style="text-align:left">
             冷却时间：5秒 <br>
             发射三支箭组成的弹幕 <br>
-            每支箭矢造成<span style="color: #ff0000">100</span>穿透伤害 <br> 
+            每支箭矢造成<span style="color: #ff0000">100</span>穿透伤害 <br>
         </td>
     </tr>
     <tr>
-         <td>号角呼唤1</td>
-        
-        <td colspan="18" style="text-align:left"> 
+        <td>号角呼唤1</td>
+
+        <td colspan="18" style="text-align:left">
             冷却时间：7秒 <br>
             吹响号角召唤10个弓骑兵随机出现在地图某一边缘，按照顺序发射箭矢攻击玩家后离去 <br>
-            箭矢造成<span style="color: #ff0000">120</span>穿透伤害 <br> 
+            箭矢造成<span style="color: #ff0000">120</span>穿透伤害 <br>
         </td>
     </tr>
     <tr>
         <td>号角呼唤2</td>
-       
-       <td colspan="18" style="text-align:left"> 
-           冷却时间：7秒 <br>
-           吹响号角召唤7个枪骑兵随机出现在地图某一边缘，按照顺序发动冲锋 <br>
-          冲锋造成<span style="color: #ff0000">135</span>斩击伤害 <br> 
-       </td>
-   </tr>
-   <tr>
-    <td>狂暴化</td>
-   
-   <td colspan="18" style="text-align:left"> 
-       HP30%以下发动 <br>
-       到达30%HP的时候，寄真各会强制性发动一次连续7次号角呼唤攻击，每次出现的号角攻击形态是随机的<br>
-   随后他接下来的号角攻击都会连续发动三次，每次出现的号角攻击形态是随机的
-   </td>
-</tr>
+
+        <td colspan="18" style="text-align:left">
+            冷却时间：7秒 <br>
+            吹响号角召唤7个枪骑兵随机出现在地图某一边缘，按照顺序发动冲锋 <br>
+            冲锋造成<span style="color: #ff0000">135</span>斩击伤害 <br>
+        </td>
+    </tr>
+    <tr>
+        <td>狂暴化</td>
+
+        <td colspan="18" style="text-align:left">
+            HP30%以下发动 <br>
+            到达30%HP的时候，寄真各会强制性发动一次连续7次号角呼唤攻击，每次出现的号角攻击形态是随机的<br>
+            随后他接下来的号角攻击都会连续发动三次，每次出现的号角攻击形态是随机的
+        </td>
+    </tr>
 
 
 
     <tr>
         <td colspan="20" style="text-align:left">
-           <i>寄真各是匈奴王阿里它的忠实奴仆，他们是青梅竹马，自小就一起杀敌，当鬼蜘蛛部族开始反对白狼部族的愚昧统治的时候，寄真各是阿里它的坚实拥护者，在这之后他成为了匈奴实际上的决策人和领导者，和实力强大但是不擅长治理的阿里它相比，寄真各就是狡猾的狐狸，在他的策略下匈奴人入侵艾特拉塔的战役取得了史诗般的胜利，当匈奴人忘记了他们的精神之后，他陪同阿里它前往一心求死的战场中，见证阿里它独自一人杀穿敌军的壮举，随后他也随着阿里它的战死而去了
-               
-            
-             </i>  
+            <i>寄真各是匈奴王阿里它的忠实奴仆，他们是青梅竹马，自小就一起杀敌，当鬼蜘蛛部族开始反对白狼部族的愚昧统治的时候，寄真各是阿里它的坚实拥护者，在这之后他成为了匈奴实际上的决策人和领导者，和实力强大但是不擅长治理的阿里它相比，寄真各就是狡猾的狐狸，在他的策略下匈奴人入侵艾特拉塔的战役取得了史诗般的胜利，当匈奴人忘记了他们的精神之后，他陪同阿里它前往一心求死的战场中，见证阿里它独自一人杀穿敌军的壮举，随后他也随着阿里它的战死而去了
+
+
+            </i>
         </td>
     </tr>
 </table>

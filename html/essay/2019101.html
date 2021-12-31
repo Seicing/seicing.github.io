@@ -9,9 +9,15 @@
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -48,18 +54,28 @@
 <br>
 <span style="color:blue">火球</span>+<span style="color:blue">旋风 </span>：生成<span style="color:blue">火焰旋风 </span> <br>
 <span style="color:blue">火球</span>+<span style="color:blue">地裂</span>：生成<span style="color:blue">炸裂火柱</span>，击飞敌人<br>
-<span style="color:blue">火球</span>-<span style="color:blue">黑洞</span>：经过黑洞的火球子弹会变成火暗双属性的附带灼烧的<span style="color:blue">灼烧弹</span><br>
-<span style="color:blue">火球</span>-<span style="color:blue">光盾</span>：经过光盾的火球子弹会变成火光双属性的附带触电的<span style="color:blue">雷暴弹</span><br>
+<span style="color:blue">火球</span>-<span style="color:blue">黑洞</span>：经过黑洞的火球子弹会变成火暗双属性的附带灼烧的<span
+    style="color:blue">灼烧弹</span><br>
+<span style="color:blue">火球</span>-<span style="color:blue">光盾</span>：经过光盾的火球子弹会变成火光双属性的附带触电的<span
+    style="color:blue">雷暴弹</span><br>
 <span style="color:blue">冰幕</span>+<span style="color:blue">旋风</span>：生成<span style="color:blue">寒冰旋风</span> <br>
 <span style="color:blue">冰幕</span>+<span style="color:blue">地裂 </span>：爆发出一直线的<span style="color:blue">冰锥</span><br>
 <span style="color:blue">冰幕</span>+<span style="color:blue">炸裂火柱</span>：冷却炸裂火柱形成<span style="color:blue">岩柱</span><br>
-<span style="color:blue">冰幕</span>-<span style="color:blue">黑洞</span>：经过黑洞的冰幕会变成扇型的<span style="color:blue">急冻霰弹</span>冻结敌人<br>
-<span style="color:blue">冰幕</span>-<span style="color:blue">光盾</span>：经过光盾的冰幕会变成扇型的<span style="color:blue">雷电霰弹</span>让敌人触电<br>
-<span style="color:blue">旋风</span>+<span style="color:blue">地裂</span>：让地裂变成触发型的<span style="color:blue">爆风地雷</span>，路过的敌人会被击飞<br>
-<span style="color:blue">黑洞</span>+<span style="color:blue">旋风</span>：旋风吸收黑洞，生成<span style="color:blue">反物质旋风</span>，会把物件吸引到旋风内部<br>
-<span style="color:blue">光盾</span>+<span style="color:blue">旋风</span>：旋风吸收光盾，生成<span style="color:blue">纯白旋</span>，旋风会击退接近的物件<br>
-<span style="color:blue">黑洞</span>+<span style="color:blue">光盾</span>：生成<span style="color:blue">强化水晶</span>，所有经过强化水晶的魔法都会放大一倍<br><br>
-<span style="color:blue">火球</span>+<span style="color:blue">冰幕</span>：在元素活跃的时候，集中元素活跃的力量生成<span style="color:blue">征服者符文(Honfoglalás Rúna)</span>，征服者符文在泰拉使用元素互动魔法时，吸收能量不断增加大小以及伤害，征服者符文会在泰拉受击的时候脱离，这时候可以走过去重新捡起来，否则会在不久后爆炸，通过再次输入火球+冰幕指令键把征服者符文转化为元素末枢发射出去造成巨大伤害<br>
+<span style="color:blue">冰幕</span>-<span style="color:blue">黑洞</span>：经过黑洞的冰幕会变成扇型的<span
+    style="color:blue">急冻霰弹</span>冻结敌人<br>
+<span style="color:blue">冰幕</span>-<span style="color:blue">光盾</span>：经过光盾的冰幕会变成扇型的<span
+    style="color:blue">雷电霰弹</span>让敌人触电<br>
+<span style="color:blue">旋风</span>+<span style="color:blue">地裂</span>：让地裂变成触发型的<span
+    style="color:blue">爆风地雷</span>，路过的敌人会被击飞<br>
+<span style="color:blue">黑洞</span>+<span style="color:blue">旋风</span>：旋风吸收黑洞，生成<span
+    style="color:blue">反物质旋风</span>，会把物件吸引到旋风内部<br>
+<span style="color:blue">光盾</span>+<span style="color:blue">旋风</span>：旋风吸收光盾，生成<span
+    style="color:blue">纯白旋</span>，旋风会击退接近的物件<br>
+<span style="color:blue">黑洞</span>+<span style="color:blue">光盾</span>：生成<span
+    style="color:blue">强化水晶</span>，所有经过强化水晶的魔法都会放大一倍<br><br>
+<span style="color:blue">火球</span>+<span style="color:blue">冰幕</span>：在元素活跃的时候，集中元素活跃的力量生成<span
+    style="color:blue">征服者符文(Honfoglalás
+    Rúna)</span>，征服者符文在泰拉使用元素互动魔法时，吸收能量不断增加大小以及伤害，征服者符文会在泰拉受击的时候脱离，这时候可以走过去重新捡起来，否则会在不久后爆炸，通过再次输入火球+冰幕指令键把征服者符文转化为元素末枢发射出去造成巨大伤害<br>
 
 
 

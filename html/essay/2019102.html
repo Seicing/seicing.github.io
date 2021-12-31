@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -104,7 +110,8 @@
     <tr>
         <td>肥婆琼</td>
         <td>Fat Lady Kyeng</td>
-        <td>原计划是作为泖支於城内的旅馆“七十二家大院”而宿屋老板娘而登场 <br> 能够到达泖支於的两个人世清和阿拉贡中，世清在泖支於的皇宫拥有整个城市的所有功能，世清前往七十二家大院休息会被肥婆琼委婉地拒绝，所以实际上能使用这个旅馆的只有阿拉贡而已 </td>
+        <td>原计划是作为泖支於城内的旅馆“七十二家大院”而宿屋老板娘而登场 <br>
+            能够到达泖支於的两个人世清和阿拉贡中，世清在泖支於的皇宫拥有整个城市的所有功能，世清前往七十二家大院休息会被肥婆琼委婉地拒绝，所以实际上能使用这个旅馆的只有阿拉贡而已 </td>
     </tr>
     <tr>
         <td>亚七</td>

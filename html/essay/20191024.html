@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -57,7 +63,8 @@
     </tr>
     <tr>
         <td width="100">粉碎
-            <br> Crash</td>
+            <br> Crash
+        </td>
         <td width="45">普通攻击</td>
         <td width="45">无</td>
         <td style="text-align:left">
@@ -66,7 +73,8 @@
     </tr>
     <tr>
         <td width="100">抹杀
-            <br>Terminate</td>
+            <br>Terminate
+        </td>
         <td width="45">普通攻击</td>
         <td width="45">无</td>
         <td style="text-align:left">
@@ -76,7 +84,8 @@
     </tr>
     <tr>
         <td width="100">尤伊式永动机
-            <br>Iuiresque PMM</td>
+            <br>Iuiresque PMM
+        </td>
         <td width="45">被动</td>
         <td width="45">无</td>
         <td style="text-align:left">
@@ -86,7 +95,8 @@
     </tr>
     <tr>
         <td width="100">野兽的本能
-            <br> Instinct of Beast</td>
+            <br> Instinct of Beast
+        </td>
         <td width="45">被动</td>
         <td width="45">无</td>
         <td style="text-align:left">
@@ -98,11 +108,13 @@
     </tr>
     <tr>
         <td width="100">超稼动
-            <br>Hyper Active</td>
+            <br>Hyper Active
+        </td>
         <td width="45">被动</td>
         <td width="45">无</td>
         <td style="text-align:left">
-            手臂的电磁转动达到超额负荷的程度，从迸发出可怕的电流 野兽的本能追加新的按键：锁定+【粉碎】：会使用机械爪进行最大三次的攻击，每一次消费30气力并造成<span style="color:red">1.0str的光属性伤害</span>，并且让敌人触电<span style="color:lime">（3C回复）</span>
+            手臂的电磁转动达到超额负荷的程度，从迸发出可怕的电流 野兽的本能追加新的按键：锁定+【粉碎】：会使用机械爪进行最大三次的攻击，每一次消费30气力并造成<span
+                style="color:red">1.0str的光属性伤害</span>，并且让敌人触电<span style="color:lime">（3C回复）</span>
         </td>
     </tr>
     <tr>
@@ -121,17 +133,22 @@
     </tr>
     <tr>
         <td width="100">血腥七月
-            <br>Krovavy Iyul</td>
+            <br>Krovavy Iyul
+        </td>
         <td width="45">枪械</td>
         <td width="45">15电量</td>
         <td style="text-align:left">
-            叶卡捷琳娜制造的七个弹匣的左轮枪，发射威力强大的子弹造成<span style="color:red">1.0str的贯穿属性伤害</span> <br> 装弹时间：1.5秒（发射七枚子弹后或者终止射击状态时） <br>
-            <b>—强化阶段1 血腥七月改(Krovavy Iyul Izmenyat)</b> ：装弹时间-0.5秒 <br> <b>—强化阶段2 血腥七月改二(Krovavy Iyul Izmenyat Dva)</b> ：子弹伤害+20% <br> <b>—强化阶段3 血腥七月零式(Krovavy Iyul Nol)</b> ：连射速度加快50% <br> <b>—强化阶段4 安魂曲(Rekviyem)</b> ：射击状态下按下锁定键发射可以一次发射7枚子弹
+            叶卡捷琳娜制造的七个弹匣的左轮枪，发射威力强大的子弹造成<span style="color:red">1.0str的贯穿属性伤害</span> <br> 装弹时间：1.5秒（发射七枚子弹后或者终止射击状态时）
+            <br>
+            <b>—强化阶段1 血腥七月改(Krovavy Iyul Izmenyat)</b> ：装弹时间-0.5秒 <br> <b>—强化阶段2 血腥七月改二(Krovavy Iyul Izmenyat Dva)</b>
+            ：子弹伤害+20% <br> <b>—强化阶段3 血腥七月零式(Krovavy Iyul Nol)</b> ：连射速度加快50% <br> <b>—强化阶段4 安魂曲(Rekviyem)</b>
+            ：射击状态下按下锁定键发射可以一次发射7枚子弹
         </td>
     </tr>
     <tr>
         <td width="100">刺激者226
-            <br>Exciter 226</td>
+            <br>Exciter 226
+        </td>
         <td width="45">枪械</td>
         <td width="45">30电量</td>
         <td style="text-align:left">
@@ -144,34 +161,40 @@
     </tr>
     <tr>
         <td width="100">F-227X 地狱火推进器
-            <br> F-227X Hellfire Booster</td>
+            <br> F-227X Hellfire Booster
+        </td>
         <td width="45">枪械</td>
         <td width="45">20电量per</td>
         <td style="text-align:left">
             向指定方向投射火焰，每秒造成3次<span style="color:red">0.5int的火属性伤害</span><br> 和别的武器不同在于，地狱火推进器在蓄力发射时就会射出火焰，松开技能键将会停止灼烧
             <br> 装弹时间：0秒
-            <br><b>—强化阶段1 F-228 沙罗曼蛇(F-228 Salamandra)</b> ：连续命中3秒的敌人会燃烧<br> <b>—强化阶段2 F-228 沙罗曼蛇MK-2(F-228 Salamandra MK-2)</b> ：造成30%的重伤效果
+            <br><b>—强化阶段1 F-228 沙罗曼蛇(F-228 Salamandra)</b> ：连续命中3秒的敌人会燃烧<br> <b>—强化阶段2 F-228 沙罗曼蛇MK-2(F-228 Salamandra
+                MK-2)</b> ：造成30%的重伤效果
             <br> <b>—强化阶段3 F-228X 火焰吞噬者(F-228X Fire Eater)</b> ：每灼烧一秒，减少对方5点斩击抗性、打击抗性、贯穿抗性
         </td>
     </tr>
     <tr>
         <td width="100">黄昏之眼
-            <br> Twilight Eyez</td>
+            <br> Twilight Eyez
+        </td>
         <td width="45">枪械</td>
         <td width="45">75电量</td>
         <td style="text-align:left">
             朝着指定的方向引导0.5秒之后射出威力巨大的激光，造成<span style="color:red">2.0int的光属性伤害</span>，发射后会稍稍后退<br> 装弹时间：1.2秒
-            <br><b>—强化阶段1 黄昏之眼MK-2(Twilight Eyez MK-2)</b> ：激光攻击力+75%<br><b>—强化阶段2 黄昏之眼MK-3(Twilight Eyez MK-3)</b> ：引导时间完全删除
+            <br><b>—强化阶段1 黄昏之眼MK-2(Twilight Eyez MK-2)</b> ：激光攻击力+75%<br><b>—强化阶段2 黄昏之眼MK-3(Twilight Eyez MK-3)</b>
+            ：引导时间完全删除
             <br> <b>—强化阶段3 混沌之眼(Chaos Eyez)</b>：激光宽度减半，伤害翻倍
         </td>
     </tr>
     <tr>
         <td width="100">M924弩炮
-            <br> M924 Arrow Launcher</td>
+            <br> M924 Arrow Launcher
+        </td>
         <td width="45">枪械</td>
         <td width="45">50电量</td>
         <td style="text-align:left">
-            恐怖的榴弹发射器，发射榴弹撞击敌人造成<span style="color:red">0.2str的打击属性伤害</span>后爆炸造成<span style="color:red">1.5int的火属性伤害</span><br> 装弹时间：0.8秒
+            恐怖的榴弹发射器，发射榴弹撞击敌人造成<span style="color:red">0.2str的打击属性伤害</span>后爆炸造成<span
+                style="color:red">1.5int的火属性伤害</span><br> 装弹时间：0.8秒
             <br> <b>—强化阶段1 M929蝎(M929 Scorpion)</b>：榴弹撞击到墙壁的话会引发范围更大的爆炸<br><b> —强化阶段2 M933公羊(M933 Ram)</b> ：每次发射会发射两枚榴弹
             <br><b> —强化阶段3 M947重装公羊(M947 Heavy Ram)</b> ：榴弹会引发中子爆炸，爆炸造成<span style="color:red">1.2int的以太伤害</span>
         </td>
@@ -184,7 +207,8 @@
         <td width="45">20电量per</td>
         <td style="text-align:left">
             使用冲锋枪朝着一个方向疯狂扫射，每秒发射5次子弹，每枚子弹造成<span style="color:red">0.15str的贯穿属性伤害</span>
-            <br>和别的武器不同在于，幽灵在蓄力发射时就会发射子弹，松开技能键将会停止发射子弹 <br> 装弹时间：0秒 <br><b> —强化阶段1 幽灵7改造型(Phantom7 Alter)</b> ：射速+50% <br> <b>—强化阶段2 幽灵7改造型2(Phantom7 Alter2)</b> ：射速+50% <br> <b>—强化阶段3 死神(The Death)</b>：射速+100%
+            <br>和别的武器不同在于，幽灵在蓄力发射时就会发射子弹，松开技能键将会停止发射子弹 <br> 装弹时间：0秒 <br><b> —强化阶段1 幽灵7改造型(Phantom7 Alter)</b> ：射速+50%
+            <br> <b>—强化阶段2 幽灵7改造型2(Phantom7 Alter2)</b> ：射速+50% <br> <b>—强化阶段3 死神(The Death)</b>：射速+100%
         </td>
     </tr>
     <tr>
@@ -194,9 +218,12 @@
         <td width="45">枪械</td>
         <td width="45">100电量</td>
         <td style="text-align:left">
-            采用了伊俄提供的离岛魔法技术制造的难以驾驭的魔法枪，和别的武器不同之处在于它是定点发射而不是直线射出，向着指定的一点发射纯粹的魔法子弹造成<span style="color:red">1.5int的以太属性伤害</span>
-            <br> 装弹时间：0.3秒 <br> <b> —强化方向1 安装琥珀(Amberize)</b> ：魔法子弹造成3.0int风属性伤害 <br><b> —强化方向2 安装天青石(Celestitize)</b> ：魔法子弹造成3.0int水属性伤害 <br> <b> —强化方向3 安装翡翠(Emeraldize)</b> ：魔法子弹造成3.0int地属性伤害 <br><b> —强化方向4 安装紫水晶(Amethystize)</b> ：魔法子弹造成3.0int暗属性伤害
-            <br><b>  —强化方向5 安装钻石(Diamondize)</b> ：魔法子弹击中敌人的要害(总判定范围的内圆50%范围内)会暴击
+            采用了伊俄提供的离岛魔法技术制造的难以驾驭的魔法枪，和别的武器不同之处在于它是定点发射而不是直线射出，向着指定的一点发射纯粹的魔法子弹造成<span
+                style="color:red">1.5int的以太属性伤害</span>
+            <br> 装弹时间：0.3秒 <br> <b> —强化方向1 安装琥珀(Amberize)</b> ：魔法子弹造成3.0int风属性伤害 <br><b> —强化方向2 安装天青石(Celestitize)</b>
+            ：魔法子弹造成3.0int水属性伤害 <br> <b> —强化方向3 安装翡翠(Emeraldize)</b> ：魔法子弹造成3.0int地属性伤害 <br><b> —强化方向4
+                安装紫水晶(Amethystize)</b> ：魔法子弹造成3.0int暗属性伤害
+            <br><b> —强化方向5 安装钻石(Diamondize)</b> ：魔法子弹击中敌人的要害(总判定范围的内圆50%范围内)会暴击
         </td>
     </tr>
     <tr>
@@ -216,7 +243,9 @@
         <td width="45">武器</td>
         <td width="45">20电量</td>
         <td style="text-align:left">
-            电锯，命中敌人后会造成3次<span style="color:red">0.35str的斩击属性伤害</span> <br> 蓄力时，丞会使用电锯来回转圈，这时候每秒消耗20电量 <br> <b> —强化阶段1 R-0 寡妇制造者ex(R-0 Widowmaker EX)</b> ：被连续撕扯10次以上的敌人将会出血 <br> <b>—强化阶段2 R-0 红色寡妇制造者(R-0 Red Widowmaker)</b> ：攻击出血敌人会把伤害量的100%转化为重伤 <br><b>  —强化阶段3 R-0 灭族者(R-0 Genocider)</b>            ：锁定+后+前+【粉碎】不会把武器丢出，而是把血肉之躯的敌人一击拦腰截断
+            电锯，命中敌人后会造成3次<span style="color:red">0.35str的斩击属性伤害</span> <br> 蓄力时，丞会使用电锯来回转圈，这时候每秒消耗20电量 <br> <b> —强化阶段1
+                R-0 寡妇制造者ex(R-0 Widowmaker EX)</b> ：被连续撕扯10次以上的敌人将会出血 <br> <b>—强化阶段2 R-0 红色寡妇制造者(R-0 Red Widowmaker)</b>
+            ：攻击出血敌人会把伤害量的100%转化为重伤 <br><b> —强化阶段3 R-0 灭族者(R-0 Genocider)</b> ：锁定+后+前+【粉碎】不会把武器丢出，而是把血肉之躯的敌人一击拦腰截断
         </td>
     </tr>
     <tr>
@@ -229,7 +258,8 @@
 
         </td>
         <td style="text-align:left">
-            枪头由高热离子束形成的长枪，每次攻击造成<span style="color:red">0.2str的以太属性伤害</span><br> <b>   —强化阶段1 血色流光+(Roter Blitz+)</b> ：攻击力+20%
+            枪头由高热离子束形成的长枪，每次攻击造成<span style="color:red">0.2str的以太属性伤害</span><br> <b> —强化阶段1 血色流光+(Roter Blitz+)</b>
+            ：攻击力+20%
             <br> <b>—强化阶段2 血色流光++(Roter Blitz++)</b> ：达成击飞条件所需的连刺数-1
             <br><b>—强化阶段3 血色流光+++(Roter Blitz+++)</b> ：击飞的那一下会召唤闪电让敌人受到<span style="color:red">3.0int的光属性伤害</span>
         </td>
@@ -243,7 +273,9 @@
         <td width="45">40电量
         </td>
         <td style="text-align:left">
-            沉重的冲击斧头，刀刃反侧的冲击孔提供巨大的推力，每次攻击造成<span style="color:red">1.5str的斩击属性伤害</span>，并且每5秒产生一次充能，充能在命中敌人时发射，产生推走敌人的冲击波并造成<span style="color:red">0.5int的打击属性伤害</span>
+            沉重的冲击斧头，刀刃反侧的冲击孔提供巨大的推力，每次攻击造成<span
+                style="color:red">1.5str的斩击属性伤害</span>，并且每5秒产生一次充能，充能在命中敌人时发射，产生推走敌人的冲击波并造成<span
+                style="color:red">0.5int的打击属性伤害</span>
             <br> <b> —强化阶段1 异面冲突(Disharmony Conflict)</b> ：攻击力+70%
             <br><b> —强化阶段2 千压重炮(Kilopascal Cannon)</b> ：被冲击波击打到障碍物的敌人会因为冲撞而受到额外的1.0int打击属性伤害
             <br> <b>—强化阶段3 上帝的叹息(God's Sigh)</b> ：充能完毕的前提下的那一次攻击会暴击
@@ -258,7 +290,9 @@
         <td width="45">50电量
         </td>
         <td style="text-align:left">
-            枪头可以产生反物质的长枪，枪头的反物质会把周围的敌人吸扯到中心点，每次攻击造成<span style="color:red">0.2int的暗属性伤害</span><br> <b>—强化阶段1 反物质对撞机(Antimatter Collider)</b>：击飞的那一击会因为反物质碰撞喷射能量束造成<span style="color:red">2.0int的光属性伤害</span><br> <b> —强化阶段2 反物质对撞机+(Antimatter Collider+)</b>            ：喷射的能量束也可以吸扯敌人了，并且伤害+50%
+            枪头可以产生反物质的长枪，枪头的反物质会把周围的敌人吸扯到中心点，每次攻击造成<span style="color:red">0.2int的暗属性伤害</span><br> <b>—强化阶段1
+                反物质对撞机(Antimatter Collider)</b>：击飞的那一击会因为反物质碰撞喷射能量束造成<span style="color:red">2.0int的光属性伤害</span><br> <b>
+                —强化阶段2 反物质对撞机+(Antimatter Collider+)</b> ：喷射的能量束也可以吸扯敌人了，并且伤害+50%
             <br> <b> —强化阶段3 次元湮灭者(Dimension Annihilator)</b> ：蓄力5秒的攻击会产生持续超大范围的黑洞
         </td>
     </tr>
@@ -273,9 +307,9 @@
 
         </td>
         <td style="text-align:left">
-            召唤浮游的防御型机器，为丞减少30%受到的伤害，HP：8000<br> <b>  —强化阶段1 浮游挡板+(Floating Board+)</b> ：HP+5000
-            <br><b>   —强化阶段2 浮游挡板++(Floating Board++)</b> ：现在三台浮游挡板独立了，每一台为丞提供10%伤害减免，各自拥有6000HP
-            <br> <b>  —强化阶段3 浮游盾(Floating Shield)</b> ：每运转10秒，浮游盾会把浪费的电力形成静电场，近程攻击浮游盾会被触电
+            召唤浮游的防御型机器，为丞减少30%受到的伤害，HP：8000<br> <b> —强化阶段1 浮游挡板+(Floating Board+)</b> ：HP+5000
+            <br><b> —强化阶段2 浮游挡板++(Floating Board++)</b> ：现在三台浮游挡板独立了，每一台为丞提供10%伤害减免，各自拥有6000HP
+            <br> <b> —强化阶段3 浮游盾(Floating Shield)</b> ：每运转10秒，浮游盾会把浪费的电力形成静电场，近程攻击浮游盾会被触电
         </td>
     </tr>
     <tr>
@@ -289,9 +323,10 @@
 
         </td>
         <td style="text-align:left">
-            召唤跟随在丞背后的浮游炮，射出子弹压制敌人，让敌人每秒受到一次<span style="color:red">0.5int的光属性伤害</span>，HP2000<br> <b> —强化阶段1 浮游炮+(Floating Cannon+)</b> ：子弹打击的硬直时间+50%
+            召唤跟随在丞背后的浮游炮，射出子弹压制敌人，让敌人每秒受到一次<span style="color:red">0.5int的光属性伤害</span>，HP2000<br> <b> —强化阶段1
+                浮游炮+(Floating Cannon+)</b> ：子弹打击的硬直时间+50%
             <br> <b> —强化阶段2 浮游炮++(Floating Cannon++)</b> ：射击间隔-50%
-            <br> <b>    —强化阶段3 黑乌鸦(Raven)</b> ：追尾一定角度的敌人
+            <br> <b> —强化阶段3 黑乌鸦(Raven)</b> ：追尾一定角度的敌人
         </td>
     </tr>
     <tr>
@@ -306,9 +341,11 @@
 
         </td>
         <td style="text-align:left">
-            召唤围绕着自身旋转的3台高热刀刃机械人，每次撞击都会造成<span style="color:red">0.5int的火属性伤害</span>并且减少80HP，HP4000<br><b> —强化阶段1 炽热羽翼·感应模式(Seraphim Wing Sensing Mode)</b> ：撞击障碍物不会减少HP
+            召唤围绕着自身旋转的3台高热刀刃机械人，每次撞击都会造成<span style="color:red">0.5int的火属性伤害</span>并且减少80HP，HP4000<br><b> —强化阶段1
+                炽热羽翼·感应模式(Seraphim Wing Sensing Mode)</b> ：撞击障碍物不会减少HP
             <br> <b> —强化阶段2 炽热羽翼·歼灭模式(Seraphim Wing Eliminating Mode)</b> ：30%的伤害量会转化为重伤
-            <br><b> —强化阶段3 炽热羽翼·焦土模式(Seraphim Wing Razing Mode)</b> ：每台炽热羽翼都会隔0.5秒发射一次激光，造成<span style="color:red">0.5int的火属性伤害</span><br>
+            <br><b> —强化阶段3 炽热羽翼·焦土模式(Seraphim Wing Razing Mode)</b> ：每台炽热羽翼都会隔0.5秒发射一次激光，造成<span
+                style="color:red">0.5int的火属性伤害</span><br>
         </td>
     </tr>
     <tr>
@@ -320,10 +357,12 @@
         <td width="45">75电量上限
         </td>
         <td style="text-align:left">
-            召唤自动跟随索敌进行自爆攻击的攻城型机械人，爆炸造成<span style="color:red">2.0int的火属性伤害</span><br> <b>—强化阶段1 RGS-937-2 征服者ex(RGS-937-2 Conquistador EX)</b> ：征服者的移动速度+100%
-            <br> <b> —强化阶段2 RGS-937-3 征服者hyper(RGS-937-3 Conquistador Hyper)</b> ：按着锁定键使用征服者，生成特殊的遥控征服者，它不会追踪敌人而是只会原地不动，再次输入锁定键+征服者会引爆它
+            召唤自动跟随索敌进行自爆攻击的攻城型机械人，爆炸造成<span style="color:red">2.0int的火属性伤害</span><br> <b>—强化阶段1 RGS-937-2
+                征服者ex(RGS-937-2 Conquistador EX)</b> ：征服者的移动速度+100%
+            <br> <b> —强化阶段2 RGS-937-3 征服者hyper(RGS-937-3 Conquistador Hyper)</b>
+            ：按着锁定键使用征服者，生成特殊的遥控征服者，它不会追踪敌人而是只会原地不动，再次输入锁定键+征服者会引爆它
             <br> <b>—强化阶段3 RGS-937-4 征服者Ultimate(RGS-937-4
-            Conquistador Ultimate)</b>：爆炸范围+200%，伤害值+100%
+                Conquistador Ultimate)</b>：爆炸范围+200%，伤害值+100%
         </td>
     </tr>
     <tr>
@@ -390,9 +429,12 @@
 
         </td>
         <td style="text-align:left">
-            加装在永动机上的增幅引擎，让电容量+300，产电率+15 <br> <b> —强化阶段1 炎帝引擎改良型1(Improved Flammekaiser Engine1)</b> ：电容量+400，产电率+20 <br><b> —强化阶段2 炎帝引擎改良型2(Improved Flammekaiser Engine2)</b> ：电容量+500，产电率+30 <br><b>—强化阶段3 炎帝引擎改良型3(Improved Flammekaiser Engine3)</b> ：电容量+650，产电率+40
+            加装在永动机上的增幅引擎，让电容量+300，产电率+15 <br> <b> —强化阶段1 炎帝引擎改良型1(Improved Flammekaiser Engine1)</b> ：电容量+400，产电率+20
+            <br><b> —强化阶段2 炎帝引擎改良型2(Improved Flammekaiser Engine2)</b> ：电容量+500，产电率+30 <br><b>—强化阶段3 炎帝引擎改良型3(Improved
+                Flammekaiser Engine3)</b> ：电容量+650，产电率+40
             <br> <b>—强化阶段4
-                炎帝引擎改良型4(Improved Flammekaiser Engine4)</b> ：电容量+800，产电率+55 <br> <b>  —强化阶段5 究极炎帝引擎(Ultimate Flammekaiser Engine)</b> ：电容量+1000，产电率+90
+                炎帝引擎改良型4(Improved Flammekaiser Engine4)</b> ：电容量+800，产电率+55 <br> <b> —强化阶段5 究极炎帝引擎(Ultimate Flammekaiser
+                Engine)</b> ：电容量+1000，产电率+90
         </td>
     </tr>
 </table>
@@ -419,7 +461,8 @@
     <tr>
         <td width="100">心灵感应
 
-            <br> Telepathy</td>
+            <br> Telepathy
+        </td>
         <td width="45">主动
         </td>
         <td width="45">无</td>
@@ -427,22 +470,30 @@
             使用心灵感应感知一个物件<br> 在城镇地图中使用的话，会感知一个NPC的内心的想法，获得无法用正常手段得到的情报
             <br> 对着地图特定的“轴”使用，可以在心灵空间和现实世界之间来回
             <br> 对着不同的地形进行感应的话获得对应地形的气质性质
-            <br> <b>—有光的地方</b> ：恢复默认气质<span style="color:red">残光</span><br> <b>—发电的物体</b>：获得<span style="color:red">磁力</span>气质<br> <b>—火焰</b>：获得<span style="color:red">高热</span>气质<br> <b>—漏气口</b>：获得<span style="color:red">流动</span>气质<br> <b>—冰</b>：获得
-            <span style="color:red">冰冻</span>气质<br> <b>—时钟</b>：获得<span style="color:red">时间</span>气质<br> <b>—明暗交界处</b>：获得<span style="color:red">空间</span>气质<br> <b>—对着任意地形蓄力3秒</b>：获得<span style="color:red">超越</span>气质
+            <br> <b>—有光的地方</b> ：恢复默认气质<span style="color:red">残光</span><br> <b>—发电的物体</b>：获得<span
+                style="color:red">磁力</span>气质<br> <b>—火焰</b>：获得<span style="color:red">高热</span>气质<br>
+            <b>—漏气口</b>：获得<span style="color:red">流动</span>气质<br> <b>—冰</b>：获得
+            <span style="color:red">冰冻</span>气质<br> <b>—时钟</b>：获得<span style="color:red">时间</span>气质<br>
+            <b>—明暗交界处</b>：获得<span style="color:red">空间</span>气质<br> <b>—对着任意地形蓄力3秒</b>：获得<span
+                style="color:red">超越</span>气质
         </td>
     </tr>
     <tr>
         <td width="100">规则破坏
 
-            <br> Rule Break</td>
+            <br> Rule Break
+        </td>
         <td width="45">普通攻击
 
         </td>
         <td width="45">35气力
         </td>
         <td style="text-align:left">
-            发射身上的性质形成光弹，不同性质的光弹会拥有不同的作用，部分需要维持的，可以再次输入技能键中止维持状态<br> <b>—残光</b>：发射一枚光弹造成<span style="color:red">2.0int的光属性伤害</span><br> <b>—磁力</b>：发射磁力弹，命中钢铁物件的话，西尔诺每秒消费35气力控制它移动，钢铁物件撞击敌人造成<span style="color:red">1.0int的打击属性伤害</span>
-            <br> <b>—火焰</b>：发射灼烧弹，命中的敌人造成<span style="color:red">1.0int的火属性伤害</span>，并且点燃他们<br> <b>—流动</b>：向前方形成水流冲击，击退敌人，还可以破坏地图上脆弱的地点开路
+            发射身上的性质形成光弹，不同性质的光弹会拥有不同的作用，部分需要维持的，可以再次输入技能键中止维持状态<br> <b>—残光</b>：发射一枚光弹造成<span
+                style="color:red">2.0int的光属性伤害</span><br> <b>—磁力</b>：发射磁力弹，命中钢铁物件的话，西尔诺每秒消费35气力控制它移动，钢铁物件撞击敌人造成<span
+                style="color:red">1.0int的打击属性伤害</span>
+            <br> <b>—火焰</b>：发射灼烧弹，命中的敌人造成<span style="color:red">1.0int的火属性伤害</span>，并且点燃他们<br>
+            <b>—流动</b>：向前方形成水流冲击，击退敌人，还可以破坏地图上脆弱的地点开路
             <br> <b>—冰冻</b>：发射冰风冻结前方大范围的敌人，也可以冻结水面让西尔诺在上面移动
             <br> <b>—时间</b>：发射时间子弹，被命中的敌人会被停止行动
             <br> <b>—空间</b>：使用后西尔诺进入空间穿越状态，每秒消耗50点气力维持
@@ -453,7 +504,8 @@
         <td width="100">心灵支配
 
 
-            <br> Domination</td>
+            <br> Domination
+        </td>
         <td width="45">被动
 
 
@@ -461,7 +513,8 @@
         <td width="45">无
         </td>
         <td style="text-align:left">
-            敌人被无论什么方法打击进入气绝状态，都会在身边生成一个“轴” <br> 这个“轴”可以被西尔诺使用心灵感应入侵，入侵后会生成只有西尔诺和对应敌人的精神领域 <br> 在精神领域内西尔诺造成的所有攻击都会完全无视敌人的护甲，直到这个敌人从气绝状态中恢复过来
+            敌人被无论什么方法打击进入气绝状态，都会在身边生成一个“轴” <br> 这个“轴”可以被西尔诺使用心灵感应入侵，入侵后会生成只有西尔诺和对应敌人的精神领域 <br>
+            在精神领域内西尔诺造成的所有攻击都会完全无视敌人的护甲，直到这个敌人从气绝状态中恢复过来
         </td>
     </tr>
 
@@ -470,7 +523,8 @@
 
 
 
-            <br> Schizophrenia</td>
+            <br> Schizophrenia
+        </td>
         <td width="45">主动
 
 
@@ -480,9 +534,13 @@
 
         </td>
         <td style="text-align:left">
-            精神上强烈地渴望得到保护的西尔诺分裂出第二人格，在她觉醒自己的激发能后这个人格从她身上分裂为独立的个体 <br> 朝着前方驱使第二人格“凯伊罗”出来攻击敌人，根据身上的气质性质会拥有不同的攻击模式 <br> <b>—残光</b>：凯伊罗进行连续的3次攻击，每次攻击造成<span style="color:red">1.0int的打击属性伤害</span> <br>
-            <b>—磁力</b>：凯伊罗朝着前方飞踢，被击中的敌人造成<span style="color:red">1.0int的打击属性伤害</span>，并且凯伊罗带有磁力，途径的地方会吸引钢铁造成撞击伤害 <br> <b>—火焰</b>：凯伊罗使用火焰回旋踢攻击圆形范围内的敌人，造成<span style="color:red">2.0int的火属性伤害</span> <br> <b>—流动</b>：凯伊罗使用寸拳对贴近的敌人造成<span style="color:red">2.5int的打击属性伤害</span>，并且狠狠地击退敌人
-            <br><b>—冰冻</b> ：凯伊罗进行连续的3次攻击，每次攻击造成<span style="color:red">1.0int的打击属性伤害</span>，第三击会冰冻敌人 <br> <b>—时间</b>：凯伊罗在西尔诺面前出现进行拳击，每次攻击造成<span style="color:red">1.0int的打击属性伤害</span>，并且让敌人减速23%（最大叠加4次）
+            精神上强烈地渴望得到保护的西尔诺分裂出第二人格，在她觉醒自己的激发能后这个人格从她身上分裂为独立的个体 <br> 朝着前方驱使第二人格“凯伊罗”出来攻击敌人，根据身上的气质性质会拥有不同的攻击模式 <br>
+            <b>—残光</b>：凯伊罗进行连续的3次攻击，每次攻击造成<span style="color:red">1.0int的打击属性伤害</span> <br>
+            <b>—磁力</b>：凯伊罗朝着前方飞踢，被击中的敌人造成<span style="color:red">1.0int的打击属性伤害</span>，并且凯伊罗带有磁力，途径的地方会吸引钢铁造成撞击伤害 <br>
+            <b>—火焰</b>：凯伊罗使用火焰回旋踢攻击圆形范围内的敌人，造成<span style="color:red">2.0int的火属性伤害</span> <br>
+            <b>—流动</b>：凯伊罗使用寸拳对贴近的敌人造成<span style="color:red">2.5int的打击属性伤害</span>，并且狠狠地击退敌人
+            <br><b>—冰冻</b> ：凯伊罗进行连续的3次攻击，每次攻击造成<span style="color:red">1.0int的打击属性伤害</span>，第三击会冰冻敌人 <br>
+            <b>—时间</b>：凯伊罗在西尔诺面前出现进行拳击，每次攻击造成<span style="color:red">1.0int的打击属性伤害</span>，并且让敌人减速23%（最大叠加4次）
             <br> <b>—空间</b>：凯伊罗突然出现在周围最强的敌人身边使用铁砂掌攻击敌人造成<span style="color:red">1.5int的打击属性伤害</span>
             <br> <b>—超越</b>：凯伊罗出现在西尔诺面前疯狂地进行连续攻击，每一击造成<span style="color:red">0.25int的打击属性伤害</span>，一共30次连击
 
@@ -496,7 +554,8 @@
 
 
 
-            <br> Doppelgänger</td>
+            <br> Doppelgänger
+        </td>
         <td width="45">BUFF
 
 
@@ -505,7 +564,8 @@
         <td width="45">持续10气力
         </td>
         <td style="text-align:left">
-            将凯伊罗具现化，凯伊罗跟随在西尔诺周围保护她，西尔诺受到敌人的攻击的时候不会被中断动作，由凯伊罗保护只会受到80%的伤害，并且凯伊罗会使用拳击回击对敌人造成<span style="color:red">0.5int的打击属性伤害</span>
+            将凯伊罗具现化，凯伊罗跟随在西尔诺周围保护她，西尔诺受到敌人的攻击的时候不会被中断动作，由凯伊罗保护只会受到80%的伤害，并且凯伊罗会使用拳击回击对敌人造成<span
+                style="color:red">0.5int的打击属性伤害</span>
         </td>
     </tr>
 </table>

@@ -9,9 +9,15 @@
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -47,10 +53,12 @@
 <b> 1.独立开关</b><br> 全部子项都可以调用独立开关，默认为0.普通 <br> 定义为1.反击的场合下，不同项都会有不同的效果，下面会详细描述 <br> <br>
 
 
-<b> 2.距离</b><br> 远：这个霸体免疫远距离攻击的攻击硬直，受到近距离攻击会正常进入受击动作 <br> 反击开关为开的场合下，会反射受到对应飞行道具攻击 <br> 近：这个霸体免疫近距离攻击的攻击硬直，受到远距离攻击会正常进入受击动作 <br> 反击开关为开的场合下，攻击者会被霸体震开，陷入counter的硬直状态 <br> 两个都开的前提下就是远近都会霸体，这个是默认选项
+<b> 2.距离</b><br> 远：这个霸体免疫远距离攻击的攻击硬直，受到近距离攻击会正常进入受击动作 <br> 反击开关为开的场合下，会反射受到对应飞行道具攻击 <br>
+近：这个霸体免疫近距离攻击的攻击硬直，受到远距离攻击会正常进入受击动作 <br> 反击开关为开的场合下，攻击者会被霸体震开，陷入counter的硬直状态 <br> 两个都开的前提下就是远近都会霸体，这个是默认选项
 <br><br>
 
-<b> 3.朝向</b><br> 正：这个霸体免疫来自正面的攻击硬直， 反击开关为开的场合下，继承远近霸体的父关系决定反击的种类<br> 侧：这个霸体免疫来自侧面的攻击硬直， 反击开关为开的场合下，继承远近霸体的父关系决定反击的种类<br> 背：这个霸体免疫来自背面的攻击硬直， 反击开关为开的场合下，继承远近霸体的父关系决定反击的种类<br> 三个都开的前提下就是全方向霸体，这个是默认选项
+<b> 3.朝向</b><br> 正：这个霸体免疫来自正面的攻击硬直， 反击开关为开的场合下，继承远近霸体的父关系决定反击的种类<br> 侧：这个霸体免疫来自侧面的攻击硬直， 反击开关为开的场合下，继承远近霸体的父关系决定反击的种类<br>
+背：这个霸体免疫来自背面的攻击硬直， 反击开关为开的场合下，继承远近霸体的父关系决定反击的种类<br> 三个都开的前提下就是全方向霸体，这个是默认选项
 <br><br>
 
 

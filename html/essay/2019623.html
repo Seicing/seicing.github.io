@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 
 
@@ -55,11 +61,13 @@
 
 <br><br><br>
 
-<b>料理系统</b> <br> 以食为天的大国西景出身的世清和余可以使用食材进行烹饪…… <br> 他们两个会携带一个名为“万能锅”的道具，通过动作槽可以在面前架设灶台，然后点击灶台进入烹饪UI <br> 只能在和平的时候使用，进入战斗或者走开一段距离，灶台就会消失
+<b>料理系统</b> <br> 以食为天的大国西景出身的世清和余可以使用食材进行烹饪…… <br> 他们两个会携带一个名为“万能锅”的道具，通过动作槽可以在面前架设灶台，然后点击灶台进入烹饪UI <br>
+只能在和平的时候使用，进入战斗或者走开一段距离，灶台就会消失
 <br> 通过参考食谱投入正确的食材配合就可以制作不同的料理，食谱会在各种各样的地方获得
 <br> 烹饪后的食品会马上食用，给与角色持续一段时间的BUFF，而且把角色的血瓶的剩余充能附加这个buff的性能
 <br> 世清和余会通过解锁第一次的食物而永久地获得灵魂环，第二次开始不会加成
-<br>料理系统是给相对弱势的世清和余而追加的强化，因为其他角色或多或少地都有自己的系统去强化总体的战斗力，例如泰拉可以附魔，阿辛暗杀，西尔诺的心灵系统，丞和阿拉贡的伙伴系统和自由技能组合等<br> 相比他们比较“素体”的世清和余就是追加这样的系统让他们也保持自我选择战斗力的设定
+<br>料理系统是给相对弱势的世清和余而追加的强化，因为其他角色或多或少地都有自己的系统去强化总体的战斗力，例如泰拉可以附魔，阿辛暗杀，西尔诺的心灵系统，丞和阿拉贡的伙伴系统和自由技能组合等<br>
+相比他们比较“素体”的世清和余就是追加这样的系统让他们也保持自我选择战斗力的设定
 <br>
 
 <br><br><br>

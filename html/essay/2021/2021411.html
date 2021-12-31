@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -45,36 +51,36 @@
 
 <table id="customers">
     <tr>
-        <td width="100" ><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Yo1.png"   width="100" ></td>
+        <td width="100"><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Yo1.png" width="100"></td>
         <td>余<br>(Yo)</td>
-        <td style="text-align:left"> 固定队友，血多防高，攻击力优秀但是近身攻击为主  <br>
-            力22   智9   体A    精A    质D    速35   必0    平均防御能力20 <br>
+        <td style="text-align:left"> 固定队友，血多防高，攻击力优秀但是近身攻击为主 <br>
+            力22 智9 体A 精A 质D 速35 必0 平均防御能力20 <br>
             <br>
-        <b>破军之舞(Dance of Alkaid)</b>：击飞敌人 <br>
-        <b>夷手的战斗术(Skirmisher's Moveset)</b>：使用武器连续攻击敌人 <br>
-        <b>七杀之舞(Dance of Septet)</b>：使用散弹枪发射子弹 <br>
-        <b>*掠夺(Prey)</b>：夺取指定地方，获取可用的武器(可能的话)，让目标被缴械，并且余获得独特的攻击方式 <br>
-        <b>*龙牙(Dragon Pierce)</b>：缴械后会更变，命令余投射或者使用缴械的武器，武器消失
+            <b>破军之舞(Dance of Alkaid)</b>：击飞敌人 <br>
+            <b>夷手的战斗术(Skirmisher's Moveset)</b>：使用武器连续攻击敌人 <br>
+            <b>七杀之舞(Dance of Septet)</b>：使用散弹枪发射子弹 <br>
+            <b>*掠夺(Prey)</b>：夺取指定地方，获取可用的武器(可能的话)，让目标被缴械，并且余获得独特的攻击方式 <br>
+            <b>*龙牙(Dragon Pierce)</b>：缴械后会更变，命令余投射或者使用缴械的武器，武器消失
         </td>
     </tr>
     <tr>
-        <td width="100" ><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Iris2.png"   width="100" ></td>
+        <td width="100"><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Iris2.png" width="100"></td>
         <td>伊丽丝<br>(Iris)</td>
         <td style="text-align:left"> 防御力是6个队友里面最高的，攻击力不高，拥有大量控制型技能 <br>
-            力7  智19   体B    精A    质B    速15   必0    平均防御能力80 <br>
+            力7 智19 体B 精A 质B 速15 必0 平均防御能力80 <br>
             <br>
             <b>结晶化(Crystallized)</b>：身体外围凝聚透明的冰晶大幅度强化防御力 <br>
             <b>冰霜袭击(Frostbite)</b>：使用武器攻击敌人同时弱化敌人的敏捷 <br>
             <b>霜息(Frost Breath)</b>：发射一直线的冰霜气息冻结攻击到的所有敌人 <br>
             <b>*急冻(Overfreeze)</b>：快速冻结周围领域的敌人使得它们无法行动一段时间 <br>
-            <b>*雪灾(Blizzard Scourge)</b>：召唤由冰雪凝聚而成的魔法箭向指定方向发射，冻结敌人后赋予持续的减速 
+            <b>*雪灾(Blizzard Scourge)</b>：召唤由冰雪凝聚而成的魔法箭向指定方向发射，冻结敌人后赋予持续的减速
         </td>
     </tr>
     <tr>
-        <td width="100" ><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Sar.png"   width="100" ></td>
+        <td width="100"><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Sar.png" width="100"></td>
         <td>夏修伦<br>(Sarchlent)</td>
         <td style="text-align:left"> 持续输出能力强劲的近战型队友，拥有减少H&C的能力<br>
-            力30   智17   体S   精D    质S    速40    必0    平均防御能力15 <br>
+            力30 智17 体S 精D 质S 速40 必0 平均防御能力15 <br>
             <br>
             <b>点火(Inflamar)</b>：持续作战一段时间会把拳头进行点火，附加火属性伤害翻倍造成的Hit数 <br>
             <b>袭击(Assault)</b>：连续的组合拳 <br>
@@ -84,12 +90,14 @@
         </td>
     </tr>
     <tr>
-        <td width="100" ><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Louich1.png"   width="100" ></td>
+        <td width="100"><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Louich1.png" width="100"></td>
         <td>洛雨希<br>(Louich)</td>
-        <td style="text-align:left"> 输出能力最强，但是伴随着最强的副作用  <br>
-            力15   智14   体C    精D    质D    速55   必70    平均防御能力10 <br>
+        <td style="text-align:left"> 输出能力最强，但是伴随着最强的副作用 <br>
+            力15 智14 体C 精D 质D 速55 必70 平均防御能力10 <br>
             <br>
-            <b>螺旋弹(Spin Bullet)</b>：使用独特的发射技巧发射致命的螺旋弹，命中敌人因为强大的破坏力暴击，但是子弹威力过于强大可以误伤队友，命中队友会造成一定比例的伤害，可以关闭技能取消这个加成，代价是攻击不再可以暴击 <br>
+            <b>螺旋弹(Spin
+                Bullet)</b>：使用独特的发射技巧发射致命的螺旋弹，命中敌人因为强大的破坏力暴击，但是子弹威力过于强大可以误伤队友，命中队友会造成一定比例的伤害，可以关闭技能取消这个加成，代价是攻击不再可以暴击
+            <br>
             <b>鸦弹(Crowbite)</b>：连续发射6枚子弹 <br>
             <b>照准射击(Aim Shot)</b>：瞄准一段时间之后发射爆头一击 <br>
             <b>*制压射击(Suppressing)</b>：连续发射子弹直到子弹耗尽，使用后一段时间内无法攻击 <br>
@@ -97,10 +105,10 @@
         </td>
     </tr>
     <tr>
-        <td width="100" ><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Iuimi1.png"   width="100" ></td>
+        <td width="100"><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Iuimi1.png" width="100"></td>
         <td>羽三<br>(Iuimi)</td>
-        <td style="text-align:left"> 能力在6人里面最为平均，拥有独特的“护卫”能力，拥有提高决战槽累积速度以及造成真实伤害的能力  <br>
-            力18  智13   体A    精A    质B   速35   必0    平均防御能力0 <br>
+        <td style="text-align:left"> 能力在6人里面最为平均，拥有独特的“护卫”能力，拥有提高决战槽累积速度以及造成真实伤害的能力 <br>
+            力18 智13 体A 精A 质B 速35 必0 平均防御能力0 <br>
             <br>
             <b>鬼相食(Cannibalism)</b>：羽三造成的攻击会撕裂敌人的灵魂保存使用，加成她的伤害，并且按照灵魂的比例提高队伍的决战槽累积速度 <br>
             <b>弩箭发射(Ballista Attack)</b>：使用手弩持续不断地射击 <br>
@@ -110,10 +118,10 @@
         </td>
     </tr>
     <tr>
-        <td width="100" ><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Ven1.png"   width="100" ></td>
+        <td width="100"><img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/Ven1.png" width="100"></td>
         <td>文<br>(Ven)</td>
-        <td style="text-align:left"> 防御力出色，可以持续不断地恢复HP，并且强化队友  <br>
-            力9   智13   体B    精S    质S    速7    必0    平均防御能力65<br>
+        <td style="text-align:left"> 防御力出色，可以持续不断地恢复HP，并且强化队友 <br>
+            力9 智13 体B 精S 质S 速7 必0 平均防御能力65<br>
             <br>
             <b>圣痕(Stigmata)</b>：攻击敌人会累积圣痕的力量，根据选择获得强化，通过学习这个技能的精华技决定发挥效果 <br>
             <b>祓禊(Exorcism)</b>：发射光之剑收割对手，光剑射出砍击敌人后回收，敌人距离越近恢复到可以攻击状态的时间越短 <br>
@@ -125,9 +133,9 @@
     </tr>
 
 
- 
+
 </table>
- 
+
 
 
                         </div>

@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -41,7 +47,7 @@
                         <div class="entry"><div id="lavipage" page="66"></div>
 <b>气质构建系统（Aura Buildup System）</b><br>
 取代原先的灵魂环系统，使用abs系统取代之<br>
-abs是一个更加能直观地体现角色的成长和成长方向的系统，主要由四部分构成：素材，学识，性质，行为<br> 
+abs是一个更加能直观地体现角色的成长和成长方向的系统，主要由四部分构成：素材，学识，性质，行为<br>
 <br>
 <b>素材</b><br>
 下图偏左的部分，成长时所需要的各种素材，通过消费它们来解锁后三个部分的内容<br>
@@ -88,7 +94,7 @@ abs是一个更加能直观地体现角色的成长和成长方向的系统，�
 
 
 
- 
+
                         </div>
                         <div class="izl-rmenu">
                             <a href="#">

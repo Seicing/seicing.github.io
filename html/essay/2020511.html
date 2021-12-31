@@ -11,9 +11,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -130,13 +136,13 @@
         <td width="100">骑射演武场之主 <br>Master of Arena</td>
         <td style="text-align:left">跳跃时受伤的击退距离减少
             <br><br><i>古代的游牧民族在空战的时候习惯使用引诱敌人追击后突然回头射击的战术，这对骑射手们的射击水平要求非常高，所以在游牧民族们的大本营里常常设有很多专门训练射术的骑射演武场，在没有战争的日子里他们会聚集在一起互相切磋技艺，练习回马箭。最强大的骑射手被称为骑射演武场之主，他们仿佛就是天空的化身，随时随地都可以在任意地方任意角度对敌人发出致命的攻击
-                
-                
-                
-                
-                
-                
-                 </i>
+
+
+
+
+
+
+            </i>
 
 
 
@@ -158,7 +164,8 @@
         <td width="100"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/沐浴于火焰中.png"></td>
         <td width="100">沐浴于火焰中 <br>Bath in the Flame</td>
         <td style="text-align:left">灼烧给与角色造成的伤害恒定为0，火属性抗性+70
-            <br> <br><i>我内心的伤痕最后反而成为了我最宝贵的财富，真是讽刺</i></td>
+            <br> <br><i>我内心的伤痕最后反而成为了我最宝贵的财富，真是讽刺</i>
+        </td>
     </tr>
     <tr>
         <td width="100"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/匈奴的法则.png"></td>
@@ -296,7 +303,8 @@
 
         <td width="14.3%" style="text-align:center"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/Seigine.png"></td>
         <td width="14.3%" style="text-align:center"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/NovayaIuire.png"></td>
-        <td width="14.3%" style="text-align:center"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/SacrumUnionemImperiumNationisAltlaticae.png"></td>
+        <td width="14.3%" style="text-align:center"><img
+                src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/SacrumUnionemImperiumNationisAltlaticae.png"></td>
 
     </tr>
     <tr>

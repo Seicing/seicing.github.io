@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 
 
@@ -104,7 +110,8 @@
 <br><br> [injury rate] <br> 0.35
 <br><br> [mark] <br> `[snakepoison]`
 <br><br> [exmark] <br> `[scorpionpoison]`
-<br><br> [change] <br> `[moving]``500``3``0.03``3``2``3`` `` `<br> `[scorpionpoison]``1000``1``0``1``-2000``1``1``ether`<br>
+<br><br> [change] <br> `[moving]``500``3``0.03``3``2``3`` `` `<br>
+`[scorpionpoison]``1000``1``0``1``-2000``1``1``ether`<br>
 
 <br><br><br> 上面的异常状态被描述为，持续10秒，每秒造成150点暗属性伤害的持续流失型中毒
 <br> 中毒时造成的35%伤害会转化为重伤

@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 
 
@@ -41,13 +47,16 @@
 </div></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="23"></div>
-原先的角色的职业系统进行删除，因为没必要扯厨二了 <br> 职业的遗产经过考虑后，作出下列的分配： <br> <br> 职业造型：整合到角色故事流程的造型中，即现在角色的造型和原先的转职造型统一了，而部分无法塞入故事流程中的原职业造型会以bonus皮肤的形式供玩家寻找 <br> 职业名：和职业的简介一起整合到职业皮肤中，不再对故事有任何影响 <br> 职业修正和职业性能：采用新的职业系统
+原先的角色的职业系统进行删除，因为没必要扯厨二了 <br> 职业的遗产经过考虑后，作出下列的分配： <br> <br>
+职业造型：整合到角色故事流程的造型中，即现在角色的造型和原先的转职造型统一了，而部分无法塞入故事流程中的原职业造型会以bonus皮肤的形式供玩家寻找 <br> 职业名：和职业的简介一起整合到职业皮肤中，不再对故事有任何影响 <br>
+职业修正和职业性能：采用新的职业系统
 <br><br><br>
 
 
 <b>
     新职业系统
-</b> <br> 和现在的战斗概念进行整合了 <br> 角色现在可以装备两个战斗概念，让角色的属性和性能产生偏向 <br> 例如：信仰者（加mp）+战士（加力量）=圣骑士，当然职业名是不会显示的 <br> 越是后期就能获得越强力的概念，对应之前的觉醒等 <br> 技能也纯粹通过灵魂环获得了，不再和职业阶段挂钩
+</b> <br> 和现在的战斗概念进行整合了 <br> 角色现在可以装备两个战斗概念，让角色的属性和性能产生偏向 <br> 例如：信仰者（加mp）+战士（加力量）=圣骑士，当然职业名是不会显示的 <br>
+越是后期就能获得越强力的概念，对应之前的觉醒等 <br> 技能也纯粹通过灵魂环获得了，不再和职业阶段挂钩
 
                         </div>
                         <div class="izl-rmenu">

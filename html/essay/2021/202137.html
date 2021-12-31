@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -45,47 +51,47 @@
 
 <table id="customers">
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">体力</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">体力</span></td>
         <td>4440</td>
         <td>角色的生命值</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">精神</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">精神</span></td>
         <td>250</td>
         <td>角色的技能消费</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">气质</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">气质</span></td>
         <td>40</td>
         <td>角色的技能消费每秒回复量</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">武力</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">武力</span></td>
         <td>22</td>
         <td>角色的基础物理强度</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">智力</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">智力</span></td>
         <td>9</td>
         <td>角色的基础魔法强度</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">潜力</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">潜力</span></td>
         <td>285</td>
         <td>角色的实际输出水平</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">敏捷</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">敏捷</span></td>
         <td>35</td>
         <td>角色的动作速度</td>
     </tr>
     <tr>
-        <td style="background-color:#000000" ><span style="color: #FFFFFF">致命</span></td>
+        <td style="background-color:#000000"><span style="color: #FFFFFF">致命</span></td>
         <td>0</td>
         <td>角色的暴击伤害</td>
     </tr>
     <tr>
-        <td rowspan="9" style="background-color:#000000" ><span style="color: #FFFFFF">抗性</span></td>
+        <td rowspan="9" style="background-color:#000000"><span style="color: #FFFFFF">抗性</span></td>
         <td>斩击</td>
         <td>50</td>
     </tr>
@@ -122,11 +128,12 @@
         <td>0</td>
     </tr>
 </table>
-  
+
 <table id="customers">
     <tr>
-        <td  width="100" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/夷手的战斗术z.png"></td>
-        <td style="background-color:#000000" colspan="10"><span style="color: #FFFFFF">夷手的战斗术(Skirmisher's Moveset)</span></td>
+        <td width="100" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/夷手的战斗术z.png"></td>
+        <td style="background-color:#000000" colspan="10"><span style="color: #FFFFFF">夷手的战斗术(Skirmisher's
+                Moveset)</span></td>
     </tr>
     <tr>
         <td style="background-color:#a3a3a3"><span style="color: #FFFFFF">性质</span></td>
@@ -148,19 +155,19 @@
             根据余掠夺的武器或者使用[种族灭绝大屠杀]召唤的武器，获得不同的攻击模式，每次挥动都会造成1次武器伤害，攻击属性根据缴械的武器而定<br>
             DEMO固定使用[种族灭绝大屠杀]召唤的武器
             <br>
-          武器伤害造成<span style="color: #ff0000">1.35str</span>伤害，并且造成10%的重伤<br> 
+            武器伤害造成<span style="color: #ff0000">1.35str</span>伤害，并且造成10%的重伤<br>
         </td>
     </tr>
     <tr>
         <td width="50" style="background-color:#a3a3a3"><span style="color: #FFFFFF">暴击</span></td>
-        <td width="50" >×</td>
+        <td width="50">×</td>
         <td colspan="10" style="text-align:left">此技能无法暴击</td>
     </tr>
 </table>
 
 <table id="customers">
     <tr>
-        <td  width="100" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/狼碎颚z.png"></td>
+        <td width="100" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/狼碎颚z.png"></td>
         <td style="background-color:#000000" colspan="10"><span style="color: #FFFFFF">破军之舞(Dance of Alkaid)</span></td>
     </tr>
     <tr>
@@ -184,18 +191,18 @@
             DEMO不会消耗武器的耐久度，也没有空手模式和射击模式
             <br>
             武器击飞敌人造成<span style="color: #ff0000">1.5str</span>伤害，并且造成10%的重伤<br>
-            武器的追加攻击造成<span style="color: #ff0000">1.5str</span>伤害，并且造成20%的重伤<br> 
+            武器的追加攻击造成<span style="color: #ff0000">1.5str</span>伤害，并且造成20%的重伤<br>
         </td>
     </tr>
     <tr>
         <td width="50" style="background-color:#a3a3a3"><span style="color: #FFFFFF">暴击</span></td>
-        <td width="50" >×</td>
+        <td width="50">×</td>
         <td colspan="10" style="text-align:left">此技能无法暴击</td>
     </tr>
 </table>
 <table id="customers">
     <tr>
-        <td  width="100" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/急所指定z.png"></td>
+        <td width="100" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/急所指定z.png"></td>
         <td style="background-color:#000000" colspan="10"><span style="color: #FFFFFF">七杀之舞(Dance of Septet)</span></td>
     </tr>
     <tr>
@@ -220,19 +227,19 @@
             射击后，角色会进入维持发射角度的射击模式5秒，这时候可以继续沿着这个方向发射子弹，直到5秒后或者使用任何姿势取消掉射击模式 <br>
             DEMO版本子弹数量是无限的 <br>
             <br>
-          子弹造成<span style="color: #ff0000">1.0str</span>火属性伤害，并且造成50%的重伤<br>
-           散弹造成<span style="color: #ff0000">1.0str</span>火属性伤害，并且造成50%的重伤<br> 
+            子弹造成<span style="color: #ff0000">1.0str</span>火属性伤害，并且造成50%的重伤<br>
+            散弹造成<span style="color: #ff0000">1.0str</span>火属性伤害，并且造成50%的重伤<br>
         </td>
     </tr>
     <tr>
         <td width="50" style="background-color:#a3a3a3"><span style="color: #FFFFFF">暴击</span></td>
-        <td width="50" >×</td>
+        <td width="50">×</td>
         <td colspan="10" style="text-align:left">此技能无法暴击</td>
     </tr>
 </table>
 <table id="customers">
     <tr>
-        <td  width="100" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/报复螺旋z.png"></td>
+        <td width="100" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/报复螺旋z.png"></td>
         <td style="background-color:#000000" colspan="10"><span style="color: #FFFFFF">报复螺旋(Revenge Spiral)</span></td>
     </tr>
     <tr>
@@ -257,18 +264,18 @@
             在其他时间的硬直时间内可以使用报复螺旋取消硬直，使用侧边旋转攻击 <br>
             站立模式下蓄力使用的话，余会把武器架在头顶不断地旋转，蓄力时间内会不停地旋转，击飞来自所有方向的飞行道具并造成伤害，每秒会造成5次旋转伤害 <br>
             <br>
-          每次旋转攻击造成<span style="color: #ff0000">1.0str</span>伤害，并且造成20%的重伤<br> 
+            每次旋转攻击造成<span style="color: #ff0000">1.0str</span>伤害，并且造成20%的重伤<br>
         </td>
     </tr>
     <tr>
         <td width="50" style="background-color:#a3a3a3"><span style="color: #FFFFFF">暴击</span></td>
-        <td width="50" >×</td>
+        <td width="50">×</td>
         <td colspan="10" style="text-align:left">此技能无法暴击</td>
     </tr>
 </table>
 <table id="customers">
     <tr>
-        <td  width="100" rowspan="3" colspan="2" ><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/速度型特殊技.png"></td>
+        <td width="100" rowspan="3" colspan="2"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/速度型特殊技.png"></td>
         <td style="background-color:#000000" colspan="10"><span style="color: #FFFFFF">疾驰(Charge)</span></td>
     </tr>
     <tr>
@@ -288,17 +295,17 @@
     </tr>
     <tr>
         <td colspan="12" style="text-align:left">
-            取消掉所有技能的收招硬直突进一段距离 <br> 
-           余是力量型角色，但是DEMO拥有速度型特殊技能
+            取消掉所有技能的收招硬直突进一段距离 <br>
+            余是力量型角色，但是DEMO拥有速度型特殊技能
         </td>
     </tr>
     <tr>
         <td width="50" style="background-color:#a3a3a3"><span style="color: #FFFFFF">暴击</span></td>
-        <td width="50" >×</td>
+        <td width="50">×</td>
         <td colspan="10" style="text-align:left">此技能无法暴击</td>
     </tr>
 </table>
- 
+
 
 
 <table id="customers" frame="box" style="width:800px">
@@ -357,7 +364,7 @@
     <tr>
         <td width="100"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/宝贵之物.png"></td>
         <td width="100">宝贵之物 <br>The Treasure</td>
-        <td style="text-align:left">缴械获得的武器的耐久度增加20%，报复螺旋每秒消耗的耐久度-1 
+        <td style="text-align:left">缴械获得的武器的耐久度增加20%，报复螺旋每秒消耗的耐久度-1
         </td>
     </tr>
 

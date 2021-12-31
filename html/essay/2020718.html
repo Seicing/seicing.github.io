@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -52,7 +58,7 @@
 <br> 刺剑叫曀迦娜舍目佉，又叫“十一面”，六道观音中的“修罗道”
 <br> 短刀叫何耶揭梨婆，又叫“马首”，六道观音中的“畜生道”
 <br> 光剑名字叫胎藏曼陀罗，并非是常态状态下可以使用的剑（至少在前期），是使用两把剑进行交配后诞生的巨型光剑，只能维持很短的斩击时间
-<br>  光剑是世清强行将两种权现的性质融合在一起诞生的怪物，不能常态持久，需要大量的气质去半浪费地维持，但是也因为这样光剑拥有很暴力的原始的气质的感觉，对活物造成的伤害会更高
+<br> 光剑是世清强行将两种权现的性质融合在一起诞生的怪物，不能常态持久，需要大量的气质去半浪费地维持，但是也因为这样光剑拥有很暴力的原始的气质的感觉，对活物造成的伤害会更高
 
 <table id="customers" frame="box" style="width:800px">
     <tr>
@@ -114,7 +120,6 @@
 
 
 </table>
-
                         </div>
                         <div class="izl-rmenu">
                             <a href="#">

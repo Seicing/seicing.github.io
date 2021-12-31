@@ -11,9 +11,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 
 </head>
@@ -46,12 +52,12 @@
 <table id="customers" frame="box" style="width:800px">
 
     <tr>
-        <td>夷手的战斗术<br/>(Gyisu's Moveset)</td>
+        <td>夷手的战斗术<br />(Gyisu's Moveset)</td>
         <td>普通攻击</td>
-        <td>四种不同的长柄武器使用方法以及凶残的徒手战斗术，根据情况的不同产生不同的攻击模式<br/>所有攻击处于收招硬直时，输入跳跃键进行硬直取消，往后小跳一段距离</td>
+        <td>四种不同的长柄武器使用方法以及凶残的徒手战斗术，根据情况的不同产生不同的攻击模式<br />所有攻击处于收招硬直时，输入跳跃键进行硬直取消，往后小跳一段距离</td>
     </tr>
     <tr>
-        <td>空振<br/>(Aerial Drive)</td>
+        <td>空振<br />(Aerial Drive)</td>
         <td>主动</td>
         <td>使用
             <span>长枪</span>
@@ -63,7 +69,7 @@
         </td>
     </tr>
     <tr>
-        <td>临战态势<br/>(War Stance)</td>
+        <td>临战态势<br />(War Stance)</td>
         <td>全时开关</td>
         <td>将当前的流仪切换到
             <span>蹂躏之轮</span>
@@ -79,19 +85,19 @@
             <span>炮烙</span>
             <span>/</span>
             <span>苦痛的喜悦</span>
-            <span><br/>(</span>
+            <span><br />(</span>
             <span>Dharmachakra</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Overheat</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Painful Pleasure</span>
             <span>)</span>
         </td>
         <td>永久开关</td>
         <td>获得额外的能量槽，<s>将敌人撕裂出血时会强化战轮的能量，获得不断提高的武力值</s>【维持战斗状态会不断地增加战轮的力量，战轮能量可以提供余不同的能力消费，造访存档点会充满充能，处于战斗状态时消费战轮能量，战轮能量会暂时不会回复】
-            <span><br/></span>
+            <span><br /></span>
             <span>获得热量槽，发射子弹后会对武器进行加热，武器拥有热量时攻击敌人时会造成基于热量加成的额外的火属性伤害，热量槽过高的时候会对自身造成火属性伤害</span>
-            <span><br/></span>
+            <span><br /></span>
             <span>产生额外的痛苦槽，受到攻击就会快速增加痛苦槽，痛苦槽会对对应防御力有加成率</span>
         </td>
     </tr>
@@ -100,31 +106,31 @@
             <span>/</span>
             <span>早合</span>
             <span>/</span>
-            <span>骨流<br/></span>
+            <span>骨流<br /></span>
             <span>(</span>
             <span>Revenge Spiral</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Cartridge</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Bone Tail</span>
             <span>)</span>
         </td>
         <td>全时开关</td>
-        <td>消耗能量槽快速地挥动武器，挥动武器期间造成持续的伤害并且反弹一切飞行道具<br/>
+        <td>消耗能量槽快速地挥动武器，挥动武器期间造成持续的伤害并且反弹一切飞行道具<br />
             <span>源源不断地持续自动装填国崩炮炮弹</span>
-            <span><br/></span>
+            <span><br /></span>
             <span>生成尾巴状的骨髓，消费体力值自动追加穿透攻击并且吸收他们的血液增加痛苦槽</span>
         </td>
     </tr>
     <tr>
-        <td>掠夺<br/>(Prey)</td>
+        <td>掠夺<br />(Prey)</td>
         <td>主动</td>
-        <td>使用利爪抓取一个敌人或者障碍物，根据情况的不同产生不同情况：<br/>敌人处于无法抵抗状态时，余会对被抓取的敌人处刑<br/>攻击一个正常状态的敌人或者障碍物，
+        <td>使用利爪抓取一个敌人或者障碍物，根据情况的不同产生不同情况：<br />敌人处于无法抵抗状态时，余会对被抓取的敌人处刑<br />攻击一个正常状态的敌人或者障碍物，
             <span>获得对应的副手武器</span>
             <span>/</span>
             <span>获得对应的国崩炮子弹</span>
             <span>/</span>
-            <span>获得对应的防御力抵抗力加成<br/></span>
+            <span>获得对应的防御力抵抗力加成<br /></span>
             <span>长按技能键会把副手武器往前方丢弃造成伤害</span>
         </td>
     </tr>
@@ -134,19 +140,19 @@
             <span>国崩炮发射</span>
             <span>/</span>
             <span>绝望的雄叫</span>
-            <span><br/>(</span>
+            <span><br />(</span>
             <span>Wild Drive</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Cannonade</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Desperate Howling</span>
             <span>)</span>
         </td>
         <td>主动</td>
         <td>使用副手武器进行乱舞攻击
-            <span><br/></span>
+            <span><br /></span>
             <span>使用国崩炮发射一枚子弹</span>
-            <span><br/></span>
+            <span><br /></span>
             <span>受击时也可以使用，短暂地提升掠夺而来的防御力加成，然后绝望地吼叫震晕敌人</span>
         </td>
     </tr>
@@ -156,30 +162,31 @@
             <span>城阁大崩落</span>
             <span>/</span>
             <span>凭神觉醒</span>
-            <span><br/>(</span>
+            <span><br />(</span>
             <span>Genocide Massacre</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Onslaught</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Atavism Trigger</span>
             <span>)</span>
         </td>
         <td>决战技</td>
         <td><s>短暂地幻化出始祖武器的力量，狠狠地拍击地面击飞敌人然后疯狂地乱舞攻击</s>【激活后余的武器会迸发出毁灭之光，强化伤害和攻击距离，并且徐徐减少战轮能量】
-            <span><br/></span>
-            <span><s>架起超重型九管国崩炮发射御通神子弹，在恐怖的爆发之后地面被焚烧，让处于地带上的敌人灼伤减速</s> 【强制装填御通神子弹，让下一发国崩炮子弹发射变成超重型九管国崩炮射击，御通神子弹发生巨大的爆发焚烧眼前一切，并且在爆炸后形成地狱领域灼伤敌人】
+            <span><br /></span>
+            <span><s>架起超重型九管国崩炮发射御通神子弹，在恐怖的爆发之后地面被焚烧，让处于地带上的敌人灼伤减速</s>
+                【强制装填御通神子弹，让下一发国崩炮子弹发射变成超重型九管国崩炮射击，御通神子弹发生巨大的爆发焚烧眼前一切，并且在爆炸后形成地狱领域灼伤敌人】
             </span>
-            <span><br/></span>
+            <span><br /></span>
             <span>消耗痛苦槽进入苍狼模式，苍狼模式下，持续地强化普攻，以及强化一次接下来使用的技能，使用强化版技能后会从苍狼模式恢复为正常模式，苍狼模式下使用凭神觉醒，会发射光炮贯穿眼前的敌人</span>
         </td>
     </tr>
     <tr>
-        <td>脱胎换骨<br/>(Reincarnate)</td>
+        <td>脱胎换骨<br />(Reincarnate)</td>
         <td>永久开关</td>
         <td>报复螺旋在遭到敌人攻击前的一瞬间使用的话不会持续，消耗10%的能量吸收一定的伤害，并且，敌人是进行近战攻击被余格挡的话，敌人会被震开Counter
-            <span><br/></span>
+            <span><br /></span>
             <span>增加子弹的最大堆栈数</span>
-            <span><br/></span>
+            <span><br /></span>
             <span>在痛苦槽高于一半的时候受到致命伤害，余会免疫死亡，同时痛苦槽会慢慢地减少直到消失殆尽，在接下来的一段时间内会进入“垂死挣扎”状态，垂死挣扎状态下攻击敌人会吸收他们的HP，但是持续时间内免疫死亡的效果会消失</span>
         </td>
     </tr>
@@ -189,19 +196,19 @@
             <span>急所乱击</span>
             <span>/</span>
             <span>根绝</span>
-            <span><br/>(</span>
+            <span><br />(</span>
             <span>Dance of Elimination</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Weakpoint Searcher</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Dismember</span>
             <span>)</span>
         </td>
         <td>主动</td>
         <td>后空翻之后对一个方向进行斩首一击，敌人血量低于一定程度的时候会直接击杀
-            <span><br/></span>
+            <span><br /></span>
             <span>消费一颗子弹朝指定的方向突进的同时，自动锁定范围内的三个敌人进行乱射</span>
-            <span><br/></span>
+            <span><br /></span>
             <span>使用骨鞭贯穿敌人</span>
         </td>
     </tr>
@@ -211,29 +218,29 @@
             <span>御通御火鉢</span>
             <span>/</span>
             <span>天灾</span>
-            <span><br/>(</span>
+            <span><br />(</span>
             <span>Dance of Gater Mater</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Volcano Cannon</span>
-            <span>/<br/></span>
+            <span>/<br /></span>
             <span>Flagellum Dei</span>
             <span>)</span>
         </td>
         <td>决战技</td>
         <td>每隔一段时间获得一层充能，消耗一层充能进行一次大面积的横扫攻击
-            <span><br/></span>
+            <span><br /></span>
             <span>每隔一段时间获得一层充能，消耗一层充能进行一次大面积的乱射攻击</span>
-            <span><br/></span>
-            <span>每隔一段时间获得一层充能，消耗一层充能把自己的脊椎拔出来对周边进行大扫除<br/>天狼独舞：苍狼模式下，长按天灾按钮会发动天狼独舞，以极快的速度来回横扫战场</span>
+            <span><br /></span>
+            <span>每隔一段时间获得一层充能，消耗一层充能把自己的脊椎拔出来对周边进行大扫除<br />天狼独舞：苍狼模式下，长按天灾按钮会发动天狼独舞，以极快的速度来回横扫战场</span>
         </td>
     </tr>
     <tr>
-        <td>素融偏和<br/>(Reconstitution)</td>
+        <td>素融偏和<br />(Reconstitution)</td>
         <td>全时开关</td>
-        <td>对敌人造成暴击后，敌人会标记为易碎状态<br/>攻击易碎状态的敌人会触发以太伤害，并且让他们接下的一段时间内减少所有防御力</td>
+        <td>对敌人造成暴击后，敌人会标记为易碎状态<br />攻击易碎状态的敌人会触发以太伤害，并且让他们接下的一段时间内减少所有防御力</td>
     </tr>
     <tr>
-        <td>天海轰鸣之舞<br/>(Dance of Armageddon)</td>
+        <td>天海轰鸣之舞<br />(Dance of Armageddon)</td>
         <td>决战技</td>
         <td>跳起毁灭之舞，让一切的物体分解成最本质的粒子湮灭消失</td>
     </tr>

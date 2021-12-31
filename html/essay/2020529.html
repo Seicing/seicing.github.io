@@ -11,9 +11,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -180,7 +186,7 @@
     </tr>
     <tr>
         <td style="background-color:#000000" colspan="4">
-            <span style="color:#ffffff">怪物名			
+            <span style="color:#ffffff">怪物名
             </span>
         </td>
     </tr>
@@ -336,8 +342,8 @@
     </tr>
     <tr>
         <td style="background-color:#000000" colspan="4">
-            <span style="color:#ffffff">技能名			
-			
+            <span style="color:#ffffff">技能名
+
             </span>
         </td>
     </tr>
@@ -573,7 +579,7 @@
 
     <tr>
         <td style="background-color:#000000" colspan="4">
-            <span style="color:#ffffff">地图名			
+            <span style="color:#ffffff">地图名
             </span>
         </td>
     </tr>

@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -40,7 +46,8 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="27"></div>
 
-<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/界面重制版.jpg" width="750px"> <br> 掌机模式下ui放大1.5倍，敌人血量槽移到左上角 <br> 右上角的槽是决战技槽，决战技槽下面是队友的状态以及决战技指令键 <br> 右下角会显示角色当前状态下可以使用的出招表 <br> <br>
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/界面重制版.jpg" width="750px"> <br> 掌机模式下ui放大1.5倍，敌人血量槽移到左上角 <br> 右上角的槽是决战技槽，决战技槽下面是队友的状态以及决战技指令键
+<br> 右下角会显示角色当前状态下可以使用的出招表 <br> <br>
 
 
 <img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/ESC1-1.jpg" width="750px"> <br> 点击开始呼唤esc彩蛋默认就是状态

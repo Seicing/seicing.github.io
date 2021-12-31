@@ -10,9 +10,15 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/essay.html');
     })
+
+    window.onload = tipsp()
+    function tipsp() {
+        var tipsp1 = getQueryVariable("year")
+        document.getElementById(tipsp1).click();
+    }
 </script>
 </head>
 
@@ -39,7 +45,7 @@
 </div></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="73"></div>
-<img src="https://seicing.coding.net/p/3fatcatpool/d/3fatcatpool/git/raw/master/图标2/Map222.jpg"  width="800px" ><br>
+<img src="https://seicing.coding.net/p/3fatcatpool/d/3fatcatpool/git/raw/master/图标2/Map222.jpg" width="800px"><br>
 位置总览，具体的出典如下
 <table id="customers" frame="box" style="width:800px">
     <tr>
@@ -445,7 +451,7 @@
             冰雪之戟
         </td>
         <td style="background-color:#ffffff">
-           弗拉基米尔三叉戟
+            弗拉基米尔三叉戟
         </td>
     </tr>
     <tr>
@@ -547,7 +553,6 @@
         </td>
     </tr>
 </table>
-
                         </div>
                         <div class="izl-rmenu">
                             <a href="#">
