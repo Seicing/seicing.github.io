@@ -20,6 +20,12 @@ function tipsp() {
     document.getElementById(tipsp2).click();
 }
 
+setTimeout(function () {
+    var tipsp1 = getQueryVariable("nenbun")
+    var tipsp2 = tipsp1 + "button";
+    document.getElementById(tipsp2).click();
+}, 100)
+
 function overstep(a, b) {
     document.getElementById("hajimebutton").style.display = "block";
     document.getElementById("hattenbutton").style.display = "block";
