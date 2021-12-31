@@ -9,7 +9,6 @@
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
-<script language="javascript" src="https://seicing.com/js/essay.js"></script>
 </head>
 
 <body id='scroll-2'>
@@ -71,24 +70,6 @@
     </div>
 </body>
 
-<script>
-    function getQueryVariable(variable) {
-        var query = window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split("=");
-            if (pair[0] == variable) { return pair[1]; }
-        }
-        return (false);
-    }
-
-    window.onload = tipsp()
-
-    function tipsp() {
-        var tipsp1 = getQueryVariable("nenbun")
-        var tipsp2 = tipsp1 + "button";
-        document.getElementById(tipsp2).click();
-    }
-</script>
+<script language="javascript" src="https://seicing.com/js/essay.js"></script>
 
 </html>
