@@ -191,7 +191,7 @@
     </tr>
 </table>
 
-<br><img src="https://seicing.com/res/dex.jpg" alt="">
+<!--<br><img src="https://seicing.com/res/dex.jpg" alt="">-->
 
                         </div>
                         <div class="izl-rmenu">
@@ -222,6 +222,13 @@
         var tipsp1 = getQueryVariable("nenbun")
         var tipsp2 = tipsp1 + "button";
         document.getElementById(tipsp2).click();
+        setTimeout(
+            function () {
+                var tipsp1 = getQueryVariable("nenbun")
+                var tipsp2 = tipsp1 + "button";
+                document.getElementById(tipsp2).click();
+            }
+            , 1000);
     }
 </script>
 

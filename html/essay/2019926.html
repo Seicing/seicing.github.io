@@ -105,7 +105,7 @@
 <br> 破绽槽在阿辛受到伤害的时候会大幅度减少，破绽槽满了的话，敌人会强制硬直，这时候阿辛可以使用【暗杀】强行对敌人造成一次偷袭伤害，对敌人造成大量伤害
 <br> 此外通过影子控制失去防备敌人进行扰乱对手也是阿辛篇一个玩点
 
-<br><img src="https://seicing.com/res/dex.jpg" alt="">
+<!--<br><img src="https://seicing.com/res/dex.jpg" alt="">-->
 
 
                         </div>
@@ -137,6 +137,13 @@
         var tipsp1 = getQueryVariable("nenbun")
         var tipsp2 = tipsp1 + "button";
         document.getElementById(tipsp2).click();
+        setTimeout(
+            function () {
+                var tipsp1 = getQueryVariable("nenbun")
+                var tipsp2 = tipsp1 + "button";
+                document.getElementById(tipsp2).click();
+            }
+            , 1000);
     }
 </script>
 
