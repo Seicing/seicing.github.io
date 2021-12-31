@@ -10,11 +10,7 @@
 <link href="https://seicing.com/css/故事.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#sidebar').load('https://seicing.com/js/list/essay.html');
-    })
-</script>
+<script type="text/javascript" src="https://seicing.com/js/essay.js"></script>
 </head>
 
 <body id='scroll-2'>
@@ -95,7 +91,8 @@
         <td>无
         </td>
         <td style="text-align:left">余拔出她的远程武器进行远程攻击，进入【射击模式】中<br> 【射击模式】状态下，由鼠标指向的方向决定射击角度，或者手柄模式下长按急所指定推动右摇杆进行方向调整
-            <br> 向指定方向进行射击造成<span style="color:red">1.5str的贯穿属性伤害</span>，射击之后会继续维持【射击模式】，【射击模式】下余总是会维持上一次射击的角度<br> 使用除了【跳跃】、【移动】、【急所指定】、【母神之舞】外的动作会取消【射击模式】(受击不会取消)
+            <br> 向指定方向进行射击造成<span style="color:red">1.5str的贯穿属性伤害</span>，射击之后会继续维持【射击模式】，【射击模式】下余总是会维持上一次射击的角度<br>
+            使用除了【跳跃】、【移动】、【急所指定】、【母神之舞】外的动作会取消【射击模式】(受击不会取消)
             <br><br><b>精华·节制</b>：热量的增加值减半，过热后对余造成的灼伤伤害减少
             <br><b>精华·野性</b>：热量的增加值翻倍，过热状态下仍然可以发射子弹，这个子弹必定暴击，但是发射的间隔会变长，野性状态下热量可以累积到200，超过100后的灼烧伤害会根据超出的数量不断地增加
             <br><br>暴击：命中敌人的头部造成双倍伤害
@@ -195,8 +192,10 @@
             <br> 【掠夺】使用尾巴掠夺，增加判定范围
             <br> 【报复螺旋】转动时尾巴也会攻击敌人，每一击造成额外的50%伤害
             <br> 【种族灭绝大屠杀】地母之化形发出毁灭之光，伤害值提高50%，并且延长攻击范围
-            <br>在始祖模式状态下，余的普通攻击可以快速地增加决战槽的累加值，而且掠夺成功可以一口气增加100决战槽 <br> 长按【凭神觉醒】指令键会发动终结技 <b>天狼独舞(Dance of Chono)</b> <br> 天狼独舞不断地消费剩下的决战槽进行快速飞翔攻击大范围内的敌人，每20决战槽就飞行一次（保底飞翔次数：5次）
-            <br> 每次飞翔造成<span style="color:red">2.5str的地属性伤害</span> <br> 在飞行结束后，余使用最终爪击攻击敌人后脱离始祖模式，造成<span style="color:red">10.0str的地属性伤害</span>，并且根据飞翔的次数增加这个伤害值，每1次飞翔增加10%伤害
+            <br>在始祖模式状态下，余的普通攻击可以快速地增加决战槽的累加值，而且掠夺成功可以一口气增加100决战槽 <br> 长按【凭神觉醒】指令键会发动终结技 <b>天狼独舞(Dance of Chono)</b>
+            <br> 天狼独舞不断地消费剩下的决战槽进行快速飞翔攻击大范围内的敌人，每20决战槽就飞行一次（保底飞翔次数：5次）
+            <br> 每次飞翔造成<span style="color:red">2.5str的地属性伤害</span> <br> 在飞行结束后，余使用最终爪击攻击敌人后脱离始祖模式，造成<span
+                style="color:red">10.0str的地属性伤害</span>，并且根据飞翔的次数增加这个伤害值，每1次飞翔增加10%伤害
             <br><br>暴击：这个技能无法暴击
 
         </td>
@@ -209,7 +208,8 @@
         </td>
         <td>冷却时间6秒<br> 30气力
         </td>
-        <td style="text-align:left"><b>【素手模式】</b><br> 余撕咬眼前的敌人，造成<span style="color:red">2.0str的暗属性伤害</span>，并回复伤害量35%的HP<br>
+        <td style="text-align:left"><b>【素手模式】</b><br> 余撕咬眼前的敌人，造成<span
+                style="color:red">2.0str的暗属性伤害</span>，并回复伤害量35%的HP<br>
             <b>【武器模式】</b><br> 余大幅度地挥动武器对圆形范围内的敌人造成<span style="color:red">3.0str的斩击属性伤害</span><br>
             <b>【射击模式】</b><br> 快速地往一个方向突进，突进的同时锁定一个最强的敌人进行攻击造成<span style="color:red">2.0str的贯穿属性伤害</span><br>
             <b>每进行一次成功的夷手的战斗术攻击和急所指定射击就会减少1秒冷却时间</b>
@@ -242,7 +242,8 @@
         </td>
         <td>无
         </td>
-        <td style="text-align:left">对敌人造成暴击后，敌人会标记为易碎状态<br> 攻击易碎状态的敌人会触发<span style="color:red">200地属性伤害</span>，并且让他们接下的一段时间内减少所有防御力20
+        <td style="text-align:left">对敌人造成暴击后，敌人会标记为易碎状态<br> 攻击易碎状态的敌人会触发<span
+                style="color:red">200地属性伤害</span>，并且让他们接下的一段时间内减少所有防御力20
         </td>
     </tr>
     <tr>
@@ -350,5 +351,12 @@
     </div>
 </body>
 
+<script>
+    window.onload = function () {
+        var tipsp1 = getQueryVariable("nenbun")
+        var tipsp2 = tipsp1 + "button";
+        document.getElementById(tipsp2).click();
+    }
+</script>
 
 </html>

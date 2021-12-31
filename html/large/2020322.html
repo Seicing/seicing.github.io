@@ -10,11 +10,7 @@
 <link href="https://seicing.com/css/故事.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#sidebar').load('https://seicing.com/js/list/essay.html');
-    })
-</script>
+<script type="text/javascript" src="https://seicing.com/js/essay.js"></script>
 </head>
 
 <body id='scroll-2'>
@@ -122,7 +118,8 @@
         </td>
         <td>无</td>
         <td style="text-align:left">
-            余吸收敌人的生命能量形成能量块储存在身边，最大存放7块能量块 <br> 每杀死1个敌人，余都会把对方剩余的生命能量榨取整合为1块能量块 <br> 每当有一个敌人被余打击造成破防状态时，敌人的能量会生成4块能量块 <br> 身上能量块为0时，余会尝试吸收大地的能量，花费5秒的时间生成1块能量块 <br> 能量块发射后可以造成
+            余吸收敌人的生命能量形成能量块储存在身边，最大存放7块能量块 <br> 每杀死1个敌人，余都会把对方剩余的生命能量榨取整合为1块能量块 <br> 每当有一个敌人被余打击造成破防状态时，敌人的能量会生成4块能量块
+            <br> 身上能量块为0时，余会尝试吸收大地的能量，花费5秒的时间生成1块能量块 <br> 能量块发射后可以造成
             <span style="color:red">2.5str的贯穿属性伤害</span>
 
             <br><br><b>掠食欲望</b>：缴械获得的能量块数+1，能量块存储上限+2，能量块为0时自动生成的充能时间-50%
@@ -132,7 +129,7 @@
         </td>
     </tr>
 
-    
+
     <tr>
 
         <td width="100"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/图标/贪狼之舞.png"></td>
@@ -142,7 +139,7 @@
         </td>
         <td>无</td>
         <td style="text-align:left">
-           使用跳跃取消技能硬直的时候，跳跃高度大幅度减少，加快重新回到地面恢复正常状态的速度
+            使用跳跃取消技能硬直的时候，跳跃高度大幅度减少，加快重新回到地面恢复正常状态的速度
         </td>
     </tr>
 
@@ -158,7 +155,8 @@
             <br> 随后获得被掠夺的物件的近战武器，使用余她自己的办法去使用它进行攻击，进入【武器模式】
             <br> 被掠夺来的近战武器拥有耐久度，每次造成一次伤害都会让耐久度-1，耐久度0时武器就会损坏进入【素手模式】
             <br>
-            <b>【武器模式】</b><br>龙牙：把手中的近战武器投掷出去，造成一次<span style="color:red">3.5str的地属性伤害</span>，并恢复到【素手模式】<br><br> 龙牙命中一名敌人后，在冷却时间恢复完毕之前，投掷的投枪会刺在敌人的身上，并且通过大地之力和余本体连接在一起
+            <b>【武器模式】</b><br>龙牙：把手中的近战武器投掷出去，造成一次<span style="color:red">3.5str的地属性伤害</span>，并恢复到【素手模式】<br><br>
+            龙牙命中一名敌人后，在冷却时间恢复完毕之前，投掷的投枪会刺在敌人的身上，并且通过大地之力和余本体连接在一起
             <br> 这时候再次输入指令键，余会把自身牵引到被命中的敌人身旁
 
 
@@ -238,8 +236,10 @@
             <br> 【报复螺旋】转动时尾巴也会攻击敌人，每一击造成额外的50%伤害
             <br> 【种族灭绝大屠杀】地母之化形发出毁灭之光，伤害值提高50%，并且延长攻击范围
             <br> 【废却之舞】获得的治疗量提升100%
-            <br>在始祖模式状态下，余的普通攻击可以快速地增加决战槽的累加值，而且掠夺成功可以一口气增加100决战槽 <br> 长按【凭神觉醒】指令键会发动终结技 <b>天狼独舞(Dance of Chono)</b> <br> 天狼独舞不断地消费剩下的决战槽进行快速飞翔攻击大范围内的敌人，每20决战槽就飞行一次（保底飞翔次数：5次）
-            <br> 每次飞翔造成<span style="color:red">2.5str的地属性伤害</span> <br> 在飞行结束后，余使用最终爪击攻击敌人后脱离始祖模式，造成<span style="color:red">10.0str的地属性伤害</span>，并且根据飞翔的次数增加这个伤害值，每1次飞翔增加10%伤害
+            <br>在始祖模式状态下，余的普通攻击可以快速地增加决战槽的累加值，而且掠夺成功可以一口气增加100决战槽 <br> 长按【凭神觉醒】指令键会发动终结技 <b>天狼独舞(Dance of Chono)</b>
+            <br> 天狼独舞不断地消费剩下的决战槽进行快速飞翔攻击大范围内的敌人，每20决战槽就飞行一次（保底飞翔次数：5次）
+            <br> 每次飞翔造成<span style="color:red">2.5str的地属性伤害</span> <br> 在飞行结束后，余使用最终爪击攻击敌人后脱离始祖模式，造成<span
+                style="color:red">10.0str的地属性伤害</span>，并且根据飞翔的次数增加这个伤害值，每1次飞翔增加10%伤害
             <br><br>暴击：这个技能无法暴击
 
         </td>
@@ -272,7 +272,8 @@
         </td>
         <td style="text-align:left">
             活性化自身的利爪处决敌人，假如敌人被废却之舞成功击杀了，废却之舞的冷却时间会被重置<br> 处决敌人，造成
-            <span style="color:red">2.0str的地属性伤害</span>，并且这个伤害敌人每减少1%的HP就会提升3%（领主和英雄无效），在处刑过程中余是无敌的<br> 破防状态下的敌人可以造成10倍伤害（领主和英雄效果只有2倍）
+            <span style="color:red">2.0str的地属性伤害</span>，并且这个伤害敌人每减少1%的HP就会提升3%（领主和英雄无效），在处刑过程中余是无敌的<br>
+            破防状态下的敌人可以造成10倍伤害（领主和英雄效果只有2倍）
             <br><br> 被活性化的利爪击杀的敌人会化为活性化粒子消失，余可以吸收这些活性化粒子进行恢复
             <br> 普通怪物和精锐怪物在80%HP以下被处决时，会分别生成5个和10个活性化粒子，余吸收粒子会恢复2%HP
             <br> 不论敌人是什么状态，只要被废却之舞击杀，残余的生命能量都会被余榨取生成额外的3块【素融偏和】能量块
@@ -332,5 +333,12 @@
     </div>
 </body>
 
+<script>
+    window.onload = function () {
+        var tipsp1 = getQueryVariable("nenbun")
+        var tipsp2 = tipsp1 + "button";
+        document.getElementById(tipsp2).click();
+    }
+</script>
 
 </html>
