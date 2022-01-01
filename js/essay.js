@@ -11,7 +11,8 @@ function getQueryVariable(variable) {
 
 
 $(document).ready(function () {
-    $('#sidebar').load('https://seicing.com/js/list/essay.html').load = function () {
+    $('#sidebar').load('https://seicing.com/js/list/essay.html'), function () {
+        alert("扑街啊");
         var tipsp1 = getQueryVariable("nenbun")
         console.log("tipsp1 OK")
         var tipsp2 = tipsp1 + "button"
