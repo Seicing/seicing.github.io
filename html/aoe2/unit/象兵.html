@@ -11,15 +11,14 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html');
+        $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("Vietnamese").style.opacity = "1";
+            document.getElementById("Burmese").style.opacity = "1";
+            document.getElementById("Khmer").style.opacity = "1";
+            document.getElementById("Malay").style.opacity = "1";
     })
-    window.onload = function () {
-        document.getElementById("techno").style.display = "block";
-        document.getElementById("Vietnamese").style.opacity = "1";
-        document.getElementById("Burmese").style.opacity = "1";
-        document.getElementById("Khmer").style.opacity = "1";
-        document.getElementById("Malay").style.opacity = "1";
-    }
+    })
 </script>
 <style>
     li {
