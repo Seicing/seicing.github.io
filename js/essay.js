@@ -11,7 +11,7 @@ function getQueryVariable(variable) {
 
 
 $(document).ready(function () {
-    $('#sidebar').load('https://seicing.com/js/list/essay.html').onload = function () {
+    $('#sidebar').load('https://seicing.com/js/list/essay.html').load = function () {
         var tipsp1 = getQueryVariable("nenbun")
         console.log("tipsp1 OK")
         var tipsp2 = tipsp1 + "button"
