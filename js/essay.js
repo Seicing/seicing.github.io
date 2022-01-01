@@ -12,22 +12,7 @@ function getQueryVariable(variable) {
 
 $(document).ready(function () {
     $('#sidebar').load('https://seicing.com/js/list/essay.html');
-    then = function () {
-        var tipsp1 = getQueryVariable("nenbun");
-        var tipsp2 = tipsp1 + "button";
-        var tipsp3 = tipsp1 + "div";
-        document.getElementById("hajimebutton").style.display = "block";
-        document.getElementById("hattenbutton").style.display = "block";
-        document.getElementById("tsuzukubutton").style.display = "block";
-        document.getElementById("haneibutton").style.display = "block";
-        document.getElementById(tipsp2).style.display = "none";
-        document.getElementById("hajimediv").style.display = "none";
-        document.getElementById("hattendiv").style.display = "none";
-        document.getElementById("tsuzukudiv").style.display = "none";
-        document.getElementById("haneidiv").style.display = "none";
-        document.getElementById(tipsp3).style.display = "block";
-    }
-
+    document.getElementById("essaybu").innerHTML = "<img src='https://seicing.com/res/dex.jpg' id='dex'><a href='https://seicing.com/html/index.html'><b>回到首页</b></a>";
 })
 
 function overstep(a, b) {
@@ -50,4 +35,6 @@ function overstep(a, b) {
 //    var tipsp2 = tipsp1 + "button";
 //    document.getElementById(tipsp2).click();
 //}
+
+
 
