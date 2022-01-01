@@ -12,7 +12,7 @@ function getQueryVariable(variable) {
 
 $(document).ready(function () {
     $('#sidebar').load('https://seicing.com/js/list/essay.html');
-    onload = function () {
+    then = function () {
         var tipsp1 = getQueryVariable("nenbun");
         var tipsp2 = tipsp1 + "button";
         var tipsp3 = tipsp1 + "div";
@@ -29,7 +29,6 @@ $(document).ready(function () {
     }
 
 })
-
 
 function overstep(a, b) {
     document.getElementById("hajimebutton").style.display = "block";
