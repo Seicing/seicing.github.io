@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    $('#sidebar').load('https://seicing.com/js/list/essay.html');
+    $('#sidebar').load('https://seicing.com/js/list/essay.html').onload = function () {
+        var tipsp = document.getElementById("nenbun");
+        var tipsp2 = tipsp + "button"
+        document.getElementById(tipsp2).click();
+    }
 })
 
 function overstep(a, b) {
