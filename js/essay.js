@@ -13,6 +13,11 @@ function getQueryVariable(variable) {
 $(document).ready(function () {
     $('#sidebar').load('https://seicing.com/js/list/essay.html');
     document.getElementById("essaybu").innerHTML = "<img src='https://seicing.com/res/dex.jpg' id='dex'><a href='https://seicing.com/html/index.html'><b>回到首页</b></a>";
+    document.getElementById("dex").onload = function () {
+        var tipsp1 = getQueryVariable("nenbun")
+        var tipsp2 = tipsp1 + "button";
+        document.getElementById(tipsp2).click();
+    }
 })
 
 function overstep(a, b) {
