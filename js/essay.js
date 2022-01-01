@@ -1,8 +1,23 @@
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) { return pair[1]; }
+    }
+    return (false);
+}
+
+
 $(document).ready(function () {
     $('#sidebar').load('https://seicing.com/js/list/essay.html').onload = function () {
-        var tipsp = document.getElementById("nenbun");
-        var tipsp2 = tipsp + "button"
+        var tipsp1 = getQueryVariable("nenbun")
+        console.log("tipsp1 OK")
+        var tipsp2 = tipsp1 + "button"
+        console.log("tipsp2 OK")
         document.getElementById(tipsp2).click();
+        console.log("click OK")
     }
 })
 
