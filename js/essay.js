@@ -10,15 +10,19 @@ function getQueryVariable(variable) {
 
 $(document).ready(function () {
     $('#sidebar').load('https://seicing.com/js/list/essay.html');
-})
-
-window.onload = tipsp()
-
-function tipsp() {
     var tipsp1 = getQueryVariable("nenbun")
     var tipsp2 = tipsp1 + "button";
-    document.getElementById(tipsp2).click();
-}
+    var tipsp3 = tipsp1 + "div";
+    overstep(tipsp2, tipsp3)
+})
+
+//window.onload = tipsp()
+
+//function tipsp() {
+//    var tipsp1 = getQueryVariable("nenbun")
+//    var tipsp2 = tipsp1 + "button";
+//    document.getElementById(tipsp2).click();
+//}
 
 function overstep(a, b) {
     document.getElementById("hajimebutton").style.display = "block";
