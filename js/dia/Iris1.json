@@ -208,5 +208,425 @@
         "face": "",
         "string": "伊拉修莱德宫觐见室",
         "special": "dia3"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "终于回来了啊，我的女儿",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "伊安哥哥呢！？",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "连父亲一句问候都没有，回来就伊安哥哥吗",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "倒也是，如果不是用他的名义，你根本就不可能回来",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "名义？",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "只有伊安的信鸟回来了",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "信鸟……？不可能，除非主人出现变故，信鸟不会离开主人",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "就是如此，这次不能再让你逃婚了",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "你要认识到自己作为伊拉修莱德公主的责任",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "……为什么可以把事情说得那么轻描淡写啊！",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "我一直就很奇怪了，这个从一开始就站在你旁边的年轻人是谁？",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "他……他……",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "他是在旅途中和我结婚的冒险家！",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "(原来如此，所以才叫我保持冷静)",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "岳父大人，我还没来得及做自我介绍",
+        "special": "dia"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "真是混账",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "索菲亚，我没有和这个年轻人相处过，所以不知道他有什么优点可以让你痴迷于他",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "但是你要记得你是伊拉修莱德的公主，你的使命是维系王族的关系，让伊拉修莱德继续繁荣下去",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "而不是和没有身份地位的冒险家结婚",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "卫兵！把这个年轻人压下大牢，皇家侍卫给我看好公主",
+        "special": "dia2"
+    },
+    {
+        "name": "阿齐兹王",
+        "face": "阿齐兹王",
+        "string": "年轻人，在索菲亚的联姻完结之前，你给我好好呆着吧，然后拿上你的补偿永远离开这个大陆",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "不要！爸爸！你不能这样！",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "……",
+        "special": "dia"
+    },
+    {
+        "name": "",
+        "face": "",
+        "string": "伊拉修莱德宫监狱",
+        "special": "dia3"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "于是就这样莫名其妙地坐大牢了",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "她是一开始就打算利用我作为脱身工具吗？看起来失败了呢",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "不过……凭借她的智慧，是不可能没想到这样的后果吧",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "难道说这次的失败也在她的考虑范围内，我作为工具人的使命还没结束吗",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "假设她跟我接触做的每一件事为了这次脱身，要说她给与我的契机……对了",
+        "special": "dia"
+    },
+    {
+        "name": "",
+        "face": "",
+        "string": "感知到监狱墙壁的寒冰气息",
+        "special": "dia3"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "注入她教会我的冰魔法就能看到暗道了",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "动作得快，被守卫发现逃跑了就麻烦了",
+        "special": "dia"
+    },
+    {
+        "name": "",
+        "face": "",
+        "string": "离开监狱，顺着伊丽丝的冰霜气息来到伊丽丝的房间下",
+        "special": "dia3"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "出来吧，伊丽丝",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "世清！",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "跳下来吧，我会接着你，一起离开这里",
+        "special": "dia"
+    },
+    {
+        "name": "",
+        "face": "",
+        "string": "伊丽丝跳了下来",
+        "special": "dia3"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "我一直坚信你会来救我的",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "就连我的性格也利用了吗？",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "……对不起",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "先逃出去再说",
+        "special": "dia"
+    },
+    {
+        "name": "",
+        "face": "",
+        "string": "顺着架桥逃出了伊拉修莱德宫",
+        "special": "dia3"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "逃出来了……",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "你是不是觉得我很虚伪",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "……",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "下次说清楚一点，我可以帮是一定会帮的",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "谢谢……",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "我讨厌我的爸爸",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "为了达成目的，可以不择手段利用所有可以利用的东西",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "可恨的是我同时也继承了他的性格",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "要和自己不喜欢的男人联姻……我宁愿死",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "每个人都有自己的难处，我可以理解",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "看起来，打算在这里呆几天的计划泡汤了",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "抱歉……实在是非常对不起",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "不要太自责，其实……",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "虽然只是演戏，但是你搂着我说那句话的时候……还是挺让人……振奋的",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "就当打平好了",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "你……你有这么不正经的吗？",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "不过可以看到你也有这样的一面，感觉你这个人真实了很多呢",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "怎么说呢，能有这样彼此深入认识的机会也不是坏事",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "不过下次要更坦诚一点了，如果我不够聪明的话我就要在大牢蹲个几个月了",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "嘻嘻，我保证没有下次啦",
+        "special": "dia2"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "接下来我要去找我那生死不明的哥哥",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "我知道，我会跟着你一起的",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "要去找夏修伦他们吗？虽然继续呆在这里很危险，但是约好和他们在酒馆见面",
+        "special": "dia"
+    },
+    {
+        "name": "世清",
+        "face": "世清2",
+        "string": "至少和他们说一声吧，就这样走掉感觉过意不去",
+        "special": "dia"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "嗯，我们走吧",
+        "special": "dia2"
     }
 ]
