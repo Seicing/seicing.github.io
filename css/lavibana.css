@@ -27,9 +27,7 @@
 
 #banaheader {
     font-size: 21px;
-    background-image: -webkit-linear-gradient(bottom, #EEC777  , #B5823C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #DACF88;
 }
 
 #banaheader2 {
