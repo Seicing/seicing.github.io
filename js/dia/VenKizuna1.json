@@ -302,7 +302,7 @@
     {
         "name": "文",
         "face": "文",
-        "string": "你能来看我，我又燃起活下去的动力了",
+        "string": "心病还需心药医，你就是最好的特效药",
         "special": "dia2"
     },
     {
@@ -350,7 +350,7 @@
     {
         "name": "文",
         "face": "文",
-        "string": "我在世清面前才会这样，你是他妻子，我不介意",
+        "string": "我在世清面前才会这样，你是他妻子，也就是自己人",
         "special": "dia2"
     },
     {
@@ -380,7 +380,7 @@
     {
         "name": "文",
         "face": "文",
-        "string": "男人可以回避一下吗？",
+        "string": "男人先回避一下可以吗？",
         "special": "dia2"
     },
     {
@@ -456,6 +456,18 @@
         "special": "dia1"
     },
     {
+        "name": "世清",
+        "face": "世清",
+        "string": "(不过看起来糊弄过去了……)",
+        "special": "dia1"
+    },
+    {
+        "name": "文",
+        "face": "文2",
+        "string": "很不错，这个造型很适合行动",
+        "special": "dia2"
+    },
+    {
         "name": "文",
         "face": "文2",
         "string": "世清",
@@ -488,7 +500,49 @@
     {
         "name": "世清",
         "face": "世清",
+        "string": "西景的教皇亲自下场……",
+        "special": "dia1"
+    },
+    {
+        "name": "文",
+        "face": "文2",
+        "string": "你不也是吗？不好好呆在宫里，天天亲力亲为",
+        "special": "dia2"
+    },
+    {
+        "name": "文",
+        "face": "文2",
+        "string": "我也想和你们体验那样的生活，毕竟我们也算是有共同的敌人",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清",
+        "string": "共同的敌人？",
+        "special": "dia1"
+    },
+    {
+        "name": "文",
+        "face": "文2",
+        "string": "结社也给我们造成了很大的困扰，所以不需要担心麻烦到我",
+        "special": "dia2"
+    },
+    {
+        "name": "文",
+        "face": "文2",
+        "string": "一起努力吧",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清",
         "string": "嗯，拜托你了",
         "special": "dia1"
+    },
+    {
+        "name": "余",
+        "face": "余",
+        "string": "……",
+        "special": "dia2"
     }
 ]
