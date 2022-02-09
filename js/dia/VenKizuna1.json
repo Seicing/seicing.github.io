@@ -146,7 +146,19 @@
     {
         "name": "世清",
         "face": "世清",
-        "string": "别多想，准备好就走吧",
+        "string": "你不要想太多了，我们准备好就走",
+        "special": "dia1"
+    },
+    {
+        "name": "余",
+        "face": "余",
+        "string": "嗯？我也要去吗？",
+        "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清",
+        "string": "(饶了我吧……)",
         "special": "dia1"
     },
     {
