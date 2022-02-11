@@ -170,14 +170,26 @@
     {
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "在配置下一副眼镜之前，我来为你引路",
+        "string": "看不见的话，需要我引路吗？",
         "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清",
+        "string": "呃……",
+        "special": "dia1"
     },
     {
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "还是说……你要继续下去？",
+        "string": "怎么了？",
         "special": "dia2"
+    },
+    {
+        "name": "世清",
+        "face": "世清",
+        "string": "我在想",
+        "special": "dia1"
     },
     {
         "name": "世清",
@@ -190,5 +202,11 @@
         "face": "世清",
         "string": "至少就现在来说……",
         "special": "dia1"
+    },
+    {
+        "name": "伊丽丝",
+        "face": "伊丽丝2",
+        "string": "嘻嘻",
+        "special": "dia2"
     }
 ]
