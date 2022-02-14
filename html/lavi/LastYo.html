@@ -37,7 +37,7 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.branch">
+        <div :class="diaindex.branch">
             <div :id="diaindex.special" :style="diaindex.specialstyle">
                 <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
                     <tr v-html="diaindex.string1st"> </tr>
@@ -121,26 +121,24 @@
                     }
                 })
         }
-    })
-
-    $(document).ready(function () {
-        document.getElementById("branch0").style.display = "inherit";
-        document.getElementById("branch1").style.display = "none";
-        document.getElementById("branch2").style.display = "inherit";
+    }).ready(function () {
+        document.getElementByClass("branch0").style.display = "inherit";
+        document.getElementByClass("branch1").style.display = "none";
+        document.getElementByClass("branch2").style.display = "inherit";
     })
 
     function Switchbranch1() {
-        document.getElementById("branch0").style.display = "inherit";
-        document.getElementById("branch1").style.display = "inherit";
-        document.getElementById("branch2").style.display = "none";
+        document.getElementByClass("branch0").style.display = "inherit";
+        document.getElementByClass("branch1").style.display = "inherit";
+        document.getElementByClass("branch2").style.display = "none";
         document.getElementById("buttonbranch1").style.color = "lime";
         document.getElementById("buttonbranch2").style.color = "white";
     }
 
     function Switchbranch2() {
-        document.getElementById("branch0").style.display = "inherit";
-        document.getElementById("branch1").style.display = "none";
-        document.getElementById("branch2").style.display = "inherit";
+        document.getElementByClass("branch0").style.display = "inherit";
+        document.getElementByClass("branch1").style.display = "none";
+        document.getElementByClass("branch2").style.display = "inherit";
         document.getElementById("buttonbranch1").style.color = "white";
         document.getElementById("buttonbranch2").style.color = "lime";
     }
