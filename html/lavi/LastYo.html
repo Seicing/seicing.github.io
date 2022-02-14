@@ -37,7 +37,7 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :class="diaindex.branch">
+        <div :class="diaindex.branch" :style="diaindex.branchstyle">
             <div :id="diaindex.special" :style="diaindex.specialstyle">
                 <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
                     <tr v-html="diaindex.string1st"> </tr>
@@ -118,21 +118,15 @@
                         } else {
                             json[i].specialstyle = 'position:relative;left:20%;';
                         }
+
+                        if (json[i].branch = 'branch2') {
+                            json[i].branchstyle = 'display:none';
+                        }
+
                     }
                 })
         }
     })
-
-
-    window.onload = tipsp()
-
-    function tipsp() {
-        var x4 = document.getElementsByClassName("buttonbranch1")
-        var i4;
-        for (i4 = 0; i4 < x4.length; i4++) {
-            x4[i4].click;
-        }
-    }
 
 
     function Switchbranch1() {
