@@ -37,7 +37,7 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.branch">
+        <div :id="diaindex.branch" :style="diaindex.branchstyle">
             <div :id="diaindex.special" :style="diaindex.specialstyle">
                 <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
                     <tr v-html="diaindex.string1st"> </tr>
@@ -93,6 +93,10 @@
                             json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
                         } else {
                             json[i].string1st = '<td id="banaheader2"></td>';
+                        }
+
+                        if (json[i].branch = 'branch1') {
+                            json[i].branchstyle = 'display:block';
                         }
 
                         if (json[i].face != '') {
