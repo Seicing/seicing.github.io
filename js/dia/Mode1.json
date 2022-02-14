@@ -10,7 +10,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "分支对话选择<br><a class='buttonbranch1' onclick='Switchbranch(1)' style='color:#DACF88'>伊丽丝</a> <a class='buttonbranch2' onclick='Switchbranch(2)' style='color:white'>洛雨希</a> <a class='buttonbranch3' onclick='Switchbranch(3)' style='color:white'>夏修伦</a> <a class='buttonbranch4' onclick='Switchbranch(4)' style='color:white'>羽三</a> <a class='buttonbranch5' onclick='Switchbranch(5)' style='color:white'>文</a>",
+        "string": "分支对话选择<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:#DACF88'>伊丽丝</a> <a class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>洛雨希</a> <a class='buttonbranch3' onclick='Switchbranch3()' style='color:white'>夏修伦</a> <a class='buttonbranch4' onclick='Switchbranch4()' style='color:white'>羽三</a> <a class='buttonbranch5' onclick='Switchbranch5()' style='color:white'>文</a>",
         "special": "dia3"
     },
     {
