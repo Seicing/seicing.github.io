@@ -37,7 +37,7 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.branch" :style="diaindex.branchstyle">
+        <div :class="diaindex.branch">
             <div :id="diaindex.special" :style="diaindex.specialstyle">
                 <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
                     <tr v-html="diaindex.string1st"> </tr>
@@ -95,10 +95,6 @@
                             json[i].string1st = '<td id="banaheader2"></td>';
                         }
 
-                        if (json[i].branch = 'branch1') {
-                            json[i].branchstyle = 'display:block';
-                        }
-
                         if (json[i].face != '') {
                             json[i].facein = 'background:url(https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/head/' + json[i]['face'] + '.png) center right no-repeat;border-radius:15px 15px 15px 15px;';
                         } else {
@@ -129,19 +125,19 @@
 
 
     function Switchbranch1() {
-        document.getElementById("branch0").style.display = "block";
-        document.getElementById("branch1").style.display = "block";
-        document.getElementById("branch2").style.display = "none";
-        document.getElementById("buttonbranch1").style.color = "lime";
-        document.getElementById("buttonbranch2").style.color = "white";
+        document.getElementsByClassName("branch0").style.display = "block";
+        document.getElementsByClassName("branch1").style.display = "block";
+        document.getElementsByClassName("branch2").style.display = "none";
+        document.getElementsByClassName("buttonbranch1").style.color = "lime";
+        document.getElementsByClassName("buttonbranch2").style.color = "white";
     }
 
     function Switchbranch2() {
-        document.getElementById("branch0").style.display = "block";
-        document.getElementById("branch1").style.display = "none";
-        document.getElementById("branch2").style.display = "block";
-        document.getElementById("buttonbranch1").style.color = "white";
-        document.getElementById("buttonbranch2").style.color = "lime";
+        document.getElementsByClassName("branch0").style.display = "block";
+        document.getElementsByClassName("branch1").style.display = "none";
+        document.getElementsByClassName("branch2").style.display = "block";
+        document.getElementsByClassName("buttonbranch1").style.color = "white";
+        document.getElementsByClassName("buttonbranch2").style.color = "lime";
     }
 </script>
 
