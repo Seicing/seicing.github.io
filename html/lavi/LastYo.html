@@ -37,11 +37,13 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.special" :style="diaindex.specialstyle">
-            <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
-                <tr v-html="diaindex.string1st"> </tr>
-                <tr v-html="diaindex.string2nd"> </tr>
-            </table>
+        <div :id="diaindex.branch">
+            <div :id="diaindex.special" :style="diaindex.specialstyle">
+                <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
+                    <tr v-html="diaindex.string1st"> </tr>
+                    <tr v-html="diaindex.string2nd"> </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -71,6 +73,28 @@
 </body>
 
 <script type="text/javascript">
+    $(document).ready(function () {
+        document.getElementById("branch0").style.display = "inherit";
+        document.getElementById("branch1").style.opacity = "none";
+        document.getElementById("branch2").style.display = "inherit";
+    })
+
+    function Switchbranch1() {
+        document.getElementById("branch0").style.display = "inherit";
+        document.getElementById("branch1").style.opacity = "inherit";
+        document.getElementById("branch2").style.display = "none";
+        document.getElementById("buttonbranch1").style.color = "blue";
+        document.getElementById("buttonbranch2").style.display = "white";
+    }
+
+    function Switchbranch2() {
+        document.getElementById("branch0").style.display = "inherit";
+        document.getElementById("branch1").style.opacity = "none";
+        document.getElementById("branch2").style.display = "inherit";
+        document.getElementById("buttonbranch1").style.color = "white";
+        document.getElementById("buttonbranch2").style.display = "blue";
+    }
+
     var imgAll = [];
     const vm = new Vue({
         el: '#app',
@@ -84,6 +108,7 @@
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
                         json[i].special = json[i]['special'];
+                        json[i].branch = json[i]['branch'];
 
                         if (json[i].name != '') {
                             json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
