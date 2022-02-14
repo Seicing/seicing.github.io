@@ -37,7 +37,7 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :class="diaindex.branch" :style="diaindex.branchstyle">
+        <div :class="diaindex.branch1st" :style="diaindex.branchstyle">
             <div :id="diaindex.special" :style="diaindex.specialstyle">
                 <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
                     <tr v-html="diaindex.string1st"> </tr>
@@ -87,7 +87,7 @@
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
                         json[i].special = json[i]['special'];
-                        json[i].branch = json[i]['branch'];
+                        json[i].branch1st = json[i]['branch'];
 
                         if (json[i].name != '') {
                             json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
