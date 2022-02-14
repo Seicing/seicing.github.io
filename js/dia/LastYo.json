@@ -491,6 +491,13 @@
     },
     {
         "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "切换条件对话<br><a id='buttonbranch1' onclick='Switchbranch1()' style='color:lime'>分支1</a>   <a  id='buttonbranch2' onclick='Switchbranch2()' style='color:white'>分支2</a>",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "世清",
         "string": "不可原谅……",
