@@ -458,7 +458,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "切换条件对话<br><a id='buttonbranch1' onclick='Switchbranch1()' style='color:lime'>分支1</a>   <a  id='buttonbranch2' onclick='Switchbranch1()' style='color:white'>分支2</a>",
+        "string": "切换条件对话<br><a id='buttonbranch1' onclick='Switchbranch1()' style='color:lime'>分支1</a>   <a  id='buttonbranch2' onclick='Switchbranch2()' style='color:white'>分支2</a>",
         "special": "dia3"
     },
     {

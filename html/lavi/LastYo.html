@@ -75,24 +75,24 @@
 <script type="text/javascript">
     $(document).ready(function () {
         document.getElementById("branch0").style.display = "inherit";
-        document.getElementById("branch1").style.opacity = "none";
+        document.getElementById("branch1").style.display = "none";
         document.getElementById("branch2").style.display = "inherit";
     })
 
     function Switchbranch1() {
         document.getElementById("branch0").style.display = "inherit";
-        document.getElementById("branch1").style.opacity = "inherit";
+        document.getElementById("branch1").style.display = "inherit";
         document.getElementById("branch2").style.display = "none";
-        document.getElementById("buttonbranch1").style.color = "blue";
-        document.getElementById("buttonbranch2").style.display = "white";
+        document.getElementById("buttonbranch1").style.color = "lime";
+        document.getElementById("buttonbranch2").style.color = "white";
     }
 
     function Switchbranch2() {
         document.getElementById("branch0").style.display = "inherit";
-        document.getElementById("branch1").style.opacity = "none";
+        document.getElementById("branch1").style.display = "none";
         document.getElementById("branch2").style.display = "inherit";
         document.getElementById("buttonbranch1").style.color = "white";
-        document.getElementById("buttonbranch2").style.display = "blue";
+        document.getElementById("buttonbranch2").style.color = "lime";
     }
 
     var imgAll = [];
