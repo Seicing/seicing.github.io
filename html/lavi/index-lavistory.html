@@ -115,11 +115,11 @@
                             json[i].specialstyle = 'position:relative;left:20%;';
                         }
 
-                        if (json[i].branch == 'branch0' || 'branch1') {
-                            json[i].branchstyle = '';
+                        if (json[i].branch != 'branch0' || 'branch1') {
+                            json[i].branchstyle = 'display: none';
                         }
                         else {
-                            json[i].branchstyle = 'display: none';
+                            json[i].branchstyle = '';
                         }
 
 
@@ -130,275 +130,283 @@
     })
 
 
-    function Switchbranch1() {
-        var x = document.getElementsByClassName("branch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
-        }
-        var x = document.getElementsByClassName("branch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        var x = document.getElementsByClassName("branch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        var x = document.getElementsByClassName("branch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        var x = document.getElementsByClassName("branch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        var x = document.getElementsByClassName("buttonbranch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "lime";
-        }
-        var x = document.getElementsByClassName("buttonbranch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
-        }
-        var x = document.getElementsByClassName("buttonbranch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
-        }
-        var x = document.getElementsByClassName("buttonbranch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
-        }
-        var x = document.getElementsByClassName("buttonbranch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
-        }
 
+
+
+
+
+    function Switchbranch1() {
+        var x1 = document.getElementsByClassName("branch1")
+        var i1;
+        for (i1 = 0; i1 < x1.length; i1++) {
+            x1[i1].style.display = "block";
+        }
+        var x2 = document.getElementsByClassName("branch2")
+        var i2;
+        for (i2 = 0; i2 < x2.length; i2++) {
+            x2[i2].style.display = "none";
+        }
+        var x3 = document.getElementsByClassName("branch3")
+        var i3;
+        for (i3 = 0; i3 < x3.length; i3++) {
+            x3[i3].style.display = "none";
+        }
+        var x4 = document.getElementsByClassName("branch4")
+        var i4;
+        for (i4 = 0; i4 < x4.length; i4++) {
+            x4[i4].style.display = "none";
+        }
+        var x5 = document.getElementsByClassName("branch5")
+        var i5;
+        for (i5 = 0; i5 < x5.length; i5++) {
+            x5[i5].style.display = "none";
+        }
+        var xa1 = document.getElementsByClassName("buttonbranch1")
+        var ia1;
+        for (ia1 = 0; ia1 < xa1.length; ia1++) {
+            xa1[ia1].style.color = "lime";
+        }
+        var xa2 = document.getElementsByClassName("buttonbranch2")
+        var ia2;
+        for (ia2 = 0; ia2 < xa2.length; ia2++) {
+            xa2[ia2].style.color = "white";
+        }
+        var xa3 = document.getElementsByClassName("buttonbranch3")
+        var ia3;
+        for (ia3 = 0; ia3 < xa3.length; ia3++) {
+            xa3[ia3].style.color = "white";
+        }
+        var xa4 = document.getElementsByClassName("buttonbranch4")
+        var ia4;
+        for (ia4 = 0; ia4 < xa4.length; ia4++) {
+            xa4[ia4].style.color = "white";
+        }
+        var xa5 = document.getElementsByClassName("buttonbranch5")
+        var ia5;
+        for (ia5 = 0; ia5 < xa5.length; ia5++) {
+            xa5[ia5].style.color = "white";
+        }
     }
+
 
     function Switchbranch2() {
-        var x = document.getElementsByClassName("branch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x1 = document.getElementsByClassName("branch1")
+        var i1;
+        for (i1 = 0; i1 < x1.length; i1++) {
+            x1[i1].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
+        var x2 = document.getElementsByClassName("branch2")
+        var i2;
+        for (i2 = 0; i2 < x2.length; i2++) {
+            x2[i2].style.display = "block";
         }
-        var x = document.getElementsByClassName("branch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x3 = document.getElementsByClassName("branch3")
+        var i3;
+        for (i3 = 0; i3 < x3.length; i3++) {
+            x3[i3].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x4 = document.getElementsByClassName("branch4")
+        var i4;
+        for (i4 = 0; i4 < x4.length; i4++) {
+            x4[i4].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x5 = document.getElementsByClassName("branch5")
+        var i5;
+        for (i5 = 0; i5 < x5.length; i5++) {
+            x5[i5].style.display = "none";
         }
-        var x = document.getElementsByClassName("buttonbranch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa1 = document.getElementsByClassName("buttonbranch1")
+        var ia1;
+        for (ia1 = 0; ia1 < xa1.length; ia1++) {
+            xa1[ia1].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "lime";
+        var xa2 = document.getElementsByClassName("buttonbranch2")
+        var ia2;
+        for (ia2 = 0; ia2 < xa2.length; ia2++) {
+            xa2[ia2].style.color = "lime";
         }
-        var x = document.getElementsByClassName("buttonbranch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa3 = document.getElementsByClassName("buttonbranch3")
+        var ia3;
+        for (ia3 = 0; ia3 < xa3.length; ia3++) {
+            xa3[ia3].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa4 = document.getElementsByClassName("buttonbranch4")
+        var ia4;
+        for (ia4 = 0; ia4 < xa4.length; ia4++) {
+            xa4[ia4].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa5 = document.getElementsByClassName("buttonbranch5")
+        var ia5;
+        for (ia5 = 0; ia5 < xa5.length; ia5++) {
+            xa5[ia5].style.color = "white";
         }
-
     }
-
 
 
     function Switchbranch3() {
-        var x = document.getElementsByClassName("branch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x1 = document.getElementsByClassName("branch1")
+        var i1;
+        for (i1 = 0; i1 < x1.length; i1++) {
+            x1[i1].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x2 = document.getElementsByClassName("branch2")
+        var i2;
+        for (i2 = 0; i2 < x2.length; i2++) {
+            x2[i2].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
+        var x3 = document.getElementsByClassName("branch3")
+        var i3;
+        for (i3 = 0; i3 < x3.length; i3++) {
+            x3[i3].style.display = "block";
         }
-        var x = document.getElementsByClassName("branch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x4 = document.getElementsByClassName("branch4")
+        var i4;
+        for (i4 = 0; i4 < x4.length; i4++) {
+            x4[i4].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x5 = document.getElementsByClassName("branch5")
+        var i5;
+        for (i5 = 0; i5 < x5.length; i5++) {
+            x5[i5].style.display = "none";
         }
-        var x = document.getElementsByClassName("buttonbranch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa1 = document.getElementsByClassName("buttonbranch1")
+        var ia1;
+        for (ia1 = 0; ia1 < xa1.length; ia1++) {
+            xa1[ia1].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa2 = document.getElementsByClassName("buttonbranch2")
+        var ia2;
+        for (ia2 = 0; ia2 < xa2.length; ia2++) {
+            xa2[ia2].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "lime";
+        var xa3 = document.getElementsByClassName("buttonbranch3")
+        var ia3;
+        for (ia3 = 0; ia3 < xa3.length; ia3++) {
+            xa3[ia3].style.color = "lime";
         }
-        var x = document.getElementsByClassName("buttonbranch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa4 = document.getElementsByClassName("buttonbranch4")
+        var ia4;
+        for (ia4 = 0; ia4 < xa4.length; ia4++) {
+            xa4[ia4].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa5 = document.getElementsByClassName("buttonbranch5")
+        var ia5;
+        for (ia5 = 0; ia5 < xa5.length; ia5++) {
+            xa5[ia5].style.color = "white";
         }
-
     }
+
+
     function Switchbranch4() {
-        var x = document.getElementsByClassName("branch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x1 = document.getElementsByClassName("branch1")
+        var i1;
+        for (i1 = 0; i1 < x1.length; i1++) {
+            x1[i1].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x2 = document.getElementsByClassName("branch2")
+        var i2;
+        for (i2 = 0; i2 < x2.length; i2++) {
+            x2[i2].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x3 = document.getElementsByClassName("branch3")
+        var i3;
+        for (i3 = 0; i3 < x3.length; i3++) {
+            x3[i3].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
+        var x4 = document.getElementsByClassName("branch4")
+        var i4;
+        for (i4 = 0; i4 < x4.length; i4++) {
+            x4[i4].style.display = "block";
         }
-        var x = document.getElementsByClassName("branch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x5 = document.getElementsByClassName("branch5")
+        var i5;
+        for (i5 = 0; i5 < x5.length; i5++) {
+            x5[i5].style.display = "none";
         }
-        var x = document.getElementsByClassName("buttonbranch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa1 = document.getElementsByClassName("buttonbranch1")
+        var ia1;
+        for (ia1 = 0; ia1 < xa1.length; ia1++) {
+            xa1[ia1].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa2 = document.getElementsByClassName("buttonbranch2")
+        var ia2;
+        for (ia2 = 0; ia2 < xa2.length; ia2++) {
+            xa2[ia2].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa3 = document.getElementsByClassName("buttonbranch3")
+        var ia3;
+        for (ia3 = 0; ia3 < xa3.length; ia3++) {
+            xa3[ia3].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "lime";
+        var xa4 = document.getElementsByClassName("buttonbranch4")
+        var ia4;
+        for (ia4 = 0; ia4 < xa4.length; ia4++) {
+            xa4[ia4].style.color = "lime";
         }
-        var x = document.getElementsByClassName("buttonbranch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa5 = document.getElementsByClassName("buttonbranch5")
+        var ia5;
+        for (ia5 = 0; ia5 < xa5.length; ia5++) {
+            xa5[ia5].style.color = "white";
         }
-
     }
+
+
     function Switchbranch5() {
-        var x = document.getElementsByClassName("branch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x1 = document.getElementsByClassName("branch1")
+        var i1;
+        for (i1 = 0; i1 < x1.length; i1++) {
+            x1[i1].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x2 = document.getElementsByClassName("branch2")
+        var i2;
+        for (i2 = 0; i2 < x2.length; i2++) {
+            x2[i2].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x3 = document.getElementsByClassName("branch3")
+        var i3;
+        for (i3 = 0; i3 < x3.length; i3++) {
+            x3[i3].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var x4 = document.getElementsByClassName("branch4")
+        var i4;
+        for (i4 = 0; i4 < x4.length; i4++) {
+            x4[i4].style.display = "none";
         }
-        var x = document.getElementsByClassName("branch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
+        var x5 = document.getElementsByClassName("branch5")
+        var i5;
+        for (i5 = 0; i5 < x5.length; i5++) {
+            x5[i5].style.display = "block";
         }
-        var x = document.getElementsByClassName("buttonbranch1")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa1 = document.getElementsByClassName("buttonbranch1")
+        var ia1;
+        for (ia1 = 0; ia1 < xa1.length; ia1++) {
+            xa1[ia1].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch2")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa2 = document.getElementsByClassName("buttonbranch2")
+        var ia2;
+        for (ia2 = 0; ia2 < xa2.length; ia2++) {
+            xa2[ia2].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch3")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa3 = document.getElementsByClassName("buttonbranch3")
+        var ia3;
+        for (ia3 = 0; ia3 < xa3.length; ia3++) {
+            xa3[ia3].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch4")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "white";
+        var xa4 = document.getElementsByClassName("buttonbranch4")
+        var ia4;
+        for (ia4 = 0; ia4 < xa4.length; ia4++) {
+            xa4[ia4].style.color = "white";
         }
-        var x = document.getElementsByClassName("buttonbranch5")
-        var i;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.color = "lime";
+        var xa5 = document.getElementsByClassName("buttonbranch5")
+        var ia5;
+        for (ia5 = 0; ia5 < xa5.length; ia5++) {
+            xa5[ia5].style.color = "lime";
         }
-
     }
+
+
+
+
 </script>
 
 </html>
