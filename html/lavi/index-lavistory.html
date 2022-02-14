@@ -119,22 +119,9 @@
 
 
 
-                        if (json[i].branch == 'branch0') {
+                        if (json[i].branch == 'branch0' || json[i].branch == 'branch1') {
                             json[i].branchstyle = '';
-                        }
-                        if (json[i].branch == 'branch1') {
-                            json[i].branchstyle = '';
-                        }
-                        if (json[i].branch == 'branch2') {
-                            json[i].branchstyle = 'display: none';
-                        }
-                        if (json[i].branch == 'branch3') {
-                            json[i].branchstyle = 'display: none';
-                        }
-                        if (json[i].branch == 'branch4') {
-                            json[i].branchstyle = 'display: none';
-                        }
-                        if (json[i].branch == 'branch5') {
+                        } else {
                             json[i].branchstyle = 'display: none';
                         }
 

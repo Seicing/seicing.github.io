@@ -120,12 +120,12 @@
                         }
 
 
-                        if (json[i].branch == 'branch2') {
+                        if (json[i].branch == 'branch0' || json[i].branch == 'branch1') {
+                            json[i].branchstyle = '';
+                        } else {
                             json[i].branchstyle = 'display: none';
                         }
-                        else {
-                            json[i].branchstyle = '';
-                        }
+
 
                     }
                 })
