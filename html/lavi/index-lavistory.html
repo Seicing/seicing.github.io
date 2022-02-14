@@ -117,6 +117,12 @@
                             json[i].specialstyle = 'position:relative;left:20%;';
                         }
 
+                        if (json[i].branch == 'branch0') {
+                            json[i].branchstyle = '';
+                        }
+                        if (json[i].branch == 'branch1') {
+                            json[i].branchstyle = '';
+                        }
                         if (json[i].branch == 'branch2') {
                             json[i].branchstyle = 'display: none';
                         }
@@ -129,9 +135,7 @@
                         if (json[i].branch == 'branch5') {
                             json[i].branchstyle = 'display: none';
                         }
-                        else {
-                            json[i].branchstyle = '';
-                        }
+
 
 
                     }
