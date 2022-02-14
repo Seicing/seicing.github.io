@@ -37,14 +37,17 @@
 
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.special" :style="diaindex.specialstyle">
-            <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
-                <tr v-html="diaindex.string1st"> </tr>
-                <tr v-html="diaindex.string2nd"> </tr>
-            </table>
+        <div :class="diaindex.branch1st" :style="diaindex.branchstyle">
+            <div :id="diaindex.special" :style="diaindex.specialstyle">
+                <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
+                    <tr v-html="diaindex.string1st"> </tr>
+                    <tr v-html="diaindex.string2nd"> </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
+
 
                         </div>
                         <div class="izl-rmenu">

@@ -119,10 +119,12 @@
                             json[i].specialstyle = 'position:relative;left:20%;';
                         }
 
-                        if (json[i].branch == 'branch2') {
-                            json[i].branchstyle = 'display:none';
-                        } else {
+
+                        if (json[i].branch == 'branch0' || 'branch1') {
                             json[i].branchstyle = '';
+                        }
+                        else {
+                            json[i].branchstyle = 'display: none';
                         }
 
                     }

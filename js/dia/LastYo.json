@@ -458,7 +458,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "切换条件对话<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:lime'>分支1</a>   <a  class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>分支2</a>",
+        "string": "切换条件对话<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:lime'>真结局</a>   <a  class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>千年战争</a>",
         "special": "dia3"
     },
     {
@@ -488,13 +488,6 @@
         "face": "世清",
         "string": "竟然还对余出手了……",
         "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "",
-        "face": "",
-        "string": "切换条件对话<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:lime'>分支1</a>   <a  class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>分支2</a>",
-        "special": "dia3"
     },
     {
         "branch": "branch0",
