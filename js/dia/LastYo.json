@@ -353,7 +353,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "你说什么？",
+        "string": "你要背叛我吗？世行",
         "special": "dia1"
     },
     {
@@ -374,28 +374,28 @@
         "branch": "branch0",
         "name": "世行",
         "face": "世行",
-        "string": "我这几年来，一直都兢兢业业为了帝国",
+        "string": "我比你对这个国家投入了更多的精力",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "世行",
-        "string": "但是，愚昧的人们把一切都当成你的功劳，你拥有了功绩、爱情和权力",
+        "string": "可是，世人只看到了你，把一切都归功于你",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "世行",
-        "string": "而我？一辈子只会是你的影子",
+        "string": "我就是你的影子",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "你这么多年来都在伪装着自己吗？",
+        "string": "你从一开始遇到我……就打算取代我吧",
         "special": "dia1"
     },
     {
@@ -409,22 +409,22 @@
         "branch": "branch0",
         "name": "世行",
         "face": "世行",
-        "string": "我比你更加值得拥有这个国家",
+        "string": "我到底哪里不如你，我无论什么都可以做得比你更好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "世行",
+        "string": "我才是最适合成为西景的皇帝的人，我会用实际行动来证明这一切",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "所以你就这样轻易地出卖了自己的国家？",
+        "string": "口口声声说自己比我更好，所以最后那么轻易地出卖了自己的国家啊",
         "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "世行",
-        "string": "什么？",
-        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -437,7 +437,7 @@
         "branch": "branch0",
         "name": "世行",
         "face": "世行",
-        "string": "你就是在什么方面都聪明得让我恶心",
+        "string": "你就是在什么方面都聪明得让我恶心，但是你要搞清楚一点",
         "special": "dia2"
     },
     {
@@ -451,7 +451,7 @@
         "branch": "branch0",
         "name": "世行",
         "face": "世行",
-        "string": "你会在这场战争中死去，而我将会继承你的大业勇敢地守护这个国家",
+        "string": "然后，你会在这场战争中死去，而我将会继承你的大业勇敢地守护这个国家",
         "special": "dia2"
     },
     {
@@ -465,21 +465,28 @@
         "branch": "branch1",
         "name": "世行",
         "face": "世行",
-        "string": "那个白痴皇后自己跑了出来刚刚好把你引到这里来了，免得我实行绑架计划呢",
+        "string": "我还在想办法把你引到这里来呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch1",
+        "name": "世行",
+        "face": "世行",
+        "string": "但是天都在帮我，那个白痴皇后自己跑了出来，省去了我不少麻烦",
         "special": "dia2"
     },
     {
         "branch": "branch2",
         "name": "世行",
         "face": "世行",
-        "string": "为了达成这个目的，所以要委屈一下你那个亲爱的皇后了",
+        "string": "你还真爱你那个白痴皇后啊，把她绑架过来让你马不停蹄地跑来这里了",
         "special": "dia2"
     },
     {
         "branch": "branch1",
         "name": "世清",
         "face": "世清",
-        "string": "你竟然还企图绑架余来引诱我陷入圈套中",
+        "string": "可恶……",
         "special": "dia1"
     },
     {
@@ -514,7 +521,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "什么？那到底是……",
+        "string": "那东西是……！",
         "special": "dia1"
     },
     {
@@ -535,28 +542,28 @@
         "branch": "branch0",
         "name": "世行",
         "face": "世行2",
-        "string": "<span id='红'>在歼灭结社残党的战争中，我回收了所有可以利用的东西</span>",
+        "string": "<span id='红'>那是歼灭结社残党的战争中的意外收获呢 </span>",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "世行2",
-        "string": "<span id='红'>最后我成为了超越一切的人……</span>",
+        "string": "<span id='红'>为了超越你驱动下的地狱训练，配合神的权能，最后让我成为了超越一切的人</span>",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "世行2",
-        "string": "<span id='红'>我只是和你一样用相同的办法成为皇帝，现在轮到我的时代了</span>",
+        "string": "<span id='红'>怎么样，你还是第一次感受到“完全无法击败对方”的无力感吧，你这个被愚蠢的祖先眷顾的白痴</span>",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "世行2",
-        "string": "<span id='红'>永别了，我亲爱的哥哥啊！</span>",
+        "string": "<span id='红'>可惜，这就是最后一次了，永别了</span>",
         "special": "dia2"
     },
     {
