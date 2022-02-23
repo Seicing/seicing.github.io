@@ -79,14 +79,14 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "余",
+        "face": "余奸笑",
         "string": "嗯？在看什么，别人寄来的情书吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "世清",
+        "face": "世清闭眼",
         "string": "不知道说你喜欢自虐好还是幽默好",
         "special": "dia1"
     },
@@ -108,7 +108,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "余",
-        "string": "交情很深呢，有空的话就去聚一下吧",
+        "string": "看起来交情很深呢，有空的话就去聚一下吧",
         "special": "dia2"
     },
     {
@@ -128,7 +128,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "余",
+        "face": "余不悦",
         "string": "你到底干什么了……",
         "special": "dia2"
     },
@@ -156,7 +156,7 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2惊讶",
         "string": "啊……？",
         "special": "dia2"
     },
@@ -170,7 +170,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "世清",
+        "face": "世清惊讶",
         "string": "伊丽？",
         "special": "dia1"
     },
@@ -198,7 +198,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "余",
+        "face": "余尴尬",
         "string": "这个就是……",
         "special": "dia2"
     },
@@ -213,14 +213,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "我的名字是伊丽丝·索菲亚·伊拉修莱德",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "伊丽丝2",
-        "string": "我就是之前寄信给世清的人",
+        "string": "我的名字是伊丽丝·索菲亚·伊拉修莱德，伊拉修莱德王国的公主，之前和世清一起旅行过",
         "special": "dia2"
     },
     {
@@ -233,16 +226,23 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "余",
+        "face": "余奸笑",
         "string": "没想到信里提到的朋友会是一个这么年轻漂亮的小姐啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2奸笑",
         "string": "阁下才是，你比我想象中还要漂亮呢",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "世清冷汗",
+        "string": "(这两人在干什么啊)",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -261,7 +261,7 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "没事……我已经放下了",
         "special": "dia2"
     },
@@ -282,42 +282,42 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "哥哥死后，我把哥哥的残血带回了家乡安葬",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "……父亲看到哥哥，把自己关起来了好几天……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "某种意义上因为共同的哀伤，我们和解了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "打那之后，父亲跟我许下了一个承诺",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "承诺给我一段时间进行历练，直到期限到来对我进行考验",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "在这之前，不会迫胁我去联姻，如果我能证明拥有王的气量，我就直接继承王国而不是继续外嫁",
         "special": "dia2"
     },
@@ -401,14 +401,14 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "说实话，我自己一个人……虽然自由，但是我看不到未来的方向",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "伊丽丝2",
+        "face": "伊丽丝2不悦",
         "string": "你不会嫌弃我吧",
         "special": "dia2"
     },
