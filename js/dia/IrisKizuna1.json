@@ -178,14 +178,28 @@
         "branch": "branch0",
         "name": "世清",
         "face": "世清2",
-        "string": "信鸟？",
+        "string": "信鸟？刚刚在宫里也听到了你们说这个名词",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "世清2",
+        "string": "那是什么特殊的东西吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝",
-        "string": "绝对忠于主人的通信用鸽子，会忠实地呆在主人身边传递信件",
+        "string": "嗯……那是我们伊拉修莱德王室的传统，和普通人使用的信鸽不同",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "王室的信鸟万里挑一，绝对忠于佩戴信物的主人，把信件和信物保护好就是它们的使命",
         "special": "dia2"
     },
     {
@@ -227,21 +241,28 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝",
-        "string": "之前为了应付父亲，我哥哥去找女巫锻造了这两个戒指",
+        "string": "和哥哥的戒指一起，这个是我们小时候就从父亲手中获取的信物",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝",
-        "string": "小时候也背着父亲把城里埋设了各种暗道方便逃跑，这个戒指就是我们专属的激活工具",
+        "string": "这个戒指除了作为信物的作用外，还被我们兄妹连同城内的结构大量改造过",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "所谓最危险的就是最安全的，父亲现在还不知道这个戒指和城里机关的关系呢，因为这个信物是他亲自送给我们的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "世清2",
-        "string": "所以才会有那些机关啊",
+        "string": "原来如此",
         "special": "dia1"
     },
     {

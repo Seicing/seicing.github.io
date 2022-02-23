@@ -17,14 +17,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "是伊丽丝的信鸟吗？辛苦了",
+        "string": "是伊丽的信鸟吗？辛苦了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "伊丽丝给我发来了一封信，到底是什么内容呢？",
+        "string": "伊丽给我发来了一封信，到底是什么内容呢？",
         "special": "dia1"
     },
     {
@@ -52,14 +52,28 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝",
-        "string": "有空的话，真希望可以和你聚一聚，别担心要跟你谈什么国家大事啦，只是单纯的朋友之间的寒暄而已，最后祝你身体健康",
+        "string": "有空的话，真希望可以和你聚一聚啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "别担心要跟你谈什么国家大事啦，只是单纯的朋友之间的寒暄而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "伊丽丝",
+        "string": "最后，祝你身体健康，伊丽丝",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "伊丽丝……",
+        "string": "……",
         "special": "dia1"
     },
     {
@@ -85,30 +99,16 @@
     },
     {
         "branch": "branch0",
-        "name": "余",
-        "face": "余",
-        "string": "是谁呢",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "下次有机会见面的话介绍给你认识吧",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "世清",
-        "string": "也不知道她在分别之后过得怎么样了",
+        "string": "下次有机会见面的话介绍给你认识吧，也不知道她在分别之后过得怎么样了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "余",
-        "string": "挂念的话就去探望一下吧",
+        "string": "交情很深呢，有空的话就去聚一下吧",
         "special": "dia2"
     },
     {
@@ -171,7 +171,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "是伊丽丝？",
+        "string": "伊丽？",
         "special": "dia1"
     },
     {
@@ -206,7 +206,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "你就是世清的妻子吧，请多指教，我叫伊丽丝·伊拉修莱德，是世清在艾特拉塔的冒险伙伴",
+        "string": "你就是世清的妻子吧，请多指教",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "伊丽丝2",
+        "string": "我的名字是伊丽丝·索菲亚·伊拉修莱德",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "伊丽丝2",
+        "string": "我就是之前寄信给世清的人",
         "special": "dia2"
     },
     {
@@ -234,14 +248,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "伊丽丝，还好吧",
+        "string": "伊丽，真是好久没见了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "世清",
-        "string": "那件事之后……",
+        "string": "自从那件事之后……",
         "special": "dia1"
     },
     {
@@ -353,21 +367,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "和你之前拿过的我的戒指配套的伊安哥哥的信物",
+        "string": "是伊安哥哥的信物，和之前你佩戴过的我的戒指是一对的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "听说你在为了某种目的和余小姐在单兵行动",
+        "string": "听说你还在为了自己的目的在暗地里行动中",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "伊丽丝2",
-        "string": "如果需要用到我的力量的话，信鸟会感知到你的",
+        "string": "信鸟会感知到伊安哥哥的信物传递的信息，有需要的话我就会出现帮助你",
         "special": "dia2"
     },
     {
