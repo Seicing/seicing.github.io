@@ -185,6 +185,13 @@
         "branch": "branch0",
         "name": "余",
         "face": "余尴尬",
+        "string": "你还要继续吃吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "余尴尬",
         "string": "不好吃的话不用勉强自己啊",
         "special": "dia2"
     },
@@ -201,6 +208,13 @@
         "face": "世清冷汗",
         "string": "再……有特色我也会吃完的",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "余脸红",
+        "string": "……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
