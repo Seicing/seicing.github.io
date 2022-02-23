@@ -387,8 +387,15 @@
     {
         "branch": "branch0",
         "name": "世清",
+        "face": "世清冷汗",
+        "string": "连你都可以知道的话就不算是隐秘行动了啊，看起来我的行动还是太高调了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
         "face": "世清",
-        "string": "不会阻碍你的修行吗？",
+        "string": "倒是你来帮我们，不会阻碍你的修行吗？",
         "special": "dia1"
     },
     {
