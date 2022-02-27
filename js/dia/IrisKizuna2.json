@@ -24,14 +24,14 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "琉赛古西亚的地底世界，可谓是我们艾特拉塔的魔法工艺的结晶呢",
+        "string": "琉赛古西亚的地底世界，可谓是我们艾特拉塔最引以为傲的技术结晶呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "艾特拉塔人充分利用了液体的性质，构建了大量液态魔力回路",
+        "string": "艾特拉塔人充分利用了液体的性质，在都市的地下构建了大量液态魔力回路",
         "special": "dia2"
     },
     {
@@ -45,7 +45,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "我们西景的都市大多都没有如此精密的回路，今天看到了真正的魔法艺术品啊",
+        "string": "我们西景的都市大多都没有如此精密的回路",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "今天真正见识到什么叫魔法的艺术品了啊",
         "special": "dia1"
     },
     {
@@ -170,7 +177,7 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisPeepRF",
+        "face": "Iris",
         "string": "“索菲亚”在我们的语言里意味着“智慧”",
         "special": "dia2"
     },
