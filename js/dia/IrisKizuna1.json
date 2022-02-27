@@ -10,14 +10,14 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "临时搭建的营火附近",
+        "string": "城外的触发点附近",
         "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "甩掉追兵了，这里是安全的",
+        "string": "甩掉追兵了",
         "special": "dia1"
     },
     {
@@ -52,14 +52,14 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "好安静啊",
+        "string": "想了下",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "自从从西景相遇开始，还是第一次两个人静下来这样聊天呢",
+        "string": "从西景相遇开始，还是第一次这样两个人静下来聊天呢",
         "special": "dia2"
     },
     {
@@ -115,14 +115,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "一切都起源于10年前我的姑妈在联姻过程中失踪了",
+        "string": "我们伊拉修莱德位于边境地带，一直都有联姻获取中央支持的传统",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "我们伊拉修莱德位于边境地带，一直都有联姻获取中央支持的传统",
+        "string": "都是因为十年前发生的那件事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "我的姑妈在去琉赛古西亚联姻的路上意外失踪，我们失去了很多军事上的支持",
         "special": "dia2"
     },
     {
@@ -163,15 +170,8 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisSerenity",
-        "string": "自那之后哥哥就被愤怒的父亲派遣去了进行骑士历练修行",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
         "face": "Iris",
-        "string": "不过我们之间仍然有通过信鸟进行联系，交流彼此的信息，这也使得我可以安心在西景暂待一段时间",
+        "string": "之后我们之间通过信鸟进行联系，交流彼此的信息，这也使得我可以安心在西景暂待一段时间",
         "special": "dia2"
     },
     {
@@ -220,7 +220,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "不过，哥哥他绝对没死，信鸟没有把哥哥的信物回收，没见到信物，哥哥一定还活在世上",
+        "string": "不过，哥哥他绝对没死，信鸟没有把哥哥的信物回收，哥哥一定还活在世上",
         "special": "dia2"
     },
     {
@@ -241,21 +241,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "和哥哥的戒指一起，这个是我们小时候就从父亲手中获取的信物",
+        "string": "和哥哥手中的戒指是一对，在我们小的时候父亲就给了我们",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "这个戒指除了作为信物的作用外，还被我们兄妹连同城内的结构大量改造过",
+        "string": "除了是信物外，还是我们兄妹改造过的城内的机关的激活工具",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "所谓最危险的就是最安全的，父亲现在还不知道这个戒指和城里机关的关系呢，因为这个信物是他亲自送给我们的",
+        "string": "所谓最危险的就是最安全的，父亲现在还不知道这个戒指和城里机关的关系呢",
         "special": "dia2"
     },
     {
@@ -269,7 +269,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "伊安一定是陷入了什么麻烦中，信鸟独自回去可能事出突然没来得及交代前因后果",
+        "string": "伊安一定是陷入了什么麻烦中",
         "special": "dia1"
     },
     {
@@ -346,14 +346,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "萍水相逢的人啊，即使相处下来的印象如何，也得留下心眼",
+        "string": "萍水相逢的人啊，即使相处下来的第一印象多好，也得留下心眼",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "在完全地摸清对方的底细之前也不要盲目地信任他人",
+        "string": "在完全地摸清对方的底细之前不要盲目地信任他人",
         "special": "dia1"
     },
     {
@@ -380,14 +380,14 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "face": "Seicing2Peep",
         "string": "我也有瞒着你的地方",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing2",
+        "face": "Seicing2Peep",
         "string": "所以在这件事上面感觉我是没什么资格抱怨的",
         "special": "dia1"
     },

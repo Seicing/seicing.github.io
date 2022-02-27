@@ -141,6 +141,13 @@
     },
     {
         "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "今晚见，夏修伦，洛雨希大姐",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "",
         "face": "",
         "string": "夏修伦和洛雨希离队",
@@ -339,7 +346,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "IrisSerenityRF",
-        "string": "我和他手里的戒指就是证明",
+        "string": "他手里的戒指就是证明",
         "special": "dia2"
     },
     {
@@ -374,7 +381,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "Aziz",
-        "string": "我能理解索菲亚会喜欢你的原因，但这是不被允许的",
+        "string": "无论索菲亚因为什么原因喜欢上你，都是不被允许的",
         "special": "dia2"
     },
     {
