@@ -106,10 +106,31 @@
     },
     {
         "branch": "branch0",
-        "name": "",
-        "face": "",
-        "string": "气氛又安静了下来",
-        "special": "dia3"
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "我讨厌我的爸爸",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "为了达成目的，可以不择手段利用所有可以利用的东西",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "可恨的是我同时也继承了他的性格",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "我可以理解",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -380,56 +401,84 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing2Peep",
-        "string": "我也有瞒着你的地方",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "Seicing2Peep",
-        "string": "所以在这件事上面感觉我是没什么资格抱怨的",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris",
-        "string": "我明白的，你看起来可不像是普通的冒险者",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
         "face": "Seicing2",
-        "string": "感到好奇吗？",
+        "string": "不要太自责，其实……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Peep",
+        "string": "虽然只是演戏，但是你搂着我说那句话的时候……还是挺让人……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Peep",
+        "string": "算是报酬吧",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris",
-        "string": "在完全了解对方之前，一定的心眼是必要的，不是吗？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris",
-        "string": "我确实很好奇，但是在你觉得我是值得坦白的同伴之前，我会遵守这条红线的",
+        "face": "IrisPanicRF",
+        "string": "啊？你有这么不正经的吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing2",
-        "string": "感谢理解",
+        "face": "Seicing2CloseEye",
+        "string": "我可是性取向正常的男人",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "IrisHappy",
+        "string": "啊，哈哈哈，感觉对你的理解又深了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "之前对你的印象是仿佛你们西景传说的仙人一样，什么都淡然面对",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "但是这样的你让我感觉到你也是一个正常人呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Peep",
+        "string": "你说得太夸张了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Peep",
+        "string": "我这种性格称为内向，可能你们艾特拉塔人都比较热情，所以看到我会觉得新奇吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "哈哈，也许是这样呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
         "string": "认真一想，我的运气还真好啊",
         "special": "dia2"
     },
