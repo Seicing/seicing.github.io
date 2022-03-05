@@ -227,7 +227,7 @@
         "branch": "branch0",
         "name": "我王",
         "face": "Gaoh",
-        "string": "在死前可以见证丫头得到解脱和救赎，我已经没有任何遗憾了",
+        "string": "不过……我不会有任何怨恨的",
         "special": "dia2"
     },
     {
@@ -246,16 +246,58 @@
     },
     {
         "branch": "branch0",
+        "name": "我王",
+        "face": "Gaoh",
+        "string": "我在死后仿佛好像睡了很长的一觉一样，醒来就听到到了羽三的呼唤",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "Gaoh",
+        "string": "最后糊里糊涂以这个样子继续残存在世界上，为何而活？我为何而死，一片迷惘",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "Gaoh",
+        "string": "和她一起走下来的那段日子里，我找回了自己，也找到了自己继续“活”下去的理由",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "Gaoh",
+        "string": "那就是看着仿佛自己女儿的她逐渐成长，找到自己的幸福",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEye",
-        "string": "那我以后要怎么叫你，岳父吗？",
+        "string": "幸福……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "Gaoh",
-        "string": "哈哈哈，臭小子，心照不宣",
+        "string": "最后……还是抱着对这个世界的留恋离去啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "Gaoh",
+        "string": "作为一个人我抱着对这个世界的怨恨而死，但是作为死而复生者，却从羽三身上看到了这个世界的美丽",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "Gaoh",
+        "string": "也许这种残酷的幸福就是这个世界的魅力吧，羽三比我更幸运，没有走上自我毁灭的歧路",
         "special": "dia2"
     },
     {
@@ -267,51 +309,16 @@
     },
     {
         "branch": "branch0",
-        "name": "我王",
-        "face": "Gaoh",
-        "string": "敢辜负她的话，我大概会从地狱里回来找你麻烦的",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCloseEye",
-        "string": "我知道了，岳父大人",
+        "face": "SeicingCompassionNO",
+        "string": "……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing",
-        "string": "你的女儿就交给我吧",
+        "face": "SeicingCompassionNO",
+        "string": "交给我吧",
         "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "我王",
-        "face": "Gaoh",
-        "string": "嘻嘻，你这小子其实还挺幽默的",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "我王",
-        "face": "Gaoh",
-        "string": "如果我还活着的话……真希望和你成为知己",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "我王",
-        "face": "Gaoh",
-        "string": "真可惜啊，这个世界，真是诸行无常",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "我王",
-        "face": "Gaoh",
-        "string": "东方快要发白了呢，好好加油吧，我的好女婿",
-        "special": "dia2"
     }
 ]
