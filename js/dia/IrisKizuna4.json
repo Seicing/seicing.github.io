@@ -150,7 +150,35 @@
         "branch": "branch0",
         "name": "明玲",
         "face": "Meirei",
-        "string": "实事真是巧合啊",
+        "string": "可以说你前脚刚走，新取后脚就来了，多亏了新取，神宫没有陷入财政困难危机中呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "明玲姐你不会是把用在我身上的那一套直接用到刚来没多久的伊丽身上吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "伊丽的脾气还真好啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2",
+        "string": "也没啦，明玲姐对我很好的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "明玲",
+        "face": "Meirei",
+        "string": "那是因为你的男的，你要出多点力，对待女孩子我还是很温柔的",
         "special": "dia2"
     },
     {
@@ -186,6 +214,13 @@
         "name": "伊丽丝",
         "face": "Iris2Depressed",
         "string": "请不要放在心上",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "明玲",
+        "face": "Meirei",
+        "string": "看起来发生了很多事呢",
         "special": "dia2"
     },
     {
