@@ -205,22 +205,71 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing2",
-        "string": "实际上在之前的旅途中我也猜到九成了",
+        "face": "Seicing2CloseEye",
+        "string": "就算你在之前刻意隐瞒，身上的一举一动早就出卖你了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "我才没看到过那么高贵知性的冒险家",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisSerenity",
-        "string": "我有一件事想要拜托你",
+        "face": "IrisSerenityRF",
+        "string": "诶？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "说起来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "你的脸上没有一丝回到家里的喜悦呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "要我一起来，是要我帮你做点什么吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "为什么感到惊讶的反而是我呢，你的心思未免也缜密得有点可怕了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisSerenity",
-        "string": "等等如果发生了什么，都像现在这样冷静，好吗？",
+        "face": "IrisDepressed",
+        "string": "那个，答应我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "什么也不用问，戴上这只戒指，进去之后维持现在的冷静，好吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "当然……你觉得可疑的话，现在走也来得及",
         "special": "dia2"
     },
     {
@@ -234,14 +283,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2CloseEye",
-        "string": "好",
+        "string": "我相信你",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "谢谢你……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "伊拉修莱德宫觐见室",
+        "string": "戴上戒指进入伊拉修莱德宫觐见室",
         "special": "dia3"
     },
     {
