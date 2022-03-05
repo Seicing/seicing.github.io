@@ -30,6 +30,27 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "夏修伦、洛雨希姐姐，谢谢你们送我到这里",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "哈哈哈，你太客气了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "Sarchlent",
+        "string": "我们是朋友嘛，况且我也顺路",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
         "face": "IrisDepressed",
         "string": "旅程结束了呢",
         "special": "dia2"
