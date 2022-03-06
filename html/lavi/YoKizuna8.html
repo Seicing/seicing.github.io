@@ -128,6 +128,62 @@
                 })
         }
     })
+
+
+    function Switchbranch1() {
+        var x = document.getElementsByClassName("branch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+
+        var x = document.getElementsByClassName("branch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "#DACF88";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "white";
+        }
+    }
+
+
+    function Switchbranch2() {
+        var x = document.getElementsByClassName("branch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        var x = document.getElementsByClassName("branch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "white";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "#DACF88";
+        }
+    }
+
+
 </script>
 
 </html>
