@@ -600,5 +600,96 @@
         "face": "MeireiJishin",
         "string": "她是你这一辈子里面最宝贵的宝物",
         "special": "dia2"
+    },
+    {
+        "branch": "branch2",
+        "name": "",
+        "face": "",
+        "string": "独处模式会有额外的场景发生<br>余给世清包扎脚的伤口",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoEmbarrassed",
+        "string": "你也太不小心了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "抱歉",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "余……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "我都听到了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoSad",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "Seicing",
+        "string": "不要多想，好吗",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoSad",
+        "string": "但是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch2",
+        "name": "",
+        "face": "",
+        "string": "世清把余抱了起来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "无论如何我都会爱你",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "所以答应我，不要因为这些让自己不开心，永远不要离开我",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoShy",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoHappyRF",
+        "string": "是……我答应你",
+        "special": "dia2"
     }
 ]
