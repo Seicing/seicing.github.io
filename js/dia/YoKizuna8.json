@@ -464,7 +464,14 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "MeireiDepressed",
+        "face": "Meirei",
+        "string": "你不也是默默地为世清付出了很多吗？世清没有你是走不到今天的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "明玲",
+        "face": "Meirei",
         "string": "你能够继续和世清相亲相爱，作为岳母的我已经很欣慰了",
         "special": "dia2"
     },
