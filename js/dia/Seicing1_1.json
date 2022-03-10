@@ -1,0 +1,359 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "序章结束后，世清从云居山脉下山，在前往坎斯坦马斯的路上遇到伊丽丝",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "远处传来了打斗的声音",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "什么声音？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到打斗声音的源头，伊丽丝在和一大群浣熊掠劫者战斗，看起来陷入了苦战之中",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "(是个很强的魔法师，面对这么多怪物也可以泰然自若)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "(嗯？偷袭？)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "有一只浣熊掠劫者试图在伊丽丝身后发射弩箭偷袭，世清使用剑气击溃了它，伊丽丝也因此注意到了世清",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "女魔法师",
+        "face": "IrisSurprise",
+        "string": "什么？偷袭？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "女魔法师",
+        "face": "IrisHappy",
+        "string": "是你救了我吗？谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Depressed",
+        "string": "不要大意",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清参与到了战斗中，在一段时间后全部的敌人都被打跑了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "女魔法师",
+        "face": "IrisRelax",
+        "string": "呼……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "女魔法师",
+        "face": "Iris",
+        "string": "感谢你帮我赶跑了这些烦人的怪物",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "只是举手之劳",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "况且我不出手，你自己也可以把这些怪物全部清理干净吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "女魔法师",
+        "face": "Iris",
+        "string": "即使是这样，你帮了我也是事实，真的是非常谢谢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "我的名字是……伊丽丝，是一个冒险家",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "你也是冒险家吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "嗯，姑且算是吧，我叫……清",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "清……西景人特有的单音节名字",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSerenity",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "你刚刚战斗时候，使用的是“权现”吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "啊，这个吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "相比于魔法，西景人更常见的是利用魔力形成权现配合他们的武术战斗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "这个权现蕴含的力量比我见过的权现都要强大……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Peep",
+        "string": "我以前曾经在神宫待过，在那里我学会了权现的使用",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "现在，只是一个毫无目的地的冒险者",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "看起来有一段不为人知的过去呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "清，你有没有和我结伴的打算呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Surprise",
+        "string": "诶？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "是觉得我对萍水相逢的人说出这样的话很可疑吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "事实上，我刚刚从我侍奉的神宫离开，打算回到我的家乡，艾特拉塔的伊拉修莱德",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "一路上到处都充满了危险，在来到这里之前，还花了大价钱贿赂了蚩幽的哨兵让我穿越沙漠来到这里",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "虽然目前来到这里还暂时没出什么大问题，但是，接下来的三角洲地区可是海贼横行的地区",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "原来如此啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "一个女孩子独自一人踏上这种旅途，确实很危险",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "正好我也没地方可去……和你一起去艾特拉塔增长一下见识，可以不",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "谢谢！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "那我们走吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "陪同伊丽丝一起来到了坎斯坦马斯的港口",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "港务员",
+        "face": "",
+        "string": "情况就是这样了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "这样啊，谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "情况如何",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "我们接下来要绕一个大弯，先去阿格拉巴，然后才从阿格拉巴去伊拉修莱德",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "是海贼吗……？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "是啊，海贼控制了所有从这里直接去艾特拉塔的航线，很多人被迫支付昂贵的保护费走安全的航线",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "想早日回家",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "清，准备好的话我们就出发吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "和港务员对话后上船",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "Sarchlent",
+        "string": "啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "LouichSmile",
+        "string": "啊",
+        "special": "dia2"
+    }
+]
