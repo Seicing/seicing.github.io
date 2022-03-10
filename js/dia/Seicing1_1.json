@@ -234,7 +234,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "IrisDepressed",
-        "string": "虽然目前来到这里还暂时没出什么大问题，但是，接下来的三角洲地区可是海贼横行的地区",
+        "string": "虽然目前来到这里还暂时没出什么大问题，但是这趟旅途真的是比我想象中的还要危险呢",
         "special": "dia2"
     },
     {
@@ -255,7 +255,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "正好我也没地方可去……和你一起去艾特拉塔增长一下见识，可以不",
+        "string": "正好我也没地方可去……和你一起去艾特拉塔增长一下见识吧",
         "special": "dia1"
     },
     {
@@ -344,16 +344,100 @@
     },
     {
         "branch": "branch0",
-        "name": "夏修伦",
-        "face": "Sarchlent",
-        "string": "啊",
+        "name": "世清",
+        "face": "Seicing2Terrible",
+        "string": "……………………",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSurprise",
+        "string": "啊，莫非",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "洛雨希",
-        "face": "LouichSmile",
-        "string": "啊",
+        "name": "世清",
+        "face": "Seicing2Terrible",
+        "string": "好难受",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisRelax",
+        "string": "晕船的话去甲板呼吸一下新鲜空气好些哦",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Terrible",
+        "string": "抱歉……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到甲板",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "感觉逐渐适应了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "夏修伦路过身体撞在世清身上，趁机偷了世清的钱包",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "Sarchlent",
+        "string": "抱歉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "没事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "夏修伦离开后，世清开始察觉到了不对劲",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Surprise",
+        "string": "什么？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Surprise",
+        "string": "我的钱包不见了……是刚刚那个人吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Depressed",
+        "string": "长得那么高大竟然是个小偷，看起来要好好教训一下了",
+        "special": "dia1"
     }
 ]
