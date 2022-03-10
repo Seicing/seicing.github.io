@@ -225,6 +225,27 @@
     },
     {
         "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "对于帝国的皇后来说，就不能是在公共场合大吵大闹的野女人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing",
+        "string": "西景的皇后象征着西景的母仪，在他人面前举止一定要端庄大气",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing",
+        "string": "不过，在不需要用到皇后这个身份的场合下，就可以以一个普通人的身份去践行其他社会职能，这就是礼仪",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "余",
         "face": "Yo",
         "string": "我明白了，原来礼仪是这么简单的东西",
@@ -248,14 +269,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing",
-        "string": "嗯……但是私底下就不用跟我谈什么礼仪了",
+        "string": "嗯……你能认识到这东西存在的意义就好",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing",
-        "string": "夫妻间没有什么需要遵守的禁忌，你那本性在对着我的时候就尽情地表现出来吧",
+        "string": "在国民面前，你是皇后，在我面前，就尽情地把自己那本性展露出来吧，没所谓的",
         "special": "dia1"
     },
     {
