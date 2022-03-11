@@ -486,21 +486,21 @@
         "branch": "branch0",
         "name": "金发男子",
         "face": "SarchlentHappy",
-        "string": "把抢到的钱恭恭敬敬地还回去，那是对不起海贼这个职业啊",
+        "string": "把偷到的钱恭恭敬敬地还回去，那是对不起海贼这个职业啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Depressed",
-        "string": "那看起来你是想要被教训一下了",
+        "string": "哪里有海贼是用偷而不是用武力抢的，卑劣的家伙",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "金发男子",
         "face": "SarchlentHappy",
-        "string": "有趣，能做得到的话就试试啊",
+        "string": "有趣，这样说你要和我打一架咯",
         "special": "dia2"
     },
     {
@@ -544,5 +544,334 @@
         "face": "SarchlentLow",
         "string": "我竟然……",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "SarchlentLow",
+        "string": "大意了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "洛雨希从外面走进仓库",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "红发女子",
+        "face": "LouichHappy",
+        "string": "吃瘪了啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "SarchlentWrySmile",
+        "string": "还没决出胜负呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "红发女子",
+        "face": "LouichHappy",
+        "string": "明眼人也能看出你已经输了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "红发女子",
+        "face": "LouichHappy",
+        "string": "小哥，这家伙也给你揍一顿了，把钱还给你你就放过他吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝也跟着走进仓库",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSurprise",
+        "string": "怎么了……清？还有……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "甲板上找不到你，所以沿着打斗声找到了这里",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "抱歉，我只是要回我的钱包",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "SarchlentLow",
+        "string": "咕……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisAngry",
+        "string": "这个大哥！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSerenity",
+        "string": "你不要再继续强迫自己身体凝聚魔力了，你受了内伤，再这样会很危险的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "SarchlentLow",
+        "string": "啊……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "下手太重了吗……？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Peep",
+        "string": "抱歉……我一时没有控制好自己",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressed",
+        "string": "总之我们先回到房间治疗一下，再这样下去会有后遗症的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "房间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisRelax",
+        "string": "呼……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "好了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "SarchlentHappy",
+        "string": "谢谢你，白发小妹妹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "SarchlentHappy",
+        "string": "真是让人身心愉悦的魔法",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "Sarchlent",
+        "string": "抱歉……白发小哥",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "该抱歉的是我",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "Sarchlent",
+        "string": "是我偷了你的东西在先",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "Sarchlent",
+        "string": "这船上竟然有像你们兄妹这么强大的人啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisPanicRF",
+        "string": "啊啊？我们只是结伴而行的两个冒险者",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "金发男子",
+        "face": "Sarchlent",
+        "string": "这样啊，你们看着很像两兄妹嘛",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "红发女子",
+        "face": "LouichHappy",
+        "string": "真是的，夏修伦，在瞎扯之前先把钱还给人家",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "Sarchlent",
+        "string": "不用你提醒，洛雨希",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "夏修伦把钱包丢回给了世清",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "我感觉你不像是那种小偷小摸之人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "小哥",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "没有其他任何原因，单纯就是因为我是个混蛋而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "这世上有出生就含着金钥匙出生的，也有一出生就注定在下水沟和老鼠抢食的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "我在你眉间看到了贵气……而我职业病犯了，仅此如此",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "对你造成的困惑，我在这里道歉，然后，我认为你还是不要和我扯上什么关系更好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "打扰了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "夏修伦离开了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "LouichHappy",
+        "string": "抱歉啦，他就是这样的人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich",
+        "string": "感觉和你们很有缘呢，可能我们很快又会再见的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich",
+        "string": "再见啦，帅气的哥哥和可爱的妹妹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisPanicRF",
+        "string": "哎所以你们就没听我刚刚说的话吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "旅行真是很有趣",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "即使只是一个开始，也能遇到如此有趣的人呢",
+        "special": "dia1"
     }
 ]
