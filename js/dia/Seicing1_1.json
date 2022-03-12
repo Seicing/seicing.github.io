@@ -1060,14 +1060,42 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "实际上这是一种气的修炼法，你身上的虽然量大但是没有显现出明显的倾向，非常原始",
+        "string": "实际上这是一种气的修炼法，你身上的虽然量大但是没有显现出明显的倾向",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "修炼水的气息的话，体内的气对火的敏感性会降低……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "但是人的可塑性是很高的，以后需要用到火的话，只是更需要一些功夫适应而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "多点修炼气的属性提纯对气的锻炼有很大的帮助，甚至你以后修炼火属性也会比现在轻松很多的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "我就多花点时间练练吧，实在是太感谢了",
+        "string": "不愧是魔法师啊，这些知识很有帮助呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "我接下来就再进一步适应一下水属性的提纯吧，帮大忙了",
         "special": "dia1"
     },
     {
