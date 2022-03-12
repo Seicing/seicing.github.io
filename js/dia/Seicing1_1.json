@@ -430,14 +430,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Surprise",
-        "string": "我的钱包不见了……是刚刚那个人吗？",
+        "string": "钱包不见了……是那个高大的家伙吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Depressed",
-        "string": "长得那么高大竟然是个小偷，看起来要好好教训一下了",
+        "string": "看起来要好好教训一下了",
         "special": "dia1"
     },
     {
@@ -873,5 +873,208 @@
         "face": "Seicing2",
         "string": "即使只是一个开始，也能遇到如此有趣的人呢",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "剧情结束后可以在船上瞎逛，和伊丽丝对话后进入新剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisRelax",
+        "string": "真是的，怎么都这么喜欢自说自话啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "他们是那种喜欢开玩笑的人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "对我来说，这玩笑不太好笑",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "他们也没有恶意",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "我知道",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisRelax",
+        "string": "啊~在船上真的很无聊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "到处都是一望无际的大海",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Terrible",
+        "string": "还有颠簸",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "嘻嘻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "啊，对了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "你试试驱动权现那样，把气集中在腹腔试试",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Surprise",
+        "string": "啊……？这样吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "没有什么特别的感觉啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSerenity",
+        "string": "魔力量真大啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "然后你试试把气的杂质提纯试试",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "只留下水属性元素",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "提纯出来之后，让冰的气息顺着呼吸道流动，反馈到大脑",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "………………",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Surprise",
+        "string": "很舒服的感觉……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "这是一种很基础的冰魔法",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "你可真厉害啊，当然也有魔力量大的原因，一瞬间就掌握了这个魔法的提纯和运作",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "太谢谢了，掌握了这个技巧之后，在船上的晕眩感完全消失了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "不过需要这样集中精力有点不适应",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "只是不熟练而已，花点时间修炼的话，这就跟呼吸一样简单",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "实际上这是一种气的修炼法，你身上的虽然量大但是没有显现出明显的倾向，非常原始",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2",
+        "string": "我就多花点时间练练吧，实在是太感谢了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris",
+        "string": "作为旅途的伙伴可以帮到你我也很高兴",
+        "special": "dia2"
     }
 ]
