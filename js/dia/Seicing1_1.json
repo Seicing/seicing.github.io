@@ -990,21 +990,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "然后你试试把气的杂质提纯试试",
+        "string": "然后你试试把气的杂质提纯试试，把气除了水属性的部分全部消散掉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "只留下水属性元素",
+        "string": "权现不也是需要用到类似的提纯才能形成某种性质的实体吗？，只是现在不需要具象化，只是把气提纯留在体内",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris",
-        "string": "提纯出来之后，让冰的气息顺着呼吸道流动，反馈到大脑",
+        "string": "提纯出来之后，让冰的气息顺着呼吸道流动，流入血管最后反馈到大脑",
         "special": "dia2"
     },
     {
@@ -1039,7 +1039,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "太谢谢了，掌握了这个技巧之后，在船上的晕眩感完全消失了",
+        "string": "掌握了这个技巧之后，在船上的晕眩感完全消失了",
         "special": "dia1"
     },
     {
@@ -1066,8 +1066,15 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
+        "face": "IrisRelax",
+        "string": "看得我也有点觉得可惜啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
         "face": "Iris",
-        "string": "修炼水的气息的话，体内的气对火的敏感性会降低……",
+        "string": "虽然修炼水的气息的话，体内的气对火的敏感性会降低……",
         "special": "dia2"
     },
     {
@@ -1088,7 +1095,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2",
-        "string": "不愧是魔法师啊，这些知识很有帮助呢",
+        "string": "不愧是专业的魔法师啊，这些知识很有帮助呢",
         "special": "dia1"
     },
     {
