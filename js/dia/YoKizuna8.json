@@ -23,14 +23,14 @@
     {
         "branch": "branch2",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "世清，余，你们来了啊",
         "special": "dia2"
     },
     {
         "branch": "branch1",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "世清，余，羽三，你们来了啊",
         "special": "dia2"
     },
@@ -107,7 +107,7 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "MeireiJishin",
+        "face": "MeireiConfidence",
         "string": "哎呀，你真是的，我还很年轻呢",
         "special": "dia2"
     },
@@ -149,7 +149,7 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "那就进来再说吧，你们忍心让这样一个高龄孕妇站着这么久吗？",
         "special": "dia2"
     },
@@ -163,7 +163,7 @@
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "Iuimi",
+        "face": "IuimiDefault",
         "string": "茶泡好了",
         "special": "dia2"
     },
@@ -191,21 +191,21 @@
     {
         "branch": "branch1",
         "name": "羽三",
-        "face": "Iuimi",
+        "face": "IuimiDefault",
         "string": "世清……抱歉，可能接下来我暂时都没办法支援你们了",
         "special": "dia2"
     },
     {
         "branch": "branch1",
         "name": "世清",
-        "face": "Seicing",
+        "face": "SeicingDefault",
         "string": "明玲姐的身体最重要，羽三你就留在这里吧",
         "special": "dia1"
     },
     {
         "branch": "branch2",
         "name": "世清",
-        "face": "Seicing",
+        "face": "SeicingDefault",
         "string": "羽三打算在这里照顾明玲姐么",
         "special": "dia1"
     },
@@ -219,28 +219,28 @@
     {
         "branch": "branch2",
         "name": "世清",
-        "face": "Seicing",
+        "face": "SeicingDefault",
         "string": "明玲姐的身体最重要，这也是没办法的事情",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "Iuimi",
+        "face": "IuimiDefault",
         "string": "我继续忙了，明玲姐你有麻烦的话要早点跟我们说啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing",
+        "face": "SeicingDefault",
         "string": "我也去看看有什么可以帮忙的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing",
+        "face": "SeicingDefault",
         "string": "很久没有在宫里干活了，有点怀念",
         "special": "dia1"
     },
@@ -268,42 +268,42 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "我们好像还是第一次这样坐下来说话呢，媳妇",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "Yo",
+        "face": "YoDefault",
         "string": "这个称呼真是有点不适应",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "哈哈，毕竟我名义上也是世清的母亲",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "这个肚子里的孩子……名义上是世清的妹妹呢，尽管两者差了二十多岁",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "Yo",
+        "face": "YoDefault",
         "string": "想好叫什么名字了吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "嗯……我和斯理想了很久",
         "special": "dia2"
     },
@@ -317,7 +317,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "Yo",
+        "face": "YoDefault",
         "string": "真是不错的名字啊",
         "special": "dia2"
     },
@@ -464,21 +464,21 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "你不也是默默地为世清付出了很多吗？世清没有你是走不到今天的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "你能够继续和世清相亲相爱，作为岳母的我已经很欣慰了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "别哭了，孩子，世清看到你这样一定也会很难过的",
         "special": "dia2"
     },
@@ -534,21 +534,21 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "Yo",
+        "face": "YoDefault",
         "string": "我似乎……也能感觉到你的喜悦之情呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "Yo",
+        "face": "YoDefault",
         "string": "虽然我自己不能亲自感受这种喜悦之情……但是，我确实为你肚子里的生命感到由衷的祝福",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "谢谢你，媳妇",
         "special": "dia2"
     },
@@ -569,7 +569,7 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "Meirei",
+        "face": "MeireiDefault",
         "string": "哎哎哎……那个房间太久没打扫了，可能是一脚踩进了烂地板了吧",
         "special": "dia2"
     },
@@ -590,21 +590,21 @@
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "MeireiJishin",
+        "face": "MeireiConfidence",
         "string": "呵呵呵",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "MeireiJishin",
+        "face": "MeireiConfidence",
         "string": "世清，好好珍惜这个如此爱你的人",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
-        "face": "MeireiJishin",
+        "face": "MeireiConfidence",
         "string": "她是你这一辈子里面最宝贵的宝物",
         "special": "dia2"
     },
