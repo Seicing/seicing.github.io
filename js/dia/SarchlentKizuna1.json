@@ -220,7 +220,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2CloseEye",
-        "string": "说的是啊，实际上，格萨尔王传是“那个作者”基于我们西景北山地区的多个君主的传说改编的作品",
+        "string": "实际上，格萨尔王传是“那个作者”基于我们西景北山地区的多个君主的传说改编的作品",
         "special": "dia1"
     },
     {
@@ -241,14 +241,7 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
-        "string": "实际上我成为海贼，很大一个原因就是被这些美丽的幻想影响",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "夏修伦",
-        "face": "SarchlentWrySmile",
-        "string": "别嘲笑我啊",
+        "string": "别嘲笑我啊，实际上我成为海贼，很大一个原因就是被这些美丽的幻想影响",
         "special": "dia2"
     },
     {
@@ -262,7 +255,7 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentWrySmile",
-        "string": "所以说你完全不懂我在说什么啦，不知道你是感性还是太过理性",
+        "string": "所以说你完全不懂我在说什么啦",
         "special": "dia2"
     },
     {
@@ -332,6 +325,13 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
+        "string": "这个东西是为何在我身上的呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
         "string": "我能从这个遗物的身上感受到和某个人的羁绊",
         "special": "dia2"
     },
@@ -367,7 +367,7 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentLow",
-        "string": "事实上只有苦涩呢，估计了下我当海贼也快有10年了呢",
+        "string": "事实上只有苦涩，估计了下我当海贼也快有10年了呢",
         "special": "dia2"
     },
     {
