@@ -234,7 +234,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "索菲亚和伊安都是，天性纯良，无法狠下心来的人无法成为王",
+        "string": "我的两个孩子跟我这个家伙不同，天性莫名其妙的纯良，无法狠下心来的人无法成为王",
         "special": "dia2"
     },
     {
@@ -248,22 +248,57 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "不过啊，索菲亚和我不同，保持了纯良的同时，从你身上学会了何为王的气量",
+        "string": "不过啊……伊丽丝和我不同，保持了纯良的同时，从你身上学会了何为王的气量",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "如果这就是她对“责任”这个词的理解，也还不错……我也可以放心了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "伊拉修莱德式的亲情吗？兼顾了实际收益的互相理解",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我还是第一次从您口中听到称呼她为伊丽丝",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "她用不一样的方式表现出自己对“伊拉修莱德”这个词的理解，明白了自己的义务，足够了",
+        "string": "呵",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "说到底索菲亚这个名字，也只是出于礼节的称呼而已，伊丽丝才是这个名字是我跟她起的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "在没有外人……不需要正规的场合下，我还是喜欢这样叫她",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -325,7 +360,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEye",
-        "string": "和伊拉修莱德族的人交流可真是一件苦差事……",
+        "string": "和这两父女交流可真是一件苦差事……",
         "special": "dia1"
     }
 ]
