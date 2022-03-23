@@ -373,8 +373,15 @@
     {
         "branch": "branch0",
         "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "谢谢你，我把这个想法跟某个红发女人说了之后，她什么都没说只笑了两声呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
         "face": "SarchlentLow",
-        "string": "事实上只有苦涩，估计了下我当海贼也快有10年了呢",
+        "string": "不过直到今天，经历到的只有苦涩，估计了下，我当海贼也快有10年了呢",
         "special": "dia2"
     },
     {
