@@ -304,56 +304,63 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappy",
-        "string": "这个世界的国家都宣称拥有这些蕴含强大力量的遗物的所有权，有些人无视国家的禁令自行寻找这些遗物",
+        "string": "这个世界的国家都宣称拥有这些蕴含强大力量的遗物的所有权",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappy",
-        "string": "即使没有抢劫过其他人，但也被以非法出海的海贼论处了",
+        "string": "而有些人无视国家的禁令自行寻找这些遗物并且拥有它们，他们也被称为海上的掠劫者——海贼",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Surprise",
-        "string": "怪不得你自称海贼，但是和我想象中的海贼没啥关系",
+        "string": "怪不得你作为海贼和我认知中的海贼没啥关系",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
-        "string": "这个东西是为何在我身上的呢？",
+        "string": "事实上，这个遗物不是我作为海贼发掘出来的……在我懂事的时候它就一直跟随在我身边了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
-        "string": "我能从这个遗物的身上感受到和某个人的羁绊",
+        "string": "这个东西是为何在我身上的呢？普通人可不太可能拥有一件遗物……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
-        "string": "可能是走丢的妈妈，也可能是仇人……",
+        "string": "我能从这个遗物的身上感受到和某个人的羁绊……可能是我那素未谋面的妈妈？也许是某个盗取了国库的大盗贼？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
-        "string": "我坚信着我注定会有一段属于我自己的故事，也因为这样我找到了我人生的意义，踏上了旅途",
+        "string": "总之，我坚信着这是属于我自己故事的开端，也因为这样我踏上了旅途去寻找那未知的过去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "梦想有一天和格萨尔王一样缔造属于自己的传奇……我是不是很幼稚",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Default",
-        "string": "为了未知的目标踏上未知的旅程",
+        "string": "不会，我觉得……为了未知的目标踏上未知的旅程",
         "special": "dia1"
     },
     {
