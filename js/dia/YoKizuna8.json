@@ -311,14 +311,21 @@
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiHappy",
-        "string": "如果是女儿的话，叫明华，如同太阳一般的七彩光华",
+        "string": "叫明华，如同太阳一般的七彩光华",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "真是不错的名字啊",
+        "string": "宫黄明华……真是不错的名字啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "无论是男孩还是女孩，都很适合这个名字呢",
         "special": "dia2"
     },
     {
@@ -346,28 +353,28 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoSad",
-        "string": "他对我很好",
+        "string": "没有，他对我很好",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSad",
-        "string": "在看到你肚子里的孩子之后，我感到了深深的自责",
+        "string": "我是感到了自责",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSad",
-        "string": "我的名字余，就是多余的意思，从我出生那一天起我就是多余的，对于族人们来说，对于世清也是",
+        "string": "和我的名字一样，我从出生那一天起我就是多余的，对于族人们来说，对于世清也是",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiDepressed",
-        "string": "不要自暴自弃",
+        "string": "到底怎么了？不要自暴自弃",
         "special": "dia2"
     },
     {
@@ -380,22 +387,15 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoSad",
-        "string": "但是……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoUncomfortable",
-        "string": "我的身体，可能已经被觉醒搞坏了吧",
+        "face": "YoCry",
+        "string": "但是……这个身体……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiDepressed",
-        "string": "觉醒之后的副作用吗……",
+        "string": "难道说……是强行觉醒后的代价吗？",
         "special": "dia2"
     },
     {
