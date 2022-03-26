@@ -500,14 +500,21 @@
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiHappy",
-        "string": "好像在一瞬间失去了所有自由一样，身体连大幅度活动一下都不行",
+        "string": "怀孕啊……老实说，并不是什么舒服的事情",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiHappy",
-        "string": "肚子鼓鼓的，有时候还会莫名其妙地痛",
+        "string": "在一瞬间失去了所有自由，身体连大幅度活动一下都不行",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "明玲",
+        "face": "MeireiHappy",
+        "string": "肚子变得鼓鼓的，有时候还会莫名其妙地痛",
         "special": "dia2"
     },
     {
