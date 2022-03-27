@@ -43,100 +43,86 @@
     },
     {
         "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "吓到你了？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingAngry",
-        "string": "请不要在半夜里突然出现",
+        "string": "在半夜里突然出现是谁也会吓到的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "你都和丫头那么久时间了，也该习惯我了吧",
+        "string": "开个玩笑，看来你并没有放松警惕",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "是职业病的原因吗？",
+        "string": "也难怪羽三可以这么放松地在你的身旁休息啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "这孩子……很难得露出这种女孩子应该有的表情啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "职业病？是作为冒险者还是神从",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "不过这两个都是一不小心就会丢掉性命，没什么区别就是了",
+        "string": "有什么事情吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "真会说话啊",
+        "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "不过可能以后不会有这样说话的机会了呢",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "怎么突然说这些话",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "我王",
-        "face": "GaohDefault",
-        "string": "丫头完全依靠和你的羁绊坚持到了今天",
+        "string": "看，那边是不是有流星落下",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "但是，她崩溃那一天到来也只是时间上的问题",
+        "string": "我能感觉到我们别离的那一天要到来了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "不要说这种垂头丧气的话",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "在这之前我一定会找到完全治疗她的办法的",
+        "face": "SeicingSurprise",
+        "string": "到底怎么了？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "我对你可以救赎羽三感到深信不疑",
+        "string": "丫头身上的诅咒越来越严重了，有些东西也越来越变成现实了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "但是，伴随着她的治愈，我也会永远地离开你们吧",
+        "string": "我对你可以治愈好她的诅咒深信不疑，但是……",
         "special": "dia2"
     },
     {
@@ -213,7 +199,7 @@
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "看开点吧，我的存在本身就是违背了天理",
+        "string": "我的存在本身就是违背了天理",
         "special": "dia2"
     },
     {
@@ -234,7 +220,7 @@
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "毕竟……她是我最重要的“女儿”啊",
+        "string": "为了自己最重要的“女儿”……这一切都值得",
         "special": "dia2"
     },
     {
@@ -248,21 +234,21 @@
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "我在死后仿佛好像睡了很长的一觉一样，醒来就听到到了羽三的呼唤",
+        "string": "我生前糊里糊涂地活着，死后糊里糊涂地继续残存在世上",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "最后糊里糊涂以这个样子继续残存在世界上，为何而活？我为何而死，一片迷惘",
+        "string": "为何而活？为何而死？这是很多人一辈子都搞不懂的事情",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "和她一起走下来的那段日子里，我找回了自己，也找到了自己继续“活”下去的理由",
+        "string": "不过，在和她一起走下来的那段日子里，我找到了自己继续“活”下去的理由",
         "special": "dia2"
     },
     {
@@ -283,28 +269,42 @@
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "最后……还是抱着对这个世界的留恋离去啊",
+        "string": "最后还是抱着对这个世界的留恋离去啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "作为一个人我抱着对这个世界的怨恨而死，但是作为死而复生者，却从羽三身上看到了这个世界的美丽",
+        "string": "我从丫头身上看到了这个世界的美丽，可惜自己已经死了，不能任性地感受这个世界了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "也许这种残酷的幸福就是这个世界的魅力吧，羽三比我更幸运，没有走上自我毁灭的歧路",
+        "string": "也许这种残酷的幸福就是这个世界的魅力吧，丫头比我更幸运，没有走上自我毁灭的歧路",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "以后继我的份好好爱护她，然后和她一起好好记住我吧",
+        "string": "她和我一样拥有黑暗的过去……但是她拥有光辉的未来，和我不同",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "在一切都结束后，代替我好好爱护她，和她一起好好记住我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "这是我最后的心愿了",
         "special": "dia2"
     },
     {
