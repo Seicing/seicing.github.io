@@ -1,11 +1,11 @@
-var listText = ['atext', 'btext', 'ctext', 'dtext', 'etext', 'ftext', 'gtext', 'htext', 'itext', 'jtext', 'ktext', 'ltext', 'mtext', 'ntext', 'otext', 'ptext', ]
-var listButton = ['abutton', 'bbutton', 'cbutton', 'dbutton', 'ebutton', 'fbutton', 'gbutton', 'hbutton', 'ibutton', 'jbutton', 'kbutton', 'lbutton', 'mbutton', 'nbutton', 'obutton', 'pbutton',]
+var listText = ['atext', 'btext', 'ctext', 'dtext', 'etext', 'ftext', 'gtext', 'htext', 'itext', 'jtext', 'ktext', 'ltext', 'mtext', 'ntext', 'otext', 'ptext', 'qtext',]
+var listButton = ['abutton', 'bbutton', 'cbutton', 'dbutton', 'ebutton', 'fbutton', 'gbutton', 'hbutton', 'ibutton', 'jbutton', 'kbutton', 'lbutton', 'mbutton', 'nbutton', 'obutton', 'pbutton', 'qbutton',]
 
 function tipsg(a, b, c) {
     cleargasek(c);
     document.getElementById(a).style.display = "block";
     document.getElementById(b).style.color = "blue";
-    $("#" + a + " img").each(function() {
+    $("#" + a + " img").each(function () {
         var src = $(this).attr("data-src");
         $(this).attr("src", src);
     });
