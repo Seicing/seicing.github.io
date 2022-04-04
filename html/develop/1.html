@@ -43,37 +43,37 @@
 
 <b>布兰达</b> <br> 拉比巴那原定是一个2d的俯视觉八向ACT游戏，但是由于2d图像的绘制工作量过于繁重，加上御用程序员无双草泥马（以后皆简称为草泥马）想要开拓新的领域，因此选择了3D引擎 <br> 拉比巴那的企划虽然很早就有了，但是真正开始，还是草泥马做完DFQ（Dungeon Fighter Quest）这个2D横版ACT之后 <br> 我没有摸过3d美术，他也没有摸过3d游戏的架构，所以一切的一切都是从0开始，堪称在未知之海上盲目航行的大航海时代 <br> <br> 虽然没做过3d的游戏美术，但是至少在之前摸过3d软件，也尝试过用Maya来制作最早时候的拉比巴那的雏形
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20200127204051.png" width="500px">
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20200127204633.png" width="100px">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20200127204051.png" width="500px">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20200127204633.png" width="100px">
 <br>
 <br> 拉比巴那的3d化是很早之前的决议，但是由于技术力不够，在有限的尝试后就搁置了，集中精力开发DFQ <br> 再次燃起希望的是接触了一个名为布兰达（blender）的3d软件，因为maya在我这老式的手提电脑拖实在是难受得靠北，轻量化的blender很快吸引了我的注意力 <br> maya这个软件一方面是太卡了，另一方面是因为它“过于专业”，太多功能难以记住，所以比较纯粹的blender也许更适合于拉比巴那的开发，毕竟之前使用maya的时候就已经够恼火的了（尤其是导出） <br> 但是网络上布兰达的教程很少（主要是一些细节方面），面对完全崭新的工具，碰壁的地方比以前多多了，不过学会了如何驾驭它之后，反而有了一种征服的感觉
 <br> 为了避免自己在漫长的开发中遗忘掉一些细节，适当的记录是必要的，这就是这个开发者笔记的目的了，适当地重温自己的记录，可以知道问题到底是因为什么
 <br> <br> 布兰达我对它的形容是geek <br> 因为很多功能它藏得很深，需要用到快捷键的水平 <br> 一些建模时很重要的注意点会记录在这里 <br> <br> 骨骼绑定：先选择物件（子），再选择骨骼（父），最后按Crtl+P，选择这个
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20200127195416.png"><br><br> 动作模式（快捷键Ctrl+Tab）让骨骼的某一段骨骼变蓝，这时候视为选中了这一块骨骼，而不是整个骨骼
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20200127195416.png"><br><br> 动作模式（快捷键Ctrl+Tab）让骨骼的某一段骨骼变蓝，这时候视为选中了这一块骨骼，而不是整个骨骼
 
 <br> 因此可以先选择非动作模式下的子物体（黄边），再选择一段特定的骨骼（蓝边），按照上面的方法把部件骨骼绑在这一块骨头上面
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ图片20200127200147.png" width="250px"> 选这个
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20200127200929.png" width="250px"><br>
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ图片20200127200147.png" width="250px"> 选这个
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20200127200929.png" width="250px"><br>
 
 <br> 选中至少3个边之后，按F键进行加面
 <br>
 <br> 选中边之后输入Ctrl+E之后会出现边的选项菜单，“标记缝合边”和“清除缝合边”用来标识切割uv时的切割线
 
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ图片20200127202116.png">标记缝合边之后按a全选，按u展开<br>
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ图片20200127202116.png">标记缝合边之后按a全选，按u展开<br>
 
 <br><br> 修改uv时，关掉
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20200127202254.png">这个，再按两下a选择整个模型，这样才可以无视缝合进行点的修改<br>
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20200127202254.png">这个，再按两下a选择整个模型，这样才可以无视缝合进行点的修改<br>
 
 <br> 最后就是
 <span style="color: #ff0000">绝对不要使用NLA编辑器</span><br><br> 经过一段时间的摸索之后，总算是可以生产出符合要求的模型了
 
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20191230174750.png"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20191230174803.png">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20191230174750.png"><img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20191230174803.png">
 <br> 导出也需要注意，纯动画的话，选择这个预设一键导出即可
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/QQ截图20200127202700.png"><br> 但是如果是角色本体使用的模型的话，不能用这个预设，而且一定要手动删除掉模型里面所有的贴图信息，这样才可以在unity里面正常使用
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/QQ截图20200127202700.png"><br> 但是如果是角色本体使用的模型的话，不能用这个预设，而且一定要手动删除掉模型里面所有的贴图信息，这样才可以在unity里面正常使用
 <br><br> 总的来说，遵循上述的注意点的话，做出来的模型完全可以在unity里面正常地使用！而且比之前maya做出来的东西更加扁平和适应性，可谓是一场重大的“帝国化”
 <br> 实际上这次摸索最大的意义是战胜了心底里对未知的恐惧感，现在使用blender已经是熟练的程度，这意味着难产的可能性降到了0，以后可以稳定地做出
 <span style="color: #ff0000">所有</span>游戏里会使用到的美术了，值得庆贺的一次伟大胜利
@@ -88,7 +88,7 @@
 <br>
 <br>
 
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/dddd.gif">
+<img src="https://seicing.coding.net/p/elitefatcat/d/elitefatcat/git/raw/master/develop/dddd.gif">
 
 <br><br> 今天晚上还帝国（规整化）了一波骨骼名，阿凡达（Avatar）也顺利地工作了，一切都好起来了
 <br> 一切都在往好的方向前进，期待接下来的开发顺利

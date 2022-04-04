@@ -36,11 +36,11 @@
                         <div class="entry"><div id="lavipage" page="8"></div>
 <span>
     使用鼠标可以很轻易地调整射击角度攻击敌人 <br>
-    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/wfwaghwsh.png"><br> 但是如果使用只能输入八个方向的手柄或者是纯键盘，在不移动的前提下，就会出现这种情况 <br>
-    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/阿双方各沙钢.gif"> <br> 今晚的课题就是解决这个蛋疼的问题 <br> <br> “角度修正辅助功能” <br>
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/wfwaghwsh.png"><br> 但是如果使用只能输入八个方向的手柄或者是纯键盘，在不移动的前提下，就会出现这种情况 <br>
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/阿双方各沙钢.gif"> <br> 今晚的课题就是解决这个蛋疼的问题 <br> <br> “角度修正辅助功能” <br>
     所谓的角度修正，就是在角色朝向正确的前提下，容忍一定的角度偏差，使得攻击带有偏角补偿 <br>
-    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/我去让其他其他区.gif"> <br> 这个例子就是加入了角度偏差后，只要角度差得不太远，就可以在这两个方向攻击到敌人 <br>
-    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/wetqetgqt.gif"> <br> 和鼠标指定角度类似，发射出去的箭朝着特定敌人的方向发射，而这个敌人到底怎么指定，这个机制有什么限制，就是今晚的课题
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/我去让其他其他区.gif"> <br> 这个例子就是加入了角度偏差后，只要角度差得不太远，就可以在这两个方向攻击到敌人 <br>
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/wetqetgqt.gif"> <br> 和鼠标指定角度类似，发射出去的箭朝着特定敌人的方向发射，而这个敌人到底怎么指定，这个机制有什么限制，就是今晚的课题
     <br> <br> <br>
 
     <b>锁定机制重制</b> <br> 原有的锁定键功能是锁定一个敌人，显示其血条，然后就没了 <br> 现在的锁定功能会拆分成
@@ -59,7 +59,7 @@
     <span style="color:#FF0000">集中锁定</span>模式的前提下，就会开启
     <span style="color:#FF0000">角度修正辅助功能</span><br> 就是和上面的图一样，角色的射击角度会产生容忍偏差值，而且角色会维持按下锁定键时候发射的角度进行移动，哪怕你在后退
     <br>
-    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/问题问题问题.gif"> <br> 进入角度修正辅助功能后，哪怕角色往其他方向移动，也会维持这个射击角度进行移动，直到你松开锁定键
+    <img src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/问题问题问题.gif"> <br> 进入角度修正辅助功能后，哪怕角色往其他方向移动，也会维持这个射击角度进行移动，直到你松开锁定键
     <br> 要注意的是，不单指远程攻击，近程攻击也会适用这个机制
     <br> 现在开始，所有技能都分为
     <span style="color:#FF0000">朝向独立</span>和
@@ -69,7 +69,7 @@
     朝向独立的技能大多数是近战，朝向继承的技能大多数是可以用来边打边跑的远程攻击
     <br> 当然，使用鼠标的话，可以把这个功能关掉完全手动瞄准
     <br>当然，这个只是偏角功能，假如你集中锁定了左面的敌人，但是你朝向是下方，那么你发射弩箭也只会朝着正下方发射，不会自动转向射到左面的敌人<br><img
-        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/所有都是有何深意和.png"> <br> <br><br><br> 伴随这个系统而来的新系统就是
+        src="https://seicing.coding.net/p/fatcatpool/d/fatcatpool/git/raw/master/essay/所有都是有何深意和.png"> <br> <br><br><br> 伴随这个系统而来的新系统就是
     <span style="color:#FF0000">伪搓招系统</span><br> 所谓的伪搓招就是指，设定按键的时候，支持组合键了
     <br> 例如在手柄上设定了锁定键是“
     <span style="color:#FF0000">LT</span>”，普通攻击是“
