@@ -269,8 +269,15 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "倒是你，看起来你很顺利，成功为自己的父亲报仇了",
+        "string": "你在我们分别之后一定经历了很多吧，当我听到你成为皇帝的时候，我既惊讶也觉得理所当然",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "经历的事情太多了……认真一想才过去没多久而已啊",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -278,6 +285,13 @@
         "face": "SeicingDefault",
         "string": "这些时间来你在干什么呢",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "我吗？我就没有你这么波澜壮阔了",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -290,28 +304,14 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "……父亲看到哥哥，把自己关起来了好几天……",
+        "string": "……父亲看到哥哥，把自己关起来了好几天……某种意义上因为共同的哀伤，我们和解了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "某种意义上因为共同的哀伤，我们和解了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Depressed",
-        "string": "打那之后，父亲跟我许下了一个承诺",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Depressed",
-        "string": "承诺给我一段时间进行历练，直到期限到来对我进行考验",
+        "string": "随后，父亲和我约定了一个承诺，让我去世界各地进行历练",
         "special": "dia2"
     },
     {
@@ -346,7 +346,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "世清，收下这个",
+        "string": "对了！收下这个吧",
         "special": "dia2"
     },
     {
@@ -374,21 +374,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "听说你还在为了自己的目的在暗地里行动中",
+        "string": "这个戒指放在我身上没有意义……我在想，给你也许是一个最好的选择",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "信鸟会感知到伊安哥哥的信物传递的信息，有需要的话我就会出现帮助你",
+        "string": "信鸟会感知到伊安哥哥的信物传递的信息，有需要的话我就会出现帮助你们",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "连你都可以知道的话就不算是隐秘行动了啊，看起来我的行动还是太高调了",
+        "face": "SeicingDefault",
+        "string": "这样我们就可以随时随地联络了，真是太好了",
         "special": "dia1"
     },
     {
@@ -451,7 +451,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "世清没有注意到的是，伊丽丝向余使了一个意味深长的眼神，在女人的直觉的驱动下，余很快就理解，而且也用同样的眼神回了过去",
+        "string": "世清没有注意到的是，伊丽丝向余使了一个意味深长的眼神，在女人的直觉的驱动下，余很快就理解其中的深意，而且也用同样的眼神回了过去",
         "special": "dia3"
     },
     {
