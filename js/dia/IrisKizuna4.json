@@ -17,7 +17,7 @@
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiHappy",
-        "string": "咦，这不是新取吗？虽然头发变白了有点认不出来",
+        "string": "咦，这不是新取吗？有点认不出来",
         "special": "dia2"
     },
     {
@@ -43,6 +43,13 @@
     },
     {
         "branch": "branch0",
+        "name": "明玲",
+        "face": "MeireiHappy",
+        "string": "还是这么会说话啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
         "string": "你们认识？",
@@ -58,15 +65,15 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingSurprise",
-        "string": "啊，我确实记得你以前说过你回伊拉修莱德之前在西景当过神从",
+        "face": "SeicingPeep",
+        "string": "……确实有这一回事，我们认识的时候你说过",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiConfidence",
-        "string": "巧合的事情实在是太多了",
+        "string": "命运是一种很奇妙的东西",
         "special": "dia2"
     },
     {
@@ -115,7 +122,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "明玲姐的品味还是那么糟糕啊",
+        "string": "品味还是那么糟糕啊",
         "special": "dia1"
     },
     {
@@ -129,28 +136,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "我在几年前逃婚之后就被哥哥送到了这里",
+        "string": "真怀念啊，几年前下定决心逃到了这里，被明玲姐收留成为见习神从",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "然后就在明玲姐的座下当起了神从见习",
+        "string": "这里一点变化都没有，还是那么让人熟悉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiDefault",
-        "string": "那时候世清你刚刚好逃到了大沙漠东部躲避追杀",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "明玲",
-        "face": "MeireiDefault",
-        "string": "可以说你前脚刚走，新取后脚就来了，多亏了新取，神宫没有陷入财政困难危机中呢",
+        "string": "多亏了新取，你和羽三走掉之后神宫才没有因此陷入财政危机",
         "special": "dia2"
     },
     {
@@ -178,7 +178,7 @@
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiDefault",
-        "string": "那是因为你是男的，你要出多点力，对待女孩子我还是很温柔的",
+        "string": "对待女孩子我还是很温柔的，男孩子要多点锻炼才能成为可靠的男人啊",
         "special": "dia2"
     },
     {
@@ -192,7 +192,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "……",
+        "string": "……这个……他……",
         "special": "dia2"
     },
     {
@@ -218,6 +218,13 @@
     },
     {
         "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCE",
+        "string": "这也是属于伊安哥哥的命运……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "明玲",
         "face": "MeireiDefault",
         "string": "看起来发生了很多事呢",
@@ -234,7 +241,7 @@
         "branch": "branch0",
         "name": "明玲",
         "face": "MeireiDefault",
-        "string": "世清这个小鬼当上皇帝之后，神宫冷清了很多，有这样的客人造访真是稀有呢",
+        "string": "世清当上皇帝之后，神宫冷清了很多，很少像现在这样喧闹了",
         "special": "dia2"
     },
     {
