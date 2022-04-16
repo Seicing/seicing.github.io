@@ -80,7 +80,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "让信鸟去问一下",
+        "string": "没被影响到是不可能的，幸好我们可以随时和她联络",
         "special": "dia1"
     },
     {
@@ -514,21 +514,14 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "你去给世行发消息，说蚩幽人在东部边境可能要趁着狩猎节叛乱，命令他集结部队去警戒",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDefault",
-        "string": "这两个我们各自联系，对其他人保密，即两支部队都不知道彼此在干啥",
+        "string": "你故意放风但不要说出我们的真正目的，世行那小子如果察觉到蚩幽人异常的举动的话，他大概会调动能调动的兵力前往东部边境预防不测",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoEmbarrassed",
-        "string": "不过要强调尽可能克制，在确定之前不要行动，避免流血冲突",
+        "string": "我会嘱咐好老爷子注意不要乱来，世行也不是笨蛋，大家意识到情况的话也不会流无谓的血，不会打起来的",
         "special": "dia2"
     },
     {
@@ -542,7 +535,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "做出“西景人正在集结部队”的假动作",
+        "string": "做出“西景人正在准备反击”的假动作",
         "special": "dia2"
     },
     {
@@ -563,14 +556,14 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "各怀鬼胎的伊拉修莱德抵抗部队就会有一个重新集结在一起某人旗下的理由",
+        "string": "各怀鬼胎的伊拉修莱德贵族和抵抗势力就会重新拥有一个集结在某人旗下的理由",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Serenity",
-        "string": "“伊拉修莱德皇帝”……！",
+        "string": "“伊拉修莱德皇帝”！",
         "special": "dia2"
     },
     {
@@ -598,28 +591,42 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2DepressedCERF",
-        "string": "伊拉修莱德将会作为西景的自治领成立帝国，不再遵守抛弃了我们的艾特拉塔的规矩……西景皇帝就是新的规则",
+        "string": "伊拉修莱德将会作为西景的离区成立帝国，不再遵守抛弃了我们的艾特拉塔的规矩……皇帝就是新的规则",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "我将会作为伊拉修莱德帝国的第一任皇帝……重新团结伊拉修莱德人，粉碎那群贪婪的饿狼",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "原来如此，如果成为了法统的自治领，西景人就有理由介入了",
+        "string": "原来如此，如果成为了西景的离区，西景人就有足够的理由介入了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "你将会作为皇帝，在西景的庇护下确立保加利亚新的秩序",
+        "string": "你将会在西景的庇护下确立伊拉修莱德新的秩序",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "但是……这要你的未来作为代价……",
+        "string": "但是……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "怎么能拿终身大事当儿戏，这是全世界都会见证的……",
         "special": "dia1"
     },
     {
@@ -639,9 +646,16 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "……对不起",
+        "face": "SeicingEmbarrassed",
+        "string": "这个……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "在这件事上最可能受伤的可是我啊",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -653,8 +667,8 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "余……你……",
+        "face": "SeicingDefault",
+        "string": "……",
         "special": "dia1"
     },
     {
@@ -668,21 +682,28 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "我没有强迫你必须要在我和她之间选择一个，我不想因为我自己，让你们两个压抑自己的感情",
+        "string": "我不是傻子，我能理解和接受你们彼此之间的感情",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "有些东西，趁着这个机缘巧合还是摊明比较好吧，我不是傻子，都已经在一起这么久了",
+        "string": "你们都是烂好人，明明在我之前就彼此互有好感，但在那之后始终不敢跨出那最后一步",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "为什么要迁就我，让自己遗憾……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressedRF",
-        "string": "好了，我要说的就这么多了，被婆婆妈妈的",
+        "string": "好了，我要说的就这么多了，别婆婆妈妈的",
         "special": "dia2"
     },
     {
@@ -703,14 +724,42 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefaultRF",
-        "string": "不是因为计划，而是单纯地你回应我的感情……",
+        "string": "从那晚我们一起逃离伊拉修莱德宫开始",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefaultRF",
-        "string": "伊丽……嫁给我",
+        "string": "你就在我的心中烙下了不可磨灭的印记，但是我却一直选择刻意忽略",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "经历了无数的风风雨雨之后这份感情经受住了考验",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "并没有利益上的原因……单纯只是现在是一个合适的契机",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "是时候让这份感情开花结果了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "成为我的女人，伊丽……",
         "special": "dia1"
     },
     {
@@ -745,7 +794,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeRF",
-        "string": "夜晚才刚刚开始呢……",
+        "string": "夜晚才刚刚开始呢，在东方发白之前，给我暂时忘记掉一切……",
         "special": "dia1"
     },
     {
