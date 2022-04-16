@@ -1,0 +1,380 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "满足所有条件后触发<br>1.在除了伊拉修莱德城外所有城市内<br>2.伊丽丝羁绊8剧情完成<br>3.伊丽丝和余的羁绊剧情完成<br>4.伊丽丝通过替换队友的办法离开了队伍",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "听到了城市里的传言",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民A",
+        "face": "",
+        "string": "出大事了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民A",
+        "face": "",
+        "string": "宿句人在正面战场上击溃了势单力薄的伊拉修莱德军队",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民A",
+        "face": "",
+        "string": "据说伊拉修莱德的国王被俘虏了，现在伊拉修莱德一片混乱",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民B",
+        "face": "",
+        "string": "太可怕了，就连那个艾特拉塔之盾也被击溃了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民B",
+        "face": "",
+        "string": "战火会很快蔓延到艾特拉塔全境吧，那些贵族们到底在干什么？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSurprise",
+        "string": "伊拉修莱德被……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "伊丽丝不会有事吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "让信鸟去问一下",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "驱使信鸟发出了慰问信",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我们得快点了，在信鸟传达信息的时候，我们最好去伊拉修莱德附近待命",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "即使那边可能已经变得非常危险",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯，对，我们走吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到伊拉修莱德的野外触发信鸟回信事件",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Serenity",
+        "string": "世清，余，谢谢你们关心我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Serenity",
+        "string": "这是我作为伊拉修莱德继承者的真正考验",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "现在的伊拉修莱德到处都是战场，你们不要过来……这件事上我不想把你们牵扯进来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "一切结束之后，我们继续像以前那样到处冒险吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "这个笨蛋……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoEmbarrassed",
+        "string": "要置身事外是不可能的，问题是她现在在哪里",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "只要有信鸟……等等",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "你也注意到了吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "她没有掐灭信鸟的消息源，也就是说实际上她现在非常孤立无助",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "虽然嘴上说着我想我们介入，但是她内心实际上非常渴望得到帮助",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoEmbarrassed",
+        "string": "她在逞强什么啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "不过这也确实是她的性格……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "走吧，使用信鸟找到她的位置",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "使用信鸟呼唤伊丽丝，信鸟会变成朝着伊丽丝所在的方向飞行，跟着信鸟来到伊丽丝的秘密基地",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "世清……余……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "你们还是来了啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "伊丽，为什么就不坦率地找我们寻求帮助呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PanicRF",
+        "string": "不是啊，这次我真的不想你们牵涉进来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "把我当成外人吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "对……对不起",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "我……我不知道该怎么办……我好无助……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "爸爸被俘……贵族们乱作一团完全不把我当一回事……宿句人在屠杀无辜的百姓……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "我不想你们也跟着我一起干无用功甚至白白送死",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "伊丽……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "利用我们吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "诶？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "在你面前的是西景帝国的皇帝和皇后",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "面对大军，我们几个人确实微不足道",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "但是，像以前那样尽可能地利用一切达成不可能达成的目标吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "作为伊拉修莱德的王，不择手段利用一切可以利用的手段拯救国家",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "榨取我们的利用价值吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "……说得有点难听，但确实是这个道理……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "谢谢你们……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "自从战争爆发后，我一直都感到绝望，谢谢你们让我感受到了久违的希望",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "待补充",
+        "special": "dia2"
+    }
+]
