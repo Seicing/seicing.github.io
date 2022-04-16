@@ -423,21 +423,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "伊拉修莱德人的事情由伊拉修莱德人自己出力，今晚就等我先好好地想想该怎么办吧",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2SinisterSmile",
-        "string": "我会毫不留情地利用你们的",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Happy",
-        "string": "今晚，就暂时请你们在这里屈就一下吧，希望你们不要介意",
+        "string": "伊拉修莱德人的事情由伊拉修莱德人自己出力，接下来就等我先好好地想想该怎么办吧",
         "special": "dia2"
     },
     {
@@ -472,14 +458,301 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "伊丽丝和余走了出去",
+        "string": "伊丽丝和余走了出去<br>接下来世清可以独自一个人自由行动，可以在某个隐秘的地方找到隐藏概念<br>走出门可以选择“是否等她们回来”来继续剧情",
         "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "真奇怪，暂且自己一个安静一下吧",
+        "face": "SeicingCloseEye",
+        "string": "外面开始日落了",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "好久没有这样自己一个待这么久了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "我们回来了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "去这么久干啥了？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "商讨了一些比较严肃的东西",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "想好计策了吗？看起来是一个很大的计划啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "过几天蚩幽人会有狩猎节，我会命令老爷子以警戒叛乱势力为由集结大量蚩幽武士在东部边界",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "你去给世行发消息，说蚩幽人在东部边境可能要趁着狩猎节叛乱，命令他集结部队去警戒",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "这两个我们各自联系，对其他人保密，即两支部队都不知道彼此在干啥",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoEmbarrassed",
+        "string": "不过要强调尽可能克制，在确定之前不要行动，避免流血冲突",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "让大量军队集结在东部边境吗？这样做的意义是？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "做出“西景人正在集结部队”的假动作",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "难道说……！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "我们利用信息差，造出西景正在集结援军支援伊拉修莱德的假象",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "各怀鬼胎的伊拉修莱德抵抗部队就会有一个重新集结在一起某人旗下的理由",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Serenity",
+        "string": "“伊拉修莱德皇帝”……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SerenityRF",
+        "string": "这也是让伊拉修莱德人信服的办法",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "伊拉修莱德的第一公主和西景帝国的皇帝联姻，获得帝国的道统",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "伊拉修莱德将会作为西景的自治领成立帝国，不再遵守抛弃了我们的艾特拉塔的规矩……西景皇帝就是新的规则",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "原来如此，如果成为了法统的自治领，西景人就有理由介入了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你将会作为皇帝，在西景的庇护下确立保加利亚新的秩序",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "但是……这要你的未来作为代价……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "你是傻逼吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……对不起",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我都没意见了，反而是你下意识觉得别人在开玩笑？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "余……你……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "不过我们也彼此“磨合”了半天，要你马上理解这种情况确实比较困难",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我没有强迫你必须要在我和她之间选择一个，我不想因为我自己，让你们两个压抑自己的感情",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "有些东西，趁着这个机缘巧合还是摊明比较好吧，我不是傻子，都已经在一起这么久了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressedRF",
+        "string": "好了，我要说的就这么多了，被婆婆妈妈的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "谢谢你……余",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清走到伊丽丝面前抓起了她的手",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "不是因为计划，而是单纯地你回应我的感情……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "伊丽……嫁给我",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "是的，我答应你……我的……老公……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmileRF",
+        "string": "我先申明哦，我才是大老婆",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "别破坏气氛",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "夜晚才刚刚开始呢……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羁绊剧情后，伊拉修莱德地区会进入特殊的战争状态，到处出现宿句士兵，随后满足特定条件之后可以触发伊丽丝最后的羁绊10剧情",
+        "special": "dia3"
     }
 ]
