@@ -331,21 +331,21 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
+        "face": "YoSinisterSmile",
         "string": "像以前那样尽可能地利用一切达成不可能达成的目标吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
+        "face": "YoSinisterSmile",
         "string": "作为伊拉修莱德的王，不择手段利用一切可以利用的手段拯救国家",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
+        "face": "YoSinisterSmile",
         "string": "榨取我们的利用价值吧",
         "special": "dia2"
     },
@@ -379,9 +379,107 @@
     },
     {
         "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "可是我们要怎么做呢？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "西景的武士团只是出于维系西景这个前提下接受我的统治，这种境外作战如果没有足够的目的他们是不会听我指令的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "直属于我的士兵只有世行率领的武士团……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "你还想指望他吗？先不说战斗力的差距，世行那小子不知道多少次擅自拒绝你的请求了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "也是啊……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PanicRF",
+        "string": "我好像听到了什么不得了的东西啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "伊拉修莱德人的事情由伊拉修莱德人自己出力，今晚就等我先好好地想想该怎么办吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SinisterSmile",
+        "string": "我会毫不留情地利用你们的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "今晚，就暂时请你们在这里屈就一下吧，希望你们不要介意",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "待补充",
+        "string": "嗯",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "(使了使眼色)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SinisterSmile",
+        "string": "(点头)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝和余走了出去",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "真奇怪，暂且自己一个安静一下吧",
+        "special": "dia1"
     }
 ]
