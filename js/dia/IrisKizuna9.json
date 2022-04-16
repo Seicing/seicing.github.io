@@ -185,13 +185,13 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "虽然嘴上说着我想我们介入，但是她内心实际上非常渴望得到帮助",
+        "string": "虽然嘴上说着不想我们被牵扯进来，但是她内心实际上非常渴望得到帮助",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "face": "YoDepressed",
         "string": "她在逞强什么啊",
         "special": "dia2"
     },
@@ -234,7 +234,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEye",
-        "string": "伊丽，为什么就不坦率地找我们寻求帮助呢",
+        "string": "为什么就不坦率地找我们寻求帮助呢",
         "special": "dia1"
     },
     {
@@ -310,22 +310,22 @@
     {
         "branch": "branch0",
         "name": "余",
+        "face": "YoDepressed",
+        "string": "面对国家的战争，普通人的力量确实微不足道",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
         "face": "YoSinisterSmile",
-        "string": "在你面前的是西景帝国的皇帝和皇后",
+        "string": "但是在你面前的是西景帝国的皇帝和皇后",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "面对大军，我们几个人确实微不足道",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDepressed",
-        "string": "但是，像以前那样尽可能地利用一切达成不可能达成的目标吧",
+        "string": "像以前那样尽可能地利用一切达成不可能达成的目标吧",
         "special": "dia2"
     },
     {
