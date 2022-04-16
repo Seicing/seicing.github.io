@@ -24,21 +24,28 @@
         "branch": "branch0",
         "name": "市民A",
         "face": "",
-        "string": "宿句人在正面战场上击溃了势单力薄的伊拉修莱德军队",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "市民A",
-        "face": "",
-        "string": "据说伊拉修莱德的国王被俘虏了，现在伊拉修莱德一片混乱",
+        "string": "宿句人在正面战场上击溃了伊拉修莱德军队",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "市民B",
         "face": "",
-        "string": "太可怕了，就连那个艾特拉塔之盾也被击溃了",
+        "string": "什么！？是那个艾特拉塔之盾吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民A",
+        "face": "",
+        "string": "参与战斗的宿句人漫山遍野，没有支援的伊拉修莱德就算多强也会沦陷吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "市民A",
+        "face": "",
+        "string": "伊拉修莱德的国王被俘虏了，现在伊拉修莱德一片混乱",
         "special": "dia2"
     },
     {
