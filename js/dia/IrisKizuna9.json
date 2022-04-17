@@ -843,7 +843,98 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "羁绊剧情后，伊拉修莱德地区会进入特殊的战争状态，到处出现宿句士兵，随后满足特定条件之后可以触发伊丽丝最后的羁绊10剧情",
+        "string": "画面暗转后时间来到第二天",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingTerrible",
+        "string": "…………",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingTerrible",
+        "string": "这两个家伙真能折腾……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "看起来她们已经起来并且在做准备了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "加油吧，伊丽，接下来如何团结伊拉修莱德人看你了，我只能和余一起陪你当筹码",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羁绊剧情后，伊拉修莱德地区会进入特殊的战争状态，到处出现宿句士兵，并且伊丽丝会强制离队<br>走出秘密基地去到任何一个城镇都会触发下面的提示剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝的信鸟给世清传递了信件",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊丽的行动结束了吗？我看看",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "老公，伊拉修莱德的贵族们都被我说服，现在开始在伊拉修莱德城集结了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "和宿句人的决战即将开始了……这是关乎到伊拉修莱德命运的一战",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "和余一起过来城堡为我助威吧，我等你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "得赶快了……如果让宿句人甚至伊拉修莱德人意识到背后的不妥，对伊丽就不利了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在战场上尽可能地帮助伊丽吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "还有这称呼……真不习惯……",
+        "special": "dia1"
     }
 ]
