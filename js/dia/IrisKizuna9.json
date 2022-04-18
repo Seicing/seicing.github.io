@@ -507,14 +507,14 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "过几天蚩幽人会有狩猎节，我会命令老爷子以警戒叛乱势力为由集结大量蚩幽武士在东部边界",
+        "string": "过几天蚩幽人会有狩猎节，我会命令老爷子以警戒叛乱势力为由集结大量蚩幽武士在东部边界驻扎",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "你故意放风但不要说出我们的真正目的，世行那小子如果察觉到蚩幽人异常的举动的话，他大概会调动能调动的兵力前往东部边境预防不测",
+        "string": "你故意给世行放风，如果是真的有叛乱的潜在威胁，那小子肯定也不会乱来，乖乖地集合兵力去预备不测",
         "special": "dia2"
     },
     {
@@ -528,77 +528,42 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "让大量军队集结在东部边境吗？这样做的意义是？",
+        "string": "让大量军队集结在东部的边境，难道说……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "做出“西景人正在准备反击”的假动作",
+        "string": "是的，我们是在狐假虎威，利用军队集结让宿句的斥候产生“西景人不怀好意”的错觉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingSurprise",
-        "string": "难道说……！",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Happy",
-        "string": "我们利用信息差，造出西景正在集结援军支援伊拉修莱德的假象",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "各怀鬼胎的伊拉修莱德贵族和抵抗势力就会重新拥有一个集结在某人旗下的理由",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "“伊拉修莱德皇帝”！",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingSurprise",
-        "string": "……",
+        "face": "SeicingDefault",
+        "string": "可是仅仅是这样也无法让宿句人相信",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2SerenityRF",
-        "string": "这也是让伊拉修莱德人信服的办法",
+        "string": "那如果伊拉修莱德的皇女宣布和西景皇帝联姻，那么这个动作就很有深意了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "伊拉修莱德的第一公主和西景帝国的皇帝联姻，获得帝国的道统",
+        "face": "Iris2Shy",
+        "string": "快速集结的帝国军队……以及成为了皇帝妻子的我……这意味着什么呢？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "伊拉修莱德将会作为西景的从属成立帝国，不再遵守抛弃了我们的艾特拉塔的规矩……皇帝就是新的规则",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "我将会作为伊拉修莱德帝国的第一任皇帝……重新团结伊拉修莱德人，粉碎那群贪婪的饿狼",
+        "face": "Iris2ShySmile",
+        "string": "那群见风使舵的伊拉修莱德贵族总是会选择更有利的一方",
         "special": "dia2"
     },
     {
@@ -619,7 +584,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "原来如此，如果成为了西景的从属，西景人就有足够的理由介入了",
+        "string": "如果我们真的有这层关系……西景完全有理由以及合法干涉伊拉修莱德的事务",
         "special": "dia1"
     },
     {
@@ -627,13 +592,6 @@
         "name": "世清",
         "face": "SeicingDefault",
         "string": "即使西景不会真的动武，但在这个关系下，再愚蠢的人也得学会审时度势",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "你会作为最合法的伊拉修莱德庇护者成为新的秩序的缔造者",
         "special": "dia1"
     },
     {
@@ -668,7 +626,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "宿句人会陷入混乱之中，重新形成力量的伊拉修莱德也拥有了击败他们的可能，不错的计策",
+        "string": "宿句人会陷入混乱之中，重新形成力量的伊拉修莱德也拥有了击败他们的可能",
         "special": "dia1"
     },
     {
@@ -689,7 +647,21 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Cry",
-        "string": "……",
+        "string": "果然还是太冒犯了吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "(哭……哭了)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "喂，宫黄世清",
         "special": "dia2"
     },
     {
@@ -801,7 +773,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2DepressedCERF",
-        "string": "我对所有的东西都试图不择手段获得……但唯独这一份感情……我不想……亵渎它……",
+        "string": "我对所有的东西都试图不择手段获得……但唯独这一份感情……我不想作为一个第三者……亵渎它……",
         "special": "dia2"
     },
     {
@@ -1004,14 +976,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "得赶快了……如果让宿句人甚至伊拉修莱德人意识到背后的不妥，对伊丽就不利了",
+        "string": "看起来很顺利，得赶快了，如果让宿句人甚至伊拉修莱德人意识到背后的不妥就不好了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "在战场上尽可能地帮助伊丽吧",
+        "string": "嗯……接下来可以说是西景的内务，在战场上活跃一下筋骨吧",
         "special": "dia1"
     },
     {
