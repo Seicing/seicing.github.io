@@ -689,7 +689,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "这个……",
+        "string": "(怎么连你也参战了啊)",
         "special": "dia1"
     },
     {
@@ -752,8 +752,29 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "余……谢谢你",
+        "string": "抱歉……我刚刚不应该……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SerenityRF",
+        "string": "世清！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "……是",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -774,6 +795,13 @@
         "name": "伊丽丝",
         "face": "Iris2DepressedCERF",
         "string": "我对所有的东西都试图不择手段获得……但唯独这一份感情……我不想作为一个第三者……亵渎它……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "现在……大家都已经互相理解……可以……对我说出那句话吗？",
         "special": "dia2"
     },
     {
@@ -842,15 +870,29 @@
     {
         "branch": "branch0",
         "name": "余",
+        "face": "YoDepressedRF",
+        "string": "你是不是向谁求婚都要说这么一大串难为情的人生总结啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
         "face": "YoSinisterSmileRF",
-        "string": "恭喜你们……不过我先申明哦，我才是大老婆",
+        "string": "不过算了……恭喜你们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmileRF",
+        "string": "不过我先申明哦，我是大老婆",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeRF",
-        "string": "别破坏气氛",
+        "string": "……别破坏气氛",
         "special": "dia1"
     },
     {
