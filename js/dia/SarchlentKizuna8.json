@@ -1,0 +1,828 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "触发条件：和夏修伦组队击杀1000个敌人后在欧哈拉城触发",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……咦？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？？",
+        "face": "PrithviDefault",
+        "string": "嗯……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？？",
+        "face": "PrithviDefault",
+        "string": "这不是世清阁下吗？真没想到可以在这里见到你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "啊！是你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？？",
+        "face": "PrithviDefault",
+        "string": "年轻人，没有必要展现出这么明显的敌意",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "哼，我可是因为你吃了不少苦头",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "夏修伦，这个先生其实对我们没有敌意",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "啊……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？？",
+        "face": "PrithviDefault",
+        "string": "世清阁下还能记得我真是荣幸，说起来我还没有正式在你们面前自我介绍过呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "我的名字是布里陀毗，我和阿齐兹王有点交情，之前介入你们的冒险也是因为他",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "实际上是在一旁盯着我们不要陷入危险之中，我们还以为误会战斗过",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "是啊，真是苦差事，幸好已经结束了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "说起来，从一开始就能感受到第四个人的气息啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentWrySmile",
+        "string": "诶？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "你变得更敏锐了，阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "使用了很高超的隐匿术，但因为我对这个气息有印象，所以被我察觉到了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "别太在意，夏修伦，你感受不到很正常",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "你叫夏修伦啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "完全艾特拉塔风格的名字……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "怎么了，大叔",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "你使用的火焰让我很在意，但是之前我们立场对立所以不能确认",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "今天我们再次相遇是命运的安排吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "哈，既然我们不是敌人，告诉你也无妨吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "全都是这个拉哈布的功劳",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "……可以把它给我看看吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "嗯，没问题，不过你不要试图从我手中抢走这个东西，这可是很重要的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "………………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "亚素玛蒂……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "咦？怎么了？大叔？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "布里陀毗拿出一个和拉哈布仿佛是一对的饰物",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "贾利德，卡哈扎塔语里面“冰雪”的意思，和你的意为“火焰”的拉哈布是同一个遗物上的两个部分",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "那是我的父亲和宿句人战斗时获得的伟大战利品……我被赐予了贾利德，而亚素玛蒂被赐予了拉哈布",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "今天……算是重聚了啊……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "一……一对……？亚素玛蒂……是谁？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "我的妹妹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "二十多年前，她抛弃了王室的荣华富贵，和一个和你的金发一模一样的吟游诗人私奔了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "这样说……你是……我的……舅……舅父？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "还给你起了夏修伦这样一个艾特拉塔名字……看起来她真的是想要和过去一刀两断啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "我在这世界上还有亲人……？我妈妈还活着……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "……遗物不会说谎……我能感受到亚素玛蒂的气息",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "你果然……是我的侄子啊……从第一次看到你的时候，就从你身上感受到熟悉的感觉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "王室……？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "夏修伦，这样说你也是王室血统",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentWrySmile",
+        "string": "诶？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "哎……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "如果我们不是王室成员，可能我们现在会幸福地享受着我们的生活吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "我曾是拘苏摩补罗的王……“布里陀毗罗阇”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "“地王”……原来没有死",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "二十年前，那个几乎统一了整个摩补罗的地王！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "嗯……我继承了父亲的基业，摩补罗在我的努力下将要统一",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "最大的不幸就是我们兄妹都是不得不为自己的爱情付出惨重代价的人吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "你妈妈抛弃了王室的一切选择了真爱……我完全理解，因为我也无可救药地爱上了敌国的公主",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "珊悦姬妲……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "不过我最后没有像你的妈妈一样……我无法抛弃国家去追寻自己的真爱",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "珊悦姬妲和俱苏摩补罗只能选择一个……我选择了……我自己的国家",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "悲剧不可避免地发生了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "感到被背叛的珊悦姬妲在国家灭亡后，在对我的恨意的驱动下，背叛了整个摩补罗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "所以摩补罗现在才被宿句人……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "我是一个失败的国王，同时也是一个失败的大哥",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "宿句人蹂躏了我的祖国之后，还不觉得解恨的珊悦姬妲继续对我进行了疯狂的报复",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "难……难道说……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "珊悦姬妲找到了亚素玛蒂，杀害了无辜的一家三口",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDepressed",
+        "string": "不对！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDepressed",
+        "string": "我还活着，不是吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDepressed",
+        "string": "我妈妈，也就是你的妹妹，也一定活着",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "是啊……我一直坚信这只是珊悦姬妲为了报复我编造的谣言……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "这二十多年的流浪，坚信亚素玛蒂和你还活着，是我继续苟延残喘下去的理由……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "感谢梵天……我这二十多年的思念……今天……终于……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentCry",
+        "string": "舅父……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？",
+        "face": "AmarandaDefault",
+        "string": "布里陀毗先生……你的委托，我接下了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "终于现身了吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……是你？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "真没想到和你在这里再次相会啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这次我们不是敌人，我没理解错的话",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "我和你从来都不是敌人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "杀死你只是因为任务……现在已经没有互相残杀的必要了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "也对，我不想跟你打第二次了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "你才是……跟你战斗是这个世界上最愚蠢的抉择，某种意义上也是多亏了你才会有现在的我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "所以你已经接下我的委托吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "……嗯",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "看起来是命运的安排",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "世清阁下……是吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "你一直要找的“暗杀王”，就是珊悦姬妲",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "……！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "背叛布里陀毗先生后，珊悦姬妲吸收了大量被男人抛弃的女人组建了一个暗杀组织",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "她作为组织的首领，自称“暗杀王”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "暗杀王和结社互相利用，几年前的那个事件就是暗杀王接受结社的委托嫁祸于你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "终于……找到了啊……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "暗杀王座下有大量偏执狂一般的女杀手……她们都视所有男人为仇敌……盲目地憎恨一切",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "哈因……还记得这个名字吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "是之前和你一起行动的那个女人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "发生了很多事，现在她是暗杀王的亲卫队长，暗杀王本身实力强劲诡计多端，被她保护着更难杀死她",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "如果你加入我们的行动，布里陀毗先生的计划的成功率就高很多了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "可以详细说一下吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "布里陀毗戴起了皇冠",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "俱苏摩补罗之冠……我也是在不久前重新夺回手中，它激励了我走向最后的清算",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "珊悦姬妲不会在任何劣势环境中战斗……但是有一个例外，那就是她唯一的弱点……感情",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "当我以这个姿态出现在她的根据地……她就会因为感情的缺陷失去理性",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "这个时间内就是击杀她的好时机",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "亲卫队的哈因则是由我对付",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "她也一样……看见我就会歇斯底里",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "不过，真正的目标是暗杀王，我的任务只是确保哈因不会干涉到你们的行动",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "嗯……一开始只有是我，然后可能的话……就是和你们一起，让一切划上休止符",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "当然了，舅父",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "夏修伦……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "暗杀王夺取了世清的爸爸，舅父你的国家，以及让我的妈妈和我失散",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "一定要报仇……对吧，世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "嗯",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "之后的事情，等我们让这个可恨的家伙变成一具尸体后，再慢慢决定吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "舅父……走吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "……嗯，夏修伦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "一切结束后，再考虑其他事情吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "珊悦姬妲……是时候清算了……",
+        "special": "dia2"
+    }
+]
