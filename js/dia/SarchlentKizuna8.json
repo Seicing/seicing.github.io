@@ -269,7 +269,14 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentLow",
-        "string": "这样说……你是……我的……舅……舅父？",
+        "string": "王室……？等等？这是什么回事？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "你是……我的……舅……舅父？",
         "special": "dia2"
     },
     {
@@ -302,27 +309,6 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCompassion",
-        "string": "王室……？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "夏修伦，这样说你也是王室血统",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "夏修伦",
-        "face": "SarchlentWrySmile",
-        "string": "诶？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
         "string": "哎……",
@@ -339,13 +325,13 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "我曾是拘苏摩补罗的王……“布里陀毗罗阇”",
+        "string": "我曾是俱苏室利刹多罗的王……“布里陀毗罗阇”",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "SeicingSurprise",
         "string": "“地王”……原来没有死",
         "special": "dia1"
     },
@@ -353,14 +339,14 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentSurprise",
-        "string": "二十年前，那个几乎统一了整个摩补罗的地王！？",
+        "string": "二十年前，那个几乎统一了整个室利刹多罗的地王！？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "嗯……我继承了父亲的基业，摩补罗在我的努力下将要统一",
+        "string": "嗯……我继承了父亲的基业，室利刹多罗在我的努力下将要统一",
         "special": "dia2"
     },
     {
@@ -395,7 +381,7 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "珊悦姬妲和俱苏摩补罗只能选择一个……我选择了……我自己的国家",
+        "string": "珊悦姬妲和俱苏室利刹多罗只能选择一个……我选择了……我自己的国家",
         "special": "dia2"
     },
     {
@@ -409,14 +395,14 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "感到被背叛的珊悦姬妲在国家灭亡后，在对我的恨意的驱动下，背叛了整个摩补罗",
+        "string": "感到被背叛的珊悦姬妲在国家灭亡后，在对我的恨意的驱动下，背叛了整个室利刹多罗",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "所以摩补罗现在才被宿句人……",
+        "string": "所以室利刹多罗现在才被宿句人……",
         "special": "dia1"
     },
     {
@@ -703,7 +689,7 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "俱苏摩补罗之冠……我也是在不久前重新夺回手中，它激励了我走向最后的清算",
+        "string": "俱苏室利刹多罗之冠……我也是在不久前重新夺回手中，它激励了我走向最后的清算",
         "special": "dia2"
     },
     {
