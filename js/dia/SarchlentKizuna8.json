@@ -661,7 +661,7 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "发生了很多事，现在她是暗杀王的亲卫队长，暗杀王本身实力强劲诡计多端，被她保护着更难杀死她",
+        "string": "发生了很多事，现在她是暗杀王的亲卫队长，暗杀王本身实力强劲诡计多端，被哈因保护着的她更是难以接近了",
         "special": "dia2"
     },
     {
@@ -673,30 +673,58 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "可以详细说一下吗？",
-        "special": "dia1"
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "嗯……因为你们的出现好像有点忘了……抱歉，布里陀毗先生",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "布里陀毗戴起了皇冠",
+        "string": "阿玛兰达把皇冠给了布里陀毗，布里陀毗戴起了皇冠",
         "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "俱苏摩补罗之冠……我也是在不久前重新夺回手中，它激励了我走向最后的清算",
+        "string": "俱苏摩补罗之冠……终于回到我手里了……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "珊悦姬妲不会在任何劣势环境中战斗……但是有一个例外，那就是她唯一的弱点……感情",
+        "string": "真的是……谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "这是正常的牵及到金钱的委托……不需要任何额外的道谢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "然后是第二个委托，向他们解释一下吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "珊悦姬妲不会在任何劣势环境中战斗，但是有一个例外，那就是她唯一的弱点……感情",
         "special": "dia2"
     },
     {
@@ -717,7 +745,7 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "亲卫队的哈因则是由我对付",
+        "string": "我的任务就是，亲卫队的哈因",
         "special": "dia2"
     },
     {
@@ -731,7 +759,7 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "不过，真正的目标是暗杀王，我的任务只是确保哈因不会干涉到你们的行动",
+        "string": "暗杀王这边，就需要你们按照既定的计划实行了，失去护卫并且失去理性的她，是陨落的好时机",
         "special": "dia2"
     },
     {
@@ -759,7 +787,7 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappy",
-        "string": "暗杀王夺取了世清的爸爸，舅父你的国家，以及让我的妈妈和我失散",
+        "string": "暗杀王杀死了世清的亲生父亲，背叛了室利刹陀罗，以及让我们流离失所",
         "special": "dia2"
     },
     {
