@@ -74,7 +74,7 @@
         "name": "世清",
         "face": "SeicingDefault",
         "string": "“地王”……不考虑夺回属于自己的东西吗？",
-        "special": "dia2"
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -165,7 +165,7 @@
         "name": "世清",
         "face": "SeicingDefault",
         "string": "家伙……是指我吗？",
-        "special": "dia2"
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -318,7 +318,168 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "待补充",
+        "string": "布里陀毗走了之后，洛雨希走上来捏夏修伦的耳朵",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "诶诶诶诶！？好痛啊！你干什么！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich2Default",
+        "string": "你这个笨蛋，死性不改，刚刚不是我救你你就没命了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich2Default",
+        "string": "执行这种危险行动之前为什么不先找我商量一下，就这么想躲开我吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "饶命啊！饶命啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich2Default",
+        "string": "我可不想跟你收尸啊，你这个白痴，做事永远都是这样！糊里糊涂只凭直觉横冲直撞！再这样下去……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "(还是不要当电灯泡好了)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "(对了……不知道他那边如何了)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清离开了两小口去找和他们分开战斗的阿玛兰达，阿玛兰达那边战斗也已经结束，跪在地上怀里抱着失去的哈因",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "看起来布里陀毗先生那边应该是顺利完成计划了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯……你这边好像也……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "你伤势好重啊，没事吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清找了找包里的药草想要给阿玛兰达，但是被叫住了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "……不要靠近",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "刺客之间的战斗充斥着各种卑鄙的机关和毒素，你这样走过来会很危险的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "谢谢你的关心……我已经习惯这种伤势了，我会自己找办法处理的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "虽然我不应该多口……但是你看上去似乎，和她并不是反目成仇那么简单呢……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "可能我和她的感情注定就应该以这样的结局结束吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "布里陀毗先生那边，我会和他联系的，虽然和我扯上关系会很麻烦，但是我感觉到以后还会和你并肩作战",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "最后如果可以的话，让我独自一人在这里再陪她多一会吧……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "(每个人都按照命运的安排活下去……吗？)",
+        "special": "dia1"
     }
 ]
