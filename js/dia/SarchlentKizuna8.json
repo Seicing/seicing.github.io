@@ -24,14 +24,28 @@
         "branch": "branch0",
         "name": "？？？？",
         "face": "PrithviDefault",
-        "string": "这不是世清阁下吗？真没想到可以在这里见到你",
+        "string": "这不是世清阁下吗？还有跟在阁下旁边的金发青年还有没见过的可爱小姐，想必就是西景的余皇后了吧",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "嗯，是的，我就是可爱的余皇后",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你啊……",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentSurprise",
-        "string": "啊！是你",
+        "string": "啊！是你这家伙！",
         "special": "dia2"
     },
     {
@@ -50,30 +64,16 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "夏修伦，这个先生其实对我们没有敌意",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingSurprise",
-        "string": "啊……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
         "name": "？？？？",
         "face": "PrithviDefault",
-        "string": "世清阁下还能记得我真是荣幸，说起来我还没有正式在你们面前自我介绍过呢",
+        "string": "说起来我还没有正式在你们面前自我介绍过呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "我的名字是布里陀毗，我和阿齐兹王有点交情，之前介入你们的冒险也是因为他",
+        "string": "我的名字是布里陀毗，我和阿齐兹王有点交情，所以帮助他介入了一下之前你们的冒险",
         "special": "dia2"
     },
     {
@@ -94,7 +94,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingPeep",
-        "string": "说起来，从一开始就能感受到第四个人的气息啊",
+        "string": "说起来，从一开始就能感受到第五个人的气息啊",
         "special": "dia1"
     },
     {
@@ -113,17 +113,10 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingPeep",
-        "string": "使用了很高超的隐匿术，但因为我对这个气息有印象，所以被我察觉到了",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEye",
-        "string": "别太在意，夏修伦，你感受不到很正常",
-        "special": "dia1"
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我也感觉到了，夏修伦你的洞察力还是不行啊",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -274,16 +267,16 @@
     },
     {
         "branch": "branch0",
-        "name": "夏修伦",
-        "face": "SarchlentLow",
-        "string": "你是……我的……舅……舅父？",
+        "name": "布里陀毗",
+        "face": "PrithviDefault",
+        "string": "还给你起了夏修伦这样一个艾特拉塔名字……看起来她真的是想要和过去一刀两断啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "布里陀毗",
-        "face": "PrithviDefault",
-        "string": "还给你起了夏修伦这样一个艾特拉塔名字……看起来她真的是想要和过去一刀两断啊",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "你是……我的……舅……舅父？",
         "special": "dia2"
     },
     {
@@ -337,9 +330,9 @@
     },
     {
         "branch": "branch0",
-        "name": "夏修伦",
-        "face": "SarchlentSurprise",
-        "string": "二十年前，那个几乎统一了整个室利刹陀罗的地王！？",
+        "name": "余",
+        "face": "YoSurprise",
+        "string": "这个名字我也有印象，是那个二十年前几乎成功统一室利刹陀罗的国王！？",
         "special": "dia2"
     },
     {
@@ -353,35 +346,21 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "最大的不幸就是我们兄妹都是不得不为自己的爱情付出惨重代价的人吧",
+        "string": "但是注定我们走向悲惨命运的……就是爱情",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "你妈妈抛弃了王室的一切选择了真爱……我完全理解，因为我也无可救药地爱上了敌国的公主",
+        "string": "亚素玛蒂抛弃了王室的一切选择了真爱，而我也无可救药地爱上了敌国的公主……珊悦姬妲",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "珊悦姬妲……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "布里陀毗",
-        "face": "PrithviDefault",
-        "string": "不过我最后没有像你的妈妈一样……我无法抛弃国家去追寻自己的真爱",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "布里陀毗",
-        "face": "PrithviDefault",
-        "string": "珊悦姬妲和俱苏摩补罗只能选择一个……我选择了……我自己的国家",
+        "string": "不过我最后没有像亚素玛蒂一样，珊悦姬妲和俱苏摩补罗只能选择一个……我选择了……我自己的国家",
         "special": "dia2"
     },
     {
@@ -395,28 +374,28 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "感到被背叛的珊悦姬妲在国家灭亡后，在对我的恨意的驱动下，背叛了整个室利刹陀罗",
+        "string": "感到被背叛的珊悦姬妲在国家灭亡后，伴随着对我的剧烈恨意背叛了整个室利刹陀罗",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "所以室利刹陀罗现在才被宿句人……",
+        "string": "所以室利刹陀罗现在才……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "我是一个失败的国王，同时也是一个失败的大哥",
+        "string": "是啊……我是一个失败的亡国之君",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "宿句人蹂躏了我的祖国之后，还不觉得解恨的珊悦姬妲继续对我进行了疯狂的报复",
+        "string": "宿句人蹂躏了我的祖国之后，珊悦姬妲继续对我进行疯狂的报复",
         "special": "dia2"
     },
     {
@@ -479,14 +458,14 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "感谢梵天……我这二十多年的思念……今天……终于……",
+        "string": "感谢梵天……今天我……终于……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "夏修伦",
-        "face": "SarchlentCry",
-        "string": "舅父……！",
+        "name": "？？？",
+        "face": "AmarandaDefault",
+        "string": "很抱歉打断一下，不过你们再这样下去恐怕今天就这样过去了",
         "special": "dia2"
     },
     {
@@ -500,7 +479,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "终于现身了吗？",
+        "string": "一直隐藏气息的人终于现身了吗？",
         "special": "dia1"
     },
     {
@@ -542,7 +521,7 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "杀死你只是因为任务……现在已经没有互相残杀的必要了",
+        "string": "刺杀你只是因为任务……现在已经没有互相残杀的必要了",
         "special": "dia2"
     },
     {
@@ -563,7 +542,7 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "PrithviDefault",
-        "string": "所以你已经接下我的委托吗？",
+        "string": "所以，你已经考虑清楚了吗？",
         "special": "dia2"
     },
     {
@@ -633,8 +612,15 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingAngry",
-        "string": "终于……找到了啊……",
+        "string": "终于……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoUncomfortable",
+        "string": "世清……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -647,14 +633,14 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "哈因……还记得这个名字吧",
+        "string": "哈因，还记得这个名字吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "是之前和你一起行动的那个女人",
+        "string": "记得，是之前和你一起行动的那个女人",
         "special": "dia1"
     },
     {
@@ -703,7 +689,7 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "这是正常的牵及到金钱的委托……不需要任何额外的道谢",
+        "string": "这是正常的牵及到金钱的委托，不需要任何额外的道谢",
         "special": "dia2"
     },
     {
@@ -717,7 +703,7 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "嗯……",
+        "string": "嗯",
         "special": "dia2"
     },
     {
@@ -731,42 +717,35 @@
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "当我以这个姿态出现在她的根据地……她就会因为感情的缺陷失去理性",
+        "string": "再次戴上俱苏摩补罗之冠的我在她面前出现，她会因为我的挑衅而失去理性",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "这个时间内就是击杀她的好时机",
+        "string": "失去判断力的刺客……等待她的只有死路一条了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "我的任务就是，亲卫队的哈因",
+        "string": "而我的任务就是亲卫队的哈因，我会用一切手段把她和暗杀王分开的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "她也一样……看见我就会歇斯底里",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿玛兰达",
-        "face": "AmarandaDefault",
-        "string": "暗杀王这边，就需要你们按照既定的计划实行了，失去护卫并且失去理性的她，是陨落的好时机",
+        "string": "我只能为你们击杀暗杀王创造条件，至于能否击杀暗杀王，就要看你们的能耐了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "嗯……一开始只有是我，然后可能的话……就是和你们一起，让一切划上休止符",
+        "string": "如果你们能来帮助我成功的可能性就更高了",
         "special": "dia2"
     },
     {
@@ -858,6 +837,55 @@
         "name": "布里陀毗",
         "face": "Prithvi2Default",
         "string": "珊悦姬妲……是时候清算了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "如果世清和余触发了少于4个羁绊剧情，则这个羁绊剧情就会在夏修伦和布里陀毗走远后消失，反之如果和余的羁绊足够高的话就会触发下面的额外剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这次我会出于道义帮助夏修伦，但不应该把你牵及进来，暗杀被称为“暗杀王”的杀手，也未免太危险了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "布里陀毗……就是因为无法和他的爱人互相理解，从而走向了悲剧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "我想毫无保留地跟你互相坦诚，我想跟你一起战斗下去，因为我无法看到你处于危险中我只能担心",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "……谢谢你",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "不过要记得不要逞强……你受伤的话我会很难受的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoHappyRF",
+        "string": "嗯……我们走吧，跟丢了他们就麻烦了",
         "special": "dia2"
     }
 ]
