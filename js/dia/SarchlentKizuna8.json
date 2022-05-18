@@ -850,7 +850,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "这次我会出于道义帮助夏修伦，但不应该把你牵及进来，暗杀被称为“暗杀王”的杀手，也未免太危险了",
+        "string": "余，和以往的战斗不同，和暗杀者的战斗不是战斗，而是和死神跳舞，我亲身经历过被暗杀的体验所以很清楚",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "暗杀被称为“暗杀王”的杀手，也未免太危险了，不应该把你牵及进来，你在安全的地方等我们的消息吧",
         "special": "dia1"
     },
     {
@@ -871,7 +878,14 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "我想毫无保留地跟你互相坦诚，那就是我想跟你一起战斗，因为我无法看到你处于危险中我只能担心",
+        "string": "我想毫无保留地跟你互相坦诚，那就是我想跟你一起战斗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "我无法做到眼睁睁看着你身处危险中无能为力，我会在努力保护自己性命的同时，和你一起战斗",
         "special": "dia2"
     },
     {
@@ -892,7 +906,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoHappyRF",
-        "string": "嗯……我们走吧，跟丢了他们就麻烦了",
+        "string": "嗯……我们走吧，快要跟丢他们了",
         "special": "dia2"
     }
 ]
