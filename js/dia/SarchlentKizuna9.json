@@ -451,21 +451,28 @@
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "可能我和她的感情注定就应该以这样的结局结束吧",
+        "string": "这是我和她的命运……注定就应该以这样的结局结束的命运",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "布里陀毗先生那边，我会和他联系的，虽然和我扯上关系会很麻烦，但是我感觉到以后还会和你并肩作战",
+        "string": "布里陀毗先生那边，我会和他联系的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaDefault",
-        "string": "最后如果可以的话，让我独自一人在这里再陪她多一会吧……",
+        "string": "虽然和我扯上关系会很麻烦，但是我感觉到以后还会和你并肩作战，有话的话，就留到那个时候再说吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "可以的话，让我独自一人在这里再陪她多一会吧……",
         "special": "dia2"
     },
     {
@@ -479,7 +486,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "(每个人都按照命运的安排活下去……吗？)",
+        "string": "(命运……吗？抗争命运，或是适应命运，每个人都因此活出了自己的不同)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "(可能这就是“活着”的代价以及……意义吧)",
         "special": "dia1"
     }
 ]
