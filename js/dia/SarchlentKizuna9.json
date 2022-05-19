@@ -8,10 +8,332 @@
     },
     {
         "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "又一起回到这里了啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "上次来这里是因为船只不得不绕道靠岸在这里维修",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "然后遇到了一堆莫名其妙的家伙……今天竟然所有的主角都再次在这里集合了啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "伊丽和洛雨希不在有点可惜，想了一下这里是我们开始正式结伴旅行的出发地呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "真是怀念啊，不过现在没有那么多闲情逸致在这里闲聊了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "对手是“暗杀王”，踏入这个城市的那一刻起我们就游走在死亡的边缘了，小心点",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "你们去月亮水井，无名先生，跟我一起行动",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "待补充",
+        "string": "前往月亮水井的暗杀团秘密入口，远处传来了爆炸的声音，一道快速的身影穿过月亮水井的天空 ",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "这么快就开始行动了吗？！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈因",
+        "face": "HayinDefault",
+        "string": "你这家伙！别跑……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈因",
+        "face": "HayinDefault",
+        "string": "等等……是你们！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈因",
+        "face": "HayinDefault",
+        "string": "是陷阱？拉妮有危险！可恶",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaDefault",
+        "string": "你的对手是我，别想着你的拉妮",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿玛兰达使用巨弩把哈因击飞到隐藏入口后跟了上去，然后暗杀王和布里陀毗也来到了月亮水井",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "布里陀毗！不要把我当傻子！不要以为我不知道你是故意激怒我让我落单！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "我故意跟上来就是为了证明你就是个懦夫！我会用真正的实力来让你们这些只会耍小手段的男人知道你们的无能！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "余小姐！世清阁下！你们可以去阻挡一下追兵吗！？夏修伦！准备战斗！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSurprise",
+        "string": "世清！我们走！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "夏修伦退队，进行小规模战斗后听到了夏修伦的惨叫声",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "夏……夏修伦……！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "世清！我在这里挡着，都是些杂鱼我一个人就足够了，快去帮助夏修伦！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "啊……是……！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "返回月亮水井，发现暗杀王被挡在夏修伦之前的洛雨希一枪射伤，夏修伦在洛雨希身后惊讶地看着她",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "洛雨希……你怎么……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich2Angry",
+        "string": "有话在之后再说，你这家伙找死吗？竟然直接冲到她面前",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "洛雨希",
+        "face": "Louich2Angry",
+        "string": "世清！来夹击暗杀王！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "Boss战：暗杀王，战斗结束后暗杀王被布里陀毗一箭穿心，随后她被布里陀毗接住",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "啊…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "珊悦姬妲……你还是跟以前一样，冲动……任性……最后也因为这样葬送了自己的性命……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "你也没变过……跟以前一样残酷……无情……没有任何犹豫就对我射出致命的弓箭……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "长达二十余年的持久战是你赢了啊……伟大的布里陀毗罗阇……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "这场战争没有胜利者……有的只是满目疮痍的我们而已……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "必须要做个了断……是吗……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "一切的一切我们都可以避免的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "不……从你和我在敌对的国家的宫廷中出生就注定我们的爱情是被诅咒的……无论如何选择都会是今天这个境地……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "这二十年来我一直在想……如果我们生在平凡百姓家……我们的结局会不一样吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "不会有如果的……如果真的能选择……我们这几十年来刻骨铭心的憎恨都成为了笑话……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "珊悦姬妲……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "我们……终于是解脱了啊……两国最后的争斗在今天终于落下帷幕……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "迦诃达婆罗的公主今天彻底失败了……两国的战争是俱苏摩补罗的胜利……除此之外毫无意义……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "一切都结束了……一切都落下帷幕了……一切都被解脱了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "布里陀毗……抱着我……让我在你的怀中死去……这辈子……我们注定有缘无分……我希望在轮回转世之后……可以再度和你在一起……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "布里陀毗…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "暗杀王在布里陀毗的怀中死去了，这时候外面的余也走了进来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoUncomfortable",
+        "string": "暗杀团的成员都四散而逃了……我们胜利了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "嗯……一切都结束了，余你没事真是太好了",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -360,14 +682,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "(还是不要当电灯泡好了)",
+        "string": "(还是不要当电灯泡好了，走吧，余)",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "(嗯……我想也是)",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "(对了……不知道他那边如何了)",
+        "string": "(不知道他那边如何了……过去看看吧)",
         "special": "dia1"
     },
     {
