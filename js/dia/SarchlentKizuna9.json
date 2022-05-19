@@ -80,7 +80,7 @@
         "branch": "branch0",
         "name": "哈因",
         "face": "HayinDefault",
-        "string": "你这家伙！别跑……",
+        "string": "阿玛兰达！我们这么不容易再次相遇，你为什么逃这么快啊",
         "special": "dia2"
     },
     {
@@ -106,6 +106,13 @@
     },
     {
         "branch": "branch0",
+        "name": "哈因",
+        "face": "HayinDefault",
+        "string": "好痛啊！阿玛兰达！我好兴奋啊！你要陪我的话，那就来吧！我们用性命来当赌注杀戮到最后一刻吧！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "",
         "face": "",
         "string": "阿玛兰达使用巨弩把哈因击飞到隐藏入口后跟了上去，然后暗杀王和布里陀毗也来到了月亮水井",
@@ -127,9 +134,16 @@
     },
     {
         "branch": "branch0",
+        "name": "暗杀王",
+        "face": "SanyogitaDefault",
+        "string": "布里陀毗！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "布里陀毗",
         "face": "Prithvi2Default",
-        "string": "余小姐！世清阁下！你们可以去阻挡一下追兵吗！？夏修伦！准备战斗！",
+        "string": "……余小姐，世清阁下，你们可以去阻挡一下追兵吗？这里我和夏修伦会处理好的",
         "special": "dia2"
     },
     {
@@ -220,7 +234,7 @@
         "branch": "branch0",
         "name": "暗杀王",
         "face": "SanyogitaDefault",
-        "string": "你也没变过……跟以前一样残酷……无情……没有任何犹豫就对我射出致命的弓箭……",
+        "string": "你也没变过……跟以前一样残酷……无情……没有任何犹豫……就用箭矢把我的心脏……贯穿……",
         "special": "dia2"
     },
     {
