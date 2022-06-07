@@ -100,8 +100,22 @@
     {
         "branch": "branch0",
         "name": "哈因",
+        "face": "HayinAngry",
+        "string": "他妈的，拉妮，抱歉了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈因",
         "face": "HayinDefault",
-        "string": "好痛啊！亲爱的！我好兴奋啊！你要陪我的话，那就来吧！我们用性命来当赌注杀戮到最后一刻吧！",
+        "string": "亲爱的，难得你这么热情",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈因",
+        "face": "HayinAngry",
+        "string": "我们就抛下一切尽情地共舞直到其中一方死去吧！！",
         "special": "dia2"
     },
     {
