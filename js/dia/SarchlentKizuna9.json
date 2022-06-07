@@ -17,14 +17,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "上次来这里是因为船只不得不绕道靠岸在这里维修",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "然后遇到了一堆莫名其妙的家伙……今天竟然所有的主角都再次在这里集合了啊",
+        "string": "上次来这里是因为船只不得不绕道靠岸在这里维修，真怀念啊",
         "special": "dia1"
     },
     {
@@ -36,9 +29,9 @@
     },
     {
         "branch": "branch0",
-        "name": "夏修伦",
-        "face": "SarchlentDefault",
-        "string": "真是怀念啊，不过现在没有那么多闲情逸致在这里闲聊了",
+        "name": "布里陀毗",
+        "face": "Prithvi2Default",
+        "string": "现在不是感叹的时候，孩子们",
         "special": "dia2"
     },
     {
@@ -58,7 +51,7 @@
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSide",
         "string": "嗯……",
         "special": "dia2"
     },
@@ -79,28 +72,28 @@
     {
         "branch": "branch0",
         "name": "哈因",
-        "face": "HayinDefault",
+        "face": "HayinAngry",
         "string": "亲爱的！我们这么不容易再次相遇，你为什么逃这么快啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈因",
-        "face": "HayinDefault",
+        "face": "HayinSurprise",
         "string": "等等……是你们！？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈因",
-        "face": "HayinDefault",
+        "face": "HayinAngry",
         "string": "是陷阱？拉妮有危险！可恶",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaAngry",
         "string": "你的对手是我，别想着你的拉妮",
         "special": "dia2"
     },
@@ -121,21 +114,21 @@
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaAngry",
         "string": "布里陀毗！不要把我当傻子！不要以为我不知道你是故意激怒我让我落单！",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaAngry",
         "string": "我故意跟上来就是为了证明你就是个懦夫！我会用真正的实力来让你们这些只会耍小手段的男人知道你们的无能！",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaAngry",
         "string": "布里陀毗！",
         "special": "dia2"
     },
@@ -219,112 +212,112 @@
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamage",
         "string": "啊…………",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2Sad",
         "string": "珊悦姬妲……你还是跟以前一样，冲动……任性……最后也因为这样葬送了自己的性命……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageWrySmile",
         "string": "你也没变过……跟以前一样残酷……无情……没有任何犹豫……就用箭矢把我的心脏……贯穿……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageWrySmile",
         "string": "长达二十余年的持久战是你赢了啊……伟大的布里陀毗罗阇……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2Sad",
         "string": "这场战争没有胜利者……有的只是满目疮痍的我们而已……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamage",
         "string": "必须要做个了断……是吗……？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "一切的一切我们都可以避免的……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "不……从你和我在敌对的国家的宫廷中出生就注定我们的爱情是被诅咒的……无论如何选择都会是今天这个境地……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "这二十年来我一直在想……如果我们生在平凡百姓家……我们的结局会不一样吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "不会有如果的……如果真的能选择……我们这几十年来刻骨铭心的憎恨都成为了笑话……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2Sad",
         "string": "珊悦姬妲……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "我们……终于是解脱了啊……两国最后的争斗在今天终于落下帷幕……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "迦诃达婆罗的公主今天彻底失败了……两国的战争是俱苏摩补罗的胜利……除此之外毫无意义……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "一切都结束了……一切都落下帷幕了……一切都被解脱了……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "布里陀毗……抱着我……让我在你的怀中死去……这辈子……我们注定有缘无分……我希望在轮回转世之后……可以再度和你在一起……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "暗杀王",
-        "face": "SanyogitaDefault",
+        "face": "SanyogitaDamageCloseEye",
         "string": "布里陀毗…………",
         "special": "dia2"
     },
@@ -352,7 +345,7 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2Sad",
         "string": "终于……完结了啊",
         "special": "dia2"
     },
@@ -366,21 +359,21 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "心中只有无尽的空虚",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "我现在心里完全不知道是什么感觉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "看来只能由时间来抚平一切了吧",
         "special": "dia2"
     },
@@ -394,14 +387,14 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "安葬好珊悦姬妲之后，去寻找亚素玛蒂吧",
         "special": "dia2"
     },
@@ -436,14 +429,14 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "我还有必要去让这片土地重新陷入战火中去吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "是时候把一切放下了……夏修伦，你会觉得失望吗？",
         "special": "dia2"
     },
@@ -471,7 +464,7 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "最大的失望，可能就是给予希望之后，再陷入失望之中吧……对不起",
         "special": "dia2"
     },
@@ -500,7 +493,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "家伙……是指我吗？",
+        "string": "……",
         "special": "dia1"
     },
     {
@@ -583,7 +576,7 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "我虽然是爱情的失败者，但是该懂的我都懂的，我就不阻碍年轻人了",
         "special": "dia2"
     },
@@ -639,7 +632,7 @@
     {
         "branch": "branch0",
         "name": "布里陀毗",
-        "face": "Prithvi2Default",
+        "face": "Prithvi2CloseEye",
         "string": "再见了，我的侄子，期望我们下次见面的时候……是我们全家团圆的那一天",
         "special": "dia2"
     },
@@ -723,14 +716,14 @@
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSideSad",
         "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaDepressed",
         "string": "看起来布里陀毗先生那边应该是顺利完成计划了",
         "special": "dia2"
     },
@@ -758,21 +751,21 @@
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaDepressed",
         "string": "……不要靠近",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaDepressed",
         "string": "刺客之间的战斗充斥着各种卑鄙的机关和毒素，你这样走过来会很危险的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSide",
         "string": "谢谢你的关心……我已经习惯这种伤势了，我会自己找办法处理的……",
         "special": "dia2"
     },
@@ -793,28 +786,28 @@
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSide",
         "string": "这是我和她的命运……注定就应该以这样的结局结束的命运",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSide",
         "string": "布里陀毗先生那边，我会和他联系的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSide",
         "string": "虽然和我扯上关系会很麻烦，但是我感觉到以后还会和你并肩作战，有话的话，就留到那个时候再说吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
-        "face": "AmarandaDefault",
+        "face": "AmarandaSide",
         "string": "可以的话，让我独自一人在这里再陪她多一会吧……",
         "special": "dia2"
     },
