@@ -780,14 +780,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "虽然我不应该多口……但是你看上去似乎，和她并不是反目成仇那么简单呢……",
+        "string": "虽然我不应该多口，但是，实际上你并不想杀死她……是吧",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "阿玛兰达",
         "face": "AmarandaSide",
-        "string": "这是我和她的命运……注定就应该以这样的结局结束的命运",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿玛兰达",
+        "face": "AmarandaSide",
+        "string": "我和她注定以这种命运迎来结局，既然是这样，我也只能接受这样的命运",
         "special": "dia2"
     },
     {
