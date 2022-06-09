@@ -80,9 +80,9 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(远程)</span></td>
             <td style="background-color:#c4ffbf">-</td>
-            <td style="background-color:#f5ffbf">60</td>
-            <td style="background-color:#ffd6a7">60</td>
-            <td style="background-color:#ffa7a7">60</td>
+            <td style="background-color:#f5ffbf">40</td>
+            <td style="background-color:#ffd6a7">40</td>
+            <td style="background-color:#ffa7a7">40</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
@@ -90,14 +90,14 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击间隔时间</span></td>
-            <td colspan="4">6.25</td>
+            <td colspan="4">4.5</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">对[船只]加成</span></td>
             <td style="background-color:#c4ffbf">-</td>
-            <td style="background-color:#f5ffbf">+50</td>
-            <td style="background-color:#ffd6a7">+50</td>
-            <td style="background-color:#ffa7a7">+50</td>
+            <td style="background-color:#f5ffbf">+40</td>
+            <td style="background-color:#ffd6a7">+40</td>
+            <td style="background-color:#ffa7a7">+40</td>
         </tr>
 
 
@@ -122,7 +122,7 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     石墙塔是依附在城墙上的弩炮射击点，玩家的部队可以通过石墙塔通往城墙顶端 <br>
     石墙塔是攻城战里面重要的目标，存在正反面，无法攻击到背后的单位 <br>
-    蒙古人和罗斯人无法建造石墙塔 <br>
+    蒙古人和罗斯人无法建造石墙塔，但是罗斯人可以通过建造斯巴斯克塔来解锁建造石墙塔的权利 <br>
 
 
 </div>
@@ -145,9 +145,10 @@
         style="color:#D0C9B7">神圣罗马帝国</a> &nbsp
     <a id="sulButton0" href="javascript:void(0);" onclick="tipsg('sulText0','sulButton0','0')"
         style="color:#D0C9B7">德里苏丹国</a> &nbsp
+    <a id="rusButton0" href="javascript:void(0);" onclick="tipsg('rusText0','rusButton0','0')"
+        style="color:#D0C9B7">罗斯</a> &nbsp
     <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')"
         style="color:#D0C9B7">法兰西</a> &nbsp
-
 
     <div id="abbText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
@@ -162,6 +163,9 @@
         这座建筑物没有科技可以研发
     </div>
     <div id="sulText0" style="text-align: left;display:none ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="rusText0" style="text-align: left;display:none ">
         这座建筑物没有科技可以研发
     </div>
     <div id="freText0" style="text-align: left;display:none ">
@@ -190,6 +194,8 @@
         style="color:#D0C9B7">神圣罗马帝国</a> &nbsp
     <a id="sulButton1" href="javascript:void(0);" onclick="tipsg('sulText1','sulButton1','1')"
         style="color:#D0C9B7">德里苏丹国</a> &nbsp
+    <a id="rusButton1" href="javascript:void(0);" onclick="tipsg('rusText1','rusButton1','1')"
+        style="color:#D0C9B7">罗斯</a> &nbsp
     <a id="freButton1" href="javascript:void(0);" onclick="tipsg('freText1','freButton1','1')"
         style="color:#D0C9B7">法兰西</a> &nbsp
 
@@ -203,7 +209,7 @@
                 </td>
             </tr>
             <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
@@ -224,7 +230,7 @@
                 </td>
             </tr>
             <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
@@ -253,7 +259,7 @@
                 </td>
             </tr>
             <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
@@ -272,7 +278,7 @@
                 </td>
             </tr>
             <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
@@ -297,7 +303,7 @@
                 </td>
             </tr>
             <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
@@ -306,6 +312,26 @@
             </tr>
         </table>
     </div>
+    <div id="rusText1" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
     <div id="freText1" style="text-align: left;display:none ">
         <table frame="box" width="500px" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -315,7 +341,7 @@
                 </td>
             </tr>
             <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
