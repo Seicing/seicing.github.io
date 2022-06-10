@@ -427,10 +427,31 @@
         "special": "dia2"
     },
     {
-        "branch": "branch0",
+        "branch": "branch1",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "她如果出了什么问题，就算是兄弟，今天你也只能下地狱后悔了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch1",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "我要的就是这个效果啊，再愤怒一点吧，你着急的样子真是让人愉悦啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch2",
         "name": "世清",
         "face": "SeicingAngry",
         "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch1",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "………………",
         "special": "dia1"
     },
     {
@@ -483,17 +504,31 @@
         "special": "dia2"
     },
     {
-        "branch": "branch0",
+        "branch": "branch1",
         "name": "世行",
         "face": "SeigentSinisterSmile",
-        "string": "你和我之间一定要死一个，你胆敢逃跑的话，你不仅会被我取代作为皇帝的荣誉，同时你的余会被我的人找到并且施与让你抱憾终身的刑罚",
+        "string": "你和我之间一定要死一个，你胆敢逃跑的话，你的余会被我找到，并且将会遭遇让你一辈子刻骨铭心的非人对待",
         "special": "dia2"
     },
     {
-        "branch": "branch0",
+        "branch": "branch2",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "你和我之间一定要死一个，你胆敢逃跑的话，你那被我的人控制的老婆会发生点什么，什么都有可能哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch1",
         "name": "世清",
         "face": "SeicingAngry",
-        "string": "你这个疯子……不要拿余开玩笑，你想死我随时奉陪到底",
+        "string": "你竟然敢拿余开玩笑……你想死我随时奉陪到底",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "不要拿余开玩笑，你这个疯子……你想死我随时奉陪到底",
         "special": "dia1"
     },
     {
