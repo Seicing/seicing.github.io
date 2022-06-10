@@ -31,49 +31,42 @@
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
-        "string": "难道……你所说的……道德……不允许我……救你吗？",
+        "string": "我也不知道……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
-        "string": "哈……哈哈……好痛啊……",
+        "string": "呼吸……开始变得困难了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
-        "string": "我要死……了吧",
+        "string": "没想到……今天就是我的……忌日啊……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCompassionNO",
-        "string": "被那个攻击打中……不可能活下来了",
+        "face": "SeicingCompassion",
+        "string": "你……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "你……为什么",
+        "string": "和歌山呢……？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
-        "string": "别……自作多情……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "宫黄",
-        "face": "MiyakoDefault",
-        "string": "我只是……觉得这样……能感觉到自己……还在这世界上……",
+        "string": "病死……了……",
         "special": "dia2"
     },
     {
@@ -120,16 +113,30 @@
     },
     {
         "branch": "branch0",
+        "name": "宫黄",
+        "face": "MiyakoDefault",
+        "string": "在看到你将要……被击杀的……一瞬间……我听到了……和歌山的声音……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCompassion",
-        "string": "是心中仅存的善念驱使了你本能地救了我一命吗？",
+        "face": "SeicingSurprise",
+        "string": "“善念”……？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
-        "string": "你爱……这样理解……随你便……",
+        "string": "……如果我不出手……和歌山……会伤心的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "宫黄",
+        "face": "MiyakoDefault",
+        "string": "善念……？我没有那种……东西……别自作多情……",
         "special": "dia2"
     },
     {
@@ -234,6 +241,13 @@
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
+        "string": "和歌山……告诉我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "宫黄",
+        "face": "MiyakoDefault",
         "string": "我不是……你的复制人……我叫……宫黄……我拥有……高贵的……灵魂",
         "special": "dia2"
     },
@@ -241,7 +255,14 @@
         "branch": "branch0",
         "name": "宫黄",
         "face": "MiyakoDefault",
-        "string": "我会……作为宫黄……这个人……死去",
+        "string": "我不是……作为……你的替代品……存在的……我是……真正的人……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "宫黄",
+        "face": "MiyakoDefault",
+        "string": "即使……今天我死了……也会……作为宫黄……这个人……死去",
         "special": "dia2"
     },
     {
@@ -297,7 +318,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "宫黄死亡",
+        "string": "宫黄安详地断气了",
         "special": "dia3"
     },
     {
@@ -311,7 +332,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionNO",
-        "string": "安息吧……悲哀的生命",
+        "string": "真是悲哀的生命啊……",
         "special": "dia1"
     },
     {
@@ -324,22 +345,29 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "四周都变成了战场，余到底去哪了，不会有事吧……",
+        "face": "SeicingCompassionNO",
+        "string": "宫黄，你对和歌山的爱使得你给了我不要让自己遗憾的机会",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "无论变得多危险，我都要把她找出来",
+        "face": "SeicingCompassionNO",
+        "string": "如果接下来我无法从世行的手中守护好余，那就完全对不起你给我的这条命了，我不想死后会被你这混账嘲笑",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "然后结束这一切……",
+        "face": "SeicingCompassion",
+        "string": "无论变得多危险，我都要把她找出来并保护好",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "你就好好地在天上看到这一切吧……",
         "special": "dia1"
     }
 ]

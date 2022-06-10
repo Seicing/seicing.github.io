@@ -304,140 +304,98 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "世行！为什么你会在这里",
+        "string": "世行？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "你出现在这里……真不希望是我想象中的那样",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "哥",
+        "string": "你一直都默认我会背叛你，而我一直压制自己的本性为你效忠",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
-        "face": "SeigentSinisterSmile",
-        "string": "马上就要死了就不要想那么多了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentSinisterSmile",
-        "string": "现在这里已经沦为了战场，你在这里丢掉性命也不会有人怀疑什么",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "你要背叛我吗？世行",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "在临死之前我就坦白吧，哥",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "我嫉妒你",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "我看到你这张臭脸我就想吐",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "我比你对这个国家投入了更多的精力",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "可是，世人只看到了你，把一切都归功于你",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "我就是你的影子",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "你从一开始遇到我……就打算取代我吧",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentSinisterSmile",
-        "string": "是啊，我想起对你的阿谀奉承我就想吐",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentSinisterSmile",
-        "string": "我到底哪里不如你，我无论什么都可以做得比你更好",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentSinisterSmile",
-        "string": "我才是最适合成为西景的皇帝的人，我会用实际行动来证明这一切",
+        "face": "SeigentSmile",
+        "string": "我们竟然可以在这种诡异的默契中走到现在",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEye",
-        "string": "口口声声说自己比我更好，所以最后那么轻易地出卖了自己的国家啊",
+        "string": "那我明白了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "你有很多地方让我看不顺眼……但是这种冷酷的聪慧才是我最厌恶的地方",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "你就不能正常地惊讶然后恐惧吗？我亲爱的哥哥啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "我永远都试图证明我比你更强，为这个国家投入了更多，但是，世人只看到了你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "我就是你的影子啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "尤伊人入侵和你准时在这里出现，这不是巧合可以解释的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "尤伊人入侵是你的计划吧",
+        "string": "你在执行某种反叛我的计划……出卖国家让尤伊人入侵，也是计划的一部分？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世行",
-        "face": "SeigentDefault",
-        "string": "你就是在什么方面都聪明得让我恶心，但是你要搞清楚一点",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世行",
-        "face": "SeigentDefault",
-        "string": "我并没有出卖自己的国家，我只是让尤伊人知道战争是拯救他们混乱社会的唯一出路，仅此而已",
+        "face": "SeigentSmile",
+        "string": "你最值得我学习的地方就是冷静，在这里被你挑拨成功就功败垂成了呢，反正你对我的侮辱在你死后就毫无意义了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSinisterSmile",
-        "string": "然后，你会在这场战争中死去，而我将会继承你的大业勇敢地守护这个国家",
+        "string": "比起我个人的尊严，能够准确无误地达成自己的目的更加重要……",
         "special": "dia2"
     },
     {
@@ -448,17 +406,17 @@
         "special": "dia3"
     },
     {
-        "branch": "branch1",
+        "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "我还在想办法把你引到这里来呢",
+        "string": "然后就是……我知道那个白痴皇后是你的底线",
         "special": "dia2"
     },
     {
         "branch": "branch1",
         "name": "世行",
-        "face": "SeigentSinisterSmile",
-        "string": "但是天都在帮我，那个白痴皇后自己跑了出来，省去了我不少麻烦",
+        "face": "SeigentSmile",
+        "string": "她自己跑来这里有点预料外，但是可以发挥引诱你进入圈套的作用就没问题了",
         "special": "dia2"
     },
     {
@@ -469,31 +427,80 @@
         "special": "dia2"
     },
     {
-        "branch": "branch1",
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingAngry",
-        "string": "可恶……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch2",
-        "name": "世清",
-        "face": "SeicingAngry",
-        "string": "竟然还对余出手了……",
+        "string": "……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
+        "face": "SeicingDefault",
+        "string": "坚信我是亲手弑杀父亲和弟弟才走到这个位置的你，不会有人对你成功造反提起质疑，因为强者为尊是西景的法则",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "为什么要把我引到这个混乱的战场，把我的死亡伪装成战死呢，而且不使用部下消耗我的体力，而是……一对一单挑？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "因为我讨厌你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "讨厌你说话的语调，讨厌你那慢悠悠的性格，讨厌你那被人信赖的实力，讨厌你的一切",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "我要确实地证明自己是超越你的存在，用我自己的实力确实地击杀你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "你必须要有一个和我死斗到最后的理由，否则即使你被击败了你也会在审时度势之后逃跑……我无法容忍你继续活下去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "你和我之间一定要死一个，你胆敢逃跑的话，你不仅会被我取代作为皇帝的荣誉，同时你的余会被我的人找到并且施与让你抱憾终身的刑罚",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
         "face": "SeicingAngry",
-        "string": "不可饶恕……",
+        "string": "你这个疯子……不要拿余开玩笑，你想死我随时奉陪到底",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSinisterSmile",
-        "string": "我不需要死人的饶恕",
+        "string": "那我们还等什么？",
         "special": "dia2"
     },
     {
