@@ -198,6 +198,48 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "对不起，让我任性一回吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "伊丽……你……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SerenityRF",
+        "string": "如果造成了你的困惑……我会郑重和你道歉的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeNORF",
+        "string": "……没有的事……但是……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SerenityRF",
+        "string": "我明白的……今天的事情，就当是一场梦吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
         "face": "Iris2Shy",
         "string": "看不见的话，需要我引路吗？",
         "special": "dia2"
@@ -206,42 +248,35 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeNORF",
-        "string": "呃……",
+        "string": "嗯……",
         "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Shy",
-        "string": "怎么了？",
-        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeNORF",
-        "string": "我在想",
+        "string": "伊丽……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingNORF",
-        "string": "近视也不是什么坏事",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingNORF",
-        "string": "至少就现在来说……",
+        "face": "SeicingCloseEyeNORF",
+        "string": "对不起……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Shy",
-        "string": "嘻嘻",
+        "face": "Iris2DepressedCERF",
+        "string": "不要这么说，这样就足够了，我们走吧",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "嗯……",
+        "special": "dia1"
     }
 ]
