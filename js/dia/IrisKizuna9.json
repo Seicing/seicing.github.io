@@ -885,7 +885,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeRF",
-        "string": "夜幕已经降临，停止继续讨论谋略和开玩笑吧，在东方发白之前，你们两个暂时给我忘记掉一切",
+        "string": "入夜了不是吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "在东方发白之前，你们两个暂时给我忘记掉一切",
         "special": "dia1"
     },
     {
