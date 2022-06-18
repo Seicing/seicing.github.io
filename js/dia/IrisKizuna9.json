@@ -906,7 +906,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmileRF",
-        "string": "你可真贪心啊",
+        "string": "你要一起？真贪心啊……",
         "special": "dia2"
     },
     {
@@ -927,14 +927,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingTerrible",
-        "string": "真能折腾……",
+        "string": "那是真能折腾，幸好捡回一条命……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingPeep",
-        "string": "她们没在……看起来在做准备了",
+        "string": "……她们没在，看起来已经很晚了，真羡慕这些可以早起的",
         "special": "dia1"
     },
     {
@@ -1012,13 +1012,6 @@
         "name": "世清",
         "face": "SeicingDefault",
         "string": "嗯……接下来可以说是西景的内务，在战场上活跃一下筋骨吧",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefaultRF",
-        "string": "还有这称呼……真不习惯……",
         "special": "dia1"
     }
 ]
