@@ -456,6 +456,20 @@
     },
     {
         "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "我和伊丽丝出去聊一下，你就在这里好好休息一下吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "(不好的预感，罢了，着急也没用)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "",
         "face": "",
         "string": "伊丽丝和余走了出去<br>接下来世清可以独自一个人自由行动，可以在某个隐秘的地方找到隐藏概念<br>走出门可以选择“是否等她们回来”来继续剧情",
