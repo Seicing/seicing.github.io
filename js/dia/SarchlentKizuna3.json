@@ -1,0 +1,709 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "触发条件：羁绊二剧情触发后，前往艾特拉塔的旅馆触发",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "今天就在这里休息吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "嗯……也好，今天真是累啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "进入旅馆的时候，和哈扎德擦身而过",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "抱歉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "你不是哈扎德吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "啊，是你们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？",
+        "face": "",
+        "string": "老哥！动作麻利点好吗！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "真是的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "看起来你们也打算入住这个旅馆啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "我有点事，等等我回来之后，再好好寒暄吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "哈扎德走远了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "朋友？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "怎么说呢……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappyCE",
+        "string": "准确来说是认识，然后一起逃跑过",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "嗯，可以这样说",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "你的大冒险可真是大风大雨啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "旅馆二楼，世清的房间，外面传来了敲门声",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "请进",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "哈扎德进了房间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "呼……还真是巧合啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "是啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "真是让人吃惊啊，听说你在那之后成为了西景的皇帝",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "还有这个没看过的小姐，想必就是那场传奇般的比武大会后和你成婚的忽兰皇后吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "只会出现在新闻和传言中的人物确实地在我面前出现真是让人感到魔幻啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDepressed",
+        "string": "真过分啊，我好像和之前那样一点存在感都没有啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "……你还是和以前一样嘛",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "雪拉扎德从隔壁的房间走了过来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？",
+        "face": "Sherazard2Default",
+        "string": "老哥，你的朋友吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "啊，雪拉扎德",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "…………(打量世清一行人)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "哇，真是让人感觉到“故事性”的团队啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "戴眼镜的老哥看起来像是团队里的头脑担当，率领着两个看着就觉得很笨的家伙到处冒险，一定很辛苦吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "看着……就笨……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "太过分了，长得那么可爱却这么毒舌",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "抱歉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "雪拉扎德……快点给他们道歉，你说得太过分了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "嗯~",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "抱歉，我的职业病又犯了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "职业病？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "额……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到哈扎德的房间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "哦，这里就像是那些魔法学者的研究所一样",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "到处都是纸和墨水的味道……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "最近被世清逼着认字，现在闻到这股味道真有点不寒而栗啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清拿起了一份手稿阅读了一下",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯？这不是“辛巴达和巨鸟”的段落手稿吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "“阿拉丁与精灵”，这不是千夜一夜物语吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "是在不久之前势如破竹登上了人气榜第一名的短篇故事小说集啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "难道说……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "嗯，其实我就是作者",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "我还没自我介绍，我叫雪拉扎德，千夜一夜物语的作者，同时是那个不成器的哥哥的妹妹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "哎……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentWrySmile",
+        "string": "真是令人惊讶啊，那个受欢迎的千夜一夜物语的作者竟然是这样的一个小妹妹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "其实该惊讶的是我才对，竟然可以遇到西景的皇帝和皇后，还有……金毛随从？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "你这家伙说话真让人火大啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "我好像没在你面前提到过我是皇帝的事情……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "因为老哥经常提起你，你是我重点观察的写作素材，一些特征完全对得上，所以我推断你就是他所说的伦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "所以在知道我是皇后的前提下说我是笨蛋吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "观察力是一个作家的基本素养，看起来你确实是千夜一夜物语的作者",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "能得到西景皇帝陛下的称赞，真是无上光荣",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDepressed",
+        "string": "值得哈扎德冒生命危险去激活地下倒立金字塔拯救的妹妹我想象中是更讨喜的女孩",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "夏修伦……请原谅我妹妹的冒犯，她只是不太会说话……嗯，她的文笔和口头语言组织能力是两个极端",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "你就是夏修伦吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "呃……怎么了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "你是那场地底大冒险的主角之一……因为真人长得太过路人，很难跟哥哥的描述关联起来呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentLow",
+        "string": "夏修伦……不能揍女孩子……忍住……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "不过，你身上拥有一股真正历练过的人才会拥有的气质，何况你某种意义上也救了我的命",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "谢谢你们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentSurprise",
+        "string": "啊？那个……也没啥啦……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "哈扎德，现在你在跟雪拉扎德到处旅行吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "嗯，多亏了我这能干的妹妹，她写的小说的稿费足够我们两人的生活开支",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "为了获得更多的创作灵感，我们也真的踏上了旅程，亲身前往各个地方记录当地的传奇故事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "其实我很羡慕你们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "我和哥哥过着平凡的生活，你们的冒险传闻深深地打动了我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "不过，我只是一个读书认字的女人而已，不是每个人都会有条件和被注定踏上不凡的冒险",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "直到有一天我突发灵感，想要把旅人们的故事记录下来，即使自身无法亲身经历，但是传颂他们的传奇，让人们从文字中找到冒险的感觉，不是很好吗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "于是我和哥哥踏上了旅途……最后发现，这样的旅途就是我们所追求的归宿",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "真希望……可以一直这样下去啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "是啊……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "取名千夜一夜物语，就是寄托了自身对千奇百怪的世界的憧憬，以及希望自身可以在这条写作之旅永远传续下去的愿景呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "哦，不愧是团队里智商担当的皇帝陛下，我决定亲自点名你是我的黄金书迷了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "雪拉扎德……玩笑别开太过了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "哈扎德，这种小事我不会放在心上，能被自己喜欢的作品的作者点名为忠实粉丝，说实话还让人挺高兴的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "哈，其实我也是忠实读者，那家伙只是借我船上的杂志看而已，我只是一期不漏",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "嘻嘻，感谢你的支持啦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "“气氛变得燥热起来，伦把手搭在夏修伦的胸前，缓缓地解开夏修伦衣服上的纽扣”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "“伦一边把手伸到……一面把嘴唇……诶……？”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "喂喂！！停停停！！你是在哪里找到的啊！快停下！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentWrySmile",
+        "string": "………………………………………………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "哎……忘了说……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "以前生计不好的时候雪拉扎德用过几个笔名投稿了很多同性爱文章……从那之后好像一发不可收拾了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "那个……特定人群里面很流行……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "给回我！给回我！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "嘻嘻，谁叫你刚刚这样抹黑我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "有这种癖好我还是可以理解的……只是这篇对于我来说好像有点劲爆了点……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "实在是非常抱歉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在入睡之前我们再聊一下冒险的故事吧，我很期待千夜一夜物语的新章到来，雪拉扎德能怎么诠释这些故事真的很期待呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "嗯，我也对你们之后的故事具体细节很感兴趣……世清，夏修伦，我们就一面吃喝一面聊天吧",
+        "special": "dia2"
+    }
+]
