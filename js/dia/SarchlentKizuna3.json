@@ -3,7 +3,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "触发条件：羁绊二剧情触发后，前往艾特拉塔的旅馆触发",
+        "string": "触发条件：羁绊二剧情触发后，前往艾特拉塔的任意一个城镇的旅馆触发",
         "special": "dia3"
     },
     {
@@ -58,21 +58,21 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2Surprise",
         "string": "啊，是你们",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "？？？",
-        "face": "",
+        "face": "Sherazard2Loudly",
         "string": "老哥！动作麻利点好吗！？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEye",
         "string": "真是的……",
         "special": "dia2"
     },
@@ -115,21 +115,21 @@
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentHappyCE",
-        "string": "准确来说是认识，然后一起逃跑过",
+        "string": "“一起逃跑的狱友？”",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "嗯，可以这样说",
+        "string": "这样说也没错",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "你的大冒险可真是大风大雨啊",
+        "string": "你们的大冒险可真是波澜壮阔啊",
         "special": "dia2"
     },
     {
@@ -198,7 +198,7 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEye",
         "string": "……你还是和以前一样嘛",
         "special": "dia2"
     },
@@ -219,7 +219,7 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2Surprise",
         "string": "啊，雪拉扎德",
         "special": "dia2"
     },
@@ -233,14 +233,14 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Happy",
         "string": "哇，真是让人感觉到“故事性”的团队啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Happy",
         "string": "戴眼镜的老哥看起来像是团队里的头脑担当，率领着两个看着就觉得很笨的家伙到处冒险，一定很辛苦吧",
         "special": "dia2"
     },
@@ -261,14 +261,14 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEye",
         "string": "抱歉……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2Sad",
         "string": "雪拉扎德……快点给他们道歉，你说得太过分了",
         "special": "dia2"
     },
@@ -296,7 +296,7 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEye",
         "string": "额……",
         "special": "dia2"
     },
@@ -366,14 +366,7 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
-        "string": "嗯，其实我就是作者",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Happy",
         "string": "我还没自我介绍，我叫雪拉扎德，千夜一夜物语的作者，同时是那个不成器的哥哥的妹妹",
         "special": "dia2"
     },
@@ -381,7 +374,7 @@
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2Default",
-        "string": "哎……",
+        "string": "真是辛辣的评价啊",
         "special": "dia2"
     },
     {
@@ -395,7 +388,7 @@
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Default",
-        "string": "其实该惊讶的是我才对，竟然可以遇到西景的皇帝和皇后，还有……金毛随从？",
+        "string": "其实该惊讶的是我才对，竟然可以在这里遇到西景的皇帝和皇后，还有……金毛随从？",
         "special": "dia2"
     },
     {
@@ -436,7 +429,7 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2HappyCE",
         "string": "能得到西景皇帝陛下的称赞，真是无上光荣",
         "special": "dia2"
     },
@@ -471,7 +464,7 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2HappyCE",
         "string": "你是那场地底大冒险的主角之一……因为真人长得太过路人，很难跟哥哥的描述关联起来呢",
         "special": "dia2"
     },
@@ -548,28 +541,28 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
-        "string": "直到有一天我突发灵感，想要把旅人们的故事记录下来，即使自身无法亲身经历，但是传颂他们的传奇，让人们从文字中找到冒险的感觉，不是很好吗",
+        "face": "Sherazard2CloseEye",
+        "string": "直到有一天我突发灵感，想要把旅人们的故事记录下来，传颂自身无法亲身经历的传奇，让人们从文字中找到冒险的感觉，不是很好吗",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2CloseEye",
         "string": "于是我和哥哥踏上了旅途……最后发现，这样的旅途就是我们所追求的归宿",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2CloseEye",
         "string": "真希望……可以一直这样下去啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEye",
         "string": "是啊……",
         "special": "dia2"
     },
@@ -583,14 +576,14 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Happy",
         "string": "哦，不愧是团队里智商担当的皇帝陛下，我决定亲自点名你是我的黄金书迷了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEyeSad",
         "string": "雪拉扎德……玩笑别开太过了",
         "special": "dia2"
     },
@@ -611,7 +604,7 @@
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Happy",
         "string": "嘻嘻，感谢你的支持啦",
         "special": "dia2"
     },
@@ -626,13 +619,13 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "“伦一边把手伸到……一面把嘴唇……诶……？”",
+        "string": "“伦一边把手伸到……一面把嘴唇……”，诶……？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Surprise",
         "string": "喂喂！！停停停！！你是在哪里找到的啊！快停下！",
         "special": "dia2"
     },
@@ -646,28 +639,28 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEyeSad",
         "string": "哎……忘了说……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEyeSad",
         "string": "以前生计不好的时候雪拉扎德用过几个笔名投稿了很多同性爱文章……从那之后好像一发不可收拾了……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEyeSad",
         "string": "那个……特定人群里面很流行……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
-        "face": "Sherazard2Default",
+        "face": "Sherazard2Surprise",
         "string": "给回我！给回我！",
         "special": "dia2"
     },
@@ -688,22 +681,43 @@
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2Default",
+        "face": "Khazard2CloseEyeSad",
         "string": "实在是非常抱歉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "哈哈，细节就别想太多了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "夏修伦",
+        "face": "SarchlentHappy",
+        "string": "我们也好久没见了，今晚我们就边吃边喝边聊，好好地聚一下吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "在入睡之前我们再聊一下冒险的故事吧，我很期待千夜一夜物语的新章到来，雪拉扎德能怎么诠释这些故事真的很期待呢",
+        "string": "嗯，不错的提议",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2Default",
-        "string": "嗯，我也对你们之后的故事具体细节很感兴趣……世清，夏修伦，我们就一面吃喝一面聊天吧",
+        "string": "好，今晚我们就好好地开心一下吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Surprise",
+        "string": "还给我~~！",
         "special": "dia2"
     }
 ]
