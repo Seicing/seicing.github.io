@@ -332,28 +332,28 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "世清拿起了一份手稿阅读了一下",
+        "string": "世清拿起了一份漫画阅读了一下",
         "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "嗯？这不是“辛巴达和巨鸟”的段落手稿吗？",
+        "string": "嗯？这不是“辛巴达和巨鸟”的分镜草稿吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentDefault",
-        "string": "“阿拉丁与精灵”，这不是千夜一夜物语吗？",
+        "string": "这个是“阿拉丁与精灵”！，这不是千夜一夜物语吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
         "face": "SarchlentDefault",
-        "string": "是在不久之前势如破竹登上了人气榜第一名的短篇故事小说集啊",
+        "string": "是在不久之前势如破竹登上了人气榜前三的奇幻漫画啊",
         "special": "dia2"
     },
     {
@@ -409,7 +409,7 @@
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Default",
-        "string": "因为老哥经常提起你，你是我重点观察的写作素材，一些特征完全对得上，所以我推断你就是他所说的伦",
+        "string": "因为老哥经常提起你，你是我重点观察的创作素材，一些特征完全对得上，所以我推断你就是他所说的伦",
         "special": "dia2"
     },
     {
@@ -423,7 +423,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "观察力是一个作家的基本素养，看起来你确实是千夜一夜物语的作者",
+        "string": "观察力是一个创作者的基本素养，看起来你确实是千夜一夜物语的作者",
         "special": "dia1"
     },
     {
@@ -444,7 +444,7 @@
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2Default",
-        "string": "夏修伦……请原谅我妹妹的冒犯，她只是不太会说话……嗯，她的文笔和口头语言组织能力是两个极端",
+        "string": "夏修伦……请原谅我妹妹的冒犯，她只是不太会说话……嗯，她的演出绘画能力和口头语言组织能力是两个极端",
         "special": "dia2"
     },
     {
@@ -507,70 +507,70 @@
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2Default",
-        "string": "嗯，多亏了我这能干的妹妹，她写的小说的稿费足够我们两人的生活开支",
+        "string": "嗯，多亏了我这能干的妹妹，千夜一夜物语的稿费足够我们两人的生活开支",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2Default",
-        "string": "为了获得更多的创作灵感，我们也真的踏上了旅程，亲身前往各个地方记录当地的传奇故事",
+        "string": "我们现在在亲身前往各个地方打听各地的传奇故事，收集创作的灵感",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Default",
-        "string": "其实我很羡慕你们",
+        "string": "其实有一半是在躲避追杀啦哈哈哈哈",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Default",
-        "string": "我和哥哥过着平凡的生活，你们的冒险传闻深深地打动了我",
+        "string": "在逃出卡哈扎塔后，我们兄妹两人途径了好多个地方，每天都只是不知道明日在何方地混日子",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Default",
-        "string": "不过，我只是一个读书认字的女人而已，不是每个人都会有条件和被注定踏上不凡的冒险",
+        "string": "这种日子我们也曾经感叹过实在是让人绝望啊，但是在旅行的过程中，我听哥哥说了你们的故事，休息时周围的旅行者们也向我们讲述了他们的故事",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2CloseEye",
-        "string": "直到有一天我突发灵感，想要把旅人们的故事记录下来，传颂自身无法亲身经历的传奇，让人们从文字中找到冒险的感觉，不是很好吗",
+        "string": "在某一天，我把梦中的场景画了下来，不知道为什么，我越画越能感觉到梦的内容越来越清晰，这就是千夜一夜物语的由来",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2CloseEye",
-        "string": "于是我和哥哥踏上了旅途……最后发现，这样的旅途就是我们所追求的归宿",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "雪拉扎德",
-        "face": "Sherazard2CloseEye",
-        "string": "真希望……可以一直这样下去啊",
+        "string": "能依靠自己的双手把自己的梦，旅行者们的梦画下来，这样想，也是不错的人生呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2CloseEye",
-        "string": "是啊……",
+        "string": "于是我们就这样，一面躲避卡哈扎塔人的追杀，一面到处旅行收集材料绘制千夜一夜物语，并为此找到了人生的意义",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2CloseEye",
+        "string": "虽然我只是跑腿和买颜料纸笔的……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "取名千夜一夜物语，就是寄托了自身对千奇百怪的世界的憧憬，以及希望自身可以在这条写作之旅永远传续下去的愿景呢",
+        "string": "取名千夜一夜物语，就是寄托了自身对千奇百怪的世界的憧憬，以及希望自身可以在这条创作之旅永远传续下去的愿景呢",
         "special": "dia1"
     },
     {
@@ -605,28 +605,28 @@
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Happy",
-        "string": "嘻嘻，感谢你的支持啦",
+        "string": "哈哈，作为一个作者，最大的幸福就是看着读者沉浸在自己缔造的世界中，所以……谢谢你们",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余在他们聊天的时候感到无聊到处翻来翻去找雪拉扎德的漫画看",
+        "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "就当我这些时间读书认字的小测试吧，这篇看起来不错",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmile",
-        "string": "“气氛变得燥热起来，伦把手搭在夏修伦的胸前，缓缓地解开夏修伦衣服上的纽扣”",
+        "string": "哦？这个是以世清和夏修伦作为主角的漫画吗？有意思",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "“伦一边把手伸到……一面把嘴唇……”，诶……？",
+        "string": "诶怎么突然脱衣服亲上了呢……",
         "special": "dia2"
     },
     {
@@ -654,7 +654,7 @@
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2CloseEyeSad",
-        "string": "以前生计不好的时候雪拉扎德用过几个笔名投稿了很多……那种文章……从那之后好像一发不可收拾了……",
+        "string": "以前生计不好的时候雪拉扎德用过几个笔名投稿了很多……那种漫画……从那之后好像一发不可收拾了……",
         "special": "dia2"
     },
     {
@@ -682,7 +682,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "有这种爱好我还是可以理解的……只是这篇对于我来说好像有点劲爆了点……",
+        "string": "有这种爱好我还是可以理解的……只是这个对于我来说好像有点劲爆了点……",
         "special": "dia1"
     },
     {
