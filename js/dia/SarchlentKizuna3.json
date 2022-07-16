@@ -262,42 +262,56 @@
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2CloseEye",
-        "string": "抱歉……",
+        "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
         "face": "Khazard2Sad",
-        "string": "雪拉扎德……快点给他们道歉，你说得太过分了",
+        "string": "雪拉扎德……你说得太过分了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "雪拉扎德",
         "face": "Sherazard2Default",
-        "string": "嗯~",
+        "string": "……抱歉，说得太过了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "雪拉扎德",
-        "face": "Sherazard2Default",
-        "string": "抱歉，我的职业病又犯了",
+        "name": "哈扎德",
+        "face": "Khazard2Default",
+        "string": "总是改不掉这口直心快的老毛病",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "哈扎德，你这句话似乎也……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "哈扎德",
+        "face": "Khazard2CloseEyeSad",
+        "string": "啊，抱歉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "职业病？",
+        "string": "说起来，你最近过得怎么样呢，刚刚相遇的时候看你急急忙忙的，挺忙碌的样子",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "哈扎德",
-        "face": "Khazard2CloseEye",
-        "string": "额……",
+        "face": "Khazard2Default",
+        "string": "……还是去我们的房间好解释一点",
         "special": "dia2"
     },
     {
@@ -365,16 +379,23 @@
     },
     {
         "branch": "branch0",
-        "name": "哈扎德",
-        "face": "Khazard2Default",
-        "string": "真是辛辣的评价啊",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "真是令人惊讶啊，那个受欢迎的千夜一夜物语的作者竟然是这样的一个小妹妹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "雪拉扎德",
+        "face": "Sherazard2Default",
+        "string": "我已经成年了哦，别把我当成小孩子，大叔",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "夏修伦",
-        "face": "SarchlentWrySmile",
-        "string": "真是令人惊讶啊，那个受欢迎的千夜一夜物语的作者竟然是这样的一个小妹妹",
+        "face": "SarchlentLow",
+        "string": "………………",
         "special": "dia2"
     },
     {
