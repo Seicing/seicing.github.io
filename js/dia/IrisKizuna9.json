@@ -640,7 +640,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "伊拉修莱德的博雅尔们，最擅长的就是见风使舵，在见识到宿句人的攻势后认为伊拉修莱德无法抵挡就停止了抵抗",
+        "string": "伊拉修莱德的督军们，最擅长的就是见风使舵，在见识到宿句人的攻势后认为伊拉修莱德无法抵挡就停止了抵抗",
         "special": "dia2"
     },
     {
@@ -766,7 +766,14 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "你想继续这样糊弄下去浪费别人的青春吗？",
+        "string": "都把事情摊得这么明白了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "还想继续糊弄下去，浪费别人的青春吗？",
         "special": "dia2"
     },
     {
