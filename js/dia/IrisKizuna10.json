@@ -124,5 +124,922 @@
         "face": "SeicingCloseEye",
         "string": "不过，我就把这个当成你的心意收下吧，谢了，世行",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "进入伊拉修莱德城",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "老公，你来了啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "情况如何",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "周围人好多啊，感觉你用这个称呼叫我好难为情",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SinisterSmile",
+        "string": "不喜欢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "原来你也会感到害羞啊，老公",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "故意挑逗我是吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "私下怎么叫我都可以……现在要把目光投向更严肃的东西，情况如何了？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "伊拉修莱德的军队重新集结了大概七成以上",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "短短几天就可以把溃散的伊拉修莱德督军势力集结起来，你的号召力还真是厉害啊，皇帝陛下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "这样啊，看着人数比例有点大，胜算大概有几成呢？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝看了看周围，靠近世清的耳朵耳语",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "是0%哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "我的天，你怎么能一脸笑意跟我说这话",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "太大声了，你今天不太冷静哦，老公~大人~",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你们就不要玩了，不可能用这种语气跟我描述这么恐怖的事实，对不",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你绝对在生我的气吧，余",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "别多想了，如果是必输的话，我们怎么需要在这里浪费时间，我只是觉得和伊丽丝一起玩你很过瘾而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "还是说回正事吧，你把你最强的权现给我在这里驱动出来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "你们已经密谋好了啊，感觉以后会被你们这对好闺蜜欺负得有够惨了啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清驱动了始祖化光剑",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊拉修莱德士兵",
+        "face": "",
+        "string": "你们看！好强的权现啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊拉修莱德士兵",
+        "face": "",
+        "string": "这就是西景的皇帝……！最强的帝国的武力的顶点！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "都在盯着我了…………",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝和余紧随着也驱动了自己的武器",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2SinisterSmile",
+        "string": "准备好了吗？老公",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingTerrible",
+        "string": "至少把目标说清楚啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "看到对面三个先头部队最显眼的领头者了不？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "哦，我明白了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "早点说清楚就好了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "伊拉修莱德的孩子们！跟着我们三人冲锋！击杀可恨的入侵者！让野蛮的饿狼滚回他们自己的巢穴里！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊拉修莱德士兵",
+        "face": "",
+        "string": "哦哦！！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "三人一面冲锋一面谈论",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "卡哈扎塔皇帝为了避免西景的进一步行动，率领一部分部队撤退了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "所以只留下了三个司王在这里维持军队吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "卡哈扎塔人因为攻势过于仓促，加上我们的狐假虎威，他们的军队在因为担心断粮断退路而军心大动呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "刚刚在开玩笑真是抱歉，我们军队正面冲锋的话胜算是超过一半的，但是，我已经不忍心伊拉修莱德人再因为入侵者的贪婪流更多的血了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "所以狙击敌方的三个司王让对面加速崩溃减少我们的伤亡吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊拉修莱德式的风格？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "忘了吗？这可是你成为皇帝使用过的战术",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "这可是我们的风格……世清的风格！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "……快接近敌军了，提高注意力",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "你的侧身就交给我吧！你的身后就交给伊丽丝吧！世清！你就给我尽情地冲锋吧！让他们见识一下西景的皇帝的实力！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "进入临时地牢“伊拉修莱德战场”，在战场上击败来犯的敌军，找到三个司王boss击败他们",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "BOSS：司王迪米特里",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "司王迪米特里",
+        "face": "",
+        "string": "这什么鬼啊！跟疯狗一样冲了过来！皇帝陛下没有说过会这样啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "BOSS：司王穆斯塔法",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "司王穆斯塔法",
+        "face": "",
+        "string": "卫兵！卫兵在哪！？都死光了吗？可恶！为什么西景的皇帝会来啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "BOSS：司王波里伏耶",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "司王波里伏耶",
+        "face": "",
+        "string": "可恶！可恶！我不能死在这里啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "三个BOSS被击杀后",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊拉修莱德士兵",
+        "face": "",
+        "string": "宿句人滚回了东面的大海！我们胜利了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "孩子们！停止追击！宿句人已经无法组织起像样的力量了！我们不需要无谓的伤亡！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "看到战斗结束后，世清瘫坐在地上闭上双眼呼气，放松下来的伊丽丝和余也把头靠到了世清的肩膀上",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "真是激烈的战斗啊，累死我了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "傲慢的家伙，这不是战斗，这是战争……不过在足够强大的人面前，这两个的概念是差不多的也没错了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Relax",
+        "string": "看起来我在之后要好好地补习一下西景语呢，我竟然不知道这两个有什么区别啊。",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "真过分啊，伊丽丝，只顾着和情郎打情骂俏，完全忘了你的老爸了啊。",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "爸爸！你没事真是太好了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "宿句人的伙食啥都能加香料，真是一群恶俗的家伙，回到伊拉修莱德之后得好好地清理肠胃了呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "阿齐兹国王……！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿齐兹行了一个隆重的礼",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "无尽感激皇帝陛下的援助，使得我们这个小小的王国足以赶走侵略者，我代表伊拉修莱德的全体国民感谢您",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "那个……还记得你说过的话吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "谢谢你，世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "之前是作为伊拉修莱德的前任国王的立场跟你道谢，现在是作为伊丽丝的父亲的立场跟你的道谢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "不应该要跟我感谢，这是……女婿要做的事，不是吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "哈哈哈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我说啊，刚刚这家伙还在诉苦我们两个搞小团体呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "结果两个大男人小团队搞得有声有色呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PeepRF",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "走吧，世清，伊丽丝，还有……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "请不要在意我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "抱歉……我们走吧，去属于新生伊拉修莱德的宴会，还有属于我那争气的女儿和女婿的宴会",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "抱歉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊拉修莱德金色大厅，厅外",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "你是主角哦，不去应酬，也走出来吹晚风吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "我很害怕人多的场合，您不也是自己独自一人出来吹风吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "只是有点感叹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "我老了啊，伊丽丝已经是独当一面的女王了……米莉安也失踪快20年了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "时间也过得真快啊，不属于我的时代已经来临了，不知道是不是被抓了这段时间被关得太久了，见到家人马上变得多愁善感呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "别这么说，新生的伊拉修莱德帝国是需要您的辅助的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "哎，你也不需要这样安慰我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizSurprise",
+        "string": "你说什么？伊拉修莱德帝国！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "伊丽，没有跟您说吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "艾特拉塔早已经腐朽了，而伊拉修莱德人都在担心伊拉修莱德会不会失去自己的独特性，变成西景帝国的一部分……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊丽考虑到这点了哦",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "她复兴了灭亡的伊奥里尼亚帝国元，现在伊拉修莱德是宣称自己独立为一个帝国元，她是以独立的伊拉修莱德皇帝来跟我结婚的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "也就是……性质上和蚩幽类似，不存在谁从属于谁的问题，这样伊拉修莱德实际上和以前一样……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizSurprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "我这女儿轻易地做到了我自己也不敢想象的壮举啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "真是难以想象啊，我的女儿是帝国皇帝……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "年轻人果然是拥有无限的可能性啊……当初把筹码压在你身上的选择果然是对的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "那个……难道您战败被抓也是考虑到的一部分么……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "……我有考虑过这点，但是我不会用自己来开玩笑的，被那群异教徒抓住被折磨死掉的几率可不低啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "我只是个凡人……世事不会因为我的意志而运转，我只能根据命运的安排去找到看上去最好的道路，仅此而已……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝从大厅走了出来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "嘿……我这女儿真会麻烦人啊，连休息的时间都不给我，以后可有的是忙了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "世清……在日后的时光……好好对待我女儿",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿齐兹王拍了拍世清的肩膀后，回到了大厅里，只留下伊丽丝和世清独处",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3Shy",
+        "string": "世清……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "伊丽……今晚的你好美……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "谢谢你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "(四处张望)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3Shy",
+        "string": "你在找她吗？余她……说身体有一点不舒服，所以……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "那只是借口",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "我知道……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "这样两人独处，我想起了我们刚刚认识的时候……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "真是充满了回忆",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "看，从这里往那个方向看",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "是我的房间……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "从那天开始，我们彼此才敞开心扉相处呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "是啊……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "陷入了死寂之中，伊丽丝打破沉默来到世清身边，抱紧他的手",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyHappy",
+        "string": "你怎么突然变得不会和我相处了？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "作为伙伴的伊丽我可以和她毫无顾忌地相处",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "但是，作为妻子的伊丽……我还需要时间去学习如何相处",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShySmile",
+        "string": "这样子啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShySmile",
+        "string": "宴会结束之后，属于我们的空间里，多得是时间彼此认识，不是吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShySmile",
+        "string": "好好熟悉一下那个完全被自己的原始欲望所支配的真实的我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "我是指……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3SerenityRF",
+        "string": "世清！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3DepressedCERF",
+        "string": "我知道你想说什么……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3DepressedCERF",
+        "string": "接下来漫长的余生，想要找到彼此最好的解决办法，时间还多得是……不是吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "那么……余生请多多指教了……伊……老婆……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris3ShyCE",
+        "string": "嗯……你也是……老公……",
+        "special": "dia2"
     }
 ]
