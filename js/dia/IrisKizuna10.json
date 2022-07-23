@@ -199,7 +199,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "这样啊，看着人数比例有点大，胜算大概有几成呢？",
+        "string": "这样啊，看着人数比例差距有点大啊，胜算大概有几成呢？",
         "special": "dia1"
     },
     {
@@ -668,7 +668,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "伊拉修莱德金色大厅，厅外",
+        "string": "伊拉修莱德金色大厅在举办着世清和伊丽丝的结婚宴会，而在远离人群的厅外世清独自在这里吹着海风，阿齐兹国王也跟着从室内走了出来",
         "special": "dia3"
     },
     {
@@ -759,7 +759,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "她复兴了灭亡的伊奥里尼亚帝国元，现在伊拉修莱德是宣称自己独立为一个帝国元，她是以独立的伊拉修莱德皇帝来跟我结婚的",
+        "string": "所以她计划复兴灭亡的伊奥里尼亚帝国元，让伊拉修莱德自己独立为一个帝国元，以独立的伊拉修莱德皇帝身份来跟我结婚",
         "special": "dia1"
     },
     {
@@ -778,16 +778,16 @@
     },
     {
         "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizCloseEye",
-        "string": "我这女儿轻易地做到了我自己也不敢想象的壮举啊",
-        "special": "dia2"
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "(这对父女的沟通真是灾难啊……)",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "真是难以想象啊，我的女儿是帝国皇帝……",
+        "face": "AzizCloseEye",
+        "string": "我的女儿试图成为帝国皇帝，真是不敢想象的壮举啊",
         "special": "dia2"
     },
     {
