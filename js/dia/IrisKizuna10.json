@@ -402,7 +402,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Shy",
-        "string": "忘了吗？这可是你成为皇帝使用过的战术",
+        "string": "可以这样说，但忘了吗？这也是你成为皇帝的时候使用过的做派不是吗？",
         "special": "dia2"
     },
     {
@@ -416,14 +416,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeRF",
-        "string": "……快接近敌军了，提高注意力",
+        "string": "……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "你的侧身就交给我吧！你的身后就交给伊丽丝吧！世清！你就给我尽情地冲锋吧！让他们见识一下西景的皇帝的实力！",
+        "string": "真能说啊，快接近敌军了，提高注意力",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoAngryHappy",
+        "string": "世清！你的侧身和背后就交给我和伊丽丝，你就给我尽情地冲锋吧！让他们见识一下西景的皇帝的实力！",
         "special": "dia2"
     },
     {
