@@ -633,35 +633,112 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "走吧，世清，伊丽丝，还有……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDepressed",
-        "string": "请不要在意我",
+        "string": "虽然由我这个败军之将说出来有点丢人，世清",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "抱歉……忽兰皇帝陛下",
+        "face": "AzizHappy",
+        "string": "那是我们伊拉修莱德的传统，伟大的战士勇敢地击败了敌方的国王，这位战士理应获得“斯波利亚·奥匹玛”的荣誉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "我们走吧，去属于新生伊拉修莱德的宴会，还有属于我那争气的女儿和女婿的宴会",
+        "face": "AzizHappy",
+        "string": "“最高的战利品”！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "我们会为此举办盛大的祭典和宴会，尽情地享用着被我们守护下来的食物以及来自敌人的耻辱，使用狂欢来纪念永恒的勇者的仪式",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "爸爸，这次的斯波利亚·奥匹玛将会是我们国家有史以来最隆重的一次",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "因为，这不仅是纪念我们伟大勇者的仪式，同时，也是我和西景皇帝缔结因缘的仪式",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "哈哈哈",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoSad",
+        "face": "YoEmbarrassed",
         "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "余……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "我们走吧，世清，伊丽丝，还有阿齐兹老爹",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "别多想了，世清，刚刚我只是在思考这个辈分应该怎么称呼，我最后还是想不通！所以就这样叫了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "经历了如此激烈的战斗已经很饥饿了呢，阿齐兹老爹，我饭量很大的，真是期待伊拉修莱德的美食啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizSurprise",
+        "string": "啊……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "哈哈，真有活力啊，大媳妇，你就尽量吃吧，我们伊拉修莱德可是对自己的美食很有自信哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "那我就不客气了，走吧，世清，伊丽丝",
         "special": "dia2"
     },
     {
@@ -673,9 +750,9 @@
     },
     {
         "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizCloseEye",
-        "string": "……",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "嗯，我们走吧，我为我们的胜利欢呼",
         "special": "dia2"
     },
     {
@@ -710,7 +787,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizCloseEye",
-        "string": "我老了啊，伊丽丝已经是独当一面的女王了……米莉安也失踪快20年了……",
+        "string": "我老了啊，伊丽丝已经是独当一面的女王了……米莉安也失踪十几年了……",
         "special": "dia2"
     },
     {
@@ -808,7 +885,14 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizHappy",
-        "string": "年轻人果然是拥有无限的可能性啊……当初把筹码压在你身上的选择果然是对的",
+        "string": "你们年轻人就是喜欢胡来啊，我其实现在还没搞懂我被抓走之后发生的事情，女儿就嫁出去了，真不知道摆出什么表情好啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "不过其他不提，当初我看人的眼光还是可以的嘛",
         "special": "dia2"
     },
     {
@@ -852,6 +936,20 @@
         "face": "AzizDefault",
         "string": "世清……在日后的时光……好好对待我女儿",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "还有……不要忘了那个为了你一直在故作坚强的忽兰皇后",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "谢谢你，阿齐兹岳父",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
