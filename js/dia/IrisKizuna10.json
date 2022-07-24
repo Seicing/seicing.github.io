@@ -430,20 +430,20 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "进入临时地牢“伊拉修莱德战场”，在战场上击败来犯的敌军，找到三个司王boss击败他们",
+        "string": "进入临时地图“伊拉修莱德战场”，在战场上击败来犯的敌军，找到三个司王boss击败他们",
         "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "BOSS：司王迪米特里",
+        "string": "BOSS：司王季米特里奥斯",
         "special": "dia3"
     },
     {
         "branch": "branch0",
-        "name": "司王迪米特里",
-        "face": "",
+        "name": "司王季米特里奥斯",
+        "face": "EmirDemetrios",
         "string": "这什么鬼啊！跟疯狗一样冲了过来！有你们这样打仗的吗！？",
         "special": "dia2"
     },
@@ -457,7 +457,7 @@
     {
         "branch": "branch0",
         "name": "司王穆斯塔法",
-        "face": "",
+        "face": "EmirMustafa",
         "string": "真他妈的被小看了啊！竟然想对我进行斩首行动！？你们这些臭小鬼太傲慢了！给我去死！",
         "special": "dia2"
     },
@@ -471,7 +471,7 @@
     {
         "branch": "branch0",
         "name": "司王波里伏耶",
-        "face": "",
+        "face": "EmirBorivoje",
         "string": "我们可没有死磕在这里浪费生命的理由啊！你们这些不要命在战场里横冲直撞的家伙！",
         "special": "dia2"
     },
@@ -625,8 +625,8 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2PeepRF",
-        "string": "……",
+        "face": "Iris2Happy",
+        "string": "哈哈",
         "special": "dia2"
     },
     {
@@ -752,7 +752,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "嗯，我们走吧，我为我们的胜利欢呼",
+        "string": "嗯，我们走吧，为我们的胜利欢呼",
         "special": "dia2"
     },
     {
