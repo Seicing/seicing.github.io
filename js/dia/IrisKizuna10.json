@@ -647,7 +647,14 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "抱歉……我们走吧，去属于新生伊拉修莱德的宴会，还有属于我那争气的女儿和女婿的宴会",
+        "string": "抱歉……忽兰皇帝陛下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "我们走吧，去属于新生伊拉修莱德的宴会，还有属于我那争气的女儿和女婿的宴会",
         "special": "dia2"
     },
     {
@@ -661,7 +668,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "抱歉……",
+        "string": "余……",
         "special": "dia2"
     },
     {
