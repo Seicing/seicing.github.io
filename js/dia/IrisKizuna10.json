@@ -316,24 +316,38 @@
     },
     {
         "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "让我猜猜吧，你们难道是想和我一起……狙击敌人的三个司王？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "看到对面三个先头部队最显眼的领头者了不？",
+        "string": "答对咯，走吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "哦，我明白了",
+        "face": "SeicingCompassionNO",
+        "string": "真胡来啊，这是在玩命啊",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCompassionNO",
-        "string": "早点说清楚就好了……",
+        "face": "SeicingCloseEyeRF",
+        "string": "不过，有你们陪在我身旁啊……玩命就玩命吧",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PeepRF",
+        "string": "……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -360,70 +374,77 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "卡哈扎塔皇帝为了避免西景的进一步行动，率领一部分部队撤退了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingPeep",
-        "string": "所以只留下了三个司王在这里维持军队吗？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "卡哈扎塔人因为攻势过于仓促，加上我们的狐假虎威，他们的军队在因为担心断粮断退路而军心大动呢",
+        "string": "卡哈扎塔皇帝为了避免西景的进一步行动，率领一部分部队撤退了，只留下了三个司王在这里镇压我们的残余抵抗",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "刚刚在开玩笑真是抱歉，我们军队正面冲锋的话胜算是超过一半的，但是，我已经不忍心伊拉修莱德人再因为入侵者的贪婪流更多的血了",
+        "string": "虽然他们数量优于我们，但是他们处于断绝退路的恐惧中，根本没办法发挥应有的战斗力",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Serenity",
+        "string": "抱歉，世清",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "所以狙击敌方的三个司王让对面加速崩溃减少我们的伤亡吗？",
+        "string": "怎么了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "感谢你到了这个时刻，还能跟着我一起任性",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "实际上，不需要我们出手，现在的伊拉修莱德军队和敌人硬拼，胜利的几率也很大",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "是为了狙击敌方首领提前让他们溃不成军……减少牺牲吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "伊拉修莱德式的风格？",
+        "string": "没有抱歉的必要，就算你不“任性”，为了减少不必要的流血，我也会这样做的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Shy",
-        "string": "可以这样说，但忘了吗？这也是你成为皇帝的时候使用过的做派不是吗？",
+        "string": "谢谢你……世清……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Shy",
-        "string": "这可是我们的风格……世清的风格！",
+        "string": "真不愧是你，我就……喜欢你这一点",
         "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "……",
-        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "真能说啊，快接近敌军了，提高注意力",
+        "string": "别再调情了，快接近敌军了，提高注意力",
         "special": "dia2"
     },
     {
@@ -493,7 +514,7 @@
         "branch": "branch0",
         "name": "伊拉修莱德士兵",
         "face": "",
-        "string": "宿句人滚回了东面的大海！我们胜利了！",
+        "string": "宿句人被猫追捕的老鼠一样逃回了东方！我们胜利了！",
         "special": "dia2"
     },
     {
@@ -661,7 +682,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizHappy",
-        "string": "季米特里奥斯、穆斯塔法和波里伏耶那耻辱地被我们缴获的王冠将会在我们的金色大厅供奉给为国牺牲的祖灵们",
+        "string": "季米特里奥斯、穆斯塔法和波里伏耶那耻辱地被我们缴获的旗帜将会在我们的金色大厅供奉给为国牺牲的祖灵们",
         "special": "dia2"
     },
     {
