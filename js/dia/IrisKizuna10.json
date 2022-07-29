@@ -661,6 +661,27 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
+        "string": "阁下就是世清的……妻子，忽兰皇后吧，很荣幸与你相会",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "嗯，我也是这样",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "嗯，接下来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
         "string": "虽然由我这个败军之将说出来有点丢人，世清",
         "special": "dia2"
     },
@@ -668,7 +689,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizHappy",
-        "string": "那是我们伊拉修莱德的传统，伟大的战士勇敢地击败了敌方的国王，这位战士理应获得“斯波利亚·奥匹玛”的荣誉",
+        "string": "我们伊拉修莱德拥有一个传统，伟大的战士勇敢地击败了敌方的国王的话，这位战士理应获得“斯波利亚·奥匹玛”的荣誉",
         "special": "dia2"
     },
     {
@@ -710,7 +731,21 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizHappy",
-        "string": "哈哈哈，太过分了，我都没搞懂发生了什么啊",
+        "string": "这样子啊，哈哈哈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "我会为你祝福的，伊丽丝，不管怎么样，这是你的选择……你已经足以让我感到骄傲，足以让我尊重你的选择",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "谢谢你的祝福，爸爸",
         "special": "dia2"
     },
     {
@@ -731,7 +766,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizCloseEye",
-        "string": "嗯……",
+        "string": "(这也是没办法的事……该怎么化解尴尬好呢……)",
         "special": "dia2"
     },
     {
@@ -759,7 +794,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizSurprise",
-        "string": "啊啊",
+        "string": "啊……",
         "special": "dia2"
     },
     {
