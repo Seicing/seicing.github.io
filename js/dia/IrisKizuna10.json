@@ -988,6 +988,20 @@
     },
     {
         "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "现在……你成功保护了伊安用生命为代价去保护的东西，伊丽丝也找到了属于自己的幸福，伊安他在天之灵也会感觉很欣慰吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊安……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "",
         "face": "",
         "string": "伊丽丝从大厅走了出来",
