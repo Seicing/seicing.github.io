@@ -198,9 +198,9 @@
     {
         "branch": "branch0",
         "name": "卫兵",
-        "face": "",
+        "face": "IllazuraydRecruit",
         "string": "是索菲亚公主！快去禀告陛下！",
-        "special": "dia1"
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -691,6 +691,13 @@
         "face": "",
         "string": "响起了卫兵的吆喝声",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "卫兵",
+        "face": "IllazuraydRecruit",
+        "string": "警戒！公主逃跑了！",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
