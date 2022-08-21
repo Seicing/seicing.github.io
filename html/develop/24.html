@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/develop.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
+<div style="position:relative;">
+    <span style="font-family:宋体">演出编辑器</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="https://seicing.com/res/131414.png" alt="">
+    </div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="24"></div>
+试图通过规范化的文本自动生成演出流程的规范文本<br><br><br>
+
+
+事件ID(Event ID)：事件小节的执行顺序<br>
+节点按照事件ID的值按照顺序执行下去<br>
+事件ID允许两个以上的节点共享，被视为同时处理，它们的总和被视为一个事件ID<br>
+<br><br>
+
+
+
+<b>对象移动(Object Moving)</b><br>
+移动对象(Moving Object)：定义进行移动的对象<br>
+移动模式(Moving Mode)：定义单位移动到指定目的地的方式<br>
+<ul>
+    <li>锚点(Anchor)：指定场景中的一个单位或锚点，进行寻路移动</li>
+    <li>路径(Path)：指定场景中的路径进行移动</li>
+    <li>距离(Distance)：指定一个方向，进行指定数值的距离移动</li>
+</ul>
+无视障碍(Ignoring)：移动时是否无视障碍物进行移动<br>
+<ul>
+    <li>是(Yes)</li>
+    <li>否(No)</li>
+</ul>
+移动速度(Moving Speed)：定义移动的速度<br>
+等待(Await)：等待模式<br>
+<ul>
+    <li>等待(Await)：直到移动完毕之前等待执行完毕才执行下一个事件ID</li>
+    <li>不等待(Not Await)：事件执行后就开始下一个事件ID的处理</li>
+</ul>
+<b>对象移动(移动对象,移动模式::移动模式对象,无视障碍,移动速度,等待)</b>，例：<b>对象移动(iuimi,锚点::yo,是,快速,等待)</b><br>
+<br><br>
+
+
+<b>对话(Dialogue)</b><br>
+定义一个对话节点<br>
+对话内容(Dialogue Content)：定义对话的内容<br>
+对话者名(Dialogue Name)：定义对话者的名字，如果选择忽略则是使用默认名<br>
+对话情绪(Dialogue Mood)：定义对话者的目前的情绪，选择不同的头像<br>
+对话目标(Dialogue Target)：定义目前是谁在对话，对话气泡会在这个目标的头顶生成
+<ul>
+    <li>预设(Prehab)：定义一个被打包好的预设单位ID</li>
+    <li>对象(Object)：定义场景里的特定对象名称</li>
+    <li>旁白(Narration)：不会在任何目标头顶生成，而是在画面中央显示旁白</li>
+</ul>
+等待(Await)：等待模式<br>
+<ul>
+    <li>等待(Await)：直到按下对话确认后才执行下一个事件ID</li>
+    <li>不等待(Not Await)：事件执行后就开始下一个事件ID的处理</li>
+</ul>
+<b>对话(对话内容,对话者名,对话情绪,对话目标::对话目标对象,等待)</b>，例：<b>对话(你是不是sb,愤怒,宫黄羽三,预设::Iuimi,等待)</b><br>
+<br><br>
+
+
+<b>转向(Turn)</b><br>
+让一个特定的目标转向<br>
+转向目标(Turn Target)
+<ul>
+    <li>预设(Prehab)：定义一个被打包好的预设单位ID</li>
+    <li>对象(Object)：定义场景里的特定对象名称</li>
+    <li>旁白(Narration)：不会在任何目标头顶生成，而是在画面中央显示旁白</li>
+</ul>
+转向方向(Turn Direction)
+<ul>
+    <li>方向(Direction)：定义一个角度数据</li>
+    <li>对象(Object)：定义一个目标对象，让转向目标转向那个对象的位置</li>
+</ul>
+等待(Await)：等待模式<br>
+<ul>
+    <li>等待(Await)：直到转向完毕之前等待执行完毕才执行下一个事件ID</li>
+    <li>不等待(Not Await)：事件执行后就开始下一个事件ID的处理</li>
+</ul>
+<b>转向(转向目标::转向目标对象,转向方向::转向目标对象,等待)</b>，例：<b>转向(预设::Iuimi,方向::270,等待)</b><br>
+<br><br>
+
+
+
+<b>动画(Animation)</b><br>
+让一个特定的目标播放指定的动画文件<br>
+动画名称(Animation Name)：定义动画的名称<br>
+动画目标(Animation Target)：定义播放动画的对象<br>
+<ul>
+    <li>预设(Prehab)：定义一个被打包好的预设单位ID</li>
+    <li>对象(Object)：定义场景里的特定对象名称</li>
+</ul>
+等待(Await)：等待模式<br>
+<ul>
+    <li>等待(Await)：只播放1次动画，直到动画播放完毕之前等待执行完毕才执行下一个事件ID</li>
+    <li>循环(Loop)：事件执行后就开始下一个事件ID的处理，在对象更新动画之前会不断循环这个动画</li>
+    <li>不等待(Not Await)：只播放1次动画，事件执行后就开始下一个事件ID的处理</li>
+</ul>
+<b>动画(动画名称,动画目标::动画目标对象,等待)</b>，例：<b>动画(iuimirunning,预设::iuimi,循环)</b><br>
+<br><br>
+
+
+
+
+<br><br>
+<div style='text-align:right'>2022年8月21日</div>
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
