@@ -9,6 +9,20 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("abb").style.opacity = "0.3";
+            document.getElementById("chi").style.opacity = "0.3";
+            document.getElementById("hre").style.opacity = "0.3";
+            document.getElementById("mon").style.opacity = "0.3";
+            document.getElementById("rus").style.opacity = "0.3";
+            document.getElementById("sul").style.opacity = "0.3";
+            document.getElementById("mal").style.opacity = "0.3";
+        })
+    })
+</script>
 <style>
     li {
         line-height: 20px
@@ -126,6 +140,7 @@
 
 
 <div>
+    <div id="techno"></div>
     “有五根炮管的火药武器，擅长对付成群的单位，能对建筑造成少量伤害”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
