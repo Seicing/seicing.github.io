@@ -427,14 +427,12 @@
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
-        var az = a;
-        var bz = b;
-        az = az.substring(0, az.length() - 1);
-        bz = bz.substring(0, bz.length() - 1);
-        document.getElementById(az + '0').style.display = "block";
-        document.getElementById(bz + '0').style.opacity = 1;
-        document.getElementById(az + '1').style.display = "block";
-        document.getElementById(bz + '1').style.opacity = 1;
+        a = a.substring(0, a.length - 1);
+        b = b.substring(0, b.length - 1);
+        document.getElementById(a + '0').style.display = "block";
+        document.getElementById(b + '0').style.opacity = 1;
+        document.getElementById(a + '1').style.display = "block";
+        document.getElementById(b + '1').style.opacity = 1;
     }
 
     function cleargasek(a) {
