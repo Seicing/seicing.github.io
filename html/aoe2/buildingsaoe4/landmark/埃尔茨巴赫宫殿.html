@@ -9,6 +9,14 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("eng").style.opacity = "1"; 
+        })
+    })
+</script>
 <style>
     li {
         line-height: 20px
@@ -225,6 +233,7 @@
 
 
 <div>
+    <div id="techno"></div>
     “可作为大型箭塔使用，其生命值+50%。影响范围内的所有建筑受到的伤害降低-33%”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
@@ -473,7 +482,7 @@
         for (var i = 0; i < listText.length; i++) {
             document.getElementById(listText[i] + a).style.display = "none";
         }
-         for (var g = 0; g < listButton.length; g++) {
+        for (var g = 0; g < listButton.length; g++) {
             document.getElementById(listButton[g] + a).style.opacity = 0.3;
         }
     }

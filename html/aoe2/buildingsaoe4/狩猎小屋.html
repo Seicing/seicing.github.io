@@ -9,6 +9,14 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("eng").style.opacity = "1";
+        })
+    })
+</script>
 <style>
     li {
         line-height: 20px
@@ -88,6 +96,7 @@
 
 
 <div>
+    <div id="techno"></div>
     “村民可将食物存放于这座建筑。可研究增加食物采集效率和生产侦察兵的科技。根据附近的树木数量生产黄金。若附近存在其他狩猎小屋，则黄金速率降低”
     <br>
     <div style='text-align:right'>——游戏内说明</div>

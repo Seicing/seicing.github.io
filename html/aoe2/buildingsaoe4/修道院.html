@@ -9,6 +9,14 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("eng").style.opacity = "1";
+        })
+    })
+</script>
 <style>
     li {
         line-height: 20px
@@ -89,6 +97,7 @@
 
 
 <div>
+    <div id="techno"></div>
     “生产宗教单位并可研究宗教科技。在城堡时代 (第三时代) 以及帝王时代 (第四时代)，宗教单位可拾取圣物并将其放置在此建筑中以产生黄金”
     <br>
     <div style='text-align:right'>——游戏内说明</div>

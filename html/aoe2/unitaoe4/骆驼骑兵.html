@@ -9,6 +9,14 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("eng").style.opacity = "1";
+        })
+    })
+</script>
 <style>
     li {
         line-height: 20px
@@ -155,6 +163,7 @@
 
 
 <div>
+    <div id="techno"></div>
     “高机动性并且耐久的近战单位，擅长对付各类骑兵”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
