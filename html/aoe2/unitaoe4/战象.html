@@ -224,7 +224,6 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     战象是德里苏丹国独特的重装近战骑兵单位，他们无法升级 <br>
-    待补充<br>
     战象是城堡时代(III)生产的部队，一个战象可以看成两个部分：战象和长矛象伕，战象使用獠牙攻击建筑物和近战部队，而长矛象伕使用长矛进行混战，在进行攻城攻击的时候会切换到火把模式<br>
 
 </div>
@@ -237,8 +236,8 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="sulButton0" href="javascript:void(0);" onclick="tipsg('sulText0','sulButton0','0')"
-        style="color:blue">德里苏丹国</a> &nbsp
+    <a id="sulButton0" href="javascript:void(0);" onclick="tipsg('sulText0','sulButton0','0')" style="opacity:1"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
 
 
     <div id="sulText0" style="text-align: left;display:block ">
@@ -415,7 +414,7 @@
     function tipsg(a, b, c) {
         cleargasek(c);
         document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.color = "blue";
+        document.getElementById(b).style.opacity = 1;
     }
 
     function cleargasek(a) {
@@ -423,7 +422,7 @@
             document.getElementById(listText[i] + a).style.display = "none";
         }
         for (var g = 0; g < listButton.length; g++) {
-            document.getElementById(listButton[g] + a).style.color = "#D0C9B7";
+            document.getElementById(listButton[g] + a).style.opacity = 0.3;
         }
     }
 

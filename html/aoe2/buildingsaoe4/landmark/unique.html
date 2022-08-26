@@ -116,7 +116,7 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="文明英文名Button0" href="javascript:void(0);" onclick="tipsg('文明英文名Text0','文明英文名Button0','0')"
-        style="color:blue">文明中文名</a> &nbsp
+        style="opacity:1">文明中文名</a> &nbsp
 
 
     <div id="文明英文名Text0" style="text-align: left;display:block ">
@@ -137,7 +137,7 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="文明英文名Button1" href="javascript:void(0);" onclick="tipsg('文明英文名Text1','文明英文名Button1','1')"
-        style="color:blue">文明中文名</a> &nbsp
+        style="opacity:1">文明中文名</a> &nbsp
 
     <div id="文明英文名Text1" style="text-align: left;display:block ">
         黄金时代阶段II：+15%科技研发速度<br>
@@ -336,7 +336,7 @@
     function tipsg(a, b, c) {
         cleargasek(c);
         document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.color = "blue";
+        document.getElementById(b).style.opacity = 1;
     }
 
     function cleargasek(a) {
@@ -344,7 +344,7 @@
             document.getElementById(listText[i] + a).style.display = "none";
         }
         for (var g = 0; g < listButton.length; g++) {
-            document.getElementById(listButton[g] + a).style.color = "#D0C9B7";
+            document.getElementById(listButton[g] + a).style.opacity = 0.3;
         }
     }
 

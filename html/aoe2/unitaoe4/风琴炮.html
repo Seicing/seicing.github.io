@@ -166,10 +166,10 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
 
-    <a id="engButton0" href="javascript:void(0);" onclick="tipsg('engText0','engButton0','0')"
-        style="color:blue">英格兰</a> &nbsp
-    <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')"
-        style="color:#D0C9B7">法兰西</a> &nbsp
+    <a id="engButton0" href="javascript:void(0);" onclick="tipsg('engText0','engButton0','0')" style="opacity:1"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
+    <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:0.3"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
         文明固有加成：可以在大型箭塔、伯克郡宫殿、白塔训练 <br>
@@ -360,7 +360,7 @@
     function tipsg(a, b, c) {
         cleargasek(c);
         document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.color = "blue";
+        document.getElementById(b).style.opacity = 1;
     }
 
     function cleargasek(a) {
@@ -368,7 +368,7 @@
             document.getElementById(listText[i] + a).style.display = "none";
         }
         for (var g = 0; g < listButton.length; g++) {
-            document.getElementById(listButton[g] + a).style.color = "#D0C9B7";
+            document.getElementById(listButton[g] + a).style.opacity = 0.3;
         }
     }
 

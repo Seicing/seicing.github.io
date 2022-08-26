@@ -164,10 +164,10 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
 
-    <a id="chiButton0" href="javascript:void(0);" onclick="tipsg('chiText0','chiButton0','0')" style="color:blue">中国</a>
-    &nbsp
-    <a id="monButton0" href="javascript:void(0);" onclick="tipsg('monText0','monButton0','0')"
-        style="color:#D0C9B7">蒙古</a> &nbsp
+    <a id="chiButton0" href="javascript:void(0);" onclick="tipsg('chiText0','chiButton0','0')" style="opacity:1"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/chi.png" width="25px"></a>
+    <a id="monButton0" href="javascript:void(0);" onclick="tipsg('monText0','monButton0','0')" style="opacity:0.3"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
 
 
     <div id="chiText0" style="text-align: left;display:block ">
@@ -372,7 +372,7 @@
     function tipsg(a, b, c) {
         cleargasek(c);
         document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.color = "blue";
+        document.getElementById(b).style.opacity = 1;
     }
 
     function cleargasek(a) {
@@ -380,7 +380,7 @@
             document.getElementById(listText[i] + a).style.display = "none";
         }
         for (var g = 0; g < listButton.length; g++) {
-            document.getElementById(listButton[g] + a).style.color = "#D0C9B7";
+            document.getElementById(listButton[g] + a).style.opacity = 0.3;
         }
     }
 
