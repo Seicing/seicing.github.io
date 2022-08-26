@@ -1537,22 +1537,6 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
                     
-<a id="abbButton1" href="javascript:void(0);" onclick="tipsg('abbText1','abbButton1','1')"
-    style="color:#D0C9B7">&nbsp</a>
-<a id="chiButton1" href="javascript:void(0);" onclick="tipsg('chiText1','chiButton1','1')" style="opacity:0.3">&nbsp
-</a>
-<a id="engButton1" href="javascript:void(0);" onclick="tipsg('engText1','engButton1','1')" style="opacity:0.3">&nbsp
-</a>
-<a id="hreButton1" href="javascript:void(0);" onclick="tipsg('hreText1','hreButton1','1')" style="opacity:0.3">&nbsp
-</a>
-<a id="sulButton1" href="javascript:void(0);" onclick="tipsg('sulText1','sulButton1','1')" style="opacity:0.3">&nbsp
-</a>
-<a id="rusButton1" href="javascript:void(0);" onclick="tipsg('rusText1','rusButton1','1')" style="opacity:0.3">&nbsp
-</a>
-<a id="freButton1" href="javascript:void(0);" onclick="tipsg('freText1','freButton1','1')" style="opacity:0.3">&nbsp
-</a>
-<a id="monButton1" href="javascript:void(0);" onclick="tipsg('monText1','monButton1','1')" style="opacity:0.3">&nbsp
-</a>
 <a href="https://seicing.com/html/aoe2/index-aoe4units.html"><b>回到首页</b></a>
 
                 </div>
@@ -1569,9 +1553,14 @@
     var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'monButton']
 
     function tipsg(a, b, c) {
-        cleargasek(c);
-        document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.opacity = 1;
+        cleargasek(0);
+        cleargasek(1);
+        a = a.substring(0, a.length - 1);
+        b = b.substring(0, b.length - 1);
+        document.getElementById(a + '0').style.display = "block";
+        document.getElementById(b + '0').style.opacity = 1;
+        document.getElementById(a + '1').style.display = "block";
+        document.getElementById(b + '1').style.opacity = 1;
     }
 
     function cleargasek(a) {
