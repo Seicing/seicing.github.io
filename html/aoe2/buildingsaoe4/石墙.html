@@ -441,8 +441,11 @@
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
+
         var azl = a;
         var bzl = b;
+        azl = azl.toString();
+        bzl = bzl.toString();
         az = azl.Substring(0, a.Length - 1);
         bz = bzl.Substring(0, b.Length - 1);
         az0 = az + '0';
