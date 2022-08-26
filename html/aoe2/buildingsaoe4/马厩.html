@@ -721,9 +721,14 @@
     var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'monButton']
 
     function tipsg(a, b, c) {
-        cleargasek(c);
-        document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.opacity = 1;
+        cleargasek(0);
+        cleargasek(1);
+        a = a.substring(0, a.length - 1);
+        b = b.substring(0, b.length - 1);
+        document.getElementById(a + '0').style.display = "block";
+        document.getElementById(b + '0').style.opacity = 1;
+        document.getElementById(a + '1').style.display = "block";
+        document.getElementById(b + '1').style.opacity = 1;
     }
 
     function cleargasek(a) {
