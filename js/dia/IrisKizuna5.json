@@ -668,7 +668,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionNO",
-        "string": "不要冲动，安定下来……伊丽，恢复你昔日聪慧识大体的样子",
+        "string": "不要冲动，安定下来……伊丽，恢复你昔日的样子",
         "special": "dia1"
     },
     {
@@ -689,7 +689,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "…………是你想出脱掉信鸟戒指误导我的吧，世清",
+        "string": "…………是你想出脱掉信鸟戒指误导我的吧，世清兄弟",
         "special": "dia2"
     },
     {
@@ -725,13 +725,6 @@
         "name": "阿拉贡",
         "face": "AragonDefault",
         "string": "我没有在阴阳怪气，而是为我的任务完成了而感到高兴",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonDefault",
-        "string": "你就是我要寻找的人嘛",
         "special": "dia2"
     },
     {
@@ -778,13 +771,6 @@
     },
     {
         "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonDefault",
-        "string": "嘿，真是一个会麻烦人的好哥哥啊",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Angry",
         "string": "我哥哥怎么会被你杀死之后还要给追踪器给你帮助你逃跑呢！？",
@@ -794,14 +780,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "公主……你哥哥是为了你着想！",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Surprise",
-        "string": "为了我……",
+        "string": "因为这是你哥哥的要求",
         "special": "dia2"
     },
     {
@@ -822,7 +801,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "可惜啊……",
+        "string": "可惜啊",
         "special": "dia2"
     },
     {
@@ -836,7 +815,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "欧洛克……！",
+        "string": "是一个名为欧洛克的男人",
         "special": "dia2"
     },
     {
@@ -850,21 +829,14 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "他表面上是一个普通的伯爵，但实际上他背地里做了很多龌龊的事情啊",
+        "string": "他表面上是一个普通的伯爵，但实际上他背地里做了很多龌龊的事情",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "对了",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "根据世行的调查，他好像是结社的八辉星之一",
+        "string": "对了，根据世行的调查，他好像是结社的八辉星之一",
         "special": "dia1"
     },
     {
@@ -906,14 +878,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "世清……就是因为你是聪明人，所以跟你合作是非常轻松愉快的事情，我不需要浪费唇舌在这里交代前因后果",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonDefault",
-        "string": "那个村子地处偏僻，欧洛克盯上了这点，打算传播一种可以让人强制变成吸血鬼的瘟疫来进行样本观察",
+        "string": "就是这样，那个村子地处偏僻，欧洛克盯上了这点，打算传播一种可以让人强制变成吸血鬼的瘟疫来进行样本观察",
         "special": "dia2"
     },
     {
@@ -946,6 +911,13 @@
     },
     {
         "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "世事巧合就是多啊，我杀死伊安的时候就被上来劈柴的村民目击到了，虽然没人目击到欧洛克也会利用这点借刀杀人就是了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionNO",
         "string": "阿拉贡……",
@@ -969,7 +941,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "伊丽……这是你哥哥自私而又伟大的爱",
+        "string": "自私的爱",
         "special": "dia1"
     },
     {
@@ -1228,7 +1200,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "啊……忘了一件事啊",
+        "string": "啊，忘了一件事啊",
         "special": "dia1"
     },
     {
