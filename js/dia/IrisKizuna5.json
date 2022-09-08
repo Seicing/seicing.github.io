@@ -17,35 +17,28 @@
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentDefault",
-        "string": "私掠舰队的阿拉贡说不久之后会来找你提交一些东西",
+        "string": "私掠舰队的阿拉贡之前给皇宫来了一封信，说自己过几天将会造访皇宫进行贵重物的交接",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "在外面很忙吧，没空的话，我可以帮你接收就是了，汇报完毕",
+        "string": "让别人白跑一趟可不行，如果你太忙回不来，我可以帮你接收",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "阿拉贡这家伙，",
+        "string": "阿拉贡吗？是找到了我要找的东西了吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "阿拉贡……是找到了我要找的消息了吗？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "这个不能给世行截获……那家伙知道了的话会很麻烦的，还是回去皇宫等汇报吧",
+        "string": "世行这家伙看来是打算动点坏心思，为了避免不必要的麻烦还是回去皇宫守候吧",
         "special": "dia1"
     },
     {
@@ -59,7 +52,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "嗯，如果不回去的话会有点麻烦",
+        "string": "嗯，要回去了，不理会的话可能会有点麻烦",
         "special": "dia1"
     },
     {
@@ -87,7 +80,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "这样，那我们先回去吧",
+        "string": "这样，那我们一起回去吧",
         "special": "dia1"
     },
     {
@@ -110,5 +103,1167 @@
         "face": "SeicingPeep",
         "string": "什么时候过来呢……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "哥，私掠船长阿拉贡可能遇到了一点麻烦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "发生什么事了？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "好像是和跟你一起回来的伊拉修莱德公主打起来了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "和伊丽……他们是有什么过节吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我得去看看，世行，先感谢你的汇报",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "跑出宫外的世清听到了猫的叫声",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "猫？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不对，我还没听过这么难听的猫叫，是你吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "喂！太过分了！我可是冒着生命危险！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "拿去，我会想办法逃出去的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿拉贡把一个东西丢给了世清，世清转过身来继续说话",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "看你这样子，还有事吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "容我多事一下，你到底和伊丽有什么过节？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "那个疯狗公主……啊不对，伊拉修莱德公主吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "我才想问你，为什么她会在你家呢！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你吼这么大声是想她听到吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "(害怕的样子)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "不是因为她我也不需要老远跑到西景来找你了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "她是你什么人？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "一同旅行的伙伴",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "什么程度呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你问这个干什么",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "这样啊……等等！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "那个婆娘接近五公里范围内了！这里很危险，我要跑了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "五公里……？你是怎么知道的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "再等我就得死了，再见！我先匿了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿拉贡逃跑后不到两分钟，伊丽丝就气喘吁吁地跑到这里来了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Relax",
+        "string": "呼……呼……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "世清？你会见完你的宾客了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "怎么说好呢……感觉还是需要跟你老实……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你现在在追杀的那个人就是我要见的人……刚刚我就在这里和他干完正事了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "抱歉，伊丽，我还没搞清楚状况，所以没有帮你把他抓起来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCE",
+        "string": "没事……你不知道情况……没有问题……我……我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊丽",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我还没见过你这个样子",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "我们是朋友……能告诉我是什么一回事吗？我会尽可能地帮你的……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "伊安哥哥……就是被这个人杀死的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "什么！？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "伊安哥哥就是因为他变成了吸血鬼",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "他像一个骑士为了保护被海贼入侵的村落，战斗到了最后……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这件事没有听他说过……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "如果真的发生了这种事，他绝对不允许被饶恕",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "走吧，我命令世行封锁这个城镇，我们去找他",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "在泖支於城内到处寻找，行走步数达到一定程度后触发剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "这个家伙到底躲到哪里去了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "(伊丽现在一点也不像之前认识的她，跟一个失去理智的野兽一样)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "(等等，我确实记得阿拉贡说过……)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "这时候余跑了过来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "你们在干什么，好大的动静啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "余，你来得正好",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "怎么了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊丽",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "欸？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "把你的信鸟戒指给我",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "啊？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "虽然还是很疑惑，但是伊丽丝还是相信世清把戒指脱了下来给他<br>世清也把自己手上的戒指脱了下来，给了余",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "这是在干什么？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "不会吧……难道说……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你的仇恨阻碍了你的判断，伊丽",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "怎么可能……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "余，带着这两个戒指",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "朝着码头反方向的位置离去",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "哎，不懂你们在干啥啊，既然你要求我就照做吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "走吧，世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "(抱歉……阿拉贡，我会保住你一条性命的)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "前往港口的路口找到阿拉贡",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "总算是甩掉她回到码头了啊，希望可以来得及上船跑人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "伊安……你可真是会折腾人啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "等等……骗人的吧！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "你可逃不掉了！给我去死吧！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清连忙制止了伊丽丝",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "世清？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "你干什么！？放开我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "不要冲动，安定下来……伊丽，恢复你昔日聪慧识大体的样子",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "对不起……我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "…………是你想出脱掉信鸟戒指误导我的吧，世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "抱歉",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "哈哈哈，你没必要道歉啊，我甚至要为我的苦难生活要结束而感到高兴呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不用阴阳怪气背叛了你的我，阿拉贡，我会保住你的性命，在事情搞清楚之前",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "当然，你真的“怀着恶意”杀死了伊安的话，我不会阻止伊丽丝",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "我没有在阴阳怪气，而是为我的任务完成了而感到高兴",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "你就是我要寻找的人嘛",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "什么？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿拉贡把一个感应器丢给了伊丽丝",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "这是我哥哥的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "变成吸血鬼后的他把这个自己制作的追踪器给了我，他在和我离别的时候是这样说的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "“阿拉贡，这个仪器可以感知到我妹妹在一定范围内的气息……不要跟她起冲突，逃吧”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "“这是我完全失去理性之前，作为你的朋友最后的恳求……”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "嘿，真是一个会麻烦人的好哥哥啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "我哥哥怎么会被你杀死之后还要给追踪器给你帮助你逃跑呢！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "公主……你哥哥是为了你着想！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "为了我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "当日并没有发生那些人所说的我劫掠了村落，把保护村落的骑士杀死这件事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "相反，我在那认识了伊安，我们不打不相识，成为了非常要好的朋友",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "可惜啊……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "到底发生了什么……把真相告诉我……把伊安哥哥堕落为吸血鬼痛苦地苟延残喘的真相告诉我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "欧洛克……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "欧洛克？这名字我好像听说过",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "他表面上是一个普通的伯爵，但实际上他背地里做了很多龌龊的事情啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "对了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "根据世行的调查，他好像是结社的八辉星之一",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "“八辉星”？好像隐隐约约听过这个名字，对了，为了避免公主以为我在瞎扯，你就说说这个欧洛克干过些啥吧，就按你掌握的情报来看",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "他是结社内部的生命科学研究学者，他针对过始祖化进行过大量研究",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "之前还因为一些契机弄了一个“大麻烦”出来，这个也是那个欧洛克干的好事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "难道说，这个欧洛克打算利用村子进行什么研究？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "世清……就是因为你是聪明人，所以跟你合作是非常轻松愉快的事情，我不需要浪费唇舌在这里交代前因后果",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "那个村子地处偏僻，欧洛克盯上了这点，打算传播一种可以让人强制变成吸血鬼的瘟疫来进行样本观察",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "难道说，我的哥哥……他……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "他是我见过的最侠义，最勇敢的战士",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "虽然成功阻止了欧洛克的阴谋，但是他也被欧洛克的瘟疫感染",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "到了最后我还是不得不在他的请求下，亲手结束掉我的好朋友的生命啊……虽然从结果来说他最后还是吸血鬼化了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "阿拉贡……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "我很欣赏他……所以我决定遵循他的遗志，为他保守这个秘密",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "为什么……为什么哥哥要我不知道真相……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊丽……这是你哥哥自私而又伟大的爱",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "他知道你会不顾一切为他报仇，而对手是强大的八辉星，他不希望你因为一时的仇恨冲晕了头脑，落了敌人的圈套，重蹈覆辙",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "事实就是这样啊，你哥哥完全不理我有没有接受，就这样要我吸引你的仇恨，同时又给了我躲避你的工具，真不知道他是自私还是无私",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "公主，你的复仇既要命又执着，你哥哥早就想到了，所以他嘱咐了我一个要求，在这之前我不能把真相说出来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "那是什么……要求……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "“我的妹妹相当固执，认定了的事情她一定会不择手段做到，她有时候也会因为这种执着而走火入魔”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "“答应我，在她遇到那个可以让她依靠，让她可以冷静下来的人出现之前，把真相掩盖下去”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "原话就是这样说的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "哎？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PanicRF",
+        "string": "哎？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "啊啊！如释重负的感觉真棒啊！这种痛苦的生活终于要结束了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "我得走了，再晚点的话我的伙伴可能要在泖支於放火制造混乱让我逃掉了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你最好不要",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "那我不就是得快点走人阻止这群笨蛋嘛，再说在这里当电灯泡可不好呢，再见了，世清兄弟",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "伊丽丝公主",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "啊？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "复仇成功后请告诉我，我想请伊安喝一杯来安抚他的灵魂安息",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "再见了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "嗯……我答应你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿拉贡远去了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伊丽……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "世清……我不会冲动的，请放心吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "那个海贼大哥，最后离别时候的泪花我能感受到真挚，我不会质疑这是他为了活命的逢场作戏",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "伊安哥哥把我托付给了你，并且嘱咐我不能够冲动白白丢了性命，我会好好遵从他的嘱咐活下去的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "只是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我知道你要说什么",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "一定要报仇……对吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "嗯",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "在复仇的时机到来之前，我会遵循你的要求的，世清……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "我不会干傻事的，世清，我会忍耐直到那一天的到来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "我会像相信伊安哥哥一样相信你……我相信你会引导我走向正确的复仇之路……世清……我会相信你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "伊丽……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "啊……忘了一件事啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "啊？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "阿拉贡把这个追踪器留了下来，这个没啥，但是你看",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "追踪的光点在跑来跑去……难道说……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "可怜的余还在不明真相到处乱跑呢，我们快找到她让她停下来吧，有点对不起她",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "啊，是的呢，我们快点吧",
+        "special": "dia2"
     }
 ]
