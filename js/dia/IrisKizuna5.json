@@ -1039,7 +1039,14 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "啊啊！如释重负的感觉真棒啊！这种痛苦的生活终于要结束了！",
+        "string": "他还好意思这样说啊，你们一家人都是这样的，他在让你不要自取灭亡这点也和你追杀我这点一样的固执",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonDefault",
+        "string": "不过啊，这种痛苦的生活终于要结束了，如释重负的感觉真棒啊",
         "special": "dia2"
     },
     {
@@ -1130,7 +1137,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "那个海贼大哥，最后离别时候的泪花我能感受到真挚，我不会质疑这是他为了活命的逢场作戏",
+        "string": "那个海贼大哥，最后离别时候的凝重表情我不能从中感觉到虚伪，我不会质疑这是他为了活命的逢场作戏",
         "special": "dia2"
     },
     {
