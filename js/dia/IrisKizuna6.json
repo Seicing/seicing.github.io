@@ -3,7 +3,420 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "触发条件：伊丽丝羁绊5剧情完成后，来到艾特拉塔的任意一个城市",
+        "string": "触发条件：伊丽丝羁绊5剧情完成后，不管是否和伊丽丝组队击杀100只怪物后，和伊丽丝组队来到非伊拉修莱德的任意一个艾特拉塔城镇时触发",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清和泰拉一行人擦肩而过，科洛维停了下来，看了看伊丽丝",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "这位姐姐，为什么要用这种奇怪的目光看着我呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "抱歉，似乎是我认错人了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "科洛维跟上一行人的脚步离去了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "真是奇怪的姐姐",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我觉得这并不奇怪，毕竟伊丽的脸，任谁也想多看两眼",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2ShySmile",
+        "string": "真会说话啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "偏心的家伙",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "不过，那个大姐长得也不差呢，跟伊丽丝长得有点像，而且同样的白发，眼睛下面似乎也有紫色的眼影",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoHappy",
+        "string": "说不定那个大姐把你认成她的小妹妹了呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "哈哈，也说不定呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Relax",
+        "string": "呼，光顾着闲谈，忘了我们已经累得要死了呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯，我们去旅馆休息吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "剧情结束后，无法离开城镇，前往旅馆后触发剧情<br>伊丽丝在自己的房间看着窗外的风景，眼中流露出焦急的神色<br>世清拿着食物走了进来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "心事重重，连我进来了也没有留意到呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "啊，抱歉，饭做好了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清把饭菜放在一旁，和伊丽丝并排在窗前看着风景 ",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我能理解你的感受",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "可以在这里呆一会陪我聊聊吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "当然可以",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "和你一起冒险是一件快乐的事情，但是，现在的我却很难享受到这份快乐",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "抱歉",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "该抱歉的人是我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "说到底不管怎么样我都是会帮助你为你的哥哥报仇，杀死欧洛克",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "说句你可能不喜欢听的，结社也是我个人需要铲除的对象",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "没事啦，我都懂的，我还是得感谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "谢谢你，我心情好多了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "窗外响起了一些响声",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "是谁！？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "被发现了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "科洛维像一只蝙蝠一样倒立出现在窗前，吓得两人后退了两步",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "是刚刚那个姐姐",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "难道说你就是欧洛克！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "我不是欧洛克，和你一样，也是和欧洛克有关系的人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "……！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "那个……倒立着说话不累吗，还有你为什么要偷听我们说话，真可疑",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "泰拉他们也说过我这样很奇怪",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "科洛维把身体往上抬起，消失在了窗前，不久之后房间响起了敲门声，伊丽丝示意之后，科洛维打开了房门走了进来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "这个姑娘，从遇到你的那时候开始，我就一直很在意你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PanicRF",
+        "string": "欸？欸！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "那个……是我理解的意思吗……如果不是的话，请不要用这种让人误会的语气说话",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "……跟人聊天真难",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "(这位大姐怎么看上去脑子好像不太灵光啊)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "(我们还是不要说别人坏话好，尤其对方就在面前)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "我可以听到的，这时候我是该生气吗？还是挤出笑容糊弄过去，他们没教过我这种情况下怎么才是正常的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "麻烦，还是不要废话了，我现在的名字是科洛维",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "诶？啊啊，很高兴认识你，我叫伊丽丝，这位是世清，多多指教",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "伊丽丝对吧……你让我感觉到了一种很奇怪的感觉，不知道如何形容……很难受……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2PanicRF",
+        "string": "……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "看你的表情，似乎这个话题对你而言很冒犯，我会尝试自己搞懂它的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "这种发言加上躲在房顶偷窥，很难不让人觉得……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "我不是窃贼",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "不是，怎么说呢……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "欧洛克",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "你对这个名字有印象吗？",
+        "special": "dia1"
     }
 ]
