@@ -80,7 +80,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoHappy",
-        "string": "说不定那个大姐把你认成她的小妹妹了呢",
+        "string": "说不定那个大姐把你认成她的妹妹了呢",
         "special": "dia2"
     },
     {
@@ -129,15 +129,8 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "世清把饭菜放在一旁，和伊丽丝并排在窗前看着风景 ",
+        "string": "世清把饭菜放在一旁，和伊丽丝并排在窗前看着风景",
         "special": "dia3"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "我能理解你的感受",
-        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -186,6 +179,13 @@
         "name": "世清",
         "face": "SeicingDefault",
         "string": "说句你可能不喜欢听的，结社也是我个人需要铲除的对象",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "所以，不要有心理负担",
         "special": "dia1"
     },
     {
@@ -241,21 +241,28 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Angry",
-        "string": "难道说你就是欧洛克！？",
+        "string": "你为什么出现在这里！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "不，我认为更应该吐槽的是为什么她要倒立着说话",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "抱歉，我只是在房顶发呆的时候听到了你们说话",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefault",
-        "string": "我不是欧洛克，和你一样，也是和欧洛克有关系的人",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Angry",
-        "string": "……！？",
+        "string": "我是无意的",
         "special": "dia2"
     },
     {
@@ -269,7 +276,7 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefault",
-        "string": "泰拉他们也说过我这样很奇怪",
+        "string": "我已经习惯别人说我奇怪了",
         "special": "dia2"
     },
     {
@@ -278,13 +285,6 @@
         "face": "KruvDefault",
         "string": "嗯……",
         "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "",
-        "face": "",
-        "string": "科洛维把身体往上抬起，消失在了窗前，不久之后房间响起了敲门声，伊丽丝示意之后，科洛维打开了房门走了进来",
-        "special": "dia3"
     },
     {
         "branch": "branch0",
@@ -339,14 +339,14 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefault",
-        "string": "麻烦，还是不要废话了，我现在的名字是科洛维",
+        "string": "搞不懂……这个姑娘，你的名字是",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Surprise",
-        "string": "诶？啊啊，很高兴认识你，我叫伊丽丝，这位是世清，多多指教",
+        "string": "诶？啊啊，我叫伊丽丝，多多指教",
         "special": "dia2"
     },
     {
@@ -444,7 +444,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "和余、伊安一样半始祖化！",
+        "string": "和余、伊安一样的半始祖化！",
         "special": "dia1"
     },
     {
@@ -516,5 +516,131 @@
         "face": "KruvDefault",
         "string": "我之前相信这是吸血鬼之间的共鸣，今天遇到你之后，我对这个猜想产生了疑惑",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "我凭借着这份共鸣多次找到了他，目睹了他的坚持，也目睹了他逐渐变成怪物",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "在那之后我就失去了和他的联系了，结合你们的说话……我已经猜出个大概了，不过，我想最后确定一下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCE",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCE",
+        "string": "我用这双手亲手解放了他，我哥哥直到最后一刻也没有放弃过他的荣誉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "这样啊，真是遗憾",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefaultCry",
+        "string": "……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefaultCry",
+        "string": "非常感谢你们和我说了这么多，我现在内心有一种难以形容的情感，我想自己静一静，失礼了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "科洛维离开了窗口",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "有句话比较冒犯",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Serenity",
+        "string": "怎么了？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这个奇怪的女人可能和你有血缘上的关系，我没想错的话",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "其实我也大概猜到了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "怎么了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "饭菜都凉了啊，要我帮忙热一下吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "啊，这个啊，没所谓的，我不会介意",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这样啊，我就不阻碍你用餐了，我先出去了",
+        "special": "dia1"
     }
 ]
