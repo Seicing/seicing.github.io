@@ -402,21 +402,119 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefault",
-        "string": "欧洛克",
+        "string": "我想起来了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "这种难受的感觉跟那个骑士相遇的时候如出一辙",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "和我一样的感觉？难道说是伊安哥哥？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "……确实是叫这个名字，他是你哥哥啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "你是在……什么时候遇到他的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "科洛维驱动了始祖的力量浮现出吸血鬼的形态",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "！",
+        "string": "和余、伊安一样半始祖化！",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "你对这个名字有印象吗？",
+        "string": "你到底是谁？",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "半始祖化……？是你们那吸血鬼化的称呼吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "我就是为了寻找我的身世才会和那几个人踏上旅途的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "那个骑士也和我一样变成了吸血鬼，我被同类的气息吸引了过去，现在想回，可能并不是这样",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "伊安哥哥……你见证了伊安哥哥变成吸血鬼的过程吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "嗯，我还引导过他如何作为一个吸血鬼生存下去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "不过，高贵的骑士似乎对伤害他人抱有抗拒呢，不久之后他就离我而去了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCE",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "伊丽丝，我从你身上感受到了遇到他的时候的感觉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefault",
+        "string": "我之前相信这是吸血鬼之间的共鸣，今天遇到你之后，我对这个猜想产生了疑惑",
+        "special": "dia2"
     }
 ]
