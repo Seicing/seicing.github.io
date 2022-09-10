@@ -163,7 +163,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonAngry",
         "string": "喂！太过分了！我可是冒着生命危险！",
         "special": "dia2"
     },
@@ -198,14 +198,14 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonFear",
         "string": "那个疯狗公主……啊不对，伊拉修莱德公主吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonAngry",
         "string": "我才想问你，为什么她会在你家呢！",
         "special": "dia2"
     },
@@ -219,7 +219,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonFear",
         "string": "(害怕的样子)",
         "special": "dia2"
     },
@@ -247,7 +247,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSinisterSmile",
         "string": "什么程度呢？",
         "special": "dia2"
     },
@@ -268,7 +268,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonFear",
         "string": "那个婆娘接近五公里范围内了！这里很危险，我要跑了！",
         "special": "dia2"
     },
@@ -282,7 +282,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonFear",
         "string": "再等我就得死了，再见！我先匿了",
         "special": "dia2"
     },
@@ -416,7 +416,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "走吧，我命令世行封锁这个城镇，我们去找他",
+        "string": "走吧，我们去找他问个明白",
         "special": "dia1"
     },
     {
@@ -556,14 +556,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "余，带着这两个戒指",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "朝着码头反方向的位置离去",
+        "string": "余，带着这两个戒指，朝着码头反方向的位置离去",
         "special": "dia1"
     },
     {
@@ -597,7 +590,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "SeicingEmbarrassed",
         "string": "(抱歉……阿拉贡，我会保住你一条性命的)",
         "special": "dia1"
     },
@@ -611,7 +604,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonHappy",
         "string": "总算是甩掉她回到码头了啊，希望可以来得及上船跑人",
         "special": "dia2"
     },
@@ -625,7 +618,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonFear",
         "string": "等等……骗人的吧！",
         "special": "dia2"
     },
@@ -660,7 +653,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSurprise",
         "string": "……？",
         "special": "dia2"
     },
@@ -689,7 +682,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonDefault",
-        "string": "…………是你想出脱掉信鸟戒指误导我的吧，世清兄弟",
+        "string": "…………是你想出脱掉信鸟戒指误导我的吧，世清",
         "special": "dia2"
     },
     {
@@ -702,7 +695,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonHappy",
         "string": "哈哈哈，你没必要道歉啊，我甚至要为我的苦难生活要结束而感到高兴呢",
         "special": "dia2"
     },
@@ -723,7 +716,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonHappy",
         "string": "我没有在阴阳怪气，而是为我的任务完成了而感到高兴",
         "special": "dia2"
     },
@@ -751,21 +744,21 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "变成吸血鬼后的他把这个自己制作的追踪器给了我，他在和我离别的时候是这样说的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "“阿拉贡，这个仪器可以感知到我妹妹在一定范围内的气息……不要跟她起冲突，逃吧”",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "“这是我完全失去理性之前，作为你的朋友最后的恳求……”",
         "special": "dia2"
     },
@@ -779,28 +772,28 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "因为这是你哥哥的要求",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "当日并没有发生那些人所说的我劫掠了村落，把保护村落的骑士杀死这件事",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenityCE",
         "string": "相反，我在那认识了伊安，我们不打不相识，成为了非常要好的朋友",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenityCE",
         "string": "可惜啊",
         "special": "dia2"
     },
@@ -814,7 +807,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenityCE",
         "string": "是一个名为欧洛克的男人",
         "special": "dia2"
     },
@@ -842,7 +835,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSurprise",
         "string": "“八辉星”？好像隐隐约约听过这个名字，对了，为了避免公主以为我在瞎扯，你就说说这个欧洛克干过些啥吧，就按你掌握的情报来看",
         "special": "dia2"
     },
@@ -877,7 +870,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "就是这样，那个村子地处偏僻，欧洛克盯上了这点，打算传播一种可以让人强制变成吸血鬼的瘟疫来进行样本观察",
         "special": "dia2"
     },
@@ -891,28 +884,28 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSad",
         "string": "他是我见过的最侠义，最勇敢的战士",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSad",
         "string": "虽然成功阻止了欧洛克的阴谋，但是他也被欧洛克的瘟疫感染",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSad",
         "string": "到了最后我还是不得不在他的请求下，亲手结束掉我的好朋友的生命啊……虽然从结果来说他最后还是吸血鬼化了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenityCE",
         "string": "世事巧合就是多啊，我杀死伊安的时候就被上来劈柴的村民目击到了，虽然没人目击到欧洛克也会利用这点借刀杀人就是了",
         "special": "dia2"
     },
@@ -926,7 +919,7 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "我很欣赏他……所以我决定遵循他的遗志，为他保守这个秘密",
         "special": "dia2"
     },
@@ -961,14 +954,14 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "事实就是这样啊，你哥哥完全不理我有没有接受，就这样要我吸引你的仇恨，同时又给了我躲避你的工具，真不知道他是自私还是无私",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "公主，你的复仇既要命又执着，你哥哥早就想到了，所以他嘱咐了我一个要求，在这之前我不能把真相说出来",
         "special": "dia2"
     },
@@ -989,14 +982,14 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "“我的妹妹相当固执，认定了的事情她一定会不择手段做到，她有时候也会因为这种执着而走火入魔”",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "“答应我，在她遇到那个可以让她依靠，让她可以冷静下来的人出现之前，把真相掩盖下去”",
         "special": "dia2"
     },
@@ -1038,21 +1031,21 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSinisterSmile",
         "string": "他还好意思这样说啊，你们一家人都是这样的，他在让你不要自取灭亡这点也和你追杀我这点一样的固执",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSinisterSmile",
         "string": "不过啊，这种痛苦的生活终于要结束了，如释重负的感觉真棒啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSinisterSmile",
         "string": "我得走了，再晚点的话我的伙伴可能要在泖支於放火制造混乱让我逃掉了",
         "special": "dia2"
     },
@@ -1066,14 +1059,14 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
-        "string": "那我不就是得快点走人阻止这群笨蛋嘛，再说在这里当电灯泡可不好呢，再见了，世清兄弟",
+        "face": "AragonSinisterSmile",
+        "string": "那我不就是得快点走人阻止这群笨蛋嘛，再说在这里当电灯泡可不好呢，再见了，世清",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSerenity",
         "string": "伊丽丝公主",
         "special": "dia2"
     },
@@ -1087,14 +1080,14 @@
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSad",
         "string": "复仇成功后请告诉我，我想请伊安喝一杯来安抚他的灵魂安息",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonDefault",
+        "face": "AragonSad",
         "string": "再见了",
         "special": "dia2"
     },
@@ -1178,21 +1171,21 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Shy",
+        "face": "Iris2Pain",
         "string": "在复仇的时机到来之前，我会遵循你的要求的，世清……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Shy",
+        "face": "Iris2Pain",
         "string": "我不会干傻事的，世清，我会忍耐直到那一天的到来",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
+        "face": "Iris2DefaultCE",
         "string": "我会像相信伊安哥哥一样相信你……我相信你会引导我走向正确的复仇之路……世清……我会相信你……",
         "special": "dia2"
     },

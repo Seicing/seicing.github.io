@@ -30,7 +30,7 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultCE",
         "string": "抱歉，似乎是我认错人了",
         "special": "dia2"
     },
@@ -73,14 +73,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "不过，那个大姐长得也不差呢，跟伊丽丝长得有点像，而且同样的白发，眼睛下面似乎也有紫色的眼影",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoHappy",
-        "string": "说不定那个大姐把你认成她的妹妹了呢",
+        "string": "不过，那个大姐长得也不差呢，跟伊丽丝长得也有点像，说不定那个大姐把你认成她的妹妹了呢",
         "special": "dia2"
     },
     {
@@ -93,7 +86,7 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Relax",
+        "face": "Iris2DefaultCE",
         "string": "呼，光顾着闲谈，忘了我们已经累得要死了呢",
         "special": "dia2"
     },
@@ -164,7 +157,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "该抱歉的人是我……",
+        "string": "该抱歉的人是我……总是把话题引导向沉重",
         "special": "dia2"
     },
     {
@@ -282,7 +275,7 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultCE",
         "string": "嗯……",
         "special": "dia2"
     },
@@ -416,13 +409,13 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Surprise",
-        "string": "和我一样的感觉？难道说是伊安哥哥？",
+        "string": "骑士？难道说是伊安哥哥？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvPeer",
         "string": "……确实是叫这个名字，他是你哥哥啊",
         "special": "dia2"
     },
@@ -457,21 +450,21 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "半始祖化……？是你们那吸血鬼化的称呼吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "我就是为了寻找我的身世才会和那几个人踏上旅途的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "那个骑士也和我一样变成了吸血鬼，我被同类的气息吸引了过去，现在想回可能并不是这样",
         "special": "dia2"
     },
@@ -485,14 +478,14 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "嗯，我还引导过他如何作为一个吸血鬼生存下去",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "不过，高贵的骑士似乎对伤害他人抱有抗拒呢，不久之后他就离我而去了",
         "special": "dia2"
     },
@@ -506,28 +499,28 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "伊丽丝，我从你身上感受到了遇到他的时候的感觉",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "我之前相信这是吸血鬼之间的共鸣，今天遇到你之后，我对这个猜想产生了疑惑",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "我凭借着这份共鸣多次找到了他，目睹了他的坚持，也目睹了他逐渐变成怪物",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "在那之后我就失去了和他的联系了，结合你们的说话……我已经猜出个大概了，不过，我想最后确定一下",
         "special": "dia2"
     },
@@ -548,7 +541,7 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultCE",
         "string": "这样啊，真是遗憾",
         "special": "dia2"
     },
@@ -563,7 +556,7 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefaultCry",
-        "string": "非常感谢你们和我说了这么多，我现在内心有一种难以形容的情感，我想自己静一静，失礼了",
+        "string": "非常感谢你们和我说了这么多，我现在内心有一种难以形容的感觉，我想自己静一静，失礼了",
         "special": "dia2"
     },
     {
@@ -738,7 +731,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "他们的伙伴……难道房顶的战斗是他们发出的？",
+        "string": "他们的伙伴……难道房顶是他们在和造成灾难的源头战斗？",
         "special": "dia1"
     },
     {
@@ -786,7 +779,7 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokAngry",
         "string": "啊！！我的手！！",
         "special": "dia2"
     },
@@ -829,14 +822,21 @@
         "branch": "branch0",
         "name": "欧洛克",
         "face": "OrlokDefault",
-        "string": "是那个家伙的妹妹……！可恶",
+        "string": "哦，是那个阻止了我的实验的白痴的妹妹啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "欧洛克",
         "face": "OrlokDefault",
-        "string": "接招！",
+        "string": "认真一看，那边的那两个人不就是之前把我的实验室弄得乱七八糟的人吗，把我辛辛苦苦培育的神之躯毁掉的混账",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "欧洛克",
+        "face": "OrlokAngry",
+        "string": "真是懂得给人惹麻烦，给我滚开！可恶的家伙！",
         "special": "dia2"
     },
     {
@@ -892,7 +892,7 @@
         "branch": "branch0",
         "name": "泰拉",
         "face": "TellahDefault",
-        "string": "当然！不过他们就这样跳进了毒雾里，没问题吗？",
+        "string": "当然，不过他们就这样跳进了毒雾里，没问题吗？",
         "special": "dia2"
     },
     {
@@ -906,14 +906,14 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefault",
-        "string": "泰拉，你们三个用风魔法净化再追上去，我免疫吸血鬼毒雾，我自己先追上去",
+        "string": "泰拉，我免疫吸血鬼毒雾，我自己追上去帮助他们，你们三个用风魔法净化毒雾，等等我们汇合",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿西恩娜",
         "face": "AszinaDefault",
-        "string": "你要小心点！科洛维，我们得花一点时间才能追上来！",
+        "string": "没问题吧，科洛维，你要小心点！",
         "special": "dia2"
     },
     {
@@ -926,7 +926,7 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokFear",
         "string": "可恶……",
         "special": "dia2"
     },
@@ -940,14 +940,63 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokSinisterSmile",
         "string": "别把我会死当成是已经发生的事实！这种自以为是真是让人恶心！",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokSinisterSmile",
+        "string": "索菲亚公主哦，我亲眼看着你的哥哥痛苦地变成吸血鬼的全过程，那种绝望感真是让人愉悦啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Angry",
+        "string": "你这个混账！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝攻了上去，被欧洛克偷袭弄伤了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "欧洛克",
+        "face": "OrlokSinisterSmile",
+        "string": "再愤怒一点吧，公主，我跟你们不像，我不会因为仇恨而失去判断能力！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "伊丽！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Pain",
+        "string": "不至于致命……世清，他说得对，我不应该继续被愤怒蒙蔽了判断能力",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Pain",
+        "string": "我不会再大意，你绝对逃不掉的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "欧洛克",
+        "face": "OrlokFear",
         "string": "既然逃不掉就跟你们拼命吧，他妈的，这东西我还没试过在自己身体用过，管不得这么多了",
         "special": "dia2"
     },
@@ -961,7 +1010,7 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokAwakeningAngry",
         "string": "呜啊啊啊啊啊啊！！！",
         "special": "dia2"
     },
@@ -1003,14 +1052,14 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokAwakening",
         "string": "这是！？这是鲜血同化！？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokAwakening",
         "string": "可恶……身体在恢复……动不了……",
         "special": "dia2"
     },
@@ -1024,7 +1073,7 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
+        "face": "OrlokAwakeningAngry",
         "string": "啊啊啊啊啊啊！！你们这群畜生！！！",
         "special": "dia2"
     },
@@ -1080,14 +1129,7 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
-        "string": "好像没死",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "抱歉，刚刚那招需要消耗大量的生命力，我得吸血补充生命力",
         "special": "dia2"
     },
@@ -1101,8 +1143,8 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
-        "string": "顺利报仇了呢，伊丽丝",
+        "face": "KruvDefaultCE",
+        "string": "顺利报仇了呢 ",
         "special": "dia2"
     },
     {
@@ -1110,13 +1152,6 @@
         "name": "伊丽丝",
         "face": "Iris2Happy",
         "string": "是啊，要感谢这里在场的所有人",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCE",
-        "string": "我的哥哥终于可以在天堂得到安息了……",
         "special": "dia2"
     },
     {
@@ -1136,7 +1171,7 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "我没事……我得回去同伴身边，把击杀了八辉星的消息转达给他们，不能让他们担心",
         "special": "dia2"
     },
@@ -1157,14 +1192,14 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "……确实如此",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "我还有很多东西想要问你……不过，已经没时间了……",
         "special": "dia2"
     },
@@ -1178,42 +1213,42 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "我的名字早已经被成为了吸血鬼的我忘记了，现在的我，只是以“科洛维”为代号活着的吸血鬼",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "希望不是错觉，但是我在吸食你的血液的时候，感到了莫名的亲切感",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "仿佛不是别人的血液，而是我自己曾经作为人类时候的血液一样",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "现在我的内心充满着复杂的情感，希望我们以后还能见面，同时我能弄清楚在我的内心还残存着的感情到底是什么……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefault",
+        "face": "KruvDefaultAw",
         "string": "再见了",
         "special": "dia2"
     },
@@ -1270,7 +1305,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "恭喜，伊安的灵魂终于也得以安息了",
+        "string": "是啊，伊安的灵魂终于得以安息了",
         "special": "dia1"
     },
     {
@@ -1296,23 +1331,51 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "伊安他在天之灵也会感到很开心的",
-        "special": "dia1"
+        "name": "伊丽丝",
+        "face": "Iris2DefaultCE",
+        "string": "没有你们，我是不能走到今天的……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeep",
-        "string": "以后……还会继续和我们一起冒险吗？",
+        "face": "SeicingDefault",
+        "string": "我们是伙伴，伙伴之间互相帮助是理所应当的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "当然",
+        "string": "哈哈，那么以后有需要我的地方，我一定会两肋插刀赶来帮助你们的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DefaultCE",
+        "string": "(伊安哥哥……请安息吧)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2ShyCE",
+        "string": "(我已经为你报仇雪恨，同时找到了自己真正可以把整个身心信赖和托付的伙伴)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2ShyCE",
+        "string": "(在未来的日子里，我会光荣而骄傲地度过我接下来的人生)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2ShyCE",
+        "string": "(请你好好在天上看着我吧，伊安哥哥)",
         "special": "dia2"
     }
 ]
