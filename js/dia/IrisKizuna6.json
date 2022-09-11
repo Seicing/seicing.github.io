@@ -836,7 +836,7 @@
         "branch": "branch0",
         "name": "欧洛克",
         "face": "OrlokAngry",
-        "string": "真是懂得给人惹麻烦，给我滚开！可恶的家伙！",
+        "string": "一个两个都来碍事！真是烦人！",
         "special": "dia2"
     },
     {
@@ -1074,7 +1074,14 @@
         "branch": "branch0",
         "name": "欧洛克",
         "face": "OrlokAwakeningAngry",
-        "string": "啊啊啊啊啊啊！！你们这群畜生！！！",
+        "string": "马格努斯，你在看着吧，竟然就这样看着我战死，你这家伙……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "欧洛克",
+        "face": "OrlokAwakening",
+        "string": "我不会放过你们的……一切还没结束呢……",
         "special": "dia2"
     },
     {
@@ -1144,7 +1151,7 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefaultCE",
-        "string": "顺利报仇了呢 ",
+        "string": "欧洛克的生命气息彻底地消散了，看起来顺利报仇了呢 ",
         "special": "dia2"
     },
     {
