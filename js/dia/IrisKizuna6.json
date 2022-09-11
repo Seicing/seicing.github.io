@@ -570,35 +570,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "有句话比较冒犯",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "怎么了？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "这个奇怪的女人可能和你有血缘上的关系，我没想错的话",
+        "string": "那是听到亲人逝世的消息后才会流下的伤心的泪水",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "其实我也大概猜到了……",
+        "string": "是吗……？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "……",
+        "string": "嗯……",
         "special": "dia1"
     },
     {
@@ -807,22 +793,22 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokDefault",
-        "string": "我不记得跟你们有过矛盾，你是谁？",
+        "face": "OrlokAngry",
+        "string": "我不记得跟你们有过矛盾，到底是谁？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Angry",
-        "string": "伊拉修莱德王女，索菲亚，因为你而变成吸血鬼悲惨死去的高贵骑士伊拉修莱德王子亚历山大的妹妹！！",
+        "string": "我是伊拉修莱德王女索菲亚，是因为你而变成吸血鬼悲惨死去的骑士伊拉修莱德王子亚历山大的妹妹！！",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "欧洛克",
         "face": "OrlokDefault",
-        "string": "哦，是那个阻止了我的实验的白痴的妹妹啊",
+        "string": "哦，是那个阻止了我的样本调查的白痴的妹妹啊",
         "special": "dia2"
     },
     {
@@ -940,7 +926,7 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokSinisterSmile",
+        "face": "OrlokAngry",
         "string": "别把我会死当成是已经发生的事实！这种自以为是真是让人恶心！",
         "special": "dia2"
     },
@@ -996,7 +982,7 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokFear",
+        "face": "OrlokAngry",
         "string": "既然逃不掉就跟你们拼命吧，他妈的，这东西我还没试过在自己身体用过，管不得这么多了",
         "special": "dia2"
     },
@@ -1052,14 +1038,14 @@
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokAwakening",
+        "face": "OrlokAwakeningAngry",
         "string": "这是！？这是鲜血同化！？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "欧洛克",
-        "face": "OrlokAwakening",
+        "face": "OrlokAwakeningAngry",
         "string": "可恶……身体在恢复……动不了……",
         "special": "dia2"
     },
