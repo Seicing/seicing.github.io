@@ -465,14 +465,21 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefaultAw",
-        "string": "那个骑士也和我一样变成了吸血鬼，我被同类的气息吸引了过去，现在想回可能并不是这样",
+        "string": "那个时候的我还在到处游荡，忽然感受到了一股气息在呼唤我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefaultAw",
+        "string": "这股气息的尽头是一个充满了死亡气息的废弃村落……那个时候的他从墓地里好不容易挣扎了出来",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Depressed",
-        "string": "伊安哥哥……你见证了伊安哥哥变成吸血鬼的过程吗？",
+        "string": "和阿拉贡说的一样……你见证了伊安哥哥变成吸血鬼的过程吗？",
         "special": "dia2"
     },
     {
@@ -514,7 +521,7 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefaultAw",
-        "string": "我凭借着这份共鸣多次找到了他，目睹了他的坚持，也目睹了他逐渐变成怪物",
+        "string": "我凭借着这份共鸣多次找到了他，目睹了他的坚持，也目睹了他逐渐失去理性，完全变成怪物",
         "special": "dia2"
     },
     {
