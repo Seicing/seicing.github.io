@@ -773,7 +773,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "因为这是你哥哥的要求",
+        "string": "因为这是你哥哥最后的“计策”",
         "special": "dia2"
     },
     {
@@ -787,91 +787,105 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenityCE",
-        "string": "相反，我在那认识了伊安，我们不打不相识，成为了非常要好的朋友",
+        "string": "相反，我在那认识了伊安，正所谓不打不相识，成为了非常要好的朋友",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Pain",
+        "string": "告诉我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Pain",
+        "string": "把一切都告诉我……把伊安哥哥的一切都告诉我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonFear",
+        "string": "不要一副吃了人的样子嘛，我会如实地、详细地说给你听的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenityCE",
-        "string": "可惜啊",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Cry",
-        "string": "到底发生了什么……把真相告诉我……把伊安哥哥堕落为吸血鬼痛苦地苟延残喘的真相告诉我……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonSerenityCE",
-        "string": "是一个名为欧洛克的男人",
+        "string": "一切的起源都是因为一个名为欧洛克的脸色苍白的男人",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "欧洛克？这名字我好像听说过",
+        "string": "欧洛克？难道是那个结社的八辉星之一的欧洛克？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "他是结社内部地位最高的八个人之一，针对始祖化和生命进行过大量研究，还搞过一个……让人很不舒服的东西，因为那个结下了梁子",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "他表面上是一个普通的伯爵，但实际上他背地里做了很多龌龊的事情",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "对了，根据世行的调查，他好像是结社的八辉星之一",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonSerenity",
-        "string": "“八辉星”？好像隐隐约约听过这个名字，对了，为了避免公主以为我在瞎扯，你就说说这个欧洛克干过些啥吧，就按你掌握的情报来看",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "他是结社内部的生命科学研究学者，他针对过始祖化进行过大量研究",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "之前还因为一些契机弄了一个“大麻烦”出来，这个也是那个欧洛克干的好事",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "难道说，这个欧洛克打算利用村子进行什么研究？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Surprise",
-        "string": "……",
+        "string": "这个家伙背地里拿人命当儿戏，到处用活人试验他那变态研究，伊安可能察觉到这点对他展开了追踪吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "就是这样，那个村子地处偏僻，欧洛克盯上了这点，打算传播一种可以让人强制变成吸血鬼的瘟疫来进行样本观察",
+        "string": "那时候的我因为在躲开某些仇家的耳目，来到了那个偏僻的村子，和追杀欧洛克的伊安相遇并且认识了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonAngry",
+        "string": "欧洛克这家伙，可能是觉得这个村子偏僻，所以在这里做了一次大规模的活体试验",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "活体试验？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonAngry",
+        "string": "在一个多星期的准备之后他向村子散发一种可怕的毒雾，吸进毒雾的人都变成吸血鬼了，那可是几十人的村子啊，真的没有人性！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonSad",
+        "string": "伊安是我见过的最侠义，最勇敢的战士",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonSad",
+        "string": "他顶着毒雾把能救的村民都救出去了，最后跟我一起揍了欧洛克一顿，可惜被那个欧洛克跑了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonSad",
+        "string": "他知道自己被毒雾感染并经历了高强度的运动，和村民一样变成吸血鬼是在所难免的了，所以他……",
         "special": "dia2"
     },
     {
@@ -885,41 +899,20 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSad",
-        "string": "他是我见过的最侠义，最勇敢的战士",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonSad",
-        "string": "虽然成功阻止了欧洛克的阴谋，但是他也被欧洛克的瘟疫感染",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿拉贡",
-        "face": "AragonSad",
-        "string": "到了最后我还是不得不在他的请求下，亲手结束掉我的好朋友的生命啊……虽然从结果来说他最后还是吸血鬼化了",
+        "string": "我很遗憾……某种意义上来说确实是我在伊安的示意下亲手杀了他",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenityCE",
-        "string": "世事巧合就是多啊，我杀死伊安的时候就被上来劈柴的村民目击到了，虽然没人目击到欧洛克也会利用这点借刀杀人就是了",
+        "string": "欧洛克一顿添油加醋把我诬陷成了灭绝那个村落的凶手，而且还让你因此对我展开了无穷无尽的追杀……但是伊安死前恳求我不要跟你说出真相",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCompassionNO",
-        "string": "阿拉贡……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
         "name": "阿拉贡",
-        "face": "AragonSerenity",
+        "face": "AragonSerenityCE",
         "string": "我很欣赏他……所以我决定遵循他的遗志，为他保守这个秘密",
         "special": "dia2"
     },
@@ -934,35 +927,42 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "自私的爱",
+        "string": "我想……这是你哥哥对你的爱",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Surprise",
-        "string": "……",
+        "string": "爱……？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "他知道你会不顾一切为他报仇，而对手是强大的八辉星，他不希望你因为一时的仇恨冲晕了头脑，落了敌人的圈套，重蹈覆辙",
+        "string": "欧洛克是强大的八辉星，他可以一个人从伊安和阿拉贡的联合攻击下逃脱，说明他实力绝对强劲，同时结社可以从各个渠道控制这个世界的地下世界，非常棘手",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "他不希望你因为一时的仇恨而失去判断能力，自己一个去找他复仇然后丢掉性命",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "事实就是这样啊，你哥哥完全不理我有没有接受，就这样要我吸引你的仇恨，同时又给了我躲避你的工具，真不知道他是自私还是无私",
+        "string": "就是这样……他知道你是一个固执的妹妹，所以同样固执的他不理我有没有答应，把这个追踪器塞到了我的手上让我可以躲避你的追杀",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "公主，你的复仇既要命又执着，你哥哥早就想到了，所以他嘱咐了我一个要求，在这之前我不能把真相说出来",
+        "string": "在“那个时刻”到来之前，他恳求我不要说出真相",
         "special": "dia2"
     },
     {
@@ -976,21 +976,28 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Cry",
-        "string": "那是什么……要求……",
+        "string": "“那个时刻”……指的是什么？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "“我的妹妹相当固执，认定了的事情她一定会不择手段做到，她有时候也会因为这种执着而走火入魔”",
+        "string": "“我的死会让伊丽丝不顾一切地复仇，怒火会蒙蔽她的判断力，让敌人有机可乘",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSerenity",
-        "string": "“答应我，在她遇到那个可以让她依靠，让她可以冷静下来的人出现之前，把真相掩盖下去”",
+        "string": "“伊丽丝在我死后，需要一个可以替代我的人引导她，让她依靠，让她可以冷静下来应对一切”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonSerenity",
+        "string": "“在她遇到那个重要的人之前，阿拉贡，请原谅我的自私，你暂时性地承受我妹妹的怒火吧，这是我最后的请求了”",
         "special": "dia2"
     },
     {
@@ -1032,7 +1039,7 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSinisterSmile",
-        "string": "他还好意思这样说啊，你们一家人都是这样的，他在让你不要自取灭亡这点也和你追杀我这点一样的固执",
+        "string": "我当初一时兴起答应的时候还没有意识到事情的严重性，不过，后悔也没意义了",
         "special": "dia2"
     },
     {
@@ -1081,7 +1088,14 @@
         "branch": "branch0",
         "name": "阿拉贡",
         "face": "AragonSad",
-        "string": "复仇成功后请告诉我，我想请伊安喝一杯来安抚他的灵魂安息",
+        "string": "就好像伊安所说的那样，不要白白丢了性命让他伤心，我相信兄弟和你听了我的说话之后会更加谨慎地行动",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿拉贡",
+        "face": "AragonSad",
+        "string": "我相信你们可以成功为伊安复仇的，等复仇成功后，请告诉我，我想请伊安喝一杯来安抚他的灵魂",
         "special": "dia2"
     },
     {
@@ -1158,7 +1172,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "一定要报仇……对吧",
+        "string": "一定要报仇，对吧",
         "special": "dia1"
     },
     {
@@ -1171,21 +1185,7 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2DefaultCE",
-        "string": "在复仇的时机到来之前，我会遵循你的要求的，世清……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DefaultCE",
-        "string": "我不会干傻事的，世清，我会忍耐直到那一天的到来",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DefaultCE",
+        "face": "Iris2ShyCE",
         "string": "我会像相信伊安哥哥一样相信你……我相信你会引导我走向正确的复仇之路……世清……我会相信你……",
         "special": "dia2"
     },
