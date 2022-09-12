@@ -1018,8 +1018,15 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "他完全不顾伤痛疯狂地挣扎，无法准确地破坏它的心脏",
+        "string": "完全不顾伤痛疯狂地挣扎，无法准确地破坏他的心脏",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "科洛维突然出现，快速地突入战场",
+        "special": "dia3"
     },
     {
         "branch": "branch0",
@@ -1171,7 +1178,7 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvDefault",
         "string": "我没事……我得回去同伴身边，把击杀了八辉星的消息转达给他们，不能让他们担心",
         "special": "dia2"
     },
@@ -1192,14 +1199,14 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "……确实如此",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvDefault",
         "string": "我还有很多东西想要问你……不过，已经没时间了……",
         "special": "dia2"
     },
@@ -1213,42 +1220,42 @@
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "我的名字早已经被成为了吸血鬼的我忘记了，现在的我，只是以“科洛维”为代号活着的吸血鬼",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "希望不是错觉，但是我在吸食你的血液的时候，感到了莫名的亲切感",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "仿佛不是别人的血液，而是我自己曾经作为人类时候的血液一样",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "现在我的内心充满着复杂的情感，希望我们以后还能见面，同时我能弄清楚在我的内心还残存着的感情到底是什么……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "科洛维",
-        "face": "KruvDefaultAw",
+        "face": "KruvPeer",
         "string": "再见了",
         "special": "dia2"
     },
