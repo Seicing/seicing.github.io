@@ -183,6 +183,8 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/hre.png" width="25px"></a>
     <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="ottButton0" href="javascript:void(0);" onclick="tipsg('ottText0','ottButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
 
 
     <div id="engText0" style="text-align: left;display:block ">
@@ -323,6 +325,50 @@
         </table>
     </div>
 
+
+    <div id="ottText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/长管大炮.png" width="20px">长管大炮(+10%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/加装船帆.png" width="20px">加装船帆(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/航海家瞭望塔.png" width="20px">航海家瞭望塔(+4) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
+                <td>
+
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/追击者加农炮.png" width="20px">追击者加农炮(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+2) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 </div>
 
 <br><br><br>
@@ -385,6 +431,10 @@
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/hre/大帆船.jpg" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/hre/mini/大帆船.jpg"></a>
             </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/大帆船.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/mini/大帆船.jpg"></a>
+            </td>
 
         </tr>
         <tr>
@@ -398,6 +448,9 @@
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
                 神圣罗马帝国大帆船
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                奥斯曼大帆船
             </td>
 
         </tr>
@@ -434,8 +487,8 @@
 </body>
 
 <script>
-    var listText = ['engText', 'hreText', 'freText']
-    var listButton = ['engButton', 'hreButton', 'freButton']
+    var listText = ['engText', 'hreText', 'freText', 'ottText']
+    var listButton = ['engButton', 'hreButton', 'freButton', 'ottButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);

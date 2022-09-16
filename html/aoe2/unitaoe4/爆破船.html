@@ -17,6 +17,7 @@
             document.getElementById("fre").style.opacity = "1";
             document.getElementById("hre").style.opacity = "1";
             document.getElementById("ott").style.opacity = "1";
+            document.getElementById("mal").style.opacity = "1";
         })
     })
 </script>
@@ -172,6 +173,10 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/hre.png" width="25px"></a>
     <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="ottButton0" href="javascript:void(0);" onclick="tipsg('ottText0','ottButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
+    <a id="malButton0" href="javascript:void(0);" onclick="tipsg('malText0','malButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
         文明固有加成：船只造价-10%<br>
@@ -222,6 +227,53 @@
     </div>
 
     <div id="freText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+2) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/炸药.png" width="20px">炸药 (+40%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="ottText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+2) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/炸药.png" width="20px">炸药 (+40%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="malText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
@@ -312,6 +364,14 @@
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/hre/爆破船.jpg" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/hre/mini/爆破船.jpg"></a>
             </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/爆破船.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/mini/爆破船.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/mal/爆破船.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/mal/mini/爆破船.jpg"></a>
+            </td>
 
         </tr>
         <tr>
@@ -325,6 +385,12 @@
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
                 神圣罗马帝国爆破船
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                奥斯曼爆破船
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                马里爆破船
             </td>
 
         </tr>
@@ -361,8 +427,8 @@
 </body>
 
 <script>
-    var listText = ['engText', 'hreText', 'freText']
-    var listButton = ['engButton', 'hreButton', 'freButton']
+    var listText = ['engText', 'hreText', 'freText', 'ottText', 'malText']
+    var listButton = ['engButton', 'hreButton', 'freButton', 'ottButton', 'malButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
