@@ -13,7 +13,7 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("eng").style.opacity = "1"; 
+            document.getElementById("eng").style.opacity = "1";
         })
     })
 </script>
@@ -317,7 +317,45 @@
             </tr>
         </table>
     </div>
+    <div id="ottText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/苏丹亲兵火枪.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">苏丹亲兵火枪</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:80px;">100木 250金 45秒</td>
+                <td style="text-align: left">苏丹亲兵火枪伤害+3</td>
+            </tr>
+        </table>
+    </div>
 
+    <div id="malText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/毒箭.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">毒箭</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:80px;">175肉 500金 90秒</td>
+                <td style="text-align: left">步弓手造成持续6秒的3额外毒伤害</td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -344,8 +382,12 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/rus.png" width="25px"></a>
     <a id="freButton1" href="javascript:void(0);" onclick="tipsg('freText1','freButton1','1')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
-    <a id="monButton1" href="javascript:void(0);" onclick="tipsg('monText1','monButton1','1')"
-        style="color:#D0C9B7"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
+    <a id="monButton1" href="javascript:void(0);" onclick="tipsg('monText1','monButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
+    <a id="ottButton1" href="javascript:void(0);" onclick="tipsg('ottText1','ottButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
+    <a id="malButton1" href="javascript:void(0);" onclick="tipsg('malText1','malButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
 
 
     <div id="abbText1" style="text-align: left;display:block ">
@@ -494,6 +536,39 @@
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">迁移速度</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/卓越机动性.png" width="20px">卓越机动性(组装、拆装、移动速度+50%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText1" style="text-align: left;display:none ">
+        影响力系统：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升25%/25%/33%/40% <br>
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="maleText1" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
                 </td>
             </tr>
             <tr style="text-align: left">
@@ -745,6 +820,14 @@
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mon/靶场3.jpg" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mon/mini/靶场3.jpg"></a>
             </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/靶场2.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/mini/靶场2.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/靶场3.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/mini/靶场3.jpg"></a>
+            </td>
         </tr>
         <tr>
             <td style="background-color:#F5F8FA;text-align: center">
@@ -755,6 +838,45 @@
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
                 蒙古城堡时代靶场
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                奥斯曼封建时代靶场
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                奥斯曼城堡时代靶场
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/靶场4.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/mini/靶场4.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/靶场2.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/靶场2.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/靶场3.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/靶场3.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/靶场4.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/靶场4.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#F5F8FA;text-align: center">
+                罗斯帝王时代靶场
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                蒙古封建时代靶场
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                蒙古城堡时代靶场
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                罗斯帝王时代靶场
             </td>
         </tr>
     </table>
@@ -789,8 +911,8 @@
 </body>
 
 <script>
-    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'freText', 'monText']
-    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'monButton']
+    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'freText', 'monText', 'ottText', 'malText']
+    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'monButton', 'ottButton', 'malButton']
 
     function tipsg(a, b, c) {
         cleargasek(0);
