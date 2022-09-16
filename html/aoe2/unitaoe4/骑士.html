@@ -16,6 +16,7 @@
             document.getElementById("eng").style.opacity = "1";
             document.getElementById("rus").style.opacity = "1";
             document.getElementById("hre").style.opacity = "1";
+            document.getElementById("ott").style.opacity = "1";
         })
     })
 </script>
@@ -202,8 +203,8 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    骑士是重型骑兵单位，拥有强力的冲锋伤害，他们是欧洲地区的重装骑兵，相当于东亚和中东地区的长矛骑兵<br>
-    骑士是城堡时代(III)生产的部队，罗斯人拥有早期骑士(II)，没有文明拥有取代他们的兵种<br>
+    骑士是重型骑兵单位，拥有强力的冲锋伤害，他们是欧洲地区的重装骑兵，相当于东亚和中东地区的长矛骑兵，奥斯曼虽然发迹于亚洲，但是他们吸收了大量来自拜占庭的文化，因此他们也使用骑士<br>
+    骑士是城堡时代(III)生产的部队，罗斯人拥有早期骑士(II)<br>
 
 </div>
 
@@ -222,6 +223,8 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/hre.png" width="25px"></a>
     <a id="rusButton0" href="javascript:void(0);" onclick="tipsg('rusText0','rusButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/rus.png" width="25px"></a>
+    <a id="ottButton0" href="javascript:void(0);" onclick="tipsg('ottText0','ottButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
         温嘉德宫殿：可以以便宜的价格生产由他们组成的军队 <br> 文明固有加成：可以在大型箭塔、伯克郡宫殿、白塔训练 <br>
@@ -348,6 +351,52 @@
         </table>
     </div>
 
+    <div id="ottText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网 (+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/高级学院.png" width="20px">高级学院(使军事学校可以生产骑士) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
@@ -466,6 +515,14 @@
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/rus/骑士4.jpg" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/rus/mini/骑士4.jpg"></a>
             </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/骑士3.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/mini/骑士3.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/骑士4.jpg" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/ott/mini/骑士4.jpg"></a>
+            </td>
 
         </tr>
         <tr>
@@ -476,7 +533,12 @@
             <td style="background-color:#F5F8FA;text-align: center">
                 罗斯精锐骑士
             </td>
-
+            <td style="background-color:#F5F8FA;text-align: center">
+                奥斯曼骑士
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                奥斯曼精锐骑士
+            </td>
         </tr>
 
 
@@ -513,8 +575,8 @@
 </body>
 
 <script>
-    var listText = ['engText', 'hreText', 'rusText']
-    var listButton = ['engButton', 'hreButton', 'rusButton']
+    var listText = ['engText', 'hreText', 'rusText', 'ottText']
+    var listButton = ['engButton', 'hreButton', 'rusButton', 'ottButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
