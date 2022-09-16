@@ -129,6 +129,10 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
     <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="ottButton0" href="javascript:void(0);" onclick="tipsg('ottText0','ottButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
+    <a id="malButton0" href="javascript:void(0);" onclick="tipsg('malText0','malButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
 
 
     <div id="abbText0" style="text-align: left;display:block ">
@@ -147,6 +151,12 @@
         这座建筑物没有科技可以研发
     </div>
     <div id="freText0" style="text-align: left;display:none ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="ottText0" style="text-align: left;display:none ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="malText0" style="text-align: left;display:none ">
         这座建筑物没有科技可以研发
     </div>
 
@@ -174,6 +184,11 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
     <a id="freButton1" href="javascript:void(0);" onclick="tipsg('freText1','freButton1','1')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="ottButton1" href="javascript:void(0);" onclick="tipsg('ottText1','ottButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
+    <a id="malButton1" href="javascript:void(0);" onclick="tipsg('malText1','malButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
+
 
 
     <div id="abbText1" style="text-align: left;display:block ">
@@ -241,6 +256,26 @@
         </table>
     </div>
     <div id="freText1" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText1" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="maleText1" style="text-align: left;display:none ">
         <table frame="box" width="500px" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -332,8 +367,10 @@
 </body>
 
 <script>
-    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'freText',]
-    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'freButton',]
+    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'freText', 'monText',
+        'ottText', 'malText']
+    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'freButton', 'ottButton', 'malButton']
+
 
     function tipsg(a, b, c) {
         cleargasek(0);
