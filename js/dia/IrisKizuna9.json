@@ -737,85 +737,92 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Cry",
-        "string": "这样啊……对不起……",
+        "face": "Iris2DepressedCE",
+        "string": "这样啊，我冒犯了……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Cry",
+        "string": "我会另外想办法的，现在让我一个静静",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝哭着跑了出去",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "(啊！)",
+        "face": "SeicingSurprise",
+        "string": "伊丽！",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "喂，宫黄世清",
+        "string": "你这家伙",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "我……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "还不追出去？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "你是傻逼吗？",
+        "string": "伤害女孩子的心之后扬长而去的人是人渣",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "可是",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "都把事情摊得这么明白了",
+        "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
-        "string": "还想继续糊弄下去，浪费别人的青春吗？",
+        "face": "YoEmbarrassed",
+        "string": "不要继续浪费别人的青春",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
-        "string": "一直在顾及我的感受，压抑着远比我早发展起来的感情……",
+        "face": "YoCloseEye",
+        "string": "作为女人我会感觉愤怒……但是，我是那个连发脾气都没有资格的人",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
-        "string": "说实话……作为正常的女人，对这件事感到愤怒是很正常的",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoCry",
-        "string": "但是……我是连发脾气的资格都没有的人啊……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoCry",
-        "string": "欺骗自己没有受伤这件事是不可能的……但是作为支持你的妻子……不要让你陷入困难的境地才是我的职责",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoCry",
-        "string": "我无法对你们的感情视而不见，也无法让你们做出为了我放弃这份感情的想法",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoCry",
-        "string": "如果是和心意相通的挚友一起侍奉你的话……我可以接受……",
+        "face": "YoCloseEye",
+        "string": "我什么都知道，我不忍心看着这段感情最后依旧因为我无疾而终，因为，她也是我打从心底可以信赖的……挚友",
         "special": "dia2"
     },
     {
@@ -827,108 +834,73 @@
     },
     {
         "branch": "branch0",
+        "name": "余",
+        "face": "YoCloseEye",
+        "string": "快去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清追了出去",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "伊丽，对不起，刚刚我没有顾及你的感受",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2SerenityRF",
-        "string": "世清！",
+        "face": "Iris2DepressedCERF",
+        "string": "秉承了伊拉修莱德高贵品质的我，也会因为你陷入不伦之恋中",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "从遇到你的那天起，那个感情的萌芽就开始在我的心中生长",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "世清……你实在是太罪孽深重了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "我一直尝试把这份感情压制在心中，越是压制，心里越是你的样子，我的心里的罪恶感就越是沉重",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DepressedCERF",
+        "string": "不过，“审判”的日子要来了，我很可能就这样死在战场上，即使是这样的结果我也不会畏惧，只是在这之前这股遗憾，就真的只能是遗憾了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "SeicingDefault",
+        "string": "伊丽！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
         "string": "……是",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "接下来我要说的，和计划没有关系，仅仅是一个个人感情向的提问……",
         "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2SerenityRF",
-        "string": "老实地回答我……你喜欢我吗？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefaultRF",
-        "string": "……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "说“不喜欢”……只是在欺骗自己而已",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "余她说得没错……我和你在那无尽的并肩作战之后，早就把你当成重要的人了……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2SerenityRF",
-        "string": "我也……喜欢你……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "还记得我们第一次相会吗，我现在确信那是命运之神给与我们的恩赐",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "应该是你牵着我的手逃出王宫时候明白了这份心意的吧……如同童话里出现的王子把公主从束缚中拯救出来一般",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "伴随着这股爱恋的就是……“背德感”……亵渎对你的感情，以及介入他人感情的苦痛",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2SerenityRF",
-        "string": "现在……已经没必要苦恼了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "现在……大家都已经互相理解，所以……可以……对我说出那句话吗？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefaultRF",
-        "string": "一点心理准备的时间都不给我，真是十足的伊拉修莱德风格 ",
-        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -940,6 +912,34 @@
     {
         "branch": "branch0",
         "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "要让女孩子表白什么的不是男人应该干的事情",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "我也在一直欺骗着自己，我不知道如何形容这个感觉，我不想失去你们",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "所以……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "所以……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
         "face": "SeicingDefaultRF",
         "string": "嫁给我吧",
         "special": "dia1"
@@ -947,7 +947,7 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
+        "face": "Iris2ShyCE",
         "string": "……",
         "special": "dia2"
     },
@@ -955,64 +955,92 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Shy",
-        "string": "是的，我答应你……我的……老公……",
+        "string": "是的，我答应你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余也跟着走了出来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "真是直白明了，一大堆肉麻的东西也省了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "余……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoHappy",
+        "string": "你在紧张什么，我早就和伊丽丝把所有的一切都摊牌了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "伊丽丝说得没错，你就是罪孽深重的男人，为了补偿这份罪孽，你就尽你的所能去疼爱我们吧，不要让我们任何一人感到被冷落，感到伤心哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "那……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmileRF",
+        "string": "今晚就先来一次考试吧，伊丽丝，你会介意吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2ShySmile",
+        "string": "第一次就一起？我倒是不会介意，因为我感觉以后会变成常态呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmileRF",
-        "string": "太亲密啦，连我都没叫过这家伙老公呢",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoHappyRF",
-        "string": "不过我现在应该感到高兴，令人纠结的事情终于告一段落，从今天开始，我们就是一家人了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmileRF",
-        "string": "不过我先申明哦，我是大老婆",
+        "string": "那就好",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "……别破坏气氛",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "入夜了，月亮出来了，与其在这里吵闹，还不如干些和现在的美景相符的事情",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "所以，在东方发白之前，你们两个就给我暂时忘记掉一切",
+        "face": "SeicingEmbarrassed",
+        "string": "………………",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2ShySmile",
-        "string": "嗯……老公",
+        "string": "要好好疼爱人家哦，老公",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmileRF",
-        "string": "你要一起？真贪心啊……",
-        "special": "dia2"
+        "name": "世清",
+        "face": "SeicingTerrible",
+        "string": "…………………………",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -1038,29 +1066,15 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeep",
-        "string": "……她们没在，看起来已经很晚了，真羡慕这些可以早起的",
+        "face": "SeicingTerrible",
+        "string": "哪里是什么温柔的小鸽子，明明是凶猛的大白鲨……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeep",
-        "string": "加油吧，伊丽，你作为王者最后的考验来了",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingPeep",
-        "string": "团结所有的伊拉修莱德人，让他们重新集结在同一个旗帜下战斗",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingPeep",
-        "string": "在她完事之前……先到处看看情况吧，随时做好各种突然情况的准备",
+        "face": "SeicingEmbarrassed",
+        "string": "嗯……事到如今已经没必要纠结了，就这样顺其自然吧",
         "special": "dia1"
     },
     {
@@ -1081,7 +1095,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "伊丽的行动结束了吗？我看看",
+        "string": "看起来伊丽的游说有成果了",
         "special": "dia1"
     },
     {
@@ -1102,7 +1116,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "和余一起过来城堡为我助威吧，我等你",
+        "string": "和余一起过来伊拉修莱德城吧，我会满怀期待地等待你的到来的",
         "special": "dia2"
     },
     {
@@ -1116,7 +1130,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "嗯……接下来可以说是西景的内务，在战场上活跃一下筋骨吧",
+        "string": "接下来可有的是忙了，一定要做好万全的准备，一不小心可是会丢掉性命的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "毕竟让女孩子伤心和失望的男人是人渣啊",
         "special": "dia1"
     }
 ]
