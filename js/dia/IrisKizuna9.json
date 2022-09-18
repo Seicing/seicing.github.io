@@ -822,6 +822,13 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoCloseEye",
+        "string": "你抚心自问，你真的对她一点感觉都没有？就连我这个笨蛋也能看出来的东西，你竟然还在欺骗自己啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoCloseEye",
         "string": "我什么都知道，我不忍心看着这段感情最后依旧因为我无疾而终，因为，她也是我打从心底可以信赖的……挚友",
         "special": "dia2"
     },
@@ -967,13 +974,6 @@
     },
     {
         "branch": "branch0",
-        "name": "余",
-        "face": "YoDefault",
-        "string": "真是直白明了，一大堆肉麻的东西也省了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
         "string": "余……",
@@ -1081,6 +1081,13 @@
         "branch": "branch0",
         "name": "",
         "face": "",
+        "string": "在那之后，世清跟随伊丽丝到处游说贵族督军们参与战斗，并且获得了积极的回应",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
         "string": "羁绊剧情后，伊拉修莱德地区会进入特殊的战争状态，到处出现宿句士兵，并且伊丽丝会强制离队<br>走出秘密基地去到任何一个城镇都会触发下面的提示剧情",
         "special": "dia3"
     },
@@ -1088,21 +1095,21 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "伊丽丝的信鸟给世清传递了信件",
+        "string": "伊丽丝暂时离开了队伍去伊拉修莱德城进行最后的动员，等一切准备完毕后，伊丽丝的信鸟给世清传递了信件",
         "special": "dia3"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "看起来伊丽的游说有成果了",
+        "string": "看起来已经准备完毕了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "老公，伊拉修莱德的贵族们都被我说服，现在开始在伊拉修莱德城集结了",
+        "string": "老公，伊拉修莱德的贵族们已经在伊拉修莱德城集结完毕了",
         "special": "dia2"
     },
     {
@@ -1130,14 +1137,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "接下来可有的是忙了，一定要做好万全的准备，一不小心可是会丢掉性命的",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "毕竟让女孩子伤心和失望的男人是人渣啊",
+        "string": "还有……老公什么的，真不适应",
         "special": "dia1"
     }
 ]
