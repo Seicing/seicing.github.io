@@ -34,10 +34,10 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="55"></div>
-<a style="color:rgb(255, 0, 0)" href="#aaposbo" onclick="tangut()">切换为完全表格(包含战役、革命文明)</a><br>
-<a style="color:rgb(0, 255, 255)" href="#aaposbo" onclick="chinese()">切换为仅正式游戏文明表格</a><br><br>
+<a id="tangut1" style="color:#CABC85;" href="#aaposbo" onclick="tangut()">切换为完全表格(包含战役、革命文明)</a> &nbsp; &nbsp;
+<a id="chinese1" style="color:#0010ff" href="#aaposbo" onclick="chinese()">切换为仅正式游戏文明表格</a><br><br>
 
-<div id="tangut" style="display: block;">
+<div id="tangut" style="display:none;">
     <table id="customers" frame="box">
         <tr>
             <td style="text-align: center">殷商</td>
@@ -322,7 +322,7 @@
 </div>
 
 
-<div id="chinese" style="display: none;">
+<div id="chinese" style="display: block;">
     <table id="customers" frame="box">
         <tr>
             <td style="text-align: center">殷商</td>
@@ -552,11 +552,15 @@
     function tangut() {
         document.getElementById("tangut").style.display = "block";
         document.getElementById("chinese").style.display = "none";
+        document.getElementById("tangut1").style.color = "#0010ff";
+        document.getElementById("chinese1").style.color = "#CABC85";
     }
 
     function chinese() {
         document.getElementById("tangut").style.display = "none";
         document.getElementById("chinese").style.display = "block";
+        document.getElementById("tangut1").style.color = "#CABC85";
+        document.getElementById("chinese1").style.color = "#0010ff";
     }
 </script>
 
