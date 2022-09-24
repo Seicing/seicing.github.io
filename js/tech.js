@@ -4,7 +4,7 @@ function showPic(e, taitou) {
     y = e.pageY;
     aasb = document.getElementById("Layer1")
     aasb.style.display = "";
-    aasb.style.width = "300px";
+    aasb.style.width = "200px";
     aasb.innerHTML = "<div style='background:rgba(0,0,0,0.75)'><font style='color:#ffffff'>" + taitou + "</font></div>";
     var div = aasb;
     var z = div.offsetWidth;
