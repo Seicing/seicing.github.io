@@ -1,0 +1,604 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "文羁绊1-6剧情完成后，触发夏州的大庙会",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "夏州大教堂前，人群络绎不绝，世清和文在教皇房间的窗口看着下面的人群",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "真是壮观的景象",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我小的时候很期待夏州的大庙会，明明更喜欢安静的环境，真奇怪啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "因为嘈杂的庙会对你而言是安静的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "此话怎说",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "没有活着的人会喜欢真正的死寂，就算是多安静的野外也会有虫子的叫声",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "喜欢安静的人，实际上是在享受安心感",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "远离嘈杂可以让他们获得安心感，但是他绝对不会觉得世界上只剩下他自己一个是安心的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "有生命活动的世界才是我们认知中能让我们感到安心的世界，长期的安静反而会滋生自身被世界否定的不安感",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "对于安静的你来说，偶尔的一次庙会就是感受人烟的最佳契机，在嘈杂之中反而可以获得久违的宁静",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "不是吗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你说得确实有道理",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "虽然平时余吵吵闹闹的，但是她没跟过来在这里胡闹而是下去逛了，反而不习惯了呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这个世界还真是奇怪啊，越是喜欢怎么样，越不喜欢的东西就更有必要",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "基于喜欢的事物诱发出来的安心感需要自己不喜欢的事物衬托才会显得有实感",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "所以我喜欢庙会本质上还是喜欢安静",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "只是我需要嘈杂来让安静来得更加有实感",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你比我自己还更了解我，平时大大咧咧的，唯有这一点让我佩服",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileRF",
+        "string": "大大咧咧这个词是多余的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "打闹一番，现在你的脸色好多了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "从认识的时候开始就一直这样，你在人多的场合就一直在忍受着什么啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SurpriseRF",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileRF",
+        "string": "你一直都在偷偷地留意我？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不要把我当成是那种冷血无情的人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "所以说我才不想向女人嘘寒问暖……一个两个都把我当成小孩子一样调戏",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Happy",
+        "string": "哈哈哈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "别小看了你自己的可爱程度嘛，任谁也想欺负一下的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "别对男人用可爱来形容",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "两人一言不发看着眼前熙熙攘攘的人群",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "喂，世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "怎么了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "你相信这个世界上有神吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "现任教皇向曾经是神从的人问这种问题……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "这里又没人听得到我们说话",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "那老实说，我是不信的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmile",
+        "string": "嗯，这是我能猜想到的结果，你的诚实让人觉得钦佩，不会把东西遮遮掩掩",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmile",
+        "string": "因为你完全没有表现过任何对神明敬畏的念头呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "实不相瞒，我也是哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "别轻描淡写地说出这种会引发宗教战争的话啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "……我是认真的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "之前没有契机跟你说呢，实际上我能感受到人们心中的痛苦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "痛苦？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "是字面意义上的感受痛苦，他人心中感受到的痛苦我可以共感",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "人越多的地方，我就越能感受到来自四面八方的疼痛",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "在这里的人们，微笑的背后都是依托祈福来缓解心中的痛苦，我可以切实地感受到其中的感觉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "所以……你才会在人多的地方脸色发青啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "……是弑神者的诅咒",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "……嗯",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "教皇可以真切地感受到别人的痛苦，为了让自己安心下来，他们必须抛弃一切欲望去平息他人的痛苦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "而且教皇是完美的，他们不会对人世间的事物抱有留念，教皇无法和任何人相恋并且留下后裔",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "教皇在完成自己的职责后会被天使接入天堂，而新的教皇将会继续以圣痕和虚目的形式在其他人身上出现，永远地延续下去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "永远地产生这种虚假的圣人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "跟你冒险之后，我才知道这单纯就是我们那喜欢麻烦人的祖先延续到我们今天的诅咒而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "这也是我不认为这个世界上有神的原因",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "圣痕和虚目的存在可能一开始并没有现在的初衷，但教皇的存在可以确定是让很多人感到安心的东西",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "但是，世界也没有因为教皇改变过，一直这样走了下来，为探求安心感的自我感动，这就是我对宗教的理解",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "……一直以来只能自己一个人这样默默承受吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "不",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "我还有你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "从十几年前认识你开始就一直这样，你的内心无比纯粹，只有对自由和宁静的向往，不会被世间束缚",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "在完全不会感受到痛苦的你面前，我可以获得安心感",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "就是因为这样我才会喜欢你啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "文……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "抱歉，我以前一直都以为你单纯只是……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "那是我能想到的可以和你保持合理关系的方法，因为我对你的感情注定是无疾而终的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2DepressedCE",
+        "string": "但是",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "可以向你表示自己的心声，真好啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "文突然剧烈晃动了一下",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "文！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "哈哈……每次我想这样心就会绞痛呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "很难受……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清把文拧到了怀里，让文就这样靠在自己的胸膛上",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SurpriseRF",
+        "string": "世清……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "这样好受点吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2HappyRF",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "我说过的，你就是我最好的特效药",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "不要离开我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "我答应你",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "只不过……有必要跟余说清楚",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "不要因此感到苦恼",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileRF",
+        "string": "女人之间的直觉可比男人敏锐数倍……你猜为什么小余会故意自己一个去逛街？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "难道说……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileRF",
+        "string": "所以现在你真的不想继续做些什么吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "…………",
+        "special": "dia1"
+    }
+]
