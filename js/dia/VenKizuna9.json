@@ -449,6 +449,13 @@
     },
     {
         "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "这个世界对我的恶意越是深重，我对你的感情就越是真挚",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefaultRF",
         "string": "文……",
@@ -592,6 +599,13 @@
         "name": "文",
         "face": "Ven2SinisterSmileRF",
         "string": "所以现在你真的不想继续做些什么吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileRF",
+        "string": "那种事……还是可以的……不是吗？",
         "special": "dia2"
     },
     {
