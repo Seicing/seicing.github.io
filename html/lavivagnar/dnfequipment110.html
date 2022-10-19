@@ -61,8 +61,9 @@
                 <td rowspan="4" style="width:30px">
                     <img :src="diaindex.iconml" />
                 </td>
-                <td rowspan="2" style="width:120px">
-                    <div v-html="diaindex.chineseName"></div>
+                <td rowspan="4" style="width:120px">
+                    <div v-html="diaindex.chineseName"></div><br>
+                    <div v-html="diaindex.koreanName"></div>
                 </td>
                 <td>
                     <div v-html="diaindex.option1"></div>
@@ -86,9 +87,6 @@
                 </td>
             </tr>
             <tr>
-                <td rowspan="2">
-                    <div v-html="diaindex.koreanName"></div>
-                </td>
                 <td>
                     <div v-html="diaindex.option3"></div>
                 </td>
