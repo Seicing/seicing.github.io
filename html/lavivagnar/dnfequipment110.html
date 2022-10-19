@@ -8,7 +8,9 @@
     <link href="https://seicing.com/css/style_lavivagnar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/equipment.css" rel="stylesheet" type="text/css" media="screen" />
+<script language="javascript" src="https://seicing.com/js/skill.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/dnfequipment.html');
@@ -32,7 +34,7 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
-<div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+
 <table id="customers">
     <tr>
         <td style="background-color: #443623; font-family: '宋体' !important; width:28px">
@@ -47,54 +49,67 @@
         <td style="background-color: #443623; font-family: '宋体' !important; width:115px">
             基准攻击强化
         </td>
-    </tr>
-
-
-    <!--一个-->
-    <tr>
-        <td rowspan="4">
-            <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/equipment8/Saviors_Glory_-_Odachi.png">
-        </td>
-        <td rowspan="2">
-            测试用武器
-        </td>
-        <td>
-            攻击时，有5%的几率虐待小雪人。
-        </td>
-        <td>
-            500
+        <td style="background-color: #443623; font-family: '宋体' !important; width:115px">
+            基准BUFF强化
         </td>
     </tr>
-    <tr>
-        <td>
-            攻击时，有5%的几率虐待肥SB。
-        </td>
-        <td>
-            500
-        </td>
+    <tr v-for="diaindex in aasb">
+        <table>
+            <tr>
+                <td rowspan="4">
+                    <img :src="diaindex.iconml" />
+                </td>
+                <td rowspan="2">
+                    <div v-html="diaindex.chineseName"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.option1"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage1"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div v-html="diaindex.option2"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage2"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff2"></div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <div v-html="diaindex.koreanName"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.option3"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage3"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff3"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div v-html="diaindex.option4"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage4"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff4"></div>
+                </td>
+            </tr>
+        </table>
     </tr>
-    <tr>
-        <td rowspan="2">
-            테스트에 사용한 무기
-        </td>
-        <td>
-            攻击时，有5%的几率虐待大肥猫。
-        </td>
-        <td>
-            500
-        </td>
-    </tr>
-    <tr>
-        <td>
-            攻击时，有5%的几率虐待肥雪人。
-        </td>
-        <td>
-            500
-        </td>
-    </tr>
-    <!--一个-->
-
-
 </table>
 <p></p><br>
 <p></p><br>
@@ -112,7 +127,7 @@
                 <div id="sidebar" style="position:fixed; left:0%px; top:0%px; height:100%;  width:220px">
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <a href="https://seicing.com/html/index.html"><b>回到目录</b></a><br><br>
+                        
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -133,6 +148,40 @@
 
 </body>
 
-<script language="javascript" src="https://seicing.com/js/skill.js"></script>
+<script type="text/javascript">
+    var imgAll = [];
+
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            aasb: []
+        },
+        created() {
+            fetch('https://seicing.com/js/dia/dnf110.json')
+                .then(response => response.json())
+                .then(json => {
+                    this.aasb = json
+                    for (var i = 0; i < json.length; i++) {
+
+                        json[i].iconml = 'https://seicing.com/res/dia/' + json[i]['iconname'] + '.png';
+                        json[i].chineseName = json[i]['chineseName'];
+                        json[i].koreanName = json[i]['koreanName'];
+                        json[i].option1 = json[i]['option1'];
+                        json[i].damage1 = json[i]['damage1'];
+                        json[i].buff1 = json[i]['buff1'];
+                        json[i].option2 = json[i]['option2'];
+                        json[i].damage2 = json[i]['damage2'];
+                        json[i].buff2 = json[i]['buff2'];
+                        json[i].option3 = json[i]['option3'];
+                        json[i].damage3 = json[i]['damage3'];
+                        json[i].buff3 = json[i]['buff3'];
+                        json[i].option4 = json[i]['option4'];
+                        json[i].damage4 = json[i]['damage4'];
+                        json[i].buff4 = json[i]['buff4'];
+                    }
+                })
+        }
+    }) 
+</script>
 
 </html>
