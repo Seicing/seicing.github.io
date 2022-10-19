@@ -37,20 +37,20 @@
 
 <table id="customers">
     <tr>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:28px">
+        <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
             图标
         </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:35px">
+        <td style="background-color: #443623; font-family: '宋体' !important; width:120px">
             名称
         </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:115px">
+        <td style="background-color: #443623; font-family: '宋体' !important;">
             属性
         </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:115px">
-            基准攻击强化
+        <td style="background-color: #443623; font-family: '宋体' !important; width:50px">
+            攻击强化
         </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:115px">
-            基准BUFF强化
+        <td style="background-color: #443623; font-family: '宋体' !important; width:40px">
+            BUFF力
         </td>
     </tr>
 </table>
@@ -58,19 +58,19 @@
     <div v-for="diaindex in aasb">
         <table id="customers">
             <tr>
-                <td rowspan="4">
+                <td rowspan="4" style="width:30px">
                     <img :src="diaindex.iconml" />
                 </td>
-                <td rowspan="2">
+                <td rowspan="2" style="width:120px">
                     <div v-html="diaindex.chineseName"></div>
                 </td>
                 <td>
                     <div v-html="diaindex.option1"></div>
                 </td>
-                <td>
+                <td style="width:50px">
                     <div v-html="diaindex.damage1"></div>
                 </td>
-                <td>
+                <td style="width:40px">
                     <div v-html="diaindex.buff1"></div>
                 </td>
             </tr>
