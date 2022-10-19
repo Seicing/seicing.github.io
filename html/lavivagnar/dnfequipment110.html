@@ -56,7 +56,7 @@
 </table>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <table>
+        <table id="customers">
             <tr>
                 <td rowspan="4">
                     <img :src="diaindex.iconml" />
@@ -165,7 +165,7 @@
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
 
-                        json[i].iconml = 'https://seicing.com/res/dia/' + json[i]['iconname'] + '.png';
+                        json[i].iconml = 'https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/equipment/' + json[i]['iconname'] + '.png';
                         json[i].chineseName = json[i]['chineseName'];
                         json[i].koreanName = json[i]['koreanName'];
                         json[i].option1 = json[i]['option1'];
