@@ -34,9 +34,6 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
-<a href="#" onclick="AllDie('耳环')">耳环</a> <a href="#" onclick="AllDie('手镯')">手镯</a>
-<br>
-<br>
 <table id="customers" width="780px">
     <tr>
         <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
@@ -58,61 +55,59 @@
 </table>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :class="diaindex.fatsb">
-            <table id="customers" width="780px">
-                <tr>
-                    <td rowspan="4" style="width:30px">
-                        <img :src="diaindex.iconml" />
-                    </td>
-                    <td rowspan="4" style="width:120px">
-                        <div v-html="diaindex.chineseName"></div><br>
-                        <div v-html="diaindex.koreanName"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.option1"></div>
-                    </td>
-                    <td style="width:50px">
-                        <div v-html="diaindex.damage1"></div>
-                    </td>
-                    <td style="width:40px">
-                        <div v-html="diaindex.buff1"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div v-html="diaindex.option2"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.damage2"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.buff2"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div v-html="diaindex.option3"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.damage3"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.buff3"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div v-html="diaindex.option4"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.damage4"></div>
-                    </td>
-                    <td>
-                        <div v-html="diaindex.buff4"></div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <table id="customers" width="780px">
+            <tr>
+                <td rowspan="4" style="width:30px">
+                    <img :src="diaindex.iconml" />
+                </td>
+                <td rowspan="4" style="width:120px">
+                    <div v-html="diaindex.chineseName"></div><br>
+                    <div v-html="diaindex.koreanName"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.option1"></div>
+                </td>
+                <td style="width:50px">
+                    <div v-html="diaindex.damage1"></div>
+                </td>
+                <td style="width:40px">
+                    <div v-html="diaindex.buff1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div v-html="diaindex.option2"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage2"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff2"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div v-html="diaindex.option3"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage3"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff3"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div v-html="diaindex.option4"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.damage4"></div>
+                </td>
+                <td>
+                    <div v-html="diaindex.buff4"></div>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 <p></p><br>
@@ -166,7 +161,6 @@
                 .then(json => {
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
-
                         json[i].iconml = 'https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/equipment/' + json[i]['icon'] + '.png';
                         json[i].chineseName = json[i]['chineseName'];
                         json[i].koreanName = json[i]['koreanName'];
@@ -182,25 +176,11 @@
                         json[i].option4 = json[i]['option4'];
                         json[i].damage4 = json[i]['damage4'];
                         json[i].buff4 = json[i]['buff4'];
-                        json[i].fatsb = json[i]['type'];
                     }
                 })
         },
-
-
-
     })
 
-    function AllDie(a) {
-        allFamilyDie();
-        var ayazimi = a
-        document.getElementByClassName(ayazimi).style.display = 'block';
-    }
-
-    function allFamilyDie() {
-        document.getElementsByClassName("耳环").style.display = 'none';
-        document.getElementsByClassName("手镯").style.display = 'none';
-    }
 
 </script>
 
