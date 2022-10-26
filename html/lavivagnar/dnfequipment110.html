@@ -34,7 +34,7 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
-<a href="#" onclick="耳环()">耳环</a> <a href="#" onclick="手镯()">手镯</a>
+<a href="#" onclick="AllDie(ear)">耳环</a> <a href="#" onclick="AllDie(bra)">手镯</a>
 <br>
 <br>
 <table id="customers">
@@ -189,19 +189,16 @@
 
     })
 
-    function 耳环() {
-        var element = document.getElementById('耳环');
-        element.style = "display:block";
-        var element = document.getElementById('手镯');
-        element.style = "display:none";
+    function AllDie(a) {
+        allFamilyDie();
+        getElementById(a).style.display = 'block';
     }
 
-    function 手镯() {
-        var element = document.getElementById('耳环');
-        element.style = "display:none";
-        var element = document.getElementById('手镯');
-        element.style = "display:block";
+    function allFamilyDie() {
+        getElementById("ear").style.display = 'none';
+        getElementById("bra").style.display = 'none';
     }
+
 </script>
 
 </html>
