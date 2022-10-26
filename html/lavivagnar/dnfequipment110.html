@@ -152,13 +152,15 @@
     const vm = new Vue({
         el: '#app',
         data: {
-            isShow: true,
+            isShow: false,
             aasb: []
         },
 
         methods: {
             earShow() {
-                this.isShow = false;
+                if ("你设置的条件") {
+                    this.isShow = true;
+                }
             },
             braShow() {
                 if (json[i].type != '手镯') {
