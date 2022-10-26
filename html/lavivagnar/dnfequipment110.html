@@ -34,8 +34,8 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
-<a href="#" @click="isShow2('耳环')">耳环</a>
-<a href="#" @click="isShow2('手镯')">手镯</a>
+<a href="#" onclick="$('.ear').css('display','none')">耳环</a>
+<a href="#" onclick="$('.bra').css('display','none')">手镯</a>
 <br><br>
 <table id="customers" width="780px">
     <tr>
@@ -57,8 +57,8 @@
     </tr>
 </table>
 <div id="app">
-    <div v-for="diaindex in aasb">
-        <table id="customers" width="780px" v-show="isShow">
+    <div v-for="diaindex in aasb" :id="diaindex.type">
+        <table id="customers" width="780px">
             <tr>
                 <td rowspan="4" style="width:30px">
                     <img :src="diaindex.iconml" />
@@ -152,7 +152,6 @@
     const vm = new Vue({
         el: '#app',
         data: {
-            isShow: false,
             aasb: []
         },
 
@@ -180,16 +179,6 @@
                         json[i].type = json[i]['type'];
                     }
                 })
-        },
-
-
-        methods: {
-            isShow2(a) {
-                if (type.includes(a)) {
-                    this.isShow = true;
-                }
-            },
-
         },
 
 
