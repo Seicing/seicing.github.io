@@ -34,6 +34,9 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
+<a href="#" @click="earShow">耳环</a>
+<a href="#" @click="braShow">手镯</a>
+<br><br>
 <table id="customers" width="780px">
     <tr>
         <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
@@ -55,7 +58,7 @@
 </table>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <table id="customers" width="780px">
+        <table id="customers" width="780px" v-show="isShow">
             <tr>
                 <td rowspan="4" style="width:30px">
                     <img :src="diaindex.iconml" />
@@ -153,8 +156,29 @@
     const vm = new Vue({
         el: '#app',
         data: {
+            isShow: true,
             aasb: []
         },
+
+        methods: {
+            earShow: function () {
+                if (json[i].type != '耳环') {
+                    this.isShow = false;
+                } else {
+                    this.isShow = true;
+                }
+            },
+
+            braShow: function () {
+                if (json[i].type != '手镯') {
+                    this.isShow = false;
+                } else {
+                    this.isShow = true;
+                }
+            },
+
+        },
+
         created() {
             fetch('https://seicing.com/js/dia/dnf110.json')
                 .then(response => response.json())
@@ -176,10 +200,18 @@
                         json[i].option4 = json[i]['option4'];
                         json[i].damage4 = json[i]['damage4'];
                         json[i].buff4 = json[i]['buff4'];
+                        json[i].type = json[i]['type'];
                     }
                 })
         },
+
+
+
+
     })
+
+
+
 
 
 </script>
