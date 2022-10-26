@@ -34,8 +34,18 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
-<a href="#" onclick="$('.ear').css('display','none')">耳环</a>
-<a href="#" onclick="$('.bra').css('display','none')">手镯</a>
+<a href="#" onclick="killAll();$('.upp').css('display','block');">上衣</a>
+<a href="#" onclick="killAll();$('.und').css('display','block');">下装</a>
+<a href="#" onclick="killAll();$('.hea').css('display','block');">护肩</a>
+<a href="#" onclick="killAll();$('.bel').css('display','block');">腰带</a>
+<a href="#" onclick="killAll();$('.sho').css('display','block');">鞋子</a>
+<a href="#" onclick="killAll();$('.bra').css('display','block');">手镯</a>
+<a href="#" onclick="killAll();$('.nec').css('display','block');">项链</a>
+<a href="#" onclick="killAll();$('.rin').css('display','block');">戒指</a>
+<a href="#" onclick="killAll();$('.sup').css('display','block');">辅助装备</a>
+<a href="#" onclick="killAll();$('.mag').css('display','block');">魔法石</a>
+<a href="#" onclick="killAll();$('.ear').css('display','block');">耳环</a>
+<a href="#" onclick="killAll();$('.wea').css('display','block');">武器</a>
 <br><br>
 <table id="customers" width="780px">
     <tr>
@@ -184,6 +194,22 @@
 
     })
 
+
+
+    function killAll() {
+        $('.ear').css('display', 'none');
+        $('.mag').css('display', 'none');
+        $('.sup').css('display', 'none');
+        $('.bra').css('display', 'none');
+        $('.nec').css('display', 'none');
+        $('.rin').css('display', 'none');
+        $('.upp').css('display', 'none');
+        $('.und').css('display', 'none');
+        $('.hea').css('display', 'none');
+        $('.bel').css('display', 'none');
+        $('.sho').css('display', 'none');
+        $('.wea').css('display', 'none');
+    }
 
 
 
