@@ -70,13 +70,13 @@
 <div id="app">
     <div>
         <table id="customers" width="780px">
-            <tbody v-for="diaindex in aasb" :class="diaindex.type">
+            <tbody v-for="diaindex in aasb" :class="diaindex.type" width="780px">
                 <tr>
                     <td rowspan="4" style="width:30px">
                         <img :src="diaindex.iconml" />
                     </td>
                     <td rowspan="4" style="width:120px">
-                        <div v-html="diaindex.chineseName"></div><br>
+                        <div v-html="diaindex.chineseName"></div>
                         <div v-html="diaindex.koreanName"></div>
                     </td>
                     <td>
