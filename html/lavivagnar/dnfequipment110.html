@@ -48,79 +48,79 @@
 <a href="#" onclick="killAll();$('.ear').css('display','block');">耳环</a>
 <a href="#" onclick="killAll();$('.wea').css('display','block');">武器</a>
 <br><br>
-<table id="customers" width="780px">
-    <tr>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
-            图标
-        </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:120px">
-            名称
-        </td>
-        <td style="background-color: #443623; font-family: '宋体' !important;">
-            属性
-        </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:50px">
-            攻击强化
-        </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:40px">
-            BUFF力
-        </td>
-    </tr>
-</table>
 <div id="app">
-    <div v-for="diaindex in aasb" :class="diaindex.type">
+    <div>
         <table id="customers" width="780px">
             <tr>
-                <td rowspan="4" style="width:30px">
-                    <img :src="diaindex.iconml" />
+                <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
+                    图标
                 </td>
-                <td rowspan="4" style="width:120px">
-                    <div v-html="diaindex.chineseName"></div><br>
-                    <div v-html="diaindex.koreanName"></div>
+                <td style="background-color: #443623; font-family: '宋体' !important; width:120px">
+                    名称
                 </td>
-                <td>
-                    <div v-html="diaindex.option1"></div>
+                <td style="background-color: #443623; font-family: '宋体' !important;">
+                    属性
                 </td>
-                <td style="width:50px">
-                    <div v-html="diaindex.damage1"></div>
+                <td style="background-color: #443623; font-family: '宋体' !important; width:50px">
+                    攻击强化
                 </td>
-                <td style="width:40px">
-                    <div v-html="diaindex.buff1"></div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div v-html="diaindex.option2"></div>
-                </td>
-                <td>
-                    <div v-html="diaindex.damage2"></div>
-                </td>
-                <td>
-                    <div v-html="diaindex.buff2"></div>
+                <td style="background-color: #443623; font-family: '宋体' !important; width:40px">
+                    BUFF力
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <div v-html="diaindex.option3"></div>
-                </td>
-                <td>
-                    <div v-html="diaindex.damage3"></div>
-                </td>
-                <td>
-                    <div v-html="diaindex.buff3"></div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div v-html="diaindex.option4"></div>
-                </td>
-                <td>
-                    <div v-html="diaindex.damage4"></div>
-                </td>
-                <td>
-                    <div v-html="diaindex.buff4"></div>
-                </td>
-            </tr>
+            <tbody v-for="diaindex in aasb" :class="diaindex.type">
+                <tr>
+                    <td rowspan="4" style="width:30px">
+                        <img :src="diaindex.iconml" />
+                    </td>
+                    <td rowspan="4" style="width:120px">
+                        <div v-html="diaindex.chineseName"></div><br>
+                        <div v-html="diaindex.koreanName"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.option1"></div>
+                    </td>
+                    <td style="width:50px">
+                        <div v-html="diaindex.damage1"></div>
+                    </td>
+                    <td style="width:40px">
+                        <div v-html="diaindex.buff1"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div v-html="diaindex.option2"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.damage2"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.buff2"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div v-html="diaindex.option3"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.damage3"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.buff3"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div v-html="diaindex.option4"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.damage4"></div>
+                    </td>
+                    <td>
+                        <div v-html="diaindex.buff4"></div>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>
