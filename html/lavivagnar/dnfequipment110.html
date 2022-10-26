@@ -50,13 +50,13 @@
 <br><br>
 <table id="customers" width="780px">
     <tr>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:29px">
+        <td style="background-color: #443623; font-family: '宋体' !important; width:24px">
             图标
         </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:120px">
+        <td style="background-color: #443623; font-family: '宋体' !important; width:200px">
             名称
         </td>
-        <td style="background-color: #443623; font-family: '宋体' !important; width:485px">
+        <td style="background-color: #443623; font-family: '宋体' !important; width:410px">
             属性
         </td>
         <td style="background-color: #443623; font-family: '宋体' !important; width:50px">
@@ -72,14 +72,14 @@
         <table id="customers" width="780px">
             <tbody v-for="diaindex in aasb" :class="diaindex.type">
                 <tr>
-                    <td rowspan="4" style="width:29px">
+                    <td rowspan="4" style="text-align: center;width:24px">
                         <img :src="diaindex.iconml" />
                     </td>
-                    <td rowspan="4" style="text-align: center;width:120px">
+                    <td rowspan="4" style="text-align: center;width:200px">
                         <div v-html="diaindex.chineseName"></div>
                         <div v-html="diaindex.koreanName"></div>
                     </td>
-                    <td style="width:485px">
+                    <td style="width:410px">
                         <div v-html="diaindex.option1"></div>
                     </td>
                     <td style="width:50px">
