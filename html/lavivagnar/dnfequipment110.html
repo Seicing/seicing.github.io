@@ -34,7 +34,9 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="17"></div>
-
+<a href="#" onclick="耳环()">耳环</a> <a href="#" onclick="手镯()">手镯</a>
+<br>
+<br>
 <table id="customers">
     <tr>
         <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
@@ -56,7 +58,7 @@
 </table>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <table id="customers">
+        <table :id="diaindex.fatsb">
             <tr>
                 <td rowspan="4" style="width:30px">
                     <img :src="diaindex.iconml" />
@@ -178,10 +180,28 @@
                         json[i].option4 = json[i]['option4'];
                         json[i].damage4 = json[i]['damage4'];
                         json[i].buff4 = json[i]['buff4'];
+                        json[i].farsb = json[i]['type'];
                     }
                 })
-        }
-    }) 
+        },
+
+
+
+    })
+
+    function 耳环() {
+        var element = document.getElementById('耳环');
+        element.style = "display:block";
+        var element = document.getElementById('手镯');
+        element.style = "display:none";
+    }
+
+    function 手镯() {
+        var element = document.getElementById('耳环');
+        element.style = "display:none";
+        var element = document.getElementById('手镯');
+        element.style = "display:block";
+    }
 </script>
 
 </html>
