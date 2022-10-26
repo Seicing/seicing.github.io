@@ -48,26 +48,28 @@
 <a href="#" onclick="killAll();$('.ear').css('display','block');">耳环</a>
 <a href="#" onclick="killAll();$('.wea').css('display','block');">武器</a>
 <br><br>
+<table id="customers" width="780px">
+    <tr>
+        <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
+            图标
+        </td>
+        <td style="background-color: #443623; font-family: '宋体' !important; width:120px">
+            名称
+        </td>
+        <td style="background-color: #443623; font-family: '宋体' !important;">
+            属性
+        </td>
+        <td style="background-color: #443623; font-family: '宋体' !important; width:50px">
+            攻击强化
+        </td>
+        <td style="background-color: #443623; font-family: '宋体' !important; width:40px">
+            BUFF力
+        </td>
+    </tr>
+</table>
 <div id="app">
     <div>
         <table id="customers" width="780px">
-            <tr>
-                <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
-                    图标
-                </td>
-                <td style="background-color: #443623; font-family: '宋体' !important; width:120px">
-                    名称
-                </td>
-                <td style="background-color: #443623; font-family: '宋体' !important;">
-                    属性
-                </td>
-                <td style="background-color: #443623; font-family: '宋体' !important; width:50px">
-                    攻击强化
-                </td>
-                <td style="background-color: #443623; font-family: '宋体' !important; width:40px">
-                    BUFF力
-                </td>
-            </tr>
             <tbody v-for="diaindex in aasb" :class="diaindex.type">
                 <tr>
                     <td rowspan="4" style="width:30px">
