@@ -58,7 +58,7 @@
 </table>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :id="diaindex.fatsb">
+        <div :class="diaindex.fatsb">
             <table id="customers" width="780px">
                 <tr>
                     <td rowspan="4" style="width:30px">
@@ -194,12 +194,12 @@
     function AllDie(a) {
         allFamilyDie();
         var ayazimi = a
-        document.getElementById(ayazimi).style.display = 'block';
+        document.getElementByClassName(ayazimi).style.display = 'block';
     }
 
     function allFamilyDie() {
-        document.getElementById("耳环").style.display = 'none';
-        document.getElementById("手镯").style.display = 'none';
+        document.getElementsByClassName("耳环").style.display = 'none';
+        document.getElementsByClassName("手镯").style.display = 'none';
     }
 
 </script>
