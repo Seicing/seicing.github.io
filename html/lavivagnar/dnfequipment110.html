@@ -157,11 +157,10 @@
         },
 
         methods: {
-            earShow: function () {
-                this.isShow = true;
+            earShow() {
+                this.isShow = false;
             },
-
-            braShow: function () {
+            braShow() {
                 if (json[i].type != '手镯') {
                     this.isShow = false;
                 } else {
