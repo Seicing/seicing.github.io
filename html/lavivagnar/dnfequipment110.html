@@ -37,7 +37,7 @@
 <a href="#" onclick="AllDie('耳环')">耳环</a> <a href="#" onclick="AllDie('手镯')">手镯</a>
 <br>
 <br>
-<table id="customers">
+<table id="customers" width="780px">
     <tr>
         <td style="background-color: #443623; font-family: '宋体' !important; width:30px">
             图标
@@ -58,8 +58,8 @@
 </table>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <div :class="diaindex.fatsb">
-            <table>
+        <div :id="diaindex.fatsb">
+            <table id="customers" width="780px">
                 <tr>
                     <td rowspan="4" style="width:30px">
                         <img :src="diaindex.iconml" />
@@ -194,12 +194,12 @@
     function AllDie(a) {
         allFamilyDie();
         var ayazimi = a
-        document.getElementsByClassName(ayazimi).style.display = 'block';
+        document.getElementById(ayazimi).style.display = 'block';
     }
 
     function allFamilyDie() {
-        document.getElementsByClassName("耳环").style.display = 'none';
-        document.getElementsByClassName("手镯").style.display = 'none';
+        document.getElementById("耳环").style.display = 'none';
+        document.getElementById("手镯").style.display = 'none';
     }
 
 </script>
