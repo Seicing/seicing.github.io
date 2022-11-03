@@ -275,36 +275,22 @@
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2Default",
-        "string": "西景和蚩幽也因为你的善念而保有了短暂的和平",
+        "face": "Ven2CloseEye",
+        "string": "共情……吗，真是羡慕你可以发自内心地对他人的遭遇产生同理心",
         "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "应该说，善念是会传播的吗？你实际上在确实地影响着这个世界",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "我才没有这么伟大",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "不这样做我的内心会感觉到很难受的",
-        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "文",
         "face": "Ven2CloseEye",
-        "string": "是这样，好好保持你的初心吧，还有，什么时候你的共情可以更进一步就更好了",
+        "string": "……别在意我说了啥，世清，好好坚持你那善良的本心，这是你身边所有人的福分",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
+        "string": "还有，什么时候你的共情可以更进一步就更好了",
         "special": "dia2"
     },
     {
