@@ -409,6 +409,20 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
+        "string": "这就是你所背负的东西，之前说的，羡慕发自内心的共情……是指这个啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Surprise",
+        "string": "你一直都记得吗？你的心里还是有我的啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
         "string": "……一直以来只能自己一个人这样默默承受吗？",
         "special": "dia1"
     },
