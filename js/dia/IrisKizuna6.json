@@ -778,7 +778,7 @@
     },
     {
         "branch": "branch0",
-        "name": "泰拉",
+        "name": "科洛维",
         "face": "KruvDefaultAw",
         "string": "是你们……",
         "special": "dia2"
@@ -892,14 +892,28 @@
         "branch": "branch0",
         "name": "科洛维",
         "face": "KruvDefaultAw",
-        "string": "……我要去帮助那几个人击杀欧洛克",
+        "string": "你们三个想办法净化掉这里的毒雾，让它停止继续散布下去……停止造成更大的灾难",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "莎亚",
         "face": "SayaDefault",
-        "string": "我们无法进入吸血鬼毒雾中，只能想办法慢慢净化掉再来支援你！你要多小心，科洛维！",
+        "string": "你要追上去帮助他们吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefaultAw",
+        "string": "嗯……因为我是吸血鬼，不怕这些毒雾",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "莎亚",
+        "face": "SayaDefault",
+        "string": "那你要小心！科洛维！我们会尽快处理好毒雾过来援助的！",
         "special": "dia2"
     },
     {
