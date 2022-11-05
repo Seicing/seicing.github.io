@@ -66,8 +66,15 @@
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "嗯……哥你很少这样关心我，我还是继续努力工作吧，好好享受庙会哦，我先走了",
+        "string": "嗯……哥你很少这样关心我，我还是继续努力工作吧，好好享受接下来的风暴哦，我先走了",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "又在说些故弄玄虚的话",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -82,6 +89,27 @@
         "face": "SeicingDefault",
         "string": "少有的我不讨厌的热闹环境，也很久没有感受过这种氛围了呢",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "真期待啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你看起来跃跃欲试了啊，准备好我们就出发吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "嗯嗯……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
