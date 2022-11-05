@@ -29,30 +29,58 @@
     },
     {
         "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余一面看信，脸色也随之产生变化",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoCloseEye",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "(像是察觉了什么)",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "世行，你似乎还有事情想要说",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "还有事吗，世行",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentDefault",
-        "string": "嗯，这是教皇的传达",
+        "string": "啊，差点忘了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentDefault",
-        "string": "夏州那边大庙会好像要开始了",
+        "string": "夏州那边大庙会好像要开始了，教皇其实给我捎了句话，邀请你过去一起玩",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
-        "face": "SeigentDefault",
-        "string": "她盛情邀请你过去，难得一见的大集会我也想去游玩一波呢，可惜太忙了",
+        "face": "SeigentSmile",
+        "string": "难得一见的大集会我也想去游玩一波呢，可惜太忙了",
         "special": "dia2"
     },
     {
