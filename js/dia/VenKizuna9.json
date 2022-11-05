@@ -3,15 +3,134 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "文羁绊1-6剧情完成后，触发夏州的大庙会",
+        "string": "文羁绊1-8剧情完成后，在自己的房间触发夏州的大庙会提示",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "皇后，这是给你的信",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoHappy",
+        "string": "嗯，谢了，世行",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "是小文寄来的信啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "世行，你似乎还有事情想要说",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "嗯，这是教皇的传达",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "夏州那边大庙会好像要开始了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "她盛情邀请你过去，难得一见的大集会我也想去游玩一波呢，可惜太忙了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "别把自己累着了啊，偶尔放个假也是很有必要的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "嗯……哥你很少这样关心我，我还是继续努力工作吧，好好享受庙会哦，我先走了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "庙会啊……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "少有的我不讨厌的热闹环境，也很久没有感受过这种氛围了呢",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "夏州大教堂前，人群络绎不绝，世清和文在教皇房间的窗口看着下面的人群",
+        "string": "前往夏州大教堂触发接下来的剧情",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Happy",
+        "string": "你们来了啊，等你们很久了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoHappy",
+        "string": "真热闹啊，感觉会有很多有意思的东西呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "我们三个一起逛吧，走吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "逛了一会儿后，世清和文在教皇房间的窗口看着下面的人群",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "余这家伙真有活力啊，叫我们先回来自己继续到处玩什么的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "这就是她的优点啊哈哈哈",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -94,7 +213,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "虽然平时余吵吵闹闹的，但是她没跟过来在这里胡闹而是下去逛了，反而不习惯了呢",
+        "string": "就是现在余没有在身边吵吵闹闹的我也感觉有点不习惯了",
         "special": "dia1"
     },
     {
