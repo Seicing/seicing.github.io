@@ -9,6 +9,21 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html', function () {
+            document.getElementById("techno").style.display = "block";
+            document.getElementById("xt").style.opacity = "0.3";
+            document.getElementById("beml").style.opacity = "0.3";
+            document.getElementById("as").style.opacity = "0.3";
+            document.getElementById("bbl").style.opacity = "0.3";
+            document.getElementById("cx").style.opacity = "0.3";
+            document.getElementById("aj").style.opacity = "0.3";
+            document.getElementById("bs").style.opacity = "0.3";
+            document.getElementById("ys").style.opacity = "0.3";
+        })
+    })
+</script>
 <style>
     li {
         line-height: 20px
@@ -118,6 +133,7 @@
 
 
 
+<div id="techno"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
