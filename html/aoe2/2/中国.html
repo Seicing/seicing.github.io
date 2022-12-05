@@ -70,6 +70,7 @@
     顺应天命，利用中国肥沃的流域来养育大量人口，并命令你们的人民建立一个延伸到地球四个角落的帝国！引导您的学者和工匠取得杰出的技术发现，并将其应用于您的庞大军队。使用可以快速射出箭矢的机械十字弩——诸葛弩，它是否足以带领您的军队战胜您边境的狡猾敌人？
     <br>
     <div style='text-align:right'>——游戏内说明书</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -1284,9 +1285,10 @@
             <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/化学.jpg)"> </td>
             <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/弹道学.jpg)"> </td>
             <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/近射孔.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/脚踏起重机.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/修道院.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/脚踏起重机.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/修道院.jpg)"> </td>
             <td> </td>
             <td> </td>
             <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树/市场.jpg)"> </td>
@@ -1437,6 +1439,7 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
+<script language="javascript" src="https://seicing.com/js/tech.js"></script>
 <style>
     #can {
         filter: brightness(100%);
