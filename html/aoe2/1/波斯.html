@@ -43,6 +43,7 @@
     挣脱米底人的劳役，征服巴比伦，建立横跨印度、埃及和色雷斯的多元帝国， 强大的大象会践踏妨碍您前进的一切！
     <br>
     <div style='text-align:right'>——游戏内说明书</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -526,226 +527,341 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
 
-
     <table style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/TechBack1.jpg)" id="techtree">
         <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦兵营.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'兵营')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦兵营.jpg)"> </td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/靶场.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'靶场')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/靶场.jpg)"> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/马厩.jpg)"> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/船坞.jpg)"> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贮藏阱.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'马厩')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/马厩.jpg)"> </td>
             <td> </td>
             <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'船坞')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/船坞.jpg)"> </td>
             <td> </td>
             <td> </td>
-        </tr>
-        <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/狼牙棒战士.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/持斧战士.jpg)"> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓箭手.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重装骑兵.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/全覆甲重装骑兵.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/捕鱼艇.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/捕鱼船.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/工具加工.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/步兵皮甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓兵皮甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵皮甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/青铜盾.jpg)"> </td>
-        </tr>
-        <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/环索投石手.jpg)"> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/强化弓箭手.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/复合弓箭手.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战车.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/刀轮战车.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/轻型运输船.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重型运输船.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/金属利用.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/步兵鳞甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓兵鳞甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵鳞甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/铁盾.jpg)"> </td>
-        </tr>
-        <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/短剑士.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/阔剑士.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/长剑士.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/军团兵.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑马弓兵.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重装骑马弓兵.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/侦察兵.jpg)"> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贸易艇.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/商船.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/冶金学.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/步兵锁甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓兵锁甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵锁甲.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/塔盾.jpg)"> </td>
-        </tr>
-        <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦学院.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战车弓兵.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战象.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/披甲战象.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/侦察船.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战船.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/三桨座战船.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/神庙.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'贮藏阱')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贮藏阱.jpg)"> </td>
             <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
         </tr>
         <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/甲兵.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/方阵兵.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/百夫长.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑象弓兵.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骆驼骑手.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'狼牙棒战士')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/狼牙棒战士.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'持斧战士')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/持斧战士.jpg)"> </td>
             <td> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/投石型三桨座战船.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/灭世战船.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弓箭手')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓箭手.jpg)"> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/祭司.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/占星术.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/多神论.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/神秘论.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/宗教狂热.jpg)"> </td>
-        </tr>
-
-        <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/攻城器械工坊.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骑兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'重装骑兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重装骑兵.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'全覆甲重装骑兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/全覆甲重装骑兵.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'捕鱼艇')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/捕鱼艇.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'捕鱼船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/捕鱼船.jpg)"> </td>
             <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/火攻舰船.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/冥世信仰.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/盲信主义.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/一神论.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/医学.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/牺牲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'工具加工')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/工具加工.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'步兵皮甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/步兵皮甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弓兵皮甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓兵皮甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骑兵皮甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵皮甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'青铜盾')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/青铜盾.jpg)"> </td>
         </tr>
         <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弩炮.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/破城者攻城塔.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦政府中心.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'环索投石手')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/环索投石手.jpg)"> </td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/谷仓.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'强化弓箭手')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/强化弓箭手.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'复合弓箭手')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/复合弓箭手.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'战车')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战车.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'刀轮战车')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/刀轮战车.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'轻型运输船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/轻型运输船.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'重型运输船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重型运输船.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'金属利用')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/金属利用.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'步兵鳞甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/步兵鳞甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弓兵鳞甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓兵鳞甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骑兵鳞甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵鳞甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'铁盾')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/铁盾.jpg)"> </td>
+        </tr>
+        <tr>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'短剑士')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/短剑士.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'阔剑士')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/阔剑士.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'长剑士')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/长剑士.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'军团兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/军团兵.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骑马弓兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑马弓兵.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'重装骑马弓兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重装骑马弓兵.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'侦察兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/侦察兵.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'贸易艇')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贸易艇.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'商船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/商船.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'冶金学')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/冶金学.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'步兵锁甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/步兵锁甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弓兵锁甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弓兵锁甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骑兵锁甲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑兵锁甲.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'塔盾')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/塔盾.jpg)"> </td>
+        </tr>
+        <tr>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'学院')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦学院.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/市场.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'战车弓兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战车弓兵.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'战象')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战象.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'披甲战象')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/披甲战象.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'侦察船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/侦察船.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'战船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/战船.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'三桨座战船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/三桨座战船.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'神庙')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/神庙.jpg)"> </td>
             <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
         </tr>
         <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/投石器.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/投石车.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重型投石车.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'甲兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/甲兵.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'方阵兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/方阵兵.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'百夫长')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/百夫长.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贵族制.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/建筑学.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/文字书写.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/后勤学.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/低矮城墙.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦稍高城墙.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦强化城墙.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/城门.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/木材利用.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/石矿开采.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/金矿开采.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/商人.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/驯化术.jpg)"> </td>
-        </tr>
-
-
-
-        <tr>
-
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦市镇中心.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骑象弓兵')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骑象弓兵.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'骆驼骑手')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/骆驼骑手.jpg)"> </td>
             <td> </td>
             <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'投石型三桨座战船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/投石型三桨座战船.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'灭世战船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/灭世战船.jpg)"> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贵族统治制度.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弹道学.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/炼金术.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/工程学.jpg)"> </td>
-
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/瞭望塔.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/警卫塔.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦防卫塔.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦弩炮塔.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/工艺.jpg)"> </td>
-            <td> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/车轮.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/犁.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'祭司')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/祭司.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'占星术')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/占星术.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'多神论')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/多神论.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'神秘论')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/神秘论.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'宗教狂热')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/宗教狂热.jpg)"> </td>
         </tr>
 
         <tr>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/村民.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦住房.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦奇观.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/城镇瞭望.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/征招.jpg)"> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/城市化.jpg)"> </td>
-            <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/农田.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'攻城器械工坊')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/攻城器械工坊.jpg)"> </td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/精湛工艺.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/攻城术.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/铸币.jpg)"> </td>
             <td> </td>
-            <td style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/灌溉术.jpg)"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'火攻舰船')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/火攻舰船.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'冥世信仰')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/冥世信仰.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'盲信主义')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/盲信主义.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'一神论')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/一神论.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'医学')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/医学.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'牺牲')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/牺牲.jpg)"> </td>
+        </tr>
+        <tr>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弩炮')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弩炮.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'破城者攻城塔')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/破城者攻城塔.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'政府中心')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦政府中心.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'谷仓')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/谷仓.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'市场')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/市场.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'投石器')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/投石器.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'投石车')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/投石车.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'重型投石车')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/重型投石车.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'贵族制')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贵族制.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'建筑学')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/建筑学.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'文字书写')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/文字书写.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'后勤学')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/后勤学.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'低矮城墙')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/低矮城墙.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'稍高城墙')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦稍高城墙.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'强化城墙')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦强化城墙.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'城门')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/城门.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'木材利用')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/木材利用.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'石矿开采')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/石矿开采.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'金矿开采')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/金矿开采.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'商人')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/商人.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'驯化术')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/驯化术.jpg)"> </td>
+        </tr>
+
+
+
+        <tr>
+
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'市镇中心')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦市镇中心.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'贵族统治制度')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/贵族统治制度.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弹道学')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/弹道学.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'炼金术')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/炼金术.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'工程学')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/工程学.jpg)"> </td>
+
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'瞭望塔')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/瞭望塔.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'警卫塔')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/警卫塔.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'防卫塔')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦防卫塔.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'弩炮塔')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦弩炮塔.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'工艺')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/工艺.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'车轮')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/车轮.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'犁')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/犁.jpg)"> </td>
+        </tr>
+
+        <tr>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'村民')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/村民.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'住房')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦住房.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'奇观')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/巴比伦奇观.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'城镇瞭望')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/城镇瞭望.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'征招')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/征招.jpg)"> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'城市化')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/城市化.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'农田')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/农田.jpg)"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'精湛工艺')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/精湛工艺.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'攻城术')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/攻城术.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'铸币')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/铸币.jpg)"> </td>
+            <td> </td>
+            <td onmouseout="hiddenPic();" onmousemove="showPic(event,'灌溉术')"
+                style="background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/科技树1/灌溉术.jpg)"> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/x.png"></td>
         </tr>
     </table>
+
 </div>
 
 
@@ -781,6 +897,7 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
+<script language="javascript" src="https://seicing.com/js/techaoe1.js"></script>
 <style>
     #can {
         opacity: 1.0
