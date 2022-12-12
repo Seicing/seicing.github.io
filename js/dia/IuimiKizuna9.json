@@ -1,0 +1,415 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "触发条件：完成羁绊8剧情后，不需要和羽三组队，击杀500个敌人后，在皇宫触发剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "是良吗？之前委托的调查有进展了吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "是的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "羽三阁下的伤疤被鸣神侵蚀，这种情况很少见，但也不是完全没有记录",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "没有处理的烧伤会留下永久性的疤痕，在这个基础上还要处理和人体深深植入的鸣神，可以说只有奇迹才可能拯救这个人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "但是幸运的是，这个奇迹被不止一次地记录了下来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "作为一个学者我认为这不能称之为奇迹，而是一种极难被复现的现象",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "说重点吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "抱歉，一到这个场合我就滔滔不绝的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "一般来说子女都会遗传到父母的性格，但是我的父母都不爱说话，孩子也很安静，真是奇怪呢！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "一轮语言轰炸后",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "月鹿的……眼泪？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "没错，鸣神是阴寒之物，而烧伤是阳热之物，两者之所以共存就是因为彼此达成了一种平衡，但是精神失去平衡的话，就会遭到侵蚀",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "治疗羽三阁下的疾病，就要同时压制两者的前提下尝试，月鹿的眼泪正是可以做到这一点的药材",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "可是月鹿的眼泪是就连我也只能从书本上见到的珍贵药材",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "所以才被称为奇迹吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "西景南部的黄金森林是一个因为太危险而现在还没有得到过大规模开发的原始之地",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "大部分的目击都出现在那片地区，月鹿是一种对居住环境要求很严苛的传说生物，我认为它们栖息在黄金森林的可能性确实很大",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "可是，先不说月鹿，月鹿的眼泪是否能治愈羽三阁下，还是未知之数，这种不确定感真的是太讨厌了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不，这就足够了，什么可能我都要去试试",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "良，非常感谢你的努力，有什么想要的奖励，我会让斯理尽可能地满足你的要求的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "阁下，对于学者的最好的奖励，就是用实际行动证明理论的正确啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "希望羽三阁下早日恢复健康，我先退下了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "走出谒见厅",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "世清，你忙完了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "实际上……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "交代了学者的汇报内容",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "就算只是有可能，我们也得去试一试",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
+        "string": "黄……黄金森林……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "怎么了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羽三捂住了手臂，似乎情绪有些失控，脸上露出惊恐的神色",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "(对了，羽三的亲生爸爸就在黄金森林的边缘村落居住)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "(所以她才会露出这样的神色，但是，这个村落是通往黄金森林的路上必须经过的……)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "抱歉，我一时半刻没有想起来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你就在这里等我的消息吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
+        "string": "………………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressed",
+        "string": "世清……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDefault",
+        "string": "我也要去……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "没问题吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressed",
+        "string": "一味地退让一味地畏缩的我……很讨厌吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressed",
+        "string": "我不想让你对我失去耐心",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressed",
+        "string": "这是对我的考验的话，我要学会如何迎难而上，尽管很害怕，但是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "你在我身边就能给与我力量",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……好",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDefault",
+        "string": "如果准备好出发的话，就叫上绿毛猩猩和我一声吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "和羽三组队，一行人来到黄金树林外围的村落",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这里就是西景最南部的聚落，南和",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCloseEye",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "羽三……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDefault",
+        "string": "……十几年前这里还是气派的大宅，现在门口都长出杂草了呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressed",
+        "string": "如果这就是报应的话还远远不够啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？",
+        "face": "ChenAngry",
+        "string": "你在说什么？你这个臭丫头！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "一声咆哮在羽三身后传来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "啊，来了一个很讨厌的家伙啊",
+        "special": "dia2"
+    }
+]
