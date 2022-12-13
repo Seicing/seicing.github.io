@@ -458,7 +458,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "……这个就是你们所说的羽三的亲生父亲了吧",
+        "string": "……这个就是你们所说的夜叉女的亲生父亲了吧",
         "special": "dia2"
     },
     {
@@ -500,14 +500,14 @@
         "branch": "branch0",
         "name": "陈",
         "face": "ChenDepressed",
-        "string": "你是那个拐走羽三的小鬼头？有点认不出来了",
+        "string": "你是那个拐走那家伙的小鬼头？有点认不出来了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "陈",
         "face": "ChenSmlie",
-        "string": "罢了，你现在就是羽三的主人了吧？那么我作为羽三的原主人收取一点出让费是不是很正常呢？",
+        "string": "罢了，你现在就是那家伙的主人了吧？那么我作为那家伙的原主人收取一点出让费是不是很正常呢？",
         "special": "dia2"
     },
     {
@@ -556,7 +556,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoCloseEye",
-        "string": "抱歉啊，世清，羽三，我实在是忍不住了",
+        "string": "抱歉啊，世清，夜叉女，我实在是忍不住了",
         "special": "dia2"
     },
     {
@@ -619,13 +619,6 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiTerrible",
-        "string": "我的手臂总是隐隐作痛，时刻提醒着我不要忘记你们对我的种种暴行",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "羽三",
-        "face": "IuimiTerrible",
         "string": "直到今天，无力地让火焰撕裂我的身体的惨状依然历历在目",
         "special": "dia2"
     },
@@ -633,14 +626,21 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiTerrible",
-        "string": "对你们的“恐惧”一直深深地铭刻在我的内心",
+        "string": "这只时刻在隐隐作痛的手臂就是在提醒我不要忘记仇恨，不要忘记你们对我的种种暴行",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
+        "string": "“恐惧”和“自卑”一直深深地铭刻在我的内心",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiAngry",
-        "string": "都是你们的错！凭什么我要一直生活在痛苦、绝望和恐惧之中！都是你的错！都是你的错！",
+        "string": "都是你们的错！凭什么我要一直生活在痛苦、绝望和畏怖之中！都是你的错！都是你的错！",
         "special": "dia2"
     },
     {
@@ -703,21 +703,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "但是羽三，冷静下来……",
+        "string": "但是羽三，冷静下来",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "你的体内流淌着他的血液……",
+        "string": "你的体内流淌着他的血液",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiAngry",
-        "string": "那又怎么样！我以体内流淌着他的血为耻……！",
+        "string": "那又怎么样！我以体内流淌着他的血为耻！",
         "special": "dia2"
     },
     {
@@ -731,7 +731,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "即使对方是人渣，但是在恶鬼的簇拥下弑亲成为新的恶鬼，这不就是从一个心魔堕落到另一个心魔吗？",
+        "string": "即使对方是人渣，但是在恶鬼的簇拥下弑亲成为新的恶鬼，这不会是解放，只是更深重的心魔的诞生而已",
         "special": "dia1"
     },
     {
@@ -757,10 +757,17 @@
     },
     {
         "branch": "branch0",
-        "name": "羽三",
-        "face": "IuimiSadCE",
-        "string": "谢谢你把我从深渊边缘拉了回来……",
-        "special": "dia2"
+        "name": "",
+        "face": "",
+        "string": "羽三偎依在世清的身上无力地哭泣",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "我会处理好的",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -815,14 +822,14 @@
         "branch": "branch0",
         "name": "陈",
         "face": "ChenHurt",
-        "string": "…………",
+        "string": "啊？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "还不滚？羽三不想再见到你，还是你想就这样去死？我可不介意送你一程",
+        "string": "还不滚？还是你想就这样去死？我可不介意送你一程",
         "special": "dia2"
     },
     {
@@ -864,21 +871,14 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiHappy",
-        "string": "如果没有你我应该就会为刚刚的鲁莽行为而后悔了",
+        "string": "谢谢你把我从那条界限的边缘拉了回来",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDefault",
-        "string": "你笑了呢",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDefault",
-        "string": "没必要为了这样的一个家伙留下新的心结",
+        "string": "夜叉女，你笑了呢，没必要为了这样的一个家伙留下新的心结",
         "special": "dia2"
     },
     {
@@ -913,13 +913,13 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "我早就不介意了，不仅仅是这个",
+        "string": "我们可不会介意，而且不仅仅是这个",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "SeicingEmbarrassed",
         "string": "……",
         "special": "dia1"
     },
@@ -936,5 +936,12 @@
         "face": "SeicingDefault",
         "string": "进入黄金树林，找到那神秘的月鹿，让羽三彻底从诅咒中解放出来",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "嗯，走吧",
+        "special": "dia2"
     }
 ]
