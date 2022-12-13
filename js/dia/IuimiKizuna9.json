@@ -101,21 +101,42 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "没错，鸣神是阴寒之物，而烧伤是阳热之物，两者之所以共存就是因为彼此达成了一种平衡，但是精神失去平衡的话，就会遭到侵蚀",
+        "string": "没错，羽三阁下的精神能稳定是因为阴寒的鸣神和阳热的灼伤中和了，虽然这份平衡让她可以存活下去，但成为了治疗的最大阻碍",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "治疗羽三阁下的疾病，就要同时压制两者的前提下尝试，月鹿的眼泪正是可以做到这一点的药材",
+        "string": "使用传统的阴寒术式治疗烧伤，尤其是这种十多年的顽疾，就需要大量的时间，鸣神会因为术式而变得活跃起来吞噬掉羽三阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯，这是之前说过的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "根据有限的记载，月鹿是一种栖息在森林内部空旷的可以被月光照射到的草地的生物",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "可是月鹿的眼泪是就连我也只能从书本上见到的珍贵药材",
+        "string": "一生中都沐浴在月光里的它们，会让周围的一切变得宁静下来，同时体质至阴至寒，情报属实的话可以做到压制鸣神活跃的同时治愈烧疤",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "可是月鹿的眼泪是就连我也只能从书本上见到的传说中的药材",
         "special": "dia2"
     },
     {
@@ -136,7 +157,7 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "大部分的目击都出现在那片地区，月鹿是一种对居住环境要求很严苛的传说生物，我认为它们栖息在黄金森林的可能性确实很大",
+        "string": "大部分的目击都出现在那片地区，月鹿据说是一种对居住环境要求很严苛的传说生物，我认为它们栖息在黄金森林的可能性确实很大",
         "special": "dia2"
     },
     {
@@ -171,7 +192,7 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "希望羽三阁下早日恢复健康，我先退下了……",
+        "string": "如果阁下真的找到了，请务必留下记录甚至图像证据，这才是我想要的东西，希望羽三阁下早日恢复健康，我先退下了……",
         "special": "dia2"
     },
     {
@@ -486,7 +507,7 @@
         "branch": "branch0",
         "name": "陈",
         "face": "ChenDepressed",
-        "string": "能把这玩意调教得如此听话，光是这点就很值钱了吧，更不用说这种姿色的女奴就算身上有伤疤也是……",
+        "string": "能把这玩意调教得如此听话，光是这点就很值钱了吧，就算身上有伤疤你也在她身上找到很多乐子了吧",
         "special": "dia2"
     },
     {
@@ -521,21 +542,21 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoCloseEye",
-        "string": "抱歉啊，世清，我实在是忍不住这个家伙的用词了",
+        "string": "抱歉啊，世清，羽三，我实在是忍不住了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "你再说多一次奴隶我就这样把你踩成肉泥，弱者",
+        "string": "你再说多一次奴隶我就这样把你踩成肉泥，狗杂种",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "陈",
         "face": "ChenHurt",
-        "string": "噫……！不要杀我啊",
+        "string": "噫！不要杀我啊",
         "special": "dia2"
     },
     {
@@ -549,7 +570,7 @@
         "branch": "branch0",
         "name": "陈",
         "face": "ChenHurtSlime",
-        "string": "对了，羽三哟，你是我女儿对吧，正是因为血缘的原因你感知到了落魄的我啊",
+        "string": "对了！羽三哟，我的女儿啊，今天你会在这里出现就是我们血脉之间的共鸣啊",
         "special": "dia2"
     },
     {
