@@ -31,28 +31,28 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "羽三阁下的伤疤被鸣神侵蚀，这种情况很少见，但也不是完全没有记录",
+        "string": "类似于羽三阁下的情况很少见，但也不是完全没有记录",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "没有处理的烧伤会留下永久性的疤痕，在这个基础上还要处理和人体深深植入的鸣神，可以说只有奇迹才可能拯救这个人",
+        "string": "不过，这些记录的描述都非常带有传奇性质，甚至可以称为奇迹",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "但是幸运的是，这个奇迹被不止一次地记录了下来",
+        "string": "但是幸运的是，这个奇迹被不止一次地记录了下来，而且这些奇迹都指向了同一样东西，提高了其可信度",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "作为一个学者我认为这不能称之为奇迹，而是一种极难被复现的现象",
+        "string": "因此作为一个学者我认为这不能称之为奇迹，而是一种极难被复现的现象",
         "special": "dia2"
     },
     {
@@ -101,7 +101,14 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "没错，羽三阁下的精神能稳定是因为阴寒的鸣神和阳热的灼伤中和了，虽然这份平衡让她可以存活下去，但成为了治疗的最大阻碍",
+        "string": "没错，这些记录里面都不约而同地提到了“月鹿”和“流动的液体”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "羽三阁下的精神能稳定是因为阴寒的鸣神和阳热的灼伤中和了，虽然这份平衡让她可以存活下去，但成为了治疗的最大阻碍",
         "special": "dia2"
     },
     {
@@ -109,6 +116,13 @@
         "name": "学者",
         "face": "SeigineScholar",
         "string": "使用传统的阴寒术式治疗烧伤，尤其是这种十多年的顽疾，就需要大量的时间，鸣神会因为术式而变得活跃起来吞噬掉羽三阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
+        "string": "因此目前我们没有办法去治疗这种类型的病人",
         "special": "dia2"
     },
     {
@@ -122,21 +136,21 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "根据有限的记载，月鹿是一种栖息在森林内部空旷的可以被月光照射到的草地的生物",
+        "string": "根据有限的记载，这些患者们都是找到了一种名为月鹿的生物，通过它们的液体治愈的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "一生中都沐浴在月光里的它们，会让周围的一切变得宁静下来，同时体质至阴至寒，情报属实的话可以做到压制鸣神活跃的同时治愈烧疤",
+        "string": "不知道是什么原理，但是长达数百年的几次不同的记载里面都提到了月鹿和液体，因此我认为确有其事",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "可是月鹿的眼泪是就连我也只能从书本上见到的传说中的药材",
+        "string": "但是也仅仅是只有这种传奇一般的记录了",
         "special": "dia2"
     },
     {
@@ -150,6 +164,13 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
+        "string": "是的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "学者",
+        "face": "SeigineScholar",
         "string": "西景南部的黄金森林是一个因为太危险而现在还没有得到过大规模开发的原始之地",
         "special": "dia2"
     },
@@ -157,14 +178,14 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "大部分的目击都出现在那片地区，月鹿据说是一种对居住环境要求很严苛的传说生物，我认为它们栖息在黄金森林的可能性确实很大",
+        "string": "如果月鹿真的存在，那么我觉得它们栖息的地方，在黄金树林的可能性是最高的，记录里提到黄金树林的次数也很多",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "可是，先不说月鹿，月鹿的眼泪是否能治愈羽三阁下，还是未知之数，这种不确定感真的是太讨厌了",
+        "string": "可是，先不说月鹿，患者们是否真的通过月鹿才被治愈的，还是未知之数，这种不确定感真的是太讨厌了",
         "special": "dia2"
     },
     {
@@ -192,7 +213,7 @@
         "branch": "branch0",
         "name": "学者",
         "face": "SeigineScholar",
-        "string": "如果阁下真的找到了，请务必留下记录甚至图像证据，这才是我想要的东西，希望羽三阁下早日恢复健康，我先退下了……",
+        "string": "如果阁下真的找到了，请务必留下记录甚至图像证据，这才是我想要的东西，希望羽三阁下早日恢复健康，我先退下了",
         "special": "dia2"
     },
     {
@@ -262,28 +283,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "(对了，羽三的亲生爸爸就在黄金森林的边缘村落居住)",
+        "string": "(对了，羽三的亲生爸爸就在黄金森林的边缘村落南和居住)",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingSurprise",
-        "string": "(所以她才会露出这样的神色，但是，这个村落是通往黄金森林的路上必须经过的……)",
+        "string": "(所以她才会露出这样的神色，但是，南和是通往黄金森林的路上必须经过的驿站)",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "抱歉，我一时半刻没有想起来",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "你就在这里等我的消息吧",
+        "string": "抱歉，我一时半刻没有想起来，不方便的话你就在这里等我的消息吧",
         "special": "dia1"
     },
     {
@@ -444,7 +458,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "野蛮之血……这个就是你们所说的，羽三的亲生父亲了吧",
+        "string": "……这个就是你们所说的羽三的亲生父亲了吧",
         "special": "dia2"
     },
     {
@@ -458,7 +472,7 @@
         "branch": "branch0",
         "name": "陈",
         "face": "ChenAngry",
-        "string": "绿发的蚩幽族……？现在的皇帝真的是软弱无能，竟然让这些野蛮人在西景走来走去",
+        "string": "绿发……？现在的皇帝真的是软弱无能，竟然让这些野蛮人在西景走来走去",
         "special": "dia2"
     },
     {
@@ -592,6 +606,335 @@
         "name": "世清",
         "face": "SeicingCompassion",
         "string": "真是无可救药",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羽三缓缓地从世清身后走到跟前",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
+        "string": "我的手臂总是隐隐作痛，时刻提醒着我不要忘记你们对我的种种暴行",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
+        "string": "直到今天，无力地让火焰撕裂我的身体的惨状依然历历在目",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
+        "string": "对你们的“恐惧”一直深深地铭刻在我的内心",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiAngry",
+        "string": "都是你们的错！凭什么我要一直生活在痛苦、绝望和恐惧之中！都是你的错！都是你的错！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiAngry",
+        "string": "没错……给我去死吧……给我彻底消失吧……我不想再不安了……我不想再恐惧下去了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiAngry",
+        "string": "你给我去死啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羽三聚集强大的恶鬼之力到手上想要杀死陈，但是被世清阻止了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "世清……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "放开我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "冷静下来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "你要阻止我吗……你觉得他不该死吗？……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "他理应得到报应",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "但是羽三，冷静下来……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "你的体内流淌着他的血液……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiAngry",
+        "string": "那又怎么样！我以体内流淌着他的血为耻……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "出生无法被自己所决定，但是是否堕落为野兽，选择权却在自己的手中",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "即使对方是人渣，但是在恶鬼的簇拥下弑亲成为新的恶鬼，这不就是从一个心魔堕落到另一个心魔吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "我也是过来人，不要让自己的灵魂变得不再高贵，等后悔的时候已经来不及了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "世清……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSadCE",
+        "string": "谢谢你把我从深渊边缘拉了回来……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清把一个信物丢给了陈",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这是对你最后的尊重，陈叔叔",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我们不会杀你，相反，我们还会尽到赡养你的义务",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不过，我们有个条件，就是你只能依靠这个信物从我的手下获得最基础的食物，只能保证你活下去的食物",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "生病了，我的手下也会尽可能地把你救回来，我们会让你能够活到自然老死的那一天",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在你继续活着的这段时间，不许在我们面前出现……这就是我作为西景皇帝给你的处分",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "在孤独和苦痛中等待终末的到来吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "陈",
+        "face": "ChenHurt",
+        "string": "…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "还不滚？羽三不想再见到你，还是你想就这样去死？我可不介意送你一程",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "陈",
+        "face": "ChenHurt",
+        "string": "哇哇哇哇哇！！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "陈惨叫着逃掉了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "抱歉……羽三",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressed",
+        "string": "不，世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "如果没有你我应该就会为刚刚的鲁莽行为而后悔了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "你笑了呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "没必要为了这样的一个家伙留下新的心结",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "嗯",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "绿毛猩猩，也要谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "把那个家伙打得跪地求饶的样子，我心里舒服多了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "现在还在叫外号总觉得哪里怪怪的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "我早就不介意了，不仅仅是这个",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "好了，收拾好心情就继续进发吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "进入黄金树林，找到那神秘的月鹿，让羽三彻底从诅咒中解放出来",
         "special": "dia1"
     }
 ]
