@@ -17,7 +17,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "是良吗？之前委托的调查有进展了吗？",
+        "string": "是亚良吗？之前委托的调查有进展了吗？",
         "special": "dia1"
     },
     {
@@ -65,14 +65,14 @@
     {
         "branch": "branch0",
         "name": "学者",
-        "face": "SeigineScholar",
+        "face": "SeigineScholarHappy",
         "string": "抱歉，一到这个场合我就滔滔不绝的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
-        "face": "SeigineScholar",
+        "face": "SeigineScholarHappy",
         "string": "一般来说子女都会遗传到父母的性格，但是我的父母都不爱说话，孩子也很安静，真是奇怪呢！",
         "special": "dia2"
     },
@@ -199,20 +199,20 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "良，非常感谢你的努力，有什么想要的奖励，我会让斯理尽可能地满足你的要求的",
+        "string": "亚良，非常感谢你的努力，这个信物拿去吧，斯理或世行会尽可能地满足你的报酬的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "学者",
-        "face": "SeigineScholar",
+        "face": "SeigineScholarHappy",
         "string": "阁下，对于学者的最好的奖励，就是用实际行动证明理论的正确啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "学者",
-        "face": "SeigineScholar",
+        "face": "SeigineScholarHappy",
         "string": "如果阁下真的找到了，请务必留下记录甚至图像证据，这才是我想要的东西，希望羽三阁下早日恢复健康，我先退下了",
         "special": "dia2"
     },
@@ -415,7 +415,7 @@
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "IuimiDefault",
+        "face": "IuimiDepressed",
         "string": "……十几年前这里还是气派的大宅，现在门口都长出杂草了呢",
         "special": "dia2"
     },
@@ -506,7 +506,7 @@
     {
         "branch": "branch0",
         "name": "陈",
-        "face": "ChenSmlie",
+        "face": "ChenSmile",
         "string": "罢了，你现在就是那家伙的主人了吧？那么我作为那家伙的原主人收取一点出让费是不是很正常呢？",
         "special": "dia2"
     },
@@ -520,7 +520,7 @@
     {
         "branch": "branch0",
         "name": "陈",
-        "face": "ChenDepressed",
+        "face": "ChenSmile",
         "string": "能把这玩意调教得如此听话，光是这点就很值钱了吧，就算身上有伤疤你也在她身上找到很多乐子了吧",
         "special": "dia2"
     },
@@ -583,21 +583,21 @@
     {
         "branch": "branch0",
         "name": "陈",
-        "face": "ChenHurtSlime",
+        "face": "ChenHurtSmile",
         "string": "对了！羽三哟，我的女儿啊，今天你会在这里出现就是我们血脉之间的共鸣啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "陈",
-        "face": "ChenHurtSlime",
+        "face": "ChenHurtSmile",
         "string": "你也长得亭亭玉立了呢，爸爸老了，作为女儿就应该给父亲赡养费啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "陈",
-        "face": "ChenHurtSlime",
+        "face": "ChenHurtSmile",
         "string": "西景人可不会眼睁睁见着自己的父亲就这样死掉啊，我们和化外之民最大的区别就是我们懂得“孝顺”啊……",
         "special": "dia2"
     },
@@ -619,6 +619,13 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiTerrible",
+        "string": "真是厚颜无耻……你以为我已经忘了，以前我是怎么顽强地存活下来的吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerrible",
         "string": "直到今天，无力地让火焰撕裂我的身体的惨状依然历历在目",
         "special": "dia2"
     },
@@ -633,7 +640,7 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiTerrible",
-        "string": "“恐惧”和“自卑”一直深深地铭刻在我的内心",
+        "string": "就是因为里面，“恐惧”和“自卑”一直深深地铭刻在我的内心",
         "special": "dia2"
     },
     {
@@ -648,13 +655,6 @@
         "name": "羽三",
         "face": "IuimiAngry",
         "string": "没错……给我去死吧……给我彻底消失吧……我不想再不安了……我不想再恐惧下去了……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "羽三",
-        "face": "IuimiAngry",
-        "string": "你给我去死啊！",
         "special": "dia2"
     },
     {
@@ -674,7 +674,7 @@
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "IuimiSurprise",
+        "face": "IuimiSad",
         "string": "放开我……",
         "special": "dia2"
     },
