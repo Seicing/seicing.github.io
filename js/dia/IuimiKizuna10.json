@@ -233,7 +233,7 @@
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "IuimiDefault",
+        "face": "IuimiSinisterSmile",
         "string": "真不愧是绿毛猩猩，想东西就是如此的天马行空不切实际",
         "special": "dia2"
     },
@@ -242,6 +242,13 @@
         "name": "余",
         "face": "YoDepressed",
         "string": "要打架吗？夜叉女",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDissatisfy",
+        "string": "你想死就来",
         "special": "dia2"
     },
     {
