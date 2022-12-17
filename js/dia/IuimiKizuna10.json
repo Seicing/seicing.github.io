@@ -1543,14 +1543,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassion",
-        "string": "我们走吧，离开这里",
+        "string": "灵魂瀑布……消失了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "下一个灵魂瀑布，又将会在哪里出现，又会谱写出什么让人哀伤的生离死别呢",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionNO",
-        "string": "这个由灵魂形成的瀑布……承载了多少让人哀伤的生离死别呢",
+        "string": "我们走吧，离开这里",
         "special": "dia1"
     },
     {
