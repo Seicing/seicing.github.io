@@ -737,7 +737,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoUncomfortable",
+        "face": "YoEmbarrassed",
         "string": "不……世清，夜叉女的脸色有问题，不像是疲劳",
         "special": "dia2"
     },
@@ -772,7 +772,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoUncomfortable",
+        "face": "YoDepressed",
         "string": "没错，已经走到这一步了，不能掉头……",
         "special": "dia2"
     },
@@ -822,7 +822,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoSad",
-        "string": "好黑的空间，如果有“深渊”的话，这里也许就是吧",
+        "string": "好黑的空间，如果有“地狱”的话，这里也许就是最接近地狱的存在",
         "special": "dia2"
     },
     {
@@ -1158,14 +1158,14 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiBawl",
-        "string": "永别了……我王……爸爸……",
+        "string": "永别了……爸爸……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "战斗结束后，羽三无力地跪倒在地上，任由灵魂瀑布刷洗自己的身躯，身上的鬼气以及疤痕也在来回的刷洗中……奇迹般地脱落了",
+        "string": "羽三无力地跪倒在地上，任由灵魂瀑布刷洗自己的身躯，身上的鬼气以及疤痕也在来回的刷洗中奇迹般地脱落了",
         "special": "dia3"
     },
     {
@@ -1389,6 +1389,13 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiHappy",
+        "string": "一直在梦境里出现的人，现在终于可以清晰地看见了啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiHappy",
         "string": "你就是羽三一直在说的那个世清吧……嗯……看着不太像一个伟大的人嘛，但看到你确实我能理解她为什么这么痴迷你",
         "special": "dia2"
     },
@@ -1410,7 +1417,7 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiHappy",
-        "string": "而这个可爱的蚩幽小姐……你们三个人之间的关系真是让人好奇呢",
+        "string": "而这个可爱的蚩幽小姐我也有印象呢，你们三人一直在一起旅行，当中发生的修罗场一定很有趣吧",
         "special": "dia2"
     },
     {
@@ -1418,6 +1425,13 @@
         "name": "余",
         "face": "YoSinisterSmileRF",
         "string": "嗯，这话中听，你就是那种让人一眼就喜欢的人呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiDefaultCE",
+        "string": "哈哈",
         "special": "dia2"
     },
     {
@@ -1431,13 +1445,13 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiTerribleSmile",
-        "string": "啊……真是没办法啊，时间已经到了吗？",
+        "string": "啊……真是没办法啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "IuimiSurpriseCryReborn",
+        "face": "IuimiCrySurpriseReborn",
         "string": "御吉！",
         "special": "dia2"
     },
@@ -1452,7 +1466,7 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiTerribleSmile",
-        "string": "我终究还是个死人呢，肉体已经腐烂，世上也没有了牵挂，终归还是要回归大地母亲的怀抱中永眠的",
+        "string": "我终究还是个死人呢，肉体已经腐烂，世上也没有了牵挂，终归还是要回归大地母亲的怀抱中永眠呢",
         "special": "dia2"
     },
     {
@@ -1479,7 +1493,7 @@
     {
         "branch": "branch0",
         "name": "御吉",
-        "face": "OkichiTerribleSmile",
+        "face": "OkichiSayonara",
         "string": "我会在天的那一边默默地祝福你的",
         "special": "dia2"
     },
