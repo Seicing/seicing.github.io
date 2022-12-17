@@ -271,5 +271,264 @@
         "face": "IuimiHappy",
         "string": "嗯",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "沿着河流走，走到剧情触发点",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "它们还要跟着我们多久",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "数量可观……粗略估计有五、六十只吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "这破狼王也太能生了吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "这也叫做狼吗？看到自己的兄弟被暴揍了，明显的数量优势也不敢扑上来报仇",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "明知道打不过就一直在等待时机，这也是最基本的智慧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "难道说前面会有什么特殊的地形，使得它们认为有十足的把握击杀我们？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "怎么样，要撤退寻找其他的地方吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDefault",
+        "string": "你是领队，你做决定",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "风从地底传来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSurprise",
+        "string": "什么？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这里开始周围开始大量出现几乎垂直出风的地面裂缝，这里的地下应该是空心的巨大地下河床",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我们一直马不停蹄地从泖支於走到这里，天色也逐渐变暗了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "这群狼的目的也很明显了，打算凭借夜色的优势让我们掉到被草丛隐藏的裂缝下面饿死",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "要返回吗？听上去可不妙",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "附近的地形很平缓，如果在这里开战的话我们不会有太大问题",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我们停止推进，在这里轮番守夜休息，观察它们的行动再作打算",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "好的，就按你说的办",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "休息，到了夜里世清值班时间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我困了，世清，是你的时间了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "休息吧，接下来就交给我吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "一片寂静",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "今天早上谢谢你把羽三从深渊的边缘拉了回来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "鸣……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "下次能不能换点正常点的出场方式",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "哈哈哈",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "绿发小丫头说得没错，确实要跳脱出正常的思维模式",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "月鹿……我大概可以猜得出是什么了，毕竟……这段时间我也在努力，另一种意思上的……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "月鹿……真的存在？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "“它”可以说存在，也可以说不存在",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "我也不敢把话说太绝，因为不是的话，我便样衰了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "现在就不要开玩笑了……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "你们明天便进入地下河进行探索吧，如果我的猜想没错的话，相信聪明的你肯定会发现的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "然后不要忘记你答应过我的事情",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "是的……",
+        "special": "dia1"
     }
 ]
