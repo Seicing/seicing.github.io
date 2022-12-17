@@ -720,4 +720,123 @@
         "string": "找到进入地下河床的入口开始地下河床迷宫探索",
         "special": "dia3"
     },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "事件结束数天后，泖支於时罗",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "快给我从世清的身上离开！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDissatisfyReborn",
+        "string": "怎么了，我也是世清的女人啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoAngry",
+        "string": "你太贪心了，你不是都已经独占两晚了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSinisterSmileReborn",
+        "string": "小气鬼",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "罢了，世清，感觉饿了吧，我给你弄好吃的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "啊……啊，嗯",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSinisterSmileReborn",
+        "string": "试图使用食物攻势扳回一城吗？太天真了，我也来，让你感受一下何为绝望的实力差距",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "确实，你的实力确实让人绝望地比我低了一大截",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiAngryReborn",
+        "string": "嚣张的猩猩，你要战，那便来战吧！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "两人快速地离开了房间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "真有活力",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "一阵冷风吹过",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "鸣……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "是风啊……",
+        "special": "dia1"
+    }
 ]
