@@ -1507,8 +1507,15 @@
     {
         "branch": "branch0",
         "name": "羽三",
-        "face": "IuimiBawl",
-        "string": "御吉……永别了……",
+        "face": "IuimiBawlReborn",
+        "string": "御吉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "永别了……",
         "special": "dia2"
     },
     {
@@ -1556,7 +1563,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDepressed",
+        "face": "YoAngry",
         "string": "啊！",
         "special": "dia2"
     },
