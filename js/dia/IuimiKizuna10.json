@@ -604,7 +604,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "SeicingCompassion",
         "string": "是的……",
         "special": "dia1"
     },
@@ -703,7 +703,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "两个小恶魔",
+        "string": "你们才是恶狼吧",
         "special": "dia1"
     },
     {
@@ -808,7 +808,21 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "真有活力",
+        "string": "这两人如果可以含蓄一点就好了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "可以遵循自己的意志活着就好，羽三",
         "special": "dia1"
     },
     {
