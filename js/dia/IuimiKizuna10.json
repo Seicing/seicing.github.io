@@ -607,5 +607,117 @@
         "face": "SeicingEmbarrassed",
         "string": "是的……",
         "special": "dia1"
-    }
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "第二天",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "狼的数量变少了好多，估计只留下了两只作为监视，等待下一次时机的到来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDissatisfy",
+        "string": "它们毕竟也是普通的生物，会感到疲劳和没耐心也是很正常",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDissatisfy",
+        "string": "接下来我们如何行动",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "进入地下河道去",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "即使没有被它们威胁到我们反而还要主动跳下去吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这也是之前说好的，沿河走遇到洞穴就进去",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "希望羽三你能理解，我想尽可能对你们两个都公平一些",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDissatisfy",
+        "string": "我尊重你的抉择，但是我不想看到绿毛猩猩在那得意忘形",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "没有啦，我也不想在这件事上跟你吵架",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "再说这群狼蹲了我们一天盼着我们掉入陷阱最后失望而归，今天我们反而自己主动进去了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "真是赤裸裸的嘲讽，能想象到这群狼脸上的表情如何精彩，不是吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSinisterSmile",
+        "string": "也是呢，这样确实很好玩",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "两个小恶魔",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "那我们就开始地下河床的探索，如果有什么不对劲的话就马上逃跑",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "找到进入地下河床的入口开始地下河床迷宫探索",
+        "special": "dia3"
+    },
 ]
