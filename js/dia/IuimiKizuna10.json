@@ -668,28 +668,21 @@
         "branch": "branch0",
         "name": "羽三",
         "face": "IuimiDissatisfy",
-        "string": "我尊重你的抉择，但是我不想看到绿毛猩猩在那得意忘形",
+        "string": "绿毛猩猩得意忘形的样子很讨厌，但是说好的就是说好的，我尊重你的抉择",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "没有啦，我也不想在这件事上跟你吵架",
+        "string": "我不想在这件事上跟你吵架，反而是它们处心积虑想我们掉进去的洞我们反而自己趁他们没在的时候自己进去了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "再说这群狼蹲了我们一天盼着我们掉入陷阱最后失望而归，今天我们反而自己主动进去了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmile",
-        "string": "真是赤裸裸的嘲讽，能想象到这群狼脸上的表情如何精彩，不是吗？",
+        "string": "真是赤裸裸的嘲讽，能想象到这群狼脸上的表情如何精彩吗？",
         "special": "dia2"
     },
     {
@@ -717,8 +710,827 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "找到进入地下河床的入口开始地下河床迷宫探索",
+        "string": "找到进入地下河床的入口开始地下河床迷宫探索，到达迷宫中部的剧情触发点后",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "呼……呼……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "我有点透不过气来了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这个地下河床的结构实在是太复杂了，浪费了不少体力",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoUncomfortable",
+        "string": "不……世清，夜叉女的脸色有问题，不像是疲劳",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "我的手好难受……里面的鬼魂似乎在呼应着这里某个地方",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "还能支撑下去吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "我不能在这里放弃……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSad",
+        "string": "世清，我能感受到我们离目标越来越接近了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoUncomfortable",
+        "string": "没错，已经走到这一步了，不能掉头……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "羽三",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清把羽三背在背上",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这样是不是可以节省一些力气？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "嗯……我感觉好了很多",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappy",
+        "string": "世清……我们继续前进",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到迷宫的终点，月鹿之间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSad",
+        "string": "好黑的空间，如果有“深渊”的话，这里也许就是吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "你们看！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "在漆黑中赫然出现了一条发光的瀑布",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "发光的瀑布……？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "咦？多条水流汇聚在一点，这个瀑布看起来不就是发光的雄鹿的角吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSurprise",
+        "string": "没错！在黑暗中的“鹿角”，难道说这就是“月鹿”的真身？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "我在接近此地的时候意识模糊，呼吸困难，其他留下了传闻的人们就是因为这样，所以才认为眼前的景象是“月鹿”吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "这也侧面说明了羽三的意志很坚强啊，走到这里还能保持清醒的意识",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "灵魂的汇聚地……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "鸣……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "我王老爷子，是你吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "能感受到吗？这些发光的瀑布，其实是在苦苦挣扎的灵魂碎片",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "众人走近了瀑布查看",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "丫头，你觉得难受的原因就是因为残破的灵魂们因为此地特殊的磁场，在被不由自主地吸入此地",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "灵魂们因为对现世的眷恋所以用尽所有力气排斥此地",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "这里就是所谓的“地狱”吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "嗯……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "灵魂无法被消灭，只能被无限撕裂，那么被武器祭祀们“净化”了的灵魂会消失在何方呢？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "答案就是这里",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "强大的鸣神会违抗这个世界的意志苟活在大地上，当他们被撕碎变得足够弱之后",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "这个世界的意志就会让无力抵抗的他们通过这些枢纽回到世界本身中去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "这就是月鹿的真相……亡者们回到世界意志怀抱……长久旅途最后的终点站，灵魂的汇流处",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "灵魂……的汇流处",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "我王一把抱住羽三和她一起接近灵魂汇流处",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "老爷子？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "羽三，世界的意志没有任何鬼神可以忤逆，你体内的鬼魂会在灵魂汇流的流动中彻底被抽离",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurprise",
+        "string": "也包括你吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "……没错……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羽三拼命挣扎",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "放开我！老爷子！你早就知道一切，故意不告诉我吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "动……动不了……为什么？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "手……手臂被瀑布吸引过去了……停下来……这样下去……老爷子！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "对不起……丫头",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "与其你继续维持诅咒的身躯，在你身上苟活下去，还不如让你彻底从中解放，获得自由",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羽三的手臂被灵魂瀑布死死地拷住，身上的鬼魂被疯狂地吸走",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohDefault",
+        "string": "世清……我在脱离丫头后会因为本能抗拒暴走，到时候……是实践你的承诺的时候了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "老爷子……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "我王说完，马上吸收了大量的鬼魂化身为究极形态向世清袭来<br>boss战：灵魂本源剑鬼我王，羽三剧情脱队，所以是世清和余两人作战<br>击败我王后",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohSayonara",
+        "string": "在我死后，仿佛做了一场很长的梦，当我醒来的时候，就这样莫名其妙地和你一起踏上旅途",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohSayonara",
+        "string": "我怀着对世界的怨恨死去，而和你在一起的旅途，我开始产生了对世界美好的憧憬",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohSayonara",
+        "string": "我生前只是为了满足自己活下去的欲望而挥剑，死后却拥有了保护的对象，我第一次觉得我在这个世界上的“意义”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohSayonara",
+        "string": "很高兴和你走到今天……丫头……羽三……我的女儿……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohSayonara",
+        "string": "祝福你可以像骄傲的雄鹰一样……脱离了身体的枷锁后……可以骄傲、自由、无忧无虑地在天空中飞翔",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "我王",
+        "face": "GaohSayonara",
+        "string": "祝福你……在一切都结束后……获得真正的幸福……永别了……羽三……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "老爷子！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "永别了……我王……爸爸……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "战斗结束后，羽三无力地跪倒在地上，任由灵魂瀑布刷洗自己的身躯，身上的鬼气以及疤痕也在来回的刷洗中……奇迹般地脱落了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiTerribleReborn",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "羽三……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "世清……我能感受到我身上的疤痕已经从我身上完全脱落",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "诅咒……结束了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "是啊……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "老爷子……一定希望着这样的结果……他一定在希望我从此之后……丢弃一切惨痛的过去快乐地活下去……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "但是至少在今天……就让我好好地为老爷子哀悼吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "羽三",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "老爷子给你留下了一件礼物……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCrySurpriseReborn",
+        "string": "……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "他问了我两个问题，一个是残破的灵魂最后的归宿是哪里",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "另一个就是……如果把尚未堕落就已被撕裂的灵魂重新组合……会如何",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCrySurpriseReborn",
+        "string": "！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "这把剑里面封存着的就是老爷子最后的礼物",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "在哪里开启它的决定权在你自己的手里",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressedReborn",
+        "string": "我会在这里拔剑",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressedReborn",
+        "string": "我大概已经猜到是什么了……但是，“她”大概也会支持我的做法的……我要彻底从过去走出来，迎接新的生命",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiDepressedReborn",
+        "string": "所以我会勇敢地接受老爷子的礼物……也会勇敢地面对接下来的一切的……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "羽三拔出铭刀，一个女性的灵魂从中解放出来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "御吉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiDefault",
+        "string": "变得更加成熟了嘛，但是爱哭的性格依旧没变过呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiDefaultCE",
+        "string": "好久没见了啊，羽三",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "真的是你吗？御吉？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiDefault",
+        "string": "我做了一个很长的梦……梦见我见证着你的旅途",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiHappy",
+        "string": "这也许不是梦……在那天之后，我残破的灵魂就一直跟随着你走过千山万水",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiTerribleSmile",
+        "string": "那个脸色阴沉的老爷子把睡得正香的我拼起来吵醒我了，真是让人不知道说什么话好啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappyCryReborn",
+        "string": "哈哈……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiDefaultCE",
+        "string": "身上的伤疤消失了啊，你本身就很可爱，我当初就没说错过",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiHappy",
+        "string": "看到你如此生龙活虎，我就放心了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiHappy",
+        "string": "你就是羽三一直在说的那个世清吧……嗯……看着不太像一个伟大的人嘛，但看到你确实我能理解她为什么这么痴迷你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurpriseRF",
+        "string": "啊？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiHappyCryReborn",
+        "string": "他是我的，你就别发花痴啦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiHappy",
+        "string": "而这个可爱的蚩幽小姐……你们三个人之间的关系真是让人好奇呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmileRF",
+        "string": "嗯，这话中听，你就是那种让人一眼就喜欢的人呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "御吉的灵体开始晃动起来",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiTerribleSmile",
+        "string": "啊……真是没办法啊，时间已经到了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiSurpriseCryReborn",
+        "string": "御吉！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiTerribleSmile",
+        "string": "看到你已经从不幸的人生中走了出来，而且找到了自己可以托付一生的人和挚友，我就已经心满意足了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiTerribleSmile",
+        "string": "我终究还是个死人呢，肉体已经腐烂，世上也没有了牵挂，终归还是要回归大地母亲的怀抱中永眠的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiDefaultCE",
+        "string": "如果说还有什么遗憾的话，就是还没看到你这张脸没有哭泣、真正地感受到喜悦的样子吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "御吉……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "御吉主动地走到灵魂瀑布内部",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiTerribleSmile",
+        "string": "我会在天的那一边默默地祝福你的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiSayonara",
+        "string": "永别了，羽三",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiBawl",
+        "string": "御吉……永别了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoCry",
+        "string": "连续的生离死别……就连我也感同身受了……夜……羽三……我也会支持你一起走出悲哀的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "羽三",
+        "face": "IuimiCryReborn",
+        "string": "谢谢你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "我们走吧，离开这里",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "这个由灵魂形成的瀑布……承载了多少让人哀伤的生离死别呢",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -822,7 +1634,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEye",
-        "string": "可以遵循自己的意志活着就好，羽三",
+        "string": "已经过去一星期了啊，羽三……似乎也完全走出来了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "遵循自己的意志活着就好，羽三",
         "special": "dia1"
     },
     {
