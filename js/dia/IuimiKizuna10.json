@@ -1060,14 +1060,14 @@
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "对不起……丫头",
+        "string": "对不起，丫头",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "我王",
         "face": "GaohDefault",
-        "string": "与其你继续维持诅咒的身躯，在你身上苟活下去，还不如让你彻底从中解放，获得自由",
+        "string": "比起你的幸福，我的苟存不值一提",
         "special": "dia2"
     },
     {
@@ -1389,14 +1389,14 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiHappy",
-        "string": "一直在梦境里出现的人，现在终于可以清晰地看见了啊",
+        "string": "一直在梦境里模模糊糊地出现的人，现在终于可以一睹真容了啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiHappy",
-        "string": "你就是羽三一直在说的那个世清吧……嗯……看着不太像一个伟大的人嘛，但看到你确实我能理解她为什么这么痴迷你",
+        "string": "你就是羽三一直在说的那个世清吧……嗯……看着不太像一个伟大的人嘛，但看到你也明白了羽三为何如此痴迷你",
         "special": "dia2"
     },
     {
@@ -1445,7 +1445,7 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiTerribleSmile",
-        "string": "啊……真是没办法啊",
+        "string": "啊，到时间了，真是没办法啊",
         "special": "dia2"
     },
     {
@@ -1459,6 +1459,13 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiTerribleSmile",
+        "string": "已经没所谓了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "御吉",
+        "face": "OkichiTerribleSmile",
         "string": "看到你已经从不幸的人生中走了出来，而且找到了自己可以托付一生的人和挚友，我就已经心满意足了",
         "special": "dia2"
     },
@@ -1466,7 +1473,7 @@
         "branch": "branch0",
         "name": "御吉",
         "face": "OkichiTerribleSmile",
-        "string": "我终究还是个死人呢，肉体已经腐烂，世上也没有了牵挂，终归还是要回归大地母亲的怀抱中永眠呢",
+        "string": "我终究还是个死人呢，肉体已经腐烂，世上也没有了牵挂，终归还是要回归大地母亲的怀抱中永眠的",
         "special": "dia2"
     },
     {
@@ -1529,7 +1536,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoCry",
-        "string": "连续的生离死别……就连我也感同身受了……夜……羽三……我也会支持你一起走出悲哀的",
+        "string": "连续的生离死别……就连我也感同身受了……我也会支持你一起走出悲哀的",
         "special": "dia2"
     },
     {
