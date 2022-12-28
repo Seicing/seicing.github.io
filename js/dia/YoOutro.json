@@ -1,0 +1,30 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "微型过渡剧情1",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "看啊！世清，我刚刚的那一下帅气不！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "嗯，很不错",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch2",
+        "name": "余",
+        "face": "YoHappy",
+        "string": "我也是在不断成长的啊",
+        "special": "dia2"
+    }
+]

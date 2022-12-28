@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/labibana.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="100"></div>
+
+<div id="app">
+    <div v-for="diaindex in aasb">
+        <div :class="diaindex.branch1st" :style="diaindex.branchstyle">
+            <div :id="diaindex.special" :style="diaindex.specialstyle">
+                <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
+                    <tr v-html="diaindex.string1st"> </tr>
+                    <tr v-html="diaindex.string2nd"> </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var imgAll = [];
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            aasb: []
+        },
+        created() {
+            fetch('https://seicing.com/js/dia/YoOutro.json')
+                .then(response => response.json())
+                .then(json => {
+                    this.aasb = json
+                    for (var i = 0; i < json.length; i++) {
+                        json[i].special = json[i]['special'];
+                        json[i].branch1st = json[i]['branch'];
+
+
+                        if (json[i].name != '') {
+                            json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
+                        } else {
+                            json[i].string1st = '<td id="banaheader2"></td>';
+                        }
+
+                        if (json[i].face != '') {
+                            json[i].facein = 'background:url(https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/fatcatpool/essay/head2/' + json[i]['face'] + '.png) center right no-repeat;border-radius:15px 15px 15px 15px;';
+                        } else {
+                            json[i].facein = 'border-radius:15px 15px 15px 15px;';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].string2nd = '<td width="300px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="180px"></td>';
+                        } else {
+                            json[i].string2nd = '<td width="475px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="5px"></td>';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].tableid = 'tablebana';
+                        } else {
+                            json[i].tableid = 'tablebana2';
+                        }
+
+                        if (json[i].special != 'dia3') {
+                            json[i].specialstyle = 'position:static';
+                        } else {
+                            json[i].specialstyle = 'position:relative;left:20%;';
+                        }
+
+                        if (json[i].branch == 'branch0' || json[i].branch == 'branch1') {
+                            json[i].branchstyle = '';
+                        } else {
+                            json[i].branchstyle = 'display: none';
+                        }
+
+                    }
+                })
+        }
+    })
+
+
+    function Switchbranch1() {
+        var x = document.getElementsByClassName("branch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+
+        var x = document.getElementsByClassName("branch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "#DACF88";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "white";
+        }
+    }
+
+
+    function Switchbranch2() {
+        var x = document.getElementsByClassName("branch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        var x = document.getElementsByClassName("branch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch1")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "white";
+        }
+
+        var x = document.getElementsByClassName("buttonbranch2")
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "#DACF88";
+        }
+    }
+
+
+</script>
+
+</html>
