@@ -158,7 +158,7 @@ function showPic(e, taitou) {
         "贵族铁骑的坚毅": "贵族铁骑的坚毅<br>Boyar's Fortitude<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>罗斯骑兵生命值+20",
         "骑士军刀": "骑士军刀<br>Knight Sabers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>骑士近战伤害+4",
 
-        "强化祝福": "强化祝福<br>Improved Blessing <br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>275 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>圣者祝福提供伤害值+1",
+        "【待补充】33": "【待补充】<br>Saint's Veneration<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>425 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>僧侣战士生命值+100",
 
 
         "圣者之触": "圣者之触<br>Saint's Reach<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>275 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>圣者祝福效果范围+5格，圣者祝福提供伤害值+1",
@@ -259,7 +259,7 @@ function showPic(e, taitou) {
         "全视之眼sul": "全视之眼<br>All-Seeing Eye<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>135<br>学者视野范围+100%",
         "迅捷sul": "迅捷<br>Swiftness<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>270<br>学者移动速度+50%",
         "狂热sul": "狂热<br>Zeal<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>受到学者治疗的单位攻击速度+50%，持续3秒",
-        "手稿贸易sul": "手稿贸易<br>【待补充】<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>驻扎在码头的学者可提供 +20% 的生产速度加成，并为全球研究做出了贡献",
+        "手稿贸易sul": "手稿贸易<br>Manuscript Trade<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>驻扎在码头的学者可提供 +20% 的生产速度加成，并为全球研究做出了贡献",
         "急行军sul": "急行军<br>Forced March<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>步兵获得急速行军能力，无法攻击10秒，提高100%移动速度(实际上是进行攻击就马上失去效果)",
         "装甲野兽sul": "装甲野兽<br>Armored Beasts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>战象+25%生命值和4远程护甲",
         "攻城战象sul": "象轿<br>Siege Elephant<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>箭塔象的弓箭手替换成弩手，获得+11对重甲伤害，生命值+30%，远程护甲+4",
