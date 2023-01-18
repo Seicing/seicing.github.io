@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("chi").style.opacity = "1";
+            document.getElementById("mon").style.opacity = "1";
         })
     })
 </script>
@@ -169,7 +170,7 @@
     蜂巢炮是中国特有的攻城武器，它们对一大群的单位效果很好<br>
     蜂巢炮是城堡时代(III)生产的部队，和所有器械部队一样，它们无法进行任何升级 <br>
     蜂巢炮是火药部队，所以它享受化学的加成，但实际上中国的化学在时代1就研究完成，所以在城堡时代生产的蜂巢炮是接受了化学加成后的版本，在游戏里显示为“10”攻击力 <br>
-
+    中国曾经是蒙古帝国的势力范围，因此蒙古人可以在汗国宫殿地标中征召蜂巢炮进行使用<br>
 
 
 </div>
@@ -230,6 +231,46 @@
             </tr>
         </table>
     </div>
+
+    <div id="monText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            文明固有加成：点燃建筑物掠夺25食物、25黄金 <br>
+            文明固有限制：由汗国宫殿生产 <br>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+)(+20%/+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+)(+10/+15) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+)(+15%/+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/海盗行为.png" width="20px">海盗行为(击沉对方船只获得25木和25金) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/突袭赏金.png" width="20px">突袭赏金(+)(文明固有加成的黄金和食物掠夺数变成50/75)<br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石料赏金.png" width="20px">石料赏金(+)(点燃建筑物掠夺75石头/125石头) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 
 
 </div>
@@ -358,8 +399,8 @@
 </body>
 
 <script>
-    var listText = ['chiText']
-    var listButton = ['chiButton']
+    var listText = ['chiText', 'monText',]
+    var listButton = ['chiButton', 'monButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);

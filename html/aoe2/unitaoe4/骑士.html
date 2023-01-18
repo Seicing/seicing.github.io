@@ -17,6 +17,7 @@
             document.getElementById("rus").style.opacity = "1";
             document.getElementById("hre").style.opacity = "1";
             document.getElementById("ott").style.opacity = "1";
+            document.getElementById("mon").style.opacity = "1";
         })
     })
 </script>
@@ -210,6 +211,8 @@
     骑士是重型骑兵单位，拥有强力的冲锋伤害，他们是欧洲地区的重装骑兵，相当于东亚和中东地区的长矛骑兵，奥斯曼虽然发迹于亚洲，但是他们吸收了大量来自拜占庭的文化，因此他们也使用骑士<br>
     骑士是城堡时代(III)生产的部队，罗斯人拥有早期骑士(II)<br>
 
+    俄罗斯曾经是蒙古帝国的势力范围，因此蒙古人可以在汗国宫殿地标中征召罗斯骑士进行使用<br>
+
 </div>
 
 <br><br><br>
@@ -400,6 +403,58 @@
         </table>
     </div>
 
+
+    <div id="monText0" style="text-align: left;display:none ">
+        文明固有加成：点燃建筑物掠夺25食物、25黄金 <br>
+        文明固有限制：由汗国宫殿生产 <br>
+        <table frame="box" width="500px" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+)(+20%/+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">火炬攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/更多火炬.png" width="20px">更多火炬(+)(+3/+5) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网 (+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/海盗行为.png" width="20px">海盗行为(击沉对方船只获得25木和25金) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/突袭赏金.png" width="20px">突袭赏金(+)(文明固有加成的黄金和食物掠夺数变成50/75)<br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石料赏金.png" width="20px">石料赏金(+)(点燃建筑物掠夺75石头/125石头) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 </div>
 
 <br><br><br>
@@ -580,8 +635,8 @@
 </body>
 
 <script>
-    var listText = ['engText', 'hreText', 'rusText', 'ottText']
-    var listButton = ['engButton', 'hreButton', 'rusButton', 'ottButton']
+    var listText = ['engText', 'hreText', 'rusText', 'ottText', 'monText',]
+    var listButton = ['engButton', 'hreButton', 'rusButton', 'ottButton', 'monButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);
