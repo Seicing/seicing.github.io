@@ -675,7 +675,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionRF",
-        "string": "我不擅长撒谎，所以接下来发生的事情，我也只好暂时不去想了",
+        "string": "我不擅长撒谎",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionRF",
+        "string": "现在我只能做到暂时不想任何东西而已……最后我会跟她坦白……",
         "special": "dia1"
     },
     {
@@ -689,7 +696,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefaultRF",
-        "string": "……所以她才随便找个理由……",
+        "string": "……所以她才随便找个理由在外面吗？",
         "special": "dia1"
     },
     {
@@ -731,7 +738,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "……我好像干了一件不得了的事情",
+        "string": "好像干了一件不得了的事情啊",
         "special": "dia1"
     },
     {
@@ -773,7 +780,7 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2CloseEye",
-        "string": "你是怎么理解神的呢？",
+        "string": "你觉得神是什么",
         "special": "dia2"
     },
     {
@@ -787,7 +794,7 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2Default",
-        "string": "所以，就是这样一种虚幻的东西吗？",
+        "string": "所以就是这样一种虚幻的东西吗？",
         "special": "dia2"
     },
     {
