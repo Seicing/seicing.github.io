@@ -554,9 +554,37 @@
     },
     {
         "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
+        "string": "偏偏你是那种老实巴交的家伙啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionRF",
-        "string": "文，其实我很早之前就知道你对我是认真的了",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionRF",
+        "string": "文，实际上……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileCERF",
+        "string": "什么呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionRF",
+        "string": "就算是木头也该知道你实际上对我是在认真的",
         "special": "dia1"
     },
     {
@@ -590,9 +618,37 @@
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2SinisterSmileCERF",
-        "string": "与其道歉，还不如……",
+        "face": "Ven2CryHappy",
+        "string": "……",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CryHappy",
+        "string": "我等了这句话……十几年了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "文……实在是非常抱歉",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2SinisterSmileCERF",
+        "string": "不，世清，与其道歉，还不如……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionRF",
+        "string": "……",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -600,6 +656,13 @@
         "face": "Ven2SinisterSmileCERF",
         "string": "真是的……不要让人说出来……",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "我懂的",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
