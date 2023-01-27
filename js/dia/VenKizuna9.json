@@ -45,7 +45,7 @@
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "(像是察觉了什么)",
+        "string": "嘿",
         "special": "dia2"
     },
     {
@@ -94,14 +94,14 @@
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "嗯……哥你很少这样关心我，不过我对这些没啥意义的东西不感兴趣，我会自己找其他乐子的",
+        "string": "嗯……哥你很少这样关心我，不过实在是太忙了没办法，之后我会自己找其他乐子的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "观察哥你接下来要怎么化解这次危机对于我来说更有意思",
+        "string": "还有……这次要醒目一点哦，别被吃了",
         "special": "dia2"
     },
     {
@@ -311,14 +311,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionNO",
-        "string": "……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCompassionNO",
-        "string": "你脸色没开始时候那么难看了",
+        "string": "……你脸色没开始时候那么难看了",
         "special": "dia1"
     },
     {
@@ -542,6 +535,13 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2WrySmile",
+        "string": "我不甘心",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2WrySmile",
         "string": "心好痛，比我在这里感受到的痛苦更痛",
         "special": "dia2"
     },
@@ -617,6 +617,13 @@
     },
     {
         "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeRF",
+        "string": "要说对你没有感觉……那只是骗自己，如果是真的没有的话，我们不可能走到现在",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "文",
         "face": "Ven2CryHappy",
         "string": "……",
@@ -633,14 +640,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeRF",
-        "string": "文……实在是非常抱歉",
+        "string": "文……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "文",
         "face": "Ven2SinisterSmileCERF",
-        "string": "不，世清，与其道歉，还不如……",
+        "string": "不过我并不只需要口头上的道歉",
         "special": "dia2"
     },
     {
@@ -759,7 +766,7 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2SinisterSmileRF",
-        "string": "我们的神可没禁止我们拥有七情六欲啊，再说，我才不相信有“神”这种东西",
+        "string": "天生的欲望应该理性看待而不是蒙上愚昧的束缚……再说，神这种东西真的存在吗？",
         "special": "dia2"
     },
     {
@@ -848,6 +855,13 @@
     },
     {
         "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEyeRF",
+        "string": "我没有在你身上看到过向命运屈服的念头，可能这也是为什么我会对你迷恋的原因吧……我们是同一类的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeRF",
         "string": "文……",
@@ -857,7 +871,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefaultRF",
-        "string": "你给了我一种以前没有在你身上感受过的震撼……如果可以的话……我想余生都和你在一起，去证明你，还有被感触到的我，想要挑战命运的结果",
+        "string": "你给了我一种以前没有在你身上感受过的震撼……如果可以的话……我想余生都和你在一起，去见证想要挑战命运的我们的结果",
         "special": "dia1"
     },
     {
@@ -871,7 +885,7 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2DefaultRF",
-        "string": "我的余生……就请继续为我见证了……世清",
+        "string": "继续为我见证吧……世清",
         "special": "dia2"
     }
 ]
