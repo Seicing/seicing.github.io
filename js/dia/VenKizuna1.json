@@ -694,13 +694,6 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "就是为了避免认出西景的教皇的身份，所以才打扮成不像一个神职人员的样子吗？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
         "name": "文",
         "face": "Ven2Default",
         "string": "嗯，就是这样",
@@ -708,65 +701,107 @@
     },
     {
         "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "我会以西景帝国的正统教皇的身份支持你们的行动",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "不行，太危险了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "教皇领维持中立态度会更好吧，他们在各地的渗透比你想象的还要高",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "跟你一起行动的是你的朋友小文，而不是西景的教皇御琉文",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2Default",
-        "string": "需要我帮助的话，我马上赶来支援你们",
+        "face": "Ven2CloseEye",
+        "string": "嗯嗯",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "西景的教皇亲自下场……",
+        "string": "……所以才换了一身看上去不像神职人员的打扮吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2Default",
-        "string": "你不也是吗？不好好呆在宫里，天天亲力亲为",
+        "face": "Ven2CloseEye",
+        "string": "教皇和皇帝一样，也是手里的刀足够锐利才能服众啊，我不会拖累你的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2WrySmile",
-        "string": "我也想和你们体验那样的生活，毕竟我们也算是有共同的敌人",
+        "face": "Ven2CloseEye",
+        "string": "你救了我一命，我也要报答一下你不是吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "共同的敌人？",
+        "face": "SeicingCompassion",
+        "string": "但是",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2Default",
-        "string": "结社给教会也造成了很大的困扰，所以帮助你其实也是我的职责",
+        "face": "Ven2SinisterSmile",
+        "string": "小余已经答应了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2Default",
-        "string": "一起努力吧",
+        "face": "Ven2SinisterSmile",
+        "string": "所以，不用担心我们会吵起来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "嗯嗯",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
-        "string": "嗯，拜托你了",
+        "face": "SeicingEmbarrassed",
+        "string": "……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "这样啊，再回拒就是不礼貌了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "文，以后就拜托你了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2Happy",
+        "string": "非常乐意，有什么需要的，就尽管叫我吧",
+        "special": "dia2"
     }
 ]
