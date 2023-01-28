@@ -738,6 +738,13 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2CloseEye",
+        "string": "所以你就尽管放心吧，我也是有自己的打算的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "文",
+        "face": "Ven2CloseEye",
         "string": "教皇和皇帝一样，也是手里的刀足够锐利才能服众啊，我不会拖累你的",
         "special": "dia2"
     },
@@ -787,7 +794,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCompassionNO",
-        "string": "这样啊，再回拒就是不礼貌了",
+        "string": "再回拒就是不礼貌了",
         "special": "dia1"
     },
     {
@@ -801,7 +808,7 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2Happy",
-        "string": "非常乐意，有什么需要的，就尽管叫我吧",
+        "string": "嗯，我很期待，以后和你们一起战斗的日子哦",
         "special": "dia2"
     }
 ]
