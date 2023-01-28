@@ -604,28 +604,21 @@
     {
         "branch": "branch0",
         "name": "文",
-        "face": "Ven2CloseEye",
-        "string": "我新生了，我需要新的造型来迎接新的生活",
+        "face": "Ven2Default",
+        "string": "真心急啊，你再早点进来甚至还可以看到我的裸体哦",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "文",
         "face": "Ven2Default",
-        "string": "真心急啊，你再早点进来甚至还可以看到我的裸体哦，当然我不会介意啦",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "我向小余要了很多建议呢",
+        "string": "这样更可爱不是吗？我向小余要了很多建议呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "SeicingEmbarrassed",
         "string": "小余？",
         "special": "dia1"
     },
@@ -635,6 +628,13 @@
         "face": "YoDefault",
         "string": "嗯嗯，小文的底子其实很不错",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "小文？",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
@@ -682,28 +682,28 @@
         "branch": "branch0",
         "name": "文",
         "face": "Ven2CloseEye",
-        "string": "很不错，这个造型很适合行动",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "世清",
+        "string": "既然世清你喜欢我就以这样的造型跟着你行动了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "呃？",
+        "string": "……你要支持我的行动吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "就是为了避免认出西景的教皇的身份，所以才打扮成不像一个神职人员的样子吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "文",
         "face": "Ven2Default",
-        "string": "以后还请多多指教",
+        "string": "嗯，就是这样",
         "special": "dia2"
     },
     {
