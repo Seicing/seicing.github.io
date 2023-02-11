@@ -198,154 +198,196 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "这样啊，看着人数比例差距有点大啊，胜算大概有几成呢？",
+        "face": "SeicingDefault",
+        "string": "这得亏于你的努力呢",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "伊丽丝看了看周围，靠近世清的耳朵耳语",
+        "string": "伊拉修莱德的传令兵来汇报消息",
         "special": "dia3"
     },
     {
         "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Happy",
-        "string": "是0%哦",
+        "name": "伊拉修莱德新兵",
+        "face": "IllazuraydRecruit",
+        "string": "索菲亚大人！对面即将发起攻击了！",
         "special": "dia2"
     },
     {
         "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "终于……要来了吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "伊丽丝一面说着驱动起了权现，看罢，世清和余也跟着一起驱动起了权现",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "苍天啊，你怎么能一脸笑意跟我说这话",
+        "face": "SeicingDefault",
+        "string": "放心去战吧，我会一直为你而战",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "谢谢你……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "太大声了，你今天不太冷静哦，老公~大人~",
+        "string": "在战场上打情骂俏还真是游刃有余啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "你们就不要玩了，不可能用这种语气跟我描述这么恐怖的事实，对不",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "你绝对在生我的气吧，余",
+        "string": "余，那个……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "别多想了，如果是必输的话，我们怎么需要在这里浪费时间，我只是觉得和伊丽丝一起玩你很过瘾而已",
+        "string": "只是抓弄一下你而已",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoSinisterSmile",
-        "string": "还是说回正事吧，你把你最强的权现给我在这里驱动出来",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCompassionNO",
-        "string": "你们已经密谋好了啊，感觉以后会被你们这对好闺蜜欺负得有够惨了啊",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "",
-        "face": "",
-        "string": "世清驱动了始祖化光剑",
-        "special": "dia3"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊拉修莱德新兵",
-        "face": "IllazuraydRecruit",
-        "string": "你们看！好强的权现啊！",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊拉修莱德新兵",
-        "face": "IllazuraydRecruit",
-        "string": "这就是西景的皇帝……！最强的帝国的武力的顶点！",
+        "face": "YoDefault",
+        "string": "不要大意哦，我们三个都要好好地活下来",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "都在盯着我了…………",
+        "string": "嗯……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
-        "name": "",
-        "face": "",
-        "string": "伊丽丝和余紧随着也驱动了自己的武器",
-        "special": "dia3"
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不过……真是庞大的军队，伊拉修莱德人要靠勇气来弥补这个劣势吗？",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2SinisterSmile",
-        "string": "准备好了吗？老公",
+        "string": "骄傲的人会败在自己的傲慢之下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "缺乏皇帝的约束，宿句人的三个军团都各自为战，果断的进军仿佛觉得自己已经获得了胜利一般",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Relax",
+        "string": "不过，我们人数上的客观劣势也是存在的",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingTerrible",
-        "string": "至少把目标说清楚啊",
+        "face": "SeicingCloseEye",
+        "string": "狙击司王……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "没错",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "主力部队临时撤退的消息使得宿句军心开始出现动摇，所以他们的司王才需要领头进行冲锋来利用优势快速击溃我们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "可是啊，三个司王谁也不服谁呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "让我猜猜吧，你们难道是想和我一起……狙击敌人的三个司王？",
+        "face": "SeicingDefault",
+        "string": "真胡来啊，不过确实可行",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "答对咯，走吧",
+        "string": "我们不也是这样一直胡来走到今天的吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Shy",
+        "string": "世清，没有你，我也不会学会这么胡来，直到今天也会因为理性搞得自己束手束脚，一事无成吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2ShyCE",
+        "string": "这是从你身上学会的东西，以后我成为你的人，还要在你身上学会更多东西呢",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCompassionNO",
-        "string": "真胡来啊，这是在玩命啊",
+        "face": "SeicingPeepRF",
+        "string": "……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeRF",
-        "string": "不过，有你们陪在我身旁啊……玩命就玩命吧",
-        "special": "dia1"
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "敌人不会因为我们停下脚步……是时候上了",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2PeepRF",
+        "face": "Iris2Default",
+        "string": "嗯",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2DefaultCE",
         "string": "……",
         "special": "dia2"
     },
@@ -361,97 +403,6 @@
         "name": "伊拉修莱德新兵",
         "face": "IllazuraydRecruit",
         "string": "哦哦！！",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "",
-        "face": "",
-        "string": "三人一面冲锋一面谈论",
-        "special": "dia3"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "卡哈扎塔皇帝为了避免西景的进一步行动，率领一部分部队撤退了，只留下了三个司王在这里镇压我们的残余抵抗",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "虽然他们数量优于我们，但是他们处于断绝退路的恐惧中，根本没办法发挥应有的战斗力",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "抱歉，世清",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "怎么了",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "感谢你到了这个时刻，还能跟着我一起任性",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "实际上，不需要我们出手，现在的伊拉修莱德军队和敌人硬拼，胜利的几率也很大",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "是为了狙击敌方首领提前让他们溃不成军……减少牺牲吗？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "没有抱歉的必要，就算你不“任性”，为了减少不必要的流血，我也会这样做的",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Shy",
-        "string": "谢谢你……世清……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Shy",
-        "string": "真不愧是你，我就……喜欢你这一点",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmile",
-        "string": "别再调情了，快接近敌军了，提高注意力",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoAngryHappy",
-        "string": "世清！你的侧身和背后就交给我和伊丽丝，你就给我尽情地冲锋吧！让他们见识一下西景的皇帝的实力！",
         "special": "dia2"
     },
     {
@@ -542,21 +493,21 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoSinisterSmile",
-        "string": "傲慢的家伙，这不是战斗，这是战争……不过在足够强大的人面前，这两个的概念是差不多的也没错了",
+        "string": "不过，总算是获得胜利了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Relax",
-        "string": "看起来我在之后要好好地补习一下西景语呢，我竟然不知道这两个有什么区别啊。",
+        "face": "Iris2DefaultCE",
+        "string": "是啊……多亏了你们，伊拉修莱德再次获得了自由",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "真过分啊，伊丽丝，只顾着和情郎打情骂俏，完全忘了你的老爸了啊。",
+        "string": "真过分啊，伊丽丝，只顾着和情郎打情骂俏，完全忘了你的老爸了啊",
         "special": "dia2"
     },
     {
@@ -634,20 +585,6 @@
         "name": "阿齐兹王",
         "face": "AzizHappy",
         "string": "哈哈哈",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDepressed",
-        "string": "我说啊，刚刚这家伙还在诉苦我们两个搞小团体呢",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDepressed",
-        "string": "结果两个大男人小团队搞得有声有色呢",
         "special": "dia2"
     },
     {
