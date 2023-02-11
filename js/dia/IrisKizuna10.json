@@ -171,14 +171,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingEmbarrassed",
-        "string": "故意挑逗我是吧",
+        "string": "一起在欺负我啊，倒也不是不喜欢就是了",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeep",
-        "string": "私下怎么叫我都可以……现在要把目光投向更严肃的东西，情况如何了？",
+        "face": "SeicingDefault",
+        "string": "私下怎么叫我都可以，只是现在要把目光投向更严肃的东西，情况如何了？",
         "special": "dia1"
     },
     {
@@ -192,14 +192,14 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "短短几天就可以把溃散的伊拉修莱德督军势力集结起来，你的号召力还真是厉害啊，皇帝陛下",
+        "string": "短短几天就可以把溃散的伊拉修莱德督军势力集结起来，你的号召力还真是厉害啊",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "这得亏于你的努力呢",
+        "string": "这要得亏于你的努力，伊丽",
         "special": "dia1"
     },
     {
@@ -246,41 +246,6 @@
     },
     {
         "branch": "branch0",
-        "name": "余",
-        "face": "YoDepressed",
-        "string": "在战场上打情骂俏还真是游刃有余啊",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "余，那个……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmile",
-        "string": "只是抓弄一下你而已",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDefault",
-        "string": "不要大意哦，我们三个都要好好地活下来",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "嗯……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
         "string": "不过……真是庞大的军队，伊拉修莱德人要靠勇气来弥补这个劣势吗？",
@@ -304,7 +269,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Relax",
-        "string": "不过，我们人数上的客观劣势也是存在的",
+        "string": "我们人数上的客观劣势也是存在的，不过，我们有更加直接的办法去弥补这一点",
         "special": "dia2"
     },
     {
@@ -368,6 +333,41 @@
         "name": "世清",
         "face": "SeicingPeepRF",
         "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "在战场上打情骂俏还真是游刃有余啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "余，那个……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "别放在心上，只是觉得调戏你很好玩而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "不要大意哦，我们三个都要好好地活下来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "嗯……",
         "special": "dia1"
     },
     {
@@ -437,7 +437,7 @@
         "branch": "branch0",
         "name": "司王穆斯塔法",
         "face": "EmirMustafa",
-        "string": "真他妈的被小看了啊！竟然想对我进行斩首行动！？你们这些臭小鬼太傲慢了！给我去死！",
+        "string": "季米特里奥斯！波里伏耶！这两个自作主张的混蛋！竟然可以让敌人趁虚而入，真是废物！",
         "special": "dia2"
     },
     {
@@ -585,6 +585,13 @@
         "name": "阿齐兹王",
         "face": "AzizHappy",
         "string": "哈哈哈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "刚刚还在吐槽我们两个玩小团体呢",
         "special": "dia2"
     },
     {
