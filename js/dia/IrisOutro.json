@@ -33,5 +33,40 @@
         "face": "YoDepressedRF",
         "string": "过分了啊",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "微型过渡剧情2",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Relax",
+        "string": "看起来结束了呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "大家的身上都是灰尘啊，让我来清洗一下吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "真是神奇的魔法啊，如果我也会就好了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "想学的话，我可以教你们哦",
+        "special": "dia2"
     }
 ]
