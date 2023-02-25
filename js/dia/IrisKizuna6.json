@@ -1074,7 +1074,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "欧洛克把血清打到自己的胸口上，蜕变成了巨大的吸血鬼 ",
+        "string": "欧洛克把血清打到自己的胸口上，蜕变成了巨大的吸血鬼",
         "special": "dia3"
     },
     {
@@ -1152,6 +1152,48 @@
         "name": "欧洛克",
         "face": "OrlokAwakeningAngry",
         "string": "可恶……身体……动不了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Pain",
+        "string": "我……我……这种感觉是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "想起了哥哥的事情，伊丽丝停止了动作",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "跟那时候一样的迟疑……难道说",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefaultAw",
+        "string": "……看起来想起了什么不好的事情……我不知道到底是什么，但是",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "科洛维",
+        "face": "KruvDefaultAw",
+        "string": "伊安看到你依旧迷惘会觉得伤心的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "！",
         "special": "dia2"
     },
     {
