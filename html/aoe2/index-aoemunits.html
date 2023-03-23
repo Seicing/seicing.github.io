@@ -52,10 +52,47 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="33"></div>
-<table id="customers2" frame="box" width="780px">
+<a id="greButton0" href="javascript:void(0);" onclick="tipsg('greText0','greButton0','0')" style="opacity:1">
+    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/greek_zeus.png" width="48px"></a>
+<a id="norButton0" href="javascript:void(0);" onclick="tipsg('norText0','norButton0','0')" style="opacity:0.3">
+    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/norse_odin.png" width="48px"></a>
+<a id="egyButton0" href="javascript:void(0);" onclick="tipsg('egyText0','egyButton0','0')" style="opacity:0.3">
+    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/egyptian_isis2.png" width="48px"></a>
+<a id="atlButton0" href="javascript:void(0);" onclick="tipsg('atlText0','atlButton0','0')" style="opacity:0.3">
+    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/atlantis_oranos.png" width="48px"></a>
+<a id="chiButton0" href="javascript:void(0);" onclick="tipsg('chiText0','chiButton0','0')" style="opacity:0.3">
+    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/chinese_fuxi.png" width="48px"></a>
+
+
+
+
+<div id="greText0" style="text-align: left;display:block "></div>
+我是希腊人
+</div>
+<div id="norText0" style="text-align: left;display:none "></div>
+我是诺斯人
+</div>
+<div id="egyText0" style="text-align: left;display:none "></div>
+我是埃及人
+</div>
+<div id="atlText0" style="text-align: left;display:none "></div>
+
+<table style="border-collapse: collapse;float:left">
     <tr>
-        <td colspan="2" style="background-color:#F5F8FA">中国(Chinese)</td>
+        <td width="48px" height="48px" style="border: 0;">
+            <a href="https://seicing.com/html/aoem/unit/待补充.html"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/unit/待补充.webp" width="48px"></a>
     </tr>
+    <tr>
+        <td width="48px" style="border: 0;text-align: center">
+            <a href="https://seicing.com/html/aoem/unit/待补充.html" style="color:#0010ff">待补充</a>
+        </td>
+    </tr>
+</table>
+</div>
+
+
+<div id="chiText0" style="text-align: left;display:none "></div>
+<table id="customers2" frame="box" width="780px">
     <tr>
         <td style="background-color:#F5F8FA">平民单位</td>
         <td style="text-align: left">
@@ -304,7 +341,7 @@
     </tr>
 
     <tr>
-        <td style="background-color:#F5F8FA">神兽</td>
+        <td style="background-color:#F5F8FA">神话单位</td>
         <td style="text-align: left">
             <table style="border-collapse: collapse;float:left">
                 <tr>
@@ -455,23 +492,12 @@
         </td>
     </tr>
 </table>
+</div>
 
 
 
 
 
-
-<table style="border-collapse: collapse;float:left">
-    <tr>
-        <td width="48px" height="48px" style="border: 0;">
-            <a href="https://seicing.com/html/aoem/unit/待补充.html"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/unit/待补充.webp" width="48px"></a>
-    </tr>
-    <tr>
-        <td width="48px" style="border: 0;text-align: center">
-            <a href="https://seicing.com/html/aoem/unit/待补充.html" style="color:#0010ff">待补充</a>
-        </td>
-    </tr>
-</table>
                         </div>
                         <div class="izl-rmenu">
                             <a href="#">
@@ -496,5 +522,43 @@
     </div>
 </body>
 
+<script>
+    var listText = ['greText', 'norText', 'egyText', 'atlText', 'chiText']
+    var listButton = ['greButton', 'norButton', 'egyButton', 'atlButton', 'chiButton']
+
+    function tipsg(a, b, c) {
+        cleargasek(c);
+        document.getElementById(a).style.display = "block";
+        document.getElementById(b).style.opacity = 1;
+    }
+
+    function cleargasek(a) {
+        for (var i = 0; i < listText.length; i++) {
+            document.getElementById(listText[i] + a).style.display = "none";
+        }
+        for (var g = 0; g < listButton.length; g++) {
+            document.getElementById(listButton[g] + a).style.opacity = 0.3;
+        }
+    }
+
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) { return pair[1]; }
+        }
+        return (false);
+    }
+
+    window.onload = tipsp()
+
+    function tipsp() {
+        var tipsp1 = getQueryVariable("civ")
+        var tipsp2 = tipsp1 + "Button0";
+        document.getElementById(tipsp2).click();
+
+    }
+</script>
 
 </html>
