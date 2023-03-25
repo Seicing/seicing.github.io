@@ -80,11 +80,11 @@ function showPic(e, taitou) {
         "征召骑兵": "征召骑兵<br>Conscript Stable Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>马厩士兵+20%训练速度",
 
 
-        "中型堡垒士兵": "中型堡垒士兵<br>Medium Castle Soldiers<br>将军、火枪兵、战车+10%生命值，+10%攻击力，+1视野",
-        "重型堡垒士兵": "重型堡垒士兵<br>Heavy Castle Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>将军、火枪兵、战车+10%生命值，+10%攻击力，+1视野",
-        "精锐堡垒士兵": "精锐堡垒士兵<br>Champion Castle Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>将军、火枪兵、战车+10%生命值，+10%攻击力，+1视野",
-        "服役要塞士兵": "服役要塞士兵<br>Levy Stable Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>将军、火枪兵、战车+20%训练速度",
-        "征召要塞士兵": "征召要塞士兵<br>Conscript Stable Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>将军、火枪兵、战车+20%训练速度",
+        "中型城堡士兵": "中型城堡士兵<br>Medium Castle Soldiers<br>将军、火枪兵、战车+10%生命值，+10%攻击力，+1视野",
+        "重型城堡士兵": "重型城堡士兵<br>Heavy Castle Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>将军、火枪兵、战车+10%生命值，+10%攻击力，+1视野",
+        "精锐城堡士兵": "精锐城堡士兵<br>Champion Castle Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>将军、火枪兵、战车+10%生命值，+10%攻击力，+1视野",
+        "服役城堡士兵": "服役城堡士兵<br>Levy Castle Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>将军、火枪兵、战车+20%训练速度",
+        "征召城堡士兵": "征召城堡士兵<br>Conscript Castle Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>将军、火枪兵、战车+20%训练速度",
 
 
     }
