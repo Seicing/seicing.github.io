@@ -2,6 +2,7 @@ function showPic(e, taitou) {
 
     var ayanami = {
         "羊年": "羊年<br>Year of the Goat<br>根据时代，在指定的位置生成3/5/8/12只山羊",
+        "建造祝福": "建造祝福<br>Blessed Construction<br>在正在建造的建筑物触发建造祝福，消耗额外20%的资源，提高300%建造效率",
         "驯化": "驯化<br>Domestication<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>从浆果丛、家禽收集食物的效率+30%，从驯化的牲畜收集食物效率+15%",
 
 
