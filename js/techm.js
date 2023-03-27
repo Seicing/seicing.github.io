@@ -64,6 +64,7 @@ function showPic(e, taitou) {
         "繁荣": "繁荣<br>Prosperity<br>50秒内提升采金效率80%",
         "尼罗河洪水": "尼罗河洪水<br>Flood of the Nile<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动产生0.75食物",
         "法老之手": "法老之手<br>Flood of the Nile<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>15 <br>祭司可以回收圣物，同时提高他们2射程和2视野",
+        "弩炮塔": "弩炮塔<br>Ballista Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>800  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>提升塔生命值300%，攻击力50%",
 
 
 
