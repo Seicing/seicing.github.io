@@ -70,7 +70,11 @@ function showPic(e, taitou) {
         "闪电": "闪电<br>Bolt<br>杀死指定单位，或削减指定泰坦20%生命值",
         "奥林匹克血统": "奥林匹克血统<br>Olympic Parentage<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>英雄生命值+25%",
 
+        "哨兵": "哨兵<br>Sentinel<br>在目标城镇中心召唤5个哨兵攻击范围内的所有敌人",
+        "厄瑞玻斯的金库": "厄瑞玻斯的金库<br>Olympic Parentage<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动生成0.75黄金",
 
+        "诱饵": "诱饵<br>Lure<br>设置一个石头吸引周围的野生动物前来",
+        "群马之王": "群马之王<br>Lord of Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>3  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br> 骑兵视野+4",
 
 
         "法老之手": "法老之手<br>Hands of the Pharaoh<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>15 <br>祭司可以回收圣物，同时提高他们2射程和2视野",
