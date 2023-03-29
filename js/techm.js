@@ -85,6 +85,12 @@ function showPic(e, taitou) {
         "群马之王": "群马之王<br>Lord of Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>3  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br> 骑兵视野+4",
 
 
+        "冲击波": "冲击波<br>Shockwave<br>指定一块区域释放冲击波，使得敌人眩晕4秒并造成50攻城伤害，一次游戏可以释放3次，冷却时间5分钟",
+        "安全信道": "安全信道<br>Safe Passage<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br> 天空信道木材成本-25%，黄金成本-20%，同时获得15射程和5伤害的远程攻击，以及6视野",
+
+
+
+
         "法老之手": "法老之手<br>Hands of the Pharaoh<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>15 <br>祭司可以回收圣物，同时提高他们2射程和2视野",
         "弩炮塔": "弩炮塔<br>Ballista Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>800  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>提升塔生命值300%，攻击力50%",
 
