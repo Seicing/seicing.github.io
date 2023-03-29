@@ -88,6 +88,13 @@ function showPic(e, taitou) {
         "冲击波": "冲击波<br>Shockwave<br>指定一块区域释放冲击波，使得敌人眩晕4秒并造成50攻城伤害，一次游戏可以释放3次，冷却时间5分钟",
         "安全信道": "安全信道<br>Safe Passage<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br> 天空信道木材成本-25%，黄金成本-20%，同时获得15射程和5伤害的远程攻击，以及6视野",
 
+        "重构": "重构<br>Deconstruction<br>指定敌方建筑物进行拆除，把资源原封不动地返还所有者，一次游戏可以释放3次，冷却时间4分钟",
+        "时间转移": "时间转移<br>Time Shift<br>花费额外资源(5木材，防御建筑需要原价)，把自己的建筑物传送到视野内任意地方重新安放",
+        "集中": "集中<br>Focus<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>2  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>2 <br> 先知移动速度+10%，视野提升静止时间-1秒，英雄先知移动速度+20%，视野提升静止时间-1秒，攻击力+20%，生命值+15%",
+
+
+        "盖亚森林": "盖亚森林<br>Gaia Forest<br>在指定区域种植白杨树林，每根白杨树提供200木，可以释放4次",
+        "运河": "运河<br>Channels<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>40  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br> 村民、村民英雄、羊驼商队+20%移动速度",
 
 
 
