@@ -69,11 +69,17 @@ function showPic(e, taitou) {
         "大狩猎": "大狩猎<br>Great Hunt<br>增加指定范围内的动物数量",
         "孤独的流浪者": "孤独的流浪者<br>Lone Wanderer<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>175 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br>狂战士移动速度+10%",
 
+        "间谍": "间谍<br>Spy<br>获得所选敌方单位的视线",
+        "森林之眼": "森林之眼<br>Eyes in the Forest<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>2  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br>步兵视野+3",
+
+        "矮人矿脉": "矮人矿脉<br>Dwarven Mine<br>在指定位置建造一个金矿，根据时代不同黄金储存量依次为500/1000/3000/6000",
+        "野猪刺矛": "野猪刺矛<br>Pig Sticker<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>1  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>村民对动物造成5倍伤害，狩猎采集效率+20%",
+
         "闪电": "闪电<br>Bolt<br>杀死指定单位，或削减指定泰坦20%生命值",
         "奥林匹克血统": "奥林匹克血统<br>Olympic Parentage<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>英雄生命值+25%",
 
         "哨兵": "哨兵<br>Sentinel<br>在目标城镇中心召唤5个哨兵攻击范围内的所有敌人",
-        "厄瑞玻斯的金库": "厄瑞玻斯的金库<br>Olympic Parentage<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动生成0.75黄金",
+        "厄瑞玻斯的金库": "厄瑞玻斯的金库<br>Vaults of Erebus<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动生成0.75黄金",
 
         "诱饵": "诱饵<br>Lure<br>设置一个石头吸引周围的野生动物前来",
         "群马之王": "群马之王<br>Lord of Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>3  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br> 骑兵视野+4",
@@ -141,6 +147,9 @@ function showPic(e, taitou) {
         "服役长屋士兵": "服役长屋士兵<br>Levy Longhouse<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>长屋士兵+20%训练速度",
         "征召长屋士兵": "征召长屋士兵<br>Conscript Longhouse<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>长屋士兵+20%训练速度",
 
+        "天神之锤": "天神之锤<br>Hammer of the Gods<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>作战单位+10%攻击力",
+        "陨铁铠甲": "陨铁铠甲<br>Meteoric Iron Mail<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>步兵、骑兵和英雄-10%近战脆弱率",
+        "龙鳞护盾": "龙鳞护盾<br>Dragonscale Shields<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>步兵、骑兵和英雄-10%远程脆弱率",
 
         "中型军事学院士兵": "中型军事学院士兵<br>Medium War Academy Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>军事学院士兵+10%生命值，+10%攻击力，+1视野",
         "重型军事学院士兵": "重型军事学院士兵<br>Heavy War Academy Soldiers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>军事学院士兵+15%生命值，+10%攻击力，+1视野",
