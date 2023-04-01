@@ -3,7 +3,556 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
+    <title>肥猫的秘密基地rset="UTF-8" />
+
+<!--Title-->
+
+<!--Content-->
+<div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div style="float:left">
+    <button type="button" onclick="unfreeze()">解冻所有GIF（谨慎点击，流量消耗大）</button>
+</div>
+<br><br>
+
+<div style="float:left">
+    <H1>
+        <a id="幻想之境"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/想像力.jpg">幻想之境</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
+    天马行空的想象力是缔造者的基本素养。 缔造者的想象力越丰富， 能力越强 <br>
+    学习该技能后， 增加独立攻击力； 装备扫把时， 额外增加施放速度和移动速度
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="具象强化"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/系列强化.jpg">具象强化</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    对各领域的力量进行深入研究， 可以强化各系列技能的力量
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="增幅"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/增幅.jpg">时空增幅</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    增幅时空裂缝的力量， 可以使用更强大的时空之力 <br>
+    增加基本攻击力、 技能攻击力和魔法暴击率。 队友可以对基本攻击与技能命中的敌人造成更多伤害 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/buff.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="烈焰"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/烈焰.jpg">烈炎</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动烈炎系列的从属技能 <br>
+    点击鼠标左键可以施放[烈火燎原]， 鼠标右键则可以施放[炽炎星陨]
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="烈火燎原"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/烈火燎原.jpg">烈火燎原</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    从地表生成火焰攻击敌人。 按住左键的状态下拖动鼠标， 即可根据鼠标移动轨迹生成火墙 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/火左.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="炽炎星陨"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/炽炎星陨.jpg">炽炎星陨</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    召唤燃烧烈焰的陨石攻击敌人。 陨石将掉落在鼠标点击的位置 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/火右.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="寒冰"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/寒冰.jpg">寒冰</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动寒冰系列的从属技能 <br>
+    点击鼠标左键可以施放[冰霜之球]， 鼠标右键则可以施放[冰天震地] <br> <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="冰霜之球"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/冰霜之球.jpg">冰霜之球</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成冰霜之球滚向敌人， 并使其受到伤害。 冰球将滚向鼠标点击的位置 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/冰左.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="冰天震地"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/冰天震地.jpg">冰天震地</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成巨大的冰盘砸向敌人。 冰盘将砸落在鼠标点击的位置 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/冰右.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="控制"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/控制.jpg">控制</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动控制系列的从属技能 <br>
+    点击鼠标左键可以施放[树之屏障]， 鼠标右键则可以施放[时空之手] <br> <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="树之屏障"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/树之屏障.jpg">树之屏障</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    利用树木制作屏障， 限制敌人的活动范围。 按住左键的状态下拖动鼠标， 即可根据鼠标移动轨迹生成屏障 <br>
+    敌人进入屏障领域时， 会被藤条捆住， 效果持续一段时间 <br>
+    屏障的范围越密集， 捆住敌人的时间越久 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/木左.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="时空之手"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/时空之手.jpg">时空之手</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    抓取敌人后抛出。 点击鼠标右键时， 一定范围内的敌人将被吸附到光标周围， 接着可以拖动鼠标将敌人抛向指定位置 <br>
+    可以同时抓取被抓敌人周围的敌人 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/木右.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="守护"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/守护.jpg">守护</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动守护系列的从属技能 <br>
+    点击鼠标左键可以施放[烈焰飓风]， 鼠标右键则可以施放[极冰护盾]
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="烈焰飓风"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/烈焰飓风.jpg">烈焰飓风</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    以自身为中心， 生成烈焰飓风 <br>
+    技能施放过程中按移动键可以自由移动。 按跳跃键时， 可以强制中断该技能 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/守护左.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="极冰护盾"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/极冰护盾.jpg">极冰护盾</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成极冰护盾， 可抵挡任何攻击， 并且对敌人造成伤害的同时把敌人推向护盾外 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/守护右.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="风暴"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/风暴.jpg">风暴</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动风暴系列的从属技能 <br>
+    点击鼠标左键可以施放[超能旋风波]， 鼠标右键则可以施放[风暴漩涡]
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="超能旋风波"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/超能旋风波.jpg">超能旋风波</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    聚集超能旋风的力量， 向目标方向快速发射旋风波 <br>
+    按住左键的状态下拖动鼠标， 即可向指定方向发射旋风波 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/风左.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="风暴漩涡"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/风暴漩涡.jpg">风暴漩涡</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    召唤风暴， 并使漩涡内的敌人受到伤害， 同时还可将敌人吸附到风暴中心 <br>
+    [风暴漩涡]每次提升Lv时， 风暴范围变大 <br>
+    连续点击鼠标， 可持续召唤风暴 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/风右.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="自我觉醒"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/自觉.jpg">自我觉醒</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    领悟自我觉醒的力量， 可以使用强大的时空之力 <br>
+    第一次和第二次自我觉醒时， 增加攻击速度、 移动速度、 施放速度和独立攻击力 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="洞悉"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/理解.jpg">洞悉</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    深刻洞悉时空之力， 可以制造强大的异次元裂缝 <br>
+    学习该技能后， 增加基本攻击力和技能攻击力， 并增加烈炎、 寒冰、 守护、 风暴系列的能量 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="终末狂想"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/消灭.jpg">终末狂想</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动终末狂想系列的从属技能 <br>
+    点击鼠标左键或右键可以施放[末日虫洞] <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="末日虫洞"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/虫洞.jpg">末日虫洞</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成虫洞， 连接阿拉德最后的时空 <br>
+    生成的虫洞中坠落阿拉德行星碎片， 同时虫洞通道会逐渐压缩 <br>
+    虫洞通道压缩到极限时力量爆发， 引发剧烈爆炸 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/虫洞.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="构造"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/构造.jpg">构造</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动构造系列的从属技能 <br>
+    点击鼠标左键或右键可以施放[冰雪降临] <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="冰雪降临"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/冰雪降临.jpg">冰雪降临</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    重现冰河时代的酷寒地带， 对领域内的敌人进行多段攻击， 并使其进入减速状态 <br>
+    按住鼠标左键或右键的状态下进行拖动， 即可手动设置冰河地带的范围 <br>
+    冰河地带的范围越小， 攻击力越高 <br>
+    冰河地带持续期间无法设置其他冰河地带 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/冰河时代.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="同调"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/同调.jpg">同调</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动同调系列的从属技能 <br>
+    点击鼠标左键可以激活时间妖精， 鼠标右键则可以激活[时空链接] <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="时空链接"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/时空链接.jpg">时空链接</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    在空地点击鼠标左键可以召唤时间妖精“卡巴拉”实现连接 <br>
+    连接后， 点击右键会跟被连接的角色以红色实线连接。 红色实线碰到敌人时， 会对敌人造成多段攻击伤害 <br>
+    也可以选择队员， 但在没有卡巴拉的情况下无法设置连接 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/连接.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="创世之力"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/天地创造.jpg">创世之力</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    缔造者完全恢复时空之力， 获得创世的力量 <br>
+    学习该技能后， 增加基本攻击力和技能攻击力， 并增加烈炎、 寒冰、 守护、 风暴系列的能量 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="虚空"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/虚空.jpg">虚空</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动虚空系列的从属技能 <br>
+    点击鼠标左键或右键可以施放[时空禁制] <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="时空禁制"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/时空禁制.jpg">时空禁制</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    通过时间妖精‘卡巴拉’之力， 使时间加速， 限制周围目标行动 <br>
+    施放技能后， 在鼠标左键点击的位置出现时间妖精， 对敌人施加多段攻击的同时， 使敌人停止移动， 最后随着爆炸消失 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/时光前沿.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="缔造"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/缔造.jpg">缔造</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动缔造系列的从属技能 <br>
+    点击鼠标左键或右键可以施放[创世] <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/创造.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="创世"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/创世.jpg">创世</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    召唤蕴含创世之力的卡巴拉， 强化烈炎、 寒冰、 风暴系列技能。 再次施放[缔造]可以在前方召唤生命之树， 生命之树上生长着蕴含烈炎、 寒冰、 风暴之力的元素果实 <br>
+    元素果实可以通过鼠标拖拽或右键点击希望引起爆炸的位置对敌人造成伤害 <br>
+    在树上时， 按跳跃键可以引爆全部果实 <br>
+    爆炸攻击力与树上剩下的果实数量成正比 <br>
+    烈炎和寒冰元素果实爆炸时受武器属性的影响 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/创造空间.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="90"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/840.png">天工开物</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="951"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/842.png">创生</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="952"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/844.png">创世之光</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/95.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="1001"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/846.png">命运</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="1002"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/848.png">时之终末 : 归烬</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/缔造者/100.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="转化"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/转化.jpg">转化</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    激活后， 可以发动转化系列的从属技能 <br>
+    点击鼠标左键或右键可以施放[魔法弹珠] <br> <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="魔法弹珠"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/外传/缔造者/魔法弹珠.jpg">魔法弹珠</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    召唤空气墙，并且在里面发射魔法弹珠，魔法弹珠会在空气墙之间来回跳动对敌人造成伤害
+    <br><br><br>
+    <br>
+    <br><br>
+
+</div>
+
+<!--List-->
+<a href="https://seicing.com/html/dnfclass/缔造者.html"><b>回到职业页面</b></a><br><br>
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>补助技能</b> </span>
+    </div>
+</div>
+<a href="#幻想之境">幻想之境</a><br>
+<a href="#具象强化">具象强化</a><br>
+<a href="#增幅">时空增幅</a><br>
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>战斗技能</b> </span>
+    </div>
+</div>
+<a href="#烈焰">烈炎</a><br>
+<a href="#烈火燎原">烈火燎原</a><br>
+<a href="#炽炎星陨">炽炎星陨</a><br>
+<a href="#寒冰">寒冰</a><br>
+<a href="#冰霜之球">冰霜之球</a><br>
+<a href="#冰天震地">冰天震地</a><br>
+<a href="#控制">控制</a><br>
+<a href="#树之屏障">树之屏障</a><br>
+<a href="#时空之手">时空之手</a><br>
+<a href="#守护">守护</a><br>
+<a href="#烈焰飓风">烈焰飓风</a><br>
+<a href="#极冰护盾">极冰护盾</a><br>
+<a href="#风暴">风暴</a><br>
+<a href="#超能旋风波">超能旋风波</a><br>
+<a href="#风暴漩涡">风暴漩涡</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>一次自觉技能</b> </span>
+    </div>
+</div>
+<a href="#自我觉醒">自我觉醒</a><br>
+<a href="#洞悉">洞悉</a><br>
+<a href="#终末狂想">终末狂想</a><br>
+<a href="#末日虫洞">末日虫洞</a><br>
+<a href="#构造">构造</a><br>
+<a href="#冰雪降临">冰雪降临</a><br>
+<a href="#同调">同调</a><br>
+<a href="#时空链接">时空链接</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>二次自觉技能</b> </span>
+    </div>
+</div>
+<a href="#创世之力">创世之力</a><br>
+<a href="#虚空">虚空</a><br>
+<a href="#时空禁制">时空禁制</a><br>
+<a href="#缔造">缔造</a><br>
+<a href="#创世">创世</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>三次自觉技能</b> </span>
+    </div>
+</div>
+<a href="#90">天工开物</a><br>
+<a href="#951">创生</a><br>
+<a href="#952">创世之光</a><br>
+<a href="#1001">命运</a><br>
+<a href="#1002">时之终末 : 归烬</a><br>
+
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>被删除的技能</b> </span>
+    </div>
+</div>
+<a href="#转化">转化</a><br>
+<a href="#魔法弹珠">魔法弹珠</a><br>
+
+<!--Bottom-->
+<a href="https://seicing.com/html/dnfclass/缔造者.html"><b>回到职业页面</b></a>
+
+<!--Head-->
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--Tail-->
+<script language="javascript" src="https://seicing.com/js/skill.js"></script>
+<script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script language="javascript" src="https://seicing.com/js/imgauto.js"></scri</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />

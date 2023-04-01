@@ -3,7 +3,769 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
+    <title>肥猫的秘密基地set="UTF-8" />
+
+<!--Title-->
+
+<!--Content-->
+<div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div style="float:left">
+    <button type="button" onclick="unfreeze()">解冻所有GIF（谨慎点击，流量消耗大）</button>
+</div>
+<br><br>
+
+<div style="float:left">
+
+    <H1>
+        <a id="召唤兽强化"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/召唤兽强化.jpg">召唤兽强化</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 增加召唤师的魔法暴击率， 增强自身周围所有召唤兽的攻击力、 防御力和命中率，
+    效果仅作用于自身召唤的召唤兽 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="心灵感应"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/心灵感应.jpg">心灵感应</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 增加召唤师的基本攻击力和技能攻击力。 通过与契约召唤兽的心灵感应， 可以对召唤兽下达更多命令
+    <br> 随着技能Lv提升， 增加可以下达命令的召唤兽种类 <br> 追加技能不受[魔法秀]减少冷却时间效果的影响 <br> Lv1 - 哥布林赫德尔 <br> Lv2 - 弗利特 <br> Lv3 - 黑骑士桑德尔 <br>
+    Lv4 - 魔界花袄索 <br> Lv5 - 路易丝大姐 <br> Lv6 - 牛头王库鲁塔 <br>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="伺机而动"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/伺机而动.jpg">伺机而动</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 施放后， 可以停止召唤兽的攻击。 [伺机而动]状态下， 可使用[蚀月附灵]和[心灵感应]攻击
+    <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/战斗禁止.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="解除召唤"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/解除召唤.jpg">召唤解除</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 解除画面内自身的所有召唤 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+
+    <H1>
+        <a id="召唤兽跟随"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/召唤兽跟随.jpg">召唤兽跟随</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 使召唤兽进入跟随状态。 此状态下， 可以增加召唤者和召唤兽的物防、 魔防和体力 <br>
+
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="绝对支配"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/绝对支配.jpg">绝对支配</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 强化对召唤兽的支配力， 改变[鞭挞]的技能形态 <br>
+    变形的鞭子可以对更大范围内的召唤兽造成影响， 同时增加[鞭挞]的冷却时间和Buff持续时间 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/鞭子.gif"></p>
+
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="魔力印记"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/魔力印记.jpg">魔力印记</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 向敌人投掷魔力胶囊使敌人进入标靶状态， 并以一定的时间间隔给予敌人魔法伤害<br>
+    在标靶状态敌人附近的召唤兽， 会集中攻击此标靶<br> 若其他敌人变成标靶， 则之前的标靶状态会消失<br> 在决斗场中， 召唤兽识别标靶的距离减少<br><br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/丸子.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+
+
+
+    <H1>
+        <a id="召唤兽狂化"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/召唤兽狂化.jpg">召唤兽狂化</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 在一定时间内， 提升召唤师的基本攻击力和技能攻击力； 并使召唤兽暴走，
+    提升召唤兽的攻击速度和移动速度 <br> 暴走效果也适用于技能持续期间新召唤的召唤兽 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/狂化.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="召唤兽传送"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/召唤兽传送.jpg">召唤兽传送</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 可将地图内自己所有的召唤兽传送到身边 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="束缚印记"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/束缚印记.jpg">束缚印记</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 向前方投掷装有粘性液体的烧瓶 <br> 烧瓶爆炸， 对敌人造成魔法伤害， 并使其进入束缚状态
+    <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/nianhu.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="契约召唤 : 弗利特"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤弗利特.jpg">契约召唤 : 弗利特</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出弗利特， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br> 召唤兽的攻击方式
+    : 撕咬 <br> 若技能达到Lv5以上， 则附加 : 发射火焰球 <br> 若技能达到Lv10以上， 则附加 : 发射火焰龙息 <br> 若掌握[心灵感应]， 则附加 : 龙威 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/小火龙.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="契约召唤 : 桑德尔"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤桑德尔.jpg">契约召唤 : 桑德尔</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出黑骑士桑德尔， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    召唤兽的攻击方式 : 挥刀、 防御、 直刺 <br> 若技能达Lv5以上， 则附加 : 恢复自身HP、 增加异常状态抗性、 庇护光环 <br> 若掌握[心灵感应]， 则附加 : 剑气攻击 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/黑骑士.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="契约召唤 : 袄索"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤袄索.jpg">契约召唤 : 袄索</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出魔界花袄索， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽会消失 <br>
+    召唤兽的攻击方式 : 近身藤刺攻击、 远程藤根攻击 <br> 若技能达Lv10以上， 则附加 : 毒虫和混乱毒气 <br> 若掌握[心灵感应]， 则附加 : 穿刺 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/袄索.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="契约召唤 : 路易斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤路易斯.jpg">契约召唤 : 路易丝</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出路易丝姐姐， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    召唤兽的攻击方式 : 杖攻击、 发射冰冻针刺、 发射火球、 召唤兽消失时或被杀时发射陨石 <br> 若技能达Lv10以上， 则附加 : 召唤冰柱 <br> 若掌握[心灵感应]， 则附加 : 陨石冲击 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/露易丝.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="契约召唤 : 牛头王库鲁塔"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤牛头王库鲁塔.jpg">契约召唤 : 牛头王库鲁塔</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出牛头王库鲁塔， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    召唤兽攻击方式 : 横劈 <br> 若技能达Lv5以上， 则附加 : 愤怒突进 <br> 若技能达Lv10以上， 则附加 : 咆哮 <br> 若掌握[心灵感应]， 则附加 : 狂暴愤怒 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/牛头王.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="召唤下级精灵"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/召唤下级精灵.jpg">召唤下级精灵</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤师的召唤能力得到提升， 使冰奈斯、 亚德炎、 雷沃斯、 瑟冥特克的召唤变得更容易 <br>
+    施放技能时， 可以同时召唤4只下级精灵 <br> 若超过个体数上限或技能处于冷却时间， 则无法召唤下级精灵 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/下级精灵召唤.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="精灵召唤 : 亚德炎"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤亚德炎.jpg">精灵召唤 : 亚德炎</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 从周围的火属性物体中召唤出火之精灵亚德炎， 使其协助自身攻击敌人 <br> 若召唤者死亡，
+    则召唤出的精灵会消失 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/亚德炎.gif"></p>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="精灵召唤 : 冰奈斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤冰奈斯.jpg">精灵召唤 : 冰奈斯</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 从周围的冰属性物体中召唤出冰之精灵冰奈斯， 使其协助自身攻击敌人 <br>
+    召唤出的冰奈斯可以周期性恢复友军的HP。 (在决斗场中无效) <br> 若召唤者死亡， 则召唤出的精灵会消失 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/冰奈斯.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="精灵召唤 : 瑟冥特克"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤瑟冥特克.jpg">精灵召唤 : 瑟冥特克</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 从周围的暗属性物体中召唤出暗之精灵瑟冥特克， 使其协助自身攻击敌人 <br> 若召唤者死亡，
+    则召唤出的精灵会消失 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/瑟冥特克.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 雷沃斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤雷沃斯.jpg">精灵召唤 : 雷沃斯</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 从周围的光属性物体中召唤出光之精灵雷沃斯， 使其协助自身攻击敌人 <br> 若召唤者死亡，
+    则召唤出的精灵会消失 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/雷沃斯.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵献祭"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵献祭.jpg">精灵献祭</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 在前方生成一个魔法阵， 献祭魔法阵内自己召唤出的下级精灵(只限于亚德炎、 冰奈斯、 瑟冥特克、
+    雷沃斯) <br> 长按技能键， 可以将地图上的所有下级精灵传送到召唤师面前献祭 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/献祭.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 亡魂默克尔"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤亡魂默克尔.jpg">精灵召唤 : 亡魂默克尔</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出高级精灵亡魂默克尔， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    亡魂默克尔的攻击命中敌人时， 有一定几率出现暗影爆炸， 并使敌人进入失明状态； 当亡魂默克尔死亡时， 会发生爆炸并给予周围敌人暗属性魔法伤害， 而且有一定几率使敌人进入失明状态 <br> 召唤兽的攻击方式 : 暗黑镰刀斩击 <br>
+    若技能达到Lv5以上， 则附加 : 暗黑镰刀下斩 <br> 若技能达到Lv10以上， 则附加 : 暗黑雾 <br> 若掌握[蚀月附灵]， 则附加 : 黑雾 <br> 决斗场中不适用暗黑雾 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/黑仔.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 极光格雷林"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤极光格雷林.jpg">精灵召唤 : 极光格雷林</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出高级精灵极光格雷林， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    极光格雷林的攻击命中敌人时， 有一定几率使敌人进入感电状态； 当极光格雷林死亡时， 会发生爆炸并给予周围敌人伤害， 而且有一定几率使敌人进入感电状态 <br> 召唤兽的攻击方式 : 发射闪电 <br> 若技能达到Lv5以上， 则附加
+    : 闪电5连发 <br> 若技能达到Lv10以上， 则附加 : 闪电盾 <br> 若掌握[蚀月附灵]， 则附加 : 落雷 <br> 决斗场中不适用闪电盾 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/极光.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 冰影阿奎利斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤冰影阿奎利斯.jpg">精灵召唤 : 冰影阿奎利斯</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出高级精灵冰影阿奎利斯， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    冰影阿奎利斯冰息攻击命中敌人时， 有一定几率使敌人进入冰冻状态； 当冰影阿奎利斯死亡时， 会发生爆炸并给予周围敌人伤害， 而且有一定几率使敌人进入冰冻状态 <br> 召唤兽的攻击方式 : 落冰攻击 <br> 若技能达到Lv5以上，
+    则附加 : 冰息攻击 <br> 若技能达到Lv10以上， 则附加 : 冰导弹攻击 <br> 若掌握[蚀月附灵]， 则附加 : 七重冰导弹 <br> 决斗场中不适用冰导弹攻击
+    <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/冰影.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 火焰赫瑞克"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤火焰赫瑞克.jpg">精灵召唤 : 火焰赫瑞克</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出高级精灵火焰赫瑞克， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    火焰赫瑞克的攻击命中敌人时， 有一定几率出现火属性爆炸； 当火焰赫瑞克死亡时， 会发生爆炸并给予周围敌人火属性魔法伤害， 而且有一定几率使敌人进入灼伤状态 <br> 召唤兽的攻击方式 : 火焰剑上斩 <br> 若技能达到Lv5以上，
+    则附加 : 火焰下重斩 <br> 若掌握[蚀月附灵]， 则附加 : 火焰爆剑术 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/火男.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="精灵召唤 : 精灵王伊伽贝拉"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤精灵王伊伽贝拉.jpg">精灵召唤 : 精灵王伊伽贝拉</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出精灵王伊伽贝拉， 使其协助自身攻击敌人 <br> 若召唤者死亡， 则召唤出的精灵会消失
+    <br> 召唤兽的攻击方式 : 对敌人发出近身攻击以及波刃攻击， 友军精灵数量越多， 则攻击力越高， 且能施放强化友军精灵的光环 <br> 若技能达Lv5以上， 则附加 : 闪电7连击 <br> 若技能达Lv10以上， 则附加 :
+    发射全属性激光 <br> 若掌握[蚀月附灵]， 则附加 : 发射超高密度镭射光 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/精灵王.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="灵魂支配"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/灵魂支配.jpg">灵魂支配</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 提升自身的召唤能力和对召唤兽的支配能力， 增加技能攻击力和施放速度 <br>
+
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="契约召唤 : 征服者卡西利亚斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤征服者卡西利亚斯.jpg">契约召唤 : 征服者卡西利亚斯</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出征服者卡西利亚斯， 使其协助自身攻击敌人； 召唤卡西利亚斯时， 会追加消减召唤者的HP，
+    若召唤者死亡， 则召唤兽消失 <br> 卡西利亚斯出现时， 可以将周围的敌人震倒； 当卡西利亚斯死亡或消失时， 会发动必杀剑 · 狱冥天地； 若再次输入技能键， 则卡西利亚斯会发动必杀剑 · 千鬼杀 <br> 必杀剑 ·
+    千鬼杀在卡西利亚斯存在期间只能使用1次 <br> 卡西利亚斯的攻击方式 : 夜冥流 · 不动剑(普通单手拔刀)、 夜冥流 · 疾风剑(广域单手拔刀)、 夜冥流 · 残心剑(前冲双手拔刀)、
+    必杀剑 · 千鬼杀(剑乱舞)、 必杀剑 · 狱冥天地(卡西利亚斯消失时掉落的剑阵) <br> Lv3 : 增加卡西利亚斯的Lv， 并减少施放后的僵直时间 <br> Lv6 : 增加[必杀剑 · 千鬼杀]的攻击力 <br> Lv9 :
+    增加[必杀剑 · 狱冥天地]的攻击力 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/四叔.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="必杀剑·千鬼杀"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/必杀剑千鬼杀.png">必杀剑·千鬼杀</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="支配之环"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/支配之环.jpg">支配之环</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤支配所有召唤兽的禁断人造物--支配之环 <br>
+    由‘第二个约定’广泛传播的支配之环，能赋予召唤师无需召唤仪式即可使召唤兽降临现界的能力 <br> 施放技能时， 可召唤的次数有上限， 支配之环存在持续时间 <br> 拥有强大力量的征服者卡西利亚斯和逆月者拉莫斯不能不经过召唤仪式、
+    依靠支配之环召唤 <br> 施放技能后， 按跳跃键可以中断技能 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/环.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+
+    <H1>
+        <a id="精灵召唤 : 融合精灵海伊伦"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤融合精灵海伊伦.jpg">精灵召唤 : 融合精灵海伊伦</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤融合四种属性的精灵海伊伦； 若召唤者死亡， 则召唤兽消失 <br>
+    海伊伦是无攻击能力的精灵召唤兽， 跟随召唤师， 施加增益效果 <br> [增益效果] <br> 增加队友的属性伤害量 <br> 增加召唤师自身和周围队友的攻击速度、 移动速度和施放速度 <br> 施放[伺机而动]时，
+    所有召唤兽进入无敌状态 <br> 召唤师施放[受身蹲伏]时， 对召唤兽施加无敌Buff， 效果持续一定时间 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/融合精灵.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="咒令 : 愤怒咆哮"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/咒令愤怒咆哮.jpg">咒令 : 愤怒咆哮</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 引爆牛头王库鲁塔的愤怒 <br> 施放技能时， 库鲁塔移动到召唤师前方， 大声咆哮，
+    使敌人进入僵直状态 <br> 然后用斧头快速下劈4次， 造成魔法伤害， 最后强力下劈， 发动猛烈一击 <br> 未召唤牛头王库鲁塔的状态下无法施放 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/牛王连打.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="蚀月附灵"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/蚀月附灵.jpg">蚀月附灵</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 增加召唤师的技能攻击力， 并将蚀附着在除征服者卡西利亚斯之外的二觉前的召唤兽的身上，
+    减少召唤技能的冷却时间和召唤兽的持续时间 <br> 学习该技能后， 若再次按下技能键， 可将精灵召唤兽传送到召唤师的前方并发动[蚀月附灵]技能 <br> 如果按住向下方向键并施放追加技能， 可以将召唤兽传送到与召唤师重叠的位置
+    <br> - [适用召唤兽] - <br> [精灵召唤 : 伊伽贝拉] : 发射超高密度镭射光 <br> [精灵召唤 : 冰影阿奎利斯] : 发射七重冰导弹 <br> [精灵召唤
+    : 火焰赫瑞克] : 施展火焰爆剑术攻击前方 <br> [精灵召唤 : 极光格雷林] : 施放天雷 <br> [精灵召唤 : 亡魂默克尔] : 召唤黑雾 <br> [逆月者拉莫斯] : 蚀旋 - 将身体变形为蚀的形态，
+    将敌人聚到一处， 给予敌人伤害 <br>
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="黑月之噬"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/黑月之噬.jpg">黑月之噬</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 将蚀的能量聚集在召唤师身后生成一个实体化的黑色月亮 <br> 黑月会跟所有召唤兽产生链接，
+    吸收召唤兽所受的伤害 <br> 每次[传说召唤 : 月蚀之影]附体的召唤兽攻击敌人时， 黑月会恢复HP <br> 黑月吸收的伤害超过上限后会引发爆炸， 并使敌人进入失明状态 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/月.gif"></p>
+
+
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="传说召唤 : 月蚀之影"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/传说召唤月蚀之影.jpg">传说召唤 : 月蚀之影</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 在施放者前方召唤在月之背影中栖息的蚀 <br> 蚀在阴影上引发爆炸， 造成魔法伤害 <br>
+    <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/月影.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="传说召唤 : 逆月者拉莫斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/传说召唤逆月者拉莫斯.jpg">传说召唤 : 逆月者拉莫斯</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤曾经封印在月亮上的古代暗黑女战士拉莫斯并肩战斗 <br>
+    拉莫斯会吸收周围己方召唤兽的力量并强化自身， 同时能够自由变换蚀的形态攻击敌人 <br> 基本技能 : 蚀握、 蚀击 <br> 若掌握[蚀月附灵]， 则附加 : 蚀旋 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/拉莫斯.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="咒令 : 逆月之蚀"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/咒令逆月之蚀.jpg">咒令 : 逆月之蚀</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 唤醒古代暗黑女战士拉莫斯“蚀”的形态， 逆召唤为月亮， 然后坠落到地面 <br>
+    落下的“蚀”将附着在攻击范围内的敌人身上， 造成多段魔法伤害 <br> 一定时间后， “蚀”回归月亮， 引发月蚀， 对敌人造成多段魔法伤害， 并变回拉莫斯的形态 <br> 随后， 拉莫斯快速下落， 进行强力向下劈击攻击 <br>
+    若范围内没有敌人， 则直接发动最后一击 <br> 未召唤拉莫斯的状态下无法施放 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/蚀落.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="逆月"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/逆月.png">逆月</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    领悟到魔月的意念，完美的缔结契约掌控力量 <br>
+    增加除[鞭挞]外的知源·召唤师基本攻击力和转职技能攻击力，赋予部分技能被蚀蚕食后的附加效果 <br>
+    鞭挞的附加效果需在学习[绝对支配]后生效 <br>
+    鞭挞 <br>
+    - 施放时， 挥动由蚀形成的鞭子 <br>
+    蚀附着在鞭挞范围内的召唤兽身上时，额外增加攻击、移动速度 <br>
+    蚀附着在敌人身上时，蚕食敌人的身体，造成伤害 <br>
+    契约召唤 : 袄索 <br>
+    - 袄索被蚀蚕食，外形和攻击模式产生变化 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/月蚀之鞭.gif"></p>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/月蚀魔界花.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="至高精灵王"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/至高精灵王.png">至高精灵王</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    将精灵王伊伽贝拉召唤至召唤师前方，注入蚀使其瞬间强化 <br>
+    被蚀影响的伊伽贝拉发射由蚀和4种属性形成的多束超高密度激光，向地面喷射，伊伽贝拉和召唤师一起将蚀引爆后恢复原来的形态 <br>
+    只能在召唤精灵王：伊伽贝拉的状态下使用 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/最高精灵王.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="暴食之月"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/暴食之月.png">魔月·德拉里昂</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    利用蚀构成巨大的召唤阵，移动至魔界之月德拉里昂后，将敌人逆向召唤至月亮的正面 <br>
+    随后，蚀之主、至强精神体——魔月·德拉里昂现身 <br>
+    德拉里昂喷涌蚀之波涛湮灭敌人，并张开巨大之口吞噬魔界之月 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/召唤三觉.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="召唤兽净化"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/召唤兽净化.jpg">召唤兽净化</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 净化一定范围内召唤兽的异常状态(限自身召唤的)， 并使它们在一定时间内不再进入异常状态 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="献祭攻击 : 雷沃斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/献祭攻击雷沃斯.jpg">献祭攻击 : 雷沃斯</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 使用[精灵献祭]献祭雷沃斯时， 雷沃斯会发动闪电攻击周围的敌人，
+    而且[精灵献祭]时的降低属性抗性效果有效 <br> 该技能每提升一定Lv， 则可以增加[精灵召唤 : 雷沃斯]的召唤兽数量 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="献祭攻击 : 冰奈斯"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/献祭攻击冰奈斯.jpg">献祭攻击 : 冰奈斯</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 使用[精灵献祭]献祭冰奈斯时， 冰奈斯会发动可以向8个方向攻击的冰柱攻击周围的敌人，
+    而且[精灵献祭]时的降低属性抗性效果有效 <br> 该技能每提升一定Lv， 则可以增加[精灵召唤 : 冰奈斯]的召唤兽数量 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="献祭攻击 : 瑟冥特克"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/献祭攻击瑟冥特克.jpg">献祭攻击 : 瑟冥特克</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 使用[精灵献祭]献祭瑟冥特克时， 瑟冥特克会发动暗影爆炸攻击周围的敌人，
+    而且[精灵献祭]时的降低属性抗性效果有效 <br> 该技能每提升一定Lv， 则可以增加[精灵召唤 : 瑟冥特克]的召唤兽数量 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="献祭攻击 : 亚德炎"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/献祭攻击亚德炎.jpg">献祭攻击 : 亚德炎</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 使用[精灵献祭]献祭亚德炎时， 亚德炎会发动火焰爆炸攻击周围的敌人，
+    而且[精灵献祭]时的降低属性抗性效果有效 <br> 该技能每提升一定Lv， 则可以增加[精灵召唤 : 亚德炎]的召唤兽数量 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 拉特利亚"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤拉特利亚.jpg">精灵召唤 : 拉特利亚</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 可以召唤出中级冰之精灵拉特利亚， 使其协助自身攻击敌人。
+    召唤出的精灵会围绕在召唤者周围一定范围内 <br> 精灵被召唤时会施放冰属性强化、 冰属性抗性光环， 并可以增加所有召唤兽的独立攻击力 <br> 每次只能召唤1个各属性的中级精灵， 最多可以召唤2个，
+    而且它们与下级精灵一起共享每张地图的精灵召唤数量上限 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/冰中.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 瑟利斯特"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤瑟利斯特.jpg">精灵召唤 : 瑟利斯特</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 可以召唤出中级火之精灵瑟利斯特， 使其协助自身攻击敌人。
+    召唤出的精灵会围绕在召唤者周围一定范围内 <br> 精灵被召唤时会施放火属性强化、 火属性抗性光环， 并增加我方队员的攻击力 <br> 瑟利斯特有一定几率对敌人进行追加攻击 <br> 每次只能召唤1个各属性的中级精灵，
+    最多可以召唤2个， 而且它们与下级精灵一起共享每张地图的精灵召唤数量上限 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/中火.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 希德"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤希德.jpg">精灵召唤 : 希德</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 可以召唤出中级暗之精灵希德， 使其协助自身攻击敌人。 召唤出的精灵会围绕在召唤者周围一定范围内
+    <br> 精灵被召唤时会施放暗属性强化、 暗属性抗性光环， 并有一定几率使周围所有敌人进入失明状态 <br> 每次只能召唤1个各属性的中级精灵， 最多可以召唤2个， 而且它们与下级精灵一起共享每张地图的精灵召唤数量上限 <br>
+    <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/中暗.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="精灵召唤 : 艾丽西亚"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/精灵召唤艾丽西亚.jpg">精灵召唤 : 艾丽西娅</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 可以召唤出中级光之精灵艾丽西娅， 使其协助自身攻击敌人。
+    召唤出的精灵会围绕在召唤者周围一定范围内 <br> 精灵被召唤时会施放光属性强化、 光属性抗性光环， 并增加我军的移动速度 <br> 每次只能召唤1个各属性的中级精灵， 最多可以召唤2个，
+    而且它们与下级精灵一起共享每张地图的精灵召唤数量上限 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/光中.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="契约召唤 : 愤怒的桑德尔"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师女/召唤师/契约召唤愤怒的桑德尔.jpg">契约召唤 : 愤怒的桑德尔</span><span
+                style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 召唤出战斗黑骑士桑德尔， 使其协助自身攻击敌人； 若召唤者死亡， 则召唤兽消失 <br>
+    召唤兽攻击方式 : 挥刀、 直刺、 蓄气直刺、 挥盾、 守护光环、 我军召唤兽好战性增加光环、 挑拨光环、 加速Buff和狂暴化 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/召唤师/大萨德尔.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+</div>
+
+<!--List-->
+<a href="https://seicing.com/html/dnfclass/召唤师.html"><b>回到职业页面</b></a><br><br>
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>补助技能</b> </span>
+    </div>
+</div>
+<a href="#召唤兽强化">召唤兽强化</a><br>
+<a href="#心灵感应">心灵感应</a><br>
+<a href="#伺机而动">伺机而动</a><br>
+<a href="#解除召唤">召唤解除</a><br>
+<a href="#召唤兽跟随">召唤兽跟随</a><br>
+<a href="#绝对支配">绝对支配</a><br>
+<a href="#魔力印记">魔力印记</a><br>
+<a href="#召唤兽狂化">召唤兽狂化</a><br>
+<a href="#召唤兽传送">召唤兽传送</a><br>
+<a href="#束缚印记">束缚印记</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>契约召唤系技能</b> </span>
+    </div>
+</div>
+<a href="#契约召唤 : 弗利特">契约召唤 : 弗利特</a><br>
+<a href="#契约召唤 : 桑德尔">契约召唤 : 桑德尔</a><br>
+<a href="#契约召唤 : 袄索">契约召唤 : 袄索</a><br>
+<a href="#契约召唤 : 路易斯">契约召唤 : 路易丝</a><br>
+<a href="#契约召唤 : 牛头王库鲁塔">契约召唤 : 牛头王库鲁塔</a><br>
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>精灵召唤系技能</b> </span>
+    </div>
+</div>
+<a href="#召唤下级精灵">召唤下级精灵</a><br>
+<a href="#精灵召唤 : 亚德炎">精灵召唤 : 亚德炎</a><br>
+<a href="#精灵召唤 : 冰奈斯">精灵召唤 : 冰奈斯</a><br>
+<a href="#精灵召唤 : 瑟冥特克">精灵召唤 : 瑟冥特克</a><br>
+<a href="#精灵召唤 : 雷沃斯">精灵召唤 : 雷沃斯</a><br>
+<a href="#精灵献祭">精灵献祭</a><br>
+<a href="#精灵召唤 : 亡魂默克尔">精灵召唤 : 亡魂默克尔</a><br>
+<a href="#精灵召唤 : 极光格雷林">精灵召唤 : 极光格雷林</a><br>
+<a href="#精灵召唤 : 冰影阿奎利斯">精灵召唤 : 冰影阿奎利斯</a><br>
+<a href="#精灵召唤 : 火焰赫瑞克">精灵召唤 : 火焰赫瑞克</a><br>
+<a href="#精灵召唤 : 精灵王伊伽贝拉">精灵召唤 : 精灵王伊伽贝拉</a><br>
+
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>一次觉醒技能</b> </span>
+    </div>
+</div>
+<a href="#灵魂支配">灵魂支配</a><br>
+<a href="#契约召唤 : 征服者卡西利亚斯">契约召唤 : 征服者卡西利亚斯</a><br>
+<a href="#必杀剑·千鬼杀">必杀剑·千鬼杀</a><br>
+<a href="#支配之环">支配之环</a><br>
+<a href="#精灵召唤 : 融合精灵海伊伦">精灵召唤 : 融合精灵海伊伦</a><br>
+<a href="#咒令 : 愤怒咆哮">咒令 : 愤怒咆哮</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>二次觉醒技能</b> </span>
+    </div>
+</div>
+<a href="#蚀月附灵">蚀月附灵</a><br>
+<a href="#黑月之噬">黑月之噬</a><br>
+<a href="#传说召唤 : 月蚀之影">传说召唤 : 月蚀之影</a><br>
+<a href="#传说召唤 : 逆月者拉莫斯">传说召唤 : 逆月者拉莫斯</a><br>
+<a href="#咒令 : 逆月之蚀">咒令 : 逆月之蚀</a><br>
+
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>三次觉醒技能</b> </span>
+    </div>
+</div>
+<a href="#逆月">逆月</a><br>
+<a href="#至高精灵王">至高精灵王</a><br>
+<a href="#暴食之月">魔月·德拉里昂</a><br>
+
+
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>被删除的技能</b> </span>
+    </div>
+</div>
+<a href="#召唤兽净化">召唤兽净化</a><br>
+<a href="#献祭攻击 : 雷沃斯">献祭攻击 : 雷沃斯</a><br>
+<a href="#献祭攻击 : 冰奈斯">献祭攻击 : 冰奈斯</a><br>
+<a href="#献祭攻击 : 瑟冥特克">献祭攻击 : 瑟冥特克</a><br>
+<a href="#献祭攻击 : 亚德炎">献祭攻击 : 亚德炎</a><br>
+<a href="#精灵召唤 : 拉特利亚">精灵召唤 : 拉特利亚</a><br>
+<a href="#精灵召唤 : 瑟利斯特">精灵召唤 : 瑟利斯特</a><br>
+<a href="#精灵召唤 : 希德">精灵召唤 : 希德</a><br>
+<a href="#精灵召唤 : 艾丽西亚">精灵召唤 : 艾丽西娅</a><br>
+<a href="#契约召唤 : 愤怒的桑德尔">契约召唤 : 愤怒的桑德尔</a><br>
+
+<!--Bottom-->
+<a href="https://seicing.com/html/dnfclass/召唤师.html"><b>回到职业页面</b></a>
+
+<!--Head-->
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--Tail-->
+<script language="javascript" src="https://seicing.com/js/skill.js"></script>
+<script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script language="javascript" src="https://seicing.com/js/imgauto.js"></scri</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />

@@ -3,7 +3,595 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
+    <title>肥猫的秘密基地rset="UTF-8" />
+
+<!--Title-->
+
+
+
+<!--Content-->
+<div style="float:right;margin-left:20px;margin-bottom:20px">
+    <table frame="box" cellpadding="5">
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">村民(Villager)</span></td>
+        </tr>
+        <tr style="text-align: center">
+            <td colspan="2"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/MaleVillDE.webp" width="100px">
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/FEMALEVILLDE.webp" width="100px"><br>
+            </td>
+        </tr>
+
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">单位信息</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">发行版本</span></td>
+            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/version/国王时代.png" width="20px">国王时代</td>
+        </tr>
+
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">时代</span></td>
+            <td>黑暗时代</td>
+        </tr>
+
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">训练信息</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">产地</span></td>
+            <td>城镇中心</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">成本</span></td>
+            <td><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>50</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">训练时间</span></td>
+            <td>25秒</td>
+        </tr>
+
+
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">状态数据</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>25</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(近战)</span></td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲(护甲)</span></td>
+            <td>0</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲(盾牌)</span></td>
+            <td>0</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
+            <td>3(猎人)</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
+            <td>4</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+            <td>0.8</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击间隔时间</span></td>
+            <td>2.0</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击加成</span></td>
+            <td>
+                +6对石头建筑 <br>
+                +3对建筑
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+
+<div>
+    <div id="techno"></div>
+    “收集木材、食物、黄金和石头，建筑和维修建筑物，修理船只和攻城武器”
+    <br>
+    <div style='text-align:right'>——游戏内说明书</div>
+</div>
+
+<br><br><br>
+
+<div>
+    <H1>
+        <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    村民是帝国时代2的基础经济单位，在城镇中心训练，他们是每个文明的经济支柱，执行类似于资源收集和建造建筑物之类的关键任务，每一个新创建的村民的村民会随机分配性别，这是他们和军事部队的不同
+    <br><br>
+    中国人和玛雅人以额外的村民数量开始游戏，其它所有文明的初始村民数量都是3个，他们战斗相当无力，攻击力低下，受到攻击时会中止任务，但是他们也可以参与到战斗之中，安排他们跟随在攻城武器旁边随时随地地修理损坏的攻城武器，而且可以随军推进建造防御建筑，研究霸权之后的村民战斗力极大地强化，使得他们可以在帝王时代初期战斗
+    <br><br> <br>
+    可以分配给村民不同的任务，这时候村民的名字还有职责都会发生变化<br>
+    <table frame="box" cellpadding="5">
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">名称</span></td>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">任务</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td>村民(Villager)</td>
+            <td>攻击敌方单位、敌方建筑物、野生动物、或只是在空闲</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>建筑工(Builder)</td>
+            <td>建造建筑物</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>农民(Farmer)</td>
+            <td>从农场收集食物</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>渔夫(Fisherman)</td>
+            <td>在岸边从鱼身上收集食物</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>粮草征收员(Forager)</td>
+            <td>在果丛里收集食物</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>伐木工(Lumberjack)</td>
+            <td>砍伐树木收集木材</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>矿工(Miner)</td>
+            <td>在矿场里面收集黄金或者石头</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>牧羊人(Shepherd)</td>
+            <td>把羊群聚集到最近的一个磨坊和城镇中心并且杀死它们收集食物</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>猎人(Hunter)</td>
+            <td>杀死野生动物收集食物</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>修理工(Repairer)</td>
+            <td>修理建筑物、船只和攻城部队</td>
+        </tr>
+
+    </table>
+    <br> <br>
+
+
+    村民收集来自不同来源的资源改变了职责时，收集率都各不相同<br>
+    <table frame="box" cellpadding="5">
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">村民种类</span></td>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">资源</span></td>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">收集率(数量/秒)</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td>农夫</td>
+            <td>食物</td>
+            <td>0.53</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>渔夫</td>
+            <td>食物</td>
+            <td>0.43</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>猎人</td>
+            <td>食物</td>
+            <td>0.41</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>伐木工</td>
+            <td>木材</td>
+            <td>0.39</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>金矿工</td>
+            <td>黄金</td>
+            <td>0.38</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>石矿工</td>
+            <td>石头</td>
+            <td>0.36</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>牧羊人</td>
+            <td>食物</td>
+            <td>0.33</td>
+        </tr>
+        <tr style="text-align: left">
+            <td>粮草征收员</td>
+            <td>食物</td>
+            <td>0.31</td>
+        </tr>
+
+
+
+
+    </table>
+    要注意的是，农场的收集率面板数据上是最高的，但是农民在收集的时候会花费大量无意义的时间走动，这些时间里农民是没有在收集资源的，所以大大降低了收集的效率，而且往返于磨坊和城镇中心的时间消耗也没有计算在内，最佳放置的农场实际上的收集率是0.32每秒
+    <br>
+    虽然面板数据有0.53的收集率，但是农场隐藏的最高收集率似乎只有0.44，尽管村民可以在短时间内按照列出的0.53进行收集，但是时间一长，即使在剧情编辑器里面修改他们立即移动，平均收集率也只有0.44，这样修改的话手推车的升级效果会实际上变低，仅仅提高了百分之几的收集率
+    <br> <br>
+
+    村民们可以建造建筑物，多个村民建造建筑物的速度将会加快，t是一个村民建造房屋需要的时间，而n是参与到建造的村民人数，实际上的建造时间则是：
+    <br>
+    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/b0924beadfb8aa273f8958ab93dec6316b2de88e.png">
+    第一个村民的建造速度是其他村民的三倍，建造多个建筑物的时候拆分建筑者效率更高，除非要加快建造重要建筑的速度（城堡和市镇中心）
+    <br> <br> <br>
+    <img
+        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Repairicon_aoe2de.webp">村民可以修理建筑物、攻城武器和船只，修理损坏的物件会节省更多的资源，尽管这会比重新建造新的会缓慢很多，从1生命值修复到建筑物和物体到完整状态，需要花费这个单位造价的一半资源，维修的时候一点一点地扣除而不是立即支付，文明的折扣也适用于维修的成本：例如法国人的城堡成本是488石头(普通是650)，他们维修完整的成本只需要244个石头(普通是325)，如果在维修的时候资源不足，村民会停止维修并且保持闲置状态，建筑物的生命值升级不会增加维修的成本
+    <br>
+    城镇中心建造时候需要石头，但是它的实际成本被视为“550木材”，即不需要石头也能把城镇中心修理完整，但是石头数量为0的时候城镇中心的修理将会停止，尽管实际上确实不需要石头<br>
+    村民修理建筑物的速度是750生命值/分钟，每个额外的村民会增加375生命值/分钟的效率（即一半），无论建筑物类型、升级和原始生命值的多寡都不会影响速度；脚踏起重机也不会影响维修的速度，大多数场合下建造新建筑物的速度都会快于维修，成本更高，最典型的例子就是墙壁；攻城武器和船只的修复速度是建筑物的25%，即187.5生命值/分钟，每个额外村民提供93.75生命值/分钟的加成
+
+
+
+
+
+
+
+
+</div>
+
+<br><br><br>
+
+<div>
+    <H1>
+        <a id="sp"></a><b><span style="color: #000000">加成</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <ul>
+        <li>阿兹特克：+3携带量</li>
+        <li>柏柏尔：黑暗时代移动速度+5%，在封建时代之后移动速度+10%</li>
+        <li>不列颠：牧羊人工作速度+25%</li>
+        <li>勃艮第：受益于村民的经济技术可以提前一个时代开发</li>
+        <li>缅甸：研究信仰便宜50%</li>
+        <li>凯尔特：伐木工效率+15%，可以在敌人眼皮底下掳走羊群</li>
+        <li>中国：在封建/城堡/帝王时代，受益于村民的技术便宜10%/15%/20%，以5个村民开始游戏，但-150食物和-50木材</li>
+        <li>法兰克：粮草征收员效率+15%</li>
+        <li>哥特：对野猪、大象和犀牛+5攻击，携带量+15，猎物资源产量+20%，织布机可以立即研究完毕</li>
+        <li>印加：铁匠铺步兵科技受益于村民 </li>
+        <li>印度斯坦：在黑暗/封建/城堡/帝王时代，村民便宜5%/10%/15%/20%</li>
+        <li>高棉：村民可以驻扎到房屋里，不需要交递食物，但是工作速度-5%，农场里的食物直接增加到资源里</li>
+        <li>高丽：村民+3视野，采石速度+20%</li>
+        <li>马扎尔：村民可以一击杀死野生动物</li>
+        <li>玛雅：以4个村民开局，但-50食物，自然资源的资源量+15%</li>
+        <li>蒙古：猎人工作效率+40%</li>
+        <li>波斯：在封建/城堡/帝王时代，村民建造速度+10%/+15%/+20%</li>
+        <li>葡萄牙：受益于村民的科技研发速度+30%</li>
+        <li>斯拉夫：村民工作效率+10%</li>
+        <li>西班牙：建造速度+30%</li>
+        <li>鞑靼：牧羊人可以从羊群获得额外50%的食物，在高处攻击会造成50%额外伤害</li>
+        <li>土耳其：金矿工工作效率+20%</li>
+        <li>维京：免费独轮手推车和手推车 </li>
+        <li>波希米亚：狂热和圣洁影响村民</li>
+        <li>波兰：村民采石除了获得石料外还能额外获得33%黄金，获得自愈能力，在封建时代/城堡时代/帝王时代每分钟恢复10/15/20</li>
+        <li>达罗毗荼：渔夫携带量+15</li>
+        <li>马里：金矿开采延长15%，金矿工携带量+15%</li>
+    </ul>
+    <table frame="box" style="border:1px solid #222222;">
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">单位对抗</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">对其有利</span></td>
+            <td>大多数建筑物、少量的掷矛手、冲车、巨型投石机</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">对其不利</span></td>
+            <td>几乎所有</td>
+        </tr>
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">科技收益</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">运输能力</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/WheelbarrowDE.webp" width="20px">独轮手推车(+3) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/HandcartDE.webp" width="20px">手推车(+7) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/HeavyPlowDE.webp" width="20px">重犁(+1，仅农民) <br>
+
+            </td>
+        </tr>
+
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">工作效率</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/DoubleBitAxe_aoe2DE.webp" width="20px">双刃斧(+20%伐木速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/BowSawDE.webp" width="20px">弓锯(+20%伐木速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/TwoManSawDE.webp" width="20px">双人锯(+10%伐木速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/StoneMiningDE.webp" width="20px">采石法(+15%采石速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/StoneShaftMiningDE.webp" width="20px">钻井采石法(+15%采石速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/GoldMiningDE.webp" width="20px">采金法(+15%采金速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/GoldShaftMiningDE.webp" width="20px">钻井采金法(+15%采金速度) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/CastleAgeUnique.webp" width="20px">大干路(+10%采金速度，仅印度斯坦) <br>
+
+            </td>
+        </tr>
+
+
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/LoomDE.webp" width="20px">织布机(+15) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">霸权(+40，仅西班牙) <br>
+            </td>
+        </tr>
+
+
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/SapperDE.webp" width="20px">工兵(+15对建筑物和防御工事) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Forging_aoe2de.webp" width="20px">锻造(+1，仅印加) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/IronCastingDE.webp" width="20px">铸铁(+1，仅印加) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp" width="20px">鼓风炉(+2，仅印加) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">霸权(+6，仅西班牙) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">防御力(近战/远程)</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/LoomDE.webp" width="20px">织布机(+1/+2) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/ScaleMailArmorDE.webp" width="20px">步兵鳞甲(+1/+1，仅印加) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/ChainMailArmorDE.webp" width="20px">步兵锁甲(+1/+1，仅印加) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/PlateMailArmorDE.webp" width="20px">步兵钢甲(+1/+2，仅印加) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">霸权(+2/+2，仅西班牙) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">速度</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/WheelbarrowDE.webp" width="20px">独轮手推车(+10%) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/HandcartDE.webp" width="20px">手推车(+10%) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">转化抵抗</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/FaithDE.webp" width="20px">信念<br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/HeresyDE.webp" width="20px">异教<br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/TreadmillCraneDE.webp" width="20px">脚踏起重机(+20%建造速度)<br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/CastleAgeUnique.webp" width="20px">勃艮第葡萄园(耕种产生黄金，仅勃艮第) <br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">佛兰芒民兵(转换成佛兰芒民兵，仅勃艮第)<br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">大乘佛教(占用的人口空间减少10%，仅孟加拉)<br>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">纸币(伐木产生黄金，仅越南)<br>
+
+            </td>
+        </tr>
+
+
+    </table>
+
+
+
+</div>
+
+<br><br><br>
+
+
+<div>
+    <H1>
+        <a id="appeared"></a><b><span style="color: #000000">团队协同</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <ul>
+        <li>葡萄牙：科技研究速度+25%</li>
+        <li>印加：建造农场速度+50%</li>
+        <li>立陶宛：信念和异教研究速度快20%</li>
+        <li>条顿：更能抵抗转化</li>
+    </ul>
+</div>
+
+<br><br><br>
+
+<div>
+    <H1>
+        <a id="change"></a><b><span style="color: #000000">更新日志</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
+    <b>国王时代</b>
+    <ul>
+        <li>村民对石头建筑+3攻击力</li>
+        <li>蒙古：猎人工作速度+50%</li>
+        <li>土耳其：金矿工工作速度+15% </li>
+    </ul>
+    <b>征服者</b>
+    <ul>
+        <li>村民对石头建筑+6攻击力</li>
+        <li>引入异教</li>
+        <li>阿兹特克：村民+5携带量</li>
+        <li>玛雅：自然资源的资源量+20%</li>
+        <li>高丽：村民视野+2，1.0b补丁后，村民视野+3</li>
+    </ul>
+    <b>失落帝国</b>
+    <ul>
+        <li>村民可以驻扎到冲车里</li>
+        <li>法兰克：粮草征收员工作速度+25%</li>
+        <li>印度斯坦：在黑暗/封建/城堡/帝王时代，村民便宜5%/10%/15%/20%，渔夫工作速度+15%，+15食物携带量</li>
+        <li>玛雅：自然资源的资源量+15%</li>
+        <li>高丽：村民建造防御建筑速度+33%</li>
+        <li>斯拉夫：村民工作效率+15%</li>
+    </ul>
+    <b>非洲王国</b>
+    <ul>
+        <li>印度斯坦：在黑暗/封建/城堡/帝王时代，村民便宜10%/15%/20%/25%</li>
+        <li>土耳其：金矿工工作速度+20% </li>
+    </ul>
+    <b>蛮王崛起</b>
+    <ul>
+        <li>高丽：5.8补丁后，村民建造塔速度+5%</li>
+    </ul>
+
+
+    <b>最后的可汗</b>
+    <ul>
+        <li>高棉：34699版本后，农民不再需要交递食物，而是直接增加玩家库存，这个奖励适用于完全科技游戏，35584版本后，不再适用于完全科技游戏，36906版本后，农民工作效率-3%，42848版本后，农民工作效率-5%
+        </li>
+        <li>高丽：村民建造防御工事速度不再加快</li>
+        <li>蒙古：35584版本后，猎人工作效率+40%</li>
+        <li>斯拉夫：村民工作效率+10%</li>
+
+        <li>印度斯坦：36906版本后，渔夫工作效率+10%，不再携带额外15食物</li>
+        <li>波斯：36906版本后，黑暗时代建造速度不再提高</li>
+        <li>37650版本后，男性村民和女性村民攻击动画时间同步为1.275秒(原来分别是1.05秒和1.5秒)</li>
+        <li>36906版本后，渔夫可以把食物放到码头里</li>
+
+        <li>阿兹特克：村民+3携带量</li>
+        <li>葡萄牙：42848版本后，研究速度+30% </li>
+    </ul>
+
+    <b>西方霸主</b>
+    <ul>
+
+        <li>法兰克：粮草征收员工作速度+15%</li>
+    </ul>
+
+    <b>印度王朝</b>
+    <ul>
+        <li>印度斯坦：渔夫不再拥有10%效率加成</li>
+        <li>印度斯坦：苏丹王更名为大干路</li>
+        <li>波兰：73855版本后，村民从石矿获取黄金的效率从50%下调到33%</li>
+        <li>印度斯坦：78174版本后，村民在黑暗/封建/城堡/帝王时代便宜5%/10%/15%/20%，此前是10%/15%/20%/25%</li>
+        <li>波兰：待补充版本号版本后，村民黑暗时代自愈能力删除</li>
+        <li>哥特：待补充版本号版本后，获得猎物资源产量+20%加成</li>
+        <li>柏柏尔：待补充版本号版本后，村民在黑暗时代移动速度+5%，在封建时代之后移动速度+10%，此前是全时代+10%</li>
+        <li>马里：待补充版本号版本后，“金矿开采延长30%”加成修改为“金矿开采延长15%，金矿工携带量+15%”</li>
+    </ul>
+
+
+</div>
+<br><br><br>
+
+
+<div>
+    <H1>
+        <a id="relk"></a><b><span style="color: #000000">历史</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    在中世纪，很大一部分人是农民、农奴和地位低下的村民，他们收集食物并从事大部分工作，支持一小部分控制社区财富和权力的宗教领袖和贵族的生活，他们生活艰难，但随着封建制度的完善，社会制度允许工人们保留更多的农产品，村民的生活开始得到改善，许多村民成为了发展中城市的中产阶级，由于生产的专业化和农业技术的进步，在农场里耕作的农民们的财富不断地提高
+</div>
+
+<br><br><br>
+
+
+<div>
+    <H1>
+        <a id="oth"></a><b><span style="color: #000000">杂项</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
+    <ul>
+        <li>村民是4个具有不同设计的可训练单位之一，其它分别是僧侣、贸易车和佛兰芒民兵</li>
+        <li>男性村民和女性村民在战斗时使用不同的武器，男性村民使用Makhaira，女性村民使用普通的小刀</li>
+        <li>驻守到建筑里一个村民会提供一支箭5攻击力</li>
+        <li>25的基础生命值使得村民坐实最弱单位的地位</li>
+        <li>村民是三个可生产的女性单位之一，其他两个分别是飞刀女兵和女性佛兰芒民兵</li>
+    </ul>
+
+    <table id="empire" frame="box">
+        <tr>
+
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Villagers_aoe2de_many.webp" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Villagers_aoe2de_many.webp"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/J06.webp" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/J06.webp"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Female_Villager_AoE2.webp" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Female_Villager_AoE2.webp"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Male_Villager_AoE2.webp" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Male_Villager_AoE2.webp"></a>
+            </td>
+
+        </tr>
+        <tr>
+
+
+            <td style="background-color:#F5F8FA;text-align: center">
+                各种形态下的村民
+            </td>
+
+            <td style="background-color:#F5F8FA;text-align: center">
+                原版女性村民渲染图
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                原版女性村民渲染图
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                原版男性村民渲染图
+            </td>
+        </tr>
+
+
+
+    </table>
+</div>
+
+<br><br><br>
+
+
+
+
+<!--List-->
+<a href="https://seicing.com/html/aoe2/index-aoe2units.html"><b>回到首页</b></a><br><br>
+<a href="#jia">简介</a><br>
+<a href="#sp">加成</a><br>
+<a href="#appeared">团队协同</a><br>
+<a href="#change">更新日志</a><br>
+<a href="#relk">历史</a><br>
+<a href="#oth">杂项</a><br>
+
+<!--Bottom-->
+<a href="https://seicing.com/html/aoe2/index-aoe2units.html"><b>回到首页</b></a>
+
+<!--Head-->
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOE2DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+        })
+    })
+</script>
+<style>
+    li {
+        line-height: 20px
+    }
+</style>
+
+<!--Tail</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />

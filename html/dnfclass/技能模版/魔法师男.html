@@ -3,7 +3,209 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
+    <title>肥猫的秘密基地rset="UTF-8" />
+
+<!--Title-->
+
+<!--Content-->
+<div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div style="float:left">
+    <button type="button" onclick="unfreeze()">解冻所有GIF（谨慎点击，流量消耗大）</button>
+</div>
+<br><br>
+
+<div style="float:left">
+    <H1>
+        <a id="黑暗之眼"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/深渊之身.jpg">黑暗之眼</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    增加魔法师的MP上限； 若MP值低于一定比率时， 还可增加MP恢复速度 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="不死之身"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/不死之身.jpg">不死之身</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    角色死亡后带着少量HP原地复活， 并且进入自动恢复HP模式 <br>
+    自动恢复HP模式下， 角色的HP值可以在一定时间内自动恢复至100%， 但无法借用任何道具或其它途径恢复HP， 且所受到的伤害还会加剧 <br>
+    若在恢复模式下死亡， 则无法再次通过该技能复活 <br>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+    <H1>
+        <a id="魔球连射"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/魔球连射.jpg">魔球连射</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    快速生成多个魔法球并向前连续发射。 一般情况下施放的魔法球无属性； 若学会[属性变换]， 则施放最近一次选择的属性魔法球， 并且附加该属性攻击效果， 同时还额外追加攻击力 <br>
+
+    - [转职为元素爆破师时附加效果] - <br>
+    减少技能冷却时间 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/连续发射.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="旋火盾"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/旋火盾.jpg">旋火盾</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成火焰盾牌并向前施放， 使其攻击敌人。 盾牌生成时， 可以减少敌人远程攻击带来的伤害 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/火焰防牌.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="魔法冰球"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/魔法冰球.jpg">魔法冰球</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    向前方发射魔法冰球。 冰球大小随技能Lv增加而增大 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/水大炮.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="幽冥火"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/幽冥火.jpg">幽冥火</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成两团幽冥火， 可以增加自身的物理和魔法防御力， 效果持续一定时间 <br>
+    在生成幽冥火的状态下再次施放该技能， 可以将火球射出并给予敌人一定伤害 <br>
+
+    转职为次元行者时， 可以强化为[虚妄之火] <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/鬼雪火.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+    <H1>
+        <a id="冰魄剑"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/冰魄剑.jpg">冰魄剑</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成冰魄剑连续斩杀敌人。 第1击和第2击带有僵直效果， 第3击则可以击退敌人， 并有一定几率使其进入减速状态 <br>
+    转职成为冰结师时， 才可以强制中断普通攻击动作， 并立即施放该技能 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/冰魄剑.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="魔法旋风"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/魔法旋风.jpg">魔法旋风</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    生成冰魄剑连续斩杀敌人。 第1击和第2击带有僵直效果， 第3击则可以击退敌人， 并有一定几率使其进入减速状态 <br>
+    转职成为冰结师时， 才可以强制中断普通攻击动作， 并立即施放该技能 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/风.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="擒拿掌"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/擒拿掌.jpg">擒拿掌</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    抓取前方1名敌人后用力扔开， 被掷出的敌人落地时会生成冲击波并对周围的敌人造成伤害 <br>
+    转职为次元行者时， 技能类型变为独立攻击力 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/擒拿掌.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+    <H1>
+        <a id="瞬移"></a><b><span style="color: #0366D6"></span><span style="color: #000000"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/dfclass/skillicon/魔法师男/瞬移.jpg">瞬移</span><span style="font-size:12px"><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    向指定方向快速移动一定距离 <br> <br>
+    <p data-img="https://seicing.com/res/dnfclass/skillgif/魔法师男/传送.gif"></p>
+    <br><br><br>
+    <br>
+    <br><br>
+
+
+
+
+</div>
+
+<!--List-->
+<a href="https://seicing.com/html/dnfclass/魔法师男.html"><b>回到职业页面</b></a><br><br>
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>共通技能</b> </span>
+    </div>
+</div>
+<a href="#黑暗之眼">黑暗之眼</a><br>
+<a href="#不死之身">不死之身</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>爆破系技能</b> </span>
+    </div>
+</div>
+<a href="#魔球连射">魔球连射</a><br>
+<a href="#旋火盾">旋火盾</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>冰结系技能</b> </span>
+    </div>
+</div>
+<a href="#魔法冰球">魔法冰球</a><br>
+<a href="#幽冥火">幽冥火</a><br>
+<a href="#冰魄剑">冰魄剑</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>迅捷系技能</b> </span>
+    </div>
+</div>
+<a href="#魔法旋风">魔法旋风</a><br>
+<a href="#擒拿掌">擒拿掌</a><br>
+
+<div style="position:relative;">
+    <img src="https://seicing.com/res/1121314.png" draggable="false">
+    <div style="position:absolute; z-index:2; left:2px; top:4px">
+        <span style="color: #FFFFFF"> <b>次元系技能</b> </span>
+    </div>
+</div>
+<a href="#瞬移">瞬移</a><br>
+
+
+<!--Bottom-->
+<a href="https://seicing.com/html/dnfclass/魔法师男.html"><b>回到职业页面</b></a>
+
+<!--Head-->
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--Tail-->
+<script language="javascript" src="https://seicing.com/js/skill.js"></script>
+<script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script language="javascript" src="https://seicing.com/js/imgauto.js"></scri</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
