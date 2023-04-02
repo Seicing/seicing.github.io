@@ -786,7 +786,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "Seicing3EmbarrassedNO",
         "string": "我很害怕人多的场合，您不也是自己独自一人出来吹风吗？",
         "special": "dia1"
     },
@@ -814,7 +814,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "Seicing3NO",
         "string": "别这么说，新生的伊拉修莱德帝国是需要您的辅助的",
         "special": "dia1"
     },
@@ -842,35 +842,35 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "Seicing3EmbarrassedNO",
         "string": "伊丽，没有跟您说吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "Seicing3NO",
         "string": "艾特拉塔早已经腐朽了，而伊拉修莱德人都在担心伊拉修莱德会不会失去自己的独特性，变成西景帝国的一部分……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "Seicing3NO",
         "string": "伊丽考虑到这点了哦",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "Seicing3NO",
         "string": "所以她计划复兴灭亡的伊奥里尼亚帝国元，让伊拉修莱德自己独立为一个帝国元，以独立的伊拉修莱德皇帝身份来跟我结婚",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "Seicing3NO",
         "string": "也就是……性质上和蚩幽类似，不存在谁从属于谁的问题，这样伊拉修莱德实际上和以前一样……",
         "special": "dia1"
     },
@@ -884,7 +884,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "Seicing3EmbarrassedNO",
         "string": "(这对父女的沟通真是灾难啊……)",
         "special": "dia1"
     },
@@ -912,7 +912,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
+        "face": "Seicing3EmbarrassedNO",
         "string": "那个……难道您战败被抓也是考虑到的一部分么……",
         "special": "dia1"
     },
@@ -940,7 +940,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingDefault",
+        "face": "Seicing3PeepNO",
         "string": "伊安……",
         "special": "dia1"
     },
@@ -975,7 +975,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCompassionNO",
+        "face": "Seicing3CompassionNO",
         "string": "谢谢你，阿齐兹老爹",
         "special": "dia1"
     },
@@ -996,7 +996,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3PeepRFNO",
         "string": "今天的你比起我认识你的任何时候都要华丽",
         "special": "dia1"
     },
@@ -1010,7 +1010,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3PeepRFNO",
         "string": "……(四处张望)",
         "special": "dia1"
     },
@@ -1024,7 +1024,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3CloseEyeNORF",
         "string": "那只是借口",
         "special": "dia1"
     },
@@ -1052,14 +1052,14 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3NORF",
         "string": "真是充满了回忆",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3PeepRFNO",
         "string": "看，从这里往那个方向看",
         "special": "dia1"
     },
@@ -1080,7 +1080,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3CloseEyeNORF",
         "string": "是啊……",
         "special": "dia1"
     },
@@ -1101,14 +1101,14 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingPeepRF",
+        "face": "Seicing3PeepRF",
         "string": "作为伙伴的伊丽我可以和她毫无顾忌地相处",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCloseEyeRF",
+        "face": "Seicing3CloseEyeNORF",
         "string": "但是，作为妻子的伊丽……我还需要时间去学习如何相处",
         "special": "dia1"
     },
@@ -1136,7 +1136,7 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCompassionNO",
+        "face": "Seicing3CloseEyeNORF",
         "string": "我是指……",
         "special": "dia1"
     },
@@ -1164,14 +1164,14 @@
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCloseEyeRF",
+        "face": "Seicing3CloseEyeNORF",
         "string": "……",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingCloseEyeRF",
+        "face": "Seicing3CloseEyeNORF",
         "string": "那么……余生请多多指教了……伊……老婆……",
         "special": "dia1"
     },
