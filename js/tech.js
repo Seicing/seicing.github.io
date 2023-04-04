@@ -265,7 +265,7 @@ function showPic(e, taitou) {
         "攻城战象sul": "象轿<br>Siege Elephant<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>箭塔象的弓箭手替换成弩手，获得+11对重甲伤害，生命值+30%，远程护甲+4",
         "村庄要塞sul": "村庄要塞<br>Village Fortresses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>大型箭塔的作用如同城镇中心，包括单位生产、人口容量及科技(实际上不能研发科技)",
         "缓燃防御sul": "缓燃防御<br>Slow-Burning Defenses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>石墙塔、大型箭塔和哨站的火焰护甲 +10",
-        "强化地基sul": "强化地基<br>Reinforced Foundations<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>125<br>村民和步兵可以驻扎房屋射箭，房屋生命值+50%",
+        "强化地基sul": "强化地基<br>Reinforced Foundations<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>125<br>村民和步兵可以驻扎房屋射箭(最大驻扎数为5)，房屋生命值+50%",
         "宁静之地sul": "宁静之地<br>Tranquil Venue<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>清真寺附近会自动回复单位生命值，每秒2",
         "瞭望塔sul": "瞭望塔<br>Lookout Towers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>哨站视野+50%，武器射程+1",
         "珩磨剑刃sul": "珩磨剑刃<br>Honed Blades<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>武士和骑士近战伤害+3",
