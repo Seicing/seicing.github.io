@@ -374,7 +374,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Shy",
-        "string": "自从战争爆发后，我一直都感到绝望，谢谢你们让我感受到了久违的希望",
+        "string": "自从战争爆发后我就一直笼罩在绝望之中，谢谢你们让我感受到了久违的希望",
         "special": "dia2"
     },
     {
@@ -555,57 +555,64 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "宿句人一直对艾特拉塔大陆虎视眈眈……即使如此，这次的进攻规模也大得有点异常了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Depressed",
+        "string": "仿佛是完全不顾及其他状况的孤注一掷一样",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……龙脉吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
         "face": "Iris2Happy",
-        "string": "我作为亲身经历者，大概推理出了宿句人的行动逻辑，还记得吗？",
+        "string": "真是聪明！正是这个原因",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Happy",
+        "string": "他们在进行一次豪赌",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "艾特拉塔本土陷入内乱，如果“某个”因素不被影响的话，他们就可以趁机吞掉伊拉修莱德",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "难道说是我们在倒立金字塔的时候……",
+        "string": "……西景人吗？",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Serenity",
-        "string": "嗯……事实上卡哈扎塔帝国和他的司王国们都在衰退，扩张达到极限的他们无法转型，所以他们自然地衰落了",
+        "string": "嗯",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2Serenity",
-        "string": "“龙脉”的破坏使得他们不得不将这个事实搬上了台面，所以他们试图加强扩张的力度",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "而艾特拉塔那边也陷入了内部混乱，失去中央支持的伊拉修莱德是他们最好的目标，唯一的问题在于……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "西景人吗？",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "嗯，为了可以确保可以快速攻下伊拉修莱德，集结几乎所有可以动员的司王国是必须的……所以唯一的问题就是",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "西景人会不会趁机觊觎宿句人虚弱的司王国，他们赌了“不会”",
+        "string": "西景人是否会觊觎因全体动员而变得空虚的卡哈扎塔本土，他们赌了“不会”",
         "special": "dia2"
     },
     {
@@ -619,49 +626,42 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "事实上他们确实是对的，西景没有理由去干涉伊拉修莱德的问题，所以就算我们想趁虚而入，也很难集结兵力进行行动",
+        "string": "事实上他们确实是对的，西景的军队要以侵略他人为名义穿越蚩幽之地，两方人先因为误会打起来的概率比输掉战争要高好几十倍",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Serenity",
-        "string": "那如果伊拉修莱德的公主宣布和西景皇帝联姻的话，什么事情都说得通了，伊拉修莱德的公主和西景皇帝关系密切，这是人尽皆知的",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Happy",
-        "string": "如果两人联姻也不是奇怪的事情……在这个基础上加上快速集结的帝国军队……这意味着什么呢？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Happy",
-        "string": "伊拉修莱德的督军们，最擅长的就是见风使舵，在见识到宿句人的攻势后认为伊拉修莱德无法抵挡就停止了抵抗",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
         "face": "Iris2Default",
-        "string": "但是只要让他们看到胜利的可能性，看到可以从中获得利益和名声的可能性，他们在权衡之后就会再次集结起来，向我表示忠诚",
+        "string": "那么，西景的皇帝动用了个人的魅力去集结了忠于自己的部队打算援助我呢？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "宿句人的快速攻势确实非常猛烈，但是如果他们察觉到西景人的行动，以及我们试图重新组织起来进行胶着战的话……",
+        "face": "Iris2Peep",
+        "string": "一直未婚的伊拉修莱德公主和西景的皇帝一起冒险，日久生情，皇帝为了自己心爱的公主动员自己的力量介入这场战争，想要用胜利去庆祝和确立……这次联姻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Peep",
+        "string": "伊拉修莱德人没有崩溃，只是督军们认为敌人过于强大从而放弃浪费自己的生命，但是让他们见识到足以胜利的可能的话",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Peep",
+        "string": "面对未站稳脚步的宿句人，伊拉修莱德人就绝对不会失败",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingPeep",
-        "string": "原来如此，宿句人会因此变得混乱，快速动员的联军甚至会因为这样崩溃失去战斗力",
+        "string": "原来如此，因为西景人的介入宿句人会因此变得混乱，快速动员的联军甚至会因为这样崩溃",
         "special": "dia1"
     },
     {
@@ -682,49 +682,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "如果我们真的有这层关系……西景完全有理由以及合法干涉伊拉修莱德的事务",
+        "string": "如果是在这个基础上把宿句人活生生“吓死”的话，确实是可行的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "即使西景不会真的动武，但在这个关系下，再愚蠢的人也得学会审时度势",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "伊拉修莱德的军队并没有完全溃败，如果可以重新让他们集结起来，宿句人失败的可能性非常高",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Default",
-        "string": "宿句人完全就是在进行一场豪赌……如果一切顺利的话确实会获得胜利的赌博",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2Shy",
-        "string": "但是……既然是赌博，就要承受无数的变数，一直未婚的伊拉修莱德皇女和西景的皇帝联姻……这是不可思议但又合情合理的事情",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEye",
-        "string": "确实，这是一个行得通的计策",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCompassion",
-        "string": "但是",
+        "string": "你也是在豪赌啊，伊丽，不过你要想清楚一点",
         "special": "dia1"
     },
     {
@@ -733,6 +698,13 @@
         "face": "SeicingCompassion",
         "string": "怎么能拿终身大事当儿戏，这是全世界都会见证的……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "Iris2Surprise",
+        "string": "……",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -787,7 +759,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoDepressed",
-        "string": "伤害女孩子的心之后扬长而去的人是人渣",
+        "string": "你比我聪明很多，这也看不出……她根本就没有在开玩笑的吗？",
         "special": "dia2"
     },
     {
@@ -808,21 +780,56 @@
         "branch": "branch0",
         "name": "余",
         "face": "YoCloseEye",
-        "string": "就连我这个笨蛋也能看出来的东西，你竟然还在欺骗自己啊，你抚心自问，你真的对她一点感觉都没有？",
+        "string": "是在乎别人的想法吗？觉得别人会对你重婚说三道四吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoCloseEye",
-        "string": "你是在乎别人的想法吗？世清……不要再优柔寡断了，喜欢就说出来，有人对你闲言碎语就给他来上一拳吧",
+        "string": "伊丽丝自己都不介意啊……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "YoCloseEye",
-        "string": "独占你的爱，但是让我的挚友失去一切，让你一直在遗憾中度过余生，作为你那不成器的妻子，我不会觉得这就是属于我的幸福",
+        "string": "……不要再优柔寡断了，喜欢就说出来，有人对你闲言碎语就给他来上一拳吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoCloseEye",
+        "string": "……在顾及我的感受吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoCloseEye",
+        "string": "谢谢你，但是，我感觉我作出让步，让我们三个不至于继续在这种痛苦中继续下去更好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoCloseEye",
+        "string": "作为你那不成器的妻子，这是我力所能及的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "只要别把我忘记就好了",
         "special": "dia2"
     },
     {
