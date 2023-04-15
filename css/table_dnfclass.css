@@ -8,6 +8,11 @@
     width: 100%;
 }
 
+#aoe4de {
+    border-collapse: collapse;
+}
+
+#aoe4de th,
 #aoe4de td {
     border: 1px solid #888888;
 }
