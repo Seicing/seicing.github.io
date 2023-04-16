@@ -367,7 +367,7 @@ function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
     var aoetechP = ayanami[a].substr(aoetech + 4);
     if ($("." + a).length > 0) {
-        var x = document.getElementsByClassName("." + a);
+        var x = document.getElementsByClassName(a);
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].innerHTML = aoetechP;
@@ -380,4 +380,4 @@ function aoetechPoeRush() {
         var gasdss = key.toString();
         aoetechPoe(gasdss)
     }
-}
+} 

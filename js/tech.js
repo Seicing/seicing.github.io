@@ -344,5 +344,18 @@ function hiddenPic() {
 function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
     var aoetechP = ayanami[a].substr(aoetech + 4);
-    document.getElementById(a).innerHTML = aoetechP;
+    if ($("." + a).length > 0) {
+        var x = document.getElementsByClassName(a);
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].innerHTML = aoetechP;
+        }
+    } else { }
 }
+
+function aoetechPoeRush() {
+    for (let key in ayanami) {
+        var gasdss = key.toString();
+        aoetechPoe(gasdss)
+    }
+} 
