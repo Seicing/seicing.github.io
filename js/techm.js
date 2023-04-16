@@ -367,11 +367,7 @@ function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
     var aoetechP = ayanami[a].substr(aoetech + 4);
     if ($("." + a).length > 0) {
-        var waganigong = $("." + a);
-        var waganigong2 = waganigong.length
-        for (i; i < waganigong2; i++) {
-            waganigong[i].innerHTML = aoetechP;
-        }
+        $("." + a).innerHTML = aoetechP;
     } else { }
 }
 
