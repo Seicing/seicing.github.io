@@ -368,3 +368,10 @@ function aoetechPoe(a) {
     var aoetechP = ayanami[a].substr(aoetech);
     document.getElementById(a).innerHTML = aoetechP;
 }
+
+function aoetechPoeRush() {
+    for (var i = 0; i < ayanami.length; i++) {
+        a = ayanami;
+        aoetechPoe(a);
+    }
+}
