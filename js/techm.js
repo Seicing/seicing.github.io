@@ -373,7 +373,7 @@ function aoetechPoe(a) {
     }
 }
 
-function aoetechPoeRush2() {
+function aoetechPoeRush() {
     for (let key in ayanami) {
         var gasdss = key.toString();
         aoetechPoe(gasdss)
