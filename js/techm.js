@@ -371,7 +371,9 @@ function aoetechPoe(a) {
 
 function aoetechPoeRush() {
     for (let key in ayanami) {
-        a = key;
-        aoetechPoe(a);
+        for (var i = 0; i < key.length; i++) {
+            gsd = key;
+            aoetechPoe(gsd);
+        }
     }
 }
