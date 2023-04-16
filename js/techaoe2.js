@@ -483,3 +483,10 @@ function hiddenPic() {
     aasb.style.display = "none";
     aasb.innerHTML = "";
 }
+
+function aoetechPoe(a) {
+    var aoetech = ayanami[a].lastIndexOf("<br>");
+    var aoetechP = ayanami[a].substr(aoetech);
+    document.getElementById(a).innerHTML = aoetechP;
+}
+
