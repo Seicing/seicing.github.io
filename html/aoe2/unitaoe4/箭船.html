@@ -447,6 +447,9 @@
         var aaposbo3 = a.substring(0, 3);
         aaposbo1.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + aaposbo3;
         aaposbo2.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + aaposbo3;
+        var aaposbo4 = window.location.href;
+        aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
+        history.replaceState("stateObj", "title", aaposbo4);
     }
 
     function cleargasek(a) {
