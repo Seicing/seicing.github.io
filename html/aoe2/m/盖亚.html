@@ -98,7 +98,7 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
 
     <b>神力</b> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/tech/盖亚森林.png" width="20px">盖亚森林(Gaia Forest)<br>
-    在指定区域种植白杨树林，每根白杨树提供200木，可以释放4次 <br>
+    <p id="godpower"></p> <br>
     <br>
     <b>独特科技</b> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/tech/运河.png" width="20px">运河(Channels)<br>
     村民、村民英雄、羊驼商队+20%移动速度<br>
@@ -3603,5 +3603,10 @@
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/techm.js"></script>
+<script>
+    var pos = 盖亚森林.lastIndexOf("<br>");
+    var poste = 盖亚森林.substr(pos);
+    document.getElementById("godpower").innerHTML = poste;
+</script>
 
 </html>
