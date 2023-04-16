@@ -663,7 +663,7 @@
                 <div id="sidebar" style="position:fixed; left:0%px; top:0%px; height:100%;  width:220px">
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <a href="https://seicing.com/html/aoe2/index-aoe4buildings.html"><b>回到首页</b></a><br><br>
+                        <a href="https://seicing.com/html/aoe2/index-aoe4buildings.html" id="blacktou1"><b>回到首页</b></a><br><br>
 <a href="#jia">简介</a><br>
 <a href="#sp1">科技</a><br>
 <a href="#sp">加成</a><br>
@@ -675,7 +675,7 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
                     
-<a href="https://seicing.com/html/aoe2/index-aoe4buildings.html"><b>回到首页</b></a>
+<a href="https://seicing.com/html/aoe2/index-aoe4buildings.html" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>
@@ -698,6 +698,11 @@
         document.getElementById(b + '0').style.opacity = 1;
         document.getElementById(a + '1').style.display = "block";
         document.getElementById(b + '1').style.opacity = 1;
+        var aaposbo1 = document.querySelector("#blacktou1");
+        var aaposbo2 = document.querySelector("#blacktou2");
+        aaposbo3 = a.Substring(0, 3);
+        aaposbo1.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + aaposbo3;
+        aaposbo2.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + aaposbo3;
     }
 
     function cleargasek(a) {
