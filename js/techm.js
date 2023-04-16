@@ -370,8 +370,7 @@ function aoetechPoe(a) {
 }
 
 function aoetechPoeRush() {
-    for (let key in ayanami) {
-        a = key;
-        aoetechPoe(a);
-    }
+    a = Object.keys(ayanami).forEach(
+        aoetechPoe(a)
+    )
 }
