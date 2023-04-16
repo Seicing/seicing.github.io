@@ -370,8 +370,8 @@ function aoetechPoe(a) {
 }
 
 function aoetechPoeRush() {
-    for (var i = 0; i < ayanami.length; i++) {
-        a = ayanami;
+    for (let key in ayanami) {
+        a = key;
         aoetechPoe(a);
     }
 }
