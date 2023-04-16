@@ -366,11 +366,13 @@ function hiddenPic() {
 function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
     var aoetechP = ayanami[a].substr(aoetech + 4);
-    if ($("#" + a).length > 0) {
-        document.getElementById(a).innerHTML = aoetechP;
-    } else {
-
-    }
+    if ($("." + a).length > 0) {
+        var waganigong = $("." + a);
+        var waganigong2 = waganigong.length
+        for (i; i < waganigong2; i++) {
+            document.getElementById(a).innerHTML = aoetechP;
+        }
+    } else { }
 }
 
 function aoetechPoeRush() {
