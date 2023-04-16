@@ -329,9 +329,9 @@ let ayanami = {
     "石墙中国人": "石墙<br>Stone Wall<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>木墙生命值+400，视野+5",
     "夯土墙": "夯土墙<br>Earthen Wall<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>木墙生命值+200，视野+2",
 
-    "克罗诺斯加成1": "<br>攻城武器便宜10%，移动速度+10%",
-    "克罗诺斯加成2": "<br>神兽便宜10%，移动速度+10%",
-    "克罗诺斯加成3": "<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/tech/建造祝福.png' width='20px'>可以通过时间转移把自己的建筑物传送到视野内任意地方重新安放",
+    "克罗诺斯加成1": "克罗诺斯加成1<br>攻城武器便宜10%，移动速度+10%",
+    "克罗诺斯加成2": "克罗诺斯加成2<br>神兽便宜10%，移动速度+10%",
+    "克罗诺斯加成3": "克罗诺斯加成3<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/tech/建造祝福.png' width='20px'>可以通过时间转移把自己的建筑物传送到视野内任意地方重新安放",
 
 
 }
