@@ -486,7 +486,7 @@ function hiddenPic() {
 
 function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
-    var aoetechP = ayanami[a].substr(aoetech);
+    var aoetechP = ayanami[a].substr(aoetech + 4);
     document.getElementById(a).innerHTML = aoetechP;
 }
 
