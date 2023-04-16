@@ -1235,7 +1235,8 @@
         document.getElementById(a).style.display = "block";
         document.getElementById(b).style.opacity = 1;
         var aaposbo3 = a.substring(0, 3);
-        aaposbo4 = 'https://seicing.com/html/aoe2/index-aoembuildings.html?civ=' + aaposbo3;
+        var aaposbo4 = window.location.href;
+        aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
     }
 
