@@ -366,8 +366,8 @@ function hiddenPic() {
 function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
     var aoetechP = ayanami[a].substr(aoetech + 4);
-    if ($("." + a).length > 0) {
-        $("." + a).innerHTML = aoetechP;
+    if ($("#" + a).length > 0) {
+        $("#" + a).innerHTML = aoetechP;
     } else { }
 }
 
