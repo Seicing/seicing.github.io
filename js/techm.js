@@ -366,15 +366,16 @@ function hiddenPic() {
 function aoetechPoe(a) {
     var aoetech = ayanami[a].lastIndexOf("<br>");
     var aoetechP = ayanami[a].substr(aoetech + 4);
-    document.getElementById(a).innerHTML = aoetechP;
+    if ($("#" + a).length > 0) {
+        document.getElementById(a).innerHTML = aoetechP;
+    } else {
+
+    }
 }
 
 function aoetechPoeRush2() {
     for (let key in ayanami) {
-        var gasd2 = key.toString();
-        var aoetech = ayanami[gasd2].lastIndexOf("<br>");
-        var aoetechP = ayanami[gasd2].substr(aoetech + 4);
-        console.log(aoetechP);
-        document.getElementById(gasd2).innerHTML = aoetechP;
+        var gasdss = key.toString();
+        aoetechPoe(gasdss)
     }
 }
