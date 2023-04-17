@@ -357,7 +357,7 @@ function aoetechPoe(a) {
     var aoetech3 = aoetechP2.lastIndexOf("<br>");
     var aoetechP3 = aoetechP2.substr(aoetech3 + 4);
     if ($("." + a + "成本").length > 0) {
-        var x = document.getElementsByClassName(a);
+        var x = document.getElementsByClassName(a + "成本");
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].innerHTML = aoetechP3;
