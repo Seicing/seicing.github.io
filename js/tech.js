@@ -32,6 +32,8 @@ let ayanami = {
 
     "沸油": "沸油<br>Boiling Oil<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>大型箭塔增加沸油攻击，对接近的部队造成30伤害",
     "射击槽": "射击槽<br>Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>25  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为研发的单个哨站提供射箭能力，并使得驻扎的箭射程+1",
+
+    "射击槽hre": "射击槽<br>Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>18  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>37 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为研发的单个哨站提供射箭能力，并使得驻扎的箭射程+1",
     "手铳射击槽": "手铳射击槽<br>Handcannon Slits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>25  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为研发的单个哨站提供开枪能力，并使得驻扎的箭射程+1",
     "强化哨站": "强化哨站<br>Fortify Outpost<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为研发的单个哨站提供开枪能力，并使得驻扎的箭射程+1",
     "扭力弩炮炮台": "扭力弩炮炮台<br>Springald Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>125 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为研发的单个防御建筑安装一个扭力弩炮炮台",
@@ -210,6 +212,7 @@ let ayanami = {
     "酸蒸馏sul": "酸蒸馏<br>Acid Distillation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>村民收集黄金和石头效率+15%",
     "灰吹法sul": "灰吹法<br>Cupellation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>村民收集黄金和石头效率+15%",
 
+    "海军射箭槽hre": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>37 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
     "海军射箭槽sul": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
     "延绳钓sul": "延绳钓<br>Extended Lines<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>158<br>渔船效率+20%、运载量+10",
     "流刺网sul": "流刺网<br>Drift Nets<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>渔船效率+15%",
