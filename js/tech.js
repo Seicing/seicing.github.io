@@ -351,6 +351,19 @@ function aoetechPoe(a) {
             x[i].innerHTML = aoetechP;
         }
     } else { }
+
+    var aoetech2 = ayanami[a].lastIndexOf("<br>");
+    var aoetechP2 = ayanami[a].substr(0, aoetech2);
+    var aoetech3 = aoetechP2.lastIndexOf("<br>");
+    var aoetechP3 = aoetech3.substr(aoetech + 4);
+    if ($("." + a + "成本").length > 0) {
+        var x = document.getElementsByClassName(a);
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].innerHTML = aoetechP3;
+        }
+    } else { }
+
 }
 
 function aoetechPoeRush() {
