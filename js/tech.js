@@ -315,7 +315,33 @@ let ayanami = {
     "石料赏金已强化": "石料赏金(已强化)<br>Stone Bounty(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>325    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>点燃建筑带来的突袭获得125石头",
     "更多火炬已强化": "更多火炬(已强化)<br>Additional Torches(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>700    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵和步兵火炬伤害+5，如果已经研究了更多火炬，则所有骑兵和步兵火炬伤害+2",
     "石料商业已强化": "石料商业(已强化)<br>Stone Bounty(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>325    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>拥有20名或者更多的活跃商人时，贸易提供额外20%石料收入，如果已研发了石料商业，则只+10%",
-    "西哈弓臂已强化": "西哈弓臂(已强化)<br>Siha Bow Limbs(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>275    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>蒙古突骑和汗的远程伤害+2，如果已经研究了西哈弓臂，则蒙古突骑和汗的远程伤害+1"
+    "西哈弓臂已强化": "西哈弓臂(已强化)<br>Siha Bow Limbs(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>275    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>蒙古突骑和汗的远程伤害+2，如果已经研究了西哈弓臂，则蒙古突骑和汗的远程伤害+1",
+
+
+    "德里免费": "德里免费<br>文明固有加成：科技免费",
+
+    "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "神罗紧急修复": "神罗紧急修复<br>影响力系统：城镇中心影响力范围内可以执行紧急修理命令",
+    "神罗便宜炮台": "神罗便宜炮台<br>文明固有加成：额外炮台便宜25%(科技界面数据为结算后数据)",
+    "迈因维克宫殿效果": "迈因维克宫殿效果<br>迈因维克宫殿：研究成本-40%，研究效率+40%",
+
+    "黄金时代阶段I": "黄金时代阶段I<br>村民采集速度 +15%",
+    "黄金时代阶段II": "黄金时代阶段II<br>村民采集速度 +15%、研究速度 +15%",
+    "黄金时代阶段III": "黄金时代阶段III<br>村民采集速度 +20%、研究速度 +20%、生产速度 +20%",
+    "智慧宫效果": "智慧宫效果<br>智慧宫：影响范围内火焰护甲+5",
+
+    "中国加速建造": "中国加速建造<br>文明固有加成：建造速度+100%",
+    "朝廷命官效果": "朝廷命官效果<br>朝廷命官：监督提升150%生产效率",
+    "灵道效果": "灵道效果<br>灵道：影响力范围内朝代单位成本-30%",
+
+    "埃尔茨巴赫宫殿": "埃尔茨巴赫宫殿<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿": "埃尔茨巴赫宫殿<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿": "埃尔茨巴赫宫殿<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿": "埃尔茨巴赫宫殿<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿": "埃尔茨巴赫宫殿<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿": "埃尔茨巴赫宫殿<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+
+
 }
 
 function showPic(e, taitou) {
