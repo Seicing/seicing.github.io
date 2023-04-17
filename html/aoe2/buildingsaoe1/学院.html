@@ -80,6 +80,7 @@
 
 
 <div id="techno"></div>
+<div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -106,12 +107,32 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    在政府中心研究<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学后生命值可以达到420，并降低建造时间
+
     <ul>
-        <li>马其顿：抗转化能力4倍 </li>
-        <li>罗马：建造成本-10%</li>
-        <li>巴尔米拉团队加成：科技研究效率+30%</li>
+        <li>马其顿：<span class="马其顿加成4"></span></li>
+        <li>罗马：<span class="罗马加成1"></span></li>
+        <li>巴尔米拉团队加成：<span class="巴尔米拉加成5"></span></li>
     </ul>
+    <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">科技收益</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(+20%) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建造时间</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(-33%)<br>
+            </td>
+        </tr>
+    </table>
+
+
+
 </div>
 
 <br><br><br>
@@ -126,60 +147,20 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td><span style="color:#6e6e85">图标</span></td>
-            <td><span style="color:#6e6e85">名称</span></td>
-            <td><span style="color:#6e6e85">加成效果</span></td>
-        </tr>
 
 
+    <b>生产部队</b>
+    <ul>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/HopliteDE.webp" width="20px"><a onmouseout="hiddenPic();"
+                href="https://seicing.com/html/aoe2/unitaoe1/甲兵" onmousemove="showPic(event,'甲兵');" style="color:#0010ff">甲兵</a></li>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/PhalanxDE.webp" width="20px"><a onmouseout="hiddenPic();"
+                href="https://seicing.com/html/aoe2/unitaoe1/方阵兵" onmousemove="showPic(event,'方阵兵');" style="color:#0010ff">方阵兵</a></li>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/CenturionDE.webp" width="20px"><a onmouseout="hiddenPic();"
+                href="https://seicing.com/html/aoe2/unitaoe1/百夫长" onmousemove="showPic(event,'百夫长');" style="color:#0010ff">百夫长</a></li>
 
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="3"><span style="color:#6e6e85">青铜时代</span></td>
-        </tr>
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/HopliteDE.webp" width="40px"></td>
-            <td>甲兵(Hoplite)</td>
-            <td>60食物、40黄金、36秒 <br> 生产甲兵</td>
-        </tr>
-
-
-
+    </ul>
 
 
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="3"><span style="color:#6e6e85">铁器时代</span></td>
-        </tr>
-
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Phalanxupgrade.webp" width="40px"></td>
-            <td>方阵兵(Phalanx)</td>
-            <td>300食物、100黄金、90秒 <br> 把甲兵升级到方阵兵</td>
-        </tr>
-
-
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/PhalanxDE.webp" width="40px"></td>
-            <td>方阵兵(Phalanx)</td>
-            <td>60食物、40黄金、36秒 <br> 生产方阵兵</td>
-        </tr>
-
-
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Centurion1.webp" width="40px"></td>
-            <td>百夫长(Centurion)</td>
-            <td>1800食物、700黄金、150秒 <br> 把方阵兵升级到百夫长</td>
-        </tr>
-
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/CenturionDE.webp" width="40px"></td>
-            <td>百夫长(Centurion)</td>
-            <td>60食物、40黄金、36秒 <br> 生产百夫长</td>
-        </tr>
-
-
-    </table>
 
 </div>
 

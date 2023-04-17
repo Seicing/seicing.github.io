@@ -92,6 +92,7 @@
 
 
 <div id="techno"></div>
+<div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -119,14 +120,35 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    在政府中心研究<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学后生命值可以达到720，并降低建造时间
+
     <ul>
-        <li>希腊：工具时代开始市镇中心的工作效率+10% </li>
-        <li>罗马：建造成本-10%</li>
-        <li>殷商团队加成：市镇中心提供4人口</li>
-        <li>苏美尔团队加成：市镇中心便宜25%</li>
-        <li>巴尔米拉团队加成：科技研究效率+30%</li>
+        <li>希腊：<span class="希腊加成1"></span></li>
+        <li>罗马：<span class="罗马加成1"></span></li>
+        <li>殷商团队加成：<span class="殷商加成4"></span></li>
+        <li>苏美尔团队加成：<span class="苏美尔加成5"></span></li>
+        <li>巴尔米拉团队加成：<span class="巴尔米拉加成5"></span></li>
     </ul>
+    <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">科技收益</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(+20%) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建造时间</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(-33%)<br>
+            </td>
+        </tr>
+    </table>
+
+
+
+
 
 
 </div>
@@ -143,51 +165,32 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td><span style="color:#6e6e85">图标</span></td>
-            <td><span style="color:#6e6e85">名称</span></td>
-            <td><span style="color:#6e6e85">加成效果</span></td>
-        </tr>
-
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="3"><span style="color:#6e6e85">石器时代</span></td>
-        </tr>
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Villager.webp" width="40px"></td>
-            <td>村民(Villager)</td>
-            <td>50食物、20秒 <br> 生产村民</td>
-        </tr>
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ToolAgeIcon.webp" width="40px"></td>
-            <td>工具时代(Tool Age)</td>
-            <td>500食物、120秒 <br> 升级到工具时代</td>
-        </tr>
-
-
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="3"><span style="color:#6e6e85">工具时代</span></td>
-        </tr>
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/BronzeAgeIcon.webp" width="40px"></td>
-            <td>青铜时代(Bronze Age)</td>
-            <td>800食物、140秒 <br> 升级到青铜时代</td>
-        </tr>
 
 
 
 
-        <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="3"><span style="color:#6e6e85">青铜时代</span></td>
-        </tr>
-        <tr>
-            <td><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/IronAgeIcon.webp" width="40px"></td>
-            <td>铁器时代(Iron Age)</td>
-            <td>1000食物、800黄金、160秒 <br> 升级到铁器时代</td>
-        </tr>
+
+    <b>生产部队</b>
+    <ul>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Villager.webp" width="20px"><a onmouseout="hiddenPic();"
+                href="https://seicing.com/html/aoe2/unitaoe1/村民" onmousemove="showPic(event,'村民');" style="color:#0010ff">村民</a></li>
+    </ul>
 
 
-    </table>
+    <b>研发科技</b>
+    <ul>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ToolAgeIcon.webp" width="20px"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'工具时代');" style="color:#0010ff">工具时代</a><br></li>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/BronzeAgeIcon.webp" width="20px"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'青铜时代');" style="color:#0010ff">青铜时代</a><br></li>
+        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/IronAgeIcon.webp" width="20px"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁器时代');" style="color:#0010ff">铁器时代</a><br></li>
+    </ul>
+
+
+
+
+
 
 </div>
 
