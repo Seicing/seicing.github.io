@@ -112,14 +112,6 @@
                     ×2.0对方尖塔<br>
                 </td>
             </tr>
-            <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
-                <td>
-                    <a id="eykButton1" href="javascript:void(0);" onclick="tipsg('eykText1','eykButton1','1')"
-                        style="color:#0010ff">英雄化
-                    </a>
-                </td>
-            </tr>
         </table>
     </div>
     <div id="eykText1" style="text-align: center;display:none ">
@@ -204,16 +196,6 @@
                     ×5.0对赛特动物<br>
                 </td>
             </tr>
-
-            <tr style="text-align: left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
-                <td>
-                    <a id="atlButton1" href="javascript:void(0);" onclick="tipsg('atlText1','atlButton1','1')"
-                        style="color:#0010ff">正常化</a>
-                </td>
-            </tr>
-
-
         </table>
     </div>
 </div>
@@ -228,8 +210,20 @@
 
     剑斗士是神话时代：泰坦引入的亚特兰蒂斯势力的基础步兵，和希腊步兵定位相似，速度更快，跟希腊步兵一样被认为是对骑兵的软反击单位，对上更为强大的骑兵部队则是很难发挥出其功能<br><br>
     和其他步兵一样，剑斗士远程防御力低下，很害怕弓箭手的袭击<br><br>
-    所有亚特兰蒂斯人类部队都可以<a id="eykButton1" href="javascript:void(0);" onclick="tipsg('eykText1','eykButton1','1')"
-        style="color:#0010ff">英雄化</a>，英雄化之后的剑斗士获得对抗神兽的能力
+
+
+    <div id="atlText3" style="text-align: left;display:none ">
+        此单位已经英雄化，<a id="atlButton1" href="javascript:void(0);" onclick="tipsg('eykText1','eykButton1','1')"
+            style="color:#0010ff">点击这里恢复为正常模式</a>
+    </div>
+    <div id="eykText3" style="text-align: left;display:none ">
+        所有亚特兰蒂斯人类部队都可以<a id="eykButton1" href="javascript:void(0);" onclick="tipsg('eykText1','eykButton1','1')"
+            style="color:#0010ff">英雄化</a>，英雄化之后的剑斗士获得对抗神兽的能力
+    </div>
+
+
+
+
 
 
 
@@ -430,16 +424,13 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
     <div id="atlText2" style="text-align: left;display:none ">
         这位剑斗士已经成为一位英雄。和一般的剑斗士一样，他对骑兵的攻击力较强，但是当面对弓兵则力不从心。不过，身为一位英雄，他在面对神兽部队时就颇有成效。所有的英雄都可以捡起圣器
     </div>
-
     <div id="eykText2" style="text-align: left;display:none ">
         剑斗士是亚特兰蒂斯的主要步兵。他们擅于对付骑兵，却不擅于对付如希腊弓兵的弓箭手，或像掷斧兵或特种步兵这类的反步兵部队
     </div>
-
-    <br><br>
+    <br>
     亚特兰蒂斯的战士与士兵因为他们的纪律与操练闻名。剑斗士在日出之前就开始操练直到日落。他们被称为剑斗士或鱼盔步兵，是因为他们那闪亮、像鱼鳍般的头盔让他们在战斗时看起来像是一群鱼。他们与毁灭者相互竞争，但也敬重他们。毁灭者认为剑斗士是在他们之下，关系就像是渔夫与鱼一样
 </div>
 
@@ -504,7 +495,10 @@
                     
 <a id="eykButton0" href="javascript:void(0);" onclick="tipsg('eykText0','eykButton0','0')" style="opacity:0.3"></a>
 <a id="atlButton0" href="javascript:void(0);" onclick="tipsg('atlText0','atlButton0','0')" style="opacity:0.3"></a>
-<br><br>
+<a id="eykButton2" href="javascript:void(0);" onclick="tipsg('eykText2','eykButton2','2')" style="opacity:0.3"></a>
+<a id="atlButton2" href="javascript:void(0);" onclick="tipsg('atlText2','atlButton2','2')" style="opacity:0.3"></a>
+<a id="eykButton3" href="javascript:void(0);" onclick="tipsg('eykText3','eykButton3','3')" style="opacity:0.3"></a>
+<a id="atlButton3" href="javascript:void(0);" onclick="tipsg('atlText3','atlButton3','3')" style="opacity:0.3"></a>
 <a href="https://seicing.com/html/aoe2/index-aoemunits.html?civ=atl" id="blacktou2"><b>回到首页</b></a>
 
                 </div>
@@ -528,12 +522,18 @@
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
+        cleargasek(2);
+        cleargasek(3);
         a = a.substring(0, a.length - 1);
         b = b.substring(0, b.length - 1);
         document.getElementById(a + '0').style.display = "block";
         document.getElementById(b + '0').style.opacity = 1;
         document.getElementById(a + '1').style.display = "block";
         document.getElementById(b + '1').style.opacity = 1;
+        document.getElementById(a + '2').style.display = "block";
+        document.getElementById(b + '2').style.opacity = 1;
+        document.getElementById(a + '3').style.display = "block";
+        document.getElementById(b + '3').style.opacity = 1;
     }
 
     function cleargasek(a) {
@@ -561,8 +561,12 @@
         var tipsp1 = getQueryVariable("civ")
         var tipsp2 = tipsp1 + "Button0";
         var tipsp3 = tipsp1 + "Button1";
+        var tipsp4 = tipsp1 + "Button2";
+        var tipsp5 = tipsp1 + "Button3";
         document.getElementById(tipsp2).click();
         document.getElementById(tipsp3).click();
+        document.getElementById(tipsp4).click();
+        document.getElementById(tipsp5).click();
     }
 
 
