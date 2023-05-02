@@ -213,7 +213,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizCloseEye",
-        "string": "看起来伊丽丝给了你很多麻烦啊，皇帝陛下",
+        "string": "看起来伊丽丝给了你很多麻烦啊，皇帝阁下",
         "special": "dia2"
     },
     {
@@ -331,6 +331,132 @@
     {
         "branch": "branch0",
         "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "好，好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "从我们遥远的先祖埃提奥开始，我们就一直恪守着“伊拉修莱德的信条”",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……勇者埃提奥",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "……对艾特拉塔历史也颇有认识啊，渊博的皇帝阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "勇者也有很多难堪的历史啊，作为他的后裔……我们对一切都很清楚",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "勇者在父亲和兄长们全部阵亡后成为入侵者的爪牙什么的，写出来了这个勇者就会被人质疑了吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "实力不如别人的时候，盲目送死是愚蠢的，埃提奥的过去我不知道，但是他最后成功了……这就说明他的做法是对的吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "不愧是同样拥有被诅咒的血脉的同类啊，你的思考模式很像我们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "我们伊拉修莱德家族能一直走到现在就是依靠着我们这股执念",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "在数千年的历史里我们也不是没有当过奴隶，没有当过乞丐，没有当过流氓",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "荣耀……只是一些虚无缥缈的东西，伊拉修莱德的孩子们为了自己的目的，可以舍弃一切荣耀",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "但是似乎好像到了最后都把我们伊拉修莱德一族称为艾特拉塔的荣耀了呢，明明不是我们想要追求的东西",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "并不是为了荣耀，而是为了自己的目的……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "没错",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "皇帝阁下……伊拉修莱德的孩子不会因为世俗的眼光而不去勇敢地追求自己想要的东西",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizCloseEye",
+        "string": "我会尊重伊丽丝的一切决定",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……这就是您此行的目的吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
         "face": "AzizDefault",
         "string": "你是聪明人",
         "special": "dia2"
@@ -346,7 +472,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizCloseEye",
-        "string": "再见了，皇帝陛下，希望下次还可以和你再会……并且直呼你的名字",
+        "string": "再见了，皇帝阁下，希望下次还可以和你再会……并且直呼你的名字",
         "special": "dia2"
     },
     {
