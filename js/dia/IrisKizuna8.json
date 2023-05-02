@@ -218,44 +218,16 @@
     },
     {
         "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "作为艾特拉塔之盾的我们，这种狡诈是必须的，这是我们的不幸",
-        "special": "dia2"
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没有的事，伊丽丝她非常善解人意",
+        "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "我们从懂事那时候起就要学习如何保护这个国家……用尽一切手段和代价",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "我的两个孩子跟我这个家伙不同，天性莫名其妙的纯良，无法狠下心来的人无法成为王",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "让她去和贵族联姻其实是伊拉修莱德式的传统……巩固了权力，同时远离了斗争，这是伊拉修莱德式的爱",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "不过啊……伊丽丝和我不同，保持了纯良的同时，从你身上学会了何为王的气量",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "阿齐兹王",
-        "face": "AzizDefault",
-        "string": "如果这就是她对“责任”这个词的理解，也还不错……我也可以放心了",
+        "face": "AzizHappy",
+        "string": "嘿，客套话就免了，她是我女儿，她是什么人我还是非常清楚的",
         "special": "dia2"
     },
     {
@@ -402,7 +374,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "在数千年的历史里我们也不是没有当过奴隶，没有当过乞丐，没有当过流氓",
+        "string": "在数千年的历史里我们也不是没有当过奴隶、乞丐和流氓",
         "special": "dia2"
     },
     {
@@ -423,7 +395,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "并不是为了荣耀，而是为了自己的目的……",
+        "string": "并不是为了荣耀，而是遵循自己的本心……",
         "special": "dia1"
     },
     {
@@ -443,8 +415,15 @@
     {
         "branch": "branch0",
         "name": "阿齐兹王",
+        "face": "AzizDefault",
+        "string": "伊丽丝从你身上学到了很多东西，她已经是一个不需要我担心的优秀的伊拉修莱德后裔了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
         "face": "AzizCloseEye",
-        "string": "我会尊重伊丽丝的一切决定",
+        "string": "……我会尊重伊丽丝的一切决定的",
         "special": "dia2"
     },
     {
