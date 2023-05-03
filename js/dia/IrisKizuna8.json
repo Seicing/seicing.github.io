@@ -212,8 +212,15 @@
     {
         "branch": "branch0",
         "name": "阿齐兹王",
-        "face": "AzizCloseEye",
-        "string": "看起来伊丽丝给了你很多麻烦啊，皇帝阁下",
+        "face": "AzizHappy",
+        "string": "这就是所谓的伊拉修莱德风格",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "看起来伊丽丝给了你很多麻烦啊，阁下",
         "special": "dia2"
     },
     {
@@ -409,7 +416,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "皇帝阁下……伊拉修莱德的孩子不会因为世俗的眼光而不去勇敢地追求自己想要的东西",
+        "string": "阁下……伊拉修莱德的孩子不会因为世俗的眼光而不去勇敢地追求自己想要的东西",
         "special": "dia2"
     },
     {
@@ -451,7 +458,14 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizCloseEye",
-        "string": "再见了，皇帝阁下，希望下次还可以和你再会……并且直呼你的名字",
+        "string": "再见了，皇帝阁下，希望下次还可以和你再会……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿齐兹王",
+        "face": "AzizHappy",
+        "string": "并且到时候可以直呼你的名字",
         "special": "dia2"
     },
     {
