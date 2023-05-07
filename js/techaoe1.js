@@ -126,7 +126,7 @@ let ayanami = {
     "青铜时代": "青铜时代<br>Bronze Age<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>140<br>升级到青铜时代",
     "铁器时代": "铁器时代<br>Iron Age<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>1000 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>160<br>升级到铁器时代",
 
-    "神权": "神权<br>Theocracy<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>待补充 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>待补充  <br>待补充",
+    "神权": "神权<br>Theocracy<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>待补充  <br>多个祭司转化后只有一个祭司消耗能量",
 
     "埃及加成1": "埃及加成1<br>农场便宜20%",
     "埃及加成2": "埃及加成2<br>采金效率+20%，矿工每次多承载2黄金",
