@@ -197,6 +197,13 @@
     },
     {
         "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingNORF",
+        "string": "伊丽……你……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
         "name": "伊丽丝",
         "face": "Iris2DepressedCERF",
         "string": "对不起，让我任性一回吧",
@@ -204,38 +211,17 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingCloseEyeNORF",
-        "string": "伊丽……你……",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
         "name": "伊丽丝",
-        "face": "Iris2SerenityRF",
-        "string": "如果造成了你的困惑……我会郑重和你道歉的",
+        "face": "Iris2Shy",
+        "string": "这只是一场梦……梦醒了，现在是什么都不记得的时候了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingNORF",
-        "string": "……没有的事……但是……",
+        "string": "……嗯",
         "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2SerenityRF",
-        "string": "我明白的……今天的事情，就当是一场梦吧",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "Iris2DepressedCERF",
-        "string": "……",
-        "special": "dia2"
     },
     {
         "branch": "branch0",
@@ -248,7 +234,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEyeNO",
-        "string": "嗯……",
+        "string": "麻烦你了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEyeNO",
+        "string": "……",
         "special": "dia1"
     },
     {
