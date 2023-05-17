@@ -13,7 +13,15 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOEDIC.html', function () {
             document.getElementById("techno").style.display = "block";
-
+            document.getElementById("cx").style.opacity = "0.3";
+            document.getElementById("aj").style.opacity = "0.3";
+            document.getElementById("mqd").style.opacity = "0.3";
+            document.getElementById("mns").style.opacity = "0.3";
+            document.getElementById("bs").style.opacity = "0.3";
+            document.getElementById("fnj").style.opacity = "0.3";
+            document.getElementById("lm").style.opacity = "0.3";
+            document.getElementById("dh").style.opacity = "0.3";
+            document.getElementById("ly").style.opacity = "0.3";
         })
     })
 </script>
@@ -34,10 +42,10 @@
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
     <table width="250px" frame="box" cellpadding="5">
         <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="2"><span style="color:#6e6e85">贸易马车(Trade Cart)</span></td>
+            <td colspan="2"><span style="color:#6e6e85">火艨艟(Fire Galley)</span></td>
         </tr>
         <tr style="text-align: center">
-            <td colspan="2"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/商人.jpg" width="128px"></td>
+            <td colspan="2"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/10_Fire_Galley.webp"></td>
         </tr>
 
         <tr style="background-color:#F5F8FA;text-align: center">
@@ -45,11 +53,11 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">兵种类型</span></td>
-            <td>平民</td>
+            <td>军舰</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">时代</span></td>
-            <td>青铜时代</td>
+            <td>铁器时代</td>
         </tr>
 
         <tr style="background-color:#F5F8FA;text-align: center">
@@ -57,24 +65,27 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">产地</span></td>
-            <td>市场</td>
+            <td>码头</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">成本</span></td>
-            <td><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>75 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>60</td>
+            <td> <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>115 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>40</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">训练时间</span></td>
-            <td>【待补充】</td>
+            <td>30秒</td>
         </tr>
-
 
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="2"><span style="color:#6e6e85">状态数据</span></td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
-            <td>70</td>
+            <td>200</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(近战)</span></td>
+            <td>24</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲(护甲)</span></td>
@@ -84,15 +95,30 @@
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲(盾牌)</span></td>
             <td>0</td>
         </tr>
-
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
-            <td>【待补充】</td>
+            <td>8</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-            <td>【待补充】</td>
+            <td>2.0</td>
         </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击间隔时间</span></td>
+            <td>1.0</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
+            <td>1</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击加成</span></td>
+            <td>
+                -5对火艨艟<br>
+                -10对建筑物
+            </td>
+        </tr>
+
 
     </table>
 </div>
@@ -107,7 +133,16 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    贸易马车是罗马归来版本引入的经济部队，在青铜时代研发车轮后就可以在市场接受训练，和帝国时代2的贸易车一样，可以前往一个友方的市场或码头进行贸易产生黄金，距离越远产生的黄金越多
+    火艨艟是罗马复兴版本引入的战舰，作为那些无法使用投石型三桨座战船的文明的补充，到达铁器时代就可以在码头建造，不需要任何额外科技
+    <br><br>
+
+    火艨艟被视为额外单位，所以使用完全科技游戏的场合它无法被建造，因为它是投石型三桨座战船的替代，决定版玩家可以在完全科技游戏同时使用投石型三桨座战船和火艨艟了，因为决定版将其修改为不同的单位
+    <br><br>
+
+    它们是帝国时代2的喷火船的前身，它们拥有24的高攻击力以及极快的射速，所以在一对一它们可以轻松击败其它战船，然而他们受攻城武器和投石型三桨座战船的额外伤害，所以它们应当远离敌人的海岸，在开阔的水域中进行战斗，躲开敌人塔楼和攻城武器的攻击
+
+    <br><br>
+    亚述、巴比伦、迦太基、希腊、赫梯、巴尔米拉、殷商、苏美尔可以使用火艨艟
 </div>
 
 <br><br><br>
@@ -118,7 +153,34 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    无
+    <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">单位对抗</span></td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">对其有利</span></td>
+            <td>船只</td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">对其不利</span></td>
+            <td>投石型三桨座战船、攻城武器</td>
+        </tr>
+        <tr style="background-color:#F5F8FA;text-align: center">
+            <td colspan="2"><span style="color:#6e6e85">科技收益</span></td>
+        </tr>
+
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Alchemy.webp" width="20px">炼金术(+6) <br>
+            </td>
+        </tr>
+
+
+
+
+
+    </table>
 
 
 
@@ -133,9 +195,16 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
     <ul>
-        <li>巴尔米拉：<span class="巴尔米拉加成4"></span></li>
+        <li>迦太基：<span class="迦太基加成3"></span></li>
+        <li>希腊：<span class="希腊加成3"></span></li>
+
+        <li>迦太基团队加成：<span class="迦太基加成6"></span></li>
     </ul>
+
+
+
 </div>
 
 <br><br><br>
@@ -146,11 +215,17 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <b>罗马归来</b>
+
+    <b>原版</b>
     <ul>
-        <li>引入贸易马车 </li>
+        <li>希腊无法建造火艨艟</li>
 
     </ul>
+    <b>决定版</b>
+    <ul>
+        <li>希腊可以建造火艨艟</li>
+    </ul>
+
 
 </div>
 <br><br><br>
@@ -164,7 +239,7 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    【待补充】
+    船只由大量可燃材料(木头、布料、大麻和沥青)建成，所以火焰对于它们来说是致命的武器，古代水手们发明了几种方式来点燃敌方的战舰，例如发射燃烧的箭和弩炮弹，其次就是使用类似于莫洛托夫鸡尾酒的简陋燃烧手榴弹，一种装满了火油的瓶子，最复杂的就是使用一根杆子插在船首，燃烧的火盆被悬挂在杆子上，当船只接近敌舰后，切断连接两者的绳子让火盆掉落在敌人船上，让燃烧着的液体飞溅到敌人的甲板上
 </div>
 
 <br><br><br>
@@ -178,21 +253,31 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <ul>
+        <li>火艨艟基于拜占庭帝国的德罗蒙战舰以及希腊火，然而这两种东西至少在5世纪之后才被发明出来</li>
+        <li>火艨艟在原版是替代投石型三桨座战船的船只(除了朝鲜)，在38862版本更新后，希腊人可以同时使用投石型三桨座战船和火艨艟，这也使得他们成为唯一可以使用全部舰船的文明</li>
+        <li>研究炼金术的迦太基火艨艟攻击力高达36，为军舰最高 </li>
+    </ul>
     <table id="empire" frame="box">
         <tr>
 
             <td>
-                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/【待补充】.png" target="_blank">
-                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/【待补充】.png"></a>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/u_all_fire_galley_x4_13.png" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/u_all_fire_galley_x4_13.png"></a>
             </td>
-
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Fire_Galley_render.webp" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Fire_Galley_render.webp"></a>
+            </td>
         </tr>
         <tr>
 
             <td style="background-color:#F5F8FA;text-align: center">
-                贸易马车
+                火艨艟
             </td>
-
+            <td style="background-color:#F5F8FA;text-align: center">
+                火艨艟的原版渲染图
+            </td>
         </tr>
 
 
