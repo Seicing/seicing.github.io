@@ -673,6 +673,20 @@
     },
     {
         "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "我是“狼”，你是“鹿”，而其他西景人的主体跟我们一样是野兽的“猫”……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDefault",
+        "string": "“猫州”……大河的源头……西景人的起源……感觉这是比我们认知的历史更之前的更加传说的故事呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
         "string": "……余，比我想象中的聪慧呢",
@@ -696,7 +710,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingCloseEye",
-        "string": "做得很不错，余",
+        "string": "不愧是我的老婆",
         "special": "dia1"
     },
     {
