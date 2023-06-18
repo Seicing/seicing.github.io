@@ -286,7 +286,7 @@ let ayanami = {
     "宁静之地sul": "宁静之地<br>Tranquil Venue<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>清真寺附近会自动回复单位生命值，每秒2",
     "瞭望塔sul": "瞭望塔<br>Lookout Towers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>哨站视野+50%，武器射程+1",
     "珩磨剑刃sul": "珩磨剑刃<br>Honed Blades<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>武士和骑士近战伤害+3",
-    "丰衣足食sul": "丰衣足食<br>Hearty Rations<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>720<br>村民运载量+5",
+    "丰衣足食sul": "丰衣足食<br>Hearty Rations<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>村民运载量+5",
 
     "纺织品已强化": "纺织品(已强化)<br>Textiles(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>150    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>村民生命值+50，如果已研究了纺织品，则只会+25",
 
@@ -348,6 +348,9 @@ let ayanami = {
     "手稿贸易效果": "手稿贸易效果<br>手稿贸易：研发科技后驻扎学者码头效率+30%",
     "德里木造防御": "德里木造防御<br>边界防御工事：步兵可以建造木制防御设施",
     "德里渔船": "德里渔船<br>防御水手：德里渔船武装自己，生命值+50%，配有一名7攻击力的步弓手",
+    "德里封建升级": "德里城堡升级<br>学术成就：升级到坚韧等级只需要52秒，无需额外资源",
+    "德里城堡升级": "德里城堡升级<br>学术成就：升级到老练等级只需要300秒，无需额外资源",
+    "德里帝王升级": "德里帝王升级<br>学术成就：升级到精锐等级只需要720秒，无需额外资源",
 
 
     "迈因维克宫殿效果": "迈因维克宫殿效果<br>迈因维克宫殿：研究成本-40%，研究效率+40%",
