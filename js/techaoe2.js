@@ -734,7 +734,7 @@ function showPic2(e) {
     aasb.style.width = "250px";
     aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
     aasb.style.padding = "10px";
-    aasb.style.left = x - 272 + 'px';
+    aasb.style.left = x - 285 + 'px';
     aasb.style.top = y + 2 + 'px';
 }
 
