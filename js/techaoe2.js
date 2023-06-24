@@ -861,3 +861,13 @@ function Bloodlines() {
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Koreans2").style.opacity = "0.15";
 }
+
+function Husbandry() {
+    document.getElementById("Aztecs2").style.opacity = "0.15";
+    document.getElementById("Cumans2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").style.opacity = "0.15";
+    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Mayans2").style.opacity = "0.15";
+    document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Vikings2").style.opacity = "0.15";
+}
