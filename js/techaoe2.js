@@ -684,7 +684,6 @@ function showPic2(e) {
     aasb = document.getElementById("Layer1");
     aasb.style.display = "";
     aasb.style.width = "250px";
-    aasb.innerHTML = "<div style='background:rgba(0,0,0,0.75);padding:5px'>" + load('https://seicing.com/js/list/AOE2DIC2.html') + "</div>";
     var div = aasb;
     var z = div.offsetWidth;
 
@@ -697,6 +696,16 @@ function showPic2(e) {
     }
 }
 
+function hiddenPic2() {
+    var aasb = document.getElementById("Layer1");
+    aasb.style.display = "none";
+    document.getElementById("Byzantines2").style.opacity = "1";
+    document.getElementById("Gurjaras2").style.opacity = "1";
+    document.getElementById("Koreans2").style.opacity = "1";
+    document.getElementById("Lithuanians2").style.opacity = "1";
+    document.getElementById("Malians2").style.opacity = "1";
+    document.getElementById("Vietnamese2").style.opacity = "1";
+}
 
 function BlastFurnace() {
     document.getElementById("Byzantines2").style.opacity = "0.3";
