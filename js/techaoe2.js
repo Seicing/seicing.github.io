@@ -685,11 +685,9 @@ function showPic2(e) {
     aasb.style.display = "";
     aasb.style.width = "250px";
     aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
-    aasb.style.padding = "5px";
-
+    aasb.style.padding = "10px";
     aasb.style.left = x - 252 + 'px';
     aasb.style.top = y + 2 + 'px';
-
 }
 
 function hiddenPic2() {
@@ -705,14 +703,14 @@ function hiddenPic2() {
 }
 
 function BlastFurnace() {
-    document.getElementById("Byzantines2").style.opacity = "0.3";
-    document.getElementById("Gurjaras2").style.opacity = "0.3";
-    document.getElementById("Koreans2").style.opacity = "0.3";
-    document.getElementById("Lithuanians2").style.opacity = "0.3";
-    document.getElementById("Malians2").style.opacity = "0.3";
-    document.getElementById("Vietnamese2").style.opacity = "0.3";
+    document.getElementById("Byzantines2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Koreans2").style.opacity = "0.15";
+    document.getElementById("Lithuanians2").style.opacity = "0.15";
+    document.getElementById("Malians2").style.opacity = "0.15";
+    document.getElementById("Vietnamese2").style.opacity = "0.15";
 }
 
 function Arson() {
-    document.getElementById("Goths2").style.opacity = "0.3";
+    document.getElementById("Goths2").style.opacity = "0.15";
 }
