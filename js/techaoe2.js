@@ -705,6 +705,7 @@ function hiddenPic2() {
     document.getElementById("Lithuanians2").style.opacity = "1";
     document.getElementById("Malians2").style.opacity = "1";
     document.getElementById("Vietnamese2").style.opacity = "1";
+    document.getElementById("Goths2").style.opacity = "1";
 }
 
 function BlastFurnace() {
@@ -714,4 +715,8 @@ function BlastFurnace() {
     document.getElementById("Lithuanians2").style.opacity = "0.3";
     document.getElementById("Malians2").style.opacity = "0.3";
     document.getElementById("Vietnamese2").style.opacity = "0.3";
+}
+
+function Arson() {
+    document.getElementById("Goths2").style.opacity = "0.3";
 }
