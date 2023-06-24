@@ -674,4 +674,35 @@ function aoetechPoeRush() {
         var gasdss = key.toString();
         aoetechPoe(gasdss)
     }
-} 
+}
+
+function showPic2(e) {
+    var x, y, aasb;
+    x = e.pageX;
+    y = e.pageY;
+
+    aasb = document.getElementById("Layer1");
+    aasb.style.display = "";
+    aasb.style.width = "250px";
+    aasb.innerHTML = "<div style='background:rgba(0,0,0,0.75);padding:5px'>" + load('https://seicing.com/js/list/AOE2DIC2.html') + "</div>";
+    var div = aasb;
+    var z = div.offsetWidth;
+
+    if (x + z < document.body.clientWidth) {
+        aasb.style.left = x + 2 + 'px';
+        aasb.style.top = y + 2 + 'px';
+    } else {
+        aasb.style.left = x - (x + z - document.body.clientWidth) + 'px';
+        aasb.style.top = y + 2 + 'px';
+    }
+}
+
+
+function BlastFurnace() {
+    document.getElementById("Byzantines2").style.opacity = "0.3";
+    document.getElementById("Gurjaras2").style.opacity = "0.3";
+    document.getElementById("Koreans2").style.opacity = "0.3";
+    document.getElementById("Lithuanians2").style.opacity = "0.3";
+    document.getElementById("Malians2").style.opacity = "0.3";
+    document.getElementById("Vietnamese2").style.opacity = "0.3";
+}
