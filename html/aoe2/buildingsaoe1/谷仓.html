@@ -16,8 +16,10 @@
 
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
-
 <style>
     li {
         line-height: 20px
@@ -82,6 +84,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -116,19 +119,22 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(+20%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Architecture();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px"></a>建筑学(+20%) <br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建造时间</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(-33%)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Architecture();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px"></a>建筑学(-33%)<br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/City_Watch_tech_icon.webp" width="20px">城市守望(+3) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CityWatch();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/City_Watch_tech_icon.webp" width="20px"></a>城市守望(+3) <br>
             </td>
         </tr>
     </table>
@@ -150,21 +156,28 @@
 
     <b>研发科技</b>
     <ul>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_030.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_030.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究低矮城墙');" style="color:#0010ff">研究低矮城墙</a> (Ⅱ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_035.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_035.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究瞭望塔');" style="color:#0010ff">研究瞭望塔</a> (Ⅱ)</li>
 
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_032.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_032.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究稍高城墙');" style="color:#0010ff">研究稍高城墙</a> (Ⅲ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_050.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_050.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究警卫塔');" style="color:#0010ff">研究警卫塔</a> (Ⅲ)</li>
 
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_036.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Wall3();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_036.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究强化城墙');" style="color:#0010ff">研究强化城墙</a> (Ⅳ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_078.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Tower3();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_078.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究防卫塔');" style="color:#0010ff">研究防卫塔</a> (Ⅳ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_090.png" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Tower4();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/ui_techicons_090.png" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'研究弩炮塔');" style="color:#0010ff">研究弩炮塔</a> (Ⅳ)</li>
     </ul>
 </div>

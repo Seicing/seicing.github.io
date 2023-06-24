@@ -16,6 +16,9 @@
             document.getElementById("mqd").style.opacity = "0.3";
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
 <style>
     li {
@@ -119,6 +122,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -157,31 +161,38 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Mysticism.webp" width="20px">神秘论(祭司双倍生命值) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Mysticism();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Mysticism.webp" width="20px"></a>神秘论(祭司双倍生命值) <br>
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击距离</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Afterlife.webp" width="20px">冥世信仰(祭司转化范围+3) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Afterlife();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Afterlife.webp" width="20px"></a>冥世信仰(祭司转化范围+3) <br>
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Polytheism.webp" width="20px">多神论( 祭司移动速度+40%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Polytheism();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Polytheism.webp" width="20px"></a>多神论( 祭司移动速度+40%) <br>
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">强化转化</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Astrology.webp" width="20px">占星术(祭司转化效率+30%) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Fanaticism.webp" width="20px">盲信主义(祭司能量回复速度+50%) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Monotheism.webp" width="20px">一神论(祭司可以转化建筑物和其它祭司) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Martyrdom.webp" width="20px">牺牲(祭司死亡可以马上转化敌方部队) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Astrology();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Astrology.webp" width="20px"></a>占星术(祭司转化效率+30%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Fanaticism();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Fanaticism.webp" width="20px"></a>盲信主义(祭司能量回复速度+50%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Monotheism();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Monotheism.webp" width="20px"></a>一神论(祭司可以转化建筑物和其它祭司) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Martyrdom();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Martyrdom.webp" width="20px"></a>牺牲(祭司死亡可以马上转化敌方部队) <br>
             </td>
 
         </tr>
@@ -192,13 +203,15 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">治疗速度</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Medicine.webp" width="20px">医学(祭司治愈速度加快) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Medicine();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Medicine.webp" width="20px"></a>医学(祭司治愈速度加快) <br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Theocracy1.webp" width="20px">神权(多个祭司转化后只有一个祭司消耗能量) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Theocracy();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Theocracy1.webp" width="20px"></a>神权(多个祭司转化后只有一个祭司消耗能量) <br>
             </td>
         </tr>
 

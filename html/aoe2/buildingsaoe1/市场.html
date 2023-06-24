@@ -16,8 +16,10 @@
 
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
-
 <style>
     li {
         line-height: 20px
@@ -81,6 +83,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -119,19 +122,22 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(+20%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Architecture();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px"></a>建筑学(+20%) <br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建造时间</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px">建筑学(-33%)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Architecture();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Architecture_aoe.webp" width="20px"></a>建筑学(-33%)<br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/City_Watch_tech_icon.webp" width="20px">城市守望(+3) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CityWatch();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/City_Watch_tech_icon.webp" width="20px"></a>城市守望(+3) <br>
             </td>
         </tr>
     </table>
@@ -165,27 +171,38 @@
 
     <b>研发科技</b>
     <ul>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Woodworkingicon.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Woodworkingicon.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'木材利用');" style="color:#0010ff">木材利用</a> (Ⅱ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'石矿开采');" style="color:#0010ff">石矿开采</a> (Ⅱ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Gold_Mining.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Gold_Mining.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'金矿开采');" style="color:#0010ff">金矿开采</a> (Ⅱ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Domestication.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Domestication.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'驯化术');" style="color:#0010ff">驯化术</a> (Ⅱ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Artisanship.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li><a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Artisanship.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'工艺');" style="color:#0010ff">工艺</a> (Ⅲ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Wheelicon.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Wheelicon.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'车轮');" style="color:#0010ff">车轮</a> (Ⅲ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/PlowAOE.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/PlowAOE.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'犁');" style="color:#0010ff">犁</a> (Ⅲ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Craftsmanship.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li><a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Craftsmanship();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Craftsmanship.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'精湛工艺');" style="color:#0010ff">精湛工艺</a> (Ⅳ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Siegecraft();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'攻城术');" style="color:#0010ff">攻城术</a> (Ⅳ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Coinage.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Coinage.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'铸币术');" style="color:#0010ff">铸币术</a> (Ⅳ)</li>
-        <li> <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Irrigation_AOE.webp" width="20px"><a onmouseout="hiddenPic();"
+        <li> <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Irrigation();"><img
+                    src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Irrigation_AOE.webp" width="20px"></a><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'灌溉术');" style="color:#0010ff">灌溉术</a> (Ⅳ)</li>
     </ul>
 

@@ -282,6 +282,28 @@ function aoetechPoeRush() {
     }
 }
 
+
+
+function CommonAllTech() {
+    document.getElementById("Egyptians2").style.opacity = "1";
+    document.getElementById("Assyrians2").style.opacity = "1";
+    document.getElementById("Hittites2").style.opacity = "1";
+    document.getElementById("Babylonians2").style.opacity = "1";
+    document.getElementById("Persians2").style.opacity = "1";
+    document.getElementById("Sumerians2").style.opacity = "1";
+    document.getElementById("Greeks2").style.opacity = "1";
+    document.getElementById("Minoans2").style.opacity = "1";
+    document.getElementById("Phoenicians2").style.opacity = "1";
+    document.getElementById("Shang2").style.opacity = "1";
+    document.getElementById("Yamato2").style.opacity = "1";
+    document.getElementById("Choson2").style.opacity = "1";
+    document.getElementById("LacViet2").style.opacity = "1";
+    document.getElementById("Romans2").style.opacity = "1";
+    document.getElementById("Carthaginians2").style.opacity = "1";
+    document.getElementById("Macedonians2").style.opacity = "1";
+    document.getElementById("Palmyrans2").style.opacity = "1";
+}
+
 function showPic2(e) {
     var x, y, aasb;
     x = e.pageX;
@@ -292,7 +314,7 @@ function showPic2(e) {
     aasb.style.width = "250px";
     aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
     aasb.style.padding = "10px";
-    aasb.style.left = x - 252 + 'px';
+    aasb.style.left = x - 272 + 'px';
     aasb.style.top = y + 2 + 'px';
 }
 
@@ -300,4 +322,235 @@ function hiddenPic2() {
     var aasb = document.getElementById("Layer2");
     aasb.style.display = "none";
     CommonAllTech()
+}
+
+function Architecture() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+}
+function CityWatch() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Egyptians2").style.opacity = "0.15";
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+}
+function Alchemy() {
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+}
+function Craftsmanship() {
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+}
+function Urbanization() {
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Astrology() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Mysticism() {
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Polytheism() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+}
+function Afterlife() {
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+}
+function Fanaticism() {
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Medicine() {
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Monotheism() {
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+}
+function Theocracy() {
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Jihad() {
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+
+function Martyrdom() {
+    document.getElementById("Egyptians2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Babylonians2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+}
+function Siegecraft() {
+    document.getElementById("Egyptians2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+}
+function Irrigation() {
+    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+}
+function Nobility() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+}
+function Logistics() {
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+}
+function Aristocracy() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+}
+function Engineering() {
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+}
+function Conscription() {
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+}
+function Wall3() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+}
+function Tower3() {
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+}
+function Tower4() {
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Minoans2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Shang2").style.opacity = "0.15";
+}
+function Bronzeshield() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Egyptians2").style.opacity = "0.15";
+}
+function Metallurgy() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Greeks2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+}
+function Chainmailinfantry() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+}
+function Ironshield() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Babylonians2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Egyptians2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+}
+function Chainmailarchers() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+}
+function Chainmailcavalry() {
+    document.getElementById("Carthaginians2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Phoenicians2").style.opacity = "0.15";
+}
+function Towershield() {
+    document.getElementById("Assyrians2").style.opacity = "0.15";
+    document.getElementById("Babylonians2").style.opacity = "0.15";
+    document.getElementById("Choson2").style.opacity = "0.15";
+    document.getElementById("Egyptians2").style.opacity = "0.15";
+    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("LacViet2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Yamato2").style.opacity = "0.15";
 }

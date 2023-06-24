@@ -25,6 +25,9 @@
             document.getElementById("ly").style.opacity = "0.3";
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
 <style>
     li {
@@ -138,6 +141,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -179,21 +183,24 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Alchemy.webp" width="20px">炼金术(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Alchemy();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Alchemy.webp" width="20px"></a>炼金术(+1) <br>
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Engineering.webp" width="20px">工程学(+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Engineering();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Engineering.webp" width="20px"></a>工程学(+2) <br>
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">命中率</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Ballistics.webp" width="20px">弹道学(命中移动目标) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Ballistics.webp" width="20px"></a>弹道学(命中移动目标) <br>
             </td>
         </tr>
 

@@ -18,6 +18,9 @@
             document.getElementById("xl").style.opacity = "0.3";
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
 <style>
     li {
@@ -142,6 +145,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -183,33 +187,44 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Tool1.webp" width="20px">工具利用(+2) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metalworkingicon.webp" width="20px">金属利用(+2) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metallurgyicon.webp" width="20px">冶金学(+3)
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Tool1.webp" width="20px"></a>工具利用(+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metalworkingicon.webp" width="20px"></a>金属利用(+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Metallurgy();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metallurgyicon.webp" width="20px"></a>冶金学(+3)
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">防御力(近战/远程)</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Leatherarmorinfantryicon.webp" width="20px">步兵皮甲(+2/+0) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Scalearmorinfantryicon.webp" width="20px">步兵鳞甲(+2/+0) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Chainmailinfantryicon.webp" width="20px">步兵锁甲(+2/+0) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Bronzeshieldicon.webp" width="20px">青铜盾(+0/+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Ironshieldicon.webp" width="20px">铁盾(+0/+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Towershieldicon.webp" width="20px">塔盾(+0/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Leatherarmorinfantryicon.webp" width="20px"></a>步兵皮甲(+2/+0) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Scalearmorinfantryicon.webp" width="20px"></a>步兵鳞甲(+2/+0) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Chainmailinfantry();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Chainmailinfantryicon.webp" width="20px"></a>步兵锁甲(+2/+0) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Bronzeshield();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Bronzeshieldicon.webp" width="20px"></a>青铜盾(+0/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Ironshield();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Ironshieldicon.webp" width="20px"></a>铁盾(+0/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Towershield();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Towershieldicon.webp" width="20px"></a>塔盾(+0/+1) <br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">训练速度</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Conscription.webp" width="20px">征招(+25%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Conscription();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Conscription.webp" width="20px"></a>征招(+25%) <br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Logistics.webp" width="20px">后勤学(人口占用减半) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Logistics();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Logistics.webp" width="20px"></a>后勤学(人口占用减半) <br>
 
             </td>
         </tr>

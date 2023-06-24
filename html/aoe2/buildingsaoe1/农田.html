@@ -16,8 +16,10 @@
 
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
-
 <style>
     li {
         line-height: 20px
@@ -81,6 +83,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -118,15 +121,19 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">产量</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Domestication.webp" width="20px">驯化术(+75)<br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/PlowAOE.webp" width="20px">犁(+100)<br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Irrigation_AOE.webp" width="20px">灌溉术(+125)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Domestication.webp" width="20px"></a>驯化术(+75)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/PlowAOE.webp" width="20px"></a>犁(+100)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Irrigation();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Irrigation_AOE.webp" width="20px"></a>灌溉术(+125)<br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/City_Watch_tech_icon.webp" width="20px">城市守望(+3) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CityWatch();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/City_Watch_tech_icon.webp" width="20px"></a>城市守望(+3) <br>
             </td>
         </tr>
     </table>

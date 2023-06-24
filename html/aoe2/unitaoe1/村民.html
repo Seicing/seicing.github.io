@@ -16,6 +16,9 @@
 
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
 <style>
     li {
@@ -123,6 +126,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -175,16 +179,24 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">市场</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Woodworkingicon.webp" width="20px">木材利用(+2伐木效率) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Artisanship.webp" width="20px">工艺(+2伐木效率) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Craftsmanship.webp" width="20px">精湛工艺(+2伐木效率) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px">石矿开采(+3采石效率) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px">攻城术(+3采石效率，对建筑物伤害增加) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Gold_Mining.webp" width="20px">金矿开采(+3采金效率) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Coinage.webp" width="20px">铸币术(开采黄金效率+33%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Woodworkingicon.webp" width="20px"></a>木材利用(+2伐木效率) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Artisanship.webp" width="20px"></a>工艺(+2伐木效率) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Craftsmanship();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Craftsmanship.webp" width="20px"></a>精湛工艺(+2伐木效率) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px"></a>石矿开采(+3采石效率) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Siegecraft();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px"></a>攻城术(+3采石效率，对建筑物伤害增加) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Gold_Mining.webp" width="20px"></a>金矿开采(+3采金效率) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Coinage.webp" width="20px"></a>铸币术(开采黄金效率+33%) <br>
 
 
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Wheelicon.webp" width="20px">车轮(移动速度+50%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Wheelicon.webp" width="20px"></a>车轮(移动速度+50%) <br>
             </td>
         </tr>
 
@@ -201,7 +213,9 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">神庙</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Jihad.webp" width="20px">狂热行为(村民攻击力、移动速度、生命值+50%，收集效率-50%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Jihad();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Jihad.webp" width="20px"></a>狂热行为(村民攻击力、移动速度、生命值+50%，收集效率-50%)
+                <br>
             </td>
         </tr>
     </table>

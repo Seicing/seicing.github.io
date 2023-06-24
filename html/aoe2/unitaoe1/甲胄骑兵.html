@@ -26,6 +26,9 @@
             document.getElementById("ly").style.opacity = "0.3";
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
 <style>
     li {
@@ -139,6 +142,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -176,31 +180,39 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/NobilityIcon.webp" width="20px">贵族制(+15%)
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Nobility();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/NobilityIcon.webp" width="20px"></a>贵族制(+15%)
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Tool1.webp" width="20px">工具利用(+2) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metalworkingicon.webp" width="20px">金属利用(+2) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metallurgyicon.webp" width="20px">冶金学(+3)
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Tool1.webp" width="20px"></a>工具利用(+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metalworkingicon.webp" width="20px"></a>金属利用(+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Metallurgy();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Metallurgyicon.webp" width="20px"></a>冶金学(+3)
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">防御力(近战/远程)</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Leatherarmorcavalryicon.webp" width="20px">骑兵皮甲(+2/+0) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Scalearmorcavalryicon.webp" width="20px">骑兵鳞甲(+2/+0) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Chainmailcavalryicon.webp" width="20px">骑兵锁甲(+2/+0)
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Leatherarmorcavalryicon.webp" width="20px"></a>骑兵皮甲(+2/+0) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Scalearmorcavalryicon.webp" width="20px"></a>骑兵鳞甲(+2/+0) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Chainmailcavalry();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Chainmailcavalryicon.webp" width="20px"></a>骑兵锁甲(+2/+0)
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">训练速度</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Conscription.webp" width="20px">征招(+25%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Conscription();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Conscription.webp" width="20px"></a>征招(+25%) <br>
             </td>
         </tr>
     </table>

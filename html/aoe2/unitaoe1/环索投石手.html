@@ -17,6 +17,9 @@
             document.getElementById("as").style.opacity = "0.3";
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOEDIC3.html')
+    })
 </script>
 <style>
     li {
@@ -123,6 +126,7 @@
 
 <div id="techno"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
+<div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 <div>
     <H1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
@@ -164,17 +168,22 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px">石矿开采(+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px">攻城术(+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Alchemy.webp" width="20px">炼金术(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px"></a>石矿开采(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Siegecraft();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px"></a>攻城术(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Alchemy();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Alchemy.webp" width="20px"></a>炼金术(+1) <br>
             </td>
         </tr>
 
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px">石矿开采(+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px">攻城术(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Stone_Mining.webp" width="20px"></a>石矿开采(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Siegecraft();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Siegecraft.webp" width="20px"></a>攻城术(+1) <br>
             </td>
         </tr>
 
@@ -182,15 +191,19 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">防御力(近战/远程)</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Bronzeshieldicon.webp" width="20px">青铜盾(+0/+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Ironshieldicon.webp" width="20px">铁盾(+0/+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Towershieldicon.webp" width="20px">塔盾(+0/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Bronzeshield();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Bronzeshieldicon.webp" width="20px"></a>青铜盾(+0/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Ironshield();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Ironshieldicon.webp" width="20px"></a>铁盾(+0/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Towershield();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Towershieldicon.webp" width="20px"></a>塔盾(+0/+1) <br>
             </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">训练速度</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Conscription.webp" width="20px">征招(+25%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Conscription();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe/pic/Conscription.webp" width="20px"></a>征招(+25%) <br>
             </td>
         </tr>
     </table>
