@@ -684,6 +684,8 @@ function showPic2(e) {
     aasb = document.getElementById("Layer1");
     aasb.style.display = "";
     aasb.style.width = "250px";
+    aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
+    aasb.style.padding = "5px";
     var div = aasb;
     var z = div.offsetWidth;
 
