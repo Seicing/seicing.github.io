@@ -676,25 +676,6 @@ function aoetechPoeRush() {
     }
 }
 
-function showPic2(e) {
-    var x, y, aasb;
-    x = e.pageX;
-    y = e.pageY;
-
-    aasb = document.getElementById("Layer2");
-    aasb.style.display = "";
-    aasb.style.width = "250px";
-    aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
-    aasb.style.padding = "10px";
-    aasb.style.left = x - 252 + 'px';
-    aasb.style.top = y + 2 + 'px';
-}
-
-function hiddenPic2() {
-    var aasb = document.getElementById("Layer2");
-    aasb.style.display = "none";
-    CommonAllTech()
-}
 
 function CommonAllTech() {
     document.getElementById("Byzantines2").style.opacity = "1";
@@ -742,6 +723,27 @@ function CommonAllTech() {
     document.getElementById("Poles2").style.opacity = "1";
     document.getElementById("Turks2").style.opacity = "1";
 }
+
+function showPic2(e) {
+    var x, y, aasb;
+    x = e.pageX;
+    y = e.pageY;
+
+    aasb = document.getElementById("Layer2");
+    aasb.style.display = "";
+    aasb.style.width = "250px";
+    aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
+    aasb.style.padding = "10px";
+    aasb.style.left = x - 252 + 'px';
+    aasb.style.top = y + 2 + 'px';
+}
+
+function hiddenPic2() {
+    var aasb = document.getElementById("Layer2");
+    aasb.style.display = "none";
+    CommonAllTech()
+}
+
 
 function BlastFurnace() {
     document.getElementById("Byzantines2").style.opacity = "0.15";
