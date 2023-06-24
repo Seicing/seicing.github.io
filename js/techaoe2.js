@@ -843,3 +843,19 @@ function Supllies() {
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
 }
+function Bloodlines() {
+    document.getElementById("Aztecs2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").style.opacity = "0.15";
+    document.getElementById("Britons2").style.opacity = "0.15";
+    document.getElementById("Burgundians2").style.opacity = "0.15";
+    document.getElementById("Byzantines2").style.opacity = "0.15";
+    document.getElementById("Celts2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").style.opacity = "0.15";
+    document.getElementById("Ethiopians2").style.opacity = "0.15";
+    document.getElementById("Franks2").style.opacity = "0.15";
+    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Malay2").style.opacity = "0.15";
+    document.getElementById("Mayans2").style.opacity = "0.15";
+    document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Koreans2").style.opacity = "0.15";
+}
