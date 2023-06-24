@@ -42,7 +42,7 @@ let ayanami = {
     "弩手": "弩手<br>Crossbowman<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>35<br>轻装的敏捷部队，擅长远距离战斗，近距离弱小<br><br>升级到 劲弩手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50",
     "劲弩手": "劲弩手<br>Arbalester<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>35<br>弩手的升级，轻装的敏捷部队",
     "掷矛手": "掷矛手<br>Skirmisher<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>22<br>拥有远程护甲和对射手攻击力的远程部队<br><br>升级到 精锐掷矛手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>230 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>130 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50",
-    "精锐掷矛手": "精锐掷矛手<br>Elite Skirmisher<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>22<br>比掷矛手更强大，拥有远程护甲和对射手攻击力的远程部队<br><br>升级到 帝王掷矛手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50",
+    "精锐掷矛手": "精锐掷矛手<br>Elite Skirmisher<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>22<br>比掷矛手更强大，拥有远程护甲和对射手攻击力的远程部队<br><br>升级到 帝王掷矛手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50",
     "帝王掷矛手": "帝王掷矛手<br>Imperial Skirmisher<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>22<br>比精锐掷矛手更强大，拥有远程护甲和对射手攻击力的远程部队",
     "骑射手": "骑射手<br>Cavalry Archer<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>40 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>34<br>敏捷、射程广阔，适合跑打战术<br><br>升级到 重装骑射手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>900 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50",
     "重装骑射手": "重装骑射手<br>Heavy Cavalry Archer<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>40 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>27<br>比骑射手更强大，敏捷、射程广阔，适合跑打战术",
@@ -278,7 +278,7 @@ let ayanami = {
     "精锐甲胄骑兵": "精锐甲胄骑兵<br>Elite Cataphract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>70 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>拜占庭独特部队，重装骑兵",
     "希腊火": "希腊火<br>Greek Fire<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>喷火船射程+1，炮塔和德罗蒙战舰增加0.5格溅射范围",
     "后勤学": "后勤学<br>Logistica<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>甲胄骑兵攻击追加0.5半径的践踏伤害，对步兵附加攻击+6",
-    "大商站": "大商站<br>Feitoria<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>120<br>自动生产资源的经济建筑，需要占用20人口",
+    "大商站": "大商站<br>Feitoria<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>120<br>自动生产资源的经济建筑，需要占用20人口",
     "卡拉维尔帆船": "卡拉维尔帆船<br>Caravel<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>90 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>40 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>36<br>葡萄牙独特部队，每次射击都会贯穿敌船<br><br>升级到 精锐卡拉维尔帆船<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>700 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>525 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60",
     "精锐卡拉维尔帆船": "精锐卡拉维尔帆船<br>Elite Caravel<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>90 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>40 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>36<br>葡萄牙独特部队，每次射击都会贯穿敌船",
     "风琴炮": "风琴炮<br>Organ Gun<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>80 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>70 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>21<br>葡萄牙独特部队，发射散弹的攻城武器，对大量单位非常有效<br><br>升级到 精锐风琴炮<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>1200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45",
@@ -365,7 +365,7 @@ let ayanami = {
     "荣冠战争": "荣冠战争<br>Garland Wars<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>750 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>步兵攻击力+4",
 
 
-    "重弩": "重弩<br>Ballistas<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>弩炮系和箭船系攻击速度+33%",
+    "重弩": "重弩<br>Ballistas<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>弩炮系攻击速度+33%，箭船系攻击力+2",
     "野战军": "野战军<br>Comitatenses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>700 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>民兵系、骑士系和百夫长训练速度+50%，获得冲锋攻击",
     "长剑士罗马": "长剑士<br>Long Swordsman<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>20 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>21<br>比剑士更强大，便宜，生产快速<br><br>升级到 罗马军<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>800 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>100",
     "罗马军": "罗马军<br>Legionary<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>20 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>21<br>强力步兵单位",
@@ -399,7 +399,7 @@ let ayanami = {
     "越南开局显示位置": "越南开局显示位置<br>游戏开始时显示敌人位置",
     "越南射手血量": "越南射手血量<br>靶场部队的生命值+20%",
     "越南免费征召": "越南免费征召<br>免费升级征召",
-    "越南木材减免": "越南木材减免<br>经济科技的木头消耗删除",
+    "越南木材减免": "越南木材减免<br>经济科技的木头消耗删除，研究速度+100%",
     "越南团队加成": "越南团队加成<br>可以升级帝王掷矛手",
 
     "波斯开局资源": "波斯开局资源<br>开始拥有额外的50木材和食物",
@@ -534,6 +534,7 @@ let ayanami = {
     "斯拉夫农夫加成": "斯拉夫农夫加成<br>农夫耕田速度提升10%",
     "斯拉夫免费供给": "斯拉夫免费供给<br>供给免费",
     "斯拉夫炮厂减价": "斯拉夫炮厂减价<br>攻城武器厂部队便宜15%",
+    "斯拉夫僧侣移速": "斯拉夫僧侣移速<br>僧侣移动速度+20%",
     "斯拉夫团队加成": "斯拉夫团队加成<br>兵营、靶场、马厩、攻城武器厂提供额外的5人口",
 
     "保加利亚免费民兵": "保加利亚免费民兵<br>民兵系升级免费",
@@ -599,7 +600,7 @@ let ayanami = {
 
     "马里建筑降价": "马里建筑降价<br>建筑便宜15%木材",
     "马里兵营盾牌": "马里兵营盾牌<br>从封建时代开始，兵营单位每个时代远程护甲+1",
-    "马里金矿加成": "马里金矿加成<br>金矿开采延长15%，金矿工携带量+15%，开采黄金效率+15%",
+    "马里金矿加成": "马里金矿加成<br>金矿开采延长10%，金矿工携带量+15%，开采黄金效率+15%",
     "马里团队加成": "马里团队加成<br>大学工作效率提升80%",
 
     "阿兹特克携带量": "阿兹特克携带量<br>村民携带量多3",
@@ -622,7 +623,6 @@ let ayanami = {
 
 
     "罗马经济加成": "罗马经济加成<br>村民收集、建造、维修速度+5%",
-    "罗马箭船加成": "罗马箭船加成<br>箭船系+1攻击力",
     "罗马舰船加成": "罗马舰船加成<br>战舰近战护甲和远程护甲+1，大型战舰和德莱蒙战舰近战护甲和远程护甲+2",
     "罗马铁匠铺加成": "罗马铁匠铺加成<br>步兵获得铁匠铺护甲科技双倍收益",
     "罗马弩炮加成": "罗马弩炮加成<br>弩炮黄金成本-60%，受益于弹道学",
