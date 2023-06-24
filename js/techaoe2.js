@@ -681,7 +681,7 @@ function showPic2(e) {
     x = e.pageX;
     y = e.pageY;
 
-    aasb = document.getElementById("Layer1");
+    aasb = document.getElementById("Layer2");
     aasb.style.display = "";
     aasb.style.width = "250px";
     aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
@@ -691,8 +691,12 @@ function showPic2(e) {
 }
 
 function hiddenPic2() {
-    var aasb = document.getElementById("Layer1");
+    var aasb = document.getElementById("Layer2");
     aasb.style.display = "none";
+    CommonAllTech()
+}
+
+function CommonAllTech() {
     document.getElementById("Byzantines2").style.opacity = "1";
     document.getElementById("Gurjaras2").style.opacity = "1";
     document.getElementById("Koreans2").style.opacity = "1";
@@ -700,6 +704,14 @@ function hiddenPic2() {
     document.getElementById("Malians2").style.opacity = "1";
     document.getElementById("Vietnamese2").style.opacity = "1";
     document.getElementById("Goths2").style.opacity = "1";
+    document.getElementById("Tatars2").style.opacity = "1";
+    document.getElementById("Bengalis2").style.opacity = "1";
+    document.getElementById("Hindustanis2").style.opacity = "1";
+    document.getElementById("Huns2").style.opacity = "1";
+    document.getElementById("Khmer2").style.opacity = "1";
+    document.getElementById("Lithuanians2").style.opacity = "1";
+    document.getElementById("Magyars2").style.opacity = "1";
+    document.getElementById("Romans2").style.opacity = "1";
 }
 
 function BlastFurnace() {
@@ -713,4 +725,18 @@ function BlastFurnace() {
 
 function Arson() {
     document.getElementById("Goths2").style.opacity = "0.15";
+}
+function ChainMailArmor() {
+    document.getElementById("Tatars2").style.opacity = "0.15";
+}
+function PlateMailArmor() {
+    document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").style.opacity = "0.15";
+    document.getElementById("Goths2").style.opacity = "0.15";
+    document.getElementById("Hindustanis2").style.opacity = "0.15";
+    document.getElementById("Huns2").style.opacity = "0.15";
+    document.getElementById("Khmer2").style.opacity = "0.15";
+    document.getElementById("Lithuanians2").style.opacity = "0.15";
+    document.getElementById("Magyars2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
 }

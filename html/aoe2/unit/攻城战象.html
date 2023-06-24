@@ -19,6 +19,9 @@
             document.getElementById("Indians").style.opacity = "1";
         })
     })
+    $(document).ready(function () {
+        $('#Layer2').load('https://seicing.com/js/list/AOE2DIC3.html')
+    })
 </script>
 <style>
     li {
@@ -146,6 +149,7 @@
     “取代冲车的重装攻城战象，装甲战象的升级”
     <br>
     <div style='text-align:right'>——游戏内说明书</div>
+    <div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -218,9 +222,12 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Forging_aoe2de.webp" width="20px">锻造(+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/IronCastingDE.webp" width="20px">铸铁(+1) <br>
-                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp" width="20px">鼓风炉(+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/Forging_aoe2de.webp" width="20px"></a>锻造(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/IronCastingDE.webp" width="20px"></a>铸铁(+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);BlastFurnace();"><img
+                        src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp" width="20px"></a>鼓风炉(+2) <br>
                 <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp" width="20px">攻城技师(+20%对建筑物伤害) <br>
                 <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">乌兹钢(无视防御力，仅达罗毗荼)<br>
             </td>
