@@ -199,7 +199,7 @@
         "branch": "branch0",
         "name": "卫兵",
         "face": "IllazuraydRecruit",
-        "string": "是索菲亚公主！快去禀告陛下！",
+        "string": "是索菲亚大公！快去禀告陛下！",
         "special": "dia2"
     },
     {
@@ -248,48 +248,76 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Default",
-        "string": "说起来",
+        "string": "伊拉修莱德并不像我们西景那样完全靠实力被推举为皇帝，在艾特拉塔传统里，国王的儿女会成为大公，为成为实至名归的国王而努力修行",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "Seicing2Default",
-        "string": "你的脸上没有一丝回到家里的喜悦呢",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "Seicing2Default",
-        "string": "要我一起来，是要我帮你做点什么吗？",
+        "face": "Seicing2CloseEye",
+        "string": "大公们出现在各种危险的地方修行，也不是什么奇怪的事情",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisDepressed",
+        "face": "IrisDefaultCE",
+        "string": "竟然可以根据各种线索推断到这个地步",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "但是，你并不是因为修行而离开王宫是吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSurprise",
+        "string": "为什么……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "毕竟脸上没有一丝回到家里的喜悦呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "……有什么要我帮忙的地方我会尽力的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
         "string": "为什么感到惊讶的反而是我呢，你的心思未免也缜密得有点可怕了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisDepressed",
-        "string": "那个，答应我",
+        "face": "IrisDefault",
+        "string": "……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisDepressed",
-        "string": "什么也不用问，戴上这只戒指，进去之后维持现在的冷静，好吗？",
+        "face": "IrisDefault",
+        "string": "戴上这只戒指，进去之后维持现在的冷静，好吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
-        "face": "IrisDepressed",
+        "face": "IrisDefault",
         "string": "当然……你觉得可疑的话，现在走也来得及",
         "special": "dia2"
     },
@@ -381,7 +409,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "你要认识到自己作为伊拉修莱德公主的责任",
+        "string": "你要认识到自己作为伊拉修莱德大公的责任",
         "special": "dia2"
     },
     {
@@ -435,13 +463,6 @@
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "Seicing2Default",
-        "string": "(原来如此，所以才叫我保持冷静)",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
         "string": "……",
@@ -465,7 +486,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizHappy",
-        "string": "作为伊拉修莱德的公主，她拥有联姻维系联盟的义务……而不是跟一个冒险者私定终身",
+        "string": "作为伊拉修莱德的大公，她拥有联姻维系联盟的义务……而不是跟一个冒险者私定终身",
         "special": "dia2"
     },
     {
@@ -479,7 +500,7 @@
         "branch": "branch0",
         "name": "阿齐兹王",
         "face": "AzizDefault",
-        "string": "卫兵！把这个年轻人送到贵宾囚禁房关押，皇家侍卫给我看好公主",
+        "string": "卫兵！把这个年轻人送到贵宾囚禁房关押，皇家侍卫给我看好大公",
         "special": "dia2"
     },
     {
@@ -696,7 +717,7 @@
         "branch": "branch0",
         "name": "卫兵",
         "face": "IllazuraydRecruit",
-        "string": "警戒！公主逃跑了！",
+        "string": "警戒！大公逃跑了！",
         "special": "dia2"
     },
     {
