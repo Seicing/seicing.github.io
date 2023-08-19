@@ -9,7 +9,7 @@
     {
         "branch": "branch0",
         "name": "余",
-        "face": "Yo2Uncomfortable",
+        "face": "Yo2UncomfortableAwakening",
         "string": "咕……",
         "special": "dia2"
     },
@@ -43,9 +43,282 @@
     },
     {
         "branch": "branch0",
+        "name": "余",
+        "face": "Yo2UncomfortableAwakening",
+        "string": "血……血……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "是啊……",
+        "face": "SeicingDefault",
+        "string": "这眼睛……难道说，是跟伊安一样的……",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "你……！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余本能性地朝着世清的脖子咬去，趴在世清身上吸食世清的血，世清没有反抗只是任由余吸食",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余吸食足够的血液后恢复了意识，看到自己趴在世清身上，马上下意识地后跳躲开",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2DepressedRF",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "恢复正常了，好像也没有打下去的想法了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "我是不是很像一只怪物",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "我已经死了，身上流淌着的都是其他人的血液",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "只要感到饥饿了，就会失去自我，本能地吸食其他人的血液生存下去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "我已经没有回头路了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……如果我想杀你的话，刚刚就是最好的出手时机",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "你在怜悯我吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不久前我们还一起并肩作战过不是吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "到底是为了什么要在这里打得死去活来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "我的亲人们都死了……如果我不在这里为了蚩幽一族而战，我就什么都没有了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "这是成为怪物之后的我，唯一能为我的族人们所做的事情了……我不想再让任何人失望了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "在我的生命燃尽之前，我要证明，我并不是“多余”的啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "就算在这里杀掉我有什么意义呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在这个荒无人烟的地方，你也不可能在失去意识之前走出去",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我是和多个强者的竞争中成为皇帝的，就算我死了，他们也是强大的后备力量",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "就算蚩幽人能攻陷泖支於，等待你们的也是在失去退路的前提下在疲惫中灭亡吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "……真正的症结没解决不是吗",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "……库尔哈克？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "那只不知道来自何方的怪物是我们蚩幽一族的噩梦，不知从何而来，无论如何伤害它也不会死亡",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2CloseEye",
+        "string": "我们只能等待它莫名其妙地消失……在这之前我们等不下去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "总之先停战吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "你在当我说的话是废话吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "在彻底变成干尸之前，放下仇恨互相帮助，一起活着逃离这里，以后再做打算如何？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在逃离这里之前，我会无条件提供我的血为你续命，这是我的诚意",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "……你的死亡对西景可能确实不算什么损失，但是我死了，蚩幽族就完了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "为什么提出这种百害无一利的提案",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在这种孤独之地，真正的敌人是无助感……两个人逃离这里的几率比一个人要高太多了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "而且我不认为曾经一起并肩作战的人在再次相遇时拼个你死我活是好事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Shy",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "好吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "我选择相信你",
+        "special": "dia2"
     }
 ]
