@@ -654,7 +654,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "Yo2Embarrassed",
-        "string": "就跟仇恨西景人而造就的禁忌仪式一样，我们蚩幽人在这片沙漠没人朋友，只有仇人",
+        "string": "就跟仇恨西景人而造就的禁忌仪式一样，我们蚩幽人在这片沙漠没有朋友，只有仇人",
         "special": "dia2"
     },
     {
@@ -808,14 +808,693 @@
         "branch": "branch0",
         "name": "世清",
         "face": "SeicingDefault",
-        "string": "总之，不要想太多  ",
+        "string": "总之，不要想太多",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "余",
         "face": "Yo2HappyRF",
-        "string": "你说话太深奥了……",
-        "special": "……嗯"
+        "string": "……嗯",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到出口",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "世清！看！是出口！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "库尔哈克看到两人找到出口后，把头转向了两人",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Fear",
+        "string": "这……这家伙，真的在蹲着我们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "别发愣！它攻过来了！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "库尔哈克一阶段，在徒劳的试探攻击后触发剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Fear",
+        "string": "没用……我们任何攻击都没用……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没办法，只能撤退了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "我们走！……余？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngrySurprise",
+        "string": "现在不是发愣的时候啊！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清拉起余逃跑，库尔哈克下地继续追赶他们",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngrySurprise",
+        "string": "进入地下了！难道说它只是不想进入地下吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清试探性地进行了攻击，造成的伤口变得更加明显了<br>逃离一段时间后，库尔哈克停止了追击，回到了地面上<br>回到洞口里，余仿佛显得惊魂未定",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Fear",
+        "string": "我……我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Fear",
+        "string": "不，我们要死了吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "……不要怕",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "但是！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "我的兄弟姐妹就是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "我无法对这个家伙造成任何伤害！我……我连为他们报仇的能力都没有……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "我……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余抱紧世清大哭",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "(没办法，说到底还只是一个二十岁不到的孩子，对她来说，压力太大了)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "哭完之后余的心情稍稍恢复了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SadRF",
+        "string": "我能继续这样抱着你吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SadRF",
+        "string": "我……很害怕……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2UncomfortableRF",
+        "string": "我一直想要变强，就是为了证明",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2UncomfortableRF",
+        "string": "刚刚我还是成为了你的累赘不是吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2UncomfortableRF",
+        "string": "为什么我是这么的没用啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "能活着就好，不要对自己如此追责",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SurpriseRF",
+        "string": "你……不害怕吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我不知道什么叫害怕，但是，我也会本能地拒绝死亡",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "无意义的惊慌失措只会让自己更容易死掉，越是接近死亡就越是冷静的话，应该说我现在这样其实是在害怕吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SurpriseRF",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "你那绕来绕去的奇怪逻辑搞得我也变得不感到害怕了，谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "就跟和你刚刚认识时候的那样……你能给我无限的勇气",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "我不会害怕了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "我会跟你一起战斗到最后一刻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "就算不能一起活下去，一起战死，好像也不是不行呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "别说这些不吉利的话",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "既然要战斗，就不会去无意义地战斗",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我跟和这只巨大的怪物差不多恐怖的对手战斗过……只能说世界上不存在绝对无敌的东西",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "战斗的时候，库尔哈克的身体不是在蒸腾吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "确……确实如此",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我们造成的伤害会让它体内的蒸汽更加快速地喷射出来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "但是它拥有恐怖的恢复速度，一会儿就会恢复原状",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "但是至少可以确认一件事，旱灾之所以叫旱灾，是有原因的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "什么？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "它体内保存着大量的水分，来自高州附近河流的水分，任何活动都要消耗水分提供能量",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……就跟你吸血一样",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在撤退的时候，我发现它伤口的恢复速度明显变慢了很多，喷出的蒸汽持续了很久",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "有某个很重要的因素让它被削弱了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "是太阳！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没错",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "它不敢下来地下追击我们的原因就是它在没有太阳的环境下战斗续航能力会大大降低",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "它之所以叫旱灾，就是因为灼热的太阳可以使得他快速地重构身体",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没有选择追上来，就是因为它自己也明白在这种环境下无法确保可以成功击杀我们",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "它是可以被打败的……我们等到夜晚主动出击",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SurpriseRF",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2DefaultRF",
+        "string": "跟我们第一次认识的时候一样呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2DefaultRF",
+        "string": "真是……让人想要依靠",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "……都是被逼出来的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在这里养精蓄锐等待夜晚吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我会和你一起把这个怪物彻底解决掉，终结掉这场悲剧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Shy",
+        "string": "谢谢你……我 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余没有继续说下去，而是坐在世清的身上，深情地看着世清，开始脱下身上的衣服",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurpriseRF",
+        "string": "你……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Default",
+        "string": "我不能确定这次能不能活着回去 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Sad",
+        "string": "但是……如果连这种事情也没有体验过就死去的话…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeepRF",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Sad",
+        "string": "不来……吗？ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Shy",
+        "string": "你在这方面很不干不脆啊……我这样很害羞的…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清主动朝着余吻了上去，然后进入黑屏",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5CloseEye",
+        "string": "明明说要养精蓄锐的……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5ShyCE",
+        "string": "…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "以后做的时候不要一面动一面吸血，我心脏有点受不了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Default",
+        "string": "以后……？ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Peep",
+        "string": "不愿意吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5ShyCE",
+        "string": "坏蛋",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "之前听过一个理论",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "生物在感受到强烈的生命威胁时，会产生强烈的性欲",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "因为生物本身的繁衍本能使得他们想要在这个世界上留下后裔",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Default",
+        "string": "感觉确实是这么一回事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "我是想说……不要觉得自己是怪物",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Default",
+        "string": "你和我都只是拥有普通的生物本能的活着的人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Depressed",
+        "string": "你这家伙安慰女孩子的方法还真是硬核啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5ShyCE",
+        "string": "但是……谢谢……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "地面传来了轰隆隆的声音",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Peep",
+        "string": "似乎是向着我们而来",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5Peep",
+        "string": "是意识到我们的企图，所以不顾一切了吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Default",
+        "string": "要来了吗……？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Sad",
+        "string": "还有力气战斗吗……？抱歉……都是因为我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5CloseEye",
+        "string": "……不要死",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing5CloseEye",
+        "string": "一起活下去",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo5Default",
+        "string": "遵命",
+        "special": "dia2"
     }
 ]
