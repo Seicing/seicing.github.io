@@ -537,5 +537,285 @@
         "face": "SeicingDefault",
         "string": "嗯",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "走到出口附近地震",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "没完没了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……你有没有觉得震动的频率变高",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我们要做一个最坏的打算",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "什么！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "假如库尔哈克不是无意识地到处徘徊，而是存在一个明确的目的在行动",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "你是说库尔哈克的目标是我们！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "库尔哈克可能不是什么天灾……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "怎……怎么会！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "有一点很奇怪",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "为什么库尔哈克不追到地底击杀我们呢？既然它似乎是可以感知到我们的气息",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……真是奇怪，只能找到出口再说了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "走一段时间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "我要问一个问题……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "什么？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "库尔哈克的目标，可能只是我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "就跟仇恨西景人而造就的禁忌仪式一样，我们蚩幽人在这片沙漠没人朋友，只有仇人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "“旱灾”很可能就是对于蚩幽一族仇恨的具现化而已……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "我说直白一点吧！你不需要跟我一起赌命",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "我不想继续成为别人的累赘，不想继续让别人感到失望",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我同样也有东西想对你说",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我实际上无法感受到什么是正常的人类情感",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "啊？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "周围的人都觉得我是一个怪人……甚至怪物",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "恐惧、伤心、热爱……自小在书中看到的感情，我无法分辨清楚，也无法理解",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我只能大概地感受到“感情的波动”",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "感情的波动？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "遇到特殊的情况，我的内心就会感受到跟平静相反的……波动",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "自从我开始对世界拥有认知的时候，我就一直试图理解这些波动，在这些被人认为是感情的东西的驱动下，做着自己认为正确的事情",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在我成年之后，被动地踏上了旅途，重要的人在我面前死去，也在伙伴的陪同下走遍了整个艾特拉塔大陆",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "在旅途中我学到了很多东西，例如我知道什么叫遗憾，什么叫伤心，什么叫不舍，原先没有区别的波动开始被我所认知区分",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我在跟你第一次相遇的时候，心中就有一股难以理解但是出奇强烈的波动 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "至少可以确认，不回应那份波动，在这里丢下你，我绝对会感受到强烈的名为“后悔”的感情 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "……仅此而已 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Shy",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "你说话太深奥了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "总之，不要想太多  ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "你说话太深奥了……",
+        "special": "……嗯"
     }
 ]
