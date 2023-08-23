@@ -1403,7 +1403,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing5Default",
-        "string": "因为生物本身的繁衍本能使得他们想要在这个世界上留下后裔",
+        "string": "因为生物本身的繁衍本能使得他们想在这个世界上留下后裔",
         "special": "dia1"
     },
     {
@@ -1494,7 +1494,14 @@
         "branch": "branch0",
         "name": "余",
         "face": "Yo5Default",
-        "string": "遵命",
+        "string": "嗯",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "离开场景后开始库尔哈克二阶段，在地下错综复杂的洞穴开始了战斗<br>抓取库尔哈克的大硬直时机，削减一定血量后，库尔哈克看了一眼逐渐变暗的天空，企图逃跑",
+        "special": "dia3"
     }
 ]
