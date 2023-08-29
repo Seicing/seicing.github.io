@@ -1503,5 +1503,243 @@
         "face": "",
         "string": "离开场景后开始库尔哈克二阶段，在地下错综复杂的洞穴开始了战斗<br>抓取库尔哈克的大硬直时机，削减一定血量后，库尔哈克看了一眼逐渐变暗的天空，企图逃跑",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngrySurprise",
+        "string": "天色逐渐变暗了，夜晚要来了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2AngryAwakening",
+        "string": "哈……哈……他要逃跑吗！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngrySurprise",
+        "string": "不能让它逃掉！",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngrySurprise",
+        "string": "还跑得动吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2AngryHappyAwakening",
+        "string": "哈！现在的我可是鼎盛时期！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "追出去之后开始库尔哈克三阶段，库尔哈克在沙漠上漫无目的地游走",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我打算使用狙击枪狙击库尔哈克的脚，让它无法行动让我们破坏",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "但是在高速移动中我无法准确地命中它",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2AngryAwakening",
+        "string": "交给我吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余把世清背在背后，快速而稳定地在沙漠中奔跑",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "好稳定快速的“游动” ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2AngryAwakening",
+        "string": "我的尾巴是这样用的啊，你就安心地狙击它吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2AngryAwakening",
+        "string": "一定要！消灭它！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngrySurprise",
+        "string": "交给我吧 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "打败库尔哈克",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SurpriseAwakening",
+        "string": "打败了？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyAwakening",
+        "string": "我们……真的打败了库尔哈克！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清脱力从余的后背掉了下去",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2UncomfortableAwakening",
+        "string": "世清？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "我没事…… ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "只是在一切都结束后难以抗拒的脱力感 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余走回了世清的旁边，也脱力地倒在了地上",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "又让我想起了第一次相遇的时候啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "你可不要像上次那样再给我那些吓人的饮料了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "嘻嘻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2DefaultRF",
+        "string": "谢谢你……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你应该要感谢的，是你的坚持和信赖",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "天空中下起了雨，旱灾的尸体化作一粒粒的小水晶伴随着雨落下",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "是雨！ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "旱灾从你们那夺走的东西，随着它的死亡开始还给你们了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "事情告一段落了呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "是呢……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你好像变得很不开心的样子",
+        "special": "dia1"
     }
 ]
