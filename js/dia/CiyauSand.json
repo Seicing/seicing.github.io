@@ -1536,7 +1536,7 @@
         "branch": "branch0",
         "name": "余",
         "face": "Yo2AngryHappyAwakening",
-        "string": "哈！现在的我可是鼎盛时期！",
+        "string": "现在的我比以往任何一个时候都要激昂！",
         "special": "dia2"
     },
     {
@@ -1741,5 +1741,257 @@
         "face": "SeicingDefault",
         "string": "你好像变得很不开心的样子",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "一切都结束了不是吗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "是时候别离了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你觉得孤独吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2CloseEye",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我从小就活在谎言之中，先是神从的养子，再是流浪的剑士，再到不能被人看到软弱一面的皇帝",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "疲劳……一直这样走过来，我觉得很疲劳，我无法向别人透露真心，我感觉很孤独",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "但是……跟你一起忘我的战斗，跟你融在一体……我空虚躁动的内心感受到了宁静和满足",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "如果可以继续在你的怀里安然入睡，那该多么幸福啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清走到余的面前半跪下向余献上旱灾的眼睛",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "这……这是？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "刚刚战斗的时候从库尔哈克身上挖出来的眼球，很美丽的宝石不是吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "我只是从书上学到的……蚩幽人……求婚不是亲手为对方献上猎物的战利品吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "难道哪里的细节出了问题吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SurpriseRF",
+        "string": "……！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余激动地冲上去一把抱住世清",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "你这个笨蛋……那都是几百年前老掉牙的习俗了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefaultRF",
+        "string": "拿走了……就是说？答应了？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "明知故问……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Shy",
+        "string": "你要想清楚……我没有你想得那么美好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Shy",
+        "string": "我笨手笨脚，也不懂礼仪和学问，不会说话",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Shy",
+        "string": "我害怕……你会因为看到真正的我会开始对我感到厌烦 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "我想，对你的那股强烈的情感波动，就是纯粹的“喜欢”",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "没有其他复杂的原因，我想，一见钟情确实是存在的，喜欢就是这种莫名其妙的感情",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "我不想让你和我都留下遗憾",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "不要脸不红气不喘地说这样的话啊 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "我……我……答应你…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "一处山壁的篝火旁",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这雨不知道要下多久呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "所幸的是，终于可以好好休息了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "你不要紧吧，我只需要吸血维持营养，可是你已经一整天没吃东西加高强度运动了 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "在你怀里的话我不会感到疲累",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "真希望可以继续这样下去……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "尽会说讨好别人的话，再这样下去的话会饿死的 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "……以后你想这样躺，多得是机会，不是吗？ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingPeep",
+        "string": "有动静……看起来得救了呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "传来飞翼的声音，世行和斯理乘坐着飞马来到世清隔壁，世清从余的怀抱中起来后端正坐姿",
+        "special": "dia3"
     }
 ]
