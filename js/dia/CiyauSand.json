@@ -1993,5 +1993,593 @@
         "face": "",
         "string": "传来飞翼的声音，世行和斯理乘坐着飞马来到世清隔壁，世清从余的怀抱中起来后端正坐姿",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "好肉麻的两个人，你还是我大哥，这下便样衰了…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "西景皇帝跟蚩幽皇帝好上了吗，真是让人难以置信的组合 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriYell",
+        "string": "世清！！ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriYell",
+        "string": "世清！你没事！太好了……等等！你不是……！ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "斯理，你也来了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "书记官在营地急得死去活来，看到这里发生恐怖的大爆炸之后不顾危险跑来这里确认……没办法，只能陪他过来了 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "大哥……你跟这个女人一起合力……杀死了库尔哈克吗？ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "(点了点头)",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "……真是难以置信 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "强得也有点过于离谱了，竟然击杀了这样的一个家伙 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefault",
+        "string": "…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefaultCE",
+        "string": "哼，你这小子命真大，这下可以跟明玲交差了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "……担心都写在脸上了哦 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriYell",
+        "string": "胡说！ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriCry",
+        "string": "臭小子……没事……真的是太好了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "对不起，斯理，让你担心了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "事情解决了，战争大概也不需要继续下去了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefault",
+        "string": "……你跟蚩幽的皇帝也太过亲昵了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "斯理",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我要和余结婚",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriConfuse",
+        "string": "喂！等等！你是认真的吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我是认真的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "……不知不觉",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "你也到谈婚论嫁的年纪了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你不反对吗？毕竟……你也是我名义上的……爸爸……你的决定也是很重要的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我认为需要郑重地跟你商讨",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefaultCE",
+        "string": "世清，听着，如果你认为跟她在一起是幸福的，我是不会反对的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefaultCE",
+        "string": "只是，有一些很现实的问题，我不知道这样说你们会不会觉得生气",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "你们是否真的完全理解对方，还有，你们可以忍受蚩幽人跟西景人客观存在的矛盾在一起吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "婚姻是一辈子的大事，我希望你可以考虑清楚",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "斯理，谢谢你的担心",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我坚信自己的直觉是正确的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我和她一起经历了两次接近死亡的体验，如果不是遵循自己的直觉选择相信她，相信我两年前早就是一具尸体了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "她也选择相信我，也把自己最珍贵的东西给了我，我不想失去她的信赖，也不想逃避自己的责任",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSmile",
+        "string": "哈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSmile",
+        "string": "那我也没有什么好说的了，恭喜你们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "谢谢你，斯理爸爸 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSmile",
+        "string": "斯理爸爸什么的……哈哈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSmile",
+        "string": "媳妇，我已经迫不及待将你带给明玲见面了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "就这样结束了啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "蚩幽一族最接近灭亡的那一天，最后还是因为你一己之力救了他们一命",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "两国也会因为你们的婚姻进入一段漫长的和平期吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "皇帝的好上了还打什么",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "世行，你说话好像含沙射影",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "但是也可以理解，毕竟你的家人们……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "想多了，我对那些人没有什么念想，我也对大嫂没有什么意见",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "只是略微感慨，在这个世界，强者确实是左右命运的存在",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "力量才是这个世界的真理，弱小的人在命运的浮沉中是没有哀怨的资格的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "仇恨什么的，不都是利益的驱使？蚩幽人觊觎西景优越的环境，而西景人不想将自己的土地拱手让人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "当双方的利益被满足后，种族和种族之间的仇恨就会细化成微不足道的个人的仇恨，这才是这片大地持续数千年的常态",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "要说的话，我开始期待了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "期待什么？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "你和大嫂的结合，实际上是属于联姻的范畴的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "西景人和蚩幽人将会渡过一段名义上统合在一起的时光……只是这个时光会有多长是未知之数",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "在这段时间内，是有更多人被你们所影响，学会共存，还是会继续铭记仇恨，在你们变成枯骨之后再度仇杀……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "大哥，我很期待你的伟业……能达到的程度",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "伟业什么的，说得太过了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "但是……西景人和蚩幽人的和平吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "那倒也不是什么坏事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefault",
+        "string": "啊！说了这么多",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefault",
+        "string": "你们两个已经一整天没进过一滴水了吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "斯理把食物和水丢给世清两人",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "帮大忙了，斯理",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "活过来了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentDefault",
+        "string": "书记官",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriDefault",
+        "string": "什么事？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "就先让大哥大嫂在这里好好歇息一会吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "我们来得太急了，除非让他们跟着走，不然一匹马带不走他们两个人的，现在确认他们两个没事就好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "现在首要义务是把这个消息带回去，让双方不要再流无谓的鲜血",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "但是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "哎呀，给别人小两口一点私人时间行不行",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSinisterSmile",
+        "string": "大哥大嫂也不是啥小孩子了，别那么担心",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "……好吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "斯理，等我恢复过来之后，我会跟余去高州一趟 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "总不能一声不吭吧 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "太危险了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "蚩幽人尊重勇士，世清是和我一起击败了库尔哈克的人，蚩幽人会将侮辱勇者的行为视为耻辱",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "我会……好好跟世清面对好的，所以不要担心，斯理爸爸",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "好吧……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "斯理",
+        "face": "SriSad",
+        "string": "一定要多小心，我们先走了",
+        "special": "dia2"
     }
 ]
