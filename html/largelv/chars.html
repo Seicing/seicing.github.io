@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_lavivagnarlarge.css" rel="stylesheet" type="text/css" media="screen" /> 
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script>
+    $(window).resize(function () {
+        var cliWidth = document.body.clientWidth - 330;
+        $("#reski").width(cliwidth);
+    })
+</script>
 
 </head>
 
@@ -175,8 +181,7 @@
 
 </div>
 
-
-<div style="float: left;">
+<div id="reski" style="float: left;max-width: 1500px;">
     <div id="Seicing"></div>
     <div id="Yo"></div>
     <div id="Iris"></div>
@@ -251,7 +256,7 @@
     <div id="Borivoje"></div>
     <div id="Demetrios"></div>
     <div id="Mustafa"></div>
-</div
+</div>
 
                         </div>
 
