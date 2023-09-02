@@ -45,14 +45,14 @@
         "branch": "branch0",
         "name": "蚩幽新兵",
         "face": "CiyauRecruit",
-        "string": "你回来了啊，余皇帝阁下，还有西景的皇帝世清阁下",
+        "string": "你回来了啊，忽兰皇帝阁下，还有西景的皇帝世清阁下",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "蚩幽新兵",
         "face": "CiyauRecruit",
-        "string": "让我带路前往阿古那大人的住处，请对路上指指点点的路人见谅，城里的人目前处于难以调和的混乱状态",
+        "string": "让我带路前往阿古那奶奶的住处，请对路上指指点点的路人见谅，城里的人目前处于难以调和的混乱状态",
         "special": "dia2"
     },
     {
@@ -61,5 +61,33 @@
         "face": "Yo2Happy",
         "string": "嗯，拜托了",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "忽兰？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "我的蚩幽语名字，你喜欢叫这个名字也可以哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我还是更喜欢叫你余",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到阿古那的住处",
+        "special": "dia3"
     }
 ]
