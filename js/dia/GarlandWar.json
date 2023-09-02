@@ -3,119 +3,63 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "文羁绊9剧情完成后，文会自动离队，重新和文组队的时候触发前置剧情",
+        "string": "休息一段时间后，余打扮好，回到了世清的身边",
         "special": "dia3"
     },
     {
         "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "小余，世清",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
         "name": "余",
-        "face": "YoDefault",
-        "string": "在庙会之后再次相会了呢",
+        "face": "Yo2Default",
+        "string": "疲劳已经消失了",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "是啊……",
+        "face": "SeicingDefault",
+        "string": "嗯……这下遇到什么突发情况都能有效应对了",
         "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoDepressed",
-        "string": "你在紧张什么啊，上次庙会之后不都把一切都交代得明明白白了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoSinisterSmileRF",
-        "string": "你还不如适应如何享受我们两个的同时奉献，因为紧张而无法尽兴，未免也太可怜了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2SinisterSmileRF",
-        "string": "嘿",
-        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
-        "face": "SeicingEmbarrassed",
-        "string": "这……这样啊",
+        "face": "SeicingDefault",
+        "string": "走吧，去高州城",
         "special": "dia1"
     },
     {
         "branch": "branch0",
-        "name": "余",
-        "face": "YoDefault",
-        "string": "话说小文",
+        "name": "",
+        "face": "",
+        "string": "来到高州城",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽新兵",
+        "face": "CiyauRecruitSurprise",
+        "string": "是皇帝和……快去通知阿古那奶奶",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Serenity",
-        "string": "嗯？",
+        "name": "蚩幽新兵",
+        "face": "CiyauRecruit",
+        "string": "你回来了啊，余皇帝阁下，还有西景的皇帝世清阁下",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "余",
-        "face": "YoEmbarrassed",
-        "string": "真的不考虑和这家伙举行婚礼吗？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "余",
-        "face": "YoEmbarrassed",
-        "string": "对于你来说是一种遗憾吧",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2WrySmile",
-        "string": "这也是没办法的事情，身份和情况太特殊了",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "能够得到你的宽容，得到这家伙的爱就足够了，我不会把名分看得太重的",
+        "name": "蚩幽新兵",
+        "face": "CiyauRecruit",
+        "string": "让我带路前往阿古那大人的住处，请对路上指指点点的路人见谅，城里的人目前处于难以调和的混乱状态",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "余",
-        "face": "YoDefault",
-        "string": "在这一点上还真是豁达啊，明明一直以来都如此坚持",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "坚持和偏执还是有很大区别的，现在这样就很好，不是吗？",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "文",
-        "face": "Ven2Default",
-        "string": "走吧，该干正经事了",
+        "face": "Yo2Happy",
+        "string": "嗯，拜托了",
         "special": "dia2"
     }
 ]
