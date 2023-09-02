@@ -36,21 +36,21 @@
     },
     {
         "branch": "branch0",
-        "name": "蚩幽新兵",
+        "name": "新兵",
         "face": "CiyauRecruitSurprise",
         "string": "是皇帝和……快去通知阿古那奶奶",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "蚩幽新兵",
+        "name": "新兵",
         "face": "CiyauRecruit",
         "string": "你回来了啊，忽兰皇帝阁下，还有西景的皇帝世清阁下",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "蚩幽新兵",
+        "name": "新兵",
         "face": "CiyauRecruit",
         "string": "让我带路前往阿古那奶奶的住处，请对路上指指点点的路人见谅，城里的人目前处于难以调和的混乱状态",
         "special": "dia2"
@@ -89,5 +89,656 @@
         "face": "",
         "string": "来到阿古那的住处",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "阿古那奶奶！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "忽兰，你回来了啊，还有……见过西景的皇帝阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "我叫蚩幽阿古那，蚩幽一族遭遇了毁灭打击后的代理族长，同时也是忽兰的监护人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "监护人？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "负责新人武士的统领，监督，引导和后辈的前辈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "也就是说，是余的“母亲”吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "……差不多吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "蚩幽一族……陷入了混乱之中",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "混乱？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "一方面，有的人认为世清阁下帮助我们蚩幽一族解除了困境，是蚩幽的恩人，赞成你和忽兰的婚姻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "一方面……也有人认为蚩幽的皇帝要跟西景人结婚……简直不可理喻，在极力反对",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "不可理喻的是他们，平时嚷嚷着什么蚩幽的光荣，到了这种时候只会表现出这种丢人现眼的行为",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "两族间的仇恨确实也是一个不可忽视的事实",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "……我也为此感到羞愧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "不过，拒绝的人之中也有不同的想法的人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Surprise",
+        "string": "是什么呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSideEye",
+        "string": "……只是觉得信得过世清阁下才能坦白一件事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "蚩幽一族遭受了毁灭性的打击，很多武士都死在了浩劫之中",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "实际上城内的混乱有一个更深层次的原因就是灭亡的阴霾还没有从高州的天空散去",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "如你所见，实际上高州城缺少了作为皇帝的余之后，不要说西景的军队，就连宿句人也会开始觊觎高州",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "高州的灭亡在倒计时之中",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "阿古那前辈",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "你是如何看待余，还有和我的婚姻的呢？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "我不反对忽兰和你的婚姻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSideEye",
+        "string": "说实话，忽兰刚刚成为我的“女儿”的时候，我跟很多人一样并不看好她",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSideEye",
+        "string": "但是她拥有一种真正的蚩幽人才会有的美德，那就是“骄傲”，不会因为自己先天性的弱小而自怨自艾",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSideEye",
+        "string": "也不会在乎别人的目光，会勇敢地追求自己想要的强大和……爱情，其实我很羡慕",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "现在蚩幽族变成了现在这样只能依靠忽兰存活下去，某种程度上是“报应” ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "最后忽兰真的离开我们而去，我也不会有任何怨言……即使灭亡已经既定，我也会像个长者一样祝福你们 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "这可能就是我理解的光荣吧…… ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Sad",
+        "string": "阿古那奶奶……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "谢谢你，阿古那前辈",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "所以已经决定离开这里继续结婚了吗？ ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "我会尽可能让你们不受阻拦离开这里的 ",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不，我要留在这里做一件事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "正是有前辈这样的人在，我觉得蚩幽一族还不应该就这样灭亡",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "余是为了得到族人的认同而努力的，我不想让她活在失去认可自己的人的遗憾和使得家乡灭亡的内疚中",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我想在高州用自己的实力得到蚩幽全族人的认可，让他们放心把余交给我，也能相信我能尊重蚩幽人的光荣的传统",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "让他们相信我会出于作为余的丈夫，可以在蚩幽人最困难的时候相信我可以为他们而战的承诺",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "世清……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "……有胆识",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "有听过“荣冠战争”吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不了解",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "跟西景人通过战斗选出皇帝一样",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "蚩幽人也有自己解决争端的方式，那就是荣冠战争",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "荣冠战争发动后，象征和平的花冠会发送到高州的各个街道",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "头戴花冠的战士最后会被邀请到蚩幽最神圣的大祭坛里，让这些战士们在蚩幽人的见证下公平的对战",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "……最后胜利的那个人，所有蚩幽人都需要无条件地顺从他",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "原来如此，这很符合以强者为尊的蚩幽人的传统",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "如果阁下真的觉得没问题的话……我就会代为你为族人们宣布荣冠战争",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "不用担心由于过于劳累无法发挥正常，荣冠战争是绝对公平的，我们会给所有答应参加的武士们最充分的准备……如何",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清看了看余，余把手放在他的手上，给予他信心",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "拜托了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "……好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "信使！蚩幽的代理族长在这里下达最高命令！荣冠战争发动了！荣冠战争发动了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "把花环按照你们负责的范围发放出去！在一天之内，把荣冠战争的消息给我传遍高州！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "新兵",
+        "face": "CiyauRecruit",
+        "string": "得令！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonFemale",
+        "string": "荣冠战争！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonMale",
+        "string": "荣冠战争！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "整个高州开始笼罩在一片嘈杂声中",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "荣冠战争的发动方法比我想象中的还要……粗暴呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "大家本来就打算通过荣冠战争决定未来了……我只是在最后终于宣布了而已",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "这里很嘈杂是吧？忽兰，把他带到你的房间去好好休息吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "我还要给那些笨蛋们好好讲解一下这次的荣冠战争……哎，真是个苦差事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "是！阿古那奶奶！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "阿古那奶奶",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "谢谢你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "我先走一步了，你们自便……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "阿古那离开了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingEmbarrassed",
+        "string": "事情朝着越来越离谱的方向发展了啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "前往余的房间",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "我们蚩幽人都这样呢，让你见怪了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没有的事，终于可以睡在床上了……真是劳累",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "好好休息吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2HappyRF",
+        "string": "祝你一切顺利，我……相信你",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "在床上点击休息的话就会来到荣冠战争那一天",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "是时候了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "余先走一步了吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "去大祭坛吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "荣冠战争现场",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "蚩幽的勇士们，蚩幽一族到了最危险的时候，为了不让我们在耻辱的内斗中走向灭亡，今天我作为代理族长，在这里主持神圣的荣冠战争仪式",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "蚩幽的祖灵们会看着你们的战斗，你们必须拿出你们最强的实力，不让我们的祖先蒙羞",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "和以前一样，荣冠战争不允许仇杀，不允许任何侮辱武德的卑鄙行为，最后站在场上的胜利者便是唯一的真理，蚩幽的孩子必须无条件服从他！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "但和以前不同的是！和我们的皇帝一起拯救了我们蚩幽一族的恩人，西景的皇帝世清也会参与到这次的荣冠战争之中！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "他选择了尊重我们一族的传统来证明自己和我们的皇帝的爱情是同样被我们祖先所祝福的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "总之……有任何不服气的，有任何想表达的观点的，就在这个神圣的祭坛上用你们的拳头说！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "荣冠战争！开始！",
+        "special": "dia2"
     }
 ]
