@@ -1209,5 +1209,691 @@
         "face": "SeicingDefault",
         "string": "我来帮你教训教训他",
         "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到比武场",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonCommon",
+        "string": "西景的皇帝，你好",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "你好",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonCommon",
+        "string": "我的名字叫蚩幽持闻",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonCommon",
+        "string": "和忽兰一起长大的青梅竹马",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonCommon",
+        "string": "我会对忽兰证明我依旧是她想要追上的那个持闻大哥",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "西景人，胡闹也得有个限度，该结束了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "要澄清一点，我不是在胡闹",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "你才认识了她多久，自以为是的家伙",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "整整十九年的时光也没有成功走进她的内心",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "你也是她讨厌的自以为是的人的其中一个罢了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "忽兰是我的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "余不是属于某个人的东西",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "只会耍嘴皮子没用，出招吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "第四战 蚩幽持闻战，打到半血后",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "怎么可以这么强",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "持闻看了看看台上的余，咬紧牙关",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "没办法了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonYell",
+        "string": "出来！都出来吧！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "咦！？什么回事！？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "持闻！你在干什么！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来自四方的蚩幽战士们上来围攻世清",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "西景人试图用这个方法征服虚弱的蚩幽族",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "我们为什么要跟这种卑鄙小人讲信用",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "只要可以杀死这个西景皇帝！蚩幽一族的皇冠就不会落到我们宿敌的头上！这才能保住我们的光荣！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonFemale",
+        "string": "喂！太卑鄙了！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonMale",
+        "string": "简直是蚩幽人的耻辱！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "只要可以杀死你，蚩幽人回归到正轨上，让我用什么方法都可以",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingAngry",
+        "string": "你这个白痴，稍微有点愤怒了…… ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "第四战 蚩幽持闻战后半段，持闻+76个蚩幽战士们车轮战，全部击败后进入剧情",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "什……什么？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "我的武士团……竟然全军覆没……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "怎……怎么会……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "持闻大哥……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "我对你很失望",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "不可否认的是曾经我也以你作为超越的对象而不断努力",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Cry",
+        "string": "但是你现在已经堕落成了何等耻辱的存在……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "我不认为这有什么问题的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "忽兰……你在朝着错误的方向前进",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonAngry",
+        "string": "我只是用自己的方法去捍卫蚩幽一族的荣誉！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "够了，持闻，不要在这里狡辩了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaYell",
+        "string": "你已经用自己的行动向我们的祖先证明了你的弱小",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "……我……弱小？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "自小就作为无数同龄人憧憬对象的我……弱小……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "毕竟你们76个人一起上也打不过啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "够了！持闻大哥",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "不要再丢人下去了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "…………",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "持闻，你的所作所为被视为对先祖的一个侮辱",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "等待你的将会是死刑",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "阿古那奶奶",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "饶他一命，可以吗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "忽兰，你在给他求情",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "我知道他以前是怎么对待你的……他没有尊重过你，只是把你当成给予怜悯以获得优越感的对象",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "我知道，但怎么说，他也是我仅剩不多的“亲人”了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Uncomfortable",
+        "string": "即使我的亲人们对我不好，但是，眼睁睁看着他们全部死去……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "世清阁下",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "荣冠战争你赢了，你拥有蚩幽一族的最高决定权了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "持闻的死活现在在你的一念之间，当然，这只是附带的，不用担心婚姻的事",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "放过他吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassion",
+        "string": "这是余的意念，跟我无关",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "…………我会记住的，西景人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonEndure",
+        "string": "今天在这里受到的耻辱，我会加倍偿还给你的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Angry",
+        "string": "还不滚！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "持闻",
+        "face": "ChimonFear",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "持闻愣了一下然后灰溜溜逃走了",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonFemale",
+        "string": "世清皇帝！世清皇帝！世清皇帝！世清皇帝！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonMale",
+        "string": "世清！万岁！世清！万岁！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "结束了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余偎依在世清身旁",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "对这种万人崇拜的感觉，没有什么感悟吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没有什么比历尽千辛万苦后拥有你更觉得激动",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "咳咳",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "世清阁下，发生了一些让我们觉得非常羞耻的事情",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSad",
+        "string": "希望你能见谅",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "不要觉得自责，前辈，蚩幽一族更多的是拥有武德的人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "我们蚩幽人绝对服从强者",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "你已经在这场光荣的战争中证明了自己……已经没有不同意你的意志的蚩幽人了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "恭喜你们",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "也要谢谢你，阿古那奶奶",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "以后要多点回来高州看看",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "阿古那前辈，作为蚩幽的女婿，我会在蚩幽一族陷入危机的时候挺身而出的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这是我的承诺",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "谢谢你，西景皇帝",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "西景的皇帝竟然以这样的方式跟蚩幽的皇帝走到了一起",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "虽然无法理解的人还是很多，但是我觉得，两族人会以此为契机开始越来越认识彼此",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "延续数千年的仇恨越来越多的人理解到这是毫无意义的，很多流血从一开始就不必要",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefault",
+        "string": "希望属于我们真正的和平的那一天可以到来",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "世清跟余在数天后的西景皇宫内展开了盛大的婚礼",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "在婚礼中，蚩幽族的武士们被邀请到了婚礼的现场中，跟不久前还在血战的西景人同坐一个礼堂里共进晚餐",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "虽然彼此还是有很大的隔阂，但是在那一天，完全放下了警戒心成为了朋友的战士，也是不可胜数",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "西景会在接下来的日子里名义上跟蚩幽人成为盟国，在那之前，需要习惯一下跟对方和平共处的方式……",
+        "special": "dia3"
     }
 ]
