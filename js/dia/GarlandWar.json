@@ -740,5 +740,474 @@
         "face": "ArgunaYell",
         "string": "荣冠战争！开始！",
         "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "荣冠战争开始后，在观众席",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "准备好了吗？要准备战斗了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "稍微有点紧张",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我不太习惯这种人多的场合",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2SinisterSmile",
+        "string": "你出奇地怕生啊，明明撩我的时候那么有肉食性",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "你的第一个对手是……饿鬼爷爷",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "饿鬼，听起来有点可怕的名字",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "跟名字和外观不同，饿鬼爷爷是一个很和蔼的人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "他是一个善于射击的远程武士，要小心他的狙击",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "嗯，那我上了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到比武场",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "饿鬼",
+        "face": "OgwiCommon",
+        "string": "阁下就是战胜了科尔哈克的强大战士吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "饿鬼",
+        "face": "OgwiCommon",
+        "string": "让我好好领教一下阁下的武技吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "有请前辈多多指教了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "第一战，蚩幽饿鬼",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "饿鬼",
+        "face": "OgwiCommon",
+        "string": "呜，真不愧是……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonFemale",
+        "string": "是西景皇帝的胜利！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "回到观众席",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "干得好，首战得利啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "呼，真是棘手",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "在直到下一战之前，先好好休息一下吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "下一战的对手是……天权爷爷",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "他是我们最精通大刀武术的战士之一",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到比武场",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "天权",
+        "face": "TenkyunCommon",
+        "string": "跟阁下交手是我的荣幸",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "多多指教",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "第二战，蚩幽天权",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "天权",
+        "face": "TenkyunCommon",
+        "string": "我引以为豪的武术在你的面前完全没有任何优势……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "天权",
+        "face": "TenkyunCommon",
+        "string": "我输得心服口服……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauCommonMale",
+        "string": "第二战也是西景皇帝的胜利啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "回到观众席",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "真是辉煌的胜利",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "蚩幽人跟西景人所说的不同，很多人都很讲武德，并不是野蛮狡猾的化外之民",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "大家可以放下偏见互相再次认识就好了…… ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "是啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "好好歇一会吧，下一战的对手……你上去就知道了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "来到比武场",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingSurprise",
+        "string": "是阿古那前辈 ",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "我好歹也是忽兰的长辈",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "蚩幽的长辈用拳头对晚辈的伴侣进行测试也是一个古老的习俗呢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaSmile",
+        "string": "不要太顾及，我还没老",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "多有得罪了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "第三战，蚩幽阿古那",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "不愧是击败了库尔哈克的人……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "阿古那",
+        "face": "ArgunaDefaultCE",
+        "string": "余，可以安心交给你了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "蚩幽人",
+        "face": "CiyauRecruit",
+        "string": "第三战依然是西景皇帝的胜利！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "回到观众席",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Happy",
+        "string": "阿古那奶奶完全不是你的对手啊！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCompassionNO",
+        "string": "你的爷爷奶奶们都是一等一的强敌啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "两人观看下面的战斗",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这个战士一路高歌猛进呢",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "他叫持闻，是上级武士",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "不出意外你最后一战的对手就是他了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这种表情……你认识他吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "……怎么说呢，算是青梅竹马吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "怎么觉得你生气了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "没有的事",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Default",
+        "string": "……既然是夫妻就应该坦白",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "他曾经也是我憧憬的对象",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Embarrassed",
+        "string": "但是，我讨厌他",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "明明是青梅竹马",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "他和其他人一样，根本没有试过平视我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "只是，与其他人有点不同的是，他“怜悯”我",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "Yo2Depressed",
+        "string": "所以，我才会努力想要去变强，想要证明自己并不是只能被怜悯的玩物",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingCloseEye",
+        "string": "……我明白了",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "我来帮你教训教训他",
+        "special": "dia1"
     }
 ]
