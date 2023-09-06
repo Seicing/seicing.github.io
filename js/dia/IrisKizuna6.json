@@ -1228,7 +1228,7 @@
         "branch": "branch0",
         "name": "欧洛克",
         "face": "OrlokAwakening",
-        "string": "这条生命竟然交代在这里，真是可恶……",
+        "string": "<span id='金'>这条生命</span>竟然交代在这里，真是可恶……",
         "special": "dia2"
     },
     {
@@ -1236,13 +1236,6 @@
         "name": "欧洛克",
         "face": "OrlokAwakening",
         "string": "马格努斯……你在看着吧……竟然就这样看着这个身体就这样战死，你这家伙……",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "欧洛克",
-        "face": "OrlokAwakening",
-        "string": "呵呵呵……等我……我会回来的……",
         "special": "dia2"
     },
     {
