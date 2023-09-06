@@ -3,14 +3,301 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "1",
+        "string": "室外狂风呼啸，一个白发女子躺在床上正在分娩，女子的丈夫和侍女在附近紧张地等待着",
         "special": "dia3"
     },
     {
         "branch": "branch0",
-        "name": "世清",
-        "face": "SeicingDefault",
-        "string": "1",
-        "special": "dia1"
+        "name": "白发女人",
+        "face": "YunpyengPain",
+        "string": "呜……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "传来敲门的声音",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnSurprise",
+        "string": "……那群家伙竟然可以在“这一天”找到这里吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "阁下，怎么办",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefault",
+        "string": "不去理会会引起怀疑的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefault",
+        "string": "去看看情况，但是不能让任何人进入内室",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanSad",
+        "string": "但是夫人她……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefault",
+        "string": "……我会陪在元平身边",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "……明白了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "侍女来到房间外打开了门，两个年轻人几乎同时被大风吹了进房子里",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "白发女子",
+        "face": "Meirei2Yell",
+        "string": "哇，得救了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男子",
+        "face": "Sri2Happy",
+        "string": "好心人，真的是谢谢你了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "你们怎么会在“天风之日”的时候在外面乱走",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "能捡回一条命真是万幸啊",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "白发女子",
+        "face": "Meirei2Yell",
+        "string": "都是因为这个家伙偷懒！神宫的书都！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男子",
+        "face": "Sri2Yell",
+        "string": "我是白痴，行了吧，不要再骂我了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "……你们是神宫的人？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "白发女子",
+        "face": "Meirei2Default",
+        "string": "是的，我叫明玲，是刚刚上任不久的天风宫大祝",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "白发女子",
+        "face": "Meirei2Confidence",
+        "string": "这个家伙，算是我的手下吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男子",
+        "face": "Sri2Default",
+        "string": "真过分啊，把一起长大的朋友当下人使唤",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "原来是明玲阁下，幸会",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "你们请自便，在这里等待天风之日的结束吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "侍女",
+        "face": "ChunlanDefault",
+        "string": "请见谅……只能屈就你们在大厅休息",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "明玲",
+        "face": "Meirei2Happy",
+        "string": "嗯，谢谢你，这已经足够了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "侍女回到房间里，锁上了门",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefault",
+        "string": "情况怎么样，春兰",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "春兰",
+        "face": "ChunlanDefault",
+        "string": "是明玲大祝和她的侍从，似乎是因为神宫的图书馆被风刮坏了，他们两个冒着危险在抢救",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefault",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "春兰",
+        "face": "ChunlanDefault",
+        "string": "夫人她怎么样了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "春兰",
+        "face": "ChunlanSurprise",
+        "string": "啊！是公子！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnDefaultCE",
+        "string": "上天保佑",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "春兰",
+        "face": "ChunlanSad",
+        "string": "但是夫人脸色很不对劲",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "元平",
+        "face": "YunpyengPain",
+        "string": "春兰……我快不行了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "元平",
+        "face": "YunpyengDefault",
+        "string": "这孩子比我想象中的……充满活力呢……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "春兰",
+        "face": "ChunlanSad",
+        "string": "怎么会……夫人……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "男人",
+        "face": "ByinnSadCE",
+        "string": "……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "元平",
+        "face": "YunpyengDefault",
+        "string": "辩……这是命运的引导，不是吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "辩",
+        "face": "ByinnDefault",
+        "string": "是的……明明是我们想要找的人，却自己上门了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "元平",
+        "face": "YunpyengDefault",
+        "string": "我来亲自和她会面……所以……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "辩",
+        "face": "ByinnSad",
+        "string": "真是残酷……连跟你走完最后的时光……都不被允许吗……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "元平",
+        "face": "YunpyengSad",
+        "string": "对不起……辩",
+        "special": "dia2"
     }
 ]
