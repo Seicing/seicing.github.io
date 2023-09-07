@@ -100,13 +100,13 @@ let ayanami = {
     "建筑学": "建筑学<br>Architecture<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>175 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>建筑物建造时间-33%，生命值+20%",
     "文字书写": "文字书写<br>Writing<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>分享同盟视野",
     "后勤学": "后勤学<br>Logistics<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>180 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>兵营部队只需要占据半个人口",
-    "城市守望": "城市守望<br>City Watch<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>建筑物视野+3",
+    "城市守望": "城市守望<br>City Watch<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>建筑物视野+3",
     "贵族统治制度": "贵族统治制度<br>Aristocracy<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>175 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>学院部队移动速度+25%",
     "弹道学": "弹道学<br>Ballistics<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>投射部队命中率增高，研究弩炮塔的先决条件",
     "炼金术": "炼金术<br>Alchemy<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>100<br>+1投射部队攻击力",
     "工程学": "工程学<br>Engineering<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>70<br>攻城部队和攻城船只+2射程",
     "征招": "征招<br>Conscription<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>70<br>陆地部队训练速度+25%",
-    "城市化": "城市化<br>Urbanization<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>70<br>房屋提供双倍人口数 ",
+    "城市化": "城市化<br>Urbanization<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>70<br>房屋提供双倍人口数 ",
     "木材利用": "木材利用<br>Woodworking<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>120 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>+2伐木效率、+1远程武器射程 ",
     "石矿开采": "石矿开采<br>Stone Mining<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>+3采石效率、+1环索投石手射程 ",
     "金矿开采": "金矿开采<br>Gold Mining<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>120 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>+3采金效率 ",
@@ -164,7 +164,7 @@ let ayanami = {
     "朝鲜加成2": "朝鲜加成2<br>贮藏阱的技术研究成本-40%",
     "朝鲜加成3": "朝鲜加成3<br>塔射程+2",
     "朝鲜加成4": "朝鲜加成4<br>祭司便宜30%",
-    "朝鲜加成5": "朝鲜加成5<br>墙+4视野",
+    "朝鲜加成5": "朝鲜加成5<br>建筑物+2视野",
 
     "大和加成1": "大和加成1<br>捕鱼船系工作效率+20%",
     "大和加成2": "大和加成2<br>所有骑兵部队和骑马弓兵便宜15%",
@@ -180,7 +180,7 @@ let ayanami = {
 
     "赫梯加成1": "赫梯加成1<br>所有弓箭手+1攻击力",
     "赫梯加成2": "赫梯加成2<br>投石车系+50%生命值",
-    "赫梯加成3": "赫梯加成3<br>战船(除火艨艟外)在工具时代+2射程，在青铜时代以后+3射程",
+    "赫梯加成3": "赫梯加成3<br>战船(除火艨艟外)在工具时代/青铜时代/铁器时代射程+1/+2/+3",
     "赫梯加成4": "赫梯加成4<br>车轮成本和研究时间-50%",
     "赫梯加成5": "赫梯加成5<br>塔提供4人口",
 
@@ -204,7 +204,7 @@ let ayanami = {
     "马其顿加成5": "马其顿加成5<br>房屋+25生命值",
 
     "米诺斯加成1": "米诺斯加成1<br>船只便宜30%",
-    "米诺斯加成2": "米诺斯加成2<br>复合弓箭手+2射程",
+    "米诺斯加成2": "米诺斯加成2<br>复合弓箭手在青铜时代/铁器时代射程+1/+2",
     "米诺斯加成3": "米诺斯加成3<br>农民工作速度+10%",
     "米诺斯加成4": "米诺斯加成4<br>船坞便宜50%",
 
@@ -221,7 +221,7 @@ let ayanami = {
     "希腊加成5": "希腊加成5<br>市场便宜50%",
 
     "亚述加成1": "亚述加成1<br>村民移动速度+10%",
-    "亚述加成2": "亚述加成2<br>射手攻击速度+25%",
+    "亚述加成2": "亚述加成2<br>射手攻击速度在工具时代/青铜时代/铁器时代+11%/+22%/+33%",
     "亚述加成3": "亚述加成3<br>攻城器升级费用-50%",
     "亚述加成4": "亚述加成4<br>攻城武器厂+15%工作速度",
 
