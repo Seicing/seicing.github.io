@@ -276,14 +276,21 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "陪同伊丽丝一起来到了坎斯坦马斯的港口",
+        "string": "陪同伊丽丝一起来到了坎斯坦马斯的港口<br>找到港务员询问",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDefault",
+        "string": "你好，请问有前往伊拉修莱德的航班吗？",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "港务员",
         "face": "KhazatarCleric",
-        "string": "情况就是这样了",
+        "string": "真的抱歉，因为很复杂的原因，需要走这条路线……请见谅",
         "special": "dia2"
     },
     {
@@ -340,6 +347,27 @@
         "name": "",
         "face": "",
         "string": "和港务员对话后上船",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "港务员",
+        "face": "KhazatarCleric",
+        "string": "如果考虑清楚的话我这就为你们安排乘搭手续",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDefault",
+        "string": "嗯，麻烦了",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "黑屏后上船",
         "special": "dia3"
     },
     {
