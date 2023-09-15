@@ -2453,7 +2453,7 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "斯理把食物和水丢给世清两人",
+        "string": "斯理把食物和水丢给世清两人，世行走到附近回收了一些库尔哈克的残骸",
         "special": "dia3"
     },
     {
@@ -2468,6 +2468,13 @@
         "name": "余",
         "face": "Yo2Happy",
         "string": "活过来了……",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世行",
+        "face": "SeigentSmile",
+        "string": "好，证物回收完毕",
         "special": "dia2"
     },
     {
@@ -2502,7 +2509,7 @@
         "branch": "branch0",
         "name": "世行",
         "face": "SeigentSmile",
-        "string": "现在首要义务是把这个消息带回去，让双方不要再流无谓的鲜血",
+        "string": "现在首要义务是把库尔哈克已死的消息带回去，让双方不要再流无谓的鲜血",
         "special": "dia2"
     },
     {
