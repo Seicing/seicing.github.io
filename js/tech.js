@@ -243,7 +243,7 @@ let ayanami = {
     "润滑轮轴sul": "润滑轮轴<br>Greased Axles<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>攻城器+15%移动速度",
     "卷帘式触发器sul": "卷帘式触发器<br>Roller Shutter Triggers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>扭力弩炮装填时间-25%，射程+2",
     "可调式横杆sul": "可调式横杆<br>Adjustable Crossbars<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>轻型投石车装填时间-25%",
-    "几何学sul": "几何学<br>Geometry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>540<br>巨型投石机伤害+30%",
+    "几何学sul": "几何学<br>Geometry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>540<br>巨型投石机伤害+20%",
 
     "攻城武器sul": "攻城武器<br>Siege Works<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>攻城器+20%生命值，远程护甲+10",
     "生物学sul": "生物学<br>Biology<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>骑兵生命值+20%",
@@ -310,7 +310,7 @@ let ayanami = {
     "润滑轮轴已强化": "润滑轮轴(已强化)<br>Greased Axles(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>500    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城器+20%移动速度，如果已经研究了润滑轮轴，则只会+5%",
     "卷帘式触发器已强化": "卷帘式触发器(已强化)<br>Roller Shutter Triggers(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>500    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮的武器攻击范围+3格，装填时间-35%，如果已经研究了卷帘式触发器，则只会攻击范围+1格，装填时间-10%",
     "可调式横杆已强化": "可调式横杆(已强化)<br>Adjustable Crossbars(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>700    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>轻型投石车装填时间-35%，如果已经研究了可调式横杆，则只会-10%",
-    "几何学已强化": "几何学(已强化)<br>Geometry(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>325    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机伤害+45%，如果已经研究了几何学，则只会+15%",
+    "几何学已强化": "几何学(已强化)<br>Geometry(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>325 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机伤害+30%，如果已经研究了几何学，则只会+10%",
 
     "攻城武器已强化": "攻城武器(已强化)<br>Siege Works(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1000    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>攻城器+30%生命值，远程护甲+15，如果已经研究了攻城武器，则只会+10%生命值，远程护甲+5",
     "生物学已强化": "生物学(已强化)<br>Biology(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1000    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>骑兵生命值+30%，如果已经研究了生物学，则只+10%",
