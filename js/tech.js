@@ -40,7 +40,7 @@ let ayanami = {
     "加农炮炮台": "加农炮炮台<br>Cannon Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>375 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>为研发的单个防御建筑安装一个加农炮炮台",
 
 
-    "大型手推炮炮台": "大型手推炮炮台<br>Great Bombard Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>为研发的单个防御建筑安装一个大型手推炮炮台",
+    "大型手推炮炮台": "大型手推炮炮台<br>Great Bombard Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>为研发的单个防御建筑安装一个大型手推炮炮台",
 
     "加农炮炮台hre": "加农炮炮台<br>Cannon Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>93 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>281 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>为研发的单个防御建筑安装一个加农炮炮台",
     "扭力弩炮炮台hre": "扭力弩炮炮台<br>Springald Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>37  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>93 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为研发的单个防御建筑安装一个扭力弩炮炮台",
@@ -49,9 +49,9 @@ let ayanami = {
     "卷帘式触发器": "卷帘式触发器<br>Roller Shutter Triggers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮装填时间-25%，射程+2",
     "可调式横杆": "可调式横杆<br>Adjustable Crossbars<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>轻型投石车装填时间-25%",
     "几何学": "几何学<br>Geometry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机伤害+30%",
-    "轻质横梁": "轻质横梁<br>Lightweight Beams<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>冲车攻击速度提升40%，士兵建造的时间-50%",
-    "轻质横梁sul": "轻质横梁<br>Lightweight Beams<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>780<br>冲车攻击速度提升40%，士兵建造的时间-50%",
-    "轻质横梁已强化": "轻质横梁(已强化)<br>Lightweight Beams(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>700 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>冲车攻击速度提升60%，士兵建造的时间-75%，如果已经研发了轻质横梁，攻击速度提升20%，士兵建造时间-25%",
+    "轻质横梁": "轻质横梁<br>Lightweight Beams<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>冲车攻击速度提升20%，士兵建造的时间-50%",
+    "轻质横梁sul": "轻质横梁<br>Lightweight Beams<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>780<br>冲车攻击速度提升20%，士兵建造的时间-50%",
+    "轻质横梁已强化": "轻质横梁(已强化)<br>Lightweight Beams(Improved)<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>700 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>冲车攻击速度提升20%，士兵建造的时间-75%，如果已经研发了轻质横梁，攻击速度提升40%，士兵建造时间-25%",
 
     "攻城武器": "攻城武器<br>Siege Works<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>攻城器+20%生命值，远程护甲+10",
     "生物学": "生物学<br>Biology<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>骑兵生命值+20%",
@@ -89,8 +89,8 @@ let ayanami = {
 
     "重锤": "重锤<br>Heavy Maces<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>武士手持锤子，对装甲目标加成+6",
     "双手武器": "双手武器<br>Two-handed Weapons<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>武士双持武器，攻击力+2",
-    "铆钉链甲": "铆钉链甲<br>Riveted Chain Mail<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>175  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>骑手和长矛兵的近战护甲+2",
-    "钢制马甲": "钢制马甲<br>Steel Barding<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>骑兵近战护甲和远程护甲+2",
+    "铆钉链甲": "铆钉链甲<br>Riveted Chain Mail<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>骑手和长矛兵的近战护甲+2",
+    "钢制马甲": "钢制马甲<br>Steel Barding<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>骑兵近战护甲和远程护甲+2",
 
     "消防站": "消防站<br>Fire Stations<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>军事船只在脱离战斗后每2秒恢复1生命值",
     "行军演习": "行军演习<br>Marching Drills<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>步兵和高级教士行军速度+10%",
@@ -160,6 +160,8 @@ let ayanami = {
     "更多火炬": "更多火炬<br>Additional Torches<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵和步兵火炬伤害+3",
     "驿站网络": "驿站网络<br>Yam Network<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>所有单位可以获得驿站光环效果，非仅限商人和骑兵单位",
 
+    "蒙古和平": "蒙古和平<br>Pax Mongolica<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>所有哨站生命值+300，火焰护甲+3",
+
 
 
 
@@ -204,7 +206,7 @@ let ayanami = {
     "毒箭": "毒箭<br>Poisoned Arrows<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>175 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>步弓手造成持续6秒的3额外毒伤害",
     "进口护甲": "进口护甲<br>Imported Armor<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>索法骑手近战护甲+2，远程护甲+2",
     "法里玛领导制": "法里玛领导制<br>Farima Leadership<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>650  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>索法骑手提高附近步兵的移动速度 +15%",
-    "精准训练": "精准训练<br>Precision Training<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>当佐兵的远程伤害 +6，弓箭手的远程伤害 +2，掷枪兵的远程伤害 +2",
+    "精准训练": "精准训练<br>Precision Training<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>当佐兵的远程伤害 +6，弓箭手的远程伤害 +2，掷枪兵的远程伤害 +3",
     "独木舟战术": "独木舟战术<br>Canoe Tactics<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>步弓手船只可发射额外的2个标枪武器",
 
     "纺织品sul": "纺织品<br>Textiles<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25<br>村民生命值+25",
@@ -352,6 +354,8 @@ let ayanami = {
     "德里城堡升级": "德里城堡升级<br>学术成就：升级到老练等级只需要300秒，无需额外资源",
     "德里帝王升级": "德里帝王升级<br>学术成就：升级到精锐等级只需要720秒，无需额外资源",
 
+    "德里清真寺免费学者": "德里清真寺免费学者<br>学者文化：建造完毕的第一个清真寺类建筑会获得1个免费的学者",
+    "德里学院免费学者": "德里学院免费学者<br>学者文化：建造完毕的第一个穆斯林学塾类建筑会获得3个免费的学者",
 
     "迈因维克宫殿效果": "迈因维克宫殿效果<br>迈因维克宫殿：研究成本-40%，研究效率+40%",
     "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
@@ -446,7 +450,7 @@ let ayanami = {
     "蒙古城镇中心限制": "蒙古城镇中心限制<br>伟大统治：打包移动时生命值是2400",
     "蒙古石头贸易限制": "蒙古石头贸易限制<br>伟大统治：无法交易石头，无法开采石头",
     "蒙古哨站效果": "蒙古哨站效果<br>伟大统治：哨站为骑兵和商人提供15%移动速度加成",
-    "敖包双倍": "敖包双倍<br>影响力系统：敖包影响范围内可以花费石头双倍训练部队，并加快牧场的效率",
+    "敖包双倍": "敖包双倍<br>影响力系统：敖包影响范围内可以花费石头双倍训练部队(村民为125石头)，并加快牧场的效率",
     "蒙古掠夺": "蒙古掠夺<br>突袭赏金：点燃建筑物掠夺25食物、25黄金",
     "丝绸之路": "丝绸之路<br>丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金",
     "蒙古运输": "蒙古运输<br>强化运输：生命值+50%、移动速度+15% ",
@@ -454,7 +458,7 @@ let ayanami = {
 
     "奥斯曼木材折扣": "奥斯曼木材折扣<br>军事诱惑：造价减少33%",
     "奥斯曼生产加速": "奥斯曼生产加速<br>影响力系统：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升20%/20%/30%/40%",
-    "伊斯坦布尔天文台效果": "伊斯坦布尔天文台效果<br>伊斯坦布尔天文台：铁匠铺、大学周围的军事生产建筑效率影响力效果提高到60%",
+    "伊斯坦布尔天文台效果": "伊斯坦布尔天文台效果<br>伊斯坦布尔天文台：铁匠铺、大学周围的军事生产建筑效率的影响力效果提高到100%",
     "穆罕默德帝国军械库效果": "穆罕默德帝国军械库效果<br>穆罕默德帝国军械库：免费生产，但需要6倍生产时间",
     "军事学校免费生产": "军事学校免费生产<br>军事学校：花费4.5倍时间免费生产",
     "海门城堡效果": "海门城堡效果<br>海门城堡：所有大型箭塔使商人和商船的移动速度 +30% ，近战护甲和远程护甲 +8",
