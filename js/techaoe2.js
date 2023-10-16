@@ -753,6 +753,8 @@ function CommonAllTech() {
     document.getElementById("Mongols2").style.opacity = "1";
     document.getElementById("Poles2").style.opacity = "1";
     document.getElementById("Turks2").style.opacity = "1";
+    document.getElementById("Armenians2").style.opacity = "1";
+    document.getElementById("Georgians2").style.opacity = "1";
 }
 
 function showPic2(e) {
@@ -788,9 +790,11 @@ function BlastFurnace() {
 function Arson() {
     document.getElementById("Goths2").style.opacity = "0.15";
 }
+
 function ChainMailArmor() {
     document.getElementById("Tatars2").style.opacity = "0.15";
 }
+
 function PlateMailArmor() {
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Bengalis2").style.opacity = "0.15";
@@ -943,6 +947,7 @@ function ParthianTactics() {
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 
 function ThumbRing() {
@@ -961,6 +966,8 @@ function ThumbRing() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 
 function LeatherArcherArmor() {
@@ -979,6 +986,7 @@ function RingArcherArmor() {
     document.getElementById("Mongols2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
     document.getElementById("Sicilians2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function ScaleBardingArmor() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1008,6 +1016,7 @@ function PlateBardingArmor() {
     document.getElementById("Mongols2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 
 
@@ -1027,6 +1036,7 @@ function SiegeEngineers() {
     document.getElementById("Persians2").style.opacity = "0.15";
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 function DryDock() {
     document.getElementById("Bohemians2").style.opacity = "0.15";
@@ -1040,6 +1050,7 @@ function DryDock() {
     document.getElementById("Poles2").style.opacity = "0.15";
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 
 function Shipwright() {
@@ -1064,6 +1075,7 @@ function Shipwright() {
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 
 
@@ -1138,6 +1150,7 @@ function Atonement() {
     document.getElementById("Magyars2").style.opacity = "0.15";
     document.getElementById("Persians2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function Illumination() {
     document.getElementById("Celts2").style.opacity = "0.15";
@@ -1152,6 +1165,7 @@ function Illumination() {
     document.getElementById("Portuguese2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function Theocracy() {
     document.getElementById("Burgundians2").style.opacity = "0.15";
@@ -1199,6 +1213,7 @@ function TwoManSaw() {
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Sicilians2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function StoneShaftMining() {
     document.getElementById("Bengalis2").style.opacity = "0.15";
@@ -1216,6 +1231,7 @@ function StoneShaftMining() {
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 function GoldShaftMining() {
     document.getElementById("Dravidians2").style.opacity = "0.15";
@@ -1228,6 +1244,7 @@ function GoldShaftMining() {
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function TreadmillCrane() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
@@ -1247,6 +1264,8 @@ function TreadmillCrane() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function Masonry() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1274,6 +1293,7 @@ function Architecture() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 function Hoardings() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1304,6 +1324,7 @@ function HeatedShot() {
     document.getElementById("Saracens2").style.opacity = "0.15";
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Spanish2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
 function ArrowSlits() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
@@ -1326,6 +1347,7 @@ function ArrowSlits() {
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 function CropRotation() {
     document.getElementById("Bohemians2").style.opacity = "0.15";
@@ -1392,6 +1414,7 @@ function KeepTower() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
 }
 function BombardTower() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1421,4 +1444,5 @@ function BombardTower() {
     document.getElementById("Sicilians2").style.opacity = "0.15";
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
 }
