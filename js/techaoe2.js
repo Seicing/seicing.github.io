@@ -29,6 +29,9 @@ let ayanami = {
     "帝王骆驼兵": "帝王骆驼兵<br>Imperial Camel Rider<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>55 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>比重装骆驼兵强，善于对付其他骑乘部队的骑兵部队",
     "骑士": "骑士<br>Knight<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>快速而致命的重型骑兵部队<br><br>升级到 重装骑士<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>100",
     "重装骑士": "重装骑士<br>Cavalier<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>比起骑士更加强大，快速而致命的重型骑兵部队<br><br>升级到 游侠<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>1300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>750 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>170",
+
+    "重装骑士波斯": "重装骑士<br>Cavalier<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>比起骑士更加强大，快速而致命的重型骑兵部队<br><br>升级到 萨瓦尔<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>1000 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】",
+
     "游侠": "游侠<br>Paladin<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>比起重装骑士更加强大，快速而致命的重型骑兵部队",
     "索洛托勇士": "索洛托勇士<br>Xolotl Warrior<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>美洲本土民族的骑兵，和骑士拥有相同的属性",
     "象兵": "象兵<br>Battle Elephant<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>120 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>70 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>24<br>缓慢的重型骑兵部队<br><br>升级到 精锐象兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>1100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>100",
@@ -638,26 +641,39 @@ let ayanami = {
     "波斯商队旅馆": "波斯商队旅馆<br>帝王时代可以建造商队旅馆",
 
 
-    "【待确认要塞】": "【待确认要塞】<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的伤害-25%",
+    "【待确认要塞】": "【待确认要塞】<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%",
 
+
+    "要塞修道院": "要塞修道院<br>Fortified Church<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>拥有防御能力，生产和升级僧侣，驻扎遗物产生黄金",
+
+
+    "复合弓箭手": "复合弓箭手<br>Monaspa<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>无视敌方护甲的亚美尼亚独特射手部队<br><br>升级到 精锐复合弓箭手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】",
+    "精锐复合弓箭手": "精锐复合弓箭手<br>Elite Monaspa<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>无视敌方护甲的亚美尼亚独特射手部队",
+
+
+    "莫纳斯帕": "莫纳斯帕<br>Monaspa<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>格鲁吉亚独特部队，数量越多越强大<br><br>升级到 精锐莫纳斯帕<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】",
+    "精锐莫纳斯帕": "精锐莫纳斯帕<br>Elite Monaspa<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>格鲁吉亚独特部队，数量越多越强大",
+
+    "萨瓦尔": "萨瓦尔<br>Savar<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>强大的波斯多功能骑兵",
+    "牧师战士": "牧师战士<br>Warrior Priest<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>30 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>亚美尼亚独特步兵单位，可以治愈友军部队和收集圣物带回修道院。",
+    "驴车": "驴车<br>Mule Cart<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>20 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>移动资源集合点，可以收集木材、石头、黄金和狩猎食物",
 
     "格鲁吉亚驴车开局": "格鲁吉亚驴车开局<br>以1只驴车开局，但少50食物",
     "格鲁吉亚要塞修道院": "格鲁吉亚要塞修道院<br>要塞修道院为10格半径范围内的村民提供+10%工作效率",
     "格鲁吉亚对抗力": "格鲁吉亚对抗力<br>对抗来自高地的攻击时受到的伤害-15%",
     "格鲁吉亚骑兵": "格鲁吉亚骑兵<br>骑兵在封建时代/城堡时代/帝王时代每分钟恢复5/10/15生命值 ",
-    "斯万塔": "斯万塔<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
-    "阿兹瑙里骑兵": "阿兹瑙里骑兵<br>骑兵人口占据量-15%",
+    "斯万塔": "斯万塔<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
+    "阿兹瑙里骑兵": "阿兹瑙里骑兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>骑兵人口占据量-15%",
 
     "格鲁吉亚团队加成": "格鲁吉亚团队加成<br>修理建筑消耗资源量-50%",
 
-
-    "亚美尼亚驴车开局": "亚美尼亚驴车开局<br>驴车成本-25%，科技研发效率+25%",
+    "亚美尼亚驴车开局": "亚美尼亚驴车开局<br>驴车成本-25%，驴车科技效果+25%",
     "亚美尼亚要塞修道院": "亚美尼亚要塞修道院<br>第一个建造的要塞修道院会提供1个免费圣物",
     "亚美尼亚军营部队": "亚美尼亚军营部队<br>军营部队(剑士除外)在早一个时代可用",
     "亚美尼亚箭船": "亚美尼亚箭船<br>箭船发射双倍箭矢",
     "亚美尼亚团队加成": "亚美尼亚团队加成<br>步兵+2视野",
-    "奇里乞亚舰队": "奇里乞亚舰队<br>爆破船攻击范围+33%，箭船和德莱蒙战舰+1射程",
-    "圣髑盒": "圣髑盒<br>步兵(除长枪兵系外)+30生命值，战士僧侣恢复速度+100%",
+    "奇里乞亚舰队": "奇里乞亚舰队<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>爆破船攻击范围+33%，箭船和德莱蒙战舰+1射程",
+    "圣髑盒": "圣髑盒<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>步兵(除长枪兵系外)+30生命值，战士僧侣恢复速度+100%",
 }
 
 function showPic(e, taitou) {
