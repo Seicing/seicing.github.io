@@ -188,4 +188,16 @@
     }
 </script>
 
+
+<script>
+    $(window).resize(function () {
+        var cliWidth = document.body.clientWidth - 330;
+        $("#app").width(cliWidth);
+    });
+    $(document).ready(function () {
+        var cliWidth = document.body.clientWidth - 330;
+        $("#app").width(cliWidth);
+    });
+</script>
+
 </html>
