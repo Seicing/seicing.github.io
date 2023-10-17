@@ -660,7 +660,7 @@ let ayanami = {
 
     "格鲁吉亚驴车开局": "格鲁吉亚驴车开局<br>以1只驴车开局，但少50食物",
     "格鲁吉亚要塞修道院": "格鲁吉亚要塞修道院<br>要塞修道院为10格半径范围内的村民提供+10%工作效率",
-    "格鲁吉亚对抗力": "格鲁吉亚对抗力<br>对抗来自高地的攻击时受到的额外伤害-15%",
+    "格鲁吉亚对抗力": "格鲁吉亚对抗力<br>居高临下作战时受到的伤害额外-15%(从-25%增加到-40%)",
     "格鲁吉亚骑兵": "格鲁吉亚骑兵<br>骑兵在封建时代/城堡时代/帝王时代每分钟恢复5/10/15生命值 ",
     "斯万塔": "斯万塔<br>Svan Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
     "阿兹瑙里骑兵": "阿兹瑙里骑兵<br>Aznauri Cavalry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>骑兵人口占据量-15%",
