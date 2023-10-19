@@ -644,7 +644,7 @@ let ayanami = {
     "【待确认要塞】": "【待确认要塞】<br>Citadels<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%",
 
 
-    "要塞修道院": "要塞修道院<br>Fortified Church<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>拥有防御能力，生产和升级僧侣，驻扎遗物产生黄金",
+    "强化教堂": "强化教堂<br>Fortified Church<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>拥有防御能力，生产和升级僧侣，驻扎遗物产生黄金",
 
 
     "复合弓箭手": "复合弓箭手<br>Composite Bowman<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>35 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>45 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>无视敌方护甲的亚美尼亚独特射手部队<br><br>升级到 精锐复合弓箭手<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】",
@@ -656,10 +656,10 @@ let ayanami = {
 
     "萨瓦尔": "萨瓦尔<br>Savar<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>强大的波斯多功能骑兵",
     "牧师战士": "牧师战士<br>Warrior Priest<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>30 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>60 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>亚美尼亚独特步兵单位，可以治愈友军部队和收集圣物带回修道院。",
-    "驴车": "驴车<br>Mule Cart<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>20 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>移动资源集合点，可以收集木材、石头、黄金和狩猎食物",
+    "骡车": "骡车<br>Mule Cart<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>20 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>移动资源集合点，可以收集木材、石头、黄金和狩猎食物",
 
-    "格鲁吉亚驴车开局": "格鲁吉亚驴车开局<br>以1只驴车开局，但少50食物",
-    "格鲁吉亚要塞修道院": "格鲁吉亚要塞修道院<br>要塞修道院为10格半径范围内的村民提供+10%工作效率",
+    "格鲁吉亚骡车开局": "格鲁吉亚骡车开局<br>以1只骡车开局，但少50食物",
+    "格鲁吉亚强化教堂": "格鲁吉亚强化教堂<br>强化教堂为10格半径范围内的村民提供+10%工作效率",
     "格鲁吉亚对抗力": "格鲁吉亚对抗力<br>居高临下作战时受到的伤害额外-15%(从-25%增加到-40%)",
     "格鲁吉亚骑兵": "格鲁吉亚骑兵<br>骑兵在封建时代/城堡时代/帝王时代每分钟恢复5/10/15生命值 ",
     "斯万塔": "斯万塔<br>Svan Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
@@ -667,8 +667,8 @@ let ayanami = {
 
     "格鲁吉亚团队加成": "格鲁吉亚团队加成<br>修理建筑消耗资源量-50%",
 
-    "亚美尼亚驴车开局": "亚美尼亚驴车开局<br>驴车成本-25%，驴车科技效果+25%",
-    "亚美尼亚要塞修道院": "亚美尼亚要塞修道院<br>第一个建造的要塞修道院会提供1个免费圣物",
+    "亚美尼亚骡车开局": "亚美尼亚骡车开局<br>骡车成本-25%，骡车科技效果+25%",
+    "亚美尼亚强化教堂": "亚美尼亚强化教堂<br>第一个建造的强化教堂会提供1个免费圣物",
     "亚美尼亚军营部队": "亚美尼亚军营部队<br>军营部队(剑士除外)在早一个时代可用",
     "亚美尼亚箭船": "亚美尼亚箭船<br>箭船发射双倍箭矢",
     "亚美尼亚团队加成": "亚美尼亚团队加成<br>步兵+2视野",
