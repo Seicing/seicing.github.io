@@ -641,7 +641,7 @@ let ayanami = {
     "波斯商队旅馆": "波斯商队旅馆<br>帝王时代可以建造商队旅馆",
 
 
-    "【待确认要塞】": "【待确认要塞】<br>Citadels<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%",
+    "堡垒": "堡垒<br>Citadels<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%",
 
 
     "强化教堂": "强化教堂<br>Fortified Church<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>拥有防御能力，生产和升级僧侣，驻扎遗物产生黄金",
@@ -662,7 +662,7 @@ let ayanami = {
     "格鲁吉亚强化教堂": "格鲁吉亚强化教堂<br>强化教堂为10格半径范围内的村民提供+10%工作效率",
     "格鲁吉亚对抗力": "格鲁吉亚对抗力<br>居高临下作战时受到的伤害额外-15%(从-25%增加到-40%)",
     "格鲁吉亚骑兵": "格鲁吉亚骑兵<br>骑兵在封建时代/城堡时代/帝王时代每分钟恢复5/10/15生命值 ",
-    "斯万塔": "斯万塔<br>Svan Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
+    "斯万箭塔": "斯万箭塔<br>Svan Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
     "阿兹瑙里骑兵": "阿兹瑙里骑兵<br>Aznauri Cavalry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>骑兵人口占据量-15%",
 
     "格鲁吉亚团队加成": "格鲁吉亚团队加成<br>修理建筑消耗资源量-50%",
@@ -673,7 +673,7 @@ let ayanami = {
     "亚美尼亚箭船": "亚美尼亚箭船<br>箭船发射双倍箭矢",
     "亚美尼亚团队加成": "亚美尼亚团队加成<br>步兵+2视野",
     "奇里乞亚舰队": "奇里乞亚舰队<br>Cilician Fleet<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>爆破船攻击范围+33%，箭船和德莱蒙战舰+1射程",
-    "圣髑盒": "圣髑盒<br>Fereters<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>步兵(除长枪兵系外)+30生命值，战士僧侣恢复速度+100%",
+    "费雷特斯": "费雷特斯<br>Fereters<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>除长枪兵系外的步兵生命值+30，牧师战士恢复速度+100%",
 }
 
 function showPic(e, taitou) {
