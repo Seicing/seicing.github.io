@@ -642,7 +642,7 @@ let ayanami = {
     "波斯商队旅馆": "波斯商队旅馆<br>帝王时代可以建造商队旅馆",
 
 
-    "堡垒": "堡垒<br>Citadels<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%",
+    "波斯堡垒": "堡垒<br>Citadels<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%",
     "健康之家": "健康之家<br>Bimaristan<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>僧侣对5格范围内的部队每秒治疗1.25生命值",
 
 
