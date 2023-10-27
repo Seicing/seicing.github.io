@@ -884,7 +884,7 @@
     {
         "branch": "branch0",
         "name": "莎亚",
-        "face": "SayaDefault",
+        "face": "SayaSerious",
         "string": "虽然不太清楚发生了什么，但是我们好像得救了",
         "special": "dia2"
     },
@@ -898,7 +898,7 @@
     {
         "branch": "branch0",
         "name": "莎亚",
-        "face": "SayaDefault",
+        "face": "SayaSerious",
         "string": "你要追上去帮助他们吗？",
         "special": "dia2"
     },
@@ -912,14 +912,14 @@
     {
         "branch": "branch0",
         "name": "莎亚",
-        "face": "SayaDefault",
+        "face": "SayaYell",
         "string": "那你要小心！科洛维！我们会尽快处理好毒雾过来援助的！",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "阿西恩娜",
-        "face": "AszinaAngry",
+        "face": "AszinaEndure",
         "string": "拜托了！科洛维！一定要把那个家伙……",
         "special": "dia2"
     },
