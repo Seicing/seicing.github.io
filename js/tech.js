@@ -338,6 +338,108 @@ let ayanami = {
     "石料商业已强化": "石料商业(已强化)<br>Stone Bounty(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1000    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>拥有20名或者更多的活跃商人时，贸易提供额外20%石料收入，如果已研发了石料商业，则只+10%",
     "西哈弓臂已强化": "西哈弓臂(已强化)<br>Siha Bow Limbs(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>275    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>蒙古突骑和汗的远程伤害+2，如果已经研究了西哈弓臂，则蒙古突骑和汗的远程伤害+1",
 
+    "地区巡查": "地区巡查<br>Regional Inspection<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官监督效率从150%提高到300%",
+    "一条鞭法": "一条鞭法<br>Single Whip Reform<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官监督效率从150%提高到300%",
+    "帝王朱印": "帝王朱印<br>Imperial Red Seals<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>朝廷命官上限+2，研发完毕时生成1个朝廷命官",
+    "高级管理": "高级管理<br>Advanced Administration<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>朝廷命官上限+2，生命值+150，最大税金获取量+80",
+
+    "恐惧之云": "恐惧之云<br>Cloud of Terror<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>手推炮造成范围伤害",
+    "龙之咆哮": "龙之咆哮<br>Roar of the Dragon<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>长矛兵和骑手获得火长矛冲锋",
+    "兵部": "兵部<br>Military Affairs Bureau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官可以监督大型箭塔和哨站，使得它们受到的伤害-35%",
+    "万箭": "万箭<br>10000 Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>诸葛弩和弩手发射1额外箭矢",
+    "王朝捍卫者": "王朝捍卫者<br>Dynastic Protectors<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>解锁帝国卫队和元朝突袭者",
+
+
+    "战马": "战马<br>War Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>鎏金骑士在冲锋时受到的伤害-25%",
+    "龙之火": "龙之火<br>Dragon Fire<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>鎏金长矛兵的火炬造成范围伤害",
+    "金色胸甲": "金色胸甲<br>Golden Cuirass<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>鎏金武士生命值在20%以下时受到的伤害-20%",
+    "龙鳞皮甲": "龙鳞皮甲<br>Dragon Scale Leather<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>鎏金步弓手远程护甲+3",
+    "怒击": "怒击<br>Zornhau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>鎏金国土佣仆装备撕裂敌人的长戟，使用长戟伤害敌人会造成持续10秒的流血，每秒流失2生命值，任何治疗效果都会治疗流血效果",
+    "锥子箭": "锥子箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>鎏金弩手对攻城器+10攻击力",
+
+
+
+
+    "进步": "进步<br>Advancement<br> 文化偏殿升级科技<br>升级到下一个时代，减少40%升级时间和250/500/1500升级成本",
+    "后勤学": "后勤学<br>Logistics<br> 文化偏殿升级科技<br>升级到下一个时代，生成2/3/4个苦行僧并提高他们25%/50%/50%治疗效率",
+    "人口增长": "人口增长<br>Growth<br> 经济偏殿升级科技<br>升级到下一个时代，生成3/8/10个村民，果树丛生成额外50/100食物(帝王时代研发则是增加10%工作效率)",
+    "工业": "工业<br>Industry<br> 经济偏殿升级科技<br>升级到下一个时代，并获得300/1000/2500/2800木材",
+    "铁匠专家": "铁匠专家<br>Master Smiths<br> 军事偏殿升级科技<br>升级到下一个时代，升级后时代的铁匠铺升级将免费研发",
+    "增援部队": "增援部队<br>Reinforcement<br> 军事偏殿升级科技<br>升级到下一个时代，骑兵部队获得建造攻城武器能力，智慧宫直到游戏结束，每2分钟生产1/3/7个沙漠突袭者",
+    "阿塔贝格顾问": "阿塔贝格顾问<br>Advisors<br> 贸易偏殿升级科技<br>升级到下一个时代，生成2/4/7个阿塔贝格，驻扎在军事生产建筑使得新生产的军事部队生命值+20%",
+    "大巴扎": "大巴扎<br>Bazaar<br> 贸易偏殿升级科技<br>升级到下一个时代，每3分钟将会有一个贸易商队拜访，在4种奖励种随机获得1种",
+
+    "攻城木工": "攻城木工<br>Siege Carpentry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>攻城部队获得结构强化能力，在10秒内近战护甲+20，火焰护甲+5",
+
+    "苏丹马穆鲁克": "苏丹马穆鲁克<br>Sultan's Mamluks<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵在击杀敌人后10秒内攻击力+25%、移动速度+20%",
+
+    "步兵支援": "步兵支援<br>Infantry Support<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵使附近骆驼部队护甲+2",
+
+
+
+
+
+
+
+    "伙友装备": "伙友装备<br>Companion Equipment<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>贞德的同伴系列部队伤害和生命值+20%",
+
+
+
+
+    "重装德罗蒙": "重装德罗蒙<br>Heavy Dromon<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>德罗蒙战舰发射的希腊火会遗留在场地上一段时间，并减少掌舵人冷却时间到20秒",
+    "液体炸药": "液体炸药<br>Liquid Explosives<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>爆破船爆炸伤害无衰减",
+    "边境定居点": "边境定居点<br>Border Settlements<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>房屋视野+7，建造速度+500%",
+    "劫掠者": "劫掠者<br>Expilatores<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>30 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>骑手对工人伤害+2，杀死工人会获得20黄金",
+    "纵火者": "纵火者<br>Trapezites<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>30 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>侦察兵使得周边部队火炬伤害+25%",
+    "希腊火弹": "希腊火弹<br>Greek Fire Projectiles<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>配重式巨型投石机伤害+30%，发射希腊火对地面造成持续伤害",
+    "践踏": "践踏<br>Numeri<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>被践踏的部队变得脆弱，在12秒内受到额外的20%伤害",
+
+    "东方佣兵契约": "东方佣兵契约<br>Eastern Mercenary Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>100   <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>解锁东方佣兵，依次解锁怯薛、古拉姆和箭塔象",
+    "西方佣兵契约": "西方佣兵契约<br>Western Mercenary Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>100   <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>解锁西方佣兵，依次解锁长弓兵、国土佣仆和射击军",
+    "丝路佣兵契约": "丝路佣兵契约<br>Silk Road Mercenary Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>100   <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>解锁丝路佣兵，依次解锁掷枪兵、骆驼骑兵和掷弹兵",
+
+    "水滴盾": "水滴盾<br>Teardrop Shields<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>甲胄骑兵护甲+1，边防军移动速度+15%，瓦兰吉卫队攻击速度+15%",
+    "极速狂怒": "极速狂怒<br>Ferocious Speed<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>瓦兰吉卫队在激活狂战士之怒时移动速度+30%",
+    "老练佣兵": "老练佣兵<br>Veteran Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>将佣兵升级到老练级别",
+    "精锐佣兵": "精锐佣兵<br>Elite Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>将佣兵升级到精锐级别",
+
+
+
+
+
+    "俵": "俵<br>Towara<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>村民承载量+3，移动速度+7%，浆果丛收集效率+25%",
+    "竹细工": "竹细工<br>Takezaiku<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>村民承载量+3，移动速度+7%，浆果丛收集效率+25%",
+    "札差": "札差<br>Fudasashi<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民承载量+3，移动速度+7%，浆果丛收集效率+25%",
+    "铜甲船身": "铜甲船身<br>Copper Plating<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>船只火焰护甲和远程护甲+2%",
+
+    "踏鞴": "踏鞴<br>Tatara<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>25  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>非攻城单位近战伤害+1",
+    "火造": "火造<br>【待补充】<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>非攻城单位近战伤害+1",
+    "甲伏锻": "甲伏锻<br>【待补充】<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>非攻城单位近战伤害+1",
+    "淬火": "淬火<br>【待补充】<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>275 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>175  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>非攻城单位近战伤害+1",
+
+
+    "大名庄园": "大名庄园<br>Daimyo Manor<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名庄园，生命值+1000，射箭槽+1，村民在附近的耕作效率+25%，旗本武士上限+1，研发完成后生成1个免费村民",
+    "大名宫殿": "大名宫殿<br>Daimyo Palace<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>600  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名宫殿，生命值+2000，火焰护甲+2，射箭槽+1，村民在附近的耕作效率+50%，旗本武士上限+2，研发完成后生成1个免费村民",
+
+    "幕府城堡": "幕府城堡<br>Shogunate Castle<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名宫殿，生命值+3000，火焰护甲+3，配备火箭炮台，村民在附近的耕作效率+75%，旗本武士上限+3，研发完成后生成1个免费村民",
+
+
+
+
+
+    "大太刀": "大太刀<br>Odachi<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>日本武士装备大太刀，对抗步兵时+4伤害",
+
+    "胴丸护甲": "胴丸护甲<br>Do-maru Armor<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>提高马上日本武士激活偏转护甲时的移动速度10%",
+
+    "鸣镝箭": "鸣镝箭<br>Kabura-ya Whistling Arrow<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>女武者在发现敌人时发射一支鸣镝箭，10秒内提高移动速度",
+
+    "长枪": "长枪<br>Nagae Yari<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>长矛兵装备更加强大的长枪，攻击距离+20%，对骑兵附加伤害+20%",
+
+    "织田战术": "织田战术<br>Oda Tactics<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>近战步兵部队+20%HP、伤害+20%、火炬伤害+20%",
+
+
+
+
 
     "守护者大院效果": "守护者大院效果<br>守护者大院：步兵可以建造石头设施，石材成本-20%，石城门建造时间翻倍",
     "胜利之塔效果": "胜利之塔效果<br>胜利之塔：接近的近战和远程步兵攻击速度永久提升20%",
