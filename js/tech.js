@@ -339,7 +339,7 @@ let ayanami = {
     "西哈弓臂已强化": "西哈弓臂(已强化)<br>Siha Bow Limbs(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>275    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>蒙古突骑和汗的远程伤害+2，如果已经研究了西哈弓臂，则蒙古突骑和汗的远程伤害+1",
 
     "地区巡查": "地区巡查<br>Regional Inspection<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官监督效率从150%提高到300%",
-    "一条鞭法": "一条鞭法<br>Single Whip Reform<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官监督效率从150%提高到300%",
+    "一条鞭法": "一条鞭法<br>Single Whip Reform<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官移动速度+50%",
     "帝王朱印": "帝王朱印<br>Imperial Red Seals<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>朝廷命官上限+2，研发完毕时生成1个朝廷命官",
     "高级管理": "高级管理<br>Advanced Administration<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>朝廷命官上限+2，生命值+150，最大税金获取量+80",
 
@@ -421,7 +421,7 @@ let ayanami = {
     "大名庄园": "大名庄园<br>Daimyo Manor<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名庄园，生命值+1000，射箭槽+1，村民在附近的耕作效率+25%，旗本武士上限+1，研发完成后生成1个免费村民",
     "大名宫殿": "大名宫殿<br>Daimyo Palace<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>600  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名宫殿，生命值+2000，火焰护甲+2，射箭槽+1，村民在附近的耕作效率+50%，旗本武士上限+2，研发完成后生成1个免费村民",
 
-    "幕府城堡": "幕府城堡<br>Shogunate Castle<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名宫殿，生命值+3000，火焰护甲+3，配备火箭炮台，村民在附近的耕作效率+75%，旗本武士上限+3，研发完成后生成1个免费村民",
+    "幕府城堡": "幕府城堡<br>Shogunate Castle<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到幕府城堡，生命值+3000，火焰护甲+3，配备火箭炮台，村民在附近的耕作效率+75%，旗本武士上限+3，研发完成后生成1个免费村民",
 
 
 
