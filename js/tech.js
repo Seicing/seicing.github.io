@@ -350,12 +350,12 @@ let ayanami = {
     "王朝守护者": "王朝守护者<br>Dynastic Protectors<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>解锁帝国卫队和元朝突袭者",
 
 
-    "战马": "战马<br>War Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>鎏金骑士在冲锋时受到的伤害-25%",
-    "龙焰": "龙焰<br>Dragon Fire<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>鎏金长矛兵的火炬造成范围伤害",
-    "黄金胸甲": "黄金胸甲<br>Golden Cuirass<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>鎏金武士生命值在20%以下时受到的伤害-20%",
-    "龙鳞甲": "龙鳞甲<br>Dragon Scale Leather<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>鎏金步弓手远程护甲+3",
-    "怒击": "怒击<br>Zornhau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>鎏金国土佣仆装备撕裂敌人的长戟，使用长戟伤害敌人会造成持续10秒的流血，每秒流失2生命值，任何治疗效果都会消除流血",
-    "锥状弩箭": "锥状弩箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>鎏金弩手对攻城器+10攻击力",
+    "战马": "战马<br>War Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金骑士在冲锋时受到的伤害-25%",
+    "龙焰": "龙焰<br>Dragon Fire<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>镀金长矛兵的火炬造成范围伤害",
+    "黄金胸甲": "黄金胸甲<br>Golden Cuirass<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金武士生命值在20%以下时受到的伤害-20%",
+    "龙鳞甲": "龙鳞甲<br>Dragon Scale Leather<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金步弓手远程护甲+3",
+    "怒击": "怒击<br>Zornhau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金国土佣仆装备撕裂敌人的长戟，使用长戟伤害敌人会造成持续10秒的流血，每秒流失2生命值，任何治疗效果都会消除流血",
+    "锥状弩箭": "锥状弩箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金弩手对攻城器+10攻击力",
 
 
 
@@ -370,11 +370,8 @@ let ayanami = {
     "商业偏殿集市": "商业偏殿 : 集市<br>Bazaar<br> 贸易偏殿升级科技<br>升级到下一个时代，每3分钟将会有一个贸易商队携带4种使用资源或单位拜访",
 
     "木制攻城器械": "木制攻城器械<br>Siege Carpentry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>攻城部队获得建筑强化能力，在10秒内近战护甲+20，火焰护甲+5",
-
     "苏丹的马穆鲁克": "苏丹的马穆鲁克<br>Sultan's Mamluks<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵在击杀敌人后10秒内攻击力+25%、移动速度+20%",
-
     "步兵支援": "步兵支援<br>Infantry Support<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵使附近骆驼部队护甲+2",
-
 
     "同伴装备": "同伴装备<br>Companion Equipment<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>贞德的同伴系列部队伤害和生命值+20%",
     "圣令连队": "圣令连队<br>Ordinance Company<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>圣化建筑追加减少25%木材和黄金减免",
@@ -425,6 +422,7 @@ let ayanami = {
     "日本风琴炮限制": "日本风琴炮限制<br>文明固有限制：只能从种子岛枪匠生产",
     "日本便宜渔船": "日本便宜渔船<br>渔村：渔船便宜30%",
     "日本依代军事建筑": "日本依代军事建筑<br>依代：工作效率+200%",
+    "日本依代城镇中心": "日本依代城镇中心<br>依代：工作效率+25%",
 
     "拜占庭建造石头": "拜占庭建造石头<br>田野石头：建造建筑成功后获得不同数量的石头",
     "拜占庭水渠系统": "拜占庭水渠系统<br>灌溉：村民根据水池的水位提高5%/10%/15%/20%/25%采集效率",
