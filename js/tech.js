@@ -415,7 +415,6 @@ let ayanami = {
     "日本长枪": "日本长枪<br>Nagae Yari<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>长矛兵装备更加强大的日本长枪，攻击距离+20%，对骑兵附加伤害+20%",
     "织田战术": "织田战术<br>Oda Tactics<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>近战步兵部队+20%HP、伤害+20%、火炬伤害+20%",
 
-
     "日本大名城镇中心1": "日本大名城镇中心1<br>大名府邸：村民在大名府邸附近耕作效率+25%",
     "日本大名城镇中心2": "日本大名城镇中心2<br>大名宫殿：村民在大名宫殿附近耕作效率+50%",
     "日本大名城镇中心3": "日本大名城镇中心3<br>幕府城：村民在幕府城附近耕作效率+75%",
@@ -423,6 +422,9 @@ let ayanami = {
     "拜占庭建造石头": "拜占庭建造石头<br>田野石头：建造建筑成功后获得不同数量的石头",
     "拜占庭水渠系统": "拜占庭水渠系统<br>灌溉：村民根据水池的水位提高5%/10%/15%/20%/25%采集效率",
     "拜占庭橄榄园": "拜占庭橄榄园<br>大酒庄：村民在大酒庄附近获得橄榄油效率+60%",
+    "拜占庭回血": "拜占庭回血<br>朝圣者水瓶：激活后，每秒恢复25生命值，持续10秒",
+    "拜占庭边防部队防御": "拜占庭边防部队防御<br>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2",
+    "拜占庭改良火炬": "拜占庭改良火炬<br>纵火者：研发纵火者科技后",
 
     "贞德建造效率": "贞德建造效率<br>建设王国：封建时代后贞德影响附近的村民，使得他们建造速度+33%",
 
