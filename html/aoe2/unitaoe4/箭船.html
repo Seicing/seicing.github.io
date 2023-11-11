@@ -16,6 +16,9 @@
             document.getElementById("eng").style.opacity = "1";
             document.getElementById("hre").style.opacity = "1";
             document.getElementById("fre").style.opacity = "1";
+            document.getElementById("byz").style.opacity = "1";
+            document.getElementById("jda").style.opacity = "1";
+            document.getElementById("otd").style.opacity = "1";
         })
     })
 </script>
@@ -169,7 +172,12 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/hre.png" width="25px"></a>
     <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
-
+    <a id="byzButton0" href="javascript:void(0);" onclick="tipsg('byzText0','byzButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
+    <a id="jdaButton0" href="javascript:void(0);" onclick="tipsg('jdaText0','jdaButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
+    <a id="otdButton0" href="javascript:void(0);" onclick="tipsg('otdText0','otdButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
 
 
     <div id="engText0" style="text-align: left;display:block ">
@@ -217,9 +225,7 @@
             </tr>
         </table>
     </div>
-
     <div id="hreText0" style="text-align: left;display:none ">
-
         <span class="神罗码头"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -261,8 +267,48 @@
             </tr>
         </table>
     </div>
-
-
+    <div id="otdText0" style="text-align: left;display:none ">
+        <span class="神罗码头"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/额外吊床.png" width="20px">额外吊床(多段攻击次数+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/加热射击.png" width="20px">加热射击(造成燃烧伤害) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">自愈能力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/消防站.png" width="20px">消防站(脱离战斗每2秒恢复1生命值) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div id="freText0" style="text-align: left;display:none ">
 
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -299,7 +345,77 @@
             </tr>
         </table>
     </div>
-
+    <div id="jdaText0" style="text-align: left;display:none ">
+        <span class="贞德圣化建筑"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/额外吊床.png" width="20px">额外吊床(多段攻击次数+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/加热射击.png" width="20px">加热射击(造成燃烧伤害) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="byzText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/额外吊床.png" width="20px">额外吊床(多段攻击次数+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/加热射击.png" width="20px">加热射击(造成燃烧伤害) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -388,6 +504,10 @@
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/fre/箭船.png" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/fre/箭船.png"></a>
             </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/byz/箭船.png" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/byz/箭船.png"></a>
+            </td>
         </tr>
         <tr>
 
@@ -400,6 +520,9 @@
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
                 法兰西箭船
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                拜占庭箭船
             </td>
         </tr>
 
@@ -440,8 +563,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['engText', 'hreText', 'freText']
-    var listButton = ['engButton', 'hreButton', 'freButton']
+    var listText = ['engText', 'hreText', 'freText', 'byzText', 'jdaText', 'otdText',]
+    var listButton = ['engButton', 'hreButton', 'freButton', 'byzButton', 'jdaButton', 'otdButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);

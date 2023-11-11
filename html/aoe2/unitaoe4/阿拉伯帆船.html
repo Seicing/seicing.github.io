@@ -16,6 +16,7 @@
             document.getElementById("abb").style.opacity = "1";
             document.getElementById("sul").style.opacity = "1";
             document.getElementById("ott").style.opacity = "1";
+            document.getElementById("ayy").style.opacity = "1";
         })
     })
 </script>
@@ -169,10 +170,50 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
     <a id="ottButton0" href="javascript:void(0);" onclick="tipsg('ottText0','ottButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
+    <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
 
     <div id="abbText0" style="text-align: left;display:block ">
         <span class="黄金时代阶段II"></span><br>
         <span class="黄金时代阶段III"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+20%)<br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/柚木桅杆.png" width="20px">柚木桅杆(+10%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/额外吊床.png" width="20px">额外吊床(多段攻击次数+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/加热射击.png" width="20px">加热射击(造成燃烧伤害) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText0" style="text-align: left;display:block ">
+        <span class="阿尤布黄金时代阶段II"></span><br>
+        <span class="阿尤布黄金时代阶段III"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -418,8 +459,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText', 'sulText', 'ottText']
-    var listButton = ['abbButton', 'sulButton', 'ottButton']
+    var listText = ['abbText', 'sulText', 'ottText', 'ayyText']
+    var listButton = ['abbButton', 'sulButton', 'ottButton', 'ayyButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
