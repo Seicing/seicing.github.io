@@ -15,6 +15,7 @@
             document.getElementById("techno").style.display = "block";
             document.getElementById("fre").style.opacity = "0.3";
             document.getElementById("ott").style.opacity = "0.3";
+            document.getElementById("jda").style.opacity = "0.3";
         })
     })
 </script>
@@ -192,7 +193,16 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
     <a id="malButton0" href="javascript:void(0);" onclick="tipsg('malText0','malButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
-
+    <a id="jpnButton0" href="javascript:void(0);" onclick="tipsg('jpnText0','jpnButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
+    <a id="byzButton0" href="javascript:void(0);" onclick="tipsg('byzText0','byzButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
+    <a id="zxlButton0" href="javascript:void(0);" onclick="tipsg('zxlText0','zxlButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
+    <a id="otdButton0" href="javascript:void(0);" onclick="tipsg('otdText0','otdButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
+    <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
 
 
 
@@ -233,8 +243,50 @@
             </tr>
         </table>
     </div>
+    <div id="abbText0" style="text-align: left;display:block ">
+        <span class="阿尤布黄金时代阶段II"></span><br>
+        <span class="阿尤布黄金时代阶段III"></span><br>
+        <span class="阿尤布黄金时代阶段IV"></span><br>
+        <span class="建筑强化"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学 (+20%) <br>
+                </td>
+            </tr>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+            </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木制攻城器械.png" width="20px">木制攻城器械(激活建筑强化能力) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div id="chiText0" style="text-align: left;display:none ">
-
         <span class="明朝效果"></span><br>
         <span class="朝廷命官效果"></span><br>
         <span class="天文钟楼效果"></span><br>
@@ -268,6 +320,43 @@
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击速度</span></td>
                 <td>
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/装填训练.png" width="20px">装填训练(攻击速度+33%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="zxlText0" style="text-align: left;display:none ">
+        <span class="翡翠帝国元朝效果"></span><br>
+        <span class="神圣防御"></span><br>
+        <span class="神圣活力"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/恐怖之云.png" width="20px">恐怖之云(造成范围伤害) <br>
+                </td>
+            </tr>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+            </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
                 </td>
             </tr>
             <tr style="text-align: left">
@@ -349,11 +438,42 @@
             </tr>
         </table>
     </div>
+    <div id="otdText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学 (+20%) <br>
+                </td>
+            </tr>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+            </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div id="sulText0" style="text-align: left;display:none ">
         <span class="德里免费"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
-
-
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
@@ -475,7 +595,6 @@
 
         </table>
     </div>
-
     <div id="malText0" style="text-align: left;display:none ">
         <span class="马里攻城节庆"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -512,7 +631,74 @@
             </tr>
         </table>
     </div>
-
+    <div id="jpnText0" style="text-align: left;display:none ">
+        <span class="种子岛免费"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学 (+20%) <br>
+                </td>
+            </tr>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+            </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="byzText0" style="text-align: left;display:none ">
+        <span class="拜占庭海军部署"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学 (+20%) <br>
+                </td>
+            </tr>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+            </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -601,24 +787,16 @@
 
     <table id="empire" frame="box">
         <tr>
-
             <td>
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/siege/手推炮.png" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/siege/手推炮.png"></a>
             </td>
-
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 手推炮
             </td>
-
         </tr>
-
-
-
     </table>
 </div>
                         </div>
@@ -654,8 +832,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'monText', 'malText']
-    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'monButton', 'malButton']
+    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'monText', 'malText', 'jpnText', 'byzText', 'zxlText', 'otdText', 'ayyText']
+    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'monButton', 'malButton', 'jpnButton', 'byzButton', 'zxlButton', 'otdButton', 'ayyButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);

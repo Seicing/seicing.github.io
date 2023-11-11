@@ -15,6 +15,7 @@
             document.getElementById("techno").style.display = "block";
             document.getElementById("chi").style.opacity = "1";
             document.getElementById("mon").style.opacity = "1";
+            document.getElementById("zxl").style.opacity = "1";
         })
     })
 </script>
@@ -187,7 +188,8 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/chi.png" width="25px"></a>
     <a id="monButton0" href="javascript:void(0);" onclick="tipsg('monText0','monButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
-
+    <a id="zxlButton0" href="javascript:void(0);" onclick="tipsg('zxlText0','zxlButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
 
     <div id="chiText0" style="text-align: left;display:block ">
         <span class="明朝效果"></span><br>
@@ -227,7 +229,44 @@
             </tr>
         </table>
     </div>
-
+    <div id="zxlText0" style="text-align: left;display:block ">
+        <span class="翡翠帝国元朝效果"></span><br>
+        <span class="翡翠帝国明朝效果"></span><br>
+        <span class="神圣防御"></span><br>
+        <span class="神圣活力"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div id="monText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <span class="蒙古掠夺"></span><br>
@@ -351,24 +390,16 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <table id="empire" frame="box">
         <tr>
-
             <td>
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/siege/蜂巢炮.png" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/siege/蜂巢炮.png"></a>
             </td>
-
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 蜂巢炮
             </td>
-
         </tr>
-
-
-
     </table>
 </div>
                         </div>
@@ -404,8 +435,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['chiText', 'monText',]
-    var listButton = ['chiButton', 'monButton',]
+    var listText = ['chiText', 'monText', 'zxlText',]
+    var listButton = ['chiButton', 'monButton', 'zxlButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);

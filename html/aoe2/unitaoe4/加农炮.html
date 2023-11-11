@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("fre").style.opacity = "1";
+            document.getElementById("jda").style.opacity = "1";
         })
     })
 </script>
@@ -220,7 +221,8 @@
 
     <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
-
+    <a id="jdaButton0" href="javascript:void(0);" onclick="tipsg('jdaText0','jdaButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
 
 
 
@@ -258,7 +260,41 @@
             </tr>
         </table>
     </div>
-
+    <div id="jdaText0" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <span class="皇家加农炮2"></span><br>
+            <span class="贞德圣化建筑"></span><br>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="20px">化学 (+20%) <br>
+                </td>
+            </tr>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+            <td>
+                <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+            </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+10) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -318,24 +354,16 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <table id="empire" frame="box">
         <tr>
-
             <td>
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/siege/加农炮.png" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/siege/加农炮.png"></a>
             </td>
-
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 加农炮
             </td>
-
         </tr>
-
-
-
     </table>
 </div>
                         </div>
@@ -371,8 +399,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'freText', 'monText']
-    var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'monButton']
+    var listText = ['freText', 'jdaText']
+    var listButton = ['freButton', 'jdaTButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
