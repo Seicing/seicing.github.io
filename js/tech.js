@@ -408,7 +408,6 @@ let ayanami = {
     "大名府邸": "大名府邸<br>Daimyo Manor<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名府邸，生命值+1000，射箭槽+1，村民在附近的耕作效率+25%，旗本武士上限+1，研发完成后生成1个免费村民",
     "大名宫殿": "大名宫殿<br>Daimyo Palace<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>600  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到大名宫殿，生命值+2000，火焰护甲+2，射箭槽+1，村民在附近的耕作效率+50%，旗本武士上限+2，研发完成后生成1个免费村民",
     "幕府城": "幕府城<br>Shogunate Castle<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>城镇中心升级到幕府城，生命值+3000，火焰护甲+3，配备火箭炮台，村民在附近的耕作效率+75%，旗本武士上限+3，研发完成后生成1个免费村民",
-
     "大太刀": "大太刀<br>Odachi<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>日本武士装备大太刀，对抗步兵时+4伤害",
     "胴丸护甲": "胴丸护甲<br>Do-maru Armor<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>提高马上日本武士激活偏转护甲时的移动速度10%",
     "鸣镝箭": "鸣镝箭<br>Kabura-ya Whistling Arrow<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>女武者在发现敌人时发射一支鸣镝箭，10秒内提高移动速度",
@@ -418,25 +417,25 @@ let ayanami = {
     "日本大名城镇中心1": "日本大名城镇中心1<br>大名府邸：村民在大名府邸附近耕作效率+25%",
     "日本大名城镇中心2": "日本大名城镇中心2<br>大名宫殿：村民在大名宫殿附近耕作效率+50%",
     "日本大名城镇中心3": "日本大名城镇中心3<br>幕府城：村民在幕府城附近耕作效率+75%",
+    "刀剑旗本武士光环": "刀剑旗本武士光环<br>刀剑旗本武士：6格光环范围内，近战步兵伤害+15%",
 
     "拜占庭建造石头": "拜占庭建造石头<br>田野石头：建造建筑成功后获得不同数量的石头",
     "拜占庭水渠系统": "拜占庭水渠系统<br>灌溉：村民根据水池的水位提高5%/10%/15%/20%/25%采集效率",
     "拜占庭橄榄园": "拜占庭橄榄园<br>大酒庄：村民在大酒庄附近获得橄榄油效率+60%",
     "拜占庭回血": "拜占庭回血<br>朝圣者水瓶：激活后，每秒恢复25生命值，持续10秒",
     "拜占庭边防部队防御": "拜占庭边防部队防御<br>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2",
-    "拜占庭改良火炬": "拜占庭改良火炬<br>纵火者：研发纵火者科技后",
+    "拜占庭改良火炬": "拜占庭改良火炬<br>纵火者：研发纵火者科技后，侦察兵附近的部队火炬伤害+25%",
 
     "贞德建造效率": "贞德建造效率<br>建设王国：封建时代后贞德影响附近的村民，使得他们建造速度+33%",
 
-    "翡翠帝国唐朝效果": "翡翠帝国唐朝效果<br>唐朝：建造地标的成本-15%",
-    "翡翠帝国宋朝效果": "翡翠帝国宋朝效果<br>宋朝：建造非军事建筑的成本-15%",
-    "翡翠帝国元朝效果": "翡翠帝国元朝效果<br>元朝：所有单位成本-10%",
-    "龙骑团高级教士限制": "龙骑团高级教士限制<br>龙之骑士团限制：高级教士无法激励村民提高村民效率",
+    "翡翠帝国唐朝效果": "翡翠帝国唐朝效果<br>盛世王朝 - 唐朝：建造地标的成本-15%",
+    "翡翠帝国宋朝效果": "翡翠帝国宋朝效果<br>盛世王朝 - 宋朝：建造非军事建筑的成本-15%",
+    "翡翠帝国元朝效果": "翡翠帝国元朝效果<br>盛世王朝 - 元朝：所有单位成本-10%",
+    "翡翠帝国明朝效果": "翡翠帝国明朝效果<br>盛世王朝 - 明朝：独特部队攻击力+15%",
+    "神圣急速": "神圣急速<br>太阳神庙 - 神圣急速：激活后，步兵单位移动速度+15%",
+    "神圣活力": "神圣活力<br>太阳神庙 - 神圣活力：激活后，脱离战斗后每秒恢复2生命值",
 
-    "神圣急速": "神圣急速<br>神圣急速：激活后，步兵单位移动速度+15%",
-    "神圣活力": "神圣活力<br>神圣活力：激活后，脱离战斗后每秒恢复2生命值",
-    "刀剑旗本武士光环": "刀剑旗本武士光环<br>刀剑旗本武士：6格光环范围内，近战步兵伤害+15%",
-
+    "龙骑团高级教士限制": "龙骑团高级教士限制<br>文明固有限制：高级教士无法激励村民提高村民效率",
 
     "阿尤布黄金时代阶段I": "阿尤布黄金时代阶段I<br>黄金时代阶段I：村民采集速度 +10%",
     "阿尤布黄金时代阶段II": "阿尤布黄金时代阶段II<br>黄金时代阶段II：科技研发速度 +50%",
