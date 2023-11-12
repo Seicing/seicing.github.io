@@ -442,6 +442,22 @@ let ayanami = {
     "拜占庭水池辩证法": "拜占庭水池辩证法<br>水池 - 辩证法：根据水位，水池影响范围内增加50%/100%/150%/200%/250%研究效率",
     "拜占庭水池保护": "拜占庭水池保护<br>水池 - 保护：根据水位，水池影响范围内建筑物减少5%/10%/15%/20%/25%受到的伤害",
 
+    "雇佣长弓兵": "雇佣 5个长弓兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75",
+    "雇佣国土佣仆": "雇佣 3个国土佣仆<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>480 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣射击军": "雇佣 3个射击军<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>540 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90",
+
+    "雇佣怯薛骑兵": "雇佣 2个怯薛骑兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>66",
+    "雇佣古拉姆": "雇佣 3个古拉姆<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75",
+    "雇佣箭塔战象": "雇佣 1个箭塔象<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>1000 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>130",
+
+    "雇佣掷枪兵": "雇佣 1个掷枪兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>120 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣骆驼骑兵": "雇佣 2个骆驼骑兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>480 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>73",
+    "雇佣掷弹兵": "雇佣 2个掷弹兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>480 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75",
+
+    "雇佣加农炮": "雇佣 1个皇家加农炮<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>900 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣蜂巢炮": "雇佣 1个蜂巢炮<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>600 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40",
+    "雇佣回回炮": "雇佣 1个回回炮<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>1000 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>63",
+
     "贞德建造效率": "贞德建造效率<br>建设王国：封建时代后贞德影响附近的村民，使得他们建造速度+33%",
     "贞德圣化建筑": "贞德圣化建筑<br>圣化建筑：减少25%的成本",
 
