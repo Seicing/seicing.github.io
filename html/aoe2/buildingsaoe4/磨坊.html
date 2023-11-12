@@ -15,6 +15,7 @@
             document.getElementById("techno").style.display = "block";
             document.getElementById("mon").style.opacity = "0.3";
             document.getElementById("rus").style.opacity = "0.3";
+            document.getElementById("jpn").style.opacity = "0.3";
         })
     })
 </script>
@@ -113,7 +114,7 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     磨坊是基础的经济建筑，村民收集食物需要存放到这个地方才会让玩家的食物资源量增加，同时还可以在磨坊研究食物采集科技加快采集的效率<br>
-    蒙古人的蒙古包担当所有经济建筑的功能，罗斯人拥有独特的狩猎小屋，所以他们没有磨坊<br>
+    蒙古人的蒙古包担当所有经济建筑的功能，罗斯人拥有独特的狩猎小屋，日本有磨坊和房屋二合一的农舍，所以他们没有磨坊<br>
 
 
 
@@ -143,6 +144,16 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
     <a id="malButton0" href="javascript:void(0);" onclick="tipsg('malText0','malButton0','0')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
+    <a id="byzButton0" href="javascript:void(0);" onclick="tipsg('byzText0','byzButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
+    <a id="jdaButton0" href="javascript:void(0);" onclick="tipsg('jdaText0','jdaButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
+    <a id="zxlButton0" href="javascript:void(0);" onclick="tipsg('zxlText0','zxlButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
+    <a id="otdButton0" href="javascript:void(0);" onclick="tipsg('otdText0','otdButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
+    <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
 
 
     <div id="abbText0" style="text-align: left;display:block ">
@@ -205,7 +216,126 @@
         </table>
 
     </div>
+    <div id="ayyText0" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生存技术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生存技术</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="生存技术成本"></span></td>
+                <td style="text-align: left"><span class="生存技术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/独轮推车.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">独轮推车</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="独轮推车成本"></span></td>
+                <td style="text-align: left"><span class="独轮推车"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/专业侦察兵.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">专业侦察兵</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="专业侦察兵成本"></span></td>
+                <td style="text-align: left"><span class="专业侦察兵"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/园艺学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">园艺学</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="园艺学成本"></span></td>
+                <td style="text-align: left"><span class="园艺学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/施肥.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">施肥</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="施肥成本"></span></td>
+                <td style="text-align: left"><span class="施肥"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精准杂交育种.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精准杂交育种</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精准杂交育种成本"></span></td>
+                <td style="text-align: left"><span class="精准杂交育种"></span></td>
+            </tr>
+        </table>
+
+    </div>
     <div id="chiText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生存技术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生存技术</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="生存技术成本"></span></td>
+                <td style="text-align: left"><span class="生存技术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/独轮推车.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">独轮推车</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="独轮推车成本"></span></td>
+                <td style="text-align: left"><span class="独轮推车"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/专业侦察兵.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">专业侦察兵</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="专业侦察兵成本"></span></td>
+                <td style="text-align: left"><span class="专业侦察兵"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/园艺学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">园艺学</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="园艺学成本"></span></td>
+                <td style="text-align: left"><span class="园艺学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/施肥.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">施肥</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="施肥成本"></span></td>
+                <td style="text-align: left"><span class="施肥"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精准杂交育种.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精准杂交育种</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精准杂交育种成本"></span></td>
+                <td style="text-align: left"><span class="精准杂交育种"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="zxlText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
@@ -391,6 +521,66 @@
 
         </table>
     </div>
+    <div id="otdText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生存技术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生存技术</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="生存技术成本"></span></td>
+                <td style="text-align: left"><span class="生存技术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/独轮推车.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">独轮推车</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="独轮推车成本"></span></td>
+                <td style="text-align: left"><span class="独轮推车"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/专业侦察兵.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">专业侦察兵</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="专业侦察兵成本"></span></td>
+                <td style="text-align: left"><span class="专业侦察兵"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/园艺学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">园艺学</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="园艺学成本"></span></td>
+                <td style="text-align: left"><span class="园艺学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/施肥.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">施肥</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="施肥成本"></span></td>
+                <td style="text-align: left"><span class="施肥"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精准杂交育种.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精准杂交育种</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精准杂交育种成本"></span></td>
+                <td style="text-align: left"><span class="精准杂交育种"></span></td>
+            </tr>
+
+        </table>
+    </div>
     <div id="sulText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
@@ -509,7 +699,65 @@
             </tr>
         </table>
     </div>
-
+    <div id="jdaText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生存技术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生存技术</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="生存技术成本"></span></td>
+                <td style="text-align: left"><span class="生存技术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/独轮推车.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">独轮推车</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="独轮推车成本"></span></td>
+                <td style="text-align: left"><span class="独轮推车"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/专业侦察兵.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">专业侦察兵</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="专业侦察兵成本"></span></td>
+                <td style="text-align: left"><span class="专业侦察兵"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/园艺学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">园艺学</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="园艺学成本"></span></td>
+                <td style="text-align: left"><span class="园艺学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/施肥.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">施肥</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="施肥成本"></span></td>
+                <td style="text-align: left"><span class="施肥"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精准杂交育种.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精准杂交育种</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精准杂交育种成本"></span></td>
+                <td style="text-align: left"><span class="精准杂交育种"></span></td>
+            </tr>
+        </table>
+    </div>
     <div id="ottText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
@@ -628,7 +876,65 @@
             </tr>
         </table>
     </div>
-
+    <div id="byzText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/生存技术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生存技术</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="生存技术成本"></span></td>
+                <td style="text-align: left"><span class="生存技术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/独轮推车.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">独轮推车</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="独轮推车成本"></span></td>
+                <td style="text-align: left"><span class="独轮推车"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/专业侦察兵.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">专业侦察兵</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="专业侦察兵成本"></span></td>
+                <td style="text-align: left"><span class="专业侦察兵"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/园艺学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">园艺学</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="园艺学成本"></span></td>
+                <td style="text-align: left"><span class="园艺学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/施肥.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">施肥</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="施肥成本"></span></td>
+                <td style="text-align: left"><span class="施肥"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精准杂交育种.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精准杂交育种</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精准杂交育种成本"></span></td>
+                <td style="text-align: left"><span class="精准杂交育种"></span></td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -657,6 +963,16 @@
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
     <a id="malButton1" href="javascript:void(0);" onclick="tipsg('malText1','malButton1','1')" style="opacity:0.3">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mal.png" width="25px"></a>
+    <a id="byzButton1" href="javascript:void(0);" onclick="tipsg('byzText1','byzButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
+    <a id="jdaButton1" href="javascript:void(0);" onclick="tipsg('jdaText1','jdaButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
+    <a id="zxlButton1" href="javascript:void(0);" onclick="tipsg('zxlText1','zxlButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
+    <a id="otdButton1" href="javascript:void(0);" onclick="tipsg('otdText1','otdButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
+    <a id="ayyButton1" href="javascript:void(0);" onclick="tipsg('ayyText1','ayyButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
 
 
 
@@ -680,8 +996,11 @@
             </tr>
         </table>
     </div>
-    <div id="chiText1" style="text-align: left;display:none ">
-        <span class="中国加速建造"></span><br>
+
+    <div id="ayyText1" style="text-align: left;display:block ">
+        <span class="阿尤布黄金时代阶段II"></span><br>
+        <span class="阿尤布黄金时代阶段III"></span><br>
+        <span class="智慧宫效果"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -690,10 +1009,33 @@
                 </td>
             </tr>
         </table>
-
-
-
     </div>
+
+    <div id="chiText1" style="text-align: left;display:none ">
+        <span class="中国加速建造"></span><br>
+        <span class="朝廷命官资源点监督"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="zxlText1" style="text-align: left;display:none ">
+        <span class="中国加速建造"></span><br>
+        <span class="朝廷命官资源点监督"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <div id="engText1" style="text-align: left;display:none ">
 
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -706,6 +1048,24 @@
         </table>
     </div>
     <div id="hreText1" style="text-align: left;display:none ">
+        <span class="埃尔茨巴赫宫殿效果"></span><br>
+        <span class="神罗紧急修复"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">火焰护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石板和石造建筑.png" width="20px">石板和石造建筑(+5) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="otdText1" style="text-align: left;display:none ">
         <span class="埃尔茨巴赫宫殿效果"></span><br>
         <span class="神罗紧急修复"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -750,6 +1110,19 @@
         </table>
     </div>
 
+    <div id="jdaText1" style="text-align: left;display:none ">
+        <span class="法国便宜经济科技"></span><br>
+        <span class="商会效果"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <div id="ottText1" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -763,6 +1136,19 @@
 
     <div id="malText1" style="text-align: left;display:none ">
         <span class="马里贸易科研"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="byzText1" style="text-align: left;display:none ">
+        <span class="拜占庭水池辩证法"></span><br>
+        <span class="拜占庭水池保护"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -840,8 +1226,6 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
-
     <table id="empire" frame="box">
         <tr>
             <td>
@@ -855,6 +1239,10 @@
             <td>
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/磨坊.png" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/磨坊.jpg"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/byz/磨坊.png" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/byz/mini/磨坊.jpg"></a>
             </td>
             <td>
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe2/Architecture/AOE4/ott/磨坊.png" target="_blank">
@@ -872,12 +1260,12 @@
                 非洲国家的磨坊
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
+                拜占庭的磨坊
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
                 未被使用的中东国家的磨坊
             </td>
         </tr>
-
-
-
     </table>
 </div>
 
@@ -916,9 +1304,9 @@
 </script>
 <script>
     var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'freText', 'ottText'
-        , 'malText']
+        , 'malText', 'byzText', 'jdaText', 'zxlText', 'otdText', 'ayyText']
     var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'freButton', 'ottButton'
-        , 'malButton']
+        , 'malButton', 'byzButton', 'jdaButton', 'zxlButton', 'otdButton', 'ayyButton']
 
     function tipsg(a, b, c) {
         cleargasek(0);

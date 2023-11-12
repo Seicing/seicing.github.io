@@ -17,6 +17,7 @@
             document.getElementById("sul").style.opacity = "1";
             document.getElementById("mal").style.opacity = "1";
             document.getElementById("ott").style.opacity = "1";
+            document.getElementById("ayy").style.opacity = "1";
         })
     })
 </script>
@@ -42,6 +43,9 @@
         <tr style="text-align: center">
             <td colspan="5">
                 <div id="abbText2" style="text-align: center;display:none ">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/清真寺.png">
+                </div>
+                <div id="ayyText2" style="text-align: center;display:none ">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/清真寺.png">
                 </div>
                 <div id="sulText2" style="text-align: center;display:none ">
@@ -651,6 +655,8 @@
 </a>
 <a id="malButton2" href="javascript:void(0);" onclick="tipsg('malText2','malButton2','2')" style="opacity:0.3">
 </a>
+<a id="ayyButton2" href="javascript:void(0);" onclick="tipsg('ayyText2','ayyButton2','2')" style="opacity:0.3">
+</a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>
@@ -666,8 +672,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText', 'sulText', 'ottText', 'malText']
-    var listButton = ['abbButton', 'sulButton', 'ottButton', 'malButton']
+    var listText = ['abbText', 'sulText', 'ottText', 'malText', 'ayyText']
+    var listButton = ['abbButton', 'sulButton', 'ottButton', 'malButton', 'ayyButton']
 
     function tipsg(a, b, c) {
         cleargasek(0);
