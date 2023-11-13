@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("chi").style.opacity = "1";
+            document.getElementById("zxl").style.opacity = "1";
         })
     })
 </script>
@@ -112,9 +113,6 @@
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击间隔时间</span></td>
             <td colspan="4">1.75</td>
         </tr>
-
-
-
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="5"><span style="color:#6e6e85">升级费用</span></td>
         </tr>
@@ -132,8 +130,6 @@
                 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60
             </td>
         </tr>
-
-
     </table>
 </div>
 
@@ -156,7 +152,7 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
 
     诸葛弩手是中国特有的弓兵单位，一次发射多根箭矢造成多段伤害 <br>
-    诸葛弩手是封建时代(Ⅱ)后解锁宋朝生产的部队<br>
+    诸葛弩手是封建时代(Ⅱ)后解锁宋朝生产的部队，中国的变体文明翡翠帝国不需要进入宋朝就能生产，并取代了通用的步弓手<br>
 
 
 </div>
@@ -171,6 +167,9 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="chiButton0" href="javascript:void(0);" onclick="tipsg('chiText0','chiButton0','0')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/chi.png" width="25px"></a>
+    <a id="zxlButton0" href="javascript:void(0);" onclick="tipsg('zxlText0','zxlButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
+
     <div id="chiText0" style="text-align: left;display:block ">
         <span class="元朝效果"></span><br>
         <span class="明朝效果"></span><br>
@@ -209,7 +208,47 @@
             </tr>
         </table>
     </div>
-
+    <div id="zxlText0" style="text-align: left;display:none ">
+        <span class="翡翠帝国元朝效果"></span><br>
+        <span class="翡翠帝国明朝效果"></span><br>
+        <span class="神圣活力"></span><br>
+        <span class="神圣急速"></span><br>
+        <span class="翡翠帝国朝廷命官效果"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/万箭.png" width="20px">万箭(+1多段攻击次数) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网 (+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -235,17 +274,14 @@
     <ul>
         <li>第一赛季补丁后，进入新的朝代不再限制旧朝代的王朝部队，而是完全解锁使用</li>
     </ul>
-
     <b>第2赛季</b>
     <ul>
         <li>19801补丁后，远程部队的攻击速度明确了起手帧(从1.25更变标记为1.75)</li>
     </ul>
-
     <b>第5赛季</b>
     <ul>
         <li>第五赛季补丁后，诸葛弩成本从20肉30金30木材调整为30肉20金30木</li>
     </ul>
-
 </div>
 <br><br><br>
 
@@ -259,11 +295,7 @@
     诸葛弩又称为连弩(Repeating
     Crossbow)，它是一种通过简易的来回推动的拉杆结构使得可以连续地发射箭矢的弩，最早的连弩在公元前4世纪的楚国发现，在此后的两千多年里中国人尝试对这种自动化的武器进行改进，这些改进者们以蜀汉丞相诸葛亮作为代表，后人也因此把连弩称为“诸葛弩”<br><br>
 
-
     自发明以来，诸葛弩一直被广泛用于东亚地区上千年的战争中，并且它的核心结构几乎没有变化，这使得诸葛弩成为了最为长寿的机械武器之一，诸葛弩的有效射程在70-180米左右，相比于正常的弓弩来说射程很短，适合用于阵地战中，它在15-20秒内发射超过10支弩箭的能力使得它们拥有在狭窄空间前提下强大的压制力，在明朝时期，诸葛弩被进一步地改进，并且尝试配置在船只上使用
-
-
-
 </div>
 
 <br><br><br>
@@ -275,13 +307,9 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
     <ul>
-
         <li>诸葛弩手没有自己独立的模型，他们的时代2模型使用步弓手时代2模型，时代3、4模型则是使用弩手的时代3、4模型</li>
-
     </ul>
-
     <table id="empire" frame="box">
         <tr>
 
@@ -297,11 +325,8 @@
                 <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/chi/诸葛弩手4.png" target="_blank">
                     <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/chi/诸葛弩手4.png"></a>
             </td>
-
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 诸葛弩手
             </td>
@@ -311,11 +336,7 @@
             <td style="background-color:#F5F8FA;text-align: center">
                 精锐诸葛弩手
             </td>
-
         </tr>
-
-
-
     </table>
 </div>
                         </div>
@@ -351,8 +372,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['chiText']
-    var listButton = ['chiButton']
+    var listText = ['chiText', 'zxlText']
+    var listButton = ['chiButton', 'zxlButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
