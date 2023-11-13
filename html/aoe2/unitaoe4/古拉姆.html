@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("abb").style.opacity = "1.0";
+            document.getElementById("ayy").style.opacity = "1.0";
         })
     })
 </script>
@@ -226,7 +227,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="abbButton0" href="javascript:void(0);" onclick="tipsg('abbText0','abbButton0','0')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/abb.png" width="25px"></a>
-
+    <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
     <div id="abbText0" style="text-align: left;display:block ">
         <span class="黄金时代阶段II"></span><br>
         <span class="黄金时代阶段III"></span><br>
@@ -272,8 +274,56 @@
             </tr>
         </table>
     </div>
-
-
+    <div id="ayyText0" style="text-align: left;display:none ">
+        <span class="阿尤布黄金时代阶段II"></span><br>
+        <span class="阿尤布黄金时代阶段III"></span><br>
+        <span class="大食手搓"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精锐军队战术.png" width="20px">精锐军队战术(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/精锐军队战术.png" width="20px">精锐军队战术(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/步兵支援.png" width="20px">步兵支援(开启步兵支援光环) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -291,10 +341,6 @@
         <li>第五赛季补丁后，黑衣大食王朝不再拥有武士，获得了独特的古拉姆</li>
         <li>第五赛季5822测试追加补丁后，古拉姆训练时间从22.5秒上调到了26秒，冲锋攻击下调到15</li>
     </ul>
-
-
-
-
 </div>
 <br><br><br>
 
@@ -306,11 +352,9 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     在阿拉伯语里面，古拉姆(غلام)的意思是仆人、助手和佣仆，他们是伊斯兰帝国的奴隶士兵或佣兵，他们一般都是被征服地区的俘虏和奴隶，或是出卖自己性命的雇佣兵，一般都是来自北方地区的突厥人或高加索人，组成了阿拉伯帝国扩张军队的核心。作为奴隶的他们从小就要接受战斗训练，在战争中提供战斗服务，通过奋战他们可以获得社会地位和自由，获得自己的财富和婚姻，在一些后期的突厥伊斯兰帝国里也能看到古拉姆活跃的身影
-
 </div>
 
 <br><br><br>
-
 
 <div>
     <H1>
@@ -318,7 +362,6 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
     <table id="empire" frame="box">
         <tr>
             <td>
@@ -338,8 +381,6 @@
                 黑衣大食王朝精锐古拉姆
             </td>
         </tr>
-
-
     </table>
 </div>
                         </div>
@@ -375,8 +416,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText',]
-    var listButton = ['abbButton',]
+    var listText = ['abbText', 'ayyText']
+    var listButton = ['abbButton', 'ayyButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
