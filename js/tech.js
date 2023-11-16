@@ -347,7 +347,7 @@ let ayanami = {
     "恐怖之云": "恐怖之云<br>Cloud of Terror<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>手推炮造成0.56格范围伤害",
     "龙之咆哮": "龙之咆哮<br>Roar of the Dragon<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>长矛兵和骑手获得火长矛冲锋",
     "军机处": "军机处<br>Military Affairs Bureau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官可以监督大型箭塔和哨站，使得它们受到的伤害-35%",
-    "万箭": "万箭<br>10000 Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>诸葛弩和弩手发射1额外箭矢",
+    "万箭": "万箭<br>10000 Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>诸葛弩和弩手发射额外的箭矢",
     "王朝守护者": "王朝守护者<br>Dynastic Protectors<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>解锁帝国卫队和元朝突袭者",
 
 
@@ -432,7 +432,7 @@ let ayanami = {
     "拜占庭建造石头": "拜占庭建造石头<br>野外石料：建造建筑成功后获得不同数量的石头",
     "拜占庭水渠系统": "拜占庭水渠系统<br>水池 - 灌溉：村民根据水池的水位提高5%/10%/15%/20%/25%采集效率",
     "拜占庭橄榄园": "拜占庭橄榄园<br>大酒庄：村民在大酒庄附近获得橄榄油效率+60%",
-    "拜占庭回血": "拜占庭回血<br>水池 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续10秒",
+    "拜占庭回血": "拜占庭回血<br>第一山的蓄水池 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续10秒",
     "拜占庭边防部队防御": "拜占庭边防部队防御<br>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2",
     "拜占庭改良火炬": "拜占庭改良火炬<br>纵火者：研发纵火者科技后，侦察兵附近的部队火炬伤害+25%",
     "拜占庭海军部署": "拜占庭海军部署<br>海军部署：军事单位从运输船卸载后移动速度提高",
@@ -481,7 +481,6 @@ let ayanami = {
     "中国宋朝": "宋朝<br>Song Dynasty<br>城镇中心生产速度+33%<br>解锁谷仓和诸葛弩手",
     "中国元朝": "元朝<br>Yuan Dynasty<br>部队+15%移动速度<br>解锁宝塔和火长矛骑兵",
     "中国明朝": "明朝<br>Ming Dynasty<br>所有军事部队+10%生命值<br>解锁掷弹兵",
-
 
     "神圣急速2": "神圣急速<br>Divine Haste<br>激活后，步兵单位移动速度+15%",
     "神圣活力2": "神圣活力<br>Divine Vitality<br>激活后，单位在脱离战斗时每秒恢复2生命值",
@@ -539,7 +538,6 @@ let ayanami = {
     "大食野猪限制": "大食野猪限制<br>大型果园：从浆果丛采集食物的速度提高 30%，但无法从野猪处采集食物",
     "大食便宜商人": "大食便宜商人<br>贸易经济：商人成本-33%",
 
-
     "中国加速建造": "中国加速建造<br>快速建造：建造速度+100%",
     "朝廷命官效果": "朝廷命官效果<br>朝廷命官：监督提升150%效率",
     "灵道效果": "灵道效果<br>灵道：影响力范围内朝代单位成本-30%",
@@ -557,7 +555,6 @@ let ayanami = {
     "宋朝效果": "宋朝效果<br>盛世王朝 - 宋朝：生产速度+33%",
     "谷仓效果": "谷仓效果<br>谷仓：影响力范围内农田食物收集率+15%",
 
-
     "露天矿坑建筑学": "露天矿坑建筑学<br>矿业社区：在露天矿区影响范围内建造的每间房屋和采矿场将会提升露天矿区的黄金产量，每个25%",
     "马里贸易科研": "马里贸易科研<br>手稿贸易：升级和科技研发时间随着贸易数量的增加而减少",
     "马里房屋限制": "马里房屋限制<br>矿业社区：木材成本便宜50%，但是提供的人口数减少50%，生命值为500",
@@ -566,7 +563,6 @@ let ayanami = {
     "收费哨站效果": "收费哨站效果<br>收费哨站：最多40%，每路过一个收费哨站，商人可以额外立即获得8%的交易黄金",
     "马里运输船驻扎": "马里运输船驻扎<br>登陆部队：运输船每驻扎1个单位就获得1个标枪武器(攻击力7、发射间隔时间2.62秒、射程6.50)",
     "马里攻城节庆": "马里攻城节庆<br>攻城节庆：激活后60秒内火炬伤害和攻城伤害+50%",
-
 
     "城堡网络效果": "城堡网络效果<br>城堡网络：靠近影响力范围的敌人会触发城堡网络加成",
     "英国二重射箭槽": "英国二重射箭槽<br>防御城镇：拥有2个初始射箭槽",
@@ -580,8 +576,6 @@ let ayanami = {
     "英国叉叉限制": "英国叉叉限制<br>战争召唤：无法在时代1生产，只能在时代2生产",
     "英国武士加速": "英国武士加速<br>战争召唤：武士的生产速度+50%",
     "英国预备营地": "英国预备营地<br>花费25木建造一个预备营地，提高营地内单位30%视野，最大建造5个",
-
-
 
     "红宫炮台效果": "红宫炮台效果<br>红宫：炮台更变为红宫的劲弩炮台(射程为9.5)",
     "骑兵学校效果": "骑兵学校效果<br>骑兵学校：建造地标后所有马厩生产速度+20%",
@@ -599,7 +593,6 @@ let ayanami = {
     "法国资源商队2": "法国资源商队2<br>贸易经济：游戏开始时在小地图上显示所有贸易站",
     "法国资源商队3": "法国资源商队3<br>贸易经济：商船带回的资源量+20%",
 
-
     "草原防卫据点效果": "草原防卫据点效果<br>草原防卫据点：存放的黄金量+50%",
     "汗国宫殿效果": "汗国宫殿效果<br>汗国宫殿：只能由汗国宫殿生产",
     "汗国宫殿贵族铁骑的坚毅": "汗国宫殿贵族铁骑的坚毅<br>汗国宫殿：自带“贵族铁骑的坚毅”科技",
@@ -615,7 +608,6 @@ let ayanami = {
     "丝绸之路": "丝绸之路<br>丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金",
     "蒙古运输": "蒙古运输<br>强化运输：生命值+50%、移动速度+15% ",
 
-
     "奥斯曼木材折扣": "奥斯曼木材折扣<br>军事诱惑：造价减少33%",
     "奥斯曼生产加速": "奥斯曼生产加速<br>影响力系统：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升20%/20%/30%/40%",
     "伊斯坦布尔天文台效果": "伊斯坦布尔天文台效果<br>伊斯坦布尔天文台：铁匠铺、大学周围的军事生产建筑效率的影响力效果提高到100%",
@@ -624,7 +616,6 @@ let ayanami = {
     "海门城堡效果": "海门城堡效果<br>海门城堡：所有大型箭塔使商人和商船的移动速度 +30% ，近战护甲和远程护甲 +8",
     "苏丹哈尼驿站贸易网络效果": "苏丹哈尼驿站贸易网络效果<br>苏丹哈尼驿站贸易网络：驻扎的商人每分钟生产28黄金",
     "奥斯曼移速船": "奥斯曼移速船<br>运输路线：贸易船和运输船的移动速度增加10%",
-
 
     "高级军械库效果": "高级军械库效果<br>高级军械库：邻近攻城器械厂的攻城器械生产时间-20%",
     "狩猎赏金1阶段": "狩猎赏金1阶段<br>狩猎赏金1阶段：狩猎小屋产生 10% 额外黄金，村民食物采集率+5%",
