@@ -13,7 +13,7 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("mon").style.opacity = "1";
+            document.getElementById("jpn").style.opacity = "1";
         })
     })
 </script>
@@ -34,10 +34,10 @@
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
     <table width="250px" frame="box" cellpadding="5">
         <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="5"><span style="color:#6e6e85">萨满(Shaman)</span></td>
+            <td colspan="5"><span style="color:#6e6e85">神道教祭司(Shinto Priest)</span></td>
         </tr>
         <tr style="text-align: center">
-            <td colspan="5"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/萨满.png"></td>
+            <td colspan="5"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/神道教祭司.png"></td>
         </tr>
 
         <tr style="background-color:#F5F8FA;text-align: center">
@@ -45,11 +45,12 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">产地</span></td>
-            <td colspan="4">僧侣祭坛</td>
+            <td colspan="4">神社</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>150</td>
+            <td colspan="4"><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>150
+            </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">训练时间</span></td>
@@ -74,7 +75,7 @@
             <td style="background-color:#fce1e1">-</td>
         </tr>
         <tr style="text-align: left">
-            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲 </span></td>
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲 </span></td>
             <td style="background-color:#ddffda">-</td>
             <td style="background-color:#faffde">-</td>
             <td style="background-color:#fff1e1">0</td>
@@ -82,7 +83,7 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-            <td colspan="4">1.12</td>
+            <td colspan="4">1.125</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">单位标签</span></td>
@@ -112,7 +113,7 @@
 
 <div>
     <div id="techno"></div>
-    “不具备战斗能力的辅助单位，可拾取圣物、招降敌方单位及占领圣地”
+    “拥有独特特权的辅助单位，可拾取依代并将其存放至建筑内。可拾取圣物、招降敌方单位及占领圣地”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
 </div>
@@ -125,9 +126,9 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    萨满是蒙古人的宗教单位，他们负责回收圣物、占领圣地以及治疗，手持圣物的僧侣还可以使用威力强大的群体转化<br>
-    萨满除了名字和僧侣不同外，没有什么区别<br>
-    萨满以每秒7生命值的速度治疗1格范围内的友方单位，战斗时这个数值会下降50%<br>持有圣物时可以招降4.5格半径范围内的敌军部队<br>
+    神道教祭司是日本独特的僧侣部队，选择建造浮门地标确立对神道教的信仰后可以建造神社训练，他们可以拿起浮门地标生成的依代放入各种建筑中赐予不同的加成
+    <br><br>
+    神道教祭司是城堡时代(Ⅲ)生产的部队 <br>
 </div>
 
 <br><br><br>
@@ -138,22 +139,21 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="monButton0" href="javascript:void(0);" onclick="tipsg('monText0','monButton0','0')" style="opacity:1">
-        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
+    <a id="jpnButton0" href="javascript:void(0);" onclick="tipsg('jpnText0','jpnButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
 
-
-    <div id="monText0" style="text-align: left;display:block ">
+    <div id="jpnText0" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
                 <td>
-                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/虔诚.png" width="20px">虔诚(+)(+40/+60) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/虔诚.png" width="20px">虔诚(+40) <br>
                 </td>
             </tr>
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">治疗速度</span></td>
                 <td>
-                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/草药.png" width="20px">草药(+)(+60%/+90%) <br>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/草药.png" width="20px">草药(+60%) <br>
                 </td>
             </tr>
             <tr style="text-align: left">
@@ -186,22 +186,7 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <b>内测版本</b>
-
-    <ul>
-        <li>v5544补丁后，成本从200黄金下调到150黄金</li>
-    </ul>
-
-    <b>第1赛季</b>
-    <ul>
-        <li>12973补丁后，移动速度从1.0提高到1.12，获得圣物后移动速度减少25%</li>
-    </ul>
-
-    <b>第2赛季</b>
-    <ul>
-        <li>第二赛季补丁后，宗教单位训练时间从45秒下调到30秒</li>
-    </ul>
-
+    无
 </div>
 <br><br><br>
 
@@ -212,9 +197,7 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    罗马帝国崩溃后，作为保存了古代文化的宗教势力很快地构建了欧洲的新秩序，他们很快拥有了对中世纪一切社会现象的解释权，在欧洲和中东地区，宗教教士是一支难以被忽视的强大力量，甚至可以说，中世纪所有的战争都可以归流于宗教之间的对抗，中世纪的十字军东征本质上就是基督教和伊斯兰教之间正面对抗的产物，在持续了千年之久的历代战争中，大量宗教人员陪伴着军队踏上了远征的步伐
-    <br><br>
-    萨满是原始的巫文化里面的宗教人员，在中世纪的蒙古，他们一般信仰原始的长生天信仰，萨满确信是神和人之间的沟通者，蒙古人在行军感到困惑的时候经常向萨满请教，获得来自上天的启示
+    【待补充】
 </div>
 
 <br><br><br>
@@ -226,16 +209,24 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+
     <table id="empire" frame="box">
         <tr>
             <td>
-                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/mon/僧侣3.png" target="_blank">
-                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/mon/僧侣3.png"></a>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/jpn/神道教祭司3.png" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/jpn/神道教祭司3.png"></a>
+            </td>
+            <td>
+                <a href="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/jpn/神道教祭司4.png" target="_blank">
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/unit/jpn/神道教祭司4.png"></a>
             </td>
         </tr>
         <tr>
             <td style="background-color:#F5F8FA;text-align: center">
-                萨满
+                城堡时代神道教祭司
+            </td>
+            <td style="background-color:#F5F8FA;text-align: center">
+                帝王时代神道教祭司
             </td>
         </tr>
     </table>
@@ -273,8 +264,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['monText',]
-    var listButton = ['monButton',]
+    var listText = ['jpnText']
+    var listButton = ['jpnButton']
 
     function tipsg(a, b, c) {
         cleargasek(c);
