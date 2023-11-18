@@ -459,7 +459,7 @@ let ayanami = {
     "雇佣回回炮": "雇佣 1个回回炮<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>1000 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>63",
 
     "贞德建造效率": "贞德建造效率<br>建设王国：封建时代后贞德影响附近的村民，使得他们建造速度+33%",
-    "贞德圣化建筑": "贞德圣化建筑<br>圣化建筑：减少25%的成本",
+    "贞德圣化建筑": "贞德圣化建筑<br>圣化建筑：减少25%的训练成本",
 
     "翡翠帝国唐朝效果": "翡翠帝国唐朝效果<br>盛世王朝 - 唐朝：建造地标的成本-15%",
     "翡翠帝国宋朝效果": "翡翠帝国宋朝效果<br>盛世王朝 - 宋朝：建造非军事建筑的成本-15%",
