@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("chi").style.opacity = "1";
+            document.getElementById("zxl").style.opacity = "1";
         })
     })
 </script>
@@ -45,9 +46,9 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>6000<img
-                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>6000<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>6000<img
-                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>6000
+            <td colspan="4"><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>5000 <img
+                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>5000 <br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>5000 <img
+                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>5000<br>在中型/大型/超大型地图中成本增幅1.2/1.4/1.6倍
             </td>
         </tr>
         <tr style="text-align: left">
@@ -125,9 +126,13 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="chiButton0" href="javascript:void(0);" onclick="tipsg('chiText0','chiButton0','0')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/chi.png" width="25px"></a>
-
+    <a id="zxlButton0" href="javascript:void(0);" onclick="tipsg('zxlText0','zxlButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
 
     <div id="chiText0" style="text-align: left;display:block ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="zxlText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
     </div>
 
@@ -146,6 +151,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="chiButton1" href="javascript:void(0);" onclick="tipsg('chiText1','chiButton1','1')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/chi.png" width="25px"></a>
+    <a id="zxlButton1" href="javascript:void(0);" onclick="tipsg('zxlText1','zxlButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
 
     <div id="chiText1" style="text-align: left;display:block ">
         <span class="中国加速建造"></span><br>
@@ -158,7 +165,17 @@
             </tr>
         </table>
     </div>
-
+    <div id="zxlText1" style="text-align: left;display:block ">
+        <span class="中国加速建造"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
@@ -204,16 +221,12 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
     <ul>
-
         <li>帝王飞地的原型是紫禁城，又称北京故宫，是明朝明成祖在永乐四年(1406)开始建造的大型宫殿建筑群，明、清两朝的皇家都以此宫殿为居所
         </li>
         <li>游戏里的帝王飞地与神话时代、国家的崛起的同原型奇观非常类似，都选用了太和殿来概括整个紫禁城的整体
         </li>
-
     </ul>
-
     <table id="empire" frame="box">
         <tr>
 
@@ -231,8 +244,6 @@
             </td>
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 帝王飞地
             </td>
@@ -243,9 +254,6 @@
                 帝王飞地的概念图
             </td>
         </tr>
-
-
-
     </table>
 </div>
 
@@ -283,8 +291,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['chiText',]
-    var listButton = ['chiButton',]
+    var listText = ['chiText', 'zxlText']
+    var listButton = ['chiButton', 'zxlButton']
 
     function tipsg(a, b, c) {
         cleargasek(0);

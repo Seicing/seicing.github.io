@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("fre").style.opacity = "1";
+            document.getElementById("jda").style.opacity = "1";
         })
     })
 </script>
@@ -125,8 +126,10 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:1">
-        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="freButton0" href="javascript:void(0);" onclick="tipsg('freText0','freButton0','0')" style="opacity:1.0"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="jdaButton0" href="javascript:void(0);" onclick="tipsg('jdaText0','jdaButton0','0')" style="opacity:0.3"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
 
 
     <div id="freText0" style="text-align: left;display:block ">
@@ -168,7 +171,44 @@
 
     </div>
 
+    <div id="jdaText0" style="text-align: left;display:block ">
 
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/润滑轮轴.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">润滑轮轴</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="润滑轮轴成本"></span></td>
+                <td style="text-align: left"><span class="润滑轮轴"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/化学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">化学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="化学成本"></span></td>
+                <td style="text-align: left"><span class="化学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/攻城武器.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">攻城武器</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="攻城武器成本"></span></td>
+                <td style="text-align: left"><span class="攻城武器"></span></td>
+            </tr>
+        </table>
+
+
+    </div>
 </div>
 
 <br><br><br>
@@ -183,6 +223,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="freButton1" href="javascript:void(0);" onclick="tipsg('freText1','freButton1','1')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
+    <a id="jdaButton1" href="javascript:void(0);" onclick="tipsg('jdaText1','jdaButton1','1')" style="opacity:0.3"><img
+            src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
 
     <div id="freText1" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -200,7 +242,23 @@
             </tr>
         </table>
     </div>
-
+    <div id="jdaText1" style="text-align: left;display:block ">
+        <span class="贞德圣化建筑"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
@@ -315,8 +373,9 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['freText',]
-    var listButton = ['freButton',]
+    var listText = ['freText', 'jdaText']
+    var listButton = ['freButton', 'jdaButton']
+
 
     function tipsg(a, b, c) {
         cleargasek(0);

@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("hre").style.opacity = "1";
+            document.getElementById("otd").style.opacity = "1";
         })
     })
 </script>
@@ -97,7 +98,15 @@
 
 <div>
     <div id="techno"></div>
-    “高级教士驻扎后可激励大范围内的单位。可作为存放所有资源的建筑使用”
+
+    <div id="hreText2" style="text-align: left;display:block ">
+        “高级教士驻扎后可激励大范围内的单位。可作为存放所有资源的建筑使用”
+    </div>
+    <div id="otdText2" style="text-align: left;display:block ">
+        “鼓舞大范围内所有龙村民，使他们的采集速率+10%，可作为所有资源类型的存放点使用”
+    </div>
+
+
     <br>
     <div style='text-align:right'>——游戏内说明</div>
 </div>
@@ -126,11 +135,15 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="hreButton0" href="javascript:void(0);" onclick="tipsg('hreText0','hreButton0','0')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/hre.png" width="25px"></a>
+    <a id="otdButton0" href="javascript:void(0);" onclick="tipsg('otdText0','otdButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
 
 
     <div id="hreText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
-
+    </div>
+    <div id="otdText0" style="text-align: left;display:block ">
+        这座建筑物没有科技可以研发
     </div>
 
 
@@ -148,6 +161,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="hreButton1" href="javascript:void(0);" onclick="tipsg('hreText1','hreButton1','1')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/hre.png" width="25px"></a>
+    <a id="otdButton1" href="javascript:void(0);" onclick="tipsg('otdText1','otdButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
 
     <div id="hreText1" style="text-align: left;display:block ">
         <span class="埃尔茨巴赫宫殿效果"></span><br>
@@ -166,7 +181,23 @@
             </tr>
         </table>
     </div>
-
+    <div id="otdText1" style="text-align: left;display:block ">
+        <span class="埃尔茨巴赫宫殿效果"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">火焰护甲</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石板和石造建筑.png" width="20px">石板和石造建筑(+5) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
@@ -262,6 +293,8 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
                     
+<a id="hreButton2" href="javascript:void(0);" onclick="tipsg('hreText2','hreButton2','2')" style="opacity:0"></a>
+<a id="otdButton2" href="javascript:void(0);" onclick="tipsg('otdText2','otdButton2','2')" style="opacity:0"></a>
 <a href="https://seicing.com/html/aoe2/index-aoe4buildings.html" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -278,18 +311,21 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['hreText',]
-    var listButton = ['hreButton',]
+    var listText = ['hreText', 'otdText',]
+    var listButton = ['hreButton', 'otdButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
+        cleargasek(2);
         a = a.substring(0, a.length - 1);
         b = b.substring(0, b.length - 1);
         document.getElementById(a + '0').style.display = "block";
         document.getElementById(b + '0').style.opacity = 1;
         document.getElementById(a + '1').style.display = "block";
         document.getElementById(b + '1').style.opacity = 1;
+        document.getElementById(a + '2').style.display = "block";
+        document.getElementById(b + '2').style.opacity = 1;
         var aaposbo1 = document.querySelector("#blacktou1");
         var aaposbo2 = document.querySelector("#blacktou2");
         var aaposbo3 = a.substring(0, 3);
@@ -326,8 +362,10 @@
         var tipsp1 = getQueryVariable("civ")
         var tipsp2 = tipsp1 + "Button0";
         var tipsp3 = tipsp1 + "Button1";
+        var tipsp3 = tipsp1 + "Button2";
         document.getElementById(tipsp2).click();
         document.getElementById(tipsp3).click();
+        document.getElementById(tipsp4).click();
     }
 
 </script>

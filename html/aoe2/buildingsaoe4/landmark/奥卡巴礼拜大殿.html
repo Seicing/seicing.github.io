@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("abb").style.opacity = "1";
+            document.getElementById("ayy").style.opacity = "1.0";
         })
     })
 </script>
@@ -45,9 +46,9 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>6000<img
-                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>6000<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>6000<img
-                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>6000
+            <td colspan="4"><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>5000 <img
+                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>5000 <br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>5000 <img
+                    src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>5000<br>在中型/大型/超大型地图中成本增幅1.2/1.4/1.6倍
             </td>
         </tr>
         <tr style="text-align: left">
@@ -125,9 +126,13 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="abbButton0" href="javascript:void(0);" onclick="tipsg('abbText0','abbButton0','0')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/abb.png" width="25px"></a>
-
+    <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
 
     <div id="abbText0" style="text-align: left;display:block ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="ayyText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
     </div>
 
@@ -146,8 +151,21 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="abbButton1" href="javascript:void(0);" onclick="tipsg('abbText1','abbButton1','1')" style="opacity:1">
         <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/abb.png" width="25px"></a>
+    <a id="ayyButton1" href="javascript:void(0);" onclick="tipsg('ayyText1','ayyButton1','1')" style="opacity:0.3">
+        <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
 
     <div id="abbText1" style="text-align: left;display:block ">
+        <span class="智慧宫效果"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText1" style="text-align: left;display:block ">
         <span class="智慧宫效果"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -276,8 +294,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText',]
-    var listButton = ['abbButton',]
+    var listText = ['abbText', 'ayyText']
+    var listButton = ['abbButton', 'ayyButton']
 
     function tipsg(a, b, c) {
         cleargasek(0);
