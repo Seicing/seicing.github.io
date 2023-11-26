@@ -368,7 +368,7 @@ let ayanami = {
     "军事偏殿铁匠大师": "军事偏殿 : 铁匠大师<br>Master Smiths<br> 军事偏殿升级科技<br>升级到下一个时代，升级后时代的铁匠铺升级将免费研发",
     "军事偏殿援军": "军事偏殿 : 援军<br>Reinforcement<br> 军事偏殿升级科技<br>升级到下一个时代，骑兵部队获得建造攻城武器能力，智慧宫直到游戏结束，每2分钟生产1/3/7个沙漠突袭者",
     "商业偏殿顾问": "商业偏殿 : 顾问<br>Advisors<br> 贸易偏殿升级科技<br>升级到下一个时代，生成2/4/7个阿塔贝格，驻扎在军事生产建筑使得新生产的军事部队生命值+20%",
-    "商业偏殿集市": "商业偏殿 : 集市<br>Bazaar<br> 贸易偏殿升级科技<br>升级到下一个时代，每3分钟将会有一个贸易商队携带4种使用资源或单位拜访",
+    "商业偏殿集市": "商业偏殿 : 集市<br>Bazaar<br> 贸易偏殿升级科技<br>升级到下一个时代，每3分钟将会有4个中立贸易商队来访，每个中立商队从7种可选奖励中随机选择1种到访，其奖励的质量跟研发的时代有关",
 
     "木制攻城器械": "木制攻城器械<br>Siege Carpentry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>攻城部队获得建筑强化能力，在10秒内近战护甲+20，火焰护甲+5",
     "苏丹的马穆鲁克": "苏丹的马穆鲁克<br>Sultan's Mamluks<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵在击杀敌人后10秒内攻击力+25%、移动速度+20%",
