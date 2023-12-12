@@ -387,7 +387,7 @@ let ayanami = {
     "日本渔船加成": "日本渔船加成<br>渔船两倍生命值，+2远程护甲，效率在黑暗、封建、城堡、帝王时代增加5%/10%/15%/20%",
     "日本便宜资源点": "日本便宜资源点<br>磨坊、伐木场和矿场便宜50%",
     "日本快速步兵": "日本快速步兵<br>从封建时代开始步兵攻击速度+33%",
-    "日本骑射手": "日本骑射手<br>骑射手对射手部队+2伤害",
+    "日本骑射手": "日本骑射手<br>骑射手对射手部队(除掷矛手外)+2伤害",
     "日本团队加成": "日本团队加成<br>战舰视野+50%",
 
     "蒙古骑射攻速": "蒙古骑射攻速<br>骑射手攻击速度+25%",
@@ -618,7 +618,7 @@ let ayanami = {
 
     "印加羊驼加成": "印加羊驼加成<br>开始多一只羊驼",
     "印加武装村民": "印加武装村民<br>城堡时代开始，铁匠铺的步兵科技能升级村民的攻防",
-    "印加步兵降价": "印加步兵降价<br>步兵单位在每个时代减少15%/20%/25%/30%食物成本",
+    "印加步兵降价": "印加步兵降价<br>步兵单位在每个时代减少10%/15%/20%/25%食物成本",
     "印加房子人口": "印加房子人口<br>每个房子能支持10人口",
     "印加石头降价": "印加石头降价<br>建筑便宜15%石头",
     "印加团队加成": "印加团队加成<br>团队成员获得1只羊驼",
@@ -670,12 +670,12 @@ let ayanami = {
 
     "格鲁吉亚团队加成": "格鲁吉亚团队加成<br>修理建筑消耗资源量-25%",
 
-    "亚美尼亚骡车开局": "亚美尼亚骡车开局<br>骡车成本-25%，骡车科技效果+25%",
+    "亚美尼亚骡车开局": "亚美尼亚骡车开局<br>骡车成本-25%，骡车科技效果+40%",
     "亚美尼亚强化教堂": "亚美尼亚强化教堂<br>第一个建造的强化教堂会提供1个免费圣物",
     "亚美尼亚军营部队": "亚美尼亚军营部队<br>军营部队(剑士除外)在早一个时代可用",
     "亚美尼亚箭船": "亚美尼亚箭船<br>箭船和德罗蒙战舰发射子弹数+1",
     "亚美尼亚团队加成": "亚美尼亚团队加成<br>步兵+2视野",
-    "奇里乞亚舰队": "奇里乞亚舰队<br>Cilician Fleet<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>爆破船攻击范围+33%，箭船和德莱蒙战舰+1射程",
+    "奇里乞亚舰队": "奇里乞亚舰队<br>Cilician Fleet<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>爆破船攻击范围+20%，箭船和德莱蒙战舰+1射程",
     "费雷特斯": "费雷特斯<br>Fereters<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>550 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45 <br>除长枪兵系外的步兵生命值+30，牧师战士恢复速度+100%",
 }
 
