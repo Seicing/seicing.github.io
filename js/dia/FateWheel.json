@@ -911,6 +911,13 @@
     },
     {
         "branch": "branch0",
+        "name": "文",
+        "face": "Ven0SinisterSmile",
+        "string": "你得好好学习一下怎么温柔对待女孩子",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
         "name": "辩",
         "face": "ByinnHappy",
         "string": "哈哈",
@@ -1018,6 +1025,13 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
+        "string": "西景皇帝……被西景的大家所认定的，足以成为西景的守护者的最强之人",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing0Default",
         "string": "……这世界上厉害的人多得去了，就算轮得到我，我也不想当",
         "special": "dia1"
     },
@@ -1025,7 +1039,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
-        "string": "太麻烦了",
+        "string": "要承担的东西太多了，太麻烦了",
         "special": "dia1"
     },
     {
@@ -1375,7 +1389,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
-        "string": "还有由你这个老处男说这句话，真令人不爽啊",
+        "string": "还有由你这个老单身说这句话，真令人不爽啊",
         "special": "dia1"
     },
     {
@@ -1858,35 +1872,35 @@
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "辩想要继续逃跑，但是踩中了地雷发生了爆炸，带着世清稍稍往后撤退",
+        "string": "辩想要继续逃跑，但是继续被源内的炮弹击中，带着世清稍稍往后撤退",
         "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "？？？",
+        "face": "GennaiDefault",
+        "string": "就算是西景帝国的皇帝，想要强行突破这里是不现实的",
+        "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "辩",
         "face": "ByinnAngry",
-        "string": "畜生！",
+        "string": "攻击和声音从四面八方而来……",
         "special": "dia2"
     },
     {
         "branch": "branch0",
-        "name": "？？？",
-        "face": "GennaiDefault",
-        "string": "老夫不像暗杀王那样近战能力出色，更擅长让猎物一步一步踏入准备好的圈套之中",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "？？？",
-        "face": "GennaiDefault",
-        "string": "就算是西景帝国的皇帝，也不能强行从这片地雷阵中突破出去吧",
+        "name": "辩",
+        "face": "ByinnAngry",
+        "string": "不行……好好冷静下来",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "",
         "face": "",
-        "string": "说完，源内从那个方向发射了炮弹，被辩躲了过去",
+        "string": "源内继续发射炮弹，被辩躲了过去",
         "special": "dia3"
     },
     {
@@ -1984,7 +1998,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
-        "string": "原来如此，控制傀儡从另一边发动狙击，误导我们的判断吗？",
+        "string": "原来如此，使用自己身体作为引导，控制傀儡从另一边发动狙击，误导我们的判断吗？",
         "special": "dia1"
     },
     {
@@ -2502,7 +2516,7 @@
         "branch": "branch0",
         "name": "暗杀王",
         "face": "SanyogitaWrySmile",
-        "string": "来吧，且让我看看我这个凡人在你面前可以做到什么程度吧",
+        "string": "来吧，且让我看看我这个凡人在“神明”面前可以做到什么程度吧",
         "special": "dia2"
     },
     {
