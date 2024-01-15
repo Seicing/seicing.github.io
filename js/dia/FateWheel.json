@@ -717,14 +717,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
-        "string": "那个大哥使用的是权现，对付这些小怪物不在话下，但是我们不可能就这样走过去的",
+        "string": "使用<span id='金'>权现</span>的人不可能有危险，但是，就这样看着路过是不可能的",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
-        "string": "我们去帮一把",
+        "string": "去帮一把",
         "special": "dia1"
     },
     {
@@ -752,7 +752,7 @@
         "branch": "branch0",
         "name": "辩",
         "face": "ByinnDefault",
-        "string": "谢谢你们的帮助 ",
+        "string": "谢谢你们的帮助",
         "special": "dia2"
     },
     {
@@ -766,7 +766,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing0Default",
-        "string": "要一起走吗？这条路是通往神宫的，看起来我们有共同的目的地",
+        "string": "要互相照应吗？这条路是通往神宫的，看起来我们有共同的目的地",
         "special": "dia1"
     },
     {
@@ -871,14 +871,14 @@
         "branch": "branch0",
         "name": "辩",
         "face": "ByinnDefault",
-        "string": "不仅会使用跟我一样的“真武大帝”，而且，这把剑，是“月下美人”，没错吧",
+        "string": "不仅会使用跟我一样的臂铠型权现<span id='金'>真武大帝</span>，而且，这把剑，是<span id='金'>月下美人</span>，没错吧",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "辩",
         "face": "ByinnDefault",
-        "string": "真的是有天赋",
+        "string": "这种纯粹的风元素和斩击组合起来的权现非常难以驱动，真的是很有天赋",
         "special": "dia2"
     },
     {
@@ -1060,7 +1060,7 @@
         "branch": "branch0",
         "name": "辩",
         "face": "ByinnDefault",
-        "string": "嗯，我们继续走吧 ",
+        "string": "嗯，我们继续走吧",
         "special": "dia2"
     },
     {
@@ -1088,7 +1088,7 @@
         "branch": "branch0",
         "name": "春莲",
         "face": "ChunlenSmile",
-        "string": "我叫春莲，是皇帝阁下的侍女，今天我们是来祭奠公墓的",
+        "string": "我叫春莲，是这位皇帝阁下的侍女，今天我们是来祭奠公墓的",
         "special": "dia2"
     },
     {
@@ -1627,7 +1627,7 @@
         "branch": "branch0",
         "name": "春莲",
         "face": "ChunlenHate",
-        "string": "20年前，为了不让他儿子被“结社”知道，我的姐姐被他杀死并伪装成意外死亡",
+        "string": "20年前，为了不让他儿子被<span id='金'>结社</span>知道，我的姐姐被他杀死并伪装成意外死亡",
         "special": "dia2"
     },
     {
@@ -1648,7 +1648,7 @@
         "branch": "branch0",
         "name": "春莲",
         "face": "ChunlenHate",
-        "string": "作为那家伙的侍女，我成为了可以被“结社”利用的对象……在他们的协助下，我一步一步地走近了真相",
+        "string": "作为那家伙的侍女，我成为了可以被结社利用的对象……在他们的协助下，我一步一步地走近了真相",
         "special": "dia2"
     },
     {
@@ -2075,7 +2075,7 @@
         "branch": "branch0",
         "name": "？？？",
         "face": "GennaiDefault",
-        "string": "没办法，这两个人配合起来我等两个要取胜的几率太低了，老夫夺取了皇帝的肉体，就算“继承者”跑掉了，接下来也方便继续行动",
+        "string": "没办法，这两个人配合起来我等两个要取胜的几率太低了，老夫夺取了皇帝的肉体，就算<span id='金'>继承者</span>跑掉了，接下来也方便继续行动",
         "special": "dia2"
     },
     {
@@ -2516,7 +2516,7 @@
         "branch": "branch0",
         "name": "暗杀王",
         "face": "SanyogitaWrySmile",
-        "string": "来吧，且让我看看我这个凡人在“神明”面前可以做到什么程度吧",
+        "string": "来吧，且让我看看我这个凡人在<span id='金'>神明</span>面前可以做到什么程度吧",
         "special": "dia2"
     },
     {
