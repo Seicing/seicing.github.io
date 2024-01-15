@@ -24,21 +24,14 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "IrisRelax",
-        "string": "呼……好累啊",
-        "special": "dia2"
-    },
-    {
-        "branch": "branch0",
-        "name": "伊丽丝",
-        "face": "IrisDepressed",
-        "string": "希望夏修伦他们也能安全逃出和我们汇合",
+        "string": "呼……好累啊，要在这里稍微休息一下吗？",
         "special": "dia2"
     },
     {
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Default",
-        "string": "相信他们吧",
+        "string": "嗯……暂时安全了，在这里休息一下也无妨",
         "special": "dia1"
     },
     {
@@ -297,21 +290,14 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Default",
-        "string": "我会帮助你找到他的",
-        "special": "dia1"
-    },
-    {
-        "branch": "branch0",
-        "name": "世清",
-        "face": "Seicing2Default",
-        "string": "这个戒指这么重要，我把它还给你",
+        "string": "倒是提醒了我，这个戒指这么重要，可不能再拿在我手里了，给你",
         "special": "dia1"
     },
     {
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "IrisDefault",
-        "string": "嗯……谢谢你",
+        "string": "啊？啊……嗯……谢谢你",
         "special": "dia2"
     },
     {
@@ -478,6 +464,104 @@
     {
         "branch": "branch0",
         "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "……你接下来要去哪里呢？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "在这里逃掉之后，我们之间就没有任何共同利益促使我们一起行动了吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCE",
+        "string": "抱歉……这个大概跟我没有关系吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "……要继续利用我吗？",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "我会继续帮你找到伊安",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisSurprise",
+        "string": "啊？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisHappy",
+        "string": "真……真的吗？",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "嗯",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2CloseEye",
+        "string": "我也无处可去，权当这是我的修炼吧",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCERF",
+        "string": "谢……谢谢",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisDepressedCERF",
+        "string": "我……很内疚",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "找到伊安之后我会好好向他抱怨一下的",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "Seicing2Default",
+        "string": "瞒着别人可不好，希望在接下来的旅途里……不要再对我有所隐瞒",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
+        "face": "IrisShy",
+        "string": "当然！",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "伊丽丝",
         "face": "IrisDefault",
         "string": "认真一想，我的运气还真好啊",
         "special": "dia2"
@@ -514,7 +598,7 @@
         "branch": "branch0",
         "name": "伊丽丝",
         "face": "IrisPanicRF",
-        "string": "啊啊最后一句作废，今天也够累了吧，早点休息吧！",
+        "string": "啊啊最后一句作废，我们得继续赶路了！不然追兵可能就会找来了！",
         "special": "dia2"
     },
     {
@@ -528,7 +612,7 @@
         "branch": "branch0",
         "name": "世清",
         "face": "Seicing2Default",
-        "string": "呃……罢了，晚安",
+        "string": "呃……罢了",
         "special": "dia1"
     }
 ]
