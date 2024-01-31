@@ -11,11 +11,11 @@ let ayanami = {
     "林业": "林业<br>Forestry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民砍倒树木的效率+100%(4击变成2击砍倒树木)",
     "双阔斧": "双阔斧<br>Double Broadax<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民收集木材效率+15%",
     "木材保存": "木材保存<br>Lumber Preservation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>村民收集木材效率+15%",
-    "横切锯": "横切锯<br>Crosscut Saw<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民收集木材效率+15%",
+    "横切锯": "横切锯<br>Crosscut Saw<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民收集木材效率+15%，木材承载量+5",
 
     "特制矿锄": "特制矿锄<br>Specialized Pick<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民收集黄金和石头效率+15%",
     "酸蒸馏": "酸蒸馏<br>Acid Distillation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>村民收集黄金和石头效率+15%",
-    "灰吹法": "灰吹法<br>Cupellation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民收集黄金和石头效率+15%",
+    "灰吹法": "灰吹法<br>Cupellation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民提交黄金量+15%",
 
     "海军射箭槽": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
     "延绳钓": "延绳钓<br>Extended Lines<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>175  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>渔船效率+20%、运载量+10",
@@ -63,7 +63,7 @@ let ayanami = {
     "化学chi": "化学<br>Chemistry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>火药单位伤害+20%<br><br>中国在开局就拥有了文明特有的化学效果加成，所以无法研究化学",
 
     "草药": "草药<br>Herbal Medicine<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>275 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>宗教部队治疗速度+60%",
-    "什一税仓库": "什一税仓库<br>Tithe Barns<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>放置在修道院的圣物每分钟提供30食物、木材和石头",
+    "什一税仓库": "什一税仓库<br>Tithe Barns<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>放置在修道院的圣物每分钟提供40食物、木材和10石头",
     "虔诚": "虔诚<br>Piety<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>325 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>45<br>宗教部队+40生命值",
 
     "熟铁块吹炼法": "熟铁块吹炼法<br>Bloomery<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>非攻城单位近战伤害+1",
@@ -185,7 +185,7 @@ let ayanami = {
     "神圣之光": "神圣之光<br>Divine Light<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>70 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>圣者祝福持续时间+10秒",
 
 
-    "漂泊城镇": "漂泊城镇<br>Wandering Town<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>冲车伤害+50%，每秒恢复2生命值",
+    "漂泊城镇": "漂泊城镇<br>Wandering Town<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>冲车伤害+25%，每秒恢复2生命值",
     "攻城人员训练": "攻城人员训练<br>Siege Crew Training<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机、轻型投石车和手推炮的架设速度和拆解速度为0",
     "精密枪械": "精密枪械<br>Fine Tuned Guns<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>手推炮攻击力+20%，对步兵附加60伤害 ",
     "钢带臂": "钢带臂<br>Banded Arms<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>扭力弩炮攻击范围+0.5格",
@@ -222,11 +222,11 @@ let ayanami = {
     "林业sul": "林业<br>Forestry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>135<br>村民砍倒树木的效率+100%(4击变成2击砍倒树木)",
     "双阔斧sul": "双阔斧<br>Double Broadax<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>157<br>村民收集木材效率+15%",
     "木材保存sul": "木材保存<br>Lumber Preservation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>村民收集木材效率+15%",
-    "横切锯sul": "横切锯<br>Crosscut Saw<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>村民收集木材效率+15%",
+    "横切锯sul": "横切锯<br>Crosscut Saw<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>村民收集木材效率+15%，木材承载量+5",
 
     "特制矿锄sul": "特制矿锄<br>Specialized Pick<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>157<br>村民收集黄金和石头效率+15%",
     "酸蒸馏sul": "酸蒸馏<br>Acid Distillation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>村民收集黄金和石头效率+15%",
-    "灰吹法sul": "灰吹法<br>Cupellation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>村民收集黄金和石头效率+15%",
+    "灰吹法sul": "灰吹法<br>Cupellation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>村民提交黄金量+15%",
 
     "海军射箭槽hre": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>37 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
     "海军射箭槽sul": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
@@ -256,7 +256,7 @@ let ayanami = {
     "化学sul": "化学<br>Chemistry<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>火药单位伤害+20%",
 
     "草药sul": "草药<br>Herbal Medicine<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>宗教部队治疗速度+60%",
-    "什一税仓库sul": "什一税仓库<br>Tithe Barns<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>135<br>放置在修道院的圣物每分钟提供30食物、木材和石头",
+    "什一税仓库sul": "什一税仓库<br>Tithe Barns<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>135<br>放置在修道院的圣物每分钟提供40食物、木材和10石头",
     "虔诚sul": "虔诚<br>Piety<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>720<br>宗教部队+40生命值",
 
     "熟铁块吹炼法sul": "熟铁块吹炼法<br>Bloomery<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>210<br>非攻城单位近战伤害+1",
@@ -294,7 +294,7 @@ let ayanami = {
     "纺织品已强化": "纺织品(已强化)<br>Textiles(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>150    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>村民生命值+50，如果已研究了纺织品，则只会+25",
 
     "生存技术已强化": "生存技术(已强化)<br>Survival Techniques(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>100    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25<br>狩猎采集效率+20%，如果已经研究了生存技术，则只会狩猎采集效率+5%",
-    "独轮推车已强化": "独轮推车(已强化)<br>Wheelbarrow(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>200    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>村民运载量+7、移动速度+15%，如果已经研究了独轮推车，则只会村民运载量+2",
+    "独轮推车已强化": "独轮推车(已强化)<br>Wheelbarrow(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>200    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>村民运载量+9、移动速度+15%，如果已经研究了独轮推车，则只会村民运载量+4",
     "专业侦察兵已强化": "专业侦察兵(已强化)<br>Professional Scouts(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>175    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>侦察兵可以抬走羊和鹿的尸体、对野生动物造成的伤害+200%，如果已经研究了专业侦察兵，则只会对野生动物远程伤害+100%",
 
     "园艺学已强化": "园艺学(已强化)<br>Horticulture(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>150    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民收集食物效率+22.5%，如果已经研究了园艺学，则只会+7.5%",
@@ -304,11 +304,11 @@ let ayanami = {
     "林业已强化": "林业(已强化)<br>Forestry(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>75    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民一击就能砍倒树木",
     "双阔斧已强化": "双阔斧(已强化)<br>Double Broadax(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>150    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民收集木材效率+22.5%，如果已经研究了双阔斧，则只会+7.5%",
     "木材保存已强化": "木材保存(已强化)<br>Lumber Preservation(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>350    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>村民收集木材效率+22.5%，如果已经研究了木材保存，则只会+7.5%",
-    "横切锯已强化": "横切锯(已强化)<br>Crosscut Saw(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>750    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民收集木材效率+22.5%，如果已经研究了横切锯，则只会+7.5%",
+    "横切锯已强化": "横切锯(已强化)<br>Crosscut Saw(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>750    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民收集木材效率+22.5%，木材承载量+5，如果已经研究了横切锯，则只会+7.5%",
 
     "特制矿锄已强化": "特制矿锄(已强化)<br>Specialized Pick(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>150    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>村民收集黄金和石头效率+22.5%，如果已经研究了特制矿锄，则只会+7.5%",
     "酸蒸馏已强化": "酸蒸馏(已强化)<br>Acid Distillation(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>350    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>村民收集黄金和石头效率+22.5%，如果已经研究了酸蒸馏，则只会+7.5%",
-    "灰吹法已强化": "灰吹法(已强化)<br>Cupellation(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>750    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民收集黄金和石头效率+22.5%，如果已经研究了灰吹法，则只会+7.5%",
+    "灰吹法已强化": "灰吹法(已强化)<br>Cupellation(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>750    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75<br>村民提交黄金量+22.5%，如果已经研究了灰吹法，则只会+7.5%",
 
     "润滑轮轴已强化": "润滑轮轴(已强化)<br>Greased Axles(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>500    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城器+20%移动速度，如果已经研究了润滑轮轴，则只会+5%",
     "卷帘式触发器已强化": "卷帘式触发器(已强化)<br>Roller Shutter Triggers(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>500    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮的武器攻击范围+3格，装填时间-35%，如果已经研究了卷帘式触发器，则只会攻击范围+1格，装填时间-10%",
@@ -320,7 +320,7 @@ let ayanami = {
     "精锐军队战术已强化": "精锐军队战术(已强化)<br>Elite Army Tactics(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>1000    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>近战步兵部队+30%生命值、伤害+30%，如果已经研究了更多精锐军队战术，则只+10%生命值、伤害+10%",
 
     "草药已强化": "草药(已强化)<br>Herbal Medicine(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>275    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>宗教部队治疗速度+90%",
-    "什一税仓库已强化": "什一税仓库(已强化)<br>Tithe Barns(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>500    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>放置在修道院的圣物每分钟提供45食物、木材和石头，如果已研究了什一税仓库，则只提供15食物、木材和石头",
+    "什一税仓库已强化": "什一税仓库(已强化)<br>Tithe Barns(Improved)<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>500    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>放置在修道院的圣物每分钟提供60食物、木材和15石头，如果已研究了什一税仓库，则只提供20食物、木材和5石头",
     "虔诚已强化": "虔诚(已强化)<br>Piety(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>325 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>45<br>宗教部队+60生命值，如果已经研究了虔诚，则+20生命值",
 
     "军事学院已强化": "军事学院(已强化)<br>Siege Engineering(Improved)<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>350    <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>兵营、铁匠铺、马厩、攻城武器厂、码头单位生产速度提升53%，如果已经研究了军事学院，则只提升20%",
@@ -347,7 +347,7 @@ let ayanami = {
     "恐怖之云": "恐怖之云<br>Cloud of Terror<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>手推炮造成0.56格范围伤害(衰减率为100%/66%/33%)",
     "龙之咆哮": "龙之咆哮<br>Roar of the Dragon<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>长矛兵和骑手获得火长矛冲锋",
     "军机处": "军机处<br>Military Affairs Bureau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官可以监督大型箭塔和哨站，使得它们受到的伤害-35%",
-    "万弩箭": "万弩箭<br>10000 Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>诸葛弩和弩手发射额外的箭矢",
+    "万弩箭": "万弩箭<br>10000 Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>诸葛弩和弩手发射额外的箭矢，弩手的额外箭矢造成40%伤害",
     "王朝守护者": "王朝守护者<br>Dynastic Protectors<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>解锁帝国卫队和元朝掠夺者",
 
 
@@ -356,12 +356,12 @@ let ayanami = {
     "黄金胸甲": "黄金胸甲<br>Golden Cuirass<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金武士生命值在30%以下时受到的伤害-20%",
     "龙鳞甲": "龙鳞甲<br>Dragon Scale Leather<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金步弓手远程护甲+3",
     "怒击": "怒击<br>Zornhau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金国土佣仆装备撕裂敌人的长戟，使用长戟伤害敌人会造成持续10秒的流血，每秒流失2生命值，任何治疗效果都会消除流血",
-    "锥状弩箭": "锥状弩箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金弩手对攻城器+10攻击力",
+    "锥状弩箭": "锥状弩箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金弩手对攻城器+20攻击力",
 
 
 
 
-    "文化偏殿发展": "文化偏殿 : 发展<br>Advancement<br>升级到下一个时代，减少40%升级时间和250/500/1500升级成本",
+    "文化偏殿发展": "文化偏殿 : 发展<br>Advancement<br>升级到下一个时代，减少20%升级时间和250/400/1350升级成本",
     "文化偏殿后勤学": "文化偏殿 : 后勤学<br>Logistics<br> 文化偏殿升级科技<br>升级到下一个时代，生成2/3/4个德尔维希并提高他们25%/30%/30%治疗效率",
     "经济偏殿发展": "经济偏殿 : 发展<br>Growth<br> 经济偏殿升级科技<br>升级到下一个时代，生成3/8/10个村民，果树丛生成额外50/100食物(帝王时代研发则是增加村民10%工作效率)",
     "经济偏殿工业": "经济偏殿 : 工业<br>Industry<br> 经济偏殿升级科技<br>升级到下一个时代，并获得300/1000/2500/2800木材",
@@ -374,7 +374,7 @@ let ayanami = {
     "苏丹的马穆鲁克": "苏丹的马穆鲁克<br>Sultan's Mamluks<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵在击杀敌人后10秒内攻击力+25%、移动速度+20%",
     "步兵支援": "步兵支援<br>Infantry Support<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>步兵使附近骆驼部队护甲+3",
 
-    "同伴装备": "同伴装备<br>Companion Equipment<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>贞德的同伴系列部队伤害和生命值+20%",
+    "同伴装备": "同伴装备<br>Companion Equipment<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>,350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>贞德本人生命值和伤害+25%，护甲+1，贞德的同伴系列部队伤害和生命值+20%，需要贞德达到Lv3才能研发",
     "圣令连队": "圣令连队<br>Ordinance Company<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>圣化建筑追加减少25%木材和黄金减免",
 
     "重装德罗蒙": "重装德罗蒙<br>Heavy Dromon<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>德罗蒙战舰发射的希腊火会遗留在场地上一段时间，并减少掌舵人冷却时间到20秒",
@@ -412,6 +412,17 @@ let ayanami = {
     "日本长枪": "日本长枪<br>Nagae Yari<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>长矛兵装备更加强大的日本长枪，攻击距离+20%，对骑兵附加伤害+20%",
     "织田战术": "织田战术<br>Oda Tactics<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>近战步兵部队+20%生命值、伤害+20%、火炬伤害+20%",
 
+
+
+    "神道教仪式": "神道教仪式<br>Shinto Rituals<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>神道教祭司生命值+40，治疗速度+60%，移动速度+15%",
+    "祗园祭": "祗园祭<br>Gion Festival<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>所有建筑视野+2，每3分钟所有经济单位会在3秒内恢复100%生命值",
+    "分灵": "分灵<br>Bunrei<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>400  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>依代最大数量+2，并在浮门马上生产2个手持依代的神道教祭司",
+    "禅宗": "禅宗<br>Zen<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>35<br>佛教僧侣每60秒生产25黄金",
+    "涅槃": "涅槃<br>Nehan<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>佛教僧侣解锁涅槃皈依，冷却时间-25%，施放时附近的盟友移速+25%",
+    "五项山地事工": "五项山地事工<br>  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>750  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>佛教寺庙每6秒向周围敌人施加僧兵经文",
+
+
+
     "日本大名城镇中心1": "日本大名城镇中心1<br>大名府邸：村民在大名府邸附近耕作效率+25%",
     "日本额外石头": "日本额外石头<br>银矿开采：村民开采金矿时额外产出20%石头",
     "日本大名城镇中心2": "日本大名城镇中心2<br>大名宫殿：村民在大名宫殿附近耕作效率+50%",
@@ -432,17 +443,17 @@ let ayanami = {
     "法兰西皇家学院": "法兰西皇家学院<br>皇家学院：科技成本-20%",
 
     "拜占庭建造石头": "拜占庭建造石头<br>野外石料：建造建筑成功后获得不同数量的石头",
-    "拜占庭水渠系统": "拜占庭水渠系统<br>水池 - 灌溉：村民根据水池的水位提高5%/10%/15%/20%/25%工作效率",
+    "拜占庭水渠系统": "拜占庭水渠系统<br>水池 - 灌溉：村民根据水池的水位提高10%/14%/18%/22%/26%工作效率",
     "拜占庭橄榄园": "拜占庭橄榄园<br>大酒庄：村民在大酒庄附近获得橄榄油效率+60%",
-    "拜占庭回血": "拜占庭回血<br>第一山的蓄水池 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续10秒",
-    "拜占庭边防部队防御": "拜占庭边防部队防御<br>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2",
+    "拜占庭回血": "拜占庭回血<br>第一山的蓄水池 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒",
+    "拜占庭边防部队防御": "拜占庭边防部队防御<br>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成",
     "拜占庭改良火炬": "拜占庭改良火炬<br>劫掠骑兵：研发劫掠骑兵科技后，侦察兵附近的部队火炬伤害+25%",
     "拜占庭海军部署": "拜占庭海军部署<br>海军部署：军事单位从运输船卸载后移动速度提高",
     "拜占庭凯旋": "拜占庭凯旋<br>帝国竞技场 - 凯旋：激活后使骑兵伤害+4，移动速度+10%，每秒恢复2生命值",
     "拜占庭商队橄榄油": "拜占庭商队橄榄油<br>文明固有加成：商队生产20%贸易量的橄榄油",
-    "拜占庭水池征兵": "拜占庭水池征兵<br>水池 - 征兵：根据水位，水池影响范围内增加20%/40%/60%/80%/100%军事单位生产率",
-    "拜占庭水池辩证法": "拜占庭水池辩证法<br>水池 - 辩证法：根据水位，水池影响范围内增加50%/100%/150%/200%/250%研究效率",
-    "拜占庭水池保护": "拜占庭水池保护<br>水池 - 保护：根据水位，水池影响范围内建筑物减少5%/10%/15%/20%/25%受到的伤害",
+    "拜占庭水池征兵": "拜占庭水池征兵<br>水池 - 征兵：根据水位，水池影响力范围内增加20%/40%/60%/80%/100%军事单位生产率",
+    "拜占庭水池辩证法": "拜占庭水池辩证法<br>水池 - 辩证法：根据水位，水池影响力范围内增加30%/60%/90%/120%/150%研究效率",
+    "拜占庭水池保护": "拜占庭水池保护<br>水池 - 保护：根据水位，水池影响力范围内建筑物减少5%/10%/15%/20%/25%受到的伤害",
 
     "雇佣长弓兵": "雇佣 5个长弓兵<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>450 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75",
     "雇佣国土佣仆": "雇佣 3个国土佣仆<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>480 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>80",
@@ -479,7 +490,7 @@ let ayanami = {
 
 
     "朱子遗训唐朝效果": "朱子遗训唐朝效果<br>盛世王朝 - 唐朝：建造地标的成本-15%",
-    "朱子遗训宋朝效果": "朱子遗训宋朝效果<br>盛世王朝 - 宋朝：建造经济建筑的成本-40%",
+    "朱子遗训宋朝效果": "朱子遗训宋朝效果<br>盛世王朝 - 宋朝：建造经济建筑的成本-30%",
     "朱子遗训元朝效果": "朱子遗训元朝效果<br>盛世王朝 - 元朝：所有单位成本-10%",
     "朱子遗训明朝效果": "朱子遗训明朝效果<br>盛世王朝 - 明朝：独特部队攻击力+15%",
     "朱子遗训朝廷命官效果": "朱子遗训朝廷命官效果<br>朝廷命官：监督提升150%效率，研发地方巡查后提高到300%",
@@ -491,7 +502,7 @@ let ayanami = {
     "江南塔免费": "江南塔免费<br>江南塔：兵营、靶场或马厩建成时可免费获得1个长矛兵、诸葛弩或骑手",
 
     "朱子遗训唐朝": "唐朝<br>Tang Dynasty<br>建造地标的成本-15%<br>解锁村庄",
-    "朱子遗训宋朝": "宋朝<br>Song Dynasty<br>建造非军事建筑的成本-15%<br>解锁谷仓",
+    "朱子遗训宋朝": "宋朝<br>Song Dynasty<br>建造非军事建筑的成本-30%<br>解锁谷仓",
     "朱子遗训元朝": "元朝<br>Yuan Dynasty<br>所有单位成本-10%<br>解锁宝塔",
     "朱子遗训明朝": "明朝<br>Ming Dynasty<br>独特部队攻击力+15%",
     "中国唐朝": "唐朝<br>Tang Dynasty<br>侦察兵视野+30%<br>解锁村庄",
@@ -520,7 +531,7 @@ let ayanami = {
     "希萨尔学院效果": "希萨尔学院效果<br>希萨尔学院：+20%食物采集效率",
     "德里免费": "德里免费<br>学术成就：科技免费",
     "德里清真寺": "德里清真寺<br>学者文化：被标记为独特建筑，在时代1就可以建造，并且造价便宜50%",
-    "穆斯林浆果丛产量": "穆斯林浆果丛产量<br>花园赏金：磨坊影响范围内浆果丛的可采集食物量+100%",
+    "穆斯林浆果丛产量": "穆斯林浆果丛产量<br>花园赏金：磨坊光环范围内浆果丛的可采集食物量+100%",
     "穆斯林村民果丛": "穆斯林村民果丛<br>花园赏金：村民采集浆果的运载量+30%",
     "手稿贸易效果": "手稿贸易效果<br>手稿贸易：研发科技后驻扎学者码头效率+30%",
     "德里木造防御": "德里木造防御<br>边界防御工事：步兵可以建造木制防御设施",
@@ -533,7 +544,7 @@ let ayanami = {
     "德里学院免费学者": "德里学院免费学者<br>学者文化：建造完毕的第一个穆斯林学塾类建筑会获得3个免费的学者",
 
     "迈因维克宫殿效果": "迈因维克宫殿效果<br>迈因维克宫殿：研究成本-40%，研究效率+40%",
-    "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br>埃尔茨巴赫宫殿：影响范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-33%",
     "城主宫殿效果": "城主宫殿效果<br>城主宫殿：效率+400%",
     "施瓦本宫殿效果": "施瓦本宫殿效果<br>地标固有加成：地标成本-20%(界面数据为结算后数据)",
     "施瓦本宫殿效果2": "施瓦本宫殿效果2<br>施瓦本宫殿：地标生产的村民成本-66%，生产速度+66%",
@@ -548,8 +559,8 @@ let ayanami = {
 
     "黄金时代阶段I": "黄金时代阶段I<br>黄金时代阶段Ⅰ：村民采集速度 +15%",
     "黄金时代阶段II": "黄金时代阶段II<br>黄金时代阶段Ⅱ：村民采集速度 +15%、研究速度 +15%",
-    "黄金时代阶段III": "黄金时代阶段III<br>黄金时代阶段Ⅲ：村民采集速度 +20%、研究速度 +20.5%、生产速度 +25%",
-    "智慧宫效果": "智慧宫效果<br>智慧宫：影响范围内火焰护甲+5",
+    "黄金时代阶段III": "黄金时代阶段III<br>黄金时代阶段Ⅲ：村民采集速度 +30%、研究速度 +20.5%、生产速度 +25%",
+    "智慧宫效果": "智慧宫效果<br>智慧宫：影响力范围内火焰护甲+5",
     "大食码头": "大食码头<br>造船厂：码头的建造成本减少50%",
     "大食手搓": "大食手搓<br>攻城专家：不需要研究攻城工程学就能建造冲车、攻城塔、扭力弩炮、轻型投石车",
     "大食野猪限制": "大食野猪限制<br>大型果园：从浆果丛采集食物的速度提高 30%，但无法从野猪处采集食物",
@@ -559,20 +570,23 @@ let ayanami = {
     "朝廷命官效果": "朝廷命官效果<br>朝廷命官：监督提升150%效率",
     "灵道效果": "灵道效果<br>灵道：影响力范围内朝代单位成本-30%",
     "天文钟楼效果": "天文钟楼效果<br>天文钟楼：生产钟楼攻城武器，生命值+50%(天文钟楼出产的攻城器不接受军事学院的加成)",
-    "中国码头": "中国码头<br>快速建造：码头工作速度加快20%",
+    "中国码头": "中国码头<br>快速建造：码头工作速度加快10%",
     "中国大型箭塔限制": "中国大型箭塔限制<br>快速建造：基础建造时间为120秒",
     "中国木栅栏限制": "中国木栅栏限制<br>快速建造：基础建造时间为2.5秒",
     "中国哨站限制": "中国哨站限制<br>快速建造：基础建造时间为40秒",
     "中国石墙限制": "中国石墙限制<br>快速建造：基础建造时间为10.5秒",
     "中国石门限制": "中国石门限制<br>快速建造：基础建造时间+50%",
     "中国石墙塔限制": "中国石墙塔限制<br>快速建造：基础建造时间是120秒",
+    "中国官员降价": "中国官员降价<br>翰林院：在此地标生产成本-30%",
+
+
     "唐朝效果": "唐朝效果<br>盛世王朝 - 唐朝：视野+30%",
     "元朝效果": "元朝效果<br>盛世王朝 - 元朝：+15%移动速度",
     "明朝效果": "明朝效果<br>盛世王朝 - 明朝：+10%生命值",
     "宋朝效果": "宋朝效果<br>盛世王朝 - 宋朝：生产速度+33%",
     "谷仓效果": "谷仓效果<br>谷仓：影响力范围内农田食物收集率+15%",
 
-    "露天矿坑建筑学": "露天矿坑建筑学<br>矿业社区：在露天矿区影响范围内建造的每间房屋和采矿场将会提升露天矿区的黄金产量，每个25%",
+    "露天矿坑建筑学": "露天矿坑建筑学<br>矿业社区：在露天矿区影响力范围内建造的每间房屋和采矿场将会提升露天矿区的黄金产量，每个25%",
     "马里贸易科研": "马里贸易科研<br>手稿贸易：升级和科技研发时间随着贸易数量的增加而减少",
     "马里房屋限制": "马里房屋限制<br>矿业社区：木材成本便宜50%，但是提供的人口数减少50%，生命值为500",
     "马里码头加速": "马里码头加速<br>登陆部队：船只接近码头时移动速度+15%，持续10秒",
@@ -620,7 +634,7 @@ let ayanami = {
     "蒙古城镇中心造价": "蒙古城镇中心造价<br>文明固有加成：不需要石头成本，而是使用900木材建造",
     "蒙古石头贸易限制": "蒙古石头贸易限制<br>伟大统治：无法交易石头，无法开采石头",
     "蒙古哨站效果": "蒙古哨站效果<br>伟大统治：哨站为骑兵和商人提供15%移动速度加成",
-    "敖包双倍": "敖包双倍<br>影响力系统：敖包影响范围内可以花费石头双倍训练部队(村民为125石头)，并加快牧场的效率",
+    "敖包双倍": "敖包双倍<br>影响力系统：敖包影响力范围内可以花费石头双倍训练部队(村民为125石头)，并加快牧场的效率",
     "蒙古掠夺": "蒙古掠夺<br>突袭赏金：点燃建筑物掠夺25食物、25黄金",
     "丝绸之路": "丝绸之路<br>丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金",
     "蒙古运输": "蒙古运输<br>强化运输：生命值+50%、移动速度+15% ",
