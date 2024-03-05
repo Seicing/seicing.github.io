@@ -100,6 +100,7 @@
     “自动生成来自蒙古帝国及其领地的各种军队”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -115,37 +116,37 @@
     <br>
     现在汗国宫殿可以生产以下部队，并且在常规的蒙古科技的基础上获得额外的来自母国的科技<br>
     <ul>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/骑士.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/骑士.html?civ=rus"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/骑士.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/骑士.html?civ=rus"
                 style="color:#0010ff">3精锐骑士</a> ：60秒
             <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/贵族铁骑的坚毅.png" width="20px">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'贵族铁骑的坚毅');" style="color:#0010ff">贵族铁骑的坚毅</a>
             <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/骑士长柄斧.png" width="20px">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'骑士长柄斧');" style="color:#0010ff">骑士长柄斧</a>
         </li>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/僧侣战士.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/僧侣战士.html?civ=rus"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/僧侣战士.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/僧侣战士.html?civ=rus"
                 style="color:#0010ff">2僧侣战士</a> ：40秒
             <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/贵族铁骑的坚毅.png" width="20px">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'贵族铁骑的坚毅');" style="color:#0010ff">贵族铁骑的坚毅</a>
         </li>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/骑射手.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/骑射手.html?civ=rus"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/骑射手.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/骑射手.html?civ=rus"
                 style="color:#0010ff">5精锐骑射手</a> ：50秒
             <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/贵族铁骑的坚毅.png" width="20px">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'贵族铁骑的坚毅');" style="color:#0010ff">贵族铁骑的坚毅</a>
         </li>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/蜂巢炮.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/蜂巢炮.html?civ=chi"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/蜂巢炮.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/蜂巢炮.html?civ=chi"
                 style="color:#0010ff">蜂巢炮</a> ：50秒
             <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/额外炮管.png" width="20px">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'额外炮管');" style="color:#0010ff">额外炮管</a>
         </li>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/皇宫卫兵.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/皇宫卫兵.html?civ=chi"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/皇宫卫兵.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/皇宫卫兵.html?civ=chi"
                 style="color:#0010ff">5精锐皇宫卫兵</a> ：50秒
             <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/身经百战.png" width="20px">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'身经百战');" style="color:#0010ff">身经百战</a>
         </li>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/蒙古突骑.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/蒙古突骑.html?civ=mon"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/蒙古突骑.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/蒙古突骑.html?civ=mon"
                 style="color:#0010ff">4精锐蒙古突骑</a> ：50秒
         </li>
-        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/回回炮.png" width="20px">3<a href="https://seicing.com/html/aoe2/unitaoe4/回回炮.html?civ=mon"
+        <li><img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/回回炮.png" width="20px"><a href="https://seicing.com/html/aoe2/unitaoe4/回回炮.html?civ=mon"
                 style="color:#0010ff">回回炮</a> ：63秒
         </li>
     </ul>
