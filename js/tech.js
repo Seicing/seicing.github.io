@@ -99,7 +99,7 @@ let ayanami = {
     "加强防御": "加强防御<br>Reinforced Defenses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>100  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>城墙、箭塔、城门生命值+40%",
     "虔诚2": "虔诚<br>Devoutness<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>100 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>受到鼓舞的村民资源采集速度+10%，建造速度+25%",
     "祝祷": "祝祷<br>Benediction<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>受到鼓舞的村民建造速度+15%",
-    "战意激昂": "战意激昂<br>Inspired Warriors<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>100 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>高级教士可以鼓舞军事单位，让他们近战护甲和远程护甲+1，伤害+15%",
+    "战意激昂": "战意激昂<br>Inspired Warriors<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>100 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>高级教士移动速度+10%，可以鼓舞军事单位，让他们近战护甲和远程护甲+1，伤害+15%",
 
     "柚木桅杆": "柚木桅杆<br>Teak Masts<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>75 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>125 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>20<br>军事船只的生命值+10%",
     "保存知识": "保存知识<br>Preservation of Knowledge<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>所有科技和升级时代成本-20%",
@@ -118,7 +118,7 @@ let ayanami = {
     "骆驼骑兵皮甲": "骆驼骑兵皮甲<br>Camel Rider Barding <br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>100 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>225 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>45<br>骆驼骑兵近战护甲+2，远程护甲+2",
     "方阵": "方阵<br>Phalanx<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>50 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>125 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>长矛兵攻击范围+100%",
     "复合弓": "复合弓<br>Composite Bows<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>150 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>350 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>步弓手装填时间-33%",
-    "新月沃土": "新月沃土<br>Fertile Crescent<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>经济建筑和房屋的木材和石头成本降低25%",
+    "新月沃土": "新月沃土<br>Fertile Crescent<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>经济建筑和房屋的木材成本降低30%，石头成本降低25%",
 
     "长管大炮": "长管大炮<br>Long Guns<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>200 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>500 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>30<br>海军加农炮伤害+15%",
     "商人公会": "商人公会<br>Merchant Guilds<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>200 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>500 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>使活跃的商人每6秒生产1黄金",
@@ -177,7 +177,7 @@ let ayanami = {
     "骑射培训": "骑射培训<br>Mounted Training<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>骑射手武器攻击范围+1，并解锁疾驰能力(8秒内+2射程并以最大的2.0移动速度突进)",
 
     "快速行军": "快速行军<br>Double Time<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>225  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>射击军获得快速行军的能力，使其移动速度+30%，持续10秒",
-    "贵族铁骑的坚毅": "贵族铁骑的坚毅<br>Boyar's Fortitude<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>罗斯骑兵生命值+25",
+    "贵族铁骑的坚毅": "贵族铁骑的坚毅<br>Boyar's Fortitude<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>罗斯骑兵生命值+25",
     "骑士长柄斧": "骑士长柄斧<br>Knight Poleaxes<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>骑士近战伤害+4",
 
     "圣人的崇拜": "圣人的崇拜<br>Saint's Veneration<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>425 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>僧侣战士生命值+100",
@@ -353,10 +353,10 @@ let ayanami = {
 
     "战马": "战马<br>War Horses<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金骑士在冲锋时受到的伤害-25%",
     "龙焰": "龙焰<br>Dragon Fire<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>镀金长矛兵的火炬造成3格范围伤害",
-    "黄金胸甲": "黄金胸甲<br>Golden Cuirass<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金武士生命值在30%以下时受到的伤害-20%",
+    "黄金胸甲": "黄金胸甲<br>Golden Cuirass<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金武士生命值在30%以下时受到的伤害-20%",
     "龙鳞甲": "龙鳞甲<br>Dragon Scale Leather<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金步弓手远程护甲+3",
-    "怒击": "怒击<br>Zornhau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金国土佣仆装备撕裂敌人的长戟，使用长戟伤害敌人会造成持续10秒的流血，每秒流失2生命值，任何治疗效果都会消除流血",
-    "锥状弩箭": "锥状弩箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金弩手对攻城器+20攻击力",
+    "怒击": "怒击<br>Zornhau<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>镀金国土佣仆装备撕裂敌人的长戟，使用长戟伤害敌人会造成持续10秒的流血，每秒流失2生命值，任何治疗效果都会消除流血",
+    "锥状弩箭": "锥状弩箭<br>Bodkin Bolts<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>镀金弩手对攻城器+20攻击力",
 
 
 
@@ -385,13 +385,13 @@ let ayanami = {
     "希腊之火炮弹": "希腊之火炮弹<br>Greek Fire Projectiles<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>配重式巨型投石机伤害+30%，发射希腊火对地面造成持续伤害",
     "努梅里": "努梅里<br>Numeri<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>被践踏的部队变得脆弱，在12秒内受到额外的15%伤害",
 
-    "东方雇佣兵合同": "东方雇佣兵合同<br>Eastern Mercenary Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>100   <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>解锁东方佣兵，依次解锁怯薛骑兵、古拉姆和箭塔象",
-    "西方雇佣兵合同": "西方雇佣兵合同<br>Western Mercenary Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>100   <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>解锁西方佣兵，依次解锁长弓兵、国土佣仆和射击军",
-    "丝绸之路雇佣兵合同": "丝绸之路雇佣兵合同<br>Silk Road Mercenary Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>100   <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>解锁丝路佣兵，依次解锁掷枪兵、骆驼骑兵和掷弹兵",
+    "东方雇佣兵合同": "东方雇佣兵合同<br>Eastern Mercenary Contract<br> 解锁东方佣兵，依次解锁怯薛骑兵、古拉姆和箭塔象",
+    "西方雇佣兵合同": "西方雇佣兵合同<br>Western Mercenary Contract<br> 解锁西方佣兵，依次解锁长弓兵、国土佣仆和射击军",
+    "丝绸之路雇佣兵合同": "丝绸之路雇佣兵合同<br>Silk Road Mercenary Contract<br> 解锁丝路佣兵，依次解锁掷枪兵、骆驼骑兵和掷弹兵",
 
     "泪滴盾牌": "泪滴盾牌<br>Teardrop Shields<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>甲胄骑兵护甲+1，边防军移动速度+15%，瓦兰吉卫队攻击速度+15%",
     "狂暴速度": "狂暴速度<br>Ferocious Speed<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>瓦兰吉卫队在激活狂战士时移动速度+30%",
-    "老练合同": "老练合同<br>Veteran Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>将佣兵升级到老练级别",
+    "老练合同": "老练合同<br>Veteran Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>将佣兵升级到老练级别",
     "精锐合同": "精锐合同<br>Elite Contract<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>将佣兵升级到精锐级别",
 
     "粮袋": "粮袋<br>Towara<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>村民承载量+3，移动速度+7%，浆果丛收集效率+25%",
@@ -525,6 +525,9 @@ let ayanami = {
     "建筑强化主动能力": "建筑强化主动能力<br>建筑强化：激活后，10秒内近战护甲+20，火焰护甲+5",
     "太傅监督": "太傅监督<br>阿塔贝格：阿塔贝格驻扎的军事设施新训练的部队生命值+20%",
 
+    "法兰西便宜大型箭塔": "法兰西便宜大型箭塔<br>大型箭塔：大型箭塔造价-10%",
+    "神罗行军演习": "神罗行军演习<br>行军演习：步兵移动速度+10%",
+
     "守护者大院效果": "守护者大院效果<br>守护者大院：步兵可以建造石头设施，石材成本-20%，石城门建造时间翻倍",
     "胜利之塔效果": "胜利之塔效果<br>胜利之塔：接近的近战和远程步兵攻击速度永久提升20%",
     "信仰穹顶建筑效果": "信仰穹顶建筑效果<br>信仰穹顶建筑：学者成本-50金",
@@ -643,7 +646,7 @@ let ayanami = {
     "奥斯曼生产加速": "奥斯曼生产加速<br>影响力系统：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升20%/20%/30%/40%",
     "伊斯坦布尔天文台效果": "伊斯坦布尔天文台效果<br>伊斯坦布尔天文台：铁匠铺、大学周围的军事生产建筑效率的影响力效果提高到100%",
     "穆罕默德帝国军械库效果": "穆罕默德帝国军械库效果<br>穆罕默德帝国军械库：免费生产，但需要6倍生产时间",
-    "军事学校免费生产": "军事学校免费生产<br>军事学校：花费4.5倍时间免费生产",
+    "军事学校免费生产": "军事学校免费生产<br>军事学校：花费5倍时间免费生产",
     "海门城堡效果": "海门城堡效果<br>海门城堡：所有大型箭塔使商人和商船的移动速度 +30% ，近战护甲和远程护甲 +8",
     "苏丹哈尼驿站贸易网络效果": "苏丹哈尼驿站贸易网络效果<br>苏丹哈尼驿站贸易网络：驻扎的商人每分钟生产28黄金",
     "奥斯曼移速船": "奥斯曼移速船<br>运输路线：贸易船和运输船的移动速度增加10%",
