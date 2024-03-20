@@ -662,7 +662,7 @@ let ayanami = {
     "骡车": "骡车<br>Mule Cart<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>20 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25<br>移动资源集合点，可以收集木材、石头、黄金和狩猎食物",
 
     "格鲁吉亚骡车开局": "格鲁吉亚骡车开局<br>以1只骡车开局",
-    "格鲁吉亚强化教堂": "格鲁吉亚强化教堂<br>强化教堂为10格半径范围内的村民提供+10%工作效率",
+    "格鲁吉亚强化教堂": "格鲁吉亚强化教堂<br>强化教堂为周围8格范围内的村民提供+10%工作效率",
     "格鲁吉亚对抗力": "格鲁吉亚对抗力<br>居高临下作战时受到的伤害额外-15%(从-25%增加到-40%)",
     "格鲁吉亚骑兵": "格鲁吉亚骑兵<br>骑兵每分钟恢复15%生命值",
     "斯万箭塔": "斯万箭塔<br>Svan Tower<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标",
