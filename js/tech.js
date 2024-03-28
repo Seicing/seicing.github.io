@@ -103,7 +103,7 @@ let ayanami = {
 
     "柚木桅杆": "柚木桅杆<br>Teak Masts<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png>75 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>125 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>20<br>军事船只的生命值+10%",
     "保存知识": "保存知识<br>Preservation of Knowledge<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>文化偏殿科技，所有科技和升级时代成本-20%",
-    "医疗中心": "医疗中心<br>Medical Centers<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>100 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>文化偏殿科技，大型箭塔可以以每秒2生命值的速度治愈附近目标",
+    "医疗中心": "医疗中心<br>Medical Centers<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>100 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>文化偏殿科技，城镇中心和大型箭塔可以以每秒2生命值的速度治愈附近目标",
     "忠诚信仰": "传教<br>Proselytization<br><img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png>150 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png>350 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png>60<br>文化偏殿科技，伊玛目可以不持有圣物单个转化敌人部队",
     "新鲜食品": "新鲜食品<br>Fresh Foodstuffs<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>经济偏殿科技，村民成本-35%",
     "农业": "农业<br>Agriculture<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>经济偏殿科技，村民在农田采集效率+15%",
@@ -385,9 +385,9 @@ let ayanami = {
     "希腊之火炮弹": "希腊之火炮弹<br>Greek Fire Projectiles<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>配重式巨型投石机伤害+30%，发射希腊火对地面造成持续伤害",
     "努梅里": "努梅里<br>Numeri<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>被践踏的部队变得脆弱，在12秒内受到额外的15%伤害",
 
-    "东方雇佣兵合同": "东方雇佣兵合同<br>Eastern Mercenary Contract<br> 解锁东方佣兵，依次解锁怯薛骑兵、古拉姆和箭塔象",
-    "西方雇佣兵合同": "西方雇佣兵合同<br>Western Mercenary Contract<br> 解锁西方佣兵，依次解锁长弓兵、国土佣仆和射击军",
-    "丝绸之路雇佣兵合同": "丝绸之路雇佣兵合同<br>Silk Road Mercenary Contract<br> 解锁丝路佣兵，依次解锁掷枪兵、骆驼骑兵和掷弹兵",
+    "东方雇佣兵合同": "东方雇佣兵合同<br>Eastern Mercenary Contract<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>10<br>解锁东方佣兵，依次解锁怯薛骑兵、古拉姆和箭塔象",
+    "西方雇佣兵合同": "西方雇佣兵合同<br>Western Mercenary Contract<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>10<br>解锁西方佣兵，依次解锁长弓兵、国土佣仆和射击军",
+    "丝绸之路雇佣兵合同": "丝绸之路雇佣兵合同<br>Silk Road Mercenary Contract<br> <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>10<br>解锁丝路佣兵，依次解锁掷枪兵、骆驼骑兵和掷弹兵",
 
     "泪滴盾牌": "泪滴盾牌<br>Teardrop Shields<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>甲胄骑兵护甲+1，边防军移动速度+15%，瓦兰吉卫队攻击速度+15%",
     "狂暴速度": "狂暴速度<br>Ferocious Speed<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>瓦兰吉卫队在激活狂战士时移动速度+30%",
@@ -527,6 +527,8 @@ let ayanami = {
 
     "法兰西便宜大型箭塔": "法兰西便宜大型箭塔<br>大型箭塔：大型箭塔造价-10%",
     "神罗行军演习": "神罗行军演习<br>行军演习：步兵移动速度+10%",
+    "龙骑士团步兵修建冲车": "龙骑士团步兵修建冲车<br>文明独特加成：建造时间为45秒",
+    "龙骑士团步兵修建攻城塔": "龙骑士团步兵修建攻城塔<br>文明独特加成：建造时间为19.5秒",
 
     "守护者大院效果": "守护者大院效果<br>守护者大院：步兵可以建造石头设施，石材成本-20%，石城门建造时间翻倍",
     "胜利之塔效果": "胜利之塔效果<br>胜利之塔：接近的近战和远程步兵攻击速度永久提升20%",
