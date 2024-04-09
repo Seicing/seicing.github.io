@@ -43,9 +43,6 @@ let ayanami = {
 
     "大型手推炮炮台": "大型手推炮炮台<br>Great Bombard Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>400 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>为此建筑添加一座大型防御手推炮炮台",
 
-    "加农炮炮台hre": "加农炮炮台<br>Cannon Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>93 <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>281 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>为此建筑添加一座防御型加农炮炮台",
-    "扭力弩炮炮台hre": "扭力弩炮炮台<br>Springald Emplacement<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>37  <img src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png>93 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为此建筑添加一座防御型扭力弩炮炮台",
-
     "润滑轮轴": "润滑轮轴<br>Greased Axles<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城器械的移动速度 +15%",
     "卷帘式触发器": "卷帘式触发器<br>Roller Shutter Triggers<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮的武器攻击范围 +2 格，攻击速度 +25%",
     "可调式横杆": "可调式横杆<br>Adjustable Crossbars<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>轻型投石车的攻击速度 +25%",
@@ -236,7 +233,6 @@ let ayanami = {
     "酸蒸馏sul": "酸蒸馏<br>Acid Distillation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>村民的黄金和石料采集速率提升 15%",
     "灰吹法sul": "灰吹法<br>Cupellation<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>黄金采集者额外存放 15% 的资源",
 
-    "海军射箭槽hre": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>37 <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>75  <img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
     "海军射箭槽sul": "海军射箭槽<br>Naval Arrowslits<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
     "延绳钓sul": "延绳钓<br>Extended Lines<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>158<br>渔船的采集速率 +20%，运载量 +10",
     "流刺网sul": "流刺网<br>Drift Nets<br><img src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>渔船的采集速率 +15%，运载量 +20，移动速度 +10%",
@@ -563,7 +559,7 @@ let ayanami = {
     "施瓦本宫殿效果2": "施瓦本宫殿效果2<br>施瓦本宫殿：地标生产的村民成本-66%，生产速度+66%",
     "亚琛教堂效果": "亚琛教堂效果<br>亚琛教堂：高级教士驻扎后可激励大范围内的单位",
     "神罗紧急修复": "神罗紧急修复<br>影响力系统：城镇中心影响力范围内可以执行紧急修理命令",
-    "神罗便宜炮台": "神罗便宜炮台<br>炮台建筑学：额外炮台便宜25%(科技界面数据为结算后数据)",
+    "神罗便宜炮台": "神罗便宜炮台<br>炮台建筑学：额外炮台便宜25%",
     "神罗哨站视野": "神罗哨站视野<br>炮台建筑学：哨站视野+25%",
     "神罗建筑防御力": "神罗建筑防御力<br>宗教狂热：远程护甲+25",
     "神罗码头": "神罗码头<br>宗教狂热：码头可供存放圣物；每个圣物能提高所有船只的攻击速度 5% (最高可累积至 25%) ",
