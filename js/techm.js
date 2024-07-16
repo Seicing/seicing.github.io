@@ -361,7 +361,7 @@ let ayanami = {
 
 
 
-    "尼德霍格": "尼德霍格<br>Nidhogg<br>召唤尼德霍格尼德霍格为你而战",
+    "尼德霍格": "尼德霍格<br>Nidhogg<br>召唤尼德霍格为你而战",
     "疾风行动": "疾风行动<br>Rampage<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>神兽训练时间-95%",
     "坚毅之血": "坚毅之血<br>Granite Blood<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>火焰巨人升级为穆斯帕尔海姆之子，生命值+40%，霜巨人生命值+40%，山岭巨人生命值+20%",
 
