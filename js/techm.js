@@ -86,7 +86,7 @@ let ayanami = {
 
 
     "盖亚森林": "盖亚森林<br>Gaia Forest<br>在指定区域种植白杨树林，每根白杨树提供200木，可以释放4次",
-    "通道": "通道<br>Channels<br>  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br> 在盖亚的草地的部队移动速度+15%",
+    "通道": "通道<br>Channels<br>  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>盖亚植被内部队移动速度+15%",
 
 
 
