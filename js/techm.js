@@ -59,7 +59,7 @@ let ayanami = {
     "狂暴": "狂暴<br>Hamask<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>12  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>狂战士每失去1%生命值，攻击速度+2.5%",
 
     "间谍": "间谍<br>Spy<br>获得所选敌方单位的视线",
-    "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br>步兵视野+3",
+    "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br>获取附近野生动物的视野",
 
 
     "矮人矿山": "矮人矿山<br>Dwarven Mine<br>在指定位置建造一个金矿，根据时代不同黄金储存量依次为500/1000/3000/6000",
