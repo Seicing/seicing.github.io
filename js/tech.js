@@ -30,7 +30,7 @@ let ayanami = {
     "炸药": "炸药<br>Explosives<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>燃烧船伤害 +40%",
     "舰载炮": "舰载炮<br>Mounted Guns<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>用加农炮取代扭力弩炮，可实现更远的射程和更大的伤害",
 
-    "沸油": "沸油<br>Boiling Oil<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>箭塔和大型箭塔能对附近敌方单位倾倒沸油，对其造成 30 伤害",
+    "沸油": "沸油<br>Boiling Oil<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>箭塔和城堡能对附近敌方单位倾倒沸油，对其造成 30 伤害",
     "射箭槽": "射箭槽<br>Arrowslits<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>25  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为此建筑添加防御型射箭槽并使驻扎单位的弓箭攻击范围 +1。只能添加一座武器炮台",
 
     "射箭槽hre": "射箭槽<br>Arrowslits<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>18  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>37 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>为此建筑添加防御型射箭槽并使驻扎单位的弓箭攻击范围 +1。只能添加一座武器炮台",
@@ -102,7 +102,7 @@ let ayanami = {
     "新鲜食品": "新鲜食品<br>Fresh Foodstuffs<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>生产村民成本 -35%",
 
     "保存知识": "保存知识<br>Preservation of Knowledge<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>25 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>文化偏殿科技，所有科技和时代进步的成本降低 -20%",
-    "医疗中心": "医疗中心<br>Medical Centers<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>文化偏殿科技，城镇中心和大型箭塔可治疗附近单位，每 1 秒恢复其 2 生命值",
+    "医疗中心": "医疗中心<br>Medical Centers<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>文化偏殿科技，城镇中心和城堡可治疗附近单位，每 1 秒恢复其 2 生命值",
     "忠诚信仰": "传教<br>Proselytization<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>文化偏殿科技，伊玛目不需持有圣物便可招降单位，但只能以一个单位为目标",
 
     "新月沃土": "新月沃土<br>Fertile Crescent<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>经济偏殿科技，将经济型建筑和房屋的成本降低 30%",
@@ -150,11 +150,11 @@ let ayanami = {
     "温嘉德掠夺者": "温嘉德掠夺者<br>Wynguard Raiders<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>生产骑士和骑手各3个",
 
     "身经百战": "身经百战<br>Battle Hardened<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>皇宫卫兵的生命值 +30",
-    "霹雳弹": "霹雳弹<br>Thunderclap Bombs<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>战船发动蜂巢炮攻击",
+    "霹雳弹": "霹雳弹<br>Thunderclap Bombs<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>战船发动一窝蜂攻击",
     "科举制": "科举制<br>Imperial Examination <br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>将朝廷命官的最大携带黄金数量从 +40 提升至 +80",
     "额外材料": "额外材料<br>Extra Materials<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/石.png'>75  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>石墙塔和哨站会修理附近受损的石墙。一次修理一段石墙，每秒修理 20 生命值	",
     "装填训练": "装填训练<br>Reload Drills<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>手推炮的攻击速度 +33%",
-    "加装炮管": "加装炮管<br>Additional Barrels<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>蜂巢炮获得 1 额外的火箭",
+    "加装炮管": "加装炮管<br>Additional Barrels<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>一窝蜂获得 1 额外的火箭",
     "火工技术": "火工技术<br>Pyrotechnics<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>手铳的攻击范围 +1.5",
     "古代技术": "古代技术<br>Ancient Techniques<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>每达到一个王朝时村民的采集速率 +4%",
 
@@ -245,7 +245,7 @@ let ayanami = {
     "旋转加农炮sul": "旋转加农炮<br>Swivel Cannon<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>540<br>扭力弩炮船获得了一门额外的加农炮，可以 360 度射击",
     "炸药sul": "炸药<br>Explosives<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>540<br>燃烧船伤害 +40%",
 
-    "沸油sul": "沸油<br>Boiling Oil<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>450<br>箭塔和大型箭塔能对附近敌方单位倾倒沸油，对其造成 30 伤害",
+    "沸油sul": "沸油<br>Boiling Oil<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>450<br>箭塔和城堡能对附近敌方单位倾倒沸油，对其造成 30 伤害",
 
     "润滑轮轴sul": "润滑轮轴<br>Greased Axles<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>攻城器+15%移动速度",
     "卷帘式触发器sul": "卷帘式触发器<br>Roller Shutter Triggers<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>900<br>扭力弩炮的武器攻击范围 +2 格，攻击速度 +25%",
@@ -287,8 +287,8 @@ let ayanami = {
     "急行军sul": "急行军<br>Forced March<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>步兵单位获得急行军能力。 激活后，步兵移动速度 +100%，持续 10 秒，但在造成伤害时会中断效果",
     "装甲野兽sul": "装甲野兽<br>Armored Beasts<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>赋予战象 +25% 生命值和 +4 远程护甲",
     "攻城战象sul": "象轿兵<br>Howdahs<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>1080<br>升级箭塔象，让精锐弩手代替弓箭手成为骑兵。箭塔象获得 +30% 生命值和 +4 远程护甲",
-    "村庄要塞sul": "村庄要塞<br>Village Fortresses<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>360<br>大型箭塔的作用如同城镇中心，包括单位生产、人口容量及科技",
-    "缓燃防御sul": "缓燃防御<br>Slow-Burning Defenses<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>石墙塔、大型箭塔和哨站的火焰护甲 +10",
+    "村庄要塞sul": "村庄要塞<br>Village Fortresses<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>360<br>城堡的作用如同城镇中心，包括单位生产、人口容量及科技",
+    "缓燃防御sul": "缓燃防御<br>Slow-Burning Defenses<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>石墙塔、城堡和哨站的火焰护甲 +10",
     "强化地基sul": "强化地基<br>Reinforced Foundations<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>125<br>为了获得保护，村民和步兵可以驻扎在房屋内。房屋获得驻军弓箭和 +50% 生命值",
     "宁静之地sul": "宁静之地<br>Tranquil Venue<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>225<br>清真寺可以使脱离战斗的单位每秒回复 +4 生命值",
     "瞭望塔sul": "瞭望塔<br>Lookout Towers<br><img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>300<br>哨站的视野范围增加 50%，武器攻击范围增加 +1",
@@ -350,7 +350,7 @@ let ayanami = {
 
     "恐怖之云": "恐怖之云<br>Cloud of Terror<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>增加手推炮的范围伤害(0.5格范围伤害，衰减率为100%/50%/25%)",
     "龙之咆哮": "龙之咆哮<br>Roar of the Dragon<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>长矛兵和骑手在冲锋时拥有火长矛",
-    "枢密院": "枢密院<br>Military Affairs Bureau<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官现在可以监督大型箭塔和哨站，使它们所受伤害降低 35%",
+    "枢密院": "枢密院<br>Military Affairs Bureau<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>45<br>朝廷命官现在可以监督城堡和哨站，使它们所受伤害降低 35%",
     "万弩箭": "万弩箭<br>10000 Bolts<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>诸葛弩手和弩手可额外射出一支弩箭。对于弩手而言，这支额外弩箭相当于之前弩箭的 40% 效果",
     "王朝守护者": "王朝守护者<br>Dynastic Protectors<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>90<br>允许生产独特的骑兵单位、帝国卫队和元朝掠夺者",
 
@@ -472,7 +472,7 @@ let ayanami = {
     "雇佣掷弹兵": "雇佣 2个掷弹兵<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>75",
 
     "雇佣加农炮": "雇佣 1个皇家加农炮<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>900 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>80",
-    "雇佣蜂巢炮": "雇佣 1个蜂巢炮<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>600 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40",
+    "雇佣一窝蜂": "雇佣 1个一窝蜂<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>600 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40",
     "雇佣回回炮": "雇佣 1个回回炮<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>63",
 
     "贞德建造效率": "贞德建造效率<br>建造王国：贞德传授附近村民技术，使得他们建造速度+33%",
@@ -529,7 +529,7 @@ let ayanami = {
     "结构强化主动能力": "结构强化主动能力<br>结构强化：激活后，10秒内近战护甲+20，火焰护甲+5",
     "太傅监督": "太傅监督<br>阿塔贝格：阿塔贝格驻扎的军事设施新训练的部队生命值+20%",
 
-    "法兰西便宜大型箭塔": "法兰西便宜大型箭塔<br>大型箭塔：大型箭塔造价-10%",
+    "法兰西便宜城堡": "法兰西便宜城堡<br>城堡：城堡造价-10%",
     "神罗行军演习": "神罗行军演习<br>行军演习：步兵在黑暗时代移动速度+5%，在封建时代之后移动速度+10%",
     "龙骑士团步兵修建冲车": "龙骑士团步兵修建冲车<br>龙骑士团：轻型冲车的战场建造时间为45秒",
     "龙骑士团步兵修建攻城塔": "龙骑士团步兵修建攻城塔<br>龙骑士团：攻城塔的战场建造时间为19.5秒",
@@ -579,10 +579,10 @@ let ayanami = {
 
     "中国加速建造": "中国加速建造<br>快速建造：建造速度+100%",
     "朝廷命官效果": "朝廷命官效果<br>朝廷命官：监督提升150%效率",
-    "灵道效果": "灵道效果<br>灵道：影响力范围内朝代单位成本-30%",
+    "皇陵效果": "皇陵效果<br>皇陵：影响力范围内朝代单位成本-30%",
     "天文钟楼效果": "天文钟楼效果<br>天文钟楼：生产钟楼攻城武器，生命值+50%(天文钟楼出产的攻城器不接受军事学院的加成)",
     "中国码头": "中国码头<br>快速建造：码头工作速度加快10%",
-    "中国大型箭塔限制": "中国大型箭塔限制<br>快速建造：基础建造时间为120秒",
+    "中国城堡限制": "中国城堡限制<br>快速建造：基础建造时间为120秒",
     "中国木栅栏限制": "中国木栅栏限制<br>快速建造：基础建造时间为2.5秒",
     "中国哨站限制": "中国哨站限制<br>快速建造：基础建造时间为40秒",
     "中国石墙限制": "中国石墙限制<br>快速建造：基础建造时间为10.5秒",
@@ -605,11 +605,11 @@ let ayanami = {
     "收费哨站效果": "收费哨站效果<br>收费哨站：最多40%，每路过一个收费哨站，商人可以额外立即获得8%的交易黄金",
     "马里运输船驻扎": "马里运输船驻扎<br>登陆部队：运输船每驻扎1个单位就获得1个标枪武器(攻击力7、发射间隔时间2.62秒、射程6.50)",
     "马里攻城节庆": "马里攻城节庆<br>攻城节庆：激活后60秒内火炬伤害和攻城伤害+50%",
-    "马里金鱼": "马里金鱼<br>【待补充】：马里渔船可获得收获食物量10%的黄金",
+    "马里金鱼": "马里金鱼<br>鱼类加工：马里渔船可获得收获食物量10%的黄金",
 
     "城堡网络效果": "城堡网络效果<br>城堡网络：靠近影响力范围的敌人会触发城堡网络加成",
     "英国二重射箭槽": "英国二重射箭槽<br>防御城镇：拥有2个初始射箭槽",
-    "英国城堡动员兵": "英国城堡动员兵<br>大型箭塔生产：可以在大型箭塔生产所有作战部队",
+    "英国城堡动员兵": "英国城堡动员兵<br>城堡生产：可以在城堡生产所有作战部队",
     "英国便宜农田": "英国便宜农田<br>农业岛屿：农田便宜50%",
     "英国农田影响力": "英国农田影响力<br>影响力系统：磨坊影响力范围内提升15%/20%/25%/30%农田食物收集率(根据时代变化)",
     "英国便宜船只": "英国便宜船只<br>造船工：船只造价-10%",
@@ -629,7 +629,7 @@ let ayanami = {
     "法国城镇中心效率": "法国城镇中心效率<br>大陆经济：城镇中心效率根据时代+15%、+15%、+20%、+25%",
     "法国便宜资源点": "法国便宜资源点<br>大陆经济：资源存放建筑的木材消耗减少25",
     "法国便宜经济科技": "法国便宜经济科技<br>大陆经济：经济科技研究成本减少30%",
-    "法国城堡影响力": "法国城堡影响力<br>影响力系统：大型箭塔影响力范围内生产成本-20%",
+    "法国城堡影响力": "法国城堡影响力<br>影响力系统：城堡影响力范围内生产成本-20%",
     "法国免费铁匠": "法国免费铁匠<br>铁匠的恩赐：近战伤害科技免费研究",
     "法国趸船护甲": "法国趸船护甲<br>铁匠的恩赐：趸船远程护甲+1",
     "法国资源商队": "法国资源商队<br>贸易经济：商人可以将任何资源送回市场(石头除外)",
@@ -656,7 +656,7 @@ let ayanami = {
     "伊斯坦布尔天文台效果": "伊斯坦布尔天文台效果<br>伊斯坦布尔天文台：铁匠铺、大学周围的军事生产建筑效率的影响力效果提高到100%",
     "穆罕默德帝国军械库效果": "穆罕默德帝国军械库效果<br>穆罕默德帝国军械库：免费生产，但需要6倍生产时间",
     "军事学校免费生产": "军事学校免费生产<br>军事学校：花费5倍时间免费生产",
-    "海门城堡效果": "海门城堡效果<br>海门城堡：所有大型箭塔使商人和商船的移动速度 +30% ，近战护甲和远程护甲 +8",
+    "海门城堡效果": "海门城堡效果<br>海门城堡：所有城堡使商人和商船的移动速度 +30% ，近战护甲和远程护甲 +8",
     "苏丹哈尼驿站贸易网络效果": "苏丹哈尼驿站贸易网络效果<br>苏丹哈尼驿站贸易网络：驻扎的商人每分钟生产28黄金",
     "奥斯曼移速船": "奥斯曼移速船<br>运输路线：贸易船和运输船的移动速度增加10%",
 
