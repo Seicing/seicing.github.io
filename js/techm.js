@@ -44,14 +44,14 @@ let ayanami = {
     "虎魂": "虎魂<br>Tiger Spirit<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30 <br>白虎+20%生命值和移动速度",
 
 
-    "繁荣": "繁荣<br>Prosperity<br>50秒内提升采金效率80%",
+    "繁荣": "繁荣<br>Prosperity<br>选中任意位置，让你所有的村民和贸易商队更快地采集黄金",
     "尼罗河洪水": "尼罗河洪水<br>Flood of the Nile<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动产生1食物",
 
-    "雨": "雨<br>Rain<br>埃及劳工耕作速度+300%， 盟友和敌人耕作速度+200%",
+    "雨": "雨<br>Rain<br>选中任意位置，让地图上的所有村民更快地从农田采集资源。你的村民采集的速度最快",
     "犀牛皮": "犀牛皮<br>Skin of the Rhino<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30 <br>埃及劳工近战脆弱率和远程脆弱率-30%",
 
 
-    "全视": "全视<br>Vision<br>20秒内驱散指定地方大面积的战争迷雾",
+    "全视": "全视<br>Vision<br>选中要暂时显示的地图区域",
     "千里眼": "千里眼<br>Clairvoyance<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50 <br>获得额外施放全视神力的次数，且不再需要消耗恩惠，冷却时间-50%",
 
 
@@ -239,20 +239,20 @@ let ayanami = {
     "野兽杀手": "野兽杀手<br>Beast Slayer<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125  <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>英雄部队对神兽部队伤害加成率+200%",
 
 
-    "日蚀": "日蚀<br>Eclipse<br>1分钟内阻挡其他神力，并使所有神兽攻击力+50%，移动速度+20%",
+    "日蚀": "日蚀<br>Eclipse<br>选中地图上的任意位置，把白天变成黑夜，提高你的神话单位的能力，并加快你的纪念碑生成恩惠的速度",
     "圣猫": "圣猫<br>Sacred Cats<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>55 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>农场收集效率+5%，其他食物采集效率+10%",
     "乌普奥特的平头斧": "乌普奥特的平头斧<br>Adze of Wepwawet<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>埃及劳工一击砍倒树木，树木收集效率+10%",
     "羊头狮身": "羊头狮身<br>Criosphinx<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>斯芬克斯升级为羊头狮身，生命值+20%，近战伤害+20%，攻城伤害+50%",
     "鹰头狮身": "鹰头狮身<br>Hieracosphinx<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>5 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>羊头狮身升级为鹰头狮身，移动速度+20%，近战伤害+20%，攻城伤害+50%",
 
 
-    "群蛇乱舞": "群蛇乱舞<br>Plague of Serpents<br>在陆地和水中使用，召唤9只巨蟒或海蛇",
+    "群蛇乱舞": "群蛇乱舞<br>Plague of Serpents<br>在地图上选中一个位置，那里会有危险的蛇从地面或海里冒出来，保护这个区域免受敌人的攻击",
     "阿努比斯之足": "阿努比斯之足<br>Feet of the Jackal<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>阿努拜升级为守护者阿努拜，近战伤害+20%，生命值+40%，特殊攻击范围+3 ",
     "蛇矛": "蛇矛<br>Serpent Spear<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>长矛兵会造成持续6秒的0.13持续神圣伤害",
     "大墓地": "大墓地<br>Necropolis<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>纪念碑+25%恩惠生成效率",
 
 
-    "蝗虫群": "蝗虫群<br>Locust Swarm<br>召唤蝗虫席卷敌方村民、捕鱼船和农田",
+    "蝗虫群": "蝗虫群<br>Locust Swarm<br>召唤一群蝗虫来攻击敌方村民、农田、捕鱼船和牲畜",
     "沙漠巡警": "沙漠巡警<br>Medjay<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>雇佣兵部队持续时间+30秒",
     "日炙泥墙": "日炙泥墙<br>Sundried Mudbrick<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>建筑物生命值+10%，黄金成本-15%，建造时间-25%",
     "鳄鱼之城": "鳄鱼之城<br>Crocodopolis<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>升级佩苏卓斯为拉的佩苏卓斯，射程+6，视野+6",
@@ -261,34 +261,34 @@ let ayanami = {
 
 
 
-    "祖先": "祖先<br>Ancestors<br>召集13个仆从投入战斗中，持续60秒",
+    "祖先": "祖先<br>Ancestors<br>选中一个位置，唤醒祖先的士兵或船只，让他们在短时间内再次战斗",
     "葬礼仪式": "葬礼仪式<br>Funeral Rites<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>人类士兵和英雄死亡时会返还5黄金",
     "玛特圣灵": "玛特圣灵<br>Spirit of Ma'at<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>祭司和法老的治愈速度+100%，祭司便宜30%",
     "双女神": "双女神<br>Nebty<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>祭司和法老对神兽部队伤害加成率+100%",
     "丧葬巨船": "丧葬巨船<br>Funeral Barge<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>埃及战船在死亡时有10%几率生成1个利维坦",
 
 
-    "欧西里斯之子": "欧西里斯之子<br>Son of Osiris<br>把法老升级为强大的欧西里斯之子",
+    "欧西里斯之子": "欧西里斯之子<br>Son of Osiris<br>选中你的法老，将他变成一个超级强大、挥舞着闪电的半神",
     "沙漠之风": "沙漠之风<br>Desert Wind<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>骆驼骑兵+20%移动速度、攻击力和生命值",
     "新王国": "新王国<br>New Kingdom<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>获得第二个法老",
     "阿特夫王冠": "阿特夫王冠<br>Atef Crown<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>木乃伊升级为千年木乃伊，生命值+20%，远程伤害+40%，生成的仆从持续时间翻倍",
 
 
 
-    "流星": "流星<br>Meteor<br>20秒内在指定区域随机落下10颗陨石，每颗陨石造成100近战伤害和900攻城伤害",
+    "流星": "流星<br>Meteor<br>选中敌方一个区域，用从天而降的炽热陨石进行轰炸。陨石对建筑有很强的杀伤力，对单位的破坏效果适中",
     "帝王谷": "帝王谷<br>Valley of the Kings<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>40 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>对兵营和埃及要塞赋能时，一次性生产2个部队",
     "狮神之牙": "狮神之牙<br>Tusks of Apedemak<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>战象近战伤害+10%，成本-10%，人口数-1",
     "托特之书": "托特之书<br>Book of Thoth<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>埃及劳工+10%收集效率",
 
 
-    "流沙": "流沙<br>Shifting Sands<br>激活后，将指定位置的部队传送到其他位置",
+    "流沙": "流沙<br>Shifting Sands<br>选中你自己的或盟友的单位，然后选中你想传送他们的位置",
     "扇形斧": "扇形斧<br>Scalloped Axe<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30 <br>斧战士+15%攻击力",
     "皮框护盾": "皮框护盾<br>Leather Frame Shield<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>长矛兵远程脆弱率-15%",
     "镍银子弹": "镍银子弹<br>Electrum Bullets<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>投石手+15%攻击力",
     "桔槔": "桔槔<br>Shaduf<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>农田便宜50%，建造时间-50%",
 
 
-    "城堡": "城堡<br>Citadel<br>选定的城镇中心升级为防御城堡，生命值+800，远程攻击力+5，视野+2，人口数+10，远程减伤+10%",
+    "城堡": "城堡<br>Citadel<br>选择一个属于你或盟友的城镇中心，将它变成一个强大的防御城堡",
     "骨弓": "骨弓<br>Bone Bow<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>战车弓兵+4射程",
     "烈焰投石索": "烈焰投石索<br>Slings of the Sun<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>投石手对步兵部队加成率+75%",
     "猩红绫布": "猩红绫布<br>Crimson Linen<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>神话单位恢复攻击造成伤害20%的生命值，圣甲虫还会额外增加60%的效率",
@@ -296,7 +296,7 @@ let ayanami = {
 
 
 
-    "龙卷风": "龙卷风<br>Tornado<br>生成持续20秒的龙卷风，肆虐的龙卷风随意游荡，对单位和建筑物造成伤害",
+    "龙卷风": "龙卷风<br>Tornado<br>选中附近的敌人，释放一个旋风，将他们的建筑和单位吸上天空，但注意不要挡住风的去路",
     "复仇之斧": "复仇之斧<br>Axe of Vengeance<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>斧战士对建筑物伤害加成+200%，每损失1%生命值，伤害提高1%",
     "荷鲁斯之矛": "荷鲁斯之矛<br>Spears of Horus<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>长矛兵+10%攻击力，+100%对骑兵伤害",
     "小队指挥官": "小队指挥官<br>Greatest of Fifty<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵生命值+30%，移动速度+10%",
