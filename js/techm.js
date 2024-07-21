@@ -69,7 +69,7 @@ let ayanami = {
     "闪电": "闪电<br>Bolt<br>一道从天而降的闪电可以击倒任何一个军事单位",
     "奥林匹亚世家": "奥林匹亚世家<br>Olympic Parentage<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>英雄生命值+25%，训练时间-50%",
 
-    "哨兵": "哨兵<br>Sentinel<br>在目标城镇中心召唤5个哨兵攻击范围内的所有敌人",
+    "哨兵": "哨兵<br>Sentinel<br>选中你或盟友的城镇中心、村庄中心或要塞，并用石头守护者保护它",
     "厄瑞玻斯金库": "厄瑞玻斯金库<br>Vaults of Erebus<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动生成2.5黄金",
 
     "引诱雕文": "引诱雕文<br>Lure<br>设置一个石头吸引周围的野生动物前来",
@@ -368,28 +368,28 @@ let ayanami = {
 
 
 
-    "恢复": "恢复<br>Restoration<br>8秒内持续恢复指定大范围的单位和建筑物，每秒300生命值(战斗时只有十分之一效率)",
+    "恢复": "恢复<br>Restoration<br>选中一个地点以治疗单位并修复属于你或你盟友的建筑、攻城武器和船只",
     "萨里沙长矛": "萨里沙长矛<br>Sarissa<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊步兵近战攻击+10%，近战射程+1.5",
     "宙斯盾": "宙斯盾<br>Aegis Shield<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵远程脆弱率-15%",
     "米诺斯迷宫": "米诺斯迷宫<br>Labyrinth of Minos<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>升级米诺陶变成牛头人米诺陶，移动速度+20%，生命值+30%",
-    "停火": "停火<br>Ceasefire<br>1分钟内无法战斗，也无法建造塔和要塞",
+    "停火": "停火<br>Ceasefire<br>选中地图上的任意位置，在短时间内防止每个玩家战斗，并放缓远程防御工事的建造速度",
     "全力冲锋": "全力冲锋<br>Spirited Charge<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵和半人马+10%移动速度和攻击力",
     "半人马司令": "半人马司令<br>Sylvan Lore<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>半人马升级为半人马将军，生命值+35%，普通攻击和特殊攻击射程+3",
     "飞翼信使": "飞翼信使<br>Winged Messenger<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>3 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>获得一只免费的珀伽索斯，珀伽索斯+6视野，移动速度+20%",
-    "冥界通道": "冥界通道<br>Underworld Passage<br>生成两个传送门，允许部队快速来回传送",
+    "冥界通道": "冥界通道<br>Underworld Passage<br>可让单位瞬移到另一侧的隧道",
     "太阳射线": "太阳射线<br>Sun Ray<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>远程部队+10%攻击力",
     "先知": "先知<br>Oracle<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>单位和建筑+4视野，可以看到敌方建筑的生产序列",
     "治愈圣殿": "治愈圣殿<br>Temple of Healing<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>圣殿可以治愈周边单位，每秒20",
     "倒置": "倒置<br>Anastrophe<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>希腊冲击船获得5秒冷却的近战特殊攻击",
 
 
-    "青铜": "青铜<br>Bronze<br>90秒内提高范围内所有人类单位和船只的减伤率30%",
+    "青铜": "青铜<br>Bronze<br>选中一个位置，用青铜将你的和盟友的士兵、神话单位和船只包裹起来，降低他们在战斗中的易伤值",
     "酒神节": "酒神节<br>Bacchanalia<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>所有单位生命值+5%",
     "色雷斯战马": "色雷斯战马<br>Thracian Horses<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵配备嗜血的色雷斯战马，进行攻击时恢复20%生命值",
     "冥界仪式": "冥界仪式<br>Chthonic Rites<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25<br>海德拉和海怪席拉获得2.5生命恢复能力",
 
 
-    "闪电风暴": "闪电风暴<br>Lightning Storm<br>让指定的区域落下大量闪电，杀伤敌方单位 ",
+    "闪电风暴": "闪电风暴<br>Lightning Storm<br>选中一个位置，从奥林匹斯山召唤出一场电风暴，其威力会随着时间的推移而增大。对成群的敌方单位有很强的攻击力 ",
     "滔天愤怒": "滔天愤怒<br>Monstrous Rage<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>神兽部队攻击间隔时间-25%，移动速度+15%",
     "蛇发女妖之脸": "蛇发女妖之脸<br>Face of the Gorgon<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>美杜莎升级为美杜莎女族长，远程攻击射程+5，特殊攻击充能时间-25%",
     "雅典之墙": "雅典之墙<br>Athenian Wall<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>建筑物生命值+20%，墙壁生命值+30%",
@@ -397,14 +397,14 @@ let ayanami = {
     "阿尔戈斯的庇佑": "阿尔戈斯的庇佑<br>Argive Patronage<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>40 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>要塞会周期性生成密尔米顿步兵",
 
 
-    "储藏": "储藏<br>Plenty<br>生成一个每5秒生产15食物、木材和黄金的财宝库",
+    "储藏": "储藏<br>Plenty<br>选择一个位置来建造这个巨大的地窖。只要你控制它，众神的赏金就会流入你的地窖",
     "奥林匹斯锻造厂": "奥林匹斯锻造厂<br>Forge of Olympus<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>60<br>军械库科技成本-60%",
     "塔罗斯之手": "塔罗斯之手<br>Hand of Talos<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>巨神像升级为银巨神像，生命值+25%",
     "塔罗斯之肩": "塔罗斯之肩<br>Shoulder of Talos<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>银巨神像升级为金巨神像，生命值+25%，近战脆弱率-20%",
     "奥林匹亚武器": "奥林匹亚武器<br>Olympian Weapons<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>腹弩兵、密尔米顿步兵、海神骑兵攻击力+20%，获得1.5倍对神话部队加成",
 
 
-    "瘟疫": "瘟疫<br>Pestilence<br>45秒内指定区域无法生产军事单位",
+    "瘟疫": "瘟疫<br>Pestilence<br>选中敌方城镇，使其感染瘟疫。瘟疫可以阻止建筑发射炮弹并减慢单位的生产速度",
     "福波斯的恐惧之矛": "福波斯的恐惧之矛<br>Phobos' Spear of Panic<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊步兵、民兵、希腊骑兵获得额外的1神圣伤害",
     "厄倪俄的恐怖之弓": "厄倪俄的恐怖之弓<br>Enyo's Bow of Horror<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊弓兵+10%攻击力，攻击速度+15%",
     "得摩斯的恐惧之剑": "得摩斯的恐惧之剑<br>Deimos' Sword of Dread<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>禁卫步兵+15%攻击力，并可以提前1个时代使用他们",
@@ -412,7 +412,7 @@ let ayanami = {
 
 
 
-    "诅咒": "诅咒<br>Curse<br>使得目标区域内的敌方部队变成猪人",
+    "诅咒": "诅咒<br>Curse<br>选中附近的敌方士兵，将他们的几个单位转变成猪",
     "黄金苹果": "黄金苹果<br>Golden Apples<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>75 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>村民恩惠获取效率+20%",
     "神圣之血": "神圣之血<br>Divine Blood<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>村民移动速度+20%，建造效率+15%，资源承载力+10",
     "俄耳托斯的咆哮": "俄耳托斯的咆哮<br>Roar of Orthus<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>涅墨亚狮子升级为涅墨亚之王，特殊咆哮攻击范围+100%",
@@ -421,7 +421,7 @@ let ayanami = {
 
 
 
-    "地震": "地震<br>Earthquake<br>大范围造成攻城伤害",
+    "地震": "地震<br>Earthquake<br>选中一个位置，摧毁附近的敌方建筑。地震震中造成的伤害最大",
     "堤丰之焰": "堤丰之焰<br>Flames of Typhon<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>喀迈拉升级为喀迈拉暴君，攻击力和特殊攻击力+40%，并且可以造成持续伤害",
     "瘟疫毒箭": "瘟疫毒箭<br>Shafts of Plague<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>远程单位+30%攻击力，可造成6秒的0.25持续神圣伤害",
 
