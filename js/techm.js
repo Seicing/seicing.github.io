@@ -55,14 +55,14 @@ let ayanami = {
     "千里眼": "千里眼<br>Clairvoyance<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50 <br>获得额外施放全视神力的次数，且不再需要消耗恩惠，冷却时间-50%",
 
 
-    "大狩猎": "大狩猎<br>Great Hunt<br>增加指定范围内的动物数量",
+    "大狩猎": "大狩猎<br>Great Hunt<br>选中一群野生动物，大幅增加它们的数量。如果没有野生动物，奥丁会召唤出少量动物。每个时代都会变得更强",
     "狂暴": "狂暴<br>Hamask<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>12  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>狂战士每失去1%生命值，攻击速度+2.5%",
 
     "间谍": "间谍<br>Spy<br>获得所选敌方单位的视线",
     "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25 <br>获取附近野生动物的视野",
 
 
-    "矮人矿山": "矮人矿山<br>Dwarven Mine<br>在指定位置建造一个金矿，根据时代不同黄金储存量依次为500/1000/3000/6000",
+    "矮人矿山": "矮人矿山<br>Dwarven Mine<br>负责采矿的村民会采集黄金。如果在后面几个时代召唤，这座神奇的矿山会蕴含更多黄金",
     "野猪刺矛": "野猪刺矛<br>Pig Sticker<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>1  <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40 <br>村民对动物造成5倍伤害，狩猎采集效率+20%",
 
 
@@ -303,7 +303,7 @@ let ayanami = {
 
 
 
-    "火烧森林": "火烧森林<br>Forest Fire<br>点燃指定的树林，对附近的单位和建筑物造成伤害",
+    "火烧森林": "火烧森林<br>Forest Fire<br>选中一片森林，将其烧成灰烬，破坏附近的单位和建筑",
     "祭祀日": "祭祀日<br>Disablot<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>把女武神升级到持盾女武神，攻击力+50%，治疗效率+33%",
     "雷霆之蹄": "雷霆之蹄<br>Thundering Hooves<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵和女武神移动速度和生命值+10%",
     "弗雷娅的寝宫": "弗雷娅的寝宫<br>Sessrumnir<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄生命值+15%",
@@ -311,7 +311,7 @@ let ayanami = {
 
 
 
-    "破坏地基": "破坏地基<br>Undermine<br>让指定地域产生持续14秒的地震，对墙、塔、城镇中心和要塞造成大量伤害",
+    "破坏地基": "破坏地基<br>Undermine<br>选中一条路径，沿着这条路径可以破坏敌方建筑。城墙和塔会立即倒塌，较大的防御工事也会遭到相当大的破坏",
 
     "古语诗歌": "古语诗歌<br>Rigsthula<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>20<br>建筑物科技研发效率+20%",
 
@@ -327,7 +327,7 @@ let ayanami = {
 
 
 
-    "行走树林": "行走树林<br>Walking Woods<br>使指定区域最多8棵树变成行走树林，攻击敌人",
+    "行走树林": "行走树林<br>Walking Woods<br>选中附近的一片森林，激活树木以攻击附近的敌人。活化的树木对建筑有很强的杀伤力，对付单位也有一定的威力",
     "深海之怒": "深海之怒<br>Wrath of the Deep<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>克拉肯升级为致命的深沟克拉肯，生命值+40%，能力冷却时间-25%",
     "赐环者": "赐环者<br>Ring Giver<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>首领生命值+25%，对神兽伤害加成率+100%",
     "维京人": "维京人<br>Vikings<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>突袭骑兵交战时除了获得恩惠外还能获得10黄金",
@@ -336,7 +336,7 @@ let ayanami = {
 
     "长蛇号": "长蛇号<br>Long Serpent<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>龙头战舰攻击力+20%，攻城脆弱率-20%",
 
-    "诸神黄昏": "诸神黄昏<br>Ragnarok<br>采集者和矮人变成诸神黄昏英雄",
+    "诸神黄昏": "诸神黄昏<br>Ragnarok<br>在地图上选中任意位置，将你所有的采集者和矮人永久转化为强大的诸神黄昏英雄",
     "斯雷普尼尔之子": "斯雷普尼尔之子<br>Sons of Sleipnir<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>突袭骑兵近战伤害+10%，对远程部队伤害加成率+100% ",
     "矮人螺旋钻": "矮人螺旋钻<br>Dwarven Auger<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>便携式冲车攻击力+20%，移动速度+10%，-25%训练时间",
 
@@ -344,24 +344,24 @@ let ayanami = {
     "北极飓风": "北极飓风<br>Arctic Gale<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>龙舟+20%移动速度，-30%近战脆弱率",
 
 
-    "末日寒冬": "末日寒冬<br>Fimbulwinter<br>35秒内召唤9只芬布尔冬狼袭击敌方城镇中心，同时封锁其他神力",
+    "末日寒冬": "末日寒冬<br>Fimbulwinter<br>在地图上选中任意位置，以防止敌人驻扎在建筑中，并召唤一群凶猛的狼来攻击敌方的城镇中心",
     "勇武": "勇武<br>Bravery<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>侍从战士攻击力+20%，对建筑物伤害加成率+125%",
     "狂战士暴怒": "狂战士暴怒<br>Berserkergang<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>狂战士所有攻击都能恢复伤害量35%的生命值",
 
 
-    "治疗之泉": "治疗之泉<br>Healing Spring<br>生成治愈周边部队的生命之泉，每秒恢复4生命值",
+    "治疗之泉": "治疗之泉<br>Healing Spring<br>在地图上选中一个位置，创建一个可以治疗附近所有盟友单位的泉水。泉水无法被摧毁，但可以被敌军占领",
     "洞穴巨人": "洞穴巨人<br>Hamarrtroll<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>把巨人升级到洞穴巨人，远程特殊攻击伤害+100%，伤害范围+100%",
     "领主大殿": "领主大殿<br>Hall of Thanes<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>所有步兵移动速度+10%，英雄部队额外+5%",
 
 
-    "火焰武器": "火焰武器<br>Flaming Weapons<br>60秒内提升玩家所有单位100%攻击力",
+    "火焰武器": "火焰武器<br>Flaming Weapons<br>在地图上任意选中一个位置，使你所有的人类士兵和船只的武器突然燃烧起来，短时间内增加这些武器的攻击力",
     "英灵殿召唤": "英灵殿召唤<br>Call of Valhalla<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>狂战士+15%生命值，死亡时返还1恩惠",
     "战猪阵列": "战猪阵列<br>Swine Array<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>50<br>亲随战士攻击力+10%，对骑兵伤害加成率+200%",
     "荆棘符文": "荆棘符文<br>Thurisaz Rune<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>神兽+10%移动速度，获得0.25自愈效率",
 
 
 
-    "尼德霍格": "尼德霍格<br>Nidhogg<br>召唤尼德霍格为你而战",
+    "尼德霍格": "尼德霍格<br>Nidhogg<br>选择一个位置，从地下深处召唤出强大的北欧龙",
     "疾风行动": "疾风行动<br>Rampage<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>神兽训练时间-95%",
     "坚毅之血": "坚毅之血<br>Granite Blood<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>火焰巨人升级为穆斯帕尔海姆之子，生命值+40%，霜巨人生命值+40%，山岭巨人生命值+20%",
 
