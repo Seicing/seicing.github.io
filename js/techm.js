@@ -389,7 +389,7 @@ let ayanami = {
     "冥界仪式": "冥界仪式<br>Chthonic Rites<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>25<br>海德拉和海怪席拉获得2.5生命恢复能力",
 
 
-    "闪电风暴": "闪电风暴<br>Lightning Storm<br>让指定的区域落下大量闪电，杀伤敌方单位",
+    "闪电风暴": "闪电风暴<br>Lightning Storm<br>让指定的区域落下大量闪电，杀伤敌方单位<br>每发闪电造成<img width=20px src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/hud/神圣伤害.png>150伤害",
     "滔天愤怒": "滔天愤怒<br>Monstrous Rage<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>30<br>神兽部队攻击间隔时间-25%，移动速度+15%",
     "蛇发女妖之脸": "蛇发女妖之脸<br>Face of the Gorgon<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>美杜莎升级为美杜莎女族长，远程攻击射程+5，特殊攻击充能时间-25%",
     "雅典之墙": "雅典之墙<br>Athenian Wall<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>建筑物生命值+20%，墙壁生命值+30%",
@@ -421,7 +421,7 @@ let ayanami = {
 
 
 
-    "地震": "地震<br>Earthquake<br>大范围造成攻城伤害",
+    "地震": "地震<br>Earthquake<br>大范围造成攻城伤害<br>每次地震造成<img width=20px src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/hud/攻城伤害.png>55伤害，2.0x<img width=20px src=https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoem/hud/建筑.png>",
     "堤丰之焰": "堤丰之焰<br>Flames of Typhon<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>喀迈拉升级为喀迈拉暴君，攻击力和特殊攻击力+40%，并且可以造成持续伤害",
     "瘟疫毒箭": "瘟疫毒箭<br>Shafts of Plague<br><img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/3fatcatpool/aoe4/tech/时间.png'>40<br>远程单位+30%攻击力，可造成6秒的0.25持续神圣伤害",
 
