@@ -42,7 +42,7 @@
 不过拉比巴那里的泰兰和传统意义上的泰兰是不同的，传统意义上的泰兰是使用高度贴图构建出地形，然后在这个高度贴图里标记区域调用不同的贴图形成地图<br>
 拉比巴那的泰兰是已有地形建模的前提下，使用类似传统泰兰的做法在地图上标记区域调用贴图
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215152633.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215152633.jpg">
 <br><br> 
 通常3d即时战略游戏里的地图编辑器其实就是这种泰兰地图编辑器<br>
 理论上，地图建模好了，贴图的做法也和角色模型一样，分好uv然后画上内容就可以了<br>
@@ -50,58 +50,58 @@
 所以日后制作地图就需要这种泰兰地图配合tile精细建模的模式<br>
 我们第一个问题就是如何在原来的模型上保存区域信息，想到的办法就是给地图涂上纯色
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215154453.jpg">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215154500.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215154453.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215154500.jpg">
 <br><br> 
 纯色占用的空间很小，而且因为只是保存区域信息，贴图大小可以弄得很小，因为不需要保存贴图的内容信息<br>
 传统做法里，泰兰地图会分开很多块确保优化，然后每一块只允许使用4种贴图，原因是因为传统的泰兰为了营造出过渡感，所以要保留区域里的半透明信息，而最简单直接的方法，就是调用一张图片里面RGBA这四个指标了，这四个指标量的多寡决定了某一点里面对应贴图的透明度，这在unity里面也是默认的做法<br>
 我们最开始打算“我们是像素游戏”所以不打算用这套东西，而是采用了“指定颜色”对应贴图这种理论上可以用无数张贴图的做法，像素点一一对应一种颜色，这个后面会被推翻掉
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215155512.jpg"> 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215155532.jpg">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/而无法.png">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215155512.jpg"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215155532.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/而无法.png">
 <br><br> 
 最开始的时候打算采取这种“缓冲区”的做法，在两种颜色之间自动生成一个缓冲区域，这个区域会使用对应的过渡贴图进行交叉，产生过渡感<br>
 最后因为计算朝向和内外过于复杂而放弃，使用无朝向的贴图(俗称疏密法)又显得死板，所以否决了
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215155846.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215155846.jpg">
 <br><br> 
 疏密法，实际效果很难受<br>
 所以最后采取直接用画笔刷的方法了，blender里面笔刷跟随镜头变化大小比较蛋疼，所以精确地画出tile的感觉几乎不可能<br>
 而且出现了新的问题
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215161128.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215161128.jpg">
 <br><br> 
 因为完全一一对应颜色，所以描绘时候产生的极其微弱的半透明部分直接黑色不显示了<br>
 换句话说纯粹的像素是不现实的，最好还是得用回半透明那一套
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215161417.jpg">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/份额为.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215161417.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/份额为.jpg">
 <br><br> 
 而且纯粹的像素过渡起来也很难看，但是4张贴图太少了<br>
 草泥马想出了一种解决办法，那就是在原来RGB的基础上，加入RG、RB、GA组合，加入一定的阈值，这样就能使用7张贴图，数量上可以接受了<br>
 这里没有用到A，而是把黑色作为底贴图，所有的泰兰都基于黑色的贴图为底混合上去
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215162009.jpg">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/我发给我.jpg" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215162009.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/我发给我.jpg" width="800px">
 <br><br> 
 最后建模新的鱿鱼乐园测试一下泰兰的情况
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215161009.jpg"> 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ图片20201215161502.jpg"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215161009.jpg"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ图片20201215161502.jpg"> 
 <br><br> 
 形体上大概正常了，但是内部的贴图相当糟糕，这是因为原来的模型的uv是一格格的切片，这里的泰兰使用的uv对应关系是默认的uv对应，所以悲剧了<br>
 一般的泰兰是一个高度贴图模拟出来的地形，映射关系也比较简单，直接在上方盖一个投射就完事了，但是拉比巴那要用到的泰兰系统是立体的，基于建模，所以之前考虑过用uv对应而不是投射对应，但是看起来并不明智
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/史蒂芬.jpg">  
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/第三个.jpg">  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/史蒂芬.jpg">  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/第三个.jpg">  
 <br><br> 
 最后采用了三向贴图映射法，用三张图从xyz映射过去，相当于立体的贴图<br>
 贴图也重绘了一下，加上装饰物，实战看起来是成功了
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215183105.jpg">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215183430.jpg" width="800px">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215183445.jpg" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215183105.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215183430.jpg" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/12/QQ截图20201215183445.jpg" width="800px">
 <br><br> 
 值得纪念的胜利
 

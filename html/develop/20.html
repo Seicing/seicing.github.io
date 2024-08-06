@@ -41,24 +41,24 @@
 太久没写开发者笔记了，在第一个demo完成后，接下来的开发是很零散的，所以没有记下来的想法<br>
 例如下图里面加入了全局光照的效果，增加了物件之间的颜色弹射，墙壁的根部产生了微妙的颜色变化
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/第三个 (2).jpg" width="800px">
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/第三个 (1).jpg" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/第三个 (2).jpg" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/第三个 (1).jpg" width="800px">
 <br><br> 
 巴那目前地图的问题是地形过于平坦、简单，所以要使用各种手段让场景复杂起来<br>
 也因为这样，目前demo的五个地图应该是要全部重制了
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/是帝国.jpg" width="800px"> 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/嗯.jpg" width="800px"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/是帝国.jpg" width="800px"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/嗯.jpg" width="800px"> 
 <br><br> 
 全局光照加入后，场景产生了深邃的渐变效果，比起之前来说要好看很多<br>
 此外为了画面的协调性微调了很多数值，例如角色模型的描边加粗了一点，场景的雾效和光效使用新的技术重制等等<br>
 不过大头还是把地图的面数加高
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/第三个.gif">  
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/鼎折覆餗.jpg" > 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/而无法.jpg" > 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/反而.jpg" > 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/而无法 (2).jpg" > 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/第三个.gif">  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/鼎折覆餗.jpg" > 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/而无法.jpg" > 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/反而.jpg" > 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/而无法 (2).jpg" > 
 <br><br> 
 然后就是按照之前所说的，把泰兰系统重制了<br>
 原来的泰兰使用xyz三个方向的投射，并且使用六种颜色定义了其内容的范围，所以不同色和不同色之间的过渡极其悲剧<br>
@@ -66,25 +66,25 @@
 换句话说，之前是使用rgb和rb、rg、gb六种颜色来定义六个泰兰的贴图，新版仅需要rgb，更加类似于传统做法，但是使用双层甚至三层的rgb，无限制地扩充下去<br>
 这样做的好处是混合效果会更加好，不会出现之前的蛋疼情况
 <br><br> 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/打算.jpg" width="800px">  <br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/仍无法为.jpg" width="400px"> 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/违反.jpg" width="400px"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/打算.jpg" width="800px">  <br>
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/仍无法为.jpg" width="400px"> 
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/违反.jpg" width="400px"> 
 <br><br> 
 可以看到中间的过渡很自然，下面两个对比是前后的效果差距，这种做法的缺点是相比于旧泰兰，新版的泰兰需要和uv绑定<br>
 听起来没什么，实际上出现了灾难般的情况
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/是帝国.png">  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/是帝国.png">  
 <br><br> 
 因为地形的uv很难做到连续，所以会出现这种悲剧情况<br>
 所以最好的办法就是延续双层泰兰的思路，尝试做回以前的xyz三向投射，这样就是完美的泰兰
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/我问问更为.png">  
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/沙发示范岗.png">  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/我问问更为.png">  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/沙发示范岗.png">  
 <br><br> 
 虽然很蛋疼地还是要像以前那样设定三张贴图，但是为了效果还是忍了<br>
 目前第三个地图的暂时性的效果，相比于以前，加入了很多奇怪的特效，到时候会慢慢斟酌如何删减
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/16/纱灯古殿深.jpg">   
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/16/纱灯古殿深.jpg">   
 <br><br> 
 接下来的才是真正的挑战
 <br><br>

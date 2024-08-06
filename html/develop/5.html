@@ -41,16 +41,16 @@
 完成渲染后，下一步就是测试一下场景<br> 场景打算使用经典的Tile办法去制作，就是rmxp那种瓦片地图，3d地图其实也有tile的概念，只是我们选用的风格比3d游戏的tile更加偏向于2dtile
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/咦啊.jpg" width="400px"><img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/梵蒂冈.png" width="400px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/咦啊.jpg" width="400px"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/梵蒂冈.png" width="400px">
 
 <br><br> 前后我们找了几个插件，感觉都不怎么满意，不是能耗太高就是tile太死板，太偏向于3d
 <br> 最后选用了SpryTile这个blender建模插件
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/dgg.gif">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/dgg.gif">
 <br><br> 初次使用的时候还是很蛋疼的，例如下面这个情况
 
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/五个五个.png" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/五个五个.png" width="800px">
 
 
 <br><br> 由于他建模风格是一个一个面片构成的，所以建模的时候一定要开启背面剔除让他识别一下哪一边是正面哪一边是背面，不然100%炸裂
@@ -58,29 +58,29 @@
 <br> 面数也纠结了很久，下面这样的一个很简单的房间就有2008个三角面
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/我死光光.png" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/我死光光.png" width="800px">
 <br><br> 适应之后这工具还是挺不错的，面数的问题其实可以通过扩大tile大小的方式来减少，例如下面这个重新铺了一下地板的地图，把4格tile联合为一个面，这样就让面数大大减少了
 <br> 尽管如此，拆了一下其他人那些场景看了下，尤其是点名批评闪轨，几个垃圾桶用了5204个面，马上就对面数的心理负担降下去了
 <br> 不过最蛋疼的问题来了
 
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/第四关和三个号.jpg">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/第四关和三个号.jpg">
 <br><br> WTF！？面和面之间产生了缝隙？这到底是什么回事
 <br> 一开始我以为是这个工具的锅，因为他是一个一个面的，可能是面和面之间没有连接在一起的锅，但是这很快就被排除了，因为在编辑界面那可以知道，面是连在一起的
 <br> 后来确定是贴图本身的问题，但是贴图有什么问题呢？难道是贴图没有遵守2的整数倍原则，从而在读取tile的时候产生了变形？这个也很快被否决了，因为后面做了一张256*256的tile图，问题依旧
 <br> 最后确定了，是画面本身的放大模式的锅
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/王师傅跟我说过.jpg" width="400px"><img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/色我试过.jpg" width="400px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/王师傅跟我说过.jpg" width="400px"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/色我试过.jpg" width="400px">
 <br><br> 把画面的放大模式从两倍调整为邻近，这样贴图的问题就不存在了，两倍缩放的时候，贴图会产生模糊，这就是出现透明边缘的原因，但调成邻近这是无法接受的，地图其他的地方缩放会变得很难看
 <br> 所以在几天的跌跌撞撞之后，总结出了一种适合我们的地图的地图tile画法——
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/三维股份我试过.png">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/三维股份我试过.png">
 <br><br> 在一整块的tile的外圈留白，然后在外圈描绘1像素和本体颜色相同的内容，作为放大时的砍画布处理，让颜色可以顺利地连续起来，而透明的贴图本身就不会受影响，所以可以放在一起
 <br> 终于把这个工具调教清楚了，目前的图块是很久以前画的，用来做测试用的地图，新地图会在过几天确定风格后才描绘，到时候就会应用到这些蛋疼的经验做出无瑕疵的地图
 <br> 一开始还奢望过类似rm的autotile那样的九宫格地形，不过这个太针对性了，还是得自己手涂，总比没有好
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/1/rtfheh.gif" width="800px">
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/1/rtfheh.gif" width="800px">
 <br><br> 最后是2d到3d的进化图，一开始摄像机还是用类似2d游戏的正交，后来觉得太死板所以还是用回传统的摄像机了
 
 

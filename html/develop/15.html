@@ -42,77 +42,77 @@
 这一个是11月才开始的工程，10月主要是做了角色的攻击动作以及硬直互动<br> 
 首先是动作的准备
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/QQ截图20201109215721.jpg"><img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/QQ截图20201109215728.jpg">   <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/QQ截图20201109215721.jpg"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/QQ截图20201109215728.jpg">   <br>  
 <br> 
 两个挨打时用到的随机播放的挨打动作，挨打后浮空、直到倒地的动作，还有余的三个基本攻击动作
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/的是官方设定.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/的是官方设定.gif">  <br>  
 <br> 
 Hitstop，即打击停顿，物体撞击后因为相互作用力而使得彼此好像卡住了一样的一段时间，营造打击感的必要条件
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/舍夫沙万发.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/舍夫沙万发.gif">  <br>  
 <br> 
  把hitstop配合受击状态和硬直后的初版效果<br> 
  被打中后角色好像毫无损失一样，太硬汉了，加了一个表情状态机，在不同状态下切换脸部的贴图更变表情
  <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/第三个.gif"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/违反.png">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/第三个.gif"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/违反.png">  <br>  
 <br> 
 看上去很痛的样子
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/萨达.jpg">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/萨达.jpg">  <br>  
 <br> 
 目力忽兰<br> 
 接下来就是做受击后遭到浮空，角色被击飞后倒地的系统
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/二代.jpg"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/无视发.gif"> <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/二代.jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/无视发.gif"> <br>  
 <br> 
 和跳跃一样，击飞是一个很复杂的状态，前后是通过“上升”、“下落”、“触地”、“倒地”、“起身”五个独立的动画连续组合而成的，而且为了真实感，通常在第一次倒地后角色还会弹起来一次，再重复一次较小的浮空，模拟真实的情况
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/发改委.gif"><img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/但是公司.gif">   <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/发改委.gif"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/但是公司.gif">   <br>  
 <br> 
 在草泥马忙这个系统的时候，我一边remaster掉原来旧工程里面用到的攻击特效，把原先像素点的风格重制成现在这种感觉   <br>  
 攻击命中角色后，播放挨打的特效也是打击感的一环，拉比巴那里面基本的物理攻击分成“打击”、“斩击”和“贯穿”三种，这些都要做出对应不同的攻击特效<br>  
 三种打击效果配合硬直后的效果，一开始草泥马弄错了特效的角度，修正后变得更加2d（脱离空间感）了
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/1.gif"><img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/2.gif"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/3.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/1.gif"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/2.gif"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/3.gif">  <br>  
 <br> 
 幻影剑舞
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/4.gif"> <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/4.gif"> <br>  
 <br> 
 最后加上出血，出血也是受击effect的一种 <br> 
 一开始的时候出血没有z写入，所以在暗影处也是亮红色的，后面改了一下变得受影了，虽然在暗处变得不明显但是不突兀
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/5.gif"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/6.gif"><br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/5.gif"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/6.gif"><br>  
 <br> 
 完整的一次受击流程
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/二分干.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/二分干.gif">  <br>  
 <br> 
 接下来就是余的攻击了 <br>  
 使用初版的动作是这样的……
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/7.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/7.gif">  <br>  
 <br> 
 三下都非常缺乏力量感，看来是制作动画的时候忽略了发力之前的蓄力动画了 <br>  
 进行修正
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/8.gif"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/9.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/8.gif"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/9.gif">  <br>  
 <br> 
 比上面的更加有力量感了，在这之后还加了一个攻击时可以转向的功能，是角色灵活的保证 <br>  
 攻击时，武器的挥动轨迹可以更好地营造出攻击的力量感，我们最早打算学其他人那样，用粒子做出轨迹
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/10.gif">  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/10.gif">  <br>  
 <br> 
 旋转和坐标继承已经做好了，但是怎么弄都弄不出想要的感觉 <br>  
 所以最后还是用ae+ps做序列帧了，完全沿用了2d游戏的做派，方法是用波纹弄出武器轨迹的扭曲感，然后加上蓝宝石的极轴旋转，丢ps里处理
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/11.gif" width="350px"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/12.gif" width="350px">   <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/11.gif" width="350px"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/12.gif" width="350px">   <br>  
 <br> 
 一开始还在纠结用脱离武器坐标的方法（1）还是让特效跟随武器（2），最后果不其然选择了1，为什么不选2，可以自行脑补出效果出来，太蛋疼了……
 然后为了配合余的攻击还给余画了一个专属于她的“撕裂”攻击特效，而且还给攻击加上了雷电粒子效果，这是之前做好了的
 <br><br>
-<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/11/236526.gif" >  <br>  
+<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/11/236526.gif" >  <br>  
 <br> 
 阶段性完成~
 
