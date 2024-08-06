@@ -41,68 +41,68 @@
 在前一篇里面完成了着色和阴影，接下来就是完成高光、描边、发光，完成渲染模块<br> 前一篇的阴影进行扩展的时候实际上是处于不满意的状态，所以干脆换了个方法去实现阴影
 <br><br>
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/werfw.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/werfw.jpg">
 
 <br><br> 阴影的颜色加深了，而且放弃了之前的硬阴影，而是选用了软阴影，之前使用硬阴影的原因是觉得硬阴影是更加像素的那一个，实际上错了，软阴影反而是因为可以进行柔化所以效果更好的阴影
 <br><br>
 
 
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/ga.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/ga.jpg">
 
 <br><br> 在导入软阴影的基础上减少阴影的模糊量，得到的效果比硬阴影更好
 <br> 然后因为阴影深色的缘故，和原来的shade着色配合显得角色拥有了3个色阶，跟上世纪咸湿游戏的上色一样，所以适当地改淡了一下着色，显得有立体感的同时，角色的明暗更加确立
 <br> <br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/sagagsag.jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/sdagag.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/sagagsag.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/sdagag.jpg">
 <br><br> 然后就是高光
 
 <br><br>
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/下水道.jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/二分干.png">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/下水道.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/二分干.png">
 
 <br><br> 没什么好说的，就是在光源的直射点演算一点反光，不过纯白色不好看，所以在后面进行了一下调整，让颜色显得更自然，当然这个石头的高光只是演示，实际会舍弃掉
 <br><br>
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/的而.jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/释放.jpg"> <br><br> 为了让渲染更贴近美术风格，把高光的模糊调小，阴影也修改了一下写法，在测试模式下也很明确了
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/的而.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/释放.jpg"> <br><br> 为了让渲染更贴近美术风格，把高光的模糊调小，阴影也修改了一下写法，在测试模式下也很明确了
 <br><br>
 
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/无法.jpg"><br><br> 当然高光部分还没有这么快就结束，物体的高光除了点高光外，还有物体边缘的一小边发光的边缘光
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/无法.jpg"><br><br> 当然高光部分还没有这么快就结束，物体的高光除了点高光外，还有物体边缘的一小边发光的边缘光
 
 <br> 但是这个边缘光实现起来有点困难，所以先做了描边
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/上.png"> <br><br>最粗暴的描边办法就是角色的模型复制一份，放大，和角色重叠，然后角色本体模型的优先度最高，这样就可以显示出一圈角色的描边了
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/上.png"> <br><br>最粗暴的描边办法就是角色的模型复制一份，放大，和角色重叠，然后角色本体模型的优先度最高，这样就可以显示出一圈角色的描边了
 
 <br><br>
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/是官方.jpg">
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/额王师傅.jpg"><br><br> 调整了粗细，而且着色（使用原模型的深色版而不是纯色）
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/是官方.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/额王师傅.jpg"><br><br> 调整了粗细，而且着色（使用原模型的深色版而不是纯色）
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/是GV个VB.jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/送达岗.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/是GV个VB.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/送达岗.jpg">
 <br><br> 其实原理就是复制模型，把每个面片朝着法线方向位移，营造出一种扩大了的感觉，就达成了描边效果，由于这个实现办法是用到了模型，所以要让描边顺滑的话就得开抗锯齿至少2x
 
 <br><br>
 
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/设定的.jpg"> 噔噔咚（绝望）<br><br> 实际上上面这个是边缘光的演示的一种尝试
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/设定的.jpg"> 噔噔咚（绝望）<br><br> 实际上上面这个是边缘光的演示的一种尝试
 
 <br> <br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/飞哥哥 (1).jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/飞哥哥 (2).jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/飞哥哥 (1).jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/飞哥哥 (2).jpg">
 
 <br> <br> 取视角和法线的夹角进行运算，不过效果并不是很满意，太难控，而且有bug <br> 然后试了下matcap等办法模拟，效果都不是很满意，最后是使用了另外的办法，获取面片法线和光照方向的夹角生成，而不是最开始的那种（因为最开始我们觉得是锁视角的，以视角为准更可控） <br> 黄色是面片的法线，黑色是光照的入射点，黄色和黑色产生夹角，然后我们检测这个夹角的数值，数值越小，光就越正，数值越大，光就越微弱，我们要做的就是检测一定数值以上就产生边缘高光
 <br> <br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/dsf.jpg"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/edg.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/dsf.jpg"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/edg.jpg">
 
 
 
 <br> <br> 最后就是glow和bloom，没什么好说的，就是让发光的物体发光，然后模拟大气颜色
 
 <br> <br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/第三个.jpg"> <img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/我突然.gif"> <br> <br> 这部分倒是很顺利，因为这玩意某种意义上是上面里面最2d的东西，而且默认插件的功能足够强劲，调一下就可以了 <br> 战戟的发光部分用了加法，和dnf一模一样，不亏是奶粉精神续作 <br> <br>
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/第三个.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/我突然.gif"> <br> <br> 这部分倒是很顺利，因为这玩意某种意义上是上面里面最2d的东西，而且默认插件的功能足够强劲，调一下就可以了 <br> 战戟的发光部分用了加法，和dnf一模一样，不亏是奶粉精神续作 <br> <br>
 
 
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/光荣进化 (1).png" width="260px"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/光荣进化 (2).png" width="260px"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/光荣进化 (3).png" width="260px"> <br> 最后就是三个阶段的对比图 <br> <br> 画面终于从一开始的简陋变得现在开始能看了，而且做出了一种独特的风格
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (1).png" width="260px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (2).png" width="260px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (3).png" width="260px"> <br> 最后就是三个阶段的对比图 <br> <br> 画面终于从一开始的简陋变得现在开始能看了，而且做出了一种独特的风格
 <br> 接下来的任务就是基于这套渲染系统的前提下做场景了，到底画面能到那个程度呢？期待
 
 

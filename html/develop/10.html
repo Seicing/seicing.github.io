@@ -41,27 +41,27 @@
 
 实装了地图描边
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/QQ截图20200625195915.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ截图20200625195915.jpg">
 <br><br> 如上图所示，如果地图不进行描边的话，在特定场合下这种中间有距离的地形会被错误地看成是纯粹的高低差地形
 <br> 加上描边的话就能比较好地从视觉上提醒玩家这里有问题
 <br> 人物描边之前已经实现了的，但是地图的结构比人物模型更加复杂，用之前的方法是不行的，所以要另外找办法
 <br> 这里用到的办法是深度信息处理
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/QQ截图20200625200859.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ截图20200625200859.jpg">
 <br><br> 如图所示，摄像机会根据模型距离摄像机的距离，计算出其深度信息，让计算机判断哪个模型在前哪个在后，从而决定遮挡关系<br>根据摄像机提供的深度信息，来判断模型是否连在一起，允许一定的差异值判定为可描边的对象<br>利用这个方法对整个画面进行后处理，对整个画面进行描边，然后用特定的方法规避掉我们已经描边了的对象，这样就能让地图描边<br>
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/wr3.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wr3.jpg">
 <br><br> 计算机进行计算后，白色的部分适用于深度信息处理描边，黑色的部分不进行描边，就能够让地图产生出描边的效果了
 <br>调整描边的粗细度，使其不影响整体画面的和谐度，完成
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/QQ图片20200626050521.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ图片20200626050521.jpg">
 <br><br> 在弄描边的时候顺便实装了遮罩材质
 <br> 如图所示，在原先的贴图的基础上加入遮罩贴图，白色的部分适用于金属高光，其他部分保持原来的toon渲染
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/QQ截图20200626121354.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ截图20200626121354.jpg">
 <br><br> 效果如下，2的反光率拉到满了，正常要左面那种就ok了
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/1.jpg"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/2.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/1.jpg"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/2.jpg">
 <br><br>
 
 <br> 由于很常见，所以就不细说了
@@ -71,19 +71,19 @@
 <br> 其实也不是什么新问题，之前在做余头顶上的花的时候就看到过类似的问题了
 <br> “特定的场合下”在布兰达里面显示正常的模型导入unity里面会显示错误，主要的问题是这个特定的场合下是什么回事
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/weghha.png">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/weghha.png">
 <br><br> 当然这里很明显是因为花朵的表面因为某些原因被unity判断为了背面，所以被剔除了剩下背面
 <br> 花朵等物件在开启半透明模式后显示的顺序不同，树木也出现了类似的情况，原本遮盖住中央的绿色椎体部分的树叶会因为显示问题被放在了后面
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/wetwet.jpg"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/wwt.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wetwet.jpg"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wwt.jpg">
 <br><br> 结合之前的情况以及实验最后得出了一个结论：unity的面朝向计算并不严谨
 <br> 在布兰达里面显示的正常现象，很可能在unity里面因为和“封闭”的模型进行交叉后产生了朝向bug从而消失，之前的花就是这样的情况，它是由5个中心旋转的花瓣组合而来的，五个模型之间相交的部分出现了交叉，所以造成了显示bug丢失了部分面（背面被当成了正面）
 <br> 得出可能的原因后，有一个猜想，会不会是因为封闭的模型和独立的面片的机制是不同的呢？如果将封闭的模型和独立面片分开，会不会解决？ <br> 在这个思路的驱使下，尝试了把花朵中间的根茎弄成独立的模型，应用独立的材质，花叶等纯面片的东西作为另一个模型，适用于另一个材质
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/wt.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wt.jpg">
 <br><br> 果然猜想是正确的，使用相同的办法去搞树木……
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/wetgty.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wetgty.jpg">
 <br><br> 显示正常
 <br> 独立的面片，没有和其他面片形成封闭关系的，它必须开启双面显示，而且因为面片通常有透明信息的缘故，需要开启半透明
 <br> 而封闭在一起的立体模型，他们不需要双面显示，而且通常不需要透明信息，半透明是不需要开启的
@@ -91,7 +91,7 @@
 <br> 之前的问题就是因为需要特殊照顾的半透明面片错误地和立体模型使用同一套材质逻辑，所以两面不是人，产生了显示bug
 <br> 尽管如此，但是一些纯面片的模型显示上依旧有bug
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/QQ截图20200626124739.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ截图20200626124739.jpg">
 <br><br> 猜想的话，应该也是和上面的道理差不多
 <br> 面片和面片之间互相交叉，让unity本身的半透明图层显示优先级产生了混淆，之所以这样说是因为在布兰达里面是正常的
 <br> 没所谓，草泥马开始入厂大修模式
@@ -101,7 +101,7 @@
 <br> 解决方法就是让半透明的模型也参与写入深度，虽然会产生另一个问题：这会让所有透明的模型都统一深度，无法穿过表面看到内部，也就是说模型半透明的话会一整个模型生成的图半透明，而不是可以看到模型的透明的面叠加在一起的透明
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/egfeg.jpg"><img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/2425.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/egfeg.jpg"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/2425.jpg">
 <br><br> 前者是关闭半透明模型写入深度，后者是现在采取的强制半透明写入深度，对于这游戏来说其实没啥区别，我们的工程用不到这种显示方法
 
 
@@ -109,13 +109,13 @@
 
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/essh.gif">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/essh.gif">
 <br><br> 面片物件显示正常！
 <br> 知道了原因之后总算是顺利解决了，值得记录
 <br> 小雪人也因此多高兴啊
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/6/QQ截图20200626124433.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ截图20200626124433.jpg">
 <br><br> 接下来就是地图的制作了
 
 

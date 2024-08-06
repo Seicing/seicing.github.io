@@ -5,7 +5,7 @@ function showPic(e, taitou, kontie) {
     aasb = document.getElementById("Layer1")
     aasb.style.display = "";
     aasb.style.width = "200px";
-    aasb.innerHTML = "<div style='background:url(https://47.236.171.173/seicingdepot/2fatcatpool/header.png) no-repeat;padding:7px 7px 0px 7px;'><font style='color:#ffc400;font-family: SimSun;'>" + taitou + "</font><br><img src='https://47.236.171.173/seicingdepot/2fatcatpool/line.png'></div><div style='background:url(https://47.236.171.173/seicingdepot/2fatcatpool/midder.png) repeat-y;padding:0px 7px 0px 7px;'><font style='color:#ffffff;font-family: SimSun;'>" + kontie + "</font></div>  <div style='background:url(https://47.236.171.173/seicingdepot/2fatcatpool/ender.png) no-repeat;'><font style='color:#ffffff;'><p>&nbsp</p></font></div>";
+    aasb.innerHTML = "<div style='background:url(https://data.seicing.com/seicingdepot/2fatcatpool/header.png) no-repeat;padding:7px 7px 0px 7px;'><font style='color:#ffc400;font-family: SimSun;'>" + taitou + "</font><br><img src='https://data.seicing.com/seicingdepot/2fatcatpool/line.png'></div><div style='background:url(https://data.seicing.com/seicingdepot/2fatcatpool/midder.png) repeat-y;padding:0px 7px 0px 7px;'><font style='color:#ffffff;font-family: SimSun;'>" + kontie + "</font></div>  <div style='background:url(https://data.seicing.com/seicingdepot/2fatcatpool/ender.png) no-repeat;'><font style='color:#ffffff;'><p>&nbsp</p></font></div>";
     var div = aasb;
     var z = div.offsetWidth;
     if (x + z < document.body.clientWidth) {

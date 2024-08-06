@@ -48,47 +48,47 @@
 <br> 模型本身也进行了改动，下次更新还得换进工程里
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/ww2gt.png" width="800px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/ww2gt.png" width="800px">
 <br><br> 顺便换了个表情，太欠揍了
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/wg.png" width="400px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/wg.png" width="400px">
 <br><br> 在实际在布兰达2.8里面制作渲染的时候，遇到了不少问题，最典型的就是按照自家在unity里面写的那套的话，找不到读取光照环境的办法，不是不能，是我们太菜，不懂怎么搞
 
 <br> 幸好只是模拟，光什么也是模拟出来的前提下是可以的
 <br>
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/wgwh.png" width="800px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/wgwh.png" width="800px">
 <br><br> 漫反射（diffuse）的实现，漫反射就是光照在模型上，产生明暗的一个过程，这里由于不知道怎么获取光，所以暴力自己模拟方向了
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/QQ截图20200412182617.png" width="800px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/QQ截图20200412182617.png" width="800px">
 <br><br> 高光（specular），还有边缘光（rim），这个具体看隔壁草泥马的文档，这里不具体细说
 <br>
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/QQ截图20200412182815.jpg" width="800px">
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/sgbsh.jpg" width="800px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/QQ截图20200412182815.jpg" width="800px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/sgbsh.jpg" width="800px">
 <br><br> 封装好指标，方便复用，然后连接上uv贴图就ok了
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/QQ截图20200412184708.jpg">
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/QQ截图20200412184838.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/QQ截图20200412184708.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/QQ截图20200412184838.jpg">
 <br><br> 描边的话就是新建一个比较深色的纯色图层，选用toon着色器，然后给模型本身加一个实体修改器这样叠起来，其实原理就和之前提到的差不多
 <br>
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/QQ截图20200412185049.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/QQ截图20200412185049.jpg">
 
 <br><br> 效果虽然不能完全还原，不过很接近游戏里了
 <br> blender里面自带的金属材质反射效果很战撸，但是要用到游戏里是很难的，只能奢望一下了
 <br>
 
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/wgh.gif">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/wgh.gif">
 <br><br> 衣服的金边是用第二贴图把高光拉满然后加法到第一贴图上面实现的，这个也会在unity里面安排上，不过实现方式估计改变一下
 <br><br>
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/wehwh.gif" width="400px">
-<img src="https://47.236.171.173/seicingdepot/2fatcatpool/develop/4/wehh.gif" width="400px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/wehwh.gif" width="400px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/4/wehh.gif" width="400px">
 <br><br> 最后还是放弃了使用边缘光
 <br> 不过环境构建起来的话以后就比较方便就可以预览一下渲染效果了
 <br><br>
