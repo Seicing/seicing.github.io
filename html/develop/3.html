@@ -38,65 +38,65 @@
 </div></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="3"></div>
-<img src="http://47.236.171.173/seicingdepot/develop/dsf.png"> <br><br> 因为之前的花建模有严重的法线bug，所以昨天重新建模了一遍
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/dsf.png"> <br><br> 因为之前的花建模有严重的法线bug，所以昨天重新建模了一遍
 <br> 正好用来适应这两天的课题——模型投影，花的法线问题就是在做阴影的时候发现的，原版的花因为法线错误所以正面生成了阴暗面，不得不重新建模一个
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/safsa.jpg"> <br><br> 给模型加上了影子，然而因为法线错误，头顶的花明显比其他部位更加暗
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/safsa.jpg"> <br><br> 给模型加上了影子，然而因为法线错误，头顶的花明显比其他部位更加暗
 <br> 这明显是因为模型把这个部分识别为了“背面”，然而这个是之前的妥协，因为把法线按照正常来显示的话，unity竟然会把正面当成背面，自动剔除掉了
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/weghha.png"> <br><br> 而倒转了法线又会产生阴影错误，不得已重新建模了
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/weghha.png"> <br><br> 而倒转了法线又会产生阴影错误，不得已重新建模了
 
 <br> 建模后终于正常了，跟颗大海星一样
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/ewgwegh.jpg"> <br><br> 渲染方面，目前而言打算通过五个步骤来实现心目中的效果：着色、阴影、高光、描边、发光（Glow）
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/ewgwegh.jpg"> <br><br> 渲染方面，目前而言打算通过五个步骤来实现心目中的效果：着色、阴影、高光、描边、发光（Glow）
 
 <br> 目前解决了着色和阴影，着色并不是指简单的uv贴图，而是基于模型本体的shading
 <br> 阴影就很好理解了，就是投影，模型因为受到光的作用，在地上产生影子
 <br> 不过目前的影子效果不太满意，我需要的是比较硬边的阴影，然后颜色要更深一点
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/QQ截图20200205173349.png"> <br><br> shading就是所谓的在模型本身进行计算，产生颜色层次感的一个过程 简单理解就是让模型本体产生暗面阴影
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/QQ截图20200205173349.png"> <br><br> shading就是所谓的在模型本身进行计算，产生颜色层次感的一个过程 简单理解就是让模型本体产生暗面阴影
 
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/sdgvd.jpg"> <br><br> 这个是最开始时候的shading，是最直接的硬边阴影，很荒吹（Botw），但是这个风格有点巩怖，不好
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sdgvd.jpg"> <br><br> 这个是最开始时候的shading，是最直接的硬边阴影，很荒吹（Botw），但是这个风格有点巩怖，不好
 <br>随后在这个基础上加入色彩过渡，下面试了三种方案“中间色”、“内部柔化”和“外部柔化”
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/sdgsdg.jpg"> <img src="http://47.236.171.173/seicingdepot/develop/dsgsh.jpg"> <img src="http://47.236.171.173/seicingdepot/develop/dsghsh.png"> <br><br> 外部柔化和内部柔化的区别在于，在硬边的基础上，是在硬边的外面开始加入过渡的柔色，还是往内缩产生柔色
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sdgsdg.jpg"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/dsgsh.jpg"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/dsghsh.png"> <br><br> 外部柔化和内部柔化的区别在于，在硬边的基础上，是在硬边的外面开始加入过渡的柔色，还是往内缩产生柔色
 
 <br> 最后选择了外部柔化，因为觉得内部柔化的影子不明显，至于第一种中间色则是比纯硬边阴影更加巩怖，很快就否决了
 <br><br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/sdhsdh.gif"> <br><br> 目前的渲染进度，感觉不错
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sdhsdh.gif"> <br><br> 目前的渲染进度，感觉不错
 
 <br><br> 附录：替换模型的过程
 
 
 <br> 因为在测试新模型的时候直接把原来的模型替换掉造成过指标错误的情况，所以要记载一下正确的替换模型的过程
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/wseg.jpg"> <br> 拖到同目录下
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/wseg.jpg"> <br> 拖到同目录下
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/wsgwg.jpg"> <br> 修改模型的大小
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/wsgwg.jpg"> <br> 修改模型的大小
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/avav.jpg"> <img src="http://47.236.171.173/seicingdepot/develop/sgfsag.jpg"><br> 阿凡达和材质设置好
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/avav.jpg"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sgfsag.jpg"><br> 阿凡达和材质设置好
 <br>
 
-<img src="http://47.236.171.173/seicingdepot/develop/sagfsag.jpg"><br> 把新模型丢到场景里
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sagfsag.jpg"><br> 把新模型丢到场景里
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/swg.jpg"><br> 复制新模型的内容
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/swg.jpg"><br> 复制新模型的内容
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/sdg.jpg"> <img src="http://47.236.171.173/seicingdepot/develop/sdgh.jpg"><br> 打开原来模型的预设，删除里面所有的内容
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sdg.jpg"> <img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sdgh.jpg"><br> 打开原来模型的预设，删除里面所有的内容
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/sdhh.jpg"> <br> 把新模型复制出来的信息粘贴到原来模型里面，新模型这样就能删掉了，完成
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sdhh.jpg"> <br> 把新模型复制出来的信息粘贴到原来模型里面，新模型这样就能删掉了，完成
 <br> 其实就是移花接木
 <br><br> 最后就是最欠揍的模型纪念
 
 <br>
-<img src="http://47.236.171.173/seicingdepot/develop/sb.jpg">
+<img src="http://47.236.171.173/seicingdepot/2fatcatpool/develop/sb.jpg">
 <br>
 
 
