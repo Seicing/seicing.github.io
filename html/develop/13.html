@@ -41,28 +41,28 @@
 地图的开发进度没有停止，但是今天记录的是一段小插曲<br> 
 用过unity的人都或多或少地遇见过一个问题
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/1.gif"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/1.gif"><br>  
 <br> 
 就在两天前完成了第二个角色“羽三”的建模，肥余不再孤独<br> 
 本应该是庆祝完工的时刻，然而导入unity之后的情况让人高兴不起来
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/2.png"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/2.png"><br>  
 <br> 
 认真观察的话，头发的部分是比辫子更暗的，不仅是头发，衣袖以及发饰也产生bug了<br> 
 产生这种情况的原因，其实就是Unity的法线bug，不知道什么原因，导入unity之后模型的部分部位的面会反了过来，但是法线的朝向是正确的，于是造成了模型光照不对变暗的现象<br> 
 尽管在建模软件里面显示是正常的，但导入unity之后就是会出现问题，很多人也遇到了，很迷<br> 
 为什么会说这是Unity的法线bug呢？因为草泥马把这个模型导入虚幻4里面看过，正常，辣鸡unity
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/3.jpg" width="800px"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/3.jpg" width="800px"><br>  
 <br> 
 把法线在布兰达那暴力翻转的话，在unity里面显示确实正常，但是面却又是反过来的，所以光线看上去正常了，但实际上是有很严重的问题的，而且描边也失效了<br>
 下图的羽三头发有很明显的硬边感，就是强行翻转法线后失去了柔和信息的表现
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/4.gif"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/4.gif"><br>  
 <br> 
 经过实验之后，发现解绑骨骼后模型是正常的
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/5.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/5.jpg"><br>  
 <br> 
 上网找了一下，原因似乎是在建模工具的时候进行了负向缩放，即使在建模工具里正常，但是unity无法识别这个信息所以出现bug了<br>  
 确实，出现问题的部位都是使用面片勾出形状之后，进行全体挤出构造厚度，也许就是这个操作造成了unity里面法线的错误<br>  
@@ -70,48 +70,48 @@
 然后我灵机一动，有没有办法让模型“洗白”呢？<br>  
 翻了一下布兰达使用手册，还真找到了
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/8.jpg" width="800px"><br> 
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/9.jpg" width="800px"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/8.jpg" width="800px"><br> 
+<img src="http://47.236.171.173/seicingdepot/develop/9/9.jpg" width="800px"><br>  
 <br> 
 快捷键<b>Ctrl+A</b>可以调出布兰达里面的“应用”菜单，把模型的缩放、位移等信息应用后，就会变成最基础的无变化状态，然后就会出现图2的情况<br>  
 衣袖部位原先是负数的缩放，因为“洗白”而“原形毕露”了，法线反了过来
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/10.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/10.jpg"><br>  
 <br> 
 重计算一下，正常，丢到unity里面试试
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/6.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/6.jpg"><br>  
 <br> 
 衣袖正常了！
 但是用同样办法处理的头发依旧没有被修复，到底在哪里出了问题呢？
 认真一想——会不会头的骨头本身就是反的，所以才导致正常的头发和发饰反了呢？
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/7.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/7.jpg"><br>  
 <br> 
 果然是……<br>  
 这个在制作第一个模型余的时候，问题就存在了，当初在余身上也出现了头顶的花法线错误的情况<br>  
 看起来并不是模型问题，而是这个骨头本身就是错误的<br>  
 修复后，完全正常了
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/11.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/11.jpg"><br>  
 <br> 
 因为这是一个一开始就有的错误，所以余的模型，包括所有的动作都要进行修正，把头骨都<b>Ctrl+A</b>一下
 幸好这是在还没开始大量生产的时候就发现了的问题，不然这个工程量会很蛋疼
 顺便发现了余的模型的后摆也有类似的法线错误，Ctrl+A，一切都解决了
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/QQ截图20200915025057.jpg"><br>  
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/QQ截图20200915025135.jpg" width="800px"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/QQ截图20200915025057.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/QQ截图20200915025135.jpg" width="800px"><br>  
 <br> 
 法线正常！模型正常！<br>
 一个蛋疼的老大难问题终于被解决了，值得记录<br>
 同时也庆祝第二个角色正式实装到游戏里，羽三是计划之初就打算制作的主控角色，但是后来改成了主控是余，尽管如此羽三也是打算作为援助角色在demo里登场的<br>
 和最早时候确立下来的羽三模型的对比<s>还是从老硬盘那拉过来的被遗忘的模型</s>，进步真大啊
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/QQ截图20200915025421.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/QQ截图20200915025421.jpg"><br>  
 <br> 
 然而，战斗依然没有结束……
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/9/QQ截图20200915025515.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/9/QQ截图20200915025515.jpg"><br>  
 <br> 
 
 地图的制作，即将进入完成倒计时<br>   

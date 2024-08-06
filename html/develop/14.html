@@ -40,63 +40,63 @@
                         <div class="entry"><div id="lavipage" page="14"></div>
 水体的风格最终还是确定下来了
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/第三方.gif"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/第三方.gif"><br>  
 <br> 
 做完水水之后要解决的就是瀑布了<br>  
 瀑布本体的话很好解决，画了一个可以上下左右对接的tile，贴到面片里循环就ok了
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/1.png"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/1.png"><br>  
 <br> 
 在消失处加上这样的序列帧动画，让瀑布更加自然
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/2.gif"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/2.gif"><br>  
 <br> 
 可是效果不尽人意<br>  
 原因是瀑布的边缘过于突兀了
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/3.jpg"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/3.jpg"><br>  
 <br> 
 加上这样的白边就更加自然了，为了让白边自适应瀑布的边缘花了很大的功夫
 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/4.png">  <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/5.gif"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/4.png">  <img src="http://47.236.171.173/seicingdepot/develop/10/5.gif"><br>  
 <br> 
 瀑布和水面的交汇处需要制作飞溅的水花，角色落水后也有飞溅水花，物体在水里的波纹等，这些都是和水水互动的东西，都需要制作<br>  
 思考了一下，这些全都可以用粒子效果解决<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/6.gif"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/6.gif"><br>  <br> 
 波纹是最简单的，设定好粒子的生长周期，不让他们动，给与一个粒子逐渐变大的补间动画，然后发射率2-3个粒子就搞定了<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/8.png" width="400px">  <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/7.gif"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/8.png" width="400px">  <img src="http://47.236.171.173/seicingdepot/develop/10/7.gif"><br>  <br> 
 飞溅水花动画则是加了个x生成位置的random，使得它的发射box看上去是一条横线一样，放在瀑布的下方，挺好看的，虽然粒子目前还是不受光，看上去很耀眼<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/13.gif"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/13.gif"><br>  <br> 
 这个草泥马在隔壁研究出来了，只是等实装进去而已<br>  
 发射处也用同样的粒子，效果可以  <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/9.gif"><br>    <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/9.gif"><br>    <br> 
 角色落水的水花是往上发射然后添加一个重力让它们掉下来，而且中间加了个圈圈，模拟角色的体积感<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/10.jpg">  <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/11.gif"><br>   
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/12.gif"><br> <br>   
+<img src="http://47.236.171.173/seicingdepot/develop/10/10.jpg">  <img src="http://47.236.171.173/seicingdepot/develop/10/11.gif"><br>   
+<img src="http://47.236.171.173/seicingdepot/develop/10/12.gif"><br> <br>   
 完整效果，水水可以说完成了 <br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/14.gif"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/14.gif"><br>  <br> 
 
 最后就是做地图背景了<br>  
 哈扎尔是漂浮在天空中的浮岛，背景是浪漫的云层，首先云的画法确立了下来，这个专门做成循环贴图放在水面上配置为反射贴图<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/19.png"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/19.png"><br>  <br> 
 而背景用的云则是切割成五个粒子图片，使用粒子效果做背景的云<br>  
 背景的底片使用图片配合锁定摄像机来做，不使用天空盒，云也是依附在这个背景上面的<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/17.jpg">  <img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/18.jpg"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/17.jpg">  <img src="http://47.236.171.173/seicingdepot/develop/10/18.jpg"><br>  <br> 
 一开始云层的角度和底片一致，所以看上去非常蛋疼，最后是把云层旋转了一下同步了地面的角度了<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/333.jpg"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/333.jpg"><br>  <br> 
 最后的一部是做云投射在草原上的影子<br>  
 一开始我们还打算直接把粒子投射到地图上，但是我们错了，三维里面对32位半透明位图的支持还不算是降维打击阶段啊<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/1231.jpg"><br> <br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/1231.jpg"><br> <br>  
 不能够投影出模糊的感觉，只能另找办法了<br>  
 最后选择的办法是从二维层面上计算出地图里有实体的区域，然后用2d的办法把暗面粒子叠加上去<br><br>
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/21.jpg" width="800px"><br>  
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/20.jpg" width="800px"><br>  <br> 
+<img src="http://47.236.171.173/seicingdepot/develop/10/21.jpg" width="800px"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/20.jpg" width="800px"><br>  <br> 
 
 地图部分有问题的地方基本上都解决了，值得庆贺<br> 
 10月的主题是制作角色战斗系统了<br> 
 最后以小雪人们的合影结束<br> <br> 
 
-<img src="https://seicing-1257171891.cos.ap-nanjing.myqcloud.com/2fatcatpool/develop/10/fdgdfg.gif"><br>  
+<img src="http://47.236.171.173/seicingdepot/develop/10/fdgdfg.gif"><br>  
 
 <br> <br> 
 
