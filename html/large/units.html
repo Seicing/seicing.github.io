@@ -445,114 +445,202 @@
 
 <br><br><br>
 地区别筛选器<br>
-<a href="javascript:void(0);" onclick="tipsg('西西景')">西西景</a> ·
-<a href="javascript:void(0);" onclick="tipsg('中央西景')">中央西景</a> ·
-<a href="javascript:void(0);" onclick="tipsg('东西景')">东西景</a> ·
-<a href="javascript:void(0);" onclick="tipsg('北西景')">北西景</a> ·
-<a href="javascript:void(0);" onclick="tipsg('大三角洲')">大三角洲</a> ·
-<a href="javascript:void(0);" onclick="tipsg('东艾特拉塔')">东艾特拉塔</a> ·
-<a href="javascript:void(0);" onclick="tipsg('西艾特拉塔')">西艾特拉塔</a> ·
-<a href="javascript:void(0);" onclick="tipsg('内艾特拉塔')">内艾特拉塔</a> ·
-<a href="javascript:void(0);" onclick="tipsg('尤伊本岛')">尤伊本岛</a> ·
-<a href="javascript:void(0);" onclick="tipsg('尤伊离岛')">尤伊离岛</a> ·
+<a href="javascript:void(0);" onclick="tipsg('西西景','WesternSeigine2')" style="color:#D0C9B7"
+    id="WesternSeigine2">西西景</a> ·
+<a href="javascript:void(0);" onclick="tipsg('中央西景','CentralSeigine2')" style="color:#D0C9B7"
+    id="CentralSeigine2">中央西景</a> ·
+<a href="javascript:void(0);" onclick="tipsg('东西景','EasternSeigine2')" style="color:#D0C9B7"
+    id="EasternSeigine2">东西景</a> ·
+<a href="javascript:void(0);" onclick="tipsg('北西景','NorthernSeigine2')" style="color:#D0C9B7"
+    id="NorthernSeigine2">北西景</a> ·
+<a href="javascript:void(0);" onclick="tipsg('大三角洲','GrandDelta2')" style="color:#D0C9B7" id="GrandDelta2">大三角洲</a> ·
+<a href="javascript:void(0);" onclick="tipsg('东艾特拉塔','EasternAltrata2')" style="color:#D0C9B7"
+    id="EasternAltrata2">东艾特拉塔</a> ·
+<a href="javascript:void(0);" onclick="tipsg('西艾特拉塔','WesternAltrata2')" style="color:#D0C9B7"
+    id="WesternAltrata2">西艾特拉塔</a> ·
+<a href="javascript:void(0);" onclick="tipsg('内艾特拉塔','InnerAltrata2')" style="color:#D0C9B7"
+    id="InnerAltrata2">内艾特拉塔</a> ·
+<a href="javascript:void(0);" onclick="tipsg('尤伊本岛','IuireMainland2')" style="color:#D0C9B7"
+    id="IuireMainland2">尤伊本岛</a> ·
+<a href="javascript:void(0);" onclick="tipsg('尤伊离岛','IuireSeparation2')" style="color:#D0C9B7"
+    id="IuireSeparation2">尤伊离岛</a>
 <br>
-<table id="customers" width="800px">
+<table id="customers" style="width:800px">
     <tr>
-        <td width="150px">
+        <td>
             <img width="150px" id="Recruit">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Warrior">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Phalanx">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Skirmisher">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Vanguard">
         </td>
     </tr>
     <tr>
-        <td width="150px">
+        <td>
+            新兵
+        </td>
+        <td>
+            武士
+        </td>
+        <td>
+            兵方队
+        </td>
+        <td>
+            散兵
+        </td>
+        <td>
+            先锋
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img width="150px" id="Mage">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Sorceress">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Scholar">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Cleric">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Wizard">
         </td>
     </tr>
     <tr>
-        <td width="150px">
+        <td>
+            法师
+        </td>
+        <td>
+            巫师
+        </td>
+        <td>
+            学者
+        </td>
+        <td>
+            神官
+        </td>
+        <td>
+            术士
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img width="150px" id="Ranger">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Sentinel">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="Citizen">
         </td>
-        <td colspan="2" id="Describe"> </td>
+        <td colspan="2" rowspan="2" id="Describe"> </td>
+    </tr>
+    <tr>
+        <td>
+            游兵
+        </td>
+        <td>
+            近卫
+        </td>
+        <td>
+            市民
+        </td>
     </tr>
 </table>
 <br>
 <br>
 职能别筛选器<br>
-<a href="javascript:void(0);" onclick="tipsb('新兵')">新兵</a> ·
-<a href="javascript:void(0);" onclick="tipsb('武士')">武士</a> ·
-<a href="javascript:void(0);" onclick="tipsb('兵方队')">兵方队</a> ·
-<a href="javascript:void(0);" onclick="tipsb('散兵')">散兵</a> ·
-<a href="javascript:void(0);" onclick="tipsb('先锋')">先锋</a> ·
-<a href="javascript:void(0);" onclick="tipsb('法师')">法师</a> ·
-<a href="javascript:void(0);" onclick="tipsb('巫师')">巫师</a> ·
-<a href="javascript:void(0);" onclick="tipsb('学者')">学者</a> ·
-<a href="javascript:void(0);" onclick="tipsb('神官')">神官</a> ·
-<a href="javascript:void(0);" onclick="tipsb('术士')">术士</a> ·
-<a href="javascript:void(0);" onclick="tipsb('游兵')">游兵</a> ·
-<a href="javascript:void(0);" onclick="tipsb('近卫')">近卫</a> ·
-<a href="javascript:void(0);" onclick="tipsb('市民')">市民</a> ·
-<table id="customers" width="800px">
+<a href="javascript:void(0);" onclick="tipsb('新兵','Recruit2')" style="color:#D0C9B7" id="Recruit2">新兵</a> ·
+<a href="javascript:void(0);" onclick="tipsb('武士','Warrior2')" style="color:#D0C9B7" id="Warrior2">武士</a> ·
+<a href="javascript:void(0);" onclick="tipsb('兵方队','Phalanx2')" style="color:#D0C9B7" id="Phalanx2">兵方队</a> ·
+<a href="javascript:void(0);" onclick="tipsb('散兵','Skirmisher2')" style="color:#D0C9B7" id="Skirmisher2">散兵</a> ·
+<a href="javascript:void(0);" onclick="tipsb('先锋','Vanguard2')" style="color:#D0C9B7" id="Vanguard2">先锋</a> ·
+<a href="javascript:void(0);" onclick="tipsb('法师','Mage2')" style="color:#D0C9B7" id="Mage2">法师</a> ·
+<a href="javascript:void(0);" onclick="tipsb('巫师','Sorceress2')" style="color:#D0C9B7" id="Sorceress2">巫师</a> ·
+<a href="javascript:void(0);" onclick="tipsb('学者','Scholar2')" style="color:#D0C9B7" id="Scholar2">学者</a> ·
+<a href="javascript:void(0);" onclick="tipsb('神官','Cleric2')" style="color:#D0C9B7" id="Cleric2">神官</a> ·
+<a href="javascript:void(0);" onclick="tipsb('术士','Wizard2')" style="color:#D0C9B7" id="Wizard2">术士</a> ·
+<a href="javascript:void(0);" onclick="tipsb('游兵','Ranger2')" style="color:#D0C9B7" id="Ranger2">游兵</a> ·
+<a href="javascript:void(0);" onclick="tipsb('近卫','Sentinel2')" style="color:#D0C9B7" id="Sentinel2">近卫</a> ·
+<a href="javascript:void(0);" onclick="tipsb('市民','Citizen2')" style="color:#D0C9B7" id="Citizen2">市民</a>
+<table id="customers" style="width:800px">
     <tr>
-        <td width="150px">
+        <td>
             <img width="150px" id="WesternSeigine">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="CentralSeigine">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="EasternSeigine">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="NorthernSeigine">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="GrandDelta">
         </td>
     </tr>
     <tr>
-        <td width="150px">
+        <td>
+            西西景
+        </td>
+        <td>
+            中央西景
+        </td>
+        <td>
+            东西景
+        </td>
+        <td>
+            北西景
+        </td>
+        <td>
+            大三角洲
+        </td>
+    </tr>
+    <tr>
+        <td>
             <img width="150px" id="EasternAltrata">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="WesternAltrata">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="InnerAltrata">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="IuireMainland">
         </td>
-        <td width="150px">
+        <td>
             <img width="150px" id="IuireSeparation">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            东艾特拉塔
+        </td>
+        <td>
+            西艾特拉塔
+        </td>
+        <td>
+            内艾特拉塔
+        </td>
+        <td>
+            尤伊本岛
+        </td>
+        <td>
+            尤伊离岛
         </td>
     </tr>
 </table>
@@ -593,7 +681,7 @@
 
 
 <script>
-    function tipsg(a) {
+    function tipsg(a, b) {
         var aaposbo1 = document.querySelector("#Recruit");
         aaposbo1.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '新兵.png';
         var aaposbo2 = document.querySelector("#Warrior");
@@ -624,9 +712,22 @@
         aaposbo13.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '市民.png';
         var aaposbo14 = document.querySelector("#Describe");
         aaposbo14.innerHTML = a;
+
+
+        document.getElementById("#WesternSeigine2").style.color = "#D0C9B7";
+        document.getElementById("#CentralSeigine2").style.color = "#D0C9B7";
+        document.getElementById("#EasternSeigine2").style.color = "#D0C9B7";
+        document.getElementById("#NorthernSeigine2").style.color = "#D0C9B7";
+        document.getElementById("#GrandDelta2").style.color = "#D0C9B7";
+        document.getElementById("#EasternAltrata2").style.color = "#D0C9B7";
+        document.getElementById("#WesternAltrata2").style.color = "#D0C9B7";
+        document.getElementById("#InnerAltrata2").style.color = "#D0C9B7";
+        document.getElementById("#IuireMainland2").style.color = "#D0C9B7";
+        document.getElementById("#IuireSeparation2").style.color = "#D0C9B7";
+        document.getElementById(b).style.color = "blue";
     }
 
-    function tipsb(a) {
+    function tipsb(a, b) {
         var aaposbo1 = document.querySelector("#WesternSeigine");
         aaposbo1.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西西景' + a + '.png';
         var aaposbo2 = document.querySelector("#CentralSeigine");
@@ -648,6 +749,23 @@
         aaposbo9.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊本岛' + a + '.png';
         var aaposbo10 = document.querySelector("#IuireSeparation");
         aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊离岛' + a + '.png';
+
+
+
+        document.getElementById("#Recruit2").style.color = "#D0C9B7";
+        document.getElementById("#Warrior2").style.color = "#D0C9B7";
+        document.getElementById("#Phalanx2").style.color = "#D0C9B7";
+        document.getElementById("#Skirmisher2").style.color = "#D0C9B7";
+        document.getElementById("#Vanguard2").style.color = "#D0C9B7";
+        document.getElementById("#Mage2").style.color = "#D0C9B7";
+        document.getElementById("#Sorceress2").style.color = "#D0C9B7";
+        document.getElementById("#Scholar2").style.color = "#D0C9B7";
+        document.getElementById("#Cleric2").style.color = "#D0C9B7";
+        document.getElementById("#Wizard2").style.color = "#D0C9B7";
+        document.getElementById("#Ranger2").style.color = "#D0C9B7";
+        document.getElementById("#Sentinel2").style.color = "#D0C9B7";
+        document.getElementById("#Citizen2").style.color = "#D0C9B7";
+        document.getElementById(b).style.color = "blue";
 
     }
 
