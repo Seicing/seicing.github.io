@@ -561,19 +561,19 @@
 <br>
 <br>
 职能别筛选器<br>
-<a href="javascript:void(0);" onclick="tipsg('新兵','Recruit2')" style="color:#D0C9B7" id="Recruit2">新兵</a> ·
-<a href="javascript:void(0);" onclick="tipsg('武士','Warrior2')" style="color:#D0C9B7" id="Warrior2">武士</a> ·
-<a href="javascript:void(0);" onclick="tipsg('兵方队','Phalanx2')" style="color:#D0C9B7" id="Phalanx2">兵方队</a> ·
-<a href="javascript:void(0);" onclick="tipsg('散兵','Skirmisher2')" style="color:#D0C9B7" id="Skirmisher2">散兵</a> ·
-<a href="javascript:void(0);" onclick="tipsg('先锋','Vanguard2')" style="color:#D0C9B7" id="Vanguard2">先锋</a> ·
-<a href="javascript:void(0);" onclick="tipsg('法师','Mage2')" style="color:#D0C9B7" id="Mage2">法师</a> ·
-<a href="javascript:void(0);" onclick="tipsg('巫师','Sorceress2')" style="color:#D0C9B7" id="Sorceress2">巫师</a> ·
-<a href="javascript:void(0);" onclick="tipsg('学者','Scholar2')" style="color:#D0C9B7" id="Scholar2">学者</a> ·
-<a href="javascript:void(0);" onclick="tipsg('神官','Cleric2')" style="color:#D0C9B7" id="Cleric2">神官</a> ·
-<a href="javascript:void(0);" onclick="tipsg('术士','Wizard2')" style="color:#D0C9B7" id="Wizard2">术士</a> ·
-<a href="javascript:void(0);" onclick="tipsg('游兵','Ranger2')" style="color:#D0C9B7" id="Ranger2">游兵</a> ·
-<a href="javascript:void(0);" onclick="tipsg('近卫','Sentinel2')" style="color:#D0C9B7" id="Sentinel2">近卫</a> ·
-<a href="javascript:void(0);" onclick="tipsg('市民','Citizen2')" style="color:#D0C9B7" id="Citizen2">市民</a>
+<a href="javascript:void(0);" onclick="tipsb('新兵','Recruit2')" style="color:#D0C9B7" id="Recruit2">新兵</a> ·
+<a href="javascript:void(0);" onclick="tipsb('武士','Warrior2')" style="color:#D0C9B7" id="Warrior2">武士</a> ·
+<a href="javascript:void(0);" onclick="tipsb('兵方队','Phalanx2')" style="color:#D0C9B7" id="Phalanx2">兵方队</a> ·
+<a href="javascript:void(0);" onclick="tipsb('散兵','Skirmisher2')" style="color:#D0C9B7" id="Skirmisher2">散兵</a> ·
+<a href="javascript:void(0);" onclick="tipsb('先锋','Vanguard2')" style="color:#D0C9B7" id="Vanguard2">先锋</a> ·
+<a href="javascript:void(0);" onclick="tipsb('法师','Mage2')" style="color:#D0C9B7" id="Mage2">法师</a> ·
+<a href="javascript:void(0);" onclick="tipsb('巫师','Sorceress2')" style="color:#D0C9B7" id="Sorceress2">巫师</a> ·
+<a href="javascript:void(0);" onclick="tipsb('学者','Scholar2')" style="color:#D0C9B7" id="Scholar2">学者</a> ·
+<a href="javascript:void(0);" onclick="tipsb('神官','Cleric2')" style="color:#D0C9B7" id="Cleric2">神官</a> ·
+<a href="javascript:void(0);" onclick="tipsb('术士','Wizard2')" style="color:#D0C9B7" id="Wizard2">术士</a> ·
+<a href="javascript:void(0);" onclick="tipsb('游兵','Ranger2')" style="color:#D0C9B7" id="Ranger2">游兵</a> ·
+<a href="javascript:void(0);" onclick="tipsb('近卫','Sentinel2')" style="color:#D0C9B7" id="Sentinel2">近卫</a> ·
+<a href="javascript:void(0);" onclick="tipsb('市民','Citizen2')" style="color:#D0C9B7" id="Citizen2">市民</a>
 <table id="customers" style="width:800px">
     <tr>
         <td>
@@ -714,6 +714,20 @@
         aaposbo14.innerHTML = a;
 
 
+        document.getElementById("WesternSeigine2").style.color = "#D0C9B7";
+        document.getElementById("CentralSeigine2").style.color = "#D0C9B7";
+        document.getElementById("EasternSeigine2").style.color = "#D0C9B7";
+        document.getElementById("NorthernSeigine2").style.color = "#D0C9B7";
+        document.getElementById("GrandDelta2").style.color = "#D0C9B7";
+        document.getElementById("EasternAltrata2").style.color = "#D0C9B7";
+        document.getElementById("WesternAltrata2").style.color = "#D0C9B7";
+        document.getElementById("InnerAltrata2").style.color = "#D0C9B7";
+        document.getElementById("IuireMainland2").style.color = "#D0C9B7";
+        document.getElementById("IuireSeparation2").style.color = "#D0C9B7";
+        document.getElementById(b).style.color = "blue";
+    }
+
+    function tipsb(a, b) {
         var aaposbo1 = document.querySelector("#WesternSeigine");
         aaposbo1.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西西景' + a + '.png';
         var aaposbo2 = document.querySelector("#CentralSeigine");
@@ -738,32 +752,21 @@
 
 
 
-        document.getElementById("#WesternSeigine2").style.color = "#D0C9B7";
-        document.getElementById("#CentralSeigine2").style.color = "#D0C9B7";
-        document.getElementById("#EasternSeigine2").style.color = "#D0C9B7";
-        document.getElementById("#NorthernSeigine2").style.color = "#D0C9B7";
-        document.getElementById("#GrandDelta2").style.color = "#D0C9B7";
-        document.getElementById("#EasternAltrata2").style.color = "#D0C9B7";
-        document.getElementById("#WesternAltrata2").style.color = "#D0C9B7";
-        document.getElementById("#InnerAltrata2").style.color = "#D0C9B7";
-        document.getElementById("#IuireMainland2").style.color = "#D0C9B7";
-        document.getElementById("#IuireSeparation2").style.color = "#D0C9B7";
-
-        document.getElementById("#Recruit2").style.color = "#D0C9B7";
-        document.getElementById("#Warrior2").style.color = "#D0C9B7";
-        document.getElementById("#Phalanx2").style.color = "#D0C9B7";
-        document.getElementById("#Skirmisher2").style.color = "#D0C9B7";
-        document.getElementById("#Vanguard2").style.color = "#D0C9B7";
-        document.getElementById("#Mage2").style.color = "#D0C9B7";
-        document.getElementById("#Sorceress2").style.color = "#D0C9B7";
-        document.getElementById("#Scholar2").style.color = "#D0C9B7";
-        document.getElementById("#Cleric2").style.color = "#D0C9B7";
-        document.getElementById("#Wizard2").style.color = "#D0C9B7";
-        document.getElementById("#Ranger2").style.color = "#D0C9B7";
-        document.getElementById("#Sentinel2").style.color = "#D0C9B7";
-        document.getElementById("#Citizen2").style.color = "#D0C9B7";
-
+        document.getElementById("Recruit2").style.color = "#D0C9B7";
+        document.getElementById("Warrior2").style.color = "#D0C9B7";
+        document.getElementById("Phalanx2").style.color = "#D0C9B7";
+        document.getElementById("Skirmisher2").style.color = "#D0C9B7";
+        document.getElementById("Vanguard2").style.color = "#D0C9B7";
+        document.getElementById("Mage2").style.color = "#D0C9B7";
+        document.getElementById("Sorceress2").style.color = "#D0C9B7";
+        document.getElementById("Scholar2").style.color = "#D0C9B7";
+        document.getElementById("Cleric2").style.color = "#D0C9B7";
+        document.getElementById("Wizard2").style.color = "#D0C9B7";
+        document.getElementById("Ranger2").style.color = "#D0C9B7";
+        document.getElementById("Sentinel2").style.color = "#D0C9B7";
+        document.getElementById("Citizen2").style.color = "#D0C9B7";
         document.getElementById(b).style.color = "blue";
+
     }
 
 
