@@ -253,7 +253,7 @@ let ayanami = {
 
 
     "蝗虫群": "蝗虫群<br>Locust Swarm<br>召唤一群蝗虫来攻击敌方村民、农田、捕鱼船和牲畜",
-    "黑水": "黑水<br>Dark Water<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>骆驼篷车和骆驼骑兵的生命值+10%，获得0.5自愈效率",
+    "黑暗之水": "黑暗之水<br>Dark Water<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>骆驼篷车和骆驼骑兵的生命值+10%，获得0.5自愈效率",
     "日炙泥墙": "日炙泥墙<br>Sundried Mudbrick<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>建筑物生命值+10%，黄金成本-15%，建造时间-25%",
     "鳄鱼之城": "鳄鱼之城<br>Crocodilopolis<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>升级佩苏卓斯为拉的佩苏卓斯，射程+6，视野+6",
     "太阳船": "太阳船<br>Solar Barque<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>埃及战船偶尔攻击敌船时会生成海蛇",
@@ -542,6 +542,10 @@ let ayanami = {
     "索尔加成2": "索尔加成2<br>矮人便宜10黄金，采集食物和木材快25%",
     "索尔加成3": "索尔加成3<br>用矮人军械库取代军械库，无视时代限制研发军械库科技，并可研究额外科技",
     "索尔加成4": "索尔加成4<br>矮人军械库科技研究完成时，提供1个免费的矮人",
+
+    "弗雷加成1": "弗雷加成1<br>科技所消耗的食物、木材和黄金 -50%，但研究时间会延长 150%",
+    "弗雷加成2": "弗雷加成2<br>山寨及其训练的单位造成伤害 +10%",
+    "弗雷加成3": "弗雷加成3<br>采集者和矮人可以进行建筑物修复，修复建筑物免费",
 
 
     "奥丁加成1": "奥丁加成1<br>矮人和采集者收集自然资源效率+10%",
