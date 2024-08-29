@@ -506,7 +506,7 @@ let ayanami = {
 
 
 
-    "弗雷的礼物": "弗雷的礼物<br>Freyr's Gift<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>8<br>人类士兵和英雄生命值 +25%，此科技可根据已研究的科技数量，减少需要的恩惠值",
+    "弗雷的礼物": "弗雷的礼物<br>Freyr's Gift<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>8<br>人类士兵和英雄生命值 +25%，每研究1个科技，此科技的恩惠成本-5",
 
     "瓦尔加尔得": "瓦尔加尔得<br>Valgaldr<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>德拉古尔升级为亡灵德拉古尔，伤害 +20%，射程和视野 +5",
 
@@ -529,7 +529,7 @@ let ayanami = {
 
     "诸神的黄昏": "诸神的黄昏<br>Twilight of the Gods<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>18 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>人类士兵生命值 +10%， 对英雄的附加伤害比率 +20%",
 
-    "复仇之神": "复仇之神<br>Avenging Spirit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>维京百夫长在造成50/150/300伤害后锤子会变大并额外造成20%/40%/60%伤害",
+    "复仇之神": "复仇之神<br>Avenging Spirit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>维京百夫长的锤子会在战斗中造成50/150/300伤害时变大，根据锤子大小获得20%/40%/60%额外伤害",
 
     "沉默决心": "沉默决心<br>Silent Resolve<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>240 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>狂战士在闲置时会缓慢地增加攻击力",
 
