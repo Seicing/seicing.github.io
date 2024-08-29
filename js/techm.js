@@ -504,6 +504,47 @@ let ayanami = {
     "石墙中国人": "石墙<br>Stone Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>木制城墙生命值+400，视野+5",
     "夯土墙": "夯土墙<br>Earthen Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>木制城墙生命值+200，视野+2",
 
+
+
+    "弗雷的礼物": "弗雷的礼物<br>Freyr's Gift<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>8<br>人类士兵和英雄生命值 +25%，此科技可根据已研究的科技数量，减少需要的恩惠值",
+
+    "瓦尔加尔得": "瓦尔加尔得<br>Valgaldr<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>德拉古尔升级为亡灵德拉古尔，伤害 +20%，射程和事业 +5",
+
+    "荣耀之仆": "荣耀之仆<br>Servants of Glory<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>亲随战士、掷斧兵、狂战士移动速度 +5%",
+
+    "誓约之环": "誓约之环<br>Ring Oath<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>阿斯加德堡垒的重复恩惠成本 -60%",
+
+    "紫衫谷": "紫衫谷<br>Ydalir<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>攻城器生产效率 +20%，而且可以前一个时代使用便携式冲车",
+
+
+    "花岗岩大嘴": "花岗岩大嘴<br>Granite Maw<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>135 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>岩石巨人升级为山岭巨人，攻击力 +20%，攻击敌人建筑物时可恢复生命值",
+
+    "声望之宴": "声望之宴<br>Feast of Renown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>18 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>城镇中心、山寨可以治疗附近部队，并且获得1.0的食物流",
+
+    "波浪九女": "波浪九女<br>Nine Waves<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>178 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄和攻城武器的移动速度+10%， 伤害+20%",
+
+    "澜之掠夺": "澜之掠夺<br>Grasp of Ran<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>龙舟偶尔可以在敌方船只附近召唤克拉肯",
+
+
+
+    "诸神的黄昏": "诸神的黄昏<br>Twilight of the Gods<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>18 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>人类士兵生命值 +10%， 对英雄的附加伤害比率 +20%",
+
+    "复仇之神": "复仇之神<br>Avenging Spirit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>维京百夫长在造成50/150/300伤害后锤子会变大并额外造成20%/40%/60%伤害",
+
+    "沉默决心": "沉默决心<br>Silent Resolve<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>240 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>狂战士在闲置时会缓慢地增加攻击力",
+
+
+    "殒落之怒": "殒落之怒<br>Fury of the Fallen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每当有一个军事单位在战场上倒下，6格附近的狂战士可获得可叠加的15%伤害加成",
+
+
+
+    "古林博斯帝": "古林博斯帝<br>Gullinbursti<br>以你（或盟友）的一个城镇中心为目标，召唤并指挥弗雷的黄金野猪古林博斯帝保卫该区域。古林博斯帝会随时代的发展愈发强大",
+    "阿斯加德堡垒": "阿斯加德堡垒<br>Asgardian Bastion<br>选择一个地点召唤地基，地基完全建成后会变成一座幽灵山寨。在以后的时代建造速度会更快",
+    "风暴": "风暴<br>Tempest<br>对一个地点发动一场肆虐的冰雹风暴，对敌人造成伤害并极大地减缓他们的攻击速度和移动速度",
+    "火海": "火海<br>Inferno<br>创造一条炽热的毁灭之路。巨狼芬里厄会出现并发起冲锋，将敌人吞没在火焰中，然后爆发出末日般的炼狱之火，毁灭一切",
+
+
+
     "克洛诺斯加成1": "克洛诺斯加成1<br>攻城单位和神话单位单位在损失时返还20%的资源消耗",
     "克洛诺斯加成2": "克洛诺斯加成2<br>升级时代获得的神话单位是2个，而不是1个",
     "克洛诺斯加成3": "克洛诺斯加成3<br>通过时间转移把自己的建筑物传送到视野内任意地方重新安放(塔和宫殿需要50%造价的成本)",
