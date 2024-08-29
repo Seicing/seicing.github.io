@@ -508,7 +508,7 @@ let ayanami = {
 
     "弗雷的礼物": "弗雷的礼物<br>Freyr's Gift<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>8<br>人类士兵和英雄生命值 +25%，此科技可根据已研究的科技数量，减少需要的恩惠值",
 
-    "瓦尔加尔得": "瓦尔加尔得<br>Valgaldr<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>德拉古尔升级为亡灵德拉古尔，伤害 +20%，射程和事业 +5",
+    "瓦尔加尔得": "瓦尔加尔得<br>Valgaldr<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>德拉古尔升级为亡灵德拉古尔，伤害 +20%，射程和视野 +5",
 
     "荣耀之仆": "荣耀之仆<br>Servants of Glory<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>亲随战士、掷斧兵、狂战士移动速度 +5%",
 
@@ -517,7 +517,7 @@ let ayanami = {
     "紫衫谷": "紫衫谷<br>Ydalir<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>攻城器生产效率 +20%，而且可以前一个时代使用便携式冲车",
 
 
-    "花岗岩大嘴": "花岗岩大嘴<br>Granite Maw<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>135 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>岩石巨人升级为山岭巨人，攻击力 +20%，攻击敌人建筑物时可恢复生命值",
+    "花岗岩大嘴": "花岗岩大嘴<br>Granite Maw<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>135 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>岩石巨人升级为山岭巨人，攻击力 +20%，攻击敌人建筑物时可恢复50%造成伤害量的生命值",
 
     "声望之宴": "声望之宴<br>Feast of Renown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>18 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>城镇中心、山寨可以治疗附近部队，并且获得1.0的食物流",
 
