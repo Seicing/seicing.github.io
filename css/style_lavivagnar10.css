@@ -224,7 +224,7 @@ a:hover {}
     width: 170px;
     padding: 6px 5px 3px 5px;
     border: none;
-    background: #D0C9B7;
+    background: #0366D5;
     text-transform: lowercase;
     font: normal 11px Arial, Helvetica, sans-serif;
 }
@@ -304,7 +304,7 @@ a:hover {}
 .post {
     overflow: hidden;
     margin-bottom: 20px;
-    
+
 }
 
 .post .title {
