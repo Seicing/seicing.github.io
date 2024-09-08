@@ -10,7 +10,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-1::-webkit-scrollbar-button {
-    background-color: rgb(151, 162, 172);
+    background-color: rgb(172, 166, 151);
     display: none;
 }
 
@@ -19,16 +19,16 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-1::-webkit-scrollbar-thumb {
-    background: rgb(151, 162, 172);
+    background: rgb(172, 166, 151);
     border-radius: 4px;
 }
 
 #scroll-1::-webkit-scrollbar-corner {
-    background: rgb(151, 162, 172);
+    background: rgb(172, 166, 151);
 }
 
 #scroll-1::-webkit-scrollbar-resizer {
-    background: rgb(151, 162, 172);
+    background: rgb(172, 166, 151);
 }
 
 #scroll-2::-webkit-scrollbar {
@@ -37,7 +37,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-2::-webkit-scrollbar-button {
-    background-color: rgb(151, 162, 172);
+    background-color: rgb(172, 166, 151);
     display: none;
 }
 
@@ -46,22 +46,22 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-2::-webkit-scrollbar-thumb {
-    background: rgb(151, 162, 172);
+    background: rgb(172, 166, 151);
     border-radius: 4px;
 }
 
 #scroll-2::-webkit-scrollbar-corner {
-    background: rgb(151, 162, 172);
+    background: rgb(172, 166, 151);
 }
 
 #scroll-2::-webkit-scrollbar-resizer {
-    background: rgb(151, 162, 172);
+    background: rgb(172, 166, 151);
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: #eeeff5 url(https://seicing.com/res/img01.png) repeat-x left top;
+    background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
     font-size: 9pt;
     color: #4D4D4D;
 }
@@ -104,7 +104,7 @@ ol {}
 
 a {
     text-decoration: none;
-    color: #4b87cb;
+    color: #D0C9B7;
 }
 
 a:hover {}
@@ -159,7 +159,7 @@ a:hover {}
 }
 
 #logo h1 span {
-    color: #4b87cb;
+    color: #D0C9B7;
 }
 
 #logo h1 a {
@@ -212,7 +212,7 @@ a:hover {}
     width: 170px;
     padding: 6px 5px 3px 5px;
     border: none;
-    background: #4b87cb;
+    background: #D0C9B7;
     text-transform: lowercase;
     font: normal 11px Arial, Helvetica, sans-serif;
 }
@@ -309,7 +309,7 @@ a:hover {}
     text-transform: uppercase;
     font-size: 26px;
     font-weight: normal;
-    color: #4b87cb;
+    color: #D0C9B7;
 }
 
 .post .meta {
@@ -422,7 +422,7 @@ a:hover {}
 
 #sidebar a {
     border: none;
-    color: #4b87ca;
+    color: #857E6E;
 }
 
 #sidebar a:hover {

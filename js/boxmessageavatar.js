@@ -16,6 +16,6 @@ function cleargasek(a) {
         document.getElementById(listText[i] + a).style.display = "none";
     }
     for (var g = 0; g < listButton.length; g++) {
-        document.getElementById(listButton[g] + a).style.color = "#6383a8";
+        document.getElementById(listButton[g] + a).style.color = "#d0c9b7";
     }
 }
