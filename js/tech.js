@@ -140,7 +140,7 @@ let ayanami = {
     "牛": "牛<br>Cattle<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>90 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>上限20头，可以驻扎在养牛场获取食物流，或是被村民宰杀获得<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500食物",
     "食物节庆": "食物节庆<br>Food festival<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <br>食物采集速率 +50%，持续 90 秒",
     "军事节庆": "军事节庆<br>Military festival<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <br>军事单位生产速度 +100%，持续 90 秒",
-    "攻城节庆": "攻城节庆<br>Siege festival<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <br>所有单位的攻城器械和火炬伤害 +50%，持续 90 秒",
+    "攻城节庆": "攻城节庆<br>Siege festival<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <br>攻城锤、手推炮、配重式巨型投石机和火炬的伤害 +50%，持续 90 秒。如完成舰载炮研究，可影响扭力弩炮船",
 
     "圈地": "圈地<br>Enclosures<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>每一块有村民耕种的农田圈地每 5 秒会产生 +1 黄金",
     "重装甲": "重装甲<br>Armor Clad<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武士的远程和近战护甲 +2",
@@ -620,7 +620,7 @@ let ayanami = {
     "马里便宜升级": "马里便宜升级<br>法拉里的知识：升级到老练级别需要的资源和时间减半",
     "收费哨站效果": "收费哨站效果<br>收费哨站：最多40%，每路过一个收费哨站，商人可以额外立即获得8%的交易黄金",
     "马里运输船驻扎": "马里运输船驻扎<br>登陆部队：运输船每驻扎1个单位就获得1个标枪武器(攻击力7、发射间隔时间2.62秒、射程6.50)",
-    "马里攻城节庆": "马里攻城节庆<br>攻城节庆：激活后60秒内火炬伤害和攻城伤害+50%",
+    "马里攻城节庆": "马里攻城节庆<br>攻城节庆：激活后90秒内火炬伤害和攻城伤害+50%",
     "马里金鱼": "马里金鱼<br>鱼类加工：马里渔船可获得收获食物量10%的黄金",
     "马里黄金TC": "马里黄金TC<br>矿业社区：城镇中心的石头成本替代为450黄金",
 
