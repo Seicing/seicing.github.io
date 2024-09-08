@@ -61,7 +61,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url(https://seicing.com/res/img01.jpg) repeat-x left top;
+    background: #E8EAF2 url(https://seicing.com/res/img01.jpg) repeat-x left top;
     font-size: 9pt;
     color: #4D4D4D;
 }
@@ -104,7 +104,7 @@ ol {}
 
 a {
     text-decoration: none;
-    color: #0366D5;
+    color: #4b87cb;
 }
 
 a:hover {}
@@ -159,7 +159,7 @@ a:hover {}
 }
 
 #logo h1 span {
-    color: #0366D5;
+    color: #4b87cb;
 }
 
 #logo h1 a {
@@ -212,7 +212,7 @@ a:hover {}
     width: 170px;
     padding: 6px 5px 3px 5px;
     border: none;
-    background: #0366D5;
+    background: #4b87cb;
     text-transform: lowercase;
     font: normal 11px Arial, Helvetica, sans-serif;
 }
@@ -309,7 +309,7 @@ a:hover {}
     text-transform: uppercase;
     font-size: 26px;
     font-weight: normal;
-    color: #0366D5;
+    color: #4b87cb;
 }
 
 .post .meta {
