@@ -263,7 +263,7 @@ let ayanami = {
 
     "祖先": "祖先<br>Ancestors<br>选中一个位置，唤醒祖先的士兵或船只，让他们在短时间内再次战斗",
     "葬礼仪式": "葬礼仪式<br>Funeral Rites<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>人类士兵和英雄死亡时会返还5黄金",
-    "玛特圣灵": "玛特圣灵<br>Spirit of Ma'at<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>祭司和法老的治愈速度+100%，祭司便宜30%",
+    "玛特圣灵": "玛特圣灵<br>Spirit of Ma'at<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>祭司和法老的治愈速度+50%，祭司便宜30%",
     "双女神": "双女神<br>Nebty<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>祭司和法老对神话单位部队伤害加成率+100%",
     "丧葬巨船": "丧葬巨船<br>Funeral Barge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>埃及战船在死亡时有10%几率生成1个利维坦",
 
@@ -369,7 +369,7 @@ let ayanami = {
 
 
     "恢复": "恢复<br>Restoration<br>选中一个地点以治疗单位并修复属于你或你盟友的建筑、攻城武器和船只",
-    "萨里沙长矛": "萨里沙长矛<br>Sarissa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊步兵近战攻击+10%，近战射程+1.5",
+    "萨里沙长矛": "萨里沙长矛<br>Sarissa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵近战攻击+10%，近战射程+1.0",
     "宙斯盾": "宙斯盾<br>Aegis Shield<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵远程脆弱率-15%",
     "米诺斯迷宫": "米诺斯迷宫<br>Labyrinth of Minos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>升级米诺陶变成牛头人米诺陶，移动速度+20%，生命值+30%",
     "停火": "停火<br>Ceasefire<br>选中地图上的任意位置，在短时间内防止每个玩家战斗，并放缓远程防御工事的建造速度",
@@ -405,7 +405,7 @@ let ayanami = {
 
 
     "瘟疫": "瘟疫<br>Pestilence<br>选中敌方城镇，使其感染瘟疫。瘟疫可以阻止建筑发射炮弹并减慢单位的生产速度",
-    "福波斯的恐惧之矛": "福波斯的恐惧之矛<br>Phobos' Spear of Panic<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊步兵、民兵、希腊骑兵获得额外的1神圣伤害",
+    "福波斯的恐惧之矛": "福波斯的恐惧之矛<br>Phobos' Spear of Panic<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵、民兵、希腊骑兵获得额外的1神圣伤害",
     "厄倪俄的恐怖之弓": "厄倪俄的恐怖之弓<br>Enyo's Bow of Horror<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊弓兵+10%攻击力，攻击速度+15%",
     "得摩斯的恐惧之剑": "得摩斯的恐惧之剑<br>Deimos' Sword of Dread<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>禁卫步兵+15%攻击力，并可以提前1个时代使用他们",
     "克洛诺斯之旨": "克洛诺斯之旨<br>Will of Kronos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>独眼巨人升级为独眼巨人长老，近战攻击伤害范围+2，特殊攻击伤害范围+2",
@@ -442,7 +442,7 @@ let ayanami = {
     "火山锻造": "火山锻造<br>Volcanic Forge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>机械战士远程脆弱率-20%，英雄远程脆弱率-10%，人类部队和船只远程脆弱率-10%",
     "感知": "感知<br>Perception<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100   <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>先知视野+10%，恩惠最大负载量+10%",
 
-    "至高天速度": "至高天速度<br>Empyrian Speed<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5   <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>步兵移动速度+10%",
+    "至高天速度": "至高天速度<br>Empyrian Speed<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5   <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>步兵移动速度+10%",
 
 
 
@@ -506,7 +506,7 @@ let ayanami = {
 
 
 
-    "弗雷的礼物": "弗雷的礼物<br>Freyr's Gift<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>8<br>人类士兵和英雄生命值 +25%，每研究1个科技，此科技的恩惠成本-5",
+    "弗雷的礼物": "弗雷的礼物<br>Freyr's Gift<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>8<br>所有单位生命值 +10%，每研究1个科技，此科技的恩惠成本-5",
 
     "瓦尔加尔得": "瓦尔加尔得<br>Valgaldr<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>德拉古尔升级为亡灵德拉古尔，伤害 +20%，射程和视野 +5",
 
@@ -553,7 +553,7 @@ let ayanami = {
     "盖亚加成1": "盖亚加成1<br>经济建筑(城镇中心、庄园、经济行会、市场)周边缠绕着浓密的植被",
     "盖亚加成2": "盖亚加成2<br>植被内的单位和建筑会被以每秒1生命值的效率治疗",
     "盖亚加成3": "盖亚加成3<br>开局以英雄市民开始游戏，英雄市民晋升成本-25%",
-    "盖亚加成4": "盖亚加成4<br>经济行会科技便宜30%，并可以早一个时代研发",
+    "盖亚加成4": "盖亚加成4<br>经济行会科技便宜35%，并可以早一个时代研发",
 
     "乌拉诺斯加成1": "乌拉诺斯加成1<br>每个时代都可以建造1个新的天行通道",
     "乌拉诺斯加成2": "乌拉诺斯加成2<br>所有部队的视野+5",
@@ -594,14 +594,14 @@ let ayanami = {
     "奥丁加成3": "奥丁加成3<br>人类部队和英雄每秒恢复0.7生命值，每个时代提高0.1效率 ",
     "奥丁加成4": "奥丁加成4<br>大礼堂部队生命值+10%，恩惠效率+10%",
 
-    "拉加成1": "拉加成1<br>由法老赋能的纪念碑能够强化附近30格内的建筑，效率只有法老直接赋能的60%",
-    "拉加成2": "拉加成2<br>祭司可以赋能(相比于法老只有60%的效率)",
+    "拉加成1": "拉加成1<br>由法老赋能的纪念碑能够强化附近30格内的建筑，效率只有法老直接赋能的70%",
+    "拉加成2": "拉加成2<br>祭司可以赋能(相比于法老只有70%的效率)",
     "拉加成3": "拉加成3<br>骆驼骑兵、战车弓兵、战象攻击力+20%",
     "拉加成4": "拉加成4<br>纪念碑成本-25%，生命值+20%",
 
     "伊希斯加成1": "伊希斯加成1<br>所有科技减少10%成本",
-    "伊希斯加成2": "伊希斯加成2<br>纪念碑为20格内范围提供神力护盾，赋能时提高到40格",
-    "伊希斯加成3": "伊希斯加成3<br>被赋能的纪念碑治疗周围20格的部队，并提高100%恩惠获取效率",
+    "伊希斯加成2": "伊希斯加成2<br>纪念碑为25格内范围提供神力护盾，赋能时提高到40格",
+    "伊希斯加成3": "伊希斯加成3<br>被赋能的纪念碑治疗周围25格的部队，并提高100%恩惠获取效率",
     "伊希斯加成4": "伊希斯加成4<br>方尖碑便宜5黄金，建造速度+60%",
     "伊希斯加成5": "伊希斯加成5<br>升级可为人类士兵提供0.33%生命值",
     "伊希斯加成6": "伊希斯加成6<br>城镇中心可额外提供5人口",
@@ -621,12 +621,12 @@ let ayanami = {
     "哈得斯加成1": "哈得斯加成1<br>人类部队被杀后有20%的几率变成阴魂出现在圣殿周围，阴魂会根据时代变得越来越强",
     "哈得斯加成2": "哈得斯加成2<br>远程防御设施+2射程",
     "哈得斯加成3": "哈得斯加成3<br>远程部队和远程英雄+1射程",
-    "哈得斯加成4": "哈得斯加成4<br>神话单位+20%生命值",
+    "哈得斯加成4": "哈得斯加成4<br>神话单位+15%生命值",
     "哈得斯加成5": "哈得斯加成5<br>弹道学和燃烧沥青会在对应时代马上研发完毕",
 
     "宙斯加成1": "宙斯加成1<br>开局拥有10恩惠",
     "宙斯加成2": "宙斯加成2<br>村民恩惠效率+20%",
-    "宙斯加成3": "宙斯加成3<br>希腊步兵移动速度+15%",
+    "宙斯加成3": "宙斯加成3<br>重甲兵移动速度+15%",
     "宙斯加成4": "宙斯加成4<br>步兵单位对建筑物附加伤害+50%",
     "宙斯加成5": "宙斯加成5<br>神话单位-1人口占用",
 
