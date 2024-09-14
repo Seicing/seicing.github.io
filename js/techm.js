@@ -48,7 +48,7 @@ let ayanami = {
     "尼罗河洪水": "尼罗河洪水<br>Flood of the Nile<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动产生1食物",
 
     "雨": "雨<br>Rain<br>选中任意位置，让地图上的所有村民更快地从农田采集资源。你的村民采集的速度最快",
-    "犀牛皮": "犀牛皮<br>Skin of the Rhino<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>埃及劳工近战脆弱率和远程脆弱率-30%",
+    "犀牛皮": "犀牛皮<br>Skin of the Rhino<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>劳工近战脆弱率和远程脆弱率-30%",
 
 
     "全视": "全视<br>Vision<br>选中要暂时显示的地图区域",
@@ -241,7 +241,7 @@ let ayanami = {
 
     "日蚀": "日蚀<br>Eclipse<br>选中地图上的任意位置，把白天变成黑夜，提高你的神话单位的能力，并加快你的纪念碑生成恩惠的速度",
     "圣猫": "圣猫<br>Sacred Cats<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>农场收集效率+5%，其他食物采集效率+10%",
-    "乌普奥特的平头斧": "乌普奥特的平头斧<br>Adze of Wepwawet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>埃及劳工一击砍倒树木，树木收集效率+10%",
+    "乌普奥特的平头斧": "乌普奥特的平头斧<br>Adze of Wepwawet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>劳工一击砍倒树木，树木收集效率+10%",
     "羊头狮身": "羊头狮身<br>Criosphinx<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>斯芬克斯升级为羊头狮身，生命值+20%，近战伤害+20%，攻城伤害+50%",
     "鹰头狮身": "鹰头狮身<br>Hieracosphinx<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>羊头狮身升级为鹰头狮身，移动速度+20%，近战伤害+20%，攻城伤害+50%",
 
@@ -278,7 +278,7 @@ let ayanami = {
     "流星": "流星<br>Meteor<br>选中敌方一个区域，用从天而降的炽热陨石进行轰炸。陨石对建筑有很强的杀伤力，对单位的破坏效果适中",
     "帝王谷": "帝王谷<br>Valley of the Kings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>对兵营和埃及要塞赋能时，一次性生产2个部队",
     "狮神之牙": "狮神之牙<br>Tusks of Apedemak<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>战象近战伤害+10%，成本-10%，人口数-1",
-    "托特之书": "托特之书<br>Book of Thoth<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>埃及劳工+10%收集效率",
+    "托特之书": "托特之书<br>Book of Thoth<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>劳工+10%收集效率",
 
 
     "流沙": "流沙<br>Shifting Sands<br>选中你自己的或盟友的单位，然后选中你想传送他们的位置",
