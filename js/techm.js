@@ -223,8 +223,8 @@ let ayanami = {
     "重型手推弩炮": "重型手推弩炮<br>Heavy Chieroballista<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>手推弩炮生命值+10%，攻击力+25%",
     "精锐手推弩炮": "精锐手推弩炮<br>Champion Chieroballista<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>手推弩炮生命值+10%，攻击力+25%",
 
-    "服役山寨士兵": "服役山寨士兵<br>Levy Hill Fort<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>山寨单位训练时间-20%",
-    "征召山寨士兵": "征召山寨士兵<br>Conscript Hill Fort<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>山寨单位训练时间-20%",
+    "服役山城堡士兵": "服役山城堡士兵<br>Levy Hill Fort<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>山城堡单位训练时间-20%",
+    "征召山城堡士兵": "征召山城堡士兵<br>Conscript Hill Fort<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>山城堡单位训练时间-20%",
 
 
     "重装战车弓兵": "重装战车弓兵<br>Heavy Chariots<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>战车弓兵+10%生命值，+20%攻击力，+1视野",
@@ -519,7 +519,7 @@ let ayanami = {
 
     "花岗岩大嘴": "花岗岩大嘴<br>Granite Maw<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>135 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>岩石巨人升级为山岭巨人，攻击力 +20%，攻击敌人建筑物时可恢复50%造成伤害量的生命值",
 
-    "声望之宴": "声望之宴<br>Feast of Renown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>18 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>城镇中心、山寨可以治疗附近部队，并且获得1.0的食物流",
+    "声望之宴": "声望之宴<br>Feast of Renown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>18 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>城镇中心、山城堡可以治疗附近部队，并且获得1.0的食物流",
 
     "波浪九女": "波浪九女<br>Nine Waves<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>178 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄和攻城武器的移动速度+10%， 伤害+20%",
 
@@ -539,7 +539,7 @@ let ayanami = {
 
 
     "古林博斯帝": "古林博斯帝<br>Gullinbursti<br>以你（或盟友）的一个城镇中心为目标，召唤并指挥弗雷的黄金野猪古林博斯帝保卫该区域。古林博斯帝会随时代的发展愈发强大",
-    "阿斯加德堡垒": "阿斯加德堡垒<br>Asgardian Bastion<br>选择一个地点召唤地基，地基完全建成后会变成一座幽灵山寨。在以后的时代建造速度会更快",
+    "阿斯加德堡垒": "阿斯加德堡垒<br>Asgardian Bastion<br>选择一个地点召唤地基，地基完全建成后会变成一座幽灵山城堡。在以后的时代建造速度会更快",
     "风暴": "风暴<br>Tempest<br>对一个地点发动一场肆虐的冰雹风暴，对敌人造成伤害并极大地减缓他们的攻击速度和移动速度",
     "火海": "火海<br>Inferno<br>创造一条炽热的毁灭之路。巨狼芬里厄会出现并发起冲锋，将敌人吞没在火焰中，然后爆发出末日般的炼狱之火，毁灭一切",
 
@@ -585,7 +585,7 @@ let ayanami = {
     "索尔加成4": "索尔加成4<br>矮人军械库科技研究完成时，提供1个免费的矮人",
 
     "弗雷加成1": "弗雷加成1<br>科技所消耗的食物、木材和黄金 -50%，但研究时间会延长 150%",
-    "弗雷加成2": "弗雷加成2<br>山寨及其训练的单位造成伤害 +10%",
+    "弗雷加成2": "弗雷加成2<br>山城堡及其训练的单位造成伤害 +10%",
     "弗雷加成3": "弗雷加成3<br>采集者和矮人可以进行建筑物修复，所有部队减少100%修理时的资源消耗",
 
 
@@ -609,7 +609,7 @@ let ayanami = {
     "赛特加成1": "赛特加成1<br>纪念碑减少附近兵营和埃及要塞5%的生产成本",
     "赛特加成2": "赛特加成2<br>祭司可以转化野生动物，法老通过恩惠召唤动物，被控制的动物-25%食物量",
     "赛特加成3": "赛特加成3<br>投石手、斧战士、长矛兵移动速度+5%",
-    "赛特加成4": "赛特加成4<br>埃及要塞、兵营、攻城器制造所黄金成本-25%",
+    "赛特加成4": "赛特加成4<br>埃及要塞、兵营、攻城设施黄金成本-25%",
 
 
     "波塞冬加成1": "波塞冬加成1<br>篷车、骑兵和神话部队+0.4移动速度",
