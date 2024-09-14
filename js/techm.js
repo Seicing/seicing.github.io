@@ -16,7 +16,7 @@ let ayanami = {
     "金字压帖": "金字压帖<br>Paper Talisman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>戟兵近战脆弱率和远程脆弱率-10%",
     "科举": "科举<br>Imperial Examination<br> 45秒内玩家建造速度和单位训练速度+40%",
     "土地庙": "土地庙<br>House Altars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>花园资源效率+20%",
-    "墓葬": "墓葬<br>Burials<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>僧侣转化速度+30%",
+    "墓葬": "墓葬<br>Burials<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>僧侣招降速度+30%",
     "社神": "社神<br>Landlord Spirit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>农民生产时间-30%",
     "连根拔起": "连根拔起<br>Uproot<br> 使一个区域的建筑被树根所缠绕造成伤害，持续50秒",
     "驱魔": "驱魔<br>Demon Slayer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>仙人对神话单位伤害倍率+2倍",
@@ -607,7 +607,7 @@ let ayanami = {
     "伊希斯加成6": "伊希斯加成6<br>城镇中心可额外提供5人口",
 
     "赛特加成1": "赛特加成1<br>纪念碑减少附近兵营和埃及要塞5%的生产成本",
-    "赛特加成2": "赛特加成2<br>祭司可以转化野生动物，法老通过恩惠召唤动物，被控制的动物-25%食物量",
+    "赛特加成2": "赛特加成2<br>祭司可以招降野生动物，法老通过恩惠召唤动物，被控制的动物-25%食物量",
     "赛特加成3": "赛特加成3<br>投石手、斧战士、长矛兵移动速度+5%",
     "赛特加成4": "赛特加成4<br>埃及要塞、兵营、攻城设施黄金成本-25%",
 
