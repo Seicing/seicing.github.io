@@ -405,7 +405,7 @@ let ayanami = {
 
 
     "瘟疫": "瘟疫<br>Pestilence<br>选中敌方城镇，使其感染瘟疫。瘟疫可以阻止建筑发射炮弹并减慢单位的生产速度",
-    "福波斯的恐惧之矛": "福波斯的恐惧之矛<br>Phobos' Spear of Panic<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵、民兵、希腊骑兵获得额外的1神圣伤害",
+    "福波斯的恐惧之矛": "福波斯的恐惧之矛<br>Phobos' Spear of Panic<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵、民兵、枪骑兵获得额外的1神圣伤害",
     "厄倪俄的恐怖之弓": "厄倪俄的恐怖之弓<br>Enyo's Bow of Horror<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊弓兵+10%攻击力，攻击速度+15%",
     "得摩斯的恐惧之剑": "得摩斯的恐惧之剑<br>Deimos' Sword of Dread<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>禁卫步兵+15%攻击力，并可以提前1个时代使用他们",
     "克洛诺斯之旨": "克洛诺斯之旨<br>Will of Kronos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>独眼巨人升级为独眼巨人长老，近战攻击伤害范围+2，特殊攻击伤害范围+2",
@@ -594,8 +594,8 @@ let ayanami = {
     "奥丁加成3": "奥丁加成3<br>人类部队和英雄每秒恢复0.7生命值，每个时代提高0.1效率 ",
     "奥丁加成4": "奥丁加成4<br>大礼堂部队生命值+10%，恩惠效率+10%",
 
-    "拉加成1": "拉加成1<br>由法老赋能的纪念碑能够强化附近30格内的建筑，效率只有法老直接赋能的70%",
-    "拉加成2": "拉加成2<br>祭司可以赋能(相比于法老只有70%的效率)",
+    "拉加成1": "拉加成1<br>由法老赋能的纪念碑能够强化附近30格内的建筑，但效率只有法老赋能的70%",
+    "拉加成2": "拉加成2<br>祭司可以赋能，但效率只有法老赋能的70%",
     "拉加成3": "拉加成3<br>骆驼骑兵、战车弓兵、战象攻击力+20%",
     "拉加成4": "拉加成4<br>纪念碑成本-25%，生命值+20%",
 
@@ -618,7 +618,7 @@ let ayanami = {
     "波塞冬加成4": "波塞冬加成4<br>民兵在建筑物被烧毁后出现保卫家园",
     "波塞冬加成5": "波塞冬加成5<br>建造圣殿和码头后生成马头鱼尾怪，死亡的马头鱼尾怪会在码头重生",
 
-    "哈得斯加成1": "哈得斯加成1<br>人类部队被杀后有20%的几率变成阴魂出现在圣殿周围，阴魂会根据时代变得越来越强",
+    "哈得斯加成1": "哈得斯加成1<br>人类部队被杀后有20%的几率变成阴魂出现在圣殿周围",
     "哈得斯加成2": "哈得斯加成2<br>远程防御设施+2射程",
     "哈得斯加成3": "哈得斯加成3<br>远程部队和远程英雄+1射程",
     "哈得斯加成4": "哈得斯加成4<br>神话单位+15%生命值",
