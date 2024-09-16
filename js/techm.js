@@ -59,7 +59,7 @@ let ayanami = {
     "狂暴": "狂暴<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>狂战士每失去1%生命值，攻击速度+2.5%",
 
     "间谍": "间谍<br>Spy<br>获得所选敌方单位的视线",
-    "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25 <br>获取附近野生动物的视野",
+    "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25 <br>单位可缓慢获得视野内其他自然生物的视野",
 
 
     "矮人矿山": "矮人矿山<br>Dwarven Mine<br>召唤一座矿山，负责采矿的村民会采集黄金。如果在后面几个时代召唤，这座神奇的矿山会蕴含更多黄金",
@@ -483,7 +483,7 @@ let ayanami = {
     "波塞冬的秘密": "波塞冬的秘密<br>Poseidon's Secret<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵移动速度+10%，成本-15%",
     "石之长矛": "石之长矛<br>Lance of Stone<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>康塔留斯骑兵和其英雄近战射程+0.5，攻击力+15%",
     "海洋之女": "海洋之女<br>Daughters of the sea<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150   <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>涅瑞伊得斯移动速度+30%，能力冷却时间-50%",
-    "先知之眼": "先知之眼<br>Prophetic Sight<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100   <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>8 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>先知恩惠收集效率+10%，最大恩惠负载量+10%，可以看到其他玩家的工作序列",
+    "先知之眼": "先知之眼<br>Prophetic Sight<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100   <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>8 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>先知恩惠变化速度+10%，最大恩惠负载量+10%，可以看到其他玩家的工作序列",
 
 
 
