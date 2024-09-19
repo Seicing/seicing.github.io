@@ -14,7 +14,7 @@ let ayanami = {
     "横切锯": "横切锯<br>Crosscut Saw<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>村民的木材采集速率增加 15%，木材采集者运载量 +5",
 
     "特制矿锄": "特制矿锄<br>Specialized Pick<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的黄金和石料采集速率提升 15%",
-    "酸蒸馏": "酸蒸馏<br>Acid Distillation<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>村民的黄金和石料采集速率提升 15%",
+    "竖井采矿": "竖井采矿<br>Shaft Mining<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>村民的黄金和石料采集速率提升 15%",
     "灰吹法": "灰吹法<br>Cupellation<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>黄金采集者额外存放 15% 的资源",
 
     "海军射箭槽": "海军射箭槽<br>Naval Arrowslits<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
@@ -233,7 +233,7 @@ let ayanami = {
     "横切锯sul": "横切锯<br>Crosscut Saw<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>900<br>村民的木材采集速率增加 15%，木材采集者运载量 +5",
 
     "特制矿锄sul": "特制矿锄<br>Specialized Pick<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>157<br>村民的黄金和石料采集速率提升 15%",
-    "酸蒸馏sul": "酸蒸馏<br>Acid Distillation<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>300<br>村民的黄金和石料采集速率提升 15%",
+    "竖井采矿sul": "竖井采矿<br>Shaft Mining<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>300<br>村民的黄金和石料采集速率提升 15%",
     "灰吹法sul": "灰吹法<br>Cupellation<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>900<br>黄金采集者额外存放 15% 的资源",
 
     "海军射箭槽sul": "海军射箭槽<br>Naval Arrowslits<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>在这个码头上添加一个防御型射箭槽，只会对船只作出攻击",
@@ -324,7 +324,7 @@ let ayanami = {
     "横切锯已强化": "横切锯(已强化)<br>Crosscut Saw(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>750    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>村民的木材采集速率提升 22.5%，木材采集者的运载量 +5。 如果已完成横切锯研究，则提升 7.5%",
 
     "特制矿锄已强化": "特制矿锄(已强化)<br>Specialized Pick(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>150    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的黄金采集速率提升 22.5%。 如果已完成特制矿锄研究，则提升 7.5%",
-    "酸蒸馏已强化": "酸蒸馏(已强化)<br>Acid Distillation(Improved)<br>  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>350    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>村民的黄金采集速率提升 22.5%。 如果已完成酸蒸馏研究，则提升 7.5%",
+    "竖井采矿已强化": "竖井采矿(已强化)<br>Shaft Mining(Improved)<br>  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>350    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>村民的黄金采集速率提升 22.5%。 如果已完成竖井采矿研究，则提升 7.5%",
     "灰吹法已强化": "灰吹法(已强化)<br>Cupellation(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>750    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>黄金采集者存放的资源额外 22.5%。 如果已完成灰吹法研究，则提升 7.5%",
 
     "润滑轮轴已强化": "润滑轮轴(已强化)<br>Greased Axles(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城器械的移动速度 +20%。 如果已完成润滑轮轴研究，则 +5%",
