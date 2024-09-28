@@ -350,7 +350,7 @@ let ayanami = {
 
 
     "治疗之泉": "治疗之泉<br>Healing Spring<br>在地图上选中一个位置，创建一个可以治疗附近所有盟友单位的泉水。泉水无法被摧毁，但可以被敌军占领",
-    "洞穴巨人": "洞穴巨人<br>Hamarrtroll<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>把巨人升级到洞穴巨人，远程特殊攻击伤害+100%，伤害范围+100%",
+    "洞穴巨魔": "洞穴巨魔<br>Hamarrtroll<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>把巨人升级到洞穴巨魔，远程特殊攻击伤害+100%，伤害范围+100%",
     "领主大殿": "领主大殿<br>Hall of Thanes<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>所有步兵移动速度+10%，英雄部队额外+5%",
 
 
@@ -370,7 +370,7 @@ let ayanami = {
 
     "恢复": "恢复<br>Restoration<br>选中一个地点以治疗单位并修复属于你或你盟友的建筑、攻城武器和船只",
     "萨里沙长矛": "萨里沙长矛<br>Sarissa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵近战攻击+10%，近战射程+1.0",
-    "宙斯盾": "宙斯盾<br>Aegis Shield<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵远程脆弱率-15%",
+    "埃癸斯神盾": "埃癸斯神盾<br>Aegis Shield<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵远程脆弱率-15%",
     "米诺斯迷宫": "米诺斯迷宫<br>Labyrinth of Minos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>升级米诺陶变成牛头人米诺陶，移动速度+20%，生命值+30%",
     "停火": "停火<br>Ceasefire<br>选中地图上的任意位置，在短时间内防止每个玩家战斗，并放缓远程防御工事的建造速度",
     "全力冲锋": "全力冲锋<br>Spirited Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵和半人马+10%移动速度和攻击力",
