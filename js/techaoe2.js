@@ -680,111 +680,149 @@ let ayanami = {
     "费雷特斯": "费雷特斯<br>Fereters<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>550 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>除长枪兵系外的步兵生命值+30，牧师战士恢复速度+100%",
 
 
+    "动员兵": "动员兵<br>Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>基础的步兵剑士，便宜，生产快速<br><br>升级到 槌兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
+    "槌兵": "槌兵<br>Maceman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>比动员兵更强大，便宜，生产快速<br><br>升级到 剑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
+    "剑兵": "剑兵<br>Swordsman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>比槌兵更强大，便宜，生产快速<br><br>升级到 精英步兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>750 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>85",
+    "精英步兵": "精英步兵<br>Paragon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>比剑兵更强大，便宜，生产快速",
+    "古代侦察兵": "侦察兵<br>Scout Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>快速而视野开阔的侦查骑兵部队<br><br>升级到 轻骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45",
+    "古代轻骑兵": "轻骑兵<br>Light Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>比侦察兵更强大，快速而视野开阔的侦查骑兵部队<br><br>升级到 翼骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "突袭者": "突袭者<br>Raider<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>比轻骑兵更强大，快速而视野开阔的侦查骑兵部队",
+    "古代弓箭手": "弓箭手<br>Bowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35<br>轻装的敏捷部队，擅长远距离战斗，近距离弱小<br><br>升级到 复合弓箭手<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35",
+    "复合弓箭手": "复合弓箭手<br>Laminated Bowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35<br>轻装的敏捷部队，擅长远距离战斗，近距离弱小<br><br>升级到 反曲弓箭手<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "反曲弓箭手": "反曲弓箭手<br>Recurve Bowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35<br>复合弓箭手的升级，轻装的敏捷部队",
+
+
+    "古代长枪兵": "长枪兵<br>Spearman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>22<br>中型步兵，善于对付骑兵<br><br>升级到 近卫兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>160 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>90 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45",
+    "近卫兵": "近卫兵<br>Guardsman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>22<br>比长枪兵更加强大的中型步兵，善于对付骑兵<br><br>升级到 长戟兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "精锐近卫兵": "精锐近卫兵<br>Elite Guardsman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>22<br>比近卫兵更加强大的中型步兵，善于对付骑兵",
+
+    "长矛骑兵": "长矛骑兵<br>Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>快速而致命的重型骑兵部队<br><br>升级到 突击骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
+    "突击骑兵": "突击骑兵<br>Shock Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>比起长矛骑兵更加强大，快速而致命的重型骑兵部队<br><br>升级到 帝国骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>170",
+    "帝国骑兵": "帝国骑兵<br>Imperial Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>比起突击骑兵更加强大，快速而致命的重型骑兵部队",
+
+    "矛兵": "矛兵<br>Skirmisher<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>22<br>拥有远程护甲和对射手攻击力的远程部队<br><br>升级到 战矛兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>230 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>130 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "战矛兵": "战矛兵<br>Elite Skirmisher<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>22<br>比掷矛手更强大，拥有远程护甲和对射手攻击力的远程部队",
+    "希腊步兵": "希腊步兵<br>Hoplite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可为附近的其他希腊步兵提供+1近战护甲的希腊重装步兵<br>升级到 精锐希腊步兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>550 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "精锐希腊步兵": "精锐希腊步兵<br>Elite Hoplite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可为附近的其他希腊步兵提供+1近战护甲的希腊重装步兵",
+
+    "战争战车": "战争战车<br>War Chariot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有践踏伤害的反步兵骑兵<br>升级到 精锐战争战车<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "精锐战争战车": "精锐战争战车<br>Elite War Chariot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有践踏伤害的反步兵骑兵",
+
+    "腹弩手": "腹弩手<br>Gastraphetoros<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>34<br>强大的远程反步兵攻击，但命中率不高",
 
 
 
 
+    "港口": "港口<br>Port<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35<br>生产经济海上单位的码头",
 
-    "港口": "港口<br>Port<br>【待补充】",
-    "动员兵": "动员兵<br>Levy<br>【待补充】",
-    "槌兵": "槌兵<br>Maceman<br>【待补充】",
-    "剑兵": "剑兵<br>Swordsman<br>【待补充】",
-    "精英步兵": "精英步兵<br>Paragon<br>【待补充】",
-    "古代侦察兵": "侦察兵<br>Scout Cavalry<br>【待补充】",
-    "古代轻骑兵": "轻骑兵<br>Light Cavalry<br>【待补充】",
-    "突袭者": "突袭者<br>Raider<br>【待补充】",
-    "古代弓箭手": "弓箭手<br>Bowman<br>【待补充】",
-    "复合弓箭手": "复合弓箭手<br>Laminated Bowman<br>【待补充】",
-    "反曲弓箭手": "反曲弓箭手<br>Recurve Bowman<br>【待补充】",
-    "轻型小船": "轻型小船<br>【待补充】<br>【待补充】",
-    "战斗小船": "战斗小船<br>【待补充】<br>【待补充】",
-    "重型战斗小船": "重型战斗小船<br>【待补充】<br>【待补充】",
-    "精锐战斗小船": "精锐战斗小船<br>【待补充】<br>【待补充】",
-    "古代长枪兵": "长枪兵<br>Spearman<br>【待补充】",
-    "近卫兵": "近卫兵<br>Guardsman<br>【待补充】",
-    "精锐近卫兵": "精锐近卫兵<br>Elite Guardsman<br>【待补充】",
-    "长矛骑兵": "长矛骑兵<br>Lancer<br>【待补充】",
-    "突击骑兵": "突击骑兵<br>Shock Cavalry<br>【待补充】",
-    "帝国骑兵": "帝国骑兵<br>Imperial Cavalry<br>【待补充】",
-    "矛兵": "矛兵<br>Skirmisher<br>【待补充】",
-    "战矛兵": "战矛兵<br>Elite Skirmisher<br>【待补充】",
-    "希腊步兵": "希腊步兵<br>Hoplite<br>【待补充】",
-    "精锐希腊步兵": "精锐希腊步兵<br>Elite Hoplite<br>【待补充】",
-    "战争战车": "战争战车<br>War Chariot<br>【待补充】",
-    "精锐战争战车": "精锐战争战车<br>Elite War Chariot<br>【待补充】",
-    "战斗演习": "战斗演习<br>Battle Drills<br>【待补充】",
-    "腹弩手": "腹弩手<br>Gastraphetoros<br>【待补充】",
-    "造船厂": "造船厂<br>Shipyard<br>【待补充】",
-    "桨帆船": "桨帆船<br>【待补充】<br>【待补充】",
-    "双层桨座战船": "双层桨座战船<br>【待补充】<br>【待补充】",
-    "三列桨战船": "三列桨战船<br>【待补充】<br>【待补充】",
-    "古代战船": "战船<br>【待补充】<br>【待补充】",
-    "弩炮战船": "弩炮战船<br>【待补充】<br>【待补充】",
-    "精锐战船": "精锐战船<br>【待补充】<br>【待补充】",
-    "学院": "学院<br>Academy<br>【待补充】",
-    "圣殿": "圣殿<br>Temple<br>【待补充】",
-    "燃烧筏": "燃烧筏<br>【待补充】<br>【待补充】",
-    "燃烧船": "燃烧船<br>【待补充】<br>【待补充】",
-    "重型燃烧船": "重型燃烧船<br>【待补充】<br>【待补充】",
-    "女祭司": "女祭司<br>Priestess<br>【待补充】",
-    "投石舰": "投石舰<br>【待补充】<br>【待补充】",
-    "中型投石舰": "中型投石舰<br>【待补充】<br>【待补充】",
-    "棱堡": "棱堡<br>Fort<br>【待补充】",
-    "打靶": "打靶<br>【待补充】<br>【待补充】",
-    "灯塔": "灯塔<br>【待补充】<br>【待补充】",
-    "火焰箭": "火焰箭<br>【待补充】<br>【待补充】",
-    "辟邪魔法": "辟邪魔法<br>【待补充】<br>【待补充】",
-    "利维坦": "利维坦<br>【待补充】<br>【待补充】",
-    "船底加固": "船底加固<br>【待补充】<br>【待补充】",
-    "伊沃卡提奥": "伊沃卡提奥<br>【待补充】<br>【待补充】",
-    "调和主义": "调和主义<br>【待补充】<br>【待补充】",
-    "铁杉": "铁杉<br>【待补充】<br>【待补充】",
-    "堡垒": "堡垒<br>【待补充】<br>【待补充】",
-    "长生军": "长生军<br>Immortal<br>【待补充】",
-    "精锐长生军": "精锐长生军<br>Elite Immortal<br>【待补充】",
-    "密教": "密教<br>【待补充】<br>【待补充】",
-    "驱魔": "驱魔<br>【待补充】<br>【待补充】",
-    "净化": "净化<br>【待补充】<br>【待补充】",
-    "脏卜": "脏卜<br>【待补充】<br>【待补充】",
 
-    "三百卫士": "三百卫士<br>Hippeus<br>【待补充】",
-    "精锐三百卫士": "精锐三百卫士<br>Elite Hippeus<br>【待补充】",
+    "轻型小船": "轻型小船<br>Lembos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有弱近战能力的侦察船<br>升级到 战斗小船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "战斗小船": "战斗小船<br>War Lembos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有弱近战能力的侦察船<br>升级到 重型战斗小船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "重型战斗小船": "重型战斗小船<br>Heavy Lembos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有弱近战能力的侦察船<br>升级到 精锐战斗小船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>170 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "精锐战斗小船": "精锐战斗小船<br>Elite Lembos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有弱近战能力的侦察船",
+
+
+    "造船厂": "造船厂<br>Shipyard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35<br>生产军事海上单位的码头",
+
+    "桨帆船": "桨帆船<br>Monoreme<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>具有冲锋攻击的近战船只<br>升级到 双层桨座战船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>160 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>95 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "双层桨座战船": "双层桨座战船<br>Bireme<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>比桨帆船强大，具有冲锋攻击的近战船只<br>升级到 三列桨战船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>160 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>95 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "三列桨战船": "三列桨战船<br>Trireme<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>比双层桨座战船强大，具有冲锋攻击的近战船只",
+
+    "古代战船": "战船<br>Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>全能型战船，有不俗的攻击范围<br><br>升级到 弩炮战船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>135 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+
+    "弩炮战船": "弩炮战船<br>War Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比战船强大，全能型战船，有不俗的攻击范围<br><br>升级到 精锐战船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>315 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65",
+
+    "精锐战船": "精锐战船<br>Elite Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比弩炮战船强大，全能型战船，有不俗的攻击范围",
+
+
+
+
+    "燃烧筏": "燃烧筏<br>Incendiary Raft<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>装填大量爆炸物，爆破自身进行攻击<br><br>升级到 燃烧船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>155 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】",
+    "燃烧船": "燃烧船<br>Incendiary Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>装填大量爆炸物，爆破自身进行攻击<br><br>升级到 重型燃烧船<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "重型燃烧船": "重型燃烧船<br>Heavy Incendiary Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>比燃烧船坚固，装填大量爆炸物，爆破自身进行攻击",
+
+    "投石舰": "投石舰<br>Catapult Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有远程溅射伤害的战舰<br>升级到 中型投石舰<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>",
+    "中型投石舰": "中型投石舰<br>Onager Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>比投石舰更强，拥有远程溅射伤害的战舰",
+
+    "利维坦": "利维坦<br>Leviathan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有超远攻击距离的反建筑战舰，可使附近的战舰攻击更快",
+
+    "船底加固": "船底加固<br>Hypozomata<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>船只+1远程护甲",
+
+    "堡垒": "堡垒<br>Fort<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>650 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>200<br>创造独特单位、投石机以及改进村民和军队能力",
+
+    "学院": "学院<br>Academy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>研究对单位和建筑物有益的科技",
+    "圣殿": "圣殿<br>Temple<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>生产和升级女祭司，驻扎遗物产生黄金",
+
+    "打靶": "打靶<br>Target Practice<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>远程部队射击更容易命中敌人",
+
+    "灯塔": "灯塔<br>Lighthouse<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>塔对船只造成125%额外伤害，堡垒对船只造成25%额外伤害",
+
+    "火焰箭": "火焰箭<br>Flaming Arrow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>投射部队(腹弩手和利维坦除外)攻击力+1，解锁腹弩手和利维坦除外",
+
+    "棱堡": "棱堡<br>Bastion<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>让警戒箭塔升级到棱堡",
+
+    "女祭司": "女祭司<br>Priestess<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>51<br>缓慢而脆弱，将敌方军队转换成我方部队，医疗受伤的单位",
+
+
+    "战斗演习": "战斗演习<br>Battle Drills<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>剑士获得+3攻击，+1对建筑物攻击，+2对鹰勇士攻击和+1视野",
+
+
+    "辟邪魔法": "辟邪魔法<br>Apotropaic Magic<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>女祭司生命值 +15",
+    "伊沃卡提奥": "伊沃卡提奥<br>Evocatio<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>475 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>女祭司可以招降敌方建筑物",
+    "调和主义": "调和主义<br>Syncretism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>325 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可以招降敌方女祭司",
+    "铁杉": "铁杉<br>Hemlock<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>被招降的部队立即死亡",
+
+
+    "长生军": "长生军<br>Immortal<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可以在长矛和弓箭之间进行切换的步兵<br>升级到 精锐长生军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>850 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "精锐长生军": "精锐长生军<br>Elite Immortal<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可以在长矛和弓箭之间进行切换的步兵",
+
+    "密教": "密教<br>Mystery Cults<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>一群女祭司招降同个敌方单位后，只需要休息一个女祭司",
+    "驱魔": "驱魔<br>Exorcism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>550 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>单位抗招降能力 +50%",
+    "净化": "净化<br>Purification<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>120 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>招降后女祭司信仰恢复快50%",
+    "脏卜": "脏卜<br>Haruspicy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>女祭司招降范围 +3",
+
+
+
+    "三百卫士": "三百卫士<br>Hippeus<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有高生命值的重装步兵<br>升级到 精锐三百卫士<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "精锐三百卫士": "精锐三百卫士<br>Elite Hippeus<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>拥有高生命值的重装步兵",
 
 
     "军事执政官": "军事执政官<br>Polemarch<br>使附近的军事单位攻击速度增加15%",
-    "运输兵": "运输兵<br>【待补充】<br>军事执政官攻击力+2，获得抵御射弹的护盾",
-    "皇家卫队长": "皇家卫队长<br>【待补充】<br>军事执政官生命值 +50，训练速度 +33%",
-    "督政官": "督政官<br>【待补充】<br>军事执政官光环半径增加，并使得附近部队恢复生命值",
-    "莫拉伊": "莫拉伊<br>【待补充】<br>军事执政官光环半径增加，并使得附近部队移动速度+15%",
+
+    "运输兵": "运输兵<br>Skeuophoroi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>军事执政官攻击力+2，获得抵御射弹的护盾",
+    "皇家卫队长": "皇家卫队长<br>Hippagretai<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>军事执政官生命值 +50，训练速度 +33%",
+    "督政官": "督政官<br>Ephorate<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>军事执政官光环半径增加，并使得附近部队恢复生命值",
+    "莫拉伊": "莫拉伊<br>Morai<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>军事执政官光环半径增加，并使得附近部队移动速度+15%",
 
 
-    "将军": "将军<br>Strategos<br>【待补充】",
-    "精锐将军": "精锐将军<br>Elite Strategos<br>【待补充】",
+    "将军": "将军<br>Strategos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可为附近的部队+1攻击力的重装步兵<br>升级到 将军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充",
+    "精锐将军": "精锐将军<br>Elite Strategos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>可为附近的部队+1攻击力的重装步兵",
 
-    "经济城镇中心": "经济城镇中心<br>【待补充】<br>加快城镇中心附近村民15%采集效率",
-    "军事城镇中心": "军事城镇中心<br>【待补充】<br>加快城镇中心附近军事建筑单位训练速度50%",
-    "防御城镇中心": "防御城镇中心<br>【待补充】<br>城镇中心生命值和攻击力提升，附近的部队攻击速度+15%",
+    "经济城镇中心": "经济城镇中心<br>Ecomonic Town Center<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充 <br>加快城镇中心附近村民15%采集效率",
+    "军事城镇中心": "军事城镇中心<br>Military Town Center<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充 <br>加快城镇中心附近军事建筑单位训练速度50%",
+    "防御城镇中心": "防御城镇中心<br>Defensive Town Center<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充 <br>城镇中心生命值和攻击力提升，附近的部队攻击速度+15%",
 
-    "经济政策": "经济政策<br>【待补充】<br>加快村民15%工作效率",
-    "海军政策": "海军政策<br>【待补充】<br>弓兵和战舰训练速度加快，黄金成本-15%<",
-    "军事政策": "军事政策<br>【待补充】<br>近战单位训练速度加快，击杀敌方可获得3黄金",
-
-
-    "联队长": "联队长<br>Taxiarchs<br>将军为附近的近战部队提供+1攻击力，同时光环范围+33%",
-    "伊菲克拉特斯战术": "伊菲克拉特斯战术<br>Iphicratean Tactics<br>掷矛手获得蓄力攻击，+4攻击力",
-    "艾斯弗拉": "艾斯弗拉<br>Eisphora<br>重甲兵33%的黄金成本转化为额外的食物成本",
-    "提洛同盟": "提洛同盟<br>Delian League<br>步弓手和腹弩手移动速度 +10%",
-
-    "希洛人征兵": "希洛人征兵<br>Helot Levies<br>长矛兵、掷矛手和村民训练快50%",
-    "希腊短剑": "希腊短剑<br>Xyphos<br>重甲兵和单桅桨帆船周边每有10个敌人，攻击力+1(最多+3)",
-    "克里普提": "克里普提<br>Krypteia<br>步兵受到的额外伤害-33%",
-    "伯罗奔尼撒同盟": "伯罗奔尼撒同盟<br>Peloponnesian League<br>战舰训练快50%，城堡会缓慢生成黄金",
+    "经济政策": "经济政策<br>Ecomonic Policy<br>加快村民15%工作效率",
+    "海军政策": "海军政策<br>Naval Policy<br>弓兵和战舰训练速度加快，黄金成本-15%<",
+    "军事政策": "军事政策<br>Military Policy<br>近战单位训练速度加快，击杀敌方可获得3黄金",
 
 
-    "波斯步兵方阵": "波斯步兵方阵<br>Sparabaras<br>长矛兵为接近的部队提供+1远程护甲",
-    "芦苇箭": "芦苇箭<br>Reed Arrow<br>弓箭手、远程长生军和箭船发射速度+25%",
-    "刀轮战车": "刀轮战车<br>Scythed Chariots<br>战车提高践踏伤害半径",
-    "卡尔达": "卡尔达<br>Karda<br>步兵和弓兵+15%生命值",
+    "联队长": "联队长<br>Taxiarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>将军为附近的近战部队提供+1攻击力，同时光环范围+33%",
+    "伊菲克拉特斯战术": "伊菲克拉特斯战术<br>Iphicratean Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>掷矛手获得蓄力攻击，+4攻击力",
+    "艾斯弗拉": "艾斯弗拉<br>Eisphora<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>重甲兵33%的黄金成本转化为额外的食物成本",
+    "提洛同盟": "提洛同盟<br>Delian League<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>步弓手和腹弩手移动速度 +10%",
+
+    "希洛人征兵": "希洛人征兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>Helot Levies<br>长矛兵、掷矛手和村民训练快50%",
+    "希腊短剑": "希腊短剑<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>Xyphos<br>重甲兵和单桅桨帆船周边每有10个敌人，攻击力+1(最多+3)",
+    "克里普提": "克里普提<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>Krypteia<br>步兵受到的额外伤害-33%",
+    "伯罗奔尼撒同盟": "伯罗奔尼撒同盟<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>Peloponnesian League<br>战舰训练快50%，城堡会缓慢生成黄金",
+
+    "波斯步兵方阵": "波斯步兵方阵<br>Sparabaras<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>长矛兵为接近的部队提供+1远程护甲",
+    "芦苇箭": "芦苇箭<br>Reed Arrow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>弓箭手、远程长生军和箭船发射速度+25%",
+    "刀轮战车": "刀轮战车<br>Scythed Chariots<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>战车提高践踏伤害半径",
+    "卡尔达": "卡尔达<br>Karda<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>待补充<br>步兵和弓兵+15%生命值",
+
+
 
 
     "阿契美尼德总督府": "阿契美尼德总督府<br>城镇中心在市政时代开始可以单独升级成独特总督府",
