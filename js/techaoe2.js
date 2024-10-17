@@ -822,6 +822,8 @@ let ayanami = {
     "刀轮战车": "刀轮战车<br>Scythed Chariots<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>战车提高践踏伤害半径",
     "卡尔达": "卡尔达<br>Karda<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>步兵和弓兵+15%生命值",
 
+    "巨型弩炮": "巨型弩炮<br>Palintonon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>强大的攻城武器，用于远距离摧毁建筑物和墙壁",
+
 
     "瞭望塔": "瞭望塔<br>Watch Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80<br>拥有强大的攻击力和广阔的视野的防御建筑，利于对舰船",
 
