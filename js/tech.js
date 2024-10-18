@@ -87,7 +87,7 @@ let ayanami = {
 
     "重锤": "重锤<br>Heavy Maces<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武士手持锤子，使其对装甲目标的伤害加成 +6",
     "双手武器": "双手武器<br>Two-handed Weapons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武士手持双手武器，使其伤害 +2",
-    "锥子长矛": "锥子长矛<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>长矛兵和骑手的攻击力 +3",
+    "锥子长矛": "锥子长矛<br>Awl Pikes<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>长矛兵和骑手的攻击力 +3",
     "钢制马甲": "钢制马甲<br>Steel Barding<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>赋予骑士 +2 近战和 +2 远程护甲",
 
     "消防站": "消防站<br>Fire Stations<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>军事船只在脱离战斗后每 2 秒可恢复 1 生命值",
@@ -163,16 +163,16 @@ let ayanami = {
     "火工技术": "火工技术<br>Pyrotechnics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>手铳的攻击范围 +1.5",
     "古代技术": "古代技术<br>Ancient Techniques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>每达到一个王朝时村民的采集速率 +4%",
 
-    "回收材料": "回收材料<br>【待补充】<br> <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
-    "大理马": "大理马<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>所有骑兵攻击速度+20%",
-    "硬壳炸弹": "硬壳炸弹<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>被掷弹兵命中的单位受到+15%的近战和远程伤害",
-    "弹匣": "弹匣<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>诸葛弩+0.5射程，对轻型步兵+1伤害",
+    "回收材料": "回收材料<br>Salvaged Materials<br> <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
+    "大理马": "大理马<br>Dali Horses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>所有骑兵攻击速度+20%",
+    "硬壳炸弹": "硬壳炸弹<br>Hard Cased Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>被掷弹兵命中的单位受到+15%的近战和远程伤害",
+    "弹匣": "弹匣<br>Bolt Magazines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>诸葛弩+0.5射程，对轻型步兵+1伤害",
 
-    "丝质弓弦": "丝质弓弦<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>射手射程+2，骑射手射程+1",
-    "丝质弓弦sul": "丝质弓弦<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>射手射程+2，骑射手射程+1",
+    "丝质弓弦": "丝质弓弦<br>Silk Bowstrings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>射手射程+2，骑射手射程+1",
+    "丝质弓弦sul": "丝质弓弦<br>Silk Bowstrings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>射手射程+2，骑射手射程+1",
 
-    "蛇纹石粉": "蛇纹石粉<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>火枪兵+8对近战步兵伤害，攻击后移速加快15%",
-    "蛇纹石粉sul": "蛇纹石粉<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>火枪兵+8对近战步兵伤害，攻击后移速加快15%",
+    "蛇纹石粉": "蛇纹石粉<br>Serpentine Powder<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>火枪兵+8对近战步兵伤害，攻击后移速加快15%",
+    "蛇纹石粉sul": "蛇纹石粉<br>Serpentine Powder<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>火枪兵+8对近战步兵伤害，攻击后移速加快15%",
 
 
     "海盗行为": "海盗行为<br>Piracy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>击沉一艘敌方船只时可获得 +25 木材和 +25 黄金",
@@ -221,16 +221,16 @@ let ayanami = {
     "安纳托利亚山丘": "安纳托利亚山丘<br>Anatolian Hills<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1<br>Lv1议会科技<br>在地标城镇中心产生 8 只绵羊，并且村民的采矿速度 +15%",
 
     "军事学校": "军事学校<br>Military Campus<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>军事学校的建筑上限 +1",
-    "大规模防御工事": "大规模防御工事<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>防御建筑便宜20%，所有驻扎的箭矢被弩箭取代，获得+2对重型部队额外伤害",
-    "蒂玛尔军团": "蒂玛尔军团<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>解锁军事学校和靶场的骑马弓兵训练",
+    "大规模防御工事": "大规模防御工事<br>Extensive Fortifications<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>防御建筑便宜20%，所有驻扎的箭矢被弩箭取代，获得+2对重型部队额外伤害",
+    "蒂玛尔军团": "蒂玛尔军团<br>Timariots<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>解锁军事学校和靶场的骑马弓兵训练",
 
     "苏丹亲兵连队": "苏丹亲兵连队<br>Janisary Company<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv3议会科技<br>在地标城镇中心每建造一处地标城镇中心以及一所军事学校可产生 2 个苏丹亲兵",
     "高级学院": "高级学院<br>Advanced Academy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv3议会科技<br>为军事学校提供生产长矛骑兵和苏丹亲兵的能力，军事学校+25%生产效率",
-    "奥斯曼和平": "奥斯曼和平<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv3议会科技<br>4分钟内，村民生产速度+50%",
+    "奥斯曼和平": "奥斯曼和平<br>Pax Ottomana<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv3议会科技<br>4分钟内，村民生产速度+50%",
 
     "攻城人员": "攻城人员<br>Siege Crews<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv4议会科技<br>让步兵可以驻扎在攻城器械中。驻扎时，攻击和架设速度提升 +25%",
     "交易袋": "交易袋<br>Trade Bags<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv4议会科技<br>商人从苏丹哈尼驿站贸易网络收集及获得的黄金量增加 +40%",
-    "重型火炮": "重型火炮<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv4议会科技<br>在首都城镇中心生成一门重型火炮，重型火炮在帝王时代前召唤时会获得较弱的早期版本",
+    "重型火炮": "重型火炮<br>Great Bombard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv4议会科技<br>在首都城镇中心生成一门重型火炮，重型火炮在帝王时代前召唤时会获得较弱的早期版本",
 
 
 
