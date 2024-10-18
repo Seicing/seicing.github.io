@@ -802,7 +802,7 @@ let ayanami = {
     "军事城镇中心": "军事城镇中心<br>Military Town Center<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35 <br>加快城镇中心附近军事建筑单位训练速度50%",
     "防御城镇中心": "防御城镇中心<br>Defensive Town Center<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>城镇中心生命值和攻击力提升，附近的部队攻击速度+15%",
 
-    "经济政策": "经济政策<br>Ecomonic Policy<br>加快村民7%工作效率，农民额外增加3.81%效率",
+    "经济政策": "经济政策<br>Ecomonic Policy<br>加快村民7%工作效率",
     "海军政策": "海军政策<br>Naval Policy<br>弓兵和战舰训练速度加快，黄金成本-15%",
     "军事政策": "军事政策<br>Military Policy<br>近战单位训练速度加快，击杀敌方可获得3黄金",
 
