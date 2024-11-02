@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/essay.js"></script>
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
+<div style="position:relative;">
+    <span style="font-family:宋体">2024.11.2</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="https://seicing.com/res/131414.png" alt="">
+    </div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="309"></div>
+
+
+左下角血槽UI<br>
+左下角血槽UI精度扩张到现有2x版本的1.5倍<br>
+宽度从740上调到1100<br>
+高度扩充到600，这是为了使用头像时避免空间不够的措施<br>
+<br>
+对话立绘<br>
+扩充到现有版本的1.25倍<br>
+现有尺寸=270*398，修改后大小为335*500<br>
+这个精度可以直接应用到左下角血槽ui中，但是对话立绘可能要扩充到原来的1.5倍(400*600)<br>
+<br>
+
+
+
+对话立绘逻辑<br>
+对话立绘采取动态表示，血槽立绘采取静态表示<br>
+对话立绘的眼部动画(眨眼)会常态持续，只有在文本播放(文本的字一个一个出来的动画)时会播放嘴部动画<br>
+特殊处理：省略号(……)会让文本播放动画强制停止一段时间，在这段时间内嘴部动画不会播放<br>
+<br>
+眼部和嘴部id由数个动画帧组成，其中第一帧是未动画播放时常态显示的帧<br>
+说话时，嘴部id动画循环播放；眼部则是隔3秒播放一次动画<br>
+如果加载了不存在的表情，则是维持默认表情<br>
+<br>
+不同的表情会按照以下表格登记构成<br>
+表情id(眼部id,嘴部id)<br>
+特殊ID后缀<br>
+CE(闭眼)，带有CE后缀的表情，强制性不会眨眼，而是维持闭眼的那一帧<br>
+RF(脸红)，带有RF后缀的表情，会调用脸红图层<br>
+SW(流汗)，带有SW后缀的表情，会调用脸部汗珠图层<br>
+<br>
+smile(default,smile)<br>
+serene(default,serene)<br>
+sad(sad,sad)<br>
+depress(depress,depress)<br>
+sinistersmile(depress,smile)<br>
+surprise(default,surprise)<br>
+sideeye(sideeye,serene)<br>
+shy(sideeye,smile)<br>
+happy(default,happy)<br>
+bitter(sad,happy)<br>
+wry(sad,smile)<br>
+cry(cry,cry)<br>
+bawl(cry,angry)<br>
+crysurprise(cry,surprise)<br>
+cryhappy(cry,smile)<br>
+panic(depress,panic)<br>
+fear(sad,panic)<br>
+endure(default,endure)<br>
+uncomfortable(sad,cry)<br>
+angry(angry,angry)<br>
+angryhappy(angry,happy)<br>
+terrible(terrible,serene)<br>
+<br>
+眼部动画id(default,sad,depress,sideeye,cry,angry,terrible)<br>
+嘴部动画id(smile,serene,sad,depress,surprise,cry,panic,endure) <br>
+
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<style>
+    li {
+        line-height: 1.8
+    }
+</style>
+
+</html>
