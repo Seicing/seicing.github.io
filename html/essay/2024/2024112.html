@@ -51,17 +51,14 @@
 
 
 对话立绘逻辑<br>
-对话立绘采取动态表示，血槽立绘采取静态表示<br>
-对话立绘的眼部动画(眨眼)会常态持续，只有在文本播放(文本的字一个一个出来的动画)时会播放嘴部动画<br>
-特殊处理：省略号(……)会让文本播放动画强制停止一段时间，在这段时间内嘴部动画不会播放<br>
-<br>
-眼部和嘴部id由数个动画帧组成，其中第一帧是未动画播放时常态显示的帧<br>
-说话时，嘴部id动画循环播放；眼部则是隔3秒播放一次动画<br>
+对话立绘采取动态表示，血槽立绘采取静态表示，无论是对话立绘还是血槽乃至角色模型的表情都共用一套全局表情id<br>
 如果加载了不存在的表情，则是维持默认表情<br>
 <br>
-不同的表情会按照以下表格登记构成<br>
-表情id(眼部id,嘴部id)<br>
-特殊ID后缀<br>
+眼部：分为眉毛和眼睛两部分，眉毛是固定的，眼睛无论在什么时候都会隔3秒播放一次咋眼动画<br>
+嘴部：文本播放时循环播放嘴部id动画，省略号(……)会让文本播放动画强制停止一段时间，在这段时间内嘴部动画不会播放；嘴部只会有停止时静止帧的不同，说话动画是所有动画通用的<br>
+
+<br>
+不同的表情会按照下表中的(眼部id,嘴部id)构成，此外还有3个特殊开关控制表情的特殊部位<br>
 CE(闭眼)，带有CE后缀的表情，强制性不会眨眼，而是维持闭眼的那一帧<br>
 RF(脸红)，带有RF后缀的表情，会调用脸红图层<br>
 SW(流汗)，带有SW后缀的表情，会调用脸部汗珠图层<br>
@@ -89,10 +86,8 @@ angry(angry,angry)<br>
 angryhappy(angry,happy)<br>
 terrible(terrible,serene)<br>
 <br>
-眼部动画id(default,sad,depress,sideeye,cry,angry,terrible)<br>
-嘴部动画id(smile,serene,sad,depress,surprise,cry,panic,endure) <br>
-<br>
-眼部动画元件<br>
+
+眼部动画具体会根据对应登记的元件组成动画(第一个是眉毛id，第二、三、四个组成眨眼动画，第二个是睁眼帧，第四个为闭眼帧)<br>
 default(eyedefault,eyedefault1,eyedefault2,eyedefault3) <br>
 sad(eyesad,eyedefault1,eyedefault2,eyedefault3) <br>
 depress(eyedefault,eyedepress1,eyedefault2,eyedefault3) <br>
