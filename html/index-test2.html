@@ -139,11 +139,11 @@
                         if (json[i].iscloseeye == 1) {
                             json[i].eye = 'eye_default3';
                         } else {
-                            json[i].eye = facer[1]
+                            json[i].eye = window[facer][1]
                         }
 
-                        json[i].brow = facer[2]
-                        json[i].mouth = facer[3]
+                        json[i].brow = window[facer][2]
+                        json[i].mouth = window[facer][3]
 
 
                         if (json[i].dic == 1) {
