@@ -35,7 +35,7 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="20"></div>
 <div id="app">
-    <div v-for="diaindex in aasb">
+    <div v-for="diaindex in aasb" :style="diaindex.bstyle">
         <table cellpadding="5" :id="diaindex.tablelavivanar" :style="diaindex.astyle">
             <tr>
                 <td id="banaheader" style="border-bottom:2px solid rgb(215,204,134);">
@@ -50,6 +50,7 @@
                 </td>
             </tr>
         </table>
+        <br><br>
     </div>
 </div>
 
@@ -137,11 +138,13 @@
                         } else {
                             json[i].eye = facer[1]
                         }
+
                         json[i].brow = facer[2]
                         json[i].mouth = facer[3]
 
                         if (json[i].dic != 1) {
-                            json[i].tablelavivanar = "tablebana";
+                            json[i].bstyle = "float:left;";
+                            json[i].tablelavivanar = "tablebana2";
                             json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
                                 "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['attach'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['sweat'] + ".png)," +
@@ -154,7 +157,8 @@
 
                         }
                         if (json[i].dic != 3) {
-                            json[i].tablelavivanar = "tablebana";
+                            json[i].bstyle = "float:right;";
+                            json[i].tablelavivanar = "tablebana2";
                             json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
                                 "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['attach'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['sweat'] + ".png)," +
@@ -167,7 +171,8 @@
 
                         }
                         if (json[i].dic != 2) {
-                            json[i].tablelavivanar = "tablebana2";
+                            json[i].bstyle = "float:center;";
+                            json[i].tablelavivanar = "tablebana";
                             json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);"
                         }
 
