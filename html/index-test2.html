@@ -81,28 +81,28 @@
 </body>
 
 <script type="text/javascript">
-    smile = ["eye_default1", "brow_default", "mouth_smile"];
-    serene = ["eye_default1", "brow_default", "mouth_serene"];
-    sad = ["eye_default1", "brow_sad", "mouth_sad"];
-    depress = ["eye_depress1", "brow_default", "mouth_depress"];
-    sinister = ["eye_depress1", "brow_default", "mouth_smile"];
-    surprise = ["eye_default", "brow_default", "mouth_surprise"];
-    side = ["eye_side1", "brow_default", "mouth_serene"];
-    shy = ["eye_side1", "brow_default", "mouth_smile"];
-    happy = ["eye_default1", "brow_default", "mouth_happy"];
-    bitter = ["eye_default1", "brow_sad", "mouth_happy"];
-    wry = ["eye_default1", "brow_sad", "mouth_smile"];
-    cry = ["eye_cry1", "brow_sad", "mouth_cry"];
-    bawl = ["eye_cry1", "brow_sad", "mouth_angry"];
-    crysurprise = ["eye_cry1", "brow_sad", "mouth_surprise"];
-    cryhappy = ["eye_cry1", "brow_sad", "mouth_happy"];
-    panic = ["eye_depress1", "brow_default", "mouth_panic"];
-    fear = ["eye_default1", "brow_sad", "mouth_panic"];
-    endure = ["eye_default1", "brow_default", "mouth_endure"];
-    uncomfortable = ["eye_default1", "brow_sad", "mouth_cry"];
-    angry = ["eye_default1", "brow_angry", "mouth_angry"];
-    excited = ["eye_default1", "brow_angry", "mouth_excited"];
-    terrible = ["eye_terrible", "brow_terrible", "mouth_serene"];
+    let face_smile = ["eye_default1", "brow_default", "mouth_smile"];
+    let face_serene = ["eye_default1", "brow_default", "mouth_serene"];
+    let face_sad = ["eye_default1", "brow_sad", "mouth_sad"];
+    let face_depress = ["eye_depress1", "brow_default", "mouth_depress"];
+    let face_sinister = ["eye_depress1", "brow_default", "mouth_smile"];
+    let face_surprise = ["eye_default", "brow_default", "mouth_surprise"];
+    let face_side = ["eye_side1", "brow_default", "mouth_serene"];
+    let face_shy = ["eye_side1", "brow_default", "mouth_smile"];
+    let face_happy = ["eye_default1", "brow_default", "mouth_happy"];
+    let face_bitter = ["eye_default1", "brow_sad", "mouth_happy"];
+    let face_wry = ["eye_default1", "brow_sad", "mouth_smile"];
+    let face_cry = ["eye_cry1", "brow_sad", "mouth_cry"];
+    let face_bawl = ["eye_cry1", "brow_sad", "mouth_angry"];
+    let face_crysurprise = ["eye_cry1", "brow_sad", "mouth_surprise"];
+    let face_cryhappy = ["eye_cry1", "brow_sad", "mouth_happy"];
+    let face_panic = ["eye_depress1", "brow_default", "mouth_panic"];
+    let face_fear = ["eye_default1", "brow_sad", "mouth_panic"];
+    let face_endure = ["eye_default1", "brow_default", "mouth_endure"];
+    let face_uncomfortable = ["eye_default1", "brow_sad", "mouth_cry"];
+    let face_angry = ["eye_default1", "brow_angry", "mouth_angry"];
+    let face_excited = ["eye_default1", "brow_angry", "mouth_excited"];
+    let face_terrible = ["eye_terrible", "brow_terrible", "mouth_serene"];
 
     var imgAll = [];
     const vm = new Vue({
@@ -117,6 +117,7 @@
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
                         facer = "face_" + json[i]['face']
+                        finalfantasy = this[facer]
 
                         json[i].charname = json[i]['name']
                         json[i].texter = json[i]['string']
@@ -139,11 +140,11 @@
                         if (json[i].iscloseeye == 1) {
                             json[i].eye = 'eye_default3';
                         } else {
-                            json[i].eye = facer[1]
+                            json[i].eye = finalfantasy[1]
                         }
 
-                        json[i].brow = facer[2]
-                        json[i].mouth = facer[3]
+                        json[i].brow = finalfantasy[2]
+                        json[i].mouth = finalfantasy[3]
 
 
                         if (json[i].dic == 1) {
