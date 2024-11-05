@@ -117,7 +117,7 @@
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
                         facer = "face_" + json[i]['face']
-                        finalfantasy = this[facer]
+                        var finalfantasy = this[facer]
 
                         json[i].charname = json[i]['name']
                         json[i].texter = json[i]['string']
