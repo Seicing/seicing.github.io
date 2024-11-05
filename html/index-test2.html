@@ -36,7 +36,7 @@
                         <div class="entry"><div id="lavipage" page="20"></div>
 <div id="app">
     <div v-for="diaindex in aasb">
-        <table cellpadding="5" :style="diaindex.astyle">
+        <table cellpadding="5" :id="diaindex.tablelavivanar" :style="diaindex.astyle">
             <tr>
                 <td id="banaheader" style="border-bottom:2px solid rgb(215,204,134);">
                     <span v-html="diaindex.charname"></span>
