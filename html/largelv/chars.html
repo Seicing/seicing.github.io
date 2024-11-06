@@ -44,7 +44,7 @@
 
         <br>
         <div id="app">
-                <table :style="diaindex.astyle" :id="diaindex.faceid">
+                <table v-for="diaindex in aasb" :style="diaindex.astyle" :id="diaindex.faceid">
                         <tr>
                                 <td style="width: 150px;"> </td>
                         </tr>
