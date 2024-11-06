@@ -1,79 +1,58 @@
 [
     {
-        "dic": 1,
+        "dic": "左",
         "name": "余",
         "faceid": "yo1",
         "face": "smile",
-        "iscloseeye": 0,
-        "isredface": 0,
-        "issweat": 0,
-        "isattach": 0,
+        "con": "",
         "string": "文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试"
     },
     {
-        "dic": 3,
+        "dic": "右",
         "name": "余",
         "faceid": "yo1",
         "face": "serene",
-        "iscloseeye": 1,
-        "isredface": 1,
-        "issweat": 0,
-        "isattach": 0,
-        "string": "不错的表演，下次不要再来了"
+        "con": "CERF",
+        "string": "别突然说这些让人难为情的话"
     },
     {
-        "dic": 2,
+        "dic": "中",
         "name": "",
         "faceid": "",
         "face": "smile",
-        "iscloseeye": 0,
-        "isredface": 0,
-        "issweat": 0,
-        "isattach": 0,
+        "con": "",
         "string": "No no limits, we'll reach for the sky!<br>No valley too deep, no maintain too high."
     },
     {
-        "dic": 1,
+        "dic": "左",
         "name": "余",
         "faceid": "yo1",
         "face": "angry",
-        "iscloseeye": 0,
-        "isredface": 0,
-        "issweat": 0,
-        "isattach": 0,
+        "con": "",
         "string": "好烦啊"
     },
     {
-        "dic": 3,
+        "dic": "右",
         "name": "余",
         "faceid": "yo1",
         "face": "sinister",
-        "iscloseeye": 0,
-        "isredface": 0,
-        "issweat": 1,
-        "isattach": 1,
+        "con": "SWAT",
         "string": "文本测试文本测试文本测试文本测试文本测试文本测试本测试文本测试文本测试文本测试"
     },
     {
-        "dic": 1,
+        "dic": "左",
         "name": "余",
         "faceid": "yo1",
         "face": "surprise",
-        "iscloseeye": 0,
-        "isredface": 0,
-        "issweat": 0,
-        "isattach": 2,
-        "string": "文本测试文本测试文本测试文本测试文本测试测试文本测试 "
+        "con": "ON",
+        "string": "文本测试文本测试文本测试文…… "
     },
     {
-        "dic": 3,
+        "dic": "右",
         "name": "余",
         "faceid": "yo1",
         "face": "shy",
-        "iscloseeye": 0,
-        "isredface": 0,
-        "issweat": 0,
-        "isattach": 3,
+        "con": "RFONAT",
         "string": "哎呀，骇死我了"
     }
 ]
