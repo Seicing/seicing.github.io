@@ -38,11 +38,20 @@
 
 
 <div id="reski" style="float: left;max-width: 1525px;">
-        <a href="#" onclick="RFswitch()">开关脸红</a>
-        <a href="#" onclick="SWswitch()">开关流汗</a>
-        <a href="#" onclick="ATswitch()">开关附件1</a>
-        <a href="#" onclick="ONswitch()">开关附件2</a>
-        <a href="#" onclick="CEswitch()">开关闭眼</a>
+        <a href="#" onclick="RFswitch()">打开脸红</a>
+        <a href="#" onclick="RFswitch2()">关闭脸红</a>
+
+        <a href="#" onclick="SWswitch()">打开流汗</a>
+        <a href="#" onclick="SWswitch2()">关闭流汗</a>
+
+        <a href="#" onclick="ATswitch()">打开附件1</a>
+        <a href="#" onclick="ATswitch2()">关闭附件1</a>
+
+        <a href="#" onclick="ONswitch()">打开附件2</a>
+        <a href="#" onclick="ONswitch2()">关闭附件2</a>
+
+        <a href="#" onclick="CEswitch()">打开闭眼</a>
+        <a href="#" onclick="CEswitch2()">关闭闭眼</a>
 
         <br>
         <div id="app">
@@ -50,28 +59,34 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div id="attach4" style="position:absolute;z-index:10">
+                                                <div class="coverer4" style="position:absolute;z-index:11;display:none">
+                                                        <img :src="diaindex.coverer4" style="width: 150px;">
+                                                </div>
+                                                <div class="attach4" style="position:absolute;z-index:10;display:none">
                                                         <img :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
-                                                <div id="addon4" style="position:absolute;z-index:9">
+                                                <div class="addon4" style="position:absolute;z-index:9;display:none">
                                                         <img :src="diaindex.addon5" style="width: 150px;">
                                                 </div>
-                                                <div id="sweat4" style="position:absolute;z-index:8">
+                                                <div class="sweat4" style="position:absolute;z-index:8;display:none">
                                                         <img :src="diaindex.sweat5" style="width: 150px;">
                                                 </div>
-                                                <div id="redface4" style="position:absolute;z-index:7">
+                                                <div class="redface4" style="position:absolute;z-index:7;display:none">
                                                         <img :src="diaindex.redface5" style="width: 150px;">
                                                 </div>
-                                                <div id="brow4" style="position:absolute;z-index:6">
+                                                <div class="brow4" style="position:absolute;z-index:6">
                                                         <img :src="diaindex.brow5" style="width: 150px;">
                                                 </div>
-                                                <div id="eye4" style="position:absolute;z-index:5">
+                                                <div class="eyeclose4" style="position:absolute;z-index:5;display:none">
+                                                        <img :src="diaindex.eyeclose5" style="width: 150px;">
+                                                </div>
+                                                <div class="eye4" style="position:absolute;z-index:4">
                                                         <img :src="diaindex.eye5" style="width: 150px;">
                                                 </div>
-                                                <div id="mouth4" style="position:absolute;z-index:4">
+                                                <div class="mouth4" style="position:absolute;z-index:3">
                                                         <img :src="diaindex.mouth5" style="width: 150px;">
                                                 </div>
-                                                <div id="base4" style="position:absolute;z-index:3">
+                                                <div class="base4" style="position:absolute;z-index:2">
                                                         <img :src="diaindex.base5" style="width: 150px;">
                                                 </div>
 
@@ -114,63 +129,75 @@
 
 <script>
         $(document).ready(function () {
-                RFcheaker = 1;
-                SWcheaker = 1;
-                ATcheaker = 1;
-                ONcheaker = 1;
-                CEcheaker = 1;
                 characterid = 'yo1';
         });
 
         function RFswitch() {
-                RFcheaker = RFcheaker + 1;
-                Comeon();
+                var divs = document.getElementsByClassName("redface4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "block";
+                }
+        }
+        function RFswitch2() {
+                var divs = document.getElementsByClassName("redface4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "none";
+                }
         }
         function SWswitch() {
-                SWcheaker = SWcheaker + 1;
-                Comeon();
+                var divs = document.getElementsByClassName("sweat4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "block";
+                }
+        }
+        function SWswitch2() {
+                var divs = document.getElementsByClassName("sweat4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "none";
+                }
         }
         function ATswitch() {
-                ATcheaker = ATcheaker + 1;
-                Comeon();
+                var divs = document.getElementsByClassName("attach4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "block";
+                }
+        }
+        function ATswitch2() {
+                var divs = document.getElementsByClassName("attach4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "none";
+                }
         }
         function ONswitch() {
-                ONcheaker = ONcheaker + 1;
-                Comeon();
+                var divs = document.getElementsByClassName("addon4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "block";
+                }
+        }
+        function ONswitch2() {
+                var divs = document.getElementsByClassName("addon4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "none";
+                }
         }
         function CEswitch() {
-                CEcheaker = CEcheaker + 1;
-                Comeon();
+                var divs = document.getElementsByClassName("eyeclose4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "block";
+                }
+                var divs2 = document.getElementsByClassName("eye4");
+                for (var g = 0; g < divs2.length; g++) {
+                        divs2[g].style.display = "none";
+                }
         }
-
-
-        function GlobalVar(a) {
-                characterid = a;
-        }
-
-        function Comeon() {
-                if (RFcheaker % 2 == 0) {
-                        document.getElementById("redface4").style.display = "block";
-                } else {
-                        document.getElementById("redface4").style.display = "none";
+        function CEswitch2() {
+                var divs = document.getElementsByClassName("eyeclose4");
+                for (var i = 0; i < divs.length; i++) {
+                        divs[i].style.display = "none";
                 }
-
-                if (SWcheaker % 2 == 0) {
-                        document.getElementById("sweat4").style.display = "block";
-                } else {
-                        document.getElementById("sweat4").style.display = "none";
-                }
-
-                if (ATcheaker % 2 == 0) {
-                        document.getElementById("attach4").style.display = "block";
-                } else {
-                        document.getElementById("attach4").style.display = "none";
-                }
-
-                if (ONcheaker % 2 == 0) {
-                        document.getElementById("addon4").style.display = "block";
-                } else {
-                        document.getElementById("addon4").style.display = "none";
+                var divs2 = document.getElementsByClassName("eye4");
+                for (var g = 0; g < divs2.length; g++) {
+                        divs2[g].style.display = "block";
                 }
         }
 
@@ -188,26 +215,22 @@
                                         for (var i = 0; i < json.length; i++) {
                                                 json[i].faceid = json[i]['name']
 
-
-
-                                                if (CEcheaker % 2 == 0) {
-                                                        json[i].eye2 = 'eye_default3';
-                                                } else {
-                                                        json[i].eye2 = json[i].eye;
-                                                }
-
-
-                                                json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['attach'] + ".png"
-                                                json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['addon'] + ".png"
-                                                json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['sweat'] + ".png"
-                                                json[i].redface5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['red_face'] + ".png"
+                                                json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "attach.png"
+                                                json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "addon.png"
+                                                json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "sweat.png"
+                                                json[i].redface5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "red_face.png"
                                                 json[i].brow5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['brow'] + ".png"
-                                                json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye2'] + ".png"
+                                                json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/eye_default3.png"
+                                                json[i].eyeclose5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye'] + ".png"
                                                 json[i].mouth5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png"
                                                 json[i].base5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png"
+                                                json[i].coverer5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/cover.png"
 
-
-
+                                                if (json[i].con.includes("CE")) {
+                                                        json[i].eye = 'eye_default3';
+                                                } else {
+                                                        json[i].eye = facer[0];
+                                                }
                                         }
                                 })
                 }
