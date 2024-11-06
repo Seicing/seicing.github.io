@@ -4,12 +4,12 @@ $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'
 
 
 $(window).resize(function () {
-    var cliWidth = document.body.clientWidth - 330;
+    var cliWidth = document.body.clientWidth - 360;
     $("#reski").width(cliWidth);
 });
 
 $(document).ready(function () {
-    var cliWidth = document.body.clientWidth - 330;
+    var cliWidth = document.body.clientWidth - 360;
     $("#reski").width(cliWidth);
 });
 
