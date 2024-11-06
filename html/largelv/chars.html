@@ -30,9 +30,6 @@
 
         <a href="#" onclick="GlobalVar('yo1');frash();"><img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/Yo.png"
                         width="50px"></a>
-        <a href="#" onclick="GlobalVar('yo2');frash();"><img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/Yo2.png"
-                        width="50px"></a>
-
 
 </div>
 
@@ -40,28 +37,20 @@
 <div id="reski" style="float: left;max-width: 1525px;">
         <a href="#" onclick="RFswitch()">打开脸红</a>
         <a href="#" onclick="RFswitch2()">关闭脸红</a>
-
         <a href="#" onclick="SWswitch()">打开流汗</a>
         <a href="#" onclick="SWswitch2()">关闭流汗</a>
-
         <a href="#" onclick="ATswitch()">打开附件1</a>
         <a href="#" onclick="ATswitch2()">关闭附件1</a>
-
         <a href="#" onclick="ONswitch()">打开附件2</a>
         <a href="#" onclick="ONswitch2()">关闭附件2</a>
-
         <a href="#" onclick="CEswitch()">打开闭眼</a>
         <a href="#" onclick="CEswitch2()">关闭闭眼</a>
-
         <br>
         <div id="app">
                 <table style="float:left;" v-for="diaindex in aasb" :id="diaindex.faceid">
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div class="coverer4" style="position:absolute;z-index:11;display:none">
-                                                        <img :src="diaindex.coverer4" style="width: 150px;">
-                                                </div>
                                                 <div class="attach4" style="position:absolute;z-index:10;display:none">
                                                         <img :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
@@ -92,6 +81,9 @@
 
                                         </div>
                                 </td>
+                        </tr>
+                        <tr>
+                                <td> <span> {{faceid}}</span> </td>
                         </tr>
                 </table>
         </div>
@@ -131,7 +123,8 @@
         $(document).ready(function () {
                 characterid = 'yo1';
         });
-
+</script>
+<script>
         function RFswitch() {
                 var divs = document.getElementsByClassName("redface4");
                 for (var i = 0; i < divs.length; i++) {
@@ -224,7 +217,8 @@
                                                 json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye'] + ".png"
                                                 json[i].mouth5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png"
                                                 json[i].base5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png"
-                                                json[i].coverer5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/cover1.png"
+
+
                                         }
                                 })
                 }
