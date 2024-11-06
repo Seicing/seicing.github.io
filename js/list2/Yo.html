@@ -1,212 +1,55 @@
-<table style="float:left;">
-  <tr>
-    <td height="3px" width="1400px"><span style="color: #CABC85"><b>帝国之花 余(Flower of Empire Khulan)</b></span></td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoDefault.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoDefault
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoSinisterSmile.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoSinisterSmile
-    </td>
-  </tr>
-</table>
+<div>
+  <span id="overdrive">yo1</span><br>
+  <a href="#" onclick="RFswitch()">打开脸红</a>
+  <a href="#" onclick="RFswitch2()">关闭脸红</a>
+  <a href="#" onclick="SWswitch()">打开流汗</a>
+  <a href="#" onclick="SWswitch2()">关闭流汗</a>
+  <a href="#" onclick="ATswitch()">打开附件1</a>
+  <a href="#" onclick="ATswitch2()">关闭附件1</a>
+  <a href="#" onclick="ONswitch()">打开附件2</a>
+  <a href="#" onclick="ONswitch2()">关闭附件2</a>
+  <a href="#" onclick="CEswitch()">打开闭眼</a>
+  <a href="#" onclick="CEswitch2()">关闭闭眼</a>
+  <br>
+  <div id="app">
+    <table style="float:left;" v-for="diaindex in aasb" :id="diaindex.faceid">
+      <tr>
+        <td>
+          <div style="position:relative;width:150px;height:225px">
+            <div class="attach4" style="position:absolute;z-index:10;display:none">
+              <img :src="diaindex.attach5" style="width: 150px;">
+            </div>
+            <div class="addon4" style="position:absolute;z-index:9;display:none">
+              <img :src="diaindex.addon5" style="width: 150px;">
+            </div>
+            <div class="sweat4" style="position:absolute;z-index:8;display:none">
+              <img :src="diaindex.sweat5" style="width: 150px;">
+            </div>
+            <div class="redface4" style="position:absolute;z-index:7;display:none">
+              <img :src="diaindex.redface5" style="width: 150px;">
+            </div>
+            <div class="brow4" style="position:absolute;z-index:6">
+              <img :src="diaindex.brow5" style="width: 150px;" id="brow3">
+            </div>
+            <div class="eyeclose4" style="position:absolute;z-index:5;display:none">
+              <img :src="diaindex.eyeclose5" style="width: 150px;">
+            </div>
+            <div class="eye4" style="position:absolute;z-index:4">
+              <img :src="diaindex.eye5" style="width: 150px;" id="eye3">
+            </div>
+            <div class="mouth4" style="position:absolute;z-index:3">
+              <img :src="diaindex.mouth5" style="width: 150px;" id="mouth3">
+            </div>
+            <div class="base4" style="position:absolute;z-index:2">
+              <img :src="diaindex.base5" style="width: 150px;">
+            </div>
 
-
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoDepressed.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoDepressed
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoEmbarrassed.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoEmbarrassed
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoShy.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoShy
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoUncomfortable.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoUncomfortable
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoCry.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoCry
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoHappy.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoHappy
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoSad.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoSad
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoSurprise.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoSurprise
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoHappyRF.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoHappyRF
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoDepressedRF.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoDepressedRF
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoSinisterSmileRF.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoSinisterSmileRF
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoAngry.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoAngry
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoAngryHappy.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoAngryHappy
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoCloseEye.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoCloseEye
-    </td>
-  </tr>
-</table>
-<table style="float:left">
-  <tr>
-    <td>
-      <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/YoBitter.png" width="135px">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      YoBitter
-    </td>
-  </tr>
-</table>
-<br><img src="https://seicing.com/res/23233.png" width="1400px" height="1px">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td> <span v-html="diaindex.faceid"> </span> </td>
+      </tr>
+    </table>
+  </div>
+</div>
