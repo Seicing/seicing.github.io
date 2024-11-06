@@ -46,14 +46,44 @@
 
         <br>
         <div id="app">
-                <table v-for="diaindex in aasb" :id="diaindex.faceid">
+                <table style="float:left;" v-for="diaindex in aasb" :id="diaindex.faceid">
                         <tr>
-                                <td :style="diaindex.astyle"> </td>
+                                <td>
+                                        <div style="position:relative;width:150px;height:225px">
+                                                <div id="attach4" style="position:absolute;z-index:10">
+                                                        <img :src="diaindex.attach5">
+                                                </div>
+                                                <div id="addon4" style="position:absolute;z-index:9">
+                                                        <img :src="diaindex.addon5">
+                                                </div>
+                                                <div id="sweat4" style="position:absolute;z-index:8">
+                                                        <img :src="diaindex.sweat5">
+                                                </div>
+                                                <div id="red_face4" style="position:absolute;z-index:7">
+                                                        <img :src="diaindex.red_face5">
+                                                </div>
+                                                <div id="brow4" style="position:absolute;z-index:6">
+                                                        <img :src="diaindex.brow5">
+                                                </div>
+                                                <div id="eye4" style="position:absolute;z-index:5">
+                                                        <img :src="diaindex.eye5">
+                                                </div>
+                                                <div id="mouth4" style="position:absolute;z-index:4">
+                                                        <img :src="diaindex.mouth5">
+                                                </div>
+                                                <div id="base4" style="position:absolute;z-index:3">
+                                                        <img :src="diaindex.base5">
+                                                </div>
+
+                                        </div>
+                                </td>
                         </tr>
                 </table>
         </div>
 
 </div>
+
+
 
                         </div>
 
@@ -136,27 +166,27 @@
                                                 json[i].faceid = json[i]['name']
 
                                                 if (RFcheaker % 2 == 0) {
-                                                        json[i].red_face = 'red_face';
+                                                        document.getElementById('red_face4').style.display = 'block';
                                                 } else {
-                                                        json[i].red_face = 'red_face1';
+                                                        document.getElementById('red_face4').style.display = 'none';
                                                 }
 
                                                 if (SWcheaker % 2 == 0) {
-                                                        json[i].sweat = 'sweat';
+                                                        document.getElementById('sweat4').style.display = 'block';
                                                 } else {
-                                                        json[i].sweat = 'sweat1';
+                                                        document.getElementById('sweat4').style.display = 'none';
                                                 }
 
                                                 if (ATcheaker % 2 == 0) {
-                                                        json[i].attach = 'attach';
+                                                        document.getElementById('attach4').style.display = 'block';
                                                 } else {
-                                                        json[i].attach = 'attach1';
+                                                        document.getElementById('attach4').style.display = 'none';
                                                 }
 
                                                 if (ONcheaker % 2 == 0) {
-                                                        json[i].addon = 'addon';
+                                                        document.getElementById('addon4').style.display = 'block';
                                                 } else {
-                                                        json[i].addon = 'addon1';
+                                                        document.getElementById('addon4').style.display = 'none';
                                                 }
 
                                                 if (CEcheaker % 2 == 0) {
@@ -165,16 +195,17 @@
                                                         json[i].eye2 = json[i].eye;
                                                 }
 
-                                                json[i].astyle = "background: rgb(37, 37, 37);" +
-                                                        "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['attach'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['addon'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['sweat'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['red_face'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['brow'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye2'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png)," +
-                                                        "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png);" +
-                                                        "background-repeat: no-repeat;background-position: left center;background-size: 33%;float:left;width: 150px;height: 225px;";
+
+                                                json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['attach'] + ".png"
+                                                json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['addon'] + ".png"
+                                                json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['sweat'] + ".png"
+                                                json[i].red_face5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['red_face'] + ".png"
+                                                json[i].brow5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['brow'] + ".png"
+                                                json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye2'] + ".png"
+                                                json[i].mouth5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png"
+                                                json[i].base5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png"
+
+
 
                                         }
                                 })
