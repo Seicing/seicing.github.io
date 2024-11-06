@@ -59,8 +59,8 @@
                                                 <div id="sweat4" style="position:absolute;z-index:8">
                                                         <img :src="diaindex.sweat5">
                                                 </div>
-                                                <div id="red_face4" style="position:absolute;z-index:7">
-                                                        <img :src="diaindex.red_face5">
+                                                <div id="redface4" style="position:absolute;z-index:7">
+                                                        <img :src="diaindex.redface5">
                                                 </div>
                                                 <div id="brow4" style="position:absolute;z-index:6">
                                                         <img :src="diaindex.brow5">
@@ -122,14 +122,6 @@
                 characterid = 'yo1';
         });
 
-        function frash() {
-                RFcheaker = 1;
-                SWcheaker = 1;
-                ATcheaker = 1;
-                ONcheaker = 1;
-                CEcheaker = 1;
-        }
-
         function RFswitch() {
                 RFcheaker = RFcheaker + 1;
         }
@@ -166,9 +158,9 @@
                                                 json[i].faceid = json[i]['name']
 
                                                 if (RFcheaker % 2 == 0) {
-                                                        document.getElementById("red_face4").style.display = "block";
+                                                        document.getElementById("redface4").style.display = "block";
                                                 } else {
-                                                        document.getElementById("red_face4").style.display = "none";
+                                                        document.getElementById("redface4").style.display = "none";
                                                 }
 
                                                 if (SWcheaker % 2 == 0) {
@@ -199,7 +191,7 @@
                                                 json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['attach'] + ".png"
                                                 json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['addon'] + ".png"
                                                 json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['sweat'] + ".png"
-                                                json[i].red_face5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['red_face'] + ".png"
+                                                json[i].redface5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['red_face'] + ".png"
                                                 json[i].brow5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['brow'] + ".png"
                                                 json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye2'] + ".png"
                                                 json[i].mouth5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png"
