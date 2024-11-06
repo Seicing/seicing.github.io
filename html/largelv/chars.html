@@ -35,6 +35,7 @@
 
 
 <div id="reski" style="float: left;max-width: 1525px;">
+        <span id="overdrive">yo1</span>
         <a href="#" onclick="RFswitch()">打开脸红</a>
         <a href="#" onclick="RFswitch2()">关闭脸红</a>
         <a href="#" onclick="SWswitch()">打开流汗</a>
@@ -121,7 +122,7 @@
 
 <script>
         $(document).ready(function () {
-                characterid = 'yo1';
+                characterid = document.getElementById("overdrive");
         });
         function RFswitch() {
                 var divs = document.getElementsByClassName("redface4");
