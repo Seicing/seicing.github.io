@@ -44,9 +44,9 @@
 
         <br>
         <div id="app">
-                <table v-for="diaindex in aasb" :style="diaindex.astyle" :id="diaindex.faceid">
+                <table v-for="diaindex in aasb" :id="diaindex.faceid">
                         <tr>
-                                <td style="width: 150px;"> </td>
+                                <td :style="diaindex.astyle"> </td>
                         </tr>
                 </table>
         </div>
@@ -171,7 +171,7 @@
                                                         "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye'] + ".png)," +
                                                         "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png)," +
                                                         "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png);" +
-                                                        "background-repeat: no-repeat;background-position: left center;background-size: 33%;float:left;";
+                                                        "background-repeat: no-repeat;background-position: left center;background-size: 33%;float:left;width: 150px;height: 225px;";
 
                                         }
                                 })
