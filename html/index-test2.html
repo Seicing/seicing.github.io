@@ -101,11 +101,18 @@
                         } else {
                             json[i].sweat = 'sweat1';
                         }
-                        if (json[i].isattach == 1) {
+
+                        if (json[i].isattach == 2) {
                             json[i].attach = 'attach';
+                            json[i].addon = 'addon';
+                        } if (json[i].isattach == 1) {
+                            json[i].attach = 'attach';
+                            json[i].addon = 'addon1';
                         } else {
                             json[i].attach = 'attach1';
+                            json[i].addon = 'addon1';
                         }
+
                         if (json[i].iscloseeye == 1) {
                             json[i].eye = 'eye_default3';
                         } else {
@@ -121,31 +128,31 @@
                             json[i].bstyle = "float:left;";
                             json[i].tablelavivanar = "tablebana";
 
-                            json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
+                            json[i].tr1 = "<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td>"
                             json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
 
                             json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
                                 "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['attach'] + ".png)," +
+                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['addon'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['sweat'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['red_face'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['brow'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['eye'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['mouth'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + "base.png);" +
-                                "background-repeat: no-repeat;background-position: right center;background-size: 40%;";
+                                "background-repeat: no-repeat;background-position: left center;background-size: 40%;";
                         }
 
                         if (json[i].dic == 3) {
                             json[i].bstyle = "float:right;";
                             json[i].tablelavivanar = "tablebana";
 
-                            json[i].tr1 = "<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td>"
-
+                            json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
                             json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
-
 
                             json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
                                 "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['attach'] + ".png)," +
+                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['addon'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['sweat'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['red_face'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/test/" + json[i]['faceid'] + "/" + json[i]['brow'] + ".png)," +
