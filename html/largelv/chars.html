@@ -50,28 +50,28 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div class="attach4" style="position:absolute;z-index:10">
+                                                <div id="attach4" style="position:absolute;z-index:10">
                                                         <img :src="diaindex.attach5">
                                                 </div>
-                                                <div class="addon4" style="position:absolute;z-index:9">
+                                                <div id="addon4" style="position:absolute;z-index:9">
                                                         <img :src="diaindex.addon5">
                                                 </div>
-                                                <div class="sweat4" style="position:absolute;z-index:8">
+                                                <div id="sweat4" style="position:absolute;z-index:8">
                                                         <img :src="diaindex.sweat5">
                                                 </div>
-                                                <div class="redface4" style="position:absolute;z-index:7">
+                                                <div id="redface4" style="position:absolute;z-index:7">
                                                         <img :src="diaindex.redface5">
                                                 </div>
-                                                <div class="brow4" style="position:absolute;z-index:6">
+                                                <div id="brow4" style="position:absolute;z-index:6">
                                                         <img :src="diaindex.brow5">
                                                 </div>
-                                                <div class="eye4" style="position:absolute;z-index:5">
+                                                <div id="eye4" style="position:absolute;z-index:5">
                                                         <img :src="diaindex.eye5">
                                                 </div>
-                                                <div class="mouth4" style="position:absolute;z-index:4">
+                                                <div id="mouth4" style="position:absolute;z-index:4">
                                                         <img :src="diaindex.mouth5">
                                                 </div>
-                                                <div class="base4" style="position:absolute;z-index:3">
+                                                <div id="base4" style="position:absolute;z-index:3">
                                                         <img :src="diaindex.base5">
                                                 </div>
 
@@ -124,23 +124,54 @@
 
         function RFswitch() {
                 RFcheaker = RFcheaker + 1;
+                Comeon();
         }
         function SWswitch() {
                 SWcheaker = SWcheaker + 1;
+                Comeon();
         }
         function ATswitch() {
                 ATcheaker = ATcheaker + 1;
+                Comeon();
         }
         function ONswitch() {
                 ONcheaker = ONcheaker + 1;
+                Comeon();
         }
         function CEswitch() {
                 CEcheaker = CEcheaker + 1;
+                Comeon();
         }
 
 
         function GlobalVar(a) {
                 characterid = a;
+        }
+
+        function Comeon() {
+                if (RFcheaker % 2 == 0) {
+                        document.getElementById("redface4").style.display = "block";
+                } else {
+                        document.getElementById("redface4").style.display = "none";
+                }
+
+                if (SWcheaker % 2 == 0) {
+                        document.getElementById("sweat4").style.display = "block";
+                } else {
+                        document.getElementById("sweat4").style.display = "none";
+                }
+
+                if (ATcheaker % 2 == 0) {
+                        document.getElementById("attach4").style.display = "block";
+                } else {
+                        document.getElementById("attach4").style.display = "none";
+                }
+
+                if (ONcheaker % 2 == 0) {
+                        document.getElementById("addon4").style.display = "block";
+                } else {
+                        document.getElementById("addon4").style.display = "none";
+                }
         }
 
         var imgAll = [];
@@ -157,29 +188,7 @@
                                         for (var i = 0; i < json.length; i++) {
                                                 json[i].faceid = json[i]['name']
 
-                                                if (RFcheaker % 2 == 0) {
-                                                        document.getElementsByClassName("redface4").style.display = "block";
-                                                } else {
-                                                        document.getElementsByClassName("redface4").style.display = "none";
-                                                }
 
-                                                if (SWcheaker % 2 == 0) {
-                                                        document.getElementsByClassName("sweat4").style.display = "block";
-                                                } else {
-                                                        document.getElementsByClassName("sweat4").style.display = "none";
-                                                }
-
-                                                if (ATcheaker % 2 == 0) {
-                                                        document.getElementsByClassName("attach4").style.display = "block";
-                                                } else {
-                                                        document.getElementsByClassName("attach4").style.display = "none";
-                                                }
-
-                                                if (ONcheaker % 2 == 0) {
-                                                        document.getElementsByClassName("addon4").style.display = "block";
-                                                } else {
-                                                        document.getElementsByClassName("addon4").style.display = "none";
-                                                }
 
                                                 if (CEcheaker % 2 == 0) {
                                                         json[i].eye2 = 'eye_default3';
