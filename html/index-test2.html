@@ -116,8 +116,7 @@
                 .then(json => {
                     this.aasb = json
                     for (var i = 0; i < json.length; i++) {
-                        facer = "face_" + json[i]['face']
-                        facer2 = [facer]
+                        facer = eval('face_' + json[i]['face'])
 
                         json[i].charname = json[i]['name']
                         json[i].texter = json[i]['string']
@@ -140,11 +139,11 @@
                         if (json[i].iscloseeye == 1) {
                             json[i].eye = 'eye_default3';
                         } else {
-                            json[i].eye = facer2[0]
+                            json[i].eye = facer[0]
                         }
 
-                        json[i].brow = facer2[1]
-                        json[i].mouth = facer2[2]
+                        json[i].brow = facer[1]
+                        json[i].mouth = facer[2]
 
 
                         if (json[i].dic == 1) {
