@@ -91,27 +91,27 @@
                         json[i].charname = json[i]['name']
                         json[i].texter = json[i]['string']
 
-                        if (json[i].con.include(RF)) {
+                        if (json[i].con.include("RF")) {
                             json[i].red_face = 'red_face';
                         } else {
                             json[i].red_face = 'red_face1';
                         }
-                        if (json[i].con.include(SW)) {
+                        if (json[i].con.include("SW")) {
                             json[i].sweat = 'sweat';
                         } else {
                             json[i].sweat = 'sweat1';
                         }
-                        if (json[i].con.include(AT)) {
+                        if (json[i].con.include("AT")) {
                             json[i].attach = 'attach';
                         } else {
                             json[i].attach = 'attach1';
                         }
-                        if (json[i].con.include(ON)) {
+                        if (json[i].con.include("ON")) {
                             json[i].addon = 'addon';
                         } else {
                             json[i].addon = 'addon1';
                         }
-                        if (json[i].con.include(CE)) {
+                        if (json[i].con.include("CE")) {
                             json[i].eye = 'eye_default3';
                         } else {
                             json[i].eye = facer[0];
@@ -120,7 +120,7 @@
                         json[i].brow = facer[1]
                         json[i].mouth = facer[2]
 
-                        if (json[i].dic == "左") {
+                        if (json[i].dic == 1) {
                             json[i].bstyle = "float:left;";
                             json[i].tablelavivanar = "tablebana";
 
@@ -139,7 +139,7 @@
                                 "background-repeat: no-repeat;background-position: left center;background-size: 40%;";
                         }
 
-                        if (json[i].dic == "右") {
+                        if (json[i].dic == 3) {
                             json[i].bstyle = "float:right;";
                             json[i].tablelavivanar = "tablebana";
 
@@ -158,7 +158,7 @@
                                 "background-repeat: no-repeat;background-position: right center;background-size: 40%;";
                         }
 
-                        if (json[i].dic == "中") {
+                        if (json[i].dic == 2) {
                             json[i].bstyle = "position:relative;left:20%;";
                             json[i].cstyle = "width:0px;";
                             json[i].tablelavivanar = "tablebana2";
