@@ -27,18 +27,29 @@
                         <div class="entry"><div id="reske" style="float: left;width: 275px;">
 </div>
 <div id="reski" style="float: left;max-width: 1500px;">
-        <span id="overdrive">yo1</span><br>
-        <div id="RFswitch"> <a href="#" onclick="RFswitch()">脸红</a></div>
-        <div id="RFswitch2"> <a href="#" onclick="RFswitch2()">脸红</a></div>
-        <div id="SWswitch"> <a href="#" onclick="SWswitch()">流汗</a></div>
-        <div id="SWswitch2"> <a href="#" onclick="SWswitch2()">流汗</a></div>
-        <div id="ATswitch"> <a href="#" onclick="ATswitch()">附件1</a></div>
-        <div id="ATswitch2"> <a href="#" onclick="ATswitch2()">附件1</a></div>
-        <div id="ONswitch"> <a href="#" onclick="ONswitch()">附件2</a></div>
-        <div id="ONswitch2"> <a href="#" onclick="ONswitch2()">附件2</a></div>
-        <div id="CEswitch"> <a href="#" onclick="CEswitch()">闭眼</a></div>
-        <div id="CEswitch2"> <a href="#" onclick="CEswitch2()">闭眼</a></div>
-
+        <div>
+                <span id="overdrive">yo1</span><br>
+                <div style="float:left;" id="RFswitch"> <a href="#" onclick="RFswitch()" style="color: white;">脸红</a>
+                </div>
+                <div style="float:left;" id="RFswitch2"> <a href="#" onclick="RFswitch2()" style="color: lime;">脸红</a>
+                </div>
+                <div style="float:left;" id="SWswitch"> <a href="#" onclick="SWswitch()" style="color: white;">流汗</a>
+                </div>
+                <div style="float:left;" id="SWswitch2"> <a href="#" onclick="SWswitch2()" style="color: lime;">流汗</a>
+                </div>
+                <div style="float:left;" id="ATswitch"> <a href="#" onclick="ATswitch()" style="color: white;">附件1</a>
+                </div>
+                <div style="float:left;" id="ATswitch2"> <a href="#" onclick="ATswitch2()" style="color: lime;">附件1</a>
+                </div>
+                <div style="float:left;" id="ONswitch"> <a href="#" onclick="ONswitch()" style="color: white;">附件2</a>
+                </div>
+                <div style="float:left;" id="ONswitch2"> <a href="#" onclick="ONswitch2()" style="color: lime;">附件2</a>
+                </div>
+                <div style="float:left;" id="CEswitch"> <a href="#" onclick="CEswitch()" style="color: white;">闭眼</a>
+                </div>
+                <div style="float:left;" id="CEswitch2"> <a href="#" onclick="CEswitch2()" style="color: lime;">闭眼</a>
+                </div>
+        </div>
         <br>
         <div id="app">
                 <table style="float:left;" v-for="diaindex in aasb" :id="diaindex.faceid">
