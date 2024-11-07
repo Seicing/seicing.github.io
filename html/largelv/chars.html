@@ -28,16 +28,17 @@
 </div>
 <div id="reski" style="float: left;max-width: 1500px;">
         <span id="overdrive">yo1</span><br>
-        <a id="RFswitch" href="#" onclick="RFswitch()">打开脸红</a>
-        <a id="RFswitch2" href="#" onclick="RFswitch2()">关闭脸红</a>
-        <a id="SWswitch" href="#" onclick="SWswitch()">打开流汗</a>
-        <a id="SWswitch2" href="#" onclick="SWswitch2()">关闭流汗</a>
-        <a id="ATswitch" href="#" onclick="ATswitch()">打开附件1</a>
-        <a id="ATswitch2" href="#" onclick="ATswitch2()">关闭附件1</a>
-        <a id="ONswitch" href="#" onclick="ONswitch()">打开附件2</a>
-        <a id="ONswitch2" href="#" onclick="ONswitch2()">关闭附件2</a>
-        <a id="CEswitch" href="#" onclick="CEswitch()">打开闭眼</a>
-        <a id="CEswitch2" href="#" onclick="CEswitch2()">关闭闭眼</a>
+        <div id="RFswitch"> <a href="#" onclick="RFswitch()">脸红</a></div>
+        <div id="RFswitch2"> <a href="#" onclick="RFswitch2()">脸红</a></div>
+        <div id="SWswitch"> <a href="#" onclick="SWswitch()">流汗</a></div>
+        <div id="SWswitch2"> <a href="#" onclick="SWswitch2()">流汗</a></div>
+        <div id="ATswitch"> <a href="#" onclick="ATswitch()">附件1</a></div>
+        <div id="ATswitch2"> <a href="#" onclick="ATswitch2()">附件1</a></div>
+        <div id="ONswitch"> <a href="#" onclick="ONswitch()">附件2</a></div>
+        <div id="ONswitch2"> <a href="#" onclick="ONswitch2()">附件2</a></div>
+        <div id="CEswitch"> <a href="#" onclick="CEswitch()">闭眼</a></div>
+        <div id="CEswitch2"> <a href="#" onclick="CEswitch2()">闭眼</a></div>
+
         <br>
         <div id="app">
                 <table style="float:left;" v-for="diaindex in aasb" :id="diaindex.faceid">

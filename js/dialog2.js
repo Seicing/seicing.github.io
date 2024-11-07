@@ -21,6 +21,7 @@ function RFswitch() {
     }
     document.getElementById("RFswitch").style.display = "none";
     document.getElementById("RFswitch2").style.display = "block";
+    document.getElementById("RFswitch2").style.color = "lime";
 }
 function RFswitch2() {
     var divs = document.getElementsByClassName("redface4");
@@ -29,6 +30,7 @@ function RFswitch2() {
     }
     document.getElementById("RFswitch2").style.display = "none";
     document.getElementById("RFswitch").style.display = "block";
+    document.getElementById("RFswitch").style.color = "white";
 }
 function SWswitch() {
     var divs = document.getElementsByClassName("sweat4");
@@ -37,6 +39,7 @@ function SWswitch() {
     }
     document.getElementById("SWswitch").style.display = "none";
     document.getElementById("SWswitch2").style.display = "block";
+    document.getElementById("SWswitch2").style.color = "lime";
 }
 function SWswitch2() {
     var divs = document.getElementsByClassName("sweat4");
@@ -45,6 +48,7 @@ function SWswitch2() {
     }
     document.getElementById("SWswitch2").style.display = "none";
     document.getElementById("SWswitch").style.display = "block";
+    document.getElementById("SWswitch").style.color = "white";
 }
 function ATswitch() {
     var divs = document.getElementsByClassName("attach4");
@@ -53,6 +57,7 @@ function ATswitch() {
     }
     document.getElementById("ATswitch").style.display = "none";
     document.getElementById("ATswitch2").style.display = "block";
+    document.getElementById("ATswitch2").style.color = "lime";
 }
 function ATswitch2() {
     var divs = document.getElementsByClassName("attach4");
@@ -61,6 +66,7 @@ function ATswitch2() {
     }
     document.getElementById("ATswitch2").style.display = "none";
     document.getElementById("ATswitch").style.display = "block";
+    document.getElementById("ATswitch").style.color = "white";
 }
 function ONswitch() {
     var divs = document.getElementsByClassName("addon4");
@@ -69,6 +75,7 @@ function ONswitch() {
     }
     document.getElementById("ONswitch").style.display = "none";
     document.getElementById("ONswitch2").style.display = "block";
+    document.getElementById("ONswitch2").style.color = "lime";
 }
 function ONswitch2() {
     var divs = document.getElementsByClassName("addon4");
@@ -77,6 +84,7 @@ function ONswitch2() {
     }
     document.getElementById("ONswitch2").style.display = "none";
     document.getElementById("ONswitch").style.display = "block";
+    document.getElementById("ONswitch").style.color = "white";
 }
 function CEswitch() {
     var divs = document.getElementsByClassName("eyeclose4");
@@ -89,6 +97,7 @@ function CEswitch() {
     }
     document.getElementById("CEswitch").style.display = "none";
     document.getElementById("CEswitch2").style.display = "block";
+    document.getElementById("CEswitch2").style.color = "lime";
 }
 function CEswitch2() {
     var divs = document.getElementsByClassName("eyeclose4");
@@ -101,6 +110,7 @@ function CEswitch2() {
     }
     document.getElementById("CEswitch2").style.display = "none";
     document.getElementById("CEswitch").style.display = "block";
+    document.getElementById("CEswitch").style.color = "white";
 }
 
 var imgAll = [];
