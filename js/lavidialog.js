@@ -19,4 +19,4 @@ let face_endure = ["eye_default1", "eye_default2", "eye_default3", "brow_default
 let face_uncomfortable = ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_cry"];
 let face_angry = ["eye_default1", "eye_default2", "eye_default3", "brow_angry", "mouth_angry"];
 let face_excited = ["eye_default1", "eye_default2", "eye_default3", "brow_angry", "mouth_excited"];
-let face_terrible = ["eye_terrible", "eye_terrible", "eye_terrible", "brow_terrible", "mouth_serene"];
+let face_terrible = ["eye_terrible", "eye_terrible", "eye_terrible", "eye_terrible", "mouth_serene"];
