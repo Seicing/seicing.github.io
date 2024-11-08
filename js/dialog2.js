@@ -115,7 +115,7 @@ const vm = new Vue({
             .then(json => {
                 this.aasb = json
                 for (var i = 0; i < json.length; i++) {
-                    json[i].faceid = json[i]['name']
+                    json[i].faceid = json[i]['name'].slice(5)
 
                     json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "attach.png"
                     json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "addon.png"
