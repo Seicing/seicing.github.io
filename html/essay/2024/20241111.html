@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/essay.js"></script>
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
+<div style="position:relative;">
+    <span style="font-family:宋体">2024.11.11</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="https://seicing.com/res/131414.png" alt="">
+    </div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="310"></div>
+有时候在外面用手机打字制作剧情文本时，可以使用一定的格式记录所有的json信息：<br>
+角色名【表情】文本【其他】<br>
+例：<br>
+世清【冷静】我也不想把事情闹大<br>
+<br>
+最后的【其他】不一定需要，是用来记录'con'的内容的<br>
+使用python文档进行处理，以下是思路：<br>
+<br>
+世清【，这部分会转化成dic,name,char三个信息<br>
+dic记录了在网页里的文本位置，一般只有世清是1，旁白是2，其他角色是3<br>
+name是显示的名字，char是调用的文件夹的id<br>
+这部分最后转化得来的信息是“1,世清,seicing1,”(默认是皮肤1，根据情况更变皮肤)<br>
+<br>
+冷静】，这部分会转化成face信息<br>
+最后转化得来的信息是“serene,”
+<br>
+最后留下来的就是字符串信息了，字符串信息后面跟着的【其他】是con的信息，由于字符串不一定后面会跟着其他，所以字符串后面的逗号信息是通过【其他】添加的<br>
+例：【脸红流汗】→“,RFSW”，在前方加逗号<br>
+这部分一定要按照脸红、流汗、闭眼的顺序写<br>
+全部添加完毕后，在头顶添加头标"dic,name,char,face,string,con"<br><br><br>
+
+转化的例子：<br>
+世清【冷静】我也不想把事情闹大<br>
+世清【斜视】毕竟这件事传出去了对谁都不好【流汗】<br>
+经过脚本处理后的csv数据：<br>
+dic,name,char,face,string,con<br>
+1,世清,seicing1,serene,我也不想把事情闹大<br>
+1,世清,seicing1,sideeye,毕竟这件事传出去了对谁都不好,SW<br>
+最后经过最终处理可以得出json数据<br>
+[<br>
+&nbsp{<br>
+&nbsp &nbsp "dic": 1,<br>
+&nbsp &nbsp "name": "世清",<br>
+&nbsp &nbsp "char": "seicing1",<br>
+&nbsp &nbsp "face": "serene",<br>
+&nbsp &nbsp "string": "我也不想把事情闹大 ",<br>
+&nbsp &nbsp "con": ""<br>
+&nbsp},<br>
+&nbsp{<br>
+&nbsp &nbsp "dic": 1,<br>
+&nbsp &nbsp "name": "世清",<br>
+&nbsp &nbsp "char": "seicing1",<br>
+&nbsp &nbsp "face": "sideeye",<br>
+&nbsp &nbsp "string": "毕竟这件事传出去了对谁都不好",<br>
+&nbsp &nbsp "con": "SW"<br>
+&nbsp}<br>
+]<br>
+
+
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<style>
+    li {
+        line-height: 1.8
+    }
+</style>
+
+</html>
