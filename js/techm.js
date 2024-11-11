@@ -56,7 +56,7 @@ let ayanami = {
 
 
     "大狩猎": "大狩猎<br>Great Hunt<br>选中一群野生动物，大幅增加它们的数量。如果没有野生动物，奥丁会召唤出少量动物。每个时代都会变得更强",
-    "狂暴": "狂暴<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>狂战士每失去1%生命值，攻击速度+2.5%",
+    "狂暴": "狂暴<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>狂战士每失去1%生命值，攻击力和移动速度+0.25%",
 
     "间谍": "间谍<br>Spy<br>获得所选敌方单位的视线",
     "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25 <br>单位可缓慢获得视野内其他自然生物的视野",
