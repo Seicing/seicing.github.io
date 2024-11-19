@@ -52,10 +52,10 @@ let ayanami = {
     "轻质横梁已强化": "轻质横梁(已强化)<br>Lightweight Beams(Improved)<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>轻型冲车攻击速度提升 +30%，战场工程时间减少 -75%。 如果已经研究过轻质横梁，攻击速度提升 +10%，战场工程时间减少 -25%",
 
     "攻城武器": "攻城武器<br>Siege Works<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>新的木工技术可使攻城部队的生命值 +20%",
-    "生物学": "生物学<br>Biology<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +30%",
+    "生物学": "生物学<br>Biology<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +25%",
     "燃烧箭": "燃烧箭<br>Incendiary Arrows<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>易燃弹药可为非火药远程单位在攻击建筑物时提供攻城箭矢或弩箭，并使其伤害力 +20%",
     "宫廷建筑师": "宫廷建筑师<br>Court Architects<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有建筑的生命值 +30%",
-    "精锐军队战术": "精锐军队战术<br>Elite Army Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>训练精锐步兵可提高战斗力。近战步兵获得伤害力 +20%和近战护甲 +4",
+    "精锐军队战术": "精锐军队战术<br>Elite Army Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>训练精锐步兵可提高战斗力。近战步兵获得伤害力 +20%和近战护甲 +4",
 
     "化学": "化学<br>Chemistry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>650  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>炼金术研究的进步使所有火药攻城武器的伤害加成 +25%",
 
@@ -110,7 +110,7 @@ let ayanami = {
 
     "传教": "传教<br>Proselytization<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>伊玛目不需持有圣物便可招降单位，但只能以一个单位为目标",
 
-    "新月沃土": "新月沃土<br>Fertile Crescent<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>经济偏殿科技，将经济型建筑和房屋的成本降低 35%",
+    "新月沃土": "新月沃土<br>Fertile Crescent<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>经济偏殿科技，将经济型建筑和房屋的成本降低 30%",
     "农业": "农业<br>Agriculture<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>经济偏殿科技，村民在农田的采集速率 +15%",
     "强化加工": "强化加工<br>Improved Processing<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>经济偏殿科技，村民存放的资源额外 +8%",
 
@@ -137,7 +137,7 @@ let ayanami = {
     "骑士精神": "骑士精神<br>Chivalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>皇家骑士在脱离战斗后每 1 秒可恢复 1 生命值",
     "高鞍尾马鞍": "高鞍尾马鞍<br>Cantled Saddles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>皇家骑士在冲锋后的伤害加成从 +3 提升为 +10",
     "募兵奖励": "募兵奖励<br>Enlistment Incentives<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>提高法兰西人的影响力，使单位的成本额外 -5%",
-    "皇室血统": "皇室血统<br>Royal Bloodlines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +40%",
+    "皇室血统": "皇室血统<br>Royal Bloodlines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +35%",
 
 
 
@@ -146,19 +146,19 @@ let ayanami = {
     "军事节庆": "军事节庆<br>Military festival<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <br>军事单位生产速度 +100%，持续 90 秒",
     "攻城节庆": "攻城节庆<br>Siege festival<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <br>攻城锤、手推炮、配重式巨型投石机和火炬的伤害 +50%，持续 90 秒。如完成舰载炮研究，可影响扭力弩炮船",
 
-    "圈地": "圈地<br>Enclosures<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>每一块有村民耕种的农田圈地每 5 秒会产生 +1 黄金",
+    "圈地": "圈地<br>Enclosures<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>每一块有村民耕种的农田圈地每 6 秒会产生 +1 黄金",
     "重装甲": "重装甲<br>Armor Clad<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武士的远程和近战护甲 +2",
     "海军部": "海军部<br>Admiralty<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>战斗船的攻击范围 +1",
     "预备营地": "预备营地<br>Setup Camp<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>长弓兵可以展开营地，每秒恢复1生命值",
     "万箭齐发": "万箭齐发<br>Arrow Volley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>长弓兵获得万箭齐发能力，此项被激活的能力可将长弓兵的攻击所需时间减少 1 秒，持续 6 秒",
     "散射炮弹": "散射炮弹<br>Shattering Projectiles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>巨型投石机的抛射物受撞击时会碎裂，增加效果范围",
-    "城堡网络": "城堡网络<br>Network of Citadels<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>150  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>将城堡网络的攻击速度加成从 +20% 提高至 +40%",
+    "城堡网络": "城堡网络<br>Network of Citadels<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>150  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>将城堡网络的攻击速度加成从 +20% 提高至 +30%",
     "温嘉德军队": "温嘉德军队<br>Wynguard Army<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>生产2个长矛兵、2个弩手、1个配重式巨型投石机",
     "温嘉德掠夺者": "温嘉德掠夺者<br>Wynguard Raiders<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>生产骑士和骑手各3个",
 
     "身经百战": "身经百战<br>Battle Hardened<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>皇宫卫兵的生命值 +30",
     "霹雳弹": "霹雳弹<br>Thunderclap Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>战船发动一窝蜂攻击",
-    "科举制": "科举制<br>Imperial Examination <br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>将朝廷命官的最大携带黄金数量从 +40 提升至 +80",
+    "科举制": "科举制<br>Imperial Examination <br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>将朝廷命官的最大携带黄金数量从 +40 提升至 +70",
     "额外材料": "额外材料<br>Extra Materials<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>75  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>石墙塔、哨站、烈日瓮城、长城门楼、城堡会修理附近受损的石墙、木栅栏、木门和石墙门。每秒修理 20 生命值",
     "装填训练": "装填训练<br>Reload Drills<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>手推炮的攻击速度 +33%",
     "加装炮管": "加装炮管<br>Additional Barrels<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>一窝蜂获得 2 额外的火箭",
@@ -173,8 +173,8 @@ let ayanami = {
     "蚕丝弓弦": "蚕丝弓弦<br>Silk Bowstrings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>步弓手射程 +1.5，骑射手射程 +0.75",
     "蚕丝弓弦sul": "蚕丝弓弦<br>Silk Bowstrings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>步弓手射程 +1.5，骑射手射程 +0.75",
 
-    "蛇纹石粉末": "蛇纹石粉末<br>Serpentine Powder<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>使用新型火药，火枪兵对近战步兵的伤害 +8，并在武器开火后短暂提高移动速度",
-    "蛇纹石粉末sul": "蛇纹石粉末<br>Serpentine Powder<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>使用新型火药，火枪兵对近战步兵的伤害 +8，并在武器开火后短暂提高移动速度",
+    "蛇纹石粉末": "蛇纹石粉末<br>Serpentine Powder<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>使用新型火药，火枪兵对近战步兵的伤害 +5，并在武器开火后短暂提高移动速度",
+    "蛇纹石粉末sul": "蛇纹石粉末<br>Serpentine Powder<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>使用新型火药，火枪兵对近战步兵的伤害 +5，并在武器开火后短暂提高移动速度",
 
 
     "海盗行为": "海盗行为<br>Piracy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>击沉一艘敌方船只时可获得 +25 木材和 +25 黄金",
@@ -294,7 +294,7 @@ let ayanami = {
     "几何学sul": "几何学<br>Geometry<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>540<br>巨型投石机的伤害增加 +20%",
 
     "攻城武器sul": "攻城武器<br>Siege Works<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>新的木工技术可使攻城部队的生命值 +20%",
-    "生物学sul": "生物学<br>Biology<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1320<br>所有骑兵的生命值 +30%",
+    "生物学sul": "生物学<br>Biology<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1320<br>所有骑兵的生命值 +25%",
     "燃烧箭sul": "燃烧箭<br>Incendiary Arrows<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1320<br>易燃弹药可为非火药远程单位在攻击建筑物时提供攻城箭矢或弩箭，并使其伤害力 +20%",
     "宫廷建筑师sul": "宫廷建筑师<br>Court Architects<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>所有建筑的生命值 +30%",
     "精锐军队战术sul": "精锐军队战术<br>Elite Army Tactics<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1320<br>训练精锐步兵可提高战斗力。近战步兵获得伤害力 +20%和近战护甲 +4",
@@ -371,8 +371,8 @@ let ayanami = {
     "几何学已强化": "几何学(已强化)<br>Geometry(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>325 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机的伤害增加 +30%。 如果已完成几何学的研究，则伤害增加 +10%",
 
     "攻城武器已强化": "攻城武器(已强化)<br>Siege Works(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1000    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>新的木工技术可使攻城部队的生命值 +30%。如果已完成攻城武器研究，则其生命值 +10%",
-    "生物学已强化": "生物学(已强化)<br>Biology(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +40%。 如果已完成生物学研究，则 +10%",
-    "精锐军队战术已强化": "精锐军队战术(已强化)<br>Elite Army Tactics(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1600    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>训练精锐步兵可提高战斗力。近战步兵获得伤害力 +30%和近战护甲 +6。如果已完成精锐军队战术的研究，则伤害力 +10%，近战护甲 +2",
+    "生物学已强化": "生物学(已强化)<br>Biology(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +35%。 如果已完成生物学研究，则 +10%",
+    "精锐军队战术已强化": "精锐军队战术(已强化)<br>Elite Army Tactics(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1200    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>训练精锐步兵可提高战斗力。近战步兵获得伤害力 +30%和近战护甲 +6。如果已完成精锐军队战术的研究，则伤害力 +10%，近战护甲 +2",
 
     "草药已强化": "草药(已强化)<br>Herbal Medicine(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>275    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>宗教单位的治疗速率 +90%。 如果已完成草药研究，则 +30%",
     "什一税仓库已强化": "什一税仓库(已强化)<br>Tithe Barns(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>放置在祈祷帐篷里的圣物每分钟会提供 +60 食物、+60 木材和 +15 石料收入。 如果已完成什一税仓库研究，则食物和木材收入分别 +20，石料收入 +5",
@@ -513,7 +513,7 @@ let ayanami = {
     "拜占庭水池辩证法": "拜占庭水池辩证法<br>水池 - 辩证法：根据水位，水池影响力范围内增加30%/60%/90%/120%/150%研究效率",
     "拜占庭水池保护": "拜占庭水池保护<br>水池 - 保护：根据水位，水池影响力范围内建筑物减少5%/10%/15%/20%/25%受到的伤害",
 
-    "雇佣长弓兵": "雇佣 5个长弓兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
+    "雇佣长弓兵": "雇佣 5个长弓兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>520 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
     "雇佣国土佣仆": "雇佣 3个国土佣仆<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
     "雇佣射击军": "雇佣 3个射击军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>720 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90",
 
@@ -547,31 +547,31 @@ let ayanami = {
     "战地指挥官": "战地指挥官<br>Field Commander<br>解锁贞德的“天堂之力”能力，同时使得等级3的动员技能的数量提高到7个",
 
 
-    "朱子遗训唐朝效果": "朱子遗训唐朝效果<br>盛世王朝 - 唐朝：建造地标的成本-15%",
-    "朱子遗训宋朝效果": "朱子遗训宋朝效果<br>盛世王朝 - 宋朝：建造经济建筑的成本-30%",
-    "朱子遗训元朝效果": "朱子遗训元朝效果<br>盛世王朝 - 元朝：所有单位成本-10%",
-    "朱子遗训明朝效果": "朱子遗训明朝效果<br>盛世王朝 - 明朝：独特部队攻击力+15%",
+    "朱子遗训唐朝效果": "朱子遗训唐朝效果<br>盛世王朝 - 唐朝：建造地标的成本 -15%",
+    "朱子遗训宋朝效果": "朱子遗训宋朝效果<br>盛世王朝 - 宋朝：建造经济建筑的成本 -30%",
+    "朱子遗训元朝效果": "朱子遗训元朝效果<br>盛世王朝 - 元朝：所有单位成本 -10%",
+    "朱子遗训明朝效果": "朱子遗训明朝效果<br>盛世王朝 - 明朝：独特部队攻击力 +20%",
     "朱子遗训朝廷命官效果": "朱子遗训朝廷命官效果<br>朝廷命官：监督提升150%效率，研发地方巡查后提高到300%",
-    "其疾如风": "其疾如风<br>孙武祠 - 其疾如风：激活后，步兵单位移动速度+15%",
-    "不动如山": "不动如山<br>孙武祠 - 不动如山：激活后，单位在脱离战斗时每秒恢复2生命值",
-    "侵略如火": "侵略如火<br>孙武祠 - 侵略如火：激活后，骑兵单位伤害+20%",
-    "其徐如林": "其徐如林<br>孙武祠 - 其徐如林：激活后，防御设施和火药部队射程+1",
-    "朝廷命官资源点监督": "朝廷命官资源点监督<br>监督：监督的资源点使得村民上交的资源+20%",
-    "江南塔免费": "江南塔免费<br>江南塔：兵营、靶场或马厩建成时可免费获得1个长矛兵、诸葛弩或骑手",
+    "其疾如风": "其疾如风<br>孙武祠 - 其疾如风：激活后，步兵单位移动速度 +15%",
+    "不动如山": "不动如山<br>孙武祠 - 不动如山：激活后，单位在脱离战斗时每秒恢复 2 生命值",
+    "侵略如火": "侵略如火<br>孙武祠 - 侵略如火：激活后，骑兵单位伤害 +20%",
+    "其徐如林": "其徐如林<br>孙武祠 - 其徐如林：激活后，防御设施和火药部队射程 +1",
+    "朝廷命官资源点监督": "朝廷命官资源点监督<br>监督：监督的资源点使得村民上交的资源 +20%",
+    "江南塔免费": "江南塔免费<br>江南塔：兵营、靶场或马厩建成时可免费获得 1 个长矛兵、诸葛弩或骑手",
 
-    "朱子遗训唐朝": "唐朝<br>Tang Dynasty<br>建造地标的成本-15%<br>解锁村庄",
-    "朱子遗训宋朝": "宋朝<br>Song Dynasty<br>建造非军事建筑的成本-30%<br>解锁谷仓",
-    "朱子遗训元朝": "元朝<br>Yuan Dynasty<br>所有单位成本-10%<br>解锁宝塔",
-    "朱子遗训明朝": "明朝<br>Ming Dynasty<br>独特部队攻击力+15%",
-    "中国唐朝": "唐朝<br>Tang Dynasty<br>侦察兵视野+30%<br>解锁村庄",
-    "中国宋朝": "宋朝<br>Song Dynasty<br>城镇中心生产速度+33%<br>解锁谷仓和诸葛弩手",
-    "中国元朝": "元朝<br>Yuan Dynasty<br>部队+15%移动速度<br>解锁宝塔和火长矛骑兵",
-    "中国明朝": "明朝<br>Ming Dynasty<br>所有军事部队+15%生命值<br>解锁掷弹兵",
+    "朱子遗训唐朝": "唐朝<br>Tang Dynasty<br>建造地标的成本 -15%<br>解锁村庄",
+    "朱子遗训宋朝": "宋朝<br>Song Dynasty<br>建造非军事建筑的成本 -30%<br>解锁谷仓",
+    "朱子遗训元朝": "元朝<br>Yuan Dynasty<br>所有单位成本 -10%<br>解锁宝塔",
+    "朱子遗训明朝": "明朝<br>Ming Dynasty<br>独特部队攻击力 +15%",
+    "中国唐朝": "唐朝<br>Tang Dynasty<br>侦察兵视野 +30%<br>解锁村庄",
+    "中国宋朝": "宋朝<br>Song Dynasty<br>城镇中心生产速度 +33%<br>解锁谷仓和诸葛弩手",
+    "中国元朝": "元朝<br>Yuan Dynasty<br>部队 +15%移动速度<br>解锁宝塔和火长矛骑兵",
+    "中国明朝": "明朝<br>Ming Dynasty<br>所有军事部队 +15%生命值<br>解锁掷弹兵",
 
-    "其疾如风2": "其疾如风<br>Divine Haste<br>激活后，步兵单位移动速度+15%",
-    "不动如山2": "不动如山<br>Divine Vitality<br>激活后，单位在脱离战斗时每秒恢复2生命值",
-    "侵略如火2": "侵略如火<br>Divine Charge<br>激活后，骑兵单位伤害+20%",
-    "其徐如林2": "其徐如林<br>Divine Defense<br>激活后，防御设施和火药部队射程+1",
+    "其疾如风2": "其疾如风<br>Divine Haste<br>激活后，步兵单位移动速度 +15%",
+    "不动如山2": "不动如山<br>Divine Vitality<br>激活后，单位在脱离战斗时每秒恢复 2 生命值",
+    "侵略如火2": "侵略如火<br>Divine Charge<br>激活后，骑兵单位伤害 +20%",
+    "其徐如林2": "其徐如林<br>Divine Defense<br>激活后，防御设施和火药部队射程 +1",
 
     "龙骑团高级教士限制": "龙骑团高级教士限制<br>龙骑士团：高级教士无法激励村民提高村民效率",
 
@@ -700,7 +700,7 @@ let ayanami = {
     "蒙古早期马厩": "蒙古早期马厩<br>伟大统治：可以在时代1建造",
     "蒙古游牧": "蒙古游牧<br>伟大统治：可以打包移动",
     "蒙古城镇中心限制": "蒙古城镇中心限制<br>伟大统治：打包移动时生命值是2400",
-    "蒙古城镇中心造价": "蒙古城镇中心造价<br>伟大统治：不需要石头成本，而是使用850木材建造",
+    "蒙古城镇中心造价": "蒙古城镇中心造价<br>伟大统治：不需要石头成本，而是使用800木材建造",
     "蒙古石头贸易限制": "蒙古石头贸易限制<br>伟大统治：无法交易石头，无法开采石头",
     "蒙古哨站效果": "蒙古哨站效果<br>伟大统治：哨站为骑兵和商人提供15%移动速度加成",
     "敖包双倍": "敖包双倍<br>影响力系统：敖包影响力范围内可以花费石头双倍训练部队(村民为125石头)，并加快牧场的效率",
