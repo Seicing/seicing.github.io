@@ -13,9 +13,6 @@ $(document).ready(function () {
     characterid = document.getElementById("overdrive").innerHTML;
 });
 
-$("img").error(function () {
-    $(this).attr("src", "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/base/base.png");
-});
 
 function RFswitch() {
     var divs = document.getElementsByClassName("redface4");
