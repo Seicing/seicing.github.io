@@ -108,6 +108,7 @@ const vm = new Vue({
     el: '#app',
     data: {
         aasb: [],
+        condition: false,
     },
     methods: {
         relse: function () {
