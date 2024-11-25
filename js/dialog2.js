@@ -110,7 +110,7 @@ const vm = new Vue({
         aasb: [],
     },
     methods: {
-        relse() {
+        relse: function () {
             this.condition = true;
         }
     },
