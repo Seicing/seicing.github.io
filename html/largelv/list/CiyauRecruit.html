@@ -60,10 +60,10 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div id="aasbo" style="position:absolute;z-index:100;display:none">
+                                                <div v-show="condition"
+                                                        style="position:absolute;z-index:100;display:none">
                                                         <img src='https://seicing.com/res/n.png' style="width: 150px;">
                                                 </div>
-
                                                 <div class="attach4" style="position:absolute;z-index:50;display:none">
                                                         <img :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
@@ -136,10 +136,6 @@
 
 <script>
         $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
-        function relse() {
-                document.getElementById("aasbo").style.display = "block";
-        };
-
         $(document).ready(function () {
                 RFswitch2();
                 SWswitch2();

@@ -109,6 +109,11 @@ const vm = new Vue({
     data: {
         aasb: [],
     },
+    methods: {
+        relse() {
+            this.condition = true;
+        }
+    },
     created() {
         fetch('https://seicing.com/js/dia/dialog.json')
             .then(response => response.json())
@@ -116,7 +121,7 @@ const vm = new Vue({
                 this.aasb = json
                 for (var i = 0; i < json.length; i++) {
                     json[i].faceid = json[i]['name'].slice(5)
-
+                    json[i].faceid937 = "no_" + json[i]['faceid']
                     json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "attach.png"
                     json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "addon.png"
                     json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "sweat.png"
@@ -131,4 +136,7 @@ const vm = new Vue({
                 }
             })
     }
+
+
 })
+
