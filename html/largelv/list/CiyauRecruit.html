@@ -60,8 +60,8 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div style="position:absolute;z-index:100;display:none">
-                                                        <img id="aasbo" src='https://seicing.com/res/n.png' style="width: 150px;">
+                                                <div id="aasbo" style="position:absolute;z-index:100;display:none">
+                                                        <img src='https://seicing.com/res/n.png' style="width: 150px;">
                                                 </div>
 
                                                 <div class="attach4" style="position:absolute;z-index:50;display:none">
@@ -139,6 +139,7 @@
         function relse() {
                 document.getElementById("aasbo").style.display = "block";
         };
+
         $(document).ready(function () {
                 RFswitch2();
                 SWswitch2();
