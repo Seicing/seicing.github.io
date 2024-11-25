@@ -60,41 +60,39 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
+                                                <div style="position:absolute;z-index:100;display:none">
+                                                        <img id="aasbo" src='https://seicing.com/res/n.png' style="width: 150px;">
+                                                </div>
+
                                                 <div class="attach4" style="position:absolute;z-index:50;display:none">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.attach5"
-                                                                style="width: 150px;">
+                                                        <img :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
                                                 <div class="addon4" style="position:absolute;z-index:49;display:none">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.addon5"
-                                                                style="width: 150px;">
+                                                        <img :src="diaindex.addon5" style="width: 150px;">
                                                 </div>
                                                 <div class="sweat4" style="position:absolute;z-index:48;display:none">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.sweat5"
-                                                                style="width: 150px;">
+                                                        <img :src="diaindex.sweat5" style="width: 150px;">
                                                 </div>
                                                 <div class="redface4" style="position:absolute;z-index:47;display:none">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.redface5"
-                                                                style="width: 150px;">
+                                                        <img :src="diaindex.redface5" style="width: 150px;">
                                                 </div>
                                                 <div class="brow4" style="position:absolute;z-index:6">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.brow5"
+                                                        <img onerror="relse()" :src="diaindex.brow5"
                                                                 style="width: 150px;" id="brow3">
                                                 </div>
                                                 <div class="eyeclose4" style="position:absolute;z-index:5;display:none">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.eyeclose5"
-                                                                style="width: 150px;">
+                                                        <img :src="diaindex.eyeclose5" style="width: 150px;">
                                                 </div>
                                                 <div class="eye4" style="position:absolute;z-index:4">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.eye5"
+                                                        <img onerror="relse()" :src="diaindex.eye5"
                                                                 style="width: 150px;" id="eye3">
                                                 </div>
                                                 <div class="mouth4" style="position:absolute;z-index:7">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.mouth5"
+                                                        <img onerror="relse()" :src="diaindex.mouth5"
                                                                 style="width: 150px;" id="mouth3">
                                                 </div>
                                                 <div class="base4" style="position:absolute;z-index:2">
-                                                        <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.base5"
-                                                                style="width: 150px;">
+                                                        <img :src="diaindex.base5" style="width: 150px;">
                                                 </div>
 
                                         </div>
@@ -138,6 +136,9 @@
 
 <script>
         $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
+        function relse() {
+                document.getElementById("aasbo").style.display = "block";
+        };
         $(document).ready(function () {
                 RFswitch2();
                 SWswitch2();
