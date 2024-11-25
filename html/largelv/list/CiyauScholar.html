@@ -28,30 +28,30 @@
 </div>
 <div id="reski" style="float: left;max-width: 1500px;">
         <div>
-                <span id="overdrive">seicing1</span><br>
-                <div style="float:left;" id="RFswitch"> <a href="#" onclick="RFswitch()" style="color: white;">脸红</a>
+                <span id="overdrive">CiyauScholar</span><br>
+                <div style="float:left;" id="RFswitch"> <a href="#" onclick="RFswitch()" style="color: gray;">脸红</a>
                 </div>
-                <div style="float:left;" id="RFswitch2"> <a href="#" onclick="RFswitch2()" style="color: lime;">脸红</a>
-                </div>
-                <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="SWswitch"> <a href="#" onclick="SWswitch()" style="color: white;">流汗</a>
-                </div>
-                <div style="float:left;" id="SWswitch2"> <a href="#" onclick="SWswitch2()" style="color: lime;">流汗</a>
+                <div style="float:left;" id="RFswitch2"> <a href="#" onclick="RFswitch2()" style="color: red;">脸红</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="ATswitch"> <a href="#" onclick="ATswitch()" style="color: white;">附件</a>
+                <div style="float:left;" id="SWswitch"> <a href="#" onclick="SWswitch()" style="color: gray;">流汗</a>
                 </div>
-                <div style="float:left;" id="ATswitch2"> <a href="#" onclick="ATswitch2()" style="color: lime;">附件</a>
-                </div>
-                <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="ONswitch"> <a href="#" onclick="ONswitch()" style="color: white;">特殊</a>
-                </div>
-                <div style="float:left;" id="ONswitch2"> <a href="#" onclick="ONswitch2()" style="color: lime;">特殊</a>
+                <div style="float:left;" id="SWswitch2"> <a href="#" onclick="SWswitch2()" style="color: red;">流汗</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="CEswitch"> <a href="#" onclick="CEswitch()" style="color: white;">闭眼</a>
+                <div style="float:left;" id="ATswitch"> <a href="#" onclick="ATswitch()" style="color: gray;">附件</a>
                 </div>
-                <div style="float:left;" id="CEswitch2"> <a href="#" onclick="CEswitch2()" style="color: lime;">闭眼</a>
+                <div style="float:left;" id="ATswitch2"> <a href="#" onclick="ATswitch2()" style="color: red;">附件</a>
+                </div>
+                <div style="float:left;">&nbsp</div>
+                <div style="float:left;" id="ONswitch"> <a href="#" onclick="ONswitch()" style="color: gray;">特殊</a>
+                </div>
+                <div style="float:left;" id="ONswitch2"> <a href="#" onclick="ONswitch2()" style="color: red;">特殊</a>
+                </div>
+                <div style="float:left;">&nbsp</div>
+                <div style="float:left;" id="CEswitch"> <a href="#" onclick="CEswitch()" style="color: gray;">闭眼</a>
+                </div>
+                <div style="float:left;" id="CEswitch2"> <a href="#" onclick="CEswitch2()" style="color: red;">闭眼</a>
                 </div>
         </div>
         <br>
@@ -60,11 +60,11 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div class="attach4" style="position:absolute;z-index:50;">
+                                                <div class="attach4" style="position:absolute;z-index:50;display:none">
                                                         <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.attach5"
                                                                 style="width: 150px;">
                                                 </div>
-                                                <div class="addon4" style="position:absolute;z-index:49;">
+                                                <div class="addon4" style="position:absolute;z-index:49;display:none">
                                                         <img onerror="this.src='https://seicing.com/res/n.png'" :src="diaindex.addon5"
                                                                 style="width: 150px;">
                                                 </div>
@@ -107,6 +107,8 @@
         </div>
 </div>
 
+
+
                         </div>
 
                     </div>
@@ -139,8 +141,8 @@
         $(document).ready(function () {
                 RFswitch2();
                 SWswitch2();
-                ATswitch();
-                ONswitch();
+                ATswitch2();
+                ONswitch2();
                 CEswitch2();
         });
 </script>
