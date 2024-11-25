@@ -77,18 +77,18 @@
                                                         <img :src="diaindex.redface5" style="width: 150px;">
                                                 </div>
                                                 <div class="brow4" style="position:absolute;z-index:6">
-                                                        <img onerror="relse()" :src="diaindex.brow5"
+                                                        <img @error="relse()" :src="diaindex.brow5"
                                                                 style="width: 150px;" id="brow3">
                                                 </div>
                                                 <div class="eyeclose4" style="position:absolute;z-index:5;display:none">
                                                         <img :src="diaindex.eyeclose5" style="width: 150px;">
                                                 </div>
                                                 <div class="eye4" style="position:absolute;z-index:4">
-                                                        <img onerror="relse()" :src="diaindex.eye5"
-                                                                style="width: 150px;" id="eye3">
+                                                        <img @error="relse()" :src="diaindex.eye5" style="width: 150px;"
+                                                                id="eye3">
                                                 </div>
                                                 <div class="mouth4" style="position:absolute;z-index:7">
-                                                        <img onerror="relse()" :src="diaindex.mouth5"
+                                                        <img @error="relse()" :src="diaindex.mouth5"
                                                                 style="width: 150px;" id="mouth3">
                                                 </div>
                                                 <div class="base4" style="position:absolute;z-index:2">
