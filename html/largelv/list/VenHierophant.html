@@ -28,7 +28,7 @@
 </div>
 <div id="reski" style="float: left;max-width: 1500px;">
         <div>
-                <span id="overdrive">ven1</span><br>
+                <span id="overdrive">VenHierophant</span><br>
                 <div style="float:left;" id="RFswitch"> <a href="#" onclick="RFswitch()" style="color: white;">脸红</a>
                 </div>
                 <div style="float:left;" id="RFswitch2"> <a href="#" onclick="RFswitch2()" style="color: lime;">脸红</a>
@@ -44,9 +44,9 @@
                 <div style="float:left;" id="ATswitch2"> <a href="#" onclick="ATswitch2()" style="color: red;">附件</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="ONswitch"> <a href="#" onclick="ONswitch()" style="color: white;">特殊</a>
+                <div style="float:left;" id="ONswitch"> <a href="#" onclick="ONswitch()" style="color: gray;">特殊</a>
                 </div>
-                <div style="float:left;" id="ONswitch2"> <a href="#" onclick="ONswitch2()" style="color: lime;">特殊</a>
+                <div style="float:left;" id="ONswitch2"> <a href="#" onclick="ONswitch2()" style="color: red;">特殊</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
                 <div style="float:left;" id="CEswitch"> <a href="#" onclick="CEswitch()" style="color: white;">闭眼</a>
@@ -64,7 +64,7 @@
                                                         <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
                                                                 :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
-                                                <div class="addon4" style="position:absolute;z-index:49">
+                                                <div class="addon4" style="position:absolute;z-index:49;display:none">
                                                         <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
                                                                 :src="diaindex.addon5" style="width: 150px;">
                                                 </div>
@@ -142,7 +142,7 @@
                 RFswitch2();
                 SWswitch2();
                 ATswitch2();
-                ONswitch();
+                ONswitch2();
                 CEswitch2();
         });
 </script>
