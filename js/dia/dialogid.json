@@ -1,232 +1,278 @@
 [
     {
         "inner": "SeicingEmpireJade",
-        "intro": "世清帝国之玉",
+        "intro": "世清_帝国之玉",
+        "outro": "Seicing",
         "outer": "世清"
     },
     {
         "inner": "SeicingWanderer",
-        "intro": "世清旅者",
+        "intro": "世清_旅者",
+        "outro": "Seicing",
         "outer": "世清"
     },
     {
         "inner": "YoEmpireFlower",
-        "intro": "余帝国之花",
+        "intro": "余_帝国之花",
+        "outro": "Khulan",
         "outer": "余"
     },
     {
         "inner": "YoTngriDaruga",
-        "intro": "余帝天",
+        "intro": "余_帝天",
+        "outro": "Khulan",
         "outer": "余"
     },
     {
         "inner": "YoEmpress",
-        "intro": "余女帝",
+        "intro": "余_女帝",
+        "outro": "Khulan",
         "outer": "余"
     },
     {
         "inner": "YoBorteCino",
-        "intro": "余苍狼",
+        "intro": "余_苍狼",
+        "outro": "Khulan",
         "outer": "余"
     },
     {
         "inner": "IrisMrazKralitsata",
-        "intro": "伊丽丝霜冻女皇",
+        "intro": "伊丽丝_霜冻女皇",
+        "outro": "Iris",
         "outer": "伊丽丝"
     },
     {
         "inner": "IrisPratenitsa",
-        "intro": "伊丽丝信鸟",
+        "intro": "伊丽丝_信鸟",
+        "outro": "Iris",
         "outer": "伊丽丝"
     },
     {
         "inner": "VenCelestial",
-        "intro": "文天女",
+        "intro": "文_天女",
+        "outro": "Ven",
         "outer": "文"
     },
     {
         "inner": "VenHierophant",
-        "intro": "文教皇",
+        "intro": "文_教皇",
+        "outro": "Ven",
         "outer": "文"
     },
     {
         "inner": "IuimiFlameEmpress",
-        "intro": "羽三千火娘娘",
+        "intro": "羽三_千火娘娘",
+        "outro": "Iuimi",
         "outer": "羽三"
     },
     {
         "inner": "SirnoDaydreamer",
-        "intro": "西尔诺空想家",
+        "intro": "西尔诺_空想家",
+        "outro": "Sirno",
         "outer": "西尔诺"
     },
     {
         "inner": "Alitta",
         "intro": "阿里它",
+        "outro": "Alitta",
         "outer": "阿里它"
     },
     {
         "inner": "Saya",
         "intro": "莎亚",
+        "outro": "Saya",
         "outer": "莎亚"
     },
     {
         "inner": "Kanyakubja",
         "intro": "伽那慰阇",
+        "outro": "Kanyakubja",
         "outer": "伽那慰阇"
     },
     {
         "inner": "SeigineMage",
         "intro": "西景法师",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "SeigineScholar",
         "intro": "西景学者",
+        "outro": "Lyoeng",
         "outer": "良"
     },
     {
         "inner": "SeigineCleric",
         "intro": "西景神官",
+        "outro": "Maudan",
         "outer": "牡丹"
     },
     {
         "inner": "SeigineWizard",
         "intro": "西景术士",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "CiyauRecruit",
         "intro": "蚩幽新兵",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "CiyauSkirmisher",
         "intro": "蚩幽散兵",
+        "outro": "Pusuwan",
         "outer": "普速完"
     },
     {
         "inner": "CiyauMage",
         "intro": "蚩幽法师",
+        "outro": "Niohuru",
         "outer": "钮祜禄"
     },
     {
         "inner": "CiyauScholar",
         "intro": "蚩幽学者",
+        "outro": "Hunhu",
         "outer": "浑忽"
     },
     {
         "inner": "CiyauCleric",
         "intro": "蚩幽神官",
+        "outro": "Narantsetseg",
         "outer": "纳兰琪琪格"
     },
     {
         "inner": "CiyauWizard",
         "intro": "蚩幽术士",
+        "outro": "Rahu",
         "outer": "罗睺"
     },
     {
         "inner": "AltrataCommonMale",
         "intro": "艾特拉塔平民男性",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "AltrataCommonFemale",
         "intro": "艾特拉塔平民女性",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "AltrataSorceress",
         "intro": "艾特拉塔巫师",
+        "outro": "Marie",
         "outer": "玛莉"
     },
     {
         "inner": "AltrataScholar",
         "intro": "艾特拉塔学者",
+        "outro": "Amethyst",
         "outer": "艾美特斯特"
     },
     {
         "inner": "AltrataCleric",
         "intro": "艾特拉塔神官",
+        "outro": "Flora",
         "outer": "芙罗拉"
     },
     {
         "inner": "IllazuraydMage",
         "intro": "伊拉修莱德法师",
+        "outro": "Lysithea",
         "outer": "丽丝提亚"
     },
     {
         "inner": "IllazuraydSorceress",
         "intro": "伊拉修莱德巫师",
+        "outro": "Holda",
         "outer": "霍尔达"
     },
     {
         "inner": "IllazuraydScholar",
         "intro": "伊拉修莱德学者",
+        "outro": "Vasilisa",
         "outer": "瓦西里莎"
     },
     {
         "inner": "IllazuraydWizard",
         "intro": "伊拉修莱德术士",
+        "outro": "Bathory",
         "outer": "巴托里"
     },
     {
         "inner": "KhazatarRanger",
         "intro": "卡哈扎塔游兵",
+        "outro": "Aisha",
         "outer": "爱莎"
     },
     {
         "inner": "KhazatarSorceress",
         "intro": "卡哈扎塔巫师",
-        "outer": " "
+        "outro": "Cleopatra",
+        "outer": "克雷儿巴特拉"
     },
     {
         "inner": "KhazatarCleric",
         "intro": "卡哈扎塔神官",
+        "outro": "Yildiz",
         "outer": "伊儿迪兹"
     },
     {
         "inner": "KhazatarWizard",
         "intro": "卡哈扎塔术士",
+        "outro": "Hurrem",
         "outer": "许蕾姆"
     },
     {
         "inner": "SriksetraCommonMale",
         "intro": "室利刹陀罗平民男性",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "SriksetraCommonFemale",
         "intro": "室利刹陀罗平民女性",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "SriksetraRanger",
         "intro": "室利刹陀罗游兵",
+        "outro": "Padmavati",
         "outer": "帕摩瓦蒂"
     },
     {
         "inner": "SriksetraCleric",
         "intro": "室利刹陀罗神官",
+        "outro": "Kesariya",
         "outer": "计纱丽耶"
     },
     {
         "inner": "IuireCommonMale",
         "intro": "尤伊平民男性",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "IuireCommonFemale",
         "intro": "尤伊平民女性",
+        "outro": " ",
         "outer": " "
     },
     {
         "inner": "IuireMage",
         "intro": "尤伊法师",
+        "outro": "Koshka",
         "outer": "科什卡"
     },
     {
         "inner": "IuireWizard",
         "intro": "尤伊术士",
+        "outro": " ",
         "outer": " "
     }
 ]

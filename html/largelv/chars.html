@@ -34,12 +34,14 @@
                                 <td> </td>
                                 <td>内部id(英文)</td>
                                 <td>内部id(中文)</td>
-                                <td>反映唯一id</td>
+                                <td>反映唯一id(英文)</td>
+                                <td>反映唯一id(中文)</td>
                         </tr>
                         <tr v-for="diaindex in aasb">
                                 <td><img :src="diaindex.icon2" style="width: 25px;"></td>
                                 <td><span v-html="diaindex.inner2"> </span></td>
                                 <td><span v-html="diaindex.intro2"> </span></td>
+                                <td><span v-html="diaindex.outro2"> </span></td>
                                 <td><span v-html="diaindex.outer2"> </span></td>
                         </tr>
                 </table>
@@ -92,6 +94,7 @@
                                                 json[i].inner2 = json[i]['inner']
                                                 json[i].intro2 = json[i]['intro']
                                                 json[i].outer2 = json[i]['outer']
+                                                json[i].outro2 = json[i]['outro']
                                                 json[i].icon2 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/" + json[i]['inner'] + ".png"
                                         }
                                 })
