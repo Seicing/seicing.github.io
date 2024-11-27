@@ -6,6 +6,7 @@
     <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_lavivagnarlarge.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
 
@@ -28,16 +29,18 @@
 </div>
 <div id="reski" style="float: left;max-width: 1450px;">
         <div id="app">
-                <table style="float:left;">
+                <table style="float:left;" id="customers">
                         <tr>
+                                <td> </td>
                                 <td>内部id(英文)</td>
                                 <td>内部id(中文)</td>
                                 <td>反映唯一id</td>
                         </tr>
                         <tr v-for="diaindex in aasb">
-                                <td> <span v-html="diaindex.inner2"> </span></td>
-                                <td> <span v-html="diaindex.intro2"> </span></td>
-                                <td> <span v-html="diaindex.outer2"> </span></td>
+                                <td><img :src="diaindex.icon2" style="width: 25px;"></td>
+                                <td><span v-html="diaindex.inner2"> </span></td>
+                                <td><span v-html="diaindex.intro2"> </span></td>
+                                <td><span v-html="diaindex.outer2"> </span></td>
                         </tr>
                 </table>
         </div>
@@ -89,6 +92,7 @@
                                                 json[i].inner2 = json[i]['inner']
                                                 json[i].intro2 = json[i]['intro']
                                                 json[i].outer2 = json[i]['outer']
+                                                json[i].icon2 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/" + characterid + ".png"
                                         }
                                 })
                 }
