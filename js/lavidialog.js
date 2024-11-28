@@ -13,7 +13,6 @@ let face_cry = ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_cry"];
 let face_bawl = ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_angry"];
 let face_crysurprise = ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_surprise"];
 let face_cryhappy = ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_happy"];
-let face_panic = ["eye_depress1", "eye_default2", "eye_default3", "brow_default", "mouth_panic"];
 let face_fear = ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_panic"];
 let face_endure = ["eye_depress1", "eye_default2", "eye_default3", "brow_sad", "mouth_endure"];
 let face_uncomfortable = ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_cry"];
