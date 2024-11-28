@@ -72,6 +72,12 @@
         "outer": "羽三"
     },
     {
+        "inner": "IuimiAcolyte",
+        "intro": "羽三_神从",
+        "outro": "Iuimi",
+        "outer": "羽三"
+    },
+    {
         "inner": "SirnoDaydreamer",
         "intro": "西尔诺_空想家",
         "outro": "Sirno",
@@ -84,10 +90,28 @@
         "outer": "阿里它"
     },
     {
+        "inner": "Meirei",
+        "intro": "明玲",
+        "outro": "Meirei",
+        "outer": "明玲"
+    },
+    {
+        "inner": "Seigent",
+        "intro": "世行",
+        "outro": "Seigent",
+        "outer": "世行"
+    },
+    {
         "inner": "Saya",
         "intro": "莎亚",
         "outro": "Saya",
         "outer": "莎亚"
+    },
+    {
+        "inner": "Aszina",
+        "intro": "阿西恩娜",
+        "outro": "Aszina",
+        "outer": "阿西恩娜"
     },
     {
         "inner": "Kanyakubja",
@@ -224,7 +248,7 @@
     {
         "inner": "IllazuraydWizard",
         "intro": "伊拉修莱德术士",
-        "outro": "Bathory",
+        "outro": "Báthory",
         "outer": "巴托里"
     },
     {
@@ -242,8 +266,8 @@
     {
         "inner": "KhazatarCleric",
         "intro": "卡哈扎塔神官",
-        "outro": "Yildiz",
-        "outer": "伊儿迪兹"
+        "outro": "Yıldız",
+        "outer": "耶尔德兹"
     },
     {
         "inner": "KhazatarWizard",

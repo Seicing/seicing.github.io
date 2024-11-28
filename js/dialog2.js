@@ -14,6 +14,33 @@ $(document).ready(function () {
 });
 
 
+function charatri1() {
+    var divs = document.getElementsByClassName("base4");
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].style.display = "none";
+    }
+    var divs2 = document.getElementsByClassName("base9");
+    for (var i = 0; i < divs2.length; i++) {
+        divs2[i].style.display = "block";
+    }
+    document.getElementById("charatri1").style.display = "none";
+    document.getElementById("charatri2").style.display = "block";
+}
+
+function charatri2() {
+    var divs = document.getElementsByClassName("base4");
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].style.display = "block";
+    }
+    var divs2 = document.getElementsByClassName("base9");
+    for (var i = 0; i < divs2.length; i++) {
+        divs2[i].style.display = "none";
+    }
+    document.getElementById("charatri2").style.display = "none";
+    document.getElementById("charatri1").style.display = "block";
+}
+
+
 function RFswitch() {
     var divs = document.getElementsByClassName("redface4");
     for (var i = 0; i < divs.length; i++) {
@@ -30,6 +57,8 @@ function RFswitch2() {
     document.getElementById("RFswitch2").style.display = "none";
     document.getElementById("RFswitch").style.display = "block";
 }
+
+
 function SWswitch() {
     var divs = document.getElementsByClassName("sweat4");
     for (var i = 0; i < divs.length; i++) {
@@ -115,6 +144,7 @@ const vm = new Vue({
             .then(json => {
                 this.aasb = json
                 for (var i = 0; i < json.length; i++) {
+
                     json[i].faceid = json[i]['name'].slice(5)
                     json[i].faceid937 = "no_" + json[i]['faceid']
                     json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "attach.png"
@@ -126,6 +156,7 @@ const vm = new Vue({
                     json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye'] + ".png"
                     json[i].mouth5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png"
                     json[i].base5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png"
+                    json[i].base6 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base2.png"
                 }
             })
     }
