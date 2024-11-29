@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 
-function charatri1() {
+function ALswitch() {
     var divs = document.getElementsByClassName("base4");
     for (var i = 0; i < divs.length; i++) {
         divs[i].style.display = "none";
@@ -23,11 +23,11 @@ function charatri1() {
     for (var i = 0; i < divs2.length; i++) {
         divs2[i].style.display = "block";
     }
-    document.getElementById("charatri1").style.display = "none";
-    document.getElementById("charatri2").style.display = "block";
+    document.getElementById("ALswitch").style.display = "none";
+    document.getElementById("ALswitch2").style.display = "block";
 }
 
-function charatri2() {
+function ALswitch2() {
     var divs = document.getElementsByClassName("base4");
     for (var i = 0; i < divs.length; i++) {
         divs[i].style.display = "block";
@@ -36,8 +36,8 @@ function charatri2() {
     for (var i = 0; i < divs2.length; i++) {
         divs2[i].style.display = "none";
     }
-    document.getElementById("charatri2").style.display = "none";
-    document.getElementById("charatri1").style.display = "block";
+    document.getElementById("ALswitch2").style.display = "none";
+    document.getElementById("ALswitch").style.display = "block";
 }
 
 
@@ -91,21 +91,21 @@ function ATswitch2() {
     document.getElementById("ATswitch2").style.display = "none";
     document.getElementById("ATswitch").style.display = "block";
 }
-function ONswitch() {
-    var divs = document.getElementsByClassName("addon4");
+function SPswitch() {
+    var divs = document.getElementsByClassName("special4");
     for (var i = 0; i < divs.length; i++) {
         divs[i].style.display = "block";
     }
-    document.getElementById("ONswitch").style.display = "none";
-    document.getElementById("ONswitch2").style.display = "block";
+    document.getElementById("SPswitch").style.display = "none";
+    document.getElementById("SPswitch2").style.display = "block";
 }
-function ONswitch2() {
-    var divs = document.getElementsByClassName("addon4");
+function SPswitch2() {
+    var divs = document.getElementsByClassName("special4");
     for (var i = 0; i < divs.length; i++) {
         divs[i].style.display = "none";
     }
-    document.getElementById("ONswitch2").style.display = "none";
-    document.getElementById("ONswitch").style.display = "block";
+    document.getElementById("SPswitch2").style.display = "none";
+    document.getElementById("SPswitch").style.display = "block";
 }
 function CEswitch() {
     var divs = document.getElementsByClassName("eyeclose4");
@@ -148,7 +148,7 @@ const vm = new Vue({
                     json[i].faceid = json[i]['name'].slice(5)
                     json[i].faceid937 = "no_" + json[i]['faceid']
                     json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "attach.png"
-                    json[i].addon5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "addon.png"
+                    json[i].special5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "special.png"
                     json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "sweat.png"
                     json[i].redface5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "red_face.png"
                     json[i].brow5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['brow'] + ".png"
