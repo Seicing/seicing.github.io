@@ -102,6 +102,12 @@
         "outer": "世行"
     },
     {
+        "inner": "Ioan",
+        "intro": "伊安",
+        "outro": "Ioan",
+        "outer": "伊安"
+    },
+    {
         "inner": "Aziz",
         "intro": "阿齐兹",
         "outro": "Aziz",
@@ -246,16 +252,22 @@
         "outer": "芙罗拉"
     },
     {
-        "inner": "IllazuraydMage",
-        "intro": "伊拉修莱德法师",
-        "outro": "Lysithea",
-        "outer": "丽丝提亚"
-    },
-    {
         "inner": "IllazuraydCommonFemale",
         "intro": "伊拉修莱德平民女性",
         "outro": " ",
         "outer": " "
+    },
+    {
+        "inner": "IllazuraydSentinel",
+        "intro": "伊拉修莱德近卫",
+        "outro": "Vlad",
+        "outer": "弗拉德"
+    },
+    {
+        "inner": "IllazuraydMage",
+        "intro": "伊拉修莱德法师",
+        "outro": "Lysithea",
+        "outer": "丽丝提亚"
     },
     {
         "inner": "IllazuraydSorceress",
@@ -274,6 +286,18 @@
         "intro": "伊拉修莱德术士",
         "outro": "Báthory",
         "outer": "巴托里"
+    },
+    {
+        "inner": "KhazatarCommonMale",
+        "intro": "卡哈扎塔平民男性",
+        "outro": " ",
+        "outer": " "
+    },
+    {
+        "inner": "KhazatarCommonFemale",
+        "intro": "卡哈扎塔平民女性",
+        "outro": " ",
+        "outer": " "
     },
     {
         "inner": "KhazatarRanger",
