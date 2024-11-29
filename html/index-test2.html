@@ -111,10 +111,17 @@
                         } else {
                             json[i].addon = 'addon1';
                         }
+
                         if (json[i].con.includes("CE")) {
                             json[i].eye = facer[2];
                         } else {
                             json[i].eye = facer[0];
+                        }
+
+                        if (json[i].con.includes("YS")) {
+                            json[i].base2 = 'base2';
+                        } else {
+                            json[i].base2 = 'base';
                         }
 
                         json[i].brow = facer[3]
@@ -135,7 +142,7 @@
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['brow'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['eye'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['mouth'] + ".png)," +
-                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + "base.png);" +
+                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['base2'] + ".png)," +
                                 "background-repeat: no-repeat;background-position: left center;background-size: 40%;";
                         }
 
@@ -154,7 +161,7 @@
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['brow'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['eye'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['mouth'] + ".png)," +
-                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + "base.png);" +
+                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['base2'] + ".png)," +
                                 "background-repeat: no-repeat;background-position: right center;background-size: 40%;";
                         }
 
@@ -173,7 +180,7 @@
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['brow'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['eye'] + ".png)," +
                                 "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['mouth'] + ".png)," +
-                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + "base.png);" +
+                                "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['base2'] + ".png)," +
                                 "background-repeat: no-repeat;background-position: right center;background-size: 40%;";
                         }
 
