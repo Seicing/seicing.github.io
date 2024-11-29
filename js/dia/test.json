@@ -69,7 +69,7 @@
         "char": "YoEmpireFlower",
         "face": "fear",
         "con": "SW",
-        "string": "哎呀，骇死我了"
+        "string": "阿呀，骇死我了"
     },
     {
         "dic": 1,
@@ -105,10 +105,18 @@
     },
     {
         "dic": 1,
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "SW",
+        "string": "我还能继续……"
+    },
+    {
+        "dic": 1,
         "name": "文",
         "char": "VenCelestial",
         "face": "smile",
         "con": "RFSWON",
-        "string": "真是精神啊"
+        "string": "咦？怎么回事？"
     }
 ]
