@@ -102,6 +102,12 @@
         "outer": "世行"
     },
     {
+        "inner": "Aziz",
+        "intro": "阿齐兹",
+        "outro": "Aziz",
+        "outer": "阿齐兹"
+    },
+    {
         "inner": "Saya",
         "intro": "莎亚",
         "outro": "Saya",
@@ -174,10 +180,22 @@
         "outer": "普速完"
     },
     {
+        "inner": "CiyauRanger",
+        "intro": "蚩幽游兵",
+        "outro": " ",
+        "outer": " "
+    },
+    {
         "inner": "CiyauMage",
         "intro": "蚩幽法师",
         "outro": "Niohuru",
         "outer": "钮祜禄"
+    },
+    {
+        "inner": "CiyauSorceress",
+        "intro": "蚩幽巫师",
+        "outro": " ",
+        "outer": " "
     },
     {
         "inner": "CiyauScholar",
@@ -232,6 +250,12 @@
         "intro": "伊拉修莱德法师",
         "outro": "Lysithea",
         "outer": "丽丝提亚"
+    },
+    {
+        "inner": "IllazuraydCommonFemale",
+        "intro": "伊拉修莱德平民女性",
+        "outro": " ",
+        "outer": " "
     },
     {
         "inner": "IllazuraydSorceress",
