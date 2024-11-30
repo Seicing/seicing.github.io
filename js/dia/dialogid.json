@@ -187,13 +187,13 @@
     },
     {
         "inner": "CiyauCommonMale",
-        "intro": "蚩幽男性",
+        "intro": "蚩幽平民男性",
         "outro": "Nergüi",
         "outer": "内尔古伊"
     },
     {
         "inner": "CiyauCommonFemale",
-        "intro": "蚩幽女性",
+        "intro": "蚩幽平民女性",
         "outro": "Uyanga",
         "outer": "乌彦加"
     },
@@ -204,10 +204,28 @@
         "outer": "孛儿帖"
     },
     {
+        "inner": "CiyauWarrior",
+        "intro": "蚩幽武士",
+        "outro": "Yaksa",
+        "outer": "夜叉"
+    },
+    {
+        "inner": "CiyauPhalanx",
+        "intro": "蚩幽兵方队",
+        "outro": "Arguna",
+        "outer": "阿古那"
+    },
+    {
         "inner": "CiyauSkirmisher",
         "intro": "蚩幽散兵",
         "outro": "Pusuwan",
         "outer": "普速完"
+    },
+    {
+        "inner": "CiyauVanguard",
+        "intro": "蚩幽先锋",
+        "outro": "Kitbuqa",
+        "outer": "怯的不花"
     },
     {
         "inner": "CiyauRanger",
@@ -256,6 +274,12 @@
         "intro": "艾特拉塔平民女性",
         "outro": "Elma",
         "outer": "艾尔玛"
+    },
+    {
+        "inner": "AltrataWarrior",
+        "intro": "艾特拉塔武士",
+        "outro": "Liechtenauer",
+        "outer": "列支敦瑙尔"
     },
     {
         "inner": "AltrataSorceress",
