@@ -20,3 +20,4 @@ let face_angry = ["eye_surprise1", "eye_default2", "eye_default3", "brow_angry",
 let face_excited = ["eye_surprise1", "eye_default2", "eye_default3", "brow_angry", "mouth_excited"];
 let face_extra1 = ["eye_extra1", "eye_extra1", "eye_extra1", "eye_extra1", "mouth_extra1"];
 let face_extra2 = ["eye_extra2", "eye_extra2", "eye_extra2", "eye_extra2", "mouth_extra2"];
+let face_extra3 = ["eye_extra3", "eye_extra3", "eye_extra3", "eye_extra3", "mouth_extra3"];

@@ -150,6 +150,18 @@
         "outer": "春莲"
     },
     {
+        "inner": "SeigineCommonMale",
+        "intro": "西景平民男性",
+        "outro": "伟",
+        "outer": "Waei"
+    },
+    {
+        "inner": "SeigineCommonFemale",
+        "intro": "西景平民女性",
+        "outro": "惠",
+        "outer": "Hoai"
+    },
+    {
         "inner": "SeigineMage",
         "intro": "西景法师",
         "outro": "Laihwa",
@@ -172,6 +184,18 @@
         "intro": "西景术士",
         "outro": "Yungun",
         "outer": "元君"
+    },
+    {
+        "inner": "CiyauCommonMale",
+        "intro": "蚩幽男性",
+        "outro": "Nergüi",
+        "outer": "内尔古伊"
+    },
+    {
+        "inner": "CiyauCommonFemale",
+        "intro": "蚩幽女性",
+        "outro": "Uyanga",
+        "outer": "乌彦加"
     },
     {
         "inner": "CiyauRecruit",
