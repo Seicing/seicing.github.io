@@ -45,6 +45,23 @@
                                 <td><span v-html="diaindex.outer2"> </span></td>
                         </tr>
                 </table>
+
+                <table style="float:left;" id="customers">
+                        <tr>
+                                <td> </td>
+                                <td>内部id(英文)</td>
+                                <td>内部id(中文)</td>
+                                <td>反映唯一id(英文)</td>
+                                <td>反映唯一id(中文)</td>
+                        </tr>
+                        <tr v-for="diaindex in aasb2">
+                                <td><img :src="diaindex.icon3" style="width: 25px;"></td>
+                                <td><span v-html="diaindex.inner3"> </span></td>
+                                <td><span v-html="diaindex.intro3"> </span></td>
+                                <td><span v-html="diaindex.outro3"> </span></td>
+                                <td><span v-html="diaindex.outer3"> </span></td>
+                        </tr>
+                </table>
         </div>
 </div>
 
@@ -96,6 +113,25 @@
                                                 json[i].outer2 = json[i]['outer']
                                                 json[i].outro2 = json[i]['outro']
                                                 json[i].icon2 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/" + json[i]['inner'] + ".png"
+                                        }
+                                })
+                },
+
+                el: '#app2',
+                data: {
+                        aasb2: [],
+                },
+                created() {
+                        fetch('https://seicing.com/js/dia/dialogid2.json')
+                                .then(response => response.json())
+                                .then(json => {
+                                        this.aasb2 = json
+                                        for (var i = 0; i < json.length; i++) {
+                                                json[i].inner3 = json[i]['inner']
+                                                json[i].intro3 = json[i]['intro']
+                                                json[i].outer3 = json[i]['outer']
+                                                json[i].outro3 = json[i]['outro']
+                                                json[i].icon3 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/" + json[i]['inner'] + ".png"
                                         }
                                 })
                 }

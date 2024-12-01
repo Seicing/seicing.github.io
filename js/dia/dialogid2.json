@@ -1,0 +1,356 @@
+[
+    {
+        "inner": "SeigineCommonMale",
+        "intro": "西景平民男性",
+        "outro": "Waei",
+        "outer": "伟"
+    },
+    {
+        "inner": "SeigineCommonFemale",
+        "intro": "西景平民女性",
+        "outro": "Hoai",
+        "outer": "惠"
+    },
+    {
+        "inner": "SeigineRanger",
+        "intro": "西景游兵",
+        "outro": "Kamngah",
+        "outer": "芩瓦"
+    },
+    {
+        "inner": "SeigineSentinel",
+        "intro": "西景近卫",
+        "outro": "Heifung",
+        "outer": "欺凤"
+    },
+    {
+        "inner": "SeigineMage",
+        "intro": "西景法师",
+        "outro": "Laihwa",
+        "outer": "丽华"
+    },
+    {
+        "inner": "SeigineSorceress",
+        "intro": "西景巫师",
+        "outro": "Sinmun",
+        "outer": "羡门"
+    },
+    {
+        "inner": "SeigineScholar",
+        "intro": "西景学者",
+        "outro": "Lyoeng",
+        "outer": "良"
+    },
+    {
+        "inner": "SeigineCleric",
+        "intro": "西景神官",
+        "outro": "Maudan",
+        "outer": "牡丹"
+    },
+    {
+        "inner": "SeigineWizard",
+        "intro": "西景术士",
+        "outro": "Yungun",
+        "outer": "元君"
+    },
+    {
+        "inner": "CiyauCommonMale",
+        "intro": "蚩幽平民男性",
+        "outro": "Nergüi",
+        "outer": "内尔古伊"
+    },
+    {
+        "inner": "CiyauCommonFemale",
+        "intro": "蚩幽平民女性",
+        "outro": "Uyanga",
+        "outer": "乌彦加"
+    },
+    {
+        "inner": "CiyauRecruit",
+        "intro": "蚩幽新兵",
+        "outro": "Börte",
+        "outer": "孛儿帖"
+    },
+    {
+        "inner": "CiyauWarrior",
+        "intro": "蚩幽武士",
+        "outro": "Yaksa",
+        "outer": "夜叉"
+    },
+    {
+        "inner": "CiyauPhalanx",
+        "intro": "蚩幽兵方队",
+        "outro": "Arguna",
+        "outer": "阿古那"
+    },
+    {
+        "inner": "CiyauSkirmisher",
+        "intro": "蚩幽散兵",
+        "outro": "Pusuuyan",
+        "outer": "普速完"
+    },
+    {
+        "inner": "CiyauVanguard",
+        "intro": "蚩幽先锋",
+        "outro": "Kitbuqa",
+        "outer": "怯的不花"
+    },
+    {
+        "inner": "CiyauRanger",
+        "intro": "蚩幽游兵",
+        "outro": "Khadaan",
+        "outer": "合答安"
+    },
+    {
+        "inner": "CiyauSentinel",
+        "intro": "蚩幽近卫",
+        "outro": "Ogwi",
+        "outer": "饿鬼"
+    },
+    {
+        "inner": "CiyauMage",
+        "intro": "蚩幽法师",
+        "outro": "Niohuru",
+        "outer": "钮祜禄"
+    },
+    {
+        "inner": "CiyauSorceress",
+        "intro": "蚩幽巫师",
+        "outro": "Gokkong",
+        "outer": "角亢"
+    },
+    {
+        "inner": "CiyauScholar",
+        "intro": "蚩幽学者",
+        "outro": "Hunhu",
+        "outer": "浑忽"
+    },
+    {
+        "inner": "CiyauCleric",
+        "intro": "蚩幽神官",
+        "outro": "Narantsetseg",
+        "outer": "纳兰琪琪格"
+    },
+    {
+        "inner": "CiyauWizard",
+        "intro": "蚩幽术士",
+        "outro": "Ketu",
+        "outer": "计都"
+    },
+    {
+        "inner": "CiyauDevastator",
+        "intro": "蚩幽蹂躏者",
+        "outro": "Tenkyun",
+        "outer": "天权"
+    },
+    {
+        "inner": "AltrataCommonMale",
+        "intro": "艾特拉塔平民男性",
+        "outro": "Falk",
+        "outer": "法尔克"
+    },
+    {
+        "inner": "AltrataCommonFemale",
+        "intro": "艾特拉塔平民女性",
+        "outro": "Elma",
+        "outer": "艾尔玛"
+    },
+    {
+        "inner": "AltrataWarrior",
+        "intro": "艾特拉塔武士",
+        "outro": "Liechtenauer",
+        "outer": "里希特纳尔"
+    },
+    {
+        "inner": "AltrataMage",
+        "intro": "艾特拉塔法师",
+        "outro": "Kurszána",
+        "outer": "库尔扎娜"
+    },
+    {
+        "inner": "AltrataSorceress",
+        "intro": "艾特拉塔巫师",
+        "outro": "Marie",
+        "outer": "玛莉"
+    },
+    {
+        "inner": "AltrataScholar",
+        "intro": "艾特拉塔学者",
+        "outro": "Amethyst",
+        "outer": "艾美希丝特"
+    },
+    {
+        "inner": "AltrataCleric",
+        "intro": "艾特拉塔神官",
+        "outro": "Flora",
+        "outer": "芙罗拉"
+    },
+    {
+        "inner": "AltrataWizard",
+        "intro": "艾特拉塔术士",
+        "outro": "Gerda",
+        "outer": "格尔达"
+    },
+    {
+        "inner": "IllazuraydCommonMale",
+        "intro": "伊拉修莱德平民男性",
+        "outro": "Georgi",
+        "outer": "格奥尔基"
+    },
+    {
+        "inner": "IllazuraydCommonFemale",
+        "intro": "伊拉修莱德平民女性",
+        "outro": "Gergana",
+        "outer": "格尔加娜"
+    },
+    {
+        "inner": "IllazuraydRecruit",
+        "intro": "伊拉修莱德新兵",
+        "outro": "Hristo",
+        "outer": "赫里斯托"
+    },
+    {
+        "inner": "IllazuraydWarrior",
+        "intro": "伊拉修莱德武士",
+        "outro": "Dana",
+        "outer": "达娜"
+    },
+    {
+        "inner": "IllazuraydRanger",
+        "intro": "伊拉修莱德游兵",
+        "outro": "Orionna",
+        "outer": "奥利安娜"
+    },
+    {
+        "inner": "IllazuraydSentinel",
+        "intro": "伊拉修莱德近卫",
+        "outro": "Vlad",
+        "outer": "弗拉德"
+    },
+    {
+        "inner": "IllazuraydMage",
+        "intro": "伊拉修莱德法师",
+        "outro": "Elena",
+        "outer": "埃琳娜"
+    },
+    {
+        "inner": "IllazuraydSorceress",
+        "intro": "伊拉修莱德巫师",
+        "outro": "Holda",
+        "outer": "霍尔达"
+    },
+    {
+        "inner": "IllazuraydScholar",
+        "intro": "伊拉修莱德学者",
+        "outro": "Militsa",
+        "outer": "米莉沙"
+    },
+    {
+        "inner": "IllazuraydCleric",
+        "intro": "伊拉修莱德神官",
+        "outro": "Azariya",
+        "outer": "艾泽莉亚"
+    },
+    {
+        "inner": "IllazuraydWizard",
+        "intro": "伊拉修莱德术士",
+        "outro": "Báthory",
+        "outer": "巴托里"
+    },
+    {
+        "inner": "KhazatarCommonMale",
+        "intro": "卡哈扎塔平民男性",
+        "outro": "Affan",
+        "outer": "阿夫凡"
+    },
+    {
+        "inner": "KhazatarCommonFemale",
+        "intro": "卡哈扎塔平民女性",
+        "outro": "Faiza",
+        "outer": "法伊扎"
+    },
+    {
+        "inner": "KhazatarRanger",
+        "intro": "卡哈扎塔游兵",
+        "outro": "Aisha",
+        "outer": "爱莎"
+    },
+    {
+        "inner": "KhazatarSentinel",
+        "intro": "卡哈扎塔近卫",
+        "outro": "Mustafa",
+        "outer": "穆斯塔法"
+    },
+    {
+        "inner": "KhazatarSorceress",
+        "intro": "卡哈扎塔巫师",
+        "outro": "Cleopatra",
+        "outer": "克蕾儿巴特拉"
+    },
+    {
+        "inner": "KhazatarCleric",
+        "intro": "卡哈扎塔神官",
+        "outro": "Yıldız",
+        "outer": "叶儿德兹"
+    },
+    {
+        "inner": "KhazatarWizard",
+        "intro": "卡哈扎塔术士",
+        "outro": "Hurrem",
+        "outer": "许蕾姆"
+    },
+    {
+        "inner": "SriksetraCommonMale",
+        "intro": "室利刹陀罗平民男性",
+        "outro": "Nanda",
+        "outer": "难陀"
+    },
+    {
+        "inner": "SriksetraCommonFemale",
+        "intro": "室利刹陀罗平民女性",
+        "outro": "Kali",
+        "outer": "迦离"
+    },
+    {
+        "inner": "SriksetraRanger",
+        "intro": "室利刹陀罗游兵",
+        "outro": "Padmavati",
+        "outer": "帕摩瓦蒂"
+    },
+    {
+        "inner": "SriksetraCleric",
+        "intro": "室利刹陀罗神官",
+        "outro": "Kesariya",
+        "outer": "俱纱丽耶"
+    },
+    {
+        "inner": "SriksetraWizard",
+        "intro": "室利刹陀罗术士",
+        "outro": "Nayuta",
+        "outer": "那由他"
+    },
+    {
+        "inner": "IuireCommonMale",
+        "intro": "尤伊平民男性",
+        "outro": "Adam",
+        "outer": "亚当"
+    },
+    {
+        "inner": "IuireCommonFemale",
+        "intro": "尤伊平民女性",
+        "outro": "Yeva",
+        "outer": "叶瓦"
+    },
+    {
+        "inner": "IuireMage",
+        "intro": "尤伊法师",
+        "outro": "Koshka",
+        "outer": "科什嘉"
+    },
+    {
+        "inner": "IuireWizard",
+        "intro": "尤伊术士",
+        "outro": "Natasha",
+        "outer": "娜塔莎"
+    }
+]
