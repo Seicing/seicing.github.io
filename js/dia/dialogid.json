@@ -78,6 +78,12 @@
         "outer": "羽三"
     },
     {
+        "inner": "IuimiAcalanatha",
+        "intro": "羽三_五祇法沦姬",
+        "outro": "Iuimi",
+        "outer": "羽三"
+    },
+    {
         "inner": "SirnoDaydreamer",
         "intro": "西尔诺_空想家",
         "outro": "Sirno",
@@ -285,7 +291,7 @@
         "inner": "AltrataWarrior",
         "intro": "艾特拉塔武士",
         "outro": "Liechtenauer",
-        "outer": "列支敦瑙尔"
+        "outer": "里希特纳尔"
     },
     {
         "inner": "AltrataSorceress",
@@ -306,6 +312,12 @@
         "outer": "芙罗拉"
     },
     {
+        "inner": "IllazuraydCommonMale",
+        "intro": "伊拉修莱德平民男性",
+        "outro": "Georgi",
+        "outer": "格奥尔基"
+    },
+    {
         "inner": "IllazuraydCommonFemale",
         "intro": "伊拉修莱德平民女性",
         "outro": "Gergana",
@@ -314,8 +326,8 @@
     {
         "inner": "IllazuraydRecruit",
         "intro": "伊拉修莱德新兵",
-        "outro": " ",
-        "outer": " "
+        "outro": "Hristo",
+        "outer": "赫里斯托"
     },
     {
         "inner": "IllazuraydSentinel",
