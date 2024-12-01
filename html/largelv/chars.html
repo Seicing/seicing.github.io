@@ -29,7 +29,7 @@
 </div>
 <div id="reski" style="float: left;max-width: 1450px;">
         <div id="app">
-                <table style="float:left;" id="customers">
+                <table style="float:left;width:500px" id="customers">
                         <tr>
                                 <td> </td>
                                 <td>内部id(英文)</td>
@@ -38,7 +38,7 @@
                                 <td>反映唯一id(中文)</td>
                         </tr>
                         <tr v-for="diaindex in aasb">
-                                <td><img :src="diaindex.icon2" style="width: 25px;width:500px"></td>
+                                <td><img :src="diaindex.icon2" style="width: 25px"></td>
                                 <td><span v-html="diaindex.inner2"> </span></td>
                                 <td><span v-html="diaindex.intro2"> </span></td>
                                 <td><span v-html="diaindex.outro2"> </span></td>
@@ -46,7 +46,7 @@
                         </tr>
                 </table>
 
-                <table style="float:left;" id="customers">
+                <table style="float:left;width:500px" id="customers">
                         <tr>
                                 <td> </td>
                                 <td>内部id(英文)</td>
@@ -55,7 +55,7 @@
                                 <td>反映唯一id(中文)</td>
                         </tr>
                         <tr v-for="diaindex in aasb2">
-                                <td><img :src="diaindex.icon3" style="width: 25px;width:500px"></td>
+                                <td><img :src="diaindex.icon3" style="width: 25px"></td>
                                 <td><span v-html="diaindex.inner3"> </span></td>
                                 <td><span v-html="diaindex.intro3"> </span></td>
                                 <td><span v-html="diaindex.outro3"> </span></td>
