@@ -101,6 +101,7 @@
                 el: '#app',
                 data: {
                         aasb: [],
+                        aasb2: [],
                 },
                 created() {
                         fetch('https://seicing.com/js/dia/dialogid.json')
@@ -115,13 +116,6 @@
                                                 json[i].icon2 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/" + json[i]['inner'] + ".png"
                                         }
                                 })
-                },
-
-                el: '#app',
-                data: {
-                        aasb2: [],
-                },
-                created() {
                         fetch('https://seicing.com/js/dia/dialogid2.json')
                                 .then(response => response.json())
                                 .then(json => {
@@ -134,7 +128,7 @@
                                                 json[i].icon3 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/" + json[i]['inner'] + ".png"
                                         }
                                 })
-                }
+                },
         })
 
 </script>
