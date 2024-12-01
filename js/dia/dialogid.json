@@ -12,6 +12,18 @@
         "outer": "世清"
     },
     {
+        "inner": "SeicingAcolyte",
+        "intro": "世清_神从",
+        "outro": "Seicing",
+        "outer": "世清"
+    },
+    {
+        "inner": "SeicingEpisode",
+        "intro": "世清_剧情演出",
+        "outro": "Seicing",
+        "outer": "世清"
+    },
+    {
         "inner": "YoEmpireFlower",
         "intro": "余_帝国之花",
         "outro": "Khulan",
@@ -36,6 +48,12 @@
         "outer": "余"
     },
     {
+        "inner": "YoEpisode",
+        "intro": "余_剧情演出",
+        "outro": "Khulan",
+        "outer": "余"
+    },
+    {
         "inner": "IrisMrazKralitsata",
         "intro": "伊丽丝_霜冻女皇",
         "outro": "Iris",
@@ -44,6 +62,12 @@
     {
         "inner": "IrisPratenitsa",
         "intro": "伊丽丝_信鸟",
+        "outro": "Iris",
+        "outer": "伊丽丝"
+    },
+    {
+        "inner": "IrisEpisode",
+        "intro": "伊丽丝_剧情演出",
         "outro": "Iris",
         "outer": "伊丽丝"
     },
@@ -66,6 +90,12 @@
         "outer": "文"
     },
     {
+        "inner": "VenEpisode",
+        "intro": "文_剧情演出",
+        "outro": "Ven",
+        "outer": "文"
+    },
+    {
         "inner": "IuimiFlameEmpress",
         "intro": "羽三_千火娘娘",
         "outro": "Iuimi",
@@ -84,10 +114,58 @@
         "outer": "羽三"
     },
     {
+        "inner": "IuimiEpisode",
+        "intro": "羽三_剧情演出",
+        "outro": "Iuimi",
+        "outer": "羽三"
+    },
+    {
+        "inner": "SarchlentAdventurer",
+        "intro": "夏修伦_冒险家",
+        "outro": "Sarchlent",
+        "outer": "夏修伦"
+    },
+    {
+        "inner": "SarchlentConqueror",
+        "intro": "夏修伦_征服者",
+        "outro": "Sarchlent",
+        "outer": "夏修伦"
+    },
+    {
+        "inner": "LouichWanderer",
+        "intro": "洛雨希_旅者",
+        "outro": "Louich",
+        "outer": "洛雨希"
+    },
+    {
+        "inner": "LouichRozenSchutze",
+        "intro": "洛雨希_蔷薇枪手",
+        "outro": "Louich",
+        "outer": "洛雨希"
+    },
+    {
         "inner": "SirnoDaydreamer",
         "intro": "西尔诺_空想家",
         "outro": "Sirno",
         "outer": "西尔诺"
+    },
+    {
+        "inner": "AzinDeathbringer",
+        "intro": "阿辛_告死天使",
+        "outro": "Azin",
+        "outer": "阿辛"
+    },
+    {
+        "inner": "AragonCoastal",
+        "intro": "阿拉贡_近海王",
+        "outro": "Aragon",
+        "outer": "阿拉贡"
+    },
+    {
+        "inner": "Sei",
+        "intro": "宫黄西",
+        "outro": "Sei",
+        "outer": "宫黄西"
     },
     {
         "inner": "Alitta",
@@ -96,10 +174,34 @@
         "outer": "阿里它"
     },
     {
+        "inner": "Gizeiger",
+        "intro": "寄真格",
+        "outro": "Gizeiger",
+        "outer": "寄真格"
+    },
+    {
         "inner": "Meirei",
         "intro": "明玲",
         "outro": "Meirei",
         "outer": "明玲"
+    },
+    {
+        "inner": "Miyako",
+        "intro": "宫黄",
+        "outro": "Miyako",
+        "outer": "宫黄"
+    },
+    {
+        "inner": "Wakayama",
+        "intro": "和歌山",
+        "outro": "Wakayama",
+        "outer": "和歌山"
+    },
+    {
+        "inner": "Mundzuk",
+        "intro": "妙骨院",
+        "outro": "Mundzuk",
+        "outer": "妙骨院"
     },
     {
         "inner": "Seigent",
@@ -120,6 +222,36 @@
         "outer": "阿齐兹"
     },
     {
+        "inner": "Urgula",
+        "intro": "乌尔古拉",
+        "outro": "Urgula",
+        "outer": "乌尔古拉"
+    },
+    {
+        "inner": "Khazard",
+        "intro": "哈扎德",
+        "outro": "Khazard",
+        "outer": "哈扎德"
+    },
+    {
+        "inner": "Sherazard",
+        "intro": "雪拉扎德",
+        "outro": "Sherazard",
+        "outer": "雪拉扎德"
+    },
+    {
+        "inner": "Kruv",
+        "intro": "科洛维",
+        "outro": "Kruv",
+        "outer": "科洛维"
+    },
+    {
+        "inner": "Hayin",
+        "intro": "哈因",
+        "outro": "Hayin",
+        "outer": "哈因"
+    },
+    {
         "inner": "Saya",
         "intro": "莎亚",
         "outro": "Saya",
@@ -130,6 +262,18 @@
         "intro": "阿西恩娜",
         "outro": "Aszina",
         "outer": "阿西恩娜"
+    },
+    {
+        "inner": "Prithvi",
+        "intro": "普利陀毗",
+        "outro": "Prithvi",
+        "outer": "普利陀毗"
+    },
+    {
+        "inner": "Sanyogita",
+        "intro": "珊郁多",
+        "outro": "Sanyogita",
+        "outer": "珊郁多"
     },
     {
         "inner": "Kanyakubja",
@@ -144,6 +288,72 @@
         "outer": "耶输末底"
     },
     {
+        "inner": "Magnus",
+        "intro": "马格努斯",
+        "outro": "Magnus",
+        "outer": "源内"
+    },
+    {
+        "inner": "Gennai",
+        "intro": "源内",
+        "outro": "Gennai",
+        "outer": "源内"
+    },
+    {
+        "inner": "Orlok",
+        "intro": "欧洛克",
+        "outro": "Orlok",
+        "outer": "欧洛克"
+    },
+    {
+        "inner": "Anastasia",
+        "intro": "安娜斯塔西亚",
+        "outro": "Anastasia",
+        "outer": "安娜斯塔西亚"
+    },
+    {
+        "inner": "Chinkoo",
+        "intro": "秦府",
+        "outro": "Chinkoo",
+        "outer": "秦府"
+    },
+    {
+        "inner": "Byinn",
+        "intro": "辩",
+        "outro": "Byinn",
+        "outer": "辩"
+    },
+    {
+        "inner": "Yunpyeng",
+        "intro": "元平",
+        "outro": "Yunpyeng",
+        "outer": "元平"
+    },
+    {
+        "inner": "Souun",
+        "intro": "早云",
+        "outro": "Souun",
+        "outer": "早云"
+    },
+    {
+        "inner": "Vei",
+        "intro": "维",
+        "outro": "Vei",
+        "outer": "维"
+    },
+    {
+        "inner": "Sri",
+        "intro": "斯理",
+        "outro": "Sri",
+        "outer": "斯理"
+    },
+    {
+        "inner": "Chen",
+        "intro": "陈",
+        "outro": "Chen",
+        "outer": "陈"
+    },
+    {
         "inner": "Chunlan",
         "intro": "春兰",
         "outro": "Chunlan",
@@ -154,6 +364,30 @@
         "intro": "春莲",
         "outro": "Chunlen",
         "outer": "春莲"
+    },
+    {
+        "inner": "Gaoh",
+        "intro": "我王",
+        "outro": "Gaoh",
+        "outer": "我王"
+    },
+    {
+        "inner": "Okichi",
+        "intro": "御吉",
+        "outro": "Okichi",
+        "outer": "御吉"
+    },
+    {
+        "inner": "Chimon",
+        "intro": "持闻",
+        "outro": "Chimon",
+        "outer": "持闻"
+    },
+    {
+        "inner": "Demetrios",
+        "intro": "季米特里奥斯",
+        "outro": "Demetrios",
+        "outer": "季米特里奥斯"
     },
     {
         "inner": "SeigineCommonMale",
@@ -168,10 +402,28 @@
         "outer": "惠"
     },
     {
+        "inner": "SeigineRanger",
+        "intro": "西景游兵",
+        "outro": "Kamngah",
+        "outer": "芩瓦"
+    },
+    {
+        "inner": "SeigineSentinel",
+        "intro": "西景近卫",
+        "outro": "Heifung",
+        "outer": "欺凤"
+    },
+    {
         "inner": "SeigineMage",
         "intro": "西景法师",
         "outro": "Laihwa",
         "outer": "丽华"
+    },
+    {
+        "inner": "SeigineSorceress",
+        "intro": "西景巫师",
+        "outro": "Sinmun",
+        "outer": "羡门"
     },
     {
         "inner": "SeigineScholar",
@@ -240,6 +492,12 @@
         "outer": "合答安"
     },
     {
+        "inner": "CiyauSentinel",
+        "intro": "蚩幽近卫",
+        "outro": "Ogwi",
+        "outer": "饿鬼"
+    },
+    {
         "inner": "CiyauMage",
         "intro": "蚩幽法师",
         "outro": "Niohuru",
@@ -294,6 +552,12 @@
         "outer": "里希特纳尔"
     },
     {
+        "inner": "AltrataMage",
+        "intro": "艾特拉塔法师",
+        "outro": " ",
+        "outer": " "
+    },
+    {
         "inner": "AltrataSorceress",
         "intro": "艾特拉塔巫师",
         "outro": "Marie",
@@ -312,6 +576,12 @@
         "outer": "芙罗拉"
     },
     {
+        "inner": "AltrataWizard",
+        "intro": "艾特拉塔术士",
+        "outro": "Gerda",
+        "outer": "格尔达"
+    },
+    {
         "inner": "IllazuraydCommonMale",
         "intro": "伊拉修莱德平民男性",
         "outro": "Georgi",
@@ -328,6 +598,18 @@
         "intro": "伊拉修莱德新兵",
         "outro": "Hristo",
         "outer": "赫里斯托"
+    },
+    {
+        "inner": "IllazuraydWarrior",
+        "intro": "伊拉修莱德武士",
+        "outro": "Dana",
+        "outer": "达娜"
+    },
+    {
+        "inner": "IllazuraydRanger",
+        "intro": "伊拉修莱德游兵",
+        "outro": "Orionna",
+        "outer": "奥利安娜"
     },
     {
         "inner": "IllazuraydSentinel",
@@ -352,6 +634,12 @@
         "intro": "伊拉修莱德学者",
         "outro": "Militsa",
         "outer": "米莉沙"
+    },
+    {
+        "inner": "IllazuraydCleric",
+        "intro": "伊拉修莱德神官",
+        "outro": "Azariya",
+        "outer": "艾泽莉亚"
     },
     {
         "inner": "IllazuraydWizard",
@@ -424,6 +712,12 @@
         "intro": "室利刹陀罗神官",
         "outro": "Kesariya",
         "outer": "俱纱丽耶"
+    },
+    {
+        "inner": "SriksetraWizard",
+        "intro": "室利刹陀罗术士",
+        "outro": "Nayuta",
+        "outer": "那由他"
     },
     {
         "inner": "IuireCommonMale",
