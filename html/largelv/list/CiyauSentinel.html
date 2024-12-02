@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style_lavivagnarlarge.css" rel="stylesheet" type="text/css" media="screen" /> 
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
+
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1850px ; margin:auto">
+        <div id="wrapper2">
+
+            <div id="header" class="container">
+
+            </div>
+
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="reske" style="float: left;width: 300px;">
+</div>
+<div id="reski" style="float: left;max-width: 1500px;">
+        <div>
+                <span id="overdrive">CiyauSentinel</span><br>
+                <div style="float:left;" id="RFswitch"> <a href="#" onclick="RFswitch()" style="color: gray;">脸红(RF)</a>
+                </div>
+                <div style="float:left;" id="RFswitch2"> <a href="#" onclick="RFswitch2()"
+                                style="color: red;">脸红(RF)</a>
+                </div>
+                <div style="float:left;">&nbsp</div>
+                <div style="float:left;" id="SWswitch"> <a href="#" onclick="SWswitch()" style="color: gray;">流汗(SW)</a>
+                </div>
+                <div style="float:left;" id="SWswitch2"> <a href="#" onclick="SWswitch2()"
+                                style="color: red;">流汗(SW)</a>
+                </div>
+                <div style="float:left;">&nbsp</div>
+                <div style="float:left;" id="ATswitch"> <a href="#" onclick="ATswitch()" style="color: gray;">附件(AT)</a>
+                </div>
+                <div style="float:left;" id="ATswitch2"> <a href="#" onclick="ATswitch2()"
+                                style="color: red;">附件(AT)</a>
+                </div>
+                <div style="float:left;">&nbsp</div>
+                <div style="float:left;" id="SPswitch"> <a href="#" onclick="SPswitch()" style="color: gray;">特殊(SP)</a>
+                </div>
+                <div style="float:left;" id="SPswitch2"> <a href="#" onclick="SPswitch2()"
+                                style="color: red;">特殊(SP)</a>
+                </div>
+                <div style="float:left;">&nbsp</div>
+                <div style="float:left;" id="CEswitch"> <a href="#" onclick="CEswitch()" style="color: gray;">闭眼(CE)</a>
+                </div>
+                <div style="float:left;" id="CEswitch2"> <a href="#" onclick="CEswitch2()"
+                                style="color: red;">闭眼(CE)</a>
+                </div>
+        </div>
+        <br>
+        <div id="app">
+                <table style="float:left;" v-for="diaindex in aasb" :id="diaindex.faceid">
+                        <tr>
+                                <td>
+                                        <div style="position:relative;width:150px;height:225px">
+                                                <div class="attach4" style="position:absolute;z-index:50;display:none">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.attach5" style="width: 150px;">
+                                                </div>
+                                                <div class="special4" style="position:absolute;z-index:49;display:none">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.special5" style="width: 150px;">
+                                                </div>
+                                                <div class="sweat4" style="position:absolute;z-index:48;display:none">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.sweat5" style="width: 150px;">
+                                                </div>
+                                                <div class="redface4" style="position:absolute;z-index:47;display:none">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.redface5" style="width: 150px;">
+                                                </div>
+                                                <div class="brow4" style="position:absolute;z-index:6">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.brow5" style="width: 150px;" id="brow3">
+                                                </div>
+                                                <div class="eyeclose4" style="position:absolute;z-index:5;display:none">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.eyeclose5" style="width: 150px;">
+                                                </div>
+                                                <div class="eye4" style="position:absolute;z-index:4">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.eye5" style="width: 150px;" id="eye3">
+                                                </div>
+                                                <div class="mouth4" style="position:absolute;z-index:7">
+                                                        <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
+                                                                :src="diaindex.mouth5" style="width: 150px;"
+                                                                id="mouth3">
+                                                </div>
+                                                <div class="base4" style="position:absolute;z-index:2">
+                                                        <img :src="diaindex.base5" style="width: 150px;">
+                                                </div>
+
+                                        </div>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td> <span v-html="diaindex.faceid"> </span> </td>
+                        </tr>
+                </table>
+        </div>
+</div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div
+                    style="float:right; width:1800px; text-align:right;  border-top: 1px dashed #FFF49F; position:relative; right:20px">
+                    <br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+            <div id="wrapper3">
+                <div id="lowder" class="container">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+        $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
+        $(document).ready(function () {
+                RFswitch2();
+                SWswitch2();
+                ATswitch2();
+                SPswitch2();
+                CEswitch2();
+        });
+</script>
+<script type="text/javascript" src="https://seicing.com/js/dialog2.js"></script>
+
+</html>
