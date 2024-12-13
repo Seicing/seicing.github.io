@@ -10,7 +10,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-1::-webkit-scrollbar-button {
-    background-color: rgb(172, 166, 151);
+    background-color: rgb(151, 162, 172);
     display: none;
 }
 
@@ -19,16 +19,16 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-1::-webkit-scrollbar-thumb {
-    background: rgb(172, 166, 151);
+    background: rgb(151, 162, 172);
     border-radius: 4px;
 }
 
 #scroll-1::-webkit-scrollbar-corner {
-    background: rgb(172, 166, 151);
+    background: rgb(151, 162, 172);
 }
 
 #scroll-1::-webkit-scrollbar-resizer {
-    background: rgb(172, 166, 151);
+    background: rgb(151, 162, 172);
 }
 
 #scroll-2::-webkit-scrollbar {
@@ -37,7 +37,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-2::-webkit-scrollbar-button {
-    background-color: rgb(172, 166, 151);
+    background-color: rgb(151, 162, 172);
     display: none;
 }
 
@@ -46,22 +46,22 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-2::-webkit-scrollbar-thumb {
-    background: rgb(172, 166, 151);
+    background: rgb(151, 162, 172);
     border-radius: 4px;
 }
 
 #scroll-2::-webkit-scrollbar-corner {
-    background: rgb(172, 166, 151);
+    background: rgb(151, 162, 172);
 }
 
 #scroll-2::-webkit-scrollbar-resizer {
-    background: rgb(172, 166, 151);
+    background: rgb(151, 162, 172);
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
+    background: #eeeff5 url(https://seicing.com/res/img01.png) repeat-x left top;
     font-size: 12pt;
     font-family: "微软雅黑", "Microsoft YaHei";
     color: rgb(54, 13, 13);

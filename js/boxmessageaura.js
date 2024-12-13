@@ -1,11 +1,11 @@
-var listText = ['atext', 'btext', 'ctext', 'dtext', 'etext', 'ftext', 'gtext', ]
-var listButton = ['abutton', 'bbutton', 'cbutton', 'dbutton', 'ebutton', 'fbutton', 'gbutton', ]
+var listText = ['atext', 'btext', 'ctext', 'dtext', 'etext', 'ftext', 'gtext',]
+var listButton = ['abutton', 'bbutton', 'cbutton', 'dbutton', 'ebutton', 'fbutton', 'gbutton',]
 
 function tipsg(a, b, c) {
     cleargasek(c);
     document.getElementById(a).style.display = "block";
     document.getElementById(b).style.color = "blue";
-    $("#" + a + " img").each(function() {
+    $("#" + a + " img").each(function () {
         var src = $(this).attr("data-src");
         $(this).attr("src", src);
     });
@@ -16,6 +16,6 @@ function cleargasek(a) {
         document.getElementById(listText[i] + a).style.display = "none";
     }
     for (var g = 0; g < listButton.length; g++) {
-        document.getElementById(listButton[g] + a).style.color = "#d0c9b7";
+        document.getElementById(listButton[g] + a).style.color = "#6383a8";
     }
 }

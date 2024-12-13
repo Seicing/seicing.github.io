@@ -54,7 +54,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
     margin: 0;
     padding: 0;
-    background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
+    background: #eeeff5 url(https://seicing.com/res/img01.png) repeat-x left top;
     font-size: 9pt;
     font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
     color: #ffffff;
@@ -224,7 +224,7 @@ a:hover {}
     width: 170px;
     padding: 6px 5px 3px 5px;
     border: none;
-    background: #D0C9B7;
+    background: #4b87cb;
     text-transform: lowercase;
     font: normal 11px Arial, Helvetica, sans-serif;
 }
