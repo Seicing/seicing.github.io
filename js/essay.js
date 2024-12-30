@@ -25,6 +25,7 @@ function overstep(a, b) {
     document.getElementById("haneibutton").style.display = "block";
     document.getElementById("cubutton").style.display = "block";
     document.getElementById("wenttobutton").style.display = "block";
+    document.getElementById("sanbutton").style.display = "block";
     document.getElementById(a).style.display = "none";
     document.getElementById("hajimediv").style.display = "none";
     document.getElementById("hattendiv").style.display = "none";
@@ -32,6 +33,7 @@ function overstep(a, b) {
     document.getElementById("haneidiv").style.display = "none";
     document.getElementById("cudiv").style.display = "none";
     document.getElementById("wenttodiv").style.display = "none";
+    document.getElementById("sandiv").style.display = "none";
     document.getElementById(b).style.display = "block";
 }
 
