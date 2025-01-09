@@ -69,7 +69,7 @@
 
     <tr>
         <td style="text-align: left ; background-color: #443623"> 伤害值</td>
-        <td style="text-align: left" colspan="3" id="counting3" colspan="2"></td>
+        <td style="text-align: left" colspan="3" id="counting1" colspan="2"></td>
     </tr>
     <tr>
         <td style="text-align: left ; background-color: #443623"> 暴击伤害值</td>
@@ -114,16 +114,13 @@
 <script>
     new Skill("counting", 10, 0, {
         "counting1": function (element, level, ex, input) {
-            element.textContent = (input[1] * input[5]) * (input[1] * input[2] * 0.001 + 1) * (1 - input[3] / 100)
+            element.textContent = input[1] * input[5]
         },
 
         "counting2": function (element, level, ex, input) {
             element.textContent = (input[1] * input[5]) * (input[1] * input[2] * 0.001 + 1) * (1 - input[3] / 100) * (input[4] * 0.01 + input[6])
         },
 
-        "counting3": function (element, level, ex, input) {
-            element.textContent = input[1] * input[5]
-        },
     })
 
 </script>
