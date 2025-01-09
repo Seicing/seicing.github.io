@@ -1,5 +1,5 @@
-var listText = ['atext', 'btext', 'ctext', 'dtext', 'etext', 'ftext', 'gtext', 'htext', 'itext', 'jtext', 'ktext', 'ltext', 'mtext', 'ntext', 'otext', 'ptext', 'qtext', 'rtext', 'stext']
-var listButton = ['abutton', 'bbutton', 'cbutton', 'dbutton', 'ebutton', 'fbutton', 'gbutton', 'hbutton', 'ibutton', 'jbutton', 'kbutton', 'lbutton', 'mbutton', 'nbutton', 'obutton', 'pbutton', 'qbutton', 'rbutton', 'sbutton']
+var listText = ['atext', 'btext', 'ctext', 'dtext', 'etext', 'ftext', 'gtext', 'htext', 'itext', 'jtext', 'ktext', 'ltext', 'mtext', 'ntext', 'otext', 'ptext', 'qtext', 'rtext', 'stext', 'ttext']
+var listButton = ['abutton', 'bbutton', 'cbutton', 'dbutton', 'ebutton', 'fbutton', 'gbutton', 'hbutton', 'ibutton', 'jbutton', 'kbutton', 'lbutton', 'mbutton', 'nbutton', 'obutton', 'pbutton', 'qbutton', 'rbutton', 'sbutton', 'tbutton']
 
 function tipsg(a, b, c) {
     cleargasek(c);
