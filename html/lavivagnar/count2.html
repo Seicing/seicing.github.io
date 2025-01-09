@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style_lavivagnar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/table_lv2.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+
+            <div id="header" class="container">
+
+            </div>
+
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b><div style="position:relative;">
+    <span style="font-family:宋体">属性计算</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="https://seicing.com/res/23233.png" alt="">
+    </div>
+    <br /> <br />
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><table id="counting" frame="box" width="750px">
+    <tr>
+        <td style="text-align: left ; background-color: #443623">加成属性</td>
+        <td style="text-align: left"><input type="text" id="counting_input1" value="20"
+                oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">参与到伤害计算中的主属性</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">潜力</td>
+        <td style="text-align: left"><input type="text" id="counting_input2" value="500"
+                oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">潜力加成系数 = 1 + (潜力 * 加成属性 * 0.001)</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">防御力</td>
+        <td style="text-align: left"><input type="text" id="counting_input3" value="500"
+                oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">减伤率 = 1 - (防御力 * 0.01)</td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623">致命值</td>
+        <td style="text-align: left"><input type="text" id="counting_input4" value="500"
+                oninput="value=value.replace(/[^\d]/g,'')"></td>
+        <td style="text-align: left" colspan="3">暴击伤害加成系数 = 基础暴击伤害系数 + (致命值 * 0.01) </td>
+    </tr>
+
+
+
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 技能系数</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input5" value="200"
+                oninput="value=value.replace(/[^\d]/g,'')">%</td>
+
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 技能基础暴击伤害系数</td>
+        <td style="text-align: left" colspan="3"><input type="text" id="counting_input6" value="150"
+                oninput="value=value.replace(/[^\d]/g,'')">%</td>
+    </tr>
+
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 伤害值</td>
+        <td style="text-align: left" colspan="3" id="counting1"></td>
+    </tr>
+    <tr>
+        <td style="text-align: left ; background-color: #443623" colspan="2"> 暴击伤害值</td>
+        <td style="text-align: left" colspan="3" id="counting2"></td>
+    </tr>
+
+</table>
+
+
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:fixed; left:0%px; top:0%px; height:100%;  width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        
+                    </div>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #FFF49F;"><br>
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+            <div id="wrapper3">
+                <div id="lowder" class="container">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script language="javascript" src="https://seicing.com/js/count.js"></script>
+<script>
+    new Skill("counting", 10, 0, {
+
+        "counting1": function (element, level, ex, input) {
+            element.textContent = (
+                (input[1] * input[5] / 100) * (1 + input[1] * input[2] * 0.001) * (1 - input[3] * 0.01)
+            ).toFixed(0)
+        },
+
+        "counting2": function (element, level, ex, input) {
+            element.textContent = (
+                (input[1] * input[5] / 100) * (1 + input[1] * input[2] * 0.001) * (input[6] * 0.01 + input[4] * 0.01) * (1 - input[3] * 0.01)
+            ).toFixed(0)
+        },
+
+
+    })
+
+</script>
+
+</html>
