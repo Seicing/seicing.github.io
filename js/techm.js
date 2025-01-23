@@ -269,7 +269,7 @@ let ayanami = {
 
 
     "欧西里斯之子": "欧西里斯之子<br>Son of Osiris<br>选中你的法老，将他变成一个超级强大、挥舞着闪电的半神",
-    "沙漠之风": "沙漠之风<br>Desert Wind<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骆驼骑兵+20%移动速度、攻击力和生命值",
+    "沙漠之风": "沙漠之风<br>Desert Wind<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骆驼骑兵 +15%移动速度、攻击力和生命值",
     "新王国": "新王国<br>New Kingdom<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>获得第二个法老",
     "阿特夫王冠": "阿特夫王冠<br>Atef Crown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>木乃伊升级为千年木乃伊，生命值+20%，远程伤害+40%，生成的仆从持续时间翻倍",
 
@@ -289,7 +289,7 @@ let ayanami = {
 
 
     "城堡": "城堡<br>Citadel<br>选择一个属于你或盟友的城镇中心，将它变成一个强大的防御城堡",
-    "骨弓": "骨弓<br>Bone Bow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>战车弓兵+4射程",
+    "骨弓": "骨弓<br>Bone Bow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>战车弓兵+2射程",
     "烈焰投石索": "烈焰投石索<br>Slings of the Sun<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>投石手对步兵部队加成率+75%",
     "猩红绫布": "猩红绫布<br>Crimson Linen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>神话单位恢复攻击造成伤害20%的生命值，圣甲虫还会额外增加60%的效率",
     "西风之力": "西风之力<br>Ram of the West Wind<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>可以早一个时代生产投石车，攻城武器和神话单位的攻城伤害+20%",
@@ -329,7 +329,7 @@ let ayanami = {
 
     "行走树林": "行走树林<br>Walking Woods<br>选中附近的一片森林，激活树木以攻击附近的敌人。活化的树木对建筑有很强的杀伤力，对付单位也有一定的威力",
     "深海之怒": "深海之怒<br>Wrath of the Deep<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>克拉肯升级为致命的深沟克拉肯，生命值+40%，能力冷却时间-25%",
-    "赐环者": "赐环者<br>Ring Giver<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>首领生命值+25%，对神话单位伤害加成率+100%",
+    "赐环者": "赐环者<br>Ring Giver<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>首领生命值+20%，对神话单位伤害加成率+100%",
     "维京人": "维京人<br>Vikings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>突袭骑兵交战时除了获得恩惠外还能获得10黄金",
     "约顿巨人": "约顿巨人<br>Jotuns<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>山岭巨人升级为约顿巨人，生命值+35%，近战攻击+35%，能力冷却时间-35%，移动速度+35%，获得脚踢操作",
 
@@ -369,7 +369,7 @@ let ayanami = {
 
 
     "恢复": "恢复<br>Restoration<br>选中一个地点以治疗单位并修复属于你或你盟友的建筑、攻城武器和船只",
-    "萨里沙长矛": "萨里沙长矛<br>Sarissa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵近战攻击+10%，近战射程+1.0",
+    "萨里沙长矛": "萨里沙长矛<br>Sarissa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵近战攻击+10%，近战射程+1.0",
     "埃癸斯神盾": "埃癸斯神盾<br>Aegis Shield<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵远程脆弱率-15%",
     "米诺斯迷宫": "米诺斯迷宫<br>Labyrinth of Minos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>升级米诺陶变成牛头人米诺陶，移动速度+20%，生命值+30%",
     "停火": "停火<br>Ceasefire<br>选中地图上的任意位置，在短时间内防止每个玩家战斗，并放缓远程防御工事的建造速度",
@@ -394,7 +394,7 @@ let ayanami = {
     "蛇发女妖之脸": "蛇发女妖之脸<br>Face of the Gorgon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>美杜莎升级为美杜莎女族长，远程攻击射程+5，特殊攻击充能时间-25%",
     "雅典之墙": "雅典之墙<br>Athenian Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>建筑物生命值+20%，墙壁生命值+30%",
 
-    "阿尔戈斯的庇佑": "阿尔戈斯的庇佑<br>Argive Patronage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>要塞会周期性生成密尔米顿步兵",
+    "阿尔戈斯的庇佑": "阿尔戈斯的庇佑<br>Argive Patronage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每60秒要塞会生成密尔米顿步兵",
 
 
     "储藏": "储藏<br>Plenty<br>选择一个位置来建造这个巨大的地窖。只要你控制它，众神的赏金就会流入你的地窖",
@@ -407,7 +407,7 @@ let ayanami = {
     "瘟疫": "瘟疫<br>Pestilence<br>选中敌方城镇，使其感染瘟疫。瘟疫可以阻止建筑发射炮弹并减慢单位的生产速度",
     "福波斯的恐惧之矛": "福波斯的恐惧之矛<br>Phobos' Spear of Panic<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>重甲兵、民兵、枪骑兵获得额外的1神圣伤害",
     "厄倪俄的恐怖之弓": "厄倪俄的恐怖之弓<br>Enyo's Bow of Horror<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊弓兵+10%攻击力，攻击速度+15%",
-    "得摩斯的恐惧之剑": "得摩斯的恐惧之剑<br>Deimos' Sword of Dread<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>禁卫步兵+15%攻击力，并可以提前1个时代使用他们",
+    "得摩斯的恐惧之剑": "得摩斯的恐惧之剑<br>Deimos' Sword of Dread<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>禁卫步兵+15%攻击力，并可以提前1个时代使用他们",
     "克洛诺斯之旨": "克洛诺斯之旨<br>Will of Kronos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>独眼巨人升级为独眼巨人长老，近战攻击伤害范围+2，特殊攻击伤害范围+2",
 
 
@@ -514,7 +514,7 @@ let ayanami = {
 
     "誓约之环": "誓约之环<br>Ring Oath<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>阿斯加德堡垒的重复恩惠成本 -60%",
 
-    "紫衫谷": "紫衫谷<br>Ydalir<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>攻城器生产效率 +20%，而且可以前一个时代使用便携式冲车",
+    "紫衫谷": "紫衫谷<br>Ydalir<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>攻城器生产效率 +20%，而且可以前一个时代使用便携式冲车",
 
 
     "花岗岩大嘴": "花岗岩大嘴<br>Granite Maw<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>135 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>岩石巨人升级为山岭巨人，攻击力 +20%，攻击敌人建筑物时可恢复50%造成伤害量的生命值",
@@ -575,7 +575,7 @@ let ayanami = {
 
 
     "洛基加成1": "洛基加成1<br>对敌方单位造成伤害有一定几率产出神话单位(人类单位几率为10%，维京百夫长几率为造成伤害量的50%)",
-    "洛基加成2": "洛基加成2<br>人类部队和英雄部队造成的额外伤害+25%",
+    "洛基加成2": "洛基加成2<br>人类部队和英雄部队造成的额外伤害+20%",
     "洛基加成3": "洛基加成3<br>建筑物建造速度+10%",
     "洛基加成4": "洛基加成4<br>采集者和矮人转化为狂战士的成本-50%",
     "洛基加成5": "洛基加成5<br>牛车成本-50%",
@@ -608,7 +608,7 @@ let ayanami = {
     "伊希斯加成5": "伊希斯加成5<br>升级可为人类士兵提供0.33%生命值",
     "伊希斯加成6": "伊希斯加成6<br>城镇中心可额外提供5人口",
 
-    "赛特加成1": "赛特加成1<br>纪念碑减少附近兵营和埃及要塞5%的生产成本",
+    "赛特加成1": "赛特加成1<br>纪念碑减少附近兵营和埃及要塞10%的生产成本",
     "赛特加成2": "赛特加成2<br>祭司可以招降野生动物，法老通过恩惠召唤动物，被控制的动物-25%食物量",
     "赛特加成3": "赛特加成3<br>投石手、斧战士、长矛兵移动速度+5%",
     "赛特加成4": "赛特加成4<br>埃及要塞、兵营、攻城设施黄金成本-25%",
