@@ -41,10 +41,10 @@
 
 
 部署ssl过程 <br>
-https://console.cloud.tencent.com/ssl 造访续时<br>
-本体在续时的时候需要暂时关闭CAA 解析记录 <br>
+https://console.cloud.tencent.com/ssl 造访续时，本体一定要使用www.seicing.com域名解析<br>
+本体在续时的时候需要暂时关闭CAA 解析记录 https://console.cloud.tencent.com/cns/detail/seicing.com/records <br>
 下载Nginx证书，解压放入服务器的SSL文件夹<br>
-执行sudo systemctl restart nginx <br>
+执行sudo systemctl restart nginx 或 sudo service nginx restart <br> <br> <br>
 
 python script -D 上存世清 <br> python script 忽略库上存世清 <br> python script\equ.py xxxxxxx 提取武器和装扮json <br> python script\equ.py
 xxxxxxx -t 提取称号json <br> python script\equ.py xxxxxxx -t -p 忽略nameless的提取称号json <br> python script\comjson.py xxxxxxx
