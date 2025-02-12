@@ -27,12 +27,12 @@
 
 #banaheader {
     font-size: 21px;
-    color: #DACF88;
+    color: #EFDCB7;
 }
 
 #banaheader2 {
     font-size: 1px;
-    color: #DACF88;
+    color: #EFDCB7;
 }
 
 #dia1 {
@@ -43,7 +43,7 @@
         url(https://seicing.com/res/DialogCenter.png) top repeat-y;
 }
 
-#dia2 { 
+#dia2 {
     float: right;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeader.png) top no-repeat,
@@ -51,7 +51,7 @@
         url(https://seicing.com/res/DialogCenter.png) top repeat-y;
 }
 
-#dia3 { 
+#dia3 {
     float: left;
     margin-bottom: 9px;
     background: url(https://seicing.com/res/DialogHeadernon.png) top no-repeat,
@@ -59,22 +59,22 @@
         url(https://seicing.com/res/DialogCenter.png) top repeat-y;
 }
 
-#金{
-    color: #DACF88
+#金 {
+    color: #EFDCB7
 }
 
-#绿{
+#绿 {
     color: #00ff00
 }
 
-#红{
+#红 {
     color: #E61E1E
 }
 
-#大{
+#大 {
     font-size: 30px;
 }
 
-#小{
+#小 {
     font-size: 12px;
 }
