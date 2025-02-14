@@ -100,6 +100,11 @@ let ayanami = {
     "祝祷": "祝祷<br>Benediction<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>受到鼓舞的村民建造速度+15%",
     "战意激昂": "战意激昂<br>Inspired Warriors<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>高级教士的移动速度提高 10%，可鼓舞军事单位，使他们的护甲 +1 和伤害 +15%",
 
+
+    "西多会修道院": "西多会修道院<br>Cistercian Abbeys<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>修道院可以自给自足，通过俗人兄弟耕种他们的土地。村民可以将资源存放在修道院。高级教士可以驻扎在修道院中，鼓舞附近的所有村民，提升他们的采集速度",
+
+
+
     "柚木桅杆": "柚木桅杆<br>Teak Masts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>军事船只的生命值增加 +10%",
     "新鲜食品": "新鲜食品<br>Fresh Foodstuffs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>生产村民成本 -35%",
 
@@ -372,7 +377,7 @@ let ayanami = {
 
     "攻城武器已强化": "攻城武器(已强化)<br>Siege Works(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1000    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>新的木工技术可使攻城部队的生命值 +30%。如果已完成攻城武器研究，则其生命值 +10%",
     "生物学已强化": "生物学(已强化)<br>Biology(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>所有骑兵的生命值 +35%。 如果已完成生物学研究，则 +10%",
-    "精锐军队战术已强化": "精锐军队战术(已强化)<br>Elite Army Tactics(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1200    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>训练精锐步兵可提高战斗力。近战步兵生命值和伤害 +20%。如果已完成精锐军队战术的研究，则生命值和伤害 +5%",
+    "精锐军队战术已强化": "精锐军队战术(已强化)<br>Elite Army Tactics(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>训练精锐步兵可提高战斗力。近战步兵生命值和伤害 +20%。如果已完成精锐军队战术的研究，则生命值和伤害 +5%",
 
     "草药已强化": "草药(已强化)<br>Herbal Medicine(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>275    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>宗教单位的治疗速率 +90%。 如果已完成草药研究，则 +30%",
     "什一税仓库已强化": "什一税仓库(已强化)<br>Tithe Barns(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>放置在祈祷帐篷里的圣物每分钟会提供 +60 食物、+60 木材和 +15 石料收入。 如果已完成什一税仓库研究，则食物和木材收入分别 +20，石料收入 +5",
