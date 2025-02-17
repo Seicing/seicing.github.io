@@ -229,7 +229,7 @@ let ayanami = {
 
     "军事学校": "军事学校<br>Military Campus<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>军事学校的建筑上限 +1",
     "大规模防御工事": "大规模防御工事<br>Extensive Fortifications<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>防御建筑的成本降低 20%，并为驻扎的单位装备弩箭，使其伤害力 +1，对抗重型单位时的伤害加成 +2",
-    "阿金基轻骑兵系统": "阿金基轻骑兵系统<br>Akinci System<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>解锁军事学校和靶场的阿金基轻骑兵训练",
+    "阿金基轻骑兵系统": "阿金基轻骑兵系统<br>Akinji System<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv2议会科技<br>解锁军事学校和靶场的阿金基轻骑兵训练",
 
     "苏丹亲兵连队": "苏丹亲兵连队<br>Janisary Company<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv3议会科技<br>在地标城镇中心每建造一处地标城镇中心以及一所军事学校可产生 2 个苏丹亲兵",
     "高级学院": "高级学院<br>Advanced Academy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/帝国议会.png' width='20px'>1 <br>Lv3议会科技<br>为军事学校提供生产长矛骑兵和苏丹亲兵的能力，军事学校+25%生产效率",
