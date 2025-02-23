@@ -1,5 +1,5 @@
 let ayanami = {
-    "革命宏革命": "革命宏革命啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+    "谷仓": "谷仓<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='30px'>55 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='30px'>220<br>基础产量：+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='30px'>食物<br>农场、牧场和种植园+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='30px'>食物",
 
 }
 
