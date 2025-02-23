@@ -126,6 +126,7 @@ let ayanami = {
     "【奇观】": "【奇观】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【奇观生产力】<br>基础产量：【奇观】",
     "【奇观】": "【奇观】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【奇观生产力】<br>基础产量：【奇观】",
 
+
     "桨帆船": "桨帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50<br>射程 2<br>近战攻击力 10<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>第2阶段古典时代海上单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "四段帆船": "四段帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>射程 2<br>近战攻击力 10<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>第3阶段古典时代海上单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
