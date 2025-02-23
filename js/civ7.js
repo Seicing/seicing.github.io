@@ -126,22 +126,23 @@ let ayanami = {
     "【奇观】": "【奇观】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【奇观生产力】<br>基础产量：【奇观】",
     "【奇观】": "【奇观】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【奇观生产力】<br>基础产量：【奇观】",
 
-    "桨帆船": "桨帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50<br>第2阶段古典时代海上单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "四段帆船": "四段帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>第3阶段古典时代海上单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "桨帆船": "桨帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50<br>射程 2<br>近战攻击力 10<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>第2阶段古典时代海上单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "四段帆船": "四段帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>射程 2<br>近战攻击力 10<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>第3阶段古典时代海上单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
-    "投石兵": "投石兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>第1阶段古典时代远程单位<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "弓箭手": "弓箭手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50<br>第2阶段古典时代远程单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "投石兵": "投石兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>射程 2<br>近战攻击力 5<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>第1阶段古典时代远程单位<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "弓箭手": "弓箭手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50<br>射程 2<br>近战攻击力 10<br>远程攻击力 20<br>轰击力 10<br>移动力 2<br>视野范围 2<br>第2阶段古典时代远程单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
-    "长枪兵": "长枪兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>60<br>第2阶段古典时代步兵单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "方阵": "方阵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>100<br>第3阶段古典时代步兵单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "战士": "战士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>近战攻击力 20<br>移动力 2<br>视野范围 2<br>第1阶段古典时代步兵单位<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "长枪兵": "长枪兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>60<br>近战攻击力 25<br>移动力 2<br>视野范围 2<br>第2阶段古典时代步兵单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "方阵": "方阵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>100<br>近战攻击力 30<br>移动力 2<br>视野范围 2<br>第3阶段古典时代步兵单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
-    "战车": "战车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>70<br>第2阶段古典时代骑兵单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "骑手": "骑手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>110<br>第3阶段古典时代骑兵单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "战车": "战车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>70<br>近战攻击力 30<br>移动力 3<br>视野范围 2<br>第2阶段古典时代骑兵单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "骑手": "骑手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>110<br>近战攻击力 35<br>移动力 3<br>视野范围 2<br>第3阶段古典时代骑兵单位<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
-    "投射机": "投射机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>55<br>第2阶段古典时代攻城单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "投射机": "投射机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>55<br>射程 2<br>近战攻击力 15<br>远程攻击力 10<br>轰击力 30<br>移动力 1<br>视野范围 2<br>第2阶段古典时代攻城单位<br>维护费 : 1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
-    "军队指挥官": "军队指挥官<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>100<br>陆地支援单位，能够将一组陆地军事单位集结成军队并进行指挥<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "商人": "商人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>40<br>商人可以前往其他领袖的定居点建立贸易路线，从而获得对方的资源。商人在帝国内部修建道路方面也发挥着重要作用。每次时代过渡后商人都将消失<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "军队指挥官": "军队指挥官<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>100<br>移动力 2<br>视野范围 2<br>陆地支援单位，能够将一组陆地军事单位集结成军队并进行指挥<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "商人": "商人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>40<br>移动力 4<br>视野范围 2<br>商人可以前往其他领袖的定居点建立贸易路线，从而获得对方的资源。商人在帝国内部修建道路方面也发挥着重要作用。每次时代过渡后商人都将消失<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
 
 
@@ -192,13 +193,14 @@ let ayanami = {
     "研究计划": "研究计划<br>持续生成等同于此城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力25%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，可随时取消",
     "文化节": "文化节<br>持续生成等同于此城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力25%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，可随时取消",
 
-    "盗窃科技进步": "盗窃科技进步<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>【待补充】<br>从目标处获得未研究科技，没有可获取科技时可获得<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 ",
-    "军事渗透": "军事渗透<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>【待补充】<br>获得目标所有指挥官视野 ",
-    "改善贸易关系": "改善贸易关系<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>【待补充】<br>如果行动被接受，永久增加与一个文明建立的贸易路线数量 ",
-    "奇观建造": "奇观建造<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>【待补充】<br>为奇观建造提供加成<br>接受：你建造奇观时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。对方领袖每回合<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值收益+6<br>支持：双方领袖建造奇观时+15%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
+    "盗窃科技进步": "盗窃科技进步<br>从目标处获得未研究科技，没有可获取科技时可获得<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 ",
+    "军事渗透": "军事渗透<br>获得目标所有指挥官视野 ",
+    "改善贸易关系": "改善贸易关系<br>如果行动被接受，永久增加与一个文明建立的贸易路线数量 ",
+    "奇观建造": "奇观建造<br>为奇观建造提供加成<br>接受：你建造奇观时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。对方领袖每回合<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值收益+6<br>支持：双方领袖建造奇观时+15%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
 
 
-
+    "诸葛弩": "诸葛弩<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>射程 2<br>近战攻击力 10<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>汉朝特色远程单位。拥有控制区和更高的防御力。攻击相邻单位时+5战斗力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "士大夫": "士大夫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 3<br>视野范围 1<br>使用次数为1的伟人。只能在拥有至少10点人口的城市中生产，随机获得特定的士大夫。每位士大夫只能获得一次。每获得一位士大夫后，生产费用将有所增加<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "长城": "长城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>60<br>基础产量：+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，相邻的长城+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，汉朝特色改良设施。无时代限制。视为防御工事，防御时+6战斗力。不会移除地块上的仓库加成。只能建成一条线。不能分支或分叉",
 
     "关系": "关系<br>科技值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
