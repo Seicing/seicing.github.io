@@ -45,6 +45,7 @@ let ayanami = {
 
 
 
+
     "桨帆船": "桨帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>【待补充】<br>第2阶段古典时代海上单位<br>维护费：1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "四段帆船": "四段帆船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>【待补充】<br>第3阶段古典时代海上单位<br>维护费：1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "投石兵": "投石兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>【待补充】<br>第1阶段古典时代远程单位<br>维护费：1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
@@ -60,6 +61,17 @@ let ayanami = {
 
     "盗窃科技进步": "盗窃科技进步<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>【待补充】<br>从目标处获得未研究科技，没有可获取科技时可获得<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 ",
     "军事渗透": "军事渗透<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>【待补充】<br>获得目标所有指挥官视野 ",
+
+
+
+    "长城": "长城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>【待补充】<br>基础产量：+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，相邻的长城+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，汉朝特色改良设施。无时代限制。视为防御工事，防御时+6战斗力。不会移除地块上的仓库加成。只能建成一条线。不能分支或分叉",
+
+    "关系": "关系<br>科技值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
+    "九卿": "九卿<br>幸福值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
+    "天下": "天下<br>专家+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
+
+    "未央宫": "未央宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>375 <br>基础产量：+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力<br> 无时代限制，必须放置在草原上",
+
 }
 
 function showPic(e, taitou) {
