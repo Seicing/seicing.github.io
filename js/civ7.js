@@ -199,7 +199,7 @@ let ayanami = {
     "奇观建造": "奇观建造<br>为奇观建造提供加成<br>接受：你建造奇观时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。对方领袖每回合<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值收益+6<br>支持：双方领袖建造奇观时+15%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
 
 
-    "诸葛弩": "诸葛弩<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>射程 2<br>近战攻击力 10<br>远程攻击力 15<br>轰击力 5<br>移动力 2<br>视野范围 2<br>汉朝特色远程单位。拥有控制区和更高的防御力。攻击相邻单位时+5战斗力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "诸葛弩": "诸葛弩<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>射程 2<br>近战攻击力 10/15<br>远程攻击力 15/20<br>轰击力 5/10<br>移动力 2<br>视野范围 2<br>汉朝特色远程单位。拥有控制区和更高的防御力。攻击相邻单位时+5战斗力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "士大夫": "士大夫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 3<br>视野范围 1<br>使用次数为1的伟人。只能在拥有至少10点人口的城市中生产，随机获得特定的士大夫。每位士大夫只能获得一次。每获得一位士大夫后，生产费用将有所增加<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "长城": "长城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>60<br>基础产量：+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，相邻的长城+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，汉朝特色改良设施。无时代限制。视为防御工事，防御时+6战斗力。不会移除地块上的仓库加成。只能建成一条线。不能分支或分叉",
 
