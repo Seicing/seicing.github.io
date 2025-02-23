@@ -94,10 +94,9 @@ let ayanami = {
     "狄奥多里克陵墓": "狄奥多里克陵墓<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>450<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>来自掠夺的产量和生命值+100%。+1军事属性点<br>无时代限制。必须放置在海岸旁",
     "那烂陀": "那烂陀<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>450<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>获得1件抄本。拥有2个抄本槽位<br>+1科技属性点<br>无时代限制。必须放置在平原上。",
     "巨像": "巨像<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>此定居点+3资源容量<br>+1经济属性点<br>无时代限制。必须放置在与陆地相邻的海岸上",
-
     "吴哥窟": "吴哥窟<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>450<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>此定居点中的专家上限+1<br>无时代限制。必须放置在河流旁。",
-
     "僧侣墩": "僧侣墩<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>450<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物<br>此定居点中的资源容量+4<br>无时代限制。必须放置在河流旁",
+    "万国之门": "万国之门<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>所有战争+2支持<br>无时代限制。必须放置在区块旁",
 
 
 
