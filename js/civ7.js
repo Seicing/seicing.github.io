@@ -163,6 +163,7 @@ let ayanami = {
     "飞行队指挥官": "飞行队指挥官<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>140<br>移动力 8<br>视野范围 2<br>空中支援单位，能够将一组空中军事单位集结成飞行队并进行指挥<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "航空母舰": "航空母舰<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>160<br>移动力 4<br>视野范围 2<br>空中支援单位，能集结一组空中军事单位并进行指挥<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "探路者": "探路者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 2<br>视野范围 2<br>探路平民单位，适合探明地形并发现新土地<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "探索者": "探索者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>250<br>移动力 3<br>视野范围 2<br>支援单位，能够寻找并发掘先前时代的掩埋文物<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "商人": "商人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>40<br>移动力 4<br>视野范围 2<br>商人可以前往其他领袖的定居点建立贸易路线，从而获得对方的资源<br>商人在帝国内部修建道路方面也发挥着重要作用<br>每次时代过渡后商人都将消失<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
 
     "魅力型领袖": "魅力型领袖<br>宫殿+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
@@ -215,7 +216,7 @@ let ayanami = {
     "人文主义": "人文主义<br>专家提供+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，但专家维护费用+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "社会科学": "社会科学<br>专家提供+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，但专家维护费用+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物",
     "土木工程": "土木工程<br>加建时+30%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
-    "生活水平": "生活水平<br>【待补充】",
+    "生活水平": "生活水平<br>维护建筑时+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值效用",
     "土地遗产": "土地遗产<br>山脉+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>自然奇观+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
     "言论自由": "言论自由<br>维护专家时+100%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值效用",
     "蛊惑煽动": "蛊惑煽动<br>宫殿获得等同于你文化属性的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
@@ -264,6 +265,8 @@ let ayanami = {
     "破坏专家士气": "破坏专家士气<br>使目标定居点中的所有专家收益无效",
     "破坏运输": "破坏运输<br>摧毁目标城市中的所有港口和火车站",
     "破坏太空计划": "破坏太空计划<br>增加目标城市建造发射台并完成发射卫星项目所需的时间",
+    "散布假文物谣言": "散布假文物谣言<br>移除目标文明展示文物的所有产出",
+    "渗透敌方位置": "渗透敌方位置<br>你的攻城单位将使用其轰击战斗力对抗属于目标的所有单位",
     "跨洋飞行": "跨洋飞行<br>完成后获得1名飞行队指挥官，科技传承路径获得1传承点",
     "打破音障": "打破音障<br>完成后空中单位+1战斗力，科技传承路径获得1传承点",
     "发射卫星": "发射卫星<br>完成后探明整张地图，科技传承路径获得1传承点",
@@ -277,6 +280,21 @@ let ayanami = {
     "关系": "关系<br>科技值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
     "九卿": "九卿<br>幸福值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
     "天下": "天下<br>专家+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
+
+    "八旗军": "八旗军<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>290<br>近战攻击力 50/55/60<br>移动力 2<br>视野范围 2<br>清朝特色步兵单位。与另一个八旗军相邻时+4战斗力<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "行商": "行商<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>140<br>移动力 4<br>视野范围 2<br>清朝特色商人。平民单位，可建立贸易路线，从外国定居点进口资源。创建海上贸易路线时，每取得1资源便获得50<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+
+    "试馆": "试馆<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>从幸福值建筑和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值相邻加成<br>清朝特色科技值建筑。无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "钱庄": "钱庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>从金币建筑和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币相邻加成<br>清朝特色金币建筑。无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "会馆": "会馆<br>清朝特色城区。创建方法是在同一个区块中建造钱庄和试馆。此定居点+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
+    "闯关东": "闯关东<br>分配资源后，城镇+25%发展率",
+    "公行": "公行<br>+50%贸易收入",
+    "农田评估": "农田评估<br>生产陆地单位时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
+    "八旗军政策": "八旗军<br>对抗陆地单位时+3战斗力",
+
+
+    "【特色建筑】": "【特色建筑】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "【特色政策】": "【特色政策】<br>【特色政策】",
 
 }
 
