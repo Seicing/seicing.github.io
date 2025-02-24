@@ -292,7 +292,7 @@ let ayanami = {
     "农田评估": "农田评估<br>生产陆地单位时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
     "八旗军政策": "八旗军<br>对抗陆地单位时+3战斗力",
 
-
+    "【特色单位】": "【特色单位】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>【特色单位】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "【特色建筑】": "【特色建筑】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "【特色政策】": "【特色政策】<br>【特色政策】",
 
