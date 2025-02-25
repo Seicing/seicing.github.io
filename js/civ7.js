@@ -304,6 +304,19 @@ let ayanami = {
 
 
 
+    "投枪手": "投枪手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/50<br>射程 2<br>近战攻击力 5/10<br>远程攻击力 15/20<br>轰击力 5/10<br>移动力 2<br>视野范围 2<br>玛雅特色远程单位。视线能穿过植物，无视植被地形的移动力减益<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "屠豹者": "屠豹者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>近战攻击力 20<br>移动力 2<br>视野范围 2<br>玛雅特色探路者。可发起战斗。拥有1次放置敌方单位不可见的屠豹陷阱的能力，它可对单位造成25点伤害并耗尽其移动力。放置陷阱之后，此能力需要5回合冷却时间<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "球场": "球场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>城区和奇观+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值相邻加成<br>玛雅特色幸福值建筑<br>无时代限。<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "圣祠": "圣祠<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>120<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>如果放置在植物上，+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>从奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值相邻加成<br>玛雅特色科技值建筑<br>无时代限制<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "神之所": "神之所<br>玛雅特色城区<br>建造方法是将球场和圣祠放置在同一个区块中<br>每次研究完一项科技，此定居点将获得等同于研发费用15%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
+
+    "人造雨林": "人造雨林<br>城市中的植被地形+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
+    "双子奇迹": "双子奇迹<br>所有单位获得“下毒”能力，对抗受伤单位时+3战斗力",
+    "佐尔金": "佐尔金<br>幸福值建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
+    "哈亚布历法": "哈亚布历法<br>幸福值建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
+
+
+
     "【特色单位】": "【特色单位】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>【特色单位】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "【特色建筑】": "【特色建筑】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "【特色政策】": "【特色政策】<br>【特色政策】",
