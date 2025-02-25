@@ -316,6 +316,21 @@ let ayanami = {
     "哈亚布历法": "哈亚布历法<br>幸福值建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
 
 
+    "零式战机": "零式战机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>350/410<br>射程10/12<br>近战攻击力 55/60<br>远程攻击力35/40<br>轰击力30/35<br>移动力 10/12<br>视野范围 4<br>明治日本特色战斗机单位<br>射程更大。对抗其他战斗机时+4战斗力<br>可拦截敌方空中单位<br>维护费 : 4/5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "三笠舰": "三笠舰<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>370/430<br>射程 2<br>近战攻击力 55/60<br>远程攻击力 50/55<br>轰击力 40/45<br>移动力 3<br>视野范围 2<br>明治日本特色重型海上单位<br>此单位首次被摧毁时，它将在你距离最近的定居点中以50%的生命值复活<br>维护费 : 5/6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+
+    "重工企业": "重工企业<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>从海岸地形和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成<br>无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "日式银行": "日式银行<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>从金币建筑和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币相邻加成<br>无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+
+    "财阀": "财阀<br>明治特色城区，建造方法是将日式银行和重工企业放置在同一个区块中<br>相邻区块中的建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
+
+
+    "外国顾问": "外国顾问<br>专家提供+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
+    "富国强兵": "富国强兵<br>生产飞机或海上单位时，获得等同于单位生产力花费25%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
+    "守势国防": "守势国防<br>军事建筑从海岸获得<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成",
+    "航空队": "航空队<br>飞机攻击正在与海上单位交战的敌方单位时+6战斗力",
+
+
 
     "【特色单位】": "【特色单位】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>【特色单位】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "【特色建筑】": "【特色建筑】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
