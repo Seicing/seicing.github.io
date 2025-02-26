@@ -272,18 +272,15 @@ let ayanami = {
     "发射卫星": "发射卫星<br>完成后探明整张地图，科技传承路径获得1传承点",
     "载人航天飞行": "载人航天飞行<br>完成此项目，首次将人类送入太空，赢得科技胜利",
 
-
     "诸葛弩": "诸葛弩<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/50<br>射程 2<br>近战攻击力 10/15<br>远程攻击力 15/20<br>轰击力 5/10<br>移动力 2<br>视野范围 2<br>汉朝特色远程单位，拥有控制区和更高的防御力<br>攻击相邻单位时+5战斗力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "士大夫": "士大夫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 3<br>视野范围 1<br>使用次数为1的伟人，只能在拥有至少10点人口的城市中生产，随机获得特定的士大夫<br>每位士大夫只能获得一次<br>每获得一位士大夫后，生产费用将有所增加<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "长城": "长城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>60<br>基础产量：+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，相邻的长城+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，汉朝特色改良设施<br>无时代限制，视为防御工事，防御时+6战斗力<br>不会移除地块上的仓库加成<br>只能建成一条线，不能分支或分叉",
-
     "关系": "关系<br>科技值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
     "九卿": "九卿<br>幸福值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
     "天下": "天下<br>专家+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
 
     "八旗军": "八旗军<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>290/340/400<br>近战攻击力 50/55/60<br>移动力 2<br>视野范围 2<br>清朝特色步兵单位<br>与另一个八旗军相邻时+4战斗力<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "行商": "行商<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>140<br>移动力 4<br>视野范围 2<br>清朝特色商人<br>平民单位，可建立贸易路线，从外国定居点进口资源<br>创建海上贸易路线时，每取得1资源便获得50<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-
     "试馆": "试馆<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>从幸福值建筑和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值相邻加成<br>清朝特色科技值建筑<br>无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "钱庄": "钱庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>从金币建筑和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币相邻加成<br>清朝特色金币建筑<br>无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "会馆": "会馆<br>清朝特色城区<br>创建方法是在同一个区块中建造钱庄和试馆<br>此定居点+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
@@ -292,44 +289,41 @@ let ayanami = {
     "农田评估": "农田评估<br>生产陆地单位时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
     "八旗军政策": "八旗军<br>对抗陆地单位时+3战斗力",
 
-
-    "迅雷铳": "迅雷铳<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>130/170/220<br>近战攻击力 35/40/45<br>远程攻击力 30/35/40<br>轰击力 20/25/30<br>移动力 2<br>视野范围 2<br>明朝特色步兵单位<br>在无地貌的地块中时+4战斗力<br>拥有远程攻击<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "迅雷铳": "迅雷铳<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>130/170/220<br>射程 2<br>近战攻击力 35/40/45<br>远程攻击力 30/35/40<br>轰击力 20/25/30<br>移动力 2<br>视野范围 2<br>明朝特色步兵单位<br>在无地貌的地块中时+4战斗力<br>拥有远程攻击<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "文官": "文官<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>40<br>移动力 4<br>视野范围 2<br>明朝特色商人<br>平民单位，可建立贸易路线，从外国定居点进口资源<br>执行“创建道路”行动时，+100<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "明长城": "明长城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值<br>从防御工事建筑和改良设施获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'width='15px'>金币相邻加成<br>明朝特色改良设施<br>无时代限制<br>视为防御工事，防御时+6战斗力<br>不会移除地块上的仓库加成<br>只能建成一条线<br>不能分支或分叉",
-
     "神机营": "神机营<br>拥有驻守单位的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "大学士": "大学士<br>金币建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>科技值建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "保甲制度": "保甲制度<br>每有一种资源分配到城市，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>在首都之外的城市中，此加成变为+2",
 
 
-
-
-    "投枪手": "投枪手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/50<br>射程 2<br>近战攻击力 5/10<br>远程攻击力 15/20<br>轰击力 5/10<br>移动力 2<br>视野范围 2<br>玛雅特色远程单位。视线能穿过植物，无视植被地形的移动力减益<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "屠豹者": "屠豹者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>近战攻击力 20<br>移动力 2<br>视野范围 2<br>玛雅特色探路者。可发起战斗。拥有1次放置敌方单位不可见的屠豹陷阱的能力，它可对单位造成25点伤害并耗尽其移动力。放置陷阱之后，此能力需要5回合冷却时间<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "球场": "球场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>城区和奇观+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值相邻加成<br>玛雅特色幸福值建筑<br>无时代限。<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "投枪手": "投枪手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/50<br>射程 2<br>近战攻击力 5/10<br>远程攻击力 15/20<br>轰击力 5/10<br>移动力 2<br>视野范围 2<br>玛雅特色远程单位<br>视线能穿过植物，无视植被地形的移动力减益<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "屠豹者": "屠豹者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>近战攻击力 20<br>移动力 2<br>视野范围 2<br>玛雅特色探路者<br>可发起战斗<br>拥有1次放置敌方单位不可见的屠豹陷阱的能力，它可对单位造成25点伤害并耗尽其移动力<br>放置陷阱之后，此能力需要5回合冷却时间<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "球场": "球场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>城区和奇观+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值相邻加成<br>玛雅特色幸福值建筑<br>无时代限制<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "圣祠": "圣祠<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>120<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>如果放置在植物上，+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>从奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值相邻加成<br>玛雅特色科技值建筑<br>无时代限制<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "神之所": "神之所<br>玛雅特色城区<br>建造方法是将球场和圣祠放置在同一个区块中<br>每次研究完一项科技，此定居点将获得等同于研发费用15%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
-
     "人造雨林": "人造雨林<br>城市中的植被地形+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "双子奇迹": "双子奇迹<br>所有单位获得“下毒”能力，对抗受伤单位时+3战斗力",
     "佐尔金": "佐尔金<br>幸福值建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "哈亚布历法": "哈亚布历法<br>幸福值建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
 
 
-    "零式战机": "零式战机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>350/410<br>射程10/12<br>近战攻击力 55/60<br>远程攻击力35/40<br>轰击力30/35<br>移动力 10/12<br>视野范围 4<br>明治日本特色战斗机单位<br>射程更大。对抗其他战斗机时+4战斗力<br>可拦截敌方空中单位<br>维护费 : 4/5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "三笠舰": "三笠舰<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>370/430<br>射程 2<br>近战攻击力 55/60<br>远程攻击力 50/55<br>轰击力 40/45<br>移动力 3<br>视野范围 2<br>明治日本特色重型海上单位<br>此单位首次被摧毁时，它将在你距离最近的定居点中以50%的生命值复活<br>维护费 : 5/6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-
+    "零式战机": "零式战机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>350/410<br>射程10/12<br>近战攻击力 55/60<br>远程攻击力35/40<br>轰击力30/35<br>移动力 10/12<br>视野范围 4<br>明治日本特色战斗机单位<br>射程更大<br>对抗其他战斗机时+4战斗力<br>可拦截敌方空中单位<br>维护费 : 4/5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "三笠舰": "三笠舰<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>370/430<br>射程 2<br>近战攻击力 55/60<br>远程攻击力 50/55<br>轰击力 40/45<br>移动力 3<br>视野范围 2<br>明治日本特色重型海上单位<br>此单位首次被摧毁时，它将在你距离最近的定居点中以50%的生命值复活<br>维护费 : 5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "重工企业": "重工企业<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>从海岸地形和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成<br>无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "日式银行": "日式银行<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>650<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>从金币建筑和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币相邻加成<br>无时代限制<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
-
     "财阀": "财阀<br>明治特色城区，建造方法是将日式银行和重工企业放置在同一个区块中<br>相邻区块中的建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
-
-
     "外国顾问": "外国顾问<br>专家提供+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "富国强兵": "富国强兵<br>生产飞机或海上单位时，获得等同于单位生产力花费25%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "守势国防": "守势国防<br>军事建筑从海岸获得<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成",
     "航空队": "航空队<br>飞机攻击正在与海上单位交战的敌方单位时+6战斗力",
 
+    "怯薛歹": "怯薛歹<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>120/160/210<br>射程 2<br>近战攻击力 20/25/30<br>远程攻击力 30/35/40<br>轰击力 20/25/30<br>移动力 3<br>视野范围 2<br>蒙古特色远程单位<br>拥有+1移动力，击败敌方单位后恢复15生命值<br>视为骑兵单位，无视控制区<br>维护费 : 2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "那颜": "那颜<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>100<br>移动力 4<br>视野范围 4<br>蒙古特色军队指挥官<br>指挥半径中的骑兵单位+50%夹击加成<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "站赤": "站赤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>基础产量：+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>为处于此位置的任意蒙古单位恢复移动力<br>蒙古特色改良设施<br>无时代限制<br>不会移除地块上的仓库加成<br>无法放置在崎岖地形、河流或有地貌的地块上",
+    "腰牌": "腰牌<br>每为其分配一项资源，并非你建立的定居点+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "巴特尔": "巴特尔<br>骑兵单位+5战斗力",
+    "札儿里黑": "札儿里黑<br>并非由你创建的城市+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
 
 
     "【特色单位】": "【特色单位】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>【特色单位】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
