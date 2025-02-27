@@ -326,8 +326,26 @@ let ayanami = {
     "札儿里黑": "札儿里黑<br>并非由你创建的城市+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
 
 
-    "【特色单位】": "【特色单位】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>【特色单位】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "【特色建筑】": "【特色建筑】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "诺曼骑士": "诺曼骑士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>诺曼特色骑兵单位<br>对抗移动力更低的单位时+3战斗力<br>无视控制区<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "宗地农民": "宗地农民<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>移动力 2<br>视野范围 2<br>诺曼特色开拓者。能建立新城镇的平民单位。建立新城镇时市中心获得中世纪城墙<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+
+    "城寨": "城寨<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值<br>从中世纪城墙和奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值相邻加成<br>诺曼特色文化值建筑和防御工事<br>无时代限制，必须先征服所有驻防区块才能占领定居点<br>维护费 : 【特色建筑】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "土堡": "土堡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>如放置在崎岖地形上，+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>能从奇观获得<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值相邻加成<br>诺曼特色幸福值建筑和防御工事<br>无时代限制，必须征服所有驻防区块才能占领定居点<br>维护费 : 【特色建筑】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+
+    "城堡主楼": "城堡主楼<br>诺曼特色城区。建造方法是将城寨和土堡放置在同一个区块中<br>建成后免费获得一个诺曼骑士单位",
+
+
+    "栅栏分隔": "栅栏分隔<br>建造防御工事建筑时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
+    "陪审团": "陪审团<br>宫殿提供+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值<br>市政厅提供+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "效忠义务": "效忠义务<br>骑兵单位维护费用-2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "家族统治": "家族统治<br>政体槽位中每有一项传统，+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
+    "巴约挂毯": "巴约挂毯<br>并非由你创建的定居点+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
+
+
+
+
+    "【特色单位】": "【特色单位】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>【特色单位】<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "【特色建筑】": "【特色建筑】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "【特色政策】": "【特色政策】<br>【特色政策】",
 
 }
