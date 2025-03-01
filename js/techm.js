@@ -622,7 +622,7 @@ let ayanami = {
 
 
     "桃花源": "桃花源<br>The Peach Blossom Spring:<br>可以由村民进行收获。其资源采集的速度非常快，但如果有村民从中采集资源的话，储备就会停止增加",
-    "阴阳": "阴阳<br>Yin and Yang<br>伏羲可赐予两种互相交替生效的加成，每隔 4 分钟交替一次：<br>• 阴：农民和夸父采集速度 +10%。<br>• 阳：人类士兵和攻城武器伤害 +10%",
+    "阴阳": "阴阳<br>Yin and Yang<br>伏羲可赐予两种互相交替生效的加成，每隔 4 分钟交替一次：<br>• 阴：农民和夸父采集速度 +10%<br>• 阳：人类士兵和攻城武器伤害 +10%",
     "天界武器": "天界武器<br>Celestial Weapons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄所有攻击造成 +1神圣伤害，圣贤、哪吒、姜子牙、杨戬额外增加1/2/3/4",
     "太极": "太极<br>Tai Chi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄训练时间-25%，远程和近战脆弱率-10%",
 
