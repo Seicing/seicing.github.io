@@ -1,59 +1,12 @@
 let ayanami = {
-    "羊年": "羊年<br>Year of the Goat<br>根据时代，在指定的位置生成3/5/8/12只山羊",
-    "建造祝福": "建造祝福<br>Blessed Construction<br>在正在建造的建筑物触发建造祝福，消耗额外20%的资源，提高300%建造效率",
-    "驯化": "驯化<br>Domestication<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>从浆果丛、家禽收集食物的效率+30%，从驯化的牲畜收集食物效率+15%",
-    "起死回生": "起死回生<br>Recreation<br>复活指定区域内最多4个农民",
-    "针灸": "针灸<br>Acupuncture<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20 <br>农民每秒恢复0.5生命值",
-    "木材丰收": "木材丰收<br>Timber Harvest<br>50秒内提升伐木效率80%",
-    "独轮手推车": "独轮手推车<br>Wheelbarrow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>农民资源承载量+5",
-    "动员令": "动员令<br>Call to Arms<br> 在一个区域复制随机数量的士兵(最多4个人类单位和1个神话单位单位)",
-    "甲骨文": "甲骨文<br>Oracle Bone Script<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>军事学院单位便宜15%，训练速度+15%",
-    "五谷": "五谷<br>Five Grains<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>农场便宜30%",
-    "石甲": "石甲<br>Stone Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>兵马俑死亡时造成双倍伤害",
-    "长征": "长征<br>Great Journey<br> 在一分钟内施法者所有单位暂时提速40%",
-    "金箍棒": "金箍棒<br>Golden-banded Staff<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25 <br>猴王攻击力+30%",
-    "定海神针": "定海神针<br>Pillar of the Ocean<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>码头、捕鱼船、弓箭帆船生命值+15%",
-    "金字压帖": "金字压帖<br>Paper Talisman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>戟兵近战脆弱率和远程脆弱率-10%",
-    "科举": "科举<br>Imperial Examination<br> 45秒内玩家建造速度和单位训练速度+40%",
-    "土地庙": "土地庙<br>House Altars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>花园资源效率+20%",
-    "墓葬": "墓葬<br>Burials<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>僧侣招降速度+30%",
-    "社神": "社神<br>Landlord Spirit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>农民生产时间-30%",
-    "连根拔起": "连根拔起<br>Uproot<br> 使一个区域的建筑被树根所缠绕造成伤害，持续50秒",
-    "驱魔": "驱魔<br>Demon Slayer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>仙人对神话单位伤害倍率+2倍",
-    "勾魂夺魄": "勾魂夺魄<br>Life Drain<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>僵尸特殊攻击力+50%",
-    "无名愤怒": "无名愤怒<br>Unbridled Anger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>步兵+20%生命值",
-    "地狱火": "地狱火<br>Inferno<br>焚烧指定区域",
-    "天火": "天火<br>Heavenly Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>40  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>军械库科技无需食物或木材",
-    "马镫": "马镫<br>Stirrup<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>骑兵生命值+25%",
-    "古代驱逐舰": "古代驱逐舰<br>Ancient Destroyer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>船只+15%移动速度",
-    "大洪水": "大洪水<br>Great Flood<br>在指定区域降下大洪水，席卷一切",
-    "龙鳞": "龙鳞<br>Dragon Scales<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>人类部队和英雄的近战脆弱率-10%",
-    "东海": "东海<br>East Sea<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>船只便宜20%",
-    "哪吒之败": "哪吒之败<br>Nezha’s Defeat<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>青龙特殊攻击力+50%",
-    "箭雨": "箭雨<br>Barrage<br>召唤弹幕，在10半径范围内造成多次70点近战伤害和15点攻城伤害",
-    "仙药": "仙药<br>Elixir of Immortality<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>仙人每秒恢复2生命值",
-    "后羿弓": "后羿弓<br>Houyi's Bow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>诸葛弩和骑射手+10%攻击力",
-    "玉兔": "玉兔<br>Jade Rabbit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>225  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>人类部队和英雄+10%移动速度",
-    "间歇泉": "间歇泉<br>Geyser<br>召唤持续45秒的间歇泉，每5秒喷发1次，对人类、神话单位部队造成10点近战伤害",
-    "河神": "河神<br>Lord of the River<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>火焰帆船生命值+20%",
-    "夯土": "夯土<br>Rammed Earth<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35 <br>建筑物+10%生命值，近战脆弱率-10%",
-    "祭品": "祭品<br>Sacrifices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150   <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>每分钟获得6恩惠",
-    "地龙": "地龙<br>Earth Dragon<br>召唤一只持续90秒的地龙",
-    "蟠桃": "蟠桃<br>Golden Peaches<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>城堡部队+25%生命值",
-    "天宫": "天宫<br>Celestial Palace<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>城堡+20%生命值，-20%训练时间",
-    "虎魂": "虎魂<br>Tiger Spirit<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30 <br>白虎+20%生命值和移动速度",
-
-
     "繁荣": "繁荣<br>Prosperity<br>选中任意位置，让你所有的村民和贸易商队更快地采集黄金",
     "尼罗河洪水": "尼罗河洪水<br>Flood of the Nile<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>8 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>每秒自动产生1食物",
 
     "雨": "雨<br>Rain<br>选中任意位置，让地图上的所有村民更快地从农田采集资源。你的村民采集的速度最快",
     "犀牛皮": "犀牛皮<br>Skin of the Rhino<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15 <br>劳工近战脆弱率和远程脆弱率-25%",
 
-
     "全视": "全视<br>Vision<br>选中要暂时显示的地图区域",
     "千里眼": "千里眼<br>Clairvoyance<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>获得额外施放全视神力的次数，且不再需要消耗恩惠，冷却时间-50%",
-
 
     "大狩猎": "大狩猎<br>Great Hunt<br>选中一群野生动物，大幅增加它们的数量。如果没有野生动物，奥丁会召唤出少量动物。每个时代都会变得更强",
     "狂暴": "狂暴<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>狂战士每失去1%生命值，攻击力和移动速度+0.25%",
@@ -61,10 +14,8 @@ let ayanami = {
     "间谍": "间谍<br>Spy<br>获得所选敌方单位的视线",
     "森林之眼": "森林之眼<br>Eyes in the Forest<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>2  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25 <br>单位可缓慢获得视野内其他自然生物的视野",
 
-
     "矮人矿山": "矮人矿山<br>Dwarven Mine<br>召唤一座矿山，负责采矿的村民会采集黄金。如果在后面几个时代召唤，这座神奇的矿山会蕴含更多黄金",
     "野猪刺矛": "野猪刺矛<br>Pig Sticker<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>1  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>村民对动物造成5倍伤害，狩猎采集效率+20%",
-
 
     "闪电": "闪电<br>Bolt<br>一道从天而降的闪电可以击倒任何一个军事单位",
     "奥林匹亚世家": "奥林匹亚世家<br>Olympian Parentage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>英雄生命值+25%，训练时间-50%",
@@ -622,7 +573,7 @@ let ayanami = {
 
 
     "桃花源": "桃花源<br>The Peach Blossom Spring:<br>可以由村民进行收获。其资源采集的速度非常快，但如果有村民从中采集资源的话，储备就会停止增加",
-    "阴阳": "阴阳<br>Yin and Yang<br>伏羲可赐予两种互相交替生效的加成，每隔 4 分钟交替一次：<br>• 阴：农民和夸父采集速度 +10%<br>• 阳：人类士兵和攻城武器伤害 +10%",
+    "阴阳": "阴阳<br>Yin and Yang<br>伏羲可赐予两种互相交替生效的加成，每隔 4 分钟交替一次：<br>• 阴：农民和夸父采集速度 +10%<br>• 阳：人类和攻城器伤害 +10%",
     "天界武器": "天界武器<br>Celestial Weapons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄所有攻击造成 +1神圣伤害，圣贤、哪吒、姜子牙、杨戬额外增加1/2/3/4",
     "太极": "太极<br>Tai Chi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄训练时间-25%，远程和近战脆弱率-10%",
 
