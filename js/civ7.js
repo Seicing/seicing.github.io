@@ -335,7 +335,7 @@ let ayanami = {
     "巴约挂毯": "巴约挂毯<br>Bayeux Tapestry<br>并非由你创建的定居点+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
 
     "阿拉伯帆船": "阿拉伯帆船<br>Dhow<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50/90<br>射程 1<br>近战攻击力 25/30<br>远程攻击力 20/25<br>轰击力 15/20<br>移动力 3<br>视野范围 2<br>阿克苏姆特色海上单位<br>在海岸上+4战斗力<br>拥有1次建立海上贸易路线的能力<br>维护费 : 1/2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "蒲草船": "蒲草船<br>移动力 1<br>视野范围 1<br>阿克苏姆特色贸易船只<br>无法被掠夺<br>+10贸易路线范围",
+    "蒲草船": "蒲草船<br>Tankwa<br>移动力 1<br>视野范围 1<br>阿克苏姆特色贸易船只<br>无法被掠夺<br>+10贸易路线范围",
     "维齐尔": "维齐尔<br>Tjaty<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 3<br>视野范围 1<br>使用次数为1的伟人<br>只能在拥有墓园的城市中生产，随机获得特定的维齐尔<br>每位维齐尔只能获得一次<br>每获得一位维齐尔后，生产费用将有所增加<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "麦迪亚战士": "麦迪亚战士<br>Medjay<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/60/100<br>近战攻击力 20/25/30<br>移动力 2<br>视野范围 2<br>埃及特色步兵单位<br>无维护费用<br>在友方领土中+3战斗力，驻扎在你拥有的定居点中时此加成加倍",
     "重装步兵": "重装步兵<br>Hoplite<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/60/100<br>近战攻击力 20/25/30<br>移动力 2<br>视野范围 2<br>希腊特色步兵单位<br>与另一个重装步兵相邻时+2战斗力<br>维护费 : 0/1/2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
