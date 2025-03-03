@@ -434,7 +434,7 @@ let ayanami = {
     "刹帝利": "刹帝利<br>Kshatriya<br>军事建筑+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "商贸协会": "商贸协会<br>Shreni<br>城市中每有5盈余<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "政事论": "政事论<br>Arthashastra<br>城市中每有5盈余<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
-    "贝壳制陶": "贝壳制陶<br>Shell Tempered Pottery<br>所有建筑从资源获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币相邻加成",
+    "贝壳制陶": "贝壳制陶<br>Shell-Tempered Pottery<br>所有建筑从资源获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币相邻加成",
     "礼物经济": "礼物经济<br>Gift Economy<br>每有一项进口资源，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "阿塔萨": "阿塔萨<br>Atassa<br>远程单位防御时+4战斗力",
     "卡拉": "卡拉<br>Kara<br>生产步兵单位时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
@@ -501,7 +501,7 @@ let ayanami = {
     "五百领主": "五百领主<br>Five Hundred Lords<br>朱罗特色城区，建造方法是将印度公会和印度商会放置在同一个区块中。+5陆地贸易路线范围，+15海上贸易路线范围",
     "普拉": "普拉<br>Pura<br>满者伯夷特色城区，建造方法是将双柱门和梅鲁放置在同一个区块中。建成后获得1件遗物",
     "玛他": "玛他<br>Matha<br>孔雀特色城区。建造方法是将达兰萨拉和精舍放置在同一个区块中。此定居点+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
-    "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
+    "墓园": "墓园<br>Necropolis<br>埃及特色城区。建造方法是将马斯塔巴和祭葬殿放置在同一个区块中。此城市中建成任意奇观时，获得100<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币（标准速度下）",
     "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
     "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
     "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
@@ -513,9 +513,9 @@ let ayanami = {
 
 
 
-    "议事火堆": "议事火堆<br>Mawaskawe Skote<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。每与一处资源相邻，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'width='15px'>金币<br>必须放置在植被地形上，不能与另一个议事火堆相邻<br>肖尼特色改良设施，无时代限制<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
-    "药师": "药师<br>Hoceepkileni<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>移动力 2<br>视野范围 2<br>肖尼特色传教士。+1移动力，进入河流不会耗尽移动力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
-    "基斯波科战士": "基斯波科战士<br>Kispoko Nena’to<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>肖尼特色步兵单位，每有一种特色帝国资源，便+1战斗力<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "议事火堆": "议事火堆<br>Mawaskawe Skote<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>90<br>基础产量：+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。每与一处资源相邻，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'width='15px'>金币<br>必须放置在植被地形上，不能与另一个议事火堆相邻<br>肖尼特色改良设施，无时代限制",
+    "药师": "药师<br>Hoceepkileni<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>150<br>移动力 5<br>视野范围 1<br>肖尼特色传教士。+1移动力，进入河流不会耗尽移动力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "基斯波科战士": "基斯波科战士<br>Kispoko Nena’to<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>130/170/220<br>近战攻击力 35/40/45<br>移动力 2<br>视野范围 2<br>肖尼特色步兵单位，每有一种特色帝国资源，便+1战斗力<br>维护费 : 2/3/4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "面包舞": "面包舞<br>Bread Dance<br>所有农业城镇+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，渔业城镇+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物",
     "卡考菲-帕夫科塔维塔": "卡考菲-帕夫科塔维塔<br>Kakawfe Pafkotaweta<br>此时代中每次风暴、洪水或火山喷发带来肥沃度时，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值、+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币。改良设施、建筑和市区区块不会被风暴掠夺",
     "赫利希勒纳韦维佩": "赫利希勒纳韦维佩<br>Helikhilenawewipe<br>发起并推进“结交独立势力”项目时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用",
