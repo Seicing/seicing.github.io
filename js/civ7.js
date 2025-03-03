@@ -513,6 +513,17 @@ let ayanami = {
 
 
 
+    "议事火堆": "议事火堆<br>Mawaskawe Skote<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。每与一处资源相邻，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'width='15px'>金币<br>必须放置在植被地形上，不能与另一个议事火堆相邻<br>肖尼特色改良设施，无时代限制<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
+    "药师": "药师<br>Hoceepkileni<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>移动力 2<br>视野范围 2<br>肖尼特色传教士。+1移动力，进入河流不会耗尽移动力<br>维护费 : 0<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "基斯波科战士": "基斯波科战士<br>Kispoko Nena’to<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色单位】<br>近战攻击力 【特色单位】<br>移动力 2<br>视野范围 2<br>肖尼特色步兵单位，每有一种特色帝国资源，便+1战斗力<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+    "面包舞": "面包舞<br>Bread Dance<br>所有农业城镇+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，渔业城镇+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物",
+    "卡考菲-帕夫科塔维塔": "卡考菲-帕夫科塔维塔<br>Kakawfe Pafkotaweta<br>此时代中每次风暴、洪水或火山喷发带来肥沃度时，+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值、+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币。改良设施、建筑和市区区块不会被风暴掠夺",
+    "赫利希勒纳韦维佩": "赫利希勒纳韦维佩<br>Helikhilenawewipe<br>发起并推进“结交独立势力”项目时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用",
+    "塔克西亚克-耶佩波基": "塔克西亚克-耶佩波基<br>Takesiyake Yepepoki<br>苔原、沙漠和平原地块上的城市+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
+
+
+
+
 
     "【特色政策】": "【特色政策】<br>【英文待补充】<br>【特色政策】",
     "【特色建筑】": "【特色建筑】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【特色建筑】<br>基础产量：【特色建筑】<br>维护费 : 【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【特色单位】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
