@@ -496,8 +496,7 @@ let ayanami = {
     "朝贡王国": "朝贡王国<br>Prathetsarat<br>发起对城邦的外交行动时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用",
 
 
-
-
+    "国营铁路2": "国营铁路<br>Staatseisenbahn<br>普鲁士特色铁路。拥有国营铁路的乡村地块+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
     "乌里玛": "乌里玛<br>Ulema<br>阿拔斯特色城区，建造方法是将伊斯兰学校和清真寺放置在同一个区块中<br>此城市中所有专家提供+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "五百领主": "五百领主<br>Five Hundred Lords<br>朱罗特色城区，建造方法是将印度公会和印度商会放置在同一个区块中。+5陆地贸易路线范围，+15海上贸易路线范围",
     "普拉": "普拉<br>Pura<br>满者伯夷特色城区，建造方法是将双柱门和梅鲁放置在同一个区块中。建成后获得1件遗物",
