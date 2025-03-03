@@ -500,7 +500,7 @@ let ayanami = {
     "乌里玛": "乌里玛<br>Ulema<br>阿拔斯特色城区，建造方法是将伊斯兰学校和清真寺放置在同一个区块中<br>此城市中所有专家提供+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值",
     "五百领主": "五百领主<br>Five Hundred Lords<br>朱罗特色城区，建造方法是将印度公会和印度商会放置在同一个区块中。+5陆地贸易路线范围，+15海上贸易路线范围",
     "普拉": "普拉<br>Pura<br>满者伯夷特色城区，建造方法是将双柱门和梅鲁放置在同一个区块中。建成后获得1件遗物",
-    "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
+    "玛他": "玛他<br>Matha<br>孔雀特色城区。建造方法是将达兰萨拉和精舍放置在同一个区块中。此定居点+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
     "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
     "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
     "特色城区": "特色城区<br>【英文待补充】<br>特色城区",
