@@ -650,19 +650,17 @@ let ayanami = {
     "征召堡垒士兵": "征召堡垒士兵<br>Conscript Baolei Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>堡垒训练时间-20%",
     "长城": "长城<br>Great Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>城墙生命值+100%，视野+2",
 
-
-
     "伏羲加成": "伏羲加成<br>在古典时代解锁哪吒，这位额外的传奇英雄每经过一个时代都会变得更强",
-    "伏羲福地:": "伏羲福地:<br>福地: 福地上的建筑物研究速度加快300%，军营/机械工坊增建成本减少50%",
+    "伏羲福地": "伏羲福地<br>福地: 福地上的建筑物研究速度加快300%，军营/机械工坊增建成本减少50%",
     "伏羲阴": "伏羲阴<br>阴：农民和夸父采集速度 +10%",
     "伏羲阳": "伏羲阳<br>阳：人类和攻城器伤害 +10%",
 
     "女娲加成": "女娲加成<br>骑兵生命值 +10%",
-    "女娲福地:": "女娲福地:<br>福地: 福地上的建筑物自动建造，并且建筑物的福地范围增加1",
+    "女娲福地": "女娲福地<br>福地: 福地上的建筑物自动建造，并且建筑物的福地范围增加1",
 
     "神农加成1": "神农加成1<br>古老时代解锁农田，且建造速度极快",
     "神农加成2": "神农加成2<br>犁、灌溉术和治水在各自所属时代可立即免费研究获得",
-    "神农福地:": "神农福地:<br>福地: 福地上的神话单位每秒恢复5生命值",
+    "神农福地": "神农福地<br>福地: 福地上的神话单位每秒恢复5生命值",
 
 }
 
