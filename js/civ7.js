@@ -460,8 +460,11 @@ let ayanami = {
     "潘吉": "潘吉<br>Panji<br>不在首都中的专家提供+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
     "爪哇史颂": "爪哇史颂<br>Negarakertagama<br>维护专家时+33%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物效用",
     "苏巴克水田": "苏巴克水田<br>Subak<br>海水地形+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力",
+
     "泥砖": "泥砖<br>Mud Brick<br>建造金币建筑时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用",
     "伊萨": "伊萨<br>Isa<br>可航行河流上的所有单位+2移动力",
+    "廷巴克图": "廷巴克图<br>Timbuktu<br>如果此城市中至少有1座金币建筑，矿山+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
+
     "征服": "征服<br>Conquista<br>遥远土地上的所有单位+4战斗力",
     "最幸运的庞大舰队": "最幸运的庞大舰队<br>Great And Most Fortunate Navy<br>生产海上单位时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，海上单位维护费用-1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
     "里科山": "里科山<br>Cerro Rico<br>每有1资源+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币",
@@ -470,7 +473,7 @@ let ayanami = {
     "强盗男爵": "强盗男爵<br>Robber Baron<br>每为其分配1资源，定居点便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
     "租借法案": "租借法案<br>Lend Lease<br>每有一条贸易路线，+25<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力",
     "氏族社会": "氏族社会<br>Clan Society<br>6格内每有一个其他友方定居点，定居点+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值",
-    "手鼓": "手鼓<br>Ng Oma<br>单位与湖泊相邻时+6战斗力",
+    "手鼓": "手鼓<br>Ng'oma<br>单位与湖泊相邻时+6战斗力",
     "湖间地区": "湖间地区<br>Interlacustrine<br>所有建筑从湖泊获得相邻加成",
     "帝政风格": "帝政风格<br>Style Empire<br>建造建筑将获得等同于其生产力花费25%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
     "胜利战吼": "胜利战吼<br>Cocorico<br>击败一个敌方单位时，获得等同于其战斗力25%的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值",
