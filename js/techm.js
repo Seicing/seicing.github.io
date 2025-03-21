@@ -103,7 +103,7 @@ let ayanami = {
     "弹道学": "弹道学<br>Ballistics<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>远程部队命中率变成99%",
 
     "重型战船": "重型战船<br>Heavy Warships<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>战船生命值+15%，攻击力+20% ",
-    "精锐战船": "精锐战船<br>Champion Warships<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>战船生命值+20%，攻击力+30%，视野+1",
+    "精锐战船": "精锐战船<br>Champion Warships<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>战船生命值+20%，攻击力+30%，视野+1，攻城船射程+4",
 
 
 
@@ -583,7 +583,7 @@ let ayanami = {
     "雷霆之器": "雷霆之器<br>Lightning Weapons<br>瞄准一个位置，将闪电引导至所有人类士兵的武器和船只上，使他们的攻击有机会击晕敌人",
     "武器大师": "武器大师<br>Master of Weaponry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>戈戟兵近战射程+1，2秒内使骑兵减缓50%的速度",
     "战利品": "战利品<br>Spoils of War<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>获得所摧毁敌方建筑的50%成本资源",
-    "龙之子": "龙之子<br>Son of Loong<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>睚眦生命值+15%，闪电攻击伤害+50",
+    "龙之子": "龙之子<br>Son of Loong<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>睚眦生命值+15%，特殊攻击伤害+20",
     "杀戮之怒": "杀戮之怒<br>Rage of Slaughter<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>睚眦生命值+15%，攻击造成50%的吸血，击杀敌人时在10秒内获得80%吸血效果",
 
     "森林保护": "森林保护<br>Forest Protection<br>选中一座友方建筑，使用句芒的木之力量保护周围的区域，木之力量会缠住敌人，并治疗盟军单位",
@@ -593,14 +593,14 @@ let ayanami = {
     "漩涡之力": "漩涡之力<br>Maelstrom<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>斗舰攻击海军单位时有20%概率生成漩涡，5范围内每秒造成5神圣伤害",
 
     "干旱": "干旱<br>Drought<br>选中一片区域以散播干旱，这会让敌方建筑变得不堪一击，并阻止所有建造和维修",
-    "灼热羽毛": "灼热羽毛<br>Scorching Feathers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>远程士兵启用灼热羽毛特性，每次命中都会让敌人近战减伤率和远程减伤率-1%，持续5秒",
-    "坚如磐石": "坚如磐石<br>Rock Solid<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>神话单位近战脆弱率和远程脆弱率-10%，在静止不动时会逐渐提高到最多-60%近战脆弱率和远程脆弱率",
+    "灼热羽毛": "灼热羽毛<br>Scorching Feathers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>远程士兵启用灼热羽毛特性，每次命中都会让敌人(攻城单位除外)近战减伤率和远程减伤率-1%，持续5秒",
+    "坚如磐石": "坚如磐石<br>Rock Solid<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>神话单位近战脆弱率和远程脆弱率-10%，在静止不动时会逐渐提高到最多-40%近战脆弱率和远程脆弱率",
     "无底之胃": "无底之胃<br>Bottomless Stomach<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>饕餮特殊能力冷却时间-50%",
     "旱船": "旱船<br>Drought Ships<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>捕鱼船在沉没时会造成爆炸，对10范围内造成100神圣伤害，并将命中的对象减伤率-40%，强控5秒",
 
     "洪水滔天": "洪水滔天<br>Great Flood<br>选中一条路径发动滔天洪水，席卷沿途的单位并摧毁建筑",
     "撼天者": "撼天者<br>Shaker of Heaven<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄生命值+30%，对神话单位伤害加成率+100%",
-    "狂风暴雨": "狂风暴雨<br>Tempestuous Storm<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄特殊能力冷却时间-40%，成本-40%",
+    "狂风暴雨": "狂风暴雨<br>Tempestuous Storm<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄特殊能力冷却时间-40%，成本-25%",
     "背水一战": "背水一战<br>Last Stand<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵每损失1%生命值，近战减伤率和远程减伤率+0.3%",
     "涨潮之力": "涨潮之力<br>Rising Tide<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>10<br>青龙造成150/500伤害可以升阶，每升一个阶段攻击间隔时间-25%",
 
@@ -654,7 +654,7 @@ let ayanami = {
     "伏羲阳": "伏羲阳<br>阳 - 人类和攻城器伤害 +10%",
 
     "女娲加成": "女娲加成<br>骑兵生命值 +10%",
-    "女娲福地": "女娲福地<br>福地: 福地上的建筑物自动建造，并且建筑物的福地范围增加1",
+    "女娲福地": "女娲福地<br>福地: 福地上的建筑物自动建造(墙壁和农田除外)，并且建筑物的福地范围增加1",
 
     "神农加成1": "神农加成1<br>古老时代解锁农田，且建造速度极快",
     "神农加成2": "神农加成2<br>犁、灌溉术和治水在各自所属时代可立即免费研究获得",
