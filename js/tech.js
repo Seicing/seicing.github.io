@@ -486,6 +486,58 @@ let ayanami = {
 
 
 
+
+
+    "安全通道": "安全通道<br>Safe Passage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
+    "圣洁": "圣洁<br>Sanctuary<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>额外生成1个朝圣者",
+    "圣殿骑士信条": "圣殿骑士信条<br>Rule of Templars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>附近每有1个重装骑兵，冲锋伤害+2",
+    "锁子甲": "锁子甲<br>Sanctuary<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>轻型骑兵+2护甲",
+    "狂信主义": "狂信主义<br>Fanaticism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
+    "铁夹": "铁夹<br>Iron Clamps<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>使用铁夹强化城墙，使石墙和堡垒受到来自火药部队的伤害-20%",
+    "沙漠要塞": "沙漠要塞<br>Desert Citadels<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒附近的远程部队+15%射程和+1护甲",
+    "财宝塔": "财宝塔<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>堡垒附近的修道院、圣地和朝圣者+20%黄金收入",
+    "巨型投石机炮台": "巨型投石机炮台<br>Trebuchet Emplacement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>275 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>为单个堡垒部署一台巨型投石机炮台",
+
+    "风景保护": "风景保护<br>风景保护：村民采集木材不需要伐木场，开采木头可以获得额外的20%食物",
+    "圣殿骑士影响力": "圣殿骑士影响力<br>圣殿骑士指挥部和堡垒为石墙+25%生命值并加装一个射箭槽",
+    "法兰西王国": "法兰西王国<br>法兰西王国：军事单位生产快15%，减少5%的黄金消耗",
+    "医院骑士团": "医院骑士团<br>医院骑士团：所有平民单位生命值+30%，所有治疗来源效率+30%+20%",
+    "安条克公国": "安条克公国<br>安条克公国：近战单位获得+10%伤害+20%",
+    "热那亚共和国": "热那亚共和国<br>热那亚共和国：朝圣者产生的黄金+30%+20%",
+    "安茹帝国": "安茹帝国<br>安茹帝国：所有堡垒和码头+30%生命值+20%",
+    "卡斯蒂利亚王国": "卡斯蒂利亚王国<br>卡斯蒂利亚王国：接近圣地的单位攻击力+20%，并可以恢复生命值+20%",
+    "条顿骑士团": "条顿骑士团<br>条顿骑士团：所有花费黄金的单位+2近战护甲+20%",
+    "威尼斯共和国": "威尼斯共和国<br>威尼斯共和国：市场买卖率对玩家更加有利+20%",
+    "波兰王国": "波兰王国<br>波兰王国：所有骑兵部队+10%生命值，+50%冲锋伤害+20%",
+
+
+    "镰钩枪": "镰钩枪<br>镰钩枪：长枪兵攻击减少敌人2护甲",
+
+    "集中射击": "集中射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁义勇兵的集中射击能力",
+
+    "软垫护甲": "软垫护甲<br>Padded Jack<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>义勇兵和长矛兵装备软垫护甲，+3近战防御力",
+
+    "密集土地开发": "密集土地开发<br>Condensed Land Practices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>庄园+200生命值，+3建造上限",
+    "开放原野系统": "开放原野系统<br>Open Field System<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>庄园+300生命值，+3建造上限",
+    "免役税": "免役税<br>Scutage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>庄园每分钟生产40黄金",
+
+    "召集贵族": "召集贵族<br>Muster the Nobles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>召集2个半枪骑兵，每拥有1个庄园可额外召集1个",
+    "郡稅": "郡稅<br>Shire Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>召集8个义勇兵，每拥有1个庄园可额外召集1个",
+    "精确军队计划": "精确军队计划<br>Exact Militia Program<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>每个庄园召集1个半枪骑兵、1个伯爵卫队、1个义勇兵",
+
+
+    "山丘训练": "山丘训练<br>Hill Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>霍比拉游骑兵在崎岖山地进行训练，+150%冲锋伤害，生产速度+100%",
+
+    "埃西斯领圈": "埃西斯领圈<br>Collar of Esses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>骑士和半枪骑兵+6对重甲部队额外伤害",
+
+    "战狼号巨型投石机": "战狼号巨型投石机<br>Warwolf Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机升级为战狼号巨型投石机，+2射程，生命值+50%",
+
+    "勃艮地进口": "勃艮地进口<br>Burgundian Imports<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>进口勃艮地火枪，火枪兵可以在城堡时代训练，并且便宜25%",
+    "军事战术训练": "军事战术训练<br>Military Tactics Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>军队作战效率变得更高，额外伤害+20%",
+    "王冠之船": "王冠之船<br>Ship of the Crown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>大帆船变得更加强大，+20%生命值、射程和攻击力",
+
+
+
     "日本大名城镇中心1": "日本大名城镇中心1<br>大名府邸：村民在大名府邸附近耕作效率+20%",
     "日本额外石头": "日本额外石头<br>银矿开采：村民开采金矿时额外产出20%石头",
     "日本大名城镇中心2": "日本大名城镇中心2<br>大名宫殿：村民在大名宫殿附近耕作效率+40%",
