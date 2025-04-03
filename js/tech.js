@@ -510,6 +510,8 @@ let ayanami = {
     "条顿骑士团": "条顿骑士团<br>条顿骑士团：所有花费黄金的单位+2近战护甲+20%",
     "威尼斯共和国": "威尼斯共和国<br>威尼斯共和国：市场买卖率对玩家更加有利+20%",
     "波兰王国": "波兰王国<br>波兰王国：所有骑兵部队+10%生命值，+50%冲锋伤害+20%",
+    "兰开斯特伯克郡": "兰开斯特伯克郡<br>伯克郡宫殿：家族团结能力提高上限值从4增加到6",
+    "兰开斯特荣誉": "兰开斯特荣誉<br>兰开斯特荣誉：兰开斯特领主附近的军事单位+5%生命值(最大叠加4个，+20%生命值)",
 
 
     "镰钩枪": "镰钩枪<br>镰钩枪：长枪兵攻击减少敌人2护甲",
@@ -524,7 +526,7 @@ let ayanami = {
     "免役税": "免役税<br>Scutage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>庄园每分钟生产40黄金",
 
     "召集贵族": "召集贵族<br>Muster the Nobles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>召集2个半枪骑兵，每拥有1个庄园可额外召集1个",
-    "郡稅": "郡稅<br>Shire Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>召集8个义勇兵，每拥有1个庄园可额外召集1个",
+    "郡税": "郡税<br>Shire Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>召集8个义勇兵，每拥有1个庄园可额外召集1个",
     "精确军队计划": "精确军队计划<br>Exact Militia Program<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>每个庄园召集1个半枪骑兵、1个伯爵卫队、1个义勇兵",
 
 
