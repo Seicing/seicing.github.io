@@ -248,8 +248,18 @@
 
 
 <div>
+
+
     <div id="techno"></div>
-    “可作为城堡使用，其生命值 +50%。影响范围内的所有建筑受到的伤害 -33%”
+
+
+
+    <div id="hreText2" style="text-align: left;display:block ">
+        “可作为城堡使用，其生命值 +50%。影响范围内的所有建筑受到的伤害 -25%，每个城堡可以训练8个黑骑兵，而不是5个”
+    </div>
+    <div id="otdText2" style="text-align: left;display:block ">
+        “可作为城堡使用，其生命值 +50%。影响范围内的所有建筑受到的伤害 -33%”
+    </div>
     <br>
     <div style='text-align:right'>——游戏内说明</div>
 </div>
@@ -408,6 +418,7 @@
 
     <div id="hreText1" style="text-align: left;display:block ">
         <span class="埃尔茨巴赫宫殿效果"></span><br>
+        <span class="埃尔茨巴赫宫殿黑骑兵"></span><br>
         <span class="神罗紧急修复"></span><br>
         <span class="神罗便宜炮台"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -494,6 +505,13 @@
     </ul>
 
 
+    <b>第10赛季</b>
+    <ul>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png"
+                width="25px">神圣罗马帝国：第十赛季补丁后，埃尔茨巴赫宫殿的伤害减少影响力效率从33%下调到25%，现在可为所有城堡提供额外的8个黑骑兵上限</li>
+    </ul>
+
+
 </div>
 <br><br><br>
 
@@ -557,6 +575,8 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
                     
+<a id="hreButton2" href="javascript:void(0);" onclick="tipsg('hreText2','hreButton2','2')" style="opacity:0"></a>
+<a id="otdButton2" href="javascript:void(0);" onclick="tipsg('otdText2','otdButton2','2')" style="opacity:0"></a>
 <a href="https://seicing.com/html/aoe2/index-aoe4units.html" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -579,12 +599,15 @@
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
+        cleargasek(2);
         a = a.substring(0, a.length - 1);
         b = b.substring(0, b.length - 1);
         document.getElementById(a + '0').style.display = "block";
         document.getElementById(b + '0').style.opacity = 1;
         document.getElementById(a + '1').style.display = "block";
         document.getElementById(b + '1').style.opacity = 1;
+        document.getElementById(a + '2').style.display = "block";
+        document.getElementById(b + '2').style.opacity = 1;
         var aaposbo1 = document.querySelector("#blacktou1");
         var aaposbo2 = document.querySelector("#blacktou2");
         var aaposbo3 = a.substring(0, 3);
@@ -621,8 +644,10 @@
         var tipsp1 = getQueryVariable("civ")
         var tipsp2 = tipsp1 + "Button0";
         var tipsp3 = tipsp1 + "Button1";
+        var tipsp3 = tipsp1 + "Button2";
         document.getElementById(tipsp2).click();
         document.getElementById(tipsp3).click();
+        document.getElementById(tipsp4).click();
     }
 
 </script>
