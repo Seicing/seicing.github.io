@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("eng").style.opacity = "1";
+            document.getElementById("hol").style.opacity = "1";
         })
     })
 </script>
@@ -126,9 +127,13 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="engButton0" href="javascript:void(0);" onclick="tipsg('engText0','engButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
-
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="holText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
     </div>
 
@@ -148,7 +153,20 @@
     <a id="engButton1" href="javascript:void(0);" onclick="tipsg('engText1','engButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
 
+    <a id="holButton1" href="javascript:void(0);" onclick="tipsg('holText1','holButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
+
     <div id="engText1" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="holText1" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -266,8 +284,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['engText',]
-    var listButton = ['engButton',]
+    var listText = ['engText', 'kcrText',]
+    var listButton = ['engButton', 'kcrButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);

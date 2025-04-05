@@ -15,6 +15,7 @@
             document.getElementById("techno").style.display = "block";
             document.getElementById("fre").style.opacity = "1";
             document.getElementById("jda").style.opacity = "1";
+            document.getElementById("kcr").style.opacity = "1";
         })
     })
 </script>
@@ -129,12 +130,16 @@
             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
     <a id="jdaButton0" href="javascript:void(0);" onclick="tipsg('jdaText0','jdaButton0','0')" style="opacity:0.3"><img
             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
-
+    <a id="kcrButton0" href="javascript:void(0);" onclick="tipsg('kcrText0','kcrButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></a>
 
     <div id="freText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
     </div>
     <div id="jdaText0" style="text-align: left;display:block ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="holText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
     </div>
 
@@ -154,6 +159,8 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/fre.png" width="25px"></a>
     <a id="jdaButton1" href="javascript:void(0);" onclick="tipsg('jdaText1','jdaButton1','1')" style="opacity:0.3"><img
             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
+    <a id="kcrButton1" href="javascript:void(0);" onclick="tipsg('kcrText1','kcrButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></a>
 
     <div id="freText1" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -175,7 +182,16 @@
             </tr>
         </table>
     </div>
-
+    <div id="holText1" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -211,14 +227,10 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
     <ul>
-
         <li>圣母院的原型是巴黎圣母院(Notre-Dame de Paris)，位于法国巴黎西堤岛的天主教教堂，天主教巴黎总教区的主教座堂，约建造于1163年到1250年间，属于哥特式建筑，在2019年遭到烧毁
         </li>
-
     </ul>
-
     <table id="empire" frame="box">
         <tr>
 
@@ -238,8 +250,6 @@
             </td>
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 圣母院
             </td>
@@ -250,9 +260,6 @@
                 圣母院渲染图
             </td>
         </tr>
-
-
-
     </table>
 </div>
 
@@ -289,8 +296,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['freText', 'jdaText']
-    var listButton = ['freButton', 'jdaButton']
+    var listText = ['freText', 'jdaText', 'kcrText',]
+    var listButton = ['freButton', 'jdaButton', 'kcrButton',]
 
 
     function tipsg(a, b, c) {

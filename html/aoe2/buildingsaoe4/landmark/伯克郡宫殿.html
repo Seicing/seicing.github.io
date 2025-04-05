@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("eng").style.opacity = "1";
+            document.getElementById("hol").style.opacity = "1";
         })
     })
 </script>
@@ -241,7 +242,15 @@
 
 <div>
     <div id="techno"></div>
-    “作为一个城堡使用，拥有增加的生命值和强大的燃烧箭。所有武器都有 14.5 格的射程”
+
+    <div id="engText2" style="text-align: left;display:block ">
+        “作为一个城堡使用，拥有增加的生命值和强大的燃烧箭。所有武器都有 14.5 格的射程”
+    </div>
+    <div id="holText2" style="text-align: left;display:block ">
+        “作为一个城堡使用，拥有增加的生命值和强大的燃烧箭。所有武器都有 14.5 格的射程，众志成城提供的最大伤害+6.0”
+    </div>
+
+
     <br>
     <div style='text-align:right'>——游戏内说明</div>
 </div>
@@ -270,6 +279,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="engButton0" href="javascript:void(0);" onclick="tipsg('engText0','engButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
 
     <div id="engText0" style="text-align: left;display:block ">
@@ -317,6 +328,42 @@
 
     </div>
 
+    <div id="holText0" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮炮台.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">扭力弩炮炮台</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="扭力弩炮炮台成本"></span></td>
+                <td style="text-align: left"><span class="扭力弩炮炮台"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/加农炮炮台.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">加农炮炮台</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="加农炮炮台成本"></span></td>
+                <td style="text-align: left"><span class="加农炮炮台"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/沸油.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">沸油</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="沸油成本"></span></td>
+                <td style="text-align: left"><span class="沸油"></span></td>
+            </tr>
+        </table>
+
+    </div>
 
 </div>
 
@@ -332,6 +379,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="engButton1" href="javascript:void(0);" onclick="tipsg('engText1','engButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
+    <a id="holButton1" href="javascript:void(0);" onclick="tipsg('holText1','holButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="engText1" style="text-align: left;display:block ">
         <span class="英国城堡动员兵"></span><br>
@@ -355,6 +404,26 @@
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="holText1" style="text-align: left;display:block ">
+        <span class="兰开斯特城堡生产"></span><br>
+        <span class="国王学院降价"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
                 </td>
             </tr>
         </table>
@@ -394,14 +463,11 @@
         </li>
         <li>6.1.130补丁后，火炮炮台成本从75金300石上调到了125金375石</li>
     </ul>
-
     <b>第5赛季</b>
     <ul>
         <li>7.1.113补丁后，加农炮台射程从10下调到了9.5，沸油射程从2下调到了1.5，沸油伤害区域从2.5*1.5的矩形变成半径为1的圆形</li>
         <li>8-2-218补丁后，沸油攻击半径从1格上调到1.1格</li>
     </ul>
-
-
     <b>第7赛季</b>
     <ul>
         <li>10.1.48补丁后，伯克郡宫殿武器射程奖励从15格下调到14.5格</li>
@@ -425,18 +491,13 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
     <ul>
-
         <li>伯克郡宫殿的原型是温莎城堡(Windsor
             Castle)，位于英国英格兰东南部区域伯克郡温莎-梅登黑德皇家自治市镇温莎，目前是英国王室温莎王朝的家族城堡，也是现今世界上有人居住的城堡中最大的一个，温莎城堡最初是由威廉一世所建造的，他统治的时间从1066年开始直到1087年逝世为止，此后在一千多年的修建中逐渐变成现在的外观
         </li>
         <li>伯克郡宫殿的入口部分参考了约克城堡(York Castle)
         </li>
-
-
     </ul>
-
     <table id="empire" frame="box">
         <tr>
 
@@ -458,8 +519,6 @@
             </td>
         </tr>
         <tr>
-
-
             <td style="background-color:#F5F8FA;text-align: center">
                 伯克郡宫殿
             </td>
@@ -473,9 +532,6 @@
                 伯克郡宫殿概念图
             </td>
         </tr>
-
-
-
     </table>
 </div>
 
@@ -496,6 +552,8 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
                     
+<a id="engButton2" href="javascript:void(0);" onclick="tipsg('engText2','engButton2','2')" style="opacity:0"></a>
+<a id="holButton2" href="javascript:void(0);" onclick="tipsg('holText2','holButton2','2')" style="opacity:0"></a>
 <a href="https://seicing.com/html/aoe2/index-aoe4units.html" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -512,18 +570,21 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['engText',]
-    var listButton = ['engButton',]
+    var listText = ['engText', 'holText',]
+    var listButton = ['engButton', 'holButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
+        cleargasek(2);
         a = a.substring(0, a.length - 1);
         b = b.substring(0, b.length - 1);
         document.getElementById(a + '0').style.display = "block";
         document.getElementById(b + '0').style.opacity = 1;
         document.getElementById(a + '1').style.display = "block";
         document.getElementById(b + '1').style.opacity = 1;
+        document.getElementById(a + '2').style.display = "block";
+        document.getElementById(b + '2').style.opacity = 1;
         var aaposbo1 = document.querySelector("#blacktou1");
         var aaposbo2 = document.querySelector("#blacktou2");
         var aaposbo3 = a.substring(0, 3);
@@ -560,8 +621,10 @@
         var tipsp1 = getQueryVariable("civ")
         var tipsp2 = tipsp1 + "Button0";
         var tipsp3 = tipsp1 + "Button1";
+        var tipsp3 = tipsp1 + "Button2";
         document.getElementById(tipsp2).click();
         document.getElementById(tipsp3).click();
+        document.getElementById(tipsp4).click();
     }
 
 </script>
