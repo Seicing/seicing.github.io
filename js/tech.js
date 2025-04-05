@@ -527,6 +527,9 @@ let ayanami = {
     "兰开斯特城堡射箭槽": "兰开斯特城堡射箭槽<br>兰开斯特城堡：兰开斯特城堡附近的庄园解锁射箭槽",
     "兰开斯特城堡庄园生命值": "兰开斯特城堡庄园生命值<br>兰开斯特城堡：庄园生命值 +500",
     "国王学院降价": "国王学院降价<br>国王学院：所有科技的研究成本-15%",
+    "要塞藏宝塔": "要塞藏宝塔<br>要塞：研发沙漠城堡后，要塞附近的修道院、圣地和朝圣者收入+20%",
+    "要塞射程加成": "要塞射程加成<br>要塞：要塞附近的远程部队+15%射程",
+    "要塞沙漠城堡": "要塞沙漠城堡<br>要塞：研发沙漠城堡后，要塞附近的部队+1护甲",
 
     "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
     "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",
