@@ -506,7 +506,54 @@ let ayanami = {
     "配重式防御": "配重式防御<br>Counterweight Defenses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>所有巨型投石机武器获得+1额外弹药",
     "圣殿骑士舰队": "圣殿骑士舰队<br>Crusader Fleets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>扭力弩炮船+1.5射程，+25%伤害",
 
-    "景观保护": "景观保护<br>景观保护：村民采集木材不需要伐木场，开采木头可以获得额外的20%食物",
+    "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
+    "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",
+    "投掷匕首操练": "投掷匕首操练<br>Throwing Dagger Drills<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>425 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>伯爵护卫同时投掷2把匕首，匕首会造成小值范围伤害，但是命中率会降低",
+    "衬垫外衣": "衬垫外衣<br>Padded Jack<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>英皇侍卫和长矛兵装备衬垫外衣，+3近战护甲",
+    "土地集中管理制": "土地集中管理制<br>Condensed Land Practices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>庄园+200生命值，+3建造上限",
+    "敞田制": "敞田制<br>Open Field System<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>庄园+300生命值，+3建造上限",
+    "免役税": "免役税<br>Scutage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>庄园每分钟生产40黄金",
+    "召集贵族": "召集贵族<br>Muster the Nobles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>召集2个短矛骑兵，每拥有1个庄园可额外召集1个",
+    "郡税": "郡税<br>Shire Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>召集8个英皇侍卫，每拥有1个庄园可额外召集1个",
+    "完美的民兵计划": "完美的民兵计划<br>Exact Militia Program<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>每个庄园召集1个短矛骑兵、1个伯爵护卫、1个英皇侍卫",
+    "山地训练": "山地训练<br>Hill Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>骑马步兵在崎岖山地进行训练，+150%冲锋伤害，生产速度+100%",
+    "埃索斯的项圈": "埃索斯的项圈<br>Collar of Esses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>骑士和短矛骑兵+6对重甲部队额外伤害",
+    "战狼号巨型投石机": "战狼号巨型投石机<br>Warwolf Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机升级为战狼号巨型投石机，+2射程，生命值+50%",
+    "勃艮地进口货物": "勃艮地进口货物<br>Burgundian Imports<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>进口勃艮地火枪，火枪兵可以在城堡时代训练，并且便宜25%",
+    "军事战术训练": "军事战术训练<br>Military Tactics Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>军队作战效率变得更高，额外伤害+20%",
+    "王冠舰船": "王冠舰船<br>Ship of the Crown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>大帆船变得更加强大，+20%生命值、射程和攻击力",
+    "伯爵侍从": "伯爵侍从<br>Earl's Retinue<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>生产6个短矛骑兵和2个骑马步兵",
+    "驻扎命令": "驻扎命令<br>Garrison Command<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>生产8个长矛兵和1个伯爵护卫",
+    "火药分遣队": "火药分遣队<br>Earl's Retinue<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>850 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65<br>生产2个风琴炮和1个长管炮",
+
+    "雇佣长弓兵": "雇佣 5个长弓兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>520 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
+    "雇佣国土佣仆": "雇佣 3个国土佣仆<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣射击军": "雇佣 3个射击军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>720 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90",
+
+    "雇佣怯薛骑兵": "雇佣 2个怯薛骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>66",
+    "雇佣古拉姆": "雇佣 3个古拉姆<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
+    "雇佣箭塔战象": "雇佣 1个箭塔象<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>130",
+
+    "雇佣掷枪兵": "雇佣 4个掷枪兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣骆驼骑兵": "雇佣 2个骆驼骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>73",
+    "雇佣掷弹兵": "雇佣 2个掷弹兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
+
+    "雇佣加农炮": "雇佣 1个皇家加农炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣一窝蜂": "雇佣 1个一窝蜂<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
+    "雇佣回回炮": "雇佣 1个回回炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>63",
+    "战士之路": "战士之路<br>Path of the Warrior<br>贞德选择成为一个战士，获得神圣愤怒能力",
+    "射手之路": "射手之路<br>Path of the Archer<br>贞德选择成为一个战士，获得神圣之弓能力",
+    "骑兵同伴": "骑兵同伴<br>Rider Companions<br>解锁贞德的“骑兵就绪！”能力",
+    "冠军剑士同伴": "冠军剑士同伴<br>Champion Companions<br>解锁贞德的“伙计们，拿起武器！”能力",
+    "火药君主": "火药君主<br>Gunpowder Monarch<br>解锁贞德的“勇气鼓舞”能力，同时使得等级3的动员技能附带动员1架加农炮",
+    "战地指挥官": "战地指挥官<br>Field Commander<br>解锁贞德的“天堂之力”能力，同时使得等级3的动员技能的数量提高到7个",
+
+
+
+
+
+
+    "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/景观保护.png' width='20px'>景观保护：村民采集木材不需要伐木场，开采木头可以获得额外的20%食物",
     "圣殿骑士影响力": "圣殿骑士影响力<br>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
     "圣殿要塞": "圣殿要塞<br>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%",
     "法兰西王国": "法兰西王国<br>法兰西王国：军事单位生产快15%，减少5%的黄金消耗",
@@ -531,30 +578,9 @@ let ayanami = {
     "要塞射程加成": "要塞射程加成<br>要塞：要塞附近的远程部队+15%射程",
     "要塞沙漠城堡": "要塞沙漠城堡<br>要塞：研发沙漠城堡后，要塞附近的部队+1护甲",
 
-    "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
-    "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",
-    "投掷匕首操练": "投掷匕首操练<br>Throwing Dagger Drills<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>425 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>伯爵护卫同时投掷2把匕首，匕首会造成小值范围伤害，但是命中率会降低",
-    "衬垫外衣": "衬垫外衣<br>Padded Jack<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>英皇侍卫和长矛兵装备衬垫外衣，+3近战护甲",
-    "土地集中管理制": "土地集中管理制<br>Condensed Land Practices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>庄园+200生命值，+3建造上限",
-    "敞田制": "敞田制<br>Open Field System<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>庄园+300生命值，+3建造上限",
-    "免役税": "免役税<br>Scutage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>庄园每分钟生产40黄金",
-    "召集贵族": "召集贵族<br>Muster the Nobles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>召集2个短矛骑兵，每拥有1个庄园可额外召集1个",
-    "郡税": "郡税<br>Shire Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>召集8个英皇侍卫，每拥有1个庄园可额外召集1个",
-    "完美的民兵计划": "完美的民兵计划<br>Exact Militia Program<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>每个庄园召集1个短矛骑兵、1个伯爵护卫、1个英皇侍卫",
-    "山地训练": "山地训练<br>Hill Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>骑马步兵在崎岖山地进行训练，+150%冲锋伤害，生产速度+100%",
-    "埃索斯的项圈": "埃索斯的项圈<br>Collar of Esses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>骑士和短矛骑兵+6对重甲部队额外伤害",
-    "战狼号巨型投石机": "战狼号巨型投石机<br>Warwolf Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机升级为战狼号巨型投石机，+2射程，生命值+50%",
-    "勃艮地进口货物": "勃艮地进口货物<br>Burgundian Imports<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>进口勃艮地火枪，火枪兵可以在城堡时代训练，并且便宜25%",
-    "军事战术训练": "军事战术训练<br>Military Tactics Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>军队作战效率变得更高，额外伤害+20%",
-    "王冠舰船": "王冠舰船<br>Ship of the Crown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>大帆船变得更加强大，+20%生命值、射程和攻击力",
-    "伯爵侍从": "伯爵侍从<br>Earl's Retinue<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>生产6个短矛骑兵和2个骑马步兵",
-    "驻扎命令": "驻扎命令<br>Garrison Command<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>生产8个长矛兵和1个伯爵护卫",
-    "火药分遣队": "火药分遣队<br>Earl's Retinue<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>850 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65<br>生产2个风琴炮和1个长管炮",
 
-    "日本大名城镇中心1": "日本大名城镇中心1<br>大名府邸：村民在大名府邸附近耕作效率+20%",
+    "日本大名城镇中心": "日本大名城镇中心<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名光环.png' width='20px'>大名光环：村民在大名府邸/大名宫殿/幕府城附近耕作效率+20%/+40%/+60%",
     "日本额外石头": "日本额外石头<br>银矿开采：村民开采金矿时额外产出20%石头",
-    "日本大名城镇中心2": "日本大名城镇中心2<br>大名宫殿：村民在大名宫殿附近耕作效率+40%",
-    "日本大名城镇中心3": "日本大名城镇中心3<br>幕府城：村民在幕府城附近耕作效率+60%",
     "刀剑旗本武士光环": "刀剑旗本武士光环<br>刀剑旗本武士：6格光环范围内，近战步兵伤害+15%",
     "骑马旗本武士光环": "骑马旗本武士光环<br>骑马旗本武士：6格光环范围内，骑兵伤害+15%",
     "弓箭旗本武士光环": "弓箭旗本武士光环<br>弓箭旗本武士：6格光环范围内，远程步兵伤害+15%",
@@ -584,21 +610,8 @@ let ayanami = {
     "拜占庭水池辩证法": "拜占庭水池辩证法<br>水池 - 辩证法：根据水位，水池影响力范围内增加30%/60%/90%/120%/150%研究效率",
     "拜占庭水池保护": "拜占庭水池保护<br>水池 - 保护：根据水位，水池影响力范围内建筑物减少5%/10%/15%/20%/25%受到的伤害",
 
-    "雇佣长弓兵": "雇佣 5个长弓兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>520 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
-    "雇佣国土佣仆": "雇佣 3个国土佣仆<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
-    "雇佣射击军": "雇佣 3个射击军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>720 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90",
 
-    "雇佣怯薛骑兵": "雇佣 2个怯薛骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>66",
-    "雇佣古拉姆": "雇佣 3个古拉姆<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
-    "雇佣箭塔战象": "雇佣 1个箭塔象<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>130",
 
-    "雇佣掷枪兵": "雇佣 4个掷枪兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
-    "雇佣骆驼骑兵": "雇佣 2个骆驼骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>73",
-    "雇佣掷弹兵": "雇佣 2个掷弹兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
-
-    "雇佣加农炮": "雇佣 1个皇家加农炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
-    "雇佣一窝蜂": "雇佣 1个一窝蜂<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
-    "雇佣回回炮": "雇佣 1个回回炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>63",
 
     "贞德建造效率": "贞德建造效率<br>建造王国：贞德传授附近村民技术，使得他们建造速度+33%",
     "贞德建造效率2": "贞德建造效率2<br>建筑天才：贞德建造建筑物的速度+33%",
@@ -608,14 +621,6 @@ let ayanami = {
     "贞德勇气鼓舞": "贞德勇气鼓舞<br>勇气鼓舞：贞德20秒内提高4格范围内所有部队35%攻击速度",
     "贞德天堂之力": "贞德天堂之力<br>天堂之力：被贞德选中的勇士+300生命值，+4护甲，+300%伤害",
 
-
-
-    "战士之路": "战士之路<br>Path of the Warrior<br>贞德选择成为一个战士，获得神圣愤怒能力",
-    "射手之路": "射手之路<br>Path of the Archer<br>贞德选择成为一个战士，获得神圣之弓能力",
-    "骑兵同伴": "骑兵同伴<br>Rider Companions<br>解锁贞德的“骑兵就绪！”能力",
-    "冠军剑士同伴": "冠军剑士同伴<br>Champion Companions<br>解锁贞德的“伙计们，拿起武器！”能力",
-    "火药君主": "火药君主<br>Gunpowder Monarch<br>解锁贞德的“勇气鼓舞”能力，同时使得等级3的动员技能附带动员1架加农炮",
-    "战地指挥官": "战地指挥官<br>Field Commander<br>解锁贞德的“天堂之力”能力，同时使得等级3的动员技能的数量提高到7个",
 
 
     "朱子遗训唐朝效果": "朱子遗训唐朝效果<br>盛世王朝 - 唐朝：建造地标的成本 -15%",
