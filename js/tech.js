@@ -507,7 +507,8 @@ let ayanami = {
     "圣殿骑士舰队": "圣殿骑士舰队<br>Crusader Fleets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>扭力弩炮船+1.5射程，+25%伤害",
 
     "景观保护": "景观保护<br>景观保护：村民采集木材不需要伐木场，开采木头可以获得额外的20%食物",
-    "圣殿骑士影响力": "圣殿骑士影响力<br>圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
+    "圣殿骑士影响力": "圣殿骑士影响力<br>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
+    "圣殿要塞": "圣殿要塞<br>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%",
     "法兰西王国": "法兰西王国<br>法兰西王国：军事单位生产快15%，减少5%的黄金消耗",
     "医院骑士团": "医院骑士团<br>医院骑士团：所有平民单位生命值+30%，所有治疗来源效率+30%",
     "安条克公国": "安条克公国<br>安条克公国：近战单位获得+10%伤害",
@@ -523,6 +524,9 @@ let ayanami = {
     "经济偏殿工业加成": "经济偏殿工业加成<br>经济偏殿 : 工业：村民建造速度+30%/40%/50%",
     "白塔工作速度": "白塔工作速度<br>白塔：工作速度 +75%",
     "兰开斯特城堡生产": "兰开斯特城堡生产<br>众志成城：城堡建成时，可免费提供 3 个伯爵护卫",
+    "兰开斯特城堡射箭槽": "兰开斯特城堡射箭槽<br>兰开斯特城堡：兰开斯特城堡附近的庄园解锁射箭槽",
+    "兰开斯特城堡庄园生命值": "兰开斯特城堡庄园生命值<br>兰开斯特城堡：庄园生命值 +500",
+    "国王学院降价": "国王学院降价<br>国王学院：所有科技的研究成本-15%",
 
     "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
     "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",
