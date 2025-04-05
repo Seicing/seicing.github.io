@@ -521,6 +521,8 @@ let ayanami = {
     "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br>兰开斯特领主的鼓舞：兰开斯特领主附近的军事单位+5%生命值(最大叠加4个，+20%生命值)",
     "埃尔茨巴赫宫殿黑骑兵": "埃尔茨巴赫宫殿黑骑兵<br>埃尔茨巴赫宫殿：每个城堡提供的上限提高为8",
     "经济偏殿工业加成": "经济偏殿工业加成<br>经济偏殿 : 工业：村民建造速度+30%/40%/50%",
+    "白塔工作速度": "白塔工作速度<br>白塔：工作速度 +75%",
+    "兰开斯特城堡生产": "兰开斯特城堡生产<br>众志成城：城堡建成时，可免费提供 3 个伯爵护卫",
 
     "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
     "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",

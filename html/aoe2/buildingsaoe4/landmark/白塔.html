@@ -13,7 +13,8 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("mon").style.opacity = "1";
+            document.getElementById("eng").style.opacity = "1";
+            document.getElementById("hol").style.opacity = "1";
         })
     })
 </script>
@@ -259,7 +260,7 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     白塔是英格兰人升级到时代3的两个地标之一，相当于额外的城堡，和普通城堡不同的是，可以驻扎20个单位，同时白塔生产部队、研发炮台和科技的速度提高了75%<br>
-
+    兰开斯特家族的白塔无法生产部队，但是在建造完毕时会因为文明加成生产3个伯爵护卫<br>
 
 
 </div>
@@ -274,7 +275,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="engButton0" href="javascript:void(0);" onclick="tipsg('engText0','engButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
-
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -320,6 +322,42 @@
         </table>
 
     </div>
+    <div id="holText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮炮台.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">扭力弩炮炮台</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="扭力弩炮炮台成本"></span></td>
+                <td style="text-align: left"><span class="扭力弩炮炮台"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/加农炮炮台.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">加农炮炮台</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="加农炮炮台成本"></span></td>
+                <td style="text-align: left"><span class="加农炮炮台"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/沸油.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">沸油</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="沸油成本"></span></td>
+                <td style="text-align: left"><span class="沸油"></span></td>
+            </tr>
+        </table>
+
+    </div>
 
 
 </div>
@@ -336,10 +374,12 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="engButton1" href="javascript:void(0);" onclick="tipsg('engText1','engButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></a>
+    <a id="holButton1" href="javascript:void(0);" onclick="tipsg('holText1','holButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="engText1" style="text-align: left;display:block ">
         <span class="英国城堡动员兵"></span><br>
-        白塔：效率翻倍 <br>
+        <span class="白塔工作速度"></span><br>
         <span class="城堡网络效果"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -365,6 +405,32 @@
         </table>
     </div>
 
+    <div id="holText1" style="text-align: left;display:none ">
+        <span class="白塔工作速度"></span><br>
+        <span class="兰开斯特城堡生产"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(射箭、弩炮、加农炮)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
