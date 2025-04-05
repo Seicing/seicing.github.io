@@ -523,7 +523,7 @@ let ayanami = {
     "经济偏殿工业加成": "经济偏殿工业加成<br>经济偏殿 : 工业：村民建造速度+30%/40%/50%",
 
 
-    "镰钩枪": "镰钩枪<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
+    "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人2护甲",
 
     "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",
     "投掷匕首操练": "投掷匕首操练<br>Throwing Dagger Drills<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>425 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>伯爵护卫同时投掷2把匕首，匕首会造成小值范围伤害，但是命中率会降低",
