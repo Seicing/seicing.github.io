@@ -684,6 +684,7 @@ let ayanami = {
 
     "迈因维克宫殿效果": "迈因维克宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/迈因维克宫殿.png' width='20px'>迈因维克宫殿：研究成本-40%，研究效率+40%",
     "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-25%",
+    "埃尔茨巴赫宫殿效果2": "埃尔茨巴赫宫殿效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-33%",
     "城主宫殿效果": "城主宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：效率+400%",
     "城主宫殿冲锋": "城主宫殿冲锋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：步兵冲锋伤害+50%",
     "施瓦本宫殿效果": "施瓦本宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标成本-10%(界面数据为结算后数据)",
