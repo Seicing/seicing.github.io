@@ -566,7 +566,7 @@ let ayanami = {
 
     "攻城专家巨型投石机": "攻城专家巨型投石机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：配重式巨型投石机多段攻击次数+1",
     "攻城专家成本": "攻城专家成本<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：攻城武器厂和攻城器械的木材成本 -25%",
-    "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/景观保护.png' width='20px'>景观保护：村民采集木材不需要伐木场，开采木头可以获得额外的20%食物",
+    "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/景观保护.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，在每个时代木材的采集速度+15%",
     "圣殿骑士影响力": "圣殿骑士影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
     "圣殿要塞": "圣殿要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%",
     "法兰西王国": "法兰西王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西王国.png' width='20px'>法兰西王国：军事单位生产快15%，减少5%的黄金消耗",
@@ -584,6 +584,7 @@ let ayanami = {
 
     "兰开斯特伯克郡": "兰开斯特伯克郡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6",
     "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png' width='20px'>兰开斯特领主的鼓舞：增加附近的军事单位5%生命值(最大叠加4次)",
+    "羊毛产业效果": "羊毛产业效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>羊毛产业：村民采集绵羊的速度 +25%",
     "埃尔茨巴赫宫殿黑骑兵": "埃尔茨巴赫宫殿黑骑兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：每个城堡提供的上限提高为8",
     "白塔工作速度": "白塔工作速度<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/白塔.png' width='20px'>白塔：作为城堡，工作速度 +75%",
     "兰开斯特城堡生产": "兰开斯特城堡生产<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/众志成城.png' width='20px'>众志成城：城堡建成时，可免费提供 3 个伯爵护卫",
@@ -745,6 +746,7 @@ let ayanami = {
     "英国便宜船只": "英国便宜船只<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>造船工：船只造价-10%",
     "英国短弓村民": "英国短弓村民<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
     "温嘉德宫殿效果": "温嘉德宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/温嘉德宫殿.png' width='20px'>温嘉德宫殿：可以以便宜的价格生产由他们组成的军队",
+    "温嘉德宫殿限制": "温嘉德宫殿限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/温嘉德宫殿.png' width='20px'>温嘉德宫殿：仅能通过温嘉德宫殿军队大量获取",
     "议会厅效果": "议会厅效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/议会厅.png' width='20px'>议会厅：从地标生产长弓兵生产速度+100%",
     "英国叉叉限制": "英国叉叉限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：无法在时代1生产，只能在时代2生产",
     "英国武士加速": "英国武士加速<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：武士的生产速度+50%",

@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("mon").style.opacity = "0.3";
+            document.getElementById("kcr").style.opacity = "0.3";
         })
     })
 </script>
@@ -112,7 +113,7 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     伐木场是基础的经济建筑，村民收集木材需要存放到这个地方才会让玩家的木材资源量增加，同时还可以在伐木场研究木材收集科技加快收集的效率<br>
-    蒙古人的蒙古包担当所有经济建筑的功能，所以他们没有伐木场<br>
+    蒙古人的蒙古包担当所有经济建筑的功能，圣殿骑士团村民无需上交木材，所以他们没有伐木场<br>
 
 
 
@@ -157,6 +158,8 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
     <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
 
     <div id="abbText0" style="text-align: left;display:block ">
@@ -334,6 +337,50 @@
         </table>
     </div>
     <div id="engText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/林业.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">林业</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="林业成本"></span></td>
+                <td style="text-align: left"><span class="林业"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/双阔斧.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">双阔斧</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="双阔斧成本"></span></td>
+                <td style="text-align: left"><span class="双阔斧"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木材保存.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">木材保存</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="木材保存成本"></span></td>
+                <td style="text-align: left"><span class="木材保存"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/横切锯.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">横切锯</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="横切锯成本"></span></td>
+                <td style="text-align: left"><span class="横切锯"></span></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="holText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
@@ -856,6 +903,8 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
     <a id="ayyButton1" href="javascript:void(0);" onclick="tipsg('ayyText1','ayyButton1','1')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
+    <a id="holButton1" href="javascript:void(0);" onclick="tipsg('holText1','holButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
 
 
@@ -923,6 +972,16 @@
         </table>
     </div>
     <div id="engText1" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="holText1" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -1158,9 +1217,12 @@
 </script>
 <script>
     var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'freText', 'ottText'
-        , 'malText', 'jpnText', 'byzText', 'jdaText', 'zxlText', 'otdText', 'ayyText']
+        , 'malText', 'jpnText', 'byzText', 'jdaText', 'zxlText', 'otdText', 'ayyText', 'holText',]
     var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'ottButton'
-        , 'malButton', 'jpnButton', 'byzButton', 'jdaButton', 'zxlButton', 'otdButton', 'ayyButton']
+        , 'malButton', 'jpnButton', 'byzButton', 'jdaButton', 'zxlButton', 'otdButton', 'ayyButton', 'holButton',]
+
+
+
 
     function tipsg(a, b, c) {
         cleargasek(0);

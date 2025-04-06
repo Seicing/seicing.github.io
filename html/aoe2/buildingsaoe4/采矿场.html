@@ -149,7 +149,10 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
     <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
-
+    <a id="kcrButton0" href="javascript:void(0);" onclick="tipsg('kcrText0','kcrButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></a>
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="abbText0" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -292,6 +295,41 @@
 
     </div>
     <div id="engText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/特制矿锄.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">特制矿锄</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="特制矿锄成本"></span></td>
+                <td style="text-align: left"><span class="特制矿锄"></span></td>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/竖井开采.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">竖井开采</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="竖井开采成本"></span></td>
+                <td style="text-align: left"><span class="竖井开采"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/灰吹法.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">灰吹法</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="灰吹法成本"></span></td>
+                <td style="text-align: left"><span class="灰吹法"></span></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="holText0" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
@@ -679,6 +717,10 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
     <a id="ayyButton1" href="javascript:void(0);" onclick="tipsg('ayyText1','ayyButton1','1')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
+    <a id="kcrButton1" href="javascript:void(0);" onclick="tipsg('kcrText1','kcrButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></a>
+    <a id="holButton1" href="javascript:void(0);" onclick="tipsg('holText1','holButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
 
 
@@ -747,6 +789,17 @@
     </div>
 
     <div id="engText1" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="holText1" style="text-align: left;display:none ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -977,9 +1030,11 @@
 </script>
 <script>
     var listText = ['abbText', 'chiText', 'engText', 'hreText', 'sulText', 'rusText', 'freText', 'ottText'
-        , 'malText', 'byzText', 'jdaText', 'zxlText', 'otdText', 'ayyText']
+        , 'malText', 'byzText', 'jdaText', 'zxlText', 'otdText', 'ayyText', 'kcrText', 'holText',]
     var listButton = ['abbButton', 'chiButton', 'engButton', 'hreButton', 'sulButton', 'rusButton', 'freButton', 'ottButton'
-        , 'malButton', 'byzButton', 'jdaButton', 'zxlButton', 'otdButton', 'ayyButton']
+        , 'malButton', 'byzButton', 'jdaButton', 'zxlButton', 'otdButton', 'ayyButton', 'kcrButton', 'holButton',]
+
+
 
     function tipsg(a, b, c) {
         cleargasek(0);
