@@ -562,6 +562,8 @@ let ayanami = {
     "侵略如火2": "侵略如火<br>Divine Charge<br>激活后，骑兵单位伤害 +20%",
     "其徐如林2": "其徐如林<br>Divine Defense<br>激活后，防御设施和火药部队射程 +1",
 
+    "法兰克防御计划生命值": "法兰克防御计划生命值<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划生命值：在要塞或圣殿骑士团总部影响范围内时生命值 +25%",
+    "法兰克防御计划炮台": "法兰克防御计划炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划生命值：石墙获得射箭槽",
 
 
     "攻城专家巨型投石机": "攻城专家巨型投石机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：配重式巨型投石机多段攻击次数+1",
@@ -669,6 +671,7 @@ let ayanami = {
     "德里清真寺": "德里清真寺<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学者文化：被标记为独特建筑，在时代1就可以建造，并且造价便宜50%",
     "穆斯林浆果丛产量": "穆斯林浆果丛产量<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>花园赏金：磨坊光环范围内浆果丛的可采集食物量+100%",
     "穆斯林村民果丛": "穆斯林村民果丛<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
+    "穆斯林村民果丛2": "穆斯林村民果丛2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
     "手稿贸易效果": "手稿贸易效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>手稿贸易：驻扎学者码头效率+20%",
     "德里木造防御": "德里木造防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>边界防御工事：步兵可以建造木制防御设施",
     "德里码头驻扎数": "德里码头驻扎数<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>防御水手：德里苏丹国码头可以驻扎4个单位",
@@ -702,7 +705,8 @@ let ayanami = {
     "智慧宫效果": "智慧宫效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/智慧宫.png' width='20px'>智慧宫：影响力范围内火焰护甲+5",
     "大食码头": "大食码头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>造船厂：码头的建造成本减少50%",
     "大食手搓": "大食手搓<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造冲车、攻城塔、扭力弩炮、轻型投石车",
-    "大食野猪限制": "大食野猪限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 30%，但无法从野猪处采集食物",
+    "大食野猪限制": "大食野猪限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 30%，但无法从野猪处采集食物",
+    "大食野猪限制2": "大食野猪限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 30%，但无法从野猪处采集食物",
     "大食便宜商人": "大食便宜商人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>贸易经济：商人成本-33%",
 
     "中国加速建造": "中国加速建造<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：建造速度+100%",
