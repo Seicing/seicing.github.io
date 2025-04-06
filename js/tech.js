@@ -585,7 +585,7 @@ let ayanami = {
     "要塞沙漠城堡": "要塞沙漠城堡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的部队+1护甲",
 
     "兰开斯特伯克郡": "兰开斯特伯克郡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6",
-    "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png' width='20px'>兰开斯特领主的鼓舞：兰开斯特领主附近的军事单位+5%生命值(最大叠加4个，+20%生命值)",
+    "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png' width='20px'>兰开斯特领主的鼓舞：增加附近的军事单位5%生命值(最大叠加4次)",
     "埃尔茨巴赫宫殿黑骑兵": "埃尔茨巴赫宫殿黑骑兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：每个城堡提供的上限提高为8",
     "白塔工作速度": "白塔工作速度<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/白塔.png' width='20px'>白塔：作为城堡，工作速度 +75%",
     "兰开斯特城堡生产": "兰开斯特城堡生产<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/众志成城.png' width='20px'>众志成城：城堡建成时，可免费提供 3 个伯爵护卫",
