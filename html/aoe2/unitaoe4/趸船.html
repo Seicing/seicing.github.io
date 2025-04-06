@@ -17,6 +17,8 @@
             document.getElementById("hre").style.opacity = "1";
             document.getElementById("ott").style.opacity = "1";
             document.getElementById("otd").style.opacity = "1";
+            document.getElementById("hol").style.opacity = "1";
+            document.getElementById("kcr").style.opacity = "1";
         })
     })
 </script>
@@ -217,8 +219,59 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png" width="25px"></a>
     <a id="otdButton0" href="javascript:void(0);" onclick="tipsg('otdText0','otdButton0','0')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png" width="25px"></a>
+    <a id="kcrButton0" href="javascript:void(0);" onclick="tipsg('kcrText0','kcrButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></a>
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
+        <span class="英国便宜船只"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/旋转加农炮.png" width="20px">旋转加农炮(获得一门额外的受益铁匠铺升级的加农炮) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击范围</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮队.png" width="20px">扭力弩炮队(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">海军部(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮队.png" width="20px">扭力弩炮队(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="holText0" style="text-align: left;display:block ">
         <span class="英国便宜船只"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -365,6 +418,52 @@
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">自愈能力</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/消防站.png" width="20px">消防站(脱离战斗每2秒恢复1生命值) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="kcrText0" style="text-align: left;display:none ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣殿骑士舰队.png" width="20px">圣殿骑士舰队(+25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击范围</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮队.png" width="20px">扭力弩炮队(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣殿骑士舰队.png" width="20px">圣殿骑士舰队(+1.5) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮队.png" width="20px">扭力弩炮队(+20%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工2.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
                 </td>
             </tr>
         </table>
@@ -558,8 +657,10 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['engText', 'hreText', 'ottText', 'otdText']
-    var listButton = ['engButton', 'hreButton', 'ottButton', 'otdButton']
+    var listText = ['engText', 'hreText', 'ottText', 'otdText', 'kcrText', 'holText',]
+    var listButton = ['engButton', 'hreButton', 'ottButton', 'otdButton', 'kcrButton', 'holButton',]
+
+
 
     function tipsg(a, b, c) {
         cleargasek(c);
