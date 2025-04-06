@@ -562,8 +562,8 @@ let ayanami = {
     "侵略如火2": "侵略如火<br>Divine Charge<br>激活后，骑兵单位伤害 +20%",
     "其徐如林2": "其徐如林<br>Divine Defense<br>激活后，防御设施和火药部队射程 +1",
 
-    "法兰克防御计划生命值": "法兰克防御计划生命值<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划生命值：在要塞或圣殿骑士团总部影响范围内时生命值 +25%",
-    "法兰克防御计划炮台": "法兰克防御计划炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划生命值：石墙获得射箭槽",
+    "法兰克防御计划生命值": "法兰克防御计划生命值<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：在要塞或圣殿骑士团总部影响范围内时生命值 +25%",
+    "法兰克防御计划炮台": "法兰克防御计划炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：石墙获得射箭槽(7射程，10攻击力，1.12攻击间隔时间)",
 
 
     "攻城专家巨型投石机": "攻城专家巨型投石机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：配重式巨型投石机多段攻击次数+1",
