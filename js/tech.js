@@ -587,7 +587,7 @@ let ayanami = {
     "兰开斯特伯克郡": "兰开斯特伯克郡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6",
     "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png' width='20px'>兰开斯特领主的鼓舞：增加附近的军事单位5%生命值(最大叠加4次)",
     "羊毛产业效果": "羊毛产业效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>羊毛产业：村民采集绵羊的速度 +25%",
-    "埃尔茨巴赫宫殿黑骑兵": "埃尔茨巴赫宫殿黑骑兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：每个城堡提供的上限提高为8",
+    "埃尔茨巴赫宫殿黑骑兵": "埃尔茨巴赫宫殿黑骑兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：每个城堡提供的黑骑兵生产上限提高为8",
     "白塔工作速度": "白塔工作速度<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/白塔.png' width='20px'>白塔：作为城堡，工作速度 +75%",
     "兰开斯特城堡生产": "兰开斯特城堡生产<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/众志成城.png' width='20px'>众志成城：城堡建成时，可免费提供 3 个伯爵护卫",
     "兰开斯特城堡射箭槽": "兰开斯特城堡射箭槽<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/兰开斯特城堡.png' width='20px'>兰开斯特城堡：兰开斯特城堡附近的庄园解锁射箭槽",
@@ -683,7 +683,7 @@ let ayanami = {
     "德里学院免费学者": "德里学院免费学者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学者文化：建造完毕的第一个穆斯林学塾类建筑会获得3个免费的学者",
 
     "迈因维克宫殿效果": "迈因维克宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/迈因维克宫殿.png' width='20px'>迈因维克宫殿：研究成本-40%，研究效率+40%",
-    "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-33%",
+    "埃尔茨巴赫宫殿效果": "埃尔茨巴赫宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-25%",
     "城主宫殿效果": "城主宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：效率+400%",
     "城主宫殿冲锋": "城主宫殿冲锋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：步兵冲锋伤害+50%",
     "施瓦本宫殿效果": "施瓦本宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标成本-10%(界面数据为结算后数据)",
