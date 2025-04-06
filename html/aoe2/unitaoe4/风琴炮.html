@@ -18,7 +18,7 @@
             document.getElementById("ott").style.opacity = "1";
             document.getElementById("jda").style.opacity = "1";
             document.getElementById("jpn").style.opacity = "1";
-
+            document.getElementById("hol").style.opacity = "1";
         })
     })
 </script>
@@ -182,10 +182,36 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
     <a id="jdaButton0" href="javascript:void(0);" onclick="tipsg('jdaText0','jdaButton0','0')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jda.png" width="25px"></a>
+    <a id="holButton0" href="javascript:void(0);" onclick="tipsg('holText0','holButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
 
     <div id="engText0" style="text-align: left;display:block ">
         <span class="英国城堡动员兵"></span><br>
         <span class="城堡网络效果2"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%) <br>
+                </td>
+            </tr>
+
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/润滑轮轴.png" width="20px">润滑轮轴(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="holText0" style="text-align: left;display:block ">
+        <span class="兰开斯特领主的鼓舞"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -433,8 +459,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['engText', 'freText', 'ottText', 'jdaText', 'jpnText']
-    var listButton = ['engButton', 'freButton', 'ottButton', 'jdaButton', 'jpnButton']
+    var listText = ['engText', 'freText', 'ottText', 'jdaText', 'jpnText', 'holText',]
+    var listButton = ['engButton', 'freButton', 'ottButton', 'jdaButton', 'jpnButton', 'holButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);
