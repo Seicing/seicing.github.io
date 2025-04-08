@@ -566,7 +566,7 @@ let ayanami = {
     "法兰克防御计划炮台": "法兰克防御计划炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：石墙获得射箭槽(8射程，8攻击力，+10对船，3.62攻击间隔时间)",
 
 
-    "攻城专家巨型投石机": "攻城专家巨型投石机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：配重式巨型投石机多段攻击次数+1",
+    "攻城专家巨型投石机": "攻城专家巨型投石机<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：巨型投石机多段攻击次数+1，但攻击力-15，建筑附加伤害-150，船只附加伤害-100",
     "攻城专家成本": "攻城专家成本<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：攻城武器厂和攻城器械的木材成本 -25%",
     "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/景观保护.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，在每个时代木材的采集速度+15%",
     "圣殿骑士影响力": "圣殿骑士影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
