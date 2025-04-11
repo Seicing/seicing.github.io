@@ -682,20 +682,53 @@ let ayanami = {
 
 
 
+    "女真腐烂": "女真腐烂<br>猎物和牲畜不会腐烂",
+    "女真攻速": "女真攻速<br>封建时代开始，骑马部队和火矛兵攻击速度+20%",
+    "女真攻城技师": "女真攻城技师<br>攻城技师城堡时代可用",
+    "女真攻城器": "女真攻城器<br>攻城和防御工事升级木材费用-75%，研究速度+100%",
+    "女真误伤": "女真误伤<br>单位受到友军误伤伤害-50%",
+    "女真团队加成": "女真团队加成<br>火药单位视野+2",
+
+    "加固堡垒": "加固堡垒<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>防御工事每分钟恢复500生命值",
+    "霹雳炸弹": "霹雳炸弹<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>火箭推车、掷弹兵、楼船在死亡时爆炸，炮弹会产生额外爆炸",
+
+
+    "契丹牧场": "契丹牧场<br>牧场取代农田，牧场和羊倌生成额外10%食物",
+    "契丹近战升级": "契丹近战升级<br>近战攻击升级效果翻倍",
+    "契丹加速": "契丹加速<br>掷矛手、长矛兵和斥候骑兵系列训练和升级速度+25%",
+    "契丹骑射手": "契丹骑射手<br>重装骑射手可在城堡时代升级，升级成本-50%",
+    "契丹团队加成": "契丹团队加成<br>步兵对远程士兵攻击力+2",
+
+    "札甲": "札甲<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵和掷矛手反弹25%所受近战伤害",
+    "宫帐骑兵": "宫帐骑兵<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑兵在战斗时恢复生命值",
+
+
+    "蜀伐木": "蜀伐木<br>伐木工在伐木时获取额外食物",
+    "蜀科技费用": "蜀科技费用<br>弓兵单位靶场和铁匠铺科技费用-25%",
+    "蜀攻城器": "蜀攻城器<br>攻城器和攻城船在城堡/帝王时代移动速度+10%/+15%",
+    "蜀团队加成": "蜀团队加成<br>步弓手视野+2",
+
+    "盘蛇阵": "盘蛇阵<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>长矛兵和白羽卫兵彼此靠近时获得额外生命值",
+    "弩匣": "弩匣<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>弓兵系、连弩战车和中式楼船可以发射额外弩箭",
+
+
+    "魏动员令": "魏动员令<br>每完成一项磨坊、伐木场和采矿场科技，获得1个村民",
+    "魏骑兵加成": "魏骑兵加成<br>黑光铠骑兵和鲜卑掠骑兵在城堡/帝王时代生命值+15%/+30%",
+    "魏攻城费用": "魏攻城费用<br>牵引抛石机和中式楼船费用-25%",
+    "魏团队加成": "魏团队加成<br>骑兵对攻城器攻击力+2",
+
+    "屯田": "屯田<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>士兵被动生产食物",
+    "明光铠": "明光铠<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑兵单位近战护甲+4",
 
 
 
+    "吴虚空食物": "吴虚空食物<br>军事生产建筑和码头提供65食物",
+    "吴步兵修复": "吴步兵修复<br>步兵在封建/城堡/帝王时代每分钟恢复生命值10/20/30",
+    "吴攻击力": "吴攻击力<br>中国剑士和黑光铠骑兵在帝王时代攻击力+2",
+    "吴造船厂": "吴造船厂<br>修船厂、干船坞可提前一个时代研发且费用和研究时间-75%",
 
-
-
-
-
-
-
-
-
-
-
+    "赤壁战术": "赤壁战术<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>爆破船和火焰弓箭手对船只和建筑造成火焰伤害",
+    "卧虎": "卧虎<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>牵引抛石机和中式楼船巨投武器发射更多炮弹",
 
 
 
