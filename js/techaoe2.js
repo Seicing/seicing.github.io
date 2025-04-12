@@ -700,7 +700,7 @@ let ayanami = {
     "契丹团队加成": "契丹团队加成<br>步兵对远程士兵攻击力+2",
 
     "札甲": "札甲<br>Lamellar Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>步兵和掷矛手反弹25%所受近战伤害",
-    "宫帐骑兵": "宫帐骑兵<br>Ordo Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>骑兵在战斗时恢复生命值",
+    "斡鲁朵骑兵": "斡鲁朵骑兵<br>Ordo Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>骑兵在战斗时恢复生命值",
 
 
     "蜀伐木": "蜀伐木<br>伐木工在伐木时获取额外食物",
