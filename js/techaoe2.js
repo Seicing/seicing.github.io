@@ -1039,6 +1039,11 @@ function CommonAllTech() {
     document.getElementById("Turks2").style.opacity = "1";
     document.getElementById("Armenians2").style.opacity = "1";
     document.getElementById("Georgians2").style.opacity = "1";
+    document.getElementById("Shu2").style.opacity = "1";
+    document.getElementById("Wei2").style.opacity = "1";
+    document.getElementById("Khitans2").style.opacity = "1";
+    document.getElementById("Wu2").style.opacity = "1";
+    document.getElementById("Jurchens2").style.opacity = "1";
 }
 
 function showPic2(e) {
