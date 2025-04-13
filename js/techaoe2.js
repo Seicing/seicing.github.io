@@ -1631,6 +1631,11 @@ function Guilds() {
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
 }
+
+function IronCasting() {
+    document.getElementById("Shu2").style.opacity = "0.15";
+}
+
 function FortifiedWall() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
     document.getElementById("Cumans2").style.opacity = "0.15";
