@@ -725,8 +725,6 @@ let ayanami = {
     "屯田": "屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>士兵被动生产食物",
     "明光铠": "明光铠<br>Ming Guang Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65 <br>骑兵单位近战护甲+4",
 
-
-
     "吴虚空食物": "吴虚空食物<br>军事生产建筑和码头提供65食物",
     "吴步兵修复": "吴步兵修复<br>步兵在封建/城堡/帝王时代每分钟恢复生命值10/20/30",
     "吴攻击力": "吴攻击力<br>刀剑手和黑光铠骑兵在帝王时代攻击力+2",
@@ -739,8 +737,45 @@ let ayanami = {
 
 
 
+    "牵引抛石机": "牵引抛石机<br>Traction Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>210 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>70<br>反制建筑的强大攻城武器，射程远",
+    "连弩战车": "连弩战车<br>War Chariot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>90 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>28<br>蜀独特攻城骑兵，能进行快速射击，可切换为掩护模式，覆盖更多的区域",
+    "鲜卑掠骑兵": "鲜卑掠骑兵<br>Xianbei Raider<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>26<br>魏独特骑射手，可发动冲锋远程攻击",
+    "刀剑手": "刀剑手<br>Jian Swordsman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>27<br>吴独特冲锋步兵，当达到伤害阈值后可提升移动速度和攻击力，但会损失护甲",
+    "掷弹兵": "掷弹兵<br>Grenadier<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>70 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>女真独特火药单位，可进行远程爆炸攻击，但不能进行近距离攻击",
+    "骑乘巨型投石机": "骑乘巨型投石机<br>Mounted Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>46<br>契丹独特远程攻城骑兵单位，炮弹落地后会持续燃烧",
 
+    "牧场": "牧场<br>Pasture<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>可再生食物来源。提供一定量的食物，休牧后必须重建。每个牧场一次只能有两名村民工作",
 
+    "刘备": "刘备<br>Liu Bei<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>蜀国的独特步兵英雄，可治疗附近所有单位",
+    "曹操": "曹操<br>Cao Cao<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>魏国的独特骑兵英雄，可提升附近单位的攻击速度",
+    "孙坚": "孙坚<br>Sun Jian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>吴国的独特骑兵英雄，可提升附近单位的移动速度",
+
+    "火矛兵": "火矛兵<br>Fire Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>使用火药的突击步兵，在近战前使用短程火器射击<br><br>升级到 精锐火矛兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "精锐火矛兵": "精锐火矛兵<br>Elite Fire Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>使用火药的突击步兵，在近战前使用短程火器射击",
+
+    "火矛兵": "火矛兵<br>Rocket Cart<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>130 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>155 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>可进行远程爆破攻击的攻城火药单位<br><br>升级到 精锐火矛兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
+    "精锐火矛兵": "精锐火矛兵<br>Heavy Rocket Cart<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>130 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>155 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>可进行远程爆破攻击的攻城火药单位",
+
+    "龙船": "龙船<br>Dragon Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>中国独特的快速喷火船",
+    "中式楼船": "中式楼船<br>Lou Chuan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>强大的攻城战船，可向单位发射箭矢，使用远程巨型投石机武器攻击建筑和攻城武器",
+
+    "辽刀兵": "辽刀兵<br>Liao Dao<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>12<br>契丹独特部队，拥有强力攻击，可造成持续伤害<br><br>升级到 精锐辽刀兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>650 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45",
+    "精锐辽刀兵": "精锐辽刀兵<br>Elite Liao Dao<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>12<br>契丹独特部队，拥有强力攻击，可造成持续伤害",
+
+    "钢铁宝塔": "钢铁宝塔<br>Iron Pagoda<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>女真独特重装骑兵，拥有坚固耐用的护甲，可以完全阻挡近战攻击<br><br>升级到 精锐钢铁宝塔<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>950 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45",
+    "精锐钢铁宝塔": "精锐钢铁宝塔<br>Elite Iron Pagoda<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>14<br>女真独特重装骑兵，拥有坚固耐用的护甲，可以完全阻挡近战攻击",
+
+    "黑光铠骑兵": "黑光铠骑兵<br>Hei Guang Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>28<br>强大的多功能重装骑兵<br><br>升级到 重装黑光铠骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>70",
+    "重装黑光铠骑兵": "重装黑光铠骑兵<br>Heavy Hei Guang Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>28<br>强大的多功能重装骑兵",
+
+    "白羽卫兵": "白羽卫兵<br>Hei Guang Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>11<br>蜀独特步兵，可暂时减慢被其攻击的单位的速度<br><br>升级到 精锐白羽卫兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45",
+    "精锐白羽卫兵": "精锐白羽卫兵<br>Elite Hei Guang Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>11<br>蜀独特步兵，可暂时减慢被其攻击的单位的速度",
+
+    "虎骑兵": "虎骑兵<br>Tiger Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>魏独特骑兵单位，击败敌军后可获得生命值和攻击力<br><br>升级到 精锐虎骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "精锐虎骑兵": "精锐虎骑兵<br>Elite Tiger Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>魏独特骑兵单位，击败敌军后可获得生命值和攻击力",
+
+    "火焰弓箭手": "火焰弓箭手<br>Fire Archer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>17<br>吴独特步弓手，可向敌方单位发射密集的箭矢，并使用远程攻击对付建筑<br><br>升级到 精锐火焰弓箭手<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45",
+    "精锐火焰弓箭手": "精锐火焰弓箭手<br>Elite Fire Archer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>17<br>吴独特步弓手，可向敌方单位发射密集的箭矢，并使用远程攻击对付建筑",
 
 
     "征兵": "征兵<br>Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>基础的步兵剑士，便宜，生产快速<br><br>升级到 链锤兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
@@ -1034,6 +1069,8 @@ function BlastFurnace() {
     document.getElementById("Lithuanians2").style.opacity = "0.15";
     document.getElementById("Malians2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 
 function Arson() {
@@ -1055,6 +1092,9 @@ function PlateMailArmor() {
     document.getElementById("Lithuanians2").style.opacity = "0.15";
     document.getElementById("Magyars2").style.opacity = "0.15";
     document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
+
 }
 function Gambeson() {
     document.getElementById("Berbers2").style.opacity = "0.15";
@@ -1081,6 +1121,8 @@ function Gambeson() {
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 function Squires() {
     document.getElementById("Celts2").style.opacity = "0.15";
@@ -1115,6 +1157,9 @@ function Heresy() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 function Supllies() {
     document.getElementById("Burgundians2").style.opacity = "0.15";
@@ -1145,6 +1190,8 @@ function Bloodlines() {
     document.getElementById("Mayans2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Koreans2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
 }
 
 function Husbandry() {
@@ -1198,6 +1245,9 @@ function ParthianTactics() {
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
     document.getElementById("Bengalis2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 
 function ThumbRing() {
@@ -1218,6 +1268,8 @@ function ThumbRing() {
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Jurchen2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 
 function LeatherArcherArmor() {
@@ -1236,6 +1288,7 @@ function RingArcherArmor() {
     document.getElementById("Poles2").style.opacity = "0.15";
     document.getElementById("Sicilians2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 function ScaleBardingArmor() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1266,6 +1319,7 @@ function PlateBardingArmor() {
     document.getElementById("Poles2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
 }
 
 
@@ -1286,6 +1340,8 @@ function SiegeEngineers() {
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 function DryDock() {
     document.getElementById("Bohemians2").style.opacity = "0.15";
@@ -1300,6 +1356,8 @@ function DryDock() {
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 
 function Shipwright() {
@@ -1325,6 +1383,10 @@ function Shipwright() {
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 
 
@@ -1336,6 +1398,7 @@ function Sanctity() {
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
 }
 function BlockPrinting() {
     document.getElementById("Berbers2").style.opacity = "0.15";
@@ -1350,6 +1413,8 @@ function BlockPrinting() {
     document.getElementById("Mongols2").style.opacity = "0.15";
     document.getElementById("Sicilians2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 
 function Fervor() {
@@ -1365,6 +1430,8 @@ function Herbal() {
     document.getElementById("Huns2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 function Redemption() {
     document.getElementById("Britons2").style.opacity = "0.15";
@@ -1385,6 +1452,10 @@ function Redemption() {
     document.getElementById("Sicilians2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 function Atonement() {
     document.getElementById("Britons2").style.opacity = "0.15";
@@ -1400,6 +1471,7 @@ function Atonement() {
     document.getElementById("Persians2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
 }
 function Illumination() {
     document.getElementById("Celts2").style.opacity = "0.15";
@@ -1415,6 +1487,7 @@ function Illumination() {
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
 }
 function Theocracy() {
     document.getElementById("Burgundians2").style.opacity = "0.15";
@@ -1445,6 +1518,10 @@ function Sapper() {
     document.getElementById("Lithuanians2").style.opacity = "0.15";
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Saracens2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
 }
 function TwoManSaw() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1463,6 +1540,7 @@ function TwoManSaw() {
     document.getElementById("Sicilians2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
 }
 function StoneShaftMining() {
     document.getElementById("Bengalis2").style.opacity = "0.15";
@@ -1481,6 +1559,7 @@ function StoneShaftMining() {
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
 }
 function GoldShaftMining() {
     document.getElementById("Dravidians2").style.opacity = "0.15";
@@ -1494,6 +1573,7 @@ function GoldShaftMining() {
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
 }
 function TreadmillCrane() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
@@ -1515,6 +1595,8 @@ function TreadmillCrane() {
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 function Masonry() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1543,6 +1625,8 @@ function Architecture() {
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 function Hoardings() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1559,6 +1643,7 @@ function Hoardings() {
     document.getElementById("Portuguese2").style.opacity = "0.15";
     document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 function HeatedShot() {
     document.getElementById("Bohemians2").style.opacity = "0.15";
@@ -1574,6 +1659,7 @@ function HeatedShot() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 function ArrowSlits() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
@@ -1597,6 +1683,9 @@ function ArrowSlits() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 function CropRotation() {
     document.getElementById("Bohemians2").style.opacity = "0.15";
@@ -1613,6 +1702,9 @@ function CropRotation() {
     document.getElementById("Saracens2").style.opacity = "0.15";
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 
 function Guilds() {
@@ -1630,10 +1722,19 @@ function Guilds() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
 }
 
 function IronCasting() {
     document.getElementById("Shu2").style.opacity = "0.15";
+}
+
+function HeavyPlow() {
+    document.getElementById("Khitan2").style.opacity = "0.15";
+}
+
+function HorseCollar() {
+    document.getElementById("Khitan2").style.opacity = "0.15";
 }
 
 function FortifiedWall() {
@@ -1645,6 +1746,7 @@ function FortifiedWall() {
     document.getElementById("Malay2").style.opacity = "0.15";
     document.getElementById("Persians2").style.opacity = "0.15";
     document.getElementById("Sicilians2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
 }
 
 function GuardTower() {
@@ -1670,6 +1772,8 @@ function KeepTower() {
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 function BombardTower() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
@@ -1700,4 +1804,10 @@ function BombardTower() {
     document.getElementById("Slavs2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+
+    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
