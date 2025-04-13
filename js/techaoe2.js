@@ -717,7 +717,7 @@ let ayanami = {
     "弩匣": "弩匣<br>Bolt Magazine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>弓兵系、连弩战车和中式楼船可以发射额外弩箭",
 
 
-    "魏动员令": "魏动员令<br>每完成一项磨坊、伐木场和采矿场科技，获得1个村民",
+    "魏动员令": "魏动员令<br>每完成一项磨坊、伐木场和采矿营地科技，获得1个村民",
     "魏骑兵加成": "魏骑兵加成<br>黑光铠骑兵和鲜卑掠骑兵在城堡/帝王时代生命值+15%/+30%",
     "魏攻城费用": "魏攻城费用<br>牵引抛石机和中式楼船费用-25%",
     "魏团队加成": "魏团队加成<br>骑兵对攻城器攻击力+2",
@@ -725,7 +725,7 @@ let ayanami = {
     "屯田": "屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>士兵被动生产食物",
     "明光铠": "明光铠<br>Ming Guang Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65 <br>骑兵单位近战护甲+4",
 
-    "吴虚空食物": "吴虚空食物<br>军事生产建筑和码头提供65食物",
+    "吴虚空食物": "吴虚空食物<br>军事生产建筑和船坞提供65食物",
     "吴步兵修复": "吴步兵修复<br>步兵在封建/城堡/帝王时代每分钟恢复生命值10/20/30",
     "吴攻击力": "吴攻击力<br>刀剑手和黑光铠骑兵在帝王时代攻击力+2",
     "吴造船厂": "吴造船厂<br>修船厂、干船坞可提前一个时代研发且费用和研究时间-75%",
