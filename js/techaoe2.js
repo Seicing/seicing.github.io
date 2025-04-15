@@ -695,7 +695,7 @@ let ayanami = {
     "女真团队加成": "女真团队加成<br>火药单位视野+2",
 
     "加固堡垒": "加固堡垒<br>Fortified Bastions<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>防御工事每分钟恢复500生命值",
-    "霹雳炸弹": "霹雳炸弹<br>Thunderclap Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火箭推车、掷弹兵、楼船在死亡时爆炸，炮弹会产生额外爆炸",
+    "霹雳炸弹": "霹雳炸弹<br>Thunderclap Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火箭推车、掷弹兵、楼船在死亡时爆炸，发射的子弹会产生额外爆炸",
 
 
     "契丹牧场": "契丹牧场<br>牧场取代农田，牧场和羊倌生成额外10%食物",
@@ -713,8 +713,8 @@ let ayanami = {
     "蜀攻城器": "蜀攻城器<br>攻城器和攻城船在城堡/帝王时代移动速度+10%/+15%",
     "蜀团队加成": "蜀团队加成<br>步弓手视野+2",
 
-    "盘蛇阵": "盘蛇阵<br>Coiled Serpent Array<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>长矛兵和白羽卫兵彼此靠近时获得额外生命值",
-    "弩匣": "弩匣<br>Bolt Magazine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>弓兵系、连弩战车和中式楼船可以发射额外弩箭",
+    "盘蛇阵": "盘蛇阵<br>Coiled Serpent Array<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>15格范围内的长矛兵和白羽卫兵彼此获得额外生命值，每个0.5%，最大增加15%",
+    "弩匣": "弩匣<br>Bolt Magazine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>射手和连弩战车+1额外弩箭，楼船和掩护模式连弩战车+2额外弩箭",
 
 
     "魏动员令": "魏动员令<br>每完成一项磨坊、伐木场和采矿营地科技，获得1个村民",
@@ -722,7 +722,7 @@ let ayanami = {
     "魏攻城费用": "魏攻城费用<br>牵引抛石机和中式楼船费用-25%",
     "魏团队加成": "魏团队加成<br>骑兵对攻城器攻击力+2",
 
-    "屯田": "屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>士兵被动生产食物",
+    "屯田": "屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>步兵、射手、骑兵每分钟被动生产1.2食物",
     "明光铠": "明光铠<br>Ming Guang Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65 <br>骑兵单位近战护甲+4",
 
     "吴虚空食物": "吴虚空食物<br>军事生产建筑和船坞提供65食物",
@@ -731,8 +731,8 @@ let ayanami = {
     "吴造船厂": "吴造船厂<br>修船厂、干船坞可提前一个时代研发且费用和研究时间-75%",
     "吴团队加成": "吴团队加成<br>房屋建造速度+100%",
 
-    "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成火焰伤害",
-    "卧虎": "卧虎<br>Sitting Tiger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>牵引抛石机和中式楼船巨投武器发射更多炮弹",
+    "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成持续5秒的火焰伤害，火焰伤害互相独立生效",
+    "卧虎": "卧虎<br>Sitting Tiger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>牵引抛石机和中式楼船巨投武器发射2枚额外炮弹(10近战伤害，+40对建筑物伤害)",
     "烟火之术": "烟火之术<br>Pirotechnia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火枪手造成的穿透伤害 +15%，准确度变成90%",
 
 
