@@ -508,12 +508,12 @@ let ayanami = {
     "匈奴游牧加成": "匈奴游牧加成<br>不用建造居住房舍，但开局木材-100",
     "匈奴便宜骑射手": "匈奴便宜骑射手<br>骑射手训练成本在城堡时代-10%、帝王时代-20%",
     "匈奴巨投命中率": "匈奴巨投命中率<br>巨型投石机准确率+30%",
-    "匈奴团队加成": "匈奴团队加成<br>马厩训练效率+20%",
+    "匈奴团队加成": "匈奴团队加成<br>马厩工作效率+20%",
 
     "不列颠便宜城镇中心": "不列颠便宜城镇中心<br>城堡时代城镇中心便宜50%木材",
     "不列颠弓箭手射程": "不列颠弓箭手射程<br>弓箭手在城堡时代/帝王时代的时候+1/+2射程",
     "不列颠牧羊人": "不列颠牧羊人<br>牧羊人效率+25%",
-    "不列颠团队加成": "不列颠团队加成<br>靶场训练快10%",
+    "不列颠团队加成": "不列颠团队加成<br>靶场工作效率+10%",
 
     "凯尔特步兵移速": "凯尔特步兵移速<br>步兵移动速度在各时代+5%/+10%/+15%/+20%",
     "凯尔特伐木效率": "凯尔特伐木效率<br>伐木工工作快15%",
@@ -731,7 +731,7 @@ let ayanami = {
     "吴造船厂": "吴造船厂<br>修船厂、干船坞可提前一个时代研发且费用和研究时间-75%",
     "吴团队加成": "吴团队加成<br>房屋建造速度+100%",
 
-    "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成火焰伤害，持续5秒，每秒造成1(火焰弓箭手)和5(爆破船)伤害，火焰伤害互相独立生效",
+    "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成持续5秒的火焰伤害，每秒造成1(火焰弓箭手)和5(爆破船)伤害",
     "卧虎": "卧虎<br>Sitting Tiger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>牵引抛石机和中式楼船巨投武器发射2枚额外炮弹(10近战伤害，+40对建筑物伤害)",
     "烟火之术": "烟火之术<br>Pirotechnia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火枪手造成+15%穿透伤害，命中率+15%",
 
