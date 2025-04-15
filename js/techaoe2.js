@@ -733,7 +733,7 @@ let ayanami = {
 
     "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成持续5秒的火焰伤害，火焰伤害互相独立生效",
     "卧虎": "卧虎<br>Sitting Tiger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>牵引抛石机和中式楼船巨投武器发射2枚额外炮弹(10近战伤害，+40对建筑物伤害)",
-    "烟火之术": "烟火之术<br>Pirotechnia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火枪手造成的穿透伤害 +15%，准确度变成90%",
+    "烟火之术": "烟火之术<br>Pirotechnia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火枪手造成+15%穿透伤害，命中率+15%",
 
 
 
