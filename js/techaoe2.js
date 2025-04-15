@@ -385,7 +385,7 @@ let ayanami = {
     "中国起始农民": "中国起始农民<br>初始村民+3，但是木材 -50、食物 -200",
     "中国城镇中心": "中国城镇中心<br>城镇中心提供人口数+15、视野+7",
     "中国便宜科技": "中国便宜科技<br>封建时代、城堡时代、帝王时代的科技研发成本-5%/-10%/-15%",
-    "中国爆破船血量": "中国爆破船血量<br>火枪兵和喷火船移动速度在城堡时代/帝王时代+5%/+10%",
+    "中国爆破船血量": "中国爆破船血量<br>火矛兵和喷火船移动速度在城堡时代/帝王时代+5%/+10%",
     "中国团队加成": "中国团队加成<br>农田产量+10%",
 
     "日本渔船加成": "日本渔船加成<br>渔船两倍生命值，+2远程护甲，效率在黑暗、封建、城堡、帝王时代增加5%/10%/15%/20%",
@@ -731,7 +731,7 @@ let ayanami = {
     "吴造船厂": "吴造船厂<br>修船厂、干船坞可提前一个时代研发且费用和研究时间-75%",
     "吴团队加成": "吴团队加成<br>房屋建造速度+100%",
 
-    "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成持续5秒的火焰伤害，火焰伤害互相独立生效",
+    "赤壁战术": "赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成火焰伤害，持续5秒，每秒造成1(火焰弓箭手)和5(爆破船)伤害，火焰伤害互相独立生效",
     "卧虎": "卧虎<br>Sitting Tiger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>牵引抛石机和中式楼船巨投武器发射2枚额外炮弹(10近战伤害，+40对建筑物伤害)",
     "烟火之术": "烟火之术<br>Pirotechnia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火枪手造成+15%穿透伤害，命中率+15%",
 
