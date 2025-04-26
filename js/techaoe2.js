@@ -714,7 +714,7 @@ let ayanami = {
     "蜀团队加成": "蜀团队加成<br>步弓手视野+2",
 
     "盘蛇阵": "盘蛇阵<br>Coiled Serpent Array<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>15格范围内的长矛兵和白羽卫兵彼此获得额外生命值，每个0.5%，最大增加15%",
-    "弩匣": "弩匣<br>Bolt Magazine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>射手和连弩战车+1额外弩箭，楼船和掩护模式连弩战车+2额外弩箭",
+    "弩匣": "弩匣<br>Bolt Magazine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>射手、连弩战车+2额外弩箭，掩护模式连弩战车和楼船射箭模式+3额外弩箭",
 
 
     "魏动员令": "魏动员令<br>每完成一项磨坊、伐木场和采矿营地科技，获得1个村民",
