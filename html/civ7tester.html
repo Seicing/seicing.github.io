@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <title>肥猫的秘密基地</title>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/vue.js"></script>
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="app">
+        <div v-for="diaindex in aasb">
+                <div v-html="diaindex.twobee"> </div>
+
+        </div>
+
+</div>
+
+
+                        </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right;  border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/sound.js"></script>
+<script language="javascript" src="https://seicing.com/js/civ7.js"></script>
+<script>
+        var imgAll = [];
+        const vm = new Vue({
+                el: '#app',
+                data: {
+                        aasb: [],
+                },
+                created() {
+                        fetch('https://seicing.com/js/dia/civ7tester.json')
+                                .then(response => response.json())
+                                .then(json => {
+                                        this.aasb = json
+                                        for (var i = 0; i < json.length; i++) {
+                                                json[i].mission11 = json[i]['mission1'];
+                                                json[i].mission22 = json[i]['mission2'];
+                                                json[i].mission33 = json[i]['mission3'];
+                                                json[i].item11 = json[i]['item1'];
+                                                json[i].item22 = json[i]['item2'];
+                                                json[i].item33 = json[i]['item3'];
+                                                json[i].section11 = json[i]['section1'];
+                                                json[i].section22 = json[i]['section2'];
+                                                json[i].section33 = json[i]['section3'];
+                                                json[i].condi2 = json[i]['condi'];
+                                                json[i].name2 = json[i]['name'];
+                                                json[i].event2 = json[i]['event'];
+
+
+                                                if (json[i].mission11 != '') {
+                                                        json[i].string1st = '任务' + json[i].mission11 + '<br>' + json[i].item11;
+                                                } else {
+                                                        json[i].string1st = json[i].item11;
+                                                }
+
+                                                if (json[i].mission22 != '') {
+                                                        json[i].string2nd = '任务' + json[i].mission22 + '<br>' + json[i].item22;
+                                                } else {
+                                                        json[i].string2nd = json[i].item22;
+                                                }
+
+                                                if (json[i].mission33 != '') {
+                                                        json[i].string3rd = '任务' + json[i].mission33 + '<br>' + json[i].item33;
+                                                } else {
+                                                        json[i].string3rd = json[i].item33;
+                                                }
+
+                                                if (json[i].section33 != '') {
+                                                        json[i].twobee =
+                                                                '<table frame="box" width="600px" id="aoe4de" style="border:1px solid #222222;"><tr><td colspan="6" style="background-color: black;text-align:center"><span style="color: #FFFFFF"><b>' + json[i].name2 + '</b></span></td></tr><tr><td width="50px" style="background-color: black;"><span style="color: #FFFFFF">触发条件</span></td><td colspan="5">' + json[i].condi2 + '</td></tr><tr><td width="50px" style="background-color: black;"><span style="color: #FFFFFF">事件描述</span></td><td colspan="5">' + json[i].event2 + '</td></tr><tr><td rowspan="2" style="background-color: black;"><span style="color: #FFFFFF">选项1</span></td><td width="145px">' + json[i].section11 + '</td><td width="50px" rowspan="2" style="background-color: black;"><span style="color: #FFFFFF">选项2</span></td><td>' + json[i].section22 + '</td><td width="50px" rowspan="2" style="background-color: black;"><span style="color: #FFFFFF">选项3</span></td><td width="145px">' + json[i].section33 + '</td></tr><tr><td>' + json[i].string1st + '</td><td>' + json[i].string2nd + '</td><td>' + json[i].string3rd + '</td></tr></table>'
+                                                } else {
+                                                        json[i].twobee =
+                                                                '<table frame="box" width="600px" id="aoe4de" style="border:1px solid #222222;"><tr><td colspan="4" style="background-color: black;text-align:center"><span style="color: #FFFFFF"><b>' + json[i].name2 + '</b></span></td></tr><tr><td width="50px" style="background-color: black;"><span style="color: #FFFFFF">触发条件</span></td><td colspan="3">' + json[i].condi2 + '</td></tr><tr><td width="50px" style="background-color: black;"><span style="color: #FFFFFF">事件描述</span></td><td colspan="3">' + json[i].event2 + '</td></tr><tr><td rowspan="2" style="background-color: black;"><span style="color: #FFFFFF">选项1</span></td><td width="245px">' + json[i].section11 + '</td><td width="50px" rowspan="2" style="background-color: black;"><span style="color: #FFFFFF">选项2</span></td><td>' + json[i].section22 + '</td></tr><tr><td>' + json[i].string1st + '</td><td>' + json[i].string2nd + '</td></tr></table>'
+
+                                                }
+
+
+
+
+                                        }
+                                })
+                },
+        })
+
+</script>
+
+</html>
