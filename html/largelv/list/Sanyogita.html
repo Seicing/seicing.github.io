@@ -41,10 +41,11 @@
                                 style="color: red;">流汗(SW)</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="ATswitch"> <a href="#" onclick="ATswitch()" style="color: gray;">附件(AT)</a>
+                <div style="float:left;" id="ATswitch"> <a href="#" onclick="ATswitch()"
+                                style="color: white;">附件(AT)</a>
                 </div>
                 <div style="float:left;" id="ATswitch2"> <a href="#" onclick="ATswitch2()"
-                                style="color: red;">附件(AT)</a>
+                                style="color: lime;">附件(AT)</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
                 <div style="float:left;" id="SPswitch"> <a href="#" onclick="SPswitch()" style="color: gray;">特殊(SP)</a>
@@ -60,10 +61,10 @@
                 </div>
 
                 <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="ALswitch"> <a href="#" onclick="ALswitch()" style="color: lime;">濒死</a>
+                <div style="float:left;" id="ALswitch"> <a href="#" onclick="ALswitch()" style="color: white;">濒死</a>
                 </div>
                 <div style="float:left;display:none" id="ALswitch2"> <a href="#" onclick="ALswitch2()"
-                                style="color: white">濒死</a>
+                                style="color: lime">濒死</a>
                 </div>
         </div>
         <br>
@@ -72,7 +73,7 @@
                         <tr>
                                 <td>
                                         <div style="position:relative;width:150px;height:225px">
-                                                <div class="attach4" style="position:absolute;z-index:50;display:none">
+                                                <div class="attach4" style="position:absolute;z-index:50;">
                                                         <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
                                                                 :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
@@ -105,10 +106,14 @@
                                                                 :src="diaindex.mouth5" style="width: 150px;"
                                                                 id="mouth3">
                                                 </div>
-                                                <div class="base4" style="position:absolute;z-index:2">
+
+
+                                                <div class="base4" style="position:absolute;z-index:2;display:block">
                                                         <img :src="diaindex.base5" style="width: 150px;">
                                                 </div>
-
+                                                <div class="base9" style="position:absolute;z-index:1;display:none">
+                                                        <img :src="diaindex.base6" style="width: 150px;">
+                                                </div>
                                         </div>
                                 </td>
                         </tr>
@@ -153,7 +158,7 @@
         $(document).ready(function () {
                 RFswitch2();
                 SWswitch2();
-                ATswitch2();
+                ATswitch();
                 SPswitch2();
                 CEswitch2();
         });
