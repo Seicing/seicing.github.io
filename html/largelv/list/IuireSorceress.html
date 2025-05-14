@@ -47,10 +47,11 @@
                                 style="color: red;">附件(AT)</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
-                <div style="float:left;" id="SPswitch"> <a href="#" onclick="SPswitch()" style="color: gray;">特殊(SP)</a>
+                <div style="float:left;" id="SPswitch"> <a href="#" onclick="SPswitch()"
+                                style="color: white;">特殊(SP)</a>
                 </div>
                 <div style="float:left;" id="SPswitch2"> <a href="#" onclick="SPswitch2()"
-                                style="color: red;">特殊(SP)</a>
+                                style="color: lime;">特殊(SP)</a>
                 </div>
                 <div style="float:left;">&nbsp</div>
                 <div style="float:left;" id="CEswitch"> <a href="#" onclick="CEswitch()" style="color: gray;">闭眼(CE)</a>
@@ -69,7 +70,7 @@
                                                         <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
                                                                 :src="diaindex.attach5" style="width: 150px;">
                                                 </div>
-                                                <div class="special4" style="position:absolute;z-index:49;display:none">
+                                                <div class="special4" style="position:absolute;z-index:49">
                                                         <img onerror="this.src='https://seicing.com/res/n.png';this.parentNode.style.zIndex='100'"
                                                                 :src="diaindex.special5" style="width: 150px;">
                                                 </div>
@@ -147,7 +148,7 @@
                 RFswitch2();
                 SWswitch2();
                 ATswitch2();
-                SPswitch2();
+                SPswitch();
                 CEswitch2();
         });
 </script>
