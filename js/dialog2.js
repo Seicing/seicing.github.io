@@ -1,11 +1,11 @@
 
 $(window).resize(function () {
-    var cliWidth = document.body.clientWidth - 250;
+    var cliWidth = document.body.clientWidth - 380;
     $("#reski").width(cliWidth);
 });
 
 $(document).ready(function () {
-    var cliWidth = document.body.clientWidth - 250;
+    var cliWidth = document.body.clientWidth - 380;
     $("#reski").width(cliWidth);
 });
 
