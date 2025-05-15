@@ -2,15 +2,15 @@
 $(window).resize(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    var aposr = document.getElementById("#reski").offsetHeight;
-    document.getElementById("#reske").style.height = aposr;
+    var cliHeight = document.body.clientHeight;
+    $("#reske").height(cliHeight);
 });
 
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    var aposr = document.getElementById("#reski").offsetHeight;
-    document.getElementById("#reske").style.height = aposr;
+    var cliHeight = document.body.clientHeight;
+    $("#reske").height(cliHeight);
 });
 
 $(document).ready(function () {
