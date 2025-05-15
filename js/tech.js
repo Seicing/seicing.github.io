@@ -614,7 +614,7 @@ let ayanami = {
     "拜占庭建造石头": "拜占庭建造石头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>野外石料：建造建筑成功后获得不同数量的石头",
     "拜占庭橄榄园": "拜占庭橄榄园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得橄榄油效率+60%",
     "拜占庭回血": "拜占庭回血<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朝圣者之瓶.png' width='20px'>地下水宫 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒",
-    "拜占庭边防部队防御": "拜占庭边防部队防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/边防部队防御.png' width='20px'>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成",
+    "拜占庭边防部队防御": "拜占庭边防部队防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/边防部队防御.png' width='20px'>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成(+3/+4/+5/+6对大象额外伤害)",
     "拜占庭改良火炬": "拜占庭改良火炬<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/纵火者.png' width='20px'>纵火者：研发纵火者科技后，侦察兵附近的部队火炬伤害+25%",
     "拜占庭海军部署": "拜占庭海军部署<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>海军部署：军事单位从运输船卸载后移动速度提高",
     "拜占庭凯旋": "拜占庭凯旋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/凯旋.png' width='20px'>帝国竞技场 - 凯旋：激活后使骑兵伤害+4，移动速度+10%，每秒恢复2生命值",
