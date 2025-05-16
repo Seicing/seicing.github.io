@@ -158,7 +158,7 @@ const vm = new Vue({
                 }
             })
     },
-    mounted() {
+    destroyed() {
         aposr = document.getElementById("reski").offsetHeight;
         $("#reske").height(aposr);
     },
