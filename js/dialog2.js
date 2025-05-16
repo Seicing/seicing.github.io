@@ -158,9 +158,21 @@ const vm = new Vue({
                 }
             })
     },
-    destroyed() {
-        aposr = document.getElementById("reski").offsetHeight;
-        $("#reske").height(aposr);
+
+
+    mounted() {
+        this.starter();
     },
+
+
+    methods: {
+        starter() {
+            setTimeout(() => {
+                aposr = document.getElementById("reski").offsetHeight;
+                $("#reske").height(aposr);
+            }, 1000);
+        },
+    },
+
 })
 
