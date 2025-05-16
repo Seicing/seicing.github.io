@@ -15,6 +15,11 @@ $(document).ready(function () {
     characterid = document.getElementById("overdrive").innerHTML;
 });
 
+$(document).ready(function () {
+    aposr = document.getElementById("reski").offsetHeight;
+    $("#reske").height(aposr);
+});
+
 
 function ALswitch() {
     var divs = document.getElementsByClassName("base4");
