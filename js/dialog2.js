@@ -12,11 +12,6 @@ $(document).ready(function () {
     characterid = document.getElementById("overdrive").innerHTML;
 });
 
-$(window).load(function () {
-    aposr = document.getElementById("reski").offsetHeight;
-    $("#reske").height(aposr);
-});
-
 function ALswitch() {
     var divs = document.getElementsByClassName("base4");
     for (var i = 0; i < divs.length; i++) {
@@ -162,8 +157,10 @@ const vm = new Vue({
                     json[i].base6 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base2.png"
                 }
             })
-    }
-
-
+    },
+    mounted() {
+        aposr = document.getElementById("reski").offsetHeight;
+        $("#reske").height(aposr);
+    },
 })
 
