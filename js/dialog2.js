@@ -10,7 +10,6 @@ $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
     characterid = document.getElementById("overdrive").innerHTML;
-    document.getElementById(characterid).style.boxShadow = "0px 0px 5px 5px red;";
 });
 
 function ALswitch() {
