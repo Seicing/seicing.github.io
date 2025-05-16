@@ -9,8 +9,6 @@ $(window).resize(function () {
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    aposr = document.getElementById("reski").offsetHeight;
-    $("#reske").height(aposr);
 });
 
 $(document).ready(function () {
