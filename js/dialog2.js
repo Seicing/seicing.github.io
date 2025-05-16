@@ -10,7 +10,7 @@ $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
     characterid = document.getElementById("overdrive").innerHTML;
-    rgs937();
+    setTimeout(rgs937(), 4,);
 });
 
 
