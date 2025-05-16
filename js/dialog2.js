@@ -10,15 +10,12 @@ $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
     characterid = document.getElementById("overdrive").innerHTML;
-    setTimeout(rgs937(), 4,);
 });
 
-
-function rgs937() {
+$(window).load(function () {
     aposr = document.getElementById("reski").offsetHeight;
     $("#reske").height(aposr);
-};
-
+});
 
 function ALswitch() {
     var divs = document.getElementsByClassName("base4");
