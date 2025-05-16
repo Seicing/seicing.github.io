@@ -9,16 +9,15 @@ $(window).resize(function () {
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-});
-
-$(document).ready(function () {
     characterid = document.getElementById("overdrive").innerHTML;
+    rgs937();
 });
 
-$(document).ready(function () {
+
+function rgs937() {
     aposr = document.getElementById("reski").offsetHeight;
     $("#reske").height(aposr);
-});
+};
 
 
 function ALswitch() {
