@@ -161,7 +161,9 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    【待补充】
+    连弩战车是三国DLC引入的蜀攻城武器部队，它们取代了通用的弩炮部队，没有帝王时代精锐升级<br><br>
+    连弩战车最大的特点就是可以在两种不同的射击模式中切换，集中模式下，发射较少的箭矢，所有的箭矢都会以100%命中率集中射击在攻击对象身上，而掩护模式下发射箭矢数会增多，箭矢的命中率变成0%，这意味着它们很可能不会命中主目标，但是会以100%的伤害命中其他副目标，对大群的敌人更加有效<br><br>
+
 
 
 </div>
@@ -185,22 +187,27 @@
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);SiegeEngineers();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp" width="20px"></a>攻城技师(+20%对建筑物伤害) <br>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp" width="20px">弩匣(+2额外弩箭，掩护模式+3额外弩箭，仅蜀) <br>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp" width="20px"></a>化学(+1) <br>
             </td>
         </tr>
         <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
+            <td>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);SiegeEngineers();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp" width="20px"></a>攻城技师(+1) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">防御力(近战/远程)</span></td>
             <td>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PaddedArcherArmorDE.webp" width="20px"></a>射手软甲(+1/+1) <br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);LeatherArcherArmor();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/LeatherArcherArmorDE.webp" width="20px"></a>射手皮甲(+1/+1) <br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);RingArcherArmor();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/RingArcherArmorDE.webp" width="20px"></a>射手锁甲(+1/+2) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);ScaleBardingArmor();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp" width="20px"></a>骑兵鳞甲(+1/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);ChainBarding();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp" width="20px"></a>骑兵锁甲(+1/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);PlateBardingArmor();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp" width="20px"></a>骑兵钢甲(+1/+2) <br>
             </td>
         </tr>
         <tr style="text-align: left">
@@ -208,6 +215,13 @@
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Husbandry();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp" width="20px"></a>畜牧(+10%) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">命中率</span></td>
+            <td>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BallisticsDE.webp" width="20px"></a>弹道学(命中移动目标) <br>
             </td>
         </tr>
         <tr style="text-align: left">
@@ -248,6 +262,9 @@
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Lithuanians.webp" width="25px">立陶宛：<span class="立陶宛团队加成"></span>
         </li>
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.webp" width="25px">条顿：<span class="条顿团队加成"></span></li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.webp" width="25px">匈奴：<span class="匈奴团队加成"></span></li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp" width="25px">保加利亚：<span class="保加利亚团队加成"></span>
+        </li>
     </ul>
 </div>
 

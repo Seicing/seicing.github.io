@@ -136,7 +136,7 @@
             <td colspan="2"><span style="color:#6e6e85">特殊功能</span></td>
         </tr>
         <tr style="text-align: center">
-            <td colspan="2">炮弹落地后造成持续伤害，8秒内持续对0.65格内所有敌方单位和建筑每秒造成2伤害</td>
+            <td colspan="2">炮弹落地后造成持续伤害，8秒内持续对0.65格内所有敌方单位和建筑每秒造成2伤害(建筑物造成4伤害)</td>
         </tr>
 
     </table>
@@ -160,7 +160,9 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    【待补充】
+    骆驼投石机是契丹人独特的攻城武器厂部队，使用骆驼搬运巨型投石机进行攻城的部队，发射的炮弹会在地上猛烈燃烧造成额外伤害<br><br>
+    骆驼投石机的工作性能很类似手推炮，它们会优先攻击敌方的单位而非建筑物，炮弹在命中目标后会在地面上形成一块持续8秒的火焰地带，火焰地带会对上面的单位每秒造成2点伤害(建筑物额外+2伤害)，火焰无视护甲，但是只会对目标生效一次，多个火焰不会对目标造成叠加伤害<br><br>
+    骆驼投石机的基础伤害比手推炮少10，但是对攻城器的额外伤害弥补了这一点，不过致命的是骆驼投石机仅仅对建筑物有+10额外伤害，这意味着它们的拆迁效率极低，与手推炮相比似乎更适合用来攻击人群，定位尴尬
 
 
 </div>
@@ -174,23 +176,35 @@
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     由于骆驼投石机是契丹独特部队，只会显示契丹特有的加成<br>
-
     <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="2"><span style="color:#6e6e85">科技收益</span></td>
-        </tr>
-        <tr style="text-align: left">
-            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
-            <td>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Bloodlines();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp" width="20px"></a>血统(+20) <br>
-            </td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);SiegeEngineers();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp" width="20px"></a>攻城技师(+20%对建筑物伤害) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp" width="20px"></a>化学(+1) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">射程</span></td>
+            <td>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);SiegeEngineers();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp" width="20px"></a>攻城技师(+1) <br>
+            </td>
+        </tr>
+        <tr style="text-align: left">
+            <td style="background-color:#F5F8FA"><span style="color:#6e6e85">防御力(近战/远程)</span></td>
+            <td>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);ScaleBardingArmor();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp" width="20px"></a>骑兵鳞甲(+1/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);ChainBarding();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp" width="20px"></a>骑兵锁甲(+1/+1) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);PlateBardingArmor();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp" width="20px"></a>骑兵钢甲(+1/+2) <br>
             </td>
         </tr>
         <tr style="text-align: left">
@@ -238,6 +252,9 @@
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Lithuanians.webp" width="25px">立陶宛：<span class="立陶宛团队加成"></span>
         </li>
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.webp" width="25px">条顿：<span class="条顿团队加成"></span></li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.webp" width="25px">匈奴：<span class="匈奴团队加成"></span></li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp" width="25px">保加利亚：<span class="保加利亚团队加成"></span>
+        </li>
     </ul>
 </div>
 
