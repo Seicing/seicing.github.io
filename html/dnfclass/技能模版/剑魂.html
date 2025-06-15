@@ -56,10 +56,10 @@
   const vm = new Vue({
     el: '#app',
     created() {
-      fetch('https://api.dnftools.com/api/open/gunner_female/spitfire_female/skills/')
+      fetch('https://data.seicing.com/seicingdepot/2fatcatpool/下载.json')
         .then(response => response.json())
         .then(json => {
-          this.data = json
+          const data = json.data;
           for (var i = 0; i < json.length; i++) {
 
             json[i].iconname = "'https://hub.bbs.colg.cn/common/assits/vp/characters/gunner_female/spitfire_female/skill/'" + characterid + ".png" + "special.png"
