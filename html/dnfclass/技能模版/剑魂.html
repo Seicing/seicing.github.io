@@ -61,13 +61,13 @@
       };
     },
     created() {
-      fetch('https://data.seicing.com/seicingdepot/2fatcatpool/test.json')
+      fetch('https://api.dnftools.com/api/open/gunner_female/spitfire_female/skills/')
         .then(response => response.json())
         .then(json => {
           const data = json.data;
           for (var i = 0; i < data.length; i++) {
 
-            data[i].iconname = "https://hub.bbs.colg.cn/common/assits/vp/characters/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
+            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
 
           }
           this.skills = data;
