@@ -20,8 +20,30 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 <div id="app">
+
   <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
-    <span><img :src="skill.iconname">{{skill.name}}</span>
+    <H1>
+      <img :src="skill.iconname"><a :id="skill.name"></a><b><span style="color: #0366D6"></span><span
+          style="color: #000000">{{skill.name}}</span><span style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <table id="customers" frame="box" width="750px" style="text-align: left;">
+      <tr>
+        <td colspan="5" style="background-color:#F5F8FA">
+          {{skill.tooltip}}
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color:#F5F8FA">习得等级</td>
+        <td>啊啊啊</td>
+        <td style="background-color:#F5F8FA">精通等级</td>
+        <td>啊啊啊</td>
+        <td style="background-color:#F5F8FA">最大等级</td>
+        <td>啊啊啊</td>
+        <td style="background-color:#F5F8FA">技能性质</td>
+        <td>啊啊啊</td>
+      </tr>
+    </table>
   </div>
 
 </div>
@@ -33,6 +55,10 @@
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
                         <a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a><br><br>
+<div id="bpp">
+  <a v-for="skill in skills" :key="skill.skillId" :href="skill.name">{{skill.name}}</a><br>
+</div>
+
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -52,28 +78,33 @@
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 
 <script>
-  var imgAll = [];
-  const vm = new Vue({
+  const sharedState = Vue.observable({
+    skills: []
+  });
+
+  fetch('https://api.dnftools.com/api/open/gunner_female/spitfire_female/skills/')
+    .then(response => response.json())
+    .then(json => {
+      const data = json.data;
+      for (let i = 0; i < data.length; i++) {
+        data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png";
+      }
+      sharedState.skills = data;
+    });
+
+  const vm1 = new Vue({
     el: '#app',
     data() {
-      return {
-        skills: []
-      };
-    },
-    created() {
-      fetch('https://api.dnftools.com/api/open/gunner_female/spitfire_female/skills/')
-        .then(response => response.json())
-        .then(json => {
-          const data = json.data;
-          for (var i = 0; i < data.length; i++) {
+      return sharedState;
+    }
+  });
 
-            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
-
-          }
-          this.skills = data;
-        })
-    },
-  })
+  const vm2 = new Vue({
+    el: '#bpp',
+    data() {
+      return sharedState;
+    }
+  });
 </script>
 
 </html>
