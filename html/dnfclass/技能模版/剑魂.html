@@ -21,13 +21,17 @@
                         <div class="entry"><div id="app">
 
   <div style="float:left;" v-for="diaindex in aasb">
+    <img :src="diaindex.iconname"><a :id="diaindex.name"></a>
     <H1>
-      <img :src="diaindex.iconname"><a :id="diaindex.name"></a><b><span style="color: #0366D6"></span><span
-          style="color: #000000">{{diaindex.name}}</span><span style="font-size:12px"><a
+      <b><span style="color: #000000">{{diaindex.name}}</span><span style="font-size:12px"><a
             href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table id="customers" frame="box" width="750px" style="text-align: left;">
+  </div>
+
+</div>
+
+<!-- <table id="customers" frame="box" width="750px" style="text-align: left;">
       <tr>
         <td colspan="5" style="background-color:#F5F8FA">
 
@@ -43,12 +47,7 @@
         <td style="background-color:#F5F8FA">技能性质</td>
         <td> </td>
       </tr>
-    </table>
-  </div>
-
-</div>
-
-
+    </table>-->
 
                         </div>
                     </div>
@@ -80,7 +79,6 @@
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 
 <script>
-  $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
   var imgAll = [];
   const vm = new Vue({
     el: '#app',
@@ -93,7 +91,8 @@
         .then(json => {
           this.aasb = json
           for (var i = 0; i < json.length; i++) {
-            json[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + json[i]['skillId'] + ".png"
+            json[i].skillids = json[i]['skillId']
+            json[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + json[i].skillids + ".png"
           }
         })
     },
