@@ -20,8 +20,8 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 <div id="app">
-  <div style="float:left;" v-for="diaindex in data">
-    <span><img :src="diaindex.iconname">{{diaindex.name}}</span>
+  <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
+    <span><img :src="skill.iconname">{{skill.name}}</span>
   </div>
 
 </div>
@@ -55,16 +55,22 @@
   var imgAll = [];
   const vm = new Vue({
     el: '#app',
+    data() {
+      return {
+        skills: []
+      };
+    },
     created() {
       fetch('https://data.seicing.com/seicingdepot/2fatcatpool/test.json')
         .then(response => response.json())
         .then(json => {
           const data = json.data;
-          for (var i = 0; i < json.length; i++) {
+          for (var i = 0; i < data.length; i++) {
 
-            json[i].iconname = "'https://hub.bbs.colg.cn/common/assits/vp/characters/gunner_female/spitfire_female/skill/'" + characterid + ".png" + "special.png"
+            data[i].iconname = "https://hub.bbs.colg.cn/common/assits/vp/characters/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
 
           }
+          this.skills = data;
         })
     },
   })
