@@ -20,13 +20,19 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="app">
 
-  <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
+  <div v-for="diaindex in aasb">
     <H1>
-      <img :src="skill.iconname"><a :id="skill.name"></a><b><span style="color: #0366D6"></span><span
-          style="color: #000000">{{skill.name}}</span><span style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+      <b><img :src="diaindex.iconname"><a :id="diaindex.name"></a><span
+          style="color: #000000">{{diaindex.name}}</span><span style="font-size:12px"><a
+            href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table id="customers" frame="box" width="750px" style="text-align: left;">
+    <br><br>
+  </div>
+
+</div>
+
+<!-- <table id="customers" frame="box" width="750px" style="text-align: left;">
       <tr>
         <td colspan="5" style="background-color:#F5F8FA">
 
@@ -42,12 +48,7 @@
         <td style="background-color:#F5F8FA">技能性质</td>
         <td> </td>
       </tr>
-    </table>
-  </div>
-
-</div>
-
-
+</table>-->
 
                         </div>
                     </div>
@@ -56,8 +57,9 @@
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
                         <a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a><br><br>
+
 <div id="bpp">
-  <a v-for="skill in skills" :href="'#' + skill.name">{{skill.name}}</a><br>
+  <a v-for="diaindex in bbsb" :href="'#' + diaindex.name">{{diaindex.name}}</a><br>
 </div>
 
                     </div>
@@ -76,40 +78,44 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+
 <script>
-  const sharedState = Vue.observable({
-    skills: []
-  });
-
-  fetch('https://seicing.com/js/dnf/test.json')
-    .then(response => response.json())
-    .then(json => {
-      const data = json.data;
-
-      for (let i = 0; i < data.length; i++) {
-        if (data[i]) {
-          data[i].iconname =
-            "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" +
-            data[i].skillId +
-            ".png";
-        }
-      }
-      sharedState.skills = data;
-    });
-
-  const vm1 = new Vue({
+  var imgAll = [];
+  const vm = new Vue({
     el: '#app',
-    data() {
-      return sharedState;
-    }
-  });
+    data: {
+      aasb: [],
+    },
+    created() {
+      fetch('https://seicing.com/js/dnf/test.json')
+        .then(response => response.json())
+        .then(json => {
+          this.aasb = json
+          for (var i = 0; i < json.length; i++) {
+            json[i].skillids = json[i]['skillId']
+            json[i].iconname = "https://hub.bbs.colg.cn/common/assits/vp/characters/gunner_female/spitfire_female/skill/" + json[i].skillids + ".png"
+          }
+        })
+    },
+  })
 
   const vm2 = new Vue({
     el: '#bpp',
-    data() {
-      return sharedState;
-    }
-  });
+    data: {
+      bbsb: [],
+    },
+    created() {
+      fetch('https://seicing.com/js/dnf/test.json')
+        .then(response => response.json())
+        .then(json => {
+          this.bbsb = json
+          for (var i = 0; i < json.length; i++) {
+
+          }
+        })
+    },
+  })
+
 </script>
 
 </html>
