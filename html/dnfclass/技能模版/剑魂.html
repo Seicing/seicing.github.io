@@ -20,7 +20,7 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="app">
 
-  <div style="float:left;" v-for="skill in skills">
+  <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
     <H1>
       <img :src="skill.iconname"><a :id="skill.name"></a><b><span style="color: #0366D6"></span><span
           style="color: #000000">{{skill.name}}</span><span style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
@@ -76,34 +76,53 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+
 <script>
-  const sharedState = Vue.observable({
-    skills: []
-  });
-
-  fetch('https://seicing.com/js/dnf/test.json')
-    .then(response => response.json())
-    .then(json => {
-      const data = json.data;
-      for (let i = 0; i < data.length; i++) {
-        data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png";
-      }
-      sharedState.skills = data;
-    });
-
-  const vm1 = new Vue({
+  var imgAll = [];
+  const vm = new Vue({
     el: '#app',
     data() {
-      return sharedState;
-    }
-  });
+      return {
+        skills: []
+      };
+    },
+    created() {
+      fetch('https://seicing.com/js/dnf/test.json')
+        .then(response => response.json())
+        .then(json => {
+          const data = json.data;
+          for (var i = 0; i < data.length; i++) {
+
+            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
+
+          }
+          this.skills = data;
+        })
+    },
+  })
+
 
   const vm2 = new Vue({
     el: '#bpp',
     data() {
-      return sharedState;
-    }
-  });
+      return {
+        skills: []
+      };
+    },
+    created() {
+      fetch('https://seicing.com/js/dnf/test.json')
+        .then(response => response.json())
+        .then(json => {
+          const data = json.data;
+          for (var i = 0; i < data.length; i++) {
+
+            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
+
+          }
+          this.skills = data;
+        })
+    },
+  })
 </script>
 
 </html>
