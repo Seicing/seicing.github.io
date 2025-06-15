@@ -20,7 +20,7 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="app">
 
-  <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
+  <div style="float:left;" v-for="skill in skills">
     <H1>
       <img :src="skill.iconname"><a :id="skill.name"></a><b><span style="color: #0366D6"></span><span
           style="color: #000000">{{skill.name}}</span><span style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
@@ -29,18 +29,18 @@
     <table id="customers" frame="box" width="750px" style="text-align: left;">
       <tr>
         <td colspan="5" style="background-color:#F5F8FA">
-          {{skill.tooltip}}
+
         </td>
       </tr>
       <tr>
         <td style="background-color:#F5F8FA">习得等级</td>
-        <td>啊啊啊</td>
+        <td> </td>
         <td style="background-color:#F5F8FA">精通等级</td>
-        <td>啊啊啊</td>
+        <td> </td>
         <td style="background-color:#F5F8FA">最大等级</td>
-        <td>啊啊啊</td>
+        <td> </td>
         <td style="background-color:#F5F8FA">技能性质</td>
-        <td>啊啊啊</td>
+        <td> </td>
       </tr>
     </table>
   </div>
@@ -57,7 +57,7 @@
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
                         <a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a><br><br>
 <div id="bpp">
-  <a v-for="skill in skills" :key="skill.skillId" :href="skill.name">{{skill.name}}</a><br>
+  <a v-for="skill in skills" :href="'#' + skill.name">{{skill.name}}</a><br>
 </div>
 
                     </div>
