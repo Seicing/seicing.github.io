@@ -86,14 +86,16 @@
     .then(json => {
       const data = json.data;
 
-      data.forEach(skill => {
-        if (skill) {
-          skill.iconname =
+      for (let i = 0; i < data.length; i++) {
+        if (data[i]) {
+
+          data[i].iconname =
             "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" +
-            skill.skillId +
+            data[i].skillId +
             ".png";
+
         }
-      });
+      }
 
       sharedState.skills = data
         .filter(skill => skill !== null)
