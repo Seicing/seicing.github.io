@@ -56,11 +56,10 @@
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
                         <a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a><br><br>
-<!--
 <div id="bpp">
   <a v-for="skill in skills" :href="'#' + skill.name">{{skill.name}}</a><br>
 </div>
--->
+
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -78,28 +77,39 @@
 
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script>
-  var imgAll = [];
-  const vm = new Vue({
+  const sharedState = Vue.observable({
+    skills: []
+  });
+
+  fetch('https://seicing.com/js/dnf/test.json')
+    .then(response => response.json())
+    .then(json => {
+      const data = json.data;
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i]) {
+          data[i].iconname =
+            "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" +
+            data[i].skillId +
+            ".png";
+        }
+      }
+      sharedState.skills = data;
+    });
+
+  const vm1 = new Vue({
     el: '#app',
     data() {
-      return {
-        skills: []
-      };
-    },
-    created() {
-      fetch('https://seicing.com/js/dnf/test.json')
-        .then(response => response.json())
-        .then(json => {
-          const data = json.data;
-          for (var i = 0; i < data.length; i++) {
+      return sharedState;
+    }
+  });
 
-            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
-
-          }
-          this.skills = data;
-        })
-    },
-  })
+  const vm2 = new Vue({
+    el: '#bpp',
+    data() {
+      return sharedState;
+    }
+  });
 </script>
 
 </html>
