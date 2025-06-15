@@ -1,1 +1,326 @@
-{"code":200,"message":"Success","data":{"name":"武器奥义","type":"passive","desc":"领悟武器奥义， 学习后， 可增加所有武器的精通等级。\n\n1级时， 可使所有武器精通各提升2级； 以后技能每提升1级时， 武器精通提升1级。","descDetail":"领悟武器奥义， 学习后， 可增加所有武器的精通等级。\n\n1级时， 可使所有武器精通各提升2级； 以后技能每提升1级时， 武器精通提升1级。","consumeItem":null,"descSpecial":null,"maxLevel":30,"requiredLevel":15,"requiredLevelRange":3,"preRequiredSkill":null,"jobId":"41f1cdc2ff58bb5fdc287be0db2a8df3","jobName":"鬼剑士(男)","levelInfo":{"optionDesc":null,"rows":[{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":1,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":2,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":3,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":4,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":5,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":6,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":7,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":8,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":9,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":10,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":11,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":12,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":13,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":14,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":15,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":16,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":17,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":18,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":19,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":20,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":21,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":22,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":23,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":24,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":25,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":26,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":27,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":28,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":29,"optionDesc":null,"optionValue":null},{"castingTime":null,"coolTime":null,"consumeMp":null,"detail":null,"level":30,"optionDesc":null,"optionValue":null}]},"attribute":null,"evolution":null,"enhancement":null}}
+[
+    {
+        "skillId": "717f1e2104fe4b796f800352fa143ecc",
+        "name": "后撩踢",
+        "requiredLevel": 1,
+        "type": "active"
+    },
+    {
+        "skillId": "128b9ddef2262f40723deae4407bdb42",
+        "name": "浮空弹",
+        "requiredLevel": 1,
+        "type": "active"
+    },
+    {
+        "skillId": "7822d6d52e10964a6755f142c666b494",
+        "name": "后跳",
+        "requiredLevel": 1,
+        "type": "active"
+    },
+    {
+        "skillId": "5a56514f35cf0270ae8d6c65f8fefd78",
+        "name": "基础精通",
+        "requiredLevel": 1,
+        "type": "passive"
+    },
+    {
+        "skillId": "ce26c6b69d02a440a81b552bec94f03b",
+        "name": "受身蹲伏",
+        "requiredLevel": 1,
+        "type": "active"
+    },
+    {
+        "skillId": "12dca7fbf791e882b025a0d916181673",
+        "name": "攻击类型转换",
+        "requiredLevel": 1,
+        "type": "passive"
+    },
+    {
+        "skillId": "892ef624d8bf3d7fc045f84825fd6104",
+        "name": "防具精通",
+        "requiredLevel": 1,
+        "type": "passive"
+    },
+    {
+        "skillId": "01c3a2fb793d293a25ed8dc7a0d70c1a",
+        "name": "M-137格林机枪",
+        "requiredLevel": 5,
+        "type": "active"
+    },
+    {
+        "skillId": "8ee0099656df08a0b39225f8a21d514b",
+        "name": "RX-78追击者",
+        "requiredLevel": 5,
+        "type": "active"
+    },
+    {
+        "skillId": "a6c8f69107f8c4f5d1a0c7a57d000290",
+        "name": "银弹",
+        "requiredLevel": 5,
+        "type": "active"
+    },
+    {
+        "skillId": "1dad88963abdc96b091fcab185a8820d",
+        "name": "重火器拔击",
+        "requiredLevel": 5,
+        "type": "passive"
+    },
+    {
+        "skillId": "0969cd4054d93da07708108c0cc1c4b5",
+        "name": "上旋踢",
+        "requiredLevel": 10,
+        "type": "active"
+    },
+    {
+        "skillId": "4655101518604f874721b3cc249aae10",
+        "name": "钉刺射",
+        "requiredLevel": 10,
+        "type": "active"
+    },
+    {
+        "skillId": "8c2379737c5acc935c1731f67f607655",
+        "name": "炙烤",
+        "requiredLevel": 10,
+        "type": "active"
+    },
+    {
+        "skillId": "dcd536f1674630f01fc9667bb202b851",
+        "name": "浮空铲",
+        "requiredLevel": 10,
+        "type": "active"
+    },
+    {
+        "skillId": "2b340542e776818b78f3212af184bd6b",
+        "name": "强化 - 后跳",
+        "requiredLevel": 10,
+        "type": "passive"
+    },
+    {
+        "skillId": "1fea5a626f15230237946a11a9d11582",
+        "name": "跃翔",
+        "requiredLevel": 10,
+        "type": "active"
+    },
+    {
+        "skillId": "0dbdeaf846356f8b9380f8fbb8e97377",
+        "name": "烟尘弹",
+        "requiredLevel": 10,
+        "type": "active"
+    },
+    {
+        "skillId": "9dda3f4a849dba1a288dd65e116860f2",
+        "name": "特性弹",
+        "requiredLevel": 15,
+        "type": "active"
+    },
+    {
+        "skillId": "c9664191611af31142e052dfaef84530",
+        "name": "刺踢",
+        "requiredLevel": 15,
+        "type": "active"
+    },
+    {
+        "skillId": "8f73f243041c2d27739fe7696f02bf9b",
+        "name": "M-3喷火器",
+        "requiredLevel": 15,
+        "type": "active"
+    },
+    {
+        "skillId": "4224f9b0b8c7c903e9a1e0f9d9f6d04d",
+        "name": "单兵推进器",
+        "requiredLevel": 15,
+        "type": "passive"
+    },
+    {
+        "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+        "name": "空中射击",
+        "requiredLevel": 15,
+        "type": "active"
+    },
+    {
+        "skillId": "de3fea2d65c597f4d55c70a02b97fc79",
+        "name": "G-14手雷",
+        "requiredLevel": 15,
+        "type": "active"
+    },
+    {
+        "skillId": "c47b66efd27845ef14954928ea2f95c8",
+        "name": "超负荷装填",
+        "requiredLevel": 15,
+        "type": "active"
+    },
+    {
+        "skillId": "3829c15bf5f520c13998a3479ba0ce7b",
+        "name": "弹药改良",
+        "requiredLevel": 20,
+        "type": "passive"
+    },
+    {
+        "skillId": "0113c8b1306ca76d208f83f2d093dd62",
+        "name": "手雷精通",
+        "requiredLevel": 20,
+        "type": "passive"
+    },
+    {
+        "skillId": "fc1262c19f3d0477ee8eda47b8db8696",
+        "name": "暴击",
+        "requiredLevel": 20,
+        "type": "passive"
+    },
+    {
+        "skillId": "bae12a6dc7d22a5cf149673e88ddda28",
+        "name": "兵器研究",
+        "requiredLevel": 20,
+        "type": "passive"
+    },
+    {
+        "skillId": "2ff50c35efcf0f287c4c418c8454da48",
+        "name": "M18阔剑地雷",
+        "requiredLevel": 20,
+        "type": "active"
+    },
+    {
+        "skillId": "45442bbbe33540b4deeec29437dae70c",
+        "name": "快速拔枪",
+        "requiredLevel": 25,
+        "type": "passive"
+    },
+    {
+        "skillId": "78be08a3f8c834d3b06fa20c6a08c5a5",
+        "name": "交叉射击",
+        "requiredLevel": 25,
+        "type": "active"
+    },
+    {
+        "skillId": "c61f5a010370101402b05b21916c2071",
+        "name": "G-35L感电手雷",
+        "requiredLevel": 25,
+        "type": "active"
+    },
+    {
+        "skillId": "3c5604bdbb0240b8f130f59ab40509c3",
+        "name": "爆裂弹",
+        "requiredLevel": 30,
+        "type": "active"
+    },
+    {
+        "skillId": "d0cdaca82892e54097f22a1f60817048",
+        "name": "贯穿弹",
+        "requiredLevel": 30,
+        "type": "active"
+    },
+    {
+        "skillId": "202edb928046f4fa6dedf6337377efd5",
+        "name": "G-18C冰冻手雷",
+        "requiredLevel": 30,
+        "type": "active"
+    },
+    {
+        "skillId": "a2d943797daca862a6f321aca6ac9bfa",
+        "name": "C4飞弹",
+        "requiredLevel": 35,
+        "type": "active"
+    },
+    {
+        "skillId": "3fb8395ae3b81bd608e0c4223a8eb534",
+        "name": "聚合弹",
+        "requiredLevel": 35,
+        "type": "active"
+    },
+    {
+        "skillId": "1803b6a67047cafb9e289b4f33cc507b",
+        "name": "凝固汽油弹",
+        "requiredLevel": 40,
+        "type": "active"
+    },
+    {
+        "skillId": "845e0ce3235e19f60cc82a082d072cba",
+        "name": "镭射狙击",
+        "requiredLevel": 45,
+        "type": "active"
+    },
+    {
+        "skillId": "b89c9ab317bc0a443f6497b7cca2f6a8",
+        "name": "弹药强化",
+        "requiredLevel": 48,
+        "type": "passive"
+    },
+    {
+        "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+        "name": "EMP磁暴",
+        "requiredLevel": 50,
+        "type": "active"
+    },
+    {
+        "skillId": "e0daa922b19cdc35de879e938361464e",
+        "name": "G-61重力手雷",
+        "requiredLevel": 60,
+        "type": "active"
+    },
+    {
+        "skillId": "1bf9711f3f15865e38d7dce51c6b5a8c",
+        "name": "超真空弹 : 切利",
+        "requiredLevel": 70,
+        "type": "active"
+    },
+    {
+        "skillId": "f45301a5590cccefbe0becf2f8d029f5",
+        "name": "制空掌握",
+        "requiredLevel": 75,
+        "type": "passive"
+    },
+    {
+        "skillId": "9ceb0c55f40f1fc0fe0fcc65c8fee3a0",
+        "name": "开火",
+        "requiredLevel": 75,
+        "type": "active"
+    },
+    {
+        "skillId": "3736fe00a26b0086c23db9a4426a5641",
+        "name": "光子霰雷发射器",
+        "requiredLevel": 80,
+        "type": "active"
+    },
+    {
+        "skillId": "13a759aad5bb7fb7f08fae8f88c1cdbb",
+        "name": "决战之日",
+        "requiredLevel": 85,
+        "type": "active"
+    },
+    {
+        "skillId": "c381973d97e2e906ea53ba2add33d49c",
+        "name": "卓越之力",
+        "requiredLevel": 95,
+        "type": "passive"
+    },
+    {
+        "skillId": "a3c4f89a129ebd16896961fd273181e8",
+        "name": "超卓之心",
+        "requiredLevel": 95,
+        "type": "passive"
+    },
+    {
+        "skillId": "34e1bda921012f6018709f1c1a12b04d",
+        "name": "单兵推进器-02X",
+        "requiredLevel": 95,
+        "type": "passive"
+    },
+    {
+        "skillId": "c591d1827cfbe224031c704e21d07932",
+        "name": "空袭战略",
+        "requiredLevel": 95,
+        "type": "active"
+    },
+    {
+        "skillId": "e9a1a1cce5aeaac5414a98a625e7285c",
+        "name": "觉醒之抉择",
+        "requiredLevel": 100,
+        "type": "passive"
+    },
+    {
+        "skillId": "8ad90fd01b5844edd692fff54d9f74e7",
+        "name": "终解·制空霸权",
+        "requiredLevel": 100,
+        "type": "active"
+    }
+]
