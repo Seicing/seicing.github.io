@@ -20,7 +20,7 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="app">
 
-  <div style="float:left;" v-for="skill in skills">
+  <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
     <H1>
       <img :src="skill.iconname"><a :id="skill.name"></a><b><span style="color: #0366D6"></span><span
           style="color: #000000">{{skill.name}}</span><span style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
@@ -91,14 +91,26 @@
         .then(response => response.json())
         .then(json => {
           const data = json.data;
-          for (var i = 0; i < data.length; i++) {
+          const processedData = [];
 
-            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + ".png"
+          for (let i = 0; i < data.length; i++) {
+            const skill = data[i];
 
+            // 检查 skill 是否存在且包含 skillId
+            if (skill && skill.skillId) {
+              skill.iconname = `https://image.dnftools.com/character/gunner_female/spitfire_female/skill/${skill.skillId}.png`;
+              processedData.push(skill);
+            } else {
+              console.warn(`数据项无效或缺少 skillId：`, skill);
+            }
           }
-          this.skills = data;
+
+          this.skills = processedData;
         })
-    },
+        .catch(error => {
+          console.error("获取或解析 JSON 失败:", error);
+        });
+    }
   })
 </script>
 
