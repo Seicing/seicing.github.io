@@ -97,12 +97,7 @@
         }
       }
 
-      sharedState.skills = data
-        .filter(skill => skill !== null)
-        .map(skill => ({
-          ...skill,
-          iconname: "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + skill.skillId + ".png"
-        }));
+      sharedState.skills = data;
     });
 
   const vm1 = new Vue({
