@@ -20,10 +20,11 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="app">
 
-  <div style="float:left;" v-for="skill in skills" :key="skill.skillId">
+  <div style="float:left;" v-for="diaindex in aasb">
     <H1>
-      <img :src="skill.iconname"><a :id="skill.name"></a><b><span style="color: #0366D6"></span><span
-          style="color: #000000">{{skill.name}}</span><span style="font-size:12px"><a href="#top">[回到顶部]</a></b></span>
+      <img :src="diaindex.iconname"><a :id="diaindex.name"></a><b><span style="color: #0366D6"></span><span
+          style="color: #000000">{{diaindex.name}}</span><span style="font-size:12px"><a
+            href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <table id="customers" frame="box" width="750px" style="text-align: left;">
@@ -77,41 +78,27 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+
 <script>
+  $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
   var imgAll = [];
   const vm = new Vue({
     el: '#app',
-    data() {
-      return {
-        skills: []
-      };
+    data: {
+      aasb: [],
     },
     created() {
       fetch('https://seicing.com/js/dnf/test.json')
         .then(response => response.json())
         .then(json => {
-          const data = json.data;
-          const processedData = [];
-
-          for (let i = 0; i < data.length; i++) {
-            const skill = data[i];
-
-            // 检查 skill 是否存在且包含 skillId
-            if (skill && skill.skillId) {
-              skill.iconname = `https://image.dnftools.com/character/gunner_female/spitfire_female/skill/${skill.skillId}.png`;
-              processedData.push(skill);
-            } else {
-              console.warn(`数据项无效或缺少 skillId：`, skill);
-            }
+          this.aasb = json.data
+          for (var i = 0; i < json.length; i++) {
+            json[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + json[i]['skillId'] + ".png"
           }
-
-          this.skills = processedData;
         })
-        .catch(error => {
-          console.error("获取或解析 JSON 失败:", error);
-        });
-    }
+    },
   })
+
 </script>
 
 </html>
