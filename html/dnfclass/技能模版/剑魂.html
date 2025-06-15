@@ -20,13 +20,14 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="app">
 
-  <div style="float:left;" v-for="diaindex in aasb">
+  <div v-for="diaindex in aasb">
     <img :src="diaindex.iconname"><a :id="diaindex.name"></a>
     <H1>
       <b><span style="color: #000000">{{diaindex.name}}</span><span style="font-size:12px"><a
             href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <br><br>
   </div>
 
 </div>
@@ -92,7 +93,7 @@
           this.aasb = json
           for (var i = 0; i < json.length; i++) {
             json[i].skillids = json[i]['skillId']
-            json[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + json[i].skillids + ".png"
+            json[i].iconname = "https://hub.bbs.colg.cn/common/assits/vp/characters/gunner_female/spitfire_female/skill/" + json[i].skillids + ".png"
           }
         })
     },
