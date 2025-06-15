@@ -91,7 +91,7 @@
       fetch('https://seicing.com/js/dnf/test.json')
         .then(response => response.json())
         .then(json => {
-          this.aasb = json.data
+          this.aasb = json
           for (var i = 0; i < json.length; i++) {
             json[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + json[i]['skillId'] + ".png"
           }
