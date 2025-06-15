@@ -76,53 +76,46 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
-
 <script>
-  var imgAll = [];
-  const vm = new Vue({
+  const sharedState = Vue.observable({
+    skills: []
+  });
+
+  fetch('https://seicing.com/js/dnf/test.json')
+    .then(response => response.json())
+    .then(json => {
+      const data = json.data;
+
+      data.forEach(skill => {
+        if (skill) {
+          skill.iconname =
+            "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" +
+            skill.skillId +
+            ".png";
+        }
+      });
+
+      sharedState.skills = data
+        .filter(skill => skill !== null)
+        .map(skill => ({
+          ...skill,
+          iconname: "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + skill.skillId + ".png"
+        }));
+    });
+
+  const vm1 = new Vue({
     el: '#app',
     data() {
-      return {
-        skills: []
-      };
-    },
-    created() {
-      fetch('https://seicing.com/js/dnf/test.json')
-        .then(response => response.json())
-        .then(json => {
-          const data = json.data;
-          for (var i = 0; i < data.length; i++) {
-
-            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
-
-          }
-          this.skills = data;
-        })
-    },
-  })
-
+      return sharedState;
+    }
+  });
 
   const vm2 = new Vue({
     el: '#bpp',
     data() {
-      return {
-        skills: []
-      };
-    },
-    created() {
-      fetch('https://seicing.com/js/dnf/test.json')
-        .then(response => response.json())
-        .then(json => {
-          const data = json.data;
-          for (var i = 0; i < data.length; i++) {
-
-            data[i].iconname = "https://image.dnftools.com/character/gunner_female/spitfire_female/skill/" + data[i]['skillId'] + ".png"
-
-          }
-          this.skills = data;
-        })
-    },
-  })
+      return sharedState;
+    }
+  });
 </script>
 
 </html>
