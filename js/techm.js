@@ -488,7 +488,7 @@ let ayanami = {
     "火海": "火海<br>Inferno<br>创造一条炽热的毁灭之路。巨狼芬里厄会出现并发起冲锋，将敌人吞没在火焰中，然后爆发出末日般的炼狱之火，毁灭一切",
 
 
-    "高级防御工事": "高级防御工事<br>Advanced Fortifications<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>提高文明城堡建筑30%的攻击力，并减少10%的近战脆弱率",
+    "高级防御工事": "高级防御工事<br>Advanced Fortifications<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>提高高级防御建筑30%的攻击力，并减少10%的近战脆弱率",
 
 
     "克洛诺斯加成1": "克洛诺斯加成1<br>攻城单位和神话单位单位在损失时返还20%的资源消耗",
