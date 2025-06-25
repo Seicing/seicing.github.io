@@ -698,7 +698,7 @@ let ayanami = {
     "霹雳炸弹": "霹雳炸弹<br>Thunderclap Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火箭推车、掷弹兵、楼船在死亡时爆炸，发射的子弹会产生额外爆炸",
 
 
-    "契丹牧场": "契丹牧场<br>牧场取代农田，牧场和羊倌生成额外10%食物",
+    "契丹牧场": "契丹牧场<br>牧场取代农田",
     "契丹近战升级": "契丹近战升级<br>近战攻击升级效果翻倍",
     "契丹加速": "契丹加速<br>掷矛手、长矛兵和斥候骑兵系列训练和升级速度+25%",
     "契丹骑射手": "契丹骑射手<br>重装骑射手可在城堡时代升级，升级成本-50%",
@@ -722,7 +722,7 @@ let ayanami = {
     "魏攻城费用": "魏攻城费用<br>牵引抛石机和中式楼船费用-25%",
     "魏团队加成": "魏团队加成<br>骑兵对攻城器攻击力+2",
 
-    "屯田": "屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>步兵、射手、骑兵每分钟被动生产1.2食物",
+    "屯田": "屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>步兵、射手、骑兵每分钟被动生产1.8食物",
     "明光铠": "明光铠<br>Ming Guang Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65 <br>骑兵单位近战护甲+4",
 
     "吴虚空食物": "吴虚空食物<br>军事生产建筑和船坞提供65食物",
@@ -741,7 +741,7 @@ let ayanami = {
     "连弩战车": "连弩战车<br>War Chariot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>90 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>28<br>蜀独特攻城骑兵，能进行快速射击，可切换为掩护模式，覆盖更多的区域",
     "鲜卑掠骑兵": "鲜卑掠骑兵<br>Xianbei Raider<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>26<br>魏独特骑射手，可发动冲锋远程攻击",
     "刀剑手": "刀剑手<br>Jian Swordsman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>27<br>吴独特冲锋步兵，当达到伤害阈值后可提升移动速度和攻击力，但会损失护甲",
-    "掷弹兵": "掷弹兵<br>Grenadier<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>70 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>女真独特火药单位，可进行远程爆炸攻击，但不能进行近距离攻击",
+    "掷弹兵": "掷弹兵<br>Grenadier<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>女真独特火药单位，可进行远程爆炸攻击，但不能进行近距离攻击",
     "骆驼投石机": "骆驼投石机<br>Mounted Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>46<br>契丹独特远程攻城骑兵单位，炮弹落地后会持续燃烧",
 
     "牧场": "牧场<br>Pasture<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>可再生食物来源。提供一定量的食物，休牧后必须重建。每个牧场一次只能有两名村民工作",
@@ -755,8 +755,8 @@ let ayanami = {
     "曹操": "曹操<br>Cao Cao<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>魏国的独特骑兵英雄，可提升附近单位的攻击速度",
     "孙坚": "孙坚<br>Sun Jian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>吴国的独特骑兵英雄，可提升附近单位的移动速度",
 
-    "火矛兵": "火矛兵<br>Fire Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>使用火药的突击步兵，在近战前使用短程火器射击<br><br>升级到 精锐火矛兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
-    "精锐火矛兵": "精锐火矛兵<br>Elite Fire Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>使用火药的突击步兵，在近战前使用短程火器射击",
+    "火矛兵": "火矛兵<br>Fire Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>使用火药的突击步兵，在近战前使用短程火器射击<br><br>升级到 精锐火矛兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50",
+    "精锐火矛兵": "精锐火矛兵<br>Elite Fire Lancer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>使用火药的突击步兵，在近战前使用短程火器射击",
 
     "火箭推车": "火箭推车<br>Rocket Cart<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>130 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>155 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>32<br>可进行远程爆破攻击的攻城火药单位<br><br>升级到 重型火箭推车<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
     "重型火箭推车": "重型火箭推车<br>Elite Fire Rocket Cart<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>130 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>155 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>可进行远程爆破攻击的攻城火药单位",
@@ -1583,7 +1583,6 @@ function GoldShaftMining() {
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
 }
 function TreadmillCrane() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
