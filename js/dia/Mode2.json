@@ -1,0 +1,121 @@
+[
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "分支文本测试",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "分支对话选择<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:#DACF88'>伊丽丝</a> <a class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>洛雨希</a> <a class='buttonbranch3' onclick='Switchbranch3()' style='color:white'>夏修伦</a> <a class='buttonbranch4' onclick='Switchbranch4()' style='color:white'>羽三</a> <a class='buttonbranch5' onclick='Switchbranch5()' style='color:white'>文</a>",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "好困啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "孱仔是这样的",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch1",
+        "name": "伊丽丝",
+        "face": "Iris2Default",
+        "string": "人家只是认真过头而已啦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch2",
+        "name": "洛雨希",
+        "face": "Louich2Default",
+        "string": "哈哈，昨晚太晚睡了吧",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch3",
+        "name": "夏修伦",
+        "face": "SarchlentDefault",
+        "string": "要注意身体啊世清",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch4",
+        "name": "羽三",
+        "face": "IuimiDefault",
+        "string": "绿毛猩猩你又在胡说什么",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch5",
+        "name": "文",
+        "face": "Ven2Default",
+        "string": "这样的你我也不讨厌哦",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "普通文本测试",
+        "special": "dia3"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoSinisterSmile",
+        "string": "别说傻话了 <br>早点睡觉吧，<span id='红'>熬夜</span>都是<span id='金'>小雪人</span> <br>什么？你说谁是<span id='金'>小雪人</span>啊",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "我真的是<span id='金'>小雪人</span>吗……",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "难道不是吗",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "世清",
+        "face": "SeicingDefault",
+        "string": "这个<span id='绿'>肥肥的余头雪人</span>，跟你长得一模一样啊，别挣扎了，你就是小雪人",
+        "special": "dia2"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "呜",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "余",
+        "face": "YoDepressed",
+        "string": "<span id='大'>你会付出代价的</span>",
+        "special": "dia1"
+    },
+    {
+        "branch": "branch0",
+        "name": "",
+        "face": "",
+        "string": "余向世清发动了袭击",
+        "special": "dia3"
+    }
+]
