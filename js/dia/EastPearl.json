@@ -21,22 +21,6 @@
         "char": "KhazatarCommonFemale",
         "face": "smile",
         "con": "",
-        "string": "前往伊拉修莱德的航班……"
-    },
-    {
-        "dic": 3,
-        "name": "港务",
-        "char": "KhazatarCommonFemale",
-        "face": "smile",
-        "con": "",
-        "string": "……"
-    },
-    {
-        "dic": 3,
-        "name": "港务",
-        "char": "KhazatarCommonFemale",
-        "face": "smile",
-        "con": "",
         "string": "抱歉，两位是刚刚进城的旅行者吧"
     },
     {
@@ -57,6 +41,14 @@
     },
     {
         "dic": 3,
+        "name": "港务",
+        "char": "KhazatarCommonFemale",
+        "face": "smile",
+        "con": "",
+        "string": "实在是很抱歉……"
+    },
+    {
+        "dic": 3,
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "face": "sad",
@@ -72,14 +64,6 @@
         "string": "这也太巧合了"
     },
     {
-        "dic": 1,
-        "name": "世清",
-        "char": "SeicingWanderer",
-        "face": "serene",
-        "con": "AT",
-        "string": "怪不得过来的路上旅馆里都是人头涌动的，对于一个大城市来说也有点人多过头了"
-    },
-    {
         "dic": 3,
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
@@ -91,7 +75,7 @@
         "dic": 3,
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "face": "sad",
+        "face": "depress",
         "con": "CE",
         "string": "看起来要在这里待上一段时间了"
     },
@@ -99,8 +83,8 @@
         "dic": 3,
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "face": "sad",
-        "con": "CE",
+        "face": "depress",
+        "con": "",
         "string": "但愿不要太久"
     },
     {
