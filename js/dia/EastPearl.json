@@ -141,7 +141,7 @@
         "char": "SeicingWanderer",
         "face": "side",
         "con": "ATSP",
-        "string": "虽然已经离开了西景，在这里待一段时间也无妨，但伊丽丝的脸色突然变得很奇怪"
+        "string": "虽然已经离开了西景，在这里待一段时间也无妨，但伊丽丝的脸色突然变得很难看"
     },
     {
         "dic": 1,
@@ -221,7 +221,7 @@
         "char": "SarchlentAdventurer",
         "face": "smile",
         "con": "",
-        "string": "这样啊，你也被这个船运封锁也搞得很头大吗"
+        "string": "这样啊，你也被这个航运封锁也搞得很头大吗"
     },
     {
         "dic": 3,
@@ -230,14 +230,6 @@
         "face": "smile",
         "con": "",
         "string": "要坐下来喝酒聊聊吗？算我给你赔罪了"
-    },
-    {
-        "dic": 1,
-        "name": "世清",
-        "char": "SeicingWanderer",
-        "face": "serene",
-        "con": "ATSP",
-        "string": "我要橙汁"
     },
     {
         "dic": 2,
@@ -269,7 +261,7 @@
         "char": "SarchlentAdventurer",
         "face": "smile",
         "con": "",
-        "string": "阿格拉巴建造在一面荒凉的山壁上，龙脉位于山的内部深处，需要用特殊手段才能应用，也就是那个国宝"
+        "string": "阿格拉巴建造在一面荒凉的山壁上，龙脉位于山的内部深处，没有那个国宝的话，能源很难传输到城市"
     },
     {
         "dic": 1,
@@ -277,7 +269,7 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "也就是说，这三个大胆的家伙把关乎到这座都市生存的东西偷走了"
+        "string": "也就是说，这三个亡命之徒把这座都市赖以生存的东西偷走了"
     },
     {
         "dic": 1,
@@ -293,7 +285,7 @@
         "char": "SarchlentAdventurer",
         "face": "smile",
         "con": "",
-        "string": "谁知道，那国宝其实不值钱，谁敢要啊"
+        "string": "谁知道，那国宝其实不值钱，偷出去了又有谁敢要？"
     },
     {
         "dic": 3,
@@ -309,7 +301,7 @@
         "char": "SarchlentAdventurer",
         "face": "smile",
         "con": "",
-        "string": "对于商业都市来说，这样封锁船运带来的损失可以说难以想象啊"
+        "string": "毕竟对于商业都市来说，这样封锁航运带来的损失可以说难以想象啊"
     },
     {
         "dic": 1,
@@ -317,7 +309,7 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "阿格拉巴是一个岛屿城市，想要离开就一定要乘坐船只"
+        "string": "阿格拉巴坐落在孤岛上的孤峰的一侧，想要离开就一定要乘坐船只"
     },
     {
         "dic": 1,
@@ -344,12 +336,92 @@
         "string": "抓住他们只会是时间问题了吧"
     },
     {
+        "dic": 2,
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清的身体晃了一晃"
+    },
+    {
         "dic": 1,
         "name": "世清",
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "……"
+        "string": "呜……"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "surprise",
+        "con": "",
+        "string": "你喝不了酒吗？你好像晃了一下"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "不是酒的问题，船上也有这种感觉，过一会就好了"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "呼，感觉好多了，谢谢你的款待"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "happy",
+        "con": "",
+        "string": "要走了吗？难得有人跟我聊天呢"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "酒吧太嘈杂了，真的有点不适应"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "真可惜"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "对了，你叫阿彦对吧，再见"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "嗯，再见，夏修伦"
+    },
+    {
+        "dic": 2,
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "离开酒吧"
     },
     {
         "dic": 1,
@@ -371,33 +443,17 @@
         "dic": 1,
         "name": "世清",
         "char": "SeicingWanderer",
-        "face": "serene",
+        "face": "side",
         "con": "ATSP",
-        "string": "感觉活过来了一样，谢谢你的款待"
-    },
-    {
-        "dic": 3,
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "face": "happy",
-        "con": "",
-        "string": "要走了吗？难得有人跟我聊天呢"
+        "string": "(是晕船还没好吗？为什么身体老是不受控制摇晃)"
     },
     {
         "dic": 1,
         "name": "世清",
         "char": "SeicingWanderer",
-        "face": "serene",
+        "face": "side",
         "con": "ATSP",
-        "string": "嗯，酒吧太嘈杂了，真的有点不适应"
-    },
-    {
-        "dic": 3,
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "face": "smile",
-        "con": "",
-        "string": "真可惜，再见"
+        "string": "(回旅馆好好休息一下吧)"
     },
     {
         "dic": 2,
@@ -405,6 +461,38 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "离开酒吧"
+        "string": "回到旅馆"
+    },
+    {
+        "dic": 3,
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "smile",
+        "con": "",
+        "string": "阿彦，你回来了吗？"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "我去问了一下封锁航运的原因"
+    },
+    {
+        "dic": 2,
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清向伊丽丝诉说了自己知道的东西"
+    },
+    {
+        "dic": 3,
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "side",
+        "con": "",
+        "string": "……控制龙脉的国宝？"
     }
 ]
