@@ -133,13 +133,13 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "连阿格拉巴这种大型商业都市都进行了航运封锁，意味着发生了很重要的大事"
+        "string": "连阿格拉巴这种大型商业都市都进行了航运封锁，这里发生了什么吗？"
     },
     {
         "dic": 1,
         "name": "世清",
         "char": "SeicingWanderer",
-        "face": "serene",
+        "face": "side",
         "con": "ATSP",
         "string": "虽然已经离开了西景，在这里待一段时间也无妨，但伊丽丝的脸色突然变得很奇怪"
     },
@@ -147,7 +147,7 @@
         "dic": 1,
         "name": "世清",
         "char": "SeicingWanderer",
-        "face": "serene",
+        "face": "side",
         "con": "ATSP",
         "string": "说实话，我也挺好奇发生了什么事"
     },
@@ -176,20 +176,20 @@
         "string": "啊！"
     },
     {
-        "dic": 3,
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "face": "extra1",
-        "con": "SW",
-        "string": "啊，是你啊"
-    },
-    {
         "dic": 1,
         "name": "世清",
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
         "string": "真巧啊"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "SW",
+        "string": "啊，是你啊"
     },
     {
         "dic": 3,
@@ -213,7 +213,7 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "你想太多了，我是来收集情报的"
+        "string": "你想太多了，我是了解一下这里的情况的"
     },
     {
         "dic": 3,
@@ -221,7 +221,15 @@
         "char": "SarchlentAdventurer",
         "face": "smile",
         "con": "",
-        "string": "难道说是船运封锁的事情么"
+        "string": "这样啊，你也被这个船运封锁也搞得很头大吗"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "要坐下来喝酒聊聊吗？算我给你赔罪了"
     },
     {
         "dic": 1,
@@ -229,6 +237,118 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "嗯，如果一直这样封锁下去就麻烦了"
-    }
+        "string": "我要橙汁"
+    },
+    {
+        "dic": 2,
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "老板把饮料递给两人"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "窃贼闯进了宫殿盗走了国宝？"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "普通的国宝也就算了，这三个毛贼盯上的可是关乎到龙脉的国宝"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "阿格拉巴建造在一面荒凉的山壁上，龙脉位于山的内部深处，需要用特殊手段才能应用，也就是那个国宝"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "也就是说，这三个大胆的家伙把关乎到这座都市生存的东西偷走了"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "他们在想什么？想和整个国家为敌吗？"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "谁知道，那国宝其实不值钱，谁敢要啊"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "不过对于阿格拉巴人来说，这东西不惜一切代价也要夺回来是肯定的"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "对于商业都市来说，这样封锁船运带来的损失可以说难以想象啊"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "阿格拉巴是一个岛屿城市，想要离开就一定要乘坐船只"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "外海的卡哈扎塔海贼正在不分昼夜地巡逻吧，更不用说当地的船只了，他们根本不可能逃出去"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "是啊"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "抓住他们只会是时间问题了吧"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "……"
+    },
 ]
