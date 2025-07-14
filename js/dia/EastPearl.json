@@ -149,7 +149,7 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "师傅说过，酒吧这种龙蛇混杂的地方，总可以打听到想要的情报"
+        "string": "说实话，我也挺好奇发生了什么事"
     },
     {
         "dic": 1,
@@ -157,6 +157,78 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "打听一下到底发生了什么，说不定可以帮一下忙"
+        "string": "去酒吧收集一下情报吧"
+    },
+    {
+        "dic": 2,
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "前往酒吧，世清四处张望，看到了夏修伦"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "啊！"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "extra1",
+        "con": "SW",
+        "string": "啊，是你啊"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "真巧啊"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "SW",
+        "string": "你看起来不像是会来酒吧的人啊"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "extra1",
+        "con": "SW",
+        "string": "难道还在耿耿于怀吗？"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "你想太多了，我是来收集情报的"
+    },
+    {
+        "dic": 3,
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "难道说是船运封锁的事情么"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "嗯，如果一直这样封锁下去就麻烦了"
     }
 ]
