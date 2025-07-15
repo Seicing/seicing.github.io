@@ -129,24 +129,22 @@ const vm = new Vue({
 })
 
 function brIn(a) {
-    const selector = '.' + a;
-    const elements = document.querySelectorAll(selector);
+    const elements = document.querySelectorAll('.' + a);
     elements.forEach(element => {
         element.style.display = 'none';
     });
-    const selector2 = '#branch' + a;
-    const elements2 = document.querySelector(selector2);
+
+    const elements2 = document.getElementById('branch' + a);
     elements2.style.color = '#DACF88';
 }
 
 function brOut(a) {
-    const selector = '.' + a;
-    const elements = document.querySelectorAll(selector);
+    const elements = document.querySelectorAll('.' + a);
     elements.forEach(element => {
         element.style.display = 'block';
     });
-    const selector2 = '#branch' + a;
-    const elements2 = document.querySelector(selector2);
-    elements2.style.color = '#ffffff';
+
+    const elements2 = document.getElementById('branch' + a);
+    elements2.style.color = '#DACF88';
 }
 
