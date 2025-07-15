@@ -134,8 +134,7 @@ function brIn(a) {
         element.style.display = 'none';
     });
 
-    const elements2 = document.getElementById('branch' + a);
-    elements2.style.color = '#DACF88';
+    document.getElementById('branch' + a).style.color = '#DACF88';
 }
 
 function brOut(a) {
@@ -144,7 +143,6 @@ function brOut(a) {
         element.style.display = 'block';
     });
 
-    const elements2 = document.getElementById('branch' + a);
-    elements2.style.color = '#DACF88';
+    document.getElementById('branch' + a).style.color = '#ffffff';
 }
 
