@@ -125,13 +125,13 @@ const vm = new Vue({
                     }
                 }
             })
-    }
+    },
 })
 
 function brIn(a) {
     const elements = document.querySelectorAll('.' + a);
     elements.forEach(element => {
-        element.style.display = 'none';
+        element.style.display = 'block';
     });
     const el = 'branch' + a;
     document.getElementById(el).style.color = '#DACF88';
@@ -140,7 +140,7 @@ function brIn(a) {
 function brOut(a) {
     const elements = document.querySelectorAll('.' + a);
     elements.forEach(element => {
-        element.style.display = 'block';
+        element.style.display = 'none';
     });
     const el = 'branch' + a;
     document.getElementById(el).style.color = '#ffffff';
