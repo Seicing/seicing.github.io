@@ -149,15 +149,6 @@ const vm = new Vue({
                     }
                 }
             })
-    },
-
-
-    mounted() {
-        if (typeof window.afterVueMounted === 'function') {
-            this.$nextTick(() => {
-                window.afterVueMounted(this);
-            });
-        }
     }
 })
 
