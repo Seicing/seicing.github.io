@@ -62,7 +62,11 @@ const vm = new Vue({
                     if (json[i].dic == 4) {
 
                         if (json[i].branch != "") {
-                            json[i].bstyle = "float:left;display:none;";
+                            if (json[i].branch.includes("1")) {
+                                json[i].bstyle = "float:left;";
+                            } else {
+                                json[i].bstyle = "float:left;display:none;";
+                            }
                         } else {
                             json[i].bstyle = "float:left;";
                         }
@@ -87,7 +91,12 @@ const vm = new Vue({
                     if (json[i].dic == 1) {
 
                         if (json[i].branch != "") {
-                            json[i].bstyle = "float:left;display:none;";
+                            if (json[i].branch.includes("1")) {
+                                json[i].bstyle = "float:left;";
+                            } else {
+                                json[i].bstyle = "float:left;display:none;";
+                            }
+
                         } else {
                             json[i].bstyle = "float:left;";
                         }
@@ -112,7 +121,11 @@ const vm = new Vue({
                     if (json[i].dic == 3) {
 
                         if (json[i].branch != "") {
-                            json[i].bstyle = "float:right;display:none;";
+                            if (json[i].branch.includes("1")) {
+                                json[i].bstyle = "float:right;";
+                            } else {
+                                json[i].bstyle = "float:right;display:none;";
+                            }
                         } else {
                             json[i].bstyle = "float:right;";
                         }
@@ -137,7 +150,11 @@ const vm = new Vue({
                     if (json[i].dic == 2) {
 
                         if (json[i].branch != "") {
-                            json[i].bstyle = "float: left;position:relative;left:20%;display:none;";
+                            if (json[i].branch.includes("1")) {
+                                json[i].bstyle = "float: left;position:relative;left:20%;";
+                            } else {
+                                json[i].bstyle = "float: left;position:relative;left:20%;display:none;";
+                            }
                         } else {
                             json[i].bstyle = "float: left;position:relative;left:20%;";
                         }
@@ -149,9 +166,6 @@ const vm = new Vue({
                     }
                 }
             })
-    },
-    mounted() {
-        brAll();
     }
 })
 
