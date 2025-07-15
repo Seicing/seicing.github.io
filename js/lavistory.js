@@ -150,6 +150,16 @@ const vm = new Vue({
                 }
             })
     },
+
+
+    mounted() {
+        // ✅ 组件加载完成后执行公共钩子
+        if (typeof window.afterVueMounted === 'function') {
+            this.$nextTick(() => {
+                window.afterVueMounted(this);
+            });
+        }
+    }
 })
 
 function brIn(a) {
