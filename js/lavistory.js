@@ -150,6 +150,39 @@ const vm = new Vue({
                 }
             })
     },
+
+    mounted() {
+        this.starter();
+    },
+
+    methods: {
+        brInVue(a) {
+            const elements = document.querySelectorAll('.' + a);
+            elements.forEach(element => {
+                element.style.display = 'block';
+            });
+            const el = 'branch' + a;
+            document.getElementById(el).style.color = '#00ff00';
+        },
+
+        brOutVue(a) {
+            const elements = document.querySelectorAll('.' + a);
+            elements.forEach(element => {
+                element.style.display = 'none';
+            });
+            const el = 'branch' + a;
+            document.getElementById(el).style.color = '#EFDCB7';
+        },
+
+        starter() {
+            setTimeout(() => {
+                brInVue("A1");
+                brInVue("Z1");
+            }, 1000);
+        },
+    },
+
+
 })
 
 function brIn(a) {

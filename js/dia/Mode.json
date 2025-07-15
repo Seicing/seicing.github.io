@@ -153,7 +153,16 @@
         "string": "分支测试2<br><a id='branchZ1' onclick=\"brIn('Z1');brOut('Z2');\">分支1</a> <a id='branchZ2' onclick=\"brIn('Z2');brOut('Z1');\">分支2</a>"
     },
     {
-        "dic": 1,
+        "dic": 3,
+        "branch": "Z1",
+        "name": "余",
+        "char": "YoEmpireFlower",
+        "face": "smile",
+        "con": "",
+        "string": "这里是分支1哟"
+    },
+    {
+        "dic": 3,
         "branch": "Z1",
         "name": "余",
         "char": "YoEmpireFlower",
@@ -169,6 +178,15 @@
         "face": "fear",
         "con": "SW",
         "string": "阿呀，骇死我了"
+    },
+    {
+        "dic": 3,
+        "branch": "Z2",
+        "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "face": "sinister",
+        "con": "AL",
+        "string": "这里是分支2"
     },
     {
         "dic": 3,
