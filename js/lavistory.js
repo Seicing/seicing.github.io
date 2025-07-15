@@ -60,7 +60,13 @@ const vm = new Vue({
                     json[i].mouth = facer[4]
 
                     if (json[i].dic == 4) {
-                        json[i].bstyle = "float:left;";
+
+                        if (json[i].branch != "") {
+                            json[i].bstyle = "float:left;display:none;";
+                        } else {
+                            json[i].bstyle = "float:left;";
+                        }
+
                         json[i].tablelavivanar = "tablebana";
 
                         json[i].tr1 = "<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td>"
@@ -79,7 +85,13 @@ const vm = new Vue({
                     }
 
                     if (json[i].dic == 1) {
-                        json[i].bstyle = "float:left;";
+
+                        if (json[i].branch != "") {
+                            json[i].bstyle = "float:left;display:none;";
+                        } else {
+                            json[i].bstyle = "float:left;";
+                        }
+
                         json[i].tablelavivanar = "tablebana";
 
                         json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
@@ -98,7 +110,13 @@ const vm = new Vue({
                     }
 
                     if (json[i].dic == 3) {
-                        json[i].bstyle = "float:right;";
+
+                        if (json[i].branch != "") {
+                            json[i].bstyle = "float:right;display:none;";
+                        } else {
+                            json[i].bstyle = "float:right;";
+                        }
+
                         json[i].tablelavivanar = "tablebana";
 
                         json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
@@ -117,7 +135,13 @@ const vm = new Vue({
                     }
 
                     if (json[i].dic == 2) {
-                        json[i].bstyle = "float: left;position:relative;left:20%;";
+
+                        if (json[i].branch != "") {
+                            json[i].bstyle = "float: left;position:relative;left:20%;display:none;";
+                        } else {
+                            json[i].bstyle = "float: left;position:relative;left:20%;";
+                        }
+
                         json[i].tablelavivanar = "tablebana2";
                         json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);"
                         json[i].tr1 = "<td><span>" + json[i].texter + "</span></td>"
