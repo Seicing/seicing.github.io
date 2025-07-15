@@ -6,7 +6,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "分支测试<br><a id='branchA1' onclick='brIn(\\'A1\\');brOut(\\'A2\\');brOut(\\'A3\\');brOut(\\'A4\\');brOut(\\'A5\\');brOut(\\'A6\\');'>余</a> <a id='branchA2' onclick='brIn(\\'A2\\');brOut(\\'A1\\');brOut(\\'A3\\');brOut(\\'A4\\');brOut(\\'A5\\');brOut(\\'A6\\');'>伊丽丝</a> <a id='branchA3' onclick='brIn(\\'A3\\');brOut(\\'A1\\');brOut(\\'A2\\');brOut(\\'A4\\');brOut(\\'A5\\');brOut(\\'A6\\');'>洛雨希</a> <a id='branchA4' onclick='brIn(\\'A4\\');brOut(\\'A1\\');brOut(\\'A3\\');brOut(\\'A2\\');brOut(\\'A5\\');brOut(\\'A6\\');'>夏修伦</a> <a id='branchA5' onclick='brIn(\\'A5\\');brOut(\\'A1\\');brOut(\\'A3\\');brOut(\\'A4\\');brOut(\\'A2\\');brOut(\\'A6\\');'>羽三</a> <a id='branchA6' onclick='brIn(\\'A6\\');brOut(\\'A1\\');brOut(\\'A3\\');brOut(\\'A4\\');brOut(\\'A5\\');brOut(\\'A2\\');'>文</a>"
+        "string": "分支测试<br><a id='branchA1' onclick=\\\"brIn('A1');brOut('A2');brOut('A3');brOut('A4');brOut('A5');brOut('A6');\\\">余</a> <a id='branchA2' onclick=\\\"brIn('A2');brOut('A1');brOut('A3');brOut('A4');brOut('A5');brOut('A6');\\\">伊丽丝</a> <a id='branchA3' onclick=\\\"brIn('A3');brOut('A1');brOut('A2');brOut('A4');brOut('A5');brOut('A6');\\\">洛雨希</a> <a id='branchA4' onclick=\\\"brIn('A4');brOut('A1');brOut('A3');brOut('A2');brOut('A5');brOut('A6');\\\">夏修伦</a> <a id='branchA5' onclick=\\\"brIn('A5');brOut('A1');brOut('A3');brOut('A4');brOut('A2');brOut('A6');\\\">羽三</a> <a id='branchA6' onclick=\\\"brIn('A6');brOut('A1');brOut('A3');brOut('A4');brOut('A5');brOut('A2');\\\">文</a>"
     },
     {
         "dic": 1,
@@ -150,7 +150,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "分支测试2<br><a id='branchZ1' onclick='brIn(\\'Z1\\');brOut(\\'Z2\\');'>分支1</a> <a id='branchZ2' onclick='brIn(\\'Z2\\');brOut(\\'Z1\\');'>分支2</a>"
+        "string": "分支测试2<br><a id='branchZ1' onclick=\\\"brIn('Z1');brOut('Z2');\\\">分支1</a> <a id='branchZ2' onclick=\\\"brIn('Z2');brOut('Z1');\\\">分支2</a>"
     },
     {
         "dic": 1,
