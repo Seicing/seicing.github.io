@@ -149,6 +149,9 @@ const vm = new Vue({
                     }
                 }
             })
+    },
+    mounted() {
+        brAll();
     }
 })
 
