@@ -167,6 +167,6 @@ function brOut(a) {
         element.style.display = 'none';
     });
     const el = 'branch' + a;
-    document.getElementById(el).style.color = '#DACF88';
+    document.getElementById(el).style.color = '#EFDCB7';
 }
 
