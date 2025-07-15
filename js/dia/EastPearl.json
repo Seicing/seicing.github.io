@@ -261,7 +261,7 @@
         "char": "SarchlentAdventurer",
         "face": "smile",
         "con": "",
-        "string": "阿格拉巴建造在一面荒凉的山壁上，龙脉位于山的内部深处，没有那个国宝的话，能源很难传输到城市"
+        "string": "据说，阿格拉巴的龙脉在城市倚靠的山的内部深处，龙脉的能源没有那个国宝的话就难以应用"
     },
     {
         "dic": 1,
@@ -309,7 +309,7 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "阿格拉巴坐落在孤岛上的孤峰的一侧，想要离开就一定要乘坐船只"
+        "string": "阿格拉巴坐落在这座孤岛山峰之上，想要离开就一定要乘坐船只"
     },
     {
         "dic": 1,
@@ -469,7 +469,7 @@
         "char": "IrisPratenitsa",
         "face": "smile",
         "con": "",
-        "string": "阿彦，你回来了吗？"
+        "string": "阿彦，你回来了吗？你去哪了？"
     },
     {
         "dic": 1,
@@ -477,7 +477,7 @@
         "char": "SeicingWanderer",
         "face": "serene",
         "con": "ATSP",
-        "string": "我去问了一下封锁航运的原因"
+        "string": "去酒吧打探了一下封锁航运的原因"
     },
     {
         "dic": 2,
@@ -491,8 +491,64 @@
         "dic": 3,
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "face": "side",
+        "face": "surprise",
         "con": "",
         "string": "……控制龙脉的国宝？"
+    },
+    {
+        "dic": 3,
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "side",
+        "con": "",
+        "string": "阿格拉巴的龙脉在深处没错，但是龙脉的应用是大量魔科学工程的结果"
+    },
+    {
+        "dic": 3,
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "side",
+        "con": "",
+        "string": "现在阿格拉巴也没有停止能源的供应，这个传言会不会是经好几手后的结果呢？不过这东西很重要是可以确定的"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "这样啊"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "希望他们可以快点解决这个问题吧"
+    },
+    {
+        "dic": 1,
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "不出去走走吗？"
+    },
+    {
+        "dic": 3,
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "extra4",
+        "con": "",
+        "string": "没这个心情，而且，不知道为什么上岸后感觉有点不舒服"
+    },
+    {
+        "dic": 2,
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "未结束标记"
     }
 ]
