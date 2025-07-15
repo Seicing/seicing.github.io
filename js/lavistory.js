@@ -69,7 +69,7 @@ const vm = new Vue({
 
                         json[i].tablelavivanar = "tablebana";
 
-                        json[i].tr1 = "<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td>"
+                        json[i].tr1 = "<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>" + json[i].charname + "</span></td>"
                         json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
 
                         json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
@@ -94,7 +94,7 @@ const vm = new Vue({
 
                         json[i].tablelavivanar = "tablebana";
 
-                        json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
+                        json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
                         json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
 
                         json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
@@ -119,7 +119,7 @@ const vm = new Vue({
 
                         json[i].tablelavivanar = "tablebana";
 
-                        json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(215,204,134);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
+                        json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
                         json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
 
                         json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
@@ -150,39 +150,6 @@ const vm = new Vue({
                 }
             })
     },
-
-    mounted() {
-        this.starter();
-    },
-
-    methods: {
-        brInVue(a) {
-            const elements = document.querySelectorAll('.' + a);
-            elements.forEach(element => {
-                element.style.display = 'block';
-            });
-            const el = 'branch' + a;
-            document.getElementById(el).style.color = '#00ff00';
-        },
-
-        brOutVue(a) {
-            const elements = document.querySelectorAll('.' + a);
-            elements.forEach(element => {
-                element.style.display = 'none';
-            });
-            const el = 'branch' + a;
-            document.getElementById(el).style.color = '#EFDCB7';
-        },
-
-        starter() {
-            setTimeout(() => {
-                brInVue("A1");
-                brInVue("Z1");
-            }, 1000);
-        },
-    },
-
-
 })
 
 function brIn(a) {
@@ -200,6 +167,6 @@ function brOut(a) {
         element.style.display = 'none';
     });
     const el = 'branch' + a;
-    document.getElementById(el).style.color = '#EFDCB7';
+    document.getElementById(el).style.color = '#D0C9B7';
 }
 
