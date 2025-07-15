@@ -1,14 +1,16 @@
 [
     {
         "dic": 2,
+        "branch": "",
         "name": "",
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "测试"
+        "string": "分支测试<br><a id='branchA1' onclick='brIn(A1);brOut(A2);brOut(A3);brOut(A4);brOut(A5);brOut(A6);'>伊丽丝</a> <a id='branchA2' onclick='brIn(A2);brOut(A1);brOut(A3);brOut(A4);brOut(A5);brOut(A6);'>伊丽丝</a> <a id='branchA3' onclick='brIn(A3);brOut(A1);brOut(A2);brOut(A4);brOut(A5);brOut(A6);'>伊丽丝</a> <a id='branchA4' onclick='brIn(A4);brOut(A1);brOut(A3);brOut(A2);brOut(A5);brOut(A6);'>伊丽丝</a> <a id='branchA5' onclick='brIn(A5);brOut(A1);brOut(A3);brOut(A4);brOut(A2);brOut(A6);'>伊丽丝</a> <a id='branchA6' onclick='brIn(A6);brOut(A1);brOut(A3);brOut(A4);brOut(A5);brOut(A2);'>伊丽丝</a>"
     },
     {
         "dic": 1,
+        "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
         "face": "serene",
@@ -17,6 +19,7 @@
     },
     {
         "dic": 3,
+        "branch": "A1",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "sinister",
@@ -25,6 +28,7 @@
     },
     {
         "dic": 3,
+        "branch": "A2",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "face": "smile",
@@ -33,6 +37,7 @@
     },
     {
         "dic": 3,
+        "branch": "A3",
         "name": "洛雨希",
         "char": "LouichRozenSchutze",
         "face": "smile",
@@ -41,6 +46,7 @@
     },
     {
         "dic": 3,
+        "branch": "A4",
         "name": "夏修伦",
         "char": "SarchlentConqueror",
         "face": "smile",
@@ -49,6 +55,7 @@
     },
     {
         "dic": 3,
+        "branch": "A5",
         "name": "羽三",
         "char": "IuimiFlameEmpress",
         "face": "depress",
@@ -57,6 +64,7 @@
     },
     {
         "dic": 3,
+        "branch": "A6",
         "name": "文",
         "char": "VenCelestial",
         "face": "smile",
@@ -65,6 +73,7 @@
     },
     {
         "dic": 2,
+        "branch": "",
         "name": "",
         "char": "",
         "face": "smile",
@@ -73,6 +82,7 @@
     },
     {
         "dic": 3,
+        "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "sinister",
@@ -81,6 +91,7 @@
     },
     {
         "dic": 3,
+        "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "depress",
@@ -89,6 +100,7 @@
     },
     {
         "dic": 1,
+        "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
         "face": "serene",
@@ -97,6 +109,7 @@
     },
     {
         "dic": 1,
+        "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
         "face": "serene",
@@ -105,6 +118,7 @@
     },
     {
         "dic": 3,
+        "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "depress",
@@ -113,6 +127,7 @@
     },
     {
         "dic": 3,
+        "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "depress",
@@ -121,10 +136,65 @@
     },
     {
         "dic": 2,
+        "branch": "",
         "name": "",
         "char": "",
         "face": "smile",
         "con": "",
         "string": "余向世清发动了袭击"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "分支测试2<br><a id='branchZ1' onclick='brIn(Z1);brOut(Z2);'>分支1</a> <a id='branchZ2' onclick='brIn(Z2);brOut(Z1);'>分支1</a>"
+    },
+    {
+        "dic": 1,
+        "branch": "Z1",
+        "name": "余",
+        "char": "YoEmpireFlower",
+        "face": "surprise",
+        "con": "",
+        "string": "文本测试文本测试文本测试文…… "
+    },
+    {
+        "dic": 3,
+        "branch": "Z1",
+        "name": "余",
+        "char": "YoEmpireFlower",
+        "face": "fear",
+        "con": "SW",
+        "string": "阿呀，骇死我了"
+    },
+    {
+        "dic": 3,
+        "branch": "Z2",
+        "name": "余",
+        "char": "YoEmpireFlower",
+        "face": "cry",
+        "con": "CE",
+        "string": "怎……怎么会这样……"
+    },
+    {
+        "dic": 3,
+        "branch": "Z2",
+        "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "face": "depress",
+        "con": "AL",
+        "string": "真是愚蠢"
+    },
+    {
+        "dic": 3,
+        "branch": "Z2",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "sad",
+        "con": "ALCE",
+        "string": "令人绝望的愚蠢"
     }
 ]

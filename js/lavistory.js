@@ -50,6 +50,12 @@ const vm = new Vue({
                         json[i].baseys = 'base';
                     }
 
+                    if (json[i].branch != "") {
+                        json[i].bclass = json[i].branch;
+                    } else {
+                        json[i].bclass = 'master';
+                    }
+
                     json[i].brow = facer[3]
                     json[i].mouth = facer[4]
 
@@ -121,3 +127,26 @@ const vm = new Vue({
             })
     }
 })
+
+function brIn(a) {
+    const selector = '.' + a;
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(element => {
+        element.style.display = 'none';
+    });
+    const selector2 = '#branch' + a;
+    const elements2 = document.querySelector(selector2);
+    elements2.style.color = '#DACF88';
+}
+
+function brOut(a) {
+    const selector = '.' + a;
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(element => {
+        element.style.display = 'block';
+    });
+    const selector2 = '#branch' + a;
+    const elements2 = document.querySelector(selector2);
+    elements2.style.color = '#ffffff';
+}
+
