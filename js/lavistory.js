@@ -133,8 +133,8 @@ function brIn(a) {
     elements.forEach(element => {
         element.style.display = 'none';
     });
-
-    document.getElementById('branch' + a).style.color = '#DACF88';
+    const sp2 = 'branch' + a;
+    document.getElementById(sp2).style.color = '#DACF88';
 }
 
 function brOut(a) {
@@ -142,7 +142,7 @@ function brOut(a) {
     elements.forEach(element => {
         element.style.display = 'block';
     });
-
-    document.getElementById('branch' + a).style.color = '#ffffff';
+    const sp2 = 'branch' + a;
+    document.getElementById(sp2).style.color = '#ffffff';
 }
 
