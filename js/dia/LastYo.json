@@ -1,653 +1,839 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "最终章一开始会根据好感度，在世清生日的那一天进行一次结算触发特殊事件<br>特殊事件需要满足伊丽丝、羽三、文、余的全部羁绊等级满级后才会触发真结局特殊事件<br>真结局特殊事件后连接“余的出走”事件，否则连接正常的“千年战争事件”",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "第二天早上，世清醒来，看到了坐在旁边的余",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingTerrible",
         "string": "…………………………",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Embarrassed",
         "string": "你醒了啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Embarrassed",
         "string": "觉得累的话可以多睡一会",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "她们呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Embarrassed",
         "string": "在外面",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoUncomfortable",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Uncomfortable",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "呜……呜……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "余？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "我还是无法接受",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "我才是你明媒正娶的妻子不是吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "我知道……我宁愿骗自己是我配不起你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "我不想让你作出残酷的抉择",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "即使是这样我也会伤心的啊！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoUncomfortable",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Uncomfortable",
         "string": "我……我……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "余！！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "余独自一人跑了出去",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "……一面哭着一面跑掉了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiCloseEye",
         "string": "昨晚……可能是真的伤到了她的心",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiCloseEye",
         "string": "我可以理解这个感受",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "你们……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "文",
+        "char": "VenCelestial",
+        "con": "SP",
         "face": "Ven2Depressed",
         "string": "我们这些第三者不好说什么",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "文",
+        "char": "VenCelestial",
+        "con": "SP",
         "face": "Ven2DepressedCE",
         "string": "她是真正的爱你所以才会让自己忍受了这么久吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "昨晚我们就感受到不对劲了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "虽然看上去很快乐，但是",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "完全就是在强颜欢笑",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "世清",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "我们在这点只能……做好自己的本分，没有帮助你的办法",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "追上去吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "谢谢你们……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清离开了三人朝着余的方向追了上去",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "沿着余的踪迹追赶了几天几夜，来到了摄崎城附近的铃兰草原，看到了入侵西景的尤伊战舰和逃亡的摄崎难民",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "这……这是什么？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "西景市民",
+        "char": "SeigineCommonMale",
+        "con": "",
         "face": "SeigineCommonMale",
         "string": "老爷，快点逃命吧，这里接下来就要成为战场了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "这位先生，这里到底发生了什么？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "西景市民",
+        "char": "SeigineCommonFemale",
+        "con": "",
         "face": "SeigineCommonFemale",
         "string": "您不知道吗？尤伊人在前天突然进攻摄崎了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "西景市民",
+        "char": "SeigineCommonFemale",
+        "con": "",
         "face": "SeigineCommonFemale",
         "string": "昨天开始我们的军队开始往这里集结了，老爷您到底是什么人啊，竟然只身深入战场之中",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "西景市民",
+        "char": "SeigineCommonMale",
+        "con": "",
         "face": "SeigineCommonMale",
         "string": "不要说了！再晚逃一点小命就没了！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "为什么会这样……尤伊人为什么会突然进攻西景",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "很好奇对吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "世行？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "你出现在这里……真不希望是我想象中的那样",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "你一直都默认我会背叛你，而我一直压制自己的本性为你效忠",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "我们竟然可以在这种诡异的默契中走到现在",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "那我明白了……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "你有很多地方让我看不顺眼……但是这种冷酷的聪慧才是我最厌恶的地方",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "你就不能正常地惊讶然后恐惧吗？我亲爱的哥哥啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentDefault",
         "string": "我永远都试图证明我比你更强，为这个国家投入了更多，但是，世人只看到了你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentDefault",
         "string": "我就是你的影子啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "尤伊人入侵和你准时在这里出现，这不是巧合可以解释的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "你在执行某种反叛我的计划……出卖国家让尤伊人入侵，也是计划的一部分？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "你最值得我学习的地方就是冷静，在这里被你挑拨成功就功败垂成了呢，反正你对我的侮辱在你死后就毫无意义了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "比起我个人的尊严，能够准确无误地达成自己的目的更加重要……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
-        "string": "切换条件对话<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:#DACF88'>真结局</a>   <a  class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>千年战争</a>",
-        "special": "dia3"
+        "string": "切换条件对话<br><a id='branchA1' style='color:#00ff00'  onclick=\"brIn('Z1');brOut('Z2');\">真结局</a> <a id='branchA2' onclick=\"brIn('Z2');brOut('Z1');\">千年战争</a>",
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "然后就是……我知道那个白痴皇后是你的底线",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "她自己跑来这里有点预料外，但是可以发挥引诱你进入圈套的作用就没问题了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "你还真爱你那个白痴皇后啊，把她绑架过来让你马不停蹄地跑来这里了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "她如果出了什么问题，就算是兄弟，今天你也只能下地狱后悔了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "我要的就是这个效果啊，再愤怒一点吧，你着急的样子真是让人愉悦啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "………………",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "坚信我是亲手弑杀父亲和弟弟才走到这个位置的你，不会有人对你成功造反提起质疑，因为强者为尊是西景的法则",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "为什么要把我引到这个混乱的战场，把我的死亡伪装成战死呢，而且不使用部下消耗我的体力，而是……一对一单挑？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentDefault",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSmile",
         "string": "因为我讨厌你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "讨厌你说话的语调，讨厌你那慢悠悠的性格，讨厌你那被人信赖的实力，讨厌你的一切",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "我要确实地证明自己是超越你的存在，用我自己的实力确实地击杀你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "你必须要有一个和我死斗到最后的理由，否则即使你被击败了你也会在审时度势之后逃跑……我无法容忍你继续活下去",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "你和我之间一定要死一个，你胆敢逃跑的话，你的余会被我找到，并且将会遭遇让你一辈子刻骨铭心的非人对待",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "你和我之间一定要死一个，你胆敢逃跑的话，你那被我的人控制的老婆会发生点什么，什么都有可能哦",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "你竟然敢拿余开玩笑……你想死我随时奉陪到底",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "不要拿余开玩笑，你这个疯子……你想死我随时奉陪到底",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "SeigentSinisterSmile",
         "string": "那我们还等什么？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世行驱动神之利爪击败了世清",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "那东西是……！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Default",
         "string": "<span id='红'>那是神的力量哦</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Default",
         "string": "<span id='红'>结社最高的技术结晶，那个可笑的复制人就是这个的半成品</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Default",
         "string": "<span id='红'>那是歼灭结社残党的战争中的意外收获呢 </span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Default",
         "string": "<span id='红'>为了超越你驱动下的地狱训练，配合神的权能，最后让我成为了超越一切的人</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Default",
         "string": "<span id='红'>怎么样，你还是第一次感受到“完全无法击败对方”的无力感吧，你这个被愚蠢的祖先眷顾的白痴</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Default",
         "string": "<span id='红'>可惜，这就是最后一次了，永别了</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世行蓄力毁灭之手准备攻击无法行动的世清，这时候一个人影掠过救走了世清",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Angry",
         "string": "<span id='红'>什……什么？</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Angry",
         "string": "<span id='红'>是谁在妨碍我的计划！？</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "副官",
+        "char": "",
+        "con": "",
         "face": "SeigineWizard",
         "string": "世行！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "副官",
+        "char": "",
+        "con": "",
         "face": "SeigineWizard",
         "string": "一支不明部队向这里包抄过来了！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Angry",
         "string": "<span id='红'>是千叶妙骨院那家伙吗？……是知道了我的计划打算过来坐收渔翁之利吗？</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Angry",
         "string": "<span id='红'>真是碍事……连天都在帮那个家伙</span>",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世行",
+        "char": "Seigent",
+        "con": "",
         "face": "Seigent2Angry",
         "string": "<span id='红'>可恶！可恶！为什么你总是被命运眷顾！</span>",
-        "special": "dia2"
+        "dic": 2
     }
 ]

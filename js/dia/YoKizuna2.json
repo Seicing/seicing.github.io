@@ -1,380 +1,488 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "触发条件： ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "官员",
+        "char": "SeigineMage",
+        "con": "",
         "face": "SeigineMageDissatisfied",
         "string": "那个粗野的村姑一点礼仪也不会",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "官员",
+        "char": "SeigineCleric",
+        "con": "",
         "face": "SeigineClericDissatisfied",
         "string": "这家伙真的是我们西景的皇后？真是让人羞耻",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "你们这样成何体统",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "宫里要有宫里的规矩，不干活在这里传播流言蜚语",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "再继续玩忽职守，对皇后不敬的话，我就把你们丢到世行那去",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "官员",
+        "char": "SeigineCleric",
+        "con": "",
         "face": "SeigineClericSurprise",
         "string": "啊！抱歉！陛下",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "官员",
+        "char": "SeigineMage",
+        "con": "",
         "face": "SeigineMageSurprise",
         "string": "我们这就继续我们的工作，抱歉！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "抱歉",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "我才是要抱歉的……是我的错……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "在这里，我应该遵循这里的规则",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "但是所谓的“礼仪”真的让人厌烦，为什么西景人要讲求这些无聊的东西？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "我也讨厌",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "不论是你，是我，还是更多的其他人，都讨厌",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "那为什么这种东西还要继续存在啊？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "因为这很方便",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "西景被称为“礼仪之邦”",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "在正式场合下，我们的一举一动都遵循着礼仪",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "听不懂",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "礼仪这种东西可以让社会更加高效明确地运作",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "上级可以和下级打成一片，但是，在正规场合下，上级的“威严”一定要存在",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "如果上级和下级之间的界限变得模糊的话，社会就没有了层次感，很多事情就会变得混乱了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "这听着有点像我们蚩幽武士要对长老们尊敬，而普通人要对蚩幽武士们尊敬，但私底下彼此可以作为好友不分你我",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯……这就是礼仪，最基本的对身份尊卑的尊重",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "试想一下，如果蚩幽一族不遵循礼仪，武士们对长老们毫无敬意，战斗时完全遵循自己的意愿战斗",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "蚩幽一族还能延续到今天吗？西景也是一样",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "在私底下我们可以作为人进行交往，但是在社会上我们拥有着自己的社会标签",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "遵循礼仪可以让我们自己的社会标签属性更加明确，更好地实行我们的社会效能，所以礼仪让人讨厌，但也很重要",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "也就是说，你即使想和下面打成一片，但是也要装出一副皇帝的样子",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "因为你的社会职能是皇帝，是社会的领导者，如果在其他人面前失去了礼仪，不能让对应的社会标签发挥作用",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "这样西景也会乱作一团对吧，刚刚的官员也是，如果不遵循敬畏皇帝的礼仪，那么皇帝的权威就无从谈起，国家的威仪也就不存在了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "你挺聪明的嘛，我可不是那种随意骂人的冷酷无情的家伙",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "但是作为下级的官员冒犯了皇后，这是违背礼仪的，我有遵守礼仪斥责他们的义务",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "在西景，皇后象征着西景的母仪，在他人面前举止一定要端庄大气",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "不过，在不需要用到皇后这个身份的场合下，就可以以一个普通人的身份去践行其他社会职能，这就是礼仪",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我明白了，原来礼仪是这么简单的东西",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我以后会努力学习如何当一个皇后的，我不会让你蒙羞的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoHappy",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Happy",
         "string": "即使看上去违背本心，但是认真想了下，必要的距离反而可以让大家的关系更加稳定呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯……你能认识到这东西存在的意义就好",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "在国民面前，你是皇后，在我面前，就尽情地把自己那本性展露出来吧，没所谓的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressedRF",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5DepressedRF",
         "string": "我在你心里的印象到底多糟糕啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoHappy",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Happy",
         "string": "世清",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "怎么了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我要学习作为一个皇后必须要懂得的东西",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "礼仪、文字、诗歌……在你们这里被认为是陶冶性情的东西，我都想学",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "你不必勉强自己",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "我是认真的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "如果更能理解对方的文化的话，是否就能更容易地找到和谐共存的道路呢？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我想尽我自己的所能努力",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "我会请求目前服务于我的书记官亚良来教导你",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……不要三分钟热度，我会要求他定时审核的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "是！",
-        "special": "dia2"
+        "dic": 2
     }
 ]

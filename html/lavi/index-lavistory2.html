@@ -35,17 +35,17 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="1"></div>
 <div id="app">
-    <div v-for="diaindex in aasb">
-        <div :class="diaindex.branch1st" :style="diaindex.branchstyle">
-            <div :id="diaindex.special" :style="diaindex.specialstyle">
-                <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
-                    <tr v-html="diaindex.string1st"> </tr>
-                    <tr v-html="diaindex.string2nd"> </tr>
-                </table>
-            </div>
-        </div>
+    <div v-for="diaindex in aasb" :style="diaindex.bstyle" :class="diaindex.bclass">
+        <table cellpadding="5" :id="diaindex.tablelavivanar" :style="diaindex.astyle">
+            <tr v-html="diaindex.tr1">
+            </tr>
+            <tr v-html="diaindex.tr2">
+            </tr>
+        </table>
+        <br>
     </div>
 </div>
+<span id="overdrive" style="color: white;">EastPearl</span><br>
 <br><br>
 <a href="https://seicing.com/html/lavi/index-lavistorytest.html">羁绊剧情名称对照</a><br>
                         </div>

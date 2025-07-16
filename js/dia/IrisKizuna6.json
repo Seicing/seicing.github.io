@@ -1,1542 +1,1982 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "触发条件：伊丽丝羁绊5剧情完成后，不管是否和伊丽丝组队击杀100只怪物后，和伊丽丝组队来到非伊拉修莱德的任意一个艾特拉塔城镇时触发",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清和泰拉一行人擦肩而过，科洛维停了下来，看了看伊丽丝",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "这位姐姐，为什么要用这种奇怪的目光看着我呢？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefaultCE",
         "string": "抱歉，似乎是我认错人了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维跟上一行人的脚步离去了",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "真是奇怪的姐姐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "我觉得这并不奇怪，毕竟伊丽的脸，任谁也想多看两眼",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2ShySmile",
         "string": "真会说话啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "偏心的家伙",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "不过，那个大姐长得也不差呢，跟伊丽丝长得也有点像，说不定那个大姐把你认成她的妹妹了呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "哈哈，也说不定呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DefaultCE",
         "string": "呼，光顾着闲谈，忘了我们已经累得要死了呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯，我们去旅馆休息吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "剧情结束后，无法离开城镇，前往旅馆后触发剧情<br>伊丽丝在自己的房间看着窗外的风景，眼中流露出焦急的神色<br>世清拿着食物走了进来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "心事重重，连我进来了也没有留意到呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "啊，抱歉，饭做好了吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清把饭菜放在一旁，和伊丽丝并排在窗前看着风景",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "可以在这里呆一会陪我聊聊吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "当然可以",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "和你一起冒险是一件快乐的事情，但是，现在的我却很难享受到这份快乐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "抱歉",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "该抱歉的人是我……总是把话题引导向沉重",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "说到底不管怎么样我都是会帮助你为你的哥哥报仇，杀死欧洛克",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "说句你可能不喜欢听的，结社也是我个人需要铲除的对象",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "所以，不要有心理负担",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "没事啦，我都懂的，我还是得感谢你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "谢谢你，我心情好多了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "窗外响起了一些响声",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "是谁！？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "被发现了吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维像一只蝙蝠一样倒立出现在窗前，吓得两人后退了两步",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "是刚刚那个姐姐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "你为什么出现在这里！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "不，我认为更应该吐槽的是为什么她要倒立着说话",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "抱歉，我只是在房顶发呆的时候听到了你们说话",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "我是无意的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "那个……倒立着说话不累吗，还有在房顶出现什么的，真可疑",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "我已经习惯别人说我奇怪了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefaultCE",
         "string": "嗯……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "这个姑娘，从遇到你的那时候开始，我就一直很在意你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2PanicRF",
         "string": "欸？欸！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "那个……是我理解的意思吗……如果不是的话，请不要用这种让人误会的语气说话",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "……跟人聊天真难",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "(这位大姐怎么看上去脑子好像不太灵光啊)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "(我们还是不要说别人坏话好，尤其对方就在面前)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "我可以听到的，这时候我是该生气吗？还是挤出笑容糊弄过去，他们没教过我这种情况下怎么才是正常的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "搞不懂……这个姑娘，你的名字是",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "诶？啊啊，我叫伊丽丝，多多指教",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "伊丽丝对吧……你让我感觉到了一种很奇怪的感觉，不知道如何形容……很难受……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2PanicRF",
         "string": "……？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "看你的表情，似乎这个话题对你而言很冒犯，我会尝试自己搞懂它的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "这种发言加上躲在房顶偷窥，很难不让人觉得……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "我不是窃贼",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "不是，怎么说呢……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "我想起来了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "这种难受的感觉跟那个骑士相遇的时候如出一辙",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "骑士？难道说是伊安哥哥？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvPeer",
         "string": "……确实是叫这个名字，他是你哥哥啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "你是在……什么时候遇到他的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维驱动了始祖的力量浮现出吸血鬼的形态",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "和余、伊安一样的半始祖化！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "你到底是谁？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "半始祖化……？是你们那吸血鬼化的称呼吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "我就是为了寻找我的身世才会和那几个人踏上旅途的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "那个时候的我还在到处游荡，忽然感受到了一股气息在呼唤我",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "这股气息的尽头是一个充满了死亡气息的废弃村落……那个时候的他从墓地里好不容易挣扎了出来",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "和阿拉贡说的一样……你见证了伊安哥哥变成吸血鬼的过程吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "嗯，我还引导过他如何作为一个吸血鬼生存下去",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "不过，高贵的骑士似乎对伤害他人抱有抗拒呢，不久之后他就离我而去了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DepressedCE",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "伊丽丝，我从你身上感受到了遇到他的时候的感觉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "我之前相信这是吸血鬼之间的共鸣，今天遇到你之后，我对这个猜想产生了疑惑",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "我凭借着这份共鸣多次找到了他，目睹了他的坚持，也目睹了他逐渐失去理性，完全变成怪物",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "在那之后我就失去了和他的联系了，结合你们的说话……我已经猜出个大概了，不过，我想最后确定一下",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DepressedCE",
         "string": "嗯……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DepressedCE",
         "string": "我用这双手亲手解放了他，我哥哥直到最后一刻也没有放弃过他的荣誉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefaultCE",
         "string": "这样啊……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefaultCry",
         "string": "眼泪……？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefaultCry",
         "string": "……非常感谢你们和我说了这么多，我现在内心有一种难以形容的感觉，我想自己静一静，失礼了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维离开了窗口",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "那是听到亲人逝世的消息后才会流下的伤心的泪水",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "是吗……？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "怎么了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "饭菜都凉了啊，要我帮忙热一下吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "啊，这个啊，没所谓的，我不会介意",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "这样啊，我就不阻碍你用餐了，我先出去了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "到了晚上，屋顶传来了巨大的战斗声",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "什么声音！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingAngry",
         "string": "余，起来",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "什么回事？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "一个吸血鬼闯了进来，向两人发动了袭击<br>战斗结束后",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "为什么，这是半始祖化？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoAngry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Angry",
         "string": "世清！窗外全是诡异的红色气雾，吸入的人好像都变成了失去意识的吸血鬼了！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "糟了，伊丽！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "来到伊丽丝的房间，地上躺着两只吸血鬼的尸体，伊丽丝靠在窗前气喘吁吁",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "没事吧！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "是你们，你们也没事太好了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "地上的尸体……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "是今早的那个大姐，过来救了我，然后急忙跑掉帮助她的伙伴了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "他们的伙伴……难道房顶是他们在和造成灾难的源头战斗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "欧洛克！？这毒雾不就是阿拉贡描述的欧洛克的实验产物吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "难道说欧洛克为了狙击那个姐姐所在的队伍，对小镇发动了无差别攻击断绝他们的去路！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯，虽然不知道欧洛克为什么要发动攻击，但是我们和他们利益一致，我们快去楼顶帮助他们！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "我们走！世清！余！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "来到房顶，世清上前偷袭了欧洛克，把濒临绝望的泰拉四人救了回来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "啊！！我的手！！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "是你们……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "你们没事吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "欧洛克！！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "不要吼我的名字！你们是谁，敢来搞混我的好事",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "我是伊拉修莱德的大公索菲亚，是因为你而变成吸血鬼悲惨死去的骑士伊拉修莱德大公亚历山大的妹妹！！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokFear",
         "string": "亚历山大？亚历山大……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokDefault",
         "string": "哦，是那个阻止了我的样本调查的白痴啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "少给我碍事！给我变成腐尸消失吧！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "欧洛克朝着世清一行人发射毒雾，被一行人徒手挡住",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokFear",
         "string": "什……什么，竟然和那个女吸血鬼一样免疫这个……三个都是觉醒者？我倒了什么霉可以遇到这种不可能的阵容",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "眼看情况对自己不利，欧洛克撒腿就跑",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "不要跑！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "伊丽，顺着我攻击在他身上留下的印记追杀他",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "……！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清三人追了上去，留下受伤的泰拉四人在原地回过神来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "莎亚",
+        "char": "Saya",
+        "con": "",
         "face": "SayaSerious",
         "string": "虽然不太清楚发生了什么，但是我们好像得救了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "你们三个想办法净化掉这里的毒雾，让它停止继续散布下去……停止造成更大的灾难",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "莎亚",
+        "char": "Saya",
+        "con": "",
         "face": "SayaSerious",
         "string": "你要追上去帮助他们吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "嗯……因为我是吸血鬼，不怕这些毒雾",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "莎亚",
+        "char": "Saya",
+        "con": "",
         "face": "SayaYell",
         "string": "那你要小心！科洛维！我们会尽快处理好毒雾过来援助的！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿西恩娜",
+        "char": "",
+        "con": "",
         "face": "AszinaEndure",
         "string": "拜托了！科洛维！一定要把那个家伙……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "交给我吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "绝路，欧洛克看逃不掉了，转过头来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokFear",
         "string": "甩不掉……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "哥哥，这一天终于到来了，我今天这就为你报仇，请你安息吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "别把我会死当成是已经发生的事实！这种自以为是真是让人恶心！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "逃不掉就战吧！我可不会输给你们这几个毛头小子",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokSinisterSmile",
         "string": "我会好好地折磨你们的……索菲亚阁下哦，我亲眼看着你的哥哥痛苦地变成吸血鬼的全过程，那种绝望感真是让人愉悦啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "可恶！去死吧！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "伊丽丝攻了上去，被欧洛克偷袭弄伤了",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "伊丽！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokSinisterSmile",
         "string": "就这样，慢慢地因为自己的愤怒逐渐失去判断力而失败吧，小丫头",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokSinisterSmile",
         "string": "就像你的哥哥一样，因为战斗时抱有无谓的正义感和愤怒而出现破绽……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Pain",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "伊丽，冷静下来",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Pain",
         "string": "世清……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "冷静才是你的性格，不要因为这个无耻之徒的挑衅失去判断力",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "嗯……我不会再大意了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "像苍蝇一样卿卿我我，真是让人讨厌",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "Orlok",
+        "con": "",
         "face": "OrlokAngry",
         "string": "别以为这就是我的全部能耐了，既然逃不掉就跟你们拼命吧，他妈的，这玩意用了之后得痛苦整整几天呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "欧洛克把血清打到自己的胸口上，蜕变成了巨大的吸血鬼",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "这是觉醒吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "小心点，他现在给人的压迫感和之前完全不同了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": " boss战：血魔欧洛克<br>战斗胜利后",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "OrlokAtavism",
+        "con": "",
         "face": "OrlokAwakeningAngry",
         "string": "呜啊啊啊啊啊啊！！！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "和我们的始祖化觉醒一样，他的身体在快速地愈合",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "完全不顾伤痛疯狂地挣扎，无法准确地破坏他的心脏",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维突然出现，快速地突入战场",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "伊丽丝……准备好攻击",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "欸！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维如同鬼魅一般化身鲜血形成的幽灵附身在了欧洛克的身上",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "OrlokAtavism",
+        "con": "",
         "face": "OrlokAwakeningAngry",
         "string": "可恶……身体……动不了……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Pain",
         "string": "我……我……这种感觉是……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "想起了哥哥的事情，伊丽丝停止了动作",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "跟那时候一样的迟疑……难道说",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "……看起来想起了什么不好的事情……我不知道到底是什么，但是",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "伊安看到你依旧迷惘会觉得伤心的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Angry",
         "string": "伊安哥哥！请保佑我！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "马上领悟过来的伊丽丝没有多说，直接用长枪贯穿了欧洛克的身体",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "OrlokAtavism",
+        "con": "",
         "face": "OrlokAwakeningAngry",
         "string": "呜哦哦！！！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "OrlokAtavism",
+        "con": "",
         "face": "OrlokAwakening",
         "string": "我……我要死了……？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "OrlokAtavism",
+        "con": "",
         "face": "OrlokAwakening",
         "string": "<span id='金'>这条生命</span>竟然交代在这里，真是可恶……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "欧洛克",
+        "char": "OrlokAtavism",
+        "con": "",
         "face": "OrlokAwakening",
         "string": "马格努斯……你在看着吧……竟然就这样看着这个身体就这样战死，你这家伙……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "欧洛克身体迅速崩溃，科洛维从欧洛克的躯体脱离形成实体倒在了地上",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "大姐姐！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维在伊丽丝走近之后，凶猛地朝着伊丽丝的胸部咬去",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2PanicRF",
         "string": "欸！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "伊丽！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "伊丽？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "吸完血之后的科洛维瘫在了地上，有气无力",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "KruvAtavism",
+        "con": "",
         "face": "KruvDefaultAw",
         "string": "抱歉，使用同化需要消耗大量的生命力，我得马上吸血补充生命力",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "哈哈，原来是这样啊，幸好你活过来了，大姐姐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维回收了欧洛克的血玉，勉强地走了起来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefaultCE",
         "string": "阿西恩娜……这个东西还是交给你亲自来吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Surprise",
         "string": "不需要更多休息吗？你好像走得很勉强啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "欧洛克……提到了一个很危险的名字，如果他在附近就意味着我必须赶回去",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvDefault",
         "string": "在不想遇到的情况发生之前……我得快点了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DepressedCE",
         "string": "……我们还会再见面吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvPeer",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvPeer",
         "string": "我坚信是我们身上有着血之纽带，今天才会在命运的安排下相会",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "科洛维",
+        "char": "Kruv",
+        "con": "",
         "face": "KruvPeer",
         "string": "我们一定会伴随着这个纽带的共鸣再次相遇……后会有期",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "科洛维离去了",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DepressedCE",
         "string": "来也匆匆去也匆匆，连你现在用的名字我还没来得及问呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Depressed",
         "string": "……米莉安姑姑",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "伊丽丝瘫坐在了地上",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "伊丽！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "我……我没事",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "这是绷紧的神经在一切都结束后伴随而来的脱力感",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "我很高兴，因为……一切都结束了……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "是啊，伊安的灵魂终于得以安息了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "真是值得庆贺的日子，从认识你开始，你的脸上就笼罩着一股复仇者的阴影，现在是我第一次看到你真正高兴的样子",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "谢谢你们，余……世清……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "因为你们，我以后终于可以放下一切，为了自己而活下去了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DefaultCE",
         "string": "没有你们，我是不能走到今天的……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DepressedCE",
         "string": "虽然，欧洛克确实死了，但是我感觉一切还没结束……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "结社还在，死了一个欧洛克，肯定也有他的继承者继续他疯狂的道路继续为恶",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "这个邪恶的根源一天还没被铲除，我的复仇，还有伊安的夙愿……也还不能说得上了结",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "在未来，你还能把你的力量借给我吗，伊丽",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "当然",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "我会继续秉承伊安哥哥的遗志，让这个危害世界的组织彻底被铲除",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Happy",
         "string": "以后还有我可以帮助你的地方，我一定会赶来帮助你的！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "说罢，伊丽丝望向夜空",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DefaultCE",
         "string": "(伊安哥哥……请安息吧)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2ShyCE",
         "string": "(我已经为你报仇雪恨，同时找到了自己真正可以把整个身心信赖和托付的伙伴)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2DefaultCE",
         "string": "(在未来的日子里，我会光荣而骄傲地度过我接下来的人生)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "con": "",
         "face": "Iris2Default",
         "string": "(请你好好在天上看着我吧，伊安哥哥)",
-        "special": "dia2"
+        "dic": 2
     }
 ]

@@ -1,695 +1,893 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "羽三羁绊10剧情完成后，前往神宫探望明玲触发正常版本<br>在羽三羁绊2-10剧情完全没触发的前提下羽三体力到达9999，前往神宫探望明玲触发独处版本",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "独处版本的场合下，羽三不会出现在最开始的剧情里，余会代替羽三说完这个阶段的台词，直到进屋后羽三端水出来为止",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
-        "string": "分支对话选择<br><a class='buttonbranch1' onclick='Switchbranch1()' style='color:#DACF88'>正常版本</a> <a class='buttonbranch2' onclick='Switchbranch2()' style='color:white'>独处版本</a> ",
-        "special": "dia3"
+        "string": "切换条件对话<br><a id='branchA1' style='color:#00ff00'  onclick=\"brIn('Z1');brOut('Z2');\">正常版本</a> <a id='branchA2' onclick=\"brIn('Z2');brOut('Z1');\">独处版本</a>",
+        "dic": 3
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "世清，余，你们来了啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "世清，余，羽三，你们来了啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "明玲姐，你……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "哈哈",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiSurprise",
         "string": "明玲姐，莫非你……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "莫非……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "帝国也逐渐步向正轨了，我也可以过上安稳的生活了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "我也可以放心……怀上斯理的孩子了呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiHappy",
         "string": "太好了，明玲姐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoHappy",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Happy",
         "string": "恭喜",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "明玲姐，没问题吧，你已经四十多了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiConfidence",
         "string": "哎呀，你真是的，我还很年轻呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDepressed",
         "string": "不对……明玲姐，确实不能开玩笑",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDepressed",
         "string": "对于产妇来说，年纪确实也太大了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "不，世清说得没错",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "这么大岁数生孩子很危险的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDepressed",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "那就进来再说吧，你们忍心让这样一个高龄孕妇站着这么久吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "神宫主人房，泡好茶的羽三把茶盆送到了桌前 ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "茶泡好了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "谢了，羽三",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "哈哈，还是岁月不饶人啊，才站一会儿就感觉有点累了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiCloseEye",
         "string": "明玲姐，为了你的安全着想，接下来我还是留在这里全程照顾你的生活起居吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "世清……抱歉，可能接下来我暂时都没办法支援你们了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch1",
+        "branch": "A1",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "明玲姐的身体最重要，羽三你就留在这里吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "羽三打算在这里照顾明玲姐么",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiCloseEye",
         "string": "嗯，接下来我应该无法支援你们了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "明玲姐的身体最重要，这也是没办法的事情",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "羽三",
+        "char": "IuimiFlameEmpress",
+        "con": "",
         "face": "IuimiDefault",
         "string": "我继续忙了，明玲姐你有麻烦的话要早点跟我们说啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "我也去看看有什么可以帮忙的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "很久没有在宫里干活了，有点怀念",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清和羽三离开了大厅 ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "这两个年轻人……真是和以前一样啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Embarrassed",
         "string": "真好啊……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "我们好像还是第一次这样坐下来说话呢，媳妇",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "这个称呼真是有点不适应",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "哈哈，毕竟我名义上也是世清的母亲",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "这个肚子里的孩子……名义上是世清的妹妹呢，尽管两者差了二十多岁",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "想好叫什么名字了吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "嗯……我和斯理想了很久",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "叫明华，如同太阳一般的七彩光华",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "宫黄明华……真是不错的名字啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "无论是男孩还是女孩，都很适合这个名字呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "真好啊……真好啊……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDepressed",
         "string": "你好像进来之前就一直不太开心的样子呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDepressed",
         "string": "是世清欺负你吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "没有，他对我很好",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "我是感到了自责",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "和我的名字一样，我从出生那一天起我就是多余的，对于族人们来说，对于世清也是",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDepressed",
         "string": "到底怎么了？不要自暴自弃",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "我和世清结婚几年了，度过了无数个日日夜夜",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "但是……这个身体……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDepressed",
         "string": "难道说……是强行觉醒后的代价吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "我的身体生不出孩子",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "我也想……像个普通的女人一样和丈夫诞下爱情的结晶",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Cry",
         "string": "可是……这只是多余的我的一个奢求而已",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiSad",
         "string": "不要伤心……孩子……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiSad",
         "string": "我能理解你的心情……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoUncomfortable",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Uncomfortable",
         "string": "世清没有责怪我……但我也感觉到很内疚",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoUncomfortable",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Uncomfortable",
         "string": "他已经为我做了太多了……我也想尽作为妻子的职责",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoUncomfortable",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Uncomfortable",
         "string": "我真的是……碍手碍脚的东西吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDepressed",
         "string": "夫妻之间的爱不一定要用孩子来见证",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "你不也是默默地为世清付出了很多吗？世清没有你是走不到今天的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "你能够继续和世清相亲相爱，作为母辈的我已经很欣慰了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "别哭了，孩子，世清看到你这样一定也会很难过的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "谢谢你……明玲姐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "说起来，怀孕的感觉是如何的呢？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "怀孕啊……老实说，并不是什么舒服的事情",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "在一瞬间失去了所有自由，身体连大幅度活动一下都不行",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "肚子变得鼓鼓的，有时候还会莫名其妙地痛",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "虽然不适应，但是，也觉得很高兴",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "想到肚子里那个沉甸甸的胎儿是一条活着的生命，自身用肉体去孕育美好的新生命的感觉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiHappy",
         "string": "我想……这就是“母性”吧，生物在遵循繁衍本能的时候激发出来的美丽的情感",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我似乎……也能感觉到你的喜悦之情呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "虽然我自己不能亲自感受这种喜悦之情……但是，我确实为你肚子里的生命感到由衷的祝福",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "谢谢你，媳妇",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "房间深处传来世清的惨叫声 ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "怎么了……！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiDefault",
         "string": "哎哎哎……那个房间太久没打扫了，可能是一脚踩进了烂地板了吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "喂！世清！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "余没有听明玲说的话，急急忙忙地跑到了世清的房间里 ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiConfidence",
         "string": "真是令人羡慕的小两口",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "明玲",
+        "char": "Meirei",
+        "con": "AT",
         "face": "MeireiConfidence",
         "string": "世清，余是你这辈子最宝贵的宝物……好好珍惜她，不要辜负了这个全心全意奉献给你的人",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "独处模式会有额外的场景发生<br>余给世清包扎脚的伤口",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Embarrassed",
         "string": "你也太不小心了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassionNO",
         "string": "抱歉",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassionNO",
         "string": "余……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassionNO",
         "string": "我都听到了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "不要因为这些让自己不开心",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoSad",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Sad",
         "string": "但是……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清把余抱了起来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "我永远也不会抛弃你，你也永远不要离开我",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoShy",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Shy",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch2",
+        "branch": "A2",
         "name": "余",
-        "face": "YoHappyRF",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5HappyRF",
         "string": "是……我答应你",
-        "special": "dia2"
+        "dic": 2
     }
 ]

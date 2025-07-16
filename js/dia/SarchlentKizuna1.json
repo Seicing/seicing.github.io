@@ -1,555 +1,713 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "触发条件：夏修伦安定(在非控制室的休息地点待机)时，和他对话触发",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "你在这里啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "有什么事吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "路过，你在看书啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "嗯？竟然是格萨尔王传……还是最新章节！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentSurprise",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "surprise",
         "string": "咦？你对这个有兴趣吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "哈哈，真想不到，看上去正经严肃的你竟然也喜欢漫画这种轻松的东西啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "我对历史向的漫画很感兴趣，何况那是“那个作者”的漫画啊，在西景可谓是拥有超高人气",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "没想到在异国他乡也能看到读者，好久没关注过最新进展了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "“那个作者”在西景之外的地方也有着很高的人气呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "现在剧情演到哪里了？“那个作者”经常生病休刊，让我等得很难受",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "我们一起看吧，看，格萨尔正式向珠牡表白了！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "我在五年前就一直吃这对，我果然眼光不错啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDepressed",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "depress",
         "string": "不过对于巴玲也太不公平了啊……明明是她先的……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Compassion",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "side",
         "string": "我不关心这个，我比较关心他在那场战斗之后能不能到底找到出卖他的人",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Angry",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "extra2",
         "string": "翻快点！这页我看完了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "别急嘛，我西景语不太好，等我看完嘛",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Angry",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "extra2",
         "string": "…………",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "………………",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingWanderer",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "呼，真期待下一集的到来啊，原来一切都是晁同在搞鬼，真是越来越精彩了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "如果是“那个作者”的话还真不知道要多少年之后才有下一章了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "哈哈哈",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我很羡慕格萨尔",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "为什么",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "啊~所以说你这家伙真的把这漫画当历史故事研究啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "格萨尔王传之所以那么好看，就是因为他是伟大的幻想啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "接受了某种伟大的使命降生，作为主角经历各种各样难忘的冒险，和伙伴建立羁绊，和美丽的女孩恋爱，成为万人敬仰的王者",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "每个男孩都曾经幻想过自己也是格萨尔，是为了某种原因降生到这个世界上的吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDepressed",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "depress",
         "string": "可是啊，在这个世界上活得越久，就越知道一个事实",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "大部分人都注定不会是这个世界的主角",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingWanderer",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "这个确实，实际上，格萨尔王传是“那个作者”基于我们西景北山地区的多个君主的传说改编的作品",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "他传奇的一生实际上不真实，正是因为不可能，才显得是一个值得憧憬的美丽幻想",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "哎，你好像误解了我要说的话",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "别嘲笑我啊，实际上我成为海贼，很大一个原因就是被这些美丽的幻想影响",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "我怎么可能嘲笑你，我也很喜欢这些作品不是么？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentWrySmile",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra1",
         "string": "所以说你完全不懂我在说什么",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我懂事的那天起，就意识到这个世界只有我孤单一人了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "没有父母，没有家，不知道为何而活",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "但是，我有这个东西",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "是我们第一次相遇的时候你用来操纵火焰的饰品",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "是啊，这个叫遗物",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "不是指亲属死后留给后人的物件，是某个未知的文明灭亡后，遗留到了今天的物件",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "这个世界的国家都宣称拥有这些蕴含强大力量的遗物的所有权",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "而有些人无视国家的禁令自行寻找这些遗物并且拥有它们，他们也被称为海上的掠劫者——海贼",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "怪不得你作为海贼和我认知中的海贼没啥关系",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "事实上，这个遗物不是我作为海贼发掘出来的……在我懂事的时候它就一直跟随在我身边了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "这个东西是为何在我身上的呢？普通人可不太可能拥有一件遗物……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "我能从这个遗物的身上感受到和某个人的羁绊……可能是我那素未谋面的妈妈？也许是某个盗取了国库的大盗贼？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "总之，我坚信着这是属于我自己故事的开端，也因为这样我踏上了旅途去寻找那未知的过去",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "梦想有一天和格萨尔王一样缔造属于自己的传奇……我是不是很幼稚",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "不会，我觉得……为了未知的目标踏上未知的旅程",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "真浪漫啊……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "谢谢你，我把这个想法跟某个红发女人说了之后，她什么都没说只笑了两声呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "不过直到今天，经历到的只有苦涩，估计了下，我当海贼也快有10年了呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "回想过去，真的是风平浪静，想象中波澜壮阔的未来根本不存在",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "有的只是无尽的为了自己的生计东奔西走的苦恼，以及各种现实的问题",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "命运的邂逅也没有到来，有的只是烦人的红发女人……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Embarrassed",
+        "char": "SeicingWanderer",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "烦人的红发女人……是指她吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingWanderer",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "看来你是那种不会甘于平凡的人……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingWanderer",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "和我相反呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "我渴求平凡而自由的一生",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "但是，安定的生活并没有青睐我",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "相反的性格吗？但我们很合得来，真是奇怪啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "这样一想，我对你的过去一无所知呢，你是少有的我想去了解过去的人",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "还记得那天在船上离别那时候我说过的那句话吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "什么话？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我在你眉间看到了贵气……这句话，实际上我天生有一种可以大约看到别人运气的能力",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "事实上我在你眉间看到的不仅仅是贵气",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "你的眉间有一股注定成为这个世界的中心的光辉的气息",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "你在开玩笑吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "只是直觉啦，要是我的直觉那么准，也不会混到现在这样",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "不过……我还是比较愿意相信我自己的直觉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "等待“那个作者”更新萨格尔王传的时光太过于漫长了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "等待幻想延续的同时，等待自己不凡命运的到来，同时见证可能闪耀的星星出现",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "这样想，明天也不会觉得无聊了呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "serene",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Angry",
+        "char": "SeicingWanderer",
+        "con": "ATSP",
+        "face": "extra2",
         "string": "别说那些让人不知道怎么回应的话，你还有萨格尔王传其他章节的漫画吗？快借我看看",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentWrySmile",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra1",
         "string": "哎，你这个不知道是感性还是过度理性的家伙啊",
-        "special": "dia2"
+        "dic": 2
     }
 ]

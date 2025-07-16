@@ -1,842 +1,1082 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "触发条件：夏修伦羁绊8剧情完成后前往俱苏摩补罗城触发",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "又一起回到这里了啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "上次来这里是因为船只不得不绕道靠岸在这里维修，真怀念啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "伊丽和洛雨希不在有点可惜，想了一下这里是我们开始正式结伴旅行的出发地呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "现在不是感叹的时候，孩子们",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "对手是“暗杀王”，踏入这个城市的那一刻起我们就游走在死亡的边缘了，小心点",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "你们去月亮水井，无名先生，跟我一起行动",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "嗯……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "前往月亮水井的暗杀团秘密入口，远处传来了爆炸的声音，一道快速的身影穿过月亮水井的天空 ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "这么快就开始行动了吗？！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈因",
+        "char": "",
+        "con": "",
         "face": "HayinAngry",
         "string": "亲爱的！我们这么不容易再次相遇，你为什么逃这么快啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈因",
+        "char": "",
+        "con": "",
         "face": "HayinSurprise",
         "string": "等等……是你们！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈因",
+        "char": "",
+        "con": "",
         "face": "HayinSurprise",
         "string": "是陷阱？拉妮有危险！可恶",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaAngry",
         "string": "你的对手是我，别想着你的拉妮",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈因",
+        "char": "",
+        "con": "",
         "face": "HayinAngry",
         "string": "他妈的，拉妮，抱歉了……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈因",
+        "char": "",
+        "con": "",
         "face": "HayinAngry",
         "string": "亲爱的，难得你这么热情",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈因",
+        "char": "",
+        "con": "",
         "face": "HayinAngry",
         "string": "我们就抛下一切尽情地共舞直到其中一方死去吧！！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "阿玛兰达使用巨弩把哈因击飞到隐藏入口后跟了上去，然后暗杀王和普利陀毗也来到了月亮水井",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaAngry",
         "string": "普利陀毗！不要把我当傻子！不要以为我不知道你是故意激怒我让我落单！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaAngry",
         "string": "我故意跟上来就是为了证明你就是个懦夫！我会用真正的实力来让你们这些只会耍小手段的男人知道你们的无能！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaAngry",
         "string": "普利陀毗！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "……余小姐，世清阁下，你们可以去阻挡一下追兵吗？这里我和夏修伦会处理好的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoAngry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Angry",
         "string": "世清！我们走！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "夏修伦退队，进行小规模战斗后听到了夏修伦的惨叫声",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "夏……夏修伦……！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoAngry",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Angry",
         "string": "世清！我在这里挡着，都是些杂鱼我一个人就足够了，快去帮助夏修伦！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "啊……是……！",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "返回月亮水井，发现暗杀王被挡在夏修伦之前的洛雨希一枪射伤，夏修伦在洛雨希身后惊讶地看着她",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentSurprise",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "surprise",
         "string": "洛雨希……你怎么……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichRozenSchutze",
+        "con": "",
         "face": "Louich2Angry",
         "string": "有话在之后再说，你这家伙找死吗？竟然直接冲到她面前",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichRozenSchutze",
+        "con": "",
         "face": "Louich2Angry",
         "string": "世清！来夹击暗杀王！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "Boss战：暗杀王，战斗结束后暗杀王被普利陀毗一箭穿心，随后她被普利陀毗接住",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamage",
         "string": "啊…………",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "珊郁姬多……你还是跟以前一样，冲动……任性……最后也因为这样葬送了自己的性命……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageWrySmile",
         "string": "你也没变过……跟以前一样残酷……无情……没有任何犹豫……就用箭矢把我的心脏……贯穿……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageWrySmile",
         "string": "长达二十余年的持久战是你赢了啊……伟大的普利陀毗罗阇……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "这场战争没有胜利者……有的只是满目疮痍的我们而已……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamage",
         "string": "必须要做个了断……是吗……？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "一切的一切我们都可以避免的……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "不……从你和我在敌对的国家的宫廷中出生就注定我们的爱情是被诅咒的……无论如何选择都会是今天这个境地……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "这二十年来我一直在想……如果我们生在平凡百姓家……我们的结局会不一样吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "不会有如果的……如果真的能选择……我们这几十年来刻骨铭心的憎恨都成为了笑话……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "珊郁姬多……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "我们……终于是解脱了啊……两国最后的争斗在今天终于落下帷幕……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "迦诃达婆罗的王女今天彻底失败了……两国的战争是俱苏摩补罗的胜利……除此之外毫无意义……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "一切都结束了……一切都落下帷幕了……一切都被解脱了……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "普利陀毗……抱着我……让我在你的怀中死去……这辈子……我们注定有缘无分……我希望在轮回转世之后……可以再度和你在一起……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "暗杀王",
+        "char": "",
+        "con": "",
         "face": "SanyogitaDamageCloseEye",
         "string": "普利陀毗…………",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "暗杀王在普利陀毗的怀中死去了，这时候外面的余也走了进来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoUncomfortable",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Uncomfortable",
         "string": "暗杀团的成员都四散而逃了……我们胜利了吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "嗯……一切都结束了，余你没事真是太好了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "终于……完结了啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDepressed",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "depress",
         "string": "是啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "心中只有无尽的空虚",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "我现在心里完全不知道是什么感觉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Sad",
         "string": "看来只能由时间来抚平一切了吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDepressed",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "depress",
         "string": "玛玛室利，接下来你有什么打算吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "安葬好珊郁姬多之后，去寻找耶输末底吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "“地罗王”……不考虑夺回属于自己的东西吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "我遵循梵天的指引",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "如果室利刹陀罗不需要一个带来混乱的普利陀毗罗阇……现在这样就好，不是吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "是时候把一切放下了……夏修伦，你会觉得失望吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentSurprise",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "surprise",
         "string": "呃？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "你期待的是如同英雄一样的伟大人生……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "但是，我们的王室早已经成为历史了，就算你要像古代的巴霍巴利王的儿子一样勇敢地夺回王位，那也注定是一条艰苦的道路",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "最大的失望，可能就是给予希望之后，再陷入失望之中吧……对不起",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "玛玛室利，你想多了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "确实，我是因为想要追寻史诗般的冒险而踏上旅途的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "但是在和这家伙相遇相处的过程中，我的想法逐渐得到了改变",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "人生不仅仅因为伟大而灿烂……就算是平凡人的一生，也会因为各种各样的朋友和事情而感受到快乐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我在这趟旅途中认识到了最重要的朋友，经历了各种难忘的事情，虽然也有痛苦，但是我想我已经真正地爱上了自己的人生",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "为什么要追求虚荣的伟大呢？我们怎么活都是被命运注定好的……那么在有限的一生中努力地按照自己的意愿活下去，不是很好吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我想，妈妈当初就是因为明白了这一点，果断地选择了贫穷、充满苦难但又真正自由的道路吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "夏修伦……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "真是羡慕你啊，你可以按照自己的意愿自由地活下去",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "我已经老了……既然你的想法是这样……作为长辈的我，能做的就是为你祝福吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "愿梵天祝福你的翅膀永远不会被束缚……永远地自由飞翔下去",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "玛玛室利，真正自由的人就算他的身体腐朽了，灵魂也是自由的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "要跟我一起踏上寻找妈妈的旅程吗？在一切结束之后，我们三个人一起自由自在地生活",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "(看了看洛雨希)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "我虽然是爱情的失败者，但是该懂的我都懂的，我就不阻碍年轻人了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentWrySmile",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra1",
         "string": "我怎么听不懂你在说什么？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichRozenSchutze",
+        "con": "",
         "face": "Louich2Default",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "夏修伦，我会用我自己的方法去寻找耶输末底，让我独自一人好好地平静一下吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "我可能会比你先找到耶输末底，也可能会死在旅途上，也可能会因为此地再度陷入混乱而试图夺回我的王位",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "但是你说得对，接下来无论发生了什么，都是属于我自己的人生既定的一部分",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "在生命最后一天到来之前，让我能够自由自在地感受一切都放下之后的人生吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2Default",
         "string": "世清陛下，洛雨希小姐，谢谢你们给夏修伦那么多的支持，让他可以骄傲地走到现在",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "再见了，我的侄子，期望我们下次见面的时候……是我们全家团圆的那一天",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "嗯……再见了，玛玛室利，我会期待我们再次相会的那一天的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "普利陀毗走了之后，洛雨希走上来捏夏修伦的耳朵",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "诶诶诶诶！？好痛啊！你干什么！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichRozenSchutze",
+        "con": "",
         "face": "Louich2Angry",
         "string": "你这个笨蛋，死性不改，刚刚不是我救你你就没命了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichRozenSchutze",
+        "con": "",
         "face": "Louich2Angry",
         "string": "执行这种危险行动之前为什么不先找我商量一下，就这么想躲开我吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "饶命啊！饶命啊！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichRozenSchutze",
+        "con": "",
         "face": "Louich2Angry",
         "string": "我可不想给你收尸啊，你这个白痴，做事永远都是这样！糊里糊涂只凭直觉横冲直撞！再这样下去……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "(还是不要当电灯泡好了，走吧，余)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "(嗯……我想也是)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "(不知道他那边如何了……过去看看吧)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清离开了两小口去找和他们分开战斗的阿玛兰达，阿玛兰达那边战斗也已经结束，跪在地上怀里抱着死去的哈因",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaSideSad",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "看起来普利陀毗先生那边应该是顺利完成计划了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯……你这边好像也……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "你伤势好重啊，没事吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清找了找包里的药草想要给阿玛兰达，但是被叫住了",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "……不要靠近",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "刺客之间的战斗充斥着各种卑鄙的机关和毒素，你这样走过来会很危险的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "谢谢你的关心……我已经习惯这种伤势了，我会自己找办法处理的……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "嗯……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "虽然我不应该多口，但是，实际上你并不想杀死她……是吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaSideSad",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaSideSad",
         "string": "我和她注定以这种命运迎来结局，既然是这样，我也只能接受这样的命运",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "普利陀毗先生那边，我会和他联系的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaDepressed",
         "string": "虽然和我扯上关系会很麻烦，但是我感觉到以后还会和你并肩作战，有话的话，就留到那个时候再说吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿玛兰达",
+        "char": "",
+        "con": "",
         "face": "AmarandaSideSad",
         "string": "可以的话，让我独自一人在这里再陪她多一会吧……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "嗯……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "(每个人都拥有不得不面对的命运……短短几天见识到这么多，多少也有点感同身受)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCompassion",
         "string": "(不过真正被称得上诅咒的东西就是，反而是要感受命运的痛苦，才会产生活着的实感吧……)",
-        "special": "dia1"
+        "dic": 1
     }
 ]

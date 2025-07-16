@@ -1,744 +1,956 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "触发条件： ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCloseEye",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5CloseEye",
         "string": "嗯嗯…",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "怎么了，愁眉苦脸的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "就是说啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "想起来了，今天是说好的西景语的测试日啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "意外地上心啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "光是有这个心我就觉得很欣慰了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我不会让你失望的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我要做到最好，让自己成为一个及格的妻子，不让你蒙羞",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……加油",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "亚良快来了……我会在你身边看着你的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "测试后，亚良在审核试卷",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingPeep",
         "string": "(审判的时刻到了呢)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "余皇后",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "是",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholarHappy",
         "string": "恭喜，优异的成绩",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoBitter",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Bitter",
         "string": "真的吗，太好了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoBitter",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Bitter",
         "string": "世清，看，是95分啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "让人刮目相看了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "余头余脑的小家伙，出乎意料地聪明啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "余头余脑是什么意思啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholarHappy",
         "string": "哈哈哈，你们的感情真好啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholarHappy",
         "string": "世清阁下，适当的夸赞也是必须的哦，余皇后不仅很聪明，还很努力呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "皇后，虽然有一点不足的地方，但你已经优秀地完成课程了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "这多得了你的栽培，亚良老师",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "世清阁下，余皇后的成绩，除了她聪明和努力外，还有一点很重要",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "是什么呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "那就是求知欲",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "多么聪明的人，对一件事情没有兴趣的话，也很难获得成果",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "所谓兴趣是最大的老师",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "余意外地对西景语有兴趣啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "那是一种奇妙的感觉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "一直在说的语言，竟然可以被忠实地记载下来，让后世的人知道先人说过的话",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoEmbarrassed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Embarrassed",
         "string": "蚩幽人并不注重这些东西呢……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "想要把先辈们的事迹记录下来的希望造就的智慧的结晶",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "文字正是为此而生的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "在我生命的前二十年，我一直认为挥动手中的武器就是我人生唯一的意义",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我真的在学习中找到了另一种人生的意义",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "余……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "以后还请多多指教呢，亚良老师",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholarHappy",
         "string": "哈哈，无限欢迎，当你的老师也是让人愉快的事情",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清拿起试卷看了下 ",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "余，真是有自己的特色啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "有些我也可能会搞错的地方都漂亮地答对了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "但是错的地方，都是让人觉得很奇怪的地方……对于西景母语者来说不可能弄错的地方",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "西景人几乎不会搞错泖支於的写法，但这也是你没有满分的原因 ",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "因为很奇怪啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "西景文字是一种高度表意的文字不是吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "泖支於这三个字，倒是无法从字面上推断其意思",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "这个是实话，这个地名有几千年的历史了，但也就只知道有这么一个词，不知道是怎么来的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "关于它的意思目前还没有共识，但是，有一个比较合理的解释",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "泖是指水边，支是指支流，於是指淤泥",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "泖支於处于安河的河源地带，是其中一条支流上的一个湖的岛上，也就是说“泖支於”一词很可能是指“湖边的浮岛”……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "这样啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "真奇怪啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "怎么了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "说到这些东西的话，亚良就应该络绎不绝了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "出奇地安静，很奇怪",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "这是因为我在想要不要说",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "……或多或少会对余皇后有点冒犯",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "没所谓啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "那我就发表一下自己的愚见了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "实际上呢，泖支於也有另一个更加靠谱的猜想，那就是这个词是音译词",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSurprise",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Surprise",
         "string": "音译词？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "“支於”连读的话，就是西景古语发音的“州”字",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "泖支於是西景人从蚩幽人手中抢过来的……这个皇后应该也是清楚的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "但是根据考古线索的话，在蚩幽人……占领泖支於之前，西景人就在这里建立了都市",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "泖支於可能是蚩幽人对这个都市原来的西景称呼的音译，因为蚩幽语里没有“州”的一整个音节，所以拆开了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "由于年代久远，西景人重新占领这个城市的时候早就忘记并丢失了一切西景的痕迹了，把蚩幽人音译的名字重新音译成了西景语来命名这个都市",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCloseEye",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5CloseEye",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "抱歉，这种历史对于皇后来说……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "毕竟是西景人和蚩幽人几千年糊涂账的起源",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "没有的事，我没有介意那种已经发生过的事情，刚刚我是在思考亚良老师说的东西",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "也就是说，泖支於在很久很久以前，也和西景的很多都市一样叫“州”吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "是啊，这个是目前另一个比较主流的说法",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "之所以说主流是因为还没有形成共识",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "因为只是根据历史推测出后面两个字其实是“州”，但“泖”这个字，还是不知道什么意思",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "确实啊，还不能很好地证明这是正确的说法",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "“猫”？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "和泖同音，不是吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "“猫州”吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholarHappy",
         "string": "哈哈哈，说不定，还真有可能呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "猫州这个名字未免也太奇怪",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "是有什么原因叫成这个名字吗……？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "一切都需要认证呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "亚良",
+        "char": "SeigineScholar",
+        "con": "",
         "face": "SeigineScholar",
         "string": "世清阁下，余皇后，时间也不早了，我也该告退了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "辛苦你了，亚良",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "再见，老师",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "亚良走了出去",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "细想了一下，猫州似乎还真有可能啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "嗯？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "对于我们这些“怪物”来说，很好理解不是吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoCloseEye",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5CloseEye",
         "string": "……我好像也懂了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "我是“狼”，你是“鹿”，而其他西景人的主体跟我们一样是野兽的“猫”……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "“猫州”……大河的源头……西景人的起源……感觉这是比我们认知的历史更之前的更加传说的故事呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……余，比我想象中的聪慧呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSinisterSmileRF",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5SinisterSmileRF",
         "string": "多夸一点我吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "值得夸奖的话我是不会吝啬赞美之词的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "不愧是我的老婆",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "世清",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoBitter",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Bitter",
         "string": "我会继续好好地努力的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……加油，我会继续见证你的成长的",
-        "special": "dia1"
+        "dic": 1
     }
 ]

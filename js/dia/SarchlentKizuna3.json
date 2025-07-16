@@ -1,744 +1,956 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "触发条件：羁绊二剧情触发后，前往艾特拉塔的任意一个城镇的旅馆触发",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "今天就在这里休息吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "嗯……也好，今天真是累啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "进入旅馆的时候，和哈扎德擦身而过",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "抱歉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "没事",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "你不是哈扎德吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Surprise",
         "string": "啊，是你们",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "？？？",
-        "face": "Sherazard2Loudly",
+        "char": "Sherazard",
+        "con": "",
+        "face": "extra1",
         "string": "老哥！动作麻利点好吗！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEye",
         "string": "真是的……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "看起来你们也打算入住这个旅馆啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "我有点事，等等我回来之后，再好好寒暄吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "哈扎德走远了",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDefault",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Default",
         "string": "朋友？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "怎么说呢……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappyCE",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
         "string": "“一起逃跑的狱友？”",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "这样说也没错",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "你们的大冒险可真是波澜壮阔啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "旅馆二楼，世清的房间，外面传来了敲门声",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "请进",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "哈扎德进了房间",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "呼……还真是巧合啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "是啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "真是让人吃惊啊，听说你在那之后成为了西景的皇帝",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "还有这个没看过的小姐，想必就是那场传奇般的比武大会后和你成婚的忽兰皇后吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "只会出现在新闻和传言中的人物确实地在我面前出现真是让人感到魔幻啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDepressed",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "depress",
         "string": "真过分啊，我好像和之前那样一点存在感都没有啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEye",
         "string": "……你还是和以前一样嘛",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "雪拉扎德从隔壁的房间走了过来",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "？？？",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "老哥，你的朋友吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Surprise",
         "string": "啊，雪拉扎德",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "…………(打量世清一行人)",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Happy",
         "string": "哇，真是让人感觉到“故事性”的团队啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Happy",
         "string": "戴眼镜的老哥看起来像是团队里的头脑担当，率领着两个看着就觉得很笨的家伙到处冒险，一定很辛苦吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "看着……就笨……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentWrySmile",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra1",
         "string": "我这帅脸怎么可能让人第一眼觉得是笨蛋",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEye",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Sad",
         "string": "雪拉扎德……你说得太过分了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "……抱歉，说得太过了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "总是改不掉这口直心快的老毛病",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "哈扎德，你这句话似乎也……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "说起来，你最近过得怎么样呢，刚刚相遇的时候看你急急忙忙的，挺忙碌的样子",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "……还是去我们的房间好解释一点",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "来到哈扎德的房间",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentSurprise",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "surprise",
         "string": "哦，这里就像是那些魔法学者的研究所一样",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "到处都是纸和墨水的味道……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "世清拿起了一份漫画阅读了一下",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯？这不是“辛巴达和巨鸟”的分镜草稿吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "这个是“阿拉丁与精灵”！，这不是千夜一夜物语吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "是在不久之前势如破竹登上了人气榜前三的奇幻漫画啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "难道说……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Happy",
         "string": "我还没自我介绍，我叫雪拉扎德，千夜一夜物语的作者，同时是那个不成器的哥哥的妹妹",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "真是令人惊讶啊，那个受欢迎的千夜一夜物语的作者竟然是这样的一个小妹妹",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "我已经成年了哦，别把我当成小孩子，大叔",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "………………",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "其实该惊讶的是我才对，竟然可以在这里遇到西景的皇帝和皇后，还有……金毛随从？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "你这家伙说话真让人火大啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingSurprise",
         "string": "我好像没在你面前提到过我是皇帝的事情……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "因为老哥经常提起你，你是我重点观察的创作素材，一些特征完全对得上，所以我推断你就是他所说的伦",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "所以在知道我是皇后的前提下说我是笨蛋吗……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "观察力是一个创作者的基本素养，看起来你确实是千夜一夜物语的作者",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2HappyCE",
         "string": "能得到西景皇帝陛下的称赞，真是无上光荣",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDepressed",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "depress",
         "string": "值得哈扎德冒生命危险去激活地下倒立金字塔拯救的妹妹我想象中是更讨喜的女孩",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "夏修伦……请原谅我妹妹的冒犯，她只是不太会说话……嗯，她的演出绘画能力和口头语言组织能力是两个极端",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "你就是夏修伦吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "呃……怎么了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2HappyCE",
         "string": "你是那场地底大冒险的主角之一……因为真人长得太过路人，很难跟哥哥的描述关联起来呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentLow",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra2",
         "string": "夏修伦……不能揍女孩子……忍住……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "不过，你身上拥有一股真正历练过的人才会拥有的气质，何况你某种意义上也救了我的命",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "谢谢你们",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentSurprise",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "surprise",
         "string": "啊？那个……也没啥啦……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "哈扎德，难道你和雪拉扎德在边旅行边画漫画吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "嗯，多亏了我这能干的妹妹，千夜一夜物语的稿费足够我们两人的生活开支",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "我们现在在亲身前往各个地方打听各地的传奇故事，收集创作的灵感",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Happy",
         "string": "其实有一半是在躲避追杀啦哈哈哈哈",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "在逃出卡哈扎塔后，我们兄妹两人途经了好多个地方，每天都只是不知道明日在何方地混日子",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Default",
         "string": "真是让人绝望的日子啊，但是在旅行的过程中，我听哥哥说了你们的故事，休息时周围的旅行者们也向我们讲述了他们的故事",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2CloseEye",
         "string": "在某一天，我把梦中的场景画了下来，不知道为什么，我越画越能感觉到梦的内容越来越清晰，这就是千夜一夜物语的由来",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2CloseEye",
         "string": "能依靠自己的双手把自己的梦，旅行者们的梦画下来，这样想，即使颠沛流离也是不错的人生呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEye",
         "string": "于是我们就这样，一面躲避卡哈扎塔人的追杀，一面到处旅行收集材料绘制千夜一夜物语，并为此找到了人生的意义",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEye",
         "string": "虽然我只是跑腿和买颜料纸笔的……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "取名千夜一夜物语，就是寄托了自身对千奇百怪的世界的憧憬，以及希望自身可以在这条创作之旅传续下去的愿景呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Happy",
         "string": "哦，不愧是团队里智商担当的皇帝陛下，我决定亲自点名你是我的黄金书迷了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEyeSad",
         "string": "雪拉扎德……玩笑别开太过了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingCloseEye",
         "string": "哈扎德，这种小事我不会放在心上，能被自己喜欢的作品的作者点名为忠实粉丝，说实话还让人挺高兴的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "哈，其实我也是忠实读者，那家伙只是借我船上的杂志看而已，我才是一期不漏",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Happy",
         "string": "哈哈，作为一个作者，最大的幸福就是看着读者沉浸在自己缔造的世界中，所以……谢谢你们",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "余在他们聊天的时候感到无聊到处翻来翻去找雪拉扎德的漫画看",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSinisterSmile",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5SinisterSmile",
         "string": "哦？这个是以世清和夏修伦作为主角的漫画吗？有意思",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSinisterSmile",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5SinisterSmile",
         "string": "画风真华丽啊，就是夏修伦画得有点帅了，和本人完全不像，不过毕竟在画的时候没见过真人，有些不必要的脑补很正常",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoDepressed",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5Depressed",
         "string": "怎么两句话都没说就开始脱掉衣服……那啥了……还有那玩意也画得太大了吧……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Surprise",
         "string": "喂喂！！停停停！！你是在哪里找到的啊！快停下！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentWrySmile",
+        "char": "SarchlentAdventurer",
+        "con": "SW",
+        "face": "extra1",
         "string": "………………………………………………",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEyeSad",
         "string": "哎……忘了说……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEyeSad",
         "string": "以前生计不好的时候雪拉扎德用过几个笔名投稿了很多……那种漫画……从那之后好像一发不可收拾了……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEyeSad",
         "string": "那个……特定人群里面很流行……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Surprise",
         "string": "给回我！给回我！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "余",
-        "face": "YoSinisterSmile",
+        "char": "YoEmpireFlower",
+        "con": "",
+        "face": "Yo5SinisterSmile",
         "string": "嘻嘻，谁叫你刚刚这样抹黑我",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingEmbarrassed",
         "string": "有这种爱好我还是可以理解的……只是这个对于我来说好像有点劲爆了点……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2CloseEyeSad",
         "string": "实在是非常抱歉……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "哈哈，就别想太多了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "我们也好久没见了，今晚我们就边吃边喝边聊，好好地聚一下吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
         "face": "SeicingDefault",
         "string": "嗯，不错的提议",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "哈扎德",
+        "char": "Khazard",
+        "con": "",
         "face": "Khazard2Default",
         "string": "好，今晚我们就好好地开心一下吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "雪拉扎德",
+        "char": "Sherazard",
+        "con": "",
         "face": "Sherazard2Surprise",
         "string": "还给我~~！",
-        "special": "dia2"
+        "dic": 2
     }
 ]

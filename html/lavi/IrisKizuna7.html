@@ -36,17 +36,17 @@
                         <div class="entry"><div id="lavipage" page="6"></div>
 
 <div id="app">
-    <div v-for="diaindex in aasb">
-        <div :class="diaindex.branch1st" :style="diaindex.branchstyle">
-            <div :id="diaindex.special" :style="diaindex.specialstyle">
-                <table :id="diaindex.tableid" cellpadding="5" :style="diaindex.facein">
-                    <tr v-html="diaindex.string1st"> </tr>
-                    <tr v-html="diaindex.string2nd"> </tr>
-                </table>
-            </div>
-        </div>
+    <div v-for="diaindex in aasb" :style="diaindex.bstyle" :class="diaindex.bclass">
+        <table cellpadding="5" :id="diaindex.tablelavivanar" :style="diaindex.astyle">
+            <tr v-html="diaindex.tr1">
+            </tr>
+            <tr v-html="diaindex.tr2">
+            </tr>
+        </table>
+        <br>
     </div>
 </div>
+<span id="overdrive" style="color: white;">IrisKizuna7</span><br>
 
 
                         </div>
@@ -73,66 +73,7 @@
     </div>
 </body>
 
-<script type="text/javascript">
-    var imgAll = [];
-    const vm = new Vue({
-        el: '#app',
-        data: {
-            aasb: []
-        },
-        created() {
-            fetch('https://seicing.com/js/dia/IrisKizuna7.json')
-                .then(response => response.json())
-                .then(json => {
-                    this.aasb = json
-                    for (var i = 0; i < json.length; i++) {
-                        json[i].special = json[i]['special'];
-                        json[i].branch1st = json[i]['branch'];
-
-                        if (json[i].name != '') {
-                            json[i].string1st = '<td id="banaheader" style="padding: 5px 0px 10px 10px;">' + json[i]['name'] + '</td>';
-                        } else {
-                            json[i].string1st = '<td id="banaheader2"></td>';
-                        }
-
-                        if (json[i].face != '') {
-                            json[i].facein = 'background:url(https://data.seicing.com/seicingdepot/fatcatpool/essay/head2/' + json[i]['face'] + '.png) center right no-repeat;border-radius:15px 15px 15px 15px;background-size: 180px;';
-                        } else {
-                            json[i].facein = 'border-radius:15px 15px 15px 15px;';
-                        }
-
-                        if (json[i].special != 'dia3') {
-                            json[i].string2nd = '<td width="300px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="180px"></td>';
-                        } else {
-                            json[i].string2nd = '<td width="475px" style="padding: 0px 0px 10px 10px;">' + json[i]['string'] + '</td><td width="5px"></td>';
-                        }
-
-                        if (json[i].special != 'dia3') {
-                            json[i].tableid = 'tablebana';
-                        } else {
-                            json[i].tableid = 'tablebana2';
-                        }
-
-                        if (json[i].special != 'dia3') {
-                            json[i].specialstyle = 'position:static';
-                        } else {
-                            json[i].specialstyle = 'position:relative;left:20%;';
-                        }
-
-                        if (json[i].branch == 'branch0' || json[i].branch == 'branch1') {
-                            json[i].branchstyle = '';
-                        } else {
-                            json[i].branchstyle = 'display: none';
-                        }
-
-                    }
-                })
-        }
-    })
-</script>
-
-<script>
-
-</script>
+<script type="text/javascript" src="https://seicing.com/js/lavidialog.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/lavistory.js"></script>
 
 </html>

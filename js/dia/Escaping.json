@@ -1,765 +1,983 @@
 [
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "伊拉修莱德",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我们到了，伊拉修莱德",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichWanderer",
+        "con": "",
         "face": "LouichSmile",
         "string": "和传闻的一样，空气中有一种湿润的感觉",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisHappy",
         "string": "夏修伦、洛雨希大姐，谢谢你们送我到这里",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentHappy",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "happy",
         "string": "哈哈哈，你太客气了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "我们是朋友嘛，况且我也顺路",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "旅程结束了呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "是啊",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "一路上发生了好多事情，所幸最后还是有惊无险",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "真舍不得啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "你接下来有什么打算呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "不知道，也许会在这里逗留一段时间",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "要不要跟我一起回去呢？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "我想好好感谢一下你",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "这个倒是不用……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichWanderer",
+        "con": "",
         "face": "LouichDefault",
         "string": "哎呀，你也要学会一下接受别人的好意啊",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichWanderer",
+        "con": "",
         "face": "LouichSmile",
         "string": "夏修伦和我会暂时在这座城市补给一下",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichWanderer",
+        "con": "",
         "face": "LouichSmile",
         "string": "你晚上有空的话，就来酒馆聚一聚吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "那好吧……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "洛雨希",
+        "char": "LouichWanderer",
+        "con": "",
         "face": "LouichDefault",
         "string": "再见了，我可爱的伊丽丝，今晚你也要来哦",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "对啊，好聚好散",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "夏修伦",
-        "face": "SarchlentDefault",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
         "string": "就先不碍着你们了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisHappy",
         "string": "今晚见，夏修伦，洛雨希大姐",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "夏修伦和洛雨希离队",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "那我们也走吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "嗯",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "伊拉修莱德宫",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "卫兵",
+        "char": "IllazuraydRecruit",
+        "con": "",
         "face": "IllazuraydRecruit",
         "string": "是索菲亚大公！快去禀告陛下！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "索菲亚？是你的本名吗",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenity",
         "string": "是严肃无趣的教名……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "有点打击人啊，我还以为会让你感到惊讶呢",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "就算你在之前刻意隐瞒，身上的一举一动早就出卖你了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "我才没看到过那么高贵知性的冒险家",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenityRF",
         "string": "诶？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "伊拉修莱德并不像我们西景那样完全靠实力被推举为皇帝，在艾特拉塔传统里，国王的儿女会成为大公，为成为实至名归的国王而努力修行",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "大公们出现在各种危险的地方修行，也不是什么奇怪的事情",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefaultCE",
         "string": "竟然可以根据各种线索推断到这个地步",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "但是，你并不是因为修行而离开王宫是吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSurprise",
         "string": "为什么……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "毕竟脸上没有一丝回到家里的喜悦呢",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "……有什么要我帮忙的地方我会尽力的",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressedCE",
         "string": "为什么感到惊讶的反而是我呢，你的心思未免也缜密得有点可怕了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "戴上这只戒指，进去之后维持现在的冷静，好吗？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "当然……你觉得可疑的话，现在走也来得及",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "我相信你",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressedCE",
         "string": "谢谢你……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "戴上戒指进入伊拉修莱德宫觐见室",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "终于回来了啊，我的女儿",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisAngry",
         "string": "伊安哥哥呢！？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "连父亲一句问候都没有，回来就伊安哥哥吗",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "倒也是，如果不是用他的名义，你根本就不可能回来",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "名义？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "只有伊安的信鸟回来了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "信鸟……？不可能，除非主人出现变故，信鸟不会离开主人",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "就是如此，伊安很可能出现了什么不测，所以这次不能再让你逃婚了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "你要认识到自己作为伊拉修莱德大公的责任",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisAngry",
         "string": "……为什么可以把事情说得那么轻描淡写啊！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizCloseEye",
         "string": "我一直就很奇怪了，这个从一开始就站在你旁边的年轻人是谁？",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenity",
         "string": "他……他……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenityRF",
         "string": "已经和我缔结了誓约的所爱之人",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenityRF",
         "string": "他手里的戒指就是证明",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(……)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizHappy",
         "string": "年轻人啊，你是冒险者对吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizHappy",
         "string": "无论索菲亚因为什么原因喜欢上你，都是不被允许的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizHappy",
         "string": "作为伊拉修莱德的大公，她拥有联姻维系联盟的义务……而不是跟一个冒险者私定终身",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizHappy",
         "string": "所以你就委屈一下吧",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "卫兵！把这个年轻人送到贵宾囚禁房关押，皇家侍卫给我看好大公",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "阿齐兹王",
+        "char": "Aziz",
+        "con": "",
         "face": "AzizDefault",
         "string": "年轻人，在索菲亚的联姻完结之前，你给我好好呆着吧，然后拿上你的补偿永远离开这个大陆",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "伊拉修莱德宫贵宾囚禁房",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(于是就这样莫名其妙地坐大牢了)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(她是打算利用我作为脱身工具吗？)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(不过现在她和我一样也被关起来了吧，光是从结果来说毫无意义)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Surprise",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "surprise",
         "string": "(等等，这个戒指……)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "使用信物戒指感知到了密道",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(原来如此，如果没有这戒指，可能我不会因为女婿的身份丢到这里，也无法触发这里的机关)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(这个城堡和她一样深不可测)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "(动作得快，被守卫发现逃跑了就麻烦了)",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "离开监狱，沿着机关密道来到高塔顶层的伊丽丝关押室的窗户外",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "我逃出来了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisHappy",
         "string": "彦！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "真是精妙的机关，可以以最隐蔽的角度来到这个吓人的房间",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenity",
         "string": "得抓紧时间才行",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenity",
         "string": "和我一起发动魔力",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2CloseEye",
+        "char": "SeicingEmpireJade",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "魔力……是这样吗？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "激活水路机关，一条肉眼难以看到的冰之路出现在天空中",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "为了骗过父亲的魔力感知，这个机关一定要两个人配合才会激活",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDefault",
         "string": "之前哥哥就用这个方法让我逃出去的",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "难道说教会我冰魔法也是计划的一部分么？",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "……对不起",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "现在不是说这些话的时候",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "顺着架桥逃出了伊拉修莱德宫",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "逃出来了……",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisRelax",
         "string": "……",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "看起来打算在这里呆几天的计划泡汤了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisDepressed",
         "string": "抱歉……实在是非常对不起",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "",
+        "char": "",
+        "con": "",
         "face": "",
         "string": "响起了卫兵的吆喝声",
-        "special": "dia3"
+        "dic": 3
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "卫兵",
+        "char": "IllazuraydRecruit",
+        "con": "",
         "face": "IllazuraydRecruit",
         "string": "警戒！大公逃跑了！",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisSerenity",
         "string": "看起来被发现了",
-        "special": "dia2"
+        "dic": 2
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "看起来还没发现我们的具体行踪，只是发现我们走掉了",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "要去找夏修伦他们吗？虽然继续呆在这里很危险，但是约好和他们在酒馆见面",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "至少和他们说一声再逃出城外吧，就这样走掉感觉过意不去",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "世清",
-        "face": "Seicing2Default",
+        "char": "SeicingEmpireJade",
+        "con": "ATSP",
+        "face": "serene",
         "string": "再说现在警报已经拉响了，城门肯定会在我们之前进入警戒状态，还是找他们想想有什么办法吧",
-        "special": "dia1"
+        "dic": 1
     },
     {
-        "branch": "branch0",
+        "branch": "",
         "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "con": "",
         "face": "IrisHappy",
         "string": "嗯，也对，我们走吧",
-        "special": "dia2"
+        "dic": 2
     }
 ]
