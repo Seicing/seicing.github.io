@@ -96,7 +96,6 @@ const vm = new Vue({
                             } else {
                                 json[i].bstyle = "float:left;display:none;";
                             }
-
                         } else {
                             json[i].bstyle = "float:left;";
                         }
