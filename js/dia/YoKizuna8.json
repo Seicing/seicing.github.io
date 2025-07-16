@@ -4,7 +4,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "羽三羁绊10剧情完成后，前往神宫探望明玲触发正常版本<br>在羽三羁绊2-10剧情完全没触发的前提下羽三体力到达9999，前往神宫探望明玲触发独处版本",
         "dic": 3
     },
@@ -13,7 +13,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "独处版本的场合下，羽三不会出现在最开始的剧情里，余会代替羽三说完这个阶段的台词，直到进屋后羽三端水出来为止",
         "dic": 3
     },
@@ -22,7 +22,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "切换条件对话<br><a id='branchA1' style='color:#00ff00'  onclick=\"brIn('Z1');brOut('Z2');\">正常版本</a> <a id='branchA2' onclick=\"brIn('Z2');brOut('Z1');\">独处版本</a>",
         "dic": 3
     },
@@ -202,7 +202,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "神宫主人房，泡好茶的羽三把茶盆送到了桌前 ",
         "dic": 3
     },
@@ -319,7 +319,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "世清和羽三离开了大厅 ",
         "dic": 3
     },
@@ -724,7 +724,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "房间深处传来世清的惨叫声 ",
         "dic": 3
     },
@@ -760,7 +760,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "余没有听明玲说的话，急急忙忙地跑到了世清的房间里 ",
         "dic": 3
     },
@@ -787,7 +787,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "独处模式会有额外的场景发生<br>余给世清包扎脚的伤口",
         "dic": 3
     },
@@ -859,7 +859,7 @@
         "name": "",
         "char": "",
         "con": "",
-        "face": "",
+        "face": "smile",
         "string": "世清把余抱了起来",
         "dic": 3
     },
