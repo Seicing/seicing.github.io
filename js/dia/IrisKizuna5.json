@@ -6,7 +6,7 @@
         "con": "",
         "face": "smile",
         "string": "触发条件：触发阿拉贡成为私掠船长剧情后，和伊丽丝组队时随机出入城市会收到来自世行的信件",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -15,7 +15,7 @@
         "con": "",
         "face": "SeigentDefault",
         "string": "哥，在外面还安好吧，有一件事情要汇报",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -24,7 +24,7 @@
         "con": "",
         "face": "SeigentDefault",
         "string": "私掠舰队的阿拉贡之前给皇宫来了一封信，说自己过几天将会造访皇宫进行贵重物的交接",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -33,7 +33,7 @@
         "con": "",
         "face": "SeigentSmile",
         "string": "让别人白跑一趟可不行，如果你太忙回不来，我可以帮你接收",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -60,7 +60,7 @@
         "con": "",
         "face": "Yo5Default",
         "string": "怎么了，看起来是很重要的事情",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -87,7 +87,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "嗯，没事，我可以跟你们一起回去",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -96,7 +96,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "顺便见一下明玲姐，在西景的城镇逛逛也不错呢",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -114,7 +114,7 @@
         "con": "",
         "face": "smile",
         "string": "前置消息完成后，伊丽丝就不能够退队(提示会有急事，现在还是不要换人)，来到西景皇宫的觐见厅触发剧情",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -141,7 +141,7 @@
         "con": "",
         "face": "SeigentSmile",
         "string": "哥，私掠船长阿拉贡可能遇到了一点麻烦",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -159,7 +159,7 @@
         "con": "",
         "face": "SeigentSmile",
         "string": "好像是和跟你一起回来的索菲亚公打起来了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -186,7 +186,7 @@
         "con": "",
         "face": "smile",
         "string": "跑出宫外的世清听到了猫的叫声",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -213,24 +213,6 @@
         "con": "",
         "face": "AragonAngry",
         "string": "喂！太过分了！我可是冒着生命危险！",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "阿拉贡",
-        "char": "AragonCoastal",
-        "con": "",
-        "face": "AragonDefault",
-        "string": "拿去，我会想办法逃出去的",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "",
-        "char": "",
-        "con": "",
-        "face": "smile",
-        "string": "阿拉贡把一个东西丢给了世清，世清转过身来继续说话",
         "dic": 3
     },
     {
@@ -239,8 +221,26 @@
         "char": "AragonCoastal",
         "con": "",
         "face": "AragonDefault",
-        "string": "看你这样子，还有事吗？",
+        "string": "拿去，我会想办法逃出去的",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "",
+        "char": "",
+        "con": "",
+        "face": "smile",
+        "string": "阿拉贡把一个东西丢给了世清，世清转过身来继续说话",
         "dic": 2
+    },
+    {
+        "branch": "",
+        "name": "阿拉贡",
+        "char": "AragonCoastal",
+        "con": "",
+        "face": "AragonDefault",
+        "string": "看你这样子，还有事吗？",
+        "dic": 3
     },
     {
         "branch": "",
@@ -258,7 +258,7 @@
         "con": "",
         "face": "AragonFear",
         "string": "那个疯狗大公……啊不对，索菲亚公吗？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -267,7 +267,7 @@
         "con": "",
         "face": "AragonAngry",
         "string": "我才想问你，为什么她会在你家呢！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -285,7 +285,7 @@
         "con": "",
         "face": "AragonFear",
         "string": "(害怕的样子)",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -294,7 +294,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "不是因为她，我也不需要老远跑到西景来跟你混了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -303,7 +303,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "她是你什么人？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -321,7 +321,7 @@
         "con": "",
         "face": "AragonSinisterSmile",
         "string": "什么程度呢？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -339,7 +339,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "这样啊……等等！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -348,7 +348,7 @@
         "con": "",
         "face": "AragonFear",
         "string": "那个婆娘接近五公里范围内了！这里很危险，我要跑了！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -366,7 +366,7 @@
         "con": "",
         "face": "AragonFear",
         "string": "再等我就得死了，再见！我先匿了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -375,7 +375,7 @@
         "con": "",
         "face": "smile",
         "string": "阿拉贡逃跑后不到两分钟，伊丽丝就气喘吁吁地跑到这里来了",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -384,7 +384,7 @@
         "con": "",
         "face": "Iris2Relax",
         "string": "呼……呼……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -393,7 +393,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "世清？你会见完你的宾客了吗？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -429,7 +429,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -438,7 +438,7 @@
         "con": "",
         "face": "Iris2DepressedCE",
         "string": "没事……你不知道情况……没有问题……我……我……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -474,7 +474,7 @@
         "con": "",
         "face": "Iris2Depressed",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -483,7 +483,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "伊安哥哥……就是被这个人杀死的……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -501,7 +501,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "伊安哥哥就是因为他变成了吸血鬼",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -510,7 +510,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "他像一个骑士为了保护被海贼入侵的村落，战斗到了最后……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -546,7 +546,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -555,7 +555,7 @@
         "con": "",
         "face": "Iris2Shy",
         "string": "嗯……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -564,7 +564,7 @@
         "con": "",
         "face": "smile",
         "string": "在泖支於城内到处寻找，行走步数达到一定程度后触发剧情",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -573,7 +573,7 @@
         "con": "",
         "face": "Iris2Angry",
         "string": "这个家伙到底躲到哪里去了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -600,7 +600,7 @@
         "con": "",
         "face": "smile",
         "string": "这时候余跑了过来",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -609,7 +609,7 @@
         "con": "",
         "face": "Yo5Sad",
         "string": "你们在干什么，好大的动静啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -627,7 +627,7 @@
         "con": "",
         "face": "Yo5Default",
         "string": "怎么了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -645,7 +645,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "欸？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -663,7 +663,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "啊？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -672,7 +672,7 @@
         "con": "",
         "face": "smile",
         "string": "虽然还是很疑惑，但是伊丽丝还是相信世清把戒指脱了下来给他<br>世清也把自己手上的戒指脱了下来，给了余",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -681,7 +681,7 @@
         "con": "",
         "face": "Yo5Sad",
         "string": "这是在干什么？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -690,7 +690,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "不会吧……难道说……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -708,7 +708,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "怎么可能……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -726,7 +726,7 @@
         "con": "",
         "face": "Yo5Sad",
         "string": "哎，不懂你们在干啥啊，既然你要求我就照做吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -735,7 +735,7 @@
         "con": "",
         "face": "Iris2Depressed",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -744,7 +744,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "走吧，世清",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -771,7 +771,7 @@
         "con": "",
         "face": "smile",
         "string": "前往港口的路口找到阿拉贡",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -780,7 +780,7 @@
         "con": "",
         "face": "AragonHappy",
         "string": "总算是甩掉她回到码头了啊，希望可以来得及上船跑人",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -789,7 +789,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "伊安……你可真是会折腾人啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -798,7 +798,7 @@
         "con": "",
         "face": "AragonFear",
         "string": "等等……骗人的吧！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -807,7 +807,7 @@
         "con": "",
         "face": "Iris2Angry",
         "string": "你可逃不掉了！给我去死吧！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -816,7 +816,7 @@
         "con": "",
         "face": "smile",
         "string": "世清连忙制止了伊丽丝",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -825,7 +825,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "世清？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -834,7 +834,7 @@
         "con": "",
         "face": "Iris2Angry",
         "string": "你干什么！？放开我……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -843,7 +843,7 @@
         "con": "",
         "face": "AragonSurprise",
         "string": "……？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -861,7 +861,7 @@
         "con": "",
         "face": "Iris2Angry",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -870,7 +870,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "对不起……我……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -879,7 +879,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "看起来，兄弟，你找到了误导我的办法，因为我之前漏嘴提到了我可以探测到大公的位置",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -888,7 +888,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "虽然不知道怎么做到的，但是凭借一两句话可以推理到这个地步，真是让人感到……对了！是可靠",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -906,7 +906,7 @@
         "con": "",
         "face": "AragonHappy",
         "string": "哈哈哈，你没必要道歉啊，我甚至要为我的苦难生活要结束而感到高兴呢",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -933,7 +933,7 @@
         "con": "",
         "face": "AragonHappy",
         "string": "我没有在阴阳怪气，而是为我的任务完成了而感到高兴",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -951,7 +951,7 @@
         "con": "",
         "face": "smile",
         "string": "阿拉贡把一个感应器丢给了伊丽丝",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -960,7 +960,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "这是我哥哥的……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -969,7 +969,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "变成吸血鬼后的他把这个自己制作的追踪器给了我，他在和我离别的时候是这样说的",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -978,7 +978,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "“阿拉贡，这个仪器可以感知到我妹妹在一定范围内的气息……不要跟她起冲突，逃吧”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -987,7 +987,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "“这是我完全失去理性之前，作为你的朋友最后的恳求……”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -996,7 +996,7 @@
         "con": "",
         "face": "Iris2Angry",
         "string": "我哥哥怎么会被你杀死之后还要给追踪器给你帮助你逃跑呢！？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1005,7 +1005,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "因为这是你哥哥最后的“计策”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1014,7 +1014,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "当日并没有发生那些人所说的我劫掠了村落，把保护村落的骑士杀死这件事",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1023,7 +1023,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "相反，我在那认识了伊安，正所谓不打不相识，成为了非常要好的朋友",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1032,7 +1032,7 @@
         "con": "",
         "face": "Iris2Pain",
         "string": "告诉我……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1041,7 +1041,7 @@
         "con": "",
         "face": "Iris2Pain",
         "string": "把一切都告诉我……把伊安哥哥的一切都告诉我……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1050,7 +1050,7 @@
         "con": "",
         "face": "AragonFear",
         "string": "不要一副吃了人的样子嘛，我会如实地、详细地说给你听的",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1059,7 +1059,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "一切的起源都是因为一个名为欧洛克的脸色苍白的男人",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1086,7 +1086,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "这个家伙背地里拿人命当儿戏，到处用活人试验他那变态研究，伊安可能察觉到这点对他展开了追踪吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1095,7 +1095,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "那时候的我因为在躲开某些仇家的耳目，来到了那个偏僻的村子，和追杀欧洛克的伊安相遇并且认识了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1104,7 +1104,7 @@
         "con": "",
         "face": "AragonAngry",
         "string": "欧洛克这家伙，可能是觉得这个村子偏僻，所以在这里做了一次大规模的活体试验",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1122,7 +1122,7 @@
         "con": "",
         "face": "AragonAngry",
         "string": "他向村子散发一种可怕的毒雾，吸进毒雾的人都变成吸血鬼了，那可是几十人的村子啊，真的没有人性！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1131,7 +1131,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "伊安是我见过的最侠义，最勇敢的战士",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1140,7 +1140,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "他顶着毒雾把能救的村民都救出去了，最后跟我一起揍了欧洛克一顿，可惜被那个欧洛克跑了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1149,7 +1149,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "他知道自己被毒雾感染并经历了高强度的运动，和村民一样变成吸血鬼是在所难免的了，所以他……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1158,7 +1158,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "难道说，我的哥哥……他……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1167,7 +1167,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "我亲手杀死了伊安，试图阻止他吸血鬼化，这点确实很遗憾……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1176,7 +1176,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "安葬好伊安之后我离开了村子，虽然很自然会这样想，但村子灭门都被怪罪在我的头上了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1185,7 +1185,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "艾特拉塔海军几次象征式的追捕我倒是没什么想法，真正要命的是知道了这一情况的你在那之后对我展开的穷追猛打",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1194,7 +1194,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "在你知道之前其实……就像开始时候那样所说，虽然不知道伊安在被我埋掉之后发生了什么，但是他确实再次出现在我面前，以吸血鬼的形态",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1203,7 +1203,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "他把他还留有理智时候做的追踪器给了我，然后恳求我保守秘密，让我对村子灭门、杀死保护村子的骑士这一误解成为了事实",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1212,7 +1212,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "我很欣赏他……所以我决定遵循他的遗志，为他保守这个秘密",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1221,7 +1221,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "为什么……为什么哥哥要我不知道真相……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1239,7 +1239,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "爱……？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1266,7 +1266,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "就是这样……他知道你是一个固执的妹妹，所以同样固执的他把这个追踪器塞到了我的手上",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1275,7 +1275,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "在“那个时刻”到来之前，他恳求我不要说出真相",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1284,7 +1284,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1293,7 +1293,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "“那个时刻”……指的是什么？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1302,7 +1302,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "“我的死会让伊丽丝不顾一切地复仇，怒火会蒙蔽她的判断力，让敌人有机可乘”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1311,7 +1311,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "“伊丽丝在我死后，需要一个可以替代我的人引导她，让她依靠，让她可以冷静下来应对一切”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1320,7 +1320,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "“在她遇到那个重要的人之前，阿拉贡，请原谅我的自私，你暂时性地承受我妹妹的怒火吧，这是我最后的请求了”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1329,7 +1329,7 @@
         "con": "",
         "face": "AragonDefault",
         "string": "原话就是这样说的",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1338,7 +1338,7 @@
         "con": "",
         "face": "Iris2Cry",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1365,7 +1365,7 @@
         "con": "",
         "face": "Iris2PanicRF",
         "string": "哎？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1374,7 +1374,7 @@
         "con": "",
         "face": "AragonSinisterSmile",
         "string": "我当初还没有意识到事情的严重性，不过，现在可以说如释重负了吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1383,7 +1383,7 @@
         "con": "",
         "face": "AragonSinisterSmile",
         "string": "我得走了，再晚点的话我的伙伴可能要在泖支於放火制造混乱让我逃掉了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1401,7 +1401,7 @@
         "con": "",
         "face": "AragonSinisterSmile",
         "string": "那我不就是得快点走人阻止这群笨蛋嘛，再说在这里当电灯泡可不好呢，再见了，兄弟",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1410,7 +1410,7 @@
         "con": "",
         "face": "AragonSerenity",
         "string": "索菲亚公",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1419,7 +1419,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "啊？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1428,7 +1428,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "就好像伊安所说的那样，不要白白丢了性命让他伤心，我相信兄弟和你听了我的说话之后会更加谨慎地行动",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1437,7 +1437,7 @@
         "con": "",
         "face": "AragonSad",
         "string": "我相信你们可以成功为伊安复仇的，等复仇成功后，请告诉我，我想请伊安喝一杯来安抚他的灵魂",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1446,7 +1446,7 @@
         "con": "",
         "face": "AragonSerenityCE",
         "string": "再见了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1455,7 +1455,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1464,7 +1464,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "嗯……我答应你……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1473,7 +1473,7 @@
         "con": "",
         "face": "smile",
         "string": "阿拉贡远去了",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -1491,7 +1491,7 @@
         "con": "",
         "face": "Iris2Happy",
         "string": "世清……我不会冲动的，请放心吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1500,7 +1500,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "那个海贼大哥，最后离别时候的凝重表情我不能从中感觉到虚伪，我不会质疑他的",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1509,7 +1509,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "伊安哥哥把我托付给了你，并且嘱咐我不能够冲动白白丢了性命，我会好好遵从他的嘱咐活下去的",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1518,7 +1518,7 @@
         "con": "",
         "face": "Iris2Default",
         "string": "只是……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1545,7 +1545,7 @@
         "con": "",
         "face": "Iris2Happy",
         "string": "嗯",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1554,7 +1554,7 @@
         "con": "",
         "face": "Iris2ShyCE",
         "string": "我会像相信伊安哥哥一样相信你……我相信你会引导我走向正确的复仇之路……世清……我会相信你……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1581,7 +1581,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "啊？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1599,7 +1599,7 @@
         "con": "",
         "face": "Iris2Surprise",
         "string": "追踪的光点在跑来跑去……难道说……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1617,6 +1617,6 @@
         "con": "",
         "face": "Iris2Happy",
         "string": "啊，是的呢，我们快点吧",
-        "dic": 2
+        "dic": 3
     }
 ]

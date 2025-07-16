@@ -6,7 +6,7 @@
         "con": "",
         "face": "smile",
         "string": "触发条件：和夏修伦组队击杀1000个敌人后在欧哈拉城触发",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -24,7 +24,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "嗯……？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -33,7 +33,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "这不是世清阁下吗？还有跟在阁下旁边的金发青年还有没见过的可爱小姐，想必就是西景的忽兰皇后了吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -42,7 +42,7 @@
         "con": "",
         "face": "Yo5SinisterSmile",
         "string": "嗯，是的，我就是可爱的忽兰皇后",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -60,7 +60,7 @@
         "con": "",
         "face": "surprise",
         "string": "啊！是你这家伙！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -69,7 +69,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "年轻人，没有必要展现出这么明显的敌意",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -78,7 +78,7 @@
         "con": "",
         "face": "happy",
         "string": "哼，我可是因为你吃了不少苦头",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -87,7 +87,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "说起来我还没有正式在你们面前自我介绍过呢",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -96,7 +96,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "我的名字是普利陀毗，我和阿齐兹王有点交情，所以帮助他介入了一下之前你们的冒险",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -114,7 +114,7 @@
         "con": "AT",
         "face": "PrithviCloseEye",
         "string": "是啊，真是苦差事，幸好已经结束了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -132,7 +132,7 @@
         "con": "SW",
         "face": "extra1",
         "string": "诶？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -141,7 +141,7 @@
         "con": "AT",
         "face": "PrithviSmile",
         "string": "你变得更敏锐了，阁下",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -150,7 +150,7 @@
         "con": "",
         "face": "Yo5Depressed",
         "string": "我也感觉到了，夏修伦你的洞察力还是不行啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -159,123 +159,6 @@
         "con": "CE",
         "face": "happy",
         "string": "都是因为有可靠的你们，所以我才没有锻炼洞察力的必要",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviDefault",
-        "string": "你叫夏修伦啊",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviDefault",
-        "string": "完全艾特拉塔风格的名字……",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "con": "",
-        "face": "smile",
-        "string": "怎么了，大叔",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviDefault",
-        "string": "你使用的火焰让我很在意",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviDefault",
-        "string": "能告诉我它的由来吗？在这之前，我们没有机会说上一句话",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "con": "CE",
-        "face": "happy",
-        "string": "哈，既然我们不是敌人，告诉你也无妨吧",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "con": "CE",
-        "face": "happy",
-        "string": "全都是这个拉哈布的功劳",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviSad",
-        "string": "……可以把它给我看看吗？",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "con": "",
-        "face": "smile",
-        "string": "嗯，没问题，不过你不要试图从我手中抢走这个东西，这可是很重要的",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviSad",
-        "string": "………………",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "普利陀毗",
-        "char": "Prithvi",
-        "con": "AT",
-        "face": "PrithviSad",
-        "string": "耶输末底……",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "夏修伦",
-        "char": "SarchlentAdventurer",
-        "con": "",
-        "face": "surprise",
-        "string": "咦？怎么了？大叔？",
-        "dic": 2
-    },
-    {
-        "branch": "",
-        "name": "",
-        "char": "",
-        "con": "",
-        "face": "smile",
-        "string": "普利陀毗拿出一个和拉哈布仿佛是一对的饰物",
         "dic": 3
     },
     {
@@ -284,8 +167,125 @@
         "char": "Prithvi",
         "con": "AT",
         "face": "PrithviDefault",
-        "string": "贾利德，卡哈扎塔语里面“冰雪”的意思，和你的意为“火焰”的拉哈布是同一个遗物上的两个部分",
+        "string": "你叫夏修伦啊",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviDefault",
+        "string": "完全艾特拉塔风格的名字……",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
+        "string": "怎么了，大叔",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviDefault",
+        "string": "你使用的火焰让我很在意",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviDefault",
+        "string": "能告诉我它的由来吗？在这之前，我们没有机会说上一句话",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
+        "string": "哈，既然我们不是敌人，告诉你也无妨吧",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "con": "CE",
+        "face": "happy",
+        "string": "全都是这个拉哈布的功劳",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviSad",
+        "string": "……可以把它给我看看吗？",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "smile",
+        "string": "嗯，没问题，不过你不要试图从我手中抢走这个东西，这可是很重要的",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviSad",
+        "string": "………………",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviSad",
+        "string": "耶输末底……",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "con": "",
+        "face": "surprise",
+        "string": "咦？怎么了？大叔？",
+        "dic": 3
+    },
+    {
+        "branch": "",
+        "name": "",
+        "char": "",
+        "con": "",
+        "face": "smile",
+        "string": "普利陀毗拿出一个和拉哈布仿佛是一对的饰物",
         "dic": 2
+    },
+    {
+        "branch": "",
+        "name": "普利陀毗",
+        "char": "Prithvi",
+        "con": "AT",
+        "face": "PrithviDefault",
+        "string": "贾利德，卡哈扎塔语里面“冰雪”的意思，和你的意为“火焰”的拉哈布是同一个遗物上的两个部分",
+        "dic": 3
     },
     {
         "branch": "",
@@ -294,7 +294,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "那是我的父亲和宿句人战斗时获得的伟大战利品……我被赐予了贾利德，而耶输末底被赐予了拉哈布",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -303,7 +303,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "今天……终于重聚了啊……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -312,7 +312,7 @@
         "con": "",
         "face": "surprise",
         "string": "一……一对……？耶输末底……是谁？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -321,7 +321,7 @@
         "con": "AT",
         "face": "PrithviCloseEye",
         "string": "我的妹妹",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -330,7 +330,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "二十多年前，她抛弃了王室的荣华富贵，和一个和你一样长着金发的吟游诗人私奔了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -339,7 +339,7 @@
         "con": "",
         "face": "surprise",
         "string": "……！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -348,7 +348,7 @@
         "con": "SW",
         "face": "extra2",
         "string": "王室……？等等？这是什么回事？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -357,7 +357,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "还给你起了夏修伦这样一个艾特拉塔名字……看起来她真的是想要和过去一刀两断啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -366,7 +366,7 @@
         "con": "SW",
         "face": "extra2",
         "string": "你是……我的……舅……舅父？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -375,7 +375,7 @@
         "con": "SW",
         "face": "extra2",
         "string": "我在这世界上还有亲人……？我妈妈还活着……？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -384,7 +384,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "……遗物不会说谎……我能感受到耶输末底的气息",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -393,7 +393,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "你果然……是我的侄子啊……从第一次看到你的时候，就从你身上感受到熟悉的感觉",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -402,7 +402,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "哎……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -411,7 +411,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "“普利陀毗罗阇”，这个名字已经很少跟人提过了，多少年前我还是国王的时候所用的名字",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -429,7 +429,7 @@
         "con": "",
         "face": "Yo5Surprise",
         "string": "这个名字我也有印象，是那个二十年前几乎成功统一室利刹陀罗的国王！？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -438,7 +438,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "我用实力继承了俱苏摩补罗，沿袭父亲的脚步继续四处征战，室利刹陀罗在我的努力下将要统一",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -447,7 +447,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "但是注定我们走向悲惨命运的……就是爱情",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -456,7 +456,7 @@
         "con": "AT",
         "face": "PrithviCloseEye",
         "string": "耶输末底抛弃了王室的一切选择了真爱，而我也无可救药地爱上了敌国国王的女儿……珊郁姬多",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -465,7 +465,7 @@
         "con": "AT",
         "face": "PrithviCloseEye",
         "string": "不过我最后没有像耶输末底一样，珊郁姬多和俱苏摩补罗只能选择一个……我选择了……我自己的国家",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -474,7 +474,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "悲剧不可避免地发生了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -483,7 +483,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "感到被背叛的珊郁姬多在国家灭亡后，伴随着对我的剧烈恨意背叛了整个室利刹陀罗",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -501,7 +501,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "是啊……我是一个失败的亡国之君",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -510,7 +510,7 @@
         "con": "AT",
         "face": "PrithviCloseEye",
         "string": "宿句人蹂躏了我的祖国之后，珊郁姬多继续对我进行疯狂的报复",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -519,7 +519,7 @@
         "con": "SW",
         "face": "extra2",
         "string": "难……难道说……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -528,7 +528,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "珊郁姬多找到了耶输末底，杀害了无辜的一家三口",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -537,7 +537,7 @@
         "con": "",
         "face": "depress",
         "string": "不对！",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -546,7 +546,7 @@
         "con": "",
         "face": "depress",
         "string": "我还活着，不是吗？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -555,7 +555,7 @@
         "con": "",
         "face": "depress",
         "string": "我妈妈，也就是你的妹妹，也一定活着",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -564,7 +564,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -573,7 +573,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "是啊……我一直坚信这只是珊郁姬多为了报复我编造的谣言……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -582,7 +582,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "这二十多年的流浪，坚信耶输末底和你还活着，是我继续苟延残喘下去的理由……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -591,7 +591,7 @@
         "con": "AT",
         "face": "PrithviSad",
         "string": "感谢梵天……今天我……终于……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -600,7 +600,7 @@
         "con": "",
         "face": "AmarandaDepressedCE",
         "string": "很抱歉打断一下，不过你们再这样下去恐怕今天就这样过去了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -609,7 +609,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "普利陀毗先生……你的委托，我接下了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -636,7 +636,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "真没想到和你在这里再次相会啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -654,7 +654,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -663,7 +663,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "我和你从来都不是敌人",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -672,7 +672,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "刺杀你只是因为任务……现在已经没有互相残杀的必要了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -690,7 +690,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "你才是……跟你战斗是这个世界上最愚蠢的抉择，某种意义上也是多亏了你才会有现在的我……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -699,7 +699,7 @@
         "con": "AT",
         "face": "PrithviDefault",
         "string": "所以，你已经考虑清楚了吗？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -708,7 +708,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "……嗯",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -717,7 +717,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "看起来是命运的安排",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -726,7 +726,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "世清阁下……是吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -744,7 +744,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "你一直要找的“暗杀王”，就是珊郁姬多",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -762,7 +762,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "背叛普利陀毗先生后，珊郁姬多吸收了大量被男人抛弃的女人组建了一个暗杀组织",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -771,7 +771,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "她作为组织的首领，自称“暗杀王”",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -780,7 +780,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "暗杀王和结社互相利用，几年前的那个事件就是暗杀王接受结社的委托嫁祸于你",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -798,7 +798,7 @@
         "con": "",
         "face": "Yo5Uncomfortable",
         "string": "世清……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -807,7 +807,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "暗杀王座下有大量偏执狂一般的女杀手……她们都视所有男人为仇敌……盲目地憎恨一切",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -816,7 +816,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "哈因，还记得这个名字吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -834,7 +834,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "……发生了很多事，现在她是暗杀王的亲卫队长，暗杀王本身实力强劲诡计多端，被哈因保护着的她更是难以接近了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -843,7 +843,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "如果你加入我们的行动，普利陀毗先生的计划的成功率就高很多了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -852,7 +852,7 @@
         "con": "",
         "face": "AmarandaDepressedCE",
         "string": "嗯……因为你们的出现好像有点忘了……抱歉，普利陀毗先生",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -861,7 +861,7 @@
         "con": "",
         "face": "smile",
         "string": "阿玛兰达把皇冠给了普利陀毗，普利陀毗戴起了皇冠",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -870,7 +870,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "俱苏摩补罗之冠……终于回到我手里了……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -879,7 +879,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "真的是……谢谢你",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -888,7 +888,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "这是正常的牵及到金钱的委托，不需要任何额外的道谢",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -897,7 +897,7 @@
         "con": "",
         "face": "AmarandaDepressed",
         "string": "然后是第二个委托，向他们解释一下吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -906,7 +906,7 @@
         "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "嗯",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -915,7 +915,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "珊郁姬多不会在任何劣势环境中战斗，但是有一个例外，那就是她唯一的弱点……感情",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -924,7 +924,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "再次戴上俱苏摩补罗之冠的我在她面前出现，她会因为我的挑衅而失去理性",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -933,7 +933,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "失去判断力的刺客……等待她的只有死路一条了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -942,7 +942,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "而我的任务就是亲卫队的哈因，我会用一切手段把她和暗杀王分开的",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -951,7 +951,7 @@
         "con": "",
         "face": "AmarandaDefault",
         "string": "我只能为你们击杀暗杀王创造条件，至于能否击杀暗杀王，就要看你们的能耐了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -960,7 +960,7 @@
         "con": "SP",
         "face": "Prithvi2CloseEye",
         "string": "如果你们能来帮助我成功的可能性就更高了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -969,7 +969,7 @@
         "con": "",
         "face": "happy",
         "string": "当然了",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -978,7 +978,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "夏修伦……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -987,7 +987,7 @@
         "con": "",
         "face": "happy",
         "string": "暗杀王杀死了世清的亲生父亲，背叛了室利刹陀罗，以及让我们流离失所",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -996,7 +996,7 @@
         "con": "",
         "face": "happy",
         "string": "一定要报仇……对吧，世清",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1014,7 +1014,7 @@
         "con": "",
         "face": "smile",
         "string": "之后的事情，等我们让这个可恨的家伙变成一具尸体后，再慢慢决定吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1023,7 +1023,7 @@
         "con": "",
         "face": "smile",
         "string": "走吧，玛玛室利",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1032,7 +1032,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "玛玛室利……？哦，是我们室利刹陀罗语的“舅父”啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1041,7 +1041,7 @@
         "con": "SP",
         "face": "Prithvi2Smile",
         "string": "这辈子竟然还能听到被人这样叫啊",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1050,7 +1050,7 @@
         "con": "",
         "face": "happy",
         "string": "不喜欢吗？",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1059,7 +1059,7 @@
         "con": "SP",
         "face": "Prithvi2Smile",
         "string": "怎么会……只是现在不是为了这个感慨的时候",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1068,7 +1068,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "走吧，一切结束后，再考虑其他事情吧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1077,7 +1077,7 @@
         "con": "SP",
         "face": "Prithvi2Default",
         "string": "珊郁姬多……是时候清算了……",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1086,7 +1086,7 @@
         "con": "",
         "face": "smile",
         "string": "如果世清和余触发了少于4个羁绊剧情，则这个羁绊剧情就会在夏修伦和普利陀毗走远后消失，反之如果和余的羁绊足够高的话就会触发下面的额外剧情",
-        "dic": 3
+        "dic": 2
     },
     {
         "branch": "",
@@ -1113,7 +1113,7 @@
         "con": "",
         "face": "Yo5Sad",
         "string": "世清",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1122,7 +1122,7 @@
         "con": "",
         "face": "Yo5Sad",
         "string": "普利陀毗……就是因为无法和他的爱人互相理解，从而走向了悲剧",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1131,7 +1131,7 @@
         "con": "",
         "face": "Yo5Depressed",
         "string": "我想毫无保留地跟你互相坦诚，那就是我想跟你一起战斗",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1140,7 +1140,7 @@
         "con": "",
         "face": "Yo5Shy",
         "string": "我无法做到眼睁睁看着你身处危险中无能为力，我会在努力保护自己性命的同时，和你一起战斗",
-        "dic": 2
+        "dic": 3
     },
     {
         "branch": "",
@@ -1167,6 +1167,6 @@
         "con": "",
         "face": "Yo5Default",
         "string": "嗯……我们走吧，快要跟丢他们了",
-        "dic": 2
+        "dic": 3
     }
 ]
