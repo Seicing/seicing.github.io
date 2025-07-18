@@ -13,7 +13,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentDefault",
+        "face": "depress",
         "string": "哥，在外面还安好吧，有一件事情要汇报",
         "dic": 3
     },
@@ -22,7 +22,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentDefault",
+        "face": "depress",
         "string": "私掠舰队的阿拉贡之前给皇宫来了一封信，说自己过几天将会造访皇宫进行贵重物的交接",
         "dic": 3
     },
@@ -31,7 +31,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "让别人白跑一趟可不行，如果你太忙回不来，我可以帮你接收",
         "dic": 3
     },
@@ -139,7 +139,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "哥，私掠船长阿拉贡可能遇到了一点麻烦",
         "dic": 3
     },
@@ -157,7 +157,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "好像是和跟你一起回来的索菲亚公打起来了",
         "dic": 3
     },
@@ -1489,7 +1489,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "世清……我不会冲动的，请放心吧",
         "dic": 3
     },
@@ -1543,7 +1543,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "嗯",
         "dic": 3
     },
@@ -1615,7 +1615,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "啊，是的呢，我们快点吧",
         "dic": 3
     }

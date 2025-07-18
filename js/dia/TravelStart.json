@@ -20,7 +20,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "什么声音？",
@@ -38,7 +38,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "(是个很强的魔法师，面对这么多怪物也可以泰然自若)",
@@ -47,7 +47,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "(嗯？偷袭？)",
@@ -67,7 +67,7 @@
         "name": "女魔法师",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSurprise",
+        "face": "surprise",
         "string": "什么？偷袭？",
         "dic": 3
     },
@@ -76,14 +76,14 @@
         "name": "女魔法师",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "是你救了我吗？谢谢你",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "extra2",
         "string": "不要大意",
@@ -103,7 +103,7 @@
         "name": "女魔法师",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "呼……",
         "dic": 3
     },
@@ -112,14 +112,14 @@
         "name": "女魔法师",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "感谢你帮我赶跑了这些烦人的怪物",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "只是举手之劳",
@@ -128,7 +128,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "况且我不出手，你自己也可以把这些怪物全部清理干净吧",
@@ -139,7 +139,7 @@
         "name": "女魔法师",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "即使是这样，你帮了我也是事实，真的是非常谢谢",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "我的名字是……伊丽丝，是一个冒险家",
         "dic": 3
     },
@@ -157,14 +157,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "你也是冒险家吗？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "嗯，姑且算是吧，我叫……彦",
@@ -175,7 +175,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "彦……西景人特有的单音节名字",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -193,14 +193,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "你刚刚战斗时候，使用的是“权现”吗？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "啊，这个吗？",
@@ -211,7 +211,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "相比于魔法，西景人更常见的是利用魔力形成权现配合他们的武术战斗",
         "dic": 3
     },
@@ -220,23 +220,23 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "这个权现蕴含的力量比我见过的权现都要强大……",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
-        "face": "Seicing2Peep",
+        "face": "side",
         "string": "我以前曾经在神宫待过，在那里我学会了权现的使用",
         "dic": 1
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSPCE",
         "face": "serene",
         "string": "现在，只是一个毫无目的地的冒险者",
@@ -247,7 +247,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "看起来有一段不为人知的过去呢",
         "dic": 3
     },
@@ -256,14 +256,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "彦，你有没有和我结伴的打算呢？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "surprise",
         "string": "诶？",
@@ -274,7 +274,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "是觉得我对萍水相逢的人说出这样的话很可疑吗？",
         "dic": 3
     },
@@ -282,8 +282,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "事实上，我刚刚从我侍奉的神宫离开，打算回到我的家乡，艾特拉塔的伊拉修莱德",
         "dic": 3
     },
@@ -291,8 +291,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "一路上到处都充满了危险，在来到这里之前，还花了大价钱贿赂了蚩幽的哨兵让我穿越沙漠来到这里",
         "dic": 3
     },
@@ -301,14 +301,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "虽然目前来到这里还暂时没出什么大问题，但是这趟旅途真的是比我想象中的还要危险呢",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "原来如此啊",
@@ -317,7 +317,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "一个女孩子独自一人踏上这种旅途，确实很危险",
@@ -326,7 +326,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "正好我也没地方可去……和你一起去艾特拉塔增长一下见识吧",
@@ -337,7 +337,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "谢谢！",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "那我们走吧",
         "dic": 3
     },
@@ -364,16 +364,16 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "你好，请问有前往伊拉修莱德的航班吗？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "港务员",
-        "char": "",
+        "char": "KhazatarCommonFemale",
         "con": "",
-        "face": "KhazatarCleric",
+        "face": "smile",
         "string": "真的抱歉，因为很复杂的原因，需要走这条路线……请见谅",
         "dic": 3
     },
@@ -382,14 +382,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "这样啊，谢谢你",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "情况如何",
@@ -400,14 +400,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "我们接下来要绕一个大弯，先去阿格拉巴，然后才从阿格拉巴去伊拉修莱德",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "是海贼吗……？",
@@ -418,7 +418,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "是啊，海贼控制了所有从这里直接去艾特拉塔的航线，很多人被迫支付昂贵的保护费走安全的航线",
         "dic": 3
     },
@@ -426,8 +426,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "想早日回家",
         "dic": 3
     },
@@ -436,8 +436,8 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
-        "string": "彦，准备好的话我们就出发吧",
+        "face": "sad",
+        "string": "阿彦，准备好的话我们就出发吧",
         "dic": 3
     },
     {
@@ -452,9 +452,9 @@
     {
         "branch": "",
         "name": "港务员",
-        "char": "",
+        "char": "KhazatarCommonFemale",
         "con": "",
-        "face": "KhazatarCleric",
+        "face": "smile",
         "string": "如果考虑清楚的话我这就为你们安排乘搭手续",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "嗯，麻烦了",
         "dic": 3
     },
@@ -479,9 +479,9 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
-        "face": "Seicing2Terrible",
+        "face": "extra1",
         "string": "……………………",
         "dic": 1
     },
@@ -490,16 +490,16 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSurprise",
+        "face": "surprise",
         "string": "啊，莫非",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
-        "face": "Seicing2Terrible",
+        "face": "extra1",
         "string": "好难受",
         "dic": 1
     },
@@ -508,16 +508,16 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "晕船的话去甲板呼吸一下新鲜空气好些哦",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
-        "face": "Seicing2Terrible",
+        "face": "extra1",
         "string": "抱歉……",
         "dic": 1
     },
@@ -533,7 +533,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "感觉逐渐适应了……",
@@ -560,7 +560,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "没事",
@@ -578,7 +578,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "surprise",
         "string": "什么？",
@@ -587,7 +587,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "surprise",
         "string": "钱包不见了……是那个高大的家伙吗？",
@@ -596,7 +596,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "extra2",
         "string": "看起来要好好教训一下了",
@@ -614,7 +614,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "extra2",
         "string": "果然是在这种地方躲着",
@@ -641,7 +641,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "extra2",
         "string": "连这么点钱都要偷难道不觉得内疚的么？",
@@ -668,7 +668,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "extra2",
         "string": "哪里有海贼是用偷而不是用武力抢的，卑劣的家伙",
@@ -713,7 +713,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "extra2",
         "string": "战斗的时候不要分心！",
@@ -760,7 +760,7 @@
         "name": "红发女子",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichHappy",
+        "face": "happy",
         "string": "吃瘪了啊",
         "dic": 3
     },
@@ -778,7 +778,7 @@
         "name": "红发女子",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichHappy",
+        "face": "happy",
         "string": "明眼人也能看出你已经输了",
         "dic": 3
     },
@@ -787,7 +787,7 @@
         "name": "红发女子",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichHappy",
+        "face": "happy",
         "string": "小哥，这家伙也给你揍一顿了，把钱还给你你就放过他吧",
         "dic": 3
     },
@@ -805,7 +805,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSurprise",
+        "face": "surprise",
         "string": "怎么了……彦？还有……",
         "dic": 3
     },
@@ -814,14 +814,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "甲板上找不到你，所以沿着打斗声找到了这里",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "抱歉，我只是要回我的钱包",
@@ -841,7 +841,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisAngry",
+        "face": "angry",
         "string": "这个大哥！",
         "dic": 3
     },
@@ -850,7 +850,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "你不要再继续强迫自己身体凝聚魔力了，你受了内伤，再这样会很危险的",
         "dic": 3
     },
@@ -866,7 +866,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "下手太重了吗……？",
@@ -875,9 +875,9 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
-        "face": "Seicing2Peep",
+        "face": "side",
         "string": "抱歉……我一时没有控制好自己",
         "dic": 1
     },
@@ -886,7 +886,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "总之我们先回到房间治疗一下，再这样下去会有后遗症的",
         "dic": 3
     },
@@ -904,7 +904,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "呼……",
         "dic": 3
     },
@@ -913,7 +913,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "好了",
         "dic": 3
     },
@@ -947,7 +947,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "该抱歉的是我",
@@ -975,8 +975,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisPanicRF",
+        "con": "RF",
+        "face": "fear",
         "string": "啊啊？我们只是结伴而行的两个冒险者",
         "dic": 3
     },
@@ -994,7 +994,7 @@
         "name": "红发女子",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichSmile",
+        "face": "smile",
         "string": "真是的，夏修伦，在瞎扯之前先把钱还给人家",
         "dic": 3
     },
@@ -1019,7 +1019,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "我感觉你不像是那种小偷小摸之人",
@@ -1091,7 +1091,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSPCE",
         "face": "serene",
         "string": "……",
@@ -1111,7 +1111,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichHappy",
+        "face": "happy",
         "string": "抱歉啦，他就是这样的人",
         "dic": 3
     },
@@ -1120,7 +1120,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichDefault",
+        "face": "happy",
         "string": "感觉和你们很有缘呢，可能我们很快又会再见的",
         "dic": 3
     },
@@ -1129,7 +1129,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichDefault",
+        "face": "happy",
         "string": "再见啦，帅气的哥哥和可爱的妹妹",
         "dic": 3
     },
@@ -1137,15 +1137,15 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisPanicRF",
+        "con": "RF",
+        "face": "fear",
         "string": "哎所以你们就没听我刚刚说的话吗？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "旅行真是很有趣",
@@ -1154,7 +1154,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "即使只是一个开始，也能遇到如此有趣的人呢",
@@ -1174,14 +1174,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "真是的，怎么都这么喜欢自说自话啊",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "他们是那种喜欢开玩笑的人",
@@ -1191,15 +1191,15 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "对我来说，这玩笑不太好笑",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSPCE",
         "face": "serene",
         "string": "……",
@@ -1208,7 +1208,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "他们也没有恶意",
@@ -1219,7 +1219,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "我知道",
         "dic": 3
     },
@@ -1228,14 +1228,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "啊~在船上真的很无聊",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "到处都是一望无际的大海",
@@ -1244,9 +1244,9 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
-        "face": "Seicing2Terrible",
+        "face": "extra1",
         "string": "还有颠簸",
         "dic": 1
     },
@@ -1255,7 +1255,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "嘻嘻",
         "dic": 3
     },
@@ -1264,7 +1264,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "啊，对了",
         "dic": 3
     },
@@ -1273,14 +1273,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "你试试驱动权现那样，把气集中在腹腔试试",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "surprise",
         "string": "啊……？这样吗？",
@@ -1289,7 +1289,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "没有什么特别的感觉啊",
@@ -1300,7 +1300,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "魔力量真大啊",
         "dic": 3
     },
@@ -1309,7 +1309,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "然后你试试把气的杂质提纯试试，把气除了水属性的部分全部消散掉",
         "dic": 3
     },
@@ -1318,7 +1318,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "权现不也是需要用到类似的提纯才能形成某种性质的实体吗？只是现在不需要具象化，只是把气提纯留在体内",
         "dic": 3
     },
@@ -1327,14 +1327,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "提纯出来之后，让气息顺着呼吸道流动，流入血管最后反馈到大脑",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSPCE",
         "face": "serene",
         "string": "………………",
@@ -1343,7 +1343,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "surprise",
         "string": "很舒服的感觉……",
@@ -1354,7 +1354,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "这是一种很基础的冰魔法",
         "dic": 3
     },
@@ -1363,7 +1363,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "你可真厉害啊，一瞬间就掌握了这个魔法的提纯和运作",
         "dic": 3
     },
@@ -1372,14 +1372,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "当然，这很大程度建立在魔力量大的基础上，有很大一部分被浪费掉了，提纯率很低",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "掌握了这个技巧之后，在船上的晕眩感完全消失了",
@@ -1388,7 +1388,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "不过需要这样集中精力有点不适应",
@@ -1399,7 +1399,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "只是不熟练而已，花点时间修炼的话，这就跟呼吸一样简单",
         "dic": 3
     },
@@ -1408,7 +1408,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "实际上这是一种气的修炼法，你身上的虽然量大但是没有显现出明显的倾向",
         "dic": 3
     },
@@ -1417,7 +1417,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "看得我也有点觉得可惜啊",
         "dic": 3
     },
@@ -1426,7 +1426,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "虽然修炼水的气息的话，体内的气对火的敏感性会降低……",
         "dic": 3
     },
@@ -1435,7 +1435,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "但是人的可塑性是很高的，以后需要用到火的话，只是更需要一些功夫适应而已",
         "dic": 3
     },
@@ -1444,14 +1444,14 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "多点修炼气的属性提纯非常有助于气的成长，甚至你以后修炼火属性也会比现在轻松很多的",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "不愧是专业的魔法师啊，这些知识很有帮助呢",
@@ -1460,7 +1460,7 @@
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
+        "char": "SeicingWanderer",
         "con": "ATSP",
         "face": "serene",
         "string": "我接下来就再进一步适应一下水属性的提纯吧，帮大忙了",
@@ -1471,7 +1471,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "作为旅途的伙伴可以帮到你我也很高兴",
         "dic": 3
     }

@@ -22,7 +22,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichSmile",
+        "face": "smile",
         "string": "和传闻的一样，空气中有一种湿润的感觉",
         "dic": 3
     },
@@ -31,7 +31,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -40,7 +40,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "夏修伦、洛雨希大姐，谢谢你们送我到这里",
         "dic": 3
     },
@@ -67,7 +67,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "旅程结束了呢",
         "dic": 3
     },
@@ -121,7 +121,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "要不要跟我一起回去呢？",
         "dic": 3
     },
@@ -130,7 +130,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "我想好好感谢一下你",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichDefault",
+        "face": "happy",
         "string": "哎呀，你也要学会一下接受别人的好意啊",
         "dic": 3
     },
@@ -157,7 +157,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichSmile",
+        "face": "smile",
         "string": "夏修伦和我会暂时在这座城市补给一下",
         "dic": 3
     },
@@ -166,7 +166,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichSmile",
+        "face": "smile",
         "string": "你晚上有空的话，就来酒馆聚一聚吧",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "洛雨希",
         "char": "LouichWanderer",
         "con": "",
-        "face": "LouichDefault",
+        "face": "happy",
         "string": "再见了，我可爱的伊丽丝，今晚你也要来哦",
         "dic": 3
     },
@@ -211,7 +211,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "今晚见，夏修伦，洛雨希大姐",
         "dic": 3
     },
@@ -229,7 +229,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "那我们也走吧",
         "dic": 3
     },
@@ -256,7 +256,7 @@
         "name": "卫兵",
         "char": "IllazuraydRecruit",
         "con": "",
-        "face": "IllazuraydRecruit",
+        "face": "serene",
         "string": "是索菲亚大公！快去禀告陛下！",
         "dic": 3
     },
@@ -274,7 +274,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "是严肃无趣的教名……",
         "dic": 3
     },
@@ -283,7 +283,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "有点打击人啊，我还以为会让你感到惊讶呢",
         "dic": 3
     },
@@ -309,8 +309,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisSerenityRF",
+        "con": "RF",
+        "face": "serene",
         "string": "诶？",
         "dic": 3
     },
@@ -336,8 +336,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDefaultCE",
+        "con": "CE",
+        "face": "smile",
         "string": "竟然可以根据各种线索推断到这个地步",
         "dic": 3
     },
@@ -355,7 +355,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSurprise",
+        "face": "surprise",
         "string": "为什么……",
         "dic": 3
     },
@@ -381,8 +381,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "为什么感到惊讶的反而是我呢，你的心思未免也缜密得有点可怕了",
         "dic": 3
     },
@@ -391,7 +391,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "……",
         "dic": 3
     },
@@ -400,7 +400,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "戴上这只戒指，进去之后维持现在的冷静，好吗？",
         "dic": 3
     },
@@ -409,7 +409,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "当然……你觉得可疑的话，现在走也来得及",
         "dic": 3
     },
@@ -435,8 +435,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "谢谢你……",
         "dic": 3
     },
@@ -454,8 +454,8 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
-        "string": "终于回来了啊，我的女儿",
+        "face": "serene",
+        "string": "终于回来了啊，索菲亚",
         "dic": 3
     },
     {
@@ -463,7 +463,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisAngry",
+        "face": "angry",
         "string": "伊安哥哥呢！？",
         "dic": 3
     },
@@ -472,7 +472,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "连父亲一句问候都没有，回来就伊安哥哥吗",
         "dic": 3
     },
@@ -481,7 +481,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "倒也是，如果不是用他的名义，你根本就不可能回来",
         "dic": 3
     },
@@ -490,7 +490,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "名义？",
         "dic": 3
     },
@@ -499,7 +499,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "只有伊安的信鸟回来了",
         "dic": 3
     },
@@ -508,7 +508,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "信鸟……？不可能，除非主人出现变故，信鸟不会离开主人",
         "dic": 3
     },
@@ -517,7 +517,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "就是如此，伊安很可能出现了什么不测，所以这次不能再让你逃婚了",
         "dic": 3
     },
@@ -526,7 +526,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "你要认识到自己作为伊拉修莱德大公的责任",
         "dic": 3
     },
@@ -535,7 +535,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisAngry",
+        "face": "angry",
         "string": "……为什么可以把事情说得那么轻描淡写啊！",
         "dic": 3
     },
@@ -544,7 +544,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -552,8 +552,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "我一直就很奇怪了，这个从一开始就站在你旁边的年轻人是谁？",
         "dic": 3
     },
@@ -562,7 +562,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "他……他……",
         "dic": 3
     },
@@ -570,8 +570,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisSerenityRF",
+        "con": "RF",
+        "face": "serene",
         "string": "已经和我缔结了誓约的所爱之人",
         "dic": 3
     },
@@ -579,8 +579,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisSerenityRF",
+        "con": "RF",
+        "face": "serene",
         "string": "他手里的戒指就是证明",
         "dic": 3
     },
@@ -590,7 +590,7 @@
         "char": "SeicingEmpireJade",
         "con": "ATSP",
         "face": "serene",
-        "string": "(……)",
+        "string": "……",
         "dic": 1
     },
     {
@@ -598,7 +598,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -607,7 +607,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "年轻人啊，你是冒险者对吧",
         "dic": 3
     },
@@ -616,7 +616,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "无论索菲亚因为什么原因喜欢上你，都是不被允许的",
         "dic": 3
     },
@@ -625,7 +625,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "作为伊拉修莱德的大公，她拥有联姻维系联盟的义务……而不是跟一个冒险者私定终身",
         "dic": 3
     },
@@ -634,7 +634,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "所以你就委屈一下吧",
         "dic": 3
     },
@@ -643,7 +643,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "卫兵！把这个年轻人送到贵宾囚禁房关押，皇家侍卫给我看好大公",
         "dic": 3
     },
@@ -652,7 +652,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "年轻人，在索菲亚的联姻完结之前，你给我好好呆着吧，然后拿上你的补偿永远离开这个大陆",
         "dic": 3
     },
@@ -769,8 +769,8 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
-        "string": "彦！",
+        "face": "happy",
+        "string": "阿彦！",
         "dic": 3
     },
     {
@@ -787,7 +787,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "得抓紧时间才行",
         "dic": 3
     },
@@ -796,7 +796,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "和我一起发动魔力",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "为了骗过父亲的魔力感知，这个机关一定要两个人配合才会激活",
         "dic": 3
     },
@@ -832,7 +832,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "之前哥哥就用这个方法让我逃出去的",
         "dic": 3
     },
@@ -850,7 +850,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "……对不起",
         "dic": 3
     },
@@ -886,7 +886,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "……",
         "dic": 3
     },
@@ -904,7 +904,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "抱歉……实在是非常对不起",
         "dic": 3
     },
@@ -922,7 +922,7 @@
         "name": "卫兵",
         "char": "IllazuraydRecruit",
         "con": "",
-        "face": "IllazuraydRecruit",
+        "face": "serene",
         "string": "警戒！大公逃跑了！",
         "dic": 3
     },
@@ -931,7 +931,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "看起来被发现了",
         "dic": 3
     },
@@ -976,7 +976,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "嗯，也对，我们走吧",
         "dic": 3
     }

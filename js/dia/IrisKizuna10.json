@@ -31,7 +31,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSinisterSmile",
+        "face": "excited",
         "string": "哥，你实在太厉害了，整个帝国都因为你泡妞在劳师动众哦",
         "dic": 3
     },
@@ -40,7 +40,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "把我耍得团团转，真是让人伤心啊，好歹也相信一下我的忠诚吧",
         "dic": 3
     },
@@ -49,7 +49,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "你大概已经在准备和宿句人决战了吧，我从一开始就输了，完全按照你的计划走，继续诉苦已经没有任何意义了",
         "dic": 3
     },
@@ -58,7 +58,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentDefault",
+        "face": "depress",
         "string": "嗯……上面只是玩笑而已，我要提醒一下……你是皇帝，你有绝对的权力命令你的属下",
         "dic": 3
     },
@@ -67,7 +67,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentDefault",
+        "face": "depress",
         "string": "如果我这次真的做了什么出格的行为导致你计划失败，你是有权力对我处刑的……你的仁慈有时候会让我觉得非常不安",
         "dic": 3
     },
@@ -76,7 +76,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentDefault",
+        "face": "depress",
         "string": "无论如何都要记住……你先是皇帝，然后才是我的大哥……你有履行皇帝威严的义务……",
         "dic": 3
     },
@@ -85,7 +85,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "让你那新老婆的娘家在战后知道了你在狐假虎威，虽然你是不介意，但对于“高贵的皇帝陛下”来说太过难堪了",
         "dic": 3
     },
@@ -94,8 +94,8 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
-        "string": "下次……应该更像一个皇帝，用绝对的威严来统御你的子民，你在掌握着这种让人醉心的权力……你肆意践踏它的样子让我很羡慕……",
+        "face": "smile",
+        "string": "下次……应该更像一个西景皇帝，向世界上的人们显示你的绝对威严，你在掌握着这种让人醉心的权力……你肆意践踏它的样子让我很羡慕……",
         "dic": 3
     },
     {
@@ -103,7 +103,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "所以，当你看到这封信的时候，宿句人在西景东岸的几个城镇现在都是你的了，因为我让你的计策变成真正的军事行动",
         "dic": 3
     },
@@ -112,7 +112,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSinisterSmile",
+        "face": "excited",
         "string": "宿句人这下子是真正惹上了不该惹的巨龙了……别担心后果，这只是礼尚往来，我们亲爱的蚩幽同胞也受够他们的侵扰了",
         "dic": 3
     },
@@ -121,7 +121,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSinisterSmile",
+        "face": "excited",
         "string": "我好想看看你这边的宿句人恐惧的样子啊，我这边的连恐惧都没来得及表现出来就四分五裂了，让我好无聊啊",
         "dic": 3
     },
@@ -130,7 +130,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "哼哼，我应该无法出席你在胜利之后的婚礼了，但是用这种方法奉上祝福，感觉还不错呢",
         "dic": 3
     },
@@ -139,7 +139,7 @@
         "name": "世行",
         "char": "Seigent",
         "con": "",
-        "face": "SeigentSmile",
+        "face": "smile",
         "string": "最后，祝你一切顺利",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "老公，你来了啊",
         "dic": 3
     },
@@ -274,7 +274,7 @@
         "name": "伊拉修莱德新兵",
         "char": "IllazuraydRecruit",
         "con": "",
-        "face": "IllazuraydRecruit",
+        "face": "serene",
         "string": "索菲亚公！对面即将发起攻击了！",
         "dic": 3
     },
@@ -364,7 +364,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "没错",
         "dic": 3
     },
@@ -373,7 +373,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "主力部队临时撤退的消息使得宿句军心开始出现动摇，所以他们的司王才需要领头进行冲锋来利用优势快速击溃我们",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "可是啊，三个司王谁也不服谁呢",
         "dic": 3
     },
@@ -517,7 +517,7 @@
         "name": "伊拉修莱德新兵",
         "char": "IllazuraydRecruit",
         "con": "",
-        "face": "IllazuraydRecruit",
+        "face": "serene",
         "string": "哦哦！！",
         "dic": 3
     },
@@ -598,7 +598,7 @@
         "name": "伊拉修莱德新兵",
         "char": "IllazuraydRecruit",
         "con": "",
-        "face": "IllazuraydRecruit",
+        "face": "serene",
         "string": "宿句人被猫追捕的老鼠一样逃回了东方！我们胜利了！",
         "dic": 3
     },
@@ -652,7 +652,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "真过分啊，伊丽丝，只顾着和情郎打情骂俏，完全忘了你的老爸了啊",
         "dic": 3
     },
@@ -661,7 +661,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "爸爸！你没事真是太好了！",
         "dic": 3
     },
@@ -670,7 +670,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "宿句人的伙食啥都能烤到发焦才下肚，真是一群恶俗的家伙，回到伊拉修莱德之后得好好地清理肠胃了呢",
         "dic": 3
     },
@@ -696,8 +696,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "无尽感激皇帝陛下的援助，使得我们这个小小的王国足以赶走侵略者，我代表伊拉修莱德的全体国民感谢您",
         "dic": 3
     },
@@ -715,7 +715,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -724,7 +724,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "谢谢你，世清",
         "dic": 3
     },
@@ -732,8 +732,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "之前是作为伊拉修莱德的前任国王的立场跟你道谢，现在是作为伊丽丝的父亲的立场跟你的道谢",
         "dic": 3
     },
@@ -751,7 +751,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "哈哈哈",
         "dic": 3
     },
@@ -769,7 +769,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Happy",
+        "face": "happy",
         "string": "哈哈",
         "dic": 3
     },
@@ -778,7 +778,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "阁下就是世清的……妻子，忽兰皇后吧，很荣幸与你相会",
         "dic": 3
     },
@@ -796,7 +796,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "嗯，接下来",
         "dic": 3
     },
@@ -805,7 +805,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "虽然由我这个败军之将说出来有点丢人，世清",
         "dic": 3
     },
@@ -814,7 +814,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "我们伊拉修莱德拥有一个传统，伟大的战士勇敢地击败了敌方的国王的话，这位战士理应获得“斯波利亚·奥匹玛”的荣誉",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "“最高的战利品”！",
         "dic": 3
     },
@@ -832,7 +832,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "季米特里奥斯、穆斯塔法和波里伏耶那耻辱地被我们缴获的旗帜将会在我们的金色大厅供奉给为国牺牲的祖灵们",
         "dic": 3
     },
@@ -841,7 +841,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "我们会为此举办盛大的祭典和宴会，尽情地享用着被我们守护下来的食物以及来自敌人的屈辱，使用狂欢来纪念我们的勇者",
         "dic": 3
     },
@@ -868,7 +868,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "这样子啊，哈哈哈",
         "dic": 3
     },
@@ -877,7 +877,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "我会为你祝福的，伊丽丝，不管怎么样，这是你的选择……你已经足以让我感到骄傲，足以让我尊重你的选择",
         "dic": 3
     },
@@ -912,8 +912,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "(这也是没办法的事……该怎么化解尴尬好呢……)",
         "dic": 3
     },
@@ -949,7 +949,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizSurprise",
+        "face": "surprise",
         "string": "啊……",
         "dic": 3
     },
@@ -958,7 +958,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "哈哈，真有活力啊，大媳妇，你就尽量吃吧，我们伊拉修莱德可是对自己的美食很有自信哦",
         "dic": 3
     },
@@ -1003,16 +1003,16 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "你是主角哦，不去应酬，也走出来吹晚风吗？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3EmbarrassedNO",
+        "char": "SeicingEpisode",
+        "con": "SPSW",
+        "face": "serene",
         "string": "我很害怕人多的场合，您不也是自己独自一人出来吹风吗？",
         "dic": 1
     },
@@ -1021,7 +1021,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "只是有点感叹",
         "dic": 3
     },
@@ -1029,8 +1029,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "我老了啊，伊丽丝已经是独当一面的女王了……米莉安也失踪十几年了……",
         "dic": 3
     },
@@ -1038,17 +1038,17 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "时间也过得真快啊，不属于我的时代已经来临了，不知道是不是被抓了这段时间被关得太久了，见到家人马上变得多愁善感呢",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3NO",
+        "char": "SeicingEpisode",
+        "con": "SP",
+        "face": "serene",
         "string": "别这么说，新生的伊拉修莱德帝国是需要您的辅助的",
         "dic": 1
     },
@@ -1057,7 +1057,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "哎，你也不需要这样安慰我……",
         "dic": 3
     },
@@ -1066,7 +1066,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -1075,44 +1075,17 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizSurprise",
+        "face": "surprise",
         "string": "你说什么？伊拉修莱德帝国！？",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3EmbarrassedNO",
-        "string": "伊丽，没有跟您说吗？",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3NO",
-        "string": "伊拉修莱德的前身本身就是帝国元，在宿句人的大举入侵后只能依附在艾特拉塔作为大王国元存续下去",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3NO",
-        "string": "艾特拉塔在这次战争没有帮助我们，而且我们独自击退了宿句人，伊拉修莱德的重新独立反而是伊丽这边占有法理",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3NO",
-        "string": "然后伊丽和我的联姻本质上是两个帝国皇帝之间的私事，援助什么的……也是私人提供的，什么归属什么战争口实伊丽都考虑好了",
+        "char": "SeicingEpisode",
+        "con": "SPSW",
+        "face": "serene",
+        "string": "伊丽没有跟您说吗？",
         "dic": 1
     },
     {
@@ -1120,16 +1093,16 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizSurprise",
+        "face": "surprise",
         "string": "……",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3EmbarrassedNO",
+        "char": "SeicingEpisode",
+        "con": "SPSW",
+        "face": "serene",
         "string": "(这对父女的沟通真是灾难啊……)",
         "dic": 1
     },
@@ -1137,8 +1110,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "我这女儿，让我想起了我年轻的时候了，一样的胡来",
         "dic": 3
     },
@@ -1147,7 +1120,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "哈哈，莫名其妙的，女儿就嫁出去了，真不知道摆出什么表情好啊",
         "dic": 3
     },
@@ -1156,16 +1129,16 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "不过其他不提，当初我看人的眼光还是可以的嘛",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3EmbarrassedNO",
+        "char": "SeicingEpisode",
+        "con": "SPSW",
+        "face": "serene",
         "string": "那个……难道您战败被抓也是考虑到的一部分么……",
         "dic": 1
     },
@@ -1174,7 +1147,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "……我有考虑过这点，但是我不会用自己来开玩笑的，被那群异教徒抓住被折磨死掉的几率可不低啊",
         "dic": 3
     },
@@ -1182,8 +1155,8 @@
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
-        "face": "AzizCloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "我只是个凡人……世事不会因为我的意志而运转，我只能根据命运的安排去找到看上去最好的道路，仅此而已……",
         "dic": 3
     },
@@ -1192,16 +1165,16 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "现在……你成功保护了伊安用生命为代价去保护的东西，伊丽丝也找到了属于自己的幸福，伊安他在天之灵也会感觉很欣慰吧",
         "dic": 3
     },
     {
         "branch": "",
         "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "Seicing3PeepNO",
+        "char": "SeicingEpisode",
+        "con": "SP",
+        "face": "side",
         "string": "伊安……",
         "dic": 1
     },
@@ -1219,7 +1192,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizHappy",
+        "face": "smile",
         "string": "嘿……我这女儿真会麻烦人啊，连休息的时间都不给我，以后可有的是忙了",
         "dic": 3
     },
@@ -1228,7 +1201,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "世清……在日后的时光……好好对待我女儿",
         "dic": 3
     },
@@ -1237,7 +1210,7 @@
         "name": "阿齐兹王",
         "char": "Aziz",
         "con": "",
-        "face": "AzizDefault",
+        "face": "serene",
         "string": "还有……不要忘了那个为了你一直在故作坚强的忽兰皇后",
         "dic": 3
     },

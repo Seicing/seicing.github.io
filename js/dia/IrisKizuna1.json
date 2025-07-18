@@ -31,7 +31,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisRelax",
+        "face": "extra4",
         "string": "呼……好累啊，要在这里稍微休息一下吗？",
         "dic": 3
     },
@@ -49,7 +49,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -58,7 +58,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "想了下",
         "dic": 3
     },
@@ -67,7 +67,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "从西景相遇开始，还是第一次这样两个人静下来聊天呢",
         "dic": 3
     },
@@ -76,7 +76,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "该不会还在生气吧",
         "dic": 3
     },
@@ -93,8 +93,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "实在是非常对不起……",
         "dic": 3
     },
@@ -121,7 +121,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "这样啊……",
         "dic": 3
     },
@@ -130,7 +130,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "我讨厌我的爸爸",
         "dic": 3
     },
@@ -139,7 +139,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "为了达成目的，可以不择手段利用所有可以利用的东西",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "可恨的是我同时也继承了他的性格",
         "dic": 3
     },
@@ -166,7 +166,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "我们伊拉修莱德位于边境地带，一直都有联姻获取中央支持的传统",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "都是因为十年前发生的那件事",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "我的姑妈在去琉赛古西亚联姻的路上意外失踪，我们失去了很多军事上的支持",
         "dic": 3
     },
@@ -202,7 +202,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "嗯……我知道这是我的责任",
         "dic": 3
     },
@@ -211,7 +211,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "但是我就是不愿意，难道你不觉得把未来寄托在从来没见过的人身上很奇怪吗？",
         "dic": 3
     },
@@ -229,7 +229,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "我的哥哥伊安也认同我的想法，就帮助我逃出了宫殿",
         "dic": 3
     },
@@ -238,7 +238,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "之后我们之间通过信鸟进行联系，交流彼此的信息，这也使得我可以安心在西景暂待一段时间",
         "dic": 3
     },
@@ -265,7 +265,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "嗯……那是我们伊拉修莱德家族的在很久很久之前就流传下来的传统",
         "dic": 3
     },
@@ -274,7 +274,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "信鸟万里挑一，绝对忠于佩戴信物的主人，把信件和信物保护好就是它们的使命",
         "dic": 3
     },
@@ -282,8 +282,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "伊安哥哥的信鸟独自回到了宫殿，这意味着……",
         "dic": 3
     },
@@ -301,7 +301,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "不过，哥哥他绝对没死，信鸟没有把哥哥的信物回收，哥哥一定还活在世上",
         "dic": 3
     },
@@ -319,7 +319,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "嗯",
         "dic": 3
     },
@@ -328,7 +328,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "和哥哥手中的戒指是一对，在我们小的时候父亲就给了我们",
         "dic": 3
     },
@@ -337,7 +337,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "除了是信物外，还是我们兄妹改造过的城内的机关的激活工具",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "所谓最危险的就是最安全的，父亲现在还不知道这个戒指和城里机关的关系呢",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "啊？啊……嗯……谢谢你",
         "dic": 3
     },
@@ -391,7 +391,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -400,7 +400,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "实际上……",
         "dic": 3
     },
@@ -409,7 +409,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "在从西景回来之前，我就考虑到了这种情况，早就想好了后路",
         "dic": 3
     },
@@ -418,7 +418,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDepressed",
+        "face": "sad",
         "string": "和你的主动接触，很大一定程度上都是为了最后的脱身",
         "dic": 3
     },
@@ -436,7 +436,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSerenity",
+        "face": "serene",
         "string": "我利用了你",
         "dic": 3
     },
@@ -490,7 +490,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "谢谢你，总之，骗了你这么久真的很抱歉",
         "dic": 3
     },
@@ -525,8 +525,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisPanicRF",
+        "con": "RF",
+        "face": "fear",
         "string": "啊？你有这么不正经的吗？",
         "dic": 3
     },
@@ -544,7 +544,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "啊，哈哈哈，感觉对你的理解又深了",
         "dic": 3
     },
@@ -553,7 +553,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "之前对你的印象是仿佛你们西景传说的仙人一样，什么都淡然面对",
         "dic": 3
     },
@@ -562,7 +562,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "但是这样的你让我感觉到你也是一个正常人呢",
         "dic": 3
     },
@@ -589,7 +589,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "哈哈，也许是这样呢",
         "dic": 3
     },
@@ -597,8 +597,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "……你接下来要去哪里呢？",
         "dic": 3
     },
@@ -606,8 +606,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "在这里逃掉之后，我们之间就没有任何共同利益促使我们一起行动了吧",
         "dic": 3
     },
@@ -615,8 +615,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisDepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "抱歉……这个大概跟我没有关系吧",
         "dic": 3
     },
@@ -643,7 +643,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisSurprise",
+        "face": "surprise",
         "string": "啊？",
         "dic": 3
     },
@@ -652,7 +652,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisHappy",
+        "face": "happy",
         "string": "真……真的吗？",
         "dic": 3
     },
@@ -724,7 +724,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "认真一想，我的运气还真好啊",
         "dic": 3
     },
@@ -742,7 +742,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "实际上事发突然，虽然说是计划没错，但也只是在有限的条件下能拼凑出来的最优解而已",
         "dic": 3
     },
@@ -751,7 +751,7 @@
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
         "con": "",
-        "face": "IrisDefault",
+        "face": "smile",
         "string": "在荒无人烟的野外恰恰好遇到一个拥有冰魔法资质的烂好人",
         "dic": 3
     },
@@ -768,8 +768,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisPratenitsa",
-        "con": "",
-        "face": "IrisPanicRF",
+        "con": "RF",
+        "face": "fear",
         "string": "啊啊最后一句作废，我们得继续赶路了！不然追兵可能就会找来了！",
         "dic": 3
     },
