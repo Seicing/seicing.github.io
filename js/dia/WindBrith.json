@@ -22,7 +22,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -40,7 +40,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnSurprise",
+        "face": "surprise",
         "string": "……那群家伙竟然可以在“这一天”找到这里吗？",
         "dic": 3
     },
@@ -58,7 +58,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "不去理会会引起怀疑的",
         "dic": 3
     },
@@ -67,7 +67,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "去看看情况，但是不能让任何人进入内室",
         "dic": 3
     },
@@ -85,7 +85,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "……我会陪在元平身边",
         "dic": 3
     },
@@ -256,7 +256,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "情况怎么样，春兰",
         "dic": 3
     },
@@ -274,7 +274,7 @@
         "name": "男人",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -300,8 +300,8 @@
         "branch": "",
         "name": "男人",
         "char": "Byinn",
-        "con": "",
-        "face": "ByinnDefaultCE",
+        "con": "CE",
+        "face": "serene",
         "string": "上天保佑",
         "dic": 3
     },
@@ -345,8 +345,8 @@
         "branch": "",
         "name": "男人",
         "char": "Byinn",
-        "con": "",
-        "face": "ByinnSadCE",
+        "con": "CE",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -364,7 +364,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "是的……明明是我们想要找的人，却自己上门了",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnSad",
+        "face": "sad",
         "string": "真是残酷……连跟你走完最后的时光……都不被允许吗……",
         "dic": 3
     },
@@ -733,7 +733,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnSad",
+        "face": "sad",
         "string": "春兰",
         "dic": 3
     },
@@ -778,7 +778,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnSad",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -787,7 +787,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnSad",
+        "face": "sad",
         "string": "今天我在这里失去的是我的妻子和儿子",
         "dic": 3
     },
@@ -796,7 +796,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnSad",
+        "face": "sad",
         "string": "如果把你杀掉，我会在这个基础上失去作为一个人的资格",
         "dic": 3
     },
@@ -805,7 +805,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "趁着他们还没开始行动，拿着这些钱，逃到没人知道的地方继续你的人生吧",
         "dic": 3
     },
@@ -814,7 +814,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "有多远走多远，不要回来西景，否则我会…… ",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "侍女春兰和元平夫人在天风之日出意外死了，不应该继续出现在西景了 ",
         "dic": 3
     },
@@ -850,7 +850,7 @@
         "name": "辩",
         "char": "Byinn",
         "con": "",
-        "face": "ByinnDefault",
+        "face": "serene",
         "string": "春莲那边我会交代好的",
         "dic": 3
     },
@@ -894,8 +894,8 @@
         "branch": "",
         "name": "辩",
         "char": "Byinn",
-        "con": "",
-        "face": "ByinnSadCE",
+        "con": "CE",
+        "face": "sad",
         "string": "元平……世清……",
         "dic": 3
     },
@@ -903,8 +903,8 @@
         "branch": "",
         "name": "辩",
         "char": "Byinn",
-        "con": "",
-        "face": "ByinnSadCE",
+        "con": "CE",
+        "face": "sad",
         "string": "……",
         "dic": 3
     }

@@ -129,8 +129,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingTerrible",
+        "con": "ATSPSW",
+        "face": "extra1",
         "string": "………………",
         "dic": 1
     },
@@ -238,7 +238,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Embarrassed",
+        "face": "side",
         "string": "你还要继续吃吗？",
         "dic": 3
     },
@@ -247,7 +247,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Embarrassed",
+        "face": "side",
         "string": "不好吃的话不用勉强自己啊",
         "dic": 3
     },
@@ -273,8 +273,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5Shy",
+        "con": "RF",
+        "face": "side",
         "string": "……",
         "dic": 3
     },
@@ -282,8 +282,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5Shy",
+        "con": "RF",
+        "face": "side",
         "string": "谢谢你……",
         "dic": 3
     },
