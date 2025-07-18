@@ -13,7 +13,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯？",
         "dic": 1
     },
@@ -31,7 +31,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "发现了什么吗？",
         "dic": 3
     },
@@ -40,7 +40,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "不是什么奇怪的东西，是这个东西",
         "dic": 1
     },
@@ -58,7 +58,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "真是不错的艺术品，没有被主人演奏过就遭到抛弃，真是可惜",
         "dic": 1
     },
@@ -84,8 +84,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "别编造不存在的事实，平时的兴趣而已",
         "dic": 1
     },
@@ -175,7 +175,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "这家伙确实是不认识会觉得很难以亲近，认识了会觉得很可爱的类型",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "很懂嘛，小文",
         "dic": 3
     },
@@ -201,8 +201,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "你们……哎",
         "dic": 1
     },
@@ -292,7 +292,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "你要把它带走吗？",
         "dic": 3
     },
@@ -310,7 +310,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "有空的话，就演奏给我们听听吧",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "也许吧",
         "dic": 1
     },
@@ -381,8 +381,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "啊？……哦……嗯，我会的……",
         "dic": 1
     },
@@ -391,7 +391,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "？？？",
         "dic": 3
     },
@@ -400,7 +400,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "你们文化人说话就是难懂啊，我们继续赶路吧",
         "dic": 3
     },

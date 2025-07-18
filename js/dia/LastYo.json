@@ -40,7 +40,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯……",
         "dic": 1
     },
@@ -58,7 +58,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "她们呢",
         "dic": 1
     },
@@ -94,7 +94,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "余？",
         "dic": 1
     },
@@ -157,7 +157,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "余！！",
         "dic": 1
     },
@@ -202,7 +202,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "你们……",
         "dic": 1
     },
@@ -283,7 +283,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -292,7 +292,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "谢谢你们……",
         "dic": 1
     },
@@ -319,7 +319,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "这……这是什么？",
         "dic": 1
     },
@@ -337,7 +337,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这位先生，这里到底发生了什么？",
         "dic": 1
     },
@@ -373,7 +373,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "为什么会这样……尤伊人为什么会突然进攻西景",
         "dic": 1
     },
@@ -391,7 +391,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "世行？",
         "dic": 1
     },
@@ -426,8 +426,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "那我明白了……",
         "dic": 1
     },
@@ -454,7 +454,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -480,8 +480,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "尤伊人入侵和你准时在这里出现，这不是巧合可以解释的",
         "dic": 1
     },
@@ -490,7 +490,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "你在执行某种反叛我的计划……出卖国家让尤伊人入侵，也是计划的一部分？",
         "dic": 1
     },
@@ -579,8 +579,8 @@
         "branch": "A1",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "………………",
         "dic": 1
     },
@@ -589,7 +589,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "坚信我是亲手弑杀父亲和弟弟才走到这个位置的你，不会有人对你成功造反提起质疑，因为强者为尊是西景的法则",
         "dic": 1
     },
@@ -598,7 +598,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "为什么要把我引到这个混乱的战场，把我的死亡伪装成战死呢，而且不使用部下消耗我的体力，而是……一对一单挑？",
         "dic": 1
     },
@@ -706,7 +706,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "那东西是……！",
         "dic": 1
     },

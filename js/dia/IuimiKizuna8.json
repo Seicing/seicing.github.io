@@ -40,7 +40,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "鸣……",
         "dic": 1
     },
@@ -103,7 +103,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "有什么事情吗？",
         "dic": 1
     },
@@ -139,7 +139,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "到底怎么了？",
         "dic": 1
     },
@@ -174,8 +174,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "……她知道么",
         "dic": 1
     },
@@ -201,8 +201,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -238,7 +238,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "虽然是很残酷，但是我会的",
         "dic": 1
     },
@@ -247,7 +247,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "没有你在身边吵吵闹闹，我想在不习惯过后就会感到寂寞吧",
         "dic": 1
     },
@@ -292,7 +292,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "女儿吗……",
         "dic": 1
     },
@@ -336,8 +336,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "幸福……",
         "dic": 1
     },

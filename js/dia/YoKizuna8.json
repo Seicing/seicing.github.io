@@ -49,7 +49,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "明玲姐，你……",
         "dic": 1
     },
@@ -166,7 +166,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "不，世清说得没错",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "这么大岁数生孩子很危险的",
         "dic": 3
     },
@@ -256,7 +256,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "明玲姐的身体最重要，羽三你就留在这里吧",
         "dic": 1
     },
@@ -265,7 +265,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "羽三打算在这里照顾明玲姐么",
         "dic": 1
     },
@@ -283,7 +283,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "明玲姐的身体最重要，这也是没办法的事情",
         "dic": 1
     },
@@ -301,7 +301,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "我也去看看有什么可以帮忙的",
         "dic": 1
     },
@@ -310,7 +310,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "很久没有在宫里干活了，有点怀念",
         "dic": 1
     },
@@ -355,7 +355,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "这个称呼真是有点不适应",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "想好叫什么名字了吗？",
         "dic": 3
     },
@@ -409,7 +409,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "宫黄明华……真是不错的名字啊",
         "dic": 3
     },
@@ -418,7 +418,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "无论是男孩还是女孩，都很适合这个名字呢",
         "dic": 3
     },
@@ -697,7 +697,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "我似乎……也能感觉到你的喜悦之情呢",
         "dic": 3
     },
@@ -706,7 +706,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "虽然我自己不能亲自感受这种喜悦之情……但是，我确实为你肚子里的生命感到由衷的祝福",
         "dic": 3
     },
@@ -840,8 +840,8 @@
         "branch": "A2",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "不要因为这些让自己不开心",
         "dic": 1
     },
@@ -867,8 +867,8 @@
         "branch": "A2",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "我永远也不会抛弃你，你也永远不要离开我",
         "dic": 1
     },

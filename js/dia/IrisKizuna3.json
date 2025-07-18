@@ -22,7 +22,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "是伊丽的信鸟吗？辛苦了",
         "dic": 1
     },
@@ -31,7 +31,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "伊丽给我发来了一封信，到底是什么内容呢？",
         "dic": 1
     },
@@ -94,7 +94,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -103,7 +103,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "嗯？在看什么，别人寄来的情书吗？",
         "dic": 3
     },
@@ -111,8 +111,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "不知道说你喜欢自虐好还是幽默好",
         "dic": 1
     },
@@ -121,7 +121,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "以前一起冒险的朋友的问候信而已",
         "dic": 1
     },
@@ -130,7 +130,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "下次有机会见面的话介绍给你认识吧，也不知道她在分别之后过得怎么样了",
         "dic": 1
     },
@@ -139,7 +139,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "看起来交情很深呢，有空的话就去聚一下吧",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "说是这样说，但是我找不到联系她的办法",
         "dic": 1
     },
@@ -157,7 +157,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "搞不好现在她家里人还在通缉我",
         "dic": 1
     },
@@ -166,7 +166,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "你到底干什么了……",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这个一时半刻解释不了",
         "dic": 1
     },
@@ -184,7 +184,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "有缘分的话，也许会在哪个地方会重新相遇吧",
         "dic": 1
     },
@@ -220,7 +220,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "伊丽？",
         "dic": 1
     },
@@ -247,7 +247,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "你才是，我第一眼根本认不出来",
         "dic": 1
     },
@@ -283,7 +283,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "啊……你好，我叫余",
         "dic": 3
     },
@@ -292,7 +292,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "没想到信里提到的朋友会是一个这么年轻漂亮的小姐啊",
         "dic": 3
     },
@@ -309,8 +309,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "(这两人在干什么啊)",
         "dic": 1
     },
@@ -319,7 +319,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "时间过得真快啊，伊丽",
         "dic": 1
     },
@@ -355,7 +355,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "经历的事情太多了……认真一想才过去没多久而已啊",
         "dic": 1
     },
@@ -364,7 +364,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这些时间来你在干什么呢",
         "dic": 1
     },
@@ -418,7 +418,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这样",
         "dic": 1
     },
@@ -427,7 +427,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "真不知道是恭喜好还是怎样好",
         "dic": 1
     },
@@ -454,7 +454,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这个是……？",
         "dic": 1
     },
@@ -499,7 +499,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这样我们就可以随时随地联络了，真是太好了",
         "dic": 1
     },
@@ -508,7 +508,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "倒是你来帮我们，不会阻碍你的修行吗？",
         "dic": 1
     },
@@ -544,7 +544,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "啊？怎么会",
         "dic": 1
     },
@@ -553,7 +553,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "那以后还得继续多多指教",
         "dic": 1
     },
@@ -571,7 +571,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "啊，啊，多多指教",
         "dic": 3
     },
@@ -598,7 +598,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "……",
         "dic": 3
     }

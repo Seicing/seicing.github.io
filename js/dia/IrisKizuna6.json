@@ -67,7 +67,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "我觉得这并不奇怪，毕竟伊丽的脸，任谁也想多看两眼",
         "dic": 1
     },
@@ -85,7 +85,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "偏心的家伙",
         "dic": 3
     },
@@ -94,7 +94,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "不过，那个大姐长得也不差呢，跟伊丽丝长得也有点像，说不定那个大姐把你认成她的妹妹了呢",
         "dic": 3
     },
@@ -121,7 +121,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯，我们去旅馆休息吧",
         "dic": 1
     },
@@ -138,8 +138,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "心事重重，连我进来了也没有留意到呢",
         "dic": 1
     },
@@ -175,7 +175,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "当然可以",
         "dic": 1
     },
@@ -211,7 +211,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "说到底不管怎么样我都是会帮助你为你的哥哥报仇，杀死欧洛克",
         "dic": 1
     },
@@ -220,7 +220,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "说句你可能不喜欢听的，结社也是我个人需要铲除的对象",
         "dic": 1
     },
@@ -229,7 +229,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "所以，不要有心理负担",
         "dic": 1
     },
@@ -265,7 +265,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "是谁！？",
         "dic": 1
     },
@@ -309,8 +309,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "不，我认为更应该吐槽的是为什么她要倒立着说话",
         "dic": 1
     },
@@ -336,8 +336,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "那个……倒立着说话不累吗，还有在房顶出现什么的，真可疑",
         "dic": 1
     },
@@ -381,8 +381,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "那个……是我理解的意思吗……如果不是的话，请不要用这种让人误会的语气说话",
         "dic": 1
     },
@@ -408,8 +408,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "(我们还是不要说别人坏话好，尤其对方就在面前)",
         "dic": 1
     },
@@ -471,8 +471,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "这种发言加上躲在房顶偷窥，很难不让人觉得……",
         "dic": 1
     },
@@ -489,8 +489,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "不是，怎么说呢……",
         "dic": 1
     },
@@ -562,7 +562,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "和余、伊安一样的半始祖化！",
         "dic": 1
     },
@@ -571,7 +571,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "你到底是谁？",
         "dic": 1
     },
@@ -742,7 +742,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "那是听到亲人逝世的消息后才会流下的伤心的泪水",
         "dic": 1
     },
@@ -760,7 +760,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯……",
         "dic": 1
     },
@@ -769,7 +769,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "啊",
         "dic": 1
     },
@@ -787,7 +787,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "饭菜都凉了啊，要我帮忙热一下吗？",
         "dic": 1
     },
@@ -805,7 +805,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这样啊，我就不阻碍你用餐了，我先出去了",
         "dic": 1
     },
@@ -841,7 +841,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "什么回事？",
         "dic": 3
     },
@@ -859,7 +859,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "为什么，这是半始祖化？",
         "dic": 1
     },
@@ -877,7 +877,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "糟了，伊丽！",
         "dic": 1
     },
@@ -895,7 +895,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "没事吧！",
         "dic": 1
     },
@@ -913,7 +913,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "地上的尸体……",
         "dic": 1
     },
@@ -931,7 +931,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "他们的伙伴……难道房顶是他们在和造成灾难的源头战斗？",
         "dic": 1
     },
@@ -940,7 +940,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "欧洛克！？这毒雾不就是阿拉贡描述的欧洛克的实验产物吗？",
         "dic": 1
     },
@@ -967,7 +967,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯，虽然不知道欧洛克为什么要发动攻击，但是我们和他们利益一致，我们快去楼顶帮助他们！",
         "dic": 1
     },
@@ -1012,7 +1012,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "你们没事吧",
         "dic": 1
     },
@@ -1111,7 +1111,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "伊丽，顺着我攻击在他身上留下的印记追杀他",
         "dic": 1
     },
@@ -1291,7 +1291,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "伊丽！",
         "dic": 1
     },
@@ -1327,7 +1327,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "伊丽，冷静下来",
         "dic": 1
     },
@@ -1345,7 +1345,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "冷静才是你的性格，不要因为这个无耻之徒的挑衅失去判断力",
         "dic": 1
     },
@@ -1426,7 +1426,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "和我们的始祖化觉醒一样，他的身体在快速地愈合",
         "dic": 3
     },
@@ -1435,7 +1435,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "完全不顾伤痛疯狂地挣扎，无法准确地破坏他的心脏",
         "dic": 1
     },
@@ -1507,7 +1507,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "跟那时候一样的迟疑……难道说",
         "dic": 1
     },
@@ -1633,7 +1633,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "伊丽！",
         "dic": 1
     },
@@ -1641,8 +1641,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "伊丽？",
         "dic": 1
     },
@@ -1795,7 +1795,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "伊丽！",
         "dic": 1
     },
@@ -1831,7 +1831,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "是啊，伊安的灵魂终于得以安息了",
         "dic": 1
     },
@@ -1840,7 +1840,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "真是值得庆贺的日子，从认识你开始，你的脸上就笼罩着一股复仇者的阴影，现在是我第一次看到你真正高兴的样子",
         "dic": 3
     },
@@ -1885,7 +1885,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "结社还在，死了一个欧洛克，肯定也有他的继承者继续他疯狂的道路继续为恶",
         "dic": 1
     },
@@ -1894,7 +1894,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这个邪恶的根源一天还没被铲除，我的复仇，还有伊安的夙愿……也还不能说得上了结",
         "dic": 1
     },
@@ -1903,7 +1903,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "在未来，你还能把你的力量借给我吗，伊丽",
         "dic": 1
     },

@@ -22,7 +22,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "世行的信件……是发现伊丽的计策在那气急败坏吗？",
         "dic": 1
     },
@@ -147,8 +147,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "真搞不懂这小子",
         "dic": 1
     },
@@ -156,8 +156,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "不过，我就把这个当成你的心意收下吧，谢了，世行",
         "dic": 1
     },
@@ -184,7 +184,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "情况如何",
         "dic": 1
     },
@@ -211,7 +211,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "原来你也会感到害羞啊，老公",
         "dic": 3
     },
@@ -219,8 +219,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "搞小团体一起在挑逗我啊，倒也不是不喜欢就是了",
         "dic": 1
     },
@@ -229,7 +229,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "私下怎么叫我都可以，只是现在要把目光投向更严肃的东西，情况如何了？",
         "dic": 1
     },
@@ -256,7 +256,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这要得亏于你的努力，伊丽",
         "dic": 1
     },
@@ -301,7 +301,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "放心去战吧，我会一直为你而战",
         "dic": 1
     },
@@ -319,7 +319,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "不过……真是庞大的军队，伊拉修莱德人要靠勇气来弥补这个劣势吗？",
         "dic": 1
     },
@@ -354,8 +354,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "狙击司王……",
         "dic": 1
     },
@@ -391,7 +391,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "真胡来啊，不过确实可行",
         "dic": 1
     },
@@ -400,7 +400,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "我们不也是这样一直胡来走到今天的吗？",
         "dic": 3
     },
@@ -436,7 +436,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "在战场上打情骂俏还真是游刃有余啊",
         "dic": 3
     },
@@ -444,8 +444,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "余，那个……",
         "dic": 1
     },
@@ -454,7 +454,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "别放在心上，只是觉得调戏你很好玩而已",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "不要大意哦，我们三个都要好好地活下来",
         "dic": 3
     },
@@ -471,8 +471,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "嗯……",
         "dic": 1
     },
@@ -481,7 +481,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "敌人不会因为我们停下脚步……是时候上了",
         "dic": 3
     },
@@ -624,8 +624,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "真是激烈的战斗啊，累死我了……",
         "dic": 1
     },
@@ -634,7 +634,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "不过，总算是获得胜利了",
         "dic": 3
     },
@@ -679,7 +679,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "阿齐兹国王……！",
         "dic": 1
     },
@@ -760,7 +760,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "刚刚还在吐槽我们两个玩小团体呢",
         "dic": 3
     },
@@ -787,7 +787,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "嗯，我也是这样",
         "dic": 3
     },
@@ -922,7 +922,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "我们走吧，世清，伊丽丝，还有阿齐兹老爹",
         "dic": 3
     },
@@ -931,7 +931,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "别多想了，世清，刚刚我只是在思考这个辈分应该怎么称呼，我最后还是想不通！所以就这样叫了",
         "dic": 3
     },
@@ -940,7 +940,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "经历了如此激烈的战斗已经很饥饿了呢，阿齐兹老爹，我饭量很大的，真是期待伊拉修莱德的美食啊",
         "dic": 3
     },
@@ -967,7 +967,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "那我就不客气了，走吧，世清，伊丽丝",
         "dic": 3
     },

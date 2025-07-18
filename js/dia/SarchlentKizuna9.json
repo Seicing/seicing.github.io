@@ -22,7 +22,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "上次来这里是因为船只不得不绕道靠岸在这里维修，真怀念啊",
         "dic": 1
     },
@@ -220,7 +220,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "夏……夏修伦……！",
         "dic": 1
     },
@@ -238,7 +238,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "啊……是……！",
         "dic": 1
     },
@@ -535,7 +535,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "“地罗王”……不考虑夺回属于自己的东西吗？",
         "dic": 1
     },
@@ -634,7 +634,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -885,8 +885,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "(还是不要当电灯泡好了，走吧，余)",
         "dic": 1
     },
@@ -895,7 +895,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "(嗯……我想也是)",
         "dic": 3
     },
@@ -904,7 +904,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "(不知道他那边如何了……过去看看吧)",
         "dic": 1
     },
@@ -940,7 +940,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯……你这边好像也……",
         "dic": 1
     },

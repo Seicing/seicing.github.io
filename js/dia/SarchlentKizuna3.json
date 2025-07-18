@@ -13,7 +13,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "今天就在这里休息吧",
         "dic": 1
     },
@@ -40,7 +40,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "抱歉",
         "dic": 3
     },
@@ -49,7 +49,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "没事",
         "dic": 1
     },
@@ -58,7 +58,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -67,7 +67,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "你不是哈扎德吗？",
         "dic": 1
     },
@@ -76,7 +76,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Surprise",
+        "face": "surprise",
         "string": "啊，是你们",
         "dic": 3
     },
@@ -93,8 +93,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "真是的……",
         "dic": 3
     },
@@ -103,7 +103,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "看起来你们也打算入住这个旅馆啊",
         "dic": 3
     },
@@ -112,7 +112,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "我有点事，等等我回来之后，再好好寒暄吧",
         "dic": 3
     },
@@ -130,7 +130,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "朋友？",
         "dic": 3
     },
@@ -139,7 +139,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "怎么说呢……",
         "dic": 1
     },
@@ -156,8 +156,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "这样说也没错",
         "dic": 1
     },
@@ -166,7 +166,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "你们的大冒险可真是波澜壮阔啊",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "请进",
         "dic": 1
     },
@@ -202,7 +202,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "呼……还真是巧合啊",
         "dic": 3
     },
@@ -211,7 +211,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "是啊",
         "dic": 1
     },
@@ -220,7 +220,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "真是让人吃惊啊，听说你在那之后成为了西景的皇帝",
         "dic": 3
     },
@@ -229,7 +229,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "还有这个没看过的小姐，想必就是那场传奇般的比武大会后和你成婚的忽兰皇后吧",
         "dic": 3
     },
@@ -238,7 +238,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "只会出现在新闻和传言中的人物确实地在我面前出现真是让人感到魔幻啊",
         "dic": 3
     },
@@ -255,8 +255,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "……你还是和以前一样嘛",
         "dic": 3
     },
@@ -274,7 +274,7 @@
         "name": "？？？",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "老哥，你的朋友吗？",
         "dic": 3
     },
@@ -283,7 +283,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Surprise",
+        "face": "surprise",
         "string": "啊，雪拉扎德",
         "dic": 3
     },
@@ -292,7 +292,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "…………(打量世清一行人)",
         "dic": 3
     },
@@ -301,7 +301,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Happy",
+        "face": "happy",
         "string": "哇，真是让人感觉到“故事性”的团队啊",
         "dic": 3
     },
@@ -310,7 +310,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Happy",
+        "face": "happy",
         "string": "戴眼镜的老哥看起来像是团队里的头脑担当，率领着两个看着就觉得很笨的家伙到处冒险，一定很辛苦吧",
         "dic": 3
     },
@@ -319,7 +319,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "看着……就笨……",
         "dic": 3
     },
@@ -336,8 +336,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Sad",
+        "face": "sad",
         "string": "雪拉扎德……你说得太过分了",
         "dic": 3
     },
@@ -355,7 +355,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "……抱歉，说得太过了",
         "dic": 3
     },
@@ -364,7 +364,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "总是改不掉这口直心快的老毛病",
         "dic": 3
     },
@@ -372,8 +372,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "哈扎德，你这句话似乎也……",
         "dic": 1
     },
@@ -382,7 +382,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "说起来，你最近过得怎么样呢，刚刚相遇的时候看你急急忙忙的，挺忙碌的样子",
         "dic": 1
     },
@@ -391,7 +391,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "……还是去我们的房间好解释一点",
         "dic": 3
     },
@@ -418,7 +418,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "到处都是纸和墨水的味道……",
         "dic": 3
     },
@@ -436,7 +436,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯？这不是“辛巴达和巨鸟”的分镜草稿吗？",
         "dic": 1
     },
@@ -463,7 +463,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "难道说……",
         "dic": 1
     },
@@ -472,7 +472,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Happy",
+        "face": "happy",
         "string": "我还没自我介绍，我叫雪拉扎德，千夜一夜物语的作者，同时是那个不成器的哥哥的妹妹",
         "dic": 3
     },
@@ -490,7 +490,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "我已经成年了哦，别把我当成小孩子，大叔",
         "dic": 3
     },
@@ -508,7 +508,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "其实该惊讶的是我才对，竟然可以在这里遇到西景的皇帝和皇后，还有……金毛随从？",
         "dic": 3
     },
@@ -526,7 +526,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "我好像没在你面前提到过我是皇帝的事情……",
         "dic": 1
     },
@@ -535,7 +535,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "因为老哥经常提起你，你是我重点观察的创作素材，一些特征完全对得上，所以我推断你就是他所说的伦",
         "dic": 3
     },
@@ -544,7 +544,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "所以在知道我是皇后的前提下说我是笨蛋吗……",
         "dic": 3
     },
@@ -553,7 +553,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "观察力是一个创作者的基本素养，看起来你确实是千夜一夜物语的作者",
         "dic": 1
     },
@@ -561,8 +561,8 @@
         "branch": "",
         "name": "雪拉扎德",
         "char": "Sherazard",
-        "con": "",
-        "face": "Sherazard2HappyCE",
+        "con": "CE",
+        "face": "happy",
         "string": "能得到西景皇帝陛下的称赞，真是无上光荣",
         "dic": 3
     },
@@ -580,7 +580,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "夏修伦……请原谅我妹妹的冒犯，她只是不太会说话……嗯，她的演出绘画能力和口头语言组织能力是两个极端",
         "dic": 3
     },
@@ -589,7 +589,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "你就是夏修伦吗？",
         "dic": 3
     },
@@ -606,8 +606,8 @@
         "branch": "",
         "name": "雪拉扎德",
         "char": "Sherazard",
-        "con": "",
-        "face": "Sherazard2HappyCE",
+        "con": "CE",
+        "face": "happy",
         "string": "你是那场地底大冒险的主角之一……因为真人长得太过路人，很难跟哥哥的描述关联起来呢",
         "dic": 3
     },
@@ -625,7 +625,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "不过，你身上拥有一股真正历练过的人才会拥有的气质，何况你某种意义上也救了我的命",
         "dic": 3
     },
@@ -634,7 +634,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "谢谢你们",
         "dic": 3
     },
@@ -652,7 +652,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "哈扎德，难道你和雪拉扎德在边旅行边画漫画吗？",
         "dic": 1
     },
@@ -661,7 +661,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "嗯，多亏了我这能干的妹妹，千夜一夜物语的稿费足够我们两人的生活开支",
         "dic": 3
     },
@@ -670,7 +670,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "我们现在在亲身前往各个地方打听各地的传奇故事，收集创作的灵感",
         "dic": 3
     },
@@ -679,7 +679,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Happy",
+        "face": "happy",
         "string": "其实有一半是在躲避追杀啦哈哈哈哈",
         "dic": 3
     },
@@ -688,7 +688,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "在逃出卡哈扎塔后，我们兄妹两人途经了好多个地方，每天都只是不知道明日在何方地混日子",
         "dic": 3
     },
@@ -697,7 +697,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Default",
+        "face": "smile",
         "string": "真是让人绝望的日子啊，但是在旅行的过程中，我听哥哥说了你们的故事，休息时周围的旅行者们也向我们讲述了他们的故事",
         "dic": 3
     },
@@ -705,8 +705,8 @@
         "branch": "",
         "name": "雪拉扎德",
         "char": "Sherazard",
-        "con": "",
-        "face": "Sherazard2CloseEye",
+        "con": "CE",
+        "face": "smile",
         "string": "在某一天，我把梦中的场景画了下来，不知道为什么，我越画越能感觉到梦的内容越来越清晰，这就是千夜一夜物语的由来",
         "dic": 3
     },
@@ -714,8 +714,8 @@
         "branch": "",
         "name": "雪拉扎德",
         "char": "Sherazard",
-        "con": "",
-        "face": "Sherazard2CloseEye",
+        "con": "CE",
+        "face": "smile",
         "string": "能依靠自己的双手把自己的梦，旅行者们的梦画下来，这样想，即使颠沛流离也是不错的人生呢",
         "dic": 3
     },
@@ -723,8 +723,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "于是我们就这样，一面躲避卡哈扎塔人的追杀，一面到处旅行收集材料绘制千夜一夜物语，并为此找到了人生的意义",
         "dic": 3
     },
@@ -732,8 +732,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEye",
+        "con": "CE",
+        "face": "serene",
         "string": "虽然我只是跑腿和买颜料纸笔的……",
         "dic": 3
     },
@@ -742,7 +742,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "取名千夜一夜物语，就是寄托了自身对千奇百怪的世界的憧憬，以及希望自身可以在这条创作之旅传续下去的愿景呢",
         "dic": 1
     },
@@ -751,7 +751,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Happy",
+        "face": "happy",
         "string": "哦，不愧是团队里智商担当的皇帝陛下，我决定亲自点名你是我的黄金书迷了",
         "dic": 3
     },
@@ -759,8 +759,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEyeSad",
+        "con": "CE",
+        "face": "sad",
         "string": "雪拉扎德……玩笑别开太过了",
         "dic": 3
     },
@@ -768,8 +768,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "哈扎德，这种小事我不会放在心上，能被自己喜欢的作品的作者点名为忠实粉丝，说实话还让人挺高兴的",
         "dic": 1
     },
@@ -787,7 +787,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Happy",
+        "face": "happy",
         "string": "哈哈，作为一个作者，最大的幸福就是看着读者沉浸在自己缔造的世界中，所以……谢谢你们",
         "dic": 3
     },
@@ -805,7 +805,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "哦？这个是以世清和夏修伦作为主角的漫画吗？有意思",
         "dic": 3
     },
@@ -814,7 +814,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "画风真华丽啊，就是夏修伦画得有点帅了，和本人完全不像，不过毕竟在画的时候没见过真人，有些不必要的脑补很正常",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "怎么两句话都没说就开始脱掉衣服……那啥了……还有那玩意也画得太大了吧……",
         "dic": 3
     },
@@ -832,7 +832,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Surprise",
+        "face": "surprise",
         "string": "喂喂！！停停停！！你是在哪里找到的啊！快停下！",
         "dic": 3
     },
@@ -849,8 +849,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEyeSad",
+        "con": "CE",
+        "face": "sad",
         "string": "哎……忘了说……",
         "dic": 3
     },
@@ -858,8 +858,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEyeSad",
+        "con": "CE",
+        "face": "sad",
         "string": "以前生计不好的时候雪拉扎德用过几个笔名投稿了很多……那种漫画……从那之后好像一发不可收拾了……",
         "dic": 3
     },
@@ -867,8 +867,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEyeSad",
+        "con": "CE",
+        "face": "sad",
         "string": "那个……特定人群里面很流行……",
         "dic": 3
     },
@@ -877,7 +877,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Surprise",
+        "face": "surprise",
         "string": "给回我！给回我！",
         "dic": 3
     },
@@ -886,7 +886,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "嘻嘻，谁叫你刚刚这样抹黑我",
         "dic": 3
     },
@@ -894,8 +894,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "有这种爱好我还是可以理解的……只是这个对于我来说好像有点劲爆了点……",
         "dic": 1
     },
@@ -903,8 +903,8 @@
         "branch": "",
         "name": "哈扎德",
         "char": "Khazard",
-        "con": "",
-        "face": "Khazard2CloseEyeSad",
+        "con": "CE",
+        "face": "sad",
         "string": "实在是非常抱歉……",
         "dic": 3
     },
@@ -931,7 +931,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯，不错的提议",
         "dic": 1
     },
@@ -940,7 +940,7 @@
         "name": "哈扎德",
         "char": "Khazard",
         "con": "",
-        "face": "Khazard2Default",
+        "face": "serene",
         "string": "好，今晚我们就好好地开心一下吧",
         "dic": 3
     },
@@ -949,7 +949,7 @@
         "name": "雪拉扎德",
         "char": "Sherazard",
         "con": "",
-        "face": "Sherazard2Surprise",
+        "face": "surprise",
         "string": "还给我~~！",
         "dic": 3
     }

@@ -13,7 +13,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……咦？",
         "dic": 1
     },
@@ -40,7 +40,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "嗯，是的，我就是可爱的忽兰皇后",
         "dic": 3
     },
@@ -48,8 +48,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "你啊……",
         "dic": 1
     },
@@ -148,7 +148,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "我也感觉到了，夏修伦你的洞察力还是不行啊",
         "dic": 3
     },
@@ -418,7 +418,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "“普利陀毗罗阇”……“地罗王”！？原来他没有死在那场战争中",
         "dic": 1
     },
@@ -616,7 +616,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "一直隐藏气息的人终于现身了吗？",
         "dic": 1
     },
@@ -625,7 +625,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……是你？",
         "dic": 1
     },
@@ -643,7 +643,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这次我们不是敌人，我没理解错的话",
         "dic": 1
     },
@@ -679,7 +679,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "也对，我不想跟你打第二次了",
         "dic": 1
     },
@@ -733,7 +733,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "嗯",
         "dic": 1
     },
@@ -751,7 +751,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "……！",
         "dic": 1
     },
@@ -823,7 +823,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "记得，是之前和你一起行动的那个女人",
         "dic": 1
     },
@@ -1002,8 +1002,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "嗯",
         "dic": 1
     },
@@ -1093,7 +1093,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "余，和以往的战斗不同，和暗杀者的战斗不是战斗，而是和死神跳舞，我亲身经历过被暗杀的体验所以很清楚",
         "dic": 1
     },
@@ -1102,7 +1102,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "暗杀被称为“暗杀王”的杀手，也未免太危险了，不应该把你牵及进来，你在安全的地方等我们的消息吧",
         "dic": 1
     },
@@ -1129,7 +1129,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "我想毫无保留地跟你互相坦诚，那就是我想跟你一起战斗",
         "dic": 3
     },
@@ -1165,7 +1165,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "嗯……我们走吧，快要跟丢他们了",
         "dic": 3
     }

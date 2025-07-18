@@ -13,7 +13,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "从这里开始就是黄金森林",
         "dic": 1
     },
@@ -22,7 +22,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "做好心理准备了吗？我们可能要在里面呆上很长一段时间，甚至还会把性命交代在里面",
         "dic": 1
     },
@@ -31,7 +31,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "我们走过太多比这里更危险的地方了",
         "dic": 3
     },
@@ -40,7 +40,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "说是这样没错……但还是不能大意",
         "dic": 1
     },
@@ -76,7 +76,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "怎么了",
         "dic": 1
     },
@@ -103,7 +103,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……原来如此",
         "dic": 1
     },
@@ -112,7 +112,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "当初我们就是掉到了这条河的下游吧",
         "dic": 1
     },
@@ -121,7 +121,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "这里就是你们孽缘的起源啊",
         "dic": 3
     },
@@ -129,8 +129,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "用词有点不太对",
         "dic": 1
     },
@@ -148,7 +148,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "好不容易才走到这里，却遇到了最大的难关",
         "dic": 1
     },
@@ -192,8 +192,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "感觉不是回忆过去的时候了，刚刚那声狼叫的主人看起来很不友善啊",
         "dic": 1
     },
@@ -229,7 +229,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "我怎么觉得这只狼就是你们说的那只狼的孩子呢？",
         "dic": 3
     },
@@ -237,8 +237,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "是也说不定",
         "dic": 1
     },
@@ -292,7 +292,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "如果是传说生物的话，我就说它们和普通的鹿不一样，喜欢待在阴暗的洞穴内部，有个天井可以照到月光，所以才叫月鹿",
         "dic": 3
     },
@@ -310,7 +310,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "要打架吗？夜叉女",
         "dic": 3
     },
@@ -327,8 +327,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "你们别闹了",
         "dic": 1
     },
@@ -336,8 +336,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "你们两个说得都有道理，我们就一直沿着河流走，如果找到洞穴，就进去看看",
         "dic": 1
     },
@@ -364,7 +364,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "它们还要跟着我们多久",
         "dic": 3
     },
@@ -373,7 +373,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "数量可观……粗略估计有五、六十只吧",
         "dic": 1
     },
@@ -391,7 +391,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "这也叫做狼吗？看到自己的兄弟被暴揍了，明显的数量优势也不敢扑上来报仇",
         "dic": 3
     },
@@ -400,7 +400,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "明知道打不过就一直在等待时机，这也是最基本的智慧",
         "dic": 1
     },
@@ -409,7 +409,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "难道说前面会有什么特殊的地形，使得它们认为有十足的把握击杀我们？",
         "dic": 3
     },
@@ -418,7 +418,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "怎么样，要撤退寻找其他的地方吗？",
         "dic": 1
     },
@@ -435,8 +435,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -445,7 +445,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "风从地底传来",
         "dic": 1
     },
@@ -463,7 +463,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这里开始周围开始大量出现几乎垂直出风的地面裂缝，这里的地下应该是空心的巨大地下河床",
         "dic": 1
     },
@@ -472,7 +472,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "我们一直马不停蹄地从泖支於走到这里，天色也逐渐变暗了",
         "dic": 1
     },
@@ -480,8 +480,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "这群狼的目的也很明显了，打算凭借夜色的优势让我们掉到被草丛隐藏的裂缝下面饿死",
         "dic": 1
     },
@@ -499,7 +499,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "附近的地形很平缓，如果在这里开战的话我们不会有太大问题",
         "dic": 1
     },
@@ -508,7 +508,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "我们停止推进，在这里轮番守夜休息，观察它们的行动再作打算",
         "dic": 1
     },
@@ -535,7 +535,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "我困了，世清，是你的时间了",
         "dic": 3
     },
@@ -544,7 +544,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "休息吧，接下来就交给我吧",
         "dic": 1
     },
@@ -562,7 +562,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -580,7 +580,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "鸣……",
         "dic": 1
     },
@@ -588,8 +588,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "下次能不能换点正常点的出场方式",
         "dic": 1
     },
@@ -625,7 +625,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "月鹿……真的存在？",
         "dic": 1
     },
@@ -651,8 +651,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "现在就不要开玩笑了……",
         "dic": 1
     },
@@ -670,7 +670,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "啊？",
         "dic": 1
     },
@@ -796,7 +796,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "狼的数量变少了好多，估计只留下了两只作为监视，等待下一次时机的到来",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "进入地下河道去",
         "dic": 1
     },
@@ -841,7 +841,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这也是之前说好的，沿河走遇到洞穴就进去",
         "dic": 1
     },
@@ -849,8 +849,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "希望羽三你能理解，我想尽可能对你们两个都公平一些",
         "dic": 1
     },
@@ -868,7 +868,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "我不想在这件事上跟你吵架，反而是它们处心积虑想我们掉进去的洞我们反而自己趁他们没在的时候自己进去了",
         "dic": 3
     },
@@ -877,7 +877,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "真是赤裸裸的嘲讽，能想象到这群狼脸上的表情如何精彩吗？",
         "dic": 3
     },
@@ -894,8 +894,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "你们才是恶狼吧",
         "dic": 1
     },
@@ -904,7 +904,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "那我们就开始地下河床的探索，如果有什么不对劲的话就马上逃跑",
         "dic": 1
     },
@@ -940,7 +940,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这个地下河床的结构实在是太复杂了，浪费了不少体力",
         "dic": 1
     },
@@ -967,7 +967,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "还能支撑下去吗？",
         "dic": 1
     },
@@ -994,7 +994,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "没错，已经走到这一步了，不能掉头……",
         "dic": 3
     },
@@ -1003,7 +1003,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "羽三",
         "dic": 1
     },
@@ -1021,7 +1021,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "这样是不是可以节省一些力气？",
         "dic": 1
     },
@@ -1084,7 +1084,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingDefault",
+        "face": "serene",
         "string": "发光的瀑布……？",
         "dic": 1
     },
@@ -1093,7 +1093,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "咦？多条水流汇聚在一点，这个瀑布看起来不就是发光的雄鹿的角吗？",
         "dic": 1
     },
@@ -1120,7 +1120,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "这也侧面说明了羽三的意志很坚强啊，走到这里还能保持清醒的意识",
         "dic": 1
     },
@@ -1138,7 +1138,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "鸣……",
         "dic": 1
     },
@@ -1146,8 +1146,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "我王老爷子，是你吗？",
         "dic": 1
     },
@@ -2038,7 +2038,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Depressed",
+        "face": "depress",
         "string": "快给我从世清的身上离开！",
         "dic": 3
     },
@@ -2074,7 +2074,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Default",
+        "face": "smile",
         "string": "罢了，世清，感觉饿了吧，我给你弄好吃的",
         "dic": 3
     },
@@ -2082,8 +2082,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "啊……啊，嗯",
         "dic": 1
     },
@@ -2101,7 +2101,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5SinisterSmile",
+        "face": "sinister",
         "string": "确实，你的实力确实让人绝望地比我低了一大截",
         "dic": 3
     },
@@ -2127,8 +2127,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingEmbarrassed",
+        "con": "ATSPSW",
+        "face": "serene",
         "string": "这两人如果可以含蓄一点就好了",
         "dic": 1
     },
@@ -2136,8 +2136,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -2145,8 +2145,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "已经过去一星期了啊，羽三……似乎也完全走出来了",
         "dic": 1
     },
@@ -2154,8 +2154,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEye",
+        "con": "ATSPCE",
+        "face": "serene",
         "string": "遵循自己的意志活着就好，羽三",
         "dic": 1
     },
@@ -2173,7 +2173,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "鸣……",
         "dic": 1
     },
@@ -2182,7 +2182,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingSurprise",
+        "face": "surprise",
         "string": "……",
         "dic": 1
     },
