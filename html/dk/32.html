@@ -3,15 +3,15 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/dk.html');
     })
 </script>
@@ -35,9 +35,14 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="32"></div>
-作者：bhima <br> 设买船的原价为X.则最大可以杀价值受到是主角的魅力值影响， <br> 杀价的最低值为[0.8+(100-y)*0.002]*X <br> y为主角魅力值。 <br> 当会计会会计的话可以告诉你准确的杀价结果，如果会计仅仅只会交涉的技能，则在杀价的时候很容易波动，一旦建议的价格低于 <br> 这个最低值，船老板便会拒绝这个结果，因此买船的时候也需要会计技能。 <br>
-<br> 酒馆雇佣水手的数目取决于几个因素，一个是是否请酒，二是魅力，三是港口的商业发展度，此外还有爵位因素 <br> 为了简化起见，我们这里假定港口的商业发展度为1000。这样只剩下两个因素，是否请酒和魅力。 <br> 1 设没有请酒，仅仅依靠魅力值来雇佣水手，则规律为Int[66*x/100],x为魅力值。该公式对应结果为有爵位，没有爵位，上面的结果减半。 <br> 2 如果有爵位，而且请酒的话，不同的请酒结果雇佣得到水手数同样跟魅力值有关。该公式为a0+20*Int[y/5]*x/100.a0为1的结果，y为请酒的杯数，x为魅力值，Int为取整函数。该结果当水手数到达200时截断。
-<br> 3 如果该港口商业发展度低于1000，则实际可以雇佣得到的水手数为 2的结果*t/1000，t为实际发展度,2的公式修正为[a0+20*Int[y/5]*x/100]*t/1000,该公式当雇佣水手数到达该港口商业发展度值的20％时截断。 <br> 综上所述，魅力值对于能够实际雇佣到的水手数影响很重要，因此魅力值过低有爵位喝酒很多也同样雇佣不到足够的水手，所以不要没事去掠夺粮食。 <br> 游戏默认的设置主人公的魅力值都不低于80，因此只要喝酒量足够的话，就能够招募到足够的水手。
+作者：bhima <br> 设买船的原价为X.则最大可以杀价值受到是主角的魅力值影响， <br> 杀价的最低值为[0.8+(100-y)*0.002]*X <br> y为主角魅力值。 <br>
+当会计会会计的话可以告诉你准确的杀价结果，如果会计仅仅只会交涉的技能，则在杀价的时候很容易波动，一旦建议的价格低于 <br> 这个最低值，船老板便会拒绝这个结果，因此买船的时候也需要会计技能。 <br>
+<br> 酒馆雇佣水手的数目取决于几个因素，一个是是否请酒，二是魅力，三是港口的商业发展度，此外还有爵位因素 <br> 为了简化起见，我们这里假定港口的商业发展度为1000。这样只剩下两个因素，是否请酒和魅力。 <br> 1
+设没有请酒，仅仅依靠魅力值来雇佣水手，则规律为Int[66*x/100],x为魅力值。该公式对应结果为有爵位，没有爵位，上面的结果减半。 <br> 2
+如果有爵位，而且请酒的话，不同的请酒结果雇佣得到水手数同样跟魅力值有关。该公式为a0+20*Int[y/5]*x/100.a0为1的结果，y为请酒的杯数，x为魅力值，Int为取整函数。该结果当水手数到达200时截断。
+<br> 3 如果该港口商业发展度低于1000，则实际可以雇佣得到的水手数为
+2的结果*t/1000，t为实际发展度,2的公式修正为[a0+20*Int[y/5]*x/100]*t/1000,该公式当雇佣水手数到达该港口商业发展度值的20％时截断。 <br>
+综上所述，魅力值对于能够实际雇佣到的水手数影响很重要，因此魅力值过低有爵位喝酒很多也同样雇佣不到足够的水手，所以不要没事去掠夺粮食。 <br> 游戏默认的设置主人公的魅力值都不低于80，因此只要喝酒量足够的话，就能够招募到足够的水手。
 <br>
 <br> 欢迎大家拍砖和指正。
 

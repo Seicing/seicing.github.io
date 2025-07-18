@@ -3,13 +3,13 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/fatcatpool.html');
     })
 </script>
@@ -57,9 +57,10 @@
                     <br />
                 </div>
                 <br />
-                <strong>Sprite</strong></div>
+                <strong>Sprite</strong>
+            </div>
             <div style="text-align: center"><strong><br />
-      </strong></div>
+                </strong></div>
             <div style="text-align: center">相信做过补丁的朋友都会了解到dnf的imagepack2文件夹是dnf这个游戏最主要的图像文件存放地</div>
             <div style="text-align: center">而里面的文件名都是清一色的这个前缀：</div>
             <div style="text-align: center"><img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsybz5wdqaj203i08kt8i.jpg"><br />
@@ -70,7 +71,9 @@
             <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsybzxlqvej20g90bcdh0.jpg"><br />
             <div style="text-align: center">当然意思绝对不会是雪碧</div>
             <div style="text-align: center">顾名思义，sprite就是所谓的&ldquo;精灵&rdquo;的意思</div>
-            <div style="text-align: center">sprite在游戏里是指一个图形控件，指的是把一张或者一堆图像进行封装，命名为一个sprite对象，而这个sprite可以接受放大、缩小、动画播放、混合模式等一系列的属性调控，作为一个独立的渲染对象而存在的图像封装就是sprite</div>
+            <div style="text-align: center">
+                sprite在游戏里是指一个图形控件，指的是把一张或者一堆图像进行封装，命名为一个sprite对象，而这个sprite可以接受放大、缩小、动画播放、混合模式等一系列的属性调控，作为一个独立的渲染对象而存在的图像封装就是sprite
+            </div>
             <br />
             <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsyc1k2o1wg205m04vk11.gif"><br />
             <div style="text-align: center">这是一个gif，为dnf的npk文件里面的img文件导出之后的动态图片</div>
@@ -89,21 +92,27 @@
         <div style="text-align: center"><strong>Draw Call</strong></div>
         <br />
         <div style="text-align: center">Draw Call，简称DC，顾名思义，就是&ldquo;描绘请求&rdquo;的意思</div>
-        <div style="text-align: center">DC是游戏利用cpu去调用gpu的渲染指令的一个过程，非常直观，cpu处理游戏的描绘的时候，意识到这里需要显卡去进行描绘，就会命令显卡去描绘这个地方，这样的一次请求发送就是称之为一次DC</div>
+        <div style="text-align: center">
+            DC是游戏利用cpu去调用gpu的渲染指令的一个过程，非常直观，cpu处理游戏的描绘的时候，意识到这里需要显卡去进行描绘，就会命令显卡去描绘这个地方，这样的一次请求发送就是称之为一次DC</div>
         <br />
         <div style="text-align: center">DC以帧为单位，在一帧内cpu根据游戏的情况发送的描绘请求的总量，称之为DC数</div>
         <div style="text-align: center">DC数是一个游戏是否流畅的一个因素之一，如果DC数过多的话，CPU发送的指令过多GPU反应不过来，就会造成卡帧</div>
-        <div style="text-align: center">常见的3d游戏DC数能维持在200左右的话就是相当标准的高优化游戏，dc数的质量是不对等的，例如命令显卡去渲染一个png序列形成的ui和一棵单一贴图的树，后者更加考验显卡的多边形计算能力，但3d游戏并不是本文要说的东西，总的来说dc数是能够保证画质不被阉割的前提下越少越好</div>
+        <div style="text-align: center">
+            常见的3d游戏DC数能维持在200左右的话就是相当标准的高优化游戏，dc数的质量是不对等的，例如命令显卡去渲染一个png序列形成的ui和一棵单一贴图的树，后者更加考验显卡的多边形计算能力，但3d游戏并不是本文要说的东西，总的来说dc数是能够保证画质不被阉割的前提下越少越好
+        </div>
         <br />
         <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsyc5y6cc5j208a0bs757.jpg"><br />
         <div style="text-align: center">dnf作为一个2d游戏，DC数在战斗时可以接近过千，是一个名副其实的高端游戏（实际上这个数量比大部分主机游戏还要凶残很多）</div>
-        <div style="text-align: center">如果抱着2d游戏=落后的思想去看待游戏的话，这个思想本身就是落后的，其实可以把2d游戏的每一个贴图都看成一个3d多边形面，这样可以理解成dnf压根不吃显卡的多边形性能，也就是显卡的&ldquo;质&rdquo;，而是吃它的&quot;量&quot;，显存+显卡的运算速度</div>
+        <div style="text-align: center">
+            如果抱着2d游戏=落后的思想去看待游戏的话，这个思想本身就是落后的，其实可以把2d游戏的每一个贴图都看成一个3d多边形面，这样可以理解成dnf压根不吃显卡的多边形性能，也就是显卡的&ldquo;质&rdquo;，而是吃它的&quot;量&quot;，显存+显卡的运算速度
+        </div>
         <div style="text-align: center">很多人认为dnf吃显卡就是来自于这个理解，至于是不是真的吃，那就见仁见智</div>
         <div style="text-align: center">这也是用垃圾板载显卡都能玩这游戏的原因</div>
         <br />
         <div style="text-align: center">dnf因为其可怕的dc数实际上在运行时已经不输给主流主机游戏了</div>
         <div style="text-align: center">不过很大的原因在于韩方制作组对这游戏的优化不足的原因</div>
-        <div style="text-align: center">这游戏是03年时候一个不过十人的小组研发的，理所当然地，当年技术力不足的原因，这个游戏的整体架构实际上非常落后，甚至在十几年之后的今天也是使用这个架构的基础上继续添砖加瓦，自然是一场恐怖的灾难</div>
+        <div style="text-align: center">
+            这游戏是03年时候一个不过十人的小组研发的，理所当然地，当年技术力不足的原因，这个游戏的整体架构实际上非常落后，甚至在十几年之后的今天也是使用这个架构的基础上继续添砖加瓦，自然是一场恐怖的灾难</div>
         <br />
         <br />
         <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/5.gif"><br />
@@ -115,29 +124,29 @@
         <br /> 在一帧里进行了这样的渲染请求
         <br />
         <em>哥布林_1帧→哥布林1.png<br />
-      drawcall<br />
-      哥布林_4帧→哥布林4.png<br />
-      drawcall<br />
-      鬼剑士_134帧→鬼剑士134.png<br />
-      drawcall<br />
-      hud→hud.png<br />
-      drawcall<br />
-      hp_bar→hp_bar.png<br />
-      drawcall<br />
-      mp_bar→mp_bar.png<br />
-      drawcall</em><br /> 可以看到整整使用了6次的drawcall，当然这只是很简单的一个例子，实际情况没有如此简单
+            drawcall<br />
+            哥布林_4帧→哥布林4.png<br />
+            drawcall<br />
+            鬼剑士_134帧→鬼剑士134.png<br />
+            drawcall<br />
+            hud→hud.png<br />
+            drawcall<br />
+            hp_bar→hp_bar.png<br />
+            drawcall<br />
+            mp_bar→mp_bar.png<br />
+            drawcall</em><br /> 可以看到整整使用了6次的drawcall，当然这只是很简单的一个例子，实际情况没有如此简单
     </div>
     <br />
     <div style="text-align: center">假如地图上有10只哥布林，鬼剑士夹在这堆哥布林之中，这时候的dc提交是这样的</div>
     <div style="text-align: center"><em>哥布林<br />
-    哥布林<br />
-    哥布林<br />
-    …<br />
-    鬼剑士<br />
-    哥布林<br />
-    哥布林<br />
-    哥布林<br />
-    …</em></div>
+            哥布林<br />
+            哥布林<br />
+            …<br />
+            鬼剑士<br />
+            哥布林<br />
+            哥布林<br />
+            哥布林<br />
+            …</em></div>
     <br />
     <div style="text-align: center">可以看出其实有很多请求是看上去是重复的，那么有没有办法将这些重复的东西整合在一起呢？</div>
     <div style="text-align: center">答案是可以的，但dnf里面并没有做这个机制（至少目前还没有完全普及）</div>
@@ -152,19 +161,23 @@
     <div style="text-align: center">这样做有什么好处呢？</div>
     <br />
     <div style="text-align: center">这里要提到dc的一个机制了，实际上dc不会认精灵，他们认的是精灵里面每一个独立的图像文件</div>
-    <div style="text-align: center">在渲染的时候实际上是把里面的独立帧单独抽出来渲染，例如地图上有十只哥布林，他们的动作是不可能协调一致的，即使有两只哥布林恰好处于相同帧数，实际上这堆哥布林在一帧里面也要提交至少9次的dc</div>
+    <div style="text-align: center">
+        在渲染的时候实际上是把里面的独立帧单独抽出来渲染，例如地图上有十只哥布林，他们的动作是不可能协调一致的，即使有两只哥布林恰好处于相同帧数，实际上这堆哥布林在一帧里面也要提交至少9次的dc</div>
     <div style="text-align: center">更不用说两个下面提到过的更加可怕的东西</div>
     <br />
     <div style="text-align: center">而Sprite Sheet就是解决这样的情况的一个手段了，把几十帧&ldquo;封装&rdquo;为1张图片，dc认这一张图片，对这个图片进行整体的渲染</div>
-    <div style="text-align: center">而这十个哥布林用的实际上是同一个纹理（Texture）文件，地图上存在重复的哥布林的时候，只要他们是使用图表集分割的动画，就是共用连续的纹理，不需要分开十次dc，而是整合为1次</div>
+    <div style="text-align: center">
+        而这十个哥布林用的实际上是同一个纹理（Texture）文件，地图上存在重复的哥布林的时候，只要他们是使用图表集分割的动画，就是共用连续的纹理，不需要分开十次dc，而是整合为1次</div>
     <br />
     <div style="text-align: center">dc提交这时候会变成这样</div>
     <div style="text-align: center"><em>哥布林<br />
-    鬼剑士<br />
-    哥布林</em><br />
+            鬼剑士<br />
+            哥布林</em><br />
     </div>
     <br />
-    <div style="text-align: center">原先的11次的dc变成了3次，上面提到了&ldquo;连续&rdquo;一词，那是因为鬼剑士夹在这堆哥布林中间，遮住鬼剑士的哥布林和被鬼剑士遮住的哥布林绘图顺序是有先后的，纹理在描绘鬼剑士的时候停止了连续，所以要先描绘了鬼剑士然后再描绘剩下的哥布林，造成了3次dc的情况</div>
+    <div style="text-align: center">
+        原先的11次的dc变成了3次，上面提到了&ldquo;连续&rdquo;一词，那是因为鬼剑士夹在这堆哥布林中间，遮住鬼剑士的哥布林和被鬼剑士遮住的哥布林绘图顺序是有先后的，纹理在描绘鬼剑士的时候停止了连续，所以要先描绘了鬼剑士然后再描绘剩下的哥布林，造成了3次dc的情况
+    </div>
     <br />
     <div style="text-align: center">当然上面提到的ui也可以用图表集封装为一张tex，让原先需要消耗3次dc的ui变成一次</div>
     <div style="text-align: center">在压榨显卡性能的3d游戏里面，为了流畅自然需要进行各种的优化，这个方法其实就是3d游戏见得最多的一个优化方法</div>
@@ -188,7 +201,8 @@
         <br />
     </div>
     <div style="text-align: center"><br />
-        <strong>Avatar和色表</strong></div>
+        <strong>Avatar和色表</strong>
+    </div>
     <div style="text-align: center"><br /> Avatar来自于印度语，意思是化身
     </div>
     <div style="text-align: center">来到游戏里面，是指&ldquo;纸娃娃系统&rdquo;</div>
@@ -199,7 +213,9 @@
     <div style="text-align: center">是画两套动态图，一个是拿着武器A的角色，一个是拿着武器B的角色吗？</div>
     <div style="text-align: center">不对的，而是画三套动态图：空手的角色，武器A，武器B</div>
     <br />
-    <div style="text-align: center"><img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsycij9jl1g209g088qkv.gif"><img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsychsp27kg20dw0dwwka.gif"><img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsychrrp6mg20bg0algtj.gif"><br />
+    <div style="text-align: center"><img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsycij9jl1g209g088qkv.gif"><img
+            src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsychsp27kg20dw0dwwka.gif"><img
+            src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsychrrp6mg20bg0algtj.gif"><br />
     </div>
     <br />
     <br />
@@ -339,7 +355,9 @@
     <br />
     <div style="text-align: center">红眼觉醒时候吸收的血气也是粒子效果，而且是比较高端的程序实现的粒子效果</div>
     <br />
-    <div style="text-align: center">粒子效果的优点就是系统生成，每次发射的动画都是不同的，充满了随机性，很多游戏里面都大量运用了粒子效果去制作特效，但是dnf里面给人的感觉有点脑抽，因为有些可以粒子效果的地方他们是做成了png序列素材的，不过也不难理解，粒子效果没有我们想象中的那么好调教</div>
+    <div style="text-align: center">
+        粒子效果的优点就是系统生成，每次发射的动画都是不同的，充满了随机性，很多游戏里面都大量运用了粒子效果去制作特效，但是dnf里面给人的感觉有点脑抽，因为有些可以粒子效果的地方他们是做成了png序列素材的，不过也不难理解，粒子效果没有我们想象中的那么好调教
+    </div>
     <br />
     <div style="text-align: center"><br />
         <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/5.gif"><br />
@@ -349,7 +367,7 @@
     <br />
     <div style="text-align: center"><strong>卷轴</strong></div>
     <div style="text-align: center"><strong><br />
-  </strong></div>
+        </strong></div>
     <div style="text-align: center">游戏实际上是使用摄像机去进行追踪视觉的</div>
     <div style="text-align: center">在dnf里面是以角色为中心进行追踪</div>
     <div style="text-align: center">而为了表达地图的空间感，我们会把地图做得比摄像机的视觉还要大，我们在地图上往前移动摄像机进行追踪时地图会被往后拉走，这个就是游戏的卷轴系统</div>
@@ -385,7 +403,7 @@
     <div style="text-align: center">
         <div style="text-align: center"><strong>帧数</strong></div>
         <div style="text-align: center"><strong><br />
-    </strong></div>
+            </strong></div>
         帧数（Frame Per Second，FPS）是指游戏在一秒内成像的图片的数量<br /> FPS60就是意味着游戏在一秒内，生成了60张图片
     </div>
     <br />
@@ -425,7 +443,8 @@
     <div style="text-align: center">2.动态模糊</div>
     <br />
     <div style="text-align: center">动态模糊就是一种特殊的游戏渲染法，它的原理就是模拟动画的机制，把两帧之间的过程用渲染的方法模糊仿真出来，因此一些游戏30fps也能让人感觉很流畅</div>
-    <div style="text-align: center">当然，这个也是造成很多人觉得眩晕的主要原因，帧数低可以让人的眼睛大量产生卡顿感的感觉，造成容易疲劳，加上动态模糊就更加了，很多人玩3d游戏会觉得晕，其实很大程度上都是这两个原因</div>
+    <div style="text-align: center">
+        当然，这个也是造成很多人觉得眩晕的主要原因，帧数低可以让人的眼睛大量产生卡顿感的感觉，造成容易疲劳，加上动态模糊就更加了，很多人玩3d游戏会觉得晕，其实很大程度上都是这两个原因</div>
     <br />
     <div style="text-align: center">而不用动态模糊的话，就要靠纯粹的帧数去凑了</div>
     <div style="text-align: center">很多人就是为了得到更加流畅的dnf体验，购买更加高端的显卡去拖这个游戏，把fps拖到300多</div>
@@ -439,7 +458,8 @@
     <br />
     <div style="text-align: center">以上就是dnf作为一个2d游戏的一些图像运作机制了，不知道各位经过了解之后会不会对2d游戏进行改观呢？</div>
     <div style="text-align: center">2d游戏并不是落后的代名词，相反，高精度的2d游戏占据硬盘容量超过20G简直是正常不过了</div>
-    <div style="text-align: center">2d游戏的执行比起3d游戏来说更卡也是很常见的，dnf为例，尽管本身优化垃圾，但是也侧面看出了一点很多东西是&ldquo;极限&rdquo;，而不是&ldquo;不想做&rdquo;</div>
+    <div style="text-align: center">
+        2d游戏的执行比起3d游戏来说更卡也是很常见的，dnf为例，尽管本身优化垃圾，但是也侧面看出了一点很多东西是&ldquo;极限&rdquo;，而不是&ldquo;不想做&rdquo;</div>
     <div style="text-align: center">实际上按现在dnf的情形来讲，已经很难取得突破了，所以说彻底的架构重组才是出路啊</div>
     <div style="text-align: center">这期的内容就到这里结束了<br />
         <br />

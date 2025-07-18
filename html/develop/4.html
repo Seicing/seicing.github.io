@@ -3,13 +3,13 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/develop.html');
     })
 </script>
@@ -63,7 +63,8 @@
 <br><br> 没什么好说的，就是在光源的直射点演算一点反光，不过纯白色不好看，所以在后面进行了一下调整，让颜色显得更自然，当然这个石头的高光只是演示，实际会舍弃掉
 <br><br>
 
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/的而.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/释放.jpg"> <br><br> 为了让渲染更贴近美术风格，把高光的模糊调小，阴影也修改了一下写法，在测试模式下也很明确了
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/的而.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/释放.jpg"> <br><br>
+为了让渲染更贴近美术风格，把高光的模糊调小，阴影也修改了一下写法，在测试模式下也很明确了
 <br><br>
 
 
@@ -90,7 +91,9 @@
 <br> <br>
 <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/飞哥哥 (1).jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/飞哥哥 (2).jpg">
 
-<br> <br> 取视角和法线的夹角进行运算，不过效果并不是很满意，太难控，而且有bug <br> 然后试了下matcap等办法模拟，效果都不是很满意，最后是使用了另外的办法，获取面片法线和光照方向的夹角生成，而不是最开始的那种（因为最开始我们觉得是锁视角的，以视角为准更可控） <br> 黄色是面片的法线，黑色是光照的入射点，黄色和黑色产生夹角，然后我们检测这个夹角的数值，数值越小，光就越正，数值越大，光就越微弱，我们要做的就是检测一定数值以上就产生边缘高光
+<br> <br> 取视角和法线的夹角进行运算，不过效果并不是很满意，太难控，而且有bug <br>
+然后试了下matcap等办法模拟，效果都不是很满意，最后是使用了另外的办法，获取面片法线和光照方向的夹角生成，而不是最开始的那种（因为最开始我们觉得是锁视角的，以视角为准更可控） <br>
+黄色是面片的法线，黑色是光照的入射点，黄色和黑色产生夹角，然后我们检测这个夹角的数值，数值越小，光就越正，数值越大，光就越微弱，我们要做的就是检测一定数值以上就产生边缘高光
 <br> <br>
 <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/dsf.jpg"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/edg.jpg">
 
@@ -99,10 +102,13 @@
 <br> <br> 最后就是glow和bloom，没什么好说的，就是让发光的物体发光，然后模拟大气颜色
 
 <br> <br>
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/第三个.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/我突然.gif"> <br> <br> 这部分倒是很顺利，因为这玩意某种意义上是上面里面最2d的东西，而且默认插件的功能足够强劲，调一下就可以了 <br> 战戟的发光部分用了加法，和dnf一模一样，不亏是奶粉精神续作 <br> <br>
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/第三个.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/我突然.gif"> <br> <br>
+这部分倒是很顺利，因为这玩意某种意义上是上面里面最2d的东西，而且默认插件的功能足够强劲，调一下就可以了 <br> 战戟的发光部分用了加法，和dnf一模一样，不亏是奶粉精神续作 <br> <br>
 
 
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (1).png" width="260px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (2).png" width="260px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (3).png" width="260px"> <br> 最后就是三个阶段的对比图 <br> <br> 画面终于从一开始的简陋变得现在开始能看了，而且做出了一种独特的风格
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (1).png" width="260px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (2).png"
+    width="260px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/光荣进化 (3).png" width="260px"> <br> 最后就是三个阶段的对比图 <br> <br>
+画面终于从一开始的简陋变得现在开始能看了，而且做出了一种独特的风格
 <br> 接下来的任务就是基于这套渲染系统的前提下做场景了，到底画面能到那个程度呢？期待
 
 

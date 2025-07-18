@@ -3,13 +3,13 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/develop.html');
     })
 </script>
@@ -48,7 +48,8 @@
 <br> 这里用到的办法是深度信息处理
 <br><br>
 <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/QQ截图20200625200859.jpg">
-<br><br> 如图所示，摄像机会根据模型距离摄像机的距离，计算出其深度信息，让计算机判断哪个模型在前哪个在后，从而决定遮挡关系<br>根据摄像机提供的深度信息，来判断模型是否连在一起，允许一定的差异值判定为可描边的对象<br>利用这个方法对整个画面进行后处理，对整个画面进行描边，然后用特定的方法规避掉我们已经描边了的对象，这样就能让地图描边<br>
+<br><br>
+如图所示，摄像机会根据模型距离摄像机的距离，计算出其深度信息，让计算机判断哪个模型在前哪个在后，从而决定遮挡关系<br>根据摄像机提供的深度信息，来判断模型是否连在一起，允许一定的差异值判定为可描边的对象<br>利用这个方法对整个画面进行后处理，对整个画面进行描边，然后用特定的方法规避掉我们已经描边了的对象，这样就能让地图描边<br>
 <br><br>
 <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wr3.jpg">
 <br><br> 计算机进行计算后，白色的部分适用于深度信息处理描边，黑色的部分不进行描边，就能够让地图产生出描边的效果了
@@ -77,8 +78,10 @@
 <br><br>
 <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wetwet.jpg"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wwt.jpg">
 <br><br> 结合之前的情况以及实验最后得出了一个结论：unity的面朝向计算并不严谨
-<br> 在布兰达里面显示的正常现象，很可能在unity里面因为和“封闭”的模型进行交叉后产生了朝向bug从而消失，之前的花就是这样的情况，它是由5个中心旋转的花瓣组合而来的，五个模型之间相交的部分出现了交叉，所以造成了显示bug丢失了部分面（背面被当成了正面）
-<br> 得出可能的原因后，有一个猜想，会不会是因为封闭的模型和独立的面片的机制是不同的呢？如果将封闭的模型和独立面片分开，会不会解决？ <br> 在这个思路的驱使下，尝试了把花朵中间的根茎弄成独立的模型，应用独立的材质，花叶等纯面片的东西作为另一个模型，适用于另一个材质
+<br>
+在布兰达里面显示的正常现象，很可能在unity里面因为和“封闭”的模型进行交叉后产生了朝向bug从而消失，之前的花就是这样的情况，它是由5个中心旋转的花瓣组合而来的，五个模型之间相交的部分出现了交叉，所以造成了显示bug丢失了部分面（背面被当成了正面）
+<br> 得出可能的原因后，有一个猜想，会不会是因为封闭的模型和独立的面片的机制是不同的呢？如果将封闭的模型和独立面片分开，会不会解决？ <br>
+在这个思路的驱使下，尝试了把花朵中间的根茎弄成独立的模型，应用独立的材质，花叶等纯面片的东西作为另一个模型，适用于另一个材质
 <br><br>
 <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/6/wt.jpg">
 <br><br> 果然猜想是正确的，使用相同的办法去搞树木……
@@ -97,7 +100,8 @@
 <br> 没所谓，草泥马开始入厂大修模式
 <br> 从根本上修正了这个一直被我们忽略的bug<br>
 
-<br> 会产生这种情况的原因是因为开了面片的透明模式的话会关闭深度写入，面片也不参与深度排序了<br> 虽然不参与深度排序，但本身面片模型会参考深度，所以透明面片模型和不透明实体模型的先后顺序会显示正常，但是透明面片之间则会产生显示bug，它们彼此因为没有确实的深度所以会混乱起来，如同2D排序一样
+<br> 会产生这种情况的原因是因为开了面片的透明模式的话会关闭深度写入，面片也不参与深度排序了<br>
+虽然不参与深度排序，但本身面片模型会参考深度，所以透明面片模型和不透明实体模型的先后顺序会显示正常，但是透明面片之间则会产生显示bug，它们彼此因为没有确实的深度所以会混乱起来，如同2D排序一样
 <br> 解决方法就是让半透明的模型也参与写入深度，虽然会产生另一个问题：这会让所有透明的模型都统一深度，无法穿过表面看到内部，也就是说模型半透明的话会一整个模型生成的图半透明，而不是可以看到模型的透明的面叠加在一起的透明
 
 <br><br>

@@ -3,13 +3,13 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/develop.html');
     })
 </script>
@@ -42,7 +42,8 @@
 开始进行新版地图的制作了
 
 <br><br>
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/新建图像.jpg" width="370px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/新建图像2.jpg" width="370px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/新建图像.jpg" width="370px"><img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/新建图像2.jpg"
+    width="370px">
 <br><br> 在描绘之前随便涂鸦了一下找了一下感觉
 <br> 以“天空的河谷”为主题的地图，虽然涂得不怎么样……但主要的基调还是确立了的
 
@@ -54,7 +55,8 @@
 
 
 <br><br>
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319035827.jpg" width="370px"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319040103.jpg" width="370px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319035827.jpg" width="370px"> <img
+    src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319040103.jpg" width="370px">
 <br><br> 这种terrain的过渡的感觉就是3d游戏的标配……但是拉比巴那是用制作2d游戏思路做的游戏，不能沾染上3d的气息
 
 <br> 3d的无序是造成很多游戏从2d时代进化到3d后的閪屎化的根源
@@ -78,12 +80,15 @@
 <br>
 
 <br><br>
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319040647.jpg" width="370px"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319041221.jpg" width="370px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319040647.jpg" width="370px"> <img
+    src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319041221.jpg" width="370px">
 <br><br> 这些贴图是要使用“反UV法”（建模时一个一个选择面片贴到对应的uv上，而不是切好之后再画）制作模型用的，上面调研了一下，没什么技术上的难题
-<br> 我打算用这个共用UV制作同一个地图里的物件，但是被程序员草泥马给点艹了，他认为这游戏既然那么2d，所以他打算直接往游戏里引用雪碧（Sprite），又叫精灵，其实可以理解成自动把2d贴图转化为片面<br> 至于这个共用UV他强烈要求要全部切割为独立png，这样方便优化
+<br> 我打算用这个共用UV制作同一个地图里的物件，但是被程序员草泥马给点艹了，他认为这游戏既然那么2d，所以他打算直接往游戏里引用雪碧（Sprite），又叫精灵，其实可以理解成自动把2d贴图转化为片面<br>
+至于这个共用UV他强烈要求要全部切割为独立png，这样方便优化
 <br> 就是需要注意一点，在布兰达里面要让UV显示透明的话，需要手动设置一下通道，否则会出现上面图二的情况
 <br><br>
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319041339.jpg" width="370px"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319041352.jpg" width="370px">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319041339.jpg" width="370px"> <img
+    src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319041352.jpg" width="370px">
 <br><br> 在材质处点选Z通道，调整为0，这时候面片会完全透明，随后在纹理处把透明通道打开就ok了
 <br> 目前只是在调研一下制作办法，还没有正式地制作地图和装饰物件，上面的素材也会进行进一步深化，只是要慢慢来 <br> 在调研的过程中搞了一下名为yPanel的插件，功能是让描绘贴图的时候图层化，方便贴图的绘制
 
@@ -98,7 +103,8 @@
 <br> 不过值得一提的是今天用了一个很蛋疼的方法解决了之前瓦片地图篇提到的放大模式的bug
 <br> 草泥马打算用放大法解决，但是他老人家在忙活的时候我打开布兰达捣鼓了一下地图突然发现了一个很简单的解决办法，完全不需要把uv贴图画得那么蛋疼
 <br><br>
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319042741.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319042909.jpg">
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319042741.jpg"> <img
+    src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/3/QQ截图20200319042909.jpg">
 <br><br> 先把轴心弄成各自为政，然后缩放到大约原来的99%左右
 <br> tile和tile之间产生了缝隙！这样就可以把因为放大而模糊的边界给忽略过去了！
 <br><br>

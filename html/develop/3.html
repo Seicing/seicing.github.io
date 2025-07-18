@@ -3,13 +3,13 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-    <title>肥猫的秘密基地</title>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/develop.html');
     })
 </script>
@@ -58,7 +58,8 @@
 <br> 不过目前的影子效果不太满意，我需要的是比较硬边的阴影，然后颜色要更深一点
 <br><br>
 
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/QQ截图20200205173349.png"> <br><br> shading就是所谓的在模型本身进行计算，产生颜色层次感的一个过程 简单理解就是让模型本体产生暗面阴影
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/QQ截图20200205173349.png"> <br><br> shading就是所谓的在模型本身进行计算，产生颜色层次感的一个过程
+简单理解就是让模型本体产生暗面阴影
 
 <br><br>
 
@@ -66,7 +67,8 @@
 <br>随后在这个基础上加入色彩过渡，下面试了三种方案“中间色”、“内部柔化”和“外部柔化”
 <br><br>
 
-<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/sdgsdg.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/dsgsh.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/dsghsh.png"> <br><br> 外部柔化和内部柔化的区别在于，在硬边的基础上，是在硬边的外面开始加入过渡的柔色，还是往内缩产生柔色
+<img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/sdgsdg.jpg"> <img src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/dsgsh.jpg"> <img
+    src="https://data.seicing.com/seicingdepot/2fatcatpool/develop/dsghsh.png"> <br><br> 外部柔化和内部柔化的区别在于，在硬边的基础上，是在硬边的外面开始加入过渡的柔色，还是往内缩产生柔色
 
 <br> 最后选择了外部柔化，因为觉得内部柔化的影子不明显，至于第一种中间色则是比纯硬边阴影更加巩怖，很快就否决了
 <br><br>
