@@ -13,7 +13,7 @@
         "name": "白发女人",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "呜……",
         "dic": 3
     },
@@ -49,7 +49,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "阁下，怎么办",
         "dic": 3
     },
@@ -76,7 +76,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "但是夫人她……",
         "dic": 3
     },
@@ -94,7 +94,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "……明白了",
         "dic": 3
     },
@@ -112,7 +112,7 @@
         "name": "白发女子",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Yell",
+        "face": "excited",
         "string": "哇，得救了",
         "dic": 3
     },
@@ -120,8 +120,8 @@
         "branch": "",
         "name": "男子",
         "char": "Sri",
-        "con": "AL",
-        "face": "Sri2Happy",
+        "con": "",
+        "face": "bitter",
         "string": "好心人，真的是谢谢你了",
         "dic": 3
     },
@@ -130,7 +130,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "你们怎么会在“天风之日”的时候在外面乱走",
         "dic": 3
     },
@@ -139,7 +139,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "能捡回一条命真是万幸啊",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "白发女子",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Yell",
+        "face": "excited",
         "string": "都是因为这个家伙偷懒！神宫的书都！",
         "dic": 3
     },
@@ -156,8 +156,8 @@
         "branch": "",
         "name": "男子",
         "char": "Sri",
-        "con": "AL",
-        "face": "Sri2Yell",
+        "con": "",
+        "face": "angry",
         "string": "我是白痴，行了吧，不要再骂我了",
         "dic": 3
     },
@@ -165,8 +165,8 @@
         "branch": "",
         "name": "白发女子",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Sad",
+        "con": "CE",
+        "face": "uncomfortable",
         "string": "我刚买的眼镜啊……",
         "dic": 3
     },
@@ -175,8 +175,8 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
-        "string": "……你们是神宫的人？",
+        "face": "serene",
+        "string": "……你们是东边神宫的人？",
         "dic": 3
     },
     {
@@ -184,16 +184,16 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Default",
-        "string": "是的，我叫明玲，是刚刚上任不久的天风宫大祝",
+        "face": "smile",
+        "string": "是的，我叫明玲，是刚刚上任不久的大祝",
         "dic": 3
     },
     {
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Confidence",
+        "con": "CE",
+        "face": "smile",
         "string": "这个家伙叫斯理，算是我的手下吧",
         "dic": 3
     },
@@ -201,8 +201,8 @@
         "branch": "",
         "name": "斯理",
         "char": "Sri",
-        "con": "AL",
-        "face": "Sri2Default",
+        "con": "",
+        "face": "serene",
         "string": "真过分啊，把一起长大的朋友当下人使唤",
         "dic": 3
     },
@@ -211,7 +211,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "原来是明玲阁下，幸会",
         "dic": 3
     },
@@ -220,7 +220,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "你们请自便，在这里等待天风之日的结束吧",
         "dic": 3
     },
@@ -229,7 +229,7 @@
         "name": "侍女",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "请见谅……只能屈就你们在大厅休息",
         "dic": 3
     },
@@ -238,7 +238,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Happy",
+        "face": "happy",
         "string": "嗯，谢谢你，这已经足够了",
         "dic": 3
     },
@@ -265,7 +265,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "是明玲大祝和她的侍从，似乎是因为神宫的图书馆被风刮坏了，他们两个冒着危险在抢救",
         "dic": 3
     },
@@ -283,7 +283,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "夫人她生产顺利吗？",
         "dic": 3
     },
@@ -292,7 +292,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanHappy",
+        "face": "happy",
         "string": "啊！是一个可爱的公子啊",
         "dic": 3
     },
@@ -310,7 +310,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "但是夫人脸色很不对劲",
         "dic": 3
     },
@@ -319,7 +319,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "春兰……我快不行了",
         "dic": 3
     },
@@ -328,7 +328,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "这孩子比我想象中的……充满活力呢……",
         "dic": 3
     },
@@ -337,7 +337,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "怎么会……夫人……",
         "dic": 3
     },
@@ -355,8 +355,8 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
-        "string": "辩……这是命运的引导，不是吗……",
+        "face": "smile",
+        "string": "辩……这就是命，不是吗……",
         "dic": 3
     },
     {
@@ -373,7 +373,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "我来亲自和她会面……所以……",
         "dic": 3
     },
@@ -391,7 +391,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengSad",
+        "face": "bitter",
         "string": "对不起……辩",
         "dic": 3
     },
@@ -409,7 +409,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "明玲阁下，夫人想见一下你",
         "dic": 3
     },
@@ -418,7 +418,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Default",
+        "face": "smile",
         "string": "诶？找我吗？",
         "dic": 3
     },
@@ -427,7 +427,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "斯理先生，虽然有点失礼，但是请你继续好好呆在这里",
         "dic": 3
     },
@@ -435,8 +435,8 @@
         "branch": "",
         "name": "斯理",
         "char": "Sri",
-        "con": "AL",
-        "face": "Sri2Default",
+        "con": "",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -454,7 +454,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "我只在你年幼的时候抱过你，十几年过去了……已经出落成漂亮的大姑娘了呢，明玲……",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Surprise",
+        "face": "surprise",
         "string": "这个声音！是元平姑姑！？",
         "dic": 3
     },
@@ -472,7 +472,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "咳咳……",
         "dic": 3
     },
@@ -480,8 +480,8 @@
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Sad",
+        "con": "CE",
+        "face": "uncomfortable",
         "string": "你身体好像很不好，这个婴儿是？",
         "dic": 3
     },
@@ -490,7 +490,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "我的儿子……应该是你的……表弟……",
         "dic": 3
     },
@@ -499,7 +499,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "名字我想好了，叫世清……好听吗？",
         "dic": 3
     },
@@ -508,7 +508,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Default",
+        "face": "smile",
         "string": "世清净明，好名字",
         "dic": 3
     },
@@ -517,7 +517,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Yell",
+        "face": "excited",
         "string": "不！元平姑姑，你应该要好好休息！你太虚弱了！",
         "dic": 3
     },
@@ -526,7 +526,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "……世清太淘气了，把我折腾得不行，我已经无力回天了，明玲……",
         "dic": 3
     },
@@ -535,7 +535,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "我最后想托付你一件事……",
         "dic": 3
     },
@@ -543,8 +543,8 @@
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Sad",
+        "con": "CE",
+        "face": "uncomfortable",
         "string": "……是要我代为帮你抚养世清吗？",
         "dic": 3
     },
@@ -553,7 +553,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengDefault",
+        "face": "smile",
         "string": "你还是那么聪明……风把你引导到我的身边……大概就是命运的指引……",
         "dic": 3
     },
@@ -562,7 +562,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "我放心把……世清寄托给同族的……你……",
         "dic": 3
     },
@@ -570,8 +570,8 @@
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Sad",
+        "con": "CE",
+        "face": "uncomfortable",
         "string": "放心交给我吧……元平姑姑……",
         "dic": 3
     },
@@ -580,7 +580,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "对不起……根本没有给你选择的余地……",
         "dic": 3
     },
@@ -588,8 +588,8 @@
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Sad",
+        "con": "CE",
+        "face": "uncomfortable",
         "string": "没有的事！让宫黄一族的血统继续延续下去，是我的责任……",
         "dic": 3
     },
@@ -598,7 +598,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPain",
+        "face": "sad",
         "string": "宫黄一族什么的不重要……我只希望世清可以快乐幸福地长大成人……",
         "dic": 3
     },
@@ -607,7 +607,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengPainCE",
+        "face": "sad",
         "string": "可惜……我……看不到那一天……了……",
         "dic": 3
     },
@@ -616,7 +616,7 @@
         "name": "元平",
         "char": "Yunpyeng",
         "con": "",
-        "face": "YunpyengSadS",
+        "face": "cryhappy",
         "string": "好想……看着你……长大啊……世清……",
         "dic": 3
     },
@@ -633,8 +633,8 @@
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "",
-        "face": "Meirei2Cry",
+        "con": "CE",
+        "face": "cry",
         "string": "元平姑姑！",
         "dic": 3
     },
@@ -643,7 +643,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanCry",
+        "face": "cry",
         "string": "……",
         "dic": 3
     },
@@ -661,7 +661,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Default",
+        "face": "smile",
         "string": "谢谢你这些年来对元平姑姑的陪伴，春兰小姐",
         "dic": 3
     },
@@ -670,7 +670,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "这是我的职责，请不要在意",
         "dic": 3
     },
@@ -679,7 +679,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "在那之后请代替元平夫人好好地对待公子",
         "dic": 3
     },
@@ -688,7 +688,7 @@
         "name": "明玲",
         "char": "Meirei",
         "con": "",
-        "face": "Meirei2Default",
+        "face": "smile",
         "string": "欢迎有空来神宫看望世清",
         "dic": 3
     },
@@ -697,7 +697,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "……我会的，再见了",
         "dic": 3
     },
@@ -715,7 +715,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "……阁下要杀掉我吗？",
         "dic": 3
     },
@@ -724,7 +724,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "把我杀掉的话，世界上知道世清公子是阁下儿子的人，就只剩下身为皇帝的阁下了",
         "dic": 3
     },
@@ -742,7 +742,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "阁下的敌人有多可怕我是不知道的，但是阁下做好了连自己亲生儿子也无法相认的觉悟，我这个侍女的性命就显得微不足道了",
         "dic": 3
     },
@@ -751,7 +751,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "我还是少女时期就跟着阁下和夫人了……想来也有十年了吧 ",
         "dic": 3
     },
@@ -760,7 +760,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "这十年来我过得很幸福，我已经没有什么遗憾，作为没有力量的普通人的我早就做好了随时随地接受自己命运的准备了……",
         "dic": 3
     },
@@ -769,7 +769,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanDefault",
+        "face": "serene",
         "string": "即使是有一点贪心，但是……我想请阁下在我死后好好对待我的妹妹……这是我唯一的心愿了",
         "dic": 3
     },
@@ -832,7 +832,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "阁下……",
         "dic": 3
     },
@@ -841,7 +841,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "春兰在此感谢阁下的不杀之恩",
         "dic": 3
     },
@@ -859,7 +859,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "谢谢你……阁下",
         "dic": 3
     },
@@ -868,7 +868,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "我和天上的夫人一起，祝福您可以获得成功",
         "dic": 3
     },
@@ -877,7 +877,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "con": "",
-        "face": "ChunlanSad",
+        "face": "sad",
         "string": "在此别过……",
         "dic": 3
     },
