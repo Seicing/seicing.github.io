@@ -632,9 +632,9 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "真没想到和你在这里再次相会啊",
         "dic": 3
     },
@@ -650,27 +650,27 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "……",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "我和你从来都不是敌人",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "刺杀你只是因为任务……现在已经没有互相残杀的必要了",
         "dic": 3
     },
@@ -686,9 +686,9 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "你才是……跟你战斗是这个世界上最愚蠢的抉择，某种意义上也是多亏了你才会有现在的我……",
         "dic": 3
     },
@@ -740,9 +740,9 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "你一直要找的“暗杀王”，就是珊郁姬多",
         "dic": 3
     },
@@ -758,27 +758,27 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "背叛普利陀毗先生后，珊郁姬多吸收了大量被男人抛弃的女人组建了一个暗杀组织",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "她作为组织的首领，自称“暗杀王”",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "暗杀王和结社互相利用，几年前的那个事件就是暗杀王接受结社的委托嫁祸于你",
         "dic": 3
     },
@@ -796,16 +796,16 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Uncomfortable",
+        "face": "uncomfortable",
         "string": "世清……",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "暗杀王座下有大量偏执狂一般的女杀手……她们都视所有男人为仇敌……盲目地憎恨一切",
         "dic": 3
     },
@@ -830,18 +830,18 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "……发生了很多事，现在她是暗杀王的亲卫队长，暗杀王本身实力强劲诡计多端，被哈因保护着的她更是难以接近了",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "如果你加入我们的行动，普利陀毗先生的计划的成功率就高很多了",
         "dic": 3
     },
@@ -868,7 +868,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "俱苏摩补罗之冠……终于回到我手里了……",
         "dic": 3
     },
@@ -877,7 +877,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "真的是……谢谢你",
         "dic": 3
     },
@@ -893,9 +893,9 @@
     {
         "branch": "",
         "name": "阿玛兰达",
-        "char": "",
+        "char": "AzinDeathbringer",
         "con": "",
-        "face": "AmarandaDepressed",
+        "face": "depress",
         "string": "然后是第二个委托，向他们解释一下吧",
         "dic": 3
     },
@@ -903,8 +903,8 @@
         "branch": "",
         "name": "普利陀毗",
         "char": "Prithvi",
-        "con": "SP",
-        "face": "Prithvi2CloseEye",
+        "con": "SPCE",
+        "face": "serene",
         "string": "嗯",
         "dic": 3
     },
@@ -913,7 +913,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "珊郁姬多不会在任何劣势环境中战斗，但是有一个例外，那就是她唯一的弱点……感情",
         "dic": 3
     },
@@ -922,7 +922,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "再次戴上俱苏摩补罗之冠的我在她面前出现，她会因为我的挑衅而失去理性",
         "dic": 3
     },
@@ -931,7 +931,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "失去判断力的刺客……等待她的只有死路一条了",
         "dic": 3
     },
@@ -957,8 +957,8 @@
         "branch": "",
         "name": "普利陀毗",
         "char": "Prithvi",
-        "con": "SP",
-        "face": "Prithvi2CloseEye",
+        "con": "SPCE",
+        "face": "serene",
         "string": "如果你们能来帮助我成功的可能性就更高了",
         "dic": 3
     },
@@ -976,7 +976,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "夏修伦……",
         "dic": 3
     },
@@ -1030,7 +1030,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "玛玛室利……？哦，是我们室利刹陀罗语的“舅父”啊",
         "dic": 3
     },
@@ -1066,7 +1066,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "走吧，一切结束后，再考虑其他事情吧",
         "dic": 3
     },
@@ -1075,7 +1075,7 @@
         "name": "普利陀毗",
         "char": "Prithvi",
         "con": "SP",
-        "face": "Prithvi2Default",
+        "face": "serene",
         "string": "珊郁姬多……是时候清算了……",
         "dic": 3
     },

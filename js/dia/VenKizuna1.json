@@ -68,7 +68,7 @@
         "char": "Seigent",
         "con": "",
         "face": "depress",
-        "string": "教皇御琉文患了奇怪的疾病",
+        "string": "教皇患了奇怪的疾病",
         "dic": 3
     },
     {
@@ -265,7 +265,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "世清……你是怎么知道我生病了的",
         "dic": 3
     },
@@ -300,8 +300,8 @@
         "branch": "",
         "name": "文",
         "char": "VenHierophant",
-        "con": "SP",
-        "face": "VenDepressedCE",
+        "con": "SPCE",
+        "face": "endure",
         "string": "你就是世清的妻子吧……",
         "dic": 3
     },
@@ -310,7 +310,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "多多指教……",
         "dic": 3
     },
@@ -328,7 +328,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenWrySmile",
+        "face": "wry",
         "string": "哈哈……你在担心我吗？",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "我有个愿望……可以答应我吗？",
         "dic": 3
     },
@@ -364,7 +364,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "这几天我都在生与死之间挣扎……",
         "dic": 3
     },
@@ -373,7 +373,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "每次我想放弃的时候闭上眼睛就能想到和你再会……然后发现自己继续在痛苦中挣扎",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "握着我的手……给我勇气……可以吗",
         "dic": 3
     },
@@ -427,7 +427,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDepressed",
+        "face": "endure",
         "string": "谢谢……",
         "dic": 3
     },
@@ -444,8 +444,8 @@
         "branch": "",
         "name": "文",
         "char": "VenHierophant",
-        "con": "SP",
-        "face": "VenCloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "呜……",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "抱歉，你一晚没睡吗？",
         "dic": 3
     },
@@ -471,8 +471,8 @@
         "branch": "",
         "name": "文",
         "char": "VenHierophant",
-        "con": "SP",
-        "face": "VenCloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "世清……",
         "dic": 3
     },
@@ -517,7 +517,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "啊抱歉",
         "dic": 3
     },
@@ -535,7 +535,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "我刚刚只是太兴奋了，我现在感觉好多了",
         "dic": 3
     },
@@ -553,7 +553,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "可能这就是心病吧",
         "dic": 3
     },
@@ -562,7 +562,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "心病还需心药医，你就是最好的特效药",
         "dic": 3
     },
@@ -571,7 +571,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenHappy",
+        "face": "happy",
         "string": "哈哈哈",
         "dic": 3
     },
@@ -589,7 +589,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "我已经痊愈了",
         "dic": 3
     },
@@ -598,7 +598,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenWrySmile",
+        "face": "wry",
         "string": "我果然……还是离不开你啊",
         "dic": 3
     },
@@ -634,7 +634,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "教皇的压力很大的，世清是我小时候开始就一直诉苦的对象",
         "dic": 3
     },
@@ -643,7 +643,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "在外人面前我不会流露出半点弱势，你是他妻子，也就是自己人",
         "dic": 3
     },
@@ -661,7 +661,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "皇后，你叫余对吧",
         "dic": 3
     },
@@ -670,7 +670,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenSinisterSmile",
+        "face": "sinister",
         "string": "无论是私人还是政治方面，我都想和你深入认识一下呢",
         "dic": 3
     },
@@ -688,7 +688,7 @@
         "name": "文",
         "char": "VenHierophant",
         "con": "SP",
-        "face": "VenDefault",
+        "face": "smile",
         "string": "所以世清就先回避一下可以吗？",
         "dic": 3
     },
@@ -1039,7 +1039,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2Happy",
+        "face": "happy",
         "string": "嗯，我很期待，以后和你们一起战斗的日子哦",
         "dic": 3
     }
