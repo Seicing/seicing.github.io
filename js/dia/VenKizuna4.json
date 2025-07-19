@@ -67,7 +67,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Happy",
+        "face": "happy",
         "string": "你还会弹琴啊",
         "dic": 3
     },
@@ -76,7 +76,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2SinisterSmile",
+        "face": "sinister",
         "string": "这家伙在以前可是远近闻名的才子",
         "dic": 3
     },
@@ -86,7 +86,7 @@
         "char": "SeicingEmpireJade",
         "con": "ATSPSW",
         "face": "serene",
-        "string": "别编造不存在的事实，平时的兴趣而已",
+        "string": "别编造不存在的东西，平时的兴趣而已",
         "dic": 1
     },
     {
@@ -94,7 +94,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "仿佛可以感受到琵琶里面的精灵在哭泣",
         "dic": 1
     },
@@ -103,7 +103,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "任何一个精美的手工制品背后都是手艺人的呕心沥血，而作为乐器被制作出来的使命就是让人演奏出美妙的乐曲",
         "dic": 1
     },
@@ -111,8 +111,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "琵琶上面有写着“生日快乐”的彩带……这也许是某个父母送给孩子的礼物，然而，孩子因为各种各样的原因践踏了父母的心意",
         "dic": 1
     },
@@ -120,8 +120,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "真是太可惜了",
         "dic": 1
     },
@@ -130,7 +130,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "你这样一说，我也感觉到一股难过",
         "dic": 3
     },
@@ -139,7 +139,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "你还是个多愁善感的人啊",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "这是“善良”哦",
         "dic": 3
     },
@@ -157,7 +157,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "世清只是不懂得如何表达自己的内心，让人感觉到很冷酷，难以亲近",
         "dic": 3
     },
@@ -166,7 +166,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2Default",
+        "face": "smile",
         "string": "但是世清是我看到过的最善良的人之一，能有同理心的人可不多",
         "dic": 3
     },
@@ -193,7 +193,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2SinisterSmile",
+        "face": "sinister",
         "string": "那是当然的",
         "dic": 3
     },
@@ -211,7 +211,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "如果大家都可以站在对方的角度看待事情也不会有那么多误会和仇恨了",
         "dic": 3
     },
@@ -220,7 +220,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "抛弃了这个琵琶的主人也许会有一天终将理解父母的爱，并对自己当日的行为感到懊悔",
         "dic": 3
     },
@@ -229,7 +229,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "可是大家都对自己内心感到的东西难以启齿，等到已经没有机会说出来的时候，一切都晚了",
         "dic": 3
     },
@@ -238,7 +238,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "是的啊，连机会都不给我啊……",
         "dic": 1
     },
@@ -247,7 +247,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "世清……",
         "dic": 3
     },
@@ -256,7 +256,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "在我的梦中，总是出现一个场景，一个模糊的女性身影把刚刚出生的我抱在怀里，一面吟唱这首曲子",
         "dic": 1
     },
@@ -265,7 +265,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "很多人会觉得父母抚养生下来的自己是理所当然的事情，但是我从懂事起就不知道父母是何物",
         "dic": 1
     },
@@ -274,7 +274,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "所以，在事物和事物的羁绊建立之前就被无情地中断掉的感觉我最能清楚",
         "dic": 1
     },
@@ -301,7 +301,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "嗯，我不忍心看着这孩子还没有经历自己的旅途就走向腐朽",
         "dic": 1
     },
@@ -318,8 +318,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "你们不介意的话",
         "dic": 1
     },
@@ -328,7 +328,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "世清",
         "dic": 3
     },
@@ -337,7 +337,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2WrySmile",
+        "face": "wry",
         "string": "我不相信有什么死物会有什么精灵之类的存在，但是我觉得这个琵琶会因为你的举动而感到欣慰",
         "dic": 3
     },
@@ -354,8 +354,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "共情……吗，真是羡慕你可以发自内心地对他人的遭遇产生同理心",
         "dic": 3
     },
@@ -363,8 +363,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "……别在意我说了啥，世清，好好坚持你那善良的本心，这是你身边所有人的福分",
         "dic": 3
     },
@@ -372,8 +372,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "还有，什么时候你的共情可以更进一步就更好了",
         "dic": 3
     },

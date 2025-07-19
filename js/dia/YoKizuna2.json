@@ -31,7 +31,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "你们这样成何体统",
         "dic": 1
     },
@@ -40,7 +40,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "宫里要有宫里的规矩，不干活在这里传播流言蜚语",
         "dic": 1
     },
@@ -49,7 +49,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "再继续玩忽职守，对皇后不敬的话，我就把你们丢到世行那去",
         "dic": 1
     },
@@ -76,7 +76,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -94,7 +94,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "我才是要抱歉的……是我的错……",
         "dic": 3
     },
@@ -103,7 +103,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "在这里，我应该遵循这里的规则",
         "dic": 3
     },
@@ -112,7 +112,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "但是所谓的“礼仪”真的让人厌烦，为什么西景人要讲求这些无聊的东西？",
         "dic": 3
     },
@@ -121,7 +121,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "我也讨厌",
         "dic": 1
     },
@@ -130,7 +130,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "不论是你，是我，还是更多的其他人，都讨厌",
         "dic": 1
     },
@@ -139,7 +139,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "那为什么这种东西还要继续存在啊？",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "听不懂",
         "dic": 3
     },
@@ -211,7 +211,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "这听着有点像我们蚩幽武士要对长老们尊敬，而普通人要对蚩幽武士们尊敬，但私底下彼此可以作为好友不分你我",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Happy",
+        "face": "happy",
         "string": "即使看上去违背本心，但是认真想了下，必要的距离反而可以让大家的关系更加稳定呢",
         "dic": 3
     },
@@ -372,8 +372,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5DepressedRF",
+        "con": "RF",
+        "face": "depress",
         "string": "我在你心里的印象到底多糟糕啊",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Happy",
+        "face": "happy",
         "string": "世清",
         "dic": 3
     },

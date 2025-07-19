@@ -103,7 +103,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "实际上是在一旁盯着我们不要陷入危险之中，我们还以为误会战斗过",
         "dic": 1
     },
@@ -121,7 +121,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "说起来，从一开始就能感受到第五个人的气息啊",
         "dic": 1
     },
@@ -427,7 +427,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "这个名字我也有印象，是那个二十年前几乎成功统一室利刹陀罗的国王！？",
         "dic": 3
     },
@@ -490,7 +490,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "所以室利刹陀罗现在才……",
         "dic": 1
     },
@@ -787,7 +787,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "终于……",
         "dic": 1
     },
@@ -1111,7 +1111,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "世清",
         "dic": 3
     },
@@ -1120,7 +1120,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "普利陀毗……就是因为无法和他的爱人互相理解，从而走向了悲剧",
         "dic": 3
     },
@@ -1146,8 +1146,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingPeepRF",
+        "con": "ATSPRF",
+        "face": "side",
         "string": "……谢谢你",
         "dic": 1
     },
@@ -1156,7 +1156,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "不过要记得不要逞强……你受伤的话我会很难受的",
         "dic": 1
     },

@@ -112,7 +112,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "(审判的时刻到了呢)",
         "dic": 1
     },
@@ -130,7 +130,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "是",
         "dic": 3
     },
@@ -157,7 +157,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Bitter",
+        "face": "bitter",
         "string": "真的吗，太好了",
         "dic": 3
     },
@@ -166,7 +166,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Bitter",
+        "face": "bitter",
         "string": "世清，看，是95分啊",
         "dic": 3
     },
@@ -598,7 +598,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "音译词？",
         "dic": 3
     },
@@ -894,8 +894,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5SinisterSmileRF",
+        "con": "RF",
+        "face": "sinister",
         "string": "多夸一点我吧",
         "dic": 3
     },
@@ -940,7 +940,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Bitter",
+        "face": "bitter",
         "string": "我会继续好好地努力的",
         "dic": 3
     },

@@ -76,7 +76,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "莫非……",
         "dic": 3
     },
@@ -112,7 +112,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Happy",
+        "face": "happy",
         "string": "恭喜",
         "dic": 3
     },
@@ -121,7 +121,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "……",
         "dic": 1
     },
@@ -130,7 +130,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "明玲姐，没问题吧，你已经四十多了",
         "dic": 1
     },
@@ -427,7 +427,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "真好啊……真好啊……",
         "dic": 3
     },
@@ -454,7 +454,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "没有，他对我很好",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "我是感到了自责",
         "dic": 3
     },
@@ -472,7 +472,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "和我的名字一样，我从出生那一天起我就是多余的，对于族人们来说，对于世清也是",
         "dic": 3
     },
@@ -490,7 +490,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "我和世清结婚几年了，度过了无数个日日夜夜",
         "dic": 3
     },
@@ -625,7 +625,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "谢谢你……明玲姐",
         "dic": 3
     },
@@ -634,7 +634,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "说起来，怀孕的感觉是如何的呢？",
         "dic": 3
     },
@@ -733,7 +733,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "怎么了……！",
         "dic": 3
     },
@@ -751,7 +751,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "喂！世清！",
         "dic": 3
     },
@@ -804,8 +804,8 @@
         "branch": "A2",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "抱歉",
         "dic": 1
     },
@@ -813,8 +813,8 @@
         "branch": "A2",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "余……",
         "dic": 1
     },
@@ -822,8 +822,8 @@
         "branch": "A2",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "我都听到了",
         "dic": 1
     },
@@ -832,7 +832,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -850,7 +850,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "但是……",
         "dic": 3
     },

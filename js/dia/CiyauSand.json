@@ -22,7 +22,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "还要打吗？",
         "dic": 1
     },
@@ -31,7 +31,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "为什么要拼到这个程度",
         "dic": 1
     },
@@ -94,7 +94,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "……",
         "dic": 1
     },
@@ -328,7 +328,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "在彻底变成干尸之前，放下仇恨互相帮助，一起活着逃离这里，以后再做打算如何？",
         "dic": 1
     },
@@ -553,7 +553,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "一口气吸多一点吧，刚刚可能是仅仅是吸取了足够回复意识的量",
         "dic": 1
     },
@@ -598,7 +598,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "不过在这两年去了很多地方之后，身体的耐性确实明显变强了不少",
         "dic": 1
     },
@@ -670,7 +670,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "我有一种不祥的预感，希望是我想多了",
         "dic": 1
     },
@@ -760,7 +760,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "库尔哈克可能不是什么天灾……",
         "dic": 1
     },
@@ -778,7 +778,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "有一点很奇怪",
         "dic": 1
     },
@@ -787,7 +787,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "为什么库尔哈克不追到地底击杀我们呢？既然它似乎是可以感知到我们的气息",
         "dic": 1
     },
@@ -1093,7 +1093,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "别发愣！它攻过来了！",
         "dic": 1
     },
@@ -1192,7 +1192,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "……不要怕",
         "dic": 1
     },
@@ -1246,7 +1246,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "(没办法，说到底还只是一个二十岁不到的孩子，对她来说，压力太大了)",
         "dic": 1
     },
@@ -1282,7 +1282,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "嗯……",
         "dic": 1
     },
@@ -1317,8 +1317,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "能活着就好，不要对自己如此追责",
         "dic": 1
     },
@@ -1614,8 +1614,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "……都是被逼出来的",
         "dic": 1
     },
@@ -1659,8 +1659,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingSurpriseRF",
+        "con": "ATSPRF",
+        "face": "surprise",
         "string": "你……",
         "dic": 1
     },
@@ -1686,8 +1686,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingPeepRF",
+        "con": "ATSPRF",
+        "face": "side",
         "string": "……",
         "dic": 1
     },
@@ -2109,8 +2109,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "我没事…… ",
         "dic": 1
     },
@@ -2118,8 +2118,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "只是在一切都结束后难以抗拒的脱力感 ",
         "dic": 1
     },
@@ -2343,8 +2343,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "我只是从书上学到的……蚩幽人……求婚不是亲手为对方献上猎物的战利品吗？",
         "dic": 1
     },
@@ -2352,8 +2352,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "难道哪里的细节出了问题吗？",
         "dic": 1
     },
@@ -2388,8 +2388,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "拿走了……就是说？答应了？",
         "dic": 1
     },
@@ -2551,7 +2551,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingPeep",
+        "face": "side",
         "string": "有动静……看起来得救了呢",
         "dic": 1
     },
@@ -2713,7 +2713,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "对不起，斯理，让你担心了",
         "dic": 1
     },
@@ -2722,7 +2722,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "事情解决了，战争大概也不需要继续下去了",
         "dic": 1
     },
@@ -2992,7 +2992,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "但是也可以理解，毕竟你的家人们……",
         "dic": 1
     },

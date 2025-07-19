@@ -111,8 +111,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "……",
         "dic": 1
     },
@@ -237,8 +237,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "(饶了我吧……)",
         "dic": 1
     },
@@ -282,8 +282,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "(第一次见到活蹦乱跳的文会如此萎靡)",
         "dic": 1
     },
@@ -751,7 +751,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2Default",
+        "face": "smile",
         "string": "确实呢，如何，配上衣服的感觉",
         "dic": 3
     },
@@ -778,7 +778,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2Default",
+        "face": "smile",
         "string": "真心急啊，你再早点进来甚至还可以看到我的裸体哦",
         "dic": 3
     },
@@ -787,7 +787,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2Default",
+        "face": "smile",
         "string": "这样更可爱不是吗？我向小余要了很多建议呢",
         "dic": 3
     },
@@ -841,7 +841,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2SinisterSmile",
+        "face": "sinister",
         "string": "是啊是啊我也不知道从大漠边境来的小余竟然对打扮这么有研究",
         "dic": 3
     },
@@ -850,7 +850,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2SinisterSmile",
+        "face": "sinister",
         "string": "真是人不可貌相啊",
         "dic": 3
     },
@@ -876,8 +876,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "既然世清你喜欢我就以这样的造型跟着你行动了",
         "dic": 3
     },
@@ -895,7 +895,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2Default",
+        "face": "smile",
         "string": "嗯，就是这样",
         "dic": 3
     },
@@ -904,7 +904,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "不行，太危险了",
         "dic": 1
     },
@@ -913,7 +913,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "教皇领维持中立态度会更好吧，他们在各地的渗透比你想象的还要高",
         "dic": 1
     },
@@ -930,8 +930,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "嗯嗯",
         "dic": 3
     },
@@ -948,8 +948,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "所以你就尽管放心吧，我也是有自己的打算的",
         "dic": 3
     },
@@ -957,8 +957,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "教皇和皇帝一样，也是手里的刀足够锐利才能服众啊，我不会拖累你的",
         "dic": 3
     },
@@ -966,8 +966,8 @@
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
-        "face": "Ven2CloseEye",
+        "con": "SPCE",
+        "face": "smile",
         "string": "你救了我一命，我也要报答一下你不是吗？",
         "dic": 3
     },
@@ -976,7 +976,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "但是",
         "dic": 1
     },
@@ -985,7 +985,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2SinisterSmile",
+        "face": "sinister",
         "string": "小余已经答应了",
         "dic": 3
     },
@@ -994,7 +994,7 @@
         "name": "文",
         "char": "VenCelestial",
         "con": "SP",
-        "face": "Ven2SinisterSmile",
+        "face": "sinister",
         "string": "所以，不用担心我们会吵起来",
         "dic": 3
     },
@@ -1020,8 +1020,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "再回拒就是不礼貌了",
         "dic": 1
     },

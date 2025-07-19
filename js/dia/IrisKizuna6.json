@@ -58,7 +58,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "真是奇怪的姐姐",
         "dic": 3
     },
@@ -75,8 +75,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShySmile",
+        "con": "RF",
+        "face": "sinister",
         "string": "真会说话啊",
         "dic": 3
     },
@@ -111,8 +111,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DefaultCE",
+        "con": "CE",
+        "face": "smile",
         "string": "呼，光顾着闲谈，忘了我们已经累得要死了呢",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "啊，抱歉，饭做好了吗？",
         "dic": 3
     },
@@ -166,7 +166,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "可以在这里呆一会陪我聊聊吗？",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "和你一起冒险是一件快乐的事情，但是，现在的我却很难享受到这份快乐",
         "dic": 3
     },
@@ -193,7 +193,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "抱歉",
         "dic": 1
     },
@@ -202,7 +202,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "该抱歉的人是我……总是把话题引导向沉重",
         "dic": 3
     },
@@ -238,7 +238,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "没事啦，我都懂的，我还是得感谢你",
         "dic": 3
     },
@@ -247,7 +247,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "谢谢你，我心情好多了",
         "dic": 3
     },
@@ -292,7 +292,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "是刚刚那个姐姐",
         "dic": 3
     },
@@ -301,7 +301,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "你为什么出现在这里！",
         "dic": 3
     },
@@ -373,7 +373,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2PanicRF",
+        "face": "fear",
         "string": "欸？欸！？",
         "dic": 3
     },
@@ -400,7 +400,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "(这位大姐怎么看上去脑子好像不太灵光啊)",
         "dic": 3
     },
@@ -436,7 +436,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "诶？啊啊，我叫伊丽丝，多多指教",
         "dic": 3
     },
@@ -454,7 +454,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2PanicRF",
+        "face": "fear",
         "string": "……？",
         "dic": 3
     },
@@ -526,7 +526,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "骑士？难道说是伊安哥哥？",
         "dic": 3
     },
@@ -544,7 +544,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "你是在……什么时候遇到他的",
         "dic": 3
     },
@@ -616,7 +616,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "和阿拉贡说的一样……你见证了伊安哥哥变成吸血鬼的过程吗？",
         "dic": 3
     },
@@ -642,8 +642,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -687,8 +687,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "嗯……",
         "dic": 3
     },
@@ -696,8 +696,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "我用这双手亲手解放了他，我哥哥直到最后一刻也没有放弃过他的荣誉",
         "dic": 3
     },
@@ -751,7 +751,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "是吗……？",
         "dic": 3
     },
@@ -778,7 +778,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "怎么了",
         "dic": 3
     },
@@ -796,7 +796,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "啊，这个啊，没所谓的，我不会介意",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "什么声音！",
         "dic": 1
     },
@@ -832,7 +832,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "余，起来",
         "dic": 1
     },
@@ -922,7 +922,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "是今早的那个大姐，过来救了我，然后急忙跑掉帮助她的伙伴了",
         "dic": 3
     },
@@ -949,7 +949,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "！",
         "dic": 3
     },
@@ -958,7 +958,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "难道说欧洛克为了狙击那个姐姐所在的队伍，对小镇发动了无差别攻击断绝他们的去路！？",
         "dic": 3
     },
@@ -976,7 +976,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "我们走！世清！余！",
         "dic": 3
     },
@@ -1021,7 +1021,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "欧洛克！！",
         "dic": 3
     },
@@ -1039,7 +1039,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "我是伊拉修莱德的大公索菲亚，是因为你而变成吸血鬼悲惨死去的骑士伊拉修莱德大公亚历山大的妹妹！！",
         "dic": 3
     },
@@ -1102,7 +1102,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "不要跑！",
         "dic": 3
     },
@@ -1120,7 +1120,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "……！",
         "dic": 3
     },
@@ -1228,7 +1228,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -1237,7 +1237,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "哥哥，这一天终于到来了，我今天这就为你报仇，请你安息吧",
         "dic": 3
     },
@@ -1273,7 +1273,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "可恶！去死吧！",
         "dic": 3
     },
@@ -1354,7 +1354,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "嗯……我不会再大意了",
         "dic": 3
     },
@@ -1390,7 +1390,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "这是觉醒吗？",
         "dic": 3
     },
@@ -1399,7 +1399,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "小心点，他现在给人的压迫感和之前完全不同了",
         "dic": 3
     },
@@ -1462,7 +1462,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "欸！？",
         "dic": 3
     },
@@ -1534,7 +1534,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "！",
         "dic": 3
     },
@@ -1543,7 +1543,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Angry",
+        "face": "angry",
         "string": "伊安哥哥！请保佑我！",
         "dic": 3
     },
@@ -1606,7 +1606,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "大姐姐！",
         "dic": 3
     },
@@ -1624,7 +1624,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2PanicRF",
+        "face": "fear",
         "string": "欸！？",
         "dic": 3
     },
@@ -1696,7 +1696,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "不需要更多休息吗？你好像走得很勉强啊",
         "dic": 3
     },
@@ -1722,8 +1722,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "……我们还会再见面吗？",
         "dic": 3
     },
@@ -1767,8 +1767,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "来也匆匆去也匆匆，连你现在用的名字我还没来得及问呢",
         "dic": 3
     },
@@ -1777,7 +1777,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "……米莉安姑姑",
         "dic": 3
     },
@@ -1804,7 +1804,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "我……我没事",
         "dic": 3
     },
@@ -1813,7 +1813,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "这是绷紧的神经在一切都结束后伴随而来的脱力感",
         "dic": 3
     },
@@ -1822,7 +1822,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "我很高兴，因为……一切都结束了……",
         "dic": 3
     },
@@ -1849,7 +1849,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "谢谢你们，余……世清……",
         "dic": 3
     },
@@ -1858,7 +1858,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "因为你们，我以后终于可以放下一切，为了自己而活下去了",
         "dic": 3
     },
@@ -1866,8 +1866,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DefaultCE",
+        "con": "CE",
+        "face": "smile",
         "string": "没有你们，我是不能走到今天的……",
         "dic": 3
     },
@@ -1875,8 +1875,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "虽然，欧洛克确实死了，但是我感觉一切还没结束……",
         "dic": 3
     },
@@ -1947,8 +1947,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DefaultCE",
+        "con": "CE",
+        "face": "smile",
         "string": "(伊安哥哥……请安息吧)",
         "dic": 3
     },
@@ -1956,8 +1956,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShyCE",
+        "con": "RFCE",
+        "face": "bitter",
         "string": "(我已经为你报仇雪恨，同时找到了自己真正可以把整个身心信赖和托付的伙伴)",
         "dic": 3
     },
@@ -1965,8 +1965,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DefaultCE",
+        "con": "CE",
+        "face": "smile",
         "string": "(在未来的日子里，我会光荣而骄傲地度过我接下来的人生)",
         "dic": 3
     },
@@ -1975,7 +1975,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "(请你好好在天上看着我吧，伊安哥哥)",
         "dic": 3
     }

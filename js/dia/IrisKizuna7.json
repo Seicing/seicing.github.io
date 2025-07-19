@@ -13,7 +13,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "看起来结束了呢",
         "dic": 3
     },
@@ -22,7 +22,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "你怎么了，刚刚的战斗好像失误很多，这可不像你",
         "dic": 3
     },
@@ -49,7 +49,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "这样啊，近视让你的生活很麻烦吧",
         "dic": 3
     },
@@ -67,7 +67,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "眼镜是知识的象征呢，你小的时候很用功读书吗？",
         "dic": 3
     },
@@ -94,7 +94,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "原来如此，和我们家族的紫色眼影类似",
         "dic": 3
     },
@@ -103,7 +103,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "多亏了它，我老是失眠",
         "dic": 3
     },
@@ -112,7 +112,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "即使是半只脚踏入神的领域，作为凡人的我们始终都要付出代价啊",
         "dic": 3
     },
@@ -130,7 +130,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "世清",
         "dic": 3
     },
@@ -148,7 +148,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "近视到底是什么感觉呢，真的很好奇",
         "dic": 3
     },
@@ -157,7 +157,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "现在站在这里，可以看清我的脸吗？",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "到底深到什么程度呢？",
         "dic": 3
     },
@@ -193,7 +193,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "到这里还是看不清吗？",
         "dic": 3
     },
@@ -219,8 +219,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShySmile",
+        "con": "RF",
+        "face": "sinister",
         "string": "现在呢？",
         "dic": 3
     },
@@ -264,8 +264,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "对不起，让我任性一回吧",
         "dic": 3
     },
@@ -273,8 +273,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "这只是一场梦……梦醒了，现在是什么都不记得的时候了",
         "dic": 3
     },
@@ -291,8 +291,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "看不见的话，需要我引路吗？",
         "dic": 3
     },
@@ -336,8 +336,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "不要这么说，这样就足够了，我们走吧",
         "dic": 3
     },

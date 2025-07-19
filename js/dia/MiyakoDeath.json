@@ -67,7 +67,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "你……",
         "dic": 1
     },
@@ -76,7 +76,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "和歌山呢……？",
         "dic": 1
     },
@@ -274,7 +274,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "你这家伙……",
         "dic": 1
     },
@@ -418,7 +418,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "……",
         "dic": 1
     },
@@ -426,8 +426,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "真是悲哀的生命啊……",
         "dic": 1
     },
@@ -444,8 +444,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "宫黄，你对和歌山的爱使得你给了我不要让自己遗憾的机会",
         "dic": 1
     },
@@ -453,8 +453,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "如果接下来我无法从世行的手中守护好余，那就完全对不起你给我的这条命了，我不想死后会被你这混账嘲笑",
         "dic": 1
     },
@@ -463,7 +463,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "无论变得多危险，我都要把她找出来并保护好",
         "dic": 1
     },
@@ -472,7 +472,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "你就好好地在天上看到这一切吧……",
         "dic": 1
     }

@@ -22,7 +22,7 @@
         "name": "艾特拉塔市民",
         "char": "AltrataCommonFemale",
         "con": "",
-        "face": "AltrataCommonFemale",
+        "face": "smile",
         "string": "出大事了！",
         "dic": 3
     },
@@ -31,7 +31,7 @@
         "name": "艾特拉塔市民",
         "char": "AltrataCommonFemale",
         "con": "",
-        "face": "AltrataCommonFemale",
+        "face": "smile",
         "string": "宿句人在正面战场上击溃了伊拉修莱德军队",
         "dic": 3
     },
@@ -40,7 +40,7 @@
         "name": "艾特拉塔市民",
         "char": "AltrataCommonMale",
         "con": "",
-        "face": "AltrataCommonMale",
+        "face": "serene",
         "string": "什么！？是那个艾特拉塔之盾吗？",
         "dic": 3
     },
@@ -49,7 +49,7 @@
         "name": "艾特拉塔市民",
         "char": "AltrataCommonFemale",
         "con": "",
-        "face": "AltrataCommonFemale",
+        "face": "smile",
         "string": "参与战斗的宿句人漫山遍野，没有支援的伊拉修莱德就算多强也会沦陷吧",
         "dic": 3
     },
@@ -58,7 +58,7 @@
         "name": "艾特拉塔市民",
         "char": "AltrataCommonFemale",
         "con": "",
-        "face": "AltrataCommonFemale",
+        "face": "smile",
         "string": "伊拉修莱德的国王被俘虏了，现在伊拉修莱德一片混乱",
         "dic": 3
     },
@@ -67,7 +67,7 @@
         "name": "艾特拉塔市民",
         "char": "AltrataCommonMale",
         "con": "",
-        "face": "AltrataCommonMale",
+        "face": "serene",
         "string": "战火会很快蔓延到艾特拉塔全境吧，那些贵族们到底在干什么？",
         "dic": 3
     },
@@ -85,7 +85,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Surprise",
+        "face": "surprise",
         "string": "伊拉修莱德被……",
         "dic": 3
     },
@@ -94,7 +94,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Sad",
+        "face": "sad",
         "string": "伊丽丝不会有事吧",
         "dic": 3
     },
@@ -157,7 +157,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Serenity",
+        "face": "serene",
         "string": "世清，余，谢谢你们关心我",
         "dic": 3
     },
@@ -166,7 +166,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Serenity",
+        "face": "serene",
         "string": "这是我作为伊拉修莱德继承者的真正考验",
         "dic": 3
     },
@@ -175,7 +175,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "现在的伊拉修莱德到处都是战场，你们不要过来……这件事上我不想把你们牵扯进来",
         "dic": 3
     },
@@ -184,7 +184,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "一切结束之后，我们继续像以前那样到处冒险吧",
         "dic": 3
     },
@@ -201,8 +201,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "这个笨蛋……",
         "dic": 1
     },
@@ -292,7 +292,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "世清……余……？",
         "dic": 3
     },
@@ -301,7 +301,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "你们还是来了啊",
         "dic": 3
     },
@@ -319,7 +319,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2PanicRF",
+        "face": "fear",
         "string": "不是啊，这次我真的不想你们牵涉进来",
         "dic": 3
     },
@@ -328,7 +328,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingAngry",
+        "face": "extra2",
         "string": "把我当成外人吗？",
         "dic": 1
     },
@@ -337,7 +337,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "……",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "对……对不起",
         "dic": 3
     },
@@ -355,7 +355,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Cry",
+        "face": "crysurprise",
         "string": "我……我不知道该怎么办……我好无助……",
         "dic": 3
     },
@@ -364,7 +364,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Cry",
+        "face": "crysurprise",
         "string": "爸爸被俘……贵族们乱作一团完全不把我当一回事……宿句人在屠杀无辜的百姓……",
         "dic": 3
     },
@@ -373,7 +373,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Cry",
+        "face": "crysurprise",
         "string": "我不想你们也跟着我一起干无用功甚至白白送死",
         "dic": 3
     },
@@ -382,7 +382,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "伊丽……",
         "dic": 1
     },
@@ -400,7 +400,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "诶？",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "……",
         "dic": 3
     },
@@ -471,8 +471,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "谢谢你们……",
         "dic": 3
     },
@@ -480,8 +480,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "自从战争爆发后我就一直笼罩在绝望之中，谢谢你们让我感受到了久违的希望",
         "dic": 3
     },
@@ -525,8 +525,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCompassionNO",
+        "con": "ATSPCE",
+        "face": "sad",
         "string": "也是啊……",
         "dic": 1
     },
@@ -535,7 +535,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2PanicRF",
+        "face": "fear",
         "string": "我好像听到了什么不得了的东西啊",
         "dic": 3
     },
@@ -544,7 +544,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "伊拉修莱德人的事情由伊拉修莱德人自己出力，接下来就等我先好好地想想该怎么办吧",
         "dic": 3
     },
@@ -571,7 +571,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2SinisterSmile",
+        "face": "sinister",
         "string": "(点头)",
         "dic": 3
     },
@@ -634,7 +634,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "我们回来了",
         "dic": 3
     },
@@ -643,7 +643,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "去这么久干啥了？",
         "dic": 1
     },
@@ -751,7 +751,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "宿句人一直对艾特拉塔大陆虎视眈眈……即使如此，这次的进攻规模也大得有点异常了",
         "dic": 3
     },
@@ -760,7 +760,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "仿佛是完全不顾及其他状况的孤注一掷一样",
         "dic": 3
     },
@@ -796,7 +796,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "艾特拉塔本土陷入内乱，如果“某个”因素不被影响的话，他们就可以趁机吞掉伊拉修莱德，转移掉龙脉带来的影响",
         "dic": 3
     },
@@ -814,7 +814,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Serenity",
+        "face": "serene",
         "string": "嗯",
         "dic": 3
     },
@@ -823,7 +823,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Serenity",
+        "face": "serene",
         "string": "西景东部的宿句部落充当了蚩幽和卡哈扎塔本土的缓冲区，如果蚩幽人在这个时刻加大自己在东西景的影响力……对于卡哈扎塔来说打击是非常巨大的",
         "dic": 3
     },
@@ -850,7 +850,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "宿句人行动越快，成功的几率就越大，但伴随着他们高收益的行动是超高的风险",
         "dic": 3
     },
@@ -859,7 +859,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "宿句人的联盟非常的脆弱，一有一些风吹草动就会产生分歧，然后陷入混乱",
         "dic": 3
     },
@@ -894,8 +894,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCE",
+        "con": "CE",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -904,7 +904,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Default",
+        "face": "smile",
         "string": "是的，还需要一个契机",
         "dic": 3
     },
@@ -922,7 +922,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Peep",
+        "face": "side",
         "string": "伊拉修莱德人在这次突然的袭击中陷入混乱，但是他们并没有失去斗志，只是失去了统一的领导，无法形成抵抗的力量",
         "dic": 3
     },
@@ -931,7 +931,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Peep",
+        "face": "side",
         "string": "伊拉修莱德国王的女儿一直没有放弃抵抗，而是带回了最坚实的战友拯救伊拉修莱德——",
         "dic": 3
     },
@@ -940,7 +940,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Peep",
+        "face": "side",
         "string": "一直未婚的索菲亚大公和西景的皇帝一起冒险，日久生情",
         "dic": 3
     },
@@ -949,7 +949,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Peep",
+        "face": "side",
         "string": "在互相表达心意之前，宿句人蹂躏了伊拉修莱德，为了不让心爱之人的母国沦陷，同时也为了自己国家的利益",
         "dic": 3
     },
@@ -958,7 +958,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Peep",
+        "face": "side",
         "string": "皇帝决定介入这场战争，想要用胜利去庆祝和确立……这次联姻",
         "dic": 3
     },
@@ -967,7 +967,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Peep",
+        "face": "side",
         "string": "在西景人的军队进军后，西景皇帝宣布跟伊拉修莱德大公联姻介入战争中，这样一来",
         "dic": 3
     },
@@ -1003,7 +1003,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "怎么能拿终身大事当儿戏，这是全世界都会见证的……",
         "dic": 1
     },
@@ -1012,7 +1012,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "世清……",
         "dic": 3
     },
@@ -1021,7 +1021,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Depressed",
+        "face": "sad",
         "string": "你在为我表达出的心意而感到困扰吗……？",
         "dic": 3
     },
@@ -1038,8 +1038,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "抱歉……对不起……对不起……",
         "dic": 3
     },
@@ -1047,8 +1047,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "我知道的……我都知道的……",
         "dic": 3
     },
@@ -1057,7 +1057,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Cry",
+        "face": "crysurprise",
         "string": "我会……另外想办法的",
         "dic": 3
     },
@@ -1111,7 +1111,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "可是",
         "dic": 1
     },
@@ -1156,7 +1156,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "……",
         "dic": 1
     },
@@ -1165,7 +1165,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Bitter",
+        "face": "bitter",
         "string": "哈哈哈，我嘴还是很笨啊",
         "dic": 3
     },
@@ -1174,7 +1174,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Bitter",
+        "face": "bitter",
         "string": "世清，按你的想法去做吧",
         "dic": 3
     },
@@ -1183,7 +1183,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Bitter",
+        "face": "bitter",
         "string": "只要别把我忘记就好了",
         "dic": 3
     },
@@ -1192,7 +1192,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "余……",
         "dic": 1
     },
@@ -1219,7 +1219,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "伊丽……",
         "dic": 1
     },
@@ -1228,7 +1228,7 @@
         "name": "世清",
         "char": "SeicingEmpireJade",
         "con": "ATSP",
-        "face": "SeicingCompassion",
+        "face": "sad",
         "string": "对不起",
         "dic": 1
     },
@@ -1236,8 +1236,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "……",
         "dic": 3
     },
@@ -1245,8 +1245,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "……这不是为了国家的存亡而作出的妥协……",
         "dic": 3
     },
@@ -1254,8 +1254,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "在最绝望的时候，我只能想起和你一起冒险度过的时光",
         "dic": 3
     },
@@ -1263,8 +1263,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "什么时候你成为了我唯一活下去的动力了呢？爱情的烙印到底是什么时候铭刻下来的呢？已经不知道了……",
         "dic": 3
     },
@@ -1272,8 +1272,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2DepressedCERF",
+        "con": "CERF",
+        "face": "sad",
         "string": "……但也许最后我只能作为伊拉修莱德的女儿英勇地死在战场上了，唯一的遗憾只是那句话没有亲口说出来……我……",
         "dic": 3
     },
@@ -1291,7 +1291,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "……是",
         "dic": 3
     },
@@ -1308,8 +1308,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "要让女孩子表白什么的不是男人应该干的事情",
         "dic": 1
     },
@@ -1318,7 +1318,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Surprise",
+        "face": "surprise",
         "string": "……",
         "dic": 3
     },
@@ -1326,8 +1326,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "我确实在逃避……我们三人的关系，害怕捅破了最后那一层纸，让彼此的羁绊出现不可弥补的裂痕",
         "dic": 1
     },
@@ -1335,8 +1335,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "但是这样一直逃避下去……不也是在伤害着你吗？",
         "dic": 1
     },
@@ -1344,8 +1344,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "伊丽丝，我喜欢你……因为各种愚蠢的原因压抑自己的感情",
         "dic": 1
     },
@@ -1353,8 +1353,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingDefaultRF",
+        "con": "ATSPRF",
+        "face": "serene",
         "string": "我不想再让自己心里的这份悸动被压抑着了",
         "dic": 1
     },
@@ -1362,8 +1362,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "世清……",
         "dic": 3
     },
@@ -1371,8 +1371,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShyCE",
+        "con": "RFCE",
+        "face": "bitter",
         "string": "我也喜欢……你，我也不需要……隐瞒自己了……",
         "dic": 3
     },
@@ -1380,8 +1380,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "你能对我说出那句我朝思夜想的话语吗？",
         "dic": 3
     },
@@ -1389,8 +1389,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEyeRF",
+        "con": "ATSPCERF",
+        "face": "serene",
         "string": "……",
         "dic": 1
     },
@@ -1398,8 +1398,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingCloseEyeRF",
+        "con": "ATSPCERF",
+        "face": "serene",
         "string": "嫁给我吧",
         "dic": 1
     },
@@ -1407,8 +1407,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShyCE",
+        "con": "RFCE",
+        "face": "bitter",
         "string": "……",
         "dic": 3
     },
@@ -1416,8 +1416,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2Shy",
+        "con": "RF",
+        "face": "smile",
         "string": "是的，我答应你……",
         "dic": 3
     },
@@ -1444,7 +1444,7 @@
         "name": "余",
         "char": "YoEmpireFlower",
         "con": "",
-        "face": "Yo5Happy",
+        "face": "happy",
         "string": "我会由衷地为你们感到祝福",
         "dic": 3
     },
@@ -1452,8 +1452,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShySmile",
+        "con": "RF",
+        "face": "sinister",
         "string": "余……不，应该是叫“姐姐”？",
         "dic": 3
     },
@@ -1461,8 +1461,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5SinisterSmileRF",
+        "con": "RF",
+        "face": "sinister",
         "string": "像以前那样就行，不是吗？",
         "dic": 3
     },
@@ -1479,8 +1479,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2PeepRF",
+        "con": "RF",
+        "face": "shy",
         "string": "世清……",
         "dic": 3
     },
@@ -1488,8 +1488,8 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "SeicingSurpriseRF",
+        "con": "ATSPRF",
+        "face": "surprise",
         "string": "啊？",
         "dic": 1
     },
@@ -1497,8 +1497,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2PeepRF",
+        "con": "RF",
+        "face": "shy",
         "string": "夜还很长……不是吗？",
         "dic": 3
     },
@@ -1515,8 +1515,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5SinisterSmileRF",
+        "con": "RF",
+        "face": "sinister",
         "string": "我也……",
         "dic": 3
     },
@@ -1524,8 +1524,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShySmile",
+        "con": "RF",
+        "face": "sinister",
         "string": "一起？",
         "dic": 3
     },
@@ -1533,8 +1533,8 @@
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
-        "face": "Yo5SinisterSmileRF",
+        "con": "RF",
+        "face": "sinister",
         "string": "需要我这个前辈引导吗？……反正以后也会是常态了吧",
         "dic": 3
     },
@@ -1551,8 +1551,8 @@
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "Iris2ShySmile",
+        "con": "RF",
+        "face": "sinister",
         "string": "要好好疼爱人家这只可爱的小鸽子哦，老公",
         "dic": 3
     },
