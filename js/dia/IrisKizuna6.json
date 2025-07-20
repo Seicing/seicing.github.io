@@ -31,7 +31,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -39,8 +39,8 @@
         "branch": "",
         "name": "科洛维",
         "char": "Kruv",
-        "con": "",
-        "face": "KruvDefaultCE",
+        "con": "CE",
+        "face": "serene",
         "string": "抱歉，似乎是我认错人了",
         "dic": 3
     },
@@ -274,7 +274,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "被发现了吗？",
         "dic": 3
     },
@@ -319,7 +319,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "抱歉，我只是在房顶发呆的时候听到了你们说话",
         "dic": 3
     },
@@ -328,7 +328,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "我是无意的",
         "dic": 3
     },
@@ -346,7 +346,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "我已经习惯别人说我奇怪了",
         "dic": 3
     },
@@ -354,8 +354,8 @@
         "branch": "",
         "name": "科洛维",
         "char": "Kruv",
-        "con": "",
-        "face": "KruvDefaultCE",
+        "con": "CE",
+        "face": "serene",
         "string": "嗯……",
         "dic": 3
     },
@@ -364,7 +364,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "这个姑娘，从遇到你的那时候开始，我就一直很在意你",
         "dic": 3
     },
@@ -391,7 +391,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "……跟人聊天真难",
         "dic": 3
     },
@@ -418,8 +418,8 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
-        "string": "我可以听到的，这时候我是该生气吗？还是挤出笑容糊弄过去，他们没教过我这种情况下怎么才是正常的",
+        "face": "serene",
+        "string": "我听到了，我现在是要生气吗……还是要随便糊弄过去",
         "dic": 3
     },
     {
@@ -427,7 +427,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "搞不懂……这个姑娘，你的名字是",
         "dic": 3
     },
@@ -445,7 +445,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "伊丽丝对吧……你让我感觉到了一种很奇怪的感觉，不知道如何形容……很难受……",
         "dic": 3
     },
@@ -463,7 +463,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "看你的表情，似乎这个话题对你而言很冒犯，我会尝试自己搞懂它的",
         "dic": 3
     },
@@ -481,7 +481,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "我不是窃贼",
         "dic": 3
     },
@@ -499,7 +499,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -508,7 +508,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "我想起来了",
         "dic": 3
     },
@@ -517,7 +517,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "这种难受的感觉跟那个骑士相遇的时候如出一辙",
         "dic": 3
     },
@@ -535,7 +535,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvPeer",
+        "face": "side",
         "string": "……确实是叫这个名字，他是你哥哥啊",
         "dic": 3
     },
@@ -580,7 +580,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "半始祖化……？是你们那吸血鬼化的称呼吗？",
         "dic": 3
     },
@@ -589,7 +589,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "我就是为了寻找我的身世才会和那几个人踏上旅途的",
         "dic": 3
     },
@@ -598,7 +598,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "那个时候的我还在到处游荡，忽然感受到了一股气息在呼唤我",
         "dic": 3
     },
@@ -607,7 +607,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "这股气息的尽头是一个充满了死亡气息的废弃村落……那个时候的他从墓地里好不容易挣扎了出来",
         "dic": 3
     },
@@ -625,7 +625,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "嗯，我还引导过他如何作为一个吸血鬼生存下去",
         "dic": 3
     },
@@ -634,7 +634,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "不过，高贵的骑士似乎对伤害他人抱有抗拒呢，不久之后他就离我而去了",
         "dic": 3
     },
@@ -652,7 +652,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "伊丽丝，我从你身上感受到了遇到他的时候的感觉",
         "dic": 3
     },
@@ -661,7 +661,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "我之前相信这是吸血鬼之间的共鸣，今天遇到你之后，我对这个猜想产生了疑惑",
         "dic": 3
     },
@@ -670,7 +670,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "我凭借着这份共鸣多次找到了他，目睹了他的坚持，也目睹了他逐渐失去理性，完全变成怪物",
         "dic": 3
     },
@@ -679,7 +679,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "在那之后我就失去了和他的联系了，结合你们的说话……我已经猜出个大概了，不过，我想最后确定一下",
         "dic": 3
     },
@@ -705,8 +705,8 @@
         "branch": "",
         "name": "科洛维",
         "char": "Kruv",
-        "con": "",
-        "face": "KruvDefaultCE",
+        "con": "CE",
+        "face": "serene",
         "string": "这样啊……",
         "dic": 3
     },
@@ -715,7 +715,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefaultCry",
+        "face": "cry",
         "string": "眼泪……？",
         "dic": 3
     },
@@ -724,7 +724,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefaultCry",
+        "face": "cry",
         "string": "……非常感谢你们和我说了这么多，我现在内心有一种难以形容的感觉，我想自己静一静，失礼了",
         "dic": 3
     },
@@ -994,7 +994,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
+        "face": "angry",
         "string": "啊！！我的手！！",
         "dic": 3
     },
@@ -1003,7 +1003,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "是你们……",
         "dic": 3
     },
@@ -1030,7 +1030,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
+        "face": "angry",
         "string": "不要吼我的名字！你们是谁，敢来搞混我的好事",
         "dic": 3
     },
@@ -1048,7 +1048,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokFear",
+        "face": "fear",
         "string": "亚历山大？亚历山大……",
         "dic": 3
     },
@@ -1057,7 +1057,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokDefault",
+        "face": "smile",
         "string": "哦，是那个阻止了我的样本调查的白痴啊",
         "dic": 3
     },
@@ -1066,7 +1066,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
+        "face": "angry",
         "string": "少给我碍事！给我变成腐尸消失吧！",
         "dic": 3
     },
@@ -1084,7 +1084,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokFear",
+        "face": "fear",
         "string": "什……什么，竟然和那个女吸血鬼一样免疫这个……三个都是觉醒者？我倒了什么霉可以遇到这种不可能的阵容",
         "dic": 3
     },
@@ -1138,7 +1138,7 @@
         "name": "莎亚",
         "char": "Saya",
         "con": "",
-        "face": "SayaSerious",
+        "face": "sad",
         "string": "虽然不太清楚发生了什么，但是我们好像得救了",
         "dic": 3
     },
@@ -1147,7 +1147,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "你们三个想办法净化掉这里的毒雾，让它停止继续散布下去……停止造成更大的灾难",
         "dic": 3
     },
@@ -1156,7 +1156,7 @@
         "name": "莎亚",
         "char": "Saya",
         "con": "",
-        "face": "SayaSerious",
+        "face": "sad",
         "string": "你要追上去帮助他们吗？",
         "dic": 3
     },
@@ -1165,7 +1165,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "嗯……因为我是吸血鬼，不怕这些毒雾",
         "dic": 3
     },
@@ -1174,16 +1174,16 @@
         "name": "莎亚",
         "char": "Saya",
         "con": "",
-        "face": "SayaYell",
+        "face": "angry",
         "string": "那你要小心！科洛维！我们会尽快处理好毒雾过来援助的！",
         "dic": 3
     },
     {
         "branch": "",
         "name": "阿西恩娜",
-        "char": "",
+        "char": "Aszina",
         "con": "",
-        "face": "AszinaEndure",
+        "face": "angry",
         "string": "拜托了！科洛维！一定要把那个家伙……",
         "dic": 3
     },
@@ -1192,7 +1192,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "……",
         "dic": 3
     },
@@ -1201,7 +1201,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "交给我吧",
         "dic": 3
     },
@@ -1219,7 +1219,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokFear",
+        "face": "fear",
         "string": "甩不掉……",
         "dic": 3
     },
@@ -1246,8 +1246,8 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
-        "string": "别把我会死当成是已经发生的事实！这种自以为是真是让人恶心！",
+        "face": "angry",
+        "string": "我还没死呢！这种自以为是真是让人恶心！",
         "dic": 3
     },
     {
@@ -1255,7 +1255,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
+        "face": "angry",
         "string": "逃不掉就战吧！我可不会输给你们这几个毛头小子",
         "dic": 3
     },
@@ -1264,7 +1264,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokSinisterSmile",
+        "face": "sinister",
         "string": "我会好好地折磨你们的……索菲亚阁下哦，我亲眼看着你的哥哥痛苦地变成吸血鬼的全过程，那种绝望感真是让人愉悦啊",
         "dic": 3
     },
@@ -1300,7 +1300,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokSinisterSmile",
+        "face": "sinister",
         "string": "就这样，慢慢地因为自己的愤怒逐渐失去判断力而失败吧，小丫头",
         "dic": 3
     },
@@ -1309,7 +1309,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokSinisterSmile",
+        "face": "sinister",
         "string": "就像你的哥哥一样，因为战斗时抱有无谓的正义感和愤怒而出现破绽……",
         "dic": 3
     },
@@ -1318,7 +1318,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Pain",
+        "face": "extra1",
         "string": "……",
         "dic": 3
     },
@@ -1336,7 +1336,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Pain",
+        "face": "extra1",
         "string": "世清……",
         "dic": 3
     },
@@ -1363,7 +1363,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
+        "face": "angry",
         "string": "像苍蝇一样卿卿我我，真是让人讨厌",
         "dic": 3
     },
@@ -1372,7 +1372,7 @@
         "name": "欧洛克",
         "char": "Orlok",
         "con": "",
-        "face": "OrlokAngry",
+        "face": "angry",
         "string": "别以为这就是我的全部能耐了，既然逃不掉就跟你们拼命吧，他妈的，这玩意用了之后得痛苦整整几天呢",
         "dic": 3
     },
@@ -1417,7 +1417,7 @@
         "name": "欧洛克",
         "char": "OrlokAtavism",
         "con": "",
-        "face": "OrlokAwakeningAngry",
+        "face": "angry",
         "string": "呜啊啊啊啊啊啊！！！",
         "dic": 3
     },
@@ -1453,7 +1453,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "伊丽丝……准备好攻击",
         "dic": 3
     },
@@ -1480,7 +1480,7 @@
         "name": "欧洛克",
         "char": "OrlokAtavism",
         "con": "",
-        "face": "OrlokAwakeningAngry",
+        "face": "angry",
         "string": "可恶……身体……动不了……",
         "dic": 3
     },
@@ -1489,7 +1489,7 @@
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "Iris2Pain",
+        "face": "extra1",
         "string": "我……我……这种感觉是……",
         "dic": 3
     },
@@ -1516,7 +1516,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "……看起来想起了什么不好的事情……我不知道到底是什么，但是",
         "dic": 3
     },
@@ -1525,7 +1525,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "伊安看到你依旧迷惘会觉得伤心的",
         "dic": 3
     },
@@ -1561,7 +1561,7 @@
         "name": "欧洛克",
         "char": "OrlokAtavism",
         "con": "",
-        "face": "OrlokAwakeningAngry",
+        "face": "angry",
         "string": "呜哦哦！！！",
         "dic": 3
     },
@@ -1570,7 +1570,7 @@
         "name": "欧洛克",
         "char": "OrlokAtavism",
         "con": "",
-        "face": "OrlokAwakening",
+        "face": "smile",
         "string": "我……我要死了……？",
         "dic": 3
     },
@@ -1579,7 +1579,7 @@
         "name": "欧洛克",
         "char": "OrlokAtavism",
         "con": "",
-        "face": "OrlokAwakening",
+        "face": "smile",
         "string": "<span id='金'>这条生命</span>竟然交代在这里，真是可恶……",
         "dic": 3
     },
@@ -1588,7 +1588,7 @@
         "name": "欧洛克",
         "char": "OrlokAtavism",
         "con": "",
-        "face": "OrlokAwakening",
+        "face": "smile",
         "string": "马格努斯……你在看着吧……竟然就这样看着这个身体就这样战死，你这家伙……",
         "dic": 3
     },
@@ -1660,7 +1660,7 @@
         "name": "科洛维",
         "char": "KruvAtavism",
         "con": "",
-        "face": "KruvDefaultAw",
+        "face": "serene",
         "string": "抱歉，使用同化需要消耗大量的生命力，我得马上吸血补充生命力",
         "dic": 3
     },
@@ -1686,8 +1686,8 @@
         "branch": "",
         "name": "科洛维",
         "char": "Kruv",
-        "con": "",
-        "face": "KruvDefaultCE",
+        "con": "CE",
+        "face": "serene",
         "string": "阿西恩娜……这个东西还是交给你亲自来吧",
         "dic": 3
     },
@@ -1705,7 +1705,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "欧洛克……提到了一个很危险的名字，如果他在附近就意味着我必须赶回去",
         "dic": 3
     },
@@ -1714,7 +1714,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvDefault",
+        "face": "serene",
         "string": "在不想遇到的情况发生之前……我得快点了",
         "dic": 3
     },
@@ -1732,7 +1732,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvPeer",
+        "face": "side",
         "string": "……",
         "dic": 3
     },
@@ -1741,7 +1741,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvPeer",
+        "face": "side",
         "string": "我坚信是我们身上有着血之纽带，今天才会在命运的安排下相会",
         "dic": 3
     },
@@ -1750,7 +1750,7 @@
         "name": "科洛维",
         "char": "Kruv",
         "con": "",
-        "face": "KruvPeer",
+        "face": "side",
         "string": "我们一定会伴随着这个纽带的共鸣再次相遇……后会有期",
         "dic": 3
     },

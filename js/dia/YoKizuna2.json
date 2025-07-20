@@ -13,7 +13,7 @@
         "name": "官员",
         "char": "SeigineMage",
         "con": "",
-        "face": "SeigineMageDissatisfied",
+        "face": "depress",
         "string": "那个粗野的村姑一点礼仪也不会",
         "dic": 3
     },
@@ -22,7 +22,7 @@
         "name": "官员",
         "char": "SeigineCleric",
         "con": "",
-        "face": "SeigineClericDissatisfied",
+        "face": "depress",
         "string": "这家伙真的是我们西景的皇后？真是让人羞耻",
         "dic": 3
     },
@@ -58,8 +58,8 @@
         "name": "官员",
         "char": "SeigineCleric",
         "con": "",
-        "face": "SeigineClericSurprise",
-        "string": "啊！抱歉！陛下",
+        "face": "fear",
+        "string": "啊！抱歉！阁下",
         "dic": 3
     },
     {
@@ -67,7 +67,7 @@
         "name": "官员",
         "char": "SeigineMage",
         "con": "",
-        "face": "SeigineMageSurprise",
+        "face": "fear",
         "string": "我们这就继续我们的工作，抱歉！",
         "dic": 3
     },
