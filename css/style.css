@@ -35,8 +35,8 @@ body {
     margin: 0;
     padding: 0;
     background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
-    font-size: 9pt;
-    color: #4D4D4D;
+    < !--font-size: 9pt;
+    -->color: #4D4D4D;
 }
 
 a:hover {
