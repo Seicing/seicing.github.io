@@ -7,8 +7,10 @@
 <body>
     <div style="font-family: 微软雅黑; font-size: 9">
         <a href="https://seicing.com/html/index.html"><b>回到首页</b></a><br>
-        <a onclick="document.body.style.fontSize = '9pt';">小字体</a>
-        <a onclick="document.body.style.fontSize = '12pt';">大字体</a>
+        <a id="smallfonter" style="color: #6B1E1E;"
+            onclick="document.body.style.fontSize = '9pt';document.getElementById('smallfonter').style.color = '#6B1E1E';document.getElementById('bigfonter').style.color = '#857E6E';">小字体</a>
+        <a id="bigfonter" style="color: #857E6E;"
+            onclick="document.body.style.fontSize = '12pt';document.getElementById('smallfonter').style.color = '#857E6E';document.getElementById('bigfonter').style.color = '#6B1E1E';">大字体</a>
         <br>
 
         <br>用语集<br>
