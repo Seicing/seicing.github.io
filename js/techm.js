@@ -332,7 +332,7 @@ let ayanami = {
     "倒置": "倒置<br>Anastrophe<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>希腊冲击船获得5秒冷却的近战特殊攻击",
 
 
-    "青铜": "青铜<br>Bronze<br>选中一个位置，用青铜将你的和盟友的士兵、神话单位和船只包裹起来，降低他们在战斗中的易伤值",
+    "青铜": "青铜<br>Bronze<br>选中一个位置，用青铜将你的士兵、神话单位和船只包裹起来，降低他们在战斗中的易伤值",
     "酒神节": "酒神节<br>Bacchanalia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>所有单位生命值+5%",
     "色雷斯战马": "色雷斯战马<br>Thracian Horses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骑兵配备嗜血的色雷斯战马，进行攻击时恢复30%生命值",
     "冥界仪式": "冥界仪式<br>Chthonic Rites<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>海德拉和海怪席拉获得2.5生命恢复能力",
