@@ -571,7 +571,7 @@ let ayanami = {
     "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，在每个时代木材的采集速度+15%",
     "圣殿骑士影响力": "圣殿骑士影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
     "圣殿要塞": "圣殿要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%",
-    "法兰西王国": "法兰西王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西王国.png' width='20px'>法兰西王国：军事单位生产快15%，减少5%的黄金消耗",
+    "法兰西王国": "法兰西王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西王国.png' width='20px'>法兰西王国：军事单位生产时间-15%，减少5%的黄金消耗",
     "医院骑士团": "医院骑士团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/医院骑士团.png' width='20px'>医院骑士团：所有平民单位生命值+30%，移动速度+10%，所有治疗来源效率+30%",
     "安条克公国": "安条克公国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/安条克公国.png' width='20px'>安条克公国：近战单位获得+10%伤害",
     "热那亚共和国": "热那亚共和国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/热那亚共和国.png' width='20px'>热那亚共和国：朝圣者产生的黄金+30%",
@@ -581,7 +581,7 @@ let ayanami = {
     "威尼斯共和国": "威尼斯共和国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/威尼斯共和国.png' width='20px'>威尼斯共和国：市场买卖率对玩家更加有利 ",
     "波兰王国": "波兰王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/波兰王国.png' width='20px'>波兰王国：所有骑兵部队+10%生命值，+50%冲锋伤害 ",
     "要塞藏宝塔": "要塞藏宝塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的修道院、圣地和朝圣者收入+20%",
-    "要塞射程加成": "要塞射程加成<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：要塞附近的远程部队+15%射程",
+    "要塞射程加成": "要塞射程加成<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：要塞附近的远程武器+15%射程",
     "要塞沙漠城堡": "要塞沙漠城堡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的部队+1护甲",
 
     "兰开斯特伯克郡": "兰开斯特伯克郡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6",
