@@ -1590,6 +1590,7 @@ function GoldShaftMining() {
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Khitans").style.opacity = "0.15";
 }
 function TreadmillCrane() {
     document.getElementById("Bulgarians2").style.opacity = "0.15";
