@@ -80,7 +80,7 @@ ol {
 
 a {
     text-decoration: none;
-    color: #CABC85;
+    color: #949085;
 }
 
 #wrapper {
@@ -295,7 +295,7 @@ a {
     text-transform: uppercase;
     font-size: 26px;
     font-weight: normal;
-    color: #CABC85;
+    color: #949085;
 }
 
 .post .meta {
@@ -384,7 +384,6 @@ a {
     font-weight: normal;
 }
 
-#sidebar li li span {}
 
 #sidebar li li a {
     padding: 0px 0px 0px 0px;
@@ -410,7 +409,7 @@ a {
 
 #sidebar a {
     border: none;
-    color: #CABC85;
+    color: #949085;
 }
 
 #sidebar a:hover {
@@ -419,8 +418,6 @@ a {
 
 
 /* Calendar */
-
-#calendar {}
 
 #calendar_wrap {
     padding: 20px;
@@ -463,7 +460,7 @@ a {
 }
 
 #footer a {
-    color: #CABC85;
+    color: #949085;
 }
 
 #banner {
