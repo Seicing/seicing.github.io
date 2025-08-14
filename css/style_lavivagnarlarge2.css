@@ -44,8 +44,8 @@ body {
     margin: 0;
     padding: 0;
     background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
-    font-size: 9pt;
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    font-size: 12pt;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     color: #4D4D4D;
 }
 
@@ -55,7 +55,7 @@ h3 {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     color: #056303;
 }
 
@@ -246,7 +246,7 @@ a {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-size: 14px;
     font-weight: normal;
     color: #FFFFFF;
@@ -304,7 +304,7 @@ a {
     letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase;
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-size: 12px;
     font-weight: normal;
 }
@@ -332,7 +332,7 @@ a {
     margin: 20px 0px 30px 0px;
     text-align: right;
     text-transform: uppercase;
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-size: 12px;
     font-weight: normal;
 }
@@ -454,7 +454,7 @@ a {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-weight: normal;
     font-size: 10px;
 }
@@ -470,5 +470,5 @@ a {
 }
 
 div {
-    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
 }
