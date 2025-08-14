@@ -1,0 +1,477 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+
+/*
+@font-face {
+    font-family:"Hiragino Sans GB",冬青黑体简体中文,宋体,微软雅黑;
+    src: url(rgs.ttc);
+}
+*/
+
+#scroll-2::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+#scroll-2::-webkit-scrollbar-button {
+    background-color: rgb(172, 166, 151);
+    display: none;
+}
+
+#scroll-2::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+#scroll-2::-webkit-scrollbar-thumb {
+    background: rgb(172, 166, 151);
+    border-radius: 4px;
+}
+
+#scroll-2::-webkit-scrollbar-corner {
+    background: rgb(172, 166, 151);
+}
+
+#scroll-2::-webkit-scrollbar-resizer {
+    background: rgb(172, 166, 151);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
+    font-size: 9pt;
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    color: #4D4D4D;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    color: #056303;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p,
+ul,
+ol {
+    margin-top: 0;
+    line-height: 240%;
+}
+
+a {
+    text-decoration: none;
+    color: #CABC85;
+}
+
+#wrapper {
+    background: url(https://seicing.com/res/img03lb2.png) repeat-y center top;
+    background-size: cover cover;
+    z-index: -20;
+}
+
+@media screen and (orientation:portrait) {
+    #wrapper {
+        width: 1280px
+    }
+}
+
+#wrapper2 {
+    background: url(https://seicing.com/res/img02lb2.png) no-repeat center top;
+    background-size: cover cover;
+}
+
+#wrapper3 {
+    background: url(https://seicing.com/res/img04lb2.png) no-repeat center bottom;
+    background-size: cover cover;
+}
+
+.container {
+    width: 1800px;
+    margin: 0px auto;
+}
+
+
+/* Header */
+
+#header {
+    width: 1800px;
+    height: 10px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#lowder {
+    width: 1800px;
+    height: 10px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+/* Logo */
+
+#logo {
+    float: left;
+    width: 288px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+#logo h1 {
+    padding: 30px 0px 0px 0px;
+    letter-spacing: -3px;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 40px;
+}
+
+#logo h1 span {
+    color: #CABC85;
+}
+
+#logo h1 a {
+    color: #FFFFFF;
+}
+
+#logo p {
+    margin: 0;
+    padding: 0px 0 0 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#logo p a {
+    color: #FFFFFF;
+}
+
+#logo a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Search */
+
+#search {
+    float: right;
+    width: 280px;
+    height: 60px;
+    padding: 20px 0px 0px 0px;
+}
+
+#search form {
+    height: 41px;
+    margin: 0;
+    padding: 10px 0 0 20px;
+}
+
+#search fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#search-text {
+    width: 170px;
+    padding: 6px 5px 3px 5px;
+    border: none;
+    background: #D0C9B7;
+    text-transform: lowercase;
+    font: normal 11px Arial, Helvetica, sans-serif;
+}
+
+#search-submit {
+    width: 50px;
+    height: 22px;
+    border: none;
+    background: #1D1D1D;
+    color: #FFF;
+}
+
+
+/* Menu */
+
+#menu {
+    float: right;
+    width: 1800px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#menu ul {
+    float: right;
+    margin: 0;
+    padding: 50px 20px 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    padding: 0px 15px 0px 15px;
+}
+
+#menu a {
+    display: block;
+    height: 20px;
+    margin-right: 1px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFFFFF;
+    border: none;
+}
+
+#menu a:hover,
+#menu .current_page_item a {
+    text-decoration: none;
+}
+
+
+/* Page */
+
+#page {
+    width: 1850px;
+    margin: 0px auto;
+}
+
+
+/* Content */
+
+#content {
+    float: right;
+    width: 1800px;
+    padding: 0px 30px;
+}
+
+.post {
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.post .title {
+    margin: 0px;
+    padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+.post .title a {
+    border: none;
+    letter-spacing: 1px;
+    letter-spacing: -1px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: normal;
+    color: #CABC85;
+}
+
+.post .meta {
+    margin-bottom: 30px;
+    padding: 0px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.post .meta .date {
+    float: left;
+}
+
+.post .meta .posted {
+    float: right;
+}
+
+.post .entry {
+    padding: 0px 0px 30px 0px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.entry {
+    min-height: 500px
+}
+
+.links {
+    float: right;
+    margin: 20px 0px 30px 0px;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.more {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    margin-right: 30px;
+}
+
+.comments {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Sidebar */
+
+#sidebar {
+    float: left;
+    width: 0px;
+    margin: 0px;
+    color: #CABC85;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li ul {
+    margin: 0px 0px;
+    padding-bottom: 50px;
+}
+
+#sidebar li li {
+    line-height: 35px;
+    border-bottom: 1px dashed #A5A08C;
+    margin: 0px 30px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#sidebar li li span {}
+
+#sidebar li li a {
+    padding: 0px 0px 0px 0px;
+}
+
+#sidebar h2 {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    padding-left: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    color: #2E2E2E;
+}
+
+#sidebar p {
+    margin: 0 0px;
+    padding: 0px 30px 20px 30px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#sidebar a {
+    border: none;
+    color: #CABC85;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+
+/* Calendar */
+
+#calendar {}
+
+#calendar_wrap {
+    padding: 20px;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar tbody td {
+    text-align: center;
+}
+
+#calendar #next {
+    text-align: right;
+}
+
+
+/* Footer */
+
+#footer {
+    width: 940px;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background: #3D3630;
+    color: #CABC85;
+}
+
+#footer p {
+    margin: 0;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#footer a {
+    color: #CABC85;
+}
+
+#banner {
+    width: 940px;
+    margin: 0px auto;
+    height: 150px;
+}
+
+div {
+    font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
+}
