@@ -44,7 +44,7 @@ body {
     margin: 0;
     padding: 0;
     background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
-    font-size: 12pt;
+    font-size: 10pt;
     /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     color: #4D4D4D;
 }
@@ -467,8 +467,4 @@ a {
     width: 940px;
     margin: 0px auto;
     height: 150px;
-}
-
-div {
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
 }
