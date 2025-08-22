@@ -804,6 +804,26 @@ let ayanami = {
     "罗斯石墙限制": "罗斯石墙限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斯巴斯克塔.png' width='20px'>斯巴斯克塔：必须通过时代4建造斯巴斯克塔地标才能解锁石制防御设施建造",
     "木制要塞效果": "木制要塞效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/罗斯.png' width='20px'>影响力效果：影响力范围内可以多带回20%木材",
     "圣三一修道院效果": "圣三一修道院效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣三一修道院.png' width='20px'>圣三一修道院：圣三一修道院和所有修道院生产僧侣战士的成本-50%",
+
+
+    "滩头冲车": "滩头冲车<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>打开冲车侧面防御甲板，驻扎的部队可以从中发射箭矢攻击敌人",
+    "光荣冲锋": "光荣冲锋<br>Glorious Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁光荣冲锋，激活后，部队在冲锋时受到的伤害减少，并提升速度",
+    "解锁畜栏法令": "解锁畜栏法令<br>Unlock Stockyard Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁畜栏法令，允许强化前哨影响力范围内的畜栏在工作时生成黄金",
+    "解锁签军法令": "解锁签军法令<br>Unlock Kharash Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁签军法令，允许强化前哨影响力范围内的军事生产建筑在生产部队时，免费生成额外的签军",
+    "增援部队": "增援部队<br>Reinforcement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>不增加部队的训练成本，增加生产单位时的获得的部队数量",
+
+    "武士弓": "武士弓<br>Samurai Bow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>北条家独特科技，为武士装备武士弓，使得他们可以远距离射击",
+    "骑马武士大太刀": "骑马武士大太刀<br>Mounted Samurai Odachi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>武田家独特科技，骑马武士装备大太刀，对步兵伤害增加",
+
+
+    "逆刃刀": "逆刃刀<br>Rhomphaia Swords<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>瓦兰吉卫队和瓦兰吉掠夺者装备逆刃刀，提高伤害",
+    "罗马之火": "罗马之火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>扭力弩炮获得希腊之火，射击后可以点燃地面",
+
+
+    "附加伤害": "附加伤害<br>Collateral Damage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>为大象的獠牙使用致命尖刺进行加固，增加伤害，并对途经的所有物体造成伤害",
+
+
+
 }
 
 function showPic(e, taitou) {
