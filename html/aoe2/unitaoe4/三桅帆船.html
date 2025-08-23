@@ -16,6 +16,7 @@
             document.getElementById("abb").style.opacity = "1";
             document.getElementById("sul").style.opacity = "1";
             document.getElementById("ayy").style.opacity = "1";
+            document.getElementById("tug").style.opacity = "1";
         })
     })
 </script>
@@ -174,6 +175,8 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
     <a id="ayyButton0" href="javascript:void(0);" onclick="tipsg('ayyText0','ayyButton0','0')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></a>
+    <a id="tugButton0" href="javascript:void(0);" onclick="tipsg('tugText0','tugButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png" width="25px"></a>
 
     <div id="abbText0" style="text-align: left;display:block ">
         <span class="黄金时代阶段II"></span><br>
@@ -232,6 +235,34 @@
         </table>
     </div>
     <div id="sulText0" style="text-align: left;display:none ">
+        <span class="德里免费"></span><br>
+        <span class="手稿贸易效果"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="tugText0" style="text-align: left;display:none ">
         <span class="德里免费"></span><br>
         <span class="手稿贸易效果"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -366,8 +397,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['abbText', 'sulText', 'ayyText']
-    var listButton = ['abbButton', 'sulButton', 'ayyButton']
+    var listText = ['abbText', 'sulText', 'ayyText', 'tugText',]
+    var listButton = ['abbButton', 'sulButton', 'ayyButton', 'tugButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);

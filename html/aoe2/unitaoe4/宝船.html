@@ -16,6 +16,7 @@
             document.getElementById("chi").style.opacity = "1";
             document.getElementById("mon").style.opacity = "1";
             document.getElementById("zxl").style.opacity = "1";
+            document.getElementById("goh").style.opacity = "1";
         })
     })
 </script>
@@ -208,6 +209,8 @@
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
     <a id="zxlButton0" href="javascript:void(0);" onclick="tipsg('zxlText0','zxlButton0','0')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
+    <a id="gohButton0" href="javascript:void(0);" onclick="tipsg('gohText0','gohButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></a>
 
     <div id="chiText0" style="text-align: left;display:block ">
         <span class="元朝效果"></span><br>
@@ -312,6 +315,41 @@
             </tr>
         </table>
     </div>
+
+    <div id="gohText0" style="text-align: left;display:none ">
+        <span class="蒙古掠夺"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+)(-25%/-35%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/海盗行为.png" width="20px">海盗行为(击沉对方船只获得25木和25金) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/突袭赏金.png" width="20px">突袭赏金(+)(文明固有加成的黄金和食物掠夺数变成50/75)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料赏金.png" width="20px">石料赏金(+)(点燃建筑物掠夺50/75石头) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -367,9 +405,6 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
-
-
     <table id="empire" frame="box">
         <tr>
             <td>
@@ -425,8 +460,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['chiText', 'monText', 'zxlText']
-    var listButton = ['chiButton', 'monButton', 'zxlButton']
+    var listText = ['chiText', 'monText', 'zxlText', 'gohText',]
+    var listButton = ['chiButton', 'monButton', 'zxlButton', 'gohButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);
