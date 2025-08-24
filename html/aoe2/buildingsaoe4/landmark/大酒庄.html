@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("byz").style.opacity = "1";
+            document.getElementById("mac").style.opacity = "1";
         })
     })
 </script>
@@ -418,8 +419,8 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a id="byzButton2" href="javascript:void(0);" onclick="tipsg('hreText2','hreButton2','2')" style="opacity:0"></a>
-<a id="macButton2" href="javascript:void(0);" onclick="tipsg('otdText2','otdButton2','2')" style="opacity:0"></a>
+<a id="byzButton2" href="javascript:void(0);" onclick="tipsg('byzText2','byzButton2','2')" style="opacity:0"></a>
+<a id="macButton2" href="javascript:void(0);" onclick="tipsg('macText2','macButton2','2')" style="opacity:0"></a>
 <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -436,8 +437,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['byzText',]
-    var listButton = ['byzButton',]
+    var listText = ['byzText', 'macText',]
+    var listButton = ['byzButton', 'macButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);

@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("jpn").style.opacity = "1";
+            document.getElementById("sen").style.opacity = "1";
         })
     })
 </script>
@@ -491,8 +492,8 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a id="jpnButton2" href="javascript:void(0);" onclick="tipsg('hreText2','hreButton2','2')" style="opacity:0"></a>
-<a id="senButton2" href="javascript:void(0);" onclick="tipsg('otdText2','otdButton2','2')" style="opacity:0"></a>
+<a id="jpnButton2" href="javascript:void(0);" onclick="tipsg('jpnText2','jpnButton2','2')" style="opacity:0"></a>
+<a id="senButton2" href="javascript:void(0);" onclick="tipsg('senText2','senButton2','2')" style="opacity:0"></a>
 <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -509,8 +510,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['jpnText',]
-    var listButton = ['jpnButton',]
+    var listText = ['jpnText', 'senText',]
+    var listButton = ['jpnButton', 'senButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);
