@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("sul").style.opacity = "1";
+            document.getElementById("tug").style.opacity = "1";
         })
     })
 </script>
@@ -91,7 +92,13 @@
 
 <div>
     <div id="techno"></div>
-    “除了发展到下一个时代外不会获得任何立即性加成，但包含许多独特的经济与宗教科技”
+    <div id="sulText2" style="text-align: left;display:block ">
+        “除了发展到下一个时代外不会获得任何立即性加成，但包含许多独特的经济与宗教科技”
+    </div>
+    <div id="tugText2" style="text-align: left;display:block ">
+        “除了发展到下一个时代外不会获得任何立即性加成，但包含许多独特的经济与宗教科技”
+    </div>
+
     <br>
     <div style='text-align:right'>——游戏内说明</div>
 </div>
@@ -120,7 +127,8 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="sulButton0" href="javascript:void(0);" onclick="tipsg('sulText0','sulButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
-
+    <a id="tugButton0" href="javascript:void(0);" onclick="tipsg('tugText0','tugButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png" width="25px"></a>
 
     <div id="sulText0" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
@@ -181,7 +189,65 @@
             </tr>
         </table>
     </div>
-
+    <div id="tugText0" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/强化地基.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">强化地基</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="强化地基sul成本"></span></td>
+                <td style="text-align: left"><span class="强化地基sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宁静之地.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宁静之地</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="宁静之地sul成本"></span></td>
+                <td style="text-align: left"><span class="宁静之地sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/派.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">派</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="派sul成本"></span></td>
+                <td style="text-align: left"><span class="派sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/象夫.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">象夫</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="象夫sul成本"></span></td>
+                <td style="text-align: left"><span class="象夫sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珩磨剑刃.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">珩磨剑刃</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="珩磨剑刃sul成本"></span></td>
+                <td style="text-align: left"><span class="珩磨剑刃sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/丰衣足食.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">丰衣足食</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="丰衣足食sul成本"></span></td>
+                <td style="text-align: left"><span class="丰衣足食sul"></span></td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
@@ -197,8 +263,22 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="sulButton1" href="javascript:void(0);" onclick="tipsg('sulText1','sulButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px"></a>
+    <a id="tugButton1" href="javascript:void(0);" onclick="tipsg('tugText1','tugButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png" width="25px"></a>
 
     <div id="sulText1" style="text-align: left;display:block ">
+        <span class="德里免费"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="tugText1" style="text-align: left;display:block ">
         <span class="德里免费"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
@@ -320,6 +400,8 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
+<a id="sulButton2" href="javascript:void(0);" onclick="tipsg('hreText2','hreButton2','2')" style="opacity:0"></a>
+<a id="tugButton2" href="javascript:void(0);" onclick="tipsg('otdText2','otdButton2','2')" style="opacity:0"></a>
 <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -336,18 +418,21 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['sulText',]
-    var listButton = ['sulButton',]
+    var listText = ['sulText', 'tugText',]
+    var listButton = ['sulButton', 'tugButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);
         cleargasek(1);
+        cleargasek(2);
         a = a.substring(0, a.length - 1);
         b = b.substring(0, b.length - 1);
         document.getElementById(a + '0').style.display = "block";
         document.getElementById(b + '0').style.opacity = 1;
         document.getElementById(a + '1').style.display = "block";
         document.getElementById(b + '1').style.opacity = 1;
+        document.getElementById(a + '2').style.display = "block";
+        document.getElementById(b + '2').style.opacity = 1;
         var aaposbo1 = document.querySelector("#blacktou1");
         var aaposbo2 = document.querySelector("#blacktou2");
         var aaposbo3 = a.substring(0, 3);
@@ -384,8 +469,10 @@
         var tipsp1 = getQueryVariable("civ")
         var tipsp2 = tipsp1 + "Button0";
         var tipsp3 = tipsp1 + "Button1";
+        var tipsp3 = tipsp1 + "Button2";
         document.getElementById(tipsp2).click();
         document.getElementById(tipsp3).click();
+        document.getElementById(tipsp4).click();
     }
 
 </script>

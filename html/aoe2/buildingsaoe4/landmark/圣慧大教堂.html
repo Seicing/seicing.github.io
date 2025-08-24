@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("byz").style.opacity = "1";
+            document.getElementById("mac").style.opacity = "1";
         })
     })
 </script>
@@ -119,9 +120,14 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="byzButton0" href="javascript:void(0);" onclick="tipsg('byzText0','byzButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
+    <a id="macButton0" href="javascript:void(0);" onclick="tipsg('macText0','macButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png" width="25px"></a>
 
 
     <div id="byzText0" style="text-align: left;display:block ">
+        这座建筑物没有科技可以研发
+    </div>
+    <div id="macText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
     </div>
 
@@ -140,6 +146,9 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="byzButton1" href="javascript:void(0);" onclick="tipsg('byzText1','byzButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
+    <a id="macButton1" href="javascript:void(0);" onclick="tipsg('macText1','macButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png" width="25px"></a>
+
 
     <div id="byzText1" style="text-align: left;display:block ">
         <span class="拜占庭水池保护"></span><br>
@@ -152,7 +161,16 @@
             </tr>
         </table>
     </div>
-
+    <div id="macText1" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
@@ -251,8 +269,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['byzText',]
-    var listButton = ['byzButton',]
+    var listText = ['byzText', 'macText',]
+    var listButton = ['byzButton', 'macButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);

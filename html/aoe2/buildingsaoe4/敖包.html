@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("mon").style.opacity = "1";
+            document.getElementById("goh").style.opacity = "1";
         })
     })
 </script>
@@ -120,9 +121,112 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="monButton0" href="javascript:void(0);" onclick="tipsg('monText0','monButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
-
+    <a id="gohButton0" href="javascript:void(0);" onclick="tipsg('gohText0','gohButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></a>
 
     <div id="monText0" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/卓越机动性.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">卓越机动性</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="卓越机动性成本"></span></td>
+                <td style="text-align: left"><span class="卓越机动性"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/卓越机动性.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">卓越机动性(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="卓越机动性已强化成本"></span></td>
+                <td style="text-align: left"><span class="卓越机动性已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/镝矢.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">镝矢</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="镝矢成本"></span></td>
+                <td style="text-align: left"><span class="镝矢"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/镝矢.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">镝矢(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="镝矢已强化成本"></span></td>
+                <td style="text-align: left"><span class="镝矢已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/突袭赏金.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">突袭赏金</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="突袭赏金成本"></span></td>
+                <td style="text-align: left"><span class="突袭赏金"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/突袭赏金.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">突袭赏金(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="突袭赏金已强化成本"></span></td>
+                <td style="text-align: left"><span class="突袭赏金已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/更多火炬.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">更多火炬</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="更多火炬成本"></span></td>
+                <td style="text-align: left"><span class="更多火炬"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/更多火炬.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">更多火炬(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:135px;"><span class="更多火炬已强化成本"></span></td>
+                <td style="text-align: left"><span class="更多火炬已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料赏金.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">石料赏金</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:135px;"><span class="石料赏金成本"></span></td>
+                <td style="text-align: left"><span class="石料赏金"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料赏金.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">石料赏金(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:135px;"><span class="石料赏金已强化成本"></span></td>
+                <td style="text-align: left"><span class="石料赏金已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宫廷建筑师</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="宫廷建筑师成本"></span></td>
+                <td style="text-align: left"><span class="宫廷建筑师"></span></td>
+            </tr>
+
+
+        </table>
+
+    </div>
+    <div id="gohText0" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
@@ -240,8 +344,21 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="monButton1" href="javascript:void(0);" onclick="tipsg('monText1','monButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
-    <div id="monText1" style="text-align: left;display:block ">
+    <a id="gohButton1" href="javascript:void(0);" onclick="tipsg('gohText1','gohButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></a>
 
+
+    <div id="monText1" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="gohText1" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -376,8 +493,9 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['monText',]
-    var listButton = ['monButton',]
+    var listText = ['monText', 'gohText',]
+    var listButton = ['monButton', 'gohButton',]
+
 
     function tipsg(a, b, c) {
         cleargasek(0);

@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("jpn").style.opacity = "1";
+            document.getElementById("sen").style.opacity = "1";
         })
     })
 </script>
@@ -118,7 +119,61 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="jpnButton0" href="javascript:void(0);" onclick="tipsg('jpnText0','jpnButton0','0')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
+    <a id="senButton0" href="javascript:void(0);" onclick="tipsg('senText0','senButton0','0')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
+
     <div id="jpnText0" style="text-align: left;display:block ">
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td style="background-color:#F5F8FA">图标</td>
+                <td style="background-color:#F5F8FA">名称</td>
+                <td style="background-color:#F5F8FA">时代</td>
+                <td style="background-color:#F5F8FA">成本</td>
+                <td style="background-color:#F5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生存技术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生存技术</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="生存技术成本"></span></td>
+                <td style="text-align: left"><span class="生存技术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/专业侦察兵.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">专业侦察兵</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="专业侦察兵成本"></span></td>
+                <td style="text-align: left"><span class="专业侦察兵"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塔瓦拉.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">塔瓦拉</td>
+                <td style="text-align: left;width:30px;">Ⅰ</td>
+                <td style="text-align: left;width:120px;"><span class="塔瓦拉成本"></span></td>
+                <td style="text-align: left"><span class="塔瓦拉"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/竹细工.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">竹细工</td>
+                <td style="text-align: left;width:30px;">Ⅱ</td>
+                <td style="text-align: left;width:120px;"><span class="竹细工成本"></span></td>
+                <td style="text-align: left"><span class="竹细工"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/札差.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">札差</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="札差成本"></span></td>
+                <td style="text-align: left"><span class="札差"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="senText0" style="text-align: left;display:block ">
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
@@ -183,8 +238,31 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     <a id="jpnButton1" href="javascript:void(0);" onclick="tipsg('jpnText1','jpnButton1','1')" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
-    <span class="日本依代农舍"></span><br>
+    <a id="senButton1" href="javascript:void(0);" onclick="tipsg('senText1','senButton1','1')" style="opacity:0.3">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
+
+
+
+
     <div id="jpnText1" style="text-align: left;display:block ">
+        <span class="日本依代农舍"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">视野</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/祗园祭.png" width="20px">祗园祭(+2) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="senText1" style="text-align: left;display:block ">
+        <span class="日本依代农舍"></span><br>
         <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -446,8 +524,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['jpnText']
-    var listButton = ['jpnButton']
+    var listText = ['jpnText', 'senText',]
+    var listButton = ['jpnButton', 'senButton',]
 
     function tipsg(a, b, c) {
         cleargasek(0);
