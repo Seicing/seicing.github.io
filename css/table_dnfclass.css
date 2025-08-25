@@ -40,6 +40,7 @@
 .saic {
     display: flex;
     justify-content: left;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1px;
     background: #000;
@@ -54,7 +55,6 @@
 
 .sisaicg {
     height: 106px;
-    align-items: center;
 }
 
 .sisaicg img {
