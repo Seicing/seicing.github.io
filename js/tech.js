@@ -889,20 +889,22 @@ function aoetechPoeRush() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const seic = document.getElementById('seic');
-    const seiccards = seic.children.length;
-    const perRow = 5;
-    const seicremainder = seiccards % perRow;
+    const saic = document.getElementById('saic');
+    const perRow = 5;                 // 每行理论最多卡片数
+    const cardWidth = 150;            // 每张卡片宽度
+    const gap = 1;                     // flex gap
+    const saiccards = saic.children.length;
+    const remainder = saiccards % perRow;
 
-    if (seicremainder !== 0) {
-        const toAdd = perRow - seicremainder;
-        for (let i = 0; i < toAdd; i++) {
-            const placeholder = document.createElement('div');
-            placeholder.style.width = '150px';
-            placeholder.style.height = '100px';
-            placeholder.style.background = 'white';
-            placeholder.style.display = 'inline-block';
-            seic.appendChild(placeholder);
-        }
+    if (remainder !== 0) {
+        // 剩余宽度 = 剩余空间数量 * (卡片宽度 + gap) - 最后 gap
+        const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
+
+        const placeholder = document.createElement('div');
+        placeholder.style.width = remainingWidth + 'px';
+        placeholder.style.height = '100px';      // 可根据卡片高度调整
+        placeholder.style.background = 'white';  // 或透明
+        placeholder.style.flexShrink = '0';      // 不让被压缩
+        saic.appendChild(placeholder);
     }
 });
