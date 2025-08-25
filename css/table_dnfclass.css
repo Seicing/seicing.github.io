@@ -47,7 +47,7 @@
 
 .sisaic {
     width: 150px;
-    height: 105px;
+    height: 106px;
     display: inline-block;
     text-align: center;
     background-color: white;
@@ -63,4 +63,5 @@
 .sisaick {
     padding: 4px;
     border-top: 1px solid #000;
+    background-color: #F5F8FA;
 }
