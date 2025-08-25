@@ -888,17 +888,21 @@ function aoetechPoeRush() {
 }
 
 
-const seic = document.getElementById('seic');
-const seiccards = seic.children.length;
-const perRow = 5;
-const seicremainder = seiccards % perRow;
+document.addEventListener('DOMContentLoaded', () => {
+    const seic = document.getElementById('seic');
+    const seiccards = seic.children.length;
+    const perRow = 5;
+    const seicremainder = seiccards % perRow;
 
-if (seicremainder !== 0) {
-    const toAdd = perRow - seicremainder;
-    for (let i = 0; i < toAdd; i++) {
-        const placeholder = document.createElement('div');
-        placeholder.style.width = '150px';
-        placeholder.style.background = 'white';
-        seic.appendChild(placeholder);
+    if (seicremainder !== 0) {
+        const toAdd = perRow - seicremainder;
+        for (let i = 0; i < toAdd; i++) {
+            const placeholder = document.createElement('div');
+            placeholder.style.width = '150px';
+            placeholder.style.height = '100px';
+            placeholder.style.background = 'white';
+            placeholder.style.display = 'inline-block';
+            seic.appendChild(placeholder);
+        }
     }
-}
+});
