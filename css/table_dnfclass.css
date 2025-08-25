@@ -35,3 +35,31 @@
     height: auto;
     max-height: 100px;
 }
+
+
+.saic {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1px;
+    background: #000;
+}
+
+.sisaic {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+}
+
+.sisaic img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    max-height: 100px;
+}
+
+.sisaick {
+    padding: 4px;
+    border-top: 1px solid #000;
+}

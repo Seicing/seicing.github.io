@@ -889,7 +889,7 @@ function aoetechPoeRush() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const containers = document.querySelectorAll('.seic-container');
+    const containers = document.querySelectorAll('.saic');
     const cardWidth = 150;   // 卡片宽度
     const gap = 1;           // flex gap
 
