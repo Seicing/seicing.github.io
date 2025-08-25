@@ -889,22 +889,24 @@ function aoetechPoeRush() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const saic = document.getElementById('saic');
-    const perRow = 5;                 // 每行理论最多卡片数
-    const cardWidth = 150;            // 每张卡片宽度
-    const gap = 1;                     // flex gap
-    const saiccards = saic.children.length;
-    const remainder = saiccards % perRow;
+    const containers = document.querySelectorAll('.seic-container');
+    const cardWidth = 150;   // 卡片宽度
+    const gap = 1;           // flex gap
 
-    if (remainder !== 0) {
-        // 剩余宽度 = 剩余空间数量 * (卡片宽度 + gap) - 最后 gap
-        const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
+    containers.forEach(container => {
+        const perRow = parseInt(container.dataset.perRow) || 5; // 支持自定义
+        const cards = container.children.length;
+        const remainder = cards % perRow;
 
-        const placeholder = document.createElement('div');
-        placeholder.style.width = remainingWidth + 'px';
-        placeholder.style.height = '100px';      // 可根据卡片高度调整
-        placeholder.style.background = 'white';  // 或透明
-        placeholder.style.flexShrink = '0';      // 不让被压缩
-        saic.appendChild(placeholder);
-    }
+        if (remainder !== 0) {
+            const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
+
+            const placeholder = document.createElement('div');
+            placeholder.style.width = remainingWidth + 'px';
+            placeholder.style.background = 'white';  // 或者 transparent
+            placeholder.style.flexShrink = '0';
+
+            container.appendChild(placeholder);
+        }
+    });
 });
