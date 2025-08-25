@@ -47,13 +47,16 @@
 
 .sisaic {
     width: 150px;
-    height: 106px;
     display: inline-block;
     text-align: center;
     background-color: white;
 }
 
-.sisaic img {
+.sisaicg {
+    height: 106px;
+}
+
+.sisaicg img {
     width: auto;
     max-width: 100px;
     height: auto;
