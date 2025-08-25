@@ -46,8 +46,6 @@
 }
 
 .sisaic {
-    display: flex;
-    align-items: center;
     width: 150px;
     display: inline-block;
     text-align: center;
@@ -56,6 +54,8 @@
 
 .sisaicg {
     height: 106px;
+    display: flex;
+    align-items: center;
 }
 
 .sisaicg img {
