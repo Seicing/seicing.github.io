@@ -807,9 +807,9 @@ let ayanami = {
     "木制要塞效果": "木制要塞效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/罗斯.png' width='20px'>影响力效果：影响力范围内可以多带回20%木材",
     "圣三一修道院效果": "圣三一修道院效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣三一修道院.png' width='20px'>圣三一修道院：圣三一修道院和所有修道院生产僧侣战士的成本-50%",
 
-    "金帐汗国双倍训练": "金帐汗国双倍训练<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>汗国：金帐汗国单位总是花费双倍的成本两个同时训练",
-    "金帐汗国石头军团": "金帐汗国石头军团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>石头军团：可以以较少的石头快速训练独特部队",
-    "金帐汗国敖包": "金帐汗国敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>石材技术和敖包：每个时代都会解锁更多的敖包建造上限",
+    "金帐汗国双倍训练": "金帐汗国双倍训练<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>汗国：金帐汗国单位总是花费双倍的成本两个同时训练",
+    "金帐汗国石头军团": "金帐汗国石头军团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>石头军团：可以以较少的石头快速训练独特部队",
+    "金帐汗国敖包": "金帐汗国敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>石材技术和敖包：每个时代都会解锁更多的敖包建造上限",
     "圣物敖包效果": "圣物敖包效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png' width='20px'>圣物敖包：萨满消耗1个持有的圣物，将其转化为敖包，可突破敖包建造上限",
     "金帐汗国建筑推车": "金帐汗国建筑推车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/建筑推车.png' width='20px'>建筑推车：选择封建时代升级可获得建筑推车，指定一个地点展开为军事生产建筑",
 
