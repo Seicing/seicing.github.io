@@ -840,7 +840,11 @@ let ayanami = {
     "拜占庭石墙塔": "拜占庭石墙塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台",
 
     "马其顿王朝白银": "马其顿王朝白银<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>白银：采集黄金和石头时，提交50%采集量的白银",
-    "拜占庭橄榄园": "拜占庭橄榄园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%",
+    "马其顿王朝大酒庄": "马其顿王朝大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%",
+    "马其顿王朝甲胄骑兵": "马其顿王朝甲胄骑兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贵族学校.png' width='20px'>贵族学校：仅能在贵族学校每40秒花费750白银捆绑训练3个，训练的甲胄骑兵满科技",
+
+
+
 
     "大名光环": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：待补充",
 
