@@ -48,7 +48,7 @@ let ayanami = {
     "可调式横杆": "可调式横杆<br>Adjustable Crossbars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>投石车射程 +1，爆炸范围 +75%，并 +1 抛射物进行攻击",
     "几何学": "几何学<br>Geometry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机的伤害增加 +20%",
     "轻质横梁": "轻质横梁<br>Lightweight Beams<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>轻型冲车攻击速度提升 +20%，战场工程时间减少 -50%",
-    "轻质横梁sul": "轻质横梁<br>Lightweight Beams<br>  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>780<br>轻型冲车攻击速度提升 +20%，战场工程时间减少 -50%",
+    "轻质横梁sul": "轻质横梁<br>Lightweight Beams<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>780<br>轻型冲车攻击速度提升 +20%，战场工程时间减少 -50%",
     "轻质横梁已强化": "轻质横梁(已强化)<br>Lightweight Beams(Improved)<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>轻型冲车攻击速度提升 +30%，战场工程时间减少 -75%。 如果已经研究过轻质横梁，攻击速度提升 +10%，战场工程时间减少 -25%",
 
     "攻城武器": "攻城武器<br>Siege Works<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>新的木工技术可使攻城部队的生命值 +20%",
@@ -610,6 +610,7 @@ let ayanami = {
     "日本依代奇观": "日本依代奇观<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/依代.png' width='20px'>依代：生命值+4000",
     "日本兵营": "日本兵营<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png' width='20px'>心平气和：兵营成本-50%",
     "日本平等院": "日本平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练佛教僧侣成本-33%",
+    "日本平等院2": "日本平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练一向一揆僧侣成本-50%",
 
     "拜占庭建造石头": "拜占庭建造石头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>野外石料：建造建筑成功后获得不同数量的石头",
     "拜占庭橄榄园": "拜占庭橄榄园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得橄榄油效率+60%",
@@ -808,6 +809,9 @@ let ayanami = {
 
     "金帐汗国双倍训练": "金帐汗国双倍训练<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>汗国：金帐汗国单位总是花费双倍的成本两个同时训练",
     "金帐汗国石头军团": "金帐汗国石头军团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>石头军团：可以以较少的石头快速训练独特部队",
+    "金帐汗国敖包": "金帐汗国敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>石材技术和敖包：每个时代都会解锁更多的敖包建造上限",
+    "圣物敖包效果": "圣物敖包效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png' width='20px'>圣物敖包：萨满消耗1个持有的圣物，将其转化为敖包，可突破敖包建造上限",
+    "金帐汗国建筑推车": "金帐汗国建筑推车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/建筑推车.png' width='20px'>建筑推车：选择封建时代升级可获得建筑推车，指定一个地点展开为军事生产建筑",
 
 
     "滩头冲车": "滩头冲车<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>打开冲车侧面防御甲板，驻扎的部队可以从中发射箭矢攻击敌人",
@@ -825,6 +829,8 @@ let ayanami = {
 
     "驿站贸易网络": "驿站贸易网络<br>Yam Network Trade<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>金色大帐每10秒为每个要塞前哨产生10黄金，最多可让6个要塞前哨生效",
     "石头军团": "石头军团<br>Stone Armies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>金色大帐可以以较少的石头快速训练独特部队",
+
+    "拜占庭石墙塔": "拜占庭石墙塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台",
 
     "马其顿王朝白银": "马其顿王朝白银<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>白银：采集黄金和石头时，提交50%采集量的白银",
     "拜占庭橄榄园": "拜占庭橄榄园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%",
@@ -876,7 +882,8 @@ let ayanami = {
     "塞赫万总督": "塞赫万总督<br>Governor of Sehwan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害10%/15%/20%",
     "乌奇总督": "乌奇总督<br>Governor of Uch<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>所有科技便宜15%/20%/30%/50%",
 
-
+    "装甲野兽": "装甲野兽<br>Armored Beasts<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>赋予战象 +20% 生命值和 +4 远程护甲",
+    "回收材料2": "回收材料<br>Salvaged Materials<br> <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
 
 }
 
