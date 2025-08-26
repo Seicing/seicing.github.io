@@ -538,6 +538,13 @@ let ayanami = {
     "雇佣骆驼骑兵": "雇佣 2个骆驼骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>73",
     "雇佣掷弹兵": "雇佣 2个掷弹兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>480 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75",
 
+
+    "雇佣加农炮2": "雇佣 1个皇家加农炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
+    "雇佣一窝蜂2": "雇佣 1个一窝蜂<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
+    "雇佣回回炮2": "雇佣 1个回回炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>63",
+    "雇佣甲胄骑兵": "雇佣 3个精锐甲胄骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
+
+
     "雇佣加农炮": "雇佣 1个皇家加农炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80",
     "雇佣一窝蜂": "雇佣 1个一窝蜂<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40",
     "雇佣回回炮": "雇佣 1个回回炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>63",
