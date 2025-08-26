@@ -835,7 +835,7 @@ let ayanami = {
     "马其顿王朝白银": "马其顿王朝白银<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>白银：采集黄金和石头时，提交50%采集量的白银",
     "拜占庭橄榄园": "拜占庭橄榄园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%",
 
-    "大名光环": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名光环.png' width='20px'>大名光环：待补充",
+    "大名光环": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：待补充",
 
 
 
