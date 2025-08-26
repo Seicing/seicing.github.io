@@ -689,12 +689,13 @@ let ayanami = {
     "城主宫殿冲锋": "城主宫殿冲锋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：步兵冲锋伤害+50%",
     "施瓦本宫殿效果": "施瓦本宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标成本-10%(界面数据为结算后数据)",
     "施瓦本宫殿效果2": "施瓦本宫殿效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标生产的村民成本-66%，生产速度+200%",
-    "亚琛教堂效果": "亚琛教堂效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：高级教士驻扎后可激励大范围内的单位",
+    "亚琛教堂效果": "亚琛教堂效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：高级教士驻扎在亚琛教堂后可激励大范围内的村民",
     "神罗紧急修复": "神罗紧急修复<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令",
     "神罗便宜炮台": "神罗便宜炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：额外炮台便宜20%",
     "神罗哨站视野": "神罗哨站视野<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：哨站视野+20%",
     "神罗码头": "神罗码头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>宗教狂热：码头可供存放圣物；每个圣物能提高所有船只的攻击速度 5% (最高可累积至 25%) ",
     "神罗村民运载": "神罗村民运载<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>手推车：村民拥有先天+40%运载量的加成",
+    "亚琛教堂效果2": "亚琛教堂效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：附近村民的采集速率+15%",
 
     "高级教士激励": "高级教士激励<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高级教士激励.png' width='20px'>高级教士激励：鼓舞村民+35%工作效率",
     "龙之骑士团城主宫殿效果": "龙之骑士团城主宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：单位生产速度+35%，研究速度+35%，生产成本-35%",
@@ -805,6 +806,9 @@ let ayanami = {
     "木制要塞效果": "木制要塞效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/罗斯.png' width='20px'>影响力效果：影响力范围内可以多带回20%木材",
     "圣三一修道院效果": "圣三一修道院效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣三一修道院.png' width='20px'>圣三一修道院：圣三一修道院和所有修道院生产僧侣战士的成本-50%",
 
+    "金帐汗国双倍训练": "金帐汗国双倍训练<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>汗国：金帐汗国单位总是花费双倍的成本两个同时训练",
+    "金帐汗国石头军团": "金帐汗国石头军团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金帐汗国.png' width='20px'>石头军团：可以以较少的石头快速训练独特部队",
+
 
     "滩头冲车": "滩头冲车<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>打开冲车侧面防御甲板，驻扎的部队可以从中发射箭矢攻击敌人",
     "光荣冲锋": "光荣冲锋<br>Glorious Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁光荣冲锋，激活后，部队在冲锋时受到的伤害减少，并提升速度",
@@ -822,7 +826,10 @@ let ayanami = {
     "驿站贸易网络": "驿站贸易网络<br>Yam Network Trade<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>金色大帐每10秒为每个要塞前哨产生10黄金，最多可让6个要塞前哨生效",
     "石头军团": "石头军团<br>Stone Armies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>金色大帐可以以较少的石头快速训练独特部队",
 
+    "马其顿王朝白银": "马其顿王朝白银<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>白银：采集黄金和石头时，提交50%采集量的白银",
+    "拜占庭橄榄园": "拜占庭橄榄园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%",
 
+    "大名光环": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名光环.png' width='20px'>大名光环：待补充",
 
 
 
@@ -841,6 +848,14 @@ let ayanami = {
     "逆刃刀": "逆刃刀<br>Rhomphaia Swords<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>瓦兰吉卫队和瓦兰吉掠夺者装备逆刃刀，提高伤害",
     "罗马之火": "罗马之火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>扭力弩炮获得希腊之火，射击后可以点燃地面",
 
+    "信仰穹顶建筑效果2": "信仰穹顶建筑效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：伊玛目和医疗战象黄金成本-65，医疗战象可提前一个时代解锁",
+    "胜利之塔效果2": "胜利之塔效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：在胜利之塔和图格鲁克巴德堡垒的影响范围内生产大象，可将大象攻击速度提高15%",
+    "工作象提交": "工作象提交<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png' width='20px'>工作象：采集资源提交到工作象时获得5%额外资源",
+    "图格鲁克科技": "图格鲁克科技<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/图格鲁克.png' width='20px'>发展补助金：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技便宜15%/20%/30%/50%",
+    "伽罗尔总督效果": "伽罗尔总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伽罗尔总督.png' width='20px'>伽罗尔总督：在图格鲁克巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+20/+35/+50/+65生命值",
+    "木尔坦总督效果": "木尔坦总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦总督.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+100%",
+    "塞赫万总督效果": "塞赫万总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塞赫万总督.png' width='20px'>塞赫万总督：圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害10%/15%/20%",
+    "珀格尔总督效果": "珀格尔总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珀格尔总督.png' width='20px'>珀格尔总督：在图格鲁克巴德堡垒2/2/2/3格范围内的建筑每分钟自动生成20/30/40/40食物，在4级时，额外生产获得食物量 20% 的石头",
 
     "附加伤害": "附加伤害<br>Collateral Damage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>187 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>为大象的獠牙使用致命尖刺进行加固，增加伤害，并对途经的所有物体造成伤害",
     "象夫": "象夫<br>Mahouts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>大象移动速度+10%",
