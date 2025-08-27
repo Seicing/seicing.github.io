@@ -810,17 +810,17 @@ let ayanami = {
     "城堡网络效果2": "城堡网络效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：处于城堡网络内增加20%/30%的攻击速度",
 
     "英国二重射箭槽": "英国二重射箭槽<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：拥有2个初始射箭槽",
-    "英国二重射箭槽2": "英国二重射箭槽2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特.png' width='20px'>防御城镇：拥有2个初始射箭槽",
+    "英国二重射箭槽2": "英国二重射箭槽2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>防御城镇：拥有2个初始射箭槽",
 
     "英国城堡动员兵": "英国城堡动员兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>城堡生产：可以在城堡生产所有作战部队",
     "英国便宜农田": "英国便宜农田<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>农业岛屿：农田便宜50%",
     "英国农田影响力": "英国农田影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>影响力：磨坊影响力范围内提升20%/25%/30%/30%农田食物收集率(根据时代变化)",
 
     "英国便宜船只": "英国便宜船只<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>造船工：船只造价-10%",
-    "英国便宜船只2": "英国便宜船只2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特.png' width='20px'>造船工：船只造价-10%",
+    "英国便宜船只2": "英国便宜船只2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>造船工：船只造价-10%",
 
     "英国短弓村民": "英国短弓村民<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
-    "英国短弓村民2": "英国短弓村民2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
+    "英国短弓村民2": "英国短弓村民2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
 
 
     "温嘉德宫殿效果": "温嘉德宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/温嘉德宫殿.png' width='20px'>温嘉德宫殿：可以以便宜的价格生产由他们组成的军队",
@@ -957,7 +957,7 @@ let ayanami = {
     "信仰穹顶建筑效果2": "信仰穹顶建筑效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：伊玛目和医疗战象黄金成本-65，医疗战象可提前一个时代解锁",
     "胜利之塔效果2": "胜利之塔效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：在胜利之塔和图格鲁克巴德堡垒的影响范围内生产大象，可将大象攻击速度提高15%",
     "工作象提交": "工作象提交<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png' width='20px'>工作象：采集资源提交到工作象时获得5%额外资源",
-    "图格鲁克科技": "图格鲁克科技<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/图格鲁克.png' width='20px'>发展补助金：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技便宜15%/20%/30%/50%",
+    "图格鲁克科技": "图格鲁克科技<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>发展补助金：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技便宜15%/20%/30%/50%",
     "伽罗尔总督效果": "伽罗尔总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伽罗尔总督.png' width='20px'>伽罗尔总督：在图格鲁克巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+20/+35/+50/+65生命值",
     "木尔坦总督效果": "木尔坦总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦总督.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+100%",
     "塞赫万总督效果": "塞赫万总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塞赫万总督.png' width='20px'>塞赫万总督：圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害10%/15%/20%",
