@@ -602,6 +602,7 @@ let ayanami = {
     "国王学院降价": "国王学院降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/国王学院.png' width='20px'>国王学院：所有科技的研究成本-15%",
 
     "日本大名城镇中心": "日本大名城镇中心<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名光环.png' width='20px'>大名光环：村民在大名府邸/大名宫殿/幕府城附近耕作效率+20%/+40%/+60%",
+
     "日本额外石头": "日本额外石头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png' width='20px'>银矿开采：村民开采金矿时额外产出20%石头",
     "日本额外石头2": "日本额外石头2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战国大名.png' width='20px'>银矿开采：村民开采金矿时额外产出20%石头",
 
@@ -626,7 +627,10 @@ let ayanami = {
     "拜占庭回血": "拜占庭回血<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朝圣者之瓶.png' width='20px'>地下水宫 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒",
     "拜占庭边防部队防御": "拜占庭边防部队防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/边防部队防御.png' width='20px'>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成(+3/+4/+5/+6对大象额外伤害)",
     "拜占庭改良火炬": "拜占庭改良火炬<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/纵火者.png' width='20px'>纵火者：研发纵火者科技后，侦察兵附近的部队火炬伤害+25%",
+
     "拜占庭海军部署": "拜占庭海军部署<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>海军部署：军事单位从运输船卸载后移动速度提高",
+    "拜占庭海军部署2": "拜占庭海军部署2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>海军部署：军事单位从运输船卸载后移动速度提高",
+
     "拜占庭凯旋": "拜占庭凯旋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/凯旋.png' width='20px'>帝国竞技场 - 凯旋：激活后使骑兵伤害+4，移动速度+10%，每秒恢复2生命值",
     "拜占庭商队橄榄油": "拜占庭商队橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：商队生产20%贸易量的橄榄油",
     "拜占庭水池征兵": "拜占庭水池征兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/征兵.png' width='20px'>水池 - 征兵：根据水位，水池影响力范围内增加20%/40%/60%/80%/100%军事单位生产率",
@@ -656,9 +660,11 @@ let ayanami = {
     "江南塔免费": "江南塔免费<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/江南塔.png' width='20px'>江南塔：兵营、靶场或马厩建成时可免费获得 1 个长矛兵、诸葛弩或骑手",
 
     "龙骑团高级教士限制": "龙骑团高级教士限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>文明固有限制：高级教士无法激励村民提高村民效率",
+
     "法兰西便宜城堡": "法兰西便宜城堡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>城堡影响力：城堡造价-10%",
     "法兰西码头人口": "法兰西码头人口<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>皇家造船厂：码头提供10人口",
-    "贞德码头人口": "贞德码头人口<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>皇家造船厂：码头提供10人口",
+    "贞德码头人口": "贞德码头人口<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png' width='20px'>皇家造船厂：码头提供10人口",
+
     "神罗行军演习": "神罗行军演习<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>行军演习：步兵在黑暗时代移动速度+5%，在封建时代之后移动速度+10%",
     "龙骑士团步兵修建冲车": "龙骑士团步兵修建冲车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>文明固有加成：轻型冲车的战场建造时间为45秒",
     "龙骑士团步兵修建攻城塔": "龙骑士团步兵修建攻城塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>文明固有加成：攻城塔的战场建造时间为19.5秒",
@@ -679,19 +685,25 @@ let ayanami = {
     "信仰穹顶建筑效果": "信仰穹顶建筑效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：学者成本-50%",
     "德里免费": "德里免费<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学术成就：科技免费",
     "德里清真寺": "德里清真寺<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学者文化：被标记为独特建筑，在时代1就可以建造，并且造价便宜50%",
+
     "穆斯林浆果丛产量": "穆斯林浆果丛产量<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>花园赏金：磨坊光环范围内浆果丛的可采集食物量+100%",
+
     "穆斯林村民果丛": "穆斯林村民果丛<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
+    "穆斯林村民果丛2": "穆斯林村民果丛2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
+    "穆斯林村民果丛3": "穆斯林村民果丛3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
     "穆斯林村民果丛4": "穆斯林村民果丛4<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
 
-
-    "穆斯林村民果丛2": "穆斯林村民果丛2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
-
-    "穆斯林村民果丛3": "穆斯林村民果丛3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>花园赏金：村民采集浆果的运载量+25%",
-
     "手稿贸易效果": "手稿贸易效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>手稿贸易：驻扎学者码头效率+20%",
+
     "德里木造防御": "德里木造防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>边界防御工事：步兵可以建造木制防御设施",
+    "德里木造防御2": "德里木造防御2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>边界防御工事：步兵可以建造木制防御设施",
+
     "德里码头驻扎数": "德里码头驻扎数<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>防御水手：德里苏丹国码头可以驻扎4个单位",
+    "德里码头驻扎数2": "德里码头驻扎数2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>防御水手：德里苏丹国码头可以驻扎4个单位",
+
     "德里渔船": "德里渔船<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>防御水手：德里苏丹国渔船武装自己，生命值+50%，可从铁匠铺受益，在四个时代基础伤害为4/6/7/9，额外伤害为+1/+2/+3/+4",
+    "德里渔船2": "德里渔船2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>防御水手：德里苏丹国渔船武装自己，生命值+50%，可从铁匠铺受益，在四个时代基础伤害为4/6/7/9，额外伤害为+1/+2/+3/+4",
+
     "德里封建升级": "德里城堡升级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学术成就：升级到坚韧等级只需要52秒，无需额外资源",
     "德里城堡升级": "德里城堡升级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学术成就：升级到老练等级只需要300秒，无需额外资源",
     "德里帝王升级": "德里帝王升级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学术成就：升级到精锐等级只需要720秒，无需额外资源",
@@ -706,11 +718,22 @@ let ayanami = {
     "施瓦本宫殿效果": "施瓦本宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标成本-10%(界面数据为结算后数据)",
     "施瓦本宫殿效果2": "施瓦本宫殿效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标生产的村民成本-66%，生产速度+200%",
     "亚琛教堂效果": "亚琛教堂效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：高级教士驻扎在亚琛教堂后可激励大范围内的村民",
+
     "神罗紧急修复": "神罗紧急修复<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令",
+    "神罗紧急修复2": "神罗紧急修复2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令",
+
     "神罗便宜炮台": "神罗便宜炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：额外炮台便宜20%",
+    "神罗便宜炮台2": "神罗便宜炮台2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>炮台建筑学：额外炮台便宜20%",
+
     "神罗哨站视野": "神罗哨站视野<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：哨站视野+20%",
+    "神罗哨站视野2": "神罗哨站视野2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>炮台建筑学：哨站视野+20%",
+
     "神罗码头": "神罗码头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>宗教狂热：码头可供存放圣物；每个圣物能提高所有船只的攻击速度 5% (最高可累积至 25%) ",
+    "神罗码头2": "神罗码头2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>宗教狂热：码头可供存放圣物；每个圣物能提高所有船只的攻击速度 5% (最高可累积至 25%) ",
+
     "神罗村民运载": "神罗村民运载<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>手推车：村民拥有先天+40%运载量的加成",
+    "神罗村民运载2": "神罗村民运载2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>手推车：村民拥有先天+40%运载量的加成",
+
     "亚琛教堂效果2": "亚琛教堂效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：附近村民的采集速率+15%",
 
     "高级教士激励": "高级教士激励<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高级教士激励.png' width='20px'>高级教士激励：鼓舞村民+35%工作效率",
@@ -721,14 +744,18 @@ let ayanami = {
     "黄金时代阶段III": "黄金时代阶段III<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png' width='20px'>黄金时代阶段Ⅲ：村民采集速度 +20%、研究速度 +20.5%、生产速度 +25%",
 
     "智慧宫效果": "智慧宫效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/智慧宫.png' width='20px'>智慧宫：影响力范围内火焰护甲+5",
+
     "大食码头": "大食码头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>造船厂：码头的建造成本减少50%",
+    "大食码头2": "大食码头2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>造船厂：码头的建造成本减少50%",
+
     "大食手搓": "大食手搓<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造冲车、攻城塔、扭力弩炮、轻型投石车",
+    "大食手搓2": "大食手搓2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造冲车、攻城塔、扭力弩炮、轻型投石车",
+
     "大食野猪限制": "大食野猪限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物",
     "大食野猪限制4": "大食野猪限制4<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物",
 
     "大食野猪限制2": "大食野猪限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物",
     "大食野猪限制3": "大食野猪限制3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物",
-    "大食便宜商人": "大食便宜商人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>贸易经济：商人成本-33%",
 
     "中国加速建造": "中国加速建造<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：建造速度+100%",
     "中国加速建造2": "中国加速建造2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：建造速度+100%",
@@ -736,13 +763,28 @@ let ayanami = {
     "朝廷命官效果": "朝廷命官效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/监督.png' width='20px'>监督：提升150%监督目标效率",
     "皇陵效果": "皇陵效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/皇陵.png' width='20px'>皇陵：影响力范围内朝代单位成本-30%",
     "天文钟楼效果": "天文钟楼效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/天文钟楼.png' width='20px'>天文钟楼：生产钟楼攻城武器，生命值+50%(天文钟楼出产的攻城器不接受军事学院的加成)",
+
     "中国码头": "中国码头<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：码头工作速度加快10%",
+    "中国码头2": "中国码头2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：码头工作速度加快10%",
+
     "中国城堡限制": "中国城堡限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：基础建造时间为120秒",
+    "中国城堡限制2": "中国城堡限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：基础建造时间为120秒",
+
     "中国木栅栏限制": "中国木栅栏限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：基础建造时间为2.5秒",
+    "中国木栅栏限制2": "中国木栅栏限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：基础建造时间为2.5秒",
+
     "中国哨站限制": "中国哨站限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：基础建造时间为40秒",
+    "中国哨站限制2": "中国哨站限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：基础建造时间为40秒",
+
     "中国石墙限制": "中国石墙限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：基础建造时间为10.5秒",
+    "中国石墙限制2": "中国石墙限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：基础建造时间为10.5秒",
+
     "中国石门限制": "中国石门限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：基础建造时间+50%",
+    "中国石门限制2": "中国石门限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：基础建造时间+50%",
+
     "中国石墙塔限制": "中国石墙塔限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png' width='20px'>快速建造：基础建造时间是120秒",
+    "中国石墙塔限制2": "中国石墙塔限制2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png' width='20px'>快速建造：基础建造时间是120秒",
+
     "中国官员降价": "中国官员降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/翰林院.png' width='20px'>翰林院：在此地标生产成本-30%",
 
 
@@ -766,13 +808,17 @@ let ayanami = {
 
     "城堡网络效果": "城堡网络效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：接近敌人会触发城堡网络加成，增加范围内部队20%/30%攻击速度",
     "城堡网络效果2": "城堡网络效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：处于城堡网络内增加20%/30%的攻击速度",
+
     "英国二重射箭槽": "英国二重射箭槽<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：拥有2个初始射箭槽",
     "英国二重射箭槽2": "英国二重射箭槽2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特.png' width='20px'>防御城镇：拥有2个初始射箭槽",
 
     "英国城堡动员兵": "英国城堡动员兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>城堡生产：可以在城堡生产所有作战部队",
     "英国便宜农田": "英国便宜农田<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>农业岛屿：农田便宜50%",
     "英国农田影响力": "英国农田影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>影响力：磨坊影响力范围内提升20%/25%/30%/30%农田食物收集率(根据时代变化)",
+
     "英国便宜船只": "英国便宜船只<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>造船工：船只造价-10%",
+    "英国便宜船只2": "英国便宜船只2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特.png' width='20px'>造船工：船只造价-10%",
+
     "英国短弓村民": "英国短弓村民<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
     "英国短弓村民2": "英国短弓村民2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
 
@@ -799,10 +845,13 @@ let ayanami = {
 
     "法国城堡影响力": "法国城堡影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>影响力：城堡影响力范围内生产成本-20%",
     "法国免费铁匠": "法国免费铁匠<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>铁匠的恩赐：近战伤害科技免费研究",
-    "法国趸船护甲": "法国趸船护甲<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>铁匠的恩赐：趸船远程护甲+1",
     "法国资源商队": "法国资源商队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>贸易经济：商人可以将任何资源送回市场(石头除外)",
     "法国资源商队2": "法国资源商队2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>贸易经济：游戏开始时在小地图上显示所有贸易站",
     "法国资源商队3": "法国资源商队3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>贸易经济：商船带回的资源量+20%",
+    "圣女贞德资源商队": "圣女贞德资源商队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png' width='20px'>贸易经济：商人可以将任何资源送回市场(石头除外)",
+    "圣女贞德资源商队2": "圣女贞德资源商队2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png' width='20px'>贸易经济：游戏开始时在小地图上显示所有贸易站",
+    "圣女贞德资源商队3": "圣女贞德资源商队3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png' width='20px'>贸易经济：商船带回的资源量+20%",
+
 
     "草原防卫据点效果": "草原防卫据点效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草原防卫据点.png' width='20px'>草原防卫据点：存放的黄金量+50%",
     "汗国宫殿效果": "汗国宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗国宫殿.png' width='20px'>汗国宫殿：只能由汗国宫殿生产",
@@ -827,7 +876,9 @@ let ayanami = {
     "敖包双倍": "敖包双倍<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>影响力：敖包影响力范围内可以花费石头双倍训练部队(村民为125石头)，并加快牧场的效率",
     "蒙古掠夺": "蒙古掠夺<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/突袭赏金.png' width='20px'>突袭赏金：点燃建筑物掠夺25食物、25黄金",
     "丝绸之路": "丝绸之路<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/丝绸之路.png' width='20px'>丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金",
+
     "蒙古运输": "蒙古运输<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>强化运输：生命值+50%、移动速度+15% ",
+    "蒙古运输2": "蒙古运输2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>强化运输：生命值+50%、移动速度+15% ",
 
     "奥斯曼木材折扣": "奥斯曼木材折扣<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>军事诱惑：造价减少40%",
     "奥斯曼生产加速": "奥斯曼生产加速<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>影响力：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升20%/20%/30%/40%",
