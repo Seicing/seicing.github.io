@@ -847,6 +847,7 @@ let ayanami = {
 
 
     "大名光环": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：待补充",
+    "战国大名早期大筒": "战国大名早期大筒<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/解锁大筒兵.png' width='20px'>解锁大筒兵：解锁城堡时代的早期大筒兵",
 
 
 
