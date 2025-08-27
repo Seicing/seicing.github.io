@@ -962,7 +962,7 @@ let ayanami = {
     "木尔坦总督效果": "木尔坦总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦总督.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+100%",
     "塞赫万总督效果": "塞赫万总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塞赫万总督.png' width='20px'>塞赫万总督：圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害10%/15%/20%",
     "珀格尔总督效果": "珀格尔总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珀格尔总督.png' width='20px'>珀格尔总督：在图格鲁克巴德堡垒2/2/2/3格范围内的建筑每分钟自动生成20/30/40/40食物，在4级时，额外生产获得食物量 20% 的石头",
-    "阿杰梅尔总督": "阿杰梅尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/阿杰梅尔总督.png' width='20px'>阿杰梅尔总督：在4级时，埃米尔战士训练速度 +50%，生命值 +50%",
+    "阿杰梅尔总督效果": "阿杰梅尔总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/阿杰梅尔总督.png' width='20px'>阿杰梅尔总督：在4级时，埃米尔战士训练速度 +50%，生命值 +50%",
 
 
     "附加伤害": "附加伤害<br>Collateral Damage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>187 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>为大象的獠牙使用致命尖刺进行加固，增加伤害，并对途经的所有物体造成伤害",
@@ -985,7 +985,7 @@ let ayanami = {
     "乌奇总督": "乌奇总督<br>Governor of Uch<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>所有科技便宜15%/20%/30%/50%",
 
     "装甲野兽": "装甲野兽<br>Armored Beasts<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>赋予战象 +20% 生命值和 +4 远程护甲",
-    "回收材料2": "回收材料<br>Salvaged Materials<br> <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
+    "回收材料2": "回收材料<br>Salvaged Materials<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
 
 }
 
