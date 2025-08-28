@@ -960,7 +960,7 @@ let ayanami = {
     "信仰穹顶建筑效果2": "信仰穹顶建筑效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：伊玛目和医疗战象黄金成本-65，医疗战象可提前一个时代解锁",
     "胜利之塔效果2": "胜利之塔效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：在胜利之塔和图格鲁克巴德堡垒的影响范围内生产大象，可将大象攻击速度提高15%",
     "工作象提交": "工作象提交<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png' width='20px'>工作象：采集资源提交到工作象时获得5%额外资源",
-    "图格鲁克科技": "图格鲁克科技<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>发展补助金：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技便宜15%/20%/30%/50%",
+    "图格鲁克科技": "图格鲁克科技<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>发展补助金：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技折算后变为原科技的102%/96%/84%/60%价格",
     "伽罗尔总督效果": "伽罗尔总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伽罗尔总督.png' width='20px'>伽罗尔总督：在图格鲁克巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+20/+35/+50/+65生命值",
     "木尔坦总督效果": "木尔坦总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦总督.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+100%",
     "塞赫万总督效果": "塞赫万总督效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塞赫万总督.png' width='20px'>塞赫万总督：圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害10%/15%/20%",
