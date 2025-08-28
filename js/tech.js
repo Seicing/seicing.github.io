@@ -953,6 +953,9 @@ let ayanami = {
 
     "逆刃刀": "逆刃刀<br>Rhomphaia Swords<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>瓦兰吉卫队和瓦兰吉掠夺者装备逆刃刀，提高伤害",
     "罗马之火": "罗马之火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>扭力弩炮获得希腊之火，射击后可以点燃地面",
+    "皇家掠夺": "皇家掠夺<br>Polutasvarf<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
+    "研磨石": "研磨石<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
+
 
     "信仰穹顶建筑效果2": "信仰穹顶建筑效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：伊玛目和医疗战象黄金成本-65，医疗战象可提前一个时代解锁",
     "胜利之塔效果2": "胜利之塔效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：在胜利之塔和图格鲁克巴德堡垒的影响范围内生产大象，可将大象攻击速度提高15%",
@@ -966,7 +969,7 @@ let ayanami = {
 
 
     "附加伤害": "附加伤害<br>Collateral Damage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>187 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>为大象的獠牙使用致命尖刺进行加固，增加伤害，并对途经的所有物体造成伤害",
-    "象夫": "象夫<br>Mahouts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>大象移动速度+10%",
+    "象夫": "象夫<br>Mahouts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>大象移动速度+10%",
     "大象看护人": "大象看护人<br>Elephant Caretakers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>脱离战斗状态的大象每 2 秒恢复 2 生命值",
 
     "编织篮子": "编织篮子<br>Woven Baskets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>187 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>提交到工作象的资源量 +20%",
