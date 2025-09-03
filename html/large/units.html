@@ -441,53 +441,48 @@
     id="IuireSeparation3">马奇比亚露塔</a>
 <br>
 
-<div id="WesternSeigineWarrior">
+<div id="Kokodayo">
     <table id="customers" style="width:800px">
         <tr>
             <td rowspan="9" width="150px">
-                <img width="150px" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西西景武士.png">
+
             </td>
-            <td colspan="2">国产武侠作品男主角的名字</td>
+            <td colspan="2"> </td>
         </tr>
         <tr>
-            <td width="100px">惊云<br>Gingwen</td>
-            <td>【待补充】</td>
+            <td width="100px"> <br> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>景天<br>Gingtin</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>无忌<br>Mougei</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>知秋<br>Zyichau</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>南宫<br>Namgung</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>百里<br>Bakrei</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>剑平<br>Gimpyeng</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
         <tr>
-            <td>消摇<br>Siuyiu</td>
-            <td>【待补充】</td>
+            <td> </td>
+            <td> </td>
         </tr>
     </table>
 </div>
-
-
-
-
-
 
 
 
@@ -783,7 +778,8 @@
         document.getElementById("Sentinel3").style.color = "#d0c9b7";
         document.getElementById(a).style.color = "blue";
         var aaposbo15 = document.querySelector("#Describe937");
-        aaposbo15.innerHTML = a.slice(0, -1);;
+        aaposbo15.innerHTML = a.slice(0, -1);
+        loadPage();
     }
 
     function tipsgo(a) {
@@ -801,6 +797,7 @@
         document.getElementById(a).style.color = "blue";
         var aaposbo16 = document.querySelector("#Describe9372");
         aaposbo16.innerHTML = a.slice(0, -1);
+        loadPage();
     }
 
 
@@ -911,6 +908,25 @@
         document.getElementById("近卫").style.display = "none";
         document.getElementById("市民").style.display = "none";
         document.getElementById(a).style.display = "block";
+    }
+
+
+    function loadPage() {
+        // 读取 span 的内容
+        const part1 = document.getElementById("Describe9372")?.textContent || "";
+        const part2 = document.getElementById("Describe937")?.textContent || "";
+
+        // 拼接成变量
+        const sbx9022 = part1 + part2;
+
+        // 构造网页路径
+        const pagePath = `https://seicing.com/js/laviclass/${sbx9022}.html`;
+
+        // 将 div 的内容替换成 iframe 显示网页
+        const targetDiv = document.getElementById("Kokodayo");
+        if (targetDiv) {
+            targetDiv.innerHTML = `<iframe src="${pagePath}" frameborder="0"></iframe>`;
+        }
     }
 
 
