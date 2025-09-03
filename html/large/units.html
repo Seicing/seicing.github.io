@@ -412,7 +412,7 @@
 
 <br><br><br>
 <b>默认名称以及其元出典一览</b><br>
-选择地区和职介显示默认名称表，第一顺位代表了历史上此职介最出名的皇帝之名，其余为同出处补充或历史上其他出名的皇帝的名称<br>
+选择地区和职介显示默认名称表，第一顺位代表了历史上此职介最出名的皇帝之名，其余为同出处补充或历史上其他出名的皇帝的名称(陆续完善中)<br>
 <a href="javascript:void(0);" onclick="tipsbo('Warrior3')" style="color:#d0c9b7" id="Warrior3">武士</a> ·
 <a href="javascript:void(0);" onclick="tipsbo('Phalanx3')" style="color:#d0c9b7" id="Phalanx3">兵方队</a> ·
 <a href="javascript:void(0);" onclick="tipsbo('Skirmisher3')" style="color:#d0c9b7" id="Skirmisher3">散兵</a> ·
@@ -431,7 +431,7 @@
     id="SouthernSeigine3">室利刹陀罗</a>·
 <a href="javascript:void(0);" onclick="tipsgo('NorthernSeigine3')" style="color:#d0c9b7" id="NorthernSeigine3">任那</a> ·
 <a href="javascript:void(0);" onclick="tipsgo('EasternSeigine3')" style="color:#d0c9b7" id="EasternSeigine3">伊萨赫尔</a>·
-<a href="javascript:void(0);" onclick="tipsgo('GrandDelta3')" style="color:#d0c9b7" id="GrandDelta2">卡哈扎塔</a> ·
+<a href="javascript:void(0);" onclick="tipsgo('GrandDelta3')" style="color:#d0c9b7" id="GrandDelta3">卡哈扎塔</a> ·
 <a href="javascript:void(0);" onclick="tipsgo('EasternAltrata3')" style="color:#d0c9b7" id="EasternAltrata3">伊拉修莱德</a> ·
 <a href="javascript:void(0);" onclick="tipsgo('WesternAltrata3')" style="color:#d0c9b7" id="WesternAltrata3">艾特拉塔</a> ·
 <a href="javascript:void(0);" onclick="tipsgo('InnerAltrata3')" style="color:#d0c9b7" id="InnerAltrata3">伊奥那尼亚</a> ·
@@ -440,6 +440,54 @@
 <a href="javascript:void(0);" onclick="tipsgo('IuireSeparation3')" style="color:#d0c9b7"
     id="IuireSeparation3">马奇比亚露塔</a>
 <br>
+
+<div id="WesternSeigineWarrior">
+    <table id="customers" style="width:800px">
+        <tr>
+            <td colspan="9">
+                <img width="150px" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西西景武士.png">
+            </td>
+            <td>国产武侠作品男主角的名字</td>
+        </tr>
+        <tr>
+            <td>惊云<br>Gingwen</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>景天<br>Gingtin</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>无忌<br>Mougei</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>知秋<br>Zyichau</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>南宫<br>Namgung</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>百里<br>Bakrei</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>剑平<br>Gimpyeng</td>
+            <td>【待补充】</td>
+        </tr>
+        <tr>
+            <td>消摇<br>Siuyiu</td>
+            <td>【待补充】</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
 
 
 <span id="Describe937"> </span><span id="Describe9372"> </span>
@@ -731,7 +779,7 @@
         document.getElementById("Sentinel3").style.color = "#d0c9b7";
         document.getElementById(a).style.color = "blue";
         var aaposbo15 = document.querySelector("#Describe937");
-        aaposbo15.innerHTML = a.substring(0, lastIndex);
+        aaposbo15.innerHTML = a.slice(0, -1);;
     }
 
     function tipsgo(a) {
@@ -748,7 +796,7 @@
         document.getElementById("IuireSeparation3").style.color = "#d0c9b7";
         document.getElementById(a).style.color = "blue";
         var aaposbo16 = document.querySelector("#Describe9372");
-        aaposbo16.innerHTML = a.substring(0, lastIndex);
+        aaposbo16.innerHTML = a.slice(0, -1);
     }
 
 
