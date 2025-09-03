@@ -441,50 +441,7 @@
     id="IuireSeparation3">马奇比亚露塔</a>
 <br>
 
-<div id="Kokodayo">
-    <table id="customers" style="width:800px">
-        <tr>
-            <td rowspan="9" width="150px">
-
-            </td>
-            <td colspan="2"> </td>
-        </tr>
-        <tr>
-            <td width="100px"> <br> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-    </table>
-</div>
-
-
+<div id="Kokodayo"></div>
 
 <br><br><br>
 <b>地区别筛选器</b><br>
@@ -911,7 +868,7 @@
     }
 
 
-    function loadPage() {
+    async function loadPage() {
         // 读取 span 的内容
         const part1 = document.getElementById("Describe9372")?.textContent || "";
         const part2 = document.getElementById("Describe937")?.textContent || "";
@@ -921,14 +878,31 @@
 
         // 构造网页路径
         const pagePath = `https://seicing.com/js/laviclass/${sbx9022}.html`;
+        const fallbackPath = `https://seicing.com/js/laviclass/none.html`;
 
-        // 将 div 的内容替换成 iframe 显示网页
         const targetDiv = document.getElementById("Kokodayo");
-        if (targetDiv) {
-            targetDiv.innerHTML = `<iframe src="${pagePath}" frameborder="0"></iframe>`;
+
+        try {
+            // 请求主要页面
+            const response = await fetch(pagePath);
+            if (!response.ok) throw new Error("页面加载失败: " + response.status);
+            const html = await response.text();
+            targetDiv.innerHTML = html;
+        } catch (err) {
+            console.error("加载失败，尝试备用页面:", err);
+
+            // 加载备用页面
+            try {
+                const fallbackRes = await fetch(fallbackPath);
+                if (!fallbackRes.ok) throw new Error("备用页面也加载失败: " + fallbackRes.status);
+                const fallbackHtml = await fallbackRes.text();
+                targetDiv.innerHTML = fallbackHtml;
+            } catch (e) {
+                console.error(e);
+                targetDiv.innerText = "加载失败";
+            }
         }
     }
-
 
 </script>
 
