@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("byz").style.opacity = "1";
+            document.getElementById("mac").style.opacity = "1";
         })
     })
 </script>
@@ -209,6 +210,48 @@
             </tr>
         </table>
     </div>
+
+    <div id="macText0" style="text-align: left;display:none ">
+        <span class="拜占庭海军部署"></span><br>
+        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+20%)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重型德罗蒙战舰.png" width="20px">重型德罗蒙战舰(点燃海面) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+1)<br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重型德罗蒙战舰.png" width="20px">重型德罗蒙战舰(掌舵人冷却时间减少20秒) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 </div>
 
 <br><br><br>
@@ -298,8 +341,8 @@
     window.onload = aoetechPoeRush()
 </script>
 <script>
-    var listText = ['byzText',]
-    var listButton = ['byzButton',]
+    var listText = ['byzText', 'macText',]
+    var listButton = ['byzButton', 'macButton',]
 
     function tipsg(a, b, c) {
         cleargasek(c);

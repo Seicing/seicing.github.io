@@ -926,13 +926,18 @@ let ayanami = {
     "马其顿王朝大酒庄": "马其顿王朝大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%",
     "马其顿王朝甲胄骑兵": "马其顿王朝甲胄骑兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贵族学校.png' width='20px'>贵族学校：仅能在贵族学校每40秒花费750白银捆绑训练3个，训练的甲胄骑兵满科技",
 
+    "马其顿王朝英雄侦察兵光环": "马其顿王朝英雄侦察兵光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英雄侦察兵光环.png' width='20px'>英雄侦察兵光环：提高火炬伤害",
+    "马其顿王朝英雄骑手光环": "马其顿王朝英雄骑手光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英雄骑手光环.png' width='20px'>英雄骑手光环：强化骑兵的伤害",
+    "马其顿王朝英雄瓦兰吉突袭者光环": "马其顿王朝英雄瓦兰吉突袭者光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英雄瓦兰吉突袭者光环.png' width='20px'>英雄瓦兰吉突袭者光环：提高附近步兵的移动速度",
 
 
+    "马其顿王朝地下水宫黄金": "马其顿王朝地下水宫黄金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的黄金",
+    "马其顿王朝地下水宫木材": "马其顿王朝地下水宫木材<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的木材",
+    "马其顿王朝地下水宫食物": "马其顿王朝地下水宫食物<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的食物",
+    "马其顿王朝地下水宫效率": "马其顿王朝地下水宫效率<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内工作效率增加",
 
     "大名光环": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：待补充",
     "战国大名早期大筒": "战国大名早期大筒<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/解锁大筒兵.png' width='20px'>解锁大筒兵：解锁城堡时代的早期大筒兵",
-
-
 
     "一向一揆生命值和伤害": "一向一揆生命值和伤害<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
     "一向一揆恢复": "一向一揆恢复<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
@@ -952,8 +957,11 @@ let ayanami = {
     "改良长枪": "改良长枪<br>Improved Yari<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>【待补充】",
 
     "逆刃刀": "逆刃刀<br>Rhomphaia Swords<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>瓦兰吉卫队和瓦兰吉掠夺者装备逆刃刀，提高伤害",
-    "罗马之火": "罗马之火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>扭力弩炮获得希腊之火，射击后可以点燃地面",
-    "皇家掠夺": "皇家掠夺<br>Polutasvarf<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
+
+
+    "长期围城": "长期围城<br>Prolonged Siege<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城单位在设置固定后每10秒获得10%的额外伤害，最多可以累积到50%额外伤害",
+    "罗马之火": "罗马之火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮攻击速度+15%，并且他们的弩箭在撞击敌人后可以生成希腊之火",
+    "皇家掠夺": "皇家掠夺<br>Polutasvarf<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>每个瓦兰吉系列单位在摧毁城镇中心或地标时都会为玩家提供大量白银",
 
 
     "研磨石": "研磨石<br>Sharpening Stones<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>275 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>远程部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次",
@@ -992,8 +1000,9 @@ let ayanami = {
     "承重框架": "承重框架<br>Carrying Frame<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>提交到工作象的资源量 +30%",
     "大象挽具": "大象挽具<br>Elephant Harness<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>提交到工作象的资源量 +40%",
 
-    "沙希墙": "沙希墙<br>Shahi Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
-    "红砖要塞": "红砖要塞<br>Red Brick Bastion<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
+    "沙希墙": "沙希墙<br>Shahi Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>该图格鲁克堡垒提高1500的生命值和4火焰护甲，并解锁扭力弩炮炮台，获得额外数量的默认箭矢武器，箭矢伤害+2，箭矢射程+1，并解锁总督2级属性",
+    "红砖要塞": "红砖要塞<br>Red Brick Bastion<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>该图格鲁克堡垒提高1500的生命值和3火焰护甲，并解锁沸油，获得额外数量的默认箭矢武器，箭矢伤害+2，驻扎箭矢射程+1，并解锁总督3级属性",
+    "加强武装弩炮": "加强武装弩炮<br>Reinforced Arm Ballista<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>将弩炮战象升级为精锐弩炮战象",
 
 
     "阿杰梅尔总督": "阿杰梅尔总督<br>Governor of Ajmer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>此图格鲁克巴德堡垒会自动征召最多5/8/12/12个埃米尔战士，这些勇士在堡垒旁边更加强大，在4级时，埃米尔战士训练速度 +50%，生命值 +50% ",
@@ -1002,6 +1011,17 @@ let ayanami = {
     "木尔坦总督": "木尔坦总督<br>Governor of Multan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>城镇中心工作效率+15%/+30%/+50%/+100%",
     "塞赫万总督": "塞赫万总督<br>Governor of Sehwan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害10%/15%/20%",
     "乌奇总督": "乌奇总督<br>Governor of Uch<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>所有科技便宜15%/20%/30%/50%",
+
+
+
+    "阿杰梅尔赞助者": "阿杰梅尔赞助者<br>Ajmer Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>此图格鲁克巴德堡垒会自动征召最多12个埃米尔战士，这些勇士在堡垒旁边更加强大，训练速度 +50%，生命值 +50% ",
+    "珀格尔赞助者": "珀格尔赞助者<br>Bhakkar Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>在图格鲁克巴德堡垒3格范围内的建筑每分钟自动生成40食物，额外生产获得食物量 20% 的石头",
+    "伽罗尔赞助者": "伽罗尔赞助者<br>Jalor Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>在图格鲁克巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+65生命值",
+    "木尔坦赞助者": "木尔坦赞助者<br>Multan Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>城镇中心工作效率+100%",
+    "塞赫万赞助者": "塞赫万赞助者<br>Sehwan Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>圣物和圣地黄金收入+20%，治疗战象减少受到敌人的伤害20%",
+    "乌奇赞助者": "乌奇赞助者<br>Uch Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>图格鲁克巴德堡垒生命值+1500<br>所有科技便宜50%",
+
+
 
     "装甲野兽": "装甲野兽<br>Armored Beasts<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>赋予战象 +20% 生命值和 +4 远程护甲",
     "回收材料2": "回收材料<br>Salvaged Materials<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
