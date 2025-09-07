@@ -964,7 +964,7 @@ let ayanami = {
 
     "长期围城": "长期围城<br>Prolonged Siege<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城单位在设置固定后每10秒获得10%的额外伤害，最多可以累积到50%额外伤害",
     "罗马之火": "罗马之火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮攻击速度+15%，并且他们的弩箭在撞击敌人后可以生成希腊之火",
-    "皇家掠夺": "皇家掠夺<br>Polutasvarf<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>每个瓦兰吉系列单位在摧毁城镇中心或地标时都会为玩家提供大量白银",
+    "宫殿掠夺": "宫殿掠夺<br>Polutasvarf<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>每个瓦兰吉系列单位在摧毁城镇中心或地标时都会为玩家提供大量白银",
 
 
     "研磨石": "研磨石<br>Sharpening Stones<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>275 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>远程部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次",
