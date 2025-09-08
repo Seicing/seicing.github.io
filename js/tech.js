@@ -681,9 +681,10 @@ let ayanami = {
     "太傅监督": "太傅监督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿塔贝格监督.png' width='20px'>阿塔贝格监督：阿塔贝格驻扎的军事设施新训练的部队生命值+20%",
     "经济偏殿工业加成": "经济偏殿工业加成<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/经济偏殿工业.png' width='20px'>经济偏殿 : 工业：村民建造速度+30%/40%/50%",
 
+    "守护者大院效果2": "守护者大院效果2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/守护者大院.png' width='20px'>守护者大院：石制建筑和炮台的石头成本-20%",
 
 
-    "守护者大院效果": "守护者大院效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/守护者大院.png' width='20px'>守护者大院：步兵可以建造石头设施，石材成本-20%，石城门建造时间翻倍",
+    "守护者大院效果": "守护者大院效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/守护者大院.png' width='20px'>守护者大院：步兵可以建造石墙、石墙塔和石城门，但石城门建造时间翻倍",
     "胜利之塔效果": "胜利之塔效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：清真寺影响范围内生产近战和远程步兵攻击速度永久提升20%",
     "信仰穹顶建筑效果": "信仰穹顶建筑效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：学者成本-50%",
     "德里免费": "德里免费<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学术成就：科技免费",
