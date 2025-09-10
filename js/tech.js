@@ -1159,6 +1159,7 @@ function calculateFinal(statName, buffs, baseStats) {
 }
 
 // ----------- 更新表格（支持多属性 & 特殊类型） -----------
+// ----------- 更新表格（支持多属性 & 特殊类型） -----------
 function updateTable() {
     const baseStats = getBaseStats();
 
@@ -1202,11 +1203,24 @@ function updateTable() {
             });
         });
 
+    // 🔹这里定义每个 id 的小数位规则
+    const precisionRules = {
+        attackspeed: 2,
+        range: 2,
+        speed: 2
+        // 其它不写的默认 0 位小数
+    };
+
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
-        if (el) el.innerText = calculateFinal(stat, activeBuffs, baseStats);
+        if (el) {
+            const val = calculateFinal(stat, activeBuffs, baseStats);
+            const decimals = precisionRules[stat] ?? 0;
+            el.innerText = val.toFixed(decimals);
+        }
     });
 }
+
 
 // ----------- 图标绑定 -----------
 document.addEventListener('DOMContentLoaded', () => {
