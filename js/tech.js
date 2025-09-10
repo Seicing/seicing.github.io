@@ -1329,7 +1329,6 @@ function bindFilterButtons() {
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
-
             tipsp();
         });
     });
@@ -1403,4 +1402,17 @@ if (toggleBtn) {
 
         updateTable();
     });
+}
+
+function triggerFilterFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const civ = params.get("civ");
+    if (!civ) return;
+
+    // 找到对应的 filterbtn
+    const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
+    if (!btn) return;
+
+    // 触发点击
+    btn.click();
 }
