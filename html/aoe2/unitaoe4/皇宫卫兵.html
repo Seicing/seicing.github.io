@@ -628,7 +628,6 @@
     var listButton = ['chiButton', 'zxlButton']
 
     function tipsg(a, b, c) {
-        triggerFilterFromURL();
         cleargasek(c);
         document.getElementById(a).style.display = "block";
         document.getElementById(b).style.opacity = 1;
@@ -640,6 +639,7 @@
         var aaposbo4 = window.location.href;
         aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
+        triggerFilterFromURL();
     }
 
     function cleargasek(a) {
