@@ -654,7 +654,7 @@ let ayanami = {
     "朱子遗训宋朝效果": "朱子遗训宋朝效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宋朝.png' width='20px'>盛世王朝 - 宋朝：建造经济建筑的成本 -30%",
     "朱子遗训元朝效果": "朱子遗训元朝效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/元朝.png' width='20px'>盛世王朝 - 元朝：所有单位成本 -10%",
     "朱子遗训明朝效果": "朱子遗训明朝效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/明朝.png' width='20px'>盛世王朝 - 明朝：独特部队攻击力 +20%",
-    "朱子遗训朝廷命官效果": "朱子遗训朝廷命官效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/朝廷命官.png' width='20px'>朝廷命官：监督提升150%效率，研发地方巡查后提高到300%",
+    "朱子遗训朝廷命官效果": "朱子遗训朝廷命官效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/监督.png' width='20px'>监督：监督提升150%效率，研发地方巡查后提高到300%",
     "其疾如风": "其疾如风<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/其疾如风.png' width='20px'>孙武祠 - 其疾如风：激活后，步兵单位移动速度 +15%",
     "不动如山": "不动如山<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png' width='20px'>孙武祠 - 不动如山：激活后，单位在脱离战斗时每秒恢复 2 生命值",
     "侵略如火": "侵略如火<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/侵略如火.png' width='20px'>孙武祠 - 侵略如火：激活后，骑兵单位伤害 +20%",
@@ -1283,17 +1283,32 @@ function resetFilters() {
 }
 
 // ----------- 绑定过滤按钮 -----------
-document.querySelectorAll('.filterbtn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        resetFilters();
-
-        if (btn.classList.contains('resetbtn')) return;
-
-        btn.classList.add('active');
-        const keyword = btn.dataset.filter;
-        filterByGame(keyword);
+function resetFilters() {
+    // 恢复所有图标的可见性并取消激活
+    document.querySelectorAll('#icons .icon').forEach(icon => {
+        icon.style.display = '';
+        icon.classList.remove('active');
     });
-});
+
+    // 取消所有过滤按钮高亮
+    document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
+
+    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
+    document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
+        const id = icon.dataset.text;
+        if (!id) return;
+        const target = document.getElementById(id);
+        if (target) target.style.display = 'none';
+    });
+
+    // 恢复 toggle 状态
+    allActivated = false;
+    const toggleBtn = document.querySelector('.toggle-activate');
+    if (toggleBtn) toggleBtn.classList.remove('active');
+
+    updateTable();
+}
+
 
 // ----------- 页面加载时，检查 URL 参数 civ=xxx -----------
 document.addEventListener('DOMContentLoaded', () => {
@@ -1334,14 +1349,28 @@ if (damage && chargedamage) {
 // ----------- 全部激活/取消功能 -----------
 let allActivated = false;
 
-const toggleBtn = document.querySelector('.toggle-activate'); // 注意：这个按钮不要有 .filterbtn
+const toggleBtn = document.querySelector('.toggle-activate'); // 注意：这个按钮不要带 .filterbtn 类
 if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
+        // 当前可见的图标（被过滤掉的图标 style.display === 'none'）
         const visibleIcons = Array.from(document.querySelectorAll('#icons .icon'))
             .filter(icon => icon.style.display !== 'none');
 
         const targetState = !allActivated;
-        visibleIcons.forEach(icon => icon.classList.toggle('active', targetState));
+
+        visibleIcons.forEach(icon => {
+            // 切换 active 状态
+            icon.classList.toggle('active', targetState);
+
+            // 如果图标有 data-text，统一显示或隐藏对应的 span
+            if (icon.dataset.text) {
+                const txtId = icon.dataset.text;
+                const target = document.getElementById(txtId);
+                if (target) {
+                    target.style.display = targetState ? 'inline' : 'none';
+                }
+            }
+        });
 
         allActivated = targetState;
         toggleBtn.classList.toggle('active', allActivated);
