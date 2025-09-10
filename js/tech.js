@@ -1124,8 +1124,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 // ----------- 基础函数 -----------
 function getBaseStats() {
     // ✅ 支持 td / span，只要有 id 和 data-base
@@ -1158,7 +1156,6 @@ function calculateFinal(statName, buffs, baseStats) {
     return Math.round((base + add) * (1 + sameMul) * diffMul * 100) / 100;
 }
 
-// ----------- 更新表格（支持多属性 & 特殊类型） -----------
 // ----------- 更新表格（支持多属性 & 特殊类型） -----------
 function updateTable() {
     const baseStats = getBaseStats();
@@ -1221,7 +1218,6 @@ function updateTable() {
     });
 }
 
-
 // ----------- 图标绑定 -----------
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.icon').forEach(icon => {
@@ -1240,9 +1236,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-
-
-
         });
     });
 
@@ -1300,19 +1293,26 @@ function resetFilters() {
     updateTable();
 }
 
+// ----------- 绑定过滤按钮（点击时更新 URL 参数） -----------
+function bindFilterButtons() {
+    document.querySelectorAll('.filterbtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            resetFilters();
 
-// ----------- 绑定过滤按钮 -----------
-document.querySelectorAll('.filterbtn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        resetFilters();
+            if (btn.classList.contains('resetbtn')) return;
 
-        if (btn.classList.contains('resetbtn')) return;
+            btn.classList.add('active');
+            const keyword = btn.dataset.filter;
+            filterByGame(keyword);
 
-        btn.classList.add('active');
-        const keyword = btn.dataset.filter;
-        filterByGame(keyword);
+            // 🔹点击时更新 URL 参数为 civ=xxx
+            const url = new URL(window.location);
+            url.searchParams.set("civ", keyword);
+            window.history.replaceState({}, "", url);
+        });
     });
-});
+}
+document.addEventListener('DOMContentLoaded', bindFilterButtons);
 
 // ----------- 页面加载时，检查 URL 参数 civ=xxx -----------
 document.addEventListener('DOMContentLoaded', () => {
