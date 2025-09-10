@@ -1334,6 +1334,7 @@ function bindFilterButtons() {
             var aaposbo2 = document.querySelector("#blacktou2");
             aaposbo1.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + keyword;
             aaposbo2.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + keyword;
+            tipsp();
         });
     });
 }
