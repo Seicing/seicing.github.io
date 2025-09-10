@@ -171,6 +171,7 @@
     “与标准弓箭手相比，远程步兵可对非装甲目标造成很高的伤害，攻击速度更快，武器射程更远”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -365,6 +366,7 @@
         var aaposbo4 = window.location.href;
         aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
+        triggerFilterFromURL();
     }
 
     function cleargasek(a) {

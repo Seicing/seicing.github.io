@@ -93,6 +93,7 @@
     “在被指派到贸易站时能产生所有资源的特殊商人。一旦被指派到贸易站后，商队只返回此地标一次，卸下所载物。宝藏商队会定期从贸易站重新生成，以再次开启旅程。自动转变成一名陆地商人或海上商人，以抵达贸易站”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -273,6 +274,7 @@
         var aaposbo4 = window.location.href;
         aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
+        triggerFilterFromURL();
     }
 
     function cleargasek(a) {

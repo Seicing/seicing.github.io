@@ -185,6 +185,7 @@
     “极其强大且昂贵的重装步兵，能降低附近敌方单位的护甲。击败敌人后会变得更加强大”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -371,6 +372,7 @@
         var aaposbo4 = window.location.href;
         aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
+        triggerFilterFromURL();
     }
 
     function cleargasek(a) {

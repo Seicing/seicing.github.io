@@ -161,6 +161,7 @@
     “配备了防御型大盾的高伤害远程单位。最适合在有友军协助时使用”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -415,6 +416,7 @@
         var aaposbo4 = window.location.href;
         aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
+        triggerFilterFromURL();
     }
 
     function cleargasek(a) {

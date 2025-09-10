@@ -151,6 +151,7 @@
     “重型远程步兵，装备巨大的火药武器，拥有优秀的武器攻击范围、攻城及溅射伤害”
     <br>
     <div style='text-align:right'>——游戏内说明</div>
+    <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
 
 <br><br><br>
@@ -353,6 +354,7 @@
         var aaposbo4 = window.location.href;
         aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
         history.replaceState("stateObj", "title", aaposbo4);
+        triggerFilterFromURL();
     }
 
     function cleargasek(a) {
