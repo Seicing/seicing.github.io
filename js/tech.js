@@ -1117,7 +1117,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', function (event) {
+        const link = event.target.closest('a'); // 找到最近的 <a>
+        if (!link) return;
 
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#') && href.length > 1) {
+            const targetId = href.slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                event.preventDefault(); // 阻止默认跳转
+                target.scrollIntoView({ behavior: 'smooth' }); // 平滑滚动
+            }
+        }
+    });
+});
 
 
 
