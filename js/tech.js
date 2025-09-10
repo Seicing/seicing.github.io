@@ -1116,3 +1116,236 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------- 基础函数 -----------
+function getBaseStats() {
+    // ✅ 支持 td / span，只要有 id 和 data-base
+    const statsTable = document.querySelectorAll('#stats [id][data-base]');
+    const stats = {};
+    statsTable.forEach(cell => {
+        stats[cell.id] = Number(cell.dataset.base);
+    });
+    return stats;
+}
+
+function calculateFinal(statName, buffs, baseStats) {
+    const base = baseStats[statName] ?? 0;
+    let add = 0;
+    let sameMul = 0;
+    let diffMul = 1;
+
+    buffs.forEach(b => {
+        if (b.type !== statName) return;
+        const val = Number(b.value);
+        if (b.mode === 'add') {
+            add += val;
+        } else if (b.mode === 'sameMul') {
+            sameMul += val;
+        } else if (b.mode === 'diffMul') {
+            diffMul *= val;
+        }
+    });
+
+    return Math.round((base + add) * (1 + sameMul) * diffMul * 100) / 100;
+}
+
+// ----------- 更新表格（支持多属性 & 特殊类型） -----------
+function updateTable() {
+    const baseStats = getBaseStats();
+
+    const activeBuffs = Array.from(document.querySelectorAll('.icon.active'))
+        .flatMap(el => {
+            const types = el.dataset.type ? el.dataset.type.split(" ") : [];
+            const modes = el.dataset.mode ? el.dataset.mode.split(" ") : [];
+            const values = el.dataset.value ? el.dataset.value.split(" ") : [];
+
+            return types.flatMap((t, i) => {
+                const mode = modes[i];
+                const value = values[i];
+
+                // 🔹特殊处理 bonusdamage：对所有 bonusdamageX 生效
+                if (t === "bonusdamage") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("bonusdamage"))
+                        .map(statName => ({
+                            type: statName,
+                            mode: mode,
+                            value: value
+                        }));
+                }
+
+                // 🔹特殊处理 cost：对所有 costX 生效
+                if (t === "cost") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("cost"))
+                        .map(statName => ({
+                            type: statName,
+                            mode: mode,
+                            value: value
+                        }));
+                }
+
+                return [{
+                    type: t,
+                    mode: mode,
+                    value: value
+                }];
+            });
+        });
+
+    Object.keys(baseStats).forEach(stat => {
+        const el = document.getElementById(stat);
+        if (el) el.innerText = calculateFinal(stat, activeBuffs, baseStats);
+    });
+}
+
+// ----------- 图标绑定 -----------
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.icon').forEach(icon => {
+        icon.addEventListener('click', () => {
+            icon.classList.toggle('active');
+            updateTable();
+
+            // 🔹切换显示/隐藏说明文字（直接控制对应 span）
+            if (icon.dataset.text) {
+                const target = document.getElementById(icon.dataset.text);
+                if (target) {
+                    if (target.style.display === "none" || target.style.display === "") {
+                        target.style.display = "inline";  // 显示
+                    } else {
+                        target.style.display = "none";    // 隐藏
+                    }
+                }
+            }
+
+
+
+        });
+    });
+
+    updateTable();
+});
+
+// ----------- 过滤函数 -----------
+function filterByGame(keyword) {
+    document.querySelectorAll('#icons .icon').forEach(icon => {
+        const gameAttr = icon.dataset.game;
+        const overAttr = icon.dataset.over;
+
+        if (gameAttr && gameAttr.split(" ").includes(keyword)) {
+            icon.style.display = '';
+            return;
+        }
+
+        if (!gameAttr) {
+            if (overAttr && overAttr === keyword) {
+                icon.style.display = 'none';
+            } else {
+                icon.style.display = '';
+            }
+            return;
+        }
+
+        icon.style.display = 'none';
+    });
+}
+
+// ----------- 重置函数 -----------
+function resetFilters() {
+    document.querySelectorAll('#icons .icon').forEach(icon => {
+        icon.style.display = '';
+        icon.classList.remove('active');
+    });
+
+    document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
+
+    allActivated = false; // toggle 状态重置
+    const toggleBtn = document.querySelector('.toggle-activate');
+    if (toggleBtn) toggleBtn.classList.remove('active');
+
+    updateTable();
+}
+
+// ----------- 绑定过滤按钮 -----------
+document.querySelectorAll('.filterbtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        resetFilters();
+
+        if (btn.classList.contains('resetbtn')) return;
+
+        btn.classList.add('active');
+        const keyword = btn.dataset.filter;
+        filterByGame(keyword);
+    });
+});
+
+// ----------- 页面加载时，检查 URL 参数 civ=xxx -----------
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const civ = params.get("civ");
+    if (civ) {
+        const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
+        if (targetBtn) targetBtn.click();
+    }
+});
+
+// ----------- 重置并重新应用 civ 过滤 -----------
+function resetFiltersciv() {
+    const params = new URLSearchParams(window.location.search);
+    const civ = params.get("civ");
+    if (civ) {
+        const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
+        if (targetBtn) targetBtn.click();
+    }
+}
+
+// ----------- damage × multiple 联动 -----------
+const damage = document.getElementById("damage");
+const chargedamage = document.getElementById("chargedamage");
+if (damage && chargedamage) {
+    const multiple = parseFloat(chargedamage.dataset.multiple) || 1;
+
+    function updateChargeDamage() {
+        const baseValue = parseFloat(damage.innerText) || 0;
+        chargedamage.innerText = (baseValue * multiple).toFixed(0);
+    }
+    updateChargeDamage();
+
+    const observer = new MutationObserver(updateChargeDamage);
+    observer.observe(damage, { childList: true, characterData: true, subtree: true });
+}
+
+// ----------- 全部激活/取消功能 -----------
+let allActivated = false;
+
+const toggleBtn = document.querySelector('.toggle-activate'); // 注意：这个按钮不要有 .filterbtn
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        const visibleIcons = Array.from(document.querySelectorAll('#icons .icon'))
+            .filter(icon => icon.style.display !== 'none');
+
+        const targetState = !allActivated;
+        visibleIcons.forEach(icon => icon.classList.toggle('active', targetState));
+
+        allActivated = targetState;
+        toggleBtn.classList.toggle('active', allActivated);
+
+        updateTable();
+    });
+}

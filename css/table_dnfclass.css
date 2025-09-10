@@ -71,3 +71,48 @@
     border-top: 1px solid #888888;
     background-color: #F5F8FA;
 }
+
+
+#stats {
+    border-collapse: collapse;
+}
+
+#stats td,
+th {
+    border: 1px solid #444;
+    text-align: left;
+    width: 85px
+}
+
+.icon {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    /* 默认无边框 */
+}
+
+.icon img {
+    display: block;
+}
+
+.icon.active {
+    border: 2px solid orange;
+    /* 点击后橙色描边 */
+    box-shadow: 0 0 12px orange;
+    /* 边缘发光 */
+}
+
+.filterbtn {
+    display: inline-block;
+    transition: opacity 0.2s;
+    opacity: 0.3;
+}
+
+.filterbtn.active {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
