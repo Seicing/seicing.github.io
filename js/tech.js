@@ -1126,13 +1126,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-
 // ----------- 基础函数 -----------
 function getBaseStats() {
     // ✅ 支持 td / span，只要有 id 和 data-base
@@ -1268,22 +1261,6 @@ function filterByGame(keyword) {
 
 // ----------- 重置函数 -----------
 function resetFilters() {
-    document.querySelectorAll('#icons .icon').forEach(icon => {
-        icon.style.display = '';
-        icon.classList.remove('active');
-    });
-
-    document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
-
-    allActivated = false; // toggle 状态重置
-    const toggleBtn = document.querySelector('.toggle-activate');
-    if (toggleBtn) toggleBtn.classList.remove('active');
-
-    updateTable();
-}
-
-// ----------- 绑定过滤按钮 -----------
-function resetFilters() {
     // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
         icon.style.display = '';
@@ -1309,6 +1286,19 @@ function resetFilters() {
     updateTable();
 }
 
+
+// ----------- 绑定过滤按钮 -----------
+document.querySelectorAll('.filterbtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        resetFilters();
+
+        if (btn.classList.contains('resetbtn')) return;
+
+        btn.classList.add('active');
+        const keyword = btn.dataset.filter;
+        filterByGame(keyword);
+    });
+});
 
 // ----------- 页面加载时，检查 URL 参数 civ=xxx -----------
 document.addEventListener('DOMContentLoaded', () => {
