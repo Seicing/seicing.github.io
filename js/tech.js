@@ -1330,10 +1330,6 @@ function bindFilterButtons() {
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
 
-            var aaposbo1 = document.querySelector("#blacktou1");
-            var aaposbo2 = document.querySelector("#blacktou2");
-            aaposbo1.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + keyword;
-            aaposbo2.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + keyword;
             tipsp();
         });
     });
