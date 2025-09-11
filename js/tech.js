@@ -1277,15 +1277,27 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTable();
 });
 
-// ----------- 过滤函数 -----------
+// ----------- 过滤函数（升级版，支持 icon 的 data-require） -----------
 function filterByGame(keyword) {
     document.querySelectorAll('#icons .icon').forEach(icon => {
         const gameAttr = icon.dataset.game;
         const overAttr = icon.dataset.over;
+        const reqAttr = icon.dataset.require;
+
+        // 如果有 data-require → 只有匹配 keyword 时才显示
+        if (reqAttr) {
+            const reqList = reqAttr.split(" ");
+            icon.style.display = reqList.includes(keyword) ? '' : 'none';
+            return;
+        }
+
+        // 如果有 data-game 且匹配
         if (gameAttr && gameAttr.split(" ").includes(keyword)) {
             icon.style.display = '';
             return;
         }
+
+        // 如果没有 data-game
         if (!gameAttr) {
             if (overAttr && overAttr.split(" ").includes(keyword)) {
                 icon.style.display = 'none';
@@ -1294,6 +1306,8 @@ function filterByGame(keyword) {
             }
             return;
         }
+
+        // 其他情况 → 隐藏
         icon.style.display = 'none';
     });
 }
@@ -1308,28 +1322,50 @@ function updateFilterButtonsVisibility(activeKeyword) {
     });
 }
 
-// ----------- 重置函数 -----------
+// ----------- 重置函数（升级版，隐藏 data-require 的 icon） -----------
 function resetFilters() {
+    // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
-        icon.style.display = '';
+        if (icon.dataset.require) {
+            icon.style.display = 'none'; // reset 时默认隐藏 data-require
+        } else {
+            icon.style.display = '';
+        }
         icon.classList.remove('active');
     });
+
+    // 取消所有过滤按钮高亮
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
+
+    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
-        const id = icon.dataset.text, target = document.getElementById(id);
+        const id = icon.dataset.text;
+        if (!id) return;
+        const target = document.getElementById(id);
         if (target) target.style.display = 'none';
     });
+
+    // 恢复所有 data-multiple 的基准值
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
-        if (el.dataset.basemultiple !== undefined) el.dataset.multiple = el.dataset.basemultiple;
+        if (el.dataset.basemultiple !== undefined) {
+            el.dataset.multiple = el.dataset.basemultiple;
+        }
     });
+
+    // 🔹 恢复所有 data-update 改动过的 base 值
     document.querySelectorAll('#stats [id][data-baseoriginal]').forEach(el => {
         el.dataset.base = el.dataset.baseoriginal;
         el.innerText = el.dataset.baseoriginal;
     });
+
+    // 恢复 toggle 状态
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
+
     updateTable();
+
+    // 🔹 同时隐藏带 data-require 的 filterbtn
     updateFilterButtonsVisibility(null);
 }
 
