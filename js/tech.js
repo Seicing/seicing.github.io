@@ -1146,6 +1146,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+// 初始化：保存所有原始 base 值
+function initBaseValues() {
+    document.querySelectorAll('#stats [id][data-base]').forEach(el => {
+        if (!el.dataset.baseoriginal) {
+            el.dataset.baseoriginal = el.dataset.base;
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', initBaseValues);
+
 // 初始化：为所有 data-multiple 的元素保存初始 basemultiple（兼容页面加载前后）
 function initBaseMultiples() {
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
@@ -1296,29 +1309,50 @@ function filterByGame(keyword) {
     });
 }
 
-// ----------- 重置函数 -----------
+// ----------- 重置函数 ----------- 
 function resetFilters() {
+    // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
         icon.style.display = '';
         icon.classList.remove('active');
     });
+
+    // 取消所有过滤按钮高亮
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
+
+    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
         const id = icon.dataset.text;
         if (!id) return;
         const target = document.getElementById(id);
         if (target) target.style.display = 'none';
     });
+
+    // 恢复所有 data-multiple 的基准值
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
         if (el.dataset.basemultiple !== undefined) {
             el.dataset.multiple = el.dataset.basemultiple;
         }
     });
+
+    // 🔹 恢复所有 data-update 改动过的 base 值
+    document.querySelectorAll('#stats [id][data-baseoriginal]').forEach(el => {
+        el.dataset.base = el.dataset.baseoriginal;
+        el.innerText = el.dataset.baseoriginal;
+    });
+
+    // 恢复 toggle 状态
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
+
     updateTable();
 }
+
+
+
+
+
 
 // ----------- 按钮扩展：更新 td + require -----------
 function applyButtonUpdates(btn) {
