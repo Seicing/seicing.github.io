@@ -1142,8 +1142,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 // ----------- 基础函数 -----------
 function getBaseStats() {
     // ✅ 支持 td / span，只要有 id 和 data-base
@@ -1236,6 +1234,17 @@ function updateTable() {
             el.innerText = val.toFixed(decimals);
         }
     });
+
+    // 🔹更新所有带 data-multiple 的 td（自动联动）
+    document.querySelectorAll('[data-multiple][id]').forEach(td => {
+        const baseId = td.dataset.baseid || "damage"; // 默认以 damage 为基准
+        const baseEl = document.getElementById(baseId);
+        if (baseEl) {
+            const multiple = parseFloat(td.dataset.multiple) || 1;
+            const baseValue = parseFloat(baseEl.innerText) || 0;
+            td.innerText = (baseValue * multiple).toFixed(0);
+        }
+    });
 }
 
 // ----------- 图标绑定 -----------
@@ -1243,17 +1252,33 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.icon').forEach(icon => {
         icon.addEventListener('click', () => {
             icon.classList.toggle('active');
+
+            // 🔹特殊处理：倍率切换（修改 data-multiple）
+            if (icon.dataset.multiplier && icon.dataset.target) {
+                const target = document.getElementById(icon.dataset.target);
+                if (target) {
+                    const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
+                    if (!target.dataset.basemultiple) {
+                        target.dataset.basemultiple = baseMultiple; // 保存初始值
+                    }
+                    if (icon.classList.contains("active")) {
+                        target.dataset.multiple = icon.dataset.multiplier;
+                    } else {
+                        target.dataset.multiple = target.dataset.basemultiple;
+                    }
+                }
+            }
+
             updateTable();
 
             // 🔹切换显示/隐藏说明文字（直接控制对应 span）
             if (icon.dataset.text) {
                 const target = document.getElementById(icon.dataset.text);
                 if (target) {
-                    if (target.style.display === "none" || target.style.display === "") {
-                        target.style.display = "inline";  // 显示
-                    } else {
-                        target.style.display = "none";    // 隐藏
-                    }
+                    target.style.display =
+                        (target.style.display === "none" || target.style.display === "")
+                            ? "inline"
+                            : "none";
                 }
             }
         });
@@ -1288,16 +1313,13 @@ function filterByGame(keyword) {
 
 // ----------- 重置函数 -----------
 function resetFilters() {
-    // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
         icon.style.display = '';
         icon.classList.remove('active');
     });
 
-    // 取消所有过滤按钮高亮
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
 
-    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
         const id = icon.dataset.text;
         if (!id) return;
@@ -1305,7 +1327,6 @@ function resetFilters() {
         if (target) target.style.display = 'none';
     });
 
-    // 恢复 toggle 状态
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
@@ -1329,7 +1350,6 @@ function bindFilterButtons() {
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
-            tipsp();
         });
     });
 }
@@ -1355,44 +1375,38 @@ function resetFiltersciv() {
     }
 }
 
-// ----------- damage × multiple 联动 -----------
-const damage = document.getElementById("damage");
-const chargedamage = document.getElementById("chargedamage");
-if (damage && chargedamage) {
-    const multiple = parseFloat(chargedamage.dataset.multiple) || 1;
-
-    function updateChargeDamage() {
-        const baseValue = parseFloat(damage.innerText) || 0;
-        chargedamage.innerText = (baseValue * multiple).toFixed(0);
-    }
-    updateChargeDamage();
-
-    const observer = new MutationObserver(updateChargeDamage);
-    observer.observe(damage, { childList: true, characterData: true, subtree: true });
-}
-
 // ----------- 全部激活/取消功能 -----------
 let allActivated = false;
 
-const toggleBtn = document.querySelector('.toggle-activate'); // 注意：这个按钮不要带 .filterbtn 类
+const toggleBtn = document.querySelector('.toggle-activate');
 if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
-        // 当前可见的图标（被过滤掉的图标 style.display === 'none'）
         const visibleIcons = Array.from(document.querySelectorAll('#icons .icon'))
             .filter(icon => icon.style.display !== 'none');
 
         const targetState = !allActivated;
 
         visibleIcons.forEach(icon => {
-            // 切换 active 状态
             icon.classList.toggle('active', targetState);
 
-            // 如果图标有 data-text，统一显示或隐藏对应的 span
+            // 🔹处理 data-text span
             if (icon.dataset.text) {
                 const txtId = icon.dataset.text;
                 const target = document.getElementById(txtId);
                 if (target) {
                     target.style.display = targetState ? 'inline' : 'none';
+                }
+            }
+
+            // 🔹处理 multiplier
+            if (icon.dataset.multiplier && icon.dataset.target) {
+                const target = document.getElementById(icon.dataset.target);
+                if (target) {
+                    const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
+                    if (!target.dataset.basemultiple) {
+                        target.dataset.basemultiple = baseMultiple;
+                    }
+                    target.dataset.multiple = targetState ? icon.dataset.multiplier : target.dataset.basemultiple;
                 }
             }
         });
@@ -1402,17 +1416,4 @@ if (toggleBtn) {
 
         updateTable();
     });
-}
-
-function triggerFilterFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const civ = params.get("civ");
-    if (!civ) return;
-
-    // 找到对应的 filterbtn
-    const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
-    if (!btn) return;
-
-    // 触发点击
-    btn.click();
 }
