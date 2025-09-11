@@ -1144,6 +1144,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+
+// 初始化：为所有 data-multiple 的元素保存初始 basemultiple（兼容页面加载前后）
+function initBaseMultiples() {
+    document.querySelectorAll('[data-multiple][id]').forEach(el => {
+        // 保证有 id（方便后续通过 id 查找）
+        if (!el.id) return;
+        // 只有在没有 basemultiple 时才写入，避免覆盖后续人工设置
+        if (el.dataset.basemultiple === undefined) {
+            // 如果页面上没有设置 data-multiple，就默认 1
+            el.dataset.basemultiple = (el.dataset.multiple !== undefined) ? el.dataset.multiple : '1';
+        }
+    });
+}
+
+// 立即/延迟都能安全执行
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBaseMultiples);
+} else {
+    initBaseMultiples();
+}
+
+
+
 // ----------- 基础函数 -----------
 function getBaseStats() {
     // ✅ 支持 td / span，只要有 id 和 data-base
@@ -1314,16 +1340,6 @@ function filterByGame(keyword) {
 }
 
 
-// ----------- 记录初始 multiplier -----------
-const multiplierDefaults = {};
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('[data-multiplier]').forEach(el => {
-        multiplierDefaults[el.id] = el.dataset.multiplier;
-    });
-});
-
-
-
 // ----------- 重置函数 -----------
 function resetFilters() {
     // 恢复所有图标的可见性并取消激活
@@ -1343,10 +1359,11 @@ function resetFilters() {
         if (target) target.style.display = 'none';
     });
 
-    // 🔹恢复所有 multiplier 到初始值
-    Object.keys(multiplierDefaults).forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.dataset.multiplier = multiplierDefaults[id];
+    // 恢复所有 data-multiple 的基准值
+    document.querySelectorAll('[data-multiple][id]').forEach(el => {
+        if (el.dataset.basemultiple !== undefined) {
+            el.dataset.multiple = el.dataset.basemultiple;
+        }
     });
 
     // 恢复 toggle 状态
