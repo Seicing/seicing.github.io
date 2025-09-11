@@ -1147,7 +1147,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+// 页面初始化：若 URL 有 civ，则显示对应的按钮；否则 reset（默认隐藏 data-require 的按钮）
+const params = new URLSearchParams(window.location.search);
+const civ = params.get("civ");
+if (civ) {
+    const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
+    if (targetBtn) {
+        targetBtn.click(); // 这个 click 会触发上面的 updateFilterButtonsVisibility(keyword)
+    } else {
+        // 若没有匹配的按钮，确保按钮初始显示规则正确
+        updateFilterButtonsVisibility(null);
+    }
+} else {
+    // 无 civ 参数时，默认隐藏带 data-require 的按钮
+    updateFilterButtonsVisibility(null);
+}
 
 // 初始化：保存所有原始 base 值
 function initBaseValues() {
@@ -1309,6 +1323,29 @@ function filterByGame(keyword) {
     });
 }
 
+// ---------- 新增：根据 activeKeyword 控制带 data-require 的 filterbtn 显示 ----------
+function updateFilterButtonsVisibility(activeKeyword) {
+    // activeKeyword: 字符串，例如 "chi"；若为 null/undefined 则表示“无筛选/重置”状态
+    document.querySelectorAll('.filterbtn').forEach(btn => {
+        const req = btn.dataset.require; // 例如 "chi jpn"
+        if (!req) {
+            // 没有 data-require 的按钮始终显示
+            btn.style.display = '';
+            return;
+        }
+        const requiredList = req.trim().split(/\s+/); // 支持多个 value
+        if (activeKeyword) {
+            // 只有当 activeKeyword 在 data-require 列表里才显示，否则隐藏
+            btn.style.display = requiredList.includes(activeKeyword) ? '' : 'none';
+        } else {
+            // reset 状态：隐藏这些带 data-require 的按钮（这是你想要的行为）
+            btn.style.display = 'none';
+        }
+    });
+}
+
+
+
 // ----------- 重置函数 ----------- 
 function resetFilters() {
     // 恢复所有图标的可见性并取消激活
@@ -1347,6 +1384,7 @@ function resetFilters() {
     if (toggleBtn) toggleBtn.classList.remove('active');
 
     updateTable();
+    updateFilterButtonsVisibility(null);
 }
 
 
@@ -1390,6 +1428,7 @@ function bindFilterButtons() {
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
+            updateFilterButtonsVisibility(keyword);
             tipsp();
         });
     });
