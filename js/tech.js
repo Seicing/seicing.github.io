@@ -1146,7 +1146,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// 初始化：保存所有原始 base 值
+
+
+
+
+
+
+
+
+
+
+// ----------- 初始化原始 base 值 -----------
 function initBaseValues() {
     document.querySelectorAll('#stats [id][data-base]').forEach(el => {
         if (!el.dataset.baseoriginal) {
@@ -1156,7 +1166,7 @@ function initBaseValues() {
 }
 document.addEventListener('DOMContentLoaded', initBaseValues);
 
-// 初始化：为所有 data-multiple 的元素保存初始 basemultiple（兼容页面加载前后）
+// ----------- 初始化 basemultiple -----------
 function initBaseMultiples() {
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
         if (!el.id) return;
@@ -1183,24 +1193,18 @@ function getBaseStats() {
 
 function calculateFinal(statName, buffs, baseStats) {
     const base = baseStats[statName] ?? 0;
-    let add = 0;
-    let sameMul = 0;
-    let diffMul = 1;
+    let add = 0, sameMul = 0, diffMul = 1;
     buffs.forEach(b => {
         if (b.type !== statName) return;
         const val = Number(b.value);
-        if (b.mode === 'add') {
-            add += val;
-        } else if (b.mode === 'sameMul') {
-            sameMul += val;
-        } else if (b.mode === 'diffMul') {
-            diffMul *= val;
-        }
+        if (b.mode === 'add') add += val;
+        else if (b.mode === 'sameMul') sameMul += val;
+        else if (b.mode === 'diffMul') diffMul *= val;
     });
     return Math.round((base + add) * (1 + sameMul) * diffMul * 100) / 100;
 }
 
-// ----------- 更新表格（支持多属性 & 特殊类型） -----------
+// ----------- 更新表格 -----------
 function updateTable() {
     const baseStats = getBaseStats();
     const activeBuffs = Array.from(document.querySelectorAll('.icon.active'))
@@ -1209,27 +1213,22 @@ function updateTable() {
             const modes = el.dataset.mode ? el.dataset.mode.split(" ") : [];
             const values = el.dataset.value ? el.dataset.value.split(" ") : [];
             return types.flatMap((t, i) => {
-                const mode = modes[i];
-                const value = values[i];
+                const mode = modes[i], value = values[i];
                 if (t === "bonusdamage") {
                     return Object.keys(baseStats)
                         .filter(statName => statName.startsWith("bonusdamage"))
-                        .map(statName => ({ type: statName, mode: mode, value: value }));
+                        .map(statName => ({ type: statName, mode, value }));
                 }
                 if (t === "cost") {
                     return Object.keys(baseStats)
                         .filter(statName => statName.startsWith("cost"))
-                        .map(statName => ({ type: statName, mode: mode, value: value }));
+                        .map(statName => ({ type: statName, mode, value }));
                 }
-                return [{ type: t, mode: mode, value: value }];
+                return [{ type: t, mode, value }];
             });
         });
 
-    const precisionRules = {
-        attackspeed: 2,
-        range: 2,
-        speed: 2
-    };
+    const precisionRules = { attackspeed: 2, range: 2, speed: 2 };
 
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
@@ -1260,25 +1259,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const target = document.getElementById(icon.dataset.target);
                 if (target) {
                     const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
-                    if (!target.dataset.basemultiple) {
-                        target.dataset.basemultiple = baseMultiple;
-                    }
-                    if (icon.classList.contains("active")) {
-                        target.dataset.multiple = icon.dataset.multiplier;
-                    } else {
-                        target.dataset.multiple = target.dataset.basemultiple;
-                    }
+                    if (!target.dataset.basemultiple) target.dataset.basemultiple = baseMultiple;
+                    target.dataset.multiple = icon.classList.contains("active")
+                        ? icon.dataset.multiplier
+                        : target.dataset.basemultiple;
                 }
             }
             updateTable();
             if (icon.dataset.text) {
                 const target = document.getElementById(icon.dataset.text);
-                if (target) {
-                    target.style.display =
-                        (target.style.display === "none" || target.style.display === "")
-                            ? "inline"
-                            : "none";
-                }
+                if (target) target.style.display =
+                    (target.style.display === "none" || target.style.display === "")
+                        ? "inline" : "none";
             }
         });
     });
@@ -1306,78 +1298,42 @@ function filterByGame(keyword) {
     });
 }
 
-// ---------- 新增：根据 activeKeyword 控制带 data-require 的 filterbtn 显示 ----------
+// ----------- 控制 data-require 按钮可见性 -----------
 function updateFilterButtonsVisibility(activeKeyword) {
-    // activeKeyword: 字符串，例如 "chi"；若为 null/undefined 则表示“无筛选/重置”状态
     document.querySelectorAll('.filterbtn').forEach(btn => {
-        const req = btn.dataset.require; // 例如 "chi jpn"
-        if (!req) {
-            // 没有 data-require 的按钮始终显示
-            btn.style.display = '';
-            return;
-        }
-        const requiredList = req.trim().split(/\s+/); // 支持多个 value
-        if (activeKeyword) {
-            // 只有当 activeKeyword 在 data-require 列表里才显示，否则隐藏
-            btn.style.display = requiredList.includes(activeKeyword) ? '' : 'none';
-        } else {
-            // reset 状态：隐藏这些带 data-require 的按钮（这是你想要的行为）
-            btn.style.display = 'none';
-        }
+        const req = btn.dataset.require;
+        if (!req) { btn.style.display = ''; return; }
+        const requiredList = req.trim().split(/\s+/);
+        btn.style.display = activeKeyword && requiredList.includes(activeKeyword) ? '' : 'none';
     });
 }
 
-
-
-// ----------- 重置函数 ----------- 
+// ----------- 重置函数 -----------
 function resetFilters() {
-    // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
         icon.style.display = '';
         icon.classList.remove('active');
     });
-
-    // 取消所有过滤按钮高亮
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
-
-    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
-        const id = icon.dataset.text;
-        if (!id) return;
-        const target = document.getElementById(id);
+        const id = icon.dataset.text, target = document.getElementById(id);
         if (target) target.style.display = 'none';
     });
-
-    // 恢复所有 data-multiple 的基准值
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
-        if (el.dataset.basemultiple !== undefined) {
-            el.dataset.multiple = el.dataset.basemultiple;
-        }
+        if (el.dataset.basemultiple !== undefined) el.dataset.multiple = el.dataset.basemultiple;
     });
-
-    // 🔹 恢复所有 data-update 改动过的 base 值
     document.querySelectorAll('#stats [id][data-baseoriginal]').forEach(el => {
         el.dataset.base = el.dataset.baseoriginal;
         el.innerText = el.dataset.baseoriginal;
     });
-
-    // 恢复 toggle 状态
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
-
     updateTable();
-
-    // 隐藏 data-require 的按钮（恢复到 reset 状态）
     updateFilterButtonsVisibility(null);
 }
 
-
-
-
-
-
-// ----------- 按钮扩展：更新 td + require -----------
+// ----------- 按钮扩展：更新 td -----------
 function applyButtonUpdates(btn) {
     const updates = btn.dataset.update;
     if (!updates) return;
@@ -1392,78 +1348,41 @@ function applyButtonUpdates(btn) {
 }
 
 // ----------- 绑定过滤按钮 -----------
-// ----------- 绑定过滤按钮（注意：替换你原来同名函数） -----------
 function bindFilterButtons() {
-    const buttons = document.querySelectorAll('.filterbtn');
-
-    buttons.forEach(btn => {
+    document.querySelectorAll('.filterbtn').forEach(btn => {
         btn.addEventListener('click', () => {
             resetFilters();
             if (btn.classList.contains('resetbtn')) return;
-
             btn.classList.add('active');
             const keyword = btn.dataset.filter;
             filterByGame(keyword);
-
-            // 🔹 执行按钮对 base 值的修改（如果有）
             applyButtonUpdates(btn);
-
-            // 🔹 更新 URL
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
-
-            // 🔹 更新 data-require 类型按钮的可见性（统一由此函数管理）
             updateFilterButtonsVisibility(keyword);
-
-            // ✅ 保留原来的 tipsp() 调用
             if (typeof tipsp === 'function') tipsp();
         });
     });
-
-    // —— 关键：刚绑定完所有按钮后，统一设置初始可见性（默认 reset 状态）
-    // 这样能保证按钮被绑定之后再设置隐藏/显示，避免时序问题
-    updateFilterButtonsVisibility(null);
+    updateFilterButtonsVisibility(null); // 初始时隐藏 data-require
 }
-
 document.addEventListener('DOMContentLoaded', bindFilterButtons);
 
-// ----------- 页面加载时（触发 URL civ，并确保可见性同步） -----------
+// ----------- 页面加载时（触发 civ） -----------
 document.addEventListener('DOMContentLoaded', () => {
-    // 确保按钮绑定函数已运行。如果你也把 bindFilterButtons 注册成 DOMContentLoaded，那么
-    // 此处的触发次序取决于脚本中 bindFilterButtons 注册位置 —— 但我们在 bindFilterButtons 内已做了初始可见性设置。
-    const params = new URLSearchParams(window.location.search);
-    const civ = params.get("civ");
-
+    const civ = new URLSearchParams(window.location.search).get("civ");
     if (civ) {
         const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
         if (targetBtn) {
-            // 触发点击（绑定好的 handler 会处理过滤、applyButtonUpdates、updateFilterButtonsVisibility、tipsp 等）
             targetBtn.click();
-
-            // 再次确保可见性和状态同步（保险起见）
             updateFilterButtonsVisibility(civ);
         } else {
-            // 找不到对应按钮时，统一按 reset 状态显示（带 data-require 的按钮隐藏）
             updateFilterButtonsVisibility(null);
         }
     } else {
-        // 无 civ 参数时，默认隐藏带 data-require 的按钮
         updateFilterButtonsVisibility(null);
     }
 });
-
-
-
-// ----------- 重置并重新应用 civ -----------
-function resetFiltersciv() {
-    const params = new URLSearchParams(window.location.search);
-    const civ = params.get("civ");
-    if (civ) {
-        const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
-        if (targetBtn) targetBtn.click();
-    }
-}
 
 // ----------- 全部激活/取消功能 -----------
 let allActivated = false;
@@ -1476,19 +1395,14 @@ if (toggleBtn) {
         visibleIcons.forEach(icon => {
             icon.classList.toggle('active', targetState);
             if (icon.dataset.text) {
-                const txtId = icon.dataset.text;
-                const target = document.getElementById(txtId);
-                if (target) {
-                    target.style.display = targetState ? 'inline' : 'none';
-                }
+                const target = document.getElementById(icon.dataset.text);
+                if (target) target.style.display = targetState ? 'inline' : 'none';
             }
             if (icon.dataset.multiplier && icon.dataset.target) {
                 const target = document.getElementById(icon.dataset.target);
                 if (target) {
                     const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
-                    if (!target.dataset.basemultiple) {
-                        target.dataset.basemultiple = baseMultiple;
-                    }
+                    if (!target.dataset.basemultiple) target.dataset.basemultiple = baseMultiple;
                     target.dataset.multiple = targetState ? icon.dataset.multiplier : target.dataset.basemultiple;
                 }
             }
@@ -1499,12 +1413,10 @@ if (toggleBtn) {
     });
 }
 
-// ----------- 从 URL 参数触发过滤 -----------
+// ----------- 从 URL 参数触发 civ -----------
 function triggerFilterFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const civ = params.get("civ");
+    const civ = new URLSearchParams(window.location.search).get("civ");
     if (!civ) return;
     const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
-    if (!btn) return;
-    btn.click();
+    if (btn) btn.click();
 }
