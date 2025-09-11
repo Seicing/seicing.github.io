@@ -1314,15 +1314,28 @@ function filterByGame(keyword) {
 }
 
 
+// ----------- 记录初始 multiplier -----------
+const multiplierDefaults = {};
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-multiplier]').forEach(el => {
+        multiplierDefaults[el.id] = el.dataset.multiplier;
+    });
+});
+
+
+
 // ----------- 重置函数 -----------
 function resetFilters() {
+    // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
         icon.style.display = '';
         icon.classList.remove('active');
     });
 
+    // 取消所有过滤按钮高亮
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
 
+    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
         const id = icon.dataset.text;
         if (!id) return;
@@ -1330,12 +1343,21 @@ function resetFilters() {
         if (target) target.style.display = 'none';
     });
 
+    // 🔹恢复所有 multiplier 到初始值
+    Object.keys(multiplierDefaults).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.dataset.multiplier = multiplierDefaults[id];
+    });
+
+    // 恢复 toggle 状态
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
 
     updateTable();
 }
+
+
 
 // ----------- 绑定过滤按钮（点击时更新 URL 参数） -----------
 function bindFilterButtons() {
