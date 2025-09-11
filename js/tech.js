@@ -1299,7 +1299,7 @@ function filterByGame(keyword) {
         }
 
         if (!gameAttr) {
-            if (overAttr && overAttr === keyword) {
+            if (overAttr && overAttr.split(" ").includes(keyword)) {
                 icon.style.display = 'none';
             } else {
                 icon.style.display = '';
@@ -1310,6 +1310,7 @@ function filterByGame(keyword) {
         icon.style.display = 'none';
     });
 }
+
 
 // ----------- 重置函数 -----------
 function resetFilters() {
