@@ -1146,23 +1146,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-// 页面初始化：若 URL 有 civ，则显示对应的按钮；否则 reset（默认隐藏 data-require 的按钮）
-const params = new URLSearchParams(window.location.search);
-const civ = params.get("civ");
-if (civ) {
-    const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
-    if (targetBtn) {
-        targetBtn.click(); // 这个 click 会触发上面的 updateFilterButtonsVisibility(keyword)
-    } else {
-        // 若没有匹配的按钮，确保按钮初始显示规则正确
-        updateFilterButtonsVisibility(null);
-    }
-} else {
-    // 无 civ 参数时，默认隐藏带 data-require 的按钮
-    updateFilterButtonsVisibility(null);
-}
-
 // 初始化：保存所有原始 base 值
 function initBaseValues() {
     document.querySelectorAll('#stats [id][data-base]').forEach(el => {
@@ -1441,9 +1424,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const civ = params.get("civ");
     if (civ) {
         const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
-        if (targetBtn) targetBtn.click();
+        if (targetBtn) {
+            targetBtn.click(); // 会自动触发按钮绑定逻辑
+            updateFilterButtonsVisibility(civ); // 保证 require 按钮状态同步
+        } else {
+            updateFilterButtonsVisibility(null); // 没找到按钮就重置
+        }
+    } else {
+        updateFilterButtonsVisibility(null); // 无 civ 参数时，隐藏 data-require 的按钮
     }
 });
+
 
 // ----------- 重置并重新应用 civ -----------
 function resetFiltersciv() {
