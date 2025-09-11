@@ -1146,33 +1146,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 // 初始化：为所有 data-multiple 的元素保存初始 basemultiple（兼容页面加载前后）
 function initBaseMultiples() {
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
-        // 保证有 id（方便后续通过 id 查找）
         if (!el.id) return;
-        // 只有在没有 basemultiple 时才写入，避免覆盖后续人工设置
         if (el.dataset.basemultiple === undefined) {
-            // 如果页面上没有设置 data-multiple，就默认 1
             el.dataset.basemultiple = (el.dataset.multiple !== undefined) ? el.dataset.multiple : '1';
         }
     });
 }
-
-// 立即/延迟都能安全执行
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initBaseMultiples);
 } else {
     initBaseMultiples();
 }
 
-
-
 // ----------- 基础函数 -----------
 function getBaseStats() {
-    // ✅ 支持 td / span，只要有 id 和 data-base
     const statsTable = document.querySelectorAll('#stats [id][data-base]');
     const stats = {};
     statsTable.forEach(cell => {
@@ -1186,7 +1176,6 @@ function calculateFinal(statName, buffs, baseStats) {
     let add = 0;
     let sameMul = 0;
     let diffMul = 1;
-
     buffs.forEach(b => {
         if (b.type !== statName) return;
         const val = Number(b.value);
@@ -1198,60 +1187,38 @@ function calculateFinal(statName, buffs, baseStats) {
             diffMul *= val;
         }
     });
-
     return Math.round((base + add) * (1 + sameMul) * diffMul * 100) / 100;
 }
 
 // ----------- 更新表格（支持多属性 & 特殊类型） -----------
 function updateTable() {
     const baseStats = getBaseStats();
-
     const activeBuffs = Array.from(document.querySelectorAll('.icon.active'))
         .flatMap(el => {
             const types = el.dataset.type ? el.dataset.type.split(" ") : [];
             const modes = el.dataset.mode ? el.dataset.mode.split(" ") : [];
             const values = el.dataset.value ? el.dataset.value.split(" ") : [];
-
             return types.flatMap((t, i) => {
                 const mode = modes[i];
                 const value = values[i];
-
-                // 🔹特殊处理 bonusdamage：对所有 bonusdamageX 生效
                 if (t === "bonusdamage") {
                     return Object.keys(baseStats)
                         .filter(statName => statName.startsWith("bonusdamage"))
-                        .map(statName => ({
-                            type: statName,
-                            mode: mode,
-                            value: value
-                        }));
+                        .map(statName => ({ type: statName, mode: mode, value: value }));
                 }
-
-                // 🔹特殊处理 cost：对所有 costX 生效
                 if (t === "cost") {
                     return Object.keys(baseStats)
                         .filter(statName => statName.startsWith("cost"))
-                        .map(statName => ({
-                            type: statName,
-                            mode: mode,
-                            value: value
-                        }));
+                        .map(statName => ({ type: statName, mode: mode, value: value }));
                 }
-
-                return [{
-                    type: t,
-                    mode: mode,
-                    value: value
-                }];
+                return [{ type: t, mode: mode, value: value }];
             });
         });
 
-    // 🔹这里定义每个 id 的小数位规则
     const precisionRules = {
         attackspeed: 2,
         range: 2,
         speed: 2
-        // 其它不写的默认 0 位小数
     };
 
     Object.keys(baseStats).forEach(stat => {
@@ -1263,9 +1230,8 @@ function updateTable() {
         }
     });
 
-    // 🔹更新所有带 data-multiple 的 td（自动联动）
     document.querySelectorAll('[data-multiple][id]').forEach(td => {
-        const baseId = td.dataset.baseid || "damage"; // 默认以 damage 为基准
+        const baseId = td.dataset.baseid || "damage";
         const baseEl = document.getElementById(baseId);
         if (baseEl) {
             const multiple = parseFloat(td.dataset.multiple) || 1;
@@ -1280,14 +1246,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.icon').forEach(icon => {
         icon.addEventListener('click', () => {
             icon.classList.toggle('active');
-
-            // 🔹特殊处理：倍率切换（修改 data-multiple）
             if (icon.dataset.multiplier && icon.dataset.target) {
                 const target = document.getElementById(icon.dataset.target);
                 if (target) {
                     const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
                     if (!target.dataset.basemultiple) {
-                        target.dataset.basemultiple = baseMultiple; // 保存初始值
+                        target.dataset.basemultiple = baseMultiple;
                     }
                     if (icon.classList.contains("active")) {
                         target.dataset.multiple = icon.dataset.multiplier;
@@ -1296,10 +1260,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-
             updateTable();
-
-            // 🔹切换显示/隐藏说明文字（直接控制对应 span）
             if (icon.dataset.text) {
                 const target = document.getElementById(icon.dataset.text);
                 if (target) {
@@ -1311,7 +1272,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
     updateTable();
 });
 
@@ -1320,12 +1280,10 @@ function filterByGame(keyword) {
     document.querySelectorAll('#icons .icon').forEach(icon => {
         const gameAttr = icon.dataset.game;
         const overAttr = icon.dataset.over;
-
         if (gameAttr && gameAttr.split(" ").includes(keyword)) {
             icon.style.display = '';
             return;
         }
-
         if (!gameAttr) {
             if (overAttr && overAttr.split(" ").includes(keyword)) {
                 icon.style.display = 'none';
@@ -1334,61 +1292,67 @@ function filterByGame(keyword) {
             }
             return;
         }
-
         icon.style.display = 'none';
     });
 }
 
-
 // ----------- 重置函数 -----------
 function resetFilters() {
-    // 恢复所有图标的可见性并取消激活
     document.querySelectorAll('#icons .icon').forEach(icon => {
         icon.style.display = '';
         icon.classList.remove('active');
     });
-
-    // 取消所有过滤按钮高亮
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
-
-    // 隐藏所有由 icon 指定的说明文本（data-text 指向的元素）
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
         const id = icon.dataset.text;
         if (!id) return;
         const target = document.getElementById(id);
         if (target) target.style.display = 'none';
     });
-
-    // 恢复所有 data-multiple 的基准值
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
         if (el.dataset.basemultiple !== undefined) {
             el.dataset.multiple = el.dataset.basemultiple;
         }
     });
-
-    // 恢复 toggle 状态
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
-
     updateTable();
 }
 
+// ----------- 按钮扩展：更新 td + require -----------
+function applyButtonUpdates(btn) {
+    const updates = btn.dataset.update;
+    if (!updates) return;
+    updates.split(" ").forEach(rule => {
+        const [id, val] = rule.split(":");
+        const target = document.getElementById(id);
+        if (target && val !== undefined) {
+            target.dataset.base = val;
+            target.innerText = val;
+        }
+    });
+}
 
-
-// ----------- 绑定过滤按钮（点击时更新 URL 参数） -----------
+// ----------- 绑定过滤按钮 -----------
 function bindFilterButtons() {
     document.querySelectorAll('.filterbtn').forEach(btn => {
         btn.addEventListener('click', () => {
             resetFilters();
-
             if (btn.classList.contains('resetbtn')) return;
-
             btn.classList.add('active');
             const keyword = btn.dataset.filter;
             filterByGame(keyword);
 
-            // 🔹点击时更新 URL 参数为 civ=xxx
+            // 🔹扩展：应用更新
+            applyButtonUpdates(btn);
+
+            // 🔹扩展：处理 data-require
+            document.querySelectorAll('.filterbtn[data-require]').forEach(fb => {
+                const required = fb.dataset.require.split(" ");
+                fb.style.display = required.includes(keyword) ? "" : "none";
+            });
+
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
@@ -1398,7 +1362,7 @@ function bindFilterButtons() {
 }
 document.addEventListener('DOMContentLoaded', bindFilterButtons);
 
-// ----------- 页面加载时，检查 URL 参数 civ=xxx -----------
+// ----------- 页面加载时 -----------
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const civ = params.get("civ");
@@ -1408,7 +1372,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ----------- 重置并重新应用 civ 过滤 -----------
+// ----------- 重置并重新应用 civ -----------
 function resetFiltersciv() {
     const params = new URLSearchParams(window.location.search);
     const civ = params.get("civ");
@@ -1420,19 +1384,14 @@ function resetFiltersciv() {
 
 // ----------- 全部激活/取消功能 -----------
 let allActivated = false;
-
 const toggleBtn = document.querySelector('.toggle-activate');
 if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
         const visibleIcons = Array.from(document.querySelectorAll('#icons .icon'))
             .filter(icon => icon.style.display !== 'none');
-
         const targetState = !allActivated;
-
         visibleIcons.forEach(icon => {
             icon.classList.toggle('active', targetState);
-
-            // 🔹处理 data-text span
             if (icon.dataset.text) {
                 const txtId = icon.dataset.text;
                 const target = document.getElementById(txtId);
@@ -1440,8 +1399,6 @@ if (toggleBtn) {
                     target.style.display = targetState ? 'inline' : 'none';
                 }
             }
-
-            // 🔹处理 multiplier
             if (icon.dataset.multiplier && icon.dataset.target) {
                 const target = document.getElementById(icon.dataset.target);
                 if (target) {
@@ -1453,25 +1410,18 @@ if (toggleBtn) {
                 }
             }
         });
-
         allActivated = targetState;
         toggleBtn.classList.toggle('active', allActivated);
-
         updateTable();
     });
 }
 
-
-// ----------- 从 URL 参数触发过滤 ----------- 
+// ----------- 从 URL 参数触发过滤 -----------
 function triggerFilterFromURL() {
     const params = new URLSearchParams(window.location.search);
     const civ = params.get("civ");
     if (!civ) return;
-
-    // 找到对应的 filterbtn
     const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
     if (!btn) return;
-
-    // 触发点击
     btn.click();
 }

@@ -1265,10 +1265,12 @@
             <td colspan="5">
                 <div id="filters">
 
-                    <div class="filterbtn" data-filter="eng" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png" width="25px"></div>
+                    <div class="filterbtn" data-filter="eng" data-keep="true"
+                        data-update="armorm:2 armorr:3 damage:8 hp:100"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png"
+                            width="25px"></div>
 
-                    <div class="filterbtn" data-filter="hre" data-keep="true"><img
+                    <div class="filterbtn" data-filter="hre" data-keep="true"
+                        data-update="armorm:3 armorr:3 damage:10 hp:120"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png" width="25px"></div>
 
                     <div class="filterbtn" data-filter="sul" data-keep="true"><img
@@ -1392,27 +1394,29 @@
                 onmousemove="showPic(event,'急行军sul');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/急行军.png" width="30px"></a>
         </div>
 
+
+        <div class="icon" data-game="hre" data-multiplier="1.5" data-target="chargedamage"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'城主宫殿冲锋');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png" width="30px"></a>
+        </div>
+
         <div class="icon" data-type="attackspeed" data-game="eng" data-mode="diffMul" data-value="0.7"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'城堡网络效果2');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png" width="30px"></a></div>
         <div class="icon" data-type="buildtime" data-game="eng" data-mode="diffMul" data-value="0.5"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'英国武士加速');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战争召唤.png" width="30px"></a></div>
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/战争召唤.png" width="30px"></a></div>
         <div class="icon" data-type="armorm armorr" data-game="eng" data-mode="add add" data-value="2 2"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'重装甲');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/重装甲.png" width="30px"></a></div>
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重装甲.png" width="30px"></a></div>
 
         <div class="icon" data-type="damage" data-game="hre" data-mode="add" data-value="2"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'双手武器');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/双手武器.png"
-                    width="30px"></a></div>
+                onmousemove="showPic(event,'双手武器');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/双手武器.png" width="30px"></a>
+        </div>
         <div class="icon" data-type="bonusdamage1" data-game="hre" data-mode="add" data-value="6"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'重锤');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/重锤.png" width="30px"></a></div>
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重锤.png" width="30px"></a></div>
 
 
-        <div class="icon" data-game="hre" data-multiplier="1.5" data-target="chargedamage"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'城主宫殿冲锋');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png" width="30px"></a>
-        </div>
 
         <div class="icon" data-type="attackspeed" data-game="sul" data-mode="diffMul" data-value="0.83"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'胜利之塔效果');"><img
@@ -1485,6 +1489,14 @@
 
         <div class="icon" data-type="hp damage armorm armorr" data-mode="add add add add" data-value="25 2 1 2"> <img
                 src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐武士.png" width="30px">
+        </div>
+
+        <div class="icon" data-require="eng hre" data-type="hp damage armorm armorr" data-mode="add add add add"
+            data-value="35 2 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到武士.png" width="30px">
+        </div>
+
+        <div class="icon" data-require="eng" data-type="hp damage armorm" data-mode="add add add" data-value="20 2 1">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到早期武士.png" width="30px">
         </div>
 
 
