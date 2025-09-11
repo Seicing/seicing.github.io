@@ -1367,6 +1367,8 @@ function resetFilters() {
     if (toggleBtn) toggleBtn.classList.remove('active');
 
     updateTable();
+
+    // 隐藏 data-require 的按钮（恢复到 reset 状态）
     updateFilterButtonsVisibility(null);
 }
 
@@ -1390,50 +1392,67 @@ function applyButtonUpdates(btn) {
 }
 
 // ----------- 绑定过滤按钮 -----------
+// ----------- 绑定过滤按钮（注意：替换你原来同名函数） -----------
 function bindFilterButtons() {
-    document.querySelectorAll('.filterbtn').forEach(btn => {
+    const buttons = document.querySelectorAll('.filterbtn');
+
+    buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             resetFilters();
             if (btn.classList.contains('resetbtn')) return;
+
             btn.classList.add('active');
             const keyword = btn.dataset.filter;
             filterByGame(keyword);
 
-            // 🔹扩展：应用更新
+            // 🔹 执行按钮对 base 值的修改（如果有）
             applyButtonUpdates(btn);
 
-            // 🔹扩展：处理 data-require
-            document.querySelectorAll('.filterbtn[data-require]').forEach(fb => {
-                const required = fb.dataset.require.split(" ");
-                fb.style.display = required.includes(keyword) ? "" : "none";
-            });
-
+            // 🔹 更新 URL
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
+
+            // 🔹 更新 data-require 类型按钮的可见性（统一由此函数管理）
             updateFilterButtonsVisibility(keyword);
-            tipsp();
+
+            // ✅ 保留原来的 tipsp() 调用
+            if (typeof tipsp === 'function') tipsp();
         });
     });
+
+    // —— 关键：刚绑定完所有按钮后，统一设置初始可见性（默认 reset 状态）
+    // 这样能保证按钮被绑定之后再设置隐藏/显示，避免时序问题
+    updateFilterButtonsVisibility(null);
 }
+
 document.addEventListener('DOMContentLoaded', bindFilterButtons);
 
-// ----------- 页面加载时 -----------
+// ----------- 页面加载时（触发 URL civ，并确保可见性同步） -----------
 document.addEventListener('DOMContentLoaded', () => {
+    // 确保按钮绑定函数已运行。如果你也把 bindFilterButtons 注册成 DOMContentLoaded，那么
+    // 此处的触发次序取决于脚本中 bindFilterButtons 注册位置 —— 但我们在 bindFilterButtons 内已做了初始可见性设置。
     const params = new URLSearchParams(window.location.search);
     const civ = params.get("civ");
+
     if (civ) {
         const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
         if (targetBtn) {
-            targetBtn.click(); // 会自动触发按钮绑定逻辑
-            updateFilterButtonsVisibility(civ); // 保证 require 按钮状态同步
+            // 触发点击（绑定好的 handler 会处理过滤、applyButtonUpdates、updateFilterButtonsVisibility、tipsp 等）
+            targetBtn.click();
+
+            // 再次确保可见性和状态同步（保险起见）
+            updateFilterButtonsVisibility(civ);
         } else {
-            updateFilterButtonsVisibility(null); // 没找到按钮就重置
+            // 找不到对应按钮时，统一按 reset 状态显示（带 data-require 的按钮隐藏）
+            updateFilterButtonsVisibility(null);
         }
     } else {
-        updateFilterButtonsVisibility(null); // 无 civ 参数时，隐藏 data-require 的按钮
+        // 无 civ 参数时，默认隐藏带 data-require 的按钮
+        updateFilterButtonsVisibility(null);
     }
 });
+
 
 
 // ----------- 重置并重新应用 civ -----------
