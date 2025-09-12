@@ -810,8 +810,8 @@ let ayanami = {
     "马里黄金TC": "马里黄金TC<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>矿业社区：城镇中心的石头成本替代为400黄金",
     "马里标枪哨站": "马里标枪哨站<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/撒哈拉贸易网络.png' width='20px'>撒哈拉贸易网络：基础射箭槽被替代为标枪武器",
 
-    "城堡网络效果": "城堡网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：接近敌人会触发城堡网络加成，增加范围内部队20%/30%攻击速度",
-    "城堡网络效果2": "城堡网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：处于城堡网络内增加20%/30%的攻击速度",
+    "城堡网络效果": "城堡网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：接近敌人会触发城堡网络加成，增加范围内部队20%/30%攻击速度(实际81.1%攻击间隔时间)",
+    "城堡网络效果2": "城堡网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png' width='20px'>城堡网络：处于城堡网络内增加20%/30%的攻击速度(实际81.1%攻击间隔时间)",
 
     "英国二重射箭槽": "防御城镇<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：拥有2个初始射箭槽",
     "英国二重射箭槽2": "防御城镇<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>防御城镇：拥有2个初始射箭槽",
