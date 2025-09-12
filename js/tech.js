@@ -1233,14 +1233,26 @@ function updateTable() {
 
     const precisionRules = { attackspeed: 2, range: 2, speed: 2 };
 
+    const percentRules = { armorrp: 0, };
+
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
-        if (el) {
-            const val = calculateFinal(stat, activeBuffs, baseStats);
+        if (!el) return;
+
+        const val = calculateFinal(stat, activeBuffs, baseStats);
+
+        if (percentRules[stat] !== undefined) {
+            // ➡ 显示百分比
+            const decimals = percentRules[stat];
+            el.innerText = (val * 100).toFixed(decimals) + "%";
+        } else {
+            // ➡ 普通显示
             const decimals = precisionRules[stat] ?? 0;
             el.innerText = val.toFixed(decimals);
         }
     });
+
+
 
     document.querySelectorAll('[data-multiple][id]').forEach(td => {
         const baseId = td.dataset.baseid || "damage";
