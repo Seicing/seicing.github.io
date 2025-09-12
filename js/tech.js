@@ -1231,7 +1231,7 @@ function updateTable() {
             });
         });
 
-    const precisionRules = { attackspeed: 2, range: 2, speed: 2, brust: 3 };
+    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 3 };
 
     const percentRules = { armorrp: 0, };
 
