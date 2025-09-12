@@ -863,7 +863,7 @@ let ayanami = {
     "蒙古早期马厩": "伟大统治<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>伟大统治：可以在时代1建造",
     "蒙古早期马厩2": "伟大统治<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>伟大统治：可以在时代1建造",
 
-
+    "驿站网络效果": "驿站网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/驿站网络.png' width='20px'>驿站网络：移动速度+15%",
 
     "蒙古游牧": "伟大统治<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>伟大统治：可以打包移动",
 
