@@ -895,7 +895,7 @@ let ayanami = {
     "苏丹哈尼驿站贸易网络效果": "苏丹哈尼驿站贸易网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/苏丹哈尼驿站贸易网络.png' width='20px'>苏丹哈尼驿站贸易网络：驻扎的商人每分钟生产28黄金",
     "奥斯曼移速船": "运输路线<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>运输路线：贸易船和运输船的移动速度增加10%",
 
-    "高级军械库效果": "高级军械库<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/高级军械库.png' width='20px'>高级军械库：邻近攻城器械厂的攻城器械生产时间-20%",
+    "高级军械库效果": "高级军械库<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/高级军械库.png' width='20px'>高级军械库：邻近攻城器械厂的攻城器械生产成本-20%",
     "狩猎赏金1阶段": "狩猎赏金1阶段<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狩猎赏金.png' width='20px'>狩猎赏金1阶段：狩猎小屋产生 10% 额外黄金，村民食物采集率+5%",
     "狩猎赏金2阶段": "狩猎赏金2阶段<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狩猎赏金.png' width='20px'>狩猎赏金2阶段：狩猎小屋产生 25% 额外黄金，村民食物采集率+10%",
     "狩猎赏金3阶段": "狩猎赏金3阶段<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狩猎赏金.png' width='20px'>狩猎赏金3阶段：狩猎小屋产生 40% 额外黄金，村民食物采集率+15%",
