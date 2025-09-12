@@ -245,7 +245,7 @@ function showPic(e, taitou) {
 
     aasb = document.getElementById("Layer1");
     aasb.style.display = "";
-    aasb.style.width = "230px";
+    aasb.style.width = "210px";
     aasb.innerHTML = "<div style='background:rgba(0,0,0,0.75);padding:5px'><font style='color:#ffffff'>" + ayanami[taitou] + "</font></div>";
     var div = aasb;
     var z = div.offsetWidth;
@@ -314,7 +314,7 @@ function showPic2(e) {
 
     aasb = document.getElementById("Layer2");
     aasb.style.display = "";
-    aasb.style.width = "215px";
+    aasb.style.width = "225px";
     aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
     aasb.style.padding = "10px";
     aasb.style.left = x - 245 + 'px';
