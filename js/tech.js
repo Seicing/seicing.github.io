@@ -681,6 +681,9 @@ let ayanami = {
     "太傅监督": "阿塔贝格监督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿塔贝格监督.png' width='20px'>阿塔贝格监督：阿塔贝格驻扎的军事设施新训练的部队生命值+20%",
     "经济偏殿工业加成": "经济偏殿 : 工业<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/经济偏殿工业.png' width='20px'>经济偏殿 : 工业：村民建造速度+30%/40%/50%",
 
+    "骑兵修建攻城器": "军事偏殿 : 援军<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事偏殿援军.png' width='20px'>军事偏殿 : 援军：骑兵可以建造攻城锤、攻城塔、扭力弩炮、投石车",
+
+
     "守护者大院效果2": "守护者大院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/守护者大院.png' width='20px'>守护者大院：石制建筑和炮台的石头成本-20%",
 
 
@@ -752,8 +755,8 @@ let ayanami = {
     "大食码头": "造船厂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>造船厂：码头的建造成本减少50%",
     "大食码头2": "造船厂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>造船厂：码头的建造成本减少50%",
 
-    "大食手搓": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造冲车、攻城塔、扭力弩炮、轻型投石车",
-    "大食手搓2": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造冲车、攻城塔、扭力弩炮、轻型投石车",
+    "大食手搓": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造攻城锤、攻城塔、扭力弩炮、轻型投石车",
+    "大食手搓2": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造攻城锤、攻城塔、扭力弩炮、投石车",
 
     "大食野猪限制": "大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物",
     "大食野猪限制4": "大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物",
