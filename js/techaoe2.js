@@ -963,7 +963,7 @@ function showPic(e, taitou) {
 
     aasb = document.getElementById("Layer1");
     aasb.style.display = "";
-    aasb.style.width = "220px";
+    aasb.style.width = "230px";
     aasb.innerHTML = "<div style='background:rgba(0,0,0,0.75);padding:5px'><font style='color:#ffffff'>" + ayanami[taitou] + "</font></div>";
     var div = aasb;
     var z = div.offsetWidth;
