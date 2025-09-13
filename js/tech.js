@@ -1473,6 +1473,37 @@ function triggerFilterFromURL() {
 }
 
 
+
+async function loadPage(a) {
+    const sbx9022 = a;
+
+    // 构造网页路径
+    const pagePath = `https://seicing.com/js/laviclass/${sbx9022}.html`;
+    const targetDiv = document.getElementById("Kokodayo");
+
+    try {
+        // 请求主要页面
+        const response = await fetch(pagePath);
+        if (!response.ok) throw new Error("页面加载失败: " + response.status);
+        const html = await response.text();
+        targetDiv.innerHTML = html;
+    } catch (err) {
+        console.error("加载失败，尝试备用页面:", err);
+
+        // 加载备用页面
+        try {
+            const fallbackRes = await fetch(fallbackPath);
+            if (!fallbackRes.ok) throw new Error("备用页面也加载失败: " + fallbackRes.status);
+            const fallbackHtml = await fallbackRes.text();
+            targetDiv.innerHTML = fallbackHtml;
+        } catch (e) {
+            console.error(e);
+            targetDiv.innerText = "加载失败";
+        }
+    }
+}
+
+
 function reinitialize() {
     initBaseValues();
     initBaseMultiples();
@@ -1481,8 +1512,7 @@ function reinitialize() {
     if (typeof tipsp === 'function') tipsp(); // 保留你原本的提示
 }
 
-function loadPageAndInit(page) {
-    loadPage(page, () => {
-        reinitialize();
-    });
+async function loadPageAndInit(page) {
+    await loadPage(page);  // 等待 loadPage 完成
+    reinitialize();        // 然后再初始化
 }
