@@ -804,7 +804,7 @@ let ayanami = {
     "露天矿坑建筑学": "露天矿坑建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>矿业社区：在露天矿区影响力范围内建造的每间房屋和采矿场将会提升露天矿区的黄金产量，每个25%",
     "马里贸易科研": "马里贸易科研<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>手稿贸易：升级和科技研发时间随着贸易数量的增加而减少",
     "马里房屋限制": "马里房屋限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>矿业社区：木材成本便宜50%，但是提供的人口数减少50%，生命值为550",
-    "马里码头加速": "马里码头加速<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>登陆部队：船只接近码头时移动速度+15%，持续10秒",
+    "马里码头加速": "登陆部队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>登陆部队：船只接近码头时移动速度+15%，持续10秒",
     "马里便宜升级": "马里便宜升级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>法拉里的知识：升级到老练级别需要的资源和时间减半",
     "收费哨站效果": "收费哨站效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/收费哨站.png' width='20px'>收费哨站：最多40%，每路过一个收费哨站，商人可以额外立即获得8%的交易黄金",
     "马里运输船驻扎": "马里运输船驻扎<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>登陆部队：运输船每驻扎1个单位就获得1个标枪武器(攻击力7、发射间隔时间2.62秒、射程6.50)",
