@@ -1471,3 +1471,18 @@ function triggerFilterFromURL() {
     const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
     if (btn) btn.click();
 }
+
+
+function reinitialize() {
+    initBaseValues();
+    initBaseMultiples();
+    bindFilterButtons();
+    updateTable();
+    if (typeof tipsp === 'function') tipsp(); // 保留你原本的提示
+}
+
+function loadPageAndInit(page) {
+    loadPage(page, () => {
+        reinitialize();
+    });
+}
