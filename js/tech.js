@@ -1482,33 +1482,54 @@ async function loadPage(a) {
         const response = await fetch(pagePath);
         if (!response.ok) throw new Error("页面加载失败: " + response.status);
         const html = await response.text();
+
+        // ⚠️ 替换内容
         targetDiv.innerHTML = html;
 
-        // ✅ 新内容插入后，立即重新初始化
-        reinitialize();
+        // ⚠️ 内容插入后，重新执行所有初始化
+        initBaseValues();
+        initBaseMultiples();
+        bindFilterButtons();
+        updateTable();
+
+        // 重新绑定 icon 事件
+        targetDiv.querySelectorAll('.icon').forEach(icon => {
+            icon.addEventListener('click', () => {
+                icon.classList.toggle('active');
+
+                // 倍率切换
+                if (icon.dataset.multiplier && icon.dataset.target) {
+                    const target = document.getElementById(icon.dataset.target);
+                    if (target) {
+                        const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
+                        if (!target.dataset.basemultiple) target.dataset.basemultiple = baseMultiple;
+                        target.dataset.multiple = icon.classList.contains("active")
+                            ? icon.dataset.multiplier
+                            : target.dataset.basemultiple;
+                    }
+                }
+
+                updateTable();
+
+                // 显示 / 隐藏说明
+                if (icon.dataset.text) {
+                    const target = document.getElementById(icon.dataset.text);
+                    if (target) {
+                        target.style.display =
+                            (target.style.display === "none" || target.style.display === "")
+                                ? "inline"
+                                : "none";
+                    }
+                }
+            });
+        });
+
+        // ✅ 调用提示
+        if (typeof tipsp === 'function') tipsp();
 
     } catch (err) {
-        console.error("加载失败，尝试备用页面:", err);
-        try {
-            const fallbackRes = await fetch(fallbackPath);
-            if (!fallbackRes.ok) throw new Error("备用页面也加载失败: " + fallbackRes.status);
-            const fallbackHtml = await fallbackRes.text();
-            targetDiv.innerHTML = fallbackHtml;
-
-            // ✅ 备用页面也要重新初始化
-            reinitialize();
-
-        } catch (e) {
-            console.error(e);
-            targetDiv.innerText = "加载失败";
-        }
+        console.error("加载失败:", err);
+        targetDiv.innerText = "加载失败";
     }
 }
 
-function reinitialize() {
-    initBaseValues();
-    initBaseMultiples();
-    bindFilterButtons();
-    updateTable();
-    if (typeof tipsp === 'function') tipsp(); // 保留你原本的提示
-}
