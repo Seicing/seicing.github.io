@@ -1,0 +1,90 @@
+<table id="stats" style="font-size: 9pt;">
+  <tr>
+    <td style="text-align: center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/苏丹之塔.png" width="48px"></td>
+    <td colspan="5">
+      <div id="filters">
+        <div class="filterbtn" data-filter="ayy" data-keep="true"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"
+            width="25px"></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
+    <td id="buildtime" data-base="140"> </td>
+    <td>成本</td>
+    <td colspan="3">
+      <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="25px">
+      <span id="cost2" data-base="650"></span>
+      <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="25px">
+      <span id="cost3" data-base="350"></span>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png" width="25px">生命值</td>
+    <td id="hp" data-base="800"> </td>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png" width="25px">近战防御</td>
+    <td id="armorm" data-base="0"> </td>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png" width="25px">远程减伤率</td>
+    <td id="armorrp" data-base="0.95"> </td>
+  </tr>
+  <tr>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/attackspeed.png" width="25px">攻击速度</td>
+    <td id="attackspeed" data-base="8.125"> </td>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/range.png" width="25px">射程</td>
+    <td id="range" data-base="1.0"> </td>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
+    <td id="speed" data-base="0.5"> </td>
+  </tr>
+  <tr>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagesiege.png" width="25px">攻城伤害</td>
+    <td id="damage" data-base="600"> </td>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/brust.png" width="25px">多段攻击</td>
+    <td id="brust" data-base="1"> </td>
+    <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/aoearea.png" width="25px">溅射范围</td>
+    <td id="aoearea" data-base="0"> </td>
+  </tr>
+  <tr>
+    <td>对[墙]加成</td>
+    <td id="bonusdamage1" data-base="200"> </td>
+    <td colspan="4"></td>
+  </tr>
+  <tr>
+    <td>其他加成</td>
+    <td colspan="5">
+      <span id="Extra30" style="display:none;"><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/结构强化.png'
+          width='20px'>结构强化：激活后，10秒内近战护甲+20，火焰护甲+5<br></span>
+    </td>
+  </tr>
+</table>
+
+<div onclick="loadPage(SultanTowerFlameBullet)" style="color: blue;display: inline">切换成撞击模式</div>
+<div style="display: inline-block;width: 20px;"> </div>
+<div onclick="loadPage(SultanTowerStoneBullet)" style="color: blue;display: inline">切换成射击模式</div>
+<br>
+<div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
+<div style="display: inline-block;width: 20px;"> </div>
+<div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
+
+<div id="icons" style="width: 523px;">
+  <div class="icon" data-type="cost" data-game="ayy" data-mode="diffMul" data-value="0.8"><a onmouseout="hiddenPic();"
+      onmousemove="showPic(event,'阿尤布黄金时代阶段IV');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代4.png"
+        width="30px"></a></div>
+
+  <div class="icon" data-game="ayy" data-text="Extra30"><a onmouseout="hiddenPic();"
+      onmousemove="showPic(event,'结构强化主动能力');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/结构强化.png" width="30px"></a>
+  </div>
+  <div class="icon" data-over="mac" data-type="hp" data-mode="sameMul" data-value="0.2"><a onmouseout="hiddenPic();"
+      onmousemove="showPic(event,'攻城武器');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="30px"></a>
+  </div>
+  <div class="icon" data-type="speed" data-mode="sameMul" data-value="0.15"><a onmouseout="hiddenPic();"
+      onmousemove="showPic(event,'润滑轮轴');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/润滑轮轴.png" width="30px"></a>
+  </div>
+
+  <div class="icon" data-type="attackspeed" data-mode="sameMul" data-value="-0.166"><a onmouseout="hiddenPic();"
+      onmousemove="showPic(event,'轻质横梁');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质横梁.png" width="30px"></a>
+  </div>
+
+  <div class="icon" data-type="buildtime" data-over="ott" data-mode="sameMul" data-value="-0.25"><a
+      onmouseout="hiddenPic();" onmousemove="showPic(event,'军事学院');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png"
+        width="30px"></a>
+  </div>
