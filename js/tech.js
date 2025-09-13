@@ -1473,7 +1473,6 @@ function triggerFilterFromURL() {
 }
 
 
-
 async function loadPage(a) {
     const sbx9022 = a;
     const pagePath = `https://seicing.com/js/laviclass/${sbx9022}.html`;
@@ -1485,19 +1484,18 @@ async function loadPage(a) {
         const html = await response.text();
         targetDiv.innerHTML = html;
 
-        // 🔹 关键：加载新内容后，重新初始化绑定
+        // ✅ 新内容插入后，立即重新初始化
         reinitialize();
 
     } catch (err) {
         console.error("加载失败，尝试备用页面:", err);
-
         try {
             const fallbackRes = await fetch(fallbackPath);
             if (!fallbackRes.ok) throw new Error("备用页面也加载失败: " + fallbackRes.status);
             const fallbackHtml = await fallbackRes.text();
             targetDiv.innerHTML = fallbackHtml;
 
-            // 🔹 同样在备用加载完成后 reinitialize
+            // ✅ 备用页面也要重新初始化
             reinitialize();
 
         } catch (e) {
