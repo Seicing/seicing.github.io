@@ -1476,26 +1476,30 @@ function triggerFilterFromURL() {
 
 async function loadPage(a) {
     const sbx9022 = a;
-
-    // 构造网页路径
     const pagePath = `https://seicing.com/js/laviclass/${sbx9022}.html`;
     const targetDiv = document.getElementById("Kokodayo");
 
     try {
-        // 请求主要页面
         const response = await fetch(pagePath);
         if (!response.ok) throw new Error("页面加载失败: " + response.status);
         const html = await response.text();
         targetDiv.innerHTML = html;
+
+        // 🔹 关键：加载新内容后，重新初始化绑定
+        reinitialize();
+
     } catch (err) {
         console.error("加载失败，尝试备用页面:", err);
 
-        // 加载备用页面
         try {
             const fallbackRes = await fetch(fallbackPath);
             if (!fallbackRes.ok) throw new Error("备用页面也加载失败: " + fallbackRes.status);
             const fallbackHtml = await fallbackRes.text();
             targetDiv.innerHTML = fallbackHtml;
+
+            // 🔹 同样在备用加载完成后 reinitialize
+            reinitialize();
+
         } catch (e) {
             console.error(e);
             targetDiv.innerText = "加载失败";
@@ -1503,16 +1507,10 @@ async function loadPage(a) {
     }
 }
 
-
 function reinitialize() {
     initBaseValues();
     initBaseMultiples();
     bindFilterButtons();
     updateTable();
     if (typeof tipsp === 'function') tipsp(); // 保留你原本的提示
-}
-
-async function loadPageAndInit(page) {
-    await loadPage(page);  // 等待 loadPage 完成
-    reinitialize();        // 然后再初始化
 }
