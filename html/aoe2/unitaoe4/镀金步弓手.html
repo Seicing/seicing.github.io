@@ -318,6 +318,161 @@
         </tr>
     </table>
 </div>
+
+
+
+
+
+
+
+
+<br><br><br>
+<div>
+    <H1>
+        <a id="oth9370"></a><b><span style="color: #000000">模拟加成</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <table id="stats" style="font-size: 9pt;">
+        <tr>
+            <td style="text-align: center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/镀金步弓手.png" width="48px"></td>
+            <td colspan="5">
+                <div id="filters">
+                    <div class="filterbtn" data-filter="otd" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png" width="25px"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
+            <td id="buildtime" data-base="18"> </td>
+            <td>成本</td>
+            <td colspan="3">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="25px">
+                <span id="cost1" data-base="60"></span>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="25px">
+                <span id="cost2" data-base="100"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png" width="25px">生命值</td>
+            <td id="hp" data-base="125"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png" width="25px">近战防御</td>
+            <td id="armorm" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png" width="25px">远程防御</td>
+            <td id="armorr" data-base="0"> </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/attackspeed.png" width="25px">攻击速度</td>
+            <td id="attackspeed" data-base="1.00"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/range.png" width="25px">射程</td>
+            <td id="range" data-base="5.5"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
+            <td id="speed" data-base="1.25"> </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damageranged.png" width="25px">远程伤害</td>
+            <td id="damage" data-base="6"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/brust.png" width="25px">多段攻击</td>
+            <td id="brust" data-base="1"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagesiege.png" width="25px">对建筑伤害</td>
+            <td id="firedamage" data-base="6"> </td>
+        </tr>
+        <tr>
+            <td>对[轻型近战步兵]加成</td>
+            <td id="bonusdamage1" data-base="6"> </td>
+            <td>对[轻型火药步兵]加成</td>
+            <td id="bonusdamage2" data-base="6"> </td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>其他加成</td>
+            <td colspan="5">
+                <span id="Extra1" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png"
+                        width="20px">攻城工程学：可以建造冲车和攻城塔<br></span>
+            </td>
+        </tr>
+    </table>
+    <div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
+    <div style="display: inline-block;width: 20px;"> </div>
+    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
+
+    <div id="icons" style="width: 523px;">
+
+        <div class="icon" data-type="hp damage bonusdamage1 bonusdamage2" data-mode="add add add add"
+            data-value="20 2 2 2"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到老练镀金步弓手.png" width="30px">
+        </div>
+        <div class="icon" data-type="hp damage bonusdamage1 bonusdamage2" data-mode="add add add add"
+            data-value="15 2 2 2"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐镀金步弓手.png" width="30px">
+        </div>
+
+        <div class="icon" data-type="damage" data-over="mal mac" data-mode="sameMul" data-value="0.2"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'燃烧箭');">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="30px"></a></div>
+        <div class="icon" data-type="range" data-mode="add" data-value="1.5"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'蚕丝弓弦');">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px"></a></div>
+
+
+
+        <div class="icon" data-type="damage" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'钢制箭头');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="damage" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'平衡炮弹');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="damage" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'箭头穿孔板甲');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png"
+                    width="30px"></a>
+        </div>
+
+
+
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'合身皮具');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'绝缘头盔');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁匠大师');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁制底网');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'楔形铆钉');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'斜面');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="armorr" data-game="otd" data-mode="add" data-value="3"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'鳞甲');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/鳞甲.png" width="30px"></a>
+        </div>
+
+
+        <div class="icon" data-type="buildtime" data-over="ott" data-mode="sameMul" data-value="-0.25"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'军事学院');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="30px"></a>
+        </div>
+
+
+        <div class="icon" data-over="abb ayy" data-text="Extra1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'攻城工程学');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png" width="30px"></a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
