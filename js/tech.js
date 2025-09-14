@@ -924,11 +924,11 @@ let ayanami = {
     "胜利之塔效果2": "胜利之塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：在胜利之塔和图格鲁克巴德堡垒的影响范围内生产大象，可将大象攻击速度提高15%",
     "工作象提交": "工作象<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png' width='20px'>工作象：采集资源提交到工作象时获得5%额外资源",
     "图格鲁克科技": "发展补助金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>发展补助金：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技折算后变为原科技的102%/96%/84%/60%价格",
-    "伽罗尔总督效果": "伽罗尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伽罗尔总督.png' width='20px'>伽罗尔总督：在图格鲁克巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+20/+35/+50/+65生命值",
-    "木尔坦总督效果": "木尔坦总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦总督.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+100%",
-    "塞赫万总督效果": "塞赫万总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塞赫万总督.png' width='20px'>塞赫万总督：圣物和圣地黄金收入+20%，医疗战象减少受到敌人的伤害10%/15%/20%/20%，4级时，医疗战象的治疗速率+50%",
-    "珀格尔总督效果": "珀格尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珀格尔总督.png' width='20px'>珀格尔总督：在图格鲁克巴德堡垒2/2/2/3格范围内的建筑每分钟自动生成20/30/40/40食物，在4级时，额外生产获得食物量 20% 的石头",
-    "阿杰梅尔总督效果": "阿杰梅尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/阿杰梅尔总督.png' width='20px'>阿杰梅尔总督：在4级时，埃米尔战士训练速度 +50%，生命值 +50%",
+    "伽罗尔总督效果": "伽罗尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伽罗尔赞助者.png' width='20px'>伽罗尔总督：在图格鲁克巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+20/+35/+50/+65生命值",
+    "木尔坦总督效果": "木尔坦总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦赞助者.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+100%",
+    "塞赫万总督效果": "塞赫万总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/塞赫万赞助者.png' width='20px'>塞赫万总督：圣物和圣地黄金收入+20%，医疗战象减少受到敌人的伤害10%/15%/20%/20%，4级时，医疗战象的治疗速率+50%",
+    "珀格尔总督效果": "珀格尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珀格尔赞助者.png' width='20px'>珀格尔总督：在图格鲁克巴德堡垒2/2/2/3格范围内的建筑每分钟自动生成20/30/40/40食物，在4级时，额外生产获得食物量 20% 的石头",
+    "阿杰梅尔总督效果": "阿杰梅尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/阿杰梅尔赞助者.png' width='20px'>阿杰梅尔总督：在4级时，埃米尔战士训练速度 +50%，生命值 +50%",
 
 
 
