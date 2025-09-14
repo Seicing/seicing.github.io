@@ -4190,8 +4190,10 @@
                     <div class="filterbtn" data-filter="hol" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></div>
 
-                    <div class="filterbtn" data-filter="hre" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png" width="25px"></div>
+                    <div class="filterbtn" data-filter="hre" data-keep="true"
+                        data-update="carry1:14 carry2:14 carry3:14 carry4:14 carry5:14 carry6:14 carry7:14 carry8:14 carry9:14 carry10:14">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png" width="25px">
+                    </div>
 
                     <div class="filterbtn" data-filter="sul" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px"></div>
@@ -4200,7 +4202,7 @@
 
                     <div class="filterbtn" data-filter="rus" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/rus.png" width="25px"></div>
-                    <div class="filterbtn" data-filter="kcr" data-keep="true"><img
+                    <div class="filterbtn" data-filter="kcr" data-keep="true" data-update="gather8:0.63"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></div>
 
                     <div class="filterbtn" data-filter="fre" data-keep="true"><img
@@ -4260,7 +4262,7 @@
             <td id="damage" data-base="6"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/firedamage.png" width="25px">火炬伤害</td>
             <td id="firedamage" data-base="10"> </td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/buildeff.png" width="25px">建造修理效率</td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/buildeff.png" width="25px">建造效率</td>
             <td id="buildeff" data-base="1.0"> </td>
         </tr>
 
@@ -4394,6 +4396,8 @@
                 <span id="Extra73" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/祗园祭.png"
                         width="20px">祗园祭：每3分钟所有经济单位会在3秒内恢复100%生命值<br></span>
 
+                <span id="Extra74" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/堤岸修复.png"
+                        width="20px">堤岸修复：建筑和攻城器修理速度+50%<br></span>
 
                 <span id="Extra8" style="display:none;"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/海盗行为.png"
                         width="20px">海盗行为：击沉对方船只获得25木和25金<br></span>
@@ -4500,8 +4504,8 @@
 
 
         <div class="icon" data-type="buildtime cost" data-game="hre otd" data-mode="diffMul" data-value="0.333 0.333"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'施瓦本宫殿');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿效果.png" width="30px"></a></div>
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'施瓦本宫殿效果');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png" width="30px"></a></div>
 
 
         <div class="icon" data-type="gather" data-game="hre" data-mode="diffMul" data-value="1.35"><a
@@ -4599,17 +4603,6 @@
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'中国加速建造2');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png" width="30px"></a>
         </div>
-
-
-        <div class="icon" data-game="hre" data-type="carry" data-mode="diffMul" data-value="1.4"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'神罗村民运载');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="otd" data-require="otd" data-type="carry" data-mode="diffMul" data-value="1.4"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'神罗村民运载2');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png" width="30px"></a>
-        </div>
-
 
         <div class="icon" data-type="deposit9" data-game="mon" data-mode="diffMul" data-value="1.5"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'草原防卫据点效果');"><img
@@ -4765,7 +4758,8 @@
         </div>
 
 
-        <div class="icon" data-text="Extra70"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'林业');">
+        <div class="icon" data-over="mon" data-text="Extra70"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'林业');">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/林业.png" width="30px"></a></div>
         <div class="icon" data-game="mon" data-text="Extra71"><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'林业已强化');">
@@ -4880,17 +4874,21 @@
                 onmousemove="showPic(event,'灰吹法');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/灰吹法.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-type="deposit" data-mode="sameMul" data-value="0.05"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'工作象提交');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png" width="30px"></a>
+        <div class="icon" data-game="tug" data-type="deposit" data-mode="sameMul" data-value="0.05"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'工作象提交');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="deposit" data-mode="sameMul" data-value="0.15"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'编织篮子');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/编织篮子.png" width="30px"></a>
+        <div class="icon" data-game="tug" data-type="deposit" data-mode="sameMul" data-value="0.15"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'编织篮子');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/编织篮子.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="deposit" data-mode="sameMul" data-value="0.10"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'承重框架');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/承重框架.png" width="30px"></a>
+        <div class="icon" data-game="tug" data-type="deposit" data-mode="sameMul" data-value="0.10"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'承重框架');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/承重框架.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="deposit" data-mode="sameMul" data-value="0.10"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'大象挽具');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象挽具.png" width="30px"></a>
+        <div class="icon" data-game="tug" data-type="deposit" data-mode="sameMul" data-value="0.10"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'大象挽具');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象挽具.png" width="30px"></a>
         </div>
 
 
@@ -4926,10 +4924,11 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/强化加工.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-type="buildeff" data-game="mal" data-mode="diffMul" data-value="2"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'堤岸修复');"><img
+        <div class="icon" data-text="Extra74"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'堤岸修复');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/堤岸修复.png" width="30px"></a>
         </div>
+
+
 
     </div>
 </div>
