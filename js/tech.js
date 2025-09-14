@@ -578,7 +578,7 @@ let ayanami = {
 
     "攻城专家巨型投石机": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：巨型投石机多段攻击次数+1，但攻击力-15，建筑附加伤害-150，船只附加伤害-100",
     "攻城专家成本": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：攻城武器厂和攻城器械的木材成本 -25%",
-    "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，基础伐木效率0.63，在封建/城堡/帝王时代木材的采集速度各+15%",
+    "景观保护": "景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，基础伐木效率0.63，自动研发双阔斧、木材保存和横切锯",
     "圣殿骑士影响力": "法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽",
     "圣殿要塞": "法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%",
     "法兰西王国": "法兰西王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西王国.png' width='20px'>法兰西王国：军事单位生产时间-15%，减少5%的黄金消耗",
@@ -1227,13 +1227,30 @@ function updateTable() {
                         .filter(statName => statName.startsWith("cost"))
                         .map(statName => ({ type: statName, mode, value }));
                 }
+                if (t === "carry") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("carry"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                if (t === "gather") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("gather"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                if (t === "deposit") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("deposit"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+
+
                 return [{ type: t, mode, value }];
             });
         });
 
-    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2 };
+    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, carry1: 2, gather1: 2, carry2: 2, gather2: 2, carry3: 2, gather3: 2, carry4: 2, gather4: 2, carry5: 2, gather5: 2, carry6: 2, gather6: 2, carry7: 2, gather7: 2, carry8: 2, gather8: 2, carry9: 2, gather9: 2, carry10: 2, gather10: 2, };
 
-    const percentRules = { armorrp: 0, };
+    const percentRules = { armorrp: 0, buildeff: 0, deposit: 0 };
 
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
