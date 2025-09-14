@@ -799,7 +799,7 @@ let ayanami = {
     "元朝效果": "盛世王朝 - 元朝<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/元朝.png' width='20px'>盛世王朝 - 元朝：+15%移动速度",
     "明朝效果": "盛世王朝 - 明朝<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/明朝.png' width='20px'>盛世王朝 - 明朝：+15%生命值",
     "宋朝效果": "盛世王朝 - 宋朝<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宋朝.png' width='20px'>盛世王朝 - 宋朝：生产速度+33%",
-    "谷仓效果": "谷仓<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/谷仓.png' width='20px'>谷仓：影响力范围内农田食物收集率+15%",
+    "谷仓效果": "谷仓<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/谷仓.png' width='20px'>谷仓：影响力范围内农田食物收集率+15%，多个谷仓之间可以叠加",
 
     "露天矿坑建筑学": "矿业社区<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>矿业社区：在露天矿区影响力范围内建造的每间房屋和采矿场将会提升露天矿区的黄金产量，每个25%",
     "马里贸易科研": "手稿贸易<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>手稿贸易：升级和科技研发时间随着贸易数量的增加而减少",
