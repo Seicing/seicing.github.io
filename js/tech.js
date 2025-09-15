@@ -888,6 +888,15 @@ let ayanami = {
     "蒙古运输": "强化运输<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>强化运输：生命值+50%、移动速度+15% ",
     "蒙古运输2": "强化运输<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>强化运输：生命值+50%、移动速度+15% ",
 
+
+    "忽里勒台光环": "忽里勒台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/忽里勒台.png' width='20px'>忽里勒台：其光环内的附近单位每1秒治疗+1生命值，并获得额外+20%攻击力",
+    "机动箭": "机动箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/机动箭.png' width='20px'>机动箭：射出一支信号箭，使附近单位 (包括汗) 的移动速度+33%",
+    "攻速箭": "攻速箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻速箭.png' width='20px'>攻速箭：射出一支信号箭，使附近远程单位 (包括汗) 的装填速度+50%",
+    "防御箭": "防御箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御箭.png' width='20px'>防御箭：射出一支信号箭，使附近单位 (包括汗) 的护甲+2",
+    "汗的猎人光环": "汗的猎人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗的猎人.png' width='20px'>在封建/城堡/帝王时代，汗的猎人可将附近远程单位的射程增加 +0.5/+0.8/+1.0，骑射手可获得额外的 +0.5",
+
+
+
     "奥斯曼木材折扣": "军事诱惑<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>军事诱惑：造价减少40%",
     "奥斯曼生产加速": "影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>影响力：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升20%/20%/30%/40%",
     "伊斯坦布尔天文台效果": "伊斯坦布尔天文台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伊斯坦布尔天文台.png' width='20px'>伊斯坦布尔天文台：铁匠铺、大学周围的军事生产建筑效率的影响力效果提高到100%",
