@@ -893,7 +893,11 @@ let ayanami = {
     "机动箭": "机动箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/机动箭.png' width='20px'>机动箭：射出一支信号箭，使附近单位 (包括汗) 的移动速度+33%",
     "攻速箭": "攻速箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻速箭.png' width='20px'>攻速箭：射出一支信号箭，使附近远程单位 (包括汗) 的装填速度+50%",
     "防御箭": "防御箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御箭.png' width='20px'>防御箭：射出一支信号箭，使附近单位 (包括汗) 的护甲+2",
-    "汗的猎人光环": "汗的猎人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗的猎人.png' width='20px'>在封建/城堡/帝王时代，汗的猎人可将附近远程单位的射程增加 +0.5/+0.8/+1.0，骑射手可获得额外的 +0.5",
+    "汗的猎人光环": "汗的猎人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗的猎人.png' width='20px'>汗的猎人：在封建/城堡/帝王时代，汗的猎人可将附近远程单位的射程增加 +0.5/+0.8/+1.0，骑射手可获得额外的 +0.5",
+
+
+
+    "圣者的祝福": "圣者的祝福<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣者的祝福.png' width='20px'>圣者的祝福：僧侣战士攻击后祝福2(7)格范围内的军队，提高2(3)攻击力和1护甲，持续10(20)秒",
 
 
 
