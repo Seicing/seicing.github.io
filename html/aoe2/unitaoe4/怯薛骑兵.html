@@ -496,7 +496,7 @@
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagemelee.png" width="25px">近战伤害</td>
             <td id="damage" data-base="15"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/chargedamage.png" width="25px">冲锋伤害</td>
-            <td id="chargedamage" data-multiple="1.48"> </td>
+            <td id="chargedamage" data-base="23"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagefire.png" width="25px">火炬伤害</td>
             <td id="firedamage" data-base="21"> </td>
         </tr>
@@ -535,8 +535,9 @@
     <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
 
     <div id="icons" style="width: 523px;">
-        <div class="icon" data-type="damage bonusdamage" data-mode="diffMul diffMul" data-value="1.2 1.2"
-            data-game="mon" data-text="Extra79"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'忽里勒台光环');"><img
+        <div class="icon" data-type="damage chargedamage firedamage bonusdamage"
+            data-mode="diffMul diffMul diffMul diffMul" data-value="1.2 1.2 1.2 1.2" data-game="mon"
+            data-text="Extra79"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'忽里勒台光环');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/忽里勒台.png" width="30px"></a>
         </div>
         <div class="icon" data-game="mon" data-text="Extra80"><a onmouseout="hiddenPic();"
@@ -554,11 +555,11 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/驿站网络.png" width="30px"></a></div>
 
 
-        <div class="icon" data-type="hp damage armorm  armorr" data-mode="add add add add" data-value="30 4 1 1"> <img
-                src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到老练怯薛骑兵.png" width="30px">
+        <div class="icon" data-type="hp damage chargedamage armorm armorr" data-mode="add add add add add"
+            data-value="30 4 6 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到老练怯薛骑兵.png" width="30px">
         </div>
-        <div class="icon" data-type="hp damage armorm  armorr" data-mode="add add add add" data-value="35 4 1 1"> <img
-                src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐怯薛骑兵.png" width="30px">
+        <div class="icon" data-type="hp damage chargedamage armorm armorr" data-mode="add add add add add"
+            data-value="35 4 6 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐怯薛骑兵.png" width="30px">
         </div>
 
         <div class="icon" data-game="goh" data-text="Extra18"><a onmouseout="hiddenPic();"
@@ -596,16 +597,16 @@
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草原长矛骑兵已强化.png" width="30px"></a></div>
 
 
-        <div class="icon" data-type="damage" data-over="jpn sen mac" data-mode="add" data-value="1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'熟铁块吹炼法');"><img
+        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'熟铁块吹炼法');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="damage" data-over="jpn sen mac" data-mode="add" data-value="1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'脱碳');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="30px"></a>
+        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'脱碳');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png"
+                    width="30px"></a>
         </div>
-        <div class="icon" data-type="damage" data-over="jpn sen mac" data-mode="add" data-value="1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢');"><img
+        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="30px"></a>
         </div>
 
