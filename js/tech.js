@@ -242,14 +242,18 @@ let ayanami = {
 
 
 
+    "法里玛领导制效果": "法里玛领导制<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法里玛领导制.png' width='20px'>法里玛领导制：索法骑手提高附近步兵的移动速度 +15%",
+
+    "攻击战鼓": "攻击战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻击战鼓.png' width='20px'>攻击战鼓：使得附近的友军增加15%攻击速度",
+    "近战防御战鼓": "近战防御战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/近战防御战鼓.png' width='20px'>近战防御战鼓：使得附近的友军的近战防御+2",
+    "远程防御战鼓": "远程防御战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/远程防御战鼓.png' width='20px'>远程防御战鼓：使得附近的友军的远程防御+1",
+
+
 
 
 
     "帝国舰队": "帝国舰队<br>Imperial Fleet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>火药船的生产速度提高 25%，移动速度提高 25%",
     "苏丹亲兵火枪": "苏丹亲兵火枪<br>Janissary Guns<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>苏丹亲兵火枪伤害 +4",
-
-
-
 
 
 
