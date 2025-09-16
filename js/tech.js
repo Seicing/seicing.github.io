@@ -28,7 +28,7 @@ let ayanami = {
     "加热射击": "加热射击<br>Heated Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>步弓手船箭点燃敌方战舰，造成持续伤害",
     "旋转加农炮": "旋转加农炮<br>Swivel Cannon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>扭力弩炮船获得了一门额外的加农炮，可以 360 度射击",
     "炸药": "炸药<br>Explosives<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>燃烧船伤害 +40%",
-    "舰载炮": "舰载炮<br>Mounted Guns<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>用加农炮取代扭力弩炮，可实现更远的射程和更大的伤害",
+    "舰载炮": "舰载炮<br>Mounted Guns<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>用加农炮取代扭力弩炮，可实现更远的攻击范围和更大的伤害",
 
     "沸油": "沸油<br>Boiling Oil<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>箭塔和城堡能对附近敌方单位倾倒沸油，对其造成 30 伤害",
     "射箭槽": "射箭槽<br>Arrowslits<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>为此建筑添加防御型射箭槽并使驻扎单位的弓箭攻击范围 +1。只能添加一座武器炮台",
@@ -45,7 +45,7 @@ let ayanami = {
 
     "润滑轮轴": "润滑轮轴<br>Greased Axles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城器械的移动速度 +15%",
     "卷帘式触发器": "卷帘式触发器<br>Roller Shutter Triggers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮攻击速度 +25%，额外减少10%受到的远程伤害",
-    "可调式横杆": "可调式横杆<br>Adjustable Crossbars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>投石车射程 +1，爆炸范围 +75%，并 +1 抛射物进行攻击",
+    "可调式横杆": "可调式横杆<br>Adjustable Crossbars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>投石车攻击范围 +1，爆炸范围 +75%，并 +1 抛射物进行攻击",
     "几何学": "几何学<br>Geometry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机的伤害增加 +20%",
     "轻质横梁": "轻质横梁<br>Lightweight Beams<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>轻型冲车攻击速度提升 +20%，战场工程时间减少 -50%",
     "轻质横梁sul": "轻质横梁<br>Lightweight Beams<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>780<br>轻型冲车攻击速度提升 +20%，战场工程时间减少 -50%",
@@ -174,10 +174,10 @@ let ayanami = {
     "回收材料": "回收材料<br>Salvaged Materials<br> <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>巴格拉战船击沉敌舰时恢复30生命值",
     "大理马": "大理马<br>Dali Horses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>所有骑兵攻击速度+20%",
     "硬壳炸弹": "硬壳炸弹<br>Hard Cased Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>单位被手榴弹击中时，会在 10 秒内受到 +15% 的远程伤害和近战伤害",
-    "弩箭匣": "弩箭匣<br>Bolt Magazines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>诸葛弩+0.5射程，对轻型步兵+1伤害",
+    "弩箭匣": "弩箭匣<br>Bolt Magazines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>诸葛弩+0.5攻击范围，对轻型步兵+1伤害",
 
-    "蚕丝弓弦": "蚕丝弓弦<br>Silk Bowstrings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>步弓手射程 +1.5，骑射手射程 +0.75",
-    "蚕丝弓弦sul": "蚕丝弓弦<br>Silk Bowstrings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>步弓手射程 +1.5，骑射手射程 +0.75",
+    "蚕丝弓弦": "蚕丝弓弦<br>Silk Bowstrings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>步弓手攻击范围 +1.5，骑射手攻击范围 +0.75",
+    "蚕丝弓弦sul": "蚕丝弓弦<br>Silk Bowstrings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>步弓手攻击范围 +1.5，骑射手攻击范围 +0.75",
 
     "蛇纹石粉末": "蛇纹石粉末<br>Serpentine Powder<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>使用新型火药，火枪兵对近战步兵的伤害 +5，并在武器开火后短暂提高移动速度",
     "蛇纹石粉末sul": "蛇纹石粉末<br>Serpentine Powder<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>720<br>使用新型火药，火枪兵对近战步兵的伤害 +5，并在武器开火后短暂提高移动速度",
@@ -204,7 +204,7 @@ let ayanami = {
     "适应性强的船身": "适应性强的船身<br>Adaptable Hulls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>罗德亚船型之间的转换速度提高了 50%，并且不再有成本损失",
     "城堡炮塔": "城堡炮塔<br>Castle Turret<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>75 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>此木制要塞发射的箭矢伤害 +2",
     "城堡瞭望台": "城堡瞭望台<br>Castle Watch<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>将这座木制要塞的视野范围提升 6 格",
-    "骑射培训": "骑射培训<br>Mounted Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>增加骑射手的武器射程 +1 并解锁疾驰技能。 疾驰：激活后，以最大速度移动，以及武器攻击范围增加 +2 格，持续 8 秒",
+    "骑射培训": "骑射培训<br>Mounted Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>增加骑射手的武器攻击范围 +1 并解锁疾驰技能。 疾驰：激活后，以最大速度移动，以及武器攻击范围增加 +2 格，持续 8 秒",
 
     "快速行军": "快速行军<br>Double Time<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>射击军获得快速行军的能力，使其移动速度+30%，持续10秒",
     "贵族铁骑的坚毅": "贵族铁骑的坚毅<br>Boyar's Fortitude<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>罗斯骑兵的生命值 +25",
@@ -301,7 +301,7 @@ let ayanami = {
 
     "润滑轮轴sul": "润滑轮轴<br>Greased Axles<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>300<br>攻城器+15%移动速度",
     "卷帘式触发器sul": "卷帘式触发器<br>Roller Shutter Triggers<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>900<br>扭力弩炮攻击速度 +25%，额外减少10%受到的远程伤害",
-    "可调式横杆sul": "可调式横杆<br>Adjustable Crossbars<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>投石车射程 +1，爆炸范围 +75%，并 +1 抛射物进行攻击",
+    "可调式横杆sul": "可调式横杆<br>Adjustable Crossbars<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>投石车攻击范围 +1，爆炸范围 +75%，并 +1 抛射物进行攻击",
     "几何学sul": "几何学<br>Geometry<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>540<br>巨型投石机的伤害增加 +20%",
 
     "攻城武器sul": "攻城武器<br>Siege Works<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>1080<br>新的木工技术可使攻城部队的生命值 +20%",
@@ -350,7 +350,7 @@ let ayanami = {
 
     "瞭望塔sul": "瞭望塔<br>Lookout Towers<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>300<br>哨站的视野范围增加 50%，武器攻击范围增加 +1",
 
-    "派sul": "派<br>Paik<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>弓箭手和弩手射程+0.5格",
+    "派sul": "派<br>Paik<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>240<br>弓箭手和弩手攻击范围+0.5格",
     "象夫sul": "象夫<br>Mahouts<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>180<br>大象移动速度+10%",
 
 
@@ -506,13 +506,13 @@ let ayanami = {
     "朝圣者借贷低": "朝圣者借贷(低)<br>Pilgrim Loan(Low)<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000<br>向朝圣者提供一份贷款，朝圣者将以每分钟300黄金的利率偿还，持续2分钟",
     "朝圣者借贷中": "朝圣者借贷(中等)<br>Pilgrim Loan(Medium)<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2500<br>向朝圣者提供一份贷款，朝圣者将以每分钟600黄金的利率偿还，持续3分钟",
     "朝圣者借贷高": "朝圣者借贷(高)<br>Pilgrim Loan(High)<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>4000<br>向朝圣者提供一份贷款，朝圣者将以每分钟900黄金的利率偿还，持续4分钟",
-    "齿轮弩": "齿轮弩<br>Cranequins<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>使用弩的部队+0.5射程，+2攻击力",
+    "齿轮弩": "齿轮弩<br>Cranequins<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>使用弩的部队+0.5攻击范围，+2攻击力",
     "铁钳": "铁钳<br>Iron Clamps<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>使用铁钳强化城墙，使石墙和要塞受到来自火药部队的伤害-20%",
     "沙漠城堡": "沙漠城堡<br>Desert Citadels<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>强化要塞光环，附近部队+1护甲",
     "藏宝塔": "藏宝塔<br>Treasure Towers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>要塞附近的修道院、圣地和朝圣者+20%黄金收入",
     "巨型投石机炮台": "巨型投石机炮台<br>Trebuchet Emplacement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>275 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>为单个要塞部署一台巨型投石机炮台",
     "配重式防御": "配重式防御<br>Counterweight Defenses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>所有巨型投石机武器获得+1额外弹药",
-    "圣殿骑士舰队": "圣殿骑士舰队<br>Crusader Fleets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>扭力弩炮船+1.5射程，+25%伤害",
+    "圣殿骑士舰队": "圣殿骑士舰队<br>Crusader Fleets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>扭力弩炮船+1.5攻击范围，+25%伤害",
 
     "钩镰兵": "钩镰兵<br>Billmen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>长矛兵攻击可减少敌人1护甲",
     "协同射击": "协同射击<br>Synchronized Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>解锁英皇侍卫的协同射击能力",
@@ -526,10 +526,10 @@ let ayanami = {
     "完美的民兵计划": "完美的民兵计划<br>Exact Militia Program<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>每个庄园召集1个短矛骑兵、1个伯爵护卫、1个英皇侍卫",
     "山地训练": "山地训练<br>Hill Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>骑马步兵在崎岖山地进行训练，+125%冲锋伤害，生产速度+100%",
     "埃索斯的项圈": "埃索斯的项圈<br>Collar of Esses<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>骑士和短矛骑兵+5对重甲部队额外伤害",
-    "战狼号巨型投石机": "战狼号巨型投石机<br>Warwolf Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机升级为战狼号巨型投石机，+2射程，生命值+50%",
+    "战狼号巨型投石机": "战狼号巨型投石机<br>Warwolf Trebuchet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>巨型投石机升级为战狼号巨型投石机，+2攻击范围，生命值+50%",
     "勃艮地进口货物": "勃艮地进口货物<br>Burgundian Imports<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>进口勃艮地火枪，火枪兵可以在城堡时代训练，并且便宜25%",
     "军事战术训练": "军事战术训练<br>Military Tactics Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>军队作战效率变得更高，额外伤害+20%",
-    "王冠舰船": "王冠舰船<br>Ship of the Crown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>大帆船变得更加强大，生命值+15%，射程+10%，攻击力+20%",
+    "王冠舰船": "王冠舰船<br>Ship of the Crown<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>大帆船变得更加强大，生命值+15%，攻击范围+10%，攻击力+20%",
     "伯爵侍从": "伯爵侍从<br>Earl's Retinue<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>生产6个短矛骑兵和2个骑马步兵",
     "驻扎命令": "驻扎命令<br>Garrison Command<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>生产8个长矛兵和1个伯爵护卫",
     "火药分遣队": "火药分遣队<br>Gunpowder Contingent<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>850 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1050 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65<br>生产2个风琴炮和1个长管炮",
@@ -575,10 +575,10 @@ let ayanami = {
     "其疾如风2": "其疾如风<br>Divine Haste<br>激活后，步兵单位移动速度 +15%",
     "不动如山2": "不动如山<br>Divine Vitality<br>激活后，单位在脱离战斗时每秒恢复 2 生命值",
     "侵略如火2": "侵略如火<br>Divine Charge<br>激活后，骑兵单位伤害 +20%",
-    "其徐如林2": "其徐如林<br>Divine Defense<br>激活后，防御设施和火药部队射程 +1",
+    "其徐如林2": "其徐如林<br>Divine Defense<br>激活后，防御设施和火药部队攻击范围 +1",
 
     "法兰克防御计划生命值": "法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：在要塞或圣殿骑士团总部影响范围内时生命值 +25%",
-    "法兰克防御计划炮台": "法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：石墙获得射箭槽(8射程，8攻击力，+10对船，3.62攻击间隔时间)",
+    "法兰克防御计划炮台": "法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：石墙获得射箭槽(8攻击范围，8攻击力，+10对船，3.62攻击间隔时间)",
 
 
     "攻城专家巨型投石机": "攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：巨型投石机多段攻击次数+1，但攻击力-15，建筑附加伤害-150，船只附加伤害-100",
@@ -596,7 +596,7 @@ let ayanami = {
     "威尼斯共和国": "威尼斯共和国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/威尼斯共和国.png' width='20px'>威尼斯共和国：市场买卖率对玩家更加有利 ",
     "波兰王国": "波兰王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/波兰王国.png' width='20px'>波兰王国：所有骑兵部队+10%生命值，+50%冲锋伤害 ",
     "要塞藏宝塔": "要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的修道院、圣地和朝圣者收入+20%",
-    "要塞射程加成": "要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：要塞附近的远程武器+15%射程",
+    "要塞攻击范围加成": "要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：要塞附近的远程武器+15%攻击范围",
     "要塞沙漠城堡": "要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的部队+1护甲",
 
     "兰开斯特伯克郡": "伯克郡宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6",
@@ -663,7 +663,7 @@ let ayanami = {
     "其疾如风": "其疾如风<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/其疾如风.png' width='20px'>孙武祠 - 其疾如风：激活后，步兵单位移动速度 +15%",
     "不动如山": "不动如山<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png' width='20px'>孙武祠 - 不动如山：激活后，单位在脱离战斗时每秒恢复 2 生命值",
     "侵略如火": "侵略如火<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/侵略如火.png' width='20px'>孙武祠 - 侵略如火：激活后，骑兵单位伤害 +20%",
-    "其徐如林": "其徐如林<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/其徐如林.png' width='20px'>孙武祠 - 其徐如林：激活后，防御设施和火药部队射程 +1",
+    "其徐如林": "其徐如林<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/其徐如林.png' width='20px'>孙武祠 - 其徐如林：激活后，防御设施和火药部队攻击范围 +1",
     "朝廷命官资源点监督": "监督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/监督.png' width='20px'>监督：监督的资源点使得村民上交的资源 +20%",
     "江南塔免费": "江南塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/江南塔.png' width='20px'>江南塔：兵营、靶场或马厩建成时可免费获得 1 个长矛兵、诸葛弩或骑手",
 
@@ -814,7 +814,7 @@ let ayanami = {
     "马里码头加速": "登陆部队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>登陆部队：船只接近码头时移动速度+15%，持续10秒",
     "马里便宜升级": "法拉里的知识<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>法拉里的知识：升级到老练级别需要的资源和时间减半",
     "收费哨站效果": "收费哨站<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/收费哨站.png' width='20px'>收费哨站：最多40%，每路过一个收费哨站，商人可以额外立即获得8%的交易黄金",
-    "马里运输船驻扎": "登陆部队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>登陆部队：运输船每驻扎1个单位就获得1个标枪武器(攻击力7、发射间隔时间2.62秒、射程6.50)",
+    "马里运输船驻扎": "登陆部队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>登陆部队：运输船每驻扎1个单位就获得1个标枪武器(攻击力7、发射间隔时间2.62秒、攻击范围6.50)",
     "马里攻城节庆": "攻城节庆<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻城节庆.png' width='20px'>攻城节庆：激活后90秒内火炬伤害和攻城伤害+50%",
     "马里金鱼": "鱼类加工<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>鱼类加工：马里渔船可获得收获食物量10%的黄金",
     "马里黄金TC": "矿业社区<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png' width='20px'>矿业社区：城镇中心的石头成本替代为400黄金",
@@ -833,8 +833,8 @@ let ayanami = {
     "英国便宜船只": "造船工<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>造船工：船只造价-10%",
     "英国便宜船只2": "造船工<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>造船工：船只造价-10%",
 
-    "英国短弓村民": "防御城镇<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
-    "英国短弓村民2": "防御城镇<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5射程、3.25攻击速度)，狩猎弓箭射程为5",
+    "英国短弓村民": "防御城镇<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5攻击范围、3.25攻击速度)，狩猎弓箭攻击范围为5",
+    "英国短弓村民2": "防御城镇<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>防御城镇：使用短弓战斗(5远程攻击力，5攻击范围、3.25攻击速度)，狩猎弓箭攻击范围为5",
 
     "温嘉德宫殿效果": "温嘉德宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/温嘉德宫殿.png' width='20px'>温嘉德宫殿：可以以便宜的价格生产由他们组成的军队",
     "温嘉德宫殿限制": "温嘉德宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/温嘉德宫殿.png' width='20px'>温嘉德宫殿：仅能通过温嘉德宫殿军队大量获取",
@@ -843,7 +843,7 @@ let ayanami = {
     "英国武士加速": "战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：武士的生产速度+50%",
     "英国预备营地": "预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地.png' width='20px'>预备营地：花费25木建造一个预备营地，提高营地内单位30%视野，最大建造5个",
 
-    "红宫炮台效果": "红宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/红宫.png' width='20px'>红宫：追加1个红宫的劲弩炮台(射程为9.5，攻击力40)",
+    "红宫炮台效果": "红宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/红宫.png' width='20px'>红宫：追加1个红宫的劲弩炮台(攻击范围为9.5，攻击力40)",
     "骑兵学校效果": "骑兵学校<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑兵学校.png' width='20px'>骑兵学校：建造地标后所有马厩生产速度+20%",
     "商会效果": "商会<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/商会.png' width='20px'>商会：研究经济科技后生成1个免费商人",
     "皇家加农炮2": "炮兵学院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/炮兵学院.png' width='20px'>炮兵学院：生产皇家加农炮，攻击力+30%，对[建筑]加成+30%，解锁特殊能力",
@@ -898,7 +898,7 @@ let ayanami = {
     "机动箭": "机动箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/机动箭.png' width='20px'>机动箭：射出一支信号箭，使附近单位 (包括汗) 的移动速度+33%",
     "攻速箭": "攻速箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻速箭.png' width='20px'>攻速箭：射出一支信号箭，使附近远程单位 (包括汗) 的装填速度+50%",
     "防御箭": "防御箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御箭.png' width='20px'>防御箭：射出一支信号箭，使附近单位 (包括汗) 的护甲+2",
-    "汗的猎人光环": "汗的猎人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗的猎人.png' width='20px'>汗的猎人：在封建/城堡/帝王时代，汗的猎人可将附近远程单位的射程增加 +0.5/+0.8/+1.0，骑射手可获得额外的 +0.5",
+    "汗的猎人光环": "汗的猎人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗的猎人.png' width='20px'>汗的猎人：在封建/城堡/帝王时代，汗的猎人可将附近远程单位的攻击范围增加 +0.5/+0.8/+1.0，骑射手可获得额外的 +0.5",
 
 
 
@@ -984,7 +984,7 @@ let ayanami = {
     "一向一揆移动速度": "一向一揆移动速度<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】",
 
 
-    "长枪训练": "长枪训练<br>Yari Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家独特科技，长矛兵获得 +1 额外射程",
+    "长枪训练": "长枪训练<br>Yari Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家独特科技，长矛兵获得 +1 额外攻击范围",
     "武士弓": "武士弓<br>Samurai Bow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家独特科技，为武士装备武士弓，使得他们可以远距离射击",
     "远程护甲": "远程护甲<br>Ranged Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家独特科技，近战步兵 +2 远程防御力",
 
@@ -1029,8 +1029,8 @@ let ayanami = {
     "承重框架": "承重框架<br>Carrying Frame<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>312 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>提交到工作象的资源量 +30%",
     "大象挽具": "大象挽具<br>Elephant Harness<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>提交到工作象的资源量 +40%",
 
-    "沙希墙": "沙希墙<br>Shahi Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>该图格鲁克堡垒提高1500的生命值和4火焰护甲，并解锁扭力弩炮炮台，获得额外数量的默认箭矢武器，箭矢伤害+2，箭矢射程+1，并解锁总督2级属性",
-    "红砖要塞": "红砖要塞<br>Red Brick Bastion<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>该图格鲁克堡垒提高1500的生命值和3火焰护甲，并解锁沸油和加农炮，获得额外数量的默认箭矢武器，驻扎箭矢伤害+2，驻扎箭矢射程+1，并解锁总督3级属性",
+    "沙希墙": "沙希墙<br>Shahi Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>该图格鲁克堡垒提高1500的生命值和4火焰护甲，并解锁扭力弩炮炮台，获得额外数量的默认箭矢武器，箭矢伤害+2，箭矢攻击范围+1，并解锁总督2级属性",
+    "红砖要塞": "红砖要塞<br>Red Brick Bastion<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>该图格鲁克堡垒提高1500的生命值和3火焰护甲，并解锁沸油和加农炮，获得额外数量的默认箭矢武器，驻扎箭矢伤害+2，驻扎箭矢攻击范围+1，并解锁总督3级属性",
     "加强武装弩炮": "加强武装弩炮<br>Reinforced Arm Ballista<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>将弩炮战象升级为精锐弩炮战象",
 
 
