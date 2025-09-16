@@ -247,6 +247,7 @@ let ayanami = {
     "攻击战鼓": "攻击战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻击战鼓.png' width='20px'>攻击战鼓：使得附近的友军增加15%攻击速度",
     "近战防御战鼓": "近战防御战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/近战防御战鼓.png' width='20px'>近战防御战鼓：使得附近的友军的近战防御+2",
     "远程防御战鼓": "远程防御战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/远程防御战鼓.png' width='20px'>远程防御战鼓：使得附近的友军的远程防御+1",
+    "奥斯曼军乐队战鼓": "奥斯曼军乐队战鼓<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼军乐队战鼓.png' width='20px'>奥斯曼军乐队战鼓：使得附近的友军的远程防御+15%",
 
 
 
