@@ -602,6 +602,9 @@ let ayanami = {
     "兰开斯特伯克郡": "伯克郡宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6",
     "众志成城": "众志成城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/众志成城.png' width='20px'>众志成城：每个城堡(包括地标)提供+1攻击力，最大+4",
 
+    "骆驼支援光环": "骆驼支援<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骆驼支援.png' width='20px'>骆驼支援：骆驼可提升附近步兵部队+3护甲",
+    "步兵支援光环": "步兵支援<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/步兵支援.png' width='20px'>步兵支援：步兵可提升附近骆驼部队+3护甲",
+
     "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png' width='20px'>兰开斯特领主的鼓舞：增加附近的军事单位5%生命值(最大叠加4次)",
     "羊毛产业效果": "羊毛产业<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>羊毛产业：村民采集绵羊的速度 +20%",
     "埃尔茨巴赫宫殿黑骑兵": "埃尔茨巴赫宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：每个城堡提供的黑骑兵生产上限提高为8",
