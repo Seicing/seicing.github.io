@@ -604,6 +604,7 @@ let ayanami = {
 
     "骆驼支援光环": "骆驼支援<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骆驼支援.png' width='20px'>骆驼支援：骆驼可提升附近步兵部队+3护甲",
     "步兵支援光环": "步兵支援<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/步兵支援.png' width='20px'>步兵支援：步兵可提升附近骆驼部队+3护甲",
+    "战术冲锋": "战术冲锋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战术冲锋.png' width='20px'>战术冲锋：骆驼长矛骑兵冲锋频率更高、速度更快，造成的冲锋伤害相比于常规骑兵-25%，但是可以根据移动距离提高到最大+40%伤害",
 
     "兰开斯特领主的鼓舞": "兰开斯特领主的鼓舞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png' width='20px'>兰开斯特领主的鼓舞：增加附近的军事单位5%生命值(最大叠加4次)",
     "羊毛产业效果": "羊毛产业<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png' width='20px'>羊毛产业：村民采集绵羊的速度 +20%",
