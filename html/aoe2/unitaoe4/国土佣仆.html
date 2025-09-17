@@ -435,7 +435,7 @@
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagemelee.png" width="25px">近战伤害</td>
             <td id="damage" data-base="17"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/chargedamage.png" width="25px">冲锋伤害</td>
-            <td id="chargedamage" data-multiple="1.0"> </td>
+            <td id="chargedamage" data-base="17"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagefire.png" width="25px">火炬伤害</td>
             <td id="firedamage" data-base="21"> </td>
         </tr>
@@ -459,8 +459,9 @@
 
     <div id="icons" style="width: 523px;">
 
-        <div class="icon" data-game="hre" data-multiplier="1.5" data-target="chargedamage"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'城主宫殿冲锋');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png" width="30px"></a>
+        <div class="icon" data-game="hre" data-type="chargedamage" data-mode="diffMul" data-value="1.5"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'城主宫殿冲锋');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png" width="30px"></a>
         </div>
         <div class="icon" data-game="hre" data-type="buildtime" data-mode="diffMul" data-value="0.2"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'城主宫殿效果');"><img
@@ -473,27 +474,28 @@
 
 
 
-        <div class="icon" data-type="hp damage" data-mode="add add" data-value="15 4"> <img
+        <div class="icon" data-type="hp damage chargedamage" data-mode="add add add" data-value="15 4 4"> <img
                 src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐国土佣仆.png" width="30px">
         </div>
 
 
-        <div class="icon" data-type="hp damage bonusdamage" data-over="jpn sen mac" data-mode="sameMul sameMul sameMul"
-            data-value="0.15 0.15 0.15"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'精锐军队战术');">
+        <div class="icon" data-type="hp damage chargedamage bonusdamage" data-over="jpn sen mac"
+            data-mode="sameMul sameMul sameMul sameMul" data-value="0.15 0.15 0.15 0.15"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'精锐军队战术');">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="30px"></a></div>
 
 
 
-        <div class="icon" data-type="damage" data-over="jpn sen mac" data-mode="add" data-value="1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'熟铁块吹炼法');"><img
+        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'熟铁块吹炼法');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="damage" data-over="jpn sen mac" data-mode="add" data-value="1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'脱碳');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="30px"></a>
+        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'脱碳');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png"
+                    width="30px"></a>
         </div>
-        <div class="icon" data-type="damage" data-over="jpn sen mac" data-mode="add" data-value="1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢');"><img
+        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="30px"></a>
         </div>
 
