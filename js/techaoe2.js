@@ -1078,6 +1078,29 @@ function hiddenPic2() {
     CommonAllTech()
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.saic');
+    const cardWidth = 150;   // 卡片宽度
+    const gap = 1;           // flex gap
+
+    containers.forEach(container => {
+        const perRow = parseInt(container.dataset.perRow) || 5; // 支持自定义
+        const cards = container.children.length;
+        const remainder = cards % perRow;
+
+        if (remainder !== 0) {
+            const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
+
+            const placeholder = document.createElement('div');
+            placeholder.style.width = remainingWidth + 'px';
+            placeholder.style.background = 'white';  // 或者 transparent
+            placeholder.style.flexShrink = '0';
+
+            container.appendChild(placeholder);
+        }
+    });
+});
+
 
 function BlastFurnace() {
     document.getElementById("Byzantines2").style.opacity = "0.15";
