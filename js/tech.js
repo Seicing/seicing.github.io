@@ -1276,13 +1276,12 @@ function updateTable() {
             });
         });
 
-    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, };
-    const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, };
+    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2 };
+    const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0 };
 
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
         if (!el) return;
-
         const val = calculateFinal(stat, activeBuffs, baseStats);
         if (percentRules[stat] !== undefined) {
             const decimals = percentRules[stat];
@@ -1304,18 +1303,24 @@ function updateTable() {
     });
 }
 
-// ----------- 图标绑定（支持 group）-----------
+// ----------- 图标绑定（支持 group） -----------
 function bindIcons(scope = document) {
     scope.querySelectorAll('.icon').forEach(icon => {
         icon.addEventListener('click', () => {
             const group = icon.dataset.group;
             if (group) {
-                scope.querySelectorAll(`.icon[data-group="${group}"]`).forEach(el => el.classList.remove("active"));
-                icon.classList.add("active");
+                const groupIcons = scope.querySelectorAll(`.icon[data-group="${group}"]`);
+                if (icon.classList.contains('active')) {
+                    icon.classList.remove('active');
+                } else {
+                    groupIcons.forEach(i => i.classList.remove('active'));
+                    icon.classList.add('active');
+                }
             } else {
                 icon.classList.toggle('active');
             }
 
+            // 倍率切换
             if (icon.dataset.multiplier && icon.dataset.target) {
                 const target = document.getElementById(icon.dataset.target);
                 if (target) {
@@ -1331,25 +1336,24 @@ function bindIcons(scope = document) {
 
             if (icon.dataset.text) {
                 const target = document.getElementById(icon.dataset.text);
-                if (target) {
-                    target.style.display = icon.classList.contains("active") ? "inline" : "none";
-                }
+                if (target) target.style.display =
+                    (target.style.display === "none" || target.style.display === "")
+                        ? "inline" : "none";
             }
         });
     });
 }
 document.addEventListener('DOMContentLoaded', () => {
-    bindIcons(document);
+    bindIcons();
     updateTable();
 });
 
-// ----------- 过滤函数（升级版，支持 icon 的 data-require） -----------
+// ----------- 过滤函数（支持 data-require） -----------
 function filterByGame(keyword) {
     document.querySelectorAll('#icons .icon').forEach(icon => {
         const gameAttr = icon.dataset.game;
         const overAttr = icon.dataset.over;
         const reqAttr = icon.dataset.require;
-
         if (reqAttr) {
             const reqList = reqAttr.split(" ");
             icon.style.display = reqList.includes(keyword) ? '' : 'none';
@@ -1381,7 +1385,7 @@ function updateFilterButtonsVisibility(activeKeyword) {
     });
 }
 
-// ----------- 重置函数（升级版，隐藏 data-require 的 icon） -----------
+// ----------- 重置函数（隐藏 data-require 的 icon） -----------
 function resetFilters() {
     document.querySelectorAll('#icons .icon').forEach(icon => {
         if (icon.dataset.require) {
@@ -1391,31 +1395,25 @@ function resetFilters() {
         }
         icon.classList.remove('active');
     });
-
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
-
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
         const id = icon.dataset.text;
         if (!id) return;
         const target = document.getElementById(id);
         if (target) target.style.display = 'none';
     });
-
     document.querySelectorAll('[data-multiple][id]').forEach(el => {
         if (el.dataset.basemultiple !== undefined) {
             el.dataset.multiple = el.dataset.basemultiple;
         }
     });
-
     document.querySelectorAll('#stats [id][data-baseoriginal]').forEach(el => {
         el.dataset.base = el.dataset.baseoriginal;
         el.innerText = el.dataset.baseoriginal;
     });
-
     allActivated = false;
     const toggleBtn = document.querySelector('.toggle-activate');
     if (toggleBtn) toggleBtn.classList.remove('active');
-
     updateTable();
     updateFilterButtonsVisibility(null);
 }
@@ -1480,56 +1478,31 @@ if (toggleBtn) {
             .filter(icon => icon.style.display !== 'none');
         const targetState = !allActivated;
 
-        const groupMap = {};
-        visibleIcons.forEach(icon => {
-            const group = icon.dataset.group;
-            if (group) {
-                if (!groupMap[group]) groupMap[group] = [];
-                groupMap[group].push(icon);
-            }
-        });
-
-        visibleIcons.forEach(icon => {
-            const group = icon.dataset.group;
-            if (group) {
-                groupMap[group].forEach(el => el.classList.remove('active'));
-                if (targetState) {
-                    const last = groupMap[group][groupMap[group].length - 1];
-                    if (last) last.classList.add('active');
+        if (targetState) {
+            // 开启：普通按钮全激活；分组按钮 → 每组只保留最后一个
+            const groups = {};
+            visibleIcons.forEach(icon => {
+                const group = icon.dataset.group;
+                if (group) {
+                    if (!groups[group]) groups[group] = [];
+                    groups[group].push(icon);
+                } else {
+                    icon.classList.add('active');
                 }
-            } else {
-                icon.classList.toggle('active', targetState);
-            }
-
-            if (icon.dataset.text) {
-                const target = document.getElementById(icon.dataset.text);
-                if (target) target.style.display = icon.classList.contains("active") ? "inline" : "none";
-            }
-
-            if (icon.dataset.multiplier && icon.dataset.target) {
-                const target = document.getElementById(icon.dataset.target);
-                if (target) {
-                    const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
-                    if (!target.dataset.basemultiple) target.dataset.basemultiple = baseMultiple;
-                    target.dataset.multiple = icon.classList.contains("active")
-                        ? icon.dataset.multiplier
-                        : target.dataset.basemultiple;
-                }
-            }
-        });
+            });
+            Object.values(groups).forEach(groupIcons => {
+                groupIcons.forEach(i => i.classList.remove('active'));
+                groupIcons[groupIcons.length - 1].classList.add('active');
+            });
+        } else {
+            // 关闭：全部取消
+            visibleIcons.forEach(icon => icon.classList.remove('active'));
+        }
 
         allActivated = targetState;
         toggleBtn.classList.toggle('active', allActivated);
         updateTable();
     });
-}
-
-// ----------- 从 URL 参数触发 civ -----------
-function triggerFilterFromURL() {
-    const civ = new URLSearchParams(window.location.search).get("civ");
-    if (!civ) return;
-    const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
-    if (btn) btn.click();
 }
 
 // ----------- 动态加载页面 -----------
@@ -1542,7 +1515,6 @@ async function loadPage(a) {
         const response = await fetch(pagePath);
         if (!response.ok) throw new Error("页面加载失败: " + response.status);
         const html = await response.text();
-
         targetDiv.innerHTML = html;
 
         initBaseValues();
@@ -1558,4 +1530,3 @@ async function loadPage(a) {
         targetDiv.innerText = "加载失败";
     }
 }
-
