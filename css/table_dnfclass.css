@@ -87,7 +87,7 @@ th {
 .icon {
     display: inline-block;
     cursor: pointer;
-    border-radius: 8px;
+    /*   border-radius: 8px; */
     font-weight: bold;
     user-select: none;
     transition: 0.2s;
@@ -100,9 +100,9 @@ th {
 }
 
 .icon.active {
-    border: 2px solid orange;
+    border: 2px solid red;
     /* 点击后橙色描边 */
-    /*  box-shadow: 0 0 12px orange; */
+    box-shadow: 0 0 2px red;
     /* 边缘发光 */
 }
 
