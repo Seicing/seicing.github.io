@@ -100,9 +100,9 @@ th {
 }
 
 .icon.active {
-    border: 2px solid red;
+    border: 2px solid #ff7f00;
     /* 点击后橙色描边 */
-    box-shadow: 0 0 8px red;
+    box-shadow: 0 0 8px #ff7f00;
     /* 边缘发光 */
 }
 
