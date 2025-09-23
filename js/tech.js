@@ -1303,48 +1303,62 @@ function updateTable() {
     });
 }
 
-// ----------- 图标绑定（支持 group） -----------
+// ----------- helper：同步 icon 的副作用（class、data-text、multiplier） -----------
+function setIconActive(icon, active) {
+    if (!icon) return;
+    icon.classList.toggle('active', !!active);
+
+    // data-text 显示/隐藏（直接控制对应 id 的元素）
+    if (icon.dataset.text) {
+        const txtEl = document.getElementById(icon.dataset.text);
+        if (txtEl) txtEl.style.display = active ? 'inline' : 'none';
+    }
+
+    // multiplier 处理（把 target 的 data-multiple 设为 basemultiple 或 icon 的 multiplier）
+    if (icon.dataset.multiplier && icon.dataset.target) {
+        const target = document.getElementById(icon.dataset.target);
+        if (target) {
+            if (target.dataset.basemultiple === undefined) {
+                // 保存初始值（若未保存）
+                target.dataset.basemultiple = (target.dataset.multiple !== undefined) ? target.dataset.multiple : '1';
+            }
+            target.dataset.multiple = active ? icon.dataset.multiplier : target.dataset.basemultiple;
+        }
+    }
+}
+
+// ----------- 图标绑定（支持 group，防重复绑定） -----------
 function bindIcons(scope = document) {
     scope.querySelectorAll('.icon').forEach(icon => {
+        if (icon.dataset.bound === "1") return; // 已绑定过
+        icon.dataset.bound = "1";
+
         icon.addEventListener('click', () => {
             const group = icon.dataset.group;
+
             if (group) {
-                const groupIcons = scope.querySelectorAll(`.icon[data-group="${group}"]`);
+                const groupIcons = Array.from(scope.querySelectorAll(`.icon[data-group="${group}"]`));
                 if (icon.classList.contains('active')) {
-                    icon.classList.remove('active');
+                    // 已激活：再点就取消当前
+                    setIconActive(icon, false);
                 } else {
-                    groupIcons.forEach(i => i.classList.remove('active'));
-                    icon.classList.add('active');
+                    // 先取消组内所有（并清理它们的副作用），再激活当前
+                    groupIcons.forEach(i => setIconActive(i, false));
+                    setIconActive(icon, true);
                 }
             } else {
-                icon.classList.toggle('active');
+                // 非组：切换自身
+                const newState = !icon.classList.contains('active');
+                setIconActive(icon, newState);
             }
 
-            // 倍率切换
-            if (icon.dataset.multiplier && icon.dataset.target) {
-                const target = document.getElementById(icon.dataset.target);
-                if (target) {
-                    const baseMultiple = target.dataset.basemultiple || target.dataset.multiple;
-                    if (!target.dataset.basemultiple) target.dataset.basemultiple = baseMultiple;
-                    target.dataset.multiple = icon.classList.contains("active")
-                        ? icon.dataset.multiplier
-                        : target.dataset.basemultiple;
-                }
-            }
-
+            // 最后刷新计算
             updateTable();
-
-            if (icon.dataset.text) {
-                const target = document.getElementById(icon.dataset.text);
-                if (target) target.style.display =
-                    (target.style.display === "none" || target.style.display === "")
-                        ? "inline" : "none";
-            }
         });
     });
 }
 document.addEventListener('DOMContentLoaded', () => {
-    bindIcons();
+    bindIcons(document);
     updateTable();
 });
 
@@ -1393,7 +1407,8 @@ function resetFilters() {
         } else {
             icon.style.display = '';
         }
-        icon.classList.remove('active');
+        // 取消激活并同步副作用
+        setIconActive(icon, false);
     });
     document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
@@ -1432,9 +1447,12 @@ function applyButtonUpdates(btn) {
     });
 }
 
-// ----------- 绑定过滤按钮 -----------
+// ----------- 绑定过滤按钮（防重复绑定） -----------
 function bindFilterButtons() {
     document.querySelectorAll('.filterbtn').forEach(btn => {
+        if (btn.dataset.bound === "1") return;
+        btn.dataset.bound = "1";
+
         btn.addEventListener('click', () => {
             resetFilters();
             if (btn.classList.contains('resetbtn')) return;
@@ -1479,7 +1497,7 @@ if (toggleBtn) {
         const targetState = !allActivated;
 
         if (targetState) {
-            // 开启：普通按钮全激活；分组按钮 → 每组只保留最后一个
+            // 开：普通按钮全激活；分组按钮 → 每组只保留最后一个
             const groups = {};
             visibleIcons.forEach(icon => {
                 const group = icon.dataset.group;
@@ -1487,16 +1505,17 @@ if (toggleBtn) {
                     if (!groups[group]) groups[group] = [];
                     groups[group].push(icon);
                 } else {
-                    icon.classList.add('active');
+                    setIconActive(icon, true);
                 }
             });
             Object.values(groups).forEach(groupIcons => {
-                groupIcons.forEach(i => i.classList.remove('active'));
-                groupIcons[groupIcons.length - 1].classList.add('active');
+                groupIcons.forEach(i => setIconActive(i, false));
+                const last = groupIcons[groupIcons.length - 1];
+                if (last) setIconActive(last, true);
             });
         } else {
-            // 关闭：全部取消
-            visibleIcons.forEach(icon => icon.classList.remove('active'));
+            // 关：全部取消
+            visibleIcons.forEach(icon => setIconActive(icon, false));
         }
 
         allActivated = targetState;
@@ -1504,6 +1523,7 @@ if (toggleBtn) {
         updateTable();
     });
 }
+
 
 // ----------- 从 URL 参数触发 civ -----------
 function triggerFilterFromURL() {
