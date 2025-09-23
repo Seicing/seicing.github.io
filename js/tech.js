@@ -615,6 +615,8 @@ let ayanami = {
     "兰开斯特城堡庄园生命值": "兰开斯特城堡<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/兰开斯特城堡.png' width='20px'>兰开斯特城堡：庄园生命值 +500",
     "国王学院降价": "国王学院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/国王学院.png' width='20px'>国王学院：所有科技的研究成本-15%",
 
+    "苏丹之塔驻扎": "苏丹之塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/苏丹之塔.png' width='20px'>苏丹之塔：苏丹之塔每驻扎1个单位可以增加0.025的移动速度，满20人驻扎时增加0.5的移动速度",
+
     "日本大名城镇中心": "大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名光环.png' width='20px'>大名光环：村民在大名府邸/大名宫殿/幕府城附近耕作效率+20%/+40%/+60%",
 
     "日本额外石头": "银矿开采<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png' width='20px'>银矿开采：村民开采金矿时额外产出20%石头",
