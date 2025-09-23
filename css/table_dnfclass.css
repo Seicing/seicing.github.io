@@ -87,12 +87,11 @@ th {
 .icon {
     display: inline-block;
     cursor: pointer;
-    /*   border-radius: 8px; */
+    opacity: 0.5;
     font-weight: bold;
     user-select: none;
     transition: 0.2s;
     border: 2px solid transparent;
-    /* 默认无边框 */
 }
 
 .icon img {
@@ -100,10 +99,9 @@ th {
 }
 
 .icon.active {
+    opacity: 1;
     border: 2px solid #ff7f00;
-    /* 点击后橙色描边 */
     box-shadow: 0 0 8px #ff7f00;
-    /* 边缘发光 */
 }
 
 .filterbtn {
