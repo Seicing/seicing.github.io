@@ -102,7 +102,7 @@ th {
 .icon.active {
     border: 2px solid red;
     /* 点击后橙色描边 */
-    box-shadow: 0 0 2px red;
+    box-shadow: 0 0 8px red;
     /* 边缘发光 */
 }
 
