@@ -100,8 +100,8 @@ th {
 
 .icon.active {
     opacity: 1;
-    border: 2px solid #ff7f00;
-    box-shadow: 0 0 8px #ff7f00;
+    border: 2px solid orange;
+    box-shadow: 0 0 8px orange;
 }
 
 .filterbtn {
