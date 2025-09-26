@@ -471,7 +471,7 @@ let ayanami = {
     "条顿骑士团": /*html*/`条顿骑士团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/条顿骑士团.png' width='20px'>条顿骑士团：所有花费黄金的单位+2近战护甲 `,
     "威尼斯共和国": /*html*/`威尼斯共和国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/威尼斯共和国.png' width='20px'>威尼斯共和国：市场买卖率对玩家更加有利 `,
     "波兰王国": /*html*/`波兰王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/波兰王国.png' width='20px'>波兰王国：所有骑兵部队+10%生命值，+50%冲锋伤害 `,
-    "要塞藏宝塔": /*html*/`要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的修道院、圣地和朝圣者收入+20%`,
+    "要塞藏宝塔": /*html*/`要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发藏宝塔后，要塞附近的修道院、圣地和朝圣者收入+20%`,
     "要塞攻击范围加成": /*html*/`要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：要塞附近的远程武器+15%攻击范围`,
     "要塞沙漠城堡": /*html*/`要塞<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png' width='20px'>要塞：研发沙漠城堡后，要塞附近的部队+1护甲`,
     "兰开斯特伯克郡": /*html*/`伯克郡宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png' width='20px'>伯克郡宫殿：众志成城能力提高上限值从4增加到6`,

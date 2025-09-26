@@ -223,6 +223,123 @@
 
 
 
+
+<br><br><br>
+<div>
+    <H1>
+        <a id="oth9370"></a><b><span style="color: #000000">模拟加成</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <table id="stats" style="font-size:9pt;">
+        <tr>
+            <td style="text-align: center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/朝圣者.png" width="48px"></td>
+            <td colspan="5">
+                <div id="filters">
+                    <div class="filterbtn" data-filter="kcr" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
+            <td id="buildtime" data-base="60"> </td>
+            <td>成本</td>
+            <td colspan="3">
+
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png" width="25px">生命值</td>
+            <td id="hp" data-base="75"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png" width="25px">近战防御</td>
+            <td id="armorm" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png" width="25px">远程防御</td>
+            <td id="armorr" data-base="0"> </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
+            <td id="speed" data-base="0.75"> </td>
+            <td>最终贸易倍率</td>
+            <td id="deposit1" data-base="1"> </td>
+            <td colspan="2"></td>
+        </tr>
+
+        <tr>
+            <td>其他加成</td>
+            <td colspan="5">
+                <span id="Extra15" style="display:none;"><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/卡斯蒂利亚王国.png'
+                        width='20px'>卡斯蒂利亚王国：接近圣地的单位攻击力+20%，并可以恢复生命值<br></span>
+                <span id="Extra16" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png"
+                        width="20px">要塞：研发沙漠城堡后，要塞附近的部队+1护甲<br></span>
+            </td>
+        </tr>
+    </table>
+    <div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
+    <div style="display: inline-block;width: 20px;"> </div>
+    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
+
+    <div id="icons" style="width: 523px;">
+
+        <div class="icon" data-group="kcrfeudal" data-type="deposit1" data-game="kcr" data-mode="diffMul"
+            data-value="1.3"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'热那亚共和国');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/热那亚共和国.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-group="kcrcastle" data-type="hp speed healspeed" data-game="kcr"
+            data-mode="diffMul diffMul diffMul" data-value="1.3 1.1 1.3"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'医院骑士团');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/医院骑士团.png"
+                    width="30px"></a>
+        </div>
+
+        <div class="icon" data-group="kcrcastle" data-game="kcr" data-text="Extra15"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'卡斯蒂利亚王国');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/卡斯蒂利亚王国.png"
+                    width="30px"></a>
+        </div>
+
+
+        <div class="icon" data-game="kcr" data-text="Extra16"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'要塞沙漠城堡');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/要塞.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="deposit1" data-game="kcr" data-mode="diffMul" data-value="1.2"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'要塞藏宝塔');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/藏宝塔.png" width="30px"></a>
+        </div>
+
+
+
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'合身皮具');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'绝缘头盔');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁匠大师');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁制底网');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'楔形铆钉');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'斜面');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -235,7 +352,7 @@
 <a href="#change">更新日志</a><br>
 <a href="#relk">历史</a><br>
 <a href="#oth">杂项</a><br>
-<!--<a href="#oth9370">模拟加成</a><br>-->
+<a href="#oth9370">模拟加成</a><br>
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
