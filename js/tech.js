@@ -434,8 +434,8 @@ let ayanami = {
     "雇佣一窝蜂": /*html*/`雇佣 1个一窝蜂<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40`,
     "雇佣回回炮": /*html*/`雇佣 1个回回炮<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/油.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>63`,
 
-    "学者狂热": /*html*/`狂热<br>受到学者治疗的单位攻击速度 +50%，持续 3 秒`,
-    "高级教士战意激昂": /*html*/`战意激昂<br>被高级教士鼓舞的军事单位护甲+1，伤害+15%`,
+    "学者狂热": /*html*/`狂热<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狂热.png' width='20px'>狂热：受到学者治疗的单位攻击速度 +50%，持续 3 秒`,
+    "高级教士战意激昂": /*html*/`战意激昂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高级教士激励.png' width='20px'>战意激昂：被高级教士鼓舞的军事单位护甲+1，伤害+15%`,
 
     "战士之路": /*html*/`战士之路<br>Path of the Warrior<br>贞德选择成为一个战士，获得神圣愤怒能力`,
     "射手之路": /*html*/`射手之路<br>Path of the Archer<br>贞德选择成为一个战士，获得神圣之弓能力`,
