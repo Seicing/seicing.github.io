@@ -262,7 +262,8 @@
             <td id="speed" data-base="0.75"> </td>
             <td>贸易倍率</td>
             <td id="deposit1" data-base="1"> </td>
-            <td colspan="2"></td>
+            <td>最大距离黄金获取量</td>
+            <td id="goldtrade" data-base="130"> </td>
         </tr>
         <tr>
             <td>其他加成</td>
@@ -417,6 +418,23 @@
 
     }
 
+
+    function updateGoldTrade() {
+        const speed = parseFloat(document.getElementById("speed").textContent) || 0;
+        const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
+        const result = 130 * deposit1;
+        document.getElementById("goldtrade").textContent = result.toFixed(2);
+    }
+
+    function observeChanges(id) {
+        const target = document.getElementById(id);
+        const observer = new MutationObserver(updateGoldTrade);
+        observer.observe(target, { childList: true, characterData: true, subtree: true });
+    }
+
+    observeChanges("speed");
+    observeChanges("deposit1");
+    window.onload = updateGoldTrade();
 </script>
 
 </html>
