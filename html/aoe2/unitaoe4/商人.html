@@ -1671,30 +1671,34 @@
     }
 
 
+
+
     function updateGoldTrade() {
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
-        const result = 0.008 * speed * deposit1;
-        document.getElementById("goldtrade").textContent = result.toFixed(0);
-    }
-    function updateGoldTrade2() {
-        const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
-        const result = ((0.008 * distance * distance) + (0.1 * distance)) * deposit1;
-        document.getElementById("goldtrade2").textContent = result.toFixed(0);
+
+        // 第一计算：speed * deposit1
+        const result1 = speed * deposit1;
+        document.getElementById("goldtrade").textContent = result1.toFixed(2);
+
+        // 第二计算：((0.008 * distance^2) + (0.1 * distance)) * deposit1
+        const result2 = ((0.008 * distance * distance) + (0.1 * distance)) * deposit1;
+        document.getElementById("goldtrade2").textContent = result2.toFixed(0);
     }
 
+    // 封装监听函数
     function observeChanges(id) {
         const target = document.getElementById(id);
         const observer = new MutationObserver(updateGoldTrade);
         observer.observe(target, { childList: true, characterData: true, subtree: true });
     }
 
-    observeChanges("speed");
-    observeChanges("deposit1");
-    observeChanges("distance");
-    window.onload = updateGoldTrade();
-    window.onload = updateGoldTrade2();
+    // 监听三个输入值
+    ["speed", "deposit1", "distance"].forEach(observeChanges);
+
+    // 初始化计算
+    updateGoldTrade();
 </script>
 
 </html>
