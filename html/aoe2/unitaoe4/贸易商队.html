@@ -121,6 +121,7 @@
     贸易商队是阿尤布人和黑衣大食王朝可以训练的独特商人，和普通商人不同的地方在于，他们血量更少，但是移动速度快50%，同时骑乘着骆驼的他们可以散发出让马匹不安的气味，惊吓敌方骑兵部队<br><br>
     虽然贸易商队移动速度极快，但是他们获取黄金的效率只有其他文明的88%<br>
 
+    贸易商队的贸易效率为(0.0125x² + 0.1x)*0.38，其中 x 是主市场与贸易站之间相隔的格数<br>
 </div>
 
 <br><br><br>
@@ -259,6 +260,136 @@
         </tr>
     </table>
 </div>
+
+
+
+
+<br><br><br>
+<div>
+    <H1>
+        <a id="oth9370"></a><b><span style="color: #000000">模拟加成</span><span style="font-size:12px "><a
+                    href="#top">[回到顶部]</a></b></span>
+    </H1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+    <table id="stats" style="font-size:9pt;">
+        <tr>
+            <td style="text-align: center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贸易商队.png" width="48px"></td>
+            <td colspan="5">
+                <div id="filters">
+                    <div class="filterbtn" data-filter="abb" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png" width="25px"></div>
+                    <div class="filterbtn" data-filter="ayy" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png" width="25px"></div>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
+            <td id="buildtime" data-base="30"> </td>
+            <td>成本</td>
+            <td colspan="3">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="25px">
+                <span id="cost2" data-base="40"></span>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="25px">
+                <span id="cost3" data-base="40"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png" width="25px">生命值</td>
+            <td id="hp" data-base="60"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png" width="25px">近战防御</td>
+            <td id="armorm" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png" width="25px">远程防御</td>
+            <td id="armorr" data-base="0"> </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
+            <td id="speed" data-base="1.56"> </td>
+            <td>贸易基础效率</td>
+            <td id="goldtrade" data-base="0.0125"> </td>
+            <td>最终贸易倍率</td>
+            <td id="deposit1" data-base="0.38"> </td>
+        </tr>
+
+        <tr>
+            <td>其他加成</td>
+            <td colspan="5">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骆驼惊吓.png"
+                    width="20px">骆驼惊吓：降低5格范围内骑兵部队(骆驼、大象部队除外)20%的攻击力<br>
+                <span id="Extra109" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png"
+                        width="20px">大集市：获得25%的辅助资源，石头除外<br></span>
+            </td>
+        </tr>
+    </table>
+    <div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
+    <div style="display: inline-block;width: 20px;"> </div>
+    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
+
+    <div id="icons" style="width: 523px;">
+        <div class="icon" data-type="armorm armorr" data-game="ayy" data-mode="add add" data-value="3 3"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'步兵支援光环');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/步兵支援.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="buildtime gather" data-game="abb" data-mode="diffMul diffMul"
+            data-value="0.8 1.043">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'黄金时代阶段III');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="buildtime" data-game="ayy" data-mode="diffMul" data-value="0.8333"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'阿尤布黄金时代阶段III');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png" width="30px"></a></div>
+
+
+
+        <div class="icon" data-type="deposit1" data-mode="diffMul" data-value="1.3" data-game="abb">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'香料之路');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/香料之路.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm armorr" data-mode="add add" data-value="3 3" data-game="abb">
+            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'装甲商队');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲商队.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-game="abb" data-text="Extra109"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'大集市');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="hp" data-game="abb" data-mode="add" data-value="44"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'公共图书馆');">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/公共图书馆.png" width="30px"></a></div>
+
+
+
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'合身皮具');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'绝缘头盔');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁匠大师');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'铁制底网');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'楔形铆钉');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
+        </div>
+        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
+                onmousemove="showPic(event,'斜面');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
 
 
 

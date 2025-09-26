@@ -116,7 +116,7 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     商船是海上的商人，和商人相比，它可以生产相较于商人150%的黄金以及额外的75%木材<br>
     商船无法进行升级，罗斯人拥有独特的罗德亚商船，圣殿骑士团无法使用商船<br>
-
+    商船的贸易效率为(0.008x² + 0.1x)*0.9，其中 x 是主市场与贸易站之间相隔的格数<br>
 </div>
 
 <br><br><br>
@@ -238,6 +238,7 @@
         </table>
     </div>
     <div id="jdaText0" style="text-align: left;display:none">
+        <span class="贞德圣化建筑"></span><br>
         <span class="圣女贞德资源商队"></span><br>
         <span class="圣女贞德资源商队2"></span><br>
         <span class="圣女贞德资源商队3"></span><br>
@@ -589,10 +590,10 @@
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
             <td id="speed" data-base="1.5"> </td>
-            <td>贸易效率</td>
-            <td id="gather1" data-base="8"> </td>
-            <td>贸易倍率</td>
-            <td id="deposit1" data-base="1.0"> </td>
+            <td>贸易基础效率</td>
+            <td id="goldtrade" data-base="0.008"> </td>
+            <td>最终贸易倍率</td>
+            <td id="deposit1" data-base="0.9"> </td>
         </tr>
 
         <tr>
@@ -613,9 +614,9 @@
                 <span id="Extra105" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/丝绸之路.png"
                         width="20px">丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金，研究石料商业后，获得额外的石头<br></span>
                 <span id="Extra106" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png"
-                        width="20px">贸易经济：游戏开始时在小地图上显示所有贸易站，商人可以将任何资源送回市场(石头除外)<br></span>
+                        width="20px">贸易经济：商人可以将任何资源送回市场(石头除外)<br></span>
                 <span id="Extra107" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png"
-                        width="20px">贸易经济：游戏开始时在小地图上显示所有贸易站，商人可以将任何资源送回市场(石头除外)<br></span>
+                        width="20px">贸易经济：商人可以将任何资源送回市场(石头除外)<br></span>
                 <span id="Extra108" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/商人公会.png"
                         width="20px">商人公会：商人活跃时每6秒产生1金<br></span>
                 <span id="Extra109" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png"
@@ -707,7 +708,7 @@
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'香料之路');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/香料之路.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="armorm armorr" data-mode="add add" data-value="3 +" data-game="abb">
+        <div class="icon" data-type="armorm armorr" data-mode="add add" data-value="3 3" data-game="abb">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'装甲商队');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲商队.png" width="30px"></a>
         </div>
@@ -747,12 +748,6 @@
         </div>
 
 
-        <div class="icon" data-type="cost" data-game="jpn" data-mode="diffMul" data-value="0.75"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'日本便宜渔船');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png" width="30px"></a>
-        </div>
-
-
         <div class="icon" data-type="cost" data-game="eng" data-mode="diffMul" data-value="0.9"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'英国便宜船只');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png" width="30px"></a>
@@ -762,18 +757,12 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-type="gather" data-game="abb" data-mode="diffMul" data-value="1.15"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'黄金时代阶段I');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代1.png" width="30px"></a></div>
+
         <div class="icon" data-type="buildtime gather" data-game="abb" data-mode="diffMul diffMul"
             data-value="0.8 1.043">
             <a onmouseout="hiddenPic();" onmousemove="showPic(event,'黄金时代阶段III');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png" width="30px"></a>
         </div>
-
-        <div class="icon" data-type="gather" data-game="ayy" data-mode="diffMul" data-value="1.1"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'阿尤布黄金时代阶段I');"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代1.png" width="30px"></a></div>
 
         <div class="icon" data-type="buildtime" data-game="ayy" data-mode="diffMul" data-value="0.8333"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'阿尤布黄金时代阶段III');"><img
