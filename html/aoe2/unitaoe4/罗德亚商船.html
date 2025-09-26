@@ -442,7 +442,7 @@
     function updateGoldTrade() {
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
-        const result = 0.8 * speed * deposit1;
+        const result = 0.008 * speed * deposit1;
         document.getElementById("goldtrade").textContent = result.toFixed(2);
     }
 
