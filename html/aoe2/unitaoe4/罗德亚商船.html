@@ -453,13 +453,14 @@
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
+        const gather1 = parseFloat(document.getElementById("gather1").textContent) || 0;
 
         // 第一计算：speed * deposit1
-        const result1 = speed * deposit1;
+        const result1 = gather1 * speed * deposit1;
         document.getElementById("goldtrade").textContent = result1.toFixed(2);
 
         // 第二计算：((0.008 * distance^2) + (0.1 * distance)) * deposit1
-        const result2 = ((0.008 * distance * distance) + (0.1 * distance)) * deposit1 * 0.01;
+        const result2 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.01;
         document.getElementById("goldtrade2").textContent = result2.toFixed(0);
     }
 
