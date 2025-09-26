@@ -1385,7 +1385,7 @@
             <td>贸易移动距离(可自定义数值)</td>
             <td id="distance" data-base="100" contenteditable="true"> </td>
             <td>黄金获取量(估算值)</td>
-            <td id="goldtrade2" data-base="2"> </td>
+            <td id="goldtrade2" data-base="0"> </td>
         </tr>
         <tr>
             <td>其他加成</td>
@@ -1683,7 +1683,7 @@
         document.getElementById("goldtrade").textContent = result1.toFixed(2);
 
         // 第二计算：((0.008 * distance^2) + (0.1 * distance)) * deposit1
-        const result2 = ((0.008 * distance * distance) + (0.1 * distance)) * deposit1;
+        const result2 = ((0.008 * distance * distance) + (0.1 * distance)) * deposit1 * 0.01;
         document.getElementById("goldtrade2").textContent = result2.toFixed(0);
     }
 
