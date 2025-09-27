@@ -661,8 +661,8 @@ let ayanami = {
     "神农福地": /*html*/`神农福地<br>福地: 福地上的神话单位每秒恢复5生命值`,
 
     "天照武士道": /*html*/`太阳之道<br>每个解锁的武士道等级，每秒获得的黄金流+1`,
-    "天照加成1": /*html*/`天照加成1<br>武士和女武者在非战斗时生成武士道经验值的速度+300%`,
-    "天照加成2": /*html*/`天照加成2<br>武士和女武者获得生命恢复，在战斗时效率翻倍`,
+    "天照加成1": /*html*/`天照加成1<br>武者和女武者在非战斗时生成武士道经验值的速度+300%`,
+    "天照加成2": /*html*/`天照加成2<br>武者和女武者获得生命恢复，在战斗时效率翻倍`,
     "天照加成3": /*html*/`天照加成3<br>神社会缓慢增加附近资源的存储量，最多增加150%`,
 
     "月读武士道": /*html*/`月之道<br>每个解锁的武士道等级使骑兵和忍者攻击力+3%`,
@@ -688,6 +688,7 @@ let ayanami = {
 
 
     "神圣看守人": /*html*/`神圣看守人<br>Sacred Custodians<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>巫女治疗速度+50%，并且可以收集圣物`,
+    "樱花园": /*html*/`樱花园<br>Sakura Gardens<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>神社光环范围内会生成最多10棵樱花树`,
 
 
     "御神木": /*html*/`御神木<br>Goshinboku<br>生成一颗御神木，会自动复活玩家已经阵亡的神话单位`,
@@ -704,7 +705,7 @@ let ayanami = {
     "组木": /*html*/`组木<br>Kumiki<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>远程士兵成本-10%，攻城武器成本-15%`,
 
 
-    "将军": /*html*/`将军<br>Shogun<br>将大名升级为将军，在战斗中召唤武士`,
+    "将军": /*html*/`将军<br>Shogun<br>将大名升级为将军，在战斗中召唤日本武士`,
     "苦修": /*html*/`苦修<br>Ascetic Practices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>将天狗升级为大师天狗，天狗视野+5，特殊攻击跳跃距离+5，特殊攻击中+50%伤害、+15%近战和远程护甲`,
     "金鵄": /*html*/`金鵄<br>Golden Kite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>远程士兵和英雄+10%攻击力，对神话单位伤害加成率+250%`,
     "坛之浦战术": /*html*/`坛之浦战术<br>Dan-no-ura Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>每有1个冲撞和船在附近时，冲撞和船的近战攻击力+20%，最多增加5次`,
