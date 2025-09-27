@@ -1343,7 +1343,8 @@
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png" width="25px"></div>
 
                     <div class="filterbtn" data-filter="byz" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png" width="25px" data-update="tradesubrate4:0.2">
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png" width="25px"
+                            data-update="tradesubrateolive:0.2">
                     </div>
                     <div class="filterbtn" data-filter="mac" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png" width="25px"></div>
@@ -1399,10 +1400,10 @@
             <td id="goldtrade5" data-base="0"> </td>
         </tr>
         <tr style="display:none;">
-            <td id="tradesubrate1" data-base="0"> </td>
-            <td id="tradesubrate2" data-base="0"> </td>
-            <td id="tradesubrate3" data-base="0"> </td>
-            <td id="tradesubrate4" data-base="0"> </td>
+            <td id="tradesubratewood" data-base="0"> </td>
+            <td id="tradesubratefood" data-base="0"> </td>
+            <td id="tradesubratestone" data-base="0"> </td>
+            <td id="tradesubrateolive" data-base="0"> </td>
             <td colspan="2">
         </tr>
         <tr>
@@ -1455,16 +1456,16 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银之树.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-game="mon goh" data-type="tradesubrate1 tradesubrate2 deposit1"
+        <div class="icon" data-game="mon goh" data-type="tradesubratewood tradesubratefood deposit1"
             data-mode="add add diffMul" data-value="0.1 0.1 1.1"><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'丝绸之路');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/丝绸之路.png"
                     width="30px"></a>
         </div>
-        <div class="icon" data-game="mon" data-type="tradesubrate3" data-mode="add" data-value="0.1"><a
+        <div class="icon" data-game="mon" data-type="tradesubratestone" data-mode="add" data-value="0.1"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'石料商业');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料商业.png" width="30px"></a>
         </div>
-        <div class="icon" data-game="mon" data-type="tradesubrate3" data-mode="add" data-value="0.1"><a
+        <div class="icon" data-game="mon" data-type="tradesubratestone" data-mode="add" data-value="0.1"><a
                 onmouseout="hiddenPic();" onmousemove="showPic(event,'石料商业已强化');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料商业已强化.png" width="30px"></a>
         </div>
@@ -1692,10 +1693,10 @@
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
-        const tradesubrate1 = parseFloat(document.getElementById("tradesubrate1").textContent) || 0;
-        const tradesubrate2 = parseFloat(document.getElementById("tradesubrate2").textContent) || 0;
-        const tradesubrate3 = parseFloat(document.getElementById("tradesubrate3").textContent) || 0;
-        const tradesubrate4 = parseFloat(document.getElementById("tradesubrate4").textContent) || 0;
+        const tradesubratewood = parseFloat(document.getElementById("tradesubratewood").textContent) || 0;
+        const tradesubratefood = parseFloat(document.getElementById("tradesubratefood").textContent) || 0;
+        const tradesubratestone = parseFloat(document.getElementById("tradesubratestone").textContent) || 0;
+        const tradesubrateolive = parseFloat(document.getElementById("tradesubrateolive").textContent) || 0;
 
         const result2 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
@@ -1703,16 +1704,16 @@
         const result3 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance * speed;
         document.getElementById("tradeeff").textContent = result3.toFixed(2);
 
-        const result1 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate1;
+        const result1 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratewood;
         document.getElementById("goldtrade2").textContent = result1.toFixed(0);
 
-        const result4 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate2;
+        const result4 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratefood;
         document.getElementById("goldtrade3").textContent = result4.toFixed(0);
 
-        const result5 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate3;
+        const result5 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratestone;
         document.getElementById("goldtrade4").textContent = result5.toFixed(0);
 
-        const result6 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate4;
+        const result6 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrateolive;
         document.getElementById("goldtrade5").textContent = result6.toFixed(0);
     }
 
@@ -1724,7 +1725,7 @@
     }
 
     // 监听输入值
-    ["speed", "deposit1", "distance", "tradesubrate1", "tradesubrate2", "tradesubrate3", "tradesubrate4"].forEach(observeChanges);
+    ["speed", "deposit1", "distance", "tradesubratewood", "tradesubratefood", "tradesubratestone", "tradesubrateolive"].forEach(observeChanges);
 
     // 初始化计算
     updateGoldTrade();
