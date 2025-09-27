@@ -308,15 +308,17 @@
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
             <td id="speed" data-base="1.56"> </td>
-            <td colspan="4"></td>
-        </tr>
-        <tr>
             <td>贸易倍率</td>
             <td id="deposit1" data-base="0.304"> </td>
-            <td>贸易移动距离(可自定义数值)</td>
+            <td>等价效率</td>
+            <td id="tradeeff" data-base="0"> </td>
+        </tr>
+        <tr>
+            <td>贸易移动距离(点击输入数值)</td>
             <td id="distance" data-base="100" contenteditable="true"> </td>
-            <td>黄金获取量<br>(估算值)</td>
+            <td>黄金获取量</td>
             <td id="goldtrade" data-base="0"> </td>
+            <td colspan="2"></td>
         </tr>
         <tr>
             <td>其他加成</td>
@@ -523,8 +525,11 @@
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
 
-        const result2 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 * 0.005;
+        const result2 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
+
+        const result3 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance / speed;
+        document.getElementById("tradeeff").textContent = result3.toFixed(2);
     }
 
     // 封装监听函数
