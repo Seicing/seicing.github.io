@@ -316,9 +316,18 @@
         <tr>
             <td>贸易移动距离(点击输入数值)</td>
             <td id="distance" data-base="100" contenteditable="true" style="background-color: #fff4bf;"> </td>
-            <td>黄金获取量</td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather9.png" width="25px">黄金获取量</td>
             <td id="goldtrade" data-base="0"> </td>
-            <td colspan="2"></td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather8.png" width="25px">木材获取量</td>
+            <td id="goldtrade2" data-base="0"> </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather11.png" width="25px">食物获取量</td>
+            <td id="goldtrade3" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather10.png" width="25px">石头获取量</td>
+            <td id="goldtrade4" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather12.png" width="25px">橄榄油获取量</td>
+            <td id="goldtrade5" data-base="0"> </td>
         </tr>
         <tr>
             <td>其他加成</td>
@@ -326,13 +335,16 @@
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骆驼惊吓.png"
                     width="20px">骆驼惊吓：降低5格范围内骑兵部队(骆驼、大象部队除外)20%的攻击力<br>
                 <span id="Extra109" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png"
-                        width="20px">大集市：获得25%的辅助资源，石头除外<br></span>
+                        width="20px">大集市：可选择食物和木材中的一种带回25%的辅助资源<br></span>
             </td>
         </tr>
     </table>
     <div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
     <div style="display: inline-block;width: 20px;"> </div>
-    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
+    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br>
+    <span id="tradesubrate1" style="display:none" data-base="0"> </span> <span id="tradesubrate2" style="display:none"
+        data-base="0"> </span> <span id="tradesubrate3" style="display:none" data-base="0"> </span> <span
+        id="tradesubrate4" style="display:none" data-base="0"> </span><br>
 
     <div id="icons" style="width: 523px;">
         <div class="icon" data-type="armorm armorr" data-game="ayy" data-mode="add add" data-value="3 3"><a
@@ -361,8 +373,9 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲商队.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-game="abb" data-text="Extra109"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'大集市');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png" width="30px"></a>
+        <div class="icon" data-type="tradesubrate1 tradesubrate2" data-mode="add add" data-value="0.25 0.25"
+            data-game="abb" data-text="Extra109"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'大集市');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png" width="30px"></a>
         </div>
 
         <div class="icon" data-type="hp" data-game="abb" data-mode="add" data-value="44"><a onmouseout="hiddenPic();"
@@ -524,12 +537,25 @@
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
+        const tradesubrate = parseFloat(document.getElementById("tradesubrate").textContent) || 0;
 
         const result2 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
 
         const result3 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance * speed;
         document.getElementById("tradeeff").textContent = result3.toFixed(2);
+
+        const result1 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate1;
+        document.getElementById("goldtrade2").textContent = result1.toFixed(0);
+
+        const result4 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate2;
+        document.getElementById("goldtrade3").textContent = result4.toFixed(0);
+
+        const result5 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate3;
+        document.getElementById("goldtrade4").textContent = result5.toFixed(0);
+
+        const result6 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate4;
+        document.getElementById("goldtrade5").textContent = result6.toFixed(0);
     }
 
     // 封装监听函数
@@ -539,8 +565,8 @@
         observer.observe(target, { childList: true, characterData: true, subtree: true });
     }
 
-    // 监听三个输入值
-    ["speed", "deposit1", "distance"].forEach(observeChanges);
+    // 监听输入值
+    ["speed", "deposit1", "distance", "tradesubrate1", "tradesubrate2", "tradesubrate3", "tradesubrate4"].forEach(observeChanges);
 
     // 初始化计算
     updateGoldTrade();

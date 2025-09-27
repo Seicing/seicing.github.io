@@ -1384,9 +1384,18 @@
         <tr>
             <td>贸易移动距离(点击输入数值)</td>
             <td id="distance" data-base="100" contenteditable="true" style="background-color: #fff4bf;"> </td>
-            <td>黄金获取量</td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather9.png" width="25px">黄金获取量</td>
             <td id="goldtrade" data-base="0"> </td>
-            <td colspan="2"></td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather8.png" width="25px">木材获取量</td>
+            <td id="goldtrade2" data-base="0"> </td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather11.png" width="25px">食物获取量</td>
+            <td id="goldtrade3" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather10.png" width="25px">石头获取量</td>
+            <td id="goldtrade4" data-base="0"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather12.png" width="25px">橄榄油获取量</td>
+            <td id="goldtrade5" data-base="0"> </td>
         </tr>
         <tr>
             <td>其他加成</td>
@@ -1403,16 +1412,14 @@
                         width='20px'>鱼类加工：马里渔船可获得收获食物量10%的黄金<br></span>
                 <span id="Extra73" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/祗园祭.png"
                         width="20px">祗园祭：每3分钟所有经济单位会在3秒内恢复100%生命值<br></span>
-                <span id="Extra105" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/丝绸之路.png"
-                        width="20px">丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金，研究石料商业后，获得额外的石头<br></span>
                 <span id="Extra106" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png"
-                        width="20px">贸易经济：商人可以将任何资源送回市场(石头除外)<br></span>
+                        width="20px">贸易经济：商人可以将获取的黄金切换成等额的食物或木材<br></span>
                 <span id="Extra107" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png"
-                        width="20px">贸易经济：商人可以将任何资源送回市场(石头除外)<br></span>
+                        width="20px">贸易经济：商人可以将获取的黄金切换成等额的食物或木材<br></span>
                 <span id="Extra108" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/商人公会.png"
                         width="20px">商人公会：商人活跃时每6秒产生1金<br></span>
                 <span id="Extra109" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png"
-                        width="20px">大集市：获得25%的辅助资源，石头除外<br></span>
+                        width="20px">大集市：可选择食物和木材中的一种带回25%的辅助资源<br></span>
                 <span id="Extra110" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/收费哨站.png"
                         width="20px">收费哨站：最多40%，每路过一个收费哨站，商人可以额外立即获得8%的交易黄金<br></span>
                 <span id="Extra111" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png"
@@ -1422,7 +1429,10 @@
     </table>
     <div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
     <div style="display: inline-block;width: 20px;"> </div>
-    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
+    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br>
+    <span id="tradesubrate1" style="display:none" data-base="0"> </span> <span id="tradesubrate2" style="display:none"
+        data-base="0"> </span> <span id="tradesubrate3" style="display:none" data-base="0"> </span> <span
+        id="tradesubrate4" style="display:none" data-base="0"> </span><br>
 
     <div id="icons" style="width: 523px;">
 
@@ -1444,10 +1454,20 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银之树.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-game="mon goh" data-text="Extra105"><a onmouseout="hiddenPic();"
+        <div class="icon" data-game="mon goh" data-type="tradesubrate1 tradesubrate2 deposit1"
+            data-mode="add add diffMul" data-value="0.1 0.1 1.1"><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'丝绸之路');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/丝绸之路.png"
                     width="30px"></a>
         </div>
+        <div class="icon" data-game="mon" data-type="tradesubrate3" data-mode="add" data-value="0.1"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'石料商业');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料商业.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="mon" data-type="tradesubrate3" data-mode="add" data-value="0.1"><a
+                onmouseout="hiddenPic();" onmousemove="showPic(event,'石料商业已强化');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料商业已强化.png" width="30px"></a>
+        </div>
+
 
 
         <div class="icon" data-group="zxldynasty" data-type="cost" data-game="zxl" data-mode="diffMul"
@@ -1456,7 +1476,6 @@
         <div class="icon" data-group="zxlbuff" data-game="zxl" data-text="Extra2"><a onmouseout="hiddenPic();"
                 onmousemove="showPic(event,'不动如山');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png"
                     width="30px"></a></div>
-
 
 
         <div class="icon" data-type="cost" data-game="jda" data-mode="diffMul" data-value="0.75"><a
@@ -1502,9 +1521,9 @@
         </div>
 
 
-        <div class="icon" data-game="byz" data-text="Extra111"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'拜占庭商队橄榄油');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png"
-                    width="30px"></a>
+        <div class="icon" data-game="byz" data-type="tradesubrate4" data-mode="add" data-value="0.2"
+            data-text="Extra111"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'拜占庭商队橄榄油');"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png" width="30px"></a>
         </div>
 
 
@@ -1678,12 +1697,25 @@
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
+        const tradesubrate = parseFloat(document.getElementById("tradesubrate").textContent) || 0;
 
         const result2 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
 
         const result3 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance * speed;
         document.getElementById("tradeeff").textContent = result3.toFixed(2);
+
+        const result1 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate1;
+        document.getElementById("goldtrade2").textContent = result1.toFixed(0);
+
+        const result4 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate2;
+        document.getElementById("goldtrade3").textContent = result4.toFixed(0);
+
+        const result5 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate3;
+        document.getElementById("goldtrade4").textContent = result5.toFixed(0);
+
+        const result6 = (((0.008 * 1) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrate4;
+        document.getElementById("goldtrade5").textContent = result6.toFixed(0);
     }
 
     // 封装监听函数
@@ -1693,8 +1725,8 @@
         observer.observe(target, { childList: true, characterData: true, subtree: true });
     }
 
-    // 监听三个输入值
-    ["speed", "deposit1", "distance"].forEach(observeChanges);
+    // 监听输入值
+    ["speed", "deposit1", "distance", "tradesubrate1", "tradesubrate2", "tradesubrate3", "tradesubrate4"].forEach(observeChanges);
 
     // 初始化计算
     updateGoldTrade();
