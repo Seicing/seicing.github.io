@@ -298,7 +298,7 @@
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
             <td id="speed" data-base="1.5"> </td>
             <td>贸易基础效率</td>
-            <td id="gather1">0.008</td>
+            <td id="gather1">0.0072</td>
             <td>贸易倍率</td>
             <td id="deposit1" data-base="0.9"> </td>
         </tr>
@@ -455,10 +455,10 @@
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
         const gather1 = parseFloat(document.getElementById("gather1").textContent) || 0;
 
-        const result1 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.01 * speed / distance;
+        const result1 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.005 * speed / distance;
         document.getElementById("goldtrade").textContent = result1.toFixed(2);
 
-        const result2 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.01;
+        const result2 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.005;
         document.getElementById("goldtrade2").textContent = result2.toFixed(0);
     }
 
