@@ -299,7 +299,7 @@
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
             <td id="speed" data-base="1.5"> </td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather9.png" width="25px">等价效率</td>
+            <td>等价效率</td>
             <td id="tradeeff" data-base="0"> </td>
             <td>贸易倍率</td>
             <td id="deposit1" data-base="0.48"> </td>
@@ -468,7 +468,10 @@
         const speed = parseFloat(document.getElementById("speed").textContent) || 0;
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
-        const tradesubrate = parseFloat(document.getElementById("tradesubrate").textContent) || 0;
+        const tradesubrate1 = parseFloat(document.getElementById("tradesubrate1").textContent) || 0;
+        const tradesubrate2 = parseFloat(document.getElementById("tradesubrate2").textContent) || 0;
+        const tradesubrate3 = parseFloat(document.getElementById("tradesubrate3").textContent) || 0;
+        const tradesubrate4 = parseFloat(document.getElementById("tradesubrate4").textContent) || 0;
 
         const result2 = (((0.008 * 1.5) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
