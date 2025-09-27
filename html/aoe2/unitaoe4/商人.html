@@ -118,7 +118,6 @@
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
     商人是用于市场间进行贸易的工人单位<br>
     商人无法进行升级，圣殿骑士团没有商人，阿尤布和黑衣大食王朝拥有独特的商人<br>
-    商人的贸易效率为0.008x² + 0.1x，其中 x 是主市场与贸易站之间相隔的格数<br>
 
 </div>
 
@@ -1679,10 +1678,10 @@
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
         const gather1 = parseFloat(document.getElementById("gather1").textContent) || 0;
 
-        const result1 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.005 * speed / distance;
+        const result1 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.005 * 0.8 * speed / distance;
         document.getElementById("goldtrade").textContent = result1.toFixed(2);
 
-        const result2 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.005;
+        const result2 = ((gather1 * distance * distance) + (0.1 * distance)) * deposit1 * 0.005 * 0.8;
         document.getElementById("goldtrade2").textContent = result2.toFixed(0);
     }
 
