@@ -929,7 +929,7 @@
         const result2 = (((0.008 * 1.5) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
 
-        const result3 = (((0.008 * 1.5) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance / speed;
+        const result3 = (((0.008 * 1.5) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance * speed;
         document.getElementById("tradeeff").textContent = result3.toFixed(2);
     }
 
