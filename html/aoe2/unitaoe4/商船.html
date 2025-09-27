@@ -118,7 +118,7 @@
     商船无法进行升级，罗斯人拥有独特的罗德亚商船，圣殿骑士团无法使用商船<br>
     <br>
     一个商人单位两次来回获得的黄金公式大约为：(基数值*距离²+0.1*距离)*贸易倍率，即结果除以2就是单次获取的黄金<br>
-    基数值的计算很复杂，近似值为是“0.008*移动速度”，商人(0.008)、商船(0.012)、威尼斯商人(0.015)、贸易商队(0.012)<br>
+    基数值的计算很复杂，近似值为是“0.008*基础移动速度”，商人(0.008)、商船(0.012)、威尼斯商人(0.015)、贸易商队(0.012)<br>
     贸易倍率默认为80%(在第四赛季减少了20%)，贸易商队和商船会在这个基础上调整倍率以平衡收益。贸易商队的贸易倍率是普通商队的38%(即实际30.4%)；商船的贸易倍率是普通商队的59.4%(即实际48%)，1.5移速的商船贸易倍率会被乘以66.6%以拉平到1移速普通商人水平，在这个基础上还会额外乘以90%
 
 </div>
@@ -924,7 +924,7 @@
         const deposit1 = parseFloat(document.getElementById("deposit1").textContent) || 0;
         const distance = parseFloat(document.getElementById("distance").textContent) || 0;
 
-        const result2 = (((0.008 * speed) * distance * distance) + (0.1 * distance)) * deposit1 * 0.005;
+        const result2 = (((0.008 * 1.5) * distance * distance) + (0.1 * distance)) * deposit1 * 0.005;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
     }
 
