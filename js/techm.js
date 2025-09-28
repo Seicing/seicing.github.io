@@ -699,13 +699,13 @@ let ayanami = {
 
 
     "太阳之盾": /*html*/`太阳之盾<br>Solar Shield<br>使目标单位暂时变得几乎无敌`,
-    "神乐": /*html*/`神乐<br>Kagura<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>？ <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>？<br>生产1个巫女，巫女治疗速度+25%，训练时间-25%`,
+    "神乐": /*html*/`神乐<br>Kagura<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>立即生产1个巫女，巫女治疗速度+25%，训练时间-25%`,
 
     "新月": /*html*/`新月<br>New Moon<br>指定一个建筑，使得该建筑可以免费研究科技，并更快地生产部队`,
-    "天守": /*html*/`天守<br>Tenshu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>？ <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>？<br>塔和城堡攻击力+40%，视野+5`,
+    "天守": /*html*/`天守<br>Tenshu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>塔攻击力+40%，视野+5，城堡攻击力+20%，视野+5`,
 
     "草薙剑": /*html*/`草薙剑<br>Kusanagi<br>投下草薙之剑，对敌人造成伤害并召唤激流将敌人抛向空中`,
-    "毁灭巨浪": /*html*/`毁灭巨浪<br>Crushing Waves<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>？ <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>？<br>神话单位+10%移动速度，+1神圣伤害`,
+    "毁灭巨浪": /*html*/`毁灭巨浪<br>Crushing Waves<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>神话单位+10%移动速度，+1神圣伤害`,
 
 
     "神圣看守人": /*html*/`神圣看守人<br>Sacred Custodians<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>巫女治疗速度+50%，并且可以收集圣物`,
@@ -723,6 +723,7 @@ let ayanami = {
     "咸水泉": /*html*/`咸水泉<br>Saltwater Spring<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>平民的可狩猎动物采集速度+10%`,
     "猎人之力": /*html*/`猎人之力<br>Hunter's Strength<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>14 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>远程士兵+1射程，攻击力+10%`,
     "组木": /*html*/`组木<br>Kumiki<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>远程士兵成本-10%，攻城武器成本-15%`,
+
 
     "沼泽地": /*html*/`沼泽地<br>Swampland<br>指定一个地面生成临时性的沼泽，沼泽中会出现河童将敌方士兵扯到水中淹死他们`,
     "致命陷阱": /*html*/`致命陷阱<br>Deadly Snare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>14 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>将络新妇升级为猛毒络新妇，造成中毒伤害`,
@@ -768,11 +769,6 @@ let ayanami = {
     "海岸渗透者": /*html*/`海岸渗透者<br>Seaside Infiltrators<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>？ <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>？<br>忍者移动速度+10%，获得烟雾弹能力，使得可以暂时隐形`,
     "不对称弓": /*html*/`不对称弓<br>Asymmetrical Bows<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>？ <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>？<br>骑射手攻击力+25%，射程和视野+2`,
     "阴阳道": /*html*/`阴阳道<br>Onmyōdō<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>？ <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>？ <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>？<br>阴阳师攻击力+20%`,
-
-
-
-
-
 }
 
 function showPic(e, taitou) {
@@ -820,4 +816,28 @@ function aoetechPoeRush() {
         var gasdss = key.toString();
         aoetechPoe(gasdss)
     }
-} 
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.saic');
+    const cardWidth = 150;   // 卡片宽度
+    const gap = 1;           // flex gap
+
+    containers.forEach(container => {
+        const perRow = parseInt(container.dataset.perRow) || 5; // 支持自定义
+        const cards = container.children.length;
+        const remainder = cards % perRow;
+
+        if (remainder !== 0) {
+            const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
+
+            const placeholder = document.createElement('div');
+            placeholder.style.width = remainingWidth + 'px';
+            placeholder.style.background = 'white';  // 或者 transparent
+            placeholder.style.flexShrink = '0';
+
+            container.appendChild(placeholder);
+        }
+    });
+});
