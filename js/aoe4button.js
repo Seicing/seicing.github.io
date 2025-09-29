@@ -53,8 +53,7 @@ function showCiv(prefix) {
     try {
         let currentUrl = new URL(window.location.href);
         currentUrl.searchParams.set('civ', prefix);
-        // 使用 pushState 而非 replaceState，让浏览器历史记录变化，方便用户回退
-        history.pushState(null, '', currentUrl.toString());
+        history.replaceState(null, '', currentUrl.toString());
     } catch (e) {
         console.error("更新URL时出错: ", e);
     }
