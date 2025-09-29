@@ -6,9 +6,9 @@
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>牧场</title>
-<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
+<script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
@@ -21,7 +21,7 @@
     li {
         line-height: 20px
     }
-</style>
+</style
 </head>
 
 <body style="height:100%;" id='scroll-2'>
@@ -32,7 +32,7 @@
                     <div class="post">
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
-    <table width="250px" frame="box" cellpadding="5">
+    <table cellpadding="5" frame="box" width="250px">
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="5"><span style="color:#6e6e85">牧场(Pasture)</span></td>
         </tr>
@@ -44,7 +44,7 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img width=20px src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png>150</td>
+            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">150</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建造时间</span></td>
@@ -82,74 +82,54 @@
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建筑标签</span></td>
             <td colspan="4">经济建筑</td>
         </tr>
-
-
-
-
-
-
-
     </table>
 </div>
-
-
-
 <div>
     <div id="techno"></div>
     “每 112 秒自动生产一只可收集的绵羊。如果生产的绵羊太多且没有被收集，则生产将停止”
     <br>
-    <div style='text-align:right'>——游戏内说明</div>
+    <div style="text-align:right">——游戏内说明</div>
 </div>
-
 <br><br><br>
-
 <div>
-    <H1>
+    <h1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     牧场是蒙古人专用的经济建筑，它可以隔一段时间生产一只畜牧绵羊，这个牧场生产的羊超过30只就会停止生产，对于无法建造农田的蒙古人来说，这个建筑相当于就是蒙古人的农田<br>
-
 </div>
-
 <br><br><br>
-
 <div style="text-align: left;">
-    <H1>
+    <h1>
         <a id="sp1"></a><b><span style="color: #000000">科技</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="monButton0" onclick="showCiv('mon')" style="opacity:1">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
-
-
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <div class="civ-selector">
+        <a id="monButton0" onclick="showCiv('mon')" style="opacity:1">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
+    </div>
     <div id="monText0" style="text-align: left;display:block ">
         这座建筑物没有科技可以研发
 
     </div>
-
-
 </div>
-
 <br><br><br>
-
-
-
 <div style="text-align: left;">
-    <H1>
+    <h1>
         <a id="sp"></a><b><span style="color: #000000">加成</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="monButton1" onclick="showCiv('mon')" style="opacity:1">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <div class="civ-selector">
+        <a id="monButton1" onclick="showCiv('mon')" style="opacity:1">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></a>
+    </div>
     <div id="monText1" style="text-align: left;display:block ">
-
         <span class="蒙古游牧"></span><br>
         <span class="敖包双倍"></span><br>
-        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
                 <td>
@@ -165,27 +145,18 @@
             </tr>
         </table>
     </div>
-
-
-
 </div>
-
 <br><br><br>
-
-
-
 <div>
-    <H1>
+    <h1>
         <a id="change"></a><b><span style="color: #000000">更新日志</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     <b>内测版本</b>
     <ul>
         <li>敖包可以研究“饲养”科技减少绵羊的生成时间20秒(有强化版本30秒)，在正式版被删除</li>
     </ul>
-
     <b>第3赛季</b>
     <ul>
         <li>5.1.148.1补丁后，牧场的生产时间从120秒上调到140秒</li>
@@ -193,34 +164,26 @@
     <b>第8赛季</b>
     <ul>
         <li>第八赛季补丁后，牧场生产时间从140秒下调到116秒</li>
-
         <li>11.1.1201补丁后，羊群生产时间从116秒下调到112秒</li>
-
-
     </ul>
 </div>
 <br><br><br>
-
-
 <div>
-    <H1>
+    <h1>
         <a id="relk"></a><b><span style="color: #000000">历史</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     降雨量较少不适合种植农作物的土地会发展出游牧这一生存模式，缺少降水的草原的环境承载力很差，在经过一段时间的放牧后，草地就会荒废，游牧民就必须驱赶牲畜群前往下一个草料场，被放牧后的草地需要等待很长一段时间才能恢复原来的生态。为了更好地利用草资源，草原通常会被划分成一个一个的牧场，牲畜会在不同时刻被驱赶到不同牧场进行放牧，非放牧区会自然地等待恢复，直到恢复完毕后再重新按照顺序迁移牧群，以便可以更加高效地利用草原喂养更多的牲畜。牧场是游牧民族最为宝贵的遗产，游牧民族之间大部分的战争都是因为抢夺草场的所属权而爆发的
 </div>
-
 <br><br><br>
-
-
 <div>
-    <H1>
+    <h1>
         <a id="oth"></a><b><span style="color: #000000">杂项</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table id="empire" frame="box">
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <table frame="box" id="empire">
         <tr>
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mon/牧场.png" target="_blank">
@@ -232,7 +195,6 @@
                     <img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/cardinal_concept_building_mon_house_sheep+pasture+03_signed+copy.jpg"></a>
             </td>
-
         </tr>
         <tr>
             <td style="background-color:#F5F8FA;text-align: center">
@@ -243,8 +205,7 @@
             </td>
         </tr>
     </table>
-</div>
-
+</div
                         </div>
                     </div>
                 </div>
@@ -257,13 +218,13 @@
 <a href="#sp">加成</a><br>
 <a href="#change">更新日志</a><br>
 <a href="#relk">历史</a><br>
-<a href="#oth">杂项</a><br>
+<a href="#oth">杂项</a><br
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
+<a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>

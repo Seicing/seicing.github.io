@@ -6,9 +6,9 @@
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>锻造厂</title>
-<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
+<script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
@@ -22,7 +22,7 @@
     li {
         line-height: 20px
     }
-</style>
+</style
 </head>
 
 <body style="height:100%;" id='scroll-2'>
@@ -33,7 +33,7 @@
                     <div class="post">
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
-    <table width="250px" frame="box" cellpadding="5">
+    <table cellpadding="5" frame="box" width="250px">
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="5"><span style="color:#6e6e85">锻造厂(Forge)</span></td>
         </tr>
@@ -45,7 +45,7 @@
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"> <img width=20px src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png>50
+            <td colspan="4"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">50
             </td>
         </tr>
         <tr style="text-align: left">
@@ -86,45 +86,37 @@
         </tr>
     </table>
 </div>
-
-
-
 <div>
     <div id="techno"></div>
     “村民可将石料和黄金存放于这座建筑。可研究提升采矿和军事单位的科技”
     <br>
-    <div style='text-align:right'>——游戏内说明</div>
+    <div style="text-align:right">——游戏内说明</div>
 </div>
-
 <br><br><br>
-
 <div>
-    <H1>
+    <h1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     锻造厂是日本人独特的采矿场，日本村民把石头和黄金存放到这个地方，可以在此研究采矿科技和军事科技，因此可以看成是采矿场和铁匠铺的结合体<br>
-
-
 </div>
-
 <br><br><br>
-
 <div style="text-align: left;">
-    <H1>
+    <h1>
         <a id="sp1"></a><b><span style="color: #000000">科技</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="jpnButton0" onclick="showCiv('jpn')" style="opacity:1">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
-    <a id="senButton0" onclick="showCiv('sen')" style="opacity:0.3">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
-
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <div class="civ-selector">
+        <a id="jpnButton0" onclick="showCiv('jpn')" style="opacity:1">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
+        <a id="senButton0" onclick="showCiv('sen')" style="opacity:0.3">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
+    </div>
 
     <div id="jpnText0" style="text-align: left;display:block ">
-        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
                 <td style="background-color:#F5F8FA">名称</td>
@@ -266,11 +258,12 @@
                 <td style="text-align: left;width:30px;">Ⅲ</td>
                 <td style="text-align: left;width:120px;"><span class="军事学院成本"></span></td>
                 <td style="text-align: left"><span class="军事学院"></span></td>
+            </tr>
             </tr>
         </table>
     </div>
     <div id="senText0" style="text-align: left;display:block ">
-        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="height:10px;background-color:#dad2ff">
                 <td style="background-color:#F5F8FA">图标</td>
                 <td style="background-color:#F5F8FA">名称</td>
@@ -413,29 +406,27 @@
                 <td style="text-align: left;width:120px;"><span class="军事学院成本"></span></td>
                 <td style="text-align: left"><span class="军事学院"></span></td>
             </tr>
+            </tr>
         </table>
     </div>
 </div>
-
 <br><br><br>
-
-
-
 <div style="text-align: left;">
-    <H1>
+    <h1>
         <a id="sp"></a><b><span style="color: #000000">加成</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="jpnButton1" onclick="showCiv('jpn')" style="opacity:1">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
-    <a id="senButton1" onclick="showCiv('sen')" style="opacity:0.3">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
-
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <div class="civ-selector">
+        <a id="jpnButton1" onclick="showCiv('jpn')" style="opacity:1">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
+        <a id="senButton1" onclick="showCiv('sen')" style="opacity:0.3">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
+    </div>
 
     <div id="jpnText1" style="text-align: left;display:block ">
         <span class="日本依代锻造厂"></span><br>
-        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
                 <td>
@@ -451,7 +442,7 @@
         </table>
     </div>
     <div id="senText1" style="text-align: left;display:block ">
-        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align: left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
                 <td>
@@ -461,25 +452,17 @@
         </table>
     </div>
 </div>
-
 <br><br><br>
-
-
-
 <div>
-    <H1>
+    <h1>
         <a id="change"></a><b><span style="color: #000000">更新日志</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     <b>第8赛季</b>
     <ul>
         <li>第八赛季补丁后，吹踏鞴制钢法成本从75金25石下调到50金25石</li>
     </ul>
-
-
-
-
     <b>第9赛季</b>
     <ul>
         <li>12.2.3327补丁后，吹踏鞴制钢法成本从25石50金下调到15石35金，研究时间从30秒下调到15秒</li>
@@ -487,54 +470,47 @@
     </ul>
 </div>
 <br><br><br>
-
-
 <div>
-    <H1>
+    <h1>
         <a id="relk"></a><b><span style="color: #000000">历史</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     日本列岛位于板块边缘，岛内多山并地质活动频繁，但这并没有给日本带来丰富的矿产资源，绝大多数的矿产都沉没在海中，能运用在战争中的矿产不多，频繁的战争使得日本对于铁器的要求紧迫，日本铁匠们竭尽所能使用当时日本可以做到最好的技术对钢铁进行了精炼，力求让钢铁可以发挥出它们被埋藏的潜力
 </div>
-
 <br><br><br>
-
-
 <div>
-    <H1>
+    <h1>
         <a id="oth"></a><b><span style="color: #000000">杂项</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table id="empire" frame="box">
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <table frame="box" id="empire">
         <tr>
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/锻造厂1.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂1.jpg" alt="">
+                    <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂1.jpg">
                 </a>
             </td>
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/锻造厂2.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂2.jpg" alt="">
+                    <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂2.jpg">
                 </a>
             </td>
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/锻造厂3.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂3.jpg" alt="">
+                    <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂3.jpg">
                 </a>
             </td>
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/锻造厂4.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂4.jpg" alt="">
+                    <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/jpn/mini/锻造厂4.jpg">
                 </a>
             </td>
-
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-allen-jpn-blacksmith-age-02.jpg" target="_blank">
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-allen-jpn-blacksmith-age-02.jpg"></a>
             </td>
-
         </tr>
         <tr>
             <td style="background-color:#F5F8FA;text-align: center">
@@ -568,9 +544,6 @@
                     <img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/sperasoft-a-keywords-studio-jpn-age-2-blacksmith.jpg"></a>
             </td>
-
-
-
         </tr>
         <tr>
             <td style="background-color:#F5F8FA;text-align: center">
@@ -584,8 +557,7 @@
             </td>
         </tr>
     </table>
-</div>
-
+</div
                         </div>
                     </div>
                 </div>
@@ -598,13 +570,13 @@
 <a href="#sp">加成</a><br>
 <a href="#change">更新日志</a><br>
 <a href="#relk">历史</a><br>
-<a href="#oth">杂项</a><br>
+<a href="#oth">杂项</a><br
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
+<a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>

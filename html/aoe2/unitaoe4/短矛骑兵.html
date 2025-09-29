@@ -6,9 +6,9 @@
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>短矛骑兵</title>
-<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
+<script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
@@ -21,7 +21,7 @@
     li {
         line-height: 20px
     }
-</style>
+</style
 </head>
 
 <body style="height:100%;" id='scroll-2'>
@@ -32,7 +32,7 @@
                     <div class="post">
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
-    <table width="250px" frame="box" cellpadding="5">
+    <table cellpadding="5" frame="box" width="250px">
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="5"><span style="color:#6e6e85">短矛骑兵(Demilancer)</span></td>
         </tr>
@@ -167,54 +167,44 @@
             <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/众志成城.png"
                     width="20px">众志成城：每个城堡(包括地标)提供+1攻击力，最大+4</td>
         </tr>
-
-
-
-
-
     </table>
 </div>
-
-
-
 <div>
     <div id="techno"></div>
     “独特的重装骑兵，拥有中等伤害和耐力，擅长对付前线单位”
     <br>
-    <div style='text-align:right'>——游戏内说明</div>
+    <div style="text-align:right">——游戏内说明</div>
     <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 </div>
-
 <br><br><br>
-
 <div>
-    <H1>
+    <h1>
         <a id="jia"></a><b><span style="color: #000000">简介</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     短矛骑兵是特殊的重型近战骑兵单位，他们生命值比常规骑士少15%左右，攻击力大概只有骑士的一半，名副其实的“半”个骑士<br>
     短矛骑兵无法通过正常手段进行训练，玩家最早可以在封建时代通过兰开斯特城堡使用他们，在帝王时代建造温嘉德宫殿后可以通过“伯爵侍从”军团批量地生产他们，短矛骑兵非常的便宜，折算下来通过温嘉德宫殿训练的每个短矛骑兵实际上只需要85食物25黄金<br>
     短矛骑兵不需要升级，他们会自动升级到对应时代的级别<br>
     短矛骑兵的冲锋伤害会在升级到老练级别后降低，这是这个兵种的特殊现象<br>
 </div>
-
 <br><br><br>
-
 <div style="text-align:left;">
-    <H1>
+    <h1>
         <a id="sp"></a><b><span style="color: #000000">加成</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="holButton0" onclick="showCiv('hol')" style="opacity:1">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <div class="civ-selector">
+        <a id="holButton0" onclick="showCiv('hol')" style="opacity:1">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
+    </div>
     <div id="holText0" style="text-align:left;display:block">
         <span class="兰开斯特伯克郡"></span><br>
         <span class="温嘉德宫殿效果"></span><br>
         <span class="温嘉德宫殿限制"></span><br>
         <span class="兰开斯特领主的鼓舞"></span><br>
-        <table frame="box" width="500px" id="aoe4de" style="border:1px solid #222222;">
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
                 <td>
@@ -250,54 +240,42 @@
         </table>
     </div>
 </div>
-
 <br><br><br>
-
-
-
 <div>
-    <H1>
+    <h1>
         <a id="change"></a><b><span style="color: #000000">更新日志</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     <b>第10赛季</b>
     <ul>
         <li>13.0.4343补丁后，老练短矛骑兵生命值从170下调到160，伤害从10下调到9(冲锋从15下调到14)</li>
         <li>13.0.4343补丁后，精锐短矛骑兵生命值从240下调到200，伤害从18下调到14(冲锋从27下调到21)</li>
         <li>13.1.4420补丁后，短矛骑兵冲锋伤害从16下调到12</li>
     </ul>
-
     <b>第11赛季</b>
     <ul>
         <li>第十一赛季补丁后，短矛骑兵的生命值从140/160/200下调到130/150/190</li>
     </ul>
-
 </div>
 <br><br><br>
-
-
 <div>
-    <H1>
+    <h1>
         <a id="relk"></a><b><span style="color: #000000">历史</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     Demilancer就如同名字所说的那样，为一半(Demi)的长矛骑兵(Lancer)，这是一种16世纪兴起的军事术语，全身装甲的重装骑兵逐渐在战场上被淘汰，Demilancer手持较轻的长矛，身穿只覆盖要害部位的半身铠甲作战，他们是早期现代骑兵作战的一种趋势，减少装甲覆盖范围的同时增加装甲厚度，抵挡当时开始流行的火药武器的射击，同时提高机动性，让他们可以更好地担任突击侧翼的作战目标
 
 </div>
-
 <br><br><br>
-
-
 <div>
-    <H1>
+    <h1>
         <a id="oth"></a><b><span style="color: #000000">杂项</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <table id="empire" frame="box">
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
+    <table frame="box" id="empire">
         <tr>
             <td>
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/短矛骑兵2.png" target="_blank">
@@ -325,19 +303,13 @@
         </tr>
     </table>
 </div>
-
-
-
-
-
-
 <br><br><br>
 <div>
-    <H1>
+    <h1>
         <a id="oth9370"></a><b><span style="color: #000000">模拟加成</span><span style="font-size:12px "><a
-                    href="#top">[回到顶部]</a></b></span>
-    </H1>
-    <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+                    href="#top">[回到顶部]</a></span></b>
+    </h1>
+    <hr style="height:1px;border:none;border-top:1px solid #555555;">
     <table id="stats" style="font-size:9pt;">
         <tr>
             <td style="text-align: center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/短矛骑兵.png" width="48px"></td>
@@ -350,48 +322,47 @@
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
-            <td id="buildtime" data-base="35"> </td>
+            <td data-base="35" id="buildtime"> </td>
             <td>成本</td>
             <td colspan="3">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="25px">
-                <span id="cost1" data-base="85"></span>
+                <span data-base="85" id="cost1"></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="25px">
-                <span id="cost3" data-base="25"></span>
+                <span data-base="25" id="cost3"></span>
             </td>
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png" width="25px">生命值</td>
-            <td id="hp" data-base="130"> </td>
+            <td data-base="130" id="hp"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png" width="25px">近战防御</td>
-            <td id="armorm" data-base="2"> </td>
+            <td data-base="2" id="armorm"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png" width="25px">远程防御</td>
-            <td id="armorr" data-base="2"> </td>
+            <td data-base="2" id="armorr"> </td>
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/attackspeed.png" width="25px">攻击速度</td>
-            <td id="attackspeed" data-base="1.5"> </td>
+            <td data-base="1.5" id="attackspeed"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/range.png" width="25px">攻击范围</td>
-            <td id="range" data-base="0.294"> </td>
+            <td data-base="0.294" id="range"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
-            <td id="speed" data-base="1.62"> </td>
+            <td data-base="1.62" id="speed"> </td>
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagemelee.png" width="25px">近战伤害</td>
-            <td id="damage" data-base="8"> </td>
+            <td data-base="8" id="damage"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/chargedamage.png" width="25px">冲锋伤害</td>
-            <td id="chargedamage" data-base="12"> </td>
+            <td data-base="12" id="chargedamage"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagefire.png" width="25px">火炬伤害</td>
-            <td id="firedamage" data-base="21"> </td>
+            <td data-base="21" id="firedamage"> </td>
         </tr>
         <tr>
             <td>对[重型]加成</td>
-            <td id="bonusdamage1" data-base="0"> </td>
+            <td data-base="0" id="bonusdamage1"> </td>
             <td colspan="4"></td>
         </tr>
         <tr>
             <td>其他加成</td>
             <td colspan="5">
-
             </td>
         </tr>
     </table>
@@ -399,92 +370,72 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
-        <div class="icon" data-type="damage chargedamage" data-game="hol" data-mode="add add" data-value="4 4"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'众志成城');"><img
+        <div class="icon" data-game="hol" data-mode="add add" data-type="damage chargedamage" data-value="4 4"><a
+                onmousemove="showPic(event,'众志成城');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/众志成城.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="damage chargedamage" data-game="hol" data-mode="add add" data-value="2 2"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'兰开斯特伯克郡');"><img
+        <div class="icon" data-game="hol" data-mode="add add" data-type="damage chargedamage" data-value="2 2"><a
+                onmousemove="showPic(event,'兰开斯特伯克郡');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伯克郡宫殿.png" width="30px"></a>
         </div>
-
-
-        <div class="icon" data-type="hp" data-game="hol" data-mode="diffMul" data-value="1.2136"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'兰开斯特领主的鼓舞');"><img
+        <div class="icon" data-game="hol" data-mode="diffMul" data-type="hp" data-value="1.2136"><a
+                onmousemove="showPic(event,'兰开斯特领主的鼓舞');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特领主的鼓舞.png" width="30px"></a>
         </div>
-
-
-        <div class="icon" data-type="hp damage chargedamage armorm armorr" data-mode="add add add add add"
+        <div class="icon" data-mode="add add add add add" data-type="hp damage chargedamage armorm armorr"
             data-value="20 1 2 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/属性升级3.png" width="30px">
         </div>
-        <div class="icon" data-type="hp damage chargedamage armorm armorr" data-mode="add add add add add"
+        <div class="icon" data-mode="add add add add add" data-type="hp damage chargedamage armorm armorr"
             data-value="40 5 7 2 2"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/属性升级4.png" width="30px">
         </div>
-
-
-
-        <div class="icon" data-type="bonusdamage" data-game="hol" data-mode="diffMul" data-value="1.2"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'军事战术训练');">
+        <div class="icon" data-game="hol" data-mode="diffMul" data-type="bonusdamage" data-value="1.2"><a
+                onmousemove="showPic(event,'军事战术训练');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事战术训练.png" width="30px"></a></div>
-
-        <div class="icon" data-type="bonusdamage1" data-game="hol" data-mode="add" data-value="5"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'埃索斯的项圈');">
+        <div class="icon" data-game="hol" data-mode="add" data-type="bonusdamage1" data-value="5"><a
+                onmousemove="showPic(event,'埃索斯的项圈');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃索斯的项圈.png" width="30px"></a></div>
-
-
-        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
-            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'熟铁块吹炼法');"><img
+        <div class="icon" data-mode="add add" data-over="jpn sen mac" data-type="damage chargedamage" data-value="1 1">
+            <a onmousemove="showPic(event,'熟铁块吹炼法');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
-            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'脱碳');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png"
+        <div class="icon" data-mode="add add" data-over="jpn sen mac" data-type="damage chargedamage" data-value="1 1">
+            <a onmousemove="showPic(event,'脱碳');" onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png"
                     width="30px"></a>
         </div>
-        <div class="icon" data-type="damage chargedamage" data-over="jpn sen mac" data-mode="add add" data-value="1 1">
-            <a onmouseout="hiddenPic();" onmousemove="showPic(event,'大马士革钢');"><img
+        <div class="icon" data-mode="add add" data-over="jpn sen mac" data-type="damage chargedamage" data-value="1 1">
+            <a onmousemove="showPic(event,'大马士革钢');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="30px"></a>
         </div>
-
-
-        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'合身皮具');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
+        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
+                onmousemove="showPic(event,'合身皮具');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'绝缘头盔');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
+        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
+                onmousemove="showPic(event,'绝缘头盔');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="armorm" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'铁匠大师');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
+        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
+                onmousemove="showPic(event,'铁匠大师');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
         </div>
-
-        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'铁制底网');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
+        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
+                onmousemove="showPic(event,'铁制底网');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'楔形铆钉');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
+        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
+                onmousemove="showPic(event,'楔形铆钉');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
         </div>
-        <div class="icon" data-type="armorr" data-over="mac" data-mode="add" data-value="1"><a onmouseout="hiddenPic();"
-                onmousemove="showPic(event,'斜面');"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
+        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
+                onmousemove="showPic(event,'斜面');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
         </div>
-
-
-        <div class="icon" data-type="hp" data-over="fre jda mac" data-mode="sameMul" data-value="0.25"><a
-                onmouseout="hiddenPic();" onmousemove="showPic(event,'生物学');"><img
+        <div class="icon" data-mode="sameMul" data-over="fre jda mac" data-type="hp" data-value="0.25"><a
+                onmousemove="showPic(event,'生物学');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px"></a>
         </div>
-
-
     </div>
-</div>
-
-
-
-
-
-
-
-
-
+</div
                         </div>
                     </div>
                 </div>
@@ -497,14 +448,13 @@
 <a href="#change">更新日志</a><br>
 <a href="#relk">历史</a><br>
 <a href="#oth">杂项</a><br>
-<a href="#oth9370">模拟加成</a><br>
-
+<a href="#oth9370">模拟加成</a><br
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
+<a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou2"><b>回到首页</b></a
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>

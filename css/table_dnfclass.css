@@ -118,3 +118,7 @@ th {
     transition: opacity 0.2s;
     cursor: pointer;
 }
+
+.civ-selector img {
+    cursor: pointer;
+}
