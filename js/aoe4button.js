@@ -1,53 +1,3 @@
-//
-// aoe4button.js (已修复)
-//
-
-/**
- * 通用函数：隐藏所有文明的提示文本并将所有按钮变暗，然后高亮显示指定的文本和按钮。
- * @param {string} prefix - 文明的前缀 (e.g., 'rus', 'chi').
- * @param {string|number} num - 按钮和文本的数字后缀.
- */
-function tipsg(prefix, num) {
-    // 修复 #2: 隐藏所有文明的 text，并把所有文明的 button 透明度设为 0.3
-    // 通过匹配 ID 格式 (例如 xxxButton0, yyyText1) 来识别所有相关元素
-    document.querySelectorAll('[id]').forEach(el => {
-        if (/^[a-z]{3}Text\d+$/.test(el.id)) {
-            el.style.display = "none";
-        }
-        if (/^[a-z]{3}Button\d+$/.test(el.id)) {
-            el.style.opacity = 0.3;
-        }
-    });
-
-    // 显示目标 text 和高亮目标按钮
-    const textEl = document.getElementById(`${prefix}Text${num}`);
-    const btnEl = document.getElementById(`${prefix}Button${num}`);
-
-    if (textEl) textEl.style.display = "block";
-    if (btnEl) btnEl.style.opacity = 1;
-
-    // 黑头链接修改
-    const civ = prefix.substring(0, 3);
-    const blacktou1 = document.querySelector("#blacktou1");
-    const blacktou2 = document.querySelector("#blacktou2");
-    if (blacktou1) blacktou1.href = `https://seicing.com/html/aoe2/index-aoe4units.html?civ=${civ}`;
-    if (blacktou2) blacktou2.href = `https://seicing.com/html/aoe2/index-aoe4units.html?civ=${civ}`;
-
-    // 修复 #1: 正确地更新 URL 中的 'civ' 参数，不破坏文件名或其他参数
-    try {
-        let currentUrl = new URL(window.location.href);
-        currentUrl.searchParams.set('civ', civ);
-        history.replaceState(null, '', currentUrl.toString());
-    } catch (e) {
-        console.error("更新URL失败: ", e);
-    }
-
-    // 触发过滤函数 (如果存在)
-    if (typeof triggerFilterFromURL === 'function') {
-        triggerFilterFromURL();
-    }
-}
-
 /**
  * 从 URL 查询字符串中获取指定变量的值.
  * @param {string} variable - 要获取的参数名.
@@ -59,34 +9,72 @@ function getQueryVariable(variable) {
 }
 
 /**
- * 页面加载完成后执行的函数.
- * 根据 URL 中的 'civ' 和 'num' 参数自动点击对应的按钮.
+ * 根据文明前缀，显示该文明的所有内容，并隐藏其他所有文明的内容。
+ * @param {string} prefix - 要显示的文明的前缀 (例如 'chi', 'rus').
+ */
+function showCiv(prefix) {
+    // 遍历页面上所有带有ID的元素
+    document.querySelectorAll('[id]').forEach(el => {
+        // 使用正则表达式匹配我们关心的元素ID格式 (例如 chiButton0, rusText1)
+        const match = el.id.match(/^([a-z]{3})(Button|Text)\d+$/);
+
+        if (match) {
+            const currentCiv = match[1];   // 提取当前元素的文明前缀 (chi)
+            const elementType = match[2]; // 提取元素类型 (Button 或 Text)
+
+            // 检查当前元素的文明是否是我们要显示的文明
+            if (currentCiv === prefix) {
+                // 是目标文明 -> 显示它
+                if (elementType === 'Text') {
+                    el.style.display = 'block'; // 显示文本
+                } else { // 'Button'
+                    el.style.opacity = 1;       // 按钮完全不透明
+                }
+            } else {
+                // 不是目标文明 -> 隐藏它
+                if (elementType === 'Text') {
+                    el.style.display = 'none';  // 隐藏文本
+                } else { // 'Button'
+                    el.style.opacity = 0.3;     // 按钮变暗
+                }
+            }
+        }
+    });
+
+    // --- 更新附属信息 ---
+
+    // 1. 更新黑头链接
+    const blacktou1 = document.querySelector("#blacktou1");
+    const blacktou2 = document.querySelector("#blacktou2");
+    if (blacktou1) blacktou1.href = `https://seicing.com/html/aoe2/index-aoe4units.html?civ=${prefix}`;
+    if (blacktou2) blacktou2.href = `https://seicing.com/html/aoe2/index-aoe4units.html?civ=${prefix}`;
+
+    // 2. 更新 URL 中的 'civ' 参数
+    try {
+        let currentUrl = new URL(window.location.href);
+        currentUrl.searchParams.set('civ', prefix);
+        history.replaceState(null, '', currentUrl.toString());
+    } catch (e) {
+        console.error("更新URL时出错: ", e);
+    }
+}
+
+
+/**
+ * 页面加载完成后执行: 根据 URL 中的 'civ' 参数，自动点击对应的 Button0。
  */
 window.onload = function () {
     const civ = getQueryVariable("civ");
-    if (!civ) return; // 如果 URL 中没有 'civ' 参数，则不执行任何操作
 
-    const numParam = getQueryVariable("num");
-    let nums = [];
+    // 如果URL中存在civ参数 (例如 ?civ=chi)
+    if (civ) {
+        const initialButton = document.getElementById(`${civ}Button0`);
 
-    if (numParam) {
-        // 支持逗号分隔的多个数字
-        nums = numParam.split(',').map(n => n.trim()).filter(n => n !== '');
-    }
-
-    // 修复 #3: 根据 'num' 参数是否存在来决定点击哪个按钮
-    if (nums.length > 0) {
-        // 如果 URL 中有 'num' 参数, 则点击所有指定的按钮
-        nums.forEach(n => {
-            const btn = document.getElementById(`${civ}Button${n}`);
-            if (btn) btn.click();
-        });
-    } else {
-        // 如果 URL 中没有 'num' 参数, 则自动点击该 civ 的 Button0 作为默认项
-        const defaultButton = document.getElementById(`${civ}Button0`);
-        if (defaultButton) {
-            defaultButton.click();
+        // 确认这个按钮真的存在
+        if (initialButton) {
+            initialButton.click(); // 模拟点击
+        } else {
+            console.warn(`页面加载警告：未能在页面上找到ID为 "${civ}Button0" 的按钮。`);
         }
     }
 };
-
