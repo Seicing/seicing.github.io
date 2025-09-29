@@ -53,28 +53,40 @@ function showCiv(prefix) {
     try {
         let currentUrl = new URL(window.location.href);
         currentUrl.searchParams.set('civ', prefix);
-        history.replaceState(null, '', currentUrl.toString());
+        // 使用 pushState 而非 replaceState，让浏览器历史记录变化，方便用户回退
+        history.pushState(null, '', currentUrl.toString());
     } catch (e) {
         console.error("更新URL时出错: ", e);
+    }
+
+    // --- 【重要修复】调用页面通用函数来更新“模拟加成”等依赖URL的部分 ---
+    if (typeof triggerFilterFromURL === 'function') {
+        triggerFilterFromURL();
+    } else {
+        console.warn("警告：函数 triggerFilterFromURL() 未定义，模拟加成部分可能不会更新。");
     }
 }
 
 
 /**
- * 页面加载完成后执行: 根据 URL 中的 'civ' 参数，自动点击对应的 Button0。
+ * 使用 addEventListener 来确保脚本不会被其他脚本覆盖。
+ * 'DOMContentLoaded' 事件在 HTML 文档加载和解析完成后就会触发。
  */
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     const civ = getQueryVariable("civ");
 
-    // 如果URL中存在civ参数 (例如 ?civ=chi)
+    // 如果URL中存在civ参数 (例如 ?civ=mon)
     if (civ) {
         const initialButton = document.getElementById(`${civ}Button0`);
 
         // 确认这个按钮真的存在
         if (initialButton) {
-            initialButton.click(); // 模拟点击
+            // 使用一个极小的延迟来确保页面所有元素都渲染完毕
+            setTimeout(function () {
+                initialButton.click();
+            }, 10);
         } else {
             console.warn(`页面加载警告：未能在页面上找到ID为 "${civ}Button0" 的按钮。`);
         }
     }
-};
+});
