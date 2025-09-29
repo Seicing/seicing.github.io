@@ -3,7 +3,7 @@ function tipsg(prefix, num) {
     document.querySelectorAll(`[id^="${prefix}Text"]`).forEach(el => el.style.display = "none");
     document.querySelectorAll(`[id^="${prefix}Button"]`).forEach(el => el.style.opacity = 0.3);
 
-    // 显示目标
+    // 显示目标 text 和按钮
     const textEl = document.getElementById(`${prefix}Text${num}`);
     const btnEl = document.getElementById(`${prefix}Button${num}`);
 
@@ -21,7 +21,6 @@ function tipsg(prefix, num) {
 
     triggerFilterFromURL();
 }
-
 
 function getQueryVariable(variable) {
     const params = new URLSearchParams(window.location.search);
@@ -49,4 +48,15 @@ window.onload = function () {
         const btn = document.getElementById(`${civ}Button${n}`);
         if (btn) btn.click();
     });
+
+    // 更新 URL 中的 civ 参数，不改变其它部分
+    let newUrl = new URL(window.location.href);  // 创建一个新的 URL 对象
+    newUrl.searchParams.set('civ', civ);  // 设置新的 civ 参数值
+    history.replaceState("stateObj", "title", newUrl.toString());  // 更新 URL
+
+    // 自动点击 Button0（如果有的话）
+    const civButton0 = document.getElementById(`${civ}Button0`);
+    if (civButton0) {
+        civButton0.click(); // 自动触发 Button0 点击
+    }
 };
