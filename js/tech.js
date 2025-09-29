@@ -925,7 +925,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+function tipsp() {
+    var tipsp1 = getQueryVariable("civ")
+    var tipsp2 = tipsp1 + "Button0";
+    document.getElementById(tipsp2).click();
+};
 
 
 
