@@ -177,7 +177,7 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="zxlButton0" href="javascript:void(0);" onclick="showCiv('zxl')" style="opacity:0.3">
+    <a id="zxlButton0" onclick="showCiv('zxl')" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png" width="25px"></a>
     <div id="zxlText0" style="text-align:left;display:none">
         <span class="朱子遗训元朝效果"></span><br>
@@ -361,18 +361,15 @@
             <td colspan="5">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/钢铁之躯.png" width="20px">钢铁之躯：15秒间所受的远程伤害-50%，90秒冷却时间<br>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苦行恢复.png" width="20px">苦行恢复：脱离战斗后少林僧侣会持续恢复生命值<br>
-
                 <span id="Extra2" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png"
                         width="20px">不动如山：激活后，单位在脱离战斗时每秒恢复 2 生命值<br></span>
             </td>
         </tr>
     </table>
-    <div class="toggle-activate" style="color: blue;display: inline">满科技加成/取消满科技加成</div>
+    <div class="toggle-activate" style="color:blue;display:inline;cursor:pointer;">满科技加成/取消满科技加成</div>
     <div style="display: inline-block;width: 20px;"> </div>
-    <div onclick="resetFilters()" style="color: blue;display: inline">不进行文明筛选</div><br><br>
-
+    <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
-
         <div class="icon" data-group="zxldynasty" data-type="cost" data-game="zxl" data-mode="diffMul"
             data-value="0.85"><a onmouseout="hiddenPic();" onmousemove="showPic(event,'朱子遗训元朝效果');"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/元朝.png" width="30px"></a></div>
