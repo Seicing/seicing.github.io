@@ -217,9 +217,9 @@
                     href="#top">[回到顶部]</a></b></span>
     </H1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;" />
-    <a id="byzButton0" href="javascript:void(0);" onclick="tipsg('byzText0','byzButton0','0')" style="opacity:1">
+    <a id="byzButton0" href="javascript:void(0);" onclick="tipsg('byz', 0)" style="opacity:1">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png" width="25px"></a>
-    <a id="macButton0" href="javascript:void(0);" onclick="tipsg('macText0','macButton0','0')" style="opacity:0.3">
+    <a id="macButton0" href="javascript:void(0);" onclick="tipsg('mac', 0)" style="opacity:0.3">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png" width="25px"></a>
 
 
@@ -721,55 +721,9 @@
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/tech.js"></script>
+<script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
 <script>
     window.onload = aoetechPoeRush()
-</script>
-<script>
-    var listText = ['byzText', 'macText',]
-    var listButton = ['byzButton', 'macButton',]
-
-    function tipsg(a, b, c) {
-        cleargasek(c);
-        document.getElementById(a).style.display = "block";
-        document.getElementById(b).style.opacity = 1;
-        var aaposbo1 = document.querySelector("#blacktou1");
-        var aaposbo2 = document.querySelector("#blacktou2");
-        var aaposbo3 = a.substring(0, 3);
-        aaposbo1.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + aaposbo3;
-        aaposbo2.href = 'https://seicing.com/html/aoe2/index-aoe4units.html?civ=' + aaposbo3;
-        var aaposbo4 = window.location.href;
-        aaposbo4 = aaposbo4.slice(0, -3) + aaposbo3;
-        history.replaceState("stateObj", "title", aaposbo4);
-        triggerFilterFromURL();
-    }
-
-    function cleargasek(a) {
-        for (var i = 0; i < listText.length; i++) {
-            document.getElementById(listText[i] + a).style.display = "none";
-        }
-        for (var g = 0; g < listButton.length; g++) {
-            document.getElementById(listButton[g] + a).style.opacity = 0.3;
-        }
-    }
-
-    function getQueryVariable(variable) {
-        var query = window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split("=");
-            if (pair[0] == variable) { return pair[1]; }
-        }
-        return (false);
-    }
-
-    window.onload = tipsp()
-
-    function tipsp() {
-        var tipsp1 = getQueryVariable("civ")
-        var tipsp2 = tipsp1 + "Button0";
-        document.getElementById(tipsp2).click();
-
-    }
 </script>
 
 </html>
