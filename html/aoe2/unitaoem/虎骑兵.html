@@ -219,10 +219,14 @@
 
 
     <div id="atlText3" style="text-align: left;display:block ">
-        <a id="eykButton1" href="javascript:void(0);" onclick="showCiv('eyk')" style="color:#0010ff">点击这里查看下马虎骑兵的属性</a>
+        <a id="eykButton1" href="javascript:void(0);"
+            onclick="showCiv('eyk');document.getElementById('atlButton1').style.opacity='1'"
+            style="color:#0010ff">点击这里查看下马虎骑兵的属性</a>
     </div>
     <div id="eykText3" style="text-align: left;display:none ">
-        <a id="atlButton1" href="javascript:void(0);" onclick="showCiv('atl')" style="color:#0010ff">点击这里恢复为骑马虎骑兵的属性</a>
+        <a id="atlButton1" href="javascript:void(0);"
+            onclick="showCiv('atl');document.getElementById('eykButton1').style.opacity='1'"
+            style="color:#0010ff">点击这里恢复为骑马虎骑兵的属性</a>
     </div>
 </div>
 
@@ -502,12 +506,18 @@
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a id="eykButton0" href="javascript:void(0);" onclick="showCiv('eyk')" style="opacity:0.3"></a>
-<a id="atlButton0" href="javascript:void(0);" onclick="showCiv('atl')" style="opacity:0.3"></a>
-<a id="eykButton2" href="javascript:void(0);" onclick="showCiv('eyk')" style="opacity:0.3"></a>
-<a id="atlButton2" href="javascript:void(0);" onclick="showCiv('atl')" style="opacity:0.3"></a>
-<a id="eykButton3" href="javascript:void(0);" onclick="showCiv('eyk')" style="opacity:0.3"></a>
-<a id="atlButton3" href="javascript:void(0);" onclick="showCiv('atl')" style="opacity:0.3"></a>
+<a id="eykButton0" href="javascript:void(0);"
+    onclick="showCiv('eyk');document.getElementById('atlButton1').style.opacity='1'" style="opacity:0.3"></a>
+<a id="atlButton0" href="javascript:void(0);"
+    onclick="showCiv('atl');document.getElementById('eykButton1').style.opacity='1'" style="opacity:0.3"></a>
+<a id="eykButton2" href="javascript:void(0);"
+    onclick="showCiv('eyk');document.getElementById('atlButton1').style.opacity='1'" style="opacity:0.3"></a>
+<a id="atlButton2" href="javascript:void(0);"
+    onclick="showCiv('atl');document.getElementById('eykButton1').style.opacity='1'" style="opacity:0.3"></a>
+<a id="eykButton3" href="javascript:void(0);"
+    onclick="showCiv('eyk');document.getElementById('atlButton1').style.opacity='1'" style="opacity:0.3"></a>
+<a id="atlButton3" href="javascript:void(0);"
+    onclick="showCiv('atl');document.getElementById('eykButton1').style.opacity='1'" style="opacity:0.3"></a>
 <a href="https://seicing.com/html/aoe2/index-aoemunits.html?civ=chi" id="blacktou2"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
