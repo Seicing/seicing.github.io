@@ -511,7 +511,7 @@ let ayanami = {
     "拜占庭回血": /*html*/`地下水宫 - 朝圣者之瓶<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朝圣者之瓶.png' width='20px'>地下水宫 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒`,
     "拜占庭边防部队防御": /*html*/`边防部队防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/边防部队防御.png' width='20px'>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成(+3/+4/+5/+6对大象额外伤害)`,
     "拜占庭改良火炬": /*html*/`纵火者<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/纵火者.png' width='20px'>纵火者：研发纵火者科技后，侦察兵附近的部队火炬伤害+25%`,
-    "拜占庭海军部署": /*html*/`海军部署<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png' width='20px'>海军部署：军事单位从运输船卸载后移动速度提高`,
+    "拜占庭海军部署": /*html*/`海军部署<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png' width='20px'>海军部署：军事单位从运输船卸载后移动速度提高50%，持续12秒`,
     "拜占庭凯旋": /*html*/`帝国竞技场 - 凯旋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/凯旋.png' width='20px'>帝国竞技场 - 凯旋：激活后使骑兵伤害+4，移动速度+10%，每秒恢复2生命值`,
     "拜占庭商队橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：商队生产20%贸易量的橄榄油`,
     "拜占庭水池征兵": /*html*/`水池 - 征兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/征兵.png' width='20px'>水池 - 征兵：根据水位，水池影响力范围内增加20%/40%/60%/80%/100%军事单位生产率`,
