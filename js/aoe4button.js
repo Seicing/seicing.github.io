@@ -46,8 +46,17 @@ function showCiv(prefix) {
     // 1. 更新黑头链接
     const blacktou1 = document.querySelector("#blacktou1");
     const blacktou2 = document.querySelector("#blacktou2");
-    if (blacktou1) blacktou1.href = `https://seicing.com/html/aoe2/index-aoe4units.html?civ=${prefix}`;
-    if (blacktou2) blacktou2.href = `https://seicing.com/html/aoe2/index-aoe4units.html?civ=${prefix}`;
+
+    if (blacktou1) {
+        let url = new URL(blacktou1.href, location.origin);
+        url.searchParams.set("civ", prefix);
+        blacktou1.href = url.toString();
+    }
+    if (blacktou2) {
+        let url = new URL(blacktou2.href, location.origin);
+        url.searchParams.set("civ", prefix);
+        blacktou2.href = url.toString();
+    }
 
     // 2. 更新 URL 中的 'civ' 参数
     try {
