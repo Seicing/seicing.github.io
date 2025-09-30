@@ -810,7 +810,7 @@
         </table>
     </div>
     <div id="macText0" style="text-align:left;display:none">
-        <span class="拜占庭海军部署2"></span><br>
+        <span class="拜占庭海军部署"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -1034,6 +1034,8 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra118" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png"
+                        width="20px">海军部署：军事单位从运输船卸载后移动速度提高<br></span>
                 <span id="Extra2" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png"
                         width="20px" />不动如山：激活后，单位在脱离战斗时每秒恢复 2 生命值<br></span>
                 <span id="Extra15" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/卡斯蒂利亚王国.png"
@@ -1057,6 +1059,9 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="byz mac" data-text="Extra118"><a onmousemove="showPic(event,'拜占庭海军部署');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png" width="30px"></a>
+        </div>
         <div class="icon" data-game="chi" data-group="chidynasty" data-mode="diffMul" data-type="hp" data-value="1.15">
             <a onmousemove="showPic(event,'明朝效果');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/明朝.png" width="30px" /></a>
@@ -1273,17 +1278,6 @@
 <script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
 <script>
     window.onload = aoetechPoeRush()
-</script>
-<script>'ottText', 'malText', 'jpnText', 'byzText', 'jdaText', 'zxlText', 'otdText', 'ayyText', 'kcrText', 'holText', 'senText', 'macText', 'tugText',]
-
-
-
-
-
-
-
-
-
 </script>
 
 </html>

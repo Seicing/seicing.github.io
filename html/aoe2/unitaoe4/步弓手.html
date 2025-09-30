@@ -1671,6 +1671,8 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra118" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png"
+                        width="20px">海军部署：军事单位从运输船卸载后移动速度提高<br></span>
                 <span id="Extra1" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png"
                         width="20px">攻城工程学：可以建造冲车和攻城塔<br></span>
                 <span id="Extra3" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png"
@@ -1730,6 +1732,9 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="byz mac" data-text="Extra118"><a onmousemove="showPic(event,'拜占庭海军部署');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png" width="30px"></a>
+        </div>
         <div class="icon" data-game="mon" data-mode="diffMul diffMul diffMul diffMul" data-text="Extra79"
             data-type="damage chargedamage firedamage bonusdamage" data-value="1.2 1.2 1.2 1.2"><a
                 onmousemove="showPic(event,'忽里勒台光环');" onmouseout="hiddenPic();"><img
@@ -2067,16 +2072,6 @@
 <script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
 <script>
     window.onload = aoetechPoeRush()
-</script>
-<script>
-
-    function tipsp() {
-        var tipsp1 = getQueryVariable("civ")
-        var tipsp2 = tipsp1 + "Button0";
-        var tipsp3 = tipsp1 + "Button1";
-        document.getElementById(tipsp2).click();
-        document.getElementById(tipsp3).click();
-    }
 </script>
 
 </html>
