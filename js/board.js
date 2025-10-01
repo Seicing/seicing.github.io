@@ -32,7 +32,6 @@ function setStatus(message) {
     if (statusDiv) statusDiv.innerHTML = message;
 }
 
-// 初始化留言板
 function initBoard() {
     if (hasBoardInitialized) return;
     hasBoardInitialized = true;
@@ -74,7 +73,6 @@ function initBoard() {
     });
 }
 
-// 加载指定的页面
 function loadPage(page) {
     // 记录当前的滚动位置
     var currentScroll = window.scrollY;
@@ -90,15 +88,19 @@ function loadPage(page) {
     query.find().then(function (results) {
         renderComments(results, floor);
 
-        // 渲染完成后，恢复滚动位置并聚焦到底部
-        window.scrollTo(0, document.body.scrollHeight);  // 自动滚动到页面底部
+        // 渲染完成后，滚动到 comments 元素
+        var commentsElement = document.getElementById('comments');
+        if (commentsElement) {
+            commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            window.scrollTo(0, document.body.scrollHeight);  // 如果没有找到 comments 元素，滚动到页面底部
+        }
     }, function (error) {
         console.error('加载页面时出错:', error);
         setStatus('加载留言失败，请检查网络连接并刷新页面重试。');
     });
 }
 
-// 渲染分页
 function renderPagination(currentPage) {
     var group = document.getElementById('comment_pages');
     if (!group) return;
