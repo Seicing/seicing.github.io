@@ -1,11 +1,10 @@
-// --- START OF FINAL board.js ---
-
-var APP_ID = 'RqwWmVs4oKjmOTPAhYwMX2hy-gzGzoHsz';
-var APP_KEY = 'UxXJUj4aTuecwlTdmn4u3AGV';
+var APP_ID = 'RqwWmVs4oKjmOTPAhYwMX2hy-gzGzoHsz';  // 请使用你自己的 APP_ID
+var APP_KEY = 'UxXJUj4aTuecwlTdmn4u3AGV';  // 请使用你自己的 APP_KEY
 var PAGE_COUNT = 10;
 var hasBoardInitialized = false;
 var pageMax = 1;
 
+// 在页面加载时启动 LeanCloud 初始化
 function startApp() {
     var tryCount = 0, maxTries = 100;
     var intervalId = setInterval(function () {
@@ -16,7 +15,7 @@ function startApp() {
                 appKey: APP_KEY,
                 serverURL: "https://rqwwmvs4.lc-cn-n1-shared.com"
             });
-            initBoard();
+            initBoard(); // 确保初始化完成后再调用初始化留言板的函数
         } else {
             tryCount++;
             if (tryCount > maxTries) {
@@ -27,11 +26,13 @@ function startApp() {
     }, 100);
 }
 
+// 设置状态消息
 function setStatus(message) {
     var statusDiv = document.getElementById('comment-status');
     if (statusDiv) statusDiv.innerHTML = message;
 }
 
+// 初始化留言板
 function initBoard() {
     if (hasBoardInitialized) return;
     hasBoardInitialized = true;
@@ -73,6 +74,7 @@ function initBoard() {
     });
 }
 
+// 加载指定的页面
 function loadPage(page) {
     // 记录当前的滚动位置
     var currentScroll = window.scrollY;
@@ -96,6 +98,7 @@ function loadPage(page) {
     });
 }
 
+// 渲染分页
 function renderPagination(currentPage) {
     var group = document.getElementById('comment_pages');
     if (!group) return;
@@ -113,56 +116,10 @@ function renderPagination(currentPage) {
     }
 }
 
-// 强制加载最后一页并聚焦到最下方
+// 页面加载时启动 LeanCloud 初始化
 window.onload = function () {
-    if (window.location.search) {
-        // 如果 URL 中包含 `?page=xxx`，页面加载时强制自动重试并滚动到底部
-        if (!hasBoardInitialized) {
-            initBoard();
-        }
-        window.scrollTo(0, document.body.scrollHeight); // 保证刷新后滚动到页面底部
-    }
+    startApp(); // 启动 LeanCloud 初始化
 };
-
-function loadPage(page) {
-    // 记录当前的滚动位置
-    var currentScroll = window.scrollY;
-
-    setStatus('正在加载第 ' + page + ' 页...');
-    history.pushState({ page: page }, '', '?page=' + page);
-    renderPagination(page);
-
-    var query = new AV.Query('TestObject');
-    var floor = (page - 1) * PAGE_COUNT;
-    query.limit(PAGE_COUNT);
-    query.skip(floor);
-    query.find().then(function (results) {
-        renderComments(results, floor);
-
-        // 渲染完成后，恢复滚动位置
-        window.scrollTo(0, currentScroll);  // 保持原来的滚动位置
-    }, function (error) {
-        console.error('加载页面时出错:', error);
-        setStatus('加载留言失败，请检查网络连接并刷新页面重试。');
-    });
-}
-
-function renderPagination(currentPage) {
-    var group = document.getElementById('comment_pages');
-    if (!group) return;
-    group.innerHTML = '';
-    for (var i = pageMax; i >= 1; i--) {
-        var link = document.createElement('a');
-        link.href = '?page=' + i;
-        link.setAttribute('data-page', i);
-        link.textContent = '[' + i + ']' + '  ';
-        if (i === currentPage) {
-            link.style.fontWeight = 'bold';
-            link.style.textDecoration = 'none';
-        }
-        group.appendChild(link);
-    }
-}
 
 
 function renderComments(results, floor) {
