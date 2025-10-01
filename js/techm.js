@@ -710,7 +710,7 @@ let ayanami = {
     "樱花园": /*html*/`樱花园<br>Sakura Gardens<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>神社光环范围内会生成最多10棵樱花树`,
 
 
-    "御神木": /*html*/`御神木<br>Goshinboku<br>生成一颗御神木，会自动复活玩家已经阵亡的神话单位`,
+    "御神木": /*html*/`御神木<br>Goshinboku<br>生成一颗御神木，会自动复活玩家已经阵亡的神话单位，御神木复活序列有数量上限，满序列时死亡的神话单位不会添加到复活序列中`,
     "风镰": /*html*/`风镰<br>Wind Sickles<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>镰鼬升级为裂风镰鼬，攻击力+40%`,
     "御币杖": /*html*/`御币杖<br>Gohei Wands<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>巫女在神社生成眷顾值的效率+10%，+2神社光环范围和视野`,
     "气质": /*html*/`气质<br>Katagi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>步兵生命值+10%，被击杀时生成75武士道经验值`,
