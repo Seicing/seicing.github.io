@@ -1,32 +1,21 @@
-// --- START OF FILE board.js (Final Correct Code) ---
+// --- START OF FINAL board.js ---
 
-// ========================================================================
-// 配置
-// ========================================================================
 var APP_ID = 'RqwWmVs4oKjmOTPAhYwMX2hy-gzGzoHsz';
 var APP_KEY = 'UxXJUj4aTuecwlTdmn4u3AGV';
 var PAGE_COUNT = 10;
 var hasBoardInitialized = false;
 var pageMax = 1;
 
-// ========================================================================
-// 核心启动函数
-// ========================================================================
 function startApp() {
-    var tryCount = 0;
-    var maxTries = 100;
-
+    var tryCount = 0, maxTries = 100;
     var intervalId = setInterval(function () {
         if (typeof AV !== 'undefined') {
             clearInterval(intervalId);
-
-            // --- 确认这一部分是正确的 ---
             AV.init({
                 appId: APP_ID,
                 appKey: APP_KEY,
                 serverURL: "https://rqwwmvs4.lc-cn-n1-shared.com"
             });
-
             initBoard();
         } else {
             tryCount++;
@@ -37,10 +26,6 @@ function startApp() {
         }
     }, 100);
 }
-
-// ========================================================================
-// UI 和业务逻辑 (后面所有代码都无需改动)
-// ========================================================================
 
 function setStatus(message) {
     var statusDiv = document.getElementById('comment-status');
@@ -69,19 +54,16 @@ function initBoard() {
         loadPage(initialPage);
     }, function (error) {
         console.error('获取总数时出错:', error);
-        setStatus('获取留言总数失败，请刷新页面重试。 (错误详情见控制台)');
+        setStatus('获取留言总数失败，请刷新页面重试。');
         hasBoardInitialized = false;
     });
 }
 
 function loadPage(page) {
     setStatus('正在加载第 ' + page + ' 页...');
-    var url = new URL(window.location);
-    url.searchParams.set('page', page);
-    history.pushState({ page: page }, '', url);
+    history.pushState({ page: page }, '', '?page=' + page);
     renderPagination(page);
     var query = new AV.Query('TestObject');
-    query.exists('text');
     var floor = (page - 1) * PAGE_COUNT;
     query.limit(PAGE_COUNT);
     query.skip(floor);
@@ -133,17 +115,12 @@ function renderComments(results, floor) {
 }
 
 function sendMsg() {
-    var textEl = document.getElementById('comment_text');
-    var authorEl = document.getElementById('comment_author');
+    var textEl = document.getElementById('comment_text'), authorEl = document.getElementById('comment_author');
     if (!textEl || !authorEl) return;
-    var text = textEl.value;
-    var author = authorEl.value;
+    var text = textEl.value, author = authorEl.value;
     if (text.trim() === "") return alert('请输入内容。');
     if (text.length > 200) return alert('内容不可超过200字节。');
-    new AV.Object('TestObject').save({
-        text: text,
-        author: author
-    }).then(function () {
+    new AV.Object('TestObject').save({ text: text, author: author }).then(function () {
         alert('提交成功！');
         loadPage(pageMax);
     }, function (error) {
@@ -154,4 +131,4 @@ function sendMsg() {
 
 startApp();
 
-// --- END OF FILE board.js (Final Correct Code) ---
+// --- END OF FINAL board.js ---
