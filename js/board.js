@@ -1,156 +1,195 @@
-// --- START OF FILE board.js (Final Recommended Version) ---
+// --- START OF FILE board.js (Final Version with AJAX Pagination) ---
 
-var {
-    Query,
-    User
-} = AV;
-
+// ========================================================================
+// 配置
+// ========================================================================
 var APP_ID = 'RqwWmVs4oKjmOTPAhYwMX2hy-gzGzoHsz';
 var APP_KEY = 'UxXJUj4aTuecwlTdmn4u3AGV';
 var PAGE_COUNT = 10;
-
-// --- 新增：哨兵变量，防止重复初始化 ---
 var hasBoardInitialized = false;
+var pageMax = 1; // 全局存储最大页数
 
-AV.init({
-    appId: APP_ID,
-    appKey: APP_KEY
-});
+// ========================================================================
+// 核心启动函数：等待 LeanCloud SDK 就绪
+// ========================================================================
+function startApp() {
+    var tryCount = 0;
+    var maxTries = 100; // 等待10秒
 
-var TestObject = AV.Object.extend('TestObject');
-
-function newComment(text, author, time, floor) {
-    author = author === '' ? '佚名' : author;
-    var group = document.getElementById('comments');
-
-    if (!group) {
-        console.error("Fatal Error: Element with id 'comments' not found in the DOM.");
-        return;
-    }
-
-    // ... (函数其余部分不变) ...
-    var layer = document.createElement('div');
-    layer.style.width = '650px';
-    group.appendChild(layer);
-
-    var lines = text.split('\n');
-    for (var i in lines) {
-        var content = document.createElement('div');
-        content.textContent = lines[i];
-        layer.appendChild(content);
-    }
-
-    layer.appendChild(document.createElement('br'));
-
-    var msg = document.createElement('div');
-    if (author == 'python script -D') {
-        msg.innerHTML = (floor + 1) + '楼  Posted by: ' + '   ' + ' <img src="https://seicing.com/res/seicingsign.png"><font color="red">精锐战猫</font> ' + ' | ' + time;
-    } else {
-        msg.textContent = (floor + 1) + '楼  Posted by: ' + author + ' | ' + time;
-    }
-    msg.align = 'right';
-    layer.appendChild(msg);
-
-    var img = document.createElement('img');
-    img.src = 'https://seicing.com/res/131414.png';
-    img.draggable = false;
-    layer.appendChild(img);
-
-    layer.appendChild(document.createElement('br'));
+    var intervalId = setInterval(function () {
+        if (typeof AV !== 'undefined') {
+            clearInterval(intervalId);
+            AV.init({ appId: APP_ID, appKey: APP_KEY });
+            initBoard(); // 改为调用初始化函数
+        } else {
+            tryCount++;
+            if (tryCount > maxTries) {
+                clearInterval(intervalId);
+                setStatus('留言服务加载失败，请检查网络并刷新。');
+            }
+        }
+    }, 100);
 }
 
-function newPage(page) {
-    var group = document.getElementById('comment_pages');
-    if (!group) {
-        console.error("Fatal Error: Element with id 'comment_pages' not found in the DOM.");
-        return;
-    }
-    var link = document.createElement('a');
-    link.href = '?page=' + page;
-    link.textContent = '[' + page + ']' + '  ';
-    group.appendChild(link);
+// ========================================================================
+// UI 和业务逻辑函数
+// ========================================================================
+
+function setStatus(message) {
+    var statusDiv = document.getElementById('comment-status');
+    if (statusDiv) statusDiv.innerHTML = message;
 }
 
-function initMsg() {
-    // --- 新增：检查哨兵变量 ---
-    if (hasBoardInitialized) {
-        return; // 如果已经初始化过了，就直接退出，不再执行
-    }
-    hasBoardInitialized = true; // 标记为已初始化
+// 初始设置 (只执行一次)
+function initBoard() {
+    if (hasBoardInitialized) return;
+    hasBoardInitialized = true;
 
-    var query = new AV.Query(TestObject);
-
+    setStatus('正在初始化留言板...');
+    var query = new AV.Query('TestObject');
     query.exists('text');
+
+    // 1. 先获取总数，计算出最大页码
     query.count().then(function (count) {
-        var pageMax = Math.ceil(count / PAGE_COUNT);
-        var category = window.location.search;
-        var page = category.substring(category.lastIndexOf('=') + 1, category.length);
-        page = (page === '' || isNaN(parseInt(page))) ? pageMax : parseInt(page);
+        pageMax = Math.ceil(count / PAGE_COUNT) || 1;
 
-        var pagesGroup = document.getElementById('comment_pages');
-        if (pagesGroup) pagesGroup.innerHTML = '';
-
-        for (var i = pageMax; i >= 1; i--) {
-            newPage(i);
+        // 2. 设置翻页链接的点击事件监听 (使用事件委托)
+        var pagesContainer = document.getElementById('comment_pages');
+        if (pagesContainer) {
+            pagesContainer.addEventListener('click', function (event) {
+                // 检查点击的是否是页码链接
+                if (event.target.matches('a[data-page]')) {
+                    event.preventDefault(); // 阻止页面跳转
+                    var page = parseInt(event.target.getAttribute('data-page'));
+                    loadPage(page);
+                }
+            });
         }
 
-        var floor = (page - 1) * PAGE_COUNT;
+        // 3. 确定初始要加载的页码
+        var initialPage = new URLSearchParams(window.location.search).get('page');
+        initialPage = (initialPage === null || isNaN(parseInt(initialPage))) ? pageMax : parseInt(initialPage);
 
-        query.limit(PAGE_COUNT);
-        query.skip(floor);
-        query.find().then(function (results) {
-            recvMsg(results, floor);
-        }, function (error) {
-            console.error('Error while fetching comments:', error);
-            hasBoardInitialized = false; // 出错了，允许重试
-        });
+        // 4. 加载初始页面
+        loadPage(initialPage);
+
     }, function (error) {
-        console.error('Error while counting comments:', error);
-        hasBoardInitialized = false; // 出错了，允许重试
+        console.error('Error counting comments:', error);
+        setStatus('获取留言总数失败，请刷新页面重试。');
+        hasBoardInitialized = false;
     });
 }
 
-function recvMsg(results, floor) {
+// 加载指定页码内容的函数
+function loadPage(page) {
+    setStatus('正在加载第 ' + page + ' 页...');
+
+    // 更新浏览器地址栏，但不刷新页面
+    var url = new URL(window.location);
+    url.searchParams.set('page', page);
+    history.pushState({ page: page }, '', url);
+
+    // 重新渲染页码链接，并高亮当前页
+    renderPagination(page);
+
+    var query = new AV.Query('TestObject');
+    query.exists('text');
+    var floor = (page - 1) * PAGE_COUNT;
+    query.limit(PAGE_COUNT);
+    query.skip(floor);
+
+    query.find().then(function (results) {
+        renderComments(results, floor);
+    }, function (error) {
+        console.error('Error fetching comments:', error);
+        setStatus('加载留言失败，请检查网络连接并刷新页面重试。');
+    });
+}
+
+// 渲染页码链接的函数
+function renderPagination(currentPage) {
+    var group = document.getElementById('comment_pages');
+    if (!group) return;
+    group.innerHTML = ''; // 清空旧的页码
+
+    for (var i = pageMax; i >= 1; i--) {
+        var link = document.createElement('a');
+        link.href = '?page=' + i;
+        link.setAttribute('data-page', i); // 使用 data-* 属性存储页码
+        link.textContent = '[' + i + ']' + '  ';
+        if (i === currentPage) {
+            link.style.fontWeight = 'bold'; // 高亮当前页
+            link.style.textDecoration = 'none';
+        }
+        group.appendChild(link);
+    }
+}
+
+// 渲染留言列表的函数
+function renderComments(results, floor) {
     var commentsGroup = document.getElementById('comments');
-    if (commentsGroup) commentsGroup.innerHTML = '';
+    if (!commentsGroup) return;
+    commentsGroup.innerHTML = ''; // 清空旧的留言
+
+    setStatus(''); // 清空状态消息
+    if (results.length === 0) {
+        setStatus('这里还没有留言哦。');
+        return;
+    }
 
     for (var i = results.length - 1; i >= 0; i--) {
         var r = results[i];
         var createdAtDate = new Date(r.createdAt);
         var formattedTime = createdAtDate.getFullYear() + '-' + (createdAtDate.getMonth() + 1) + '-' + createdAtDate.getDate() + ' ' + ('0' + createdAtDate.getHours()).slice(-2) + ':' + ('0' + createdAtDate.getMinutes()).slice(-2);
-        newComment(r.attributes.text, r.attributes.author, formattedTime, floor + i);
+
+        var author = r.attributes.author || '佚名';
+        var text = r.attributes.text || '';
+
+        // --- 调用 newComment 渲染单条留言 ---
+        var commentHTML = `
+            <div style="width: 100%; max-width: 650px;">
+                <div>${text.replace(/\n/g, '<br>')}</div>
+                <br>
+                <div style="text-align: right;">
+                    ${(floor + i + 1)}楼  Posted by: 
+                    ${author === 'python script -D' ? '<img src="https://seicing.com/res/seicingsign.png"><font color="red">精锐战猫</font>' : author} 
+                    | ${formattedTime}
+                </div>
+                <img src="https://seicing.com/res/131414.png" draggable="false">
+                <br>
+            </div>
+        `;
+        commentsGroup.innerHTML += commentHTML;
     }
 }
 
 function sendMsg() {
-    // ... sendMsg 函数不变 ...
-    var text = document.getElementById('comment_text').value;
-    var author = document.getElementById('comment_author').value;
+    var textEl = document.getElementById('comment_text');
+    var authorEl = document.getElementById('comment_author');
+    if (!textEl || !authorEl) return;
 
-    if (text.trim() === "") {
-        alert('请输入内容。');
-        return;
-    } else if (text.length > 200) {
-        alert('内容不可超过200字节。');
-        return;
-    }
+    var text = textEl.value;
+    var author = authorEl.value;
 
-    var testObject = new TestObject();
-    testObject.save({
+    if (text.trim() === "") return alert('请输入内容。');
+    if (text.length > 200) return alert('内容不可超过200字节。');
+
+    new AV.Object('TestObject').save({
         text: text,
         author: author
-    }).then(function (object) {
+    }).then(function () {
         alert('提交成功！');
-        location.reload();
+        // 跳转到第一页查看最新留言
+        loadPage(pageMax);
     }, function (error) {
-        console.error('Error while sending comment:', error);
+        console.error('Error sending comment:', error);
         alert('提交失败，可能是网络问题，请稍后重试。');
     });
 }
 
+// ========================================================================
+// 脚本入口
+// ========================================================================
+startApp();
 
-window.onload = function () {
-    initMsg();
-};
-
-// --- END OF FILE board.js (Final Recommended Version) ---
+// --- END OF FILE board.js (Final Version with AJAX Pagination) ---
