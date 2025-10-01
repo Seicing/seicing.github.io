@@ -1,15 +1,79 @@
+// 从 'vue' 导入所需的函数
+const { createApp, ref, onMounted } = Vue;
 
+const app = createApp({
+    // setup 函数是组合式 API 的入口点
+    setup() {
+        // 使用 ref 创建一个响应式变量来存储数据
+        const aasb = ref([]);
+        let characterid = ''; // 将 characterid 声明在 setup 作用域内
+
+        // onMounted 对应于 Vue 2.0 的 mounted 生命周期钩子
+        onMounted(() => {
+            // 获取 characterid
+            characterid = document.getElementById("overdrive").innerHTML;
+
+            // 使用 fetch 获取 JSON 数据
+            fetch('https://seicing.com/js/dia/dialog.json')
+                .then(response => response.json())
+                .then(json => {
+                    // 遍历并处理数据
+                    const processedData = json.map(item => {
+                        const faceid = item['name'].slice(5);
+                        return {
+                            ...item, // 复制原始 item 的所有属性
+                            faceid: faceid,
+                            faceid937: "no_" + faceid,
+                            attach5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/attach.png`,
+                            special5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/special.png`,
+                            sweat5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/sweat.png`,
+                            redface5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/red_face.png`,
+                            brow5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['brow']}.png`,
+                            eyeclose5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['eye3']}.png`,
+                            eye5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['eye']}.png`,
+                            mouth5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['mouth']}.png`,
+                            base5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base.png`,
+                            base6: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base2.png`
+                        };
+                    });
+                    // 更新响应式变量的值
+                    aasb.value = processedData;
+                })
+                .catch(error => console.error('Error fetching dialog.json:', error));
+
+            // 替代 Vue 2.0 中的 starter 方法
+            setTimeout(() => {
+                const reskiElement = document.getElementById("reski");
+                if (reskiElement) {
+                    const aposr = reskiElement.offsetHeight;
+                    $("#reske").height(aposr);
+                }
+            }, 1000);
+        });
+
+        // 从 setup 函数返回模板中需要使用的数据和方法
+        return {
+            aasb
+        };
+    }
+});
+
+// 将 Vue 应用挂载到指定的 DOM 元素上
+app.mount('#app');
+
+
+// 外部的 jQuery 和原生 JavaScript 函数保持不变
 $(window).resize(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    aposr = document.getElementById("reski").offsetHeight;
+    var aposr = document.getElementById("reski").offsetHeight;
     $("#reske").height(aposr);
 });
 
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    characterid = document.getElementById("overdrive").innerHTML;
+    // characterid 会在 Vue 的 onMounted 钩子中被获取和使用
 });
 
 function ALswitch() {
@@ -24,7 +88,7 @@ function ALswitch() {
     document.getElementById("ALswitch").style.display = "none";
     document.getElementById("ALswitch2").style.display = "block";
 }
-
+// ... 其他的 switch 函数保持不变 ...
 function ALswitch2() {
     var divs = document.getElementsByClassName("base4");
     for (var i = 0; i < divs.length; i++) {
@@ -129,64 +193,3 @@ function CEswitch2() {
     document.getElementById("CEswitch2").style.display = "none";
     document.getElementById("CEswitch").style.display = "block";
 }
-
-
-
-import { createApp, ref, onMounted } from 'vue';
-// const imgAll = []; // This was in the original code, retained if needed elsewhere.
-createApp({
-    setup() {
-        const aasb = ref([]);
-        const overdrive = ref(null); // 1. Create a ref to hold the DOM element.
-
-        onMounted(() => {
-            // 2. Access the element's content after the component is mounted.
-            const characterid = overdrive.value.innerHTML;
-            fetchData(characterid);
-            starter();
-        });
-
-        const fetchData = (characterid) => {
-            fetch('https://seicing.com/js/dia/dialog.json')
-                .then(response => response.json())
-                .then(json => {
-                    aasb.value = json.map(item => {
-                        const faceid = item.name.slice(5);
-                        return {
-                            ...item,
-                            faceid: faceid,
-                            faceid937: "no_" + faceid,
-                            attach5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/attach.png`,
-                            special5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/special.png`,
-                            sweat5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/sweat.png`,
-                            redface5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/red_face.png`,
-                            brow5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.brow}.png`,
-                            eyeclose5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.eye3}.png`,
-                            eye5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.eye}.png`,
-                            mouth5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.mouth}.png`,
-                            base5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base.png`,
-                            base6: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base2.png`
-                        };
-                    });
-                });
-        };
-
-        const starter = () => {
-            setTimeout(() => {
-                // Using querySelector as an example if 'reski' and 'reske' are also in the template.
-                // Using refs for these is also the preferred method.
-                const reskiElement = document.getElementById("reski");
-                const reskeElement = document.getElementById("reske");
-                if (reskiElement && reskeElement) {
-                    const aposr = reskiElement.offsetHeight;
-                    reskeElement.style.height = `${aposr}px`;
-                }
-            }, 1000);
-        };
-
-        return {
-            aasb,
-            overdrive // 3. Expose the ref to the template.
-        };
-    }
-}).mount('#app');
