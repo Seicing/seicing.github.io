@@ -1,4 +1,4 @@
-// --- START OF FILE board.js (Final Version with Correct serverURL) ---
+// --- START OF FILE board.js (Final Correct Code) ---
 
 // ========================================================================
 // 配置
@@ -20,7 +20,7 @@ function startApp() {
         if (typeof AV !== 'undefined') {
             clearInterval(intervalId);
 
-            // --- 最终修复：使用您提供的专属服务器地址 ---
+            // --- 确认这一部分是正确的 ---
             AV.init({
                 appId: APP_ID,
                 appKey: APP_KEY,
@@ -39,7 +39,7 @@ function startApp() {
 }
 
 // ========================================================================
-// UI 和业务逻辑
+// UI 和业务逻辑 (后面所有代码都无需改动)
 // ========================================================================
 
 function setStatus(message) {
@@ -154,4 +154,4 @@ function sendMsg() {
 
 startApp();
 
-// --- END OF FILE board.js (Final Version with Correct serverURL) ---
+// --- END OF FILE board.js (Final Correct Code) ---
