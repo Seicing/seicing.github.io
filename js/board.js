@@ -15,7 +15,9 @@ function startApp() {
                 appKey: APP_KEY,
                 serverURL: "https://rqwwmvs4.lc-cn-n1-shared.com"
             });
-            initBoard(); // 确保初始化完成后再调用初始化留言板的函数
+            // 在这里添加调用
+            setupPaginationListener(); // 激活分页点击监听
+            initBoard();
         } else {
             tryCount++;
             if (tryCount > maxTries) {
@@ -42,41 +44,30 @@ function initBoard() {
     query.count().then(function (count) {
         pageMax = Math.ceil(count / PAGE_COUNT) || 1;
 
-        // 检查 URL 中是否有 page 参数
         var pageParam = new URLSearchParams(window.location.search).get('page');
 
-        // 如果 URL 中有 page 参数，则加载指定页面并滚动
-        if (pageParam) {
-            var page = parseInt(pageParam) || pageMax;  // 如果 URL 参数无效，加载最后一页
-            loadPage(page, true);  // 第二个参数为 true，表示需要滚动
-        } else {
-            // 默认加载最后一页，且不滚动
-            loadPage(pageMax, false); // 第二个参数为 false，表示不需要滚动
-        }
+        // 无论是通过 URL 参数加载还是默认加载最后一页，都禁止滚动
+        var pageToLoad = pageParam ? (parseInt(pageParam) || pageMax) : pageMax;
+        loadPage(pageToLoad, false); // 第二个参数 false = 不要滚动
 
     }).catch(function (error) {
         console.error('获取总数时出错:', error);
 
-        // 根据错误类型显示不同提示
         if (error.message.includes('CORS')) {
             setStatus('跨域请求错误，请检查服务器设置。');
         } else {
             setStatus('留言板尝试加载中……');
         }
 
-        // 自动调用重试
         setTimeout(function () {
-            initBoard(); // 强制重试
-        }, 1000);  // 延时1秒后执行重试
+            initBoard();
+        }, 1000);
 
         hasBoardInitialized = false;
     });
 }
 
-function loadPage(page) {
-    // 记录当前的滚动位置 (这行其实不再需要，但保留也无妨)
-    var currentScroll = window.scrollY;
-
+function loadPage(page, shouldScroll) {
     setStatus('正在加载第 ' + page + ' 页...');
     history.pushState({ page: page }, '', '?page=' + page);
     renderPagination(page);
@@ -88,16 +79,13 @@ function loadPage(page) {
     query.find().then(function (results) {
         renderComments(results, floor);
 
-        // -- 已删除滚动相关的代码 --
-        // 以下代码块已被完全移除，以防止任何自动滚动行为
-        /*
-        var commentsElement = document.getElementById('liuyanban');
-        if (commentsElement) {
-            commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-            window.scrollTo(0, document.body.scrollHeight);
+        // 仅在 shouldScroll 为 true 时执行滚动
+        if (shouldScroll) {
+            var commentsElement = document.getElementById('liuyanban'); // 您的锚点ID
+            if (commentsElement) {
+                commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
-        */
     }, function (error) {
         console.error('尝试中:', error);
         setStatus('留言板加载中……');
@@ -157,10 +145,31 @@ function sendMsg() {
     if (text.length > 200) return alert('内容不可超过200字节。');
     new AV.Object('TestObject').save({ text: text, author: author }).then(function () {
         alert('提交成功！');
-        loadPage(pageMax);
+        // 加载最后一页，并且不滚动
+        loadPage(pageMax, false);
     }, function (error) {
         console.error('提交留言时出错:', error);
         alert('提交失败，可能是网络问题，请稍后重试。');
+    });
+}
+
+// 设置分页链接的点击监听器
+function setupPaginationListener() {
+    var group = document.getElementById('comment_pages');
+    if (!group) return;
+
+    group.addEventListener('click', function (event) {
+        // 检查点击的是否是带有 data-page 属性的 <a> 标签
+        var target = event.target;
+        if (target.tagName === 'A' && target.dataset.page) {
+            // 阻止链接的默认跳转行为
+            event.preventDefault();
+
+            var page = parseInt(target.dataset.page, 10);
+
+            // 调用 loadPage，并明确指示需要滚动
+            loadPage(page, true);
+        }
     });
 }
 
