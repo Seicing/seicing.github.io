@@ -38,23 +38,28 @@ function initBoard() {
     setStatus('正在初始化留言板...');
     var query = new AV.Query('TestObject');
     query.exists('text');
+
+    // 增加错误提示和重试按钮
     query.count().then(function (count) {
         pageMax = Math.ceil(count / PAGE_COUNT) || 1;
-        var pagesContainer = document.getElementById('comment_pages');
-        if (pagesContainer) {
-            pagesContainer.addEventListener('click', function (event) {
-                if (event.target.matches('a[data-page]')) {
-                    event.preventDefault();
-                    var page = parseInt(event.target.getAttribute('data-page'));
-                    if (page) loadPage(page);
-                }
-            });
-        }
-        var initialPage = parseInt(new URLSearchParams(window.location.search).get('page')) || pageMax;
-        loadPage(initialPage);
-    }, function (error) {
+        loadPage(1);  // 默认加载第一页
+    }).catch(function (error) {
         console.error('获取总数时出错:', error);
-        setStatus('获取留言总数失败，请刷新页面重试。');
+
+        // 根据错误类型显示不同提示
+        if (error.message.includes('CORS')) {
+            setStatus('跨域请求错误，请检查服务器设置。');
+        } else {
+            setStatus('获取留言总数失败，请检查网络或刷新页面重试。');
+        }
+
+        // 添加重试按钮
+        let retryButton = document.createElement('button');
+        retryButton.textContent = '重试';
+        retryButton.onclick = function () {
+            initBoard();
+        };
+        document.getElementById('comment-status').appendChild(retryButton);
         hasBoardInitialized = false;
     });
 }
