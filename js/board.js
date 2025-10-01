@@ -39,10 +39,11 @@ function initBoard() {
     var query = new AV.Query('TestObject');
     query.exists('text');
 
-    // 增加错误提示和重试按钮
     query.count().then(function (count) {
         pageMax = Math.ceil(count / PAGE_COUNT) || 1;
-        loadPage(1);  // 默认加载第一页
+        // 如果是重试，加载最后一页
+        var lastPage = parseInt(new URLSearchParams(window.location.search).get('page')) || pageMax;
+        loadPage(lastPage);  // 默认加载最后一页
     }).catch(function (error) {
         console.error('获取总数时出错:', error);
 
@@ -64,16 +65,24 @@ function initBoard() {
     });
 }
 
+
 function loadPage(page) {
+    // 记录当前的滚动位置
+    var currentScroll = window.scrollY;
+
     setStatus('正在加载第 ' + page + ' 页...');
     history.pushState({ page: page }, '', '?page=' + page);
     renderPagination(page);
+
     var query = new AV.Query('TestObject');
     var floor = (page - 1) * PAGE_COUNT;
     query.limit(PAGE_COUNT);
     query.skip(floor);
     query.find().then(function (results) {
         renderComments(results, floor);
+
+        // 渲染完成后，恢复滚动位置
+        window.scrollTo(0, currentScroll);  // 保持原来的滚动位置
     }, function (error) {
         console.error('加载页面时出错:', error);
         setStatus('加载留言失败，请检查网络连接并刷新页面重试。');
@@ -96,6 +105,7 @@ function renderPagination(currentPage) {
         group.appendChild(link);
     }
 }
+
 
 function renderComments(results, floor) {
     var commentsGroup = document.getElementById('comments');
