@@ -64,13 +64,11 @@ function initBoard() {
             setStatus('获取留言总数失败，请检查网络或刷新页面重试。');
         }
 
-        // 添加重试按钮
-        let retryButton = document.createElement('button');
-        retryButton.textContent = '重试';
-        retryButton.onclick = function () {
-            initBoard();
-        };
-        document.getElementById('comment-status').appendChild(retryButton);
+        // 自动调用重试
+        setTimeout(function () {
+            initBoard(); // 强制重试
+        }, 1000);  // 延时1秒后执行重试
+
         hasBoardInitialized = false;
     });
 }
@@ -98,7 +96,6 @@ function loadPage(page) {
     });
 }
 
-
 function renderPagination(currentPage) {
     var group = document.getElementById('comment_pages');
     if (!group) return;
@@ -116,6 +113,16 @@ function renderPagination(currentPage) {
     }
 }
 
+// 强制加载最后一页并聚焦到最下方
+window.onload = function () {
+    if (window.location.search) {
+        // 如果 URL 中包含 `?page=xxx`，页面加载时强制自动重试并滚动到底部
+        if (!hasBoardInitialized) {
+            initBoard();
+        }
+        window.scrollTo(0, document.body.scrollHeight); // 保证刷新后滚动到页面底部
+    }
+};
 
 function loadPage(page) {
     // 记录当前的滚动位置
