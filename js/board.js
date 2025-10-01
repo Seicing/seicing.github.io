@@ -61,7 +61,7 @@ function initBoard() {
         if (error.message.includes('CORS')) {
             setStatus('跨域请求错误，请检查服务器设置。');
         } else {
-            setStatus('获取留言总数失败，请检查网络或刷新页面重试。');
+            setStatus('留言板尝试加载中……');
         }
 
         // 自动调用重试
@@ -73,8 +73,8 @@ function initBoard() {
     });
 }
 
-function loadPage(page, shouldScroll) {
-    // 记录当前的滚动位置
+function loadPage(page) {
+    // 记录当前的滚动位置 (这行其实不再需要，但保留也无妨)
     var currentScroll = window.scrollY;
 
     setStatus('正在加载第 ' + page + ' 页...');
@@ -88,16 +88,16 @@ function loadPage(page, shouldScroll) {
     query.find().then(function (results) {
         renderComments(results, floor);
 
-        // 仅在 shouldScroll 为 true 时执行滚动
-        if (shouldScroll) {
-            // 渲染完成后，滚动到 comments 元素
-            var commentsElement = document.getElementById('liuyanban');
-            if (commentsElement) {
-                commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-                window.scrollTo(0, document.body.scrollHeight);  // 如果没有找到 comments 元素，滚动到页面底部
-            }
+        // -- 已删除滚动相关的代码 --
+        // 以下代码块已被完全移除，以防止任何自动滚动行为
+        /*
+        var commentsElement = document.getElementById('liuyanban');
+        if (commentsElement) {
+            commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            window.scrollTo(0, document.body.scrollHeight);
         }
+        */
     }, function (error) {
         console.error('尝试中:', error);
         setStatus('留言板加载中……');
