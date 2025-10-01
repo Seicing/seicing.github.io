@@ -41,9 +41,19 @@ function initBoard() {
 
     query.count().then(function (count) {
         pageMax = Math.ceil(count / PAGE_COUNT) || 1;
-        // 如果是重试，加载最后一页
-        var lastPage = parseInt(new URLSearchParams(window.location.search).get('page')) || pageMax;
-        loadPage(lastPage);  // 默认加载最后一页
+
+        // 检查 URL 中是否有 page 参数
+        var pageParam = new URLSearchParams(window.location.search).get('page');
+
+        // 如果 URL 中有 page 参数，则执行重试，自动加载对应的页面
+        if (pageParam) {
+            var page = parseInt(pageParam) || pageMax;  // 如果 URL 参数无效，加载最后一页
+            loadPage(page);  // 加载指定页面
+        } else {
+            // 默认加载最后一页
+            loadPage(pageMax);
+        }
+
     }).catch(function (error) {
         console.error('获取总数时出错:', error);
 
@@ -63,6 +73,47 @@ function initBoard() {
         document.getElementById('comment-status').appendChild(retryButton);
         hasBoardInitialized = false;
     });
+}
+
+function loadPage(page) {
+    // 记录当前的滚动位置
+    var currentScroll = window.scrollY;
+
+    setStatus('正在加载第 ' + page + ' 页...');
+    history.pushState({ page: page }, '', '?page=' + page);
+    renderPagination(page);
+
+    var query = new AV.Query('TestObject');
+    var floor = (page - 1) * PAGE_COUNT;
+    query.limit(PAGE_COUNT);
+    query.skip(floor);
+    query.find().then(function (results) {
+        renderComments(results, floor);
+
+        // 渲染完成后，恢复滚动位置并聚焦到底部
+        window.scrollTo(0, document.body.scrollHeight);  // 自动滚动到页面底部
+    }, function (error) {
+        console.error('加载页面时出错:', error);
+        setStatus('加载留言失败，请检查网络连接并刷新页面重试。');
+    });
+}
+
+
+function renderPagination(currentPage) {
+    var group = document.getElementById('comment_pages');
+    if (!group) return;
+    group.innerHTML = '';
+    for (var i = pageMax; i >= 1; i--) {
+        var link = document.createElement('a');
+        link.href = '?page=' + i;
+        link.setAttribute('data-page', i);
+        link.textContent = '[' + i + ']' + '  ';
+        if (i === currentPage) {
+            link.style.fontWeight = 'bold';
+            link.style.textDecoration = 'none';
+        }
+        group.appendChild(link);
+    }
 }
 
 
