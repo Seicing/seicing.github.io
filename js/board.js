@@ -1,4 +1,4 @@
-// --- START OF FILE board.js (Fixed Version 2) ---
+// --- START OF FILE board.js (Final Recommended Version) ---
 
 var {
     Query,
@@ -8,6 +8,9 @@ var {
 var APP_ID = 'RqwWmVs4oKjmOTPAhYwMX2hy-gzGzoHsz';
 var APP_KEY = 'UxXJUj4aTuecwlTdmn4u3AGV';
 var PAGE_COUNT = 10;
+
+// --- 新增：哨兵变量，防止重复初始化 ---
+var hasBoardInitialized = false;
 
 AV.init({
     appId: APP_ID,
@@ -25,6 +28,7 @@ function newComment(text, author, time, floor) {
         return;
     }
 
+    // ... (函数其余部分不变) ...
     var layer = document.createElement('div');
     layer.style.width = '650px';
     group.appendChild(layer);
@@ -68,6 +72,12 @@ function newPage(page) {
 }
 
 function initMsg() {
+    // --- 新增：检查哨兵变量 ---
+    if (hasBoardInitialized) {
+        return; // 如果已经初始化过了，就直接退出，不再执行
+    }
+    hasBoardInitialized = true; // 标记为已初始化
+
     var query = new AV.Query(TestObject);
 
     query.exists('text');
@@ -77,7 +87,6 @@ function initMsg() {
         var page = category.substring(category.lastIndexOf('=') + 1, category.length);
         page = (page === '' || isNaN(parseInt(page))) ? pageMax : parseInt(page);
 
-        // 清空旧页码
         var pagesGroup = document.getElementById('comment_pages');
         if (pagesGroup) pagesGroup.innerHTML = '';
 
@@ -89,23 +98,22 @@ function initMsg() {
 
         query.limit(PAGE_COUNT);
         query.skip(floor);
-        // 使用默认排序(createdAt 从旧到新)
         query.find().then(function (results) {
             recvMsg(results, floor);
         }, function (error) {
             console.error('Error while fetching comments:', error);
-            alert('加载留言失败，可能是网络问题，请稍后刷新重试。');
+            hasBoardInitialized = false; // 出错了，允许重试
         });
     }, function (error) {
         console.error('Error while counting comments:', error);
-        alert('获取留言总数失败，请刷新页面重试。');
+        hasBoardInitialized = false; // 出错了，允许重试
     });
 }
 
 function recvMsg(results, floor) {
-    // --- 主要修复 2: 恢复倒序循环 ---
-    // 这个循环从数组的末尾（最新的留言）开始，并将其添加到页面的顶部。
-    // 这样就实现了最新的留言显示在最上方的效果。
+    var commentsGroup = document.getElementById('comments');
+    if (commentsGroup) commentsGroup.innerHTML = '';
+
     for (var i = results.length - 1; i >= 0; i--) {
         var r = results[i];
         var createdAtDate = new Date(r.createdAt);
@@ -115,6 +123,7 @@ function recvMsg(results, floor) {
 }
 
 function sendMsg() {
+    // ... sendMsg 函数不变 ...
     var text = document.getElementById('comment_text').value;
     var author = document.getElementById('comment_author').value;
 
@@ -139,11 +148,9 @@ function sendMsg() {
     });
 }
 
-// --- 主要修复 1: 使用 window.onload ---
-// 这将确保在页面的所有资源 (包括脚本、图片等) 都加载完毕后，才执行 initMsg 函数。
-// 这是解决 net::ERR_CONNECTION_CLOSED 问题的更可靠方法。
+
 window.onload = function () {
     initMsg();
 };
 
-// --- END OF FILE board.js (Fixed Version 2) ---
+// --- END OF FILE board.js (Final Recommended Version) ---
