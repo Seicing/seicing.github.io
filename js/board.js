@@ -45,13 +45,13 @@ function initBoard() {
         // 检查 URL 中是否有 page 参数
         var pageParam = new URLSearchParams(window.location.search).get('page');
 
-        // 如果 URL 中有 page 参数，则执行重试，自动加载对应的页面
+        // 如果 URL 中有 page 参数，则加载指定页面并滚动
         if (pageParam) {
             var page = parseInt(pageParam) || pageMax;  // 如果 URL 参数无效，加载最后一页
-            loadPage(page);  // 加载指定页面
+            loadPage(page, true);  // 第二个参数为 true，表示需要滚动
         } else {
-            // 默认加载最后一页
-            loadPage(pageMax);
+            // 默认加载最后一页，且不滚动
+            loadPage(pageMax, false); // 第二个参数为 false，表示不需要滚动
         }
 
     }).catch(function (error) {
@@ -73,7 +73,7 @@ function initBoard() {
     });
 }
 
-function loadPage(page) {
+function loadPage(page, shouldScroll) {
     // 记录当前的滚动位置
     var currentScroll = window.scrollY;
 
@@ -88,16 +88,19 @@ function loadPage(page) {
     query.find().then(function (results) {
         renderComments(results, floor);
 
-        // 渲染完成后，滚动到 comments 元素
-        var commentsElement = document.getElementById('comments');
-        if (commentsElement) {
-            commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-            window.scrollTo(0, document.body.scrollHeight);  // 如果没有找到 comments 元素，滚动到页面底部
+        // 仅在 shouldScroll 为 true 时执行滚动
+        if (shouldScroll) {
+            // 渲染完成后，滚动到 comments 元素
+            var commentsElement = document.getElementById('liuyanban');
+            if (commentsElement) {
+                commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                window.scrollTo(0, document.body.scrollHeight);  // 如果没有找到 comments 元素，滚动到页面底部
+            }
         }
     }, function (error) {
-        console.error('加载页面时出错:', error);
-        setStatus('加载留言失败，请检查网络连接并刷新页面重试。');
+        console.error('尝试中:', error);
+        setStatus('留言板加载中……');
     });
 }
 
