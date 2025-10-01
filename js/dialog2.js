@@ -130,46 +130,63 @@ function CEswitch2() {
     document.getElementById("CEswitch").style.display = "block";
 }
 
-var imgAll = [];
-const vm = new Vue({
-    el: '#app',
-    data: {
-        aasb: [],
-    },
-    created() {
-        fetch('https://seicing.com/js/dia/dialog.json')
-            .then(response => response.json())
-            .then(json => {
-                this.aasb = json
-                for (var i = 0; i < json.length; i++) {
 
-                    json[i].faceid = json[i]['name'].slice(5)
-                    json[i].faceid937 = "no_" + json[i]['faceid']
-                    json[i].attach5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "attach.png"
-                    json[i].special5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "special.png"
-                    json[i].sweat5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "sweat.png"
-                    json[i].redface5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "red_face.png"
-                    json[i].brow5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['brow'] + ".png"
-                    json[i].eyeclose5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye3'] + ".png"
-                    json[i].eye5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['eye'] + ".png"
-                    json[i].mouth5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + json[i]['mouth'] + ".png"
-                    json[i].base5 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base.png"
-                    json[i].base6 = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + characterid + "/" + "base2.png"
-                }
-            })
-    },
 
-    mounted() {
-        this.starter();
-    },
+import { createApp, ref, onMounted } from 'vue';
+// const imgAll = []; // This was in the original code, retained if needed elsewhere.
+createApp({
+    setup() {
+        const aasb = ref([]);
+        const overdrive = ref(null); // 1. Create a ref to hold the DOM element.
 
-    methods: {
-        starter() {
+        onMounted(() => {
+            // 2. Access the element's content after the component is mounted.
+            const characterid = overdrive.value.innerHTML;
+            fetchData(characterid);
+            starter();
+        });
+
+        const fetchData = (characterid) => {
+            fetch('https://seicing.com/js/dia/dialog.json')
+                .then(response => response.json())
+                .then(json => {
+                    aasb.value = json.map(item => {
+                        const faceid = item.name.slice(5);
+                        return {
+                            ...item,
+                            faceid: faceid,
+                            faceid937: "no_" + faceid,
+                            attach5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/attach.png`,
+                            special5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/special.png`,
+                            sweat5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/sweat.png`,
+                            redface5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/red_face.png`,
+                            brow5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.brow}.png`,
+                            eyeclose5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.eye3}.png`,
+                            eye5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.eye}.png`,
+                            mouth5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item.mouth}.png`,
+                            base5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base.png`,
+                            base6: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base2.png`
+                        };
+                    });
+                });
+        };
+
+        const starter = () => {
             setTimeout(() => {
-                aposr = document.getElementById("reski").offsetHeight;
-                $("#reske").height(aposr);
+                // Using querySelector as an example if 'reski' and 'reske' are also in the template.
+                // Using refs for these is also the preferred method.
+                const reskiElement = document.getElementById("reski");
+                const reskeElement = document.getElementById("reske");
+                if (reskiElement && reskeElement) {
+                    const aposr = reskiElement.offsetHeight;
+                    reskeElement.style.height = `${aposr}px`;
+                }
             }, 1000);
-        },
-    },
-})
+        };
 
+        return {
+            aasb,
+            overdrive // 3. Expose the ref to the template.
+        };
+    }
+}).mount('#app');
