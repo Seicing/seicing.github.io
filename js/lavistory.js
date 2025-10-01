@@ -1,180 +1,129 @@
-var imgAll = [];
-const vm = new Vue({
-    el: '#app',
-    data: {
-        aasb: [],
-    },
-    created() {
-        characterid = document.getElementById("overdrive").innerHTML;
-        characterid2 = "https://seicing.com/js/dia/" + characterid + ".json";
-        fetch(characterid2)
-            .then(response => response.json())
-            .then(json => {
-                this.aasb = json
-                for (var i = 0; i < json.length; i++) {
-                    facer = eval('face_' + json[i]['face'])
+const { createApp, ref, onMounted } = Vue;
 
-                    json[i].charname = json[i]['name']
-                    json[i].texter = json[i]['string']
+createApp({
+    setup() {
+        const aasb = ref([]);
 
-                    if (json[i].con.includes("RF")) {
-                        json[i].red_face = 'red_face';
-                    } else {
-                        json[i].red_face = 'red_face1';
-                    }
-                    if (json[i].con.includes("SW")) {
-                        json[i].sweat = 'sweat';
-                    } else {
-                        json[i].sweat = 'sweat1';
-                    }
-                    if (json[i].con.includes("AT")) {
-                        json[i].attach = 'attach';
-                    } else {
-                        json[i].attach = 'attach1';
-                    }
-                    if (json[i].con.includes("SP")) {
-                        json[i].special = 'special';
-                    } else {
-                        json[i].special = 'special1';
-                    }
+        onMounted(() => {
+            let characterid = document.getElementById("overdrive").innerHTML;
+            let characterid2 = "https://seicing.com/js/dia/" + characterid + ".json";
 
-                    if (json[i].con.includes("CE")) {
-                        json[i].eye = facer[2];
-                    } else {
-                        json[i].eye = facer[0];
-                    }
+            fetch(characterid2)
+                .then(response => response.json())
+                .then(json => {
+                    const processedData = json.map(item => {
+                        const facer = eval('face_' + item.face);
 
-                    if (json[i].con.includes("AL")) {
-                        json[i].baseys = 'base2';
-                    } else {
-                        json[i].baseys = 'base';
-                    }
+                        let red_face = item.con.includes("RF") ? 'red_face' : 'red_face1';
+                        let sweat = item.con.includes("SW") ? 'sweat' : 'sweat1';
+                        let attach = item.con.includes("AT") ? 'attach' : 'attach1';
+                        let special = item.con.includes("SP") ? 'special' : 'special1';
+                        let eye = item.con.includes("CE") ? facer[2] : facer[0];
+                        let baseys = item.con.includes("AL") ? 'base2' : 'base';
+                        let bclass = item.branch !== "" ? item.branch : 'master';
+                        let brow = facer[3];
+                        let mouth = facer[4];
 
-                    if (json[i].branch != "") {
-                        json[i].bclass = json[i].branch;
-                    } else {
-                        json[i].bclass = 'master';
-                    }
+                        let bstyle = "";
+                        let tablelavivanar = "";
+                        let tr1 = "";
+                        let tr2 = "";
+                        let astyle = "";
 
-                    json[i].brow = facer[3]
-                    json[i].mouth = facer[4]
+                        const commonAstyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
+                            `background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${attach}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${special}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${sweat}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${red_face}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${brow}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${eye}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${mouth}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${baseys}.png);` +
+                            "background-repeat: no-repeat;background-size: 40%;";
 
-                    if (json[i].dic == 4) {
-
-                        if (json[i].branch != "") {
-                            if (json[i].branch.includes("1")) {
-                                json[i].bstyle = "float:left;";
+                        if (item.dic === 4) {
+                            if (item.branch !== "") {
+                                bstyle = item.branch.includes("1") ? "float:left;" : "float:left;display:none;";
                             } else {
-                                json[i].bstyle = "float:left;display:none;";
+                                bstyle = "float:left;";
                             }
-                        } else {
-                            json[i].bstyle = "float:left;";
+                            tablelavivanar = "tablebana";
+                            tr1 = `<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>${item.name}</span></td>`;
+                            tr2 = `<td width='300px'><span>${item.string}</span></td>`;
+                            astyle = commonAstyle + "background-position: left center;";
+                        } else if (item.dic === 1 || item.dic === 3) {
+                            if (item.dic === 1) {
+                                if (item.branch !== "") {
+                                    bstyle = item.branch.includes("1") ? "float:left;" : "float:left;display:none;";
+                                } else {
+                                    bstyle = "float:left;";
+                                }
+                            } else { // dic === 3
+                                if (item.branch !== "") {
+                                    bstyle = item.branch.includes("1") ? "float:right;" : "float:right;display:none;";
+                                } else {
+                                    bstyle = "float:right;";
+                                }
+                            }
+                            tablelavivanar = "tablebana";
+                            tr1 = `<td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>${item.name}</span></td><td rowspan='2' style='position:relative;width:180px;'></td>`;
+                            tr2 = `<td width='300px'><span>${item.string}</span></td>`;
+                            astyle = commonAstyle + "background-position: right center;";
+                        } else if (item.dic === 2) {
+                            if (item.branch !== "") {
+                                bstyle = item.branch.includes("1") ? "float: left;position:relative;left:20%;" : "float: left;position:relative;left:20%;display:none;";
+                            } else {
+                                bstyle = "float: left;position:relative;left:20%;";
+                            }
+                            tablelavivanar = "tablebana2";
+                            astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);";
+                            tr1 = `<td><span>${item.string}</span></td>`;
+                            tr2 = " ";
                         }
 
-                        json[i].tablelavivanar = "tablebana";
+                        return {
+                            ...item,
+                            charname: item.name,
+                            texter: item.string,
+                            red_face,
+                            sweat,
+                            attach,
+                            special,
+                            eye,
+                            baseys,
+                            bclass,
+                            brow,
+                            mouth,
+                            bstyle,
+                            tablelavivanar,
+                            tr1,
+                            tr2,
+                            astyle,
+                        };
+                    });
+                    aasb.value = processedData;
+                });
+        });
 
-                        json[i].tr1 = "<td rowspan='2' style='position:relative;width:180px;'></td><td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>" + json[i].charname + "</span></td>"
-                        json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
-
-                        json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
-                            "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['attach'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['special'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['sweat'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['red_face'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['brow'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['eye'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['mouth'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['baseys'] + ".png);" +
-                            "background-repeat: no-repeat;background-position: left center;background-size: 40%;";
-                    }
-
-                    if (json[i].dic == 1) {
-
-                        if (json[i].branch != "") {
-                            if (json[i].branch.includes("1")) {
-                                json[i].bstyle = "float:left;";
-                            } else {
-                                json[i].bstyle = "float:left;display:none;";
-                            }
-                        } else {
-                            json[i].bstyle = "float:left;";
-                        }
-
-                        json[i].tablelavivanar = "tablebana";
-
-                        json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
-                        json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
-
-                        json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
-                            "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['attach'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['special'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['sweat'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['red_face'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['brow'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['eye'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['mouth'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['baseys'] + ".png);" +
-                            "background-repeat: no-repeat;background-position: right center;background-size: 40%;";
-                    }
-
-                    if (json[i].dic == 3) {
-
-                        if (json[i].branch != "") {
-                            if (json[i].branch.includes("1")) {
-                                json[i].bstyle = "float:right;";
-                            } else {
-                                json[i].bstyle = "float:right;display:none;";
-                            }
-                        } else {
-                            json[i].bstyle = "float:right;";
-                        }
-
-                        json[i].tablelavivanar = "tablebana";
-
-                        json[i].tr1 = "<td id='banaheader' style='border-bottom:2px solid rgb(208,201,183);'><span>" + json[i].charname + "</span></td><td rowspan='2' style='position:relative;width:180px;'></td>"
-                        json[i].tr2 = "<td width='300px'><span>" + json[i].texter + "</span></td>"
-
-                        json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
-                            "background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['attach'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['special'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['sweat'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['red_face'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['brow'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['eye'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['mouth'] + ".png)," +
-                            "url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + json[i]['char'] + "/" + json[i]['baseys'] + ".png);" +
-                            "background-repeat: no-repeat;background-position: right center;background-size: 40%;";
-                    }
-
-                    if (json[i].dic == 2) {
-
-                        if (json[i].branch != "") {
-                            if (json[i].branch.includes("1")) {
-                                json[i].bstyle = "float: left;position:relative;left:20%;";
-                            } else {
-                                json[i].bstyle = "float: left;position:relative;left:20%;display:none;";
-                            }
-                        } else {
-                            json[i].bstyle = "float: left;position:relative;left:20%;";
-                        }
-
-                        json[i].tablelavivanar = "tablebana2";
-                        json[i].astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);"
-                        json[i].tr1 = "<td><span>" + json[i].texter + "</span></td>"
-                        json[i].tr2 = " "
-                    }
-                }
-            })
+        // 將資料和方法返回，使其在模板中可用
+        return {
+            aasb
+        };
     }
-})
+}).mount('#app');
 
+// 這些函式現在是獨立的，不再是 Vue 實例的一部分
+// 它們可以直接在全域範圍內被呼叫
 function brIn(a) {
     const elements = document.querySelectorAll('.' + a);
     elements.forEach(element => {
         element.style.display = 'block';
     });
     const el = 'branch' + a;
-    document.getElementById(el).style.color = '#00ff00';
+    const branchElement = document.getElementById(el);
+    if (branchElement) {
+        branchElement.style.color = '#00ff00';
+    }
 }
 
 function brOut(a) {
@@ -183,6 +132,8 @@ function brOut(a) {
         element.style.display = 'none';
     });
     const el = 'branch' + a;
-    document.getElementById(el).style.color = '#D0C9B7';
+    const branchElement = document.getElementById(el);
+    if (branchElement) {
+        branchElement.style.color = '#D0C9B7';
+    }
 }
-
