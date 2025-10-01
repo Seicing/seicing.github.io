@@ -156,13 +156,14 @@
 <script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
 
 <script type="module">
-    import { aoe4list } from "https://seicing.com/js/aoe4list.js";
+    // 假设 aoe4list_chi.js 总是存在，并且我们将其作为默认导入
+    import { aoe4list as defaultAoe4List } from "https://seicing.com/js/aoe4civ/aoe4list_chi.js";
 
     const app = Vue.createApp({
         data() {
             return {
-                civ: "abb",
-                aoe4list
+                civ: "chi", // 默认文明设置为 'chi'
+                aoe4list: defaultAoe4List // 初始化时就加载中国的数据
             };
         },
         computed: {
@@ -174,11 +175,62 @@
             }
         },
         methods: {
-            showCiv(civ) {
-                this.civ = civ;
-                // 同时处理按钮透明度
+            async showCiv(civ) {
+                // 如果点击的已经是当前文明，则不执行任何操作
+                if (civ === this.civ) return;
+
+                // 更新URL，这会触发浏览器历史记录的改变
+                const url = new URL(window.location);
+                url.searchParams.set('civ', civ);
+                window.history.pushState({}, '', url);
+
+                // 调用方法来加载新数据
+                await this.loadCivData(civ);
+
+                // 更新按钮的视觉状态
                 document.querySelectorAll(".civ-selector a").forEach(a => a.style.opacity = 0.3);
                 document.getElementById(civ + "Button0").style.opacity = 1;
+            },
+            async loadCivData(civ) {
+                this.civ = civ;
+                try {
+                    // 如果要加载的是 chi，我们已经有数据了，可以直接使用
+                    if (civ === 'chi') {
+                        this.aoe4list = defaultAoe4List;
+                        return;
+                    }
+                    // 动态导入对应文明的模块
+                    const module = await import(`https://seicing.com/js/aoe4civ/aoe4list_${civ}.js`);
+                    this.aoe4list = module.aoe4list;
+                } catch (error) {
+                    console.error(`加载 ${civ} 的数据失败，已回退到默认的中国数据:`, error);
+                    // 如果加载失败，则回退到中国的数据
+                    this.civ = 'chi'; // 将当前文明状态也重置为'chi'
+                    this.aoe4list = defaultAoe4List;
+
+                    // 并且更新URL，以反映当前显示的是'chi'
+                    const url = new URL(window.location);
+                    url.searchParams.set('civ', 'chi');
+                    window.history.pushState({}, '', url);
+                }
+            }
+        },
+        created() {
+            // 组件创建时，从URL获取初始的civ值
+            const urlParams = new URLSearchParams(window.location.search);
+            const civFromUrl = urlParams.get('civ');
+
+            // 如果URL中有civ参数且不是'chi'，则尝试加载它
+            if (civFromUrl && civFromUrl !== 'chi') {
+                this.loadCivData(civFromUrl).then(() => {
+                    // 数据加载完成后，更新按钮状态
+                    document.querySelectorAll(".civ-selector a").forEach(a => a.style.opacity = 0.3);
+                    document.getElementById(this.civ + "Button0").style.opacity = 1;
+                });
+            } else {
+                // 否则，默认显示'chi'，并设置按钮状态
+                document.querySelectorAll(".civ-selector a").forEach(a => a.style.opacity = 0.3);
+                document.getElementById('chiButton0').style.opacity = 1;
             }
         }
     });

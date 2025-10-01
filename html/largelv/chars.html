@@ -102,23 +102,16 @@
    $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
    var imgAll = [];
 
-   // 从 Vue 全局对象中解构出需要的方法
    const { createApp, ref, onMounted } = Vue;
-
-   // 创建 Vue 3 应用
    createApp({
-      // setup 函数是组合式 API 的入口
       setup() {
-         // 使用 ref 创建响应式变量
          const aasb = ref([]);
          const aasb2 = ref([]);
 
-         // 定义一个异步函数来获取和处理数据
          const fetchData = async () => {
             try {
                const response1 = await fetch('https://seicing.com/js/dia/dialogid.json');
                const json1 = await response1.json();
-               // 使用 map 创建新数组，避免直接修改原数据，更安全
                aasb.value = json1.map(item => ({
                   ...item,
                   inner2: item.inner,
@@ -143,20 +136,16 @@
             }
          };
 
-         // onMounted 是一个生命周期钩子，它会在组件挂载到 DOM 后执行
-         // 非常适合用来执行数据请求等初始化操作
          onMounted(() => {
             fetchData();
          });
 
-         // 从 setup 函数返回的任何内容都可以在模板中直接使用
          return {
             aasb,
             aasb2
          };
       }
-   }).mount('#app'); // 将应用挂载到 #app 元素上
-
-</script>```
+   }).mount('#app');
+</script>
 
 </html>
