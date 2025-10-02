@@ -170,56 +170,56 @@ export const aoe4list = [
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "柏勒罗丰",
+    "name": "柏勒罗丰<br><br>",
     "img": "柏勒罗丰",
     "link": "https://seicing.com/html/aoe2/unitaoem/柏勒罗丰"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "埃阿斯",
+    "name": "埃阿斯<br><br>",
     "img": "埃阿斯",
     "link": "https://seicing.com/html/aoe2/unitaoem/埃阿斯"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "喀戎",
+    "name": "喀戎<br><br>",
     "img": "喀戎",
     "link": "https://seicing.com/html/aoe2/unitaoem/喀戎"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "阿喀琉斯",
+    "name": "阿喀琉斯<br><br>",
     "img": "阿喀琉斯",
     "link": "https://seicing.com/html/aoe2/unitaoem/阿喀琉斯"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "珀耳修斯",
+    "name": "珀耳修斯<br><br>",
     "img": "珀耳修斯",
     "link": "https://seicing.com/html/aoe2/unitaoem/珀耳修斯"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "忒修斯",
+    "name": "忒修斯<br><br>",
     "img": "忒修斯",
     "link": "https://seicing.com/html/aoe2/unitaoem/忒修斯"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "希波吕忒",
+    "name": "希波吕忒<br><br>",
     "img": "希波吕忒",
     "link": "https://seicing.com/html/aoe2/unitaoem/希波吕忒"
   },
   {
     "civ": "gre",
     "section": "英雄单位",
-    "name": "亚特兰特",
+    "name": "亚特兰特<br><br>",
     "img": "亚特兰特",
     "link": "https://seicing.com/html/aoe2/unitaoem/亚特兰特"
   },
@@ -303,14 +303,14 @@ export const aoe4list = [
   {
     "civ": "gre",
     "section": "神话单位",
-    "name": "巨神像",
+    "name": "巨神像<br><br>",
     "img": "巨神像",
     "link": "https://seicing.com/html/aoe2/unitaoem/巨神像"
   },
   {
     "civ": "gre",
     "section": "神话单位",
-    "name": "美杜莎",
+    "name": "美杜莎<br><br>",
     "img": "美杜莎",
     "link": "https://seicing.com/html/aoe2/unitaoem/美杜莎"
   },
