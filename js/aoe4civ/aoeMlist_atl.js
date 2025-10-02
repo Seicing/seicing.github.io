@@ -177,21 +177,21 @@ export const aoe4list = [
     {
         "civ": "atl",
         "section": "神话单位",
-        "name": "树精<br><br><br>",
+        "name": "树精",
         "img": "树精",
         "link": "https://seicing.com/html/aoe2/unitaoem/树精"
     },
     {
         "civ": "atl",
         "section": "神话单位",
-        "name": "巨兽<br><br><br>",
+        "name": "巨兽",
         "img": "巨兽",
         "link": "https://seicing.com/html/aoe2/unitaoem/巨兽"
     },
     {
         "civ": "atl",
         "section": "神话单位",
-        "name": "百手<br><br><br>",
+        "name": "百手",
         "img": "百手",
         "link": "https://seicing.com/html/aoe2/unitaoem/百手"
     },
