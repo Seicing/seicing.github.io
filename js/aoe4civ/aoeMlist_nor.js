@@ -219,7 +219,7 @@ export const aoe4list = [
     {
         "civ": "nor",
         "section": "神话单位",
-        "name": "火焰巨人",
+        "name": "火焰巨人<br><br>",
         "img": "火焰巨人",
         "link": "https://seicing.com/html/aoe2/unitaoem/火焰巨人"
     },
