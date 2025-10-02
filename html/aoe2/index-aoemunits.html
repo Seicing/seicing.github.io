@@ -80,7 +80,7 @@
         <table id="customers2" frame="box" width="780px">
             <tr v-for="sec in sections" :key="sec">
                 <td style="background-color:#F5F8FA;width:50px">{{ sec }}</td>
-                <td style="text-align:left;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px;">
+                <td style="text-align:left;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0px;">
                     <table v-for="unit in civItems.filter(i => i.section === sec)" :key="unit.name"
                         style="border-collapse:collapse">
                         <tr>
