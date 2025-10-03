@@ -699,7 +699,7 @@ let ayanami = {
     "日光盾": /*html*/`日光盾<br>Solar Shield<br>使目标单位暂时变得几乎无敌`,
     "神乐": /*html*/`神乐<br>Kagura<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>5 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>立即生产1个巫女，巫女治疗速度+25%，训练时间-25%`,
 
-    "新月": /*html*/`新月<br>New Moon<br>指定一个建筑，使得该建筑可以免费研究科技，并更快地生产部队`,
+    "新月": /*html*/`新月<br>New Moon<br>指定一个建筑，使得该建筑免费研发当前此建筑拥有的科技，并在限定时间内可以更快地生产部队`,
     "天守": /*html*/`天守<br>Tenshu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>塔攻击力+40%，视野+5，城堡攻击力+20%，视野+5`,
 
     "草薙剑": /*html*/`草薙剑<br>Kusanagi<br>投下草薙之剑，对敌人造成伤害并召唤激流将敌人抛向空中`,
@@ -756,13 +756,13 @@ let ayanami = {
     "十拳剑": /*html*/`十拳剑<br>Ten-Fist Sword<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>日本武士伤害+10%，濒死时召唤无主之剑发动最后打击`,
 
 
-    "神圣之门": /*html*/`神圣之门<br>Sacred Gate<br>召唤神圣之门，使得神力更加便宜，并让所有神力可以无需成本再次额外使用1次(神圣之门除外)`,
+    "神圣之门": /*html*/`神圣之门<br>Sacred Gate<br>召唤神圣之门，使得神力更加便宜，并让所有神力可以无需成本再次额外使用1次(这次使用的神圣之门除外)`,
     "不安分之军": /*html*/`不安分之军<br>Restless Army<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>将阴摩罗鬼升级为瘟疫阴摩罗鬼，阴摩罗鬼和亡魂+10%移动速度，阴摩罗鬼特殊攻击召唤的亡魂数量+4`,
     "机械工匠": /*html*/`机械工匠<br>Mechanical Artisans<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>大弓攻击范围和视野+4，远程伤害+50%`,
     "神圣府": /*html*/`神圣府<br>Divine Prefecture<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>建筑物工作速度+60%`,
 
 
-    "龙旋飓风": /*html*/`龙旋飓风<br>Dragon Typhoon<br>向指定方向发射龙型旋转台风席卷破坏一切`,
+    "龙旋飓风": /*html*/`龙旋飓风<br>Dragon Typhoon<br>向指定方向发射龙旋飓风席卷破坏一切，龙旋飓风会缓慢地按照指定的方向移动`,
     "永恒的困扰": /*html*/`永恒的困扰<br>Eternal Haunting<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>240 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>死神被杀死后会重生，变成更加强大的复仇形态`,
     "海滨潜入者": /*html*/`海滨潜入者<br>Seaside Infiltrators<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>忍者移动速度+10%，获得烟雾弹能力，使得可以暂时隐形`,
     "不对称弓": /*html*/`不对称弓<br>Asymmetrical Bows<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>日本长弓骑兵攻击力+25%，射程和视野+2`,
