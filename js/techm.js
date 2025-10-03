@@ -716,7 +716,7 @@ let ayanami = {
     "气质": /*html*/`气质<br>Katagi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>步兵生命值+10%，被击杀时生成75武士道经验值`,
 
 
-    "狩猎神社": /*html*/`狩猎神社<br>Shrine of the Hunt<br>指定一个神社，转化为狩猎神社，周期性生成可狩猎的鹿和守护神社区域的<a href="https://seicing.com/html/aoe2/unitaoem/狼.html" style="color:#0010ff">狼</a>`,
+    "狩猎神社": /*html*/`狩猎神社<br>Shrine of the Hunt<br>指定一个神社，转化为狩猎神社，周期性生成可狩猎的鹿和守护神社区域的狼`,
     "被定罪的灵魂": /*html*/`被定罪的灵魂<br>Condemned Soul<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>24 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>将轮入道升级为地狱火轮入道，获得+2伤害半径，+25%远程伤害`,
     "盐水温泉": /*html*/`盐水温泉<br>Saltwater Spring<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>平民的可狩猎动物采集速度+10%`,
     "猎人之力": /*html*/`猎人之力<br>Hunter's Strength<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>175  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>14 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>远程士兵+1射程，攻击力+10%`,
@@ -730,7 +730,7 @@ let ayanami = {
     "象牙根付": /*html*/`象牙根付<br>Ivory Netsuke<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>神话单位攻击敌人时生成黄金`,
 
 
-    "幕府将军": /*html*/`幕府将军<br>Shogun<br>将大名升级为<a href="https://seicing.com/html/aoe2/unitaoem/幕府将军.html" style="color:#0010ff">幕府将军</a>，在战斗中召唤日本武士`,
+    "幕府将军": /*html*/`幕府将军<br>Shogun<br>将大名升级为幕府将军，在战斗中召唤日本武士`,
     "苦行": /*html*/`苦行<br>Ascetic Practices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>将天狗升级为大师天狗，天狗视野+5，特殊攻击跳跃距离+5，特殊攻击中+50%伤害、+15%近战和远程护甲`,
     "金色风筝": /*html*/`金色风筝<br>Golden Kite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>远程士兵和英雄+10%攻击力，对神话单位伤害加成率+250%`,
     "坛之浦战术": /*html*/`坛之浦战术<br>Dan-no-ura Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每有1个冲击和船在附近时，冲击和船的近战攻击力+20%，最多增加5次`,
