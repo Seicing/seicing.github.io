@@ -134,10 +134,24 @@ export const aoe4list = [
     },
     {
         "civ": "jpn",
+        "section": "英雄单位",
+        "name": "幕府将军",
+        "img": "将军",
+        "link": "https://seicing.com/html/aoe2/unitaoem/幕府将军"
+    },
+    {
+        "civ": "jpn",
         "section": "神话单位",
         "name": "狐妖",
         "img": "狐妖",
         "link": "https://seicing.com/html/aoe2/unitaoem/狐妖"
+    },
+    {
+        "civ": "jpn",
+        "section": "神话单位",
+        "name": "狼",
+        "img": "狼",
+        "link": "https://seicing.com/html/aoe2/unitaoem/狼"
     },
     {
         "civ": "jpn",
