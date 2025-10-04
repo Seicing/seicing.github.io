@@ -141,105 +141,105 @@ export const aoe4list = [
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "狐妖",
         "img": "狐妖",
         "link": "https://seicing.com/html/aoe2/unitaoem/狐妖"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "狼",
         "img": "狼",
         "link": "https://seicing.com/html/aoe2/unitaoem/狼"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "雷兽",
         "img": "雷兽",
         "link": "https://seicing.com/html/aoe2/unitaoem/雷兽"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "轮入道",
         "img": "轮入道",
         "link": "https://seicing.com/html/aoe2/unitaoem/轮入道"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "络新妇",
         "img": "络新妇",
         "link": "https://seicing.com/html/aoe2/unitaoem/络新妇"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "鬼族",
         "img": "鬼族",
         "link": "https://seicing.com/html/aoe2/unitaoem/鬼族"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "天狗",
         "img": "天狗",
         "link": "https://seicing.com/html/aoe2/unitaoem/天狗"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "镰鼬",
         "img": "镰鼬",
         "link": "https://seicing.com/html/aoe2/unitaoem/镰鼬"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "丰年鱼",
         "img": "丰年鱼",
         "link": "https://seicing.com/html/aoe2/unitaoem/丰年鱼"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "海坊主",
         "img": "海坊主",
         "link": "https://seicing.com/html/aoe2/unitaoem/海坊主"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "阴摩罗鬼",
         "img": "阴摩罗鬼",
         "link": "https://seicing.com/html/aoe2/unitaoem/阴摩罗鬼"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "苦命怪",
         "img": "苦命怪",
         "link": "https://seicing.com/html/aoe2/unitaoem/苦命怪"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "死神",
         "img": "死神",
         "link": "https://seicing.com/html/aoe2/unitaoem/死神"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "阿修罗",
         "img": "阿修罗",
         "link": "https://seicing.com/html/aoe2/unitaoem/阿修罗"
     },
     {
         "civ": "jpn",
-        "section": "神话单位（补充中）",
+        "section": "神话单位",
         "name": "泰坦",
         "img": "日本泰坦",
         "link": "https://seicing.com/html/aoe2/unitaoem/泰坦"
