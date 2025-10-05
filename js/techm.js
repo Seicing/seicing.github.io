@@ -661,7 +661,7 @@ let ayanami = {
     "神农福地": /*html*/`神农福地<br>福地: 福地上的神话单位每秒恢复5生命值`,
 
     "天照大神武士道": /*html*/`太阳之道<br>每个解锁的武士道等级，每秒获得的黄金流+1`,
-    "天照大神加成1": /*html*/`天照大神加成1<br>日本武士和女武者在非战斗时生成武士道经验值的速度+300%`,
+    "天照大神加成1": /*html*/`天照大神加成1<br>日本武士和女武者在非战斗时生成武士道经验值的速度变成4倍`,
     "天照大神加成2": /*html*/`天照大神加成2<br>日本武士和女武者获得生命恢复，在战斗时效率翻倍`,
     "天照大神加成3": /*html*/`天照大神加成3<br>神社会缓慢增加附近资源的存储量，最多增加150%`,
 
@@ -693,7 +693,7 @@ let ayanami = {
     "服役道场士兵": /*html*/`服役道场士兵<br>Levy Dojo Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>225 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>道场士兵训练时间-20%`,
     "征召道场士兵": /*html*/`征召道场士兵<br>Conscript Dojo Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>道场士兵训练时间-20%`,
 
-    "旗本道场士兵": /*html*/`旗本道场士兵<br>Elite Dojo Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>道场士兵+15%生命值，+15%攻击力，+1视野`,
+    "大师道场士兵": /*html*/`大师道场士兵<br>Elite Dojo Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>道场士兵+15%生命值，+15%攻击力，+1视野，只能通过5级武士道解锁，无法主动研究`,
 
 
     "日光盾": /*html*/`日光盾<br>Solar Shield<br>使目标单位暂时变得几乎无敌`,
