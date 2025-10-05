@@ -58,9 +58,9 @@ export const aoe4list = [
     {
         "civ": "jpn",
         "section": "军事单位",
-        "name": "大弓",
-        "img": "大弓",
-        "link": "https://seicing.com/html/aoe2/unitaoem/大弓"
+        "name": "弩",
+        "img": "弩",
+        "link": "https://seicing.com/html/aoe2/unitaoem/弩"
     },
     {
         "civ": "jpn",
@@ -100,9 +100,9 @@ export const aoe4list = [
     {
         "civ": "jpn",
         "section": "英雄单位",
-        "name": "武者",
-        "img": "武者",
-        "link": "https://seicing.com/html/aoe2/unitaoem/武者"
+        "name": "武士",
+        "img": "武士",
+        "link": "https://seicing.com/html/aoe2/unitaoem/武士"
     },
     {
         "civ": "jpn",
