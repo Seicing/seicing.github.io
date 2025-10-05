@@ -100,9 +100,9 @@ export const aoe4list = [
     {
         "civ": "jpn",
         "section": "英雄单位",
-        "name": "武士",
-        "img": "武士",
-        "link": "https://seicing.com/html/aoe2/unitaoem/武士"
+        "name": "巫女",
+        "img": "巫女",
+        "link": "https://seicing.com/html/aoe2/unitaoem/巫女"
     },
     {
         "civ": "jpn",
@@ -114,9 +114,9 @@ export const aoe4list = [
     {
         "civ": "jpn",
         "section": "英雄单位",
-        "name": "巫女",
-        "img": "巫女",
-        "link": "https://seicing.com/html/aoe2/unitaoem/巫女"
+        "name": "武士",
+        "img": "武士",
+        "link": "https://seicing.com/html/aoe2/unitaoem/武士"
     },
     {
         "civ": "jpn",
