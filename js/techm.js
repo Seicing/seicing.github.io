@@ -643,7 +643,7 @@ let ayanami = {
     "天火": /*html*/`天火<br>Sky Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>天灯摧毁时会爆炸，对5范围内单位造成持续5秒的2点神圣伤害`,
     "丝绸之路": /*html*/`丝绸之路<br>Silk Road<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>机械牛篷车提前一个时代解锁，并在福地上更快移动，贸易时为盟友提供额外资源`,
     "鱼篓": /*html*/`鱼篓<br>Fish Basket.<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>捕鱼船装载量+25，工作效率+50%`,
-    "弩塔": /*html*/`弩塔<br>Crossbow Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>塔(包括军营和机械工坊)攻击间隔时间-35%，生命值+50%`,
+    "弩塔": /*html*/`弩塔<br>Crossbow Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>塔(包括军营和机械工坊)攻击间隔时间-25%，生命值+50%`,
     "服役堡垒士兵": /*html*/`服役堡垒士兵<br>Levy Baolei Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>堡垒训练时间-20%`,
     "征召堡垒士兵": /*html*/`征召堡垒士兵<br>Conscript Baolei Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>堡垒训练时间-20%`,
     "长城": /*html*/`长城<br>Great Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>城墙生命值+100%，视野+2`,
@@ -660,18 +660,18 @@ let ayanami = {
     "神农加成2": /*html*/`神农加成2<br>犁、灌溉术和治水在各自所属时代可立即免费研究获得`,
     "神农福地": /*html*/`神农福地<br>福地: 福地上的神话单位每秒恢复5生命值`,
 
-    "天照大神武士道": /*html*/`太阳之道<br>每个解锁的武士道等级，每秒获得的黄金流+1`,
+    "天照大神武士道": /*html*/`太阳之道<br>每个解锁的武士道等级，每秒获得的黄金流+0.5`,
     "天照大神加成1": /*html*/`天照大神加成1<br>日本武士和女武者在非战斗时生成武士道经验值的速度变成4倍`,
     "天照大神加成2": /*html*/`天照大神加成2<br>日本武士和女武者获得生命恢复，在战斗时效率翻倍`,
     "天照大神加成3": /*html*/`天照大神加成3<br>神社会缓慢增加附近资源的存储量，最多增加150%`,
 
     "月读武士道": /*html*/`月之道<br>每个解锁的武士道等级使骑兵和忍者攻击力+3%`,
-    "月读加成1": /*html*/`月读加成1<br>研究科技可生成武士道经验值`,
+    "月读加成1": /*html*/`月读加成1<br>研究科技可生成和消耗资源量相等(每点眷顾值为5经验值)的武士道经验值`,
     "月读加成2": /*html*/`月读加成2<br>升级到下个时代的速度+25%`,
     "月读加成3": /*html*/`月读加成3<br>每次时代升级都会在神庙获得1只免费的狐妖`,
 
     "须佐之男武士道": /*html*/`风暴之道<br>在每个武士道等级解锁时获得50/75/100/150/250眷顾值`,
-    "须佐之男加成1": /*html*/`须佐之男加成1<br>神话单位在被动和战斗中生成武士道经验值`,
+    "须佐之男加成1": /*html*/`须佐之男加成1<br>神话单位在被动和战斗中生成武士道经验值，被动生成2倍经验值`,
     "须佐之男加成2": /*html*/`须佐之男加成2<br>再次发动神力的成本降低25%`,
     "须佐之男加成3": /*html*/`须佐之男加成3<br>单位特殊攻击充能速度+25%`,
 
@@ -732,8 +732,8 @@ let ayanami = {
 
     "幕府将军": /*html*/`幕府将军<br>Shogun<br>将大名升级为幕府将军，在战斗中召唤日本武士`,
     "苦行": /*html*/`苦行<br>Ascetic Practices<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>180 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>将天狗升级为天狗大师，天狗视野+5，特殊攻击跳跃距离+5，特殊攻击中+50%伤害、+15%近战和远程减伤率`,
-    "金色风筝": /*html*/`金色风筝<br>Golden Kite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>远程士兵和英雄+10%攻击力，对神话单位伤害加成率+250%`,
-    "坛之浦战术": /*html*/`坛之浦战术<br>Dan-no-ura Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每有1个冲击和船在附近时，冲击和船的近战攻击力+20%，最多增加5次`,
+    "金色风筝": /*html*/`金色风筝<br>Golden Kite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>远程士兵和英雄+15%攻击力，对神话单位伤害加成率+250%`,
+    "坛之浦战术": /*html*/`坛之浦战术<br>Dan-no-ura Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每有1个和船在附近时，和船的近战攻击力+20%，最多增加5次`,
     "八面旗帜": /*html*/`八面旗帜<br>Eight Banners<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄训练时间-30%，每秒恢复1.5生命值`,
 
 
@@ -741,7 +741,7 @@ let ayanami = {
     "雷霆之势": /*html*/`雷霆之势<br>Thunderous Presence<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>雷兽+10%移动速度，+35%伤害`,
     "拨浪鼓": /*html*/`拨浪鼓<br>Den Den Drums<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>重新施放神力所需的眷顾值-20%`,
     "般若面具": /*html*/`般若面具<br>Hannya Mask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵+15%生命值，并恢复10%造成伤害的生命值`,
-    "天之箭雨": /*html*/`天之箭雨<br>Heavenly Barge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>准构造船攻击时发射连锁闪电，对额外单位造成5神圣伤害`,
+    "天之箭雨": /*html*/`天之箭雨<br>Heavenly Barge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>准构造船攻击时发射连锁闪电，对额外单位造成3神圣伤害`,
 
     "狂风猛击": /*html*/`狂风猛击<br>Smiting Gust<br>向指定方向生成暴风，吹飞敌方单位`,
     "致命怒火": /*html*/`致命怒火<br>Deadly Rage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>16 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>将鬼族升级为鬼军阀，鬼族的普通和特殊攻击伤害+30%，近战伤害脆弱率-20%`,
