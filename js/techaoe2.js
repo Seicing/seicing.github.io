@@ -894,7 +894,7 @@ let ayanami = {
     "莫拉伊": /*html*/`莫拉伊<br>Morai<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>军事执政官光环半径+50%，并使得附近部队移动速度+15%`,
 
 
-    "将军": /*html*/`将军<br>Strategos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>16<br>可为6格范围内的部队+1攻击力的重装步兵<br><br>升级到 将军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30`,
+    "将军": /*html*/`将军<br>Strategos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>16<br>可为6格范围内的部队+1攻击力的重装步兵<br><br>升级到 精锐将军<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30`,
     "精锐将军": /*html*/`精锐将军<br>Elite Strategos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>16<br>可为6格范围内的部队+1攻击力的重装步兵`,
 
     "经济城镇中心": /*html*/`经济城镇中心<br>Ecomonic Town Center<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>加快城镇中心附近9格范围内村民10%采集效率`,
@@ -930,17 +930,13 @@ let ayanami = {
 
     "巨型弩炮": /*html*/`巨型弩炮<br>Palintonon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>强大的攻城武器，用于远距离摧毁建筑物和墙壁`,
 
-
     "瞭望塔": /*html*/`瞭望塔<br>Watch Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80<br>拥有强大的攻击力和广阔的视野的防御建筑，利于对舰船`,
-
     "防御箭塔": /*html*/`防御箭塔<br>Guard Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>让瞭望塔升级到防御箭塔`,
-
 
     "阿契美尼德总督府": /*html*/`阿契美尼德总督府<br>城镇中心在市政时代开始可以单独升级成独特总督府`,
     "阿契美尼德造船厂": /*html*/`阿契美尼德造船厂<br>造船厂工作速度快15% `,
     "阿契美尼德马厩": /*html*/`阿契美尼德马厩<br>马厩科技研发速度+50%`,
     "阿契美尼德团队加成": /*html*/`阿契美尼德团队加成<br>房屋建造速度+100%`,
-
 
     "斯巴达军事执政官": /*html*/`斯巴达军事执政官<br>升级到市政时代和古典时代会生成一个军事执政官`,
     "斯巴达经济": /*html*/`斯巴达经济<br>村民和渔船多提交10%的食物`,
@@ -949,17 +945,20 @@ let ayanami = {
 
     "商船": /*html*/`商船<br>Merchant Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>和其他玩家进行海上贸易`,
 
+    "平衡教义": /*html*/`平衡教义<br>【待补充】<br>马厩、兵营和靶场不会发生变化`,
+    "征招教义": /*html*/`征招教义<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本-15%，训练速度-50%`,
+    "佣兵教义": /*html*/`佣兵教义<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本+10%，训练速度+100%`,
+
     "雅典伐木工": /*html*/`雅典伐木工<br>伐木工可以缓慢生产食物`,
     "雅典步兵": /*html*/`雅典步兵<br>希腊步兵移动速度 +15%`,
     "雅典政策": /*html*/`雅典政策<br>可以在城镇中心在经济、海军和军事政策中进行转换，更换政策的成本会越来越昂贵，上限为50黄金`,
     "雅典团队加成": /*html*/`雅典团队加成<br>造船厂科技研发速度+50%`,
 
-
     "马其顿海拔": /*html*/`马其顿海拔<br>部队受到来自更高海拔敌人攻击所受到的伤害 -10%`,
     "马其顿教义": /*html*/`马其顿教义<br>兵营、靶场和马厩可以切换教义 `,
     "马其顿步兵护甲升级": /*html*/`马其顿步兵护甲升级<br>步兵护甲升级作用于骑兵`,
     "马其顿攻城器": /*html*/`马其顿攻城器<br>攻城器+1远程护甲，对建筑伤害+30%`,
-    "马其顿团队加成": /*html*/`马其顿团队加成<br>哨站可以升级为要塞哨站`,
+    "马其顿团队加成": /*html*/`马其顿团队加成<br>哨站可以升级为要塞哨站，可使10格半径内的部队移动速度+20%`,
 
     "色雷斯散兵": /*html*/`色雷斯散兵<br>掷矛手在市政时代/古典时代每分钟恢复5/10生命值，精锐掷矛手升级免费`,
     "色雷斯战斗操练": /*html*/`色雷斯战斗操练<br>战斗操练在古典时代可用`,
@@ -968,29 +967,45 @@ let ayanami = {
     "色雷斯牧羊人": /*html*/`色雷斯牧羊人<br>牧羊人和猎人可以从动物身上缓慢地采集黄金`,
     "色雷斯团队加成": /*html*/`色雷斯团队加成<br>建筑物视野+3`,
 
-
     "补卢矿工": /*html*/`补卢矿工<br>石矿工工作时可以缓慢地生成食物，石矿寿命+30%`,
     "补卢牡蛎": /*html*/`补卢牡蛎<br>村民和渔船的牡蛎采集速度+15%`,
     "补卢马厩单位": /*html*/`补卢马厩单位<br>从古典时代开始，周围没有敌人时，马厩单位每分钟恢复25生命值`,
     "补卢海军": /*html*/`补卢海军<br>市政时代开始小艇成本-10%，并每个时代+1攻击力`,
     "补卢团队加成": /*html*/`补卢团队加成<br>贸易马车+15%移动速度`,
 
+    "攻城弩炮": /*html*/`攻城弩炮<br>Siege Ballista<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>56<br>威力巨大的机动型反建筑攻城武器`,
 
-    "老练千夫长": /*html*/`老练千夫长<br>Veteran Chiliarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>征招教义效率+33%`,
-    "世界的尽头": /*html*/`世界的尽头<br>Ends of the World<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>要塞哨站光环范围更大，提供属性加成更高`,
-    "伙伴步兵": /*html*/`伙伴步兵<br>Pezhetairoi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>方阵兵最小射程减半`,
-    "萨里沙骑兵": /*html*/`萨里沙骑兵<br>Sarissophoroi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>伙伴骑兵获得快速冲锋攻击`,
+    "方阵兵": /*html*/`方阵兵<br>Phalangite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>射程超长的步兵<br><br>升级到 精锐方阵兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "精锐方阵兵": /*html*/`精锐方阵兵<br>Elite Phalangite<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>射程超长的步兵`,
 
-    "奥多曼提亚突袭者": /*html*/`奥多曼提亚突袭者<br>Odomantian Raiders<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>步兵和骑兵杀死敌人可以获得黄金`,
-    "迪伊掠夺者": /*html*/`迪伊掠夺者<br>Dii Plunderers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>长矛兵系/民兵系和重装步兵系/逆刀刃战士摧毁敌人建筑时获得木材/食物/黄金`,
-    "贝西金属加工": /*html*/`贝西金属加工<br>Bessian Metalworking<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>民兵系/骑士系/逆刀刃战士在攻击时会减少敌方护甲`,
-    "轻装盾兵": /*html*/`轻装盾兵<br>Peltasts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>掷矛手的投矛可以贯穿敌人`,
+    "伙伴骑兵": /*html*/`伙伴骑兵<br>Companion Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>精锐骑兵部队，对其他独特部队有附加伤害<br><br>升级到 精锐伙伴骑兵<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "精锐伙伴骑兵": /*html*/`精锐伙伴骑兵<br>Elite Companion Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>精锐骑兵部队，对其他独特部队有附加伤害`,
+
+    "弓武士": /*html*/`弓武士<br>Pattiyodha Longbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>使用竹制长弓进行毁灭性齐射的长弓手<br><br>升级到 精锐弓武士<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "精锐弓武士": /*html*/`精锐弓武士<br>Elite Pattiyodha Longbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>使用竹制长弓进行毁灭性齐射的长弓手`,
+
+    "战争象": /*html*/`战争象<br>Sannāhya<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>有效抵御附加伤害和女祭司的近战大象部队，但需要2人口<br><br>升级到 精锐战争象<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "精锐战争象": /*html*/`精锐战争象<br>Elite Sannāhya<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>有效抵御附加伤害和女祭司的近战大象部队，但需要2人口`,
 
 
-    "践踏杀戮": /*html*/`践踏杀戮<br>Vadhāvadha<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>战争象践踏伤害提高`,
-    "叶头箭": /*html*/`叶头箭<br>Leaf-Headed Shafts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>弓武士近距离伤害提高`,
-    "吠陀教育": /*html*/`吠陀教育<br>Vedic Teachings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>大学研究的每个科技都会使村民工作效率+2%，最多20%`,
-    "军事营帐": /*html*/`军事营帐<br>Skandhavaras<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒可以进行单独的炮台升级`,
+    "逆刃刀战士": /*html*/`逆刃刀战士<br>Rhomphaia Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>快速的反骑兵步兵部队<br><br>升级到 精锐逆刃刀战士<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "精锐逆刃刀战士": /*html*/`精锐逆刃刀战士<br>Elite Rhomphaia Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>快速的反骑兵步兵部队`,
+
+
+    "老练千夫长": /*html*/`老练千夫长<br>Veteran Chiliarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>征招教义效率+33%`,
+    "世界的尽头": /*html*/`世界的尽头<br>Ends of the World<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>要塞哨站光环范围+5，并每分钟恢复光环范围内单位30生命值`,
+    "伙伴步兵": /*html*/`伙伴步兵<br>Pezhetairoi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>方阵兵最小射程减半`,
+    "萨里沙骑兵": /*html*/`萨里沙骑兵<br>Sarissophoroi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>伙伴骑兵获得快速冲锋攻击`,
+
+    "奥多曼提亚突袭者": /*html*/`奥多曼提亚突袭者<br>Odomantian Raiders<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>步兵和骑兵杀死敌人可以获得黄金`,
+    "迪伊掠夺者": /*html*/`迪伊掠夺者<br>Dii Plunderers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>长矛兵系/民兵系和重装步兵系/逆刀刃战士摧毁敌人建筑时获得木材/食物/黄金`,
+    "贝西金属加工": /*html*/`贝西金属加工<br>Bessian Metalworking<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>民兵系/骑士系/逆刀刃战士在攻击时会减少敌方护甲`,
+    "轻装盾兵": /*html*/`轻装盾兵<br>Peltasts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>掷矛手的投矛可以贯穿敌人`,
+
+    "践踏杀戮": /*html*/`践踏杀戮<br>Vadhāvadha<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>战争象践踏伤害提高，范围+0.15`,
+    "叶头箭": /*html*/`叶头箭<br>Leaf-Headed Shafts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>弓武士/精锐弓武士和敌人距离少于2格时伤害增加`,
+    "吠陀教育": /*html*/`吠陀教育<br>Vedic Teachings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>大学研究的每个科技都会使村民工作效率+2%，最多20%`,
+    "军事营帐": /*html*/`军事营帐<br>Skandhavaras<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒可以进行单独的炮台升级<br><br>进攻炮台<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50<br>堡垒+1射程，+3攻击力<br>防御炮台<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50<br>堡垒+1500生命值，+2/+2护甲`,
 
 }
 
