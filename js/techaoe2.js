@@ -945,9 +945,12 @@ let ayanami = {
 
     "商船": /*html*/`商船<br>Merchant Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>和其他玩家进行海上贸易`,
 
-    "平衡准则": /*html*/`平衡准则<br>【待补充】<br>马厩、兵营和靶场不会发生变化`,
-    "征招准则": /*html*/`征招准则<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本-15%，训练速度-50%`,
-    "佣兵准则": /*html*/`佣兵准则<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本+10%，训练速度+100%`,
+    "平衡准则": /*html*/`平衡准则<br>Balanced Recruitment<br>马厩、兵营和靶场不会发生变化`,
+    "征招准则": /*html*/`征招准则<br>Conscript Recruitment<br>马厩、兵营和靶场单位食物和木材成本-15%，训练速度-50%`,
+    "佣兵准则": /*html*/`佣兵准则<br>Mercenary Recruitment<br>马厩、兵营和靶场单位食物和木材成本+10%，训练速度+100%`,
+
+    "进攻炮台": /*html*/`进攻炮台<br>Offensive Emplacement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒+1射程，+3攻击力`,
+    "防御炮台": /*html*/`防御炮台<br>Defensive Emplacement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒+1500生命值，+2/+2护甲`,
 
     "雅典伐木工": /*html*/`雅典伐木工<br>伐木工可以缓慢生产食物`,
     "雅典步兵": /*html*/`雅典步兵<br>希腊步兵移动速度 +15%`,
@@ -992,10 +995,10 @@ let ayanami = {
     "精锐逆刃刀战士": /*html*/`精锐逆刃刀战士<br>Elite Rhomphaia Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>快速的反骑兵步兵部队`,
 
 
-    "老练千夫长": /*html*/`老练千夫长<br>Veteran Chiliarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>征招准则效率+33%`,
+    "老练千夫长": /*html*/`老练千夫长<br>Veteran Chiliarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>准则效率+33%(佣兵准则花费多7%资源提高133%训练效率，征招准则花费少20%的资源减少35%训练效率)`,
     "世界的尽头": /*html*/`世界的尽头<br>Ends of the World<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>要塞哨站光环范围+5，并每分钟恢复光环范围内单位30生命值`,
-    "伙伴步兵": /*html*/`伙伴步兵<br>Pezhetairoi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>方阵兵最小射程减半`,
-    "萨里沙骑兵": /*html*/`萨里沙骑兵<br>Sarissophoroi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>伙伴骑兵获得快速冲锋攻击`,
+    "伙伴步兵": /*html*/`伙伴步兵<br>Pezhetairoi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>方阵兵最小射程从0.5降低到0.25`,
+    "萨里沙骑兵": /*html*/`萨里沙骑兵<br>Sarissophoroi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>伙伴骑兵获得快速冲锋攻击，在【待补充】格范围内攻击敌人时提高1攻击力和15%移动速度，冷却时间【待补充】秒`,
 
     "奥多曼提亚突袭者": /*html*/`奥多曼提亚突袭者<br>Odomantian Raiders<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>步兵和骑兵杀死敌人可以获得黄金`,
     "迪伊掠夺者": /*html*/`迪伊掠夺者<br>Dii Plunderers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>长矛兵系/民兵系和重装步兵系/逆刀刃战士摧毁敌人建筑时获得木材/食物/黄金`,
@@ -1005,7 +1008,7 @@ let ayanami = {
     "践踏杀戮": /*html*/`践踏杀戮<br>Vadhāvadha<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>战争象践踏伤害提高，践踏范围+0.15`,
     "叶头箭": /*html*/`叶头箭<br>Leaf-Headed Shafts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>弓武士/精锐弓武士和敌人距离少于2格时的伤害+1`,
     "吠陀教育": /*html*/`吠陀教育<br>Vedic Teachings<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>大学研究的每个科技都会使村民工作效率+2%，最多20%`,
-    "军事营帐": /*html*/`军事营帐<br>Skandhavaras<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒可以进行单独的炮台升级<br><br>进攻炮台<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50<br>堡垒+1射程，+3攻击力<br>防御炮台<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50<br>堡垒+1500生命值，+2/+2护甲`,
+    "军事营帐": /*html*/`军事营帐<br>Skandhavaras<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>800 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>堡垒可以进行单独的炮台升级`,
 
 }
 
