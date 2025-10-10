@@ -945,9 +945,9 @@ let ayanami = {
 
     "商船": /*html*/`商船<br>Merchant Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>和其他玩家进行海上贸易`,
 
-    "平衡教义": /*html*/`平衡教义<br>【待补充】<br>马厩、兵营和靶场不会发生变化`,
-    "征招教义": /*html*/`征招教义<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本-15%，训练速度-50%`,
-    "佣兵教义": /*html*/`佣兵教义<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本+10%，训练速度+100%`,
+    "平衡准则": /*html*/`平衡准则<br>【待补充】<br>马厩、兵营和靶场不会发生变化`,
+    "征招准则": /*html*/`征招准则<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本-15%，训练速度-50%`,
+    "佣兵准则": /*html*/`佣兵准则<br>【待补充】<br>马厩、兵营和靶场单位食物和木材成本+10%，训练速度+100%`,
 
     "雅典伐木工": /*html*/`雅典伐木工<br>伐木工可以缓慢生产食物`,
     "雅典步兵": /*html*/`雅典步兵<br>希腊步兵移动速度 +15%`,
@@ -955,7 +955,7 @@ let ayanami = {
     "雅典团队加成": /*html*/`雅典团队加成<br>造船厂科技研发速度+50%`,
 
     "马其顿海拔": /*html*/`马其顿海拔<br>部队受到来自更高海拔敌人攻击所受到的伤害 -10%`,
-    "马其顿教义": /*html*/`马其顿教义<br>兵营、靶场和马厩可以切换教义 `,
+    "马其顿准则": /*html*/`马其顿准则<br>兵营、靶场和马厩可以切换招募准则 `,
     "马其顿步兵护甲升级": /*html*/`马其顿步兵护甲升级<br>步兵护甲升级作用于骑兵`,
     "马其顿攻城器": /*html*/`马其顿攻城器<br>攻城器+1远程护甲，对建筑伤害+30%`,
     "马其顿团队加成": /*html*/`马其顿团队加成<br>哨站可以升级为要塞哨站，可使10格半径内的部队移动速度+20%`,
@@ -992,7 +992,7 @@ let ayanami = {
     "精锐逆刃刀战士": /*html*/`精锐逆刃刀战士<br>Elite Rhomphaia Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>快速的反骑兵步兵部队`,
 
 
-    "老练千夫长": /*html*/`老练千夫长<br>Veteran Chiliarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>征招教义效率+33%`,
+    "老练千夫长": /*html*/`老练千夫长<br>Veteran Chiliarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>征招准则效率+33%`,
     "世界的尽头": /*html*/`世界的尽头<br>Ends of the World<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>要塞哨站光环范围+5，并每分钟恢复光环范围内单位30生命值`,
     "伙伴步兵": /*html*/`伙伴步兵<br>Pezhetairoi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>方阵兵最小射程减半`,
     "萨里沙骑兵": /*html*/`萨里沙骑兵<br>Sarissophoroi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>伙伴骑兵获得快速冲锋攻击`,
