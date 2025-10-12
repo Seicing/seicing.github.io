@@ -514,6 +514,8 @@ let ayanami = {
     "拜占庭海军部署": /*html*/`海军部署<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png' width='20px'>海军部署：军事单位从运输船卸载后移动速度提高50%，持续12秒`,
     "拜占庭凯旋": /*html*/`帝国竞技场 - 凯旋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/凯旋.png' width='20px'>帝国竞技场 - 凯旋：激活后使骑兵伤害+4，移动速度+10%，每秒恢复2生命值`,
     "拜占庭商队橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：商队生产20%贸易量的橄榄油`,
+    "拜占庭渔船橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：渔船产生采集量20%的橄榄油`,
+    "拜占庭村民橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：村民从浆果丛/橄榄树林/近海鱼群获取采集量50%/20%/10%的橄榄油`,
     "拜占庭水池征兵": /*html*/`水池 - 征兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/征兵.png' width='20px'>水池 - 征兵：根据水位，水池影响力范围内增加20%/40%/60%/80%/100%军事单位生产率`,
     "拜占庭水池辩证法": /*html*/`水池 - 辩证法<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/辩证法.png' width='20px'>水池 - 辩证法：根据水位，水池影响力范围内增加30%/60%/90%/120%/150%研究效率`,
     "拜占庭水池保护": /*html*/`水池 - 保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/保护.png' width='20px'>水池 - 保护：根据水位，水池影响力范围内建筑物减少5%/10%/15%/20%/25%受到的伤害`,
@@ -1085,10 +1087,20 @@ function setDefaultVisibleSpansForCiv(civ) {
 
     // 配置表：每个文明对应要默认显示的 span id 列表
     const civDefaults = {
-        mon: ["Extra9", "Extra88",],
+        abb: ["Extra60",],
+        ayy: ["Extra75",],
+        sul: ["Extra76",],
+        tug: ["Extra77",],
+        eng: ["Extra56",],
+        hol: ["Extra57",],
+        mon: ["Extra9", "Extra88", "Extra58",],
+        goh: ["Extra59",],
         fre: ["Extra106",],
         jda: ["Extra107",],
-        // ……可以继续加更多
+        kcr: ["Extra55",],
+        ott: ["Extra78",],
+        byz: ["Extra68", "Extra10",],
+        mac: ["Extra63",],
     };
 
     const list = civDefaults[civ];
