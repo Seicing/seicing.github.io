@@ -1140,26 +1140,21 @@ function setIconActive(icon, active) {
         // 默认都隐藏
         groupEls.forEach(el => el.style.display = 'none');
 
-        // 决策逻辑
-        let showEl = null;
+        // 优先级显示逻辑：b > a > base > defaultvisible
         if (hasB) {
-            showEl = `${baseId}-b`;
+            const bEl = document.getElementById(`${baseId}-b`);
+            if (bEl) bEl.style.display = 'inline';
         } else if (hasA) {
-            showEl = `${baseId}-a`;
+            const aEl = document.getElementById(`${baseId}-a`);
+            if (aEl) aEl.style.display = 'inline';
         } else if (hasBase) {
-            showEl = baseId;
+            const baseEl = document.getElementById(baseId);
+            if (baseEl) baseEl.style.display = 'inline';
         } else {
-            // 若都未激活 → 检查是否有 data-defaultvisible="1"
+            // 都未激活，检查默认可见项
             const defaultEl = groupEls.find(el => el.dataset.defaultvisible === "1");
-            if (defaultEl) showEl = defaultEl.id;
+            if (defaultEl) defaultEl.style.display = 'inline';
         }
-
-        // 显示最终选定的元素
-        if (showEl) {
-            const el = document.getElementById(showEl);
-            if (el) el.style.display = 'inline';
-        }
-
 
     }
 
