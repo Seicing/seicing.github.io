@@ -386,7 +386,12 @@
             <td data-base="1.25" id="speed"> </td>
         </tr>
         <tr>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damageranged.png" width="25px">远程伤害</td>
+            <td>
+                <span id="Extra200" data-defaultvisible="1" style="display:inline"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damageranged.png" width="25px">远程伤害</span>
+                <span id="Extra200-a" style="display:none"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagesiege.png"
+                        width="25px">攻城伤害</span>
+            </td>
             <td data-base="35" id="damage"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/brust.png" width="25px">多段攻击</td>
             <td data-base="1" id="brust"> </td>
@@ -406,8 +411,6 @@
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/掌舵人.png" width="20px">掌舵人：10秒内提高移动速度40%，进入战斗马上失效<br>
                 <span id="Extra43" style="display:none;"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/旋转加农炮.png"
                         width="20px">旋转加农炮：解锁旋转加农炮(15远程伤害，6攻击范围，3.0攻击速度)<br></span>
-                <span id="Extra45" style="display:none;"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/舰载炮.png"
-                        width="20px">舰载炮：主炮替换成火炮，伤害变成攻城伤害<br></span>
                 <span id="Extra39" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png"
                         width="20px">登陆部队：船只接近码头时移动速度+15%，持续10秒<br></span>
             </td>
@@ -431,7 +434,7 @@
         <div class="icon" data-text="Extra43"><a onmousemove="showPic(event,'旋转加农炮');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/旋转加农炮.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add add add" data-text="Extra45" data-type="range damage bonusdamage1"
+        <div class="icon" data-mode="add add add" data-text="Extra200-a" data-type="range damage bonusdamage1"
             data-value="2 5 25"><a onmousemove="showPic(event,'舰载炮');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/舰载炮.png" width="30px"></a>
         </div>
