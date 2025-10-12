@@ -1116,47 +1116,44 @@ function setIconActive(icon, active) {
         const txtEl = document.getElementById(textId);
         if (!txtEl) return;
 
-        // 提取互斥组名（默认以 id 的基础部分为组，如 Extra11 / Extra11-a → 组名 Extra11）
-        const baseId = textId.replace(/-a$/, "");
-
-        // 找出同组内所有 span（例如 Extra11, Extra11-a）
+        // 获取同组 span
         const groupEls = Array.from(document.querySelectorAll(`[id^="${baseId}"]`))
             .filter(el => el.id === baseId || el.id.startsWith(baseId + "-"));
 
-        // 找出同组内所有 icon（带 data-text 的）
-        const groupIcons = Array.from(document.querySelectorAll(`.icon[data-text^="${baseId}"]`));
-
-        // 先更新当前 icon 的显示状态
-        txtEl.style.display = active ? 'inline' : 'none';
-
-        // 获取当前同组哪些按钮处于激活状态
+        // 获取同组 active icon
         const activeIcons = groupIcons.filter(i => i.classList.contains('active'));
-
-        // ---- 根据激活情况判断最终显示（支持 -a / -b 三级） ----
-        const hasBase = activeIcons.some(i => (i.dataset.text || "").replace(/-(a|b)$/, "") === baseId);
-        const hasA = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-a`);
-        const hasB = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-b`);
 
         // 默认都隐藏
         groupEls.forEach(el => el.style.display = 'none');
 
-        // 决策逻辑
-        let showEl = null;
-        if (hasB) {
-            showEl = `${baseId}-b`;
-        } else if (hasA) {
-            showEl = `${baseId}-a`;
-        } else if (hasBase) {
-            showEl = baseId;
-        } else {
-            // 若都未激活 → 检查是否有 data-defaultvisible="1"
-            const defaultEl = groupEls.find(el => el.dataset.defaultvisible === "1");
-            if (defaultEl) showEl = defaultEl.id;
+        // 决策显示逻辑
+        let showId = null;
+
+        // 优先显示 -b
+        const bIcon = activeIcons.find(i => i.dataset.text === `${baseId}-b`);
+        if (bIcon) showId = `${baseId}-b`;
+
+        // 其次显示 -a（只有没有 -b 的情况下才考虑）
+        if (!showId) {
+            const aIcon = activeIcons.find(i => i.dataset.text === `${baseId}-a`);
+            if (aIcon) showId = `${baseId}-a`;
         }
 
-        // 显示最终选定的元素
-        if (showEl) {
-            const el = document.getElementById(showEl);
+        // 再显示 base（没有 -b/-a 激活时）
+        if (!showId) {
+            const baseIcon = activeIcons.find(i => (i.dataset.text || "").replace(/-(a|b)$/, "") === baseId);
+            if (baseIcon) showId = baseId;
+        }
+
+        // 如果都没有激活，显示 data-defaultvisible="1"
+        if (!showId) {
+            const defaultEl = groupEls.find(el => el.dataset.defaultvisible === "1");
+            if (defaultEl) showId = defaultEl.id;
+        }
+
+        // 最终显示选中的元素
+        if (showId) {
+            const el = document.getElementById(showId);
             if (el) el.style.display = 'inline';
         }
 
