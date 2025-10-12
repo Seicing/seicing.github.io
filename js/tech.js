@@ -1307,7 +1307,22 @@ function bindFilterButtons() {
             const keyword = btn.dataset.filter;
             filterByGame(keyword);
             applyButtonUpdates(btn);
-            setDefaultVisibleSpansForCiv(keyword); // ----------- 新增 -----------
+            setDefaultVisibleSpansForCiv(keyword);
+
+            requestAnimationFrame(() => {
+                document.querySelectorAll(`.icon[data-defaultbonus="1"]`).forEach(icon => {
+                    const civs = icon.dataset.civ ? icon.dataset.civ.split(/\s+/) : [];
+                    if (
+                        civs.includes(keyword) &&
+                        icon.style.display !== 'none' &&
+                        !icon.classList.contains('active') &&
+                        !icon.classList.contains('selected')
+                    ) {
+                        icon.click();
+                    }
+                });
+            });
+
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
