@@ -1058,6 +1058,53 @@ function updateTable() {
     });
 }
 
+
+
+
+// ----------- 根据文明设置默认显示的 span（带例外白名单） -----------
+function setDefaultVisibleSpansForCiv(civ) {
+    // 固定默认显示的 ID 列表（这些不会因为文明切换而隐藏）
+    const alwaysVisible = ["Extra200"]; // 👈 可以添加多个 id
+
+    // 清除之前的默认可见标记（但保留 alwaysVisible 里的）
+    document.querySelectorAll('[data-defaultvisible="1"]').forEach(el => {
+        if (!alwaysVisible.includes(el.id)) {
+            el.removeAttribute('data-defaultvisible');
+            el.style.display = 'none';
+        }
+    });
+
+    // 保证例外项始终存在并显示
+    alwaysVisible.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.dataset.defaultvisible = "1";
+            el.style.display = "inline";
+        }
+    });
+
+    // 配置表：每个文明对应要默认显示的 span id 列表
+    const civDefaults = {
+        mon: ["Extra9"],
+        // ……可以继续加更多
+    };
+
+    const list = civDefaults[civ];
+    if (!list) return;
+
+    // 应用该文明的默认显示配置
+    list.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.dataset.defaultvisible = "1";
+            el.style.display = "inline";
+        }
+    });
+}
+
+
+
+
 // ----------- helper：同步 icon 的副作用（class、data-text、multiplier） -----------
 function setIconActive(icon, active) {
     if (!icon) return;
@@ -1085,29 +1132,34 @@ function setIconActive(icon, active) {
         // 获取当前同组哪些按钮处于激活状态
         const activeIcons = groupIcons.filter(i => i.classList.contains('active'));
 
-        // ---- 根据激活情况判断最终显示 ----
-        const hasBase = activeIcons.some(i => (i.dataset.text || "").replace(/-a$/, "") === baseId);
+        // ---- 根据激活情况判断最终显示（支持 -a / -b 三级） ----
+        const hasBase = activeIcons.some(i => (i.dataset.text || "").replace(/-(a|b)$/, "") === baseId);
         const hasA = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-a`);
+        const hasB = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-b`);
 
         // 默认都隐藏
         groupEls.forEach(el => el.style.display = 'none');
 
-        if (hasA) {
-            // 若 -a 激活 → 优先显示 -a
+        if (hasB) {
+            // 若 -b 激活 → 优先显示 -b
+            const bEl = document.getElementById(`${baseId}-b`);
+            if (bEl) bEl.style.display = 'inline';
+        } else if (hasA) {
+            // 若仅 -a 激活（或与 base 共存） → 显示 -a
             const aEl = document.getElementById(`${baseId}-a`);
             if (aEl) aEl.style.display = 'inline';
         } else if (hasBase) {
-            // 若基础激活且 -a 未激活 → 显示基础
+            // 仅 base 激活 → 显示 base
             const baseEl = document.getElementById(baseId);
             if (baseEl) baseEl.style.display = 'inline';
         } else {
-            // 都未激活 → 都隐藏
-            // 如果该组有“默认可见项”（比如 Extra10 默认显示），可在这里恢复默认
+            // 都未激活 → 恢复默认
             const baseEl = document.getElementById(baseId);
             if (baseEl && baseEl.dataset.defaultvisible === "1") {
                 baseEl.style.display = 'inline';
             }
         }
+
     }
 
 
@@ -1257,6 +1309,7 @@ function bindFilterButtons() {
             const keyword = btn.dataset.filter;
             filterByGame(keyword);
             applyButtonUpdates(btn);
+            setDefaultVisibleSpansForCiv(keyword); // ----------- 新增 -----------
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
