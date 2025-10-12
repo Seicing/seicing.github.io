@@ -1117,7 +1117,7 @@ function setIconActive(icon, active) {
         if (!txtEl) return;
 
         // 提取互斥组名（默认以 id 的基础部分为组，如 Extra11 / Extra11-a → 组名 Extra11）
-        const baseId = textId.replace(/-a$/, "");
+        const baseId = textId.replace(/-[ab]$/, "");
 
         // 找出同组内所有 span（例如 Extra11, Extra11-a）
         const groupEls = Array.from(document.querySelectorAll(`[id^="${baseId}"]`))
