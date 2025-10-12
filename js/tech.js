@@ -1308,24 +1308,6 @@ function bindFilterButtons() {
             filterByGame(keyword);
             applyButtonUpdates(btn);
             setDefaultVisibleSpansForCiv(keyword);
-
-            // 等待两帧，确保 filterByGame 完成渲染更新
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    document.querySelectorAll(`.icon[data-defaultbonus="1"]`).forEach(icon => {
-                        const civs = icon.dataset.civ ? icon.dataset.civ.split(/\s+/) : [];
-                        if (
-                            civs.includes(keyword) &&
-                            icon.style.display !== 'none' &&
-                            !icon.classList.contains('active') &&
-                            !icon.classList.contains('selected')
-                        ) {
-                            icon.click();
-                        }
-                    });
-                });
-            });
-
             const url = new URL(window.location);
             url.searchParams.set("civ", keyword);
             window.history.replaceState({}, "", url);
