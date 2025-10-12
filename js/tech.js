@@ -1140,25 +1140,26 @@ function setIconActive(icon, active) {
         // 默认都隐藏
         groupEls.forEach(el => el.style.display = 'none');
 
+        // 决策逻辑
+        let showEl = null;
         if (hasB) {
-            // 若 -b 激活 → 优先显示 -b
-            const bEl = document.getElementById(`${baseId}-b`);
-            if (bEl) bEl.style.display = 'inline';
+            showEl = `${baseId}-b`;
         } else if (hasA) {
-            // 若仅 -a 激活（或与 base 共存） → 显示 -a
-            const aEl = document.getElementById(`${baseId}-a`);
-            if (aEl) aEl.style.display = 'inline';
+            showEl = `${baseId}-a`;
         } else if (hasBase) {
-            // 仅 base 激活 → 显示 base
-            const baseEl = document.getElementById(baseId);
-            if (baseEl) baseEl.style.display = 'inline';
+            showEl = baseId;
         } else {
-            // 都未激活 → 恢复默认
-            const baseEl = document.getElementById(baseId);
-            if (baseEl && baseEl.dataset.defaultvisible === "1") {
-                baseEl.style.display = 'inline';
-            }
+            // 若都未激活 → 检查是否有 data-defaultvisible="1"
+            const defaultEl = groupEls.find(el => el.dataset.defaultvisible === "1");
+            if (defaultEl) showEl = defaultEl.id;
         }
+
+        // 显示最终选定的元素
+        if (showEl) {
+            const el = document.getElementById(showEl);
+            if (el) el.style.display = 'inline';
+        }
+
 
     }
 
