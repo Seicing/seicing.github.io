@@ -1085,9 +1085,9 @@ function setDefaultVisibleSpansForCiv(civ) {
 
     // 配置表：每个文明对应要默认显示的 span id 列表
     const civDefaults = {
-        mon: ["Extra9"],
-        fre: ["Extra106"],
-        jda: ["Extra107"],
+        mon: ["Extra9", "Extra88",],
+        fre: ["Extra106",],
+        jda: ["Extra107",],
         // ……可以继续加更多
     };
 
