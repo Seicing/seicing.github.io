@@ -1063,11 +1063,53 @@ function setIconActive(icon, active) {
     if (!icon) return;
     icon.classList.toggle('active', !!active);
 
-    // data-text 显示/隐藏（直接控制对应 id 的元素）
+    // data-text 显示/隐藏（支持互斥 + 优先级逻辑）
     if (icon.dataset.text) {
-        const txtEl = document.getElementById(icon.dataset.text);
-        if (txtEl) txtEl.style.display = active ? 'inline' : 'none';
+        const textId = icon.dataset.text;
+        const txtEl = document.getElementById(textId);
+        if (!txtEl) return;
+
+        // 提取互斥组名（默认以 id 的基础部分为组，如 Extra11 / Extra11-a → 组名 Extra11）
+        const baseId = textId.replace(/-a$/, "");
+
+        // 找出同组内所有 span（例如 Extra11, Extra11-a）
+        const groupEls = Array.from(document.querySelectorAll(`[id^="${baseId}"]`))
+            .filter(el => el.id === baseId || el.id.startsWith(baseId + "-"));
+
+        // 找出同组内所有 icon（带 data-text 的）
+        const groupIcons = Array.from(document.querySelectorAll(`.icon[data-text^="${baseId}"]`));
+
+        // 先更新当前 icon 的显示状态
+        txtEl.style.display = active ? 'inline' : 'none';
+
+        // 获取当前同组哪些按钮处于激活状态
+        const activeIcons = groupIcons.filter(i => i.classList.contains('active'));
+
+        // ---- 根据激活情况判断最终显示 ----
+        const hasBase = activeIcons.some(i => (i.dataset.text || "").replace(/-a$/, "") === baseId);
+        const hasA = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-a`);
+
+        // 默认都隐藏
+        groupEls.forEach(el => el.style.display = 'none');
+
+        if (hasA) {
+            // 若 -a 激活 → 优先显示 -a
+            const aEl = document.getElementById(`${baseId}-a`);
+            if (aEl) aEl.style.display = 'inline';
+        } else if (hasBase) {
+            // 若基础激活且 -a 未激活 → 显示基础
+            const baseEl = document.getElementById(baseId);
+            if (baseEl) baseEl.style.display = 'inline';
+        } else {
+            // 都未激活 → 都隐藏
+            // 如果该组有“默认可见项”（比如 Extra10 默认显示），可在这里恢复默认
+            const baseEl = document.getElementById(baseId);
+            if (baseEl && baseEl.dataset.defaultvisible === "1") {
+                baseEl.style.display = 'inline';
+            }
+        }
     }
+
 
     // multiplier 处理（把 target 的 data-multiple 设为 basemultiple 或 icon 的 multiplier）
     if (icon.dataset.multiplier && icon.dataset.target) {
