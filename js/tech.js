@@ -506,7 +506,7 @@ let ayanami = {
     "日本兵营": /*html*/`心平气和<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png' width='20px'>心平气和：兵营成本-50%`,
     "日本平等院": /*html*/`平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练佛教僧侣成本-33%`,
     "日本平等院2": /*html*/`平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练一向一揆僧侣成本-50%`,
-    "拜占庭建造石头": /*html*/`野外石料<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>野外石料：建造建筑成功后获得不同数量的石头`,
+    "拜占庭建造石头": /*html*/`野外石料<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>野外石料：建造建筑成功后，获得已建造建筑每格占地面积2的石头`,
     "拜占庭橄榄园": /*html*/`大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得橄榄油效率+60%`,
     "拜占庭回血": /*html*/`地下水宫 - 朝圣者之瓶<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朝圣者之瓶.png' width='20px'>地下水宫 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒`,
     "拜占庭边防部队防御": /*html*/`边防部队防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/边防部队防御.png' width='20px'>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成(+3/+4/+5/+6对大象额外伤害)`,
@@ -515,7 +515,7 @@ let ayanami = {
     "拜占庭凯旋": /*html*/`帝国竞技场 - 凯旋<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/凯旋.png' width='20px'>帝国竞技场 - 凯旋：激活后使骑兵伤害+4，移动速度+10%，每秒恢复2生命值`,
     "拜占庭商队橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：商队生产20%贸易量的橄榄油`,
     "拜占庭渔船橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：渔船产生采集量20%的橄榄油`,
-    "拜占庭村民橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：村民从浆果丛/橄榄树林/近海鱼群获取采集量50%/20%/10%的橄榄油`,
+    "拜占庭村民橄榄油": /*html*/`橄榄油<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/橄榄油.png' width='20px'>橄榄油：村民从浆果丛/橄榄树林/鱼群获取采集量50%/20%/10%的橄榄油`,
     "拜占庭水池征兵": /*html*/`水池 - 征兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/征兵.png' width='20px'>水池 - 征兵：根据水位，水池影响力范围内增加20%/40%/60%/80%/100%军事单位生产率`,
     "拜占庭水池辩证法": /*html*/`水池 - 辩证法<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/辩证法.png' width='20px'>水池 - 辩证法：根据水位，水池影响力范围内增加30%/60%/90%/120%/150%研究效率`,
     "拜占庭水池保护": /*html*/`水池 - 保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/保护.png' width='20px'>水池 - 保护：根据水位，水池影响力范围内建筑物减少5%/10%/15%/20%/25%受到的伤害`,
@@ -1087,10 +1087,10 @@ function setDefaultVisibleSpansForCiv(civ) {
 
     // 配置表：每个文明对应要默认显示的 span id 列表
     const civDefaults = {
-        abb: ["Extra60",],
-        ayy: ["Extra75",],
-        sul: ["Extra76",],
-        tug: ["Extra77",],
+        abb: ["Extra60", "Extra3",],
+        ayy: ["Extra75", "Extra33",],
+        sul: ["Extra76", "Extra4",],
+        tug: ["Extra77", "Extra44",],
         eng: ["Extra56",],
         hol: ["Extra57",],
         mon: ["Extra9", "Extra88", "Extra58",],
@@ -1099,8 +1099,11 @@ function setDefaultVisibleSpansForCiv(civ) {
         jda: ["Extra107",],
         kcr: ["Extra55",],
         ott: ["Extra78",],
+        mal: ["Extra39",],
         byz: ["Extra68", "Extra10",],
         mac: ["Extra63",],
+        jpn: ["Extra61",],
+        sen: ["Extra62",],
     };
 
     const list = civDefaults[civ];
