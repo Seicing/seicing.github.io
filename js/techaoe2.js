@@ -903,7 +903,7 @@ let ayanami = {
 
     "经济政策": /*html*/`经济政策<br>Ecomonic Policy<br>村民从树木中获取食物的效率+50%`,
     "海军政策": /*html*/`海军政策<br>Naval Policy<br>步弓手和战舰黄金成本-20%`,
-    "军事政策": /*html*/`军事政策<br>Military Policy<br>降低33%军事生产建筑(攻城武器厂外)的木材成本，击杀敌方可获得5黄金`,
+    "军事政策": /*html*/`军事政策<br>Military Policy<br>降低25%军事生产建筑(攻城武器厂外)的木材成本，击杀敌方可获得5黄金`,
 
 
     "联队长": /*html*/`联队长<br>Taxiarchs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>将军为附近的近战部队提供+1攻击力，同时光环范围+33%`,
