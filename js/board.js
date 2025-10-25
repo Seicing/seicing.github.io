@@ -144,7 +144,7 @@ function sendMsg() {
     if (text.trim() === "") return alert('请输入内容。');
     if (text.length > 200) return alert('内容不可超过200字节。');
     new AV.Object('TestObject').save({ text: text, author: author }).then(function () {
-        alert('提交成功！');
+        alert('提交成功！如果回复导致换页请手动刷新！');
         // 加载最后一页，并且不滚动
         loadPage(pageMax, false);
     }, function (error) {
