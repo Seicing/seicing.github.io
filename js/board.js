@@ -138,20 +138,33 @@ function renderComments(results, floor) {
 }
 
 function sendMsg() {
-    var textEl = document.getElementById('comment_text'), authorEl = document.getElementById('comment_author');
+    var textEl = document.getElementById('comment_text'),
+        authorEl = document.getElementById('comment_author');
     if (!textEl || !authorEl) return;
-    var text = textEl.value, author = authorEl.value;
+
+    var text = textEl.value,
+        author = authorEl.value;
+
     if (text.trim() === "") return alert('请输入内容。');
     if (text.length > 200) return alert('内容不可超过200字节。');
+
     new AV.Object('TestObject').save({ text: text, author: author }).then(function () {
-        alert('提交成功！正在跳转到最新留言……');
-        // 加载最后一页，并且不滚动
-        window.location.href = '?page=' + pageMax;
+        // 留言保存成功后重新计算页数
+        var query = new AV.Query('TestObject');
+        query.count().then(function (count) {
+            var newPageMax = Math.ceil(count / PAGE_COUNT) || 1;
+            alert('提交成功！');
+
+            // 跳转到最新页并加上锚点，便于加载后自动滚动
+            window.location.href = '?page=' + newPageMax + '#liuyanban';
+        });
     }, function (error) {
         console.error('提交留言时出错:', error);
         alert('提交失败，可能是网络问题，请稍后重试。');
     });
 }
+
+
 
 // 设置分页链接的点击监听器
 function setupPaginationListener() {
