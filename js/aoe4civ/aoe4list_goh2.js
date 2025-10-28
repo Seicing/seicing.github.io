@@ -107,9 +107,9 @@ export const aoe4list = [
   {
     "civ": "goh",
     "section": "军事单位",
-    "name": "金帐汗",
-    "img": "金帐汗",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/金帐汗"
+    "name": "拔都汗",
+    "img": "拔都汗",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/拔都汗"
   },
   {
     "civ": "goh",

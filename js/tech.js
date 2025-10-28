@@ -786,7 +786,9 @@ let ayanami = {
     "汗减益箭矢": /*html*/`汗减益箭矢<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒`,
     "土芯墙": /*html*/`土芯墙<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>强化哨站和木栅栏火焰护甲+3，生命值+300`,
 
-    "轮牧": /*html*/`轮牧<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>村民采集效率提高10%（不包括放牧绵羊），此科技可研发2次`,
+    "轮牧": /*html*/`轮牧<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>村民采集效率提高10%（不包括放牧绵羊）`,
+    "过度放牧": /*html*/`过度放牧<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>村民采集效率提高10%（不包括放牧绵羊）`,
+
     "敖包祭品": /*html*/`敖包祭品<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>敖包石料采集速率+30%`,
 
     "战场救援": /*html*/`战场救援<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>肉盾装备护盾，可使远程护甲+2，近战护甲+2，生命值+25`,
@@ -1127,7 +1129,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         eng: ["Extra56",],
         hol: ["Extra57",],
         mon: ["Extra9", "Extra88", "Extra58",],
-        goh: ["Extra59",],
+        goh: ["Extra59", "Extra88",],
         fre: ["Extra106",],
         jda: ["Extra107",],
         kcr: ["Extra55",],

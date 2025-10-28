@@ -58,9 +58,9 @@ export const aoe4list = [
   {
     "civ": "sen",
     "section": "军事单位",
-    "name": "金棒武士",
-    "img": "金棒武士",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/金棒武士"
+    "name": "金碎棒日本武士",
+    "img": "金碎棒日本武士",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/金碎棒日本武士"
   },
   {
     "civ": "sen",
@@ -93,9 +93,9 @@ export const aoe4list = [
   {
     "civ": "sen",
     "section": "军事单位",
-    "name": "种子岛铁炮足轻",
-    "img": "种子岛铁炮足轻",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/种子岛铁炮足轻"
+    "name": "火绳枪足轻",
+    "img": "火绳枪足轻",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/火绳枪足轻"
   },
   {
     "civ": "sen",
