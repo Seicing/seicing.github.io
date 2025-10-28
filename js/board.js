@@ -153,10 +153,10 @@ function sendMsg() {
         var query = new AV.Query('TestObject');
         query.count().then(function (count) {
             var newPageMax = Math.ceil(count / PAGE_COUNT) || 1;
-            alert('提交成功！');
+            alert('提交成功！页面将自动刷新');
 
             // 跳转到最新页并加上锚点，便于加载后自动滚动
-            window.location.href = '?page=' + newPageMax + '#liuyanban';
+            window.location.href = '?page=' + newPageMax + '#lauyinban';
         });
     }, function (error) {
         console.error('提交留言时出错:', error);
