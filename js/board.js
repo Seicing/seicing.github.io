@@ -81,7 +81,7 @@ function loadPage(page, shouldScroll) {
 
         // 仅在 shouldScroll 为 true 时执行滚动
         if (shouldScroll) {
-            var commentsElement = document.getElementById('liuyanban'); // 您的锚点ID
+            var commentsElement = document.getElementById('lauyinban'); // 您的锚点ID
             if (commentsElement) {
                 commentsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
