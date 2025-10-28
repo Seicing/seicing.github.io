@@ -727,8 +727,8 @@ let ayanami = {
     "罗斯石墙限制": /*html*/`斯巴斯克塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斯巴斯克塔.png' width='20px'>斯巴斯克塔：必须通过时代4建造斯巴斯克塔地标才能解锁石制防御设施建造`,
     "木制要塞效果": /*html*/`影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/罗斯.png' width='20px'>影响力：木制要塞影响力范围内可以多带回20%木材`,
     "圣三一修道院效果": /*html*/`圣三一修道院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣三一修道院.png' width='20px'>圣三一修道院：圣三一修道院和所有修道院生产僧侣战士的成本-50%`,
-    "金帐汗国双倍训练": /*html*/`汗国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>汗国：金帐汗国单位总是花费双倍的成本两个同时训练`,
-    "金帐汗国石头军团": /*html*/`石头军团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>石头军团：可以以较少的石头快速训练独特部队`,
+    "金帐汗国双倍训练": /*html*/`汗国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>汗国：花费2倍成本同时训练2个单位`,
+    "金帐汗国石料军队": /*html*/`石料军队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>石料军队：可以以较少的石头快速训练独特部队`,
     "金帐汗国敖包": /*html*/`石材技术和敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>石材技术和敖包：每个时代都会解锁更多的敖包建造上限`,
     "圣物敖包效果": /*html*/`圣物敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png' width='20px'>圣物敖包：萨满消耗1个持有的圣物，将其转化为敖包，可突破敖包建造上限`,
     "金帐汗国建筑推车": /*html*/`建筑推车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/建筑推车.png' width='20px'>建筑推车：选择封建时代升级可获得建筑推车，指定一个地点展开为军事生产建筑`,
@@ -755,17 +755,50 @@ let ayanami = {
     "马其顿王朝地下水宫效率": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内工作效率增加`,
     "大名光环": /*html*/`大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：待补充`,
     "战国大名早期大筒": /*html*/`解锁大筒兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/解锁大筒兵.png' width='20px'>解锁大筒兵：解锁城堡时代的早期大筒兵`,
+
+    "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力`,
+    "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒`,
+
+
     "滩头冲车": /*html*/`滩头冲车<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>打开冲车侧面防御甲板，驻扎的部队可以从中发射箭矢攻击敌人`,
-    "光荣冲锋": /*html*/`光荣冲锋<br>Glorious Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁光荣冲锋，激活后，部队在冲锋时受到的伤害减少，并提升速度`,
-    "解锁畜栏法令": /*html*/`解锁畜栏法令<br>Unlock Stockyard Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁畜栏法令，允许强化前哨影响力范围内的畜栏在工作时生成黄金`,
-    "解锁签军法令": /*html*/`解锁签军法令<br>Unlock Kharash Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>800  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>解锁签军法令，允许强化前哨影响力范围内的军事生产建筑在生产部队时，免费生成额外的签军`,
+
+    "荣光冲锋": /*html*/`荣光冲锋<br>Glorious Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>为哨站解锁荣光冲锋能力，激活后，10秒内向所有玩家显示哨站及附近区域，10秒后哨站附近的所有盟友单位将获得+50%移动速度，受到伤害-15%，持续30秒`,
+
+    "解锁牲畜围栏法令": /*html*/`解锁牲畜围栏法令<br>Unlock Stockyard Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁牲畜围栏法令，允许强化前哨影响力范围内的牲畜围栏在工作时生成黄金`,
+    "解锁肉盾法令": /*html*/`解锁肉盾法令<br>Unlock Kharash Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>解锁肉盾法令，允许强化前哨影响力范围内的军事生产建筑在生产部队时，免费生成额外的肉盾`,
+    "解锁征收罗斯贡品": /*html*/`解锁征收罗斯贡品<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>解锁征收罗斯贡品，【待补充】`,
+
+
     "增援部队": /*html*/`增援部队<br>Reinforcement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>1000   <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>不增加部队的训练成本，增加生产单位时的获得的部队数量`,
-    "汗与近卫": /*html*/`汗与近卫<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>降低金帐汗和土尔扈特近卫20%的成本，并增加50生命值`,
+
+    "汗与近卫": /*html*/`汗与近卫<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>降低金帐汗和土尔扈特20%的成本，并增加50生命值`,
     "建筑推车": /*html*/`建筑推车<br>Building Carts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>生产2辆建筑推车，展开后可铺设为军事建筑，此后的每个时代升级都会获得额外的建筑推车`,
-    "金帐汗国集会": /*html*/`金帐汗国集会<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>强化敖包骑手集合，生产骑手时额外生产1个武士和蒙古突骑，并重新设定组合的成本<br>每建造1个敖包和金色大帐，在金色大帐集结1个骑手和蒙古突骑`,
+
+
+    "莫斯科贡赋": /*html*/`莫斯科贡赋<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>重步兵、重骑兵远防护甲+2，木材每分钟+200，每个装备螺丝护盾的单位木材-2`,
+
+
     "圣物敖包": /*html*/`圣物敖包<br>Relic Ovoos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>萨满消耗1个持有的圣物，将其转化为敖包，可突破敖包建造上限，并提升20%的敖包收集效率`,
-    "驿站贸易网络": /*html*/`驿站贸易网络<br>Yam Network Trade<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>金色大帐每10秒为每个要塞前哨产生10黄金，最多可让6个要塞前哨生效`,
-    "石头军团": /*html*/`石头军团<br>Stone Armies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>金色大帐可以以较少的石头快速训练独特部队`,
+    "驿站贸易网络": /*html*/`驿站贸易网络<br>Yam Network Trade<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>黄金帐篷每10秒为每个设防哨站产生10黄金，最多可让6个设防哨站生效`,
+    "石料军队": /*html*/`石料军队<br>Stone Armies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>黄金帐篷可以以较少的石头快速训练独特部队`,
+
+
+    "汗减益箭矢": /*html*/`汗减益箭矢<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒`,
+    "土芯墙": /*html*/`土芯墙<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>强化哨站和木栅栏火焰护甲+3，生命值+300`,
+
+    "轮牧": /*html*/`轮牧<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>村民采集效率提高10%（不包括放牧绵羊），此科技可研发2次`,
+    "敖包祭品": /*html*/`敖包祭品<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>敖包石料采集速率+30%`,
+
+    "战场救援": /*html*/`战场救援<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>肉盾装备护盾，可使远程护甲+2，近战护甲+2，生命值+25`,
+    "兵营援军": /*html*/`兵营援军<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>950 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>兵营批量生产数量+1，不增加资源成本和招募时间`,
+    "软甲金帐汗国": /*html*/`软甲<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>土尔扈特及骑手的远程和近战护甲+2，生命值+20`,
+    "萨莱长矛骑兵": /*html*/`萨莱长矛骑兵<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>每次攻击怯薛骑兵恢复生命值+1，攻击速度+10%。土尔扈特获得的治疗攻击效果与怯薛相同`,
+    "马厩援军": /*html*/`马厩援军<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>950 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>马厩批量生产数量+1，不增加资源成本和招募时间`,
+    "三连发": /*html*/`三连发<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>钦察弓兵会额外发射2箭，每支箭造成的伤害-50%`,
+    "靶场援军": /*html*/`靶场援军<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>950 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>靶场批量生产数量+1，不增加资源成本和招募时间`,
+
+
+
 
     "一向一揆生命值和伤害": /*html*/`一向一揆生命值和伤害<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "一向一揆恢复": /*html*/`一向一揆恢复<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,

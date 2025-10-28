@@ -51,9 +51,9 @@ export const aoe4list = [
   {
     "civ": "sen",
     "section": "军事单位",
-    "name": "日本武士",
+    "name": "薙刀日本武士",
     "img": "日本武士",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/日本武士"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/薙刀日本武士"
   },
   {
     "civ": "sen",
@@ -81,7 +81,7 @@ export const aoe4list = [
     "section": "军事单位",
     "name": "骑马武士",
     "img": "骑马武士",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/骑马武士"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/骑马武士战国大名"
   },
   {
     "civ": "sen",

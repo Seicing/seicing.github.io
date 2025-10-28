@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
-<html style="height:100%;">
+<html>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
-    <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/lavi2.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>手推炮</title>
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
@@ -33,12 +34,27 @@
 
 </head>
 
-<body style="height:100%;" id='scroll-2'>
-    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
-        <div id="wrapper2" style="height:auto;">
-            <div id="page" style="height:100%;">
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+
+            </div>
+            <div id="page">
                 <div id="content">
                     <div class="post">
+                        <h2 class="title"><a href="#"><b>
+<!--
+【标签：攻城器】
+【标签：手推炮】
+【标签：火药部队】
+【标签：通用部队】
+--></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
     <table cellpadding="5" frame="box" width="250px">
@@ -450,8 +466,9 @@
         </table>
     </div>
     <div id="gohText0" style="text-align:left;display:none">
-
         <!--金帐汗国部队-->
+        <span class="可汗战吼"></span><br>
+        <span class="汗减益箭矢2"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
@@ -822,6 +839,10 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra121" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png"
+                        width="20px">汗减益箭矢：汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒<br></span>
+                <span id="Extra122" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png"
+                        width="20px">可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力<br></span>
                 <span id="Extra119" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png"
                         width="20px">城堡网络：处于城堡网络内的部队增加20%/30%的攻击速度<br></span>
                 <span id="Extra118" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png"
@@ -859,6 +880,12 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="goh" data-text="Extra121"><a onmousemove="showPic(event,'汗减益箭矢2');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="goh" data-text="Extra122"><a onmousemove="showPic(event,'可汗战吼');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png" width="30px"></a>
+        </div>
         <div class="icon" data-game="byz mac" data-text="Extra118"><a onmousemove="showPic(event,'拜占庭海军部署');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运输船.png" width="30px"></a>
         </div>
@@ -1030,12 +1057,15 @@
 </div>
 
                         </div>
+                        <div class="izl-rmenu">
+                            <a href="#">
+                                <div class="btn_top"> </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:fixed; height:100%; width:220px">
-                    <div id='scroll-1'
-                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou1"><b>回到首页</b></a><br><br>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou1"><b>回到首页</b></a><br><br>
 <a href="#jia">简介</a><br>
 <a href="#sp">加成</a><br>
 <a href="#change">更新日志</a><br>
@@ -1044,7 +1074,6 @@
 <a href="#oth9370">模拟加成</a><br>
 <a href="#orig">同定位单位</a><br>
 
-                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -1053,11 +1082,11 @@
 
                 </div>
                 <div style="clear: both;">&nbsp;</div>
+
             </div>
 
         </div>
     </div>
-
 </body>
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>

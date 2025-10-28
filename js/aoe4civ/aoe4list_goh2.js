@@ -86,23 +86,23 @@ export const aoe4list = [
   {
     "civ": "goh",
     "section": "军事单位",
-    "name": "蒙古突骑",
-    "img": "蒙古突骑",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/蒙古突骑"
+    "name": "钦察弓兵",
+    "img": "钦察弓兵",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/钦察弓兵"
   },
   {
     "civ": "goh",
     "section": "军事单位",
-    "name": "签军",
-    "img": "签军",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/签军"
+    "name": "肉盾",
+    "img": "肉盾",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/肉盾"
   },
   {
     "civ": "goh",
     "section": "军事单位",
-    "name": "土尔扈特近卫",
-    "img": "土尔扈特近卫",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/土尔扈特近卫"
+    "name": "土尔扈特",
+    "img": "土尔扈特",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/土尔扈特"
   },
   {
     "civ": "goh",
@@ -110,6 +110,13 @@ export const aoe4list = [
     "name": "金帐汗",
     "img": "金帐汗",
     "link": "https://seicing.com/html/aoe2/unitaoe4/金帐汗"
+  },
+  {
+    "civ": "goh",
+    "section": "军事单位",
+    "name": "罗斯贡品",
+    "img": "罗斯贡品",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/罗斯贡品"
   },
   {
     "civ": "goh",
@@ -219,9 +226,9 @@ export const aoe4list = [
   {
     "civ": "goh",
     "section": "黑暗时代建筑",
-    "name": "畜栏",
-    "img": "畜栏",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/畜栏"
+    "name": "牲畜围栏",
+    "img": "牲畜围栏",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/牲畜围栏"
   },
   {
     "civ": "goh",
@@ -240,9 +247,9 @@ export const aoe4list = [
   {
     "civ": "goh",
     "section": "黑暗时代建筑",
-    "name": "要塞前哨",
-    "img": "要塞前哨",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/要塞前哨"
+    "name": "设防哨站",
+    "img": "设防哨站",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/设防哨站"
   },
   {
     "civ": "goh",
@@ -317,8 +324,8 @@ export const aoe4list = [
   {
     "civ": "goh",
     "section": "地标建筑",
-    "name": "金色大帐",
-    "img": "金色大帐",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/金色大帐"
+    "name": "黄金帐篷",
+    "img": "黄金帐篷",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/黄金帐篷"
   }
 ];
