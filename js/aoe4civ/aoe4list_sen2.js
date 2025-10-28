@@ -72,9 +72,9 @@ export const aoe4list = [
   {
     "civ": "sen",
     "section": "军事单位",
-    "name": "长枪骑兵",
-    "img": "长枪骑兵",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/长枪骑兵"
+    "name": "日本长枪骑兵",
+    "img": "日本长枪骑兵",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/日本长枪骑兵"
   },
   {
     "civ": "sen",
