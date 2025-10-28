@@ -144,9 +144,9 @@ function sendMsg() {
     if (text.trim() === "") return alert('请输入内容。');
     if (text.length > 200) return alert('内容不可超过200字节。');
     new AV.Object('TestObject').save({ text: text, author: author }).then(function () {
-        alert('提交成功！如果回复导致换页请手动刷新！');
+        alert('提交成功！正在跳转到最新留言……');
         // 加载最后一页，并且不滚动
-        loadPage(pageMax, false);
+        window.location.href = '?page=' + pageMax;
     }, function (error) {
         console.error('提交留言时出错:', error);
         alert('提交失败，可能是网络问题，请稍后重试。');
