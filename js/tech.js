@@ -753,7 +753,7 @@ let ayanami = {
     "马其顿王朝地下水宫木材": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的木材`,
     "马其顿王朝地下水宫食物": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的食物`,
     "马其顿王朝地下水宫效率": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内工作效率增加`,
-    "大名光环": /*html*/`大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：待补充`,
+    "大名光环": /*html*/`大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：【待补充】`,
     "战国大名早期大筒": /*html*/`大筒兵解锁<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大筒兵解锁.png' width='20px'>大筒兵解锁：解锁城堡时代的早期大筒兵`,
 
     "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力`,
@@ -774,9 +774,7 @@ let ayanami = {
     "汗与近卫": /*html*/`汗与近卫<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>降低金帐汗和土尔扈特20%的成本，并增加50生命值`,
     "建筑推车": /*html*/`建筑推车<br>Building Carts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>生产2辆建筑推车，展开后可铺设为军事建筑，此后的每个时代升级都会获得额外的建筑推车`,
 
-
     "莫斯科贡赋": /*html*/`莫斯科贡赋<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>重步兵、重骑兵远防护甲+2，木材每分钟+200，每个装备螺丝护盾的单位木材-2`,
-
 
     "圣物敖包": /*html*/`圣物敖包<br>Relic Ovoos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>萨满消耗1个持有的圣物，将其转化为敖包，可突破敖包建造上限，并提升20%的敖包收集效率`,
     "驿站贸易网络": /*html*/`驿站贸易网络<br>Yam Network Trade<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>黄金帐篷每10秒为每个设防哨站产生10黄金，最多可让6个设防哨站生效`,
@@ -816,8 +814,6 @@ let ayanami = {
     "改良长枪": /*html*/`改良长枪<br>Improved Yari<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>【待补充】`,
 
     "屋台农田采集": /*html*/`屋台农田采集<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>屋台可从附近农田采集食物，每块农田提供每分钟4食物`,
-
-
     "堡垒防御射箭槽": /*html*/`堡垒防御射箭槽<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>用默认射箭槽炮台升级所有瓦兰吉堡垒，能以6格武器攻击范围造成10伤害`,
 
     "长柄逆刃刀": /*html*/`长柄逆刃刀<br>Rhomphaia Swords<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>瓦兰吉卫队和瓦兰吉掠夺者装备长柄逆刃刀，瓦兰吉卫队对轻型步兵伤害+3，瓦兰吉掠夺者伤害+3`,
