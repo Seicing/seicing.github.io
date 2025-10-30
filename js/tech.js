@@ -783,7 +783,7 @@ let ayanami = {
     "牲畜围栏法令效果": /*html*/`牲畜围栏法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/牲畜围栏法令.png' width='20px'>牲畜围栏法令：设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金`,
     "肉盾法令效果": /*html*/`肉盾法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾法令.png' width='20px'>肉盾法令：每当招募任何单位时，设防哨站影响范围内的黄金帐篷和军事建筑都会额外生产一个肉盾`,
     "防御光环法令效果": /*html*/`防御光环法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png' width='20px'>防御光环法令：设防哨站附近单位的生命值 +10%`,
-    "肉盾光环": /*html*/`肉盾光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png' width='20px'>肉盾护甲加成：为附近单位额外提供 +%1% 护甲`,
+    "肉盾光环": /*html*/`肉盾光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png' width='20px'>肉盾护甲加成：为附近单位额外提供 +1 护甲`,
 
     "汗与土尔扈特": /*html*/`汗与土尔扈特<br>Khan and Torguuds<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>降低金帐汗和土尔扈特20%的成本，并增加30生命值`,
     "建筑车": /*html*/`建筑车<br>Building Carts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>生产2辆建筑车，展开后可铺设为兵营、码头、马厩、靶场、铁匠铺、祈祷帐篷和攻城武器厂，此后的每个时代升级都会获得额外的建筑车`,
