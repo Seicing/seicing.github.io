@@ -1196,7 +1196,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         mal: ["Extra39",],
         byz: ["Extra68", "Extra10",],
         mac: ["Extra63", "Extra125",],
-        jpn: ["Extra61", "Extra124",],
+        jpn: ["Extra61", "Extra127",],
         sen: ["Extra62",],
     };
 
