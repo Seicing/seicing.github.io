@@ -836,6 +836,9 @@ let ayanami = {
     "三连发": /*html*/`三连发<br>Triple Shot<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>钦察弓兵会额外发射2箭，每支箭造成的伤害-50%`,
     "靶场援军": /*html*/`靶场援军<br>Archery Range Reinforcements<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>950 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>靶场批量生产数量+1，不增加资源成本和招募时间`,
 
+    "已增加补给": /*html*/`已增加补给<br>Increased Supplies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>军事建筑的生产速度+50%`,
+    "敖包什一税": /*html*/`敖包什一税<br>Ovoo Tithe<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>敖包每分钟可提供60食物、60木材和10黄金收入`,
+
     "毁灭致盲": /*html*/`毁灭致盲<br>Ruinous Blinding<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>波莫的攻击可使敌人伤害-20%，持续5秒`,
 
     "征收罗斯贡品": /*html*/`征收罗斯贡品<br>Call Rus Tributes<br>从黄金帐篷送出 4 罗斯贡品，并使征收罗斯贡品的成本增加 300 石料。征收罗斯贡品的成本每 30 秒将减少 10 石料。每座军事建筑会将该成本额外减少 5 石料，最多可减少 70 石料。当成本为零时，则会自动部署罗斯贡品`,
