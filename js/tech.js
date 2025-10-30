@@ -757,7 +757,7 @@ let ayanami = {
     "马其顿王朝地下水宫黄金": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的黄金`,
     "马其顿王朝地下水宫木材": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的木材`,
     "马其顿王朝地下水宫食物": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内获得160的食物`,
-    "马其顿王朝地下水宫效率": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内工作效率增加`,
+    "马其顿王朝地下水宫效率": /*html*/`地下水宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/地下水宫.png' width='20px'>地下水宫：激活技能后60秒内工作效率增加25%`,
     "大名光环": /*html*/`大名光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png' width='20px'>大名光环：大名可使附近的部队攻击速度+10%/+15%/+20%`,
     "刀狩雕像加成2": /*html*/`刀狩雕像<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png' width='20px'>刀狩雕像：大名光环攻击速度加成效率提高到40%`,
 
@@ -813,6 +813,11 @@ let ayanami = {
     "刀狩雕像加成": /*html*/`刀狩雕像<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png' width='20px'>刀狩雕像：征召充能时间-50%`,
     "祭典光环": /*html*/`祭典<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/祭典光环.png' width='20px'>祭典：祭典最多可让附近的村民提高30%工作效率`,
     "乌城光环": /*html*/`乌城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/乌城光环.png' width='20px'>乌城：城堡附近的攻城单位造成的伤害 +10%，射程 +1 格`,
+    "乌城降价": /*html*/`乌城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/乌城.png' width='20px'>乌城：所有城堡成本 -33%`,
+
+    "大名府邸生产速度织田": /*html*/`织田大名府邸<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名府邸织田.png' width='20px'>织田大名府邸：使附近的靶场生产效率+20%`,
+    "大名府邸生产速度武田": /*html*/`武田大名府邸<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名府邸武田.png' width='20px'>武田大名府邸：使附近的马厩生产效率+20%`,
+    "大名府邸生产速度北条": /*html*/`北条大名府邸<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名府邸北条.png' width='20px'>北条大名府邸：使附近的兵营生产效率+20%`,
 
     "汗减益箭矢": /*html*/`汗减益箭矢<br>Khan Debuff Arrow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒`,
     "土芯墙": /*html*/`土芯墙<br>Earthen Core Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>设防哨站和木栅栏火焰护甲+3，生命值+300`,
