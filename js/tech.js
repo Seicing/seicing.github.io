@@ -812,7 +812,7 @@ let ayanami = {
     "武田加成3": /*html*/`武田氏支持3级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/武田.png' width='20px'>武田氏支持3级：马厩部队获得偏转护甲，武田府邸每120秒填充1次充能，消耗充能可以马上招募2日本长枪骑兵和1骑马武士`,
 
     "刀狩雕像加成": /*html*/`刀狩雕像<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png' width='20px'>刀狩雕像：征召充能时间-50%`,
-    "祭典光环": /*html*/`祭典<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/祭典光环.png' width='20px'>祭典：祭典最多可让附近的村民提高30%工作效率`,
+    "祭典光环": /*html*/`祭典<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/祭典光环.png' width='20px'>祭典：提供提高20格内村民工作效率的光环，祭典每接收1次屋台补给，效率就+5%，最多+30%`,
     "乌城光环": /*html*/`乌城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/乌城光环.png' width='20px'>乌城：城堡附近的攻城单位造成的伤害 +10%，射程 +1 格`,
     "乌城降价": /*html*/`乌城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/乌城.png' width='20px'>乌城：所有城堡成本 -33%`,
 
