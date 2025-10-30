@@ -764,7 +764,7 @@ let ayanami = {
     "战国大名早期大筒": /*html*/`大筒兵解锁<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大筒兵解锁.png' width='20px'>大筒兵解锁：解锁城堡时代的早期大筒兵，仅能通过织田家3级科技解锁大筒兵使用`,
 
     "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力`,
-    "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒`,
+    "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗发射信号箭让10格范围内内的敌人受到的伤害+10%，持续15秒`,
 
 
     "就地坚守": /*html*/`就地坚守<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>打开冲车侧面防御甲板，获得就地坚守能力，发射8射程8攻击力的箭矢，2.25秒攻击间隔时间，驻扎更多单位可以增加更多箭矢`,
