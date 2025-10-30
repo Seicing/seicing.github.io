@@ -508,7 +508,7 @@ let ayanami = {
     "日本依代奇观": /*html*/`依代<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/依代.png' width='20px'>依代：生命值+4000`,
     "日本兵营": /*html*/`心平气和<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png' width='20px'>心平气和：兵营成本-50%`,
     "日本平等院": /*html*/`平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练佛教僧侣成本-33%`,
-    "日本平等院2": /*html*/`平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练一向一揆僧侣成本-50%`,
+    "日本平等院2": /*html*/`平等院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平等院.png' width='20px'>平等院：平等院和所有佛寺训练一向一揆僧侣成本-25%`,
     "拜占庭建造石头": /*html*/`野外石料<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>野外石料：建造建筑成功后，获得已建造建筑每格占地面积2的石头`,
     "拜占庭橄榄园": /*html*/`大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得橄榄油效率+60%`,
     "拜占庭回血": /*html*/`地下水宫 - 朝圣者之瓶<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朝圣者之瓶.png' width='20px'>地下水宫 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒`,
@@ -812,7 +812,7 @@ let ayanami = {
 
     "刀狩雕像加成": /*html*/`刀狩雕像<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png' width='20px'>刀狩雕像：征召充能时间-50%`,
     "祭典光环": /*html*/`祭典<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/祭典光环.png' width='20px'>祭典：祭典最多可让附近的村民提高30%工作效率`,
-
+    "乌城光环": /*html*/`乌城<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/乌城光环.png' width='20px'>乌城：城堡附近的攻城单位造成的伤害 +10%，射程 +1 格`,
 
     "汗减益箭矢": /*html*/`汗减益箭矢<br>Khan Debuff Arrow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒`,
     "土芯墙": /*html*/`土芯墙<br>Earthen Core Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>设防哨站和木栅栏火焰护甲+3，生命值+300`,
@@ -833,7 +833,7 @@ let ayanami = {
 
     "毁灭致盲": /*html*/`毁灭致盲<br>Ruinous Blinding<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>波莫的攻击可使敌人伤害-20%，持续5秒`,
 
-    "征收罗斯贡品": /*html*/`征收罗斯贡品<br>Call Rus Tributes<br>从黄金帐篷送出 %1% 罗斯贡品，并使征收罗斯贡品的成本增加 %2% 石料。征收罗斯贡品的成本每 30 秒将减少 %3% 石料。每座军事建筑会将该成本额外减少 %5% 石料，最多可减少 %6% 石料。当成本为零时，则会自动部署罗斯贡品`,
+    "征收罗斯贡品": /*html*/`征收罗斯贡品<br>Call Rus Tributes<br>从黄金帐篷送出 4 罗斯贡品，并使征收罗斯贡品的成本增加 300 石料。征收罗斯贡品的成本每 30 秒将减少 10 石料。每座军事建筑会将该成本额外减少 5 石料，最多可减少 70 石料。当成本为零时，则会自动部署罗斯贡品`,
 
     "念佛": /*html*/`念佛<br>Nenbutsu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣生命值+60，近战伤害+2`,
     "汉方医学": /*html*/`汉方医学<br>Kampo Medicine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣攻击光环治疗效果+1`,
