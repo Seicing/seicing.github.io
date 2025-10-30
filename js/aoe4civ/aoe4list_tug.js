@@ -310,9 +310,9 @@ export const aoe4list = [
   {
     "civ": "tug",
     "section": "封建时代建筑",
-    "name": "图格鲁克巴德堡垒",
-    "img": "图格鲁克巴德堡垒",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/图格鲁克巴德堡垒"
+    "name": "腾格拉卡巴德堡垒",
+    "img": "腾格拉卡巴德堡垒",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/腾格拉卡巴德堡垒"
   },
   {
     "civ": "tug",

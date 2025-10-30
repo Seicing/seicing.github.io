@@ -325,7 +325,7 @@ export const aoe4list = [
     "civ": "sen",
     "section": "封建时代建筑",
     "name": "大名府邸",
-    "img": "大名府邸",
+    "img": "大名府邸通用",
     "link": "https://seicing.com/html/aoe2/buildingsaoe4/大名府邸"
   },
   {
