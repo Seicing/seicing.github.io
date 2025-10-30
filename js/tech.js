@@ -764,7 +764,7 @@ let ayanami = {
     "战国大名早期大筒": /*html*/`大筒兵解锁<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大筒兵解锁.png' width='20px'>大筒兵解锁：解锁城堡时代的早期大筒兵，仅能通过织田家3级科技解锁大筒兵使用`,
 
     "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力`,
-    "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗发射信号箭让10格范围内内的敌人受到的伤害+10%，持续15秒`,
+    "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗发射信号箭让10格范围内的敌人受到的伤害+10%，持续15秒`,
 
 
     "就地坚守": /*html*/`就地坚守<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>打开冲车侧面防御甲板，获得就地坚守能力，发射8射程8攻击力的箭矢，2.25秒攻击间隔时间，驻扎更多单位可以增加更多箭矢`,
@@ -783,7 +783,7 @@ let ayanami = {
     "牲畜围栏法令效果": /*html*/`牲畜围栏法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/牲畜围栏法令.png' width='20px'>牲畜围栏法令：设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金`,
     "肉盾法令效果": /*html*/`肉盾法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾法令.png' width='20px'>肉盾法令：每当招募任何单位时，设防哨站影响范围内的黄金帐篷和军事建筑都会额外生产一个肉盾`,
     "防御光环法令效果": /*html*/`防御光环法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png' width='20px'>防御光环法令：设防哨站附近单位的生命值 +10%`,
-    "肉盾光环": /*html*/`肉盾光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png' width='20px'>肉盾护甲加成：为附近单位额外提供 +1 护甲`,
+    "肉盾光环": /*html*/`肉盾光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png' width='20px'>肉盾护甲加成：肉盾为附近单位额外提供 +1 护甲`,
     "战地修理点效果": /*html*/`战地修理点<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战地修理点.png' width='20px'>战地修理点：每2秒恢复4生命值`,
 
     "汗与土尔扈特": /*html*/`汗与土尔扈特<br>Khan and Torguuds<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>110<br>降低金帐汗和土尔扈特20%的成本，并增加30生命值`,
