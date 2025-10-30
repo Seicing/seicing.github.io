@@ -747,7 +747,7 @@ let ayanami = {
     "信仰穹顶建筑效果2": /*html*/`信仰穹顶建筑<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：伊玛目和医疗大象黄金成本-65，医疗大象可提前一个时代解锁`,
     "胜利之塔效果2": /*html*/`胜利之塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：在胜利之塔的影响范围内的建筑中生产大象，可将其攻击速度 +15%`,
     "工作大象提交": /*html*/`工作大象<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作大象.png' width='20px'>工作大象：采集资源提交到工作大象时获得5%额外资源`,
-    "图格鲁克科技": /*html*/`研究拨款<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>研究拨款：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技折算后变为原科技的102%/96%/90%/78%价格`,
+    "图格鲁克科技": /*html*/`研究拨款<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>研究拨款：图格鲁克科技贵20%，但5秒研发完成，通过乌奇总督可使科技折算后变为原价的102%/96%/90%/78%价格`,
     "贾洛尔总督效果": /*html*/`贾洛尔总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贾洛尔总督.png' width='20px'>贾洛尔总督：在腾格拉卡巴德堡垒影响力和胜利之塔影响力范围内生产的骑兵+20/+35/+50/+65生命值`,
     "木尔坦总督效果": /*html*/`木尔坦总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木尔坦总督.png' width='20px'>木尔坦总督：城镇中心工作效率+15%/+30%/+50%/+75%`,
     "赫万总督效果": /*html*/`赫万总督<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/赫万总督.png' width='20px'>赫万总督：圣物和圣地黄金收入+20%，被医疗大象治疗的单位获得10%/15%/20%/20%伤害，持续10秒，4级时，医疗大象的治疗速率+50%`,
