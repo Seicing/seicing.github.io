@@ -174,8 +174,9 @@
         </table>
     </div>
     <div id="gohText0" style="text-align:left;display:block">
-
         <!--金帐汗国部队-->
+        <span class="防御光环法令效果"></span><br>
+        <span class="肉盾光环"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -203,6 +204,12 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png" width="20px">圣物敖包(解锁消耗圣物建造敖包的能力) <br>
                 </td>
             </tr>
         </table>
@@ -344,6 +351,10 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra126" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png"
+                        width="20px">防御光环法令：设防哨站附近单位的生命值 +10%<br></span>
+                <span id="Extra127" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png"
+                        width="20px">肉盾护甲加成：为附近单位额外提供 +%1% 护甲<br></span>
                 <span id="Extra120" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/驿站网络.png"
                         width="20px">驿站网络：处于驿站网络光环内的单位移动速度+15%<br></span>
             </td>
@@ -353,6 +364,12 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="goh" data-text="Extra126"><a onmousemove="showPic(event,'防御光环法令');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="goh" data-text="Extra127"><a onmousemove="showPic(event,'肉盾光环');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png" width="30px"></a>
+        </div>
         <div class="icon" data-game="mon" data-text="Extra120"><a onmousemove="showPic(event,'驿站网络效果');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/驿站网络.png" width="30px"></a></div>
         <div class="icon" data-game="mon" data-mode="diffMul diffMul diffMul diffMul" data-text="Extra79"
@@ -504,10 +521,10 @@
         </div>
         <div>
             <div>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗战象.png" width="48px">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png" width="48px">
             </div>
             <div style="width:48px;text-align: center;">
-                <a href="https://seicing.com/html/aoe2/unitaoe4/医疗战象.html?civ=tug" style="color:#0010ff">医疗战象</a>
+                <a href="https://seicing.com/html/aoe2/unitaoe4/医疗大象.html?civ=tug" style="color:#0010ff">医疗大象</a>
             </div>
         </div>
     </div>

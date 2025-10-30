@@ -19,7 +19,6 @@
             document.getElementById("otd").style.opacity = "1";
             document.getElementById("hol").style.opacity = "1";
             document.getElementById("kcr").style.opacity = "1";
-            document.getElementById("mac").style.opacity = "1";
         })
     })
 </script>
@@ -200,8 +199,6 @@
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png" width="25px"></a>
         <a id="holButton0" onclick="showCiv('hol')" style="opacity:0.3">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png" width="25px"></a>
-        <a id="macButton0" onclick="showCiv('mac')" style="opacity:0.3">
-            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png" width="25px"></a>
     </div>
 
 
@@ -496,49 +493,6 @@
             </tr>
         </table>
     </div>
-    <div id="macText0" style="text-align:left;display:block">
-        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+20%) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+20%)<br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/磨刀石.png" width="20px">磨刀石(每级+1，共6) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/旋转加农炮.png" width="20px">旋转加农炮(获得一门额外的受益铁匠铺升级的加农炮) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击范围</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮队.png" width="20px">扭力弩炮队(+1) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击速度</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/扭力弩炮队.png" width="20px">扭力弩炮队(+20%) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="20px">装甲船身(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="20px">造船工(+1)<br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
-                </td>
-            </tr>
-        </table>
-    </div>
 </div>
 <br><br><br>
 <div>
@@ -665,8 +619,6 @@
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png" width="25px"></div>
                     <div class="filterbtn" data-filter="byz" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png" width="25px"></div>
-                    <div class="filterbtn" data-filter="mac" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png" width="25px"></div>
                 </div>
             </td>
         </tr>
@@ -803,10 +755,6 @@
                 onmousemove="showPic(event,'造船工');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="30px"></a>
         </div>
-        <div class="icon" data-game="mac" data-mode="add" data-type="damage" data-value="6"><a
-                onmousemove="showPic(event,'磨刀石');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/磨刀石.png" width="30px"></a>
-        </div>
         <div class="icon" data-mode="add" data-over="mac" data-type="damage" data-value="1"><a
                 onmousemove="showPic(event,'钢制箭头');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="30px"></a>
@@ -839,6 +787,14 @@
             </div>
             <div style="width:48px;text-align: center;">
                 <a href="https://seicing.com/html/aoe2/unitaoe4/趸船.html?civ=eng" style="color:#0010ff">趸船</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻击船.png" width="48px">
+            </div>
+            <div style="width:48px;text-align: center;">
+                <a href="https://seicing.com/html/aoe2/unitaoe4/攻击船.html?civ=mac" style="color:#0010ff">攻击船</a>
             </div>
         </div>
         <div>

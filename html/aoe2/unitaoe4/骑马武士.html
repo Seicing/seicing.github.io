@@ -180,7 +180,7 @@
         </tr>
         <tr style="text-align:left">
             <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png"
-                    width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力</td>
+                    width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力(仅日本可用)</td>
         </tr>
     </table>
 </div>
@@ -198,7 +198,8 @@
                     href="#top">[回到顶部]</a></span></b>
     </h1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;">
-    骑马武士是日本独特的长矛骑兵单位，性能跟常规的长矛骑兵一致，但拥有偏转护甲，脱离战斗后8秒就能充满护甲槽抵挡1次受到的攻击
+    骑马武士是日本独特的长矛骑兵单位，性能跟常规的长矛骑兵一致，但拥有偏转护甲，脱离战斗后8秒就能充满护甲槽抵挡1次受到的攻击<br>
+    战国大名的骑马武士没有偏转护甲，但是造价便宜10黄金
     <br><br>
     骑马武士是城堡时代(Ⅲ)生产的部队 <br>
 </div>
@@ -265,7 +266,13 @@
         </table>
     </div>
     <div id="senText0" style="text-align:left;display:block">
+        <span class="战国大名骑马武士"></span><br>
         <span class="大名光环"></span><br>
+        <span class="刀狩雕像加成2"></span><br>
+        <span class="武田加成1"></span><br>
+        <span class="武田加成2"></span><br>
+        <span class="武田加成3"></span><br>
+        <span class="刀狩雕像加成"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -280,7 +287,7 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火造.png" width="20px">火造(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/甲伏锻.png" width="20px">甲伏锻(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/淬火.png" width="20px">淬火(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑马武士大太刀.png" width="20px">骑马武士大太刀(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑马日本武士大太刀.png" width="20px">骑马日本武士大太刀(+4对步兵) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -300,15 +307,15 @@
                 </td>
             </tr>
             <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">移动速度</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驯马.png" width="20px">驯马(+10%) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其他</span></td>
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胴丸护甲.png" width="20px">胴丸护甲(触发偏转护甲后移速+10%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
                 </td>
             </tr>
         </table>
@@ -398,7 +405,7 @@
                 <div id="filters">
                     <div class="filterbtn" data-filter="jpn" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></div>
-                    <div class="filterbtn" data-filter="sen" data-keep="true"><img
+                    <div class="filterbtn" data-filter="sen" data-keep="true" data-update="cost3:100"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></div>
                 </div>
             </td>
@@ -439,9 +446,15 @@
             <td data-base="21" id="firedamage"> </td>
         </tr>
         <tr>
+            <td>对[步兵]加成</td>
+            <td data-base="0" id="bonusdamage1"> </td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
             <td>其他加成</td>
             <td colspan="5">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png" width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力<br>
+                <span id="Extra124" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png"
+                        width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力<br></span>
                 <span id="Extra102" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胴丸护甲.png"
                         width="20px">胴丸护甲：触发偏转护甲后移速+10%<br></span>
             </td>
@@ -451,6 +464,30 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.833">
+            <a onmousemove="showPic(event,'大名光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.857">
+            <a onmousemove="showPic(event,'刀狩雕像加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'武田加成1');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武田.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'武田加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武田.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-text="Extra124">
+            <a onmousemove="showPic(event,'武田加成3');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武田.png" width="30px"></a>
+        </div>
+
+
+
         <div class="icon" data-game="jpn" data-mode="diffMul diffMul" data-type="damage chargedamage"
             data-value="1.15 1.15"><a onmousemove="showPic(event,'骑马旗本武士光环');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骑马旗本武士光环.png" width="30px"></a>
@@ -458,9 +495,22 @@
         <div class="icon" data-mode="add add add add add" data-type="hp damage chargedamage armorm armorr"
             data-value="40 5 7 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐马上日本武士.png" width="30px">
         </div>
+
         <div class="icon" data-game="jpn" data-text="Extra102"><a onmousemove="showPic(event,'胴丸护甲');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胴丸护甲.png" width="30px"></a>
         </div>
+
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="speed" data-value="1.1"><a
+                onmousemove="showPic(event,'驯马');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驯马.png" width="30px"></a>
+        </div>
+
+        <div class="icon" data-game="sen" data-mode="add" data-type="bonusdamage1" data-value="4"><a
+                onmousemove="showPic(event,'骑马日本武士大太刀');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑马日本武士大太刀.png" width="30px"></a>
+        </div>
+
+
         <div class="icon" data-game="jpn sen" data-mode="add add" data-type="damage chargedamage" data-value="1 1"><a
                 onmousemove="showPic(event,'吹踏鞴制钢法');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/吹踏鞴制钢法.png" width="30px"></a>

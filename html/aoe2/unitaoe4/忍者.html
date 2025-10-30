@@ -14,6 +14,7 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("jpn").style.opacity = "1";
+            document.getElementById("sen").style.opacity = "1";
         })
     })
 </script>
@@ -177,6 +178,8 @@
     <div class="civ-selector">
         <a id="jpnButton0" onclick="showCiv('jpn')" style="opacity:0.3">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
+        <a id="senButton0" onclick="showCiv('sen')" style="opacity:0.3">
+            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
     </div>
     <div id="jpnText0" style="text-align:left;display:block">
         <span class="刀剑旗本武士光环"></span><br>
@@ -231,6 +234,63 @@
             </tr>
         </table>
     </div>
+
+
+    <div id="senText0" style="text-align:left;display:block">
+        <span class="大名光环"></span><br>
+        <span class="刀狩雕像加成2"></span><br>
+        <span class="北条加成1"></span><br>
+        <span class="北条加成2"></span><br>
+        <span class="北条加成3"></span><br>
+        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/织田战术.png" width="20px">织田战术(+15%) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(近战)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/吹踏鞴制钢法.png" width="20px">吹踏鞴制钢法(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火造.png" width="20px">火造(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/甲伏锻.png" width="20px">甲伏锻(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/淬火.png" width="20px">淬火(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/织田战术.png" width="20px">织田战术(+15%混战、火炬、额外) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="20px">十字叠层护甲(+2) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png" width="20px">攻城工程学(可以建造冲车和攻城塔) <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 </div>
 <br><br><br>
 <div>
@@ -303,6 +363,8 @@
                 <div id="filters">
                     <div class="filterbtn" data-filter="jpn" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></div>
+                    <div class="filterbtn" data-filter="sen" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></div>
                 </div>
             </td>
         </tr>
@@ -349,6 +411,8 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra124" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png"
+                        width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力<br></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/间谍.png" width="20px">间谍：选择一个可视的敌人村民，伪装成敌方村民，1分钟冷却时间<br>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/瞬身.png" width="20px">瞬身：使用烟雾弹向指定的位置瞬移，30秒冷却时间<br>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/破坏.png"
@@ -362,16 +426,46 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.833">
+            <a onmousemove="showPic(event,'大名光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.857">
+            <a onmousemove="showPic(event,'刀狩雕像加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成1');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-text="Extra124">
+            <a onmousemove="showPic(event,'北条加成3');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+
+
         <div class="icon" data-game="jpn" data-mode="diffMul diffMul" data-type="damage chargedamage"
             data-value="1.15 1.15"><a onmousemove="showPic(event,'刀剑旗本武士光环');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/刀剑旗本武士光环.png" width="30px"></a>
         </div>
+
+
         <div class="icon" data-mode="sameMul sameMul sameMul" data-type="hp damage chargedamage"
             data-value="0.15 0.15 0.15"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/属性升级3.png" width="30px">
         </div>
         <div class="icon" data-mode="sameMul sameMul sameMul" data-type="hp damage chargedamage"
             data-value="0.15 0.15 0.15"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/属性升级4.png" width="30px">
         </div>
+
+        <div class="icon" data-game="sen" data-mode="add" data-type="armorr" data-value="2"><a
+                onmousemove="showPic(event,'十字叠层护甲');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="30px"></a>
+        </div>
+
         <div class="icon" data-game="jpn sen" data-mode="sameMul sameMul sameMul sameMul sameMul"
             data-type="hp damage chargedamage bonusdamage firedamage" data-value="0.15 0.15 0.15 0.15 0.15"><a
                 onmousemove="showPic(event,'织田战术');" onmouseout="hiddenPic();">

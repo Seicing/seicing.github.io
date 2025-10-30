@@ -14,7 +14,6 @@
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("jpn").style.opacity = "1";
-            document.getElementById("sen").style.opacity = "1";
         })
     })
 </script>
@@ -225,8 +224,6 @@
     <div class="civ-selector">
         <a id="jpnButton0" onclick="showCiv('jpn')" style="opacity:1">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></a>
-        <a id="senButton0" onclick="showCiv('sen')" style="opacity:0.3">
-            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></a>
     </div>
 
     <div id="jpnText0" style="text-align:left;display:block">
@@ -275,57 +272,6 @@
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png" width="20px">攻城工程学(可以建造冲车和攻城塔) <br>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="senText0" style="text-align:left;display:block">
-        <span class="大名光环"></span><br>
-        <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/织田战术.png" width="20px">织田战术(+15%) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(近战)</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/吹踏鞴制钢法.png" width="20px">吹踏鞴制钢法(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火造.png" width="20px">火造(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/甲伏锻.png" width="20px">甲伏锻(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/淬火.png" width="20px">淬火(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/织田战术.png" width="20px">织田战术(+15%混战、火炬、额外) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="20px">十字叠层护甲(+2) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">其它</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png" width="20px">攻城工程学(可以建造冲车和攻城塔) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/日本武士弓.png" width="20px">日本武士弓(解锁远程攻击) <br>
                 </td>
             </tr>
         </table>
@@ -510,8 +456,6 @@
                 <div id="filters">
                     <div class="filterbtn" data-filter="jpn" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></div>
-                    <div class="filterbtn" data-filter="sen" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png" width="25px"></div>
                 </div>
             </td>
         </tr>
@@ -591,13 +535,8 @@
                 onmousemove="showPic(event,'大太刀');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大太刀.png" width="30px"></a>
         </div>
-        <div class="icon" data-game="sen" data-mode="add" data-type="armorr" data-value="2"><a
-                onmousemove="showPic(event,'十字叠层护甲');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="sen" data-text="Extra97"><a onmousemove="showPic(event,'日本武士弓');"
-                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/日本武士弓.png" width="30px"></a>
-        </div>
+
+
         <div class="icon" data-game="jpn sen" data-mode="add add" data-type="damage chargedamage" data-value="1 1"><a
                 onmousemove="showPic(event,'吹踏鞴制钢法');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/吹踏鞴制钢法.png" width="30px"></a>
@@ -687,14 +626,14 @@
                 <a href="https://seicing.com/html/aoe2/unitaoe4/日本武士.html?civ=jpn" style="color:#0010ff">日本武士</a>
             </div>
         </div>
-        <!--<div>
+        <div>
             <div>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/薙刀日本武士.png" width="48px">
             </div>
             <div style="width:48px;text-align: center;">
                 <a href="https://seicing.com/html/aoe2/unitaoe4/薙刀日本武士.html?civ=sen" style="color:#0010ff">薙刀日本武士</a>
             </div>
-        </div>-->
+        </div>
         <div>
             <div>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/瓦兰吉卫队.png" width="48px">

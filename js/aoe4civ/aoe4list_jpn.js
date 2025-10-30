@@ -422,9 +422,9 @@ export const aoe4list = [
   {
     "civ": "jpn",
     "section": "地标建筑",
-    "name": "乌鸦城堡",
-    "img": "乌鸦城堡",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/乌鸦城堡"
+    "name": "乌城",
+    "img": "乌城",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/乌城"
   },
   {
     "civ": "jpn",

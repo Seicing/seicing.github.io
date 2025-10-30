@@ -87,7 +87,7 @@
         </tr>
         <tr style="text-align:left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">单位标签</span></td>
-            <td colspan="4">近战、步兵</td>
+            <td colspan="4">重型、近战、步兵</td>
         </tr>
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="5"><span style="color:#6e6e85">攻击属性(混战)</span></td>
@@ -184,14 +184,14 @@
         </tr>
         <tr style="text-align:left">
             <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/致死打击.png"
-                    width="20px">致死打击：金碎棒日本武士的攻击可以造成目标单位8%最大生命值的额外伤害
+                    width="20px">致死打击：金碎棒日本武士的攻击可以造成目标单位6%最大生命值的额外伤害
             </td>
         </tr>
     </table>
 </div>
 <div>
     <div id="techno"></div>
-    “拥有高伤害的强韧步兵，可造成相当于敌人8%最大生命值的额外伤害”
+    “伤害较高的强悍步兵。对敌人造成额外伤害，相当于其最大生命值的 +6%”
     <br>
     <div style="text-align:right">——游戏内说明</div>
     <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
@@ -220,6 +220,10 @@
     </div>
     <div id="senText0" style="text-align:left;display:block">
         <span class="大名光环"></span><br>
+        <span class="刀狩雕像加成2"></span><br>
+        <span class="北条加成1"></span><br>
+        <span class="北条加成2"></span><br>
+        <span class="北条加成3"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -286,7 +290,7 @@
                     href="#top">[回到顶部]</a></span></b>
     </h1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;">
-    【待补充】
+    【历史待补充】
 </div>
 <br><br><br>
 <div>
@@ -378,8 +382,10 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra124" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png"
+                        width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力<br></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/致死打击.png"
-                    width="20px">致死打击：金碎棒日本武士的攻击可以造成目标单位8%最大生命值的额外伤害<br>
+                    width="20px">致死打击：金碎棒日本武士的攻击可以造成目标单位6%最大生命值的额外伤害<br>
                 <span id="Extra1" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png"
                         width="20px">攻城工程学：可以建造冲车和攻城塔<br></span>
             </td>
@@ -389,6 +395,27 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.833">
+            <a onmousemove="showPic(event,'大名光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.857">
+            <a onmousemove="showPic(event,'刀狩雕像加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成1');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-text="Extra124">
+            <a onmousemove="showPic(event,'北条加成3');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+
         <div class="icon" data-mode="add add add" data-type="hp damage chargedamage" data-value="15 1 1"> <img
                 src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到老练金碎棒日本武士.png" width="30px">
         </div>

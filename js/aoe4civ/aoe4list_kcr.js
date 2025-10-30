@@ -261,9 +261,9 @@ export const aoe4list = [
   {
     "civ": "kcr",
     "section": "黑暗时代建筑",
-    "name": "码头",
-    "img": "码头",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/码头"
+    "name": "巨港",
+    "img": "巨港",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/巨港"
   },
   {
     "civ": "kcr",

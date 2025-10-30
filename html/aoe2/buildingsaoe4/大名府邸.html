@@ -5,7 +5,7 @@
 <head>
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
-<title>大名领地</title>
+<title>大名府邸</title>
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
 <script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
@@ -35,18 +35,22 @@
                         <div class="entry"><div style="float:right;margin-left:20px;margin-bottom:20px">
     <table cellpadding="5" frame="box" width="250px">
         <tr style="background-color:#F5F8FA;text-align: center">
-            <td colspan="5"><span style="color:#6e6e85">大名领地(Daimyo Estate:)</span></td>
+            <td colspan="5"><span style="color:#6e6e85">大名府邸(Daimyo Estate)</span></td>
         </tr>
         <tr style="text-align: center">
-            <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名领地.png" width="48px"></td>
+            <td colspan="5">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名府邸织田.png" width="48px"><br>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名府邸武田.png" width="48px"><br>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大名府邸北条.png" width="48px">
+            </td>
         </tr>
         <tr style="background-color:#F5F8FA;text-align: center">
             <td colspan="5"><span style="color:#6e6e85">建造信息</span></td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">100 <img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png" width="20px">100</td>
+            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">150 <img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png" width="20px">150</td>
         </tr>
         <tr style="text-align: left">
             <td style="background-color:#F5F8FA"><span style="color:#6e6e85">建造时间</span></td>
@@ -92,7 +96,7 @@
 </div>
 <div>
     <div id="techno"></div>
-    “人口上限增加10，并获得大名的支持。每个额外的大名领地生命值 +200，石头和木材的成本翻倍”
+    “生产大名。可以献给一个氏族，解锁相应氏族的特定加成、升级和影响力。如果被摧毁，可以重新建造。每建造一座大名府邸，大名宅邸生命值提升 +200，大名生命值提升 +%2%。每座大名府邸的建造石料成本也会增加 +100%”
     <br>
     <div style="text-align:right">——游戏内说明</div>
 </div>
@@ -103,26 +107,29 @@
                     href="#top">[回到顶部]</a></span></b>
     </h1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;">
-    大名领地是战国大名独特的军事建筑，建造一个大名领地以选择支持一个大名，解锁各大名的加成，相同的大名可以支持多次以解锁进一步的加成，也可以选择支持多个大名，但无法同时支持所有的大名 <br><br>
-    玩家可以选择将1个大名提高到3支持度，可以选择支持最多2个大名，换句话说，一个大名可以修建3个领地建筑，而另一个大名可以修建2个领地建筑，共修建5个大名领地，并从中训练5个大名光环单位<br><br>
+    大名府邸是战国大名独特的军事建筑，建造一个大名府邸以选择支持一个大名家族，解锁各大名家族的加成，相同的大名家族可以支持多次以解锁进一步的加成，也可以选择支持多个大名家族，但无法同时支持所有的大名家族 <br><br>
+    玩家可以选择将1个大名家族提高到3支持度，可以选择支持最多2个大名家族，换句话说，一个大名家族可以修建3个领地建筑，而另一个大名家族可以修建2个领地建筑，共修建5个大名府邸，并从中训练5个大名光环单位<br><br>
+
+    每个大名家族的第一个大名府邸只需要150木材和石头，第二个翻倍为300，第三个翻倍为600；只要建造了对应的大名府邸，游戏里就会记录大名府邸的修建情况，即使玩家自行摧毁掉也无法选择支持剩下的那个大名家族<br><br>
+
     每个大名拥有3个科技，需要根据大名的支持度依次解锁才能研发，不同的大名支持度玩家还可以获得以下加成：<br>
     <b>织田家</b>
     <ul>
         <li>1级：远程步兵额外获得5%生命值</li>
-        <li>2级：远程步兵额外获得10%生命值</li>
-        <li>3级：靶场部队获得偏转护甲，织田府邸每【待补充】秒填充1次充能，消耗充能可以马上招募【待补充】</li>
+        <li>2级：远程步兵额外再获得5%生命值</li>
+        <li>3级：靶场部队获得偏转护甲，织田府邸每120秒填充1次充能，消耗充能可以马上招募4弓足轻或2火绳枪足轻</li>
     </ul>
     <b>北条家</b>
     <ul>
         <li>1级：近战步兵额外获得5%生命值</li>
-        <li>2级：近战步兵额外获得10%生命值</li>
-        <li>3级：兵营部队获得偏转护甲，北条府邸每【待补充】秒填充1次充能，消耗充能可以马上招募【待补充】</li>
+        <li>2级：近战步兵额外再获得5%生命值</li>
+        <li>3级：兵营部队获得偏转护甲，北条府邸每120秒填充1次充能，消耗充能可以马上招募3长矛兵或2薙刀日本武士</li>
     </ul>
     <b>武田家</b>
     <ul>
         <li>1级：骑兵额外获得5%生命值</li>
-        <li>2级：骑兵额外获得10%生命值</li>
-        <li>3级：马厩部队获得偏转护甲，武田府邸每【待补充】秒填充1次充能，消耗充能可以马上招募【待补充】</li>
+        <li>2级：骑兵额外再获得5%生命值</li>
+        <li>3级：马厩部队获得偏转护甲，武田府邸每120秒填充1次充能，消耗充能可以马上招募2日本长枪骑兵和1骑马武士</li>
     </ul>
 
 </div>
@@ -195,28 +202,29 @@
                 <td style="text-align: left"><span class="大筒兵解锁"></span></td>
             </tr>
             <tr>
-                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑马训练.png" width="30px">
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驯马.png" width="30px">
                 </td>
-                <td style="text-align: left;width:80px;">骑马训练</td>
+                <td style="text-align: left;width:80px;">驯马</td>
                 <td style="text-align: left;width:30px;">Ⅱ</td>
-                <td style="text-align: left;width:120px;"><span class="骑马训练成本"></span></td>
-                <td style="text-align: left"><span class="骑马训练"></span></td>
+                <td style="text-align: left;width:120px;"><span class="驯马成本"></span></td>
+                <td style="text-align: left"><span class="驯马"></span></td>
             </tr>
             <tr>
-                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/改良长枪.png" width="30px">
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/强化日本长枪.png" width="30px">
                 </td>
-                <td style="text-align: left;width:80px;">改良长枪</td>
+                <td style="text-align: left;width:80px;">强化日本长枪</td>
                 <td style="text-align: left;width:30px;">Ⅱ</td>
-                <td style="text-align: left;width:120px;"><span class="改良长枪成本"></span></td>
-                <td style="text-align: left"><span class="改良长枪"></span></td>
+                <td style="text-align: left;width:120px;"><span class="强化日本长枪成本"></span></td>
+                <td style="text-align: left"><span class="强化日本长枪"></span></td>
             </tr>
             <tr>
-                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑马武士大太刀.png" width="30px">
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑马日本武士大太刀.png"
+                        width="30px">
                 </td>
-                <td style="text-align: left;width:80px;">骑马武士大太刀</td>
+                <td style="text-align: left;width:80px;">骑马日本武士大太刀</td>
                 <td style="text-align: left;width:30px;">Ⅲ</td>
-                <td style="text-align: left;width:120px;"><span class="骑马武士大太刀成本"></span></td>
-                <td style="text-align: left"><span class="骑马武士大太刀"></span></td>
+                <td style="text-align: left;width:120px;"><span class="骑马日本武士大太刀成本"></span></td>
+                <td style="text-align: left"><span class="骑马日本武士大太刀"></span></td>
             </tr>
         </table>
     </div>
@@ -259,7 +267,7 @@
                     href="#top">[回到顶部]</a></span></b>
     </h1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;">
-    【待补充】
+    【历史待补充】
 </div>
 <br><br><br>
 <div>
@@ -271,27 +279,27 @@
     <table frame="box" id="empire">
         <tr>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/织田家大名领地.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/mini/织田家大名领地.jpg"></a>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/织田家大名府邸.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/mini/织田家大名府邸.jpg"></a>
             </td>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/北条家大名领地.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/mini/北条家大名领地.jpg"></a>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/北条家大名府邸.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/mini/北条家大名府邸.jpg"></a>
             </td>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/武田家大名领地.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/mini/武田家大名领地.jpg"></a>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/武田家大名府邸.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sen/mini/武田家大名府邸.jpg"></a>
             </td>
         </tr>
         <tr>
             <td style="background-color:#F5F8FA;text-align: center">
-                织田家大名领地
+                织田家大名府邸
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
-                北条家大名领地
+                北条家大名府邸
             </td>
             <td style="background-color:#F5F8FA;text-align: center">
-                武田家大名领地
+                武田家大名府邸
             </td>
         </tr>
     </table>

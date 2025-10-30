@@ -143,7 +143,7 @@
 </div>
 <div>
     <div id="techno"></div>
-    【待补充】
+    拥有强大战斗能力的僧侣战士，进攻时可治疗附近单位。不具备定向治疗能力
     <br>
     <div style="text-align:right">——游戏内说明</div>
     <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
@@ -172,6 +172,10 @@
     </div>
     <div id="senText0" style="text-align:left;display:none">
         <span class="大名光环"></span><br>
+        <span class="刀狩雕像加成2"></span><br>
+        <span class="北条加成1"></span><br>
+        <span class="北条加成2"></span><br>
+        <span class="北条加成3"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -184,7 +188,7 @@
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">恢复量</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汉方医学.png" width="20px">汉方医学(+15%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汉方医学.png" width="20px">汉方医学(+1) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -241,7 +245,7 @@
                     href="#top">[回到顶部]</a></span></b>
     </h1>
     <hr style="height:1px;border:none;border-top:1px solid #555555;">
-    【待补充】
+    【历史待补充】
 </div>
 <br><br><br>
 <div>
@@ -324,6 +328,8 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra124" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png"
+                        width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力<br></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战斗恢复.png" width="20px">战斗恢复：一向一揆僧侣在战斗时治疗附近的单位<br>
             </td>
         </tr>
@@ -332,6 +338,29 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.833">
+            <a onmousemove="showPic(event,'大名光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.857">
+            <a onmousemove="showPic(event,'刀狩雕像加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成1');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-text="Extra124">
+            <a onmousemove="showPic(event,'北条加成3');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+
+
+
         <div class="icon" data-game="sen" data-mode="add add add" data-type="hp damage chargedamage"
             data-value="60 2 2"><a onmousemove="showPic(event,'念佛');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/念佛.png" width="30px"></a></div>
@@ -339,9 +368,11 @@
         <div class="icon" data-game="sen" data-mode="diffMul" data-type="speed" data-value="1.1"><a
                 onmousemove="showPic(event,'山顶训练');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/山顶训练.png" width="30px"></a></div>
-        <div class="icon" data-game="sen" data-mode="diffMul" data-type="healspeed" data-value="1.15"><a
+        <div class="icon" data-game="sen" data-mode="add" data-type="healspeed" data-value="1"><a
                 onmousemove="showPic(event,'汉方医学');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汉方医学.png" width="30px"></a></div>
+
+
         <div class="icon" data-game="jpn sen" data-mode="sameMul sameMul sameMul sameMul sameMul"
             data-type="hp damage chargedamage bonusdamage firedamage" data-value="0.15 0.15 0.15 0.15 0.15"><a
                 onmousemove="showPic(event,'织田战术');" onmouseout="hiddenPic();">
@@ -473,10 +504,10 @@
         </div>
         <div>
             <div>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗战象.png" width="48px">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png" width="48px">
             </div>
             <div style="width:48px;text-align: center;">
-                <a href="https://seicing.com/html/aoe2/unitaoe4/医疗战象.html?civ=tug" style="color:#0010ff">医疗战象</a>
+                <a href="https://seicing.com/html/aoe2/unitaoe4/医疗大象.html?civ=tug" style="color:#0010ff">医疗大象</a>
             </div>
         </div>
     </div>

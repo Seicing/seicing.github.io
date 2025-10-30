@@ -585,6 +585,7 @@
         <span class="守护者大院效果"></span><br>
         <span class="德里木造防御2"></span><br>
         <span class="图格鲁克科技"></span><br>
+        <span class="赫万总督效果"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -599,6 +600,7 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="20px">精锐军队战术(+15%混战、额外) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/内扎兵训练.png" width="20px">内扎兵训练(+35%对骑兵) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -621,6 +623,7 @@
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生产时间</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(-25%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/内扎兵训练.png" width="20px">内扎兵训练(-33%) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -846,6 +849,8 @@
         <span class="金帐汗国双倍训练"></span><br>
         <span class="可汗战吼"></span><br>
         <span class="汗减益箭矢2"></span><br>
+        <span class="防御光环法令效果"></span><br>
+        <span class="肉盾光环"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -889,7 +894,7 @@
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/海盗行为.png" width="20px">海盗行为(击沉对方船只获得25木和25金) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/荣光冲锋.png"
-                        width="20px">荣光冲锋(哨站附近的所有盟友单位将获得+50%移动速度，受到伤害-15%，持续30秒) <br>
+                        width="20px">荣光冲锋(设防哨站在引导10秒后，哨站附近的所有盟友单位将获得+50%移动速度，受到伤害-15%，持续30秒) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/兵营援军.png" width="20px">兵营援军(不增加训练成本，训练数量+1) <br>
                 </td>
             </tr>
@@ -1163,6 +1168,11 @@
     </div>
     <div id="senText0" style="text-align:left;display:none">
         <span class="大名光环"></span><br>
+        <span class="刀狩雕像加成2"></span><br>
+        <span class="北条加成1"></span><br>
+        <span class="北条加成2"></span><br>
+        <span class="北条加成3"></span><br>
+        <span class="刀狩雕像加成"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -2142,6 +2152,15 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra126" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png"
+                        width="20px">防御光环法令：设防哨站附近单位的生命值 +10%<br></span>
+                <span id="Extra127" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png"
+                        width="20px">肉盾护甲加成：为附近单位额外提供 +%1% 护甲<br></span>
+                <span id="Extra124" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png"
+                        width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力<br></span>
+                <span id="Extra123" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/赫万总督.png"
+                        width="20px">赫万总督：被医疗大象治疗的单位获得10%/15%/20%/20%伤害，持续10秒<br></span>
+
                 <span id="Extra121" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png"
                         width="20px">汗减益箭矢：汗可发射一支信号箭，让10格范围内的区域变得可见，并让目标区域内的敌人受到的伤害+10%，持续15秒<br></span>
                 <span id="Extra122" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png"
@@ -2211,6 +2230,39 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="goh" data-text="Extra126"><a onmousemove="showPic(event,'防御光环法令');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="goh" data-text="Extra127"><a onmousemove="showPic(event,'肉盾光环');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.833">
+            <a onmousemove="showPic(event,'大名光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名战斗光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="attackspeed" data-value="0.857">
+            <a onmousemove="showPic(event,'刀狩雕像加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/刀狩雕像.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成1');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="hp" data-value="1.05">
+            <a onmousemove="showPic(event,'北条加成2');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sen" data-text="Extra124">
+            <a onmousemove="showPic(event,'北条加成3');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/北条.png" width="30px"></a>
+        </div>
+
+
+        <div class="icon" data-game="tug" data-text="Extra123">
+            <a onmousemove="showPic(event,'赫万总督效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png" width="30px"></a>
+        </div>
+
         <div class="icon" data-game="goh" data-text="Extra121"><a onmousemove="showPic(event,'汗减益箭矢2');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png" width="30px"></a>
         </div>
@@ -2430,6 +2482,14 @@
         <div class="icon" data-game="mon" data-text="Extra11-a"><a onmousemove="showPic(event,'石料赏金已强化');"
                 onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料赏金已强化.png" width="30px"></a></div>
+
+
+        <div class="icon" data-game="tug" data-mode="diffMul diffMul" data-type="bonusdamage1 buildtime"
+            data-value="1.35 0.666"><a onmousemove="showPic(event,'内扎兵训练');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/内扎兵训练.png" width="30px"></a>
+        </div>
+
+
         <div class="icon" data-game="hre" data-mode="add add" data-type="damage chargedamage" data-value="2 2"><a
                 onmousemove="showPic(event,'锥头枪');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/锥头枪.png" width="30px"></a></div>
@@ -2461,10 +2521,16 @@
                 onmousemove="showPic(event,'淬火');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/淬火.png" width="30px"></a>
         </div>
+
+
+
+
         <div class="icon" data-game="sen" data-mode="add" data-type="armorr" data-value="2"><a
                 onmousemove="showPic(event,'十字叠层护甲');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="30px"></a>
         </div>
+
+
         <div class="icon" data-game="sen" data-mode="add" data-type="range" data-value="1"><a
                 onmousemove="showPic(event,'轻质利刃');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质利刃.png" width="30px"></a>

@@ -966,8 +966,9 @@
     </div>
     <div id="tugText0" style="text-align:left;display:none">
         <span class="大食野猪限制4"></span><br>
-        <span class="工作象提交"></span><br>
+        <span class="工作大象提交"></span><br>
         <span class="图格鲁克科技"></span><br>
+        <span class="赫万总督效果"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -1466,6 +1467,9 @@
     <div id="gohText0" style="text-align:left;display:none">
         <!--金帐汗国部队-->
         <span class="蒙古石头贸易限制2"></span><br>
+        <span class="牲畜围栏法令效果"></span><br>
+        <span class="防御光环法令效果"></span><br>
+        <span class="肉盾光环"></span><br>
         <table frame="box" id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">生命值</span></td>
@@ -4256,6 +4260,12 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra126" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png"
+                        width="20px">防御光环法令：设防哨站附近单位的生命值 +10%<br></span>
+                <span id="Extra127" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png"
+                        width="20px">肉盾护甲加成：为附近单位额外提供 +%1% 护甲<br></span>
+                <span id="Extra123" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/赫万总督.png"
+                        width="20px">赫万总督：被医疗大象治疗的单位获得10%/15%/20%/20%伤害，持续10秒<br></span>
                 <span id="Extra120" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/驿站网络.png"
                         width="20px">驿站网络：处于驿站网络光环内的单位移动速度+15%<br></span>
                 <span id="Extra119" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png"
@@ -4346,6 +4356,16 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="goh" data-text="Extra126"><a onmousemove="showPic(event,'防御光环法令');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="goh" data-text="Extra127"><a onmousemove="showPic(event,'肉盾光环');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="tug" data-text="Extra123">
+            <a onmousemove="showPic(event,'赫万总督效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/赫万总督效果.png" width="30px"></a>
+        </div>
         <div class="icon" data-game="mon" data-mode="diffMul diffMul diffMul diffMul" data-text="Extra79"
             data-type="damage chargedamage firedamage bonusdamage" data-value="1.2 1.2 1.2 1.2"><a
                 onmousemove="showPic(event,'忽里勒台光环');" onmouseout="hiddenPic();"><img
@@ -4402,6 +4422,12 @@
             <a onmousemove="showPic(event,'日本大名城镇中心');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/大名光环.png" width="30px"></a>
         </div>
+
+        <div class="icon" data-game="sen" data-mode="diffMul" data-type="gather" data-value="1.3">
+            <a onmousemove="showPic(event,'祭典光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/祭典光环.png" width="30px"></a>
+        </div>
+
         <div class="icon" data-game="abb" data-mode="diffMul" data-type="gather" data-value="1.15"><a
                 onmousemove="showPic(event,'黄金时代阶段I');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代1.png" width="30px"></a></div>
@@ -4735,8 +4761,8 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/灰吹法已强化.png" width="30px"></a>
         </div>
         <div class="icon" data-game="tug" data-mode="sameMul" data-type="deposit" data-value="0.05"><a
-                onmousemove="showPic(event,'工作象提交');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作象.png" width="30px"></a>
+                onmousemove="showPic(event,'工作大象提交');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/工作大象.png" width="30px"></a>
         </div>
 
 
