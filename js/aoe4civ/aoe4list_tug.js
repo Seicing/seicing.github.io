@@ -9,16 +9,16 @@ export const aoe4list = [
   {
     "civ": "tug",
     "section": "平民与宗教单位",
-    "name": "工作象",
-    "img": "工作象",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/工作象"
+    "name": "工作大象",
+    "img": "工作大象",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/工作大象"
   },
   {
     "civ": "tug",
     "section": "平民与宗教单位",
-    "name": "医疗战象",
-    "img": "医疗战象",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/医疗战象"
+    "name": "医疗大象",
+    "img": "医疗大象",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/医疗大象"
   },
   {
     "civ": "tug",
@@ -65,9 +65,9 @@ export const aoe4list = [
   {
     "civ": "tug",
     "section": "军事单位",
-    "name": "战象掠夺者",
-    "img": "战象掠夺者",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/战象掠夺者"
+    "name": "突袭大象",
+    "img": "突袭大象",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/突袭大象"
   },
   {
     "civ": "tug",
@@ -114,9 +114,9 @@ export const aoe4list = [
   {
     "civ": "tug",
     "section": "攻城武器",
-    "name": "弩炮战象",
-    "img": "弩炮战象",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/弩炮战象"
+    "name": "弩炮大象",
+    "img": "弩炮大象",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/弩炮大象"
   },
   {
     "civ": "tug",

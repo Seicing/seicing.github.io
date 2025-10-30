@@ -30,9 +30,9 @@ export const aoe4list = [
   {
     "civ": "mac",
     "section": "军事单位",
-    "name": "瓦兰吉长戟兵",
-    "img": "瓦兰吉长戟兵",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/瓦兰吉长戟兵"
+    "name": "阿特盖尔",
+    "img": "阿特盖尔",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/阿特盖尔"
   },
   {
     "civ": "mac",
@@ -58,9 +58,9 @@ export const aoe4list = [
   {
     "civ": "mac",
     "section": "军事单位",
-    "name": "瓦兰吉突袭者",
-    "img": "瓦兰吉突袭者",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/瓦兰吉突袭者"
+    "name": "瑞塔利",
+    "img": "瑞塔利",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/瑞塔利"
   },
   {
     "civ": "mac",
@@ -72,9 +72,9 @@ export const aoe4list = [
   {
     "civ": "mac",
     "section": "军事单位",
-    "name": "瓦兰吉步弓手",
-    "img": "瓦兰吉步弓手",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/瓦兰吉步弓手"
+    "name": "波莫",
+    "img": "波莫",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/波莫"
   },
   {
     "civ": "mac",
