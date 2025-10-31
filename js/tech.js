@@ -1179,7 +1179,7 @@ function setDefaultVisibleSpansForCiv(civ) {
             el.dataset.defaultvisible = "1";
             // 根据标签类型决定显示方式
             if (el.tagName === "tr") {
-                el.style.display = "table-row";
+                el.style.display = " ";
             } else {
                 el.style.display = "inline";
             }
@@ -1222,7 +1222,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         if (el) {
             el.dataset.defaultvisible = "1";
             if (el.tagName === "tr") {
-                el.style.display = "table-row";
+                el.style.display = " ";
             } else {
                 el.style.display = "inline";
             }
