@@ -30,13 +30,6 @@ export const aoe4list = [
   {
     "civ": "sen",
     "section": "平民与宗教单位",
-    "name": "宝藏商队",
-    "img": "宝藏商队",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/宝藏商队"
-  },
-  {
-    "civ": "sen",
-    "section": "平民与宗教单位",
     "name": "君主",
     "img": "君主",
     "link": "https://seicing.com/html/aoe2/unitaoe4/君主"
