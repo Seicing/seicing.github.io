@@ -1162,7 +1162,7 @@ function updateTable() {
 // ----------- 根据文明设置默认显示的 span（带例外白名单） -----------
 function setDefaultVisibleSpansForCiv(civ) {
     // 固定默认显示的 ID 列表（这些不会因为文明切换而隐藏）
-    const alwaysVisible = ["Extra200", "Extra201"]; // 👈 可以添加多个 id
+    const alwaysVisible = ["Extra200",]; // 👈 可以添加多个 id
 
     // 清除之前的默认可见标记（但保留 alwaysVisible 里的）
     document.querySelectorAll('[data-defaultvisible="1"]').forEach(el => {
@@ -1183,23 +1183,28 @@ function setDefaultVisibleSpansForCiv(civ) {
 
     // 配置表：每个文明对应要默认显示的 span id 列表
     const civDefaults = {
-        abb: ["Extra60", "Extra3",],
-        ayy: ["Extra75", "Extra33",],
-        sul: ["Extra76", "Extra4",],
-        tug: ["Extra77", "Extra44",],
-        eng: ["Extra56",],
-        hol: ["Extra57",],
-        mon: ["Extra9", "Extra88", "Extra58",],
-        goh: ["Extra59", "Extra88", "Extra201-a",],
-        fre: ["Extra106",],
-        jda: ["Extra107",],
-        kcr: ["Extra55",],
-        ott: ["Extra78",],
-        mal: ["Extra39",],
-        byz: ["Extra68", "Extra10",],
-        mac: ["Extra63", "Extra125",],
-        jpn: ["Extra61", "Extra127",],
-        sen: ["Extra62",],
+        abb: ["Extra201", " Extra60", "Extra3",],
+        ayy: ["Extra201", " Extra75", "Extra33",],
+        sul: ["Extra201", " Extra76", "Extra4",],
+        tug: ["Extra201", " Extra77", "Extra44",],
+        eng: ["Extra201", " Extra56",],
+        hol: ["Extra201", " Extra57",],
+        mon: ["Extra201", " Extra9", "Extra88", "Extra58",],
+        goh: ["Extra202", " Extra59", "Extra88",],
+        fre: ["Extra201", " Extra106",],
+        jda: ["Extra201", " Extra107",],
+        kcr: ["Extra201", " Extra55",],
+        rus: ["Extra201",],
+        ott: ["Extra201", " Extra78",],
+        mal: ["Extra201", " Extra39",],
+        byz: ["Extra201", " Extra68", "Extra10",],
+        mac: ["Extra201", " Extra63", "Extra125",],
+        jpn: ["Extra201", " Extra61", "Extra127",],
+        sen: ["Extra201", " Extra62",],
+        chi: ["Extra201",],
+        zxl: ["Extra201",],
+        hre: ["Extra201",],
+        otd: ["Extra201",],
     };
 
     const list = civDefaults[civ];
