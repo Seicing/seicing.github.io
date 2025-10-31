@@ -282,6 +282,16 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/织田战术.png" width="20px">织田战术(+15%混战、火炬、额外) <br>
                 </td>
             </tr>
+
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击力(武士弓)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
+                </td>
+            </tr>
             <tr style="text-align:left">
                 <td style="background-color:#F5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
                 <td>
@@ -297,6 +307,12 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="20px">十字叠层护甲(+2) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td style="background-color:#F5F8FA"><span style="color:#6e6e85">攻击范围(武士弓)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="20px">蚕丝弓弦(+1.5) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -439,6 +455,26 @@
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damagefire.png" width="25px">火炬伤害</td>
             <td data-base="21" id="firedamage"> </td>
         </tr>
+
+        <tr>
+            <td colspan="6">攻击属性(武士弓)</td>
+        </tr>
+        <tr>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/damageranged.png" width="25px">远程伤害</td>
+            <td data-base="4" id="damage2"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/range.png" width="25px">攻击范围</td>
+            <td data-base="6.5" id="range2"> </td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/attackspeed.png" width="25px">攻击冷却时间</td>
+            <td data-base="15" id="attackspeed2"> </td>
+        </tr>
+        <tr>
+            <td>对[轻型近战步兵]加成</td>
+            <td data-base="4" id="bonusdamage1"> </td>
+            <td>对[轻型火药步兵]加成</td>
+            <td data-base="4" id="bonusdamage2"> </td>
+            <td colspan="2"></td>
+        </tr>
+
         <tr>
             <td>其他加成</td>
             <td colspan="5">
@@ -476,14 +512,17 @@
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/北条.png" width="30px"></a>
         </div>
 
-        <div class="icon" data-mode="add add add add" data-type="hp damage chargedamage armorm" data-value="20 2 2 1">
+        <div class="icon" data-mode="add add add add add add add"
+            data-type="hp damage chargedamage armorm damage2 bonusdamage1 bonusdamage2" data-value="20 2 2 1 1 1 1">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到坚韧日本武士.png" width="30px">
         </div>
-        <div class="icon" data-mode="add add add add add" data-type="hp damage chargedamage armorm armorrr"
-            data-value="35 2 2 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到老练日本武士.png" width="30px">
+        <div class="icon" data-mode="add add add add add add add add"
+            data-type="hp damage chargedamage armorm armorr  damage2 bonusdamage1 bonusdamage2"
+            data-value="35 2 2 1 1 1 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到老练日本武士.png" width="30px">
         </div>
-        <div class="icon" data-mode="add add add add add" data-type="hp damage chargedamage armorm armorr"
-            data-value="25 2 2 1 2"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐日本武士.png" width="30px">
+        <div class="icon" data-mode="add add add add add add add add"
+            data-type="hp damage chargedamage armorm armorr  damage2 bonusdamage1 bonusdamage2"
+            data-value="25 2 2 1 2 1 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/4/升级到精锐日本武士.png" width="30px">
         </div>
 
         <div class="icon" data-game="jpn sen" data-mode="sameMul sameMul sameMul sameMul sameMul"
@@ -498,6 +537,9 @@
         <div class="icon" data-game="sen" data-text="Extra97"><a onmousemove="showPic(event,'日本武士弓');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/日本武士弓.png" width="30px"></a>
         </div>
+
+
+
         <div class="icon" data-game="jpn sen" data-mode="add add" data-type="damage chargedamage" data-value="1 1"><a
                 onmousemove="showPic(event,'吹踏鞴制钢法');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/吹踏鞴制钢法.png" width="30px"></a>
@@ -544,6 +586,27 @@
         </div>
         <div class="icon" data-over="abb ayy" data-text="Extra1"><a onmousemove="showPic(event,'攻城工程学');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png" width="30px"></a>
+        </div>
+
+
+        <div class="icon" data-mode="sameMul" data-over="mal mac" data-type="damage2" data-value="0.2"><a
+                onmousemove="showPic(event,'燃烧箭');" onmouseout="hiddenPic();">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="30px"></a></div>
+        <div class="icon" data-mode="add" data-type="range2" data-value="1.5"><a onmousemove="showPic(event,'蚕丝弓弦');"
+                onmouseout="hiddenPic();">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px"></a></div>
+
+        <div class="icon" data-mode="add" data-over="mac" data-type="damage2" data-value="1"><a
+                onmousemove="showPic(event,'钢制箭头');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="30px"></a>
+        </div>
+        <div class="icon" data-mode="add" data-over="mac" data-type="damage2" data-value="1"><a
+                onmousemove="showPic(event,'平衡炮弹');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="30px"></a>
+        </div>
+        <div class="icon" data-mode="add" data-over="mac" data-type="damage2" data-value="1"><a
+                onmousemove="showPic(event,'箭头穿孔板甲');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="30px"></a>
         </div>
     </div>
 </div>
