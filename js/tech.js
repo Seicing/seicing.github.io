@@ -776,11 +776,11 @@ let ayanami = {
 
     "肉盾法令": /*html*/`肉盾法令<br>Kharash Edict<br>启用后，每当招募任何单位时，设防哨站影响范围内的黄金帐篷和军事建筑都会额外生产一个肉盾`,
     "防御光环法令": /*html*/`防御光环法令<br>Defensive Aura Edict<br>启用后，设防哨站附近单位的生命值 +10%`,
-    "牲畜围栏法令": /*html*/`牲畜围栏法令<br>Stockyard Edict<br>启用后，设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金`,
+    "牲畜围栏法令": /*html*/`牲畜围栏法令<br>Stockyard Edict<br>启用后，设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金，每个村民每分钟可赚取10黄金`,
     "生产速度法令": /*html*/`生产速度法令<br>Production Speed Edict<br>启用后，在设防哨站影响范围内的黄金帐篷和军事建筑的生产速度 +20%`,
 
     "生产速度法令效果": /*html*/`生产速度法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/生产速度法令.png' width='20px'>生产速度法令：在设防哨站影响范围内的黄金帐篷和军事建筑的生产速度 +20%`,
-    "牲畜围栏法令效果": /*html*/`牲畜围栏法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/牲畜围栏法令.png' width='20px'>牲畜围栏法令：设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金`,
+    "牲畜围栏法令效果": /*html*/`牲畜围栏法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/牲畜围栏法令.png' width='20px'>牲畜围栏法令：设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金，每个村民每分钟可赚取10黄金`,
     "肉盾法令效果": /*html*/`肉盾法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾法令.png' width='20px'>肉盾法令：每当招募任何单位时，设防哨站影响范围内的黄金帐篷和军事建筑都会额外生产一个肉盾`,
     "防御光环法令效果": /*html*/`防御光环法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png' width='20px'>防御光环法令：设防哨站附近单位的生命值 +10%`,
     "肉盾光环": /*html*/`肉盾光环<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾光环.png' width='20px'>肉盾护甲加成：肉盾为附近单位额外提供 +1 护甲`,
