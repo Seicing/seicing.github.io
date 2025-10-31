@@ -1200,7 +1200,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         byz: ["Extra201", " Extra68", "Extra10",],
         mac: ["Extra201", " Extra63", "Extra125",],
         jpn: ["Extra201", " Extra61", "Extra127",],
-        sen: ["Extra201", " Extra62",],
+        sen: ["Extra201", "Extra203", " Extra62",],
         chi: ["Extra201",],
         zxl: ["Extra201",],
         hre: ["Extra201",],
