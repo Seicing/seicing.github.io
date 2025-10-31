@@ -1178,7 +1178,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         if (el) {
             el.dataset.defaultvisible = "1";
             // 根据标签类型决定显示方式
-            if (el.tagName === "tr") {
+            if (el.tagName === "TR") {
                 el.style.display = "table-row";
             } else {
                 el.style.display = "inline";
@@ -1221,7 +1221,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         const el = document.getElementById(id);
         if (el) {
             el.dataset.defaultvisible = "1";
-            if (el.tagName === "tr") {
+            if (el.tagName === "TR") {
                 el.style.display = "table-row";
             } else {
                 el.style.display = "inline";
