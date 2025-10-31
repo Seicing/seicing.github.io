@@ -462,7 +462,7 @@ let ayanami = {
     "法兰克防御计划炮台": /*html*/`法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：石墙获得射箭槽(8攻击范围，8攻击力，+10对船，3.62攻击间隔时间)`,
     "攻城专家巨型投石机": /*html*/`攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：巨型投石机多段攻击次数+1，但攻击力-15，建筑附加伤害-150，船只附加伤害-100`,
     "攻城专家成本": /*html*/`攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>攻城专家：攻城武器厂和攻城器械的木材成本 -25%`,
-    "景观保护": /*html*/`景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/景观保护.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，基础伐木效率0.63，自动研发双阔斧、木材保存和横切锯`,
+    "景观保护": /*html*/`景观保护<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/景观保护.png' width='20px'>景观保护：无需上交木材到伐木场，开采木材可以获得额外的20%食物，基础伐木效率0.6，在后三个时代每个时代提高20%效率`,
     "圣殿骑士影响力": /*html*/`法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：圣殿骑士团总部和要塞为石墙+25%生命值并加装一个射箭槽`,
     "圣殿要塞": /*html*/`法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%`,
     "法兰西王国": /*html*/`法兰西王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西王国.png' width='20px'>法兰西王国：军事单位生产时间-15%，减少5%的黄金消耗`,
@@ -1162,7 +1162,7 @@ function updateTable() {
 // ----------- 根据文明设置默认显示的 span（带例外白名单） -----------
 function setDefaultVisibleSpansForCiv(civ) {
     // 固定默认显示的 ID 列表（这些不会因为文明切换而隐藏）
-    const alwaysVisible = ["Extra200"]; // 👈 可以添加多个 id
+    const alwaysVisible = ["Extra200", "Extra201"]; // 👈 可以添加多个 id
 
     // 清除之前的默认可见标记（但保留 alwaysVisible 里的）
     document.querySelectorAll('[data-defaultvisible="1"]').forEach(el => {
@@ -1190,7 +1190,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         eng: ["Extra56",],
         hol: ["Extra57",],
         mon: ["Extra9", "Extra88", "Extra58",],
-        goh: ["Extra59", "Extra88",],
+        goh: ["Extra59", "Extra88", "Extra201-a",],
         fre: ["Extra106",],
         jda: ["Extra107",],
         kcr: ["Extra55",],
