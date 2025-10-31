@@ -1129,8 +1129,8 @@ function updateTable() {
             });
         });
 
-    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2 };
-    const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0 };
+    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, gather11: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2 };
+    const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, deposit11: 0 };
 
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
@@ -1177,7 +1177,12 @@ function setDefaultVisibleSpansForCiv(civ) {
         const el = document.getElementById(id);
         if (el) {
             el.dataset.defaultvisible = "1";
-            el.style.display = "inline";
+            // 根据标签类型决定显示方式
+            if (el.tagName === "tr") {
+                el.style.display = "table-row";
+            } else {
+                el.style.display = "inline";
+            }
         }
     });
 
@@ -1211,13 +1216,19 @@ function setDefaultVisibleSpansForCiv(civ) {
     if (!list) return;
 
     // 应用该文明的默认显示配置
+    // 应用该文明的默认显示配置
     list.forEach(id => {
         const el = document.getElementById(id);
         if (el) {
             el.dataset.defaultvisible = "1";
-            el.style.display = "inline";
+            if (el.tagName === "tr") {
+                el.style.display = "table-row";
+            } else {
+                el.style.display = "inline";
+            }
         }
     });
+
 }
 
 
