@@ -798,6 +798,7 @@ let ayanami = {
     "石料军队巨投": /*html*/`石料军队巨投<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费250石进行招募2个`,
     "石料军队骑射": /*html*/`石料军队骑射<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费100石进行招募2个`,
     "战国大名骑马武士": /*html*/`文明固有限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战国大名.png' width='20px'>文明固有限制：默认没有偏转护甲，但造价-10黄金`,
+    "驿站网络贸易效果": /*html*/`驿站网络贸易<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驿站网络贸易.png' width='20px'>驿站网络贸易：黄金帐篷每10秒为每个设防哨站产生10黄金，最多可让6个设防哨站生效`,
 
     "织田加成1": /*html*/`织田氏支持1级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/织田.png' width='20px'>织田氏支持1级：远程步兵额外获得5%生命值`,
     "织田加成2": /*html*/`织田氏支持2级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/织田.png' width='20px'>织田氏支持2级：远程步兵额外再获得5%生命值`,
