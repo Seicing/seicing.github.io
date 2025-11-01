@@ -461,6 +461,24 @@ div {
 /* 针对移动设备的样式 */
 @media only screen and (max-width: 767px) {
 
+    /* 关键修复：防止水平溢出和滚动 */
+    html,
+    body {
+        overflow-x: hidden;
+        /* 强制隐藏水平滚动条 */
+    }
+
+    /* 关键修复：重置 body 的边距，并确保所有元素都使用更可预测的盒模型 */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+        /* 让宽度计算包含内边距和边框 */
+    }
+
     /* 新增：将背景设置为纯白并强制覆盖其他样式 */
     body,
     #wrapper,
@@ -475,28 +493,36 @@ div {
         display: none;
     }
 
-    /* 2. 让主内容区 ($Content) 自适应屏幕宽度 */
-    #wrapper,
+    /* 2. 让主内容区 ($Content) 自适应屏幕宽度，并增加内边距 */
+    #wrapper {
+        width: 100%;
+        padding-left: 15px;
+        /* 在最外层容器增加边距，避免内容紧贴屏幕边缘 */
+        padding-right: 15px;
+    }
+
     #content {
         width: 100%;
     }
 
-    /* 3. 移除固定宽度和一些可能影响布局的样式 */
-    #wrapper2,
-    #page {
-        width: 100%;
-        height: auto;
-    }
 
-    /* 确保内容容器也适应宽度 */
+    /* 3. 移除内层元素的固定宽度 */
+    #wrapper2,
+    #page,
     .post,
     .entry {
         width: 100%;
-        padding-left: 15px;
-        /* 可选：增加一些内边距以改善移动端的可读性 */
-        padding-right: 15px;
-        box-sizing: border-box;
-        /* 确保内边距不会增加总宽度 */
+        height: auto;
+        padding: 0;
+        /* 移除内层的padding，因为它已在外层#wrapper上设置 */
+    }
+
+    /* 关键修复：确保内容中的图片或视频不会撑破容器 */
+    .entry img,
+    .entry video,
+    .entry iframe {
+        max-width: 100%;
+        height: auto;
     }
 
     /* 4. 调整底部的样式 */
