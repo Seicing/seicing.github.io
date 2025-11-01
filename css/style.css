@@ -458,25 +458,27 @@ div {
     height: 200px
 }
 
-/* --- 关键修复：强制提升 content 的层级 --- */
-#sidebar {
-    /* 确保 sidebar 有一个明确的 z-index，即使它在原始CSS中没有 */
-    z-index: 10 !important;
+/* ======================================================== */
+/* === 响应式样式：覆盖平板与移动端 (最终修正版) === */
+/* ======================================================== */
+
+/* --- 规则 A：针对所有小于 1280px 的屏幕 --- */
+/* 解决在平板等中等宽度下，sidebar 和 content 的层级遮挡问题 */
+@media only screen and (max-width: 1279px) {
+    #sidebar {
+        z-index: 10 !important;
+    }
+
+    #content {
+        position: relative !important;
+        z-index: 20 !important;
+    }
 }
 
-#content {
-    position: relative !important;
-    /* 赋予 content 参与层级竞争的能力 */
-    z-index: 20 !important;
-    /* 设置一个远高于 sidebar 的 z-index */
-}
-
-/* ================================================= */
-/* === 2. 针对移动端 (Mobile) 的样式 (修正版) === */
-/* ================================================= */
+/* --- 规则 B：针对所有小于 768px 的屏幕 (移动端) --- */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础重置，从根源上防止横向滚动 --- */
+    /* --- 基础重置 --- */
     html,
     body {
         width: 100%;
@@ -486,39 +488,28 @@ div {
     }
 
     /* --- 强制重置所有可能导致溢出的容器 --- */
-    /* 这是解决您当前问题的最关键规则！ */
     #wrapper,
     #wrapper2,
     #page,
     #content,
-    .post,
-    div[style*="min-width"]
-
-    /* 直接选中任何带有 min-width 内联样式的 div */
-        {
+    .post {
         width: 100% !important;
         min-width: 0 !important;
-        /* 强制取消最小宽度限制，覆盖内联样式 */
         margin: 0 !important;
         padding: 0 !important;
         float: none !important;
         box-sizing: border-box;
-        /* 确保 padding 不会撑大宽度 */
     }
 
-    /* --- 为正文内容区域设置内边距，让文字不要紧贴屏幕边缘 --- */
     .entry {
         padding: 10px 15px;
     }
 
-    /* --- 隐藏侧边栏 --- */
     #sidebar {
-        display: none;
+        display: none !important;
     }
 
-    /* --- 通用内容处理规则，增强健壮性 --- */
-
-    /* 规则A: 强制所有文本内容自动换行，防止长单词或链接撑破布局 */
+    /* --- 通用内容处理规则 --- */
     .entry,
     .entry p,
     .entry li {
@@ -526,7 +517,6 @@ div {
         word-break: break-all;
     }
 
-    /* 规则B: 让所有图片、视频自适应容器宽度 */
     .entry img,
     .entry video,
     .entry iframe {
@@ -535,10 +525,30 @@ div {
         box-sizing: border-box;
     }
 
-    /* 规则C: 为所有表格（无论有无width属性）自动添加横向滚动条 */
     .entry table {
         display: block !important;
         width: 100% !important;
         overflow-x: auto !important;
+    }
+
+    /* 
+     * ========================================================
+     * === 针对内联样式的特别修正 (新增的关键代码) ===
+     * ========================================================
+     */
+
+    /* 新增规则1：强制重置所有被内联样式写死宽度的 div */
+    /* 解决了“科技图标行”的问题 */
+    .entry div[style*="width"] {
+        width: auto !important;
+        /* 取消固定的px宽度 */
+        max-width: 100% !important;
+        /* 确保它不会超过屏幕宽度 */
+    }
+
+    /* 新增规则2：强制允许多行换行，对抗 "flex-wrap: nowrap" */
+    /* 解决了“同定位单位”列表不换行的问题 */
+    .entry div[style*="flex-wrap: nowrap"] {
+        flex-wrap: wrap !important;
     }
 }
