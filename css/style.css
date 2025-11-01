@@ -524,7 +524,6 @@ div {
         min-width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
-        /* float: none !important; */
         box-sizing: border-box;
     }
 
@@ -682,8 +681,6 @@ div {
         /* 恢复默认盒子模型 */
         word-break: normal !important;
         /* 恢复默认文本换行 */
-        float: revert !important;
-        /* 允许浮动生效 */
     }
 
     /* --- 绝对保护盾 (Layer1/2) --- */
