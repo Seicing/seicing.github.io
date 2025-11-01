@@ -566,7 +566,7 @@ div {
         width: 280px;
         max-width: 80%;
         height: 100vh;
-        background: #ffffff !important;
+        background: rgba(255, 255, 255, 0.5) !important;
         z-index: 999;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
