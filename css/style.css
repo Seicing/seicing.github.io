@@ -496,13 +496,26 @@ div {
  * === 基础重置 & 纯白背景 (通过信标Div实现例外) ===
  * ========================================================
  */
-
+    /* 
+ * 规则1：安全的、必定会生效的规则
+ * 为除body外的所有主要容器设置纯白背景
+ */
     html,
     #wrapper,
     #page,
     #content,
     .post,
-    .entry,
+    .entry {
+        background: #ffffff !important;
+    }
+
+    /* 
+ * 规则2：带有 :has() 的、可能在旧浏览器失效的例外规则
+ * 只有当 body 标签内部 *不包含* .keep-original-background 这个信标div时，
+ * 才将其背景设为白色。
+ * 
+ * 把它单独写出来，就不会“污染”上面的安全规则了。
+ */
     body:not(:has(.keep-original-background)) {
         background: #ffffff !important;
     }
@@ -713,5 +726,32 @@ div {
         border-radius: revert !important;
         z-index: revert !important;
         pointer-events: revert !important;
+    }
+
+    /*
+ * ========================================================
+ * === 新增规则：确保表单元素也能自适应 (修正 Textarea) ===
+ * ========================================================
+ */
+    .entry input[type="text"],
+    .entry input[type="password"],
+    .entry textarea {
+        width: 100% !important;
+        /* 强制宽度为100%，占满父容器 */
+        max-width: 100% !important;
+        /* 确保不会超出屏幕 */
+        box-sizing: border-box !important;
+        /* 让 padding 和 border 不会撑大总宽度 */
+    }
+
+    .entry textarea {
+        /* 可以给 textarea 一个合适的最小高度，方便输入 */
+        min-height: 150px;
+        /* 允许用户垂直调整大小，但禁止水平调整（因为宽度已经100%了） */
+        resize: vertical;
+    }
+
+    #mobile-drawer-container a {
+        color: #857E6E !important;
     }
 }
