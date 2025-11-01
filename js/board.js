@@ -153,10 +153,9 @@ function sendMsg() {
         var query = new AV.Query('TestObject');
         query.count().then(function (count) {
             var newPageMax = Math.ceil(count / PAGE_COUNT) || 1;
+            loadPage(newPageMax, true); // 加载最后一页，并滚动
+            document.getElementById('comment_text').value = ''; // 清空输入框
             alert('提交成功！页面即将刷新以显示最新留言');
-
-            // ✅ 强制完整刷新到最新页并跳转锚点
-            window.location.replace(window.location.pathname + '?page=' + newPageMax + '#lauyinban');
         });
     }, function (error) {
         console.error('提交留言时出错:', error);
