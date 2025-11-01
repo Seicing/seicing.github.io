@@ -62,3 +62,28 @@ function setupMobileSidebar() {
 }
 
 document.addEventListener('DOMContentLoaded', setupMobileSidebar);
+
+// ========================================================
+// === 模块3: 独立处理“特殊页面”的黑色背景 ===
+// ========================================================
+function handleSpecialPageBackground() {
+    // 1. 寻找页面上的“信标”div
+    const beaconDiv = document.querySelector('.keep-original-background');
+
+    // 2. 如果找到了信标...
+    if (beaconDiv) {
+        // 3. 选中所有需要改变背景的容器
+        const elementsToChange = document.querySelectorAll(
+            'html, body, #wrapper, #page, #content, .post, .entry'
+        );
+
+        // 4. 强行将它们的背景设置为黑色
+        elementsToChange.forEach(element => {
+            // 使用 setProperty 可以添加 !important，确保最高优先级
+            element.style.setProperty('background', 'black', 'important');
+        });
+    }
+}
+
+// 在文档加载完成后，立即执行这个检查
+document.addEventListener('DOMContentLoaded', handleSpecialPageBackground);

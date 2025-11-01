@@ -511,28 +511,13 @@ div {
  * ========================================================
  */
 
-    /* 默认情况下，为除body外的所有主要容器设置纯白背景 */
-    /* 
- * 规则1：安全的、必定会生效的规则
- * 为除body外的所有主要容器设置纯白背景
- */
     html,
+    body,
     #wrapper,
     #page,
     #content,
     .post,
     .entry {
-        background: #ffffff !important;
-    }
-
-    /* 
- * 规则2：带有 :has() 的、可能在旧浏览器失效的例外规则
- * 只有当 body 标签内部 *不包含* .keep-original-background 这个信标div时，
- * 才将其背景设为白色。
- * 
- * 把它单独写出来，就不会“污染”上面的安全规则了。
- */
-    body:not(:has(.keep-original-background)) {
         background: #ffffff !important;
     }
 
@@ -765,6 +750,35 @@ div {
         min-height: 150px;
         /* 允许用户垂直调整大小，但禁止水平调整（因为宽度已经100%了） */
         resize: vertical;
+    }
+
+    /* 
+ * 同时选中留言列表容器和翻页导航容器
+ * .entry .comments 的写法可以增加一点选择器权重，确保生效
+ */
+    .entry .comments,
+    .entry .comment_pages {
+        width: 100% !important;
+        /* 强制宽度为100%，占满父容器 */
+        max-width: 100% !important;
+        /* 确保不会超出屏幕 */
+        box-sizing: border-box !important;
+        /* 让 padding 和 border 不会撑大总宽度 */
+
+        /* (可选但推荐) 如果内部有浮动元素，这可以防止父容器高度塌陷 */
+        overflow: hidden;
+    }
+
+    /* 
+ * 针对翻页导航内部的 a 标签，可能也需要处理
+ * 允许它们在空间不足时自动换行
+ */
+    .entry .comment_pages a {
+        white-space: normal !important;
+        /* 允许页码换行 */
+        display: inline-block;
+        /* 确保页码之间有间距 */
+        margin: 2px;
     }
 
     #mobile-drawer-container a {
