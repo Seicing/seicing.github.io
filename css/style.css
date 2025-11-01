@@ -595,19 +595,6 @@ div {
      * ========================================================
      */
 
-    /* 修正1：处理 float:right 的div，保持原始宽度并居中 */
-    div[style*="float:right"] {
-        float: none !important;
-        clear: both !important;
-
-        /* 核心修改点：使用 Flexbox 来居中其内部内容 */
-        display: flex !important;
-        justify-content: center !important;
-
-        /* 只设置垂直间距 */
-        margin: 15px 0 !important;
-    }
-
     /* --- 其他所有通用内容修正规则 (基于您的“旧代码”) --- */
 
     /* 修正2：这是唯一需要添加例外的地方 */
@@ -689,5 +676,31 @@ div {
 
         /* 4. (安全措施) 确保其表现为一个块级元素，以便滚动条正常工作 */
         display: block !important;
+    }
+
+    /*
+ * ========================================================
+ * === 新增终极例外规则：为 layer1/2 创建“绝对保护盾” ===
+ * ========================================================
+ */
+    #layer1,
+    #layer2 {
+        /* 1. 宽度保护：确保宽度完全由JS的内联样式决定 */
+        max-width: none !important;
+        /* 解除任何最大宽度限制 */
+        min-width: 0 !important;
+        /* 解除任何最小宽度限制 */
+
+        /* 2. 文本换行保护：这是解决“变长”问题的关键 */
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        white-space: normal !important;
+
+        /* 3. Flexbox保护：防止它意外地成为一个flex项目并被拉伸 */
+        flex: none !important;
+        /* flex: 0 0 auto 的简写 */
+
+        /* 4. (可选但推荐) 盒子模型保护：确保padding和border的计算方式是标准的 */
+        box-sizing: content-box !important;
     }
 }
