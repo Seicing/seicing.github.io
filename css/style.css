@@ -458,25 +458,10 @@ div {
     height: 200px
 }
 
-/* ================================================= */
-/* === 1. 针对桌面端 (Desktop) 的样式优化 === */
-/* ================================================= */
-/* 此规则仅在屏幕宽度大于 768px 时生效 */
-@media only screen and (min-width: 768px) {
-    #wrapper {
-        /* 
-                   将容器宽度从1280px缩小到1100px。
-                   这个值您可以根据喜好微调 (例如 1080px 或 1120px)。
-                   !important 是必需的，用来覆盖HTML中直接写的 style="width:1280px"。
-                */
-        width: 1100px !important;
-    }
-}
 
 /* ================================================= */
 /* === 2. 针对移动端 (Mobile) 的样式 === */
 /* ================================================= */
-/* 此规则仅在屏幕宽度小于等于 767px 时生效 */
 @media only screen and (max-width: 767px) {
 
     /* --- 基础重置 --- */
@@ -507,29 +492,34 @@ div {
         display: none;
     }
 
-    /* --- 强制重置内容容器的位置和边距 --- */
+    /* --- 重置所有容器 --- */
+    #wrapper,
+    #wrapper2,
+    #page,
     #content,
     .post {
         width: 100% !important;
+        min-width: 0;
         margin: 0 !important;
         padding: 0 !important;
         float: none !important;
     }
 
-    /* --- 重置外层容器 --- */
-    #wrapper,
-    #wrapper2,
-    #page {
-        width: 100%;
-        min-width: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* --- 为内容文本添加内边距 --- */
+    /* --- 需求1：修复内容不会自动缩入容器的问题 --- */
     .entry {
         padding: 10px 15px;
+    }
+
+    /* 强制 .entry 内的所有元素都能正确换行 */
+    .entry * {
+        max-width: 100%;
+        /* 确保图片等不会超出 */
+        white-space: normal !important;
+        /* 强制文本自动换行，覆盖原始CSS的nowrap */
         overflow-wrap: break-word;
+        /* 强制长单词或链接换行 */
+        word-break: break-all;
+        /* 在任意字符间换行，作为最后手段 */
     }
 
     /* --- 调整底部样式 --- */
