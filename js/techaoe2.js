@@ -1202,28 +1202,86 @@ function hiddenPic2() {
     CommonAllTech()
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const containers = document.querySelectorAll('.saic');
-    const cardWidth = 150;   // 卡片宽度
-    const gap = 1;           // flex gap
+// ========================================================
+// === 总指挥：页面加载和窗口调整时，分别执行各个模块 ===
+// ========================================================
+function runAllLayoutHandlers() {
+    handleEmpireWidth(); // 执行 #empire 的逻辑
+    handleSaicLayout();  // 执行 .saic 的逻辑
+}
 
-    containers.forEach(container => {
-        const perRow = parseInt(container.dataset.perRow) || 5; // 支持自定义
+// 在页面加载时，和每次调整窗口大小时，都运行“总指挥”
+window.addEventListener('DOMContentLoaded', runAllLayoutHandlers);
+
+// 使用“防抖”来优化resize事件的性能
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(runAllLayoutHandlers, 100);
+});
+
+// ========================================================
+// === 模块1: 独立处理 #empire 的宽度 ===
+// (这里粘贴上面第一步的 handleEmpireWidth 函数的完整代码)
+// ========================================================
+function handleEmpireWidth() {
+    const empireContainer = document.getElementById('empire');
+    if (!empireContainer) return;
+    if (empireContainer.dataset.originalWidth === undefined) {
+        const inlineWidthMatch = empireContainer.style.width.match(/(\d+)/);
+        if (inlineWidthMatch) {
+            empireContainer.dataset.originalWidth = inlineWidthMatch[1];
+        } else {
+            empireContainer.dataset.originalWidth = -1;
+        }
+    }
+    const originalWidth = parseInt(empireContainer.dataset.originalWidth, 10);
+    if (originalWidth === -1) return;
+    const screenWidth = window.innerWidth;
+    if (originalWidth > screenWidth) {
+        empireContainer.style.width = '100%';
+    } else {
+        empireContainer.style.width = originalWidth + 'px';
+    }
+}
+
+// ========================================================
+// === 模块2: 独立处理 .saic 的动态网格布局 ===
+// (这里粘贴上面第二步的 handleSaicLayout 函数的完整代码)
+// ========================================================
+function handleSaicLayout() {
+    const saicContainers = document.querySelectorAll('.saic');
+    if (saicContainers.length === 0) return;
+    const cardWidth = 150;
+    const gap = 1;
+    saicContainers.forEach(container => {
+        const existingPlaceholder = container.querySelector('.saic-placeholder');
+        if (existingPlaceholder) {
+            existingPlaceholder.remove();
+        }
+        const parentContainer = container.parentElement;
+        if (!parentContainer) return;
+        const screenWidth = window.innerWidth;
+        let perRow = 5;
+        if (screenWidth < 774) perRow = 4;
+        if (screenWidth < 623) perRow = 3;
+        if (screenWidth < 472) perRow = 2;
+        if (screenWidth < 321) perRow = 1;
+        const targetParentWidth = perRow * cardWidth + (perRow - 1) * gap;
+        parentContainer.style.width = targetParentWidth + 'px';
         const cards = container.children.length;
         const remainder = cards % perRow;
-
         if (remainder !== 0) {
             const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
-
             const placeholder = document.createElement('div');
+            placeholder.className = 'saic-placeholder';
             placeholder.style.width = remainingWidth + 'px';
-            placeholder.style.background = 'white';  // 或者 transparent
+            placeholder.style.background = 'white';
             placeholder.style.flexShrink = '0';
-
             container.appendChild(placeholder);
         }
     });
-});
+}
 
 
 function BlastFurnace() {

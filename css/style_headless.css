@@ -733,54 +733,41 @@ div {
         margin-right: auto !important;
     }
 
-    /* 
- * ========================================================
- * === 阶梯式宽度的媒体查询 (已加入20px安全边距) ===
- * ========================================================
- */
-
-    /* 当屏幕宽度至少为 170px (150+20) 时... */
-    @media (min-width: 170px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 150px !important;
-        }
+    #empire,
+    div:has(> .saic) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
-    /* 当屏幕宽度至少为 321px (301+20) 时... */
-    @media (min-width: 321px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 301px !important;
-        }
+    #techtree,
+    .age1,
+    .age2,
+    .age3,
+    .age4 {
+        max-width: 100% !important;
+        /* 容器本身不能超过屏幕宽度 */
+        overflow-x: auto !important;
+        /* 核心：为容器自身添加横向滚动条 */
+        padding: 10px !important;
+        /* 增加内边距，滚动时更好看 */
+        box-sizing: border-box !important;
+        display: block !important;
+        border: 1px solid #ccc;
+        /* (可选) 加个边框，让滚动区域更明确 */
+        margin-bottom: 15px;
+        /* (可选) 和下方内容留出间距 */
     }
 
-    /* 当屏幕宽度至少为 472px (452+20) 时... */
-    @media (min-width: 472px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 452px !important;
-        }
-    }
-
-    /* 当屏幕宽度至少为 623px (603+20) 时... */
-    @media (min-width: 623px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 603px !important;
-        }
-    }
-
-    /* 当屏幕宽度至少为 774px (754+20) 时... */
-    @media (min-width: 774px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 754px !important;
-        }
+    /* 2. 核心：重置容器内部所有元素的样式，创建“隔离区” */
+    #techtree *,
+    .age1 *,
+    .age2 *,
+    .age3 *,
+    .age4 * {
+        all: revert !important;
+        /* <--- 这是解决问题的“核武器” */
     }
 }

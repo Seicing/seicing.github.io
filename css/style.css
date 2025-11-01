@@ -684,23 +684,23 @@ div {
  * ========================================================
  */
     #layer1,
-    #layer2 {
-        /* 1. 宽度保护：确保宽度完全由JS的内联样式决定 */
+    #layer2,
+    #layer1 *,
+    #layer2 * {
+        /* 1. 宽度保护 */
         max-width: none !important;
-        /* 解除任何最大宽度限制 */
         min-width: 0 !important;
-        /* 解除任何最小宽度限制 */
 
-        /* 2. 文本换行保护：这是解决“变长”问题的关键 */
+        /* 2. 文本换行保护 (这是解决问题的关键) */
+        white-space: normal !important;
+        /* <--- 确保这一行存在！*/
         word-break: normal !important;
         overflow-wrap: normal !important;
-        white-space: normal !important;
 
-        /* 3. Flexbox保护：防止它意外地成为一个flex项目并被拉伸 */
+        /* 3. Flexbox保护 */
         flex: none !important;
-        /* flex: 0 0 auto 的简写 */
 
-        /* 4. (可选但推荐) 盒子模型保护：确保padding和border的计算方式是标准的 */
+        /* 4. 盒子模型保护 */
         box-sizing: content-box !important;
     }
 
@@ -720,54 +720,41 @@ div {
         margin-right: auto !important;
     }
 
-    /* 
- * ========================================================
- * === 阶梯式宽度的媒体查询 (已加入20px安全边距) ===
- * ========================================================
- */
-
-    /* 当屏幕宽度至少为 170px (150+20) 时... */
-    @media (min-width: 170px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 150px !important;
-        }
+    #empire,
+    div:has(> .saic) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
-    /* 当屏幕宽度至少为 321px (301+20) 时... */
-    @media (min-width: 321px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 301px !important;
-        }
+    #techtree,
+    .age1,
+    .age2,
+    .age3,
+    .age4 {
+        max-width: 100% !important;
+        /* 容器本身不能超过屏幕宽度 */
+        overflow-x: auto !important;
+        /* 核心：为容器自身添加横向滚动条 */
+        padding: 10px !important;
+        /* 增加内边距，滚动时更好看 */
+        box-sizing: border-box !important;
+        display: block !important;
+        border: 1px solid #ccc;
+        /* (可选) 加个边框，让滚动区域更明确 */
+        margin-bottom: 15px;
+        /* (可选) 和下方内容留出间距 */
     }
 
-    /* 当屏幕宽度至少为 472px (452+20) 时... */
-    @media (min-width: 472px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 452px !important;
-        }
-    }
-
-    /* 当屏幕宽度至少为 623px (603+20) 时... */
-    @media (min-width: 623px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 603px !important;
-        }
-    }
-
-    /* 当屏幕宽度至少为 774px (754+20) 时... */
-    @media (min-width: 774px) {
-
-        #empire,
-        div:has(> .saic) {
-            width: 754px !important;
-        }
+    /* 2. 核心：重置容器内部所有元素的样式，创建“隔离区” */
+    #techtree *,
+    .age1 *,
+    .age2 *,
+    .age3 *,
+    .age4 * {
+        all: revert !important;
+        /* <--- 这是解决问题的“核武器” */
     }
 }
