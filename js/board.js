@@ -153,7 +153,7 @@ function sendMsg() {
         var query = new AV.Query('TestObject');
         query.count().then(function (count) {
             var newPageMax = Math.ceil(count / PAGE_COUNT) || 1;
-            alert('提交成功！将在刷新后显示');
+            alert('提交成功！将在刷新后显示，如果刷新失败请手动刷新');
 
             // 跳转到最新页并加上锚点，便于加载后自动滚动
             window.location.href = window.location.pathname + '?page=' + newPageMax + '#lauyinban';

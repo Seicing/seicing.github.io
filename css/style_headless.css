@@ -470,14 +470,19 @@ div {
     font-family: Microsoft Yahei, sans-serif;
 }
 
+/* ======================================================== */
+/* === 1. 全局/桌面端样式 === */
+/* ======================================================== */
+
+/* 默认隐藏移动端专属元素 */
 #sidebar-toggle-button,
-#sidebar-overlay {
+#sidebar-overlay,
+#mobile-drawer-container {
     display: none !important;
-    /* 在所有屏幕尺寸下默认彻底隐藏 */
 }
 
 /* ======================================================== */
-/* === 2. 响应式样式：覆盖平板与移动端 === */
+/* === 2. 响应式样式：覆盖平板与移动端 (绝对例外最终版) === */
 /* ======================================================== */
 
 /* --- 规则 A：针对所有小于 1280px 的屏幕 --- */
@@ -495,7 +500,17 @@ div {
 /* --- 规则 B：针对所有小于 768px 的屏幕 (移动端) --- */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础重置 --- */
+    /* --- 基础重置 & 纯白背景 --- */
+    html,
+    body,
+    #wrapper,
+    #page,
+    #content,
+    .post,
+    .entry {
+        background: #ffffff !important;
+    }
+
     html,
     body {
         width: 100%;
@@ -522,19 +537,12 @@ div {
         padding: 10px 15px;
     }
 
-    /* 
-     * ========================================================
-     * === 核心：右侧抽屉效果 & “复活”移动端元素 ===
-     * ========================================================
-     */
-
+    /* --- 侧边栏抽屉效果 (这部分逻辑保持不变) --- */
     #sidebar-toggle-button {
         display: block !important;
-        /* 在移动端“复活”按钮 */
         position: fixed;
         top: 15px;
         left: 15px;
-        right: auto;
         z-index: 1001;
         width: 50px;
         height: 50px;
@@ -549,7 +557,6 @@ div {
 
     #sidebar-overlay {
         display: block !important;
-        /* 在移动端“复活”遮罩层 */
         position: fixed;
         top: 0;
         left: 0;
@@ -562,13 +569,11 @@ div {
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
-    #sidebar {
+    #mobile-drawer-container {
         display: block !important;
-        /* 在移动端“复活”侧边栏 */
         position: fixed;
         top: 0;
         right: 0;
-        left: auto;
         width: 280px;
         max-width: 80%;
         height: 100vh;
@@ -578,10 +583,11 @@ div {
         transition: transform 0.3s ease-in-out;
         overflow-y: auto;
         box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
     }
 
-    /* JS激活时的样式 */
-    body.sidebar-open #sidebar {
+    body.sidebar-open #mobile-drawer-container {
         transform: translateX(0);
     }
 
@@ -591,10 +597,33 @@ div {
     }
 
     body.sidebar-open {
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
-    /* --- 其他所有通用内容修正规则 --- */
+    /* 
+     * ========================================================
+     * === 布局修正 & 精准例外规则 ===
+     * ========================================================
+     */
+
+    /* 修正1：处理 float:right 的div，保持原始宽度并居中 */
+    div[style*="float:right"] {
+        float: none !important;
+        clear: both !important;
+        margin: 15px auto !important;
+    }
+
+    /* --- 其他所有通用内容修正规则 (基于您的“旧代码”) --- */
+
+    /* 修正2：这是唯一需要添加例外的地方 */
+    /* 我们只对宽度自适应规则添加 :not() 排除 */
+    .entry div[style*="width"]:not(#layer1):not(#layer2) {
+        width: auto !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* 您“旧代码”中的其他规则保持原样，因为它们不会影响到 layer1/2 */
     .entry,
     .entry p,
     .entry li {
@@ -616,21 +645,19 @@ div {
         overflow-x: auto !important;
     }
 
-    .entry div[style*="width"]:not(#layer1):not(#layer2) {
-        width: auto !important;
-        max-width: 100% !important;
-    }
-
+    /* 这个规则作用于flex容器，layer1不是flex容器，不受影响 */
     .entry div[style*="flex-wrap: nowrap"] {
         flex-wrap: wrap !important;
     }
 
+    /* 这个规则作用于flex容器的子元素，layer1不是，不受影响 */
     .entry div[style*="flex-wrap"]>div {
         flex: 1 0 21% !important;
         text-align: center !important;
         margin: 5px;
     }
 
+    /* 这个规则作用于input和textarea，layer1是div，不受影响 */
     .entry input[type="text"],
     .entry input[type="password"],
     .entry textarea {
