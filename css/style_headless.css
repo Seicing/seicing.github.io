@@ -769,4 +769,8 @@ div {
         display: inline-block;
         margin: 2px;
     }
+
+    #techtree {
+        background: none !important;
+    }
 }

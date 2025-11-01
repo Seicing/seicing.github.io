@@ -67,6 +67,9 @@ function setupMobileSidebar() {
                 mobileDrawer.appendChild(clonedNode);
             }
 
+            // --- 在内容复制完成后，立即调用我们的新函数 ---
+            conditionallyReplaceLinkColor(mobileDrawer);
+
             // 3. 绑定事件 (确保只绑定一次)
             if (!toggleButton.dataset.listenerAttached) {
                 function toggleSidebar() {
