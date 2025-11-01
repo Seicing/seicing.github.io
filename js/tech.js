@@ -284,13 +284,13 @@ let ayanami = {
     "独轮推车已强化": /*html*/`独轮推车(已强化)<br>Wheelbarrow(Improved)<br>  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>村民的资源运载量 +9，移动速度 +15%。 如果已完成独轮推车研究，则资源运载量 +4`,
     "专业侦察兵已强化": /*html*/`专业侦察兵(已强化)<br>Professional Scouts(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>175    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>侦察兵获得携带动物尸骸的能力，且对野生动物造成的伤害 +200%。侦察兵在携带动物尸骸时移动速度减少 -55%，且无法拾取野猪尸骸。 如果已完成专业侦察兵研究，则伤害将会 +100%`,
 
-    "园艺学已强化": /*html*/`园艺学(已强化)<br>Horticulture(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的食物采集速率提升 20%，不包括野外狩猎和近海渔获肉类`,
+    "园艺学已强化": /*html*/`园艺学(已强化)<br>Horticulture(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的食物采集速率提升 30%，不包括野外狩猎和近海渔获肉类。如果已完成园艺学研究，则只会提升 20%`,
 
     "林业已强化": /*html*/`林业(已强化)<br>Forestry(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>75    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民一击便能伐倒树木`,
 
-    "双阔斧已强化": /*html*/`双阔斧(已强化)<br>Double Broadax(Improved)<br>  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的木材采集速率提升 20%`,
+    "双阔斧已强化": /*html*/`双阔斧(已强化)<br>Double Broadax(Improved)<br>  <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的木材采集速率提升 35%。如果已完成双阔斧研究，则只会提升 20%`,
 
-    "特制矿锄已强化": /*html*/`特制矿锄(已强化)<br>Specialized Pick(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的黄金采集速率提升 20%`,
+    "特制矿锄已强化": /*html*/`特制矿锄(已强化)<br>Specialized Pick(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>村民的黄金采集速率提升 35%。如果已完成特制矿锄研究，则只会提升 20%`,
 
 
     "润滑轮轴已强化": /*html*/`润滑轮轴(已强化)<br>Greased Axles(Improved)<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500    <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城器械的移动速度 +20%。 如果已完成润滑轮轴研究，则 +5%`,
@@ -467,7 +467,7 @@ let ayanami = {
     "圣殿要塞": /*html*/`法兰克防御计划<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png' width='20px'>法兰克防御计划：远程单位在位于要塞附近时攻击距离 +15%`,
     "法兰西王国": /*html*/`法兰西王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西王国.png' width='20px'>法兰西王国：军事单位生产时间-15%，减少5%的黄金消耗`,
     "医院骑士团": /*html*/`医院骑士团<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/医院骑士团.png' width='20px'>医院骑士团：所有平民单位生命值+30%，移动速度+10%，所有治疗来源效率+30%`,
-    "安条克公国": /*html*/`安条克公国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/安条克公国.png' width='20px'>安条克公国：近战单位获得+10%伤害`,
+    "安条克公国": /*html*/`安条克公国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/安条克公国.png' width='20px'>安条克公国：近战单位获得+15%伤害`,
     "热那亚共和国": /*html*/`热那亚共和国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/热那亚共和国.png' width='20px'>热那亚共和国：朝圣者产生的黄金+30%`,
     "安茹帝国": /*html*/`安茹帝国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/安茹帝国.png' width='20px'>安茹帝国：所有要塞和码头+30%生命值`,
     "卡斯蒂利亚王国": /*html*/`卡斯蒂利亚王国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/卡斯蒂利亚王国.png' width='20px'>卡斯蒂利亚王国：接近圣地的单位攻击力+20%，并可以恢复生命值`,
@@ -512,7 +512,6 @@ let ayanami = {
     "拜占庭建造石头": /*html*/`野外石料<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>野外石料：建造建筑成功后，获得已建造建筑每格占地面积2的石头`,
     "拜占庭橄榄园": /*html*/`大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得橄榄油效率+60%`,
     "拜占庭回血": /*html*/`地下水宫 - 朝圣者之瓶<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朝圣者之瓶.png' width='20px'>地下水宫 - 朝圣者之瓶：激活后，每秒恢复25生命值，持续6秒`,
-    "拜占庭符文石禁止": /*html*/`符文石<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/符文石.png' width='20px'>符文石：拜占庭人无法使用符文石`,
 
 
     "拜占庭边防部队防御": /*html*/`边防部队防御<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/边防部队防御.png' width='20px'>边防部队防御：激活后，9.5格范围内的村民在30秒内护甲+2，装备长矛获得+1/+2/+3/+5攻击力加成(+3/+4/+5/+6对大象额外伤害)`,
@@ -738,7 +737,7 @@ let ayanami = {
     "圣物敖包效果": /*html*/`圣物敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png' width='20px'>圣物敖包：萨满消耗1个持有的圣物，将其转化为圣物敖包，不会占据普通敖包上限`,
     "金帐汗国建筑车": /*html*/`建筑车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/建筑车.png' width='20px'>建筑车：选择封建时代升级可获得建筑车，指定一个地点展开为军事生产建筑`,
     "拜占庭石墙塔": /*html*/`轻型投石车炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台`,
-    "马其顿王朝白银": /*html*/`方铅矿采集<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>方铅矿采集：采集黄金和石头时，提交50%采集量的白银`,
+    "马其顿王朝白银": /*html*/`方铅矿采集<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>方铅矿采集：采集黄金和石头时，提交40%采集量的白银`,
     "马其顿王朝大酒庄": /*html*/`大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%`,
     "马其顿王朝甲胄骑兵": /*html*/`贵族学校<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贵族学校.png' width='20px'>贵族学校：仅能在贵族学校每40秒花费750白银捆绑训练3个`,
     "马其顿王朝英雄侦察兵光环": /*html*/`精锐出场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英雄侦察兵光环.png' width='20px'>精锐出场(侦察兵)：附近单位的火炬伤害 +35%`,
