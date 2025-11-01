@@ -395,8 +395,6 @@ a {
     font-weight: normal;
 }
 
-#sidebar li li span {}
-
 #sidebar li li a {
     padding: 0px 0px 0px 0px;
 }
@@ -430,9 +428,6 @@ a {
 
 
 /* Calendar */
-
-#calendar {}
-
 #calendar_wrap {
     padding: 20px;
 }

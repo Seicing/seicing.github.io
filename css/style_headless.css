@@ -99,15 +99,10 @@ ol {
     line-height: 240%;
 }
 
-ul,
-ol {}
-
 a {
     text-decoration: none;
     color: #D0C9B7;
 }
-
-a:hover {}
 
 #wrapper {
     background: url(https://seicing.com/res/img03.png) repeat-y center top;
@@ -146,9 +141,6 @@ a:hover {}
     padding: 0;
     color: #FFFFFF;
 }
-
-#logo h1,
-#logo p {}
 
 #logo h1 {
     padding: 30px 0px 0px 0px;
@@ -269,9 +261,6 @@ a:hover {}
     text-decoration: none;
 }
 
-#menu .current_page_item a {}
-
-
 /* Page */
 
 #page {
@@ -330,8 +319,6 @@ a:hover {}
 .post .meta .posted {
     float: right;
 }
-
-.post .meta a {}
 
 .post .entry {
     padding: 0px 0px 30px 0px;
@@ -396,8 +383,6 @@ a:hover {}
     font-weight: normal;
 }
 
-#sidebar li li span {}
-
 #sidebar li li a {
     padding: 0px 0px 0px 0px;
 }
@@ -431,9 +416,6 @@ a:hover {}
 
 
 /* Calendar */
-
-#calendar {}
-
 #calendar_wrap {
     padding: 20px;
 }
@@ -486,4 +468,54 @@ a:hover {}
 
 div {
     font-family: Microsoft Yahei, sans-serif;
+}
+
+
+/* 针对移动设备的样式 */
+@media only screen and (max-width: 767px) {
+
+    /* 新增：将背景设置为纯白并强制覆盖其他样式 */
+    body,
+    #wrapper,
+    #page,
+    #content,
+    .entry {
+        background: #ffffff !important;
+    }
+
+    /* 1. 隐藏侧边栏 ($List) */
+    #sidebar {
+        display: none;
+    }
+
+    /* 2. 让主内容区 ($Content) 自适应屏幕宽度 */
+    #wrapper,
+    #content {
+        width: 100%;
+    }
+
+    /* 3. 移除固定宽度和一些可能影响布局的样式 */
+    #wrapper2,
+    #page {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 确保内容容器也适应宽度 */
+    .post,
+    .entry {
+        width: 100%;
+        padding-left: 15px;
+        /* 可选：增加一些内边距以改善移动端的可读性 */
+        padding-right: 15px;
+        box-sizing: border-box;
+        /* 确保内边距不会增加总宽度 */
+    }
+
+    /* 4. 调整底部的样式 */
+    div[style*="float:right"] {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
 }

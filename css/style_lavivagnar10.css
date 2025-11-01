@@ -93,15 +93,10 @@ ol {
     line-height: 240%;
 }
 
-ul,
-ol {}
-
 a {
     text-decoration: none;
     color: #CABC85;
 }
-
-a:hover {}
 
 #wrapper {
     background: url(https://seicing.com/res/img03ls.png) repeat-y center top;
@@ -158,9 +153,6 @@ a:hover {}
     padding: 0;
     color: #FFFFFF;
 }
-
-#logo h1,
-#logo p {}
 
 #logo h1 {
     padding: 30px 0px 0px 0px;
@@ -281,9 +273,6 @@ a:hover {}
     text-decoration: none;
 }
 
-#menu .current_page_item a {}
-
-
 /* Page */
 
 #page {
@@ -342,8 +331,6 @@ a:hover {}
 .post .meta .posted {
     float: right;
 }
-
-.post .meta a {}
 
 .post .entry {
     padding: 0px 0px 30px 0px;
@@ -412,8 +399,6 @@ a:hover {}
     font-weight: normal;
 }
 
-#sidebar li li span {}
-
 #sidebar li li a {
     padding: 0px 0px 0px 0px;
 }
@@ -447,9 +432,6 @@ a:hover {}
 
 
 /* Calendar */
-
-#calendar {}
-
 #calendar_wrap {
     padding: 20px;
 }
