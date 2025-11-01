@@ -1203,7 +1203,7 @@ function hiddenPic2() {
 }
 
 // ========================================================
-// === 动态 .saic 网格布局 & 智能填充 (最终版) ===
+// === 动态 .saic 网格布局 (基于容器宽度 & 自身宽度设定) ===
 // ========================================================
 function handleDynamicSaicLayout() {
     const saicContainers = document.querySelectorAll('.saic');
@@ -1211,21 +1211,18 @@ function handleDynamicSaicLayout() {
 
     const cardWidth = 150; // 每张卡片的固定宽度
     const gap = 1;         // 卡片间的缝隙
-    const padding = 1;     // 容器的左右内边距
-
-    const screenWidth = window.innerWidth;
 
     saicContainers.forEach(container => {
         // --- 每次重新计算前，必须移除之前添加的所有占位符 ---
         const existingPlaceholders = container.querySelectorAll('.saic-placeholder');
         existingPlaceholders.forEach(p => p.remove());
 
-        const parentContainer = container.parentElement;
-        if (!parentContainer) return;
+        // 1. 核心修改：获取容器“当前可用”的宽度
+        //    我们先临时将容器宽度设为100%，让它撑满父元素，然后再读取它的实际宽度
+        container.style.width = '100%';
+        const availableWidth = container.clientWidth; // clientWidth 是最可靠的宽度值
 
-        // 1. 核心逻辑：根据屏幕宽度，动态计算每行最多能放几张卡片
-        // (屏幕可用宽度 - 两边padding) / (每张卡片宽度 + 缝隙)
-        const availableWidth = screenWidth - (padding * 2);
+        // 2. 根据可用宽度，动态计算每行最多能放几张卡片
         let perRow = Math.floor((availableWidth + gap) / (cardWidth + gap));
 
         // 安全措施：确保每行至少有1张卡片
@@ -1233,23 +1230,21 @@ function handleDynamicSaicLayout() {
             perRow = 1;
         }
 
-        // 2. 根据 perRow 动态计算父容器的“理想宽度”
-        const targetParentWidth = perRow * cardWidth + (perRow - 1) * gap;
-        parentContainer.style.width = targetParentWidth + 'px';
+        // 3. 核心修改：根据 perRow 动态计算并设定 .saic 容器自身的“理想宽度”
+        const targetSaicWidth = perRow * cardWidth + (perRow - 1) * gap;
+        container.style.width = targetSaicWidth + 'px';
 
-        // 3. 计算并用纯白卡片填满最后一行
-        const originalCardsCount = container.children.length; // 获取原始卡片数量
+        // 4. 计算并用纯白卡片填满最后一行
+        const originalCardsCount = container.children.length;
         const remainder = originalCardsCount % perRow;
 
         if (remainder !== 0) {
             const placeholdersToCreate = perRow - remainder;
             for (let i = 0; i < placeholdersToCreate; i++) {
                 const placeholder = document.createElement('div');
-                placeholder.className = 'saic-placeholder'; // 加一个class方便识别和移除
+                placeholder.className = 'saic-placeholder';
                 placeholder.style.width = cardWidth + 'px';
-                // 让占位符的高度和卡片一样高，或者设为一个固定值
-                // placeholder.style.height = cardWidth + 'px'; 
-                placeholder.style.background = 'white'; // 确保是纯白色
+                placeholder.style.background = 'white';
                 placeholder.style.flexShrink = '0';
                 container.appendChild(placeholder);
             }
@@ -1257,10 +1252,8 @@ function handleDynamicSaicLayout() {
     });
 }
 
-// 在页面加载时，和每次调整窗口大小时，都运行我们的函数
+// 事件监听器保持不变
 window.addEventListener('DOMContentLoaded', handleDynamicSaicLayout);
-
-// 使用“防抖”来优化resize事件的性能，避免过于频繁地触发
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);

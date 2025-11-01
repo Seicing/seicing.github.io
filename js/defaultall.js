@@ -86,7 +86,7 @@ function handleSpecialPageBackground() {
 
         // 5. 强行将它们的背景设置为黑色
         elementsToChange.forEach(element => {
-            element.style.setProperty('background', 'black', 'important');
+            element.style.setProperty('background', `url('https://seicing.com/res/textile_pattern_mip0.png')`, 'important');
         });
     }
 }
