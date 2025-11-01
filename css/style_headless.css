@@ -470,12 +470,12 @@ div {
     font-family: Microsoft Yahei, sans-serif;
 }
 
+
 /* ======================================================== */
-/* === 响应式样式：覆盖平板与移动端 (最终修正版) === */
+/* === 响应式样式：覆盖平板与移动端 (注入侧边栏功能版) === */
 /* ======================================================== */
 
 /* --- 规则 A：针对所有小于 1280px 的屏幕 --- */
-/* 解决在平板等中等宽度下，sidebar 和 content 的层级遮挡问题 */
 @media only screen and (max-width: 1279px) {
     #sidebar {
         z-index: 10 !important;
@@ -491,12 +491,15 @@ div {
 @media only screen and (max-width: 767px) {
 
     /* --- 基础重置 --- */
+    /* 修改点1：给body添加 position: relative; 以便后续操作 */
     html,
     body {
         width: 100%;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
+        position: relative;
+        /* <--- 确保body有这个属性 */
     }
 
     /* --- 强制重置所有可能导致溢出的容器 --- */
@@ -517,11 +520,78 @@ div {
         padding: 10px 15px;
     }
 
-    #sidebar {
-        display: none !important;
+    /* 
+     * ========================================================
+     * === 关键修改点2：替换掉旧的 sidebar 隐藏规则 ===
+     * ========================================================
+     */
+
+    /* 将这一行: */
+    /* #sidebar { display: none !important; } */
+
+    /* ...替换为下面这一整块新的样式，用于实现抽屉效果 */
+    #sidebar-toggle-button {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1001;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: block !important;
     }
 
-    /* --- 通用内容处理规则 --- */
+    #sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        max-width: 80%;
+        height: 100vh;
+        background: #ffffff !important;
+        z-index: 999;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+        display: block !important;
+    }
+
+    /* “激活”状态的样式，由JS控制 */
+    body.sidebar-open #sidebar {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open #sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.sidebar-open {
+        overflow: hidden;
+        /* 防止背景滚动 */
+    }
+
+    /* --- 您其他的通用内容处理规则保持不变 --- */
     .entry,
     .entry p,
     .entry li {
@@ -543,66 +613,39 @@ div {
         overflow-x: auto !important;
     }
 
-    /* 
-     * ========================================================
-     * === 针对内联样式的特别修正 (新增的关键代码) ===
-     * ========================================================
-     */
-
-    /* 新增规则1：强制重置所有被内联样式写死宽度的 div */
-    /* 解决了“科技图标行”的问题 */
-    .entry div[style*="width"] {
-        width: auto !important;
-        /* 取消固定的px宽度 */
-        max-width: 100% !important;
-        /* 确保它不会超过屏幕宽度 */
+    /* 别忘了我们为表格做的修复 */
+    .entry table th,
+    .entry table td {
+        white-space: nowrap !important;
+        padding: 8px 10px !important;
     }
 
-    /* 新增规则2：强制允许多行换行，对抗 "flex-wrap: nowrap" */
-    /* 解决了“同定位单位”列表不换行的问题 */
+    /* 别忘了我们为各种内联样式做的修复 (包括对layer1/2的例外) */
+    .entry div[style*="width"]:not(#layer1):not(#layer2) {
+        width: auto !important;
+        max-width: 100% !important;
+    }
+
     .entry div[style*="flex-wrap: nowrap"] {
         flex-wrap: wrap !important;
     }
 
-    /* 
-     * ========================================================
-     * === 新增规则3：统一化 Flex 布局内元素的尺寸 ===
-     * ========================================================
-     */
-    /* 这个选择器 > div 的意思是“直接的子元素div” */
     .entry div[style*="flex-wrap"]>div {
-        /* 关键：让每个单元格都参与空间分配，并设置一个基础宽度 */
-        /* 21% 的意思是，一行大约能放下4个 (21% * 4 = 84%)，剩下的空间用于间隙 */
         flex: 1 0 21% !important;
-
-        /* 让每个单元格内部的文字居中对齐，视觉上更美观 */
         text-align: center !important;
-
-        /* 可以稍微加一点外边距，让单元格之间有点空隙 */
         margin: 5px;
     }
 
-    /* 
-     * ========================================================
-     * === 新增规则：确保表单元素也能自适应 (修正 Textarea) ===
-     * ========================================================
-     */
     .entry input[type="text"],
     .entry input[type="password"],
     .entry textarea {
         width: 100% !important;
-        /* 强制宽度为100%，占满父容器 */
         max-width: 100% !important;
-        /* 确保不会超出屏幕 */
         box-sizing: border-box !important;
-        /* 让 padding 和 border 不会撑大总宽度 */
     }
 
     .entry textarea {
-        /* 可以给 textarea 一个合适的最小高度，方便输入 */
         min-height: 150px;
-        /* 允许用户垂直调整大小，但禁止水平调整（因为宽度已经100%了） */
         resize: vertical;
     }
-
 }
