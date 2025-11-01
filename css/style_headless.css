@@ -729,57 +729,47 @@ div {
         pointer-events: revert !important;
     }
 
+
     /*
  * ========================================================
- * === 新增规则：确保表单元素也能自适应 (修正 Textarea) ===
+ * === 终极修正：留言板宽度 (使用ID选择器覆盖内联样式) ===
  * ========================================================
  */
-    .entry input[type="text"],
-    .entry input[type="password"],
-    .entry textarea {
+
+    /* 
+ * 1. 针对包裹容器和内部元素
+ *    我们直接使用ID选择器(#comments, #comment_pages)，它们的优先级远高于class
+ *    对于没有ID的元素，我们使用更具体的“属性选择器” [style*="width"]
+ */
+    div[style*="width"]>textarea#comment_text,
+    #comments,
+    #comment_pages {
         width: 100% !important;
-        /* 强制宽度为100%，占满父容器 */
         max-width: 100% !important;
-        /* 确保不会超出屏幕 */
         box-sizing: border-box !important;
-        /* 让 padding 和 border 不会撑大总宽度 */
     }
 
-    .entry textarea {
-        /* 可以给 textarea 一个合适的最小高度，方便输入 */
+    /* 2. 针对包裹着textarea的那个没有ID的父div，也进行处理 */
+    div:has(> #comment_text) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* 3. 单独处理textarea的样式 */
+    textarea#comment_text {
         min-height: 150px;
-        /* 允许用户垂直调整大小，但禁止水平调整（因为宽度已经100%了） */
         resize: vertical;
     }
 
-    /* 
- * 同时选中留言列表容器和翻页导航容器
- * .entry .comments 的写法可以增加一点选择器权重，确保生效
- */
-    .entry .comments,
-    .entry .comment_pages {
-        width: 100% !important;
-        /* 强制宽度为100%，占满父容器 */
-        max-width: 100% !important;
-        /* 确保不会超出屏幕 */
-        box-sizing: border-box !important;
-        /* 让 padding 和 border 不会撑大总宽度 */
-
-        /* (可选但推荐) 如果内部有浮动元素，这可以防止父容器高度塌陷 */
-        overflow: hidden;
-    }
-
-    /* 
- * 针对翻页导航内部的 a 标签，可能也需要处理
- * 允许它们在空间不足时自动换行
- */
-    .entry .comment_pages a {
+    /* 4. 针对翻页导航内部的 a 标签（保持不变） */
+    #comment_pages a {
         white-space: normal !important;
-        /* 允许页码换行 */
         display: inline-block;
-        /* 确保页码之间有间距 */
         margin: 2px;
     }
+
 
     #mobile-drawer-container a {
         color: #857E6E !important;
