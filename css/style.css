@@ -753,4 +753,17 @@ div {
     #techtree {
         background: none !important;
     }
+
+    #icons {
+        display: flex;
+        /* 1. 启用 Flexbox 布局 */
+        flex-wrap: wrap;
+        /* 2. 允许项目在空间不足时换行，这是最关键的一步！*/
+        white-space: normal !important;
+        /* 3. 明确覆盖掉 nowrap 规则 */
+        justify-content: flex-start;
+        /* 4. (可选) 让图标从左侧开始排列 */
+        gap: 6px;
+        /* 5. (可选) 在图标之间添加一点间距，比用margin更优雅 */
+    }
 }
