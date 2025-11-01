@@ -1192,29 +1192,30 @@ function setDefaultVisibleSpansForCiv(civ) {
     });
 
     // 配置表：每个文明对应要默认显示的 span id 列表
+    // 201牛 202牲畜围栏 203清酒 204石头 205显示201和202 206野猪
     const civDefaults = {
         abb: ["Extra201", "Extra204", "Extra60", "Extra3",],
         ayy: ["Extra201", "Extra204", "Extra75", "Extra33",],
         sul: ["Extra201", "Extra204", "Extra76", "Extra4",],
         tug: ["Extra201", "Extra204", "Extra77", "Extra44",],
-        eng: ["Extra201", "Extra204", "Extra56",],
-        hol: ["Extra201", "Extra204", "Extra57",],
-        mon: ["Extra201", "Extra9", "Extra88", "Extra58",],
+        eng: ["Extra201", "Extra206", "Extra204", "Extra56",],
+        hol: ["Extra201", "Extra206", "Extra204", "Extra57",],
+        mon: ["Extra201", "Extra206", "Extra9", "Extra88", "Extra58",],
         goh: ["Extra202", "Extra205", "Extra59", "Extra88",],
-        fre: ["Extra201", "Extra204", "Extra106",],
-        jda: ["Extra201", "Extra204", "Extra107",],
-        kcr: ["Extra201", "Extra204", "Extra55",],
-        rus: ["Extra201", "Extra204",],
+        fre: ["Extra201", "Extra206", "Extra204", "Extra106",],
+        jda: ["Extra201", "Extra206", "Extra204", "Extra107",],
+        kcr: ["Extra201", "Extra206", "Extra204", "Extra55",],
+        rus: ["Extra201", "Extra206", "Extra204",],
         ott: ["Extra201", "Extra204", "Extra78",],
         mal: ["Extra201", "Extra204", "Extra205", "Extra39",],
-        byz: ["Extra201", "Extra204", "Extra68", "Extra10",],
-        mac: ["Extra201", "Extra204", "Extra63", "Extra125",],
-        jpn: ["Extra201", "Extra204", "Extra61", "Extra127",],
-        sen: ["Extra201", "Extra204", "Extra203", "Extra62",],
-        chi: ["Extra201", "Extra204",],
-        zxl: ["Extra201", "Extra204",],
-        hre: ["Extra201", "Extra204",],
-        otd: ["Extra201", "Extra204",],
+        byz: ["Extra201", "Extra206", "Extra204", "Extra68", "Extra10",],
+        mac: ["Extra201", "Extra206", "Extra204", "Extra63", "Extra125",],
+        jpn: ["Extra201", "Extra206", "Extra204", "Extra61", "Extra127",],
+        sen: ["Extra201", "Extra206", "Extra204", "Extra203", "Extra62",],
+        chi: ["Extra201", "Extra206", "Extra204",],
+        zxl: ["Extra201", "Extra206", "Extra204",],
+        hre: ["Extra201", "Extra206", "Extra204",],
+        otd: ["Extra201", "Extra206", "Extra204",],
     };
 
     const list = civDefaults[civ];
