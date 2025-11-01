@@ -458,91 +458,58 @@ div {
     height: 200px
 }
 
-/* 针对移动设备的样式 */
+
+/* 仅在屏幕宽度小于等于767px时（通常是手机）应用以下样式 */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础和布局重置 --- */
+    /* --- 基础重置，防止溢出 --- */
     html,
     body {
-        overflow-x: hidden;
-        /* 强制隐藏整个页面的水平滚动条 */
         width: 100%;
-    }
-
-    body {
+        overflow-x: hidden;
+        /* 关键：防止任何原因导致的水平滚动条 */
         margin: 0;
         padding: 0;
     }
 
-    * {
-        box-sizing: border-box;
-    }
-
-    /* 关键：让宽度计算更可预测 */
-
-    /* --- 主内容区 Wrapper --- */
-    #wrapper {
-        width: 100%;
-        /* 移除wrapper的padding，将它交给内层处理，以更好地控制滚动元素 */
-        padding: 0;
-    }
-
-    .entry {
-        padding-left: 15px;
-        /* 在内容区内部增加边距，美化排版 */
-        padding-right: 15px;
-    }
-
-    /* --- 关键修复：处理宽表格和溢出内容 --- */
-    /* 这段代码是实现您需求的核心 */
-    .entry table[width] {
-        display: block;
-        /* 1. 将表格变为块级元素，使其可以拥有独立的滚动条 */
-        max-width: 100%;
-        /* 2. 确保这个块本身不超过屏幕宽度 */
-        overflow-x: auto;
-        /* 3. 如果表格内部内容超出，则只为这个表格本身添加水平滚动条 */
-        white-space: nowrap;
-        /* 4. 保持表格单元格内容不换行，维持原有的表格布局 */
-    }
-
-    /* 同样地，为<pre>代码块等也添加滚动能力 */
-    .entry pre {
-        overflow-x: auto;
-    }
-
-    /* --- 确保图片等内容自适应 (您的需求1) --- */
-    .entry img,
-    .entry video,
-    .entry iframe {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* --- 其他布局调整 --- */
-    body,
-    #wrapper,
-    #page,
-    #content {
-        background: #ffffff !important;
-    }
-
+    /* --- 1. 隐藏侧边栏 ($List) --- */
+    /* “响应式”在这里的体现就是根据屏幕尺寸决定是否显示 */
     #sidebar {
         display: none;
     }
 
+    /* --- 2. 让内容区 ($Content 和 $Bottom) 填满整个网页 --- */
+
+    /* 将最外层容器的固定宽度改为100% */
+    #wrapper {
+        width: 100%;
+    }
+
+    /* 确保所有内层容器也跟随变为100%宽度 */
     #wrapper2,
     #page,
     #content,
-    .post {
+    .post,
+    .entry {
         width: 100%;
         height: auto;
     }
 
+    /* 让内容有一定的边距，避免文字紧贴屏幕边缘，提升可读性 */
+    .entry {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        /* 确保内边距不会撑大容器 */
+    }
+
+    /* 重置底部 ($Bottom) 的样式，使其也填满宽度 */
     div[style*="float:right"] {
         float: none;
         width: 100%;
         text-align: center;
-        padding: 15px;
+        /* 在手机上居中通常更好看 */
+        padding: 15px 0;
+        /* 增加一些垂直间距 */
     }
 }
