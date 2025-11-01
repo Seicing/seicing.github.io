@@ -655,70 +655,35 @@ div {
         margin-right: auto !important;
     }
 
-    /*
- * ========================================================
- * === 科技树 Techtree & Age (最终优化版) ===
- * === 使用 Flexbox 确保布局/宽度与桌面端完全一致 ===
- * ========================================================
- */
-
-    /* 
- * 步骤 1: 将 #techtree 改造为 Flexbox 滚动容器。
- * 这是最关键的一步。通过 display: flex，我们命令其直接子元素
- * (也就是 .age 容器) 自动水平排列。
- */
-    #techtree {
-        display: flex !important;
-        /* 核心：启用 Flexbox 布局 */
-        flex-wrap: nowrap !important;
-        /* 确保子元素永不换行，强制排成一行 */
-        max-width: 100% !important;
-        overflow-x: auto !important;
-        /* 启用水平滚动条 */
-        padding: 10px !important;
-        box-sizing: border-box !important;
-        border: 1px solid #ccc;
-        background: none !important;
-    }
-
-    /* 
- * 步骤 2: 为 .age 容器设定 Flexbox 子项属性。
- * 我们需要确保它们不会被 Flexbox 压缩，从而保持其原始的、
- * 与电脑版完全相同的宽度。
- */
+    /* --- 科技树 Techtree & Age --- */
+    #techtree,
     .age1,
     .age2,
     .age3,
     .age4 {
-        flex-shrink: 0 !important;
-        /* 关键：禁止收缩，确保维持原始宽度 */
-        /* 
-     * 不需要设置 display, width, float 等属性。
-     * Flexbox 会自动处理它们的排列，同时保留它们在桌面版样式中
-     * 定义的原始宽度和内部布局。
-     */
+        /* 1. 为容器本身设置滚动 */
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        border: 1px solid #ccc;
     }
 
-    /* 
- * 步骤 3: 精准重置 .age 容器【内部所有元素】的样式。
- * 这部分保持不变，它至关重要，因为它确保了每个 .age 容器内部的
- * 建筑、科技图标等元素的 float、box-sizing 等布局能恢复到
- * 桌面版的默认状态，不受移动端全局样式的影响。
- */
+    /* 2. 核心修正：不再使用 all:revert，而是精准地重置有问题的属性 */
+    /*    我们只重置那些可能被我们通用规则污染的属性 */
     #techtree *,
     .age1 *,
     .age2 *,
     .age3 *,
     .age4 * {
         max-width: none !important;
-        /* 解除通用规则的宽度限制 */
+        /* 解除宽度限制 */
         box-sizing: content-box !important;
-        /* 恢复默认的盒子模型 */
+        /* 恢复默认盒子模型 */
         word-break: normal !important;
-        /* 恢复默认的文本换行 */
+        /* 恢复默认文本换行 */
         float: revert !important;
-        /* 允许内部元素原有的 float 生效 */
-        /* 其他需要的重置属性也可以加在这里 */
+        /* 允许浮动生效 */
     }
 
     /* --- 绝对保护盾 (Layer1/2) --- */

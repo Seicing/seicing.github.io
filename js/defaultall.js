@@ -16,7 +16,7 @@ function setupMobileSidebar() {
         const links = container.querySelectorAll('a');
 
         // 2. 定义我们要寻找和替换的颜色
-        const targetColor = '#0366D6'; // #0010ff 对应的rgb值
+        const targetColor = 'rgb(3, 102, 214)'; // #0010ff 对应的rgb值
         const replacementColor = '#857E6E';
 
         // 3. 遍历每一个链接
