@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 只在移动端执行
-    if (window.innerWidth <= 767) {
+    // 定义一个处理表格滚动的函数
+    function handleTableScrolling() {
+        // 只在移动端屏幕尺寸下执行
+        if (window.innerWidth > 767) {
+            // 如果屏幕宽度大于767px，可以考虑移除已添加的样式，以恢复桌面端表现
+            // （此部分为可选的额外优化）
+            const tablesWithScroll = document.querySelectorAll('.entry .table-force-scroll');
+            tablesWithScroll.forEach(function (table) {
+                table.classList.remove('table-force-scroll');
+            });
+            return;
+        }
 
-        // --- 逻辑1：智能处理表格滚动 ---
-
-        // 关键修复：首先获取当前屏幕的【实际宽度】
         const currentScreenWidth = window.innerWidth;
-
         const tables = document.querySelectorAll('.entry table');
 
         tables.forEach(function (table) {
@@ -14,15 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
             if (table.hasAttribute('width')) {
                 const definedWidth = parseInt(table.getAttribute('width'), 10);
 
-                // 关键修复：将表格的定义宽度与【当前屏幕的实际宽度】进行比较
-                // 而不是与固定的 767 比较
                 if (!isNaN(definedWidth) && definedWidth > currentScreenWidth) {
-                    // 只有当表格宽度确实大于当前屏幕宽度时，才添加滚动样式
+                    // 当表格宽度大于当前屏幕宽度时，添加滚动样式
                     table.classList.add('table-force-scroll');
+                } else {
+                    // 如果表格宽度不再大于屏幕宽度，则移除滚动样式
+                    table.classList.remove('table-force-scroll');
                 }
             }
-            // 对于没有定义宽度，或者宽度小于当前屏幕宽度的表格，我们什么都不做。
-            // 浏览器会自动尝试挤压它们以适应屏幕。
         });
     }
+
+    // 1. 页面首次加载时，运行一次
+    handleTableScrolling();
+
+    // 2. 当浏览器窗口大小改变时，再次运行
+    window.addEventListener('resize', handleTableScrolling);
 });
