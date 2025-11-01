@@ -460,7 +460,7 @@ div {
 
 
 /* ================================================= */
-/* === 2. 针对移动端 (Mobile) 的样式 === */
+/* === 2. 针对移动端 (Mobile) 的样式 (已修复) === */
 /* ================================================= */
 @media only screen and (max-width: 767px) {
 
@@ -505,22 +505,35 @@ div {
         float: none !important;
     }
 
-    /* --- 需求1：修复内容不会自动缩入容器的问题 --- */
     .entry {
         padding: 10px 15px;
     }
 
-    /* 强制 .entry 内的所有元素都能正确换行 */
-    .entry * {
+    /* --- 强制 .entry 内的非表格元素都能正确换行 --- */
+    /* 我们从这里移除了对 table 的直接影响 */
+    .entry p,
+    .entry div,
+    .entry li,
+    .entry img {
         max-width: 100%;
-        /* 确保图片等不会超出 */
         white-space: normal !important;
-        /* 强制文本自动换行，覆盖原始CSS的nowrap */
         overflow-wrap: break-word;
-        /* 强制长单词或链接换行 */
         word-break: break-all;
-        /* 在任意字符间换行，作为最后手段 */
     }
+
+    /* --- 新增：专门为表格设置滚动 --- */
+    /* 这是解决表格被压缩变小问题的关键 */
+    .entry table {
+        display: block;
+        /* 将表格变为一个可以设置 overflow 的块级元素 */
+        max-width: 100%;
+        /* 确保这个块本身不超过屏幕宽度 */
+        overflow-x: auto;
+        /* 如果表格内部内容超出，则只为这个表格本身添加水平滚动条 */
+        white-space: nowrap;
+        /* 保持表格单元格内容不换行，维持原有表格布局 */
+    }
+
 
     /* --- 调整底部样式 --- */
     div[style*="float:right"] {
