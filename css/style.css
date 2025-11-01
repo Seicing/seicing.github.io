@@ -648,11 +648,19 @@ div {
     }
 
     /* --- 科技树 Techtree & Age --- */
-    #techtree,
     .age1,
     .age2,
     .age3,
     .age4 {
+        /* 1. 为容器本身设置滚动 */
+        overflow-x: auto !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        border: 1px solid #ccc;
+    }
+
+    /* --- 科技树 Techtree & Age --- */
+    #techtree {
         /* 1. 为容器本身设置滚动 */
         max-width: 100% !important;
         overflow-x: auto !important;
@@ -660,6 +668,7 @@ div {
         box-sizing: border-box !important;
         border: 1px solid #ccc;
     }
+
 
     /* 2. 核心修正：不再使用 all:revert，而是精准地重置有问题的属性 */
     /*    我们只重置那些可能被我们通用规则污染的属性 */
@@ -754,7 +763,8 @@ div {
     .age1 table,
     .age2 table,
     .age3 table,
-    .age4 table {
+    .age4 table,
+    #customers2 {
         display: revert !important;
         /* 撤销 display:block，让其恢复默认或行内样式 */
         width: auto !important;
