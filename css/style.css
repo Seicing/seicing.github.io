@@ -473,7 +473,7 @@ div {
 
 
 /* ================================================= */
-/* === 2. 针对移动端 (Mobile) 的样式 (最终修复版) === */
+/* === 2. 针对移动端 (Mobile) 的样式 (最终版) === */
 /* ================================================= */
 @media only screen and (max-width: 767px) {
 
@@ -522,9 +522,8 @@ div {
         padding: 10px 15px;
     }
 
-    /* --- 规则A：强制非表格内容换行 --- */
+    /* --- 规则A：强制非表格、非flexbox内容换行 --- */
     .entry p,
-    .entry div,
     .entry li,
     .entry img {
         max-width: 100%;
@@ -533,21 +532,37 @@ div {
         word-break: break-all;
     }
 
-    /* --- 规则B：让表格容器可以滚动 --- */
-    .entry table {
-        display: block;
-        max-width: 100%;
-        overflow-x: auto;
+    /* --- 规则B (关键改动)：为需要滚动的表格准备一个“样式钩子” --- */
+    /* 这个样式默认不生效，由JS在需要时动态添加到 table 上 */
+    .entry .table-force-scroll {
+        display: block !important;
+        width: 100% !important;
+        /* 或者 max-width: 100% */
+        overflow-x: auto !important;
     }
 
-    /* --- 规则C (关键修复)：强制表格内的内容不换行 --- */
-    /* 这条新规则的优先级高于规则A，专门用于表格 */
-    .entry table p,
-    .entry table div,
-    .entry table td,
-    .entry table th {
+    .entry .table-force-scroll td,
+    .entry .table-force-scroll th {
         white-space: nowrap !important;
+        /* 确保滚动表格内部不换行 */
     }
+
+    /* --- 规则C (关键改动)：修复Flexbox显示问题 --- */
+    /* 找到所有使用flex布局的div，并重置可能干扰它的样式 */
+    .entry div[style*="display: flex"],
+    .entry div[style*="display: inline-flex"] {
+        /* 允许flex容器根据其内容自由决定宽度 */
+        max-width: none;
+    }
+
+    /* 重置flex子项的样式，让flexbox算法完全接管它们的布局 */
+    .entry div[style*="display: flex"]>*,
+    .entry div[style*="display: inline-flex"]>* {
+        max-width: none;
+        word-break: normal;
+        white-space: normal !important;
+    }
+
 
     /* --- 调整底部样式 --- */
     div[style*="float:right"] {
