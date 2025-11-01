@@ -599,7 +599,13 @@ div {
     div[style*="float:right"] {
         float: none !important;
         clear: both !important;
-        margin: 15px auto !important;
+
+        /* 核心修改点：使用 Flexbox 来居中其内部内容 */
+        display: flex !important;
+        justify-content: center !important;
+
+        /* 只设置垂直间距 */
+        margin: 15px 0 !important;
     }
 
     /* --- 其他所有通用内容修正规则 (基于您的“旧代码”) --- */
