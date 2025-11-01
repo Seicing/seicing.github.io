@@ -1015,25 +1015,54 @@ let ayanami = {
 }
 
 function showPic(e, taitou) {
-    var x, y, aasb;
-    x = e.pageX;
-    y = e.pageY;
-
-    aasb = document.getElementById("Layer1");
-    aasb.style.display = "";
-    aasb.style.width = "210px";
-    aasb.innerHTML = "<div style='background:rgba(0,0,0,0.75);padding:5px'><font style='color:#ffffff'>" + ayanami[taitou] + "</font></div>";
-    var div = aasb;
-    var z = div.offsetWidth;
-
-    if (x + z < document.body.clientWidth) {
-        aasb.style.left = x + 2 + 'px';
-        aasb.style.top = y + 2 + 'px';
-    } else {
-        aasb.style.left = x - (x + z - document.body.clientWidth) + 'px';
-        aasb.style.top = y + 2 + 'px';
+    // 获取或创建 Layer1
+    var aasb = document.getElementById("Layer1");
+    if (!aasb) {
+        aasb = document.createElement("div");
+        aasb.id = "Layer1";
+        document.body.appendChild(aasb);
     }
 
+    // 样式“写死”在 JS 中
+    Object.assign(aasb.style, {
+        position: "fixed",
+        zIndex: 9999,
+        pointerEvents: "none",
+        display: "block",
+        width: "210px",
+        background: "rgba(0,0,0,0.75)",
+        color: "#fff",
+        padding: "5px",
+        borderRadius: "5px",
+    });
+
+    // 设置内容（防止 ayanami[taitou] 未定义）
+    aasb.innerHTML = ayanami && ayanami[taitou] ? ayanami[taitou] : taitou;
+
+    // --- 坐标获取：兼容鼠标与触摸 ---
+    let x = 0, y = 0;
+    if (e.touches && e.touches.length > 0) {
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+    } else {
+        x = e.clientX;
+        y = e.clientY;
+    }
+
+    // --- 防止 tooltip 超出屏幕 ---
+    const tooltipWidth = aasb.offsetWidth;
+    const tooltipHeight = aasb.offsetHeight;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    let left = x + 10;
+    let top = y + 10;
+
+    if (left + tooltipWidth > vw) left = x - tooltipWidth - 10;
+    if (top + tooltipHeight > vh) top = y - tooltipHeight - 10;
+
+    aasb.style.left = left + "px";
+    aasb.style.top = top + "px";
 }
 
 function hiddenPic() {
@@ -1116,18 +1145,55 @@ function CommonAllTech() {
     document.getElementById("Jurchens2").style.opacity = "1";
 }
 
-function showPic2(e) {
-    var x, y, aasb;
-    x = e.pageX;
-    y = e.pageY;
 
-    aasb = document.getElementById("Layer2");
-    aasb.style.display = "";
-    aasb.style.width = "225px";
-    aasb.style.backgroundColor = "rgba(0,0,0,0.75)";
-    aasb.style.padding = "10px";
-    aasb.style.left = x - 285 + 'px';
-    aasb.style.top = y + 2 + 'px';
+function showPic2(e) {
+    // 获取或创建 Layer2
+    var aasb = document.getElementById("Layer2");
+    if (!aasb) {
+        aasb = document.createElement("div");
+        aasb.id = "Layer2";
+        document.body.appendChild(aasb);
+    }
+
+    // 样式写死在 JS 中
+    Object.assign(aasb.style, {
+        position: "fixed",
+        display: "block",
+        width: "225px",
+        backgroundColor: "rgba(0,0,0,0.75)",
+        color: "#fff",
+        padding: "10px",
+        borderRadius: "5px",
+        zIndex: 9999,
+        pointerEvents: "none", // 防止鼠标挡住元素
+    });
+
+    // --- 坐标获取：兼容鼠标与触摸 ---
+    let x = 0, y = 0;
+    if (e.touches && e.touches.length > 0) {
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+    } else {
+        x = e.clientX;
+        y = e.clientY;
+    }
+
+    // --- 默认偏移位置 ---
+    let left = x - 245;
+    let top = y + 2;
+
+    // --- 防止 tooltip 超出屏幕 ---
+    const tooltipWidth = aasb.offsetWidth;
+    const tooltipHeight = aasb.offsetHeight;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    if (left < 0) left = 5; // 左边界保护
+    if (left + tooltipWidth > vw) left = vw - tooltipWidth - 5;
+    if (top + tooltipHeight > vh) top = vh - tooltipHeight - 5;
+
+    aasb.style.left = left + "px";
+    aasb.style.top = top + "px";
 }
 
 function hiddenPic2() {

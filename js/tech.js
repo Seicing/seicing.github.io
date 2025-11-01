@@ -942,12 +942,7 @@ function showPic(e, taitou) {
         background: "rgba(0,0,0,0.75)",
         color: "#fff",
         padding: "5px",
-        borderRadius: "6px",
-        fontSize: "14px",
-        lineHeight: "1.4",
-        maxWidth: "90%",
-        boxSizing: "border-box",
-        wordBreak: "break-word",
+        borderRadius: "5px",
     });
 
     // 设置内容（防止 ayanami[taitou] 未定义）
