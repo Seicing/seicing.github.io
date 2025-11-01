@@ -1204,23 +1204,31 @@ function hiddenPic2() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const containers = document.querySelectorAll('.saic');
-    const cardWidth = 150;   // 卡片宽度
-    const gap = 1;           // flex gap
+    const cardWidth = 150;  // 每张卡片宽度
+    const gap = 1;          // flex gap（与 CSS 保持一致）
+    const padding = 1;      // 左右 padding（与 CSS 保持一致）
 
     containers.forEach(container => {
-        const perRow = parseInt(container.dataset.perRow) || 5; // 支持自定义
+        const perRow = parseInt(container.dataset.perRow) || 5; // 每行卡片数
         const cards = container.children.length;
         const remainder = cards % perRow;
 
+        // ✅ 自动计算宽度：左右 padding + 卡片宽度总和 + 间距总和
+        const totalWidth = (padding * 2) + (perRow * cardWidth) + ((perRow - 1) * gap);
+        container.style.width = totalWidth + 'px';
+        container.style.boxSizing = 'border-box';
+
+        // ✅ 补齐空位
         if (remainder !== 0) {
-            const remainingWidth = (perRow - remainder) * (cardWidth + gap) - gap;
-
-            const placeholder = document.createElement('div');
-            placeholder.style.width = remainingWidth + 'px';
-            placeholder.style.background = 'white';  // 或者 transparent
-            placeholder.style.flexShrink = '0';
-
-            container.appendChild(placeholder);
+            const remainingCount = perRow - remainder;
+            for (let i = 0; i < remainingCount; i++) {
+                const placeholder = document.createElement('div');
+                placeholder.style.width = cardWidth + 'px';
+                placeholder.style.height = cardWidth + 'px';
+                placeholder.style.background = '#888888'; // 与背景一致，不显眼
+                placeholder.style.flexShrink = '0';
+                container.appendChild(placeholder);
+            }
         }
     });
 });
