@@ -470,26 +470,44 @@ div {
     font-family: Microsoft Yahei, sans-serif;
 }
 
-
-/* --- 关键修复：强制提升 content 的层级 --- */
-#sidebar {
-    /* 确保 sidebar 有一个明确的 z-index，即使它在原始CSS中没有 */
-    z-index: 10 !important;
-}
-
-#content {
-    position: relative !important;
-    /* 赋予 content 参与层级竞争的能力 */
-    z-index: 20 !important;
-    /* 设置一个远高于 sidebar 的 z-index */
+/* ================================================= */
+/* === 全局修复：禁止移动端浏览器自动调整字体大小 === */
+/* ================================================= */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 /* ================================================= */
-/* === 2. 针对移动端 (Mobile) 的样式 (最终版) === */
+/* === 1. 针对桌面端 (Desktop) 的样式优化 === */
+/* ================================================= */
+@media only screen and (min-width: 768px) {
+    #wrapper {
+        width: 1100px !important;
+        transform: translateX(-110px);
+    }
+
+    #sidebar {
+        z-index: 10 !important;
+    }
+
+    #content {
+        position: relative !important;
+        z-index: 20 !important;
+    }
+
+    .entry table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* ================================================= */
+/* === 2. 针对移动端 (Mobile) 的样式 (最终修复版) === */
 /* ================================================= */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础重置 --- */
     html,
     body {
         width: 100%;
@@ -502,7 +520,6 @@ div {
         box-sizing: border-box;
     }
 
-    /* --- 强制设置纯白背景 --- */
     body,
     #wrapper,
     #page,
@@ -512,12 +529,10 @@ div {
         background: #ffffff !important;
     }
 
-    /* --- 隐藏侧边栏 --- */
     #sidebar {
         display: none;
     }
 
-    /* --- 重置所有容器 --- */
     #wrapper,
     #wrapper2,
     #page,
@@ -534,7 +549,7 @@ div {
         padding: 10px 15px;
     }
 
-    /* --- 规则A：强制非表格、非flexbox内容换行 --- */
+    /* --- 规则A：常规内容换行 --- */
     .entry p,
     .entry li,
     .entry img {
@@ -544,37 +559,34 @@ div {
         word-break: break-all;
     }
 
-    /* --- 规则B (关键改动)：为需要滚动的表格准备一个“样式钩子” --- */
-    /* 这个样式默认不生效，由JS在需要时动态添加到 table 上 */
-    .entry .table-force-scroll {
-        display: block !important;
-        width: 100% !important;
-        /* 或者 max-width: 100% */
-        overflow-x: auto !important;
+    /* --- 规则B (关键修复)：让所有表格都能横向滚动 --- */
+    /* 这个通用规则将取代之前所有复杂的JS和CSS逻辑 */
+    .entry table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        /* 为iOS设备提供更流畅的滚动体验 */
+        -webkit-overflow-scrolling: touch;
     }
 
-    .entry .table-force-scroll td,
-    .entry .table-force-scroll th {
-        white-space: nowrap !important;
-        /* 确保滚动表格内部不换行 */
+    /* 确保可滚动表格的内部单元格不会被强制换行 */
+    .entry table td,
+    .entry table th {
+        white-space: nowrap;
     }
 
-    /* --- 规则C (关键改动)：修复Flexbox显示问题 --- */
-    /* 找到所有使用flex布局的div，并重置可能干扰它的样式 */
+    /* --- 规则C：修复Flexbox显示问题 --- */
     .entry div[style*="display: flex"],
     .entry div[style*="display: inline-flex"] {
-        /* 允许flex容器根据其内容自由决定宽度 */
         max-width: none;
     }
 
-    /* 重置flex子项的样式，让flexbox算法完全接管它们的布局 */
     .entry div[style*="display: flex"]>*,
     .entry div[style*="display: inline-flex"]>* {
         max-width: none;
         word-break: normal;
         white-space: normal !important;
     }
-
 
     /* --- 调整底部样式 --- */
     div[style*="float:right"] {
