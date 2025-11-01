@@ -485,11 +485,11 @@ div {
 }
 
 /* ================================================= */
-/* === 2. 针对移动端 (Mobile) 的样式 (最终版) === */
+/* === 2. 针对移动端 (Mobile) 的样式 (修正版) === */
 /* ================================================= */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础重置 --- */
+    /* --- 基础重置，从根源上防止横向滚动 --- */
     html,
     body {
         width: 100%;
@@ -498,18 +498,30 @@ div {
         padding: 0;
     }
 
-    * {
-        box-sizing: border-box;
-    }
-
-    /* --- 强制设置纯白背景 --- */
-    body,
+    /* --- 强制重置所有可能导致溢出的容器 --- */
+    /* 这是解决您当前问题的最关键规则！ */
     #wrapper,
+    #wrapper2,
     #page,
     #content,
     .post,
+    div[style*="min-width"]
+
+    /* 直接选中任何带有 min-width 内联样式的 div */
+        {
+        width: 100% !important;
+        min-width: 0 !important;
+        /* 强制取消最小宽度限制，覆盖内联样式 */
+        margin: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+        box-sizing: border-box;
+        /* 确保 padding 不会撑大宽度 */
+    }
+
+    /* --- 为正文内容区域设置内边距，让文字不要紧贴屏幕边缘 --- */
     .entry {
-        background: #ffffff !important;
+        padding: 10px 15px;
     }
 
     /* --- 隐藏侧边栏 --- */
@@ -517,62 +529,29 @@ div {
         display: none;
     }
 
-    /* --- 重置所有容器 --- */
-    #wrapper,
-    #wrapper2,
-    #page,
-    #content,
-    .post {
-        width: 100% !important;
-        min-width: 0;
-        margin: 0 !important;
-        padding: 0 !important;
-        float: none !important;
-    }
+    /* --- 通用内容处理规则，增强健壮性 --- */
 
-    .entry {
-        padding: 10px 15px;
-    }
-
-    /* --- 规则A：强制非表格、非flexbox内容换行 --- */
+    /* 规则A: 强制所有文本内容自动换行，防止长单词或链接撑破布局 */
+    .entry,
     .entry p,
-    .entry li,
-    .entry img {
-        max-width: 100%;
+    .entry li {
         overflow-wrap: break-word;
         word-break: break-all;
     }
 
-    /* --- 规则B (关键改动)：为需要滚动的表格准备一个“样式钩子” --- */
-    /* 这个样式默认不生效，由JS在需要时动态添加到 table 上 */
-    .entry .table-force-scroll {
+    /* 规则B: 让所有图片、视频自适应容器宽度 */
+    .entry img,
+    .entry video,
+    .entry iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box;
+    }
+
+    /* 规则C: 为所有表格（无论有无width属性）自动添加横向滚动条 */
+    .entry table {
         display: block !important;
         width: 100% !important;
-        /* 或者 max-width: 100% */
         overflow-x: auto !important;
-    }
-
-    /* --- 规则C (关键改动)：修复Flexbox显示问题 --- */
-    /* 找到所有使用flex布局的div，并重置可能干扰它的样式 */
-    .entry div[style*="display: flex"],
-    .entry div[style*="display: inline-flex"] {
-        /* 允许flex容器根据其内容自由决定宽度 */
-        max-width: none;
-    }
-
-    /* 重置flex子项的样式，让flexbox算法完全接管它们的布局 */
-    .entry div[style*="display: flex"]>*,
-    .entry div[style*="display: inline-flex"]>* {
-        max-width: none;
-        word-break: normal;
-    }
-
-
-    /* --- 调整底部样式 --- */
-    div[style*="float:right"] {
-        float: none;
-        width: 100%;
-        text-align: center;
-        padding: 20px 15px;
     }
 }
