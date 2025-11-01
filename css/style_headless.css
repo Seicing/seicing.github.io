@@ -478,21 +478,17 @@ div {
     body {
         width: 100%;
         overflow-x: hidden;
-        /* 强制防止页面级水平滚动 */
         margin: 0;
         padding: 0;
     }
 
-    /* 关键修复：确保所有元素的宽度计算都包含内边距和边框 */
     * {
         box-sizing: border-box;
     }
 
-    /* --- 2. 强制设置纯白背景 --- */
-    /* 使用 !important 来确保此规则覆盖所有其他样式 */
+    /* --- 强制设置纯白背景 --- */
     body,
     #wrapper,
-    #wrapper2,
     #page,
     #content,
     .post,
@@ -500,35 +496,43 @@ div {
         background: #ffffff !important;
     }
 
-    /* --- 1. 响应式地隐藏侧边栏 ($List) --- */
+    /* --- 隐藏侧边栏 --- */
     #sidebar {
         display: none;
     }
 
-    /* --- 修复溢出：重置所有容器的宽度和边距 --- */
-
-    /* 将所有父容器的宽度设为100%，并移除可能导致溢出的边距和内边距 */
-    #wrapper,
-    #wrapper2,
-    #page,
+    /* --- 终极修复：强制重置内容容器的位置和边距 --- */
+    /* 这是解决右侧溢出问题的最关键部分 */
     #content,
     .post {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        /* 关键修复：确保容器不会有最小宽度限制 */
-        min-width: 0;
+        width: 100% !important;
+        /* 确保宽度是100% */
+        margin: 0 !important;
+        /* 强制移除所有外边距 (margin) */
+        padding: 0 !important;
+        /* 强制移除所有内边距 (padding) */
+        float: none !important;
+        /* 移除任何可能存在的浮动 */
+        transform: none !important;
+        /* 移除任何位移变换 */
     }
 
-    /* 只在最内层的内容容器 .entry 上添加内边距，以保证可读性 */
-    .entry {
+    /* 重置外层容器，确保它们不会干扰内部布局 */
+    #wrapper,
+    #wrapper2,
+    #page {
         width: 100%;
-        padding: 0 15px;
-        /* 上下0，左右15px */
-        /* 关键修复：强制长单词或链接换行，防止撑破容器 */
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 在最内层的 .entry 元素上重新添加内边距，以保证文本的可读性 */
+    .entry {
+        padding: 10px 15px;
+        /* 上下10px，左右15px */
         overflow-wrap: break-word;
-        word-wrap: break-word;
-        /* 兼容旧浏览器 */
+        /* 防止长单词或链接撑破容器 */
     }
 
     /* 调整底部 ($Bottom) 样式 */
