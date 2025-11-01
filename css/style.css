@@ -458,23 +458,11 @@ div {
     height: 200px
 }
 
-/* ================================================= */
-/* === 全局修复：禁止移动端浏览器自动调整字体大小 === */
-/* ================================================= */
-html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
 
 /* ================================================= */
 /* === 1. 针对桌面端 (Desktop) 的样式优化 === */
 /* ================================================= */
 @media only screen and (min-width: 768px) {
-    #wrapper {
-        width: 1100px !important;
-        transform: translateX(-110px);
-    }
-
     #sidebar {
         z-index: 10 !important;
     }
@@ -482,12 +470,6 @@ html {
     #content {
         position: relative !important;
         z-index: 20 !important;
-    }
-
-    .entry table {
-        display: block;
-        max-width: 100%;
-        overflow-x: auto;
     }
 }
 
@@ -502,10 +484,6 @@ html {
         overflow-x: hidden;
         margin: 0;
         padding: 0;
-    }
-
-    * {
-        box-sizing: border-box;
     }
 
     body,
