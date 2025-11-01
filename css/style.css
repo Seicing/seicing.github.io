@@ -497,21 +497,12 @@ div {
  * ========================================================
  */
 
-    /* 默认情况下，为除body外的所有主要容器设置纯白背景 */
     html,
     #wrapper,
     #page,
     #content,
     .post,
-    .entry {
-        background: #ffffff !important;
-    }
-
-    /* 
- * 核心例外规则：
- * 只有当 body 标签内部 *不包含* .keep-original-background 这个信标div时，
- * 才将其背景设为白色。
- */
+    .entry,
     body:not(:has(.keep-original-background)) {
         background: #ffffff !important;
     }
