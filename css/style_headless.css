@@ -499,16 +499,34 @@ div {
 
 /* --- 规则 B：手机 --- */
 @media only screen and (max-width: 767px) {
+    #sidebar {
+        display: none !important;
+    }
 
     /* --- 第一部分：基础重置和通用布局 --- */
     /* ... (这部分和您当前的代码完全一样，保持不变) ... */
+    /*
+ * ========================================================
+ * === 基础重置 & 纯白背景 (通过信标Div实现例外) ===
+ * ========================================================
+ */
+
+    /* 默认情况下，为除body外的所有主要容器设置纯白背景 */
     html,
-    body,
     #wrapper,
     #page,
     #content,
     .post,
     .entry {
+        background: #ffffff !important;
+    }
+
+    /* 
+ * 核心例外规则：
+ * 只有当 body 标签内部 *不包含* .keep-original-background 这个信标div时，
+ * 才将其背景设为白色。
+ */
+    body:not(:has(.keep-original-background)) {
         background: #ffffff !important;
     }
 
@@ -530,7 +548,7 @@ div {
         min-width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
-        float: none !important;
+        /* float: none !important; */
         box-sizing: border-box;
     }
 
@@ -565,6 +583,11 @@ div {
         min-height: 150px;
         resize: vertical;
     }
+
+    #sidebar {
+        display: none !important;
+    }
+
 
     /* --- 第二部分：侧边栏抽屉 --- */
     /* ... (这部分也和您当前的代码完全一样，保持不变) ... */
