@@ -479,18 +479,6 @@ div {
 /* ================================================= */
 @media only screen and (max-width: 767px) {
 
-    html {
-        /* 关键修复：这几行代码会解决字体自动放大的问题 */
-        -webkit-text-size-adjust: 100%;
-        /* 针对 Safari on iOS 和 Chrome on Android */
-        -moz-text-size-adjust: 100%;
-        /* 针对 Firefox Mobile */
-        -ms-text-size-adjust: 100%;
-        /* 针对 IE Mobile */
-        text-size-adjust: 100%;
-        /* W3C 标准属性 */
-    }
-
     /* --- 基础重置 --- */
     html,
     body {
