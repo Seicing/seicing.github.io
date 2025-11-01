@@ -539,7 +539,6 @@ div {
     .entry li,
     .entry img {
         max-width: 100%;
-        white-space: normal !important;
         overflow-wrap: break-word;
         word-break: break-all;
     }
@@ -551,12 +550,6 @@ div {
         width: 100% !important;
         /* 或者 max-width: 100% */
         overflow-x: auto !important;
-    }
-
-    .entry .table-force-scroll td,
-    .entry .table-force-scroll th {
-        white-space: nowrap !important;
-        /* 确保滚动表格内部不换行 */
     }
 
     /* --- 规则C (关键改动)：修复Flexbox显示问题 --- */
@@ -572,7 +565,6 @@ div {
     .entry div[style*="display: inline-flex"]>* {
         max-width: none;
         word-break: normal;
-        white-space: normal !important;
     }
 
 
