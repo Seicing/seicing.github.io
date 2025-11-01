@@ -470,9 +470,14 @@ div {
     font-family: Microsoft Yahei, sans-serif;
 }
 
+#sidebar-toggle-button,
+#sidebar-overlay {
+    display: none !important;
+    /* 在所有屏幕尺寸下默认彻底隐藏 */
+}
 
 /* ======================================================== */
-/* === 响应式样式：覆盖平板与移动端 (注入侧边栏功能版) === */
+/* === 2. 响应式样式：覆盖平板与移动端 === */
 /* ======================================================== */
 
 /* --- 规则 A：针对所有小于 1280px 的屏幕 --- */
@@ -491,7 +496,6 @@ div {
 @media only screen and (max-width: 767px) {
 
     /* --- 基础重置 --- */
-    /* 修改点1：给body添加 position: relative; 以便后续操作 */
     html,
     body {
         width: 100%;
@@ -499,10 +503,8 @@ div {
         margin: 0;
         padding: 0;
         position: relative;
-        /* <--- 确保body有这个属性 */
     }
 
-    /* --- 强制重置所有可能导致溢出的容器 --- */
     #wrapper,
     #wrapper2,
     #page,
@@ -522,18 +524,17 @@ div {
 
     /* 
      * ========================================================
-     * === 关键修改点2：替换掉旧的 sidebar 隐藏规则 ===
+     * === 核心：右侧抽屉效果 & “复活”移动端元素 ===
      * ========================================================
      */
 
-    /* 将这一行: */
-    /* #sidebar { display: none !important; } */
-
-    /* ...替换为下面这一整块新的样式，用于实现抽屉效果 */
     #sidebar-toggle-button {
+        display: block !important;
+        /* 在移动端“复活”按钮 */
         position: fixed;
         top: 15px;
-        right: 15px;
+        left: 15px;
+        right: auto;
         z-index: 1001;
         width: 50px;
         height: 50px;
@@ -544,10 +545,11 @@ div {
         font-size: 24px;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: block !important;
     }
 
     #sidebar-overlay {
+        display: block !important;
+        /* 在移动端“复活”遮罩层 */
         position: fixed;
         top: 0;
         left: 0;
@@ -561,22 +563,24 @@ div {
     }
 
     #sidebar {
+        display: block !important;
+        /* 在移动端“复活”侧边栏 */
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+        left: auto;
         width: 280px;
         max-width: 80%;
         height: 100vh;
         background: #ffffff !important;
         z-index: 999;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         overflow-y: auto;
-        box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
-        display: block !important;
+        box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
     }
 
-    /* “激活”状态的样式，由JS控制 */
+    /* JS激活时的样式 */
     body.sidebar-open #sidebar {
         transform: translateX(0);
     }
@@ -588,10 +592,9 @@ div {
 
     body.sidebar-open {
         overflow: hidden;
-        /* 防止背景滚动 */
     }
 
-    /* --- 您其他的通用内容处理规则保持不变 --- */
+    /* --- 其他所有通用内容修正规则 --- */
     .entry,
     .entry p,
     .entry li {
@@ -613,14 +616,6 @@ div {
         overflow-x: auto !important;
     }
 
-    /* 别忘了我们为表格做的修复 */
-    .entry table th,
-    .entry table td {
-        white-space: nowrap !important;
-        padding: 8px 10px !important;
-    }
-
-    /* 别忘了我们为各种内联样式做的修复 (包括对layer1/2的例外) */
     .entry div[style*="width"]:not(#layer1):not(#layer2) {
         width: auto !important;
         max-width: 100% !important;
