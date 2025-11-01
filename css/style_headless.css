@@ -470,57 +470,72 @@ div {
     font-family: Microsoft Yahei, sans-serif;
 }
 
-/* 仅在屏幕宽度小于等于767px时（通常是手机）应用以下样式 */
+/* 针对移动设备的样式 (屏幕宽度 <= 767px) */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础重置，防止溢出 --- */
+    /* --- 基础重置 --- */
     html,
     body {
         width: 100%;
         overflow-x: hidden;
-        /* 关键：防止任何原因导致的水平滚动条 */
+        /* 强制防止页面级水平滚动 */
         margin: 0;
         padding: 0;
     }
 
-    /* --- 1. 隐藏侧边栏 ($List) --- */
-    /* “响应式”在这里的体现就是根据屏幕尺寸决定是否显示 */
-    #sidebar {
-        display: none;
+    /* 关键修复：确保所有元素的宽度计算都包含内边距和边框 */
+    * {
+        box-sizing: border-box;
     }
 
-    /* --- 2. 让内容区 ($Content 和 $Bottom) 填满整个网页 --- */
-
-    /* 将最外层容器的固定宽度改为100% */
-    #wrapper {
-        width: 100%;
-    }
-
-    /* 确保所有内层容器也跟随变为100%宽度 */
+    /* --- 2. 强制设置纯白背景 --- */
+    /* 使用 !important 来确保此规则覆盖所有其他样式 */
+    body,
+    #wrapper,
     #wrapper2,
     #page,
     #content,
     .post,
     .entry {
+        background: #ffffff !important;
+    }
+
+    /* --- 1. 响应式地隐藏侧边栏 ($List) --- */
+    #sidebar {
+        display: none;
+    }
+
+    /* --- 修复溢出：重置所有容器的宽度和边距 --- */
+
+    /* 将所有父容器的宽度设为100%，并移除可能导致溢出的边距和内边距 */
+    #wrapper,
+    #wrapper2,
+    #page,
+    #content,
+    .post {
         width: 100%;
-        height: auto;
+        margin: 0;
+        padding: 0;
+        /* 关键修复：确保容器不会有最小宽度限制 */
+        min-width: 0;
     }
 
-    /* 让内容有一定的边距，避免文字紧贴屏幕边缘，提升可读性 */
+    /* 只在最内层的内容容器 .entry 上添加内边距，以保证可读性 */
     .entry {
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-        /* 确保内边距不会撑大容器 */
+        width: 100%;
+        padding: 0 15px;
+        /* 上下0，左右15px */
+        /* 关键修复：强制长单词或链接换行，防止撑破容器 */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        /* 兼容旧浏览器 */
     }
 
-    /* 重置底部 ($Bottom) 的样式，使其也填满宽度 */
+    /* 调整底部 ($Bottom) 样式 */
     div[style*="float:right"] {
         float: none;
         width: 100%;
         text-align: center;
-        /* 在手机上居中通常更好看 */
-        padding: 15px 0;
-        /* 增加一些垂直间距 */
+        padding: 20px 15px;
     }
 }
