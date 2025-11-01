@@ -482,10 +482,10 @@ div {
 }
 
 /* ======================================================== */
-/* === 2. 响应式样式：覆盖平板与移动端 (绝对例外最终版) === */
+/* === 2. 响应式样式：覆盖平板与移动端 (精准修正最终版) === */
 /* ======================================================== */
 
-/* --- 规则 A：针对所有小于 1280px 的屏幕 --- */
+/* --- 规则 A：平板 --- */
 @media only screen and (max-width: 1279px) {
     #sidebar {
         z-index: 10 !important;
@@ -497,10 +497,11 @@ div {
     }
 }
 
-/* --- 规则 B：针对所有小于 768px 的屏幕 (移动端) --- */
+/* --- 规则 B：手机 --- */
 @media only screen and (max-width: 767px) {
 
-    /* --- 基础重置 & 纯白背景 --- */
+    /* --- 第一部分：基础重置和通用布局 --- */
+    /* ... (这部分和您当前的代码完全一样，保持不变) ... */
     html,
     body,
     #wrapper,
@@ -537,7 +538,36 @@ div {
         padding: 10px 15px;
     }
 
-    /* --- 侧边栏抽屉效果 (这部分逻辑保持不变) --- */
+    .entry,
+    .entry p,
+    .entry li {
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .entry img,
+    .entry video,
+    .entry iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box;
+    }
+
+    .entry input[type="text"],
+    .entry input[type="password"],
+    .entry textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .entry textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    /* --- 第二部分：侧边栏抽屉 --- */
+    /* ... (这部分也和您当前的代码完全一样，保持不变) ... */
     #sidebar-toggle-button {
         display: block !important;
         position: fixed;
@@ -578,7 +608,7 @@ div {
         width: 280px;
         max-width: 80%;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.5) !important;
+        background: rgba(0, 0, 0, 0.85) !important;
         z-index: 999;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
@@ -603,127 +633,20 @@ div {
 
     /* 
      * ========================================================
-     * === 布局修正 & 精准例外规则 ===
+     * === 第三部分：特殊布局和绝对例外 (终极修正) ===
+     * === 我们将所有特殊规则集中在这里，确保最高优先级 ===
      * ========================================================
      */
 
-    /* --- 其他所有通用内容修正规则 (基于您的“旧代码”) --- */
-
-    /* 修正2：这是唯一需要添加例外的地方 */
-    /* 我们只对宽度自适应规则添加 :not() 排除 */
-    .entry div[style*="width"]:not(#layer1):not(#layer2) {
-        width: auto !important;
-        max-width: 100% !important;
-        box-sizing: border-box;
-    }
-
-    /* 您“旧代码”中的其他规则保持原样，因为它们不会影响到 layer1/2 */
-    .entry,
-    .entry p,
-    .entry li {
-        overflow-wrap: break-word;
-        word-break: break-all;
-    }
-
-    .entry img,
-    .entry video,
-    .entry iframe {
-        max-width: 100% !important;
-        height: auto !important;
-        box-sizing: border-box;
-    }
-
+    /* --- 表格 --- */
     .entry table {
         display: block !important;
         width: 100% !important;
         overflow-x: auto !important;
     }
 
-    /* 这个规则作用于flex容器，layer1不是flex容器，不受影响 */
-    .entry div[style*="flex-wrap: nowrap"] {
-        flex-wrap: wrap !important;
-    }
-
-    /* 这个规则作用于flex容器的子元素，layer1不是，不受影响 */
-    .entry div[style*="flex-wrap"]>div {
-        flex: 1 0 21% !important;
-        text-align: center !important;
-        margin: 5px;
-    }
-
-    /* 这个规则作用于input和textarea，layer1是div，不受影响 */
-    .entry input[type="text"],
-    .entry input[type="password"],
-    .entry textarea {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .entry textarea {
-        min-height: 150px;
-        resize: vertical;
-    }
-
-    /*
- * ========================================================
- * === 新增例外规则：确保科技树等元素保留原始宽度并可滚动 ===
- * ========================================================
- */
-    #techtree,
-    .age1,
-    .age2,
-    .age3,
-    .age4 {
-        /* 1. 解除宽度限制，允许它恢复到其内容所需的原始宽度 */
-        max-width: none !important;
-
-        /* 2. 为其自身添加横向滚动条 */
-        /*    "auto" 表示只有在内容确实超出时，滚动条才会出现 */
-        overflow-x: auto !important;
-
-        /* 3. (可选但推荐) 增加一点内边距，让滚动内容不紧贴边缘，视觉效果更好 */
-        padding: 10px !important;
-        box-sizing: border-box !important;
-
-        /* 4. (安全措施) 确保其表现为一个块级元素，以便滚动条正常工作 */
-        display: block !important;
-    }
-
-    /*
- * ========================================================
- * === 新增终极例外规则：为 layer1/2 创建“绝对保护盾” ===
- * ========================================================
- */
-    #layer1,
-    #layer2 {
-        /* 1. 宽度保护：确保宽度完全由JS的内联样式决定 */
-        max-width: none !important;
-        /* 解除任何最大宽度限制 */
-        min-width: 0 !important;
-        /* 解除任何最小宽度限制 */
-
-        /* 2. 文本换行保护：这是解决“变长”问题的关键 */
-        word-break: normal !important;
-        overflow-wrap: normal !important;
-        white-space: normal !important;
-
-        /* 3. Flexbox保护：防止它意外地成为一个flex项目并被拉伸 */
-        flex: none !important;
-        /* flex: 0 0 auto 的简写 */
-
-        /* 4. (可选但推荐) 盒子模型保护：确保padding和border的计算方式是标准的 */
-        box-sizing: content-box !important;
-    }
-
-
-    /*
- * ========================================================
- * === 新增例外规则：为 saic 的父容器实现带容错率的阶梯式宽度 ===
- * ========================================================
- */
-
-    /* 默认样式保持不变 */
+    /* --- 阶梯式宽度容器 (saic/empire) --- */
+    /* CSS只负责居中，宽度由JS控制 */
     #empire,
     div:has(> .saic) {
         width: 100% !important;
@@ -733,41 +656,62 @@ div {
         margin-right: auto !important;
     }
 
-    #empire,
-    div:has(> .saic) {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
+    /* --- 科技树 Techtree & Age --- */
     #techtree,
     .age1,
     .age2,
     .age3,
     .age4 {
+        /* 1. 为容器本身设置滚动 */
         max-width: 100% !important;
-        /* 容器本身不能超过屏幕宽度 */
         overflow-x: auto !important;
-        /* 核心：为容器自身添加横向滚动条 */
         padding: 10px !important;
-        /* 增加内边距，滚动时更好看 */
         box-sizing: border-box !important;
-        display: block !important;
         border: 1px solid #ccc;
-        /* (可选) 加个边框，让滚动区域更明确 */
         margin-bottom: 15px;
-        /* (可选) 和下方内容留出间距 */
     }
 
-    /* 2. 核心：重置容器内部所有元素的样式，创建“隔离区” */
+    /* 2. 核心修正：不再使用 all:revert，而是精准地重置有问题的属性 */
+    /*    我们只重置那些可能被我们通用规则污染的属性 */
     #techtree *,
     .age1 *,
     .age2 *,
     .age3 *,
     .age4 * {
-        all: revert !important;
-        /* <--- 这是解决问题的“核武器” */
+        max-width: none !important;
+        /* 解除宽度限制 */
+        box-sizing: content-box !important;
+        /* 恢复默认盒子模型 */
+        word-break: normal !important;
+        /* 恢复默认文本换行 */
+        float: revert !important;
+        /* 允许浮动生效 */
+    }
+
+    /* --- 绝对保护盾 (Layer1/2) --- */
+    /* 我们也弃用 all:revert，改为精准重置 */
+    body #layer1,
+    body #layer2,
+    body #layer1 *,
+    body #layer2 * {
+        position: revert !important;
+        /* JS会覆盖这个，但以防万一 */
+        width: revert !important;
+        max-width: revert !important;
+        min-width: revert !important;
+        white-space: revert !important;
+        word-break: revert !important;
+        overflow-wrap: revert !important;
+        flex: revert !important;
+        box-sizing: revert !important;
+        display: revert !important;
+        opacity: revert !important;
+        visibility: revert !important;
+        background: revert !important;
+        color: revert !important;
+        padding: revert !important;
+        border-radius: revert !important;
+        z-index: revert !important;
+        pointer-events: revert !important;
     }
 }
