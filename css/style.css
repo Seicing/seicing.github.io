@@ -636,13 +636,6 @@ div {
      * ========================================================
      */
 
-    /* --- 表格 (修正版，排除所有用于布局的表格) --- */
-    .entry table:not(#customers2):not(.age1):not(.age2):not(.age3):not(.age4) {
-        display: block !important;
-        width: 100% !important;
-        overflow-x: auto !important;
-    }
-
     /* --- 阶梯式宽度容器 (saic/empire) --- */
     /* CSS只负责居中，宽度由JS控制 */
     #empire,
@@ -756,5 +749,15 @@ div {
 
     #icons {
         width: 100% !important;
+    }
+
+    .age1 table,
+    .age2 table,
+    .age3 table,
+    .age4 table {
+        display: revert !important;
+        /* 撤销 display:block，让其恢复默认或行内样式 */
+        width: auto !important;
+        /* 撤销 width:100% */
     }
 }
