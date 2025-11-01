@@ -42,6 +42,7 @@
     justify-content: left;
     flex-wrap: wrap;
     gap: 1px;
+    padding: 1px;
     background: #888888;
 }
 
