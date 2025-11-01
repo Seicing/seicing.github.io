@@ -9,6 +9,30 @@ function setupMobileSidebar() {
     const overlay = document.getElementById('sidebar-overlay');
     const originalSidebar = document.getElementById('sidebar');
 
+
+    // --- 新增的颜色替换函数 ---
+    function conditionallyReplaceLinkColor(container) {
+        // 1. 找到抽屉容器内的所有 <a> 标签
+        const links = container.querySelectorAll('a');
+
+        // 2. 定义我们要寻找和替换的颜色
+        const targetColor = 'rgb(0, 16, 255)'; // #0010ff 对应的rgb值
+        const replacementColor = '#857E6E';
+
+        // 3. 遍历每一个链接
+        links.forEach(link => {
+            // 4. 获取链接当前的“计算后样式”中的颜色
+            const currentColor = window.getComputedStyle(link).color;
+
+            // 5. 核心逻辑：进行条件判断
+            if (currentColor === targetColor) {
+                // 如果颜色匹配，就强行替换它
+                link.style.setProperty('color', replacementColor, 'important');
+            }
+        });
+    }
+
+
     if (!toggleButton || !overlay || !originalSidebar) {
         return;
     }
