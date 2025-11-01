@@ -471,8 +471,21 @@ div {
 }
 
 
+/* --- 关键修复：强制提升 content 的层级 --- */
+#sidebar {
+    /* 确保 sidebar 有一个明确的 z-index，即使它在原始CSS中没有 */
+    z-index: 10 !important;
+}
+
+#content {
+    position: relative !important;
+    /* 赋予 content 参与层级竞争的能力 */
+    z-index: 20 !important;
+    /* 设置一个远高于 sidebar 的 z-index */
+}
+
 /* ================================================= */
-/* === 2. 针对移动端 (Mobile) 的样式 (已修复) === */
+/* === 2. 针对移动端 (Mobile) 的样式 (最终修复版) === */
 /* ================================================= */
 @media only screen and (max-width: 767px) {
 
@@ -521,8 +534,7 @@ div {
         padding: 10px 15px;
     }
 
-    /* --- 强制 .entry 内的非表格元素都能正确换行 --- */
-    /* 我们从这里移除了对 table 的直接影响 */
+    /* --- 规则A：强制非表格内容换行 --- */
     .entry p,
     .entry div,
     .entry li,
@@ -533,19 +545,21 @@ div {
         word-break: break-all;
     }
 
-    /* --- 新增：专门为表格设置滚动 --- */
-    /* 这是解决表格被压缩变小问题的关键 */
+    /* --- 规则B：让表格容器可以滚动 --- */
     .entry table {
         display: block;
-        /* 将表格变为一个可以设置 overflow 的块级元素 */
         max-width: 100%;
-        /* 确保这个块本身不超过屏幕宽度 */
         overflow-x: auto;
-        /* 如果表格内部内容超出，则只为这个表格本身添加水平滚动条 */
-        white-space: nowrap;
-        /* 保持表格单元格内容不换行，维持原有表格布局 */
     }
 
+    /* --- 规则C (关键修复)：强制表格内的内容不换行 --- */
+    /* 这条新规则的优先级高于规则A，专门用于表格 */
+    .entry table p,
+    .entry table div,
+    .entry table td,
+    .entry table th {
+        white-space: nowrap !important;
+    }
 
     /* --- 调整底部样式 --- */
     div[style*="float:right"] {
