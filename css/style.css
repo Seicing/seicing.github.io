@@ -760,6 +760,10 @@ div {
         width: 100% !important;
     }
 
+    #aoe4de {
+        width: 100% !important;
+    }
+
     .age1 table,
     .age2 table,
     .age3 table,
@@ -770,8 +774,27 @@ div {
         /* 撤销 width:100% */
     }
 
+    .age1,
+    .age2,
+    .age3,
+    .age4 {
+        width: 800px !important;
+        /* 撤销 width:100% */
+    }
+
     #customers2 {
         display: revert !important;
+        width: 100% !important;
         /* 撤销 display:block，让其恢复默认或行内样式 */
+    }
+
+    #aoe4de td[width="245"],
+    #aoe4de th[width="245"] {
+        width: 195px !important;
+    }
+
+    #aoe4de td[width="145"],
+    #aoe4de th[width="145"] {
+        width: 105px !important;
     }
 }

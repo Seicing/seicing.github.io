@@ -775,6 +775,10 @@ div {
         width: 100% !important;
     }
 
+    #aoe4de {
+        width: 100% !important;
+    }
+
     .age1 table,
     .age2 table,
     .age3 table,
@@ -787,6 +791,17 @@ div {
 
     #customers2 {
         display: revert !important;
+        width: 100% !important;
         /* 撤销 display:block，让其恢复默认或行内样式 */
+    }
+
+    #aoe4de td[width="245"],
+    #aoe4de th[width="245"] {
+        width: 195px !important;
+    }
+
+    #aoe4de td[width="145"],
+    #aoe4de th[width="145"] {
+        width: 105px !important;
     }
 }
