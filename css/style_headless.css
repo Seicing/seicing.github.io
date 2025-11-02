@@ -778,11 +778,15 @@ div {
     .age1 table,
     .age2 table,
     .age3 table,
-    .age4 table,
-    #customers2 {
+    .age4 table {
         display: revert !important;
         /* 撤销 display:block，让其恢复默认或行内样式 */
         width: auto !important;
         /* 撤销 width:100% */
+    }
+
+    #customers2 {
+        display: revert !important;
+        /* 撤销 display:block，让其恢复默认或行内样式 */
     }
 }
