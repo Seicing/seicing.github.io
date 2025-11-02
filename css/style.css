@@ -473,8 +473,11 @@ div {
 }
 
 #celp4 {
-    padding: 5px;
     border: 1px solid grey;
+}
+
+#celp4 td {
+    padding: 5px;
 }
 
 .bcF5F8FA {
