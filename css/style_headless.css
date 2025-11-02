@@ -773,21 +773,29 @@ div {
         width: 105px !important;
     }
 
+    /* 
+     * 1. 将 #wenttodie 自身转变为一个可以滚动的 "网格" 容器
+     *    - display: grid; => 激活网格布局，这是让子元素宽度生效的关键。
+     *    - overflow-x: auto; => 当内部网格项（子元素）比容器本身更宽时，显示横向滚动条。
+     *    - width: 100%; => 让容器本身遵守父级的宽度限制，避免页面整体出现滚动条。
+     */
     #wenttodie {
-        width: 800px !important;
-        max-width: none !important;
+        display: grid !important;
         overflow-x: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        /* 确保它不会超过屏幕宽度 */
         -webkit-overflow-scrolling: touch;
-        /* 为iOS设备提供更平滑的滚动体验 */
+        /* 优化 iOS 上的滚动体验 */
     }
 
     /* 
-     * 2. 确保 #wenttodie 内部的直接子元素（特别是table）能够撑满800px
-     *    - min-width: 100%; => 强制子元素的最小宽度等于其父容器（#wenttodie）的宽度，即800px
-     *    - 这样可以确保即时内容本身不足800px，表格等块级元素也能在视觉上撑满容器
+     * 2. 强制 #wenttodie 的直接子元素拥有 800px 的最小宽度
+     *    - min-width: 800px; => 这是命令子元素（如 <table>）：“你的宽度至少是800px，不要被压缩”。
+     *    - 正是因为子元素比父容器（#wenttodie）更宽，父容器上的 overflow-x 才会生效。
      */
     #wenttodie>* {
-        min-width: 100%;
+        min-width: 800px !important;
         box-sizing: border-box !important;
     }
 }
