@@ -1091,6 +1091,139 @@ function aoetechPoeRush() {
 }
 
 
+
+// ============================
+// aoetech 自动生成样式
+// ============================
+(function () {
+    const style = document.createElement("style");
+    style.innerHTML = `
+    .aoetech-table-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .aoetech-tr-flex {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    .aoetech-cell {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      background-color: #f8f8f8;
+      /*
+       * 【重要】
+       * 边框现在被精细地控制为四个独立的边，
+       * JS将根据需要单独为它们上色。
+      */
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      box-sizing: border-box;
+    }
+
+    .aoetech-cell img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    .aoetech-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  `;
+    document.head.appendChild(style);
+})();
+
+// ============================
+// aoetech 分组背景 + 区域外围描边 (新逻辑)
+// ============================
+(function () {
+    // 1. 定义颜色映射表
+    const groupColors = {
+        "1": "#eaf3ff", "2": "#ffeaea", "3": "#f1ffe8",
+        "4": "#f9eaff", "5": "#eafffd", "6": "#d9e0d7"
+    };
+    const groupBorderColors = {
+        "1": "#a6c9ff", "2": "#f2b9b9", "3": "#b7e4a1",
+        "4": "#e1b7f0", "5": "#a1e9e5", "6": "#a4b0a2"
+    };
+
+    const grid = [];
+    const rows = document.querySelectorAll(".aoetech-tr-flex");
+
+    // 2. 构建网格数据结构，存储每个格子的元素和组信息
+    rows.forEach(row => {
+        const gridRow = [];
+        const cells = row.querySelectorAll(".aoetech-cell");
+        cells.forEach(cell => {
+            gridRow.push({
+                element: cell,
+                group: cell.getAttribute("group") || null
+            });
+        });
+        grid.push(gridRow);
+    });
+
+    // 3. 遍历网格，应用背景色和智能描边
+    grid.forEach((row, r) => {
+        row.forEach((cellInfo, c) => {
+            const currentGroup = cellInfo.group;
+
+            // 如果当前格子没有分组，则跳过
+            if (!currentGroup) return;
+
+            // 应用背景色
+            if (groupColors[currentGroup]) {
+                cellInfo.element.style.backgroundColor = groupColors[currentGroup];
+            }
+
+            // 获取描边颜色
+            const borderColor = groupBorderColors[currentGroup];
+            if (!borderColor) return;
+
+            // 检查四个方向的邻居
+            const topNeighborGroup = (grid[r - 1] && grid[r - 1][c]) ? grid[r - 1][c].group : null;
+            const bottomNeighborGroup = (grid[r + 1] && grid[r + 1][c]) ? grid[r + 1][c].group : null;
+            const leftNeighborGroup = (grid[r][c - 1]) ? grid[r][c - 1].group : null;
+            const rightNeighborGroup = (grid[r][c + 1]) ? grid[r][c + 1].group : null;
+
+            // 如果邻居不属于同一组，则在该方向绘制边框
+            if (topNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderTopColor = borderColor;
+            }
+            if (bottomNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderBottomColor = borderColor;
+            }
+            if (leftNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderLeftColor = borderColor;
+            }
+            if (rightNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderRightColor = borderColor;
+            }
+        });
+    });
+})();
+
+
+
+
+
+
+
+
+
+
 function CommonAllTech() {
     document.getElementById("Byzantines2").style.opacity = "1";
     document.getElementById("Gurjaras2").style.opacity = "1";

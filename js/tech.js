@@ -1092,13 +1092,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
 function tipsp() {
     var tipsp1 = getQueryVariable("civ")
     var tipsp2 = tipsp1 + "Button0";
     document.getElementById(tipsp2).click();
 };
+
+
+
+
+
 
 
 
@@ -1582,89 +1585,3 @@ function triggerFilterFromURL() {
 }
 
 
-
-
-
-// ============================
-// aoetech 自动生成样式
-// ============================
-(function () {
-    const style = document.createElement("style");
-    style.innerHTML = `
-    .aoetech-table-flex {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-
-    .aoetech-tr-flex {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 0;
-    }
-
-    .aoetech-cell {
-      position: relative;
-      width: 42px;
-      height: 42px;
-      background-color: #f8f8f8;
-      /* 【重要】设置一个1像素的边框，颜色将由JS动态指定 */
-      border: 1px solid transparent;
-      box-sizing: border-box;
-    }
-
-    .aoetech-cell img {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-    }
-
-    .aoetech-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-  `;
-    document.head.appendChild(style);
-})();
-
-// ============================
-// aoetech 分组背景 + 描边
-// ============================
-(function () {
-    // 1. 定义背景色
-    const groupColors = {
-        "1": "#eaf3ff",  // 蓝
-        "2": "#ffeaea",  // 红
-        "3": "#f1ffe8",  // 绿
-        "4": "#f9eaff",  // 粉紫
-        "5": "#eafffd",  // 青
-        "6": "#d9e0d7"   // 深绿
-    };
-
-    // 2. 【新增】定义对应的深色描边
-    const groupBorderColors = {
-        "1": "#a6c9ff",  // 深蓝
-        "2": "#f2b9b9",  // 深红
-        "3": "#b7e4a1",  // 深绿
-        "4": "#e1b7f0",  // 深粉紫
-        "5": "#a1e9e5",  // 深青
-        "6": "#a4b0a2"   // 更深的绿
-    };
-
-    document.querySelectorAll(".aoetech-cell[group]").forEach(cell => {
-        const g = cell.getAttribute("group");
-        if (groupColors[g]) {
-            // 应用背景色
-            cell.style.backgroundColor = groupColors[g];
-
-            // 【新增】应用同色系的描边
-            if (groupBorderColors[g]) {
-                cell.style.borderColor = groupBorderColors[g];
-            }
-        }
-    });
-})();
