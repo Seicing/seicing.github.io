@@ -117,21 +117,24 @@
             <tr v-for="sec in sections" :key="sec">
                 <td style="background-color:#F5F8FA;width:50px">{{ sec }}</td>
                 <td style="text-align:left">
-                    <table v-for="unit in civItems.filter(i => i.section === sec)" :key="unit.name"
-                        style="border-collapse:collapse;float:left">
-                        <tr>
-                            <td width="48px" height="48px" style="border:0;">
-                                <a :href="`${unit.link}.html?civ=${unit.civ}`">
-                                    <img :src="`https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/${unit.img}.png`" width="48px">
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="48px" style="border:0;text-align:center">
-                                <a :href="`${unit.link}.html?civ=${unit.civ}`" style="color:#0010ff">{{ unit.name }}</a>
-                            </td>
-                        </tr>
-                    </table>
+                    <div style="display: flex; flex-wrap: wrap; border: 0; align-items: flex-start;">
+                        <table v-for="unit in civItems.filter(i => i.section === sec)" :key="unit.name"
+                            style="border-collapse:collapse">
+                            <tr>
+                                <td width="48px" height="48px" style="border:0;">
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`">
+                                        <img :src="`https://data.seicing.com/seicingdepot/3fatcatpool/aoem/tech/${unit.img}.png`" width="48px">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48px" style="border:0;text-align:center">
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`" style="color:#0010ff">{{ unit.name
+                                        }}</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </td>
             </tr>
         </table>
