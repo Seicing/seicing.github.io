@@ -554,19 +554,12 @@ div {
     flex-wrap: wrap;
     align-items: flex-start;
     /* 所有项目顶部对齐 */
-    gap: 5px;
+    gap: 0px;
 }
 
 /* 4. 单个科技/单位项 */
 .aoe4de-tech-item {
     margin: 0;
-}
-
-/* 5. 【新增】第一个元素的特殊样式 */
-/* 作用：给组内的第一个元素增加额外的底部空间，使其在视觉上“更高” */
-.aoe4de-tech-item-first {
-    padding-bottom: 48px;
-    /* 精确地增加48px的底部留白 */
 }
 
 
