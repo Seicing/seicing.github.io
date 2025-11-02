@@ -520,59 +520,64 @@ div {
 
 
 /* ---------------------------------------------------- */
-/*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */
+/*      帝国时代4科技树 - 最终版布局 (aoe4de 前缀)    */
 /* ---------------------------------------------------- */
 
 /* 1. 最外层容器 */
-/* 作用：排列 age1, age2 等主要的“时代画布” */
 .aoe4de-flex-container {
     display: flex;
     flex-direction: column;
-    /* 让 age1, age2 垂直堆叠 */
     gap: 20px;
-    /* 时代画布之间的垂直间距 */
     padding: 20px;
     box-sizing: border-box;
 }
 
 /* 2. 时代画布 (age1, age2...) */
-/* 作用：这是主要的视觉块，它也是一个Flex容器，负责排列内部的一排排“组” */
 .aoe4de-flex-container .age1,
 .aoe4de-flex-container .age2,
 .aoe4de-flex-container .age3,
 .aoe4de-flex-container .age4 {
     display: flex;
-    flex-direction: column;
-    /* 让内部的 tech-group 垂直堆叠 */
-    gap: 15px;
-    /* 组与组之间的垂直间距 */
-
-    /* 视觉样式在这里 */
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 15px;
     border-radius: 8px;
-
     width: 100%;
     max-width: 860px;
-    /* 稍微加宽以容纳内边距 */
     box-sizing: border-box;
+    /* 您原有的背景和边框样式应该应用在这里 */
 }
 
-/* 3. 科技/单位组 (现在是不可见的结构容器) */
-/* 作用：将一排图标包在一起，它本身也是一个Flex容器，负责排列内部的图标 */
+/* 3. 科技/单位组 (常规组和特殊组的通用样式) */
 .aoe4de-tech-group {
     display: flex;
     flex-wrap: wrap;
-    /* 允许图标换行 */
-    gap: 10px 5px;
-    /* 图标之间的间距 */
-    width: 100%;
+    gap: 5px;
 }
 
-/* 4. 单个科技/单位项 */
+/* 4. 【新增】为重新聚合的 "down" 组添加一个上边框，以示区分 */
+.aoe4de-tech-group-down {
+    padding-top: 15px;
+    border-top: 2px dashed #ccc;
+    width: 100%;
+    /* 确保它能撑满宽度 */
+}
+
+.aoe4de-tech-group-up {
+    width: 100%;
+    /* 确保它能撑满宽度 */
+}
+
+
+/* 5. 单个科技/单位项 */
 .aoe4de-tech-item {
     margin: 0;
+}
+
+/* 我们为up/down卡片本身也加上class，但它们在视觉上和普通卡片一样 */
+.aoe4de-tech-item-up,
+.aoe4de-tech-item-down {
+    /* 继承 .aoe4de-tech-item 的所有样式 */
 }
 
 
