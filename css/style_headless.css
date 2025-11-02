@@ -667,8 +667,6 @@ div {
     .age2,
     .age3,
     .age4 {
-        /* 1. 为容器本身设置滚动 */
-        max-width: 100% !important;
         /* 关键：必须把这条规则加回来！*/
         overflow-x: auto !important;
         padding: 10px !important;
@@ -800,7 +798,7 @@ div {
 
     #aoe4de td[width="245px"],
     #aoe4de th[width="245px"] {
-        width: 195px !important;
+        width: 190px !important;
     }
 
     #aoe4de td[width="145px"],
