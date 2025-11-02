@@ -314,12 +314,12 @@ function aoetechPoeRush() {
     }
 }
 
-
 // ============================
 // aoetech 自动生成样式
 // ============================
 (function () {
     const style = document.createElement("style");
+    // 【修改点 1】: CSS中的border被移除了，因为我们将使用box-shadow来替代。
     style.innerHTML = `
     .aoetech-table-flex {
       display: flex;
@@ -340,13 +340,10 @@ function aoetechPoeRush() {
       background-color: #f8f8f8;
       /*
        * 【重要】
-       * 边框现在被精细地控制为四个独立的边，
-       * JS将根据需要单独为它们上色。
+       * 移除了原有的 border 属性。
+       * 描边效果将完全由 JS 控制的 box-shadow 实现。
       */
-      border-top: 1px solid transparent;
-      border-bottom: 1px solid transparent;
-      border-left: 1px solid transparent;
-      border-right: 1px solid transparent;
+      border: none;
       box-sizing: border-box;
     }
 
@@ -369,7 +366,7 @@ function aoetechPoeRush() {
 })();
 
 // ============================
-// aoetech 分组背景 + 区域外围描边 (新逻辑)
+// aoetech 分组背景 + 区域外围描边 (使用 box-shadow 的新逻辑)
 // ============================
 (function () {
     // 1. 定义颜色映射表
@@ -403,42 +400,54 @@ function aoetechPoeRush() {
         row.forEach((cellInfo, c) => {
             const currentGroup = cellInfo.group;
 
-            // 如果当前格子没有分组，则跳过
             if (!currentGroup) return;
 
-            // 应用背景色
             if (groupColors[currentGroup]) {
                 cellInfo.element.style.backgroundColor = groupColors[currentGroup];
             }
 
-            // 获取描边颜色
             const borderColor = groupBorderColors[currentGroup];
             if (!borderColor) return;
 
-            // 检查四个方向的邻居
             const topNeighborGroup = (grid[r - 1] && grid[r - 1][c]) ? grid[r - 1][c].group : null;
             const bottomNeighborGroup = (grid[r + 1] && grid[r + 1][c]) ? grid[r + 1][c].group : null;
             const leftNeighborGroup = (grid[r][c - 1]) ? grid[r][c - 1].group : null;
             const rightNeighborGroup = (grid[r][c + 1]) ? grid[r][c + 1].group : null;
 
-            // 如果邻居不属于同一组，则在该方向绘制边框
+            // =================================================================
+            // 【修改点 2】: 核心修改区域 - 使用 box-shadow 替代 border
+            // =================================================================
+
+            // 创建一个数组来收集所有方向的阴影
+            const shadows = [];
+            const borderWidth = '1px'; // 定义描边宽度
+
+            // 如果邻居不属于同一组，则在该方向添加一个内阴影来模拟边框
             if (topNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderTopColor = borderColor;
+                shadows.push(`0 -${borderWidth} 0 0 ${borderColor}`);
             }
             if (bottomNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderBottomColor = borderColor;
+                shadows.push(`0 ${borderWidth} 0 0 ${borderColor}`);
             }
             if (leftNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderLeftColor = borderColor;
+                shadows.push(`-${borderWidth} 0 0 0 ${borderColor}`);
             }
             if (rightNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderRightColor = borderColor;
+                shadows.push(`${borderWidth} 0 0 0 ${borderColor}`);
             }
+
+            // 将所有方向的阴影合并，并应用到元素上
+            if (shadows.length > 0) {
+                cellInfo.element.style.boxShadow = shadows.join(', ');
+            } else {
+                cellInfo.element.style.boxShadow = 'none';
+            }
+            // =================================================================
+            // 【修改点 3】: 原始的 border-color 逻辑已被完全移除
+            // =================================================================
         });
     });
 })();
-
-
 
 
 
