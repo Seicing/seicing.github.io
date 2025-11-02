@@ -315,22 +315,24 @@ function aoetechPoeRush() {
 }
 
 // ============================
-// aoetech 自动生成样式
+// aoetech 自动生成样式 (2px 功能性间隙方案)
 // ============================
 (function () {
     const style = document.createElement("style");
-    // 【修改点 1】: CSS中的border被移除了，因为我们将使用box-shadow来替代。
+    // 【修改点 1】: CSS 设置2px间隙，并为间隙提供背景色
     style.innerHTML = `
     .aoetech-table-flex {
       display: flex;
       flex-direction: column;
-      gap: 0;
+      gap: 2px; /* 在行与行之间创建2px间隙 */
+      /* 为间隙设置一个底色，比如白色 */
+      background-color: #ffffff; 
     }
 
     .aoetech-tr-flex {
       display: flex;
       flex-wrap: nowrap;
-      gap: 0;
+      gap: 2px; /* 在列与列之间创建2px间隙 */
     }
 
     .aoetech-cell {
@@ -338,11 +340,7 @@ function aoetechPoeRush() {
       width: 42px;
       height: 42px;
       background-color: #f8f8f8;
-      /*
-       * 【重要】
-       * 移除了原有的 border 属性。
-       * 描边效果将完全由 JS 控制的 box-shadow 实现。
-      */
+      /* 我们使用 box-shadow, 所以不需要 border */
       border: none;
       box-sizing: border-box;
     }
@@ -366,7 +364,7 @@ function aoetechPoeRush() {
 })();
 
 // ============================
-// aoetech 分组背景 + 区域外围描边 (使用 box-shadow 的新逻辑)
+// aoetech 分组背景 + 区域外围描边 (2px 功能性间隙方案)
 // ============================
 (function () {
     // 1. 定义颜色映射表
@@ -382,7 +380,7 @@ function aoetechPoeRush() {
     const grid = [];
     const rows = document.querySelectorAll(".aoetech-tr-flex");
 
-    // 2. 构建网格数据结构，存储每个格子的元素和组信息
+    // 2. 构建网格数据结构
     rows.forEach(row => {
         const gridRow = [];
         const cells = row.querySelectorAll(".aoetech-cell");
@@ -399,7 +397,6 @@ function aoetechPoeRush() {
     grid.forEach((row, r) => {
         row.forEach((cellInfo, c) => {
             const currentGroup = cellInfo.group;
-
             if (!currentGroup) return;
 
             if (groupColors[currentGroup]) {
@@ -409,46 +406,35 @@ function aoetechPoeRush() {
             const borderColor = groupBorderColors[currentGroup];
             if (!borderColor) return;
 
-            const topNeighborGroup = (grid[r - 1] && grid[r - 1][c]) ? grid[r - 1][c].group : null;
-            const bottomNeighborGroup = (grid[r + 1] && grid[r + 1][c]) ? grid[r + 1][c].group : null;
-            const leftNeighborGroup = (grid[r][c - 1]) ? grid[r][c - 1].group : null;
-            const rightNeighborGroup = (grid[r][c + 1]) ? grid[r][c + 1].group : null;
-
-            // =================================================================
-            // 【修改点 2】: 核心修改区域 - 使用 box-shadow 替代 border
-            // =================================================================
-
-            // 创建一个数组来收集所有方向的阴影
             const shadows = [];
-            const borderWidth = '1px'; // 定义描边宽度
+            // 【修改点 2】: 使用非inset的box-shadow来向外“绘制”1px的边框
+            const borderWidth = '1px';
 
-            // 如果邻居不属于同一组，则在该方向添加一个内阴影来模拟边框
-            if (topNeighborGroup !== currentGroup) {
+            // 检查上边缘
+            if (r === 0 || grid[r - 1][c].group !== currentGroup) {
                 shadows.push(`0 -${borderWidth} 0 0 ${borderColor}`);
             }
-            if (bottomNeighborGroup !== currentGroup) {
+            // 检查下边缘
+            if (r === grid.length - 1 || grid[r + 1][c].group !== currentGroup) {
                 shadows.push(`0 ${borderWidth} 0 0 ${borderColor}`);
             }
-            if (leftNeighborGroup !== currentGroup) {
+            // 检查左边缘
+            if (c === 0 || grid[r][c - 1].group !== currentGroup) {
                 shadows.push(`-${borderWidth} 0 0 0 ${borderColor}`);
             }
-            if (rightNeighborGroup !== currentGroup) {
+            // 检查右边缘
+            if (c === row.length - 1 || grid[r][c + 1].group !== currentGroup) {
                 shadows.push(`${borderWidth} 0 0 0 ${borderColor}`);
             }
 
-            // 将所有方向的阴影合并，并应用到元素上
             if (shadows.length > 0) {
                 cellInfo.element.style.boxShadow = shadows.join(', ');
             } else {
                 cellInfo.element.style.boxShadow = 'none';
             }
-            // =================================================================
-            // 【修改点 3】: 原始的 border-color 逻辑已被完全移除
-            // =================================================================
         });
     });
 })();
-
 
 
 
