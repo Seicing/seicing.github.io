@@ -824,42 +824,44 @@ div {
         box-sizing: border-box !important;
     }
 
-    /* --- 针对 tablebana 的规则 --- */
+    /* --- 1. 对 #tablebana 的常规处理 --- */
+    /*    让它在移动端全宽显示，并清除所有偏移   */
     #tablebana {
-        /* 核心！强制覆盖写死的宽度，让它适应屏幕 */
         width: 100% !important;
+        /* 强制宽度为100% */
         max-width: 100% !important;
-
-        /* 清理掉可能存在的旧样式 */
+        /* 确保不超过屏幕 */
         float: none !important;
         position: static !important;
+        /* 重置定位 */
         left: unset !important;
-        margin: 0 auto;
-        /* 让它在可用空间内居中 */
+        /* 重置偏移 */
+        margin: 0;
+        /* 清除外边距 */
     }
 
-    /* --- 针对 tablebana2 的规则 --- */
+    /* --- 2. 对 #tablebana2 的特殊处理 --- */
+    /*    抵消父级偏移，然后重新居中   */
     #tablebana2 {
-        /* 核心！强制覆盖写死的宽度 */
-        /* 我们要向右移动20%，所以它的宽度不能超过80%，否则会溢出屏幕 */
+        /* 核心步骤 a: 强制设置我们期望的宽度 */
+        /* 这里的80%是相对于父容器的宽度，父容器又是相对于屏幕，所以效果上就是屏幕的80% */
         width: 80% !important;
         max-width: 80% !important;
 
-        /* 清理掉可能存在的旧样式 */
+        /* 清除浮动，确保它是一个独立的块级元素 */
         float: none !important;
 
-        /* 执行相对定位和移动 */
+        /* 核心步骤 b: 开启相对定位，这是抵消偏移的关键 */
         position: relative;
-        left: 20%;
-    }
 
-    /* 
-   * 这是一个好习惯: 确保两个表格的 box-sizing 模式正确，
-   * 这样边框和内边距就不会意外地增加它们的宽度导致溢出。
-   */
-    #tablebana,
-    #tablebana2 {
-        box-sizing: border-box;
+        /* 核心步骤 c: “反向位移”以抵消父容器的 left: 20% */
+        /* 父容器把它往右推了20%，我们就用负值把它往左拉回来20% */
+        left: -20%;
+
+        /* 核心步骤 d: 使用 margin: auto 实现居中 */
+        /* 在元素位置被矫正回原始状态后，我们就可以用标准方法让它居中了 */
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
 }
