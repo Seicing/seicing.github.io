@@ -1106,47 +1106,43 @@ function adjustTechGroupLayout() {
     const techGroups = document.querySelectorAll('.aoe4de-tech-group');
 
     techGroups.forEach(group => {
-        // 获取第一个元素的尺寸，后续创建的占位符都将使用这个尺寸
-        const firstItem = group.querySelector('.aoe4de-tech-item');
-        if (!firstItem) return; // 如果组是空的，就跳过
+        const firstItem = group.querySelector('.aoe4de-tech-item:not(.placeholder-item)');
+        if (!firstItem) return;
         const firstItemRect = firstItem.getBoundingClientRect();
 
-        // 2. 核心：启动一个持续检测和修正的循环
-        while (true) {
-            // 在每次循环开始时，都重新获取最新的子元素列表
+        // 2. 启动一个最多循环（比如100次）的保护性循环，防止意外的无限循环
+        for (let safety = 0; safety < 100; safety++) {
             const items = Array.from(group.children);
 
             if (items.length < 2) {
-                break; // 元素太少，不可能换行
+                break;
             }
 
-            let wrapIndex = -1; // 用来记录我们找到的第一个换行点的位置
+            let wrapIndex = -1;
 
-            // 3. 寻找第一个换行点
+            // 3. 寻找第一个“需要被修复”的换行点
             for (let i = 1; i < items.length; i++) {
-                // 我们只比较真实元素的位置，忽略已经插入的占位符
                 if (items[i].offsetTop > items[i - 1].offsetTop) {
-                    // 确保我们找到的换行点不是由一个占位符自己引起的
-                    if (!items[i - 1].classList.contains('placeholder-item')) {
-                        wrapIndex = i; // 找到了！记录这个新行的起始位置
-                        break; // 立刻停止寻找，因为我们一次只处理一个
+                    // 核心修正：只有当新一行的开头不是占位符时，才认为需要修复
+                    if (!items[i].classList.contains('placeholder-item')) {
+                        wrapIndex = i;
+                        break;
                     }
                 }
             }
 
-            // 4. 如果在当前布局下没找到任何新的换行点，说明处理完毕，跳出循环
+            // 4. 如果没找到任何需要修复的换行点，任务完成，跳出循环
             if (wrapIndex === -1) {
                 break;
             }
 
-            // 5. 插入一个占位符，然后让while循环自动进入下一次迭代
+            // 5. 插入占位符
             const placeholder = document.createElement('table');
             placeholder.className = 'aoe4de-tech-item placeholder-item';
             placeholder.style.width = `${firstItemRect.width}px`;
             placeholder.style.height = `${firstItemRect.height}px`;
             placeholder.style.visibility = 'hidden';
 
-            // 在新一行的开头插入占位符
             group.insertBefore(placeholder, items[wrapIndex]);
         }
     });
@@ -1161,8 +1157,6 @@ window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(adjustTechGroupLayout, 150);
 });
-
-
 
 
 
