@@ -825,43 +825,36 @@ div {
     }
 
     /* --- 1. 对 #tablebana 的常规处理 --- */
-    /*    让它在移动端全宽显示，并清除所有偏移   */
+    /*    强制其宽度为屏幕的100%，并清除所有偏移   */
     #tablebana {
         width: 100% !important;
-        /* 强制宽度为100% */
         max-width: 100% !important;
-        /* 确保不超过屏幕 */
         float: none !important;
         position: static !important;
-        /* 重置定位 */
         left: unset !important;
-        /* 重置偏移 */
-        margin: 0;
-        /* 清除外边距 */
+        margin: 0 !important;
+        box-sizing: border-box;
+        /* 确保边框和内边距不导致溢出 */
     }
 
-    /* --- 2. 对 #tablebana2 的特殊处理 --- */
-    /*    抵消父级偏移，然后重新居中   */
+    /* --- 2. 对 #tablebana2 的特殊处理 (核心) --- */
     #tablebana2 {
-        /* 核心步骤 a: 强制设置我们期望的宽度 */
-        /* 这里的80%是相对于父容器的宽度，父容器又是相对于屏幕，所以效果上就是屏幕的80% */
-        width: 80% !important;
-        max-width: 80% !important;
+        /* 步骤 a: 使用 vw 单位，强制宽度为屏幕宽度的80% */
+        /* 这打破了“父容器被撑大”的循环依赖，宽度被明确写死 */
+        width: 80vw !important;
 
-        /* 清除浮动，确保它是一个独立的块级元素 */
+        /* 清除浮动，确保块级布局 */
         float: none !important;
 
-        /* 核心步骤 b: 开启相对定位，这是抵消偏移的关键 */
+        /* 步骤 b: 开启相对定位，为“transform”做准备 */
         position: relative;
 
-        /* 核心步骤 c: “反向位移”以抵消父容器的 left: 20% */
-        /* 父容器把它往右推了20%，我们就用负值把它往左拉回来20% */
-        left: -20%;
+        /* 步骤 c: 使用 transform 进行精确的位置矫正 */
+        /* 详细解释见下方 */
+        transform: translateX(-10vw);
 
-        /* 核心步骤 d: 使用 margin: auto 实现居中 */
-        /* 在元素位置被矫正回原始状态后，我们就可以用标准方法让它居中了 */
-        margin-left: auto !important;
-        margin-right: auto !important;
+        /* 步骤 d: 使用 margin:auto 确保在变换后的空间内稳定居中 */
+        margin: 0 auto !important;
     }
 
 }
