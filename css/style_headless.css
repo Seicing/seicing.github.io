@@ -700,7 +700,6 @@ div {
         pointer-events: revert !important;
     }
 
-
     /*
  * ========================================================
  * === 终极修正：留言板宽度 (使用ID选择器覆盖内联样式) ===
@@ -712,6 +711,10 @@ div {
  *    我们直接使用ID选择器(#comments, #comment_pages)，它们的优先级远高于class
  *    对于没有ID的元素，我们使用更具体的“属性选择器” [style*="width"]
  */
+    #comment_all,
+    /* <-- 新增此行 */
+    #comment_all table,
+    /* <-- 新增此行，使其内部表格也适应 */
     div[style*="width"]>textarea#comment_text,
     #comments,
     #comment_pages {
@@ -727,7 +730,6 @@ div {
         box-sizing: border-box !important;
     }
 
-
     /* 3. 单独处理textarea的样式 */
     textarea#comment_text {
         min-height: 150px;
@@ -741,8 +743,27 @@ div {
         margin: 2px;
     }
 
-    #comment_all {
-        width: 100% !important;
+    /*
+ * ========================================================
+ * === 可选优化：提升手机端表格内元素的可读性 ===
+ * ========================================================
+ * 当屏幕宽度小于 480px 时，让“名字”输入框和“提交”按钮各占一行
+ */
+    @media (max-width: 480px) {
+        #comment_all table td {
+            display: block;
+            /* 将单元格变为块级元素，使其垂直排列 */
+            width: 100% !important;
+            text-align: left !important;
+            /* 左对齐 */
+            padding-bottom: 10px;
+            /* 增加一些底部间距 */
+        }
+
+        #comment_all table td:last-child {
+            text-align: left !important;
+            padding-top: 5px;
+        }
     }
 
     #techtree {
