@@ -544,17 +544,8 @@ div {
 
 .aoe4de-tech-group {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
     gap: 0px;
-}
-
-.aoe4de-tech-group>.aoe4de-tech-item:first-child {
-    grid-row: 1 / -1;
-    align-self: start;
-}
-
-.aoe4de-tech-item {
-    margin: 0;
 }
 
 
