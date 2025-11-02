@@ -797,4 +797,50 @@ div {
     #aoe4de th[width="145"] {
         width: 105px !important;
     }
+
+    /* --- 将 #customers2 内部的布局改造为 Flexbox --- */
+
+    /* 
+ * 步骤 1: 将 #customers2 自身设置为块级元素，
+ * 这样可以更好地控制其内部布局，并确保宽度正确。
+ */
+    #customers2 {
+        display: block;
+        width: 100%;
+        /* 让它撑满父容器 */
+    }
+
+    /* 
+ * 步骤 2: 这是最关键的一步。
+ * 我们选择 #customers2 下面的直接子元素 tbody，
+ * 将它变成 Flexbox 容器。
+ * (直接对 <table> 或 <tbody> 设置 display:flex 效果最佳)
+ */
+    #customers2>tbody {
+        display: flex;
+        /* 启用 Flexbox 布局 */
+        flex-wrap: wrap;
+        /* 允许项目（图标单元格）自动换行 */
+        gap: 5px;
+        /* 设置项目之间的水平和垂直间隙均为 5px */
+
+        /* 
+     * (可选) 控制对齐方式。
+     * 'flex-start' 会让图标靠左对齐，效果类似 float:left，
+     * 'center' 则会让最后一行居中，通常更美观。
+     */
+        justify-content: flex-start;
+        /* 或者使用 center */
+    }
+
+    /*
+ * 步骤 3: 由于父级已经是 Flex 容器，
+ * 子项目 tr (行) 和 td (单元格) 的默认 display 属性会被覆盖，
+ * 我们需要稍微调整一下，确保每个图标单元格能正常成为 Flex 项目。
+ * 这一步通常是可选的，但加上可以确保兼容性。
+ */
+    #customers2>tbody>tr {
+        display: contents;
+        /* 让 tr 元素“消失”，使其子元素 td 直接成为 tbody 的 Flex 项目 */
+    }
 }
