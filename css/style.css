@@ -508,75 +508,60 @@ div {
 
 
 /* ---------------------------------------------------- */
-/*      帝国时代4科技树 - Flex 现代化布局样式 (aoe4de 前缀) */
+/*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */
 /* ---------------------------------------------------- */
 
-/* 1. 最外层的Flex容器 */
-/* 这个容器负责排列各个“组” */
+/* 1. 最外层容器 */
+/* 作用：排列 age1, age2 等主要的“时代画布” */
 .aoe4de-flex-container {
     display: flex;
-    flex-wrap: wrap;
-    /* 允许组在空间不足时换行 */
+    flex-direction: column;
+    /* 让 age1, age2 垂直堆叠 */
     gap: 20px;
-    /* 设置组与组之间的水平和垂直间距 */
+    /* 时代画布之间的垂直间距 */
     padding: 20px;
-    /* 在整个容器周围留出边距，避免贴边 */
-    justify-content: flex-start;
-    /* 组从左侧开始排列 */
     box-sizing: border-box;
 }
 
-/* 2. 科技/单位组 */
-/* 每个组都是一个独立的Flex容器，负责排列内部的科技项 */
-.aoe4de-tech-group {
-    display: flex;
-    flex-wrap: wrap;
-    /* 允许组内的科技项在空间不足时换行 */
-    align-items: flex-start;
-    /* 科技项在交叉轴（垂直方向）上顶部对齐 */
-    gap: 10px 5px;
-    /* 设置科技项之间的垂直和水平间距 */
-
-    border: 1px solid #e0e0e0;
-    /* 一个柔和的边框，便于区分 */
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-
-    /* 核心：设置组的响应式宽度 */
-    width: 100%;
-    /* 在小屏幕（如手机）上撑满宽度 */
-    max-width: 800px;
-    /* 在大屏幕上，最大宽度不超过800px */
-    box-sizing: border-box;
-}
-
-/* 3. 单个科技/单位项 (原<table style="float:left">) */
-/* 现在用一个带前缀的class来控制它 */
-.aoe4de-tech-item {
-    /* 替代了原来的 float:left */
-    /* 在Flex布局中，我们不需要float了，它会自动排列 */
-    margin: 0 4px;
-}
-
-/* 4. 年代容器的自适应高度 */
-/* 移除了固定高度，并使其内部也采用Flex布局来排列科技项 */
-/* 注意：这里我们选择已有的.age类，以确保样式能应用到原始HTML结构上 */
+/* 2. 时代画布 (age1, age2...) */
+/* 作用：这是主要的视觉块，它也是一个Flex容器，负责排列内部的一排排“组” */
 .aoe4de-flex-container .age1,
 .aoe4de-flex-container .age2,
 .aoe4de-flex-container .age3,
 .aoe4de-flex-container .age4 {
-    height: auto !important;
-    /* !important确保能覆盖掉内联样式 */
-    width: 100%;
-    /* 确保年代容器在组内完全展开 */
     display: flex;
-    /* 让年代容器也变成flex，以便里面的.aoe4de-tech-item能正确排列 */
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 10px 5px;
+    flex-direction: column;
+    /* 让内部的 tech-group 垂直堆叠 */
+    gap: 15px;
+    /* 组与组之间的垂直间距 */
+
+    /* 视觉样式在这里 */
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+
+    width: 100%;
+    max-width: 860px;
+    /* 稍微加宽以容纳内边距 */
+    box-sizing: border-box;
 }
 
+/* 3. 科技/单位组 (现在是不可见的结构容器) */
+/* 作用：将一排图标包在一起，它本身也是一个Flex容器，负责排列内部的图标 */
+.aoe4de-tech-group {
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许图标换行 */
+    gap: 10px 5px;
+    /* 图标之间的间距 */
+    width: 100%;
+}
+
+/* 4. 单个科技/单位项 */
+.aoe4de-tech-item {
+    margin: 0;
+}
 
 
 /* ======================================================== */
