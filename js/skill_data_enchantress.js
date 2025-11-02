@@ -329,7 +329,7 @@ new Skill("doll_forest", 5, 0, {
 
 
 /* 
-<table id="ghost_chain_slash" frame="box" width="750px">
+<table id="ghost_chain_slash" width="750px">
 <tr>
 <td align="center" style="background-color:#F5F8FA" colspan="8">技能数据一览</td>
 </tr>
@@ -366,7 +366,7 @@ new Skill("doll_forest", 5, 0, {
 </table>   
 
 
-    <table id="sword_ghost_blade_mastery" frame="box" width="750px">
+    <table id="sword_ghost_blade_mastery" width="750px">
         <tr>
             <td align="center" style="background-color:#F5F8FA" colspan="4">技能数据一览</td>
 
