@@ -809,24 +809,42 @@ div {
         box-sizing: border-box !important;
     }
 
+    /* --- 针对 tablebana 的规则 --- */
+    #tablebana {
+        /* 核心！强制覆盖写死的宽度，让它适应屏幕 */
+        width: 100% !important;
+        max-width: 100% !important;
+
+        /* 清理掉可能存在的旧样式 */
+        float: none !important;
+        position: static !important;
+        left: unset !important;
+        margin: 0 auto;
+        /* 让它在可用空间内居中 */
+    }
+
+    /* --- 针对 tablebana2 的规则 --- */
+    #tablebana2 {
+        /* 核心！强制覆盖写死的宽度 */
+        /* 我们要向右移动20%，所以它的宽度不能超过80%，否则会溢出屏幕 */
+        width: 80% !important;
+        max-width: 80% !important;
+
+        /* 清理掉可能存在的旧样式 */
+        float: none !important;
+
+        /* 执行相对定位和移动 */
+        position: relative;
+        left: 20%;
+    }
+
+    /* 
+   * 这是一个好习惯: 确保两个表格的 box-sizing 模式正确，
+   * 这样边框和内边距就不会意外地增加它们的宽度导致溢出。
+   */
     #tablebana,
     #tablebana2 {
-        max-width: 100% !important;
-        /* 关键！确保表格宽度不超过其父容器的100% */
-        width: auto;
-        /* 让表格根据内容自然调整宽度，但不会超过max-width */
         box-sizing: border-box;
-        /* 确保 padding 和 border 被计算在宽度之内，防止溢出 */
-        float: none !important;
-        /* 清除浮动 */
-        position: static;
-        /* 重置定位方式为默认值，为下面的 #tablebana2 单独设置做准备 */
-        left: unset !important;
-        /* 重置 left 属性 */
-        margin-left: 0;
-        /* 清除可能存在的居中外边距 */
-        margin-right: 0;
-        /* 清除可能存在的居中外边距 */
     }
 
 }
