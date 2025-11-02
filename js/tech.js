@@ -1098,7 +1098,6 @@ function tipsp() {
     document.getElementById(tipsp2).click();
 };
 
-
 function adjustTechGroupLayout() {
     // 1. 清理：移除所有之前生成的占位符
     const existingPlaceholders = document.querySelectorAll('.placeholder-item');
@@ -1107,48 +1106,47 @@ function adjustTechGroupLayout() {
     const techGroups = document.querySelectorAll('.aoe4de-tech-group');
 
     techGroups.forEach(group => {
-        // 2. 核心变更：使用循环，每次只处理一个换行点
+        // 获取第一个元素的尺寸，后续创建的占位符都将使用这个尺寸
+        const firstItem = group.querySelector('.aoe4de-tech-item');
+        if (!firstItem) return; // 如果组是空的，就跳过
+        const firstItemRect = firstItem.getBoundingClientRect();
+
+        // 2. 核心：启动一个持续检测和修正的循环
         while (true) {
-            const items = Array.from(group.children); // 在每次循环开始时都重新获取最新的子元素列表
+            // 在每次循环开始时，都重新获取最新的子元素列表
+            const items = Array.from(group.children);
 
             if (items.length < 2) {
                 break; // 元素太少，不可能换行
             }
 
-            let wrapIndex = -1; // 用来记录第一个换行点的位置
+            let wrapIndex = -1; // 用来记录我们找到的第一个换行点的位置
 
-            // 寻找第一个换行点
+            // 3. 寻找第一个换行点
             for (let i = 1; i < items.length; i++) {
-                // 忽略我们自己插入的占位符
-                if (items[i].classList.contains('placeholder-item')) {
-                    continue;
-                }
-
-                // 找到前一个真实的元素来进行比较
-                let prevItem = items[i - 1];
-                if (prevItem.classList.contains('placeholder-item') && i > 1) {
-                    prevItem = items[i - 2];
-                }
-
-                if (items[i].offsetTop > prevItem.offsetTop) {
-                    wrapIndex = i; // 找到了！记录位置
-                    break; // 立刻停止寻找，因为我们一次只处理一个
+                // 我们只比较真实元素的位置，忽略已经插入的占位符
+                if (items[i].offsetTop > items[i - 1].offsetTop) {
+                    // 确保我们找到的换行点不是由一个占位符自己引起的
+                    if (!items[i - 1].classList.contains('placeholder-item')) {
+                        wrapIndex = i; // 找到了！记录这个新行的起始位置
+                        break; // 立刻停止寻找，因为我们一次只处理一个
+                    }
                 }
             }
 
-            // 3. 如果在当前布局下没找到任何换行点，说明处理完毕，跳出循环
+            // 4. 如果在当前布局下没找到任何新的换行点，说明处理完毕，跳出循环
             if (wrapIndex === -1) {
                 break;
             }
 
-            // 4. 插入一个占位符，然后让while循环自动进入下一次迭代，在新的布局上继续寻找
-            const firstItemRect = items[0].getBoundingClientRect();
+            // 5. 插入一个占位符，然后让while循环自动进入下一次迭代
             const placeholder = document.createElement('table');
             placeholder.className = 'aoe4de-tech-item placeholder-item';
             placeholder.style.width = `${firstItemRect.width}px`;
             placeholder.style.height = `${firstItemRect.height}px`;
             placeholder.style.visibility = 'hidden';
 
+            // 在新一行的开头插入占位符
             group.insertBefore(placeholder, items[wrapIndex]);
         }
     });
@@ -1163,7 +1161,6 @@ window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(adjustTechGroupLayout, 150);
 });
-
 
 
 
