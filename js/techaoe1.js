@@ -378,8 +378,8 @@ function aoetechPoeRush() {
         "4": "#f9eaff", "5": "#eafffd", "6": "#d9e0d7"
     };
     const groupBorderColors = {
-        "1": "#a6c9ff", "2": "#f2b9b9", "3": "#b7e4a1",
-        "4": "#e1b7f0", "5": "#a1e9e5", "6": "#a4b0a2"
+        "1": "#0058dbff", "2": "#ff2424ff", "3": "#3eae06ff",
+        "4": "#9a00d2ff", "5": "#00dbd0ff", "6": "#a4b0a2"
     };
 
     const grid = [];
