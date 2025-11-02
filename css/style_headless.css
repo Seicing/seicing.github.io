@@ -470,6 +470,35 @@ div {
     font-family: Microsoft Yahei, sans-serif;
 }
 
+.textce {
+    text-align: center;
+}
+
+.textle {
+    text-align: left;
+}
+
+.rightline {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+#celp4 {
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.bcF5F8FA {
+    background-color: #F5F8FA;
+}
+
+.hrsty {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #555555;
+}
+
 /* ======================================================== */
 /* === 1. 全局/桌面端样式 === */
 /* ======================================================== */

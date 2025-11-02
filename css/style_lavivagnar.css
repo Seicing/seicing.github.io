@@ -523,3 +523,32 @@ a {
 div {
     font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
 }
+
+.textce {
+    text-align: center;
+}
+
+.textle {
+    text-align: left;
+}
+
+#celp4 {
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.rightline {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+.bcF5F8FA {
+    background-color: #F5F8FA;
+}
+
+.hrsty {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #555555;
+}

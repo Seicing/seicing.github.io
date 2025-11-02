@@ -61,17 +61,7 @@ const app = createApp({
 // 将 Vue 应用挂载到指定的 DOM 元素上
 app.mount('#app');
 
-
-// 假设移动端的断点是 768px
-const DESKTOP_MIN_WIDTH = 768;
-
 $(window).resize(function () {
-    // 在函数开头添加宽度检测
-    if (window.innerWidth < DESKTOP_MIN_WIDTH) {
-        // 如果是手机模式，则不执行任何操作
-        return;
-    }
-
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
     var aposr = document.getElementById("reski").offsetHeight;
@@ -79,12 +69,6 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
-    // 在函数开头添加宽度检测
-    if (window.innerWidth < DESKTOP_MIN_WIDTH) {
-        // 如果是手机模式，则不执行任何操作
-        return;
-    }
-
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
     // characterid 会在 Vue 的 onMounted 钩子中被获取和使用
