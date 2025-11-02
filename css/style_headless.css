@@ -668,6 +668,8 @@ div {
     .age3,
     .age4 {
         /* 1. 为容器本身设置滚动 */
+        max-width: 100% !important;
+        /* 关键：必须把这条规则加回来！*/
         overflow-x: auto !important;
         padding: 10px !important;
         box-sizing: border-box !important;
@@ -787,6 +789,7 @@ div {
         /* 撤销 display:block，让其恢复默认或行内样式 */
         width: auto !important;
         /* 撤销 width:100% */
+        min-width: max-content !important;
     }
 
     #customers2 {
