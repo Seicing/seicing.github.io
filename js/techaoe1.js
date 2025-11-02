@@ -627,7 +627,6 @@ function Towershield() {
 
 
 
-
 // ============================
 // aoetech 自动生成样式
 // ============================
@@ -637,27 +636,28 @@ function Towershield() {
     .aoetech-table-flex {
       display: flex;
       flex-direction: column;
-      /* 要求 3: 行间距已移除 */
       gap: 0;
     }
 
     .aoetech-tr-flex {
       display: flex;
       flex-wrap: nowrap;
-      /* 要求 1: 格子间距已移除 */
       gap: 0;
     }
 
     .aoetech-cell {
       position: relative;
-      /* 要求 4: 尺寸已修正为 42x42 像素以匹配原图 */
       width: 42px;
       height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      /*
+       * 【重要修改】
+       * 移除了下面的 Flexbox 居中属性，以解决覆盖层不对齐的问题。
+       * display: flex;
+       * align-items: center;
+       * justify-content: center;
+       */
       background-color: #f8f8f8;
-      border: 1px solid transparent; /* 保留边框结构，但设为透明 */
+      border: 1px solid transparent;
       box-sizing: border-box;
     }
 
@@ -685,10 +685,11 @@ function Towershield() {
 (function () {
     const groupColors = {
         "1": "#eaf3ff",  // 蓝
-        "2": "#fff5e6",  // 橙
+        "2": "#ffeaea",  // 红 (调整为更明显的淡红色)
         "3": "#f1ffe8",  // 绿
         "4": "#f9eaff",  // 紫
-        "5": "#eafffd"   // 青
+        "5": "#eafffd",  // 青
+        "6": "#d9e0d7"   // 【新增】深绿色 (您可以调整为您喜欢的颜色)
     };
 
     const defaultColors = Object.values(groupColors);
@@ -704,7 +705,6 @@ function Towershield() {
     for (const g in groups) {
         let color = groupColors[g];
         if (!color) {
-            // 超出定义范围的 group 自动循环颜色
             color = defaultColors[colorIndex % defaultColors.length];
             colorIndex++;
         }
@@ -712,9 +712,6 @@ function Towershield() {
         const cells = groups[g];
         cells.forEach(cell => {
             cell.style.backgroundColor = color;
-            /* 要求 2 & 5: 动态描边和阴影已移除，边框将不可见 */
-            // cell.style.borderColor = "#888";
-            // cell.style.boxShadow = "inset 0 0 0 1px #555";
         });
     }
 })();

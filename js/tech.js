@@ -1580,3 +1580,98 @@ function triggerFilterFromURL() {
     const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
     if (btn) btn.click();
 }
+
+
+
+
+
+
+
+// ============================
+// aoetech 自动生成样式
+// ============================
+(function () {
+    const style = document.createElement("style");
+    style.innerHTML = `
+    .aoetech-table-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .aoetech-tr-flex {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    .aoetech-cell {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      /*
+       * 【重要修改】
+       * 移除了下面的 Flexbox 居中属性，以解决覆盖层不对齐的问题。
+       * display: flex;
+       * align-items: center;
+       * justify-content: center;
+       */
+      background-color: #f8f8f8;
+      border: 1px solid transparent;
+      box-sizing: border-box;
+    }
+
+    .aoetech-cell img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    .aoetech-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  `;
+    document.head.appendChild(style);
+})();
+
+// ============================
+// aoetech 分组背景 + 描边
+// ============================
+(function () {
+    const groupColors = {
+        "1": "#eaf3ff",  // 蓝
+        "2": "#ffeaea",  // 红 (调整为更明显的淡红色)
+        "3": "#f1ffe8",  // 绿
+        "4": "#f9eaff",  // 紫
+        "5": "#eafffd",  // 青
+        "6": "#d9e0d7"   // 【新增】深绿色 (您可以调整为您喜欢的颜色)
+    };
+
+    const defaultColors = Object.values(groupColors);
+    const groups = {};
+    let colorIndex = 0;
+
+    document.querySelectorAll(".aoetech-cell[group]").forEach(cell => {
+        const g = cell.getAttribute("group");
+        if (!groups[g]) groups[g] = [];
+        groups[g].push(cell);
+    });
+
+    for (const g in groups) {
+        let color = groupColors[g];
+        if (!color) {
+            color = defaultColors[colorIndex % defaultColors.length];
+            colorIndex++;
+        }
+
+        const cells = groups[g];
+        cells.forEach(cell => {
+            cell.style.backgroundColor = color;
+        });
+    }
+})();
