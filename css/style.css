@@ -507,16 +507,19 @@ div {
 }
 
 
+
+
 /* ---------------------------------------------------- */
-/*      帝国时代4科技树 - 最终版布局 (aoe4de 前缀)    */
+/*      帝国时代4科技树 - 简化版布局 (aoe4de 前缀)    */
 /* ---------------------------------------------------- */
 
-/* 1. 最外层容器 */
+/* 1. 最外层的Flex容器 */
 .aoe4de-flex-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 0;
+    /* 按要求设置为 0 */
     box-sizing: border-box;
 }
 
@@ -528,45 +531,30 @@ div {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
     padding: 15px;
     border-radius: 8px;
+    /* 四个角都有圆角 */
+
     width: 100%;
     max-width: 860px;
     box-sizing: border-box;
-    /* 您原有的背景和边框样式应该应用在这里 */
 }
 
-/* 3. 科技/单位组 (常规组和特殊组的通用样式) */
+/* 3. 科技/单位组 (不可见的结构容器) */
 .aoe4de-tech-group {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
 
-/* 4. 【新增】为重新聚合的 "down" 组添加一个上边框，以示区分 */
-.aoe4de-tech-group-down {
-    padding-top: 15px;
-    border-top: 2px dashed #ccc;
-    width: 100%;
-    /* 确保它能撑满宽度 */
-}
-
-.aoe4de-tech-group-up {
-    width: 100%;
-    /* 确保它能撑满宽度 */
-}
-
-
-/* 5. 单个科技/单位项 */
+/* 4. 单个科技/单位项 */
 .aoe4de-tech-item {
     margin: 0;
 }
 
-/* 我们为up/down卡片本身也加上class，但它们在视觉上和普通卡片一样 */
-.aoe4de-tech-item-up,
-.aoe4de-tech-item-down {
-    /* 继承 .aoe4de-tech-item 的所有样式 */
-}
 
 
 /* ======================================================== */
