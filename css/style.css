@@ -472,11 +472,27 @@ div {
     margin-bottom: 20px
 }
 
-#celp4 {
+#celp250 {
     border: 1px solid grey;
 }
 
-#celp4 td {
+#celp250 td {
+    padding: 5px;
+}
+
+#celp220 {
+    border: 1px solid grey;
+}
+
+#celp220 td {
+    padding: 5px;
+}
+
+#celp200 {
+    border: 1px solid grey;
+}
+
+#celp200 td {
     padding: 5px;
 }
 
