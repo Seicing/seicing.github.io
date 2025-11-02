@@ -1099,90 +1099,70 @@ function tipsp() {
 };
 
 
-
-
 function adjustTechGroupLayout() {
-
     // 1. 清理：移除所有之前生成的占位符
-    // 我们给占位符一个特殊的class 'placeholder-item' 以便识别
     const existingPlaceholders = document.querySelectorAll('.placeholder-item');
     existingPlaceholders.forEach(el => el.remove());
 
-    // 2. 遍历：获取页面上所有的“科技组”
     const techGroups = document.querySelectorAll('.aoe4de-tech-group');
 
     techGroups.forEach(group => {
-        // 获取组内所有真实的科技项 (排除我们可能将要添加的占位符)
-        const items = Array.from(group.children).filter(child => !child.classList.contains('placeholder-item'));
+        // 2. 核心变更：使用循环，每次只处理一个换行点
+        while (true) {
+            const items = Array.from(group.children); // 在每次循环开始时都重新获取最新的子元素列表
 
-        // 如果组内元素少于2个，不可能换行，直接跳过
-        if (items.length < 2) {
-            return;
-        }
+            if (items.length < 2) {
+                break; // 元素太少，不可能换行
+            }
 
-        // 3. 检测换行：比较第一个元素和后续元素的垂直位置 (offsetTop)
-        const firstItemTop = items[0].offsetTop;
-        let hasWrap = false;
-        let itemsPerRow = items.length; // 默认值，表示没有换行
+            let wrapIndex = -1; // 用来记录第一个换行点的位置
 
-        for (let i = 1; i < items.length; i++) {
-            // 如果任何一个元素的offsetTop大于第一个，说明发生了换行
-            if (items[i].offsetTop > firstItemTop) {
-                hasWrap = true;
-                itemsPerRow = i; // 记录下第一行能容纳的元素数量
+            // 寻找第一个换行点
+            for (let i = 1; i < items.length; i++) {
+                // 忽略我们自己插入的占位符
+                if (items[i].classList.contains('placeholder-item')) {
+                    continue;
+                }
+
+                // 找到前一个真实的元素来进行比较
+                let prevItem = items[i - 1];
+                if (prevItem.classList.contains('placeholder-item') && i > 1) {
+                    prevItem = items[i - 2];
+                }
+
+                if (items[i].offsetTop > prevItem.offsetTop) {
+                    wrapIndex = i; // 找到了！记录位置
+                    break; // 立刻停止寻找，因为我们一次只处理一个
+                }
+            }
+
+            // 3. 如果在当前布局下没找到任何换行点，说明处理完毕，跳出循环
+            if (wrapIndex === -1) {
                 break;
             }
-        }
 
-        // 4. 如果没有换行，则不执行任何操作
-        if (!hasWrap) {
-            return;
-        }
-
-        // 5. 生成并插入占位符
-        // 获取第一个元素的精确尺寸
-        const firstItemRect = items[0].getBoundingClientRect();
-
-        // 从第二行的起始位置开始，循环插入占位符
-        // 我们需要重复这个过程，以应对可能发生的多行换行
-        let insertIndex = itemsPerRow;
-        while (insertIndex < group.children.length) {
-
-            // 创建一个空白的table作为占位符
+            // 4. 插入一个占位符，然后让while循环自动进入下一次迭代，在新的布局上继续寻找
+            const firstItemRect = items[0].getBoundingClientRect();
             const placeholder = document.createElement('table');
-            placeholder.className = 'aoe4de-tech-item placeholder-item'; // 添加两个class
-
-            // 设置其大小与第一个元素完全相同
+            placeholder.className = 'aoe4de-tech-item placeholder-item';
             placeholder.style.width = `${firstItemRect.width}px`;
             placeholder.style.height = `${firstItemRect.height}px`;
-
-            // 让它不可见，但仍然占据空间
             placeholder.style.visibility = 'hidden';
 
-            // 插入到正确的位置
-            // group.children[insertIndex] 就是下一行的第一个实际元素
-            group.insertBefore(placeholder, group.children[insertIndex]);
-
-            // 计算下一个需要插入占位符的位置
-            // 位置 = 当前插入点 + 每行的数量 + 我们刚刚插入的1个占位符
-            insertIndex += (itemsPerRow + 1);
+            group.insertBefore(placeholder, items[wrapIndex]);
         }
     });
 }
 
-// 6. 响应式执行
-// 在页面加载完毕后执行一次
+
+// 响应式执行 (这部分保持不变)
 window.addEventListener('load', adjustTechGroupLayout);
 
-// 在窗口大小变化时执行，并加入“防抖”优化以避免性能问题
 let resizeTimeout;
 window.addEventListener('resize', () => {
-    // 清除之前的定时器
     clearTimeout(resizeTimeout);
-    // 设置一个新的定时器，在停止调整大小150毫秒后执行函数
     resizeTimeout = setTimeout(adjustTechGroupLayout, 150);
 });
-
 
 
 
