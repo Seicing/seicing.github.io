@@ -524,11 +524,8 @@ div {
 /*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */
 /* ---------------------------------------------------- */
 
-/* 1. 最外层的Flex容器 */
+/* 1. 最外层的容器 (不再是Flex布局) */
 .aoe4de-flex-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -567,6 +564,18 @@ div {
 /* 4. 单个科技/单位项 */
 .aoe4de-tech-item {
     margin: 0;
+}
+
+/* 5. 【新增】独占一行的特殊class */
+/* 用于让某个科技项强制换行，实现“独占两行”的效果 */
+.aoe4de-tech-item-double {
+    flex-basis: 100%;
+    /* 关键：强制元素宽度为100%，使其占据一整行 */
+    height: 0;
+    /* 视觉上隐藏这个占位符本身 */
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 
