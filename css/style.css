@@ -755,4 +755,22 @@ div {
     #aoe4de th[width="145px"] {
         width: 105px !important;
     }
+
+    #wenttodie {
+        width: 800px !important;
+        max-width: none !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        /* 为iOS设备提供更平滑的滚动体验 */
+    }
+
+    /* 
+     * 2. 确保 #wenttodie 内部的直接子元素（特别是table）能够撑满800px
+     *    - min-width: 100%; => 强制子元素的最小宽度等于其父容器（#wenttodie）的宽度，即800px
+     *    - 这样可以确保即时内容本身不足800px，表格等块级元素也能在视觉上撑满容器
+     */
+    #wenttodie>* {
+        min-width: 100%;
+        box-sizing: border-box !important;
+    }
 }
