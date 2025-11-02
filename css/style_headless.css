@@ -741,11 +741,10 @@ div {
         margin: 2px;
     }
 
-    /* 
     #techtree {
         background: none !important;
     }
- */
+
     #icons {
         width: 100% !important;
     }
@@ -799,4 +798,5 @@ div {
         min-width: 800px !important;
         box-sizing: border-box !important;
     }
+
 }
