@@ -508,35 +508,37 @@ div {
 
 
 
-
 /* ---------------------------------------------------- */
-/*      帝国时代4科技树 - 简化版布局 (aoe4de 前缀)    */
+/*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */
 /* ---------------------------------------------------- */
 
 /* 1. 最外层的Flex容器 */
 .aoe4de-flex-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     padding: 0;
-    /* 按要求设置为 0 */
     box-sizing: border-box;
 }
 
 /* 2. 时代画布 (age1, age2...) */
+/* 这是主要的视觉块，它也是一个Flex容器，负责排列内部的一排排“组” */
 .aoe4de-flex-container .age1,
 .aoe4de-flex-container .age2,
 .aoe4de-flex-container .age3,
 .aoe4de-flex-container .age4 {
     display: flex;
+    /* 新增: 明确其为flex容器 */
     flex-wrap: wrap;
+    /* 新增: 允许内部的组换行 */
     gap: 20px;
+    /* 组与组之间的间距 */
 
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    /* 您原有的背景和边框样式应该应用在这里 */
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #e0e0e0; */
     padding: 15px;
     border-radius: 8px;
-    /* 四个角都有圆角 */
 
     width: 100%;
     max-width: 860px;
@@ -547,7 +549,7 @@ div {
 .aoe4de-tech-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 0px;
 }
 
 /* 4. 单个科技/单位项 */
