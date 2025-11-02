@@ -1145,69 +1145,11 @@ function aoetechPoeRush() {
     document.head.appendChild(style);
 })();
 
-
 // ============================
-// aoetech 自动生成样式
-// ============================
-(function () {
-    const style = document.createElement("style");
-    style.innerHTML = `
-    .aoetech-table-flex {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      background-color: #ffffff; /* 网格线颜色 */
-    }
-
-    .aoetech-tr-flex {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 1px;
-    }
-
-    /* 【核心CSS】 */
-    .aoetech-cell {
-      position: relative;
-      width: 42px; /* 最终渲染的总宽度为42px */
-      height: 42px; /* 最终渲染的总高度为42px */
-      background-color: #f8f8f8;
-      
-      /* 
-       * 我们将使用 box-shadow 来模拟边框，
-       * 所以直接移除物理 border，让逻辑更清晰。
-      */
-      border: none;
-      
-      /*
-       * 保留 border-box 确保 width/height 定义的是最终尺寸，
-       * 这是非常好的实践。
-      */
-      box-sizing: border-box;
-    }
-
-    .aoetech-cell img {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-    }
-
-    .aoetech-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-  `;
-    document.head.appendChild(style);
-})();
-
-// ============================
-// aoetech 分组背景 + 区域外围描边 (JS部分)
+// aoetech 分组背景 + 区域外围描边 (新逻辑)
 // ============================
 (function () {
-    // ... (颜色定义和网格构建部分与之前相同，无需修改)
+    // 1. 定义颜色映射表
     const groupColors = {
         "1": "#eaf3ff", "2": "#ffeaea", "3": "#f1ffe8",
         "4": "#f9eaff", "5": "#eafffd", "6": "#d9e0d7"
@@ -1220,6 +1162,7 @@ function aoetechPoeRush() {
     const grid = [];
     const rows = document.querySelectorAll(".aoetech-tr-flex");
 
+    // 2. 构建网格数据结构，存储每个格子的元素和组信息
     rows.forEach(row => {
         const gridRow = [];
         const cells = row.querySelectorAll(".aoetech-cell");
@@ -1232,47 +1175,45 @@ function aoetechPoeRush() {
         grid.push(gridRow);
     });
 
-    // 【核心JS】
-    // 这部分逻辑与上一版完全相同，因为它已经是正确的了
+    // 3. 遍历网格，应用背景色和智能描边
     grid.forEach((row, r) => {
         row.forEach((cellInfo, c) => {
             const currentGroup = cellInfo.group;
+
+            // 如果当前格子没有分组，则跳过
             if (!currentGroup) return;
 
+            // 应用背景色
             if (groupColors[currentGroup]) {
                 cellInfo.element.style.backgroundColor = groupColors[currentGroup];
             }
 
+            // 获取描边颜色
             const borderColor = groupBorderColors[currentGroup];
             if (!borderColor) return;
 
-            const shadows = [];
-            const borderWidth = '1px';
+            // 检查四个方向的邻居
+            const topNeighborGroup = (grid[r - 1] && grid[r - 1][c]) ? grid[r - 1][c].group : null;
+            const bottomNeighborGroup = (grid[r + 1] && grid[r + 1][c]) ? grid[r + 1][c].group : null;
+            const leftNeighborGroup = (grid[r][c - 1]) ? grid[r][c - 1].group : null;
+            const rightNeighborGroup = (grid[r][c + 1]) ? grid[r][c + 1].group : null;
 
-            // 使用 inset box-shadow 在单元格内部绘制描边
-            if (r === 0 || grid[r - 1][c].group !== currentGroup) {
-                shadows.push(`inset 0 ${borderWidth} 0 0 ${borderColor}`);
+            // 如果邻居不属于同一组，则在该方向绘制边框
+            if (topNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderTopColor = borderColor;
             }
-            if (r === grid.length - 1 || grid[r + 1][c].group !== currentGroup) {
-                shadows.push(`inset 0 -${borderWidth} 0 0 ${borderColor}`);
+            if (bottomNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderBottomColor = borderColor;
             }
-            if (c === 0 || grid[r][c - 1].group !== currentGroup) {
-                shadows.push(`inset ${borderWidth} 0 0 0 ${borderColor}`);
+            if (leftNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderLeftColor = borderColor;
             }
-            if (c === row.length - 1 || grid[r][c + 1].group !== currentGroup) {
-                shadows.push(`inset -${borderWidth} 0 0 0 ${borderColor}`);
-            }
-
-            if (shadows.length > 0) {
-                cellInfo.element.style.boxShadow = shadows.join(', ');
-            } else {
-                cellInfo.element.style.boxShadow = 'none';
+            if (rightNeighborGroup !== currentGroup) {
+                cellInfo.element.style.borderRightColor = borderColor;
             }
         });
     });
 })();
-
-
 
 
 
