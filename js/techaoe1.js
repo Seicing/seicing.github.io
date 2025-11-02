@@ -637,24 +637,27 @@ function Towershield() {
     .aoetech-table-flex {
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      /* 要求 3: 行间距已移除 */
+      gap: 0;
     }
 
     .aoetech-tr-flex {
       display: flex;
       flex-wrap: nowrap;
-      gap: 2px;
+      /* 要求 1: 格子间距已移除 */
+      gap: 0;
     }
 
     .aoetech-cell {
       position: relative;
-      width: 64px;
-      height: 64px;
+      /* 要求 4: 尺寸已修正为 42x42 像素以匹配原图 */
+      width: 42px;
+      height: 42px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: #f8f8f8;
-      border: 1px solid transparent;
+      border: 1px solid transparent; /* 保留边框结构，但设为透明 */
       box-sizing: border-box;
     }
 
@@ -709,8 +712,9 @@ function Towershield() {
         const cells = groups[g];
         cells.forEach(cell => {
             cell.style.backgroundColor = color;
-            cell.style.borderColor = "#888";
-            cell.style.boxShadow = "inset 0 0 0 1px #555";
+            /* 要求 2 & 5: 动态描边和阴影已移除，边框将不可见 */
+            // cell.style.borderColor = "#888";
+            // cell.style.boxShadow = "inset 0 0 0 1px #555";
         });
     }
 })();
