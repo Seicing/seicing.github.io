@@ -741,6 +741,10 @@ div {
         margin: 2px;
     }
 
+    #comment_all {
+        width: 100% !important;
+    }
+
     #techtree {
         background: none !important;
     }
