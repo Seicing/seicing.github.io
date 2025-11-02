@@ -1585,8 +1585,6 @@ function triggerFilterFromURL() {
 
 
 
-
-
 // ============================
 // aoetech 自动生成样式
 // ============================
@@ -1609,14 +1607,8 @@ function triggerFilterFromURL() {
       position: relative;
       width: 42px;
       height: 42px;
-      /*
-       * 【重要修改】
-       * 移除了下面的 Flexbox 居中属性，以解决覆盖层不对齐的问题。
-       * display: flex;
-       * align-items: center;
-       * justify-content: center;
-       */
       background-color: #f8f8f8;
+      /* 【重要】设置一个1像素的边框，颜色将由JS动态指定 */
       border: 1px solid transparent;
       box-sizing: border-box;
     }
@@ -1643,35 +1635,36 @@ function triggerFilterFromURL() {
 // aoetech 分组背景 + 描边
 // ============================
 (function () {
+    // 1. 定义背景色
     const groupColors = {
         "1": "#eaf3ff",  // 蓝
-        "2": "#ffeaea",  // 红 (调整为更明显的淡红色)
+        "2": "#ffeaea",  // 红
         "3": "#f1ffe8",  // 绿
-        "4": "#f9eaff",  // 紫
+        "4": "#f9eaff",  // 粉紫
         "5": "#eafffd",  // 青
-        "6": "#d9e0d7"   // 【新增】深绿色 (您可以调整为您喜欢的颜色)
+        "6": "#d9e0d7"   // 深绿
     };
 
-    const defaultColors = Object.values(groupColors);
-    const groups = {};
-    let colorIndex = 0;
+    // 2. 【新增】定义对应的深色描边
+    const groupBorderColors = {
+        "1": "#a6c9ff",  // 深蓝
+        "2": "#f2b9b9",  // 深红
+        "3": "#b7e4a1",  // 深绿
+        "4": "#e1b7f0",  // 深粉紫
+        "5": "#a1e9e5",  // 深青
+        "6": "#a4b0a2"   // 更深的绿
+    };
 
     document.querySelectorAll(".aoetech-cell[group]").forEach(cell => {
         const g = cell.getAttribute("group");
-        if (!groups[g]) groups[g] = [];
-        groups[g].push(cell);
-    });
+        if (groupColors[g]) {
+            // 应用背景色
+            cell.style.backgroundColor = groupColors[g];
 
-    for (const g in groups) {
-        let color = groupColors[g];
-        if (!color) {
-            color = defaultColors[colorIndex % defaultColors.length];
-            colorIndex++;
+            // 【新增】应用同色系的描边
+            if (groupBorderColors[g]) {
+                cell.style.borderColor = groupBorderColors[g];
+            }
         }
-
-        const cells = groups[g];
-        cells.forEach(cell => {
-            cell.style.backgroundColor = color;
-        });
-    }
+    });
 })();
