@@ -537,46 +537,61 @@ div {
 .aoe4de-flex-container .age3,
 .aoe4de-flex-container .age4 {
     display: flex;
-    /* 新增: 明确其为flex容器 */
     flex-wrap: wrap;
-    /* 新增: 允许内部的组换行 */
-    gap: 20px;
-    /* 组与组之间的间距 */
-
-    /* 您原有的背景和边框样式应该应用在这里 */
-    /* background-color: #f9f9f9; */
-    /* border: 1px solid #e0e0e0; */
     padding: 15px;
     border-radius: 8px;
-
     width: 100%;
     max-width: 860px;
     box-sizing: border-box;
 }
 
-/* 3. 科技/单位组 (不可见的结构容器) */
+
+/* 3. 科技行 (aoe4de-tech-row) */
+/* 作用：负责排列组，并在行与行之间提供间距 */
+.aoe4de-tech-row {
+    display: flex;
+    flex-direction: column;
+    /* 让内部的组垂直堆叠 */
+    gap: 20px;
+    /* 组与组之间的垂直间距 */
+}
+
+/* 如果一行内有多个组，则让它们水平排列 */
+.aoe4de-tech-row:not(:only-child) {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+/* 4. 科技/单位组 (aoe4de-tech-group) */
+/* 关键：现在它是一个 CSS Grid 容器 */
 .aoe4de-tech-group {
+    display: grid;
+    /* 定义两列：第一列宽度自适应，第二列占据所有剩余空间 */
+    grid-template-columns: auto 1fr;
+    gap: 0px 0px;
+    /* 定义行间距和列间距 */
+}
+
+/* 5. 组内的第一个元素 (领导者) */
+.aoe4de-tech-group>.aoe4de-tech-item:first-child {
+    /* 关键：让这个元素占据第一列，并从第一行跨越到最后一行 */
+    grid-column: 1;
+    grid-row: 1 / -1;
+    align-self: start;
+    /* 确保它在垂直方向上顶部对齐 */
+}
+
+/* 6. 组内除了第一个之外的所有其他元素 */
+/* 关键：创建一个新的容器来包裹它们，让它们在第二列内进行flex布局 */
+.aoe4de-tech-group-followers {
+    grid-column: 2;
+    /* 放置在第二列 */
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
 }
 
-/* 4. 单个科技/单位项 */
-.aoe4de-tech-item {
-    margin: 0;
-}
-
-/* 5. 【新增】独占一行的特殊class */
-/* 用于让某个科技项强制换行，实现“独占两行”的效果 */
-.aoe4de-tech-item-double {
-    flex-basis: 100%;
-    /* 关键：强制元素宽度为100%，使其占据一整行 */
-    height: 0;
-    /* 视觉上隐藏这个占位符本身 */
-    padding: 0;
-    margin: 0;
-    border: none;
-}
 
 
 /* ======================================================== */
