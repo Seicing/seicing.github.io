@@ -824,4 +824,24 @@ div {
         box-sizing: border-box !important;
     }
 
+    #tablebana,
+    #tablebana2 {
+        max-width: 100% !important;
+        /* 关键！确保表格宽度不超过其父容器的100% */
+        width: auto;
+        /* 让表格根据内容自然调整宽度，但不会超过max-width */
+        box-sizing: border-box;
+        /* 确保 padding 和 border 被计算在宽度之内，防止溢出 */
+        float: none !important;
+        /* 清除浮动 */
+        position: static;
+        /* 重置定位方式为默认值，为下面的 #tablebana2 单独设置做准备 */
+        left: unset !important;
+        /* 重置 left 属性 */
+        margin-left: 0;
+        /* 清除可能存在的居中外边距 */
+        margin-right: 0;
+        /* 清除可能存在的居中外边距 */
+    }
+
 }
