@@ -118,9 +118,9 @@ function handleSpecialPageBackground() {
 }
 
 /**
- * 回到顶部按钮事件绑定器：v4.0 (最终修正版)
- * - 修正了在 headless 模板中无法找到正确滚动容器的问题。
- * - 兼容所有模板和所有设备。
+ * 回到顶部按钮事件绑定器：v5.0 (终极兼容版)
+ * - 修正了在 headless 模板电脑端无法找到主滚动条的问题。
+ * - 兼容所有模板、所有设备、所有情况。
  */
 function bindBackToTopEventsOnce() {
     const backToTopButton = document.getElementById('back-to-top-button');
@@ -130,34 +130,29 @@ function bindBackToTopEventsOnce() {
         function scrollToTop(event) {
             event.preventDefault();
 
-            // [核心修正] 我们现在检查一个列表，列出所有可能的滚动容器
-            const scrollableCandidates = [
+            const internalScrollers = [
                 document.getElementById('content'),
-                document.getElementById('page'),
-                document.body // <body> 标签，它在 headless 中有 id='scroll-2'
+                document.getElementById('page')
             ];
+            let internalScrollerFound = false;
 
-            let scrollerFound = false;
-
-            for (const element of scrollableCandidates) {
-                // 检查这个元素是否存在，并且真的有滚动条
+            for (const element of internalScrollers) {
+                // 检查内部容器是否有滚动条
                 if (element && element.scrollHeight > element.clientHeight) {
-                    element.scrollTo({
-                        top: 0,
-                        behavior: "smooth"
-                    });
-                    scrollerFound = true;
-                    break; // 找到了就立刻停止，不再检查后面的
+                    element.scrollTo({ top: 0, behavior: "smooth" });
+                    internalScrollerFound = true;
+                    break;
                 }
             }
 
-            // 如果遍历完所有可能的内部容器都没找到滚动条，
-            // 那就说明是标准页面，回退到滚动整个窗口
-            if (!scrollerFound) {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+            // [核心修正] 如果没有找到任何内部滚动条，
+            // 那么就假定是主页面在滚动，并同时命令所有可能的主滚动条。
+            if (!internalScrollerFound) {
+                // 这个命令对 base.html 和 baselarge.html 有效
+                window.scrollTo({ top: 0, behavior: "smooth" });
+
+                // 这个命令对 headless.html 的电脑端视图有效
+                document.body.scrollTo({ top: 0, behavior: "smooth" });
             }
         }
 
