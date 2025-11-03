@@ -193,6 +193,7 @@ function positionBackToTopButton() {
         // 3. 应用最终计算好的样式
         backToTopButton.style.left = buttonLeft + 'px';
     }
+    backToTopButton.style.opacity = '1';
 }
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
