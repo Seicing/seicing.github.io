@@ -983,7 +983,7 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
 
-    #wrapper2 {
+    #post {
         background: #ffffff !important;
     }
 
@@ -1005,18 +1005,17 @@ div {
 
     /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
     #page {
-        width: 850px !important;
+        width: 800px !important;
     }
 
     /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
     #content {
-        width: 850px !important;
+        width: 800px !important;
         float: none !important;
         /* 清除浮动，防止布局错乱 */
         margin: 0 auto !important;
         /* 实现水平居中 */
     }
-
 
     /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
     /* 因为这个区间也要使用抽屉，所以必须包含完整的抽屉样式 */
