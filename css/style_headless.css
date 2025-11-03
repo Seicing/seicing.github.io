@@ -611,24 +611,8 @@ div {
     display: none !important;
 }
 
-/* ======================================================== */
-/* === 2. 响应式样式：覆盖平板与移动端 (精准修正最终版) === */
-/* ======================================================== */
-
-/* --- 规则 A：平板 --- */
+/* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 1279px) {
-    #sidebar {
-        z-index: 10 !important;
-    }
-
-    #content {
-        position: relative !important;
-        z-index: 20 !important;
-    }
-}
-
-/* --- 规则 B：手机 --- */
-@media only screen and (max-width: 767px) {
     #sidebar {
         display: none !important;
     }
