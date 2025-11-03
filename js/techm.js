@@ -903,3 +903,64 @@ window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(handleDynamicSaicLayout, 100);
 });
+
+
+function adjustTechGroupLayout() {
+    // 1. 清理：移除所有之前生成的占位符
+    const existingPlaceholders = document.querySelectorAll('.placeholder-item');
+    existingPlaceholders.forEach(el => el.remove());
+
+    const techGroups = document.querySelectorAll('.aoe4de-tech-group');
+
+    techGroups.forEach(group => {
+        const firstItem = group.querySelector('.aoe4de-tech-item:not(.placeholder-item)');
+        if (!firstItem) return;
+        const firstItemRect = firstItem.getBoundingClientRect();
+
+        // 2. 启动一个最多循环（比如100次）的保护性循环，防止意外的无限循环
+        for (let safety = 0; safety < 100; safety++) {
+            const items = Array.from(group.children);
+
+            if (items.length < 2) {
+                break;
+            }
+
+            let wrapIndex = -1;
+
+            // 3. 寻找第一个“需要被修复”的换行点
+            for (let i = 1; i < items.length; i++) {
+                if (items[i].offsetTop > items[i - 1].offsetTop) {
+                    // 核心修正：只有当新一行的开头不是占位符时，才认为需要修复
+                    if (!items[i].classList.contains('placeholder-item')) {
+                        wrapIndex = i;
+                        break;
+                    }
+                }
+            }
+
+            // 4. 如果没找到任何需要修复的换行点，任务完成，跳出循环
+            if (wrapIndex === -1) {
+                break;
+            }
+
+            // 5. 插入占位符
+            const placeholder = document.createElement('table');
+            placeholder.className = 'aoe4de-tech-item placeholder-item';
+            placeholder.style.width = `${firstItemRect.width}px`;
+            placeholder.style.height = `${firstItemRect.height}px`;
+            placeholder.style.visibility = 'hidden';
+
+            group.insertBefore(placeholder, items[wrapIndex]);
+        }
+    });
+}
+
+
+// 响应式执行 (这部分保持不变)
+window.addEventListener('load', adjustTechGroupLayout);
+
+let resizeTimeout;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(adjustTechGroupLayout, 150);
+});
