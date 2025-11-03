@@ -655,16 +655,6 @@ div {
  * ========================================================
  */
     html,
-    body,
-    #wrapper,
-    #page,
-    #content,
-    .post,
-    .entry {
-        background: #ffffff !important;
-    }
-
-    html,
     body {
         width: 100%;
         overflow-x: hidden;

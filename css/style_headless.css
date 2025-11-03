@@ -671,17 +671,6 @@ div {
  * === 基础重置 & 纯白背景 (通过信标Div实现例外) ===
  * ========================================================
  */
-
-    html,
-    body,
-    #wrapper,
-    #page,
-    #content,
-    .post,
-    .entry {
-        background: #ffffff !important;
-    }
-
     html,
     body {
         width: 100%;
