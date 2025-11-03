@@ -617,7 +617,8 @@ div {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease-in-out;
-    /* 为位置和样式的变化添加平滑过渡动画 */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, left 0.3s ease-in-out;
 }
 
 #back-to-top-button:hover {

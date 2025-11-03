@@ -118,12 +118,9 @@ function handleSpecialPageBackground() {
 }
 
 /**
- * 回到顶部按钮事件绑定器：只执行一次，为按钮绑定永久的点击事件。
- */
-/**
- * 回到顶部按钮事件绑定器：v3.0 (最终兼容版)
- * - 自动检测滚动容器，兼容所有模板。
- * - 同时监听 'click' 和 'touchstart'，解决移动端触摸失效问题。
+ * 回到顶部按钮事件绑定器：v4.0 (最终修正版)
+ * - 修正了在 headless 模板中无法找到正确滚动容器的问题。
+ * - 兼容所有模板和所有设备。
  */
 function bindBackToTopEventsOnce() {
     const backToTopButton = document.getElementById('back-to-top-button');
@@ -131,17 +128,32 @@ function bindBackToTopEventsOnce() {
     if (backToTopButton && !backToTopButton.dataset.eventsBound) {
 
         function scrollToTop(event) {
-            // 阻止事件的默认行为。对于 touchstart，这可以防止后续的“幽灵点击”或页面滚动。
             event.preventDefault();
 
-            // 滚动逻辑 (保持不变)
-            const contentScroller = document.getElementById('content');
-            if (contentScroller && contentScroller.scrollHeight > contentScroller.clientHeight) {
-                contentScroller.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            } else {
+            // [核心修正] 我们现在检查一个列表，列出所有可能的滚动容器
+            const scrollableCandidates = [
+                document.getElementById('content'),
+                document.getElementById('page'),
+                document.body // <body> 标签，它在 headless 中有 id='scroll-2'
+            ];
+
+            let scrollerFound = false;
+
+            for (const element of scrollableCandidates) {
+                // 检查这个元素是否存在，并且真的有滚动条
+                if (element && element.scrollHeight > element.clientHeight) {
+                    element.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                    scrollerFound = true;
+                    break; // 找到了就立刻停止，不再检查后面的
+                }
+            }
+
+            // 如果遍历完所有可能的内部容器都没找到滚动条，
+            // 那就说明是标准页面，回退到滚动整个窗口
+            if (!scrollerFound) {
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
@@ -149,15 +161,13 @@ function bindBackToTopEventsOnce() {
             }
         }
 
-        // 为桌面端和非触摸设备绑定 click 事件
         backToTopButton.addEventListener('click', scrollToTop);
-
-        // [核心修改] 为手机、平板等触摸设备绑定 touchstart 事件
         backToTopButton.addEventListener('touchstart', scrollToTop);
-
         backToTopButton.dataset.eventsBound = 'true';
     }
 }
+
+
 
 /**
  * [V3 - 带模板偏移修正] 动态定位“回到顶部”按钮。
