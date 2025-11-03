@@ -535,7 +535,8 @@ div {
 .aoe4de-flex-container .age1,
 .aoe4de-flex-container .age2,
 .aoe4de-flex-container .age3,
-.aoe4de-flex-container .age4 {
+.aoe4de-flex-container .age4,
+.aoe4de-flex-container .age0 {
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
