@@ -654,7 +654,7 @@ div {
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
     #back-to-top-button {
-        top: 60px;
+        top: 80px;
         right: 15px;
         bottom: auto;
     }
@@ -748,8 +748,8 @@ div {
         left: auto;
         right: 15px;
         z-index: 1001;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-color: #333;
         color: white;
         border: none;
@@ -1029,7 +1029,7 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #back-to-top-button {
-        top: 60px;
+        top: 80px;
         right: 15px;
         bottom: auto;
     }

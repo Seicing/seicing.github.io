@@ -126,10 +126,25 @@ function bindBackToTopEventsOnce() {
     if (backToTopButton && !backToTopButton.dataset.eventsBound) {
 
         function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            // 找出 headless 模板中真正负责滚动的容器
+            // 通常是 #content 或者 #page，我们可以检查哪个有滚动条
+            const contentScroller = document.getElementById('content');
+
+            // 检查 #content 元素是否存在，并且其内容高度是否真的超过了它自身的可视高度
+            // 如果是，说明它就是我们正在寻找的、带滚动条的内部容器
+            if (contentScroller && contentScroller.scrollHeight > contentScroller.clientHeight) {
+                // 命令这个内部容器滚动到顶部
+                contentScroller.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            } else {
+                // 否则，说明这是 base.html 这样的标准页面，直接滚动整个窗口
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
         }
 
         backToTopButton.addEventListener('click', scrollToTop);
