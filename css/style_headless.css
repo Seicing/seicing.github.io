@@ -547,8 +547,24 @@ div {
     width: 100%;
     max-width: 860px;
     box-sizing: border-box;
+}
+
+/* 规则一：当 .age0-4 内部有 .aoe4de-tech-group 时，gap 为 20px */
+.aoe4de-flex-container .age0:has(> .aoe4de-tech-group),
+.aoe4de-flex-container .age1:has(> .aoe4de-tech-group),
+.aoe4de-flex-container .age2:has(> .aoe4de-tech-group),
+.aoe4de-flex-container .age3:has(> .aoe4de-tech-group),
+.aoe4de-flex-container .age4:has(> .aoe4de-tech-group) {
     gap: 20px;
-    /* 组与组之间的间距 */
+}
+
+/* 规则二：当 .age0-4 内部有 .aoe4de-break-element 时，gap 为 10px */
+.aoe4de-flex-container .age0:has(> .aoe4de-break-element),
+.aoe4de-flex-container .age1:has(> .aoe4de-break-element),
+.aoe4de-flex-container .age2:has(> .aoe4de-break-element),
+.aoe4de-flex-container .age3:has(> .aoe4de-break-element),
+.aoe4de-flex-container .age4:has(> .aoe4de-break-element) {
+    gap: 10px;
 }
 
 /* 3. 科技/单位组 */
@@ -572,11 +588,6 @@ div {
 
     /* 核心(2): 自身高度为0，不产生任何可见空间 */
     height: 0;
-
-    /* 核心(3): 抵消掉由这个元素引入的额外 gap。
-       这里的 -20px 必须与父容器 .age1 的 gap 值完全匹配。
-       如果 gap 是 30px, 这里就用 -30px。*/
-    margin-bottom: -20px;
 }
 
 
