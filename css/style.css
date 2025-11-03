@@ -605,14 +605,14 @@ div {
     position: fixed;
     z-index: 1000;
     /* 比菜单按钮低一点，但仍然很高 */
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 50%;
     font-size: 20px;
-    line-height: 50px;
+    line-height: 40px;
     text-align: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -642,7 +642,7 @@ div {
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
     #back-to-top-button {
-        top: 80px;
+        top: 60px;
         right: 15px;
         bottom: auto;
     }
@@ -731,8 +731,8 @@ div {
         left: auto;
         right: 15px;
         z-index: 1001;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-color: #333;
         color: white;
         border: none;
@@ -1012,7 +1012,7 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #back-to-top-button {
-        top: 80px;
+        top: 60px;
         right: 15px;
         bottom: auto;
     }
