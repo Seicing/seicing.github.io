@@ -544,6 +544,10 @@ div {
     align-items: flex-start;
     /* 所有项目顶部对齐 */
     gap: 0px;
+    position: relative;
+    /* 关键：为伪元素的绝对定位提供参考 */
+    flex-grow: 1;
+    /* 让组可以伸展，这对于后续的换行很重要 */
 }
 
 /* 4. 单个科技/单位项 */
@@ -551,16 +555,34 @@ div {
     margin: 0;
 }
 
-/* 5. 强制换行符 */
-.aoe4de-line-break {
-    width: 100%;
+/* 5. 新的强制换行符实现 */
+.aoe4de-break-after {
+    /* 关键：让这个元素占据当前行的所有剩余空间，
+       从而强制它后面的兄弟元素换到新的一行。*/
     flex-basis: 100%;
-    height: 0;
-    align-self: center;
-    margin: -10px auto;
-    padding: 0;
-    max-width: 800px;
-    box-sizing: border-box;
+}
+
+.aoe4de-break-after::after {
+    content: '';
+    /* 伪元素必须有 content 属性 */
+    position: absolute;
+    /* 相对于 .aoe4de-tech-group 定位 */
+
+    /* 将线条定位到父元素下方20px的gap中间 */
+    bottom: -10px;
+
+    /* 水平居中 */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* 线条的样式 */
+    height: 1px;
+    width: 800px;
+    /* 您期望的固定宽度 */
+    max-width: 100%;
+    /* 防止在窄屏上溢出 */
+    background-color: #ccc;
+    /* 线条颜色，可自定义 */
 }
 
 /* ======================================================== */
