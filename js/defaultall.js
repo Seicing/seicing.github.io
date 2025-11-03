@@ -152,6 +152,32 @@ function bindBackToTopEventsOnce() {
     }
 }
 
+/**
+ * [升级版] 动态定位“回到顶部”按钮。
+ * 通过检测“☰”按钮是否可见，来智能判断当前是否为电脑模式，
+ * 从而兼容所有模板 (base, headless, baselarge)。
+ */
+function positionBackToTopButton() {
+    const backToTopButton = document.getElementById('back-to-top-button');
+    const wrapper = document.getElementById('wrapper');
+    const toggleButton = document.getElementById('sidebar-toggle-button');
+
+    if (!backToTopButton || !wrapper) return;
+
+    // 检查当前是否为移动端视图 (即“☰”按钮存在且可见)
+    const isMobileView = toggleButton && getComputedStyle(toggleButton).display !== 'none';
+
+    if (isMobileView) {
+        // 如果是移动端视图，就清除 JS 添加的内联样式，让 CSS 媒体查询去接管按钮位置
+        backToTopButton.style.left = '';
+    } else {
+        // 否则，我们判定为电脑端视图，执行精确定位
+        const wrapperRect = wrapper.getBoundingClientRect();
+        const buttonLeft = wrapperRect.right + 20; // 贴紧内容区右侧20px
+        backToTopButton.style.left = buttonLeft + 'px';
+    }
+}
+
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // === 模块2: 主执行逻辑 (全新重构) ===
@@ -194,8 +220,12 @@ document.addEventListener('DOMContentLoaded', function () {
     bindBackToTopEventsOnce();
     // 2. [执行一次] 首次加载时，立即进行一次条件化检查。
     conditionallyManageLayout();
+    positionBackToTopButton();
 });
 
 // --- 浏览器窗口大小改变时 ---
 // 仍然使用防抖模式，但现在调用的函数内部有了智能判断。
-window.addEventListener('resize', debounce(conditionallyManageLayout, 250));
+window.addEventListener('resize', debounce(function () {
+    conditionallyManageLayout();
+    positionBackToTopButton();
+}, 250));

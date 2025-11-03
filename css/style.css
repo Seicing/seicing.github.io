@@ -627,7 +627,6 @@ div {
 /* --- 2. 电脑模式 (>= 1280px) 的默认位置 --- */
 /* 将按钮放置在 1280px 主体内容的右侧空白区域 */
 #back-to-top-button {
-    right: 40px;
     bottom: auto;
     top: 20px;
     left: auto;
@@ -642,7 +641,7 @@ div {
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
     #back-to-top-button {
-        top: 80px;
+        top: 60px;
         right: 15px;
         bottom: auto;
     }
@@ -1012,7 +1011,7 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #back-to-top-button {
-        top: 80px;
+        top: 60px;
         right: 15px;
         bottom: auto;
     }

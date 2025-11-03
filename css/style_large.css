@@ -457,3 +457,90 @@ div {
 .div-height {
     height: 200px
 }
+
+.textce {
+    text-align: center;
+}
+
+.textle {
+    text-align: left;
+}
+
+.rightline {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+#celp250 {
+    border: 1px solid grey;
+    width: 250px;
+}
+
+#celp250 td {
+    padding: 5px;
+}
+
+#celp220 {
+    border: 1px solid grey;
+    width: 220px;
+}
+
+#celp220 td {
+    padding: 5px;
+}
+
+#celp200 {
+    border: 1px solid grey;
+    width: 200px;
+}
+
+#celp200 td {
+    padding: 5px;
+}
+
+.bcF5F8FA {
+    background-color: #F5F8FA;
+}
+
+.hrsty {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #555555;
+}
+
+
+
+/* --- 1. 基础样式 (所有分辨率通用) --- */
+#back-to-top-button {
+    display: block !important;
+    /* 确保按钮总是可见 */
+    position: fixed;
+    z-index: 1000;
+    /* 比菜单按钮低一点，但仍然很高 */
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    /* 为位置和样式的变化添加平滑过渡动画 */
+}
+
+#back-to-top-button:hover {
+    background-color: #555;
+}
+
+/* --- 2. 电脑模式 (>= 1280px) 的默认位置 --- */
+/* 将按钮放置在 1280px 主体内容的右侧空白区域 */
+#back-to-top-button {
+    bottom: auto;
+    top: 20px;
+    left: auto;
+}
