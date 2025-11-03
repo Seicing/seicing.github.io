@@ -1049,20 +1049,37 @@ function showPic(e, taitou) {
         y = e.clientY;
     }
 
-    // --- 防止 tooltip 超出屏幕 ---
+    // --- 防止 tooltip 超出屏幕 (新逻辑) ---
     const tooltipWidth = aasb.offsetWidth;
     const tooltipHeight = aasb.offsetHeight;
     const vw = window.innerWidth;
     const vh = window.innerHeight;
 
-    let left = x + 10;
-    let top = y + 10;
+    // 1. 垂直定位：优先放在指针上方，如果上方空间不够则放到下方
+    let top = y - tooltipHeight - 15; // 15px 偏移量
+    if (top < 10) { // 如果会超出屏幕顶部
+        top = y + 25; // 就移动到指针下方 (25px 偏移，避免手指遮挡)
+    }
 
-    if (left + tooltipWidth > vw) left = x - tooltipWidth - 10;
-    if (top + tooltipHeight > vh) top = y - tooltipHeight - 10;
+    // 2. 水平定位：优先让弹窗在指针下方水平居中
+    let left = x - tooltipWidth / 2;
 
-    aasb.style.left = left + "px";
+    // 3. 水平边界检查与修正（解决你问题的关键）
+    const margin = 10; // 设置一个屏幕边缘的安全间距
+
+    // 检查左边界：如果弹窗最左边超出了屏幕，就强制把它拉回来
+    if (left < margin) {
+        left = margin;
+    }
+
+    // 检查右边界：如果弹窗最右边超出了屏幕，也强制把它拉回来
+    if (left + tooltipWidth > vw - margin) {
+        left = vw - tooltipWidth - margin;
+    }
+
+
     aasb.style.top = top + "px";
+    aasb.style.left = left + "px";
 }
 
 function hiddenPic() {
