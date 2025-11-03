@@ -983,14 +983,12 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
 
-    html,
-    body,
-    #wrapper,
-    #page,
-    #content,
-    .post,
-    .entry {
+    #wrapper2 {
         background: #ffffff !important;
+    }
+
+    html {
+        background: #e2ddca !important;
     }
 
     /* --- 第一部分：平板布局调整 --- */
@@ -1002,6 +1000,11 @@ div {
 
     /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
     #wrapper {
+        width: 100% !important;
+    }
+
+    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
+    #page {
         width: 850px !important;
     }
 
