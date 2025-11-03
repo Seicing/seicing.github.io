@@ -474,6 +474,7 @@ div {
 
 #celp250 {
     border: 1px solid grey;
+    width: 250px;
 }
 
 #celp250 td {
@@ -482,6 +483,7 @@ div {
 
 #celp220 {
     border: 1px solid grey;
+    width: 220px;
 }
 
 #celp220 td {
@@ -490,6 +492,7 @@ div {
 
 #celp200 {
     border: 1px solid grey;
+    width: 200px;
 }
 
 #celp200 td {
@@ -551,13 +554,15 @@ div {
     margin: 0;
 }
 
-/* 5. 基于类的隐形换行符 (最终版) */
-.aoe4de-break-after::after {
-    content: '';
-    flex-basis: 100%;
-    height: 0;
-    margin-bottom: -20px;
-    /* 假设父容器的 gap 是 20px */
+/* 5. 最终的、基于类的换行实现 */
+.aoe4de-break-after {
+    /* 
+       核心：让这个 Flex 项目的增长系数设为1。
+       这会使它自动伸展，填满当前行所有剩余的可用空间。
+       由于空间被占满，它后面的兄弟元素将没有位置，只能根据
+       父容器的 flex-wrap: wrap 规则换到下一行。
+    */
+    flex-grow: 1;
 }
 
 
