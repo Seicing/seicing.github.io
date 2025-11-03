@@ -614,10 +614,8 @@ div {
 /* --- 1. 基础样式 (所有分辨率通用) --- */
 #back-to-top-button {
     display: block !important;
-    /* 确保按钮总是可见 */
     position: fixed;
     z-index: 1000;
-    /* 比菜单按钮低一点，但仍然很高 */
     width: 50px;
     height: 50px;
     background-color: #333;
@@ -630,7 +628,6 @@ div {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease-in-out;
-    /* 为位置和样式的变化添加平滑过渡动画 */
 }
 
 #back-to-top-button:hover {
@@ -640,19 +637,10 @@ div {
 /* --- 2. 电脑模式 (>= 1280px) 的默认位置 --- */
 /* 将按钮放置在 1280px 主体内容的右侧空白区域 */
 #back-to-top-button {
-    /* calc() 函数动态计算位置:
-       50%      -> 屏幕中心线
-       640px    -> #wrapper宽度(1280px)的一半
-       20px     -> 额外的右边距
-       这样可以确保它总是紧贴在主体内容的右侧 */
-    left: calc(50% + 640px + 20px);
-
-    bottom: 40px;
-    /* 定位在视窗的右下角区域 */
-
-    /* 确保移动端的位置属性在这里被重置 */
-    top: auto;
-    right: auto;
+    right: 40px;
+    bottom: auto;
+    top: 20px;
+    left: auto;
 }
 
 
@@ -666,20 +654,8 @@ div {
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
     #back-to-top-button {
-        /*
-         * 重新定位到屏幕右上角，☰ 按钮的下方
-         */
-
-        /* ☰ 按钮的 top 是 15px, height 是 50px.
-         * 15px (☰ top) + 50px (☰ height) + 15px (间距) = 80px
-         */
         top: 80px;
-
         right: 15px;
-        /* 与 ☰ 按钮右对齐 */
-
-        /* 重置电脑模式下的位置属性 */
-        left: auto;
         bottom: auto;
     }
 
@@ -1053,20 +1029,8 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #back-to-top-button {
-        /*
-         * 重新定位到屏幕右上角，☰ 按钮的下方
-         */
-
-        /* ☰ 按钮的 top 是 15px, height 是 50px.
-         * 15px (☰ top) + 50px (☰ height) + 15px (间距) = 80px
-         */
         top: 80px;
-
         right: 15px;
-        /* 与 ☰ 按钮右对齐 */
-
-        /* 重置电脑模式下的位置属性 */
-        left: auto;
         bottom: auto;
     }
 
