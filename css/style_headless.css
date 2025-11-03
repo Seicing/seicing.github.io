@@ -542,29 +542,42 @@ div {
 .aoe4de-flex-container .age0 {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     width: 100%;
     max-width: 860px;
     box-sizing: border-box;
+    column-gap: 20px;
+    /* 水平间距固定为 20px */
+    row-gap: 0;
+    /* 禁用默认的垂直间距，完全用 margin 控制 */
 }
 
-/* 规则一：当 .age0-4 内部有 .aoe4de-tech-group 时，gap 为 20px */
-.aoe4de-flex-container .age0:has(> .aoe4de-tech-group),
-.aoe4de-flex-container .age1:has(> .aoe4de-tech-group),
-.aoe4de-flex-container .age2:has(> .aoe4de-tech-group),
-.aoe4de-flex-container .age3:has(> .aoe4de-tech-group),
-.aoe4de-flex-container .age4:has(> .aoe4de-tech-group) {
-    gap: 20px;
+/* 2. 为主要的 tech-group 元素设置默认的下方间距 */
+/* 这就模拟了 row-gap: 20px 的效果 */
+.aoe4de-flex-container .age0 .aoe4de-tech-group,
+.aoe4de-flex-container .age1 .aoe4de-tech-group,
+.aoe4de-flex-container .age2 .aoe4de-tech-group,
+.aoe4de-flex-container .age3 .aoe4de-tech-group,
+.aoe4de-flex-container .age4 .aoe4de-tech-group {
+    margin-bottom: 20px;
 }
 
-/* 规则二：当 .age0-4 内部有 .aoe4de-break-element 时，gap 为 10px */
-.aoe4de-flex-container .age0:has(> .aoe4de-break-element),
-.aoe4de-flex-container .age1:has(> .aoe4de-break-element),
-.aoe4de-flex-container .age2:has(> .aoe4de-break-element),
-.aoe4de-flex-container .age3:has(> .aoe4de-break-element),
-.aoe4de-flex-container .age4:has(> .aoe4de-break-element) {
-    gap: 10px;
+/* 3. 为分隔符元素设置特殊的间距和布局 */
+/* 它会占据一整行，并拥有自定义的垂直间距 */
+.aoe4de-flex-container .age0 .aoe4de-break-element,
+.aoe4de-flex-container .age1 .aoe4de-break-element,
+.aoe4de-flex-container .age2 .aoe4de-break-element,
+.aoe4de-flex-container .age3 .aoe4de-break-element,
+.aoe4de-flex-container .age4 .aoe4de-break-element {
+    flex-basis: 100%;
+    /* 强制元素占据一整行宽度 */
+    height: 0;
+    /* 分隔符本身不需要高度 */
+    margin-top: 10px;
+    /* 自定义上边距 */
+    margin-bottom: 10px;
+    /* 自定义下边距，这会覆盖上面设置的 20px */
 }
 
 /* 3. 科技/单位组 */
