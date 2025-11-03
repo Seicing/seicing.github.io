@@ -117,6 +117,26 @@ function handleSpecialPageBackground() {
     }
 }
 
+/**
+ * 回到顶部按钮事件绑定器：只执行一次，为按钮绑定永久的点击事件。
+ */
+function bindBackToTopEventsOnce() {
+    const backToTopButton = document.getElementById('back-to-top-button');
+
+    if (backToTopButton && !backToTopButton.dataset.eventsBound) {
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        backToTopButton.addEventListener('click', scrollToTop);
+        backToTopButton.dataset.eventsBound = 'true'; // 标记为已绑定，避免重复
+    }
+}
+
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // === 模块2: 主执行逻辑 (全新重构) ===
@@ -155,6 +175,8 @@ function conditionallyManageLayout() {
 document.addEventListener('DOMContentLoaded', function () {
     // 1. [只执行一次] 绑定永久的、纯粹的点击事件。
     bindSidebarToggleEventsOnce();
+    // 2. [新增] [只执行一次] 绑定永久的回到顶部按钮点击事件。
+    bindBackToTopEventsOnce();
     // 2. [执行一次] 首次加载时，立即进行一次条件化检查。
     conditionallyManageLayout();
 });
