@@ -965,6 +965,16 @@ div {
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
 
+    html,
+    body,
+    #wrapper,
+    #page,
+    #content,
+    .post,
+    .entry {
+        background: #ffffff !important;
+    }
+
     /* --- 第一部分：平板布局调整 --- */
 
     /* 1. 隐藏固定的桌面侧边栏 */
@@ -974,7 +984,7 @@ div {
 
     /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
     #wrapper {
-        width: 100% !important;
+        width: 850px !important;
     }
 
     /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
