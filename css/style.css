@@ -599,7 +599,7 @@ div {
 }
 
 /* --- 规则 B：手机 --- 767px */
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 767px) {
 
     /* --- 第一部分：基础重置和通用布局 --- */
     /* ... (这部分和您当前的代码完全一样，保持不变) ... */
@@ -954,4 +954,102 @@ div {
         margin: 0 auto !important;
     }
 
+}
+
+
+
+/* ===================================================================== */
+/* === 新增：2. 平板/小尺寸桌面专属样式 (768px - 1279px) === */
+/* === (这是一个包含所有必要样式的独立模块) === */
+/* ===================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /* --- 第一部分：平板布局调整 --- */
+
+    /* 1. 隐藏固定的桌面侧边栏 */
+    #sidebar {
+        display: none !important;
+    }
+
+    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
+    #wrapper {
+        width: 100% !important;
+    }
+
+    /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
+    #content {
+        width: 850px !important;
+        float: none !important;
+        /* 清除浮动，防止布局错乱 */
+        margin: 0 auto !important;
+        /* 实现水平居中 */
+    }
+
+
+    /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
+    /* 因为这个区间也要使用抽屉，所以必须包含完整的抽屉样式 */
+
+    #sidebar-toggle-button {
+        display: block !important;
+        position: fixed;
+        top: 15px;
+        left: auto;
+        right: 15px;
+        z-index: 1001;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #sidebar-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #mobile-drawer-container {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        max-width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.85) !important;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    body.sidebar-open #mobile-drawer-container {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open #sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.sidebar-open {
+        overflow: hidden !important;
+    }
 }
