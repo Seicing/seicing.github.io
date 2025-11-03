@@ -120,26 +120,28 @@ function handleSpecialPageBackground() {
 /**
  * 回到顶部按钮事件绑定器：只执行一次，为按钮绑定永久的点击事件。
  */
+/**
+ * 回到顶部按钮事件绑定器：v3.0 (最终兼容版)
+ * - 自动检测滚动容器，兼容所有模板。
+ * - 同时监听 'click' 和 'touchstart'，解决移动端触摸失效问题。
+ */
 function bindBackToTopEventsOnce() {
     const backToTopButton = document.getElementById('back-to-top-button');
 
     if (backToTopButton && !backToTopButton.dataset.eventsBound) {
 
-        function scrollToTop() {
-            // 找出 headless 模板中真正负责滚动的容器
-            // 通常是 #content 或者 #page，我们可以检查哪个有滚动条
-            const contentScroller = document.getElementById('content');
+        function scrollToTop(event) {
+            // 阻止事件的默认行为。对于 touchstart，这可以防止后续的“幽灵点击”或页面滚动。
+            event.preventDefault();
 
-            // 检查 #content 元素是否存在，并且其内容高度是否真的超过了它自身的可视高度
-            // 如果是，说明它就是我们正在寻找的、带滚动条的内部容器
+            // 滚动逻辑 (保持不变)
+            const contentScroller = document.getElementById('content');
             if (contentScroller && contentScroller.scrollHeight > contentScroller.clientHeight) {
-                // 命令这个内部容器滚动到顶部
                 contentScroller.scrollTo({
                     top: 0,
                     behavior: "smooth"
                 });
             } else {
-                // 否则，说明这是 base.html 这样的标准页面，直接滚动整个窗口
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
@@ -147,15 +149,20 @@ function bindBackToTopEventsOnce() {
             }
         }
 
+        // 为桌面端和非触摸设备绑定 click 事件
         backToTopButton.addEventListener('click', scrollToTop);
-        backToTopButton.dataset.eventsBound = 'true'; // 标记为已绑定，避免重复
+
+        // [核心修改] 为手机、平板等触摸设备绑定 touchstart 事件
+        backToTopButton.addEventListener('touchstart', scrollToTop);
+
+        backToTopButton.dataset.eventsBound = 'true';
     }
 }
 
 /**
- * [升级版] 动态定位“回到顶部”按钮。
- * 通过检测“☰”按钮是否可见，来智能判断当前是否为电脑模式，
- * 从而兼容所有模板 (base, headless, baselarge)。
+ * [V3 - 带模板偏移修正] 动态定位“回到顶部”按钮。
+ * - 通过检测“☰”按钮智能判断电脑/移动模式。
+ * - 通过检测 #wrapper 宽度，为 large 模板应用特殊偏移。
  */
 function positionBackToTopButton() {
     const backToTopButton = document.getElementById('back-to-top-button');
@@ -164,20 +171,29 @@ function positionBackToTopButton() {
 
     if (!backToTopButton || !wrapper) return;
 
-    // 检查当前是否为移动端视图 (即“☰”按钮存在且可见)
+    // 检查当前是否为移动端视图
     const isMobileView = toggleButton && getComputedStyle(toggleButton).display !== 'none';
 
     if (isMobileView) {
-        // 如果是移动端视图，就清除 JS 添加的内联样式，让 CSS 媒体查询去接管按钮位置
+        // 移动端视图：清除 JS 样式，交还给 CSS 控制
         backToTopButton.style.left = '';
     } else {
-        // 否则，我们判定为电脑端视图，执行精确定位
+        // 电脑端视图：执行精确定位
         const wrapperRect = wrapper.getBoundingClientRect();
-        const buttonLeft = wrapperRect.right + 20; // 贴紧内容区右侧20px
+
+        // 1. 先计算出基础的贴边位置
+        let buttonLeft = wrapperRect.right + 20;
+
+        // 2. [核心修改] 检查是否为 large 模板 (通过其唯一的 1850px 宽度)
+        if (wrapper.offsetWidth === 1850) {
+            // 如果是，就在基础位置上向左移动 25px
+            buttonLeft -= 25;
+        }
+
+        // 3. 应用最终计算好的样式
         backToTopButton.style.left = buttonLeft + 'px';
     }
 }
-
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // === 模块2: 主执行逻辑 (全新重构) ===
