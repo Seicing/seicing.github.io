@@ -25,41 +25,6 @@
         line-height: 20px
     }
 </style>
-<style>
-    .content-div {
-        display: none;
-    }
-
-    .content-div.is-visible {
-        display: block;
-    }
-
-    tr.emptytd:has(.content-div.is-visible:empty) {
-        display: none;
-    }
-</style>
-<script>
-    // 这个函数的功能是：在所有 content-div 中，只给指定 id 的那个添加 is-visible 类
-    function showDivWithClass(divIdToShow) {
-        // 找到同一个 td 里的所有 content-div
-        const container = document.getElementById(divIdToShow).parentNode;
-        container.querySelectorAll('.content-div').forEach(div => {
-            div.classList.remove('is-visible');
-        });
-
-        // 只给目标 div 添加 is-visible
-        document.getElementById(divIdToShow).classList.add('is-visible');
-    }
-
-    // (可选) 如果不想在 HTML 中设置默认的 is-visible 类，
-    // 可以在页面加载后用 JS 来设置初始状态
-    document.addEventListener('DOMContentLoaded', () => {
-        // 默认显示空内容，这将导致 tr 立即被隐藏
-        showDivWithClass('senText2');
-    });
-</script>
-
-
 </head>
 
 <body style="height:100%;" id='scroll-2'>
@@ -221,20 +186,14 @@
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png" width="16px">60
             </td>
         </tr>
-        <tr class="bcF5F8FA textce emptytd" id="row-1">
+        <tr class="bcF5F8FA textce" id="jpnText3">
             <td colspan="5">
-                <div id="jpnText3" style="text-align:center" class="content-div">
-                    <span style="color:#6e6e85">特殊能力</span>
-                </div>
-                <div id="senText3" style="text-align:left" class="content-div is-visible"></div>
+                <span style="color:#6e6e85">特殊能力</span>
             </td>
         </tr>
-        <tr style="text-align:left" class="emptytd" id="row-2">
+        <tr id="jpnText2" style="text-align:left">
             <td colspan="5">
-                <div id="jpnText2" style="text-align:left" class="content-div">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png" width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力
-                </div>
-                <div id="senText2" style="text-align:left" class="content-div is-visible"></div>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png" width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力
             </td>
         </tr>
     </table>
@@ -256,6 +215,8 @@
     战国大名的骑马武士没有偏转护甲，但是造价便宜10黄金
     <br><br>
     骑马武士是城堡时代(Ⅲ)生产的部队 <br>
+    <div id="senText2"></div>
+    <div id="senText3"></div>
 </div>
 <br><br><br>
 <div style="text-align:left;">
