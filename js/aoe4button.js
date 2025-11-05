@@ -73,8 +73,7 @@ function showCiv(prefix) {
     } else {
         console.warn("警告：函数 triggerFilterFromURL() 未定义，模拟加成部分可能不会更新。");
     }
-
-    syncDisplayState();
+    syncInverseDisplayState();
 }
 
 
@@ -101,34 +100,51 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function syncDisplayState() {
-    // 定义主元素和从属元素的对应关系
-    const elementPairs = {
-        'jpnText3': 'senText3-1',
-        'jpnText2': 'senText2-1',
-        'macText1': 'byzText1-1'
+
+/**
+ * 根据一组源元素的显示状态，反向控制一个目标元素的显示。
+ * 只有当所有源元素都为 display: 'none' 时，目标元素才会被显示。
+ * 只要有一个源元素是可见的，目标元素就会被隐藏。
+ */
+function syncInverseDisplayState() {
+    // 定义反向控制的规则
+    // 格式：'目标元素ID': ['源元素ID_1', '源元素ID_2', ...]
+    const inverseControlMap = {
+        'senText3': 'senText3-1',
+        'senText2': 'senText2-1',
+        'macText1': 'byzText1-1',
+        'engText2': 'engText2-1',
     };
 
-    // 遍历每一对元素
-    for (const sourceId in elementPairs) {
-        const targetId = elementPairs[sourceId];
-
-        const sourceEl = document.getElementById(sourceId);
+    // 遍历你定义的每一条规则
+    for (const targetId in inverseControlMap) {
+        const sourceIds = inverseControlMap[targetId]; // 获取影响目标的所有源元素ID数组
         const targetEl = document.getElementById(targetId);
 
-        // 确保两个元素都存在，避免出错
-        if (sourceEl && targetEl) {
-            // 使用 window.getComputedStyle 来获取元素最终的 display 状态
-            // 这比 el.style.display 更可靠，因为它能读取到 CSS 类应用的样式
-            const sourceDisplay = window.getComputedStyle(sourceEl).display;
+        // 如果目标元素不存在，就跳过这条规则
+        if (!targetEl) {
+            continue;
+        }
 
-            if (sourceDisplay === 'none') {
-                // 如果主元素是隐藏的，也隐藏从属元素
-                targetEl.style.display = 'none';
-            } else {
-                // 否则 (例如 'block'), 将从属元素设为 'table-cell'
-                targetEl.style.display = 'table-row';
+        // 核心逻辑：检查是否【有任何一个】源元素是可见的
+        let isAnySourceVisible = false;
+        for (const sourceId of sourceIds) {
+            const sourceEl = document.getElementById(sourceId);
+
+            // 如果源元素存在，并且其计算样式不是 'none'
+            if (sourceEl && window.getComputedStyle(sourceEl).display !== 'none') {
+                isAnySourceVisible = true; // 找到了一个可见的源元素
+                break; // 立即停止检查，因为结果已经确定
             }
+        }
+
+        // 根据检查结果，设置目标元素的显示状态
+        if (isAnySourceVisible) {
+            // 如果有任何一个源元素是可见的，就【隐藏】目标元素
+            targetEl.style.display = 'none';
+        } else {
+            // 如果【所有】源元素都是隐藏的，就【显示】目标元素
+            targetEl.style.display = 'table-row'; // 或者 'block', 'table-cell' 等你需要的样式
         }
     }
 }
