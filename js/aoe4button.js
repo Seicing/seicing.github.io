@@ -73,6 +73,8 @@ function showCiv(prefix) {
     } else {
         console.warn("警告：函数 triggerFilterFromURL() 未定义，模拟加成部分可能不会更新。");
     }
+
+    syncDisplayState();
 }
 
 
@@ -98,3 +100,35 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+function syncDisplayState() {
+    // 定义主元素和从属元素的对应关系
+    const elementPairs = {
+        'senText3': 'senText3-1',
+        'senText2': 'senText2-1',
+        'byzText1': 'byzText1-1'
+    };
+
+    // 遍历每一对元素
+    for (const sourceId in elementPairs) {
+        const targetId = elementPairs[sourceId];
+
+        const sourceEl = document.getElementById(sourceId);
+        const targetEl = document.getElementById(targetId);
+
+        // 确保两个元素都存在，避免出错
+        if (sourceEl && targetEl) {
+            // 使用 window.getComputedStyle 来获取元素最终的 display 状态
+            // 这比 el.style.display 更可靠，因为它能读取到 CSS 类应用的样式
+            const sourceDisplay = window.getComputedStyle(sourceEl).display;
+
+            if (sourceDisplay === 'none') {
+                // 如果主元素是隐藏的，也隐藏从属元素
+                targetEl.style.display = 'none';
+            } else {
+                // 否则 (例如 'block'), 将从属元素设为 'table-cell'
+                targetEl.style.display = 'table-cell';
+            }
+        }
+    }
+}
