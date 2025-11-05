@@ -47,6 +47,7 @@ html {}
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -56,6 +57,7 @@ html {}
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -65,6 +67,7 @@ html {}
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -74,6 +77,7 @@ html {}
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -371,6 +375,7 @@ html {}
 }
 
 @media (min-width: 1200px) {
+
     .ma5-control .ma5-lightbox.ma5-active,
     .ma5-control .ma5-lightbox:hover {
         border: 0.4rem solid #ffa200;
@@ -506,6 +511,7 @@ html {}
 }
 
 @media (min-width: 1200px) {
+
     .ma5-prev,
     .ma5-next {}
 }
@@ -565,6 +571,7 @@ html {}
     .ma5-prev {
         left: 0;
     }
+
     .ma5-prev .ma5-gallery-icon-left {
         margin-left: 3rem;
     }
@@ -585,6 +592,7 @@ html {}
     .ma5-next {
         right: 0;
     }
+
     .ma5-next .ma5-gallery-icon-right {
         margin-right: 3rem;
     }
@@ -672,6 +680,7 @@ html {}
 }
 
 @media (max-width: 1199px) {
+
     .ma5-figcaption .ma5-centerbox .ma5-gallery-icon-info,
     .ma5-figcaption-old .ma5-centerbox .ma5-gallery-icon-info {
         display: none;
@@ -679,6 +688,7 @@ html {}
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+
     .ma5-figcaption .ma5-centerbox,
     .ma5-figcaption-old .ma5-centerbox {
         line-height: 1.4;
@@ -806,6 +816,7 @@ html {}
 }
 
 @media (max-width: 1199px) {
+
     .ma5-imgbox,
     .ma5-imgbox.ma5-out,
     .ma5-imgbox.ma5-previous {
@@ -816,13 +827,16 @@ html {}
         -webkit-animation-name: blank;
         animation-name: blank;
     }
+
     .ma5-imgbox.ma5-previous {
         display: none;
     }
+
     .ma5-backdrop {
         -webkit-transition: none !important;
         transition: none !important;
     }
+
     .ma5-loaded .ma5-backdrop {
         -webkit-transition: none !important;
         transition: none !important;
@@ -880,6 +894,7 @@ html {}
 }
 
 @media (max-width: 1199px) {
+
     .ma5-gallery-active .ma5-figcaption,
     .ma5-gallery-active .ma5-figcaption-old,
     .ma5-lightbox-active .ma5-figcaption,
@@ -895,6 +910,7 @@ html {}
         z-index: 3935;
         padding: 13px 50px;
     }
+
     .ma5-gallery-active .ma5-figcaption .ma5-centerbox,
     .ma5-gallery-active .ma5-figcaption-old .ma5-centerbox,
     .ma5-lightbox-active .ma5-figcaption .ma5-centerbox,
@@ -906,12 +922,14 @@ html {}
         padding-bottom: 20px;
         color: white;
     }
+
     .ma5-gallery-active .ma5-figcaption .ma5-centerbox a,
     .ma5-gallery-active .ma5-figcaption-old .ma5-centerbox a,
     .ma5-lightbox-active .ma5-figcaption .ma5-centerbox a,
     .ma5-lightbox-active .ma5-figcaption-old .ma5-centerbox a {
         color: #ffdfa8;
     }
+
     .ma5-gallery-active .ma5-figcaption.ma5-figcaption-visible,
     .ma5-gallery-active .ma5-figcaption-old.ma5-figcaption-visible,
     .ma5-lightbox-active .ma5-figcaption.ma5-figcaption-visible,
@@ -932,6 +950,7 @@ html {}
 }
 
 @media (max-width: 1199px) {
+
     .ma5-prev,
     .ma5-next {
         height: 32px;
@@ -939,6 +958,7 @@ html {}
         top: auto;
         bottom: 4px;
     }
+
     .ma5-prev .ma5-gallery-icon,
     .ma5-next .ma5-gallery-icon {
         margin-bottom: 0;
@@ -948,6 +968,7 @@ html {}
         vertical-align: bottom;
         margin-bottom: 0;
     }
+
     .ma5-prev .ma5-gallery-icon:before,
     .ma5-prev .ma5-gallery-icon:after,
     .ma5-next .ma5-gallery-icon:before,
@@ -1025,6 +1046,7 @@ html {}
         transition: none;
         overflow: hidden;
     }
+
     .ma5-toggle-figcaption .ma5-gallery-icon {
         position: relative;
         cursor: pointer;
@@ -1036,6 +1058,7 @@ html {}
         margin: 0 auto;
         text-align: center;
     }
+
     .ma5-toggle-figcaption .ma5-gallery-icon:before {
         position: absolute;
         display: block;
@@ -1044,6 +1067,7 @@ html {}
         top: 0;
         left: 0;
     }
+
     .ma5-toggle-figcaption .ma5-gallery-icon:after {
         content: "";
         display: block;
