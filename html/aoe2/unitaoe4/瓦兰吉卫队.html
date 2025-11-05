@@ -199,10 +199,8 @@
         </tr>
         <tr style="text-align:left" class="emptytd">
             <td colspan="5">
-                <div id="byzText1" style="text-align:left;display:none">
-
-                </div>
-                <div id="macText1" style="text-align:left;display:none">
+                <div id="byzText1" style="text-align:left;display:none" class="content-div"></div>
+                <div id="macText1" style="text-align:left;display:none" class="content-div">
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/符文石.png" width="20px">符文石：在击杀5个敌人后，可以设置符文石，瓦兰吉系列部队攻击范围
                     +1 格，伤害 +1，移动速度 +15%，持续150秒
                 </div>
@@ -696,6 +694,28 @@
 <script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
 <script>
     window.onload = aoetechPoeRush()
+</script>
+
+<style>
+    .content-div {
+        display: none;
+    }
+
+    .content-div.is-visible {
+        display: block;
+    }
+
+    tr.emptytd:has(.content-div.is-visible:empty) {
+        display: none;
+    }
+</style>
+<script>
+    function showDivWithClass(divIdToShow) {
+        document.querySelectorAll('.content-div').forEach(div => {
+            div.classList.remove('is-visible');
+        });
+        document.getElementById(divIdToShow).classList.add('is-visible');
+    }
 </script>
 
 </html>
