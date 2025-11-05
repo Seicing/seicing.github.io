@@ -8,7 +8,7 @@ let ayanami = {
     "砖瓦窑": /*html*/`砖瓦窑<br>Brickyard<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>55<br>基础产量：+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>粘土场、矿山、采石场+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>仓库建筑<br>无时代限制，城镇可购买`,
 
 
-    "港湾": /*html*/`港湾<br>Harbor<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>55<br>基础产量：+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>渔船+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>生产力[icon:YIELD_WAREHOUSE]仓库建筑<br>无时代限制<br>可在所有时代中建造<br>必须放置在海岸、湖泊地块或可航行河流上<br>可以在[icon:YIELD_TOWNS]城镇中购买`,
+    "港湾": /*html*/`港湾<br>Harbor<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>55<br>基础产量：+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>渔船+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>仓库建筑<br>无时代限制<br>可在所有时代中建造<br>必须放置在海岸、湖泊地块或可航行河流上<br>可以在城镇中购买`,
 
     "石工坊": /*html*/`石工坊<br>Stonecutter<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>175<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>矿山、采石场+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>仓库建筑<br>无时代限制，城镇可购买`,
 
