@@ -127,7 +127,7 @@ function syncDisplayState() {
                 targetEl.style.display = 'none';
             } else {
                 // 否则 (例如 'block'), 将从属元素设为 'table-cell'
-                targetEl.style.display = 'table-cell';
+                targetEl.style.display = 'table-row';
             }
         }
     }
