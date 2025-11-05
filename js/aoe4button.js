@@ -104,9 +104,9 @@ document.addEventListener('DOMContentLoaded', function () {
 function syncDisplayState() {
     // 定义主元素和从属元素的对应关系
     const elementPairs = {
-        'senText3': 'senText3-1',
-        'senText2': 'senText2-1',
-        'byzText1': 'byzText1-1'
+        'jpnText3': 'senText3-1',
+        'jpnText2': 'senText2-1',
+        'macText1': 'byzText1-1'
     };
 
     // 遍历每一对元素
