@@ -25,6 +25,40 @@
         line-height: 20px
     }
 </style>
+<style>
+    .content-div {
+        display: none;
+    }
+
+    .content-div.is-visible {
+        display: block;
+    }
+
+    tr.emptytd:has(.content-div.is-visible:empty) {
+        display: none;
+    }
+</style>
+<script>
+    // 这个函数的功能是：在所有 content-div 中，只给指定 id 的那个添加 is-visible 类
+    function showDivWithClass(divIdToShow) {
+        // 找到同一个 td 里的所有 content-div
+        const container = document.getElementById(divIdToShow).parentNode;
+        container.querySelectorAll('.content-div').forEach(div => {
+            div.classList.remove('is-visible');
+        });
+
+        // 只给目标 div 添加 is-visible
+        document.getElementById(divIdToShow).classList.add('is-visible');
+    }
+
+    // (可选) 如果不想在 HTML 中设置默认的 is-visible 类，
+    // 可以在页面加载后用 JS 来设置初始状态
+    document.addEventListener('DOMContentLoaded', () => {
+        // 默认显示空内容，这将导致 tr 立即被隐藏
+        showDivWithClass('senText2');
+    });
+</script>
+
 
 </head>
 
@@ -187,20 +221,20 @@
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png" width="16px">60
             </td>
         </tr>
-        <tr class="bcF5F8FA textce emptytd">
+        <tr class="bcF5F8FA textce emptytd" id="row-1">
             <td colspan="5">
-                <div id="jpnText3" style="text-align:center;display:none" class="content-div">
+                <div id="jpnText3" style="text-align:center" class="content-div">
                     <span style="color:#6e6e85">特殊能力</span>
                 </div>
-                <div id="senText3" style="text-align:left;display:none" class="content-div"></div>
+                <div id="senText3" style="text-align:left" class="content-div is-visible"></div>
             </td>
         </tr>
-        <tr style="text-align:left" class="emptytd">
+        <tr style="text-align:left" class="emptytd" id="row-2">
             <td colspan="5">
-                <div id="jpnText2" style="text-align:left;display:none" class="content-div">
+                <div id="jpnText2" style="text-align:left" class="content-div">
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/偏转护甲.png" width="20px">偏转护甲：回避1次攻击，脱离战斗8秒后可以刷新能力
                 </div>
-                <div id="senText2" style="text-align:left;display:none" class="content-div"></div>
+                <div id="senText2" style="text-align:left" class="content-div is-visible"></div>
             </td>
         </tr>
     </table>
@@ -730,28 +764,6 @@
 <script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
 <script>
     window.onload = aoetechPoeRush()
-</script>
-
-<style>
-    .content-div {
-        display: none;
-    }
-
-    .content-div.is-visible {
-        display: block;
-    }
-
-    tr.emptytd:has(.content-div.is-visible:empty) {
-        display: none;
-    }
-</style>
-<script>
-    function showDivWithClass(divIdToShow) {
-        document.querySelectorAll('.content-div').forEach(div => {
-            div.classList.remove('is-visible');
-        });
-        document.getElementById(divIdToShow).classList.add('is-visible');
-    }
 </script>
 
 </html>
