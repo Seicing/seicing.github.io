@@ -802,7 +802,6 @@ let ayanami = {
     "石料军队怯薛": /*html*/`石料军队怯薛<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费220石进行招募2个`,
     "石料军队巨投": /*html*/`石料军队巨投<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费250石进行招募2个`,
     "石料军队骑射": /*html*/`石料军队骑射<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费100石进行招募2个`,
-    "战国大名骑马武士": /*html*/`文明固有限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战国大名.png' width='20px'>文明固有限制：默认没有偏转护甲，但造价-10黄金`,
     "驿站网络贸易效果": /*html*/`驿站网络贸易<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驿站网络贸易.png' width='20px'>驿站网络贸易：黄金帐篷每10秒为每个设防哨站产生10黄金，最多可让6个设防哨站生效`,
 
     "织田加成1": /*html*/`织田氏支持1级<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/织田.png' width='20px'>织田氏支持1级：远程步兵额外获得5%生命值`,
@@ -855,7 +854,7 @@ let ayanami = {
     "汉方医学": /*html*/`汉方医学<br>Kampo Medicine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣攻击光环治疗效果+1`,
     "山顶训练": /*html*/`山顶训练<br>Mountain Top Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣移动速度+33%`,
 
-    "轻质利刃": /*html*/`轻质利刃<br>Yari Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家1级独特科技，长矛兵获得 +1 额外攻击范围`,
+    "轻质利刃": /*html*/`轻质利刃<br>Yari Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家1级独特科技，长矛兵移动速度 +10%，对工人造成伤害 +5`,
     "日本武士弓": /*html*/`日本武士弓<br>Samurai Bow<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家2级独特科技，为日本武士装备日本武士弓，使得他们每15秒可以进行一次远距离射击`,
     "十字叠层护甲": /*html*/`十字叠层护甲<br>Ranged Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>北条家3级独特科技，近战步兵 +2 远程防御力`,
     "肥后弓": /*html*/`肥后弓<br>Higoyumi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>织田家1级独特科技，弓足轻 +1 伤害`,
@@ -1349,8 +1348,8 @@ function setDefaultVisibleSpansForCiv(civ) {
         mal: ["Extra201", "Extra204", "Extra205", "Extra39",],
         byz: ["Extra201", "Extra206", "Extra204", "Extra68", "Extra10",],
         mac: ["Extra201", "Extra206", "Extra204", "Extra63", "Extra125",],
-        jpn: ["Extra201", "Extra206", "Extra204", "Extra61", "Extra127",],
-        sen: ["Extra201", "Extra206", "Extra204", "Extra203", "Extra62",],
+        jpn: ["Extra201", "Extra206", "Extra204", "Extra61", "Extra127", "Extra131", "Extra132",],
+        sen: ["Extra201", "Extra206", "Extra204", "Extra203", "Extra62", "Extra133", "Extra134",],
         chi: ["Extra201", "Extra206", "Extra204",],
         zxl: ["Extra201", "Extra206", "Extra204",],
         hre: ["Extra201", "Extra206", "Extra204",],

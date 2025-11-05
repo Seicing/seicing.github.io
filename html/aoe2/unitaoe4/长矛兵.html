@@ -1190,13 +1190,8 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火造.png" width="20px">火造(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/甲伏锻.png" width="20px">甲伏锻(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/淬火.png" width="20px">淬火(+1) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质利刃.png" width="20px">轻质利刃(+5对工人) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/织田战术.png" width="20px">织田战术(+15%混战、火炬、额外) <br>
-                </td>
-            </tr>
-            <tr style="text-align:left">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击范围</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质利刃.png" width="20px">轻质利刃(+1) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -1214,6 +1209,12 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/十字叠层护甲.png" width="20px">十字叠层护甲(+2) <br>
+                </td>
+            </tr>
+            <tr style="text-align:left">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质利刃.png" width="20px">轻质利刃(+10%) <br>
                 </td>
             </tr>
             <tr style="text-align:left">
@@ -2155,7 +2156,8 @@
             <td data-base="17" id="bonusdamage1"> </td>
             <td>对[大象]加成</td>
             <td data-base="3" id="bonusdamage2"> </td>
-            <td colspan="2"></td>
+            <td>对[工人]加成</td>
+            <td data-base="0" id="bonusdamage3"> </td>
         </tr>
         <tr>
             <td>其他加成</td>
@@ -2538,7 +2540,7 @@
         </div>
 
 
-        <div class="icon" data-game="sen" data-mode="add" data-type="range" data-value="1"><a
+        <div class="icon" data-game="sen" data-mode="diffMul add" data-type="speed bonusdamage3" data-value="1.1 5"><a
                 onmousemove="showPic(event,'轻质利刃');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质利刃.png" width="30px"></a>
         </div>
