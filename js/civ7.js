@@ -623,6 +623,40 @@ let ayanami = {
 
 
 
+    "单桅帆船": /*html*/`单桅帆船<br>Sloop <br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>海盗共和国特色轻型海上单位<br>可跨越其他文明的边界，可掠夺非结盟文明之间的贸易路线，并可攻击非结盟文明的单位而不进入交战状态<br>用单桅帆船击杀单位将获得等同于此单位战斗力100%的[icon:YIELD_GOLD]金币<br>攻击后可以移动，拥有5移动力<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "大海贼": /*html*/`大海贼<br>Buccaneer<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>海盗共和国特色海军指挥官<br>其每拥有2个等级，便获得1使用次数，用于“劫掠小队”行动<br>劫掠小队：以其他文明在遥远土地中拥有的一处相邻宝藏资源为目标<br>此定居点立即生成一支由你掌控的宝藏护送队<br>在另一支宝藏护送队生成之前，不会重置回合数<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "海上军械库": /*html*/`海上军械库<br>Naval Arsenal<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量： +4[icon:YIELD_GOLD]金币<br>从资源和奇观获得+1[icon:YIELD_GOLD]金币相邻加成<br>海盗共和国特色金币建筑<br>无时代限制<br>必须放置在海岸上<br>维护费 : <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
+    "海上驻地": /*html*/`海上驻地<br>Naval Station<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量： +5[icon:YIELD_PRODUCTION]生产力<br>从军事建筑、金币建筑和奇观获得+1[icon:YIELD_PRODUCTION]生产力相邻加成<br>海盗共和国特色生产力建筑<br>无时代限制<br>必须放置在海岸上<br>无需[icon:YIELD_GOLD]金币进行维护<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
+    "避风港": /*html*/`避风港<br>Haven<br>海盗共和国特色城区<br>建造方法是将海上驻地和海上军械库放置在同一个区块中<br>你的池中每有1宝藏资源，便+1[icon:YIELD_GOLD]金币<br>友方海上单位在此地块中+50治疗`,
+
+    "强征入伙": /*html*/`强征入伙<br>Press Gangs<br>每拥有一名舰队指挥官，生产海上单位时便+50%[icon:YIELD_PRODUCTION]生产力效用`,
+    "及时行乐": /*html*/`及时行乐<br>Merry Life and a Short One<br>击杀一个支援单位时，获得等同于此单位[icon:YIELD_PRODUCTION]生产力花费数额的[icon:YIELD_GOLD]金币，击杀一个海上单位时，获得等同于此单位[icon:YIELD_PRODUCTION]生产力花费数额25%的[icon:YIELD_GOLD]金币`,
+    "黑旗": /*html*/`黑旗<br>Black Flag<br>掠夺贸易路线所获得的[icon:YIELD_GOLD]金币+100%`,
+
+    "哈瓦那港": /*html*/`哈瓦那港<br>Havana Harbor<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：+3[icon:YIELD_GOLD]金币<br>此定居点在探索时代中生成宝藏护送队，计3宝藏舰队点<br>+1经济属性点<br>无时代限制<br>必须建造在与非湖泊陆地相邻的遥远土地海岸上`,
+
+
+
+    "卡利亚": /*html*/`卡利亚<br>Kalia<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br> 汤加特色海上单位<br>对抗驻防区块时+5战斗力<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "汤加贵胄": /*html*/`汤加贵胄<br>Tehina<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>汤加特色探路者<br>可进入海洋而不会受到伤害<br>无法在遥远土地下船<br>可在相邻的发现上使用海岸扫荡，在时代开始时可上船<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "王室石墓": /*html*/`王室石墓<br>Langi<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : +3[icon:YIELD_CULTURE]文化值<br>汤加特色文化值和食物建筑<br>从资源和奇观获得+1[icon:YIELD_FOOD]食物相邻加成<br>无时代限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
+    "沐浴处": /*html*/`沐浴处<br>Vaikaukau<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : +3[icon:YIELD_HAPPINESS]幸福值<br>汤加特色文化值和幸福值建筑<br>从海岸和奇观获得+1[icon:YIELD_CULTURE]文化值相邻加成<br>无时代限制<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
+    "托菲阿封地": /*html*/`托菲阿封地<br>Tofi'a<br>汤加特色城区<br>建造方法是将王室石墓和沐浴处放置在同一个区块中<br>你与城邦之间每有一条贸易路线，便+2[icon:YIELD_CULTURE]文化值<br>帝国拥有托菲阿封地时，其探路者在任何时代都能进入海洋，而不受伤害（但古典时代中无法在遥远土地下船）`,
+    "树皮布": /*html*/`树皮布<br>Ngatu<br>仓库建筑+1[icon:YIELD_CULTURE]文化值`,
+    "双体远航舟": /*html*/`双体远航舟<br>Tongiaki<br>+10海上贸易路线范围`,
+    "鲨鱼神祇": /*html*/`鲨鱼神祇<br>Takuaka<br>城市中的渔船+1[icon:YIELD_PRODUCTION]生产力，所有定居点中礁石上的渔船+2[icon:YIELD_SCIENCE]科技值`,
+
+
+
+
 
 
 
