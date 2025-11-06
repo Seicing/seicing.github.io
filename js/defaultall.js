@@ -206,8 +206,8 @@ function positionBackToTopButton() {
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 /**
- * [核心逻辑] 条件化布局管理器
- * 这个函数会在需要时被调用，但内部有判断，确保内容只被加载一次。
+ * [核心逻辑 V2] 条件化布局管理器 (带MutationObserver)
+ * 这个函数会在需要时被调用，但内部有智能监控，确保内容加载后再执行克隆。
  */
 function conditionallyManageLayout() {
     // 步骤1：检查是否处于需要抽屉的视图（手机或平板）
@@ -219,19 +219,53 @@ function conditionallyManageLayout() {
     // 步骤2：检查抽屉是否已经被填充过内容
     const mobileDrawer = document.getElementById('mobile-drawer-container');
     if (mobileDrawer && mobileDrawer.children.length > 0) {
-        // 如果抽屉里已经有内容了，就直接退出，不再执行任何操作。
-        // 这就是您“之后如何resize，里面只要有内容就不会改变它”的核心实现。
         console.log("Drawer already populated. Skipping layout management.");
         return;
     }
 
     // 步骤3：如果代码能执行到这里，说明我们正处于手机/平板视图，且抽屉是空的。
-    // 这时才执行内容加载。
-    console.log("Drawer is empty. Initializing content clone...");
-    cloneSidebarContent();
+    // 这时我们不再直接调用cloneSidebarContent，而是开始“监视”内容源。
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar) {
+        console.error("Sidebar element not found!");
+        return;
+    }
 
-    // 背景处理函数可以一并在这里调用
-    handleSpecialPageBackground();
+    // 检查侧边栏是否已经有内容了 (以防万一内容加载得很快)
+    if (sidebar.children.length > 0) {
+        console.log("Sidebar already has content. Cloning immediately.");
+        cloneSidebarContent();
+        handleSpecialPageBackground();
+        return;
+    }
+
+    // 如果侧边栏当前是空的，就设置一个观察者
+    console.log("Sidebar is empty. Setting up MutationObserver to wait for content...");
+    const observer = new MutationObserver((mutationsList, obs) => {
+        // 遍历所有发生的变更
+        for (const mutation of mutationsList) {
+            // 我们只关心子节点的添加
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                console.log("Sidebar content has been loaded! Cloning now...");
+                cloneSidebarContent(); // 内容来了，立即克隆！
+                handleSpecialPageBackground();
+                obs.disconnect(); // 任务完成，断开观察，避免不必要的性能开销
+                return; // 退出循环和回调
+            }
+        }
+    });
+
+    // 配置观察者：我们想观察子列表的变化
+    const config = { childList: true };
+
+    // 开始观察目标节点
+    observer.observe(sidebar, config);
+
+    // 设置一个超时，以防万一内容永远加载不进来
+    setTimeout(() => {
+        observer.disconnect(); // 10秒后无论如何都停止观察
+        console.log("Observer timed out after 10 seconds.");
+    }, 10000);
 }
 
 // --- 页面加载时 ---
