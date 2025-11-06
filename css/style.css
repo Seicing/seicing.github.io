@@ -1,9 +1,3 @@
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
-
 #scroll-2::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -98,9 +92,7 @@ a {
     margin: 0px auto;
 }
 
-
 /* Header */
-
 #header {
     width: 1280px;
     height: 100px;
@@ -108,9 +100,7 @@ a {
     padding: 0px;
 }
 
-
 /* Logo */
-
 #logo {
     float: left;
     width: 288px;
@@ -156,9 +146,7 @@ a {
     color: #000000;
 }
 
-
 /* Search */
-
 #search {
     float: right;
     width: 280px;
@@ -195,9 +183,7 @@ a {
     color: #FFF;
 }
 
-
 /* Menu */
-
 #menu {
     float: right;
     width: 652px;
@@ -239,18 +225,14 @@ a {
     text-decoration: none;
 }
 
-
 /* Page */
-
 #page {
     width: 1150px;
     margin: 0px auto;
     padding: 30px 0px;
 }
 
-
 /* Content */
-
 #content {
     float: right;
     width: 800px;
@@ -260,7 +242,6 @@ a {
 .post {
     overflow: hidden;
     margin-bottom: 20px;
-
 }
 
 .post .title {
@@ -332,9 +313,7 @@ a {
     padding: 0px 0px 0px 0px;
 }
 
-
 /* Sidebar */
-
 #sidebar {
     float: left;
     width: 288px;
@@ -397,9 +376,7 @@ a {
     text-decoration: underline;
 }
 
-
 /* Calendar */
-
 #calendar_wrap {
     padding: 20px;
 }
@@ -416,9 +393,7 @@ a {
     text-align: right;
 }
 
-
 /* Footer */
-
 #footer {
     width: 940px;
     margin: 0px auto;
@@ -512,15 +487,11 @@ div {
 /* ---------------------------------------------------- */
 /*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */
 /* ---------------------------------------------------- */
-
-/* 1. 最外层的容器 (不再是Flex布局) */
 .aoe4de-flex-container {
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. 时代画布 (age1, age2...) */
-/* 这是主要的视觉块，它也是一个Flex容器，负责排列内部的一排排“组” */
 .aoe4de-flex-container .age1,
 .aoe4de-flex-container .age2,
 .aoe4de-flex-container .age3,
@@ -536,11 +507,8 @@ div {
     column-gap: 20px;
     /* 水平间距固定为 20px */
     row-gap: 0;
-    /* 禁用默认的垂直间距，完全用 margin 控制 */
 }
 
-/* 2. 为主要的 tech-group 元素设置默认的下方间距 */
-/* 这就模拟了 row-gap: 20px 的效果 */
 .aoe4de-flex-container .age0 .aoe4de-tech-group,
 .aoe4de-flex-container .age1 .aoe4de-tech-group,
 .aoe4de-flex-container .age2 .aoe4de-tech-group,
@@ -549,46 +517,34 @@ div {
     margin-bottom: 20px;
 }
 
-/* 3. 为分隔符元素设置特殊的间距和布局 */
-/* 它会占据一整行，并拥有自定义的垂直间距 */
 .aoe4de-flex-container .age0 .aoe4de-break-element,
 .aoe4de-flex-container .age1 .aoe4de-break-element,
 .aoe4de-flex-container .age2 .aoe4de-break-element,
 .aoe4de-flex-container .age3 .aoe4de-break-element,
 .aoe4de-flex-container .age4 .aoe4de-break-element {
     flex-basis: 100%;
-    /* 强制元素占据一整行宽度 */
     height: 0;
 }
 
-/* 3. 科技/单位组 */
-/* 作用：也是一个Flex容器，让内部的科技项并排排列并自动换行 */
 .aoe4de-tech-group {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* 所有项目顶部对齐 */
     gap: 0px;
 }
 
-/* 4. 单个科技/单位项 */
 .aoe4de-tech-item {
     margin: 0;
 }
 
 .aoe4de-break-element {
-    /* 核心(1): 强制此元素占满100%宽度，迫使后续元素换行 */
     flex-basis: 100%;
-
-    /* 核心(2): 自身高度为0，不产生任何可见空间 */
     height: 0;
 }
-
 
 /* ======================================================== */
 /* === 1. 全局/桌面端样式 === */
 /* ======================================================== */
-
 /* 默认隐藏移动端专属元素 */
 #sidebar-toggle-button,
 #sidebar-overlay,
@@ -624,18 +580,11 @@ div {
 }
 
 /* --- 2. 电脑模式 (>= 1280px) 的默认位置 --- */
-/* 将按钮放置在 1280px 主体内容的右侧空白区域 */
 #back-to-top-button {
     bottom: auto;
     top: 20px;
     left: auto;
 }
-
-
-
-
-
-
 
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
@@ -645,13 +594,6 @@ div {
         bottom: auto;
     }
 
-    /* --- 第一部分：基础重置和通用布局 --- */
-    /* ... (这部分和您当前的代码完全一样，保持不变) ... */
-    /*
- * ========================================================
- * === 基础重置 & 纯白背景 (通过信标Div实现例外) ===
- * ========================================================
- */
     html,
     body {
         width: 100%;
@@ -709,9 +651,6 @@ div {
         display: none !important;
     }
 
-
-    /* --- 第二部分：侧边栏抽屉 --- */
-    /* ... (这部分也和您当前的代码完全一样，保持不变) ... */
     #sidebar-toggle-button {
         display: block !important;
         position: fixed;
@@ -775,15 +714,6 @@ div {
         overflow: hidden !important;
     }
 
-    /* 
-     * ========================================================
-     * === 第三部分：特殊布局和绝对例外 (终极修正) ===
-     * === 我们将所有特殊规则集中在这里，确保最高优先级 ===
-     * ========================================================
-     */
-
-    /* --- 阶梯式宽度容器 (saic/empire) --- */
-    /* CSS只负责居中，宽度由JS控制 */
     #empire,
     div:has(> .saic) {
         width: 100% !important;
@@ -793,9 +723,7 @@ div {
         margin-right: auto !important;
     }
 
-    /* --- 科技树 Techtree & Age --- */
     #techtree {
-        /* 1. 为容器本身设置滚动 */
         max-width: 100% !important;
         overflow-x: auto !important;
         padding: 10px !important;
@@ -803,14 +731,11 @@ div {
         border: 1px solid #ccc;
     }
 
-    /* --- 绝对保护盾 (Layer1/2) --- */
-    /* 我们也弃用 all:revert，改为精准重置 */
     body #layer1,
     body #layer2,
     body #layer1 *,
     body #layer2 * {
         position: revert !important;
-        /* JS会覆盖这个，但以防万一 */
         width: revert !important;
         max-width: revert !important;
         min-width: revert !important;
@@ -830,21 +755,8 @@ div {
         pointer-events: revert !important;
     }
 
-    /*
- * ========================================================
- * === 终极修正：留言板宽度 (使用ID选择器覆盖内联样式) ===
- * ========================================================
- */
-
-    /* 
- * 1. 针对包裹容器和内部元素
- *    我们直接使用ID选择器(#comments, #comment_pages)，它们的优先级远高于class
- *    对于没有ID的元素，我们使用更具体的“属性选择器” [style*="width"]
- */
     #comment_all,
-    /* <-- 新增此行 */
     #comment_all table,
-    /* <-- 新增此行，使其内部表格也适应 */
     div[style*="width"]>textarea#comment_text,
     #comments,
     #comment_pages {
@@ -853,41 +765,29 @@ div {
         box-sizing: border-box !important;
     }
 
-    /* 2. 针对包裹着textarea的那个没有ID的父div，也进行处理 */
     div:has(> #comment_text) {
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
     }
 
-    /* 3. 单独处理textarea的样式 */
     textarea#comment_text {
         min-height: 150px;
         resize: vertical;
     }
 
-    /* 4. 针对翻页导航内部的 a 标签（保持不变） */
     #comment_pages a {
         white-space: normal !important;
         display: inline-block;
         margin: 2px;
     }
 
-    /*
- * ========================================================
- * === 可选优化：提升手机端表格内元素的可读性 ===
- * ========================================================
- * 当屏幕宽度小于 480px 时，让“名字”输入框和“提交”按钮各占一行
- */
     @media (max-width: 480px) {
         #comment_all table td {
             display: block;
-            /* 将单元格变为块级元素，使其垂直排列 */
             width: 100% !important;
             text-align: left !important;
-            /* 左对齐 */
             padding-bottom: 10px;
-            /* 增加一些底部间距 */
         }
 
         #comment_all table td:last-child {
@@ -919,7 +819,6 @@ div {
     #customers2 {
         display: revert !important;
         width: 100% !important;
-        /* 撤销 display:block，让其恢复默认或行内样式 */
     }
 
     #aoe4de td[width="245px"],
@@ -932,35 +831,19 @@ div {
         width: 105px !important;
     }
 
-
-    /* 
-     * 1. 将 #wenttodie 自身转变为一个可以滚动的 "网格" 容器
-     *    - display: grid; => 激活网格布局，这是让子元素宽度生效的关键。
-     *    - overflow-x: auto; => 当内部网格项（子元素）比容器本身更宽时，显示横向滚动条。
-     *    - width: 100%; => 让容器本身遵守父级的宽度限制，避免页面整体出现滚动条。
-     */
     #wenttodie {
         display: grid !important;
         overflow-x: auto !important;
         width: 100% !important;
         max-width: 100% !important;
-        /* 确保它不会超过屏幕宽度 */
         -webkit-overflow-scrolling: touch;
-        /* 优化 iOS 上的滚动体验 */
     }
 
-    /* 
-     * 2. 强制 #wenttodie 的直接子元素拥有 800px 的最小宽度
-     *    - min-width: 800px; => 这是命令子元素（如 <table>）：“你的宽度至少是800px，不要被压缩”。
-     *    - 正是因为子元素比父容器（#wenttodie）更宽，父容器上的 overflow-x 才会生效。
-     */
     #wenttodie>* {
         min-width: 800px !important;
         box-sizing: border-box !important;
     }
 
-    /* --- 1. 对 #tablebana 的常规处理 --- */
-    /*    强制其宽度为屏幕的100%，并清除所有偏移   */
     #tablebana {
         width: 100% !important;
         max-width: 100% !important;
@@ -969,39 +852,21 @@ div {
         left: unset !important;
         margin: 0 !important;
         box-sizing: border-box;
-        /* 确保边框和内边距不导致溢出 */
     }
 
-    /* --- 2. 对 #tablebana2 的特殊处理 (核心) --- */
     #tablebana2 {
-        /* 步骤 a: 使用 vw 单位，强制宽度为屏幕宽度的80% */
-        /* 这打破了“父容器被撑大”的循环依赖，宽度被明确写死 */
         width: 80vw !important;
-
-        /* 清除浮动，确保块级布局 */
         float: none !important;
-
-        /* 步骤 b: 开启相对定位，为“transform”做准备 */
         position: relative;
-
-        /* 步骤 c: 使用 transform 进行精确的位置矫正 */
-        /* 详细解释见下方 */
         transform: translateX(-10vw);
-
-        /* 步骤 d: 使用 margin:auto 确保在变换后的空间内稳定居中 */
         margin: 0 auto !important;
     }
-
 }
-
-
-
 
 /* ===================================================================== */
 /* === 新增：2. 平板/小尺寸桌面专属样式 (768px - 1279px) === */
 /* === (这是一个包含所有必要样式的独立模块) === */
 /* ===================================================================== */
-
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #back-to-top-button {
         top: 70px;
@@ -1018,7 +883,6 @@ div {
     }
 
     /* --- 第一部分：平板布局调整 --- */
-
     /* 1. 隐藏固定的桌面侧边栏 */
     #sidebar {
         display: none !important;
@@ -1045,7 +909,6 @@ div {
 
     /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
     /* 因为这个区间也要使用抽屉，所以必须包含完整的抽屉样式 */
-
     #sidebar-toggle-button {
         display: block !important;
         position: fixed;
