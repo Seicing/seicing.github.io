@@ -1,27 +1,20 @@
-// 从 'vue' 导入所需的函数
 const { createApp, ref, onMounted } = Vue;
 
 const app = createApp({
-    // setup 函数是组合式 API 的入口点
     setup() {
-        // 使用 ref 创建一个响应式变量来存储数据
         const aasb = ref([]);
-        let characterid = ''; // 将 characterid 声明在 setup 作用域内
+        let characterid = '';
 
-        // onMounted 对应于 Vue 2.0 的 mounted 生命周期钩子
         onMounted(() => {
-            // 获取 characterid
             characterid = document.getElementById("overdrive").innerHTML;
 
-            // 使用 fetch 获取 JSON 数据
             fetch('https://seicing.com/js/dia/dialog.json')
                 .then(response => response.json())
                 .then(json => {
-                    // 遍历并处理数据
                     const processedData = json.map(item => {
                         const faceid = item['name'].slice(5);
                         return {
-                            ...item, // 复制原始 item 的所有属性
+                            ...item,
                             faceid: faceid,
                             faceid937: "no_" + faceid,
                             attach5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/attach.png`,
@@ -36,12 +29,10 @@ const app = createApp({
                             base6: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base2.png`
                         };
                     });
-                    // 更新响应式变量的值
                     aasb.value = processedData;
                 })
                 .catch(error => console.error('Error fetching dialog.json:', error));
 
-            // 替代 Vue 2.0 中的 starter 方法
             setTimeout(() => {
                 const reskiElement = document.getElementById("reski");
                 if (reskiElement) {
@@ -51,14 +42,12 @@ const app = createApp({
             }, 1000);
         });
 
-        // 从 setup 函数返回模板中需要使用的数据和方法
         return {
             aasb
         };
     }
 });
 
-// 将 Vue 应用挂载到指定的 DOM 元素上
 app.mount('#app');
 
 $(window).resize(function () {
@@ -71,7 +60,6 @@ $(window).resize(function () {
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    // characterid 会在 Vue 的 onMounted 钩子中被获取和使用
 });
 
 
@@ -87,7 +75,7 @@ function ALswitch() {
     document.getElementById("ALswitch").style.display = "none";
     document.getElementById("ALswitch2").style.display = "block";
 }
-// ... 其他的 switch 函数保持不变 ...
+
 function ALswitch2() {
     var divs = document.getElementsByClassName("base4");
     for (var i = 0; i < divs.length; i++) {
