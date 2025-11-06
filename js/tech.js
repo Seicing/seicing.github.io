@@ -885,7 +885,7 @@ let ayanami = {
 
     "鳞纹马铠": /*html*/`鳞纹马铠<br>Scale Barding<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>骑兵部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250 / 500 / 1000 / 2000 / 3000 / 4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "防御工事": /*html*/`防御工事<br>Fortifications<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>建筑物生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费200 / 400 / 800 / 1600 / 2600 / 3600的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "防御工事": /*html*/`防御工事<br>Fortifications<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>建筑物生命值 +10%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费200 / 400 / 800 / 1600 / 2600 / 3600的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
     "铁制配件": /*html*/`铁制配件<br>Iron Fittings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城部队生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费225 / 450 / 900 / 1800 / 2800 / 3800的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
