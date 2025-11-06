@@ -723,6 +723,10 @@ div {
         margin-right: auto !important;
     }
 
+    #empire {
+        width: auto !important;
+    }
+
     #techtree {
         max-width: 100% !important;
         overflow-x: auto !important;
