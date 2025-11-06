@@ -638,7 +638,9 @@ let ayanami = {
     "黑旗": /*html*/`黑旗<br>Black Flag<br>掠夺贸易路线所获得的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币+100%`,
     "哈瓦那港": /*html*/`哈瓦那港<br>Havana Harbor<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>400<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>此定居点在探索时代中生成宝藏护送队，计3宝藏舰队点<br>+1经济属性点<br>无时代限制<br>必须建造在与非湖泊陆地相邻的遥远土地海岸上`,
 
+    "南马都尔": /*html*/`南马都尔<br>Nan Madol<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>400<br>岛屿（拥有最多15个地块的陆块）上的宫殿和市政厅+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值、<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力<br>无时代限制<br>必须放置在与陆地相邻的海岸上，且此陆地必须为岛屿`,
 
+    "大灯塔": /*html*/`大灯塔<br>Great Lighthouse<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>275<br>基础产量：+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>建成后提供一名免费商人<br>所有定居点+15海上贸易路线范围<br>所有海上单位+1视野<br>无时代限制<br>必须放置在与陆地相邻的海岸上`,
 
     "卡利亚": /*html*/`卡利亚<br>Kalia<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50/90<br>近战攻击力 25/30<br>远程攻击力 20/25<br>轰击力 15/20<br>射程 1<br>移动力 3<br>视野范围 2<br>汤加特色海上单位<br>对抗驻防区块时+5战斗力<br>维护费 : 2/3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
 
