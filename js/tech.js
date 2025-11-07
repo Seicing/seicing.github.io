@@ -442,6 +442,8 @@ let ayanami = {
     "学者狂热": /*html*/`狂热<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狂热.png' width='20px'>狂热：受到学者治疗的单位攻击速度 +50%，持续 3 秒`,
     "高级教士战意激昂": /*html*/`战意激昂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高级教士激励.png' width='20px'>战意激昂：被高级教士鼓舞的军事单位护甲+1，伤害+15%`,
 
+    "猎隼侦察术": /*html*/`猎隼侦察术<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/猎隼侦察术.png' width='20px'>猎隼侦察术：可使用猎隼侦察术，放出猎隼以获得该区域的视野，持续30秒`,
+
     "战士之路": /*html*/`战士之路<br>Path of the Warrior<br>贞德选择成为一个战士，获得神圣愤怒能力`,
     "射手之路": /*html*/`射手之路<br>Path of the Archer<br>贞德选择成为一个战士，获得神圣之弓能力`,
     "骑兵同伴": /*html*/`骑兵同伴<br>Rider Companions<br>解锁贞德的“骑兵就绪！”能力`,
@@ -676,7 +678,7 @@ let ayanami = {
     "议会厅效果": /*html*/`议会厅<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/议会厅.png' width='20px'>议会厅：地标工作速度+100%，从地标生产的长弓兵成本-5%`,
     "英国叉叉限制": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：无法在黑暗时代生产长矛兵，默认在封建时代生产坚韧长矛兵`,
     "英国武士加速": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：武士的生产速度+50%`,
-    "英国预备营地": /*html*/`预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地.png' width='20px'>预备营地：花费25木建造一个预备营地，提供直径12格范围的强化光环，单位视野+30%，营地影响范围内村民的狩猎效率+10%，最大建造5个`,
+    "英国预备营地": /*html*/`预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地.png' width='20px'>预备营地：可使用预备营地，花费25木建造一个提供直径12格范围强化光环的营地，使单位视野+30%，村民狩猎效率+10%，最大建造5个`,
 
     "预备营地狩猎光环": /*html*/`预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地狩猎光环.png' width='20px'>预备营地：营地影响范围内村民的狩猎效率+10%`,
 
