@@ -61,33 +61,127 @@ window.overstep = function (buttonId, divId) {
  * 3️⃣ 兼容移动抽屉（mobile-drawer-container）与 sidebar 两份实例
  */
 $(document).ready(function () {
-    $('#sidebar').load("https://seicing.com/js/list/essay.html", function () {
-        // ✅ step 1: essay.html 加载完成后再克隆一次 sidebar（确保内容完整）
-        setTimeout(() => {
-            cloneSidebarContent();
-        }, 100);
+    $.get("https://seicing.com/js/list/essay.html", function (htmlString) {
+        try {
+            // 1) parse HTML
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlString, 'text/html');
 
-        // ✅ step 2: 自动展开 URL 对应 nenbun 段
-        const nenbun = getQueryVariable("nenbun");
-        if (nenbun) {
-            const buttonId = nenbun + "button";
+            // 2) collect script nodes and remove them from the doc fragment
+            const scriptNodes = Array.from(doc.querySelectorAll('script'));
+            scriptNodes.forEach(s => s.parentNode && s.parentNode.removeChild(s));
 
-            // 先在原 sidebar 内触发
-            const sidebarButton = document.getElementById(buttonId);
-            if (sidebarButton) sidebarButton.click();
+            // 3) inject the non-script HTML into #sidebar
+            const sidebar = document.getElementById('sidebar');
+            if (!sidebar) {
+                console.error('#sidebar not found');
+                return;
+            }
+            sidebar.innerHTML = doc.body.innerHTML;
 
-            // 稍微延迟一下再同步抽屉
-            setTimeout(() => {
-                const drawer = document.getElementById('mobile-drawer-container');
-                if (drawer) {
-                    const clonedButton = drawer.querySelector(`#${buttonId}`);
-                    if (clonedButton) clonedButton.click();
+            // 4) helper to run scripts sequentially
+            function runScriptsSequentially(list, idx = 0) {
+                if (idx >= list.length) {
+                    onAllScriptsExecuted();
+                    return;
                 }
-            }, 300);
+                const s = list[idx];
+                // external src
+                const src = s.getAttribute && s.getAttribute('src');
+                if (src) {
+                    const scriptEl = document.createElement('script');
+                    // keep the original attributes (language, type etc.) if present
+                    if (s.type) scriptEl.type = s.type;
+                    if (s.defer) scriptEl.defer = true;
+                    scriptEl.src = src;
+                    scriptEl.onload = () => runScriptsSequentially(list, idx + 1);
+                    scriptEl.onerror = () => {
+                        console.warn('Failed to load script:', src);
+                        runScriptsSequentially(list, idx + 1);
+                    };
+                    document.head.appendChild(scriptEl);
+                } else {
+                    // inline script text: eval it in global scope safely
+                    try {
+                        // global eval: (0, eval)(...) ensures global scope eval
+                        (0, eval)(s.textContent || s.innerText || '');
+                    } catch (e) {
+                        console.error('Inline script error:', e);
+                    }
+                    // next
+                    setTimeout(() => runScriptsSequentially(list, idx + 1), 0);
+                }
+            }
+
+            // 5) callback after scripts done: define safe overstep fallback, clone & auto-open
+            function onAllScriptsExecuted() {
+                // Ensure overstep exists and is robust (if not defined by loaded scripts)
+                if (typeof window.overstep !== 'function') {
+                    window.overstep = function (buttonId, divId) {
+                        const clickedButton = document.getElementById(buttonId);
+                        if (!clickedButton) { console.warn('overstep: button not found', buttonId); return; }
+                        const container = clickedButton.closest('#sidebar, #mobile-drawer-container') || document;
+                        const prefixes = ["hajime", "hatten", "tsuzuku", "hanei", "cu", "wentto", "san"];
+                        for (const prefix of prefixes) {
+                            const btn = container.querySelector(`#${prefix}button`);
+                            const div = container.querySelector(`#${prefix}div`);
+                            if (btn) btn.style.display = "block";
+                            if (div) div.style.display = "none";
+                        }
+                        const activeBtn = container.querySelector(`#${buttonId}`);
+                        const activeDiv = container.querySelector(`#${divId}`);
+                        if (activeBtn) activeBtn.style.display = "none";
+                        if (activeDiv) activeDiv.style.display = "block";
+                    };
+                }
+
+                // Now clone sidebar into drawer (safe: DOM is present and scripts already ran)
+                try {
+                    if (typeof cloneSidebarContent === 'function') {
+                        cloneSidebarContent();
+                    } else {
+                        console.warn('cloneSidebarContent() not found; skipping clone.');
+                    }
+                } catch (e) {
+                    console.error('cloneSidebarContent exception:', e);
+                }
+
+                // Auto-open nenbun if present
+                try {
+                    const nenbun = getQueryVariable && getQueryVariable('nenbun');
+                    if (nenbun) {
+                        const btnId = nenbun + 'button';
+
+                        // trigger sidebar button if exists
+                        const sbBtn = document.getElementById(btnId);
+                        if (sbBtn) {
+                            // allow any bound handlers to run
+                            sbBtn.click();
+                        }
+
+                        // also try the cloned drawer button after a short delay
+                        setTimeout(function () {
+                            const drawer = document.getElementById('mobile-drawer-container');
+                            if (drawer) {
+                                const clonedBtn = drawer.querySelector('#' + btnId);
+                                if (clonedBtn) clonedBtn.click();
+                            }
+                        }, 250);
+                    }
+                } catch (e) {
+                    console.error('Auto-open nenbun error:', e);
+                }
+            }
+
+            // 6) start running extracted scripts in order
+            runScriptsSequentially(scriptNodes);
+        } catch (err) {
+            console.error('Failed to load/parse essay.html:', err);
         }
+    }).fail(function () {
+        console.error('Failed to GET essay.html');
     });
 });
-
 
 /**
  * [防止加载顺序问题]
