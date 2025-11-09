@@ -62,23 +62,32 @@ window.overstep = function (buttonId, divId) {
  */
 $(document).ready(function () {
     $('#sidebar').load("https://seicing.com/js/list/essay.html", function () {
-        // 页面参数，如 ?nenbun=san
+        // ✅ step 1: essay.html 加载完成后再克隆一次 sidebar（确保内容完整）
+        setTimeout(() => {
+            cloneSidebarContent();
+        }, 100);
+
+        // ✅ step 2: 自动展开 URL 对应 nenbun 段
         const nenbun = getQueryVariable("nenbun");
-        if (!nenbun) return;
+        if (nenbun) {
+            const buttonId = nenbun + "button";
 
-        // 自动触发对应按钮
-        const buttonId = nenbun + "button";
-        const button = document.getElementById(buttonId);
-        if (button) button.click();
+            // 先在原 sidebar 内触发
+            const sidebarButton = document.getElementById(buttonId);
+            if (sidebarButton) sidebarButton.click();
 
-        // 如果有移动抽屉，也让它同步展开
-        const drawer = document.getElementById('mobile-drawer-container');
-        if (drawer) {
-            const clonedButton = drawer.querySelector(`#${buttonId}`);
-            if (clonedButton) clonedButton.click();
+            // 稍微延迟一下再同步抽屉
+            setTimeout(() => {
+                const drawer = document.getElementById('mobile-drawer-container');
+                if (drawer) {
+                    const clonedButton = drawer.querySelector(`#${buttonId}`);
+                    if (clonedButton) clonedButton.click();
+                }
+            }, 300);
         }
     });
 });
+
 
 /**
  * [防止加载顺序问题]
