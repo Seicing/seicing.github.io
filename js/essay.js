@@ -14,39 +14,41 @@ function getQueryVariable(variable) {
 }
 
 /**
- * 切换内容区域的显示。
- * 这个函数现在接收的是完整的、带有前缀的ID。
- * @param {string} buttonIdToHide - 要隐藏的按钮的完整ID (例如 "essay_cubutton")
- * @param {string} divIdToShow - 要显示的内容的完整ID (例如 "essay_cudiv")
+ * 切换内容区域的显示 (动态版本)
+ * 这个函数不再需要手动定义的ID列表。
+ * @param {string} buttonIdToHide - 被点击按钮的完整ID (例如 "essay_cubutton")
+ * @param {string} divIdToShow - 需要显示的内容的完整ID (例如 "essay_cudiv")
  */
 function overstep_essay(buttonIdToHide, divIdToShow) {
-    // 定义所有按钮和div的 *基础* ID，用于重置状态
-    var baseButtons = ["hajimebutton", "hattenbutton", "tsuzukubutton", "haneibutton", "cubutton", "wenttobutton", "sanbutton"];
-    var baseDivs = ["hajimediv", "hattendiv", "tsuzukudiv", "haneidiv", "cudiv", "wenttodiv", "sandiv"];
-    var prefix = "essay_";
-
-    // 1. 重置所有相关按钮为可见
-    baseButtons.forEach(function (baseId) {
-        var button = document.getElementById(prefix + baseId);
-        if (button) button.style.display = "block";
-    });
-
-    // 2. 重置所有相关内容区域为隐藏
-    baseDivs.forEach(function (baseId) {
-        var div = document.getElementById(prefix + baseId);
-        if (div) div.style.display = "none";
-    });
-
-    // 3. 根据传入的完整ID，隐藏被点击的按钮
-    var buttonToHideElem = document.getElementById(buttonIdToHide);
-    if (buttonToHideElem) {
-        buttonToHideElem.style.display = "none";
+    var clickedButton = document.getElementById(buttonIdToHide);
+    // 如果找不到被点击的按钮，则直接退出，避免错误
+    if (!clickedButton) {
+        console.error("overstep_essay: 无法找到被点击的按钮: " + buttonIdToHide);
+        return;
     }
 
-    // 4. 根据传入的完整ID，显示对应的内容区域
+    // 使用jQuery找到按钮所在的容器'#sidebar'
+    var container = $(clickedButton).closest('#sidebar');
+    if (container.length === 0) {
+        console.error("overstep_essay: 无法找到父容器'#sidebar'");
+        return;
+    }
+
+    // 1. 重置状态：
+    // a. 找到容器内所有调用 overstep_essay 的按钮，并将它们全部显示出来
+    container.find('a[onclick*="overstep_essay"]').css('display', 'block');
+
+    // b. 找到容器内所有ID以 'essay_' 开头并以 'div' 结尾的div，并将它们全部隐藏
+    container.find('div[id^="essay_"][id$="div"]').css('display', 'none');
+
+    // 2. 设置当前状态：
+    // a. 隐藏刚刚被点击的那个按钮
+    $(clickedButton).css('display', 'none');
+
+    // b. 显示与按钮对应的那个div
     var divToShowElem = document.getElementById(divIdToShow);
     if (divToShowElem) {
-        divToShowElem.style.display = "block";
+        $(divToShowElem).css('display', 'block');
     }
 }
 
@@ -65,15 +67,13 @@ $(document).ready(function () {
             $(this).attr('id', prefix + oldId);
         });
 
-        // 步骤 2: 更新所有按钮的 onclick 属性，使其传递带有前缀的新ID
+        // 步骤 2: 更新所有按钮的 onclick 属性，使其调用新函数并传递带前缀的新ID
         $('#sidebar').find('[onclick*="overstep"]').each(function () {
             var onclickAttr = $(this).attr('onclick');
             if (onclickAttr) {
-                // 使用正则表达式查找 overstep('arg1', 'arg2') 这样的模式
                 var newOnclickAttr = onclickAttr.replace(
                     /overstep\s*\(\s*['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\s*\)/g,
                     function (match, p1, p2) {
-                        // 将其替换为 overstep_essay('prefix_arg1', 'prefix_arg2')
                         return "overstep_essay('" + prefix + p1 + "', '" + prefix + p2 + "')";
                     }
                 );
