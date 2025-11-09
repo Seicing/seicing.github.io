@@ -1,146 +1,92 @@
-/*
-=====================================================================
-=== Essay Sidebar Controller v5.1 (2025)
-=== 特点：
-=== - 动态加载 essay.html 内容
-=== - 自动展开 nenbun 对应分区
-=== - 支持移动抽屉克隆（带 _clone 后缀避免 ID 冲突）
-=== - 原 sidebar 与 drawer 独立运行互不干扰
-=====================================================================
-*/
-
 function getQueryVariable(variable) {
-    const query = window.location.search.substring(1);
-    const vars = query.split("&");
-    for (let i = 0; i < vars.length; i++) {
-        const pair = vars[i].split("=");
-        if (pair[0] === variable) return pair[1];
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) { return pair[1]; }
     }
-    return false;
+    return (false);
 }
 
 /**
- * 全局 overstep 控制函数
- * 支持 sidebar 与 drawer 各自独立展开/收起
+ * @description: 为复制的侧边栏元素ID添加后缀，并更新其onclick事件。
+ * @param {string} containerSelector - 复制后内容的容器的选择器 (例如 '#mobile-sidebar' 或 '.mobile-container')。
+ * @param {string} suffix - 要添加到ID后面的后缀 (例如 '_mobile')。
  */
-window.overstep = function (buttonId, divId) {
-    const clickedButton = document.getElementById(buttonId);
-    if (!clickedButton) {
-        console.warn("overstep(): button not found:", buttonId);
+function fixClonedSidebar(containerSelector, suffix) {
+    var container = $(containerSelector);
+    if (container.length === 0) {
+        // 如果找不到容器，就在控制台打印一条消息并且不做任何事。
+        console.warn("无法找到用于修复ID的复制容器: " + containerSelector);
         return;
     }
 
-    const container = clickedButton.closest('#sidebar, #mobile-drawer-container') || document;
+    // 1. 为容器内所有带id的元素添加后缀
+    container.find('[id]').each(function () {
+        var oldId = $(this).attr('id');
+        $(this).attr('id', oldId + suffix);
+    });
 
-    const prefixes = ["hajime", "hatten", "tsuzuku", "hanei", "cu", "wentto", "san"];
-    for (const prefix of prefixes) {
-        const btn = container.querySelector(`#${prefix}button`);
-        const div = container.querySelector(`#${prefix}div`);
-        if (btn) btn.style.display = "block";
-        if (div) div.style.display = "none";
-    }
-
-    const activeBtn = container.querySelector(`#${buttonId}`);
-    const activeDiv = container.querySelector(`#${divId}`);
-    if (activeBtn) activeBtn.style.display = "none";
-    if (activeDiv) activeDiv.style.display = "block";
-};
-
-/**
- * 替换链接颜色（原功能保持）
- */
-function conditionallyReplaceLinkColor(container) {
-    if (!container) return;
-    const links = container.querySelectorAll('a');
-    const targetColor = 'rgb(3, 102, 214)';
-    const replacementColor = '#D0C9B7';
-    links.forEach(link => {
-        const currentColor = window.getComputedStyle(link).color;
-        if (currentColor === targetColor) {
-            link.style.setProperty('color', replacementColor, 'important');
+    // 2. 更新容器内所有按钮的onclick属性，使其调用带有新ID的overstep函数
+    container.find('[onclick*="overstep"]').each(function () {
+        var onclickAttr = $(this).attr('onclick');
+        if (onclickAttr) {
+            // 使用正则表达式替换overstep函数中的参数，为它们加上后缀
+            var newOnclickAttr = onclickAttr.replace(/overstep\s*\(\s*['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\s*\)/g, function (match, p1, p2) {
+                return "overstep('" + p1 + suffix + "', '" + p2 + suffix + "')";
+            });
+            $(this).attr('onclick', newOnclickAttr);
         }
     });
 }
 
-/**
- * 克隆 sidebar 内容到 mobile drawer
- * 自动给所有 id 加上 _clone 后缀，并修正 onclick 参数
- */
-function cloneSidebarContent() {
-    const originalSidebar = document.getElementById('sidebar');
-    if (!originalSidebar) return;
 
-    let attempts = 0;
-    const maxAttempts = 20;
-
-    const migrationInterval = setInterval(function () {
-        attempts++;
-        const contentSource = originalSidebar.querySelector('#scroll-1') || originalSidebar;
-
-        if (contentSource.children.length > 0 || attempts >= maxAttempts) {
-            clearInterval(migrationInterval);
-            if (contentSource.children.length === 0) return;
-
-            let mobileDrawer = document.getElementById('mobile-drawer-container');
-            if (!mobileDrawer) {
-                mobileDrawer = document.createElement('div');
-                mobileDrawer.id = 'mobile-drawer-container';
-                document.body.appendChild(mobileDrawer);
-            }
-
-            mobileDrawer.innerHTML = ''; // 清空旧内容
-            const clone = contentSource.cloneNode(true);
-
-            // 🧩 1. 所有带 id 的元素加 _clone
-            clone.querySelectorAll('[id]').forEach(el => {
-                el.id = el.id + '_clone';
-            });
-
-            // 🧩 2. 修正 onclick 中 overstep 参数
-            clone.querySelectorAll('[onclick]').forEach(el => {
-                let code = el.getAttribute('onclick');
-                if (code.includes("overstep(")) {
-                    code = code.replace(/'([^']+)'/g, "'$1_clone'");
-                    el.setAttribute('onclick', code);
-                }
-            });
-
-            // 🧩 3. 插入到抽屉
-            mobileDrawer.appendChild(clone);
-
-            // 🧩 4. 替换颜色
-            conditionallyReplaceLinkColor(mobileDrawer);
-
-            console.log("✅ Sidebar cloned successfully with _clone suffix IDs.");
-        }
-    }, 100);
-}
-
-/**
- * 主入口逻辑：加载 essay.html 后自动展开并克隆
- */
 $(document).ready(function () {
     $('#sidebar').load("https://seicing.com/js/list/essay.html", function () {
-        // ✅ Step 1: 加载完成后克隆 sidebar
-        setTimeout(() => {
-            cloneSidebarContent();
-        }, 200);
+        // --- 核心修改部分 ---
+        // 在这里，我们假设用于手机模式的、复制出来的列表被放在一个
+        // class 为 "mobile-sidebar" 的容器里。
+        // !!! 请将 ".mobile-sidebar" 替换成您实际使用的容器选择器 !!!
+        var mobileSidebarSelector = ".mobile-sidebar";
+        fixClonedSidebar(mobileSidebarSelector, "_mobile");
 
-        // ✅ Step 2: 自动展开 nenbun 对应分区
-        const nenbun = getQueryVariable("nenbun");
-        if (nenbun) {
-            const buttonId = nenbun + "button";
-            const sidebarButton = document.getElementById(buttonId);
-            if (sidebarButton) sidebarButton.click();
-
-            // 等克隆完成后同步展开 drawer
-            setTimeout(() => {
-                const drawer = document.getElementById('mobile-drawer-container');
-                if (drawer) {
-                    const clonedButton = drawer.querySelector(`#${buttonId}_clone`);
-                    if (clonedButton) clonedButton.click();
+        var tipsp1 = getQueryVariable("nenbun");
+        if (tipsp1) {
+            // 检查手机版容器是否存在，来判断当前是否是手机模式
+            if ($(mobileSidebarSelector).length > 0) {
+                // 如果是手机模式，点击带有后缀的按钮
+                var tipsp2_mobile = tipsp1 + "button_mobile";
+                var mobileButton = document.getElementById(tipsp2_mobile);
+                if (mobileButton) {
+                    mobileButton.click();
                 }
-            }, 800);
+            } else {
+                // 否则，按原逻辑点击普通按钮
+                var tipsp2 = tipsp1 + "button";
+                var desktopButton = document.getElementById(tipsp2);
+                if (desktopButton) {
+                    desktopButton.click();
+                }
+            }
         }
-    });
-});
+    })
+})
+
+function overstep(a, b) {
+    document.getElementById("hajimebutton").style.display = "block";
+    document.getElementById("hattenbutton").style.display = "block";
+    document.getElementById("tsuzukubutton").style.display = "block";
+    document.getElementById("haneibutton").style.display = "block";
+    document.getElementById("cubutton").style.display = "block";
+    document.getElementById("wenttobutton").style.display = "block";
+    document.getElementById("sanbutton").style.display = "block";
+    document.getElementById(a).style.display = "none";
+    document.getElementById("hajimediv").style.display = "none";
+    document.getElementById("hattendiv").style.display = "none";
+    document.getElementById("tsuzukudiv").style.display = "none";
+    document.getElementById("haneidiv").style.display = "none";
+    document.getElementById("cudiv").style.display = "none";
+    document.getElementById("wenttodiv").style.display = "none";
+    document.getElementById("sandiv").style.display = "none";
+    document.getElementById(b).style.display = "block";
+}
