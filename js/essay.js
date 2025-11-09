@@ -1,3 +1,10 @@
+/*
+=====================================================================
+=== 文章列表交互模块 (Essay List Interaction Module) v2.0
+=== (专为 Global Layout Controller v4.0+ 集成设计)
+=====================================================================
+*/
+
 /**
  * 从 URL 查询字符串中获取变量值
  */
@@ -6,9 +13,7 @@ function getQueryVariable(variable) {
     var vars = query.split("&");
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split("=");
-        if (pair[0] == variable) {
-            return pair[1];
-        }
+        if (pair[0] == variable) { return pair[1]; }
     }
     return (false);
 }
@@ -63,21 +68,63 @@ function overstep2(a, b) {
 
 
 // =========================================================================
-// == 主逻辑: 初始化、复制和改造 ==
+// == 【核心】改造函数，由布局控制器在克隆后调用 ==
+// =========================================================================
+/**
+ * 对克隆到抽屉的文章列表副本进行“双系统”改造。
+ * @param {HTMLElement} drawerContainer - 包含副本内容的抽屉容器元素。
+ */
+function transformClonedEssayList(drawerContainer) {
+    if (!drawerContainer) return;
+
+    console.log("Essay Module: Transforming cloned content inside", drawerContainer.id);
+
+    // a. 改造抽屉内部的所有ID，加上后缀 "2"
+    $(drawerContainer).find('[id]').each(function () {
+        var oldId = $(this).attr('id');
+        $(this).attr('id', oldId + '2');
+    });
+
+    // b. 改造抽屉内部的所有onclick事件
+    $(drawerContainer).find('[onclick*="overstep"]').each(function () {
+        var onclickAttr = $(this).attr('onclick');
+        if (onclickAttr) {
+            var newOnclickAttr = onclickAttr.replace(
+                /overstep\s*\(\s*['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\s*\)/g,
+                function (match, p1, p2) {
+                    return "overstep2('" + p1 + "2', '" + p2 + "2')";
+                }
+            );
+            $(this).attr('onclick', newOnclickAttr);
+        }
+    });
+
+    // c. 初始化抽屉内的状态：根据URL参数点击改造后的按钮
+    //    这一步确保了即使页面加载时是手机模式，抽屉里的列表也能正确展开
+    var nenbun = getQueryVariable("nenbun");
+    if (nenbun) {
+        var mobileButtonId = nenbun + "button2";
+        var mobileButton = document.getElementById(mobileButtonId);
+        if (mobileButton) {
+            mobileButton.click();
+        }
+    }
+}
+
+
+// =========================================================================
+// == 主逻辑: 初始化电脑版 ==
 // =========================================================================
 $(document).ready(function () {
-
-    // !!! 【重要】请将 "#sidebar-drawer" 替换为您手机/平板模式下实际的抽屉容器的选择器 (ID或class) !!!
-    var mobileDrawerSelector = "#sidebar-drawer"; // 例如: "#offcanvas-sidebar", ".mobile-nav-content" 等
-
-    // 1. 加载基础内容到电脑版的 #sidebar
+    // 加载基础内容到电脑版的 #sidebar
     $('#sidebar').load("/js/list/essay.html", function (response, status, xhr) {
         if (status !== "success") {
-            console.error("加载 /js/list/essay.html 失败, 无法初始化侧边栏。");
+            console.error("Essay Module: Failed to load /js/list/essay.html");
             return;
         }
 
-        // 2. 初始化电脑模式：根据URL参数点击原始按钮
+        // 初始化电脑模式：根据URL参数点击原始按钮
+        // 手机模式的状态将由布局控制器在克隆和改造后自行初始化
         var nenbun = getQueryVariable("nenbun");
         if (nenbun) {
             var desktopButtonId = nenbun + "button";
@@ -85,34 +132,6 @@ $(document).ready(function () {
             if (desktopButton) {
                 desktopButton.click();
             }
-        }
-
-        // 3. 创建并改造手机/平板模式的副本
-        var drawer = $(mobileDrawerSelector);
-        if (drawer.length > 0) {
-            // a. 复制 #sidebar 的当前HTML内容到抽屉容器
-            drawer.html($('#sidebar').html());
-
-            // b. 改造抽屉内部的所有ID，加上后缀 "2"
-            drawer.find('[id]').each(function () {
-                var oldId = $(this).attr('id');
-                $(this).attr('id', oldId + '2');
-            });
-
-            // c. 改造抽屉内部的所有onclick事件
-            drawer.find('[onclick*="overstep"]').each(function () {
-                var onclickAttr = $(this).attr('onclick');
-                if (onclickAttr) {
-                    // 将 overstep('arg1', 'arg2') 替换为 overstep2('arg1' + '2', 'arg2' + '2')
-                    var newOnclickAttr = onclickAttr.replace(
-                        /overstep\s*\(\s*['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\s*\)/g,
-                        function (match, p1, p2) {
-                            return "overstep2('" + p1 + "2', '" + p2 + "2')";
-                        }
-                    );
-                    $(this).attr('onclick', newOnclickAttr);
-                }
-            });
         }
     });
 });

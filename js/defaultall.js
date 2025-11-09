@@ -76,6 +76,13 @@ function cloneSidebarContent() {
 
             conditionallyReplaceLinkColor(mobileDrawer);
             console.log("Success: Sidebar content has been cloned ONCE.");
+
+            // =================================================================
+            // === 【集成点】在这里调用 essay.js 的改造函数 ===
+            // =================================================================
+            if (typeof transformClonedEssayList === 'function') {
+                transformClonedEssayList(mobileDrawer);
+            }
         }
     }, 100);
 }
