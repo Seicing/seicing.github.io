@@ -1,7 +1,5 @@
 /**
  * 从 URL 查询字符串中获取变量值
- * @param {string} variable - 要查找的变量名
- * @returns {string|boolean} - 返回变量的值，如果找不到则返回 false
  */
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
@@ -16,70 +14,74 @@ function getQueryVariable(variable) {
 }
 
 /**
- * 切换文章列表部分的显示
- * 这个函数现在操作的是带有 "essay_" 前缀的ID
- * @param {string} buttonIdToHide - 要隐藏的按钮的 ID (不带前缀)
- * @param {string} divIdToShow - 要显示的内容区域的 ID (不带前缀)
+ * 切换内容区域的显示。
+ * 这个函数现在接收的是完整的、带有前缀的ID。
+ * @param {string} buttonIdToHide - 要隐藏的按钮的完整ID (例如 "essay_cubutton")
+ * @param {string} divIdToShow - 要显示的内容的完整ID (例如 "essay_cudiv")
  */
 function overstep_essay(buttonIdToHide, divIdToShow) {
-    // 定义所有按钮和div的原始ID
-    var buttons = ["hajimebutton", "hattenbutton", "tsuzukubutton", "haneibutton", "cubutton", "wenttobutton", "sanbutton"];
-    var divs = ["hajimediv", "hattendiv", "tsuzukudiv", "haneidiv", "cudiv", "wenttodiv", "sandiv"];
-    var prefix = "essay_"; // 定义我们自己的前缀
+    // 定义所有按钮和div的 *基础* ID，用于重置状态
+    var baseButtons = ["hajimebutton", "hattenbutton", "tsuzukubutton", "haneibutton", "cubutton", "wenttobutton", "sanbutton"];
+    var baseDivs = ["hajimediv", "hattendiv", "tsuzukudiv", "haneidiv", "cudiv", "wenttodiv", "sandiv"];
+    var prefix = "essay_";
 
-    // 恢复所有按钮为可见
-    buttons.forEach(function (id) {
-        var button = document.getElementById(prefix + id);
+    // 1. 重置所有相关按钮为可见
+    baseButtons.forEach(function (baseId) {
+        var button = document.getElementById(prefix + baseId);
         if (button) button.style.display = "block";
     });
 
-    // 隐藏所有内容区域
-    divs.forEach(function (id) {
-        var div = document.getElementById(prefix + id);
+    // 2. 重置所有相关内容区域为隐藏
+    baseDivs.forEach(function (baseId) {
+        var div = document.getElementById(prefix + baseId);
         if (div) div.style.display = "none";
     });
 
-    // 隐藏被点击的按钮
-    var buttonToHide = document.getElementById(prefix + buttonIdToHide);
-    if (buttonToHide) {
-        buttonToHide.style.display = "none";
+    // 3. 根据传入的完整ID，隐藏被点击的按钮
+    var buttonToHideElem = document.getElementById(buttonIdToHide);
+    if (buttonToHideElem) {
+        buttonToHideElem.style.display = "none";
     }
 
-    // 显示对应的内容区域
-    var divToShow = document.getElementById(prefix + divIdToShow);
-    if (divToShow) {
-        divToShow.style.display = "block";
+    // 4. 根据传入的完整ID，显示对应的内容区域
+    var divToShowElem = document.getElementById(divIdToShow);
+    if (divToShowElem) {
+        divToShowElem.style.display = "block";
     }
 }
 
 $(document).ready(function () {
-    // 加载文章列表的HTML片段
     $('#sidebar').load('https://seicing.com/js/list/essay.html', function (response, status, xhr) {
-        if (status == "error") {
+        if (status === "error") {
             console.error("加载 essay.html 失败: " + xhr.status + " " + xhr.statusText);
             return;
         }
 
-        var prefix = "essay_"; // 定义统一的前缀
+        var prefix = "essay_";
 
-        // 1. 为 #sidebar 内所有新加载的、带id的元素加上前缀，避免冲突
+        // 步骤 1: 为 #sidebar 内所有新加载的、带id的元素加上前缀
         $('#sidebar').find('[id]').each(function () {
             var oldId = $(this).attr('id');
-            // 给ID加上前缀
             $(this).attr('id', prefix + oldId);
         });
 
-        // 2. 更新所有按钮的 onclick 事件，让它们调用新的 overstep_essay 函数
+        // 步骤 2: 更新所有按钮的 onclick 属性，使其传递带有前缀的新ID
         $('#sidebar').find('[onclick*="overstep"]').each(function () {
             var onclickAttr = $(this).attr('onclick');
             if (onclickAttr) {
-                // 将 overstep('sanbutton', 'sandiv') 替换为 overstep_essay('sanbutton', 'sandiv')
-                var newOnclickAttr = onclickAttr.replace(/overstep/g, 'overstep_essay');
+                // 使用正则表达式查找 overstep('arg1', 'arg2') 这样的模式
+                var newOnclickAttr = onclickAttr.replace(
+                    /overstep\s*\(\s*['"]([^'"]+)['"]\s*,\s*['"]([^'"]+)['"]\s*\)/g,
+                    function (match, p1, p2) {
+                        // 将其替换为 overstep_essay('prefix_arg1', 'prefix_arg2')
+                        return "overstep_essay('" + prefix + p1 + "', '" + prefix + p2 + "')";
+                    }
+                );
                 $(this).attr('onclick', newOnclickAttr);
             }
         });
 
-        // 3. 根据URL参数，模拟点击带有新前缀的按钮
+        // 步骤 3: 根据URL参数，模拟点击带有新前缀的按钮
         var nenbun = getQueryVariable("nenbun");
         if (nenbun) {
             var buttonToClickId = prefix + nenbun + "button";
