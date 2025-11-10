@@ -106,7 +106,9 @@ function syncDisplayState() {
     const elementPairs = {
         'jpnText8': 'senText8-1',
         'jpnText9': 'senText9-1',
-        'macText9': 'byzText9-1'
+        'macText9': 'byzText9-1',
+        'tugText8': 'sulText8-1',
+        'tugText9': 'sulText9-1',
     };
 
     // 遍历每一对元素
