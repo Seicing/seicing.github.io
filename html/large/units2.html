@@ -50,14 +50,6 @@
         /* 保留这个作为基础约束，防止图片首次加载时过大 */
         height: auto;
     }
-
-    #customers tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    #customers tr:hover {
-        background-color: #ddd;
-    }
 </style>
 
 </head>
@@ -186,6 +178,39 @@
         <td> </td>
     </tr>
 
+    <tr>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-English.webp" width="52px"> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/长矛兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/武士.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/步弓手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/弩手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/侦察兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑士.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/僧侣.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/国王.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/温嘉德步兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/温嘉德长弓兵.png"></td>
+        <td> </td>
+    </tr>
+
+    <tr>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Houseoflancaster.webp" width="52px"> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/长矛兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/伯爵护卫.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/英皇侍卫.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/弩手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/侦察兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑马步兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑士.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/僧侣.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/兰开斯特领主.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/短矛骑兵.png"></td>
+        <td> </td>
+        <td> </td>
+    </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-French.webp" width="52px"> </td>
@@ -259,13 +284,7 @@
             $('#customers td:not(:first-child) img').each(function () {
                 var $img = $(this);
                 var originalSrc = $img.data('original-src');
-
-                // 重置样式，以便重新计算
-                $img.css({
-                    'visibility': 'visible',
-                    'width': '',
-                    'max-width': '100%'
-                });
+                $img.css({ 'visibility': 'visible', 'width': '', 'max-width': '100%' });
                 $img.off('error');
 
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
@@ -285,7 +304,11 @@
         }
 
         // --- 精确的同步图片缩放逻辑 ---
-        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png";
+
+        // ==================== 修改点 ====================
+        // 将基准图片路径从骑士更改为侦察兵
+        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
+        // ===============================================
 
         $(window).on('load', function () {
             $('#customers td:not(:first-child) img').each(function () {
@@ -297,14 +320,13 @@
         });
 
         $(window).on('resize', function () {
-            // 窗口变化时，需要先让图片恢复CSS约束，再重新计算
             $('#customers td:not(:first-child) img').css({ 'width': '', 'max-width': '100%' });
-            // 延迟一小会，等待浏览器渲染完成列宽，再执行计算
             setTimeout(syncImageScales, 50);
         });
 
         function syncImageScales() {
             var $refImage = null;
+            // 通过原始src数据来查找基准图片，确保无论时代如何变化都能找到
             $('#customers td:not(:first-child) img').each(function () {
                 if ($(this).data('original-src') === referenceImageSrc) {
                     $refImage = $(this);
@@ -327,7 +349,7 @@
                         var newWidth = naturalWidth * scaleRatio;
                         $img.css({
                             'width': newWidth + 'px',
-                            'max-width': 'none' // 让JS的width优先级最高
+                            'max-width': 'none'
                         });
                     }
                 });
