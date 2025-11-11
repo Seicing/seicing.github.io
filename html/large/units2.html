@@ -28,12 +28,10 @@
     #customers {
         width: 100%;
         table-layout: fixed;
-        /* 关键：强制列平分宽度 */
         border-collapse: collapse;
     }
 
-    /* --- CSS 核心修改 --- */
-    /* 恢复为标准表格对齐方式 */
+    /* 全局单元格样式 */
     #customers td,
     #customers th {
         border: 1px solid #ddd;
@@ -41,13 +39,20 @@
         text-align: center;
         /* 水平居中 */
         vertical-align: bottom;
-        /* 垂直向下对齐 */
+        /* 默认垂直向下对齐 */
     }
 
+    /* ==================== 修改点 ==================== */
+    /* 覆盖第一列的垂直对齐方式 */
+    #customers td:first-child {
+        vertical-align: middle;
+        /* 让第一列垂直居中 */
+    }
+
+    /* =============================================== */
+
     #customers td:not(:first-child) img {
-        /* 移除所有干扰布局的属性，让JS和父级td来控制 */
         max-width: 100%;
-        /* 保留这个作为基础约束，防止图片首次加载时过大 */
         height: auto;
     }
 </style>
@@ -71,158 +76,159 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="age-buttons">
-    <button class="age-button active" data-age="1">时代 1</button>
+    <button class="age-button" data-age="1">时代 1</button>
     <button class="age-button" data-age="2">时代 2</button>
     <button class="age-button" data-age="3">时代 3</button>
-    <button class="age-button" data-age="4">时代 4</button>
+    <button class="age-button active" data-age="4">时代 4</button>
 </div>
 
 <br>
 <table id="customers">
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Chinese.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/火长矛骑兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/火长矛骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
         <td> </td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-ZhuXiLegacy.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/少林僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/元朝掠夺者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/帝国卫队.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/少林僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/元朝掠夺者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/帝国卫队.png"></td>
         <td> </td>
     </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Japanese.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/神道教神主.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武艺者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑马旗本武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/神道教神主.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武艺者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑马旗本武士.png"></td>
     </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Sengokudaimyo.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/步弓手.png"></td>
         <td> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火绳枪足轻.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/日本长枪骑兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/一向一揆僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/金碎棒日本武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大名.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火绳枪足轻.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/日本长枪骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/一向一揆僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/金碎棒日本武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大名.png"></td>
     </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Holyromanempire.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/国土佣仆.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/黑骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/国土佣仆.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/黑骑兵.png"></td>
         <td> </td>
         <td> </td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Orderofthedragon.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金国土佣仆.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金国土佣仆.png"></td>
+        <td> </td>
         <td> </td>
         <td> </td>
     </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-English.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/国王.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/温嘉德步兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/温嘉德长弓兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/国王.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/温嘉德步兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/温嘉德长弓兵.png"></td>
         <td> </td>
     </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Houseoflancaster.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/伯爵护卫.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/英皇侍卫.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑马步兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/兰开斯特领主.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/短矛骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/伯爵护卫.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/英皇侍卫.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑马步兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/兰开斯特领主.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/短矛骑兵.png"></td>
         <td> </td>
         <td> </td>
     </tr>
 
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-French.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/僧侣.png"></td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -230,18 +236,18 @@
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Jeannedarc.webp" width="52px"> </td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/长矛兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/武士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/步弓手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/火枪兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/侦察兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/贞德的骑兵.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/贞德的冠军剑士.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/圣女贞德骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/贞德的骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/贞德的冠军剑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/圣女贞德骑士.png"></td>
         <td> </td>
     </tr>
 </table>
@@ -268,12 +274,17 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        // --- 时代切换逻辑 (保持不变) ---
+
+        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
+
+        // 页面加载时，从 data-src 属性中读取并存储原始路径
         $('#customers td:not(:first-child) img').each(function () {
-            $(this).data('original-src', $(this).attr('src'));
+            $(this).data('original-src', $(this).attr('data-src'));
         });
 
         $('.age-button').on('click', function () {
+            if ($(this).hasClass('active')) return;
+
             $('.age-button').removeClass('active');
             $(this).addClass('active');
             var age = $(this).data('age');
@@ -281,43 +292,43 @@
         });
 
         function updateImageSources(age) {
+            var imageLoadPromises = [];
+
             $('#customers td:not(:first-child) img').each(function () {
                 var $img = $(this);
+                var dfd = $.Deferred();
+                imageLoadPromises.push(dfd.promise());
+
+                // 从存储的数据中获取原始路径
                 var originalSrc = $img.data('original-src');
+
                 $img.css({ 'visibility': 'visible', 'width': '', 'max-width': '100%' });
-                $img.off('error');
+                $img.off('load error');
 
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                 var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
                 var newSrc = filename + age + extension;
 
+                // 核心: 只有在这里才设置 src 属性，触发图片加载
                 $img.one('load', function () {
-                    syncImageScales();
-                }).attr('src', newSrc).on('error', function () {
+                    dfd.resolve();
+                }).attr('src', newSrc).one('error', function () {
                     $(this).one('load', function () {
-                        syncImageScales();
+                        dfd.resolve();
                     }).attr('src', originalSrc).one('error', function () {
                         $(this).css('visibility', 'hidden');
+                        dfd.resolve();
                     });
                 });
             });
+
+            $.when.apply($, imageLoadPromises).done(function () {
+                syncImageScales();
+            });
         }
 
-        // --- 精确的同步图片缩放逻辑 ---
-
-        // ==================== 修改点 ====================
-        // 将基准图片路径从骑士更改为侦察兵
-        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
-        // ===============================================
-
-        $(window).on('load', function () {
-            $('#customers td:not(:first-child) img').each(function () {
-                if (this.naturalWidth > 0) {
-                    $(this).data('natural-width', this.naturalWidth);
-                }
-            });
-            updateImageSources(1);
-        });
+        // 页面加载完成后，立即加载默认的时代4图片
+        updateImageSources(4);
 
         $(window).on('resize', function () {
             $('#customers td:not(:first-child) img').css({ 'width': '', 'max-width': '100%' });
@@ -326,7 +337,6 @@
 
         function syncImageScales() {
             var $refImage = null;
-            // 通过原始src数据来查找基准图片，确保无论时代如何变化都能找到
             $('#customers td:not(:first-child) img').each(function () {
                 if ($(this).data('original-src') === referenceImageSrc) {
                     $refImage = $(this);
@@ -345,7 +355,7 @@
                     var $img = $(this);
                     var naturalWidth = this.naturalWidth;
 
-                    if (naturalWidth > 0) {
+                    if ($img.is(':visible') && naturalWidth > 0) {
                         var newWidth = naturalWidth * scaleRatio;
                         $img.css({
                             'width': newWidth + 'px',
