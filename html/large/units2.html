@@ -10,7 +10,6 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <style>
-    /* 按钮的基本样式 */
     .age-button {
         padding: 10px 15px;
         margin: 5px;
@@ -20,28 +19,40 @@
         background-color: #f0f0f0;
     }
 
-    /* 被选中的按钮的样式 */
     .age-button.active {
         background-color: #007bff;
         color: white;
         border-color: #007bff;
     }
 
-    /* --- 表格和图片的核心修改 --- */
-
     #customers {
         width: 100%;
-        /* 设定表格宽度为100% */
         table-layout: fixed;
-        /* 关键！强制表格遵守设定的宽度 */
         border-collapse: collapse;
     }
 
+    /* 针对所有单元格的基础样式 */
     #customers td,
     #customers th {
         border: 1px solid #ddd;
         padding: 8px;
-        text-align: center;
+    }
+
+    /* --- CSS 核心修改 --- */
+    /* 使用Flexbox对兵种单元格进行对齐 */
+    #customers td:not(:first-child) {
+        display: flex;
+        align-items: flex-end;
+        /* 垂直向下对齐 */
+        justify-content: center;
+        /* 水平居中对齐 */
+    }
+
+    #customers td img {
+        /* 移除之前的所有对齐和block属性，让Flexbox全权控制 */
+        max-width: 100%;
+        /* 保证图片不会超出单元格 */
+        height: auto;
     }
 
     #customers tr:nth-child(even) {
@@ -50,18 +61,6 @@
 
     #customers tr:hover {
         background-color: #ddd;
-    }
-
-    /* 针对表格中除了第一个单元格之外的所有图片 */
-    #customers td:not(:first-child) img {
-        max-width: 100%;
-        /* 关键！图片最大宽度为单元格的100% */
-        height: auto;
-        /* 保持图片的宽高比 */
-        display: block;
-        /* 移除图片下方的额外空白 */
-        margin: 0 auto;
-        /* 让图片在单元格内水平居中 */
     }
 </style>
 </head>
@@ -120,9 +119,9 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/僧侣.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/元朝掠夺者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/少林僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/元朝掠夺者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/帝国卫队.png"></td>
     </tr>
 
@@ -255,17 +254,19 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        // --- 时代切换逻辑 (来自您的代码，保持不变) ---
+        // --- 时代切换逻辑 (保持不变) ---
         $('#customers td:not(:first-child) img').each(function () {
             $(this).data('original-src', $(this).attr('src'));
         });
-        updateImageSources(1);
+
+        // 按钮点击事件
         $('.age-button').on('click', function () {
             $('.age-button').removeClass('active');
             $(this).addClass('active');
             var age = $(this).data('age');
             updateImageSources(age);
         });
+
         function updateImageSources(age) {
             $('#customers td:not(:first-child) img').each(function () {
                 var $img = $(this);
@@ -275,19 +276,27 @@
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                 var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
                 var newSrc = filename + age + extension;
-                $img.attr('src', newSrc).on('error', function () {
-                    $img.attr('src', originalSrc);
-                    $img.one('error', function () {
-                        $img.css('visibility', 'hidden');
+
+                // 绑定成功加载事件，成功后才进行缩放计算
+                $img.one('load', function () {
+                    // 每次成功加载新图片后，重新计算并同步缩放
+                    syncImageScales();
+                }).attr('src', newSrc).on('error', function () {
+                    // 如果带时代的图片失败，尝试加载原始图片
+                    $(this).one('load', function () {
+                        syncImageScales(); // 原始图片加载成功后也要同步
+                    }).attr('src', originalSrc).one('error', function () {
+                        // 如果原始图片也失败，则隐藏
+                        $(this).css('visibility', 'hidden');
                     });
                 });
             });
         }
 
-        // --- 同步图片缩放逻辑 (不修改HTML) ---
+        // --- 全新、更精确的同步图片缩放逻辑 ---
 
-        // 定义基准图片的SRC路径
-        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士3.png";
+        // 定义基准图片的原始SRC路径
+        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png";
 
         // 1. 存储所有图片的原始尺寸 (在图片加载完后执行)
         $(window).on('load', function () {
@@ -296,7 +305,8 @@
                     $(this).data('natural-width', this.naturalWidth);
                 }
             });
-            syncImageScales();
+            // 页面首次加载完成后，立即执行一次缩放同步
+            updateImageSources(1); // 触发默认时代加载和后续的缩放
         });
 
         // 2. 当窗口大小改变时，重新同步缩放
@@ -306,26 +316,38 @@
 
         // 3. 核心函数：同步所有图片的缩放百分比
         function syncImageScales() {
-            // 通过src属性找到基准图片
-            var $refImage = $('img[src="' + referenceImageSrc + '"]').first();
+            var $refImage = null;
 
-            if ($refImage.length === 0) return;
+            // 通过原始src数据来查找基准图片，这比查找当前src更可靠
+            $('#customers td:not(:first-child) img').each(function () {
+                if ($(this).data('original-src') === referenceImageSrc) {
+                    $refImage = $(this);
+                    return false; // 找到后退出循环
+                }
+            });
 
-            var refNaturalWidth = $refImage.data('natural-width');
+            if (!$refImage || $refImage.length === 0) return;
+
+            // 使用当前加载图片的naturalWidth，而不是首次加载时缓存的
+            var refNaturalWidth = $refImage[0].naturalWidth;
+
             if (refNaturalWidth > 0) {
                 var refCurrentWidth = $refImage.width();
 
-                // 计算基准图片的缩放百分比
+                // 步骤2：计算基准图片的缩放百分比
                 var scaleRatio = refCurrentWidth / refNaturalWidth;
 
-                // 遍历所有兵种图片
+                // 步骤3：将这个百分比应用到所有图片
                 $('#customers td:not(:first-child) img').each(function () {
                     var $img = $(this);
-                    var naturalWidth = $img.data('natural-width');
+                    var naturalWidth = this.naturalWidth;
+
                     if (naturalWidth > 0) {
-                        // 将同样的缩放百分比应用到这张图片上
                         var newWidth = naturalWidth * scaleRatio;
-                        $img.css('width', newWidth + 'px');
+                        $img.css({
+                            'width': newWidth + 'px',
+                            'max-width': '' // 清除max-width，让JS完全控制
+                        });
                     }
                 });
             }
