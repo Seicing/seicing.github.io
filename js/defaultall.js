@@ -97,11 +97,9 @@ function bindSidebarToggleEventsOnce() {
 
     if (!toggleButton || !overlay || toggleButton.dataset.eventsBound) return;
 
-    // ---- 点击：固定展开/收起（原有行为） ----
+    // === 原本的点击固定展开逻辑 ===
     function toggleSidebarByClick() {
-        // 切换“固定”状态（点击与原逻辑保持一致）
         body.classList.toggle('sidebar-fixed');
-        // 当 fixed 为 true 时，确保 sidebar-open 同步为 true；否则保持或关闭
         if (body.classList.contains('sidebar-fixed')) {
             body.classList.add('sidebar-open');
         } else {
@@ -110,71 +108,79 @@ function bindSidebarToggleEventsOnce() {
     }
 
     toggleButton.addEventListener('click', toggleSidebarByClick);
-
-    // overlay 点击仍然关闭并取消固定（保持移动端/当前逻辑）
     overlay.addEventListener('click', () => {
         body.classList.remove('sidebar-fixed');
         body.classList.remove('sidebar-open');
     });
 
-    // ---- 悬停：仅在桌面且按钮可见、设备支持 hover 时启用 ----
-    // 条件：
-    // 1) toggleButton 实际可见 (display !== 'none')
-    // 2) 设备支持精细指针和 hover（排除触控手机/平板）
+    // === 新增：悬停临时展开（仅桌面环境） ===
     function canUseHover() {
-        const btnStyle = window.getComputedStyle(toggleButton);
-        const visible = btnStyle && btnStyle.display !== 'none' && btnStyle.visibility !== 'hidden' && btnStyle.opacity !== '0';
-        const hoverCapable = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+        const btnStyle = getComputedStyle(toggleButton);
+        const visible = btnStyle.display !== 'none' && btnStyle.visibility !== 'hidden';
+        const hoverCapable = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
         return visible && hoverCapable;
     }
 
-    // 只有在满足 canUseHover() 时才绑定 hover 事件
     if (canUseHover()) {
-        let leaveTimer = null;
-        let enterTimer = null;
-        const TEMP_OPEN_DELAY = 50;  // 进入后短延迟再打开（防止快速经过）
-        const TEMP_CLOSE_DELAY = 120; // 离开后短延迟再关闭，减少闪烁
-
-        // 打开（临时），仅在非固定状态下生效
-        function openTemporarily() {
-            if (!body.classList.contains('sidebar-fixed')) {
-                clearTimeout(leaveTimer);
-                enterTimer = setTimeout(() => {
-                    body.classList.add('sidebar-open');
-                }, TEMP_OPEN_DELAY);
-            }
-        }
-
-        // 关闭（如果非固定）
-        function closeTemporarily() {
-            if (!body.classList.contains('sidebar-fixed')) {
-                clearTimeout(enterTimer);
-                leaveTimer = setTimeout(() => {
-                    body.classList.remove('sidebar-open');
-                }, TEMP_CLOSE_DELAY);
-            }
-        }
-
-        // 我们需要在以下元素上监听 enter/leave，以便鼠标从按钮移到抽屉时不中断：
-        // - toggleButton（按钮）
-        // - 抽屉容器（如果存在）
         const drawer = document.getElementById('mobile-drawer-container');
+        let hoverZone = null;
+        let hoverTimer = null;
 
-        // 鼠标进入按钮或抽屉 -> 打开（临时）
-        toggleButton.addEventListener('mouseenter', openTemporarily);
-        if (drawer) drawer.addEventListener('mouseenter', openTemporarily);
+        // 🟢 建立一个 hoverZone：覆盖按钮 + 抽屉
+        function updateHoverZone() {
+            const btnRect = toggleButton.getBoundingClientRect();
+            const drawerRect = drawer ? drawer.getBoundingClientRect() : null;
 
-        // 鼠标离开按钮或抽屉 -> 计划关闭（若未固定）
-        toggleButton.addEventListener('mouseleave', closeTemporarily);
-        if (drawer) drawer.addEventListener('mouseleave', closeTemporarily);
+            if (drawerRect) {
+                const left = Math.min(btnRect.left, drawerRect.left);
+                const top = Math.min(btnRect.top, drawerRect.top);
+                const right = Math.max(btnRect.right, drawerRect.right);
+                const bottom = Math.max(btnRect.bottom, drawerRect.bottom);
+                hoverZone = { left, top, right, bottom };
+            } else {
+                hoverZone = btnRect;
+            }
+        }
 
-        // 另外也监听 overlay 的 mouseenter/mouseleave（若 overlay 覆盖到抽屉外部）
-        overlay.addEventListener('mouseenter', closeTemporarily);
+        // 🟢 打开抽屉（临时）
+        function openDrawerTemp() {
+            if (!body.classList.contains('sidebar-fixed')) {
+                updateHoverZone();
+                body.classList.add('sidebar-open');
+            }
+        }
+
+        // 🟢 检查鼠标是否仍在按钮或抽屉区域
+        function isInsideHoverZone(e) {
+            if (!hoverZone) return false;
+            const x = e.clientX, y = e.clientY;
+            return (
+                x >= hoverZone.left &&
+                x <= hoverZone.right &&
+                y >= hoverZone.top &&
+                y <= hoverZone.bottom
+            );
+        }
+
+        // 🟢 鼠标移动监控：当移出 hoverZone 且未固定时收回
+        function onMouseMove(e) {
+            if (body.classList.contains('sidebar-fixed')) return;
+            clearTimeout(hoverTimer);
+            if (!isInsideHoverZone(e)) {
+                hoverTimer = setTimeout(() => {
+                    body.classList.remove('sidebar-open');
+                }, 120);
+            }
+        }
+
+        // 当鼠标移入按钮时打开，移出区域后才关闭
+        toggleButton.addEventListener('mouseenter', openDrawerTemp);
+        document.addEventListener('mousemove', onMouseMove);
     }
 
-    // 标记已绑定，避免重复绑定（保持原逻辑）
     toggleButton.dataset.eventsBound = 'true';
 }
+
 
 /**
  * 特殊页面背景处理器 (逻辑不变)
