@@ -34,22 +34,22 @@
     /* 全局单元格样式 */
     #customers td,
     #customers th {
-        border: 1px solid #ddd;
-        padding: 8px;
+        /*  border: 1px solid #ddd; */
+        /*   padding: 8px; */
         text-align: center;
         /* 水平居中 */
         vertical-align: bottom;
         /* 默认垂直向下对齐 */
     }
 
-    /* ==================== 修改点 ==================== */
-    /* 覆盖第一列的垂直对齐方式 */
-    #customers td:first-child {
-        vertical-align: middle;
-        /* 让第一列垂直居中 */
+    /* ==================== 新增CSS规则 ==================== */
+    /* 专门针对第一列的图标进行精确定位 */
+    #customers td:first-child img {
+        position: relative;
+        /* 启用相对定位 */
+        bottom: 30px;
+        /* 从其正常位置的底部向上移动30px */
     }
-
-    /* =============================================== */
 
     #customers td:not(:first-child) img {
         max-width: 100%;
@@ -335,9 +335,18 @@
                     { type: 'hideImage', imageName: '武士.png' },
                     { type: 'hideImage', imageName: '火长矛骑兵.png' }
                 ]
+            },
+            {
+                conditions: {
+                    civIcon: 'CivIcon-Chinese.webp',
+                    age: 3
+                },
+                actions: [
+                    { type: 'hideImage', imageName: '掷弹兵.png' }
+                ]
             }
-            // 在这里可以添加更多规则...
-            // 例如: { conditions: { civIcon: '...', age: 3 }, actions: [ ... ] }
+
+
         ];
         // =======================================================================
 
@@ -356,29 +365,21 @@
             updateImageSources(age);
         });
 
-        // 新函数：应用所有隐藏规则
         function applyHidingRules(age) {
-            // 1. 先重置，显示所有单元格
+            // 1. 先重置所有单元格和图片的可见性
             $table.find('td').show();
+            $table.find('td img').css('visibility', 'visible'); // 修改点: 确保图片也重置
 
-            // 2. 遍历每一行，因为规则可能与文明相关
             $table.find('tr').each(function () {
                 const $row = $(this);
                 const civIconSrc = $row.find('td:first-child img').attr('src') || '';
-                const civIcon = civIconSrc.split('/').pop(); // 获取文明图标文件名
+                const civIcon = civIconSrc.split('/').pop();
 
-                // 3. 遍历所有规则
                 hidingRules.forEach(rule => {
-                    // 4. 检查此行的条件是否满足规则
                     let conditionsMet = true;
-                    if (rule.conditions.age && rule.conditions.age != age) {
-                        conditionsMet = false;
-                    }
-                    if (rule.conditions.civIcon && rule.conditions.civIcon !== civIcon) {
-                        conditionsMet = false;
-                    }
+                    if (rule.conditions.age && rule.conditions.age != age) conditionsMet = false;
+                    if (rule.conditions.civIcon && rule.conditions.civIcon !== civIcon) conditionsMet = false;
 
-                    // 5. 如果条件满足，执行所有操作
                     if (conditionsMet) {
                         rule.actions.forEach(action => {
                             if (action.type === 'hideColumns') {
@@ -389,7 +390,8 @@
                                     const $img = $(this);
                                     const originalSrc = $img.data('original-src') || '';
                                     if (originalSrc.endsWith(action.imageName)) {
-                                        $img.closest('td').hide();
+                                        // 修改点: 不再隐藏td，而是用 visibility 隐藏图片
+                                        $img.css('visibility', 'hidden');
                                     }
                                 });
                             }
@@ -400,19 +402,20 @@
         }
 
         function updateImageSources(age) {
-            // 步骤1: 应用规则引擎，隐藏应隐藏的单元格
             applyHidingRules(age);
 
             var imageLoadPromises = [];
-            // 步骤2: 只选择可见的图片进行加载
-            var $imagesToLoad = $table.find('td:not(:first-child):visible img');
+            // 修改点: 增加一个 .filter() 来排除那些被CSS隐藏的图片
+            var $imagesToLoad = $table.find('td:not(:first-child):visible img').filter(function () {
+                return $(this).css('visibility') !== 'hidden';
+            });
 
             $imagesToLoad.each(function () {
                 var $img = $(this);
                 var dfd = $.Deferred();
                 imageLoadPromises.push(dfd.promise());
                 var originalSrc = $img.data('original-src');
-                $img.css({ 'visibility': 'visible', 'width': '', 'max-width': '100%' });
+                $img.css({ 'width': '', 'max-width': '100%' }); // visibility 在 applyHidingRules 中已设置
                 $img.off('load error');
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                 var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
@@ -435,7 +438,7 @@
             });
         }
 
-        updateImageSources(4); // 默认加载时代4
+        updateImageSources(4);
 
         $(window).on('resize', function () {
             $table.find('td:not(:first-child) img').css({ 'width': '', 'max-width': '100%' });
@@ -457,6 +460,7 @@
                 var scaleRatio = refCurrentWidth / refNaturalWidth;
                 $table.find('td:not(:first-child):visible img').each(function () {
                     var $img = $(this);
+                    if ($img.css('visibility') === 'hidden') return; // 跳过已隐藏的图片
                     var naturalWidth = this.naturalWidth;
                     if (naturalWidth > 0) {
                         var newWidth = naturalWidth * scaleRatio;
