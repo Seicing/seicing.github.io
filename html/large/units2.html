@@ -677,7 +677,7 @@
 
         // 3. 定义动画参数
         //    这个值应该和您在CSS中设置的初始 top 值保持一致
-        const initialTop = 60; // 动画的起始高度，也是滚动的有效范围
+        const initialTop = 120; // 动画的起始高度，也是滚动的有效范围
 
         // 4. 监听整个窗口的滚动事件
         window.addEventListener('scroll', () => {
@@ -687,7 +687,7 @@
             // 5. 计算新的 top 值
             //    公式: newTop = 初始高度 - 滚动距离
             //    使用 Math.max(0, ...) 来确保 top 值不会变成负数
-            const newTop = Math.max(0, initialTop - scrollY);
+            const newTop = Math.max(20, initialTop - scrollY);
 
             // 6. 将计算出的新 top 值应用到侧边栏的样式上
             sidebar.style.top = newTop + 'px';
