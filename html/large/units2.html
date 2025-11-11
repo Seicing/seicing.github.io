@@ -34,8 +34,8 @@
     /* 全局单元格样式 */
     #customers td,
     #customers th {
-        /*  border: 1px solid #ddd; */
-        /*   padding: 8px; */
+        border: none;
+        padding: 0px;
         text-align: center;
         /* 水平居中 */
         vertical-align: bottom;
@@ -324,6 +324,10 @@
             {
                 conditions: { civIcon: 'CivIcon-Chinese.webp', age: 3 },
                 actions: [{ type: 'hideImage', imageName: '掷弹兵.png' },]
+            },
+            {
+                conditions: { civIcon: 'CivIcon-Sengokudaimyo.webp', age: 2 },
+                actions: [{ type: 'hideImage', imageName: '一向一揆僧侣.png' },]
             },
         ];
         // =======================================================================
