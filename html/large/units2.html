@@ -87,7 +87,11 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry">
+                        <div class="entry">备注：<br>
+因为空间不足，金帐汗国的肉盾和罗斯贡品占用同一个位置，肉盾被视为罗斯贡品封建时代形态<br>
+马里曼萨掷枪兵和穆索法迪战士被视为原兵种的升级，不算作独立兵种<br>
+因为空间不足，骑马旗本武士被视为三种旗本武士的代表<br>
+
 <table id="customers">
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Chinese.webp" width="52px"> </td>
@@ -323,7 +327,6 @@
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mon/钦察弓兵.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mon/土尔扈特.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mon/拔都汗.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mon/肉盾.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mon/罗斯贡品.png"></td>
     </tr>
     <tr>
@@ -391,8 +394,6 @@
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mal/骑士.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mal/僧侣.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mal/曼萨自由民战士.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mal/曼萨穆索法迪战士.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/mal/曼萨掷枪兵.png"></td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Knightstemplar.webp" id="twicer" width="52px"> </td>
@@ -500,6 +501,30 @@
         ];
         // =======================================================================
 
+        // ==================== 新增: 图片家族/别名规则 ====================
+        const imageFamilyRules = {
+            // 定义一个名为 '罗斯贡品' 的家族
+            '罗斯贡品': {
+                // 这个家族在每个时代对应的具体文件名
+                1: '肉盾.png',
+                2: '肉盾.png',
+                3: '罗斯贡品3.png',
+                4: '罗斯贡品4.png'
+            }
+            // 在这里可以添加更多家族规则...
+            // '其他家族': { 1: '...', 2: '...', ... }
+        };
+
+        // 这个映射表告诉脚本，哪些图片属于哪个家族
+        const imageNameAliases = {
+            '肉盾.png': '罗斯贡品',
+            '肉盾.png': '罗斯贡品',
+            '罗斯贡品3.png': '罗斯贡品',
+            '罗斯贡品4.png': '罗斯贡品'
+        };
+        // =======================================================================
+
+
         var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
         var $table = $('#customers');
 
@@ -560,31 +585,21 @@
             });
         }
 
-        function updateImageSources(age) {
 
-            // ==================== 新增逻辑: 特殊处理 twicer 图片 ====================
+        function updateImageSources(age) {
+            // 特殊处理 twicer (保持不变)
             const $twicerImg = $('#twicer');
-            if ($twicerImg.length > 0) { // 检查这个图片是否存在
+            if ($twicerImg.length > 0) {
                 if (age == 1) {
-                    // 时代1的样式
-                    $twicerImg.css({
-                        position: 'relative',
-                        bottom: '30px'
-                    });
+                    $twicerImg.css({ position: 'relative', bottom: '30px' });
                 } else {
-                    // 时代2, 3, 4的样式
-                    $twicerImg.css({
-                        position: 'relative',
-                        bottom: '-50px'
-                    });
+                    $twicerImg.css({ position: 'relative', bottom: '-50px' });
                 }
             }
-            // =======================================================================
 
             applyHidingRules(age);
 
             var imageLoadPromises = [];
-            // 修改点: 增加一个 .filter() 来排除那些被CSS隐藏的图片
             var $imagesToLoad = $table.find('td:not(:first-child):visible img').filter(function () {
                 return $(this).css('visibility') !== 'hidden';
             });
@@ -594,11 +609,27 @@
                 var dfd = $.Deferred();
                 imageLoadPromises.push(dfd.promise());
                 var originalSrc = $img.data('original-src');
-                $img.css({ 'width': '', 'max-width': '100%' }); // visibility 在 applyHidingRules 中已设置
+                $img.css({ 'width': '', 'max-width': '100%' });
                 $img.off('load error');
-                var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
-                var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
-                var newSrc = filename + age + extension;
+
+                // ==================== 核心修改: 计算 newSrc 的新逻辑 ====================
+                let newSrc = '';
+                const baseFileName = originalSrc.split('/').pop(); // 获取原始文件名, e.g., "肉盾.png"
+                const familyName = imageNameAliases[baseFileName]; // 查找它属于哪个家族, e.g., "罗斯贡品"
+
+                if (familyName) {
+                    // 如果找到了家族 (是特殊情况)
+                    const familyRule = imageFamilyRules[familyName]; // 获取家族规则
+                    const targetFileName = familyRule[age]; // 根据当前时代获取目标文件名, e.g., "罗斯贡品3.png"
+                    // 用目标文件名替换原始文件名，保持路径不变
+                    newSrc = originalSrc.replace(baseFileName, targetFileName);
+                } else {
+                    // 如果没找到家族 (是普通情况)，执行默认逻辑
+                    var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
+                    var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
+                    newSrc = filename + age + extension;
+                }
+                // =======================================================================
 
                 $img.one('load', function () { dfd.resolve(); })
                     .attr('src', newSrc)
@@ -616,6 +647,7 @@
                 syncImageScales();
             });
         }
+
 
         updateImageSources(4);
 
