@@ -27,15 +27,21 @@
         border-color: #007bff;
     }
 
+    /* --- 表格和图片的核心修改 --- */
+
     #customers {
-        border-collapse: collapse;
         width: 100%;
+        /* 设定表格宽度为100% */
+        table-layout: fixed;
+        /* 关键！强制表格遵守设定的宽度 */
+        border-collapse: collapse;
     }
 
     #customers td,
     #customers th {
         border: 1px solid #ddd;
         padding: 8px;
+        text-align: center;
     }
 
     #customers tr:nth-child(even) {
@@ -44,6 +50,18 @@
 
     #customers tr:hover {
         background-color: #ddd;
+    }
+
+    /* 针对表格中除了第一个单元格之外的所有图片 */
+    #customers td:not(:first-child) img {
+        max-width: 100%;
+        /* 关键！图片最大宽度为单元格的100% */
+        height: auto;
+        /* 保持图片的宽高比 */
+        display: block;
+        /* 移除图片下方的额外空白 */
+        margin: 0 auto;
+        /* 让图片在单元格内水平居中 */
     }
 </style>
 </head>
@@ -86,6 +104,19 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/国土佣仆.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/黑骑兵.png"></td>
+    </tr>
+    <tr>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Orderofthedragon.webp" width="52px"> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金长矛兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金武士.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金步弓手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金弩手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金火枪兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/侦察兵.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑手.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑士.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金国土佣仆.png"></td>
     </tr>
 </table>
 
@@ -136,23 +167,31 @@
         function updateImageSources(age) {
             // 遍历表格中除了第一个td之外的所有td中的图片
             $('#customers td:not(:first-child) img').each(function () {
-                var originalSrc = $(this).data('original-src');
+                var $img = $(this); // 将jQuery对象缓存起来，提高性能
+                var originalSrc = $img.data('original-src');
+
+                // 切换时代时，先恢复图片的可见性，并移除旧的错误处理程序
+                $img.css('visibility', 'visible');
+                $img.off('error');
+
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.')); // .png
                 var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.')); // 长矛兵
 
                 // 构建新的带有时代数字的图片链接
                 var newSrc = filename + age + extension;
 
-                // 先将图片src设置为新链接
-                $(this).attr('src', newSrc);
+                // 尝试加载新图片，并绑定错误处理函数
+                $img.attr('src', newSrc).on('error', function () {
+                    // 如果加载新链接失败 (e.g. 长矛兵4.png 不存在)
+                    // 就恢复为原始链接 (长矛兵.png)
+                    $img.attr('src', originalSrc);
 
-                // 为这个图片元素绑定一个一次性的error事件处理
-                $(this).one('error', function () {
-                    // 如果加载新链接失败，就恢复为原始链接
-                    // 并且检查原始链接是否也已标记为错误，防止无限循环
-                    if ($(this).attr('src') !== $(this).data('original-src')) {
-                        $(this).attr('src', $(this).data('original-src'));
-                    }
+                    // 再次为这个图片元素绑定一个一次性的error事件
+                    // 以处理原始链接也加载失败的情况
+                    $img.one('error', function () {
+                        // 如果原始链接也加载失败，就彻底隐藏这个图片
+                        $img.css('visibility', 'hidden');
+                    });
                 });
             });
         }
