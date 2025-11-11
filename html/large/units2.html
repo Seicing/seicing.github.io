@@ -88,9 +88,10 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry">备注：<br>
-因为空间不足，金帐汗国的肉盾和罗斯贡品占用同一个位置，肉盾被视为罗斯贡品封建时代形态<br>
+因为空间不足，金帐汗国肉盾被视为封建时代罗斯贡品<br>
+日本旗本武士在封建、城堡、帝王分别以弓箭、刀剑和骑马旗本武士显示<br>
 马里曼萨掷枪兵和穆索法迪战士被视为原兵种的升级，不算作独立兵种<br>
-因为空间不足，骑马旗本武士被视为三种旗本武士的代表<br>
+
 
 <table id="customers">
     <tr>
@@ -137,7 +138,7 @@
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武艺者.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑马旗本武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/旗本武士.png"></td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Sengokudaimyo.webp" width="52px"> </td>
@@ -503,24 +504,30 @@
 
         // ==================== 新增: 图片家族/别名规则 ====================
         const imageFamilyRules = {
-            // 定义一个名为 '罗斯贡品' 的家族
             '罗斯贡品': {
-                // 这个家族在每个时代对应的具体文件名
                 1: '肉盾.png',
                 2: '肉盾.png',
                 3: '罗斯贡品3.png',
                 4: '罗斯贡品4.png'
+            },
+
+            '旗本武士': {
+                1: '弓箭旗本武士.png',
+                2: '弓箭旗本武士.png',
+                3: '刀剑旗本武士.png',
+                4: '骑马旗本武士.png'
             }
-            // 在这里可以添加更多家族规则...
-            // '其他家族': { 1: '...', 2: '...', ... }
         };
 
-        // 这个映射表告诉脚本，哪些图片属于哪个家族
         const imageNameAliases = {
             '肉盾.png': '罗斯贡品',
             '肉盾.png': '罗斯贡品',
             '罗斯贡品3.png': '罗斯贡品',
-            '罗斯贡品4.png': '罗斯贡品'
+            '罗斯贡品4.png': '罗斯贡品',
+            '弓箭旗本武士.png': '旗本武士',
+            '弓箭旗本武士.png': '旗本武士',
+            '刀剑旗本武士.png': '旗本武士',
+            '骑马旗本武士.png': '旗本武士',
         };
         // =======================================================================
 
