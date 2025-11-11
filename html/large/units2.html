@@ -28,30 +28,26 @@
     #customers {
         width: 100%;
         table-layout: fixed;
+        /* 关键：强制列平分宽度 */
         border-collapse: collapse;
     }
 
-    /* 针对所有单元格的基础样式 */
+    /* --- CSS 核心修改 --- */
+    /* 恢复为标准表格对齐方式 */
     #customers td,
     #customers th {
         border: 1px solid #ddd;
         padding: 8px;
-    }
-
-    /* --- CSS 核心修改 --- */
-    /* 使用Flexbox对兵种单元格进行对齐 */
-    #customers td:not(:first-child) {
-        display: flex;
-        align-items: flex-end;
+        text-align: center;
+        /* 水平居中 */
+        vertical-align: bottom;
         /* 垂直向下对齐 */
-        justify-content: center;
-        /* 水平居中对齐 */
     }
 
-    #customers td img {
-        /* 移除之前的所有对齐和block属性，让Flexbox全权控制 */
+    #customers td:not(:first-child) img {
+        /* 移除所有干扰布局的属性，让JS和父级td来控制 */
         max-width: 100%;
-        /* 保证图片不会超出单元格 */
+        /* 保留这个作为基础约束，防止图片首次加载时过大 */
         height: auto;
     }
 
@@ -63,6 +59,7 @@
         background-color: #ddd;
     }
 </style>
+
 </head>
 
 <body id='scroll-2'>
@@ -105,24 +102,22 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/火长矛骑兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
         <td> </td>
-        <td> </td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-ZhuXiLegacy.webp" width="52px"> </td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/长矛兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/武士.png"></td>
-        <td> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/弩手.png"></td>
-        <td> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑手.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/僧侣.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/诸葛弩手.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/元朝掠夺者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/掷弹兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/少林僧侣.png"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/元朝掠夺者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/帝国卫队.png"></td>
+        <td> </td>
     </tr>
 
     <tr>
@@ -130,7 +125,7 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/长矛兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/武士.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/步弓手.png"></td>
-        <td> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火枪兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/侦察兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑手.png"></td>
@@ -139,7 +134,6 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武艺者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
-        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/女武者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/骑马旗本武士.png"></td>
     </tr>
 
@@ -158,7 +152,6 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大筒兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/忍者.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/大名.png"></td>
-        <td> </td>
     </tr>
 
     <tr>
@@ -176,7 +169,6 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/黑骑兵.png"></td>
         <td> </td>
         <td> </td>
-        <td> </td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Orderofthedragon.webp" width="52px"> </td>
@@ -190,7 +182,6 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金骑士.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/镀金国土佣仆.png"></td>
-        <td> </td>
         <td> </td>
         <td> </td>
     </tr>
@@ -211,7 +202,6 @@
         <td> </td>
         <td> </td>
         <td> </td>
-        <td> </td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Jeannedarc.webp" width="52px"> </td>
@@ -227,7 +217,6 @@
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/贞德的骑兵.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/贞德的冠军剑士.png"></td>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/圣女贞德骑士.png"></td>
-        <td> </td>
         <td> </td>
     </tr>
 </table>
@@ -259,7 +248,6 @@
             $(this).data('original-src', $(this).attr('src'));
         });
 
-        // 按钮点击事件
         $('.age-button').on('click', function () {
             $('.age-button').removeClass('active');
             $(this).addClass('active');
@@ -271,73 +259,66 @@
             $('#customers td:not(:first-child) img').each(function () {
                 var $img = $(this);
                 var originalSrc = $img.data('original-src');
-                $img.css('visibility', 'visible');
+
+                // 重置样式，以便重新计算
+                $img.css({
+                    'visibility': 'visible',
+                    'width': '',
+                    'max-width': '100%'
+                });
                 $img.off('error');
+
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                 var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
                 var newSrc = filename + age + extension;
 
-                // 绑定成功加载事件，成功后才进行缩放计算
                 $img.one('load', function () {
-                    // 每次成功加载新图片后，重新计算并同步缩放
                     syncImageScales();
                 }).attr('src', newSrc).on('error', function () {
-                    // 如果带时代的图片失败，尝试加载原始图片
                     $(this).one('load', function () {
-                        syncImageScales(); // 原始图片加载成功后也要同步
+                        syncImageScales();
                     }).attr('src', originalSrc).one('error', function () {
-                        // 如果原始图片也失败，则隐藏
                         $(this).css('visibility', 'hidden');
                     });
                 });
             });
         }
 
-        // --- 全新、更精确的同步图片缩放逻辑 ---
-
-        // 定义基准图片的原始SRC路径
+        // --- 精确的同步图片缩放逻辑 ---
         var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士.png";
 
-        // 1. 存储所有图片的原始尺寸 (在图片加载完后执行)
         $(window).on('load', function () {
             $('#customers td:not(:first-child) img').each(function () {
                 if (this.naturalWidth > 0) {
                     $(this).data('natural-width', this.naturalWidth);
                 }
             });
-            // 页面首次加载完成后，立即执行一次缩放同步
-            updateImageSources(1); // 触发默认时代加载和后续的缩放
+            updateImageSources(1);
         });
 
-        // 2. 当窗口大小改变时，重新同步缩放
         $(window).on('resize', function () {
-            syncImageScales();
+            // 窗口变化时，需要先让图片恢复CSS约束，再重新计算
+            $('#customers td:not(:first-child) img').css({ 'width': '', 'max-width': '100%' });
+            // 延迟一小会，等待浏览器渲染完成列宽，再执行计算
+            setTimeout(syncImageScales, 50);
         });
 
-        // 3. 核心函数：同步所有图片的缩放百分比
         function syncImageScales() {
             var $refImage = null;
-
-            // 通过原始src数据来查找基准图片，这比查找当前src更可靠
             $('#customers td:not(:first-child) img').each(function () {
                 if ($(this).data('original-src') === referenceImageSrc) {
                     $refImage = $(this);
-                    return false; // 找到后退出循环
+                    return false;
                 }
             });
 
-            if (!$refImage || $refImage.length === 0) return;
+            if (!$refImage || $refImage.length === 0 || !$refImage.is(':visible')) return;
 
-            // 使用当前加载图片的naturalWidth，而不是首次加载时缓存的
             var refNaturalWidth = $refImage[0].naturalWidth;
-
             if (refNaturalWidth > 0) {
                 var refCurrentWidth = $refImage.width();
-
-                // 步骤2：计算基准图片的缩放百分比
                 var scaleRatio = refCurrentWidth / refNaturalWidth;
 
-                // 步骤3：将这个百分比应用到所有图片
                 $('#customers td:not(:first-child) img').each(function () {
                     var $img = $(this);
                     var naturalWidth = this.naturalWidth;
@@ -346,7 +327,7 @@
                         var newWidth = naturalWidth * scaleRatio;
                         $img.css({
                             'width': newWidth + 'px',
-                            'max-width': '' // 清除max-width，让JS完全控制
+                            'max-width': 'none' // 让JS的width优先级最高
                         });
                     }
                 });
