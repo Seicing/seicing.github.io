@@ -313,40 +313,18 @@
         // =======================================================================
         const hidingRules = [
             {
-                // 规则1: 当时代为1时...
-                conditions: {
-                    age: 1
-                },
-                // ...执行以下操作
-                actions: [
-                    // 隐藏第11列及之后的所有列
-                    { type: 'hideColumns', from: 11 }
-                ]
+                conditions: { age: 1 },
+                actions: [{ type: 'hideImagesInColumns', from: 11 }]
             },
             {
-                // 规则2: 当文明图标为 "CivIcon-Chinese.webp" 且时代为2时...
-                conditions: {
-                    civIcon: 'CivIcon-Chinese.webp',
-                    age: 2
-                },
-                // ...执行以下操作
-                actions: [
-                    // 隐藏图片文件名为 "武士.png" 的那一格
-                    { type: 'hideImage', imageName: '武士.png' },
-                    { type: 'hideImage', imageName: '火长矛骑兵.png' }
-                ]
+                conditions: { civIcon: 'CivIcon-Chinese.webp', age: 2 },
+                actions: [{ type: 'hideImage', imageName: '武士.png' },
+                { type: 'hideImage', imageName: '火长矛骑兵.png' },]
             },
             {
-                conditions: {
-                    civIcon: 'CivIcon-Chinese.webp',
-                    age: 3
-                },
-                actions: [
-                    { type: 'hideImage', imageName: '掷弹兵.png' }
-                ]
-            }
-
-
+                conditions: { civIcon: 'CivIcon-Chinese.webp', age: 3 },
+                actions: [{ type: 'hideImage', imageName: '掷弹兵.png' },]
+            },
         ];
         // =======================================================================
 
@@ -368,7 +346,7 @@
         function applyHidingRules(age) {
             // 1. 先重置所有单元格和图片的可见性
             $table.find('td').show();
-            $table.find('td img').css('visibility', 'visible'); // 修改点: 确保图片也重置
+            $table.find('td img').css('visibility', 'visible');
 
             $table.find('tr').each(function () {
                 const $row = $(this);
@@ -382,15 +360,24 @@
 
                     if (conditionsMet) {
                         rule.actions.forEach(action => {
+                            // 隐藏整个列（旧逻辑，保留以备不时之需）
                             if (action.type === 'hideColumns') {
                                 $row.find('td:nth-child(n+' + action.from + ')').hide();
                             }
+
+                            // ==================== 新增逻辑 ====================
+                            // 只隐藏指定范围列中的图片
+                            if (action.type === 'hideImagesInColumns') {
+                                $row.find('td:nth-child(n+' + action.from + ') img').css('visibility', 'hidden');
+                            }
+                            // ===============================================
+
+                            // 隐藏单个特定图片
                             if (action.type === 'hideImage') {
                                 $row.find('td img').each(function () {
                                     const $img = $(this);
                                     const originalSrc = $img.data('original-src') || '';
                                     if (originalSrc.endsWith(action.imageName)) {
-                                        // 修改点: 不再隐藏td，而是用 visibility 隐藏图片
                                         $img.css('visibility', 'hidden');
                                     }
                                 });
