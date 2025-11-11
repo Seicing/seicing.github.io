@@ -93,17 +93,49 @@ function cloneSidebarContent() {
 function bindSidebarToggleEventsOnce() {
     const toggleButton = document.getElementById('sidebar-toggle-button');
     const overlay = document.getElementById('sidebar-overlay');
+    const body = document.body;
 
     if (toggleButton && overlay && !toggleButton.dataset.eventsBound) {
 
+        // === 点击：固定展开/收起 ===
         function toggleSidebar() {
-            // 这个函数现在非常纯粹：只负责开关，不处理内容。
-            // 这确保了按钮的响应是即时且可靠的。
-            document.body.classList.toggle('sidebar-open');
+            // 点击切换“固定模式”
+            body.classList.toggle('sidebar-fixed');
+            body.classList.toggle('sidebar-open', body.classList.contains('sidebar-fixed'));
         }
 
         toggleButton.addEventListener('click', toggleSidebar);
-        overlay.addEventListener('click', toggleSidebar);
+        overlay.addEventListener('click', () => {
+            body.classList.remove('sidebar-fixed');
+            body.classList.remove('sidebar-open');
+        });
+
+        // === 悬停：临时展开（仅桌面端） ===
+        function enableHoverDrawer() {
+            if (window.innerWidth >= 1280) { // 桌面模式才启用
+                toggleButton.addEventListener('mouseenter', () => {
+                    if (!body.classList.contains('sidebar-fixed')) {
+                        body.classList.add('sidebar-open');
+                    }
+                });
+                // 鼠标离开按钮或抽屉时关闭（若未固定）
+                const mobileDrawer = document.getElementById('mobile-drawer-container');
+                [toggleButton, mobileDrawer, overlay].forEach(el => {
+                    if (!el) return;
+                    el.addEventListener('mouseleave', (e) => {
+                        // 防止离开后马上关闭，稍等50ms
+                        setTimeout(() => {
+                            if (!body.classList.contains('sidebar-fixed')) {
+                                body.classList.remove('sidebar-open');
+                            }
+                        }, 50);
+                    });
+                });
+            }
+        }
+
+        enableHoverDrawer();
+
         toggleButton.dataset.eventsBound = 'true';
     }
 }
