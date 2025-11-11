@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <link href="https://seicing.com/css/style_large.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>测试</title>
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<style>
+    /* 按钮的基本样式 */
+    .age-button {
+        padding: 10px 15px;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+    }
+
+    /* 被选中的按钮的样式 */
+    .age-button.active {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+
+    #customers {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <button id="back-to-top-button">▲</button>
+    <div id="wrapper" style="width:1850px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="age-buttons">
+    <button class="age-button active" data-age="1">时代 1</button>
+    <button class="age-button" data-age="2">时代 2</button>
+    <button class="age-button" data-age="3">时代 3</button>
+    <button class="age-button" data-age="4">时代 4</button>
+</div>
+
+<br>
+<table id="customers">
+    <tr>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Holyromanempire.webp" width="52px"> </td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/长矛兵.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/武士.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/步弓手.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/弩手.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/火枪兵.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/侦察兵.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/骑手.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/骑士.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/僧侣.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/国土佣仆.png" width="25%"></td>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/hre/黑骑兵.png" width="25%"></td>
+    </tr>
+</table>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:50px">
+                    <a href="https://seicing.com/html/index.html"><b>回到首页</b></a><br><br>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div
+                    style="float:right; width:1480px; text-align:right; border-top: 1px dashed #CACACA;position:relative; right:50px">
+                    <br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // 页面加载时，为每个图片存储其原始src
+        $('#customers td:not(:first-child) img').each(function () {
+            $(this).data('original-src', $(this).attr('src'));
+        });
+
+        // 默认点击时代1
+        updateImageSources(1);
+
+        // 按钮点击事件
+        $('.age-button').on('click', function () {
+            // 移除所有按钮的 active class
+            $('.age-button').removeClass('active');
+            // 给当前点击的按钮添加 active class
+            $(this).addClass('active');
+
+            // 获取时代数字
+            var age = $(this).data('age');
+            // 更新图片链接
+            updateImageSources(age);
+        });
+
+        function updateImageSources(age) {
+            // 遍历表格中除了第一个td之外的所有td中的图片
+            $('#customers td:not(:first-child) img').each(function () {
+                var originalSrc = $(this).data('original-src');
+                var extension = originalSrc.substring(originalSrc.lastIndexOf('.')); // .png
+                var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.')); // 长矛兵
+
+                // 构建新的带有时代数字的图片链接
+                var newSrc = filename + age + extension;
+
+                // 先将图片src设置为新链接
+                $(this).attr('src', newSrc);
+
+                // 为这个图片元素绑定一个一次性的error事件处理
+                $(this).one('error', function () {
+                    // 如果加载新链接失败，就恢复为原始链接
+                    // 并且检查原始链接是否也已标记为错误，防止无限循环
+                    if ($(this).attr('src') !== $(this).data('original-src')) {
+                        $(this).attr('src', $(this).data('original-src'));
+                    }
+                });
+            });
+        }
+    });
+</script>
+
+</html>
