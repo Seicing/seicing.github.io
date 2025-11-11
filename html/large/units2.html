@@ -239,8 +239,8 @@
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑手.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑士.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/僧侣.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼骑兵.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼射手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼骑兵.png" class="rakuda"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼射手.png" class="rakuda"></td>
     </tr>
     <tr>
         <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Ayyubids.webp" width="52px"> </td>
@@ -251,9 +251,9 @@
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/火枪兵.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/侦察兵.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑手.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼长矛骑兵.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/德尔维希.png"></td>
-        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/沙漠掠夺者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼长矛骑兵.png" class="rakuda"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/德尔维希.png" class="rakuda"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/沙漠掠夺者.png" class="rakuda"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/贝都因剑士.png"></td>
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/贝都因掷矛手.png"></td>
     </tr>
@@ -631,6 +631,15 @@
                     var naturalWidth = this.naturalWidth;
                     if (naturalWidth > 0) {
                         var newWidth = naturalWidth * scaleRatio;
+
+                        // ==================== 新增逻辑: 检查 rakuda class ====================
+                        // 2. 检查当前图片是否含有 'rakuda' class
+                        if ($img.hasClass('rakuda')) {
+                            // 3. 如果有，就在基础宽度上再乘以 0.85
+                            newWidth *= 0.85;
+                        }
+                        // =======================================================================
+
                         $img.css({ 'width': newWidth + 'px', 'max-width': 'none' });
                     }
                 });
