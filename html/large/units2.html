@@ -502,32 +502,28 @@
         ];
         // =======================================================================
 
-        // ==================== 新增: 图片家族/别名规则 ====================
+
+        // ==================== 图片家族/别名规则 (最终版) ====================
+        // 这个映射表是新的核心，它将您在HTML中使用的“基础名”映射到一个“家族名”
+        const imageNameAliases = {
+            // "HTML中的基础文件名": "家族名"
+            '罗斯贡品.png': '罗斯贡品',
+            '旗本武士.png': '旗本武士'
+        };
+        // 这个规则表定义了每个家族在不同时代的具体文件名
         const imageFamilyRules = {
             '罗斯贡品': {
                 1: '肉盾.png',
-                2: '肉盾.png',
+                2: '肉盾战场救援.png', // 根据您的反馈，我将这里改成了正确的名字
                 3: '罗斯贡品3.png',
                 4: '罗斯贡品4.png'
             },
-
             '旗本武士': {
                 1: '弓箭旗本武士.png',
                 2: '弓箭旗本武士.png',
                 3: '刀剑旗本武士.png',
                 4: '骑马旗本武士.png'
             }
-        };
-
-        const imageNameAliases = {
-            '肉盾.png': '罗斯贡品',
-            '肉盾.png': '罗斯贡品',
-            '罗斯贡品3.png': '罗斯贡品',
-            '罗斯贡品4.png': '罗斯贡品',
-            '弓箭旗本武士.png': '旗本武士',
-            '弓箭旗本武士.png': '旗本武士',
-            '刀剑旗本武士.png': '旗本武士',
-            '骑马旗本武士.png': '旗本武士',
         };
         // =======================================================================
 
@@ -613,45 +609,46 @@
                 var dfd = $.Deferred();
                 imageLoadPromises.push(dfd.promise());
 
-                // ==================== 核心修正点 ====================
-                // 1. 优先从内存 .data() 中读取原始路径，如果不存在，则从 src/data-src 属性中读取并存入
                 let originalSrc = $img.data('original-src');
                 if (!originalSrc) {
-                    originalSrc = $img.attr('data-src') || $img.attr('src'); // 兼容 src 和 data-src
+                    originalSrc = $img.attr('data-src') || $img.attr('src');
                     $img.data('original-src', originalSrc);
                 }
-                // 如果到这里 originalSrc 仍然无效，则跳过此图片
                 if (!originalSrc) {
                     dfd.resolve();
                     return;
                 }
-                // ===============================================
 
                 $img.css({ 'width': '', 'max-width': '100%' });
                 $img.off('load error');
 
+                // ==================== 最终版: newSrc 计算逻辑 ====================
                 let newSrc = '';
-                const baseFileName = originalSrc.split('/').pop();
-                const familyName = imageNameAliases[baseFileName];
+                const baseFileName = originalSrc.split('/').pop(); // e.g., "旗本武士.png"
+                const familyName = imageNameAliases[baseFileName]; // 查找基础名，得到 "旗本武士"
 
                 if (familyName) {
+                    // 如果是家族成员
                     const familyRule = imageFamilyRules[familyName];
-                    // 2. 健壮性检查: 确保当前时代在规则中有定义
                     if (familyRule && familyRule[age]) {
-                        const targetFileName = familyRule[age];
-                        newSrc = originalSrc.replace(baseFileName, targetFileName);
+                        const targetFileName = familyRule[age]; // e.g., "弓箭旗本武士.png"
+
+                        // 核心: 提取原始路径的目录，并与新的目标文件名拼接
+                        const path = originalSrc.substring(0, originalSrc.lastIndexOf('/') + 1); // e.g., "https://seicing.com/res/.../jpn/"
+                        newSrc = path + targetFileName; // e.g., "https://seicing.com/res/.../jpn/弓箭旗本武士.png"
                     } else {
-                        // 如果规则不完整，则退回原始路径，避免图片加载失败
                         newSrc = originalSrc;
                     }
                 } else {
+                    // 否则，执行默认的“加数字”逻辑
                     var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                     var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
                     newSrc = filename + age + extension;
                 }
+                // =======================================================================
 
                 $img.one('load', function () { dfd.resolve(); })
-                    .attr('src', newSrc) // 现在 newSrc 是正确计算的
+                    .attr('src', newSrc)
                     .one('error', function () {
                         $(this).one('load', function () { dfd.resolve(); })
                             .attr('src', originalSrc)
@@ -666,6 +663,7 @@
                 syncImageScales();
             });
         }
+
 
 
         updateImageSources(4);
