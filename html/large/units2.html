@@ -11,21 +11,11 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <style>
     #sidebar {
-        position: fixed;
-        /* 核心：将定位方式设为固定，使其相对于浏览器窗口定位 */
-        top: 0;
-        /* 距离窗口顶部为0 */
-        left: 0;
-        /* 距离窗口左侧为0 */
+        position: fixed !important;
+        top: 120px;
+        left: 3% !important;
         width: 250px;
-        /* 给侧边栏一个固定的宽度 */
-        height: 100vh;
-        /* 高度占满整个浏览器窗口的高度 (100% of viewport height) */
-        overflow-y: auto;
-        /* 当侧边栏内容超出窗口高度时，让侧边栏自身出现滚动条 */
-
-        box-sizing: border-box;
-        /* 确保内边距不会增加元素的总宽度 */
+        transition: top 0.1s linear;
     }
 
     .age-button {
@@ -672,6 +662,37 @@
                 });
             }
         }
+    });
+
+
+    // 1. 等待整个页面文档加载完成后再执行脚本
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // 2. 获取侧边栏元素
+        const sidebar = document.getElementById('sidebar');
+        // 如果页面上没有这个元素，就直接退出，避免报错
+        if (!sidebar) {
+            return;
+        }
+
+        // 3. 定义动画参数
+        //    这个值应该和您在CSS中设置的初始 top 值保持一致
+        const initialTop = 60; // 动画的起始高度，也是滚动的有效范围
+
+        // 4. 监听整个窗口的滚动事件
+        window.addEventListener('scroll', () => {
+            // 获取当前页面垂直滚动的距离
+            const scrollY = window.scrollY;
+
+            // 5. 计算新的 top 值
+            //    公式: newTop = 初始高度 - 滚动距离
+            //    使用 Math.max(0, ...) 来确保 top 值不会变成负数
+            const newTop = Math.max(0, initialTop - scrollY);
+
+            // 6. 将计算出的新 top 值应用到侧边栏的样式上
+            sidebar.style.top = newTop + 'px';
+        });
+
     });
 </script>
 
