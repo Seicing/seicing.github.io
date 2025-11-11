@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
     <link href="https://seicing.com/css/style_large.css" rel="stylesheet" type="text/css" media="screen" /> 
-<title>测试</title>
+<title>帝国时代4 兵种图表</title>
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <style>
@@ -528,10 +528,6 @@
         var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
         var $table = $('#customers');
 
-        $table.find('td:not(:first-child) img').each(function () {
-            $(this).data('original-src', $(this).attr('data-src'));
-        });
-
         $('.age-button').on('click', function () {
             if ($(this).hasClass('active')) return;
             $('.age-button').removeClass('active');
@@ -586,6 +582,7 @@
         }
 
 
+
         function updateImageSources(age) {
             // 特殊处理 twicer (保持不变)
             const $twicerImg = $('#twicer');
@@ -608,31 +605,46 @@
                 var $img = $(this);
                 var dfd = $.Deferred();
                 imageLoadPromises.push(dfd.promise());
-                var originalSrc = $img.data('original-src');
+
+                // ==================== 核心修正点 ====================
+                // 1. 优先从内存 .data() 中读取原始路径，如果不存在，则从 src/data-src 属性中读取并存入
+                let originalSrc = $img.data('original-src');
+                if (!originalSrc) {
+                    originalSrc = $img.attr('data-src') || $img.attr('src'); // 兼容 src 和 data-src
+                    $img.data('original-src', originalSrc);
+                }
+                // 如果到这里 originalSrc 仍然无效，则跳过此图片
+                if (!originalSrc) {
+                    dfd.resolve();
+                    return;
+                }
+                // ===============================================
+
                 $img.css({ 'width': '', 'max-width': '100%' });
                 $img.off('load error');
 
-                // ==================== 核心修改: 计算 newSrc 的新逻辑 ====================
                 let newSrc = '';
-                const baseFileName = originalSrc.split('/').pop(); // 获取原始文件名, e.g., "肉盾.png"
-                const familyName = imageNameAliases[baseFileName]; // 查找它属于哪个家族, e.g., "罗斯贡品"
+                const baseFileName = originalSrc.split('/').pop();
+                const familyName = imageNameAliases[baseFileName];
 
                 if (familyName) {
-                    // 如果找到了家族 (是特殊情况)
-                    const familyRule = imageFamilyRules[familyName]; // 获取家族规则
-                    const targetFileName = familyRule[age]; // 根据当前时代获取目标文件名, e.g., "罗斯贡品3.png"
-                    // 用目标文件名替换原始文件名，保持路径不变
-                    newSrc = originalSrc.replace(baseFileName, targetFileName);
+                    const familyRule = imageFamilyRules[familyName];
+                    // 2. 健壮性检查: 确保当前时代在规则中有定义
+                    if (familyRule && familyRule[age]) {
+                        const targetFileName = familyRule[age];
+                        newSrc = originalSrc.replace(baseFileName, targetFileName);
+                    } else {
+                        // 如果规则不完整，则退回原始路径，避免图片加载失败
+                        newSrc = originalSrc;
+                    }
                 } else {
-                    // 如果没找到家族 (是普通情况)，执行默认逻辑
                     var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                     var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
                     newSrc = filename + age + extension;
                 }
-                // =======================================================================
 
                 $img.one('load', function () { dfd.resolve(); })
-                    .attr('src', newSrc)
+                    .attr('src', newSrc) // 现在 newSrc 是正确计算的
                     .one('error', function () {
                         $(this).one('load', function () { dfd.resolve(); })
                             .attr('src', originalSrc)
