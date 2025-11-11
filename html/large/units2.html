@@ -250,6 +250,39 @@
         <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/fre/圣女贞德骑士.png"></td>
         <td> </td>
     </tr>
+
+    <tr>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Abbasiddynasty.webp" width="52px"> </td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/僧侣.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼射手.png"></td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Ayyubids.webp" width="52px"> </td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/长矛兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/武士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/步弓手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/弩手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/火枪兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/侦察兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑手.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骆驼长矛骑兵.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/德尔维希.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/沙漠掠夺者.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/贝都因剑士.png"></td>
+        <td><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/贝都因掷矛手.png"></td>
+        <td> </td>
+    </tr>
 </table>
 
                         </div>
@@ -275,51 +308,126 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
+        // =======================================================================
+        // ==================== 规则配置中心 (可自行修改和补充) ====================
+        // =======================================================================
+        const hidingRules = [
+            {
+                // 规则1: 当时代为1时...
+                conditions: {
+                    age: 1
+                },
+                // ...执行以下操作
+                actions: [
+                    // 隐藏第11列及之后的所有列
+                    { type: 'hideColumns', from: 11 }
+                ]
+            },
+            {
+                // 规则2: 当文明图标为 "CivIcon-Chinese.webp" 且时代为2时...
+                conditions: {
+                    civIcon: 'CivIcon-Chinese.webp',
+                    age: 2
+                },
+                // ...执行以下操作
+                actions: [
+                    // 隐藏图片文件名为 "武士.png" 的那一格
+                    { type: 'hideImage', imageName: '武士.png' },
+                    { type: 'hideImage', imageName: '火长矛骑兵.png' }
+                ]
+            }
+            // 在这里可以添加更多规则...
+            // 例如: { conditions: { civIcon: '...', age: 3 }, actions: [ ... ] }
+        ];
+        // =======================================================================
 
-        // 页面加载时，从 data-src 属性中读取并存储原始路径
-        $('#customers td:not(:first-child) img').each(function () {
+        var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
+        var $table = $('#customers');
+
+        $table.find('td:not(:first-child) img').each(function () {
             $(this).data('original-src', $(this).attr('data-src'));
         });
 
         $('.age-button').on('click', function () {
             if ($(this).hasClass('active')) return;
-
             $('.age-button').removeClass('active');
             $(this).addClass('active');
             var age = $(this).data('age');
             updateImageSources(age);
         });
 
-        function updateImageSources(age) {
-            var imageLoadPromises = [];
+        // 新函数：应用所有隐藏规则
+        function applyHidingRules(age) {
+            // 1. 先重置，显示所有单元格
+            $table.find('td').show();
 
-            $('#customers td:not(:first-child) img').each(function () {
+            // 2. 遍历每一行，因为规则可能与文明相关
+            $table.find('tr').each(function () {
+                const $row = $(this);
+                const civIconSrc = $row.find('td:first-child img').attr('src') || '';
+                const civIcon = civIconSrc.split('/').pop(); // 获取文明图标文件名
+
+                // 3. 遍历所有规则
+                hidingRules.forEach(rule => {
+                    // 4. 检查此行的条件是否满足规则
+                    let conditionsMet = true;
+                    if (rule.conditions.age && rule.conditions.age != age) {
+                        conditionsMet = false;
+                    }
+                    if (rule.conditions.civIcon && rule.conditions.civIcon !== civIcon) {
+                        conditionsMet = false;
+                    }
+
+                    // 5. 如果条件满足，执行所有操作
+                    if (conditionsMet) {
+                        rule.actions.forEach(action => {
+                            if (action.type === 'hideColumns') {
+                                $row.find('td:nth-child(n+' + action.from + ')').hide();
+                            }
+                            if (action.type === 'hideImage') {
+                                $row.find('td img').each(function () {
+                                    const $img = $(this);
+                                    const originalSrc = $img.data('original-src') || '';
+                                    if (originalSrc.endsWith(action.imageName)) {
+                                        $img.closest('td').hide();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        }
+
+        function updateImageSources(age) {
+            // 步骤1: 应用规则引擎，隐藏应隐藏的单元格
+            applyHidingRules(age);
+
+            var imageLoadPromises = [];
+            // 步骤2: 只选择可见的图片进行加载
+            var $imagesToLoad = $table.find('td:not(:first-child):visible img');
+
+            $imagesToLoad.each(function () {
                 var $img = $(this);
                 var dfd = $.Deferred();
                 imageLoadPromises.push(dfd.promise());
-
-                // 从存储的数据中获取原始路径
                 var originalSrc = $img.data('original-src');
-
                 $img.css({ 'visibility': 'visible', 'width': '', 'max-width': '100%' });
                 $img.off('load error');
-
                 var extension = originalSrc.substring(originalSrc.lastIndexOf('.'));
                 var filename = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
                 var newSrc = filename + age + extension;
 
-                // 核心: 只有在这里才设置 src 属性，触发图片加载
-                $img.one('load', function () {
-                    dfd.resolve();
-                }).attr('src', newSrc).one('error', function () {
-                    $(this).one('load', function () {
-                        dfd.resolve();
-                    }).attr('src', originalSrc).one('error', function () {
-                        $(this).css('visibility', 'hidden');
-                        dfd.resolve();
+                $img.one('load', function () { dfd.resolve(); })
+                    .attr('src', newSrc)
+                    .one('error', function () {
+                        $(this).one('load', function () { dfd.resolve(); })
+                            .attr('src', originalSrc)
+                            .one('error', function () {
+                                $(this).css('visibility', 'hidden');
+                                dfd.resolve();
+                            });
                     });
-                });
             });
 
             $.when.apply($, imageLoadPromises).done(function () {
@@ -327,40 +435,32 @@
             });
         }
 
-        // 页面加载完成后，立即加载默认的时代4图片
-        updateImageSources(4);
+        updateImageSources(4); // 默认加载时代4
 
         $(window).on('resize', function () {
-            $('#customers td:not(:first-child) img').css({ 'width': '', 'max-width': '100%' });
+            $table.find('td:not(:first-child) img').css({ 'width': '', 'max-width': '100%' });
             setTimeout(syncImageScales, 50);
         });
 
         function syncImageScales() {
             var $refImage = null;
-            $('#customers td:not(:first-child) img').each(function () {
+            $table.find('td:not(:first-child):visible img').each(function () {
                 if ($(this).data('original-src') === referenceImageSrc) {
                     $refImage = $(this);
                     return false;
                 }
             });
-
-            if (!$refImage || $refImage.length === 0 || !$refImage.is(':visible')) return;
-
+            if (!$refImage || $refImage.length === 0) return;
             var refNaturalWidth = $refImage[0].naturalWidth;
             if (refNaturalWidth > 0) {
                 var refCurrentWidth = $refImage.width();
                 var scaleRatio = refCurrentWidth / refNaturalWidth;
-
-                $('#customers td:not(:first-child) img').each(function () {
+                $table.find('td:not(:first-child):visible img').each(function () {
                     var $img = $(this);
                     var naturalWidth = this.naturalWidth;
-
-                    if ($img.is(':visible') && naturalWidth > 0) {
+                    if (naturalWidth > 0) {
                         var newWidth = naturalWidth * scaleRatio;
-                        $img.css({
-                            'width': newWidth + 'px',
-                            'max-width': 'none'
-                        });
+                        $img.css({ 'width': newWidth + 'px', 'max-width': 'none' });
                     }
                 });
             }
