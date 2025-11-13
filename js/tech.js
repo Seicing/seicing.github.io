@@ -741,7 +741,7 @@ let ayanami = {
     "罗斯石墙限制": /*html*/`斯巴斯克塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斯巴斯克塔.png' width='20px'>斯巴斯克塔：必须通过时代4建造斯巴斯克塔地标才能解锁石制防御设施建造`,
     "木制要塞效果": /*html*/`影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/罗斯.png' width='20px'>影响力：木制要塞影响力范围内可以多带回20%木材`,
     "圣三一修道院效果": /*html*/`圣三一修道院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣三一修道院.png' width='20px'>圣三一修道院：圣三一修道院和所有修道院生产僧侣战士的成本-50%`,
-    "金帐汗国双倍训练": /*html*/`汗国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>汗国：花费2倍成本同时训练2个单位，基础训练时间变成原来的2倍(土尔扈特除外)`,
+    "金帐汗国双倍训练": /*html*/`汗国<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>汗国：花费2倍成本同时训练2个单位，基础训练时间变成原来的2倍`,
     "金帐汗国敖包": /*html*/`石材技术和敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png' width='20px'>石材技术和敖包：每个时代都会解锁1个敖包建造上限`,
     "圣物敖包效果": /*html*/`圣物敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png' width='20px'>圣物敖包：萨满消耗1个持有的圣物，将其转化为圣物敖包，不会占据普通敖包上限`,
     "金帐汗国建筑车": /*html*/`建筑车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/建筑车.png' width='20px'>建筑车：选择封建时代升级可获得建筑车，指定一个地点展开为军事生产建筑`,
