@@ -785,9 +785,9 @@ let ayanami = {
     "肉盾法令": /*html*/`肉盾法令<br>Kharash Edict<br>启用后，每当招募任何单位时，设防哨站影响范围内的黄金帐篷和军事建筑都会额外生产一个肉盾`,
     "防御光环法令": /*html*/`防御光环法令<br>Defensive Aura Edict<br>启用后，设防哨站附近单位的生命值 +10%`,
     "牲畜围栏法令": /*html*/`牲畜围栏法令<br>Stockyard Edict<br>启用后，设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金，每个村民每分钟可赚取10黄金`,
-    "生产速度法令": /*html*/`生产速度法令<br>Production Speed Edict<br>启用后，在设防哨站影响范围内的黄金帐篷和军事建筑的生产速度 +20%`,
+    "生产速度法令": /*html*/`生产速度法令<br>Production Speed Edict<br>启用后，在设防哨站影响范围内的黄金帐篷和军事建筑的生产速度 +20%/+30%/+40%/+50%`,
 
-    "生产速度法令效果": /*html*/`生产速度法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/生产速度法令.png' width='20px'>生产速度法令：在设防哨站影响范围内的黄金帐篷和军事建筑的生产速度 +20%`,
+    "生产速度法令效果": /*html*/`生产速度法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/生产速度法令.png' width='20px'>生产速度法令：在设防哨站影响范围内的黄金帐篷和军事建筑的生产速度 +20%/+30%/+40%/+50%`,
     "牲畜围栏法令效果": /*html*/`牲畜围栏法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/牲畜围栏法令.png' width='20px'>牲畜围栏法令：设防哨站影响范围内的牲畜围栏在工作状态下都会生产黄金，每个村民每分钟可赚取10黄金`,
     "肉盾法令效果": /*html*/`肉盾法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/肉盾法令.png' width='20px'>肉盾法令：每当招募任何单位时，设防哨站影响范围内的黄金帐篷和军事建筑都会额外生产一个肉盾`,
     "防御光环法令效果": /*html*/`防御光环法令<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png' width='20px'>防御光环法令：设防哨站附近单位的生命值 +10%`,
@@ -799,7 +799,7 @@ let ayanami = {
     "莫斯科贡赋": /*html*/`莫斯科贡赋<br>Muscovy Yasak<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>重装步兵和重装骑兵装备罗斯护盾，远程护甲+2，此外每分钟可获得200木材，但每存在1个装备罗斯护盾的单位，获取的木材数量-2`,
     "圣物敖包": /*html*/`圣物敖包<br>Relic Ovoos<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>125<br>萨满消耗1个持有的圣物，将其转化为敖包，可突破敖包建造上限，并提升20%的敖包收集效率`,
     "驿站网络贸易": /*html*/`驿站网络贸易<br>Yam Network Trade<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>黄金帐篷每10秒为每个设防哨站产生10黄金，最多可让6个设防哨站生效`,
-    "石料军队": /*html*/`石料军队<br>Stone Armies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>黄金帐篷可以以折扣后的石头成本快速训练独特部队，并将罗斯贡品的装备升级，获得强化的护甲和新月战斧`,
+    "石料军队": /*html*/`石料军队<br>Stone Armies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>2400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>黄金帐篷可以以折扣后的石头成本双倍效率训练独特部队，并将罗斯贡品升级为精锐级别，获得强化的护甲和新月战斧`,
 
     "石料军队肉盾": /*html*/`石料军队肉盾<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费10石进行招募2个`,
     "石料军队怯薛": /*html*/`石料军队怯薛<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石料军队.png' width='20px'>石料军队：可花费220石进行招募2个`,
