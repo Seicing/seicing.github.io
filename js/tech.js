@@ -590,7 +590,7 @@ let ayanami = {
     "德里学院免费学者": /*html*/`学者文化<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学者文化：建造完毕的第一个穆斯林学塾类建筑会获得3个免费的学者`,
     "迈因维克宫殿效果": /*html*/`迈因维克宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/迈因维克宫殿.png' width='20px'>迈因维克宫殿：研究成本-40%，研究效率+40%`,
     "埃尔茨巴赫宫殿效果": /*html*/`埃尔茨巴赫宫殿效果<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿-25%`,
-    "埃尔茨巴赫宫殿效果2": /*html*/`埃尔茨巴赫宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-33%`,
+    "埃尔茨巴赫宫殿效果2": /*html*/`埃尔茨巴赫宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃尔茨巴赫宫殿.png' width='20px'>埃尔茨巴赫宫殿：影响力范围内的所有建筑受到的伤害降低-25%`,
     "城主宫殿效果": /*html*/`城主宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：效率+400%`,
     "城主宫殿冲锋": /*html*/`城主宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城主宫殿.png' width='20px'>城主宫殿：步兵冲锋伤害+50%`,
     "施瓦本宫殿效果": /*html*/`施瓦本宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/施瓦本宫殿.png' width='20px'>施瓦本宫殿：地标成本-10%(界面数据为结算后数据)`,
