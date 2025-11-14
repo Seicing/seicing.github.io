@@ -746,6 +746,8 @@ let ayanami = {
     "圣物敖包效果": /*html*/`圣物敖包<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/圣物敖包.png' width='20px'>圣物敖包：萨满消耗1个持有的圣物，将其转化为圣物敖包，不会占据普通敖包上限`,
     "金帐汗国建筑车": /*html*/`建筑车<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/建筑车.png' width='20px'>建筑车：选择封建时代升级可获得建筑车，指定一个地点展开为军事生产建筑`,
     "拜占庭石墙塔": /*html*/`轻型投石车炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台`,
+    "拜占庭石墙塔2": /*html*/`轻型投石车炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台`,
+
     "马其顿王朝白银": /*html*/`方铅矿采集<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>方铅矿采集：采集黄金和石头时，提交40%采集量的白银`,
     "马其顿王朝大酒庄": /*html*/`大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%`,
     "马其顿王朝甲胄骑兵": /*html*/`贵族学校<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贵族学校.png' width='20px'>贵族学校：仅能在贵族学校每40秒花费750白银捆绑训练3个`,
