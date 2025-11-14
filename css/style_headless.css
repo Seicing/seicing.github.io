@@ -840,16 +840,6 @@ div {
         width: 100% !important;
     }
 
-    #aoe4de td[width="245px"],
-    #aoe4de th[width="245px"] {
-        width: 190px !important;
-    }
-
-    #aoe4de td[width="145px"],
-    #aoe4de th[width="145px"] {
-        width: 105px !important;
-    }
-
     #wenttodie {
         display: grid !important;
         overflow-x: auto !important;
