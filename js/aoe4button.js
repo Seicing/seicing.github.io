@@ -71,21 +71,26 @@ function showCiv(prefix) {
     }
 
 
-    syncDisplayState();
-
-
+    // --- 新增：处理拥有 spc_civ 前缀 class 的特殊文明元素 ---
     document.querySelectorAll('[class*="spc_civ"]').forEach(el => {
-        const civClass = Array.from(el.classList).find(c => c.startsWith("spc_civ"));
-        if (!civClass) return;
 
-        const civCode = civClass.replace("spc_civ", "");
+        // 找出所有以 spc_civ 开头的 class（可能有多个）
+        const civClasses = Array.from(el.classList)
+            .filter(c => c.startsWith("spc_civ"));
 
-        if (civCode === prefix) {
+        if (civClasses.length === 0) return;
+
+        // 当前元素所有文明代码（["eng", "mac"]）
+        const civCodes = civClasses.map(c => c.replace("spc_civ", ""));
+
+        // 如果当前文明 prefix 存在于这个元素允许的文明列表 → 显示
+        if (civCodes.includes(prefix)) {
             el.style.display = '';
         } else {
             el.style.display = 'none';
         }
     });
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
