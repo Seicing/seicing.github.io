@@ -676,10 +676,7 @@ let ayanami = {
     "议会厅效果": /*html*/`议会厅<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/议会厅.png' width='20px'>议会厅：地标工作速度+100%，从地标生产的长弓兵成本-5%`,
     "英国叉叉限制": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：无法在黑暗时代生产长矛兵，默认在封建时代生产坚韧长矛兵`,
     "英国武士加速": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：武士的生产速度+50%`,
-    "英国预备营地": /*html*/`预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地.png' width='20px'>预备营地：可使用预备营地，花费25木建造一个提供直径12格范围强化光环的营地，使单位视野+30%，村民狩猎效率+10%，最大建造5个`,
-
     "预备营地狩猎光环": /*html*/`预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地狩猎光环.png' width='20px'>预备营地：营地影响范围内村民的狩猎效率+10%`,
-
     "红宫炮台效果": /*html*/`红宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/红宫.png' width='20px'>红宫：追加1个红宫的劲弩炮台(攻击范围为9.5，攻击力40)`,
     "骑兵学校效果": /*html*/`骑兵学校<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑兵学校.png' width='20px'>骑兵学校：建造地标后所有马厩生产速度+20%`,
     "商会效果": /*html*/`商会<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/商会.png' width='20px'>商会：研究经济科技后生成1个免费商人`,

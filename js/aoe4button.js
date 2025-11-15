@@ -41,9 +41,6 @@ function showCiv(prefix) {
         }
     });
 
-    // --- 更新附属信息 ---
-
-    // 1. 更新黑头链接
     const blacktou1 = document.querySelector("#blacktou1");
     const blacktou2 = document.querySelector("#blacktou2");
 
@@ -58,7 +55,7 @@ function showCiv(prefix) {
         blacktou2.href = url.toString();
     }
 
-    // 2. 更新 URL 中的 'civ' 参数
+
     try {
         let currentUrl = new URL(window.location.href);
         currentUrl.searchParams.set('civ', prefix);
@@ -67,7 +64,6 @@ function showCiv(prefix) {
         console.error("更新URL时出错: ", e);
     }
 
-    // --- 【重要修复】调用页面通用函数来更新“模拟加成”等依赖URL的部分 ---
     if (typeof triggerFilterFromURL === 'function') {
         triggerFilterFromURL();
     } else {
@@ -92,21 +88,12 @@ function showCiv(prefix) {
     });
 }
 
-
-/**
- * 使用 addEventListener 来确保脚本不会被其他脚本覆盖。
- * 'DOMContentLoaded' 事件在 HTML 文档加载和解析完成后就会触发。
- */
 document.addEventListener('DOMContentLoaded', function () {
     const civ = getQueryVariable("civ");
-
-    // 如果URL中存在civ参数 (例如 ?civ=mon)
     if (civ) {
         const initialButton = document.getElementById(`${civ}Button0`);
 
-        // 确认这个按钮真的存在
         if (initialButton) {
-            // 使用一个极小的延迟来确保页面所有元素都渲染完毕
             setTimeout(function () {
                 initialButton.click();
             }, 10);
@@ -115,37 +102,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
-
-function syncDisplayState() {
-    // 定义主元素和从属元素的对应关系
-    const elementPairs = {
-        'jpnText8': 'senText8-1',
-        'jpnText9': 'senText9-1',
-        'macText9': 'byzText9-1',
-        'tugText8': 'sulText8-1',
-        'tugText9': 'sulText9-1',
-    };
-
-    // 遍历每一对元素
-    for (const sourceId in elementPairs) {
-        const targetId = elementPairs[sourceId];
-
-        const sourceEl = document.getElementById(sourceId);
-        const targetEl = document.getElementById(targetId);
-
-        // 确保两个元素都存在，避免出错
-        if (sourceEl && targetEl) {
-            // 使用 window.getComputedStyle 来获取元素最终的 display 状态
-            // 这比 el.style.display 更可靠，因为它能读取到 CSS 类应用的样式
-            const sourceDisplay = window.getComputedStyle(sourceEl).display;
-
-            if (sourceDisplay === 'none') {
-                // 如果主元素是隐藏的，也隐藏从属元素
-                targetEl.style.display = 'none';
-            } else {
-                // 否则 (例如 'block'), 将从属元素设为 'table-cell'
-                targetEl.style.display = 'table-row';
-            }
-        }
-    }
-}
