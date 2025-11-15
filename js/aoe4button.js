@@ -74,7 +74,22 @@ function showCiv(prefix) {
         console.warn("警告：函数 triggerFilterFromURL() 未定义，模拟加成部分可能不会更新。");
     }
 
+
     syncDisplayState();
+
+
+    document.querySelectorAll('[class*="spc_civ"]').forEach(el => {
+        const civClass = Array.from(el.classList).find(c => c.startsWith("spc_civ"));
+        if (!civClass) return;
+
+        const civCode = civClass.replace("spc_civ", "");
+
+        if (civCode === prefix) {
+            el.style.display = '';
+        } else {
+            el.style.display = 'none';
+        }
+    });
 }
 
 
