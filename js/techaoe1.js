@@ -126,7 +126,7 @@ let ayanami = {
     "医学": "医学<br>Medicine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>祭司治愈速度加快",
     "一神论": "一神论<br>Monotheism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>75<br>祭司可以招降建筑物和其它祭司",
     "牺牲": "牺牲<br>Sacrifice<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>100<br>祭司死亡可以马上招降敌方部队",
-    "狂热行为": "狂热行为<br>Zealotry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>120 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>村民攻击力、移动速度、生命值+50%，收集效率-50%",
+    "狂热行为": "狂热行为<br>Zealotry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>120 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>村民攻击力+7，移动速度+12%，生命值+40，负载量-8",
 
     "工具时代": "工具时代<br>Tool Age<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>120<br>升级到工具时代",
     "青铜时代": "青铜时代<br>Bronze Age<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>140<br>升级到青铜时代",
