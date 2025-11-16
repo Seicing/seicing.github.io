@@ -570,7 +570,7 @@ let ayanami = {
     "胜利之塔效果": /*html*/`胜利之塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png' width='20px'>胜利之塔：清真寺影响范围内生产近战和远程步兵攻击速度永久提升20%`,
     "信仰穹顶建筑效果": /*html*/`信仰穹顶建筑<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/信仰穹顶建筑.png' width='20px'>信仰穹顶建筑：学者成本-50%`,
     "德里免费": /*html*/`学术成就<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学术成就：科技免费`,
-    "德里清真寺": /*html*/`学者文化<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学者文化：被标记为独特建筑，在时代1就可以建造，并且造价便宜50%`,
+    "德里清真寺": /*html*/`学者文化<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>学者文化：被标记为独特建筑，在时代1就可以建造，并且造价为100木`,
     "穆斯林浆果丛产量": /*html*/`花园赏金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>花园赏金：磨坊光环范围内浆果丛的可采集食物量+100%`,
     "穆斯林村民果丛": /*html*/`花园赏金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>花园赏金：村民采集浆果的运载量+25%`,
     "穆斯林村民果丛2": /*html*/`花园赏金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>花园赏金：村民采集浆果的运载量+25%`,
