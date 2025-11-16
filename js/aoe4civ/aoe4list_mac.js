@@ -281,6 +281,13 @@ export const aoe4list = [
   },
   {
     "civ": "mac",
+    "section": "黑暗时代建筑",
+    "name": "瓦兰吉军营",
+    "img": "瓦兰吉军营",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/瓦兰吉军营"
+  },
+  {
+    "civ": "mac",
     "section": "封建时代建筑",
     "name": "瓦兰吉兵工厂",
     "img": "瓦兰吉兵工厂",
@@ -313,13 +320,6 @@ export const aoe4list = [
     "name": "马厩",
     "img": "马厩",
     "link": "https://seicing.com/html/aoe2/buildingsaoe4/马厩"
-  },
-  {
-    "civ": "mac",
-    "section": "封建时代建筑",
-    "name": "瓦兰吉军营",
-    "img": "瓦兰吉军营",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/瓦兰吉军营"
   },
   {
     "civ": "mac",
