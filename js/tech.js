@@ -847,11 +847,8 @@ let ayanami = {
 
     "已增加补给": /*html*/`已增加补给<br>Increased Supplies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>军事建筑的生产速度+50%`,
     "敖包什一税": /*html*/`敖包什一税<br>Ovoo Tithe<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>敖包每分钟可提供60食物、60木材和10黄金收入`,
-
-    "毁灭致盲": /*html*/`毁灭致盲<br>Ruinous Blinding<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>波莫的攻击可使敌人伤害-20%，持续5秒`,
-
+    "毁灭致盲": /*html*/`毁灭致盲<br>Ruinous Blinding<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>波莫的攻击可使敌人伤害-20%，持续5秒`,
     "征收罗斯贡品": /*html*/`征收罗斯贡品<br>Call Rus Tributes<br>从黄金帐篷送出 4 罗斯贡品，并使征收罗斯贡品的成本增加 300 石料。征收罗斯贡品的成本每 30 秒将减少 10 石料。每座军事建筑会将该成本额外减少 5 石料，最多可减少 70 石料。当成本为零时，则会自动部署罗斯贡品`,
-
     "念佛": /*html*/`念佛<br>Nenbutsu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣生命值+60，近战伤害+2`,
     "汉方医学": /*html*/`汉方医学<br>Kampo Medicine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣攻击光环治疗效果+1`,
     "山顶训练": /*html*/`山顶训练<br>Mountain Top Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>一向一揆僧侣移动速度+33%`,
