@@ -317,8 +317,22 @@ export const aoe4list = [
   {
     "civ": "sen",
     "section": "封建时代建筑",
-    "name": "大名府邸",
-    "img": "大名府邸通用",
+    "name": "武田大名府邸",
+    "img": "大名府邸武田",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/大名府邸"
+  },
+  {
+    "civ": "sen",
+    "section": "封建时代建筑",
+    "name": "织田大名府邸",
+    "img": "大名府邸织田",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/大名府邸"
+  },
+  {
+    "civ": "sen",
+    "section": "封建时代建筑",
+    "name": "北条大名府邸",
+    "img": "大名府邸北条",
     "link": "https://seicing.com/html/aoe2/buildingsaoe4/大名府邸"
   },
   {
