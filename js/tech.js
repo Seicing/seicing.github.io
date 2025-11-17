@@ -773,6 +773,13 @@ let ayanami = {
     "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力`,
     "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗发射信号箭让10格范围内的敌人受到的伤害+10%，持续15秒`,
 
+    "早期皇宫卫兵": /*html*/`早期皇宫卫兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/皇宫卫兵.png' width='20px'>早期皇宫卫兵：封建时代可训练早期皇宫卫兵`,
+    "早期骑士": /*html*/`早期骑士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png' width='20px'>早期骑士：封建时代可训练早期骑士`,
+    "早期瓦兰吉卫队": /*html*/`早期瓦兰吉卫队<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/瓦兰吉卫队.png' width='20px'>早期瓦兰吉卫队：封建时代可训练早期瓦兰吉卫队`,
+    "早期骑手": /*html*/`早期骑手<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑手.png' width='20px'>早期骑手：黑暗时代可训练早期骑手`,
+    "早期武士": /*html*/`早期武士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png' width='20px'>早期武士：封建时代可训练早期武士`,
+    "先锋武士": /*html*/`先锋武士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png' width='20px'>先锋武士：黑暗时代可训练先锋武士`,
+
 
     "就地坚守": /*html*/`就地坚守<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>打开冲车侧面防御甲板，获得就地坚守能力，发射8射程8攻击力的箭矢，2.25秒攻击间隔时间，驻扎更多单位可以增加更多箭矢`,
 
