@@ -92,17 +92,17 @@ function showCiv(prefix) {
     });
 
 
-    // --- 新增：处理 notspc_civ 前缀（反向文明显示） ---
-    document.querySelectorAll('[class*="notspc_civ"]').forEach(el => {
+    // --- 新增：处理 not_civ 前缀（反向文明显示） ---
+    document.querySelectorAll('[class*="not_civ"]').forEach(el => {
 
         // 找出所有以 notspc_ 开头的 class（可能有多个）
         const notCivClasses = Array.from(el.classList)
-            .filter(c => c.startsWith("notspc_civ"));
+            .filter(c => c.startsWith("not_civ"));
 
         if (notCivClasses.length === 0) return;
 
         // 当前元素所有“禁止文明”代码，例如 ["chi","zxl"]
-        const bannedCivs = notCivClasses.map(c => c.replace("notspc_civ", ""));
+        const bannedCivs = notCivClasses.map(c => c.replace("not_civ", ""));
 
         // 如果当前文明在禁止列表中 → 隐藏，否则显示
         if (bannedCivs.includes(prefix)) {
