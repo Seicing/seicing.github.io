@@ -532,6 +532,10 @@ div {
     text-align: left;
 }
 
+.textrg {
+    text-align: right;
+}
+
 #celp250 {
     border: 1px solid grey;
 }

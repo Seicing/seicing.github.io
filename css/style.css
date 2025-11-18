@@ -441,6 +441,10 @@ div {
     text-align: left;
 }
 
+.textrg {
+    text-align: right;
+}
+
 .rightline {
     float: right;
     margin-left: 20px;
