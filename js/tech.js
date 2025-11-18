@@ -745,8 +745,11 @@ let ayanami = {
     "拜占庭石墙塔": /*html*/`轻型投石车炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台`,
     "拜占庭石墙塔2": /*html*/`轻型投石车炮台<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>轻型投石车炮台：石墙塔装备了轻型投石车炮台而不是扭力弩炮炮台`,
 
+    "瓦兰吉卫队高效工作": /*html*/`瓦兰吉卫队高效工作<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/瓦兰吉卫队.png' width='20px'>攻城工程学：瓦兰吉卫队在野外战场建造攻城器的效率+100%，每进行一次升级，效率会再额外+100%`,
+
     "马其顿王朝白银": /*html*/`方铅矿采集<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png' width='20px'>方铅矿采集：采集黄金和石头时，提交40%采集量的白银`,
     "马其顿王朝大酒庄": /*html*/`大酒庄<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大酒庄.png' width='20px'>大酒庄：村民在大酒庄附近获得食物采集效率+30%`,
+    "马其顿王朝金角湾塔": /*html*/`金角湾塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金角湾塔.png' width='20px'>金角湾塔：每112秒免费生成3个弩手`,
     "马其顿王朝甲胄骑兵": /*html*/`贵族学校<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贵族学校.png' width='20px'>贵族学校：仅能在贵族学校每40秒花费750白银捆绑训练3个`,
     "马其顿王朝英雄侦察兵光环": /*html*/`精锐出场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英雄侦察兵光环.png' width='20px'>精锐出场(侦察兵)：附近单位的火炬伤害 +35%`,
     "马其顿王朝英雄骑手光环": /*html*/`精锐出场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英雄骑手光环.png' width='20px'>精锐出场(骑手)：附近骑兵的伤害 +2`,
@@ -869,7 +872,7 @@ let ayanami = {
 
     "驯马": /*html*/`驯马<br>Horse Training<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武田家1级独特科技，骑兵的移动速度+10%`,
     "强化日本长枪": /*html*/`强化日本长枪<br>Improved Yari<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武田家2级独特科技，日本长枪骑兵反骑兵伤害+2`,
-    "骑马日本武士大太刀": /*html*/`骑马日本武士大太刀<br>Mounted Samurai Odachi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武田家3级独特科技，骑马武士装备大太刀，对步兵+4额外伤害`,
+    "骑马日本武士大太刀": /*html*/`骑马日本武士大太刀<br>Mounted Samurai Odachi<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>武田家3级独特科技，骑马武士装备大太刀，+1基础攻击力，对步兵+4额外伤害`,
 
     "屋台农田采集": /*html*/`屋台农田采集<br>Yatai Farm Gather<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>屋台可从附近农田采集食物，每块农田提供每分钟4食物，并将屋台的采集上限提高到80`,
     "堡垒防御射箭槽": /*html*/`堡垒防御射箭槽<br>Stronghold Defensive Arrowslits<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>用默认射箭槽炮台升级所有瓦兰吉堡垒，能以6格武器攻击范围造成10伤害`,
