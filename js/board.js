@@ -132,7 +132,7 @@ function renderComments(results, floor) {
         var author = r.attributes.author || '佚名';
         var text = (r.attributes.text || '').replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, '<br>');
         var authorHTML = author === 'python script -D' ? '<img src="https://seicing.com/res/seicingsign.png"><font color="red">精锐战猫</font>' : author;
-        htmlContent += `<div style="width: 100%; max-width: 750px; overflow-wrap: break-word;"><div>${text}</div><br><div style="text-align: right;">${(floor + i + 1)}楼  Posted by: ${authorHTML} | ${formattedTime}</div><img src="https://seicing.com/res/131414.png" draggable="false" style="max-width: 100%;"><br></div>`;
+        htmlContent += `<div style="width:100%; max-width: 750px; overflow-wrap: break-word;"><div>${text}</div><br><div style="text-align: right;">${(floor + i + 1)}楼  Posted by: ${authorHTML} | ${formattedTime}</div><img src="https://seicing.com/res/131414.png" draggable="false" style="max-width:100%;"><br></div>`;
     }
     commentsGroup.innerHTML = htmlContent;
 }

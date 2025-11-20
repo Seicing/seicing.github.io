@@ -87,7 +87,7 @@ html {}
     position: relative;
     display: inline-block;
     vertical-align: bottom;
-    max-width: 100%;
+    max-width:100%;
     overflow: hidden;
 }
 
@@ -114,7 +114,7 @@ html {}
 
 .ma5-lightbox img {
     cursor: pointer;
-    width: 100%;
+    width:100%;
 }
 
 .ma5-lightbox figcaption {
@@ -136,7 +136,7 @@ html {}
 .ma5-gallery>br {}
 
 .ma5-imgbox {
-    width: 100%;
+    width:100%;
     height: 100%;
     position: fixed;
     z-index: 3100;
@@ -157,14 +157,14 @@ html {}
 }
 
 .ma5-imgbox:-webkit-full-screen {
-    width: 100%;
+    width:100%;
     height: 100%;
 }
 
 .ma5-imgbox:before {
     content: "";
     display: block;
-    width: 100%;
+    width:100%;
     height: 10rem;
     position: absolute;
     top: 0;
@@ -179,7 +179,7 @@ html {}
 .ma5-imgbox:after {
     content: "";
     display: block;
-    width: 100%;
+    width:100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -225,7 +225,7 @@ html {}
     height: auto;
     min-width: 0;
     min-height: 0;
-    max-width: 100%;
+    max-width:100%;
     max-height: 100%;
 }
 
@@ -257,7 +257,7 @@ html {}
     display: block;
     overflow: hidden;
     padding: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     left: -100%;
     right: -100%;
@@ -266,7 +266,7 @@ html {}
     margin: auto;
     min-width: 0;
     min-height: 0;
-    max-width: 100%;
+    max-width:100%;
     z-index: 5000;
 }
 
@@ -287,7 +287,7 @@ html {}
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     z-index: 3001;
 }
@@ -309,7 +309,7 @@ html {}
     bottom: 11rem;
     left: 0;
     font-size: 0;
-    width: 100%;
+    width:100%;
     padding: 0;
     text-align: center;
     z-index: 3925;
@@ -394,7 +394,7 @@ html {}
 
 .ma5-control .ma5-lightbox .ma5-html-content {
     position: absolute;
-    width: 100%;
+    width:100%;
     height: 100%;
     background-color: #fff;
 }
@@ -645,7 +645,7 @@ html {}
 .ma5-figcaption,
 .ma5-figcaption-old {
     position: fixed;
-    width: 100%;
+    width:100%;
     z-index: 3910;
     padding: 1.6rem 1.6rem 1.6rem 5rem;
     overflow: hidden;
@@ -790,7 +790,7 @@ html {}
     z-index: 3099;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     background-color: transparent;
 }
@@ -899,7 +899,7 @@ html {}
     .ma5-gallery-active .ma5-figcaption-old,
     .ma5-lightbox-active .ma5-figcaption,
     .ma5-lightbox-active .ma5-figcaption-old {
-        width: 100%;
+        width:100%;
         height: 100%;
         white-space: normal;
         background-color: rgba(0, 0, 0, 0.8);
@@ -1165,7 +1165,7 @@ html {}
     left: 0;
     bottom: 0;
     height: 100%;
-    width: 100%;
+    width:100%;
     border: 0;
 }
 
