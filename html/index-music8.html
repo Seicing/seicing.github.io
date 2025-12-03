@@ -17,15 +17,38 @@
     })
 </script>
 <style>
-    #civ7de.full-table {
-        max-height: none;
-        overflow-y: visible;
+    /* 表格必须合并边框，让外轮廓变成一条线 */
+    #civ7de table {
+        border-collapse: collapse;
+        width: 100%;
     }
 
+    /* 默认完整展开（无需边框） */
+    #civ7de.full-table {
+        max-height: none;
+        overflow: visible;
+        border: none;
+    }
+
+    /* 滚动状态 - 外边框 */
     #civ7de.scroll-table {
         max-height: 400px;
         overflow-y: auto;
         border: 1px solid #888;
+
+        /* 让表格的外边框与 div 边框贴合，不出现双描边 */
+        padding: 0;
+    }
+
+    /* 表格内边框（单线） */
+    #civ7de table td,
+    #civ7de table th {
+        border: 1px solid #888;
+    }
+
+    /* 重点：消除双描边 */
+    #civ7de.scroll-table table {
+        margin: -1px;
     }
 </style>
 </head>
