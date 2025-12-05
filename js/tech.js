@@ -675,7 +675,7 @@ let ayanami = {
     "温嘉德宫殿限制": /*html*/`温嘉德宫殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/温嘉德宫殿.png' width='20px'>温嘉德宫殿：仅能通过温嘉德宫殿军队大量获取`,
     "议会厅效果": /*html*/`议会厅<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/议会厅.png' width='20px'>议会厅：地标工作速度+100%，从地标生产的长弓兵成本-5%`,
     "英国叉叉限制": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：无法在黑暗时代生产长矛兵，默认在封建时代生产坚韧长矛兵`,
-    "英国武士加速": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：武士的生产速度+50%`,
+    "英国武士加速": /*html*/`战争召唤<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png' width='20px'>战争召唤：武士的生产速度+50%(已反馈在单位面板)`,
     "预备营地狩猎光环": /*html*/`预备营地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/预备营地狩猎光环.png' width='20px'>预备营地：营地影响范围内村民的狩猎效率+10%`,
     "红宫炮台效果": /*html*/`红宫<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/红宫.png' width='20px'>红宫：追加1个红宫的劲弩炮台(攻击范围为9.5，攻击力40)`,
     "骑兵学校效果": /*html*/`骑兵学校<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑兵学校.png' width='20px'>骑兵学校：建造地标后所有马厩生产速度+20%`,
