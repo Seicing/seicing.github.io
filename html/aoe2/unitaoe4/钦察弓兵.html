@@ -52,16 +52,24 @@
             <td class="bcF5F8FA"><span style="color:#6e6e85">产地</span></td>
             <td colspan="4">靶场</td>
         </tr>
-        <tr class="textle">
+
+
+        <tr class="textle spc_civgoh">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">80 <img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">70
+            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">160 <img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">140
             </td>
         </tr>
-        <tr class="textle">
+        <tr class="textle spc_civgoh">
             <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
-            <td colspan="4">28秒</td>
+            <td colspan="4">56秒</td>
         </tr>
+        <tr class="textle spc_civgoh">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">训练数</span></td>
+            <td colspan="4">2</td>
+        </tr>
+
+
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">状态数据</span></td>
         </tr>
@@ -209,13 +217,7 @@
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(+20%) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="20px">燃烧箭(解锁对建筑攻击) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三连发.png" width="20px">三连发(-70%) <br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">多段攻击次数</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三连发.png" width="20px">三连发(+2) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三连发.png" width="20px">三连发(额外发射2支30%攻击力的副箭) <br>
                 </td>
             </tr>
             <tr class="textle">
@@ -316,20 +318,20 @@
             <td style="text-align:center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钦察弓兵.png" width="48px"></td>
             <td colspan="5">
                 <div id="filters">
-                    <div class="filterbtn" data-filter="goh" data-keep="true" data-update="buildtime:56"><img
+                    <div class="filterbtn" data-filter="goh" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></div>
                 </div>
             </td>
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
-            <td data-base="28" id="buildtime"> </td>
+            <td data-base="56" id="buildtime"> </td>
             <td>成本</td>
             <td colspan="3">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="25px">
-                <span data-base="80" id="cost1"></span>
+                <span data-base="160" id="cost1"></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="25px">
-                <span data-base="70" id="cost2"></span>
+                <span data-base="140" id="cost2"></span>
             </td>
         </tr>
         <tr>
@@ -359,8 +361,17 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra207" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
+                        width="20px">汗国：同时训练2个单位<br></span>
+                <span id="Extra207-a" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
+                        width="20px">汗国：同时训练3个单位<br></span>
+
+
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/流血.png"
                     width="20px">流血：攻击造成流血效果，每秒让敌人失去2生命值，持续6秒，攻击会刷新持续时间，三连发的3次流血相互独立 <br>
+                <span id="Extra123" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三连发.png"
+                        width="20px">三连发：额外发射2支30%攻击力的副箭<br></span>
+
                 <span id="Extra126" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png"
                         width="20px">防御光环法令：设防哨站附近单位的生命值 +10%<br></span>
                 <span id="Extra121" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png"
@@ -380,6 +391,9 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="goh" data-text="Extra207-a"><a onmousemove="showPic(event,'靶场援军');"
+                onmouseout="hiddenPic();">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/靶场援军.png" width="30px"></a></div>
 
         <div class="icon" data-game="goh" data-text="Extra18"><a onmousemove="showPic(event,'荣光冲锋');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/荣光冲锋.png" width="30px"></a>
@@ -414,9 +428,8 @@
                 onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px"></a></div>
 
-        <div class="icon" data-game="goh" data-mode="diffMul add" data-type="damage brust" data-value="0.3 2"><a
-                onmousemove="showPic(event,'三连发');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三连发.png" width="30px"></a>
+        <div class="icon" data-game="goh" data-text="Extra123"><a onmousemove="showPic(event,'三连发');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三连发.png" width="30px"></a>
         </div>
 
 

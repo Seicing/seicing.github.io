@@ -58,16 +58,39 @@
             <td class="bcF5F8FA"><span style="color:#6e6e85">产地</span></td>
             <td colspan="4">马厩</td>
         </tr>
-        <tr class="textle">
+
+
+        <tr class="textle not_civgoh">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">100 <img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">20
+            <td colspan="4">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">100
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">20
             </td>
         </tr>
-        <tr class="textle">
+        <tr class="textle not_civgoh">
             <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
             <td colspan="4">22秒</td>
         </tr>
+
+
+        <tr class="textle spc_civgoh">
+            <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
+            <td colspan="4">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">200
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">40
+            </td>
+        </tr>
+        <tr class="textle spc_civgoh">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
+            <td colspan="4">44秒</td>
+        </tr>
+        <tr class="textle spc_civgoh">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">训练数</span></td>
+            <td colspan="4">2</td>
+        </tr>
+
+
+
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">状态数据</span></td>
         </tr>
@@ -1551,8 +1574,8 @@
                         data-update="damage:8 chargedamage:8 hp:110 bonusdamage1:8 bonusdamage2:8"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></div>
                     <div class="filterbtn" data-filter="goh" data-keep="true"
-                        data-update="damage:8 chargedamage:8 hp:110 bonusdamage1:8 bonusdamage2:8 buildtime:45"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></div>
+                        data-update="damage:8 chargedamage:8 hp:110 bonusdamage1:8 bonusdamage2:8 buildtime:45 cost1:200 cost2:40">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></div>
                     <div class="filterbtn" data-filter="jpn" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png" width="25px"></div>
                     <div class="filterbtn" data-filter="byz" data-keep="true"><img
@@ -1608,6 +1631,12 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra207" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
+                        width="20px">汗国：同时训练2个单位<br></span>
+                <span id="Extra207-a" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
+                        width="20px">汗国：同时训练3个单位<br></span>
+
+
                 <span id="Extra126" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png"
                         width="20px">防御光环法令：设防哨站附近单位的生命值 +10%<br></span>
                 <span id="Extra121" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png"
@@ -1667,6 +1696,11 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="goh" data-text="Extra207-a"><a onmousemove="showPic(event,'马厩援军');"
+                onmouseout="hiddenPic();">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/马厩援军.png" width="30px"></a></div>
+
+
         <div class="icon" data-game="goh" data-group="gohdict" data-text="Extra126"><a
                 onmousemove="showPic(event,'防御光环法令');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png" width="30px"></a>

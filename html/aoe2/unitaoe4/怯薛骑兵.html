@@ -53,16 +53,40 @@
             <td class="bcF5F8FA"><span style=" color:#6e6e85">产地</span></td>
             <td colspan="4">马厩</td>
         </tr>
-        <tr class="textle">
+
+
+        <tr class="textle not_civgoh">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">120 <img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">80
+            <td colspan="4">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">120
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">80
             </td>
         </tr>
-        <tr class="textle">
+        <tr class="textle not_civgoh">
             <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
             <td colspan="4">30秒</td>
         </tr>
+
+
+
+        <tr class="textle spc_civgoh">
+            <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
+            <td colspan="4">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">240
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">160
+            </td>
+        </tr>
+        <tr class="textle spc_civgoh">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
+            <td colspan="4">60秒</td>
+        </tr>
+        <tr class="textle spc_civgoh">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">训练数</span></td>
+            <td colspan="4">2</td>
+        </tr>
+
+
+
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">状态数据</span></td>
         </tr>
@@ -445,8 +469,9 @@
                 <div id="filters">
                     <div class="filterbtn" data-filter="mon" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px"></div>
-                    <div class="filterbtn" data-filter="goh" data-keep="true" data-update="buildtime:60"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png" width="25px"></div>
+                    <div class="filterbtn" data-filter="goh" data-keep="true"
+                        data-update="buildtime:60 cost1:240 cost3:160"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"
+                            width="25px"></div>
                 </div>
             </td>
         </tr>
@@ -488,6 +513,12 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra207" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
+                        width="20px">汗国：同时训练2个单位<br></span>
+                <span id="Extra207-a" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
+                        width="20px">汗国：同时训练3个单位<br></span>
+
+
                 <span id="Extra126" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png"
                         width="20px">防御光环法令：设防哨站附近单位的生命值 +10%<br></span>
                 <span id="Extra121" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png"
@@ -516,12 +547,16 @@
                         width="20px">机动箭：射出一支信号箭，使附近单位 (包括汗) 的移动速度+33%<br></span>
                 <span id="Extra82" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御箭.png"
                         width="20px">防御箭：射出一支信号箭，使附近单位 (包括汗) 的护甲+2<br></span>
+
+
                 <span id="Extra88" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战斗老兵.png"
                         width="20px">战斗老兵：造成伤害时恢复3生命值<br></span>
                 <span id="Extra88-a" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战斗老兵.png"
                         width="20px">战斗老兵：造成伤害时恢复4生命值<br></span>
                 <span id="Extra88-b" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战斗老兵.png"
                         width="20px">战斗老兵：造成伤害时恢复5生命值<br></span>
+
+
 
             </td>
         </tr>
@@ -530,6 +565,12 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+
+        <div class="icon" data-game="goh" data-text="Extra207-a"><a onmousemove="showPic(event,'马厩援军');"
+                onmouseout="hiddenPic();">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/马厩援军.png" width="30px"></a></div>
+
+
         <div class="icon" data-game="goh" data-group="gohdict" data-text="Extra126"><a
                 onmousemove="showPic(event,'防御光环法令');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御光环法令.png" width="30px"></a>
@@ -605,6 +646,10 @@
         <div class="icon" data-game="goh" data-mode="diffMul" data-text="Extra88-a" data-type="attackspeed"
             data-value="0.909"><a onmousemove="showPic(event,'萨莱长矛骑兵');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/萨莱长矛骑兵.png" width="30px"></a></div>
+
+
+
+
 
 
         <div class="icon" data-game="mon" data-mode="diffMul" data-text="Extra88-b" data-type="attackspeed"
