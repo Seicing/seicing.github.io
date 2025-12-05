@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="height:100%;">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
-    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+    <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>工作大象</title>
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
@@ -27,23 +27,15 @@
 
 </head>
 
-<body id='scroll-2'>
+<body style="height:100%;" id='scroll-2'>
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="width:1280px ; margin:auto">
-        <div id="wrapper2">
-            <div id="header" class="container">
-                <div id="logo">
-                    <H1>
-                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
-                    </H1>
-                </div>
-            </div>
-            <div id="page">
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
                 <div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp250">
@@ -134,7 +126,7 @@
         <a id="jia"></a><b><span style="color: #000000">简介</span></b>
     </h1>
     <hr class="hrsty">
-    工作大象是图格鲁克王朝独特的移动资源提交点，可以在城镇中心花费资源不占用生产序列马上生成，且不占人口，最大只能拥有20个<br>
+    工作大象是图格鲁克王朝独特的移动资源提交点，可以在城镇中心花费资源不占用生产序列马上生成，且不占人口，最大只能拥有15个<br>
     村民提交到工作大象可以获得5%的额外资源，研究科技可以进一步提升
 
 
@@ -199,12 +191,12 @@
                 <td style="text-align:left"><span class="编织篮子"></span></td>
             </tr>
             <tr>
-                <td style="text-align:left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/承重框架.png" width="30px">
+                <td style="text-align:left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运载体格.png" width="30px">
                 </td>
-                <td style="text-align:left;width:80px;">承重框架</td>
+                <td style="text-align:left;width:80px;">运载体格</td>
                 <td style="text-align:left;width:30px;">Ⅲ</td>
-                <td style="text-align:left;width:120px;"><span class="承重框架成本"></span></td>
-                <td style="text-align:left"><span class="承重框架"></span></td>
+                <td style="text-align:left;width:120px;"><span class="运载体格成本"></span></td>
+                <td style="text-align:left"><span class="运载体格"></span></td>
             </tr>
             <tr>
                 <td style="text-align:left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象挽具.png" width="30px">
@@ -277,7 +269,7 @@
                 <td class="bcF5F8FA"><span style="color:#6e6e85">提交量</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/编织篮子.png" width="20px">编织篮子(+5%) <br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/承重框架.png" width="20px">承重框架(+5%) <br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/运载体格.png" width="20px">运载体格(+5%) <br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象挽具.png" width="20px">大象挽具(+5%) <br>
                 </td>
             </tr>
@@ -425,11 +417,14 @@
         </div>
     </div>
 </div>
-</div>
+
+                        </div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:relative; left:-20px">
-                    <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou1"><b>回到首页</b></a><br><br>
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        <a href="https://seicing.com/html/aoe2/index-aoe4units.html?civ=chi" id="blacktou1"><b>回到首页</b></a><br><br>
 <a href="#jia">简介</a><br>
 <a href="#sp1">科技</a><br>
 <a href="#sp">加成</a><br>
@@ -438,6 +433,7 @@
 <a href="#oth">杂项</a><br>
 <a href="#oth9370">模拟加成</a><br>
 
+                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -446,12 +442,13 @@
 
                 </div>
                 <div style="clear: both;">&nbsp;</div>
-
             </div>
 
         </div>
     </div>
+
 </body>
+
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/tech.js"></script>
