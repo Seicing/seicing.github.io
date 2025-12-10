@@ -155,7 +155,7 @@
   {
     "name": "帝国时代2 土耳其",
     "x": 2587,
-    "y": 1580,
+    "y": 1620,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
     "url": "https://seicing.com/html/aoe2/2/土耳其.html",
     "width": 24,
@@ -164,7 +164,7 @@
   {
     "name": "帝国时代3 奥斯曼",
     "x": 2617,
-    "y": 1580,
+    "y": 1620,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Ottoman.png",
     "url": "https://seicing.com/html/aoe3/3/奥斯曼.html",
     "width": 24,
@@ -173,7 +173,7 @@
   {
     "name": "帝国时代4 奥斯曼",
     "x": 2647,
-    "y": 1580,
+    "y": 1620,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Ottomans.webp",
     "url": "https://seicing.com/html/aoe2/4/奥斯曼.html",
     "width": 24,
@@ -199,8 +199,8 @@
   },
   {
     "name": "帝国时代2 斯拉夫",
-    "x": 2638,
-    "y": 1856,
+    "x": 2608,
+    "y": 1838,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Slavs.webp",
     "url": "https://seicing.com/html/aoe2/2/斯拉夫.html",
     "width": 24,
@@ -208,8 +208,8 @@
   },
   {
     "name": "帝国时代3 俄罗斯",
-    "x": 2668,
-    "y": 1856,
+    "x": 2638,
+    "y": 1838,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Russian.png",
     "url": "https://seicing.com/html/aoe3/3/俄罗斯.html",
     "width": 24,
@@ -217,8 +217,8 @@
   },
   {
     "name": "帝国时代4 罗斯",
-    "x": 2698,
-    "y": 1856,
+    "x": 2668,
+    "y": 1838,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Rus.webp",
     "url": "https://seicing.com/html/aoe2/4/罗斯.html",
     "width": 24,
@@ -290,7 +290,7 @@
   {
     "name": "帝国时代4 圣女贞德",
     "x": 2252,
-    "y": 1709,
+    "y": 1769,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Jeannedarc.webp",
     "url": "https://seicing.com/html/aoe2/4/圣女贞德.html",
     "width": 24,
@@ -388,8 +388,8 @@
   },
   {
     "name": "帝国时代2 埃塞俄比亚",
-    "x": 2620,
-    "y": 1136,
+    "x": 2683,
+    "y": 1127,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Ethiopians.webp",
     "url": "https://seicing.com/html/aoe2/2/埃塞俄比亚.html",
     "width": 24,
@@ -397,8 +397,8 @@
   },
   {
     "name": "帝国时代3 埃塞俄比亚",
-    "x": 2650,
-    "y": 1136,
+    "x": 2713,
+    "y": 1127,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Ethiopian_aoe3de.png",
     "url": "https://seicing.com/html/aoe3/3/埃塞俄比亚.html",
     "width": 24,
@@ -478,8 +478,8 @@
   },
   {
     "name": "帝国时代2 意大利",
-    "x": 2379,
-    "y": 1677,
+    "x": 2377,
+    "y": 1671,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Italians.webp",
     "url": "https://seicing.com/html/aoe2/2/意大利.html",
     "width": 24,
@@ -549,11 +549,11 @@
     "height": 14
   },
   {
-    "name": "帝国时代2 保加利亚",
-    "x": 2543,
-    "y": 1699,
-    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
-    "url": "https://seicing.com/html/aoe2/2/保加利亚.html",
+    "name": "神话时代 希腊",
+    "x": 2505,
+    "y": 1641,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/GreekPortrait.png",
+    "url": "https://seicing.com/html/aoe2/m/宙斯.html",
     "width": 24,
     "height": 24
   },
@@ -576,11 +576,38 @@
     "height": 14
   },
   {
+    "name": "神话时代 埃及",
+    "x": 2578,
+    "y": 1443,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/EgyptianPortrait.png",
+    "url": "https://seicing.com/html/aoe2/m/拉.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "神话时代 亚特兰提斯",
+    "x": 1862,
+    "y": 1595,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/AtlanteanPortrait.png",
+    "url": "https://seicing.com/html/aoe2/m/乌拉诺斯.html",
+    "width": 24,
+    "height": 24
+  },
+  {
     "name": "帝国时代2 维京",
-    "x": 2285,
+    "x": 2276,
     "y": 1967,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vikings.webp",
     "url": "https://seicing.com/html/aoe2/2/维京.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "神话时代 维京",
+    "x": 2329,
+    "y": 2003,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/NorsePortrait.png",
+    "url": "https://seicing.com/html/aoe2/m/奥丁.html",
     "width": 24,
     "height": 24
   },
@@ -631,8 +658,8 @@
   },
   {
     "name": "帝国时代3 荷兰",
-    "x": 2259,
-    "y": 1829,
+    "x": 2265,
+    "y": 1825,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Dutch.png",
     "url": "https://seicing.com/html/aoe3/3/荷兰.html",
     "width": 24,
@@ -641,7 +668,7 @@
   {
     "name": "帝国时代2 西西里",
     "x": 2380,
-    "y": 1591,
+    "y": 1581,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Sicilians.webp",
     "url": "https://seicing.com/html/aoe2/2/西西里.html",
     "width": 24,
@@ -730,8 +757,8 @@
   },
   {
     "name": "帝国时代2 普鲁",
-    "x": 3141,
-    "y": 1396,
+    "x": 3095,
+    "y": 1417,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Puru.webp",
     "url": "https://seicing.com/html/aoe2/2/普鲁.html",
     "width": 24,
@@ -768,10 +795,100 @@
     "name": "帝国时代3 墨西哥",
     "x": 986,
     "y": 1280,
-    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Mexico.png",
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Mexico.jpg",
     "url": "https://seicing.com/html/aoe3/3/墨西哥.html",
     "width": 24,
     "height": 16
+  },
+  {
+    "name": "帝国时代 苏美尔",
+    "x": 2824,
+    "y": 1496,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Sumerians.png",
+    "url": "https://seicing.com/html/aoe2/1/苏美尔.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 亚述",
+    "x": 2810,
+    "y": 1562,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Assyrians.png",
+    "url": "https://seicing.com/html/aoe2/1/亚述.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 巴比伦",
+    "x": 2794,
+    "y": 1500,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Babylonians.png",
+    "url": "https://seicing.com/html/aoe2/1/巴比伦.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 巴尔米拉",
+    "x": 2678,
+    "y": 1556,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Palmyrans.png",
+    "url": "https://seicing.com/html/aoe2/1/巴尔米拉.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 米诺斯",
+    "x": 2511,
+    "y": 1559,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Minoans.png",
+    "url": "https://seicing.com/html/aoe2/1/米诺斯.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 马其顿",
+    "x": 2464,
+    "y": 1686,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Macedonians.png",
+    "url": "https://seicing.com/html/aoe2/1/马其顿.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 赫梯",
+    "x": 2660,
+    "y": 1612,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Hittites.png",
+    "url": "https://seicing.com/html/aoe2/1/赫梯.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 迦太基",
+    "x": 2317,
+    "y": 1551,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Carthaginians.png",
+    "url": "https://seicing.com/html/aoe2/1/迦太基.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 腓尼基",
+    "x": 2650,
+    "y": 1498,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Phoenicians.png",
+    "url": "https://seicing.com/html/aoe2/1/腓尼基.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代2 保加利亚",
+    "x": 2543,
+    "y": 1699,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
+    "url": "https://seicing.com/html/aoe2/2/保加利亚.html",
+    "width": 24,
+    "height": 24
   },
   {
     "name": "帝国时代2 女真",
