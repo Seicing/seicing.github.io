@@ -109,24 +109,6 @@
         // ======= 坐标拾取临时 marker =======
         var tempMarker = null;
 
-        function createAutoIcon(p) {
-                return new Promise(resolve => {
-                        const img = new Image();
-                        img.onload = function () {
-                                // 如果 p.size 只定义宽度，比如 [48]
-                                let w = p.size ? p.size[0] : 48;
-                                let h = img.height * (w / img.width); // 自动按比例算高度
-
-                                resolve(L.icon({
-                                        iconUrl: p.icon,
-                                        iconSize: [w, h],
-                                        iconAnchor: p.anchor || [w / 2, h], // 底部居中
-                                }));
-                        };
-                        img.src = p.icon;
-                });
-        }
-
         // ======= 点击事件：显示坐标并放置标记 =======
         map.on('click', function (e) {
                 let x = e.latlng.lng;
@@ -153,18 +135,31 @@
         // ============================
         fetch("https://seicing.com/js/locations.json")
                 .then(res => res.json())
-                .then(async list => {
+                .then(list => {
 
-                        for (let p of list) {
-                                let icon = await createAutoIcon(p);
+                        list.forEach(p => {
+
+                                // 默认图标大小 48×48
+                                const icon = L.icon({
+                                        iconUrl: p.icon,
+                                        iconSize: p.size || [48, 48],
+                                        iconAnchor: p.anchor || [24, 48],
+                                });
 
                                 L.marker([p.y, p.x], { icon })
                                         .addTo(map)
-                                        .bindTooltip(p.name || "无名地点")
-                                        .on("click", () => p.url && (window.location.href = p.url));
-                        }
+                                        .bindTooltip(p.name || "未命名地点", {
+                                                direction: "top",
+                                                offset: [0, -10],
+                                                opacity: 0.9
+                                        })
+                                        .on("click", () => {
+                                                if (p.url) window.location.href = p.url;
+                                        });
+                        });
 
-                });
+                })
+                .catch(err => console.error("locations.json 加载失败:", err));
 </script>
 
 </html>
