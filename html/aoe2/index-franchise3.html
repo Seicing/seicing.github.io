@@ -117,13 +117,25 @@
                 minZoom: -3,
                 maxZoom: 3,
                 zoomSnap: 0.1,
-                attributionControl: false   // ← 关闭右下角 Logo
+                attributionControl: false
         });
 
         var bounds = [[0, 0], [IMG_H, IMG_W]];
 
-        L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
-        map.fitBounds(bounds);
+        const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds);
+        overlay.addTo(map);
+
+        // ---- 关键：等待图片加载完再 fitBounds + 修正手机初始缩放问题 ----
+        overlay.once("load", () => {
+                map.fitBounds(bounds);
+
+                // 手机端首次渲染必须强制刷新大小
+                setTimeout(() => {
+                        map.invalidateSize(true);
+                        // 再触发一次 zoom，解决手机需点击 +/- 才归位的问题
+                        map.setZoom(map.getZoom());
+                }, 150);
+        });
 
         // ============================
         // 坐标拾取（红点）
@@ -149,61 +161,74 @@
                 map.panTo([y, x]);
         });
 
-
         // ============================
         // 图标动态缩放系统
         // ============================
-
-        // 图标缩放曲线（你可以调整倍数）
         function iconScale(zoom) {
                 return 1 + zoom * 0.35;
-                // zoom=0 → 1倍
-                // zoom=2 → 1.7倍
-                // zoom=-2 → 0.3倍
         }
 
         let currentScale = iconScale(map.getZoom());
-
-        // 所有 marker 存在这里，缩放时更新
         const dynamicMarkers = [];
 
-        // 地图缩放事件 → 更新所有图标大小
+        // 当缩放时调整图标大小
         map.on("zoom", () => {
                 currentScale = iconScale(map.getZoom());
 
                 dynamicMarkers.forEach(obj => {
-                        const base = obj.baseSize;
-                        let size = base * currentScale;
+                        const w0 = obj.baseWidth;
+                        const h0 = obj.baseHeight;
+                        let w = w0 * currentScale;
+                        let h = h0 * currentScale;
 
                         obj.marker.setIcon(
                                 L.icon({
                                         iconUrl: obj.data.icon,
-                                        iconSize: [size, size],
-                                        iconAnchor: [size / 2, size]
+                                        iconSize: [w, h],
+                                        iconAnchor: [w / 2, h]
                                 })
                         );
                 });
         });
 
+        // ============================
+        // 工具：读取图片原始宽高 → 按比例自动计算高度
+        // ============================
+        function loadImageSize(url) {
+                return new Promise(res => {
+                        const img = new Image();
+                        img.onload = () => {
+                                res({ w: img.width, h: img.height });
+                        };
+                        img.src = url;
+                });
+        }
 
         // ============================
-        // 加载 locations.json → 图标动态缩放
+        // 读取 locations.json
         // ============================
         fetch("https://seicing.com/js/locations.json")
                 .then(res => res.json())
-                .then(list => {
-                        list.forEach(p => {
+                .then(async list => {
 
-                                // 如果 json 没写 size，默认 48
-                                const baseSize = (Array.isArray(p.size) ? p.size[0] : p.size) || 24;
+                        for (const p of list) {
 
-                                // 初始大小
-                                const size = baseSize * currentScale;
+                                const baseWidth = (Array.isArray(p.size) ? p.size[0] : p.size) || 48;
+
+                                // 读取原图比例
+                                const natural = await loadImageSize(p.icon);
+                                const ratio = natural.h / natural.w;   // 高宽比
+
+                                // 自动计算高度
+                                const baseHeight = baseWidth * ratio;
+
+                                const w = baseWidth * currentScale;
+                                const h = baseHeight * currentScale;
 
                                 let icon = L.icon({
                                         iconUrl: p.icon,
-                                        iconSize: [size, size],
-                                        iconAnchor: [size / 2, size]
+                                        iconSize: [w, h],
+                                        iconAnchor: [w / 2, h]
                                 });
 
                                 let mk = L.marker([p.y, p.x], { icon })
@@ -217,13 +242,13 @@
                                                 if (p.url) window.location.href = p.url;
                                         });
 
-                                // 记录，供缩放回调使用
                                 dynamicMarkers.push({
                                         marker: mk,
                                         data: p,
-                                        baseSize: baseSize
+                                        baseWidth,
+                                        baseHeight
                                 });
-                        });
+                        }
                 })
                 .catch(err => console.error("locations.json 加载失败:", err));
 </script>
