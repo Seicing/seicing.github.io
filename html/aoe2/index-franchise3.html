@@ -10,6 +10,7 @@
 <title>帝国时代文明地图</title>
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/leaflet.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
 <script type="text/javascript">
@@ -102,26 +103,40 @@
         var bounds = [[0, 0], [IMG_H, IMG_W]];
 
         // 覆盖整张大图
-        var image = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+        L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
         map.fitBounds(bounds);
-
 
         // ======= 坐标拾取临时 marker =======
         var tempMarker = null;
+
+        function createAutoIcon(p) {
+                return new Promise(resolve => {
+                        const img = new Image();
+                        img.onload = function () {
+                                // 如果 p.size 只定义宽度，比如 [48]
+                                let w = p.size ? p.size[0] : 48;
+                                let h = img.height * (w / img.width); // 自动按比例算高度
+
+                                resolve(L.icon({
+                                        iconUrl: p.icon,
+                                        iconSize: [w, h],
+                                        iconAnchor: p.anchor || [w / 2, h], // 底部居中
+                                }));
+                        };
+                        img.src = p.icon;
+                });
+        }
 
         // ======= 点击事件：显示坐标并放置标记 =======
         map.on('click', function (e) {
                 let x = e.latlng.lng;
                 let y = e.latlng.lat;
 
-                // 更新右上角坐标面板
                 document.getElementById("coordBox").innerText =
                         `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
 
-                // 删除旧标记
                 if (tempMarker) map.removeLayer(tempMarker);
 
-                // 添加新标记（红点）
                 tempMarker = L.circleMarker([y, x], {
                         radius: 5,
                         color: "red",
@@ -129,44 +144,27 @@
                         fillOpacity: 1
                 }).addTo(map);
 
-                // 自动平移动画到点击处（可删除）
                 map.panTo([y, x]);
         });
 
 
-
         // ============================
         // 无限量图标加载系统
-        // 读取 locations.json
         // ============================
         fetch("https://seicing.com/js/locations.json")
                 .then(res => res.json())
-                .then(list => {
-                        list.forEach(p => {
+                .then(async list => {
 
-                                // 为每一个图标生成独立 icon
-                                let icon = L.icon({
-                                        iconUrl: p.icon,
-                                        iconSize: p.size || [48, 48],       // ★ 可在 JSON 填自定义大小
-                                        iconAnchor: p.anchor || [24, 48],   // ★ 底部居中
-                                });
+                        for (let p of list) {
+                                let icon = await createAutoIcon(p);
 
-                                // 放置 marker
                                 L.marker([p.y, p.x], { icon })
                                         .addTo(map)
-                                        .bindTooltip(p.name || "无名地点", {
-                                                direction: "top",
-                                                offset: [0, -10],
-                                                opacity: 0.85
-                                        })
-                                        .on("click", () => {
-                                                if (p.url) window.location.href = p.url;
-                                        });
-                        });
-                })
-                .catch(err => console.error("locations.json 加载失败:", err));
+                                        .bindTooltip(p.name || "无名地点")
+                                        .on("click", () => p.url && (window.location.href = p.url));
+                        }
 
-
+                });
 </script>
 
 </html>
