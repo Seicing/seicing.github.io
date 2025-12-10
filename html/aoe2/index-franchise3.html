@@ -116,12 +116,13 @@
                 crs: L.CRS.Simple,
                 minZoom: -3,
                 maxZoom: 3,
-                zoomSnap: 0.1
+                zoomSnap: 0.1,
+                attributionControl: false   // ← 关闭右下角 Logo
         });
 
         var bounds = [[0, 0], [IMG_H, IMG_W]];
 
-        var image = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+        L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
         map.fitBounds(bounds);
 
         // ============================
@@ -148,24 +149,64 @@
                 map.panTo([y, x]);
         });
 
+
         // ============================
-        // 无限量图标加载系统
-        // 读取 locations.json
+        // 图标动态缩放系统
+        // ============================
+
+        // 图标缩放曲线（你可以调整倍数）
+        function iconScale(zoom) {
+                return 1 + zoom * 0.35;
+                // zoom=0 → 1倍
+                // zoom=2 → 1.7倍
+                // zoom=-2 → 0.3倍
+        }
+
+        let currentScale = iconScale(map.getZoom());
+
+        // 所有 marker 存在这里，缩放时更新
+        const dynamicMarkers = [];
+
+        // 地图缩放事件 → 更新所有图标大小
+        map.on("zoom", () => {
+                currentScale = iconScale(map.getZoom());
+
+                dynamicMarkers.forEach(obj => {
+                        const base = obj.baseSize;
+                        let size = base * currentScale;
+
+                        obj.marker.setIcon(
+                                L.icon({
+                                        iconUrl: obj.data.icon,
+                                        iconSize: [size, size],
+                                        iconAnchor: [size / 2, size]
+                                })
+                        );
+                });
+        });
+
+
+        // ============================
+        // 加载 locations.json → 图标动态缩放
         // ============================
         fetch("https://seicing.com/js/locations.json")
                 .then(res => res.json())
                 .then(list => {
                         list.forEach(p => {
 
-                                // 为每一个图标生成独立 icon
+                                // 如果 json 没写 size，默认 48
+                                const baseSize = (Array.isArray(p.size) ? p.size[0] : p.size) || 24;
+
+                                // 初始大小
+                                const size = baseSize * currentScale;
+
                                 let icon = L.icon({
                                         iconUrl: p.icon,
-                                        iconSize: p.size || [48, 48],       // ★ 可在 JSON 填自定义大小
-                                        iconAnchor: p.anchor || [24, 48],   // ★ 底部居中
+                                        iconSize: [size, size],
+                                        iconAnchor: [size / 2, size]
                                 });
 
-                                // 放置 marker
-                                L.marker([p.y, p.x], { icon })
+                                let mk = L.marker([p.y, p.x], { icon })
                                         .addTo(map)
                                         .bindTooltip(p.name || "无名地点", {
                                                 direction: "top",
@@ -175,6 +216,13 @@
                                         .on("click", () => {
                                                 if (p.url) window.location.href = p.url;
                                         });
+
+                                // 记录，供缩放回调使用
+                                dynamicMarkers.push({
+                                        marker: mk,
+                                        data: p,
+                                        baseSize: baseSize
+                                });
                         });
                 })
                 .catch(err => console.error("locations.json 加载失败:", err));
