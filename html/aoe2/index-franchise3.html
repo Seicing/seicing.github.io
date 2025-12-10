@@ -111,7 +111,7 @@
         const bounds = [[0, 0], [IMG_H, IMG_W]];
 
         // ============================
-        // 初始化地图（先给临时中心防止 Leaflet 报错）
+        // 初始化地图（避免"Set map center"错误）
         // ============================
         var map = L.map('map', {
                 crs: L.CRS.Simple,
@@ -121,7 +121,6 @@
                 attributionControl: false
         });
 
-        // 关键：给一个临时 view，避免“Set map center and zoom first”错误
         map.setView([0, 0], 0, { animate: false });
 
         // ============================
@@ -131,16 +130,12 @@
 
         overlay.once("load", () => {
 
-                // 设置真实视野
                 map.fitBounds(bounds, { animate: false });
 
-                // 手机端必须强制刷新
+                // 手机端 Leaflet 缺陷：需要触发双刷新
                 setTimeout(() => {
                         map.invalidateSize(true);
-
-                        // 再触发一次 zoom，使手机不出现“需要点+/- 才正常”
                         map.setZoom(map.getZoom(), { animate: false });
-
                 }, 150);
         });
 
@@ -196,12 +191,16 @@
         });
 
         // ============================
-        // 工具：获取原始宽高 → 用于维持比例
+        // 工具：安全读取图片原始宽高
         // ============================
         function loadImageSize(url) {
                 return new Promise(res => {
                         const img = new Image();
-                        img.onload = () => res({ w: img.width, h: img.height });
+                        img.crossOrigin = "anonymous";   // ★ 修复不能读取尺寸导致图标消失
+                        img.onload = () => {
+                                if (img.width > 0) res({ w: img.width, h: img.height });
+                                else res({ w: 48, h: 48 }); // 兜底
+                        };
                         img.src = url;
                 });
         }
