@@ -227,6 +227,42 @@
                                 });
                         }
                 });
+
+
+        // ============================
+        // 自定义按钮：跳转到某网址
+        // ============================
+        var JumpControl = L.Control.extend({
+                options: {
+                        position: 'topleft' // 放在放大缩小按钮下方
+                },
+
+                onAdd: function () {
+                        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+
+                        var link = L.DomUtil.create('a', '', container);
+                        link.innerHTML = '←';               // 按钮图标
+                        link.href = '#';                    // 先阻止默认动作
+                        link.title = '前往指定页面';
+                        link.style.fontSize = "18px";
+                        link.style.lineHeight = "26px";
+                        link.style.textAlign = "center";
+
+                        // 阻止拖动地图
+                        L.DomEvent.disableClickPropagation(container);
+
+                        // 点击跳转
+                        L.DomEvent.on(link, 'click', function (e) {
+                                e.preventDefault();
+                                window.location.href = "https://seicing.com/html/index.html";  // ←← 修改成你的网址
+                        });
+
+                        return container;
+                }
+        });
+
+        // 加入地图
+        map.addControl(new JumpControl());
 </script>
 
 </html>
