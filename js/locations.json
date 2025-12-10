@@ -110,7 +110,7 @@
   {
     "name": "帝国时代2 蒙古",
     "x": 3555,
-    "y": 1797,
+    "y": 1740,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Mongols.webp",
     "url": "https://seicing.com/html/aoe2/2/蒙古.html",
     "width": 24,
@@ -119,7 +119,7 @@
   {
     "name": "帝国时代4 蒙古",
     "x": 3585,
-    "y": 1797,
+    "y": 1740,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Mongols.webp",
     "url": "https://seicing.com/html/aoe2/4/蒙古.html",
     "width": 24,
@@ -199,7 +199,7 @@
   },
   {
     "name": "帝国时代2 斯拉夫",
-    "x": 2608,
+    "x": 2558,
     "y": 1838,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Slavs.webp",
     "url": "https://seicing.com/html/aoe2/2/斯拉夫.html",
@@ -208,7 +208,7 @@
   },
   {
     "name": "帝国时代3 俄罗斯",
-    "x": 2638,
+    "x": 2588,
     "y": 1838,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Russian.png",
     "url": "https://seicing.com/html/aoe3/3/俄罗斯.html",
@@ -217,7 +217,7 @@
   },
   {
     "name": "帝国时代4 罗斯",
-    "x": 2668,
+    "x": 2618,
     "y": 1838,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Rus.webp",
     "url": "https://seicing.com/html/aoe2/4/罗斯.html",
@@ -397,7 +397,7 @@
   },
   {
     "name": "帝国时代3 埃塞俄比亚",
-    "x": 2713,
+    "x": 2725,
     "y": 1127,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Ethiopian_aoe3de.png",
     "url": "https://seicing.com/html/aoe3/3/埃塞俄比亚.html",
@@ -437,6 +437,24 @@
     "y": 1577,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
     "url": "https://seicing.com/html/aoe2/2/高丽.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代 骆越",
+    "x": 3546,
+    "y": 1315,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/LacViet.png",
+    "url": "https://seicing.com/html/aoe2/1/骆越.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代2 越南",
+    "x": 3556,
+    "y": 1281,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.webp",
+    "url": "https://seicing.com/html/aoe2/2/越南.html",
     "width": 24,
     "height": 24
   },
@@ -721,7 +739,7 @@
   },
   {
     "name": "帝国时代4 马里",
-    "x": 2171,
+    "x": 2185,
     "y": 1196,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Malians.webp",
     "url": "https://seicing.com/html/aoe2/4/马里.html",
@@ -839,7 +857,7 @@
   {
     "name": "帝国时代 巴尔米拉",
     "x": 2690,
-    "y": 1572,
+    "y": 1563,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Palmyrans.png",
     "url": "https://seicing.com/html/aoe2/1/巴尔米拉.html",
     "width": 24,
@@ -946,17 +964,26 @@
   },
   {
     "name": "帝国时代2 匈奴",
-    "x": 2441,
-    "y": 1767,
+    "x": 2465,
+    "y": 1773,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.webp",
     "url": "https://seicing.com/html/aoe2/2/匈奴.html",
     "width": 24,
     "height": 24
   },
   {
+    "name": "帝国时代2 波兰",
+    "x": 2482,
+    "y": 1823,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Poles.webp",
+    "url": "https://seicing.com/html/aoe2/2/波兰.html",
+    "width": 24,
+    "height": 24
+  },
+  {
     "name": "帝国时代2 马扎尔",
-    "x": 2426,
-    "y": 1747,
+    "x": 2430,
+    "y": 1730,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Magyars.webp",
     "url": "https://seicing.com/html/aoe2/2/马扎尔.html",
     "width": 24,
@@ -1046,7 +1073,7 @@
   {
     "name": "帝国时代2 马来",
     "x": 3578,
-    "y": 904,
+    "y": 880,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Malay.webp",
     "url": "https://seicing.com/html/aoe2/2/马来.html",
     "width": 24,
@@ -1054,8 +1081,8 @@
   },
   {
     "name": "帝国时代2 契丹",
-    "x": 3475,
-    "y": 1679,
+    "x": 3428,
+    "y": 1666,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Khitans.webp",
     "url": "https://seicing.com/html/aoe2/2/契丹.html",
     "width": 24,
