@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>帝国时代文明地图</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
+<script type="text/javascript">
+        $(document).ready(function () {
+                $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+        })
+</script>
+<style>
+        body,
+        html {
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
+        }
+
+        #map {
+                width: 100%;
+                height: 100%;
+        }
+
+        /* 坐标显示面板 */
+        #coordBox {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 8px 12px;
+                color: #fff;
+                border-radius: 6px;
+                font-family: monospace;
+                z-index: 9999;
+        }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="98"></div>
+<div id="map"></div>
+<div id="coordBox">X: -, Y: -</div>
+
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+        // ======= 你的大图尺寸（像素大小） =======
+        const IMG_W = 4650;
+        const IMG_H = 2616;
+
+        // ======= 初始化地图 =======
+        var map = L.map('map', {
+                crs: L.CRS.Simple,
+                minZoom: -3,
+                maxZoom: 3,
+                zoomSnap: 0.1
+        });
+
+        // 图片边界（左上 0,0 → 右下 H,W）
+        var bounds = [[0, 0], [IMG_H, IMG_W]];
+
+        // 覆盖整张大图
+        var image = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+        map.fitBounds(bounds);
+
+
+        // ======= 坐标拾取临时 marker =======
+        var tempMarker = null;
+
+        // ======= 点击事件：显示坐标并放置标记 =======
+        map.on('click', function (e) {
+                let x = e.latlng.lng;
+                let y = e.latlng.lat;
+
+                // 更新右上角坐标面板
+                document.getElementById("coordBox").innerText =
+                        `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
+
+                // 删除旧标记
+                if (tempMarker) map.removeLayer(tempMarker);
+
+                // 添加新标记（红点）
+                tempMarker = L.circleMarker([y, x], {
+                        radius: 5,
+                        color: "red",
+                        fillColor: "red",
+                        fillOpacity: 1
+                }).addTo(map);
+
+                // 自动平移动画到点击处（可删除）
+                map.panTo([y, x]);
+        });
+
+
+
+        // ============================
+        // 无限量图标加载系统
+        // 读取 locations.json
+        // ============================
+        fetch("https://seicing.com/js/locations.json")
+                .then(res => res.json())
+                .then(list => {
+                        list.forEach(p => {
+
+                                // 为每一个图标生成独立 icon
+                                let icon = L.icon({
+                                        iconUrl: p.icon,
+                                        iconSize: p.size || [48, 48],       // ★ 可在 JSON 填自定义大小
+                                        iconAnchor: p.anchor || [24, 48],   // ★ 底部居中
+                                });
+
+                                // 放置 marker
+                                L.marker([p.y, p.x], { icon })
+                                        .addTo(map)
+                                        .bindTooltip(p.name || "无名地点", {
+                                                direction: "top",
+                                                offset: [0, -10],
+                                                opacity: 0.85
+                                        })
+                                        .on("click", () => {
+                                                if (p.url) window.location.href = p.url;
+                                        });
+                        });
+                })
+                .catch(err => console.error("locations.json 加载失败:", err));
+
+
+</script>
+
+</html>
