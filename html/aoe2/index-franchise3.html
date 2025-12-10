@@ -111,7 +111,7 @@
         const bounds = [[0, 0], [IMG_H, IMG_W]];
 
         // ============================
-        // 初始化地图（避免"Set map center"错误）
+        // 初始化地图
         // ============================
         var map = L.map('map', {
                 crs: L.CRS.Simple,
@@ -129,10 +129,9 @@
         const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
 
         overlay.once("load", () => {
-
                 map.fitBounds(bounds, { animate: false });
 
-                // 手机端 Leaflet 缺陷：需要触发双刷新
+                // 手机 Leaflet 需要强制刷新
                 setTimeout(() => {
                         map.invalidateSize(true);
                         map.setZoom(map.getZoom(), { animate: false });
@@ -140,7 +139,7 @@
         });
 
         // ============================
-        // 坐标拾取（红点）
+        // 坐标拾取
         // ============================
         var tempMarker = null;
 
@@ -191,35 +190,17 @@
         });
 
         // ============================
-        // 工具：安全读取图片原始宽高
-        // ============================
-        function loadImageSize(url) {
-                return new Promise(res => {
-                        const img = new Image();
-                        img.crossOrigin = "anonymous";   // ★ 修复不能读取尺寸导致图标消失
-                        img.onload = () => {
-                                if (img.width > 0) res({ w: img.width, h: img.height });
-                                else res({ w: 48, h: 48 }); // 兜底
-                        };
-                        img.src = url;
-                });
-        }
-
-        // ============================
-        // 加载 locations.json
+        // 加载 locations.json（方案 B：只读 JSON 宽高）
         // ============================
         fetch("https://seicing.com/js/locations.json")
                 .then(res => res.json())
-                .then(async list => {
+                .then(list => {
 
                         for (const p of list) {
 
-                                const baseWidth = (Array.isArray(p.size) ? p.size[0] : p.size) || 36;
-
-                                // 读取图标真实比例
-                                const natural = await loadImageSize(p.icon);
-                                const ratio = natural.h / natural.w;
-                                const baseHeight = baseWidth * ratio;
+                                // 使用 JSON 中写好的宽高
+                                const baseWidth = p.width || 36;
+                                const baseHeight = p.height || 36;
 
                                 const w = baseWidth * currentScale;
                                 const h = baseHeight * currentScale;
