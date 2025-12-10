@@ -108,9 +108,10 @@
         // ============================
         const IMG_W = 4650;
         const IMG_H = 2616;
+        const bounds = [[0, 0], [IMG_H, IMG_W]];
 
         // ============================
-        // 初始化地图
+        // 初始化地图（先给临时中心防止 Leaflet 报错）
         // ============================
         var map = L.map('map', {
                 crs: L.CRS.Simple,
@@ -120,20 +121,26 @@
                 attributionControl: false
         });
 
-        var bounds = [[0, 0], [IMG_H, IMG_W]];
+        // 关键：给一个临时 view，避免“Set map center and zoom first”错误
+        map.setView([0, 0], 0, { animate: false });
 
-        const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds);
-        overlay.addTo(map);
+        // ============================
+        // 加载底图
+        // ============================
+        const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
 
-        // ---- 关键：等待图片加载完再 fitBounds + 修正手机初始缩放问题 ----
         overlay.once("load", () => {
-                map.fitBounds(bounds);
 
-                // 手机端首次渲染必须强制刷新大小
+                // 设置真实视野
+                map.fitBounds(bounds, { animate: false });
+
+                // 手机端必须强制刷新
                 setTimeout(() => {
                         map.invalidateSize(true);
-                        // 再触发一次 zoom，解决手机需点击 +/- 才归位的问题
-                        map.setZoom(map.getZoom());
+
+                        // 再触发一次 zoom，使手机不出现“需要点+/- 才正常”
+                        map.setZoom(map.getZoom(), { animate: false });
+
                 }, 150);
         });
 
@@ -162,7 +169,7 @@
         });
 
         // ============================
-        // 图标动态缩放系统
+        // 图标缩放系统
         // ============================
         function iconScale(zoom) {
                 return 1 + zoom * 0.35;
@@ -171,15 +178,12 @@
         let currentScale = iconScale(map.getZoom());
         const dynamicMarkers = [];
 
-        // 当缩放时调整图标大小
         map.on("zoom", () => {
                 currentScale = iconScale(map.getZoom());
 
                 dynamicMarkers.forEach(obj => {
-                        const w0 = obj.baseWidth;
-                        const h0 = obj.baseHeight;
-                        let w = w0 * currentScale;
-                        let h = h0 * currentScale;
+                        let w = obj.baseWidth * currentScale;
+                        let h = obj.baseHeight * currentScale;
 
                         obj.marker.setIcon(
                                 L.icon({
@@ -192,20 +196,18 @@
         });
 
         // ============================
-        // 工具：读取图片原始宽高 → 按比例自动计算高度
+        // 工具：获取原始宽高 → 用于维持比例
         // ============================
         function loadImageSize(url) {
                 return new Promise(res => {
                         const img = new Image();
-                        img.onload = () => {
-                                res({ w: img.width, h: img.height });
-                        };
+                        img.onload = () => res({ w: img.width, h: img.height });
                         img.src = url;
                 });
         }
 
         // ============================
-        // 读取 locations.json
+        // 加载 locations.json
         // ============================
         fetch("https://seicing.com/js/locations.json")
                 .then(res => res.json())
@@ -215,11 +217,9 @@
 
                                 const baseWidth = (Array.isArray(p.size) ? p.size[0] : p.size) || 48;
 
-                                // 读取原图比例
+                                // 读取图标真实比例
                                 const natural = await loadImageSize(p.icon);
-                                const ratio = natural.h / natural.w;   // 高宽比
-
-                                // 自动计算高度
+                                const ratio = natural.h / natural.w;
                                 const baseHeight = baseWidth * ratio;
 
                                 const w = baseWidth * currentScale;
@@ -238,9 +238,7 @@
                                                 offset: [0, -10],
                                                 opacity: 0.85
                                         })
-                                        .on("click", () => {
-                                                if (p.url) window.location.href = p.url;
-                                        });
+                                        .on("click", () => { if (p.url) location.href = p.url; });
 
                                 dynamicMarkers.push({
                                         marker: mk,
@@ -249,8 +247,7 @@
                                         baseHeight
                                 });
                         }
-                })
-                .catch(err => console.error("locations.json 加载失败:", err));
+                });
 </script>
 
 </html>
