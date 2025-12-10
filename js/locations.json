@@ -129,7 +129,7 @@
     "name": "帝国时代 波斯",
     "x": 2868,
     "y": 1478,
-    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Shang.png",
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/civicon/Persians.png",
     "url": "https://seicing.com/html/aoe2/1/波斯.html",
     "width": 24,
     "height": 24
@@ -137,8 +137,8 @@
   {
     "name": "帝国时代2 波斯",
     "x": 2900,
-    "y": 1510,
-    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
+    "y": 1448,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Persians.webp",
     "url": "https://seicing.com/html/aoe2/2/波斯.html",
     "width": 24,
     "height": 24
@@ -146,7 +146,7 @@
   {
     "name": "帝国时代2 阿契美尼德",
     "x": 2930,
-    "y": 1540,
+    "y": 1418,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Achaemenids.webp",
     "url": "https://seicing.com/html/aoe2/2/阿契美尼德.html",
     "width": 24,
@@ -155,7 +155,7 @@
   {
     "name": "帝国时代2 土耳其",
     "x": 2587,
-    "y": 1617,
+    "y": 1580,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
     "url": "https://seicing.com/html/aoe2/2/土耳其.html",
     "width": 24,
@@ -164,7 +164,7 @@
   {
     "name": "帝国时代3 奥斯曼",
     "x": 2617,
-    "y": 1617,
+    "y": 1580,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Ottoman.png",
     "url": "https://seicing.com/html/aoe3/3/奥斯曼.html",
     "width": 32,
@@ -173,9 +173,135 @@
   {
     "name": "帝国时代4 奥斯曼",
     "x": 2647,
-    "y": 1617,
+    "y": 1580,
     "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Ottomans.webp",
     "url": "https://seicing.com/html/aoe2/4/奥斯曼.html",
+    "width": 32,
+    "height": 18
+  },
+  {
+    "name": "帝国时代2 萨拉森",
+    "x": 2761,
+    "y": 1516,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Saracens.webp",
+    "url": "https://seicing.com/html/aoe2/2/萨拉森.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代4 黑衣大食王朝",
+    "x": 2791,
+    "y": 1516,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Abbasiddynasty.webp",
+    "url": "https://seicing.com/html/aoe2/4/黑衣大食王朝.html",
+    "width": 32,
+    "height": 18
+  },
+  {
+    "name": "帝国时代2 斯拉夫",
+    "x": 2638,
+    "y": 1856,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Slavs.webp",
+    "url": "https://seicing.com/html/aoe2/2/斯拉夫.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代3 俄罗斯",
+    "x": 2668,
+    "y": 1856,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_Russian.png",
+    "url": "https://seicing.com/html/aoe3/3/俄罗斯.html",
+    "width": 32,
+    "height": 21
+  },
+  {
+    "name": "帝国时代4 罗斯",
+    "x": 2698,
+    "y": 1856,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Rus.webp",
+    "url": "https://seicing.com/html/aoe2/4/罗斯.html",
+    "width": 32,
+    "height": 18
+  },
+  {
+    "name": "帝国时代2 不列颠",
+    "x": 2144,
+    "y": 1829,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Britons.webp",
+    "url": "https://seicing.com/html/aoe2/2/不列颠.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代3 英国",
+    "x": 2174,
+    "y": 1829,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_British.png",
+    "url": "https://seicing.com/html/aoe3/3/英国.html",
+    "width": 32,
+    "height": 21
+  },
+  {
+    "name": "帝国时代4 英格兰",
+    "x": 2204,
+    "y": 1829,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-English.webp",
+    "url": "https://seicing.com/html/aoe2/4/英格兰.html",
+    "width": 32,
+    "height": 18
+  },
+  {
+    "name": "帝国时代2 法兰克",
+    "x": 2192,
+    "y": 1739,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Franks.webp",
+    "url": "https://seicing.com/html/aoe2/2/法兰克.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代3 法国",
+    "x": 2222,
+    "y": 1739,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_French.png",
+    "url": "https://seicing.com/html/aoe3/3/法国.html",
+    "width": 32,
+    "height": 21
+  },
+  {
+    "name": "帝国时代4 法兰西",
+    "x": 2252,
+    "y": 1739,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-French.webp",
+    "url": "https://seicing.com/html/aoe2/4/法兰西.html",
+    "width": 32,
+    "height": 18
+  },
+  {
+    "name": "帝国时代2 条顿",
+    "x": 2278,
+    "y": 1805,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.webp",
+    "url": "https://seicing.com/html/aoe2/2/条顿.html",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "name": "帝国时代3 德国",
+    "x": 2308,
+    "y": 1805,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe3/Flag_German.png",
+    "url": "https://seicing.com/html/aoe3/3/德国.html",
+    "width": 32,
+    "height": 21
+  },
+  {
+    "name": "帝国时代4 神圣罗马帝国",
+    "x": 2338,
+    "y": 1805,
+    "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Holyromanempire.webp",
+    "url": "https://seicing.com/html/aoe2/4/神圣罗马帝国.html",
     "width": 32,
     "height": 18
   },
