@@ -65,6 +65,7 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="98"></div>
+
 <div id="map"></div>
 <div id="coordBox">X: -, Y: -</div>
 </div>
@@ -86,6 +87,7 @@
     </div>
 </body>
 
+
 <script>
         // ======= 你的大图尺寸（像素大小） =======
         const IMG_W = 4650;
@@ -103,7 +105,7 @@
         var bounds = [[0, 0], [IMG_H, IMG_W]];
 
         // 覆盖整张大图
-        L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+        var image = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
         map.fitBounds(bounds);
 
         // ======= 坐标拾取临时 marker =======
@@ -114,11 +116,14 @@
                 let x = e.latlng.lng;
                 let y = e.latlng.lat;
 
+                // 更新右上角坐标面板
                 document.getElementById("coordBox").innerText =
                         `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
 
+                // 删除旧标记
                 if (tempMarker) map.removeLayer(tempMarker);
 
+                // 添加新标记（红点）
                 tempMarker = L.circleMarker([y, x], {
                         radius: 5,
                         color: "red",
@@ -126,40 +131,10 @@
                         fillOpacity: 1
                 }).addTo(map);
 
+                // 自动平移动画到点击处（可删除）
                 map.panTo([y, x]);
         });
 
-
-        // ============================
-        // 无限量图标加载系统
-        // ============================
-        fetch("https://seicing.com/js/locations.json")
-                .then(res => res.json())
-                .then(list => {
-
-                        list.forEach(p => {
-
-                                // 默认图标大小 48×48
-                                const icon = L.icon({
-                                        iconUrl: p.icon,
-                                        iconSize: p.size || [48, 48],
-                                        iconAnchor: p.anchor || [24, 48],
-                                });
-
-                                L.marker([p.y, p.x], { icon })
-                                        .addTo(map)
-                                        .bindTooltip(p.name || "未命名地点", {
-                                                direction: "top",
-                                                offset: [0, -10],
-                                                opacity: 0.9
-                                        })
-                                        .on("click", () => {
-                                                if (p.url) window.location.href = p.url;
-                                        });
-                        });
-
-                })
-                .catch(err => console.error("locations.json 加载失败:", err));
 </script>
 
 </html>
