@@ -2,21 +2,15 @@
   "tableId": "cavalryTable",
   "common": [
     {
-      "tech": "LongSwordsman",
-      "showId": "长剑士",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到长剑士.webp",
+      "tech": "LightCavalry",
+      "showId": "轻骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到轻骑兵.webp",
       "score": 1
     },
     {
-      "tech": "TwoHandedSwordsman",
-      "showId": "双手剑士",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到双手剑士.webp",
-      "score": 1
-    },
-    {
-      "tech": "Champion",
-      "showId": "冠军剑士",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到冠军剑士.webp",
+      "tech": "Hussar",
+      "showId": "翼骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到翼骑兵.webp",
       "score": 2
     },
     {
@@ -38,56 +32,50 @@
       "score": 2
     },
     {
-      "tech": "ScaleMailArmor",
-      "showId": "步兵鳞甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleMailArmorDE.webp",
+      "tech": "ScaleBardingArmor",
+      "showId": "骑兵鳞甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
       "score": 1
     },
     {
-      "tech": "ChainMailArmor",
-      "showId": "步兵锁甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainMailArmorDE.webp",
+      "tech": "ChainBarding",
+      "showId": "骑兵锁甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
       "score": 1
     },
     {
-      "tech": "PlateMailArmor",
-      "showId": "步兵钢甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateMailArmorDE.webp",
+      "tech": "PlateBardingArmor",
+      "showId": "骑兵钢甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
       "score": 2
     },
     {
-      "tech": "Gambeson",
-      "showId": "软甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Gambeson.jpg",
+      "tech": "Bloodlines",
+      "showId": "血统",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
       "score": 1
     },
     {
-      "tech": "Squires",
-      "showId": "护卫",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SquiresDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Arson",
-      "showId": "纵火",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
+      "tech": "Husbandry",
+      "showId": "畜牧",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
       "score": 1
     }
   ],
   "unique": [
     {
-      "tech": "井喷",
-      "showId": "井喷",
+      "tech": "死士",
+      "showId": "死士",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
       "score": 2,
-      "civ": "Goths"
+      "civ": "Malians"
     },
     {
-      "tech": "野战军",
-      "showId": "野战军",
+      "tech": "列克提克遗产",
+      "showId": "列克提克遗产",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
       "score": 2,
-      "civ": "Romans"
+      "civ": "Poles"
     },
     {
       "tech": "强征兵役",
@@ -97,34 +85,6 @@
       "civ": "Malay"
     },
     {
-      "tech": "协议",
-      "showId": "协议",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Bulgarians"
-    },
-    {
-      "tech": "费雷特斯",
-      "showId": "费雷特斯",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Armenians"
-    },
-    {
-      "tech": "荣冠战争",
-      "showId": "荣冠战争",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Aztecs"
-    },
-    {
-      "tech": "皇家卫队",
-      "showId": "皇家卫队",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Slavs"
-    },
-    {
       "tech": "乌兹钢",
       "showId": "乌兹钢",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
@@ -132,11 +92,74 @@
       "civ": "Dravidians"
     },
     {
-      "tech": "酋长",
-      "showId": "酋长",
+      "tech": "明光铠",
+      "showId": "明光铠",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Wei"
+    },
+    {
+      "tech": "阿祖瑙里骑兵",
+      "showId": "阿祖瑙里骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Georgians"
+    },
+    {
+      "tech": "斡鲁朵骑兵",
+      "showId": "斡鲁朵骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Khitans"
+    },
+    {
+      "tech": "曼尼普尔骑兵",
+      "showId": "曼尼普尔骑兵",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
       "score": 2,
-      "civ": "Vikings"
+      "civ": "Burmese"
+    },
+    {
+      "tech": "马镫",
+      "showId": "马镫",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Bulgarians"
+    },
+    {
+      "tech": "丝护甲",
+      "showId": "丝护甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Tatars"
+    },
+    {
+      "tech": "骑士精神",
+      "showId": "骑士精神",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Franks"
+    },
+    {
+      "tech": "大草原畜牧",
+      "showId": "大草原畜牧",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Cumans"
+    },
+    {
+      "tech": "刹帝利",
+      "showId": "刹帝利",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Gurjaras"
+    },
+    {
+      "tech": "屯田",
+      "showId": "屯田",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Wei"
     },
     {
       "tech": "柏柏尔马厩折扣",
