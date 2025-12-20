@@ -2175,3 +2175,38 @@ function Champion() {
     document.getElementById("Jurchens2").style.opacity = "0.15";
     document.getElementById("Wei2").style.opacity = "0.15";
 }
+
+function Crossbowman() {
+    document.getElementById("Bulgarians2").style.opacity = "0.15";
+    document.getElementById("Spanish2").style.opacity = "0.15";
+}
+function Arbalester() {
+    document.getElementById("Spanish2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").style.opacity = "0.15";
+    document.getElementById("Berbers2").style.opacity = "0.15";
+    document.getElementById("Burgundians2").style.opacity = "0.15";
+    document.getElementById("Burmese2").style.opacity = "0.15";
+    document.getElementById("Celts2").style.opacity = "0.15";
+    document.getElementById("Cumans2").style.opacity = "0.15";
+    document.getElementById("Franks2").style.opacity = "0.15";
+    document.getElementById("Goths2").style.opacity = "0.15";
+    document.getElementById("Huns2").style.opacity = "0.15";
+    document.getElementById("Indians2").style.opacity = "0.15";
+    document.getElementById("Lithuanians2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Slavs2").style.opacity = "0.15";
+    document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
+}
+
+
+
+
+

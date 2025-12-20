@@ -1,6 +1,66 @@
 {
-  "tableId": "infantryTable",
+  "tableId": "cavalryTable",
   "common": [
+    {
+      "tech": "LongSwordsman",
+      "showId": "长剑士",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到长剑士.webp",
+      "score": 1
+    },
+    {
+      "tech": "TwoHandedSwordsman",
+      "showId": "双手剑士",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到双手剑士.webp",
+      "score": 1
+    },
+    {
+      "tech": "Champion",
+      "showId": "冠军剑士",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到冠军剑士.webp",
+      "score": 2
+    },
+    {
+      "tech": "Forging",
+      "showId": "锻造",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+      "score": 1
+    },
+    {
+      "tech": "IronCasting",
+      "showId": "铸铁",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "BlastFurnace",
+      "showId": "鼓风炉",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+      "score": 2
+    },
+    {
+      "tech": "ScaleMailArmor",
+      "showId": "步兵鳞甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleMailArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "ChainMailArmor",
+      "showId": "步兵锁甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainMailArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "PlateMailArmor",
+      "showId": "步兵钢甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateMailArmorDE.webp",
+      "score": 2
+    },
+    {
+      "tech": "Gambeson",
+      "showId": "软甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Gambeson.jpg",
+      "score": 1
+    },
     {
       "tech": "Squires",
       "showId": "护卫",
@@ -16,19 +76,67 @@
   ],
   "unique": [
     {
-      "tech": "弹射器",
-      "showId": "弹射器",
+      "tech": "井喷",
+      "showId": "井喷",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 1,
-      "civ": "Japanese"
+      "score": 2,
+      "civ": "Goths"
     },
     {
-      "tech": "火箭",
-      "showId": "火箭",
+      "tech": "野战军",
+      "showId": "野战军",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 1,
-      "civ": "Chinese",
-      "replace": "Arson"
+      "score": 2,
+      "civ": "Romans"
+    },
+    {
+      "tech": "强征兵役",
+      "showId": "强征兵役",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Malay"
+    },
+    {
+      "tech": "协议",
+      "showId": "协议",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Bulgarians"
+    },
+    {
+      "tech": "费雷特斯",
+      "showId": "费雷特斯",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Armenians"
+    },
+    {
+      "tech": "荣冠战争",
+      "showId": "荣冠战争",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Aztecs"
+    },
+    {
+      "tech": "皇家卫队",
+      "showId": "皇家卫队",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Slavs"
+    },
+    {
+      "tech": "乌兹钢",
+      "showId": "乌兹钢",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "酋长",
+      "showId": "酋长",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Vikings"
     }
   ]
 }

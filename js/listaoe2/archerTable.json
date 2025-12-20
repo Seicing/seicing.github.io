@@ -1,34 +1,115 @@
 {
-  "tableId": "infantryTable",
+  "tableId": "archerTable",
   "common": [
     {
-      "tech": "Squires",
-      "showId": "护卫",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SquiresDE.webp",
+      "tech": "Crossbowman",
+      "showId": "弩手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到弩手.webp",
       "score": 1
     },
     {
-      "tech": "Arson",
-      "showId": "纵火",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
+      "tech": "Arbalester",
+      "showId": "劲弩手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到劲弩手.webp",
+      "score": 2
+    },
+    {
+      "tech": "Fletching",
+      "showId": "羽箭",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FletchingDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "BodkinArrow",
+      "showId": "锥子箭",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BodkinArrowDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Bracer",
+      "showId": "护腕",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BracerDE.webp",
+      "score": 2
+    },
+    {
+      "tech": "PaddedArcherArmor",
+      "showId": "射手软甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PaddedArcherArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "LeatherArcherArmor",
+      "showId": "射手皮甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/LeatherArcherArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "RingArcherArmor",
+      "showId": "射手锁甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/RingArcherArmorDE.webp",
+      "score": 2
+    },
+    {
+      "tech": "Chemistry",
+      "showId": "化学",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "ThumbRing",
+      "showId": "扳指",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ThumbRingDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Ballistics",
+      "showId": "弹道学",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BallisticsDE.webp",
       "score": 1
     }
   ],
   "unique": [
     {
-      "tech": "弹射器",
-      "showId": "弹射器",
+      "tech": "博格斯维加尔",
+      "showId": "博格斯维加尔",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 1,
-      "civ": "Japanese"
+      "score": 2,
+      "civ": "Vikings"
     },
     {
-      "tech": "火箭",
-      "showId": "火箭",
+      "tech": "弩匣",
+      "showId": "弩匣",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 1,
-      "civ": "Chinese",
-      "replace": "Arson"
+      "score": 2,
+      "civ": "Shu"
+    },
+    {
+      "tech": "英皇侍卫",
+      "showId": "英皇侍卫",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Britons"
+    },
+    {
+      "tech": "波斯步弓手",
+      "showId": "波斯步弓手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Persians"
+    },
+    {
+      "tech": "屯田",
+      "showId": "屯田",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Wei"
+    },
+    {
+      "tech": "屯田啊",
+      "showId": "屯田啊",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Test"
     }
   ]
 }
