@@ -93,9 +93,9 @@ export const aoe4list = [
   {
     "civ": "mal",
     "section": "军事单位",
-    "name": "曼萨自由民战士",
-    "img": "曼萨自由民战士",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/曼萨自由民战士"
+    "name": "自由民战士",
+    "img": "自由民战士",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/自由民战士"
   },
   {
     "civ": "mal",
