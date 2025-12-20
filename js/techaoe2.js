@@ -2268,6 +2268,13 @@ function HandCannoneer() {
     document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 
+function Scoutcavalry() {
+    document.getElementById("Aztecs").style.opacity = "0.3";
+    document.getElementById("Mayans").style.opacity = "0.3";
+    document.getElementById("Incas").style.opacity = "0.3";
+}
+
+
 function CavalryArcher() {
     document.getElementById("Aztecs").style.opacity = "0.3";
     document.getElementById("Mayans").style.opacity = "0.3";
@@ -2278,7 +2285,7 @@ function CavalryArcher() {
     document.getElementById("Dravidians").style.opacity = "0.3";
 }
 
-function CavalryArcher() {
+function HeavyCavalryArcher() {
     document.getElementById("Aztecs").style.opacity = "0.3";
     document.getElementById("Mayans").style.opacity = "0.3";
     document.getElementById("Incas").style.opacity = "0.3";

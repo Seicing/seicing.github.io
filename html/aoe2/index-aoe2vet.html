@@ -53,6 +53,9 @@
     /* 调试用：最近一次成功读取的通用科技 */
     let LAST_READ_TECHS = [];
 
+    /* 主控科技（main:1，只认第一个） */
+    let MAIN_TECH = null;
+
     (function patchGetElementById() {
         const original = document.getElementById;
         document.getElementById = function (id) {
@@ -74,31 +77,36 @@
        执行 techaoe2.js 科技函数
        ✔ 仅统计通用科技
        ✔ 仅统计 techaoe2 中真实存在的函数
+       ✔ 提取 main 科技
     ===================================================== */
     function collectDisabledTechFromAOE2(form) {
         const techNames = new Set();
         const readTechs = [];
 
-        // 只处理通用科技
-        form.common?.forEach(t => techNames.add(t.tech));
+        MAIN_TECH = null;
+
+        form.common?.forEach(t => {
+            techNames.add(t.tech);
+
+            // 只认第一个 main
+            if (t.main === 1 && !MAIN_TECH) {
+                MAIN_TECH = t;
+            }
+        });
 
         techNames.forEach(tech => {
-            // techaoe2 中不存在的（如 Forging）直接跳过
             if (typeof window[tech] !== "function") return;
 
             CURRENT_TECH_CONTEXT = tech;
             try {
-                window[tech]();          // 真正执行
-                readTechs.push(tech);    // 成功才算
-            } catch (e) {
-                // 执行失败的不计入
-            }
+                window[tech]();
+                readTechs.push(tech);
+            } catch (e) { }
             CURRENT_TECH_CONTEXT = null;
         });
 
         LAST_READ_TECHS = readTechs.slice();
 
-        // 控制台输出（监听结果）
         console.group(
             `[AOE2] techaoe2 成功返回的通用科技（${form.tableId}）`
         );
@@ -126,7 +134,7 @@
     let CURRENT_FORM = null;
 
     /* =====================================================
-       表格生成（支持 unique.replace）
+       表格生成（支持 unique.replace + main）
     ===================================================== */
     function generateTable(form) {
 
@@ -147,6 +155,11 @@
                 );
             }
         });
+
+        /* ===== 过滤掉 main 科技（不显示） ===== */
+        const commonTechs = (form.common || []).filter(
+            t => !(MAIN_TECH && t.tech === MAIN_TECH.tech)
+        );
 
         /* ===== unique → common 替换映射 ===== */
         const replaceMapByCiv = {};
@@ -172,14 +185,18 @@
 
             html += "<tr>";
 
-            /* 文明图标 */
+            /* ===== 文明图标（受 main 控制） ===== */
+            const mainBanned =
+                MAIN_TECH &&
+                DISABLED_TECH_MAP[MAIN_TECH.tech]?.[civ];
+
             html += `
-<td class="civcell">
+<td class="civcell ${mainBanned ? 'main-banned' : ''}">
   <img src="${civObj.icon}">
 </td>`;
 
-            /* ===== 通用科技（支持 unique.replace） ===== */
-            form.common?.forEach(item => {
+            /* ===== 通用科技 ===== */
+            commonTechs.forEach(item => {
 
                 const replaceItem = replaceMapByCiv[civ]?.[item.tech];
                 const techItem = replaceItem || item;
@@ -202,7 +219,7 @@
                 if (!banned) total += techItem.score || 0;
             });
 
-            /* ===== 右侧独特科技（仅未 replace 的） ===== */
+            /* ===== 独特科技（右侧） ===== */
             const uniques = (form.unique || []).filter(u =>
                 u.civ === civ && !u.replace
             );
@@ -260,11 +277,9 @@
        切换表格（按钮调用）
     ===================================================== */
     function switchTable(tableId, el) {
-        // 移除所有按钮图片的 active
         document.querySelectorAll('.tech-tab.active')
             .forEach(img => img.classList.remove('active'));
 
-        // 给当前按钮里的 img 加 active
         if (el) {
             const img = el.querySelector('.tech-tab');
             if (img) img.classList.add('active');
@@ -381,9 +396,17 @@
 </body>
 
 <style>
-    /* =========================
-       科技表格基础样式
-    ========================= */
+    .civcell.main-banned {
+        background-color: #7a1f1f;
+    }
+
+    #techTableContainer {
+        overflow-x: auto;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
+    }
+
+
     .tech-table {
         border-collapse: collapse;
         background: #ffffff;
