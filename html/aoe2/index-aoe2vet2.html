@@ -201,7 +201,7 @@
     /* =====================================================
        切换表格（按钮调用）
     ===================================================== */
-    function switchTable(tableId) {
+    function switchTable(tableId, el) {
         document.querySelectorAll('.tech-tab.active')
             .forEach(b => b.classList.remove('active'));
 
@@ -226,8 +226,7 @@
             .then(r => r.text())
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
-                switchTable("infantryTable"); // 默认表
-
+                switchTable("infantryTable", null);
                 const firstBtn = document.querySelector('.tech-tab');
                 if (firstBtn) {
                     firstBtn.classList.add('active');
