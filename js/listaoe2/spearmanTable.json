@@ -1,0 +1,354 @@
+{
+  "tableId": "spearmanTable",
+  "common": [
+    {
+      "tech": "Pikeman",
+      "showId": "长枪兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到长枪兵.webp",
+      "score": 2
+    },
+    {
+      "tech": "Halberdier",
+      "showId": "长戟兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到长戟兵.webp",
+      "score": 3
+    },
+    {
+      "tech": "Forging",
+      "showId": "锻造",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+      "score": 1
+    },
+    {
+      "tech": "IronCasting",
+      "showId": "铸铁",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "BlastFurnace",
+      "showId": "鼓风炉",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+      "score": 2
+    },
+    {
+      "tech": "ScaleMailArmor",
+      "showId": "步兵鳞甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleMailArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "ChainMailArmor",
+      "showId": "步兵锁甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainMailArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "PlateMailArmor",
+      "showId": "步兵钢甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateMailArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Squires",
+      "showId": "护卫",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SquiresDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Arson",
+      "showId": "纵火",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
+      "score": 1
+    }
+  ],
+  "unique": [
+    {
+      "tech": "荣冠战争",
+      "showId": "荣冠战争",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Aztecs"
+    },
+    {
+      "tech": "皇家卫队",
+      "showId": "皇家卫队",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Slavs"
+    },
+    {
+      "tech": "乌兹钢",
+      "showId": "乌兹钢",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "塔盾",
+      "showId": "塔盾",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Lithuanians"
+    },
+    {
+      "tech": "盘蛇阵",
+      "showId": "盘蛇阵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Shu"
+    },
+    {
+      "tech": "酋长",
+      "showId": "酋长",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Vikings"
+    },
+    {
+      "tech": "札甲",
+      "showId": "札甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Khitans"
+    },
+    {
+      "tech": "刹帝利",
+      "showId": "刹帝利",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Gurjaras"
+    },
+    {
+      "tech": "屯田",
+      "showId": "屯田",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Wei"
+    },
+    {
+      "tech": "阿兹特克训练速度",
+      "showId": "阿兹特克训练速度",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
+      "score": 1,
+      "civ": "Aztecs"
+    },
+    {
+      "tech": "保加利亚科技减价",
+      "showId": "保加利亚科技减价",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
+      "score": 1,
+      "civ": "Bulgarians"
+    },
+    {
+      "tech": "缅甸步兵攻击",
+      "showId": "缅甸步兵攻击",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
+      "score": 1,
+      "civ": "Burmese"
+    },
+    {
+      "tech": "缅甸便宜修道院科技",
+      "showId": "缅甸便宜修道院科技",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
+      "score": 1,
+      "civ": "Burmese"
+    },
+    {
+      "tech": "拜占庭动员兵",
+      "showId": "拜占庭动员兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Byzantines.webp",
+      "score": 1,
+      "civ": "Byzantines"
+    },
+    {
+      "tech": "凯尔特步兵移速",
+      "showId": "凯尔特步兵移速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
+      "score": 1,
+      "civ": "Celts"
+    },
+    {
+      "tech": "凯尔特视野锁定",
+      "showId": "凯尔特视野锁定",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
+      "score": 1,
+      "civ": "Celts"
+    },
+    {
+      "tech": "中国便宜科技",
+      "showId": "中国便宜科技",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
+      "score": 1,
+      "civ": "Chinese"
+    },
+    {
+      "tech": "埃塞俄比亚免费长枪兵",
+      "showId": "埃塞俄比亚免费长枪兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Ethiopians.webp",
+      "score": 1,
+      "civ": "Ethiopians"
+    },
+    {
+      "tech": "哥特步兵烧屋",
+      "showId": "哥特步兵烧屋",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Goths.webp",
+      "score": 1,
+      "civ": "Goths"
+    },
+    {
+      "tech": "哥特便宜步兵",
+      "showId": "哥特便宜步兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Goths.webp",
+      "score": 1,
+      "civ": "Goths"
+    },
+    {
+      "tech": "日本快速步兵",
+      "showId": "日本快速步兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Japanese.webp",
+      "score": 1,
+      "civ": "Japanese"
+    },
+    {
+      "tech": "高丽木头降价",
+      "showId": "高丽木头降价",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+      "score": 1,
+      "civ": "Koreans"
+    },
+    {
+      "tech": "立陶宛移速",
+      "showId": "立陶宛移速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Lithuanians.webp",
+      "score": 1,
+      "civ": "Lithuanians"
+    },
+    {
+      "tech": "马扎尔近战科技",
+      "showId": "马扎尔近战科技",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Magyars.webp",
+      "score": 1,
+      "civ": "Magyars"
+    },
+    {
+      "tech": "马里兵营盾牌",
+      "showId": "马里兵营盾牌",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Malians.webp",
+      "score": 1,
+      "civ": "Malians"
+    },
+    {
+      "tech": "西西里减免伤害",
+      "showId": "西西里减免伤害",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Sicilians.webp",
+      "score": 1,
+      "civ": "Sicilians"
+    },
+    {
+      "tech": "西班牙铁匠铺折扣",
+      "showId": "西班牙铁匠铺折扣",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
+      "score": 1,
+      "civ": "Spanish"
+    },
+    {
+      "tech": "鞑靼高地加成",
+      "showId": "鞑靼高地加成",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
+      "score": 1,
+      "civ": "Tatars"
+    },
+    {
+      "tech": "条顿士兵护甲",
+      "showId": "条顿士兵护甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.webp",
+      "score": 1,
+      "civ": "Teutons"
+    },
+    {
+      "tech": "越南免费征招",
+      "showId": "越南免费征招",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.webp",
+      "score": 1,
+      "civ": "Vietnamese"
+    },
+    {
+      "tech": "维京步兵血量",
+      "showId": "维京步兵血量",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vikings.webp",
+      "score": 1,
+      "civ": "Vikings"
+    },
+    {
+      "tech": "波希米亚长枪兵",
+      "showId": "波希米亚长枪兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bohemians.webp",
+      "score": 1,
+      "civ": "Bohemians"
+    },
+    {
+      "tech": "达罗毗荼便宜科技",
+      "showId": "达罗毗荼便宜科技",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Dravidians.webp",
+      "score": 1,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "印加步兵降价",
+      "showId": "印加步兵降价",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Incas.webp",
+      "score": 1,
+      "civ": "Incas"
+    },
+    {
+      "tech": "马来免费步兵护甲",
+      "showId": "马来免费步兵护甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Malay.webp",
+      "score": 1,
+      "civ": "Malay"
+    },
+    {
+      "tech": "罗马铁匠铺加成",
+      "showId": "罗马铁匠铺加成",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Romans.webp",
+      "score": 1,
+      "civ": "Romans"
+    },
+    {
+      "tech": "格鲁吉亚对抗力",
+      "showId": "格鲁吉亚对抗力",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
+      "score": 1,
+      "civ": "Georgians"
+    },
+    {
+      "tech": "女真误伤",
+      "showId": "女真误伤",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+      "score": 1,
+      "civ": "Jurchens"
+    },
+    {
+      "tech": "契丹近战升级",
+      "showId": "契丹近战升级",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Khitans.webp",
+      "score": 1,
+      "civ": "Khitans"
+    },
+    {
+      "tech": "契丹加速",
+      "showId": "契丹加速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Khitans.webp",
+      "score": 1,
+      "civ": "Khitans"
+    },
+    {
+      "tech": "吴步兵修复",
+      "showId": "吴步兵修复",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wu.webp",
+      "score": 1,
+      "civ": "Wu"
+    }
+  ]
+}

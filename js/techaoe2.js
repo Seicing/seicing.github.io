@@ -2269,38 +2269,58 @@ function HandCannoneer() {
 }
 
 function Scoutcavalry() {
-    document.getElementById("Aztecs").style.opacity = "0.3";
-    document.getElementById("Mayans").style.opacity = "0.3";
-    document.getElementById("Incas").style.opacity = "0.3";
+    document.getElementById("Aztecs2").style.opacity = "0.15";
+    document.getElementById("Mayans2").style.opacity = "0.15";
+    document.getElementById("Incas2").style.opacity = "0.15";
 }
 
 
 function CavalryArcher() {
-    document.getElementById("Aztecs").style.opacity = "0.3";
-    document.getElementById("Mayans").style.opacity = "0.3";
-    document.getElementById("Incas").style.opacity = "0.3";
-    document.getElementById("Bohemians").style.opacity = "0.3";
-    document.getElementById("Gurjaras").style.opacity = "0.3";
-    document.getElementById("Bengalis").style.opacity = "0.3";
-    document.getElementById("Dravidians").style.opacity = "0.3";
+    document.getElementById("Aztecs2").style.opacity = "0.15";
+    document.getElementById("Mayans2").style.opacity = "0.15";
+    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").style.opacity = "0.15";
 }
 
 function HeavyCavalryArcher() {
-    document.getElementById("Aztecs").style.opacity = "0.3";
-    document.getElementById("Mayans").style.opacity = "0.3";
-    document.getElementById("Incas").style.opacity = "0.3";
-    document.getElementById("Burgundians").style.opacity = "0.3";
-    document.getElementById("Italians").style.opacity = "0.3";
-    document.getElementById("Portuguese").style.opacity = "0.3";
-    document.getElementById("Sicilians").style.opacity = "0.3";
-    document.getElementById("Teutons").style.opacity = "0.3";
-    document.getElementById("Vikings").style.opacity = "0.3";
-    document.getElementById("Bohemians").style.opacity = "0.3";
-    document.getElementById("Gurjaras").style.opacity = "0.3";
-    document.getElementById("Bengalis").style.opacity = "0.3";
-    document.getElementById("Dravidians").style.opacity = "0.3";
-    document.getElementById("Malay").style.opacity = "0.3";
-    document.getElementById("Armenians").style.opacity = "0.3";
-    document.getElementById("Wu").style.opacity = "0.3";
+    document.getElementById("Aztecs2").style.opacity = "0.15";
+    document.getElementById("Mayans2").style.opacity = "0.15";
+    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Burgundians2").style.opacity = "0.15";
+    document.getElementById("Italians2").style.opacity = "0.15";
+    document.getElementById("Portuguese2").style.opacity = "0.15";
+    document.getElementById("Sicilians2").style.opacity = "0.15";
+    document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").style.opacity = "0.15";
+    document.getElementById("Malay2").style.opacity = "0.15";
+    document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Wu2").style.opacity = "0.15";
+}
+
+function Pikeman() {
+    document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+}
+
+function Halberdier() {
+    document.getElementById("Aztecs2").style.opacity = "0.15";
+    document.getElementById("Berbers2").style.opacity = "0.15";
+    document.getElementById("Italians2").style.opacity = "0.15";
+    document.getElementById("Malians2").style.opacity = "0.15";
+    document.getElementById("Mongols2").style.opacity = "0.15";
+    document.getElementById("Saracens2").style.opacity = "0.15";
+    document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Poles2").style.opacity = "0.15";
+    document.getElementById("Indians2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
 }
 
