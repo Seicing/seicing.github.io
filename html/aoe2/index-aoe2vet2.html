@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>帝国时代II 加成表</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+    })
+</script>
+<script>
+    fetch("https://seicing.com/js/list/AOE2DIC3.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("civList").innerHTML = html;
+        });
+</script>
+
+<!-- =====================================================
+     2️⃣ 加载官方科技数据库
+===================================================== -->
+<script src="https://seicing.com/js/techaoe2.js"></script>
+
+<script>
+    /* =====================================================
+       文明列表解析（唯一文明来源）
+    ===================================================== */
+    function getCivList() {
+        const civs = [];
+        document
+            .querySelectorAll('#civList img[id$="2"]')
+            .forEach(img => {
+                civs.push({
+                    key: img.id.replace(/2$/, ""),
+                    icon: img.getAttribute("src"),
+                    title: img.getAttribute("title") || ""
+                });
+            });
+        return civs;
+    }
+
+    /* =====================================================
+       扫描 techaoe2.js 标记的缺失科技
+    ===================================================== */
+    function buildDisabledMap() {
+        const map = {};
+        const civs = getCivList().map(c => c.key);
+
+        document.querySelectorAll('[id]').forEach(el => {
+            if (el.style.opacity === "0.15") {
+                const raw = el.id.replace(/2$/, "");
+                const civ = civs.find(c => raw.endsWith(c));
+                if (!civ) return;
+
+                const tech = raw.slice(0, raw.length - civ.length);
+                if (!map[civ]) map[civ] = {};
+                map[civ][tech] = true;
+            }
+        });
+        return map;
+    }
+
+    /* =====================================================
+       科技图标解析（支持表单自定义）
+    ===================================================== */
+    function resolveTechIcon(item, civ) {
+        if (item.iconByCiv) {
+            if (item.iconByCiv[civ]) return item.iconByCiv[civ];
+            if (item.iconByCiv.default) return item.iconByCiv.default;
+        }
+        if (item.icon) return item.icon;
+        return `https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/tech/${item.tech}.webp`;
+    }
+
+    /* =====================================================
+       表单定义（一个表单 = 一个表格）
+    ===================================================== */
+    const TABLE_FORMS = {
+        infantry: {
+            tableId: "infantryTable",
+            items: [
+                { tech: "Squires", score: 2 },
+                { tech: "Supplies", score: 1 },
+                {
+                    tech: "Kataparuto",
+                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/tech/Kataparuto.webp",
+                    score: 3,
+                    uniqueTo: ["Japanese"]
+                }
+            ]
+        },
+
+        monk: {
+            tableId: "monkTable",
+            items: [
+                { tech: "Faith", score: 2 },
+                { tech: "Heresy", score: 1 }
+            ]
+        }
+    };
+
+    /* =====================================================
+       表格生成
+    ===================================================== */
+    function generateTable(form) {
+        const civs = getCivList();
+        const disabled = buildDisabledMap();
+
+        let html = "<table><tr><th>文明</th>";
+        form.items.forEach(i => html += `<th>${i.tech}</th>`);
+        html += "<th>总分</th></tr>";
+
+        civs.forEach(civObj => {
+            const civ = civObj.key;
+            let total = 0;
+
+            html += "<tr>";
+            html += `
+      <td class="civcell" title="${civObj.title}">
+        <img src="${civObj.icon}">
+      </td>`;
+
+            form.items.forEach(item => {
+                if (item.uniqueTo && !item.uniqueTo.includes(civ)) {
+                    html += "<td></td>";
+                    return;
+                }
+
+                const banned = disabled[civ]?.[item.tech];
+                const icon = resolveTechIcon(item, civ);
+
+                html += `
+        <td class="tech">
+          <img src="${icon}">
+          ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
+        </td>`;
+
+                if (!banned) total += item.score || 0;
+            });
+
+            html += `<td class="score">${total}</td>`;
+            html += "</tr>";
+        });
+
+        html += "</table>";
+        document.getElementById(form.tableId).innerHTML = html;
+    }
+
+    function generateAllTables() {
+        Object.values(TABLE_FORMS).forEach(generateTable);
+    }
+
+    /* =====================================================
+       启动时机：等文明列表加载完成
+    ===================================================== */
+    const civListObserver = new MutationObserver(() => {
+        if (getCivList().length > 0) {
+            generateAllTables();
+            civListObserver.disconnect();
+        }
+    });
+
+    civListObserver.observe(document.getElementById("civList"), {
+        childList: true,
+        subtree: true
+    });
+</script>
+
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="29"></div>
+<h2>可研发文明列表</h2>
+
+<!-- ===== 文明列表：保持外部文件调用 ===== -->
+<div id="civList"></div>
+
+<h2>步兵科技评分</h2>
+<div id="infantryTable"></div>
+
+<h2>僧侣科技评分</h2>
+<div id="monkTable"></div>
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<style>
+    table {
+        border-collapse: collapse;
+        margin-bottom: 24px;
+    }
+
+    td,
+    th {
+        border: 1px solid #444;
+        padding: 4px;
+        text-align: center;
+    }
+
+    th {
+        background: #222;
+    }
+
+    .tech {
+        position: relative;
+        width: 36px;
+        height: 36px;
+    }
+
+    .tech img {
+        width: 28px;
+    }
+
+    .cannot {
+        position: absolute;
+        inset: 0;
+        opacity: 0.85;
+    }
+
+    .score {
+        font-weight: bold;
+        color: #ffd700;
+    }
+
+    .civcell img {
+        width: 28px;
+    }
+</style>
+
+</html>
