@@ -1,0 +1,34 @@
+{
+  "tableId": "infantryTable",
+  "common": [
+    {
+      "tech": "Squires",
+      "showId": "护卫",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SquiresDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Arson",
+      "showId": "纵火",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
+      "score": 1
+    }
+  ],
+  "unique": [
+    {
+      "tech": "弹射器",
+      "showId": "弹射器",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 1,
+      "civ": "Japanese"
+    },
+    {
+      "tech": "火箭",
+      "showId": "火箭",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 1,
+      "civ": "Chinese",
+      "replace": "Arson"
+    }
+  ]
+}

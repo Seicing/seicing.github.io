@@ -2153,3 +2153,27 @@ function BombardTower() {
     document.getElementById("Wu2").style.opacity = "0.15";
     document.getElementById("Jurchens2").style.opacity = "0.15";
 }
+
+
+function LongSwordsman() {
+    document.getElementById("Jurchens").style.opacity = "0.15";
+}
+function TwoHandedSwordsman() {
+    document.getElementById("Jurchens").style.opacity = "0.15";
+    document.getElementById("Persians").style.opacity = "0.15";
+    document.getElementById("Romans").style.opacity = "0.15";
+}
+function Champion() {
+    document.getElementById("Persians").style.opacity = "0.15";
+    document.getElementById("Bulgarians").style.opacity = "0.15";
+    document.getElementById("Huns").style.opacity = "0.15";
+    document.getElementById("Ethiopians").style.opacity = "0.15";
+    document.getElementById("Khmer").style.opacity = "0.15";
+    document.getElementById("Malay").style.opacity = "0.15";
+    document.getElementById("Mayans").style.opacity = "0.15";
+    document.getElementById("Tatars").style.opacity = "0.15";
+    document.getElementById("Gurjaras").style.opacity = "0.15";
+    document.getElementById("Romans").style.opacity = "0.15";
+    document.getElementById("Jurchens").style.opacity = "0.15";
+    document.getElementById("Wei").style.opacity = "0.15";
+}
