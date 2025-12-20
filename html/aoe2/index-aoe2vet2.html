@@ -229,13 +229,17 @@
        切换表格（按钮调用）
     ===================================================== */
     function switchTable(tableId, el) {
+        // 移除所有按钮图片的 active
         document.querySelectorAll('.tech-tab.active')
-            .forEach(b => b.classList.remove('active'));
+            .forEach(img => img.classList.remove('active'));
 
-        if (el) el.classList.add('active');
+        // 给当前按钮里的 img 加 active
+        if (el) {
+            const img = el.querySelector('.tech-tab');
+            if (img) img.classList.add('active');
+        }
 
         const container = document.getElementById("techTableContainer");
-
         container.innerHTML = "";
 
         const div = document.createElement("div");
@@ -244,6 +248,7 @@
 
         loadFormByTableId(tableId);
     }
+
 
     document.addEventListener("DOMContentLoaded", () => {
         fetch("https://seicing.com/js/list/AOE2DIC3.html")
@@ -319,6 +324,9 @@
 </body>
 
 <style>
+    /* =========================
+       科技表格基础样式
+    ========================= */
     .tech-table {
         border-collapse: collapse;
         background: #ffffff;
@@ -373,11 +381,10 @@
         pointer-events: none;
     }
 
-    .tech:hover {
-        outline: 2px solid #4aa3ff;
-        z-index: 2;
-    }
+    /* ⚠️ 不再给 td 描边，避免基线错位 */
+    /* .tech:hover { outline: ... } */
 
+    /* tooltip */
     .tech::after {
         content: attr(data-tech);
         position: absolute;
@@ -422,26 +429,27 @@
         display: block;
     }
 
+    /* =========================
+       表单切换按钮（图片）
+       <a><img class="tech-tab"></a>
+    ========================= */
+
+    /* 图标本体 */
     .tech-tab {
         display: inline-block;
+        cursor: pointer;
     }
 
-    /* 可视对象统一处理 */
-    .tech-tab>* {
-        position: relative;
+    /* hover：轻微高亮（可选） */
+    .tech-tab:hover {
+        filter:
+            drop-shadow(0 0 3px rgba(255, 200, 140, 0.6));
     }
 
-    /* 发光效果 */
-    .tech-tab.active>*::after {
-        content: "";
-        position: absolute;
-        inset: -5px;
-        border-radius: 6px;
-        /* 按按钮形状调 */
-        box-shadow:
-            0 0 6px rgba(255, 144, 80, 0.9),
-            0 0 12px rgba(255, 179, 80, 0.6);
-        pointer-events: none;
+    /* active：强外发光 */
+    .tech-tab.active {
+        filter:
+            drop-shadow(0 0 6px rgba(255, 144, 80, 0.95)) drop-shadow(0 0 12px rgba(255, 179, 80, 0.7));
     }
 </style>
 
