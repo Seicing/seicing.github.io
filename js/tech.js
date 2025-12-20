@@ -786,7 +786,7 @@ let ayanami = {
 
     "就地坚守": /*html*/`就地坚守<br>Beachhead Ram<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>打开冲车侧面防御甲板，获得就地坚守能力，发射8射程8攻击力的箭矢，2.25秒攻击间隔时间，驻扎更多单位可以增加更多箭矢`,
 
-    "荣光冲锋": /*html*/`荣光冲锋<br>Glorious Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>为哨站解锁荣光冲锋能力，激活后，10秒内向所有玩家显示哨站及附近区域，10秒后设防哨站在引导10秒后，哨站附近的所有盟友单位将获得+50%移动速度，受到伤害-15%，持续30秒`,
+    "荣光冲锋": /*html*/`荣光冲锋<br>Glorious Charge<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>为哨站解锁荣光冲锋能力，激活后，10秒内向所有玩家显示哨站及附近区域，10秒后设防哨站在引导10秒后，哨站附近的所有单位将获得+50%移动速度，受到伤害-15%，持续30秒`,
 
     "解锁牲畜围栏法令": /*html*/`解锁牲畜围栏法令<br>Unlock Stockyard Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>解锁牲畜围栏法令，允许设防哨站影响力范围内的牲畜围栏在工作时生成黄金`,
     "解锁肉盾法令": /*html*/`解锁肉盾法令<br>Unlock Kharash Edict<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>解锁肉盾法令，允许设防哨站影响力范围内的军事生产建筑在生产部队时，免费生成额外的肉盾`,

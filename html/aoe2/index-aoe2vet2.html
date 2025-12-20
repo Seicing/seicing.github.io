@@ -97,14 +97,6 @@
                 }
             ]
         },
-
-        monk: {
-            tableId: "monkTable",
-            items: [
-                { tech: "Faith", score: 2 },
-                { tech: "Heresy", score: 1 }
-            ]
-        }
     };
 
     /* =====================================================
@@ -158,19 +150,8 @@
         Object.values(TABLE_FORMS).forEach(generateTable);
     }
 
-    /* =====================================================
-       启动时机：等文明列表加载完成
-    ===================================================== */
-    const civListObserver = new MutationObserver(() => {
-        if (getCivList().length > 0) {
-            generateAllTables();
-            civListObserver.disconnect();
-        }
-    });
-
-    civListObserver.observe(document.getElementById("civList"), {
-        childList: true,
-        subtree: true
+    document.addEventListener("DOMContentLoaded", () => {
+        generateAllTables();
     });
 </script>
 
@@ -202,9 +183,6 @@
 
 <h2>步兵科技评分</h2>
 <div id="infantryTable"></div>
-
-<h2>僧侣科技评分</h2>
-<div id="monkTable"></div>
 </div>
                     </div>
                 </div>
@@ -225,45 +203,114 @@
 </body>
 
 <style>
-    table {
+    /* =====================================================
+   表格整体
+===================================================== */
+    .tech-table {
         border-collapse: collapse;
-        margin-bottom: 24px;
+        background: #ffffff;
     }
 
-    td,
-    th {
-        border: 1px solid #444;
-        padding: 4px;
+    .tech-table th,
+    .tech-table td {
+        border: 1px solid #9a9a9a;
+        width: 40px;
+        height: 40px;
+        padding: 2px;
         text-align: center;
+        vertical-align: middle;
     }
 
-    th {
-        background: #222;
+    /* =====================================================
+   文明列
+===================================================== */
+    .tech-table td.civcell {
+        background: #ffffff;
+        width: 44px;
     }
 
+    .tech-table td.civcell img {
+        width: 28px;
+    }
+
+    /* =====================================================
+   科技格子基础
+===================================================== */
     .tech {
         position: relative;
-        width: 36px;
-        height: 36px;
     }
 
     .tech img {
         width: 28px;
+        pointer-events: none;
     }
 
-    .cannot {
+    /* =====================================================
+   可用 / 不可用 状态
+===================================================== */
+    .tech.available {
+        background-color: #c9f8dc;
+        /* 浅绿 */
+    }
+
+    .tech.unavailable {
+        background-color: #f6d6d6;
+        /* 浅粉 */
+    }
+
+    .tech.unavailable img:first-child {
+        filter: grayscale(100%) brightness(0.8);
+    }
+
+    /* =====================================================
+   禁用覆盖图标
+===================================================== */
+    .tech .cannot {
         position: absolute;
         inset: 0;
         opacity: 0.85;
+        pointer-events: none;
     }
 
+    /* =====================================================
+   Hover 高亮
+===================================================== */
+    .tech:hover {
+        outline: 2px solid #4aa3ff;
+        z-index: 2;
+    }
+
+    /* =====================================================
+   Hover 科技名称 Tooltip
+===================================================== */
+    .tech::after {
+        content: attr(data-tech);
+        position: absolute;
+        bottom: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.85);
+        color: #ffffff;
+        font-size: 12px;
+        padding: 3px 6px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s;
+    }
+
+    .tech:hover::after {
+        opacity: 1;
+    }
+
+    /* =====================================================
+   总分
+===================================================== */
     .score {
         font-weight: bold;
         color: #ffd700;
-    }
-
-    .civcell img {
-        width: 28px;
+        background: #111;
     }
 </style>
 
