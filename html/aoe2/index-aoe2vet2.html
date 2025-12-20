@@ -283,17 +283,17 @@
                         <div class="entry"><div id="lavipage" page="29"></div>
 <div id="civList"></div>
 
-
-<a class="tech-tab" onclick="switchTable('infantryTable', this)">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Longswordsman_aoe2DE.webp" width="28px">
+&nbsp;&nbsp;
+<a onclick="switchTable('infantryTable', this)">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Longswordsman_aoe2DE.webp" width="28px" class="tech-tab">
 </a>
 
-<a class="tech-tab" onclick="switchTable('archerTable', this)">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Crossbowman_aoe2DE.webp" width="28px">
+<a onclick="switchTable('archerTable', this)">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Crossbowman_aoe2DE.webp" width="28px" class="tech-tab">
 </a>
 
-<a class="tech-tab" onclick="switchTable('cavalryTable', this)">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Scoutcavalry_aoe2DE.webp" width="28px">
+<a onclick="switchTable('cavalryTable', this)">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Scoutcavalry_aoe2DE.webp" width="28px" class="tech-tab">
 </a>
 
 <br><br>
@@ -422,29 +422,25 @@
         display: block;
     }
 
-    /* 所有表单切换按钮共用 */
     .tech-tab {
-        position: relative;
-        cursor: pointer;
         display: inline-block;
     }
 
-    /* 当前启用状态 */
-    .tech-tab.active {
-        z-index: 10;
+    /* 可视对象统一处理 */
+    .tech-tab>* {
+        position: relative;
     }
 
-    /* 外发光描边 */
-    .tech-tab.active::after {
+    /* 发光效果 */
+    .tech-tab.active>*::after {
         content: "";
         position: absolute;
         inset: -5px;
-        /* 👈 外扩 5px */
         border-radius: 6px;
-        /* 可按按钮形状调 */
+        /* 按按钮形状调 */
         box-shadow:
-            0 0 6px rgba(80, 160, 255, 0.9),
-            0 0 12px rgba(80, 160, 255, 0.6);
+            0 0 6px rgba(255, 144, 80, 0.9),
+            0 0 12px rgba(255, 179, 80, 0.6);
         pointer-events: none;
     }
 </style>
