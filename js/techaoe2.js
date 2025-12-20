@@ -2214,7 +2214,6 @@ function LightCavalry() {
 }
 
 function Hussar() {
-    document.getElementById("techno").style.display = "block";
     document.getElementById("Aztecs2").style.opacity = "0.15";
     document.getElementById("Mayans2").style.opacity = "0.15";
     document.getElementById("Incas2").style.opacity = "0.15";
