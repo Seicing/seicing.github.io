@@ -2,6 +2,12 @@
   "tableId": "infantryTable",
   "common": [
     {
+      "tech": "ManatArms",
+      "showId": "剑士",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到剑士.webp",
+      "score": 1
+    },
+    {
       "tech": "LongSwordsman",
       "showId": "长剑士",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到长剑士.webp",

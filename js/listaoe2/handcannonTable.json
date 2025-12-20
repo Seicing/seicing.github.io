@@ -1,0 +1,143 @@
+{
+  "tableId": "handcannonTable",
+  "common": [
+    {
+      "tech": "HandCannoneer",
+      "showId": "火枪手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Hand_cannoneer_aoe2DE.webp",
+      "score": 1
+    },
+    {
+      "tech": "PaddedArcherArmor",
+      "showId": "射手软甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PaddedArcherArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "LeatherArcherArmor",
+      "showId": "射手皮甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/LeatherArcherArmorDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "RingArcherArmor",
+      "showId": "射手锁甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/RingArcherArmorDE.webp",
+      "score": 2
+    }
+  ],
+  "unique": [
+    {
+      "tech": "烟火之术",
+      "showId": "烟火之术",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Italians"
+    },
+    {
+      "tech": "印度火铳",
+      "showId": "印度火铳",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Hindustanis"
+    },
+    {
+      "tech": "火绳枪",
+      "showId": "火绳枪",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Portuguese"
+    },
+    {
+      "tech": "大车阵战术",
+      "showId": "大车阵战术",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Bohemians"
+    },
+    {
+      "tech": "刹帝利",
+      "showId": "刹帝利",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Gurjaras"
+    },
+    {
+      "tech": "勃艮第火药攻速",
+      "showId": "勃艮第火药攻速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burgundians.webp",
+      "score": 1,
+      "civ": "Burgundians"
+    },
+    {
+      "tech": "意大利便宜火药",
+      "showId": "意大利便宜火药",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Italians.webp",
+      "score": 1,
+      "civ": "Italians"
+    },
+    {
+      "tech": "高丽免费升级",
+      "showId": "高丽免费升级",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+      "score": 1,
+      "civ": "Koreans"
+    },
+    {
+      "tech": "葡萄牙黄金费用",
+      "showId": "葡萄牙黄金费用",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
+      "score": 1,
+      "civ": "Portuguese"
+    },
+    {
+      "tech": "西班牙火药攻速",
+      "showId": "西班牙火药攻速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
+      "score": 1,
+      "civ": "Spanish"
+    },
+    {
+      "tech": "西班牙铁匠铺折扣",
+      "showId": "西班牙铁匠铺折扣",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
+      "score": 1,
+      "civ": "Spanish"
+    },
+    {
+      "tech": "印度斯坦火药护甲",
+      "showId": "印度斯坦火药护甲",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Hindustanis.webp",
+      "score": 1,
+      "civ": "Hindustanis"
+    },
+    {
+      "tech": "鞑靼高地加成",
+      "showId": "鞑靼高地加成",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
+      "score": 1,
+      "civ": "Tatars"
+    },
+    {
+      "tech": "土耳其火药血量",
+      "showId": "土耳其火药血量",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
+      "score": 1,
+      "civ": "Turks"
+    },
+    {
+      "tech": "土耳其科技折扣",
+      "showId": "土耳其科技折扣",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
+      "score": 1,
+      "civ": "Turks"
+    },
+    {
+      "tech": "波希米亚早期火药",
+      "showId": "波希米亚早期火药",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bohemians.webp",
+      "score": 1,
+      "civ": "Bohemians"
+    }
+  ]
+}
