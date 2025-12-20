@@ -86,14 +86,32 @@
     const TABLE_FORMS = {
         infantry: {
             tableId: "infantryTable",
-            items: [
-                { tech: "Squires", score: 2 },
-                { tech: "Supplies", score: 1 },
+            /* 公共科技（固定列） */
+            common: [
                 {
-                    tech: "Kataparuto",
-                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/tech/Kataparuto.webp",
+                    tech: "Squires",
+                    icon: "3fatcatpool/aoe2/unit/SquiresDE.webp",
+                    score: 1,
+                },
+                {
+                    tech: "Arson",
+                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
+                    score: 1,
+                }
+            ],
+            /* 独特科技（只属于某文明） */
+            unique: [
+                {
+                    tech: "弹射器",
+                    icon: "3fatcatpool/aoe2/pic/Unique-tech.webp",
                     score: 3,
-                    uniqueTo: ["Japanese"]
+                    civ: "Japanese"
+                },
+                {
+                    tech: "印度火枪",
+                    icon: "3fatcatpool/aoe2/pic/Unique-tech.webp",
+                    score: 2,
+                    civ: "Khmer"
                 }
             ]
         },
@@ -102,42 +120,57 @@
     /* =====================================================
        表格生成
     ===================================================== */
+
+
     function generateTable(form) {
         const civs = getCivList();
         const disabled = buildDisabledMap();
 
-        let html = "<table><tr><th>文明</th>";
-        form.items.forEach(i => html += `<th>${i.tech}</th>`);
-        html += "<th>总分</th></tr>";
+        let html = `<table class="tech-table">`;
 
         civs.forEach(civObj => {
             const civ = civObj.key;
             let total = 0;
 
             html += "<tr>";
+
+            /* ===== 文明图标 ===== */
             html += `
-      <td class="civcell" title="${civObj.title}">
-        <img src="${civObj.icon}">
-      </td>`;
+<td class="civcell" title="${civObj.title}">
+  <img src="${civObj.icon}">
+</td>`;
 
-            form.items.forEach(item => {
-                if (item.uniqueTo && !item.uniqueTo.includes(civ)) {
-                    html += "<td></td>";
-                    return;
-                }
-
+            /* ===== 公共科技 ===== */
+            form.common.forEach(item => {
                 const banned = disabled[civ]?.[item.tech];
                 const icon = resolveTechIcon(item, civ);
 
                 html += `
-        <td class="tech">
-          <img src="${icon}">
-          ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
-        </td>`;
+<td class="tech ${banned ? 'unavailable' : 'available'}"
+    data-tech="${item.tech}">
+  <img src="${icon}">
+  ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
+</td>`;
 
                 if (!banned) total += item.score || 0;
             });
 
+            /* ===== 独特科技（只加在本行后面） ===== */
+            form.unique
+                .filter(u => u.civ === civ)
+                .forEach(item => {
+                    const icon = resolveTechIcon(item, civ);
+
+                    html += `
+<td class="tech unique available"
+    data-tech="${item.tech}">
+  <img src="${icon}">
+</td>`;
+
+                    total += item.score || 0;
+                });
+
+            /* ===== 总分 ===== */
             html += `<td class="score">${total}</td>`;
             html += "</tr>";
         });
@@ -145,6 +178,10 @@
         html += "</table>";
         document.getElementById(form.tableId).innerHTML = html;
     }
+
+
+
+
 
     function generateAllTables() {
         Object.values(TABLE_FORMS).forEach(generateTable);
