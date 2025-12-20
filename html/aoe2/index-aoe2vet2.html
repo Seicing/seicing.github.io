@@ -382,31 +382,6 @@
         pointer-events: none;
     }
 
-    /* ⚠️ 不再给 td 描边，避免基线错位 */
-    /* .tech:hover { outline: ... } */
-
-    /* tooltip */
-    .tech::after {
-        content: attr(data-tech);
-        position: absolute;
-        bottom: 110%;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(0, 0, 0, 0.85);
-        color: #ffffff;
-        font-size: 12px;
-        padding: 3px 6px;
-        border-radius: 4px;
-        white-space: nowrap;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.15s;
-    }
-
-    .tech:hover::after {
-        opacity: 1;
-    }
-
     .score {
         font-weight: bold;
         color: #ffd700;
