@@ -2156,24 +2156,24 @@ function BombardTower() {
 
 
 function LongSwordsman() {
-    document.getElementById("Jurchens").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 function TwoHandedSwordsman() {
-    document.getElementById("Jurchens").style.opacity = "0.15";
-    document.getElementById("Persians").style.opacity = "0.15";
-    document.getElementById("Romans").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
 }
 function Champion() {
-    document.getElementById("Persians").style.opacity = "0.15";
-    document.getElementById("Bulgarians").style.opacity = "0.15";
-    document.getElementById("Huns").style.opacity = "0.15";
-    document.getElementById("Ethiopians").style.opacity = "0.15";
-    document.getElementById("Khmer").style.opacity = "0.15";
-    document.getElementById("Malay").style.opacity = "0.15";
-    document.getElementById("Mayans").style.opacity = "0.15";
-    document.getElementById("Tatars").style.opacity = "0.15";
-    document.getElementById("Gurjaras").style.opacity = "0.15";
-    document.getElementById("Romans").style.opacity = "0.15";
-    document.getElementById("Jurchens").style.opacity = "0.15";
-    document.getElementById("Wei").style.opacity = "0.15";
+    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").style.opacity = "0.15";
+    document.getElementById("Huns2").style.opacity = "0.15";
+    document.getElementById("Ethiopians2").style.opacity = "0.15";
+    document.getElementById("Khmer2").style.opacity = "0.15";
+    document.getElementById("Malay2").style.opacity = "0.15";
+    document.getElementById("Mayans2").style.opacity = "0.15";
+    document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Wei2").style.opacity = "0.15";
 }
