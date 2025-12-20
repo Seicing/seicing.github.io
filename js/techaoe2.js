@@ -2161,7 +2161,6 @@ function LongSwordsman() {
 function TwoHandedSwordsman() {
     document.getElementById("Jurchens2").style.opacity = "0.15";
     document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
 }
 function Champion() {
     document.getElementById("Persians2").style.opacity = "0.15";
@@ -2173,7 +2172,6 @@ function Champion() {
     document.getElementById("Mayans2").style.opacity = "0.15";
     document.getElementById("Tatars2").style.opacity = "0.15";
     document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
     document.getElementById("Jurchens2").style.opacity = "0.15";
     document.getElementById("Wei2").style.opacity = "0.15";
 }
