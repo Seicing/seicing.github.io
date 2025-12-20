@@ -202,6 +202,11 @@
        切换表格（按钮调用）
     ===================================================== */
     function switchTable(tableId) {
+        document.querySelectorAll('.tech-tab.active')
+            .forEach(b => b.classList.remove('active'));
+
+        if (el) el.classList.add('active');
+
         const container = document.getElementById("techTableContainer");
 
         container.innerHTML = "";
@@ -222,6 +227,12 @@
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
                 switchTable("infantryTable"); // 默认表
+
+                const firstBtn = document.querySelector('.tech-tab');
+                if (firstBtn) {
+                    firstBtn.classList.add('active');
+                    switchTable("infantryTable", firstBtn);
+                }
             });
     });
 </script>
@@ -249,10 +260,20 @@
                         <div class="entry"><div id="lavipage" page="29"></div>
 <div id="civList"></div>
 
-<button onclick="switchTable('infantryTable')">剑士</button>
-<button onclick="switchTable('archerTable')">步弓手</button>
-<button onclick="switchTable('cavalryTable')">轻骑兵</button>
 
+<a class="tech-tab" onclick="switchTable('infantryTable', this)">
+    <button>剑士</button>
+</a>
+
+<a class="tech-tab" onclick="switchTable('archerTable', this)">
+    <button>步弓手</button>
+</a>
+
+<a class="tech-tab" onclick="switchTable('cavalryTable', this)">
+    <button>轻骑兵</button>
+</a>
+
+<br><br>
 <div id="techTableContainer">
     <div id="infantryTable"></div>
 </div></div>
@@ -376,6 +397,31 @@
         width: 100%;
         height: 100%;
         display: block;
+    }
+
+    /* 所有表单切换按钮共用 */
+    .tech-tab {
+        position: relative;
+        cursor: pointer;
+    }
+
+    /* 当前启用状态 */
+    .tech-tab.active {
+        z-index: 10;
+    }
+
+    /* 外发光描边 */
+    .tech-tab.active::after {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        /* 👈 外扩 5px */
+        border-radius: 6px;
+        /* 可按按钮形状调 */
+        box-shadow:
+            0 0 6px rgba(80, 160, 255, 0.9),
+            0 0 12px rgba(80, 160, 255, 0.6);
+        pointer-events: none;
     }
 </style>
 
