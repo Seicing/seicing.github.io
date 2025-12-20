@@ -69,12 +69,10 @@
     /* =====================================================
        执行 techaoe2.js 科技函数，采集禁用信息
     ===================================================== */
-    function collectDisabledTechFromAOE2() {
+    function collectDisabledTechFromAOE2(form) {
         const techNames = new Set();
 
-        Object.values(TABLE_FORMS).forEach(form => {
-            form.common.forEach(t => techNames.add(t.tech));
-        });
+        form.common?.forEach(t => techNames.add(t.tech));
 
         techNames.forEach(tech => {
             if (typeof window[tech] === "function") {
@@ -86,7 +84,7 @@
     }
 
     /* =====================================================
-       科技图标解析（支持表单自定义）
+       科技图标解析
     ===================================================== */
     function resolveTechIcon(item, civ) {
         if (item.iconByCiv) {
@@ -98,58 +96,23 @@
     }
 
     /* =====================================================
-       表单定义（一个表单 = 一个表格）
+       当前表单缓存
     ===================================================== */
-    const TABLE_FORMS = {
-        infantry: {
-            tableId: "infantryTable",
-
-            common: [
-                {
-                    tech: "Squires",
-                    showId: "护卫",
-                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SquiresDE.webp",
-                    score: 1
-                },
-                {
-                    tech: "Arson",
-                    showId: "纵火",
-                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
-                    score: 1
-                }
-            ],
-
-            unique: [
-                {
-                    tech: "弹射器",
-                    showId: "弹射器",
-                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-                    score: 3,
-                    civ: "Japanese"
-                },
-                {
-                    tech: "印度火枪",
-                    showId: "印度火枪",
-                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-                    score: 2,
-                    civ: "Khmer"
-                }
-            ]
-        }
-    };
+    let CURRENT_FORM = null;
 
     /* =====================================================
        表格生成
     ===================================================== */
     function generateTable(form) {
 
+        const civs = getCivList();
+
+        /* ---- 计算最大独特科技数量，用于补齐列 ---- */
         const uniqueCountByCiv = {};
-        form.unique.forEach(u => {
+        form.unique?.forEach(u => {
             uniqueCountByCiv[u.civ] = (uniqueCountByCiv[u.civ] || 0) + 1;
         });
         const maxUnique = Math.max(0, ...Object.values(uniqueCountByCiv));
-
-        const civs = getCivList();
 
         let html = `<table class="tech-table">`;
 
@@ -159,20 +122,21 @@
 
             html += "<tr>";
 
+            /* 文明图标 */
             html += `
-<td class="civcell" title="${civObj.title}">
+<td class="civcell">
   <img src="${civObj.icon}">
 </td>`;
 
-            form.common.forEach(item => {
+            /* 公共科技 */
+            form.common?.forEach(item => {
                 const banned = DISABLED_TECH_MAP[item.tech]?.[civ];
                 const icon = resolveTechIcon(item, civ);
 
                 html += `
 <td class="tech ${banned ? 'unavailable' : 'available'}">
   <a onmousemove="showPic(event,'${item.showId || item.tech}');"
-     onmouseout="hiddenPic();"
-     style="display:block;">
+     onmouseout="hiddenPic();">
     <img src="${icon}">
     ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
   </a>
@@ -181,7 +145,8 @@
                 if (!banned) total += item.score || 0;
             });
 
-            const uniques = form.unique.filter(u => u.civ === civ);
+            /* 独特科技（补齐列） */
+            const uniques = form.unique?.filter(u => u.civ === civ) || [];
 
             for (let i = 0; i < maxUnique; i++) {
                 const item = uniques[i];
@@ -193,8 +158,7 @@
                 html += `
 <td class="tech unique available">
   <a onmousemove="showPic(event,'${item.showId || item.tech}');"
-     onmouseout="hiddenPic();"
-     style="display:block;">
+     onmouseout="hiddenPic();">
     <img src="${item.icon}">
   </a>
 </td>`;
@@ -207,27 +171,57 @@
         });
 
         html += "</table>";
+
         document.getElementById(form.tableId).innerHTML = html;
     }
 
     /* =====================================================
-       生成全部表格
+       加载 JSON 表单
     ===================================================== */
-    function generateAllTables() {
-        Object.values(TABLE_FORMS).forEach(generateTable);
+    function loadFormByTableId(tableId) {
+        const url = `https://seicing.com/js/listaoe2/${tableId}.json`;
+
+        fetch(url)
+            .then(r => {
+                if (!r.ok) throw new Error("表单不存在");
+                return r.json();
+            })
+            .then(form => {
+                CURRENT_FORM = form;
+                collectDisabledTechFromAOE2(form);
+                generateTable(form);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById(tableId).innerHTML =
+                    "<p style='color:red'>表单加载失败</p>";
+            });
     }
 
     /* =====================================================
-       页面初始化顺序
+       切换表格（按钮调用）
+    ===================================================== */
+    function switchTable(tableId) {
+        const container = document.getElementById("techTableContainer");
+
+        container.innerHTML = "";
+
+        const div = document.createElement("div");
+        div.id = tableId;
+        container.appendChild(div);
+
+        loadFormByTableId(tableId);
+    }
+
+    /* =====================================================
+       页面初始化
     ===================================================== */
     document.addEventListener("DOMContentLoaded", () => {
         fetch("https://seicing.com/js/list/AOE2DIC3.html")
             .then(r => r.text())
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
-
-                collectDisabledTechFromAOE2(); // 🔥 关键一步
-                generateAllTables();
+                switchTable("infantryTable"); // 默认表
             });
     });
 </script>
@@ -255,8 +249,13 @@
                         <div class="entry"><div id="lavipage" page="29"></div>
 <div id="civList"></div>
 
-<div id="infantryTable"></div>
-</div>
+<button onclick="switchTable('infantryTable')">剑士</button>
+<button onclick="switchTable('archerTable')">步弓手</button>
+<button onclick="switchTable('cavalryTable')">轻骑兵</button>
+
+<div id="techTableContainer">
+    <div id="infantryTable"></div>
+</div></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -284,8 +283,8 @@
     .tech-table th,
     .tech-table td {
         border: 1px solid #9a9a9a;
-        width: 40px;
-        height: 40px;
+        width: 28px;
+        height: 28px;
         padding: 2px;
         text-align: center;
         vertical-align: middle;
@@ -293,7 +292,7 @@
 
     .tech-table td.civcell {
         background: #ffffff;
-        width: 44px;
+        width: 28px;
     }
 
     .tech-table td.civcell img {
