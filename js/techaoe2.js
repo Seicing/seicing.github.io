@@ -2308,6 +2308,9 @@ function Pikeman() {
     document.getElementById("Turks2").style.opacity = "0.15";
     document.getElementById("Gurjaras2").style.opacity = "0.15";
 }
+function EliteSkirmisher() {
+    document.getElementById("Turks2").style.opacity = "0.15";
+}
 
 function Halberdier() {
     document.getElementById("Aztecs2").style.opacity = "0.15";

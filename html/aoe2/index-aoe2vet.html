@@ -398,7 +398,7 @@
 
 <style>
     .civcell.main-banned {
-        background-color: #7a1f1f;
+        background-color: #f6d6d6 !important;
     }
 
     #techTableContainer {
@@ -447,6 +447,14 @@
 
     .tech.unavailable {
         background-color: #f6d6d6;
+    }
+
+    .tech.unavailable img {
+        opacity: 0.65;
+    }
+
+    .tech.unavailable img[src$="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png"] {
+        opacity: 1;
     }
 
     .tech.unavailable img:first-child {
