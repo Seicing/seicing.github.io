@@ -44,24 +44,45 @@
     }
 
     /* =====================================================
-       扫描 techaoe2.js 标记的缺失科技
+       【核心】从 techaoe2.js 真实提取禁用科技
     ===================================================== */
-    function buildDisabledMap() {
-        const map = {};
-        const civs = getCivList().map(c => c.key);
+    const DISABLED_TECH_MAP = {};
+    let CURRENT_TECH_CONTEXT = null;
 
-        document.querySelectorAll('[id]').forEach(el => {
-            if (el.style.opacity === "0.15") {
-                const raw = el.id.replace(/2$/, "");
-                const civ = civs.find(c => raw.endsWith(c));
-                if (!civ) return;
+    (function patchGetElementById() {
+        const original = document.getElementById;
+        document.getElementById = function (id) {
+            if (CURRENT_TECH_CONTEXT) {
+                const m = id.match(/^([A-Za-z]+)2$/);
+                if (m) {
+                    const civ = m[1];
+                    if (!DISABLED_TECH_MAP[CURRENT_TECH_CONTEXT]) {
+                        DISABLED_TECH_MAP[CURRENT_TECH_CONTEXT] = {};
+                    }
+                    DISABLED_TECH_MAP[CURRENT_TECH_CONTEXT][civ] = true;
+                }
+            }
+            return original.call(document, id);
+        };
+    })();
 
-                const tech = raw.slice(0, raw.length - civ.length);
-                if (!map[civ]) map[civ] = {};
-                map[civ][tech] = true;
+    /* =====================================================
+       执行 techaoe2.js 科技函数，采集禁用信息
+    ===================================================== */
+    function collectDisabledTechFromAOE2() {
+        const techNames = new Set();
+
+        Object.values(TABLE_FORMS).forEach(form => {
+            form.common.forEach(t => techNames.add(t.tech));
+        });
+
+        techNames.forEach(tech => {
+            if (typeof window[tech] === "function") {
+                CURRENT_TECH_CONTEXT = tech;
+                try { window[tech](); } catch (e) { }
+                CURRENT_TECH_CONTEXT = null;
             }
         });
-        return map;
     }
 
     /* =====================================================
@@ -83,7 +104,6 @@
         infantry: {
             tableId: "infantryTable",
 
-            /* 公共科技（固定列） */
             common: [
                 {
                     tech: "Squires",
@@ -99,16 +119,17 @@
                 }
             ],
 
-            /* 独特科技（文明私有，行尾扩展） */
             unique: [
                 {
                     tech: "弹射器",
+                    showId: "弹射器",
                     icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
                     score: 3,
                     civ: "Japanese"
                 },
                 {
                     tech: "印度火枪",
+                    showId: "印度火枪",
                     icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
                     score: 2,
                     civ: "Khmer"
@@ -122,7 +143,6 @@
     ===================================================== */
     function generateTable(form) {
 
-        /* ---- 计算最大独特科技数量，用于补齐列 ---- */
         const uniqueCountByCiv = {};
         form.unique.forEach(u => {
             uniqueCountByCiv[u.civ] = (uniqueCountByCiv[u.civ] || 0) + 1;
@@ -130,7 +150,6 @@
         const maxUnique = Math.max(0, ...Object.values(uniqueCountByCiv));
 
         const civs = getCivList();
-        const disabled = DISABLED_TECH_MAP || {};
 
         let html = `<table class="tech-table">`;
 
@@ -140,21 +159,20 @@
 
             html += "<tr>";
 
-            /* ===== 文明图标 ===== */
             html += `
 <td class="civcell" title="${civObj.title}">
   <img src="${civObj.icon}">
 </td>`;
 
-            /* ===== 公共科技 ===== */
             form.common.forEach(item => {
-                const banned = disabled[civ]?.[item.tech];
+                const banned = DISABLED_TECH_MAP[item.tech]?.[civ];
                 const icon = resolveTechIcon(item, civ);
 
                 html += `
 <td class="tech ${banned ? 'unavailable' : 'available'}">
   <a onmousemove="showPic(event,'${item.showId || item.tech}');"
-     onmouseout="hiddenPic();">
+     onmouseout="hiddenPic();"
+     style="display:block;">
     <img src="${icon}">
     ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
   </a>
@@ -163,31 +181,27 @@
                 if (!banned) total += item.score || 0;
             });
 
-            /* ===== 独特科技（补齐空位，保证列数一致） ===== */
             const uniques = form.unique.filter(u => u.civ === civ);
 
             for (let i = 0; i < maxUnique; i++) {
                 const item = uniques[i];
-
                 if (!item) {
                     html += "<td></td>";
                     continue;
                 }
 
-                const icon = resolveTechIcon(item, civ);
-
                 html += `
 <td class="tech unique available">
   <a onmousemove="showPic(event,'${item.showId || item.tech}');"
-     onmouseout="hiddenPic();">
-    <img src="${icon}">
+     onmouseout="hiddenPic();"
+     style="display:block;">
+    <img src="${item.icon}">
   </a>
 </td>`;
 
                 total += item.score || 0;
             }
 
-            /* ===== 总分 ===== */
             html += `<td class="score">${total}</td>`;
             html += "</tr>";
         });
@@ -203,22 +217,20 @@
         Object.values(TABLE_FORMS).forEach(generateTable);
     }
 
-
-    let DISABLED_TECH_MAP = null;
+    /* =====================================================
+       页面初始化顺序
+    ===================================================== */
     document.addEventListener("DOMContentLoaded", () => {
         fetch("https://seicing.com/js/list/AOE2DIC3.html")
             .then(r => r.text())
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
 
-                // ✅ 立刻读取 techaoe2.js 标记
-                DISABLED_TECH_MAP = buildDisabledMap();
-
+                collectDisabledTechFromAOE2(); // 🔥 关键一步
                 generateAllTables();
             });
     });
 </script>
-
 
 </head>
 
@@ -355,7 +367,7 @@
     .tech a {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 66.6%;
     }
 </style>
 
