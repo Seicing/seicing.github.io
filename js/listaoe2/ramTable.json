@@ -1,0 +1,46 @@
+{
+  "tableId": "ramTable",
+  "common": [
+    {
+      "tech": "BatteringRam",
+      "showId": "轻型冲车",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Battering_ram_aoe2DE.webp",
+      "score": 1,
+      "main": 1
+    },
+    {
+      "tech": "CappedRam",
+      "showId": "中型冲车",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到中型冲车.webp",
+      "score": 1
+    },
+    {
+      "tech": "SiegeRam",
+      "showId": "重型冲车",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到重型冲车.webp",
+      "score": 2
+    },
+    {
+      "tech": "SiegeEngineers",
+      "showId": "攻城技师",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp",
+      "score": 2
+    }
+  ],
+  "unique": [
+    {
+      "tech": "dbc",
+      "showId": "dbc",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "dbc"
+    },
+    {
+      "tech": "dbc",
+      "showId": "dbc",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "dbc"
+    }
+  ]
+}

@@ -2365,7 +2365,7 @@ function Paladin() {
     document.getElementById("Burmese2").style.opacity = "0.15";
     document.getElementById("Khmer2").style.opacity = "0.15";
     document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goth2").style.opacity = "0.15";
+    document.getElementById("Goths2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Britons2").style.opacity = "0.15";
     document.getElementById("Slavs2").style.opacity = "0.15";
@@ -2405,7 +2405,7 @@ function CamelRider() {
     document.getElementById("Burmese2").style.opacity = "0.15";
     document.getElementById("Khmer2").style.opacity = "0.15";
     document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goth2").style.opacity = "0.15";
+    document.getElementById("Goths2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Huns2").style.opacity = "0.15";
@@ -2431,8 +2431,6 @@ function CamelRider() {
     document.getElementById("Incas2").style.opacity = "0.15";
 }
 
-
-
 function HeavyCamelRider() {
     document.getElementById("Jurchens2").style.opacity = "0.15";
     document.getElementById("Chinese2").style.opacity = "0.15";
@@ -2447,7 +2445,7 @@ function HeavyCamelRider() {
     document.getElementById("Burmese2").style.opacity = "0.15";
     document.getElementById("Khmer2").style.opacity = "0.15";
     document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goth2").style.opacity = "0.15";
+    document.getElementById("Goths2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Huns2").style.opacity = "0.15";
@@ -2499,7 +2497,7 @@ function AKKALLA() {
     document.getElementById("Burmese2").style.opacity = "0.15";
     document.getElementById("Khmer2").style.opacity = "0.15";
     document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goth2").style.opacity = "0.15";
+    document.getElementById("Goths2").style.opacity = "0.15";
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Teutons2").style.opacity = "0.15";
     document.getElementById("Huns2").style.opacity = "0.15";
