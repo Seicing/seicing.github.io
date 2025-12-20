@@ -151,7 +151,12 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        generateAllTables();
+        fetch("AOE2DIC3.html")
+            .then(r => r.text())
+            .then(html => {
+                document.getElementById("civList").innerHTML = html;
+                generateAllTables();   // 👈 文明列表加载完，再生成表格
+            });
     });
 </script>
 
