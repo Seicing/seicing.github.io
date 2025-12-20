@@ -2268,3 +2268,32 @@ function HandCannoneer() {
     document.getElementById("Jurchens2").style.opacity = "0.15";
 }
 
+function CavalryArcher() {
+    document.getElementById("Aztecs").style.opacity = "0.3";
+    document.getElementById("Mayans").style.opacity = "0.3";
+    document.getElementById("Incas").style.opacity = "0.3";
+    document.getElementById("Bohemians").style.opacity = "0.3";
+    document.getElementById("Gurjaras").style.opacity = "0.3";
+    document.getElementById("Bengalis").style.opacity = "0.3";
+    document.getElementById("Dravidians").style.opacity = "0.3";
+}
+
+function CavalryArcher() {
+    document.getElementById("Aztecs").style.opacity = "0.3";
+    document.getElementById("Mayans").style.opacity = "0.3";
+    document.getElementById("Incas").style.opacity = "0.3";
+    document.getElementById("Burgundians").style.opacity = "0.3";
+    document.getElementById("Italians").style.opacity = "0.3";
+    document.getElementById("Portuguese").style.opacity = "0.3";
+    document.getElementById("Sicilians").style.opacity = "0.3";
+    document.getElementById("Teutons").style.opacity = "0.3";
+    document.getElementById("Vikings").style.opacity = "0.3";
+    document.getElementById("Bohemians").style.opacity = "0.3";
+    document.getElementById("Gurjaras").style.opacity = "0.3";
+    document.getElementById("Bengalis").style.opacity = "0.3";
+    document.getElementById("Dravidians").style.opacity = "0.3";
+    document.getElementById("Malay").style.opacity = "0.3";
+    document.getElementById("Armenians").style.opacity = "0.3";
+    document.getElementById("Wu").style.opacity = "0.3";
+}
+

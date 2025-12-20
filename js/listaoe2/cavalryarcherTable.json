@@ -1,16 +1,16 @@
 {
-  "tableId": "archerTable",
+  "tableId": "cavalryarcherTable",
   "common": [
     {
-      "tech": "Crossbowman",
-      "showId": "弩手",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到弩手.webp",
-      "score": 1
+      "tech": "CavalryArcher",
+      "showId": "骑射手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Cavalryarcher_aoe2DE.webp",
+      "score": 2
     },
     {
-      "tech": "Arbalester",
-      "showId": "劲弩手",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到劲弩手.webp",
+      "tech": "HeavyCavalryArcher",
+      "showId": "重装骑射手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到重装骑射手.webp",
       "score": 2
     },
     {
@@ -66,36 +66,61 @@
       "showId": "弹道学",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BallisticsDE.webp",
       "score": 1
+    },
+    {
+      "tech": "ParthianTactics",
+      "showId": "帕提亚战术",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ParthianTacticsDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Bloodlines",
+      "showId": "血统",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
+      "score": 1
+    },
+    {
+      "tech": "Husbandry",
+      "showId": "畜牧",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
+      "score": 1
     }
   ],
   "unique": [
     {
-      "tech": "博格斯维加尔",
-      "showId": "博格斯维加尔",
+      "tech": "反曲弓",
+      "showId": "反曲弓",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
       "score": 2,
-      "civ": "Vikings"
+      "civ": "Magyars"
     },
     {
-      "tech": "弩匣",
-      "showId": "弩匣",
+      "tech": "阿祖瑙里骑兵",
+      "showId": "阿祖瑙里骑兵",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
       "score": 2,
-      "civ": "Shu"
+      "civ": "Georgians"
     },
     {
-      "tech": "英皇侍卫",
-      "showId": "英皇侍卫",
+      "tech": "西帕希骑兵",
+      "showId": "西帕希骑兵",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
       "score": 2,
-      "civ": "Britons"
+      "civ": "Turks"
     },
     {
-      "tech": "波斯步弓手",
-      "showId": "波斯步弓手",
+      "tech": "丝护甲",
+      "showId": "丝护甲",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
       "score": 2,
-      "civ": "Persians"
+      "civ": "Tatars"
+    },
+    {
+      "tech": "大草原畜牧",
+      "showId": "大草原畜牧",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Cumans"
     },
     {
       "tech": "屯田",
@@ -103,13 +128,6 @@
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
       "score": 2,
       "civ": "Wei"
-    },
-    {
-      "tech": "阿兹特克训练速度",
-      "showId": "阿兹特克训练速度",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
-      "score": 1,
-      "civ": "Aztecs"
     },
     {
       "tech": "缅甸便宜修道院科技",
@@ -126,13 +144,6 @@
       "civ": "Bulgarians"
     },
     {
-      "tech": "不列颠弓箭手射程",
-      "showId": "不列颠弓箭手射程",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Britons.webp",
-      "score": 1,
-      "civ": "Britons"
-    },
-    {
       "tech": "凯尔特视野锁定",
       "showId": "凯尔特视野锁定",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
@@ -147,18 +158,39 @@
       "civ": "Chinese"
     },
     {
-      "tech": "埃塞俄比亚步弓攻速",
-      "showId": "埃塞俄比亚步弓攻速",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Ethiopians.webp",
+      "tech": "库曼骑兵移速",
+      "showId": "库曼骑兵移速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Cumans.webp",
       "score": 1,
-      "civ": "Ethiopians"
+      "civ": "Cumans"
     },
     {
-      "tech": "玛雅便宜步弓手",
-      "showId": "玛雅便宜步弓手",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Mayans.webp",
+      "tech": "法兰克骑兵血量",
+      "showId": "法兰克骑兵血量",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Franks.webp",
       "score": 1,
-      "civ": "Mayans"
+      "civ": "Franks"
+    },
+    {
+      "tech": "高丽木头降价",
+      "showId": "高丽木头降价",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+      "score": 1,
+      "civ": "Koreans"
+    },
+    {
+      "tech": "高丽免费升级",
+      "showId": "高丽免费升级",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+      "score": 1,
+      "civ": "Koreans"
+    },
+    {
+      "tech": "蒙古骑射攻速",
+      "showId": "蒙古骑射攻速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Mongols.webp",
+      "score": 1,
+      "civ": "Mongols"
     },
     {
       "tech": "葡萄牙黄金费用",
@@ -217,18 +249,18 @@
       "civ": "Vietnamese"
     },
     {
-      "tech": "高丽木头降价",
-      "showId": "高丽木头降价",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+      "tech": "匈奴便宜骑射手",
+      "showId": "匈奴便宜骑射手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.webp",
       "score": 1,
-      "civ": "Koreans"
+      "civ": "Huns"
     },
     {
-      "tech": "高丽免费升级",
-      "showId": "高丽免费升级",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+      "tech": "格鲁吉亚骑兵",
+      "showId": "格鲁吉亚骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
       "score": 1,
-      "civ": "Koreans"
+      "civ": "Georgians"
     },
     {
       "tech": "格鲁吉亚对抗力",
@@ -238,11 +270,18 @@
       "civ": "Georgians"
     },
     {
-      "tech": "意大利步弓手",
-      "showId": "意大利步弓手",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Italians.webp",
+      "tech": "波兰便宜科技",
+      "showId": "波兰便宜科技",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Poles.webp",
       "score": 1,
-      "civ": "Italians"
+      "civ": "Poles"
+    },
+    {
+      "tech": "日本骑射手",
+      "showId": "日本骑射手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Japanese.webp",
+      "score": 1,
+      "civ": "Japanese"
     },
     {
       "tech": "女真误伤",
@@ -250,6 +289,36 @@
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
       "score": 1,
       "civ": "Jurchens"
+    },
+    {
+      "tech": "女真攻速",
+      "showId": "女真攻速",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+      "score": 1,
+      "civ": "Jurchens"
+    },
+    {
+      "tech": "契丹骑射手",
+      "showId": "契丹骑射手",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Khitans.webp",
+      "score": 1,
+      "civ": "Khitans"
+    },
+    {
+      "tech": "Xianbei1",
+      "showId": "鲜卑掠骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/鲜卑掠骑兵.webp",
+      "score": 2,
+      "civ": "Wei",
+      "replace": "CavalryArcher"
+    },
+    {
+      "tech": "Xianbei2",
+      "showId": "鲜卑掠骑兵",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/鲜卑掠骑兵.webp",
+      "score": 2,
+      "civ": "Wei",
+      "replace": "HeavyCavalryArcher"
     }
   ]
 }
