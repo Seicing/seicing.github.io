@@ -415,6 +415,20 @@
 </body>
 
 <style>
+    @media screen and (max-width: 768px) {
+        #techTableContainer {
+            /* 1. 强制宽度设为屏幕宽度，而不是父容器的 1280px */
+            width: 100vw;
+
+            /* 2. 下面这两行是核心：利用计算把容器拉回屏幕最左边 */
+            /* 原理：让容器起点先走到父元素中间(50%)，再往回退半个屏幕宽(-50vw) */
+            margin-left: calc(50% - 50vw);
+
+            /* 3. 确保内容可以滚动 */
+            overflow-x: auto;
+        }
+    }
+
     .civcell.main-banned {
         background-color: #f6d6d6 !important;
     }
