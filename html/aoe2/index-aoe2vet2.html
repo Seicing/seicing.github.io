@@ -23,10 +23,6 @@
             document.getElementById("civList").innerHTML = html;
         });
 </script>
-
-<!-- =====================================================
-     2️⃣ 加载官方科技数据库
-===================================================== -->
 <script src="https://seicing.com/js/techaoe2.js"></script>
 
 <script>
@@ -86,43 +82,51 @@
     const TABLE_FORMS = {
         infantry: {
             tableId: "infantryTable",
+
             /* 公共科技（固定列） */
             common: [
                 {
                     tech: "Squires",
-                    icon: "3fatcatpool/aoe2/unit/SquiresDE.webp",
-                    score: 1,
+                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SquiresDE.webp",
+                    score: 1
                 },
                 {
                     tech: "Arson",
                     icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
-                    score: 1,
+                    score: 1
                 }
             ],
-            /* 独特科技（只属于某文明） */
+
+            /* 独特科技（文明私有，行尾扩展） */
             unique: [
                 {
                     tech: "弹射器",
-                    icon: "3fatcatpool/aoe2/pic/Unique-tech.webp",
+                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
                     score: 3,
                     civ: "Japanese"
                 },
                 {
                     tech: "印度火枪",
-                    icon: "3fatcatpool/aoe2/pic/Unique-tech.webp",
+                    icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
                     score: 2,
                     civ: "Khmer"
                 }
             ]
-        },
+        }
     };
 
     /* =====================================================
        表格生成
     ===================================================== */
-
-
     function generateTable(form) {
+
+        /* ---- 计算最大独特科技数量，用于补齐列 ---- */
+        const uniqueCountByCiv = {};
+        form.unique.forEach(u => {
+            uniqueCountByCiv[u.civ] = (uniqueCountByCiv[u.civ] || 0) + 1;
+        });
+        const maxUnique = Math.max(0, ...Object.values(uniqueCountByCiv));
+
         const civs = getCivList();
         const disabled = buildDisabledMap();
 
@@ -146,29 +150,40 @@
                 const icon = resolveTechIcon(item, civ);
 
                 html += `
-<td class="tech ${banned ? 'unavailable' : 'available'}"
-    data-tech="${item.tech}">
-  <img src="${icon}">
-  ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
+<td class="tech ${banned ? 'unavailable' : 'available'}">
+  <a onmousemove="showPic(event,'${item.tech}');"
+     onmouseout="hiddenPic();">
+    <img src="${icon}">
+    ${banned ? `<img class="cannot" src="https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png">` : ""}
+  </a>
 </td>`;
 
                 if (!banned) total += item.score || 0;
             });
 
-            /* ===== 独特科技（只加在本行后面） ===== */
-            form.unique
-                .filter(u => u.civ === civ)
-                .forEach(item => {
-                    const icon = resolveTechIcon(item, civ);
+            /* ===== 独特科技（补齐空位，保证列数一致） ===== */
+            const uniques = form.unique.filter(u => u.civ === civ);
 
-                    html += `
-<td class="tech unique available"
-    data-tech="${item.tech}">
-  <img src="${icon}">
+            for (let i = 0; i < maxUnique; i++) {
+                const item = uniques[i];
+
+                if (!item) {
+                    html += "<td></td>";
+                    continue;
+                }
+
+                const icon = resolveTechIcon(item, civ);
+
+                html += `
+<td class="tech unique available">
+  <a onmousemove="showPic(event,'${item.tech}');"
+     onmouseout="hiddenPic();">
+    <img src="${icon}">
+  </a>
 </td>`;
 
-                    total += item.score || 0;
-                });
+                total += item.score || 0;
+            }
 
             /* ===== 总分 ===== */
             html += `<td class="score">${total}</td>`;
@@ -179,23 +194,26 @@
         document.getElementById(form.tableId).innerHTML = html;
     }
 
-
-
-
-
+    /* =====================================================
+       生成全部表格
+    ===================================================== */
     function generateAllTables() {
         Object.values(TABLE_FORMS).forEach(generateTable);
     }
 
+    /* =====================================================
+       页面加载顺序控制
+    ===================================================== */
     document.addEventListener("DOMContentLoaded", () => {
         fetch("https://seicing.com/js/list/AOE2DIC3.html")
             .then(r => r.text())
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
-                generateAllTables();   // 👈 文明列表加载完，再生成表格
+                generateAllTables();
             });
     });
 </script>
+
 
 </head>
 
@@ -218,12 +236,8 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="29"></div>
-<h2>可研发文明列表</h2>
-
-<!-- ===== 文明列表：保持外部文件调用 ===== -->
 <div id="civList"></div>
 
-<h2>步兵科技评分</h2>
 <div id="infantryTable"></div>
 </div>
                     </div>
@@ -245,9 +259,6 @@
 </body>
 
 <style>
-    /* =====================================================
-   表格整体
-===================================================== */
     .tech-table {
         border-collapse: collapse;
         background: #ffffff;
@@ -263,9 +274,6 @@
         vertical-align: middle;
     }
 
-    /* =====================================================
-   文明列
-===================================================== */
     .tech-table td.civcell {
         background: #ffffff;
         width: 44px;
@@ -275,9 +283,6 @@
         width: 28px;
     }
 
-    /* =====================================================
-   科技格子基础
-===================================================== */
     .tech {
         position: relative;
     }
@@ -287,26 +292,18 @@
         pointer-events: none;
     }
 
-    /* =====================================================
-   可用 / 不可用 状态
-===================================================== */
     .tech.available {
         background-color: #c9f8dc;
-        /* 浅绿 */
     }
 
     .tech.unavailable {
         background-color: #f6d6d6;
-        /* 浅粉 */
     }
 
     .tech.unavailable img:first-child {
         filter: grayscale(100%) brightness(0.8);
     }
 
-    /* =====================================================
-   禁用覆盖图标
-===================================================== */
     .tech .cannot {
         position: absolute;
         inset: 0;
@@ -314,17 +311,11 @@
         pointer-events: none;
     }
 
-    /* =====================================================
-   Hover 高亮
-===================================================== */
     .tech:hover {
         outline: 2px solid #4aa3ff;
         z-index: 2;
     }
 
-    /* =====================================================
-   Hover 科技名称 Tooltip
-===================================================== */
     .tech::after {
         content: attr(data-tech);
         position: absolute;
@@ -346,13 +337,14 @@
         opacity: 1;
     }
 
-    /* =====================================================
-   总分
-===================================================== */
     .score {
         font-weight: bold;
         color: #ffd700;
         background: #111;
+    }
+
+    #civList {
+        display: none;
     }
 </style>
 
