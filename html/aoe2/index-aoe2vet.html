@@ -415,19 +415,9 @@
 </body>
 
 <style>
-    /* 仅在屏幕宽度小于 1280px 时生效 */
-    @media screen and (max-width: 1280px) {
-        #techTableContainer {
-            /* 
-           计算公式：(容器总宽的一半) - (屏幕宽度的一半)
-           (1280 / 2) - 50vw = 640px - 50vw 
-           这正好抵消了父容器居中导致的左侧偏移 
-        */
-            margin-left: calc(640px - 50vw);
-
-            /* 保持原有宽度逻辑，让它继续溢出，但起始位置修正了 */
-            overflow-x: auto;
-        }
+    .tech-table {
+        table-layout: fixed;
+        width: max-content;
     }
 
     .civcell.main-banned {
@@ -463,6 +453,7 @@
     .tech-table td.civcell {
         background: #ffffff;
         width: 28px;
+        min-width: 28px;
     }
 
     .tech-table td.civcell img {
