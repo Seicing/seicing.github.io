@@ -43,39 +43,11 @@
       "civ": "Mongols"
     },
     {
-      "tech": "乌兹钢",
-      "showId": "乌兹钢",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Dravidians"
-    },
-    {
       "tech": "重装甲",
       "showId": "重装甲",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
       "score": 2,
       "civ": "Teutons"
-    },
-    {
-      "tech": "派",
-      "showId": "派",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "刹帝利",
-      "showId": "刹帝利",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "医疗团队",
-      "showId": "医疗团队",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Dravidians"
     },
     {
       "tech": "阿兹特克训练速度",
@@ -167,20 +139,6 @@
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Shu.webp",
       "score": 1,
       "civ": "Shu"
-    },
-    {
-      "tech": "瞿折罗伤害加成",
-      "showId": "瞿折罗伤害加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Gurjaras.webp",
-      "score": 1,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "孟加拉大象抗拒",
-      "showId": "孟加拉大象抗拒",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bengalis.webp",
-      "score": 1,
-      "civ": "Bengalis"
     },
     {
       "tech": "RocketLauncher1",
@@ -359,6 +317,20 @@
       "civ": "Bengalis"
     },
     {
+      "tech": "孟加拉大象抗拒",
+      "showId": "孟加拉大象抗拒",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bengalis.webp",
+      "score": 1,
+      "civ": "Bengalis"
+    },
+    {
+      "tech": "派",
+      "showId": "派",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Bengalis"
+    },
+    {
       "tech": "Forging3",
       "showId": "锻造",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
@@ -370,6 +342,13 @@
       "showId": "铸铁",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
       "score": 1,
+      "civ": "Gurjaras"
+    },
+    {
+      "tech": "占位符1",
+      "showId": "占位符",
+      "icon": "",
+      "score": 0,
       "civ": "Gurjaras"
     },
     {
@@ -408,6 +387,20 @@
       "civ": "Gurjaras"
     },
     {
+      "tech": "瞿折罗伤害加成",
+      "showId": "瞿折罗伤害加成",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Gurjaras.webp",
+      "score": 1,
+      "civ": "Gurjaras"
+    },
+    {
+      "tech": "刹帝利",
+      "showId": "刹帝利",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Gurjaras"
+    },
+    {
       "tech": "Forging4",
       "showId": "锻造",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
@@ -443,10 +436,38 @@
       "civ": "Dravidians"
     },
     {
+      "tech": "占位符3",
+      "showId": "占位符",
+      "icon": "",
+      "score": 0,
+      "civ": "Dravidians"
+    },
+    {
       "tech": "Husbandry4",
       "showId": "畜牧",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
       "score": 1,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "占位符2",
+      "showId": "占位符",
+      "icon": "",
+      "score": 0,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "乌兹钢",
+      "showId": "乌兹钢",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+      "score": 2,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "医疗团队",
+      "showId": "医疗团队",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
       "civ": "Dravidians"
     }
   ]
