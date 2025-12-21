@@ -1610,7 +1610,7 @@ function ThumbRing() {
     document.getElementById("Vikings2").style.opacity = "0.15";
     document.getElementById("Georgians2").style.opacity = "0.15";
     document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Jurchen2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
     document.getElementById("Wu2").style.opacity = "0.15";
 }
 
