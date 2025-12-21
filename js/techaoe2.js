@@ -2586,7 +2586,6 @@ function HeavyScorpion() {
     document.getElementById("Spanish2").style.opacity = "0.15";
     document.getElementById("Vietnamese2").style.opacity = "0.15";
     document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
     document.getElementById("Khitans2").style.opacity = "0.15";
 }
 
