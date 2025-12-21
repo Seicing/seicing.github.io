@@ -14,7 +14,6 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
-        switchTable(' ', this);
     })
 </script>
 <script>
@@ -278,23 +277,32 @@
        切换表格（按钮调用）
     ===================================================== */
     function switchTable(tableId, el) {
+        // 移除所有按钮的 active
         document.querySelectorAll('.tech-tab.active')
             .forEach(img => img.classList.remove('active'));
 
+        // 给当前按钮的 img 加 active
         if (el) {
             const img = el.querySelector('.tech-tab');
             if (img) img.classList.add('active');
         }
 
         const container = document.getElementById("techTableContainer");
-        container.innerHTML = "";
 
+        // 隐藏或清空占位文字
+        const noTable = document.getElementById("noTable");
+        if (noTable) noTable.style.display = "none";
+
+        // 生成表格容器
+        container.innerHTML = "";
         const div = document.createElement("div");
         div.id = tableId;
         container.appendChild(div);
 
+        // 加载表单
         loadFormByTableId(tableId);
     }
+
 
     /* =====================================================
        页面初始化
