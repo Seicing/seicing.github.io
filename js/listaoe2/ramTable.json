@@ -347,7 +347,7 @@
     {
       "tech": "占位符1",
       "showId": "占位符",
-      "icon": "",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
       "score": 0,
       "civ": "Gurjaras"
     },
@@ -438,7 +438,7 @@
     {
       "tech": "占位符3",
       "showId": "占位符",
-      "icon": "",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
       "score": 0,
       "civ": "Dravidians"
     },
@@ -452,21 +452,21 @@
     {
       "tech": "占位符2",
       "showId": "占位符",
-      "icon": "",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
       "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "乌兹钢",
-      "showId": "乌兹钢",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
       "civ": "Dravidians"
     },
     {
       "tech": "医疗团队",
       "showId": "医疗团队",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+      "score": 2,
+      "civ": "Dravidians"
+    },
+    {
+      "tech": "乌兹钢",
+      "showId": "乌兹钢",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
       "score": 2,
       "civ": "Dravidians"
     }
