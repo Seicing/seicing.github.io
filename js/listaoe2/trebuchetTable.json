@@ -5,7 +5,8 @@
       "tech": "Trebuchet",
       "showId": "巨型投石机",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Trebuchet_unpacked_aoe2DE.webp",
-      "score": 1
+      "score": 1,
+      "main": 1
     },
     {
       "tech": "Chemistry",
@@ -178,25 +179,22 @@
       "tech": "Heiguang1",
       "showId": "牵引抛石机",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
-      "score": 1,
-      "civ": "Wei",
-      "replace": "Trebuchet"
+      "score": -1,
+      "civ": "Wei"
     },
     {
       "tech": "Heiguang2",
       "showId": "牵引抛石机",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
-      "score": 1,
-      "civ": "Shu",
-      "replace": "Trebuchet"
+      "score": -1,
+      "civ": "Shu"
     },
     {
       "tech": "Heiguang3",
       "showId": "牵引抛石机",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
-      "score": 1,
-      "civ": "Wu",
-      "replace": "Trebuchet"
+      "score": -1,
+      "civ": "Wu"
     }
   ]
 }
