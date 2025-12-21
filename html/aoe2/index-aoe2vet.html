@@ -305,10 +305,11 @@
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
 
-                const firstBtn = document.querySelector('.tech-tab');
-                if (firstBtn) {
-                    switchTable("infantryTable", firstBtn);
-                }
+                // 不自动生成表格，原来的第一按钮点击逻辑去掉
+                // const firstBtn = document.querySelector('.tech-tab');
+                // if (firstBtn) {
+                //     switchTable("infantryTable", firstBtn);
+                // }
             });
     });
 </script>
@@ -394,7 +395,41 @@
 
 <br><br>
 <div id="techTableContainer">
-    <div id="noTable"></div>
+    <div id="noTable">
+        <b>评分规则</b>
+        <ul>
+            <li>通用科技1分
+                <ul>
+                    <li>鼓风炉和护腕是重要的“三攻科技”，视为2分</li>
+                </ul>
+            </li>
+            <li>兵种升级科技1分，最高级升级科技2分
+                <ul>
+                    <li>重装骑士升级2分，游侠升级3分(包括萨瓦尔)</li>
+                    <li>罗马军整合了双手剑士和冠军剑士升级并强化，视为4分</li>
+                    <li>波兰翼骑兵是翼骑兵+文明加成的构成，视为3分</li>
+                </ul>
+            </li>
+            <li>文明加成1分
+                <ul>
+                    <li>部分不直接作用于战斗或过弱的加成视为0分：凯尔特牵羊和高棉修道院加成</li>
+                </ul>
+            </li>
+            <li>独特科技(金银冠)加成2分
+                <ul>
+                    <li>部分强力科技被视为3分：攻城(蒙古)、扭绞机(埃塞)</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <b>特殊处理</b>
+        <ul>
+            <li>蜀战车、印度攻城象等生物攻城器接受骑兵加成，这部分科技会视为0分(但血统依旧+1分)</li>
+            <li>掷矛手指环科技不加攻速，仅加命中率，而掷矛手本身命中率很高，因此掷矛手专用指环科技视为0.5分</li>
+            <li>牵引抛石机怎么看都是巨型投石机的弱化版，额外-1分</li>
+        </ul>
+
+    </div>
 </div></div>
                     </div>
                 </div>
