@@ -60,6 +60,12 @@
       "showId": "纵火",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ArsonDE.webp",
       "score": 1
+    },
+    {
+      "tech": "Conscription",
+      "showId": "征招",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
+      "score": 1
     }
   ],
   "unique": [
@@ -148,13 +154,6 @@
       "civ": "Burmese"
     },
     {
-      "tech": "缅甸便宜修道院科技",
-      "showId": "缅甸便宜修道院科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
-      "score": 0,
-      "civ": "Burmese"
-    },
-    {
       "tech": "拜占庭动员兵",
       "showId": "拜占庭动员兵",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Byzantines.webp",
@@ -166,13 +165,6 @@
       "showId": "凯尔特步兵移速",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
       "score": 1,
-      "civ": "Celts"
-    },
-    {
-      "tech": "凯尔特视野锁定",
-      "showId": "凯尔特视野锁定",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
-      "score": 0,
       "civ": "Celts"
     },
     {

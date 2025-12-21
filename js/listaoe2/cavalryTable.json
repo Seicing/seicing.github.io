@@ -67,6 +67,12 @@
       "showId": "畜牧",
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
       "score": 1
+    },
+    {
+      "tech": "Conscription",
+      "showId": "征招",
+      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
+      "score": 1
     }
   ],
   "unique": [
@@ -188,20 +194,6 @@
       "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burgundians.webp",
       "score": 1,
       "civ": "Burgundians"
-    },
-    {
-      "tech": "缅甸便宜修道院科技",
-      "showId": "缅甸便宜修道院科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
-      "score": 0,
-      "civ": "Burmese"
-    },
-    {
-      "tech": "凯尔特视野锁定",
-      "showId": "凯尔特视野锁定",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
-      "score": 0,
-      "civ": "Celts"
     },
     {
       "tech": "中国便宜科技",
