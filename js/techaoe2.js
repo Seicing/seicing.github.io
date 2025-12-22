@@ -2754,3 +2754,172 @@ function HeavyDemolitionShip() {
     document.getElementById("Wei2").style.opacity = "0.15";
     document.getElementById("Khitans2").style.opacity = "0.15";
 }
+
+
+
+/* =========================================================
+   AOE2 科技禁用规则自动推导 & UI 标记系统
+   ========================================================= */
+
+/* 1. 中文科技名 → 函数名（你已有的“表单”） */
+const AOE2_TECH_NAME_MAP = {
+    "纵火": "Arson",
+    "软甲": "Gambeson",
+    "护卫": "Squires",
+    "血统": "Bloodlines",
+    "畜牧": "Husbandry",
+    "帕提亚战术": "ParthianTactics",
+    "扳指": "ThumbRing",
+
+    "炮舰": "CannonGalleon",
+    "精锐炮舰": "EilteCannonGalleon",
+    "大型战舰": "Galleon",
+    "火艨艟": "FireGalley",
+    "喷火船": "FireShip",
+    "快速喷火船": "FastFireShip",
+    "爆破筏": "DemolitionRaft",
+    "爆破船": "DemolitionShip",
+    "重型爆破船": "HeavyDemolitionShip",
+    "干船坞": "DryDock",
+    "造船匠": "Shipwright",
+
+    "铸铁": "IronCasting",
+    "鼓风炉": "BlastFurnace",
+    "护腕": "Bracer",
+    "步兵锁甲": "ChainMailArmor",
+    "步兵钢甲": "PlateMailArmor",
+    "射手皮甲": "LeatherArcherArmor",
+    "射手锁甲": "RingArcherArmor",
+    "骑兵鳞甲": "ScaleBardingArmor",
+    "骑兵锁甲": "ChainBarding",
+    "骑兵钢甲": "PlateBardingArmor",
+
+    "信念": "Faith",
+    "异教": "Heresy",
+    "圣洁": "Sanctity",
+    "雕版印刷术": "BlockPrinting",
+    "热情": "Fervor",
+    "草药": "Herbal",
+    "救赎": "Redemption",
+    "赎罪": "Atonement",
+    "启发": "Illumination",
+    "神权": "Theocracy",
+
+    "工兵": "Sapper",
+    "围墙": "Hoardings",
+    "行会": "Guilds",
+
+    "双人锯": "TwoManSaw",
+    "钻井采石法": "StoneShaftMining",
+    "钻井采金法": "GoldShaftMining",
+    "马轭": "HorseCollar",
+    "重犁": "HeavyPlow",
+    "轮作": "CropRotation",
+
+    "攻城技师": "SiegeEngineers",
+    "脚踏起重机": "TreadmillCrane",
+    "石匠": "Masonry",
+    "建筑学": "Architecture",
+    "预热射击": "HeatedShot",
+    "射箭槽": "ArrowSlits",
+    "垛墙": "FortifiedWall",
+    "警戒箭塔": "GuardTower",
+    "大型箭塔": "KeepTower",
+    "炮塔": "BombardTower",
+
+    "长剑士": "LongSwordsman",
+    "双手剑士": "TwoHandedSwordsman",
+    "冠军剑士": "Champion",
+    "弩手": "Crossbowman",
+    "劲弩手": "Arbalester",
+    "斥候骑兵": "Scoutcavalry",
+    "轻骑兵": "LightCavalry",
+    "翼骑兵": "Hussar",
+    "火枪手": "HandCannoneer",
+    "骑射手": "CavalryArcher",
+    "重装骑射手": "HeavyCavalryArcher",
+    "精锐掷矛手": "EliteSkirmisher",
+    "长枪兵": "Pikeman",
+    "长戟兵": "Halberdier",
+    "骑士": "Knight",
+    "重装骑士": "Cavalier",
+    "游侠": "Paladin",
+    "骆驼兵": "CamelRider",
+    "重装骆驼兵": "HeavyCamelRider",
+
+    "手推炮": "BombardCannon",
+    "轻型投石车": "Mangonel",
+    "中型投石车": "Onager",
+    "重型投石车": "SiegeOnager",
+    "轻型冲车": "BatteringRam",
+    "中型冲车": "CappedRam",
+    "重型冲车": "SiegeRam",
+    "弩炮": "Scorpion",
+    "重型弩炮": "HeavyScorpion",
+};
+
+/* 2. 自动生成的禁用规则表（不要手写） */
+const AOE2_TECH_RULES = {};
+
+/* 3. 从函数体中解析禁用文明 */
+function __buildTechRulesFromFunctions() {
+    Object.values(AOE2_TECH_NAME_MAP).forEach(funcName => {
+        const fn = window[funcName];
+        if (typeof fn !== "function") return;
+
+        const src = fn.toString();
+        const civs = [];
+
+        const re = /getElementById\("([A-Za-z]+)2"\)\.style\.opacity\s*=\s*"0\.15"/g;
+        let m;
+        while ((m = re.exec(src))) {
+            civs.push(m[1]);
+        }
+
+        if (civs.length) {
+            AOE2_TECH_RULES[funcName] = civs;
+        }
+    });
+}
+
+/* 4. 给科技树自动加红叉 */
+function applyAOE2TechDisableOverlay() {
+    const container = document.getElementById("wenttodie");
+    if (!container) return;
+
+    // 当前文明：直接取 class
+    const civ = [...container.classList][0];
+    if (!civ) return;
+
+    container.querySelectorAll(".aoetech-cell").forEach(cell => {
+        const a = cell.querySelector("a");
+        if (!a) return;
+
+        const attr = a.getAttribute("onmousemove");
+        if (!attr) return;
+
+        const m = attr.match(/showPic\(event,'([^']+)'\)/);
+        if (!m) return;
+
+        const techCN = m[1];
+        const funcName = AOE2_TECH_NAME_MAP[techCN];
+        if (!funcName) return;
+
+        const bannedCivs = AOE2_TECH_RULES[funcName];
+        if (!bannedCivs || !bannedCivs.includes(civ)) return;
+
+        // 已有红叉就不重复加
+        if (cell.querySelector(".aoetech-overlay")) return;
+
+        const overlay = document.createElement("img");
+        overlay.className = "aoetech-overlay";
+        overlay.src = "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png";
+        cell.appendChild(overlay);
+    });
+}
+
+/* 5. 对外唯一入口（HTML 只需要调用这个） */
+function AOE2_applyTechTree() {
+    __buildTechRulesFromFunctions();
+    applyAOE2TechDisableOverlay();
+}
