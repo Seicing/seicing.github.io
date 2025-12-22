@@ -1578,18 +1578,6 @@ function AOE2_enableTechTreeQuickJump() {
 
         cell.appendChild(link);
         cell.dataset.quickjump = "1";
-
-        // 获取按钮元素
-        var btnElementAoe2 = document.getElementById("enableTechTreeQuick");
-
-        // 如果按钮存在，绑定点击事件
-        if (btnElementAoe2) {
-            btnElementAoe2.addEventListener("click", function () {
-                this.innerText = "已激活科技树超链接";
-                // 如果你需要修改的是 value 属性（例如 <input type="button">），请使用下面这行：
-                // this.value = "已激活科技树超链接";
-            });
-        }
     });
 }
 
