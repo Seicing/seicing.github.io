@@ -1476,74 +1476,67 @@ function AOE2_enableCivIconQuickJump() {
 
 
 const AOE2_TECH_LINK_EXCLUDE = new Set([
-    "纵火", "护卫", "软甲", "血统", "畜牧", "扳指", "帕提亚战术", "射手软甲", "羽箭", "锻造", "骑兵鳞甲", "步兵鳞甲", "刺网", "修船厂", "干船坞", "造船匠", "射手皮甲", "锥子箭", "铸铁", "骑兵锁甲", "步兵锁甲", "垛墙", "射手锁甲", "护腕", "鼓风炉", "骑兵钢甲", "步兵钢甲", "石匠", "化学", "弹道学", "近射孔", "脚踏起重机", "建筑学", "射箭槽", "攻城技师", "预热射击", "救赎", "赎罪", "草药", "大篷车", "行会", "铸币", "银行业", "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "磨坊", "马轭", "重犁", "轮作", "异教", "圣洁", "热情", "双刃斧", "弓锯", "双人锯", "虔诚", "启发", "雕版印刷术", "银冠", "金冠", "采金法", "钻井采金法", "采石法", "钻井采石法", "信念", "神权", "围墙", "工兵", "征招", "间谍", "驯化术", "畜牧业", "畜牧季移"
+    "纵火", "护卫", "软甲", "血统", "畜牧", "扳指", "帕提亚战术", "射手软甲", "羽箭", "锻造",
+    "骑兵鳞甲", "步兵鳞甲", "刺网", "修船厂", "干船坞", "造船匠", "射手皮甲", "锥子箭",
+    "铸铁", "骑兵锁甲", "步兵锁甲", "垛墙", "射手锁甲", "护腕", "鼓风炉", "骑兵钢甲",
+    "步兵钢甲", "石匠", "化学", "弹道学", "近射孔", "脚踏起重机", "建筑学", "射箭槽",
+    "攻城技师", "预热射击", "救赎", "赎罪", "草药", "大篷车", "行会", "铸币", "银行业",
+    "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "磨坊", "马轭", "重犁",
+    "轮作", "异教", "圣洁", "热情", "双刃斧", "弓锯", "双人锯", "虔诚", "启发", "雕版印刷术",
+    "银冠", "金冠", "采金法", "钻井采金法", "采石法", "钻井采石法", "信念", "神权", "围墙",
+    "工兵", "征招", "间谍", "驯化术", "畜牧业", "畜牧季移"
 ]);
 
 const AOE2_TECH_NAME_ALIAS = {
-    "僧侣": /^僧侣.+/,
-    "贸易马车": /^贸易马车.+/,
+    "僧侣": /^僧侣(?:.+)?$/,
+    "贸易马车": /^贸易马车.+/
 };
 
 const AOE2_TECH_LINK_TYPE_MAP = {
-    "兵营": "buildings",
-    "马厩": "buildings",
-    "靶场": "buildings",
-    "攻城武器厂": "buildings",
-    "船坞": "buildings",
-    "铁匠铺": "buildings",
-    "养鱼场": "buildings",
-    "大学": "buildings",
-    "修道院": "buildings",
-    "警戒箭塔": "buildings",
-    "市场": "buildings",
-    "城镇中心": "buildings",
-    "大型箭塔": "buildings",
-    "城堡": "buildings",
-    "房屋": "buildings",
-    "炮塔": "buildings",
-    "农田": "buildings",
-    "哨站": "buildings",
-    "瞭望箭塔": "buildings",
-    "世界奇观": "buildings",
-    "伐木场": "buildings",
-    "木墙": "buildings",
-    "木城门": "buildings",
-    "石墙": "buildings",
-    "城门": "buildings",
-    "采矿营地": "buildings",
-    "大商站": "buildings",
-    "大庄园": "buildings",
-    "商队旅馆": "buildings",
-    "骡车": "buildings",
-    "牧场": "buildings",
-    "巨港": "buildings",
-    "营垒": "buildings",
-    "强化教堂": "buildings",
-    "城楼": "buildings"
+    "兵营": "buildings", "马厩": "buildings", "靶场": "buildings", "攻城武器厂": "buildings",
+    "船坞": "buildings", "铁匠铺": "buildings", "养鱼场": "buildings", "大学": "buildings",
+    "修道院": "buildings", "警戒箭塔": "buildings", "市场": "buildings", "城镇中心": "buildings",
+    "大型箭塔": "buildings", "城堡": "buildings", "房屋": "buildings", "炮塔": "buildings",
+    "农田": "buildings", "哨站": "buildings", "瞭望箭塔": "buildings", "世界奇观": "buildings",
+    "伐木场": "buildings", "木墙": "buildings", "木城门": "buildings", "石墙": "buildings",
+    "城门": "buildings", "采矿营地": "buildings", "大商站": "buildings", "大庄园": "buildings",
+    "商队旅馆": "buildings", "骡车": "buildings", "牧场": "buildings", "巨港": "buildings",
+    "营垒": "buildings", "强化教堂": "buildings", "城楼": "buildings"
 };
+
+// 特殊保留前缀的例外单位
+const AOE2_TECH_PREFIX_EXCLUDE = new Set([
+    "精锐草原枪兵", "精锐火矛兵", "精锐炮舰", "精锐骑象射手", "精锐象兵", "精锐鹰勇士", "精锐掷矛手"
+]);
 
 /* =========================================================
    科技树 → 快捷跳转（可开关）
    ========================================================= */
+let techTreeQuickJumpEnabled = false; // 默认关闭
+
 function AOE2_normalizeTechName(rawName) {
+    // 先匹配别名
     for (const canonical in AOE2_TECH_NAME_ALIAS) {
         const rule = AOE2_TECH_NAME_ALIAS[canonical];
         if (rule.test(rawName)) {
             return canonical;
         }
     }
+
+    // 默认去掉前缀（精锐、高级、精英等），除非例外
+    if (!AOE2_TECH_PREFIX_EXCLUDE.has(rawName)) {
+        return rawName.replace(/^(精锐|精英)\s+/, "");
+    }
+
     return rawName;
 }
 
 function AOE2_enableTechTreeQuickJump() {
-
     const container = document.getElementById("wenttodie");
     if (!container) return;
 
     container.querySelectorAll(".aoetech-cell").forEach(cell => {
-
-        // 已处理过的不重复包
-        if (cell.dataset.quickjump === "1") return;
+        if (cell.dataset.quickjump === "1") return; // 已处理
 
         const img = cell.querySelector("img:not(.aoetech-overlay)");
         if (!img) return;
@@ -1551,7 +1544,6 @@ function AOE2_enableTechTreeQuickJump() {
         const src = img.getAttribute("src");
         if (!src) return;
 
-        // 从 src 提取文件名 → 银冠.jpg → 银冠
         const rawName = src.split("/").pop().replace(/\.\w+$/, "");
         const name = AOE2_normalizeTechName(rawName);
 
@@ -1579,6 +1571,41 @@ function AOE2_enableTechTreeQuickJump() {
         cell.appendChild(link);
         cell.dataset.quickjump = "1";
     });
+}
+
+function AOE2_disableTechTreeQuickJump() {
+    const container = document.getElementById("wenttodie");
+    if (!container) return;
+
+    container.querySelectorAll(".aoetech-cell").forEach(cell => {
+        const link = cell.querySelector("a");
+        if (link && cell.dataset.quickjump === "1") {
+            while (link.firstChild) {
+                cell.appendChild(link.firstChild);
+            }
+            link.remove();
+            cell.dataset.quickjump = "0";
+
+            cell.querySelectorAll(".aoetech-overlay").forEach(o => {
+                o.style.pointerEvents = "";
+            });
+        }
+    });
+}
+
+function toggleTechTreeQuickJump() {
+    const btn = document.getElementById("enableTechTreeQuick");
+    if (!btn) return;
+
+    if (!techTreeQuickJumpEnabled) {
+        AOE2_enableTechTreeQuickJump();
+        btn.textContent = "已开启科技树超链接化";
+        techTreeQuickJumpEnabled = true;
+    } else {
+        AOE2_disableTechTreeQuickJump();
+        btn.textContent = "开启上方科技树超链接化";
+        techTreeQuickJumpEnabled = false;
+    }
 }
 
 
