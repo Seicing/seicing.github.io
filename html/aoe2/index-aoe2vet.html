@@ -202,7 +202,8 @@
                 const techItem = replaceItem || item;
                 const isUniqueReplace = !!replaceItem;
 
-                const banned = DISABLED_TECH_MAP[item.tech]?.[civ];
+                // ★ 关键：替代科技永远不继承 banned
+                const banned = !isUniqueReplace && DISABLED_TECH_MAP[item.tech]?.[civ];
                 const icon = isUniqueReplace
                     ? replaceItem.icon
                     : resolveTechIcon(item, civ);
@@ -397,11 +398,22 @@
     </a>
 
 
+    <a onclick="switchTable('galleyTable', this)">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/War_galley_aoe2DE.webp" width="28px" class="tech-tab">
+    </a>
+    <a onclick="switchTable('fireshipTable', this)">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Fireship_aoe2DE.webp" width="28px" class="tech-tab">
+    </a>
+    <a onclick="switchTable('demoshipTable', this)">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Demoship_aoe2DE.webp" width="28px" class="tech-tab">
+    </a>
+    <a onclick="switchTable('galleonTable', this)">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Cannon_galleon_aoe2DE.webp" width="28px" class="tech-tab">
+    </a>
+
 
 </div>
-
-
-<br><br>
+<br>
 <div id="techTableContainer">
     <div id="noTable"></div>
     <b>评分规则</b>
@@ -417,6 +429,7 @@
                 <li>最高级升级、帝王系列升级和重装骑士升级2分，游侠升级(包括萨瓦尔)3分</li>
                 <li>罗马军是整合了双手剑士和冠军剑士升级+文明加成的构成，视为4分</li>
                 <li>波兰翼骑兵是翼骑兵+文明加成的构成，视为3分</li>
+                <li>龙船是快速喷火船+文明加成的构成，视为3分</li>
             </ul>
         </li>
         <li>文明加成1分
