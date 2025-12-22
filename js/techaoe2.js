@@ -3023,7 +3023,7 @@ const AOE2_TECH_NAME_MAP = {
     "垛墙": "FortifiedWall",
     "警戒箭塔": "GuardTower",
     "大型箭塔": "KeepTower",
-    "炮塔": "BombardTower",
+    "炮塔科技": "BombardTower",
 
     "长剑士": "LongSwordsman",
     "双手剑士": "TwoHandedSwordsman",
