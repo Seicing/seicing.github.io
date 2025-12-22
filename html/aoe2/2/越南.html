@@ -2532,6 +2532,22 @@
         filter: brightness(100%);
     }
 
+    #enableTechTreeQuick {
+        transition: box-shadow 0.3s, color 0.3s;
+        /* 平滑过渡 */
+    }
+
+    #enableTechTreeQuick.enabled {
+        color: white;
+        border: 2px solid orange;
+        /* 基础边框 */
+        box-shadow: 0 0 5px 5px orange;
+        /* 5px 羽化描边效果 */
+        background-color: #ff8c00;
+        /* 可选，橙色背景更显眼 */
+        font-weight: bold;
+    }
+
     #cannot {
         filter: brightness(25%);
     }
