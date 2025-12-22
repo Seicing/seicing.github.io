@@ -1401,6 +1401,64 @@ window.addEventListener('resize', () => {
 });
 
 
+/* =========================================================
+   延迟就绪版：根据科技函数禁用兵种文明
+   ========================================================= */
+
+function AOE2_applyUnitCivDisable(funcName) {
+
+    let tries = 0;
+    const MAX_TRIES = 50; // 最多等 ~2.5 秒
+
+    function tryApply() {
+        tries++;
+
+        // 1. 规则函数是否已存在
+        const fn = window[funcName];
+        if (typeof fn !== "function") {
+            if (tries < MAX_TRIES) {
+                return setTimeout(tryApply, 50);
+            }
+            return;
+        }
+
+        // 2. 解析函数体
+        const src = fn.toString();
+        const re = /getElementById\("([A-Za-z]+)2"\)\.style\.opacity\s*=\s*"0\.15"/g;
+
+        let m;
+        let applied = false;
+
+        while ((m = re.exec(src))) {
+            const civ = m[1];
+            const el = document.getElementById(civ);
+
+            // 3. DOM 还没进来，继续等
+            if (!el) {
+                if (tries < MAX_TRIES) {
+                    return setTimeout(tryApply, 50);
+                }
+                return;
+            }
+
+            el.style.opacity = "0.3";
+            applied = true;
+        }
+
+        // 如果这次什么都没应用，也不用再等
+        if (!applied) return;
+    }
+
+    // 立即尝试一次
+    tryApply();
+}
+
+
+
+
+
+
+
 function BlastFurnace() {
     document.getElementById("Byzantines2").style.opacity = "0.15";
     document.getElementById("Gurjaras2").style.opacity = "0.15";
