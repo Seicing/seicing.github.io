@@ -13,24 +13,9 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html', function () {
+        $('#techno').load('https://seicing.com/js/list/AOE2DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Burgundians").style.opacity = "1";
-            document.getElementById("Byzantines").style.opacity = "1";
-            document.getElementById("Chinese").style.opacity = "1";
-            document.getElementById("Italians").style.opacity = "1";
-            document.getElementById("Koreans").style.opacity = "1";
-            document.getElementById("Lithuanians").style.opacity = "1";
-            document.getElementById("Malay").style.opacity = "1";
-            document.getElementById("Portuguese").style.opacity = "1";
-            document.getElementById("Spanish").style.opacity = "1";
-            document.getElementById("Tatars").style.opacity = "1";
-            document.getElementById("Teutons").style.opacity = "1";
-            document.getElementById("Turks").style.opacity = "1";
-            document.getElementById("Vietnamese").style.opacity = "1";
-            document.getElementById("Poles").style.opacity = "1";
-            document.getElementById("Bohemians").style.opacity = "1";
-            document.getElementById("Dravidians").style.opacity = "1";
+            AOE2_applyUnitCivDisable("BombardTower");
         })
     })
     $(document).ready(function () {

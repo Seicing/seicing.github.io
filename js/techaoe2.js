@@ -1478,7 +1478,7 @@ function AOE2_enableCivIconQuickJump() {
 const AOE2_TECH_LINK_EXCLUDE = new Set([
     "纵火", "护卫", "软甲", "血统", "畜牧", "扳指", "帕提亚战术", "射手软甲", "羽箭", "锻造",
     "骑兵鳞甲", "步兵鳞甲", "刺网", "修船厂", "干船坞", "造船匠", "射手皮甲", "锥子箭",
-    "铸铁", "骑兵锁甲", "步兵锁甲", "垛墙", "射手锁甲", "护腕", "鼓风炉", "骑兵钢甲",
+    "铸铁", "骑兵锁甲", "步兵锁甲", "射手锁甲", "护腕", "鼓风炉", "骑兵钢甲",
     "步兵钢甲", "石匠", "化学", "弹道学", "近射孔", "脚踏起重机", "建筑学", "射箭槽",
     "攻城技师", "预热射击", "救赎", "赎罪", "草药", "大篷车", "行会", "铸币", "银行业",
     "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "马轭", "重犁",
@@ -1500,7 +1500,7 @@ const AOE2_TECH_LINK_TYPE_MAP = {
     "修道院": "buildings", "警戒箭塔": "buildings", "市场": "buildings", "城镇中心": "buildings",
     "大型箭塔": "buildings", "城堡": "buildings", "房屋": "buildings", "炮塔": "buildings",
     "农田": "buildings", "哨站": "buildings", "瞭望箭塔": "buildings", "世界奇观": "buildings",
-    "伐木场": "buildings", "木墙": "buildings", "木城门": "buildings", "石墙": "buildings",
+    "伐木场": "buildings", "木墙": "buildings", "木城门": "buildings", "石墙": "buildings", "垛墙": "buildings",
     "城门": "buildings", "采矿营地": "buildings", "磨坊": "buildings", "大商站": "buildings", "大庄园": "buildings", "商队旅馆": "buildings", "骡车": "buildings", "牧场": "buildings", "巨港": "buildings", "营垒": "buildings", "强化教堂": "buildings", "城楼": "buildings"
 };
 
@@ -2301,6 +2301,13 @@ function FortifiedWall() {
     document.getElementById("Wu2").style.opacity = "0.15";
 }
 
+function WatchTower() {
+    document.getElementById("Sicilians2").style.opacity = "0.15";
+}
+function StoneWall() {
+    document.getElementById("Goths2").style.opacity = "0.15";
+    document.getElementById("Cumans2").style.opacity = "0.15";
+}
 function GuardTower() {
     document.getElementById("Cumans2").style.opacity = "0.15";
     document.getElementById("Goths2").style.opacity = "0.15";
@@ -2327,6 +2334,7 @@ function KeepTower() {
     document.getElementById("Shu2").style.opacity = "0.15";
     document.getElementById("Khitans2").style.opacity = "0.15";
 }
+
 function BombardTower() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
     document.getElementById("Bengalis2").style.opacity = "0.15";
