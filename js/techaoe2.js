@@ -1481,7 +1481,7 @@ const AOE2_TECH_LINK_EXCLUDE = new Set([
     "铸铁", "骑兵锁甲", "步兵锁甲", "垛墙", "射手锁甲", "护腕", "鼓风炉", "骑兵钢甲",
     "步兵钢甲", "石匠", "化学", "弹道学", "近射孔", "脚踏起重机", "建筑学", "射箭槽",
     "攻城技师", "预热射击", "救赎", "赎罪", "草药", "大篷车", "行会", "铸币", "银行业",
-    "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "磨坊", "马轭", "重犁",
+    "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "马轭", "重犁",
     "轮作", "异教", "圣洁", "热情", "双刃斧", "弓锯", "双人锯", "虔诚", "启发", "雕版印刷术",
     "银冠", "金冠", "采金法", "钻井采金法", "采石法", "钻井采石法", "信念", "神权", "围墙",
     "工兵", "征招", "间谍", "驯化术", "畜牧业", "畜牧季移",
@@ -1501,9 +1501,7 @@ const AOE2_TECH_LINK_TYPE_MAP = {
     "大型箭塔": "buildings", "城堡": "buildings", "房屋": "buildings", "炮塔": "buildings",
     "农田": "buildings", "哨站": "buildings", "瞭望箭塔": "buildings", "世界奇观": "buildings",
     "伐木场": "buildings", "木墙": "buildings", "木城门": "buildings", "石墙": "buildings",
-    "城门": "buildings", "采矿营地": "buildings", "大商站": "buildings", "大庄园": "buildings",
-    "商队旅馆": "buildings", "骡车": "buildings", "牧场": "buildings", "巨港": "buildings",
-    "营垒": "buildings", "强化教堂": "buildings", "城楼": "buildings"
+    "城门": "buildings", "采矿营地": "buildings", "磨坊": "buildings", "大商站": "buildings", "大庄园": "buildings", "商队旅馆": "buildings", "骡车": "buildings", "牧场": "buildings", "巨港": "buildings", "营垒": "buildings", "强化教堂": "buildings", "城楼": "buildings"
 };
 
 // 特殊保留前缀的例外单位

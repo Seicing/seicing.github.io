@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html style="height:100%;">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
-    <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>日本</title>
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
@@ -14,15 +14,23 @@
 
 </head>
 
-<body style="height:100%;" id='scroll-2'>
+<body id='scroll-2'>
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
-        <div id="wrapper2" style="height:auto;">
-            <div id="page" style="height:100%;">
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
                 <div id="content">
                     <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp220">
@@ -2450,7 +2458,8 @@
 
 
 <br><br>点击下方小图标快捷切换到其他文明
-<button id="enableTechTreeQuick" onclick="toggleTechTreeQuickJump()">开启上方科技树超链接化</button><br>
+<button title="开启后，点击上方的单位和建筑图标可以跳转到对应的页面" id="enableTechTreeQuick"
+    onclick="toggleTechTreeQuickJump()">开启上方科技树超链接化</button><br>
 <div id="techno"></div>
 <table style="float:left;">
     <tr>
@@ -2458,14 +2467,11 @@
     </tr>
 </table>
 
-
-                        </div>
+</div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:fixed; height:100%; width:220px">
-                    <div id='scroll-1'
-                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <a href="https://seicing.com/html/aoe2/index-aoe2.html"><b>回到首页</b></a><br><br>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/aoe2/index-aoe2.html"><b>回到首页</b></a><br><br>
 <a href="#jia">简介</a><br>
 <a href="#sp">特性</a><br>
 <a href="#appeared">战役登场</a><br>
@@ -2479,7 +2485,6 @@
 <a href="#building">建筑群</a><br>
 <a href="#tgc">科技树</a><br>
 
-                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -2489,13 +2494,12 @@
 
                 </div>
                 <div style="clear: both;">&nbsp;</div>
+
             </div>
 
         </div>
     </div>
-
 </body>
-
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/techaoe2.js"></script>
