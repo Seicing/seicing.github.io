@@ -1567,9 +1567,13 @@ function AOE2_enableTechTreeQuickJump() {
         while (cell.firstChild) {
             link.appendChild(cell.firstChild);
         }
-
         cell.appendChild(link);
         cell.dataset.quickjump = "1";
+
+        // 新增 hover 高亮层，覆盖整个格子，包括红叉
+        const hoverLayer = document.createElement("div");
+        hoverLayer.className = "hover-highlight";
+        cell.appendChild(hoverLayer);
     });
 }
 
