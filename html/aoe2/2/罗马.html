@@ -2321,7 +2321,7 @@
 
 
 <br><br>点击下方小图标快捷切换到其他文明
-<button onclick="AOE2_enableTechTreeQuickJump()">开启上方科技树超链接化</button><br>
+<button id="enableTechTreeQuick" onclick="AOE2_enableTechTreeQuickJump()">开启上方科技树超链接化</button><br>
 <div id="techno"></div>
 <table style="float:left;">
     <tr>
@@ -2374,6 +2374,10 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DIC3.html', function () {
             AOE2_enableCivIconQuickJump();
+            var spanElement = document.getElementById("techno123");
+            if (spanElement) {
+                spanElement.style.display = "none";
+            }
         })
     })
     window.onload = function () {
