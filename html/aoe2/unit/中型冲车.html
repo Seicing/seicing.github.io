@@ -15,12 +15,7 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Hindustanis").style.opacity = "0.3";
-            document.getElementById("Gurjaras").style.opacity = "0.3";
-            document.getElementById("Bengalis").style.opacity = "0.3";
-            document.getElementById("Dravidians").style.opacity = "0.3";
-            document.getElementById("Wu").style.opacity = "0.3";
-
+            AOE2_applyUnitCivDisable("CappedRam");
         })
     })
     $(document).ready(function () {

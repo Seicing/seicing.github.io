@@ -13,21 +13,9 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html', function () {
+        $('#techno').load('https://seicing.com/js/list/AOE2DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Berbers").style.opacity = "1";
-            document.getElementById("Turks").style.opacity = "1";
-            document.getElementById("Saracens").style.opacity = "1";
-            document.getElementById("Persians").style.opacity = "1";
-            document.getElementById("Tatars").style.opacity = "1";
-            document.getElementById("Cumans").style.opacity = "1";
-            document.getElementById("Mongols").style.opacity = "1";
-            document.getElementById("Byzantines").style.opacity = "1";
-            document.getElementById("Ethiopians").style.opacity = "1";
-            document.getElementById("Malians").style.opacity = "1";
-            document.getElementById("Hindustanis").style.opacity = "1";
-            document.getElementById("Gurjaras").style.opacity = "1";
-            document.getElementById("Khitans").style.opacity = "1";
+            AOE2_applyUnitCivDisable("CamelRider");
         })
     })
     $(document).ready(function () {
