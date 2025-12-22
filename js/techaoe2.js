@@ -2597,6 +2597,9 @@ function SiegeRam() {
     document.getElementById("Dravidians2").style.opacity = "0.15";
 }
 
+function Scorpion() {
+    document.getElementById("Shu2").style.opacity = "0.15";
+}
 
 function HeavyScorpion() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
