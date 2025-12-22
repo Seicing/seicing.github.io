@@ -1450,7 +1450,112 @@ function AOE2_applyUnitCivDisable(funcName) {
     tryApply();
 }
 
+/* =========================================================
+   文明小图标 → 自动生成快捷跳转链接
+   ========================================================= */
 
+function AOE2_enableCivIconQuickJump() {
+
+    document.querySelectorAll('img[id$="2"][title]').forEach(img => {
+
+        // 已经被包过就跳过
+        if (img.closest('a')) return;
+
+        const title = img.getAttribute("title");
+        if (!title) return;
+
+        const link = document.createElement("a");
+        link.href = `https://seicing.com/html/aoe2/2/${title}.html#techno`;
+        link.style.color = "#0010ff";
+        link.style.display = "inline-block";
+
+        img.parentNode.insertBefore(link, img);
+        link.appendChild(img);
+    });
+}
+
+
+const AOE2_TECH_LINK_EXCLUDE = new Set([
+    "纵火", "护卫", "软甲", "血统", "畜牧", "扳指", "帕提亚战术", "射手软甲", "羽箭", "锻造", "骑兵鳞甲", "步兵鳞甲", "刺网", "修船厂", "干船坞", "造船匠", "射手皮甲", "锥子箭", "铸铁", "骑兵锁甲", "步兵锁甲", "垛墙", "射手锁甲", "护腕", "鼓风炉", "骑兵钢甲", "步兵钢甲", "石匠", "化学", "弹道学", "近射孔", "脚踏起重机", "建筑学", "炮塔科技", "射箭槽", "攻城技师", "预热射击", "救赎", "赎罪", "草药", "大篷车", "行会", "铸币", "银行业", "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "磨坊", "马轭", "重犁", "轮作", "异教", "圣洁", "热情", "双刃斧", "弓锯", "双人锯", "虔诚", "启发", "雕版印刷术", "银冠", "金冠", "采金法", "钻井采金法", "采石法", "钻井采石法", "信念", "神权", "围墙", "工兵", "征招", "间谍"
+]);
+
+
+const AOE2_TECH_LINK_TYPE_MAP = {
+    "兵营": "buildings",
+    "马厩": "buildings",
+    "靶场": "buildings",
+    "攻城武器厂": "buildings",
+    "船坞": "buildings",
+    "铁匠铺": "buildings",
+    "养鱼场": "buildings",
+    "大学": "buildings",
+    "修道院": "buildings",
+    "警戒箭塔": "buildings",
+    "市场": "buildings",
+    "城镇中心": "buildings",
+    "大型箭塔": "buildings",
+    "城堡": "buildings",
+    "房屋": "buildings",
+    "农田": "buildings",
+    "哨站": "buildings",
+    "瞭望箭塔": "buildings",
+    "世界奇观": "buildings",
+    "伐木场": "buildings",
+    "木墙": "buildings",
+    "木城门": "buildings",
+    "石墙": "buildings",
+    "城门": "buildings",
+    "采矿营地": "buildings"
+};
+
+/* =========================================================
+   科技树 → 快捷跳转（可开关）
+   ========================================================= */
+
+function AOE2_enableTechTreeQuickJump() {
+
+    const container = document.getElementById("wenttodie");
+    if (!container) return;
+
+    container.querySelectorAll(".aoetech-cell").forEach(cell => {
+
+        // 已处理过的不重复包
+        if (cell.dataset.quickjump === "1") return;
+
+        const img = cell.querySelector("img:not(.aoetech-overlay)");
+        if (!img) return;
+
+        const src = img.getAttribute("src");
+        if (!src) return;
+
+        // 从 src 提取文件名 → 银冠.jpg → 银冠
+        const name = src.split("/").pop().replace(/\.\w+$/, "");
+
+        if (AOE2_TECH_LINK_EXCLUDE.has(name)) return;
+
+        const type = AOE2_TECH_LINK_TYPE_MAP[name] || "unit";
+        const href = `https://seicing.com/html/aoe2/${type}/${name}.html`;
+
+        const link = document.createElement("a");
+        link.href = href;
+        link.style.display = "block";
+        link.style.width = "100%";
+        link.style.height = "100%";
+
+        // 保证 overlay 不拦截点击
+        cell.querySelectorAll(".aoetech-overlay").forEach(o => {
+            o.style.pointerEvents = "none";
+        });
+
+        // 包裹 cell 内容
+        while (cell.firstChild) {
+            link.appendChild(cell.firstChild);
+        }
+
+        cell.appendChild(link);
+        cell.dataset.quickjump = "1";
+    });
+}
 
 
 
