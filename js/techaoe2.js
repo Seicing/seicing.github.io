@@ -2513,6 +2513,12 @@ function BombardCannon() {
     document.getElementById("Incas2").style.opacity = "0.15";
 }
 
+function Mangonel() {
+    document.getElementById("Chinese2").style.opacity = "0.15";
+    document.getElementById("Koreans2").style.opacity = "0.15";
+    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").style.opacity = "0.15";
+}
 
 function Onager() {
     document.getElementById("Turks2").style.opacity = "0.15";
@@ -2561,6 +2567,13 @@ function SiegeOnager() {
     document.getElementById("Koreans2").style.opacity = "0.15";
     document.getElementById("Khitans2").style.opacity = "0.15";
     document.getElementById("Jurchens2").style.opacity = "0.15";
+}
+
+function BatteringRam() {
+    document.getElementById("Hindustanis2").style.opacity = "0.15";
+    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").style.opacity = "0.15";
 }
 
 function CappedRam() {
