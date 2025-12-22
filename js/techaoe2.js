@@ -1401,9 +1401,6 @@ window.addEventListener('resize', () => {
 });
 
 
-/* =========================================================
-   延迟就绪版：根据科技函数禁用兵种文明
-   ========================================================= */
 
 function AOE2_applyUnitCivDisable(funcName) {
 
@@ -2815,11 +2812,6 @@ function HeavyDemolitionShip() {
 
 
 
-/* =========================================================
-   AOE2 科技禁用规则自动推导 & UI 标记系统
-   ========================================================= */
-
-/* 1. 中文科技名 → 函数名（你已有的“表单”） */
 const AOE2_TECH_NAME_MAP = {
     "纵火": "Arson",
     "软甲": "Gambeson",
@@ -2916,10 +2908,8 @@ const AOE2_TECH_NAME_MAP = {
     "重型弩炮": "HeavyScorpion",
 };
 
-/* 2. 自动生成的禁用规则表（不要手写） */
 const AOE2_TECH_RULES = {};
 
-/* 3. 从函数体中解析禁用文明 */
 function __buildTechRulesFromFunctions() {
     Object.values(AOE2_TECH_NAME_MAP).forEach(funcName => {
         const fn = window[funcName];
@@ -2940,7 +2930,6 @@ function __buildTechRulesFromFunctions() {
     });
 }
 
-/* 4. 给科技树自动加红叉 */
 function applyAOE2TechDisableOverlay() {
     const container = document.getElementById("wenttodie");
     if (!container) return;
@@ -2976,7 +2965,6 @@ function applyAOE2TechDisableOverlay() {
     });
 }
 
-/* 5. 对外唯一入口（HTML 只需要调用这个） */
 function AOE2_applyTechTree() {
     __buildTechRulesFromFunctions();
     applyAOE2TechDisableOverlay();
