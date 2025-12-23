@@ -1403,7 +1403,6 @@ window.addEventListener('resize', () => {
 
 
 function AOE2_applyUnitCivDisable(funcName) {
-
     let tries = 0;
     const MAX_TRIES = 50; // 最多等 ~2.5 秒
 
@@ -1421,7 +1420,7 @@ function AOE2_applyUnitCivDisable(funcName) {
 
         // 2. 解析函数体
         const src = fn.toString();
-        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\(\s*["']aoeTechIconOff["']\s*\)/g;
+        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\("aoeTechIconOff"\)/g;
 
         let m;
         let applied = false;
