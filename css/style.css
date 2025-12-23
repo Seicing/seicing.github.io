@@ -531,11 +531,13 @@ div {
 .aoeTechIconOff {
     opacity: 0.3;
     filter:
-        sepia(1) saturate(1) hue-rotate(-30deg);
+        sepia(1) saturate(0) hue-rotate(-30deg);
 }
 
 #Aoe2techSp .aoeTechIconOff {
     opacity: 0.25;
+    filter:
+        sepia(1) saturate(1) hue-rotate(-30deg);
 }
 
 
