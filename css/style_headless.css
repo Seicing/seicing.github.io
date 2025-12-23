@@ -548,6 +548,10 @@ div {
         sepia(1) saturate(0) hue-rotate(-20deg);
 }
 
+#AOE2DIC3 .aoeTechIconOff {
+    opacity: 0.15;
+}
+
 
 /* ---------------------------------------------------- */
 /*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */

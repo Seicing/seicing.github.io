@@ -3122,7 +3122,7 @@ function __buildTechRulesFromFunctions() {
         const src = fn.toString();
         const civs = [];
 
-        const re = /getElementById\("([A-Za-z]+)2"\)\.style\.opacity\s*=\s*"0\.15"/g;
+        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\("aoeTechIconOff"\)/g;
         let m;
         while ((m = re.exec(src))) {
             civs.push(m[1]);
