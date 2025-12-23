@@ -1478,28 +1478,39 @@ function AOE2_activateCurrentCivIcon() {
     const path = location.pathname;
     if (!path.includes("/html/aoe2/")) return;
 
-    // 取当前页面名：吴.html → 吴
     const fileName = path.split("/").pop();
     if (!fileName) return;
 
-    const civName = fileName.replace(/\.html$/i, "");
-    if (!civName) return;
+    // 🔴 关键：解码 URL
+    const civName = decodeURIComponent(
+        fileName.replace(/\.html$/i, "")
+    ).trim();
 
     const techno = document.getElementById("techno");
     if (!techno) return;
 
-    // 找 title 与页面名一致的文明图标
-    const civImg = techno.querySelector(`img[title="${civName}"]`);
-    if (!civImg) return;
+    let targetImg = null;
 
-    // 清理旧激活（防止重复 / 切换文明）
+    techno.querySelectorAll("img[title]").forEach(img => {
+        const title = img.getAttribute("title").trim();
+        if (title === civName) {
+            targetImg = img;
+        }
+    });
+
+    if (!targetImg) {
+        console.warn("未找到文明图标：", civName);
+        return;
+    }
+
+    // 清理旧激活
     techno.querySelectorAll(".civ-active937").forEach(el => {
         el.classList.remove("civ-active937");
     });
 
-    // 使用你已有的“激活样式”
-    civImg.classList.add("civ-active937");
+    targetImg.classList.add("civ-active937");
 }
+
 
 const AOE2_TECH_LINK_EXCLUDE = new Set([
     "纵火", "护卫", "软甲", "血统", "畜牧", "扳指", "帕提亚战术", "射手软甲", "羽箭", "锻造",
@@ -1613,22 +1624,26 @@ function AOE2_disableTechTreeQuickJump() {
     if (!container) return;
 
     container.querySelectorAll(".aoetech-cell").forEach(cell => {
-        const link = cell.querySelector("a");
-        if (link && cell.dataset.quickjump === "1") {
-            while (link.firstChild) {
-                cell.appendChild(link.firstChild);
-            }
-            link.remove();
-            cell.dataset.quickjump = "0";
+        if (cell.dataset.quickjump !== "1") return;
 
-            cell.querySelectorAll(".aoetech-overlay").forEach(o => {
-                o.style.pointerEvents = "";
-            });
+        const link = cell.querySelector(":scope > a");
+        if (!link) return;
+
+        // 把 a 里的内容搬回 cell
+        while (link.firstChild) {
+            cell.appendChild(link.firstChild);
         }
-    });
 
-    cell.classList.remove("quickjump-enabled");
+        link.remove();
+
+        // 移除 hover 高亮层（如果有）
+        const hoverLayer = cell.querySelector(".hover-highlight");
+        if (hoverLayer) hoverLayer.remove();
+
+        delete cell.dataset.quickjump;
+    });
 }
+
 
 function toggleTechTreeQuickJump() {
     const btn = document.getElementById("enableTechTreeQuick");
