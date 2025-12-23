@@ -15,12 +15,12 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("eng").style.opacity = "1";
-            document.getElementById("fre").style.opacity = "1";
-            document.getElementById("ott").style.opacity = "1";
-            document.getElementById("jda").style.opacity = "1";
-            document.getElementById("jpn").style.opacity = "1";
-            document.getElementById("hol").style.opacity = "1";
+            document.getElementById("eng").classList.add("aoeTechIconOn");
+            document.getElementById("fre").classList.add("aoeTechIconOn");
+            document.getElementById("ott").classList.add("aoeTechIconOn");
+            document.getElementById("jda").classList.add("aoeTechIconOn");
+            document.getElementById("jpn").classList.add("aoeTechIconOn");
+            document.getElementById("hol").classList.add("aoeTechIconOn");
         })
     })
 </script>

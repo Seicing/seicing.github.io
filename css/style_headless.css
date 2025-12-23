@@ -541,6 +541,25 @@ div {
     transition: filter 0.2s ease, transform 0.2s ease;
 }
 
+/* 关闭状态：半透明 + 整体染红 */
+.aoeTechIconOff {
+    opacity: 0.5;
+    filter:
+        sepia(1) saturate(6) hue-rotate(-20deg);
+    transition:
+        opacity 0.2s ease,
+        filter 0.2s ease;
+}
+
+/* 开启状态：恢复正常 */
+.aoeTechIconOn {
+    opacity: 1;
+    filter: none;
+    transition:
+        opacity 0.2s ease,
+        filter 0.2s ease;
+}
+
 
 /* ---------------------------------------------------- */
 /*      帝国时代4科技树 - 最终修正版布局 (aoe4de 前缀)    */

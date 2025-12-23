@@ -15,11 +15,11 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOEDIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Minoans").style.opacity = "0.3";
-            document.getElementById("Persians").style.opacity = "0.3";
-            document.getElementById("Romans").style.opacity = "0.3";
-            document.getElementById("Shang").style.opacity = "0.3";
-            document.getElementById("Yamato").style.opacity = "0.3";
+            document.getElementById("Minoans").classList.add("aoeTechIconOff");
+            document.getElementById("Persians").classList.add("aoeTechIconOff");
+            document.getElementById("Romans").classList.add("aoeTechIconOff");
+            document.getElementById("Shang").classList.add("aoeTechIconOff");
+            document.getElementById("Yamato").classList.add("aoeTechIconOff");
         })
     })
     $(document).ready(function () {

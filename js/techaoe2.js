@@ -1438,7 +1438,9 @@ function AOE2_applyUnitCivDisable(funcName) {
                 return;
             }
 
-            el.style.opacity = "0.3";
+            el.classList.remove("aoeTechIconOn");
+            el.classList.add("aoeTechIconOff");
+
             applied = true;
         }
 
@@ -1481,7 +1483,6 @@ function AOE2_activateCurrentCivIcon() {
     const fileName = path.split("/").pop();
     if (!fileName) return;
 
-    // 🔴 关键：解码 URL
     const civName = decodeURIComponent(
         fileName.replace(/\.html$/i, "")
     ).trim();

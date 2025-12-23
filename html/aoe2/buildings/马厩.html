@@ -15,9 +15,9 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Aztecs").style.opacity = "0.3";
-            document.getElementById("Mayans").style.opacity = "0.3";
-            document.getElementById("Incas").style.opacity = "0.3";
+            document.getElementById("Aztecs").classList.add("aoeTechIconOff");
+            document.getElementById("Mayans").classList.add("aoeTechIconOff");
+            document.getElementById("Incas").classList.add("aoeTechIconOff");
         })
     })
     $(document).ready(function () {

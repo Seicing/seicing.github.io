@@ -15,13 +15,13 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOEDIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Hittites").style.opacity = "0.3";
-            document.getElementById("Macedonians").style.opacity = "0.3";
-            document.getElementById("Palmyrans").style.opacity = "0.3";
-            document.getElementById("Shang").style.opacity = "0.3";
-            document.getElementById("Egyptians").style.opacity = "0.3";
-            document.getElementById("Yamato").style.opacity = "0.3";
-            document.getElementById("Greeks").style.opacity = "0.3";
+            document.getElementById("Hittites").classList.add("aoeTechIconOff");
+            document.getElementById("Macedonians").classList.add("aoeTechIconOff");
+            document.getElementById("Palmyrans").classList.add("aoeTechIconOff");
+            document.getElementById("Shang").classList.add("aoeTechIconOff");
+            document.getElementById("Egyptians").classList.add("aoeTechIconOff");
+            document.getElementById("Yamato").classList.add("aoeTechIconOff");
+            document.getElementById("Greeks").classList.add("aoeTechIconOff");
         })
     })
     $(document).ready(function () {

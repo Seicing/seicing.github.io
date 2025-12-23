@@ -15,8 +15,8 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DICChrono.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Athenians").style.opacity = "0.3";
-            document.getElementById("Macedonians").style.opacity = "0.3";
+            document.getElementById("Athenians").classList.add("aoeTechIconOff");
+            document.getElementById("Macedonians").classList.add("aoeTechIconOff");
         })
     })
     $(document).ready(function () {

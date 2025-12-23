@@ -15,10 +15,10 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DICChrono.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Achaemenids").style.opacity = "0.3";
+            document.getElementById("Achaemenids").classList.add("aoeTechIconOff");
 
-            document.getElementById("Puru").style.opacity = "0.3";
-            document.getElementById("Thracians").style.opacity = "0.3";
+            document.getElementById("Puru").classList.add("aoeTechIconOff");
+            document.getElementById("Thracians").classList.add("aoeTechIconOff");
         })
     })
     $(document).ready(function () {

@@ -15,11 +15,11 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Chinese").style.opacity = "1";
-            document.getElementById("Jurchens").style.opacity = "1";
-            document.getElementById("Khitans").style.opacity = "1";
-            document.getElementById("Koreans").style.opacity = "1";
-            document.getElementById("Vietnamese").style.opacity = "1";
+            document.getElementById("Chinese").classList.add("aoeTechIconOn");
+            document.getElementById("Jurchens").classList.add("aoeTechIconOn");
+            document.getElementById("Khitans").classList.add("aoeTechIconOn");
+            document.getElementById("Koreans").classList.add("aoeTechIconOn");
+            document.getElementById("Vietnamese").classList.add("aoeTechIconOn");
         })
     })
     $(document).ready(function () {
