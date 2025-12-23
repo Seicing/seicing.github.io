@@ -1,479 +1,493 @@
 {
-  "tableId": "ramTable",
-  "common": [
-    {
-      "tech": "BatteringRam",
-      "showId": "轻型冲车",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Battering_ram_aoe2DE.webp",
-      "score": 1,
-      "main": 1
-    },
-    {
-      "tech": "CappedRam",
-      "showId": "中型冲车",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到中型冲车.webp",
-      "score": 1
-    },
-    {
-      "tech": "SiegeRam",
-      "showId": "重型冲车",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到重型冲车.webp",
-      "score": 2
-    },
-    {
-      "tech": "SiegeEngineers",
-      "showId": "攻城技师",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp",
-      "score": 2
-    },
-    {
-      "tech": "Faith",
-      "showId": "信念",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
-      "score": 0
-    },
-    {
-      "tech": "Heresy",
-      "showId": "异教",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
-      "score": 0
-    }
-  ],
-  "unique": [
-    {
-      "tech": "凯尔特狂热",
-      "showId": "凯尔特狂热",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Celts"
-    },
-    {
-      "tech": "攻城",
-      "showId": "攻城",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 3,
-      "civ": "Mongols"
-    },
-    {
-      "tech": "重装甲",
-      "showId": "重装甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Teutons"
-    },
-    {
-      "tech": "缅甸便宜修道院科技",
-      "showId": "缅甸便宜修道院科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
-      "score": 0,
-      "civ": "Burmese"
-    },
-    {
-      "tech": "阿兹特克训练速度",
-      "showId": "阿兹特克训练速度",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
-      "score": 1,
-      "civ": "Aztecs"
-    },
-    {
-      "tech": "保加利亚科技减价",
-      "showId": "保加利亚科技减价",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
-      "score": 1,
-      "civ": "Bulgarians"
-    },
-    {
-      "tech": "凯尔特攻城器攻速",
-      "showId": "凯尔特攻城器攻速",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
-      "score": 1,
-      "civ": "Celts"
-    },
-    {
-      "tech": "库曼早期炮厂",
-      "showId": "库曼早期炮厂",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Cumans.webp",
-      "score": 1,
-      "civ": "Cumans"
-    },
-    {
-      "tech": "中国便宜科技",
-      "showId": "中国便宜科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
-      "score": 1,
-      "civ": "Chinese"
-    },
-    {
-      "tech": "葡萄牙黄金费用",
-      "showId": "葡萄牙黄金费用",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
-      "score": 1,
-      "civ": "Portuguese"
-    },
-    {
-      "tech": "斯拉夫炮厂减价",
-      "showId": "斯拉夫炮厂减价",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Slavs.webp",
-      "score": 1,
-      "civ": "Slavs"
-    },
-    {
-      "tech": "鞑靼高地加成",
-      "showId": "鞑靼高地加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
-      "score": 1,
-      "civ": "Tatars"
-    },
-    {
-      "tech": "格鲁吉亚对抗力",
-      "showId": "格鲁吉亚对抗力",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
-      "score": 1,
-      "civ": "Georgians"
-    },
-    {
-      "tech": "女真误伤",
-      "showId": "女真误伤",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
-      "score": 1,
-      "civ": "Jurchens"
-    },
-    {
-      "tech": "蜀攻城器",
-      "showId": "蜀攻城器",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Shu.webp",
-      "score": 1,
-      "civ": "Shu"
-    },
-    {
-      "tech": "RocketLauncher1",
-      "showId": "装甲战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
-      "score": 1,
-      "civ": "Hindustanis",
-      "replace": "CappedRam"
-    },
-    {
-      "tech": "HeavyRocketLauncher1",
-      "showId": "攻城战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
-      "score": 2,
-      "civ": "Hindustanis",
-      "replace": "SiegeRam"
-    },
-    {
-      "tech": "RocketLauncher2",
-      "showId": "装甲战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
-      "score": 1,
-      "civ": "Bengalis",
-      "replace": "CappedRam"
-    },
-    {
-      "tech": "HeavyRocketLauncher2",
-      "showId": "攻城战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
-      "score": 2,
-      "civ": "Bengalis",
-      "replace": "SiegeRam"
-    },
-    {
-      "tech": "RocketLauncher3",
-      "showId": "装甲战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
-      "score": 1,
-      "civ": "Gurjaras",
-      "replace": "CappedRam"
-    },
-    {
-      "tech": "HeavyRocketLauncher3",
-      "showId": "攻城战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
-      "score": 2,
-      "civ": "Gurjaras",
-      "replace": "SiegeRam"
-    },
-    {
-      "tech": "RocketLauncher4",
-      "showId": "装甲战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
-      "score": 1,
-      "civ": "Dravidians",
-      "replace": "CappedRam"
-    },
-    {
-      "tech": "HeavyRocketLauncher4",
-      "showId": "攻城战象",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
-      "score": 2,
-      "civ": "Dravidians",
-      "replace": "SiegeRam"
-    },
-    {
-      "tech": "Forging1",
-      "showId": "锻造",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "IronCasting1",
-      "showId": "铸铁",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "BlastFurnace1",
-      "showId": "鼓风炉",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "ScaleBardingArmor1",
-      "showId": "骑兵鳞甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "ChainBarding1",
-      "showId": "骑兵锁甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "PlateBardingArmor1",
-      "showId": "骑兵钢甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "Husbandry1",
-      "showId": "畜牧",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
-      "score": 0,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "Bloodlines",
-      "showId": "血统",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
-      "score": 1,
-      "civ": "Hindustanis"
-    },
-    {
-      "tech": "Forging2",
-      "showId": "锻造",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "IronCasting2",
-      "showId": "铸铁",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "BlastFurnace2",
-      "showId": "鼓风炉",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "ScaleBardingArmor2",
-      "showId": "骑兵鳞甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "ChainBarding2",
-      "showId": "骑兵锁甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "PlateBardingArmor2",
-      "showId": "骑兵钢甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "Husbandry2",
-      "showId": "畜牧",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
-      "score": 0,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "Bloodlines",
-      "showId": "血统",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
-      "score": 1,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "孟加拉大象抗拒",
-      "showId": "孟加拉大象抗拒",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bengalis.webp",
-      "score": 1,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "派",
-      "showId": "派",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "Forging3",
-      "showId": "锻造",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "IronCasting3",
-      "showId": "铸铁",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "占位符1",
-      "showId": "鼓风炉",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "ScaleBardingArmor3",
-      "showId": "骑兵鳞甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "ChainBarding3",
-      "showId": "骑兵锁甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "PlateBardingArmor3",
-      "showId": "骑兵钢甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "Husbandry3",
-      "showId": "畜牧",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
-      "score": 0,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "Bloodlines",
-      "showId": "血统",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
-      "score": 1,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "瞿折罗伤害加成",
-      "showId": "瞿折罗伤害加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Gurjaras.webp",
-      "score": 1,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "刹帝利",
-      "showId": "刹帝利",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 1,
-      "civ": "Gurjaras"
-    },
-    {
-      "tech": "Forging4",
-      "showId": "锻造",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "IronCasting4",
-      "showId": "铸铁",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "BlastFurnace4",
-      "showId": "鼓风炉",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "ScaleBardingArmor4",
-      "showId": "骑兵鳞甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "ChainBarding4",
-      "showId": "骑兵锁甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "占位符3",
-      "showId": "骑兵钢甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "Husbandry4",
-      "showId": "畜牧",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "占位符2",
-      "showId": "血统",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
-      "score": 0,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "医疗团队",
-      "showId": "医疗团队",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "乌兹钢",
-      "showId": "乌兹钢",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Dravidians"
-    }
-  ]
+    "tableId": "ramTable",
+    "common": [
+        {
+            "tech": "BatteringRam",
+            "showId": "轻型冲车",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Battering_ram_aoe2DE.webp",
+            "score": 1,
+            "main": 1
+        },
+        {
+            "tech": "CappedRam",
+            "showId": "中型冲车",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到中型冲车.webp",
+            "score": 1
+        },
+        {
+            "tech": "SiegeRam",
+            "showId": "重型冲车",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到重型冲车.webp",
+            "score": 2
+        },
+        {
+            "tech": "SiegeEngineers",
+            "showId": "攻城技师",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp",
+            "score": 2
+        },
+        {
+            "tech": "Faith",
+            "showId": "信念",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "score": 0
+        },
+        {
+            "tech": "Heresy",
+            "showId": "异教",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "score": 0
+        }
+    ],
+    "unique": [
+        {
+            "tech": "凯尔特狂热",
+            "showId": "凯尔特狂热",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Celts"
+        },
+        {
+            "tech": "攻城",
+            "showId": "攻城",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 3,
+            "civ": "Mongols"
+        },
+        {
+            "tech": "重装甲",
+            "showId": "重装甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Teutons"
+        },
+        {
+            "tech": "缅甸便宜修道院科技",
+            "showId": "缅甸便宜修道院科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
+            "score": 0,
+            "civ": "Burmese"
+        },
+        {
+            "tech": "阿兹特克训练速度",
+            "showId": "阿兹特克训练速度",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
+            "score": 1,
+            "civ": "Aztecs"
+        },
+        {
+            "tech": "保加利亚科技减价",
+            "showId": "保加利亚科技减价",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
+            "score": 1,
+            "civ": "Bulgarians"
+        },
+        {
+            "tech": "凯尔特攻城器攻速",
+            "showId": "凯尔特攻城器攻速",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
+            "score": 1,
+            "civ": "Celts"
+        },
+        {
+            "tech": "库曼早期炮厂",
+            "showId": "库曼早期炮厂",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Cumans.webp",
+            "score": 1,
+            "civ": "Cumans"
+        },
+        {
+            "tech": "中国便宜科技",
+            "showId": "中国便宜科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
+            "score": 1,
+            "civ": "Chinese"
+        },
+        {
+            "tech": "葡萄牙黄金费用",
+            "showId": "葡萄牙黄金费用",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
+            "score": 1,
+            "civ": "Portuguese"
+        },
+        {
+            "tech": "斯拉夫炮厂减价",
+            "showId": "斯拉夫炮厂减价",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Slavs.webp",
+            "score": 1,
+            "civ": "Slavs"
+        },
+        {
+            "tech": "鞑靼高地加成",
+            "showId": "鞑靼高地加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
+            "score": 1,
+            "civ": "Tatars"
+        },
+        {
+            "tech": "格鲁吉亚对抗力",
+            "showId": "格鲁吉亚对抗力",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
+            "score": 1,
+            "civ": "Georgians"
+        },
+        {
+            "tech": "女真攻城技师",
+            "showId": "女真攻城技师",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 0,
+            "civ": "Jurchens"
+        },
+        {
+            "tech": "女真攻城器",
+            "showId": "女真攻城器",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 1,
+            "civ": "Jurchens"
+        },
+        {
+            "tech": "女真误伤",
+            "showId": "女真误伤",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 1,
+            "civ": "Jurchens"
+        },
+        {
+            "tech": "蜀攻城器",
+            "showId": "蜀攻城器",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Shu.webp",
+            "score": 1,
+            "civ": "Shu"
+        },
+        {
+            "tech": "RocketLauncher1",
+            "showId": "装甲战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
+            "score": 1,
+            "civ": "Hindustanis",
+            "replace": "CappedRam"
+        },
+        {
+            "tech": "HeavyRocketLauncher1",
+            "showId": "攻城战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "score": 2,
+            "civ": "Hindustanis",
+            "replace": "SiegeRam"
+        },
+        {
+            "tech": "RocketLauncher2",
+            "showId": "装甲战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
+            "score": 1,
+            "civ": "Bengalis",
+            "replace": "CappedRam"
+        },
+        {
+            "tech": "HeavyRocketLauncher2",
+            "showId": "攻城战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "score": 2,
+            "civ": "Bengalis",
+            "replace": "SiegeRam"
+        },
+        {
+            "tech": "RocketLauncher3",
+            "showId": "装甲战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
+            "score": 1,
+            "civ": "Gurjaras",
+            "replace": "CappedRam"
+        },
+        {
+            "tech": "HeavyRocketLauncher3",
+            "showId": "攻城战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "score": 2,
+            "civ": "Gurjaras",
+            "replace": "SiegeRam"
+        },
+        {
+            "tech": "RocketLauncher4",
+            "showId": "装甲战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/AoE2DE_Armored_Elephant_icon.webp",
+            "score": 1,
+            "civ": "Dravidians",
+            "replace": "CappedRam"
+        },
+        {
+            "tech": "HeavyRocketLauncher4",
+            "showId": "攻城战象",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "score": 2,
+            "civ": "Dravidians",
+            "replace": "SiegeRam"
+        },
+        {
+            "tech": "Forging1",
+            "showId": "锻造",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "IronCasting1",
+            "showId": "铸铁",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "BlastFurnace1",
+            "showId": "鼓风炉",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "ScaleBardingArmor1",
+            "showId": "骑兵鳞甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "ChainBarding1",
+            "showId": "骑兵锁甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "PlateBardingArmor1",
+            "showId": "骑兵钢甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "Husbandry1",
+            "showId": "畜牧",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
+            "score": 0,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "Bloodlines",
+            "showId": "血统",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
+            "score": 1,
+            "civ": "Hindustanis"
+        },
+        {
+            "tech": "Forging2",
+            "showId": "锻造",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "IronCasting2",
+            "showId": "铸铁",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "BlastFurnace2",
+            "showId": "鼓风炉",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "ScaleBardingArmor2",
+            "showId": "骑兵鳞甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "ChainBarding2",
+            "showId": "骑兵锁甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "PlateBardingArmor2",
+            "showId": "骑兵钢甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "Husbandry2",
+            "showId": "畜牧",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
+            "score": 0,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "Bloodlines",
+            "showId": "血统",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
+            "score": 1,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "孟加拉大象抗拒",
+            "showId": "孟加拉大象抗拒",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bengalis.webp",
+            "score": 1,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "派",
+            "showId": "派",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "Forging3",
+            "showId": "锻造",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "IronCasting3",
+            "showId": "铸铁",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "占位符1",
+            "showId": "鼓风炉",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "ScaleBardingArmor3",
+            "showId": "骑兵鳞甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "ChainBarding3",
+            "showId": "骑兵锁甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "PlateBardingArmor3",
+            "showId": "骑兵钢甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "Husbandry3",
+            "showId": "畜牧",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
+            "score": 0,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "Bloodlines",
+            "showId": "血统",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
+            "score": 1,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "瞿折罗伤害加成",
+            "showId": "瞿折罗伤害加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Gurjaras.webp",
+            "score": 1,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "刹帝利",
+            "showId": "刹帝利",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 1,
+            "civ": "Gurjaras"
+        },
+        {
+            "tech": "Forging4",
+            "showId": "锻造",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "IronCasting4",
+            "showId": "铸铁",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "BlastFurnace4",
+            "showId": "鼓风炉",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "ScaleBardingArmor4",
+            "showId": "骑兵鳞甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "ChainBarding4",
+            "showId": "骑兵锁甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "占位符3",
+            "showId": "骑兵钢甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "Husbandry4",
+            "showId": "畜牧",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "占位符2",
+            "showId": "血统",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png",
+            "score": 0,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "医疗团队",
+            "showId": "医疗团队",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "乌兹钢",
+            "showId": "乌兹钢",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Dravidians"
+        }
+    ]
 }

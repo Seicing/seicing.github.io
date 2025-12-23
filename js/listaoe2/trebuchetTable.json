@@ -1,211 +1,225 @@
 {
-  "tableId": "trebuchetTable",
-  "common": [
-    {
-      "tech": "Trebuchet",
-      "showId": "巨型投石机",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Trebuchet_unpacked_aoe2DE.webp",
-      "score": 1,
-      "main": 1
-    },
-    {
-      "tech": "Chemistry",
-      "showId": "化学",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "SiegeEngineers",
-      "showId": "攻城技师",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp",
-      "score": 2
-    },
-    {
-      "tech": "Ballistics",
-      "showId": "弹道学",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BallisticsDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Conscription",
-      "showId": "征招",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Faith",
-      "showId": "信念",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
-      "score": 0
-    },
-    {
-      "tech": "Heresy",
-      "showId": "异教",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
-      "score": 0
-    }
-  ],
-  "unique": [
-    {
-      "tech": "凯尔特狂热",
-      "showId": "凯尔特狂热",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Celts"
-    },
-    {
-      "tech": "战狼号",
-      "showId": "战狼号",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Britons"
-    },
-    {
-      "tech": "配重块",
-      "showId": "配重块",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Saracens"
-    },
-    {
-      "tech": "帖木儿攻城术",
-      "showId": "帖木儿攻城术",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Tatars"
-    },
-    {
-      "tech": "弹射器",
-      "showId": "弹射器",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Japanese"
-    },
-    {
-      "tech": "卧虎",
-      "showId": "卧虎",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Wu"
-    },
-    {
-      "tech": "重装甲",
-      "showId": "重装甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Teutons"
-    },
-    {
-      "tech": "缅甸便宜修道院科技",
-      "showId": "缅甸便宜修道院科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
-      "score": 0,
-      "civ": "Burmese"
-    },
-    {
-      "tech": "阿兹特克训练速度",
-      "showId": "阿兹特克训练速度",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
-      "score": 1,
-      "civ": "Aztecs"
-    },
-    {
-      "tech": "中国便宜科技",
-      "showId": "中国便宜科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
-      "score": 1,
-      "civ": "Chinese"
-    },
-    {
-      "tech": "凯尔特攻城器攻速",
-      "showId": "凯尔特攻城器攻速",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
-      "score": 1,
-      "civ": "Celts"
-    },
-    {
-      "tech": "匈奴巨投命中率",
-      "showId": "匈奴巨投命中率",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.webp",
-      "score": 1,
-      "civ": "Huns"
-    },
-    {
-      "tech": "葡萄牙黄金费用",
-      "showId": "葡萄牙黄金费用",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
-      "score": 1,
-      "civ": "Portuguese"
-    },
-    {
-      "tech": "鞑靼高地加成",
-      "showId": "鞑靼高地加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
-      "score": 1,
-      "civ": "Tatars"
-    },
-    {
-      "tech": "土耳其科技折扣",
-      "showId": "土耳其科技折扣",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
-      "score": 1,
-      "civ": "Turks"
-    },
-    {
-      "tech": "越南免费征招",
-      "showId": "越南免费征招",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.webp",
-      "score": 1,
-      "civ": "Vietnamese"
-    },
-    {
-      "tech": "达罗毗荼便宜攻城器",
-      "showId": "达罗毗荼便宜攻城器",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Dravidians.webp",
-      "score": 1,
-      "civ": "Dravidians"
-    },
-    {
-      "tech": "女真误伤",
-      "showId": "女真误伤",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
-      "score": 1,
-      "civ": "Jurchens"
-    },
-    {
-      "tech": "蜀攻城器",
-      "showId": "蜀攻城器",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Shu.webp",
-      "score": 1,
-      "civ": "Shu"
-    },
-    {
-      "tech": "魏攻城费用",
-      "showId": "魏攻城费用",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wei.webp",
-      "score": 1,
-      "civ": "Wei"
-    },
-    {
-      "tech": "Heiguang1",
-      "showId": "牵引抛石机",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
-      "score": -1,
-      "civ": "Wei"
-    },
-    {
-      "tech": "Heiguang2",
-      "showId": "牵引抛石机",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
-      "score": -1,
-      "civ": "Shu"
-    },
-    {
-      "tech": "Heiguang3",
-      "showId": "牵引抛石机",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
-      "score": -1,
-      "civ": "Wu"
-    }
-  ]
+    "tableId": "trebuchetTable",
+    "common": [
+        {
+            "tech": "Trebuchet",
+            "showId": "巨型投石机",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Trebuchet_unpacked_aoe2DE.webp",
+            "score": 1,
+            "main": 1
+        },
+        {
+            "tech": "Chemistry",
+            "showId": "化学",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "SiegeEngineers",
+            "showId": "攻城技师",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/SiegeEngineersDE.webp",
+            "score": 2
+        },
+        {
+            "tech": "Ballistics",
+            "showId": "弹道学",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BallisticsDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Conscription",
+            "showId": "征招",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Faith",
+            "showId": "信念",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "score": 0
+        },
+        {
+            "tech": "Heresy",
+            "showId": "异教",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "score": 0
+        }
+    ],
+    "unique": [
+        {
+            "tech": "凯尔特狂热",
+            "showId": "凯尔特狂热",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Celts"
+        },
+        {
+            "tech": "战狼号",
+            "showId": "战狼号",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Britons"
+        },
+        {
+            "tech": "配重块",
+            "showId": "配重块",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Saracens"
+        },
+        {
+            "tech": "帖木儿攻城术",
+            "showId": "帖木儿攻城术",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Tatars"
+        },
+        {
+            "tech": "弹射器",
+            "showId": "弹射器",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Japanese"
+        },
+        {
+            "tech": "卧虎",
+            "showId": "卧虎",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Wu"
+        },
+        {
+            "tech": "重装甲",
+            "showId": "重装甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Teutons"
+        },
+        {
+            "tech": "缅甸便宜修道院科技",
+            "showId": "缅甸便宜修道院科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
+            "score": 0,
+            "civ": "Burmese"
+        },
+        {
+            "tech": "阿兹特克训练速度",
+            "showId": "阿兹特克训练速度",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
+            "score": 1,
+            "civ": "Aztecs"
+        },
+        {
+            "tech": "中国便宜科技",
+            "showId": "中国便宜科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
+            "score": 1,
+            "civ": "Chinese"
+        },
+        {
+            "tech": "凯尔特攻城器攻速",
+            "showId": "凯尔特攻城器攻速",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
+            "score": 1,
+            "civ": "Celts"
+        },
+        {
+            "tech": "匈奴巨投命中率",
+            "showId": "匈奴巨投命中率",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.webp",
+            "score": 1,
+            "civ": "Huns"
+        },
+        {
+            "tech": "葡萄牙黄金费用",
+            "showId": "葡萄牙黄金费用",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
+            "score": 1,
+            "civ": "Portuguese"
+        },
+        {
+            "tech": "鞑靼高地加成",
+            "showId": "鞑靼高地加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
+            "score": 1,
+            "civ": "Tatars"
+        },
+        {
+            "tech": "土耳其科技折扣",
+            "showId": "土耳其科技折扣",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
+            "score": 1,
+            "civ": "Turks"
+        },
+        {
+            "tech": "越南免费征招",
+            "showId": "越南免费征招",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.webp",
+            "score": 1,
+            "civ": "Vietnamese"
+        },
+        {
+            "tech": "达罗毗荼便宜攻城器",
+            "showId": "达罗毗荼便宜攻城器",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Dravidians.webp",
+            "score": 1,
+            "civ": "Dravidians"
+        },
+        {
+            "tech": "女真攻城技师",
+            "showId": "女真攻城技师",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 0,
+            "civ": "Jurchens"
+        },
+        {
+            "tech": "女真攻城器",
+            "showId": "女真攻城器",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 1,
+            "civ": "Jurchens"
+        },
+        {
+            "tech": "女真误伤",
+            "showId": "女真误伤",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 1,
+            "civ": "Jurchens"
+        },
+        {
+            "tech": "蜀攻城器",
+            "showId": "蜀攻城器",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Shu.webp",
+            "score": 1,
+            "civ": "Shu"
+        },
+        {
+            "tech": "魏攻城费用",
+            "showId": "魏攻城费用",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wei.webp",
+            "score": 1,
+            "civ": "Wei"
+        },
+        {
+            "tech": "Heiguang1",
+            "showId": "牵引抛石机",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
+            "score": -1,
+            "civ": "Wei"
+        },
+        {
+            "tech": "Heiguang2",
+            "showId": "牵引抛石机",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
+            "score": -1,
+            "civ": "Shu"
+        },
+        {
+            "tech": "Heiguang3",
+            "showId": "牵引抛石机",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/牵引抛石机.webp",
+            "score": -1,
+            "civ": "Wu"
+        }
+    ]
 }
