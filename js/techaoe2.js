@@ -1474,6 +1474,32 @@ function AOE2_enableCivIconQuickJump() {
     });
 }
 
+function AOE2_activateCurrentCivIcon() {
+    const path = location.pathname;
+    if (!path.includes("/html/aoe2/")) return;
+
+    // 取当前页面名：吴.html → 吴
+    const fileName = path.split("/").pop();
+    if (!fileName) return;
+
+    const civName = fileName.replace(/\.html$/i, "");
+    if (!civName) return;
+
+    const techno = document.getElementById("techno");
+    if (!techno) return;
+
+    // 找 title 与页面名一致的文明图标
+    const civImg = techno.querySelector(`img[title="${civName}"]`);
+    if (!civImg) return;
+
+    // 清理旧激活（防止重复 / 切换文明）
+    techno.querySelectorAll(".civ-active937").forEach(el => {
+        el.classList.remove("civ-active937");
+    });
+
+    // 使用你已有的“激活样式”
+    civImg.classList.add("civ-active937");
+}
 
 const AOE2_TECH_LINK_EXCLUDE = new Set([
     "纵火", "护卫", "软甲", "血统", "畜牧", "扳指", "帕提亚战术", "射手软甲", "羽箭", "锻造",
@@ -1570,10 +1596,15 @@ function AOE2_enableTechTreeQuickJump() {
         cell.appendChild(link);
         cell.dataset.quickjump = "1";
 
-        // 新增 hover 高亮层，覆盖整个格子，包括红叉
-        const hoverLayer = document.createElement("div");
-        hoverLayer.className = "hover-highlight";
-        cell.appendChild(hoverLayer);
+        // hover 高亮层：只创建一次
+        if (!cell.querySelector(".hover-highlight")) {
+            const hoverLayer = document.createElement("div");
+            hoverLayer.className = "hover-highlight";
+            cell.appendChild(hoverLayer);
+        }
+
+        // 标记当前格子处于「超链接化开启」状态
+        cell.classList.add("quickjump-enabled");
     });
 }
 
@@ -1595,6 +1626,8 @@ function AOE2_disableTechTreeQuickJump() {
             });
         }
     });
+
+    cell.classList.remove("quickjump-enabled");
 }
 
 function toggleTechTreeQuickJump() {
