@@ -705,29 +705,29 @@ const AOE2_TECH_NAME_ALIAS = {
 };
 
 const AOE2_TECH_LINK_TYPE_MAP = {
-    "兵营": "buildings",
-    "靶场": "buildings",
-    "马厩": "buildings",
-    "船坞": "buildings",
-    "贮藏阱": "buildings",
-    "谷仓": "buildings",
-    "市场": "buildings",
-    "神庙": "buildings",
-    "攻城武器厂": "buildings",
-    "政府中心": "buildings",
-    "学院": "buildings",
-    "低矮围墙": "buildings",
-    "稍高围墙": "buildings",
-    "垛墙": "buildings",
-    "城门": "buildings",
-    "城镇中心": "buildings",
-    "瞭望箭塔": "buildings",
-    "警卫塔": "buildings",
-    "警戒箭塔": "buildings",
-    "弩炮塔": "buildings",
-    "房屋": "buildings",
-    "世界奇观": "buildings",
-    "农田": "buildings",
+    "兵营": "buildingsaoe1",
+    "靶场": "buildingsaoe1",
+    "马厩": "buildingsaoe1",
+    "船坞": "buildingsaoe1",
+    "贮藏阱": "buildingsaoe1",
+    "谷仓": "buildingsaoe1",
+    "市场": "buildingsaoe1",
+    "神庙": "buildingsaoe1",
+    "攻城武器厂": "buildingsaoe1",
+    "政府中心": "buildingsaoe1",
+    "学院": "buildingsaoe1",
+    "低矮围墙": "buildingsaoe1",
+    "稍高围墙": "buildingsaoe1",
+    "垛墙": "buildingsaoe1",
+    "城门": "buildingsaoe1",
+    "城镇中心": "buildingsaoe1",
+    "瞭望箭塔": "buildingsaoe1",
+    "警卫塔": "buildingsaoe1",
+    "警戒箭塔": "buildingsaoe1",
+    "弩炮塔": "buildingsaoe1",
+    "房屋": "buildingsaoe1",
+    "世界奇观": "buildingsaoe1",
+    "农田": "buildingsaoe1",
 };
 
 // 特殊保留前缀的例外单位
@@ -775,7 +775,7 @@ function AOE2_enableTechTreeQuickJump() {
 
         if (AOE2_TECH_LINK_EXCLUDE.has(name)) return;
 
-        const type = AOE2_TECH_LINK_TYPE_MAP[name] || "unit";
+        const type = AOE2_TECH_LINK_TYPE_MAP[name] || "unitaoe1";
         const href = `https://seicing.com/html/aoe2/${type}/${name}.html`;
 
         const link = document.createElement("a");
@@ -1509,5 +1509,3 @@ function AOE2_applyTechTree() {
     __buildTechRulesFromFunctions();
     applyAOE2TechDisableOverlay();
 }
-
-

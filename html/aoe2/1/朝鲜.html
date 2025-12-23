@@ -934,7 +934,20 @@
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/techaoe1.js"></script>
-<script>window.onload = aoetechPoeRush()
+<script>    $(document).ready(function () {
+        $('#techno').load('https://seicing.com/js/list/AOEDIC3.html', function () {
+            AOE2_enableCivIconQuickJump();
+            AOE2_activateCurrentCivIcon();
+            var spanElement = document.getElementById("techno123");
+            if (spanElement) {
+                spanElement.style.display = "none";
+            }
+        })
+    })
+    window.onload = function () {
+        aoetechPoeRush();
+        AOE2_applyTechTree();
+    };
 </script>
 <style>
     #can {
