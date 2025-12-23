@@ -1233,57 +1233,57 @@ function aoetechPoeRush() {
 
 
 function CommonAllTech() {
-    document.getElementById("Byzantines2").style.opacity = "1";
-    document.getElementById("Gurjaras2").style.opacity = "1";
-    document.getElementById("Koreans2").style.opacity = "1";
-    document.getElementById("Lithuanians2").style.opacity = "1";
-    document.getElementById("Malians2").style.opacity = "1";
-    document.getElementById("Vietnamese2").style.opacity = "1";
-    document.getElementById("Goths2").style.opacity = "1";
-    document.getElementById("Tatars2").style.opacity = "1";
-    document.getElementById("Bengalis2").style.opacity = "1";
-    document.getElementById("Hindustanis2").style.opacity = "1";
-    document.getElementById("Huns2").style.opacity = "1";
-    document.getElementById("Khmer2").style.opacity = "1";
-    document.getElementById("Lithuanians2").style.opacity = "1";
-    document.getElementById("Magyars2").style.opacity = "1";
-    document.getElementById("Romans2").style.opacity = "1";
-    document.getElementById("Aztecs2").style.opacity = "1";
-    document.getElementById("Bulgarians2").style.opacity = "1";
-    document.getElementById("Burmese2").style.opacity = "1";
-    document.getElementById("Celts2").style.opacity = "1";
-    document.getElementById("Dravidians2").style.opacity = "1";
-    document.getElementById("Franks2").style.opacity = "1";
-    document.getElementById("Japanese2").style.opacity = "1";
-    document.getElementById("Malay2").style.opacity = "1";
-    document.getElementById("Persians2").style.opacity = "1";
-    document.getElementById("Portuguese2").style.opacity = "1";
-    document.getElementById("Saracens2").style.opacity = "1";
-    document.getElementById("Sicilians2").style.opacity = "1";
-    document.getElementById("Slavs2").style.opacity = "1";
-    document.getElementById("Spanish2").style.opacity = "1";
-    document.getElementById("Teutons2").style.opacity = "1";
-    document.getElementById("Vikings2").style.opacity = "1";
-    document.getElementById("Berbers2").style.opacity = "1";
-    document.getElementById("Bohemians2").style.opacity = "1";
-    document.getElementById("Britons2").style.opacity = "1";
-    document.getElementById("Burgundians2").style.opacity = "1";
-    document.getElementById("Chinese2").style.opacity = "1";
-    document.getElementById("Cumans2").style.opacity = "1";
-    document.getElementById("Ethiopians2").style.opacity = "1";
-    document.getElementById("Incas2").style.opacity = "1";
-    document.getElementById("Italians2").style.opacity = "1";
-    document.getElementById("Mayans2").style.opacity = "1";
-    document.getElementById("Mongols2").style.opacity = "1";
-    document.getElementById("Poles2").style.opacity = "1";
-    document.getElementById("Turks2").style.opacity = "1";
-    document.getElementById("Armenians2").style.opacity = "1";
-    document.getElementById("Georgians2").style.opacity = "1";
-    document.getElementById("Shu2").style.opacity = "1";
-    document.getElementById("Wei2").style.opacity = "1";
-    document.getElementById("Khitans2").style.opacity = "1";
-    document.getElementById("Wu2").style.opacity = "1";
-    document.getElementById("Jurchens2").style.opacity = "1";
+    document.getElementById("Byzantines2").classList.remove("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.remove("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Malians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Goths2").classList.remove("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.remove("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.remove("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.remove("aoeTechIconOff");
+    document.getElementById("Huns2").classList.remove("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.remove("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.remove("aoeTechIconOff");
+    document.getElementById("Romans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.remove("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Celts2").classList.remove("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Franks2").classList.remove("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Malay2").classList.remove("aoeTechIconOff");
+    document.getElementById("Persians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.remove("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.remove("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.remove("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.remove("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.remove("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.remove("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Britons2").classList.remove("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Incas2").classList.remove("aoeTechIconOff");
+    document.getElementById("Italians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.remove("aoeTechIconOff");
+    document.getElementById("Poles2").classList.remove("aoeTechIconOff");
+    document.getElementById("Turks2").classList.remove("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Shu2").classList.remove("aoeTechIconOff");
+    document.getElementById("Wei2").classList.remove("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Wu2").classList.remove("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.remove("aoeTechIconOff");
 }
 
 
@@ -1421,7 +1421,7 @@ function AOE2_applyUnitCivDisable(funcName) {
 
         // 2. 解析函数体
         const src = fn.toString();
-        const re = /getElementById\("([A-Za-z]+)2"\)\.style\.opacity\s*=\s*"0\.15"/g;
+        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\(\s*["']aoeTechIconOff["']\s*\)/g;
 
         let m;
         let applied = false;
@@ -1438,7 +1438,6 @@ function AOE2_applyUnitCivDisable(funcName) {
                 return;
             }
 
-            el.classList.remove("aoeTechIconOn");
             el.classList.add("aoeTechIconOff");
 
             applied = true;
@@ -1668,1352 +1667,1352 @@ function toggleTechTreeQuickJump() {
 
 
 function BlastFurnace() {
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function Arson() {
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 
 function ChainMailArmor() {
-    document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
 }
 
 function PlateMailArmor() {
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 
 }
 function Gambeson() {
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 function Squires() {
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
 }
 function Faith() {
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
 }
 function Heresy() {
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 function Bloodlines() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 
 function Husbandry() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
 }
 function Bracer() {
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
 }
 function ParthianTactics() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 function ThumbRing() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 function LeatherArcherArmor() {
-    document.getElementById("Burmese2").style.opacity = "0.15";
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
 }
 
 function RingArcherArmor() {
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 function ScaleBardingArmor() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
 }
 
 function ChainBarding() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
 }
 
 function PlateBardingArmor() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 
 
 function SiegeEngineers() {
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 function DryDock() {
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function Shipwright() {
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 
 function Sanctity() {
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 function BlockPrinting() {
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function Fervor() {
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
 }
 
 function Herbal() {
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 function Redemption() {
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 function Atonement() {
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 function Illumination() {
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 function Theocracy() {
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
 }
 
 
 function Sapper() {
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 function TwoManSaw() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 function StoneShaftMining() {
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 function GoldShaftMining() {
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
     document.getElementById("Khitans").style.opacity = "0.15";
 }
 function TreadmillCrane() {
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 function Masonry() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
 }
 function Architecture() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 function Hoardings() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 function HeatedShot() {
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 function ArrowSlits() {
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 function CropRotation() {
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 function Guilds() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 
 function IronCasting() {
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 
 function HeavyPlow() {
-    document.getElementById("Khitan2").style.opacity = "0.15";
+    document.getElementById("Khitan2").classList.add("aoeTechIconOff");
 }
 
 function HorseCollar() {
-    document.getElementById("Khitan2").style.opacity = "0.15";
+    document.getElementById("Khitan2").classList.add("aoeTechIconOff");
 }
 
 function FortifiedWall() {
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 function WatchTower() {
-    document.getElementById("Sicilians2").style.opacity = "0.15";
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
 }
 function StoneWall() {
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
 }
 function GuardTower() {
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
 }
 
 function KeepTower() {
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function BombardTower() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
 
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 
 function LongSwordsman() {
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 function TwoHandedSwordsman() {
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 function Champion() {
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 
 function Crossbowman() {
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
 }
 function Arbalester() {
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 
 function LightCavalry() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
 }
 
 function Hussar() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
 }
 
 function HandCannoneer() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 function Scoutcavalry() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
 }
 
 
 function CavalryArcher() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 
 function HeavyCavalryArcher() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
 }
 
 function Pikeman() {
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
 }
 function EliteSkirmisher() {
-    document.getElementById("Turks2").style.opacity = "0.15";
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
 }
 
 function Halberdier() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function Knight() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 
 function Cavalier() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 function Paladin() {
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 
 function CamelRider() {
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
 }
 
 function HeavyCamelRider() {
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
 }
 
 function BombardCannon() {
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
 }
 
 function Mangonel() {
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 function Onager() {
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 function SiegeOnager() {
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 
 function BatteringRam() {
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
 }
 
 function CappedRam() {
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
 }
 
 function SiegeRam() {
-    document.getElementById("Berbers2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Dravidians2").style.opacity = "0.15";
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
 }
 
 function Scorpion() {
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 
 function HeavyScorpion() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Spanish2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 
 function CannonGalleon() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 function EilteCannonGalleon() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Byzantines2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Britons2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Franks2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Sicilians2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Teutons2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Wu2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Goths2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
 }
 
 function Galleon() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
-    document.getElementById("Malians2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
 }
 
 function FireGalley() {
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
 }
 
 function FireShip() {
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
 }
 
 function FastFireShip() {
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Celts2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Hindustanis2").style.opacity = "0.15";
-    document.getElementById("Portuguese2").style.opacity = "0.15";
-    document.getElementById("Saracens2").style.opacity = "0.15";
-    document.getElementById("Turks2").style.opacity = "0.15";
-    document.getElementById("Vietnamese2").style.opacity = "0.15";
-    document.getElementById("Vikings2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Gurjaras2").style.opacity = "0.15";
-    document.getElementById("Armenians2").style.opacity = "0.15";
-    document.getElementById("Jurchens2").style.opacity = "0.15";
-    document.getElementById("Shu2").style.opacity = "0.15";
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Turks2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionRaft() {
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionShip() {
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 
 function HeavyDemolitionShip() {
-    document.getElementById("Aztecs2").style.opacity = "0.15";
-    document.getElementById("Bulgarians2").style.opacity = "0.15";
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Burmese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Ethiopians2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Italians2").style.opacity = "0.15";
-    document.getElementById("Japanese2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Koreans2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Magyars2").style.opacity = "0.15";
-    document.getElementById("Malay2").style.opacity = "0.15";
-    document.getElementById("Slavs2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-    document.getElementById("Poles2").style.opacity = "0.15";
-    document.getElementById("Bohemians2").style.opacity = "0.15";
-    document.getElementById("Bengalis2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Georgians2").style.opacity = "0.15";
-    document.getElementById("Wei2").style.opacity = "0.15";
-    document.getElementById("Khitans2").style.opacity = "0.15";
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Italians2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 

@@ -452,23 +452,23 @@ function aoetechPoeRush() {
 
 
 function CommonAllTech() {
-    document.getElementById("Egyptians2").style.opacity = "1";
-    document.getElementById("Assyrians2").style.opacity = "1";
-    document.getElementById("Hittites2").style.opacity = "1";
-    document.getElementById("Babylonians2").style.opacity = "1";
-    document.getElementById("Persians2").style.opacity = "1";
-    document.getElementById("Sumerians2").style.opacity = "1";
-    document.getElementById("Greeks2").style.opacity = "1";
-    document.getElementById("Minoans2").style.opacity = "1";
-    document.getElementById("Phoenicians2").style.opacity = "1";
-    document.getElementById("Shang2").style.opacity = "1";
-    document.getElementById("Yamato2").style.opacity = "1";
-    document.getElementById("Choson2").style.opacity = "1";
-    document.getElementById("LacViet2").style.opacity = "1";
-    document.getElementById("Romans2").style.opacity = "1";
-    document.getElementById("Carthaginians2").style.opacity = "1";
-    document.getElementById("Macedonians2").style.opacity = "1";
-    document.getElementById("Palmyrans2").style.opacity = "1";
+    document.getElementById("Egyptians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Assyrians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.remove("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Persians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.remove("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Shang2").classList.remove("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.remove("aoeTechIconOff");
+    document.getElementById("Choson2").classList.remove("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.remove("aoeTechIconOff");
+    document.getElementById("Romans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.remove("aoeTechIconOff");
 }
 
 function showPic2(e) {
@@ -527,233 +527,233 @@ function hiddenPic2() {
 }
 
 function Architecture() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
 }
 function CityWatch() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Egyptians2").style.opacity = "0.15";
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
 }
 function Alchemy() {
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
 }
 function Craftsmanship() {
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
 }
 function Urbanization() {
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Astrology() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Mysticism() {
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Polytheism() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
 }
 function Afterlife() {
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
 }
 function Fanaticism() {
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Medicine() {
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Monotheism() {
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
 }
 function Theocracy() {
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Jihad() {
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 
 function Martyrdom() {
-    document.getElementById("Egyptians2").style.opacity = "0.15";
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Babylonians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
 }
 function Siegecraft() {
-    document.getElementById("Egyptians2").style.opacity = "0.15";
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
 }
 function Irrigation() {
-    document.getElementById("Hittites2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 function Nobility() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
 }
 function Logistics() {
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
 }
 function Aristocracy() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
 }
 function Engineering() {
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
 }
 function Conscription() {
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
 }
 function Wall3() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Macedonians2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 function Tower3() {
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 function Tower4() {
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Minoans2").style.opacity = "0.15";
-    document.getElementById("Persians2").style.opacity = "0.15";
-    document.getElementById("Shang2").style.opacity = "0.15";
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
 }
 function Bronzeshield() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Egyptians2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
 }
 function Metallurgy() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Greeks2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
 }
 function Chainmailinfantry() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
 }
 function Ironshield() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Babylonians2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Egyptians2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
 }
 function Chainmailarchers() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
 }
 function Chainmailcavalry() {
-    document.getElementById("Carthaginians2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Phoenicians2").style.opacity = "0.15";
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
 }
 function Towershield() {
-    document.getElementById("Assyrians2").style.opacity = "0.15";
-    document.getElementById("Babylonians2").style.opacity = "0.15";
-    document.getElementById("Choson2").style.opacity = "0.15";
-    document.getElementById("Egyptians2").style.opacity = "0.15";
-    document.getElementById("Sumerians2").style.opacity = "0.15";
-    document.getElementById("LacViet2").style.opacity = "0.15";
-    document.getElementById("Palmyrans2").style.opacity = "0.15";
-    document.getElementById("Yamato2").style.opacity = "0.15";
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
 

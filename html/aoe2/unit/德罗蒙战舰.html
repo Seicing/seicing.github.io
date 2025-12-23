@@ -15,11 +15,11 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE2DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("Huns").style.opacity = "1.0";
-            document.getElementById("Byzantines").style.opacity = "1.0";
-            document.getElementById("Goths").style.opacity = "1.0";
-            document.getElementById("Romans").style.opacity = "1.0";
-            document.getElementById("Armenians").style.opacity = "1.0";
+            document.getElementById("Huns").classList.remove("aoeTechIconOff");
+            document.getElementById("Byzantines").classList.remove("aoeTechIconOff");
+            document.getElementById("Goths").classList.remove("aoeTechIconOff");
+            document.getElementById("Romans").classList.remove("aoeTechIconOff");
+            document.getElementById("Armenians").classList.remove("aoeTechIconOff");
         })
     })
     $(document).ready(function () {

@@ -543,21 +543,9 @@ div {
 
 /* 关闭状态：半透明 + 整体染红 */
 .aoeTechIconOff {
-    opacity: 0.5;
+    opacity: 0.3;
     filter:
-        sepia(1) saturate(6) hue-rotate(-20deg);
-    transition:
-        opacity 0.2s ease,
-        filter 0.2s ease;
-}
-
-/* 开启状态：恢复正常 */
-.aoeTechIconOn {
-    opacity: 1;
-    filter: none;
-    transition:
-        opacity 0.2s ease,
-        filter 0.2s ease;
+        sepia(1) saturate(0) hue-rotate(-20deg);
 }
 
 
