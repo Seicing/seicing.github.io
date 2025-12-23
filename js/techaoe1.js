@@ -447,10 +447,6 @@ function aoetechPoeRush() {
 
 
 
-
-
-
-
 function CommonAllTech() {
     document.getElementById("Egyptians2").classList.remove("aoeTechIconOff");
     document.getElementById("Assyrians2").classList.remove("aoeTechIconOff");
@@ -525,6 +521,338 @@ function hiddenPic2() {
     aasb.style.display = "none";
     CommonAllTech()
 }
+
+
+
+
+
+
+
+
+
+
+
+function AOE2_applyUnitCivDisable(funcName) {
+    let tries = 0;
+    const MAX_TRIES = 50; // 最多等 ~2.5 秒
+
+    function tryApply() {
+        tries++;
+
+        // 1. 规则函数是否已存在
+        const fn = window[funcName];
+        if (typeof fn !== "function") {
+            if (tries < MAX_TRIES) {
+                return setTimeout(tryApply, 50);
+            }
+            return;
+        }
+
+        // 2. 解析函数体
+        const src = fn.toString();
+        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\("aoeTechIconOff"\)/g;
+
+        let m;
+        let applied = false;
+
+        while ((m = re.exec(src))) {
+            const civ = m[1];
+            const el = document.getElementById(civ);
+
+            // 3. DOM 还没进来，继续等
+            if (!el) {
+                if (tries < MAX_TRIES) {
+                    return setTimeout(tryApply, 50);
+                }
+                return;
+            }
+
+            el.classList.add("aoeTechIconOff");
+
+            applied = true;
+        }
+
+        // 如果这次什么都没应用，也不用再等
+        if (!applied) return;
+    }
+
+    // 立即尝试一次
+    tryApply();
+}
+
+/* =========================================================
+   文明小图标 → 自动生成快捷跳转链接
+   ========================================================= */
+
+function AOE2_enableCivIconQuickJump() {
+
+    document.querySelectorAll('img[id$="2"][title]').forEach(img => {
+
+        // 已经被包过就跳过
+        if (img.closest('a')) return;
+
+        const title = img.getAttribute("title");
+        if (!title) return;
+
+        const link = document.createElement("a");
+        link.href = `https://seicing.com/html/aoe2/1/${title}.html#techno`;
+        link.style.color = "#0010ff";
+        link.style.display = "inline-block";
+
+        img.parentNode.insertBefore(link, img);
+        link.appendChild(img);
+    });
+}
+
+function AOE2_activateCurrentCivIcon() {
+    const path = location.pathname;
+    if (!path.includes("/html/aoe2/")) return;
+
+    const fileName = path.split("/").pop();
+    if (!fileName) return;
+
+    const civName = decodeURIComponent(
+        fileName.replace(/\.html$/i, "")
+    ).trim();
+
+    const techno = document.getElementById("techno");
+    if (!techno) return;
+
+    let targetImg = null;
+
+    techno.querySelectorAll("img[title]").forEach(img => {
+        const title = img.getAttribute("title").trim();
+        if (title === civName) {
+            targetImg = img;
+        }
+    });
+
+    if (!targetImg) {
+        console.warn("未找到文明图标：", civName);
+        return;
+    }
+
+    // 清理旧激活
+    techno.querySelectorAll(".civ-active937").forEach(el => {
+        el.classList.remove("civ-active937");
+    });
+
+    targetImg.classList.add("civ-active937");
+}
+
+
+const AOE2_TECH_LINK_EXCLUDE = new Set([
+    "工具利用",
+    "步兵皮甲",
+    "射手皮甲",
+    "骑兵皮甲",
+    "青铜盾",
+    "金属利用",
+    "步兵鳞甲",
+    "射手鳞甲",
+    "骑兵鳞甲",
+    "铁盾",
+    "冶金学",
+    "步兵锁甲",
+    "射手锁甲",
+    "骑兵锁甲",
+    "塔盾",
+    "占星术",
+    "多神论",
+    "神秘论",
+    "神权",
+    "冥世信仰",
+    "盲信主义",
+    "一神论",
+    "医学",
+    "狂热行为",
+    "贵族制",
+    "建筑学",
+    "文字书写",
+    "后勤学",
+    "木材利用",
+    "石矿开采",
+    "金矿开采",
+    "驯化术",
+    "城市守望",
+    "贵族统治制度",
+    "弹道学",
+    "炼金术",
+    "工程学",
+    "工艺",
+    "车轮",
+    "犁",
+    "征招",
+    "城市化",
+    "精湛工艺",
+    "攻城术",
+    "铸币术",
+    "灌溉术",
+]);
+
+const AOE2_TECH_NAME_ALIAS = {
+    "兵营": /^.+兵营$/,
+    "学院": /^.+学院$/,
+    "政府中心": /^.+政府中心$/,
+    "稍高围墙": /^.+稍高围墙$/,
+    "垛墙": /^.+垛墙$/,
+    "城镇中心": /^.+城镇中心$/,
+    "警戒箭塔": /^.+警戒箭塔$/,
+    "弩炮塔": /^.+弩炮塔$/,
+    "房屋": /^.+房屋$/,
+    "世界奇观": /^.+世界奇观$/,
+    "弩炮塔": /^.+弩炮塔$/,
+};
+
+const AOE2_TECH_LINK_TYPE_MAP = {
+    "兵营": "buildings",
+    "靶场": "buildings",
+    "马厩": "buildings",
+    "船坞": "buildings",
+    "贮藏阱": "buildings",
+    "谷仓": "buildings",
+    "市场": "buildings",
+    "神庙": "buildings",
+    "攻城武器厂": "buildings",
+    "政府中心": "buildings",
+    "学院": "buildings",
+    "低矮围墙": "buildings",
+    "稍高围墙": "buildings",
+    "垛墙": "buildings",
+    "城门": "buildings",
+    "城镇中心": "buildings",
+    "瞭望箭塔": "buildings",
+    "警卫塔": "buildings",
+    "警戒箭塔": "buildings",
+    "弩炮塔": "buildings",
+    "房屋": "buildings",
+    "世界奇观": "buildings",
+    "农田": "buildings",
+};
+
+// 特殊保留前缀的例外单位
+const AOE2_TECH_PREFIX_EXCLUDE = new Set([
+    "精锐草原枪兵",
+]);
+
+/* =========================================================
+   科技树 → 快捷跳转（可开关）
+   ========================================================= */
+let techTreeQuickJumpEnabled = false; // 默认关闭
+
+function AOE2_normalizeTechName(rawName) {
+    // 先匹配别名
+    for (const canonical in AOE2_TECH_NAME_ALIAS) {
+        const rule = AOE2_TECH_NAME_ALIAS[canonical];
+        if (rule.test(rawName)) {
+            return canonical;
+        }
+    }
+
+    // 默认去掉前缀（精锐、高级、精英等），除非例外
+    if (!AOE2_TECH_PREFIX_EXCLUDE.has(rawName)) {
+        return rawName.replace(/^(精锐|早期)/, "");
+    }
+
+    return rawName;
+}
+
+function AOE2_enableTechTreeQuickJump() {
+    const container = document.getElementById("wenttodie");
+    if (!container) return;
+
+    container.querySelectorAll(".aoetech-cell").forEach(cell => {
+        if (cell.dataset.quickjump === "1") return; // 已处理
+
+        const img = cell.querySelector("img:not(.aoetech-overlay)");
+        if (!img) return;
+
+        const src = img.getAttribute("src");
+        if (!src) return;
+
+        const rawName = src.split("/").pop().replace(/\.\w+$/, "");
+        const name = AOE2_normalizeTechName(rawName);
+
+        if (AOE2_TECH_LINK_EXCLUDE.has(name)) return;
+
+        const type = AOE2_TECH_LINK_TYPE_MAP[name] || "unit";
+        const href = `https://seicing.com/html/aoe2/${type}/${name}.html`;
+
+        const link = document.createElement("a");
+        link.href = href;
+        link.style.display = "block";
+        link.style.width = "100%";
+        link.style.height = "100%";
+
+        // 保证 overlay 不拦截点击
+        cell.querySelectorAll(".aoetech-overlay").forEach(o => {
+            o.style.pointerEvents = "none";
+        });
+
+        // 包裹 cell 内容
+        while (cell.firstChild) {
+            link.appendChild(cell.firstChild);
+        }
+        cell.appendChild(link);
+        cell.dataset.quickjump = "1";
+
+        // hover 高亮层：只创建一次
+        if (!cell.querySelector(".hover-highlight")) {
+            const hoverLayer = document.createElement("div");
+            hoverLayer.className = "hover-highlight";
+            cell.appendChild(hoverLayer);
+        }
+
+        // 标记当前格子处于「超链接化开启」状态
+        cell.classList.add("quickjump-enabled");
+    });
+}
+
+function AOE2_disableTechTreeQuickJump() {
+    const container = document.getElementById("wenttodie");
+    if (!container) return;
+
+    container.querySelectorAll(".aoetech-cell").forEach(cell => {
+        if (cell.dataset.quickjump !== "1") return;
+
+        const link = cell.querySelector(":scope > a");
+        if (!link) return;
+
+        // 把 a 里的内容搬回 cell
+        while (link.firstChild) {
+            cell.appendChild(link.firstChild);
+        }
+
+        link.remove();
+
+        // 移除 hover 高亮层（如果有）
+        const hoverLayer = cell.querySelector(".hover-highlight");
+        if (hoverLayer) hoverLayer.remove();
+
+        delete cell.dataset.quickjump;
+    });
+}
+
+
+function toggleTechTreeQuickJump() {
+    const btn = document.getElementById("enableTechTreeQuick");
+    if (!btn) return;
+
+    if (!techTreeQuickJumpEnabled) {
+        AOE2_enableTechTreeQuickJump();
+        btn.textContent = "已开启科技树超链接化";
+        btn.classList.add("enabled"); // 加特效
+        techTreeQuickJumpEnabled = true;
+    } else {
+        AOE2_disableTechTreeQuickJump();
+        btn.textContent = "开启上方科技树超链接化";
+        btn.classList.remove("enabled"); // 移除特效
+        techTreeQuickJumpEnabled = false;
+    }
+}
+
+
+
 
 function Architecture() {
     document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
@@ -756,4 +1084,430 @@ function Towershield() {
     document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
     document.getElementById("Yamato2").classList.add("aoeTechIconOff");
 }
+
+
+
+
+function Chariot() {
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function ScytheChariot() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function CavalryUnit() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+}
+function HeavyCavalry() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+}
+function Cataphract() {
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+
+function WarElephant() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function ArmoredElephant() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function CamelRider() {
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+function Catapult() {
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function HeavyCatapult() {
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function Ballista() {
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+function Helepolis() {
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+function Priest() {
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+}
+function Hoplite() {
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+}
+function Phalangite() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+function Centurion() {
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+function FishingShip() {
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+}
+function Trireme() {
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+}
+function CatapultTrireme() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+}
+function Juggernaut() {
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+function FireGalley() {
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+}
+
+
+function HeavyHorseArcher() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+}
+
+
+function HorseArcher() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Phoenicians2").classList.add("aoeTechIconOff");
+}
+
+
+
+
+function ElephantArcher() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Babylonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+
+
+
+function ChariotArcher() {
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+
+function CompositeBowman() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("Choson2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+}
+
+function ImprovedBowman() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+}
+
+function Slinger() {
+    document.getElementById("Assyrians2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+}
+
+function Legionary() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+    document.getElementById("Carthaginians2").classList.add("aoeTechIconOff");
+    document.getElementById("LacViet2").classList.add("aoeTechIconOff");
+    document.getElementById("Minoans2").classList.add("aoeTechIconOff");
+    document.getElementById("Sumerians2").classList.add("aoeTechIconOff");
+}
+function LongSwordsman() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+    document.getElementById("Hittites2").classList.add("aoeTechIconOff");
+    document.getElementById("Macedonians2").classList.add("aoeTechIconOff");
+    document.getElementById("Palmyrans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shang2").classList.add("aoeTechIconOff");
+}
+function BroadSwordsman() {
+    document.getElementById("Egyptians2").classList.add("aoeTechIconOff");
+    document.getElementById("Greeks2").classList.add("aoeTechIconOff");
+    document.getElementById("Yamato2").classList.add("aoeTechIconOff");
+}
+
+
+
+
+
+const AOE2_TECH_NAME_MAP = {
+    "建筑学": "Architecture",
+    "城市守望": "CityWatch",
+    "炼金术": "Alchemy",
+    "精湛工艺": "Craftsmanship",
+    "城市化": "Urbanization",
+    "占星术": "Astrology",
+    "神秘论": "Mysticism",
+    "多神论": "Polytheism",
+    "冥世信仰": "Afterlife",
+    "盲信主义": "Fanaticism",
+    "医学": "Medicine",
+    "一神论": "Monotheism",
+    "神权": "Theocracy",
+    "牺牲": "Jihad",
+    "狂热行为": "Martyrdom",
+    "攻城术": "Siegecraft",
+    "灌溉术": "Irrigation",
+    "贵族制": "Nobility",
+    "后勤学": "Logistics",
+    "贵族统治制度": "Aristocracy",
+    "工程学": "Engineering",
+    "征招": "Conscription",
+    "垛墙": "Wall3",
+    "警戒箭塔": "Tower3",
+    "弩炮塔": "Tower4",
+    "青铜盾": "Bronzeshield",
+    "冶金学": "Metallurgy",
+    "步兵锁甲": "Chainmailinfantry",
+    "铁盾": "Ironshield",
+    "射手锁甲": "Chainmailarchers",
+    "骑兵锁甲": "Chainmailcavalry",
+    "塔盾": "Towershield",
+
+    "阔剑士": "BroadSwordsman",
+    "长剑士": "LongSwordsman",
+    "军团兵": "Legionary",
+
+    "环索投石手": "Slinger",
+    "强化弓箭手": "ImprovedBowman",
+    "复合弓箭手": "CompositeBowman",
+    "战车弓兵": "ChariotArcher",
+    "骑象射手": "ElephantArcher",
+    "骑马弓兵": "HorseArcher",
+    "重装骑马弓兵": "HeavyHorseArcher",
+
+    "战车": "Chariot",
+    "刀轮战车": "ScytheChariot",
+    "骑兵": "CavalryUnit",
+    "重装骑兵": "HeavyCavalry",
+    "甲胄骑兵": "Cataphract",
+    "战象": "WarElephant",
+    "披甲战象": "ArmoredElephant",
+    "骆驼兵": "CamelRider",
+
+    "投石车": "Catapult",
+    "重型投石车": "HeavyCatapult",
+    "弩炮": "Ballista",
+    "破城者攻城塔": "Helepolis",
+
+    "祭司": "Priest",
+    "甲兵": "Hoplite",
+    "方阵步兵": "Phalangite",
+    "百夫长": "Centurion",
+
+    "渔船": "FishingShip",
+    "三桨座战船": "Trireme",
+    "投石型三桨座战船": "CatapultTrireme",
+    "大帆船": "Juggernaut",
+    "火艨艟": "FireGalley",
+};
+
+const AOE2_TECH_RULES = {};
+
+function __buildTechRulesFromFunctions() {
+    Object.values(AOE2_TECH_NAME_MAP).forEach(funcName => {
+        const fn = window[funcName];
+        if (typeof fn !== "function") return;
+
+        const src = fn.toString();
+        const civs = [];
+
+        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\("aoeTechIconOff"\)/g;
+        let m;
+        while ((m = re.exec(src))) {
+            civs.push(m[1]);
+        }
+
+        if (civs.length) {
+            AOE2_TECH_RULES[funcName] = civs;
+        }
+    });
+}
+
+function applyAOE2TechDisableOverlay() {
+    const container = document.getElementById("wenttodie");
+    if (!container) return;
+
+    // 当前文明：直接取 class
+    const civ = [...container.classList][0];
+    if (!civ) return;
+
+    container.querySelectorAll(".aoetech-cell").forEach(cell => {
+        const a = cell.querySelector("a");
+        if (!a) return;
+
+        const attr = a.getAttribute("onmousemove");
+        if (!attr) return;
+
+        const m = attr.match(/showPic\(event,'([^']+)'\)/);
+        if (!m) return;
+
+        const techCN = m[1];
+        const funcName = AOE2_TECH_NAME_MAP[techCN];
+        if (!funcName) return;
+
+        const bannedCivs = AOE2_TECH_RULES[funcName];
+        if (!bannedCivs || !bannedCivs.includes(civ)) return;
+
+        // 已有红叉就不重复加
+        if (cell.querySelector(".aoetech-overlay")) return;
+
+        const overlay = document.createElement("img");
+        overlay.className = "aoetech-overlay";
+        overlay.src = "https://data.seicing.com/seicingdepot/3fatcatpool/cannot.png";
+        cell.appendChild(overlay);
+    });
+}
+
+function AOE2_applyTechTree() {
+    __buildTechRulesFromFunctions();
+    applyAOE2TechDisableOverlay();
+}
+
 
