@@ -1,358 +1,358 @@
 {
-  "tableId": "knightTable",
-  "common": [
-    {
-      "tech": "Knight",
-      "showId": "骑士",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Knight_aoe2DE.webp",
-      "score": 1,
-      "main": 1
-    },
-    {
-      "tech": "Cavalier",
-      "showId": "重装骑士",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到重装骑士.webp",
-      "score": 2
-    },
-    {
-      "tech": "Paladin",
-      "showId": "游侠",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到游侠.webp",
-      "score": 3
-    },
-    {
-      "tech": "Forging",
-      "showId": "锻造",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
-      "score": 1
-    },
-    {
-      "tech": "IronCasting",
-      "showId": "铸铁",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "BlastFurnace",
-      "showId": "鼓风炉",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
-      "score": 2
-    },
-    {
-      "tech": "ScaleBardingArmor",
-      "showId": "骑兵鳞甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "ChainBarding",
-      "showId": "骑兵锁甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "PlateBardingArmor",
-      "showId": "骑兵钢甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
-      "score": 2
-    },
-    {
-      "tech": "Bloodlines",
-      "showId": "血统",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Husbandry",
-      "showId": "畜牧",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Conscription",
-      "showId": "征招",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Faith",
-      "showId": "信念",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
-      "score": 0
-    },
-    {
-      "tech": "Heresy",
-      "showId": "异教",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
-      "score": 0
-    }
-  ],
-  "unique": [
-    {
-      "tech": "死士",
-      "showId": "死士",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 3,
-      "civ": "Malians"
-    },
-    {
-      "tech": "野战军",
-      "showId": "野战军",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Romans"
-    },
-    {
-      "tech": "锁子甲",
-      "showId": "锁子甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Sicilians"
-    },
-    {
-      "tech": "明光铠",
-      "showId": "明光铠",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Wei"
-    },
-    {
-      "tech": "阿兹瑙里骑兵",
-      "showId": "阿兹瑙里骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
-      "score": 2,
-      "civ": "Georgians"
-    },
-    {
-      "tech": "曼尼普尔骑兵",
-      "showId": "曼尼普尔骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 1,
-      "civ": "Burmese"
-    },
-    {
-      "tech": "马镫",
-      "showId": "马镫",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Bulgarians"
-    },
-    {
-      "tech": "骑士精神",
-      "showId": "骑士精神",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Franks"
-    },
-    {
-      "tech": "贵族特权",
-      "showId": "贵族特权",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 3,
-      "civ": "Poles"
-    },
-    {
-      "tech": "屯田",
-      "showId": "屯田",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 1,
-      "civ": "Wei"
-    },
-    {
-      "tech": "缅甸便宜修道院科技",
-      "showId": "缅甸便宜修道院科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
-      "score": 0,
-      "civ": "Burmese"
-    },
-    {
-      "tech": "柏柏尔马厩折扣",
-      "showId": "柏柏尔马厩折扣",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Berbers.webp",
-      "score": 1,
-      "civ": "Berbers"
-    },
-    {
-      "tech": "保加利亚科技减价",
-      "showId": "保加利亚科技减价",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
-      "score": 1,
-      "civ": "Bulgarians"
-    },
-    {
-      "tech": "勃艮第早期马厩",
-      "showId": "勃艮第早期马厩",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burgundians.webp",
-      "score": 1,
-      "civ": "Burgundians"
-    },
-    {
-      "tech": "中国便宜科技",
-      "showId": "中国便宜科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
-      "score": 1,
-      "civ": "Chinese"
-    },
-    {
-      "tech": "法兰克骑兵血量",
-      "showId": "法兰克骑兵血量",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Franks.webp",
-      "score": 1,
-      "civ": "Franks"
-    },
-    {
-      "tech": "库曼骑兵移速",
-      "showId": "库曼骑兵移速",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Cumans.webp",
-      "score": 1,
-      "civ": "Cumans"
-    },
-    {
-      "tech": "立陶宛圣物骑兵",
-      "showId": "立陶宛圣物骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Lithuanians.webp",
-      "score": 2,
-      "civ": "Lithuanians"
-    },
-    {
-      "tech": "西西里减免伤害",
-      "showId": "西西里减免伤害",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Sicilians.webp",
-      "score": 1,
-      "civ": "Sicilians"
-    },
-    {
-      "tech": "马扎尔近战科技",
-      "showId": "马扎尔近战科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Magyars.webp",
-      "score": 1,
-      "civ": "Magyars"
-    },
-    {
-      "tech": "葡萄牙黄金费用",
-      "showId": "葡萄牙黄金费用",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
-      "score": 1,
-      "civ": "Portuguese"
-    },
-    {
-      "tech": "西班牙铁匠铺折扣",
-      "showId": "西班牙铁匠铺折扣",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
-      "score": 1,
-      "civ": "Spanish"
-    },
-    {
-      "tech": "鞑靼高地加成",
-      "showId": "鞑靼高地加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
-      "score": 1,
-      "civ": "Tatars"
-    },
-    {
-      "tech": "条顿士兵护甲",
-      "showId": "条顿士兵护甲",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.webp",
-      "score": 1,
-      "civ": "Teutons"
-    },
-    {
-      "tech": "越南免费征招",
-      "showId": "越南免费征招",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.webp",
-      "score": 1,
-      "civ": "Vietnamese"
-    },
-    {
-      "tech": "波兰便宜科技",
-      "showId": "波兰便宜科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Poles.webp",
-      "score": 1,
-      "civ": "Poles"
-    },
-    {
-      "tech": "格鲁吉亚骑兵",
-      "showId": "格鲁吉亚骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
-      "score": 1,
-      "civ": "Georgians"
-    },
-    {
-      "tech": "格鲁吉亚对抗力",
-      "showId": "格鲁吉亚对抗力",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
-      "score": 1,
-      "civ": "Georgians"
-    },
-    {
-      "tech": "魏骑兵加成",
-      "showId": "魏骑兵加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wei.webp",
-      "score": 1,
-      "civ": "Wei"
-    },
-    {
-      "tech": "吴攻击力",
-      "showId": "吴攻击力",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wu.webp",
-      "score": 1,
-      "civ": "Wu"
-    },
-    {
-      "tech": "Heiguang1",
-      "showId": "黑光铠骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/黑光铠骑兵.webp",
-      "score": 1,
-      "civ": "Wei",
-      "replace": "Cavalier"
-    },
-    {
-      "tech": "EliteHeiguang1",
-      "showId": "重装黑光铠骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
-      "score": 2,
-      "civ": "Wei",
-      "replace": "Paladin"
-    },
-    {
-      "tech": "Heiguang2",
-      "showId": "黑光铠骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/黑光铠骑兵.webp",
-      "score": 1,
-      "civ": "Shu",
-      "replace": "Cavalier"
-    },
-    {
-      "tech": "EliteHeiguang2",
-      "showId": "重装黑光铠骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
-      "score": 2,
-      "civ": "Shu",
-      "replace": "Paladin"
-    },
-    {
-      "tech": "Heiguang3",
-      "showId": "黑光铠骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/黑光铠骑兵.webp",
-      "score": 1,
-      "civ": "Wu",
-      "replace": "Cavalier"
-    },
-    {
-      "tech": "EliteHeiguang3",
-      "showId": "重装黑光铠骑兵",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
-      "score": 2,
-      "civ": "Wu",
-      "replace": "Paladin"
-    },
-    {
-      "tech": "Savar",
-      "showId": "萨瓦尔",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Savar_upgrade.webp",
-      "score": 3,
-      "civ": "Persians",
-      "replace": "Paladin"
-    }
-  ]
+    "tableId": "knightTable",
+    "common": [
+        {
+            "tech": "Knight",
+            "showId": "骑士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Knight_aoe2DE.webp",
+            "score": 1,
+            "main": 1
+        },
+        {
+            "tech": "Cavalier",
+            "showId": "重装骑士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到重装骑士.webp",
+            "score": 2
+        },
+        {
+            "tech": "Paladin",
+            "showId": "游侠",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到游侠.webp",
+            "score": 3
+        },
+        {
+            "tech": "Forging",
+            "showId": "锻造",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+            "score": 1
+        },
+        {
+            "tech": "IronCasting",
+            "showId": "铸铁",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "BlastFurnace",
+            "showId": "鼓风炉",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+            "score": 2
+        },
+        {
+            "tech": "ScaleBardingArmor",
+            "showId": "骑兵鳞甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleBardingArmorDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "ChainBarding",
+            "showId": "骑兵锁甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainBardingDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "PlateBardingArmor",
+            "showId": "骑兵钢甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateBardingArmorDE.webp",
+            "score": 2
+        },
+        {
+            "tech": "Bloodlines",
+            "showId": "血统",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BloodlinesDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Husbandry",
+            "showId": "畜牧",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HusbandryDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Conscription",
+            "showId": "征招",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Faith",
+            "showId": "信念",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "score": 0
+        },
+        {
+            "tech": "Heresy",
+            "showId": "异教",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "score": 0
+        }
+    ],
+    "unique": [
+        {
+            "tech": "死士",
+            "showId": "死士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 3,
+            "civ": "Malians"
+        },
+        {
+            "tech": "野战军",
+            "showId": "野战军",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Romans"
+        },
+        {
+            "tech": "锁子甲",
+            "showId": "锁子甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Sicilians"
+        },
+        {
+            "tech": "明光铠",
+            "showId": "明光铠",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Wei"
+        },
+        {
+            "tech": "阿兹瑙里骑兵",
+            "showId": "阿兹瑙里骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Unique-tech.webp",
+            "score": 2,
+            "civ": "Georgians"
+        },
+        {
+            "tech": "曼尼普尔骑兵",
+            "showId": "曼尼普尔骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 1,
+            "civ": "Burmese"
+        },
+        {
+            "tech": "马镫",
+            "showId": "马镫",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Bulgarians"
+        },
+        {
+            "tech": "骑士精神",
+            "showId": "骑士精神",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Franks"
+        },
+        {
+            "tech": "贵族特权",
+            "showId": "贵族特权",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 3,
+            "civ": "Poles"
+        },
+        {
+            "tech": "屯田",
+            "showId": "屯田",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 1,
+            "civ": "Wei"
+        },
+        {
+            "tech": "缅甸便宜修道院科技",
+            "showId": "缅甸便宜修道院科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
+            "score": 0,
+            "civ": "Burmese"
+        },
+        {
+            "tech": "柏柏尔马厩折扣",
+            "showId": "柏柏尔马厩折扣",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Berbers.webp",
+            "score": 1,
+            "civ": "Berbers"
+        },
+        {
+            "tech": "保加利亚科技减价",
+            "showId": "保加利亚科技减价",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
+            "score": 1,
+            "civ": "Bulgarians"
+        },
+        {
+            "tech": "勃艮第早期马厩",
+            "showId": "勃艮第早期马厩",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burgundians.webp",
+            "score": 1,
+            "civ": "Burgundians"
+        },
+        {
+            "tech": "中国便宜科技",
+            "showId": "中国便宜科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
+            "score": 1,
+            "civ": "Chinese"
+        },
+        {
+            "tech": "法兰克骑兵血量",
+            "showId": "法兰克骑兵血量",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Franks.webp",
+            "score": 1,
+            "civ": "Franks"
+        },
+        {
+            "tech": "库曼骑兵移速",
+            "showId": "库曼骑兵移速",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Cumans.webp",
+            "score": 1,
+            "civ": "Cumans"
+        },
+        {
+            "tech": "立陶宛圣物骑兵",
+            "showId": "立陶宛圣物骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Lithuanians.webp",
+            "score": 2,
+            "civ": "Lithuanians"
+        },
+        {
+            "tech": "西西里减免伤害",
+            "showId": "西西里减免伤害",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Sicilians.webp",
+            "score": 1,
+            "civ": "Sicilians"
+        },
+        {
+            "tech": "马扎尔近战科技",
+            "showId": "马扎尔近战科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Magyars.webp",
+            "score": 1,
+            "civ": "Magyars"
+        },
+        {
+            "tech": "葡萄牙黄金费用",
+            "showId": "葡萄牙黄金费用",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
+            "score": 1,
+            "civ": "Portuguese"
+        },
+        {
+            "tech": "西班牙铁匠铺折扣",
+            "showId": "西班牙铁匠铺折扣",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
+            "score": 1,
+            "civ": "Spanish"
+        },
+        {
+            "tech": "鞑靼高地加成",
+            "showId": "鞑靼高地加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tatars.webp",
+            "score": 1,
+            "civ": "Tatars"
+        },
+        {
+            "tech": "条顿士兵护甲",
+            "showId": "条顿士兵护甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.webp",
+            "score": 1,
+            "civ": "Teutons"
+        },
+        {
+            "tech": "越南免费征招",
+            "showId": "越南免费征招",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.webp",
+            "score": 1,
+            "civ": "Vietnamese"
+        },
+        {
+            "tech": "波兰便宜科技",
+            "showId": "波兰便宜科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Poles.webp",
+            "score": 1,
+            "civ": "Poles"
+        },
+        {
+            "tech": "格鲁吉亚骑兵",
+            "showId": "格鲁吉亚骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
+            "score": 1,
+            "civ": "Georgians"
+        },
+        {
+            "tech": "格鲁吉亚对抗力",
+            "showId": "格鲁吉亚对抗力",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Georgians.webp",
+            "score": 1,
+            "civ": "Georgians"
+        },
+        {
+            "tech": "魏骑兵加成",
+            "showId": "魏骑兵加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wei.webp",
+            "score": 1,
+            "civ": "Wei"
+        },
+        {
+            "tech": "吴攻击力",
+            "showId": "吴攻击力",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Wu.webp",
+            "score": 1,
+            "civ": "Wu"
+        },
+        {
+            "tech": "Heiguang1",
+            "showId": "黑光铠骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/黑光铠骑兵.webp",
+            "score": 0,
+            "civ": "Wei",
+            "replace": "Cavalier"
+        },
+        {
+            "tech": "EliteHeiguang1",
+            "showId": "重装黑光铠骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
+            "score": 2,
+            "civ": "Wei",
+            "replace": "Paladin"
+        },
+        {
+            "tech": "Heiguang2",
+            "showId": "黑光铠骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/黑光铠骑兵.webp",
+            "score": 0,
+            "civ": "Shu",
+            "replace": "Cavalier"
+        },
+        {
+            "tech": "EliteHeiguang2",
+            "showId": "重装黑光铠骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
+            "score": 2,
+            "civ": "Shu",
+            "replace": "Paladin"
+        },
+        {
+            "tech": "Heiguang3",
+            "showId": "黑光铠骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/黑光铠骑兵.webp",
+            "score": 0,
+            "civ": "Wu",
+            "replace": "Cavalier"
+        },
+        {
+            "tech": "EliteHeiguang3",
+            "showId": "重装黑光铠骑兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
+            "score": 2,
+            "civ": "Wu",
+            "replace": "Paladin"
+        },
+        {
+            "tech": "Savar",
+            "showId": "萨瓦尔",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Savar_upgrade.webp",
+            "score": 3,
+            "civ": "Persians",
+            "replace": "Paladin"
+        }
+    ]
 }
