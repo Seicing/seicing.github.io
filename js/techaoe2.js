@@ -1765,20 +1765,7 @@ function Heresy() {
     document.getElementById("Wei2").style.opacity = "0.15";
     document.getElementById("Jurchens2").style.opacity = "0.15";
 }
-function Supllies() {
-    document.getElementById("Burgundians2").style.opacity = "0.15";
-    document.getElementById("Chinese2").style.opacity = "0.15";
-    document.getElementById("Cumans2").style.opacity = "0.15";
-    document.getElementById("Goths2").style.opacity = "0.15";
-    document.getElementById("Huns2").style.opacity = "0.15";
-    document.getElementById("Incas2").style.opacity = "0.15";
-    document.getElementById("Khmer2").style.opacity = "0.15";
-    document.getElementById("Lithuanians2").style.opacity = "0.15";
-    document.getElementById("Mayans2").style.opacity = "0.15";
-    document.getElementById("Mongols2").style.opacity = "0.15";
-    document.getElementById("Romans2").style.opacity = "0.15";
-    document.getElementById("Tatars2").style.opacity = "0.15";
-}
+
 function Bloodlines() {
     document.getElementById("Aztecs2").style.opacity = "0.15";
     document.getElementById("Bohemians2").style.opacity = "0.15";
