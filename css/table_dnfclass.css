@@ -139,6 +139,10 @@ th {
 
 .filterbtn.active img {
     width: 25px;
+    filter:
+        drop-shadow(0 0 3px rgba(255, 100, 60, 1)) drop-shadow(0 0 5px rgba(255, 140, 0, 0.2));
+    transform: scale(1.05);
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 .civactbtn img {
@@ -147,6 +151,10 @@ th {
 
 .civactbtn.active img {
     width: 25px;
+    filter:
+        drop-shadow(0 0 3px rgba(255, 100, 60, 1)) drop-shadow(0 0 5px rgba(255, 140, 0, 0.2));
+    transform: scale(1.05);
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 
