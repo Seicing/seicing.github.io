@@ -113,15 +113,17 @@ function showCiv(prefix) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const civ = getQueryVariable("civ");
-    if (civ) {
-        const initialButton = document.getElementById(`${civ}Button0`);
+    if (!civ) return;
 
-        if (initialButton) {
-            setTimeout(function () {
-                initialButton.click();
-            }, 10);
+    const tryActivate = () => {
+        const btn = document.getElementById(`${civ}Button0`);
+        if (btn) {
+            showCiv(civ); // 直接调用函数，设置 active class
         } else {
-            console.warn(`页面加载警告：未能在页面上找到ID为 "${civ}Button0" 的按钮。`);
+            // 50ms 后再尝试，直到按钮渲染完
+            setTimeout(tryActivate, 50);
         }
-    }
+    };
+
+    tryActivate();
 });
