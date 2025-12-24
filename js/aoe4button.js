@@ -13,31 +13,28 @@ function getQueryVariable(variable) {
  * @param {string} prefix - 要显示的文明的前缀 (例如 'chi', 'rus').
  */
 function showCiv(prefix) {
-    // 遍历页面上所有带有ID的元素
     document.querySelectorAll('[id]').forEach(el => {
-        // 使用正则表达式匹配我们关心的元素ID格式 (例如 chiButton0, rusText1)
         const match = el.id.match(/^([a-z]{3})(Button|Text)\d+$/);
 
-        if (match) {
-            const currentCiv = match[1];   // 提取当前元素的文明前缀 (chi)
-            const elementType = match[2]; // 提取元素类型 (Button 或 Text)
+        if (!match) return;
 
-            // 检查当前元素的文明是否是我们要显示的文明
+        const currentCiv = match[1];
+        const elementType = match[2];
+
+        if (elementType === 'Button') {
+            // 按钮互斥处理
             if (currentCiv === prefix) {
-                // 是目标文明 -> 显示它
-                if (elementType === 'Text') {
-                    el.style.display = 'block'; // 显示文本
-                } else { // 'Button'
-                    el.style.opacity = 1;       // 按钮完全不透明
-                }
+                // 激活按钮 → 添加 active
+                el.classList.add('active');
+                el.classList.add('filterbtn');  // 保证基础类存在
             } else {
-                // 不是目标文明 -> 隐藏它
-                if (elementType === 'Text') {
-                    el.style.display = 'none';  // 隐藏文本
-                } else { // 'Button'
-                    el.style.opacity = 0.3;     // 按钮变暗
-                }
+                // 非激活按钮 → 移除 active
+                el.classList.remove('active');
+                el.classList.add('filterbtn');  // 保证基础类存在
             }
+        } else {
+            // 文本显示逻辑保持不变
+            el.style.display = currentCiv === prefix ? 'block' : 'none';
         }
     });
 
