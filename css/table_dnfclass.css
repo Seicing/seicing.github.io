@@ -112,14 +112,12 @@ th {
     transition: opacity 0.2s;
     opacity: 0.3;
     cursor: pointer;
-    width: 25px;
 }
 
 .filterbtn.active {
     opacity: 1;
     transition: opacity 0.2s;
     cursor: pointer;
-    width: 25px;
 }
 
 .civactbtn {
@@ -127,15 +125,30 @@ th {
     transition: opacity 0.2s;
     opacity: 0.3;
     cursor: pointer;
-    width: 25px;
 }
 
 .civactbtn.active {
     opacity: 1;
     transition: opacity 0.2s;
     cursor: pointer;
+}
+
+.filterbtn img {
     width: 25px;
 }
+
+.filterbtn.active img {
+    width: 25px;
+}
+
+.civactbtn img {
+    width: 25px;
+}
+
+.civactbtn.active img {
+    width: 25px;
+}
+
 
 .civ-selector img {
     cursor: pointer;
