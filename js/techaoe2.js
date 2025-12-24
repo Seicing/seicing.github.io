@@ -1490,7 +1490,10 @@ function AOE2_activateCurrentCivIcon() {
 
     let targetImg = null;
 
+    // 先给所有按钮加上 civ-active936
     techno.querySelectorAll("img[title]").forEach(img => {
+        img.classList.add("civ-active936");
+
         const title = img.getAttribute("title").trim();
         if (title === civName) {
             targetImg = img;
@@ -1502,13 +1505,16 @@ function AOE2_activateCurrentCivIcon() {
         return;
     }
 
-    // 清理旧激活
+    // 清理旧激活（如果之前有 civ-active937）
     techno.querySelectorAll(".civ-active937").forEach(el => {
         el.classList.remove("civ-active937");
     });
 
+    // 激活目标
+    targetImg.classList.remove("civ-active936"); // 非激活类去掉
     targetImg.classList.add("civ-active937");
 }
+
 
 
 const AOE2_TECH_LINK_EXCLUDE = new Set([
