@@ -26,11 +26,11 @@ function showCiv(prefix) {
             if (currentCiv === prefix) {
                 // 激活按钮 → 添加 active
                 el.classList.add('active');
-                el.classList.add('filterbtn');  // 保证基础类存在
+                el.classList.add('civactbtn');  // 保证基础类存在
             } else {
                 // 非激活按钮 → 移除 active
                 el.classList.remove('active');
-                el.classList.add('filterbtn');  // 保证基础类存在
+                el.classList.add('civactbtn');  // 保证基础类存在
             }
         } else {
             // 文本显示逻辑保持不变
