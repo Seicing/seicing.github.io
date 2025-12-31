@@ -31,7 +31,7 @@ function overstep(a, b) {
     document.getElementById("cubutton").style.display = "block";
     document.getElementById("wenttobutton").style.display = "block";
     document.getElementById("sanbutton").style.display = "block";
-    document.getElementById("sanzibanyabutton").style.display = "block";
+    document.getElementById("zibanyabutton").style.display = "block";
     document.getElementById(a).style.display = "none";
     document.getElementById("hajimediv").style.display = "none";
     document.getElementById("hattendiv").style.display = "none";
@@ -57,7 +57,7 @@ function overstep2(a, b) {
     document.getElementById("cubutton2").style.display = "block";
     document.getElementById("wenttobutton2").style.display = "block";
     document.getElementById("sanbutton2").style.display = "block";
-    document.getElementById("sanzibanyabutton2").style.display = "block";
+    document.getElementById("zibanyabutton2").style.display = "block";
     document.getElementById(a).style.display = "none";
     document.getElementById("hajimediv2").style.display = "none";
     document.getElementById("hattendiv2").style.display = "none";
