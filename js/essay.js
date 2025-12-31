@@ -31,6 +31,7 @@ function overstep(a, b) {
     document.getElementById("cubutton").style.display = "block";
     document.getElementById("wenttobutton").style.display = "block";
     document.getElementById("sanbutton").style.display = "block";
+    document.getElementById("sanzibanyabutton").style.display = "block";
     document.getElementById(a).style.display = "none";
     document.getElementById("hajimediv").style.display = "none";
     document.getElementById("hattendiv").style.display = "none";
@@ -39,6 +40,7 @@ function overstep(a, b) {
     document.getElementById("cudiv").style.display = "none";
     document.getElementById("wenttodiv").style.display = "none";
     document.getElementById("sandiv").style.display = "none";
+    document.getElementById("zibanyadiv").style.display = "none";
     document.getElementById(b).style.display = "block";
 }
 
@@ -55,6 +57,7 @@ function overstep2(a, b) {
     document.getElementById("cubutton2").style.display = "block";
     document.getElementById("wenttobutton2").style.display = "block";
     document.getElementById("sanbutton2").style.display = "block";
+    document.getElementById("sanzibanyabutton2").style.display = "block";
     document.getElementById(a).style.display = "none";
     document.getElementById("hajimediv2").style.display = "none";
     document.getElementById("hattendiv2").style.display = "none";
@@ -63,6 +66,7 @@ function overstep2(a, b) {
     document.getElementById("cudiv2").style.display = "none";
     document.getElementById("wenttodiv2").style.display = "none";
     document.getElementById("sandiv2").style.display = "none";
+    document.getElementById("zibanyadiv2").style.display = "none";
     document.getElementById(b).style.display = "block";
 }
 
