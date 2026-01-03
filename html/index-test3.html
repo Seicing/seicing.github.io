@@ -25,6 +25,8 @@
         margin-left: 10px;
     }
 
+
+
     body {
         font-family: sans-serif;
     }
@@ -63,9 +65,7 @@
 
 
     #dialogueBox {
-        position: absolute;
         left: 170px;
-        /* 在 stage 右侧 */
         top: 20px;
         width: 220px;
         min-height: 60px;
@@ -75,6 +75,8 @@
         font-size: 14px;
         line-height: 1.4;
         display: none;
+        margin-left: 5px;
+        margin-top: 150px;
     }
 
     #dialogueText {
@@ -135,8 +137,11 @@
     <button onclick="startDialogue('嗯嗯嗯……测试一下对话系统，如何，正常吗？')">
         测试用对话1
     </button>
-    <button onclick="startDialogue('要说更长的对话吗？那就……拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~')">
+    <button onclick="startDialogue('要说更长的对话吗？那就……拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~')">
         测试用对话2
+    </button>
+    <button onclick="startDialogue('今天过得如何？')">
+        测试用对话3
     </button>
 </div>
 
@@ -524,7 +529,7 @@
                     toggleTalk(document.getElementById("talkBtn"));
                 }
             }
-        }, 100); // 0.15 秒
+        }, 50); // 0.15 秒
     }
 
 
