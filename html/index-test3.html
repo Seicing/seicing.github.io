@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
+<link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .stage {
+        position: relative;
+        width: 150px;
+        height: 225px;
+        border: 1px solid #aaa;
+        margin-bottom: 10px;
+        background-color: #f0f0f0;
+        /* 增加一点背景色以便看清透明图层 */
+    }
+
+    .layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    img {
+        width: 150px;
+        display: block;
+    }
+
+    button {
+        margin: 2px;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+
+    button.active {
+        background: #c0392b;
+        color: #fff;
+        border: 1px solid #a93226;
+    }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry">
+<h3>角色 ID</h3>
+<input id="charId" value="YoEmpireFlower">
+<button onclick="loadChar()">加载</button>
+
+<div class="stage">
+    <div class="layer" style="z-index:2"><img id="base"></div>
+    <div class="layer" style="z-index:4"><img id="eye"></div>
+    <div class="layer" style="z-index:6"><img id="brow"></div>
+    <div class="layer" style="z-index:7"><img id="mouth"></div>
+
+    <div class="layer" style="z-index:40"><img id="attach"></div>
+    <div class="layer" style="z-index:41"><img id="special"></div>
+    <div class="layer" style="z-index:39"><img id="sweat"></div>
+    <div class="layer" style="z-index:38"><img id="red_face"></div>
+</div>
+
+<!-- 状态控制区 -->
+<div style="margin-bottom: 10px;">
+    <button id="talkBtn" onclick="toggleTalk(this)">说话</button>
+    <!-- 新增闭眼按钮 -->
+    <button id="closeEyeBtn" onclick="toggleCloseEyes(this)">闭眼</button>
+</div>
+
+<h4>说话模式</h4>
+<!-- 默认改为动画序列 -->
+<button class="talkModeBtn active" onclick="setTalkMode(2,this)">动画序列</button>
+<button class="talkModeBtn" onclick="setTalkMode(1,this)">随机嘴型</button>
+
+<h4>配件</h4>
+<!-- 传入 this 以便控制按钮样式 -->
+<button class="accBtn" onclick="toggleAcc('attach', this)">attach</button>
+<button class="accBtn" onclick="toggleAcc('special', this)">special</button>
+<button class="accBtn" onclick="toggleAcc('sweat', this)">sweat</button>
+<button class="accBtn" onclick="toggleAcc('red_face', this)">red_face</button>
+
+<hr>
+<div id="faces"></div>
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    /* ========= 表情表 ========= */
+    const faces = {
+        smile: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_smile"],
+        serene: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_serene"],
+        sad: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_sad"],
+        depress: ["eye_depress1", "eye_default2", "eye_default3", "brow_default", "mouth_depress"],
+        sinister: ["eye_depress1", "eye_default2", "eye_default3", "brow_default", "mouth_sinister"],
+        surprise: ["eye_surprise1", "eye_default2", "eye_default3", "brow_default", "mouth_surprise"],
+        side: ["eye_side1", "eye_side2", "eye_default3", "brow_default", "mouth_serene"],
+        shy: ["eye_side1", "eye_side2", "eye_default3", "brow_default", "mouth_smile"],
+        happy: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_happy"],
+        bitter: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_happy"],
+        wry: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_smile"],
+        cry: ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_cry"],
+        bawl: ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_angry"],
+        crysurprise: ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_surprise"],
+        cryhappy: ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_happy"],
+        fear: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_panic"],
+        endure: ["eye_depress1", "eye_default2", "eye_default3", "brow_sad", "mouth_endure"],
+        uncomfortable: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_cry"],
+        angry: ["eye_surprise1", "eye_default2", "eye_default3", "brow_angry", "mouth_angry"],
+        excited: ["eye_surprise1", "eye_default2", "eye_default3", "brow_angry", "mouth_excited"],
+        extra1: ["eye_extra1", "eye_extra1", "eye_extra1", "eye_extra1", "mouth_extra1"],
+        extra2: ["eye_extra2", "eye_extra2", "eye_extra2", "eye_extra2", "mouth_extra2"],
+        extra3: ["eye_extra3", "eye_extra3", "eye_extra3", "eye_extra3", "mouth_extra3"],
+        extra4: ["eye_extra4", "eye_extra4", "eye_extra4", "eye_extra4", "mouth_extra4"],
+        extra5: ["eye_extra5", "eye_extra5", "eye_extra5", "eye_extra5", "mouth_extra5"]
+    };
+
+    /* ========= 状态 ========= */
+    let charPath = "";
+    let currentFace = faces.smile;
+    let blinkTimer = null;
+    let talkTimer = null;
+    let talking = false;
+    let talkMode = 2; // 改为默认为 2 (动画序列)
+    let isClosedEyes = false; // 新增：闭眼状态
+
+    /* ========= 眨眼参数 ========= */
+    let blinkMin = 1000;
+    let blinkMax = 2000;
+    const blinkFrameTime = 80;
+    const blinkHoldFactor = 2;
+
+    /* ========= DOM ========= */
+    const eye = document.getElementById("eye");
+    const brow = document.getElementById("brow");
+    const mouth = document.getElementById("mouth");
+    const base = document.getElementById("base");
+
+    const acc = {
+        attach: document.getElementById("attach"),
+        special: document.getElementById("special"),
+        sweat: document.getElementById("sweat"),
+        red_face: document.getElementById("red_face")
+    };
+
+    /* ========= 说话帧 ========= */
+    const talkRandomFrames = [
+        "mouth_endure",
+        "mouth_serene",
+        "mouth_surprise",
+        "mouth_angry"
+    ];
+
+    const talkSeqFrames = [
+        "mouth_ani1",
+        "mouth_ani2",
+        "mouth_ani3",
+        "mouth_ani2"
+    ];
+
+    /* ========= 工具 ========= */
+    function src(name) {
+        return charPath + name + ".png";
+    }
+
+    /* ========= 加载 ========= */
+    function loadChar() {
+        const id = document.getElementById("charId").value;
+        // 请确保路径与本地实际情况一致
+        charPath = "file:///C:/bigproject/seicingdepot/fatcatpool/essay/chara/" + id + "/";
+        base.src = src("base");
+
+        // 重置所有配件状态
+        Object.values(acc).forEach(x => {
+            x.style.display = "none";
+            x.src = ""; // 清空src防止缓存旧图
+        });
+        document.querySelectorAll(".accBtn").forEach(b => b.classList.remove("active"));
+
+        // 重置闭眼状态
+        isClosedEyes = false;
+        document.getElementById("closeEyeBtn").classList.remove("active");
+
+        setFace("smile");
+        startBlink();
+    }
+
+    /* ========= 表情 ========= */
+    function setFace(name) {
+        currentFace = faces[name];
+
+        // 如果处于闭眼模式，强制显示第3帧(index 2)，否则显示第1帧(index 0)
+        if (isClosedEyes) {
+            eye.src = src(currentFace[2]);
+        } else {
+            eye.src = src(currentFace[0]);
+        }
+
+        brow.src = src(currentFace[3]);
+        if (!talking) mouth.src = src(currentFace[4]);
+
+        document.querySelectorAll(".faceBtn").forEach(b => b.classList.remove("active"));
+        document.getElementById("face_" + name).classList.add("active");
+    }
+
+    /* ========= 闭眼逻辑 (新增) ========= */
+    function toggleCloseEyes(btn) {
+        isClosedEyes = !isClosedEyes;
+        btn.classList.toggle("active", isClosedEyes);
+
+        if (isClosedEyes) {
+            // 如果开启闭眼：清除眨眼定时器，并立即设置为第3帧
+            if (blinkTimer) clearTimeout(blinkTimer);
+            eye.src = src(currentFace[2]);
+        } else {
+            // 如果关闭闭眼：恢复睁眼并重新开始眨眼逻辑
+            eye.src = src(currentFace[0]);
+            startBlink();
+        }
+    }
+
+    /* ========= 眨眼 ========= */
+    function startBlink() {
+        if (blinkTimer) clearTimeout(blinkTimer);
+        if (isClosedEyes) return; // 如果处于闭眼模式，不执行眨眼逻辑
+
+        function blinkOnce() {
+            if (isClosedEyes) return; // 二次检查防止异步冲突
+
+            const seq = [
+                currentFace[0],
+                currentFace[1],
+                currentFace[2],
+                currentFace[1],
+                currentFace[0]
+            ];
+            let i = 0;
+
+            function step() {
+                // 只有在非闭眼模式下才更新图片
+                if (!isClosedEyes) eye.src = src(seq[i]);
+
+                let delay = blinkFrameTime;
+                if (i === 2) delay *= blinkHoldFactor;
+                i++;
+
+                if (i < seq.length) {
+                    setTimeout(step, delay);
+                } else {
+                    scheduleNext();
+                }
+            }
+            step();
+        }
+
+        function scheduleNext() {
+            if (isClosedEyes) return;
+            blinkTimer = setTimeout(
+                blinkOnce,
+                blinkMin + Math.random() * (blinkMax - blinkMin)
+            );
+        }
+        scheduleNext();
+    }
+
+    /* ========= 说话 ========= */
+    function toggleTalk(btn) {
+        talking = !talking;
+        btn.classList.toggle("active", talking);
+
+        if (talking) {
+            let i = 0;
+            talkTimer = setInterval(() => {
+                if (talkMode === 1) {
+                    mouth.src = src(
+                        talkRandomFrames[
+                        Math.floor(Math.random() * talkRandomFrames.length)
+                        ]
+                    );
+                } else {
+                    mouth.src = src(talkSeqFrames[i % talkSeqFrames.length]);
+                    i++;
+                }
+            }, 120);
+        } else {
+            clearInterval(talkTimer);
+            mouth.src = src(currentFace[4]);
+        }
+    }
+
+    function setTalkMode(mode, btn) {
+        talkMode = mode;
+        document.querySelectorAll(".talkModeBtn")
+            .forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+    }
+
+    /* ========= 配件 (修改) ========= */
+    function toggleAcc(name, btn) {
+        const el = acc[name];
+        // 只有当显示的时候才去加载图片，避免初始加载过多404
+        if (!el.src || el.src.endsWith(".html") || el.src == "") {
+            el.src = src(name);
+        }
+
+        const isHidden = (el.style.display === "none" || el.style.display === "");
+
+        if (isHidden) {
+            el.style.display = "block";
+            btn.classList.add("active");
+        } else {
+            el.style.display = "none";
+            btn.classList.remove("active");
+        }
+    }
+
+    /* ========= 初始化表情按钮 ========= */
+    const box = document.getElementById("faces");
+    for (let k in faces) {
+        const b = document.createElement("button");
+        b.textContent = k;
+        b.id = "face_" + k;
+        b.className = "faceBtn";
+        b.onclick = () => setFace(k);
+        box.appendChild(b);
+    }
+
+    loadChar();
+</script>
+
+</html>
