@@ -490,11 +490,13 @@
         box.appendChild(b);
     }
 
+
+
     let dialogueTimer = null;
     let isTyping = false;
 
     function startDialogue(text) {
-        if (isTyping) return; // 防止重复触发
+        if (isTyping) return;
         isTyping = true;
 
         const box = document.getElementById("dialogueBox");
@@ -504,32 +506,49 @@
         textEl.textContent = "";
 
         let index = 0;
+        const baseDelay = 75;        // 基础速度
+        const punctuationDelay = 2; // 标点停顿倍数
 
-        // 强制进入说话状态
+        // 开始说话
         if (!talking) {
             toggleTalk(document.getElementById("talkBtn"));
         }
 
-        dialogueTimer = setInterval(() => {
+        function typeNext() {
             textEl.textContent += text[index];
+            const char = text[index];
             index++;
 
-            // 每个字出现时，确保 talk 在运行
+            // 确保说话状态存在
             if (!talking) {
                 toggleTalk(document.getElementById("talkBtn"));
             }
 
+            // 判断是否结束
             if (index >= text.length) {
-                clearInterval(dialogueTimer);
-                dialogueTimer = null;
                 isTyping = false;
 
-                // 文字结束 → 停止说话
-                if (talking) {
-                    toggleTalk(document.getElementById("talkBtn"));
-                }
+                // 最后一个字后，稍微等一下再停嘴
+                setTimeout(() => {
+                    if (talking) {
+                        toggleTalk(document.getElementById("talkBtn"));
+                    }
+                }, baseDelay);
+
+                return;
             }
-        }, 50); // 0.15 秒
+
+            // 判断是否是标点
+            const isPunctuation = /[，。！？；：,.!?;]/.test(char);
+
+            const delay = isPunctuation
+                ? baseDelay * punctuationDelay
+                : baseDelay;
+
+            dialogueTimer = setTimeout(typeNext, delay);
+        }
+
+        typeNext();
     }
 
 
