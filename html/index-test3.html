@@ -186,10 +186,10 @@
 
     /* ========= 说话帧 ========= */
     const talkRandomFrames = [
-        "mouth_endure",
         "mouth_serene",
+        "mouth_endure",
         "mouth_surprise",
-        "mouth_angry"
+        "mouth_endure",
     ];
 
     const talkSeqFrames = [
@@ -313,11 +313,16 @@
             let i = 0;
             talkTimer = setInterval(() => {
                 if (talkMode === 1) {
-                    mouth.src = src(
+                    mouth.src = src(talkSeqFrames[i % talkSeqFrames.length]);
+                    i++;
+
+                    /*   mouth.src = src(
                         talkRandomFrames[
                         Math.floor(Math.random() * talkRandomFrames.length)
                         ]
-                    );
+                    );*/
+
+
                 } else {
                     mouth.src = src(talkSeqFrames[i % talkSeqFrames.length]);
                     i++;
