@@ -48,6 +48,26 @@
         color: #fff;
         border: 1px solid #a93226;
     }
+
+
+    #dialogueBox {
+        position: absolute;
+        left: 170px;
+        /* 在 stage 右侧 */
+        top: 20px;
+        width: 220px;
+        min-height: 60px;
+        padding: 8px 10px;
+        border: 1px solid #555;
+        background: #fff;
+        font-size: 14px;
+        line-height: 1.4;
+        display: none;
+    }
+
+    #dialogueText {
+        word-break: break-all;
+    }
 </style>
 </head>
 
@@ -86,6 +106,9 @@
     <div class="layer" style="z-index:39"><img id="sweat"></div>
     <div class="layer" style="z-index:38"><img id="red_face"></div>
 </div>
+<div id="dialogueBox">
+    <div id="dialogueText"></div>
+</div>
 
 <!-- 状态控制区 -->
 <div style="margin-bottom: 10px;">
@@ -93,11 +116,18 @@
     <!-- 新增闭眼按钮 -->
     <button id="closeEyeBtn" onclick="toggleCloseEyes(this)">闭眼(CE)</button>
 </div>
+<div style="margin-bottom:10px;">
+    <button onclick="startDialogue('嗯嗯嗯……测试一下对话系统，如何，正常吗？')">
+        测试用对话1
+    </button>
+</div>
+
 
 <h4>说话模式</h4>
 <!-- 默认改为动画序列 -->
 <button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
 <button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
+
 
 <h4>配件</h4>
 <!-- 传入 this 以便控制按钮样式 -->
@@ -167,8 +197,8 @@
     let isClosedEyes = false; // 新增：闭眼状态
 
     /* ========= 眨眼参数 ========= */
-    let blinkMin = 1000;
-    let blinkMax = 2000;
+    let blinkMin = 100;
+    let blinkMax = 3000;
     const blinkFrameTime = 80;
     const blinkHoldFactor = 2;
 
@@ -436,6 +466,49 @@
         b.onclick = () => setFace(k);
         box.appendChild(b);
     }
+
+    let dialogueTimer = null;
+    let isTyping = false;
+
+    function startDialogue(text) {
+        if (isTyping) return; // 防止重复触发
+        isTyping = true;
+
+        const box = document.getElementById("dialogueBox");
+        const textEl = document.getElementById("dialogueText");
+
+        box.style.display = "block";
+        textEl.textContent = "";
+
+        let index = 0;
+
+        // 强制进入说话状态
+        if (!talking) {
+            toggleTalk(document.getElementById("talkBtn"));
+        }
+
+        dialogueTimer = setInterval(() => {
+            textEl.textContent += text[index];
+            index++;
+
+            // 每个字出现时，确保 talk 在运行
+            if (!talking) {
+                toggleTalk(document.getElementById("talkBtn"));
+            }
+
+            if (index >= text.length) {
+                clearInterval(dialogueTimer);
+                dialogueTimer = null;
+                isTyping = false;
+
+                // 文字结束 → 停止说话
+                if (talking) {
+                    toggleTalk(document.getElementById("talkBtn"));
+                }
+            }
+        }, 150); // 0.15 秒
+    }
+
 
     loadChar();
 </script>
