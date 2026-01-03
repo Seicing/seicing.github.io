@@ -495,6 +495,10 @@
     let dialogueTimer = null;
     let isTyping = false;
 
+    const BASE_DELAY = 75;
+    const PUNCTUATION_MULTIPLIER = 2;
+    const END_TALK_DELAY = 300;
+
     function startDialogue(text) {
         if (isTyping) return;
         isTyping = true;
@@ -506,50 +510,48 @@
         textEl.textContent = "";
 
         let index = 0;
-        const baseDelay = 75;        // 基础速度
-        const punctuationDelay = 2; // 标点停顿倍数
 
-        // 开始说话
+        // 确保进入说话状态
         if (!talking) {
             toggleTalk(document.getElementById("talkBtn"));
         }
 
         function typeNext() {
-            textEl.textContent += text[index];
             const char = text[index];
+            textEl.textContent += char;
             index++;
 
-            // 确保说话状态存在
+            // 保证说话状态不中断
             if (!talking) {
                 toggleTalk(document.getElementById("talkBtn"));
             }
 
-            // 判断是否结束
+            // ===== 文字已经全部输出 =====
             if (index >= text.length) {
                 isTyping = false;
 
-                // 最后一个字后，稍微等一下再停嘴
+                // 👇 关键：单独安排“句尾余韵”
                 setTimeout(() => {
                     if (talking) {
                         toggleTalk(document.getElementById("talkBtn"));
                     }
-                }, baseDelay);
+                }, END_TALK_DELAY);
 
                 return;
             }
 
-            // 判断是否是标点
+            // 标点停顿
             const isPunctuation = /[，。！？；：,.!?;]/.test(char);
-
             const delay = isPunctuation
-                ? baseDelay * punctuationDelay
-                : baseDelay;
+                ? BASE_DELAY * PUNCTUATION_MULTIPLIER
+                : BASE_DELAY;
 
             dialogueTimer = setTimeout(typeNext, delay);
         }
 
         typeNext();
     }
+
 
 
     loadChar();
