@@ -73,6 +73,7 @@
 
 <input id="charId" value="YoEmpireFlower">
 <button onclick="loadChar()">加载</button>
+<span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
 
 <div class="stage">
     <div class="layer" style="z-index:2"><img id="base"></div>
@@ -204,11 +205,73 @@
         return charPath + name + ".png";
     }
 
-    /* ========= 加载 ========= */
+    /* ========= 【新增】预加载函数 ========= */
+    function preloadImages(callback) {
+        const allImages = new Set(); // Set 可以自动去重
+
+        // 1. 收集所有需要用到的图片名
+        allImages.add("base"); // 基础底图
+
+        // 收集表情包里的图片
+        Object.values(faces).forEach(arr => {
+            arr.forEach(imgName => allImages.add(imgName));
+        });
+
+        // 收集说话动作的图片 (确保这两个数组在你的代码里已经定义了)
+        if (typeof talkRandomFrames !== 'undefined') talkRandomFrames.forEach(n => allImages.add(n));
+        if (typeof talkSeqFrames !== 'undefined') talkSeqFrames.forEach(n => allImages.add(n));
+
+        // 收集配件图片
+        Object.keys(acc).forEach(k => allImages.add(k));
+
+        // 2. 开始静默下载
+        const total = allImages.size;
+        let loadedCount = 0;
+        const statusEl = document.getElementById("loadStatus");
+        const btn = document.getElementById("loadBtn");
+
+        // 禁用按钮防止重复点击
+        if (btn) btn.disabled = true;
+
+        if (total === 0) {
+            if (callback) callback();
+            return;
+        }
+
+        allImages.forEach(imgName => {
+            const img = new Image();
+            // 无论成功还是失败，都算处理完成，防止因为一张图404导致卡死
+            img.onload = img.onerror = () => {
+                loadedCount++;
+                // 更新文字提示
+                if (statusEl) statusEl.textContent = `资源预加载: ${loadedCount}/${total}`;
+
+                // 全部下载完后的处理
+                if (loadedCount >= total) {
+                    if (statusEl) {
+                        statusEl.textContent = "加载完成！";
+                        setTimeout(() => statusEl.textContent = "", 2000); // 2秒后消失
+                    }
+                    if (btn) {
+                        btn.disabled = false;
+                        btn.textContent = "加载"; // 恢复按钮文字
+                    }
+                    if (callback) callback();
+                }
+            };
+            // 触发下载
+            img.src = src(imgName);
+        });
+    }
+
+
+
+    /* ========= 加载 (修改版) ========= */
     function loadChar() {
         const id = document.getElementById("charId").value;
-        // 请确保路径与本地实际情况一致
+        // 保持你原有的路径设置
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
+
         base.src = src("base");
 
         // 重置所有配件状态
@@ -220,10 +283,16 @@
 
         // 重置闭眼状态
         isClosedEyes = false;
-        document.getElementById("closeEyeBtn").classList.remove("active");
+        const closeEyeBtn = document.getElementById("closeEyeBtn");
+        if (closeEyeBtn) closeEyeBtn.classList.remove("active");
 
         setFace("smile");
-        startBlink();
+
+        // 【修改点】这里不再直接 startBlink()，而是放入回调中
+        // 只有当所有图片下载完成后，才会开始眨眼
+        preloadImages(() => {
+            startBlink();
+        });
     }
 
     /* ========= 表情 ========= */
@@ -313,16 +382,13 @@
             let i = 0;
             talkTimer = setInterval(() => {
                 if (talkMode === 1) {
-                    mouth.src = src(talkSeqFrames[i % talkSeqFrames.length]);
+                    mouth.src = src(talkRandomFrames[i % talkRandomFrames.length]);
                     i++;
-
                     /*   mouth.src = src(
                         talkRandomFrames[
                         Math.floor(Math.random() * talkRandomFrames.length)
                         ]
                     );*/
-
-
                 } else {
                     mouth.src = src(talkSeqFrames[i % talkSeqFrames.length]);
                     i++;
