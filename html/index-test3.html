@@ -495,8 +495,8 @@
     let dialogueTimer = null;
     let isTyping = false;
 
-    const BASE_DELAY = 75;
-    const PUNCTUATION_MULTIPLIER = 2;
+    const BASE_DELAY = 50;
+    const PUNCTUATION_MULTIPLIER = 4;
     const END_TALK_DELAY = 300;
 
     function startDialogue(text) {
@@ -541,7 +541,7 @@
             }
 
             // 标点停顿
-            const isPunctuation = /[，。！？；：,.!?;]/.test(char);
+            const isPunctuation = /[，。！？；：,.!?;~……]/.test(char);
             const delay = isPunctuation
                 ? BASE_DELAY * PUNCTUATION_MULTIPLIER
                 : BASE_DELAY;
