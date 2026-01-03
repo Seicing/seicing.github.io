@@ -12,6 +12,19 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
 <style>
+    .row {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .left {
+        width: 150px;
+    }
+
+    .right {
+        margin-left: 10px;
+    }
+
     body {
         font-family: sans-serif;
     }
@@ -23,7 +36,6 @@
         border: 1px solid #aaa;
         margin-bottom: 10px;
         background-color: #f0f0f0;
-        /* 增加一点背景色以便看清透明图层 */
     }
 
     .layer {
@@ -95,20 +107,23 @@
 <button onclick="loadChar()">加载</button>
 <span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
 
-<div class="stage">
-    <div class="layer" style="z-index:2"><img id="base"></div>
-    <div class="layer" style="z-index:4"><img id="eye"></div>
-    <div class="layer" style="z-index:6"><img id="brow"></div>
-    <div class="layer" style="z-index:7"><img id="mouth"></div>
+<div class="rows2">
+    <div class="stage left">
+        <div class="layer" style="z-index:2"><img id="base"></div>
+        <div class="layer" style="z-index:4"><img id="eye"></div>
+        <div class="layer" style="z-index:6"><img id="brow"></div>
+        <div class="layer" style="z-index:7"><img id="mouth"></div>
 
-    <div class="layer" style="z-index:40"><img id="attach"></div>
-    <div class="layer" style="z-index:41"><img id="special"></div>
-    <div class="layer" style="z-index:39"><img id="sweat"></div>
-    <div class="layer" style="z-index:38"><img id="red_face"></div>
+        <div class="layer" style="z-index:40"><img id="attach"></div>
+        <div class="layer" style="z-index:41"><img id="special"></div>
+        <div class="layer" style="z-index:39"><img id="sweat"></div>
+        <div class="layer" style="z-index:38"><img id="red_face"></div>
+    </div>
+    <div id="dialogueBox right">
+        <div id="dialogueText"></div>
+    </div>
 </div>
-<div id="dialogueBox">
-    <div id="dialogueText"></div>
-</div>
+
 
 <!-- 状态控制区 -->
 <div style="margin-bottom: 10px;">
@@ -119,6 +134,9 @@
 <div style="margin-bottom:10px;">
     <button onclick="startDialogue('嗯嗯嗯……测试一下对话系统，如何，正常吗？')">
         测试用对话1
+    </button>
+    <button onclick="startDialogue('要说更长的对话吗？那就……拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~')">
+        测试用对话2
     </button>
 </div>
 
@@ -506,7 +524,7 @@
                     toggleTalk(document.getElementById("talkBtn"));
                 }
             }
-        }, 150); // 0.15 秒
+        }, 100); // 0.15 秒
     }
 
 
