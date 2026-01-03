@@ -69,7 +69,7 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><a href="https://seicing.com/html/largelv/chars.html">复制内部id(英文)</a>到输入框后加载切换角色<br>
+                        <div class="entry"><a href="https://seicing.com/html/largelv/chars.html" target="_blank">复制内部id(英文)</a>到输入框后加载切换角色<br>
 
 <input id="charId" value="YoEmpireFlower">
 <button onclick="loadChar()">加载</button>
@@ -96,8 +96,8 @@
 
 <h4>说话模式</h4>
 <!-- 默认改为动画序列 -->
-<button class="talkModeBtn active" onclick="setTalkMode(2,this)">专用帧序列动画</button>
-<button class="talkModeBtn" onclick="setTalkMode(1,this)">现有帧序列动画</button>
+<button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
+<button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
 
 <h4>配件</h4>
 <!-- 传入 this 以便控制按钮样式 -->
@@ -163,7 +163,7 @@
     let blinkTimer = null;
     let talkTimer = null;
     let talking = false;
-    let talkMode = 2;
+    let talkMode = 1;
     let isClosedEyes = false; // 新增：闭眼状态
 
     /* ========= 眨眼参数 ========= */
