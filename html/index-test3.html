@@ -69,7 +69,7 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><a href="https://seicing.com/html/largelv/chars.html">复制id到里面进行加载</a><br>
+                        <div class="entry"><a href="https://seicing.com/html/largelv/chars.html">复制内部id(英文)</a>到输入框后加载切换角色<br>
 
 <input id="charId" value="YoEmpireFlower">
 <button onclick="loadChar()">加载</button>
@@ -89,22 +89,22 @@
 
 <!-- 状态控制区 -->
 <div style="margin-bottom: 10px;">
-    <button id="talkBtn" onclick="toggleTalk(this)">说话</button>
+    <button id="talkBtn" onclick="toggleTalk(this)">说话(talk)</button>
     <!-- 新增闭眼按钮 -->
-    <button id="closeEyeBtn" onclick="toggleCloseEyes(this)">闭眼</button>
+    <button id="closeEyeBtn" onclick="toggleCloseEyes(this)">闭眼(CE)</button>
 </div>
 
 <h4>说话模式</h4>
 <!-- 默认改为动画序列 -->
-<button class="talkModeBtn active" onclick="setTalkMode(2,this)">动画序列</button>
-<button class="talkModeBtn" onclick="setTalkMode(1,this)">随机嘴型</button>
+<button class="talkModeBtn active" onclick="setTalkMode(2,this)">专用帧序列动画</button>
+<button class="talkModeBtn" onclick="setTalkMode(1,this)">现有帧序列动画</button>
 
 <h4>配件</h4>
 <!-- 传入 this 以便控制按钮样式 -->
-<button class="accBtn" onclick="toggleAcc('attach', this)">attach</button>
-<button class="accBtn" onclick="toggleAcc('special', this)">special</button>
-<button class="accBtn" onclick="toggleAcc('sweat', this)">sweat</button>
-<button class="accBtn" onclick="toggleAcc('red_face', this)">red_face</button>
+<button class="accBtn" onclick="toggleAcc('attach', this)">attach(AT)</button>
+<button class="accBtn" onclick="toggleAcc('special', this)">special(SP)</button>
+<button class="accBtn" onclick="toggleAcc('sweat', this)">sweat(SW)</button>
+<button class="accBtn" onclick="toggleAcc('red_face', this)">red_face(RF)</button>
 
 <hr>
 <div id="faces"></div>
@@ -163,7 +163,7 @@
     let blinkTimer = null;
     let talkTimer = null;
     let talking = false;
-    let talkMode = 2; // 改为默认为 2 (动画序列)
+    let talkMode = 2;
     let isClosedEyes = false; // 新增：闭眼状态
 
     /* ========= 眨眼参数 ========= */
