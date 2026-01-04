@@ -340,7 +340,7 @@
         }
     }
 
-    /* ========= 【新增】检查并禁用损坏按钮 ========= */
+    /* ========= 检查并禁用损坏按钮 (修改版) ========= */
     function checkBrokenResources(failedSet) {
         if (failedSet.size === 0) return;
 
@@ -349,21 +349,27 @@
         // 1. 检查表情按钮 (Faces)
         for (let faceName in faces) {
             const requiredImages = faces[faceName];
-            // 只要表情需要的任意一张图在失败列表中
-            const isBroken = requiredImages.some(img => failedSet.has(img));
+
+            // 修改点：使用 .some(item, index) 来判断
+            const isBroken = requiredImages.some((img, index) => {
+                // 如果是第2个(index=1) 或 第3个(index=2)，跳过检测
+                // 返回 false 代表“这张图不算坏”，继续检查下一张
+                if (index === 1 || index === 2) return false;
+
+                // 检查第1(0)、第4(3)、第5(4)张图是否在失败列表中
+                return failedSet.has(img);
+            });
 
             const btn = document.getElementById("face_" + faceName);
             if (btn && isBroken) {
                 btn.classList.add("disabled");
-                btn.title = "资源缺失，无法显示"; // 鼠标悬停提示
+                btn.title = "资源缺失，无法显示";
             }
         }
 
-        // 2. 检查配件按钮 (Accessories)
-        // 配件的 key 就是图片名 (在 preloadImages 里是这样处理的)
+        // 2. 检查配件按钮 (Accessories) - 保持不变
         Object.keys(acc).forEach(accName => {
             if (failedSet.has(accName)) {
-                // 通过 onclick 属性内容找到对应按钮
                 const btn = document.querySelector(`button[onclick*="'${accName}'"]`);
                 if (btn) {
                     btn.classList.add("disabled");
@@ -372,25 +378,18 @@
             }
         });
 
-        // 3. 检查说话模式 (Talk Modes)
-        // 检查 Random 模式
+        // 3. 检查说话模式 (Talk Modes) - 保持不变
         const randomBroken = talkRandomFrames.some(img => failedSet.has(img));
         if (randomBroken) {
-            // 找到对应的说话模式按钮 (mode 1)
             const btn = document.querySelector(`button[onclick*="setTalkMode(1"]`);
             if (btn) btn.classList.add("disabled");
         }
 
-        // 检查 Sequence 模式
         const seqBroken = talkSeqFrames.some(img => failedSet.has(img));
         if (seqBroken) {
-            // 找到对应的说话模式按钮 (mode 2)
             const btn = document.querySelector(`button[onclick*="setTalkMode(2"]`);
             if (btn) btn.classList.add("disabled");
         }
-
-        // 如果两个说话模式都坏了，或者当前模式坏了，可能需要处理 talkBtn 本身
-        // 这里简单处理：如果当前模式坏了，就别让他说话了 (可选)
     }
 
     /* ========= 加载 (修改版) ========= */
