@@ -512,19 +512,9 @@
     }
 
     /* ========= 说话 ========= */
+    /* ========= 说话 (已移除拦截逻辑) ========= */
     function toggleTalk(btn) {
-        // 检查当前模式是否可用
-        if (talking) {
-            // 如果正在说话，则是要停止，无论如何都允许停止
-        } else {
-            // 如果要开始说话，检查当前模式是否损坏
-            const modeBtnSelector = `button[onclick*="setTalkMode(${talkMode}"]`;
-            const modeBtn = document.querySelector(modeBtnSelector);
-            if (modeBtn && modeBtn.classList.contains("disabled")) {
-                alert("当前说话模式缺失资源，无法说话");
-                return;
-            }
-        }
+        // 这里删除了原本的 if(modeBtn && modeBtn.classList.contains("disabled")) 判断
 
         talking = !talking;
         btn.classList.toggle("active", talking);
