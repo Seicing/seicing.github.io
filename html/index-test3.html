@@ -360,6 +360,16 @@
     // ……【此处省略：你后面的逻辑完全不需要改】……
 
     loadChar();
+
+    // ======= 显式暴露给 HTML onclick 使用 =======
+    window.loadChar = loadChar;
+    window.setFace = setFace;
+    window.startDialogue = startDialogue;
+    window.toggleTalk = toggleTalk;
+    window.toggleCloseEyes = toggleCloseEyes;
+    window.setTalkMode = setTalkMode;
+    window.toggleAcc = toggleAcc;
+
 </script>
 
 </html>
