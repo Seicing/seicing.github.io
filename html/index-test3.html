@@ -83,6 +83,12 @@
     #dialogueText {
         word-break: break-all;
     }
+
+    button.disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
 </style>
 </head>
 
@@ -319,6 +325,26 @@
     }
 
 
+    function checkButtonsAvailability() {
+        document.querySelectorAll(".checkable-btn").forEach(btn => {
+            const fileName = btn.dataset.src;
+            if (!fileName) return;
+
+            const fullPath = charPath + fileName;
+
+            checkResourceExists(fullPath, exists => {
+                if (!exists) {
+                    btn.classList.add("disabled");
+                    btn.title = "资源不存在，无法使用";
+                } else {
+                    btn.classList.remove("disabled");
+                    btn.title = "";
+                }
+            });
+        });
+    }
+
+
 
     /* ========= 加载 (修改版) ========= */
     function loadChar() {
@@ -346,6 +372,7 @@
         // 只有当所有图片下载完成后，才会开始眨眼
         preloadImages(() => {
             startBlink();
+            checkButtonsAvailability(); // 👈 加这一行
         });
     }
 
@@ -496,9 +523,9 @@
     let dialogueTimer = null;
     let isTyping = false;
 
-    const BASE_DELAY = 50;
-    const PUNCTUATION_MULTIPLIER = 4;
-    const END_TALK_DELAY = 300;
+    const BASE_DELAY = 75;
+    const PUNCTUATION_MULTIPLIER = 2.5;
+    const END_TALK_DELAY = 400;
 
     function startDialogue(text) {
         if (isTyping) return;
