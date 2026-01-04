@@ -224,7 +224,7 @@
     let talkTimer = null;
     let talking = false;
     let talkMode = 1;
-    let isClosedEyes = false; // 新增：闭眼状态
+    let isClosedEyes = false;
 
     /* ========= 眨眼参数 ========= */
     let blinkMin = 100;
@@ -265,99 +265,182 @@
         return charPath + name + ".png";
     }
 
-    /* ========= 【新增】预加载函数 ========= */
+    /* ========= 【修改版】预加载函数 ========= */
+    // callback 现在接收一个参数 failedSet，包含所有加载失败的图片名
     function preloadImages(callback) {
-        const allImages = new Set(); // Set 可以自动去重
+        const allImages = new Set();
+        const failedImages = new Set(); // 新增：记录失败的图片
 
         // 1. 收集所有需要用到的图片名
-        allImages.add("base"); // 基础底图
+        allImages.add("base");
 
-        // 收集表情包里的图片
         Object.values(faces).forEach(arr => {
             arr.forEach(imgName => allImages.add(imgName));
         });
 
-        // 收集说话动作的图片 (确保这两个数组在你的代码里已经定义了)
         if (typeof talkRandomFrames !== 'undefined') talkRandomFrames.forEach(n => allImages.add(n));
         if (typeof talkSeqFrames !== 'undefined') talkSeqFrames.forEach(n => allImages.add(n));
 
-        // 收集配件图片
         Object.keys(acc).forEach(k => allImages.add(k));
 
-        // 2. 开始静默下载
+        // 2. 开始下载
         const total = allImages.size;
         let loadedCount = 0;
         const statusEl = document.getElementById("loadStatus");
         const btn = document.getElementById("loadBtn");
 
-        // 禁用按钮防止重复点击
         if (btn) btn.disabled = true;
 
         if (total === 0) {
-            if (callback) callback();
+            if (callback) callback(failedImages);
             return;
         }
 
         allImages.forEach(imgName => {
             const img = new Image();
-            // 无论成功还是失败，都算处理完成，防止因为一张图404导致卡死
-            img.onload = img.onerror = () => {
-                loadedCount++;
-                // 更新文字提示
-                if (statusEl) statusEl.textContent = `资源预加载: ${loadedCount}/${total}`;
 
-                // 全部下载完后的处理
-                if (loadedCount >= total) {
-                    if (statusEl) {
-                        statusEl.textContent = "加载完成！";
-                        setTimeout(() => statusEl.textContent = "", 2000); // 2秒后消失
-                    }
-                    if (btn) {
-                        btn.disabled = false;
-                        btn.textContent = "加载"; // 恢复按钮文字
-                    }
-                    if (callback) callback();
-                }
+            // 成功加载
+            img.onload = () => {
+                loadedCount++;
+                updateProgress();
             };
-            // 触发下载
+
+            // 失败加载 (404等)
+            img.onerror = () => {
+                failedImages.add(imgName); // 记录失败名
+                loadedCount++;
+                updateProgress();
+            };
+
             img.src = src(imgName);
         });
+
+        function updateProgress() {
+            if (statusEl) statusEl.textContent = `资源预加载: ${loadedCount}/${total}`;
+
+            if (loadedCount >= total) {
+                if (statusEl) {
+                    // 如果有失败的，提示一下
+                    if (failedImages.size > 0) {
+                        statusEl.textContent = `加载完成，${failedImages.size}个资源缺失`;
+                        statusEl.style.color = "red";
+                    } else {
+                        statusEl.textContent = "加载完成！";
+                        statusEl.style.color = "blue";
+                    }
+                    setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
+                }
+                if (btn) {
+                    btn.disabled = false;
+                    btn.textContent = "加载";
+                }
+                // 执行回调，并传入失败列表
+                if (callback) callback(failedImages);
+            }
+        }
+    }
+
+    /* ========= 【新增】检查并禁用损坏按钮 ========= */
+    function checkBrokenResources(failedSet) {
+        if (failedSet.size === 0) return;
+
+        console.log("缺失图片列表:", Array.from(failedSet));
+
+        // 1. 检查表情按钮 (Faces)
+        for (let faceName in faces) {
+            const requiredImages = faces[faceName];
+            // 只要表情需要的任意一张图在失败列表中
+            const isBroken = requiredImages.some(img => failedSet.has(img));
+
+            const btn = document.getElementById("face_" + faceName);
+            if (btn && isBroken) {
+                btn.classList.add("disabled");
+                btn.title = "资源缺失，无法显示"; // 鼠标悬停提示
+            }
+        }
+
+        // 2. 检查配件按钮 (Accessories)
+        // 配件的 key 就是图片名 (在 preloadImages 里是这样处理的)
+        Object.keys(acc).forEach(accName => {
+            if (failedSet.has(accName)) {
+                // 通过 onclick 属性内容找到对应按钮
+                const btn = document.querySelector(`button[onclick*="'${accName}'"]`);
+                if (btn) {
+                    btn.classList.add("disabled");
+                    btn.title = "配件丢失";
+                }
+            }
+        });
+
+        // 3. 检查说话模式 (Talk Modes)
+        // 检查 Random 模式
+        const randomBroken = talkRandomFrames.some(img => failedSet.has(img));
+        if (randomBroken) {
+            // 找到对应的说话模式按钮 (mode 1)
+            const btn = document.querySelector(`button[onclick*="setTalkMode(1"]`);
+            if (btn) btn.classList.add("disabled");
+        }
+
+        // 检查 Sequence 模式
+        const seqBroken = talkSeqFrames.some(img => failedSet.has(img));
+        if (seqBroken) {
+            // 找到对应的说话模式按钮 (mode 2)
+            const btn = document.querySelector(`button[onclick*="setTalkMode(2"]`);
+            if (btn) btn.classList.add("disabled");
+        }
+
+        // 如果两个说话模式都坏了，或者当前模式坏了，可能需要处理 talkBtn 本身
+        // 这里简单处理：如果当前模式坏了，就别让他说话了 (可选)
     }
 
     /* ========= 加载 (修改版) ========= */
     function loadChar() {
         const id = document.getElementById("charId").value;
-        // 保持你原有的路径设置
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
 
         base.src = src("base");
 
-        // 重置所有配件状态
+        // 重置所有配件
         Object.values(acc).forEach(x => {
             x.style.display = "none";
-            x.src = ""; // 清空src防止缓存旧图
+            x.src = "";
         });
         document.querySelectorAll(".accBtn").forEach(b => b.classList.remove("active"));
 
-        // 重置闭眼状态
+        // 重置闭眼
         isClosedEyes = false;
         const closeEyeBtn = document.getElementById("closeEyeBtn");
         if (closeEyeBtn) closeEyeBtn.classList.remove("active");
 
+        // 【新增】重置所有按钮的 disabled 状态
+        // 每次加载新角色前，先把之前的禁用状态清空，否则切到正常角色也没法用了
+        document.querySelectorAll("button.disabled").forEach(b => {
+            b.classList.remove("disabled");
+            b.title = "";
+        });
+
         setFace("smile");
 
-        // 【修改点】这里不再直接 startBlink()，而是放入回调中
-        // 只有当所有图片下载完成后，才会开始眨眼
-        preloadImages(() => {
+        // 预加载并检查
+        preloadImages((failedSet) => {
+            // 1. 禁用坏掉的按钮
+            checkBrokenResources(failedSet);
+            // 2. 开始逻辑
             startBlink();
         });
     }
 
     /* ========= 表情 ========= */
     function setFace(name) {
+        // 如果这个表情按钮被禁用了（虽然 UI 上点不了，但代码调用可能触发），做一个防御
+        const btn = document.getElementById("face_" + name);
+        if (btn && btn.classList.contains("disabled")) {
+            console.warn(`表情 ${name} 资源缺失，跳过切换`);
+            return;
+        }
+
         currentFace = faces[name];
 
-        // 如果处于闭眼模式，强制显示第3帧(index 2)，否则显示第1帧(index 0)
         if (isClosedEyes) {
             eye.src = src(currentFace[2]);
         } else {
@@ -368,20 +451,18 @@
         if (!talking) mouth.src = src(currentFace[4]);
 
         document.querySelectorAll(".faceBtn").forEach(b => b.classList.remove("active"));
-        document.getElementById("face_" + name).classList.add("active");
+        if (btn) btn.classList.add("active");
     }
 
-    /* ========= 闭眼逻辑 (新增) ========= */
+    /* ========= 闭眼逻辑 ========= */
     function toggleCloseEyes(btn) {
         isClosedEyes = !isClosedEyes;
         btn.classList.toggle("active", isClosedEyes);
 
         if (isClosedEyes) {
-            // 如果开启闭眼：清除眨眼定时器，并立即设置为第3帧
             if (blinkTimer) clearTimeout(blinkTimer);
             eye.src = src(currentFace[2]);
         } else {
-            // 如果关闭闭眼：恢复睁眼并重新开始眨眼逻辑
             eye.src = src(currentFace[0]);
             startBlink();
         }
@@ -390,10 +471,10 @@
     /* ========= 眨眼 ========= */
     function startBlink() {
         if (blinkTimer) clearTimeout(blinkTimer);
-        if (isClosedEyes) return; // 如果处于闭眼模式，不执行眨眼逻辑
+        if (isClosedEyes) return;
 
         function blinkOnce() {
-            if (isClosedEyes) return; // 二次检查防止异步冲突
+            if (isClosedEyes) return;
 
             const seq = [
                 currentFace[0],
@@ -405,7 +486,6 @@
             let i = 0;
 
             function step() {
-                // 只有在非闭眼模式下才更新图片
                 if (!isClosedEyes) eye.src = src(seq[i]);
 
                 let delay = blinkFrameTime;
@@ -433,6 +513,19 @@
 
     /* ========= 说话 ========= */
     function toggleTalk(btn) {
+        // 检查当前模式是否可用
+        if (talking) {
+            // 如果正在说话，则是要停止，无论如何都允许停止
+        } else {
+            // 如果要开始说话，检查当前模式是否损坏
+            const modeBtnSelector = `button[onclick*="setTalkMode(${talkMode}"]`;
+            const modeBtn = document.querySelector(modeBtnSelector);
+            if (modeBtn && modeBtn.classList.contains("disabled")) {
+                alert("当前说话模式缺失资源，无法说话");
+                return;
+            }
+        }
+
         talking = !talking;
         btn.classList.toggle("active", talking);
 
@@ -442,11 +535,6 @@
                 if (talkMode === 1) {
                     mouth.src = src(talkRandomFrames[i % talkRandomFrames.length]);
                     i++;
-                    /*   mouth.src = src(
-                        talkRandomFrames[
-                        Math.floor(Math.random() * talkRandomFrames.length)
-                        ]
-                    );*/
                 } else {
                     mouth.src = src(talkSeqFrames[i % talkSeqFrames.length]);
                     i++;
@@ -459,16 +547,21 @@
     }
 
     function setTalkMode(mode, btn) {
+        // 如果该模式按钮被禁用，不允许切换
+        if (btn.classList.contains("disabled")) return;
+
         talkMode = mode;
         document.querySelectorAll(".talkModeBtn")
             .forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
     }
 
-    /* ========= 配件 (修改) ========= */
+    /* ========= 配件 ========= */
     function toggleAcc(name, btn) {
+        // 防御：如果按钮禁用，不做反应
+        if (btn.classList.contains("disabled")) return;
+
         const el = acc[name];
-        // 只有当显示的时候才去加载图片，避免初始加载过多404
         if (!el.src || el.src.endsWith(".html") || el.src == "") {
             el.src = src(name);
         }
@@ -495,8 +588,7 @@
         box.appendChild(b);
     }
 
-
-
+    /* ========= 对话系统 ========= */
     let dialogueTimer = null;
     let isTyping = false;
 
@@ -516,7 +608,6 @@
 
         let index = 0;
 
-        // 确保进入说话状态
         if (!talking) {
             toggleTalk(document.getElementById("talkBtn"));
         }
@@ -526,26 +617,22 @@
             textEl.textContent += char;
             index++;
 
-            // 保证说话状态不中断
             if (!talking) {
+                // 如果说话中途因为某种原因停了（比如外部干扰），尝试恢复
+                // 但如果按钮坏了，toggleTalk 内部会拦截，这里就不做额外处理了
                 toggleTalk(document.getElementById("talkBtn"));
             }
 
-            // ===== 文字已经全部输出 =====
             if (index >= text.length) {
                 isTyping = false;
-
-                // 👇 关键：单独安排“句尾余韵”
                 setTimeout(() => {
                     if (talking) {
                         toggleTalk(document.getElementById("talkBtn"));
                     }
                 }, END_TALK_DELAY);
-
                 return;
             }
 
-            // 标点停顿
             const isPunctuation = /[，。！？；：,.!?;~……]/.test(char);
             const delay = isPunctuation
                 ? BASE_DELAY * PUNCTUATION_MULTIPLIER
@@ -556,8 +643,6 @@
 
         typeNext();
     }
-
-
 
     loadChar();
 </script>
