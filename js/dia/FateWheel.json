@@ -1,12 +1,12 @@
 [
     {
-        "dic": 2,
+        "dic": 3,
         "branch": "",
-        "name": "",
-        "char": "",
+        "name": "脸上有伤疤的女子",
+        "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
-        "string": "20年后"
+        "string": "喂！"
     },
     {
         "dic": 2,
@@ -15,16 +15,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "天风宫不远处的一个山坡上"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "男子",
-        "char": "SeicingAcolyte",
-        "face": "serene",
-        "con": "SPCE",
-        "string": "……"
+        "string": "世清在感叹后，传来女性的叫声"
     },
     {
         "dic": 3,
@@ -33,16 +24,7 @@
         "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
-        "string": "世清"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "脸上有伤疤的女子",
-        "char": "IuimiAcolyte",
-        "face": "smile",
-        "con": "",
-        "string": "果然在这里啊"
+        "string": "世清，果然在这里啊"
     },
     {
         "dic": 2,
@@ -63,40 +45,13 @@
         "string": "羽三"
     },
     {
-        "dic": 3,
-        "branch": "",
-        "name": "羽三",
-        "char": "IuimiAcolyte",
-        "face": "extra1",
-        "con": "",
-        "string": "如此风和日丽的日子，不去城里逛逛真的是浪费了"
-    },
-    {
         "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "……"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "世清从地上爬起，伸了一个懒腰"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "serene",
-        "con": "SP",
-        "string": "逃得过明玲姐，最后还是逃不过你啊"
+        "string": "……你要到城里吗？"
     },
     {
         "dic": 3,
@@ -105,7 +60,7 @@
         "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
-        "string": "今天很主动啊"
+        "string": "和我一起去吧"
     },
     {
         "dic": 1,
@@ -113,8 +68,17 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "SPCE",
-        "string": "反正最后还是会在你的死缠烂打中败下阵来的"
+        "con": "SP",
+        "string": "哎，今天难得放假"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "wry",
+        "con": "",
+        "string": "你想在这里躺一整天吗？明明应该是朝气蓬勃的年纪，跟个老头子一样"
     },
     {
         "dic": 2,
@@ -132,16 +96,16 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "……又把我当成是小孩子了"
+        "string": "……又把我当成小孩子"
     },
     {
         "dic": 3,
         "branch": "",
         "name": "羽三",
         "char": "IuimiAcolyte",
-        "face": "extra1",
+        "face": "happy",
         "con": "",
-        "string": "长大了呢"
+        "string": "难道不是吗？"
     },
     {
         "dic": 1,
@@ -150,16 +114,7 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "……话太多了"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "serene",
-        "con": "SP",
-        "string": "走吧"
+        "string": "……话太多了，走吧"
     },
     {
         "dic": 2,
