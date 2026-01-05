@@ -132,16 +132,7 @@
         "char": "Chunlan",
         "face": "serene",
         "con": "",
-        "string": "能捡回一条命真是万幸啊"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "春兰",
-        "char": "Chunlan",
-        "face": "serene",
-        "con": "",
-        "string": "在这种大风的日子乱跑"
+        "string": "在这种连龙都能刮走的大风中乱跑，能捡回一条命真是万幸啊"
     },
     {
         "dic": 3,
@@ -301,7 +292,7 @@
         "branch": "",
         "name": "春兰",
         "char": "Chunlan",
-        "face": "serene",
+        "face": "smile",
         "con": "",
         "string": "好健康的哭声，夫人的生产好像很顺利啊"
     },
@@ -385,15 +376,6 @@
         "face": "sad",
         "con": "",
         "string": "你脸色好差啊"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "春兰",
-        "char": "Chunlan",
-        "face": "sad",
-        "con": "",
-        "string": "……"
     },
     {
         "dic": 3,
@@ -778,7 +760,7 @@
         "branch": "",
         "name": "春兰",
         "char": "Chunlan",
-        "face": "sad",
+        "face": "cry",
         "con": "",
         "string": "在此别过……"
     },
