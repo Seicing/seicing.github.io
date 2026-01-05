@@ -720,7 +720,7 @@ let ayanami = {
     "防御箭": /*html*/`防御箭<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/防御箭.png' width='20px'>防御箭：射出一支信号箭，使附近单位 (包括汗) 的护甲+2`,
     "汗的猎人光环": /*html*/`汗的猎人<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/汗的猎人.png' width='20px'>汗的猎人：在封建/城堡/帝王时代，汗的猎人可将附近远程单位的攻击范围增加 +0.5/+0.8/+1.0，骑射手可获得额外的 +0.5`,
 
-    "圣者的祝福": /*html*/`圣者的祝福<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣者的祝福.png' width='20px'>圣者的祝福：僧侣战士攻击后祝福2(7)格范围内的军队，提高2(3)攻击力和1护甲，持续10(20)秒`,
+    "圣者的祝福": /*html*/`圣者的祝福<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣者的祝福.png' width='20px'>圣者的祝福：僧侣战士攻击后祝福2(7)格范围内的军队，提高2(3)攻击力和1护甲，持续5(15)秒`,
 
     "奥斯曼木材折扣": /*html*/`军事诱惑<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>军事诱惑：造价减少40%`,
     "奥斯曼生产加速": /*html*/`影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>影响力：在铁匠铺、大学周围的军事生产建筑效率在四个时代依次提升20%/20%/30%/40%`,
