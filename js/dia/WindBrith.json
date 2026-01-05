@@ -6,7 +6,106 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "室外狂风呼啸，一个白发女子躺在床上正在分娩，女子的丈夫坐在床前紧张地握着女子的手，侍女在一旁紧张地等待着"
+        "string": "室外狂风呼啸，一个白发女子躺在床上正在分娩，侍女在一旁紧张地接生，男人在一旁紧张地旁观着"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "女子",
+        "char": "Chunlan",
+        "face": "happy",
+        "con": "",
+        "string": "元平！是一个可爱的男孩"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "wry",
+        "con": "",
+        "string": "是……是吗……？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "bitter",
+        "con": "",
+        "string": "辩……快看……是我们的孩子……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "辩急急忙忙跑了过去"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "smile",
+        "con": "",
+        "string": "我们的孩子……世清……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "bitter",
+        "con": "",
+        "string": "没错……辩……就像之前所说的那样……这孩子的名字是世清……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "bitter",
+        "con": "CE",
+        "string": "咳咳……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "endure",
+        "con": "",
+        "string": "元平！你还好吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "sad",
+        "con": "CE",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "bitter",
+        "con": "CE",
+        "string": "对不起……辩……我好像"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "sad",
+        "con": "",
+        "string": "是吗……"
     },
     {
         "dic": 2,
@@ -22,9 +121,9 @@
         "branch": "",
         "name": "女子",
         "char": "Chunlan",
-        "face": "serene",
+        "face": "sad",
         "con": "",
-        "string": "偏偏是这个时候"
+        "string": "为什么偏偏是这个时候"
     },
     {
         "dic": 3,
@@ -51,7 +150,7 @@
         "char": "Chunlan",
         "face": "sad",
         "con": "",
-        "string": "如果是结社的人的话……"
+        "string": "如果是结社的人的话"
     },
     {
         "dic": 3,
@@ -78,14 +177,14 @@
         "char": "Yunpyeng",
         "face": "depress",
         "con": "CE",
-        "string": "春兰……等等只让和我拥有相同颜色头发的人进来内室"
+        "string": "我没时间了……春兰……让和我拥有相同颜色头发的人进来内室"
     },
     {
         "dic": 3,
         "branch": "",
         "name": "春兰",
         "char": "Chunlan",
-        "face": "serene",
+        "face": "uncomfortable",
         "con": "CE",
         "string": "……"
     },
@@ -94,8 +193,8 @@
         "branch": "",
         "name": "春兰",
         "char": "Chunlan",
-        "face": "smile",
-        "con": "",
+        "face": "uncomfortable",
+        "con": "CE",
         "string": "明白了"
     },
     {
@@ -304,24 +403,6 @@
         "face": "smile",
         "con": "",
         "string": "恭喜啊，原来如此，是想找我这个新上任的神官长给新生儿祝福吗？"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "face": "sad",
-        "con": "",
-        "string": "不过好奇怪啊……是你们夫人自己接生吗？"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "春兰",
-        "char": "Chunlan",
-        "face": "surprise",
-        "con": "",
-        "string": "……！"
     },
     {
         "dic": 3,
@@ -813,7 +894,7 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "CESP",
         "string": "……"
@@ -822,7 +903,7 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
         "string": "风在异常地躁动，仿佛在预示着不幸"
@@ -831,7 +912,7 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
         "string": "但愿只是错觉"
