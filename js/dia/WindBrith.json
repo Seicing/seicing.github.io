@@ -6,97 +6,106 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "室外狂风呼啸，一个白发女子躺在床上正在分娩，女子的丈夫和侍女在附近紧张地等待着"
+        "string": "室外狂风呼啸，一个白发女子躺在床上正在分娩，女子的丈夫坐在床前紧张地握着女子的手，侍女在一旁紧张地等待着"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "然后突然传来敲门的声音"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "白发女人",
+        "name": "女子",
+        "char": "Chunlan",
+        "face": "serene",
+        "con": "",
+        "string": "偏偏是这个时候"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "女子",
+        "char": "Chunlan",
+        "face": "serene",
+        "con": "",
+        "string": "辩，元平，怎么办？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
         "char": "Yunpyeng",
         "face": "sad",
         "con": "",
-        "string": "呜……"
+        "string": "让他们进来吧……春兰……"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "男人",
-        "char": "Byinn",
-        "face": "serene",
-        "con": "",
-        "string": "元平……"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "传来敲门的声音"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "男人",
-        "char": "Byinn",
-        "face": "surprise",
-        "con": "",
-        "string": "……那群家伙竟然可以在“这一天”找到这里吗？"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "侍女",
-        "char": "Chunlan",
-        "face": "serene",
-        "con": "",
-        "string": "阁下，怎么办"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "男人",
-        "char": "Byinn",
-        "face": "serene",
-        "con": "",
-        "string": "不去理会会引起怀疑的"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "男人",
-        "char": "Byinn",
-        "face": "serene",
-        "con": "",
-        "string": "去看看情况，但是不能让任何人进入内室"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "侍女",
+        "name": "春兰",
         "char": "Chunlan",
         "face": "sad",
         "con": "",
-        "string": "但是夫人她……"
+        "string": "如果是结社的人的话……"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "男人",
+        "name": "辩",
         "char": "Byinn",
         "face": "serene",
         "con": "",
-        "string": "……我会陪在元平身边"
+        "string": "元平？这没问题吗？"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "侍女",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "等等，难道说……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "depress",
+        "con": "CE",
+        "string": "嗯……不是结社的人……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "depress",
+        "con": "CE",
+        "string": "春兰，等等只让和我拥有相同颜色头发的人进来内室"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
         "char": "Chunlan",
         "face": "serene",
+        "con": "CE",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "smile",
         "con": "",
-        "string": "……明白了"
+        "string": "明白了"
     },
     {
         "dic": 2,
@@ -105,7 +114,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "侍女来到房间外打开了门，两个年轻人几乎同时被大风吹了进房子里"
+        "string": "侍女春兰来到大门打开了门，两个年轻人几乎同时被大风吹了进房子里"
     },
     {
         "dic": 3,
@@ -128,16 +137,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "侍女",
-        "char": "Chunlan",
-        "face": "serene",
-        "con": "",
-        "string": "你们怎么会在“天风之日”的时候在外面乱走"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "侍女",
+        "name": "春兰",
         "char": "Chunlan",
         "face": "serene",
         "con": "",
@@ -146,11 +146,20 @@
     {
         "dic": 3,
         "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "serene",
+        "con": "",
+        "string": "在这种大风的日子乱跑"
+    },
+    {
+        "dic": 3,
+        "branch": "",
         "name": "白发女子",
         "char": "Meirei",
         "face": "excited",
         "con": "",
-        "string": "都是因为这个家伙偷懒！神宫的书都！"
+        "string": "都是因为这个家伙偷懒！宫里的书都！"
     },
     {
         "dic": 3,
@@ -173,7 +182,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "侍女",
+        "name": "春兰",
         "char": "Chunlan",
         "face": "serene",
         "con": "",
@@ -186,7 +195,7 @@
         "char": "Meirei",
         "face": "smile",
         "con": "",
-        "string": "是的，我叫明玲，是刚刚上任不久的大祝"
+        "string": "是的，我叫明玲，是刚刚上任不久的神官长"
     },
     {
         "dic": 3,
@@ -204,16 +213,88 @@
         "char": "Sri",
         "face": "serene",
         "con": "",
-        "string": "真过分啊，把一起长大的朋友当下人使唤"
+        "string": "谁是你手下了？"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "侍女",
+        "name": "春兰",
         "char": "Chunlan",
         "face": "serene",
         "con": "",
-        "string": "原来是明玲阁下，幸会"
+        "string": "是明玲阁下和斯理阁下，幸会"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "sad",
+        "con": "CE",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "sad",
+        "con": "CE",
+        "string": "虽然有点冒犯，但还请斯理阁下就在此大厅屈就一下"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "serene",
+        "con": "CE",
+        "string": "明玲阁下，可以请你跟我来一下么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "surprise",
+        "con": "",
+        "string": "啊？到底是什么回事？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "depress",
+        "con": "",
+        "string": "斯理，你给我乖乖待在这里，不要乱动"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "斯理",
+        "char": "Sri",
+        "face": "serene",
+        "con": "",
+        "string": "别把我当臭小鬼"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "smile",
+        "con": "",
+        "string": "两位感情不错呢，明玲阁下，这边请"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "明玲跟随春兰进入房间"
     },
     {
         "dic": 3,
@@ -232,15 +313,6 @@
         "face": "serene",
         "con": "",
         "string": "请见谅……只能屈就你们在大厅休息"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "face": "happy",
-        "con": "",
-        "string": "嗯，谢谢你，这已经足够了"
     },
     {
         "dic": 2,
