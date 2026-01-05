@@ -211,9 +211,9 @@
         "branch": "",
         "name": "春兰",
         "char": "Chunlan",
-        "face": "sad",
+        "face": "serene",
         "con": "CE",
-        "string": "……"
+        "string": "嗯……"
     },
     {
         "dic": 3,
@@ -230,7 +230,7 @@
         "name": "春兰",
         "char": "Chunlan",
         "face": "serene",
-        "con": "CE",
+        "con": "",
         "string": "明玲阁下，可以请你跟我来一下么？"
     },
     {
@@ -366,7 +366,7 @@
         "char": "Yunpyeng",
         "face": "smile",
         "con": "",
-        "string": "这孩子比我想象中的……充满活力呢……"
+        "string": "是啊，那时候的小丫头，也出落成一个漂亮姑娘了呢"
     },
     {
         "dic": 3,
@@ -376,6 +376,15 @@
         "face": "sad",
         "con": "",
         "string": "你脸色好差啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "smile",
+        "con": "",
+        "string": "这孩子比我想象中的……充满活力呢……"
     },
     {
         "dic": 3,
