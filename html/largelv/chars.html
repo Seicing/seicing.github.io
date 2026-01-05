@@ -28,45 +28,45 @@
                         <div class="entry"><div id="reske" style="float: left;width: 390px;">
 </div>
 <div id="reski" style="float: left;max-width: 1350px;">
-   <div id="app">
-      <table style="float:left;width:600px" id="customers">
-         <tr>
-            <td> </td>
-            <td>内部id(英文)</td>
-            <td>内部id(中文)</td>
-            <td>反映唯一id(英文)</td>
-            <td>反映唯一id(中文)</td>
-         </tr>
-         <tr v-for="diaindex in aasb">
-            <td><img :src="diaindex.icon2" style="width: 25px"></td>
-            <td><span v-html="diaindex.inner2"> </span></td>
-            <td><span v-html="diaindex.intro2"> </span></td>
-            <td><span v-html="diaindex.outro2"> </span></td>
-            <td><span v-html="diaindex.outer2"> </span></td>
-         </tr>
-      </table>
-      <table style="float:left;width:20px">
-         <tr>
-            <td> </td>
-         </tr>
-      </table>
-      <table style="float:left;width:600px" id="customers">
-         <tr>
-            <td> </td>
-            <td>内部id(英文)</td>
-            <td>内部id(中文)</td>
-            <td>反映唯一id(英文)</td>
-            <td>反映唯一id(中文)</td>
-         </tr>
-         <tr v-for="diaindex in aasb2">
-            <td><img :src="diaindex.icon3" style="width: 25px"></td>
-            <td><span v-html="diaindex.inner3"> </span></td>
-            <td><span v-html="diaindex.intro3"> </span></td>
-            <td><span v-html="diaindex.outro3"> </span></td>
-            <td><span v-html="diaindex.outer3"> </span></td>
-         </tr>
-      </table>
-   </div>
+    <div id="app">
+        <table style="float:left;width:600px" id="customers">
+            <tr>
+                <td> </td>
+                <td>内部id(英文)</td>
+                <td>内部id(中文)</td>
+                <td>反映唯一id(英文)</td>
+                <td>反映唯一id(中文)</td>
+            </tr>
+            <tr v-for="diaindex in aasb">
+                <td><img :src="diaindex.icon2" style="width: 25px"></td>
+                <td><span v-html="diaindex.inner2"> </span></td>
+                <td><span v-html="diaindex.intro2"> </span></td>
+                <td><span v-html="diaindex.outro2"> </span></td>
+                <td><span v-html="diaindex.outer2"> </span></td>
+            </tr>
+        </table>
+        <table style="float:left;width:20px">
+            <tr>
+                <td> </td>
+            </tr>
+        </table>
+        <table style="float:left;width:600px" id="customers">
+            <tr>
+                <td> </td>
+                <td>内部id(英文)</td>
+                <td>内部id(中文)</td>
+                <td>反映唯一id(英文)</td>
+                <td>反映唯一id(中文)</td>
+            </tr>
+            <tr v-for="diaindex in aasb2">
+                <td><img :src="diaindex.icon3" style="width: 25px"></td>
+                <td><span v-html="diaindex.inner3"> </span></td>
+                <td><span v-html="diaindex.intro3"> </span></td>
+                <td><span v-html="diaindex.outro3"> </span></td>
+                <td><span v-html="diaindex.outer3"> </span></td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 
@@ -99,53 +99,53 @@
 </body>
 
 <script>
-   $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
-   var imgAll = [];
+    $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
+    var imgAll = [];
 
-   const { createApp, ref, onMounted } = Vue;
-   createApp({
-      setup() {
-         const aasb = ref([]);
-         const aasb2 = ref([]);
+    const { createApp, ref, onMounted } = Vue;
+    createApp({
+        setup() {
+            const aasb = ref([]);
+            const aasb2 = ref([]);
 
-         const fetchData = async () => {
-            try {
-               const response1 = await fetch('https://seicing.com/js/dia/dialogid.json');
-               const json1 = await response1.json();
-               aasb.value = json1.map(item => ({
-                  ...item,
-                  inner2: item.inner,
-                  intro2: item.intro,
-                  outer2: item.outer,
-                  outro2: item.outro,
-                  icon2: `https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/${item.inner}.png`
-               }));
+            const fetchData = async () => {
+                try {
+                    const response1 = await fetch('https://seicing.com/js/dialogid.json');
+                    const json1 = await response1.json();
+                    aasb.value = json1.map(item => ({
+                        ...item,
+                        inner2: item.inner,
+                        intro2: item.intro,
+                        outer2: item.outer,
+                        outro2: item.outro,
+                        icon2: `https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/${item.inner}.png`
+                    }));
 
-               const response2 = await fetch('https://seicing.com/js/dia/dialogid2.json');
-               const json2 = await response2.json();
-               aasb2.value = json2.map(item => ({
-                  ...item,
-                  inner3: item.inner,
-                  intro3: item.intro,
-                  outer3: item.outer,
-                  outro3: item.outro,
-                  icon3: `https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/${item.inner}.png`
-               }));
-            } catch (error) {
-               console.error("数据加载失败:", error);
-            }
-         };
+                    const response2 = await fetch('https://seicing.com/js/dialogid2.json');
+                    const json2 = await response2.json();
+                    aasb2.value = json2.map(item => ({
+                        ...item,
+                        inner3: item.inner,
+                        intro3: item.intro,
+                        outer3: item.outer,
+                        outro3: item.outro,
+                        icon3: `https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/${item.inner}.png`
+                    }));
+                } catch (error) {
+                    console.error("数据加载失败:", error);
+                }
+            };
 
-         onMounted(() => {
-            fetchData();
-         });
+            onMounted(() => {
+                fetchData();
+            });
 
-         return {
-            aasb,
-            aasb2
-         };
-      }
-   }).mount('#app');
+            return {
+                aasb,
+                aasb2
+            };
+        }
+    }).mount('#app');
 </script>
 
 </html>

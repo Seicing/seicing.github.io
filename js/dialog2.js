@@ -8,7 +8,7 @@ const app = createApp({
         onMounted(() => {
             characterid = document.getElementById("overdrive").innerHTML;
 
-            fetch('https://seicing.com/js/dia/dialog.json')
+            fetch('https://seicing.com/js/dialog.json')
                 .then(response => response.json())
                 .then(json => {
                     const processedData = json.map(item => {

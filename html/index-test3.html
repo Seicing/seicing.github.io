@@ -219,7 +219,7 @@
 
     /* ========= 状态 ========= */
     let charPath = "";
-    let currentFace = faces.smile;
+    let currentFace = faces.serene || faces.smile;
     let blinkTimer = null;
     let talkTimer = null;
     let talking = false;
@@ -418,15 +418,36 @@
             b.title = "";
         });
 
-        setFace("smile");
-
         // 预加载并检查
         preloadImages((failedSet) => {
             // 1. 禁用坏掉的按钮
             checkBrokenResources(failedSet);
-            // 2. 开始逻辑
+
+            // 2. 决定默认表情
+            let defaultFace = "smile";
+
+            // smile 不存在 或 smile 资源缺失 → 回退 serene
+            if (
+                !faces.smile ||
+                faces.smile.some(img => failedSet.has(img))
+            ) {
+                defaultFace = "serene";
+            }
+
+            // 兜底：serene 也不存在的话，用 faces 的第一个
+            if (!faces[defaultFace]) {
+                defaultFace = Object.keys(faces)[0];
+            }
+
+            setFace(defaultFace);
+
+            // 3. 开始眨眼
             startBlink();
         });
+
+
+
+
     }
 
     /* ========= 表情 ========= */

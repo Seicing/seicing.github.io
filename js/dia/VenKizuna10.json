@@ -1,155 +1,155 @@
 [
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "文羁绊9剧情完成后，文会自动离队，重新和文组队的时候触发前置剧情",
-        "dic": 2
+        "con": "",
+        "string": "文羁绊9剧情完成后，文会自动离队，重新和文组队的时候触发前置剧情"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
         "face": "smile",
-        "string": "小余，世清",
-        "dic": 3
+        "con": "SP",
+        "string": "小余，世清"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "smile",
-        "string": "在庙会之后再次相会了呢",
-        "dic": 3
+        "con": "",
+        "string": "在庙会之后再次相会了呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPSW",
         "face": "serene",
-        "string": "是啊……",
-        "dic": 1
+        "con": "ATSPSW",
+        "string": "是啊……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "depress",
-        "string": "你在紧张什么啊，上次庙会之后不都把一切都交代得明明白白了",
-        "dic": 3
+        "con": "",
+        "string": "你在紧张什么啊，上次庙会之后不都把一切都交代得明明白白了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "RF",
         "face": "sinister",
-        "string": "你还不如适应如何享受我们两个的同时奉献，因为紧张而无法尽兴，未免也太可怜了",
-        "dic": 3
+        "con": "RF",
+        "string": "你还不如适应如何享受我们两个的同时奉献，因为紧张而无法尽兴，未免也太可怜了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SPRF",
         "face": "sinister",
-        "string": "嘿",
-        "dic": 3
+        "con": "SPRF",
+        "string": "嘿"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPSW",
         "face": "serene",
-        "string": "这……这样啊",
-        "dic": 1
+        "con": "ATSPSW",
+        "string": "这……这样啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "smile",
-        "string": "话说小文",
-        "dic": 3
+        "con": "",
+        "string": "话说小文"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
         "face": "Ven2Serenity",
-        "string": "嗯？",
-        "dic": 3
+        "con": "SP",
+        "string": "嗯？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "side",
-        "string": "真的不考虑和这家伙举行婚礼吗？",
-        "dic": 3
+        "con": "",
+        "string": "真的不考虑和这家伙举行婚礼吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "side",
-        "string": "对于你来说是一种遗憾吧",
-        "dic": 3
+        "con": "",
+        "string": "对于你来说是一种遗憾吧"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
         "face": "wry",
-        "string": "这也是没办法的事情，身份和情况太特殊了",
-        "dic": 3
+        "con": "SP",
+        "string": "这也是没办法的事情，身份和情况太特殊了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
         "face": "smile",
-        "string": "能够得到你的宽容，得到这家伙的爱就足够了，我不会把名分看得太重的",
-        "dic": 3
+        "con": "SP",
+        "string": "能够得到你的宽容，得到这家伙的爱就足够了，我不会把名分看得太重的"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
+        "face": "smile",
         "con": "",
-        "face": "smile",
-        "string": "在这一点上还真是豁达啊，明明一直以来都如此坚持",
-        "dic": 3
+        "string": "在这一点上还真是豁达啊，明明一直以来都如此坚持"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
         "face": "smile",
-        "string": "坚持和偏执还是有很大区别的，现在这样就很好，不是吗？",
-        "dic": 3
+        "con": "SP",
+        "string": "坚持和偏执还是有很大区别的，现在这样就很好，不是吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenCelestial",
-        "con": "SP",
         "face": "smile",
-        "string": "走吧，该干正经事了",
-        "dic": 3
+        "con": "SP",
+        "string": "走吧，该干正经事了"
     }
 ]

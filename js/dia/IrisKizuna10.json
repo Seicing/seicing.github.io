@@ -1,1487 +1,1487 @@
 [
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "触发羁绊9最后的提示剧情后，前往伊拉修莱德城野外的平原触发羁绊10剧情<br>在接近伊拉修莱德城的时候，会收到来自世行的信件",
-        "dic": 2
+        "con": "",
+        "string": "触发羁绊9最后的提示剧情后，前往伊拉修莱德城野外的平原触发羁绊10剧情<br>在接近伊拉修莱德城的时候，会收到来自世行的信件"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "收到了世行的信件",
-        "dic": 2
+        "con": "",
+        "string": "收到了世行的信件"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
+        "face": "serene",
         "con": "ATSP",
-        "face": "serene",
-        "string": "世行的信件……是发现伊丽的计策在那气急败坏吗？",
-        "dic": 1
+        "string": "世行的信件……是发现伊丽的计策在那气急败坏吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "excited",
-        "string": "哥，你实在太厉害了，整个帝国都因为你泡妞在劳师动众哦",
-        "dic": 3
+        "con": "",
+        "string": "哥，你实在太厉害了，整个帝国都因为你泡妞在劳师动众哦"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "把我耍得团团转，真是让人伤心啊，好歹也相信一下我的忠诚吧",
-        "dic": 3
+        "con": "",
+        "string": "把我耍得团团转，真是让人伤心啊，好歹也相信一下我的忠诚吧"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "你大概已经在准备和宿句人决战了吧，我从一开始就输了，完全按照你的计划走，继续诉苦已经没有任何意义了",
-        "dic": 3
+        "con": "",
+        "string": "你大概已经在准备和宿句人决战了吧，我从一开始就输了，完全按照你的计划走，继续诉苦已经没有任何意义了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "depress",
-        "string": "嗯……上面只是玩笑而已，我要提醒一下……你是皇帝，你有绝对的权力命令你的属下",
-        "dic": 3
+        "con": "",
+        "string": "嗯……上面只是玩笑而已，我要提醒一下……你是皇帝，你有绝对的权力命令你的属下"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "depress",
-        "string": "如果我这次真的做了什么出格的行为导致你计划失败，你是有权力对我处刑的……你的仁慈有时候会让我觉得非常不安",
-        "dic": 3
+        "con": "",
+        "string": "如果我这次真的做了什么出格的行为导致你计划失败，你是有权力对我处刑的……你的仁慈有时候会让我觉得非常不安"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "depress",
-        "string": "无论如何都要记住……你先是皇帝，然后才是我的大哥……你有履行皇帝威严的义务……",
-        "dic": 3
+        "con": "",
+        "string": "无论如何都要记住……你先是皇帝，然后才是我的大哥……你有履行皇帝威严的义务……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "让你那新老婆的娘家在战后知道了你在狐假虎威，虽然你是不介意，但对于“高贵的皇帝陛下”来说太过难堪了",
-        "dic": 3
+        "con": "",
+        "string": "让你那新老婆的娘家在战后知道了你在狐假虎威，虽然你是不介意，但对于“高贵的皇帝陛下”来说太过难堪了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "下次……应该更像一个西景皇帝，向世界上的人们显示你的绝对威严，你在掌握着这种让人醉心的权力……你肆意践踏它的样子让我很羡慕……",
-        "dic": 3
+        "con": "",
+        "string": "下次……应该更像一个西景皇帝，向世界上的人们显示你的绝对威严，你在掌握着这种让人醉心的权力……你肆意践踏它的样子让我很羡慕……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "所以，当你看到这封信的时候，宿句人在西景东岸的几个城镇现在都是你的了，因为我让你的计策变成真正的军事行动",
-        "dic": 3
+        "con": "",
+        "string": "所以，当你看到这封信的时候，宿句人在西景东岸的几个城镇现在都是你的了，因为我让你的计策变成真正的军事行动"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "excited",
-        "string": "宿句人这下子是真正惹上了不该惹的巨龙了……别担心后果，这只是礼尚往来，我们亲爱的蚩幽同胞也受够他们的侵扰了",
-        "dic": 3
+        "con": "",
+        "string": "宿句人这下子是真正惹上了不该惹的巨龙了……别担心后果，这只是礼尚往来，我们亲爱的蚩幽同胞也受够他们的侵扰了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "excited",
-        "string": "我好想看看你这边的宿句人恐惧的样子啊，我这边的连恐惧都没来得及表现出来就四分五裂了，让我好无聊啊",
-        "dic": 3
+        "con": "",
+        "string": "我好想看看你这边的宿句人恐惧的样子啊，我这边的连恐惧都没来得及表现出来就四分五裂了，让我好无聊啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "哼哼，我应该无法出席你在胜利之后的婚礼了，但是用这种方法奉上祝福，感觉还不错呢",
-        "dic": 3
+        "con": "",
+        "string": "哼哼，我应该无法出席你在胜利之后的婚礼了，但是用这种方法奉上祝福，感觉还不错呢"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "世行",
         "char": "Seigent",
-        "con": "",
         "face": "smile",
-        "string": "最后，祝你一切顺利",
-        "dic": 3
+        "con": "",
+        "string": "最后，祝你一切顺利"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPCE",
         "face": "serene",
-        "string": "真搞不懂这小子",
-        "dic": 1
+        "con": "ATSPCE",
+        "string": "真搞不懂这小子"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPCE",
         "face": "serene",
-        "string": "不过，我就把这个当成你的心意收下吧，谢了，世行",
-        "dic": 1
+        "con": "ATSPCE",
+        "string": "不过，我就把这个当成你的心意收下吧，谢了，世行"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "进入伊拉修莱德城",
-        "dic": 2
+        "con": "",
+        "string": "进入伊拉修莱德城"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "老公，你来了啊",
-        "dic": 3
+        "con": "",
+        "string": "老公，你来了啊"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "serene",
-        "string": "情况如何",
-        "dic": 1
+        "con": "ATSP",
+        "string": "情况如何"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPCE",
         "face": "sad",
-        "string": "周围人好多啊，感觉你用这个称呼叫我好难为情",
-        "dic": 1
+        "con": "ATSPCE",
+        "string": "周围人好多啊，感觉你用这个称呼叫我好难为情"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "sinister",
-        "string": "不喜欢？",
-        "dic": 3
+        "con": "",
+        "string": "不喜欢？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "原来你也会感到害羞啊，老公",
-        "dic": 3
+        "con": "",
+        "string": "原来你也会感到害羞啊，老公"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
+        "face": "serene",
         "con": "ATSPSW",
-        "face": "serene",
-        "string": "搞小团体一起在挑逗我啊，倒也不是不喜欢就是了",
-        "dic": 1
+        "string": "搞小团体一起在挑逗我啊，倒也不是不喜欢就是了"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "serene",
-        "string": "私下怎么叫我都可以，只是现在要把目光投向更严肃的东西，情况如何了？",
-        "dic": 1
+        "con": "ATSP",
+        "string": "私下怎么叫我都可以，只是现在要把目光投向更严肃的东西，情况如何了？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "smile",
-        "string": "伊拉修莱德的军队重新集结了大概七成以上",
-        "dic": 3
+        "con": "",
+        "string": "伊拉修莱德的军队重新集结了大概七成以上"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "smile",
-        "string": "短短几天就可以把溃散的骑士团集结起来，你的号召力还真是厉害啊",
-        "dic": 3
+        "con": "",
+        "string": "短短几天就可以把溃散的骑士团集结起来，你的号召力还真是厉害啊"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "serene",
-        "string": "这要得亏于你的努力，伊丽",
-        "dic": 1
+        "con": "ATSP",
+        "string": "这要得亏于你的努力，伊丽"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "伊拉修莱德的传令兵来汇报消息",
-        "dic": 2
+        "con": "",
+        "string": "伊拉修莱德的传令兵来汇报消息"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊拉修莱德新兵",
         "char": "IllazuraydRecruit",
-        "con": "",
         "face": "serene",
-        "string": "索菲亚公！对面即将发起攻击了！",
-        "dic": 3
+        "con": "",
+        "string": "索菲亚公！对面即将发起攻击了！"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "sad",
-        "string": "终于……要来了吗？",
-        "dic": 3
+        "con": "",
+        "string": "终于……要来了吗？"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "伊丽丝一面说着驱动起了权现，看罢，世清和余也跟着一起驱动起了权现",
-        "dic": 2
+        "con": "",
+        "string": "伊丽丝一面说着驱动起了权现，看罢，世清和余也跟着一起驱动起了权现"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "serene",
-        "string": "放心去战吧，我会一直为你而战",
-        "dic": 1
+        "con": "ATSP",
+        "string": "放心去战吧，我会一直为你而战"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
+        "face": "smile",
         "con": "RF",
-        "face": "smile",
-        "string": "谢谢你……",
-        "dic": 3
+        "string": "谢谢你……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "serene",
-        "string": "不过……真是庞大的军队，伊拉修莱德人要靠勇气来弥补这个劣势吗？",
-        "dic": 1
+        "con": "ATSP",
+        "string": "不过……真是庞大的军队，伊拉修莱德人要靠勇气来弥补这个劣势吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "sinister",
-        "string": "骄傲的人会败在自己的傲慢之下",
-        "dic": 3
+        "con": "",
+        "string": "骄傲的人会败在自己的傲慢之下"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "smile",
-        "string": "缺乏皇帝的约束，宿句人的三个军团都各自为战，果断的进军仿佛觉得自己已经获得了胜利一般",
-        "dic": 3
+        "con": "",
+        "string": "缺乏皇帝的约束，宿句人的三个军团都各自为战，果断的进军仿佛觉得自己已经获得了胜利一般"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "extra4",
-        "string": "我们人数上的客观劣势也是存在的，不过，我们有更加直接的办法去弥补这一点",
-        "dic": 3
+        "con": "",
+        "string": "我们人数上的客观劣势也是存在的，不过，我们有更加直接的办法去弥补这一点"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
+        "face": "serene",
         "con": "ATSPCE",
-        "face": "serene",
-        "string": "狙击司王……",
-        "dic": 1
+        "string": "狙击司王……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "没错",
-        "dic": 3
+        "con": "",
+        "string": "没错"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "主力部队临时撤退的消息使得宿句军心开始出现动摇，所以他们的司王才需要领头进行冲锋来利用优势快速击溃我们",
-        "dic": 3
+        "con": "",
+        "string": "主力部队临时撤退的消息使得宿句军心开始出现动摇，所以他们的司王才需要领头进行冲锋来利用优势快速击溃我们"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "可是啊，三个司王谁也不服谁呢",
-        "dic": 3
+        "con": "",
+        "string": "可是啊，三个司王谁也不服谁呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
+        "face": "serene",
         "con": "ATSP",
-        "face": "serene",
-        "string": "真胡来啊，不过确实可行",
-        "dic": 1
+        "string": "真胡来啊，不过确实可行"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "我们不也是这样一直胡来走到今天的吗？",
-        "dic": 3
+        "con": "",
+        "string": "我们不也是这样一直胡来走到今天的吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
+        "face": "smile",
         "con": "RF",
-        "face": "smile",
-        "string": "世清，没有你，我也不会学会这么胡来，直到今天也会因为理性搞得自己束手束脚，一事无成吧",
-        "dic": 3
+        "string": "世清，没有你，我也不会学会这么胡来，直到今天也会因为理性搞得自己束手束脚，一事无成吧"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "RFCE",
         "face": "bitter",
-        "string": "这是从你身上学会的东西，以后我成为你的人，还要在你身上学会更多东西呢",
-        "dic": 3
+        "con": "RFCE",
+        "string": "这是从你身上学会的东西，以后我成为你的人，还要在你身上学会更多东西呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPRF",
         "face": "side",
-        "string": "……",
-        "dic": 1
+        "con": "ATSPRF",
+        "string": "……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "depress",
-        "string": "在战场上打情骂俏还真是游刃有余啊",
-        "dic": 3
+        "con": "",
+        "string": "在战场上打情骂俏还真是游刃有余啊"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPSW",
         "face": "serene",
-        "string": "余，那个……",
-        "dic": 1
+        "con": "ATSPSW",
+        "string": "余，那个……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "别放在心上，只是觉得调戏你很好玩而已",
-        "dic": 3
+        "con": "",
+        "string": "别放在心上，只是觉得调戏你很好玩而已"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "smile",
-        "string": "不要大意哦，我们三个都要好好地活下来",
-        "dic": 3
+        "con": "",
+        "string": "不要大意哦，我们三个都要好好地活下来"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPSW",
         "face": "serene",
-        "string": "嗯……",
-        "dic": 1
+        "con": "ATSPSW",
+        "string": "嗯……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "敌人不会因为我们停下脚步……是时候上了",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
         "con": "",
-        "face": "smile",
-        "string": "嗯",
-        "dic": 3
+        "string": "敌人不会因为我们停下脚步……是时候上了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
+        "face": "smile",
+        "con": "",
+        "string": "嗯"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "smile",
         "con": "CE",
-        "face": "smile",
-        "string": "……",
-        "dic": 3
+        "string": "……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "angry",
-        "string": "伊拉修莱德的孩子们！跟着我们三人冲锋！击杀可恨的入侵者！让野蛮的饿狼滚回他们自己的巢穴里！",
-        "dic": 3
+        "con": "",
+        "string": "伊拉修莱德的孩子们！跟着我们三人冲锋！击杀可恨的入侵者！让野蛮的饿狼滚回他们自己的巢穴里！"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊拉修莱德新兵",
         "char": "IllazuraydRecruit",
-        "con": "",
         "face": "serene",
-        "string": "哦哦！！",
-        "dic": 3
+        "con": "",
+        "string": "哦哦！！"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "进入临时地图“伊拉修莱德战场”，在战场上击败来犯的敌军，找到三个司王boss击败他们",
-        "dic": 2
+        "con": "",
+        "string": "进入临时地图“伊拉修莱德战场”，在战场上击败来犯的敌军，找到三个司王boss击败他们"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "BOSS：司王季米特里奥斯",
-        "dic": 2
+        "con": "",
+        "string": "BOSS：司王季米特里奥斯"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "司王季米特里奥斯",
         "char": "Demetrios",
-        "con": "",
         "face": "serene",
-        "string": "这什么鬼啊！跟疯狗一样冲了过来！有你们这样打仗的吗！？",
-        "dic": 3
+        "con": "",
+        "string": "这什么鬼啊！跟疯狗一样冲了过来！有你们这样打仗的吗！？"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "BOSS：司王穆斯塔法",
-        "dic": 2
+        "con": "",
+        "string": "BOSS：司王穆斯塔法"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "司王穆斯塔法",
         "char": "KhazatarSentinel",
-        "con": "",
         "face": "serene",
-        "string": "季米特里奥斯！波里伏耶！这两个自作主张的混蛋！竟然可以让敌人趁虚而入，真是废物！",
-        "dic": 3
+        "con": "",
+        "string": "季米特里奥斯！波里伏耶！这两个自作主张的混蛋！竟然可以让敌人趁虚而入，真是废物！"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "BOSS：司王波里伏耶",
-        "dic": 2
+        "con": "",
+        "string": "BOSS：司王波里伏耶"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "司王波里伏耶",
         "char": "KhazatarSkirmisher",
-        "con": "",
         "face": "serene",
-        "string": "我们可没有死磕在这里浪费生命的理由啊！你们这些不要命在战场里横冲直撞的家伙！",
-        "dic": 3
+        "con": "",
+        "string": "我们可没有死磕在这里浪费生命的理由啊！你们这些不要命在战场里横冲直撞的家伙！"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "三个BOSS被击杀后",
-        "dic": 2
+        "con": "",
+        "string": "三个BOSS被击杀后"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊拉修莱德新兵",
         "char": "IllazuraydRecruit",
-        "con": "",
         "face": "serene",
-        "string": "宿句人被猫追捕的老鼠一样逃回了东方！我们胜利了！",
-        "dic": 3
+        "con": "",
+        "string": "宿句人被猫追捕的老鼠一样逃回了东方！我们胜利了！"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "angry",
-        "string": "孩子们！停止追击！宿句人已经无法组织起像样的力量了！我们不需要无谓的伤亡！",
-        "dic": 3
+        "con": "",
+        "string": "孩子们！停止追击！宿句人已经无法组织起像样的力量了！我们不需要无谓的伤亡！"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "看到战斗结束后，世清瘫坐在地上闭上双眼呼气，放松下来的伊丽丝和余也把头靠到了世清的肩膀上",
-        "dic": 2
+        "con": "",
+        "string": "看到战斗结束后，世清瘫坐在地上闭上双眼呼气，放松下来的伊丽丝和余也把头靠到了世清的肩膀上"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
+        "face": "serene",
         "con": "ATSPCE",
-        "face": "serene",
-        "string": "真是激烈的战斗啊，累死我了……",
-        "dic": 1
+        "string": "真是激烈的战斗啊，累死我了……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "不过，总算是获得胜利了",
-        "dic": 3
+        "con": "",
+        "string": "不过，总算是获得胜利了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "CE",
         "face": "smile",
-        "string": "是啊……多亏了你们，伊拉修莱德再次获得了自由",
-        "dic": 3
+        "con": "CE",
+        "string": "是啊……多亏了你们，伊拉修莱德再次获得了自由"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "真过分啊，伊丽丝，只顾着和情郎打情骂俏，完全忘了你的老爸了啊",
-        "dic": 3
+        "con": "",
+        "string": "真过分啊，伊丽丝，只顾着和情郎打情骂俏，完全忘了你的老爸了啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "爸爸！你没事真是太好了！",
-        "dic": 3
+        "con": "",
+        "string": "爸爸！你没事真是太好了！"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "宿句人的伙食啥都能烤到发焦才下肚，真是一群恶俗的家伙，回到伊拉修莱德之后得好好地清理肠胃了呢",
-        "dic": 3
+        "con": "",
+        "string": "宿句人的伙食啥都能烤到发焦才下肚，真是一群恶俗的家伙，回到伊拉修莱德之后得好好地清理肠胃了呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "surprise",
-        "string": "阿齐兹国王……！",
-        "dic": 1
+        "con": "ATSP",
+        "string": "阿齐兹国王……！"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "阿齐兹行了一个隆重的礼",
-        "dic": 2
+        "con": "",
+        "string": "阿齐兹行了一个隆重的礼"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "CE",
         "face": "serene",
-        "string": "无尽感激皇帝陛下的援助，使得我们这个小小的王国足以赶走侵略者，我代表伊拉修莱德的全体国民感谢您",
-        "dic": 3
+        "con": "CE",
+        "string": "无尽感激皇帝陛下的援助，使得我们这个小小的王国足以赶走侵略者，我代表伊拉修莱德的全体国民感谢您"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPRF",
         "face": "side",
-        "string": "还在叫我陛下吗？",
-        "dic": 1
+        "con": "ATSPRF",
+        "string": "还在叫我陛下吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "……",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "阿齐兹王",
-        "char": "Aziz",
         "con": "",
-        "face": "serene",
-        "string": "谢谢你，世清",
-        "dic": 3
+        "string": "……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
+        "face": "serene",
+        "con": "",
+        "string": "谢谢你，世清"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "阿齐兹王",
+        "char": "Aziz",
+        "face": "serene",
         "con": "CE",
-        "face": "serene",
-        "string": "之前是作为伊拉修莱德的前任国王的立场跟你道谢，现在是作为伊丽丝的父亲的立场跟你的道谢",
-        "dic": 3
+        "string": "之前是作为伊拉修莱德的前任国王的立场跟你道谢，现在是作为伊丽丝的父亲的立场跟你的道谢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPRF",
         "face": "side",
-        "string": "不应该要跟我感谢，这是……女婿要做的事，不是吗？",
-        "dic": 1
+        "con": "ATSPRF",
+        "string": "不应该要跟我感谢，这是……女婿要做的事，不是吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "哈哈哈",
-        "dic": 3
+        "con": "",
+        "string": "哈哈哈"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "depress",
-        "string": "刚刚还在吐槽我们两个玩小团体呢",
-        "dic": 3
+        "con": "",
+        "string": "刚刚还在吐槽我们两个玩小团体呢"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "哈哈",
-        "dic": 3
+        "con": "",
+        "string": "哈哈"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "阁下就是世清的……妻子，忽兰皇后吧，很荣幸与你相会",
-        "dic": 3
+        "con": "",
+        "string": "阁下就是世清的……妻子，忽兰皇后吧，很荣幸与你相会"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "smile",
-        "string": "嗯，我也是这样",
-        "dic": 3
+        "con": "",
+        "string": "嗯，我也是这样"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "嗯，接下来",
-        "dic": 3
+        "con": "",
+        "string": "嗯，接下来"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "虽然由我这个败军之将说出来有点丢人，世清",
-        "dic": 3
+        "con": "",
+        "string": "虽然由我这个败军之将说出来有点丢人，世清"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "我们伊拉修莱德拥有一个传统，伟大的战士勇敢地击败了敌方的国王的话，这位战士理应获得“斯波利亚·奥匹玛”的荣誉",
-        "dic": 3
+        "con": "",
+        "string": "我们伊拉修莱德拥有一个传统，伟大的战士勇敢地击败了敌方的国王的话，这位战士理应获得“斯波利亚·奥匹玛”的荣誉"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "“最高的战利品”！",
-        "dic": 3
+        "con": "",
+        "string": "“最高的战利品”！"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "季米特里奥斯、穆斯塔法和波里伏耶那耻辱地被我们缴获的旗帜将会在我们的金色大厅供奉给为国牺牲的祖灵们",
-        "dic": 3
+        "con": "",
+        "string": "季米特里奥斯、穆斯塔法和波里伏耶那耻辱地被我们缴获的旗帜将会在我们的金色大厅供奉给为国牺牲的祖灵们"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "我们会为此举办盛大的祭典和宴会，尽情地享用着被我们守护下来的食物以及来自敌人的屈辱，使用狂欢来纪念我们的勇者",
-        "dic": 3
+        "con": "",
+        "string": "我们会为此举办盛大的祭典和宴会，尽情地享用着被我们守护下来的食物以及来自敌人的屈辱，使用狂欢来纪念我们的勇者"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "RF",
         "face": "smile",
-        "string": "爸爸，这次的斯波利亚·奥匹玛将会是我们国家有史以来最隆重的一次",
-        "dic": 3
+        "con": "RF",
+        "string": "爸爸，这次的斯波利亚·奥匹玛将会是我们国家有史以来最隆重的一次"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
+        "face": "smile",
         "con": "RF",
-        "face": "smile",
-        "string": "因为，这不仅是纪念我们伟大勇者的仪式，同时，也是我和西景皇帝缔结姻缘的仪式",
-        "dic": 3
+        "string": "因为，这不仅是纪念我们伟大勇者的仪式，同时，也是我和西景皇帝缔结姻缘的仪式"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "这样子啊，哈哈哈",
-        "dic": 3
+        "con": "",
+        "string": "这样子啊，哈哈哈"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "我会为你祝福的，伊丽丝，不管怎么样，这是你的选择……你已经足以让我感到骄傲，足以让我尊重你的选择",
-        "dic": 3
+        "con": "",
+        "string": "我会为你祝福的，伊丽丝，不管怎么样，这是你的选择……你已经足以让我感到骄傲，足以让我尊重你的选择"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "RF",
         "face": "smile",
-        "string": "谢谢你的祝福，爸爸",
-        "dic": 3
+        "con": "RF",
+        "string": "谢谢你的祝福，爸爸"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "side",
-        "string": "……",
-        "dic": 3
+        "con": "",
+        "string": "……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
+        "face": "sad",
         "con": "ATSP",
-        "face": "sad",
-        "string": "余……",
-        "dic": 1
+        "string": "余……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "CE",
         "face": "serene",
-        "string": "(这也是没办法的事……该怎么化解尴尬好呢……)",
-        "dic": 3
+        "con": "CE",
+        "string": "(这也是没办法的事……该怎么化解尴尬好呢……)"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "smile",
-        "string": "我们走吧，世清，伊丽丝，还有阿齐兹老爹",
-        "dic": 3
+        "con": "",
+        "string": "我们走吧，世清，伊丽丝，还有阿齐兹老爹"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "别多想了，世清，刚刚我只是在思考这个辈分应该怎么称呼，我最后还是想不通！所以就这样叫了",
-        "dic": 3
+        "con": "",
+        "string": "别多想了，世清，刚刚我只是在思考这个辈分应该怎么称呼，我最后还是想不通！所以就这样叫了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "smile",
-        "string": "经历了如此激烈的战斗已经很饥饿了呢，阿齐兹老爹，我饭量很大的，真是期待伊拉修莱德的美食啊",
-        "dic": 3
+        "con": "",
+        "string": "经历了如此激烈的战斗已经很饥饿了呢，阿齐兹老爹，我饭量很大的，真是期待伊拉修莱德的美食啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "surprise",
-        "string": "啊……",
-        "dic": 3
+        "con": "",
+        "string": "啊……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "哈哈，真有活力啊，大媳妇，你就尽量吃吧，我们伊拉修莱德可是对自己的美食很有自信哦",
-        "dic": 3
+        "con": "",
+        "string": "哈哈，真有活力啊，大媳妇，你就尽量吃吧，我们伊拉修莱德可是对自己的美食很有自信哦"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "余",
         "char": "YoEmpireFlower",
-        "con": "",
         "face": "sinister",
-        "string": "那我就不客气了，走吧，世清，伊丽丝",
-        "dic": 3
+        "con": "",
+        "string": "那我就不客气了，走吧，世清，伊丽丝"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "sad",
-        "string": "余……",
-        "dic": 3
+        "con": "",
+        "string": "余……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "smile",
-        "string": "嗯，我们走吧，为我们的胜利欢呼",
-        "dic": 3
+        "con": "",
+        "string": "嗯，我们走吧，为我们的胜利欢呼"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "伊拉修莱德金色大厅在举办着世清和伊丽丝的结婚宴会，而在远离人群的厅外世清独自在这里吹着海风，阿齐兹国王也跟着从室内走了出来",
-        "dic": 2
+        "con": "",
+        "string": "伊拉修莱德金色大厅在举办着世清和伊丽丝的结婚宴会，而在远离人群的厅外世清独自在这里吹着海风，阿齐兹国王也跟着从室内走了出来"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "你是主角哦，不去应酬，也走出来吹晚风吗？",
-        "dic": 3
+        "con": "",
+        "string": "你是主角哦，不去应酬，也走出来吹晚风吗？"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
+        "face": "serene",
         "con": "SW",
-        "face": "serene",
-        "string": "我很害怕人多的场合，您不也是自己独自一人出来吹风吗？",
-        "dic": 1
+        "string": "我很害怕人多的场合，您不也是自己独自一人出来吹风吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
+        "face": "serene",
         "con": "",
-        "face": "serene",
-        "string": "只是有点感叹",
-        "dic": 3
+        "string": "只是有点感叹"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "CE",
         "face": "serene",
-        "string": "我老了啊，伊丽丝已经是独当一面的女王了……米莉安也失踪十几年了……",
-        "dic": 3
+        "con": "CE",
+        "string": "我老了啊，伊丽丝已经是独当一面的女王了……米莉安也失踪十几年了……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "CE",
         "face": "serene",
-        "string": "时间也过得真快啊，不属于我的时代已经来临了，不知道是不是被抓了这段时间被关得太久了，见到家人马上变得多愁善感呢",
-        "dic": 3
+        "con": "CE",
+        "string": "时间也过得真快啊，不属于我的时代已经来临了，不知道是不是被抓了这段时间被关得太久了，见到家人马上变得多愁善感呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "",
         "face": "serene",
-        "string": "别这么说，新生的伊拉修莱德帝国是需要您的辅助的",
-        "dic": 1
+        "con": "",
+        "string": "别这么说，新生的伊拉修莱德帝国是需要您的辅助的"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "哎，你也不需要这样安慰我……",
-        "dic": 3
+        "con": "",
+        "string": "哎，你也不需要这样安慰我……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "……",
-        "dic": 3
+        "con": "",
+        "string": "……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "surprise",
-        "string": "你说什么？伊拉修莱德帝国！？",
-        "dic": 3
+        "con": "",
+        "string": "你说什么？伊拉修莱德帝国！？"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "SW",
         "face": "serene",
-        "string": "伊丽没有跟您说吗？",
-        "dic": 1
+        "con": "SW",
+        "string": "伊丽没有跟您说吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "surprise",
-        "string": "……",
-        "dic": 3
+        "con": "",
+        "string": "……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
+        "face": "serene",
         "con": "SW",
-        "face": "serene",
-        "string": "(这对父女的沟通真是灾难啊……)",
-        "dic": 1
+        "string": "(这对父女的沟通真是灾难啊……)"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
+        "face": "serene",
         "con": "CE",
-        "face": "serene",
-        "string": "我这女儿，让我想起了我年轻的时候了，一样的胡来",
-        "dic": 3
+        "string": "我这女儿，让我想起了我年轻的时候了，一样的胡来"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "哈哈，莫名其妙的，女儿就嫁出去了，真不知道摆出什么表情好啊",
-        "dic": 3
+        "con": "",
+        "string": "哈哈，莫名其妙的，女儿就嫁出去了，真不知道摆出什么表情好啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "不过其他不提，当初我看人的眼光还是可以的嘛",
-        "dic": 3
+        "con": "",
+        "string": "不过其他不提，当初我看人的眼光还是可以的嘛"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
+        "face": "serene",
         "con": "SW",
-        "face": "serene",
-        "string": "那个……难道您战败被抓也是考虑到的一部分么……",
-        "dic": 1
+        "string": "那个……难道您战败被抓也是考虑到的一部分么……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
+        "face": "serene",
         "con": "",
-        "face": "serene",
-        "string": "……我有考虑过这点，但是我不会用自己来开玩笑的，被那群异教徒抓住被折磨死掉的几率可不低啊",
-        "dic": 3
+        "string": "……我有考虑过这点，但是我不会用自己来开玩笑的，被那群异教徒抓住被折磨死掉的几率可不低啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
+        "face": "serene",
         "con": "CE",
-        "face": "serene",
-        "string": "我只是个凡人……世事不会因为我的意志而运转，我只能根据命运的安排去找到看上去最好的道路，仅此而已……",
-        "dic": 3
+        "string": "我只是个凡人……世事不会因为我的意志而运转，我只能根据命运的安排去找到看上去最好的道路，仅此而已……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "现在……你成功保护了伊安用生命为代价去保护的东西，伊丽丝也找到了属于自己的幸福，伊安他在天之灵也会感觉很欣慰吧",
-        "dic": 3
+        "con": "",
+        "string": "现在……你成功保护了伊安用生命为代价去保护的东西，伊丽丝也找到了属于自己的幸福，伊安他在天之灵也会感觉很欣慰吧"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "",
         "face": "side",
-        "string": "伊安……",
-        "dic": 1
+        "con": "",
+        "string": "伊安……"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
-        "con": "",
         "face": "smile",
-        "string": "伊丽丝从大厅走了出来",
-        "dic": 2
+        "con": "",
+        "string": "伊丽丝从大厅走了出来"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "smile",
-        "string": "嘿……我这女儿真会麻烦人啊，连休息的时间都不给我，以后可有的是忙了",
-        "dic": 3
+        "con": "",
+        "string": "嘿……我这女儿真会麻烦人啊，连休息的时间都不给我，以后可有的是忙了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "世清……在日后的时光……好好对待我女儿",
-        "dic": 3
+        "con": "",
+        "string": "世清……在日后的时光……好好对待我女儿"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "阿齐兹王",
         "char": "Aziz",
-        "con": "",
         "face": "serene",
-        "string": "还有……不要忘了那个为了你一直在故作坚强的忽兰皇后",
-        "dic": 3
+        "con": "",
+        "string": "还有……不要忘了那个为了你一直在故作坚强的忽兰皇后"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "",
         "face": "sad",
-        "string": "谢谢你，阿齐兹老爹",
-        "dic": 1
+        "con": "",
+        "string": "谢谢你，阿齐兹老爹"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
+        "face": "smile",
         "con": "",
-        "face": "smile",
-        "string": "阿齐兹王拍了拍世清的肩膀后，回到了大厅里，只留下伊丽丝和世清独处",
-        "dic": 2
+        "string": "阿齐兹王拍了拍世清的肩膀后，回到了大厅里，只留下伊丽丝和世清独处"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "happy",
-        "string": "世清……",
-        "dic": 3
+        "con": "RF",
+        "string": "世清……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RF",
         "face": "side",
-        "string": "今天的你比起我认识你的任何时候都要华丽",
-        "dic": 1
+        "con": "RF",
+        "string": "今天的你比起我认识你的任何时候都要华丽"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "smile",
-        "string": "谢谢你……",
-        "dic": 3
+        "con": "RF",
+        "string": "谢谢你……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RF",
         "face": "side",
-        "string": "……(四处张望)",
-        "dic": 1
+        "con": "RF",
+        "string": "……(四处张望)"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "smile",
-        "string": "你在找她吗？余她……说身体有一点不舒服，所以……",
-        "dic": 3
+        "con": "RF",
+        "string": "你在找她吗？余她……说身体有一点不舒服，所以……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RFCE",
         "face": "serene",
-        "string": "那只是借口",
-        "dic": 1
+        "con": "RFCE",
+        "string": "那只是借口"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RFCE",
         "face": "smile",
-        "string": "我知道……",
-        "dic": 3
+        "con": "RFCE",
+        "string": "我知道……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RFCE",
         "face": "smile",
-        "string": "……",
-        "dic": 3
+        "con": "RFCE",
+        "string": "……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RFCE",
         "face": "smile",
-        "string": "这样两人独处，我想起了我们刚刚认识的时候……",
-        "dic": 3
+        "con": "RFCE",
+        "string": "这样两人独处，我想起了我们刚刚认识的时候……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RF",
         "face": "serene",
-        "string": "真是充满了回忆",
-        "dic": 1
+        "con": "RF",
+        "string": "真是充满了回忆"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RF",
         "face": "side",
-        "string": "看，从这里往那个方向看",
-        "dic": 1
+        "con": "RF",
+        "string": "看，从这里往那个方向看"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "smile",
-        "string": "是我的房间……",
-        "dic": 3
+        "con": "RF",
+        "string": "是我的房间……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "smile",
-        "string": "从那天开始，我们彼此才敞开心扉相处呢",
-        "dic": 3
+        "con": "RF",
+        "string": "从那天开始，我们彼此才敞开心扉相处呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RFCE",
         "face": "serene",
-        "string": "是啊……",
-        "dic": 1
+        "con": "RFCE",
+        "string": "是啊……"
     },
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
+        "face": "smile",
         "con": "",
-        "face": "smile",
-        "string": "陷入了死寂之中，伊丽丝打破沉默来到世清身边，抱紧他的手",
-        "dic": 2
+        "string": "陷入了死寂之中，伊丽丝打破沉默来到世清身边，抱紧他的手"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RFCE",
         "face": "smile",
-        "string": "你怎么突然变得不会和我相处了？",
-        "dic": 3
+        "con": "RFCE",
+        "string": "你怎么突然变得不会和我相处了？"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RF",
         "face": "side",
-        "string": "作为伙伴的伊丽我可以和她毫无顾忌地相处",
-        "dic": 1
+        "con": "RF",
+        "string": "作为伙伴的伊丽我可以和她毫无顾忌地相处"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
+        "face": "serene",
         "con": "RFCE",
-        "face": "serene",
-        "string": "但是，作为妻子的伊丽……我还需要时间去学习如何相处",
-        "dic": 1
+        "string": "但是，作为妻子的伊丽……我还需要时间去学习如何相处"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "serene",
-        "string": "这样子啊",
-        "dic": 3
+        "con": "RF",
+        "string": "这样子啊"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "serene",
-        "string": "宴会结束之后，属于我们的空间里，多得是时间彼此认识，不是吗？",
-        "dic": 3
+        "con": "RF",
+        "string": "宴会结束之后，属于我们的空间里，多得是时间彼此认识，不是吗？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "serene",
-        "string": "……那晚说实话因为束手束脚的无法尽兴呢",
-        "dic": 3
+        "con": "RF",
+        "string": "……那晚说实话因为束手束脚的无法尽兴呢"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RFCE",
         "face": "serene",
-        "string": "我是指……",
-        "dic": 1
+        "con": "RFCE",
+        "string": "我是指……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "happy",
-        "string": "世清！",
-        "dic": 3
+        "con": "RF",
+        "string": "世清！"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "extra2",
-        "string": "我知道你想说什么……",
-        "dic": 3
+        "con": "RF",
+        "string": "我知道你想说什么……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RF",
         "face": "extra2",
-        "string": "接下来漫长的余生，想要找到彼此最好的解决办法，时间还多得是……不是吗？",
-        "dic": 3
+        "con": "RF",
+        "string": "接下来漫长的余生，想要找到彼此最好的解决办法，时间还多得是……不是吗？"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RFCE",
         "face": "serene",
-        "string": "……",
-        "dic": 1
+        "con": "RFCE",
+        "string": "……"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEpisode",
-        "con": "RFCE",
         "face": "serene",
-        "string": "那么……余生请多多指教了……伊……老婆……",
-        "dic": 1
+        "con": "RFCE",
+        "string": "那么……余生请多多指教了……伊……老婆……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisEpisode",
-        "con": "RFCE",
         "face": "smile",
-        "string": "嗯……你也是……老公……",
-        "dic": 3
+        "con": "RFCE",
+        "string": "嗯……你也是……老公……"
     }
 ]

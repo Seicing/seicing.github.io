@@ -1,335 +1,335 @@
 [
     {
+        "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
+        "face": "smile",
         "con": "",
-        "face": "smile",
-        "string": "造访明玲的神宫",
-        "dic": 2
+        "string": "造访明玲的神宫"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "smile",
-        "string": "啊，是世清啊，还带了朋友回来……",
-        "dic": 3
+        "con": "AT",
+        "string": "啊，是世清啊，还带了朋友回来……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "happy",
-        "string": "咦，这不是新取吗？有点认不出来",
-        "dic": 3
+        "con": "AT",
+        "string": "咦，这不是新取吗？有点认不出来"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "明玲姐，好久不见了",
-        "dic": 3
+        "con": "",
+        "string": "明玲姐，好久不见了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "happy",
-        "string": "你变化好大啊，变得更有女人味了",
-        "dic": 3
+        "con": "AT",
+        "string": "你变化好大啊，变得更有女人味了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "明玲姐却相反，还是和以前一样年轻哦",
-        "dic": 3
+        "con": "",
+        "string": "明玲姐却相反，还是和以前一样年轻哦"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "happy",
-        "string": "还是这么会说话啊",
-        "dic": 3
+        "con": "AT",
+        "string": "还是这么会说话啊"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "serene",
-        "string": "你们认识？",
-        "dic": 1
+        "con": "ATSP",
+        "string": "你们认识？"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "smile",
-        "string": "真是巧合啊，没想到世清你说以前侍奉过的神宫，和我待的是同一间",
-        "dic": 3
+        "con": "",
+        "string": "真是巧合啊，没想到世清你说以前侍奉过的神宫，和我待的是同一间"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSP",
         "face": "side",
-        "string": "……确实有这一回事，我们认识的时候你说过",
-        "dic": 1
+        "con": "ATSP",
+        "string": "……确实有这一回事，我们认识的时候你说过"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
+        "face": "smile",
         "con": "ATCE",
-        "face": "smile",
-        "string": "命运是一种很奇妙的东西",
-        "dic": 3
+        "string": "命运是一种很奇妙的东西"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "smile",
-        "string": "新取就是你所说的在外面流浪时期冒险的同伴吧",
-        "dic": 3
+        "con": "AT",
+        "string": "新取就是你所说的在外面流浪时期冒险的同伴吧"
     },
     {
+        "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingEmpireJade",
-        "con": "ATSPCE",
         "face": "serene",
-        "string": "如果我没理解错误的话，是的",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "serene",
-        "string": "新取是伊丽的西景名吗？",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "smile",
-        "string": "嗯，是的",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "con": "AT",
-        "face": "smile",
-        "string": "新取来到西景的时候身边总是跟着一只信鸟，自己也像小鸟一样可爱",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "con": "AT",
-        "face": "happy",
-        "string": "所以我就叫她新取了，在东煌语里面新取和信鸟是同音，还不错吧",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "sad",
-        "string": "品味还是那么糟糕啊",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "smile",
-        "string": "也没啥啦，其实我还挺喜欢这个名字的",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "smile",
-        "string": "真怀念啊，几年前下定决心逃到了这里，被明玲姐收留成为见习神从",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "smile",
-        "string": "这里一点变化都没有，还是那么让人熟悉",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "con": "AT",
-        "face": "smile",
-        "string": "多亏了新取，你和羽三走掉之后神宫才没有因此陷入财政危机",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "sad",
-        "string": "明玲姐你不会是把用在我身上的那一套直接用到刚来没多久的伊丽身上吧",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
-        "con": "ATSP",
-        "face": "sad",
-        "string": "伊丽的脾气还真好啊",
-        "dic": 1
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "smile",
-        "string": "也没啦，明玲姐对我很好的",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "con": "AT",
-        "face": "smile",
-        "string": "对待女孩子我还是很温柔的，男孩子要多点锻炼才能成为可靠的男人啊",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "con": "AT",
-        "face": "happy",
-        "string": "对了，新取，你的哥哥身体还安好吗？",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "伊丽丝",
-        "char": "IrisMrazKralitsata",
-        "con": "",
-        "face": "sad",
-        "string": "……这个……他……",
-        "dic": 3
-    },
-    {
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingEmpireJade",
         "con": "ATSPCE",
-        "face": "sad",
-        "string": "明玲姐……",
-        "dic": 1
+        "string": "如果我没理解错误的话，是的"
     },
     {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingEmpireJade",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "新取是伊丽的西景名吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "smile",
+        "con": "",
+        "string": "嗯，是的"
+    },
+    {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
+        "face": "smile",
         "con": "AT",
+        "string": "新取来到西景的时候身边总是跟着一只信鸟，自己也像小鸟一样可爱"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "happy",
+        "con": "AT",
+        "string": "所以我就叫她新取了，在东煌语里面新取和信鸟是同音，还不错吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingEmpireJade",
+        "face": "sad",
+        "con": "ATSP",
+        "string": "品味还是那么糟糕啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "smile",
+        "con": "",
+        "string": "也没啥啦，其实我还挺喜欢这个名字的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "smile",
+        "con": "",
+        "string": "真怀念啊，几年前下定决心逃到了这里，被明玲姐收留成为见习神从"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "smile",
+        "con": "",
+        "string": "这里一点变化都没有，还是那么让人熟悉"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "AT",
+        "string": "多亏了新取，你和羽三走掉之后神宫才没有因此陷入财政危机"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingEmpireJade",
+        "face": "sad",
+        "con": "ATSP",
+        "string": "明玲姐你不会是把用在我身上的那一套直接用到刚来没多久的伊丽身上吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingEmpireJade",
+        "face": "sad",
+        "con": "ATSP",
+        "string": "伊丽的脾气还真好啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "smile",
+        "con": "",
+        "string": "也没啦，明玲姐对我很好的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "AT",
+        "string": "对待女孩子我还是很温柔的，男孩子要多点锻炼才能成为可靠的男人啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "happy",
+        "con": "AT",
+        "string": "对了，新取，你的哥哥身体还安好吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisMrazKralitsata",
+        "face": "sad",
+        "con": "",
+        "string": "……这个……他……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingEmpireJade",
+        "face": "sad",
+        "con": "ATSPCE",
+        "string": "明玲姐……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
         "face": "depress",
-        "string": "啊……抱歉",
-        "dic": 3
+        "con": "AT",
+        "string": "啊……抱歉"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "sad",
-        "string": "请不要放在心上",
-        "dic": 3
+        "con": "",
+        "string": "请不要放在心上"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
+        "face": "sad",
         "con": "CE",
-        "face": "sad",
-        "string": "这也是属于伊安哥哥的命运……",
-        "dic": 3
+        "string": "这也是属于伊安哥哥的命运……"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "smile",
-        "string": "看起来发生了很多事呢",
-        "dic": 3
+        "con": "AT",
+        "string": "看起来发生了很多事呢"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "smile",
-        "string": "我们还是进来再好好叙旧吧，竟然让你们在这里站了这么久",
-        "dic": 3
+        "con": "AT",
+        "string": "我们还是进来再好好叙旧吧，竟然让你们在这里站了这么久"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "smile",
-        "string": "世清当上皇帝之后，神宫冷清了很多，很少像现在这样喧闹了",
-        "dic": 3
+        "con": "AT",
+        "string": "世清当上皇帝之后，神宫冷清了很多，很少像现在这样喧闹了"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
-        "con": "",
         "face": "happy",
-        "string": "谢谢，明玲姐，我很想念你泡的茶",
-        "dic": 3
+        "con": "",
+        "string": "谢谢，明玲姐，我很想念你泡的茶"
     },
     {
+        "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "con": "AT",
         "face": "happy",
-        "string": "哈哈哈，以后多点来神宫玩，我随时都会欢迎你的",
-        "dic": 3
+        "con": "AT",
+        "string": "哈哈哈，以后多点来神宫玩，我随时都会欢迎你的"
     }
 ]
