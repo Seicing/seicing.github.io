@@ -2,7 +2,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "脸上有伤疤的女子",
+        "name": "脸上有烧伤的女子",
         "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
@@ -20,11 +20,11 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "脸上有伤疤的女子",
+        "name": "脸上有烧伤的女子",
         "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
-        "string": "世清，果然在这里啊"
+        "string": "果然在这里啊"
     },
     {
         "dic": 2,
@@ -45,6 +45,24 @@
         "string": "羽三"
     },
     {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "今天天气真好"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "wry",
+        "con": "",
+        "string": "你想在这里躺一整天吗？明明应该是朝气蓬勃的年纪，跟个老头子一样"
+    },
+    {
         "dic": 1,
         "branch": "",
         "name": "世清",
@@ -60,7 +78,34 @@
         "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
-        "string": "和我一起去吧"
+        "string": "嗯，记得晚上之前要回神宫哦"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "明玲姐会担心的"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清站了起来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "嗯？你也要一起去吗？"
     },
     {
         "dic": 1,
@@ -69,16 +114,25 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "哎，今天难得放假"
+        "string": "走走也不错"
     },
     {
         "dic": 3,
         "branch": "",
         "name": "羽三",
         "char": "IuimiAcolyte",
-        "face": "wry",
+        "face": "smile",
         "con": "",
-        "string": "你想在这里躺一整天吗？明明应该是朝气蓬勃的年纪，跟个老头子一样"
+        "string": "是在担心姐姐吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "别在那胡说"
     },
     {
         "dic": 2,
@@ -94,9 +148,9 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte2",
-        "face": "serene",
+        "face": "depress",
         "con": "SP",
-        "string": "……又把我当成小孩子"
+        "string": "……又把我当成小孩子了"
     },
     {
         "dic": 3,
@@ -112,7 +166,7 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte2",
-        "face": "serene",
+        "face": "depress",
         "con": "SP",
         "string": "……话太多了，走吧"
     },
@@ -124,6 +178,123 @@
         "face": "smile",
         "con": "",
         "string": "世清和羽三下山，沿着大道来到泖支於"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "泖支於部分标记"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "大家都在宴席上有说有笑，明玲看到了在一边观察的皇帝，走了出去攀谈"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "是明玲阁下，有什么事情吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "AT",
+        "string": "不进去亲自祝福吗"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "……！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "辩向四周看了看，像是放下了戒备一样松了一口气 "
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "sad",
+        "con": "AT",
+        "string": "我大概可以理解为什么要忍受着切肤之痛把世清交付到我手中了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "wry",
+        "con": "",
+        "string": "不愧是和元平一样的宫黄后裔"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "wry",
+        "con": "",
+        "string": "想必是当时元平托孤的时候，你就察觉到我的存在了吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "AT",
+        "string": "感知能力我不如元平姑姑，当时只能微弱地感知到还有一个人"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "sad",
+        "con": "AT",
+        "string": "……是无论如何无情，也不想错过自己儿子的成人礼吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "wry",
+        "con": "CE",
+        "string": "……嗯"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "未修改标记"
     },
     {
         "dic": 1,
