@@ -177,7 +177,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "泖支於部分标记"
+        "string": "泖支於部分标记【【【【【【【【【【【【【"
     },
     {
         "dic": 2,
@@ -767,7 +767,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "神秘黑衣男子",
+        "name": "？？？",
         "char": "Orlok",
         "face": "smile",
         "con": "AT",
@@ -798,7 +798,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "辩朝着世清所在的房间跑去，只剩下鸟嘴面罩男子和明玲在对峙，这时候文跑了出来"
+        "string": "辩朝着世清所在的房间跑去，只剩下欧洛克和明玲在对峙，这时候文跑了出来"
     },
     {
         "dic": 3,
@@ -812,7 +812,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "神秘黑衣男子",
+        "name": "？？？",
         "char": "Orlok",
         "face": "smile",
         "con": "AT",
@@ -834,12 +834,12 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "鸟嘴面罩男子身上冒出大量红色气体，面罩脱下，面目变得很狰狞"
+        "string": "欧洛克身上冒出大量红色气体，面罩脱下，面目变得很狰狞"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "神秘黑衣男子",
+        "name": "？？？",
         "char": "OrlokAtavism",
         "face": "sinister",
         "con": "",
@@ -848,7 +848,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "神秘黑衣男子",
+        "name": "？？？",
         "char": "OrlokAtavism",
         "face": "sinister",
         "con": "",
@@ -933,7 +933,7 @@
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
-        "string": "接下来我就像原计划那样，在这里待命吗？"
+        "string": "接下来我就像原计划那样，去河边待命吗？"
     },
     {
         "dic": 3,
@@ -954,13 +954,49 @@
         "string": "为了减少作战失败的风险，我切断对讲机了"
     },
     {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "森林中"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "到底发生了什么事？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "你受伤了"
+    },
+    {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
-        "char": "Sanyogita",
-        "face": "serene",
-        "con": "AT",
-        "string": "…… "
+        "name": "辩",
+        "char": "Byinn",
+        "face": "endure",
+        "con": "",
+        "string": "躲开要害了，只是擦伤，但似乎有毒"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "endure",
+        "con": "",
+        "string": "真丢人……竟然如此狼狈"
     },
     {
         "dic": 2,
@@ -969,7 +1005,610 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "未修改标记"
+        "string": "还没说完，狙击向辩射来，辩马上具现化出臂铠权现将其挡下"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "看起来一击毙命是不可能的，只能慢慢消磨了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "angry",
+        "con": "CE",
+        "string": "啧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "大哥！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "angry",
+        "con": "CE",
+        "string": "他们的目标是你，我帮你拖延时间，快跑"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "不行，这怎么可能"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "又是这种不舍得跑导致两个都跑不掉的白痴"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "狙击枪的子弹再次向辩射来，世清具现化和辩使用的臂铠一样的权现挡下来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "浪费力气"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "跟我一样的……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "光是挨打也不是办法，这样会被消磨力气到倒下的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "angry",
+        "con": "SP",
+        "string": "真棘手，距离太远了，感知不到敌人在哪里"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "敌人位置绝对有利，我们是不可以快速接近然后将他击倒的，更不用说我们连他在哪都不知道"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "如果知道他的位置我就可以结束战斗"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "但很显然，机会只有一次"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "世清，让我看看你是如何战斗的吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "我已经好好地瞄准了你的脖子，下一发就能让你身首分离"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "说罢，又一发狙击射过来，世清躲开的同时马上具现化出一把狙击枪向着子弹射去的方向射去，并成功命中了目标"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Gennai",
+        "face": "surprise",
+        "con": "AT",
+        "string": "什么！？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "命中了？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "完全相反的方向……？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清朝着声音的方向追了过去，辩也跟着快速地跑了上去"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "狙击手大声说话，暴露自己的位置真奇怪"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "除非是故意……在引导我们朝着错误的方向攻击！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "嗯，逆转思维的话，就是在完全相反的地方，虽然只是在赌，但似乎赌对了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "smile",
+        "con": "",
+        "string": "做得好，我在你身上看到了元平的影子，不愧是……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "……？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "CE",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "这样的战术，只能是远距离操控傀儡的那个人了……结社的高层“源内”"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "世清，在接近时注意异常的魔力源"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "那个源内最近研发出了一种叫“人工大日如来”的恐怖炸弹，可以一瞬间毁掉一整片森林"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "但是炸弹本身有着巨大的魔力量，可以很容易被感知到"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "我明白了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "两人来到河岸边，接近源内所在的位置"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "源内",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "弑神者的后裔果然不能少看，看起来，今天就要这样交代掉了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "周围没有异常的魔力波动，只有眼前的这个傀儡有着巨大的魔力量，应该就是本体没错了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "嗯，给他最后一击吧……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "等等！“只有这个傀儡”？不好！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清想要走上前了结掉源内，但这时候辩似乎察觉到了不对，向世清那边冲了过去<br>仿佛在呼应着辩的不安，源内把完全改造成人工大日如来的自身引爆<br>辩抱着世清滚动拉开距离，但还是晚了一步，伴随着核爆，天空如同白昼，整个森林传来了震天动地的声音<br>世清在短暂的晕死过去后，恢复了意识，眼前是残破不堪，风中残烛的辩"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "uncomfortable",
+        "con": "SP",
+        "string": "好痛……浑身上下好像都被震碎了一样，走不动路了……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "大哥！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "bawl",
+        "con": "",
+        "string": "这个狡猾的畜生……一切都是在他的计划之中……他甚至把自己的身体改造成了人工大日如来……以自己的性命为代价重创你……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "uncomfortable",
+        "con": "SP",
+        "string": "是你不顾一切保护了我才让我勉强活了下来吗……为什么……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "bawl",
+        "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "bawl",
+        "con": "",
+        "string": "父亲保护自己的……孩子是不需要理由的……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "bawl",
+        "con": "CE",
+        "string": "咳咳……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "父……亲……？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "bawl",
+        "con": "",
+        "string": "那个最开始的暗杀者……一直没有出现……按源内的狡猾程度来说……她也许就是最后的后手"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "bawl",
+        "con": "",
+        "string": "快逃……我的孩子……我已经……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "这到底是什么回事……请不要死……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "辩还想说什么东西，但是他的眼光渐渐地暗淡了下来，在死去之前，还一直推着世清的身体想要把世清推下河里"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "crysurprise",
+        "con": "SP",
+        "string": "这是什么……浑身……在发烫……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "crysurprise",
+        "con": "SP",
+        "string": "眼睛热热的……有液体从眼睛……流了下来……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "crysurprise",
+        "con": "SP",
+        "string": "为什么……感觉内心好像……永远地失去了某些东西……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "暗杀王和春莲走了出来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "到死还在想着把自己儿子推下河里逃跑，真感人啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Sanyogita",
+        "face": "serene",
+        "con": "AT",
+        "string": "那头阴森的白发……喂，源内，目标觉醒了也在你的计划之中么"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "源内",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "他还能动吗？动不了的话把我的黑盒子核心放到他身上，任务就算完成了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Sanyogita",
+        "face": "serene",
+        "con": "AT",
+        "string": "我想，就算是弑神者后裔也很难挨了你一发那玩意还能活蹦乱跳的"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "说着，陷入了狂暴状态的世清强行推动着浑身骨折的身体站了起来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "surprise",
+        "con": "",
+        "string": "什……什么……？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Sanyogita",
+        "face": "surprise",
+        "con": "AT",
+        "string": "这是什么怪物吗？全身的骨折正以难以置信的速度修复"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "源内",
+        "char": "Gennai",
+        "face": "angry",
+        "con": "AT",
+        "string": "撤退！暗杀王！撤退！任务失败了！目标已经没办法控制了！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "surprise",
+        "con": "AT",
+        "string": "啧，记得你说过的话，就算失败了也要给我全额的报酬"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "暗杀王逃跑了，只剩下还没搞清楚情况的春莲呆在了原地"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "未修改标记【【【【【【【【【【【【【"
     },
     {
         "dic": 0,
