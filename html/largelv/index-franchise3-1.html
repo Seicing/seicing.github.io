@@ -331,6 +331,43 @@
             applyFilters();
         });
     });
+
+    // ============================
+    // ★ 左上角跳转按钮（位于 + - 下方）
+    // ============================
+    const JumpControl = L.Control.extend({
+        options: {
+            position: 'topleft'
+        },
+
+        onAdd: function () {
+            const container = L.DomUtil.create(
+                'div',
+                'leaflet-bar leaflet-control'
+            );
+
+            const btn = L.DomUtil.create('a', '', container);
+            btn.innerHTML = '←';   // 可换成文字 / 图标
+            btn.href = '#';
+            btn.title = '返回';
+
+            btn.style.width = '26px';
+            btn.style.height = '26px';
+            btn.style.lineHeight = '26px';
+            btn.style.textAlign = 'center';
+            btn.style.fontSize = '16px';
+
+            L.DomEvent.on(btn, 'click', function (e) {
+                L.DomEvent.stop(e);
+                location.href = 'https://seicing.com/html/index-aoeseries.html'; // ★ 改成你的目标网页
+            });
+
+            return container;
+        }
+    });
+
+    map.addControl(new JumpControl());
+
 </script>
 
 </html>
