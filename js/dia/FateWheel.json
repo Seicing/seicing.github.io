@@ -1046,7 +1046,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "源内",
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
@@ -1091,7 +1091,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "源内",
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
@@ -1109,7 +1109,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "源内",
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
@@ -1190,7 +1190,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "源内",
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
@@ -1208,7 +1208,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "源内",
         "char": "Gennai",
         "face": "surprise",
         "con": "AT",
@@ -2211,7 +2211,7 @@
         "char": "Gennai",
         "face": "angry",
         "con": "AT",
-        "string": "暗杀王！你在干什么！就这么一个女娃你也解决不了吗！？"
+        "string": "暗杀王！你在干什么！就这么一个丫头你也解决不了吗！？"
     },
     {
         "dic": 3,
@@ -2220,7 +2220,7 @@
         "char": "Sanyogita",
         "face": "angry",
         "con": "AT",
-        "string": "这丫头不是普通人！她绝对亲身经历过死亡，而且长期习惯作战的生活！"
+        "string": "这丫头不是普通人！那是死过一次的人才会有的身手！"
     },
     {
         "dic": 3,
@@ -2292,7 +2292,16 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "我的黑盒子似乎快束缚不住我的灵魂了，我不想再等20年了，就这样把我放到那边去吧"
+        "string": "我的小黑盒快到极限了，再过一会我的灵魂就会挣脱束缚被迫回归大地转世重生"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "源内",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "AT",
+        "string": "重生后我至少要很长时间才能重新觉醒意识，我等不起了，就这样把我放到那个皇帝身上吧"
     },
     {
         "dic": 3,
@@ -2319,7 +2328,7 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "……别坐地起价，就10倍的报酬，反正我死不了，等20年后我再次“觉醒”，第一个找麻烦的就是你"
+        "string": "……别坐地起价，就10倍的报酬，反正如果我今天没了，转生后第一个找麻烦的就是你"
     },
     {
         "dic": 3,
@@ -2329,5 +2338,131 @@
         "face": "smile",
         "con": "AT",
         "string": "成交"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "暗杀王把小黑盒放到辩的尸体上，一会儿之后辩重新站了起来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "被源内控制的辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "咳咳……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "serene",
+        "con": "AT",
+        "string": "真恶心，死去了的人竟然真的重新站了起来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "被源内控制的辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "欧洛克给我发消息了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "被源内控制的辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "宫黄明玲和教皇候补已经挣脱了他，正朝着这里跑来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "被源内控制的辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "我们就此散开吧，我还得去应付一下她们，适应一下新身份 "
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "serene",
+        "con": "AT",
+        "string": "我去追杀那两个小鬼"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "被源内控制的辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "为什么，我不会给你报酬的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "serene",
+        "con": "AT",
+        "string": "售后服务也好，私人恩怨也好，随便你怎么理解，你也不希望那两个小鬼出来拆穿你吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "sinister",
+        "con": "AT",
+        "string": "源内，暗杀者是以杀死目标为目的的职业，今天却连续数次把我当成工具让我失态"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "sinister",
+        "con": "AT",
+        "string": "要不是跟着你们有好处，我下一个就杀了你"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "sinister",
+        "con": "AT",
+        "string": "再见"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "暗杀王消失在了夜色中"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "被源内控制的辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "我真是越来越难理解短命种的价值观了"
     }
 ]
