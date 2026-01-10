@@ -12,45 +12,60 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
 <style>
-        body,
-        html {
-                margin: 0;
-                height: 1000px;
-                overflow: hidden;
-        }
+    body,
+    html {
+        margin: 0;
+        height: 1000px;
+        overflow: hidden;
+    }
 
-        #map {
-                width: 100%;
-                height: 1000px;
-        }
+    #map {
+        width: 100%;
+        height: 1000px;
+    }
 
-        /* 坐标显示面板 */
-        #coordBox {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                background: rgba(0, 0, 0, 0.6);
-                padding: 8px 12px;
-                color: #fff;
-                border-radius: 6px;
-                font-family: monospace;
-                z-index: 9999;
-        }
+    /* 坐标显示面板 */
+    #coordBox {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 8px 12px;
+        color: #fff;
+        border-radius: 6px;
+        font-family: monospace;
+        z-index: 9999;
+    }
 
-        #content,
-        .post,
-        .entry {
-                height: 1000px;
-                position: relative;
-        }
+    #content,
+    .post,
+    .entry {
+        height: 1000px;
+        position: relative;
+    }
 
-        #map {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-        }
+    #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #filterBar {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 1000;
+    }
+
+    #filterBar button {
+        margin: 2px;
+    }
+
+    #filterBar button.off {
+        opacity: 0.4;
+    }
 </style>
 
 </head>
@@ -72,6 +87,13 @@
 
 <div id="map"></div>
 <div id="coordBox">X: -, Y: -</div>
+<div id="filterBar">
+    <button data-filter="aoe1">帝国时代</button>
+    <button data-filter="aoe2">帝国时代2</button>
+    <button data-filter="aoe3">帝国时代3</button>
+    <button data-filter="aoe4">帝国时代4</button>
+    <button data-filter="aoem">神话时代</button>
+</div>
 
 
                         </div>
@@ -102,167 +124,213 @@
 </body>
 
 <script>
-        // ============================
-        // 地图尺寸（像素）
-        // ============================
-        const IMG_W = 4650;
-        const IMG_H = 2616;
-        const bounds = [[0, 0], [IMG_H, IMG_W]];
+    // ============================
+    // 地图尺寸（像素）
+    // ============================
+    const IMG_W = 4650;
+    const IMG_H = 2616;
+    const bounds = [[0, 0], [IMG_H, IMG_W]];
 
-        // ============================
-        // 初始化地图
-        // ============================
-        var map = L.map('map', {
-                crs: L.CRS.Simple,
-                minZoom: -3,
-                maxZoom: 3,
-                zoomSnap: 0.1,
-                attributionControl: false
+    // ============================
+    // 初始化地图
+    // ============================
+    var map = L.map('map', {
+        crs: L.CRS.Simple,
+        minZoom: -3,
+        maxZoom: 3,
+        zoomSnap: 0.1,
+        attributionControl: false
+    });
+
+    map.setView([0, 0], 0, { animate: false });
+
+    // ============================
+    // 加载底图
+    // ============================
+    const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+
+    overlay.once("load", () => {
+        map.fitBounds(bounds, { animate: false });
+
+        setTimeout(() => {
+            map.invalidateSize(true);
+            map.setZoom(map.getZoom(), { animate: false });
+        }, 150);
+    });
+
+    // ============================
+    // 坐标拾取
+    // ============================
+    var tempMarker = null;
+
+    map.on('click', function (e) {
+        let x = e.latlng.lng;
+        let y = e.latlng.lat;
+
+        document.getElementById("coordBox").innerText =
+            `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
+
+        if (tempMarker) map.removeLayer(tempMarker);
+
+        tempMarker = L.circleMarker([y, x], {
+            radius: 2,
+            color: "#3D2425",
+            fillColor: "#3D2425",
+            fillOpacity: 1
+        }).addTo(map);
+    });
+
+    // ============================
+    // 图标缩放系统
+    // ============================
+    function iconScale(zoom) {
+        return 1 + zoom * 0.25;
+    }
+
+    let currentScale = iconScale(map.getZoom());
+    const dynamicMarkers = [];
+
+    map.on("zoom", () => {
+        currentScale = iconScale(map.getZoom());
+
+        dynamicMarkers.forEach(obj => {
+            if (!obj.visible) return;
+
+            let w = obj.baseWidth * currentScale;
+            let h = obj.baseHeight * currentScale;
+
+            obj.marker.setIcon(
+                L.icon({
+                    iconUrl: obj.data.icon,
+                    iconSize: [w, h],
+                    iconAnchor: [w / 2, h]
+                })
+            );
         });
+    });
 
-        map.setView([0, 0], 0, { animate: false });
-
-        // ============================
-        // 加载底图
-        // ============================
-        const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
-
-        overlay.once("load", () => {
-                map.fitBounds(bounds, { animate: false });
-
-                // 手机 Leaflet 需要强制刷新
-                setTimeout(() => {
-                        map.invalidateSize(true);
-                        map.setZoom(map.getZoom(), { animate: false });
-                }, 150);
-        });
-
-        // ============================
-        // 坐标拾取
-        // ============================
-        var tempMarker = null;
-
-        map.on('click', function (e) {
-                let x = e.latlng.lng;
-                let y = e.latlng.lat;
-
-                document.getElementById("coordBox").innerText =
-                        `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
-
-                if (tempMarker) map.removeLayer(tempMarker);
-
-                tempMarker = L.circleMarker([y, x], {
-                        radius: 2,
-                        color: "#3D2425",
-                        fillColor: "#3D2425",
-                        fillOpacity: 1
-                }).addTo(map);
-
-                //   map.panTo([y, x]);// 
-        });
-
-        // ============================
-        // 图标缩放系统
-        // ============================
-        function iconScale(zoom) {
-                return 1 + zoom * 0.25;
+    // ============================
+    // ★ 筛选规则定义
+    // ============================
+    const FILTERS = {
+        aoe1: {
+            match: name =>
+                name.startsWith("帝国时代 ") &&
+                !name.startsWith("帝国时代2") &&
+                !name.startsWith("帝国时代3") &&
+                !name.startsWith("帝国时代4")
+        },
+        aoe2: {
+            match: name => name.startsWith("帝国时代2")
+        },
+        aoe3: {
+            match: name => name.startsWith("帝国时代3")
+        },
+        aoe4: {
+            match: name => name.startsWith("帝国时代4")
+        },
+        aoem: {
+            match: name => name.startsWith("神话时代")
         }
+    };
 
-        let currentScale = iconScale(map.getZoom());
-        const dynamicMarkers = [];
+    // ============================
+    // ★ 筛选状态（默认全开）
+    // ============================
+    const filterState = {
+        aoe1: true,
+        aoe2: true,
+        aoe3: true,
+        aoe4: true,
+        aoem: true
+    };
 
-        map.on("zoom", () => {
-                currentScale = iconScale(map.getZoom());
+    // ============================
+    // ★ 判断所属系列
+    // ============================
+    function detectSeries(name) {
+        for (const key in FILTERS) {
+            if (FILTERS[key].match(name)) return key;
+        }
+        return null;
+    }
 
-                dynamicMarkers.forEach(obj => {
-                        let w = obj.baseWidth * currentScale;
-                        let h = obj.baseHeight * currentScale;
+    // ============================
+    // ★ 应用筛选
+    // ============================
+    function applyFilters() {
+        dynamicMarkers.forEach(obj => {
+            const shouldShow = obj.series && filterState[obj.series];
 
-                        obj.marker.setIcon(
-                                L.icon({
-                                        iconUrl: obj.data.icon,
-                                        iconSize: [w, h],
-                                        iconAnchor: [w / 2, h]
-                                })
-                        );
+            if (shouldShow && !obj.visible) {
+                obj.marker.addTo(map);
+                obj.visible = true;
+            } else if (!shouldShow && obj.visible) {
+                map.removeLayer(obj.marker);
+                obj.visible = false;
+            }
+        });
+    }
+
+    // ============================
+    // 加载 locations.json
+    // ============================
+    fetch("https://seicing.com/js/locations.json")
+        .then(res => res.json())
+        .then(list => {
+
+            for (const p of list) {
+
+                const baseWidth = p.width || 36;
+                const baseHeight = p.height || 36;
+
+                const w = baseWidth * currentScale;
+                const h = baseHeight * currentScale;
+
+                let icon = L.icon({
+                    iconUrl: p.icon,
+                    iconSize: [w, h],
+                    iconAnchor: [w / 2, h]
                 });
+
+                let mk = L.marker([p.y, p.x], { icon })
+                    .addTo(map)
+                    .bindTooltip(p.name || "无名地点", {
+                        direction: "top",
+                        offset: [0, -10],
+                        opacity: 0.85
+                    })
+                    .on("click", () => {
+                        if (p.url) location.href = p.url;
+                    });
+
+                const series = detectSeries(p.name || "");
+
+                dynamicMarkers.push({
+                    marker: mk,
+                    data: p,
+                    baseWidth,
+                    baseHeight,
+                    series,
+                    visible: true
+                });
+            }
+
+            // ★ 初始应用一次筛选（默认全开，保险）
+            applyFilters();
         });
 
-        // ============================
-        // 加载 locations.json（方案 B：只读 JSON 宽高）
-        // ============================
-        fetch("https://seicing.com/js/locations.json")
-                .then(res => res.json())
-                .then(list => {
-
-                        for (const p of list) {
-
-                                // 使用 JSON 中写好的宽高
-                                const baseWidth = p.width || 36;
-                                const baseHeight = p.height || 36;
-
-                                const w = baseWidth * currentScale;
-                                const h = baseHeight * currentScale;
-
-                                let icon = L.icon({
-                                        iconUrl: p.icon,
-                                        iconSize: [w, h],
-                                        iconAnchor: [w / 2, h]
-                                });
-
-                                let mk = L.marker([p.y, p.x], { icon })
-                                        .addTo(map)
-                                        .bindTooltip(p.name || "无名地点", {
-                                                direction: "top",
-                                                offset: [0, -10],
-                                                opacity: 0.85
-                                        })
-                                        .on("click", () => { if (p.url) location.href = p.url; });
-
-                                dynamicMarkers.push({
-                                        marker: mk,
-                                        data: p,
-                                        baseWidth,
-                                        baseHeight
-                                });
-                        }
-                });
-
-
-        // ============================
-        // 自定义按钮：跳转到某网址
-        // ============================
-        var JumpControl = L.Control.extend({
-                options: {
-                        position: 'topleft' // 放在放大缩小按钮下方
-                },
-
-                onAdd: function () {
-                        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
-
-                        var link = L.DomUtil.create('a', '', container);
-                        link.innerHTML = '←';               // 按钮图标
-                        link.href = '#';                    // 先阻止默认动作
-                        link.title = '前往指定页面';
-                        link.style.fontSize = "18px";
-                        link.style.lineHeight = "26px";
-                        link.style.textAlign = "center";
-
-                        // 阻止拖动地图
-                        L.DomEvent.disableClickPropagation(container);
-
-                        // 点击跳转
-                        L.DomEvent.on(link, 'click', function (e) {
-                                e.preventDefault();
-                                window.location.href = "https://seicing.com/html/index.html";  // ←← 修改成你的网址
-                        });
-
-                        return container;
-                }
+    // ============================
+    // ★ 绑定筛选按钮（HTML 已完成）
+    // ============================
+    document.querySelectorAll("[data-filter]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const key = btn.dataset.filter;
+            filterState[key] = !filterState[key];
+            btn.classList.toggle("off", !filterState[key]);
+            applyFilters();
         });
-
-        // 加入地图
-        map.addControl(new JumpControl());
+    });
 </script>
 
 </html>
