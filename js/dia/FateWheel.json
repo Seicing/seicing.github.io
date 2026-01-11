@@ -762,7 +762,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "欧洛克试图从背后袭击辩，被明玲察觉过来光速具现化出青龙偃月刀挡了下来"
+        "string": "欧洛克试图从背后袭击辩，被明玲察觉过来光速具现化出光剑挡了下来"
     },
     {
         "dic": 3,
@@ -1976,7 +1976,7 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "sad",
-        "con": "RFSW",
+        "con": "SW",
         "string": "正是因为你对我伸出的援手，我才会从被所有人歧视的绝望中挣脱出来……"
     },
     {
@@ -1985,7 +1985,7 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "sad",
-        "con": "RFSW",
+        "con": "SW",
         "string": "我认识的世清……虽然嘴欠了点……但绝对是一个温柔的人"
     },
     {
@@ -1994,7 +1994,7 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "sad",
-        "con": "RFSW",
+        "con": "SW",
         "string": "请记起来吧……"
     },
     {
@@ -2012,7 +2012,7 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "bitter",
-        "con": "RFSW",
+        "con": "SW",
         "string": "世清……"
     },
     {
@@ -2030,7 +2030,7 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "uncomfortable",
-        "con": "RFSWCE",
+        "con": "SWCE",
         "string": "呜……"
     },
     {
@@ -2048,7 +2048,7 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "sad",
-        "con": "RFSW",
+        "con": "SW",
         "string": "？"
     },
     {
@@ -2093,8 +2093,17 @@
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "happy",
-        "con": "RFSW",
+        "con": "SW",
         "string": "世清！你醒过来了吗！太好了！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "sad",
+        "con": "SW",
+        "string": "刚刚那是什么声音？权现在说话？这不可能吧……"
     },
     {
         "dic": 1,
