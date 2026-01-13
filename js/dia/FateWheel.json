@@ -1607,7 +1607,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "……这种威力竟然还不能将其击杀吗？这到底是什么怪物"
     },
     {
@@ -1616,7 +1616,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "他还能动吗？动不了的话把我的黑盒子核心放到他身上，任务就算完成了"
     },
     {
@@ -1661,7 +1661,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "angry",
-        "con": "AT",
+        "con": "ATSP",
         "string": "撤退！暗杀王！撤退！任务失败了！目标已经暴走了！"
     },
     {
@@ -1686,9 +1686,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "咕……"
     },
     {
@@ -1713,9 +1713,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "咕……！"
     },
     {
@@ -1740,9 +1740,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "复……仇……？"
     },
     {
@@ -1785,45 +1785,45 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "你在说什么……？什么是复仇……？什么是悔恨……？"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "我……"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "身体……无法控制……我……杀了人吗……"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "我到底……在干什么……身体好痛……"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "停下来……停下来……"
     },
     {
@@ -1902,9 +1902,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "咕……咕……"
     },
     {
@@ -1920,9 +1920,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "咕……咕……"
     },
     {
@@ -1956,9 +1956,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "身体……动不了……"
     },
     {
@@ -2001,9 +2001,9 @@
         "dic": 1,
         "branch": "",
         "name": "世清",
-        "char": "SeicingAcolyte",
+        "char": "SeicingAcolyteAwakening",
         "face": "endure",
-        "con": "SP",
+        "con": "SPAT",
         "string": "羽……羽三……"
     },
     {
@@ -2066,7 +2066,7 @@
         "name": "光剑权现发出的声音",
         "char": "Yunpyeng",
         "face": "wry",
-        "con": "CE",
+        "con": "CESP",
         "string": "停下来吧我的孩子"
     },
     {
@@ -2075,7 +2075,7 @@
         "name": "臂铠权现发出的声音",
         "char": "Byinn",
         "face": "sad",
-        "con": "CE",
+        "con": "CESP",
         "string": "醒来吧我的孩子，这是我最后能做的了……"
     },
     {
@@ -2156,7 +2156,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "噢噢噢……这闪闪发光的金色血液，太好了……太好了……这就是我想要的……完美的研究材料"
     },
     {
@@ -2174,7 +2174,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "angry",
-        "con": "AT",
+        "con": "ATSP",
         "string": "快点……快点把我的核心放上去，趁他最虚弱的时候！"
     },
     {
@@ -2201,7 +2201,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "angry",
-        "con": "AT",
+        "con": "ATSP",
         "string": "杀了她！可恶的小鬼！不要碍事！"
     },
     {
@@ -2219,7 +2219,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "angry",
-        "con": "AT",
+        "con": "ATSP",
         "string": "暗杀王！你在干什么！就这么一个丫头你也解决不了吗！？"
     },
     {
@@ -2237,7 +2237,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "angry",
-        "con": "AT",
+        "con": "ATSP",
         "string": "你这个废物！"
     },
     {
@@ -2264,7 +2264,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "……已经无力回天了，算了"
     },
     {
@@ -2282,7 +2282,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "刚刚抱歉……暗杀王，我会给你三倍的报酬，辛苦你了"
     },
     {
@@ -2300,7 +2300,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "我的小黑盒快到极限了，再过一会我的灵魂就会挣脱束缚被迫回归大地转世重生"
     },
     {
@@ -2309,7 +2309,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "重生后我至少要很长时间才能重新觉醒意识，我等不起了，就这样把我放到那个皇帝身上吧"
     },
     {
@@ -2318,7 +2318,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "虽然抢不到弑神者后裔的肉体很可惜……但是西景皇帝的肉体……至少对接下来的继续行动是有利的"
     },
     {
@@ -2336,7 +2336,7 @@
         "name": "源内",
         "char": "Gennai",
         "face": "smile",
-        "con": "AT",
+        "con": "ATSP",
         "string": "……别坐地起价，就10倍的报酬，反正如果我今天没了，转生后第一个找麻烦的就是你"
     },
     {
@@ -2704,7 +2704,7 @@
         "branch": "",
         "name": "暗杀王",
         "char": "Sanyogita",
-        "face": "smile",
+        "face": "surprise",
         "con": "AT",
         "string": "你真的是人类吗？"
     },
@@ -2761,5 +2761,59 @@
         "face": "uncomfortable",
         "con": "",
         "string": "世清！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "欧洛克从森林中走了出来，羽三转过身来看向这个新敌人"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "欧洛克",
+        "char": "Orlok",
+        "face": "smile",
+        "con": "AT",
+        "string": "我那好友真的会使唤人，忙完一件事又要马不停蹄来处理下一件事"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "欧洛克",
+        "char": "Orlok",
+        "face": "smile",
+        "con": "AT",
+        "string": "地上有血，暗杀王和弑神者后裔都不在，只剩下一个小丫头……是掉到河里了吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "欧洛克",
+        "char": "Orlok",
+        "face": "smile",
+        "con": "AT",
+        "string": "罢了，反正你不能回到宫黄明玲那边去了，不然我们会很麻烦的"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "欧洛克向前走了两步，羽三后退两步后果断地跳到了河里"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "欧洛克",
+        "char": "Orlok",
+        "face": "smile",
+        "con": "AT",
+        "string": "至少暂时不用担心事情会败露了"
     }
 ]
