@@ -168,7 +168,493 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "世清和羽三下山，沿着大道来到泖支於"
+        "string": "世清和羽三下山，沿着大道来到泖支於<br>教学，路上会出现一些小怪物，让玩家熟悉基本操作<br>走到一半可以看到存档点和鼬猫"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "看，是鼬猫"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "extra1",
+        "con": "",
+        "string": "好可爱啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "活跃的龙脉附近会有鼬猫活跃，最近这一带又变得兴盛起来了啊"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "鼬猫挑衅世清"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "它在邀请我揍它吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "wry",
+        "con": "",
+        "string": "那么暴力可不好哦"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "鼬猫蹦蹦跳跳后消失了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "你觉得累了吗？在龙脉附近休息一下吧"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "引导玩家使用存档点，当然不理也可以<br>继续旅程来到泖支於的牌坊入口"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "嗯？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "不会错的……这如同野兽的目光"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "是你吗？文"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "文气鼓鼓地从牌坊后面跑了出来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "depress",
+        "con": "",
+        "string": "真过分啊，把人家说成是野兽"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "CESW",
+        "string": "啊哈哈，文，你比我们还要早到啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "世清，羽三，早上好啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "sinister",
+        "con": "",
+        "string": "想我吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "真是意外，不在夏州好好待着"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "depress",
+        "con": "",
+        "string": "不欢迎我吗？我是特意请假过来的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "我不是这个意思……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "教皇候补特意请假过来，想必是有什么大事"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "surprise",
+        "con": "",
+        "string": "这样啊，你也太不爱惜自己了吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "连自己生日都忘记了吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "生日快乐，世清"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "生日……啊，今天是我的生日吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "今年是我的20岁生日"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "难道说，文是专门为我的成人礼而来的吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "sinister",
+        "con": "",
+        "string": "没错哦，感谢我吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "正经一点"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "side",
+        "con": "SP",
+        "string": "不过……谢谢你们"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "更直率点会更招人喜欢哦"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "今晚我会跟你们去神宫参加世清的成人礼，亲自为你立誓"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "真是诚惶诚恐"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "sinister",
+        "con": "",
+        "string": "真见外啊，我们可是青梅竹马哦"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "CESW",
+        "string": "哈哈"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "sinister",
+        "con": "",
+        "string": "薄情寡义……罢了，老规矩？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "店铺里"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "时间过得真快啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "跟你这家伙的孽缘也快14年了……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "depress",
+        "con": "",
+        "string": "真过分啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "sinister",
+        "con": "",
+        "string": "羽三也被你掳回来也快10年了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "不错的还击"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "真是沆瀣一气"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "文是半年后成人礼吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "到时候跟羽三一起过去祝贺好了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "同意"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "哈，先谢谢你们了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "该谢谢的应该是我，好久没吃过这么好吃的东西了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "明玲姐老是用节俭修行来教导我们，但总感觉只是因为神宫太偏远了收入少财政困难而已"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "wry",
+        "con": "",
+        "string": "各家有各家的困难呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "extra1",
+        "con": "",
+        "string": "慢点吃吧，还多着呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "SW",
+        "string": "世清真是的，在这方面跟个小孩子一样"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "extra1",
+        "con": "",
+        "string": "他本身就是小孩子"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "side",
+        "con": "SPSW",
+        "string": "不知道怎么应对你们，罢了……"
     },
     {
         "dic": 2,
