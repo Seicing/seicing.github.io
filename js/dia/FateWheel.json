@@ -267,7 +267,7 @@
         "char": "SeicingAcolyte2",
         "face": "depress",
         "con": "SP",
-        "string": "不会错的……这如同野兽的目光"
+        "string": "不会错的……这股气息"
     },
     {
         "dic": 1,
@@ -276,7 +276,7 @@
         "char": "SeicingAcolyte2",
         "face": "depress",
         "con": "SP",
-        "string": "是你吗？文"
+        "string": "文，出来吧"
     },
     {
         "dic": 2,
@@ -285,7 +285,25 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "文气鼓鼓地从牌坊后面跑了出来"
+        "string": "文从牌坊后面走了出来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "你变得越来越强了嘛，我特意压低气息躲在牌坊后面，你竟然也能察觉到我呢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "尽管很微弱，但错不了的，那股独一无二的野兽的气息"
     },
     {
         "dic": 3,
@@ -312,7 +330,7 @@
         "char": "VenAcolyte",
         "face": "happy",
         "con": "",
-        "string": "世清，羽三，早上好啊"
+        "string": "早上好啊，羽三，还有世清"
     },
     {
         "dic": 3,
@@ -366,16 +384,25 @@
         "char": "VenAcolyte",
         "face": "surprise",
         "con": "",
-        "string": "这样啊，你也太不爱惜自己了吧"
+        "string": "啊？"
     },
     {
         "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenAcolyte",
-        "face": "smile",
+        "face": "surprise",
         "con": "",
-        "string": "连自己生日都忘记了吗？"
+        "string": "你也太不爱惜自己了吧，连自己生日都忘记了吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "生日快乐哟"
     },
     {
         "dic": 3,
@@ -402,7 +429,7 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "今年是我的20岁生日"
+        "string": "今天似乎是我的20岁生日"
     },
     {
         "dic": 1,
@@ -418,9 +445,9 @@
         "branch": "",
         "name": "文",
         "char": "VenAcolyte",
-        "face": "sinister",
+        "face": "extra1",
         "con": "",
-        "string": "没错哦，感谢我吧"
+        "string": "没错哦，感激涕零地感谢我吧"
     },
     {
         "dic": 1,
@@ -438,7 +465,7 @@
         "char": "SeicingAcolyte2",
         "face": "side",
         "con": "SP",
-        "string": "不过……谢谢你们"
+        "string": "不过还是得谢谢你们如此为我着想"
     },
     {
         "dic": 3,
@@ -493,6 +520,15 @@
         "face": "sinister",
         "con": "",
         "string": "薄情寡义……罢了，老规矩？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "走"
     },
     {
         "dic": 2,
@@ -612,13 +648,22 @@
         "string": "明玲姐老是用节俭修行来教导我们，但总感觉只是因为神宫太偏远了收入少财政困难而已"
     },
     {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "不过最近通往神宫的大道的龙脉开始有鼬猫了，感觉渐渐地也会兴旺起来了"
+    },
+    {
         "dic": 3,
         "branch": "",
         "name": "文",
         "char": "VenAcolyte",
-        "face": "wry",
+        "face": "extra1",
         "con": "",
-        "string": "各家有各家的困难呢"
+        "string": "不要一面吃一面说话哦"
     },
     {
         "dic": 3,
@@ -636,7 +681,7 @@
         "char": "IuimiAcolyte",
         "face": "bitter",
         "con": "SW",
-        "string": "世清真是的，在这方面跟个小孩子一样"
+        "string": "世清真是的，跟个小孩子一样"
     },
     {
         "dic": 3,
@@ -655,6 +700,15 @@
         "face": "side",
         "con": "SPSW",
         "string": "不知道怎么应对你们，罢了……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "吃饱喝足后"
     },
     {
         "dic": 2,
@@ -690,7 +744,7 @@
         "char": "Meirei",
         "face": "smile",
         "con": "AT",
-        "string": "作为亲人，不进去亲自祝福吗"
+        "string": "不进去团聚吗？"
     },
     {
         "dic": 3,
@@ -708,7 +762,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "辩向四周看了看，像是放下了戒备一样松了一口气 "
+        "string": "辩向四周看了看，像是放下了戒备一样松了一口气"
     },
     {
         "dic": 3,
