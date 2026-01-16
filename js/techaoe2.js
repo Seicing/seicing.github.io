@@ -1052,8 +1052,8 @@ function showPic(e, taitou) {
             color: "#fff",
             padding: "6px 10px",
             borderRadius: "6px",
-            whiteSpace: "nowrap",
-            fontWeight: "bold"
+            fontWeight: "normal",
+            whiteSpace: "normal",
         });
 
         aasb.innerHTML = info.name;
