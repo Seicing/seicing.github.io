@@ -423,13 +423,22 @@
         "string": "生日……啊，今天是我的生日吗？"
     },
     {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清从兜里拿出笔记本看了下"
+    },
+    {
         "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "今天似乎是我的20岁生日"
+        "string": "今天确实似乎是我的20岁生日"
     },
     {
         "dic": 1,
@@ -447,7 +456,7 @@
         "char": "VenAcolyte",
         "face": "extra1",
         "con": "",
-        "string": "没错哦，感激涕零地感谢我吧"
+        "string": "没错哦，感激涕零地跪在我的脚边感谢我吧"
     },
     {
         "dic": 1,
@@ -644,7 +653,7 @@
         "name": "世清",
         "char": "SeicingAcolyte2",
         "face": "serene",
-        "con": "SPSW",
+        "con": "SP",
         "string": "明玲姐老是用节俭修行来教导我们，但总感觉只是因为神宫太偏远了收入少财政困难而已"
     },
     {
@@ -653,7 +662,7 @@
         "name": "世清",
         "char": "SeicingAcolyte2",
         "face": "serene",
-        "con": "SPSW",
+        "con": "SP",
         "string": "不过最近通往神宫的大道的龙脉开始有鼬猫了，感觉渐渐地也会兴旺起来了"
     },
     {
@@ -711,6 +720,447 @@
         "string": "吃饱喝足后"
     },
     {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "已经中午了啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "要回神宫了么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "在回去准备之前还得去受领世清的铭刀"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "铭刀啊，真不错啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "拥有自己的铭刀之后，你也是武者阶级的一员了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "是明玲姐给我申请的吗"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "那是自然的，你在神宫长大，加上斯理和明玲姐是财务书记和神官长"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "一般来说成人礼都会自然而然转正了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "说是这样，跟现在也没什么区别"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "顶多就是明玲姐给我的零花钱变成了好听一点的俸禄"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "平时我们就要为神宫生计到处打工，武者阶级的征召指标也自然而然完成的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "CESW",
+        "string": "啊哈哈，这样说也没错……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "如果是你的话，以皇帝为目标也不错啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "凭你的实力我可不认为是一种痴心妄想哦"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "",
+        "string": "这家伙不行的啦，倒不是实力问题，我认为世清确实有在皇帝选举中取胜的实力"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "",
+        "string": "不过世清的个性实在是太悠闲了，成为武者阶级名义上的领袖，到处被高强度征召，实在难以想象啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "extra1",
+        "con": "",
+        "string": "也是哦，毕竟是可以盯着云发呆一整天的小懒鬼"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "真会借题发挥啊 "
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "哈哈，走吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "去老朋友秦府那"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "来到秦府的店铺"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "嗯？奇怪"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "怎么了？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "秦府这家伙平时看到客人来，第一时间就会笑咧咧地迎上来的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "似乎确实不在店里，真奇怪，明明店铺是开着的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "wry",
+        "con": "",
+        "string": "这样不怕路过的人顺走店铺的东西吗？难道说，遇到了一些情况？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "仓库门开着"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "来到仓库里面"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "是鸣神的气息！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清以极快的速度具现化出一把狙击枪权现<br>教学，控制世清用狙击枪射中鸣神后就会继续剧情"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "bitter",
+        "con": "",
+        "string": "呜哇哇……得救了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "你干什么了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "我猜猜，你又是低价从某些旅行者那收了不明来历的东西，然后被里面附身的鸣神盯上了吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "happy",
+        "con": "",
+        "string": "不愧是你嘛，竟然一猜就猜出来了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "白痴，就是因为你，逼到我去学了具现化远程武器的权现，都不知道给你驱了多少次鬼了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "depress",
+        "con": "SP",
+        "string": "第一次的时候我可是吃尽了苦头，毕竟鸣神这东西不能被正常武器伤害到，上蹿下跳的把我都搞摊了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "happy",
+        "con": "",
+        "string": "这不显得您英明神武嘛？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "不开玩笑了……生日快乐啊，时间过得真快，你也正式成为成年人，以及武者阶级的一员了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "秦府在仓库翻找了一下，找出了一把被锦布包裹着的直刀"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "可不要提前打开包裹看啊，这不吉利的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "你不需要担心，这刀漂亮得很，对我的物流放心吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "秦府，谢谢你"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "你我认识了这么久，还用得着什么谢谢啊，只是有点抱歉，不能跟你一起去了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "你要忙吗？真是可惜"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "也有一方面这个原因吧，不过我还是很识趣的，还是不碍着你好了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "祝你接下来的日子一切顺利"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "你也是，再见"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "走出秦府的店铺"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "走吧，我们回神宫去"
+    },
+    {
         "dic": 2,
         "branch": "",
         "name": "",
@@ -718,6 +1168,15 @@
         "face": "smile",
         "con": "",
         "string": "泖支於部分"
+    },
+    {
+        "dic": 0,
+        "branch": null,
+        "name": null,
+        "char": null,
+        "face": null,
+        "con": null,
+        "string": null
     },
     {
         "dic": 2,
