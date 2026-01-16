@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html style="height:100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>帝国时代文明地图</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/leaflet.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/civ7.html');
+    })
+</script>
+<style>
+    body,
+    html {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 坐标显示面板 */
+    #coordBox {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 8px 12px;
+        color: #fff;
+        border-radius: 6px;
+        font-family: monospace;
+        z-index: 9999;
+    }
+
+    #content,
+    .post,
+    .entry {
+        height: 100%;
+        position: relative;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #filterBar {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 1000;
+    }
+
+    #filterBar button {
+        margin: 2px;
+    }
+
+    #filterBar button.off {
+        opacity: 0.4;
+    }
+</style>
+</head>
+
+<body style="height:100%;" id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
+                <div id="content">
+                    <div class="post">
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="15"></div>
+
+<div id="map"></div>
+<div id="coordBox">X: -, Y: -</div>
+<div id="filterBar">
+    <button data-filter="aoe2">古典时代</button>
+    <button data-filter="aoe3">探索时代</button>
+    <button data-filter="aoe4">近世时代</button>
+    <!--<button data-filter="aoem">原子时代</button>-->
+</div>
+<br>
+
+
+英国线：？？？——海盗共和国——大不列颠<br>
+法国线：？？？——诺曼——法兰西帝国<br>
+德国线：罗马——？？？——普鲁士<br>
+西班牙线：迦太基——西班牙——墨西哥<br>
+中国线：汉朝——明朝——清朝<br>
+印度线：孔雀——朱罗——莫卧儿<br>
+波斯线：阿契美尼德波斯——？？？——卡扎尔<br>
+日本线：？？？——战国日本——明治日本<br>
+朝鲜线：新罗——？？？——朝鲜<br>
+东欧线：希腊——保加利亚——俄罗斯<br>
+美洲线：玛雅——印加——？？？<br>
+北美线：密西西比——肖尼——美国<br>
+大洋洲线：汤加——夏威夷——？？？<br>
+东南亚线：高棉——满者伯夷——暹罗<br>
+非洲线：阿克苏姆——桑海——布干达<br>
+中东线：埃及——阿拔斯——奥斯曼<br>
+<br>
+无主文明<br>
+亚述、蒙古、大越、冰岛、尼泊尔
+
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        
+                    </div>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    // ============================
+    // 地图尺寸（像素）
+    // ============================
+    const IMG_W = 4650;
+    const IMG_H = 2616;
+    const bounds = [[0, 0], [IMG_H, IMG_W]];
+
+    // ============================
+    // 初始化地图
+    // ============================
+    var map = L.map('map', {
+        crs: L.CRS.Simple,
+        minZoom: -3,
+        maxZoom: 3,
+        zoomSnap: 0.1,
+        attributionControl: false
+    });
+
+    map.setView([0, 0], 0, { animate: false });
+
+    // ============================
+    // 加载底图
+    // ============================
+    const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+
+    overlay.once("load", () => {
+        map.fitBounds(bounds, { animate: false });
+
+        setTimeout(() => {
+            map.invalidateSize(true);
+            map.setZoom(map.getZoom(), { animate: false });
+        }, 150);
+    });
+
+    // ============================
+    // 坐标拾取
+    // ============================
+    var tempMarker = null;
+
+    map.on('click', function (e) {
+        let x = e.latlng.lng;
+        let y = e.latlng.lat;
+
+        document.getElementById("coordBox").innerText =
+            `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
+
+        if (tempMarker) map.removeLayer(tempMarker);
+
+        tempMarker = L.circleMarker([y, x], {
+            radius: 2,
+            color: "#3D2425",
+            fillColor: "#3D2425",
+            fillOpacity: 1
+        }).addTo(map);
+    });
+
+    // ============================
+    // 图标缩放系统
+    // ============================
+    function iconScale(zoom) {
+        return 1 + zoom * 0.25;
+    }
+
+    let currentScale = iconScale(map.getZoom());
+    const dynamicMarkers = [];
+
+    map.on("zoom", () => {
+        currentScale = iconScale(map.getZoom());
+
+        dynamicMarkers.forEach(obj => {
+            if (!obj.visible) return;
+
+            let w = obj.baseWidth * currentScale;
+            let h = obj.baseHeight * currentScale;
+
+            obj.marker.setIcon(
+                L.icon({
+                    iconUrl: obj.data.icon,
+                    iconSize: [w, h],
+                    iconAnchor: [w / 2, h]
+                })
+            );
+        });
+    });
+
+    // ============================
+    // ★ 筛选规则定义
+    // ============================
+    const FILTERS = {
+        aoe2: {
+            match: name => name.startsWith("古典时代")
+        },
+        aoe3: {
+            match: name => name.startsWith("探索时代")
+        },
+        aoe4: {
+            match: name => name.startsWith("近世时代")
+        },
+        aoem: {
+            match: name => name.startsWith("原子时代")
+        }
+    };
+
+    // ============================
+    // ★ 筛选状态（默认全开）
+    // ============================
+    const filterState = {
+        aoe2: true,
+        aoe3: true,
+        aoe4: true,
+        aoem: true
+    };
+
+    // ============================
+    // ★ 判断所属系列
+    // ============================
+    function detectSeries(name) {
+        for (const key in FILTERS) {
+            if (FILTERS[key].match(name)) return key;
+        }
+        return null;
+    }
+
+    // ============================
+    // ★ 应用筛选
+    // ============================
+    function applyFilters() {
+        dynamicMarkers.forEach(obj => {
+            const shouldShow = obj.series && filterState[obj.series];
+
+            if (shouldShow && !obj.visible) {
+                obj.marker.addTo(map);
+                obj.visible = true;
+            } else if (!shouldShow && obj.visible) {
+                map.removeLayer(obj.marker);
+                obj.visible = false;
+            }
+        });
+    }
+
+    // ============================
+    // 加载 locations.json
+    // ============================
+    fetch("https://seicing.com/js/locationsciv7.json")
+        .then(res => res.json())
+        .then(list => {
+
+            for (const p of list) {
+
+                const baseWidth = p.width || 36;
+                const baseHeight = p.height || 36;
+
+                const w = baseWidth * currentScale;
+                const h = baseHeight * currentScale;
+
+                let icon = L.icon({
+                    iconUrl: p.icon,
+                    iconSize: [w, h],
+                    iconAnchor: [w / 2, h]
+                });
+
+                let mk = L.marker([p.y, p.x], { icon })
+                    .addTo(map)
+                    .bindTooltip(p.name || "无名地点", {
+                        direction: "top",
+                        offset: [0, -10],
+                        opacity: 0.85
+                    })
+                    .on("click", () => {
+                        if (p.url) location.href = p.url;
+                    });
+
+                const series = detectSeries(p.name || "");
+
+                dynamicMarkers.push({
+                    marker: mk,
+                    data: p,
+                    baseWidth,
+                    baseHeight,
+                    series,
+                    visible: true
+                });
+            }
+
+            // ★ 初始应用一次筛选（默认全开，保险）
+            applyFilters();
+        });
+
+    // ============================
+    // ★ 绑定筛选按钮（HTML 已完成）
+    // ============================
+    document.querySelectorAll("[data-filter]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const key = btn.dataset.filter;
+            filterState[key] = !filterState[key];
+            btn.classList.toggle("off", !filterState[key]);
+            applyFilters();
+        });
+    });
+</script>
+
+</html>
