@@ -1036,6 +1036,18 @@ function showPic(e, taitou) {
         document.body.appendChild(aasb);
     }
 
+    /* ===== 文明悬浮显示 ===== */
+    if (id.startsWith("civ_")) {
+        const civ = id.replace("civ_", "");
+        const info = CIV_INFO_MAP[civ];
+        if (!info) return;
+
+        // 如果你原来是 showPicById / showTip / whatever
+        showTextTip(event, info.name);
+
+        return;
+    }
+
     Object.assign(aasb.style, {
         position: "fixed",
         zIndex: 9999,

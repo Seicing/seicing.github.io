@@ -26,6 +26,8 @@
 <script src="https://seicing.com/js/techaoe2.js"></script>
 
 <script>
+    const CIV_INFO_MAP = {};
+
     /* =====================================================
        文明列表解析（唯一文明来源）
     ===================================================== */
@@ -192,7 +194,10 @@
 
             html += `
 <td class="civcell ${mainBanned ? 'main-banned' : ''}">
-  <img src="${civObj.icon}">
+  <a onmousemove="showPic(event,'civ_${civ}');"
+     onmouseout="hiddenPic();">
+    <img src="${civObj.icon}">
+  </a>
 </td>`;
 
             /* ===== 通用科技 ===== */
@@ -314,11 +319,16 @@
             .then(html => {
                 document.getElementById("civList").innerHTML = html;
 
-                // 不自动生成表格，原来的第一按钮点击逻辑去掉
-                // const firstBtn = document.querySelector('.tech-tab');
-                // if (firstBtn) {
-                //     switchTable("infantryTable", firstBtn);
-                // }
+                // ★ 新增：读取文明中文名
+                document
+                    .querySelectorAll('#civList img[id$="2"]')
+                    .forEach(img => {
+                        const key = img.id.replace(/2$/, "");
+                        CIV_INFO_MAP[key] = {
+                            name: img.getAttribute("title") || key,
+                            icon: img.getAttribute("src")
+                        };
+                    });
             });
     });
 </script>
