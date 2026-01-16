@@ -1037,16 +1037,37 @@ function showPic(e, taitou) {
     }
 
     /* ===== 文明悬浮显示 ===== */
-    if (id.startsWith("civ_")) {
-        const civ = id.replace("civ_", "");
+    if (typeof taitou === "string" && taitou.startsWith("civ_")) {
+        const civ = taitou.replace("civ_", "");
         const info = CIV_INFO_MAP[civ];
         if (!info) return;
 
-        // 如果你原来是 showPicById / showTip / whatever
-        showTextTip(event, info.name);
+        Object.assign(aasb.style, {
+            position: "fixed",
+            zIndex: 9999,
+            pointerEvents: "none",
+            display: "block",
+            width: "auto",
+            background: "rgba(0,0,0,0.75)",
+            color: "#fff",
+            padding: "6px 10px",
+            borderRadius: "6px",
+            whiteSpace: "nowrap",
+            fontWeight: "bold"
+        });
 
-        return;
+        aasb.innerHTML = info.name;
+
+        let x = e.clientX;
+        let y = e.clientY;
+
+        aasb.style.top = (y + 18) + "px";
+        aasb.style.left = (x + 12) + "px";
+
+        return; // ★ 非常关键：文明不走下面科技逻辑
     }
+
+    /* ===== 原有科技逻辑，完全不动 ===== */
 
     Object.assign(aasb.style, {
         position: "fixed",
@@ -1082,21 +1103,19 @@ function showPic(e, taitou) {
     }
 
     let left = x - tooltipWidth / 2;
-
     const margin = 10;
 
     if (left < margin) {
         left = margin;
     }
-
     if (left + tooltipWidth > vw - margin) {
         left = vw - tooltipWidth - margin;
     }
 
-
     aasb.style.top = top + "px";
     aasb.style.left = left + "px";
 }
+
 
 function hiddenPic() {
     var aasb = document.getElementById("Layer1");
