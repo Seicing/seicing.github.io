@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <link href="https://seicing.com/css/style_lavivagnarlarge2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>文明地图</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/leaflet.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
+<style>
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+    #map {
+        position: fixed;
+        inset: 0;
+    }
+
+    /* 坐标显示面板 */
+    #coordBox {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 8px 12px;
+        color: #fff;
+        border-radius: 6px;
+        font-family: monospace;
+        z-index: 9999;
+    }
+
+    #content,
+    .post,
+    .entry {
+        height: 1000px;
+        position: relative;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #filterBar {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 1000;
+    }
+
+    #filterBar button {
+        margin: 2px;
+    }
+
+    #filterBar button.off {
+        opacity: 0.4;
+    }
+</style>
+
+</head>
+
+<body id='scroll-2'>
+    <div id="wrapper" style="width:1850px ; margin:auto">
+        <div id="wrapper2">
+
+            <div id="header" class="container">
+
+            </div>
+
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="15"></div>
+
+<div id="map"></div>
+<div id="coordBox">X: -, Y: -</div>
+<div id="filterBar">
+    <button data-filter="aoe2">古典时代</button>
+    <button data-filter="aoe3">探索时代</button>
+    <button data-filter="aoe4">近世时代</button>
+    <!--<button data-filter="aoem">原子时代</button>-->
+</div>
+<br>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div
+                    style="float:right; width:1800px; text-align:right; border-top: 1px dashed #FFF49F; position:relative; right:20px">
+                    <br>
+                    
+<a href="https://seicing.com/html/index.html"><b>回到首页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+            <div id="wrapper3">
+                <div id="lowder" class="container">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    // ============================
+    // 地图尺寸（像素）
+    // ============================
+    const IMG_W = 4650;
+    const IMG_H = 2616;
+    const bounds = [[0, 0], [IMG_H, IMG_W]];
+
+    // ============================
+    // 初始化地图
+    // ============================
+    var map = L.map('map', {
+        crs: L.CRS.Simple,
+        minZoom: -3,
+        maxZoom: 3,
+        zoomSnap: 0.1,
+        attributionControl: false
+    });
+
+    map.setView([0, 0], 0, { animate: false });
+
+    // ============================
+    // 加载底图
+    // ============================
+    const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+
+    overlay.once("load", () => {
+        map.fitBounds(bounds, { animate: false });
+
+        setTimeout(() => {
+            map.invalidateSize(true);
+            map.setZoom(map.getZoom(), { animate: false });
+        }, 150);
+    });
+
+    // ============================
+    // 坐标拾取
+    // ============================
+    var tempMarker = null;
+
+    map.on('click', function (e) {
+        let x = e.latlng.lng;
+        let y = e.latlng.lat;
+
+        document.getElementById("coordBox").innerText =
+            `X: ${Math.round(x)} ,  Y: ${Math.round(y)}`;
+
+        if (tempMarker) map.removeLayer(tempMarker);
+
+        tempMarker = L.circleMarker([y, x], {
+            radius: 2,
+            color: "#3D2425",
+            fillColor: "#3D2425",
+            fillOpacity: 1
+        }).addTo(map);
+    });
+
+    // ============================
+    // 图标缩放系统
+    // ============================
+    function iconScale(zoom) {
+        return 1 + zoom * 0.25;
+    }
+
+    let currentScale = iconScale(map.getZoom());
+    const dynamicMarkers = [];
+
+    map.on("zoom", () => {
+        currentScale = iconScale(map.getZoom());
+
+        dynamicMarkers.forEach(obj => {
+            if (!obj.visible) return;
+
+            let w = obj.baseWidth * currentScale;
+            let h = obj.baseHeight * currentScale;
+
+            obj.marker.setIcon(
+                L.icon({
+                    iconUrl: obj.data.icon,
+                    iconSize: [w, h],
+                    iconAnchor: [w / 2, h]
+                })
+            );
+        });
+    });
+
+    // ============================
+    // ★ 筛选规则定义
+    // ============================
+    const FILTERS = {
+        aoe2: {
+            match: name => name.startsWith("古典时代")
+        },
+        aoe3: {
+            match: name => name.startsWith("探索时代")
+        },
+        aoe4: {
+            match: name => name.startsWith("近世时代")
+        },
+        aoem: {
+            match: name => name.startsWith("原子时代")
+        }
+    };
+
+    // ============================
+    // ★ 筛选状态（默认全开）
+    // ============================
+    const filterState = {
+        aoe2: true,
+        aoe3: true,
+        aoe4: true,
+        aoem: true
+    };
+
+    // ============================
+    // ★ 判断所属系列
+    // ============================
+    function detectSeries(name) {
+        for (const key in FILTERS) {
+            if (FILTERS[key].match(name)) return key;
+        }
+        return null;
+    }
+
+    // ============================
+    // ★ 应用筛选
+    // ============================
+    function applyFilters() {
+        dynamicMarkers.forEach(obj => {
+            const shouldShow = obj.series && filterState[obj.series];
+
+            if (shouldShow && !obj.visible) {
+                obj.marker.addTo(map);
+                obj.visible = true;
+            } else if (!shouldShow && obj.visible) {
+                map.removeLayer(obj.marker);
+                obj.visible = false;
+            }
+        });
+    }
+
+    // ============================
+    // 加载 locations.json
+    // ============================
+    fetch("https://seicing.com/js/locationsciv7.json")
+        .then(res => res.json())
+        .then(list => {
+
+            for (const p of list) {
+
+                const baseWidth = p.width || 36;
+                const baseHeight = p.height || 36;
+
+                const w = baseWidth * currentScale;
+                const h = baseHeight * currentScale;
+
+                let icon = L.icon({
+                    iconUrl: p.icon,
+                    iconSize: [w, h],
+                    iconAnchor: [w / 2, h]
+                });
+
+                let mk = L.marker([p.y, p.x], { icon })
+                    .addTo(map)
+                    .bindTooltip(p.name || "无名地点", {
+                        direction: "top",
+                        offset: [0, -10],
+                        opacity: 0.85
+                    })
+                    .on("click", () => {
+                        if (p.url) location.href = p.url;
+                    });
+
+                const series = detectSeries(p.name || "");
+
+                dynamicMarkers.push({
+                    marker: mk,
+                    data: p,
+                    baseWidth,
+                    baseHeight,
+                    series,
+                    visible: true
+                });
+            }
+
+            // ★ 初始应用一次筛选（默认全开，保险）
+            applyFilters();
+        });
+
+    // ============================
+    // ★ 绑定筛选按钮（HTML 已完成）
+    // ============================
+    document.querySelectorAll("[data-filter]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const key = btn.dataset.filter;
+            filterState[key] = !filterState[key];
+            btn.classList.toggle("off", !filterState[key]);
+            applyFilters();
+        });
+    });
+
+    // ============================
+    // ★ 左上角跳转按钮（位于 + - 下方）
+    // ============================
+    const JumpControl = L.Control.extend({
+        options: {
+            position: 'topleft'
+        },
+
+        onAdd: function () {
+            const container = L.DomUtil.create(
+                'div',
+                'leaflet-bar leaflet-control'
+            );
+
+            const btn = L.DomUtil.create('a', '', container);
+            btn.innerHTML = '←';   // 可换成文字 / 图标
+            btn.href = '#';
+            btn.title = '返回';
+
+            btn.style.width = '26px';
+            btn.style.height = '26px';
+            btn.style.lineHeight = '26px';
+            btn.style.textAlign = 'center';
+            btn.style.fontSize = '16px';
+
+            L.DomEvent.on(btn, 'click', function (e) {
+                L.DomEvent.stop(e);
+                location.href = 'https://seicing.com/html/index-civ7.html'; // ★ 改成你的目标网页
+            });
+
+            return container;
+        }
+    });
+
+    map.addControl(new JumpControl());
+
+</script>
+
+</html>
