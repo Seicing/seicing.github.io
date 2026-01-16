@@ -1079,6 +1079,8 @@ function showPic(e, taitou) {
         color: "#fff",
         padding: "5px",
         borderRadius: "5px",
+        fontWeight: "normal",
+        whiteSpace: "normal",
     });
 
     aasb.innerHTML = ayanami && ayanami[taitou] ? ayanami[taitou] : taitou;
@@ -1355,6 +1357,8 @@ function showPic2(e) {
         borderRadius: "5px",
         zIndex: 9999,
         pointerEvents: "none", // 防止鼠标挡住元素
+        fontWeight: "normal",
+        whiteSpace: "normal",
     });
 
     let x = 0, y = 0;
