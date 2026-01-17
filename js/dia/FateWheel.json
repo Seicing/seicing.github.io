@@ -1120,7 +1120,7 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte2",
-        "face": "serene",
+        "face": "surprise",
         "con": "SP",
         "string": "啊？你不去吗？为何？"
     },
@@ -1383,7 +1383,7 @@
         "char": "Byinn",
         "face": "surprise",
         "con": "",
-        "string": "(不会错的，这把剑型权现，是宫黄族最喜欢用的……)"
+        "string": "(不会错的，这把剑型权现，是元平最喜欢用的……)"
     },
     {
         "dic": 2,
@@ -2790,13 +2790,22 @@
         "string": "跟我一样的……"
     },
     {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "奇怪……自然而然就使出来了"
+    },
+    {
         "dic": 3,
         "branch": "",
         "name": "辩",
         "char": "Byinn",
         "face": "serene",
         "con": "",
-        "string": "光是挨打也不是办法，这样会被消磨力气到倒下的"
+        "string": "但是，光是挨打也不是办法，这样会被消磨力气到倒下的"
     },
     {
         "dic": 1,
@@ -3046,7 +3055,7 @@
         "branch": "",
         "name": "辩",
         "char": "Byinn",
-        "face": "serene",
+        "face": "surprise",
         "con": "",
         "string": "等等！“只有这个傀儡”？不好！"
     },
@@ -4245,7 +4254,7 @@
         "char": "SeicingAcolyte",
         "face": "uncomfortable",
         "con": "SP",
-        "string": "辩……父亲为了保护我而死了"
+        "string": "……父亲为了保护我而死了"
     },
     {
         "dic": 3,
