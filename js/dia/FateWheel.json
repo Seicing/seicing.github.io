@@ -879,16 +879,7 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SPSW",
-        "string": "真会借题发挥啊 "
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "羽三",
-        "char": "IuimiAcolyte",
-        "face": "happy",
-        "con": "",
-        "string": "哈哈，走吧"
+        "string": "真会借题发挥啊"
     },
     {
         "dic": 3,
@@ -897,7 +888,16 @@
         "char": "IuimiAcolyte",
         "face": "smile",
         "con": "",
-        "string": "去老朋友秦府那"
+        "string": "明玲姐好像是找了秦府定做铭刀"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "我们走吧"
     },
     {
         "dic": 2,
@@ -1068,7 +1068,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "秦府在仓库翻找了一下，找出了一把被锦布包裹着的直刀"
+        "string": "秦府在仓库翻找了一下，找出了一把被锦布包裹着的直刀，把刀藏到了一堆行李里面"
     },
     {
         "dic": 1,
@@ -1077,7 +1077,16 @@
         "char": "Chinkoo",
         "face": "smile",
         "con": "",
-        "string": "可不要提前打开包裹看啊，这不吉利的"
+        "string": "正好跟明玲姐要找我买的物资放一起运回神宫去吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "好好藏好，然后可不要提前打开包裹看啊，不然会不吉利的"
     },
     {
         "dic": 1,
@@ -1104,7 +1113,7 @@
         "char": "Chinkoo",
         "face": "smile",
         "con": "",
-        "string": "你我认识了这么久，还用得着什么谢谢啊，只是有点抱歉，不能跟你一起去了"
+        "string": "你我认识了这么久，还用得着什么谢谢啊，只是有点抱歉，不能参加你的成人礼了"
     },
     {
         "dic": 1,
@@ -1113,7 +1122,7 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "为何？"
+        "string": "啊？你不去吗？为何？"
     },
     {
         "dic": 1,
@@ -1122,7 +1131,16 @@
         "char": "Chinkoo",
         "face": "smile",
         "con": "",
-        "string": "【像一个原因"
+        "string": "……怎么说呢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "应该是有你的原因吧，我就不问了"
     },
     {
         "dic": 1,
@@ -1131,7 +1149,34 @@
         "char": "Chinkoo",
         "face": "smile",
         "con": "",
-        "string": "也有一方面这个原因吧，不过我还是很识趣的，还是不碍着你好了"
+        "string": "世清，我就欣赏你这种直率的性格"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "对了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "拿到铭刀之后就别在城里晃悠了，明玲姐一定在等着吧，快点回家吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "……我知道了"
     },
     {
         "dic": 1,
@@ -1176,7 +1221,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "离开泖支於后，画面回到秦府的店铺"
+        "string": "离开泖支於后，画面回到秦府的店铺<br>春莲从门外进入"
     },
     {
         "dic": 1,
@@ -1185,7 +1230,7 @@
         "char": "Chinkoo",
         "face": "happy",
         "con": "",
-        "string": "啊，是春莲小姐啊，你要买点什么吗？"
+        "string": "是春莲小姐啊，平时多受您和阁下的关照了，你要买点什么吗？"
     },
     {
         "dic": 3,
@@ -1212,7 +1257,7 @@
         "char": "Chinkoo",
         "face": "smile",
         "con": "",
-        "string": "没有呢，他这种人也不会来我这种小店铺吧"
+        "string": "没看到过"
     },
     {
         "dic": 3,
@@ -1222,6 +1267,24 @@
         "face": "smile",
         "con": "",
         "string": "这样啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "真是个让人操心的皇帝阁下，一大早就不见了踪影，不知道我姐姐当年给他当侍女的时候，是否也如此无奈呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "wry",
+        "con": "",
+        "string": "说来家姐也是20年前的今天去世的……时间过得真快"
     },
     {
         "dic": 3,
@@ -1266,7 +1329,43 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "画面回到泖支於的出口"
+        "string": "春莲离开，画面回到泖支於的出口<br>一行人走到半路，看到独自在战斗的辩"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "surprise",
+        "con": "",
+        "string": "前面好像有人遇到了麻烦"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "……这个装束，是天风宫的神从吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "需要帮忙吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "拜托你们了"
     },
     {
         "dic": 2,
@@ -1275,7 +1374,421 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "泖支於部分"
+        "string": "BOSS战，魔物群<br>在战斗中"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "(不会错的，这把剑型权现，是宫黄族最喜欢用的……)"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "战斗结束后"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "非常感谢你们帮助我"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "皇帝阁下，为什么会独自一人出现在这里？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "surprise",
+        "con": "",
+        "string": "皇帝？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "真让人惊讶，竟然是皇帝阁下本人"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "这双纯白色的虚目，你是教皇候补文对吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "我认为你比起我出现在这里更加奇怪"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "今天我是以个人名义来参加我的朋友的成人礼的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "朋友……是这位女孩还是……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "是世清啦，他今天20岁生日了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "smile",
+        "con": "",
+        "string": "是吗……你叫世清啊……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "smile",
+        "con": "",
+        "string": "我也有事去神宫找明玲阁下，看起来我们同路"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "反正顺路，我们一起走吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "smile",
+        "con": "",
+        "string": "嗯，也好"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "回到神宫"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "明玲姐！我们回来了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "smile",
+        "con": "",
+        "string": "明玲姐，好久没见"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "AT",
+        "string": "回来了啊，还有文也来了，咦，这位是……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "happy",
+        "con": "AT",
+        "string": "竟然是皇帝阁下，光临此地真是诚惶诚恐"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "明玲阁下，今天我是以个人的名义来祭拜的，看起来你们今晚要举办成人礼，似乎有点不方便"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "AT",
+        "string": "没有问题，请您在宫中自便，如果有需要的话叫我即可"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "谢谢"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "一行人散去，辩来到了神宫里元平的坟墓前"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "sad",
+        "con": "CE",
+        "string": "对不起……元平……我这20多年里都没有来看过你"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "sad",
+        "con": "",
+        "string": "我今天见到世清了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "sad",
+        "con": "",
+        "string": "他似乎有好好地茁壮成长，出落成了一个优秀的西景男儿……长得有点像你……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "sad",
+        "con": "",
+        "string": "这20年放弃一切跟结社苦战……所累积的思念之苦和委屈……我感觉烟消云散了……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "wry",
+        "con": "",
+        "string": "我知道这很危险……但是我做不到完完全全抛下自己的妻子和儿子……今天是世清的成人礼……说什么我也要看一眼才走……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "wry",
+        "con": "",
+        "string": "你会原谅我的鲁莽吗？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "晚上，成人礼，文郑重地为世清的铭刀祝福"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "serene",
+        "con": "",
+        "string": "以永恒的西景之地为见证，在此立下誓约"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清接过了文赋予的铭刀，郑重地挂在腰间"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "happy",
+        "con": "AT",
+        "string": "好了，从今往后你就是一个真正的西景男儿了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "happy",
+        "con": "",
+        "string": "恭喜啊，恭喜"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "斯理",
+        "char": "Sri",
+        "face": "happy",
+        "con": "AL",
+        "string": "哈哈，小鬼头也变成大人了啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "斯理",
+        "char": "Sri",
+        "face": "smile",
+        "con": "AL",
+        "string": "臭小鬼，还是像以前一样啊，这么开心的日子你也表现得开心一些嘛"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "文",
+        "char": "VenAcolyte",
+        "face": "sinister",
+        "con": "",
+        "string": "世清是这样的，说不定心里在暗爽呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "ATCE",
+        "string": "(世清一直都这样，不轻易表露出自己的感情，但他绝对没有恶意)"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "smile",
+        "con": "ATCE",
+        "string": "(不知不觉他就成年了啊……元平姑姑，你有在天上看着吗？)"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "斯理",
+        "char": "Sri",
+        "face": "happy",
+        "con": "AL",
+        "string": "嘻嘻，是时候考虑结婚了哟"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "还早着呢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "女人什么的，麻烦死了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "还有由你这个老单身说这句话，真令人不爽啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "斯理",
+        "char": "Sri",
+        "face": "angry",
+        "con": "AL",
+        "string": "你说什么！你这个臭小子！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "sad",
+        "con": "ATCE",
+        "string": "(虽然性格还是有些恶劣就是了)"
     },
     {
         "dic": 2,
@@ -1302,7 +1815,7 @@
         "char": "Meirei",
         "face": "smile",
         "con": "AT",
-        "string": "不进去团聚吗？"
+        "string": "不进去亲自送上几句祝福吗？作为……亲生父亲"
     },
     {
         "dic": 3,
@@ -1320,16 +1833,34 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "辩向四周看了看，像是放下了戒备一样松了一口气"
+        "string": "辩向四周看了看，看到没人后，像是放下了戒备一样松了一口气"
     },
     {
         "dic": 3,
         "branch": "",
         "name": "明玲",
         "char": "Meirei",
-        "face": "sad",
+        "face": "wry",
         "con": "AT",
-        "string": "我大概可以理解为什么要忍受着切肤之痛把世清交付到我手中了"
+        "string": "元平姑姑没提到过世清的亲生父亲是谁"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "wry",
+        "con": "AT",
+        "string": "但是，那个时候的房间里，我可以感知到同样伤心的……还有一个藏起来的人"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "wry",
+        "con": "AT",
+        "string": "和今天在墓碑旁祭拜的人一模一样的气息"
     },
     {
         "dic": 3,
@@ -1338,25 +1869,7 @@
         "char": "Byinn",
         "face": "wry",
         "con": "",
-        "string": "不愧是和元平一样的宫黄后裔"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "辩",
-        "char": "Byinn",
-        "face": "wry",
-        "con": "",
-        "string": "想必是当时元平托孤的时候，你就察觉到我的存在了吧"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "明玲",
-        "char": "Meirei",
-        "face": "smile",
-        "con": "AT",
-        "string": "感知能力我不如元平姑姑，当时只能微弱地感知到还有一个人"
+        "string": "不愧是和元平一样的宫黄后裔，同样地感知能力出众"
     },
     {
         "dic": 3,
@@ -1365,7 +1878,16 @@
         "char": "Meirei",
         "face": "sad",
         "con": "AT",
-        "string": "……是无论如何无情，也不想错过自己儿子的成人礼吗？"
+        "string": "不顾一切地隐藏掉世清的踪迹，想必是为了一些不得不为之的原因"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "明玲",
+        "char": "Meirei",
+        "face": "sad",
+        "con": "AT",
+        "string": "今天在这里出现……是无论如何无情，也不想错过自己儿子的成人礼吗？"
     },
     {
         "dic": 3,
@@ -1644,7 +2166,7 @@
         "char": "Sri",
         "face": "angry",
         "con": "AL",
-        "string": "喂！明玲！水果刀你收到哪里去了！？"
+        "string": "喂！明玲！切蛋糕的水果刀你收到哪里去了！？"
     },
     {
         "dic": 3,
@@ -1680,7 +2202,7 @@
         "char": "Byinn",
         "face": "serene",
         "con": "CE",
-        "string": "我呆在这里越久越危险，还是尽可能不要让结社的人找到这里好点"
+        "string": "我呆在这里越久越危险，还是尽可能不要让敌人找到这里好点"
     },
     {
         "dic": 3,
@@ -1721,7 +2243,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "春莲",
         "char": "Chunlen",
         "face": "smile",
         "con": "",
@@ -1752,7 +2274,52 @@
         "char": "Chunlen",
         "face": "smile",
         "con": "",
-        "string": "我好像从来都没见到过您来过天风宫，对于皇帝来说挺奇怪的，是在躲开什么吗？"
+        "string": "我好像从来都没见到过您来过天风宫，元平夫人是埋葬在那里吧……挺奇怪的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "因为平时太忙，今天难得有空，我想自己见一下死去多年的元平"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "挺巧合的，如果贵公子没和他的母亲……以及我的姐姐一起死在那场大风中的话，今天就是他20岁生日的成人礼了吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "serene",
+        "con": "",
+        "string": "你到底想说什么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "为什么一定要今天来？是为了见你那个……不惜用我姐姐的性命来掩饰行踪的……还活着的儿子么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "surprise",
+        "con": "",
+        "string": "！"
     },
     {
         "dic": 3,
@@ -1770,7 +2337,7 @@
         "char": "Chunlen",
         "face": "smile",
         "con": "",
-        "string": "阁下果然还是非常机智，我的姐姐虽然很聪明，但远不及你……"
+        "string": "没错，我把自己的想法告诉了他们，他们已经开始行动了，我就是和他们一起来的"
     },
     {
         "dic": 3,
