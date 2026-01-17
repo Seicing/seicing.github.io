@@ -1113,7 +1113,16 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "你要忙吗？真是可惜"
+        "string": "为何？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "【像一个原因"
     },
     {
         "dic": 1,
@@ -1167,16 +1176,106 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "泖支於部分"
+        "string": "离开泖支於后，画面回到秦府的店铺"
     },
     {
-        "dic": 0,
-        "branch": null,
-        "name": null,
-        "char": null,
-        "face": null,
-        "con": null,
-        "string": null
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "happy",
+        "con": "",
+        "string": "啊，是春莲小姐啊，你要买点什么吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "老板，安好，今天我不是来买东西的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "你有见到过皇帝阁下吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "smile",
+        "con": "",
+        "string": "没有呢，他这种人也不会来我这种小店铺吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "这样啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "今天生意好吗？有卖出多少把铭刀吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "happy",
+        "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "秦府",
+        "char": "Chinkoo",
+        "face": "happy",
+        "con": "",
+        "string": "没有呢，今天生意不太好"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春莲",
+        "char": "Chunlen",
+        "face": "smile",
+        "con": "",
+        "string": "……我知道了，谢谢你，再见"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "画面回到泖支於的出口"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "泖支於部分"
     },
     {
         "dic": 2,
