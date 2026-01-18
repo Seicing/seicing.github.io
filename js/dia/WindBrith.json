@@ -141,6 +141,15 @@
         "char": "Yunpyeng",
         "face": "sad",
         "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "sad",
+        "con": "",
         "string": "让他们进来吧……春兰……"
     },
     {
@@ -204,7 +213,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "侍女春兰来到大门打开了门，两个年轻人几乎同时被大风吹了进房子里"
+        "string": "春兰来到大门打开了门，两个年轻人几乎同时被大风吹了进房子里"
     },
     {
         "dic": 3,
@@ -223,6 +232,15 @@
         "face": "bitter",
         "con": "",
         "string": "好心人，真的是谢谢你了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "surprise",
+        "con": "",
+        "string": "(和元平一样的白色头发……！)"
     },
     {
         "dic": 3,
@@ -420,7 +438,7 @@
         "char": "Yunpyeng",
         "face": "depress",
         "con": "CE",
-        "string": "很久没见了，明玲"
+        "string": "很久没见了，阿玲"
     },
     {
         "dic": 3,
@@ -483,7 +501,7 @@
         "char": "Yunpyeng",
         "face": "smile",
         "con": "",
-        "string": "他就是你的表弟……世清"
+        "string": "他叫世清……辈分来说……应该算你的表弟……"
     },
     {
         "dic": 3,
@@ -492,7 +510,7 @@
         "char": "Meirei",
         "face": "smile",
         "con": "",
-        "string": "他叫世清吗？不错的名字呢"
+        "string": "世清……明世清吗？不错的名字呢"
     },
     {
         "dic": 3,
@@ -501,7 +519,7 @@
         "char": "Yunpyeng",
         "face": "smile",
         "con": "CE",
-        "string": "明玲……虽然还有很多话想跟你说……但是……我可能不行了……"
+        "string": "阿玲……虽然还有很多话想跟你说……但是……我可能不行了……"
     },
     {
         "dic": 3,
@@ -583,6 +601,15 @@
         "face": "sad",
         "con": "",
         "string": "对不起……我有点困了……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "sad",
+        "con": "",
+        "string": "……"
     },
     {
         "dic": 3,

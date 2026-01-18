@@ -2481,7 +2481,7 @@
         "char": "Orlok",
         "face": "smile",
         "con": "AT",
-        "string": "教皇候补吗？也就是说同样是“弑神者”的后裔"
+        "string": "白色的虚目……？同样是“弑神者”的后裔怎么会在这里"
     },
     {
         "dic": 3,
@@ -2508,7 +2508,7 @@
         "char": "OrlokAtavism",
         "face": "sinister",
         "con": "",
-        "string": "就算是单打独斗我也打不过你们随便一个，我的职责只是拖延时间"
+        "string": "我跟那家伙不同，我不认为以现在我们的研究成果足以匹敌弑神者的后裔"
     },
     {
         "dic": 3,
@@ -2517,7 +2517,7 @@
         "char": "OrlokAtavism",
         "face": "sinister",
         "con": "",
-        "string": "本身就不应该以成年的“弑神者”为目标，但那家伙已经上头了，我也不得不拼尽了"
+        "string": "但那家伙已经上头了，我也不得不拼尽了，能拖一会就一会吧"
     },
     {
         "dic": 2,
@@ -2526,7 +2526,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "另一方面，世清的房间"
+        "string": "另一方面，世清的房间，世清把铭刀拔出来看了下"
     },
     {
         "dic": 1,
@@ -2535,7 +2535,16 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "要习惯架着这玩意走路，还需要很长一段时间"
+        "string": "宫黄……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "跟在我的姓名前面，我记得是明玲姐的族姓"
     },
     {
         "dic": 2,
@@ -2544,7 +2553,16 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "辩粗暴地推开了世清的房门，还没等世清反应过来，飞扑到世清身上用权现挡住了暗杀王的致命一击"
+        "string": "世清把铭刀收起来架在身上"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "还挺重，要习惯架着这玩意走路，还需要很长一段时间"
     },
     {
         "dic": 2,
@@ -2553,7 +2571,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "电光石火之间，暗杀王被辩狠狠地揍了一锤飞了出去"
+        "string": "辩粗暴地推开了世清的房门"
     },
     {
         "dic": 1,
@@ -2565,18 +2583,90 @@
         "string": "你是……"
     },
     {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "angry",
+        "con": "",
+        "string": "快跟明玲汇合！有人要杀你"
+    },
+    {
         "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "没有多余的话，辩抱着世清就这样从窗户跳了出去，奔跑在夜色的山林中<br>暗杀王从地上爬了起来，口中念念有词"
+        "string": "两人走出世清的房间后，暗杀王带着大量的傀儡到来了"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "uncomfortable",
+        "con": "",
+        "string": "哇！这些傀儡都是啥！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "羽三！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "angry",
+        "con": "",
+        "string": "神宫已经被完全压制了……傀儡，难道是那个源内？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "angry",
+        "con": "",
+        "string": "还有你……是暗杀王！收了源内的钱来暗杀世清么！？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "暗杀王向辩袭来，辩跟暗杀王对了几手，世清拿出刀剑攻击傀儡，没想到傀儡自爆了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "surprise",
+        "con": "SP",
+        "string": "自爆了？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "辩发奋一击将暗杀王打飞，然后带着世清朝着森林走去<br>暗杀王缓缓站了起来，拍了拍自己的衣服"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
@@ -2585,20 +2675,11 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
-        "string": "皇帝和他的儿子朝着你那个方向去了"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "？？？",
-        "char": "Sanyogita",
-        "face": "serene",
-        "con": "AT",
-        "string": "真多余，你的夺舍不要求对方还活着吧"
+        "string": "按原计划，皇帝和他的儿子朝着你那个方向去了"
     },
     {
         "dic": 3,
@@ -2607,25 +2688,16 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "想要用普通武器击杀弑神者后裔极其困难，不小心让他觉醒了可能连你也很难逃掉"
+        "string": "嗯，接下来在安全区域外待命吧"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
-        "string": "所以你是打算用“那玩意”将他炸成残废后再夺舍吗？"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "？？？",
-        "char": "Sanyogita",
-        "face": "serene",
-        "con": "AT",
-        "string": "威力那么大，用来攻城都过强了，真的有必要在一个“活物”身上用这玩意吗？"
+        "string": "有必要在一个“活物”身上用这玩意吗？我有信心配合你的傀儡击杀那两个人"
     },
     {
         "dic": 3,
@@ -2634,7 +2706,7 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "嗯，所以跟计划一样，你在安全范围外待命，不想死就别靠近"
+        "string": "想要用普通武器击杀弑神者后裔极其困难，如果觉醒了连你都很难逃掉，只能使用我倾尽心力所造就的最高杰作“人工大日如来”一击必杀"
     },
     {
         "dic": 3,
@@ -2643,7 +2715,7 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "这是我将自身的才学发挥到极限所造就的最终之作，我连自己的性命也赌在上面了，不成功便成仁"
+        "string": "可惜，无法克服魔力量过于庞大难以隐藏的缺点，不然完全不需要实行这个作战"
     },
     {
         "dic": 3,
@@ -2661,7 +2733,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "森林中"
+        "string": "森林中 "
     },
     {
         "dic": 1,
@@ -2670,34 +2742,16 @@
         "char": "SeicingAcolyte2",
         "face": "surprise",
         "con": "SP",
-        "string": "到底发生了什么事？"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte2",
-        "face": "surprise",
-        "con": "SP",
-        "string": "你受伤了"
+        "string": "我们逃跑的这个方向傀儡明显更少，就像是故意让我们往这边逃的陷阱一样"
     },
     {
         "dic": 3,
         "branch": "",
         "name": "辩",
         "char": "Byinn",
-        "face": "endure",
+        "face": "serene",
         "con": "",
-        "string": "躲开要害了，只是擦伤，但似乎有毒"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "辩",
-        "char": "Byinn",
-        "face": "endure",
-        "con": "",
-        "string": "真丢人……竟然如此狼狈"
+        "string": "暗杀王是极其危险的暗杀者，配合大量自爆傀儡的干扰，被她命中要害只是时间问题"
     },
     {
         "dic": 2,
@@ -2715,7 +2769,7 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "看起来一击毙命是不可能的，只能慢慢消磨了"
+        "string": "不愧是皇帝阁下，反应速度很快啊"
     },
     {
         "dic": 3,
@@ -2743,6 +2797,15 @@
         "face": "angry",
         "con": "CE",
         "string": "他们的目标是你，我帮你拖延时间，快跑"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "辩",
+        "char": "Byinn",
+        "face": "angry",
+        "con": "CE",
+        "string": "只要跑到空旷地区，他们就无法发挥自身的暗杀优势……"
     },
     {
         "dic": 1,
@@ -2943,6 +3006,15 @@
         "string": "嗯，逆转思维的话，就是在完全相反的地方，虽然只是在赌，但似乎赌对了"
     },
     {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte2",
+        "face": "serene",
+        "con": "SP",
+        "string": "在攻击的瞬间，在完全相反的方向感知到了微弱的魔力波动"
+    },
+    {
         "dic": 3,
         "branch": "",
         "name": "辩",
@@ -2976,15 +3048,6 @@
         "char": "Byinn",
         "face": "serene",
         "con": "",
-        "string": "这样的战术，只能是远距离操控傀儡的那个人了……结社的高层“源内”"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "辩",
-        "char": "Byinn",
-        "face": "serene",
-        "con": "",
         "string": "世清，在接近时注意异常的魔力源"
     },
     {
@@ -2994,7 +3057,7 @@
         "char": "Byinn",
         "face": "serene",
         "con": "",
-        "string": "那个源内最近研发出了一种叫“人工大日如来”的恐怖炸弹，可以一瞬间毁掉一整片森林"
+        "string": "那个源内最近研发出了一种叫“人工大日如来”的恐怖炸弹，可以一瞬间蒸发掉一整片森林"
     },
     {
         "dic": 3,
@@ -3030,7 +3093,7 @@
         "char": "Gennai",
         "face": "smile",
         "con": "AT",
-        "string": "弑神者的后裔果然不能少看，看起来，今天就要这样交代掉了"
+        "string": "弑神者的后裔果然不能少看，战斗意识比想象中还要强"
     },
     {
         "dic": 1,
@@ -3039,7 +3102,7 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "周围没有异常的魔力波动，只有眼前的这个傀儡有着巨大的魔力量，应该就是本体没错了"
+        "string": "周围没有异常的魔力波动，唯一可以感知到的魔力波动只有眼前的这个本体"
     },
     {
         "dic": 3,
@@ -3057,7 +3120,7 @@
         "char": "Byinn",
         "face": "surprise",
         "con": "",
-        "string": "等等！“只有这个傀儡”？不好！"
+        "string": "等等！“只有这个”？不好！"
     },
     {
         "dic": 2,
