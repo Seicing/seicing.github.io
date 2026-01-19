@@ -397,17 +397,11 @@
     document.addEventListener("click", function (e) {
         if (!e.target.classList.contains("copy-btn")) return;
 
-        const rawCode = e.target
-            .closest("tr")
-            .querySelector("code")
-            .dataset.code;
+        // 从 <code> 里取字符串
+        let code = e.target.closest("tr").querySelector("code").dataset.code;
 
-        // 【核心修改】
-        // [^\x20-\x7E] 的意思是：匹配所有“不是”标准键盘字符的内容
-        // \x20 是标准空格，\x7E 是波浪号~
-        // 这行代码会保留：所有字母、数字、标点符号、以及中间的标准空格
-        // 这行代码会删除：换行符、零宽空格、乱码符号
-        const code = rawCode.replace(/[^\x20-\x7E]/g, "");
+        // 强制去掉最后一个字符
+        code = code.slice(0, -1);
 
         navigator.clipboard.writeText(code).then(() => {
             e.target.textContent = "已复制";
