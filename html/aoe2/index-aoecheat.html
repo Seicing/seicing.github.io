@@ -250,14 +250,20 @@
     document.addEventListener("click", function (e) {
         if (!e.target.classList.contains("copy-btn")) return;
 
-        const code = e.target
+        let code = e.target
             .closest("tr")
             .querySelector("code")
             .dataset.code;
 
+        code = code
+            .replace(/[\r\n]/g, "")
+            .replace(/\u00A0/g, " ")
+            .replace(/[\u200B-\u200D\uFEFF]/g, "")
+            .trim();
+
         navigator.clipboard.writeText(code).then(() => {
             e.target.textContent = "已复制";
-            setTimeout(() => e.target.textContent = "复制", 1200);
+            setTimeout(() => e.target.textContent = " 复制 ", 1200);
         });
     });
 </script>
