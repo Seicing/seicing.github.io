@@ -250,17 +250,18 @@
             .querySelector("code")
             .dataset.code;
 
-        code = code
-            .replace(/[\r\n]/g, "")
-            .replace(/\u00A0/g, " ")
-            .replace(/[\u200B-\u200D\uFEFF]/g, "")
-            .trim();
+        // 删除最后一个字符，如果是不可见字符
+        const lastChar = code.charCodeAt(code.length - 1);
+        if (lastChar <= 32 || [65279, 8203, 8204, 8205].includes(lastChar)) {
+            code = code.slice(0, -1);
+        }
 
         navigator.clipboard.writeText(code).then(() => {
             e.target.textContent = "已复制";
-            setTimeout(() => e.target.textContent = " 复制 ", 1200);
+            setTimeout(() => e.target.textContent = "复制", 1200);
         });
     });
+
 </script>
 
 </html>
