@@ -617,7 +617,7 @@ let ayanami = {
     "大食手搓": /*html*/`攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造攻城锤、攻城塔、扭力弩炮、轻型投石车`,
     "大食手搓2": /*html*/`攻城专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>攻城专家：不需要研究攻城工程学就能建造攻城锤、攻城塔、扭力弩炮、投石车`,
     "大食野猪限制": /*html*/`大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png' width='20px'>大型果园：磨坊影响力内浆果丛存量 +100，从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物`,
-    "大食野猪限制4": /*html*/`大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物`,
+    "大食野猪限制4": /*html*/`大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png' width='20px'>大型果园：从浆果丛采集食物的速度提高 30%，携带量 +3，但无法从野猪处采集食物`,
     "大食野猪限制2": /*html*/`大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png' width='20px'>大型果园：磨坊影响力内浆果丛存量 +100，从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物`,
     "大食野猪限制3": /*html*/`大型果园<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png' width='20px'>大型果园：磨坊影响力内浆果丛存量 +100，从浆果丛采集食物的速度提高 25%，携带量 +3，但无法从野猪处采集食物`,
     "大食野猪限制5": /*html*/`宗教信仰<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png' width='20px'>宗教信仰：无法从野猪处采集食物`,
