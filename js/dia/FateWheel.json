@@ -1500,7 +1500,7 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "反正顺路，我们一起走吧"
+        "string": "反正顺路，这位皇帝大哥，我们一起走吧"
     },
     {
         "dic": 3,
@@ -3012,7 +3012,7 @@
         "char": "SeicingAcolyte2",
         "face": "serene",
         "con": "SP",
-        "string": "在攻击的瞬间，在完全相反的方向感知到了微弱的魔力波动"
+        "string": "在转过身的瞬间，微弱的风将敌人的位置告诉了我"
     },
     {
         "dic": 3,
@@ -3282,7 +3282,34 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "暗杀王提着一个黑色的盒子和春莲走了出来"
+        "string": "暗杀王和春莲走了出来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "源内",
+        "char": "Gennai",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "喂……暗杀王，我在这里……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "暗杀王看到了地上源内的黑盒子，捡了起来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "暗杀王",
+        "char": "Sanyogita",
+        "face": "serene",
+        "con": "AT",
+        "string": "真耐炸，你是针对自己的炸弹对核心进行了定向加固吗？"
     },
     {
         "dic": 3,
@@ -3314,7 +3341,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
@@ -3323,20 +3350,11 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
         "string": "那头阴森的白发……喂，源内，目标似乎觉醒了……"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "黑色盒子滋滋地发出声音"
     },
     {
         "dic": 3,
@@ -3354,12 +3372,12 @@
         "char": "Gennai",
         "face": "smile",
         "con": "ATSP",
-        "string": "他还能动吗？动不了的话把我的黑盒子核心放到他身上，任务就算完成了"
+        "string": "他还能动吗？动不了的话把我的核心放到他身上，任务就算完成了"
     },
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "serene",
         "con": "AT",
@@ -3386,7 +3404,7 @@
     {
         "dic": 3,
         "branch": "",
-        "name": "？？？",
+        "name": "暗杀王",
         "char": "Sanyogita",
         "face": "surprise",
         "con": "AT",
@@ -4038,7 +4056,7 @@
         "char": "Gennai",
         "face": "smile",
         "con": "ATSP",
-        "string": "我的小黑盒快到极限了，再过一会我的灵魂就会挣脱束缚被迫回归大地转世重生"
+        "string": "我的核心快到极限了，再过一会我的灵魂就会挣脱束缚被迫回归大地转世重生"
     },
     {
         "dic": 3,
@@ -4092,7 +4110,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "暗杀王把小黑盒放到辩的尸体上，一会儿之后辩重新站了起来"
+        "string": "暗杀王把核心放到辩的尸体上，一会儿之后辩重新站了起来"
     },
     {
         "dic": 3,
@@ -4542,7 +4560,34 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "欧洛克向前走了两步，羽三后退两步后果断地跳到了河里"
+        "string": "欧洛克向前走了两步"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "羽三",
+        "char": "IuimiAcolyte",
+        "face": "bitter",
+        "con": "",
+        "string": "反正不是第一次跳了，这次我也得活下去……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "羽三后退两步后果断地跳到了河里"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "欧洛克",
+        "char": "Orlok",
+        "face": "smile",
+        "con": "AT",
+        "string": "……"
     },
     {
         "dic": 3,

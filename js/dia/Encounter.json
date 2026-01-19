@@ -6,7 +6,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "世清从睡梦中醒来，发现自己手被绑住了"
+        "string": "世清从睡梦中醒来"
     },
     {
         "dic": 1,
@@ -14,7 +14,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "CE",
+        "con": "CESP",
         "string": "……"
     },
     {
@@ -23,7 +23,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "surprise",
-        "con": "",
+        "con": "SP",
         "string": "！"
     },
     {
@@ -41,7 +41,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "surprise",
-        "con": "",
+        "con": "SP",
         "string": "是谁将我绑起来了？"
     },
     {
@@ -50,7 +50,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "sad",
-        "con": "",
+        "con": "SP",
         "string": "用不出力气……昨晚发生的一切都是真的……"
     },
     {
@@ -68,7 +68,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "surprise",
-        "con": "",
+        "con": "SP",
         "string": "是谁？"
     },
     {
@@ -86,7 +86,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "surprise",
-        "con": "",
+        "con": "SP",
         "string": "绿色的头发，紫色的眼睛，是蚩幽人吗？"
     },
     {
@@ -95,7 +95,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "",
+        "con": "SP",
         "string": "我似乎有点大惊小怪了，是你救了我吗？谢谢你"
     },
     {
@@ -104,7 +104,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "",
+        "con": "SP",
         "string": "绑着我，是害怕我一个西景人伤害你吗？"
     },
     {
@@ -121,6 +121,15 @@
         "branch": "",
         "name": "绿发少女",
         "char": "YoBorteCino",
+        "face": "depress",
+        "con": "",
+        "string": "白色的头发……西国人有这种发色的人吗？还是说什么潮流染发吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
         "face": "smile",
         "con": "",
         "string": "不过你跟我想象中的西国人不同，意外地好沟通呢"
@@ -131,7 +140,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "",
+        "con": "SP",
         "string": "嗯……我大概可以理解"
     },
     {
@@ -140,7 +149,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "",
+        "con": "SP",
         "string": "毕竟西景人跟蚩幽人一直在打仗"
     },
     {
@@ -176,7 +185,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "surprise",
-        "con": "",
+        "con": "SP",
         "string": "那是我的铭刀！"
     },
     {
@@ -194,7 +203,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "sad",
-        "con": "",
+        "con": "SP",
         "string": "没办法，那就请你先帮我好好保管吧"
     },
     {
@@ -212,7 +221,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "sad",
-        "con": "",
+        "con": "SP",
         "string": "……"
     },
     {
@@ -221,7 +230,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "sad",
-        "con": "",
+        "con": "SP",
         "string": "我到现在还不知道昨晚发生了什么事情，只知道我失去了一切"
     },
     {
@@ -230,7 +239,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "sad",
-        "con": "",
+        "con": "SP",
         "string": "那把铭刀是我现在唯一剩下的东西了"
     },
     {
@@ -266,7 +275,7 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "",
+        "con": "SP",
         "string": "为什么，如果我带着它逃跑的话，你就麻烦了"
     },
     {
@@ -285,7 +294,7 @@
         "char": "YoBorteCino",
         "face": "sinister",
         "con": "",
-        "string": "不过我还是愿意相信他人，我不喜欢用别人的软肋胁迫别人"
+        "string": "不过我更讨厌用别人的软肋威胁别人，我更愿意给与他人信任"
     },
     {
         "dic": 3,
@@ -302,8 +311,116 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "CE",
+        "con": "CESP",
         "string": "感谢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "不过我要先说明白一点"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我现在还没搞清楚发生了什么事，也用不上力气……但是如果遇到威胁到我性命的事情的话，我会逃跑"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "你能逃掉就是你的本事咯"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "反正我这次来这里的目的只有一个，带着你反而碍事"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "如果是蚩幽的地界的话，这里应该就是安河支流的高州河附近"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "即使是这样，这里还是离高州有很大一段距离，是有什么特别的原因来到这里么"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "你的铭刀很新呢，是刚刚举办了成人礼，成为武者的么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "我们蚩幽族也有类似于你们西国人的成人礼，但我们要做的是独自一人来到荒野狩猎猎物"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "只有能带着猎物头颅活着回去的人能成为蚩幽的武者"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "……原来如此，是为了追踪猎物来到此地"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "祝你一切顺利"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "谢谢你的鼓励，我的家里人都不太看好我呢"
     },
     {
         "dic": 2,
@@ -312,7 +429,16 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "余走在前面"
+        "string": "余充满活力地站了起身"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "你还走得动吗？你好像经历了什么，还在水里泡了一天，现在一定很难受吧，要不继续在这里歇着？"
     },
     {
         "dic": 1,
@@ -320,34 +446,160 @@
         "name": "世清",
         "char": "SeicingAcolyte",
         "face": "serene",
-        "con": "",
-        "string": "你要回你们的首都复命了么？"
+        "con": "SP",
+        "string": "你这是要离开去狩猎猎物了么？"
     },
     {
-        "dic": 1,
+        "dic": 3,
         "branch": "",
-        "name": "余",
+        "name": "绿发少女",
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "呃……其实还没有这么早"
+        "string": "嗯"
     },
     {
-        "dic": 1,
+        "dic": 3,
         "branch": "",
-        "name": "余",
+        "name": "绿发少女",
         "char": "YoBorteCino",
-        "face": "sinister",
+        "face": "sad",
         "con": "",
-        "string": "我叫余，家里人因为我出生时长得细小，因此觉得我是家里多余的，给我起了这个名字"
+        "string": "不过真纠结啊，到底在哪里呢，已经白忙活好几天了"
     },
     {
         "dic": 1,
         "branch": "",
-        "name": "余",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "你要找什么猎物呢？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "穴狮子"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "穴狮子，似乎在书里看过，是居住在天洞土质疏松地带的大型生物"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "啊？天洞里？有这个说法吗？我这几天都在露天的流沙地区找呢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "穴狮子的穴字明显是说它跟洞穴有关系"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "是……是这么回事吗？ "
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "sad",
+        "con": "",
+        "string": "我不太懂西景文字……长老们只是给我说了这个名字和外观特征"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "sad",
+        "con": "",
+        "string": "持闻也只跟我说，来有流沙的地区找……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "我跟你一起走吧……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "哎？你身体没问题吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "勉强还能走得动"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "这里有点沉闷，带我在身边还能看着我不逃跑，不是吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
         "char": "YoBorteCino",
         "face": "happy",
         "con": "",
-        "string": "为了证明我也是一个独当一面的蚩幽武士，我一直在刻苦训练，今天是我的“考核”之日"
+        "string": "你挺喜欢看热闹啊，我们走吧"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "跟余一起走出山洞来到野外，经过野外来到天洞"
     }
 ]
