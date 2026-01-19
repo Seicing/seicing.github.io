@@ -26,6 +26,19 @@
         color: #000000;
         background-color: #F5F8FA;
     }
+
+    .copy-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .copy-btn:hover {
+        background: #eef3f7;
+    }
 </style>
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
@@ -206,5 +219,20 @@
     </div>
 </body>
 
+<script>
+    document.addEventListener("click", function (e) {
+        if (!e.target.classList.contains("copy-btn")) return;
+
+        const code = e.target
+            .closest("tr")
+            .querySelector("code")
+            .dataset.code;
+
+        navigator.clipboard.writeText(code).then(() => {
+            e.target.textContent = "已复制";
+            setTimeout(() => e.target.textContent = "复制", 1200);
+        });
+    });
+</script>
 
 </html>
