@@ -114,7 +114,7 @@
         "char": "YoBorteCino",
         "face": "depress",
         "con": "",
-        "string": "嗯……阿古那奶奶说过，西国人都是怪物，要小心点"
+        "string": "嗯……阿古那奶奶说过，西景人都是怪物，要小心点"
     },
     {
         "dic": 3,
@@ -123,7 +123,7 @@
         "char": "YoBorteCino",
         "face": "depress",
         "con": "",
-        "string": "白色的头发……西国人有这种发色的人吗？还是说什么潮流染发吗？"
+        "string": "白色的头发……西景人有这种发色的人吗？还是说什么潮流染发吗？"
     },
     {
         "dic": 3,
@@ -132,7 +132,7 @@
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "不过你跟我想象中的西国人不同，意外地好沟通呢"
+        "string": "不过你跟我想象中的西景人不同，意外地好沟通呢"
     },
     {
         "dic": 1,
@@ -195,7 +195,7 @@
         "char": "YoBorteCino",
         "face": "serene",
         "con": "",
-        "string": "有铭刀的话说明你是西国的武者，不通报的话我也会被处罚的"
+        "string": "有铭刀的话说明你是西景的武者，不通报的话我也会被处罚的"
     },
     {
         "dic": 1,
@@ -384,7 +384,7 @@
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "我们蚩幽族也有类似于你们西国人的成人礼，但我们要做的是独自一人来到荒野狩猎猎物"
+        "string": "我们蚩幽族也有类似于你们西景人的成人礼，但我们要做的是独自一人来到荒野狩猎猎物"
     },
     {
         "dic": 3,
@@ -537,7 +537,7 @@
         "char": "YoBorteCino",
         "face": "sad",
         "con": "",
-        "string": "我不太懂西国文字……长老们只是给我说了这个名字和外观特征"
+        "string": "我不太懂西景文字……长老们只是给我说了这个名字和外观特征"
     },
     {
         "dic": 3,
@@ -780,7 +780,7 @@
         "char": "YoBorteCino",
         "face": "endure",
         "con": "",
-        "string": "不……我不应该在这里大喊大叫，我要帮助那个西国人走出来……"
+        "string": "不……我不应该在这里大喊大叫，我要帮助那个西景人走出来……"
     },
     {
         "dic": 2,
@@ -1347,7 +1347,556 @@
         "char": "YoBorteCino",
         "face": "happy",
         "con": "",
-        "string": "真的是太好了！"
+        "string": "我在迷迷糊糊中看到你的血治愈着我的伤口，等我醒来我就恢复得差不多了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "真的是谢谢你……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "怎么了？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "我想叫你的名字，但是我突然想起你我不知道你叫啥"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "对于崇尚武德的蚩幽人来说，这样对一个战友而言实在是太无礼了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "那容我先自我介绍"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "我的兄弟姐妹们都叫我忽兰，但是在蚩幽，叫忽兰的人可以说是去菜市场喊一下都会有七八个回应的程度"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "所以我们蚩幽人都会起一个西景名用来区分，我的西景名是余"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "我出生的时候不足重，村里的老人都说我是家里的负担，所以给我起了一个“多余”的名字"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "很乐观地说出了一些很残酷的事情呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "村里的人都不“信任”我可以独当一面，但是我已经学会了笑着面对这一事实，并积极地努力，争取成为独当一面的武者让他们刮目相看！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "余把铭刀拿回世清身边"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "这是你很重要的东西！别忘记了！上面刻着你的名字吧，可以跟我说说吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "哦，哦"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清拔出铭刀，向余展示上面的字"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "其实我之前就拔出看过……只可惜我看不懂西景文字"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "这五个字是“宫黄明世清”"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "宫黄是我的族姓，明是我的家姓，世清是我的名字"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "世清……世清……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "extra2",
+        "con": "",
+        "string": "我第一个学会的西景词，值得纪念！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "……不，严格来说第一个词是“穴狮子”"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "depress",
+        "con": "",
+        "string": "那个不可爱，我给忘了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "真自由啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "RF",
+        "string": "谢谢你"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "wry",
+        "con": "RF",
+        "string": "原来被人信任着，可以在他人的期待中挥动自己的武器是如此的畅快"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "shy",
+        "con": "RF",
+        "string": "如果……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清晃了一下"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "哎？你没事吧？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "虽然好好睡了一觉，但是似乎身体还在恢复中，突然有点晕"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "这样啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "对了，给你喝点好东西吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "嗯？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "余从一旁拿来一罐看起来非常糟糕的饮料"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "我们蚩幽人只要没死，喝一口就能满血复活"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "谢谢你的好意，但是……它似乎想要杀了我"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "第一次会比较难下口，我喂你喝吧"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "还没等世清回答余就把饮料倒进了世清口中"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "extra1",
+        "con": "SPSW",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "extra1",
+        "con": "SPSW",
+        "string": "蝎子、蜘蛛还有蜈蚣在我的口中死战"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "depress",
+        "con": "",
+        "string": "不要吐出来哦，原料可难收集了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "sinister",
+        "con": "",
+        "string": "不过竟然可以喝出原料成分，你挺有当医生的天赋嘛"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "extra1",
+        "con": "SPSW",
+        "string": "……呜"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "黑屏后"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "真是神奇的饮料，浑身发热，我现在感觉好多了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SPSWCE",
+        "string": "不过我绝对不会喝第二次"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "sinister",
+        "con": "",
+        "string": "真可惜，你会爱上这个味道的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SPSWCE",
+        "string": "死也不会喝"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "哈哈"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "……接下来你有什么打算么？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "你呢？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "把穴狮子的头带回去就能达成目标了吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "shy",
+        "con": "",
+        "string": "不……穴狮子不是我一个人打败的，我不能冒领这个功劳为自己增添荣耀"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "我会继续变得更强大和更自信，直到自己可以挑战连他们也恐惧的存在为止"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我……不知道我该何去何从"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "你也会迷惘吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "就在几天前，我的成人礼那天，一群自称结社的人袭击了我，我的爸爸为了救我死在了我的面前，我的家人朋友们也下落不明"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "直到今天，我的内心仍然存在着一股难以言喻的憋屈感……我不能理解这是什么感情"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "……这和你的冷静还有那头白发有关吗？这看起来你存在情感方面的缺陷"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "不知道"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "你的那种感觉叫“仇恨”"
     },
     {
         "dic": 1,
@@ -1356,6 +1905,267 @@
         "char": "SeicingAcolyte",
         "face": "surprise",
         "con": "SP",
-        "string": "呼"
+        "string": "这个就是……“仇恨”……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "西景人和蚩幽人就是因为仇恨互相敌视"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "无论是何方都会认为是对方先放出敌意，但抛开早已被我们忘却的最古老的仇恨不说"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "我们连续多年的战争夺取了对方太多的生命了，而且，为了夺取土地，我们切切实实地憎恨着对方并为此而战"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "因为仇恨去击杀造成仇恨的人，造成更大的仇恨"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "这是一种错误吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "阿古那奶奶说过……仇恨如果得不到伸张，本身就是一种罪过"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "如果存在极致的邪恶也不懂得去恨，任由邪恶滋生出更大的仇恨，那么不懂得仇恨的人比起邪恶本身更加邪恶"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "我感觉，这种东西还是要看个人理解，她说得太深奥了，我不懂，世界上存在很多没必要的仇恨"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "但是我觉得，对你释放出了如此恶意的那群家伙，一定要报仇，对于这些混蛋一定要狠狠地惩戒才叫正义和明事理，不是吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "不过在此之前，我还是希望你可以理解阿古那奶奶说过的话……她还提到了一句，不要成为仇恨的奴隶"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "smile",
+        "con": "SP",
+        "string": "我知道了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "你在笑吗？虽然才认识了三天，但还是第一次见到你笑呢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "我在笑吗……？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "对，挺可爱的，你不要老绷住脸嘛"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "请不要用可爱来形容一个男人……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "几小时后，通往高州的大道"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "沿河的大路是不属于高州控制的中立商路，沿着这条路走就能到达伊萨赫尔"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "sad",
+        "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "sad",
+        "con": "",
+        "string": "你真的决定了吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "smile",
+        "con": "SP",
+        "string": "嗯，我要去世界各地去旅行，增长自己的见识，培养自己的体量"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "smile",
+        "con": "SP",
+        "string": "结社那群家伙想必在到处追杀我……现在回去西景可能会很危险"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "smile",
+        "con": "SP",
+        "string": "在合适的时机到来之时，我就会回来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "祝你成功！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "sad",
+        "con": "",
+        "string": "希望……我们还能再次见面"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "smile",
+        "con": "SP",
+        "string": "我会回来的，我保证"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "和余离别后，就进入了自由活动时间，世清这部分剧情沿着商路走会逐渐迷路，然后迷失在大沙漠之中"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "似乎……迷路了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清不力倒下，章节结束"
     }
 ]
