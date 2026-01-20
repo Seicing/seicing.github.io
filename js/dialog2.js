@@ -5,6 +5,10 @@ const app = createApp({
         const aasb = ref([]);
         let characterid = '';
 
+        const copyText = (text) => {
+            navigator.clipboard.writeText(text);
+        };
+
         onMounted(() => {
             characterid = document.getElementById("overdrive").innerHTML;
 
@@ -43,7 +47,8 @@ const app = createApp({
         });
 
         return {
-            aasb
+            aasb,
+            copyText
         };
     }
 });

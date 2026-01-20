@@ -195,7 +195,7 @@
         "char": "YoBorteCino",
         "face": "serene",
         "con": "",
-        "string": "有铭刀的话说明你是西景的武者，不通报的话我也会被处罚的"
+        "string": "有铭刀的话说明你是西国的武者，不通报的话我也会被处罚的"
     },
     {
         "dic": 1,
@@ -436,7 +436,7 @@
         "branch": "",
         "name": "绿发少女",
         "char": "YoBorteCino",
-        "face": "happy",
+        "face": "smile",
         "con": "",
         "string": "你还走得动吗？你好像经历了什么，还在水里泡了一天，现在一定很难受吧，要不继续在这里歇着？"
     },
@@ -537,7 +537,7 @@
         "char": "YoBorteCino",
         "face": "sad",
         "con": "",
-        "string": "我不太懂西景文字……长老们只是给我说了这个名字和外观特征"
+        "string": "我不太懂西国文字……长老们只是给我说了这个名字和外观特征"
     },
     {
         "dic": 3,
@@ -582,7 +582,7 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "这里有点沉闷，带我在身边还能看着我不逃跑，不是吗？"
+        "string": "这里有点沉闷，带我在身边，还能方便监视我，不是吗？"
     },
     {
         "dic": 3,
@@ -601,5 +601,761 @@
         "face": "smile",
         "con": "",
         "string": "跟余一起走出山洞来到野外，经过野外来到天洞"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "好香啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "可能穴狮子就在附近"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "你能确定吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "穴狮子是非常懒惰而狡猾的生物，它们会埋伏在漏斗状的沙地陷阱内诱捕猎物"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "猎物路过的时候落入陷阱中，穴狮子利用自身的毒让目标失去抵抗能力后，吸食目标的柔软内脏，然后将尸体抛飞"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "尸体会让共生的孢子蜘蛛分食掉，这股香味大概就是孢子蜘蛛散布出来的，它可以麻醉猎物神经让猎物更容易踩中陷阱"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "真是残酷而高效的配合"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "经过存档点后开始boss战"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "你要小心，味道变得很浓郁了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "这附近一定有穴狮子和孢子蜘蛛"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "真的有吗？这附近好像没有流沙啊，这种坚硬的地面真的……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "才说完，余的脚下就崩塌，形成了流沙穴"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "什么！？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "用唾液和毒液将地面硬化吗！？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "不好，手被绑住了，动不了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "余拼命挣扎，世清眼看挣脱不出来，直接跳到了流沙之中"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "你……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清主动把余推到自己身前，用后背对着穴狮子，穴狮子使用毒刺对世清发动了猛烈一击<br>世清在受到攻击的一瞬间，手的绳索被毒刺割断，余被世清的脚踢飞回到了流沙穴之外的安全地区"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "不！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "endure",
+        "con": "",
+        "string": "不……我不应该在这里大喊大叫，我要帮助那个西国人走出来……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "穴狮子boss战，一开始世清会以虚弱状态(50%生命值，50%攻击力)陷在流沙穴中，玩家可以通过跳跃和奔跑逃离流沙穴，但是穴狮子会不断地攻击，被攻击到会硬直继续流入<br>余会在外围使用火枪不断地射击，穴狮子只会攻击世清，世清很难伤害到穴狮子，但是余可以稳定地对穴狮子造成伤害<br>坚持一段时间击杀穴狮子后继续剧情，穴狮子绝望地喊叫死去，流沙逐渐失去了动力"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "我救你上来！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "余跳入流沙中，将世清拉扯了出来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "你……你还好吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "你被穴狮子的毒刺命中了好多下……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "我好像没中毒，只是被刺伤了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "wry",
+        "con": "",
+        "string": "好奇怪啊……明明衣服都被腐蚀得变成烟雾消失了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "现在不是纠结这东西的时候！刚刚真的是吓死我了，你实在是太鲁莽了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "endure",
+        "con": "",
+        "string": "为什么要跳下来啊，如果你为了救我死了，我就算能活下来我也会内疚一辈子的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我以前也有这种坏习惯……见到别人落入危险中，身体就会比脑子先半拍作出行动"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "endure",
+        "con": "",
+        "string": "你这个笨蛋，看着脑子很好使，竟然比我还要笨蛋！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "别骂了，狩猎完毕了不是么"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "wry",
+        "con": "",
+        "string": "谢谢你……如果不是你，我可能就要死在这里了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "今天也是亲眼见识到穴狮子，开眼界了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "depress",
+        "con": "",
+        "string": "你这家伙……被我抓住也好，刚刚的死战也好，你不觉得害怕的么？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我有点你可能不喜欢听的话想说"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "serene",
+        "con": "",
+        "string": "什么？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我不认为让一个还未正式被认定为武者的新手来狩猎这种怪物是合理的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我经历过很多战斗，但就连我也察觉不到它的陷阱，说明连狩猎老手都有可能翻车"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "什么意思……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "depress",
+        "con": "SP",
+        "string": "从一开始，你这个试炼就是想着不让你通过的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "cry",
+        "con": "",
+        "string": "他们……一开始就想让我来送死吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "往好里想……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "你的长老和朋友故意误导你……是不是想让你知难而退呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "cry",
+        "con": "",
+        "string": "我……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "bawl",
+        "con": "",
+        "string": "我从一开始……就没被信任过……被认为是“有用的”……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "我正是信任你，才会让自己深陷危险担当诱饵，让你可以全力战斗"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "现在这具穴狮子的尸体证明了你的强大"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "你也应该为自己的强大感到自信"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "side",
+        "con": "SP",
+        "string": "明玲姐以前也是这样告诉我的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "uncomfortable",
+        "con": "",
+        "string": "谢谢你……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "surprise",
+        "con": "",
+        "string": "等等，你有感觉香气变得更浓郁了吗？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清和余四处看了下，大量孢子蜘蛛包围了他们"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "angry",
+        "con": "SP",
+        "string": "因为干掉了宿主，生气了吗！？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "fear",
+        "con": "",
+        "string": "好……好多，完全被包围了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "孢子蜘蛛发动了进攻，两人疯狂地抵御攻击，但余还是不小心被击中了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "endure",
+        "con": "SW",
+        "string": "呜……用不上力气了……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "uncomfortable",
+        "con": "SPSW",
+        "string": "中毒了吗？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "黑屏，满屏幕都是蜘蛛的尸体，世清独自一人站在战场中心，隔壁是因为中毒倒下的余"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "uncomfortable",
+        "con": "SPSW",
+        "string": "清理干净了……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清翻看了一下余的伤口"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "endure",
+        "con": "SPSW",
+        "string": "完全发黑发紫了，好严重的毒"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "奇怪的是，无论是穴狮子还是孢子蜘蛛，我似乎都不惧怕它们的毒"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SPSW",
+        "string": "跟我的头发变成白色了有关系吗……？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SPSW",
+        "string": "对了……如果我不怕毒，是否说明我的血也有一定程度的血清功能呢？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清把自己伤口上的血滴入余的伤口中"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SPSW",
+        "string": "伤口在愈合……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清把痊愈的余摆好后，自己也在附近躺了下来"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SPSW",
+        "string": "从被神秘的傀儡师和暗杀者追杀起我就没有好好地休息过……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SPSWCE",
+        "string": "已经是极限了……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SPSWCE",
+        "string": "我该不会就这样死了吧……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清睡着了，时间过去了很久<br>画面回到余和世清最开始相遇的河边<br>世清睡在茅草床上醒了过来"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "浑身发疼，我还活着吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "你醒啦！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "余看到世清醒来，兴奋地跑了过来"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "你还活着"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "没错！我还活着！你也活着！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "绿发少女",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "真的是太好了！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "呼"
     }
 ]

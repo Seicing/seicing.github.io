@@ -100,7 +100,10 @@
                 </td>
             </tr>
             <tr>
-                <td> <span v-html="diaindex.faceid"> </span> </td>
+                <td>
+                    <button @click="copyText(diaindex.faceid)" v-html="diaindex.faceid">
+                    </button>
+                </td>
             </tr>
         </table>
     </div>
