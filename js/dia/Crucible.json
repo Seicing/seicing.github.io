@@ -139,7 +139,7 @@
         "branch": "",
         "name": "老人",
         "char": "Souun",
-        "face": "why",
+        "face": "wry",
         "con": "",
         "string": "你该不会是从沙漠的那一头横渡而来的吧？"
     },
@@ -157,7 +157,7 @@
         "branch": "",
         "name": "老人",
         "char": "Souun",
-        "face": "why",
+        "face": "wry",
         "con": "",
         "string": "好胡来的年轻人！"
     },
@@ -346,7 +346,7 @@
         "branch": "",
         "name": "早云老人",
         "char": "Souun",
-        "face": "why",
+        "face": "wry",
         "con": "",
         "string": "想起了一些不太好的回忆啊"
     },
@@ -400,7 +400,7 @@
         "branch": "",
         "name": "早云老人",
         "char": "Souun",
-        "face": "why",
+        "face": "wry",
         "con": "",
         "string": "尽管我只是大概了解到结社的存在，但我还是知道得太多了"
     },
@@ -409,7 +409,7 @@
         "branch": "",
         "name": "早云老人",
         "char": "Souun",
-        "face": "why",
+        "face": "wry",
         "con": "",
         "string": "他们的手段残忍而高效，我的家乡一夜之间化作了废墟，只剩下我这个苟延残喘的老头逃到了这个鸟不生蛋的地方"
     },
@@ -637,5 +637,23 @@
         "face": "smile",
         "con": "SP",
         "string": "是，早云老师"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "半年后<br>换了一身造型的世清独自行走在荒野山道上"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "……"
     }
 ]
