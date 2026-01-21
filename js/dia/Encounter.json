@@ -733,7 +733,7 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte",
-        "face": "serene",
+        "face": "angry",
         "con": "SP",
         "string": "不好，手被绑住了，动不了"
     },
@@ -1383,16 +1383,7 @@
         "char": "YoBorteCino",
         "face": "fear",
         "con": "",
-        "string": "我想叫你的名字，但是我突然想起你我不知道你叫啥"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "绿发少女",
-        "char": "YoBorteCino",
-        "face": "fear",
-        "con": "",
-        "string": "对于崇尚武德的蚩幽人来说，这样对一个战友而言实在是太无礼了"
+        "string": "我想叫你的名字，但是我突然想起你我不知道你叫啥，明明并肩作战过，实在是太无礼了！"
     },
     {
         "dic": 3,
@@ -1860,7 +1851,7 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "就在几天前，我的成人礼那天，一群神秘人袭击了我，我的爸爸为了救我死在了我的面前，我的家人朋友们也下落不明"
+        "string": "就在几天前，我的成人礼那天，一群神秘人袭击了我，我的爸爸为了救我死在了我的面前，我的家人朋友们也未知是否安好"
     },
     {
         "dic": 1,
@@ -2257,104 +2248,5 @@
         "face": "sad",
         "con": "SPCE",
         "string": "感觉……心里变得空荡荡的"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "和余离别后，就进入了自由活动时间，来到南部的绿洲城镇时，世清会来到城镇上的公告栏"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "surprise",
-        "con": "SP",
-        "string": "奇怪……我看不清上面的字"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "depress",
-        "con": "SP",
-        "string": "……"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "depress",
-        "con": "SP",
-        "string": "通缉犯……明世清……杀害皇帝未遂罪……"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "angry",
-        "con": "SP",
-        "string": "真是颠倒黑白！"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "周围的人似乎察觉到了世清的不对劲，开始向世清那边看过来"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "surprise",
-        "con": "SP",
-        "string": "(再待下去有点不妙！)"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "世清找机会离开了城镇回到野外"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "sad",
-        "con": "SP",
-        "string": "不知道他们是怎么做到的，但是我现在似乎被全西景通缉"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "sad",
-        "con": "SP",
-        "string": "和之前猜想的一样……这时候回西景本土会非常危险，沿河的城镇也要尽量避开了……"
-    },
-    {
-        "dic": 2,
-        "branch": "",
-        "name": "",
-        "char": "",
-        "face": "smile",
-        "con": "",
-        "string": "避开河边城镇横跨西景中央大沙漠，在走出沙漠从东部出口离开后触发下一章剧情"
     }
 ]
