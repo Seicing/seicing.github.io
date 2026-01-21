@@ -519,7 +519,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "切换条件对话<br><a id='branchA1' style='color:#00ff00'  onclick=\"brIn('Z1');brOut('Z2');\">真结局</a> <a id='branchA2' onclick=\"brIn('Z2');brOut('Z1');\">千年战争</a>"
+        "string": "切换条件对话<br><aid='branchA1'style='color:#00ff00'onclick=\"brIn('Z1');brOut('Z2');\">真结局</a><aid='branchA2'onclick=\"brIn('Z2');brOut('Z1');\">千年战争</a>"
     },
     {
         "dic": 3,
@@ -717,7 +717,7 @@
         "char": "SeigentAtavism",
         "face": "smile",
         "con": "",
-        "string": "<span id='红'>那是神的力量哦</span>"
+        "string": "<spanid='红'>那是神的力量哦</span>"
     },
     {
         "dic": 3,
@@ -726,7 +726,7 @@
         "char": "SeigentAtavism",
         "face": "smile",
         "con": "",
-        "string": "<span id='红'>结社最高的技术结晶，那个可笑的复制人就是这个的半成品</span>"
+        "string": "<spanid='红'>结社最高的技术结晶，那个可笑的复制人就是这个的半成品</span>"
     },
     {
         "dic": 3,
@@ -735,7 +735,7 @@
         "char": "SeigentAtavism",
         "face": "smile",
         "con": "",
-        "string": "<span id='红'>那是歼灭结社残党的战争中的意外收获呢 </span>"
+        "string": "<spanid='红'>那是歼灭结社残党的战争中的意外收获呢</span>"
     },
     {
         "dic": 3,
@@ -744,7 +744,7 @@
         "char": "SeigentAtavism",
         "face": "smile",
         "con": "",
-        "string": "<span id='红'>为了超越你驱动下的地狱训练，配合神的权能，最后让我成为了超越一切的人</span>"
+        "string": "<spanid='红'>为了超越你驱动下的地狱训练，配合神的权能，最后让我成为了超越一切的人</span>"
     },
     {
         "dic": 3,
@@ -753,7 +753,7 @@
         "char": "SeigentAtavism",
         "face": "smile",
         "con": "",
-        "string": "<span id='红'>怎么样，你还是第一次感受到“完全无法击败对方”的无力感吧，你这个被愚蠢的祖先眷顾的白痴</span>"
+        "string": "<spanid='红'>怎么样，你还是第一次感受到“完全无法击败对方”的无力感吧，你这个被愚蠢的祖先眷顾的白痴</span>"
     },
     {
         "dic": 3,
@@ -762,7 +762,7 @@
         "char": "SeigentAtavism",
         "face": "smile",
         "con": "",
-        "string": "<span id='红'>可惜，这就是最后一次了，永别了</span>"
+        "string": "<spanid='红'>可惜，这就是最后一次了，永别了</span>"
     },
     {
         "dic": 2,
@@ -780,7 +780,7 @@
         "char": "SeigentAtavism",
         "face": "angry",
         "con": "",
-        "string": "<span id='红'>什……什么？</span>"
+        "string": "<spanid='红'>什……什么？</span>"
     },
     {
         "dic": 3,
@@ -789,7 +789,7 @@
         "char": "SeigentAtavism",
         "face": "angry",
         "con": "",
-        "string": "<span id='红'>是谁在妨碍我的计划！？</span>"
+        "string": "<spanid='红'>是谁在妨碍我的计划！？</span>"
     },
     {
         "dic": 3,
@@ -816,7 +816,7 @@
         "char": "SeigentAtavism",
         "face": "angry",
         "con": "",
-        "string": "<span id='红'>是千叶妙骨院那家伙吗？……是知道了我的计划打算过来坐收渔翁之利吗？</span>"
+        "string": "<spanid='红'>是千叶妙骨院那家伙吗？……是知道了我的计划打算过来坐收渔翁之利吗？</span>"
     },
     {
         "dic": 3,
@@ -825,7 +825,7 @@
         "char": "SeigentAtavism",
         "face": "angry",
         "con": "",
-        "string": "<span id='红'>真是碍事……连天都在帮那个家伙</span>"
+        "string": "<spanid='红'>真是碍事……连天都在帮那个家伙</span>"
     },
     {
         "dic": 3,
@@ -834,6 +834,6 @@
         "char": "SeigentAtavism",
         "face": "angry",
         "con": "",
-        "string": "<span id='红'>可恶！可恶！为什么你总是被命运眷顾！</span>"
+        "string": "<spanid='红'>可恶！可恶！为什么你总是被命运眷顾！</span>"
     }
 ]

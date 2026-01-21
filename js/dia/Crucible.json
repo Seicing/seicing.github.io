@@ -105,7 +105,7 @@
         "char": "SeicingAcolyte",
         "face": "depress",
         "con": "SPSW",
-        "string": "到底什么时候才能看到绿洲 "
+        "string": "到底什么时候才能看到绿洲"
     },
     {
         "dic": 1,
@@ -114,7 +114,7 @@
         "char": "SeicingAcolyte",
         "face": "depress",
         "con": "SPSW",
-        "string": "该不会要交代在这里了吧…… "
+        "string": "该不会要交代在这里了吧……"
     },
     {
         "dic": 2,
@@ -429,7 +429,7 @@
         "char": "SeicingAcolyte",
         "face": "sad",
         "con": "SP",
-        "string": "您有想过……复仇吗？ "
+        "string": "您有想过……复仇吗？"
     },
     {
         "dic": 3,
@@ -474,7 +474,7 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "如果我没有经历过这数天来的经历，我也许会无法理解 "
+        "string": "如果我没有经历过这数天来的经历，我也许会无法理解"
     },
     {
         "dic": 1,
@@ -655,5 +655,563 @@
         "face": "serene",
         "con": "ATSP",
         "string": "……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清到处看了看，走到一簇小树丛旁边蹲下"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "在西景本土很难找到这么多的肉苁蓉"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "该回去了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "回到早云的小屋"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "你回来了，世清"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "嗯"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "今天收获丰富"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "很不错，你越来越熟练了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "咳咳……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "真是岁月不饶人"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "sad",
+        "con": "ATSP",
+        "string": "您应该好好休息"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "你的眼睛现在还好吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "视力的下降似乎稳定下来了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "虽然还不是很适应戴着眼镜到处行动，但脱了眼镜什么也看不清楚太难受了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "也没办法，只能适应了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "嗯……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清在案台上一阵操作"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "明天就可以拿去卖钱了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "……世清"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "你应该前往更加广大的舞台了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "你连我的医术也很好地学习过去了，我已经没有任何东西可以教导你了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "您的身体越来越差了，我不能放着不管"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "我这个年轻时候犯下杀孽的家伙孤独地病死本身也是一种业报"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "我能在人生中最后的几个月能有你这么聪明的弟子，并且把我那贫瘠的知识传承下去本身就是上天恩赐了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "但是"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "你一点坏心眼都没有，这是优点也是缺点"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "虽然那种为他人着想的品质很美好，但是我感觉人要显得有点自私自利才正常"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "有时候坏人也会利用你这种无垢的思想让你吃亏的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "CE",
+        "string": "也有很多人只是出于单纯的利益对其他人显得恭恭敬敬呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "CE",
+        "string": "真是的……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "这样如何？我给你一个出师试炼吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "出师试炼……？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "且算是这几个月来我给你的教导的报答，你完成了就可以从我这里出师了，如何"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "把你我的师徒关系简化为纯粹的利益关系，好让我没有心理负担地离开吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "你真聪明，看起来你其实是懂这方面的人情世故的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "听过单角沙鱼么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "我的小屋北部就是云雾缭绕的云居山脉，单角沙鱼栖息在整个山脉南麓"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "把它的角给我整来吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "就是这样而已么？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "嘿，小鬼，口气还挺大，那大鱼长得大的比我的房子还大，还会制造海市蜃楼，到时候别被它叼走了回不来了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "在蚩幽人的猎物阶级表里它也是名列前茅的存在啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "不过我相信你做得到的，如果不对劲的话赶紧撤退，不要勉强啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "我明白了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "自由活动时间，前往北部的云居山脉冒险，直到找到boss房<br>boss战：单角沙鱼"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "狩猎成功！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "真是一场漫长的旅程，可算完成了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "smile",
+        "con": "ATSP",
+        "string": "回小屋吧"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "回到小屋，早云已经离开了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "早云老师！你在哪？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "离开小屋了吗？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清看到案台上有一封信，信上还夹带了早云留给世清的信物和钱财"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "请原谅我的不辞而别，世清，我把我的财产都留给你，单角沙鱼的角卖了也有不少钱，我已经不需要了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "我不想成为你的绊脚石，在看到这封信后，离开这个小屋自由自在地飞翔吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "我原先是想着躺在病床上迎接我最后的大限，但是和你的相伴又重新唤醒了我的热情"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "在生命的最后我还是选择作为一个杀手向仇人挥动我的武器，无论如何，我是不会回来了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "早云老人",
+        "char": "Souun",
+        "face": "smile",
+        "con": "",
+        "string": "最后，永别了，不要忘记我的指导，希望你可以活出你想要的未来"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "cry",
+        "con": "ATSP",
+        "string": "老师……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清郑重地闭上了小屋的大门"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "在这里呆了半年多，真的有点不舍得"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSPCE",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "走吧"
     }
 ]
