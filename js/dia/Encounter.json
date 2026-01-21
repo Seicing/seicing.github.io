@@ -1410,7 +1410,7 @@
         "char": "YoBorteCino",
         "face": "happy",
         "con": "",
-        "string": "我的兄弟姐妹们都叫我忽兰，但是在蚩幽，叫忽兰的人可以说是去菜市场喊一下都会有七八个回应的程度"
+        "string": "我的兄弟姐妹们都叫我忽兰，但是在高州，在菜市场叫一下忽兰都会有七八个忽兰回应"
     },
     {
         "dic": 3,
@@ -1446,7 +1446,7 @@
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "村里的人都不“信任”我可以独当一面，但是我已经学会了笑着面对这一事实，并积极地努力，争取成为独当一面的武者让他们刮目相看！"
+        "string": "村里的人都不“信任”我可以独当一面，但是我已经学会了笑着面对，并积极地努力，争取成为独当一面的武者让他们刮目相看！"
     },
     {
         "dic": 2,
@@ -1860,7 +1860,7 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "就在几天前，我的成人礼那天，一群自称结社的人袭击了我，我的爸爸为了救我死在了我的面前，我的家人朋友们也下落不明"
+        "string": "就在几天前，我的成人礼那天，一群神秘人袭击了我，我的爸爸为了救我死在了我的面前，我的家人朋友们也下落不明"
     },
     {
         "dic": 1,
@@ -1896,7 +1896,7 @@
         "char": "YoBorteCino",
         "face": "serene",
         "con": "",
-        "string": "你的那种感觉叫“仇恨”"
+        "string": "那就是所谓的“仇恨”"
     },
     {
         "dic": 1,
@@ -1914,25 +1914,7 @@
         "char": "YoBorteCino",
         "face": "serene",
         "con": "",
-        "string": "西景人和蚩幽人就是因为仇恨互相敌视"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "余",
-        "char": "YoBorteCino",
-        "face": "serene",
-        "con": "",
-        "string": "无论是何方都会认为是对方先放出敌意，但抛开早已被我们忘却的最古老的仇恨不说"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "余",
-        "char": "YoBorteCino",
-        "face": "serene",
-        "con": "",
-        "string": "我们连续多年的战争夺取了对方太多的生命了，而且，为了夺取土地，我们切切实实地憎恨着对方并为此而战"
+        "string": "就拿西景人和蚩幽人来说，我们就是因为仇恨互相敌视和战斗"
     },
     {
         "dic": 1,
@@ -1957,27 +1939,9 @@
         "branch": "",
         "name": "余",
         "char": "YoBorteCino",
-        "face": "serene",
+        "face": "extra2",
         "con": "",
-        "string": "阿古那奶奶说过……仇恨如果得不到伸张，本身就是一种罪过"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "余",
-        "char": "YoBorteCino",
-        "face": "serene",
-        "con": "",
-        "string": "如果存在极致的邪恶也不懂得去恨，任由邪恶滋生出更大的仇恨，那么不懂得仇恨的人比起邪恶本身更加邪恶"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "余",
-        "char": "YoBorteCino",
-        "face": "serene",
-        "con": "",
-        "string": "我感觉，这种东西还是要看个人理解，她说得太深奥了，我不懂，世界上存在很多没必要的仇恨"
+        "string": "管这么多干嘛，干他丫的"
     },
     {
         "dic": 3,
@@ -1986,7 +1950,7 @@
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "但是我觉得，对你释放出了如此恶意的那群家伙，一定要报仇，对于这些混蛋一定要狠狠地惩戒才叫正义和明事理，不是吗？"
+        "string": "阿古那奶奶说过，如果恶人抢夺了你的屋地，侮辱了你的亲人，你就理应让恶人尝受同等的耻辱"
     },
     {
         "dic": 3,
@@ -1995,7 +1959,61 @@
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "不过在此之前，我还是希望你可以理解阿古那奶奶说过的话……她还提到了一句，不要成为仇恨的奴隶"
+        "string": "忘记仇恨，企图忍让寻求安心之辈，或是非不分选择原谅的人，比恶人本身还要邪恶"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "这是否意味着我们在未来的某一天要斗个你死我活呢？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
+        "string": "西景和蚩幽的仇恨无法消解吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "你和我又不是仇人"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "先祖犯下的罪孽和错误要我们后辈来偿还，但是，要知道自己应该要恨什么"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "虽然大家都说我是笨蛋，但是我觉得至少西景人里面也有像你这样的人不值得去恨"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "阿古那奶奶也说过，不要让他人的仇恨成为自己的仇恨"
     },
     {
         "dic": 1,
@@ -2094,7 +2112,7 @@
         "char": "SeicingAcolyte",
         "face": "smile",
         "con": "SP",
-        "string": "嗯，我要去世界各地去旅行，增长自己的见识，培养自己的体量"
+        "string": "袭击我的那群家伙想必在到处追杀我……现在回去西景可能会很危险"
     },
     {
         "dic": 1,
@@ -2103,7 +2121,7 @@
         "char": "SeicingAcolyte",
         "face": "smile",
         "con": "SP",
-        "string": "结社那群家伙想必在到处追杀我……现在回去西景可能会很危险"
+        "string": "我要离开西景，去各地旅行，增长自己的见识，培养自己的体量"
     },
     {
         "dic": 1,
@@ -2142,22 +2160,67 @@
         "string": "我会回来的，我保证"
     },
     {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "等等！"
+    },
+    {
         "dic": 2,
         "branch": "",
         "name": "",
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "和余离别后，就进入了自由活动时间，世清这部分剧情沿着商路走会逐渐迷路，然后迷失在大沙漠之中"
+        "string": "余拿出了一个绿松石手镯"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte",
-        "face": "serene",
-        "con": "SPSW",
-        "string": "似乎……迷路了"
+        "face": "smile",
+        "con": "SP",
+        "string": "好漂亮的手镯"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "这个给你"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "我可以收下吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "smile",
+        "con": "",
+        "string": "你一定要收下，这是我们友谊的证明"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "smile",
+        "con": "SP",
+        "string": "谢谢你！"
     },
     {
         "dic": 2,
@@ -2166,6 +2229,132 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "世清不力倒下，章节结束"
+        "string": "余后退了几步，向世清挥了挥手"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "余",
+        "char": "YoBorteCino",
+        "face": "happy",
+        "con": "",
+        "string": "再见了！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "然后余快速地离开了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SPCE",
+        "string": "感觉……心里变得空荡荡的"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "和余离别后，就进入了自由活动时间，来到南部的绿洲城镇时，世清会来到城镇上的公告栏"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "奇怪……我看不清上面的字"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "depress",
+        "con": "SP",
+        "string": "……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "depress",
+        "con": "SP",
+        "string": "通缉犯……明世清……杀害皇帝未遂罪……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "angry",
+        "con": "SP",
+        "string": "真是颠倒黑白！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "周围的人似乎察觉到了世清的不对劲，开始向世清那边看过来"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "surprise",
+        "con": "SP",
+        "string": "(再待下去有点不妙！)"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清找机会离开了城镇回到野外"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "不知道他们是怎么做到的，但是我现在似乎被全西景通缉"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "sad",
+        "con": "SP",
+        "string": "和之前猜想的一样……这时候回西景本土会非常危险，沿河的城镇也要尽量避开了……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "避开河边城镇横跨西景中央大沙漠，在走出沙漠从东部出口离开后触发下一章剧情"
     }
 ]
