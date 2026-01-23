@@ -2076,7 +2076,7 @@
         "char": "YoBorteCino",
         "face": "serene",
         "con": "",
-        "string": "沿河的大路是不属于高州控制的中立商路，沿着这条路走就能到达伊萨赫尔"
+        "string": "往这边走就是不属于高州直辖的沙漠部落的聚落了"
     },
     {
         "dic": 3,
@@ -2094,34 +2094,25 @@
         "char": "YoBorteCino",
         "face": "sad",
         "con": "",
-        "string": "你真的决定了吗？"
+        "string": "你想好接下来要干什么了吗？"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte",
-        "face": "smile",
+        "face": "serene",
         "con": "SP",
-        "string": "袭击我的那群家伙想必在到处追杀我……现在回去西景可能会很危险"
+        "string": "见机行事"
     },
     {
         "dic": 1,
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte",
-        "face": "smile",
+        "face": "serene",
         "con": "SP",
-        "string": "我要离开西景，去各地旅行，增长自己的见识，培养自己的体量"
-    },
-    {
-        "dic": 1,
-        "branch": "",
-        "name": "世清",
-        "char": "SeicingAcolyte",
-        "face": "smile",
-        "con": "SP",
-        "string": "在合适的时机到来之时，我就会回来"
+        "string": "但是无论如何，我一定会为我的父亲报仇"
     },
     {
         "dic": 3,
@@ -2148,7 +2139,7 @@
         "char": "SeicingAcolyte",
         "face": "smile",
         "con": "SP",
-        "string": "我会回来的，我保证"
+        "string": "等事情结束后，我会的"
     },
     {
         "dic": 3,
