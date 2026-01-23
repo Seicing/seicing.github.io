@@ -112,28 +112,38 @@ createApp({
     }
 }).mount('#app');
 
-// 這些函式現在是獨立的，不再是 Vue 實例的一部分
-// 它們可以直接在全域範圍內被呼叫
-function brIn(a) {
-    const elements = document.querySelectorAll('.' + a);
-    elements.forEach(element => {
-        element.style.display = 'block';
-    });
-    const el = 'branch' + a;
-    const branchElement = document.getElementById(el);
-    if (branchElement) {
-        branchElement.style.color = '#00ff00';
-    }
-}
 
-function brOut(a) {
-    const elements = document.querySelectorAll('.' + a);
-    elements.forEach(element => {
-        element.style.display = 'none';
+document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.branch-btn');
+    if (!btn) return;
+
+    e.preventDefault();
+
+    const group = btn.dataset.group;
+    const index = btn.dataset.index;
+
+    switchBranch(group, index);
+});
+
+function switchBranch(group, index) {
+    // 1. 隐藏该组所有分支内容
+    document.querySelectorAll('.' + group).forEach(el => {
+        el.style.display = 'none';
     });
-    const el = 'branch' + a;
-    const branchElement = document.getElementById(el);
-    if (branchElement) {
-        branchElement.style.color = '#D0C9B7';
+
+    // 2. 显示选中的分支内容
+    document.querySelectorAll('.' + group + index).forEach(el => {
+        el.style.display = 'block';
+    });
+
+    // 3. 重置该组所有分支按钮颜色
+    document.querySelectorAll('[id^="branch' + group + '"]').forEach(el => {
+        el.style.color = '#D0C9B7';
+    });
+
+    // 4. 高亮当前分支按钮
+    const current = document.getElementById('branch' + group + index);
+    if (current) {
+        current.style.color = '#00ff00';
     }
 }
