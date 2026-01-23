@@ -15,11 +15,11 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "分支测试，请选择1个分支<br><a id='branchA1' href='#' class='branch-btn' data-group='A' data-index='1'>余</a> <a id='branchA2' href='#' class='branch-btn' data-group='A' data-index='2'>伊丽丝</a> <a id='branchA3' href='#' class='branch-btn' data-group='A' data-index='3'>洛雨希</a> <a id='branchA4' href='#' class='branch-btn' data-group='A' data-index='4'>夏修伦</a> <a id='branchA5' href='#' class='branch-btn' data-group='A' data-index='5'>羽三</a> <a id='branchA6' href='#' class='branch-btn' data-group='A' data-index='6'>文</a>"
+        "string": "分支测试，请选择1个分支<br><a id='branchA1' href='#' class='branch-btn ori' data-group='A' data-index='1'>余</a> <a id='branchA2' href='#' class='branch-btn' data-group='A' data-index='2'>伊丽丝</a> <a id='branchA3' href='#' class='branch-btn' data-group='A' data-index='3'>洛雨希</a> <a id='branchA4' href='#' class='branch-btn' data-group='A' data-index='4'>夏修伦</a> <a id='branchA5' href='#' class='branch-btn' data-group='A' data-index='5'>羽三</a> <a id='branchA6' href='#' class='branch-btn' data-group='A' data-index='6'>文</a>"
     },
     {
         "dic": 3,
-        "branch": "A1",
+        "branch": "A A1",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "sinister",
@@ -28,7 +28,7 @@
     },
     {
         "dic": 3,
-        "branch": "A2",
+        "branch": "A A2",
         "name": "伊丽丝",
         "char": "IrisMrazKralitsata",
         "face": "smile",
@@ -37,7 +37,7 @@
     },
     {
         "dic": 3,
-        "branch": "A3",
+        "branch": "A A3",
         "name": "洛雨希",
         "char": "LouichRozenSchutze",
         "face": "smile",
@@ -46,7 +46,7 @@
     },
     {
         "dic": 3,
-        "branch": "A4",
+        "branch": "A A4",
         "name": "夏修伦",
         "char": "SarchlentConqueror",
         "face": "smile",
@@ -55,7 +55,7 @@
     },
     {
         "dic": 3,
-        "branch": "A5",
+        "branch": "A A5",
         "name": "羽三",
         "char": "IuimiFlameEmpress",
         "face": "depress",
@@ -64,7 +64,7 @@
     },
     {
         "dic": 3,
-        "branch": "A6",
+        "branch": "A A6",
         "name": "文",
         "char": "VenCelestial",
         "face": "smile",
@@ -150,11 +150,11 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "分支测试2，请选择1个分支<br><a id='branchZ1' href='#' class='branch-btn' data-group='Z' data-index='1'>分支1</a> <a id='branchZ2' href='#' class='branch-btn' data-group='Z' data-index='2'>分支2</a>"
+        "string": "分支测试2，请选择1个分支<br><a id='branchZ1' href='#' class='branch-btn ori' data-group='Z' data-index='1'>分支1</a> <a id='branchZ2' href='#' class='branch-btn' data-group='Z' data-index='2'>分支2</a>"
     },
     {
         "dic": 3,
-        "branch": "Z1",
+        "branch": "Z Z1",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "smile",
@@ -163,7 +163,7 @@
     },
     {
         "dic": 3,
-        "branch": "Z1",
+        "branch": "Z Z1",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "surprise",
@@ -172,7 +172,7 @@
     },
     {
         "dic": 3,
-        "branch": "Z1",
+        "branch": "Z Z1",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "fear",
@@ -181,7 +181,7 @@
     },
     {
         "dic": 3,
-        "branch": "Z2",
+        "branch": "Z Z2",
         "name": "羽三",
         "char": "IuimiFlameEmpress",
         "face": "sinister",
@@ -190,7 +190,7 @@
     },
     {
         "dic": 3,
-        "branch": "Z2",
+        "branch": "Z Z2",
         "name": "余",
         "char": "YoEmpireFlower",
         "face": "cry",
@@ -199,7 +199,7 @@
     },
     {
         "dic": 3,
-        "branch": "Z2",
+        "branch": "Z Z2",
         "name": "羽三",
         "char": "IuimiFlameEmpress",
         "face": "depress",
@@ -208,7 +208,7 @@
     },
     {
         "dic": 3,
-        "branch": "Z2",
+        "branch": "Z Z2",
         "name": "羽三",
         "char": "IuimiAcolyte",
         "face": "sad",
