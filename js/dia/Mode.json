@@ -15,7 +15,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "分支测试，请选择1个分支<br><a id='branchA1'style='color:#00ff00'onclick=\"brIn('A1');brOut('A2');brOut('A3');brOut('A4');brOut('A5');brOut('A6');\">余</a><a id='branchA2'onclick=\"brIn('A2');brOut('A1');brOut('A3');brOut('A4');brOut('A5');brOut('A6');\">伊丽丝</a><a id='branchA3'onclick=\"brIn('A3');brOut('A1');brOut('A2');brOut('A4');brOut('A5');brOut('A6');\">洛雨希</a><a id='branchA4'onclick=\"brIn('A4');brOut('A1');brOut('A3');brOut('A2');brOut('A5');brOut('A6');\">夏修伦</a><a id='branchA5'onclick=\"brIn('A5');brOut('A1');brOut('A3');brOut('A4');brOut('A2');brOut('A6');\">羽三</a><a id='branchA6'onclick=\"brIn('A6');brOut('A1');brOut('A3');brOut('A4');brOut('A5');brOut('A2');\">文</a>"
+        "string": "分支测试，请选择1个分支<br><a id='branchA1'style='color:#00ff00'onclick=\"brIn('A1');brOut('A2');brOut('A3');brOut('A4');brOut('A5');brOut('A6');\">余</a> <a id='branchA2'onclick=\"brIn('A2');brOut('A1');brOut('A3');brOut('A4');brOut('A5');brOut('A6');\">伊丽丝</a> <a id='branchA3'onclick=\"brIn('A3');brOut('A1');brOut('A2');brOut('A4');brOut('A5');brOut('A6');\">洛雨希</a> <a id='branchA4'onclick=\"brIn('A4');brOut('A1');brOut('A3');brOut('A2');brOut('A5');brOut('A6');\">夏修伦</a> <a id='branchA5'onclick=\"brIn('A5');brOut('A1');brOut('A3');brOut('A4');brOut('A2');brOut('A6');\">羽三</a> <a id='branchA6'onclick=\"brIn('A6');brOut('A1');brOut('A3');brOut('A4');brOut('A5');brOut('A2');\">文</a>"
     },
     {
         "dic": 3,
@@ -87,7 +87,7 @@
         "char": "YoEmpireFlower",
         "face": "sinister",
         "con": "",
-        "string": "别说傻话了<br>早点睡觉吧，<spanid='红'>熬夜</span>都是<spanid='金'>小雪人</span><br>什么？你说谁是<spanid='金'>小雪人</span>啊"
+        "string": "别说傻话了<br>早点睡觉吧，<span id='红'>熬夜</span>都是<span id='金'>小雪人</span><br>什么？你说谁是<span id='金'>小雪人</span>啊"
     },
     {
         "dic": 3,
@@ -96,7 +96,7 @@
         "char": "YoEmpireFlower",
         "face": "depress",
         "con": "",
-        "string": "我真的是<spanid='金'>小雪人</span>吗……"
+        "string": "我真的是<span id='金'>小雪人</span>吗……"
     },
     {
         "dic": 1,
@@ -114,7 +114,7 @@
         "char": "SeicingEmpireJade",
         "face": "serene",
         "con": "ATSP",
-        "string": "这个<spanid='绿'>肥肥的余头雪人</span>，跟你长得一模一样啊，别挣扎了，你就是小雪人"
+        "string": "这个<span id='绿'>肥肥的余头雪人</span>，跟你长得一模一样啊，别挣扎了，你就是小雪人"
     },
     {
         "dic": 3,
@@ -132,7 +132,7 @@
         "char": "YoEmpireFlower",
         "face": "depress",
         "con": "",
-        "string": "<spanid='大'>你会付出代价的</span>"
+        "string": "<span id='大'>你会付出代价的</span>"
     },
     {
         "dic": 2,
@@ -150,7 +150,7 @@
         "char": "",
         "face": "smile",
         "con": "",
-        "string": "分支测试2，请选择1个分支<br><a id='branchZ1'style='color:#00ff00'onclick=\"brIn('Z1');brOut('Z2');\">分支1</a><a id='branchZ2'onclick=\"brIn('Z2');brOut('Z1');\">分支2</a>"
+        "string": "分支测试2，请选择1个分支<br><a id='branchZ1'style='color:#00ff00'onclick=\"brIn('Z1');brOut('Z2');\">分支1</a> <a id='branchZ2'onclick=\"brIn('Z2');brOut('Z1');\">分支2</a>"
     },
     {
         "dic": 3,
