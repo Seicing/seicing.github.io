@@ -112,19 +112,9 @@ createApp({
     }
 }).mount('#app');
 
-
-document.addEventListener('click', function (e) {
-    const btn = e.target.closest('.branch-btn');
-    if (!btn) return;
-
-    e.preventDefault();
-
-    const group = btn.dataset.group;
-    const index = btn.dataset.index;
-
-    switchBranch(group, index);
-});
-
+// ===============================
+// 分支切换核心函数
+// ===============================
 function switchBranch(group, index) {
     // 1. 隐藏该组所有分支内容
     document.querySelectorAll('.' + group).forEach(el => {
@@ -132,7 +122,8 @@ function switchBranch(group, index) {
     });
 
     // 2. 显示选中的分支内容
-    document.querySelectorAll('.' + group + index).forEach(el => {
+    // 要求元素同时拥有 group 与 group+index 两个 class
+    document.querySelectorAll('.' + group + '.' + group + index).forEach(el => {
         el.style.display = 'block';
     });
 
@@ -147,3 +138,42 @@ function switchBranch(group, index) {
         current.style.color = '#00ff00';
     }
 }
+
+// ===============================
+// 页面加载后：
+// 自动扫描所有分支组
+// 每个分支组默认切到分支 1
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+    const groups = new Set();
+
+    // 从分支按钮中自动收集分支组
+    document.querySelectorAll('.branch-btn').forEach(btn => {
+        const group = btn.dataset.group;
+        if (group) {
+            groups.add(group);
+        }
+    });
+
+    // 所有分支组默认显示分支 1
+    groups.forEach(group => {
+        switchBranch(group, 1);
+    });
+});
+
+// ===============================
+// 事件委托：处理分支按钮点击
+// ===============================
+document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.branch-btn');
+    if (!btn) return;
+
+    e.preventDefault();
+
+    const group = btn.dataset.group;
+    const index = btn.dataset.index;
+
+    if (!group || !index) return;
+
+    switchBranch(group, index);
+});
