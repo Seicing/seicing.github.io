@@ -74,3 +74,11 @@
 #小 {
     font-size: 12px;
 }
+
+.branch-btn {
+    color: #D0C9B7;
+}
+
+.branch-btn.ori {
+    color: #00ff00;
+}
