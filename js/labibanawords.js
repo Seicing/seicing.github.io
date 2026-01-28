@@ -1,31 +1,36 @@
-function applyFont(size) {
-    if (size === 'big') {
-        document.body.style.fontSize = '12pt';
-        smallfonter.style.color = '#857E6E';
-        bigfonter.style.color = '#6B1E1E';
-    } else {
-        document.body.style.fontSize = '9pt';
-        smallfonter.style.color = '#6B1E1E';
-        bigfonter.style.color = '#857E6E';
+(function () {
+
+    function applyFont(size) {
+        if (size === 'big') {
+            document.body.style.fontSize = '12pt';
+        } else {
+            document.body.style.fontSize = '9pt';
+        }
+
+        // 同步所有按钮状态（可能有多份 sidebar）
+        document.querySelectorAll('#smallfonter').forEach(el => {
+            el.style.color = size === 'small' ? '#6B1E1E' : '#857E6E';
+        });
+        document.querySelectorAll('#bigfonter').forEach(el => {
+            el.style.color = size === 'big' ? '#6B1E1E' : '#857E6E';
+        });
     }
-}
 
-// 绑定点击事件
-const smallfonter = document.getElementById('smallfonter');
-const bigfonter = document.getElementById('bigfonter');
-
-smallfonter.addEventListener('click', () => {
-    localStorage.setItem('fontSize', 'small');
-    applyFont('small');
-});
-
-bigfonter.addEventListener('click', () => {
-    localStorage.setItem('fontSize', 'big');
-    applyFont('big');
-});
-
-// 页面加载时自动应用
-document.addEventListener('DOMContentLoaded', () => {
+    // ① 页面一加载就应用字体（不等 sidebar）
     const savedFont = localStorage.getItem('fontSize') || 'small';
     applyFont(savedFont);
-}); 
+
+    // ② 用事件委托，专治“后加载 / 复制 DOM”
+    document.addEventListener('click', function (e) {
+        if (e.target.id === 'smallfonter') {
+            localStorage.setItem('fontSize', 'small');
+            applyFont('small');
+        }
+
+        if (e.target.id === 'bigfonter') {
+            localStorage.setItem('fontSize', 'big');
+            applyFont('big');
+        }
+    });
+
+})();
