@@ -1,7 +1,7 @@
 (function () {
 
     function applyFont(size) {
-        if (!document.body) return; // 保险
+        if (!document.body) return;
 
         if (size === 'big') {
             document.body.style.fontSize = '12pt';
@@ -17,26 +17,34 @@
         });
     }
 
-    // 等 DOM 就绪后再开始一切
     document.addEventListener('DOMContentLoaded', () => {
 
-        // ① 自动应用字体（不等 sidebar）
-        const savedFont = localStorage.getItem('fontSize') || 'small';
-        applyFont(savedFont);
+        const getSavedFont = () => localStorage.getItem('fontSize') || 'small';
 
-        // ② 事件委托（sidebar 晚到 / 复制 都 OK）
-        document.addEventListener('click', function (e) {
+        // ① 首次应用（保证字体正确）
+        applyFont(getSavedFont());
+
+        // ② 点击切换
+        document.addEventListener('click', e => {
             if (e.target.id === 'smallfonter') {
                 localStorage.setItem('fontSize', 'small');
                 applyFont('small');
             }
-
             if (e.target.id === 'bigfonter') {
                 localStorage.setItem('fontSize', 'big');
                 applyFont('big');
             }
         });
 
+        // ③ 监听 sidebar / 弹窗 被插入 DOM
+        const observer = new MutationObserver(() => {
+            applyFont(getSavedFont());
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
     });
 
 })();
