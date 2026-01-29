@@ -1,5 +1,5 @@
 {
-    "tableId": "demoshipTable",
+    "tableId": "carrackTable",
     "common": [
         {
             "tech": "Hulk",
@@ -124,7 +124,14 @@
             "tech": "葡萄牙船只血量",
             "showId": "葡萄牙船只血量",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
-            "score": 1,
+            "score": 2,
+            "civ": "Portuguese"
+        },
+        {
+            "tech": "环球航行",
+            "showId": "环球航行",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
             "civ": "Portuguese"
         },
         {

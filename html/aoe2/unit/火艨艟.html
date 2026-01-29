@@ -84,11 +84,11 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
-            <td>100</td>
+            <td>110</td>
         </tr>
         <tr class="textle">
-            <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(近战/远程)</span></td>
-            <td>0/1</td>
+            <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(近战)</span></td>
+            <td>2</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">子弹速度</span></td>
@@ -100,7 +100,7 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲(护甲)</span></td>
-            <td>0</td>
+            <td>1</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲(盾牌)</span></td>
@@ -108,7 +108,7 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">护甲类型</span></td>
-            <td>舰船(+6)</td>
+            <td>舰船</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">视野</span></td>
@@ -116,7 +116,7 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-            <td>1.3</td>
+            <td>1.43</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">攻击间隔时间</span></td>
@@ -129,9 +129,8 @@
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">攻击加成</span></td>
             <td>
-                +3对舰船 <br>
-                +1对渔船 <br> +1对建筑 <br>
-                +1对龟船 <br>
+                +1对远程舰船 <br>
+                +1对建筑 <br>
             </td>
         </tr>
         <tr class="bcF5F8FA textce">
@@ -139,17 +138,17 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">升级可能</span></td>
-            <td> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到战舰.webp" width="20px">喷火船</td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/中型战舰.webp" width="20px">喷火船</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">升级成本</span></td>
-            <td><img width=20px src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png>230 <img width=20px
+            <td><img width=20px src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png>150 <img width=20px
                     src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png>100</span>
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">升级时间</span></td>
-            <td>50秒</td>
+            <td>【待补充】秒</td>
         </tr>
 
     </table>
@@ -208,7 +207,12 @@
         <tr class="bcF5F8FA textce">
             <td colspan="2"><span style="color:#6e6e85">科技收益</span></td>
         </tr>
-
+        <tr class="textle">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+            <td>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/虹吸管.webp" width="20px">虹吸管(获得爆破蓄力攻击) <br>
+            </td>
+        </tr>
 
 
 
@@ -231,14 +235,18 @@
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/修船厂.webp" width="20px"></a>修船厂(+0/+1) <br>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp" width="20px">巨桅大帆船(+1/+1，仅葡萄牙) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);DryDock();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/干船坞.webp" width="20px"></a>干船坞(+0/+1) <br>
+
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
             <td>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);DryDock();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/干船坞.webp" width="20px"></a>干船坞(+15%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/盖瓦式叠板.webp" width="20px"></a>盖瓦式叠板(+10%) <br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CarvelHull();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/平铺船壳板.webp" width="20px"></a>平铺船壳板(+10%) <br>
             </td>
         </tr>
         <tr class="textle">
@@ -258,6 +266,7 @@
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Shipwright();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ShipwrightDE.webp" width="20px"></a>造船匠(+54%)<br>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp" width="20px">环球旅行(+33%，仅葡萄牙) <br>
             </td>
         </tr>
         <tr class="textle">
@@ -265,6 +274,13 @@
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Shipwright();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ShipwrightDE.webp" width="20px"></a>造船匠(-20%)<br>
+            </td>
+        </tr>
+
+        <tr class="textle">
+            <td class="bcF5F8FA"><span style="color:#6e6e85">其他</span></td>
+            <td>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/燃烧弹.webp" width="20px">燃烧弹(沉没时自爆) <br>
             </td>
         </tr>
     </table>
@@ -317,6 +333,16 @@
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp"
                 width="25px">葡萄牙：39284版本后，黄金成本-20%，42848版本后，科技研发速度+30%</li>
         <li>36906版本后，训练时间65秒</li>
+    </ul>
+
+
+    <b>最后的酋长</b>
+    <ul>
+        <li>158894版本更新后，生命值从100上调到110，护甲从0/4调整为1/4，移动速度从1.3上调到1.43，攻击力从0近战1远程统合为2近战，+3对舰船伤害调整为+1对远程舰船伤害</li>
+        <li>158894版本更新后，舰船护甲从+6变成+0</li>
+        <li>158894版本更新后，伤害类型变成近战伤害，获得对远程舰船伤害加成，失去对所有舰船的伤害加成</li>
+        <li>158894版本更新后，战舰、大型战舰升级更名为中型战舰、重型战舰升级，影响并取代战舰、喷火船和趸船系的全部升级，不再影响爆破船系升级，中型战舰成本从230肉100金调整为150木100金，重型战舰成本从315肉400木调整为400木315金
+        </li>
     </ul>
 </div>
 <br><br><br>

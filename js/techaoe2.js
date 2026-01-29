@@ -63,25 +63,22 @@ let ayanami = {
     "装甲战象": /*html*/`装甲战象<br>Armored Elephant<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>120 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>95 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>取代冲车的重装攻城战象`,
     "攻城战象": /*html*/`攻城战象<br>Siege Elephant<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>120 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>95 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>取代冲车的重装攻城战象，装甲战象的升级<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>850 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60`,
     "船坞": /*html*/`船坞<br>Dock<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>35<br>建造和升级船只，渔船收集食物后存放于此，和其他玩家进行海上贸易`,
-    "刺网": /*html*/`刺网<br>Gillnets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>渔船工作速度+20%`,
-    "修船厂": /*html*/`修船厂<br>Careening<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>船只远程护甲+1`,
-    "干船坞": /*html*/`干船坞<br>Dry Dock<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>舰船移动速度+15%`,
-    "造船匠": /*html*/`造船匠<br>Shipwright<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>船只木材消耗-20%，建造速度+54%(即建造时间-35%)`,
-    "箭船": /*html*/`箭船<br>Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>小型快速舰船，攻击力弱`,
 
-    "战舰": /*html*/`战舰<br>War Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比箭船强大，快速舰船<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>230 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50`,
-    "大型战舰": /*html*/`大型战舰<br>Galleon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比战舰强大，快速舰船<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>315 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65`,
+    "钓鱼线": /*html*/`钓鱼线<br>Fishing Lines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>渔船收集速度+10%，运载量+5`,
+    "刺网": /*html*/`刺网<br>Gillnets<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>渔船收集速度+10%，运载量+5`,
+
+    "箭船": /*html*/`箭船<br>Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>小型快速舰船，攻击力弱`,
+    "战舰": /*html*/`战舰<br>War Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比箭船强大，快速舰船<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "大型战舰": /*html*/`大型战舰<br>Galleon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>90 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比战舰强大，快速舰船<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>315 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
     "火艨艟": /*html*/`火艨艟<br>Fire Galley<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65<br>向其他船只开火，擅长击沉船只`,
-
-    "喷火船": /*html*/`喷火船<br>Fire Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>向其他船只开火，擅长击沉船只<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>230 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50`,
-
-    "快速喷火船": /*html*/`快速喷火船<br>Fast Fire Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比喷火船强大，向其他船只开火，擅长击沉船只<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>280 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50`,
+    "喷火船": /*html*/`喷火船<br>Fire Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>向其他船只开火，擅长击沉船只<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "快速喷火船": /*html*/`快速喷火船<br>Fast Fire Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>36<br>比喷火船强大，向其他船只开火，擅长击沉船只<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>315 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
 
-    "爆破筏": /*html*/`爆破筏<br>Demolition Raft<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>装填大量爆炸物，爆破自身进行攻击`,
-    "爆破船": /*html*/`爆破船<br>Demolition Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>装填大量爆炸物，爆破自身进行攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>230 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50`,
-    "重型爆破船": /*html*/`重型爆破船<br>Heavy Demolition Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>比爆破船坚固，装填大量爆炸物，爆破自身进行攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50`,
+    "爆破筏": /*html*/`爆破筏<br>Demolition Raft<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>装填大量爆炸物，爆破自身进行攻击`,
+    "爆破船": /*html*/`爆破船<br>Demolition Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>装填大量爆炸物，爆破自身进行攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "重型爆破船": /*html*/`重型爆破船<br>Heavy Demolition Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>比爆破船坚固，装填大量爆炸物，爆破自身进行攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
 
     "炮舰": /*html*/`炮舰<br>Cannon Galleon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>46<br>超长射程的炮击军舰，攻击沿岸的防御设施`,
@@ -291,6 +288,7 @@ let ayanami = {
     "风琴炮": /*html*/`风琴炮<br>Organ Gun<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>70 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>葡萄牙独特部队，发射散弹的攻城武器，对大量单位非常有效`,
     "精锐风琴炮": /*html*/`精锐风琴炮<br>Elite Organ Gun<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>70 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>葡萄牙独特部队，发射散弹的攻城武器，对大量单位非常有效<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
     "巨桅大帆船": /*html*/`巨桅大帆船<br>Carrack<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>船的近程护甲和远程护甲+1`,
+    "环球航行": /*html*/`环球航行<br>Circumnavigation<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>将地图设定为已探索，提高33%船只训练速度`,
     "火绳枪": /*html*/`火绳枪<br>Arquebus<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>提高火药单位对移动目标的命中率`,
     "意大利佣兵": /*html*/`意大利佣兵<br>Condottiero<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>意大利佣兵部队，快速的反火药步兵`,
     "热那亚弩手": /*html*/`热那亚弩手<br>Genoese Crossbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>45 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>意大利独特射手，反制骑兵的弩手`,
@@ -386,7 +384,7 @@ let ayanami = {
     "中国火药移速": /*html*/`中国火药移速<br>火矛兵和喷火船移动速度在城堡时代/帝王时代+5%/+10%`,
     "中国团队加成": /*html*/`中国团队加成<br>农田产量+10%`,
 
-    "日本渔船加成": /*html*/`日本渔船加成<br>渔船两倍生命值，+2远程护甲，效率在黑暗、封建、城堡、帝王时代增加5%/10%/15%/20%`,
+    "日本渔船加成": /*html*/`日本渔船加成<br>渔船生命值+100%，效率在黑暗/封建/城堡/帝王时代+5%/10%/15%/20%`,
     "日本便宜资源点": /*html*/`日本便宜资源点<br>磨坊、伐木场和矿场便宜50%`,
     "日本快速步兵": /*html*/`日本快速步兵<br>从封建时代开始步兵攻击速度+33%`,
     "日本骑射手": /*html*/`日本骑射手<br>骑射手对射手部队(除掷矛手外)+2伤害`,
@@ -455,7 +453,7 @@ let ayanami = {
     "瞿折罗额外果丛": /*html*/`瞿折罗额外果丛<br>开局拥有额外两片175食物的浆果丛`,
     "瞿折罗牧场": /*html*/`瞿折罗牧场<br>驻扎畜牧动物进入磨坊获得食物`,
     "瞿折罗伤害加成": /*html*/`瞿折罗伤害加成<br>骑乘部队造成的额外伤害在封建时代/城堡时代/帝王时代+20%/+30%/+40%`,
-    "瞿折罗渔船驻扎": /*html*/`瞿折罗渔船驻扎<br>渔船可以驻扎在船坞`,
+    "瞿折罗渔船驻扎": /*html*/`瞿折罗渔船驻扎<br>船坞可驻扎渔船数量+5`,
     "瞿折罗团队加成": /*html*/`瞿折罗团队加成<br>骆驼和大象单位的生产速度提高25%`,
 
     "达罗毗荼升级木材": /*html*/`达罗毗荼升级木材<br>进入下一个时代时获得200木材`,
@@ -499,7 +497,7 @@ let ayanami = {
     "条顿团队加成": /*html*/`条顿团队加成<br>单位对僧侣招降抵抗加强`,
 
     "维京步兵血量": /*html*/`维京步兵血量<br>步兵从封建时代开始生命值+10%`,
-    "维京便宜战船": /*html*/`维京便宜战船<br>战船封建和城堡时代便宜15%，帝王时代便宜20%`,
+    "维京便宜战船": /*html*/`维京便宜战船<br>战船在封建/城堡/帝王时代便宜10%/15%/20%`,
     "维京免费科技": /*html*/`维京免费科技<br>独轮手推车和手推车免费`,
     "维京团队加成": /*html*/`维京团队加成<br>船坞便宜15%`,
 
@@ -566,14 +564,14 @@ let ayanami = {
     "波兰团队加成": /*html*/`波兰团队加成<br>轻骑兵系对步弓手系伤害+1`,
 
     "意大利便宜时代": /*html*/`意大利便宜时代<br>时代升级便宜15%`,
-    "意大利便宜科技": /*html*/`意大利便宜科技<br>船坞和大学科技便宜33%`,
+    "意大利便宜科技": /*html*/`意大利便宜科技<br>船坞和大学科技便宜25%`,
     "意大利便宜渔船": /*html*/`意大利便宜渔船<br>渔船便宜15%`,
     "意大利便宜火药": /*html*/`意大利便宜火药<br>火药部队便宜20%`,
     "意大利步弓手": /*html*/`意大利步弓手<br>步弓手和意大利佣兵护甲+1/+1`,
     "意大利团队加成": /*html*/`意大利团队加成<br>帝王时代可以训练意大利佣兵`,
 
     "葡萄牙黄金费用": /*html*/`葡萄牙黄金费用<br>所有单位的黄金费用便宜20%`,
-    "葡萄牙船只血量": /*html*/`葡萄牙船只血量<br>船只+10%生命值`,
+    "葡萄牙船只血量": /*html*/`葡萄牙船只血量<br>船只生命值在黑暗/封建/城堡/帝王时代+10%/10%/15%/20%`,
     "葡萄牙大商站": /*html*/`葡萄牙大商站<br>帝王时代可以建造大商站`,
     "葡萄牙果丛加成": /*html*/`葡萄牙果丛加成<br>村民从果丛获得额外的33%木材`,
     "葡萄牙团队加成": /*html*/`葡萄牙团队加成<br>科技研究速度+25%`,
@@ -719,7 +717,7 @@ let ayanami = {
     "吴虚空食物": /*html*/`吴虚空食物<br>军事生产建筑和船坞提供55食物`,
     "吴步兵修复": /*html*/`吴步兵修复<br>步兵在封建/城堡/帝王时代每分钟恢复生命值10/20/30`,
     "吴攻击力": /*html*/`吴攻击力<br>刀剑手和黑光铠骑兵在帝王时代攻击力+2`,
-    "吴造船厂": /*html*/`吴造船厂<br>修船厂、干船坞可提前一个时代研发且费用和研究时间-75%`,
+    "吴造船厂": /*html*/`吴造船厂<br>修船厂、干船坞免费研发`,
     "吴团队加成": /*html*/`吴团队加成<br>房屋建造速度+100%`,
 
     "赤壁战术": /*html*/`赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>爆破船和火焰弓箭手对船只和建筑造成持续5秒的火焰伤害，每秒造成1(火焰弓箭手)和5(爆破船)伤害`,
@@ -799,9 +797,14 @@ let ayanami = {
     "趸船": /*html*/`趸船<br>Hulk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰`,
     "战争趸船": /*html*/`战争趸船<br>War Hulk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
     "大帆船": /*html*/`大帆船<br>Carrack<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>315 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+
+
     "投石船": /*html*/`投石船<br>Catapult Galleon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
-    "钓鱼线": /*html*/`钓鱼线<br>Fishing Lines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>渔船收集速度+10%，运载量+5`,
+    "修船厂": /*html*/`修船厂<br>Careening<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>船只远程护甲+1`,
+    "干船坞": /*html*/`干船坞<br>Dry Dock<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>船只远程护甲+1`,
+    "造船匠": /*html*/`造船匠<br>Shipwright<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>船只木材消耗-20%，建造速度+54%(即建造时间-35%)`,
+
     "盖瓦式叠板": /*html*/`盖瓦式叠板<br>Clinker Construction<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>船只移动速度+10%`,
     "平铺船壳板": /*html*/`平铺船壳板<br>Carvel Hull<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>船只移动速度+10%`,
     "虹吸管": /*html*/`虹吸管<br>Siphons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>喷火船获得爆炸蓄力攻击`,
@@ -2910,6 +2913,9 @@ function CannonGalleon() {
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
+    document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.add("aoeTechIconOff");
 }
 
 function EilteCannonGalleon() {
@@ -2942,6 +2948,9 @@ function EilteCannonGalleon() {
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
+    document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.add("aoeTechIconOff");
 }
 
 function Galleon() {
