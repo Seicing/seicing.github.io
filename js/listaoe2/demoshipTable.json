@@ -67,16 +67,30 @@
         {
             "tech": "赤壁战术",
             "showId": "赤壁战术",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
             "score": 2,
             "civ": "Wu"
         },
         {
             "tech": "奇里乞亚舰队",
             "showId": "奇里乞亚舰队",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
             "score": 2,
             "civ": "Armenians"
+        },
+        {
+            "tech": "博格斯维加尔",
+            "showId": "博格斯维加尔",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "score": 2,
+            "civ": "Vikings"
+        },
+        {
+            "tech": "神机箭",
+            "showId": "神机箭",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "score": 2,
+            "civ": "Koreans"
         },
         {
             "tech": "阿兹特克训练速度",
@@ -144,7 +158,7 @@
         {
             "tech": "环球航行",
             "showId": "环球航行",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
             "score": 2,
             "civ": "Portuguese"
         },
@@ -168,6 +182,54 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
             "score": 1,
             "civ": "Jurchens"
+        },
+        {
+            "tech": "TurtleShip",
+            "showId": "龟甲船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/TurtleShipIcon.webp",
+            "score": 1,
+            "civ": "Koreans",
+            "replace": "DemolitionShip"
+        },
+        {
+            "tech": "EliteTurtleShip",
+            "showId": "精锐龟甲船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/精锐龟甲船.webp",
+            "score": 2,
+            "civ": "Koreans",
+            "replace": "HeavyDemolitionShip"
+        },
+        {
+            "tech": "Longboat",
+            "showId": "龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/LongboatIcon.webp",
+            "score": 1,
+            "civ": "Vikings",
+            "replace": "DemolitionShip"
+        },
+        {
+            "tech": "EliteLongboat",
+            "showId": "精锐龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/精锐龙头战舰.webp",
+            "score": 2,
+            "civ": "Vikings",
+            "replace": "HeavyDemolitionShip"
+        },
+        {
+            "tech": "Caravel",
+            "showId": "卡拉维尔战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CaravelIcon2.webp",
+            "score": 1,
+            "civ": "Portuguese",
+            "replace": "DemolitionShip"
+        },
+        {
+            "tech": "EliteCaravel",
+            "showId": "精锐卡拉维尔战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/精锐卡拉维尔战舰.webp",
+            "score": 2,
+            "civ": "Portuguese",
+            "replace": "HeavyDemolitionShip"
         }
     ]
 }
