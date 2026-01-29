@@ -634,11 +634,6 @@ let ayanami = {
     "罗马弩炮加成": /*html*/`罗马弩炮加成<br>弩炮黄金成本-50%`,
     "罗马团队加成": /*html*/`罗马团队加成<br>弩炮减少最小射程`,
 
-
-
-
-
-
     "波斯开局资源": /*html*/`波斯开局资源<br>开始拥有额外的50木材和食物`,
     "波斯工作效率": /*html*/`波斯工作效率<br>城镇中心、船坞有两倍生命值，并且在黑暗/封建/城堡/帝王时代工作速度提升5%/10%/15%/20%`,
     "波斯团队加成": /*html*/`波斯团队加成<br>骑士对射手额外附加2点伤害`,
@@ -646,10 +641,8 @@ let ayanami = {
     "波斯掠夺": /*html*/`波斯掠夺<br>骑兵杀死敌方军事单位获得5黄金`,
     "波斯商队旅馆": /*html*/`波斯商队旅馆<br>帝王时代可以建造商队旅馆`,
 
-
     "波斯堡垒": /*html*/`堡垒<br>Citadels<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>城堡发射炮弹，攻击力+4，对冲车攻击力+3，对步兵攻击力+3，城堡受到的额外伤害-25%`,
     "健康之家": /*html*/`健康之家<br>Bimaristan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>僧侣对5格范围内的部队每秒治疗1.25生命值`,
-
 
     "强化教堂": /*html*/`强化教堂<br>Fortified Church<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>拥有防御能力，生产和升级僧侣，驻扎遗物产生黄金`,
 
@@ -803,6 +796,16 @@ let ayanami = {
     "老练昌皮勇士": /*html*/`老练昌皮勇士<br>Vetaran Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
     "精锐昌皮勇士": /*html*/`精锐昌皮勇士<br>Elite Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
+    "趸船": /*html*/`趸船<br>Hulk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰`,
+    "战争趸船": /*html*/`战争趸船<br>War Hulk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "大帆船": /*html*/`大帆船<br>Carrack<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>315 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "投石船": /*html*/`投石船<br>Catapult Galleon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+
+    "钓鱼线": /*html*/`钓鱼线<br>Fishing Lines<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>渔船收集速度+10%，运载量+5`,
+    "盖瓦式叠板": /*html*/`盖瓦式叠板<br>Clinker Construction<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>船只移动速度+10%`,
+    "平铺船壳板": /*html*/`平铺船壳板<br>Carvel Hull<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>船只移动速度+10%`,
+    "虹吸管": /*html*/`虹吸管<br>Siphons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>喷火船获得爆炸蓄力攻击`,
+    "燃烧弹": /*html*/`燃烧弹<br>Incendiaries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>325 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>喷火船在沉没时造成自爆攻击`,
 
 
 
@@ -853,7 +856,7 @@ let ayanami = {
     "燃烧木筏": /*html*/`燃烧木筏<br>Incendiary Raft<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>装填大量爆炸物，爆破自身进行攻击`,
     "燃烧船": /*html*/`燃烧船<br>Incendiary Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>装填大量爆炸物，爆破自身进行攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>155 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>80 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50`,
     "重型燃烧船": /*html*/`重型燃烧船<br>Heavy Incendiary Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>31<br>比燃烧船坚固，装填大量爆炸物，爆破自身进行攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>55`,
-    "投石船": /*html*/`投石船<br>Catapult Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>140 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>42<br>拥有远程溅射伤害的战舰`,
+    "古代投石船": /*html*/`投石船<br>Catapult Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>140 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>42<br>拥有远程溅射伤害的战舰`,
     "中型投石船": /*html*/`中型投石船<br>Onager Ship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>140 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>140 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>42<br>比投石船更强，拥有远程溅射伤害的战舰<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>80<br>`,
     "利维坦": /*html*/`利维坦<br>Leviathan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>225 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>拥有超远攻击距离的反建筑战舰，可使附近的战舰攻击更快`,
     "支撑缆绳": /*html*/`支撑缆绳<br>Hypozomata<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>225 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>船只+1远程护甲`,
@@ -1519,7 +1522,7 @@ const AOE2_TECH_LINK_EXCLUDE = new Set([
     "织布机", "城镇瞭望", "城镇巡逻", "独轮手推车", "手推车", "马轭", "重犁",
     "轮作", "异教", "圣洁", "热情", "双刃斧", "弓锯", "双人锯", "虔诚", "启发", "雕版印刷术",
     "银冠", "金冠", "采金法", "钻井采金法", "采石法", "钻井采石法", "信念", "神权", "围墙",
-    "工兵", "征招", "间谍", "驯化术", "畜牧业", "畜牧季移",
+    "工兵", "征招", "间谍", "驯化术", "畜牧业", "畜牧季移", "盖瓦式叠板", "虹吸管", "钓鱼线", "平铺船壳板", "燃烧弹",
     "化学波希米亚", "勃艮第采金法", "勃艮第采石法", "勃艮第刺网", "勃艮第独轮手推车", "勃艮第弓锯", "勃艮第轮作", "勃艮第马轭", "勃艮第手推车",
     "勃艮第双人锯", "勃艮第双刃斧", "勃艮第重犁", "勃艮第钻井采金法", "勃艮第钻井采石法"
 ]);
@@ -2948,12 +2951,10 @@ function Galleon() {
 }
 
 function FireGalley() {
-    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
 }
 
 function FireShip() {
-    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
 }
 
@@ -2969,7 +2970,6 @@ function FastFireShip() {
     document.getElementById("Saracens2").classList.add("aoeTechIconOff");
     document.getElementById("Turks2").classList.add("aoeTechIconOff");
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
-    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
@@ -2979,11 +2979,15 @@ function FastFireShip() {
 
 function DemolitionRaft() {
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionShip() {
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
 }
 
@@ -3011,9 +3015,99 @@ function HeavyDemolitionShip() {
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
 }
 
 
+function Carrack() {
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+}
+
+
+function CarvelHull() {
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+}
+
+function Siphons() {
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+}
+
+
+function Incendiaries() {
+    document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.add("aoeTechIconOff");
+    document.getElementById("Britons2").classList.add("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.add("aoeTechIconOff");
+    document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
+    document.getElementById("Celts2").classList.add("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.add("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.add("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.add("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
+    document.getElementById("Huns2").classList.add("aoeTechIconOff");
+    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.add("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.add("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.add("aoeTechIconOff");
+    document.getElementById("Malay2").classList.add("aoeTechIconOff");
+    document.getElementById("Malians2").classList.add("aoeTechIconOff");
+    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.add("aoeTechIconOff");
+    document.getElementById("Poles2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
+    document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.add("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.add("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.add("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.add("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+}
 
 const AOE2_TECH_NAME_MAP = {
     "纵火": "Arson",
@@ -3051,6 +3145,9 @@ const AOE2_TECH_NAME_MAP = {
     "行会": "Guilds",
     "干船坞": "DryDock",
     "造船匠": "Shipwright",
+    "平铺船壳板": "CarvelHull",
+    "虹吸管": "Siphons",
+    "燃烧弹": "Incendiaries",
 
     "双人锯": "TwoManSaw",
     "钻井采石法": "StoneShaftMining",
@@ -3099,6 +3196,7 @@ const AOE2_TECH_NAME_MAP = {
     "爆破筏": "DemolitionRaft",
     "爆破船": "DemolitionShip",
     "重型爆破船": "HeavyDemolitionShip",
+    "大帆船": "Carrack",
 
     "手推炮": "BombardCannon",
     "轻型投石车": "Mangonel",

@@ -1,234 +1,239 @@
 {
-  "tableId": "galleyTable",
-  "common": [
-    {
-      "tech": "Galley",
-      "showId": "箭船",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Galley_aoe2DE.webp",
-      "score": 1,
-      "main": 1
-    },
-    {
-      "tech": "WarGalley",
-      "showId": "战舰",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到战舰.webp",
-      "score": 1
-    },
-    {
-      "tech": "Galleon",
-      "showId": "大型战舰",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到大型战舰.webp",
-      "score": 2
-    },
-    {
-      "tech": "Fletching",
-      "showId": "羽箭",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FletchingDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "BodkinArrow",
-      "showId": "锥子箭",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BodkinArrowDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Bracer",
-      "showId": "护腕",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BracerDE.webp",
-      "score": 2
-    },
-    {
-      "tech": "Chemistry",
-      "showId": "化学",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Careening",
-      "showId": "修船厂",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/CareeningDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "DryDock",
-      "showId": "干船坞",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/DryDockDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Shipwright",
-      "showId": "造船匠",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ShipwrightDE.webp",
-      "score": 1
-    },
-    {
-      "tech": "Faith",
-      "showId": "信念",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
-      "score": 0
-    },
-    {
-      "tech": "Heresy",
-      "showId": "异教",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
-      "score": 0
-    }
-  ],
-  "unique": [
-    {
-      "tech": "重弩",
-      "showId": "重弩",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Romans"
-    },
-    {
-      "tech": "巨桅大帆船",
-      "showId": "巨桅大帆船",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Portuguese"
-    },
-    {
-      "tech": "奇里乞亚舰队",
-      "showId": "奇里乞亚舰队",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-      "score": 2,
-      "civ": "Armenians"
-    },
-    {
-      "tech": "阿兹特克训练速度",
-      "showId": "阿兹特克训练速度",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
-      "score": 1,
-      "civ": "Aztecs"
-    },
-    {
-      "tech": "保加利亚科技减价",
-      "showId": "保加利亚科技减价",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
-      "score": 1,
-      "civ": "Bulgarians"
-    },
-    {
-      "tech": "柏柏尔船只加速",
-      "showId": "柏柏尔船只加速",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Berbers.webp",
-      "score": 1,
-      "civ": "Berbers"
-    },
-    {
-      "tech": "缅甸便宜修道院科技",
-      "showId": "缅甸便宜修道院科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
-      "score": 1,
-      "civ": "Burmese"
-    },
-    {
-      "tech": "凯尔特视野锁定",
-      "showId": "凯尔特视野锁定",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
-      "score": 1,
-      "civ": "Celts"
-    },
-    {
-      "tech": "中国便宜科技",
-      "showId": "中国便宜科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
-      "score": 1,
-      "civ": "Chinese"
-    },
-    {
-      "tech": "意大利便宜科技",
-      "showId": "意大利便宜科技",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Italians.webp",
-      "score": 1,
-      "civ": "Italians"
-    },
-    {
-      "tech": "波斯工作效率",
-      "showId": "波斯工作效率",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Persians.webp",
-      "score": 1,
-      "civ": "Persians"
-    },
-    {
-      "tech": "葡萄牙黄金费用",
-      "showId": "葡萄牙黄金费用",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
-      "score": 1,
-      "civ": "Portuguese"
-    },
-    {
-      "tech": "葡萄牙船只血量",
-      "showId": "葡萄牙船只血量",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
-      "score": 1,
-      "civ": "Portuguese"
-    },
-    {
-      "tech": "萨拉森箭船加成",
-      "showId": "萨拉森箭船加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Saracens.webp",
-      "score": 1,
-      "civ": "Saracens"
-    },
-    {
-      "tech": "西班牙铁匠铺折扣",
-      "showId": "西班牙铁匠铺折扣",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
-      "score": 1,
-      "civ": "Spanish"
-    },
-    {
-      "tech": "土耳其科技折扣",
-      "showId": "土耳其科技折扣",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
-      "score": 1,
-      "civ": "Turks"
-    },
-    {
-      "tech": "高丽木头降价",
-      "showId": "高丽木头降价",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
-      "score": 1,
-      "civ": "Koreans"
-    },
-    {
-      "tech": "维京便宜战船",
-      "showId": "维京便宜战船",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vikings.webp",
-      "score": 1,
-      "civ": "Vikings"
-    },
-    {
-      "tech": "孟加拉船只再生",
-      "showId": "孟加拉船只再生",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bengalis.webp",
-      "score": 1,
-      "civ": "Bengalis"
-    },
-    {
-      "tech": "罗马舰船加成",
-      "showId": "罗马舰船加成",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Romans.webp",
-      "score": 1,
-      "civ": "Romans"
-    },
-    {
-      "tech": "亚美尼亚箭船",
-      "showId": "亚美尼亚箭船",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Armenians.webp",
-      "score": 1,
-      "civ": "Armenians"
-    },
-    {
-      "tech": "女真误伤",
-      "showId": "女真误伤",
-      "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
-      "score": 1,
-      "civ": "Jurchens"
-    }
-  ]
+    "tableId": "galleyTable",
+    "common": [
+        {
+            "tech": "Galley",
+            "showId": "箭船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Galley_aoe2DE.webp",
+            "score": 1,
+            "main": 1
+        },
+        {
+            "tech": "WarGalley",
+            "showId": "战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/中型战舰.webp",
+            "score": 1
+        },
+        {
+            "tech": "Galleon",
+            "showId": "大型战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/重型战舰.webp",
+            "score": 2
+        },
+        {
+            "tech": "Fletching",
+            "showId": "羽箭",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FletchingDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "BodkinArrow",
+            "showId": "锥子箭",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BodkinArrowDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Bracer",
+            "showId": "护腕",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BracerDE.webp",
+            "score": 2
+        },
+        {
+            "tech": "Chemistry",
+            "showId": "化学",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChemistryDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "Careening",
+            "showId": "修船厂",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/修船厂.webp",
+            "score": 1
+        },
+        {
+            "tech": "DryDock",
+            "showId": "干船坞",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/干船坞.webp",
+            "score": 1
+        },
+        {
+            "tech": "Shipwright",
+            "showId": "造船匠",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ShipwrightDE.webp",
+            "score": 1
+        },
+        {
+            "tech": "ClinkerConstruction",
+            "showId": "盖瓦式叠板",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/盖瓦式叠板.webp",
+            "score": 1
+        },
+        {
+            "tech": "CarvelHull",
+            "showId": "平铺船壳板",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/平铺船壳板.webp",
+            "score": 1
+        },
+        {
+            "tech": "Faith",
+            "showId": "信念",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "score": 0
+        },
+        {
+            "tech": "Heresy",
+            "showId": "异教",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "score": 0
+        }
+    ],
+    "unique": [
+        {
+            "tech": "重弩",
+            "showId": "重弩",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Romans"
+        },
+        {
+            "tech": "奇里乞亚舰队",
+            "showId": "奇里乞亚舰队",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
+            "score": 2,
+            "civ": "Armenians"
+        },
+        {
+            "tech": "阿兹特克训练速度",
+            "showId": "阿兹特克训练速度",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.webp",
+            "score": 1,
+            "civ": "Aztecs"
+        },
+        {
+            "tech": "保加利亚科技减价",
+            "showId": "保加利亚科技减价",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bulgarians.webp",
+            "score": 1,
+            "civ": "Bulgarians"
+        },
+        {
+            "tech": "柏柏尔船只加速",
+            "showId": "柏柏尔船只加速",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Berbers.webp",
+            "score": 1,
+            "civ": "Berbers"
+        },
+        {
+            "tech": "缅甸便宜修道院科技",
+            "showId": "缅甸便宜修道院科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
+            "score": 0,
+            "civ": "Burmese"
+        },
+        {
+            "tech": "凯尔特视野锁定",
+            "showId": "凯尔特视野锁定",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
+            "score": 0,
+            "civ": "Celts"
+        },
+        {
+            "tech": "中国便宜科技",
+            "showId": "中国便宜科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
+            "score": 1,
+            "civ": "Chinese"
+        },
+        {
+            "tech": "意大利便宜科技",
+            "showId": "意大利便宜科技",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Italians.webp",
+            "score": 1,
+            "civ": "Italians"
+        },
+        {
+            "tech": "波斯工作效率",
+            "showId": "波斯工作效率",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Persians.webp",
+            "score": 1,
+            "civ": "Persians"
+        },
+        {
+            "tech": "葡萄牙黄金费用",
+            "showId": "葡萄牙黄金费用",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
+            "score": 1,
+            "civ": "Portuguese"
+        },
+        {
+            "tech": "葡萄牙船只血量",
+            "showId": "葡萄牙船只血量",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.webp",
+            "score": 1,
+            "civ": "Portuguese"
+        },
+        {
+            "tech": "萨拉森箭船加成",
+            "showId": "萨拉森箭船加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Saracens.webp",
+            "score": 1,
+            "civ": "Saracens"
+        },
+        {
+            "tech": "西班牙铁匠铺折扣",
+            "showId": "西班牙铁匠铺折扣",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Spanish.webp",
+            "score": 1,
+            "civ": "Spanish"
+        },
+        {
+            "tech": "土耳其科技折扣",
+            "showId": "土耳其科技折扣",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Turks.webp",
+            "score": 1,
+            "civ": "Turks"
+        },
+        {
+            "tech": "高丽木头降价",
+            "showId": "高丽木头降价",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+            "score": 1,
+            "civ": "Koreans"
+        },
+        {
+            "tech": "维京便宜战船",
+            "showId": "维京便宜战船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vikings.webp",
+            "score": 1,
+            "civ": "Vikings"
+        },
+        {
+            "tech": "孟加拉船只再生",
+            "showId": "孟加拉船只再生",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Bengalis.webp",
+            "score": 1,
+            "civ": "Bengalis"
+        },
+        {
+            "tech": "罗马舰船加成",
+            "showId": "罗马舰船加成",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Romans.webp",
+            "score": 1,
+            "civ": "Romans"
+        },
+        {
+            "tech": "亚美尼亚箭船",
+            "showId": "亚美尼亚箭船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Armenians.webp",
+            "score": 1,
+            "civ": "Armenians"
+        },
+        {
+            "tech": "女真误伤",
+            "showId": "女真误伤",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
+            "score": 1,
+            "civ": "Jurchens"
+        }
+    ]
 }

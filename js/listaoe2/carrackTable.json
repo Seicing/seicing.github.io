@@ -1,22 +1,22 @@
 {
-    "tableId": "fireshipTable",
+    "tableId": "demoshipTable",
     "common": [
         {
-            "tech": "FireGalley",
-            "showId": "火艨艟",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Fire_galley_aoe2DE.webp",
+            "tech": "Hulk",
+            "showId": "趸船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/趸船.webp",
             "score": 1,
             "main": 1
         },
         {
-            "tech": "FireShip",
-            "showId": "喷火船",
+            "tech": "WarHulk",
+            "showId": "战争趸船",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/中型战舰.webp",
             "score": 1
         },
         {
-            "tech": "FastFireShip",
-            "showId": "快速喷火船",
+            "tech": "Carrack",
+            "showId": "大帆船",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/重型战舰.webp",
             "score": 2
         },
@@ -51,18 +51,6 @@
             "score": 1
         },
         {
-            "tech": "Siphons",
-            "showId": "虹吸管",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/虹吸管.webp",
-            "score": 1
-        },
-        {
-            "tech": "Incendiaries",
-            "showId": "燃烧弹",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/燃烧弹.webp",
-            "score": 1
-        },
-        {
             "tech": "Faith",
             "showId": "信念",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
@@ -76,13 +64,6 @@
         }
     ],
     "unique": [
-        {
-            "tech": "希腊之火",
-            "showId": "希腊之火",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/CastleAgeUnique.webp",
-            "score": 2,
-            "civ": "Byzantines"
-        },
         {
             "tech": "阿兹特克训练速度",
             "showId": "阿兹特克训练速度",
@@ -105,13 +86,6 @@
             "civ": "Burmese"
         },
         {
-            "tech": "拜占庭喷火船攻速",
-            "showId": "拜占庭喷火船攻速",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Byzantines.webp",
-            "score": 1,
-            "civ": "Byzantines"
-        },
-        {
             "tech": "凯尔特视野锁定",
             "showId": "凯尔特视野锁定",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.webp",
@@ -121,13 +95,6 @@
         {
             "tech": "中国便宜科技",
             "showId": "中国便宜科技",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
-            "score": 1,
-            "civ": "Chinese"
-        },
-        {
-            "tech": "中国火药移速",
-            "showId": "中国火药移速",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.webp",
             "score": 1,
             "civ": "Chinese"
@@ -161,11 +128,11 @@
             "civ": "Portuguese"
         },
         {
-            "tech": "高丽木头降价",
-            "showId": "高丽木头降价",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Koreans.webp",
+            "tech": "维京便宜战船",
+            "showId": "维京便宜战船",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vikings.webp",
             "score": 1,
-            "civ": "Koreans"
+            "civ": "Vikings"
         },
         {
             "tech": "孟加拉船只再生",
@@ -180,14 +147,6 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Jurchens.webp",
             "score": 1,
             "civ": "Jurchens"
-        },
-        {
-            "tech": "DragonShip",
-            "showId": "龙船",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到龙船.webp",
-            "score": 3,
-            "civ": "Chinese",
-            "replace": "FastFireShip"
         }
     ]
 }
