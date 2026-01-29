@@ -107,41 +107,30 @@ th {
     cursor: pointer;
 }
 
-.filterbtn {
-    display: inline-block;
-    transition: opacity 0.2s;
-    opacity: 0.3;
-    cursor: pointer;
-}
-
-.filterbtn.active {
-    opacity: 1;
-    transition: opacity 0.2s;
-    cursor: pointer;
-}
-
+/* ===== 按钮本体（不再使用 opacity） ===== */
+.filterbtn,
 .civactbtn {
     display: inline-block;
-    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+/* ===== 默认状态：图片半透明 ===== */
+.filterbtn img,
+.civactbtn img {
+    width: 40px;
     opacity: 0.3;
-    cursor: pointer;
+    /* 只让图片透明 */
+    transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
 }
 
-.civactbtn.active {
+/* ===== 激活状态：图片完全不透明 + 高亮 ===== */
+.filterbtn.active img,
+.civactbtn.active img {
     opacity: 1;
-    transition: opacity 0.2s;
-    cursor: pointer;
-}
-
-.filterbtn img {
-    width: 40px;
-}
-
-.filterbtn.active img {
-    width: 40px;
     filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
-    transition: filter 0.2s ease, transform 0.2s ease;
 }
+
+
 
 .civactbtn img {
     width: 40px;
