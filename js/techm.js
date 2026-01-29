@@ -996,3 +996,12 @@ window.addEventListener('resize', () => {
 
 
 
+// ----------- 从 URL 参数触发 civ -----------
+function triggerFilterFromURL() {
+    const civ = new URLSearchParams(window.location.search).get("civ");
+    if (!civ) return;
+    const btn = document.querySelector(`.filterbtn[data-filter="${civ}"]`);
+    if (btn) btn.click();
+}
+
+
