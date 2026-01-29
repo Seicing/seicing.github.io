@@ -153,10 +153,6 @@ th {
     transition: filter 0.2s ease, transform 0.2s ease;
 }
 
-.civ-selector {
-    margin-bottom: 9px;
-}
-
 .civ-selector img {
     cursor: pointer;
 }
