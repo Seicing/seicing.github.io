@@ -911,6 +911,28 @@ window.addEventListener('resize', () => {
     resizeTimer = setTimeout(handleDynamicSaicLayout, 100);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', function (event) {
+        const link = event.target.closest('a'); // 找到最近的 <a>
+        if (!link) return;
+
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#') && href.length > 1) {
+            const targetId = href.slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                event.preventDefault(); // 阻止默认跳转
+                target.scrollIntoView({ behavior: 'smooth' }); // 平滑滚动
+            }
+        }
+    });
+});
+
+function tipsp() {
+    var tipsp1 = getQueryVariable("civ")
+    var tipsp2 = tipsp1 + "Button0";
+    document.getElementById(tipsp2).click();
+};
 
 function adjustTechGroupLayout() {
     // 1. 清理：移除所有之前生成的占位符
@@ -971,3 +993,6 @@ window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(adjustTechGroupLayout, 150);
 });
+
+
+
