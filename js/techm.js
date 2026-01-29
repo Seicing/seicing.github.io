@@ -996,6 +996,474 @@ window.addEventListener('resize', () => {
 
 
 
+
+
+
+
+
+
+
+
+
+// ----------- 初始化原始 base 值 -----------
+function initBaseValues() {
+    document.querySelectorAll('#stats [id][data-base]').forEach(el => {
+        if (!el.dataset.baseoriginal) {
+            el.dataset.baseoriginal = el.dataset.base;
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', initBaseValues);
+
+// ----------- 初始化 basemultiple -----------
+function initBaseMultiples() {
+    document.querySelectorAll('[data-multiple][id]').forEach(el => {
+        if (!el.id) return;
+        if (el.dataset.basemultiple === undefined) {
+            el.dataset.basemultiple = (el.dataset.multiple !== undefined) ? el.dataset.multiple : '1';
+        }
+    });
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBaseMultiples);
+} else {
+    initBaseMultiples();
+}
+
+// ----------- 基础函数 -----------
+function getBaseStats() {
+    const statsTable = document.querySelectorAll('#stats [id][data-base]');
+    const stats = {};
+    statsTable.forEach(cell => {
+        stats[cell.id] = Number(cell.dataset.base);
+    });
+    return stats;
+}
+
+function calculateFinal(statName, buffs, baseStats) {
+    const base = baseStats[statName] ?? 0;
+    let add = 0, sameMul = 0, diffMul = 1;
+    buffs.forEach(b => {
+        if (b.type !== statName) return;
+        const val = Number(b.value);
+        if (b.mode === 'add') add += val;
+        else if (b.mode === 'sameMul') sameMul += val;
+        else if (b.mode === 'diffMul') diffMul *= val;
+    });
+    return Math.round((base + add) * (1 + sameMul) * diffMul * 100) / 100;
+}
+
+// ----------- 更新表格 -----------
+function updateTable() {
+    const baseStats = getBaseStats();
+    const activeBuffs = Array.from(document.querySelectorAll('.icon.active'))
+        .flatMap(el => {
+            const types = el.dataset.type ? el.dataset.type.split(" ") : [];
+            const modes = el.dataset.mode ? el.dataset.mode.split(" ") : [];
+            const values = el.dataset.value ? el.dataset.value.split(" ") : [];
+            return types.flatMap((t, i) => {
+                const mode = modes[i], value = values[i];
+                if (t === "bonusdamage") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("bonusdamage"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                if (t === "cost") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("cost"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                if (t === "carry") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("carry"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                if (t === "gather") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("gather"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                if (t === "deposit") {
+                    return Object.keys(baseStats)
+                        .filter(statName => statName.startsWith("deposit"))
+                        .map(statName => ({ type: statName, mode, value }));
+                }
+                return [{ type: t, mode, value }];
+            });
+        });
+
+    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, gather11: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2 };
+    const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, deposit11: 0 };
+
+    Object.keys(baseStats).forEach(stat => {
+        const el = document.getElementById(stat);
+        if (!el) return;
+        const val = calculateFinal(stat, activeBuffs, baseStats);
+        if (percentRules[stat] !== undefined) {
+            const decimals = percentRules[stat];
+            el.innerText = (val * 100).toFixed(decimals) + "%";
+        } else {
+            const decimals = precisionRules[stat] ?? 0;
+            el.innerText = val.toFixed(decimals);
+        }
+    });
+
+    document.querySelectorAll('[data-multiple][id]').forEach(td => {
+        const baseId = td.dataset.baseid || "damage";
+        const baseEl = document.getElementById(baseId);
+        if (baseEl) {
+            const multiple = parseFloat(td.dataset.multiple) || 1;
+            const baseValue = parseFloat(baseEl.innerText) || 0;
+            td.innerText = (baseValue * multiple).toFixed(0);
+        }
+    });
+}
+
+
+
+
+// ----------- 根据文明设置默认显示的 span（带例外白名单） -----------
+function setDefaultVisibleSpansForCiv(civ) {
+    // 固定默认显示的 ID 列表（这些不会因为文明切换而隐藏）
+    const alwaysVisible = ["Extra200",]; // 👈 可以添加多个 id
+
+    // 清除之前的默认可见标记（但保留 alwaysVisible 里的）
+    document.querySelectorAll('[data-defaultvisible="1"]').forEach(el => {
+        if (!alwaysVisible.includes(el.id)) {
+            el.removeAttribute('data-defaultvisible');
+            el.style.display = 'none';
+        }
+    });
+
+    // 保证例外项始终存在并显示
+    alwaysVisible.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.dataset.defaultvisible = "1";
+            // 根据标签类型决定显示方式
+            if (el.tagName === "TR") {
+                el.style.display = "table-row";
+            } else {
+                el.style.display = "inline";
+            }
+        }
+    });
+
+    // 配置表：每个文明对应要默认显示的 span id 列表
+    // 201牛 202牲畜围栏 203清酒 204石头 205显示201和202 206野猪
+    const civDefaults = {
+        abb: ["Extra201", "Extra204", "Extra60", "Extra3",],
+        ayy: ["Extra201", "Extra204", "Extra75", "Extra33",],
+        sul: ["Extra201", "Extra204", "Extra76", "Extra4",],
+        tug: ["Extra201", "Extra204", "Extra77", "Extra44",],
+        eng: ["Extra201", "Extra206", "Extra204", "Extra56",],
+        hol: ["Extra201", "Extra206", "Extra204", "Extra57",],
+        mon: ["Extra201", "Extra206", "Extra9", "Extra88", "Extra58",],
+        goh: ["Extra202", "Extra205", "Extra59", "Extra88", "Extra207",],
+        fre: ["Extra201", "Extra206", "Extra204", "Extra106",],
+        jda: ["Extra201", "Extra206", "Extra204", "Extra107",],
+        kcr: ["Extra201", "Extra206", "Extra204", "Extra55",],
+        rus: ["Extra201", "Extra206", "Extra204",],
+        ott: ["Extra201", "Extra204", "Extra78",],
+        mal: ["Extra201", "Extra204", "Extra205", "Extra39",],
+        byz: ["Extra201", "Extra206", "Extra204", "Extra68", "Extra10",],
+        mac: ["Extra201", "Extra206", "Extra204", "Extra63", "Extra125",],
+        jpn: ["Extra201", "Extra206", "Extra204", "Extra61", "Extra127", "Extra131", "Extra132",],
+        sen: ["Extra201", "Extra206", "Extra204", "Extra203", "Extra62", "Extra133", "Extra134",],
+        chi: ["Extra201", "Extra206", "Extra204",],
+        zxl: ["Extra201", "Extra206", "Extra204",],
+        hre: ["Extra201", "Extra206", "Extra204",],
+        otd: ["Extra201", "Extra206", "Extra204",],
+    };
+
+    const list = civDefaults[civ];
+    if (!list) return;
+
+    // 应用该文明的默认显示配置
+    // 应用该文明的默认显示配置
+    list.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.dataset.defaultvisible = "1";
+            if (el.tagName === "TR") {
+                el.style.display = "table-row";
+            } else {
+                el.style.display = "inline";
+            }
+        }
+    });
+
+}
+
+
+
+
+// ----------- helper：同步 icon 的副作用（class、data-text、multiplier） -----------
+function setIconActive(icon, active) {
+    if (!icon) return;
+    icon.classList.toggle('active', !!active);
+
+    // data-text 显示/隐藏（支持互斥 + 优先级逻辑）
+    if (icon.dataset.text) {
+        const textId = icon.dataset.text;
+        const txtEl = document.getElementById(textId);
+        if (!txtEl) return;
+
+        // 提取互斥组名（默认以 id 的基础部分为组，如 Extra11 / Extra11-a → 组名 Extra11）
+        const baseId = textId.replace(/-[ab]$/, "");
+
+        // 找出同组内所有 span（例如 Extra11, Extra11-a）
+        const groupEls = Array.from(document.querySelectorAll(`[id^="${baseId}"]`))
+            .filter(el => el.id === baseId || el.id.startsWith(baseId + "-"));
+
+        // 找出同组内所有 icon（带 data-text 的）
+        const groupIcons = Array.from(document.querySelectorAll(`.icon[data-text^="${baseId}"]`));
+
+        // 先更新当前 icon 的显示状态
+        txtEl.style.display = active ? 'inline' : 'none';
+
+        // 获取当前同组哪些按钮处于激活状态
+        const activeIcons = groupIcons.filter(i => i.classList.contains('active'));
+
+        // ---- 根据激活情况判断最终显示（支持 -a / -b 三级） ----
+        const hasBase = activeIcons.some(i => (i.dataset.text || "").replace(/-(a|b)$/, "") === baseId);
+        const hasA = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-a`);
+        const hasB = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-b`);
+
+        // 默认都隐藏
+        groupEls.forEach(el => el.style.display = 'none');
+
+        // 优先级显示逻辑：b > a > base > defaultvisible
+        if (hasB) {
+            const bEl = document.getElementById(`${baseId}-b`);
+            if (bEl) bEl.style.display = 'inline';
+        } else if (hasA) {
+            const aEl = document.getElementById(`${baseId}-a`);
+            if (aEl) aEl.style.display = 'inline';
+        } else if (hasBase) {
+            const baseEl = document.getElementById(baseId);
+            if (baseEl) baseEl.style.display = 'inline';
+        } else {
+            // 都未激活，检查默认可见项
+            const defaultEl = groupEls.find(el => el.dataset.defaultvisible === "1");
+            if (defaultEl) defaultEl.style.display = 'inline';
+        }
+
+    }
+
+
+    // multiplier 处理（把 target 的 data-multiple 设为 basemultiple 或 icon 的 multiplier）
+    if (icon.dataset.multiplier && icon.dataset.target) {
+        const target = document.getElementById(icon.dataset.target);
+        if (target) {
+            if (target.dataset.basemultiple === undefined) {
+                // 保存初始值（若未保存）
+                target.dataset.basemultiple = (target.dataset.multiple !== undefined) ? target.dataset.multiple : '1';
+            }
+            target.dataset.multiple = active ? icon.dataset.multiplier : target.dataset.basemultiple;
+        }
+    }
+}
+
+// ----------- 图标绑定（支持 group，防重复绑定） -----------
+function bindIcons(scope = document) {
+    scope.querySelectorAll('.icon').forEach(icon => {
+        if (icon.dataset.bound === "1") return; // 已绑定过
+        icon.dataset.bound = "1";
+
+        icon.addEventListener('click', () => {
+            const group = icon.dataset.group;
+
+            if (group) {
+                const groupIcons = Array.from(scope.querySelectorAll(`.icon[data-group="${group}"]`));
+                if (icon.classList.contains('active')) {
+                    // 已激活：再点就取消当前
+                    setIconActive(icon, false);
+                } else {
+                    // 先取消组内所有（并清理它们的副作用），再激活当前
+                    groupIcons.forEach(i => setIconActive(i, false));
+                    setIconActive(icon, true);
+                }
+            } else {
+                // 非组：切换自身
+                const newState = !icon.classList.contains('active');
+                setIconActive(icon, newState);
+            }
+
+            // 最后刷新计算
+            updateTable();
+        });
+    });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    bindIcons(document);
+    updateTable();
+});
+
+// ----------- 过滤函数（支持 data-require） -----------
+function filterByGame(keyword) {
+    document.querySelectorAll('#icons .icon').forEach(icon => {
+        const gameAttr = icon.dataset.game;
+        const overAttr = icon.dataset.over;
+        const reqAttr = icon.dataset.require;
+        if (reqAttr) {
+            const reqList = reqAttr.split(" ");
+            icon.style.display = reqList.includes(keyword) ? '' : 'none';
+            return;
+        }
+        if (gameAttr && gameAttr.split(" ").includes(keyword)) {
+            icon.style.display = '';
+            return;
+        }
+        if (!gameAttr) {
+            if (overAttr && overAttr.split(" ").includes(keyword)) {
+                icon.style.display = 'none';
+            } else {
+                icon.style.display = '';
+            }
+            return;
+        }
+        icon.style.display = 'none';
+    });
+}
+
+// ----------- 控制 data-require 按钮可见性 -----------
+function updateFilterButtonsVisibility(activeKeyword) {
+    document.querySelectorAll('.filterbtn').forEach(btn => {
+        const req = btn.dataset.require;
+        if (!req) { btn.style.display = ''; return; }
+        const requiredList = req.trim().split(/\s+/);
+        btn.style.display = activeKeyword && requiredList.includes(activeKeyword) ? '' : 'none';
+    });
+}
+
+// ----------- 重置函数（隐藏 data-require 的 icon） -----------
+function resetFilters() {
+    document.querySelectorAll('#icons .icon').forEach(icon => {
+        if (icon.dataset.require) {
+            icon.style.display = 'none';
+        } else {
+            icon.style.display = '';
+        }
+        // 取消激活并同步副作用
+        setIconActive(icon, false);
+    });
+    document.querySelectorAll('.filterbtn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('#icons .icon[data-text]').forEach(icon => {
+        const id = icon.dataset.text;
+        if (!id) return;
+        const target = document.getElementById(id);
+        if (target) target.style.display = 'none';
+    });
+    document.querySelectorAll('[data-multiple][id]').forEach(el => {
+        if (el.dataset.basemultiple !== undefined) {
+            el.dataset.multiple = el.dataset.basemultiple;
+        }
+    });
+    document.querySelectorAll('#stats [id][data-baseoriginal]').forEach(el => {
+        el.dataset.base = el.dataset.baseoriginal;
+        el.innerText = el.dataset.baseoriginal;
+    });
+    allActivated = false;
+    const toggleBtn = document.querySelector('.toggle-activate');
+    if (toggleBtn) toggleBtn.classList.remove('active');
+    updateTable();
+    updateFilterButtonsVisibility(null);
+}
+
+// ----------- 按钮扩展：更新 td -----------
+function applyButtonUpdates(btn) {
+    const updates = btn.dataset.update;
+    if (!updates) return;
+    updates.split(" ").forEach(rule => {
+        const [id, val] = rule.split(":");
+        const target = document.getElementById(id);
+        if (target && val !== undefined) {
+            target.dataset.base = val;
+            target.innerText = val;
+        }
+    });
+}
+
+// ----------- 绑定过滤按钮（防重复绑定） -----------
+function bindFilterButtons() {
+    document.querySelectorAll('.filterbtn').forEach(btn => {
+        if (btn.dataset.bound === "1") return;
+        btn.dataset.bound = "1";
+
+        btn.addEventListener('click', () => {
+            resetFilters();
+            if (btn.classList.contains('resetbtn')) return;
+            btn.classList.add('active');
+            const keyword = btn.dataset.filter;
+            filterByGame(keyword);
+            applyButtonUpdates(btn);
+            setDefaultVisibleSpansForCiv(keyword);
+            const url = new URL(window.location);
+            url.searchParams.set("civ", keyword);
+            window.history.replaceState({}, "", url);
+            updateFilterButtonsVisibility(keyword);
+            if (typeof tipsp === 'function') tipsp();
+        });
+    });
+    updateFilterButtonsVisibility(null);
+}
+document.addEventListener('DOMContentLoaded', bindFilterButtons);
+
+// ----------- 页面加载时（触发 civ） -----------
+document.addEventListener('DOMContentLoaded', () => {
+    const civ = new URLSearchParams(window.location.search).get("civ");
+    if (civ) {
+        const targetBtn = document.querySelector(`#filters .filterbtn[data-filter="${civ}"]`);
+        if (targetBtn) {
+            targetBtn.click();
+            updateFilterButtonsVisibility(civ);
+        } else {
+            updateFilterButtonsVisibility(null);
+        }
+    } else {
+        updateFilterButtonsVisibility(null);
+    }
+});
+
+// ----------- 全部激活/取消功能（支持 group） -----------
+let allActivated = false;
+const toggleBtn = document.querySelector('.toggle-activate');
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        const visibleIcons = Array.from(document.querySelectorAll('#icons .icon'))
+            .filter(icon => icon.style.display !== 'none');
+        const targetState = !allActivated;
+
+        if (targetState) {
+            // 开：普通按钮全激活；分组按钮 → 每组只保留最后一个
+            const groups = {};
+            visibleIcons.forEach(icon => {
+                const group = icon.dataset.group;
+                if (group) {
+                    if (!groups[group]) groups[group] = [];
+                    groups[group].push(icon);
+                } else {
+                    setIconActive(icon, true);
+                }
+            });
+            Object.values(groups).forEach(groupIcons => {
+                groupIcons.forEach(i => setIconActive(i, false));
+                const last = groupIcons[groupIcons.length - 1];
+                if (last) setIconActive(last, true);
+            });
+        } else {
+            // 关：全部取消
+            visibleIcons.forEach(icon => setIconActive(icon, false));
+        }
+
+        allActivated = targetState;
+        toggleBtn.classList.toggle('active', allActivated);
+        updateTable();
+    });
+}
+
+
 // ----------- 从 URL 参数触发 civ -----------
 function triggerFilterFromURL() {
     const civ = new URLSearchParams(window.location.search).get("civ");
