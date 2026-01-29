@@ -1,0 +1,159 @@
+@import url(https://seicing.com/css/table.css);
+
+#customers {
+    width: 100%;
+}
+
+#ciyaus {
+    width: 100%;
+}
+
+#aoe4de {
+    border-collapse: collapse;
+}
+
+#aoe4de th,
+#aoe4de td {
+    border: 1px solid #888888;
+}
+
+#empire {
+    border-collapse: collapse;
+}
+
+#empire td,
+#empire th {
+    width: 150px;
+    max-height: 150px;
+    border: 1px solid #888888;
+    text-align: center;
+}
+
+#empire img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    max-height: 100px;
+}
+
+
+.saic {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding: 1px;
+    background: #888888;
+}
+
+.sisaic {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+}
+
+.sisaicg {
+    height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sisaicg img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    max-height: 100px;
+}
+
+.sisaick {
+    padding: 4px;
+    border-top: 1px solid #888888;
+    background-color: #F5F8FA;
+}
+
+
+#stats {
+    border-collapse: collapse;
+}
+
+#stats td,
+th {
+    border: 1px solid #444;
+    text-align: left;
+    width: 85px
+}
+
+.icon {
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.5;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.icon img {
+    display: block;
+}
+
+.icon.active {
+    opacity: 1;
+    border: 2px solid orange;
+    box-shadow: 0 0 8px orange;
+    cursor: pointer;
+}
+
+.filterbtn {
+    display: inline-block;
+    transition: opacity 0.2s;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.filterbtn.active {
+    opacity: 1;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.civactbtn {
+    display: inline-block;
+    transition: opacity 0.2s;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.civactbtn.active {
+    opacity: 1;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.filterbtn img {
+    width: 40px;
+}
+
+.filterbtn.active img {
+    width: 40px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.civactbtn img {
+    width: 40px;
+}
+
+.civactbtn.active img {
+    width: 40px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+
+.civ-selector img {
+    cursor: pointer;
+}
