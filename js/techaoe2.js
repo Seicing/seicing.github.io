@@ -519,7 +519,7 @@ let ayanami = {
 
     "法兰克便宜城堡": /*html*/`法兰克便宜城堡<br>城堡在城堡时代/帝王时代便宜15%/25%`,
     "法兰克免费农田升级": /*html*/`法兰克免费农田升级<br>农田升级免费`,
-    "法兰克果农效率": /*html*/`法兰克果农效率<br>粮草征收员的生产效率快15%`,
+    "法兰克果农效率": /*html*/`法兰克果农效率<br>果丛采集效率快15%`,
     "法兰克骑兵血量": /*html*/`法兰克骑兵血量<br>封建时代开始骑兵生命值+20%`,
     "法兰克团队加成": /*html*/`法兰克团队加成<br>骑士视野+2`,
 
@@ -810,7 +810,7 @@ let ayanami = {
     "虹吸管": /*html*/`虹吸管<br>Siphons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>喷火船获得爆炸蓄力攻击`,
     "燃烧弹": /*html*/`燃烧弹<br>Incendiaries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>325 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>喷火船在沉没时造成自爆攻击`,
 
-    "马普切虚空食物": /*html*/`马普切虚空食物<br>粮食征收员额外提交20%的食物`,
+    "马普切虚空食物": /*html*/`马普切虚空食物<br>果丛采集者额外提交20%的食物`,
     "马普切定居点": /*html*/`马普切定居点<br>定居点可以训练长矛兵系和掷矛手系单位`,
     "马普切生命值": /*html*/`马普切生命值<br>步兵、投石兵和掷矛手在封建/城堡/帝王时代+5/+10/+15生命值`,
     "马普切掠夺者": /*html*/`马普切掠夺者<br>骑乘单位在击败敌方军事单位时+3黄金`,
@@ -2229,6 +2229,7 @@ function StoneShaftMining() {
     document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.add("aoeTechIconOff");
 }
 function GoldShaftMining() {
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
@@ -2382,6 +2383,7 @@ function CropRotation() {
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.add("aoeTechIconOff");
 }
 
 function Guilds() {
