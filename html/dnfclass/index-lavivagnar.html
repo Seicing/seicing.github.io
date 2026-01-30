@@ -10,6 +10,65 @@
 <title>全身立绘表</title>
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    /* Basic styling for the new grid layout */
+    .character-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        /* Adjust minmax for desired column width */
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        /* Max width for the gallery */
+        margin: 0 auto;
+        /* Center the gallery */
+    }
+
+    .character-item {
+        background-color: #F5F8FA;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .character-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        /* Remove extra space below image */
+        margin: 0 auto;
+        border-bottom: 1px solid #eee;
+    }
+
+    .character-info {
+        padding: 10px;
+        height: 50px;
+        /* Fixed height for consistent look */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .character-info br {
+        line-height: 0.5;
+        /* Adjust line spacing for text */
+    }
+
+    .character-info a {
+        text-decoration: none;
+        color: inherit;
+        /* Inherit color from parent for consistency */
+    }
+
+    .character-info a:hover {
+        color: #007bff;
+        /* Example hover color */
+    }
+</style>
 </head>
 
 <body style="height:100%;" id='scroll-2'>
@@ -22,1023 +81,632 @@
                 <div id="content">
                     <div class="post">
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry">
+                        <div class="entry"><div class="character-gallery">
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAcolyteVer2.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAcolyteVer2mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAcolyteVer2.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAcolyteVer2mini.jpg" width="150" alt="Acolyte Seicing">
+        </a>
+        <div class="character-info">
             神从 世清<br> Acolyte Seicing
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingWanderlust.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingWanderlustmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingWanderlust.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingWanderlustmini.jpg" width="150" alt="Wanderlust Seicing">
+        </a>
+        <div class="character-info">
             旅者 世清<br> Wanderlust Seicing
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingEmpireJade.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingEmpireJademini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingEmpireJade.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingEmpireJademini.jpg" width="150" alt="Jade of Empire Seicing">
+        </a>
+        <div class="character-info">
             帝国之玉 世清<br> Jade of Empire Seicing
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingCeremony.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingCeremonymini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingCeremony.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingCeremonymini.jpg" width="150" alt="Ceremony Seicing">
+        </a>
+        <div class="character-info">
             龙之花婿 世清<br> Ceremony Seicing
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeicingAtavismmini.jpg" width="150" alt="Atavism Seicing">
+        </a>
+        <div class="character-info">
             白鹿王 世清<br> Atavism Seicing
-        </td>
-    </tr>
-</table>
-<!--
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/霸王.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/霸王mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
-            霸王 世清<br> Overlord Seicing
-        </td>
-    </tr>
-</table>
--->
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/KhulanCiyausFlower.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/KhulanCiyausFlowermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <!-- Removed commented-out section for Overlord Seicing for brevity, but you can re-add it -->
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/KhulanCiyausFlower.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/KhulanCiyausFlowermini.jpg" width="150" alt="Flower of Ciyaus Khulan">
+        </a>
+        <div class="character-info">
             蚩幽之花 余<br>Flower of Ciyaus Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Bortecino" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecino.jpg" target="_blank">
-                <img id="Bortecinomini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinomini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Bortecino" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecino.jpg" target="_blank">
+            <img id="Bortecinomini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinomini.jpg" width="150"
+                alt="Bortecino Khulan">
+        </a>
+        <div class="character-info">
             苍狼 余<br>Bortecino Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Flower" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花.jpg" target="_blank">
-                <img id="Flowermini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Flower" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花.jpg" target="_blank">
+            <img id="Flowermini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花mini.jpg" width="150" alt="Flower of Empire Khulan">
+        </a>
+        <div class="character-info">
             帝国之花 余<br>Flower of Empire Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Empress" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpress.jpg" target="_blank">
-                <img id="Empressmini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Empress" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpress.jpg" target="_blank">
+            <img id="Empressmini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressmini.jpg" width="150" alt="Empress Khulan">
+        </a>
+        <div class="character-info">
             女帝 余<br>Empress Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Tngri" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγa.jpg" target="_blank">
-                <img id="Tngrimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγamini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Tngri" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγa.jpg" target="_blank">
+            <img id="Tngrimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγamini.jpg" width="150"
+                alt="Tngri Daruγa Khulan">
+        </a>
+        <div class="character-info">
             帝天 余<br>Tngri Daruγa Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
+    <!-- Removed commented-out section for Devastator Khulan -->
 
-<!--
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Devastator" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/蹂躏之轮.jpg" target="_blank">
-                <img id="Devastatormini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/蹂躏之轮mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
-            蹂躏之轮 余<br> Devastator Khulan
-        </td>
-    </tr>
-</table>
--->
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Banquet" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴.jpg" target="_blank">
-                <img id="Banquetmini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Banquet" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴.jpg" target="_blank">
+            <img id="Banquetmini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴mini.jpg" width="150" alt="Banquet Khulan">
+        </a>
+        <div class="character-info">
             宴 余<br> Banquet Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Beastmaster" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王.jpg" target="_blank">
-                <img id="Beastmastermini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Beastmaster" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王.jpg" target="_blank">
+            <img id="Beastmastermini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王mini.jpg" width="150" alt="Beastmaster Khulan">
+        </a>
+        <div class="character-info">
             兽王 余<br> Beastmaster Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Buhenmono" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者.jpg" target="_blank">
-                <img id="Buhenmonomini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Buhenmono" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者.jpg" target="_blank">
+            <img id="Buhenmonomini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者mini.jpg" width="150" alt="Buhenmono Khulan">
+        </a>
+        <div class="character-info">
             武边者 余<br> Buhenmono Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Sarasvati" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女.jpg" target="_blank">
-                <img id="Sarasvatimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Sarasvati" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女.jpg" target="_blank">
+            <img id="Sarasvatimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女mini.jpg" width="150" alt="Sarasvati Khulan">
+        </a>
+        <div class="character-info">
             妙音天女 余 <br> Sarasvati Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Ajikanashi" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2.jpg" target="_blank">
-                <img id="Ajikanashimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Ajikanashi" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2.jpg" target="_blank">
+            <img id="Ajikanashimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2mini.jpg" width="150"
+                alt="Khulan Ajiganashi">
+        </a>
+        <div class="character-info">
             忽兰按司加那志 <br> Khulan Ajiganashi
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Magna" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神.jpg" target="_blank">
-                <img id="Magnamini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Magna" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神.jpg" target="_blank">
+            <img id="Magnamini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神mini.jpg" width="150" alt="Magna Mater Khulan">
+        </a>
+        <div class="character-info">
             地母神 余 <br> Magna Mater Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="OverlordYo" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlord.jpg" target="_blank">
-                <img id="OverlordYomini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="OverlordYo" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlord.jpg" target="_blank">
+            <img id="OverlordYomini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordmini.jpg" width="150"
+                alt="Overlord Khulan">
+        </a>
+        <div class="character-info">
             霸王 余 <br>Overlord Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanLilywhitev2.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanLilywhitev2mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanLilywhitev2.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanLilywhitev2mini.jpg" width="150" alt="Lilywhite Khulan">
+        </a>
+        <div class="character-info">
             纯白的花嫁 余 <br>Lilywhite Khulan
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SirnoOprichnik.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SirnoOprichnikmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SirnoOprichnik.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SirnoOprichnikmini.jpg" width="150" alt="Oprichnik Sirno">
+        </a>
+        <div class="character-info">
             黑色长袍 西尔诺<br> Oprichnik Sirno
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/空想家.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/空想家mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/空想家.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/空想家mini.jpg" width="150" alt="Daydreamer Sirno">
+        </a>
+        <div class="character-info">
             空想家 西尔诺<br> Daydreamer Sirno
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/BoginyaSirno.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/BoginyaSirnomini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/BoginyaSirno.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/BoginyaSirnomini.jpg" width="150" alt="Boginya Sirno">
+        </a>
+        <div class="character-info">
             天神 西尔诺<br> Boginya Sirno
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师mini.jpg" width="150" alt="Meister Chan Egorepon">
+        </a>
+        <div class="character-info">
             首席机械师 丞·伊格雷本 <br> Meister Chan Egorepon
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/TellahVitez.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/TellahVitezmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/TellahVitez.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/TellahVitezmini.jpg" width="150" alt="Vitéz Tellah">
+        </a>
+        <div class="character-info">
             勇者 泰拉<br> Vitéz Tellah
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/告死天使.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/告死天使mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/告死天使.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/告死天使mini.jpg" width="150" alt="Ahrimagne Azin">
+        </a>
+        <div class="character-info">
             告死天使 阿辛<br>Ahrimagne Azin
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/AragonCoastal.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/AragonCoastalmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/AragonCoastal.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/AragonCoastalmini.jpg" width="150" alt="Coastal Aragon">
+        </a>
+        <div class="character-info">
             近海王 阿拉贡 <br>Coastal Aragon
+        </div>
+    </div>
 
-        </td>
-    </tr>
-</table>
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcolyte.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcolytemini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcolyte.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcolytemini.jpg" width="150" alt="Acolyte Iuimi">
+        </a>
+        <div class="character-info">
             神从 羽三 <br> Acolyte Iuimi
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiRakshasa.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiRakshasamini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiRakshasa.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiRakshasamini.jpg" width="150" alt="Rakshasa Iuimi">
+        </a>
+        <div class="character-info">
             恶鬼罗刹 羽三 <br>Rakshasa Iuimi
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcalanatha.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcalanathamini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcalanatha.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiAcalanathamini.jpg" width="150" alt="Acalanatha Iuimi">
+        </a>
+        <div class="character-info">
             五祇法沦姬 羽三 <br>Acalanatha Iuimi
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiFlameEmpress2.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiFlameEmpress2mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiFlameEmpress2.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiFlameEmpress2mini.jpg" width="150" alt="Flame Empress Iuimi">
+        </a>
+        <div class="character-info">
             千火娘娘 羽三 <br>Flame Empress Iuimi
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiLilywhite2.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiLilywhite2mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiLilywhite2.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IuimiLilywhite2mini.jpg" width="150" alt="Lilywhite Iuimi">
+        </a>
+        <div class="character-info">
             纯白的花嫁 羽三 <br>Lilywhite Iuimi
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新信鸟.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新信鸟mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新信鸟.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新信鸟mini.jpg" width="150" alt="Pratenitsa Iris">
+        </a>
+        <div class="character-info">
             信鸟 伊丽丝 <br>Pratenitsa Iris
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/霜冻女皇v3.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/霜冻女皇v3mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/霜冻女皇v3.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/霜冻女皇v3mini.jpg" width="150" alt="Mraz Kralitsata Iris">
+        </a>
+        <div class="character-info">
             霜冻女皇 伊丽丝 <br>Mraz Kralitsata Iris
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisBanquet.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisBanquetmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisBanquet.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisBanquetmini.jpg" width="150" alt="Banquet Iris">
+        </a>
+        <div class="character-info">
             宴 伊丽丝 <br>Banquet Iris
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisRoyalMaid.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisRoyalMaidmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisRoyalMaid.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisRoyalMaidmini.jpg" width="150" alt="Royal Maid Iris">
+        </a>
+        <div class="character-info">
             皇家女仆 伊丽丝 <br> Royal Maid Iris
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisOverlord.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisOverlordmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisOverlord.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisOverlordmini.jpg" width="150" alt="Overlord Iris">
+        </a>
+        <div class="character-info">
             霸王 伊丽丝 <br>Overlord Iris
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisMidsummer.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisMidsummermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisMidsummer.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisMidsummermini.jpg" width="150" alt="Midsummer Iris">
+        </a>
+        <div class="character-info">
             中夏 伊丽丝 <br>Midsummer Iris
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisLilywhite2.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisLilywhite2mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisLilywhite2.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisLilywhite2mini.jpg" width="150" alt="Lilywhite Iris">
+        </a>
+        <div class="character-info">
             纯白的花嫁 伊丽丝 <br>Lilywhite Iris
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IrisAtavismmini.jpg" width="150" alt="Atavism Iris">
+        </a>
+        <div class="character-info">
             巨鲨王 伊丽丝<br> Atavism Iris
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SarchlentAdventurerNEW.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SarchlentAdventurerNEWmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SarchlentAdventurerNEW.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SarchlentAdventurerNEWmini.jpg" width="150" alt="Adventurer Sarchlent">
+        </a>
+        <div class="character-info">
             冒险者 夏修伦 <br> Adventurer Sarchlent
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新罗玉玺.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新罗玉玺mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新罗玉玺.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新罗玉玺mini.jpg" width="150" alt="Wanderer Louich">
+        </a>
+        <div class="character-info">
             漫游者 洛雨希 <br>Wanderer Louich
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/LouichRozenschütze.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/LouichRozenschützemini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/LouichRozenschütze.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/LouichRozenschützemini.jpg" width="150" alt="Rozenschütze Louich">
+        </a>
+        <div class="character-info">
             蔷薇枪手 洛雨希 <br>Rozenschütze Louich
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAcolyte.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAcolytemini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAcolyte.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAcolytemini.jpg" width="150" alt="Acolyte Ven">
+        </a>
+        <div class="character-info">
             神从 文<br> Acolyte Ven
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenHierophant.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenHierophantmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenHierophant.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenHierophantmini.jpg" width="150" alt="Hierophant Ven">
+        </a>
+        <div class="character-info">
             教皇 文<br> Hierophant Ven
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenCelestial.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenCelestialmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenCelestial.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenCelestialmini.jpg" width="150" alt="Celestial Ven">
+        </a>
+        <div class="character-info">
             天女 文<br> Celestial Ven
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSwordMaster.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSwordMastermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSwordMaster.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSwordMastermini.jpg" width="150" alt="Swordmaster Ven">
+        </a>
+        <div class="character-info">
             剑圣 文<br> Swordmaster Ven
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenDivineress.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenDivineressmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenDivineress.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenDivineressmini.jpg" width="150" alt="Divineress Ven">
+        </a>
+        <div class="character-info">
             圣女 文<br> Divineress Ven
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSaint.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSaintmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSaint.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenSaintmini.jpg" width="150" alt="Saint Ven">
+        </a>
+        <div class="character-info">
             圣者 文<br> Saint Ven
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenLilywhite.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenLilywhitemini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenLilywhite.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenLilywhitemini.jpg" width="150" alt="Lilywhite Ven">
+        </a>
+        <div class="character-info">
             纯白的花嫁 文 <br>Lilywhite Ven
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/VenAtavismmini.jpg" width="150" alt="Atavism Ven">
+        </a>
+        <div class="character-info">
             晨曦王 文<br> Atavism Ven
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师叶卡捷琳娜.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师叶卡捷琳娜mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师叶卡捷琳娜.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/首席机械师叶卡捷琳娜mini.jpg" width="150" alt="Meister Ekaterina">
+        </a>
+        <div class="character-info">
             首席机械师 叶卡捷琳娜<br>Meister Ekaterina
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFadedFeather.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFadedFeathermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFadedFeather.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFadedFeathermini.jpg" width="150" alt="Faded Feather Saya">
+        </a>
+        <div class="character-info">
             失色之羽 莎亚<br>Faded Feather Saya
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFlamboyantFeather.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFlamboyantFeathermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFlamboyantFeather.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaFlamboyantFeathermini.jpg" width="150" alt="Flamboyant Feather Saya">
+        </a>
+        <div class="character-info">
             光辉之羽 莎亚<br>Flamboyant Feather Saya
-        </td>
-    </tr>
-</table>
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/Sayamagne.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/Sayamagnemini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+        </div>
+    </div>
+
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/Sayamagne.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/Sayamagnemini.jpg" width="150" alt="Sayamagne">
+        </a>
+        <div class="character-info">
             莎亚玛奴大王<br>Sayamagne
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<!--
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaLandsknecht.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SayaLandsknechtmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
-            国土佣仆 莎亚 <br> Landsknecht Saya
-        </td>
-    </tr>
-</table>
--->
+    <!-- Removed commented-out section for Landsknecht Saya -->
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新学徒.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新学徒mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新学徒.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新学徒mini.jpg" width="150" alt="Apprentice Aszina">
+        </a>
+        <div class="character-info">
             学徒 阿西恩娜<br>Apprentice Aszina
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/天空之眼阿西恩娜.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/天空之眼阿西恩娜mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/天空之眼阿西恩娜.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/天空之眼阿西恩娜mini.jpg" width="150" alt="Eye in the Sky Aszina">
+        </a>
+        <div class="character-info">
             天空之眼 阿西恩娜<br>Eye in the Sky Aszina
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Strigoi" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoi.jpg" target="_blank">
-                <img id="Strigoimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoimini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a id="Strigoi" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoi.jpg" target="_blank">
+            <img id="Strigoimini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoimini.jpg" width="150" alt="Strigoi Kruv">
+        </a>
+        <div class="character-info">
             血魔 科洛维<br>Strigoi Kruv
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a id="Kruvna" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommon.jpg" target="_blank">
-                <img id="Kruvnamini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommonmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
-            血冠大君 科洛维<br>Kruvna Korona Kruv</span>
-        </td>
-    </tr>
-</table>
+    <div class="character-item">
+        <a id="Kruvna" href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommon.jpg" target="_blank">
+            <img id="Kruvnamini" src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommonmini.jpg" width="150"
+                alt="Kruvna Korona Kruv">
+        </a>
+        <div class="character-info">
+            血冠大君 科洛维<br>Kruvna Korona Kruv
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/YunaWatcher.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/YunaWatchermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/YunaWatcher.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/YunaWatchermini.jpg" width="150" alt="Watcher Yuna">
+        </a>
+        <div class="character-info">
             观者 尤娜<br>Watcher Yuna
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新天灾.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新天灾mini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/新天灾.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/新天灾mini.jpg" width="150" alt="Flagellum Dei Alitta">
+        </a>
+        <div class="character-info">
             天灾 阿里它<br>Flagellum Dei Alitta
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/RoxannaHierophant.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/RoxannaHierophantmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/RoxannaHierophant.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/RoxannaHierophantmini.jpg" width="150" alt="Hierophant Roxanna">
+        </a>
+        <div class="character-info">
             教皇 天赐<br>Hierophant Roxanna
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/YudcingGrandmaster.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/YudcingGrandmastermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/YudcingGrandmaster.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/YudcingGrandmastermini.jpg" width="150" alt="Grandmaster Yudcing">
+        </a>
+        <div class="character-info">
             宗师 月清<br> Grandmaster Yudcing
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IoanIIProtector.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IoanIIProtectormini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/IoanIIProtector.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/IoanIIProtectormini.jpg" width="150" alt="Protector Ioan Surgchuk">
+        </a>
+        <div class="character-info">
             守护者 伊安·素尔格楚克<br> Protector Ioan Surgchuk
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAcolyte.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAcolytemini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAcolyte.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAcolytemini.jpg" width="150" alt="Acolyte Myouhoin">
+        </a>
+        <div class="character-info">
             神从 妙骨院<br> Acolyte Myouhoin
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/MundzukAtavismmini.jpg" width="150" alt="Atavism Mundzuk">
+        </a>
+        <div class="character-info">
             天动王 璊珠 <br> Atavism Mundzuk
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentFrontier.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentFrontiermini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentFrontier.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentFrontiermini.jpg" width="150" alt="Frontier Seigent">
+        </a>
+        <div class="character-info">
             边防军 世行 <br> Frontier Seigent
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/SeigentAtavismmini.jpg" width="150" alt="Atavism Seigent">
+        </a>
+        <div class="character-info">
             叫龙王 世行 <br> Atavism Seigent
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/UrgulaAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/UrgulaAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/UrgulaAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/UrgulaAtavismmini.jpg" width="150" alt="Atavism Urgula">
+        </a>
+        <div class="character-info">
             黑狮子王 乌尔古拉 <br> Atavism Urgula
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-<table id="empire" style="float:left">
-    <tr>
-        <td>
-            <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhazadAtavism.jpg" target="_blank">
-                <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhazadAtavismmini.jpg" width="150"></a>
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color:#F5F8FA;text-align: center" height="50px">
+    <div class="character-item">
+        <a href="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhazadAtavism.jpg" target="_blank">
+            <img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/KhazadAtavismmini.jpg" width="150" alt="Atavism Khazad">
+        </a>
+        <div class="character-info">
             余烬王 哈扎德 <br> Atavism Khazad
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
+</div>
 
 
                         </div>
@@ -1073,160 +741,61 @@
 <script language="javascript" src="https://seicing.com/js/boxmessage.js"></script>
 <script>
     function tangut() {
-        var element = document.getElementById('Bortecinomini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinoEXmini.jpg";
-        var element = document.getElementById('Bortecino');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinoEX.jpg";
-
-        var element = document.getElementById('Flowermini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花EXmini.jpg";
-        var element = document.getElementById('Flower');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花EX.jpg";
-
-        var element = document.getElementById('Empressmini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressEXmini.jpg";
-        var element = document.getElementById('Empress');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressEX.jpg";
-
-        var element = document.getElementById('Tngrimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγaEXmini.jpg";
-        var element = document.getElementById('Tngri');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγaEX.jpg";
-
-        var element = document.getElementById('Devastatormini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/蹂躏之轮EXmini.jpg";
-        var element = document.getElementById('Devastator');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/蹂躏之轮EX.jpg";
-
-        var element = document.getElementById('Banquetmini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴EXmini.jpg";
-        var element = document.getElementById('Banquet');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴EX.jpg";
-
-        var element = document.getElementById('Beastmastermini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王EXmini.jpg";
-        var element = document.getElementById('Beastmaster');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王EX.jpg";
-
-        var element = document.getElementById('Buhenmonomini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者EXmini.jpg";
-        var element = document.getElementById('Buhenmono');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者EX.jpg";
-
-        var element = document.getElementById('Sarasvatimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女EXmini.jpg";
-        var element = document.getElementById('Sarasvati');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女EX.jpg";
-
-        var element = document.getElementById('Magnamini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神EXmini.jpg";
-        var element = document.getElementById('Magna');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神EX.jpg";
-
-        var element = document.getElementById('Magnamini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神EXmini.jpg";
-        var element = document.getElementById('Magna');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神EX.jpg";
-
-        var element = document.getElementById('Ajikanashimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashiEX2mini.jpg";
-        var element = document.getElementById('Ajikanashi');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashiEX2.jpg";
-
-        var element = document.getElementById('OverlordYomini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordEXmini.jpg";
-        var element = document.getElementById('OverlordYo');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordEX.jpg";
-
-        var element = document.getElementById('Strigoimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新的血魔mini.jpg";
-        var element = document.getElementById('Strigoi');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新的血魔.jpg";
-
-        var element = document.getElementById('Kruvnamini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronamini.jpg";
-        var element = document.getElementById('Kruvna');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKorona.jpg";
-
-
+        document.getElementById('Bortecinomini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinoEXmini.jpg";
+        document.getElementById('Bortecino').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinoEX.jpg";
+        document.getElementById('Flowermini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花EXmini.jpg";
+        document.getElementById('Flower').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花EX.jpg";
+        document.getElementById('Empressmini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressEXmini.jpg";
+        document.getElementById('Empress').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressEX.jpg";
+        document.getElementById('Tngrimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγaEXmini.jpg";
+        document.getElementById('Tngri').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγaEX.jpg";
+        document.getElementById('Banquetmini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴EXmini.jpg";
+        document.getElementById('Banquet').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴EX.jpg";
+        document.getElementById('Beastmastermini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王EXmini.jpg";
+        document.getElementById('Beastmaster').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王EX.jpg";
+        document.getElementById('Buhenmonomini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者EXmini.jpg";
+        document.getElementById('Buhenmono').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者EX.jpg";
+        document.getElementById('Sarasvatimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女EXmini.jpg";
+        document.getElementById('Sarasvati').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女EX.jpg";
+        document.getElementById('Magnamini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神EXmini.jpg";
+        document.getElementById('Magna').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神EX.jpg";
+        document.getElementById('Ajikanashimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashiEX2mini.jpg";
+        document.getElementById('Ajikanashi').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashiEX2.jpg";
+        document.getElementById('OverlordYomini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordEXmini.jpg";
+        document.getElementById('OverlordYo').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordEX.jpg";
+        document.getElementById('Strigoimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新的血魔mini.jpg";
+        document.getElementById('Strigoi').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新的血魔.jpg";
+        document.getElementById('Kruvnamini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronamini.jpg";
+        document.getElementById('Kruvna').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKorona.jpg";
     }
 
-
-
-
-
     function chinese() {
-        var element = document.getElementById('Bortecinomini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinomini.jpg";
-        var element = document.getElementById('Bortecino');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecino.jpg";
-
-        var element = document.getElementById('Flowermini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花mini.jpg";
-        var element = document.getElementById('Flower');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花.jpg";
-
-        var element = document.getElementById('Empressmini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressmini.jpg";
-        var element = document.getElementById('Empress');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpress.jpg";
-
-        var element = document.getElementById('Tngrimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγamini.jpg";
-        var element = document.getElementById('Tngri');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγa.jpg";
-
-        var element = document.getElementById('Devastatormini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/蹂躏之轮mini.jpg";
-        var element = document.getElementById('Devastator');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/蹂躏之轮.jpg";
-
-        var element = document.getElementById('Banquetmini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴mini.jpg";
-        var element = document.getElementById('Banquet');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴.jpg";
-
-        var element = document.getElementById('Beastmastermini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王mini.jpg";
-        var element = document.getElementById('Beastmaster');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王.jpg";
-
-        var element = document.getElementById('Buhenmonomini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者mini.jpg";
-        var element = document.getElementById('Buhenmono');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者.jpg";
-
-        var element = document.getElementById('Sarasvatimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女mini.jpg";
-        var element = document.getElementById('Sarasvati');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女.jpg";
-
-        var element = document.getElementById('Magnamini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神mini.jpg";
-        var element = document.getElementById('Magna');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神.jpg";
-
-        var element = document.getElementById('Ajikanashimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2mini.jpg";
-        var element = document.getElementById('Ajikanashi');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2.jpg";
-
-        var element = document.getElementById('OverlordYomini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordmini.jpg";
-        var element = document.getElementById('OverlordYo');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlord.jpg";
-
-        var element = document.getElementById('Strigoimini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoimini.jpg";
-        var element = document.getElementById('Strigoi');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoi.jpg";
-
-        var element = document.getElementById('Kruvnamini');
-        element.src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommonmini.jpg";
-        var element = document.getElementById('Kruvna');
-        element.href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommon.jpg";
-
-
+        document.getElementById('Bortecinomini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecinomini.jpg";
+        document.getElementById('Bortecino').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanBortecino.jpg";
+        document.getElementById('Flowermini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花mini.jpg";
+        document.getElementById('Flower').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/帝国之花.jpg";
+        document.getElementById('Empressmini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpressmini.jpg";
+        document.getElementById('Empress').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanEmpress.jpg";
+        document.getElementById('Tngrimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγamini.jpg";
+        document.getElementById('Tngri').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanTngriDaruγa.jpg";
+        document.getElementById('Banquetmini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴mini.jpg";
+        document.getElementById('Banquet').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/宴.jpg";
+        document.getElementById('Beastmastermini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王mini.jpg";
+        document.getElementById('Beastmaster').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新兽王.jpg";
+        document.getElementById('Buhenmonomini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者mini.jpg";
+        document.getElementById('Buhenmono').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/武边者.jpg";
+        document.getElementById('Sarasvatimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女mini.jpg";
+        document.getElementById('Sarasvati').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/新妙音天女.jpg";
+        document.getElementById('Magnamini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神mini.jpg";
+        document.getElementById('Magna').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/地母神.jpg";
+        document.getElementById('Ajikanashimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2mini.jpg";
+        document.getElementById('Ajikanashi').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanAjikanashi2.jpg";
+        document.getElementById('OverlordYomini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlordmini.jpg";
+        document.getElementById('OverlordYo').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KhulanOverlord.jpg";
+        document.getElementById('Strigoimini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoimini.jpg";
+        document.getElementById('Strigoi').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvStrigoi.jpg";
+        document.getElementById('Kruvnamini').src = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommonmini.jpg";
+        document.getElementById('Kruvna').href = "https://data.seicing.com/seicingdepot/fatcatpool/essay/KruvKruvnaKoronaCommon.jpg";
     }
 </script>
 
