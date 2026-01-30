@@ -826,7 +826,7 @@ let ayanami = {
     "穆伊斯卡近战护甲": /*html*/`穆伊斯卡近战护甲<br>昌皮游荡者和靶场单位在封建/城堡/帝王时代+1/2/3近战护甲`,
     "穆伊斯卡僧侣": /*html*/`穆伊斯卡僧侣<br>僧侣招降恢复速度+50%`,
     "穆伊斯卡免费": /*html*/`穆伊斯卡免费<br>免费研发大篷车和行会`,
-    "穆伊斯卡团队加成": /*html*/`穆伊斯卡团队加成<br>自然黄金资源开采寿命+15%`,
+    "穆伊斯卡团队加成": /*html*/`穆伊斯卡团队加成<br>自然黄金资源开采存量+15%`,
 
     "草药疗法": /*html*/`草药疗法<br>Herbalism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步弓手系和昌皮游荡者系移动速度+15%`,
     "瓦拉卡": /*html*/`瓦拉卡<br>Huaracas<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>投石手+1射程，训练速度+25%`,
@@ -836,7 +836,7 @@ let ayanami = {
     "图皮定居点": /*html*/`图皮定居点<br>村民可以驻扎在定居点`,
     "图皮死亡回馈": /*html*/`图皮死亡回馈<br>阵亡单位返还15%的资源`,
     "图皮便宜升级": /*html*/`图皮便宜升级<br>靶场和兵营升级便宜50%食物`,
-    "图皮团队加成": /*html*/`图皮团队加成<br>塔和城堡提供10人口`,
+    "图皮团队加成": /*html*/`图皮团队加成<br>塔和城堡额外提供10人口`,
 
     "部落酋长": /*html*/`部落酋长<br>Caciques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>昌皮游荡者和投石兵攻击速度+25%`,
     "箭毒": /*html*/`箭毒<br>Curare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步行射手和防御设施的箭矢造成中毒伤害`,
