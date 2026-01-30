@@ -790,8 +790,8 @@ let ayanami = {
 
 
     "昌皮侦察兵": /*html*/`昌皮侦察兵<br>Champi Scout<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站`,
-    "昌皮勇士": /*html*/`昌皮勇士<br>Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
-    "老练昌皮勇士": /*html*/`老练昌皮勇士<br>Vetaran Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "昌皮游荡者": /*html*/`昌皮游荡者<br>Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "昌皮勇士": /*html*/`昌皮勇士<br>Vetaran Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
     "精锐昌皮勇士": /*html*/`精锐昌皮勇士<br>Elite Champi Warrior<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>南美洲独特侦察步兵，可以建造哨站<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
     "趸船": /*html*/`趸船<br>Hulk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>拥有近战攻击能力的战舰`,
@@ -823,12 +823,12 @@ let ayanami = {
 
     "穆伊斯卡时代升级": /*html*/`穆伊斯卡时代升级<br>升级到下个时代花费的黄金-50%`,
     "穆伊斯卡定居点": /*html*/`穆伊斯卡定居点<br>定居点便宜25%，治疗附近单位`,
-    "穆伊斯卡近战护甲": /*html*/`穆伊斯卡近战护甲<br>昌皮勇士和靶场单位在封建/城堡/帝王时代+1/2/3近战护甲`,
+    "穆伊斯卡近战护甲": /*html*/`穆伊斯卡近战护甲<br>昌皮游荡者和靶场单位在封建/城堡/帝王时代+1/2/3近战护甲`,
     "穆伊斯卡僧侣": /*html*/`穆伊斯卡僧侣<br>僧侣招降恢复速度+50%`,
     "穆伊斯卡免费": /*html*/`穆伊斯卡免费<br>免费研发大篷车和行会`,
     "穆伊斯卡团队加成": /*html*/`穆伊斯卡团队加成<br>自然黄金资源开采寿命+15%`,
 
-    "草药疗法": /*html*/`草药疗法<br>Herbalism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步弓手系和昌皮勇士系移动速度+15%`,
+    "草药疗法": /*html*/`草药疗法<br>Herbalism<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步弓手系和昌皮游荡者系移动速度+15%`,
     "瓦拉卡": /*html*/`瓦拉卡<br>Huaracas<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>投石手+1射程，训练速度+25%`,
 
 
@@ -838,7 +838,7 @@ let ayanami = {
     "图皮便宜升级": /*html*/`图皮便宜升级<br>靶场和兵营升级便宜50%食物`,
     "图皮团队加成": /*html*/`图皮团队加成<br>塔和城堡提供10人口`,
 
-    "部落酋长": /*html*/`部落酋长<br>Caciques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>昌皮勇士和投石兵攻击速度+25%`,
+    "部落酋长": /*html*/`部落酋长<br>Caciques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>昌皮游荡者和投石兵攻击速度+25%`,
     "箭毒": /*html*/`箭毒<br>Curare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步行射手和防御设施的箭矢造成中毒伤害`,
 
 
@@ -3196,6 +3196,7 @@ function Carrack() {
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.add("aoeTechIconOff");
 }
 
 
