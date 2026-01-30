@@ -2989,7 +2989,6 @@ function SiegeOnager() {
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
-    document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
 
 function BatteringRam() {
@@ -3032,6 +3031,7 @@ function SiegeRam() {
     document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
+    document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
 
 function Scorpion() {
