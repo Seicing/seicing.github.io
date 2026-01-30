@@ -14,10 +14,9 @@
     /* Basic styling for the new grid layout */
     .character-gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         /* Adjust minmax for desired column width */
-        gap: 20px;
-        padding: 20px;
+        gap: 10px;
         max-width: 1200px;
         /* Max width for the gallery */
         margin: 0 auto;
@@ -36,12 +35,20 @@
     }
 
     .character-item img {
-        max-width: 100%;
+        max-width: 150px;
+        max-height: 150px;
+        /* <--- NEW: Limit image height to 100px */
+        width: auto;
+        /* Allow width to adjust based on height and aspect ratio */
         height: auto;
+        object-fit: contain;
+        /* Ensure image fits within bounds without cropping */
         display: block;
         /* Remove extra space below image */
         margin: 0 auto;
         border-bottom: 1px solid #eee;
+        padding: 5px 0;
+        /* Add some padding around the image for breathing room within its max-height container */
     }
 
     .character-info {
