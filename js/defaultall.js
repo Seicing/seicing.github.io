@@ -47,11 +47,6 @@ function conditionallyReplaceLinkColor(container) {
  * 内容复制器：负责将 #sidebar 的内容复制到抽屉中。
  */
 function cloneSidebarContent() {
-    if (!originalSidebar.querySelector('[onclick*="overstep"]')) {
-        console.warn('Sidebar content not ready, skip clone.');
-        return;
-    }
-
     const originalSidebar = document.getElementById('sidebar');
     if (!originalSidebar) return;
 
@@ -310,7 +305,8 @@ function conditionallyManageLayout() {
     }
 
     // 检查侧边栏是否已经有内容了 (以防万一内容加载得很快)
-    if (sidebar.querySelector('.essay-list, [data-essay-root]')) {
+    if (sidebar.children.length > 0) {
+        console.log("Sidebar already has content. Cloning immediately.");
         cloneSidebarContent();
         handleSpecialPageBackground();
         return;
