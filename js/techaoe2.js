@@ -832,7 +832,7 @@ let ayanami = {
     "瓦拉卡": /*html*/`瓦拉卡<br>Huaracas<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>投石手+1射程，训练速度+25%`,
 
 
-    "图皮起始资源": /*html*/`图皮起始资源<br>开局拥有的资源+25%`,
+    "图皮起始资源": /*html*/`图皮起始资源<br>开局各资源+25`,
     "图皮定居点": /*html*/`图皮定居点<br>村民可以驻扎在定居点`,
     "图皮死亡回馈": /*html*/`图皮死亡回馈<br>阵亡单位返还15%的资源`,
     "图皮便宜升级": /*html*/`图皮便宜升级<br>靶场和兵营升级便宜50%食物`,
