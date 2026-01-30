@@ -71,7 +71,7 @@ h3 {
     padding: 0;
     font-weight: normal;
     font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;
-    color: #056303;
+    color: #000000;
 }
 
 h1 {
@@ -437,7 +437,7 @@ a {
 }
 
 #calendar table {
-    width:100%;
+    width: 100%;
 }
 
 #calendar tbody td {
