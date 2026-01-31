@@ -321,26 +321,18 @@ function aoetechPoeRush() {
     }
 }
 
-// ===== aoetech 全局加载提示（自动执行一次）=====
-(function aoetechLoadingBootstrap() {
+// ===== aoetech 加载提示（正确时机版）=====
+document.addEventListener('DOMContentLoaded', function () {
     var tips = '加载中，如加载失败请刷新';
-    var maxWait = 5000; // 5 秒兜底，防止极端情况
-    var start = Date.now();
 
-    function applyHint() {
+    function applyHintWhenReady() {
         if (!window.ayanami) {
-            // ayanami 还没定义，继续等
-            if (Date.now() - start < maxWait) {
-                return setTimeout(applyHint, 30);
-            }
-            return;
+            return setTimeout(applyHintWhenReady, 30);
         }
 
-        // ayanami 已存在，开始填充提示
         for (var key in ayanami) {
             var nodes = document.getElementsByClassName(key);
             for (var i = 0; i < nodes.length; i++) {
-                // 只在空白时才填，避免覆盖已有内容
                 if (!nodes[i].innerHTML.trim()) {
                     nodes[i].innerHTML = tips;
                 }
@@ -348,8 +340,9 @@ function aoetechPoeRush() {
         }
     }
 
-    applyHint();
-})();
+    applyHintWhenReady();
+});
+
 
 
 
