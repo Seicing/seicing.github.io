@@ -60,7 +60,7 @@
         "char": "SeicingEmpireJade",
         "face": "serene",
         "con": "ATSP",
-        "string": "皇后不用自己动手啦"
+        "string": "想吃饭让侍从安排就是了"
     },
     {
         "dic": 3,
@@ -142,6 +142,15 @@
         "face": "depress",
         "con": "",
         "string": "这个反应真让人伤心啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingEmpireJade",
+        "face": "serene",
+        "con": "ATSPSW",
+        "string": "想起了我们第一次认识时候你给我喝的那杯玩意……"
     },
     {
         "dic": 1,
@@ -357,7 +366,7 @@
         "char": "SeicingEmpireJade",
         "face": "serene",
         "con": "ATSPSW",
-        "string": "以后注定逃不过你和死去的怪物的审判吗？"
+        "string": "看起来，我的胃以后都要成为你的厨艺和可怜动物的主战场了"
     },
     {
         "dic": 1,
