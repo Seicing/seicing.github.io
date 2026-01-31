@@ -158,5 +158,6 @@ th {
 }
 
 span:empty::before {
-    content: '加载中，如加载失败请刷新';
+    content: '字符串文件加载中，如加载失败请刷新';
+    color: red;
 }
