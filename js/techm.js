@@ -865,30 +865,6 @@ function aoetechPoeRush() {
     }
 }
 
-// ===== aoetech 加载提示（正确时机版）=====
-document.addEventListener('DOMContentLoaded', function () {
-    var tips = '加载中，如加载失败请刷新';
-
-    function applyHintWhenReady() {
-        if (!window.ayanami) {
-            return setTimeout(applyHintWhenReady, 30);
-        }
-
-        for (var key in ayanami) {
-            var nodes = document.getElementsByClassName(key);
-            for (var i = 0; i < nodes.length; i++) {
-                if (!nodes[i].innerHTML.trim()) {
-                    nodes[i].innerHTML = tips;
-                }
-            }
-        }
-    }
-
-    applyHintWhenReady();
-});
-
-
-
 
 // ========================================================
 // === 动态 .saic 网格布局 (基于容器宽度 & 自身宽度设定) ===

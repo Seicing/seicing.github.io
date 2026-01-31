@@ -147,3 +147,7 @@ th {
 .civ-selector img {
     cursor: pointer;
 }
+
+span:empty::before {
+    content: '加载中，如加载失败请刷新';
+}
