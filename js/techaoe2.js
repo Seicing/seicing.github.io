@@ -812,12 +812,12 @@ let ayanami = {
 
     "马普切虚空食物": /*html*/`马普切虚空食物<br>果丛采集者额外提交20%的食物`,
     "马普切定居点": /*html*/`马普切定居点<br>定居点可以训练长矛兵系和掷矛手系单位`,
-    "马普切生命值": /*html*/`马普切生命值<br>步兵、投石兵和掷矛手在封建/城堡/帝王时代+5/+10/+15生命值`,
+    "马普切生命值": /*html*/`马普切生命值<br>步兵、投石手和掷矛手在封建/城堡/帝王时代+5/+10/+15生命值`,
     "马普切掠夺者": /*html*/`马普切掠夺者<br>骑乘单位在击败敌方军事单位时+3黄金`,
     "马普切间谍": /*html*/`马普切间谍<br>显示敌方城堡位置`,
     "马普切团队加成": /*html*/`马普切团队加成<br>长矛兵系和掷矛手系+2视野`,
 
-    "马龙突袭": /*html*/`马龙突袭<br>Malon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>掷石绳骑兵、投石兵和掷矛手造成穿透伤害`,
+    "马龙突袭": /*html*/`马龙突袭<br>Malon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>掷石绳骑兵、投石手和掷矛手造成穿透伤害`,
     "大地联盟": /*html*/`大地联盟<br>Butalmapu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>团队城堡独特单位和掷石绳骑兵费用-15%`,
 
 
@@ -838,7 +838,7 @@ let ayanami = {
     "图皮便宜升级": /*html*/`图皮便宜升级<br>靶场和兵营升级便宜50%食物`,
     "图皮团队加成": /*html*/`图皮团队加成<br>塔和城堡额外提供10人口`,
 
-    "部落酋长": /*html*/`部落酋长<br>Caciques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>昌皮勇士和投石兵攻击速度+25%`,
+    "部落酋长": /*html*/`部落酋长<br>Caciques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>昌皮勇士和投石手攻击速度+25%`,
     "箭毒": /*html*/`箭毒<br>Curare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步行射手和防御设施的箭矢造成中毒伤害`,
 
 
