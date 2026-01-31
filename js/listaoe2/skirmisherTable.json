@@ -89,6 +89,13 @@
             "civ": "Lithuanians"
         },
         {
+            "tech": "箭毒",
+            "showId": "箭毒",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "score": 2,
+            "civ": "Tupi"
+        },
+        {
             "tech": "掷矛器",
             "showId": "掷矛器",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
@@ -138,11 +145,53 @@
             "civ": "Wei"
         },
         {
+            "tech": "马龙突袭",
+            "showId": "马龙突袭",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "score": 2,
+            "civ": "Mapuche"
+        },
+        {
             "tech": "缅甸便宜修道院科技",
             "showId": "缅甸便宜修道院科技",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.webp",
             "score": 0,
             "civ": "Burmese"
+        },
+        {
+            "tech": "图皮死亡回馈",
+            "showId": "图皮死亡回馈",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tupi.webp",
+            "score": 1,
+            "civ": "Tupi"
+        },
+        {
+            "tech": "图皮便宜升级",
+            "showId": "图皮便宜升级",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tupi.webp",
+            "score": 1,
+            "civ": "Tupi"
+        },
+        {
+            "tech": "穆伊斯卡近战护甲",
+            "showId": "穆伊斯卡近战护甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Muisca.webp",
+            "score": 1,
+            "civ": "Muisca"
+        },
+        {
+            "tech": "马普切定居点",
+            "showId": "马普切定居点",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Mapuche.webp",
+            "score": 1,
+            "civ": "Mapuche"
+        },
+        {
+            "tech": "马普切生命值",
+            "showId": "马普切生命值",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Mapuche.webp",
+            "score": 1,
+            "civ": "Mapuche"
         },
         {
             "tech": "阿兹特克训练速度",

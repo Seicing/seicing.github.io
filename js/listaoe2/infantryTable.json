@@ -156,11 +156,25 @@
             "civ": "Dravidians"
         },
         {
+            "tech": "草药疗法",
+            "showId": "草药疗法",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "score": 2,
+            "civ": "Muisca"
+        },
+        {
             "tech": "酋长",
             "showId": "酋长",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
             "score": 2,
             "civ": "Vikings"
+        },
+        {
+            "tech": "部落酋长",
+            "showId": "部落酋长",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "score": 2,
+            "civ": "Tupi"
         },
         {
             "tech": "札甲",
@@ -182,6 +196,34 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
             "score": 1,
             "civ": "Wei"
+        },
+        {
+            "tech": "图皮死亡回馈",
+            "showId": "图皮死亡回馈",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tupi.webp",
+            "score": 1,
+            "civ": "Tupi"
+        },
+        {
+            "tech": "图皮便宜升级",
+            "showId": "图皮便宜升级",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tupi.webp",
+            "score": 1,
+            "civ": "Tupi"
+        },
+        {
+            "tech": "穆伊斯卡近战护甲",
+            "showId": "穆伊斯卡近战护甲",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Muisca.webp",
+            "score": 1,
+            "civ": "Muisca"
+        },
+        {
+            "tech": "马普切生命值",
+            "showId": "马普切生命值",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Mapuche.webp",
+            "score": 1,
+            "civ": "Mapuche"
         },
         {
             "tech": "缅甸便宜修道院科技",
@@ -393,6 +435,134 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/升级到罗马军.webp",
             "score": 2,
             "civ": "Romans",
+            "replace": "Champion"
+        },
+        {
+            "tech": "ChampiScoutIncas",
+            "showId": "昌皮侦察兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "score": 1,
+            "civ": "Incas",
+            "replace": "ManatArms"
+        },
+        {
+            "tech": "ChampiRunnerIncas",
+            "showId": "昌皮游荡者",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "score": 1,
+            "civ": "Incas",
+            "replace": "LongSwordsman"
+        },
+        {
+            "tech": "ChampiWarriorIncas",
+            "showId": "昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "score": 1,
+            "civ": "Incas",
+            "replace": "TwoHandedSwordsman"
+        },
+        {
+            "tech": "EliteChampiWarriorIncas",
+            "showId": "精锐昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "score": 2,
+            "civ": "Incas",
+            "replace": "Champion"
+        },
+        {
+            "tech": "ChampiScoutMapuche",
+            "showId": "昌皮侦察兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "score": 1,
+            "civ": "Mapuche",
+            "replace": "ManatArms"
+        },
+        {
+            "tech": "ChampiRunnerMapuche",
+            "showId": "昌皮游荡者",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "score": 1,
+            "civ": "Mapuche",
+            "replace": "LongSwordsman"
+        },
+        {
+            "tech": "ChampiWarriorMapuche",
+            "showId": "昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "score": 1,
+            "civ": "Mapuche",
+            "replace": "TwoHandedSwordsman"
+        },
+        {
+            "tech": "EliteChampiWarriorMapuche",
+            "showId": "精锐昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "score": 2,
+            "civ": "Mapuche",
+            "replace": "Champion"
+        },
+        {
+            "tech": "ChampiScoutMuisca",
+            "showId": "昌皮侦察兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "score": 1,
+            "civ": "Muisca",
+            "replace": "ManatArms"
+        },
+        {
+            "tech": "ChampiRunnerMuisca",
+            "showId": "昌皮游荡者",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "score": 1,
+            "civ": "Muisca",
+            "replace": "LongSwordsman"
+        },
+        {
+            "tech": "ChampiWarriorMuisca",
+            "showId": "昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "score": 1,
+            "civ": "Muisca",
+            "replace": "TwoHandedSwordsman"
+        },
+        {
+            "tech": "EliteChampiWarriorMuisca",
+            "showId": "精锐昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "score": 2,
+            "civ": "Muisca",
+            "replace": "Champion"
+        },
+        {
+            "tech": "ChampiScoutTupi",
+            "showId": "昌皮侦察兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "score": 1,
+            "civ": "Tupi",
+            "replace": "ManatArms"
+        },
+        {
+            "tech": "ChampiRunnerTupi",
+            "showId": "昌皮游荡者",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "score": 1,
+            "civ": "Tupi",
+            "replace": "LongSwordsman"
+        },
+        {
+            "tech": "ChampiWarriorTupi",
+            "showId": "昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "score": 1,
+            "civ": "Tupi",
+            "replace": "TwoHandedSwordsman"
+        },
+        {
+            "tech": "EliteChampiWarriorTupi",
+            "showId": "精锐昌皮勇士",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "score": 2,
+            "civ": "Tupi",
             "replace": "Champion"
         }
     ]
