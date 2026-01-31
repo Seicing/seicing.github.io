@@ -1265,7 +1265,6 @@ function CommonAllTech() {
     document.getElementById("Byzantines2").classList.remove("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.remove("aoeTechIconOff");
     document.getElementById("Koreans2").classList.remove("aoeTechIconOff");
-    document.getElementById("Lithuanians2").classList.remove("aoeTechIconOff");
     document.getElementById("Malians2").classList.remove("aoeTechIconOff");
     document.getElementById("Vietnamese2").classList.remove("aoeTechIconOff");
     document.getElementById("Goths2").classList.remove("aoeTechIconOff");
@@ -1313,6 +1312,9 @@ function CommonAllTech() {
     document.getElementById("Khitans2").classList.remove("aoeTechIconOff");
     document.getElementById("Wu2").classList.remove("aoeTechIconOff");
     document.getElementById("Jurchens2").classList.remove("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.remove("aoeTechIconOff");
+    document.getElementById("Mapuche2").classList.remove("aoeTechIconOff");
+    document.getElementById("Muisca2").classList.remove("aoeTechIconOff");
 }
 
 
