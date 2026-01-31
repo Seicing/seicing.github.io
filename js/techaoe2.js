@@ -818,8 +818,8 @@ let ayanami = {
     "马普切团队加成": /*html*/`马普切团队加成<br>长矛兵系和掷矛手系+2视野`,
 
     "马龙突袭": /*html*/`马龙突袭<br>Malon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>掷石绳骑兵、投石手和掷矛手造成穿透伤害`,
-    "大地联盟": /*html*/`大地联盟<br>Butalmapu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>团队城堡独特单位和掷石绳骑兵费用-15%`,
-
+    "大地联盟": /*html*/`大地联盟<br>Butalmapu<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>团队的城堡独特单位和掷石绳骑兵费用-15%`,
+    "大地联盟2": /*html*/`大地联盟<br>Butalmapu<br>团队的城堡独特单位费用-15%`,
 
     "穆伊斯卡时代升级": /*html*/`穆伊斯卡时代升级<br>升级到下个时代花费的黄金-50%`,
     "穆伊斯卡定居点": /*html*/`穆伊斯卡定居点<br>定居点便宜25%，治疗附近单位`,
