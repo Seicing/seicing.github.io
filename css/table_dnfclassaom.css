@@ -147,8 +147,3 @@ th {
 .civ-selector img {
     cursor: pointer;
 }
-
-span:empty::before {
-    content: '字符串文件加载中，如加载失败请刷新';
-    color: red;
-}
