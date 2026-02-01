@@ -2245,7 +2245,7 @@ function GoldShaftMining() {
     document.getElementById("Teutons2").classList.add("aoeTechIconOff");
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
-    document.getElementById("Khitans").style.opacity = "0.15";
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 function TreadmillCrane() {
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -2413,11 +2413,11 @@ function IronCasting() {
 }
 
 function HeavyPlow() {
-    document.getElementById("Khitan2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function HorseCollar() {
-    document.getElementById("Khitan2").classList.add("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.add("aoeTechIconOff");
 }
 
 function FortifiedWall() {
@@ -3080,7 +3080,7 @@ function CannonGalleon() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
 }
 
-function EilteCannonGalleon() {
+function EliteCannonGalleon() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
     document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
@@ -3372,7 +3372,7 @@ const AOE2_TECH_NAME_MAP = {
     "重装骆驼兵": "HeavyCamelRider",
 
     "炮舰": "CannonGalleon",
-    "精锐炮舰": "EilteCannonGalleon",
+    "精锐炮舰": "EliteCannonGalleon",
     "大型战舰": "Galleon",
     "火艨艟": "FireGalley",
     "喷火船": "FireShip",
