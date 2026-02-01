@@ -1299,9 +1299,9 @@ function CommonAllTech() {
     document.getElementById("Chinese2").classList.remove("aoeTechIconOff");
     document.getElementById("Cumans2").classList.remove("aoeTechIconOff");
     document.getElementById("Ethiopians2").classList.remove("aoeTechIconOff");
-    document.getElementById("Incas2").classList.remove("aoeTechIconOff");
+    document.getElementById("Inca2").classList.remove("aoeTechIconOff");
     document.getElementById("Italians2").classList.remove("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Maya2").classList.remove("aoeTechIconOff");
     document.getElementById("Mongols2").classList.remove("aoeTechIconOff");
     document.getElementById("Poles2").classList.remove("aoeTechIconOff");
     document.getElementById("Turks2").classList.remove("aoeTechIconOff");
@@ -1753,13 +1753,13 @@ function Gambeson() {
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Italians2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
     document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
@@ -1821,9 +1821,9 @@ function Bloodlines() {
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
     document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
     document.getElementById("Franks2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
@@ -1836,8 +1836,8 @@ function Bloodlines() {
 function Husbandry() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Teutons2").classList.add("aoeTechIconOff");
     document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
@@ -1870,13 +1870,13 @@ function ParthianTactics() {
     document.getElementById("Goths2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Italians2").classList.add("aoeTechIconOff");
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
     document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
@@ -1941,8 +1941,8 @@ function RingArcherArmor() {
 }
 function ScaleBardingArmor() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -1950,8 +1950,8 @@ function ScaleBardingArmor() {
 
 function ChainBarding() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -1960,8 +1960,8 @@ function ChainBarding() {
 
 function PlateBardingArmor() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -1993,7 +1993,7 @@ function SiegeEngineers() {
     document.getElementById("Italians2").classList.add("aoeTechIconOff");
     document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Spanish2").classList.add("aoeTechIconOff");
     document.getElementById("Turks2").classList.add("aoeTechIconOff");
@@ -2084,7 +2084,7 @@ function BlockPrinting() {
 
 function Fervor() {
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
     document.getElementById("Slavs2").classList.add("aoeTechIconOff");
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
@@ -2112,7 +2112,7 @@ function Redemption() {
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
@@ -2132,7 +2132,7 @@ function Atonement() {
     document.getElementById("Franks2").classList.add("aoeTechIconOff");
     document.getElementById("Goths2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
@@ -2148,7 +2148,7 @@ function Illumination() {
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
@@ -2200,7 +2200,7 @@ function TwoManSaw() {
     document.getElementById("Celts2").classList.add("aoeTechIconOff");
     document.getElementById("Franks2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
@@ -2238,7 +2238,7 @@ function GoldShaftMining() {
     document.getElementById("Goths2").classList.add("aoeTechIconOff");
     document.getElementById("Italians2").classList.add("aoeTechIconOff");
     document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Spanish2").classList.add("aoeTechIconOff");
@@ -2286,7 +2286,7 @@ function Architecture() {
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Japanese2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
@@ -2354,7 +2354,7 @@ function ArrowSlits() {
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
@@ -2486,12 +2486,12 @@ function BombardTower() {
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Japanese2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
@@ -2510,14 +2510,14 @@ function BombardTower() {
 }
 
 function Militia() {
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
 
 function ManatArms() {
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2525,7 +2525,7 @@ function ManatArms() {
 
 function LongSwordsman() {
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2535,7 +2535,7 @@ function TwoHandedSwordsman() {
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2547,13 +2547,13 @@ function Champion() {
     document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2592,8 +2592,8 @@ function Arbalester() {
 
 function LightCavalry() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Teutons2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
@@ -2602,8 +2602,8 @@ function LightCavalry() {
 
 function Hussar() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Teutons2").classList.add("aoeTechIconOff");
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
     document.getElementById("Chinese2").classList.add("aoeTechIconOff");
@@ -2638,8 +2638,8 @@ function HandCannoneer() {
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
     document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
@@ -2663,8 +2663,8 @@ function HandCannoneer() {
 
 function Scoutcavalry() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2673,8 +2673,8 @@ function Scoutcavalry() {
 
 function CavalryArcher() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
@@ -2687,8 +2687,8 @@ function CavalryArcher() {
 
 function HeavyCavalryArcher() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
     document.getElementById("Italians2").classList.add("aoeTechIconOff");
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
@@ -2734,8 +2734,8 @@ function Halberdier() {
 
 function Knight() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
@@ -2753,8 +2753,8 @@ function Knight() {
 
 function Cavalier() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Saracens2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
@@ -2800,8 +2800,8 @@ function Paladin() {
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
     document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Saracens2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
@@ -2853,8 +2853,8 @@ function CamelRider() {
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2896,8 +2896,8 @@ function HeavyCamelRider() {
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
@@ -2928,8 +2928,8 @@ function BombardCannon() {
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
@@ -2983,8 +2983,8 @@ function SiegeOnager() {
     document.getElementById("Spanish2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Chinese2").classList.add("aoeTechIconOff");
     document.getElementById("Koreans2").classList.add("aoeTechIconOff");
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
@@ -3066,8 +3066,8 @@ function CannonGalleon() {
     document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
     document.getElementById("Goths2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Chinese2").classList.add("aoeTechIconOff");
@@ -3086,8 +3086,8 @@ function EilteCannonGalleon() {
     document.getElementById("Byzantines2").classList.add("aoeTechIconOff");
     document.getElementById("Goths2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -3170,7 +3170,7 @@ function HeavyDemolitionShip() {
     document.getElementById("Burmese2").classList.add("aoeTechIconOff");
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
     document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Italians2").classList.add("aoeTechIconOff");
     document.getElementById("Japanese2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
@@ -3212,9 +3212,9 @@ function CarvelHull() {
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
     document.getElementById("Ethiopians2").classList.add("aoeTechIconOff");
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
@@ -3230,12 +3230,12 @@ function Siphons() {
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Japanese2").classList.add("aoeTechIconOff");
     document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Saracens2").classList.add("aoeTechIconOff");
@@ -3264,14 +3264,14 @@ function Incendiaries() {
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
     document.getElementById("Hindustanis2").classList.add("aoeTechIconOff");
     document.getElementById("Huns2").classList.add("aoeTechIconOff");
-    document.getElementById("Incas2").classList.add("aoeTechIconOff");
+    document.getElementById("Inca2").classList.add("aoeTechIconOff");
     document.getElementById("Japanese2").classList.add("aoeTechIconOff");
     document.getElementById("Khmer2").classList.add("aoeTechIconOff");
     document.getElementById("Lithuanians2").classList.add("aoeTechIconOff");
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Malay2").classList.add("aoeTechIconOff");
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
-    document.getElementById("Mayans2").classList.add("aoeTechIconOff");
+    document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
