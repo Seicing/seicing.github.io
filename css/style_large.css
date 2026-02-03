@@ -488,6 +488,16 @@ div {
     border-top: 1px solid #555555;
 }
 
+/* ======================================================== */
+/* === 1. 全局/桌面端样式 === */
+/* ======================================================== */
+/* 默认隐藏移动端专属元素 */
+#sidebar-toggle-button,
+#sidebar-overlay,
+#mobile-drawer-container {
+    display: none !important;
+}
+
 /* --- 1. 基础样式 (所有分辨率通用) --- */
 #back-to-top-button {
     display: block !important;
