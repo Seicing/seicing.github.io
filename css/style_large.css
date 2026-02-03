@@ -382,7 +382,7 @@ a {
 }
 
 #calendar table {
-    width:100%;
+    width: 100%;
 }
 
 #calendar tbody td {
@@ -520,4 +520,389 @@ div {
     bottom: auto;
     top: 20px;
     left: auto;
+}
+
+
+
+/* --- 规则 B：手机 --- 767px */
+@media only screen and (max-width: 767px) {
+    #back-to-top-button {
+        top: 70px;
+        right: 15px;
+        bottom: auto;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    #wrapper,
+    #wrapper2,
+    #page,
+    #content,
+    .post {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .entry {
+        padding: 10px 15px;
+    }
+
+    .entry,
+    .entry p,
+    .entry li {
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .entry img,
+    .entry video,
+    .entry iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box;
+    }
+
+    .entry input[type="text"],
+    .entry input[type="password"],
+    .entry textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .entry textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    #sidebar {
+        display: none !important;
+    }
+
+    #sidebar-toggle-button {
+        display: block !important;
+        position: fixed;
+        top: 15px;
+        left: auto;
+        right: 15px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #sidebar-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #mobile-drawer-container {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        max-width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.85) !important;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    body.sidebar-open #mobile-drawer-container {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open #sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.sidebar-open {
+        overflow: hidden !important;
+    }
+
+    #empire,
+    div:has(> .saic) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #empire {
+        width: auto !important;
+    }
+
+    #techtree {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        border: 1px solid #ccc;
+    }
+
+    body #layer1,
+    body #layer2,
+    body #layer1 *,
+    body #layer2 * {
+        position: revert !important;
+        width: revert !important;
+        max-width: revert !important;
+        min-width: revert !important;
+        white-space: revert !important;
+        word-break: revert !important;
+        overflow-wrap: revert !important;
+        flex: revert !important;
+        box-sizing: revert !important;
+        display: revert !important;
+        opacity: revert !important;
+        visibility: revert !important;
+        background: revert !important;
+        color: revert !important;
+        padding: revert !important;
+        border-radius: revert !important;
+        z-index: revert !important;
+        pointer-events: revert !important;
+    }
+
+    #comment_all,
+    #comment_all table,
+    div[style*="width"]>textarea#comment_text,
+    #comments,
+    #comment_pages {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    div:has(> #comment_text) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    textarea#comment_text {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    #comment_pages a {
+        white-space: normal !important;
+        display: inline-block;
+        margin: 2px;
+    }
+
+    @media (max-width: 480px) {
+        #comment_all table td {
+            display: block;
+            width: 100% !important;
+            text-align: left !important;
+            padding-bottom: 10px;
+        }
+
+        #comment_all table td:last-child {
+            text-align: left !important;
+            padding-top: 5px;
+        }
+    }
+
+    #techtree {
+        background: none !important;
+    }
+
+    #icons {
+        width: 100% !important;
+    }
+
+    #aoe4de {
+        width: 100% !important;
+    }
+
+    #customers {
+        width: 100% !important;
+    }
+
+    #ciyaus {
+        width: 100% !important;
+    }
+
+    #customers2 {
+        display: revert !important;
+        width: 100% !important;
+    }
+
+
+
+    #wenttodie {
+        display: grid !important;
+        overflow-x: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #wenttodie>* {
+        min-width: 800px !important;
+        box-sizing: border-box !important;
+    }
+
+    #tablebana {
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
+        position: static !important;
+        left: unset !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    #tablebana2 {
+        width: 80vw !important;
+        float: none !important;
+        position: relative;
+        transform: translateX(-10vw);
+        margin: 0 auto !important;
+    }
+}
+
+/* ===================================================================== */
+/* === 新增：2. 平板/小尺寸桌面专属样式 (768px - 1279px) === */
+/* === (这是一个包含所有必要样式的独立模块) === */
+/* ===================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #back-to-top-button {
+        top: 70px;
+        right: 15px;
+        bottom: auto;
+    }
+
+    #wrapper {
+        background: #ffffff !important;
+    }
+
+    html {
+        background: #e2ddca !important;
+    }
+
+    /* --- 第一部分：平板布局调整 --- */
+    /* 1. 隐藏固定的桌面侧边栏 */
+    #sidebar {
+        display: none !important;
+    }
+
+    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
+    #wrapper {
+        width: 100% !important;
+    }
+
+    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
+    #page {
+        width: 800px !important;
+    }
+
+    /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
+    #content {
+        width: 800px !important;
+        float: none !important;
+        /* 清除浮动，防止布局错乱 */
+        margin: 0 auto !important;
+        /* 实现水平居中 */
+    }
+
+    /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
+    /* 因为这个区间也要使用抽屉，所以必须包含完整的抽屉样式 */
+    #sidebar-toggle-button {
+        display: block !important;
+        position: fixed;
+        top: 15px;
+        left: auto;
+        right: 15px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #sidebar-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #mobile-drawer-container {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        max-width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.85) !important;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    body.sidebar-open #mobile-drawer-container {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open #sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.sidebar-open {
+        overflow: hidden !important;
+    }
 }
