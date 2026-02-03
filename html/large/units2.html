@@ -11,27 +11,6 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <style>
-    .rgs936 {
-        display: none;
-    }
-
-    @media screen and (max-width: 1279px) {
-        .rgs936 {
-            display: block;
-        }
-    }
-
-    .rgs937 {
-        display: block;
-    }
-
-    @media screen and (max-width: 1279px) {
-        .rgs937 {
-            display: none;
-        }
-    }
-
-
     #sidebar {
         position: fixed !important;
         top: 120px;
@@ -115,12 +94,6 @@
 因为空间不足，金帐汗国肉盾被视为封建时代罗斯贡品<br>
 日本旗本武士在封建、城堡、帝王分别以弓箭、刀剑和骑马旗本武士显示<br>
 马里曼萨掷枪兵和穆索法迪战士被视为原兵种的升级，不算作独立兵种<br>
-<div id="age-buttons" class="rgs936">
-    <button class="age-button" data-age="1">时代 1</button>
-    <button class="age-button" data-age="2">时代 2</button>
-    <button class="age-button" data-age="3">时代 3</button>
-    <button class="age-button active" data-age="4">时代 4</button>
-</div>
 <div style="width: 100%;overflow-x: auto !important;">
     <div style="min-width: 1500px;">
         <table id="customers">
@@ -458,7 +431,7 @@
                 </div>
                 <div id="sidebar" style="position:relative; left:50px">
                     <a href="https://seicing.com/html/index-aoeseries.html"><b>回到首页</b></a> <br><br>
-<div id="age-buttons" class="rgs937">
+<div id="age-buttons">
     <button class="age-button" data-age="1">时代 1</button>
     <button class="age-button" data-age="2">时代 2</button>
     <button class="age-button" data-age="3">时代 3</button>
@@ -563,13 +536,19 @@
         var referenceImageSrc = "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵.png";
         var $table = $('#customers');
 
-        $('.age-button').on('click', function () {
-            if ($(this).hasClass('active')) return;
+        $(document).on('click', '.age-button', function () {
+            const $btn = $(this);
+
+            if ($btn.hasClass('active')) return;
+
+            // 同步所有 age-button（包括 sidebar + mobile drawer）
             $('.age-button').removeClass('active');
-            $(this).addClass('active');
-            var age = $(this).data('age');
+            $btn.addClass('active');
+
+            const age = $btn.data('age');
             updateImageSources(age);
         });
+
 
         function applyHidingRules(age) {
             // 1. 先重置所有单元格和图片的可见性
