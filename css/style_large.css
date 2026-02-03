@@ -540,6 +540,10 @@ div {
         width: 100%
     }
 
+    #header {
+        width: 100%
+    }
+
     #back-to-top-button {
         top: 70px;
         right: 15px;
@@ -817,6 +821,10 @@ div {
 /* ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     .container {
+        width: 100%
+    }
+
+    #header {
         width: 100%
     }
 
