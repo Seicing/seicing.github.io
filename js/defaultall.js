@@ -64,14 +64,16 @@ function loadTechnoseigineIfNeeded(root) {
         }
 
         // =====================================================
-        // === 【写入完成后】执行你的附加逻辑（唯一正确位置）
+        // === 【修改点】在这里把 root 作为上下文传入 ===
         // =====================================================
         if (typeof AOE2_enableCivIconQuickJump === 'function') {
-            AOE2_enableCivIconQuickJump();
+            // 传递 root，告诉函数在桌面 sidebar 里执行
+            AOE2_enableCivIconQuickJump(root);
         }
 
         if (typeof AOE2_activateCurrentCivIcon === 'function') {
-            AOE2_activateCurrentCivIcon();
+            // 传递 root，告诉函数在桌面 sidebar 里执行
+            AOE2_activateCurrentCivIcon(root);
         }
 
         const spanElement = container.querySelector('#techno123');
