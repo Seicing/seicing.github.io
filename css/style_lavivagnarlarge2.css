@@ -814,24 +814,27 @@ a {
     }
 
     #control-bar {
-        position: sticky;
-        /* 推荐：随滚动吸顶 */
-        /* 如果你想“永远悬浮”：改成 fixed */
-
+        position: fixed;
         top: 0;
-        z-index: 1000;
+        right: 56px;
+        /* ⭐ 给右上角按钮让位 */
+        left: 0;
 
-        /* 不占满全宽 */
-        width: calc(100% - 64px);
-        /* 给抽屉按钮留空间 */
-        margin-left: 64px;
+        width: auto;
+        max-width: calc(100% - 56px);
 
+        z-index: 2000;
         background: #fff;
-        /* 避免内容透出 */
-        padding: 6px 4px;
+        padding: 6px 6px;
 
-        /* 防止内部 float 把高度吃掉 */
+        /* 防止内部 float 塌陷 */
         overflow: hidden;
+    }
+
+    /* 给下面内容让出空间 */
+    #reski {
+        margin-top: 48px;
+        /* 根据控制条真实高度微调 */
     }
 
 }
