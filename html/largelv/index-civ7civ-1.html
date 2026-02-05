@@ -70,6 +70,33 @@
     #filterBar button.off {
         opacity: 0.4;
     }
+
+
+    @media only screen and (max-width: 767px) {
+        #sidebar-toggle-button {
+            display: none;
+        }
+
+        #back-to-top-button {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+        #sidebar-toggle-button {
+            display: none;
+        }
+
+        #back-to-top-button {
+            display: none;
+        }
+
+        #content,
+        .post,
+        .entry {
+            position: static;
+        }
+    }
 </style>
 </head>
 

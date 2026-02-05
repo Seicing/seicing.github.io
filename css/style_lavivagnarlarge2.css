@@ -859,7 +859,7 @@ a {
 
     /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
     #content {
-        width: 800px !important;
+        /*   width: 800px !important;*/
         float: none !important;
         /* 清除浮动，防止布局错乱 */
         margin: 0 auto !important;
