@@ -1736,12 +1736,12 @@ function toggleTechTreeQuickJump() {
 
     if (!techTreeQuickJumpEnabled) {
         AOE2_enableTechTreeQuickJump();
-        btn.textContent = "已开启科技树超链接化";
+        btn.textContent = "超链接化";
         btn.classList.add("enabled"); // 加特效
         techTreeQuickJumpEnabled = true;
     } else {
         AOE2_disableTechTreeQuickJump();
-        btn.textContent = "开启上方科技树超链接化";
+        btn.textContent = "超链接化";
         btn.classList.remove("enabled"); // 移除特效
         techTreeQuickJumpEnabled = false;
     }
