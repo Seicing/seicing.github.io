@@ -43,9 +43,6 @@ function conditionallyReplaceLinkColor(container) {
     });
 }
 
-/**
- * Technoseigine 自动加载器（桌面 / 移动通用）
- */
 function loadTechnoseigineIfNeeded(root) {
     if (!root) return;
 
@@ -63,9 +60,27 @@ function loadTechnoseigineIfNeeded(root) {
         if (status !== 'success') {
             console.error('Technoseigine load failed:', src);
             container.dataset.loaded = 'false';
+            return;
+        }
+
+        // =====================================================
+        // === 【写入完成后】执行你的附加逻辑（唯一正确位置）
+        // =====================================================
+        if (typeof AOE2_enableCivIconQuickJump === 'function') {
+            AOE2_enableCivIconQuickJump();
+        }
+
+        if (typeof AOE2_activateCurrentCivIcon === 'function') {
+            AOE2_activateCurrentCivIcon();
+        }
+
+        const spanElement = container.querySelector('#techno123');
+        if (spanElement) {
+            spanElement.style.display = 'none';
         }
     });
 }
+
 
 /**
  * 内容复制器：负责将 #sidebar 的内容复制到抽屉中。
