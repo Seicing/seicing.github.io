@@ -1067,8 +1067,8 @@ function AOE2_activateCurrentCivIcon() {
         fileName.replace(/\.html$/i, "")
     ).trim();
 
-    const techno = document.getElementById("techno");
-    if (!techno) return;
+    const techno = document.getElementById("technoseigine");
+    if (!technoseigine) return;
 
     let targetImg = null;
 
