@@ -1032,15 +1032,11 @@ function aoetechPoeRush() {
 
 
 
-/* =========================================================
-   文明小图标 → 自动生成快捷跳转链接
-   ========================================================= */
+function AOE2_enableCivIconQuickJump(container) {
+    const root = container || document;
 
-function AOE2_enableCivIconQuickJump() {
-
-    document.querySelectorAll('img[id$="2"][title]').forEach(img => {
-
-        // 已经被包过就跳过
+    root.querySelectorAll('img[title]').forEach(img => {
+        // 已经被 <a> 包过就跳过
         if (img.closest('a')) return;
 
         const title = img.getAttribute("title");
@@ -1055,6 +1051,7 @@ function AOE2_enableCivIconQuickJump() {
         link.appendChild(img);
     });
 }
+
 
 // === 改造版 AOE2_activateCurrentCivIcon ===
 function AOE2_activateCurrentCivIcon(container) {

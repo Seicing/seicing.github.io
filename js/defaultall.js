@@ -63,16 +63,20 @@ function loadTechnoseigineIfNeeded(root) {
             return;
         }
 
-        // =====================================================
-        // === 【写入完成后】执行你的附加逻辑（唯一正确位置）
-        // =====================================================
-        if (typeof AOE2_enableCivIconQuickJump === 'function') {
-            AOE2_enableCivIconQuickJump();
+        // 桌面 sidebar
+        const desktopTechno = document.getElementById("technoseigine");
+        if (desktopTechno) {
+            AOE2_enableCivIconQuickJump(desktopTechno);
+            AOE2_activateCurrentCivIcon(desktopTechno);
         }
 
-        if (typeof AOE2_activateCurrentCivIcon === 'function') {
-            AOE2_activateCurrentCivIcon();
+        // 移动抽屉
+        const mobileTechno = document.getElementById("technoseigine-mobile");
+        if (mobileTechno) {
+            AOE2_enableCivIconQuickJump(mobileTechno);
+            AOE2_activateCurrentCivIcon(mobileTechno);
         }
+
 
         const spanElement = container.querySelector('#techno123');
         if (spanElement) {
@@ -125,13 +129,20 @@ function cloneSidebarContent() {
                 // =====================================================
                 // === 【再保险】手机模式下，clone 完成后再激活一次
                 // =====================================================
-                if (typeof AOE2_enableCivIconQuickJump === 'function') {
-                    AOE2_enableCivIconQuickJump(mobileDrawer);
+                // 桌面 sidebar
+                const desktopTechno = document.getElementById("technoseigine");
+                if (desktopTechno) {
+                    AOE2_enableCivIconQuickJump(desktopTechno);
+                    AOE2_activateCurrentCivIcon(desktopTechno);
                 }
 
-                if (typeof AOE2_activateCurrentCivIcon === 'function') {
-                    AOE2_activateCurrentCivIcon(mobileDrawer);
+                // 移动抽屉
+                const mobileTechno = document.getElementById("technoseigine-mobile");
+                if (mobileTechno) {
+                    AOE2_enableCivIconQuickJump(mobileTechno);
+                    AOE2_activateCurrentCivIcon(mobileTechno);
                 }
+
             }
         }
     }, 100);
