@@ -812,6 +812,28 @@ a {
         transform: translateX(-10vw);
         margin: 0 auto !important;
     }
+
+    #control-bar {
+        position: sticky;
+        /* 推荐：随滚动吸顶 */
+        /* 如果你想“永远悬浮”：改成 fixed */
+
+        top: 0;
+        z-index: 1000;
+
+        /* 不占满全宽 */
+        width: calc(100% - 64px);
+        /* 给抽屉按钮留空间 */
+        margin-left: 64px;
+
+        background: #fff;
+        /* 避免内容透出 */
+        padding: 6px 4px;
+
+        /* 防止内部 float 把高度吃掉 */
+        overflow: hidden;
+    }
+
 }
 
 /* ===================================================================== */
