@@ -11,6 +11,38 @@
 <link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<style>
+    #layouter {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* 左侧固定 */
+    #reske {
+        width: 390px;
+        flex-shrink: 0;
+        /* 绝对不被压缩 */
+    }
+
+    /* 右侧自适应 */
+    #reski {
+        flex: 1;
+        min-width: 0;
+        /* ⭐ 非常重要：允许内容收缩 */
+    }
+
+    #app {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* 表格间距 */
+    }
+
+    #app table {
+        width: 600px;
+        flex-shrink: 0;
+    }
+</style>
 </head>
 
 <body id='scroll-2'>
@@ -23,47 +55,45 @@
                 <div id="content">
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
-                        <div class="entry"><div id="reske" style="float: left;width: 390px;">
-</div>
-<div id="reski" style="float: left;max-width: 1350px;">
-    <div id="app">
-        <table style="float:left;width:600px" id="customers">
-            <tr>
-                <td> </td>
-                <td>内部id(英文)</td>
-                <td>内部id(中文)</td>
-                <td>反映唯一id(英文)</td>
-                <td>反映唯一id(中文)</td>
-            </tr>
-            <tr v-for="diaindex in aasb">
-                <td><img :src="diaindex.icon2" style="width: 25px"></td>
-                <td><span v-html="diaindex.inner2"></span></td>
-                <td><span v-html="diaindex.intro2"></span></td>
-                <td><span v-html="diaindex.outro2"></span></td>
-                <td><span v-html="diaindex.outer2"></span></td>
-            </tr>
-        </table>
-        <table style="float:left;width:20px">
-            <tr>
-                <td> </td>
-            </tr>
-        </table>
-        <table style="float:left;width:600px" id="customers">
-            <tr>
-                <td> </td>
-                <td>内部id(英文)</td>
-                <td>内部id(中文)</td>
-                <td>反映唯一id(英文)</td>
-                <td>反映唯一id(中文)</td>
-            </tr>
-            <tr v-for="diaindex in aasb2">
-                <td><img :src="diaindex.icon3" style="width: 25px"></td>
-                <td><span v-html="diaindex.inner3"></span></td>
-                <td><span v-html="diaindex.intro3"></span></td>
-                <td><span v-html="diaindex.outro3"></span></td>
-                <td><span v-html="diaindex.outer3"></span></td>
-            </tr>
-        </table>
+                        <div class="entry"><div id="layouter">
+
+    <div id="reske" style="float: left;width: 390px;">
+    </div>
+    <div id="reski" style="float: left;max-width: 1350px;">
+        <div id="app">
+            <table style="width:600px" id="customers">
+                <tr>
+                    <td> </td>
+                    <td>内部id(英文)</td>
+                    <td>内部id(中文)</td>
+                    <td>反映唯一id(英文)</td>
+                    <td>反映唯一id(中文)</td>
+                </tr>
+                <tr v-for="diaindex in aasb">
+                    <td><img :src="diaindex.icon2" style="width: 25px"></td>
+                    <td><span v-html="diaindex.inner2"></span></td>
+                    <td><span v-html="diaindex.intro2"></span></td>
+                    <td><span v-html="diaindex.outro2"></span></td>
+                    <td><span v-html="diaindex.outer2"></span></td>
+                </tr>
+            </table>
+            <table style="width:600px" id="customers">
+                <tr>
+                    <td> </td>
+                    <td>内部id(英文)</td>
+                    <td>内部id(中文)</td>
+                    <td>反映唯一id(英文)</td>
+                    <td>反映唯一id(中文)</td>
+                </tr>
+                <tr v-for="diaindex in aasb2">
+                    <td><img :src="diaindex.icon3" style="width: 25px"></td>
+                    <td><span v-html="diaindex.inner3"></span></td>
+                    <td><span v-html="diaindex.intro3"></span></td>
+                    <td><span v-html="diaindex.outro3"></span></td>
+                    <td><span v-html="diaindex.outer3"></span></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
 

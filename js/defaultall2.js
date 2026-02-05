@@ -143,7 +143,7 @@ function cloneSidebarContent() {
             if (listInDrawer) {
                 const images = listInDrawer.querySelectorAll('img');
                 images.forEach(img => {
-                    img.style.width = '40px';
+                    img.style.width = '45px';
                 });
             }
 
