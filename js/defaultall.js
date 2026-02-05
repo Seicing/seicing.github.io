@@ -402,7 +402,12 @@ document.addEventListener('DOMContentLoaded', function () {
     bindSidebarToggleEventsOnce();
     // 2. [新增] [只执行一次] 绑定永久的回到顶部按钮点击事件。
     bindBackToTopEventsOnce();
-    // 2. [执行一次] 首次加载时，立即进行一次条件化检查。
+    // ============================================================
+    // === 【核心修改 2】 在这里添加 hashchange 事件监听器 ===
+    // ============================================================
+    // 当URL的锚点变化时，立即调用更新函数
+    window.addEventListener('hashchange', updateAllCivLinkHashes, false);
+    // 3. [执行一次] 首次加载时，立即进行一次条件化检查。
     conditionallyManageLayout();
     positionBackToTopButton();
 });
