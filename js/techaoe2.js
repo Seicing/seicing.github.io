@@ -1484,14 +1484,21 @@ function AOE2_applyUnitCivDisable(funcName) {
 }
 
 /**
- * [已改造] 为指定容器内的文明图标添加快速跳转链接
+ * [已改造 v2] 为指定容器内的文明图标添加快速跳转链接
+ * - 新增：会将当前页面的锚点(#hash)传递到新生成的链接中
  * @param {HTMLElement} [container=document] 要操作的父容器，默认为整个文档
  */
 function AOE2_enableCivIconQuickJump(container) {
     // 如果没有提供容器，则默认为 document，以兼容旧的调用方式
     const scope = container || document;
 
+    // [新增] 在函数开头，一次性获取当前页面的锚点 (#)
+    // 如果URL是 ".../图皮.html#tgc", aoe2Hash就会是 "#tgc"
+    // 如果URL没有锚点，aoe2Hash会是空字符串 ""
+    const aoe2Hash = window.location.hash;
+
     scope.querySelectorAll('img[id$="2"][title]').forEach(img => {
+
         // 已经被包过就跳过
         if (img.closest('a')) return;
 
@@ -1499,8 +1506,18 @@ function AOE2_enableCivIconQuickJump(container) {
         if (!title) return;
 
         const link = document.createElement("a");
-        // 注意：这里的 https://seicing.com/html 变量可能需要根据你的实际路径进行调整
-        link.href = `https://seicing.com/html/aoe2/2/${title}.html`;
+
+        // [修改] 构造基础链接
+        let targetHref = `https://seicing.com/html/aoe2/2/${title}.html`;
+
+        // [修改] 如果存在锚点，就把它追加到链接后面
+        if (aoe2Hash) {
+            targetHref += aoe2Hash;
+        }
+
+        // [修改] 应用最终构建好的链接
+        link.href = targetHref;
+
         link.style.color = "#0010ff";
         link.style.display = "inline-block";
 
