@@ -44,6 +44,30 @@ function conditionallyReplaceLinkColor(container) {
 }
 
 /**
+ * Technoseigine 自动加载器（桌面 / 移动通用）
+ */
+function loadTechnoseigineIfNeeded(root) {
+    if (!root) return;
+
+    const container = root.querySelector('#technoseigine');
+    if (!container) return;
+
+    if (container.dataset.loaded === 'true') return;
+
+    const src = container.dataset.src;
+    if (!src) return;
+
+    container.dataset.loaded = 'true';
+
+    $(container).load(src, function (response, status) {
+        if (status !== 'success') {
+            console.error('Technoseigine load failed:', src);
+            container.dataset.loaded = 'false';
+        }
+    });
+}
+
+/**
  * 内容复制器：负责将 #sidebar 的内容复制到抽屉中。
  */
 function cloneSidebarContent() {
@@ -75,6 +99,7 @@ function cloneSidebarContent() {
             }
 
             conditionallyReplaceLinkColor(mobileDrawer);
+            loadTechnoseigineIfNeeded(mobileDrawer);
             console.log("Success: Sidebar content has been cloned ONCE.");
 
             // =================================================================
@@ -283,9 +308,12 @@ function positionBackToTopButton() {
  * 这个函数会在需要时被调用，但内部有智能监控，确保内容加载后再执行克隆。
  */
 function conditionallyManageLayout() {
-    // 步骤1：检查是否处于需要抽屉的视图（手机或平板）
+    // === 桌面模式：不克隆，但要处理 technoseigine ===
     if (window.innerWidth >= 1280) {
-        // 如果是桌面视图，则什么都不做
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar) {
+            loadTechnoseigineIfNeeded(sidebar);
+        }
         return;
     }
 

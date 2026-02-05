@@ -2029,7 +2029,7 @@
 
 
 
-<br><br>
+<br> &nbsp;&nbsp;
 <button title="" id="enableTechTreeQuick"
     onclick="toggleTechTreeQuickJump()">开启上方科技树超链接化</button>，开启后，点击上方的单位和建筑图标可以跳转到对应的页面<br><br>
 <table style="float:left;">
@@ -2066,7 +2066,7 @@
 <a href="#tgc">科技树</a><br>
 
 <br>
-<div id="techno"></div>
+<div id="technoseigine" data-src="https://seicing.com/js/list/AOE2DIC3.html"></div>
 
                     </div>
                 </div>
@@ -2090,14 +2090,12 @@
 <script language="javascript" src="https://seicing.com/js/techaoe2.js" onload="aoetechPoeRush();AOE2_applyTechTree()"></script>
 <script>
     $(document).ready(function () {
-        $('#techno').load('https://seicing.com/js/list/AOE2DIC3.html', function () {
-            AOE2_enableCivIconQuickJump();
-            AOE2_activateCurrentCivIcon();
-            var spanElement = document.getElementById("techno123");
-            if (spanElement) {
-                spanElement.style.display = "none";
-            }
-        })
+        AOE2_enableCivIconQuickJump();
+        AOE2_activateCurrentCivIcon();
+        var spanElement = document.getElementById("techno123");
+        if (spanElement) {
+            spanElement.style.display = "none";
+        }
     })
 </script>
 <link href="https://seicing.com/css/aoeciv7.css" media="screen" rel="stylesheet" type="text/css">
