@@ -816,20 +816,19 @@ a {
     #control-bar {
         position: fixed;
         top: 0;
-        right: 56px;
-        /* ⭐ 给右上角按钮让位 */
         left: 0;
-
-        width: auto;
-        max-width: calc(100% - 56px);
-
+        right: 0;
+        /* ⭐ 背景铺满 */
         z-index: 2000;
         background: #fff;
-        padding: 6px 6px;
+    }
 
-        /* 防止内部 float 塌陷 */
+    .control-inner {
+        padding: 6px 64px 6px 6px;
+        /* ⭐ 右侧内缩避开按钮 */
         overflow: hidden;
     }
+
 
     /* 给下面内容让出空间 */
     #reski {
