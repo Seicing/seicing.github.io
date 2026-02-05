@@ -1,28 +1,3 @@
-
-/* =========================================================
-   文明小图标 → 自动生成快捷跳转链接
-   ========================================================= */
-
-function AOE2_enableCivIconQuickJump() {
-
-    document.querySelectorAll('img[id$="2"][title]').forEach(img => {
-
-        // 已经被包过就跳过
-        if (img.closest('a')) return;
-
-        const title = img.getAttribute("title");
-        if (!title) return;
-
-        const link = document.createElement("a");
-        link.href = `https://seicing.com/html/aoe2/1/${title}.html#techno`;
-        link.style.color = "#0010ff";
-        link.style.display = "inline-block";
-
-        img.parentNode.insertBefore(link, img);
-        link.appendChild(img);
-    });
-}
-
 function AOE2_activateCurrentCivIcon() {
     const path = location.pathname;
     if (!path.includes("/html/aoe2/")) return;

@@ -1047,7 +1047,7 @@ function AOE2_enableCivIconQuickJump() {
         if (!title) return;
 
         const link = document.createElement("a");
-        link.href = `https://seicing.com/html/aoe2/1/${title}.html#techno`;
+        link.href = `https://seicing.com/html/aoe2/4/${title}.html#techno`;
         link.style.color = "#0010ff";
         link.style.display = "inline-block";
 
