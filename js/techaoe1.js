@@ -580,12 +580,11 @@ function AOE2_applyUnitCivDisable(funcName) {
     tryApply();
 }
 
+function AOE2_enableCivIconQuickJump() {
 
-function AOE2_enableCivIconQuickJump(container) {
-    const root = container || document;
+    document.querySelectorAll('img[id$="2"][title]').forEach(img => {
 
-    root.querySelectorAll('img[title]').forEach(img => {
-        // 已经被 <a> 包过就跳过
+        // 已经被包过就跳过
         if (img.closest('a')) return;
 
         const title = img.getAttribute("title");
@@ -602,24 +601,24 @@ function AOE2_enableCivIconQuickJump(container) {
 }
 
 
-// === 改造版 AOE2_activateCurrentCivIcon ===
-function AOE2_activateCurrentCivIcon(container) {
+function AOE2_activateCurrentCivIcon() {
     const path = location.pathname;
     if (!path.includes("/html/aoe2/")) return;
 
     const fileName = path.split("/").pop();
     if (!fileName) return;
 
-    const civName = decodeURIComponent(fileName.replace(/\.html$/i, "")).trim();
+    const civName = decodeURIComponent(
+        fileName.replace(/\.html$/i, "")
+    ).trim();
 
-    // 如果没有传入容器，就默认使用 sidebar
-    const root = container || document.getElementById("technoseigine");
-    if (!root) return;
+    const techno = document.getElementById("technoseigine");
+    if (!technoseigine) return;
 
     let targetImg = null;
 
-    // 给所有按钮加 civ-active936
-    root.querySelectorAll("img[title]").forEach(img => {
+    // 先给所有按钮加上 civ-active936
+    techno.querySelectorAll("img[title]").forEach(img => {
         img.classList.add("civ-active936");
 
         const title = img.getAttribute("title").trim();
@@ -629,56 +628,19 @@ function AOE2_activateCurrentCivIcon(container) {
     });
 
     if (!targetImg) {
-        console.warn("未找到文明图标：", civName, root);
+        console.warn("未找到文明图标：", civName);
         return;
     }
 
-    // 清理旧激活（civ-active937）
-    root.querySelectorAll(".civ-active937").forEach(el => {
+    // 清理旧激活（如果之前有 civ-active937）
+    techno.querySelectorAll(".civ-active937").forEach(el => {
         el.classList.remove("civ-active937");
     });
 
     // 激活目标
-    targetImg.classList.remove("civ-active936"); // 移除非激活类
+    targetImg.classList.remove("civ-active936"); // 非激活类去掉
     targetImg.classList.add("civ-active937");
 }
-
-function loadTechnoseigineIfNeeded(root) {
-    if (!root) return;
-
-    const container = root.querySelector('#technoseigine');
-    if (!container) return;
-
-    // 给 mobile drawer 复制版一个新 id
-    if (root.id === 'mobile-drawer-container') {
-        container.id = 'technoseigine-mobile';
-    }
-
-    if (container.dataset.loaded === 'true') return;
-
-    const src = container.dataset.src;
-    if (!src) return;
-
-    container.dataset.loaded = 'true';
-
-    $(container).load(src, function (response, status) {
-        if (status !== 'success') {
-            console.error('Technoseigine load failed:', src);
-            container.dataset.loaded = 'false';
-            return;
-        }
-
-        // 页面加载完成后激活文明图标
-        AOE2_activateCurrentCivIcon(container);
-
-        // 隐藏特定 span
-        const spanElement = container.querySelector('#techno123');
-        if (spanElement) {
-            spanElement.style.display = 'none';
-        }
-    });
-}
-
 
 
 const AOE2_TECH_LINK_EXCLUDE = new Set([
