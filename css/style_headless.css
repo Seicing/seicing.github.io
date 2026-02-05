@@ -955,6 +955,12 @@ div {
         transform: translateX(-10vw);
         margin: 0 auto !important;
     }
+
+    /* ★ 允许 Leaflet 接管触控 */
+    #map,
+    .leaflet-container {
+        touch-action: none;
+    }
 }
 
 /* ===================================================================== */
