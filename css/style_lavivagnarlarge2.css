@@ -852,11 +852,6 @@ a {
         width: 100% !important;
     }
 
-    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
-    #page {
-        width: 800px !important;
-    }
-
     /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
     #content {
         /*   width: 800px !important;*/

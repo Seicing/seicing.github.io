@@ -74,27 +74,19 @@
 
     @media only screen and (max-width: 767px) {
         #sidebar-toggle-button {
-            display: none;
-        }
-
-        #back-to-top-button {
-            display: none;
+            display: none !important;
         }
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1279px) {
         #sidebar-toggle-button {
-            display: none;
-        }
-
-        #back-to-top-button {
-            display: none;
+            display: none !important;
         }
 
         #content,
         .post,
         .entry {
-            position: static;
+            position: static !important;
         }
     }
 </style>
@@ -102,7 +94,6 @@
 
 <body id='scroll-2'>
     <button id="sidebar-toggle-button">☰</button>
-    <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
     <div id="wrapper" style="width:1850px ; margin:auto">
         <div id="wrapper2">
