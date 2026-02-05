@@ -406,8 +406,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // ============================================================
     // === 【核心修改 2】 在这里添加 hashchange 事件监听器 ===
     // ============================================================
-    // 当URL的锚点变化时，立即调用更新函数
-    //  window.addEventListener('hashchange', updateAllCivLinkHashes, false);
+    // 检查 updateAllCivLinkHashes 函数是否存在，如果存在，才绑定事件
+    if (typeof updateAllCivLinkHashes === 'function') {
+        // 当URL的锚点变化时，立即调用更新函数
+        window.addEventListener('hashchange', updateAllCivLinkHashes, false);
+    }
 
     // 3. [执行一次] 首次加载时，立即进行一次条件化检查。
     conditionallyManageLayout();
