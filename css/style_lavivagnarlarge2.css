@@ -833,6 +833,43 @@ a {
         bottom: auto;
     }
 
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    #wrapper,
+    #wrapper2,
+    #page,
+    #content,
+    .post {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .entry img,
+    .entry video,
+    .entry iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box;
+    }
+
+    .entry input[type="text"],
+    .entry input[type="password"],
+    .entry textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
     #wrapper {
         background: #ffffff !important;
     }
