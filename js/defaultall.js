@@ -1,46 +1,3 @@
-function AOE2_activateCurrentCivIcon() {
-    const path = location.pathname;
-    if (!path.includes("/html/aoe2/")) return;
-
-    const fileName = path.split("/").pop();
-    if (!fileName) return;
-
-    const civName = decodeURIComponent(
-        fileName.replace(/\.html$/i, "")
-    ).trim();
-
-    const techno = document.getElementById("technoseigine");
-    if (!technoseigine) return;
-
-    let targetImg = null;
-
-    // 先给所有按钮加上 civ-active936
-    techno.querySelectorAll("img[title]").forEach(img => {
-        img.classList.add("civ-active936");
-
-        const title = img.getAttribute("title").trim();
-        if (title === civName) {
-            targetImg = img;
-        }
-    });
-
-    if (!targetImg) {
-        console.warn("未找到文明图标：", civName);
-        return;
-    }
-
-    // 清理旧激活（如果之前有 civ-active937）
-    techno.querySelectorAll(".civ-active937").forEach(el => {
-        el.classList.remove("civ-active937");
-    });
-
-    // 激活目标
-    targetImg.classList.remove("civ-active936"); // 非激活类去掉
-    targetImg.classList.add("civ-active937");
-}
-
-
-
 /*
 =====================================================================
 === 全局布局控制器 (Global Layout Controller) v4.0
@@ -165,6 +122,16 @@ function cloneSidebarContent() {
             // =================================================================
             if (typeof transformClonedEssayList === 'function') {
                 transformClonedEssayList(mobileDrawer);
+                // =====================================================
+                // === 【再保险】手机模式下，clone 完成后再激活一次
+                // =====================================================
+                if (typeof AOE2_enableCivIconQuickJump === 'function') {
+                    AOE2_enableCivIconQuickJump(mobileDrawer);
+                }
+
+                if (typeof AOE2_activateCurrentCivIcon === 'function') {
+                    AOE2_activateCurrentCivIcon(mobileDrawer);
+                }
             }
         }
     }, 100);
