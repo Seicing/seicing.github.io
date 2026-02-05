@@ -138,6 +138,14 @@ function cloneSidebarContent() {
                 console.log("#reski width reset to 'auto' for mobile view.");
             }
 
+            // 【修改】在抽屉内找到 #listlavivagnar，并将其中的图片宽度设为40px
+            const listInDrawer = mobileDrawer.querySelector('#listlavivagnar');
+            if (listInDrawer) {
+                const images = listInDrawer.querySelectorAll('img');
+                images.forEach(img => {
+                    img.style.width = '40px';
+                });
+            }
 
             conditionallyReplaceLinkColor(mobileDrawer);
             loadTechnoseigineIfNeeded(mobileDrawer);
