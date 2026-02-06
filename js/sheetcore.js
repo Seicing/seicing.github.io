@@ -2,7 +2,7 @@
 
     /* ================= 配置 ================= */
 
-    const SPRITE_ROOT = "/https://data.seicing.com/seicingdepot/3fatcatpool/";
+    const SPRITE_ROOT = "https://data.seicing.com/seicingdepot/3fatcatpool/";
 
     /* ================= 缓存 ================= */
 
@@ -25,7 +25,7 @@
 
         const promise = (async () => {
             try {
-                const jsonUrl = dir + "科技树.json";
+                const jsonUrl = "https://seicing.com/js/sheet/科技树.json";
                 const res = await fetch(jsonUrl);
                 if (!res.ok) throw 0;
 
