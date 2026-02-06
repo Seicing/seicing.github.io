@@ -676,6 +676,12 @@ div {
 
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
+    .rightline {
+        float: right;
+        margin-left: 5px;
+        margin-bottom: 0px
+    }
+
     .container {
         width: 100%
     }
