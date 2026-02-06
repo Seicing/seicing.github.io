@@ -1797,7 +1797,7 @@ function showPic3(e, taitou) {
         zIndex: 9999,
         pointerEvents: "none",
         display: "block",
-        width: "400px",
+        width: "250px",
         background: "rgba(0,0,0,0.75)",
         color: "#fff",
         padding: "5px",
