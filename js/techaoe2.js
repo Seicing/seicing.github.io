@@ -1371,6 +1371,138 @@ function hiddenPic2() {
     CommonAllTech()
 }
 
+
+let ayanabi = {
+    "中国加成": [
+        "中国起始农民",
+        "中国城镇中心",
+        "中国便宜科技",
+        "中国火药移速",
+        "中国团队加成"
+    ],
+};
+
+
+function showPic3(e, taitou) {
+    var aasb = document.getElementById("Layer3");
+    if (!aasb) {
+        aasb = document.createElement("div");
+        aasb.id = "Layer3";
+        document.body.appendChild(aasb);
+    }
+
+    // 只处理 ayanabi
+    if (!ayanabi || !ayanabi[taitou]) return;
+
+    /* ===== 样式（独立 Layer3） ===== */
+    Object.assign(aasb.style, {
+        position: "fixed",
+        zIndex: 9999,
+        pointerEvents: "none",
+        display: "block",
+        width: "210px",
+        background: "rgba(0,0,0,0.75)",
+        color: "#fff",
+        padding: "5px",
+        borderRadius: "5px",
+        fontWeight: "normal",
+        whiteSpace: "normal",
+    });
+
+    /* ===== 内置：取最后一个 <br> 后的内容 ===== */
+    function getAfterLastBr(html) {
+        if (typeof html !== "string") return "";
+        return html.split("<br>").pop().trim();
+    }
+
+    /* ===== ayanabi 固定生成格式 ===== */
+    const list = ayanabi[taitou];
+    const civBonus = [];
+    const teamBonus = [];
+
+    list.forEach(key => {
+        if (key.includes("团队加成")) {
+            teamBonus.push(key);
+        } else {
+            civBonus.push(key);
+        }
+    });
+
+    let html = "";
+
+    // —— 文明加分 ——
+    if (civBonus.length > 0) {
+        html += `<b>文明加分</b><br><ul>`;
+        civBonus.forEach(key => {
+            if (ayanami[key]) {
+                html += `<li>${getAfterLastBr(ayanami[key])}</li>`;
+            }
+        });
+        html += `</ul>`;
+    }
+
+    // —— 团队加分（存在才生成） ——
+    if (teamBonus.length > 0) {
+        html += `<b>团队加分</b><br><ul>`;
+        teamBonus.forEach(key => {
+            if (ayanami[key]) {
+                html += `<li>${getAfterLastBr(ayanami[key])}</li>`;
+            }
+        });
+        html += `</ul>`;
+    }
+
+    aasb.innerHTML = html;
+
+    /* ===== 以下：保留 showPic1 的裁切定位逻辑 ===== */
+
+    let x = 0, y = 0;
+    if (e.touches && e.touches.length > 0) {
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+    } else {
+        x = e.clientX;
+        y = e.clientY;
+    }
+
+    const tooltipWidth = aasb.offsetWidth;
+    const tooltipHeight = aasb.offsetHeight;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    let top = y - tooltipHeight - 15;
+    if (top < 10) {
+        top = y + 25;
+    }
+
+    let left = x - tooltipWidth / 2;
+    const margin = 10;
+
+    if (left < margin) {
+        left = margin;
+    }
+    if (left + tooltipWidth > vw - margin) {
+        left = vw - tooltipWidth - margin;
+    }
+
+    aasb.style.top = top + "px";
+    aasb.style.left = left + "px";
+}
+
+
+function hiddenPic3() {
+    var aasb = document.getElementById("Layer3");
+    if (aasb) {
+        aasb.style.display = "none";
+        aasb.innerHTML = "";
+    }
+}
+
+
+
+
+
+
 // ========================================================
 // === 动态 .saic 网格布局 (基于容器宽度 & 自身宽度设定) ===
 // ========================================================
