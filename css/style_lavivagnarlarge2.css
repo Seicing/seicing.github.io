@@ -651,6 +651,7 @@ a {
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         overflow-y: auto;
+        overflow-x: hidden;
         box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
         padding: 15px;
         box-sizing: border-box;
@@ -976,6 +977,7 @@ a {
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         overflow-y: auto;
+        overflow-x: hidden;
         box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
         padding: 15px;
         box-sizing: border-box;
