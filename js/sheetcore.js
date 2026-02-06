@@ -7,6 +7,10 @@
             // 确保这个字符串是您 HTML 中 img src 路径的“目录片段”
             dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树/",
             jsonUrl: "https://seicing.com/js/sheet/科技树.json",
+        },
+        {
+            dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE2/EastAsia",
+            jsonUrl: "https://seicing.com/js/sheet/EastAsia.json",
         }
         // ... 其他配置
     ];
