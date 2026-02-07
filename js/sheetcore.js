@@ -3,26 +3,7 @@
     /* ================= 配置 (保持不变) ================= */
 
     const ATLAS_CONFIG_ARRAY = [
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment2/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment2.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment3/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment3.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment4/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment4.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment5/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment5.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment6/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment6.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment7/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment7.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipment8/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipment8.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmenta/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmenta.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmentb/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmentb.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmentc/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmentc.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmentd/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmentd.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmente/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmente.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmentf/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmentf.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmentg/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmentg.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmentx/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmentx.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/equipmenty/", jsonUrl: "https://seicing.com/js/sheet/dfclass_equipmenty.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/奥兹玛/", jsonUrl: "https://seicing.com/js/sheet/dfclass_奥兹玛.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/希洛克/", jsonUrl: "https://seicing.com/js/sheet/dfclass_希洛克.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/100/", jsonUrl: "https://seicing.com/js/sheet/dfclass_100.json" },
+        { dirMatch: "https://seicing.com/res/", jsonUrl: "https://seicing.com/js/sheet/dnficon.json" },
     ];
 
     const atlasCache = new Map();
