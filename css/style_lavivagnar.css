@@ -58,6 +58,16 @@ Released for free under a Creative Commons Attribution 2.5 License
     color: transparent;
 }
 
+.dnfmyth>.dnfmyth-text {
+    display: inline-block;
+    line-height: 1;
+    background: linear-gradient(to bottom, #F8C63D, #CC66E7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
 
 .dnfep {
     color: #FFB11B
