@@ -864,7 +864,7 @@ function AOE2_enableCivIconQuickJump(container) {
         // =====================================================
         link.dataset.aoe2CivLink = 'true';
 
-        let targetHref = `https://seicing.com/html/aoe2/1/${title}.html`;
+        let targetHref = `https://seicing.com/html/civ7/civ/${title}.html`;
         if (aoe2Hash) {
             targetHref += aoe2Hash;
         }
@@ -906,7 +906,7 @@ function updateAllCivLinkHashes() {
  */
 function AOE2_activateCurrentCivIcon(container) {
     const path = location.pathname;
-    if (!path.includes("/html/aoe2/")) return;
+    if (!path.includes("/html/civ7/")) return;
 
     // 如果没有提供容器，则默认为 document
     const scope = container || document;
