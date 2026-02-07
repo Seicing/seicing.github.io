@@ -1,14 +1,20 @@
 (function () {
+    /* ================= 0. 全局路径映射 (核心修复) ================= */
+    // 定义 https://seicing.com/js 和 https://seicing.com/res 对应的真实服务器地址
+    const PATH_MAP = {
+        "https://seicing.com/js/": "https://seicing.com/js/",
+        "https://seicing.com/res/": "https://data.seicing.com/seicingdepot/"
+    };
 
     /* ================= 1. 配置区域 (可扩展) ================= */
 
     const SPRITE_GROUPS = [
         // === 第 1 组：DNF 装备与图标 ===
         {
-            name: "DNF_Icon", // 标识名字(调试用)
+            name: "DNF_Icon",
             jsonUrl: "https://seicing.com/js/sheet/dnficon.json",
             sheetUrl: "https://seicing.com/res/dnficon.png",
-            rootMatch: "dfclass/", // URL中用于定位的特征字符串
+            rootMatch: "dfclass/",
             folders: [
                 "equipment", "equipment2", "equipment3", "equipment4",
                 "equipment5", "equipment6", "equipment7", "equipment8",
@@ -19,48 +25,52 @@
             ]
         },
 
-        // === 第 2 组：示例（比如科技树） ===
-        // 你可以随时复制上面的格式添加新组
-        /*
+        // === 第 2 组：DNF 技能图标 ===
         {
-            name: "TechTree",
-            jsonUrl: "https://seicing.com/js/sheet/techtree.json",
-            sheetUrl: "https://seicing.com/res/techtree.png",
-            rootMatch: "3fatcatpool/科技树/", 
-            folders: [ "image" ] // 如果根目录下直接是图片，这里可以留空或写个通配逻辑，具体看需求
+            name: "DNF_skillicon",
+            jsonUrl: "https://seicing.com/js/sheet/dnfskillicon.json",
+            sheetUrl: "https://seicing.com/res/dnfskillicon.png",
+            rootMatch: "dfclass/",
+            // 只要写顶层文件夹，内部如 "skillicon/鬼剑士/..." 也会自动匹配
+            folders: ["skillicon"]
         }
-        */
     ];
 
     /* ================= 2. 缓存管理 ================= */
 
-    // 存储已加载的 JSON 数据和 Image 对象
-    // Key: config.jsonUrl, Value: { frames: Object, image: ImageElement }
     const resourcesCache = new Map();
 
-    /* ================= 3. 核心匹配逻辑 ================= */
+    /* ================= 3. 辅助函数：路径解析 (新增) ================= */
 
     /**
-     * 遍历所有配置组，找到该图片所属的配置组
-     * @param {string} src - 图片 URL
-     * @returns {Object|null} - 返回 { config, key } 或 null
+     * 将配置中的 https://seicing.com/res/xxx 替换为真实的 URL
      */
+    function resolveUrl(path) {
+        if (!path) return "";
+
+        // 遍历映射表进行替换
+        for (const [prefix, domain] of Object.entries(PATH_MAP)) {
+            if (path.startsWith(prefix)) {
+                return path.replace(prefix, domain);
+            }
+        }
+        return path; // 如果没有特殊前缀，返回原路径
+    }
+
+    /* ================= 4. 核心匹配逻辑 ================= */
+
     function findMatchConfig(src) {
         if (!src) return null;
 
-        // 去除 URL 参数
         const cleanSrc = src.split("?")[0].split("#")[0];
 
         for (const config of SPRITE_GROUPS) {
-            // 1. 检查根路径特征
             const rootIndex = cleanSrc.indexOf(config.rootMatch);
             if (rootIndex === -1) continue;
 
-            // 2. 提取相对路径 (例如: "dfclass/希洛克/abc.png")
             const relativePath = cleanSrc.substring(rootIndex);
 
-            // 3. 检查是否在指定的文件夹列表中
-            // 构造检查路径: "dfclass/equipment/"
+            // 检查文件夹前缀 (支持多级目录)
             const isValidFolder = config.folders.some(folder => {
                 const prefix = config.rootMatch + folder + "/";
                 return relativePath.startsWith(prefix);
@@ -77,39 +87,39 @@
         return null;
     }
 
-    /* ================= 4. 资源加载器 ================= */
+    /* ================= 5. 资源加载器 (已修复) ================= */
 
-    /**
-     * 加载指定配置组的 JSON 和大图
-     * (如果已加载则直接返回缓存)
-     */
     function loadGroupResources(config) {
-        if (resourcesCache.has(config.jsonUrl)) {
-            return resourcesCache.get(config.jsonUrl);
+        // ★ 修复点：使用 resolveUrl 解析真实地址
+        // 这样 resourcesCache 的 Key 也会是真实地址，避免重复加载
+        const realJsonUrl = resolveUrl(config.jsonUrl);
+        const realSheetUrl = resolveUrl(config.sheetUrl);
+
+        if (resourcesCache.has(realJsonUrl)) {
+            return resourcesCache.get(realJsonUrl);
         }
 
         const promise = (async () => {
             try {
-                console.log(`[Sprite Loader] 正在加载组: ${config.name || "Unknown"}`);
+                console.log(`[Sprite Loader] 正在加载组: ${config.name}`);
 
-                // 1. 并行加载 JSON 和 图片 (如果想串行可改为 await fetch 后再 load image)
-                const jsonPromise = fetch(config.jsonUrl).then(r => {
+                // 1. 加载 JSON
+                const jsonPromise = fetch(realJsonUrl).then(r => {
                     if (!r.ok) throw new Error(`JSON ${r.status}`);
                     return r.json();
                 });
 
-                // 预加载大图对象
+                // 2. 加载图片
                 const imgPromise = new Promise((resolve, reject) => {
                     const img = new Image();
                     img.crossOrigin = "anonymous";
-                    img.src = config.sheetUrl;
+                    img.src = realSheetUrl; // 使用真实地址
                     img.onload = () => resolve(img);
-                    img.onerror = () => reject(new Error(`Image Load Failed: ${config.sheetUrl}`));
+                    img.onerror = () => reject(new Error(`Image Load Failed: ${realSheetUrl}`));
                 });
 
                 const [json, image] = await Promise.all([jsonPromise, imgPromise]);
 
-                // 如果 json 里没有 frames 字段，说明格式不对
                 if (!json.frames) throw new Error("JSON format error: no frames");
 
                 return {
@@ -123,11 +133,11 @@
             }
         })();
 
-        resourcesCache.set(config.jsonUrl, promise);
+        resourcesCache.set(realJsonUrl, promise);
         return promise;
     }
 
-    /* ================= 5. 切图逻辑 ================= */
+    /* ================= 6. 切图逻辑 ================= */
 
     async function cropSprite(imageObj, frameData) {
         if (!imageObj || !frameData) return null;
@@ -148,7 +158,7 @@
         });
     }
 
-    /* ================= 6. 保存功能 (可选) ================= */
+    /* ================= 7. 保存功能 ================= */
 
     let saveBtn = null;
     function removeSaveBtn() { if (saveBtn) { saveBtn.remove(); saveBtn = null; } }
@@ -159,7 +169,7 @@
 
         const img = e.target.closest("img");
         if (!img || !img.dataset.blobUrl) return;
-        if (img.closest("a")) return; // 如果图片本身是链接，不干扰
+        if (img.closest("a")) return;
 
         saveBtn = document.createElement("div");
         saveBtn.innerText = "保存原图";
@@ -176,13 +186,10 @@
         document.body.appendChild(saveBtn);
     });
 
-    /* ================= 7. 主流程 ================= */
+    /* ================= 8. 主流程 ================= */
 
     document.addEventListener("DOMContentLoaded", async () => {
         const allImages = document.querySelectorAll("img[data-src]");
-
-        // 临时存储需要处理的任务
-        // 结构: Map<ConfigObject, Array<{el, key, rawSrc}>>
         const tasksMap = new Map();
 
         // 1. 扫描并归类
@@ -191,7 +198,6 @@
             const match = findMatchConfig(rawSrc);
 
             if (match) {
-                // 这是一个需要处理的雪碧图
                 if (!tasksMap.has(match.config)) {
                     tasksMap.set(match.config, []);
                 }
@@ -201,27 +207,21 @@
                     rawSrc: rawSrc
                 });
             } else {
-                // 不匹配任何规则，普通懒加载
                 img.src = rawSrc;
             }
         }
 
-        // 2. 如果没有任何匹配的任务，退出
         if (tasksMap.size === 0) return;
 
-        // 3. 处理每个配置组 (并行处理不同组)
+        // 2. 处理每个配置组
         const groupPromises = Array.from(tasksMap.entries()).map(async ([config, items]) => {
-
-            // 加载该组的资源
             const resources = await loadGroupResources(config);
 
             if (!resources) {
-                // 加载失败，回退
                 items.forEach(item => item.el.src = item.rawSrc);
                 return;
             }
 
-            // 处理该组下的所有图片
             for (const item of items) {
                 const frameData = resources.frames[item.key];
 
@@ -235,11 +235,9 @@
                     const blobUrl = await cropSprite(resources.image, frameData);
                     item.el.src = blobUrl;
 
-                    // 标记数据供下载用
                     item.el.dataset.blobUrl = blobUrl;
                     item.el.dataset.spriteKey = item.key;
 
-                    // 样式修正
                     item.el.style.objectFit = "";
                     if (item.el.getAttribute("width")) item.el.style.width = item.el.getAttribute("width") + "px";
                     if (item.el.getAttribute("height")) item.el.style.height = item.el.getAttribute("height") + "px";
