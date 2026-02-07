@@ -787,3 +787,168 @@ function hiddenPic2() {
     CommonAllTech()
 }
 
+
+
+
+
+
+
+function AOE2_applyUnitCivDisable(funcName) {
+    let tries = 0;
+    const MAX_TRIES = 50; // 最多等 ~2.5 秒
+
+    function tryApply() {
+        tries++;
+
+        // 1. 规则函数是否已存在
+        const fn = window[funcName];
+        if (typeof fn !== "function") {
+            if (tries < MAX_TRIES) {
+                return setTimeout(tryApply, 50);
+            }
+            return;
+        }
+
+        // 2. 解析函数体
+        const src = fn.toString();
+        const re = /getElementById\("([A-Za-z]+)2"\)\.classList\.add\("aoeTechIconOff"\)/g;
+
+        let m;
+        let applied = false;
+
+        while ((m = re.exec(src))) {
+            const civ = m[1];
+            const el = document.getElementById(civ);
+
+            // 3. DOM 还没进来，继续等
+            if (!el) {
+                if (tries < MAX_TRIES) {
+                    return setTimeout(tryApply, 50);
+                }
+                return;
+            }
+
+            el.classList.add("aoeTechIconOff");
+
+            applied = true;
+        }
+
+        // 如果这次什么都没应用，也不用再等
+        if (!applied) return;
+    }
+
+    // 立即尝试一次
+    tryApply();
+}
+
+/**
+ * [已改造 v3] 为指定容器内的文明图标添加快速跳转链接
+ * - 新增：会将当前页面的锚点(#hash)传递到新生成的链接中
+ * - 新增：为生成的链接添加 'data-aoe2-civ-link' 标记，以便后续更新
+ * @param {HTMLElement} [container=document] 要操作的父容器，默认为整个文档
+ */
+function AOE2_enableCivIconQuickJump(container) {
+    const scope = container || document;
+    const aoe2Hash = window.location.hash;
+
+    scope.querySelectorAll('img[id$="2"][title]').forEach(img => {
+        if (img.closest('a')) return;
+
+        const title = img.getAttribute("title");
+        if (!title) return;
+
+        const link = document.createElement("a");
+
+        // =====================================================
+        // === 【核心修改 1】 在这里添加一个自定义数据属性作为标记 ===
+        // =====================================================
+        link.dataset.aoe2CivLink = 'true';
+
+        let targetHref = `https://seicing.com/html/aoe2/1/${title}.html`;
+        if (aoe2Hash) {
+            targetHref += aoe2Hash;
+        }
+        link.href = targetHref;
+
+        link.style.color = "#0010ff";
+        link.style.display = "inline-block";
+
+        img.parentNode.insertBefore(link, img);
+        link.appendChild(img);
+    });
+}
+
+/**
+ * [新增] 一个独立的函数，专门负责更新所有文明链接的锚点
+ */
+function updateAllCivLinkHashes() {
+    // 1. 获取最新的锚点
+    const currentHash = window.location.hash;
+
+    // 2. 找到所有被我们标记过的链接
+    const civLinks = document.querySelectorAll('a[data-aoe2-civ-link="true"]');
+
+    civLinks.forEach(link => {
+        // 3. 构建新的 href
+        // 先移除旧的锚点（如果有的话）
+        const baseHref = link.href.split('#')[0];
+
+        // 4. 附加上新的锚点（如果新锚点存在）
+        link.href = baseHref + currentHash;
+    });
+}
+
+
+
+/**
+ * [已改造] 在指定容器内高亮当前页面的文明图标
+ * @param {HTMLElement} [container=document] 要操作的父容器，默认为整个文档
+ */
+function AOE2_activateCurrentCivIcon(container) {
+    const path = location.pathname;
+    if (!path.includes("/html/aoe2/")) return;
+
+    // 如果没有提供容器，则默认为 document
+    const scope = container || document;
+
+    const fileName = path.split("/").pop();
+    if (!fileName) return;
+
+    const civName = decodeURIComponent(
+        fileName.replace(/\.html$/i, "")
+    ).trim();
+
+    // 在指定的容器(scope)内查找 technoseigine
+    const techno = scope.querySelector("#technoseigine");
+    if (!techno) { // 修正了变量名 technoseigine -> techno
+        // 在移动端克隆后，techno 容器肯定存在，如果在这里找不到，说明逻辑有问题。
+        // console.warn("在指定容器内未找到 #technoseigine 元素");
+        return;
+    }
+
+    let targetImg = null;
+
+    // 在 techno 容器内查找所有图标
+    techno.querySelectorAll("img[title]").forEach(img => {
+        img.classList.add("civ-active936");
+
+        const title = img.getAttribute("title").trim();
+        if (title.toLowerCase() === civName.toLowerCase()) { // 增加 toLowerCase() 以增强匹配鲁棒性
+            targetImg = img;
+        }
+    });
+
+    if (!targetImg) {
+        console.warn("在当前容器内未找到文明图标：", civName);
+        return;
+    }
+
+    // 清理旧激活（仅在当前 techno 容器内）
+    techno.querySelectorAll(".civ-active937").forEach(el => {
+        el.classList.remove("civ-active937");
+    });
+
+    // 激活目标
+    targetImg.classList.remove("civ-active936");
+    targetImg.classList.add("civ-active937");
+}
