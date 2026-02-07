@@ -2414,5 +2414,34 @@
 </body>
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
+<script>
+        (function () {
+            document.querySelectorAll('td.dnfmyth').forEach(td => {
+
+                // 如果已经处理过，跳过（防止重复执行）
+                if (td.querySelector('.dnfmyth-text')) return;
+
+                // 收集纯文本节点
+                const textNodes = [];
+                td.childNodes.forEach(node => {
+                    if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+                        textNodes.push(node);
+                    }
+                });
+
+                // 没有文字直接跳过（你那个空 td）
+                if (textNodes.length === 0) return;
+
+                // 创建包裹 span
+                const span = document.createElement('span');
+                span.className = 'dnfmyth-text';
+
+                // 把文本节点移进去
+                textNodes.forEach(node => span.appendChild(node));
+
+                td.appendChild(span);
+            });
+        })(); 
+</script>
 
 </html>
