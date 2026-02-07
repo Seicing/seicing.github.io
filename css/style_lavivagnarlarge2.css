@@ -857,6 +857,17 @@ a {
 /* === (这是一个包含所有必要样式的独立模块) === */
 /* ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000000;
+        font-size: 10pt;
+        /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
+        color: #4D4D4D;
+    }
+
+
     .container {
         width: 100%
     }
