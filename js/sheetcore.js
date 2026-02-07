@@ -134,13 +134,13 @@
     }
 
     function loadSheetImage(src) {
-
         if (sheetImageCache.has(src)) {
             return sheetImageCache.get(src);
         }
 
         const promise = new Promise((resolve, reject) => {
             const img = new Image();
+            img.crossOrigin = "anonymous"; // ★ 新增
             img.onload = () => resolve(img);
             img.onerror = reject;
             img.src = src;
