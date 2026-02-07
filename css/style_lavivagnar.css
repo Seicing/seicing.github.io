@@ -976,6 +976,23 @@ div {
 /* === (这是一个包含所有必要样式的独立模块) === */
 /* ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #wrapper {
+        background: #000000;
+        background-size: cover cover;
+        z-index: -20;
+    }
+
+    #wrapper2 {
+        background: #000000;
+        background-size: cover cover;
+    }
+
+    #wrapper3 {
+        background: #000000;
+        background-size: cover cover;
+    }
+
+
     .container {
         width: 100%
     }
@@ -1028,11 +1045,11 @@ div {
     }
 
     #wrapper {
-        background: #ffffff !important;
+        background: #000000 !important;
     }
 
     html {
-        background: #e2ddca !important;
+        background: #000000 !important;
     }
 
     /* --- 第一部分：平板布局调整 --- */

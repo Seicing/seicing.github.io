@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="height:100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
     <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
     <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
-    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+    <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>狼</title>
 <link href="https://seicing.com/css/table_dnfclassaom.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
@@ -19,25 +19,15 @@
 </style>
 </head>
 
-<body id='scroll-2'>
+<body style="height:100%;" id='scroll-2'>
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="width:1280px ; margin:auto">
-        <div id="wrapper2">
-            <div id="header" class="container">
-                <div id="logo">
-                    <H1>
-                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
-                    </H1>
-                </div>
-            </div>
-            <div id="page">
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
                 <div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#"><b><!--
-【标签：神话单位】
---></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp250">
@@ -233,11 +223,14 @@
     </table>
 </div>
 
-</div>
+
+                        </div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:relative; left:-20px">
-                    <b>
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        <b>
     <!--内部标记-->
     <a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a>
     <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a>
@@ -248,6 +241,7 @@
 <a href="#sp">加成</a><br>
 <a href="#relk">历史</a><br>
 <a href="#oth">杂项</a><br>
+                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -255,12 +249,13 @@
 <a href="https://seicing.com/html/aoe2/index-aoemunits.html?civ=jpn"><b>回到首页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
-
             </div>
 
         </div>
     </div>
+
 </body>
+
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/techm.js" onload="aoetechPoeRush()"></script>
