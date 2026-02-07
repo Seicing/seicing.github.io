@@ -23,8 +23,6 @@
         { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/奥兹玛/", jsonUrl: "https://seicing.com/js/sheet/dfclass_奥兹玛.json" },
         { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/希洛克/", jsonUrl: "https://seicing.com/js/sheet/dfclass_希洛克.json" },
         { dirMatch: "https://data.seicing.com/seicingdepot/dfclass/100/", jsonUrl: "https://seicing.com/js/sheet/dfclass_100.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树/", jsonUrl: "https://seicing.com/js/sheet/科技树.json" },
-        { dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE2/EastAsia/", jsonUrl: "https://seicing.com/js/sheet/aoe2_Architecture_EastAsia.json" },
     ];
 
     const atlasCache = new Map();
