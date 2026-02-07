@@ -1,66 +1,61 @@
 (function () {
 
+    /* ================= 1. 配置区域 ================= */
+
     const SPRITE_GROUPS = [
         {
             jsonUrl: "https://seicing.com/js/sheet/dnficon.json",
+            sheetUrl: "https://seicing.com/res/dnficon.png",
             root: "https://data.seicing.com/seicingdepot/dfclass/",
             folders: [
                 "equipment", "equipment2", "equipment3", "equipment4",
                 "equipment5", "equipment6", "equipment7", "equipment8",
                 "equipmenta", "equipmentb", "equipmentc", "equipmentd",
                 "equipmente", "equipmentf", "equipmentg", "equipmentx",
-                "equipmenty", "奥兹玛", "希洛克", "100",
+                "equipmenty", "奥兹玛", "希洛克", "100"
             ]
         },
 
+        // === 第 2 组：其他示例 ===
         {
-            jsonUrl: "https://seicing.com/js/sheet/测试用.json",
+            jsonUrl: "https://seicing.com/js/sheet/dnfskillicon测试.json",
+            // sheetUrl: "https://seicing.com/res/skillicon.png", // 如果需要指定路径就写
             root: "https://data.seicing.com/seicingdepot/dfclass/",
-            folders: [
-                "测试用",
-            ]
-        },
-    ];
-
-    /**
-     * 独立的单项配置
-     * 如果有的图集结构很简单，不想写在上面组里，也可以直接写在这里
-     */
-    const STANDALONE_CONFIGS = [
-        {
-            dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/测试用2/",
-            jsonUrl: "https://seicing.com/js/sheet/测试用2.json",
+            folders: ["skillicon测试"]
         }
     ];
 
-    /* ================= 2. 自动生成配置数组 ================= */
+    /* ================= 2. 自动生成配置 ================= */
 
-    // 将 SPRITE_GROUPS 展平为最终的配置格式
     const GENERATED_CONFIGS = SPRITE_GROUPS.flatMap(group => {
         return group.folders.map(folder => ({
-            dirMatch: group.root + folder + "/", // 拼接: https://data.seicing.com/seicingdepot/dfclass/ + skillicon + /
-            jsonUrl: group.jsonUrl
+            dirMatch: group.root + folder + "/",
+            jsonUrl: group.jsonUrl,
+            sheetUrl: group.sheetUrl // 传递大图路径配置
         }));
     });
 
-    // 合并所有配置
     const ATLAS_CONFIG_ARRAY = [
         ...GENERATED_CONFIGS,
-        ...STANDALONE_CONFIGS
+        // 单独配置项
+        {
+            dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树测试/",
+            jsonUrl: "https://seicing.com/js/sheet/科技树测试.json"
+        }
     ];
-
-    /* ================= 3. 缓存与辅助函数 ================= */
 
     const atlasCache = new Map();
     const sheetImageCache = new Map();
+
+    /* ================= 3. 辅助函数 ================= */
 
     function getFileName(path) {
         return path.split("/").pop().split("?")[0].split("#")[0];
     }
 
-    // 提取 Key：去除 https://seicing.com/res/ 前缀
     function getSpriteKey(src) {
         const cleanSrc = src.split("?")[0].split("#")[0];
+        // 严格移除 https://seicing.com/res/ 前缀，完全匹配 JSON 里的 Key 格式
         if (cleanSrc.indexOf("https://seicing.com/res/") === 0) {
             return cleanSrc.substring(5);
         }
@@ -71,7 +66,7 @@
         return ATLAS_CONFIG_ARRAY.find(cfg => src.includes(cfg.dirMatch)) || null;
     }
 
-    /* ================= 4. 资源加载逻辑 ================= */
+    /* ================= 4. 资源加载 (核心修正) ================= */
 
     async function loadAtlas(config) {
         if (atlasCache.has(config.dirMatch)) return atlasCache.get(config.dirMatch);
@@ -82,25 +77,22 @@
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const json = await res.json();
 
-                // 拼接大图路径 (config.dirMatch 是包含文件夹的，这里需要注意)
-                // ★ 注意：这里有一个潜在的路径拼接问题需要修正
-                // 通常 JSON 里的 meta.image 是文件名 (例如 "sheet.png")
-                // 但 config.dirMatch 是 "https://data.seicing.com/seicingdepot/dfclass/skillicon/"
-                // 如果图集大图实际上放在 "https://data.seicing.com/seicingdepot/dfclass/skillicon/sheet.png" 那是对的。
-                // 但如果大图是跟 JSON 在一起的？或者有固定的路径？
+                let finalSheetUrl;
 
-                // ★ 修正逻辑：
-                // 1. 如果 JSON 和大图在一起，我们应该用 jsonUrl 的目录。
-                // 2. 但你的原代码逻辑是用 config.dirMatch + json.meta.image。
-                //    这意味着大图必须存在于 data-src 指向的那个“假路径”里。
-                //    既然你在做假路径映射，说明这个路径下的资源应该能被浏览器访问到（或者被拦截）。
-                //    我们暂时保持原逻辑，如果图片加载 404，请告知我调整这里。
-
-                const sheetUrl = config.dirMatch + json.meta.image;
+                // 优先使用配置里写死的 sheetUrl (例如 https://seicing.com/res/dnficon.png)
+                if (config.sheetUrl) {
+                    finalSheetUrl = config.sheetUrl;
+                }
+                // 否则默认认为图片在 JSON 文件的同级目录下
+                else {
+                    // 获取 JSON 的目录: "https://seicing.com/js/sheet/dnficon.json" -> "https://seicing.com/js/sheet/"
+                    const jsonDir = config.jsonUrl.substring(0, config.jsonUrl.lastIndexOf("/") + 1);
+                    finalSheetUrl = jsonDir + json.meta.image;
+                }
 
                 return {
                     frames: json.frames,
-                    sheetUrl: sheetUrl
+                    sheetUrl: finalSheetUrl
                 };
             } catch (e) {
                 console.error("JSON 加载失败:", config.jsonUrl, e);
@@ -127,7 +119,7 @@
         return promise;
     }
 
-    /* ================= 5. 图片切割 ================= */
+    /* ================= 5. Canvas 切图 ================= */
 
     async function cropSpriteToBlob(sheetUrl, x, y, w, h) {
         const image = await loadSheetImage(sheetUrl);
@@ -135,6 +127,8 @@
         canvas.width = w;
         canvas.height = h;
         const ctx = canvas.getContext("2d");
+
+        // 使用 JSON 里的 x, y, w, h 进行精确裁剪
         ctx.drawImage(image, x, y, w, h, 0, 0, w, h);
 
         return new Promise(resolve => {
@@ -144,7 +138,7 @@
         });
     }
 
-    /* ================= 6. 交互逻辑 ================= */
+    /* ================= 6. 交互：保存按钮 ================= */
 
     let saveBtn = null;
 
@@ -203,8 +197,6 @@
     /* ================= 7. 主流程 ================= */
 
     document.addEventListener("DOMContentLoaded", async () => {
-
-        // 预加载所有配置里的 JSON
         await Promise.all(ATLAS_CONFIG_ARRAY.map(cfg => loadAtlas(cfg)));
 
         const imgs = document.querySelectorAll("img[data-src]");
@@ -225,12 +217,13 @@
                 continue;
             }
 
-            // Key 匹配逻辑
+            // 1. 提取 Key: 去掉 https://seicing.com/res/
             const spriteKey = getSpriteKey(originalSrc);
+            // 2. 匹配 JSON
             const frameData = atlas.frames[spriteKey];
 
             if (!frameData) {
-                console.warn("[Sprite] 找不到 Key:", spriteKey);
+                console.warn("[Sprite] Key not found:", spriteKey);
                 img.src = originalSrc;
                 continue;
             }
@@ -238,6 +231,7 @@
             const { x, y, w, h } = frameData.frame;
 
             try {
+                // 3. 使用定位到的大图进行切割
                 const blobUrl = await cropSpriteToBlob(atlas.sheetUrl, x, y, w, h);
                 img.src = blobUrl;
                 img.dataset.blobUrl = blobUrl;
@@ -249,7 +243,7 @@
                 if (img.getAttribute("height")) img.style.height = img.getAttribute("height") + "px";
 
             } catch (err) {
-                console.error("[Sprite] 切割失败:", err);
+                console.error("[Sprite] Cut error:", err);
                 img.src = originalSrc;
             }
         }
