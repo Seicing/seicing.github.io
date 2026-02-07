@@ -25,15 +25,21 @@
             ]
         },
 
-        // === 第 2 组：DNF 技能图标 ===
         {
             name: "DNF_skillicon",
             jsonUrl: "https://seicing.com/js/sheet/dnfskillicon.json",
             sheetUrl: "https://seicing.com/res/dnfskillicon.png",
             rootMatch: "dfclass/",
-            // 只要写顶层文件夹，内部如 "skillicon/鬼剑士/..." 也会自动匹配
             folders: ["skillicon"]
-        }
+        },
+
+        {
+            name: "DNF_skillicon_new",
+            jsonUrl: "https://seicing.com/js/sheet/dnfskilliconnew.json",
+            sheetUrl: "https://seicing.com/res/dnfskilliconnew.png",
+            rootMatch: "dfclass/",
+            folders: ["characters"]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
