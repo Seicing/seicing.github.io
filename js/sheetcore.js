@@ -3,6 +3,7 @@
     /* ================= 1. 配置区域 ================= */
 
     const SPRITE_GROUPS = [
+        // === 第 1 组：DNF 装备与图标 ===
         {
             jsonUrl: "https://seicing.com/js/sheet/dnficon.json",
             sheetUrl: "https://seicing.com/res/dnficon.png",
@@ -12,35 +13,41 @@
                 "equipment5", "equipment6", "equipment7", "equipment8",
                 "equipmenta", "equipmentb", "equipmentc", "equipmentd",
                 "equipmente", "equipmentf", "equipmentg", "equipmentx",
-                "equipmenty", "奥兹玛", "希洛克", "100"
+                "equipmenty",
+                "奥兹玛", "希洛克", "100"
             ]
         },
 
-        // === 第 2 组：其他示例 ===
-        {
-            jsonUrl: "https://seicing.com/js/sheet/dnfskillicon测试.json",
-            // sheetUrl: "https://seicing.com/res/skillicon.png", // 如果需要指定路径就写
-            root: "https://data.seicing.com/seicingdepot/dfclass/",
-            folders: ["skillicon测试"]
-        }
     ];
 
     /* ================= 2. 自动生成配置 ================= */
 
     const GENERATED_CONFIGS = SPRITE_GROUPS.flatMap(group => {
-        return group.folders.map(folder => ({
-            dirMatch: group.root + folder + "/",
-            jsonUrl: group.jsonUrl,
-            sheetUrl: group.sheetUrl // 传递大图路径配置
-        }));
+        return group.folders.map(folder => {
+            // 原始配置路径: https://data.seicing.com/seicingdepot/dfclass/希洛克/
+            const fullDirMatch = group.root + folder + "/";
+
+            // ★ 核心修复：生成一个“特征路径”用于匹配
+            // 去掉 "https://seicing.com/res/" 前缀 -> "dfclass/希洛克/"
+            // 无论域名怎么变，URL 里一定包含 "dfclass/希洛克/"
+            const matchKey = fullDirMatch.replace("https://seicing.com/res/", "");
+
+            return {
+                dirMatch: fullDirMatch, // 原始配置保留
+                matchKey: matchKey,     // 新增：用于在 URL 中查找的特征串
+                jsonUrl: group.jsonUrl,
+                sheetUrl: group.sheetUrl
+            };
+        });
     });
 
     const ATLAS_CONFIG_ARRAY = [
         ...GENERATED_CONFIGS,
-        // 单独配置项
+        // 单独配置项也需要遵循这个逻辑
         {
-            dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树测试/",
-            jsonUrl: "https://seicing.com/js/sheet/科技树测试.json"
+            dirMatch: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树/",
+            matchKey: "3fatcatpool/科技树/", // 手动指定特征路径
+            jsonUrl: "https://seicing.com/js/sheet/科技树.json"
         }
     ];
 
@@ -53,20 +60,40 @@
         return path.split("/").pop().split("?")[0].split("#")[0];
     }
 
-    function getSpriteKey(src) {
+    /**
+     * ★ 核心修复：更健壮的 Key 提取逻辑
+     * 不再傻傻地切掉前5个字符，而是根据配置里的 matchKey 来定位
+     * 
+     * @param {string} src - 图片完整地址 (可能是 https://data.seicing.com/.../dfclass/...)
+     * @param {string} matchKey - 特征路径 (例如 "dfclass/希洛克/")
+     */
+    function getSpriteKey(src, matchKey) {
+        // 清理 URL 参数
         const cleanSrc = src.split("?")[0].split("#")[0];
-        // 严格移除 https://seicing.com/res/ 前缀，完全匹配 JSON 里的 Key 格式
-        if (cleanSrc.indexOf("https://seicing.com/res/") === 0) {
-            return cleanSrc.substring(5);
+
+        // 在 URL 里查找特征路径的位置
+        // 例如：在 "https://.../dfclass/希洛克/img.png" 里找 "dfclass/希洛克/"
+        const index = cleanSrc.indexOf(matchKey);
+
+        if (index !== -1) {
+            // 从特征路径开始截取，正好就是 JSON 里的 Key
+            // 结果: "dfclass/希洛克/img.png"
+            return cleanSrc.substring(index);
         }
+
+        // 兜底：如果找不到特征路径，说明这个 config 匹配有问题，返回原串
         return cleanSrc;
     }
 
+    /**
+     * ★ 核心修复：更健壮的 Config 查找逻辑
+     * 不再检测 src.includes("https://seicing.com/res/...")，而是检测 matchKey
+     */
     function findAtlasConfig(src) {
-        return ATLAS_CONFIG_ARRAY.find(cfg => src.includes(cfg.dirMatch)) || null;
+        return ATLAS_CONFIG_ARRAY.find(cfg => src.includes(cfg.matchKey)) || null;
     }
 
-    /* ================= 4. 资源加载 (核心修正) ================= */
+    /* ================= 4. 资源加载 ================= */
 
     async function loadAtlas(config) {
         if (atlasCache.has(config.dirMatch)) return atlasCache.get(config.dirMatch);
@@ -78,14 +105,9 @@
                 const json = await res.json();
 
                 let finalSheetUrl;
-
-                // 优先使用配置里写死的 sheetUrl (例如 https://seicing.com/res/dnficon.png)
                 if (config.sheetUrl) {
                     finalSheetUrl = config.sheetUrl;
-                }
-                // 否则默认认为图片在 JSON 文件的同级目录下
-                else {
-                    // 获取 JSON 的目录: "https://seicing.com/js/sheet/dnficon.json" -> "https://seicing.com/js/sheet/"
+                } else {
                     const jsonDir = config.jsonUrl.substring(0, config.jsonUrl.lastIndexOf("/") + 1);
                     finalSheetUrl = jsonDir + json.meta.image;
                 }
@@ -128,7 +150,6 @@
         canvas.height = h;
         const ctx = canvas.getContext("2d");
 
-        // 使用 JSON 里的 x, y, w, h 进行精确裁剪
         ctx.drawImage(image, x, y, w, h, 0, 0, w, h);
 
         return new Promise(resolve => {
@@ -138,7 +159,7 @@
         });
     }
 
-    /* ================= 6. 交互：保存按钮 ================= */
+    /* ================= 6. 交互逻辑 ================= */
 
     let saveBtn = null;
 
@@ -186,8 +207,9 @@
 
         saveBtn.addEventListener("click", (evt) => {
             evt.stopPropagation();
-            const downloadName = getFileName(img.dataset.spriteKey || "image.png");
-            triggerDownload(img.dataset.blobUrl, downloadName);
+            // 如果有 spriteKey 就用它提取文件名，否则用默认
+            const key = img.dataset.spriteKey || "image.png";
+            triggerDownload(img.dataset.blobUrl, getFileName(key));
             removeSaveBtn();
         });
 
@@ -197,6 +219,7 @@
     /* ================= 7. 主流程 ================= */
 
     document.addEventListener("DOMContentLoaded", async () => {
+        // 预加载配置列表里的所有 JSON
         await Promise.all(ATLAS_CONFIG_ARRAY.map(cfg => loadAtlas(cfg)));
 
         const imgs = document.querySelectorAll("img[data-src]");
@@ -205,8 +228,10 @@
             const originalSrc = img.dataset.src;
             if (!originalSrc) continue;
 
+            // 1. 查找匹配的配置 (使用 matchKey 而不是 https://seicing.com/res 路径)
             const config = findAtlasConfig(originalSrc);
             if (!config) {
+                // 没匹配到配置，说明是普通图片
                 img.src = originalSrc;
                 continue;
             }
@@ -217,13 +242,16 @@
                 continue;
             }
 
-            // 1. 提取 Key: 去掉 https://seicing.com/res/
-            const spriteKey = getSpriteKey(originalSrc);
-            // 2. 匹配 JSON
+            // 2. ★ 提取 Key (传入 config.matchKey 进行精确定位)
+            // 原链接: https://data.seicing.com/depot/dfclass/希洛克/image.png
+            // matchKey: dfclass/希洛克/
+            // 结果 Key: dfclass/希洛克/image.png (完美匹配 JSON)
+            const spriteKey = getSpriteKey(originalSrc, config.matchKey);
+
             const frameData = atlas.frames[spriteKey];
 
             if (!frameData) {
-                console.warn("[Sprite] Key not found:", spriteKey);
+                console.warn("[Sprite] JSON里找不到Key:", spriteKey);
                 img.src = originalSrc;
                 continue;
             }
@@ -231,11 +259,12 @@
             const { x, y, w, h } = frameData.frame;
 
             try {
-                // 3. 使用定位到的大图进行切割
                 const blobUrl = await cropSpriteToBlob(atlas.sheetUrl, x, y, w, h);
                 img.src = blobUrl;
+
                 img.dataset.blobUrl = blobUrl;
-                img.dataset.spriteKey = spriteKey;
+                img.dataset.spriteKey = spriteKey; // 存下来用于下载时命名
+
                 img.style.objectFit = "";
                 img.style.objectPosition = "";
 
@@ -243,7 +272,7 @@
                 if (img.getAttribute("height")) img.style.height = img.getAttribute("height") + "px";
 
             } catch (err) {
-                console.error("[Sprite] Cut error:", err);
+                console.error("[Sprite] 切图失败:", err);
                 img.src = originalSrc;
             }
         }
