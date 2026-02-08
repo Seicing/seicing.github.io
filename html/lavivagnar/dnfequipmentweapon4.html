@@ -2076,5 +2076,13 @@
             });
         })(); 
 </script>
+<script>
+    $(window).on('load', function () {
+        // 页面所有资源（包括 skPlayer）加载完成后
+        if (typeof conditionallyManageLayout === 'function') {
+            conditionallyManageLayout();
+        }
+    });
+</script>
 
 </html>
