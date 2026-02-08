@@ -654,6 +654,10 @@ div {
 
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
+    #lavidash {
+        width: 100%;
+    }
+
     .rightline {
         float: right;
         margin-left: 5px;
@@ -976,6 +980,10 @@ div {
 /* === (这是一个包含所有必要样式的独立模块) === */
 /* ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #lavidash {
+        width: 100%;
+    }
+
     #wrapper {
         background: #000000;
         background-size: cover cover;
