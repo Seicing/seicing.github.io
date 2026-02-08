@@ -1075,7 +1075,7 @@ div {
     /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
     /* 因为这个区间也要使用抽屉，所以必须包含完整的抽屉样式 */
     #sidebar-toggle-button {
-        display: none !important;
+        display: block !important;
         position: fixed;
         top: 15px;
         left: auto;
