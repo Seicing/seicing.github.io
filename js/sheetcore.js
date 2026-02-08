@@ -48,6 +48,14 @@
             rootMatch: "3fatcatpool/",
             folders: ["lol"]
         },
+
+        {
+            name: "magiccard",
+            jsonUrl: "https://seicing.com/js/sheet/magiccard.json",
+            sheetUrl: "https://seicing.com/res/magiccard.jpg",
+            rootMatch: "3fatcatpool/",
+            folders: ["magiccard"]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
