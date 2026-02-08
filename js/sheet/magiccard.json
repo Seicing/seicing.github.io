@@ -4012,8 +4012,8 @@
   "meta": {
     "app": "http://free-tex-packer.com",
     "version": "0.6.7",
-    "image": "magiccard.jpg",
-    "format": "RGB888",
+    "image": "magiccard.png",
+    "format": "RGBA8888",
     "size": {
       "w": 2048,
       "h": 2048

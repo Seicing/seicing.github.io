@@ -52,7 +52,7 @@
         {
             name: "magiccard",
             jsonUrl: "https://seicing.com/js/sheet/magiccard.json",
-            sheetUrl: "https://seicing.com/res/magiccard.jpg",
+            sheetUrl: "https://seicing.com/res/magiccard.png",
             rootMatch: "3fatcatpool/",
             folders: ["magiccard"]
         },
