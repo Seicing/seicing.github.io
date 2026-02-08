@@ -96,6 +96,14 @@
             rootMatch: "3fatcatpool/",
             folders: ["magiccard"]
         },
+
+        {
+            name: "lang2",
+            jsonUrl: "https://seicing.com/js/sheet/lang2.json",
+            sheetUrl: "https://seicing.com/res/lang2.png",
+            rootMatch: "2fatcatpool/",
+            folders: ["lang2"]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
