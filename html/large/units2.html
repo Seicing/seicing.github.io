@@ -659,16 +659,23 @@
                 }
                 // =======================================================================
 
-                $img.one('load', function () { dfd.resolve(); })
+                $img.one('load', function () {
+                    syncImageScales(); // 每张图片加载完成就同步缩放
+                    dfd.resolve();
+                })
                     .attr('src', newSrc)
                     .one('error', function () {
-                        $(this).one('load', function () { dfd.resolve(); })
+                        $(this).one('load', function () {
+                            syncImageScales();
+                            dfd.resolve();
+                        })
                             .attr('src', originalSrc)
                             .one('error', function () {
                                 $(this).css('visibility', 'hidden');
                                 dfd.resolve();
                             });
                     });
+
             });
 
             $.when.apply($, imageLoadPromises).done(function () {
