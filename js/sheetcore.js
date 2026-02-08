@@ -40,6 +40,14 @@
             rootMatch: "dfclass/",
             folders: ["characters"]
         },
+
+        {
+            name: "lolsprite",
+            jsonUrl: "https://seicing.com/js/sheet/lolsprite.json",
+            sheetUrl: "https://seicing.com/res/lolsprite.jpg",
+            rootMatch: "3fatcatpool/",
+            folders: ["lol"]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
