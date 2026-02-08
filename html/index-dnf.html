@@ -12,11 +12,17 @@
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript">
+<script>
     $(document).ready(function () {
-        $('#sidebar').load('https://seicing.com/js/list/dic.html');
-    })
+        $('#sidebar').load('https://seicing.com/js/list/dic.html', function () {
+            // 确保内容加载完毕后再管理布局
+            if (typeof conditionallyManageLayout === 'function') {
+                conditionallyManageLayout();
+            }
+        });
+    });
 </script>
+
 </head>
 
 <body id='scroll-2'>
@@ -42,8 +48,7 @@
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
-                    <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
-
+                    
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -59,31 +64,31 @@
 </body>
 
 <script>
-        (function () {
-            if (typeof conditionallyManageLayout !== 'function') return;
+    (function () {
+        if (typeof conditionallyManageLayout !== 'function') return;
 
-            let done = false;
+        let done = false;
 
-            function refreshLayoutOnce() {
-                if (done) return;
-                done = true;
-                conditionallyManageLayout();
-                observer.disconnect();
-            }
+        function refreshLayoutOnce() {
+            if (done) return;
+            done = true;
+            conditionallyManageLayout();
+            observer.disconnect();
+        }
 
-            // 监听 DOM 变化（list / sprite / player 插入）
-            const observer = new MutationObserver(() => {
-                refreshLayoutOnce();
-            });
+        // 监听 DOM 变化（list / sprite / player 插入）
+        const observer = new MutationObserver(() => {
+            refreshLayoutOnce();
+        });
 
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true
-            });
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
 
-            // 兜底：即使监听不到，也强制在 4 秒后跑一次
-            setTimeout(refreshLayoutOnce, 4000);
-        })();
+        // 兜底：即使监听不到，也强制在 4 秒后跑一次
+        setTimeout(refreshLayoutOnce, 4000);
+    })();
 </script>
 
 </html>
