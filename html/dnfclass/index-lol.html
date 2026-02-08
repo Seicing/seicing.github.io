@@ -14,6 +14,7 @@
 <style>
     .lole {
         display: none;
+        margin-Bottom: 30px;
     }
 </style>
 </head>
@@ -216,11 +217,6 @@
         </td>
     </tr>
 </table>
-
-
-
-
-
 <table id="customers" class="lole">
     <tr>
         <td width="68">
@@ -4765,11 +4761,6 @@
         </td>
     </tr>
 </table>
-
-
-
-
-
 <table id="customers" class="lole">
     <tr>
         <td width="68">
@@ -6749,10 +6740,6 @@
         </td>
     </tr>
 </table>
-
-
-
-
 <table id="customers" class="lole">
     <tr>
         <td width="68">
@@ -7455,10 +7442,6 @@
         </td>
     </tr>
 </table>
-
-
-
-
 <table id="customers" class="lole">
     <tr>
         <td width="68">
@@ -7782,8 +7765,16 @@
             const btnImg = iconImg.cloneNode(true);
             btnImg.style.cursor = "pointer";
             // --- 在这里添加尺寸设置 ---
-            btnImg.style.width = "32px";
-            btnImg.style.height = "32px";
+            // 1. 使用 setProperty 加上 'important' 提高权重，防止被覆盖
+            btnImg.style.setProperty('width', '32px', 'important');
+            btnImg.style.setProperty('height', '32px', 'important');
+
+            // 2. 破除 min-width 限制 (关键！很多时候是卡在这里)
+            btnImg.style.minWidth = "32px";
+            btnImg.style.maxWidth = "32px";
+
+            // 3. 保持图片比例，防止被压扁 (可选，推荐)
+            btnImg.style.objectFit = "contain";
             // -----------------------
             btnImg.title = heroId;
 
