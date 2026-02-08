@@ -51,7 +51,7 @@ function loadTechnoseigineIfNeeded(root) {
 
     if (container.dataset.loaded === 'true') return;
 
-    const src = container.dataset.src;
+    const src = container.dataset.technoseigine;
     if (!src) return;
 
     container.dataset.loaded = 'true';
