@@ -239,31 +239,35 @@
 
     /* ================= 7. 保存功能 ================= */
 
-    let saveBtn = null;
-    function removeSaveBtn() { if (saveBtn) { saveBtn.remove(); saveBtn = null; } }
-
-    document.addEventListener("click", (e) => {
-        if (saveBtn && saveBtn.contains(e.target)) return;
-        removeSaveBtn();
-
-        const img = e.target.closest("img");
-        if (!img || !img.dataset.blobUrl) return;
-        if (img.closest("a")) return;
-
-        saveBtn = document.createElement("div");
-        saveBtn.innerText = "保存原图";
-        saveBtn.style.cssText = `position: absolute; z-index: 99999; background: rgba(0,0,0,0.8); color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; top: ${e.pageY + 10}px; left: ${e.pageX + 10}px;`;
-
-        saveBtn.addEventListener("click", (evt) => {
-            evt.stopPropagation();
-            const a = document.createElement("a");
-            a.href = img.dataset.blobUrl;
-            a.download = (img.dataset.spriteKey || "icon").split("/").pop();
-            a.click();
+    /*
+    
+        let saveBtn = null;
+        function removeSaveBtn() { if (saveBtn) { saveBtn.remove(); saveBtn = null; } }
+    
+        document.addEventListener("click", (e) => {
+            if (saveBtn && saveBtn.contains(e.target)) return;
             removeSaveBtn();
+    
+            const img = e.target.closest("img");
+            if (!img || !img.dataset.blobUrl) return;
+            if (img.closest("a")) return;
+    
+            saveBtn = document.createElement("div");
+            saveBtn.innerText = "保存原图";
+            saveBtn.style.cssText = `position: absolute; z-index: 99999; background: rgba(0,0,0,0.8); color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; top: ${e.pageY + 10}px; left: ${e.pageX + 10}px;`;
+    
+            saveBtn.addEventListener("click", (evt) => {
+                evt.stopPropagation();
+                const a = document.createElement("a");
+                a.href = img.dataset.blobUrl;
+                a.download = (img.dataset.spriteKey || "icon").split("/").pop();
+                a.click();
+                removeSaveBtn();
+            });
+            document.body.appendChild(saveBtn);
         });
-        document.body.appendChild(saveBtn);
-    });
+    
+        */
 
     /* ================= 8. 主流程 ================= */
 
