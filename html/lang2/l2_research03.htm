@@ -59,7 +59,7 @@
                         <td width="25%" style="text-align: center"><a href="l2_research02.htm">内存数据<br>
                                 完全解析</a></td>
                         <td width="25%" style="text-align: center">
-                            <span style="color:#00FF00">魔法攻防<br> 彻底解析
+                            <span style="color:#288028">魔法攻防<br> 彻底解析
                             </span>
                         </td>
                         <td width="25%" style="text-align: center"><a href="l2_research04.htm"><b>Bug</b></a></td>
@@ -85,14 +85,14 @@
     <br> ├
     <a href="#1">◆前言</a><br> ├
     <a href="#2">◆分析</a>（
-    <span style="color:#FFFF00">■</span>PART I ：<a href="#21">变量</a>&nbsp;
-    <span style="color:#FFFF00">■</span>PART II ：<a href="#22">公式</a>&nbsp;
-    <span style="color:#FFFF00">■</span>PART III ：<a href="#23">研究</a>）<br> └
+    <span style="color:#ba8f00">■</span>PART I ：<a href="#21">变量</a>&nbsp;
+    <span style="color:#ba8f00">■</span>PART II ：<a href="#22">公式</a>&nbsp;
+    <span style="color:#ba8f00">■</span>PART III ：<a href="#23">研究</a>）<br> └
     <a href="#3">◆附表</a>
 </p>
 
 <p style="text-align: center">
-    <span style="color:#FFFF00">
+    <span style="color:#ba8f00">
         <a name="1"></a>■前言&nbsp; </span><a href="#0">（Top）</a>
 </p>
 
@@ -159,7 +159,7 @@
 </p>
 
 <p style="text-align: center">
-    <span style="color:#FFFF00">
+    <span style="color:#ba8f00">
         <a name="2"></a>■分析&nbsp; </span><a href="#0">（Top）</a>
 </p>
 
@@ -169,17 +169,17 @@
 </p>
 
 <p style="text-align: left">
-    <span style="color:#FFFF00"><b><a name="21"></a>PART I： Variable&nbsp;&nbsp;&nbsp; </b></span><a
+    <span style="color:#ba8f00"><b><a name="21"></a>PART I： Variable&nbsp;&nbsp;&nbsp; </b></span><a
         href="#0">（Top）</a><br>
     <br> 先列出所有相关的变量，变量名都是我自己起的，尽量能够望文生义。
     <br>
     <br> 魔法耐性： MRes = Magic Resistance<br> 魔法防御： MDef = Magic Defence<br> 魔法等级： MLv = Magic Level<br> 附加伤害： Ex = Extra
     Damage<br> 魔法伤害： DMG = Damage<br>
     <br>
-    <b><span style="color:#00FF00">
+    <b><span style="color:#288028">
             1. </span></b> 魔法耐性 MRes<br>
     <b><span
-            style="color:#FFFF00">主要是指游戏中部分道具或者施展“魔防提升术”带来的影响。</span></b>注意魔法耐性和魔法防御是有所不同的。这个术语可能更为Popular一些（因为在游戏的道具说明中经常出现嘛）。
+            style="color:#ba8f00">主要是指游戏中部分道具或者施展“魔防提升术”带来的影响。</span></b>注意魔法耐性和魔法防御是有所不同的。这个术语可能更为Popular一些（因为在游戏的道具说明中经常出现嘛）。
     <br>
     <br> 能够提升魔法耐性（MRes）的道具有：
 </p>
@@ -232,15 +232,15 @@
 <p style="text-align: left">能够提升魔法耐性（MRes）的魔法有：<br> 魔防提升术 Resist&nbsp;&nbsp;&nbsp; 指挥官25&nbsp;&nbsp; 佣兵（部下）25
     <br>
     <br>
-    <span style="color:#00FF00">注意</span>：在MD版本的Langrisser
+    <span style="color:#288028">注意</span>：在MD版本的Langrisser
     II中，所有增加魔法耐性MRes的道具，无论是否注有"部下含"，实际上都有"部下含"的效果（不知是不是BUG）。但是比起加在指挥官身上的MRes点数，部下身上是减半的。<br>
     <br> 以护身符Amulet为例，号称是"魔法耐性+15"，但那15点MRes只是加在指挥官上的；加在部下身上MRes的仅有7.5，即一半数值。（欺诈！真是欺诈...唉，这年头... ）<br>
     <br> 而魔法Resist则对指挥官和佣兵都一视同仁，都是加25点MRes。（还是这个有诚信～）
     <br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             2.</b></span> 魔法防御 MDef<br>
-    <b><span style="color:#FFFF00">主要是指游戏中各种职业、佣兵自身对魔法攻击的基本抵抗能力。</span></b>魔法防御这个名词是我自己定义的，是一个隐藏数值。<br>
+    <b><span style="color:#ba8f00">主要是指游戏中各种职业、佣兵自身对魔法攻击的基本抵抗能力。</span></b>魔法防御这个名词是我自己定义的，是一个隐藏数值。<br>
     <br> 就指挥官而言，不同人物的不同职业，这个数值都会不同（主要还是看职业）。它存放在人物内存数据的第一区，是96个参数中的1个。具体可参考我的另一篇文章 "Langrisser II （MD）
     人物内存数据之完全解析"，其中以海恩为例，介绍了所有人物数据及道具表数据的含义。<br>
     <br> 就佣兵而言，这个数值是无法在内存中查询（至少我没能找到），只能通过计算得到。
@@ -251,7 +251,7 @@
     <br> 本文最后的附录中列出了全部职业和佣兵的MDef值，以供参考。
     <br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             3.</b></span> 魔法等级 MLv<br> 这同样是我自己定义的概念。
     <br>
     <br> 关于角色等级影响魔法Damage的问题，各位想必都有这样的认识——"传统"上，把1-10级划分为三个阶段，1-3 4-7
@@ -266,7 +266,7 @@
     4<br> Lv = 10 → MLv = 5<br>
     <br> 注意魔法等级MLv是从0级开始计数的，0～5总共存在6个等级。非最终职业只能达到MLv 4，而最终职业可以达到MLv 5，自然魔法攻击力更大。<br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             4. </b></span> 附加伤害 Ex<br> 附加伤害有两个来源：
     <br>
     <br>
@@ -300,22 +300,22 @@
     <b>＋1</b> （"不沾水"的飞兵亦不例外，个人认为该设定稍有不妥。）<br> 以龙卷风Tornado攻击飞行系敌人，伤害
     <b>＋1</b><br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             P.S. </b></span> 目前不排除还有其它Case的可能性。<br>
     <br>
-    <b><span style="color:#00FF00">
+    <b><span style="color:#288028">
             5.</span> </b> 魔法伤害 DMG<br> 综合上述各个因子所得出的结果，即为魔法伤害值。
 </p>
 
-<p style="text-align: left"><b><span style="color:#FFFF00"><a name="22"></a>PART II： Formula</span></b>
-    <span style="color:#FFFF00">&nbsp;
+<p style="text-align: left"><b><span style="color:#ba8f00"><a name="22"></a>PART II： Formula</span></b>
+    <span style="color:#ba8f00">&nbsp;
     </span><a href="#0">（Top）</a><br> 公式很简单，至少看上去很简单...
     <br>
     <br> 公式1 ： MDef + 2MRes ≥ 100<br> DMG = 0<br>
     <br> 公式2 ： MDef + 2MRes &lt; 100<br> DMG = int（（（100 - （MDef + 2MRes）） * k） / 100） + Ex （k 为参数，后面会具体解释）<br>
     <br> 公式2.1 ： MDef + 2MRes &lt; 100 and 以Case 2的方法得出DMG = 0<br> DMG = 1<br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             P.S. </b></span> int： 表示取整，即只保留整数部分，专业一点的叫法是"截尾&quot;（Truncate）。<br>
     <br> 文章大都做在那个k参数上，与魔法的不同有关，与魔法等级（MLv）也有关。必须一一列出来：
     <br> 魔法之矢 <b>Magic Arrow</b> ： k = 2MLv<br> 火球 <b>Fireball</b> ： k = MLv + 3<br> 雷电 <b>Thunder </b> ： k = MLv +
@@ -324,17 +324,17 @@
 </p>
 
 <p style="text-align: left">
-    <span style="color:#FFFF00"><b><a name="23"></a>PART III： Research</b>&nbsp;
+    <span style="color:#ba8f00"><b><a name="23"></a>PART III： Research</b>&nbsp;
     </span><a href="#0">（Top）</a><br>
     您是不是觉得看了之后一点感觉也没有？或者，隐约觉察到这里有什么玄妙的设计？事实上的确如此，如果不仔细分析一番，是不会知道在这个看似简单的公式的背后，到底隐藏了什么玄机。（要知道当初我可是从一大堆数据中"挖"出了这些公式，当然不会那么简单。）下面就一点一点地分析。
     <br>
     <br> 首先是几个概念性问题：
     <br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             1. </b> 如何能达到"水火不侵"？</span>（即上述的Case 1）<br> 条件是MDef + 2MRes ≥ 100。一些佣兵天生就具有这样的水准，如エンジェル （MDef = 100）。<br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             P.S.</b></span> "Amulet BUG"<br> 佩戴护身符Amulet后有个很奇怪的BUG，就是一旦装备了之后，MDef +
     2MRes就有了上限（估计是99），但是无论如何肯定不到100。不相信的话，看看下面两个例子吧。<br>
     <br> Example 1：我方唯一的MDef 100（也就是魔法无敌）的职业是大神官エージェント。现在让莉娅娜处于这个职业，在装备了Amulet之后，MDef +
@@ -344,7 +344,7 @@
     <br> 不过，由此也看出这个BUG仅限于指挥官，不会影响佣兵。
     <br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             2. </b> 魔法耐性（MRes）所起的作用有多重要？</span><br> 从公式上可以看出，MRes的重要性2倍于MDef。比如道具幻象法袍Mirage
     Robe可以提供20点MRes，这样就算是MDef仅有50的初级职业——战士ファイター，也能达到MDef + 2MRes = 90的水平，几近魔法无敌；而稍微高级些的职业都能有至少60点MDef，再加上Mirage
     Robe的话就可确保MDef + 2MRes ≥ 100，从而不受任何魔法伤害。<br>
@@ -355,19 +355,19 @@
     <br> 然而，尽管MRes的作用如此之大，显然游戏中装备有加MRes的道具的敌人却并不多。
     <br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             3. </b> 如果MDef + 2MRes &lt; 100，但是根据公式 Case 2 得出的DMG为0（即上述的Case 2.1），这会是什么情况？</span><br>
     此时无论如何都会有1点HP损伤。也就是说，如果公式Case 2得出DMG = 0或者DMG = 1，那都只有一个结果，就是DMG = 1。<br>
     <br> 但是公式 Case 2 得出的 DMG = 0 和 DMG = 1 毕竟还是有差别的。例如被装备了暗黑之杖Dark Rod的对手攻击 （附加伤害Ex = 2）之后，DMG = 0就变成实战中DMG = 2，而DMG =
     1就变成实战中DMG = 3，结果就不一样了。<br>
     <br>
-    <span style="color:#00FF00">
+    <span style="color:#288028">
         4. DMG与施术者的职业无关吗？</span><br> 就目前所知，的确如此。即使是低等职业战士ファイター和高级职业巫术使ウィザード，在同样的等级下，对同样的敌人，用同样的魔法，将得到同样的效果。
     <br>
     <br>
     <span style="color:#00FFFF">有了以上的这些基本概念，就来看看更深入的分析吧～</span><br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             5. </b> 各个魔法间的强弱关系</span><br> 这完全取决于那个k参数。但是单单看那些"k = ?MLv + ?"的公式是很不直观的，因此有了下面这张表格。
 </p>
 
@@ -479,14 +479,14 @@
     <br> Earthquake VS Blast：<br> MLv 0的爆炎术<b>Blast</b>，已有MLv
     5的地震术<b>Earthquake</b>的威力，后面就更不用说了；爆炎术<b>Blast</b>无愧为最强攻击魔法。<br>
     <br>
-    <span style="color:#00FF00">
+    <span style="color:#288028">
         <b>
             6.</b> 如果MDef + 2MRes很高</span>
-    <span style="color:#00FF00">……</span><br> 那也就意味着 （（100 - （MDef + 2MRes））很小，结果就是各个魔法造成的伤害（DMG）都不会相差很大。比如皇帝巴恩哈特（MDef =
+    <span style="color:#288028">……</span><br> 那也就意味着 （（100 - （MDef + 2MRes））很小，结果就是各个魔法造成的伤害（DMG）都不会相差很大。比如皇帝巴恩哈特（MDef =
     98），如果不装Dark Rod之类加Ex的道具，无论什么攻击魔法打上去都只能有1点DMG，而这还是采用了Case
     2.1的结果（即DMG为0，强制转为1）。实际上，当MDef在85以上时，即使对方没有增加MRes的装备，各个攻击魔法的效果就已经非常接近了。<br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             7. </b> 那么那些"强"的魔法到底"强"在什么地方？</span><br> 说出来也许不大好听：
     陨石术<b>Meteor</b>，爆炎术<b>Blast</b>等魔法与其它"弱"一些的魔法之间攻击力上的差别，只能体现在MDef比较低的敌人身上，说穿了就是"欺软怕硬"
     ；另外就是在自身Lv比较低的时候，"强"的魔法可以更明显地发挥出威力，对比一下MLv 0时各魔法的k值就能得出这个结论。<br>
@@ -498,19 +498,19 @@
 </p>
 
 <p style="text-align: center">
-    <span style="color:#FFFF00">
+    <span style="color:#ba8f00">
         <a name="3"></a>■附表&nbsp; </span><a href="#0">（Top）</a>
 </p>
 
 <p style="text-align: left">
-    <span style="color:#FFFF00">■ <b>Appendix</b></span><br> 以下列出全部职业和佣兵的魔法防御（MDef）值。
+    <span style="color:#ba8f00">■ <b>Appendix</b></span><br> 以下列出全部职业和佣兵的魔法防御（MDef）值。
     <br>
     <br> 大部分职业的MDef是可以直接在内存中查到的。少数未出场的职业和所有的佣兵都无法直接查到其MDef值，只能用"夹逼"法测算。
     <br>
     <br> 目前仅召唤兽女武神ヴァルキリー的MDef无法最终确定，不过，可能值上下限差也只有1而已。其它所有的职业和佣兵的MDef都已确定了。
     <br>
     <br>
-    <span style="color:#00FF00"><b>
+    <span style="color:#288028"><b>
             P.S.</b></span> 何谓"夹逼"法？<br>
     "夹逼"法就是用某魔法向这个佣兵攻击，根据DMG的大小，就可以初步了解其MDef的范围；然后再用另一个魔法攻击它，得到另一个DMG可能值范围，这样就能把MDef的可能值范围缩小；有时可能还需要改变施术者等级，或者动用护身符Amulet、暗黑之杖Dark
     Rod等道具，使MDef值"落到"另一个范围内再观察，可以进一步缩小范围；如此重复直到无法再缩小为止。<br>
@@ -577,7 +577,7 @@
     パイレーツ（N）（海盗） 50<br> 9B ハイロード（N） 75<br> 9C プリースト（N） 90
 </p>
 
-<p style="text-align: center"><b><span style="color:#ffff00">■&nbsp; </span>EOF <span style="color:#ffff00">■</span></b>
+<p style="text-align: center"><b><span style="color:#ba8f00">■&nbsp; </span>EOF <span style="color:#ba8f00">■</span></b>
 </p>
 
 </div>
