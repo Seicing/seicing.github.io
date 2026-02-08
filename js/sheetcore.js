@@ -6,6 +6,46 @@
         "https://seicing.com/res/": "https://data.seicing.com/seicingdepot/"
     };
 
+
+    /* ================= 提示系统（新增） ================= */
+
+    let spriteNoticeEl = null;
+
+    function initSpriteNotice() {
+        if (spriteNoticeEl) return;
+
+        spriteNoticeEl = document.createElement("div");
+        spriteNoticeEl.style.cssText = `
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        background: rgba(0,0,0,0.75);
+        color: #fff;
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 4px;
+        z-index: 99999;
+        pointer-events: none;
+        display: none;
+        max-width: 40vw;
+    `;
+        document.body.appendChild(spriteNoticeEl);
+    }
+
+    function showSpriteNotice(text) {
+        if (!spriteNoticeEl) initSpriteNotice();
+        spriteNoticeEl.textContent = text;
+        spriteNoticeEl.style.display = "block";
+    }
+
+    function hideSpriteNotice() {
+        if (spriteNoticeEl) {
+            spriteNoticeEl.style.display = "none";
+        }
+    }
+
+
+
     /* ================= 1. 配置区域 (可扩展) ================= */
 
     const SPRITE_GROUPS = [
@@ -124,6 +164,7 @@
         const promise = (async () => {
             try {
                 console.log(`[Sprite Loader] 正在加载组: ${config.name}`);
+                showSpriteNotice(`正在加载图集：${config.name}`);
 
                 // 1. 加载 JSON
                 const jsonPromise = fetch(realJsonUrl).then(r => {
@@ -238,6 +279,9 @@
         // 2. 处理每个配置组
         const groupPromises = Array.from(tasksMap.entries()).map(async ([config, items]) => {
             const resources = await loadGroupResources(config);
+            showSpriteNotice(
+                `图集 ${config.name} 已加载，准备裁切 ${items.length} 个图像`
+            );
 
             if (!resources) {
                 items.forEach(item => item.el.src = item.rawSrc);
@@ -272,6 +316,7 @@
         });
 
         await Promise.all(groupPromises);
+        hideSpriteNotice();
     });
 
 })();
