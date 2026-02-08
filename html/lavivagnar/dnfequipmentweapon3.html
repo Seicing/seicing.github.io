@@ -2073,32 +2073,6 @@
             });
         })(); 
 </script>
-<script>
-    (function () {
-        if (typeof conditionallyManageLayout !== 'function') return;
-
-        let done = false;
-
-        function refreshLayoutOnce() {
-            if (done) return;
-            done = true;
-            conditionallyManageLayout();
-            observer.disconnect();
-        }
-
-        // 监听 DOM 变化（list / sprite / player 插入）
-        const observer = new MutationObserver(() => {
-            refreshLayoutOnce();
-        });
-
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
-
-        // 兜底：即使监听不到，也强制在 4 秒后跑一次
-        setTimeout(refreshLayoutOnce, 4000);
-    })();
-</script>
+<!--异步标签-->
 
 </html>

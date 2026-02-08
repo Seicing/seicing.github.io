@@ -14,7 +14,25 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#sidebar').load('https://seicing.com/js/list/music.html');
+        // 使用回调函数：只有当 music.html 加载成功后，才会执行 function 内的代码
+        $('#sidebar').load('https://seicing.com/js/list/music.html', function (response, status, xhr) {
+            if (status == "error") {
+                console.log("侧边栏加载失败: " + xhr.status + " " + xhr.statusText);
+            } else {
+                console.log("侧边栏加载完成，开始执行布局修复...");
+
+                // 1. 如果布局管理函数存在，手动触发一次
+                if (typeof conditionallyManageLayout === 'function') {
+                    conditionallyManageLayout();
+                }
+
+                // 2. 双重保险：如果是手机端，直接强制执行克隆函数
+                if (window.innerWidth < 1280 && typeof cloneSidebarContent === 'function') {
+                    // 给一个小小的延迟，确保浏览器渲染了 DOM
+                    setTimeout(cloneSidebarContent, 50);
+                }
+            }
+        });
     })
 </script>
 </head>
@@ -146,32 +164,6 @@
         }
     });
 </script>
-<script>
-    (function () {
-        if (typeof conditionallyManageLayout !== 'function') return;
-
-        let done = false;
-
-        function refreshLayoutOnce() {
-            if (done) return;
-            done = true;
-            conditionallyManageLayout();
-            observer.disconnect();
-        }
-
-        // 监听 DOM 变化（list / sprite / player 插入）
-        const observer = new MutationObserver(() => {
-            refreshLayoutOnce();
-        });
-
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
-
-        // 兜底：即使监听不到，也强制在 4 秒后跑一次
-        setTimeout(refreshLayoutOnce, 4000);
-    })();
-</script>
+<!--异步标签-->
 
 </html>
