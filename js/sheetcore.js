@@ -104,6 +104,14 @@
             rootMatch: "2fatcatpool/",
             folders: ["lang2"]
         },
+
+        {
+            name: "Genghis",
+            jsonUrl: "https://seicing.com/js/sheet/Genghis.json",
+            sheetUrl: "https://seicing.com/res/Genghis.png",
+            rootMatch: "2fatcatpool/",
+            folders: ["Genghis"]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
