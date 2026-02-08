@@ -655,7 +655,7 @@ div {
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
     #lavidash {
-        width: 100%;
+        width: 100% !important;
     }
 
     .rightline {
@@ -981,7 +981,7 @@ div {
 /* ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #lavidash {
-        width: 100%;
+        width: 100% !important;
     }
 
     #wrapper {
