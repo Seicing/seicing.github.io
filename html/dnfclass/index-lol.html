@@ -7781,6 +7781,10 @@
             // 创建按钮（克隆 img，避免影响原表格）
             const btnImg = iconImg.cloneNode(true);
             btnImg.style.cursor = "pointer";
+            // --- 在这里添加尺寸设置 ---
+            btnImg.style.width = "32px";
+            btnImg.style.height = "32px";
+            // -----------------------
             btnImg.title = heroId;
 
             btnImg.addEventListener("click", () => {
