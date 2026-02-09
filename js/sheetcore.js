@@ -112,6 +112,14 @@
             rootMatch: "2fatcatpool/",
             folders: ["Genghis"]
         },
+
+        {
+            name: "riseofnations",
+            jsonUrl: "https://seicing.com/js/sheet/riseofnations.json",
+            sheetUrl: "https://seicing.com/res/riseofnations.jpg",
+            rootMatch: "3fatcatpool/ron/",
+            folders: ["commonmini", "resourcemini", "wondermini"]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
