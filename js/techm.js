@@ -775,6 +775,40 @@ let ayanami = {
     "海滨潜入者": /*html*/`海滨潜入者<br>Seaside Infiltrators<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>忍者移动速度+10%，获得烟雾弹能力，使得可以暂时隐形`,
     "不对称弓": /*html*/`不对称弓<br>Asymmetrical Bows<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>日本长弓骑兵攻击力+25%，射程和视野+2`,
     "阴阳道": /*html*/`阴阳道<br>Onmyōdō<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>阴阳师攻击力+20%`,
+
+
+
+    "枯萎": /*html*/`枯萎<br>Wither<br>指定某个位置，使该处的浆果、农田和树木枯萎，该区域短时间内无法长出作物`,
+    "阿卡迪亚草地": /*html*/`阿卡迪亚草地<br>Arcadian Meadow<br>指定某个区域，使其转变为一片祥和的草地。草地内的单位和建筑无法攻击`,
+    "公共火炉": /*html*/`公共火炉<br>Communal Hearth<br>召唤一座火炉，可提高村民的采集速度并招降敌方单位`,
+    "冥界入侵": /*html*/`冥界入侵<br>Underworld Invasion<br>献祭你所有的城镇和村庄中心，使倒下的军事和神话单位复活。聚落在一段时间内无法补充人口`,
+
+    "神圣劳动": /*html*/`神圣劳动<br>Divine Labor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>村民+5黄金和木材运载量，放下资源时恢复18生命值`,
+    "铁握力": /*html*/`铁握力<br>Iron Grip<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>鹰身女妖升级为涅斐勒鹰身女妖，移动速度+10%，绑架持续时间+25%，并且随时可以投落单位`,
+
+
+    "荆棘墙": /*html*/`荆棘墙<br>Thorned Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>墙壁受到近战伤害时，反馈3近战伤害给攻击者`,
+    "潘的工兵": /*html*/`潘的工兵<br>Pan's Pioneer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>建造城镇中心生产2个吕卡翁，建造村庄中心生产1个吕卡翁`,
+    "掠食本能": /*html*/`掠食本能<br>Predatory Instinct<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>吕卡翁升级为阿尔法吕卡翁，移动速度+20%，近战攻击力+2，且随时可以变形`,
+
+
+    "亲切款待": /*html*/`亲切款待<br>Gracious Hospitality<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>和城镇中心相邻的最多2块农田可以提供额外的人口`,
+    "神圣林地": /*html*/`神圣林地<br>Hallowed Woodlands<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>树神升级为森林树神，变得可以伪装成树木躲避对手`,
+    "宿命箭": /*html*/`宿命箭<br>Fated Arrows<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊弓兵射出的箭矢可以弹射到最多3个敌方单位身上，但每次弹射伤害都会减少`,
+
+
+    "神圣土地": /*html*/`神圣土地<br>Sacred Land<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>治疗农田上的农民`,
+    "蛊灵圣颂": /*html*/`蛊灵圣颂<br>Enchanted Hymn<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>塞壬升级为塞壬首领，诱惑叹咏调的近战伤害+50%，吸引单位的速度+50%`,
+    "虔诚牺牲": /*html*/`虔诚牺牲<br>Pious Sacrifice<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵单位在死亡时，附近人类单位攻击间隔时间-10%，持续5秒，可以叠加5次`,
+
+
+
+
+
+    "【待补充】": /*html*/`【待补充】<br>【待补充】<br>【待补充】`,
+    "【待补充】": /*html*/`【待补充】<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+
+
 }
 
 function showPic(e, taitou) {
