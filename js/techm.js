@@ -777,7 +777,7 @@ let ayanami = {
     "阴阳道": /*html*/`阴阳道<br>Onmyōdō<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>阴阳师攻击力+20%`,
 
 
-    "枯萎": /*html*/`枯萎<br>Wither<br>指定某个位置，使该处的浆果、农田和树木枯萎，该区域短时间内无法长出作物`,
+    "枯萎": /*html*/`枯萎<br>Wither<br>指定一个方向，使该处的浆果、农田和树木枯萎，该条形区域短时间内无法长出作物`,
     "阿卡迪亚草地": /*html*/`阿卡迪亚草地<br>Arcadian Meadow<br>指定某个区域，使其转变为一片祥和的草地。草地内的单位和建筑无法攻击`,
     "公共火炉": /*html*/`公共火炉<br>Communal Hearth<br>召唤一座火炉，可提高村民的采集速度并招降敌方单位`,
     "冥界入侵": /*html*/`冥界入侵<br>Underworld Invasion<br>献祭你所有的城镇和村庄中心，使倒下的军事和神话单位复活。聚落在一段时间内无法补充人口`,
