@@ -28,37 +28,37 @@
         {
             "tech": "Forging",
             "showId": "锻造",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Forging_aoe2de.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/锻造.webp",
             "score": 1
         },
         {
             "tech": "IronCasting",
             "showId": "铸铁",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/IronCastingDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/铸铁.webp",
             "score": 1
         },
         {
             "tech": "BlastFurnace",
             "showId": "鼓风炉",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/BlastFurnaceDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/鼓风炉.webp",
             "score": 2
         },
         {
             "tech": "ScaleMailArmor",
             "showId": "步兵鳞甲",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ScaleMailArmorDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/步兵鳞甲.webp",
             "score": 1
         },
         {
             "tech": "ChainMailArmor",
             "showId": "步兵锁甲",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ChainMailArmorDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/步兵锁甲.webp",
             "score": 1
         },
         {
             "tech": "PlateMailArmor",
             "showId": "步兵钢甲",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/PlateMailArmorDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/步兵钢甲.webp",
             "score": 2
         },
         {
@@ -440,7 +440,7 @@
         {
             "tech": "ChampiScoutInca",
             "showId": "昌皮侦察兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮侦察兵.webp",
             "score": 1,
             "civ": "Inca",
             "replace": "ManatArms"
@@ -448,7 +448,7 @@
         {
             "tech": "ChampiRunnerInca",
             "showId": "昌皮游荡者",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮游荡者.webp",
             "score": 1,
             "civ": "Inca",
             "replace": "LongSwordsman"
@@ -456,7 +456,7 @@
         {
             "tech": "ChampiWarriorInca",
             "showId": "昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮勇士.webp",
             "score": 1,
             "civ": "Inca",
             "replace": "TwoHandedSwordsman"
@@ -464,7 +464,7 @@
         {
             "tech": "EliteChampiWarriorInca",
             "showId": "精锐昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/精锐昌皮勇士.webp",
             "score": 2,
             "civ": "Inca",
             "replace": "Champion"
@@ -472,7 +472,7 @@
         {
             "tech": "ChampiScoutMapuche",
             "showId": "昌皮侦察兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮侦察兵.webp",
             "score": 1,
             "civ": "Mapuche",
             "replace": "ManatArms"
@@ -480,7 +480,7 @@
         {
             "tech": "ChampiRunnerMapuche",
             "showId": "昌皮游荡者",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮游荡者.webp",
             "score": 1,
             "civ": "Mapuche",
             "replace": "LongSwordsman"
@@ -488,7 +488,7 @@
         {
             "tech": "ChampiWarriorMapuche",
             "showId": "昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮勇士.webp",
             "score": 1,
             "civ": "Mapuche",
             "replace": "TwoHandedSwordsman"
@@ -496,7 +496,7 @@
         {
             "tech": "EliteChampiWarriorMapuche",
             "showId": "精锐昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/精锐昌皮勇士.webp",
             "score": 2,
             "civ": "Mapuche",
             "replace": "Champion"
@@ -504,7 +504,7 @@
         {
             "tech": "ChampiScoutMuisca",
             "showId": "昌皮侦察兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮侦察兵.webp",
             "score": 1,
             "civ": "Muisca",
             "replace": "ManatArms"
@@ -512,7 +512,7 @@
         {
             "tech": "ChampiRunnerMuisca",
             "showId": "昌皮游荡者",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮游荡者.webp",
             "score": 1,
             "civ": "Muisca",
             "replace": "LongSwordsman"
@@ -520,7 +520,7 @@
         {
             "tech": "ChampiWarriorMuisca",
             "showId": "昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮勇士.webp",
             "score": 1,
             "civ": "Muisca",
             "replace": "TwoHandedSwordsman"
@@ -528,7 +528,7 @@
         {
             "tech": "EliteChampiWarriorMuisca",
             "showId": "精锐昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/精锐昌皮勇士.webp",
             "score": 2,
             "civ": "Muisca",
             "replace": "Champion"
@@ -536,7 +536,7 @@
         {
             "tech": "ChampiScoutTupi",
             "showId": "昌皮侦察兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮侦察兵.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮侦察兵.webp",
             "score": 1,
             "civ": "Tupi",
             "replace": "ManatArms"
@@ -544,7 +544,7 @@
         {
             "tech": "ChampiRunnerTupi",
             "showId": "昌皮游荡者",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮游荡者.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮游荡者.webp",
             "score": 1,
             "civ": "Tupi",
             "replace": "LongSwordsman"
@@ -552,7 +552,7 @@
         {
             "tech": "ChampiWarriorTupi",
             "showId": "昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/昌皮勇士.webp",
             "score": 1,
             "civ": "Tupi",
             "replace": "TwoHandedSwordsman"
@@ -560,7 +560,7 @@
         {
             "tech": "EliteChampiWarriorTupi",
             "showId": "精锐昌皮勇士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/newunit2/精锐昌皮勇士.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/精锐昌皮勇士.webp",
             "score": 2,
             "civ": "Tupi",
             "replace": "Champion"
