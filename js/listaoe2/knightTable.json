@@ -71,19 +71,19 @@
         {
             "tech": "Conscription",
             "showId": "征招",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/征招.webp",
             "score": 1
         },
         {
             "tech": "Faith",
             "showId": "信念",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/信念.webp",
             "score": 0
         },
         {
             "tech": "Heresy",
             "showId": "异教",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/异教.webp",
             "score": 0
         }
     ],
@@ -91,70 +91,70 @@
         {
             "tech": "死士",
             "showId": "死士",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 3,
             "civ": "Malians"
         },
         {
             "tech": "野战军",
             "showId": "野战军",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Romans"
         },
         {
             "tech": "锁子甲",
             "showId": "锁子甲",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Sicilians"
         },
         {
             "tech": "明光铠",
             "showId": "明光铠",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Wei"
         },
         {
             "tech": "阿兹瑙里骑兵",
             "showId": "阿兹瑙里骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Georgians"
         },
         {
             "tech": "曼尼普尔骑兵",
             "showId": "曼尼普尔骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 1,
             "civ": "Burmese"
         },
         {
             "tech": "马镫",
             "showId": "马镫",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Bulgarians"
         },
         {
             "tech": "骑士精神",
             "showId": "骑士精神",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Franks"
         },
         {
             "tech": "贵族特权",
             "showId": "贵族特权",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 3,
             "civ": "Poles"
         },
         {
             "tech": "屯田",
             "showId": "屯田",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 1,
             "civ": "Wei"
         },
@@ -309,7 +309,7 @@
         {
             "tech": "EliteHeiguang1",
             "showId": "重装黑光铠骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/重装黑光铠骑兵升级.webp",
             "score": 2,
             "civ": "Wei",
             "replace": "Paladin"
@@ -325,7 +325,7 @@
         {
             "tech": "EliteHeiguang2",
             "showId": "重装黑光铠骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/重装黑光铠骑兵升级.webp",
             "score": 2,
             "civ": "Shu",
             "replace": "Paladin"
@@ -341,7 +341,7 @@
         {
             "tech": "EliteHeiguang3",
             "showId": "重装黑光铠骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Heavy_Hei_Guang_Cavalry_upgrade_AoE2.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/重装黑光铠骑兵升级.webp",
             "score": 2,
             "civ": "Wu",
             "replace": "Paladin"
@@ -349,7 +349,7 @@
         {
             "tech": "Savar",
             "showId": "萨瓦尔",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Savar_upgrade.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/Savar_upgrade.webp",
             "score": 3,
             "civ": "Persians",
             "replace": "Paladin"

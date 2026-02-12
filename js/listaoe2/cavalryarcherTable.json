@@ -59,7 +59,7 @@
         {
             "tech": "ThumbRing",
             "showId": "扳指",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ThumbRingDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/扳指.webp",
             "score": 1
         },
         {
@@ -71,7 +71,7 @@
         {
             "tech": "ParthianTactics",
             "showId": "帕提亚战术",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ParthianTacticsDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/帕提亚战术.webp",
             "score": 1
         },
         {
@@ -89,19 +89,19 @@
         {
             "tech": "Conscription",
             "showId": "征招",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/ConscriptionDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/征招.webp",
             "score": 1
         },
         {
             "tech": "Faith",
             "showId": "信念",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/信念.webp",
             "score": 0
         },
         {
             "tech": "Heresy",
             "showId": "异教",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/异教.webp",
             "score": 0
         }
     ],
@@ -109,42 +109,42 @@
         {
             "tech": "反曲弓",
             "showId": "反曲弓",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Magyars"
         },
         {
             "tech": "阿兹瑙里骑兵",
             "showId": "阿兹瑙里骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Georgians"
         },
         {
             "tech": "西帕希骑兵",
             "showId": "西帕希骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Turks"
         },
         {
             "tech": "丝护甲",
             "showId": "丝护甲",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Tatars"
         },
         {
             "tech": "大草原畜牧",
             "showId": "大草原畜牧",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Cumans"
         },
         {
             "tech": "屯田",
             "showId": "屯田",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 1,
             "civ": "Wei"
         },
@@ -326,7 +326,7 @@
         {
             "tech": "Xianbei",
             "showId": "鲜卑掠骑兵",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/三国dlc/鲜卑掠骑兵.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/鲜卑掠骑兵.webp",
             "score": 1,
             "civ": "Wei",
             "replace": "HeavyCavalryArcher"

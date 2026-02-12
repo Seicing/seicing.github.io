@@ -29,13 +29,13 @@
         {
             "tech": "Faith",
             "showId": "信念",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/FaithDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/信念.webp",
             "score": 0
         },
         {
             "tech": "Heresy",
             "showId": "异教",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/HeresyDE.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/异教.webp",
             "score": 0
         }
     ],
@@ -43,21 +43,21 @@
         {
             "tech": "凯尔特狂暴",
             "showId": "凯尔特狂暴",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Celts"
         },
         {
             "tech": "攻城",
             "showId": "攻城",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 3,
             "civ": "Mongols"
         },
         {
             "tech": "重装甲",
             "showId": "重装甲",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Teutons"
         },
@@ -169,7 +169,7 @@
         {
             "tech": "RocketLauncher1",
             "showId": "装甲战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/装甲战象.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/装甲战象.webp",
             "score": 0,
             "civ": "Hindustanis",
             "replace": "CappedRam"
@@ -177,7 +177,7 @@
         {
             "tech": "HeavyRocketLauncher1",
             "showId": "攻城战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/Aoe2de_siege_elephant_upgrade.webp",
             "score": 2,
             "civ": "Hindustanis",
             "replace": "SiegeRam"
@@ -185,7 +185,7 @@
         {
             "tech": "RocketLauncher2",
             "showId": "装甲战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/装甲战象.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/装甲战象.webp",
             "score": 0,
             "civ": "Bengalis",
             "replace": "CappedRam"
@@ -193,7 +193,7 @@
         {
             "tech": "HeavyRocketLauncher2",
             "showId": "攻城战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/Aoe2de_siege_elephant_upgrade.webp",
             "score": 2,
             "civ": "Bengalis",
             "replace": "SiegeRam"
@@ -201,7 +201,7 @@
         {
             "tech": "RocketLauncher3",
             "showId": "装甲战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/装甲战象.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/装甲战象.webp",
             "score": 0,
             "civ": "Gurjaras",
             "replace": "CappedRam"
@@ -209,7 +209,7 @@
         {
             "tech": "HeavyRocketLauncher3",
             "showId": "攻城战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/Aoe2de_siege_elephant_upgrade.webp",
             "score": 2,
             "civ": "Gurjaras",
             "replace": "SiegeRam"
@@ -217,7 +217,7 @@
         {
             "tech": "RocketLauncher4",
             "showId": "装甲战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/装甲战象.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/装甲战象.webp",
             "score": 0,
             "civ": "Dravidians",
             "replace": "CappedRam"
@@ -225,7 +225,7 @@
         {
             "tech": "HeavyRocketLauncher4",
             "showId": "攻城战象",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/unit/Aoe2de_siege_elephant_upgrade.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/upgrade/2/Aoe2de_siege_elephant_upgrade.webp",
             "score": 2,
             "civ": "Dravidians",
             "replace": "SiegeRam"
@@ -352,7 +352,7 @@
         {
             "tech": "派",
             "showId": "派",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Bengalis"
         },
@@ -422,7 +422,7 @@
         {
             "tech": "刹帝利",
             "showId": "刹帝利",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 1,
             "civ": "Gurjaras"
         },
@@ -485,14 +485,14 @@
         {
             "tech": "医疗团队",
             "showId": "医疗团队",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/银冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
             "score": 2,
             "civ": "Dravidians"
         },
         {
             "tech": "乌兹钢",
             "showId": "乌兹钢",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/金冠科技.webp",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp",
             "score": 2,
             "civ": "Dravidians"
         }
