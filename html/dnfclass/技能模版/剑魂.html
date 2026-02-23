@@ -147,7 +147,7 @@
         methods: {
 
             async init() {
-                const list = await fetch("./skills.json").then(r => r.json())
+                const list = await fetch("https://seicing.com/js/dnfskills.json").then(r => r.json())
 
                 const ids = [...new Set(
                     list.filter(s => s.jobId === this.jobId && s.jobGrowId === this.jobGrowId)
@@ -169,7 +169,7 @@
 
                 const rows = data.levelInfo?.rows || []
 
-                const icon = `https://data.seicing.com/seicingdepot/dfclass/characters/${this.jobId}/${this.jobGrowId}/skill/${skillId}.png`
+                const icon = `https://image.dnftools.com/characters/${this.jobId}/${this.jobGrowId}/skill/${skillId}.png`
 
                 const skill = {
                     skillId,
