@@ -12,6 +12,22 @@
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <style>
+    .loading {
+        padding: 20px;
+        color: #ffd166;
+    }
+
+    .title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lv-input {
+        width: 40px;
+        text-align: center;
+    }
+
     .skill {
         padding: 15px;
         margin-bottom: 14px;
@@ -57,32 +73,50 @@
                 <div id="content">
                     <div class="post">
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div>
+                        <div class="entry">
+<div>
     <div id="app">
-
+        <div v-if="loading" class="loading">
+            正在生成技能列表……
+        </div>
         <div v-for="skill in skills" :id="'skill-'+skill.skillId" class="skill">
 
-            <div class="title">
-                <img :src="skill.icon" class="icon">
-                {{ skill.name }}
+
+            <div class="title-row">
+                <div class="title-left">
+                    <img :src="skill.icon" class="icon">
+                    {{ skill.name }}
+                </div>
+
+                <!-- 等级控制 -->
+                <div class="lvbox">
+                    <button @click="changeLv(skill,-1)">-</button>
+
+                    <input class="lv-input" v-model.number="skill.lv" @change="onManualLv(skill)">
+
+                    <button @click="changeLv(skill,1)">+</button>
+                </div>
             </div>
 
-            <!-- 等级控制 -->
-            <div class="lvbox">
-                <button @click="changeLv(skill,-1)">-</button>
-                Lv.{{ skill.lv }}
-                <button @click="changeLv(skill,1)">+</button>
+            <div class="meta937">
+                <span v-if="skill.current.castingTime != null">
+                    施放: {{ skill.current.castingTime }}
+                </span>
+
+                <span v-if="skill.current.coolTime != null">
+                    冷却: {{ skill.current.coolTime }}
+                </span>
+
+                <span v-if="skill.current.consumeMp != null">
+                    MP: {{ skill.current.consumeMp }}
+                </span>
+
+                | 最大等级: {{ skill.maxLevel }}
             </div>
 
-            <div class="meta">
-                施放: {{ skill.current.castingTime ?? '瞬发' }} |
-                冷却时间: {{ skill.current.coolTime }} |
-                魔法值: {{ skill.current.consumeMp }}
-            </div>
+            <div class="desc" v-html="skill.desc.replaceAll('\n','<br>')"></div>
 
-            <div class="desc">{{ skill.desc }}</div>
-
-            <div class="meta">
+            <div class="meta937">
                 {{ skill.current.levelDesc }}
             </div>
 
@@ -127,6 +161,11 @@
 
         data() {
             return {
+                excludeNames: [
+                    "后跳",
+                    "基础精通"
+                ],
+                loading: true,
                 jobId: "swordman_male",
                 jobGrowId: "weapon_master",
                 skills: []
@@ -142,11 +181,13 @@
             async init() {
                 const list = await fetch("https://seicing.com/js/dnfskills.json").then(r => r.json())
 
-                const ids = [...new Set(
-                    list.filter(s => s.jobId === this.jobId && s.jobGrowId === this.jobGrowId)
-                        .map(s => s.skillId)
-                )]
-
+                const ids = [
+                    ...new Set(
+                        list
+                            .filter(x => x.jobId === this.jobId && x.jobGrowId === this.jobGrowId)
+                            .map(x => x.skillId)
+                    )
+                ]
 
                 //  const reqs = ids.map(id =>
                 //        fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
@@ -161,7 +202,17 @@
                         .then(j => this.normalize(id, j.data))
                 )
 
-                this.skills = await Promise.all(reqs)
+                this.skills = []
+
+                for (const req of reqs) {
+                    const skill = await req
+
+                    if (this.excludeNames.includes(skill.name)) continue
+
+                    this.skills.push(skill)
+                }
+
+                this.loading = false
 
                 this.buildSidebar()
             },
@@ -179,8 +230,11 @@
                     icon,
                     rows,
                     lv: 1,
+                    maxLevel: data.maxLevel || rows.length,
+                    optionDesc: data.levelInfo?.optionDesc || "",
                     current: {}
                 }
+
 
                 this.applyLv(skill)
                 return skill
@@ -189,15 +243,12 @@
             applyLv(skill) {
                 const row = skill.rows[skill.lv - 1] || {}
                 const opt = row.optionValue || {}
-                let text = skill.rows?.length
-                    ? (skill.rows[0].optionDesc || "")
-                    : ""
 
-                if (text) {
-                    text = skill.rows[0].optionDesc
-                    for (const k in opt) {
-                        text = text.replace(`{${k}}`, opt[k])
-                    }
+                let text = skill.optionDesc || ""
+
+                for (const k in opt) {
+                    const v = opt[k]
+                    if (v != null) text = text.replaceAll(`{${k}}`, v)
                 }
 
                 skill.current = {
@@ -215,7 +266,13 @@
                 this.applyLv(skill)
             },
 
-            /* ⭐ 生成 sidebar */
+            onManualLv(skill) {
+                let lv = Number(skill.lv) || 1
+                lv = Math.max(1, Math.min(lv, skill.rows.length))
+                skill.lv = lv
+                this.applyLv(skill)
+            },
+
             buildSidebar() {
                 const root = document.getElementById("sidebar")
                 if (!root) return
@@ -227,23 +284,26 @@
                     root.appendChild(container)
                 }
 
-                const frag = document.createDocumentFragment()
+                container.innerHTML = ""
+
+                // ⭐ 返回职业页
+                const header = document.createElement("div")
+                header.innerHTML =
+                    `<a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a><br><br>`
+                container.appendChild(header)
 
                 this.skills.forEach(s => {
                     const item = document.createElement("div")
                     item.className = "side-item"
                     item.textContent = s.name
-
                     item.onclick = () => {
                         document.getElementById("skill-" + s.skillId)
                             ?.scrollIntoView({ behavior: "smooth" })
                     }
-
-                    frag.appendChild(item)
+                    container.appendChild(item)
                 })
 
-                container.innerHTML = ""
-                container.appendChild(frag)
+                window.dispatchEvent(new Event("sidebar-updated"))
             }
 
         }
