@@ -29,7 +29,7 @@
 
     .skill {
         padding: 15px;
-        margin-bottom: 14px;
+        margin-bottom: 50px;
         border-radius: 6px;
     }
 
@@ -62,6 +62,25 @@
 
     .meta937 {
         white-space: pre-line;
+    }
+
+    .side-item {
+        color: #ffffff;
+        cursor: pointer;
+        padding: 6px 8px;
+        border-radius: 4px;
+        transition: all .15s ease;
+    }
+
+    /* 电脑模式：强制隐藏 */
+    @media (min-width: 1280px) {
+        .side-item {
+            color: #726B63;
+            cursor: pointer;
+            padding: 6px 8px;
+            border-radius: 4px;
+            transition: all .15s ease;
+        }
     }
 </style>
 </head>
@@ -103,16 +122,17 @@
 
             <div class="meta937">
                 <span v-if="skill.current.castingTime != null">
-                    施放: {{ skill.current.castingTime }}
+                    施放: {{ skill.current.castingTime }} |
                 </span>
 
                 <span v-if="skill.current.coolTime != null">
-                    冷却: {{ skill.current.coolTime }}
+                    冷却时间: {{ skill.current.coolTime }} 秒 |
                 </span>
 
                 <span v-if="skill.current.consumeMp != null">
-                    MP: {{ skill.current.consumeMp }}
+                    魔法值: {{ skill.current.consumeMp }} |
                 </span>
+
                 最大等级: {{ skill.maxLevel }}
             </div>
 
@@ -133,13 +153,13 @@
                 <div id="sidebar" style="position:fixed; height:100%; width:220px">
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <a :href="`https://seicing.com/html/dnfclass/${jobChiName}.html`"><b>回到职业页面</b></a>
+                        <a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a>
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a :href="`https://seicing.com/html/dnfclass/${jobChiName}.html`"><b>回到职业页面</b></a>
+<a href="https://seicing.com/html/dnfclass/剑魂.html"><b>回到职业页面</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>
@@ -297,10 +317,7 @@
                     const item = document.createElement("div")
                     item.className = "side-item"
                     item.textContent = s.name
-                    item.onclick = () => {
-                        document.getElementById("skill-" + s.skillId)
-                            ?.scrollIntoView({ behavior: "smooth" })
-                    }
+                    item.dataset.target = "skill-" + s.skillId
                     container.appendChild(item)
                 })
 
@@ -314,6 +331,17 @@
         }
 
     }).mount("#app")
+
+    document.addEventListener("click", e => {
+        const item = e.target.closest(".side-item")
+        if (!item) return
+
+        const id = item.dataset.target || item.getAttribute("data-target")
+        const el = document.getElementById(id)
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" })
+        }
+    })
 </script>
 
 </html>
