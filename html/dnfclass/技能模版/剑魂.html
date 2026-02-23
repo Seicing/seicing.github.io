@@ -19,7 +19,6 @@
 
     .title-row {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -59,6 +58,10 @@
         border-radius: 4px;
         font-size: 13px;
         color: #ccc;
+    }
+
+    .meta937 {
+        white-space: pre-line;
     }
 </style>
 </head>
@@ -110,8 +113,7 @@
                 <span v-if="skill.current.consumeMp != null">
                     MP: {{ skill.current.consumeMp }}
                 </span>
-
-                | 最大等级: {{ skill.maxLevel }}
+                最大等级: {{ skill.maxLevel }}
             </div>
 
             <div class="desc" v-html="skill.desc.replaceAll('\n','<br>')"></div>
@@ -304,6 +306,10 @@
                 })
 
                 window.dispatchEvent(new Event("sidebar-updated"))
+
+                if (typeof cloneSidebarContent === "function") {
+                    cloneSidebarContent()
+                }
             }
 
         }
