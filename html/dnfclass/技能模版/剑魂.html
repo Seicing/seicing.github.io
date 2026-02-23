@@ -13,8 +13,6 @@
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <style>
     .skill {
-        border: 1px solid #444;
-        background: #2b2b2b;
         padding: 15px;
         margin-bottom: 14px;
         border-radius: 6px;
@@ -25,18 +23,13 @@
         align-items: center;
         font-size: 18px;
         font-weight: bold;
-        color: #ffd166;
+        color: #4a4a4a;
     }
 
     .divider {
         height: 1px;
         background: #444;
         margin: 8px 0;
-    }
-
-    .meta {
-        color: #aaa;
-        margin-bottom: 6px;
     }
 
     .desc {
@@ -83,8 +76,8 @@
 
             <div class="meta">
                 施放: {{ skill.current.castingTime ?? '瞬发' }} |
-                CD: {{ skill.current.coolTime }} |
-                MP: {{ skill.current.consumeMp }}
+                冷却时间: {{ skill.current.coolTime }} |
+                魔法值: {{ skill.current.consumeMp }}
             </div>
 
             <div class="desc">{{ skill.desc }}</div>
