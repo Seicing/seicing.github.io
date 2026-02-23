@@ -163,7 +163,7 @@
 
                 const reqs = ids.map(id =>
                     // 把前面的域名换成 /dnf-api/，注意开头有斜杠
-                    fetch(`/dnf-api/open/${this.jobId}/${this.jobGrowId}/${id}/`)
+                    fetch(`https://data.seicing.com/dnf-api/open/${this.jobId}/${this.jobGrowId}/${id}/`)
                         .then(r => r.json())
                         .then(j => this.normalize(id, j.data))
                 )
