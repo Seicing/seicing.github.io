@@ -216,8 +216,15 @@
 
             /* ⭐ 生成 sidebar */
             buildSidebar() {
-                const side = document.getElementById("sidebar")
-                if (!side) return
+                const root = document.getElementById("sidebar")
+                if (!root) return
+
+                let container = root.querySelector("#scroll-1")
+                if (!container) {
+                    container = document.createElement("div")
+                    container.id = "scroll-1"
+                    root.appendChild(container)
+                }
 
                 const frag = document.createDocumentFragment()
 
@@ -226,7 +233,6 @@
                     item.className = "side-item"
                     item.textContent = s.name
 
-                    // 锚点跳转
                     item.onclick = () => {
                         document.getElementById("skill-" + s.skillId)
                             ?.scrollIntoView({ behavior: "smooth" })
@@ -235,11 +241,8 @@
                     frag.appendChild(item)
                 })
 
-                side.innerHTML = ""
-                side.appendChild(frag)
-
-                // ⭐ 关键：通知抽屉系统（可选）
-                window.dispatchEvent(new Event("sidebar-ready"))
+                container.innerHTML = ""
+                container.appendChild(frag)
             }
 
         }
