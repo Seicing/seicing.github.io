@@ -795,7 +795,7 @@ let ayanami = {
     "鱼鳞式建造法": /*html*/`鱼鳞式建造法<br>Clinker Construction<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>船只移动速度+10%`,
     "外板平接船体": /*html*/`外板平接船体<br>Carvel Hull<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>船只移动速度+10%`,
     "虹吸管": /*html*/`虹吸管<br>Siphons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>喷火船获得爆炸蓄力攻击，在0.5格内造成2×7近战区域伤害，+1对远程战舰和建筑`,
-    "燃烧弹": /*html*/`燃烧弹<br>Incendiaries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>325 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>喷火船在沉没时造成自爆攻击`,
+    "燃烧弹": /*html*/`燃烧弹<br>Incendiaries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>325 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>喷火船沉没时自爆，在3格范围内造成10近战伤害和+5对远程舰船伤害`,
     "马普切虚空食物": /*html*/`马普切虚空食物<br>果丛采集者额外提交20%的食物`,
     "马普切定居点": /*html*/`马普切定居点<br>定居点可以训练长矛兵系和掷矛手系单位`,
     "马普切生命值": /*html*/`马普切生命值<br>步兵、投石手和掷矛手在封建/城堡/帝王时代+5/+10/+15生命值`,
@@ -819,7 +819,7 @@ let ayanami = {
     "图皮便宜升级": /*html*/`图皮便宜升级<br>靶场和兵营升级便宜50%食物`,
     "图皮团队加成": /*html*/`图皮团队加成<br>塔和城堡额外提供10人口`,
     "卡西克": /*html*/`卡西克<br>Caciques<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>蔷琵战士和投石手攻击速度+25%`,
-    "箭毒": /*html*/`箭毒<br>Curare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>黑檀木弓箭手/步弓手/防御设施在箭矢上涂毒，在15秒内造成3/5/7点伤害`,
+    "箭毒": /*html*/`箭毒<br>Curare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>黑檀木弓箭手/步弓手/防御设施在箭矢上涂毒，在15秒内造成3/5/7.5点伤害`,
     "定居点": /*html*/`定居点<br>Settlement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>增加人口上限，并可作为所有资源的存放点`,
 
 
@@ -3792,7 +3792,6 @@ function Siphons() {
     document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Poles2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
-    document.getElementById("Saracens2").classList.add("aoeTechIconOff");
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
