@@ -66,39 +66,31 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div>
     <div id="app">
-        <div v-for="skill in skills" :key="skill.skillId" class="skill">
 
-            <!-- 标题 + 图标 -->
+        <div v-for="skill in skills" :id="'skill-'+skill.skillId" class="skill">
+
             <div class="title">
                 <img :src="skill.icon" class="icon">
                 {{ skill.name }}
             </div>
 
-            <div class="divider"></div>
+            <!-- 等级控制 -->
+            <div class="lvbox">
+                <button @click="changeLv(skill,-1)">-</button>
+                Lv.{{ skill.lv }}
+                <button @click="changeLv(skill,1)">+</button>
+            </div>
 
-            <!-- 等级信息 -->
             <div class="meta">
-                需求等级: {{ skill.requiredLevel }}
-                （每 {{ skill.requiredLevelRange }} 级提升）
-                | 最大等级: {{ skill.maxLevel }}
+                施放: {{ skill.current.castingTime ?? '瞬发' }} |
+                CD: {{ skill.current.coolTime }} |
+                MP: {{ skill.current.consumeMp }}
             </div>
 
-            <!-- 施放/冷却/MP -->
+            <div class="desc">{{ skill.desc }}</div>
+
             <div class="meta">
-                施放: {{ skill.castingTime ?? '瞬发' }} |
-                冷却: {{ skill.coolTime }}s |
-                MP: {{ skill.consumeMp }}
-            </div>
-
-            <!-- 描述 -->
-            <div class="desc">
-                {{ skill.desc }}
-            </div>
-
-            <!-- 等级数据 -->
-            <div class="level-box">
-                Lv.1 数据：<br>
-                {{ skill.levelDesc }}
+                {{ skill.current.levelDesc }}
             </div>
 
         </div>
@@ -142,83 +134,112 @@
 
         data() {
             return {
-
-                // ⭐ 每职业页面固定写死
                 jobId: "swordman_male",
                 jobGrowId: "weapon_master",
-                jobGrowName: "极诣·剑魂",
-
                 skills: []
             }
         },
 
         mounted() {
-            this.loadSkills()
+            this.init()
         },
 
         methods: {
 
-            async loadSkills() {
+            async init() {
+                const list = await fetch("./skills.json").then(r => r.json())
 
-                // 1️⃣ 加载总列表
-                const list = await fetch("https://seicing.com/js/dnfskills.json")
-                    .then(r => r.json())
+                const ids = [...new Set(
+                    list.filter(s => s.jobId === this.jobId && s.jobGrowId === this.jobGrowId)
+                        .map(s => s.skillId)
+                )]
 
-                // 2️⃣ 筛选当前转职技能
-                const filtered = list.filter(s =>
-                    s.jobId === this.jobId &&
-                    s.jobGrowId === this.jobGrowId
-                )
-
-                // 去重 skillId
-                const uniqueSkillIds = [...new Set(filtered.map(s => s.skillId))]
-
-                // 3️⃣ 并发请求技能详情
-                const requests = uniqueSkillIds.map(id =>
+                const reqs = ids.map(id =>
                     fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
                         .then(r => r.json())
-                        .then(json => this.normalizeSkill(id, json.data))
+                        .then(j => this.normalize(id, j.data))
                 )
 
-                this.skills = await Promise.all(requests)
+                this.skills = await Promise.all(reqs)
+
+                this.buildSidebar()
             },
 
-            normalizeSkill(skillId, data) {
+            normalize(skillId, data) {
 
-                const base = data.levelInfo?.rows?.[0] || {}
+                const rows = data.levelInfo?.rows || []
 
-                // ⭐ 保留 https://seicing.com/res/
-                const icon =
-                    `https://image.dnftools.com/characters/${this.jobId}/${this.jobGrowId}/skill/${skillId}.png`
+                const icon = `https://data.seicing.com/seicingdepot/dfclass/characters/${this.jobId}/${this.jobGrowId}/skill/${skillId}.png`
 
-                // 等级描述替换
-                let levelDesc = ""
-                if (data.levelInfo?.optionDesc && base.optionValue) {
-                    levelDesc = data.levelInfo.optionDesc
-                    for (const key in base.optionValue) {
-                        levelDesc = levelDesc.replace(
-                            `{${key}}`,
-                            base.optionValue[key]
-                        )
-                    }
-                }
-
-                return {
+                const skill = {
                     skillId,
                     name: data.name,
                     desc: data.desc,
-
-                    requiredLevel: data.requiredLevel,
-                    requiredLevelRange: data.requiredLevelRange,
-                    maxLevel: data.maxLevel,
-
-                    castingTime: base.castingTime,
-                    coolTime: base.coolTime,
-                    consumeMp: base.consumeMp,
-
-                    levelDesc,
-                    icon
+                    icon,
+                    rows,
+                    lv: 1,
+                    current: {}
                 }
+
+                this.applyLv(skill)
+                return skill
+            },
+
+            applyLv(skill) {
+                const row = skill.rows[skill.lv - 1] || {}
+                const opt = row.optionValue || {}
+                let text = skill.rows?.length
+                    ? (skill.rows[0].optionDesc || "")
+                    : ""
+
+                if (text) {
+                    text = skill.rows[0].optionDesc
+                    for (const k in opt) {
+                        text = text.replace(`{${k}}`, opt[k])
+                    }
+                }
+
+                skill.current = {
+                    castingTime: row.castingTime,
+                    coolTime: row.coolTime,
+                    consumeMp: row.consumeMp,
+                    levelDesc: text
+                }
+            },
+
+            changeLv(skill, delta) {
+                const next = skill.lv + delta
+                if (next < 1 || next > skill.rows.length) return
+                skill.lv = next
+                this.applyLv(skill)
+            },
+
+            /* ⭐ 生成 sidebar */
+            buildSidebar() {
+                const side = document.getElementById("sidebar")
+                if (!side) return
+
+                const frag = document.createDocumentFragment()
+
+                this.skills.forEach(s => {
+                    const item = document.createElement("div")
+                    item.className = "side-item"
+                    item.textContent = s.name
+
+                    // 锚点跳转
+                    item.onclick = () => {
+                        document.getElementById("skill-" + s.skillId)
+                            ?.scrollIntoView({ behavior: "smooth" })
+                    }
+
+                    frag.appendChild(item)
+                })
+
+                side.innerHTML = ""
+                side.appendChild(frag)
+
+                // ⭐ 关键：通知抽屉系统（可选）
+                window.dispatchEvent(new Event("sidebar-ready"))
             }
 
         }
