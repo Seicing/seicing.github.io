@@ -154,8 +154,16 @@
                         .map(s => s.skillId)
                 )]
 
+
+                //  const reqs = ids.map(id =>
+                //        fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
+                //            .then(r => r.json())
+                //            .then(j => this.normalize(id, j.data))
+                //    )
+
                 const reqs = ids.map(id =>
-                    fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
+                    // 把前面的域名换成 /dnf-api/，注意开头有斜杠
+                    fetch(`/dnf-api/open/${this.jobId}/${this.jobGrowId}/${id}/`)
                         .then(r => r.json())
                         .then(j => this.normalize(id, j.data))
                 )
