@@ -145,6 +145,19 @@
                 {{ skill.current.levelDesc }}
             </div>
 
+            <div v-if="skill.evolution.length" class="vp-box">
+                <div v-for="vp in skill.evolution" class="vp-item">
+                    <div class="vp-title">
+                        VP-{{ vp.type }} <b>{{ vp.name }}</b>
+                    </div>
+
+                    <div class="vp-desc">{{ vp.desc }}</div>
+
+                    <div class="vp-detail" v-html="vp.descDetail.replaceAll('\n','<br>')">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -263,6 +276,7 @@
                     consumeItem: data.consumeItem || null,
                     requiredLevel: data.requiredLevel,
                     requiredLevelRange: data.requiredLevelRange || 0,
+                    evolution: data.evolution || [],
                     current: {}
                 }
 
