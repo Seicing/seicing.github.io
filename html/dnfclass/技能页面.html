@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html style="height:100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>技能页面</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    .loading {
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #4a4a4a;
+    }
+
+    .title-row {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .lv-input {
+        width: 40px;
+        text-align: center;
+    }
+
+    .skill {
+        padding: 15px;
+        margin-bottom: 40px;
+        border-radius: 6px;
+    }
+
+    .title-left {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #4a4a4a;
+    }
+
+    .divider {
+        height: 1px;
+        background: #444;
+        margin: 8px 0;
+    }
+
+    .desc {
+        white-space: pre-line;
+        margin-bottom: 20px;
+    }
+
+    .level-box {
+        background: #1a1a1a;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #ccc;
+    }
+
+    .meta937 {
+        white-space: pre-line;
+        margin-bottom: 20px;
+    }
+
+    .side-item {
+        color: rgb(208, 201, 183);
+        cursor: pointer;
+        transition: all .15s ease;
+    }
+
+    /* 电脑模式：强制隐藏 */
+    @media (min-width: 1280px) {
+        .side-item {
+            color: #726B63;
+            cursor: pointer;
+            transition: all .15s ease;
+        }
+    }
+</style>
+</head>
+
+<body style="height:100%;" id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
+                <div id="content">
+                    <div class="post">
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry">
+<div>
+    <div id="app">
+        <div v-if="loading" class="loading">
+            正在生成技能列表……
+        </div>
+        <div v-for="skill in skills" :id="'skill-'+skill.skillId" class="skill">
+
+
+            <div class="title-row">
+                <div class="title-left">
+                    <img :src="skill.icon" class="icon">
+                    {{ skill.name }}
+                </div>
+
+                <!-- 等级控制 -->
+                <div class="lvbox">
+                    <button @click="changeLv(skill,-1)">-</button>
+
+                    <input class="lv-input" v-model.number="skill.lv" @change="onManualLv(skill)">
+
+                    <button @click="changeLv(skill,1)">+</button>
+                </div>
+            </div>
+
+            <div class="meta937">
+                {{ skill.current.learnLevelText }} |
+
+                <span v-if="skill.current.castingTime != null">
+                    施放: {{ skill.current.castingTime }} |
+                </span>
+                <span v-if="skill.current.coolTime != null">
+                    冷却时间: {{ skill.current.coolTime }} 秒 |
+                </span>
+                <span v-if="skill.current.consumeMp != null">
+                    魔法值: {{ skill.current.consumeMp }} |
+                </span>
+                <span v-if="skill.current.consumeItemText">
+                    {{ skill.current.consumeItemText }} |
+                </span>
+
+                最大等级: {{ skill.maxLevel }}
+            </div>
+
+            <div class="desc" v-html="skill.desc.replaceAll('\n','<br>')"></div>
+
+            <div class="meta937">
+                {{ skill.current.levelDesc }}
+            </div>
+
+            <div v-if="skill.evolution.length" class="vp-box">
+                <div v-for="vp in skill.evolution" class="vp-item">
+                    <div class="vp-title">
+                        VP-{{ vp.type }} <b>{{ vp.name }}</b>
+                    </div>
+
+                    <div class="vp-desc">{{ vp.desc }}</div>
+
+                    <div class="vp-detail" v-html="vp.descDetail.replaceAll('\n','<br>')">
+                    </div>
+                </div><br>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        <b>
+    <a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a>
+    <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a>
+</b>
+<br><br>
+<a href="https://seicing.com/html/dnfclass/剑魂.html#gall"><b>回到职业页面</b></a>
+                    </div>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+<script language="javascript" src="https://seicing.com/js/skill.js"></script>
+<script language="javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<script language="javascript" src="https://seicing.com/js/imgauto.js"></script>
+
+<script>
+    function getQuery() {
+        const q = new URLSearchParams(location.search)
+        return {
+            jobId: q.get("jobId"),
+            jobGrowId: q.get("grow"),
+            jobChiName: decodeURIComponent(q.get("name") || "")
+        }
+    }
+
+
+    const { createApp } = Vue
+    const query = getQuery()
+    createApp({
+
+        data() {
+            return {
+                excludeNames: [
+                    "后跳", "基础精通", "受身蹲伏", "防具精通", "强化 - 后跳", "跃翔", "暴击", "卓越之力", "超卓之心", "觉醒之抉择", "攻击类型转换",
+                ],
+                loading: true,
+                jobId: query.jobId || "gunner_female",
+                jobGrowId: query.jobGrowId || "spitfire_female",
+                jobChiName: query.jobChiName || "默认职业",
+                skills: []
+            }
+        },
+
+        mounted() {
+            document.title = this.jobChiName
+            this.init()
+        },
+
+        methods: {
+
+            async init() {
+
+                // ① 先拿职业技能列表
+                const skillListRes = await fetch(
+                    `https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/skills/`
+                ).then(r => r.json())
+
+                const skillList = skillListRes.data || []
+
+                // ② 过滤掉不需要的技能
+                const filtered = skillList.filter(s =>
+                    !this.excludeNames.includes(s.name)
+                )
+
+                // ⭐ 可选：按学习等级排序（推荐）
+                filtered.sort((a, b) => a.requiredLevel - b.requiredLevel)
+
+                // ③ 请求技能详情
+                const reqs = filtered.map(s =>
+                    fetch(
+                        `https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${s.skillId}/`
+                    )
+                        .then(r => r.json())
+                        .then(j => this.normalize(s.skillId, j.data))
+                )
+
+                this.skills = []
+
+                for (const req of reqs) {
+                    const skill = await req
+                    this.skills.push(skill)
+                }
+
+                this.loading = false
+
+                this.buildSidebar()
+            },
+
+            normalize(skillId, data) {
+
+                const rows = data.levelInfo?.rows || []
+
+                const icon = `https://image.dnftools.com/characters/${this.jobId}/${this.jobGrowId}/skill/${skillId}.png`
+
+                const skill = {
+                    skillId,
+                    name: data.name,
+                    desc: data.desc,
+                    icon,
+                    rows,
+                    lv: 1,
+                    maxLevel: data.maxLevel || rows.length,
+                    optionDesc: data.levelInfo?.optionDesc || "",
+                    consumeItem: data.consumeItem || null,
+                    requiredLevel: data.requiredLevel,
+                    requiredLevelRange: data.requiredLevelRange || 0,
+                    evolution: data.evolution || [],
+                    current: {}
+                }
+
+
+                this.applyLv(skill)
+                return skill
+            },
+
+            applyLv(skill) {
+                const row = skill.rows[skill.lv - 1] || {}
+                const opt = row.optionValue || {}
+
+                let text = skill.optionDesc || ""
+
+                for (const k in opt) {
+                    const v = opt[k]
+                    if (v != null) text = text.replaceAll(`{${k}}`, v)
+                }
+
+                const base = (skill.requiredLevel || 0) - (skill.requiredLevelRange || 0)
+                const range = skill.requiredLevelRange || 0
+
+                skill.current = {
+                    castingTime: row.castingTime,
+                    coolTime: row.coolTime,
+                    consumeMp: row.consumeMp,
+                    levelDesc: text,
+                    learnLevelText: `学习等级: ${skill.requiredLevel || 0}${skill.requiredLevelRange
+                        ? "(+" + skill.requiredLevelRange + ")"
+                        : ""
+                        }`,
+                    consumeItemText: skill.consumeItem
+                        ? `${skill.consumeItem.itemName}: ${skill.consumeItem.value}`
+                        : null
+                }
+            },
+
+            changeLv(skill, delta) {
+                const next = skill.lv + delta
+                if (next < 1 || next > skill.rows.length) return
+                skill.lv = next
+                this.applyLv(skill)
+            },
+
+            onManualLv(skill) {
+                let lv = Number(skill.lv) || 1
+                lv = Math.max(1, Math.min(lv, skill.rows.length))
+                skill.lv = lv
+                this.applyLv(skill)
+            },
+
+            buildSidebar() {
+                const root = document.getElementById("sidebar")
+                if (!root) return
+
+                let container = root.querySelector("#scroll-1")
+                if (!container) {
+                    container = document.createElement("div")
+                    container.id = "scroll-1"
+                    root.appendChild(container)
+                }
+
+                container.innerHTML = ""
+
+                // ⭐ 返回职业页
+                const header = document.createElement("div")
+                header.innerHTML =
+                    `<b><a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a> <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a></b><br><br><a href="https://seicing.com/html/dnfclass/${this.jobChiName}.html#gall"><b>回到职业页面</b></a><br><br>`
+                container.appendChild(header)
+
+                this.skills.forEach(s => {
+                    const item = document.createElement("div")
+                    item.className = "side-item"
+                    item.textContent = s.name
+                    item.dataset.target = "skill-" + s.skillId
+                    container.appendChild(item)
+                })
+
+                window.dispatchEvent(new Event("sidebar-updated"))
+
+                if (typeof cloneSidebarContent === "function") {
+                    cloneSidebarContent()
+                }
+            }
+
+        }
+
+    }).mount("#app")
+
+    document.addEventListener("click", e => {
+        const item = e.target.closest(".side-item")
+        if (!item) return
+
+        const id = item.dataset.target || item.getAttribute("data-target")
+        const el = document.getElementById(id)
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" })
+        }
+    })
+</script>
+
+</html>
