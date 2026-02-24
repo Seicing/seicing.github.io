@@ -128,7 +128,7 @@
                 学习等级: {{ getCurrentLearnLevel(skill) }} |
 
                 <span v-if="skill.current.castingTime != null">
-                    施放: {{ skill.current.castingTime }} |
+                    施放时间: {{ skill.current.castingTime }} |
                 </span>
                 <span v-if="skill.current.coolTime != null">
                     冷却时间: {{ skill.current.coolTime }} 秒 |
@@ -140,7 +140,7 @@
                     {{ skill.current.consumeItemText }} |
                 </span>
 
-                最大等级: {{ skill.maxLevel }}
+                等级上限: {{ skill.maxLevel }}
             </div>
 
             <div class="desc" v-html="skill.desc.replaceAll('\n','<br>')"></div>
