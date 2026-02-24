@@ -226,7 +226,7 @@
 
                 const reqs = ids.map(id =>
                     // 把前面的域名换成 /dnf-api/，注意开头有斜杠
-                    fetch(`https://data.seicing.com/dnf-api/open/${this.jobId}/${this.jobGrowId}/${id}/`)
+                    fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
                         .then(r => r.json())
                         .then(j => this.normalize(id, j.data))
                 )
@@ -331,7 +331,7 @@
                 // ⭐ 返回职业页
                 const header = document.createElement("div")
                 header.innerHTML =
-                    `<b><a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a><a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a></b><br><br><a href="https://seicing.com/html/dnfclass/${this.jobChiName}.html#gall"><b>回到职业页面</b></a><br><br>`
+                    `<b><a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a> <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a></b><br><br><a href="https://seicing.com/html/dnfclass/${this.jobChiName}.html#gall"><b>回到职业页面</b></a><br><br>`
                 container.appendChild(header)
 
                 this.skills.forEach(s => {
