@@ -125,7 +125,7 @@
             </div>
 
             <div class="meta937">
-                {{ skill.current.learnLevelText }} |
+                当前学习等级: {{ getCurrentLearnLevel(skill) }} |
 
                 <span v-if="skill.current.castingTime != null">
                     施放: {{ skill.current.castingTime }} |
@@ -388,7 +388,19 @@
                 if (typeof cloneSidebarContent === "function") {
                     cloneSidebarContent()
                 }
-            }
+            },
+
+            getCurrentLearnLevel(skill) {
+                // 默认等级（从文本里提取数字）
+                const base = parseInt(skill.current.learnLevelText) || 0
+
+                const lv = skill.lv || 1
+                const range = skill.range || 0
+
+                if (lv <= 1) return base
+
+                return base + (lv - 1) * range
+            },
 
         }
 
