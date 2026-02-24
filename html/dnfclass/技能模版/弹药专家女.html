@@ -208,36 +208,35 @@
         methods: {
 
             async init() {
-                const list = await fetch("https://seicing.com/js/dnfskills.json").then(r => r.json())
 
-                const ids = [
-                    ...new Set(
-                        list
-                            .filter(x => x.jobId === this.jobId && x.jobGrowId === this.jobGrowId)
-                            .map(x => x.skillId)
+                // ① 先拿职业技能列表
+                const skillListRes = await fetch(
+                    `https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/skills/`
+                ).then(r => r.json())
+
+                const skillList = skillListRes.data || []
+
+                // ② 过滤掉不需要的技能
+                const filtered = skillList.filter(s =>
+                    !this.excludeNames.includes(s.name)
+                )
+
+                // ⭐ 可选：按学习等级排序（推荐）
+                filtered.sort((a, b) => a.requiredLevel - b.requiredLevel)
+
+                // ③ 请求技能详情
+                const reqs = filtered.map(s =>
+                    fetch(
+                        `https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${s.skillId}/`
                     )
-                ]
-
-                //  const reqs = ids.map(id =>
-                //        fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
-                //            .then(r => r.json())
-                //            .then(j => this.normalize(id, j.data))
-                //    )
-
-                const reqs = ids.map(id =>
-                    // 把前面的域名换成 /dnf-api/，注意开头有斜杠
-                    fetch(`https://api.dnftools.com/open/${this.jobId}/${this.jobGrowId}/${id}/`)
                         .then(r => r.json())
-                        .then(j => this.normalize(id, j.data))
+                        .then(j => this.normalize(s.skillId, j.data))
                 )
 
                 this.skills = []
 
                 for (const req of reqs) {
                     const skill = await req
-
-                    if (this.excludeNames.includes(skill.name)) continue
-
                     this.skills.push(skill)
                 }
 
