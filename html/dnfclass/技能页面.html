@@ -74,6 +74,10 @@
         transition: all .15s ease;
     }
 
+    .vp-item {
+        margin-bottom: 16px;
+    }
+
     /* 电脑模式：强制隐藏 */
     @media (min-width: 1280px) {
         .side-item {
@@ -155,7 +159,7 @@
 
                     <div class="vp-detail" v-html="vp.descDetail.replaceAll('\n','<br>')">
                     </div>
-                </div><br><br>
+                </div>
             </div>
 
         </div>
@@ -224,7 +228,15 @@
         },
 
         mounted() {
-            document.title = this.jobChiName
+            let titleName = this.jobChiName || ""
+            if (this.jobId?.includes("_female")) {
+                titleName = titleName.replace(/女$/, "") + "(女)"
+            }
+            else if (this.jobId?.includes("_male")) {
+                titleName = titleName.replace(/男$/, "") + "(男)"
+            }
+            document.title = titleName
+
             this.init()
         },
 
