@@ -228,13 +228,19 @@
         },
 
         mounted() {
+
             let titleName = this.jobChiName || ""
-            if (this.grow?.includes("_female")) {
+
+            const grow = this.jobGrowId || ""
+
+            if (grow.endsWith("_female")) {
+                // 去掉结尾的“女”再加(女)
                 titleName = titleName.replace(/女$/, "") + "(女)"
             }
-            else if (this.grow?.includes("_male")) {
+            else if (grow.endsWith("_male")) {
                 titleName = titleName.replace(/男$/, "") + "(男)"
             }
+
             document.title = titleName
 
             this.init()
