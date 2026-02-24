@@ -121,7 +121,7 @@
             </div>
 
             <div class="meta937">
-                学习等级: {{ skill.current.learnLevelText }} |
+                {{ skill.current.learnLevelText }} |
 
                 <span v-if="skill.current.castingTime != null">
                     施放: {{ skill.current.castingTime }} |
@@ -287,8 +287,10 @@
                     coolTime: row.coolTime,
                     consumeMp: row.consumeMp,
                     levelDesc: text,
-
-                    learnLevelText: `学习等级: ${base}${range ? " + " + range : ""}`
+                    learnLevelText: `学习等级: ${skill.requiredLevel || 0}${skill.requiredLevelRange
+                            ? "(+" + skill.requiredLevelRange + ")"
+                            : ""
+                        }`
                 }
             },
 
