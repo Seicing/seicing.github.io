@@ -132,6 +132,9 @@
                 <span v-if="skill.current.consumeMp != null">
                     魔法值: {{ skill.current.consumeMp }} |
                 </span>
+                <span v-if="skill.current.consumeItemText">
+                    {{ skill.current.consumeItemText }} |
+                </span>
 
                 最大等级: {{ skill.maxLevel }}
             </div>
@@ -258,6 +261,7 @@
                     lv: 1,
                     maxLevel: data.maxLevel || rows.length,
                     optionDesc: data.levelInfo?.optionDesc || "",
+                    consumeItem: data.consumeItem || null,
                     requiredLevel: data.requiredLevel,
                     requiredLevelRange: data.requiredLevelRange || 0,
                     current: {}
@@ -288,9 +292,12 @@
                     consumeMp: row.consumeMp,
                     levelDesc: text,
                     learnLevelText: `学习等级: ${skill.requiredLevel || 0}${skill.requiredLevelRange
-                            ? "(+" + skill.requiredLevelRange + ")"
-                            : ""
-                        }`
+                        ? "(+" + skill.requiredLevelRange + ")"
+                        : ""
+                        }`,
+                    consumeItemText: skill.consumeItem
+                        ? `${skill.consumeItem.itemName}: ${skill.consumeItem.value}`
+                        : null
                 }
             },
 
