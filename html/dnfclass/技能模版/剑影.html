@@ -121,14 +121,14 @@
             </div>
 
             <div class="meta937">
+                学习等级: {{ skill.current.learnLevelText }} |
+
                 <span v-if="skill.current.castingTime != null">
                     施放: {{ skill.current.castingTime }} |
                 </span>
-
                 <span v-if="skill.current.coolTime != null">
                     冷却时间: {{ skill.current.coolTime }} 秒 |
                 </span>
-
                 <span v-if="skill.current.consumeMp != null">
                     魔法值: {{ skill.current.consumeMp }} |
                 </span>
@@ -158,13 +158,13 @@
     <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a>
 </b>
 <br><br>
-<a href="https://seicing.com/html/dnfclass/剑影.html"><b>回到职业页面</b></a>
+<a href="https://seicing.com/html/dnfclass/剑影.html#gall"><b>回到职业页面</b></a>
                     </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
                     
-<a href="https://seicing.com/html/dnfclass/剑影.html"><b>回到职业页面</b></a>
+<a href="https://seicing.com/html/dnfclass/剑影.html#gall"><b>回到职业页面</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
             </div>
@@ -188,7 +188,7 @@
         data() {
             return {
                 excludeNames: [
-                    "后跳", "基础精通", "受身蹲伏", "防具精通", "强化 - 后跳", "跃翔", "暴击", "卓越之力", "超卓之心", "觉醒之抉择",
+                    "后跳", "基础精通", "受身蹲伏", "防具精通", "强化 - 后跳", "跃翔", "暴击", "卓越之力", "超卓之心", "觉醒之抉择", "攻击类型转换",
                 ],
                 loading: true,
                 jobId: "swordman_male",
@@ -258,6 +258,8 @@
                     lv: 1,
                     maxLevel: data.maxLevel || rows.length,
                     optionDesc: data.levelInfo?.optionDesc || "",
+                    requiredLevel: data.requiredLevel,
+                    requiredLevelRange: data.requiredLevelRange || 0,
                     current: {}
                 }
 
@@ -277,11 +279,16 @@
                     if (v != null) text = text.replaceAll(`{${k}}`, v)
                 }
 
+                const base = (skill.requiredLevel || 0) - (skill.requiredLevelRange || 0)
+                const range = skill.requiredLevelRange || 0
+
                 skill.current = {
                     castingTime: row.castingTime,
                     coolTime: row.coolTime,
                     consumeMp: row.consumeMp,
-                    levelDesc: text
+                    levelDesc: text,
+
+                    learnLevelText: `学习等级: ${base}${range ? " + " + range : ""}`
                 }
             },
 
@@ -315,7 +322,7 @@
                 // ⭐ 返回职业页
                 const header = document.createElement("div")
                 header.innerHTML =
-                    `<b><a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a><a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a></b><br><br><a href="https://seicing.com/html/dnfclass/${this.jobChiName}.html"><b>回到职业页面</b></a><br><br>`
+                    `<b><a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a><a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a></b><br><br><a href="https://seicing.com/html/dnfclass/${this.jobChiName}.html#gall"><b>回到职业页面</b></a><br><br>`
                 container.appendChild(header)
 
                 this.skills.forEach(s => {
