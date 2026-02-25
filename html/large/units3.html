@@ -31,8 +31,8 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div style="width:1250px;overflow-x: auto !important;">
-    <table id="customers" style="min-width:1250px;font-size: 9pt!important;">
+                        <div class="entry"><div style="width:100%;overflow-x: auto !important;">
+    <table id="customers" style="font-size: 9pt!important;">
         <tr>
             <td style="background-color:#cae5ff;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.png" width="40px">
             </td>
@@ -40,7 +40,7 @@
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/刀剑手.png"></td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/火矛兵.png"></td>
 
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/黑光铠骑兵.png" width="100px" data-scale-base></td>
+            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/黑光铠骑兵.png"></td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/铁浮屠.png"></td>
 
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/诸葛弩.png"></td>
@@ -170,19 +170,19 @@
 <script>
     window.addEventListener('load', function () {
 
-        const table = document.querySelector('#customers');
+        const table = document.querySelector('#skillTable');
         if (!table) return;
 
         const BASE_NAME = '黑光铠骑兵.png';
 
         let baseImg = null;
 
-        // 找基准图（解决中文编码问题）
-        table.querySelectorAll('img').forEach(img => {
+        const imgs = table.querySelectorAll('img');
+
+        // 找基准图
+        imgs.forEach(img => {
             const decoded = decodeURIComponent(img.src);
-            if (decoded.includes(BASE_NAME)) {
-                baseImg = img;
-            }
+            if (decoded.includes(BASE_NAME)) baseImg = img;
         });
 
         if (!baseImg) {
@@ -190,30 +190,43 @@
             return;
         }
 
-        // 计算缩放比例
         const scale = baseImg.offsetWidth / baseImg.naturalWidth;
 
-        // 统一缩放 + 裁剪 td
+        // ===== 处理每个单元格 =====
         table.querySelectorAll('td').forEach(td => {
             const img = td.querySelector('img');
             if (!img) return;
 
-            // 1️⃣ 缩放图片
-            img.style.transform = `scale(${scale})`;
-            img.style.transformOrigin = 'top left';
-            img.style.display = 'block';
+            const w = img.naturalWidth * scale;
+            const h = img.naturalHeight * scale;
 
-            // 2️⃣ 裁剪单元格尺寸
-            td.style.width = (img.naturalWidth * scale) + 'px';
-            td.style.height = (img.naturalHeight * scale) + 'px';
+            // 创建容器
+            const box = document.createElement('div');
+            box.style.width = w + 'px';
+            box.style.height = h + 'px';
+            box.style.position = 'relative';
+            box.style.margin = '0 auto'; // 水平居中
+
+            // 清空 td
+            td.innerHTML = '';
             td.style.padding = '0';
-            td.style.verticalAlign = 'top';
+            td.style.verticalAlign = 'bottom';
+            td.style.textAlign = 'center';
+
+            // 缩放图片
+            img.style.transform = `scale(${scale})`;
+            img.style.transformOrigin = 'bottom center';
+            img.style.position = 'absolute';
+            img.style.bottom = '0';
+            img.style.left = '50%';
+            img.style.translate = '-50% 0';
+
+            box.appendChild(img);
+            td.appendChild(box);
         });
 
-        // 让表格自动收紧
         table.style.tableLayout = 'auto';
         table.style.width = 'auto';
-
     });
 </script>
 
