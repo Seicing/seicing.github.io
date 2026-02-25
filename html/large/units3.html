@@ -167,25 +167,53 @@
         transform-origin: top center;
     }
 </style>
-
 <script>
     window.addEventListener('load', function () {
+
         const table = document.querySelector('#customers');
         if (!table) return;
 
-        const scale = window.__imgScale || 0.65; // 你已有的缩放值
+        const BASE_NAME = '黑光铠骑兵.png';
 
+        let baseImg = null;
+
+        // 找基准图（解决中文编码问题）
+        table.querySelectorAll('img').forEach(img => {
+            const decoded = decodeURIComponent(img.src);
+            if (decoded.includes(BASE_NAME)) {
+                baseImg = img;
+            }
+        });
+
+        if (!baseImg) {
+            console.warn('未找到基准图');
+            return;
+        }
+
+        // 计算缩放比例
+        const scale = baseImg.offsetWidth / baseImg.naturalWidth;
+
+        // 统一缩放 + 裁剪 td
         table.querySelectorAll('td').forEach(td => {
             const img = td.querySelector('img');
             if (!img) return;
 
-            const w = img.naturalWidth * scale;
-            const h = img.naturalHeight * scale;
+            // 1️⃣ 缩放图片
+            img.style.transform = `scale(${scale})`;
+            img.style.transformOrigin = 'top left';
+            img.style.display = 'block';
 
-            td.style.width = w + 'px';
-            td.style.height = h + 'px';
-            td.style.padding = '2px';
+            // 2️⃣ 裁剪单元格尺寸
+            td.style.width = (img.naturalWidth * scale) + 'px';
+            td.style.height = (img.naturalHeight * scale) + 'px';
+            td.style.padding = '0';
+            td.style.verticalAlign = 'top';
         });
+
+        // 让表格自动收紧
+        table.style.tableLayout = 'auto';
+        table.style.width = 'auto';
+
     });
 </script>
 
