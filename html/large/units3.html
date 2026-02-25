@@ -109,24 +109,6 @@
 
 
 
-
-        <tr>
-            <td style="background-color:#cae5ff;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Huns.png" width="40px">
-            </td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/草原枪兵.png"></td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/辽刀.png"></td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/答剌罕骑兵.png"></td>
-
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/heroes/匈奴王阿提拉.png"></td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/怯薛.png"></td>
-
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/钦察.png"></td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/蒙古突骑.png"></td>
-            <td> </td>
-
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/骆驼投石机.png"></td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/僧侣中亚.png"></td>
-        </tr>
     </table>
 </div>
 
@@ -188,20 +170,23 @@
 
 <script>
     window.addEventListener('load', function () {
-        const baseImg = document.querySelector('img[data-scale-base]');
-        if (!baseImg) {
-            console.warn('未找到基准图');
-            return;
-        }
+        const table = document.querySelector('#customers');
+        if (!table) return;
 
-        const scale = baseImg.offsetWidth / baseImg.naturalWidth;
+        const scale = window.__imgScale || 0.65; // 你已有的缩放值
 
-        document.querySelectorAll('img').forEach(img => {
-            img.style.transform = `scale(${scale})`;
-            img.style.transformOrigin = 'top left';
+        table.querySelectorAll('td').forEach(td => {
+            const img = td.querySelector('img');
+            if (!img) return;
+
+            const w = img.naturalWidth * scale;
+            const h = img.naturalHeight * scale;
+
+            td.style.width = w + 'px';
+            td.style.height = h + 'px';
+            td.style.padding = '2px';
         });
     });
-
 </script>
 
 </html>
