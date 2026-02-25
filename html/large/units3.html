@@ -169,4 +169,42 @@
     }
 </style>
 
+<script>
+    window.addEventListener('load', function () {
+        const BASE_NAME = '黑光铠骑兵.png'; // ← 改这里
+
+        const imgs = document.querySelectorAll('img');
+        let baseImg = null;
+
+        // 找基准图
+        imgs.forEach(img => {
+            if (img.src.includes(BASE_NAME)) {
+                baseImg = img;
+            }
+        });
+
+        if (!baseImg) {
+            console.warn('未找到基准图');
+            return;
+        }
+
+        const natural = baseImg.naturalWidth;
+        const current = baseImg.offsetWidth;
+
+        if (!natural || !current) {
+            console.warn('基准图尺寸读取失败');
+            return;
+        }
+
+        const scale = current / natural;
+        console.log('统一缩放倍率:', scale);
+
+        // 应用到所有图片
+        imgs.forEach(img => {
+            img.style.transform = `scale(${scale})`;
+            img.style.transformOrigin = 'top left';
+        });
+    });
+</script>
+
 </html>
