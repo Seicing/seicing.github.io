@@ -10,8 +10,9 @@
     }
 
     .unit-card {
-        border: 1px solid #000;
-        /* 外侧统一描边 */
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
         width: 700px;
         margin: 10px 0;
         box-sizing: border-box;
@@ -32,10 +33,16 @@
         display: flex;
     }
 
-    .img-wrapper img {
+    .img-wrapperleft img {
         display: block;
         width: 150px;
-        height: auto;
+        height: 150px;
+    }
+
+    .img-wrapperright img {
+        display: block;
+        width: 133px;
+        height: 196px;
     }
 
     /* 左右图片描边 */
@@ -67,10 +74,7 @@
     }
 
     .unit-default {
-        margin-top: 1px;
-        border-top: 1px solid #000;
         font-style: italic;
-        padding: 1px 0;
     }
 
     /* 名字列表 */
@@ -78,15 +82,12 @@
         display: flex;
         flex-direction: column;
         gap: 0;
-        /* 用单元格边框模拟间隔 */
     }
 
     .unit-item {
         display: flex;
         background-color: white;
         border-bottom: 1px solid #000;
-        /* 每行下边框 */
-        padding: 3px;
         box-sizing: border-box;
     }
 
