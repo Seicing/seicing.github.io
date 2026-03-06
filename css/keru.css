@@ -10,109 +10,114 @@
     }
 
     .unit-card {
-        background-color: black;
-        /* 整个表格背景黑色 */
-        padding: 1px;
-        /* 描边效果 */
-        margin: 10px 0;
+        border: 1px solid #000;
+        /* 外侧统一描边 */
         width: 700px;
+        margin: 10px 0;
         box-sizing: border-box;
     }
 
+    /* 表头布局 */
     .unit-header {
         display: flex;
-        align-items: flex-start;
-        gap: 1px;
-        /* 图片和中间内容间距 */
-        flex-wrap: wrap;
-        background-color: black;
+        align-items: stretch;
+        /* 高度一致 */
+        gap: 0;
+        /* 图片与中间内容间用边框控制 */
     }
 
-    .unit-img-left,
-    .unit-img-right {
-        width: 150px;
-        /* 固定宽度 */
-        flex-shrink: 0;
+    /* 图片容器，方便单边描边 */
+    .img-wrapper {
         background-color: white;
+        display: flex;
     }
 
+    .img-wrapper img {
+        display: block;
+        width: 150px;
+        height: auto;
+    }
+
+    /* 左右图片描边 */
+    .img-left {
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .img-right {
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    /* 中间内容 */
     .unit-center {
         flex: 1;
-        /* 中间区域自适应剩余空间 */
-        min-width: 200px;
         background-color: white;
-        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        border-bottom: 1px solid #000;
+        /* 下边描边 */
     }
 
-    /* 右图固定在右侧 */
-    .unit-img-right {
-        margin-left: auto;
-    }
-
+    /* unit-desc / unit-default 上下 1px 描边 */
     .unit-desc {
-        margin-bottom: 8px;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #000;
     }
 
     .unit-default {
+        margin-top: 1px;
+        border-top: 1px solid #000;
         font-style: italic;
+        padding: 1px 0;
     }
 
     /* 名字列表 */
     .unit-list {
         display: flex;
         flex-direction: column;
-        gap: 1px;
-        /* 单元格间距 */
-        background-color: black;
-        padding: 1px;
+        gap: 0;
+        /* 用单元格边框模拟间隔 */
     }
 
     .unit-item {
         display: flex;
         background-color: white;
+        border-bottom: 1px solid #000;
+        /* 每行下边框 */
         padding: 3px;
+        box-sizing: border-box;
     }
 
     .unit-name {
         width: 120px;
-        /* 固定左格宽度 */
     }
 
     .unit-star {
         flex: 1;
-        /* 右格自适应 */
         text-align: left;
     }
 
-    /* 响应式：屏幕小于700px */
+    /* 响应式手机模式 */
     @media (max-width: 700px) {
         .unit-card {
             width: 100%;
-            /* 占满屏幕宽度 */
         }
 
         .unit-header {
             flex-wrap: wrap;
-            /* 允许换行 */
         }
 
-        .unit-img-left,
-        .unit-img-right {
-            width: 48%;
-            /* 图片并排显示 */
-            margin: 1% 1% 0 0;
+        .img-wrapper {
+            width: calc(50% - 0.5px);
+            margin: 0;
         }
 
         .unit-center {
             flex-basis: 100%;
-            /* 占满整行 */
             order: 3;
-            /* 放在图片下方 */
-            margin: 5px 0 0 0;
-        }
-
-        .unit-item {
-            flex-wrap: wrap;
-            /* 保持名字和说明在同一行 */
+            border-bottom: 1px solid #000;
+            margin: 1px 0 0 0;
         }
     }
