@@ -18,13 +18,10 @@
         box-sizing: border-box;
     }
 
-    /* 表头布局 */
     .unit-header {
         display: flex;
         align-items: stretch;
         /* 高度一致 */
-        gap: 0;
-        /* 图片与中间内容间用边框控制 */
     }
 
     /* 图片容器，方便单边描边 */
@@ -33,18 +30,21 @@
         display: flex;
     }
 
-    .img-wrapperleft img {
+    .img-wrapperleft,
+    .img-wrapperright {
         display: flex;
         align-items: center;
-        /* 垂直居中 */
+        justify-content: center;
+    }
+
+    .img-wrapperleft img {
+        display: block;
         width: 150px;
         height: 150px;
     }
 
     .img-wrapperright img {
-        display: flex;
-        align-items: center;
-        /* 垂直居中 */
+        display: block;
         width: 133px;
         height: 196px;
     }
@@ -108,10 +108,26 @@
 
     /* 响应式手机模式 */
     @media (max-width: 700px) {
+
+        /* 图片容器，方便单边描边 */
+        .img-wrapper {
+            background-color: white;
+            display: flex;
+        }
+
+        .img-wrapperleft,
+        .img-wrapperright {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex: none;
+            /* 不拉伸 */
+        }
+
         .unit-desc {
             border-bottom: 1px solid #000;
             border-top: 1px solid #000;
-            min-height: none;
+            min-height: 16px;
         }
 
         /* 左右图片描边 */
