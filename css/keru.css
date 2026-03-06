@@ -34,13 +34,17 @@
     }
 
     .img-wrapperleft img {
-        display: block;
+        display: flex;
+        align-items: center;
+        /* 垂直居中 */
         width: 150px;
         height: 150px;
     }
 
     .img-wrapperright img {
-        display: block;
+        display: flex;
+        align-items: center;
+        /* 垂直居中 */
         width: 133px;
         height: 196px;
     }
@@ -71,6 +75,7 @@
     .unit-desc {
         margin-bottom: 1px;
         border-bottom: 1px solid #000;
+        min-height: 180px;
     }
 
     .unit-default {
@@ -92,6 +97,7 @@
     }
 
     .unit-name {
+        border-right: 1px solid #000;
         width: 120px;
     }
 
@@ -102,7 +108,27 @@
 
     /* 响应式手机模式 */
     @media (max-width: 700px) {
+        .unit-desc {
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+            min-height: none;
+        }
+
+        /* 左右图片描边 */
+        .img-left {
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .img-right {
+            border-left: none;
+            border-bottom: none;
+        }
+
         .unit-card {
+            border-top: none;
+            border-left: none;
+            border-right: none;
             width: 100%;
         }
 
