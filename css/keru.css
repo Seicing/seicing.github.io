@@ -94,11 +94,11 @@
         background-color: white;
         border-bottom: 1px solid #000;
         box-sizing: border-box;
-        min-height: 18px;
         align-items: center;
     }
 
     .unit-name {
+        min-height: 18px;
         padding: 2px;
         border-right: 1px solid #000;
         width: 120px;
