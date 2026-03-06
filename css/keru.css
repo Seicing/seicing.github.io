@@ -9,6 +9,10 @@
         vertical-align: middle;
     }
 
+    .unit-img {
+        width: 150px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         .classer img {
             width: 130px;
@@ -18,29 +22,33 @@
 
     @media (max-width:700px) {
 
+        .unit-img {
+            width: 100%;
+        }
+
         .unit-table {
             width: 100% !important;
         }
 
-        /* 第一行改grid */
+        /* 第一行改成grid */
         .unit-table .unit-head {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
 
-        /* 第一格左图 */
-        .unit-table .unit-head td:first-child {
+        /* 左图 */
+        .unit-table .unit-img-left {
             grid-column: 1;
         }
 
-        /* 第二格文字 */
-        .unit-table .unit-head td:nth-child(2) {
-            grid-column: 1 / span 2;
+        /* 右图 */
+        .unit-table .unit-img-right {
+            grid-column: 2;
         }
 
-        /* 第三格右图 */
-        .unit-table .unit-head td:nth-child(3) {
-            grid-column: 2;
+        /* 描述文字占两列 */
+        .unit-table .unit-desc {
+            grid-column: 1 / span 2;
         }
 
         /* 图片自适应 */
