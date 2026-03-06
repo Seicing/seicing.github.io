@@ -1,0 +1,57 @@
+﻿    li {
+        line-height: 1.8
+    }
+
+    .unit-desc {
+        width: 500px;
+        height: 130px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        .classer img {
+            width: 130px;
+            height: auto;
+        }
+    }
+
+    @media (max-width:700px) {
+
+        #customers {
+            width: 100% !important;
+        }
+
+        /* 彻底取消表格布局 */
+        #customers,
+        #customers tbody,
+        #customers tr,
+        #customers td {
+            display: block;
+            width: 100%;
+        }
+
+        /* 第一行变成flex */
+        #customers .unit-head {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* 左右图片并排 */
+        #customers .unit-img-left,
+        #customers .unit-img-right {
+            width: 50%;
+        }
+
+        /* 图片自适应 */
+        #customers img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 描述文字单独一行 */
+        #customers .unit-desc {
+            width: 100%;
+        }
+
+    }
