@@ -71,14 +71,14 @@
     }
 
     .unit-desc {
-        padding: 5px;
+        padding: 2px;
         margin-bottom: 1px;
         border-bottom: 1px solid #000;
         min-height: 180px;
     }
 
     .unit-default {
-        padding: 5px;
+        padding: 2px;
         font-style: italic;
     }
 
@@ -129,7 +129,7 @@
         }
 
         .unit-desc {
-            padding: 5px;
+            padding: 2px;
             border-bottom: 1px solid #000;
             border-top: 1px solid #000;
             min-height: 20px;
