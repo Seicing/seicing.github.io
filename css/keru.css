@@ -2,17 +2,6 @@
         line-height: 1.8
     }
 
-    .unit-desc {
-        width: 500px;
-        height: 130px;
-        text-align: left !important;
-        vertical-align: middle;
-    }
-
-    .unit-img {
-        width: 150px;
-    }
-
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         .classer img {
             width: 130px;
@@ -20,49 +9,48 @@
         }
     }
 
-    @media (max-width:700px) {
 
-        .unit-table {
-            width: 100% !important;
+    .unit-card {
+        max-width: 700px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .unit-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .unit-header img {
+        max-width: 150px;
+        margin: 5px;
+    }
+
+    .unit-desc {
+        margin: 10px 0;
+    }
+
+    .unit-default {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .unit-list .unit-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0;
+    }
+
+    /* 响应式：小于700px时图片并排 */
+    @media (max-width: 700px) {
+        .unit-header {
+            flex-direction: row;
+            justify-content: space-around;
         }
 
-        /* 第一行和第二行取消表格布局 */
-        .unit-table .unit-head,
-        .unit-table .unit-default {
-            display: block;
+        .unit-header img {
+            flex: 1 1 45%;
         }
-
-        /* 第一行的三个td都变block */
-        .unit-table .unit-head td {
-            display: block;
-            width: 100% !important;
-            box-sizing: border-box;
-        }
-
-        /* 左右图片并排 */
-        .unit-table .unit-img-left,
-        .unit-table .unit-img-right {
-            display: inline-block !important;
-            width: 50% !important;
-            vertical-align: top;
-        }
-
-        /* 文字独占一行 */
-        .unit-table .unit-desc {
-            display: block !important;
-            width: 100% !important;
-        }
-
-        /* 默认名称 */
-        .unit-table .unit-default td {
-            display: block;
-            width: 100% !important;
-        }
-
-        /* 图片自适应 */
-        .unit-img {
-            width: 100%;
-            height: auto;
-        }
-
     }
