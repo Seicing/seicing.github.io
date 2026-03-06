@@ -10,33 +10,43 @@
     }
 
     .unit-card {
-        max-width: 700px;
-        margin: 0 auto;
-        border: 1px solid #ccc;
-        padding: 10px;
+        background-color: black;
+        /* 整个表格背景黑色 */
+        padding: 1px;
+        /* 描边效果 */
+        margin: 10px 0;
+        width: 700px;
         box-sizing: border-box;
     }
 
     .unit-header {
         display: flex;
-        flex-wrap: wrap;
-        /* 小屏幕换行 */
         align-items: flex-start;
-        gap: 10px;
+        gap: 1px;
+        /* 图片和中间内容间距 */
+        flex-wrap: wrap;
+        background-color: black;
     }
 
     .unit-img-left,
     .unit-img-right {
         width: 150px;
+        /* 固定宽度 */
         flex-shrink: 0;
-        /* 固定宽度，不缩小 */
+        background-color: white;
     }
 
     .unit-center {
         flex: 1;
-        /* 中间区域占剩余空间 */
+        /* 中间区域自适应剩余空间 */
         min-width: 200px;
-        /* 保证最小宽度 */
+        background-color: white;
+        padding: 5px;
+    }
+
+    /* 右图固定在右侧 */
+    .unit-img-right {
+        margin-left: auto;
     }
 
     .unit-desc {
@@ -47,53 +57,62 @@
         font-style: italic;
     }
 
+    /* 名字列表 */
     .unit-list {
-        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        /* 单元格间距 */
+        background-color: black;
+        padding: 1px;
     }
 
     .unit-item {
         display: flex;
-        justify-content: space-between;
-        padding: 3px 0;
+        background-color: white;
+        padding: 3px;
     }
 
-    .unit-name,
+    .unit-name {
+        width: 120px;
+        /* 固定左格宽度 */
+    }
+
     .unit-star {
         flex: 1;
-        /* 左右宽度一致 */
+        /* 右格自适应 */
         text-align: left;
-        /* 左格左对齐，右格右对齐 */
     }
 
-    .unit-star {
-        text-align: right;
-    }
-
-    /* 响应式：小于700px时两张图片并排 */
+    /* 响应式：屏幕小于700px */
     @media (max-width: 700px) {
-        .unit-header {
-            flex-wrap: nowrap;
-            /* 不换行 */
-            flex-direction: row;
-            /* 横向排列 */
-            justify-content: space-between;
+        .unit-card {
+            width: 100%;
+            /* 占满屏幕宽度 */
         }
 
-        .unit-center {
-            order: 2;
-            /* 放在图片下面 */
-            flex-basis: 100%;
-            /* 占整行 */
-            margin: 10px 0;
+        .unit-header {
+            flex-wrap: wrap;
+            /* 允许换行 */
         }
 
         .unit-img-left,
         .unit-img-right {
             width: 48%;
+            /* 图片并排显示 */
+            margin: 1% 1% 0 0;
         }
 
-        .unit-item span {
-            flex: 1;
-            /* 保持左右宽度一致 */
+        .unit-center {
+            flex-basis: 100%;
+            /* 占满整行 */
+            order: 3;
+            /* 放在图片下方 */
+            margin: 5px 0 0 0;
+        }
+
+        .unit-item {
+            flex-wrap: wrap;
+            /* 保持名字和说明在同一行 */
         }
     }
