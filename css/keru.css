@@ -22,37 +22,45 @@
 
     @media (max-width:700px) {
 
-        .unit-img {
-            width: 100%;
-        }
-
         .unit-table {
             width: 100% !important;
         }
 
-        /* 第一行改成grid */
-        .unit-table .unit-head {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        /* 第一行和第二行取消表格布局 */
+        .unit-table .unit-head,
+        .unit-table .unit-default {
+            display: block;
         }
 
-        /* 左图 */
-        .unit-table .unit-img-left {
-            grid-column: 1;
+        /* 第一行的三个td都变block */
+        .unit-table .unit-head td {
+            display: block;
+            width: 100% !important;
+            box-sizing: border-box;
         }
 
-        /* 右图 */
+        /* 左右图片并排 */
+        .unit-table .unit-img-left,
         .unit-table .unit-img-right {
-            grid-column: 2;
+            display: inline-block !important;
+            width: 50% !important;
+            vertical-align: top;
         }
 
-        /* 描述文字占两列 */
+        /* 文字独占一行 */
         .unit-table .unit-desc {
-            grid-column: 1 / span 2;
+            display: block !important;
+            width: 100% !important;
+        }
+
+        /* 默认名称 */
+        .unit-table .unit-default td {
+            display: block;
+            width: 100% !important;
         }
 
         /* 图片自适应 */
-        .unit-table img {
+        .unit-img {
             width: 100%;
             height: auto;
         }
