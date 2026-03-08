@@ -89,6 +89,7 @@
 
     .unit-item {
         display: flex;
+        align-items: stretch;
         background-color: white;
         border-bottom: 1px solid #000;
         box-sizing: border-box;
@@ -99,13 +100,15 @@
         min-height: 18px;
         padding: 2px;
         border-right: 1px solid #000;
-        width: 120px;
+        width: 100px;
+        display: block;
     }
 
     .unit-star {
         padding: 2px;
         flex: 1;
         text-align: left;
+        display: block;
     }
 
     /* 响应式手机模式 */
@@ -168,6 +171,7 @@
         }
 
         .unit-name {
-            width: 100px;
+            width: 80px;
+            display: block;
         }
     }
