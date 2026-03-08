@@ -100,15 +100,17 @@
         min-height: 18px;
         padding: 2px;
         border-right: 1px solid #000;
-        width: 100px;
-        display: block;
+        width: 0 0 100px;
+        display: flex;
+        align-items: center;
     }
 
     .unit-star {
         padding: 2px;
         flex: 1;
         text-align: left;
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     /* 响应式手机模式 */
@@ -171,7 +173,8 @@
         }
 
         .unit-name {
-            width: 80px;
-            display: block;
+            width: 0 0 80px;
+            display: flex;
+            align-items: center;
         }
     }
