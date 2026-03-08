@@ -93,14 +93,13 @@
         background-color: white;
         border-bottom: 1px solid #000;
         box-sizing: border-box;
-        align-items: center;
     }
 
     .unit-name {
         min-height: 18px;
         padding: 2px;
         border-right: 1px solid #000;
-        width: 0 0 100px;
+        width: 100px;
         display: flex;
         align-items: center;
     }
@@ -173,7 +172,7 @@
         }
 
         .unit-name {
-            width: 0 0 80px;
+            width: 80px;
             display: flex;
             align-items: center;
         }
