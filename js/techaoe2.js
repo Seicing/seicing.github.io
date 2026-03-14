@@ -797,7 +797,7 @@ let ayanami = {
     "虹吸管": /*html*/`虹吸管<br>Siphons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>喷火船获得爆炸蓄力攻击，在0.5格内造成2×7近战区域伤害，+1对远程战舰和建筑`,
     "燃烧弹": /*html*/`燃烧弹<br>Incendiaries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>325 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>喷火船沉没时自爆，在3格范围内造成10近战伤害和+5对远程舰船伤害`,
     "马普切虚空食物": /*html*/`马普切虚空食物<br>果丛采集者额外提交20%的食物`,
-    "马普切定居点": /*html*/`马普切定居点<br>定居点可以训练长矛兵系和掷矛手系单位`,
+    "马普切定居点": /*html*/`马普切定居点<br>定居点可以较慢效率训练长矛兵系和掷矛手系单位`,
     "马普切生命值": /*html*/`马普切生命值<br>步兵、投石手和掷矛手在封建/城堡/帝王时代+5/+10/+15生命值`,
     "马普切掠夺者": /*html*/`马普切掠夺者<br>骑乘单位在击败敌方军事单位时+3黄金`,
     "马普切间谍": /*html*/`马普切间谍<br>显示敌方城堡位置`,
