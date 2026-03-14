@@ -330,6 +330,30 @@
             "score": 1,
             "civ": "Wei",
             "replace": "HeavyCavalryArcher"
+        },
+        {
+            "tech": "HeavyRocketLauncher1",
+            "showId": "精锐骑象射手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到精锐骑象射手.webp",
+            "score": 2,
+            "civ": "Dravidians",
+            "replace": "HeavyCavalryArcher"
+        },
+        {
+            "tech": "HeavyRocketLauncher2",
+            "showId": "精锐骑象射手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到精锐骑象射手.webp",
+            "score": 2,
+            "civ": "Bengalis",
+            "replace": "HeavyCavalryArcher"
+        },
+        {
+            "tech": "HeavyRocketLauncher3",
+            "showId": "精锐骑象射手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到精锐骑象射手.webp",
+            "score": 2,
+            "civ": "Gurjaras",
+            "replace": "HeavyCavalryArcher"
         }
     ]
 }
