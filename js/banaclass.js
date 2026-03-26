@@ -37,33 +37,33 @@ function tipsgo(a) {
 
 function tipsg(a, b) {
     var aaposbo1 = document.querySelector("#Recruit");
-    aaposbo1.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '新兵.png';
+    aaposbo1.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '新兵.png';
     var aaposbo2 = document.querySelector("#Warrior");
-    aaposbo2.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '武士.png';
+    aaposbo2.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '武士.png';
     var aaposbo3 = document.querySelector("#Phalanx");
-    aaposbo3.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '兵方队.png';
+    aaposbo3.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '兵方队.png';
     var aaposbo4 = document.querySelector("#Skirmisher");
-    aaposbo4.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '散兵.png';
+    aaposbo4.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '散兵.png';
     var aaposbo5 = document.querySelector("#Vanguard");
-    aaposbo5.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '先锋.png';
+    aaposbo5.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '先锋.png';
 
     var aaposbo6 = document.querySelector("#Mage");
-    aaposbo6.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '法师.png';
+    aaposbo6.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '法师.png';
     var aaposbo7 = document.querySelector("#Sorceress");
-    aaposbo7.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '巫师.png';
+    aaposbo7.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '巫师.png';
     var aaposbo8 = document.querySelector("#Scholar");
-    aaposbo8.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '学者.png';
+    aaposbo8.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '学者.png';
     var aaposbo9 = document.querySelector("#Cleric");
-    aaposbo9.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '神官.png';
+    aaposbo9.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '神官.png';
     var aaposbo10 = document.querySelector("#Wizard");
-    aaposbo10.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '术士.png';
+    aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '术士.png';
 
     var aaposbo11 = document.querySelector("#Ranger");
-    aaposbo11.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '游兵.png';
+    aaposbo11.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '游兵.png';
     var aaposbo12 = document.querySelector("#Sentinel");
-    aaposbo12.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '近卫.png';
+    aaposbo12.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '近卫.png';
     var aaposbo13 = document.querySelector("#Citizen");
-    aaposbo13.src = 'https://seicing.com/res/fatcatpool/essay/forte/' + a + '市民.png';
+    aaposbo13.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '市民.png';
     var aaposbo14 = document.querySelector("#Describe");
     aaposbo14.innerHTML = a;
 
@@ -84,30 +84,30 @@ function tipsg(a, b) {
 
 function tipsb(a, b) {
     var aaposbo1 = document.querySelector("#WesternSeigine");
-    aaposbo1.src = 'https://seicing.com/res/fatcatpool/essay/forte/西西景' + a + '.png';
+    aaposbo1.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西西景' + a + '.png';
     var aaposbo2 = document.querySelector("#CentralSeigine");
-    aaposbo2.src = 'https://seicing.com/res/fatcatpool/essay/forte/中央西景' + a + '.png';
+    aaposbo2.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/中央西景' + a + '.png';
     var aaposbo3 = document.querySelector("#SouthernSeigine");
-    aaposbo3.src = 'https://seicing.com/res/fatcatpool/essay/forte/南西景' + a + '.png';
+    aaposbo3.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/南西景' + a + '.png';
     var aaposbo4 = document.querySelector("#NorthernSeigine");
-    aaposbo4.src = 'https://seicing.com/res/fatcatpool/essay/forte/北西景' + a + '.png';
+    aaposbo4.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/北西景' + a + '.png';
 
     var aaposbo11 = document.querySelector("#EasternSeigine");
-    aaposbo11.src = 'https://seicing.com/res/fatcatpool/essay/forte/东西景' + a + '.png';
+    aaposbo11.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/东西景' + a + '.png';
 
     var aaposbo5 = document.querySelector("#GrandDelta");
-    aaposbo5.src = 'https://seicing.com/res/fatcatpool/essay/forte/大三角洲' + a + '.png';
+    aaposbo5.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/大三角洲' + a + '.png';
 
     var aaposbo6 = document.querySelector("#EasternAltrata");
-    aaposbo6.src = 'https://seicing.com/res/fatcatpool/essay/forte/东艾特拉塔' + a + '.png';
+    aaposbo6.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/东艾特拉塔' + a + '.png';
     var aaposbo7 = document.querySelector("#WesternAltrata");
-    aaposbo7.src = 'https://seicing.com/res/fatcatpool/essay/forte/西艾特拉塔' + a + '.png';
+    aaposbo7.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西艾特拉塔' + a + '.png';
     var aaposbo8 = document.querySelector("#InnerAltrata");
-    aaposbo8.src = 'https://seicing.com/res/fatcatpool/essay/forte/内艾特拉塔' + a + '.png';
+    aaposbo8.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/内艾特拉塔' + a + '.png';
     var aaposbo9 = document.querySelector("#IuireMainland");
-    aaposbo9.src = 'https://seicing.com/res/fatcatpool/essay/forte/尤伊本岛' + a + '.png';
+    aaposbo9.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊本岛' + a + '.png';
     var aaposbo10 = document.querySelector("#IuireSeparation");
-    aaposbo10.src = 'https://seicing.com/res/fatcatpool/essay/forte/尤伊离岛' + a + '.png';
+    aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊离岛' + a + '.png';
 
 
 

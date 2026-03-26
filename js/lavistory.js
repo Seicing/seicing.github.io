@@ -31,14 +31,14 @@ createApp({
                         let astyle = "";
 
                         const commonAstyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
-                            `background-image: url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${attach}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${special}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${sweat}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${red_face}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${brow}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${eye}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${mouth}.png),` +
-                            `url(https://seicing.com/res/fatcatpool/essay/chara/${item.char}/${baseys}.png);` +
+                            `background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${attach}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${special}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${sweat}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${red_face}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${brow}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${eye}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${mouth}.png),` +
+                            `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${baseys}.png);` +
                             "background-repeat: no-repeat;background-size: 40%;";
 
                         if (item.dic === 4) {

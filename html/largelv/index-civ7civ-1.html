@@ -161,7 +161,7 @@
     // ============================
     // 加载底图
     // ============================
-    const overlay = L.imageOverlay('https://seicing.com/res/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
+    const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图.jpg', bounds).addTo(map);
 
     overlay.once("load", () => {
         map.fitBounds(bounds, { animate: false });
