@@ -343,7 +343,7 @@ let ayanami = {
     "蛇发女妖之脸": /*html*/`蛇发女妖之脸<br>Face of the Gorgon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>美杜莎升级为美杜莎女族长，远程攻击射程+5，特殊攻击充能时间-25%`,
     "雅典之墙": /*html*/`雅典之墙<br>Athenian Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>建筑物生命值+20%，墙壁生命值+30%`,
 
-    "阿尔戈斯的庇佑": /*html*/`阿尔戈斯的庇佑<br>Argive Patronage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每60秒要塞会生成密尔米顿步兵(宙斯)/亚马逊弓箭手(得墨忒耳)`,
+    "阿尔戈斯的庇佑": /*html*/`阿尔戈斯的庇佑<br>Argive Patronage<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>每60秒要塞会生成密尔米顿步兵(宙斯)/亚马逊步弓手(得墨忒耳)`,
 
 
     "储藏": /*html*/`储藏<br>Plenty<br>选择一个位置来建造这个巨大的地窖。只要你控制它，众神的赏金就会流入你的地窖`,

@@ -79,9 +79,9 @@ export const aoe4list = [
     {
         "civ": "gre",
         "section": "军事单位",
-        "name": "亚马逊弓箭手",
-        "img": "亚马逊弓箭手",
-        "link": "https://seicing.com/html/aoe2/unitaoem/亚马逊弓箭手"
+        "name": "亚马逊步弓手",
+        "img": "亚马逊步弓手",
+        "link": "https://seicing.com/html/aoe2/unitaoem/亚马逊步弓手"
     },
     {
         "civ": "gre",
