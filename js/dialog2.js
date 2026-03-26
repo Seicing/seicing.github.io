@@ -21,16 +21,16 @@ const app = createApp({
                             ...item,
                             faceid: faceid,
                             faceid937: "no_" + faceid,
-                            attach5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/attach.png`,
-                            special5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/special.png`,
-                            sweat5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/sweat.png`,
-                            redface5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/red_face.png`,
-                            brow5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['brow']}.png`,
-                            eyeclose5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['eye3']}.png`,
-                            eye5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['eye']}.png`,
-                            mouth5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['mouth']}.png`,
-                            base5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base.png`,
-                            base6: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base2.png`
+                            attach5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/attach.png`,
+                            special5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/special.png`,
+                            sweat5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/sweat.png`,
+                            redface5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/red_face.png`,
+                            brow5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/${item['brow']}.png`,
+                            eyeclose5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/${item['eye3']}.png`,
+                            eye5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/${item['eye']}.png`,
+                            mouth5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/${item['mouth']}.png`,
+                            base5: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/base.png`,
+                            base6: `https://seicing.com/res/fatcatpool/essay/chara/${characterid}/base2.png`
                         };
                     });
                     aasb.value = processedData;
