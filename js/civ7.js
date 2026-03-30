@@ -189,7 +189,11 @@ let ayanami = {
     "航空母舰": /*html*/`航空母舰<br>Aircraft Carrier<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>160*n<br>移动力 4<br>视野范围 2<br>空中支援单位，能集结一组空中军事单位并进行指挥`,
     "探路者": /*html*/`探路者<br>Pathfinder<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 2<br>视野范围 2<br>探路平民单位，适合探明地形并发现新土地`,
     "探索者": /*html*/`探索者<br>Explorer<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>400+ 400(n-1)<br>移动力 2<br>视野范围 2<br>支援单位，能够寻找并发掘先前时代的掩埋文物`,
+
     "商人": /*html*/`商人<br>Merchant<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>40 + 20(n-1)<br>移动力 4<br>视野范围 2<br>商人可以前往其他领袖的定居点建立贸易路线，从而获得对方的资源<br>商人在帝国内部修建道路方面也发挥着重要作用`,
+
+    "开拓者": /*html*/`开拓者<br>Settler<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>50<br>移动力 3<br>视野范围 1<br>陆地支援单位，能够建立新城镇`,
+    "传教士": /*html*/`传教士<br>Missionary<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>150<br>移动力 4<br>视野范围 1<br>拥有“传播宗教”行动的平民单位<br>首次让一个定居点皈依信仰时获得25金币`,
 
     "魅力型领袖": /*html*/`魅力型领袖<br>Charismatic Leader<br>宫殿+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
     "工具制作": /*html*/`工具制作<br>Tool Making<br>宫殿+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值`,
