@@ -165,14 +165,14 @@ export const aoe4list = [
     "section": "船只",
     "name": "狩猎独木舟",
     "img": "狩猎独木舟",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/狩猎独木舟"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手船"
   },
   {
     "civ": "mal",
     "section": "船只",
     "name": "战争独木舟",
     "img": "战争独木舟",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/战争独木舟"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮船"
   },
   {
     "civ": "mal",

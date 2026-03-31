@@ -214,21 +214,21 @@ export const aoe4list = [
     "section": "船只",
     "name": "戎克船",
     "img": "戎克船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/戎克船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手船"
   },
   {
     "civ": "jpn",
     "section": "船只",
     "name": "戎克战船",
     "img": "戎克战船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/戎克战船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮船"
   },
   {
     "civ": "jpn",
     "section": "船只",
     "name": "爆破型戎克船",
     "img": "爆破型戎克船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/爆破型戎克船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/爆破船"
   },
   {
     "civ": "jpn",

@@ -186,28 +186,28 @@ export const aoe4list = [
     "section": "船只",
     "name": "阿拉伯帆船",
     "img": "阿拉伯帆船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/阿拉伯帆船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手船"
   },
   {
     "civ": "ayy",
     "section": "船只",
     "name": "巴格拉战船",
     "img": "巴格拉战船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/巴格拉战船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮船"
   },
   {
     "civ": "ayy",
     "section": "船只",
     "name": "爆破型阿拉伯帆船",
     "img": "爆破型阿拉伯帆船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/爆破型阿拉伯帆船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/爆破船"
   },
   {
     "civ": "ayy",
     "section": "船只",
     "name": "三桅帆船",
     "img": "三桅帆船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/三桅帆船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/战船"
   },
   {
     "civ": "ayy",

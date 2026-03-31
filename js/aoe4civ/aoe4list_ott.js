@@ -172,14 +172,14 @@ export const aoe4list = [
     "section": "船只",
     "name": "阿拉伯帆船",
     "img": "阿拉伯帆船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/阿拉伯帆船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手船"
   },
   {
     "civ": "ott",
     "section": "船只",
     "name": "趸船",
     "img": "趸船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/趸船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮船"
   },
   {
     "civ": "ott",
@@ -193,7 +193,7 @@ export const aoe4list = [
     "section": "船只",
     "name": "大帆船",
     "img": "大帆船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/大帆船"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/战船"
   },
   {
     "civ": "ott",
