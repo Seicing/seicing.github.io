@@ -66,8 +66,8 @@ export const aoe4list = [
     "civ": "chi",
     "section": "军事单位",
     "name": "长矛骑兵",
-    "img": "长矛骑兵",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/长矛骑兵"
+    "img": "骑士",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/骑士"
   },
   {
     "civ": "chi",

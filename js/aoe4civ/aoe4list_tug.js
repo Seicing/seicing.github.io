@@ -24,8 +24,8 @@ export const aoe4list = [
     "civ": "tug",
     "section": "平民与宗教单位",
     "name": "伊玛目",
-    "img": "伊玛目",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/伊玛目"
+    "img": "僧侣",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/僧侣"
   },
   {
     "civ": "tug",
@@ -73,8 +73,8 @@ export const aoe4list = [
     "civ": "tug",
     "section": "军事单位",
     "name": "长矛骑兵",
-    "img": "长矛骑兵",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/长矛骑兵"
+    "img": "骑士",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/骑士"
   },
   {
     "civ": "tug",

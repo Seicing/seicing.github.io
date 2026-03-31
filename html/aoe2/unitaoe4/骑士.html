@@ -20,6 +20,12 @@
             document.getElementById("rus").classList.remove("aoeTechIconOff");
             document.getElementById("hre").classList.remove("aoeTechIconOff");
             document.getElementById("hol").classList.remove("aoeTechIconOff");
+            document.getElementById("abb").classList.remove("aoeTechIconOff");
+            document.getElementById("chi").classList.remove("aoeTechIconOff");
+            document.getElementById("sul").classList.remove("aoeTechIconOff");
+            document.getElementById("zxl").classList.remove("aoeTechIconOff");
+            document.getElementById("ott").classList.remove("aoeTechIconOff");
+            document.getElementById("tug").classList.remove("aoeTechIconOff");
         })
     })
 </script>
@@ -43,8 +49,11 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp250">
-        <tr class="bcF5F8FA textce">
+        <tr class="bcF5F8FA textce spc_civeng spc_civhol spc_civrus spc_civhre">
             <td colspan="5"><span style="color:#6e6e85">骑士(Knight)</span></td>
+        </tr>
+        <tr class="bcF5F8FA textce spc_civchi spc_civzxl spc_civsul spc_civtug spc_civabb spc_civott">
+            <td colspan="5"><span style="color:#6e6e85">长矛骑兵(Lancer)</span></td>
         </tr>
         <tr class="textce">
             <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png" width="48px"></td>
@@ -206,7 +215,7 @@
         <a id="jia"></a><b><span>简介</span></b>
     </h1>
     <hr class="hrsty">
-    骑士是重型骑兵单位，拥有强力的冲锋伤害，他们是欧洲地区的重装骑兵，相当于东亚和中东地区的长矛骑兵 <br>
+    骑士是重型骑兵单位，拥有强力的冲锋伤害。历史上，骑士是欧洲地区独特的采取重装骑马作战的军事贵族阶级，在欧洲以外的地方虽然存在类似的重装骑兵阶级，但不叫“骑士”，在游戏里把非欧洲地区的骑士总称为“长矛骑兵” <br>
     骑士是城堡时代(Ⅲ)生产的部队，罗斯人拥有早期骑士(Ⅱ)<br>
     俄罗斯曾经是蒙古帝国的势力范围，因此蒙古人可以在汗国宫殿地标中征召罗斯骑士进行使用<br>
 </div>
@@ -221,6 +230,12 @@
         <a id="hreButton0" onclick="showCiv('hre')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png"></a>
         <a id="rusButton0" onclick="showCiv('rus')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/rus.png"></a>
         <a id="holButton0" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
+        <a id="abbButton0" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="chiButton0" onclick="showCiv('chi')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png"></a>
+        <a id="sulButton0" onclick="showCiv('sul')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"></a>
+        <a id="ottButton0" onclick="showCiv('ott')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></a>
+        <a id="zxlButton0" onclick="showCiv('zxl')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png"></a>
+        <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
     </div>
     <div id="engText0" style="text-align:left;display:block">
         <span class="温嘉德宫殿效果"></span><br>
@@ -396,6 +411,275 @@
             </tr>
         </table>
     </div>
+
+    <div id="abbText0" style="text-align:left;display:block">
+        <span class="黄金时代阶段II"></span><br>
+        <span class="黄金时代阶段III"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="chiText0" style="text-align:left;display:none">
+        <span class="元朝效果"></span><br>
+        <span class="明朝效果"></span><br>
+        <span class="朝廷命官效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="zxlText0" style="text-align:left;display:none">
+        <span class="朱子遗训元朝效果"></span><br>
+        <span class="不动如山"></span><br>
+        <span class="侵略如火"></span><br>
+        <span class="朱子遗训朝廷命官效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大理马.png" width="20px">大理马(+20%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="sulText0" style="text-align:left;display:none">
+        <span class="德里免费"></span><br>
+        <span class="德里帝王升级"></span><br>
+        <span class="学者狂热"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珩磨剑刃.png" width="20px">珩磨剑刃(+3)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="tugText0" style="text-align:left;display:none">
+        <span class="图格鲁克科技"></span><br>
+        <span class="贾洛尔总督效果"></span><br>
+        <span class="赫万总督效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText0" style="text-align:left;display:none">
+        <span class="奥斯曼生产加速"></span><br>
+        <span class="伊斯坦布尔天文台效果"></span><br>
+        <span class="攻击战鼓"></span><br>
+        <span class="近战防御战鼓"></span><br>
+        <span class="远程防御战鼓"></span><br>
+        <span class="奥斯曼军乐队战鼓效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力(混战/冲锋)</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="20px">熟铁块吹炼法(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/脱碳.png" width="20px">脱碳(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大马士革钢.png" width="20px">大马士革钢(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">其他</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/高级学院.png" width="20px">高级学院(使军事学校可以生产长矛骑兵)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div>
@@ -445,15 +729,15 @@
         <a id="relk"></a><b><span>历史</span></b>
     </h1>
     <hr class="hrsty">
-    骑士在古典时代的前身是希腊的近卫骑兵(Hippeis)以及罗马帝国的百夫长(Centurion)，他们通常穿着重装护具作战，拥有远超于普通士兵的战斗力，在罗马帝国灭亡后的法兰克王国时代，查理曼大帝率领他的近卫骑兵部队到处东征西战，被认为是中世纪骑士的起源。在查理曼时代，这些骑兵并非都是贵族阶层，不过他们被认为是查理曼属下的精锐部队，拥有自己的装备、粮食和马匹，任何装备精良的骑兵部队在中世纪早期都可以被称为骑士<br><br>
-
+    长矛骑兵(Lancer)是指使用骑枪(Lance)进行战斗的骑兵，战马在奔跑的时候带来了可怕的冲击力，长矛骑兵利用这股冲击力使用长矛进行冲锋攻击，可以轻易地贯穿敌人，在公元前700年的西亚地区就可以见到长矛骑兵战斗的踪影了，但是在没有马镫的时代，长矛骑兵可以起到的作用非常有限，要等到他们成为战场上可靠力量的时候，还是要等到中世纪时期，中世纪的长矛骑兵在整个欧亚大陆都被作为战场主宰力量的重骑兵看待
+    <br><br>
+    长矛骑兵使用特制的骑枪进行战斗，骑枪拥有强大的贯穿能力，虽然也有可以多次重复使用的类型，但一般情况下为了减少冲锋时反作用在骑兵身上的力量，骑枪通常被设计成易碎的，在进行一次冲锋后就报废，冲锋后的长矛骑兵利用自己全身覆甲以及居高临下的优势拔出短兵进行混战，在欧洲地区，这种装备骑枪的装甲骑兵被称为“骑士”
+    <br><br>
+    骑士在古典时代的前身是希腊的近卫骑兵(Hippeis)以及罗马帝国的百夫长(Centurion)，他们通常穿着重装护具作战，拥有远超于普通士兵的战斗力，在罗马帝国灭亡后的法兰克王国时代，查理曼大帝率领他的近卫骑兵部队到处东征西战，被认为是中世纪骑士的起源。在查理曼时代，这些骑兵并非都是贵族阶层，不过他们被认为是查理曼属下的精锐部队，拥有自己的装备、粮食和马匹，任何装备精良的骑兵部队在中世纪早期都可以被称为骑士
+    <br><br>
     在中世纪，随着科技的发展，一些小贵族们开始尝试投入大量的资金去武装自己，例如更加精良的铠甲以及优良的马匹，他们组成了中世纪大部分时期里最核心的军队战斗力；伴随着基督教文化在欧洲的散布，忠诚、荣誉等骑士精神开始作为贵族们的准则，骑士开始形成一个社会阶级，骑士们通常效忠于一个封建领主，被允许拥有自己的财产，在空闲的时候他们的义务就是锻炼自己，在战场上他们的职责就是作为职业军人英勇战斗
     <br><br>
-
     火枪的出现并没有直接性地淘汰骑士阶级，但是依靠火药发展起来的新世界经济使得欧洲各国王权开始集中化，锻造技术的发达使得变得富有的国王们开始组建属于自己的常备军，虽然还有德雷克这种依靠海上的优异表现成为新时代的骑士的人物，但是，在战场上获得战功领取自己封地的时代已经消失了。骑士阶级要么大量破产变成前往新世界的投机者，要么发展成了新生的资产阶级贵族。而直接服务于国王的常备军骑兵则是在接下来的500多年不断地改进自己的作战方式以适应战场的日新月异，直到20世纪坦克的出现
-
-
-
 </div>
 <br><br><br>
 <div>
@@ -466,6 +750,12 @@
         <a id="hreButton1" onclick="showCiv('hre')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png"></a>
         <a id="rusButton1" onclick="showCiv('rus')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/rus.png"></a>
         <a id="holButton1" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
+        <a id="abbButton1" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="chiButton1" onclick="showCiv('chi')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png"></a>
+        <a id="sulButton1" onclick="showCiv('sul')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"></a>
+        <a id="ottButton1" onclick="showCiv('ott')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></a>
+        <a id="zxlButton1" onclick="showCiv('zxl')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png"></a>
+        <a id="tugButton1" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
     </div>
     <div id="engText1" style="text-align:center;display:none">
         <table id="empire">
@@ -569,6 +859,175 @@
             </tr>
         </table>
     </div>
+
+    <div id="abbText1" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑士3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑士3.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑士4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/骑士4.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="chiText1" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士3.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士4.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="zxlText1" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士3.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/骑士4.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="sulText1" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士3.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士4.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="tugText1" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士3.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/骑士4.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText1" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/ott/骑士3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/ott/骑士3.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/ott/骑士4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/ott/骑士4.png"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/margarita-rogova-ott-cavalry-armor-age3.jpg"
+                        target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/margarita-rogova-ott-cavalry-armor-age3.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/margarita-rogova-ott-cavalry-armor-age4.jpg"
+                        target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/margarita-rogova-ott-cavalry-armor-age4.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/vladimir-borisov-ott-horse-armor-age03.jpg"
+                        target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/vladimir-borisov-ott-horse-armor-age03.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵
+                </td>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵高模
+                </td>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵高模
+                </td>
+                <td class="textce bcF5F8FA">
+                    长矛骑兵的马匹高模
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/vladimir-borisov-ott-horse-armor-age04.jpg"
+                        target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/vladimir-borisov-ott-horse-armor-age04.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    精锐长矛骑兵的马匹高模
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div>
@@ -590,6 +1049,18 @@
                     <div class="filterbtn" data-filter="rus" data-keep="true"
                         data-update="damage:19 chargedamage:29 hp:190 armorm:3 armorr:3"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/rus.png"></div>
+                    <div class="filterbtn" data-filter="chi" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png"></div>
+                    <div class="filterbtn" data-filter="zxl" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png"></div>
+                    <div class="filterbtn" data-filter="abb" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></div>
+                    <div class="filterbtn" data-filter="sul" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"></div>
+                    <div class="filterbtn" data-filter="tug" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></div>
+                    <div class="filterbtn" data-filter="ott" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></div>
                 </div>
             </td>
         </tr>
@@ -640,6 +1111,12 @@
                         width="20px">城堡网络：处于城堡网络内的部队增加20%/30%的攻击速度<br></span>
                 <span id="Extra117" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高级教士激励.png"
                         width="20px">战意激昂：被高级教士鼓舞的军事单位护甲+1，伤害+15%<br></span>
+                <span id="Extra123" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png"
+                        width="20px">赫万总督：被医疗大象治疗的单位获得10%/15%/20%/20%伤害，持续10秒<br></span>
+                <span id="Extra2" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png"
+                        width="20px">不动如山：激活后，单位在脱离战斗时每秒恢复 2 生命值<br></span>
+                <span id="Extra116" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狂热.png"
+                        width="20px">狂热：受到学者治疗的单位攻击速度 +50%，持续 3 秒<br></span>
             </td>
         </tr>
     </table>
@@ -647,6 +1124,69 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="tug" data-text="Extra123">
+            <a onmousemove="showPic(event,'赫万总督效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="chi" data-group="chidynasty" data-mode="diffMul" data-type="speed"
+            data-value="1.15"><a onmousemove="showPic(event,'元朝效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/元朝.png" width="30px"></a></div>
+        <div class="icon" data-game="chi" data-group="chidynasty" data-mode="diffMul" data-type="hp" data-value="1.15">
+            <a onmousemove="showPic(event,'明朝效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/明朝.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="zxl" data-group="zxldynasty" data-mode="diffMul" data-type="cost"
+            data-value="0.85"><a onmousemove="showPic(event,'朱子遗训元朝效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/元朝.png" width="30px"></a></div>
+        <div class="icon" data-game="chi" data-mode="diffMul" data-require="chi" data-type="buildtime" data-value="0.4">
+            <a onmousemove="showPic(event,'朝廷命官效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/监督.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="zxl" data-mode="diffMul" data-type="buildtime" data-value="0.25"><a
+                onmousemove="showPic(event,'朱子遗训朝廷命官效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/监督.png" width="30px"></a></div>
+        <div class="icon" data-game="abb" data-mode="diffMul" data-type="buildtime" data-value="0.8"><a
+                onmousemove="showPic(event,'黄金时代阶段III');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png" width="30px"></a></div>
+        <div class="icon" data-game="zxl" data-group="zxlbuff" data-text="Extra2"><a
+                onmousemove="showPic(event,'不动如山');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/不动如山.png" width="30px"></a></div>
+        <div class="icon" data-game="zxl" data-group="zxlbuff" data-mode="diffMul diffMul diffMul"
+            data-type="damage chargedamage firedamage" data-value="1.2 1.2 1.2"><a onmousemove="showPic(event,'侵略如火');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/侵略如火.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="ott" data-group="ottmeh" data-mode="add" data-type="armorm" data-value="2"><a
+                onmousemove="showPic(event,'近战防御战鼓');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/近战防御战鼓.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="ott" data-group="ottmeh" data-mode="add" data-type="armorr" data-value="1"><a
+                onmousemove="showPic(event,'远程防御战鼓');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/远程防御战鼓.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="ott" data-group="ottmeh" data-mode="diffMul" data-type="attackspeed"
+            data-value="0.869"><a onmousemove="showPic(event,'攻击战鼓');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/攻击战鼓.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="ott" data-mode="diffMul" data-type="speed" data-value="1.15"><a
+                onmousemove="showPic(event,'奥斯曼军乐队战鼓效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼军乐队战鼓.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sul" data-text="Extra116"><a onmousemove="showPic(event,'学者狂热');"
+                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/狂热.png" width="30px"></a></div>
+        <div class="icon" data-game="ott" data-mode="sameMul" data-type="buildtime" data-value="-0.286"><a
+                onmousemove="showPic(event,'奥斯曼生产加速');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="ott" data-mode="sameMul" data-type="buildtime" data-value="-0.214"><a
+                onmousemove="showPic(event,'伊斯坦布尔天文台效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/伊斯坦布尔天文台.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="tug" data-mode="add" data-type="hp" data-value="65"><a
+                onmousemove="showPic(event,'贾洛尔总督效果');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贾洛尔恩人.png" width="30px"></a>
+        </div>
+
+
         <div class="icon" data-game="eng" data-text="Extra119"><a onmousemove="showPic(event,'城堡网络效果2');"
                 onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/城堡网络.png" width="30px"></a></div>
         <div class="icon" data-game="hol" data-mode="diffMul" data-type="hp" data-value="1.2136"><a
@@ -666,6 +1206,17 @@
         <div class="icon" data-mode="add add add add add" data-type="hp damage chargedamage armorm armorr"
             data-value="40 5 7 1 1"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/upgrade/升级到精锐骑士.png" width="30px">
         </div>
+
+        <div class="icon" data-game="sul" data-mode="add add" data-type="damage chargedamage" data-value="3 3"><a
+                onmousemove="showPic(event,'珩磨剑刃sul');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/珩磨剑刃.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="zxl" data-mode="diffMul" data-type="attackspeed" data-value="0.85"><a
+                onmousemove="showPic(event,'大理马');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大理马.png" width="30px"></a>
+        </div>
+
+
         <div class="icon" data-game="hre" data-mode="add add" data-type="armorm armorr" data-value="2 2"><a
                 onmousemove="showPic(event,'钢制马甲');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制马甲.png" width="30px"></a>
@@ -683,6 +1234,8 @@
         <div class="icon" data-game="hol" data-mode="add" data-type="bonusdamage1" data-value="5"><a
                 onmousemove="showPic(event,'埃索斯的项圈');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/埃索斯的项圈.png" width="30px"></a></div>
+
+
         <div class="icon" data-mode="add add" data-over="jpn sen mac" data-type="damage chargedamage" data-value="1 1">
             <a onmousemove="showPic(event,'熟铁块吹炼法');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/熟铁块吹炼法.png" width="30px"></a>
@@ -742,14 +1295,6 @@
             </div>
             <div style="width:48px;text-align:center;">
                 <a href="https://seicing.com/html/aoe2/unitaoe4/骑士.html?civ=eng" style="color:#0010ff">骑士</a>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛骑兵.png" width="48px">
-            </div>
-            <div style="width:48px;text-align:center;">
-                <a href="https://seicing.com/html/aoe2/unitaoe4/长矛骑兵.html?civ=abb" style="color:#0010ff">长矛骑兵</a>
             </div>
         </div>
         <div>

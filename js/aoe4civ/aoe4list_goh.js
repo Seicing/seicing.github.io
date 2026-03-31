@@ -10,8 +10,8 @@ export const aoe4list = [
         "civ": "goh",
         "section": "平民与宗教单位",
         "name": "萨满",
-        "img": "萨满",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/萨满"
+        "img": "僧侣",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/僧侣"
     },
     {
         "civ": "goh",

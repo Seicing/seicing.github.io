@@ -102,7 +102,7 @@ export const aoe4list = [
     "section": "军事单位",
     "name": "手铳足轻",
     "img": "火枪兵",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/手铳足轻"
+    "link": "https://seicing.com/html/aoe2/unitaoe4/火枪兵"
   },
   {
     "civ": "jpn",
