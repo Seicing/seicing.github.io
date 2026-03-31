@@ -326,7 +326,7 @@ export const aoe4list = [
     "section": "城堡时代建筑",
     "name": "清真寺",
     "img": "清真寺",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/清真寺"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/修道院"
   },
   {
     "civ": "tug",

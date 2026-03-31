@@ -304,8 +304,8 @@ export const aoe4list = [
         "civ": "goh",
         "section": "城堡时代建筑",
         "name": "祈祷帐篷",
-        "img": "祈祷帐篷",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/祈祷帐篷"
+        "img": "修道院",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/修道院"
     },
     {
         "civ": "goh",

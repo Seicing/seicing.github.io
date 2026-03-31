@@ -14,20 +14,11 @@
 <script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
+        $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("eng").classList.remove("aoeTechIconOff");
-            document.getElementById("chi").classList.remove("aoeTechIconOff");
-            document.getElementById("hre").classList.remove("aoeTechIconOff");
-            document.getElementById("rus").classList.remove("aoeTechIconOff");
-            document.getElementById("fre").classList.remove("aoeTechIconOff");
-            document.getElementById("hol").classList.remove("aoeTechIconOff");
-            document.getElementById("kcr").classList.remove("aoeTechIconOff");
-            document.getElementById("jda").classList.remove("aoeTechIconOff");
-            document.getElementById("byz").classList.remove("aoeTechIconOff");
-            document.getElementById("zxl").classList.remove("aoeTechIconOff");
-            document.getElementById("otd").classList.remove("aoeTechIconOff");
-            document.getElementById("mac").classList.remove("aoeTechIconOff");
+            document.getElementById("jpn").classList.add("aoeTechIconOff");
+            document.getElementById("sen").classList.add("aoeTechIconOff");
+            document.getElementById("sul").classList.add("aoeTechIconOff");
         })
     })
 </script>
@@ -51,12 +42,29 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp250">
-        <tr class="bcF5F8FA textce">
+        <tr
+            class="bcF5F8FA textce textce not_civabb not_civayy not_civsul not_civtug not_civott not_civmal not_civmon not_civgoh">
             <td colspan="5"><span style="color:#6e6e85">修道院(Monastery)</span></td>
         </tr>
-        <tr class="textce">
-            <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/修道院.png" width="48px"></td>
+        <tr class="bcF5F8FA textce spc_civmon spc_civgoh">
+            <td colspan="5"><span style="color:#6e6e85">祈祷帐篷(Prayer Tent)</span></td>
         </tr>
+        <tr class="bcF5F8FA textce spc_civabb spc_civayy spc_civsul spc_civtug spc_civott spc_civmal">
+            <td colspan="5"><span style="color:#6e6e85">清真寺(Mosque)</span></td>
+        </tr>
+
+        <tr class="textce not_civabb not_civayy not_civsul not_civtug not_civott not_civmal">
+            <td colspan="5">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/修道院.png" width="48px">
+            </td>
+        </tr>
+        <tr class="textce  spc_civabb spc_civayy spc_civsul spc_civtug spc_civott spc_civmal">
+            <td colspan="5">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/清真寺.png" width="48px">
+            </td>
+        </tr>
+
+
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">建造信息</span></td>
         </tr>
@@ -117,10 +125,7 @@
     修道院是时代3可以建造的宗教建筑，生产僧侣以及研发强化僧侣相关的科技，存放在修道院的圣物可以每分钟获得80黄金<br>
     德里苏丹国、黑衣大食王朝因为是伊斯兰国家，所以他们的修道院被清真寺代替，信奉长生天的蒙古人则是建造祈祷帐篷来祈求神灵祝福<br>
     <br>
-    普通文明拥有普通的<a href="https://seicing.com/html/aoe2/buildingsaoe4/修道院.html?civ=chi">修道院</a>，信奉伊斯兰教的文明拥有<a
-        href="https://seicing.com/html/aoe2/buildingsaoe4/清真寺.html?civ=abb">清真寺</a>，信奉萨满教的蒙古人拥有<a
-        href="https://seicing.com/html/aoe2/buildingsaoe4/祈祷帐篷.html?civ=mon">祈祷帐篷</a>，日本人拥有独特的<a
-        href="https://seicing.com/html/aoe2/buildingsaoe4/神社.html?civ=jpn">神社</a>和<a
+    日本人拥有独特的<a href="https://seicing.com/html/aoe2/buildingsaoe4/神社.html?civ=jpn">神社</a>和<a
         href="https://seicing.com/html/aoe2/buildingsaoe4/佛寺.html?civ=jpn">佛寺</a><br>
 </div>
 <br><br><br>
@@ -142,6 +147,13 @@
         <a id="kcrButton0" onclick="showCiv('kcr')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
         <a id="holButton0" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
         <a id="macButton0" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
+        <a id="abbButton0" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="ottButton0" onclick="showCiv('ott')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></a>
+        <a id="malButton0" onclick="showCiv('mal')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png"></a>
+        <a id="ayyButton0" onclick="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
+        <a id="monButton0" onclick="showCiv('mon')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png"></a>
+        <a id="gohButton0" onclick="showCiv('goh')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"></a>
     </div>
     <div id="chiText0" style="text-align: left;display:block">
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
@@ -611,6 +623,295 @@
             </tr>
         </table>
     </div>
+
+    <div id="abbText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库成本"></span></td>
+                <td class="textle"><span class="什一税仓库"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/传教.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">传教</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="传教成本"></span></td>
+                <td class="textle"><span class="传教"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库成本"></span></td>
+                <td class="textle"><span class="什一税仓库"></span></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="tugText0" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库成本"></span></td>
+                <td class="textle"><span class="什一税仓库"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库成本"></span></td>
+                <td class="textle"><span class="什一税仓库"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="malText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库成本"></span></td>
+                <td class="textle"><span class="什一税仓库"></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="monText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药已强化成本"></span></td>
+                <td class="textle"><span class="草药已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚已强化成本"></span></td>
+                <td class="textle"><span class="虔诚已强化"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣祭坛.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">僧侣祭坛</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="僧侣祭坛成本"></span></td>
+                <td class="textle"><span class="僧侣祭坛"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库成本"></span></td>
+                <td class="textle"><span class="什一税仓库"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">什一税仓库(已强化)</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="什一税仓库已强化成本"></span></td>
+                <td class="textle"><span class="什一税仓库已强化"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="gohText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草药.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">草药</td>
+                <td style="text-align: left;width:30px;">Ⅲ</td>
+                <td style="text-align: left;width:120px;"><span class="草药成本"></span></td>
+                <td class="textle"><span class="草药"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/虔诚.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">虔诚</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="虔诚成本"></span></td>
+                <td class="textle"><span class="虔诚"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/敖包什一税.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">敖包什一税</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="敖包什一税成本"></span></td>
+                <td class="textle"><span class="敖包什一税"></span></td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div style="text-align: left;">
@@ -631,6 +932,13 @@
         <a id="kcrButton1" onclick="showCiv('kcr')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
         <a id="holButton1" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
         <a id="macButton1" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
+        <a id="abbButton1" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="ottButton1" onclick="showCiv('ott')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></a>
+        <a id="malButton1" onclick="showCiv('mal')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png"></a>
+        <a id="ayyButton1" onclick="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="tugButton1" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
+        <a id="monButton1" onclick="showCiv('mon')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png"></a>
+        <a id="gohButton1" onclick="showCiv('goh')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"></a>
     </div>
     <div id="chiText1" style="text-align: left;display:none">
         <span class="中国加速建造"></span><br>
@@ -853,6 +1161,157 @@
             </tr>
         </table>
     </div>
+    <div id="abbText1" style="text-align: left;display:none">
+        <span class="黄金时代阶段II"></span><br>
+        <span class="黄金时代阶段III"></span><br>
+        <span class="智慧宫效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">科技成本</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/保存知识.png" width="20px">保存知识(-30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="20px">什一税仓库(每分钟提供40食物、木材和10石头)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText1" style="text-align: left;display:none">
+        <span class="阿尤布黄金时代阶段II"></span><br>
+        <span class="阿尤布黄金时代阶段III"></span><br>
+        <span class="智慧宫效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">科技成本</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/保存知识.png" width="20px">保存知识(-30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="20px">什一税仓库(每分钟提供40食物、木材和10石头)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="tugText1" style="text-align: left;display:none">
+        <span class="贾洛尔总督效果"></span><br>
+        <span class="图格鲁克科技"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="20px">什一税仓库(每分钟提供40食物、木材和10石头)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText1" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="20px">什一税仓库(每分钟提供40食物、木材和10石头)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="malText1" style="text-align: left;display:none">
+        <span class="马里贸易科研"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="20px">什一税仓库(每分钟提供40食物、木材和10石头)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="monText1" style="text-align: left;display:none">
+        <span class="蒙古游牧"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">迁移速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/卓越机动性.png" width="20px">卓越机动性(组装、拆装、移动速度+50%)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/卓越机动性.png" width="20px">卓越机动性(已强化)(移动速度+20%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png"
+                        width="20px">什一税仓库(+)(每30秒提供15食物、15木材和10石头/22.5食物、22.5木材和15石头)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">其它</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣祭坛.png" width="20px">僧侣祭坛(获得敖包强化区域)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="gohText1" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">圣物收入</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/什一税仓库.png" width="20px">什一税仓库(每30秒提供15食物、15木材和10石头)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div>
@@ -860,11 +1319,22 @@
         <a id="change"></a><b><span>更新日志</span></b>
     </h1>
     <hr class="hrsty">
+    <b>发售版本</b>
+    <ul>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px">蒙古：获得了什一税仓库科技，但相比于其他文明，是削弱的版本</li>
+    </ul>
+
+    <b>第1赛季</b>
+    <ul>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px">蒙古：第1赛季补丁后，什一税仓库科技整合为其他文明的正常版本，同时获得蒙古独特的强化版本
+        </li>
+    </ul>
+
     <b>第2赛季</b>
     <ul>
         <li>第2赛季补丁后，单个修道院最大容纳圣物的数量被限制成3</li>
         <li>第2赛季补丁后，草药成本从350黄金60秒下调到275黄金45秒</li>
-        <li>20249补丁后，草药的治疗速度加成从100%下调到60%</li>
+        <li>20249补丁后，草药的治疗速度加成从100%下调到60%，草药(已强化)加成从150%下调到90%</li>
     </ul>
 
     <b>第4赛季</b>
@@ -884,11 +1354,20 @@
         <li>9.2.628补丁后，什一税仓库收入从30肉30木30石调整为40肉40木10石</li>
     </ul>
 
+    <b>第8赛季</b>
+    <ul>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"
+                width="25px">黑衣大食王朝：11.1.1201补丁后，帝王时代文化偏殿科技替换为公众图书馆，传教科技移动到清真寺</li>
+    </ul>
+
     <b>第10赛季</b>
     <ul>
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png" width="25px">神圣罗马帝国：第10赛季补丁后，获得西多会修道院科技</li>
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png" width="25px">神圣罗马帝国：第10赛季补丁后，修道院训练的高级教士可以直接驻扎在修道院内部</li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png" width="25px">蒙古：13.1.4420补丁后，僧侣祭坛科技现在城堡时代可研发</li>
     </ul>
+
+
 </div>
 <br><br><br>
 <div>
@@ -896,7 +1375,11 @@
         <a id="relk"></a><b><span>历史</span></b>
     </h1>
     <hr class="hrsty">
-    修道院是封闭的宗教社区，虔诚的牧师、学者和信徒在这里祈祷、学习以及克己奉公，修道院生活被基督教和佛教接受，其居住者称为“僧侣”，在欧洲黑暗时代，修道院是仅剩的学习中心，爱尔兰僧侣就在教堂里保存了很多古罗马时代的知识，随着黑暗时代的消逝这些知识被重新带回了欧洲大陆，随着时间的推移，修道院变得越来越富裕，发展成当地的重要机构，可以为当地的政府提供行政人员和学者的培养服务，而且还提供城市的食物分配、卫生保健等紧急救济服务
+    修道院是封闭的宗教社区，虔诚的牧师、学者和信徒在这里祈祷、学习以及克己奉公，修道院生活被基督教和佛教接受，其居住者称为“僧侣”，在欧洲黑暗时代，修道院是仅剩的学习中心，爱尔兰僧侣就在教堂里保存了很多古罗马时代的知识，随着黑暗时代的消逝这些知识被重新带回了欧洲大陆，随着时间的推移，修道院变得越来越富裕，发展成当地的重要机构，可以为当地的政府提供行政人员和学者的培养服务，而且还提供城市的食物分配、卫生保健等紧急救济服务<br><br>
+
+    清真寺是伊斯兰教中供穆斯林群众使用的集体礼拜宗教场所，清真寺是伊斯兰教门面的象征，选址严格，同时会造有精致的圆顶、宣礼塔和礼拜殿以彰显真主的威严。历史上，清真寺除了用作礼拜场所外，还常常用作传播消息、审判法庭、传播教育甚至慈善机构的职责<br><br>
+
+    萨满教信仰以祖先崇拜、图腾崇拜和自然崇拜为主，蒙古人认为人世祸福皆由地灵万物所主宰，如果不对自然鬼神持以敬畏之心，命运就会被诅咒，万事失利，成吉思汗在征战之前，也常常登上高峰祈祷，寻求至高天神腾格里的庇护
 
 </div>
 <br><br><br>
@@ -918,6 +1401,13 @@
         <a id="kcrButton2" onclick="showCiv('kcr')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
         <a id="holButton2" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
         <a id="macButton2" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
+        <a id="abbButton2" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="ottButton2" onclick="showCiv('ott')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></a>
+        <a id="malButton2" onclick="showCiv('mal')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png"></a>
+        <a id="ayyButton2" onclick="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="tugButton2" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
+        <a id="monButton2" onclick="showCiv('mon')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png"></a>
+        <a id="gohButton2" onclick="showCiv('goh')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"></a>
     </div>
     <div id="chiText2" style="text-align:center;display:none">
         <table id="empire">
@@ -1222,6 +1712,183 @@
                 </td>
                 <td class="textce bcF5F8FA">
                     帝王时代修道院
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="abbText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/清真寺3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/mini/清真寺3.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/清真寺4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/mini/清真寺4.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/清真寺3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/mini/清真寺3.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/清真寺4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/mini/清真寺4.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="tugText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sul/清真寺3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sul/mini/清真寺3.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sul/清真寺4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sul/mini/清真寺4.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ottText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/ott/清真寺3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/ott/mini/清真寺3.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/ott/清真寺4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/ott/mini/清真寺4.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-allen-ott-mosque-age03.jpg" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/mini/michael-allen-ott-mosque-age03.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-faulkner-portfolio-concept-comparison-b-06.jpg"
+                        target="_blank">
+                        <img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/mini/michael-faulkner-portfolio-concept-comparison-b-06.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺设计图
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺设计图
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="malText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mal/清真寺3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/清真寺3.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mal/清真寺4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/清真寺4.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/maksim-zasimuk-mal-mosque-4.jpg" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/mini/maksim-zasimuk-mal-mosque-4.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-faulkner-portfolio-concept-comparison-b-03.jpg"
+                        target="_blank">
+                        <img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/mini/michael-faulkner-portfolio-concept-comparison-b-03.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代清真寺渲染图
+                </td>
+                <td class="textce bcF5F8FA">
+                    城堡时代清真寺设定图
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="monText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mon/修道院3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mon/mini/修道院3.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    祈祷帐篷
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="gohText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mon/修道院3.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mon/mini/修道院3.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    祈祷帐篷
                 </td>
             </tr>
         </table>
