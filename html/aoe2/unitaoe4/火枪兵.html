@@ -18,7 +18,6 @@
             document.getElementById("techno").style.display = "block";
             document.getElementById("rus").classList.add("aoeTechIconOff");
             document.getElementById("ott").classList.add("aoeTechIconOff");
-            document.getElementById("jpn").classList.add("aoeTechIconOff");
             document.getElementById("mal").classList.add("aoeTechIconOff");
             document.getElementById("zxl").classList.add("aoeTechIconOff");
             document.getElementById("otd").classList.add("aoeTechIconOff");
@@ -47,8 +46,11 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp250">
-        <tr class="bcF5F8FA textce">
+        <tr class="bcF5F8FA textce not_civjpn">
             <td colspan="5"><span style="color:#6e6e85">火枪兵(Handcannoneer)</span></td>
+        </tr>
+        <tr class="bcF5F8FA textce spc_civjpn">
+            <td colspan="5"><span style="color:#6e6e85">手铳足轻(Handcannon Ashigaru)</span></td>
         </tr>
         <tr class="textce">
             <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png" width="48px"></td>
@@ -159,7 +161,8 @@
     <hr class="hrsty">
     火枪手是最强大的轻型射手单位，他们同时也属于火药部队，因此他们不会接受普通远程部队的铁匠铺攻击力科技加成<br>
     火枪手是帝王时代(Ⅳ)生产的部队，因此他们没有任何升级<br>
-    兰开斯特王朝可以获得早期版本的火枪手，朱子遗训和圣殿骑士团无法使用火枪兵
+    兰开斯特王朝可以获得早期版本的火枪手，朱子遗训和圣殿骑士团无法使用火枪兵<br>
+    日本的火枪兵被更名为“手铳足轻”，除此之外和普通火枪兵没有任何差别<br>
 
 </div>
 <br><br><br>
@@ -183,6 +186,7 @@
         <a id="gohButton0" onclick="showCiv('goh')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"></a>
         <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
         <a id="macButton0" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
+        <a id="jpnButton0" onclick="showCiv('jpn')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png"></a>
     </div>
 
     <div id="abbText0" style="text-align:left;display:block">
@@ -866,6 +870,53 @@
             </tr>
         </table>
     </div>
+
+    <div id="jpnText0" style="text-align:left;display:block">
+        <span class="弓箭旗本武士光环"></span><br>
+        <span class="种子岛免费"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="20px">蛇纹石粉末(+5对近战步兵)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="20px">蛇纹石粉末(攻击后移速+15%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">其它</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城工程学.png" width="20px">攻城工程学(可以建造冲车和攻城塔)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div>
@@ -1004,12 +1055,34 @@
             </div>
             <div class="sisaic">
                 <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火枪兵4.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jpn/火枪兵4.png">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    日本手铳足轻
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
                     <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵3.png" target="_blank">
                         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/eng/火枪兵3.png">
                         </img></a>
                 </div>
                 <div class="sisaick">
                     兰开斯特王朝早期火枪兵
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/sperasoft-a-keywords-studio-jpn-handcannoneer-age4.jpg"
+                        target="_blank">
+                        <img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/sperasoft-a-keywords-studio-jpn-handcannoneer-age4.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    日本手铳足轻高模
                 </div>
             </div>
         </div>
@@ -1055,6 +1128,8 @@
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png"></div>
                     <div class="filterbtn" data-filter="mac" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></div>
+                    <div class="filterbtn" data-filter="jpn" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png"></div>
                 </div>
             </td>
         </tr>
@@ -1178,6 +1253,10 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="jpn" data-mode="diffMul" data-type="damage" data-value="1.15"><a
+                onmousemove="showPic(event,'弓箭旗本武士光环');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/弓箭旗本武士光环.png" width="30px"></a>
+        </div>
         <div class="icon" data-game="goh" data-text="Extra207-a"><a onmousemove="showPic(event,'靶场援军');"
                 onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/靶场援军.png" width="30px"></a></div>
@@ -1457,14 +1536,6 @@
             </div>
             <div style="width:48px;text-align:center;">
                 <a href="https://seicing.com/html/aoe2/unitaoe4/穆索法迪火枪兵.html?civ=mal" style="color:#0010ff">穆索法迪火枪兵</a>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/手铳足轻.png" width="48px">
-            </div>
-            <div style="width:48px;text-align:center;">
-                <a href="https://seicing.com/html/aoe2/unitaoe4/手铳足轻.html?civ=jpn" style="color:#0010ff">手铳足轻</a>
             </div>
         </div>
         <div>
