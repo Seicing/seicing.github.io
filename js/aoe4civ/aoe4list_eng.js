@@ -361,7 +361,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "圣汤马斯大教堂",
     "img": "圣汤马斯大教堂",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/圣汤马斯大教堂"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "eng",

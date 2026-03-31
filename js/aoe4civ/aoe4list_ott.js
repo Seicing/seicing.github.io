@@ -368,7 +368,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "蓝色清真寺",
     "img": "蓝色清真寺",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/蓝色清真寺"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "ott",

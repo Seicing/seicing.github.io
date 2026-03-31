@@ -382,7 +382,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "帝王飞地",
     "img": "帝王飞地",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/帝王飞地"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "chi",

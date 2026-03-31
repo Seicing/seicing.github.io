@@ -340,7 +340,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "沙皇大教堂",
     "img": "沙皇大教堂",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/沙皇大教堂"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "rus",

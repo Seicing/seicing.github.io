@@ -16,13 +16,8 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("abb").classList.add("aoeTechIconOff");
             document.getElementById("mon").classList.add("aoeTechIconOff");
-            document.getElementById("sul").classList.add("aoeTechIconOff");
-            document.getElementById("mal").classList.add("aoeTechIconOff");
-            document.getElementById("ayy").classList.add("aoeTechIconOff");
             document.getElementById("goh").classList.add("aoeTechIconOff");
-            document.getElementById("tug").classList.add("aoeTechIconOff");
             document.getElementById("mac").classList.add("aoeTechIconOff");
         })
     })
@@ -47,8 +42,11 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div class="rightline">
     <table id="celp250">
-        <tr class="bcF5F8FA textce">
+        <tr class="bcF5F8FA textce not_civabb not_civayy not_civsul not_civtug not_civmal">
             <td colspan="5"><span style="color:#6e6e85">大学(University)</span></td>
+        </tr>
+        <tr class="bcF5F8FA textce spc_civabb spc_civayy spc_civsul spc_civtug spc_civmal">
+            <td colspan="5"><span style="color:#6e6e85">穆斯林学塾(Madrasa)</span></td>
         </tr>
         <tr class="textce">
             <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大学.png" width="48px"></td>
@@ -111,8 +109,8 @@
     </h1>
     <hr class="hrsty">
     大学是时代4可以建造的高级科技建筑，可以研究最高级的科技<br>
-    德里苏丹国、黑衣大食王朝、马里因为是伊斯兰国家，所以他们的大学被穆斯林学塾代替，蒙古人没有大学，他们的大学科技在铁匠铺研究<br>
-    虽然奥斯曼也是伊斯兰国家，但是他们拥有大学<br>
+    德里苏丹国、黑衣大食王朝、马里因为是伊斯兰国家，所以他们的大学被称为“穆斯林学塾”，虽然奥斯曼也是伊斯兰国家，但是他们拥有大学<br>
+    蒙古人没有大学，他们的大学科技在铁匠铺研究，拜占庭的变体马其顿王朝的大学科技整合到了他们的瓦兰吉兵工厂科技中，也没有大学<br>
 </div>
 <br><br><br>
 <div style="text-align: left;">
@@ -135,6 +133,11 @@
         <a id="kcrButton0" onclick="showCiv('kcr')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
         <a id="holButton0" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
         <a id="senButton0" onclick="showCiv('sen')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></a>
+        <a id="abbButton0" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="sulButton0" onclick="showCiv('sul')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"></a>
+        <a id="malButton0" onclick="showCiv('mal')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png"></a>
+        <a id="ayyButton0" onclick="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
     </div>
 
     <div id="chiText0" style="text-align: left;display:block">
@@ -1163,6 +1166,376 @@
             </tr>
         </table>
     </div>
+
+
+
+    <div id="abbText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/化学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">化学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="化学成本"></span></td>
+                <td class="textle"><span class="化学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">攻城武器</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="攻城武器成本"></span></td>
+                <td class="textle"><span class="攻城武器"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生物学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="生物学成本"></span></td>
+                <td class="textle"><span class="生物学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宫廷建筑师</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="宫廷建筑师成本"></span></td>
+                <td class="textle"><span class="宫廷建筑师"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">燃烧箭</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="燃烧箭成本"></span></td>
+                <td class="textle"><span class="燃烧箭"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精锐军队战术</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精锐军队战术成本"></span></td>
+                <td class="textle"><span class="精锐军队战术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蛇纹石粉末</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蛇纹石粉末成本"></span></td>
+                <td class="textle"><span class="蛇纹石粉末"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蚕丝弓弦</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蚕丝弓弦成本"></span></td>
+                <td class="textle"><span class="蚕丝弓弦"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText0" style="text-align: left;display:block">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/化学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">化学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="化学成本"></span></td>
+                <td class="textle"><span class="化学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">攻城武器</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="攻城武器成本"></span></td>
+                <td class="textle"><span class="攻城武器"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生物学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="生物学成本"></span></td>
+                <td class="textle"><span class="生物学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宫廷建筑师</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="宫廷建筑师成本"></span></td>
+                <td class="textle"><span class="宫廷建筑师"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">燃烧箭</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="燃烧箭成本"></span></td>
+                <td class="textle"><span class="燃烧箭"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精锐军队战术</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精锐军队战术成本"></span></td>
+                <td class="textle"><span class="精锐军队战术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蛇纹石粉末</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蛇纹石粉末成本"></span></td>
+                <td class="textle"><span class="蛇纹石粉末"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蚕丝弓弦</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蚕丝弓弦成本"></span></td>
+                <td class="textle"><span class="蚕丝弓弦"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="sulText0" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/化学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">化学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="化学sul成本"></span></td>
+                <td class="textle"><span class="化学sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">攻城武器</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="攻城武器sul成本"></span></td>
+                <td class="textle"><span class="攻城武器sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生物学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="生物学sul成本"></span></td>
+                <td class="textle"><span class="生物学sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宫廷建筑师</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="宫廷建筑师sul成本"></span></td>
+                <td class="textle"><span class="宫廷建筑师sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">燃烧箭</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="燃烧箭sul成本"></span></td>
+                <td class="textle"><span class="燃烧箭sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精锐军队战术</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精锐军队战术sul成本"></span></td>
+                <td class="textle"><span class="精锐军队战术sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蛇纹石粉末</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蛇纹石粉末sul成本"></span></td>
+                <td class="textle"><span class="蛇纹石粉末sul"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蚕丝弓弦</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蚕丝弓弦sul成本"></span></td>
+                <td class="textle"><span class="蚕丝弓弦sul"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="tugText0" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/化学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">化学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="化学成本"></span></td>
+                <td class="textle"><span class="化学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">攻城武器</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="攻城武器成本"></span></td>
+                <td class="textle"><span class="攻城武器"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生物学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="生物学成本"></span></td>
+                <td class="textle"><span class="生物学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宫廷建筑师</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="宫廷建筑师成本"></span></td>
+                <td class="textle"><span class="宫廷建筑师"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/燃烧箭.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">燃烧箭</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="燃烧箭成本"></span></td>
+                <td class="textle"><span class="燃烧箭"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精锐军队战术</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精锐军队战术成本"></span></td>
+                <td class="textle"><span class="精锐军队战术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蛇纹石粉末</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蛇纹石粉末成本"></span></td>
+                <td class="textle"><span class="蛇纹石粉末"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蚕丝弓弦</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蚕丝弓弦成本"></span></td>
+                <td class="textle"><span class="蚕丝弓弦"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="malText0" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr style="height:10px;background-color:#dad2ff">
+                <td class="bcF5F8FA">图标</td>
+                <td class="bcF5F8FA">名称</td>
+                <td class="bcF5F8FA">时代</td>
+                <td class="bcF5F8FA">成本</td>
+                <td class="bcF5F8FA">效果</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/化学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">化学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="化学成本"></span></td>
+                <td class="textle"><span class="化学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">攻城武器</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="攻城武器成本"></span></td>
+                <td class="textle"><span class="攻城武器"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">生物学</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="生物学成本"></span></td>
+                <td class="textle"><span class="生物学"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">宫廷建筑师</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="宫廷建筑师成本"></span></td>
+                <td class="textle"><span class="宫廷建筑师"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/精锐军队战术.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">精锐军队战术</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="精锐军队战术成本"></span></td>
+                <td class="textle"><span class="精锐军队战术"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蛇纹石粉末</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蛇纹石粉末成本"></span></td>
+                <td class="textle"><span class="蛇纹石粉末"></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;width:30px;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蚕丝弓弦.png" width="30px">
+                </td>
+                <td style="text-align: left;width:80px;">蚕丝弓弦</td>
+                <td style="text-align: left;width:30px;">Ⅳ</td>
+                <td style="text-align: left;width:120px;"><span class="蚕丝弓弦成本"></span></td>
+                <td class="textle"><span class="蚕丝弓弦"></span></td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div style="text-align: left;">
@@ -1185,6 +1558,11 @@
         <a id="kcrButton1" onclick="showCiv('kcr')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
         <a id="holButton1" onclick="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
         <a id="senButton1" onclick="showCiv('sen')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></a>
+        <a id="abbButton1" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="sulButton1" onclick="showCiv('sul')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"></a>
+        <a id="malButton1" onclick="showCiv('mal')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png"></a>
+        <a id="ayyButton1" onclick="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="tugButton1" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
     </div>
 
     <div id="chiText1" style="text-align: left;display:none">
@@ -1357,6 +1735,73 @@
             </tr>
         </table>
     </div>
+
+
+    <div id="abbText1" style="text-align: left;display:block">
+        <span class="黄金时代阶段II"></span><br>
+        <span class="黄金时代阶段III"></span><br>
+        <span class="智慧宫效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">科技成本</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/保存知识.png" width="20px">保存知识(-30%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ayyText1" style="text-align: left;display:block">
+        <span class="阿尤布黄金时代阶段II"></span><br>
+        <span class="阿尤布黄金时代阶段III"></span><br>
+        <span class="智慧宫效果"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="sulText1" style="text-align: left;display:none">
+        <span class="德里免费"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="tugText1" style="text-align: left;display:none">
+        <span class="图格鲁克科技"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="malText1" style="text-align: left;display:none">
+        <span class="马里贸易科研"></span><br>
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <br><br><br>
 <div>
@@ -1380,6 +1825,7 @@
     <b>第2赛季</b>
     <ul>
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png" width="25px">中国：第2赛季补丁后，火工技术科技研发建筑变成了靶场</li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px">德里苏丹国：第2赛季补丁后，帝王时代的科技研发时间从15倍下调到了12倍</li>
     </ul>
 
     <b>第4赛季</b>
@@ -1392,10 +1838,14 @@
     <b>第5赛季</b>
     <ul>
         <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png" width="25px">中国：7.1.113补丁后，古代技术加成率从5%下调到4%</li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"
+                width="25px">德里苏丹国：8-2-218补丁后，第一个建造的大学类建筑(穆斯林学塾和希萨尔学院)会赠送免费的3个学者</li>
     </ul>
 
     <b>第9赛季</b>
     <ul>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"
+                width="25px">德里苏丹国：第9赛季补丁后，燃烧箭、生物学、精锐军队战术的德里苏丹国基础研究时间从1080上调到1320秒</li>
         <li>第9赛季补丁后，大学大型改版，获得蚕丝弓弦和蛇纹石粉末两种通用科技</li>
         <li>第9赛季补丁后，攻城武器不再增加10远程护甲，只增加+20%生命值，蒙古改进版同理</li>
         <li>第9赛季补丁后，精锐军队战术成本从300肉700金上调到400肉1200金，效果从+20%生命值+20%伤害调整为+4近战护甲+20%伤害+20%额外伤害，蒙古改进版成本调整为1600石，+30%伤害+30%额外伤害和+6近战护甲，日本织田战术从+20%生命值+20%伤害+20%火炬伤害→+20%伤害+20%火炬伤害+20%额外伤害+4近战护甲
@@ -1409,6 +1859,11 @@
         <li>12.1.2454补丁后，精锐军队战术的成本从500肉1000金下调到400肉800金，蒙古改良版成本从1500石下调到1200石</li>
         <li>12.2.3327补丁后，精锐军队战术加成效果从20%下调到15%（依然会加成额外伤害），+4护甲加成更变为+15%生命值加成，成本从400食物800黄金上调到500食物1000黄金，蒙古强化版可以增加20%，成本1500石头
         </li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px">德里苏丹国：12.2.3327补丁后，不再可以从第一所穆斯林学塾获得3个免费学者
+        </li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"
+                width="25px">德里苏丹国：12.2.3327补丁后，燃烧箭、生物学、精锐陆军战术研究时间从22分钟上调到23分钟</li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png" width="25px">德里苏丹国：12.2.3327补丁后，丝弓弦研究时间从12分钟上调到18分钟</li>
     </ul>
 </div>
 <br><br><br>
@@ -1509,6 +1964,36 @@
             </div>
             <div class="sisaic">
                 <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sul/大学.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/sul/mini/大学.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    德里苏丹国穆斯林学塾
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/大学.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/abb/mini/大学.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    黑衣大食王朝穆斯林学塾
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mal/大学.png" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/Architecture/AOE4/mal/mini/大学.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    马里穆斯林学塾
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
                     <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/age4_concept_eng+university.jpg" target="_blank">
                         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/age4_concept_eng+university.jpg">
                         </img></a>
@@ -1583,6 +2068,40 @@
                 </div>
                 <div class="sisaick">
                     奥斯曼大学设计图
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-faulkner-portfolio-concept-comparison-b-08.jpg"
+                        target="_blank">
+                        <img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-faulkner-portfolio-concept-comparison-b-08.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    黑衣大食王朝穆斯林学塾设计图
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-faulkner-portfolio-concept-comparison-b-04.jpg"
+                        target="_blank">
+                        <img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/michael-faulkner-portfolio-concept-comparison-b-04.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    马里穆斯林学塾设计图
+                </div>
+            </div>
+            <div class="sisaic">
+                <div class="sisaicg">
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/veronika-kulenko-mal-university-a4.jpg" target="_blank">
+                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/concept/new1/veronika-kulenko-mal-university-a4.jpg">
+                        </img></a>
+                </div>
+                <div class="sisaick">
+                    马里穆斯林学塾渲染图
                 </div>
             </div>
         </div>

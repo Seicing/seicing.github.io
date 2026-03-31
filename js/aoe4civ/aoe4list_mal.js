@@ -346,15 +346,15 @@ export const aoe4list = [
     "civ": "mal",
     "section": "帝王时代建筑",
     "name": "穆斯林学塾",
-    "img": "穆斯林学塾",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/穆斯林学塾"
+    "img": "大学",
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/大学"
   },
   {
     "civ": "mal",
     "section": "帝王时代建筑",
     "name": "大清真寺",
     "img": "大清真寺",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/大清真寺"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "mal",

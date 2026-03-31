@@ -375,7 +375,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "圣母院",
     "img": "圣母院",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/圣母院"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "kcr",

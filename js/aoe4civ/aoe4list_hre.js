@@ -347,7 +347,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "弗伦斯堡大宫殿",
     "img": "弗伦斯堡大宫殿",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/弗伦斯堡大宫殿"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "hre",

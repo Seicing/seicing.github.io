@@ -389,7 +389,7 @@ export const aoe4list = [
     "section": "帝王时代建筑",
     "name": "德川神社",
     "img": "德川神社",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/德川神社"
+    "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
   },
   {
     "civ": "jpn",
