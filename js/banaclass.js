@@ -28,6 +28,7 @@ function tipsgo(a) {
     document.getElementById("InnerAltrata3").style.color = "#d0c9b7";
     document.getElementById("IuireMainland3").style.color = "#d0c9b7";
     document.getElementById("IuireSeparation3").style.color = "#d0c9b7";
+    document.getElementById("OuterSeigine3").style.color = "#d0c9b7";
     document.getElementById(a).style.color = "blue";
     var aaposbo16 = document.querySelector("#Describe9372");
     aaposbo16.innerHTML = a.slice(0, -1);
@@ -79,6 +80,7 @@ function tipsg(a, b) {
     document.getElementById("InnerAltrata2").style.color = "#d0c9b7";
     document.getElementById("IuireMainland2").style.color = "#d0c9b7";
     document.getElementById("IuireSeparation2").style.color = "#d0c9b7";
+    document.getElementById("OuterSeigine2").style.color = "#d0c9b7";
     document.getElementById(b).style.color = "blue";
 }
 
@@ -109,6 +111,8 @@ function tipsb(a, b) {
     var aaposbo10 = document.querySelector("#IuireSeparation");
     aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊离岛' + a + '.png';
 
+    var aaposbo11 = document.querySelector("#OuterSeigine");
+    aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/外西景' + a + '.png';
 
 
     document.getElementById("Recruit2").style.color = "#d0c9b7";
