@@ -111,8 +111,8 @@ function tipsb(a, b) {
     var aaposbo10 = document.querySelector("#IuireSeparation");
     aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊离岛' + a + '.png';
 
-    var aaposbo11 = document.querySelector("#OuterSeigine");
-    aaposbo10.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/外西景' + a + '.png';
+    var aaposbo12 = document.querySelector("#OuterSeigine");
+    aaposbo12.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/外西景' + a + '.png';
 
 
     document.getElementById("Recruit2").style.color = "#d0c9b7";
