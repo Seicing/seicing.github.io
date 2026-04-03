@@ -932,6 +932,39 @@ let ayanami = {
     "赫万恩人": /*html*/`赫万恩人<br>Sehwan Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>腾格拉卡巴德堡垒生命值+1500，并解锁4级总督，医疗大象的治疗速率+50%`,
     "乌奇恩人": /*html*/`乌奇恩人<br>Uch Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>腾格拉卡巴德堡垒生命值+1500，并解锁4级总督，所有科技便宜35%，不适用于炮台`,
     "装甲野兽": /*html*/`装甲野兽<br>Armored Beasts<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>赋予战象 +20% 生命值和 +4 远程护甲`,
+
+    "部署侦察兵": /*html*/`部署侦察兵<br>【待补充】<br>【待补充】`,
+    "部署骑手": /*html*/`部署骑手<br>【待补充】<br>【待补充】`,
+    "部署铁浮屠": /*html*/`部署铁浮屠<br>【待补充】<br>【待补充】`,
+    "部署靺鞨部落民": /*html*/`部署靺鞨部落民<br>【待补充】<br>【待补充】`,
+    "部署驯鹿商队": /*html*/`部署驯鹿商队<br>【待补充】<br>【待补充】`,
+    "广惠寺华塔技能": /*html*/`广惠寺华塔技能<br>【待补充】<br>【待补充】`,
+    "建立藩属": /*html*/`建立藩属<br>【待补充】<br>【待补充】`,
+    "贿赂": /*html*/`贿赂<br>【待补充】<br>【待补充】`,
+    "种植树木": /*html*/`种植树木<br>【待补充】<br>【待补充】`,
+    "银山塔林招降": /*html*/`银山塔林招降<br>【待补充】<br>【待补充】`,
+
+    "吸引驯鹿": /*html*/`吸引驯鹿<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "驯鹿狩猎1": /*html*/`驯鹿狩猎1<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "驯鹿狩猎2": /*html*/`驯鹿狩猎2<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "木材搬运": /*html*/`木材搬运<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "火焰之矛": /*html*/`火焰之矛<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "高盾": /*html*/`高盾<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "猛安谋克解锁科技": /*html*/`猛安谋克解锁科技<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "骑马掷弹兵解锁科技": /*html*/`骑马掷弹兵解锁科技<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "海军床弩": /*html*/`海军床弩<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "独特卷帘式触发器": /*html*/`独特卷帘式触发器<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "独特润滑轮轴": /*html*/`独特润滑轮轴<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "防御型一窝蜂": /*html*/`防御型一窝蜂<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "投弹器": /*html*/`投弹器<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "骑兵札甲": /*html*/`骑兵札甲<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "步兵札甲": /*html*/`步兵札甲<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "育种学": /*html*/`育种学<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "未知大学科技": /*html*/`未知大学科技<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+
+    "【待补充】": /*html*/`【待补充】<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+
+
 }
 
 function showPic(e, taitou) {
