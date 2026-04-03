@@ -183,6 +183,8 @@
         <a id="gohButton0" onclick="showCiv('goh')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"></a>
         <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
         <a id="senButton0" onclick="showCiv('sen')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></a>
+        <a id="jinButton0" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
+
     </div>
     <div id="abbText0" style="text-align:left;display:block">
         <span class="大食手搓"></span><br>
@@ -267,6 +269,37 @@
             </tr>
         </table>
     </div>
+
+    <div id="jinText0" style="text-align:left;display:none">
+        <!--金朝部队-->
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器.png" width="20px">攻城武器(+20%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">攻击速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质横梁.png" width="20px">轻质横梁(+20%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">步兵建造时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/轻质横梁.png" width="20px">轻质横梁(-50%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA"><span style="color:#6e6e85">建筑生产时间</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <div id="chiText0" style="text-align:left;display:none">
         <span class="明朝效果"></span><br>
         <span class="朝廷命官效果"></span><br>
@@ -1062,6 +1095,8 @@
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png"></div>
                     <div class="filterbtn" data-filter="zxl" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png"></div>
+                    <div class="filterbtn" data-filter="jin" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></div>
                     <div class="filterbtn" data-filter="abb" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></div>
                     <div class="filterbtn" data-filter="ayy" data-keep="true"><img
@@ -1343,7 +1378,7 @@
                 onmousemove="showPic(event,'攻城武器已强化');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器已强化.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="sameMul" data-type="speed" data-value="0.15"><a
+        <div class="icon" data-over="jin" data-mode="sameMul" data-type="speed" data-value="0.15"><a
                 onmousemove="showPic(event,'润滑轮轴');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/润滑轮轴.png" width="30px"></a>
         </div>

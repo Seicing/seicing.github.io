@@ -352,13 +352,6 @@ export const aoe4list = [
   {
     "civ": "jin",
     "section": "城堡时代建筑",
-    "name": "攻城武器厂",
-    "img": "攻城武器厂",
-    "link": "https://seicing.com/html/aoe2/buildingsaoe4/攻城武器厂"
-  },
-  {
-    "civ": "jin",
-    "section": "城堡时代建筑",
     "name": "城堡",
     "img": "城堡",
     "link": "https://seicing.com/html/aoe2/buildingsaoe4/城堡"
