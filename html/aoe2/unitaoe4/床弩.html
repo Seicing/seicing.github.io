@@ -8,7 +8,7 @@
     <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
     <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
-<title>弩炮大象</title>
+<title>床弩</title>
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
 <script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
@@ -16,7 +16,7 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("tug").classList.remove("aoeTechIconOff");
+            document.getElementById("jin").classList.remove("aoeTechIconOff");
         })
     })
 </script>
@@ -41,10 +41,10 @@
                         <div class="entry"><div class="rightline">
     <table id="celp250">
         <tr class="bcF5F8FA textce">
-            <td colspan="5"><span style="color:#6e6e85">弩炮大象(Ballista Elephant)</span></td>
+            <td colspan="5"><span style="color:#6e6e85">床弩(Bed Crossbow)</span></td>
         </tr>
         <tr class="textce">
-            <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩炮大象.png" width="48px"></td>
+            <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/床弩.png" width="48px"></td>
         </tr>
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">训练信息</span></td>
@@ -55,17 +55,18 @@
         </tr>
         <tr class="textle">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">300 <img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">350
+            <td colspan="4">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">150
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">100
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
-            <td colspan="4">45秒</td>
+            <td colspan="4">20秒</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">人口占用</span></td>
-            <td colspan="4">4</td>
+            <td colspan="4">2</td>
         </tr>
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">状态数据</span></td>
@@ -93,11 +94,11 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-            <td colspan="4">1.00</td>
+            <td colspan="4">0.88</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">单位标签</span></td>
-            <td colspan="4">重型、骑兵、大象、攻城器</td>
+            <td colspan="4">攻城器</td>
         </tr>
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">攻击属性</span></td>
@@ -135,7 +136,7 @@
 </div>
 <div>
     <div id="techno"></div>
-    “搭载弩炮的大象可有效对抗近战步兵，并打击多个目标”
+    “【待补充】”
     <br>
     <div class="textrg">——游戏内说明</div>
     <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
@@ -146,10 +147,8 @@
         <a id="jia"></a><b><span>简介</span></b>
     </h1>
     <hr class="hrsty">
-    弩炮大象是图格鲁克王朝独特的远程骑兵单位，取代了通用的弩炮，虽然在攻城武器厂生产，但是弩炮大象不会受到攻城器相关的加成，它接受来自骑兵和远程部队的加成 <br> <br>
-    弩炮大象是城堡时代(Ⅲ)生产的部队，和其他攻城器系列部队不同，它可以升级到精锐级别<br>
-    <br>
-    弩炮大象是攻城器，接受骑手的额外伤害，但是它无法受到本家攻城维修营地的恢复，因为它是生物<br>
+    床弩是金朝独特的攻城部队，取代了通用的弩炮 <br><br>
+    床弩是封建时代(Ⅱ)生产的部队，和其他攻城器系列部队不同，它可以升级到老练和精锐级别<br>
 </div>
 <br><br><br>
 <div style="text-align:left;">
@@ -158,67 +157,22 @@
     </h1>
     <hr class="hrsty">
     <div class="civ-selector">
-        <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
+        <a id="jinButton0" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
     </div>
-    <div id="tugText0" style="text-align:left;display:block">
-        <span class="图格鲁克科技"></span><br>
-        <span class="贾洛尔总督效果"></span><br>
-        <span class="胜利之塔效果2"></span><br>
-        <span class="赫万总督效果"></span><br>
+    <div id="jinText0" style="text-align:left;display:block">
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="20px">生物学(+25%)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">生命恢复</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象看护人.png" width="20px">大象看护人(+2每2秒)<br>
-                </td>
-            </tr>
             <tr class="textle">
                 <td class="bcF5F8FA"><span style="color:#6e6e85">攻击力</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="20px">钢制箭头(+1)<br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="20px">平衡炮弹(+1)<br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="20px">箭头穿孔板甲(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/顺带损坏.png" width="20px">顺带损坏(+30%额外伤害)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/象夫.png" width="20px">象夫(+10%)<br>
                 </td>
             </tr>
             <tr class="textle">
                 <td class="bcF5F8FA"><span style="color:#6e6e85">生产效率</span></td>
                 <td>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">其他</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/强化武装弩炮.png" width="20px">强化武装弩炮(升级为精锐弩炮大象)<br>
                 </td>
             </tr>
         </table>
@@ -230,10 +184,7 @@
         <a id="change"></a><b><span>更新日志</span></b>
     </h1>
     <hr class="hrsty">
-    <b>第12赛季</b>
-    <ul>
-        <li>15.3.8338补丁后，弩炮大象人口占用从3上调到了4，基础伤害从16/17上调到了18/19，对步兵伤害从12/14上调到了14/18</li>
-    </ul>
+    暂无
 </div>
 <br><br><br>
 <div>
@@ -241,11 +192,7 @@
         <a id="relk"></a><b><span>历史</span></b>
     </h1>
     <hr class="hrsty">
-    除了马之外，人类还发现了大象这种动物在战争中的潜力，在四千多年前开始的印度次大陆，生活在印度的住民们就开始尝试驯养大象，最初只是用来运输和农业，大约在三千多年前开始应用于战争，虽然大象是可怕的巨兽，但是使用大象进行战斗是非常艰辛的，驯养一只大象就已经非常困难，同时大象本性非常胆小，只要受到一些惊吓就会发狂，不过大象只要成功突入敌人阵地内就能成为敌人的噩梦<br><br>
-
-    印度的多个王朝都有使用战象进行战斗的记录，即使是来自波斯的入侵者们在接受了印度文化之后也是如此，伽色尼王朝最早将战象纳入了正规的军队战术体系之中，后来入主印度的德里苏丹国诸王朝也非常热衷于战象的使用，1398年帖木儿入侵印度的战争几乎葬送了帖木儿的征服之路，在帖木儿想出使用火焰骆驼让敌方战象陷入混乱之前，帖木儿的军队目睹上百只战象的仪容时几乎失去了斗志<br><br>
-
-    大象的冲锋时速可以达到每小时30公里，这在战场上是绝对恐怖的力量，对骑兵拥有反制效果的长枪兵方阵在大象面前非常脆弱，除了驾驭大象冲锋外，大象还有一个用法就是在它的背上搭建稳固的木质平台，让弓箭手们在这个平台上获得更大的视野和居高临下的压制力，使大象如同移动的要塞一样穿梭于战场上
+    【待补充】
 </div>
 <br><br><br>
 <div>
@@ -256,20 +203,27 @@
     <table id="empire">
         <tr>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/弩炮大象3.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/弩炮大象3.png"></a>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/床弩2.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/床弩2.png"></a>
             </td>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/弩炮大象4.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sul/弩炮大象4.png"></a>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/床弩3.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/床弩3.png"></a>
+            </td>
+            <td>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/床弩4.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/床弩4.png"></a>
             </td>
         </tr>
         <tr>
             <td class="textce bcF5F8FA">
-                弩炮大象
+                床弩
             </td>
             <td class="textce bcF5F8FA">
-                精锐弩炮大象
+                老练床弩
+            </td>
+            <td class="textce bcF5F8FA">
+                精锐床弩
             </td>
         </tr>
     </table>
@@ -282,11 +236,11 @@
     <hr class="hrsty">
     <table id="stats" style="font-size:9pt;">
         <tr>
-            <td style="text-align:center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩炮大象.png" width="48px"></td>
+            <td style="text-align:center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/床弩.png" width="48px"></td>
             <td colspan="5">
                 <div id="filters">
-                    <div class="filterbtn" data-filter="tug" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></div>
+                    <div class="filterbtn" data-filter="jin" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></div>
                 </div>
             </td>
         </tr>
@@ -335,10 +289,7 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
-                <span id="Extra123" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png"
-                        width="20px">赫万总督：被医疗大象治疗的单位获得10%/15%/20%/20%伤害，持续10秒<br></span>
-                <span id="Extra48" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象看护人.png"
-                        width="20px">大象看护人：每2秒恢复2生命值<br></span>
+
             </td>
         </tr>
     </table>
@@ -346,37 +297,8 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
-        <div class="icon" data-game="tug" data-text="Extra123">
-            <a onmousemove="showPic(event,'赫万总督效果');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/医疗大象.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="tug" data-mode="diffMul" data-type="attackspeed" data-value="0.825"><a
-                onmousemove="showPic(event,'胜利之塔效果2');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/胜利之塔.png" width="30px"></a></div>
-        <div class="icon" data-game="tug" data-mode="add" data-type="hp" data-value="65"><a
-                onmousemove="showPic(event,'贾洛尔总督效果');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贾洛尔恩人.png" width="30px"></a>
-        </div>
-        <div class="icon" data-mode="sameMul" data-over="fre jda mac jin" data-type="hp" data-value="0.25"><a
-                onmousemove="showPic(event,'生物学');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/生物学.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="tug" data-mode="diffMul" data-type="bonusdamage" data-value="1.3"><a
-                onmousemove="showPic(event,'顺带损坏');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/顺带损坏.png" width="30px"></a>
-        </div>
 
-        <div class="icon" data-game="tug" data-mode="add add add add add add"
-            data-type="hp damage bonusdamage1 bonusdamage2 armorm armorr" data-value="75 1 4 5 1 1"> <img
-                src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/强化武装弩炮.png" width="30px">
-        </div>
 
-        <div class="icon" data-game="tug" data-text="Extra48"><a onmousemove="showPic(event,'大象看护人');"
-                onmouseout="hiddenPic();">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大象看护人.png" width="30px"></a></div>
-        <div class="icon" data-game="sul tug" data-mode="diffMul" data-type="speed" data-value="1.1"><a
-                onmousemove="showPic(event,'象夫');" onmouseout="hiddenPic();">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/象夫.png" width="30px"></a></div>
         <div class="icon" data-mode="add" data-over="mac" data-type="damage" data-value="1"><a
                 onmousemove="showPic(event,'钢制箭头');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="30px"></a>
@@ -389,37 +311,14 @@
                 onmousemove="showPic(event,'箭头穿孔板甲');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
-                onmousemove="showPic(event,'合身皮具');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
-        </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
-                onmousemove="showPic(event,'绝缘头盔');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
-        </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
-                onmousemove="showPic(event,'铁匠大师');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
-        </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
-                onmousemove="showPic(event,'铁制底网');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
-        </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
-                onmousemove="showPic(event,'楔形铆钉');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
-        </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
-                onmousemove="showPic(event,'斜面');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
-        </div>
+
+
         <div class="icon" data-mode="sameMul" data-over="ott goh" data-type="buildtime" data-value="-0.25"><a
                 onmousemove="showPic(event,'军事学院');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="30px"></a>
         </div>
     </div>
 </div>
-
 <br><br><br>
 <div>
     <h1>
