@@ -8,7 +8,7 @@
     <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
     <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
-<title>贸易商队</title>
+<title>驯鹿商人</title>
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/link.css" media="screen" rel="stylesheet" type="text/css">
 <script src="https://seicing.com/js/jquery-3.1.1.min.js" type="text/javascript"> </script>
@@ -16,8 +16,7 @@
     $(document).ready(function () {
         $('#techno').load('https://seicing.com/js/list/AOE4DIC2.html', function () {
             document.getElementById("techno").style.display = "block";
-            document.getElementById("abb").classList.remove("aoeTechIconOff");
-            document.getElementById("ayy").classList.remove("aoeTechIconOff");
+            document.getElementById("jin").classList.remove("aoeTechIconOff");
         })
     })
 </script>
@@ -42,10 +41,10 @@
                         <div class="entry"><div class="rightline">
     <table id="celp250">
         <tr class="bcF5F8FA textce">
-            <td colspan="5"><span style="color:#6e6e85">贸易商队(Trade Caravan)</span></td>
+            <td colspan="5"><span style="color:#6e6e85">驯鹿商人(Reindeer Trader)</span></td>
         </tr>
         <tr class="textce">
-            <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贸易商队.png" width="48px"></td>
+            <td colspan="5"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驯鹿商人.png" width="48px"></td>
         </tr>
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">训练信息</span></td>
@@ -56,8 +55,8 @@
         </tr>
         <tr class="textle">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
-            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">40 <img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">40
+            <td colspan="4"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="20px">60 <img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">60
             </td>
         </tr>
         <tr class="textle">
@@ -69,7 +68,7 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
-            <td style="background-color:#ddffda;width:30px">60</td>
+            <td style="background-color:#ddffda;width:30px">90</td>
             <td style="background-color:#faffde;width:30px">-</td>
             <td style="background-color:#fff1e1;width:30px">-</td>
             <td style="background-color:#fce1e1;width:30px">-</td>
@@ -90,25 +89,17 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-            <td colspan="4">1.56</td>
+            <td colspan="4">1.00</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">单位标签</span></td>
             <td colspan="4">工人</td>
         </tr>
-        <tr class="bcF5F8FA textce">
-            <td colspan="5"><span style="color:#6e6e85">特殊能力</span></td>
-        </tr>
-        <tr class="textle">
-            <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骆驼惊吓.png"
-                    width="20px">骆驼惊吓：降低5格范围内骑兵部队(骆驼、大象部队除外)20%的攻击力
-            </td>
-        </tr>
     </table>
 </div>
 <div>
     <div id="techno"></div>
-    “商人通过在他们的本国市场和贸易站或其他玩家的市场之间的往来产生黄金。本国市场和贸易目的地的距离越远，产生的黄金就越多。本国市场或贸易目的地可以随时更改”
+    “【待补充】”
     <br>
     <div class="textrg">——游戏内说明</div>
     <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
@@ -119,12 +110,7 @@
         <a id="jia"></a><b><span>简介</span></b>
     </h1>
     <hr class="hrsty">
-    贸易商队是阿尤布人和黑衣大食王朝可以训练的独特商人，和普通商人不同的地方在于，他们血量更少，但是移动速度快50%，同时骑乘着骆驼的他们可以散发出让马匹不安的气味，惊吓敌方骑兵部队<br><br>
-    虽然贸易商队移动速度极快，但是他们获取黄金的效率实际上比其他文明还要低<br>
-    <br>
-    一个商人单位两次来回获得的黄金公式大约为：(基数值*距离²+0.1*距离)*贸易倍率，即结果除以2就是单次获取的黄金<br>
-    基数值的计算很复杂，近似值为是“0.008*基础移动速度”，商人(0.008)、商船(0.012)、威尼斯商人(0.015)、贸易商队(0.012)<br>
-    贸易倍率默认为80%(在第四赛季减少了20%)，贸易商队和商船会在这个基础上调整倍率以平衡收益。贸易商队的贸易倍率是普通商队的38%(即实际30.4%)；商船的贸易倍率是普通商队的59.4%(即实际48%)，1.5移速的商船贸易倍率会被乘以66.6%以拉平到1移速普通商人水平，在这个基础上还会额外乘以90%
+    【待补充】
 </div>
 <br><br><br>
 <div style="text-align:left;">
@@ -133,52 +119,9 @@
     </h1>
     <hr class="hrsty">
     <div class="civ-selector">
-        <a id="abbButton0" onclick="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
-        <a id="ayyButton0" onclick="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="jinButton0" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
     </div>
-
-    <div id="abbText0" style="text-align:left;display:block">
-        <span class="黄金时代阶段II"></span><br>
-        <span class="黄金时代阶段III"></span><br>
-        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/公共图书馆.png" width="20px">公共图书馆(每个经济科技+2)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲商队.png" width="20px">装甲商队(+3)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲商队.png" width="20px">装甲商队(+3)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA"><span style="color:#6e6e85">其他</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/香料之路.png" width="20px">香料之路 (黄金收入+30%)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大集市.png" width="20px">大集市 (获得25%的辅助资源，石头除外)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骆驼支援.png" width="20px">骆驼支援(提升附近步兵护甲+2)<br>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="ayyText0" style="text-align:left;display:none">
-        <span class="阿尤布黄金时代阶段II"></span><br>
-        <span class="阿尤布黄金时代阶段III"></span><br>
-        <span class="步兵支援光环"></span><br>
+    <div id="jinText0" style="text-align:left;display:block">
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
@@ -213,7 +156,7 @@
         <a id="relk"></a><b><span>历史</span></b>
     </h1>
     <hr class="hrsty">
-    在古典世界的生产力获得突破之后，多余的生产资料变成了商品，凭借着自身的价值在不同的部落间互相交换流通，这就是最早的商业行为，商人也应运而生，随着古代世界探索范围的扩大，商人的足迹也走得越来越远，从中国出发一直旅行到欧洲的丝绸之路是古代世界最为成熟和庞大的交易路线，商人的存在促进了各个文明的交流，先进的战争艺术伴随着丝绸之路传播到了旧大陆的每一个国家，在欧洲中世纪，商业的迅速扩张使得英国、法国等欧陆国家形成强大的商人阶级，他们某种意义上推动了大航海时代的到来以及骑士阶级的瓦解
+    【待补充】
 </div>
 <br><br><br>
 <div>
@@ -224,27 +167,13 @@
     <table id="empire">
         <tr>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/商人2.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/商人2.png"></a>
-            </td>
-            <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/商人3.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/商人3.png"></a>
-            </td>
-            <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/商人4.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/abb/商人4.png"></a>
+                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/商人.png" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/jin/商人.png"></a>
             </td>
         </tr>
         <tr>
             <td class="textce bcF5F8FA">
-                封建时代贸易商队
-            </td>
-            <td class="textce bcF5F8FA">
-                城堡时代贸易商队
-            </td>
-            <td class="textce bcF5F8FA">
-                帝王时代贸易商队
+                驯鹿商人
             </td>
         </tr>
     </table>
@@ -257,30 +186,28 @@
     <hr class="hrsty">
     <table id="stats" style="font-size:9pt;">
         <tr>
-            <td style="text-align:center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贸易商队.png" width="48px"></td>
+            <td style="text-align:center;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/驯鹿商人.png" width="48px"></td>
             <td colspan="5">
                 <div id="filters">
-                    <div class="filterbtn" data-filter="abb" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></div>
-                    <div class="filterbtn" data-filter="ayy" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></div>
+                    <div class="filterbtn" data-filter="jin" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></div>
                 </div>
             </td>
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png" width="25px">生产时间</td>
-            <td data-base="30" id="buildtime"> </td>
+            <td data-base="20" id="buildtime"> </td>
             <td>成本</td>
             <td colspan="3">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png" width="25px">
-                <span data-base="40" id="cost2"></span>
+                <span data-base="80" id="cost2"></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="25px">
-                <span data-base="40" id="cost3"></span>
+                <span data-base="120" id="cost3"></span>
             </td>
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png" width="25px">生命值</td>
-            <td data-base="60" id="hp"> </td>
+            <td data-base="120" id="hp"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png" width="25px">近战防御</td>
             <td data-base="0" id="armorm"> </td>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png" width="25px">远程防御</td>
@@ -288,11 +215,11 @@
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
-            <td data-base="1.56" id="speed"> </td>
+            <td data-base="1.88" id="speed"> </td>
             <td>等价效率</td>
             <td data-base="0" id="tradeeff"> </td>
             <td>贸易倍率</td>
-            <td data-base="0.304" id="deposit1"> </td>
+            <td data-base="0.8" id="deposit1"> </td>
         </tr>
         <tr>
             <td>贸易移动距离(点击输入数值)</td>
@@ -321,8 +248,7 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/骆驼惊吓.png"
-                    width="20px">骆驼惊吓：降低5格范围内骑兵部队(骆驼、大象部队除外)20%的攻击力<br>
+
             </td>
         </tr>
     </table>
@@ -330,37 +256,7 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
-        <div class="icon" data-game="ayy" data-mode="add add" data-type="armorm armorr" data-value="3 3"><a
-                onmousemove="showPic(event,'步兵支援光环');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/步兵支援.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="abb" data-mode="diffMul diffMul" data-type="buildtime gather"
-            data-value="0.8 1.043">
-            <a onmousemove="showPic(event,'黄金时代阶段III');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="ayy" data-mode="diffMul" data-type="buildtime" data-value="0.8333"><a
-                onmousemove="showPic(event,'阿尤布黄金时代阶段III');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png" width="30px"></a></div>
-        <div class="icon" data-game="abb" data-mode="diffMul" data-type="deposit1" data-value="1.3">
-            <a onmousemove="showPic(event,'香料之路');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/香料之路.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="abb" data-mode="add add" data-type="armorm armorr" data-value="3 3">
-            <a onmousemove="showPic(event,'装甲商队');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲商队.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="abb" data-group="grandbazzar" data-mode="add" data-type="tradesubratewood"
-            data-value="0.25"><a onmousemove="showPic(event,'大集市');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/大集市木材.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="abb" data-group="grandbazzar" data-mode="add" data-type="tradesubratefood"
-            data-value="0.25"><a onmousemove="showPic(event,'大集市');" onmouseout="hiddenPic();"><img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/大集市食物.png" width="30px"></a>
-        </div>
-        <div class="icon" data-game="abb" data-mode="add" data-type="hp" data-value="44"><a
-                onmousemove="showPic(event,'公共图书馆');" onmouseout="hiddenPic();">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/公共图书馆.png" width="30px"></a></div>
+
         <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
                 onmousemove="showPic(event,'合身皮具');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
@@ -480,22 +376,22 @@
         const tradesubratestone = parseFloat(document.getElementById("tradesubratestone").textContent) || 0;
         const tradesubrateolive = parseFloat(document.getElementById("tradesubrateolive").textContent) || 0;
 
-        const result2 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
+        const result2 = (((0.008 * 1.88) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5;
         document.getElementById("goldtrade").textContent = result2.toFixed(0);
 
-        const result3 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance * speed;
+        const result3 = (((0.008 * 1.88) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 / distance * speed;
         document.getElementById("tradeeff").textContent = result3.toFixed(2);
 
-        const result1 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratewood;
+        const result1 = (((0.008 * 1.88) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratewood;
         document.getElementById("goldtrade2").textContent = result1.toFixed(0);
 
-        const result4 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratefood;
+        const result4 = (((0.008 * 1.88) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratefood;
         document.getElementById("goldtrade3").textContent = result4.toFixed(0);
 
-        const result5 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratestone;
+        const result5 = (((0.008 * 1.88) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubratestone;
         document.getElementById("goldtrade4").textContent = result5.toFixed(0);
 
-        const result6 = (((0.008 * 1.56) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrateolive;
+        const result6 = (((0.008 * 1.88) * distance * distance) + (0.1 * distance)) * deposit1 / 100 * 0.5 * tradesubrateolive;
         document.getElementById("goldtrade5").textContent = result6.toFixed(0);
     }
 
