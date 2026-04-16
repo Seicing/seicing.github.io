@@ -82,7 +82,11 @@
 th {
     border: 1px solid #444;
     text-align: left;
-    width: 85px
+}
+
+#stats td:nth-child(odd),
+#stats th:nth-child(odd) {
+    width: 100px;
 }
 
 .icon {
