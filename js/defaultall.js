@@ -436,7 +436,7 @@ window.addEventListener('resize', debounce(function () {
         const isMobile = window.innerWidth <= 768;
 
         if (size === 'big') {
-            document.body.style.fontSize = isMobile ? '14pt' : '12pt';
+            document.body.style.fontSize = isMobile ? '12pt' : '12pt';
         } else {
             document.body.style.fontSize = '9pt';
         }

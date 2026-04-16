@@ -87,6 +87,9 @@ th {
 
 /* --- 规则 B：手机 --- 767px */
 @media only screen and (max-width: 767px) {
+    #stats {
+        width: 100%;
+    }
 
     #stats td:nth-child(even),
     #stats th:nth-child(even) {
