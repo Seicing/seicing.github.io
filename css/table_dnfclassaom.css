@@ -82,11 +82,16 @@
 th {
     border: 1px solid #444;
     text-align: left;
+    width: 85px;
 }
 
-#stats td:nth-child(odd),
-#stats th:nth-child(odd) {
-    width: 100px;
+/* --- 规则 B：手机 --- 767px */
+@media only screen and (max-width: 767px) {
+
+    #stats td:nth-child(even),
+    #stats th:nth-child(even) {
+        width: 35px;
+    }
 }
 
 .icon {
