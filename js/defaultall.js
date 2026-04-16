@@ -433,18 +433,12 @@ window.addEventListener('resize', debounce(function () {
     function applyFont(size) {
         if (!document.body) return;
 
-        //     if (size === 'big') {
-        //         document.body.style.fontSize = '12pt';
-        //      } else {
-        //          document.body.style.fontSize = '9pt';
-        //     }
-
         const isMobile = window.innerWidth <= 768;
 
         if (size === 'big') {
             document.body.style.fontSize = isMobile ? '14pt' : '12pt';
         } else {
-            document.body.style.fontSize = isMobile ? '10pt' : '9pt';
+            document.body.style.fontSize = '9pt';
         }
 
         document.querySelectorAll('#smallfonter').forEach(el => {
