@@ -142,9 +142,9 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "奎纳梅辛",
-        "img": "奎纳梅辛",
-        "link": "https://seicing.com/html/aoe2/unitaoem/奎纳梅辛"
+        "name": "奎纳梅津",
+        "img": "奎纳梅津",
+        "link": "https://seicing.com/html/aoe2/unitaoem/奎纳梅津"
     },
     {
         "civ": "azt",
@@ -345,8 +345,8 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "军事建筑",
-        "name": "头骨架塔",
-        "img": "头骨架塔",
-        "link": "https://seicing.com/html/aoe2/buildingaoem/头骨架塔"
+        "name": "警卫塔",
+        "img": "警卫塔",
+        "link": "https://seicing.com/html/aoe2/buildingaoem/警卫塔"
     }
 ];
