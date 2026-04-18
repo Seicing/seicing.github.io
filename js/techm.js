@@ -587,7 +587,7 @@ let ayanami = {
 
 
     "魁札尔科亚特尔加成1": /*html*/`魁札尔科亚特尔加成1<br>战斗祭司在圣殿进行放血仪式时每秒生产0.05眷顾值`,
-    "魁札尔科亚特尔加成2": /*html*/`魁札尔科亚特尔加成2<br>大屋和其添加物的成本-33%`,
+    "魁札尔科亚特尔加成2": /*html*/`魁札尔科亚特尔加成2<br>大屋和添加形态的成本-33%`,
     "魁札尔科亚特尔加成3": /*html*/`魁札尔科亚特尔加成3<br>贵族小屋单位+15%生命值`,
     "魁札尔科亚特尔加成4": /*html*/`魁札尔科亚特尔加成4<br>鹰勇士+2射程`,
 
@@ -607,9 +607,9 @@ let ayanami = {
     "宇宙卫队": /*html*/`宇宙卫队<br>Cosmic Guard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "众神降临": /*html*/`众神降临<br>Arrival of the Gods<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
-    "牲畜圈": /*html*/`牲畜圈<br>Livestock Pen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-    "木材哨站": /*html*/`木材哨站<br>Lumber Outpost<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-    "工艺作坊": /*html*/`工艺作坊<br>Craft Workshop<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "牲畜圈": /*html*/`牲畜圈<br>Livestock Pen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>将大屋改造为牲畜圈，提高提交的食物量`,
+    "木材哨站": /*html*/`木材哨站<br>Lumber Outpost<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>将大屋改造为木材哨站，提高提交的木材量`,
+    "工艺作坊": /*html*/`工艺作坊<br>Craft Workshop<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>将大屋改造为工艺作坊，提高提交的黄金量`,
 
     "燧石武器": /*html*/`燧石武器<br>Flint Weapons<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "羽毛盔甲": /*html*/`羽毛盔甲<br>Feathered Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
@@ -626,14 +626,10 @@ let ayanami = {
     "韦韦科约特尔3科技": /*html*/`韦韦科约特尔3科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "韦韦科约特尔4科技": /*html*/`韦韦科约特尔4科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
-
-
     "侵扰": /*html*/`侵扰<br>Infestation<br>马里纳里索奇特尔【待补充】`,
-    "【待补充】": /*html*/`【待补充】<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-    "【待补充】": /*html*/`【待补充】<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-    "【待补充】": /*html*/`【待补充】<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-
-
+    "马里纳里索奇特尔1科技": /*html*/`马里纳里索奇特尔1科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "马里纳里索奇特尔2科技": /*html*/`马里纳里索奇特尔2科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
+    "马里纳里索奇特尔3科技": /*html*/`马里纳里索奇特尔3科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
     "龙舌兰开花": /*html*/`龙舌兰开花<br>Agave Bloom<br>医神帕特卡特尔【待补充】`,
     "帕特卡特尔1科技": /*html*/`帕特卡特尔1科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
@@ -648,15 +644,11 @@ let ayanami = {
     "科特利奎3科技": /*html*/`科特利奎3科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "科特利奎4科技": /*html*/`科特利奎4科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
-
-
     "净化": /*html*/`净化<br>Purge<br>黑曜石蝴蝶【待补充】`,
     "黑曜石打制": /*html*/`黑曜石打制<br>Obsidian Knapping<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "伊兹帕帕洛特之翼": /*html*/`伊兹帕帕洛特之翼<br>Wings of Itzpapalotl<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "伊兹特利的碎片": /*html*/`伊兹特利的碎片<br>Shards of Itztli<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "花战争": /*html*/`花战争<br>Flowery Wars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-
-
 
     "星陨": /*html*/`星陨<br>Starfall<br>科约尔沙乌基【待补充】`,
     "森特松惠茨纳瓦": /*html*/`森特松惠茨纳瓦<br>Centzon Huitznahua<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
@@ -672,14 +664,11 @@ let ayanami = {
     "特拉洛克3科技": /*html*/`特拉洛克3科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "特拉洛克4科技": /*html*/`特拉洛克4科技<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
-
-
     "火山": /*html*/`火山<br>Volcano<br>死神【待补充】`,
     "死亡预兆": /*html*/`死亡预兆<br>Omen of Death<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "眼球项链": /*html*/`眼球项链<br>Necklace of Eyeballs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "米克特卡": /*html*/`米克特卡<br>Mictecah<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
     "珍贵的骨头": /*html*/`珍贵的骨头<br>Precious Bones<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-
 
     "腐蚀之地": /*html*/`腐蚀之地<br>Corrupted Ground<br>狗神【待补充】`,
     "厄运之炬": /*html*/`厄运之炬<br>Torch of Misfortune<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
