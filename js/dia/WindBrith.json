@@ -59,15 +59,6 @@
         "name": "元平",
         "char": "Yunpyeng",
         "face": "bitter",
-        "con": "",
-        "string": "没错……辩……就像说好的那样……"
-    },
-    {
-        "dic": 3,
-        "branch": "",
-        "name": "元平",
-        "char": "Yunpyeng",
-        "face": "bitter",
         "con": "CE",
         "string": "咳咳……"
     },
@@ -159,7 +150,7 @@
         "char": "Chunlan",
         "face": "sad",
         "con": "",
-        "string": "如果是结社的人的话"
+        "string": "如果是那群家伙怎么办？"
     },
     {
         "dic": 3,
@@ -285,7 +276,7 @@
         "char": "Chunlan",
         "face": "serene",
         "con": "",
-        "string": "……你们是东边神宫的人？"
+        "string": "……你们是神官？"
     },
     {
         "dic": 3,
@@ -420,7 +411,16 @@
         "char": "Chunlan",
         "face": "serene",
         "con": "",
-        "string": "(刚刚明玲阁下看了下衣柜，辩也不见了，是留后手隐藏了起来吗？)"
+        "string": "(辩似乎藏起来了) "
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "春兰",
+        "char": "Chunlan",
+        "face": "serene",
+        "con": "",
+        "string": "(明玲阁下在进来后第一时间看了眼衣柜，是察觉到辩藏在里面吗？这种敏锐的感知能力，跟元平一模一样……)"
     },
     {
         "dic": 3,
@@ -510,7 +510,16 @@
         "char": "Meirei",
         "face": "smile",
         "con": "",
-        "string": "世清……明世清吗？不错的名字呢"
+        "string": "世清，继承我们的姓氏和族姓的孩子，也就是明世清……宫黄世清，不错的名字呢"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "元平",
+        "char": "Yunpyeng",
+        "face": "smile",
+        "con": "CE",
+        "string": "是呢"
     },
     {
         "dic": 3,
