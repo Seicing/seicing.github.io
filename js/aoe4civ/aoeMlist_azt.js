@@ -2,9 +2,9 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "平民单位",
-        "name": "村民",
-        "img": "村民",
-        "link": "https://seicing.com/html/aoe2/unitaoem/村民"
+        "name": "拓荒者",
+        "img": "拓荒者",
+        "link": "https://seicing.com/html/aoe2/unitaoem/拓荒者"
     },
     {
         "civ": "azt",
