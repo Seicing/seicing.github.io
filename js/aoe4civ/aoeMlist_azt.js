@@ -149,16 +149,16 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "四百之兔",
-        "img": "四百之兔",
-        "link": "https://seicing.com/html/aoe2/unitaoem/四百之兔"
+        "name": "森特松托托奇廷",
+        "img": "森特松托托奇廷",
+        "link": "https://seicing.com/html/aoe2/unitaoem/森特松托托奇廷"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "双头蛇",
-        "img": "双头蛇",
-        "link": "https://seicing.com/html/aoe2/unitaoem/双头蛇"
+        "name": "马奎兹科瓦特尔",
+        "img": "马奎兹科瓦特尔",
+        "link": "https://seicing.com/html/aoe2/unitaoem/马奎兹科瓦特尔"
     },
     {
         "civ": "azt",
