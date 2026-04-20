@@ -96,7 +96,7 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
-        "string": "我似乎有点大惊小怪了，是你救了我吗？谢谢你"
+        "string": "抱歉……是你救了我吗？谢谢你"
     },
     {
         "dic": 1,
@@ -114,7 +114,7 @@
         "char": "YoBorteCino",
         "face": "depress",
         "con": "",
-        "string": "嗯……阿古那奶奶说过，西景人都是怪物，要小心点"
+        "string": "嗯……阿古那奶奶说过，凡是遇到西景人都要留点心眼"
     },
     {
         "dic": 3,
@@ -123,7 +123,7 @@
         "char": "YoBorteCino",
         "face": "depress",
         "con": "",
-        "string": "白色的头发……西景人有这种发色的人吗？还是说什么潮流染发吗？"
+        "string": "不过，我没见过白发的西景人呢，这是什么潮流染发吗？"
     },
     {
         "dic": 3,
@@ -132,7 +132,7 @@
         "char": "YoBorteCino",
         "face": "smile",
         "con": "",
-        "string": "不过你跟我想象中的西景人不同，意外地好沟通呢"
+        "string": "你跟我想象中的西景人不同，意外地好沟通呢"
     },
     {
         "dic": 1,
@@ -825,7 +825,7 @@
         "char": "YoBorteCino",
         "face": "fear",
         "con": "",
-        "string": "你被穴狮子的毒刺命中了好多下……"
+        "string": "你被穴狮子的毒刺插了好多下……"
     },
     {
         "dic": 1,
@@ -1833,6 +1833,15 @@
         "char": "SeicingAcolyte",
         "face": "serene",
         "con": "SP",
+        "string": "让人敬佩，你拥有真正高贵的武者的品格"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingAcolyte",
+        "face": "serene",
+        "con": "SP",
         "string": "我……不知道我该何去何从"
     },
     {
@@ -2164,7 +2173,7 @@
         "branch": "",
         "name": "世清",
         "char": "SeicingAcolyte",
-        "face": "smile",
+        "face": "surprise",
         "con": "SP",
         "string": "好漂亮的手镯"
     },
