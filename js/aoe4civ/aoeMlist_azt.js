@@ -345,8 +345,8 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "军事建筑",
-        "name": "警卫塔",
-        "img": "警卫塔",
-        "link": "https://seicing.com/html/aoe2/buildingaoem/警卫塔"
+        "name": "头骨架塔",
+        "img": "头骨架塔",
+        "link": "https://seicing.com/html/aoe2/buildingaoem/头骨架塔"
     }
 ];

@@ -592,7 +592,7 @@ let ayanami = {
     "魁札尔科亚特尔加成4": /*html*/`魁札尔科亚特尔加成4<br>鹰勇士+2射程`,
 
     "特斯卡特利波卡加成1": /*html*/`特斯卡特利波卡加成1<br>每损失2个神话单位，生成1个黑曜石碎片，如果黑曜石碎片维持了足够长的时间，它会召唤1个当前时代的免费神话单位`,
-    "特斯卡特利波卡加成2": /*html*/`特斯卡特利波卡加成2<br>头骨架塔和陷阱建造快25%，造成+25%的打击伤害`,
+    "特斯卡特利波卡加成2": /*html*/`特斯卡特利波卡加成2<br>头骨架瞭望塔和陷阱建造快25%，造成+25%的打击伤害`,
     "特斯卡特利波卡加成3": /*html*/`特斯卡特利波卡加成3<br>献祭拓荒者在各时代可获得+10%/+20%/+30%/+40%的额外眷顾值`,
 
     "维齐洛波奇特利加成1": /*html*/`维齐洛波奇特利加成1<br>圣殿、大神庙、村庄中心、城镇中心在完工后返还33%的成本`,
@@ -604,9 +604,9 @@ let ayanami = {
     "鲜血契约": /*html*/`鲜血契约<br>Blood Pact<br>指定一个单位，短时间赋予其强大力量，在持续时间结束后单位将会死亡并获得眷顾值`,
 
 
-    "南方之翼": /*html*/`南方之翼<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>战争小屋单位移动速度+10%，训练时间-40%`,
-    "特佩约洛特尔之触": /*html*/`特佩约洛特尔之触<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>豹勇士和美洲豹骑兵的攻击力+15%，跳跃攻击的距离+2`,
-    "供养祭典": /*html*/`供养祭典<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>可在圣殿献祭动物，使15秒内提高村民15%的所有采集效率`,
+    "南方之翼": /*html*/`南方之翼<br>Wings of the South<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>战争小屋单位移动速度+10%，训练时间-40%`,
+    "特佩约洛特尔之触": /*html*/`特佩约洛特尔之触<br>Tepeyollotl's Reach<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>豹勇士和美洲豹骑兵的攻击力+15%，跳跃攻击的距离+2`,
+    "供养祭典": /*html*/`供养祭典<br>Feast of Sustenance<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>可在圣殿献祭动物，使15秒内提高村民15%的所有采集效率`,
 
 
     "新火仪式": /*html*/`新火仪式<br>New Fire Ceremony<br>献祭3只牲畜，可获得额外的眷顾值，并提升牲畜变肥的速度`,
@@ -632,8 +632,8 @@ let ayanami = {
 
 
     "奇南帕农耕法": /*html*/`奇南帕农耕法<br>Chinampas<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>将农田升级为奇南帕，村民的耕作效率+20%`,
-    "头骨架塔": /*html*/`头骨架塔<br>Tzompantli Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-
+    "头骨架瞭望塔": /*html*/`头骨架瞭望塔<br>Tzompantli Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>将头骨架塔升级为头骨架瞭望塔【待补充】`,
+    "特米纳洛扬的试炼": /*html*/`特米纳洛扬的试炼<br>Temiminaloyan Trials<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
 
 
     "摇篮曲": /*html*/`摇篮曲<br>Lullaby<br>让敌方军队进入沉睡状态，但是只要遭遇攻击就会醒来`,
@@ -659,7 +659,7 @@ let ayanami = {
     "蛇裙": /*html*/`蛇裙<br>Serpent Skirt<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>15<br>建筑被摧毁后，召唤森蚺，小型/大型/奇观分别召唤2/3/6只`,
     "科阿特佩克神龛": /*html*/`科阿特佩克神龛<br>Coatepec Shrines <br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>维修建筑不再需要消耗资源，建筑物获得2.5恢复率`,
     "心之弦": /*html*/`心之弦<br>String of Hearts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>人类士兵的所有攻击附带1攻城伤害，并获得+10%攻击力`,
-    "西帕克特利的鳞片": /*html*/`西帕克特利的鳞片<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>攻城独木舟每减少1%的生命值，近战和远程减伤率+0.5%`,
+    "西帕克特利的鳞片": /*html*/`西帕克特利的鳞片<br>Cipactli's Scales<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>攻城独木舟每减少1%的生命值，近战和远程减伤率+0.5%`,
 
     "肃清": /*html*/`肃清<br>Purge<br>指定一个敌方单位作为祭品，祭品漂浮在空中，一段时间后摧毁附近所有相同类型的敌方单位`,
     "黑曜石打制": /*html*/`黑曜石打制<br>Obsidian Knapping<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>贵族小屋单位攻击力+15%`,
