@@ -588,7 +588,7 @@ let ayanami = {
 
     "克察尔科亚特尔加成1": /*html*/`克察尔科亚特尔加成1<br>战斗祭司在圣殿进行放血仪式时每秒生产0.05眷顾值`,
     "克察尔科亚特尔加成2": /*html*/`克察尔科亚特尔加成2<br>卡普利和其加建的成本-33%`,
-    "克察尔科亚特尔加成3": /*html*/`克察尔科亚特尔加成3<br>贵族小屋单位+15%生命值`,
+    "克察尔科亚特尔加成3": /*html*/`克察尔科亚特尔加成3<br>贵族小屋士兵+15%生命值`,
     "克察尔科亚特尔加成4": /*html*/`克察尔科亚特尔加成4<br>鹰勇士+2射程`,
 
     "特斯卡特利波卡加成1": /*html*/`特斯卡特利波卡加成1<br>每损失2个神话单位，生成1个黑曜石碎片，如果黑曜石碎片维持了足够长的时间，它会召唤1个当前时代的免费神话单位`,
@@ -603,7 +603,7 @@ let ayanami = {
     "黑曜石镜子": /*html*/`黑曜石镜子<br>Obsidian Mirror<br>指定一个玩家，复制其远古时代神力`,
     "鲜血契约": /*html*/`鲜血契约<br>Blood Pact<br>指定一个单位，短时间赋予其强大力量，在持续时间结束后单位将会死亡并获得眷顾值`,
 
-    "南方之翼": /*html*/`南方之翼<br>Wings of the South<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>作战小屋单位移动速度+10%，训练时间-40%`,
+    "南方之翼": /*html*/`南方之翼<br>Wings of the South<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>作战小屋士兵移动速度+10%，训练时间-40%`,
     "特佩约尔洛特尔的领域": /*html*/`特佩约尔洛特尔的领域<br>Tepeyollotl's Reach<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>豹勇士和美洲豹骑兵的攻击力+15%，跳跃攻击的距离+2`,
     "丰饶之宴": /*html*/`丰饶之宴<br>Feast of Sustenance<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>可在圣殿献祭动物，使15秒内提高村民15%的所有采集效率`,
     "新火祭": /*html*/`新火祭<br>New Fire Ceremony<br>献祭3只牲畜，可获得额外的眷顾值，并提升牲畜变肥的速度`,
@@ -649,7 +649,7 @@ let ayanami = {
     "西帕克特利的鳞片": /*html*/`西帕克特利的鳞片<br>Cipactli's Scales<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>掷矛器攻城独木舟每减少1%的生命值，近战和远程减伤率+0.5%`,
 
     "肃清": /*html*/`肃清<br>Purge<br>指定一个敌方单位作为祭品，祭品漂浮在空中，一段时间后摧毁附近所有相同类型的敌方单位`,
-    "黑曜石磨刀法": /*html*/`黑曜石磨刀法<br>Obsidian Knapping<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>贵族小屋单位攻击力+15%`,
+    "黑曜石磨刀法": /*html*/`黑曜石磨刀法<br>Obsidian Knapping<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>贵族小屋士兵攻击力+15%`,
     "伊兹帕帕洛特的翅膀": /*html*/`伊兹帕帕洛特的翅膀<br>Wings of Itzpapalotl<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>黑曜石蝴蝶移动速度+15%，特殊攻击伤害+50%`,
     "伊兹特利的碎片": /*html*/`伊兹特利的碎片<br>Shards of Itztli<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>弓箭独木舟攻击力+30%`,
     "花之战争": /*html*/`花之战争<br>Flowery Wars<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>阵亡敌人炽魂的眷顾值+0.2`,
