@@ -9,30 +9,30 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "平民单位",
-        "name": "行脚商",
-        "img": "行脚商",
-        "link": "https://seicing.com/html/aoe2/unitaoem/行脚商"
+        "name": "波奇特卡特尔商队",
+        "img": "波奇特卡特尔商队",
+        "link": "https://seicing.com/html/aoe2/unitaoem/波奇特卡特尔商队"
     },
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "奎米钦间谍",
-        "img": "奎米钦间谍",
-        "link": "https://seicing.com/html/aoe2/unitaoem/奎米钦间谍"
+        "name": "奎迷钦间谍",
+        "img": "奎迷钦间谍",
+        "link": "https://seicing.com/html/aoe2/unitaoem/奎迷钦间谍"
     },
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "特拉马尼赫长矛兵",
-        "img": "特拉马尼赫长矛兵",
-        "link": "https://seicing.com/html/aoe2/unitaoem/特拉马尼赫长矛兵"
+        "name": "特拉马尼长矛兵",
+        "img": "特拉马尼长矛兵",
+        "link": "https://seicing.com/html/aoe2/unitaoem/特拉马尼长矛兵"
     },
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "特基瓦弓箭手",
-        "img": "特基瓦弓箭手",
-        "link": "https://seicing.com/html/aoe2/unitaoem/特基瓦弓箭手"
+        "name": "特奎哈弓兵",
+        "img": "特奎哈弓兵",
+        "link": "https://seicing.com/html/aoe2/unitaoem/特奎哈弓兵"
     },
     {
         "civ": "azt",
@@ -65,16 +65,16 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "奥顿廷粉碎者",
-        "img": "奥顿廷粉碎者",
-        "link": "https://seicing.com/html/aoe2/unitaoem/奥顿廷粉碎者"
+        "name": "奥托米粉碎者",
+        "img": "奥托米粉碎者",
+        "link": "https://seicing.com/html/aoe2/unitaoem/奥托米粉碎者"
     },
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "剃发者",
-        "img": "剃发者",
-        "link": "https://seicing.com/html/aoe2/unitaoem/剃发者"
+        "name": "夸奇客",
+        "img": "夸奇客",
+        "link": "https://seicing.com/html/aoe2/unitaoem/夸奇客"
     },
     {
         "civ": "azt",
@@ -100,16 +100,16 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "船只",
-        "name": "冲击独木舟",
-        "img": "冲击独木舟",
-        "link": "https://seicing.com/html/aoe2/unitaoem/冲击独木舟"
+        "name": "特波斯特利独木舟",
+        "img": "特波斯特利独木舟",
+        "link": "https://seicing.com/html/aoe2/unitaoem/特波斯特利独木舟"
     },
     {
         "civ": "azt",
         "section": "船只",
-        "name": "攻城独木舟",
-        "img": "攻城独木舟",
-        "link": "https://seicing.com/html/aoe2/unitaoem/攻城独木舟"
+        "name": "掷矛器攻城独木舟",
+        "img": "掷矛器攻城独木舟",
+        "link": "https://seicing.com/html/aoe2/unitaoem/掷矛器攻城独木舟"
     },
     {
         "civ": "azt",
@@ -121,9 +121,9 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "英雄单位",
-        "name": "特希普拉",
-        "img": "特希普拉",
-        "link": "https://seicing.com/html/aoe2/unitaoem/特希普拉"
+        "name": "泰西普特拉",
+        "img": "泰西普特拉",
+        "link": "https://seicing.com/html/aoe2/unitaoem/泰西普特拉"
     },
     {
         "civ": "azt",
@@ -135,30 +135,30 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "钝口螈",
-        "img": "钝口螈",
-        "link": "https://seicing.com/html/aoe2/unitaoem/钝口螈"
+        "name": "美西螈",
+        "img": "美西螈",
+        "link": "https://seicing.com/html/aoe2/unitaoem/美西螈"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "奎纳梅津",
-        "img": "奎纳梅津",
-        "link": "https://seicing.com/html/aoe2/unitaoem/奎纳梅津"
+        "name": "奎那麦芩",
+        "img": "奎那麦芩",
+        "link": "https://seicing.com/html/aoe2/unitaoem/奎那麦芩"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "森特松托托奇廷",
-        "img": "森特松托托奇廷",
-        "link": "https://seicing.com/html/aoe2/unitaoem/森特松托托奇廷"
+        "name": "四百兔众神",
+        "img": "四百兔众神",
+        "link": "https://seicing.com/html/aoe2/unitaoem/四百兔众神"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "马奎兹科瓦特尔",
-        "img": "马奎兹科瓦特尔",
-        "link": "https://seicing.com/html/aoe2/unitaoem/马奎兹科瓦特尔"
+        "name": "马基思科阿特尔",
+        "img": "马基思科阿特尔",
+        "link": "https://seicing.com/html/aoe2/unitaoem/马基思科阿特尔"
     },
     {
         "civ": "azt",
@@ -170,16 +170,16 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "查内克",
-        "img": "查内克",
-        "link": "https://seicing.com/html/aoe2/unitaoem/查内克"
+        "name": "夏尼克",
+        "img": "夏尼克",
+        "link": "https://seicing.com/html/aoe2/unitaoem/夏尼克"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "阿约托奇特利",
-        "img": "阿约托奇特利",
-        "link": "https://seicing.com/html/aoe2/unitaoem/阿约托奇特利"
+        "name": "阿约托契特利",
+        "img": "阿约托契特利",
+        "link": "https://seicing.com/html/aoe2/unitaoem/阿约托契特利"
     },
     {
         "civ": "azt",
@@ -191,37 +191,37 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "齐齐米特尔",
-        "img": "齐齐米特尔",
-        "link": "https://seicing.com/html/aoe2/unitaoem/齐齐米特尔"
+        "name": "兹兹米特尔",
+        "img": "兹兹米特尔",
+        "link": "https://seicing.com/html/aoe2/unitaoem/兹兹米特尔"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "敦库鲁丘",
-        "img": "敦库鲁丘",
-        "link": "https://seicing.com/html/aoe2/unitaoem/敦库鲁丘"
+        "name": "汤库卢楚",
+        "img": "汤库卢楚",
+        "link": "https://seicing.com/html/aoe2/unitaoem/汤库卢楚"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "灵魂引导者",
-        "img": "灵魂引导者",
-        "link": "https://seicing.com/html/aoe2/unitaoem/灵魂引导者"
+        "name": "亡灵向导",
+        "img": "亡灵向导",
+        "link": "https://seicing.com/html/aoe2/unitaoem/亡灵向导"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "特拉卡内克斯奎米利",
-        "img": "特拉卡内克斯奎米利",
-        "link": "https://seicing.com/html/aoe2/unitaoem/特拉卡内克斯奎米利"
+        "name": "特拉卡尼奎米利",
+        "img": "特拉卡尼奎米利",
+        "link": "https://seicing.com/html/aoe2/unitaoem/特拉卡尼奎米利"
     },
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "阿胡伊佐特尔",
-        "img": "阿胡伊佐特尔",
-        "link": "https://seicing.com/html/aoe2/unitaoem/阿胡伊佐特尔"
+        "name": "阿维索特尔",
+        "img": "阿维索特尔",
+        "link": "https://seicing.com/html/aoe2/unitaoem/阿维索特尔"
     },
     {
         "civ": "azt",
@@ -254,9 +254,9 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "常规建筑",
-        "name": "大屋",
-        "img": "大屋",
-        "link": "https://seicing.com/html/aoe2/buildingaoem/大屋"
+        "name": "卡普利",
+        "img": "卡普利",
+        "link": "https://seicing.com/html/aoe2/buildingaoem/卡普利"
     },
     {
         "civ": "azt",
@@ -345,8 +345,8 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "军事建筑",
-        "name": "头骨架塔",
-        "img": "头骨架塔",
-        "link": "https://seicing.com/html/aoe2/buildingaoem/头骨架塔"
+        "name": "骷髅墙塔",
+        "img": "骷髅墙塔",
+        "link": "https://seicing.com/html/aoe2/buildingaoem/骷髅墙塔"
     }
 ];
