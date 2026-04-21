@@ -122,15 +122,8 @@ export const aoe4list = [
         "civ": "azt",
         "section": "英雄单位",
         "name": "泰西普特拉",
-        "img": "泰西普特拉",
+        "img": "泰西普特拉左方蜂鸟神",
         "link": "https://seicing.com/html/aoe2/unitaoem/泰西普特拉"
-    },
-    {
-        "civ": "azt",
-        "section": "英雄单位",
-        "name": "天神下凡",
-        "img": "天神下凡",
-        "link": "https://seicing.com/html/aoe2/unitaoem/天神下凡"
     },
     {
         "civ": "azt",
@@ -310,9 +303,9 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "军事建筑",
-        "name": "战争小屋",
-        "img": "战争小屋",
-        "link": "https://seicing.com/html/aoe2/buildingaoem/战争小屋"
+        "name": "作战小屋",
+        "img": "作战小屋",
+        "link": "https://seicing.com/html/aoe2/buildingaoem/作战小屋"
     },
     {
         "civ": "azt",
