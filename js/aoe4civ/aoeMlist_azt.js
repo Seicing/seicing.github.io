@@ -127,6 +127,13 @@ export const aoe4list = [
     },
     {
         "civ": "azt",
+        "section": "英雄单位",
+        "name": "化身",
+        "img": "化身",
+        "link": "https://seicing.com/html/aoe2/unitaoem/化身"
+    },
+    {
+        "civ": "azt",
         "section": "神话单位",
         "name": "美西螈",
         "img": "美西螈",
@@ -156,9 +163,9 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "神话单位",
-        "name": "巨蝎",
-        "img": "巨蝎",
-        "link": "https://seicing.com/html/aoe2/unitaoem/巨蝎"
+        "name": "帝王蝎",
+        "img": "帝王蝎",
+        "link": "https://seicing.com/html/aoe2/unitaoem/帝王蝎"
     },
     {
         "civ": "azt",
