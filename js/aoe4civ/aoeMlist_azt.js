@@ -129,7 +129,7 @@ export const aoe4list = [
         "civ": "azt",
         "section": "英雄单位",
         "name": "化身",
-        "img": "化身",
+        "img": "化身左方蜂鸟神",
         "link": "https://seicing.com/html/aoe2/unitaoem/化身"
     },
     {
