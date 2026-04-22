@@ -600,7 +600,7 @@ let ayanami = {
     "维齐洛波奇特利加成3": /*html*/`维齐洛波奇特利加成3<br>夸奇客生命值+10%，在战斗中生成炽魂的数量+100%`,
 
     "顺风": /*html*/`顺风<br>Tailwind<br>短暂提升制定友军的移动速度`,
-    "黑曜石镜子": /*html*/`黑曜石镜子<br>Obsidian Mirror<br>指定一个玩家，复制其远古时代神力`,
+    "黑曜石镜子": /*html*/`黑曜石镜子<br>Obsidian Mirror<br>指定一个玩家，复制其古老时代神力`,
     "鲜血契约": /*html*/`鲜血契约<br>Blood Pact<br>指定一个单位，短时间赋予其强大力量，在持续时间结束后单位将会死亡并获得眷顾值`,
 
     "高级陷阱": /*html*/`高级陷阱<br>Advanced Trap<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>尖刺陷阱和烟雾陷阱升级为黑曜石陷阱和辣椒炸弹陷阱，攻击力+25%，烟雾陷阱的敌人视野减少率提高到80%，减速率提升到30%`,
