@@ -46,7 +46,7 @@ export const aoe4list = [
         "section": "军事单位",
         "name": "豹勇士",
         "img": "豹勇士",
-        "link": "豹勇士"
+        "link": "https://seicing.com/html/aoe2/unitaoem/豹勇士"
     },
     {
         "civ": "azt",
