@@ -140,13 +140,6 @@ export const aoe4list = [
         "link": "https://seicing.com/html/aoe2/unitaoem/美西螈"
     },
     {
-        "civ": "eyk",
-        "section": "神话单位",
-        "name": "美西螈(变异)",
-        "img": "美西螈变异",
-        "link": "https://seicing.com/html/aoe2/unitaoem/美西螈"
-    },
-    {
         "civ": "azt",
         "section": "神话单位",
         "name": "奎那麦芩",
