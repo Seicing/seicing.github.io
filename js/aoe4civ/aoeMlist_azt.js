@@ -15,6 +15,13 @@ export const aoe4list = [
     },
     {
         "civ": "azt",
+        "section": "平民单位",
+        "name": "森蚺",
+        "img": "森蚺",
+        "link": "https://seicing.com/html/aoe2/unitaoem/森蚺"
+    },
+    {
+        "civ": "azt",
         "section": "军事单位",
         "name": "奎迷钦间谍",
         "img": "奎迷钦间谍",
