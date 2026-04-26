@@ -15,6 +15,13 @@ export const aoe4list = [
     },
     {
         "civ": "egy",
+        "section": "平民单位",
+        "name": "赛特的动物",
+        "img": "赛特的动物",
+        "link": "https://seicing.com/html/aoe2/unitaoem/赛特的动物"
+    },
+    {
+        "civ": "egy",
         "section": "军事单位",
         "name": "长矛兵",
         "img": "长矛兵",
