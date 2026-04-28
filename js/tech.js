@@ -939,7 +939,7 @@ let ayanami = {
     "部署靺鞨族人": /*html*/`部署靺鞨族人<br>Deploy Mohe Tribesman<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35<br>利用附近草原的马匹立即部署该单位，并享受折扣`,
     "部署商人": /*html*/`部署商人<br>Deploy Trader<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>60<br>利用附近草原的马匹立即部署该单位，并享受折扣`,
 
-    "花塔技能": /*html*/`花塔技能<br>【待补充】<br>种植一座花园，使附近村民的采集速度 +25%，非攻城军事单位的攻击速度 +25%。这座花园会一直存在，直到种植新的花园`,
+    "花园": /*html*/`花园<br>【待补充】<br>种植一座花园，使附近村民的采集速度 +25%，非攻城军事单位的攻击速度 +25%。这座花园会一直存在，直到种植新的花园`,
     "建立进贡国": /*html*/`建立进贡国<br>【待补充】<br>建立一个进贡属国。必须对贸易站施放。进贡国可以提供本地农民生产的食物进贡和商人生产的黄金 +15%。每拥有一个进贡国，乡骑的建造上限 +3。可通过猛安谋克据点升级进贡国`,
     "贿赂": /*html*/`贿赂<br>【待补充】<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125<br>收买敌方军事单位，使其擅离职守并与附近的任何单位作战。最多可削弱价值 750 资源的敌方单位`,
     "小型银山塔林": /*html*/`小型银山塔林<br>【待补充】<br>每 30 秒在附近生成一个小型银山塔林，上限为 15 个。每个小型银山塔林每 30 秒产生 20 木材，并让附近敌人的移动速度 -20%`,
