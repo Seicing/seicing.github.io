@@ -933,6 +933,9 @@ let ayanami = {
     "乌奇恩人": /*html*/`乌奇恩人<br>Uch Benefactor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50<br>腾格拉卡巴德堡垒生命值+1500，并解锁4级总督，所有科技便宜35%，不适用于炮台`,
     "装甲野兽": /*html*/`装甲野兽<br>Armored Beasts<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>赋予战象 +20% 生命值和 +4 远程护甲`,
 
+    "草原加成": /*html*/`草原<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/草原.png' width='20px'>草原：金朝总共可以建造3个草原，每个草原提供5匹马，每匹马为近战骑兵/远程骑兵提供2/1生命值`,
+    "大牧场加成": /*html*/`大牧场<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大牧场.png' width='20px'>大牧场：大牧场视为一个草原，为金朝骑兵提供额外的5匹马生命值加成`,
+
 }
 
 function showPic(e, taitou) {
