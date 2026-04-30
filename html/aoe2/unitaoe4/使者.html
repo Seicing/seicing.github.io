@@ -56,12 +56,12 @@
         <tr class="textle">
             <td style="background-color:#F5F8FA;width:80px"><span style="color:#6e6e85">成本</span></td>
             <td colspan="4">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="20px">【待补充】
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="20px">150
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">训练时间</span></td>
-            <td colspan="4">【待补充】秒</td>
+            <td colspan="4">20秒</td>
         </tr>
         <tr class="bcF5F8FA textce">
             <td colspan="5"><span style="color:#6e6e85">状态数据</span></td>
@@ -70,26 +70,26 @@
             <td class="bcF5F8FA"><span style="color:#6e6e85">生命值</span></td>
             <td style="background-color:#ddffda;width:30px">-</td>
             <td style="background-color:#faffde;width:30px">-</td>
-            <td style="background-color:#fff1e1;width:30px">【待补充】</td>
+            <td style="background-color:#fff1e1;width:30px">75</td>
             <td style="background-color:#fce1e1;width:30px">-</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
             <td style="background-color:#ddffda;width:30px">-</td>
             <td style="background-color:#faffde;width:30px">-</td>
-            <td style="background-color:#fff1e1;width:30px">【待补充】</td>
+            <td style="background-color:#fff1e1;width:30px">0</td>
             <td style="background-color:#fce1e1;width:30px">-</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">远程护甲</span></td>
             <td style="background-color:#ddffda;width:30px">-</td>
             <td style="background-color:#faffde;width:30px">-</td>
-            <td style="background-color:#fff1e1;width:30px">【待补充】</td>
+            <td style="background-color:#fff1e1;width:30px">0</td>
             <td style="background-color:#fce1e1;width:30px">-</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">移动速度</span></td>
-            <td colspan="4">【待补充】</td>
+            <td colspan="4">1.12</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span style="color:#6e6e85">单位标签</span></td>
@@ -99,17 +99,20 @@
             <td colspan="5"><span style="color:#6e6e85">特殊能力</span></td>
         </tr>
         <tr class="textle">
-            <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/收税.png" width="20px">收税：自动从附近的建筑收取税金</td>
+            <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/贿赂.png"
+                    width="20px">贿赂：花费125黄金收买敌方军事单位，使其擅离职守并与附近的任何单位作战。最多可削弱价值 750 资源的敌方单位
+            </td>
         </tr>
         <tr class="textle">
-            <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/监督.png"
-                    width="20px">监督：监督一座生产建筑或经济建筑，提高150%工作效率或额外的20%资源收集量</td>
+            <td colspan="5"> <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/建立进贡国.png"
+                    width="20px">建立进贡国：建立一个进贡属国。必须对贸易站施放。进贡国可以提供本地农民生产的食物进贡和商人生产的黄金 +15%。每拥有一个进贡国，乡骑的建造上限
+                +3。可通过猛安谋克据点升级进贡国</td>
         </tr>
     </table>
 </div>
 <div>
     <div id="techno"></div>
-    “【待补充】”
+    “辅助单位，可在贸易站建立进贡关系，并收买敌方士兵使其倒戈”
     <br>
     <div class="textrg">——游戏内说明</div>
     <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
@@ -133,6 +136,7 @@
     </div>
     <div id="jinText0" style="text-align:left;display:block">
         <!--金朝部队-->
+        <span class="龙亭使者加成"></span><br>
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA"><span style="color:#6e6e85">近战护甲</span></td>
@@ -210,10 +214,8 @@
             <td data-base="20" id="buildtime"> </td>
             <td>成本</td>
             <td colspan="3">
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png" width="25px">
-                <span data-base="100" id="cost1"></span>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png" width="25px">
-                <span data-base="50" id="cost3"></span>
+                <span data-base="150" id="cost3"></span>
             </td>
         </tr>
         <tr>
@@ -226,16 +228,19 @@
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png" width="25px">移动速度</td>
-            <td data-base="1.125" id="speed"> </td>
-            <td>运载量</td>
-            <td data-base="40" id="carry1"> </td>
+            <td data-base="1.124" id="speed"> </td>
             <td>训练上限</td>
-            <td data-base="4" id="maximumpro"> </td>
+            <td data-base="2" id="maximumpro"> </td>
+            <td colspan="2"> </td>
         </tr>
         <tr>
             <td>其他加成</td>
             <td colspan="5">
-
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/贿赂.png"
+                    width="20px">贿赂：花费125黄金收买敌方军事单位，使其擅离职守并与附近的任何单位作战。最多可削弱价值 750 资源的敌方单位<br>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/建立进贡国.png"
+                    width="20px">建立进贡国：建立一个进贡属国。必须对贸易站施放。进贡国可以提供本地农民生产的食物进贡和商人生产的黄金 +15%。每拥有一个进贡国，乡骑的建造上限
+                +3。可通过猛安谋克据点升级进贡国<br>
             </td>
         </tr>
     </table>
@@ -243,6 +248,11 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" style="color:blue;display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+
+        <div class="icon" data-game="jin" data-mode="diffMul" data-type="cost" data-value="0.66"><a
+                onmousemove="showPic(event,'龙亭使者加成');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/龙亭.png" width="30px"></a>
+        </div>
 
         <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
                 onmousemove="showPic(event,'合身皮具');" onmouseout="hiddenPic();"><img
