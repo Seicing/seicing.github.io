@@ -44,9 +44,16 @@ export const aoe4list = [
   {
     "civ": "rus",
     "section": "军事单位",
-    "name": "民兵",
-    "img": "民兵",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/民兵"
+    "name": "民兵长戟兵",
+    "img": "民兵长戟兵",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/民兵长戟兵"
+  },
+  {
+    "civ": "rus",
+    "section": "军事单位",
+    "name": "民兵火枪兵",
+    "img": "民兵火枪兵",
+    "link": "https://seicing.com/html/aoe2/unitaoe4/民兵火枪兵"
   },
   {
     "civ": "rus",

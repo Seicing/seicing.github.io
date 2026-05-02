@@ -381,7 +381,7 @@ let ayanami = {
     "分灵": /*html*/`分灵<br>Bunrei<br> <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>将依代的最大数量增加 +2。立即在水上鸟居产生 2 依代`,
     "禅宗": /*html*/`禅宗<br>Zen<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>佛教僧侣每 60 秒产生 25 黄金`,
     "涅槃": /*html*/`涅槃<br>Nehan<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>将佛教皈依升级为涅槃皈依，其冷却缩短 25%，并在施放时附近盟友单位移动速度额外 +25%`,
-    "五项山地事工": /*html*/`五项山地事工<br>Five Mountain Ministries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>佛教寺庙每 6 秒向附近的敌人施放僧兵经文，此科技会在建造平等院完毕时自动免费研究`,
+    "五项山地事工": /*html*/`五项山地事工<br>Five Mountain Ministries<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>佛教寺庙每 6 秒向附近的敌人施放僧兵经文`,
 
 
 
