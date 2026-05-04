@@ -582,6 +582,10 @@ div {
     row-gap: 0;
 }
 
+.age0 {
+    width: 810px;
+}
+
 .aoe4de-flex-container .age0 .aoe4de-tech-group,
 .aoe4de-flex-container .age1 .aoe4de-tech-group,
 .aoe4de-flex-container .age2 .aoe4de-tech-group,
@@ -933,6 +937,10 @@ div {
     #customers2 {
         display: revert !important;
         width: 100% !important;
+    }
+
+    .age0 {
+        width: 100%;
     }
 
     #wenttodie {
