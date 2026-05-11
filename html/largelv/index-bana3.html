@@ -15,6 +15,27 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
 <style>
+    /* 提示框：地名标题样式 */
+    .aaposbo-title {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* 提示框：额外说明的样式 */
+    .aaposbo {
+        font-size: 12px;
+        margin-top: 6px;
+        min-width: 180px;
+        max-width: 260px;
+        white-space: normal;
+        /* 允许正常换行 */
+        text-align: left;
+        color: #eee;
+        line-height: 1.5;
+    }
+
+
     /* 修改 Leaflet 默认提示框的样式 */
     .leaflet-tooltip {
         background-color: rgba(0, 0, 0, 0.8) !important;
@@ -378,11 +399,11 @@
                 }
 
                 // 构建 Tooltip 的 HTML 内容
-                let tooltipHtml = `<div style="text-align: center; font-size: 14px;"><b>${p.name || "无名地点"}</b></div>`;
+                let tooltipHtml = `<div class="aaposbo-title"><b>${p.name || "无名地点"}</b></div>`;
 
                 // 如果 JSON 中定义了 desc (额外说明) 字段，则追加到下方
                 if (p.desc) {
-                    tooltipHtml += `<div style="font-size: 12px; margin-top: 6px; max-width: 220px; white-space: normal; text-align: left; color: #eee; line-height: 1.4;">${p.desc}</div>`;
+                    tooltipHtml += `<div class="aaposbo">${p.desc}</div>`;
                 }
 
                 mk.addTo(map)
