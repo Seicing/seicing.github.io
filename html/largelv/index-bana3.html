@@ -15,6 +15,19 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript" src="https://seicing.com/js/leaflet.js"> </script>
 <style>
+    /* 修改 Leaflet 默认提示框的样式 */
+    .leaflet-tooltip {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        border: 1px solid #555 !important;
+        color: #fff !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* 隐藏提示框下面的小三角 */
+    .leaflet-tooltip-top:before {
+        border-top-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
     html,
     body {
         margin: 0;
@@ -364,11 +377,20 @@
                     });
                 }
 
+                // 构建 Tooltip 的 HTML 内容
+                let tooltipHtml = `<div style="text-align: center; font-size: 14px;"><b>${p.name || "无名地点"}</b></div>`;
+
+                // 如果 JSON 中定义了 desc (额外说明) 字段，则追加到下方
+                if (p.desc) {
+                    tooltipHtml += `<div style="font-size: 12px; margin-top: 6px; max-width: 220px; white-space: normal; text-align: left; color: #eee; line-height: 1.4;">${p.desc}</div>`;
+                }
+
                 mk.addTo(map)
-                    .bindTooltip(p.name || "无名地点", {
+                    .bindTooltip(tooltipHtml, {
                         direction: "top",
                         offset: [0, -10],
-                        opacity: 0.85
+                        // 稍微调高一点透明度，让带说明的文字更容易看清
+                        opacity: 0.95
                     })
                     .on("click", () => {
                         if (p.url) location.href = p.url;
