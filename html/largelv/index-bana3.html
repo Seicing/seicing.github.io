@@ -158,13 +158,14 @@
 
 <div id="map"></div>
 <div id="coordBox">X: -, Y: -</div>
-<!--
+
 <div id="filterBar">
-    <button data-filter="aoe2">古典时代</button>
+    <button data-filter="aoe2">帝国元</button>
+</div>
+<!--
     <button data-filter="aoe3">探索时代</button>
     <button data-filter="aoe4">近世时代</button>
    <button data-filter="aoem">原子时代</button>
-</div>
 -->
 <br></div>
                     </div>
@@ -270,7 +271,7 @@
     // ★ 筛选规则定义
     // ============================
     const FILTERS = {
-        aoe2: { match: name => name.startsWith("古典时代") },
+        aoe2: { match: name => name.startsWith("帝国元") },
         aoe3: { match: name => name.startsWith("探索时代") },
         aoe4: { match: name => name.startsWith("近世时代") },
         aoem: { match: name => name.startsWith("原子时代") }
