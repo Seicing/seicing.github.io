@@ -141,17 +141,17 @@
 
     /* 默认大小 */
     .mapText.normal {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     /* 大地名 */
     .mapText.large {
-        font-size: 42px;
+        font-size: 48px;
     }
 
     /* 小地名 */
     .mapText.small {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     /* --- 修改：覆盖 divIcon 默认背景，并关闭外层大盒子的鼠标事件 --- */
@@ -408,8 +408,7 @@
 
                 mk.addTo(map)
                     .bindTooltip(tooltipHtml, {
-                        direction: "top",
-                        offset: [0, -10],
+                        direction: "auto",  // ★ 改为自动：在边缘时会自动换方向
                         // 稍微调高一点透明度，让带说明的文字更容易看清
                         opacity: 0.95
                     })
