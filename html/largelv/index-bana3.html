@@ -28,11 +28,9 @@
         min-width: 180px;
         max-width: 260px;
         white-space: normal;
-        /* 允许正常换行 */
         text-align: left;
         color: #eee;
         line-height: 1.2;
-        font-family: 'Tangut';
     }
 
     /* 修改 Leaflet 默认提示框的整体样式 */
@@ -492,8 +490,8 @@
 
                     let tooltip =
                         `<div class="aaposbo-title">
-      <b>${getLocalizedText(p)}</b>
-                        </div>`;
+        <b>${p.text || getDisplayName(p.name || "无名地点")}</b>
+    </div>`;
 
                     if (p.desc) {
                         tooltip += `<div class="aaposbo">${p.desc}</div>`;
