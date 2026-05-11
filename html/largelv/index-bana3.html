@@ -183,11 +183,17 @@
 
     /* --- 修改：文字类型的缩放控制，开启文字自身的鼠标事件 --- */
     .scalable-text {
-        transform-origin: center center;
-        transform: translate(-50%, -50%) scale(var(--map-scale, 1));
-        will-change: transform;
-        /* 关键修复：只让缩放后的文字实体响应鼠标 */
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform-origin: center;
+
+        transform:
+            translate(-50%, -50%) scale(var(--map-scale, 1));
+
         pointer-events: auto !important;
+        white-space: nowrap;
     }
 </style>
 </head>
@@ -415,19 +421,28 @@
                     const h = p.height || 36;
 
                     let mk;
-
                     if (p.type === "text") {
+
+                        const angle = p.angle || 0;
+                        const vertical = p.vertical || false;
 
                         mk = L.marker([p.y, p.x], {
                             icon: L.divIcon({
                                 className: "custom-div-icon",
                                 iconSize: [0, 0],
-                                html: `<div class="mapText ${p.size || "normal"} scalable-text">
-                                    ${p.text || getDisplayName(p.name)}
-                                </div>`
+                                html: `<div
+                class="mapText ${p.size || "normal"} scalable-text"
+                style="
+                    transform:
+                        translate(-50%, -50%)
+                        scale(var(--map-scale, 1))
+                        rotate(${angle}deg);
+                    writing-mode: ${vertical ? "vertical-rl" : "horizontal-tb"};
+                ">
+                ${p.text || getDisplayName(p.name)}
+            </div>`
                             })
                         });
-
                     } else {
 
                         mk = L.marker([p.y, p.x], {
@@ -468,6 +483,7 @@
                 }
 
                 applyFilters();
+                syncButtonUI();
             });
     }
 
@@ -560,6 +576,29 @@
     });
 
     map.addControl(new JumpControl());
+
+
+    function syncButtonUI() {
+
+        document.querySelectorAll("#filterBar button").forEach(btn => {
+
+            const f = btn.dataset.filter;
+            const l = btn.dataset.layer;
+            const lang = btn.dataset.lang;
+
+            let active = false;
+
+            if (f) active = filterState[f];
+            if (l) active = layerState[l];
+
+            // lang：默认只有当前语言高亮（简单处理）
+            if (lang && lang === "zh") active = true;
+
+            btn.classList.toggle("off", !active);
+        });
+    }
+
+    syncButtonUI();
 
 </script>
 
