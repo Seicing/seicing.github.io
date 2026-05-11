@@ -356,6 +356,7 @@
         "x": 3718,
         "y": 2566,
         "desc": "",
+        "angle": 45,
         "size": "large",
         "type": "text",
         "text": "策恩特拉瓦尔德",
@@ -370,6 +371,17 @@
         "type": "text",
         "text": "尼德隆",
         "texten": "Νιεδερονγ"
+    },
+    {
+        "name": "政区 泽伦布里亚格",
+        "x": 2183,
+        "y": 621,
+        "desc": "",
+        "angle": 20,
+        "size": "large",
+        "type": "text",
+        "text": "泽伦布里亚格",
+        "texten": "𐌶𐌴𐌻𐌴𐌽𐌱𐍂y𐌰𐌲"
     },
     {
         "name": "测试",
