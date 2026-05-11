@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>音乐 中国风格</title>
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 使用回调函数：只有当 music.html 加载成功后，才会执行 function 内的代码
+        $('#sidebar').load('https://seicing.com/js/list/music.html', function (response, status, xhr) {
+            if (status == "error") {
+                console.log("侧边栏加载失败: " + xhr.status + " " + xhr.statusText);
+            } else {
+                console.log("侧边栏加载完成，开始执行布局修复...");
+
+                // 1. 如果布局管理函数存在，手动触发一次
+                if (typeof conditionallyManageLayout === 'function') {
+                    conditionallyManageLayout();
+                }
+
+                // 2. 双重保险：如果是手机端，直接强制执行克隆函数
+                if (window.innerWidth < 1280 && typeof cloneSidebarContent === 'function') {
+                    // 给一个小小的延迟，确保浏览器渲染了 DOM
+                    setTimeout(cloneSidebarContent, 50);
+                }
+            }
+        });
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="7"></div>
+<div id="skPlayer"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table id="ciyaus" width="750px">
+    <tr>
+        <td>歌曲名</td>
+        <td>元出典</td>
+    </tr>
+
+    <tr>
+        <td>中国</td>
+        <td>チンギスハーン・蒼き狼と白き牝鹿IV</td>
+    </tr>
+    <tr>
+        <td>中国の街</td>
+        <td>大航海時代III Costa del Sol</td>
+    </tr>
+    <tr>
+        <td>東アジアの海</td>
+        <td>大航海時代IV</td>
+    </tr>
+    <tr>
+        <td>鳥児在天空飛翔 魚児在河里游泳</td>
+        <td>ライブ・ア・ライブ</td>
+    </tr>
+    <tr>
+        <td>Chinese</td>
+        <td>Age of Empires IV</td>
+    </tr>
+    <tr>
+        <td>Main Theme</td>
+        <td>紫禁城</td>
+    </tr>
+</table></div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a><br><br>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/skPlayer.min2.js"></script>
+<script>
+    var player = new skPlayer({
+        autoplay: false,
+        music: {
+            type: 'file',
+            source: [{
+                name: '中国',
+                author: 'チンギスハーン・蒼き狼と白き牝鹿IV',
+                src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/中国(チンギスハーン・蒼き狼と白き牝鹿IV).mp3',
+                cover: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/0071723-01.jpg'
+            },
+            {
+                name: '中国の街',
+                author: '大航海時代III Costa del Sol',
+                src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/中国の街(大航海時代III Costa del Sol).mp3',
+                cover: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/51bZ5gw0WIL._AC_SX466_.jpg'
+            },
+            {
+                name: '東アジアの海',
+                author: '大航海時代IV',
+                src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/東アジアの海(大航海時代IV).mp3',
+                cover: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/Uncharted-Waters-IV.jpg'
+            }, {
+                name: '鳥児在天空飛翔 魚児在河里游泳',
+                author: 'ライブ・ア・ライブ',
+                src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/17 - 鳥児在天空飛翔 魚児在河里游泳.mp3',
+                cover: 'https://data.seicing.com/seicingdepot/seicingmusic/music/cover/LiveALiveBoxArt.jpg'
+            },
+            {
+                name: 'Chinese',
+                author: 'Age of Empires IV',
+                src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/中国.mp3',
+                cover: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/age4.jpg'
+            },
+            {
+                name: 'Main Theme',
+                author: '紫禁城',
+                src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/ShiKinJou.mp3',
+                cover: 'https://data.seicing.com/seicingdepot/seicingmusic/music/sp/Shikinjoh_MDTitleScreen'
+            },
+            ]
+        }
+    });
+</script>
+<!--异步标签-->
+
+</html>

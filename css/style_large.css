@@ -1,0 +1,961 @@
+#scroll-2::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+#scroll-2::-webkit-scrollbar-button {
+    background-color: rgb(172, 166, 151);
+    display: none;
+}
+
+#scroll-2::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+#scroll-2::-webkit-scrollbar-thumb {
+    background: rgb(172, 166, 151);
+    border-radius: 4px;
+}
+
+#scroll-2::-webkit-scrollbar-corner {
+    background: rgb(172, 166, 151);
+}
+
+#scroll-2::-webkit-scrollbar-resizer {
+    background: rgb(172, 166, 151);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
+    font-size: 9pt;
+    color: #4D4D4D;
+}
+
+a:hover {
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Arvo', serif;
+    color: #25201c;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p,
+ul,
+ol {
+    margin-top: 0;
+    line-height: 240%;
+}
+
+a {
+    text-decoration: none;
+    color: #D0C9B7;
+}
+
+#wrapper {
+    background: url(https://seicing.com/res/img03b.png) repeat-y center top;
+    background-size: cover cover;
+}
+
+@media screen and (orientation:portrait) {
+    #wrapper {
+        width: 1825px
+    }
+}
+
+#wrapper2 {
+    background: url(https://seicing.com/res/img02b.png) no-repeat center top;
+    background-size: cover cover;
+}
+
+.container {
+    width: 1550px;
+    margin: 0px auto;
+}
+
+/* Header */
+#header {
+    width: 1825px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/* Logo */
+#logo {
+    float: left;
+    width: 288px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+#logo h1 {
+    padding: 30px 0px 0px 0px;
+    letter-spacing: -3px;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 40px;
+}
+
+#logo h1 span {
+    color: #D0C9B7;
+}
+
+#logo h1 a {
+    color: #FFFFFF;
+}
+
+#logo p {
+    margin: 0;
+    padding: 0px 0 0 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#logo p a {
+    color: #FFFFFF;
+}
+
+#logo a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Search */
+#search {
+    float: right;
+    width: 280px;
+    height: 60px;
+    padding: 20px 0px 0px 0px;
+}
+
+#search form {
+    height: 41px;
+    margin: 0;
+    padding: 10px 0 0 20px;
+}
+
+#search fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#search-text {
+    width: 170px;
+    padding: 6px 5px 3px 5px;
+    border: none;
+    background: #D0C9B7;
+    text-transform: lowercase;
+    font: normal 11px Arial, Helvetica, sans-serif;
+}
+
+#search-submit {
+    width: 50px;
+    height: 22px;
+    border: none;
+    background: #1D1D1D;
+    color: #FFF;
+}
+
+/* Menu */
+#menu {
+    float: right;
+    width: 1500px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#menu ul {
+    float: right;
+    margin: 0;
+    padding: 50px 20px 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    padding: 0px 15px 0px 15px;
+}
+
+#menu a {
+    display: block;
+    height: 20px;
+    margin-right: 1px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFFFFF;
+    border: none;
+}
+
+#menu a:hover,
+#menu .current_page_item a {
+    text-decoration: none;
+}
+
+/* Page */
+#page {
+    width: 1850px;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+/* Content */
+#content {
+    float: right;
+    width: 1500px;
+    padding: 0px 25px;
+}
+
+.post {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.post .title {
+    margin: 0px;
+    padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+.post .title a {
+    border: none;
+    letter-spacing: 1px;
+    letter-spacing: -1px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: normal;
+    color: #D0C9B7;
+}
+
+.post .meta {
+    margin-bottom: 30px;
+    padding: 0px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.post .meta .date {
+    float: left;
+}
+
+.post .meta .posted {
+    float: right;
+}
+
+.post .entry {
+    padding: 0px 0px 30px 0px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.entry {
+    min-height: 500px
+}
+
+.links {
+    float: right;
+    margin: 20px 0px 30px 0px;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.more {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    margin-right: 30px;
+}
+
+.comments {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Sidebar */
+#sidebar {
+    float: left;
+    width: 288px;
+    margin: 0px;
+    color: #726B63;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li ul {
+    margin: 0px 0px;
+    padding-bottom: 50px;
+}
+
+#sidebar li li {
+    line-height: 35px;
+    border-bottom: 1px dashed #A5A08C;
+    margin: 0px 30px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#sidebar li li a {
+    padding: 0px 0px 0px 0px;
+}
+
+#sidebar h2 {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    padding-left: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    color: #2E2E2E;
+}
+
+#sidebar p {
+    margin: 0 0px;
+    padding: 0px 30px 20px 30px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#sidebar a {
+    border: none;
+    color: #857E6E;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Calendar */
+#calendar_wrap {
+    padding: 20px;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar tbody td {
+    text-align: center;
+}
+
+#calendar #next {
+    text-align: right;
+}
+
+/* Footer */
+#footer {
+    width: 940px;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background: #3D3630;
+    color: #949085;
+}
+
+#footer p {
+    margin: 0;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#footer a {
+    color: #949085;
+}
+
+#banner {
+    width: 940px;
+    margin: 0px auto;
+    height: 150px;
+}
+
+div {
+    font-family: Microsoft Yahei, sans-serif;
+}
+
+.div-height {
+    height: 200px
+}
+
+.textce {
+    text-align: center;
+}
+
+.textle {
+    text-align: left;
+}
+
+.textrg {
+    text-align: right;
+}
+
+.rightline {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+#celp250 {
+    border: 1px solid grey;
+    width: 250px;
+}
+
+#celp250 td {
+    padding: 5px;
+}
+
+#celp220 {
+    border: 1px solid grey;
+    width: 220px;
+}
+
+#celp220 td {
+    padding: 5px;
+}
+
+#celp200 {
+    border: 1px solid grey;
+    width: 200px;
+}
+
+#celp200 td {
+    padding: 5px;
+}
+
+.bcF5F8FA {
+    background-color: #F5F8FA;
+}
+
+.hrsty {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #555555;
+}
+
+/* ================================
+   移动抽屉：仅在手机 / 平板显示
+   ================================ */
+
+/* 默认：显示（给 <1280px 用） */
+#mobile-drawer-container {
+    display: block;
+}
+
+/* 电脑模式：强制隐藏 */
+@media (min-width: 1280px) {
+    #mobile-drawer-container {
+        display: none !important;
+    }
+}
+
+
+/* ======================================================== */
+/* === 1. 全局/桌面端样式 === */
+/* ======================================================== */
+/* 默认隐藏移动端专属元素 */
+#sidebar-toggle-button,
+#sidebar-overlay,
+#mobile-drawer-container {
+    display: none !important;
+}
+
+/* --- 1. 基础样式 (所有分辨率通用) --- */
+#back-to-top-button {
+    display: block !important;
+    /* 确保按钮总是可见 */
+    position: fixed;
+    z-index: 1000;
+    /* 比菜单按钮低一点，但仍然很高 */
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, left 0.3s ease-in-out;
+}
+
+#back-to-top-button:hover {
+    background-color: #555;
+}
+
+/* --- 2. 电脑模式 (>= 1280px) 的默认位置 --- */
+#back-to-top-button {
+    bottom: auto;
+    top: 20px;
+    /* 距离顶部 20px */
+    left: auto;
+    /* 1. 释放左侧的“引力”，防止它赖在左边 */
+    right: 20px;
+    /* 2. 设定距离右侧 20px (如果想紧贴边缘就写 0) */
+}
+
+
+
+/* --- 规则 B：手机 --- 767px */
+@media only screen and (max-width: 767px) {
+    .rightline {
+        float: right;
+        margin-left: 5px;
+        margin-bottom: 5px
+    }
+
+    .container {
+        width: 100%
+    }
+
+    #header {
+        width: 100%
+    }
+
+    #back-to-top-button {
+        top: 70px;
+        right: 15px;
+        bottom: auto;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    #wrapper,
+    #wrapper2,
+    #page,
+    #content,
+    .post {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .entry {
+        padding: 10px 15px;
+    }
+
+    .entry,
+    .entry p,
+    .entry li {
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .entry img,
+    .entry video,
+    .entry iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box;
+    }
+
+    .entry input[type="text"],
+    .entry input[type="password"],
+    .entry textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .entry textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    #sidebar {
+        display: none !important;
+    }
+
+    #sidebar-toggle-button {
+        display: block !important;
+        position: fixed;
+        top: 15px;
+        left: auto;
+        right: 15px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #sidebar-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #mobile-drawer-container {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        max-width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.85) !important;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    body.sidebar-open #mobile-drawer-container {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open #sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.sidebar-open {
+        overflow: hidden !important;
+    }
+
+    #empire,
+    div:has(> .saic) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #empire {
+        width: auto !important;
+    }
+
+    #techtree {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        border: 1px solid #ccc;
+    }
+
+    body #layer1,
+    body #layer2,
+    body #layer1 *,
+    body #layer2 * {
+        position: revert !important;
+        width: revert !important;
+        max-width: revert !important;
+        min-width: revert !important;
+        white-space: revert !important;
+        word-break: revert !important;
+        overflow-wrap: revert !important;
+        flex: revert !important;
+        box-sizing: revert !important;
+        display: revert !important;
+        opacity: revert !important;
+        visibility: revert !important;
+        background: revert !important;
+        color: revert !important;
+        padding: revert !important;
+        border-radius: revert !important;
+        z-index: revert !important;
+        pointer-events: revert !important;
+    }
+
+    #comment_all,
+    #comment_all table,
+    div[style*="width"]>textarea#comment_text,
+    #comments,
+    #comment_pages {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    div:has(> #comment_text) {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    textarea#comment_text {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    #comment_pages a {
+        white-space: normal !important;
+        display: inline-block;
+        margin: 2px;
+    }
+
+    @media (max-width: 480px) {
+        #comment_all table td {
+            display: block;
+            width: 100% !important;
+            text-align: left !important;
+            padding-bottom: 10px;
+        }
+
+        #comment_all table td:last-child {
+            text-align: left !important;
+            padding-top: 5px;
+        }
+    }
+
+    #techtree {
+        background: none !important;
+    }
+
+    #icons {
+        width: 100% !important;
+    }
+
+    #aoe4de {
+        width: 100% !important;
+    }
+
+    #customers {
+        width: 100% !important;
+    }
+
+    #ciyaus {
+        width: 100% !important;
+    }
+
+    #customers2 {
+        display: revert !important;
+        width: 100% !important;
+    }
+
+
+
+    #wenttodie {
+        display: grid !important;
+        overflow-x: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #wenttodie>* {
+        min-width: 800px !important;
+        box-sizing: border-box !important;
+    }
+
+    #tablebana {
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
+        position: static !important;
+        left: unset !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    #tablebana2 {
+        width: 80vw !important;
+        float: none !important;
+        position: relative;
+        transform: translateX(-10vw);
+        margin: 0 auto !important;
+    }
+}
+
+/* ===================================================================== */
+/* === 新增：2. 平板/小尺寸桌面专属样式 (768px - 1279px) === */
+/* === (这是一个包含所有必要样式的独立模块) === */
+/* ===================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .container {
+        width: 100%
+    }
+
+    #header {
+        width: 100%
+    }
+
+    #back-to-top-button {
+        top: 70px;
+        right: 15px;
+        bottom: auto;
+    }
+
+    #wrapper {
+        background: #ffffff !important;
+    }
+
+    html {
+        background: #e2ddca !important;
+    }
+
+    /* --- 第一部分：平板布局调整 --- */
+    /* 1. 隐藏固定的桌面侧边栏 */
+    #sidebar {
+        display: none !important;
+    }
+
+    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
+    #wrapper {
+        width: 100% !important;
+    }
+
+    /* 2. 让主容器适应屏幕宽度，而不是固定的1280px */
+    #page {
+        width: 800px !important;
+    }
+
+    /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
+    #content {
+        width: 800px !important;
+        float: none !important;
+        /* 清除浮动，防止布局错乱 */
+        margin: 0 auto !important;
+        /* 实现水平居中 */
+    }
+
+    /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
+    /* 因为这个区间也要使用抽屉，所以必须包含完整的抽屉样式 */
+    #sidebar-toggle-button {
+        display: block !important;
+        position: fixed;
+        top: 15px;
+        left: auto;
+        right: 15px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #sidebar-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #mobile-drawer-container {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        max-width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.85) !important;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    body.sidebar-open #mobile-drawer-container {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open #sidebar-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.sidebar-open {
+        overflow: hidden !important;
+    }
+}

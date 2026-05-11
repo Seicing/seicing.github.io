@@ -1,0 +1,1058 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>军团与军团长 开发者笔记</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="4181"></div>
+<div class="keep-original-background"></div>
+<div style="text-align:center;"><span class="golder2"><b>开发者笔记</b></span></div>
+<br><br>
+mod文件架构的备忘录，每次官方更新后对照文件列表进行跟进和修复<br>
+新单位、技能和科技请对照官方最新的单位模板进行修复，大部分场合下不用管<br>
+<br>
+<span class="golder"><b>【通用】</b><br></span>
+unit_handcannon_4 火枪兵<br>
+building_defense_tower 石墙塔<br>
+building_defense_keep_control 城堡<br>
+building_econ_stone_ruin 帝国遗迹<br>
+unit_shogun 军团长<br>
+每个文明都应该有的组成部分，其中火枪兵是修改了研发蛇纹石火药后的武器，石墙塔、城堡都修改了成本，城堡加入了生产线和生产完成后的树<br>
+<br>
+<span class="golder"><b>ebps</b><br></span>
+building_defense_outpost_control_abb 黑衣大食王朝哨站，延长了影响力范围<br>
+building_defense_outpost_control_abb_ha_01 阿尤布哨站，延长了影响力范围<br>
+building_landmark_age2_galata_tower_byz 拜占庭金角湾塔，为靶场解锁新兵种<br>
+building_landmark_age3_western_merc_house_byz 拜占庭贵族学院，可以使用等值的橄榄油瞬间招募军团<br>
+building_unit_ranged_control_byz 拜占庭靶场，训练新单位<br>
+unit_knight_3_byz 拜占庭甲胄骑兵，加入了冲锋<br>
+unit_knight_4_byz 拜占庭甲胄骑兵，加入了冲锋<br>
+unit_manatarms_3_byz 拜占庭瓦兰吉卫队，加入了特殊能力<br>
+unit_manatarms_4_byz 拜占庭瓦兰吉卫队，加入了特殊能力<br>
+building_landmark_age2_cistern_byz_ha_mac 马其顿王朝地下水宫，提供使用资源交换白银的一次性能力<br>
+building_unit_ranged_control_byz_ha_mac 马其顿王朝靶场，训练装甲骑射手<br>
+unit_trade_cart_byz_ha_mac 马其顿王朝贸易马车，贸易时产生白银<br>
+building_landmark_age1_gatehouse_control_chi 中国烈日瓮城<br>
+building_landmark_age2_palace_control_chi 中国皇宫，禁军<br>
+building_landmark_age3_spirit_way_control_chi 中国皇陵<br>
+unit_official_1_chi 中国朝廷命官，0人口<br>
+building_landmark_age3_library_chi_ha_01 朱子遗训朱熹书院，研发科技上限<br>
+unit_official_1_chi_ha_01 朱子遗训朝廷命官，0人口<br>
+building_unit_ranged_control_eng 英格兰靶场，生产骑射手<br>
+building_landmark_age1_westminster_hall_eng 英格兰议会厅，生产骑射手<br>
+building_landmark_age2_white_tower_eng 英格兰白塔，城堡地标<br>
+building_landmark_age3_whitehall_palace_eng 英格兰温嘉德宫殿<br>
+building_landmark_age3_windsor_castle_eng 英格兰伯克郡宫殿，城堡地标<br>
+building_unit_ranged_control_fre 法兰西靶场，生产骑射手<br>
+building_landmark_age2_la_chateau_rouge_fre 法兰西红宫，生产骑射手<br>
+building_unit_ranged_control_fre_ha_01 圣女贞德靶场，生产骑射手<br>
+building_landmark_age2_la_chateau_rouge_fre_ha_01 圣女贞德红宫，生产骑射手<br>
+building_landmark_age2_nuremberg_castle_hre 神圣罗马帝国城主宫殿，军团+长戟兵<br>
+building_landmark_age3_eltz_castle_hre 神圣罗马帝国埃尔茨巴赫宫殿，城堡地标<br>
+building_landmark_age3_eltz_castle_hre_ha_01 龙之骑士团埃尔茨巴赫宫殿，城堡地标<br>
+unit_crossbowman_4_hre_ha_01 龙之骑士团人口<br>
+unit_handcannon_4_hre_ha_01 龙之骑士团人口<br>
+unit_horseman_4_hre_ha_01 龙之骑士团人口<br>
+unit_knight_4_hre_ha_01 龙之骑士团人口<br>
+unit_landsknecht_4_hre_ha_01 龙之骑士团人口<br>
+unit_manatarms_4_hre_ha_01 龙之骑士团人口<br>
+unit_spearman_4_hre_ha_01 龙之骑士团人口<br>
+unit_villager_1_hre_ha_01 龙之骑士团村民免提交<br>
+building_landmark_age2_buddhist_jpn 日本平等院，生产一向一揆<br>
+building_landmark_age3_treasure_jpn 日本乌城，城堡地标<br>
+building_unit_religious_buddhist_jpn 日本佛寺，生产一向一揆<br>
+building_landmark_age3_crow_jpn_ha_sen 战国大名乌城，城堡地标<br>
+building_landmark_age3_greatwall_bastion_jin 金朝长城要塞，城堡地标<br>
+building_landmark_age1_abbey_lan 兰开斯特王朝列王修道院，研究解锁科技<br>
+building_landmark_age2_white_tower_lan 兰开斯特王朝白塔，城堡地标<br>
+building_landmark_age3_berkshire_lan 兰开斯特王朝伯克郡宫殿，城堡地标<br>
+building_unit_range_lan 兰开斯特王朝靶场，训练骑射手<br>
+building_landmark_age2_landmarkc_control_mal 马里富拉尼大牧场，生产和科技<br>
+building_landmark_age3_landmarkf_mal 马里女猎手要塞，城堡地标<br>
+building_unit_cavalry_mon 蒙古马厩，训练答剌罕骑兵<br>
+building_wonder_age1_kurultai_mon 蒙古忽里勒台，研究忽里勒台光环解锁科技<br>
+building_landmark_age3_kilitbahir_castle_ott 奥斯曼海门城堡，城堡地标<br>
+unit_knight_3_ott 奥斯曼长矛骑兵，升级<br>
+unit_knight_4_ott 奥斯曼长矛骑兵，升级<br>
+building_landmark_age3_spassakaya_tower_control_rus 罗斯斯巴斯克塔，城堡地标<br>
+unit_villager_1_rus 罗斯村民，免提交<br>
+building_landmark_age3_bijay_mandal_palace_control_sul 德里苏丹国苏丹宫殿解锁<br>
+unit_monk_2_sul 德里苏丹国学者免人口<br>
+building_house_control_sul_ha_tug 图格鲁克王朝房屋提交点<br>
+
+
+<br>
+<span class="golder"><b>sbps</b><br></span>
+unit_knight_3_byz 拜占庭甲胄骑兵，加入了冲锋<br>
+unit_knight_4_byz 拜占庭甲胄骑兵，加入了冲锋<br>
+unit_manatarms_3_byz 拜占庭瓦兰吉卫队，加入了建筑<br>
+unit_manatarms_4_byz 拜占庭瓦兰吉卫队，加入了建筑<br>
+unit_monk_1_hre 神圣罗马帝国僧侣，可以早期捡起圣物<br>
+unit_monk_1_hre_ha_01 龙之骑士团僧侣，可以早期捡起圣物<br>
+unit_villager_1_mon 蒙古村民，建造驿站<br>
+unit_knight_3_ott 奥斯曼长矛骑兵，升级<br>
+unit_knight_4_ott 奥斯曼长矛骑兵，升级<br>
+unit_ribauldequin_4_rus 罗斯风琴炮，检测条件<br>
+unit_monk_2_sul 德里苏丹国学者免人口<br>
+
+<br>
+<span class="golder"><b>upgrade</b><br></span>
+upgrade_camel_armor_abb 骆驼护甲适用<br>
+upgrade_cul_ancient_relics_ayy 圣髑盒<br>
+upgrade_hippodrome_scout_byz 侦察兵火炬光环适用于拜占庭军团长<br>
+upgrade_gunpowder_cost_chi 一窝蜂箭矢数量<br>
+upgrade_gunpowder_damage_chi 中国火药部队射程<br>
+upgrade_library_crossbow_upgrade 朱熹书院<br>
+upgrade_library_flaming_charge 朱熹书院<br>
+upgrade_library_improved_officials 朱熹书院<br>
+upgrade_library_siege_works 朱熹书院<br>
+upgrade_library_unfailing_grit 朱熹书院<br>
+upgrade_armor_clad_eng 英格兰重装甲长矛兵<br>
+upgrade_farm_improved_enclosures_eng 英格兰圈地效率<br>
+upgrade_ranged_longbow_damage_eng 百年紫杉木弓<br>
+upgrade_cavalry_grapered_lance_fre 毁灭冲锋<br>
+upgrade_cavalry_bloodline_fre 皇室血统加成率上调到55%<br>
+upgrade_cavalry_chivalry_fre 骑士精神适用于全部骑兵<br>
+upgrade_market_trickle_fre 商人公会效率调整到3秒1金<br>
+upgrade_landmark_cavalry_bloodline_fre 皇家学院<br>
+upgrade_landmark_cavalry_chivalry_fre 皇家学院<br>
+upgrade_landmark_market_trickle_fre 皇家学院<br>
+upgrade_capital_tier_2_jpn 日本城镇中心升级科技石头成本下调到175/400/625<br>
+upgrade_capital_tier_3_jpn 日本城镇中心升级科技石头成本下调到175/400/625<br>
+upgrade_landmark_keep_defense_sul 缓燃防御研发位置<br>
+
+<br>
+<span class="golder"><b>weapon</b><br></span>
+weapon_knight_3_charge_byz 拜占庭甲胄骑兵冲锋<br>
+weapon_knight_4_charge_byz 拜占庭甲胄骑兵冲锋<br>
+weapon_firelancer_3_charge_chi 中国火长矛骑兵冲锋<br>
+weapon_firelancer_4_charge_chi 中国火长矛骑兵冲锋<br>
+weapon_great_wall_bees_chi 中国长城门楼蜂巢炮<br>
+weapon_nest_of_bees_4_chi 中国蜂巢炮<br>
+weapon_nest_of_bees_4_improved_chi 中国加装炮管蜂巢炮<br>
+weapon_horseman_2_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_horseman_3_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_horseman_4_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_spearman_1_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_spearman_2_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_spearman_3_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_spearman_4_charge_fire_chi_ha_01 龙之咆哮<br>
+weapon_crossbow_3_library_upgrade_chi_ha_01 万弩箭<br>
+weapon_crossbow_3_library_upgrade_incendiary_chi_ha_01 万弩箭<br>
+weapon_crossbow_4_lib_incendiary_building_fire_chi_ha_01 万弩箭<br>
+weapon_crossbow_4_library_upgrade_chi_ha_01 万弩箭<br>
+weapon_crossbow_4_library_upgrade_incendiary_chi_ha_01 万弩箭<br>
+weapon_keep_rocket_jpn 日本火箭<br>
+weapon_tc_rocket_jpn 日本火箭<br>
+weapon_iron_pagoda_3_charge_jin 铁浮屠武器<br>
+weapon_iron_pagoda_3_jin 铁浮屠武器<br>
+weapon_iron_pagoda_4_charge_jin 铁浮屠武器<br>
+weapon_iron_pagoda_4_jin 铁浮屠武器<br>
+weapon_lancer_2_charge_mon 蒙古怯薛骑兵加成<br>
+weapon_lancer_2_mon 蒙古怯薛骑兵加成<br>
+weapon_lancer_3_charge_mon 蒙古怯薛骑兵加成<br>
+weapon_lancer_3_mon 蒙古怯薛骑兵加成<br>
+weapon_lancer_4_charge_mon 蒙古怯薛骑兵加成<br>
+weapon_lancer_4_mon 蒙古怯薛骑兵加成<br>
+weapon_heavy_spearman_3_charge_tem 重装长矛兵射程<br>
+weapon_heavy_spearman_3_tem 重装长矛兵射程<br>
+weapon_heavy_spearman_4_charge_tem 重装长矛兵射程<br>
+weapon_heavy_spearman_4_tem 重装长矛兵射程<br>
+weapon_genitour_3_tem 标枪骑兵武器<br>
+weapon_genitour_4_tem 标枪骑兵武器<br>
+weapon_genitour_incen_3_tem 标枪骑兵武器<br>
+weapon_genitour_incen_4_tem 标枪骑兵武器<br>
+
+<br>
+<span class="golder"><b>abilities</b><br></span>
+jeanne_d_arc_inspired_ally_fre_ha_01 贞德钦点的目标<br>
+hisar_academy_sul 希萨尔学院效率<br>
+mosque_heal_radius_common 宁静之地<br>
+pickup_relic_hre 神罗圣物<br>
+cant_pickup_relic_hre 神罗圣物<br>
+pilgrim_target_tem 圣殿骑士团朝圣目标位置<br>
+cannon_swap_fre 法兰西大炮冷却时间<br>
+streltsy_double_time_ability_rus 射击军被动<br>
+toggle_spearman_shield_wall_on_byz 拜占庭盾墙数值<br>
+core_xbox_auto_train_villager 自动训练村民<br>
+<br>
+
+<br>
+根据不同本土化使用的名词表参考<br>
+<table>
+    <tr>
+        <td>简体中文</td>
+        <td>繁体中文</td>
+        <td>英文</td>
+        <td>德语</td>
+        <td>备注</td>
+    </tr>
+    <tr>
+        <td>黑衣大食王朝</td>
+        <td>阿拔斯王朝</td>
+        <td>Abbasid Dynasty</td>
+        <td>Abbasiden-Dynastie</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>马里</td>
+        <td>馬利</td>
+        <td>Malians</td>
+        <td>Malier</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>奥斯曼</td>
+        <td>鄂圖曼</td>
+        <td>Ottomans</td>
+        <td>Osmanen</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>朱子遗训</td>
+        <td>朱熹對後世的影響</td>
+        <td>Zhu Xi's Legacy</td>
+        <td>Zhu Xis Vermächtnis</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>龙之骑士团</td>
+        <td>龍騎士團</td>
+        <td>Order of the Dragon</td>
+        <td>Orden des Drachen</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>阿尤布</td>
+        <td>阿育布</td>
+        <td>Ayyubids</td>
+        <td>Ayyubiden</td>
+        <td> </td>
+    </tr>
+
+    <tr>
+        <td>一窝蜂</td>
+        <td>一窩蜂火箭</td>
+        <td>Nest of Bees</td>
+        <td>Bienennest</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>朝廷命官</td>
+        <td>帝國官員</td>
+        <td>Imperial Official</td>
+        <td>Reichsbeamter</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>火工技术</td>
+        <td>煙火技術</td>
+        <td>Pyrotechnics</td>
+        <td>Pyrotechnik</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>天文钟楼</td>
+        <td>天文鐘樓</td>
+        <td>Astronomical Clocktower</td>
+        <td>Astronomischer Uhrturm</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>蛇纹石粉末</td>
+        <td>黑火藥</td>
+        <td>Serpentine Powder</td>
+        <td>Schlangenpulver</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>翰林院</td>
+        <td>帝國學院</td>
+        <td>Imperial Academy</td>
+        <td>Kaiserliche Akademie</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>皇宫</td>
+        <td>皇宮</td>
+        <td>Imperial Palace</td>
+        <td>Kaiserpalast</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>皇室血统</td>
+        <td>皇室血統</td>
+        <td>Royal Bloodlines</td>
+        <td>Königliche Blutlinien</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>加农炮</td>
+        <td>加農砲</td>
+        <td>Cannon</td>
+        <td>Kanone</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>商人公会</td>
+        <td>商人公會</td>
+        <td>Merchant Guilds</td>
+        <td>Händlergilden</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骑士精神</td>
+        <td>騎士精神</td>
+        <td>Chivalry</td>
+        <td>Rittertum</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>圈地</td>
+        <td>圈地</td>
+        <td>Enclosures</td>
+        <td>Umzäunungen</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>列王修道院</td>
+        <td>列王修道院</td>
+        <td>Abbey of Kings</td>
+        <td>Abtei der Könige</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>城堡</td>
+        <td>大型箭塔</td>
+        <td>Bergfried</td>
+        <td>Keep</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>王宫</td>
+        <td>王宮</td>
+        <td>King's Palace</td>
+        <td>Königspalast</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>重装甲</td>
+        <td>重裝甲</td>
+        <td>Armor Clad</td>
+        <td>Geharnischt</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>温嘉德宫殿</td>
+        <td>溫嘉德宮殿</td>
+        <td>Wynguard Palace</td>
+        <td>Wynguard-Palast</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>长矛兵</td>
+        <td>長槍兵</td>
+        <td>Spearman</td>
+        <td>Speerkämpfer</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>僧侣</td>
+        <td>僧侶</td>
+        <td>Monks</td>
+        <td>Mönche</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>武士</td>
+        <td>裝甲步兵</td>
+        <td>Man-At-Arms</td>
+        <td>Waffenknechte</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>城主宫殿</td>
+        <td>城主宮殿</td>
+        <td>Burgrave Palace</td>
+        <td>Burggrafenpalast</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>雷格尼茨大教堂</td>
+        <td>雷格尼茨大教堂</td>
+        <td>Regnitz Cathedral</td>
+        <td>Regnitz-Kathedrale</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>伊斯坦布尔皇宫</td>
+        <td>伊斯坦堡皇宮</td>
+        <td>Istanbul Imperial Palace</td>
+        <td>Kaiserpalast von Istanbul</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>骑射手</td>
+        <td>騎馬弓兵</td>
+        <td>Horse Archers</td>
+        <td>Berittene Bogenschützen</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骆驼皮甲</td>
+        <td>駱駝皮甲</td>
+        <td>Camel Barding</td>
+        <td>Kamelharnisch</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骆驼射手</td>
+        <td>駱駝弓兵</td>
+        <td>Camel Archer</td>
+        <td>Kamelbogenschütze</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>城镇中心</td>
+        <td>城鎮中心</td>
+        <td>Town Center</td>
+        <td>Dorfzentren</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>哨站</td>
+        <td>哨站</td>
+        <td>Outpost</td>
+        <td>Außenposten</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>射击军</td>
+        <td>射手衛隊</td>
+        <td>Streltsy</td>
+        <td>Strelizen</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>斯巴斯克塔</td>
+        <td>斯巴斯克塔</td>
+        <td>Spasskaya Tower</td>
+        <td>Erlöserturm</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>硬木栅栏</td>
+        <td>垛木牆</td>
+        <td>Fortified Palisade Wall</td>
+        <td>Befestigter Palisadenwall</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>苏丹宫殿</td>
+        <td>蘇丹宮殿</td>
+        <td>Palace of the Sultan</td>
+        <td>Sultanspalast</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>希萨尔学院</td>
+        <td>希薩爾學院</td>
+        <td>Hisar Academy</td>
+        <td>Hisar-Akademie</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>木城门</td>
+        <td>木門</td>
+        <td>Palisade Gate</td>
+        <td>Palisadentor</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>怯薛骑兵</td>
+        <td>怯薛</td>
+        <td>Keshig</td>
+        <td>Keshig</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>富拉尼大围栏</td>
+        <td>富拉尼大圍欄</td>
+        <td>Grand Fulani Corral</td>
+        <td>Großer Fulani-Pferch</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骆驼骑兵</td>
+        <td>駱駝騎兵</td>
+        <td>Camel Rider</td>
+        <td>Kamelreiter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>瓦兰吉卫队</td>
+        <td>瓦蘭吉衛隊</td>
+        <td>Varangian Guard</td>
+        <td>Warägergarde</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>雇佣兵之家</td>
+        <td>傭兵之家</td>
+        <td>Mercenary House</td>
+        <td>Söldnerhaus</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>边防军</td>
+        <td>邊防軍</td>
+        <td>Limitanei</td>
+        <td>Limitanei</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>甲胄骑兵</td>
+        <td>拜占庭聖騎兵</td>
+        <td>Cataphract</td>
+        <td>Kataphrakt</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>贵族学校</td>
+        <td>帕拉丁學校</td>
+        <td>Palatine School</td>
+        <td>Palatinische Schule</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>金角湾塔</td>
+        <td>金號角塔</td>
+        <td>Golden Horn Tower</td>
+        <td>Goldhornturm</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>女武者</td>
+        <td>女武者</td>
+        <td>Onna-Musha</td>
+        <td>Onna-Musha</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>乌城</td>
+        <td>烏城</td>
+        <td>Castle of the Crow</td>
+        <td>Burg der Krähe</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>朱熹书院</td>
+        <td>朱熹書院</td>
+        <td>Zhu Xi's Library</td>
+        <td>Zhu Xis Bibliothek</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>万弩箭</td>
+        <td>一萬支弩矢</td>
+        <td>10000 Bolts</td>
+        <td>10.000 Bolzen</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>高级教士</td>
+        <td>教長</td>
+        <td>Prelate</td>
+        <td>Prälat</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>投石机</td>
+        <td>重力投石機</td>
+        <td>Manjaniq</td>
+        <td>Manjaniq</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>加齐掠夺者</td>
+        <td>加齊掠奪者</td>
+        <td>Ghazi Raider</td>
+        <td>Ghazi-Plünderer</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>古拉姆</td>
+        <td>古拉姆</td>
+        <td>Ghulam</td>
+        <td>Ghulam</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>蒙古突骑</td>
+        <td>蒙古突騎</td>
+        <td>Mangudai</td>
+        <td>Mangudai</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>火枪兵</td>
+        <td>火槍兵</td>
+        <td>Handcannoneer</td>
+        <td>Handrohrschütze</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>长弓兵</td>
+        <td>長弓兵</td>
+        <td>Longbowman</td>
+        <td>Langbogenschütze</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>温嘉德长弓兵</td>
+        <td>溫嘉德遊俠</td>
+        <td>Wynguard Ranger</td>
+        <td>Wynguard-Ranger</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>皇家骑士</td>
+        <td>皇家騎士</td>
+        <td>Royal Knight</td>
+        <td>Königlicher Ritter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骑手</td>
+        <td>騎手</td>
+        <td>Horseman</td>
+        <td>Reiter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>弓弩手</td>
+        <td>弓弩兵</td>
+        <td>Arbalétrier</td>
+        <td>Arbalétrier</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>长管炮</td>
+        <td>長重砲</td>
+        <td>Culverin</td>
+        <td>Feldschlange</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>国土佣仆</td>
+        <td>國土傭僕</td>
+        <td>Landsknecht</td>
+        <td>Landsknecht</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>西帕希骑兵</td>
+        <td>采邑騎兵</td>
+        <td>Sipahi</td>
+        <td>Sipahi</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>苏丹亲兵</td>
+        <td>蘇丹親兵</td>
+        <td>Janissary</td>
+        <td>Janitschar</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>重型火炮</td>
+        <td>重型火砲</td>
+        <td>Great Bombard</td>
+        <td>Große Bombarde</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>战象</td>
+        <td>戰象</td>
+        <td>War Elephant</td>
+        <td>Kriegselefant</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>苏丹的精锐箭塔象</td>
+        <td>蘇丹的精銳箭塔象</td>
+        <td>Sultan's Elite Tower Elephant</td>
+        <td>Elite-Turm-Kriegselefant des Sultans</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>箭塔象</td>
+        <td>箭塔象</td>
+        <td>Tower Elephant</td>
+        <td>Turm-Elefant</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>皇宫卫兵</td>
+        <td>皇宮衛兵</td>
+        <td>Palace Guard</td>
+        <td>Palastwache</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骑士</td>
+        <td>騎士</td>
+        <td>Knight</td>
+        <td>Ritter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>火长矛骑兵</td>
+        <td>火長矛騎兵</td>
+        <td>Fire Lancer</td>
+        <td>Feuerlanzenreiter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>诸葛弩手</td>
+        <td>諸葛弩兵</td>
+        <td>Zhuge Nu</td>
+        <td>Zhugenu</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>江南塔</td>
+        <td>江南塔</td>
+        <td>Jiangnan Tower</td>
+        <td>Jiangnan-Turm</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>公会大厅</td>
+        <td>公會大廳</td>
+        <td>Guild Hall</td>
+        <td>Gildenhalle</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>迈因维克宫殿</td>
+        <td>邁因維克宮殿</td>
+        <td>Meinwerk Palace</td>
+        <td>Meinwerk-Palast</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>智慧宫</td>
+        <td>智慧宮</td>
+        <td>The House of Wisdom</td>
+        <td>Das Haus der Weisheit</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>金门</td>
+        <td>金門</td>
+        <td>The Golden Gate</td>
+        <td>Das Goldene Tor</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>守护者大院</td>
+        <td>守護者大院</td>
+        <td>Compound of the Defender</td>
+        <td>Komplex des Verteidigers</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>皇家采石场</td>
+        <td>曼薩採石場</td>
+        <td>Mansa Quarry</td>
+        <td>Mansa-Steinbruch</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>大酒庄</td>
+        <td>大酒莊</td>
+        <td>Grand Winery</td>
+        <td>Großes Weingut</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>藏造仓库</td>
+        <td>日式倉庫</td>
+        <td>Kura Storehouse</td>
+        <td>Kura-Lagerhaus</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>手铳足轻</td>
+        <td>日本火槍步兵</td>
+        <td>Handcannon Ashigaru</td>
+        <td>Handrohr Ashigaru</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>骑马武士</td>
+        <td>騎馬日本武士</td>
+        <td>Mounted Samurai</td>
+        <td>Berittener Samurai</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>弩手</td>
+        <td>弩兵</td>
+        <td>Crossbowman</td>
+        <td>Armbrustschütze</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>帝国卫队</td>
+        <td>帝國衛隊</td>
+        <td>Imperial Guard</td>
+        <td>Kaiserliche Garde</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>元朝掠夺者</td>
+        <td>元朝掠奪者</td>
+        <td>Yuan Raider</td>
+        <td>Yuan-Plünderer</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>少林僧侣</td>
+        <td>少林僧侶</td>
+        <td>Shaolin Monk</td>
+        <td>Shaolinmönch</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>镀金</td>
+        <td>鍍金</td>
+        <td>Gilded</td>
+        <td>Vergoldeter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>贞德的骑兵</td>
+        <td>貞德的騎兵</td>
+        <td>Jeanne's Rider</td>
+        <td>Jeannes Reiter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>贞德的冠军勇士</td>
+        <td>貞德的劍兵勇士</td>
+        <td>Jeanne's Champion</td>
+        <td>Jeannes Elitekämpfer</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>骆驼长矛骑兵</td>
+        <td>駱駝長矛騎兵</td>
+        <td>Camel Lancer</td>
+        <td>Kamellanzenreiter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>日本武士</td>
+        <td>日本武士</td>
+        <td>Samurai</td>
+        <td>Samurai</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>刀剑旗本武士</td>
+        <td>武士刀旗手</td>
+        <td>Katana Bannermen</td>
+        <td>Katana-Bannermänner</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>骑马旗本武士</td>
+        <td>騎馬旗手</td>
+        <td>Uma Bannermen</td>
+        <td>Uma-Bannermänner</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>风琴炮</td>
+        <td>風琴砲</td>
+        <td>Ribauldequin</td>
+        <td>Ribauldequin</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>忽里勒台</td>
+        <td>忽里勒臺</td>
+        <td>Kurultai</td>
+        <td>Kurultai</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>当佐兵</td>
+        <td>當佐兵</td>
+        <td>Donso </td>
+        <td>Donso</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>掷枪兵</td>
+        <td>標槍投擲者</td>
+        <td>Javelin Thrower</td>
+        <td>Speerwerfer</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>穆索法迪战士</td>
+        <td>穆索法迪戰士</td>
+        <td>Musofadi Warrior</td>
+        <td>Musofadi-Krieger</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>步弓手</td>
+        <td>弓兵</td>
+        <td>Archer</td>
+        <td>Bogenschütze</td>
+        <td>☆</td>
+    </tr>
+    <tr>
+        <td>长矛骑兵</td>
+        <td>長矛騎兵</td>
+        <td>Lancer</td>
+        <td>Lanzenreiter</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>伯爵护卫</td>
+        <td>伯爵衛隊</td>
+        <td>Earl's Guard</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>英皇侍卫</td>
+        <td>自耕農</td>
+        <td>Yeoman</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>短矛骑兵</td>
+        <td>准槍騎兵</td>
+        <td>Demilancer</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>骑马步兵</td>
+        <td>輕裝騎兵</td>
+        <td>Hobelar</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>什拉赫塔骑兵</td>
+        <td>貴族騎兵</td>
+        <td>Szlachta Cavalry</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>兰开斯特王朝</td>
+        <td>蘭卡斯特家族</td>
+        <td>House of Lancaster</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+</table>
+
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<style>
+    #content {
+        background-image: url('https://seicing.com/res/textile_pattern_mip0.png');
+        background-size: 25%;
+        color: white;
+    }
+
+    .golder {
+        background: linear-gradient(180deg, #EFDCB7, #B2915A);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .golder2 {
+        font-size: 24px;
+        background: linear-gradient(180deg, #EFDCB7, #B2915A);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .golder3 {
+        color: #EFDCB7;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    ul {
+        margin: 0;
+    }
+</style>
+
+</html>

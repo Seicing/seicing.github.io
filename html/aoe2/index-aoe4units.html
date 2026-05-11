@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>帝国时代IV 单位建筑</title>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    #customers2 {
+        border-collapse: collapse;
+    }
+
+    #customers2 td,
+    #customers2 th {
+        text-align: center;
+        border: 1px solid #888888;
+        color: #000000;
+        padding: 3px 7px 2px 7px;
+    }
+
+    #customers2 tr.alt td {
+        color: #000000;
+        background-color: #F5F8FA;
+    }
+
+    .civ-selector a {
+        margin-right: 3px;
+    }
+</style>
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="42"></div>
+
+<div id="aoe4page">
+    <div class="civ-selector">
+        <a id="abbButton0" @click.prevent="showCiv('abb')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/abb.png"></a>
+        <a id="chiButton0" @click.prevent="showCiv('chi')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/chi.png"></a>
+        <a id="engButton0" @click.prevent="showCiv('eng')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/eng.png"></a>
+        <a id="freButton0" @click.prevent="showCiv('fre')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/fre.png"></a>
+        <a id="rusButton0" @click.prevent="showCiv('rus')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/rus.png"></a>
+        <a id="hreButton0" @click.prevent="showCiv('hre')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hre.png"></a>
+        <a id="monButton0" @click.prevent="showCiv('mon')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mon.png"></a>
+        <a id="sulButton0" @click.prevent="showCiv('sul')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sul.png"></a>
+        <a id="ottButton0" @click.prevent="showCiv('ott')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ott.png"></a>
+        <a id="malButton0" @click.prevent="showCiv('mal')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mal.png"></a>
+        <a id="jpnButton0" @click.prevent="showCiv('jpn')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png"></a>
+        <a id="byzButton0" @click.prevent="showCiv('byz')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png"></a>
+
+        <a id="kcrButton0" @click.prevent="showCiv('kcr')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
+        <a id="jinButton0" @click.prevent="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
+        <!--
+        <a id="spaButton0" @click.prevent="showCiv('spa')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/spa.png"></a>
+        <a id="vikButton0" @click.prevent="showCiv('vik')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/vik.png"></a>
+         -->
+        <a id="ayyButton0" @click.prevent="showCiv('ayy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/ayy.png"></a>
+        <a id="zxlButton0" @click.prevent="showCiv('zxl')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/zxl.png"></a>
+        <a id="holButton0" @click.prevent="showCiv('hol')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/hol.png"></a>
+        <a id="jdaButton0" @click.prevent="showCiv('jda')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jda.png"></a>
+        <a id="otdButton0" @click.prevent="showCiv('otd')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/otd.png"></a>
+        <a id="gohButton0" @click.prevent="showCiv('goh')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/goh.png"></a>
+        <a id="tugButton0" @click.prevent="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
+        <a id="senButton0" @click.prevent="showCiv('sen')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></a>
+        <a id="macButton0" @click.prevent="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
+    </div>
+    <br>
+    <div :id="`${civ}Text0`" style="text-align:left;">
+        <table id="customers2" width="780px">
+            <tr v-for="sec in sections" :key="sec">
+                <td style="background-color:#F5F8FA;width:50px">{{ sec }}</td>
+                <td style="text-align:left">
+                    <div style="display: flex; flex-wrap: wrap; border: 0; align-items: flex-start;">
+                        <table v-for="unit in civItems.filter(i => i.section === sec)" :key="unit.name"
+                            style="border-collapse:collapse">
+                            <tr>
+                                <td width="48px" height="48px" style="border:0;">
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`">
+                                        <img :src="`https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/${unit.img}.png`" width="48px">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48px" style="border:0;text-align:center">
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`" style="color:#0010ff">{{ unit.name
+                                        }}</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div></div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/tech.js" onload="aoetechPoeRush()"></script>
+<script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
+<script type="module">
+    // 【已修改】更新默认导入的路径
+    import { aoe4list as defaultAoe4List } from "https://seicing.com/js/aoe4civ/aoe4list_chi.js";
+
+    const app = Vue.createApp({
+        data() {
+            return {
+                civ: "chi",
+                aoe4list: defaultAoe4List
+            };
+        },
+        computed: {
+            civItems() {
+                return this.aoe4list.filter(item => item.civ === this.civ);
+            },
+            sections() {
+                return [...new Set(this.civItems.map(i => i.section))];
+            }
+        },
+        methods: {
+            async showCiv(civ) {
+                if (civ === this.civ) return;
+
+                const url = new URL(window.location);
+                url.searchParams.set('civ', civ);
+                window.history.replaceState({ civ: civ }, '', url);
+
+                await this.loadCivData(civ);
+            },
+            async loadCivData(civ) {
+                if (!civ) {
+                    civ = 'chi';
+                }
+
+                this.civ = civ;
+                try {
+                    if (civ === 'chi') {
+                        this.aoe4list = defaultAoe4List;
+                    } else {
+                        // 【已修改】更新动态导入的路径
+                        const module = await import(`https://seicing.com/js/aoe4civ/aoe4list_${civ}.js`);
+                        this.aoe4list = module.aoe4list;
+                    }
+                } catch (error) {
+                    console.error(`加载 ${civ} 的数据失败，已回退到中国数据:`, error);
+                    this.civ = 'chi';
+                    this.aoe4list = defaultAoe4List;
+
+                    const url = new URL(window.location);
+                    url.searchParams.set('civ', 'chi');
+                    window.history.replaceState({ civ: 'chi' }, '', url);
+                }
+
+                // 新版：class 互斥
+                document.querySelectorAll(".civ-selector a").forEach(a => {
+                    a.classList.remove("active");    // 移除 active
+                    a.classList.add("civactbtn");    // 保证基础类存在
+                });
+
+                const button = document.getElementById(this.civ + "Button0");
+                if (button) {
+                    button.classList.add("active");  // 激活当前按钮
+                    button.classList.add("civactbtn"); // 保证基础类存在
+                }
+            },
+            handlePopState(event) {
+                const civFromState = event.state ? event.state.civ : new URLSearchParams(window.location.search).get('civ');
+                this.loadCivData(civFromState || 'chi');
+            }
+        },
+        mounted() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const civFromUrl = urlParams.get('civ') || 'chi';
+
+            const url = new URL(window.location);
+            url.searchParams.set('civ', civFromUrl);
+            window.history.replaceState({ civ: civFromUrl }, '', url);
+
+            this.loadCivData(civFromUrl);
+
+            window.addEventListener('popstate', this.handlePopState);
+        },
+        beforeUnmount() {
+            window.removeEventListener('popstate', this.handlePopState);
+        }
+    });
+
+    app.mount("#aoe4page");
+</script>
+
+</html>

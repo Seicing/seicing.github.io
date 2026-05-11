@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>音乐 帝国时代IV</title>
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 使用回调函数：只有当 music.html 加载成功后，才会执行 function 内的代码
+        $('#sidebar').load('https://seicing.com/js/list/music.html', function (response, status, xhr) {
+            if (status == "error") {
+                console.log("侧边栏加载失败: " + xhr.status + " " + xhr.statusText);
+            } else {
+                console.log("侧边栏加载完成，开始执行布局修复...");
+
+                // 1. 如果布局管理函数存在，手动触发一次
+                if (typeof conditionallyManageLayout === 'function') {
+                    conditionallyManageLayout();
+                }
+
+                // 2. 双重保险：如果是手机端，直接强制执行克隆函数
+                if (window.innerWidth < 1280 && typeof cloneSidebarContent === 'function') {
+                    // 给一个小小的延迟，确保浏览器渲染了 DOM
+                    setTimeout(cloneSidebarContent, 50);
+                }
+            }
+        });
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="2"></div>
+帝国时代IV 文明主题曲 合集
+<div id="skPlayer"></div>
+<br><br><br><br><br><br><br><br><br>
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a><br><br>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/skPlayer.min2.js"></script>
+<script>
+    var player = new skPlayer({
+        autoplay: false,
+        music: {
+            type: 'file',
+            source: [
+                {
+                    name: '中国',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/中国.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/中国.png'
+                },
+                {
+                    name: '朱子遗训',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/朱子遗训.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/朱子遗训.png'
+                },
+                {
+                    name: '金朝',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/金朝.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金朝.png'
+                },
+                {
+                    name: '黑衣大食王朝',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/黑衣大食王朝.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黑衣大食王朝.png'
+                },
+                {
+                    name: '阿尤布',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/阿尤布.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/阿尤布.png'
+                },
+                {
+                    name: '法兰西',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/法兰西.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png'
+                },
+                {
+                    name: '圣女贞德',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/圣女贞德.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png'
+                },
+                {
+                    name: '圣殿骑士团',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/圣殿骑士团.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣殿骑士团.png'
+                },
+                {
+                    name: '德里苏丹国',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/德里苏丹国.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/德里苏丹国.png'
+                },
+                {
+                    name: '图格鲁克王朝',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/图格鲁克王朝.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/图格鲁克王朝.png'
+                },
+                {
+                    name: '神圣罗马帝国',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/神圣罗马帝国.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png'
+                },
+                {
+                    name: '龙之骑士团',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/龙之骑士团.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png'
+                },
+                {
+                    name: '蒙古',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/蒙古.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png'
+                },
+                {
+                    name: '金帐汗国',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/金帐汗国.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png'
+                },
+                {
+                    name: '英格兰',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/英格兰.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/英格兰.png'
+                },
+                {
+                    name: '兰开斯特王朝',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/兰开斯特王朝.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/兰开斯特王朝.png'
+                },
+                {
+                    name: '罗斯',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/罗斯.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/罗斯.png'
+                },
+                {
+                    name: '马里',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/马里.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马里.png'
+                },
+                {
+                    name: '奥斯曼',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/奥斯曼.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/奥斯曼.png'
+                },
+                {
+                    name: '拜占庭',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/拜占庭.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/拜占庭.png'
+                },
+                {
+                    name: '马其顿王朝',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/马其顿王朝.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/马其顿王朝.png'
+                },
+                {
+                    name: '日本',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/日本.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/日本.png'
+                },
+                {
+                    name: '战国大名',
+                    author: '帝国时代4',
+                    src: 'https://data.seicing.com/seicingdepot/seicingmusic/music/AOE4civ/战国大名.mp3',
+                    cover: 'https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/战国大名.png'
+                },
+            ]
+        }
+    });
+</script>
+<!--异步标签-->
+
+</html>

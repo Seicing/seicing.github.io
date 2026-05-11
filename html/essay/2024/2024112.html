@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/essay.js"></script>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b>
+<div style="position:relative;">
+    <span style="font-family:宋体">2024.11.2</span>
+    <div style="position:absolute; z-index:2; top:10px">
+        <img src="https://seicing.com/res/131414.png" alt="">
+    </div>
+</div></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="309"></div>
+
+
+左下角血槽UI<br>
+左下角血槽UI精度扩张到现有2x版本的1.5倍<br>
+宽度从740上调到1100<br>
+高度扩充到600，这是为了使用头像时避免空间不够的措施<br>
+<br>
+对话立绘<br>
+扩充到现有版本的1.25倍<br>
+现有尺寸=270*398，修改后大小为335*500<br>
+这个精度可以直接应用到左下角血槽ui中，但是对话立绘可能要扩充到原来的1.5倍(400*600)<br>
+<br>
+
+
+
+对话立绘逻辑<br>
+对话立绘采取动态表示，血槽立绘采取静态表示，无论是对话立绘还是血槽乃至角色模型的表情都共用一套全局表情id<br>
+如果加载了不存在的表情，则是维持默认表情<br>
+<br>
+眼部：分为眉毛和眼睛两部分，眉毛是固定的，眼睛无论在什么时候都会隔3秒播放一次咋眼动画<br>
+嘴部：文本播放时循环播放嘴部id动画，省略号(……)会让文本播放动画强制停止一段时间，在这段时间内嘴部动画不会播放；嘴部只会有停止时静止帧的不同，说话动画是所有动画通用的<br>
+
+<br>
+不同的表情会按照下表中的(眼部id,嘴部id)构成，此外还有3个特殊开关控制表情的特殊部位<br>
+CE(闭眼)，带有CE后缀的表情，强制性不会眨眼，而是维持闭眼的那一帧<br>
+RF(脸红)，带有RF后缀的表情，会调用脸红图层<br>
+SW(流汗)，带有SW后缀的表情，会调用脸部汗珠图层<br>
+<br>
+smile(default,smile)<br>
+serene(default,serene)<br>
+sad(sad,sad)<br>
+depress(depress,depress)<br>
+sinistersmile(depress,smile)<br>
+surprise(default,surprise)<br>
+sideeye(sideeye,serene)<br>
+shy(sideeye,smile)<br>
+happy(default,happy)<br>
+bitter(sad,happy)<br>
+wry(sad,smile)<br>
+cry(cry,cry)<br>
+bawl(cry,angry)<br>
+crysurprise(cry,surprise)<br>
+cryhappy(cry,smile)<br>
+panic(depress,panic)<br>
+fear(sad,panic)<br>
+endure(default,endure)<br>
+uncomfortable(sad,cry)<br>
+angry(angry,angry)<br>
+excited(angry,excited)<br>
+terrible(terrible,serene)<br>
+<br>
+
+眼部动画具体会根据对应登记的元件组成动画(第一个是眉毛id，第二、三、四个组成眨眼动画，第二个是睁眼帧，第四个为闭眼帧)<br>
+default(eyedefault,eyedefault1,eyedefault2,eyedefault3) <br>
+sad(eyesad,eyedefault1,eyedefault2,eyedefault3) <br>
+depress(eyedefault,eyedepress1,eyedefault2,eyedefault3) <br>
+sideeye(eyedefault,eyesideeye1,eyesideeye2,eyedefault3) <br>
+cry(eyesad,eyecry1,eyecry2,eyecry3) <br>
+angry(eyeangry,eyedefault1,eyedefault2,eyedefault3) <br>
+terrible(eyeterrible) <br>
+<br>
+所有部位整理后所需要的文件列表(全表情)<br>
+base(基底)<br>
+RF(脸红层)<br>
+SW(流汗层)<br>
+eyedefault、eyesad、eyeangry(眉毛层)<br>
+eyedefault1、eyedefault2、eyedefault3、eyedepress1、eyesideeye1、eyesideeye2、eyecry1、eyecry2、eyecry3、eyeterrible(眼动画层)<br>
+smile、serene、sad、depress、surprise、cry、panic、endure、angry、excited(口层)<br>
+mouth1、mouth2、mouth3(口动画层)<br>
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<style>
+    li {
+        line-height: 1.8
+    }
+</style>
+
+</html>

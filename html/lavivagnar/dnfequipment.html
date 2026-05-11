@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultalllavi.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/lavi.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://seicing.com/css/style_lavivagnar.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
+<link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 使用回调函数：只有当 music.html 加载成功后，才会执行 function 内的代码
+        $('#sidebar').load('https://seicing.com/js/list/dnfequipment.html', function (response, status, xhr) {
+            if (status == "error") {
+                console.log("侧边栏加载失败: " + xhr.status + " " + xhr.statusText);
+            } else {
+                console.log("侧边栏加载完成，开始执行布局修复...");
+
+                // 1. 如果布局管理函数存在，手动触发一次
+                if (typeof conditionallyManageLayout === 'function') {
+                    conditionallyManageLayout();
+                }
+
+                // 2. 双重保险：如果是手机端，直接强制执行克隆函数
+                if (window.innerWidth < 1280 && typeof cloneSidebarContent === 'function') {
+                    // 给一个小小的延迟，确保浏览器渲染了 DOM
+                    setTimeout(cloneSidebarContent, 50);
+                }
+            }
+        });
+    })
+</script>
+
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container"></div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="666"></div>
+dnf装备图鉴<br>
+颜色代码<br>
+<table id="customers">
+    <tr>
+        <td>
+
+
+            普通
+
+
+        </td>
+        <td>
+
+
+            255,255,255&nbsp; &nbsp;#FFFFFF
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#68D5ED">高级</span>
+
+
+        </td>
+        <td>
+
+
+            104,213,237&nbsp; &nbsp;#68D5ED
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#B36BFF">稀有</span>
+
+
+        </td>
+        <td>
+
+
+            179,107,255&nbsp; &nbsp;#B36BFF
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FF6666">勇者</span>
+
+
+        </td>
+        <td>
+
+
+            255,102,102&nbsp; &nbsp;#FF6666
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FF00FF">神器</span>
+
+
+        </td>
+        <td>
+
+
+            255,0,255&nbsp; &nbsp;#FF00FF
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FF7800">传说</span>
+
+
+        </td>
+        <td>
+
+
+            255,120,0&nbsp; &nbsp;#FF7800
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FFB400">史诗</span>
+
+
+        </td>
+        <td>
+
+
+            255,180,0&nbsp; &nbsp;#FFB400
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span class='dnfmyth'>神话</span>
+
+
+        </td>
+        <td>
+
+
+            248,198,61——204,102,231&nbsp; &nbsp;#F8C63D——#CC66E7
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#93763C">史诗碎片</span>
+
+
+        </td>
+        <td>
+
+
+            147,118,60&nbsp; &nbsp;#93763C
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#969696">灰字</span>
+
+
+        </td>
+        <td>
+
+
+            150,150,150&nbsp; &nbsp;#969696
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#AF8FAC">减益属性</span>
+
+
+        </td>
+        <td>
+
+
+            175,143,172&nbsp; &nbsp;#AF8FAC
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#68EDA1">附魔</span>
+
+
+        </td>
+        <td>
+
+
+            104,237,161&nbsp; &nbsp;#68EDA1
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FF0000">红字</span>
+
+
+        </td>
+        <td>
+
+
+            255,0,0&nbsp; &nbsp;#FF0000
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#78FF1E">套装</span>
+
+
+        </td>
+        <td>
+
+
+            120,255,30&nbsp; &nbsp;#78FF1E
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#96FF1E">详细属性</span>
+
+
+        </td>
+        <td>
+
+
+            150,255,30&nbsp; &nbsp;#96FF1E
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FF3232">无法合成</span>
+
+
+        </td>
+        <td>
+
+
+            255,50,50&nbsp; &nbsp;#FF3232
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FFF000">最上级</span>
+
+
+        </td>
+        <td>
+
+
+            255,240,0&nbsp; &nbsp;#FFF000
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#E6C89B">最下级</span>
+
+
+        </td>
+        <td>
+
+
+            230,200,155&nbsp; &nbsp;#E6C89B
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+
+            <span style="color:#FF8200">职业</span>
+
+
+        </td>
+        <td>
+
+
+            255,130,0&nbsp; &nbsp;#FF8200
+
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+
+
+            <span style="color:#8C652F">不适用的职业</span>
+
+
+        </td>
+        <td>
+
+
+            140,101,47&nbsp; &nbsp;#8C652F
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+
+
+            <span style="color:#808080">不适用的部分</span>
+
+
+        </td>
+        <td>
+            128,128,128&nbsp; &nbsp;#808080
+
+
+        </td>
+    </tr>
+</table>
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        <div style="font-family: 宋体; font-size: 9">
+    <b>
+        <a id="smallfonter" style="color:rgb(0, 255, 172);cursor:pointer;">小字体</a>
+        <a id="bigfonter" style="color:#ffffff;cursor:pointer;">大字体</a>
+    </b>
+    <br><br>
+    <a href="https://seicing.com/html/index-dnf.html"><b>返回上一页</b></a>
+    <br><br>
+    <a id="page_1" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon.html" style="color:#ffffff">鬼剑士武器</a><br>
+    <a id="page_5" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon2.html" style="color:#ffffff">格斗家武器</a><br>
+    <a id="page_6" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon3.html" style="color:#ffffff">神枪手武器</a><br>
+    <a id="page_7" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon4.html" style="color:#ffffff">魔法师武器</a><br>
+    <a id="page_8" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon5.html" style="color:#ffffff">圣职者武器</a><br>
+    <a id="page_9" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon6.html" style="color:#ffffff">暗夜使者武器</a><br>
+    <a id="page_10" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon7.html" style="color:#ffffff">魔枪士武器</a><br>
+    <a id="page_11" href="https://seicing.com/html/lavivagnar/dnfequipmentweapon8.html" style="color:#ffffff">枪剑士武器</a><br>
+    <a id="page_2" href="https://seicing.com/html/lavivagnar/dnfequipmentarmor1.html" style="color:#ffffff">布甲防具</a><br>
+    <a id="page_12" href="https://seicing.com/html/lavivagnar/dnfequipmentarmor2.html" style="color:#ffffff">皮甲防具</a><br>
+    <a id="page_13" href="https://seicing.com/html/lavivagnar/dnfequipmentarmor3.html" style="color:#ffffff">轻甲防具</a><br>
+    <a id="page_14" href="https://seicing.com/html/lavivagnar/dnfequipmentarmor4.html" style="color:#ffffff">重甲防具</a><br>
+    <a id="page_15" href="https://seicing.com/html/lavivagnar/dnfequipmentarmor5.html" style="color:#ffffff">板甲防具</a><br>
+    <a id="page_3" href="https://seicing.com/html/lavivagnar/dnfequipmentamulet.html" style="color:#ffffff">首饰</a><br>
+    <a id="page_4" href="https://seicing.com/html/lavivagnar/dnfequipmentsupport.html" style="color:#ffffff">特殊</a><br>
+    <a id="page_16" href="https://seicing.com/html/lavivagnar/dnfequipmentcross.html" style="color:#ffffff">跨部位套装</a><br>
+</div>
+                    </div>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div id="lavidash" style="float:right; width:77%; text-align:right; border-top: 1px dashed #FFF49F;">
+                    <br>
+                    
+<a href="https://seicing.com/html/index-dnf.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+            <div id="wrapper3">
+                <div id="lowder" class="container">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script language="javascript" src="https://seicing.com/js/sound.js"></script>
+<script>
+        (function () {
+            document.querySelectorAll('td.dnfmyth').forEach(td => {
+
+                // 如果已经处理过，跳过（防止重复执行）
+                if (td.querySelector('.dnfmyth-text')) return;
+
+                // 收集纯文本节点
+                const textNodes = [];
+                td.childNodes.forEach(node => {
+                    if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+                        textNodes.push(node);
+                    }
+                });
+
+                // 没有文字直接跳过（你那个空 td）
+                if (textNodes.length === 0) return;
+
+                // 创建包裹 span
+                const span = document.createElement('span');
+                span.className = 'dnfmyth-text';
+
+                // 把文本节点移进去
+                textNodes.forEach(node => span.appendChild(node));
+
+                td.appendChild(span);
+            });
+        })(); 
+</script>
+<!--异步标签-->
+
+</html>

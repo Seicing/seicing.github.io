@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>神话时代 单位</title>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    #customers2 {
+        border-collapse: collapse;
+    }
+
+    #customers2 td,
+    #customers2 th {
+        text-align: center;
+        border: 1px solid #888888;
+        color: #000000;
+        padding: 3px 7px 2px 7px;
+    }
+
+    #customers2 tr.alt td {
+        color: #000000;
+        background-color: #F5F8FA;
+    }
+
+    .civ-selector a {
+        margin-right: 3px;
+        margin-bottom: 9px;
+    }
+
+    .civactbtn img {
+        width: 40px !important
+    }
+</style>
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="33"></div>
+
+<div id="aoe4page">
+    <div class="civ-selector">
+        <a id="greButton0" @click.prevent="showCiv('gre')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civgre.png"></a>
+        <a id="norButton0" @click.prevent="showCiv('nor')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civnor.png"></a>
+        <a id="egyButton0" @click.prevent="showCiv('egy')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civegy.png"></a>
+        <a id="atlButton0" @click.prevent="showCiv('atl')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civatl.png"></a>
+        <a id="chiButton0" @click.prevent="showCiv('chi')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civchi.png"></a>
+        <a id="jpnButton0" @click.prevent="showCiv('jpn')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civjpn.png"></a>
+        <a id="aztButton0" @click.prevent="showCiv('azt')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoem/civazt.png"></a>
+    </div>
+    <div :id="`${civ}Text0`" style="text-align:left;">
+        <table id="customers2" width="780px">
+            <tr v-for="sec in sections" :key="sec">
+                <td style="background-color:#F5F8FA;width:50px">{{ sec }}</td>
+                <td style="text-align:left;">
+                    <div style="display: flex; flex-wrap: wrap; border: 0; align-items: flex-start;">
+                        <table v-for="unit in civItems.filter(i => i.section === sec)" :key="unit.name"
+                            style="border-collapse:collapse">
+                            <tr>
+                                <td width="48px" height="48px" style="border:0;">
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`">
+                                        <img :src="`https://data.seicing.com/seicingdepot/3fatcatpool/aoem/tech/${unit.img}.png`" width="48px">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48px" style="border:0;text-align:center">
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`" style="color:#0010ff">{{ unit.name
+                                        }}</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/tech.js" onload="aoetechPoeRush()"></script>
+<script language="javascript" src="https://seicing.com/js/aoe4button.js"></script>
+<script type="module">
+    // 【已修改】更新默认导入的路径
+    import { aoe4list as defaultAoe4List } from "https://seicing.com/js/aoe4civ/aoeMlist_chi.js";
+
+    const app = Vue.createApp({
+        data() {
+            return {
+                civ: "chi",
+                aoe4list: defaultAoe4List
+            };
+        },
+        computed: {
+            civItems() {
+                return this.aoe4list.filter(item => item.civ === this.civ);
+            },
+            sections() {
+                return [...new Set(this.civItems.map(i => i.section))];
+            }
+        },
+        methods: {
+            async showCiv(civ) {
+                if (civ === this.civ) return;
+
+                const url = new URL(window.location);
+                url.searchParams.set('civ', civ);
+                window.history.replaceState({ civ: civ }, '', url);
+
+                await this.loadCivData(civ);
+            },
+            async loadCivData(civ) {
+                if (!civ) {
+                    civ = 'chi';
+                }
+
+                this.civ = civ;
+                try {
+                    if (civ === 'chi') {
+                        this.aoe4list = defaultAoe4List;
+                    } else {
+                        // 【已修改】更新动态导入的路径
+                        const module = await import(`https://seicing.com/js/aoe4civ/aoeMlist_${civ}.js`);
+                        this.aoe4list = module.aoe4list;
+                    }
+                } catch (error) {
+                    console.error(`加载 ${civ} 的数据失败，已回退到中国数据:`, error);
+                    this.civ = 'chi';
+                    this.aoe4list = defaultAoe4List;
+
+                    const url = new URL(window.location);
+                    url.searchParams.set('civ', 'chi');
+                    window.history.replaceState({ civ: 'chi' }, '', url);
+                }
+
+                document.querySelectorAll(".civ-selector a").forEach(a => a.style.opacity = 0.3);
+                const button = document.getElementById(this.civ + "Button0");
+                if (button) {
+                    button.style.opacity = 1;
+                }
+            },
+            handlePopState(event) {
+                const civFromState = event.state ? event.state.civ : new URLSearchParams(window.location.search).get('civ');
+                this.loadCivData(civFromState || 'chi');
+            }
+        },
+        mounted() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const civFromUrl = urlParams.get('civ') || 'chi';
+
+            const url = new URL(window.location);
+            url.searchParams.set('civ', civFromUrl);
+            window.history.replaceState({ civ: civFromUrl }, '', url);
+
+            this.loadCivData(civFromUrl);
+
+            window.addEventListener('popstate', this.handlePopState);
+        },
+        beforeUnmount() {
+            window.removeEventListener('popstate', this.handlePopState);
+        }
+    });
+
+    app.mount("#aoe4page");
+</script>
+
+</html>

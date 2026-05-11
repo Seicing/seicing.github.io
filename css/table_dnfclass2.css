@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    text-align: center;
+    padding: 3px 7px 2px 7px;
+    border: 1px solid #888888;
+    height: 35px;
+    color: #000000;
+}
+
+table tr.alt td {
+    color: #000000;
+    background-color: #F5F8FA;
+}
+
+a:link {
+    color: #0366D6
+}
+
+
+/*未被访问的链接*/
+
+a:visited {
+    color: #0366D6
+}
+
+
+/* 已被访问过的链接*/
+
+a:hover {
+    color: #0366D6
+}
+
+
+/* 鼠标悬浮在上的链接*/
+
+a:active {
+    color: #0366D6
+}
+
+
+/* 鼠标点中激活链接*/

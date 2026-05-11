@@ -1,0 +1,911 @@
+[
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "两人来到港口，准备预定下一轮航班"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "smile",
+        "con": "",
+        "string": "你好，我们两个想要预定前往伊拉修莱德的航班"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "港务员",
+        "char": "KhazatarCommonFemale",
+        "face": "smile",
+        "con": "",
+        "string": "抱歉，两位是刚刚进城的旅行者吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "surprise",
+        "con": "",
+        "string": "诶？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "港务员",
+        "char": "KhazatarCommonFemale",
+        "face": "smile",
+        "con": "",
+        "string": "许蕾姆皇帝在昨天开始就下令禁止任何船只外出，仅允许之前在途的航班靠港补给"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "港务员",
+        "char": "KhazatarCommonFemale",
+        "face": "smile",
+        "con": "",
+        "string": "实在是很抱歉……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "sad",
+        "con": "",
+        "string": "怎么会这样……"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "这也太巧合了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "extra4",
+        "con": "CE",
+        "string": "是啊……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "extra4",
+        "con": "CE",
+        "string": "看起来要在这里待上一段时间了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "sad",
+        "con": "",
+        "string": "但愿不要太久"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "旅馆"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "smile",
+        "con": "",
+        "string": "这是你的钥匙"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "smile",
+        "con": "",
+        "string": "我就在你的隔壁，有事情的话，就过来找我"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "嗯"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "伊丽丝进入了自己的房间"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "连阿格拉巴这种大型商业都市都进行了航运封锁，这里发生了什么吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "side",
+        "con": "ATSP",
+        "string": "虽然已经离开了西景，在这里待一段时间也无妨，但伊丽丝的脸色突然变得很难看"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "side",
+        "con": "ATSP",
+        "string": "说实话，我也挺好奇发生了什么事"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "去酒吧收集一下情报吧"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "前往酒吧，世清四处张望，看到了夏修伦"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "啊！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "真巧啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "SW",
+        "string": "啊，是你啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "SW",
+        "string": "你看起来不像是会来酒吧的人啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "extra1",
+        "con": "SW",
+        "string": "难道还在耿耿于怀吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "你想太多了，我是了解一下这里的情况的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "这样啊，你也被这个航运封锁也搞得很头大吗"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "要坐下来喝酒聊聊吗？算我给你赔罪了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "老板把饮料递给两人"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "窃贼闯进了宫殿盗走了国宝？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "普通的国宝也就算了，这三个毛贼盯上的可是关乎到龙脉的国宝"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "据说，阿格拉巴的龙脉在城市倚靠的山的内部深处，龙脉的能源没有那个国宝的话就难以应用"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "也就是说，这三个亡命之徒把这座都市赖以生存的东西偷走了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "他们在想什么？想和整个国家为敌吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "谁知道，那国宝其实不值钱，偷出去了又有谁敢要？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "不过对于阿格拉巴人来说，这东西不惜一切代价也要夺回来是肯定的"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "毕竟对于被称为“东方明珠”的商业都市来说，这样封锁航运带来的损失可以说难以想象啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "要离开这座坐落在这座孤岛的山峰之上的城市就一定要乘坐船只"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "外海的卡哈扎塔海贼正在不分昼夜地巡逻吧，更不用说当地的船只了，他们根本不可能逃出去"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "是啊"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "抓住他们只会是时间问题了吧"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清的身体晃了一晃"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "呜……"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "surprise",
+        "con": "",
+        "string": "你喝不了酒吗？你好像晃了一下"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "不是酒的问题，船上也有这种感觉，过一会就好了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "呼，感觉好多了，谢谢你的款待"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "happy",
+        "con": "",
+        "string": "要走了吗？难得有人跟我聊天呢"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "酒吧太嘈杂了，真的有点不适应"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "真可惜"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "夏修伦",
+        "char": "SarchlentAdventurer",
+        "face": "smile",
+        "con": "",
+        "string": "对了，你叫阿彦对吧，再见"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "嗯，再见，夏修伦"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "离开酒吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "(真是奇怪，为什么要在完全没有逃跑可能的前提下盗取一个不值钱的东西)"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "side",
+        "con": "ATSP",
+        "string": "(让人觉得……一开始就没想过逃出去一样)"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "side",
+        "con": "ATSP",
+        "string": "(是晕船还没好吗？为什么身体老是不受控制摇晃)"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "side",
+        "con": "ATSP",
+        "string": "(回旅馆好好休息一下吧)"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "回到旅馆"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "smile",
+        "con": "",
+        "string": "阿彦，你回来了吗？你去哪了？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "去酒吧打探了一下封锁航运的原因"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "世清向伊丽丝诉说了自己知道的东西"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "surprise",
+        "con": "",
+        "string": "……控制龙脉的国宝？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "side",
+        "con": "",
+        "string": "阿格拉巴的龙脉在深处没错，但是龙脉的应用是大量魔科学工程的结果"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "side",
+        "con": "",
+        "string": "现在阿格拉巴也没有停止能源的供应，这个传言会不会是经好几手后的结果呢？不过这东西很重要是可以确定的"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "这样啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "希望他们可以快点解决这个问题吧"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "说起来，上岸后一直待在旅馆，不出去透透气吗？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "extra4",
+        "con": "",
+        "string": "没这个心情，而且不知道为什么上岸后感觉有点不舒服"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "这样啊"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "说起来，总感觉有什么要发生了，希望只是我的错觉"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "好好休息吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "smile",
+        "con": "",
+        "string": "嗯，明天见"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "到了晚上"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "depress",
+        "con": "",
+        "string": "呜……"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "确认了一下时间"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "晚上九点多……可是已经睡不着了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "而且莫名其妙有一股亢奋感"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "嗯？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "听到了屋顶传来细微的声音，从窗户翻到屋顶"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "AzinDeathbringer",
+        "face": "surprise",
+        "con": "",
+        "string": "被发现了！"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "AzinDeathbringer",
+        "face": "serene",
+        "con": "",
+        "string": "你们继续走，这里我来顶住"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "Khazard",
+        "face": "surprise",
+        "con": "",
+        "string": "没问题吗！？"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "AzinDeathbringer",
+        "face": "angry",
+        "con": "",
+        "string": "现在不是废话的时候，快走！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "哈扎德和哈因逃跑了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "三个人……你们是盗取了那个国宝的窃贼么？"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "阿辛试图快速接近世清封喉暗杀，但是被世清用臂铠挡开了"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "AzinDeathbringer",
+        "face": "serene",
+        "con": "",
+        "string": "麻烦了"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "Boss战：阿辛，削减三分之一血后"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "？？？",
+        "char": "AzinDeathbringer",
+        "face": "serene",
+        "con": "",
+        "string": "你很强，我不能再跟你纠缠下去了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "等等！"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "阿辛逃跑了，到处响起了警报声"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "surprise",
+        "con": "ATSP",
+        "string": "等等！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "side",
+        "con": "ATSP",
+        "string": "剩下来交给卫兵们吧"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "surprise",
+        "con": "",
+        "string": "阿彦，屋顶上的人是你吗？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "刚刚跟那三个窃贼中的一个打了起来"
+    },
+    {
+        "dic": 3,
+        "branch": "",
+        "name": "伊丽丝",
+        "char": "IrisPratenitsa",
+        "face": "surprise",
+        "con": "",
+        "string": "你没事吧！？"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "被他们跑了"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "伊丽丝，我追踪他们观察一下情况，你待在旅馆里小心点！"
+    },
+    {
+        "dic": 1,
+        "branch": "",
+        "name": "世清",
+        "char": "SeicingWanderer",
+        "face": "serene",
+        "con": "ATSP",
+        "string": "(卫兵们也开始行动起来了，整座城市都躁动了起来)"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "阿辛逃跑了，到处响起了警报声"
+    },
+    {
+        "dic": 2,
+        "branch": "",
+        "name": "",
+        "char": "",
+        "face": "smile",
+        "con": "",
+        "string": "未结束标记"
+    }
+]

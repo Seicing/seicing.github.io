@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall2.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style_lavivagnarlarge2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>对话立绘表</title>
+<link href="https://seicing.com/css/skill.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<style>
+    #layouter {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* 左侧固定 */
+    #reske {
+        width: 310px;
+        flex-shrink: 0;
+        /* 绝对不被压缩 */
+    }
+
+    /* 右侧自适应 */
+    #reski {
+        flex: 1;
+        min-width: 0;
+        /* ⭐ 非常重要：允许内容收缩 */
+    }
+
+    #app {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* 表格间距 */
+    }
+
+    #app table {
+        max-width: 600px;
+        flex-shrink: 0;
+    }
+
+    #reski {
+        margin-top: 0px !important;
+    }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <button id="sidebar-toggle-button">☰</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1850px ; margin:auto">
+        <div id="wrapper2">
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div class="entry"><div id="layouter">
+    <div id="reske" style="width: 310px;">
+    </div>
+    <div id="reski" style="max-width: 1350px;">
+        <div id="app">
+            <table id="customers">
+                <tr>
+                    <td> </td>
+                    <td>内部id(英文)</td>
+                    <td>内部id(中文)</td>
+                    <td>反映唯一id(英文)</td>
+                    <td>反映唯一id(中文)</td>
+                </tr>
+                <tr v-for="diaindex in aasb">
+                    <td><img :src="diaindex.icon2" style="width: 25px"></td>
+                    <td><span v-html="diaindex.inner2"></span></td>
+                    <td><span v-html="diaindex.intro2"></span></td>
+                    <td><span v-html="diaindex.outro2"></span></td>
+                    <td><span v-html="diaindex.outer2"></span></td>
+                </tr>
+            </table>
+            <table id="customers">
+                <tr>
+                    <td> </td>
+                    <td>内部id(英文)</td>
+                    <td>内部id(中文)</td>
+                    <td>反映唯一id(英文)</td>
+                    <td>反映唯一id(中文)</td>
+                </tr>
+                <tr v-for="diaindex in aasb2">
+                    <td><img :src="diaindex.icon3" style="width: 25px"></td>
+                    <td><span v-html="diaindex.inner3"></span></td>
+                    <td><span v-html="diaindex.intro3"></span></td>
+                    <td><span v-html="diaindex.outro3"></span></td>
+                    <td><span v-html="diaindex.outer3"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div
+                    style="float:right; width:1800px; text-align:right; border-top: 1px dashed #FFF49F; position:relative; right:20px">
+                    <br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+            <div id="wrapper3">
+                <div id="lowder" class="container">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    $(document).ready($('#reske').load('https://seicing.com/js/list/lavivagnar.html'));
+    var imgAll = [];
+
+    const { createApp, ref, onMounted } = Vue;
+    createApp({
+        setup() {
+            const aasb = ref([]);
+            const aasb2 = ref([]);
+
+            const fetchData = async () => {
+                try {
+                    const response1 = await fetch('https://seicing.com/js/dialogid.json');
+                    const json1 = await response1.json();
+                    aasb.value = json1.map(item => ({
+                        ...item,
+                        inner2: item.inner,
+                        intro2: item.intro,
+                        outer2: item.outer,
+                        outro2: item.outro,
+                        icon2: `https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/${item.inner}.png`
+                    }));
+
+                    const response2 = await fetch('https://seicing.com/js/dialogid2.json');
+                    const json2 = await response2.json();
+                    aasb2.value = json2.map(item => ({
+                        ...item,
+                        inner3: item.inner,
+                        intro3: item.intro,
+                        outer3: item.outer,
+                        outro3: item.outro,
+                        icon3: `https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/${item.inner}.png`
+                    }));
+                } catch (error) {
+                    console.error("数据加载失败:", error);
+                }
+            };
+
+            onMounted(() => {
+                fetchData();
+            });
+
+            return {
+                aasb,
+                aasb2
+            };
+        }
+    }).mount('#app');
+</script>
+
+</html>
