@@ -66,6 +66,7 @@
         "name": "帝国元 室利刹陀罗",
         "x": 2314,
         "y": 1330,
+        "angle": 20,
         "icon": "https://data.seicing.com/seicingdepot/fatcatpool/essay/Imperium/Shriksetra2.png",
         "url": "https://seicing.com/html/labibana/Shriksetra.html",
         "width": 96,
@@ -222,6 +223,7 @@
         "x": 1899,
         "y": 808,
         "desc": "",
+        "angle": 339,
         "size": "large",
         "type": "text",
         "text": "伊拉修莱德",
@@ -252,6 +254,7 @@
         "x": 1102,
         "y": 1050,
         "desc": "",
+        "angle": 16,
         "size": "large",
         "type": "text",
         "text": "维兰塔伦",
@@ -298,6 +301,17 @@
         "texten": "𐌰𐌻𐌻𐌰𐌼𐌰𐌲𐌽𐌰"
     },
     {
+        "name": "政区 宿句释檀那",
+        "x": 2619,
+        "y": 1462,
+        "desc": "",
+        "vertical": true,
+        "size": "large",
+        "type": "text",
+        "text": "宿句释檀那",
+        "texten": "𐎿𐎾𐎦𐏁𐎫𐎴"
+    },
+    {
         "name": "政区 马奇比亚露塔",
         "x": 3906,
         "y": 1520,
@@ -338,24 +352,24 @@
         "texten": "φραγραντ"
     },
     {
-        "name": "政区 ",
+        "name": "政区 策恩特拉瓦尔德",
         "x": 3718,
         "y": 2566,
         "desc": "",
         "size": "large",
         "type": "text",
-        "text": " ",
-        "texten": " "
+        "text": "策恩特拉瓦尔德",
+        "texten": "Ζεντραλωαλδ"
     },
     {
-        "name": "政区 ",
+        "name": "政区 尼德隆",
         "x": 3275,
         "y": 2706,
         "desc": "",
         "size": "large",
         "type": "text",
-        "text": " ",
-        "texten": " "
+        "text": "尼德隆",
+        "texten": "Νιεδερονγ"
     },
     {
         "name": "测试",
