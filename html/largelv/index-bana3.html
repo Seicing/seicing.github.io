@@ -195,6 +195,12 @@
         pointer-events: auto !important;
         white-space: nowrap;
     }
+
+    @font-face {
+        font-family: 'Tangut';
+        font-display: block;
+        src: url('https://seicing.com/res/Tangut.ttf');
+    }
 </style>
 </head>
 
@@ -216,11 +222,11 @@
     <button data-filter="aoe2">帝国元</button>
     <button data-filter="aoe3" data-layer="district">政区</button>
 
-    <!--
-
     <br>
     <button data-lang="zh">中文</button>
     <button data-lang="en">原文</button>
+    <!--
+
     <button data-layer="monster">怪物</button>
 
     <button data-filter="aoe3">探索时代</button>
@@ -358,6 +364,7 @@
     // ============================
     const dynamicMarkers = [];
     let currentDataFile = "";
+    let currentLanguage = "zh";
 
     const FILTERS = {
         aoe2: { match: n => n.startsWith("帝国元") },
@@ -382,6 +389,21 @@
 
     function getDisplayName(name) {
         return name ? name.replace(/^[^ ]+\s*/, "") : "";
+    }
+
+    function getLocalizedText(p) {
+
+        switch (currentLanguage) {
+
+            case "en":
+                return p.texten
+                    || p.text
+                    || getDisplayName(p.name);
+
+            default:
+                return p.text
+                    || getDisplayName(p.name);
+        }
     }
 
     function applyFilters() {
@@ -430,17 +452,24 @@
                             icon: L.divIcon({
                                 className: "custom-div-icon",
                                 iconSize: [0, 0],
-                                html: `<div
+
+                                html: `
+            <div
                 class="mapText ${p.size || "normal"} scalable-text"
                 style="
                     transform:
                         translate(-50%, -50%)
                         scale(var(--map-scale, 1))
                         rotate(${angle}deg);
-                    writing-mode: ${vertical ? "vertical-rl" : "horizontal-tb"};
+
+                    writing-mode:
+                        ${vertical
+                                        ? "vertical-rl"
+                                        : "horizontal-tb"};
                 ">
-                ${p.text || getDisplayName(p.name)}
-            </div>`
+                ${getLocalizedText(p)}
+            </div>
+            `
                             })
                         });
                     } else {
@@ -459,7 +488,7 @@
 
                     let tooltip =
                         `<div class="aaposbo-title">
-                            <b>${getDisplayName(p.name || "无名地点")}</b>
+      <b>${getLocalizedText(p)}</b>
                         </div>`;
 
                     if (p.desc) {
@@ -528,17 +557,11 @@
             // ====================
             if (lang) {
 
-                const files = {
-                    zh: "https://seicing.com/js/locationsbana.json",
-                    en: "https://seicing.com/js/locationsbana_en.json"
-                };
+                currentLanguage = lang;
 
-                loadLocations(files[lang]);
+                loadLocations(currentDataFile);
 
-                document.querySelectorAll("[data-lang]")
-                    .forEach(b => b.classList.add("off"));
-
-                btn.classList.remove("off");
+                syncButtonUI();
 
                 return;
             }
@@ -580,22 +603,34 @@
 
     function syncButtonUI() {
 
-        document.querySelectorAll("#filterBar button").forEach(btn => {
+        document
+            .querySelectorAll("#filterBar button")
+            .forEach(btn => {
 
-            const f = btn.dataset.filter;
-            const l = btn.dataset.layer;
-            const lang = btn.dataset.lang;
+                const f = btn.dataset.filter;
+                const l = btn.dataset.layer;
+                const lang = btn.dataset.lang;
 
-            let active = false;
+                let active = false;
 
-            if (f) active = filterState[f];
-            if (l) active = layerState[l];
+                if (f) {
+                    active = filterState[f];
+                }
 
-            // lang：默认只有当前语言高亮（简单处理）
-            if (lang && lang === "zh") active = true;
+                if (l) {
+                    active = layerState[l];
+                }
 
-            btn.classList.toggle("off", !active);
-        });
+                if (lang) {
+                    active =
+                        lang === currentLanguage;
+                }
+
+                btn.classList.toggle(
+                    "off",
+                    !active
+                );
+            });
     }
 
     syncButtonUI();
