@@ -109,9 +109,10 @@
     },
     {
         "name": "政区 泖支於",
-        "x": 2211,
+        "x": 2187,
         "y": 1731,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "泖支於",
         "texten": "𗿋𗿌𗖱"
@@ -121,15 +122,17 @@
         "x": 2425,
         "y": 2297,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "夏州",
         "texten": "𘒂𗍁"
     },
     {
         "name": "政区 平成景",
-        "x": 2211,
-        "y": 1731,
+        "x": 2534,
+        "y": 2046,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "平成景",
         "texten": "𗦮𘌯𘊐"
@@ -139,6 +142,7 @@
         "x": 2754,
         "y": 2279,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "摄崎",
         "texten": "𘛣𗒯"
@@ -148,15 +152,17 @@
         "x": 2723,
         "y": 2458,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "千叶",
         "texten": "𗣆𗓵"
     },
     {
         "name": "政区 高州",
-        "x": 2211,
-        "y": 1731,
+        "x": 2379,
+        "y": 1640,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "高州",
         "texten": "𗣛𗍁"
@@ -166,6 +172,7 @@
         "x": 2369,
         "y": 1297,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "室利刹陀罗",
         "texten": "𐏁𐎾𐎧𐏁𐎫𐎾"
@@ -175,6 +182,7 @@
         "x": 2808,
         "y": 1391,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "伊萨赫尔",
         "texten": "𐎡𐎿𐏃𐎼"
@@ -184,6 +192,7 @@
         "x": 2767,
         "y": 990,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "坎斯坦穆",
         "texten": "𐎣𐎴𐎿𐎫𐎴𐎠𐎾𐎸"
@@ -193,6 +202,7 @@
         "x": 2748,
         "y": 352,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "卡哈扎塔",
         "texten": "𐎣𐏃𐏀𐎫"
@@ -202,6 +212,7 @@
         "x": 1899,
         "y": 808,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "伊拉修莱德",
         "texten": "I𐌻𐌻𐌰𐌶𐌿𐍂𐌰y𐌳"
@@ -211,6 +222,7 @@
         "x": 1627,
         "y": 870,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "匈诺萨格",
         "texten": "𐌷𐌿𐌽𐍉𐍂𐍊𐌰𐌲"
@@ -220,6 +232,7 @@
         "x": 1192,
         "y": 1194,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "安古奴斯",
         "texten": "𐌰𐌲𐌽𐌿𐍃"
@@ -229,6 +242,7 @@
         "x": 1102,
         "y": 1050,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "维兰塔伦",
         "texten": "𐍅𐌹𐌻𐌰𐌽𐍄𐌰𐌻𐌻𐍉𐌽"
@@ -238,6 +252,7 @@
         "x": 1408,
         "y": 1239,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "艾特拉塔",
         "texten": "𐌰𐌻𐍄𐍂𐌰𐍄𐌰𐍂"
@@ -247,6 +262,7 @@
         "x": 1357,
         "y": 1413,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "伊斯班尼亚",
         "texten": "𐌴𐍃𐍀𐌰𐌽𐌹𐌰"
@@ -256,6 +272,7 @@
         "x": 1312,
         "y": 883,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "扎雷法提亚",
         "texten": "𐍄𐌶𐌰𐍂𐍆𐌰𐍄𐌹𐌰"
@@ -265,6 +282,7 @@
         "x": 1475,
         "y": 1087,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "阿拉玛那",
         "texten": "𐌰𐌻𐌻𐌰𐌼𐌰𐌲𐌽𐌰"
@@ -274,6 +292,7 @@
         "x": 3906,
         "y": 1491,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "马奇比亚露塔",
         "texten": "Μακπιυαλυτα"
@@ -283,6 +302,7 @@
         "x": 4410,
         "y": 1457,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "露西里亚",
         "texten": "Λυσιρριυα"
@@ -292,15 +312,17 @@
         "x": 4014,
         "y": 2631,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "尤伊",
         "texten": "ιυιρε"
     },
     {
         "name": "政区 弗拉格兰特",
-        "x": 4014,
-        "y": 2631,
+        "x": 3340,
+        "y": 2396,
         "desc": "",
+        "size": "large",
         "type": "text",
         "text": "弗拉格兰特",
         "texten": "φραγραντ"
