@@ -225,7 +225,7 @@
         "size": "large",
         "type": "text",
         "text": "伊拉修莱德",
-        "texten": "I𐌻𐌻𐌰𐌶𐌿𐍂𐌰y𐌳"
+        "texten": "𐌹𐌻𐌻𐌰𐌶𐌿𐍂𐌰𐌹𐌳𐍂"
     },
     {
         "name": "政区 匈诺萨格",
@@ -336,6 +336,26 @@
         "type": "text",
         "text": "弗拉格兰特",
         "texten": "φραγραντ"
+    },
+    {
+        "name": "政区 ",
+        "x": 3718,
+        "y": 2566,
+        "desc": "",
+        "size": "large",
+        "type": "text",
+        "text": " ",
+        "texten": " "
+    },
+    {
+        "name": "政区 ",
+        "x": 3275,
+        "y": 2706,
+        "desc": "",
+        "size": "large",
+        "type": "text",
+        "text": " ",
+        "texten": " "
     },
     {
         "name": "测试",
