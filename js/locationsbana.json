@@ -19,8 +19,8 @@
     },
     {
         "name": "帝国元 伊奥那尼亚",
-        "x": 2599,
-        "y": 980,
+        "x": 2758,
+        "y": 1034,
         "icon": "https://data.seicing.com/seicingdepot/fatcatpool/essay/Imperium/cons.png",
         "url": "https://seicing.com/html/labibana/Ionania.html",
         "width": 96,
@@ -37,8 +37,8 @@
     },
     {
         "name": "帝国元 艾特拉塔",
-        "x": 1421,
-        "y": 1185,
+        "x": 1418,
+        "y": 1143,
         "icon": "https://data.seicing.com/seicingdepot/fatcatpool/essay/Imperium/Altrata3.png",
         "url": "https://seicing.com/html/labibana/Altrata.html",
         "width": 96,
@@ -148,6 +148,16 @@
         "texten": "𘛣𗒯"
     },
     {
+        "name": "政区 德原",
+        "x": 2808,
+        "y": 2616,
+        "desc": "",
+        "size": "large",
+        "type": "text",
+        "text": "德原",
+        "texten": "𗁓𗤩"
+    },
+    {
         "name": "政区 千叶",
         "x": 2723,
         "y": 2458,
@@ -159,8 +169,8 @@
     },
     {
         "name": "政区 高州",
-        "x": 2379,
-        "y": 1640,
+        "x": 2432,
+        "y": 1599,
         "desc": "",
         "size": "large",
         "type": "text",
@@ -180,7 +190,7 @@
     {
         "name": "政区 伊萨赫尔",
         "x": 2808,
-        "y": 1391,
+        "y": 1335,
         "desc": "",
         "size": "large",
         "type": "text",
@@ -199,8 +209,8 @@
     },
     {
         "name": "政区 卡哈扎塔",
-        "x": 2748,
-        "y": 352,
+        "x": 2752,
+        "y": 418,
         "desc": "",
         "size": "large",
         "type": "text",
@@ -290,7 +300,7 @@
     {
         "name": "政区 马奇比亚露塔",
         "x": 3906,
-        "y": 1491,
+        "y": 1520,
         "desc": "",
         "size": "large",
         "type": "text",
@@ -310,7 +320,7 @@
     {
         "name": "政区 尤伊",
         "x": 4014,
-        "y": 2631,
+        "y": 2599,
         "desc": "",
         "size": "large",
         "type": "text",
