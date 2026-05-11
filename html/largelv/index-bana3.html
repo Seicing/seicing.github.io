@@ -208,12 +208,25 @@
 
 <div id="filterBar">
     <button data-filter="aoe2">帝国元</button>
-</div>
-<!--
+
+    <button data-layer="district">政区</button>
+
+    <button data-lang="zh">中</button>
+    <button data-lang="en">EN</button>
+    <!--
+
+
+    <button data-layer="monster">怪物</button>
+
     <button data-filter="aoe3">探索时代</button>
     <button data-filter="aoe4">近世时代</button>
    <button data-filter="aoem">原子时代</button>
+
+
 -->
+</div>
+
+
 <br></div>
                     </div>
                 </div>
@@ -262,13 +275,15 @@
     map.setView([0, 0], 0, { animate: false });
 
     // ============================
-    // 加载底图
+    // 底图
     // ============================
-    const overlay = L.imageOverlay('https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图巴那.jpg', bounds).addTo(map);
+    const baseMap = L.imageOverlay(
+        'https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/纯粹地图巴那.jpg',
+        bounds
+    ).addTo(map);
 
-    overlay.once("load", () => {
+    baseMap.once("load", () => {
         map.fitBounds(bounds, { animate: false });
-
         setTimeout(() => {
             map.invalidateSize(true);
             map.setZoom(map.getZoom(), { animate: false });
@@ -276,18 +291,42 @@
     });
 
     // ============================
-    // ★ 图标自动跟随缩放逻辑
+    // 装饰图层
+    // ============================
+    const districtLayer = L.imageOverlay(
+        'https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/政区.png',
+        bounds
+    );
+
+    const monsterLayer = L.imageOverlay(
+        'https://data.seicing.com/seicingdepot/fatcatpool/essay/补充/地图怪物.png',
+        bounds
+    );
+
+    const extraLayers = {
+        district: districtLayer,
+        monster: monsterLayer
+    };
+
+    const layerState = {
+        district: true,
+        monster: false
+    };
+
+    // 默认加载
+    districtLayer.addTo(map);
+
+    // ============================
+    // 缩放统一控制
     // ============================
     function updateMapScale() {
         let zoom = map.getZoom();
-        // 在 CRS.Simple 下，每级缩放比例差为2的倍数。
         let scale = Math.pow(2, zoom);
-        document.getElementById('map').style.setProperty('--map-scale', scale);
+        document.getElementById('map')
+            .style.setProperty('--map-scale', scale);
     }
 
-    // 绑定缩放事件（zoom 为拖拽滚轮实时触发）
     map.on('zoom', updateMapScale);
-    // 初始化执行一次，保证初始状态缩放正确
     updateMapScale();
 
     // ============================
@@ -312,50 +351,55 @@
         }).addTo(map);
     });
 
+    // ============================
+    // Marker 管理
+    // ============================
     const dynamicMarkers = [];
+    let currentDataFile = "https://seicing.com/js/locationsbana.json";
 
     // ============================
-    // ★ 筛选规则定义
+    // 分类过滤
     // ============================
     const FILTERS = {
-        aoe2: { match: name => name.startsWith("帝国元") },
-        aoe3: { match: name => name.startsWith("探索时代") },
-        aoe4: { match: name => name.startsWith("近世时代") },
-        aoem: { match: name => name.startsWith("原子时代") }
+        aoe2: { match: n => n.startsWith("帝国元") },
+        aoe3: { match: n => n.startsWith("探索时代") },
+        aoe4: { match: n => n.startsWith("近世时代") },
+        aoem: { match: n => n.startsWith("原子时代") }
     };
 
-    // ============================
-    // ★ 筛选状态（默认全开）
-    // ============================
     const filterState = {
         aoe2: true,
-        aoe3: true,
-        aoe4: true,
-        aoem: true
+        aoe3: false,
+        aoe4: false,
+        aoem: false
     };
 
-    // ============================
-    // ★ 判断所属系列
-    // ============================
     function detectSeries(name) {
-        for (const key in FILTERS) {
-            if (FILTERS[key].match(name)) return key;
+        for (const k in FILTERS) {
+            if (FILTERS[k].match(name)) return k;
         }
         return null;
     }
 
     // ============================
-    // ★ 应用筛选
+    // 去掉分类前缀
+    // ============================
+    function getDisplayName(name) {
+        return name ? name.replace(/^[^ ]+\s*/, "") : "";
+    }
+
+    // ============================
+    // 筛选应用
     // ============================
     function applyFilters() {
         dynamicMarkers.forEach(obj => {
-            // 没系列分类 → 永远显示
-            const shouldShow = obj.series === null ? true : filterState[obj.series];
+
+            const shouldShow =
+                obj.series === null ? true : filterState[obj.series];
 
             if (shouldShow && !obj.visible) {
                 obj.marker.addTo(map);
                 obj.visible = true;
-
             } else if (!shouldShow && obj.visible) {
                 map.removeLayer(obj.marker);
                 obj.visible = false;
@@ -364,127 +408,168 @@
     }
 
     // ============================
-    // 加载 locations.json
+    // 加载 JSON
     // ============================
-    fetch("https://seicing.com/js/locationsbana.json")
-        .then(res => res.json())
-        .then(list => {
+    function loadLocations(file) {
 
-            for (const p of list) {
+        currentDataFile = file;
 
-                const baseWidth = p.width || 36;
-                const baseHeight = p.height || 36;
-                const w = baseWidth;
-                const h = baseHeight;
-
-                let mk;
-
-                if (p.type === "text") {
-                    const sizeClass = p.size || "normal";
-
-                    // 使用宽高为0的 divIcon，依靠内部 CSS 的 translate(-50%,-50%) 来完美居中并配合 transform 缩放
-                    const textIcon = L.divIcon({
-                        className: "custom-div-icon",
-                        iconSize: [0, 0],
-                        iconAnchor: [0, 0],
-                        html: `<div class="mapText ${sizeClass} scalable-text">${p.text || p.name}</div>`
-                    });
-
-                    mk = L.marker([p.y, p.x], {
-                        icon: textIcon
-                    });
-
-                } else {
-                    // 为了不破坏 Leaflet 的坐标系统，这里用 divIcon 把图片包起来，让 CSS 处理内部图片的缩放
-                    let icon = L.divIcon({
-                        className: 'custom-div-icon',
-                        iconSize: [w, h],
-                        iconAnchor: [w / 2, h],
-                        html: `<img src="${p.icon}" class="scalable-image" style="width: ${w}px; height: ${h}px;" />`
-                    });
-
-                    mk = L.marker([p.y, p.x], {
-                        icon
-                    });
-                }
-
-                // 构建 Tooltip 的 HTML 内容
-                let tooltipHtml = `<div class="aaposbo-title"><b>${p.name || "无名地点"}</b></div>`;
-
-                // 如果 JSON 中定义了 desc (额外说明) 字段，则追加到下方
-                if (p.desc) {
-                    tooltipHtml += `<div class="aaposbo">${p.desc}</div>`;
-                }
-
-                mk.addTo(map)
-                    .bindTooltip(tooltipHtml, {
-                        direction: "auto",  // ★ 改为自动：在边缘时会自动换方向
-                        // 稍微调高一点透明度，让带说明的文字更容易看清
-                        opacity: 0.95
-                    })
-                    .on("click", () => {
-                        if (p.url) location.href = p.url;
-                    });
-
-                const series = detectSeries(p.name || "");
-
-                dynamicMarkers.push({
-                    marker: mk,
-                    data: p,
-                    baseWidth,
-                    baseHeight,
-                    series,
-                    visible: true
-                });
-            }
-
-            // ★ 初始应用一次筛选（默认全开，保险）
-            applyFilters();
+        dynamicMarkers.forEach(obj => {
+            map.removeLayer(obj.marker);
         });
+        dynamicMarkers.length = 0;
+
+        fetch(file)
+            .then(res => res.json())
+            .then(list => {
+
+                for (const p of list) {
+
+                    const w = p.width || 36;
+                    const h = p.height || 36;
+
+                    let mk;
+
+                    if (p.type === "text") {
+
+                        const icon = L.divIcon({
+                            className: "custom-div-icon",
+                            iconSize: [0, 0],
+                            iconAnchor: [0, 0],
+                            html: `<div class="mapText ${p.size || "normal"} scalable-text">
+                                    ${p.text || getDisplayName(p.name)}
+                                   </div>`
+                        });
+
+                        mk = L.marker([p.y, p.x], { icon });
+
+                    } else {
+
+                        const icon = L.divIcon({
+                            className: "custom-div-icon",
+                            iconSize: [w, h],
+                            iconAnchor: [w / 2, h],
+                            html: `<img src="${p.icon}"
+                                     class="scalable-image"
+                                     style="width:${w}px;height:${h}px;" />`
+                        });
+
+                        mk = L.marker([p.y, p.x], { icon });
+                    }
+
+                    let tooltipHtml =
+                        `<div class="aaposbo-title">
+                            <b>${getDisplayName(p.name || "无名地点")}</b>
+                         </div>`;
+
+                    if (p.desc) {
+                        tooltipHtml += `<div class="aaposbo">${p.desc}</div>`;
+                    }
+
+                    mk.addTo(map)
+                        .bindTooltip(tooltipHtml, {
+                            direction: "auto",
+                            opacity: 0.95
+                        })
+                        .on("click", () => {
+                            if (p.url) location.href = p.url;
+                        });
+
+                    dynamicMarkers.push({
+                        marker: mk,
+                        series: detectSeries(p.name || ""),
+                        visible: true
+                    });
+                }
+
+                applyFilters();
+            });
+    }
+
+    // 初始加载
+    loadLocations("https://seicing.com/js/locationsbana.json");
 
     // ============================
-    // ★ 绑定筛选按钮
+    // filterBar 统一事件
     // ============================
+
     document.querySelectorAll("[data-filter]").forEach(btn => {
         btn.addEventListener("click", () => {
+
             const key = btn.dataset.filter;
             filterState[key] = !filterState[key];
+
             btn.classList.toggle("off", !filterState[key]);
+
             applyFilters();
         });
     });
 
     // ============================
-    // ★ 左上角跳转按钮（位于 + - 下方）
+    // 图层按钮
+    // ============================
+    document.querySelectorAll("[data-layer]").forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            const key = btn.dataset.layer;
+            const layer = extraLayers[key];
+
+            layerState[key] = !layerState[key];
+
+            if (layerState[key]) {
+                map.addLayer(layer);
+            } else {
+                map.removeLayer(layer);
+            }
+
+            btn.classList.toggle("off", !layerState[key]);
+        });
+    });
+
+    // ============================
+    // JSON切换（语言）
+    // ============================
+    const languageFiles = {
+        zh: "https://seicing.com/js/locationsbana.json",
+        en: "https://seicing.com/js/locationsbana_en.json"
+    };
+
+    document.querySelectorAll("[data-lang]").forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            const lang = btn.dataset.lang;
+
+            loadLocations(languageFiles[lang]);
+
+            document.querySelectorAll("[data-lang]")
+                .forEach(b => b.classList.add("off"));
+
+            btn.classList.remove("off");
+        });
+    });
+
+    // ============================
+    // 返回按钮
     // ============================
     const JumpControl = L.Control.extend({
-        options: {
-            position: 'topleft'
-        },
+        options: { position: 'topleft' },
 
         onAdd: function () {
-            const container = L.DomUtil.create(
-                'div',
-                'leaflet-bar leaflet-control'
-            );
+            const c = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+            const a = L.DomUtil.create('a', '', c);
 
-            const btn = L.DomUtil.create('a', '', container);
-            btn.innerHTML = '←';   // 可换成文字 / 图标
-            btn.href = '#';
-            btn.title = '返回';
+            a.innerHTML = '←';
+            a.href = '#';
+            a.title = '返回';
 
-            btn.style.width = '26px';
-            btn.style.height = '26px';
-            btn.style.lineHeight = '26px';
-            btn.style.textAlign = 'center';
-            btn.style.fontSize = '16px';
-
-            L.DomEvent.on(btn, 'click', function (e) {
+            L.DomEvent.on(a, 'click', e => {
                 L.DomEvent.stop(e);
-                location.href = 'https://seicing.com/html/index.html'; // 返回的目标网页
+                location.href = 'https://seicing.com/html/index.html';
             });
 
-            return container;
+            return c;
         }
     });
 
