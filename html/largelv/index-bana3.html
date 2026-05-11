@@ -120,27 +120,30 @@
         font-size: 18px;
     }
 
-    /* --- 新增：覆盖 divIcon 默认的白色背景和边框 --- */
+    /* --- 修改：覆盖 divIcon 默认背景，并关闭外层大盒子的鼠标事件 --- */
     .custom-div-icon {
         background: transparent !important;
         border: none !important;
+        /* 关键修复：让固定尺寸的透明外壳不再拦截鼠标 */
+        pointer-events: none !important;
     }
 
-    /* --- 新增：图片类型的缩放控制 --- */
+    /* --- 修改：图片类型的缩放控制，开启图片自身的鼠标事件 --- */
     .scalable-image {
-        /* 确保缩放的基准点是图片底部正中（即图标锚点） */
         transform-origin: bottom center;
         transform: scale(var(--map-scale, 1));
         display: block;
+        /* 关键修复：只让缩放后的图片实体响应鼠标和 Hover (气泡提示) */
+        pointer-events: auto !important;
     }
 
-    /* --- 新增：文字类型的缩放控制 --- */
+    /* --- 修改：文字类型的缩放控制，开启文字自身的鼠标事件 --- */
     .scalable-text {
-        /* 确保缩放的基准点是正中心 */
         transform-origin: center center;
-        /* 先将文字中心平移到坐标点，再进行缩放 */
         transform: translate(-50%, -50%) scale(var(--map-scale, 1));
         will-change: transform;
+        /* 关键修复：只让缩放后的文字实体响应鼠标 */
+        pointer-events: auto !important;
     }
 </style>
 </head>
