@@ -205,8 +205,16 @@
         src: url('https://seicing.com/res/ScriptwideKyokashoCJK-A.ttf');
     }
 
+    @font-face {
+        font-family: 'BIZ885';
+        src: url('https://seicing.com/res/BIZ-UDMinchoM-A.ttf');
+        unicode-range: U+3040-309F, U+30A0-30FF;
+        /* 平假名和片假名范围 */
+
+    }
+
     .mapText {
-        font-family: 'lavivagnar', 'Tangut';
+        font-family: 'lavivagnar', 'Tangut', 'BIZ885';
     }
 </style>
 </head>
