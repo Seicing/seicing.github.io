@@ -390,22 +390,12 @@
         "x": 4437,
         "y": 1880,
         "desc": "",
-        "vertical": true,
-        "angle": 20,
+        "vertical": false,
+        "angle": 40,
         "size": "large",
         "type": "text",
         "text": "欧若拉兰",
         "texten": "αυροραλανδ"
-    },
-    {
-        "name": "政区 日文假名字体测试",
-        "x": 500,
-        "y": 500,
-        "desc": "",
-        "size": "large",
-        "type": "text",
-        "text": "日本語フォントテスト",
-        "texten": "日本語フォントテスト"
     },
     {
         "name": "测试",
