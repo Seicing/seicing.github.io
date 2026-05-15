@@ -770,7 +770,7 @@ let ayanami = {
 
     "战国大名早期大筒": /*html*/`大筒兵解锁<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大筒兵解锁.png' width='20px'>大筒兵解锁：解锁城堡时代的早期大筒兵，仅能通过织田家3级科技解锁大筒兵使用`,
 
-    "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：可汗攻击时充能，在达到1/2/3级时提高附近我军部队10%/20%/30%攻击力`,
+    "可汗战吼": /*html*/`可汗战吼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/可汗战吼.png' width='20px'>可汗战吼：拔都持续战斗6/15/30秒时，可让周围5格的友军获得1/2/3级增益，提高部队10%/20%/30%攻击力`,
     "汗减益箭矢2": /*html*/`汗减益箭矢<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/汗减益箭矢.png' width='20px'>汗减益箭矢：汗发射信号箭让10格范围内的敌人受到的伤害+10%，持续10秒`,
 
     "早期皇宫卫兵": /*html*/`早期皇宫卫兵<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/皇宫卫兵.png' width='20px'>早期皇宫卫兵：封建时代可训练早期皇宫卫兵`,
