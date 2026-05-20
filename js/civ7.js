@@ -672,7 +672,7 @@ let ayanami = {
     "朝贡I": /*html*/`朝贡I<br>【英文待补充】<br>你的首都中每放置有1资源，便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力`,
     "朝贡II": /*html*/`朝贡II<br>【英文待补充】<br>你的首都中每放置有1资源，便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力`,
 
-    "马拉卡拉姆": /*html*/`马拉卡拉姆<br>Marakkalam<br>每有一个与你之间拥有贸易路线的其他文明，海上单位便+1战斗力。重型海上单位+1移动力和视野`,
+    "木制船只": /*html*/`木制船只<br>Marakkalam<br>每有一个与你之间拥有贸易路线的其他文明，海上单位便+1战斗力。重型海上单位+1移动力和视野`,
     "神祗壁龛I": /*html*/`神祗壁龛I<br>Devakoshta<br>金币建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
     "神祗壁龛II": /*html*/`神祗壁龛II<br>Devakoshta<br>金币建筑+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。如果你拥有至少5条贸易路线，与其他领袖展开外交行动时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用`,
     "南印商市I": /*html*/`南印商市I<br>Angadi<br>首都+2资源容量。定居点（首都除外）如果拥有水上建筑，+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
