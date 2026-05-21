@@ -651,8 +651,8 @@ let ayanami = {
     "奇普结绳": /*html*/`奇普结绳<br>Quipu<br>定居点每有1市区人口，便获得+0.5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币；每有1乡村人口，便获得+0.5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力`,
     "提拉库纳I": /*html*/`提拉库纳I<br>Tirakuna<br>食物建筑从山脉获得相邻加成。崎岖地形不会耗尽单位的移动力`,
     "提拉库纳II": /*html*/`提拉库纳II<br>Tirakuna<br>食物和金币建筑从山脉获得相邻加成。崎岖地形不会耗尽单位的移动力`,
-    "夸勒卡I": /*html*/`夸勒卡I<br>Qullqa<br> 每有一条由你建立的活跃贸易路线，城市便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
-    "夸勒卡II": /*html*/`夸勒卡II<br>Qullqa<br> 每有一条由你建立的活跃贸易路线，城市便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
+    "物资储存I": /*html*/`物资储存I<br>Qullqa<br> 每有一条由你建立的活跃贸易路线，城市便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
+    "物资储存II": /*html*/`物资储存II<br>Qullqa<br> 每有一条由你建立的活跃贸易路线，城市便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
     "瓦卡I": /*html*/`瓦卡I<br>Huaca<br>市中心相邻于山脉，或拥有3个已开发山脉地块的定居点+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
     "瓦卡II": /*html*/`瓦卡II<br>Huaca<br>市中心相邻于山脉，或拥有3个已开发山脉地块的定居点+15%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
 
