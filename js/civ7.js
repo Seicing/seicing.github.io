@@ -881,6 +881,12 @@ let ayanami = {
     "亚纳库纳": /*html*/`亚纳库纳<br>【英文待补充】<br>城镇中的食物仓库建筑从改良设施获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物相邻加成`,
     "供需关系": /*html*/`供需关系<br>【英文待补充】<br>每拥有1帝国资源，便+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "分形城市": /*html*/`分形城市<br>【英文待补充】<br>建造仓库建筑时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，购买仓库建筑时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用`,
+    "区位理论": /*html*/`区位理论<br>【英文待补充】<br>在一个时代中每完成一项科技精通，进行项目时便+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用`,
+    "工业化农业": /*html*/`工业化农业<br>【英文待补充】<br>城镇中的生产力仓库建筑从改良设施获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成`,
+    "军队架构": /*html*/`军队架构<br>【英文待补充】<br>建造军事建筑时+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用`,
+    "浪漫主义": /*html*/`浪漫主义<br>【英文待补充】<br>拥有吸引力的地形+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
+
+    "【特色政策】": /*html*/`【特色政策】<br>【英文待补充】<br>【特色政策】`,
 
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
