@@ -534,7 +534,7 @@ let ayanami = {
     "阿舒尔I": /*html*/`阿舒尔I<br>【英文待补充】<br>攻击驻防区块时，步兵和骑兵单位+5战斗力`,
     "阿舒尔II": /*html*/`阿舒尔II<br>【英文待补充】<br>防御工事建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值。攻击驻防区块时，步兵和骑兵单位+5战斗力`,
 
-    "冥界财富": /*html*/`冥界财富<br>Riches of the Duat<br>建造奇观时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，在市中心建造在沙漠地块之上的城市建造时加成加倍。沙漠中的奇观+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力`,
+    "冥界之富": /*html*/`冥界之富<br>Riches of the Duat<br>建造奇观时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，在市中心建造在沙漠地块之上的城市建造时加成加倍。沙漠中的奇观+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力`,
     "洪水季I": /*html*/`洪水季I<br>Akhet<br>可航行河流上的改良设施和区块+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
     "洪水季II": /*html*/`洪水季II<br>Akhet<br>可航行河流上的改良设施和区块+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
     "黑土地I": /*html*/`黑土地I<br>Kemet<br>可航行河流上的改良设施和区块+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
@@ -885,7 +885,11 @@ let ayanami = {
     "工业化农业": /*html*/`工业化农业<br>【英文待补充】<br>城镇中的生产力仓库建筑从改良设施获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成`,
     "军队架构": /*html*/`军队架构<br>【英文待补充】<br>建造军事建筑时+25%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用`,
     "浪漫主义": /*html*/`浪漫主义<br>【英文待补充】<br>拥有吸引力的地形+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
+    "古典复兴": /*html*/`古典复兴<br>【英文待补充】<br>建筑从奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值相邻加成`,
 
+    "【特色政策】": /*html*/`【特色政策】<br>【英文待补充】<br>【特色政策】`,
+    "【特色政策】": /*html*/`【特色政策】<br>【英文待补充】<br>【特色政策】`,
+    "【特色政策】": /*html*/`【特色政策】<br>【英文待补充】<br>【特色政策】`,
     "【特色政策】": /*html*/`【特色政策】<br>【英文待补充】<br>【特色政策】`,
 
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
