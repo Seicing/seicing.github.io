@@ -717,8 +717,8 @@ let ayanami = {
     "断事官II": /*html*/`断事官II<br>Jarugachi<br>马匹资源+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力；此加成在任意时代的占领定居点中加倍。骑兵单位的夹击+50%战斗力`,
 
     "殖民征服": /*html*/`殖民征服<br>Conquista<br>遥远土地上的所有单位+3战斗力，而海上单位独立+5战斗力`,
-    "最幸运的庞大舰队I": /*html*/`最幸运的庞大舰队I<br>Great And Most Fortunate Navy<br>生产海上单位时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。舰队指挥官免费获得“区舰队”晋升`,
-    "最幸运的庞大舰队II": /*html*/`最幸运的庞大舰队II<br>Great And Most Fortunate Navy<br>生产海上单位时+100%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。舰队指挥官免费获得“区舰队”晋升`,
+    "最幸运的伟大舰队I": /*html*/`最幸运的伟大舰队I<br>Great And Most Fortunate Navy<br>生产海上单位时+50%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。舰队指挥官免费获得“区舰队”晋升`,
+    "最幸运的伟大舰队II": /*html*/`最幸运的伟大舰队II<br>Great And Most Fortunate Navy<br>生产海上单位时+100%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。舰队指挥官免费获得“区舰队”晋升`,
     "里科山I": /*html*/`里科山I<br>Cerro Rico<br>资源+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "里科山II": /*html*/`里科山II<br>Cerro Rico<br>资源+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币，位于遥远土地则+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "科雷希多I": /*html*/`科雷希多I<br>Corregidor<br>处于水岸上，或与之相邻的区块+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
