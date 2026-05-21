@@ -889,7 +889,6 @@ let ayanami = {
     "间谍网络": /*html*/`间谍网络<br>Spy Network<br>发起谍报行动时+30%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用。你发起的活跃谍报行动提供+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "神职阶层": /*html*/`神职阶层<br>Priestly Class<br>城市中的幸福值建筑不消耗维护费用`,
     "发展主义": /*html*/`发展主义<br>Developmentalism<br>城市中的生产力仓库建筑从区块获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力相邻加成`,
-
     "市政宪章": /*html*/`市政宪章<br>Municipal Charters<br>城市中的食物仓库建筑从城区获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物相邻加成`,
 
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
