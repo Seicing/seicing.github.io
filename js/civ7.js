@@ -887,8 +887,7 @@ let ayanami = {
     "浪漫主义": /*html*/`浪漫主义<br>Romanticism<br>拥有吸引力的地形+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
     "古典复兴": /*html*/`古典复兴<br>Classical Revival<br>建筑从奇观获得+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值相邻加成`,
     "间谍网络": /*html*/`间谍网络<br>Spy Network<br>发起谍报行动时+30%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用。你发起的活跃谍报行动提供+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
-
-
+    "神职阶层": /*html*/`神职阶层<br>Priestly Class<br>城市中的幸福值建筑不消耗维护费用`,
 
 
 
