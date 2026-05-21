@@ -795,12 +795,12 @@ let ayanami = {
     "库玛尔与库玛丽I": /*html*/`库玛尔与库玛丽I<br>Kumar and Kumari<br>仓库建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。山脉+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力`,
     "库玛尔与库玛丽II": /*html*/`库玛尔与库玛丽II<br>Kumar and Kumari<br>仓库建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。山脉+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力`,
 
-    "氏族社会": /*html*/`氏族社会<br>Clan Society<br>6格内每有一个他人拥有的定居点，己方定居点便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
-    "氏族社会": /*html*/`氏族社会<br>Clan Society<br>6格内每有一个他人拥有的定居点，己方定居点便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
-    "手鼓": /*html*/`手鼓<br>Ng'oma<br>位于湖泊之上或与之相邻的单位+4战斗力。上船单位+1移动力`,
-    "手鼓": /*html*/`手鼓<br>Ng'oma<br>位于湖泊之上或与之相邻的单位+8战斗力。上船单位+1移动力`,
-    "湖间地区": /*html*/`湖间地区<br>Interlacustrine<br>城市中的所有建筑从湖泊获得相邻加成`,
-    "湖间地区": /*html*/`湖间地区<br>Interlacustrine<br>所有建筑均可基于其自身的所有产出从湖泊获得相邻加成`,
+    "氏族社会I": /*html*/`氏族社会I<br>Clan Society<br>6格内每有一个他人拥有的定居点，己方定居点便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
+    "氏族社会II": /*html*/`氏族社会II<br>Clan Society<br>6格内每有一个他人拥有的定居点，己方定居点便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+    "手鼓I": /*html*/`手鼓I<br>Ng'oma<br>位于湖泊之上或与之相邻的单位+4战斗力。上船单位+1移动力`,
+    "手鼓II": /*html*/`手鼓II<br>Ng'oma<br>位于湖泊之上或与之相邻的单位+8战斗力。上船单位+1移动力`,
+    "湖间地区I": /*html*/`湖间地区I<br>Interlacustrine<br>城市中的所有建筑从湖泊获得相邻加成`,
+    "湖间地区II": /*html*/`湖间地区II<br>Interlacustrine<br>所有建筑均可基于其自身的所有产出从湖泊获得相邻加成`,
     "埃比卡I": /*html*/`埃比卡I<br>Ebika<br>处于湖泊上，或与之相邻的区块+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
     "埃比卡II": /*html*/`埃比卡II<br>Ebika<br>处于湖泊上，或与之相邻的区块+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
 
