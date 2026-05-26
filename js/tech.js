@@ -335,7 +335,7 @@ let ayanami = {
     "文化偏殿发展": /*html*/`文化偏殿 : 发展<br>Advancement<br>文化偏殿升级科技<br>建造文化偏殿。 建造该偏殿后，升级至下一个时代的时间缩短 20%，且花费的资源减少250/400/1350`,
     "文化偏殿后勤学": /*html*/`文化偏殿 : 后勤学<br>Logistics<br> 文化偏殿升级科技<br>建造文化偏殿。 完成后，可获得 2/3/4 名德尔维希，群体治疗技能变成常驻被动技能，并且群体治疗的治疗能力 +0%/+25%/+50%`,
     "经济偏殿发展": /*html*/`经济偏殿 : 发展<br>Growth<br> 经济偏殿升级科技<br>建造经济偏殿。 完成后获得 3/7/10 个村民。 果园可额外获得 50 食物/果园可额外获得 100 食物/且所有村民工作速度提高 +10%`,
-    "经济偏殿工业": /*html*/`经济偏殿 : 工业<br>Industry<br> 经济偏殿升级科技<br>建造经济偏殿。 完成后获得 400木材 / 900木材+400石头 / 2000木材+900石头 / 2800木材+1000石头，村民建造速度+30% / 40% / 50% / 50%`,
+    "经济偏殿工业": /*html*/`经济偏殿 : 工业<br>Industry<br> 经济偏殿升级科技<br>建造经济偏殿。 完成后获得 400木材/900木材+400石头/2000木材+900石头/2800木材+1000石头，村民建造速度+30%/40%/50%/50%`,
     "军事偏殿铁匠大师": /*html*/`军事偏殿 : 铁匠大师<br>Master Smiths<br> 军事偏殿升级科技<br>建造军事偏殿。 进入一个时代后，当前时代的铁匠铺的伤害护甲科技以及军事学院科技将变为免费且会自动完成 (其他时代则必须照常进行研究)`,
     "军事偏殿援军": /*html*/`军事偏殿 : 援军<br>Reinforcement<br> 军事偏殿升级科技<br>建造军事偏殿。 完成后，骑兵单位获得建造攻城武器的能力。 智慧宫立即生产 1/3/7 名沙漠掠夺者，并在本局游戏剩余时间内每 2 分钟生产该数量的沙漠掠夺者`,
     "商业偏殿顾问": /*html*/`商业偏殿 : 顾问<br>Advisors<br> 贸易偏殿升级科技<br>建造贸易偏殿。 完成后获得 3/5/7 个阿塔贝格，可驻扎于任意军事生产建筑 (除了码头) 中，使新训练单位的生命值增加 20%`,
@@ -879,21 +879,21 @@ let ayanami = {
     "罗马火": /*html*/`罗马火<br>Roman Fire<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>扭力弩炮攻击速度+15%，并且他们的弩箭在撞击敌人后可以生成希腊之火`,
     "宫殿掠夺": /*html*/`宫殿掠夺<br>Polutasvarf<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>每个参与摧毁城镇中心或地标的瓦兰吉系列单位会在建筑倒塌时获得20白银`,
 
-    "磨刀石": /*html*/`磨刀石<br>Sharpening Stones<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>远程部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费275 / 550 / 1100 / 2200 / 3200 / 4200的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "磨刀石": /*html*/`磨刀石<br>Sharpening Stones<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>远程部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费275/550/1100/2200/3200/4200的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "札甲": /*html*/`札甲<br>Lamellar Armor<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>远程部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250 / 550 / 1100 / 2000 / 3000 / 4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "札甲": /*html*/`札甲<br>Lamellar Armor<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>远程部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250/550/1100/2000/3000/4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "图案焊接": /*html*/`图案焊接<br>Pattern Welding<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>近战步兵部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费175 / 350 / 700 / 1400 / 2400 / 3400的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "图案焊接": /*html*/`图案焊接<br>Pattern Welding<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>近战步兵部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费175/350/700/1400/2400/3400的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "对接锁子甲": /*html*/`对接锁子甲<br>Butted Chainmail<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>近战步兵部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250 / 550 / 1100 / 2000 / 3000 / 4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "对接锁子甲": /*html*/`对接锁子甲<br>Butted Chainmail<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>近战步兵部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250/550/1100/2000/3000/4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "刀片嵌饰": /*html*/`刀片嵌饰<br>Blade Inlaying<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>骑兵部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费175 / 350 / 700 / 1400 / 2400 / 3400的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "刀片嵌饰": /*html*/`刀片嵌饰<br>Blade Inlaying<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>骑兵部队攻击力 +1，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费175/350/700/1400/2400/3400的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "鳞纹马铠": /*html*/`鳞纹马铠<br>Scale Barding<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>骑兵部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250 / 550 / 1100 / 2000 / 3000 / 4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "鳞纹马铠": /*html*/`鳞纹马铠<br>Scale Barding<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>骑兵部队护甲 +1，生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费250/550/1100/2000/3000/4000的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "防御工事": /*html*/`防御工事<br>Fortifications<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>建筑物生命值 +10%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费200 / 400 / 800 / 1600 / 2600 / 3600的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "防御工事": /*html*/`防御工事<br>Fortifications<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>建筑物生命值 +10%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费200/400/800/1600/2600/3600的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
-    "铁制配件": /*html*/`铁制配件<br>Iron Fittings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城部队生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费225 / 450 / 900 / 1800 / 2800 / 3800的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
+    "铁制配件": /*html*/`铁制配件<br>Iron Fittings<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>攻城部队生命值 +5%，此科技可以在封建时代开始各时代各研究2次，共6次，每次研发需要花费225/450/900/1800/2800/3800的<img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/银.png'>白银`,
 
 
     "腾格拉卡巴德堡垒瞭望": /*html*/`腾格拉卡巴德堡垒瞭望<br>Tughlaqabad Fort Overwatch<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>175 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>5<br>腾格拉卡巴德堡垒可使附近码头生产速度+30%，射箭槽伤害+2，攻击范围+1`,
@@ -1520,7 +1520,7 @@ function setIconActive(icon, active) {
         const txtEl = document.getElementById(textId);
         if (!txtEl) return;
 
-        // 提取互斥组名（默认以 id 的基础部分为组，如 Extra11 / Extra11-a → 组名 Extra11）
+        // 提取互斥组名（默认以 id 的基础部分为组，如 Extra11/Extra11-a → 组名 Extra11）
         const baseId = textId.replace(/-[ab]$/, "");
 
         // 找出同组内所有 span（例如 Extra11, Extra11-a）
@@ -1536,7 +1536,7 @@ function setIconActive(icon, active) {
         // 获取当前同组哪些按钮处于激活状态
         const activeIcons = groupIcons.filter(i => i.classList.contains('active'));
 
-        // ---- 根据激活情况判断最终显示（支持 -a / -b 三级） ----
+        // ---- 根据激活情况判断最终显示（支持 -a/-b 三级） ----
         const hasBase = activeIcons.some(i => (i.dataset.text || "").replace(/-(a|b)$/, "") === baseId);
         const hasA = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-a`);
         const hasB = activeIcons.some(i => (i.dataset.text || "") === `${baseId}-b`);
