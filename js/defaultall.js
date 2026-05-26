@@ -441,11 +441,15 @@ window.addEventListener('resize', debounce(function () {
             document.body.style.fontSize = isMobile ? '9pt' : '9pt';
         }
 
-        document.querySelectorAll('#smallfonter').forEach(el => {
-            el.style.color = size === 'small' ? '#6B1E1E' : '#857E6E';
+        document.querySelectorAll('#smallfonter, #smallfonter2').forEach(el => {
+            el.style.color = size === 'small'
+                ? '#6B1E1E'
+                : '#857E6E';
         });
-        document.querySelectorAll('#bigfonter').forEach(el => {
-            el.style.color = size === 'big' ? '#6B1E1E' : '#857E6E';
+        document.querySelectorAll('#bigfonter, #bigfonter2').forEach(el => {
+            el.style.color = size === 'big'
+                ? '#6B1E1E'
+                : '#857E6E';
         });
     }
 
@@ -458,11 +462,21 @@ window.addEventListener('resize', debounce(function () {
 
         // ② 点击切换
         document.addEventListener('click', e => {
-            if (e.target.id === 'smallfonter') {
+
+            const smallBtn = e.target.closest(
+                '#smallfonter, #smallfonter2'
+            );
+
+            const bigBtn = e.target.closest(
+                '#bigfonter, #bigfonter2'
+            );
+
+            if (smallBtn) {
                 localStorage.setItem('fontSize', 'small');
                 applyFont('small');
             }
-            if (e.target.id === 'bigfonter') {
+
+            if (bigBtn) {
                 localStorage.setItem('fontSize', 'big');
                 applyFont('big');
             }
