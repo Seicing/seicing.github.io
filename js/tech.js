@@ -1341,9 +1341,16 @@ function updateTable() {
     const precisionRules = {
         attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, gather11: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2,
         damage: 1,
+        damage2: 1,
         chargedamage: 1,
         firedamage: 1,
-        hp: 1
+        hp: 1,
+        bonusdamage1: 1,
+        bonusdamage2: 1,
+        bonusdamage3: 1,
+        bonusdamage4: 1,
+        bonusdamage5: 1,
+        bonusdamage6: 1,
     };
     const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, deposit11: 0 };
 
@@ -1362,9 +1369,16 @@ function updateTable() {
             // damage / hp 类：最多保留，不强制显示
             if (
                 stat === "damage" ||
+                stat === "damage2" ||
                 stat === "chargedamage" ||
                 stat === "firedamage" ||
-                stat === "hp"
+                stat === "hp" ||
+                stat === "bonusdamage1" ||
+                stat === "bonusdamage2" ||
+                stat === "bonusdamage3" ||
+                stat === "bonusdamage4" ||
+                stat === "bonusdamage5" ||
+                stat === "bonusdamage6"
             ) {
                 el.innerText = parseFloat(val.toFixed(decimals));
             } else {
@@ -1738,4 +1752,24 @@ function triggerFilterFromURL() {
     if (btn) btn.click();
 }
 
+
+
+// ----------- 无 ?civ= 时自动点击第一个文明按钮（兜底） -----------
+document.addEventListener('DOMContentLoaded', () => {
+    const civ = new URLSearchParams(window.location.search).get("civ");
+
+    // 有 civ 参数时，不干预原逻辑
+    if (civ) return;
+
+    // 找第一个 civ-selector
+    const civSelector = document.querySelector('.civ-selector');
+    if (!civSelector) return;
+
+    // 找里面第一个 a
+    const firstButton = civSelector.querySelector('a');
+    if (!firstButton) return;
+
+    // 模拟点击
+    firstButton.click();
+});
 
