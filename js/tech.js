@@ -1338,19 +1338,38 @@ function updateTable() {
             });
         });
 
-    const precisionRules = { attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, gather11: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2 };
+    const precisionRules = {
+        attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, gather11: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2,
+        damage: 1,
+        chargedamage: 1,
+        firedamage: 1,
+        hp: 1
+    };
     const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, deposit11: 0 };
 
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
         if (!el) return;
+
         const val = calculateFinal(stat, activeBuffs, baseStats);
+
         if (percentRules[stat] !== undefined) {
             const decimals = percentRules[stat];
             el.innerText = (val * 100).toFixed(decimals) + "%";
         } else {
             const decimals = precisionRules[stat] ?? 0;
-            el.innerText = val.toFixed(decimals);
+
+            // damage / hp 类：最多保留，不强制显示
+            if (
+                stat === "damage" ||
+                stat === "chargedamage" ||
+                stat === "firedamage" ||
+                stat === "hp"
+            ) {
+                el.innerText = parseFloat(val.toFixed(decimals));
+            } else {
+                el.innerText = val.toFixed(decimals);
+            }
         }
     });
 
