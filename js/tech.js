@@ -1341,6 +1341,7 @@ function updateTable() {
     const precisionRules = {
         attackspeed: 2, range: 2, speed: 2, aoearea: 2, gather1: 2, gather2: 2, gather3: 2, gather4: 2, gather5: 2, gather6: 2, gather7: 2, gather8: 2, gather9: 2, gather10: 2, gather11: 2, attackspeed2: 2, range2: 2, speed2: 2, aoearea2: 2, tradesubratewood: 2, tradesubratefood: 2, tradesubratestone: 2, tradesubrateolive: 2,
         damage: 1,
+        buildtime: 1,
         damage2: 1,
         chargedamage: 1,
         firedamage: 1,
@@ -1373,6 +1374,7 @@ function updateTable() {
                 stat === "chargedamage" ||
                 stat === "firedamage" ||
                 stat === "hp" ||
+                stat === "buildtime" ||
                 stat === "bonusdamage1" ||
                 stat === "bonusdamage2" ||
                 stat === "bonusdamage3" ||
