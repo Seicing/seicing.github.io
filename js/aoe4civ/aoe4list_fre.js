@@ -114,13 +114,6 @@ export const aoe4list = [
   {
     "civ": "fre",
     "section": "攻城武器",
-    "name": "长管炮",
-    "img": "长管炮",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/长管炮"
-  },
-  {
-    "civ": "fre",
-    "section": "攻城武器",
     "name": "风琴炮",
     "img": "风琴炮",
     "link": "https://seicing.com/html/aoe2/unitaoe4/风琴炮"
