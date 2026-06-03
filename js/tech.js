@@ -601,7 +601,7 @@ let ayanami = {
 
     "黄金时代阶段I": /*html*/`黄金时代阶段I<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代1.png' width='20px'>黄金时代阶段Ⅰ：村民采集速度 +15%`,
     "黄金时代阶段II": /*html*/`黄金时代阶段II<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代2.png' width='20px'>黄金时代阶段Ⅱ：村民建造速率 +20%`,
-    "黄金时代阶段III": /*html*/`黄金时代阶段III<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png' width='20px'>黄金时代阶段Ⅲ：骆驼骑兵伤害 +15%`,
+    "黄金时代阶段III": /*html*/`黄金时代阶段III<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代3.png' width='20px'>黄金时代阶段Ⅲ：骆驼骑兵伤害 +20%`,
     "黄金时代阶段IV": /*html*/`黄金时代阶段IV<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代4.png' width='20px'>黄金时代阶段Ⅳ：商人产生的黄金 +20%`,
     "黄金时代阶段V": /*html*/`黄金时代阶段V<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/黄金时代5.png' width='20px'>黄金时代阶段Ⅴ：近战步兵伤害 +10%`,
     "行政偏殿效果": /*html*/`行政偏殿<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/贸易偏殿.png' width='20px'>行政偏殿：激活的黄金时代效果+50%`,
