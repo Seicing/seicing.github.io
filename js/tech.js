@@ -677,7 +677,7 @@ let ayanami = {
     "皇家加农炮2": /*html*/`炮兵学院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/炮兵学院.png' width='20px'>炮兵学院：以25%的折扣、50%额外效率生产皇家加农炮，攻击力+30%，拥有火炮射击特殊能力`,
     "皇家风琴炮2": /*html*/`炮兵学院<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/炮兵学院.png' width='20px'>炮兵学院：以25%的折扣、50%额外效率生产皇家风琴炮，攻击力+30%，拥有强化风琴炮特殊能力`,
     "法国城镇中心效率": /*html*/`大陆经济<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>大陆经济：城镇中心效率根据时代+15%、+15%、+20%、+25%`,
-    "法国便宜资源点": /*html*/`大陆经济<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>大陆经济：资源存放建筑的木材消耗减少25`,
+    "法国便宜资源点": /*html*/`大陆经济<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>大陆经济：资源存放建筑的木材消耗减少25(已反馈在单位面板)`,
     "法国便宜经济科技": /*html*/`大陆经济<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>大陆经济：经济科技研究成本减少35%`,
     "法国便宜经济科技2": /*html*/`大陆经济<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣女贞德.png' width='20px'>大陆经济：经济科技研究成本减少35%`,
     "法国城堡影响力": /*html*/`影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/法兰西.png' width='20px'>影响力：城堡影响力范围内生产成本-20%`,
@@ -1316,6 +1316,11 @@ function calculateFinal(statName, buffs, baseStats) {
 // ----------- 更新表格 -----------
 function updateTable() {
     const baseStats = getBaseStats();
+
+    const activeSpecials = Array.from(
+        document.querySelectorAll('.icon.active[data-spe]')
+    ).map(el => el.dataset.spe);
+
     const activeBuffs = Array.from(document.querySelectorAll('.icon.active'))
         .flatMap(el => {
             const types = el.dataset.type ? el.dataset.type.split(" ") : [];
@@ -1369,11 +1374,48 @@ function updateTable() {
     };
     const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, deposit11: 0 };
 
+
+    // ======================================
+    // 执行特殊计算
+    // ======================================
+
+    const activeSpecials = Array.from(
+        document.querySelectorAll('.icon.active[data-spe]')
+    ).map(el => el.dataset.spe);
+
+    activeSpecials.forEach(name => {
+
+        const fn = specialCalculations[name];
+
+        if (typeof fn === "function") {
+
+            fn(finalStats);
+
+        }
+
+    });
+
+
+    // ======================================
+    // 先计算所有属性
+    // ======================================
+
+    const finalStats = {};
+
+    Object.keys(baseStats).forEach(stat => {
+
+        finalStats[stat] =
+            calculateFinal(stat, activeBuffs, baseStats);
+
+    });
+
+
+
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
         if (!el) return;
 
-        const val = calculateFinal(stat, activeBuffs, baseStats);
+        const val = finalStats[stat];
 
         if (percentRules[stat] !== undefined) {
             const decimals = percentRules[stat];
@@ -1789,3 +1831,18 @@ document.addEventListener('DOMContentLoaded', () => {
     firstButton.click();
 });
 
+
+// ======================================
+// 特殊计算公式库
+// ======================================
+
+const specialCalculations = {
+
+    abbasidcamelfire(stats) {
+
+        stats.firedamage =
+            ((stats.firedamage - 4) * 1.15) + 4;
+
+    },
+
+};
