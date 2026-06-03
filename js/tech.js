@@ -1735,6 +1735,10 @@ if (toggleBtn) {
             // 开：普通按钮全激活；分组按钮 → 每组只保留最后一个
             const groups = {};
             visibleIcons.forEach(icon => {
+                // 满科技时跳过这些按钮
+                if (icon.dataset.noauto === "1") {
+                    return;
+                }
                 const group = icon.dataset.group;
                 if (group) {
                     if (!groups[group]) groups[group] = [];
@@ -1744,8 +1748,11 @@ if (toggleBtn) {
                 }
             });
             Object.values(groups).forEach(groupIcons => {
+                const autoIcons =
+                    groupIcons.filter(i => i.dataset.noauto !== "1");
+                if (autoIcons.length === 0) return;
                 groupIcons.forEach(i => setIconActive(i, false));
-                const last = groupIcons[groupIcons.length - 1];
+                const last = autoIcons[autoIcons.length - 1];
                 if (last) setIconActive(last, true);
             });
         } else {
