@@ -1316,11 +1316,6 @@ function calculateFinal(statName, buffs, baseStats) {
 // ----------- 更新表格 -----------
 function updateTable() {
     const baseStats = getBaseStats();
-
-    const activeSpecials = Array.from(
-        document.querySelectorAll('.icon.active[data-spe]')
-    ).map(el => el.dataset.spe);
-
     const activeBuffs = Array.from(document.querySelectorAll('.icon.active'))
         .flatMap(el => {
             const types = el.dataset.type ? el.dataset.type.split(" ") : [];
@@ -1374,48 +1369,11 @@ function updateTable() {
     };
     const percentRules = { armorrp: 0, buildeff: 0, deposit1: 0, deposit2: 0, deposit3: 0, deposit4: 0, deposit5: 0, deposit6: 0, deposit7: 0, deposit8: 0, deposit9: 0, deposit10: 0, deposit11: 0 };
 
-
-    // ======================================
-    // 执行特殊计算
-    // ======================================
-
-    const activeSpecials = Array.from(
-        document.querySelectorAll('.icon.active[data-spe]')
-    ).map(el => el.dataset.spe);
-
-    activeSpecials.forEach(name => {
-
-        const fn = specialCalculations[name];
-
-        if (typeof fn === "function") {
-
-            fn(finalStats);
-
-        }
-
-    });
-
-
-    // ======================================
-    // 先计算所有属性
-    // ======================================
-
-    const finalStats = {};
-
-    Object.keys(baseStats).forEach(stat => {
-
-        finalStats[stat] =
-            calculateFinal(stat, activeBuffs, baseStats);
-
-    });
-
-
-
     Object.keys(baseStats).forEach(stat => {
         const el = document.getElementById(stat);
         if (!el) return;
 
-        const val = finalStats[stat];
+        const val = calculateFinal(stat, activeBuffs, baseStats);
 
         if (percentRules[stat] !== undefined) {
             const decimals = percentRules[stat];
@@ -1830,19 +1788,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // 模拟点击
     firstButton.click();
 });
-
-
-// ======================================
-// 特殊计算公式库
-// ======================================
-
-const specialCalculations = {
-
-    abbasidcamelfire(stats) {
-
-        stats.firedamage =
-            ((stats.firedamage - 4) * 1.15) + 4;
-
-    },
-
-};
