@@ -9,7 +9,9 @@
     <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
     <link href="https://seicing.com/css/style_headless.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>古典时代伟业</title>
-<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <style>
     #customers2 {
         border-collapse: collapse;
@@ -51,12 +53,11 @@
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 伟业分为“重大伟业”和“次要伟业”，玩家达成“重大伟业”后，将会解锁对应的“献礼”，“献礼”等同于下个时代的开局加成，每个玩家都可以在下个时代开局时选择3个“献礼”来获得优势<br>
 无论玩家是否完成任何“重大伟业”，每次时代都会免费解锁5个通用“献礼”<br>
-因为“献礼”用于下个时代开局，所以近世时代(暂时？)没有任何“重大伟业”<br>
 并不是所有的“重大伟业”都可以被同时使用，可通过设置来设定“重大伟业”的登场<br>
 <br>
 “次要伟业”是可以马上作用于当前时代的目标，完成目标后会在当前时代解锁对应的加成，持续到本时代结束、下时代开始为止<br><br>
 
-<b>重大伟业</b>
+<br><b>重大伟业</b>
 <table id="aoe4de" style="border:1px solid #222222;">
     <tr>
         <td width="40px">类型</td>
@@ -73,7 +74,8 @@
             率先建成7座奇观。
         </td>
         <td>
-            奇观+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力。
+            奇观+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp'
+                width='15px'>生产力。
             <br>【通用】、【经典】
         </td>
     </tr>
@@ -99,7 +101,8 @@
             率先在槽位中放置9项政策或传统。
         </td>
         <td>
-            +1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp' width='15px'>传统槽位。槽位中每放置一项社会政策或传统，便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。
+            +1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp' width='15px'>传统槽位。槽位中每放置一项社会政策或传统，便+2<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。
             <br>【通用】
         </td>
     </tr>
@@ -112,7 +115,8 @@
             率先成为4个城邦的宗主国。
         </td>
         <td>
-            你作为宗主国每有一个下属城邦，宫殿便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
+            你作为宗主国每有一个下属城邦，宫殿便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力和<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
             <br>【通用】
         </td>
     </tr>
@@ -138,7 +142,8 @@
             率先与2位领袖结盟。
         </td>
         <td>
-            >每有一个同盟，所有定居点便+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。谴责所花费的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力+200%。
+            >每有一个同盟，所有定居点便+5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。谴责所花费的<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力+200%。
             <br>【通用】
         </td>
     </tr>
@@ -177,7 +182,8 @@
             率先拥有8座金币建筑。
         </td>
         <td>
-            购买建筑时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用，购买<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币建筑时此加成加倍。
+            购买建筑时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用，购买<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币建筑时此加成加倍。
             <br>【通用】
         </td>
     </tr>
@@ -190,7 +196,7 @@
             率先创建8个定居点。
         </td>
         <td>
-            
+
             城镇在首次发展事件时获得额外的2人口。
             <br>【通用】、【探索者】
         </td>
@@ -204,7 +210,8 @@
             率先拥有10名专家。
         </td>
         <td>
-            专家维护费用-1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
+            专家维护费用-1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
+                width='15px'>幸福值。
             <br>【通用】
         </td>
     </tr>
@@ -217,7 +224,8 @@
             率先拥有150人口。
         </td>
         <td>
-            食物仓库+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。
+            食物仓库+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp'
+                width='15px'>食物建筑+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物。
             <br>【通用】
         </td>
     </tr>
@@ -295,7 +303,9 @@
             率先展示12部<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>抄本。
         </td>
         <td>
-            科技值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>巨作槽位。展示的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>巨作+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值。
+            科技值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>巨作槽位。展示的<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>巨作+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp'
+                width='15px'>科技值。
             <br>【通用】、【经典】
         </td>
     </tr>
@@ -341,7 +351,7 @@
     </tr>
 </table>
 
-<b>危机伟业</b>
+<br><b>危机伟业</b>
 <table id="aoe4de" style="border:1px solid #222222;">
     <tr>
         <td width="40px">类型</td>
@@ -385,7 +395,9 @@
             拥有至少3位指挥官，每人皆拥有至少5次晋升。
         </td>
         <td>
-            指挥官每有一个晋升，便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力、+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，但首都-1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币。
+            指挥官每有一个晋升，便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力、+1<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，但首都-1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'
+                width='15px'>金币。
 
             <br>【入侵】
         </td>
@@ -425,7 +437,8 @@
             拥有4个通过征服得到，且快乐的定居点。
         </td>
         <td>
-            你征服的定居点中每溢出5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力。
+            你征服的定居点中每溢出5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，便+1<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力。
             <br>【内乱】
         </td>
     </tr>
@@ -438,13 +451,14 @@
             在一个40<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值的定居点中拥有4个奇观。
         </td>
         <td>
-            你建立的定居点中每溢出5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。
+            你建立的定居点中每溢出5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，便+1<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。
             <br>【内乱】
         </td>
     </tr>
 </table>
 
-<b>通用献礼</b>
+<br><b>通用献礼</b>
 <table id="aoe4de" style="border:1px solid #222222;">
     <tr>
         <td width="40px">类型</td>
@@ -498,7 +512,7 @@
     </tr>
 </table>
 
-<b>次要伟业</b>
+<br><b>次要伟业</b>
 <table id="aoe4de" style="border:1px solid #222222;">
     <tr>
         <td width="40px">类型</td>
@@ -515,7 +529,8 @@
             率先研习完哲学。
         </td>
         <td>
-            <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
+            <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
+                width='15px'>幸福值。
             <br>【通用】
         </td>
     </tr>
