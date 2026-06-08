@@ -61,37 +61,9 @@ export const aoe4list = [
   {
     "civ": "vik",
     "section": "攻城武器",
-    "name": "扭力弩炮",
-    "img": "扭力弩炮",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮"
-  },
-  {
-    "civ": "vik",
-    "section": "攻城武器",
-    "name": "轻型投石车",
-    "img": "轻型投石车",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/轻型投石车"
-  },
-  {
-    "civ": "vik",
-    "section": "攻城武器",
     "name": "配重式巨型投石机",
     "img": "配重式巨型投石机",
     "link": "https://seicing.com/html/aoe2/unitaoe4/配重式巨型投石机"
-  },
-  {
-    "civ": "vik",
-    "section": "攻城武器",
-    "name": "手推炮",
-    "img": "手推炮",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/手推炮"
-  },
-  {
-    "civ": "vik",
-    "section": "攻城武器",
-    "name": "攻城塔",
-    "img": "攻城塔",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/攻城塔"
   },
   {
     "civ": "vik",
@@ -103,20 +75,8 @@ export const aoe4list = [
 
 
 
-  {
-    "civ": "vik",
-    "section": "船只",
-    "name": "渔船",
-    "img": "渔船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/渔船"
-  },
-  {
-    "civ": "vik",
-    "section": "船只",
-    "name": "商船",
-    "img": "商船",
-    "link": "https://seicing.com/html/aoe2/unitaoe4/商船"
-  },
+
+
   {
     "civ": "vik",
     "section": "船只",
