@@ -283,10 +283,20 @@ let ayanami = {
     "破坏太空计划": /*html*/`破坏太空计划<br>Sabotage Space Program<br>增加目标城市建造发射台并完成发射卫星项目所需的时间`,
     "散布假文物谣言": /*html*/`散布假文物谣言<br>Fake Artifacts<br>移除目标文明展示文物的所有产出`,
     "渗透敌方位置": /*html*/`渗透敌方位置<br>Infiltrate Enemy Positions<br>你的攻城单位将使用其轰击战斗力对抗属于目标的所有单位`,
-    "跨洋飞行": /*html*/`跨洋飞行<br>Trans Oceanic Flight<br>完成后获得1名飞行队指挥官，科技传承路径获得1传承点`,
-    "打破音障": /*html*/`打破音障<br>Break Sound Barrier<br>完成后空中单位+1战斗力，科技传承路径获得1传承点`,
-    "发射卫星": /*html*/`发射卫星<br>Launch Satellite<br>完成后探明整张地图，科技传承路径获得1传承点`,
-    "载人航天飞行": /*html*/`载人航天飞行<br>First Space Flight<br>完成此项目，首次将人类送入太空，赢得科技胜利`,
+
+
+    "跨洋飞行": /*html*/`跨洋飞行<br>Trans-Oceanic Flight<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>1000<br>完成时提供5[icon:SCIENCE_VP]创新点和获得1名飞行队指挥官`,
+    "发射卫星": /*html*/`发射卫星<br>Launch Satellite<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>1000<br>完成时提供5[icon:SCIENCE_VP]创新点和探明整张地图，需要已经建造了发射台的城市`,
+    "日心模型": /*html*/`日心模型<br>Heliocentric Model<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>750<br>完成时提供5[icon:SCIENCE_VP]创新点和海上单位+1移动力`,
+    "绘制星图": /*html*/`绘制星图<br>Chart The Stars<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>450<br>完成时提供5[icon:SCIENCE_VP]创新点和2次免费购买祭坛的机会`,
+    "载人航天飞行准备": /*html*/`载人航天飞行准备<br>Crewed Space Flight Preparation<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>2000<br>完成时提供15[icon:SCIENCE_VP]创新点，可重复进行，需要已经建造了发射台的城市`,
+    "发现微积分": /*html*/`发现微积分<br>Discover Calculus<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>900<br>完成时提供10[icon:SCIENCE_VP]创新点、1科技属性点，首都获得2个攻城单位。`,
+    "打破音障": /*html*/`打破音障<br>Break the Sound Barrier<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>1000<br>完成时提供5[icon:SCIENCE_VP]创新点和空中单位+1战斗力`,
+    "射电望远镜": /*html*/`射电望远镜<br>Radio Telescope<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>1200<br>完成时提供5[icon:SCIENCE_VP]创新点，需要已经建造了广播电台的城市`,
+    "地圆说": /*html*/`地圆说<br>Spherical Earth<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>600<br>完成时提供5[icon:SCIENCE_VP]创新点和1科技属性点`,
+    "常春藤行动": /*html*/`常春藤行动<br>Operation Ivy<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>1000<br>大规模杀伤性武器的爆破范围+1`,
+    "制造核武器": /*html*/`制造核武器<br>Produce Nuclear Weapon<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>1000<br>核武器+1`,
+
 
     "诸葛弩": /*html*/`诸葛弩<br>Chu-Ko-Nu<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30/50<br>射程 2<br>近战攻击力 10/15<br>远程攻击力 15/20<br>轰击力 5/10<br>移动力 2<br>视野范围 2<br>汉朝特色远程单位，拥有控制区和更高的防御力<br>攻击相邻单位时+5战斗力<br>维护费 : 0/1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "士大夫": /*html*/`士大夫<br>Shì Dàfū<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30 + 30(n-1)<br>移动力 3<br>视野范围 1<br>使用次数为1的伟人，只能在拥有至少10点人口的城市中生产，随机获得特定的士大夫<br>每位士大夫只能获得一次<br>每获得一位士大夫后，生产费用将有所增加`,
