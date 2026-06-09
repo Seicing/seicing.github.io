@@ -583,24 +583,15 @@ let ayanami = {
     "荆棘墙": /*html*/`荆棘墙<br>Thorned Walls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>防御设施受到近战伤害时，反馈3近战伤害给攻击者`,
     "潘的工兵": /*html*/`潘的工兵<br>Pan's Pioneer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>建筑物所需的木材减少10%，农场可由2个村民同时进行采集`,
     "吕卡翁的召唤": /*html*/`吕卡翁的召唤<br>Call of Lykaion<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>14 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>吕卡翁升级为阿尔法吕卡翁，伤害+25%，现在和未来的城镇中心和村庄中心会生产1个免费的吕卡翁`,
-
-
     "野林之歌": /*html*/`野林之歌<br>Hymn of the Wildwood<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>英雄治愈5格半径范围内的单位，每秒治疗0.75生命值`,
     "引路火焰": /*html*/`引路火焰<br>Guiding Flame<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>船舶视野+4，攻击范围+15%`,
     "灵魂收割": /*html*/`灵魂收割<br>Harvest of Souls<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵攻击力+15%，击杀敌人后5秒内攻击速度+20%`,
-
     "亲切款待": /*html*/`亲切款待<br>Gracious Hospitality<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>275 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>22 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>房屋建造上限+2`,
-
     "神圣林地": /*html*/`神圣林地<br>Hallowed Woodlands<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>树神升级为森林树神，变形时间从10秒下调到6秒，生命值和远程攻击伤害+30%`,
     "宿命箭": /*html*/`宿命箭<br>Fated Arrows<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>希腊弓兵和美杜莎射出的箭矢可以弹射到最多3个敌方单位身上，但每次弹射伤害都会减少`,
-
     "神圣土地": /*html*/`神圣土地<br>Sacred Land<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>农民采集效率+10%，工作时每秒生成0.1黄金`,
-
-
     "蛊灵圣颂": /*html*/`蛊灵圣颂<br>Enchanted Hymn<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>塞壬升级为塞壬首领，诱惑叹咏调的近战伤害+50%，吸引单位的速度+50%`,
     "虔诚牺牲": /*html*/`虔诚牺牲<br>Pious Sacrifice<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>步兵单位在死亡时，附近人类单位攻击间隔时间-10%，持续5秒，可以叠加5次`,
-
-
 
     "克察尔科亚特尔加成1": /*html*/`克察尔科亚特尔加成1<br>战斗祭司可在圣殿进行放血仪式`,
     "克察尔科亚特尔加成2": /*html*/`克察尔科亚特尔加成2<br>卡普利和其加建的成本-33%`,
