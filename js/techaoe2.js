@@ -3664,14 +3664,6 @@ function Galleon() {
     document.getElementById("Malians2").classList.add("aoeTechIconOff");
 }
 
-function FireGalley() {
-    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
-}
-
-function FireShip() {
-    document.getElementById("Armenians2").classList.add("aoeTechIconOff");
-}
-
 function FastFireShip() {
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
     document.getElementById("Burmese2").classList.add("aoeTechIconOff");
@@ -3690,6 +3682,7 @@ function FastFireShip() {
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionRaft() {
