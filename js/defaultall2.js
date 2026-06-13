@@ -297,7 +297,7 @@ function bindBackToTopEventsOnce() {
             for (const element of internalScrollers) {
                 // 检查内部容器是否有滚动条
                 if (element && element.scrollHeight > element.clientHeight) {
-                    element.scrollTo({ top: 0, behavior: "smooth" });
+                    element.scrollTo({ top: 0, behavior: "auto" });
                     internalScrollerFound = true;
                     break;
                 }
@@ -307,10 +307,10 @@ function bindBackToTopEventsOnce() {
             // 那么就假定是主页面在滚动，并同时命令所有可能的主滚动条。
             if (!internalScrollerFound) {
                 // 这个命令对 base.html 和 baselarge.html 有效
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({ top: 0, behavior: "auto" });
 
                 // 这个命令对 headless.html 的电脑端视图有效
-                document.body.scrollTo({ top: 0, behavior: "smooth" });
+                document.body.scrollTo({ top: 0, behavior: "auto" });
             }
         }
 
