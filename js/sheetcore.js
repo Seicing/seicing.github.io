@@ -70,16 +70,16 @@
             jsonUrl: "https://seicing.com/js/sheet/dnfskillicon.json",
             sheetUrl: "https://seicing.com/res/dnfskillicon.png",
             rootMatch: "dfclass/",
-            folders: ["skillicon"]
+            folders: ["skillicon", "characters"]
         },
-
-        {
-            name: "DNF_skillicon_new",
-            jsonUrl: "https://seicing.com/js/sheet/dnfskilliconnew.json",
-            sheetUrl: "https://seicing.com/res/dnfskilliconnew.png",
-            rootMatch: "dfclass/",
-            folders: ["characters"]
-        },
+        // === 第 1 组：DNF 装备与图标 ===
+        //   {
+        //       name: "DNF_skillicon_new",
+        //        jsonUrl: "https://seicing.com/js/sheet/dnfskilliconnew.json",
+        //      sheetUrl: "https://seicing.com/res/dnfskilliconnew.png",
+        //     rootMatch: "dfclass/",
+        //      folders: ["characters"]
+        //   },
 
         {
             name: "lolsprite",
