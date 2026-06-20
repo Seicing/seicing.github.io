@@ -32,24 +32,30 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b>
 <div style="position:relative;">
-    <span style="font-family:宋体">2026.6.18</span>
+    <span style="font-family:宋体">2026.6.19</span>
     <div style="position:absolute; z-index:2; top:10px">
         <img src="https://seicing.com/res/131414.png" alt="">
     </div>
 </div></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div id="lavipage" page="365"></div>
-<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260619194117.jpg" width="200px">
-<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260619194050.jpg" width="200px">
-<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260619194106.jpg" width="200px"> <br>
+                        <div class="entry"><div id="lavipage" page="366"></div>
+<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260620100504.jpg" width="200px">
+<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260620100513.jpg" width="200px"> <br>
 
-<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260619194153.jpg" width="200px">
-<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260619194204.jpg" width="200px"> <br>
+麻花辫的建模方式<br>
+将一个标准方块坍缩为一个点，然后挤出8个单位的长度，割开9个点(细分7)<br>
+正面扭曲化(num1)、顶面扭曲化(num7)<br>
+<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260620101510.jpg" width="300px">
+<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260620101741.jpg" width="300px"> <br>
+转换为曲线→数据→倒角0.2m<br>
+阵列→恒定偏移→合并→调整到正确的间隔(正常应该是0.16m)，这个阵列控制长度<br>
+加一个细化，然后再加一个阵列，3个阵列恒定偏移三分之一(0.53333m)<br>
+<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260620102605.jpg" width="400px"> <br>
 
-使用通用方形→2倍细化，删掉下半球，挤出体积(注意面的朝向)<br>
-手动挤出刘海和尾发后，手动细切，然后在这个基础上加死影和高光<br>
-目前新版本的建模会将所有内容包括色卡整合到一个贴图里，要预留色卡的部位<br>
-要删除建模高光的话，选中高光部分的边选择“有限融并”(网格→删除 或 点击x)，融并出来的结果通常需要自己再手动切一下，不过总体来说效果很好<br>
+曲线本身控制麻花辫的大型，倒角控制厚度，阵列1控制长度，阵列2的恒定偏移要为阵列1的三分之一<br>
+调好后，转化为mesh，然后绑定到曲线里就可以控制麻花辫的形状，如果想让麻花辫末段变细，可以给麻花辫加一个网格形变，然后缩小套在外面的网格的两头<br>
+调整曲线以适配到头发上去<br>
+<img src="https://data.seicing.com/seicingdepot/fatcatpool/essay/dev/QQ截图20260620103015.jpg" width="300px"> <br>
 </div>
                     </div>
                 </div>
