@@ -480,7 +480,419 @@
         <a id="rrr"></a><b><span>专属事件</span></b>
     </H1>
     <hr class="hrsty">
-    目前预计很长一段时间内都无法更新……<br>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>千利休</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>拥有2座茶室</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">年迈的茶道宗师究竟因何事触怒了丰臣秀吉，宫内宫外无人敢问，无人敢言。但这位天下人对昔日好友的怒火，已是人尽皆知。随后，一道命令传遍朝野：赐死千利休。宫廷内外，无不为之震骇。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">为宗师举办最后一次茶会。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">千利休必须在流放之地，饮尽人生中最后一盏茶。</td>
+        </tr>
+        <tr>
+            <td>任务：进入一次庆典。任务进行期间，所有定居点{1_reward}。<br>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -1
+            </td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>一揆</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_COLLECTION_ANY_MET] CollectionType=COLLECTION_PLAYER_CITIES,
+                RequirementSetId=SUBREQSET_11186A_NARRATIVE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">武装僧兵们已不再信任领主的统治，于是开始在城中自行巡逻。他们朴素的僧袍，与铁箍加固的长杖形成了鲜明反差——但至少在这里，百姓们终于有人庇护。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">解散这支叛乱的民兵。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">给予支持，从香火钱中分一杯羹。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">制造几桩丑闻，暗中拆台。</td>
+        </tr>
+        <tr>
+            <td>所有城市来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1<br>所有城市来自军械所的<img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2</td>
+            <td>所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
+            <td>所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>倾听民意</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_UNHAPPY_CITIES] Count=3,
+                OnlyFounded=True<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=10</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">数个村庄的百姓代表们来到领主面前，呈上一连串诉求：赋税太重，守卫们也总是稍有不满便拔刀相向。不过他们也表示，只要领主愿意在即将到来的祇园祭上大张旗鼓地表示支持，便能平息民怨。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">领主的巡游花车，将成为整场祭典中最华丽、也最耗费财力的一幕。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">地牢里可从来不缺关押牢骚鬼的位置。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">农民总会为各种事情抱怨几句。</td>
+        </tr>
+        <tr>
+            <td>触发庆典<br>[11187B_NARRATIVE_MODIFIER] MultiplierType=REWARD_TYPE_MAJOR_LATE</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力
+                +REWARD_TYPE_MEDIUM_EARLY<br>所有城市[11187C_NARRATIVE_MODIFIER2] Amount=1, DamageType=UNHAPPINESS,
+                Buildings=false</td>
+            <td>获得单位: 忍者 x1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>陌生的教义</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS_WITH_RELIGION] OnlyFounded=False,
+                ForeignReligionOnly=True, SettlementFounded=True, Amount=3<br>[REQUIREMENT_COLLECTION_ANY_MET]
+                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_11188A_NARRATIVE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">一群狂热信徒堵在{1_religion}寺庙门前，拦住每一个愿意驻足倾听的人。他们的面孔看似熟悉，可身上的服饰却充满异域风格；手中挥舞的典籍如此，口中宣扬的教义亦是如此。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">驱逐这群狂热信徒。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">以言辞反驳他们。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">让大地的神灵为自己说话。</td>
+        </tr>
+        <tr>
+            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>获得单位: 传教士 x1</td>
+            <td>特定地块额外产出：<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>刀剑遇上火枪</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>【否】 [REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_TECH_EX_GUNPOWDER,
+                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_SAMURAI,Hash,DyingUnitType,UNIT_ARQUEBUSIER,
+                GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_SAMURAI_2,Hash,DyingUnitType,UNIT_ARQUEBUSIER,
+                GOSSIP_UNIT_COMBAT_DEATH03=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_SAMURAI_3,Hash,DyingUnitType,UNIT_ARQUEBUSIER,
+                Amount=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">一名武士从战场上拾起一件陌生的兵器，手指缓缓摩挲着它的击发机构。硫磺与血腥的气味弥漫四周，他却浑然不觉，只是郑重地向那位曾持有此物、如今已倒下的士兵低头致意。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">不可小觑此敌。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">不如以彼之道，还施彼身。</td>
+        </tr>
+        <tr>
+            <td>[11189B_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_RANGE_DEFENSE</td>
+            <td>首都获得单位: 钩铳手 x1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>觊觎邻土</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_MAKE_DOW01,
+                GOSSIP_MAKE_DOW01=Hash,OtherPlayer,Other,Numeric,SettlementRatio,70</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">
+                战争从无真正的赢家，有的只是善于伺机而动之人。指挥官在心中一遍遍默念着这句话，而幕僚们也已陆续落座于本丸之中。还未开战，他们便迫不及待地争论起战后该如何瓜分利益。指挥官默默听着，随后缓缓将襖门拉上。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">可用于交易的资源！</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">可用于推动生产的资源！</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">区域霸权！</td>
+        </tr>
+        <tr>
+            <td>获得单位: 商人 x1</td>
+            <td>[11190C_NARRATIVE_MODIFIER] BuildingType=BUILDING_ARMORER, Amount=1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_LATE</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>平民武士</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMMANDERS_WITH_X_LEVELS] LevelCount=1,
+                OnlyCommendations=True, CommanderCount=2</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">一名武士刚从战场归来，跪伏于地，接受领主的嘉奖。他额头贴地，停留的时间比礼节所要求的更久，随后才缓缓起身。领主惊讶地发现，那名武士始终没有与自己目光对视。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">谁曾想到，平民也能成就如此伟业！</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">武士阶层何时开始接纳平民出身之人？</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">丰臣秀吉从未有过疑虑。</td>
+        </tr>
+        <tr>
+            <td>[11191B_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_STRENGTH</td>
+            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1</td>
+            <td>[11191D_NARRATIVE_MODIFIER] Amount=10</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>寻得静谧</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>【否】
+                [REQUIREMENT_PLAYER_IS_AT_PEACE_WITH_ALL_MAJORS]<br>拥有5座茶室<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
+                GossipTypes=GOSSIP_CONSTRUCT_BUILDING,
+                GOSSIP_CONSTRUCT_BUILDING=Hash,ConstructibleType,IMPROVEMENT_TEA_HOUSE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">远方战火正炽，一位年轻女子退入茶室寻求片刻宁静。她跪坐于榻榻米上，取出简朴的茶花——双手微微颤抖，将茶具一一摆开，准备点茶。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">朴素的美学，有助于平复心绪。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">美丽的风景，或许更能让人忘却烦忧。</td>
+        </tr>
+        <tr>
+            <td>所有城市来自文化值建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>所有城市来自金币建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>白鹭城</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01,
+                GOSSIP_CONSTRUCT_BUILDING01=Hash,ConstructibleType,WONDER_HIMEJI_CASTLE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">
+                为了让前来造访的贵族们见识姬路城独特布局的精妙之处，丰臣秀吉特意派出一名仆从，引领众人在这座看似高耸却暗藏玄机的城堡中穿行。原本只是战术演示，却渐渐令人不安——因为那一行人进去之后，迟迟没有再出现。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">这是令人忍俊不禁的奇趣。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">真是深谋远虑之举。</td>
+        </tr>
+        <tr>
+            <td>触发庆典</td>
+            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +3</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>忍者茶道</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_EX_SENGOKU_KINSEI, MinDepth=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">夜幕降临，一名忍者潜伏暗处，注视着守卫们在领主私人茶室外来回巡逻。随后，他悄无声息地钻过狭小的躙口，迅速扫视室内，寻找自己的目标。可迎接他的，却是一名手捧茶盘、满脸错愕的侍女。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">茶杯中已被下了毒。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">他是来品鉴新茶的。</td>
+        </tr>
+        <tr>
+            <td>军事属性点 +1</td>
+            <td>扩张属性点 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>穿越时代</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>拥有1座茶室<br>拥有1座<br>[REQUIREMENT_PLAYER_HAS_UNIQUE_QUARTER]
+                UniqueQuarterType=QUARTER_ZAIBATSU<br>拥有5座火车站</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">一名旅人登上返家的列车，靠窗坐下，指尖无意识地摩挲着在神社求来的护符。窗外景色渐渐由都市的灰白，过渡为乡野的苍翠，她不由得沉浸于思绪之中，回味起旅途中最难忘的种种片段。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">在茶室品茶。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">在财阀周边看人来人往。</td>
+        </tr>
+        <tr>
+            <td>所有城市来自UNIQUE建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
+                +1<br>所有城市来自UNIQUE_IMPROVEMENT建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
+            <td>所有城市来自UNIQUE_IMPROVEMENT建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                +1<br>所有城市来自UNIQUE建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>武士道</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_AQ_FOUNDATION, MinDepth=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">
+                武士道、荣誉——武士的准则，战士的信条。对日本的诗人与艺匠而言，这些词语承载着深远的意义。然而对于战国时代的武将与统治者来说，它们往往不过是一层修饰门面的外衣，用以掩盖夺取权力时的决绝，以及掌控权力时的狠厉。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">真正重要的是流传的传说。至于征服途中那些血雨腥风，最好都随时代一同被遗忘。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">万事求真，即便故事少了几分传奇色彩也无妨。</td>
+        </tr>
+        <tr>
+            <td>军事属性点 +1</td>
+            <td>扩张属性点 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>工业破坏</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_MO_ADMINISTRATION, MinDepth=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">
+                北条铁道的大名与运输一揆之间的争斗，再起新波澜。一名忍者在运输一揆的发电站安放炸药时当场被擒，并供认自己受雇于北条。可出乎所有人意料的是，运输一揆并未选择私下雇佣自己的忍者展开报复，而是决定将整起事件公之于众。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">此举反倒彰显了气度。一揆无需自降身段以破坏手段还击。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">此举未免太过软弱。北条下一次出手时，只会更加狠辣无情。</td>
+        </tr>
+        <tr>
+            <td>军事属性点 +1</td>
+            <td>扩张属性点 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>好医生与武士</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
+                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_SENGOKU</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">一位年迈武士领着黎刹医生巡视自己的领地。一路上，有宁静幽远的枯山水庭园，也喝声回荡的武艺道场。主人淡淡说道：所谓自律，并非与生俱来，而是经由长久磨炼，方能铸成。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">推动熊手。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">挥动木刀。</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_EARLY</td>
+            <td>[12017C_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_STRENGTH</td>
+        </tr>
+    </table>
+
+
+
 </div>
                         </div>
                     </div>

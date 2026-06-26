@@ -327,7 +327,920 @@
         <a id="rrr"></a><b><span>专属事件</span></b>
     </H1>
     <hr class="hrsty">
-    待补充
+
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>天下无双</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
+                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Leader,LEADER_GENGHIS_KHAN</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">在亚历山大的印象中，成吉思汗是一个令人厌憎、傲慢至极的人。他的骑兵纵横驰骋，仿佛这片土地生来便属于他们。不得不承认，那些马确实是纯血良驹，迅捷非凡——只可惜骑在上面的是一群蛮族。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">让他见识谁才是真正的王者。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">良驹择主而侍。</td>
+        </tr>
+        <tr>
+            <td>任务：从成吉思汗手中占领一座定居点。<br>[10106B_NARRATIVE_MODIFIER] UnitPromotionType=PROMOTION_ARMY_SHOCK_TACTICS,
+                UnitPromotionDisciplineType=DISCIPLINE_ARMY_ASSAULT, GrantFreeReplacement=TRUE</td>
+            <td>首都获得单位: 战车 x1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>盲眼吟诗人</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01,
+                GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01=Hash,ProgressionTreeNodeType,NODE_TECH_AQ_WRITING,
+                AfterInit=True</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">
+                宴席上美酒流淌，{1_CIVILIZATION_ADJ}的智者们热议文字书写的最新进展。一位学者提议，文字或许可以用来记录{2_CIVILIZATION_ADJ}英雄的事迹，乃至亚历山大本人的传奇。角落里，一位双目失明的行吟诗人低声吟唱，嘴角带着一抹微笑。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">日后出征不妨带上文士。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">文字只是商人的工具。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">委托抄录吟诗人的诗篇。</td>
+        </tr>
+        <tr>
+            <td>所有城市巨作的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY</td>
+            <td>[10107D_NARRATIVE_MODIFIER] Amount=1, GreatWork=GREATWORK_CODEX_ILIAD</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>振奋军心</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Other,Hash,IsKillingUnitPlotOwner,True,Hash,AtWar,True,
+                TurnWindow=10, DuplicateCount=5</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">这场战役已令人筋疲力尽，亚历山大的军队随时都有哗变之虞。战事绵延至今，营地中聚集了不少当地女子，然而战火无情，始终未得欢庆良机。或许一夜欢愉，能慰藉军士厌战之心。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">凡欲成婚者皆可成婚。开怀畅饮！</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">再多等待几时也无妨，继续进军。</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_LATE</td>
+            <td>[10108C_NARRATIVE_MODIFIER2] Amount=33<br>[10108C_NARRATIVE_MODIFIER]
+                AbilityType=ABILITY_NARRATIVE_AGGRESSION</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>至亲伙伴</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_RESOURCE_TYPE] Amount=4,
+                ResourceType=RESOURCE_HORSES<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH,
+                GOSSIP_UNIT_COMBAT_DEATH=Hash,OtherPlayer,Self,Hash,IsKillingUnitCavalry,True</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">骏马疾驰，铜器闪耀，伙友骑兵冲锋陷阵，在敌群中纵横穿梭。{1_CIVILIZATION_ADJ}战马血统超群，堪配骑乘的精锐勇士。拥有如此忠勇之师，实属将帅之福。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">马是人的至亲伙伴。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">只与信赖之人纵横飞驰。</td>
+        </tr>
+        <tr>
+            <td>NARRATIVE_TAG_ALEXANDER_BUCEPHALUS<br>[10109B_NARRATIVE_MODIFIER] Amount=5</td>
+            <td>[10109C_NARRATIVE_MODIFIER] Amount=10</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>神赐圣盾</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CONQUER_CITY01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_CONQUER_CITY03,
+                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other, GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Other,
+                GOSSIP_CONQUER_CITY03=Hash,OtherPlayer,Other, TurnWindow=10, Amount=2</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">传言纷纷，声称亚历山大刀枪不入，历经无数战阵皆能避开致命一击，即使受创也很快复原如初。其随身护盾上，蛇发女妖的眼眸熠熠生辉，栩栩如生。士卒翘首期盼下场血战，其中有人远观此盾，心生敬畏。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">如此天赐异宝，是真正英雄的标志。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">献祭祈求更多福泽。</td>
+        </tr>
+        <tr>
+            <td>所有城市来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +3</td>
+            <td>[10110C_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_RANGE_DEFENSE</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>赫拉斯落幕</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CONQUER_CITY01,GOSSIP_OCCUPY_CITY02,
+                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_GREECE,
+                GOSSIP_OCCUPY_CITY02=Hash,OtherPlayer,Other, Distance=0, TurnWindow=0, Amount=2<br>【否】
+                [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES] CivilizationType=CIVILIZATION_GREECE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">
+                最后一座古希腊定居点已然陷落。其哲人与国民今皆臣服于亚历山大；其子民湮没于{1_CIVILIZATION_ADJ}人海之中。万物终有消逝之时，然而世界似乎在为那些本可能存在的一切悄然叹息。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">赫拉斯将成为疆域的新核心。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">大理石可改作{1_CIVILIZATION_ADJ}之所需。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">将希腊人编入军队。</td>
+        </tr>
+        <tr>
+            <td>[10111B_NARRATIVE_MODIFIER]</td>
+            <td>所有城市购买建筑+10% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用</td>
+            <td>获得单位: UNIT_HOPLITE_2 x1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>以彼之矛攻彼之盾</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_PHALANX,Hash,DyingUnitType,UNIT_HOPLITE,
+                GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_PHALANX,Hash,DyingUnitType,UNIT_HOPLITE_2,
+                GOSSIP_UNIT_COMBAT_DEATH03=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_PHALANX,Hash,DyingUnitType,UNIT_HOPLITE_3,
+                Amount=1<br>【否】 [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES] CivilizationType=CIVILIZATION_GREECE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">亚历山大方阵手中的萨里沙长矛，在外人眼中或许笨重难使，然而即便赫赫有名的希腊重装步兵，也难以抵挡它的锋芒。那些长盾防御不住一排排长矛的持续压迫，纵是希腊人也心生恐惧。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">即使希腊人覆灭，失去的也不会太多。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">至少他们的诗歌还值得留存。</td>
+        </tr>
+        <tr>
+            <td>[10112B_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_STRENGTH</td>
+            <td>所有城市来自图书馆的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>论王道</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CREATE_GREAT_PERSON01,
+                GOSSIP_CREATE_GREAT_PERSON01=Hash,GreatPersonIndividualType,GREAT_PERSON_INDIVIDUAL_LOGIOS_ARISTOTLE
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">
+                国王与恩师并肩漫步于卫城的石径之上，就一分歧展开探讨。亚里士多德主张，人既当统治，亦当被统治，而非希腊人应当由更卓越的希腊君王来统治。亚历山大则在思索，志在统御天下之人，究竟该走哪条道路。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">世上有希腊人，亦有蛮族。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">生死一理，万人皆同。</td>
+        </tr>
+        <tr>
+            <td>特定地块额外产出：<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>奢靡之君</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_PLAYERS_MEET01,GOSSIP_PLAYERS_MEET02,
+                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES,
+                GOSSIP_PLAYERS_MEET02=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES_ALT, Amount=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">原来这位薛西斯，便是那个自称统御万千蛮族的奢靡颓废之主。他对衣着的关注远胜于军备，对王冠的执念远胜于对王国的经营。亚历山大原本期待遭遇一位势均力敌的对手。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">薛西斯即将见证{1_CIVILIZATION_ADJ}之威。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">华服锦衣不过是智识匮乏之人的遮羞布。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">此等君王难以令麾下死心塌地。</td>
+        </tr>
+        <tr>
+            <td>NARRATIVE_TAG_ALEXANDER_XERXES_CULTURE<br>首都[10114B_NARRATIVE_MODIFIER] UnitTag=UNIT_CLASS_INFANTRY,
+                Amount=1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+                +REWARD_TYPE_MINOR_EARLY<br>NARRATIVE_TAG_ALEXANDER_XERXES_MILITARY</td>
+            <td>NARRATIVE_TAG_ALEXANDER_XERXES_CULTURE<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力
+                +REWARD_TYPE_MINOR_EARLY<br>NARRATIVE_TAG_ALEXANDER_XERXES_MILITARY</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>衰颓命运</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_ALEXANDER_XERXES, Amount=1<br>【否】
+                [REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS] NarrativeTagType=NARRATIVE_TAG_ALEXANDER_XERXES,
+                Amount=2<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CONQUER_CITY01,GOSSIP_CONQUER_CITY02,
+                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES,Hash,IsCapital,True,
+                GOSSIP_CONQUER_CITY02=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES_ALT,Hash,IsCapital,True, Amount=1
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">大地随亚历山大麾下大军行进而震颤，士卒如潮水般涌入陷落都城。薛西斯的宏伟宫殿屹立城中央，静候命运裁决。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">劫掠珍宝，任其朽烂。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">焚尽薛西斯的恶臭之物。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">将此殿宇献予{1_CIVILIZATION_ADJ}诸神。</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_LATE<br><img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_LATE</td>
+            <td>[10115C_NARRATIVE_MODIFIER2] Amount=1, DamageType=PILLAGE<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
+                    width='15px'>幸福值 +REWARD_TYPE_MINOR_LATE</td>
+            <td>[10115D_NARRATIVE_MODIFIER] Amount=1, ConstructibleType=BUILDING_CITY_HALL,BUILDING_PALACE</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>男人的挚友</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Other,Hash,IsDyingUnitCommander,True,Hash,DomainType,DOMAIN_LAND
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">亚历山大的忠诚战驹布西发拉斯久伴其征战沙场。二者并肩作战，所向披靡。而今，神驹身负致命重伤卧地不起，医者悲恸摇首。纵是伟岸男子，也难抵这椎心之痛！</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">为伟大战友举办盛大葬礼。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">举行盛宴，纪念其精彩一生。</td>
+        </tr>
+        <tr>
+            <td>[10116B_NARRATIVE_MODIFIER2] AbilityType=ABILITY_NARRATIVE_STRENGTH<br><img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +REWARD_TYPE_MINOR_LATE</td>
+            <td>所有城市建造奇观+10% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用<br><img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_LATE</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>绳结传说</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_COLLECTION_ANY_MET] CollectionType=COLLECTION_PLAYER_CITIES,
+                RequirementSetId=SUBREQSET_10117A_NARRATIVE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">在亚历山大新城的疆域之内，一辆陈旧的牛车被一个无人能解的结牢牢缚住。传说谁能解开这个结、松开牛车的束缚，谁便能统治整片大陆。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">一剑斩去，如此便可解开。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">移去车轭，露出绳索端头。</td>
+        </tr>
+        <tr>
+            <td>所有城市来自窑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2</td>
+            <td>所有城市来自市政厅的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>裸身智者谜题问答</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_CONQUER_CITY01,
+                GOSSIP_CONQUER_CITY01=Hash,IsHolyCity,True,Hash,IsForeignHemisphere,True,Hash,OtherPlayer,Other</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">这片地区住着一群裸身智者，亚历山大迫切希望知晓他们的见解与{1_CIVILIZATION_ADJ}哲人有何不同。其中一位赤身苦行者提议进行谜题较量。看来斗智这件事，无论何处都颇受欢迎。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">何者在先——黑夜还是白昼？</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">何者更强——生命抑或死亡？</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">征途路远，无暇猜谜。</td>
+        </tr>
+        <tr>
+            <td>NARRATIVE_TAG_ALEXANDER_RIDDLE</td>
+            <td>NARRATIVE_TAG_ALEXANDER_RIDDLE</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +REWARD_TYPE_MINOR</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>裸身智者谜题问答</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=1, MinimumTurn=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">“白昼自然在先，确切而言早于黑夜一宿，”第一位裸身智者答道。“此言差矣，”另一位声称，“黑夜在先，确切而言早于白昼一日。”亚历山大摇摇头，又问一题。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">人如何能够封神？</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">一段圆满人生有多长？</td>
+        </tr>
+        <tr>
+            <td>NARRATIVE_TAG_ALEXANDER_RIDDLE_A</td>
+            <td>NARRATIVE_TAG_ALEXANDER_RIDDLE_B</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>裸身智者谜题问答</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=1, MinimumTurn=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">苦修者轻声言道：“亡者无数，却不可见。生命更为强大，因它承载了所有的苦难。”另一位沉吟道，“生命如同太阳——盛时灿烂，衰时黯淡，终将消逝。”历山大满意地点了点头，又问出了下一个问题。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">何种动物最有智慧？</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">何种野兽最为残忍？</td>
+        </tr>
+        <tr>
+            <td>NARRATIVE_TAG_ALEXANDER_RIDDLE_C</td>
+            <td>NARRATIVE_TAG_ALEXANDER_RIDDLE_D</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>裸身智者谜题问答</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=1, MinimumTurn=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">亚历山大的这个问题引发了热烈辩论，因为谁也无法真正衡量人或兽的尺度。裸身智者们兴致勃勃地望着他，迫不及待要发出反问。“王者亚历山大，请告诉我们，人要如何行事，方能最得人心？”</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">寻求权力但不滋生畏惧。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">以利剑行正义之举。</td>
+        </tr>
+        <tr>
+            <td>文化属性点 +1</td>
+            <td>军事属性点 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>人类大同</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_CONQUER_CITY01,
+                GOSSIP_CONQUER_CITY01=Hash,IsPlayerAlive,False,Hash,IsForeignHemisphere,True,Hash,OtherPlayer,Other</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">亚历山大的疆域包含了许多曾孕育文明的城市。那里的民众保留着各自的习俗，而这些习俗时常在较为保守的公民之间引发激烈争论。有人奉君王为神明，也有人主张众生平等。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">{1_CIVILIZATION_ADJ}文化将一统天下。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">君王远在凡人之上。</td>
+        </tr>
+        <tr>
+            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>[10122C_NARRATIVE_MODIFIER] Amount=2</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>自治恩赐</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_BECOME_SUZERAIN01,
+                DuplicateCount=3<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_MO_MAIN_HEGEMONY, MinDepth=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">有些君王以强制思想统一进行统治，但亚历山大认为，自治是对纪律的奖赏。高贵的心灵无需套上强权的枷锁。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">自由公民能够强国。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">实现霸权未必需要诉诸武力。</td>
+        </tr>
+        <tr>
+            <td>建造奇观+15% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +3</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>难题与答案</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_TECH_MO_FLIGHT, MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01,
+                GOSSIP_CONSTRUCT_BUILDING01=Hash,ConstructibleType,BUILDING_CITY_PARK,Hash,IsCapital,True</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">两个朋友在公园里下棋，然而棋局本身反而不能吸引他们的注意。两人为一个古老的谜题争得面红耳赤——人的极限究竟在哪里？终于，一人起身大声讲出答案。另一人则轻声道：“将军。”</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">行凡人所不能之事。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">高尚之生以高贵之死为终结。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">人为最狡黠之兽。</td>
+        </tr>
+        <tr>
+            <td>获得单位: 双翼机 x2</td>
+            <td>+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp' width='15px'>传统槽位</td>
+            <td>[10124D_NARRATIVE_MODIFIER] Amount=1, SystemType=SYSTEM_TECH, BoostPercentage=100,
+                FreeProgressionType=FREE_PROGRESSION_BOOST_CHEAPEST_UNLOCKED</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>身为英雄</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_AQ_MAIN_DISCIPLINE,
+                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_AQ_MAIN_MYSTICISM, MinDepth=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">
+                亚历山大聆听着行吟诗人颂诵故事。深受众神眷顾，伟大的阿喀琉斯，那位在特洛伊战场上最令人畏惧的战士，他的威力无敌，他的怒火冲天。然而他，也曾为帕特罗克洛斯而歌而悲；甚至连他，也做过长生不老的美梦。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">他因英勇而成为英雄。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">众神眷顾献礼之人。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">昔日英雄已成今日传说。</td>
+        </tr>
+        <tr>
+            <td>任务：拥有一位获得3次晋升的指挥官。<br>所有城市来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力
+                +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td>任务：拥有3座祭坛。<br>所有城市来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>树立威名</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01, GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,
+                DuplicateCount=5</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">战场之上，亚历山大冲锋在前，率先将恐惧种入敌人心头。敌军一个接一个倒下，少数幸存者四散奔逃，传扬着伟大君王的名号以及压倒威势。恐惧如波纹般在大地上荡开。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">夺取其土地。这是神的意志。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">金币可以暂时平息怒火。</td>
+        </tr>
+        <tr>
+            <td>任务：占领一座非你建立的定居点。<br>军事属性点 +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>缪斯庆典</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>已研发市政戏剧诗歌</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">乐师、伶人与行吟诗人汇聚{1_capital}，争夺授予最杰出者的殊荣。全城观众如云，倾倒在亚历山大本人为主角的诸多传说与歌谣中。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">设立专职侍奉缪斯。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">与伶人一同谢幕。</td>
+        </tr>
+        <tr>
+            <td>任务：在文化值建筑上放置2名专家。<br>NARRATIVE_TAG_LEADER_CHAIN_B<br>文化属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>统御天下之术</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_IS_AGE_COUNT]
+                AgeCount=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_EX_MAIN_PIETY, MinDepth=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">世间开始传言，亚历山大受众神庇佑。敌军长矛擦身而过，苍穹本身亦使箭矢避其肌肤。众人为他所唱的歌谣，连缪斯女神们听了也为之欢喜。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">征服是统治世界的唯一途径。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">诗词与歌赋将令世界俯首归依。</td>
+        </tr>
+        <tr>
+            <td>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>抵达汪洋之滨</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_PLAYERS_MEET01,
+                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,IsForeignHemisphere,True</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">新的土地与新的君王激励亚历山大继续进取。他王国的疆界，即当是世界的疆界。世之英雄，理应如此。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">荣耀在望。前进！</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">战争诚然好，财帛也不可少。</td>
+        </tr>
+        <tr>
+            <td>任务：占领2座遥远土地定居点。<br>军事属性点 +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>劲敌勇将</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_WARS] ForeignHemisphere=True,
+                Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_UNIT_TYPE] UnitType=UNIT_KNIGHT, Amount=3,
+                CountUpgrades=True<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">近日，亚历山大听闻麾下谈及敌方一位指挥官。此人来自遥远大陆，用兵之法前所未见。与他对阵，想必颇有挑战。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 84%;" colspan="1">右翼冲锋可动摇其军心。</td>
+            <td rowspan="2" colspan="2" style="width: 8%;"> </td>
+        </tr>
+        <tr>
+            <td colspan="1">任务：在遥远土地上击杀1名军队指挥官。<br>[LEADER_CHAIN_1285B_NARRATIVE_MODIFIER]
+                AbilityType=ABILITY_NARRATIVE_AGGRESSION<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>以文化服人</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>[REQUIREMENT_COLLECTION_ANY_MET]
+                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_LEADER_CHAIN_1286A_NARRATIVE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">亚历山大的新城闪耀着希望之光，然而部分当地居民以疑虑之心迎接新主。城市设施能展现其统治所带来的福利，但更宏伟的展示，将彻底消弭一切疑虑。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">建造世界尚未见证之物。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">金币同样可以收买人心。</td>
+        </tr>
+        <tr>
+            <td>任务：在遥远土地上建造一座奇观。<br>NARRATIVE_TAG_LEADER_CHAIN_B<br>文化属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_LATE</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>眼见为实</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_EX_MAIN_SOVEREIGNTY,
+                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">
+                邻邦使节前来向亚历山大及{1_CIVILIZATION_ADJ}民众献礼。虽早闻亚历山大城邦之宏伟，然而亲眼目睹仍令他瞠目结舌、无言以对。城邦为凡人而建，而此城却光辉灿烂，好似为神明所建。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 84%;" colspan="1">提及为贤才开放的诸多职位。</td>
+            <td rowspan="2" colspan="2" style="width: 8%;"> </td>
+        </tr>
+        <tr>
+            <td colspan="1">任务：在遥远土地上拥有10名专家。<br>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>寰宇之主</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A,
+                Amount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_UNIT_TYPE] UnitType=UNIT_LANDSHIP, Amount=3,
+                CountUpgrades=True</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">每日清晨亚历山大醒来，仍觉更多世界在他掌握之外。地平线似乎在以他尚未征服的土地百般嘲弄。他对征服的渴求终将得到满足。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 84%;" colspan="1">向世界昭示真正的君王。</td>
+            <td rowspan="2" colspan="2" style="width: 8%;"> </td>
+        </tr>
+        <tr>
+            <td colspan="1">任务：占领一座首都。<br>军事属性点 +1<br>触发庆典</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>寰宇之主</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_CONQUER_CITY01,
+                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other,Hash,IsCapital,True</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">{1_child_reward}<br><br>世界边缘近在眼前。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">关闭。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">关闭。</td>
+        </tr>
+        <tr>
+            <td>军事属性点 +1</td>
+            <td>军事属性点 +1<br>触发庆典</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>史诗英雄</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=3<br>[REQUIREMENT_COLLECTION_ANY_MET]
+                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_LEADER_CHAIN_1289A_NARRATIVE</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">一位{1_CIVILIZATION_ADJ}作曲家以其新作，一部讲述最接近神的凡人，伟大英雄亚历山大传奇事迹的歌剧——俘获了全国民心。市民与游客皆受启发，希望深入了解其丰功伟绩。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 84%;" colspan="1">推广{1_CIVILIZATION_ADJ}考古学家的工作成果。</td>
+            <td rowspan="2" colspan="2" style="width: 8%;"> </td>
+        </tr>
+        <tr>
+            <td colspan="1">任务：展示6件文物。<br>触发庆典<br>文化属性点 +1</td>
+        </tr>
+    </table>
+
+    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>史诗英雄</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_GREAT_WORKS] ObjectType=GREATWORKOBJECT_ARTIFACT,
+                Count=6, IncludeArchived=False</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">{1_child_reward}<br><br>历史与传说现已合一。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">关闭。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">关闭。</td>
+        </tr>
+        <tr>
+            <td>文化属性点 +1</td>
+            <td>触发庆典<br>文化属性点 +1</td>
+        </tr>
+    </table>
+
+
 
 </div>
                         </div>
