@@ -442,8 +442,8 @@
     </ul>
     <table id="empire">
         <tr>
-            <td> <a href="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/pic/战国日本.webp" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/pic/战国日本.webp"></a>
+            <td> <a href="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/pic/战国日本.jpg" target="_blank">
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/pic/战国日本.jpg"></a>
             </td>
             <td> <a href="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/pic/战国日本.jpg" target="_blank">
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/pic/战国日本.jpg"></a>
@@ -489,7 +489,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>拥有2座茶室</td>
+            <td colspan="3">拥有2座茶室</td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -502,7 +502,9 @@
             <td style="width: 42%;">千利休必须在流放之地，饮尽人生中最后一盏茶。</td>
         </tr>
         <tr>
-            <td>任务：进入一次庆典。任务进行期间，所有定居点{1_reward}。<br>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -1
+            <td>
+                任务：进入一次庆典<br>
+                任务进行期间，所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -1<br>
             </td>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY</td>
         </tr>
@@ -515,8 +517,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_COLLECTION_ANY_MET] CollectionType=COLLECTION_PLAYER_CITIES,
-                RequirementSetId=SUBREQSET_11186A_NARRATIVE</td>
+            <td colspan="5">
+                拥有1座仍由创建者拥有的信奉宗教的城镇，城镇内寺庙与1座军事建筑相邻<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -531,10 +534,16 @@
             <td style="width: 25.3%;">制造几桩丑闻，暗中拆台。</td>
         </tr>
         <tr>
-            <td>所有城市来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1<br>所有城市来自军械所的<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2</td>
-            <td>所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
-            <td>所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1</td>
+            <td>
+                所有城市来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1<br>
+                所有城市来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2
+            </td>
+            <td>
+                所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1
+            </td>
+            <td>
+                所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1
+            </td>
         </tr>
     </table>
 
@@ -545,7 +554,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_UNHAPPY_CITIES] Count=3,
+            <td colspan="5">[REQUIREMENT_PLAYER_HAS_UNHAPPY_CITIES] Count=3,
                 OnlyFounded=True<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=10</td>
         </tr>
         <tr>
@@ -576,7 +585,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS_WITH_RELIGION] OnlyFounded=False,
+            <td colspan="5">[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS_WITH_RELIGION] OnlyFounded=False,
                 ForeignReligionOnly=True, SettlementFounded=True, Amount=3<br>[REQUIREMENT_COLLECTION_ANY_MET]
                 CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_11188A_NARRATIVE</td>
         </tr>
@@ -607,7 +616,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>【否】 [REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+            <td colspan="3">【否】 [REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
                 ProgressionTreeNodeType=NODE_TECH_EX_GUNPOWDER,
                 MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
                 GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
@@ -639,7 +648,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_MAKE_DOW01,
+            <td colspan="5">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_MAKE_DOW01,
                 GOSSIP_MAKE_DOW01=Hash,OtherPlayer,Other,Numeric,SettlementRatio,70</td>
         </tr>
         <tr>
@@ -669,7 +678,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMMANDERS_WITH_X_LEVELS] LevelCount=1,
+            <td colspan="5">[REQUIREMENT_PLAYER_HAS_COMMANDERS_WITH_X_LEVELS] LevelCount=1,
                 OnlyCommendations=True, CommanderCount=2</td>
         </tr>
         <tr>
@@ -699,7 +708,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>【否】
+            <td colspan="3">【否】
                 [REQUIREMENT_PLAYER_IS_AT_PEACE_WITH_ALL_MAJORS]<br>拥有5座茶室<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
                 GossipTypes=GOSSIP_CONSTRUCT_BUILDING,
                 GOSSIP_CONSTRUCT_BUILDING=Hash,ConstructibleType,IMPROVEMENT_TEA_HOUSE</td>
@@ -728,7 +737,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+            <td colspan="3">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
                 GossipTypes=GOSSIP_CONSTRUCT_BUILDING01,
                 GOSSIP_CONSTRUCT_BUILDING01=Hash,ConstructibleType,WONDER_HIMEJI_CASTLE</td>
         </tr>
@@ -757,7 +766,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+            <td colspan="3">[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
                 ProgressionTreeNodeType=NODE_CIVIC_EX_SENGOKU_KINSEI, MinDepth=1</td>
         </tr>
         <tr>
@@ -872,7 +881,7 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
+            <td colspan="3">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
                 GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_SENGOKU</td>
         </tr>
         <tr>
