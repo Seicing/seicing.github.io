@@ -336,8 +336,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
-                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Leader,LEADER_GENGHIS_KHAN</td>
+            <td colspan="3">
+                古典时代领袖事件<br>
+                遇到成吉思汗<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -351,10 +353,11 @@
             <td style="width: 42%;">良驹择主而侍。</td>
         </tr>
         <tr>
-            <td>任务：从成吉思汗手中占领一座定居点。<br>最高等级的指挥官获得“冲击战术”晋升（或获得足够经验值升一级）<br>[10106B_NARRATIVE_MODIFIER]
-                UnitPromotionType=PROMOTION_ARMY_SHOCK_TACTICS, UnitPromotionDisciplineType=DISCIPLINE_ARMY_ASSAULT,
-                GrantFreeReplacement=TRUE</td>
-            <td>首都获得单位: 战车 x1。</td>
+            <td>
+                任务：从成吉思汗手中占领一座定居点
+                <br>最高等级的指挥官获得“冲击战术”晋升（或获得足够经验值升一级）<br>
+            </td>
+            <td>首都获得1个战车</td>
         </tr>
     </table>
 
@@ -365,10 +368,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01,
-                GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01=Hash,ProgressionTreeNodeType,NODE_TECH_AQ_WRITING,
-                AfterInit=True
+            <td colspan="5">
+                古典时代领袖事件<br>
+                完成市政文字<br>
             </td>
         </tr>
         <tr>
@@ -386,9 +388,9 @@
             <td style="width: 25.3%;">委托抄录吟诗人的诗篇。</td>
         </tr>
         <tr>
-            <td>巨作的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1。</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY。</td>
-            <td>[10107D_NARRATIVE_MODIFIER] Amount=1, GreatWork=GREATWORK_CODEX_ILIAD。</td>
+            <td>巨作的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY</td>
+            <td>获得1件<img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp" width="15px">抄本<br></td>
         </tr>
     </table>
 
@@ -400,10 +402,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Other,Hash,IsKillingUnitPlotOwner,True,Hash,AtWar,True,
-                TurnWindow=10, DuplicateCount=5</td>
+            <td colspan="3">
+                古典时代领袖事件<br>
+                最近 10 回合内发生至少 5 次战斗击杀，战斗双方处于正式战争状态，击杀发生在双方领土上
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -416,9 +418,8 @@
             <td style="width: 42%;">再多等待几时也无妨，继续进军。</td>
         </tr>
         <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_LATE。</td>
-            <td>骑兵单位[10108C_NARRATIVE_MODIFIER]
-                AbilityType=ABILITY_NARRATIVE_AGGRESSION，但所有骑兵单位承受33点伤害。<br>[10108C_NARRATIVE_MODIFIER2] Amount=33</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_LATE</td>
+            <td>骑兵单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)，但所有骑兵单位承受33点伤害</td>
         </tr>
     </table>
 
@@ -430,10 +431,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_RESOURCE_TYPE] Amount=4,
-                ResourceType=RESOURCE_HORSES<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH,
-                GOSSIP_UNIT_COMBAT_DEATH=Hash,OtherPlayer,Self,Hash,IsKillingUnitCavalry,True</td>
+            <td colspan="3">
+                古典时代领袖事件<br>
+                拥有至少 4 个马匹资源<br>
+                自己的骑兵完成了一次击杀<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -446,8 +448,11 @@
             <td style="width: 42%;">只与信赖之人纵横飞驰。</td>
         </tr>
         <tr>
-            <td>骑兵单位+5治疗。<br>[10109B_NARRATIVE_MODIFIER] Amount=5<br>NARRATIVE_TAG_ALEXANDER_BUCEPHALUS</td>
-            <td>所有现有指挥官所有指挥官获得 10 点经验值。</td>
+            <td>
+                骑兵单位+5治疗<br>
+                NARRATIVE_TAG_ALEXANDER_BUCEPHALUS
+            </td>
+            <td>所有现有指挥官获得 10 点经验值</td>
         </tr>
     </table>
 
@@ -459,10 +464,13 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONQUER_CITY01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_CONQUER_CITY03,
-                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other, GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Other,
-                GOSSIP_CONQUER_CITY03=Hash,OtherPlayer,Other, TurnWindow=10, Amount=2</td>
+            <td colspan="3">
+                古典时代领袖事件<br>
+                10回合内以下3个条件达成2个<br>
+                征服敌人的城市<br>
+                击杀敌人单位<br>
+                征服敌人的首都<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -476,8 +484,8 @@
             <td style="width: 42%;">献祭祈求更多福泽。</td>
         </tr>
         <tr>
-            <td>来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +3。</td>
-            <td>骑兵单位[10110C_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_RANGE_DEFENSE。</td>
+            <td>来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +3</td>
+            <td>骑兵单位激活掩护能力(对抗远程单位+2战斗力)</td>
         </tr>
     </table>
 
@@ -488,13 +496,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONQUER_CITY01,GOSSIP_OCCUPY_CITY02,
-                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_GREECE,
-                GOSSIP_OCCUPY_CITY02=Hash,OtherPlayer,Other, Distance=0, TurnWindow=0, Amount=2<br>【否】
-                [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES] CivilizationType=CIVILIZATION_GREECE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>【否】 [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES]
-                CivilizationType=CIVILIZATION_GREECE</td>
+            <td colspan="5">
+                古典时代领袖事件<br>
+                征服或占领2座希腊文明的定居点<br>
+                玩家不是希腊文明<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -511,9 +517,9 @@
             <td style="width: 25.3%;">将希腊人编入军队。</td>
         </tr>
         <tr>
-            <td>成为你的首都，动乱状态已消除。如果条件允许，变为普通城市。<br>[10111B_NARRATIVE_MODIFIER]</td>
-            <td>购买建筑+10% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用。</td>
-            <td>+1第2阶重装步兵<br>获得单位: UNIT_HOPLITE_2 x1</td>
+            <td>成为你的首都，动乱状态已消除。如果条件允许，变为普通城市</td>
+            <td>购买建筑+10% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用</td>
+            <td>获得1个第2阶重装步兵</td>
         </tr>
     </table>
 
@@ -525,12 +531,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_PHALANX,Hash,DyingUnitType,UNIT_HOPLITE,
-                GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_PHALANX,Hash,DyingUnitType,UNIT_HOPLITE_2,
-                GOSSIP_UNIT_COMBAT_DEATH03=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_PHALANX,Hash,DyingUnitType,UNIT_HOPLITE_3,
-                Amount=1<br>【否】 [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES] CivilizationType=CIVILIZATION_GREECE</td>
+            <td colspan="3">
+                古典时代领袖事件<br>
+                玩家不是希腊文明<br>
+                使用方阵击杀希腊独特部队重装步兵<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -543,8 +548,8 @@
             <td style="width: 42%;">至少他们的诗歌还值得留存。</td>
         </tr>
         <tr>
-            <td>步兵单位[10112B_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_STRENGTH。</td>
-            <td>来自图书馆的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2。</td>
+            <td>步兵单位激活坚决能力(+2战斗力)</td>
+            <td>来自图书馆的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
         </tr>
     </table>
 
@@ -556,9 +561,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CREATE_GREAT_PERSON01,
-                GOSSIP_CREATE_GREAT_PERSON01=Hash,GreatPersonIndividualType,GREAT_PERSON_INDIVIDUAL_LOGIOS_ARISTOTLE
+            <td colspan="3">
+                古典时代领袖事件<br>
+                获得亚里士多德
             </td>
         </tr>
         <tr>
@@ -574,8 +579,8 @@
             <td style="width: 42%;">生死一理，万人皆同。</td>
         </tr>
         <tr>
-            <td>卫城特定地块额外产出：<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1。</td>
-            <td>本时代中占领的定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1。</td>
+            <td>卫城<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>本时代中占领的定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
         </tr>
     </table>
 
@@ -586,14 +591,16 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_PLAYERS_MEET01,GOSSIP_PLAYERS_MEET02,
-                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES,
-                GOSSIP_PLAYERS_MEET02=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES_ALT, Amount=1</td>
+            <td colspan="5">
+                古典时代领袖事件<br>
+                遇到薛西斯<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="5">原来这位薛西斯，便是那个自称统御万千蛮族的奢靡颓废之主。他对衣着的关注远胜于军备，对王冠的执念远胜于对王国的经营。亚历山大原本期待遭遇一位势均力敌的对手。</td>
+            <td colspan="5">
+                原来这位薛西斯，便是那个自称统御万千蛮族的奢靡颓废之主。他对衣着的关注远胜于军备，对王冠的执念远胜于对王国的经营。亚历山大原本期待遭遇一位势均力敌的对手。
+            </td>
         </tr>
         <tr>
             <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
@@ -604,12 +611,17 @@
             <td style="width: 25.3%;">此等君王难以令麾下死心塌地。</td>
         </tr>
         <tr>
-            <td>首都[10114B_NARRATIVE_MODIFIER] UnitTag=UNIT_CLASS_INFANTRY,
-                Amount=1。<br>NARRATIVE_TAG_ALEXANDER_XERXES_CULTURE</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
-                +REWARD_TYPE_MINOR_EARLY。<br>NARRATIVE_TAG_ALEXANDER_XERXES_MILITARY</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力
-                +REWARD_TYPE_MINOR_EARLY。<br>NARRATIVE_TAG_ALEXANDER_XERXES_CULTURE<br>NARRATIVE_TAG_ALEXANDER_XERXES_MILITARY
+            <td>
+                首都获得1个步兵<br>
+                NARRATIVE_TAG_ALEXANDER_XERXES_CULTURE
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +REWARD_TYPE_MINOR_EARLY<br>
+                NARRATIVE_TAG_ALEXANDER_XERXES_MILITARY
+            </td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_EARLY<br>
+                NARRATIVE_TAG_ALEXANDER_XERXES_CULTURE<br>
+                NARRATIVE_TAG_ALEXANDER_XERXES_MILITARY
             </td>
         </tr>
     </table>
@@ -621,18 +633,16 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_ALEXANDER_XERXES, Amount=1<br>【否】
-                [REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS] NarrativeTagType=NARRATIVE_TAG_ALEXANDER_XERXES,
-                Amount=2<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONQUER_CITY01,GOSSIP_CONQUER_CITY02,
-                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES,Hash,IsCapital,True,
-                GOSSIP_CONQUER_CITY02=Hash,OtherPlayer,Other,Hash,Leader,LEADER_XERXES_ALT,Hash,IsCapital,True, Amount=1
+            <td colspan="5">
+                仅存在1个NARRATIVE_TAG_ALEXANDER_XERXES标签，而不是2个<br>
+                征服薛西斯玩家的首都<br>
             </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="5">大地随亚历山大麾下大军行进而震颤，士卒如潮水般涌入陷落都城。薛西斯的宏伟宫殿屹立城中央，静候命运裁决。</td>
+            <td colspan="5">
+                大地随亚历山大麾下大军行进而震颤，士卒如潮水般涌入陷落都城。薛西斯的宏伟宫殿屹立城中央，静候命运裁决。
+            </td>
         </tr>
         <tr>
             <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
@@ -644,11 +654,12 @@
         </tr>
         <tr>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_LATE，但<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -REWARD_TYPE_MINOR_LATE。</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +REWARD_TYPE_MINOR_LATE，但中一处随机建筑物遭劫掠。<br>[10115C_NARRATIVE_MODIFIER2] Amount=1, DamageType=PILLAGE</td>
-            <td>增加一个巨作槽位。<br>[10115D_NARRATIVE_MODIFIER] Amount=1, ConstructibleType=BUILDING_CITY_HALL,BUILDING_PALACE
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -REWARD_TYPE_MINOR_LATE</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                +REWARD_TYPE_MINOR_LATE，但中一处随机建筑物遭劫掠
             </td>
+            <td>增加一个巨作槽位</td>
         </tr>
     </table>
 
@@ -660,11 +671,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Other,Hash,IsDyingUnitCommander,True,Hash,DomainType,DOMAIN_LAND<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_ALEXANDER_BUCEPHALUS, Amount=1</td>
+            <td colspan="3">
+                探索时代领袖事件<br>
+                陆地指挥官单位死亡<br>
+                拥有NARRATIVE_TAG_ALEXANDER_BUCEPHALUS标签<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -677,11 +688,15 @@
             <td style="width: 42%;">举行盛宴，纪念其精彩一生。</td>
         </tr>
         <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
-                +REWARD_TYPE_MINOR_LATE、所有单位[10116B_NARRATIVE_MODIFIER2] AbilityType=ABILITY_NARRATIVE_STRENGTH。</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +REWARD_TYPE_MINOR_LATE，定居点+10%[icon:GROWTH_RATE]发展率。<br>建造奇观+10% <img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +REWARD_TYPE_MINOR_LATE<br>
+                所有单位激活坚决能力(+2战斗力)
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_LATE<br>
+                定居点+10%发展率<br>
+                建造奇观+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用
+            </td>
         </tr>
     </table>
 
@@ -693,8 +708,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_COLLECTION_ANY_MET] CollectionType=COLLECTION_PLAYER_CITIES,
-                RequirementSetId=SUBREQSET_10117A_NARRATIVE</td>
+            <td colspan="3">
+                探索时代领袖事件<br>
+                拥有一座征服来的城市，城市市政厅与河流至少相邻2格<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -707,8 +724,8 @@
             <td style="width: 42%;">移去车轭，露出绳索端头。</td>
         </tr>
         <tr>
-            <td>来自窑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2。</td>
-            <td>来自市政厅的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1。</td>
+            <td>来自窑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2</td>
+            <td>来自市政厅的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
         </tr>
     </table>
 
@@ -719,8 +736,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_CONQUER_CITY01,
-                GOSSIP_CONQUER_CITY01=Hash,IsHolyCity,True,Hash,IsForeignHemisphere,True,Hash,OtherPlayer,Other</td>
+            <td colspan="5">
+                探索时代领袖事件<br>
+                征服一座位于遥远大陆的圣城<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -738,7 +757,7 @@
         <tr>
             <td>故事仍在继续。<br>NARRATIVE_TAG_ALEXANDER_RIDDLE</td>
             <td>故事仍在继续。<br>NARRATIVE_TAG_ALEXANDER_RIDDLE</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +REWARD_TYPE_MINOR。</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +REWARD_TYPE_MINOR</td>
         </tr>
     </table>
 
@@ -750,7 +769,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=1, MinimumTurn=1</td>
+            <td colspan="3">
+                探索时代领袖事件<br>
+                “裸身智者谜题问答”事件选择选项“何者在先——黑夜还是白昼？”一回合后<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -776,11 +798,14 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=1, MinimumTurn=1</td>
+            <td colspan="3">
+                探索时代领袖事件<br>
+                “裸身智者谜题问答”事件选择选项“何者更强——生命抑或死亡？”一回合后<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">苦修者轻声言道：“亡者无数，却不可见。生命更为强大，因它承载了所有的苦难。”另一位沉吟道，“生命如同太阳——盛时灿烂，衰时黯淡，终将消逝。”历山大满意地点了点头，又问出了下一个问题。
+            <td colspan="3">苦修者轻声言道：“亡者无数，却不可见。生命更为强大，因它承载了所有的苦难。”另一位沉吟道，“生命如同太阳——盛时灿烂，衰时黯淡，终将消逝。”亚历山大满意地点了点头，又问出了下一个问题。
             </td>
         </tr>
         <tr>
@@ -803,7 +828,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=1, MinimumTurn=1</td>
+            <td colspan="3">
+                探索时代领袖事件<br>
+                “裸身智者谜题问答”事件选择选项“人如何能够封神？”一回合后<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -816,8 +844,8 @@
             <td style="width: 42%;">以利剑行正义之举。</td>
         </tr>
         <tr>
-            <td>文化属性点 +1。</td>
-            <td>军事属性点 +1。</td>
+            <td>文化属性点 +1</td>
+            <td>军事属性点 +1</td>
         </tr>
     </table>
 
@@ -829,8 +857,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_CONQUER_CITY01,
-                GOSSIP_CONQUER_CITY01=Hash,IsPlayerAlive,False,Hash,IsForeignHemisphere,True,Hash,OtherPlayer,Other</td>
+            <td colspan="3">
+                探索时代领袖事件<br>
+                消灭一个位于遥远大陆的文明<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -843,8 +873,8 @@
             <td style="width: 42%;">君王远在凡人之上。</td>
         </tr>
         <tr>
-            <td>专家+1[icon:YIELD_CULTURE]文化值。<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
-            <td>最高等级的指挥官+2晋升。<br>[10122C_NARRATIVE_MODIFIER] Amount=2</td>
+            <td>专家<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>最高等级的指挥官+2晋升</td>
         </tr>
     </table>
 
@@ -856,10 +886,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_BECOME_SUZERAIN01,
-                DuplicateCount=3<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_MAIN_HEGEMONY, MinDepth=1</td>
+            <td colspan="3">
+                近世时代领袖事件<br>
+                成为 3 个独立势力的宗主国<br>
+                已研发市政霸权<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -872,8 +903,11 @@
             <td style="width: 42%;">实现霸权未必需要诉诸武力。</td>
         </tr>
         <tr>
-            <td>建造奇观+15% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。</td>
-            <td>每拥有一个下属城邦，便+3[icon:YIELD_CULTURE]文化值。<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +3
+            <td>
+                建造奇观+15% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用
+            </td>
+            <td>
+                每拥有一个下属城邦，便+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
             </td>
         </tr>
     </table>
@@ -885,12 +919,12 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_TECH_MO_FLIGHT, MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01,
-                GOSSIP_CONSTRUCT_BUILDING01=Hash,ConstructibleType,BUILDING_CITY_PARK,Hash,IsCapital,True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_ALEXANDER_RIDDLE, Amount=1</td>
+            <td colspan="5">
+                近世时代领袖事件<br>
+                完成科技飞行<br>
+                在首都建造1座城市公园<br>
+                拥有NARRATIVE_TAG_ALEXANDER_RIDDLE标签 <br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -905,10 +939,9 @@
             <td style="width: 25.3%;">人为最狡黠之兽。</td>
         </tr>
         <tr>
-            <td>获得单位: 双翼机 x2。</td>
-            <td>+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp' width='15px'>传统槽位。</td>
-            <td>获得一项可最快掌握的科技。<br>[10124D_NARRATIVE_MODIFIER] Amount=1, SystemType=SYSTEM_TECH, BoostPercentage=100,
-                FreeProgressionType=FREE_PROGRESSION_BOOST_CHEAPEST_UNLOCKED</td>
+            <td>获得2个双翼机</td>
+            <td>+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp' width='15px'>传统槽位</td>
+            <td>获得一项可最快掌握的科技</td>
         </tr>
     </table>
 
@@ -919,10 +952,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_AQ_MAIN_DISCIPLINE,
-                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_AQ_MAIN_MYSTICISM, MinDepth=1</td>
+            <td colspan="5">
+                古典时代领袖事件<br>
+                完成市政纪律<br>
+                完成市政神秘主义<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -938,11 +972,19 @@
             <td style="width: 25.3%;">昔日英雄已成今日传说。</td>
         </tr>
         <tr>
-            <td>任务：拥有一位获得3次晋升的指挥官。<br>来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力
-                +1。<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>任务：拥有3座祭坛。<br>来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
-                +1。<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY。</td>
+            <td>
+                任务：拥有一位获得3次晋升的指挥官<br>
+                来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力
+                +1<br>
+                进入<span style="color: red">分支1</span>(视为完成1次<span style="color: red">分支1</span>任务)
+            </td>
+            <td>
+                任务：拥有3座祭坛<br>
+                来自祭坛的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+                +1。<br>
+                进入<span style="color: blue">分支2</span>(视为完成1次<span style="color: blue">分支2</span>任务)
+            </td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY</td>
         </tr>
     </table>
 
@@ -954,10 +996,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01, GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,
-                DuplicateCount=5
+            <td colspan="3">
+                <span style="color: red">分支1</span> <br>
+                古典时代领袖事件<br>
+                累计击败 5 个敌方单位<br>
             </td>
         </tr>
         <tr>
@@ -971,8 +1013,12 @@
             <td style="width: 42%;">金币可以暂时平息怒火。</td>
         </tr>
         <tr>
-            <td>任务：占领一座非你建立的定居点。<br>军事属性点 +1。<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY。</td>
+            <td>
+                任务：占领一座非你建立的定居点<br>
+                军事属性点 +1</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY
+            </td>
         </tr>
     </table>
 
@@ -984,8 +1030,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>已研发市政戏剧诗歌</td>
+            <td colspan="3">
+                <span style="color: blue">分支2</span> <br>
+                古典时代领袖事件<br>
+                已研发市政戏剧诗歌
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -998,8 +1047,13 @@
             <td style="width: 42%;">与伶人一同谢幕。</td>
         </tr>
         <tr>
-            <td>任务：在文化值建筑上放置2名专家。<br>文化属性点 +1。<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY。</td>
+            <td>
+                任务：在文化值建筑上放置2名专家<br>
+                文化属性点 +1
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +REWARD_TYPE_MINOR_EARLY
+            </td>
         </tr>
     </table>
 
@@ -1011,9 +1065,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_IS_AGE_COUNT]
-                AgeCount=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_EX_MAIN_PIETY, MinDepth=1</td>
+            <td colspan="3">
+                古典时代未选择分支<br>
+                探索时代领袖事件<br>
+                完成市政虔诚<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1026,8 +1082,8 @@
             <td style="width: 42%;">诗词与歌赋将令世界俯首归依。</td>
         </tr>
         <tr>
-            <td>故事仍在继续。<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>故事仍在继续。<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td>进入<span style="color: red">分支1</span>(视为完成1次<span style="color: red">分支1</span>任务)</td>
+            <td>进入<span style="color: blue">分支2</span>(视为完成1次<span style="color: blue">分支2</span>任务)</td>
         </tr>
     </table>
 
@@ -1039,10 +1095,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_PLAYERS_MEET01,
-                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,IsForeignHemisphere,True</td>
+            <td colspan="3">
+                <span style="color: red">分支1</span><br>
+                探索时代领袖事件<br>
+                首次接触一个来自遥远大陆的文明
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1055,8 +1112,12 @@
             <td style="width: 42%;">战争诚然好，财帛也不可少。</td>
         </tr>
         <tr>
-            <td>任务：占领2座遥远土地定居点。<br>军事属性点 +1。<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY。</td>
+            <td>
+                任务：占领2座遥远土地定居点<br>
+                军事属性点 +1</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_EARLY
+            </td>
         </tr>
     </table>
 
@@ -1068,10 +1129,12 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_WARS] ForeignHemisphere=True,
-                Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_UNIT_TYPE] UnitType=UNIT_KNIGHT, Amount=3,
-                CountUpgrades=True<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1</td>
+            <td colspan="3">
+                <span style="color: red">分支1</span><br>
+                探索时代领袖事件<br>
+                与遥远大陆上的一个文明处于战争状态<br>
+                拥有至少 3 个骑士单位<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1083,8 +1146,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：在遥远土地上击杀1名军队指挥官。<br>骑兵单位[LEADER_CHAIN_1285B_NARRATIVE_MODIFIER]
-                AbilityType=ABILITY_NARRATIVE_AGGRESSION。<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td colspan="1">
+                任务：在遥远土地上击杀1名军队指挥官<br>
+                骑兵单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)
+            </td>
         </tr>
     </table>
 
@@ -1096,9 +1161,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_LEADER_CHAIN_1286A_NARRATIVE</td>
+            <td colspan="3">
+                <span style="color: blue">分支2</span><br>
+                探索时代领袖事件<br>
+                拥有1座位于遥远大陆的城市 <br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1111,8 +1178,10 @@
             <td style="width: 42%;">金币同样可以收买人心。</td>
         </tr>
         <tr>
-            <td>任务：在遥远土地上建造一座奇观。<br>文化属性点 +1。<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_LATE。</td>
+            <td>
+                任务：在遥远土地上建造一座奇观<br>
+                文化属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +REWARD_TYPE_MINOR_LATE</td>
         </tr>
     </table>
 
@@ -1124,10 +1193,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_EX_MAIN_SOVEREIGNTY,
-                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1</td>
+            <td colspan="3">
+                <span style="color: blue">分支2</span><br>
+                探索时代领袖事件<br>
+                完成市政主权<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1141,8 +1211,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：在遥远土地上拥有10名专家。<br>专家+1[icon:YIELD_CULTURE]文化值。<br><img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td colspan="1">
+                任务：在遥远土地上拥有10名专家。<br>
+                专家 +1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+            </td>
         </tr>
     </table>
 
@@ -1154,10 +1226,12 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A,
-                Amount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_UNIT_TYPE]
-                UnitType=UNIT_LANDSHIP, Amount=3, CountUpgrades=True</td>
+            <td colspan="3">
+                领袖分支任务<span style="color: red">分支1</span>完成3次<br>
+                近世时代领袖事件<br>
+                拥有至少 3 辆陆地战舰<br>
+                (如果领袖分支任务<span style="color: red">分支1</span>完成4次则会额外奖励立即进入庆典)<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1169,34 +1243,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：占领一座首都。<br>军事属性点 +1<br>触发庆典</td>
-        </tr>
-    </table>
-
-    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>寰宇之主</b></span>
+            <td colspan="1">
+                任务：占领一座首都<br>
+                军事属性点 +1
             </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_CONQUER_CITY01,
-                GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other,Hash,IsCapital,True</td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>世界边缘近在眼前。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">关闭。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">关闭。</td>
-        </tr>
-        <tr>
-            <td>军事属性点 +1。</td>
-            <td>军事属性点 +1并进入庆典。<br>触发庆典</td>
         </tr>
     </table>
 
@@ -1208,9 +1258,12 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=3<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_LEADER_CHAIN_1289A_NARRATIVE</td>
+            <td colspan="3">
+                领袖分支任务<span style="color: blue">分支2</span>完成3次<br>
+                近世时代领袖事件<br>
+                拥有1个拥有歌剧院的非首都城市<br>
+                (如果领袖分支任务<span style="color: blue">分支2</span>完成4次则会额外奖励立即进入庆典)<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -1223,35 +1276,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：展示6件文物。<br>文化属性点 +1<br>触发庆典</td>
-        </tr>
-    </table>
-
-    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>史诗英雄</b></span>
+            <td colspan="1">
+                任务：展示6件文物<br>
+                文化属性点 +1
             </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_X_GREAT_WORKS] ObjectType=GREATWORKOBJECT_ARTIFACT,
-                Count=6,
-                IncludeArchived=False</td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>历史与传说现已合一。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">关闭。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">关闭。</td>
-        </tr>
-        <tr>
-            <td>文化属性点 +1。</td>
-            <td>文化属性点 +1并进入庆典。<br>触发庆典</td>
         </tr>
     </table>
 
