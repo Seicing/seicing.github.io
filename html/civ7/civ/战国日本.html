@@ -535,14 +535,14 @@
         </tr>
         <tr>
             <td>
-                所有城市来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1<br>
-                所有城市来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2
+                来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1<br>
+                来自军械所的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +2
             </td>
             <td>
-                所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1
+                来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1
             </td>
             <td>
-                所有城市来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1
+                来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1
             </td>
         </tr>
     </table>
@@ -554,8 +554,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">[REQUIREMENT_PLAYER_HAS_UNHAPPY_CITIES] Count=3,
-                OnlyFounded=True<br>[REQUIREMENT_GAME_TURN_IS_X_NARRATIVE] AfterTurn=10</td>
+            <td colspan="5">
+                拥有3座由自己建造的不快乐的定居点<br>
+                游戏已经超过第 10 回合<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -570,11 +572,15 @@
             <td style="width: 25.3%;">农民总会为各种事情抱怨几句。</td>
         </tr>
         <tr>
-            <td>触发庆典<br>[11187B_NARRATIVE_MODIFIER] MultiplierType=REWARD_TYPE_MAJOR_LATE</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力
-                +REWARD_TYPE_MEDIUM_EARLY<br>所有城市[11187C_NARRATIVE_MODIFIER2] Amount=1, DamageType=UNHAPPINESS,
-                Buildings=false</td>
-            <td>获得单位: 忍者 x1</td>
+            <td>
+                触发庆典<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -REWARD_TYPE_MAJOR_LATE
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MEDIUM_EARLY<br>
+                不快乐的定居点出现1个破坏设施<br>
+            </td>
+            <td>获得1个忍者</td>
         </tr>
     </table>
 
@@ -585,9 +591,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS_WITH_RELIGION] OnlyFounded=False,
-                ForeignReligionOnly=True, SettlementFounded=True, Amount=3<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_11188A_NARRATIVE</td>
+            <td colspan="5">
+                拥有至少 3 个信奉外国宗教的定居点<br>
+                这些定居点中有圣城<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -602,11 +609,12 @@
             <td style="width: 25.3%;">让大地的神灵为自己说话。</td>
         </tr>
         <tr>
-            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
-            <td>获得单位: 传教士 x1</td>
-            <td>特定地块额外产出：<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>信奉的定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>传教士 +1</td>
+            <td>自然奇观地块<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
         </tr>
     </table>
+
 
     <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
         <tr>
@@ -616,14 +624,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">【否】 [REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_TECH_EX_GUNPOWDER,
-                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_SAMURAI,Hash,DyingUnitType,UNIT_ARQUEBUSIER,
-                GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_SAMURAI_2,Hash,DyingUnitType,UNIT_ARQUEBUSIER,
-                GOSSIP_UNIT_COMBAT_DEATH03=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_SAMURAI_3,Hash,DyingUnitType,UNIT_ARQUEBUSIER,
-                Amount=1</td>
+            <td colspan="3">
+                未研发科技火药<br>
+                使用武士击杀一个钩铳手<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -636,8 +640,8 @@
             <td style="width: 42%;">不如以彼之道，还施彼身。</td>
         </tr>
         <tr>
-            <td>[11189B_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_RANGE_DEFENSE</td>
-            <td>首都获得单位: 钩铳手 x1</td>
+            <td>步兵单位激活掩护能力(对抗远程单位+2战斗力)</td>
+            <td>首都获得1个钩铳手</td>
         </tr>
     </table>
 
@@ -648,8 +652,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_MAKE_DOW01,
-                GOSSIP_MAKE_DOW01=Hash,OtherPlayer,Other,Numeric,SettlementRatio,70</td>
+            <td colspan="5">
+                两个其他势力宣战，这两个势力的其中一方定居点数量低于另一方势力的70%<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -665,8 +670,8 @@
             <td style="width: 25.3%;">区域霸权！</td>
         </tr>
         <tr>
-            <td>获得单位: 商人 x1</td>
-            <td>[11190C_NARRATIVE_MODIFIER] BuildingType=BUILDING_ARMORER, Amount=1</td>
+            <td>获得1个商人</td>
+            <td>免费建造1座军械所</td>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_LATE</td>
         </tr>
     </table>
@@ -678,8 +683,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">[REQUIREMENT_PLAYER_HAS_COMMANDERS_WITH_X_LEVELS] LevelCount=1,
-                OnlyCommendations=True, CommanderCount=2</td>
+            <td colspan="5">
+                拥有2个拥有1个奖章的指挥官
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -694,9 +700,9 @@
             <td style="width: 25.3%;">丰臣秀吉从未有过疑虑。</td>
         </tr>
         <tr>
-            <td>[11191B_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_STRENGTH</td>
-            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1</td>
-            <td>[11191D_NARRATIVE_MODIFIER] Amount=10</td>
+            <td>步兵单位激活坚决能力(+2战斗力)</td>
+            <td>城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1</td>
+            <td>所有现有指挥官获得 10 点经验值</td>
         </tr>
     </table>
 
@@ -708,10 +714,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">【否】
-                [REQUIREMENT_PLAYER_IS_AT_PEACE_WITH_ALL_MAJORS]<br>拥有5座茶室<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_CONSTRUCT_BUILDING,
-                GOSSIP_CONSTRUCT_BUILDING=Hash,ConstructibleType,IMPROVEMENT_TEA_HOUSE</td>
+            <td colspan="3">
+                玩家不和所有主要文明处于和平状态<br>
+                拥有5座茶室<br>
+                建成1座新的茶室
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -724,8 +731,8 @@
             <td style="width: 42%;">美丽的风景，或许更能让人忘却烦忧。</td>
         </tr>
         <tr>
-            <td>所有城市来自文化值建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
-            <td>所有城市来自金币建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>来自文化值建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>来自金币建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
         </tr>
     </table>
 
@@ -737,14 +744,15 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01,
-                GOSSIP_CONSTRUCT_BUILDING01=Hash,ConstructibleType,WONDER_HIMEJI_CASTLE</td>
+            <td colspan="3">
+                已建成姬路城<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
             <td colspan="3">
-                为了让前来造访的贵族们见识姬路城独特布局的精妙之处，丰臣秀吉特意派出一名仆从，引领众人在这座看似高耸却暗藏玄机的城堡中穿行。原本只是战术演示，却渐渐令人不安——因为那一行人进去之后，迟迟没有再出现。</td>
+                为了让前来造访的贵族们见识姬路城独特布局的精妙之处，丰臣秀吉特意派出一名仆从，引领众人在这座看似高耸却暗藏玄机的城堡中穿行。原本只是战术演示，却渐渐令人不安——因为那一行人进去之后，迟迟没有再出现。
+            </td>
         </tr>
         <tr>
             <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
@@ -753,8 +761,8 @@
             <td style="width: 42%;">真是深谋远虑之举。</td>
         </tr>
         <tr>
-            <td>触发庆典</td>
-            <td>所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +3</td>
+            <td>进入庆典</td>
+            <td>城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +3</td>
         </tr>
     </table>
 
@@ -766,8 +774,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_EX_SENGOKU_KINSEI, MinDepth=1</td>
+            <td colspan="3">
+                已完成市政近世<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -794,8 +803,15 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>拥有1座茶室<br>拥有1座<br>[REQUIREMENT_PLAYER_HAS_UNIQUE_QUARTER]
-                UniqueQuarterType=QUARTER_ZAIBATSU<br>拥有5座火车站</td>
+            <td colspan="3">
+                近世时代事件<br>
+                拥有1座茶室<br>
+                拥有1座神社<br>
+                拥有1个明治日本特色城区财阀<br>
+                拥有5座火车站<br>
+                曾经扮演过平安日本<br>
+                曾经扮演过战国日本<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -808,10 +824,14 @@
             <td style="width: 42%;">在财阀周边看人来人往。</td>
         </tr>
         <tr>
-            <td>所有城市来自UNIQUE建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
-                +1<br>所有城市来自UNIQUE_IMPROVEMENT建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
-            <td>所有城市来自UNIQUE_IMPROVEMENT建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +1<br>所有城市来自UNIQUE建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>
+                特色建筑和改良设施<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
+                +1、<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1
+            </td>
+            <td>
+                特色建筑和改良设施<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                +1、<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1
+            </td>
         </tr>
     </table>
 
@@ -823,8 +843,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_AQ_FOUNDATION, MinDepth=1</td>
+            <td colspan="3">
+                古典时代事件<br>
+                已完成市政战国根基<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -852,8 +874,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代领袖事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_ADMINISTRATION, MinDepth=1</td>
+            <td colspan="3">
+                近世时代事件<br>
+                已完成市政战国行政体系<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -872,34 +896,6 @@
             <td>扩张属性点 +1</td>
         </tr>
     </table>
-
-    <table id="aoe4de" style="border:1px solid #222222; width:600px; margin-bottom: 20px; border-collapse: collapse;">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>好医生与武士</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
-                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_SENGOKU</td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">一位年迈武士领着黎刹医生巡视自己的领地。一路上，有宁静幽远的枯山水庭园，也喝声回荡的武艺道场。主人淡淡说道：所谓自律，并非与生俱来，而是经由长久磨炼，方能铸成。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">推动熊手。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">挥动木刀。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +REWARD_TYPE_MINOR_EARLY</td>
-            <td>[12017C_NARRATIVE_MODIFIER] AbilityType=ABILITY_NARRATIVE_STRENGTH</td>
-        </tr>
-    </table>
-
 
 
 </div>
