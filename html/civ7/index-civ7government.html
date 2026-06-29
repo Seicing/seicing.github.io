@@ -13,6 +13,14 @@
 <link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <style>
+    li {
+        line-height: normal;
+    }
+
+    .gomen li {
+        margin-bottom: 9px
+    }
+
     ul {
         margin: 0;
         padding: 0;
@@ -72,8 +80,8 @@
                 src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值。
             <br>
 
-            <br><b>庆典选项</b><br>
-            <ul>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
                 <li>立即+100<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力。</li>
                 <li>建造奇观时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp'
                         width='15px'>生产力效用，在“欢悦”及以上状态的城市中+20%，持续{1_numTurns}回合。</li>
@@ -102,8 +110,8 @@
                 src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，定居点产出便-3%（通常为-5%）。
             <br>
 
-            <br><b>庆典选项</b><br>
-            <ul>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
                 <li>生产力建筑和生产力仓库建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，持续{1_numTurns}回合。</li>
                 <li>生产军事单位时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，购买军事单位时+10%<img
                         src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用，持续{1_numTurns}回合。</li>
@@ -132,8 +140,8 @@
                 src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用。
             <br>
 
-            <br><b>庆典选项</b><br>
-            <ul>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
                 <li>立即+200<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币。</li>
                 <li>每有一个相连的定居点，城镇便+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物，持续{1_numTurns}回合。</li>
             </ul>
@@ -160,8 +168,8 @@
             政体槽位中每放置有一项传统，城市便+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
             <br>
 
-            <br><b>庆典选项</b><br>
-            <ul>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
                 <li>愉快的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
                         width='15px'>文化值，欢悦的定居点+6，狂喜的定居点+10，持续{1_numTurns}回合。</li>
                 <li>每个“欢悦”及以上状态的定居点+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物，持续{1_numTurns}回合。需要<img
@@ -182,239 +190,245 @@
 </div>
 
 <div id="expText1">
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>封建君主(Feudal Monarchy)</b><br>
+    <div style="display:flex;justify-content: center ">
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>封建君主(Feudal Monarchy)</b><br>
 
-        <br><b>政体能力</b><br>
-        生产军事单位和建造城墙时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。
-        <br>
+            <br><b>政体能力</b><br>
+            生产军事单位和建造城墙时+10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>你等级最高的指挥官获得一次免费晋升。</li>
-            <li>军事单位+3战斗力，持续{1_numTurns}回合。</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>你等级最高的指挥官获得一次免费晋升。</li>
+                <li>军事单位+3战斗力，持续{1_numTurns}回合。</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'边境领主');" style="color:#0010ff">边境领主</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/社会.webp" width="15px">社会
-            </li>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'大都城');" style="color:#0010ff">大都城</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/主权.webp" width="15px">主权
-            </li>
-        </ul>
-    </div>
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>财阀政治(Plutocracy)</b><br>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'边境领主');" style="color:#0010ff">边境领主</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/社会.webp" width="15px">社会
+                </li>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'大都城');" style="color:#0010ff">大都城</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/主权.webp" width="15px">主权
+                </li>
+            </ul>
+        </div>
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>财阀政治(Plutocracy)</b><br>
 
-        <br><b>政体能力</b><br>
-        加建时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。
-        <br>
+            <br><b>政体能力</b><br>
+            加建时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>专家维护费用-2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，持续{1_numTurns}回合。</li>
-            <li>立即+600<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币（根据游戏速度进行调整）。</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>专家维护费用-2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img
+                        src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，持续{1_numTurns}回合。</li>
+                <li>立即+600<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币（根据游戏速度进行调整）。</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'原始积累');" style="color:#0010ff">原始积累</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/重商主义.webp" width="15px">重商主义
-            </li>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'贡赋网络');" style="color:#0010ff">贡赋网络</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/帝国主义.webp" width="15px">帝国主义
-            </li>
-        </ul>
-    </div>
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>神权政治(Theocracy)</b><br>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'原始积累');" style="color:#0010ff">原始积累</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/重商主义.webp" width="15px">重商主义
+                </li>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'贡赋网络');" style="color:#0010ff">贡赋网络</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/帝国主义.webp" width="15px">帝国主义
+                </li>
+            </ul>
+        </div>
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>神权政治(Theocracy)</b><br>
 
-        <br><b>政体能力</b><br>
-        建造寺庙、生产传教士时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用；购买时+20%<img
-            src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用。
-        <br>
+            <br><b>政体能力</b><br>
+            建造寺庙、生产传教士时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用；购买时+20%<img
+                src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>获得一件免费的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>遗物。展示的遗物+1<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
-                    width='15px'>幸福值，持续{1_numTurns}回合。
-            </li>
-            <li>展示的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>遗物+1<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp'
-                    width='15px'>影响力，持续{1_numTurns}回合。</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>获得一件免费的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>遗物。展示的遗物+1<img
+                        src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
+                        width='15px'>幸福值，持续{1_numTurns}回合。
+                </li>
+                <li>展示的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp' width='15px'>遗物+1<img
+                        src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp'
+                        width='15px'>影响力，持续{1_numTurns}回合。</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'达尔加圣陵');" style="color:#0010ff">达尔加圣陵</a>
-            </li>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'毗奈耶');" style="color:#0010ff">毗奈耶</a>
-            </li>
-        </ul>
-    </div>
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>革命政府(Revolución)</b><br>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'达尔加圣陵');" style="color:#0010ff">达尔加圣陵</a>
+                </li>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'毗奈耶');" style="color:#0010ff">毗奈耶</a>
+                </li>
+            </ul>
+        </div>
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>革命政府(Revolución)</b><br>
 
-        <br><b>政体能力</b><br>
-        政体槽位中每放置有一项传统，城市便+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
-        <br>
+            <br><b>政体能力</b><br>
+            政体槽位中每放置有一项传统，城市便+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>愉快的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，欢悦的定居点+6，狂喜的定居点+10，持续{1_numTurns}回合。
-            </li>
-            <li>生产传教士时+100%生产力效用，购买时+100%金币效用；传教士+2次数和移动力，持续{1_numTurns}回合。需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">墨西哥复兴</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>愉快的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
+                        width='15px'>文化值，欢悦的定居点+6，狂喜的定居点+10，持续{1_numTurns}回合。
+                </li>
+                <li>生产传教士时+100%生产力效用，购买时+100%金币效用；传教士+2次数和移动力，持续{1_numTurns}回合。需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">墨西哥复兴</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'壁画运动II');" style="color:#0010ff">壁画运动II</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">墨西哥复兴
-            </li>
-        </ul>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'壁画运动II');" style="color:#0010ff">壁画运动II</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">墨西哥复兴
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
 <div id="morText1">
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>选举共和(Elective Republic)</b><br>
+    <div style="display:flex;justify-content: center ">
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>选举共和(Elective Republic)</b><br>
 
-        <br><b>政体能力</b><br>
-        专家+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
-            width='15px'>文化值，维护费用+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
-        <br>
+            <br><b>政体能力</b><br>
+            专家+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
+                width='15px'>文化值，维护费用+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>立即+1000<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值。</li>
-            <li>愉快的定居点中的城区+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；如为欢悦的定居点，+2<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；如为狂喜的定居点，+3<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；持续{1_numTurns}回合。
-            </li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>立即+1000<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值。</li>
+                <li>愉快的定居点中的城区+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；如为欢悦的定居点，+2<img
+                        src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；如为狂喜的定居点，+3<img
+                        src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；持续{1_numTurns}回合。
+                </li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'智库');" style="color:#0010ff">智库</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/全球主义.webp" width="15px">全球主义
-            </li>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'工兵军团');" style="color:#0010ff">工兵军团</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/民族主义.webp" width="15px">民族主义
-            </li>
-        </ul>
-    </div>
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>威权主义(Authoritarianism)</b><br>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'智库');" style="color:#0010ff">智库</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/全球主义.webp" width="15px">全球主义
+                </li>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'工兵军团');" style="color:#0010ff">工兵军团</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/民族主义.webp" width="15px">民族主义
+                </li>
+            </ul>
+        </div>
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>威权主义(Authoritarianism)</b><br>
 
-        <br><b>政体能力</b><br>
-        本时代征服的定居点+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'
-            width='15px'>金币。每有1点负<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，定居点产出便-3%（通常为-5%）。
-        <br>
+            <br><b>政体能力</b><br>
+            本时代征服的定居点+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物和<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'
+                width='15px'>金币。每有1点负<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值，定居点产出便-3%（通常为-5%）。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>生产军事单位时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，持续{1_numTurns}回合。</li>
-            <li>你宣布的战争+2战争支持，持续{1_numTurns}回合。</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>生产军事单位时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用，持续{1_numTurns}回合。</li>
+                <li>你宣布的战争+2战争支持，持续{1_numTurns}回合。</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'卫戍国家');" style="color:#0010ff">卫戍国家</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/民族主义.webp" width="15px">民族主义
-            </li>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'好战主义');" style="color:#0010ff">好战主义</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/军国主义.webp" width="15px">军国主义
-            </li>
-        </ul>
-    </div>
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>官僚君主(Bureaucratic Monarchy)</b><br>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'卫戍国家');" style="color:#0010ff">卫戍国家</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/民族主义.webp" width="15px">民族主义
+                </li>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'好战主义');" style="color:#0010ff">好战主义</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/军国主义.webp" width="15px">军国主义
+                </li>
+            </ul>
+        </div>
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>官僚君主(Bureaucratic Monarchy)</b><br>
 
-        <br><b>政体能力</b><br>
-        在城市中购买建筑时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用；在“欢悦”及以上状态的城市中此加成提高至+10%。
-        <br>
+            <br><b>政体能力</b><br>
+            在城市中购买建筑时+5%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用；在“欢悦”及以上状态的城市中此加成提高至+10%。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>立即+1000<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币。</li>
-            <li>发起所有外交行动时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用，持续{1_numTurns}回合。</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>立即+1000<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币。</li>
+                <li>发起所有外交行动时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力效用，持续{1_numTurns}回合。</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'帝国情报局');" style="color:#0010ff">帝国情报局</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/政治理论.webp" width="15px">政治理论
-            </li>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'王室产业');" style="color:#0010ff">王室产业</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/全球主义.webp" width="15px">全球主义
-            </li>
-        </ul>
-    </div>
-    <div style="width:180px; border:1px solid;text-align:center;">
-        <b>革命政府(Revolución)</b><br>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'帝国情报局');" style="color:#0010ff">帝国情报局</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/政治理论.webp" width="15px">政治理论
+                </li>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'王室产业');" style="color:#0010ff">王室产业</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/tech/全球主义.webp" width="15px">全球主义
+                </li>
+            </ul>
+        </div>
+        <div style="width:180px; border:1px solid;text-align:center;">
+            <b>革命政府(Revolución)</b><br>
 
-        <br><b>政体能力</b><br>
-        政体槽位中每放置有一项传统，城市便+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
-        <br>
+            <br><b>政体能力</b><br>
+            政体槽位中每放置有一项传统，城市便+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值。
+            <br>
 
-        <br><b>庆典选项</b><br>
-        <ul>
-            <li>愉快的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，欢悦的定居点+6，狂喜的定居点+10，持续{1_numTurns}回合。
-            </li>
-            <li>每座城市立即获得一个免费的步兵单位。需要<img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">伊瓜拉计划</li>
-            <li>每个“欢悦”及以上状态的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力，持续{1_numTurns}回合。需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">阿尤特拉计划</li>
-            <li>每个“欢悦”及以上状态的定居点+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，持续{1_numTurns}回合。需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">图克斯特佩克计划</li>
-        </ul>
-        <br>
+            <b>庆典选项</b><br>
+            <ul class="gomen">
+                <li>愉快的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
+                        width='15px'>文化值，欢悦的定居点+6，狂喜的定居点+10，持续{1_numTurns}回合。
+                </li>
+                <li>每座城市立即获得一个免费的步兵单位。需要<img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">伊瓜拉计划</li>
+                <li>每个“欢悦”及以上状态的定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力，持续{1_numTurns}回合。需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">阿尤特拉计划</li>
+                <li>每个“欢悦”及以上状态的定居点+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，持续{1_numTurns}回合。需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">图克斯特佩克计划</li>
+            </ul>
+            <br>
 
-        <b>传统</b><br>
-        <ul>
-            <li>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
-                    onmousemove="showPic(event,'壁画运动III');" style="color:#0010ff">壁画运动III</a>，需要<img
-                    src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">政治计划(精通)
-            </li>
-        </ul>
+            <b>传统</b><br>
+            <ul>
+                <li>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/政策.webp" width="15px"><a onmouseout="hiddenPic();"
+                        onmousemove="showPic(event,'壁画运动III');" style="color:#0010ff">壁画运动III</a>，需要<img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/civicon/墨西哥.png" width="15px">政治计划(精通)
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
                         </div>
@@ -441,7 +455,6 @@
 
 
 <script language="javascript" src="https://seicing.com/js/civ7.js"></script>
-<link href="https://seicing.com/css/aoeciv7.css" media="screen" rel="stylesheet" type="text/css">
 <script language="javascript" src="https://seicing.com/js/aoe4button.js" onload="showCiv('anc')"></script>
 
 </html>
