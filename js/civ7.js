@@ -172,6 +172,7 @@ let ayanami = {
     "军队指挥官": /*html*/`军队指挥官<br>Army Commander<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>100 + 200(n-1)<br>移动力 2<br>视野范围 2<br>陆地支援单位，能够将一组陆地军事单位集结成军队并进行指挥`,
     "舰队指挥官": /*html*/`舰队指挥官<br>Fleet Commander<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>120 + 240(n-1)<br>移动力 3<br>视野范围 2<br>海上支援单位，能够将一组海上军事单位集结成舰队并进行指挥`,
     "飞行队指挥官": /*html*/`飞行队指挥官<br>Squadron Commander<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>140*n<br>移动力 8<br>视野范围 2<br>空中支援单位，能够将一组空中军事单位集结成飞行队并进行指挥`,
+    "航空港指挥官": /*html*/`航空港指挥官<br>Aerodrome Commander<br>空中支援单位，能够将一组空中军事单位集结成飞行队并进行指挥`,
     "航空母舰": /*html*/`航空母舰<br>Aircraft Carrier<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>160*n<br>移动力 4<br>视野范围 2<br>空中支援单位，能集结一组空中军事单位并进行指挥`,
     "探路者": /*html*/`探路者<br>Pathfinder<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>30<br>移动力 2<br>视野范围 2<br>探路平民单位，适合探明地形并发现新土地`,
     "探索者": /*html*/`探索者<br>Explorer<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>400+ 400(n-1)<br>移动力 2<br>视野范围 2<br>支援单位，能够寻找并发掘先前时代的掩埋文物`,
