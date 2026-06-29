@@ -930,18 +930,27 @@ let ayanami = {
 
     "生命之树": /*html*/`生命之树<br>Yaxche<br>奇观+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
     "创生": /*html*/`创生<br>Poieisis<br>欢悦的定居点中展示的巨作+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值；若为狂喜的定居点，则提升为+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值`,
+    "军事领地": /*html*/`军事领地<br>Commanderies<br>升级单位时+20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用`,
+    "法家": /*html*/`法家<br>Fajia<br>你宣布的战争+1战争支持`,
+    "粮食配给": /*html*/`粮食配给<br>Annona<br>“愉快”及以上状态的定居点中的食物仓库建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物，“欢悦”及以上状态的提升为+2`,
+    "行脚": /*html*/`行脚<br>Hangjiao<br>“愉快”及以上状态的定居点中的生产力仓库建筑+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力，“欢悦”及以上状态的提升为+2`,
+    "壁画运动I": /*html*/`壁画运动I<br>Muralismo<br>所有定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
+    "壁画运动II": /*html*/`壁画运动II<br>Muralismo<br>所有定居点+4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
+    "壁画运动III": /*html*/`壁画运动III<br>Muralismo<br>所有定居点+6<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
 
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
