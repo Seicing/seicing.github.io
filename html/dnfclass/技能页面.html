@@ -106,8 +106,6 @@
             正在生成技能列表……
         </div>
         <div v-for="skill in skills" :id="'skill-'+skill.skillId" class="skill">
-
-
             <div class="title-row">
                 <div class="title-left">
                     <img :src="skill.icon" class="icon">
@@ -123,7 +121,6 @@
                     <button @click="changeLv(skill,1)">+</button>
                 </div>
             </div>
-
             <div class="meta937">
                 学习等级: {{ getCurrentLearnLevel(skill) }} |
 
@@ -290,7 +287,7 @@
 
                 const rows = data.levelInfo?.rows || []
 
-                const icon = `https://image.dnftools.com/characters/${this.jobId}/${this.jobGrowId}/skill/${skillId}.png`
+                const icon = `https://image.dnftools.com/characters/${this.jobId}/${this.jobGrowId}/${skillId}.png`
 
                 const skill = {
                     skillId,
