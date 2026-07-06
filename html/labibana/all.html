@@ -91,13 +91,13 @@
 
                         if (ruby) {
                             td.innerHTML = `
-                            <ruby>
-                                ${text}
-                                <rt>${ruby}</rt>
-                            </ruby>
-                        `;
+            <ruby>
+                ${text}
+                <rt>${ruby}</rt>
+            </ruby>
+        `;
                         } else {
-                            td.textContent = text;
+                            td.innerHTML = text;
                         }
 
                         tr.appendChild(td);
