@@ -29,7 +29,17 @@
                     <div class="post">
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry" style="min-height:720px;"><div id="lavipage" page="99999"></div>
-
+<table id="customers">
+    <thead>
+        <tr>
+            <th>中文</th>
+            <th>English</th>
+            <th>日本語</th>
+            <th>한국어</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
                         </div>
                     </div>
                 </div>
@@ -58,7 +68,7 @@
     fetch("https://seicing.com/js/noun.json")
         .then(response => response.json())
         .then(data => {
-            const tbody = document.querySelector("#titleTable tbody");
+            const tbody = document.querySelector("#customers tbody");
 
             const langs = ["cn", "en", "jp", "ko"];
 
