@@ -51,7 +51,7 @@ function tipsg(a, b) {
     var aaposbo6 = document.querySelector("#Mage");
     aaposbo6.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '法师.png';
     var aaposbo7 = document.querySelector("#Sorceress");
-    aaposbo7.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '巫师.png';
+    aaposbo7.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '魔击手.png';
     var aaposbo8 = document.querySelector("#Scholar");
     aaposbo8.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/' + a + '学者.png';
     var aaposbo9 = document.querySelector("#Cleric");
@@ -138,7 +138,7 @@ function tipsb(a, b) {
     document.getElementById("散兵").style.display = "none";
     document.getElementById("先锋").style.display = "none";
     document.getElementById("法师").style.display = "none";
-    document.getElementById("巫师").style.display = "none";
+    document.getElementById("魔击手").style.display = "none";
     document.getElementById("学者").style.display = "none";
     document.getElementById("神官").style.display = "none";
     document.getElementById("术士").style.display = "none";
