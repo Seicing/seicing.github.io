@@ -50,7 +50,11 @@ function AutoTermLink() {
             if (a.priority !== b.priority)
                 return b.priority - a.priority;
 
-            return b.word.length - a.word.length;
+            if (a.word.length !== b.word.length)
+                return b.word.length - a.word.length;
+
+            // 相同词时，block 永远优先
+            return (b.block === true) - (a.block === true);
 
         });
 
