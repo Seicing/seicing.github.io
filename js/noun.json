@@ -520,45 +520,48 @@
     },
     {
         "cn": "生灵",
-        "en": " ",
-        "jp": " ",
-        "ko": " ",
+        "en": "Living Thing",
+        "jp": "生き物",
+        "ko": "생물",
         "hidden": true,
-        "priority": 0,
+        "linkword": [
+            "生灵",
+            "活物"
+        ],
         "link": "https://seicing.com/html/labibana/LivingThing.html"
     },
     {
         "cn": "姓名系统",
-        "en": " ",
-        "jp": " ",
-        "ko": " ",
+        "en": "Name System",
+        "jp": "名前体系",
+        "ko": "이름 체계",
         "hidden": true,
         "priority": 0,
         "link": "https://seicing.com/html/labibana/NameSystem.html"
     },
     {
         "cn": "灵魂",
-        "en": " ",
-        "jp": " ",
-        "ko": " ",
+        "en": "Soul",
+        "jp": "霊혼",
+        "ko": "영혼",
         "hidden": true,
         "priority": 0,
         "link": "https://seicing.com/html/labibana/Soul.html"
     },
     {
         "cn": "宗教",
-        "en": " ",
-        "jp": " ",
-        "ko": " ",
+        "en": "Religion",
+        "jp": "宗教",
+        "ko": "종교",
         "hidden": true,
         "priority": 0,
         "link": "https://seicing.com/html/labibana/Religion.html"
     },
     {
         "cn": "政治体系",
-        "en": " ",
-        "jp": " ",
-        "ko": " ",
+        "en": "Political",
+        "jp": "政治体系",
+        "ko": "정치 체계",
         "hidden": true,
         "priority": 0,
         "link": "https://seicing.com/html/labibana/Political.html"
