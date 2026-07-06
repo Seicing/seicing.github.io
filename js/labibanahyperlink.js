@@ -7,10 +7,13 @@ function AutoTermLink() {
 
         terms.forEach(term => {
 
-            if (!term.link) return;
+            const priority = term.priority ?? 5;
 
-            // priority 为 0，完全禁用自动链接
-            if ((term.priority ?? 5) === 0) return;
+            // priority 为 0，完全忽略
+            if (priority === 0) return;
+
+            // 既没有 link，也不是 block，就跳过
+            if (!term.link && !term.block) return;
 
             let list = [];
 
@@ -33,6 +36,7 @@ function AutoTermLink() {
                 words.push({
                     word: word,
                     link: term.link,
+                    block: term.block === true,
                     priority: term.priority ?? 5
                 });
 
@@ -101,13 +105,24 @@ function AutoTermLink() {
 
                     const item = wordMap.get(match[0]);
 
-                    const a = document.createElement("a");
+                    if (item.block) {
 
-                    a.href = item.link;
-                    a.textContent = item.word;
-                    a.style.color = "blue";
+                        // block：直接输出文字，不生成链接
+                        frag.appendChild(
+                            document.createTextNode(item.word)
+                        );
 
-                    frag.appendChild(a);
+                    } else {
+
+                        const a = document.createElement("a");
+
+                        a.href = item.link;
+                        a.textContent = item.word;
+                        a.style.color = "blue";
+
+                        frag.appendChild(a);
+
+                    }
 
                     last = regex.lastIndex;
 
