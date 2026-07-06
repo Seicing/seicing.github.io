@@ -9,6 +9,9 @@ function AutoTermLink() {
 
             if (!term.link) return;
 
+            // priority 为 0，完全禁用自动链接
+            if ((term.priority ?? 5) === 0) return;
+
             let list = [];
 
             if (term.linkword) {

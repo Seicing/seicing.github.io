@@ -68,7 +68,10 @@
             const langs = ["cn", "en", "jp", "ko"];
 
             data
-                .filter(item => langs.some(lang => (item[lang] || "").trim()))
+                .filter(item =>
+                    !item.hidden &&
+                    langs.some(lang => (item[lang] || "").trim())
+                )
                 .forEach(item => {
                     const tr = document.createElement("tr");
 

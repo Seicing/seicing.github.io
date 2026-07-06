@@ -1,5 +1,12 @@
 [
     {
+        "cn": "拉维瓦纳大誓言",
+        "en": "The Lavivagnar Oath",
+        "jp": "ラヴィヴァナー大誓約",
+        "ko": "라비바나 대서약",
+        "link": "https://seicing.com/html/labibana/LavivagnarOath.html"
+    },
+    {
         "cn": "乌尔斯",
         "en": "Urs",
         "jp": "ウルス",
@@ -41,6 +48,7 @@
         "ko": "원",
         "priority": 1,
         "linkword": [
+            "领国元",
             "帝国元",
             "王国元"
         ],
@@ -49,7 +57,7 @@
     {
         "cn": "誓言",
         "en": "Oath",
-        "jp": "誓い",
+        "jp": "誓約",
         "ko": "서약",
         "link": "https://seicing.com/html/labibana/Oath.html"
     },
@@ -59,6 +67,13 @@
         "jp": "大衰退",
         "ko": "대쇠퇴",
         "link": "https://seicing.com/html/labibana/Decline.html"
+    },
+    {
+        "cn": "大洪水",
+        "en": "The Great Flood",
+        "jp": "大洪水",
+        "ko": "대홍수",
+        "link": "https://seicing.com/html/labibana/TheGreatFlood.html"
     },
     {
         "cn": "汇流",
@@ -89,6 +104,20 @@
         "link": "https://seicing.com/html/labibana/Wraith.html"
     },
     {
+        "cn": "吸血鬼",
+        "en": "Vampire",
+        "jp": "吸血鬼",
+        "ko": "흡혈귀",
+        "link": "https://seicing.com/html/labibana/Vampire.html"
+    },
+    {
+        "cn": "使魔",
+        "en": "Familiar",
+        "jp": "使い魔",
+        "ko": "사역마",
+        "link": "https://seicing.com/html/labibana/Familiar.html"
+    },
+    {
         "cn": "弑神者的后裔",
         "en": "Deicide Descendant",
         "jp": "神殺しの末裔",
@@ -110,10 +139,45 @@
         "link": "https://seicing.com/html/labibana/Ancestor.html"
     },
     {
+        "cn": "皇帝",
+        "en": "Emperor",
+        "jp": "皇帝",
+        "ko": "황제",
+        "priority": 1,
+        "link": "https://seicing.com/html/labibana/Emperor.html"
+    },
+    {
+        "cn": "复仇金",
+        "en": "Revenge Gold",
+        "jp": "復讐金",
+        "ko": "복수금",
+        "link": "https://seicing.com/html/labibana/RevengeGold.html"
+    },
+    {
+        "cn": "种姓制度",
+        "en": "Caste System",
+        "jp": "種姓制度",
+        "ko": "종성 제도",
+        "link": "https://seicing.com/html/labibana/Caste.html"
+    },
+    {
+        "cn": "教皇",
+        "en": "Hierophant",
+        "jp": "教皇",
+        "ko": "교황",
+        "priority": 1,
+        "link": "https://seicing.com/html/labibana/Hierophant.html"
+    },
+    {
         "cn": "西景",
         "en": "Seigine",
         "jp": "西景",
         "ko": "서경",
+        "linkword": [
+            "西景",
+            "西景人",
+            "西景帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Seigine.html"
     },
     {
@@ -121,6 +185,11 @@
         "en": "Gazar",
         "jp": "ガザール",
         "ko": "가자르",
+        "linkword": [
+            "合扎儿",
+            "合扎儿人",
+            "合扎儿帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Gazar.html"
     },
     {
@@ -128,6 +197,12 @@
         "en": "Altrata",
         "jp": "アルトラタ",
         "ko": "알트라타",
+        "linkword": [
+            "艾特拉塔",
+            "艾特拉塔人",
+            "西方艾特拉塔",
+            "艾特拉塔帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Altrata.html"
     },
     {
@@ -135,6 +210,13 @@
         "en": "Illazurydr",
         "jp": "イラシュライド",
         "ko": "일라수리드",
+        "priority": 6,
+        "linkword": [
+            "伊拉修莱德",
+            "伊拉修莱德人",
+            "东方艾特拉塔",
+            "伊拉修莱德帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Illazurydr.html"
     },
     {
@@ -142,6 +224,11 @@
         "en": "Khazatar",
         "jp": "カハザタール",
         "ko": "카하자타",
+        "linkword": [
+            "卡哈扎塔",
+            "卡哈扎塔人",
+            "卡哈扎塔帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Khazatar.html"
     },
     {
@@ -149,6 +236,11 @@
         "en": "Shriksetra",
         "jp": "スリクシェトラ",
         "ko": "스리크셰트라",
+        "linkword": [
+            "室利刹陀罗",
+            "室利刹陀罗人",
+            "室利刹陀罗帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Shriksetra.html"
     },
     {
@@ -156,6 +248,11 @@
         "en": "Iuire",
         "jp": "ユイア",
         "ko": "유이아",
+        "linkword": [
+            "尤伊",
+            "尤伊人",
+            "尤伊帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Iuire.html"
     },
     {
@@ -164,6 +261,11 @@
         "jp": "任那",
         "jpsp": "ニンナ",
         "ko": "닌나",
+        "linkword": [
+            "任那",
+            "任那人",
+            "任那帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Ninna.html"
     },
     {
@@ -171,6 +273,11 @@
         "en": "Eshahr",
         "jp": "エシャーハル",
         "ko": "에샤하르",
+        "linkword": [
+            "伊萨赫尔",
+            "伊萨赫尔人",
+            "伊萨赫尔帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Eshahr.html"
     },
     {
@@ -178,6 +285,11 @@
         "en": "Makhpiyaluta",
         "jp": "マクピヤルタ",
         "ko": "마카피야르타",
+        "linkword": [
+            "马奇比亚露塔",
+            "马奇比亚露塔人",
+            "马奇比亚露塔帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Makhpiyaluta.html"
     },
     {
@@ -185,6 +297,11 @@
         "en": "Ionania",
         "jp": "イオナニア",
         "ko": "이오나니아",
+        "linkword": [
+            "伊奥那尼亚",
+            "伊奥那尼亚人",
+            "伊奥那尼亚帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Ionania.html"
     },
     {
@@ -193,6 +310,11 @@
         "jp": "匈奴",
         "jpsp": "フンノ",
         "ko": "훈누",
+        "linkword": [
+            "匈奴",
+            "匈奴人",
+            "匈奴帝国"
+        ],
         "link": "https://seicing.com/html/labibana/Huno.html"
     },
     {
@@ -284,6 +406,11 @@
         "en": "Zeig the Victor",
         "jp": "勝利者ジーク",
         "ko": "승리자 지크",
+        "linkword": [
+            "胜利者齐格",
+            "齐格",
+            "伊格雷"
+        ],
         "link": "https://seicing.com/html/labibana/char/ZeigtheVictor.html"
     },
     {
@@ -291,6 +418,11 @@
         "en": "Carlosmagne",
         "jp": "カルロスマーニュ",
         "ko": "카를로스마뉴",
+        "linkword": [
+            "卡洛斯玛奴大王",
+            "卡洛斯玛奴",
+            "卡洛斯"
+        ],
         "link": "https://seicing.com/html/labibana/char/Carlosmagne.html"
     },
     {
@@ -298,6 +430,10 @@
         "en": "Aétio the Brave",
         "jp": "勇者アエティオ",
         "ko": "용사 아에티오",
+        "linkword": [
+            "勇者埃提奥",
+            "埃提奥"
+        ],
         "link": "https://seicing.com/html/labibana/char/AetiotheBrave.html"
     },
     {
@@ -305,6 +441,11 @@
         "en": "Capitalist",
         "jp": "価王",
         "ko": "가왕",
+        "linkword": [
+            "安德烈",
+            "安德烈·阿尔怀恩",
+            "价王"
+        ],
         "link": "https://seicing.com/html/labibana/char/Capitalist.html"
     },
     {
@@ -313,6 +454,11 @@
         "jp": "匈奴王アリッタ",
         "priority": 6,
         "ko": "흉노왕 알리타",
+        "linkword": [
+            "匈奴王阿里它",
+            "天灾阿里它",
+            "阿里它"
+        ],
         "link": "https://seicing.com/html/labibana/char/AlittatheHun.html"
     },
     {
@@ -320,6 +466,11 @@
         "en": "Emperor Saumou",
         "jp": "修武皇帝",
         "ko": "수무 황제",
+        "linkword": [
+            "修武皇帝",
+            "修武",
+            "黄修武"
+        ],
         "link": "https://seicing.com/html/labibana/char/Saumou.html"
     },
     {
@@ -368,9 +519,48 @@
         "link": "https://seicing.com/html/labibana/char/Ven.html"
     },
     {
-        "cn": " ",
+        "cn": "生灵",
         "en": " ",
         "jp": " ",
-        "ko": " "
+        "ko": " ",
+        "hidden": true,
+        "priority": 0,
+        "link": "https://seicing.com/html/labibana/LivingThing.html"
+    },
+    {
+        "cn": "姓名系统",
+        "en": " ",
+        "jp": " ",
+        "ko": " ",
+        "hidden": true,
+        "priority": 0,
+        "link": "https://seicing.com/html/labibana/NameSystem.html"
+    },
+    {
+        "cn": "灵魂",
+        "en": " ",
+        "jp": " ",
+        "ko": " ",
+        "hidden": true,
+        "priority": 0,
+        "link": "https://seicing.com/html/labibana/Soul.html"
+    },
+    {
+        "cn": "宗教",
+        "en": " ",
+        "jp": " ",
+        "ko": " ",
+        "hidden": true,
+        "priority": 0,
+        "link": "https://seicing.com/html/labibana/Religion.html"
+    },
+    {
+        "cn": "政治体系",
+        "en": " ",
+        "jp": " ",
+        "ko": " ",
+        "hidden": true,
+        "priority": 0,
+        "link": "https://seicing.com/html/labibana/Political.html"
     }
 ]
