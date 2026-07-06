@@ -10,43 +10,55 @@
         "cn": "世界背面",
         "en": "Reversed World",
         "jp": "逆さま世界",
-        "ko": "뒤집힌 세계"
+        "ko": "뒤집힌 세계",
+        "link": "https://seicing.com/html/labibana/WorldReversed.html"
     },
     {
         "cn": "灵气",
         "en": "Aura",
         "jp": "霊気",
-        "ko": "영기"
+        "ko": "영기",
+        "link": "https://seicing.com/html/labibana/Aura.html"
     },
     {
         "cn": "权现",
         "en": "Realized",
         "jp": "権現",
-        "ko": "곤겐"
+        "ko": "곤겐",
+        "link": "https://seicing.com/html/labibana/Realized.html"
     },
     {
         "cn": "龙脉",
         "en": "Dragonvein",
         "jp": "竜脈",
-        "ko": "용맥"
+        "ko": "용맥",
+        "link": "https://seicing.com/html/labibana/Dragonvein.html"
     },
     {
         "cn": "元",
         "en": "Sphere",
         "jp": "元",
-        "ko": "원"
+        "ko": "원",
+        "priority": 1,
+        "linkword": [
+            "帝国元",
+            "王国元"
+        ],
+        "link": "https://seicing.com/html/labibana/Point.html"
     },
     {
         "cn": "誓言",
         "en": "Oath",
         "jp": "誓い",
-        "ko": "서약"
+        "ko": "서약",
+        "link": "https://seicing.com/html/labibana/Oath.html"
     },
     {
         "cn": "大衰落",
         "en": "The Great Decline",
         "jp": "大衰退",
-        "ko": "대쇠퇴"
+        "ko": "대쇠퇴",
+        "link": "https://seicing.com/html/labibana/Decline.html"
     },
     {
         "cn": "汇流",
