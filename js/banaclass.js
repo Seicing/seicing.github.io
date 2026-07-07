@@ -23,9 +23,9 @@ function tipsgo(a) {
     document.getElementById("NorthernSeigine3").style.color = "#d0c9b7";
     document.getElementById("EasternSeigine3").style.color = "#d0c9b7";
     document.getElementById("GrandDelta3").style.color = "#d0c9b7";
-    document.getElementById("EasternAltrata3").style.color = "#d0c9b7";
-    document.getElementById("WesternAltrata3").style.color = "#d0c9b7";
-    document.getElementById("InnerAltrata3").style.color = "#d0c9b7";
+    document.getElementById("EasternAlthellata3").style.color = "#d0c9b7";
+    document.getElementById("WesternAlthellata3").style.color = "#d0c9b7";
+    document.getElementById("InnerAlthellata3").style.color = "#d0c9b7";
     document.getElementById("IuireMainland3").style.color = "#d0c9b7";
     document.getElementById("IuireSeparation3").style.color = "#d0c9b7";
     document.getElementById("OuterSeigine3").style.color = "#d0c9b7";
@@ -75,9 +75,9 @@ function tipsg(a, b) {
     document.getElementById("NorthernSeigine2").style.color = "#d0c9b7";
     document.getElementById("EasternSeigine2").style.color = "#d0c9b7";
     document.getElementById("GrandDelta2").style.color = "#d0c9b7";
-    document.getElementById("EasternAltrata2").style.color = "#d0c9b7";
-    document.getElementById("WesternAltrata2").style.color = "#d0c9b7";
-    document.getElementById("InnerAltrata2").style.color = "#d0c9b7";
+    document.getElementById("EasternAlthellata2").style.color = "#d0c9b7";
+    document.getElementById("WesternAlthellata2").style.color = "#d0c9b7";
+    document.getElementById("InnerAlthellata2").style.color = "#d0c9b7";
     document.getElementById("IuireMainland2").style.color = "#d0c9b7";
     document.getElementById("IuireSeparation2").style.color = "#d0c9b7";
     document.getElementById("OuterSeigine2").style.color = "#d0c9b7";
@@ -100,11 +100,11 @@ function tipsb(a, b) {
     var aaposbo5 = document.querySelector("#GrandDelta");
     aaposbo5.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/大三角洲' + a + '.png';
 
-    var aaposbo6 = document.querySelector("#EasternAltrata");
+    var aaposbo6 = document.querySelector("#EasternAlthellata");
     aaposbo6.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/东艾特拉塔' + a + '.png';
-    var aaposbo7 = document.querySelector("#WesternAltrata");
+    var aaposbo7 = document.querySelector("#WesternAlthellata");
     aaposbo7.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/西艾特拉塔' + a + '.png';
-    var aaposbo8 = document.querySelector("#InnerAltrata");
+    var aaposbo8 = document.querySelector("#InnerAlthellata");
     aaposbo8.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/内艾特拉塔' + a + '.png';
     var aaposbo9 = document.querySelector("#IuireMainland");
     aaposbo9.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/尤伊本岛' + a + '.png';
