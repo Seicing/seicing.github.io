@@ -14,6 +14,7 @@ function tipsbo(a) {
     var aaposbo15 = document.querySelector("#Describe937");
     aaposbo15.innerHTML = a.slice(0, -1);
     loadPage();
+    AutoTermLink();
 }
 
 function tipsgo(a) {
@@ -33,6 +34,7 @@ function tipsgo(a) {
     var aaposbo16 = document.querySelector("#Describe9372");
     aaposbo16.innerHTML = a.slice(0, -1);
     loadPage();
+    AutoTermLink();
 }
 
 
