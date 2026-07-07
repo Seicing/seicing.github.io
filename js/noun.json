@@ -59,7 +59,7 @@
             "帝国元",
             "王国元"
         ],
-        "link": "https://seicing.com/html/labibana/Point.html"
+        "link": "https://seicing.com/html/labibana/Sphere.html"
     },
     {
         "cn": "誓言",
@@ -98,10 +98,10 @@
     },
     {
         "cn": "大气生物",
-        "en": "Atmospheric Animal",
+        "en": "Atmospheric Creature",
         "jp": "大気生物",
         "ko": "대기 생물",
-        "link": "https://seicing.com/html/labibana/AtmosphericAnimal.html"
+        "link": "https://seicing.com/html/labibana/AtmosphericCreature.html"
     },
     {
         "cn": "鸣神",
@@ -179,6 +179,7 @@
         "cn": "西景",
         "en": "Seigine",
         "jp": "西景",
+        "jpsp": "セイギン",
         "ko": "서경",
         "ad": "𗪏𗂧",
         "linkword": [
@@ -352,6 +353,7 @@
         "cn": "夏州",
         "en": "Sya",
         "jp": "夏州",
+        "jpsp": "シャシュウ",
         "ko": "하주",
         "ad": "𘒂𗍁",
         "priority": 0
@@ -360,6 +362,7 @@
         "cn": "平成景",
         "en": "Pyengsengine",
         "jp": "平成景",
+        "jpsp": "ペンセンギン",
         "ko": "평성경",
         "ad": "𗦮𘌯𘊐",
         "priority": 0
@@ -377,6 +380,7 @@
         "cn": "德原",
         "en": "Dakyun",
         "jp": "徳原",
+        "jpsp": "トクゲン",
         "ko": "덕원",
         "ad": "𗁓𗤩",
         "priority": 0
@@ -394,16 +398,9 @@
         "cn": "高州",
         "en": "Karaondor",
         "jp": "高州",
+        "jpsp": "ゴシュウ",
         "ko": "고주",
         "ad": "𗣛𗍁",
-        "priority": 0
-    },
-    {
-        "cn": "坎斯坦穆",
-        "en": "Constamus",
-        "jp": "コンスタムス",
-        "ko": "콘스타무스",
-        "ad": "𐎣𐎴𐎿𐎫𐎴𐎠𐎾𐎸",
         "priority": 0
     },
     {
@@ -468,6 +465,14 @@
         "jp": "ゼレンブリアグ",
         "ko": "젤렌브리아그",
         "ad": "𐌶𐌴𐌻𐌴𐌽𐌱𐍂𐌹𐌰𐌲",
+        "priority": 0
+    },
+    {
+        "cn": "坎斯坦穆",
+        "en": "Constamus",
+        "jp": "コンスタムス",
+        "ko": "콘스타무스",
+        "ad": "𐎣𐎴𐎿𐎫𐎴𐎠𐎾𐎸",
         "priority": 0
     },
     {
