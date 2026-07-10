@@ -173,12 +173,6 @@ function AutoTermLink() {
 
         walk(document.body);
 
-        const unitCard = document.getElementById("unit-card");
-
-        if (unitCard) {
-            walk(unitCard);
-        }
-
     });
 
 }
