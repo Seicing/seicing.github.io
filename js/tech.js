@@ -704,7 +704,7 @@ let ayanami = {
     "蒙古哨站效果": /*html*/`伟大统治<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>伟大统治：哨站为骑兵和商人提供15%移动速度加成`,
     "敖包双倍": /*html*/`影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>影响力：敖包影响力范围内可以花费石头双倍训练部队(村民为120石头)`,
     "敖包牧场": /*html*/`影响力<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>影响力：敖包影响力范围内的牧场75秒生成1只羊`,
-    "白色浮屠佛塔敖包双倍": /*html*/`白色浮屠佛塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/白色浮屠佛塔.png' width='20px'>白色浮屠佛塔：石头双倍单位生产成本降低50%`,
+    "白色浮屠佛塔敖包双倍": /*html*/`白色浮屠佛塔<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/白色浮屠佛塔.png' width='20px'>白色浮屠佛塔：可作为敖包使用，石头双倍单位生产成本降低50%`,
     "蒙古掠夺": /*html*/`突袭赏金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/突袭赏金.png' width='20px'>突袭赏金：点燃建筑物掠夺25食物、25黄金`,
     "丝绸之路": /*html*/`丝绸之路<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/丝绸之路.png' width='20px'>丝绸之路：商人和商船总数达到5/10/15时获得额外的10%食物/木材/黄金`,
     "蒙古运输": /*html*/`强化运输<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/蒙古.png' width='20px'>强化运输：生命值+50%、移动速度+15% `,
