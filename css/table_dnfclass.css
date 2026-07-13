@@ -3,13 +3,14 @@
 :root {
     --saic-01: #888888;
     --saic-02: #ffffff;
+    --saic-03: #F5F8FA;
 }
 
 body.theme-dark {
-    --saic-01: #88888800;
-    --saic-02: #ffffff00;
+    --saic-01: #888888;
+    --saic-02: #1C1815;
+    --saic-03: #282420;
 }
-
 
 #customers {
     width: 100%;
@@ -81,7 +82,7 @@ body.theme-dark {
 .sisaick {
     padding: 4px;
     border-top: 1px solid #888888;
-    background-color: #F5F8FA;
+    background-color: var(--saic-03);
 }
 
 

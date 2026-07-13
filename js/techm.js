@@ -934,7 +934,7 @@ function handleDynamicSaicLayout() {
                 placeholder.style.width = cardWidth + 'px';
 
                 // 核心修改：动态自适应底色（日间为白色，夜间为 rgb(28, 24, 21)）
-                placeholder.style.background = isDark ? 'rgb(28, 24, 21)' : 'white';
+                placeholder.style.background = isDark ? '#1C1815' : '#FFFFFF';
 
                 placeholder.style.flexShrink = '0';
                 container.appendChild(placeholder);
