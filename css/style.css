@@ -39,10 +39,12 @@
     --scroll-track-bg-2: rgb(255, 255, 255);
     --scroll-thumb-bg: rgb(172, 166, 151);
 
-    /* --- 页脚与特定模块配色 --- */
+    /* --- 页脚与平板特定日间配色 --- */
     --bg-footer: #3D3630;
     --text-footer: #949085;
     --tablet-html-bg: #e2ddca;
+    --tablet-wrapper-bg: #ffffff;
+    /* 平板模式下的主容器日间背景色 */
 
     /* --- 科技树专用变量 --- */
     --tech-active-shadow: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
@@ -109,6 +111,8 @@ body.theme-dark {
     --bg-footer: #151311;
     --text-footer: #7f7a70;
     --tablet-html-bg: #1c1815;
+    --tablet-wrapper-bg: #1c1815;
+    /* 平板模式下的主容器自动同步为夜间深色 */
 
     /* 控制台按钮夜间颜色 */
     --btn-active-color: rgb(0, 255, 172);
@@ -118,11 +122,12 @@ body.theme-dark {
 /* 无头夜间特殊兼容 */
 body.layout-headless.theme-dark {
     --text-title: #ffffff;
+    --tablet-html-bg: #1c1815;
 }
 
 
 /* =====================================================================
-   4. 背景图加载区 (保持 1:1 物理像素比例，不使用 cover 强制拉伸)
+   4. 背景图加载区 (使用标准选择器，避免拉伸，保证 100% 原始重现)
    ===================================================================== */
 
 /* --- 4.1 默认/标准日间模式背景 --- */
@@ -137,25 +142,22 @@ body {
     background-image: url(https://seicing.com/res/img03.png);
     background-repeat: repeat-y;
     background-position: center top;
-    /* 移除 background-size，防止阴影条被拉伸变形为巨大的黑色色块 */
 }
 
 #wrapper2 {
     background-image: url(https://seicing.com/res/img02.png);
     background-repeat: no-repeat;
     background-position: center top;
-    /* 移除 background-size，保证顶部渐变图 1:1 精确呈现 */
 }
 
-/* --- 4.2 仅在大屏布局下进行拉伸 (layout-large) --- */
+/* --- 4.2 大屏布局背景图片切换 (layout-large) 
+       完全移除 background-size，防止由于高度过长导致横向图案被推开而失效 --- */
 body.layout-large #wrapper {
     background-image: url(https://seicing.com/res/img03b.png);
-    background-size: cover;
 }
 
 body.layout-large #wrapper2 {
     background-image: url(https://seicing.com/res/img02b.png);
-    background-size: cover;
 }
 
 /* --- 4.3 无头布局背景处理 (layout-headless) --- */
@@ -163,18 +165,38 @@ body.layout-headless #wrapper2 {
     background-image: none;
 }
 
-/* --- 4.4 夜间模式背景弱化/清空 (theme-dark) --- */
+/* =====================================================================
+   4.4 夜间模式背景图定义 (theme-dark)
+   ===================================================================== */
+
+/* --- 1. 标准分辨率下的夜间背景图 --- */
 body.theme-dark {
-    background-image: none;
+    /* 替换为您设计的夜间平铺底图。如果不需要图片，保持 none，则会直接使用夜间背景色 */
+    background-image: url(https://seicing.com/res/img01_dark.png);
 }
 
 body.theme-dark #wrapper {
-    background-image: none;
+    /* 替换为您设计的夜间竖向阴影条。如果不需要，设为 none */
+    background-image: url(https://seicing.com/res/img03_dark.png);
 }
 
 body.theme-dark #wrapper2 {
-    background-image: none;
+    /* 替换为您设计的夜间顶部过渡大图。如果不需要，设为 none */
+    background-image: url(https://seicing.com/res/img02_dark.png);
 }
+
+
+/* --- 2. 大屏幕模式下的夜间背景图 (layout-large 与 theme-dark 叠加) --- */
+body.layout-large.theme-dark #wrapper {
+    /* 替换为大屏专属的夜间竖向背景 */
+    background-image: url(https://seicing.com/res/img03b_dark.png);
+}
+
+body.layout-large.theme-dark #wrapper2 {
+    /* 替换为大屏专属的夜间顶部过渡大图 */
+    background-image: url(https://seicing.com/res/img02b_dark.png);
+}
+
 
 
 /* =====================================================================
@@ -1142,8 +1164,9 @@ div {
         bottom: auto;
     }
 
+    /* 将固定的白色改为使用变量，以适应夜间模式的颜色过渡 */
     #wrapper {
-        background: #ffffff !important;
+        background: var(--tablet-wrapper-bg) !important;
         width: 100% !important;
     }
 
