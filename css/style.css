@@ -56,6 +56,13 @@
     /* --- 控制台按钮基础颜色 --- */
     --btn-active-color: #6B1E1E;
     --btn-inactive-color: #857E6E;
+
+    --aoe4-title: #6e6e85;
+    --aoe4-statsagefont: #4D4D4D;
+    --aoe4-statsage1: #ddffda;
+    --aoe4-statsage2: #faffde;
+    --aoe4-statsage3: #fff1e1;
+    --aoe4-statsage4: #fce1e1;
 }
 
 /* =====================================================================
@@ -122,6 +129,13 @@ body.theme-dark {
     /* 控制台按钮夜间颜色 */
     --btn-active-color: rgb(0, 255, 172);
     --btn-inactive-color: #8c8577;
+
+    --aoe4-title: #b9b9e4;
+    --aoe4-statsagefont: #e2ddca;
+    --aoe4-statsage1: #ddffda77;
+    --aoe4-statsage2: #faffde77;
+    --aoe4-statsage3: #fff1e177;
+    --aoe4-statsage4: #fce1e177;
 }
 
 /* 无头夜间特殊兼容 */
@@ -204,6 +218,31 @@ body.layout-headless.theme-dark #wrapper2 {
 /* =====================================================================
    5. 核心样式主体 (应用尺寸与颜色变量)
    ===================================================================== */
+
+.aoe4title {
+    color: var(--aoe4-title);
+}
+
+.aoe4statsage1 {
+    background-color: var(--aoe4-statsage1);
+    color: var(--aoe4-statsagefont);
+}
+
+.aoe4statsage2 {
+    background-color: var(--aoe4-statsage2);
+    color: var(--aoe4-statsagefont);
+}
+
+.aoe4statsage3 {
+    background-color: var(--aoe4-statsage3);
+    color: var(--aoe4-statsagefont);
+}
+
+.aoe4statsage4 {
+    background-color: var(--aoe4-statsage4);
+    color: var(--aoe4-statsagefont);
+}
+
 
 body {
     margin: 0;
