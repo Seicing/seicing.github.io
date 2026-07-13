@@ -243,6 +243,18 @@ body.layout-headless.theme-dark #wrapper2 {
     color: var(--aoe4-statsagefont);
 }
 
+body a,
+body a:link,
+body a:visited,
+body a:active {
+    text-decoration: none;
+    color: var(--text-link);
+}
+
+body a:hover {
+    background-color: var(--text-link-hover-bg);
+    color: var(--text-link);
+}
 
 body {
     margin: 0;
