@@ -322,8 +322,12 @@ function aoetechPoeRush() {
 }
 
 
+
+
+
+
 // ============================
-// aoetech 自动生成样式
+// aoetech 自动生成样式与变量配置
 // ============================
 (function () {
     const style = document.createElement("style");
@@ -344,12 +348,7 @@ function aoetechPoeRush() {
       position: relative;
       width: 42px;
       height: 42px;
-      background-color: #f8f8f8;
-      /*
-       * 【重要】
-       * 边框现在被精细地控制为四个独立的边，
-       * JS将根据需要单独为它们上色。
-      */
+      background-color: var(--group-bg, #f8f8f8); /* 默认使用变量，无组格子后备日间底色 */
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
       border-left: 1px solid transparent;
@@ -357,8 +356,13 @@ function aoetechPoeRush() {
       box-sizing: border-box;
     }
 
+    /* 夜间模式下：默认无组格子自适应底色 */
+    body.theme-dark .aoetech-cell {
+      background-color: var(--group-bg, #282420); 
+    }
+
     .aoetech-cell img {
-      max-width:100%;
+      max-width: 100%;
       max-height: 100%;
       display: block;
     }
@@ -367,10 +371,30 @@ function aoetechPoeRush() {
       position: absolute;
       top: 0;
       left: 0;
-      width:100%;
+      width: 100%;
       height: 100%;
       pointer-events: none;
     }
+
+    /* ===================================================
+       组色彩定义 (日间模式 - 实色)
+       =================================================== */
+    .aoetech-cell[group="1"] { --group-bg: #eaf3ff; --group-border: #0058dbff; }
+    .aoetech-cell[group="2"] { --group-bg: #ffeaea; --group-border: #ff2424ff; }
+    .aoetech-cell[group="3"] { --group-bg: #f1ffe8; --group-border: #3eae06ff; }
+    .aoetech-cell[group="4"] { --group-bg: #f9eaff; --group-border: #9a00d2ff; }
+    .aoetech-cell[group="5"] { --group-bg: #eafffd; --group-border: #00dbd0ff; }
+    .aoetech-cell[group="6"] { --group-bg: #d9e0d7; --group-border: #a4b0a2; }
+
+    /* ===================================================
+       组色彩定义 (夜间模式 - 自动切换为 50% 半透明度)
+       =================================================== */
+    body.theme-dark .aoetech-cell[group="1"] { --group-bg: rgba(234, 243, 255, 0.5); --group-border: #0058dbff; }
+    body.theme-dark .aoetech-cell[group="2"] { --group-bg: rgba(255, 234, 234, 0.5); --group-border: #ff2424ff; }
+    body.theme-dark .aoetech-cell[group="3"] { --group-bg: rgba(241, 255, 232, 0.5); --group-border: #3eae06ff; }
+    body.theme-dark .aoetech-cell[group="4"] { --group-bg: rgba(249, 234, 255, 0.5); --group-border: #9a00d2ff; }
+    body.theme-dark .aoetech-cell[group="5"] { --group-bg: rgba(234, 255, 253, 0.5); --group-border: #00dbd0ff; }
+    body.theme-dark .aoetech-cell[group="6"] { --group-bg: rgba(217, 224, 215, 0.5); --group-border: #a4b0a2; }
   `;
     document.head.appendChild(style);
 })();
@@ -379,20 +403,10 @@ function aoetechPoeRush() {
 // aoetech 分组背景 + 区域外围描边 (新逻辑)
 // ============================
 (function () {
-    // 1. 定义颜色映射表
-    const groupColors = {
-        "1": "#eaf3ff", "2": "#ffeaea", "3": "#f1ffe8",
-        "4": "#f9eaff", "5": "#eafffd", "6": "#d9e0d7"
-    };
-    const groupBorderColors = {
-        "1": "#0058dbff", "2": "#ff2424ff", "3": "#3eae06ff",
-        "4": "#9a00d2ff", "5": "#00dbd0ff", "6": "#a4b0a2"
-    };
-
     const grid = [];
     const rows = document.querySelectorAll(".aoetech-tr-flex");
 
-    // 2. 构建网格数据结构，存储每个格子的元素和组信息
+    // 1. 构建网格数据结构，存储每个格子的元素和组信息
     rows.forEach(row => {
         const gridRow = [];
         const cells = row.querySelectorAll(".aoetech-cell");
@@ -405,7 +419,7 @@ function aoetechPoeRush() {
         grid.push(gridRow);
     });
 
-    // 3. 遍历网格，应用背景色和智能描边
+    // 2. 遍历网格，应用背景色变量和智能描边变量
     grid.forEach((row, r) => {
         row.forEach((cellInfo, c) => {
             const currentGroup = cellInfo.group;
@@ -413,14 +427,8 @@ function aoetechPoeRush() {
             // 如果当前格子没有分组，则跳过
             if (!currentGroup) return;
 
-            // 应用背景色
-            if (groupColors[currentGroup]) {
-                cellInfo.element.style.backgroundColor = groupColors[currentGroup];
-            }
-
-            // 获取描边颜色
-            const borderColor = groupBorderColors[currentGroup];
-            if (!borderColor) return;
+            // 直接将底色变量绑定给元素，浏览器会自动根据 theme-dark 选择正确的颜色和透明度
+            cellInfo.element.style.backgroundColor = "var(--group-bg)";
 
             // 检查四个方向的邻居
             const topNeighborGroup = (grid[r - 1] && grid[r - 1][c]) ? grid[r - 1][c].group : null;
@@ -428,18 +436,18 @@ function aoetechPoeRush() {
             const leftNeighborGroup = (grid[r][c - 1]) ? grid[r][c - 1].group : null;
             const rightNeighborGroup = (grid[r][c + 1]) ? grid[r][c + 1].group : null;
 
-            // 如果邻居不属于同一组，则在该方向绘制边框
+            // 同样将边框色直接指向 CSS 变量
             if (topNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderTopColor = borderColor;
+                cellInfo.element.style.borderTopColor = "var(--group-border)";
             }
             if (bottomNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderBottomColor = borderColor;
+                cellInfo.element.style.borderBottomColor = "var(--group-border)";
             }
             if (leftNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderLeftColor = borderColor;
+                cellInfo.element.style.borderLeftColor = "var(--group-border)";
             }
             if (rightNeighborGroup !== currentGroup) {
-                cellInfo.element.style.borderRightColor = borderColor;
+                cellInfo.element.style.borderRightColor = "var(--group-border)";
             }
         });
     });

@@ -122,7 +122,7 @@ function AutoTermLink() {
 
                         a.href = item.link;
                         a.textContent = item.word;
-                        a.style.color = "blue";
+                        a.class = "var(--special-link-color)";
 
                         frag.appendChild(a);
 

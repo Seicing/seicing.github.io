@@ -132,10 +132,10 @@ body.theme-dark {
 
     --aoe4-title: #b9b9e4;
     --aoe4-statsagefont: #e2ddca;
-    --aoe4-statsage1: #ddffda77;
-    --aoe4-statsage2: #faffde77;
-    --aoe4-statsage3: #fff1e177;
-    --aoe4-statsage4: #fce1e177;
+    --aoe4-statsage1: rgba(5, 55, 0, 0.5);
+    --aoe4-statsage2: rgba(88, 81, 0, 0.5);
+    --aoe4-statsage3: rgba(72, 38, 0, 0.5);
+    --aoe4-statsage4: rgba(75, 0, 0, 0.5);
 }
 
 /* 无头夜间特殊兼容 */
