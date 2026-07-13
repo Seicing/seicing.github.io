@@ -81,7 +81,7 @@
     <div :id="`${civ}Text0`" style="text-align:left;">
         <table id="customers2" width="780px">
             <tr v-for="sec in sections" :key="sec">
-                <td style="background-color:#F5F8FA;width:50px">{{ sec }}</td>
+                <td class="bcF5F8FA" style="width:50px">{{ sec }}</td>
                 <td style="text-align:left;">
                     <div style="display: flex; flex-wrap: wrap; border: 0; align-items: flex-start;">
                         <table v-for="unit in civItems.filter(i => i.section === sec)" :key="unit.name"
@@ -95,7 +95,7 @@
                             </tr>
                             <tr>
                                 <td width="48px" style="border:0;text-align:center">
-                                    <a :href="`${unit.link}.html?civ=${unit.civ}`" style="color:#0010ff">{{ unit.name
+                                    <a :href="`${unit.link}.html?civ=${unit.civ}`" class="special-link">{{ unit.name
                                         }}</a>
                                 </td>
                             </tr>

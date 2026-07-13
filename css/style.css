@@ -22,6 +22,8 @@
     --text-title: #25201c;
     --text-link: #D0C9B7;
     --text-link-hover-bg: #ffffff;
+    --special-link-color: #0010ff;
+    /* 强行指定的特殊链接日间默认颜色 */
 
     /* --- 侧边栏日间配色 --- */
     --text-sidebar-p: #726B63;
@@ -88,8 +90,11 @@ body.theme-dark {
     /* 调深主体背景色 */
     --text-primary: #e2ddca;
     --text-title: #ffffff;
-    --text-link: #d0c9b7;
+    --text-link: rgb(0, 255, 172);
+    /* 夜间默认超链接变为霓虹绿 */
     --text-link-hover-bg: #2d2925;
+    --special-link-color: rgb(0, 255, 172);
+    /* 强行指定的特殊链接夜间也变为霓虹绿 */
 
     /* 侧边栏夜间高亮 */
     --text-sidebar-p: #9c968a;
@@ -150,8 +155,7 @@ body {
     background-position: center top;
 }
 
-/* --- 4.2 大屏布局背景图片切换 (layout-large) 
-       完全移除 background-size，防止由于高度过长导致横向图案被推开而失效 --- */
+/* --- 4.2 大屏布局背景图片切换 (layout-large) --- */
 body.layout-large #wrapper {
     background-image: url(https://seicing.com/res/img03b.png);
 }
@@ -171,32 +175,30 @@ body.layout-headless #wrapper2 {
 
 /* --- 1. 标准分辨率下的夜间背景图 --- */
 body.theme-dark {
-    /* 替换为您设计的夜间平铺底图。如果不需要图片，保持 none，则会直接使用夜间背景色 */
     background-image: url(https://seicing.com/res/img01_dark.png);
 }
 
 body.theme-dark #wrapper {
-    /* 替换为您设计的夜间竖向阴影条。如果不需要，设为 none */
     background-image: url(https://seicing.com/res/img03_dark.png);
 }
 
 body.theme-dark #wrapper2 {
-    /* 替换为您设计的夜间顶部过渡大图。如果不需要，设为 none */
-    background-image: url(https://seicing.com/res/img02_dark.png);
+    background-image: url(https://seicing.com/res/img02.png);
 }
-
 
 /* --- 2. 大屏幕模式下的夜间背景图 (layout-large 与 theme-dark 叠加) --- */
 body.layout-large.theme-dark #wrapper {
-    /* 替换为大屏专属的夜间竖向背景 */
     background-image: url(https://seicing.com/res/img03b_dark.png);
 }
 
 body.layout-large.theme-dark #wrapper2 {
-    /* 替换为大屏专属的夜间顶部过渡大图 */
-    background-image: url(https://seicing.com/res/img02b_dark.png);
+    background-image: url(https://seicing.com/res/img02b.png);
 }
 
+/* --- 3. 解决无头模式在夜间依然错误生成 wrapper2 背景的问题 --- */
+body.layout-headless.theme-dark #wrapper2 {
+    background-image: none !important;
+}
 
 
 /* =====================================================================
@@ -756,6 +758,19 @@ div {
 #Aoe2techSp .aoeTechIconOff {
     opacity: calc(var(--tech-off-opacity) * 0.83);
     filter: var(--tech-off-filter);
+}
+
+
+/* =====================================================================
+   辅助类定义区 (暴力的颜色强制转换类)
+   ===================================================================== */
+.special-link {
+    color: var(--special-link-color) !important;
+}
+
+.active-page {
+    color: var(--btn-active-color) !important;
+    font-weight: bold !important;
 }
 
 
