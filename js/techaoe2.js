@@ -1092,6 +1092,7 @@ function aoetechPoeRush() {
 
 
 
+
 // ============================
 // aoetech 自动生成样式
 // ============================
@@ -1114,12 +1115,7 @@ function aoetechPoeRush() {
       position: relative;
       width: 42px;
       height: 42px;
-      background-color: #f8f8f8;
-      /*
-       * 【重要】
-       * 边框现在被精细地控制为四个独立的边，
-       * JS将根据需要单独为它们上色。
-      */
+      background-color: #f8f8f8; /* 日间默认底色 */
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
       border-left: 1px solid transparent;
@@ -1127,8 +1123,13 @@ function aoetechPoeRush() {
       box-sizing: border-box;
     }
 
+    /* 新增：夜间模式下默认底色自适应变暗 */
+    body.theme-dark .aoetech-cell {
+      background-color: #282420; 
+    }
+
     .aoetech-cell img {
-      max-width:100%;
+      max-width: 100%;
       max-height: 100%;
       display: block;
     }
@@ -1137,7 +1138,7 @@ function aoetechPoeRush() {
       position: absolute;
       top: 0;
       left: 0;
-      width:100%;
+      width: 100%;
       height: 100%;
       pointer-events: none;
     }
@@ -1175,7 +1176,10 @@ function aoetechPoeRush() {
         grid.push(gridRow);
     });
 
-    // 3. 遍历网格，应用背景色和智能描边
+    // 3. 检测是否处于夜间模式
+    const isDark = document.body.classList.contains("theme-dark");
+
+    // 4. 遍历网格，应用背景色和智能描边
     grid.forEach((row, r) => {
         row.forEach((cellInfo, c) => {
             const currentGroup = cellInfo.group;
@@ -1183,9 +1187,13 @@ function aoetechPoeRush() {
             // 如果当前格子没有分组，则跳过
             if (!currentGroup) return;
 
-            // 应用背景色
+            // 应用背景色 (如果是夜间模式，十六进制颜色追加 "80" 转换为 50% 半透明)
             if (groupColors[currentGroup]) {
-                cellInfo.element.style.backgroundColor = groupColors[currentGroup];
+                let color = groupColors[currentGroup];
+                if (isDark && color.startsWith("#") && color.length === 7) {
+                    color += "80"; // 例如 #eaf3ff 变为 #eaf3ff80
+                }
+                cellInfo.element.style.backgroundColor = color;
             }
 
             // 获取描边颜色
@@ -1214,11 +1222,6 @@ function aoetechPoeRush() {
         });
     });
 })();
-
-
-
-
-
 
 
 
