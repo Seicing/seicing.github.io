@@ -389,12 +389,12 @@ function aoetechPoeRush() {
     /* ===================================================
        组色彩定义 (夜间模式 - 自动切换为 50% 半透明度)
        =================================================== */
-    body.theme-dark .aoetech-cell[group="1"] { --group-bg: rgba(234, 243, 255, 0.5); --group-border: #0058dbff; }
-    body.theme-dark .aoetech-cell[group="2"] { --group-bg: rgba(255, 234, 234, 0.5); --group-border: #ff2424ff; }
-    body.theme-dark .aoetech-cell[group="3"] { --group-bg: rgba(241, 255, 232, 0.5); --group-border: #3eae06ff; }
-    body.theme-dark .aoetech-cell[group="4"] { --group-bg: rgba(249, 234, 255, 0.5); --group-border: #9a00d2ff; }
-    body.theme-dark .aoetech-cell[group="5"] { --group-bg: rgba(234, 255, 253, 0.5); --group-border: #00dbd0ff; }
-    body.theme-dark .aoetech-cell[group="6"] { --group-bg: rgba(217, 224, 215, 0.5); --group-border: #a4b0a2; }
+    body.theme-dark .aoetech-cell[group="1"] { --group-bg: rgba(0, 35, 82, 0.5); --group-border: #0058dbff; }
+    body.theme-dark .aoetech-cell[group="2"] { --group-bg: rgba(88, 0, 0, 0.5); --group-border: #ff2424ff; }
+    body.theme-dark .aoetech-cell[group="3"] { --group-bg: rgba(35, 93, 0, 0.5); --group-border: #3eae06ff; }
+    body.theme-dark .aoetech-cell[group="4"] { --group-bg: rgba(60, 0, 84, 0.5); --group-border: #9a00d2ff; }
+    body.theme-dark .aoetech-cell[group="5"] { --group-bg: rgba(0, 105, 94, 0.5); --group-border: #00dbd0ff; }
+    body.theme-dark .aoetech-cell[group="6"] { --group-bg: rgba(20, 94, 0, 0.5); --group-border: #a4b0a2; }
   `;
     document.head.appendChild(style);
 })();
