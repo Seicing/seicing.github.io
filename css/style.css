@@ -1,5 +1,5 @@
 /* =====================================================================
-   1. CSS 变量定义区 (全局默认值 - 标准版 + 日间模式)
+   1. CSS 变量定义区 (仅保留颜色和尺寸变量，不包含 https://seicing.com/res 图片路径)
    ===================================================================== */
 :root {
     /* --- 布局与尺寸变量 --- */
@@ -12,11 +12,6 @@
     --content-padding: 0px 30px;
     --entry-min-height: 500px;
     --sidebar-display: block;
-
-    /* --- 背景图变量 (拆分为纯 Image 变量，避免简写属性解析失败) --- */
-    --bg-body-image: url(https://seicing.com/res/img01.png);
-    --wrapper-bg-image: url(https://seicing.com/res/img03.png);
-    --wrapper2-bg-image: url(https://seicing.com/res/img02.png);
 
     /* --- 排版字号变量 --- */
     --h2-font-size: 2em;
@@ -60,14 +55,12 @@
 }
 
 /* =====================================================================
-   2. 布局差异覆写 (Layout Overrides)
+   2. 布局差异覆写 (Layout Overrides - 仅控制尺寸与排版)
    ===================================================================== */
 
 /* 大屏幕布局配置 (原 style_large.css) */
 body.layout-large {
-    --wrapper-bg-image: url(https://seicing.com/res/img03b.png);
     --wrapper-portrait-width: 1825px;
-    --wrapper2-bg-image: url(https://seicing.com/res/img02b.png);
     --container-width: 1550px;
     --header-width: 1825px;
     --menu-width: 1500px;
@@ -78,8 +71,6 @@ body.layout-large {
 
 /* 无头/嵌入布局配置 (原 style_headless.css) */
 body.layout-headless {
-    --wrapper2-bg-image: none;
-    /* 仅移除背景，绝不使用 display:none */
     --entry-min-height: 0px;
     --h2-font-size: 2.8em;
     --text-title: #000000;
@@ -88,47 +79,38 @@ body.layout-headless {
 
 
 /* =====================================================================
-   3. 夜间模式高对比度配色覆写 (Night Mode Theme)
+   3. 夜间模式配色覆写 (Night Mode Theme - 仅控制颜色)
    ===================================================================== */
 body.theme-dark {
-    /* --- 夜间基础背景与文字颜色 (大幅提升对比度) --- */
-    --bg-body-color: #1e1a17;
-    /* 温暖深灰，防止刺眼 */
-    --text-primary: #e4dfd5;
-    /* 柔和的浅沙色，提高文本可读性 */
+    --bg-body-color: #1c1815;
+    /* 调深主体背景色 */
+    --text-primary: #e2ddca;
     --text-title: #ffffff;
-    /* 纯白标题 */
-    --text-link: #d2c9b6;
-    /* 明亮的金色链接 */
-    --text-link-hover-bg: #35312d;
+    --text-link: #d0c9b7;
+    --text-link-hover-bg: #2d2925;
 
-    /* --- 夜间模式下移除或弱化可能导致刺眼的浅色大背景图 --- */
-    --bg-body-image: none;
-    --wrapper-bg-image: none;
-    --wrapper2-bg-image: none;
+    /* 侧边栏夜间高亮 */
+    --text-sidebar-p: #9c968a;
+    --text-sidebar-h2: #e2ddca;
+    --text-sidebar-a: #beb6a5;
+    --border-sidebar-li: 1px dashed #4e4840;
 
-    /* --- 侧边栏夜间高亮 --- */
-    --text-sidebar-p: #a29b8f;
-    --text-sidebar-h2: #eae5db;
-    --text-sidebar-a: #cdc5b6;
-    --border-sidebar-li: 1px dashed #48433d;
-
-    /* --- 辅助元素与表格夜间 --- */
-    --border-table: 1px solid #48433d;
-    --bg-table-highlight: #282421;
+    /* 辅助元素与表格夜间 */
+    --border-table: 1px solid #4e4840;
+    --bg-table-highlight: #282420;
     --hr-color: 1px solid #555555;
 
-    /* --- 滚动条夜间 --- */
-    --scroll-track-bg-1: #282421;
-    --scroll-track-bg-2: #1e1a17;
-    --scroll-thumb-bg: #5a534b;
+    /* 滚动条夜间 */
+    --scroll-track-bg-1: #282420;
+    --scroll-track-bg-2: #1c1815;
+    --scroll-thumb-bg: #5a5349;
 
-    /* --- 页脚与特定模块夜间 --- */
+    /* 页脚与特定模块夜间 */
     --bg-footer: #151311;
-    --text-footer: #807a70;
-    --tablet-html-bg: #1e1a17;
+    --text-footer: #7f7a70;
+    --tablet-html-bg: #1c1815;
 
-    /* --- 控制台按钮夜间颜色 --- */
+    /* 控制台按钮夜间颜色 */
     --btn-active-color: rgb(0, 255, 172);
     --btn-inactive-color: #8c8577;
 }
@@ -140,7 +122,65 @@ body.layout-headless.theme-dark {
 
 
 /* =====================================================================
-   4. 核心样式主体 (采用长写属性，确保浏览器百分之百解析背景图)
+   4. 背景图加载区 (使用传统标准写法，确保模板完美解析 https://seicing.com/res 路径)
+   ===================================================================== */
+
+/* --- 4.1 默认/标准日间模式背景 --- */
+body {
+    background-color: var(--bg-body-color);
+    background-image: url(https://seicing.com/res/img01.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+#wrapper {
+    background-image: url(https://seicing.com/res/img03.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: cover;
+}
+
+#wrapper2 {
+    background-image: url(https://seicing.com/res/img02.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/* --- 4.2 大屏布局背景图片切换 (layout-large) --- */
+body.layout-large #wrapper {
+    background-image: url(https://seicing.com/res/img03b.png);
+}
+
+body.layout-large #wrapper2 {
+    background-image: url(https://seicing.com/res/img02b.png);
+}
+
+/* --- 4.3 无头布局背景处理 (layout-headless) --- */
+body.layout-headless #wrapper2 {
+    background-image: none;
+    /* 仅清空背景，不隐藏容器，避免空白页 */
+}
+
+/* --- 4.4 夜间模式背景弱化/清空 (theme-dark) --- */
+body.theme-dark {
+    background-image: none;
+    /* 移除顶部亮色平铺纹理 */
+}
+
+body.theme-dark #wrapper {
+    background-image: none;
+    /* 移除浅色竖条大背景，靠深色纯色背景铺满 */
+}
+
+body.theme-dark #wrapper2 {
+    background-image: none;
+    /* 同样移除亮色竖条2 */
+}
+
+
+/* =====================================================================
+   5. 核心样式主体 (应用尺寸与颜色变量)
    ===================================================================== */
 
 body {
@@ -148,36 +188,13 @@ body {
     padding: 0;
     font-size: 9pt;
     color: var(--text-primary);
-
-    /* 拆分背景写法，保证 100% 解析成功 */
-    background-color: var(--bg-body-color);
-    background-image: var(--bg-body-image);
-    background-repeat: repeat-x;
-    background-position: left top;
-
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#wrapper {
-    /* 拆分背景图 */
-    background-image: var(--wrapper-bg-image);
-    background-repeat: repeat-y;
-    background-position: center top;
-    background-size: cover;
 }
 
 @media screen and (orientation:portrait) {
     #wrapper {
         width: var(--wrapper-portrait-width);
     }
-}
-
-#wrapper2 {
-    /* 拆分背景图 */
-    background-image: var(--wrapper2-bg-image);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
 }
 
 /* 自定义滚动条应用 */
@@ -723,7 +740,7 @@ div {
 
 
 /* =====================================================================
-   5. 帝国时代4科技树布局
+   6. 帝国时代4科技树布局
    ===================================================================== */
 .aoe4de-flex-container {
     padding: 0;
@@ -781,7 +798,7 @@ div {
 
 
 /* =====================================================================
-   6. 响应式布局 & 移动端侧边抽屉样式 (公共)
+   7. 响应式布局 & 移动端侧边抽屉样式 (公共)
    ==================================================================== */
 #mobile-drawer-container {
     display: block;
@@ -1110,7 +1127,7 @@ div {
 
 
 /* =====================================================================
-   7. 平板/小尺寸桌面专属样式 (768px - 1279px)
+   8. 平板/小尺寸桌面专属样式 (768px - 1279px)
    ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     .container {
