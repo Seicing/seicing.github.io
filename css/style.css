@@ -3,10 +3,7 @@
    ===================================================================== */
 :root {
     /* --- 布局与尺寸变量 --- */
-    --wrapper-bg: url(https://seicing.com/res/img03.png);
     --wrapper-portrait-width: 1280px;
-    --wrapper2-display: block;
-    --wrapper2-bg: url(https://seicing.com/res/img02.png);
     --container-width: 1000px;
     --header-width: 1280px;
     --menu-width: 652px;
@@ -16,12 +13,16 @@
     --entry-min-height: 500px;
     --sidebar-display: block;
 
+    /* --- 背景图变量 (拆分为纯 Image 变量，避免简写属性解析失败) --- */
+    --bg-body-image: url(https://seicing.com/res/img01.png);
+    --wrapper-bg-image: url(https://seicing.com/res/img03.png);
+    --wrapper2-bg-image: url(https://seicing.com/res/img02.png);
+
     /* --- 排版字号变量 --- */
     --h2-font-size: 2em;
 
     /* --- 日间模式基础配色变量 --- */
-    --bg-body: #EEEBDA;
-    --bg-body-img: url(https://seicing.com/res/img01.png);
+    --bg-body-color: #EEEBDA;
     --text-primary: #4D4D4D;
     --text-title: #25201c;
     --text-link: #D0C9B7;
@@ -52,6 +53,10 @@
     --tech-active-shadow: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
     --tech-off-opacity: 0.3;
     --tech-off-filter: sepia(1) saturate(0) hue-rotate(-30deg);
+
+    /* --- 控制台按钮基础颜色 --- */
+    --btn-active-color: #6B1E1E;
+    --btn-inactive-color: #857E6E;
 }
 
 /* =====================================================================
@@ -60,9 +65,9 @@
 
 /* 大屏幕布局配置 (原 style_large.css) */
 body.layout-large {
-    --wrapper-bg: url(https://seicing.com/res/img03b.png);
+    --wrapper-bg-image: url(https://seicing.com/res/img03b.png);
     --wrapper-portrait-width: 1825px;
-    --wrapper2-bg: url(https://seicing.com/res/img02b.png);
+    --wrapper2-bg-image: url(https://seicing.com/res/img02b.png);
     --container-width: 1550px;
     --header-width: 1825px;
     --menu-width: 1500px;
@@ -73,76 +78,107 @@ body.layout-large {
 
 /* 无头/嵌入布局配置 (原 style_headless.css) */
 body.layout-headless {
-    --wrapper2-display: none;
-    /* 移除Wrapper2背景 */
+    --wrapper2-bg-image: none;
+    /* 仅移除背景，绝不使用 display:none */
     --entry-min-height: 0px;
-    /* 取消文章正文最小高度 */
     --h2-font-size: 2.8em;
-    /* 标题字号增大 */
     --text-title: #000000;
-    /* 标题颜色为纯黑 */
     --tablet-html-bg: #ffffff;
-    /* 平板背景为白 */
 }
 
 
 /* =====================================================================
-   3. 夜间模式配色覆写 (Night Mode Theme)
+   3. 夜间模式高对比度配色覆写 (Night Mode Theme)
    ===================================================================== */
 body.theme-dark {
-    /* --- 夜间模式基础配色 --- */
-    --bg-body: #181614;
-    /* 深褐黑背景 */
-    --bg-body-img: none;
-    /* 可在此处换为夜间背景图 */
-    --text-primary: #BAB5AC;
-    /* 柔和浅灰文字 */
-    --text-title: #E0DDD5;
-    /* 近白高亮标题 */
-    --text-link: #8E8777;
-    /* 调暗的链接色 */
-    --text-link-hover-bg: #2C2A27;
+    /* --- 夜间基础背景与文字颜色 (大幅提升对比度) --- */
+    --bg-body-color: #1e1a17;
+    /* 温暖深灰，防止刺眼 */
+    --text-primary: #e4dfd5;
+    /* 柔和的浅沙色，提高文本可读性 */
+    --text-title: #ffffff;
+    /* 纯白标题 */
+    --text-link: #d2c9b6;
+    /* 明亮的金色链接 */
+    --text-link-hover-bg: #35312d;
 
-    /* --- 背景大图调暗 (可选，此处通过不透明度或纯色替代，防止图片刺眼) --- */
-    --wrapper-bg: linear-gradient(rgba(24, 22, 20, 0.9), rgba(24, 22, 20, 0.9)), url(https://seicing.com/res/img03.png);
-    --wrapper2-bg: linear-gradient(rgba(24, 22, 20, 0.8), rgba(24, 22, 20, 0.8)), url(https://seicing.com/res/img02.png);
+    /* --- 夜间模式下移除或弱化可能导致刺眼的浅色大背景图 --- */
+    --bg-body-image: none;
+    --wrapper-bg-image: none;
+    --wrapper2-bg-image: none;
 
-    /* --- 侧边栏夜间配色 --- */
-    --text-sidebar-p: #8C8478;
-    --text-sidebar-h2: #CDC7BD;
-    --text-sidebar-a: #A8A193;
-    --border-sidebar-li: 1px dashed #4E4A42;
+    /* --- 侧边栏夜间高亮 --- */
+    --text-sidebar-p: #a29b8f;
+    --text-sidebar-h2: #eae5db;
+    --text-sidebar-a: #cdc5b6;
+    --border-sidebar-li: 1px dashed #48433d;
 
-    /* --- 辅助元素与表格夜间配色 --- */
-    --border-table: 1px solid #444444;
-    --bg-table-highlight: #22211F;
-    --hr-color: 1px solid #444444;
+    /* --- 辅助元素与表格夜间 --- */
+    --border-table: 1px solid #48433d;
+    --bg-table-highlight: #282421;
+    --hr-color: 1px solid #555555;
 
-    /* --- 滚动条夜间配色 --- */
-    --scroll-track-bg-1: #22211F;
-    --scroll-track-bg-2: #181614;
-    --scroll-thumb-bg: #4E4A42;
+    /* --- 滚动条夜间 --- */
+    --scroll-track-bg-1: #282421;
+    --scroll-track-bg-2: #1e1a17;
+    --scroll-thumb-bg: #5a534b;
 
-    /* --- 页脚与平板特定配色 --- */
-    --bg-footer: #1F1B18;
-    --text-footer: #6E685D;
-    --tablet-html-bg: #181614;
+    /* --- 页脚与特定模块夜间 --- */
+    --bg-footer: #151311;
+    --text-footer: #807a70;
+    --tablet-html-bg: #1e1a17;
 
-    /* --- 科技树夜间兼容滤镜 (降低亮度，防刺眼) --- */
-    --tech-active-shadow: drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
-    --tech-off-opacity: 0.2;
-    --tech-off-filter: grayscale(1) brightness(0.5);
+    /* --- 控制台按钮夜间颜色 --- */
+    --btn-active-color: rgb(0, 255, 172);
+    --btn-inactive-color: #8c8577;
 }
 
-/* 如果在无头布局下又开启了夜间模式，将无头版的纯黑标题转为夜间浅色 */
+/* 无头夜间特殊兼容 */
 body.layout-headless.theme-dark {
-    --text-title: #E0DDD5;
+    --text-title: #ffffff;
 }
 
 
 /* =====================================================================
-   4. 核心样式主体 (应用上述所有变量)
+   4. 核心样式主体 (采用长写属性，确保浏览器百分之百解析背景图)
    ===================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 9pt;
+    color: var(--text-primary);
+
+    /* 拆分背景写法，保证 100% 解析成功 */
+    background-color: var(--bg-body-color);
+    background-image: var(--bg-body-image);
+    background-repeat: repeat-x;
+    background-position: left top;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#wrapper {
+    /* 拆分背景图 */
+    background-image: var(--wrapper-bg-image);
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: cover;
+}
+
+@media screen and (orientation:portrait) {
+    #wrapper {
+        width: var(--wrapper-portrait-width);
+    }
+}
+
+#wrapper2 {
+    /* 拆分背景图 */
+    background-image: var(--wrapper2-bg-image);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
 
 /* 自定义滚动条应用 */
 #scroll-1::-webkit-scrollbar {
@@ -199,16 +235,6 @@ body.layout-headless.theme-dark {
     background: var(--scroll-thumb-bg);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg-body) var(--bg-body-img) repeat-x left top;
-    font-size: 9pt;
-    color: var(--text-primary);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* 切换夜间模式时提供平滑过渡 */
-}
-
 a:hover {
     background-color: var(--text-link-hover-bg);
 }
@@ -246,23 +272,6 @@ ol {
 a {
     text-decoration: none;
     color: var(--text-link);
-}
-
-#wrapper {
-    background: var(--wrapper-bg) repeat-y center top;
-    background-size: cover;
-}
-
-@media screen and (orientation:portrait) {
-    #wrapper {
-        width: var(--wrapper-portrait-width);
-    }
-}
-
-#wrapper2 {
-    display: var(--wrapper2-display);
-    background: var(--wrapper2-bg) no-repeat center top;
-    background-size: cover;
 }
 
 .container {
@@ -1092,7 +1101,7 @@ div {
         margin: 0 auto !important;
     }
 
-    /* 允许 Leaflet 接管触控 (无头布局特性在满足条件时自适应生效) */
+    /* 允许 Leaflet 接管触控 */
     #map,
     .leaflet-container {
         touch-action: none;
