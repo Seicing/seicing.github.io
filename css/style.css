@@ -122,7 +122,7 @@ body.layout-headless.theme-dark {
 
 
 /* =====================================================================
-   4. 背景图加载区 (使用传统标准写法，确保模板完美解析 https://seicing.com/res 路径)
+   4. 背景图加载区 (保持 1:1 物理像素比例，不使用 cover 强制拉伸)
    ===================================================================== */
 
 /* --- 4.1 默认/标准日间模式背景 --- */
@@ -137,45 +137,43 @@ body {
     background-image: url(https://seicing.com/res/img03.png);
     background-repeat: repeat-y;
     background-position: center top;
-    background-size: cover;
+    /* 移除 background-size，防止阴影条被拉伸变形为巨大的黑色色块 */
 }
 
 #wrapper2 {
     background-image: url(https://seicing.com/res/img02.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    /* 移除 background-size，保证顶部渐变图 1:1 精确呈现 */
 }
 
-/* --- 4.2 大屏布局背景图片切换 (layout-large) --- */
+/* --- 4.2 仅在大屏布局下进行拉伸 (layout-large) --- */
 body.layout-large #wrapper {
     background-image: url(https://seicing.com/res/img03b.png);
+    background-size: cover;
 }
 
 body.layout-large #wrapper2 {
     background-image: url(https://seicing.com/res/img02b.png);
+    background-size: cover;
 }
 
 /* --- 4.3 无头布局背景处理 (layout-headless) --- */
 body.layout-headless #wrapper2 {
     background-image: none;
-    /* 仅清空背景，不隐藏容器，避免空白页 */
 }
 
 /* --- 4.4 夜间模式背景弱化/清空 (theme-dark) --- */
 body.theme-dark {
     background-image: none;
-    /* 移除顶部亮色平铺纹理 */
 }
 
 body.theme-dark #wrapper {
     background-image: none;
-    /* 移除浅色竖条大背景，靠深色纯色背景铺满 */
 }
 
 body.theme-dark #wrapper2 {
     background-image: none;
-    /* 同样移除亮色竖条2 */
 }
 
 
