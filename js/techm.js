@@ -897,6 +897,9 @@ function handleDynamicSaicLayout() {
     const cardWidth = 150; // 每张卡片的固定宽度
     const gap = 1;         // 卡片间的缝隙
 
+    // 核心修改：检测当前页面是否正处于夜间模式
+    const isDark = document.body.classList.contains('theme-dark');
+
     saicContainers.forEach(container => {
         // --- 每次重新计算前，必须移除之前添加的所有占位符 ---
         const existingPlaceholders = container.querySelectorAll('.saic-placeholder');
@@ -919,7 +922,7 @@ function handleDynamicSaicLayout() {
         const targetSaicWidth = perRow * cardWidth + (perRow - 1) * gap;
         container.style.width = targetSaicWidth + 'px';
 
-        // 4. 计算并用纯白卡片填满最后一行
+        // 4. 计算并用填充卡片填满最后一行
         const originalCardsCount = container.children.length;
         const remainder = originalCardsCount % perRow;
 
@@ -929,7 +932,10 @@ function handleDynamicSaicLayout() {
                 const placeholder = document.createElement('div');
                 placeholder.className = 'saic-placeholder';
                 placeholder.style.width = cardWidth + 'px';
-                placeholder.style.background = 'white';
+
+                // 核心修改：动态自适应底色（日间为白色，夜间为 rgb(28, 24, 21)）
+                placeholder.style.background = isDark ? 'rgb(28, 24, 21)' : 'white';
+
                 placeholder.style.flexShrink = '0';
                 container.appendChild(placeholder);
             }

@@ -43,14 +43,14 @@
     flex-wrap: wrap;
     gap: 1px;
     padding: 1px;
-    background: #888888;
+    background-color: var(--saic-01);
 }
 
 .sisaic {
     width: 150px;
     display: inline-block;
     text-align: center;
-    background-color: white;
+    background-color: var(--saic-02);
 }
 
 .sisaicg {
