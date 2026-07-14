@@ -23,6 +23,7 @@
     --text-link: #D0C9B7;
     --text-link-hover-bg: #ffffff;
     --special-link-color: #0010ff;
+    --special-text-link: #D0C9B7;
     /* 强行指定的特殊链接日间默认颜色 */
 
     /* --- 侧边栏日间配色 --- */
@@ -101,6 +102,7 @@ body.theme-dark {
     /* 夜间默认超链接变为霓虹绿 */
     --text-link-hover-bg: #2d2925;
     --special-link-color: rgb(0, 255, 172);
+    --special-text-link: rgb(9, 97, 68);
     /* 强行指定的特殊链接夜间也变为霓虹绿 */
 
     /* 侧边栏夜间高亮 */
@@ -218,6 +220,10 @@ body.layout-headless.theme-dark #wrapper2 {
 /* =====================================================================
    5. 核心样式主体 (应用尺寸与颜色变量)
    ===================================================================== */
+
+.special-text-link {
+    color: var(--special-text-link);
+}
 
 .aoe4title {
     color: var(--aoe4-title);

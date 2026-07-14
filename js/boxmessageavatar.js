@@ -14,7 +14,8 @@ function tipsg(targetTextId, targetButtonId, suffix) {
         var elBtn = document.getElementById(tempBtnId);
 
         if (elText) elText.style.display = "none";
-        if (elBtn) elBtn.style.color = "#d0c9b7";
+        if (elBtn) elBtn.style.color = "var(--text-link)";
+        if (elBtn) elBtn.classList.remove("special-link"); // 去掉 class
     }
 
     // 2. 激活：显示当前点击的内容
@@ -22,7 +23,7 @@ function tipsg(targetTextId, targetButtonId, suffix) {
     var currentBtn = document.getElementById(targetButtonId);
 
     if (currentText) currentText.style.display = "block";
-    if (currentBtn) currentBtn.style.color = "blue";
+    if (currentBtn) currentBtn.classList.add("special-link");
 
     // 3. 加载图片：只处理当前显示区域内的图片
     // 这里的选择器只找当前 div 下的 img

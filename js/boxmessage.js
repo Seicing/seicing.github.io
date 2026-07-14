@@ -15,6 +15,7 @@ function tipsg(a, b, c) {
     var btnElem = document.getElementById(b);
     if (btnElem) {
         btnElem.classList.add("special-link");
+        btnElem.classList.remove("special-text-link");
     }
 }
 
@@ -31,8 +32,8 @@ function cleargasek(a) {
     for (var g = 0; g < listButton.length; g++) {
         var btnElem = document.getElementById(listButton[g] + a);
         if (btnElem) {
-            btnElem.style.color = "var(--text-link)";
-            btnElem.classList.remove("special-link"); // 去掉 class
+            btnElem.classList.add("special-text-link");
+            btnElem.classList.remove("special-link");
         }
     }
 }
