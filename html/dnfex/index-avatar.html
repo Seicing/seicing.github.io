@@ -56,8 +56,18 @@
 
             // 创建替代文本标签
             var textSpan = document.createElement('span');
-            textSpan.innerText = '此职业<br>无此装扮';
-            textSpan.style.display = 'block'; // 保持块级居中样式
+
+            // 注意：因为含有 <br> 换行标签，这里必须使用 innerHTML 才能正常换行
+            textSpan.innerHTML = '此职业<br>无此装扮';
+
+            // 使用 Flex 布局实现完美的水平和垂直居中
+            textSpan.style.display = 'flex';
+            textSpan.style.alignItems = 'center';       // 垂直居中
+            textSpan.style.justifyContent = 'center';     // 水平居中
+            textSpan.style.textAlign = 'center';         // 确保多行文本自身也是居中对齐的
+
+            // 设定高度和字体样式（可根据实际情况微调大小和颜色）
+            textSpan.style.minHeight = '150px';
 
             // 执行替换
             if (target.parentNode) {
@@ -166,10 +176,8 @@
 &nbsp
 <a id="tbutton0" href="javascript:void(0);" onclick="tipsg('ttext0','tbutton0','0')" class="special-text-link">2025年</a>
 &nbsp
-
 <a id="ubutton0" href="javascript:void(0);" onclick="tipsg('utext0','ubutton0','0')" class="special-text-link">2026年</a>
 &nbsp
-
 <a id="nbutton0" href="javascript:void(0);" onclick="tipsg('ntext0','nbutton0','0')" class="special-text-link">国服未发售</a>
 &nbsp
 <a id="obutton0" href="javascript:void(0);" onclick="tipsg('otext0','obutton0','0')" class="special-text-link">特殊</a>
