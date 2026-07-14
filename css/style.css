@@ -64,6 +64,11 @@
     --aoe4-statsage2: #faffde;
     --aoe4-statsage3: #fff1e1;
     --aoe4-statsage4: #fce1e1;
+
+    --saga2-table: #6da6e2;
+    --saga2-table-st: #d2d2d2;
+    --saga2-table-1: #ffffff;
+    --saga2-table-2: #f0f0f0;
 }
 
 /* =====================================================================
@@ -138,6 +143,11 @@ body.theme-dark {
     --aoe4-statsage2: rgba(88, 81, 0, 0.5);
     --aoe4-statsage3: rgba(72, 38, 0, 0.5);
     --aoe4-statsage4: rgba(75, 0, 0, 0.5);
+
+    --saga2-table: #282420;
+    --saga2-table-st: #282420;
+    --saga2-table-1: #28242000;
+    --saga2-table-2: #28242000;
 }
 
 /* 无头夜间特殊兼容 */
@@ -248,6 +258,24 @@ body.layout-headless.theme-dark #wrapper2 {
     background-color: var(--aoe4-statsage4);
     color: var(--aoe4-statsagefont);
 }
+
+.saga2table {
+    background-color: var(--saga2-table);
+}
+
+.saga2tablest {
+    background-color: var(--saga2-table-st);
+}
+
+.saga2table1 {
+    background-color: var(--saga2-table-1);
+}
+
+.saga2table2 {
+    background-color: var(--saga2-table-2);
+}
+
+
 
 body {
     margin: 0;
