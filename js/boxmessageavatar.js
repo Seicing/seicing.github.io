@@ -14,7 +14,7 @@ function tipsg(targetTextId, targetButtonId, suffix) {
         var elBtn = document.getElementById(tempBtnId);
 
         if (elText) elText.style.display = "none";
-        if (elBtn) elBtn.style.color = "var(--text-link)";
+        if (elBtn) elBtn.classList.add("special-text-link"); // 去掉 class
         if (elBtn) elBtn.classList.remove("special-link"); // 去掉 class
     }
 
@@ -24,6 +24,7 @@ function tipsg(targetTextId, targetButtonId, suffix) {
 
     if (currentText) currentText.style.display = "block";
     if (currentBtn) currentBtn.classList.add("special-link");
+    if (currentBtn) currentBtn.classList.remove("special-text-link");
 
     // 3. 加载图片：只处理当前显示区域内的图片
     // 这里的选择器只找当前 div 下的 img
