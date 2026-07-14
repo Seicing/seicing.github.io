@@ -1,9 +1,11 @@
 ﻿:root {
     --keru-bg-body-color: #FFFFFF;
+    --keru-bg-side-color: #000000;
 }
 
 body.theme-dark {
     --keru-bg-body-color: #1C1815;
+    --keru-bg-side-color: #d0c9b7;
 }
 
 li {
@@ -18,9 +20,9 @@ li {
 }
 
 .unit-card {
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    border-top: 1px solid var(--keru-bg-side-color);
+    border-left: 1px solid var(--keru-bg-side-color);
+    border-right: 1px solid var(--keru-bg-side-color);
     width: 700px;
     margin: 10px 0;
     box-sizing: border-box;
@@ -57,13 +59,13 @@ li {
 
 /* 左右图片描边 */
 .img-left {
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-right: 1px solid var(--keru-bg-side-color);
+    border-bottom: 1px solid var(--keru-bg-side-color);
 }
 
 .img-right {
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-left: 1px solid var(--keru-bg-side-color);
+    border-bottom: 1px solid var(--keru-bg-side-color);
 }
 
 /* 中间内容 */
@@ -72,14 +74,14 @@ li {
     background-color: var(--keru-bg-body-color);
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--keru-bg-side-color);
     /* 下边描边 */
 }
 
 .unit-desc {
     padding: 2px;
     margin-bottom: 1px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--keru-bg-side-color);
     min-height: 168px;
 }
 
@@ -99,14 +101,14 @@ li {
     display: flex;
     align-items: stretch;
     background-color: var(--keru-bg-body-color);
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--keru-bg-side-color);
     box-sizing: border-box;
 }
 
 .unit-name {
     min-height: 18px;
     padding: 2px;
-    border-right: 1px solid #000;
+    border-right: 1px solid var(--keru-bg-side-color);
     width: 100px;
     display: flex;
     align-items: center;
@@ -140,8 +142,8 @@ li {
 
     .unit-desc {
         padding: 2px;
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
+        border-bottom: 1px solid var(--keru-bg-side-color);
+        border-top: 1px solid var(--keru-bg-side-color);
         min-height: 20px;
     }
 
@@ -175,7 +177,7 @@ li {
     .unit-center {
         flex-basis: 100%;
         order: 3;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid var(--keru-bg-side-color);
         margin: 1px 0 0 0;
     }
 

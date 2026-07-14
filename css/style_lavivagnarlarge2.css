@@ -205,10 +205,8 @@ body.theme-dark #wrapper3 {
    5. 核心样式主体 (应用尺寸与颜色变量，不改动一分一毫的像素/位置属性)
    ===================================================================== */
 
-body.theme-dark img[src*="n.png"] {
-    /* 降低不透明度至 35% ~ 40%，亮度降低，使其完美融入暗色背景 */
-    filter: opacity(0.4) brightness(0.8);
-    transition: filter 0.3s ease;
+body.theme-dark img[src$="/n.png"] {
+    filter: opacity(1) brightness(0.2);
 }
 
 .special-text-link {
@@ -309,8 +307,6 @@ body.theme-dark img[src*="n.png"] {
 #scroll-2::-webkit-scrollbar-resizer {
     background: var(--scroll-thumb-bg);
 }
-
-
 
 ::-webkit-scrollbar {
     width: 10px;
