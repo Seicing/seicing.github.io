@@ -1924,6 +1924,34 @@ function handleDynamicSaicLayout() {
                 container.appendChild(placeholder);
             }
         }
+
+        // ==========================================
+        // 新增：动态同步当前容器内所有 .sisaick 的高度
+        // ==========================================
+        const textBlocks = container.querySelectorAll('.sisaick');
+        if (textBlocks.length > 0) {
+            // 1. 先重置高度，避免受上一次计算的影响
+            textBlocks.forEach(block => {
+                block.style.height = 'auto';
+            });
+
+            // 2. 找出所有文本框中最大的实际高度
+            let maxHeight = 0;
+            textBlocks.forEach(block => {
+                if (block.offsetHeight > maxHeight) {
+                    maxHeight = block.offsetHeight;
+                }
+            });
+
+            // 3. 将最大高度应用到所有的文本框上，实现整齐划一
+            textBlocks.forEach(block => {
+                block.style.height = maxHeight + 'px';
+                // 配合 flex 居中样式
+                block.style.display = 'flex';
+                block.style.alignItems = 'center';
+                block.style.justifyContent = 'center';
+            });
+        }
     });
 }
 

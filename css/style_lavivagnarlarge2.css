@@ -204,8 +204,6 @@ body.theme-dark #wrapper3 {
 /* =====================================================================
    5. 核心样式主体 (应用尺寸与颜色变量，不改动一分一毫的像素/位置属性)
    ===================================================================== */
-
-
 img[src$="/n.png"] {
     filter: brightness(0) invert(1);
 }
@@ -214,9 +212,9 @@ body.theme-dark img[src$="/n.png"] {
     filter: none !important;
 }
 
-
 .special-text-link {
     color: var(--special-text-link);
+    text-decoration-line: none;
 }
 
 .aoe4title {
@@ -292,7 +290,7 @@ body.theme-dark img[src$="/n.png"] {
 }
 
 .special-link {
-    color: var(--special-link-color) !important;
+    color: var(--special-link-color);
     text-decoration-line: none;
 }
 
