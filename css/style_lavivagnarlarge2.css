@@ -207,7 +207,7 @@ body.theme-dark #wrapper3 {
 
 
 img[src$="/n.png"] {
-    filter: brightness(10);
+    filter: brightness(0) invert(1);
 }
 
 body.theme-dark img[src$="/n.png"] {
