@@ -1,16 +1,255 @@
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
+/* =====================================================================
+   1. CSS 变量定义区 (仅控制颜色，绝不涉及任何物理像素大小)
+   ===================================================================== */
+:root {
+    /* --- 日间模式基础配色变量 --- */
+    --bg-body-color: #EEEBDA;
+    --text-primary: #4D4D4D;
+    --text-title: #000000;
+    --text-link: #949085;
+    --text-link-hover-bg: #ffffff;
+    --special-link-color: #0010ff;
+    --special-text-link: #949085;
 
+    /* --- 侧边栏/徽标/页脚特有的浅金色调 --- */
+    --gold-muted: #CABC85;
+    --text-sidebar-p: #CABC85;
+    --text-sidebar-h2: #2E2E2E;
+    --border-sidebar-li: 1px dashed #A5A08C;
 
-/*
-@font-face {
-    font-family:"Hiragino Sans GB",冬青黑体简体中文,宋体,微软雅黑;
-    src: url(rgs.ttc);
+    /* --- 辅助元素与表格日间配色 --- */
+    --border-table: 1px solid grey;
+    --bg-table-highlight: #F5F8FA;
+    --hr-color: 1px solid #555555;
+
+    /* --- 滚动条日间配色 --- */
+    --scroll-track-bg-1: rgb(241, 235, 217);
+    --scroll-track-bg-2: rgb(255, 255, 255);
+    --scroll-thumb-bg: rgb(172, 166, 151);
+
+    /* --- 页脚与平板特定日间配色 --- */
+    --bg-footer: #3D3630;
+    --text-footer: #CABC85;
+    --tablet-html-bg: #e2ddca;
+    --tablet-wrapper-bg: #ffffff;
+
+    /* --- 科技树专用变量 --- */
+    --tech-active-shadow: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+    --tech-off-opacity: 0.3;
+    --tech-off-filter: sepia(1) saturate(0) hue-rotate(-30deg);
+
+    /* --- 控制台按钮基础颜色 --- */
+    --btn-active-color: #6B1E1E;
+    --btn-inactive-color: #857E6E;
+
+    /* --- 自定义模板扩展色彩日间默认值 --- */
+    --logo-link-color: #FFFFFF;
+    --logo-p-color: #FFFFFF;
+    --search-bg: #D0C9B7;
+    --search-submit-bg: #1D1D1D;
+    --search-submit-color: #FFF;
+    --menu-link-color: #FFFFFF;
+
+    --aoe4-title: #6e6e85;
+    --aoe4-statsagefont: #4D4D4D;
+    --aoe4-statsage1: #ddffda;
+    --aoe4-statsage2: #faffde;
+    --aoe4-statsage3: #fff1e1;
+    --aoe4-statsage4: #fce1e1;
+
+    --saga2-table: #6da6e2;
+    --saga2-table-st: #d2d2d2;
+    --saga2-table-bg: #2763a5;
+    --saga2-table-1: #ffffff;
+    --saga2-table-2: #f0f0f0;
+
+    --laviva-blue: #cae5ff;
+    --laviva-white: #eff7ff;
 }
-*/
+
+/* =====================================================================
+   2. 布局差异覆写 (保持默认无头自适应)
+   ===================================================================== */
+body.layout-headless {
+    --text-title: #000000;
+    --tablet-html-bg: #ffffff;
+}
+
+/* =====================================================================
+   3. 夜间模式配色覆写 (全部统一为 #373331 纯色，无任何背景图)
+   ===================================================================== */
+body.theme-dark {
+    --bg-body-color: #373331;
+    /* 统一底色为 #373331 */
+    --text-primary: #e2ddca;
+    --text-title: #ffffff;
+    --text-link: rgb(0, 255, 172);
+    /* 默认超链接在夜间自动变为霓虹绿 */
+    --text-link-hover-bg: #2d2925;
+    --special-link-color: rgb(0, 255, 172);
+    --special-text-link: #8c8577;
+
+    /* 侧边栏及页脚特有的古朴浅金色调 (夜间过渡) */
+    --gold-muted: #b0a170;
+    --text-sidebar-p: #b0a170;
+    --text-sidebar-h2: #e2ddca;
+    --border-sidebar-li: 1px dashed #4e4840;
+
+    /* 辅助元素与表格夜间 */
+    --border-table: 1px solid #4e4840;
+    --bg-table-highlight: #282420;
+    --hr-color: 1px solid #555555;
+
+    /* 滚动条夜间 */
+    --scroll-track-bg-1: #282420;
+    --scroll-track-bg-2: #1c1815;
+    --scroll-thumb-bg: #5a5349;
+
+    /* 页脚与特定模块夜间 */
+    --bg-footer: #151311;
+    --text-footer: #b0a170;
+    --tablet-html-bg: #1c1815;
+    --tablet-wrapper-bg: #373331;
+    /* 平板模式下的内容区同样设为夜间深色 */
+
+    /* 控制台按钮夜间颜色 */
+    --btn-active-color: rgb(0, 255, 172);
+    --btn-inactive-color: #8c8577;
+
+    /* 控制台辅助属性 */
+    --logo-link-color: #ffffff;
+    --logo-p-color: #e2ddca;
+    --search-bg: #2d2925;
+    --search-submit-bg: #151311;
+    --search-submit-color: #e2ddca;
+    --menu-link-color: #ffffff;
+
+    --aoe4-title: #b9b9e4;
+    --aoe4-statsagefont: #e2ddca;
+    --aoe4-statsage1: rgba(5, 55, 0, 0.5);
+    --aoe4-statsage2: rgba(88, 81, 0, 0.5);
+    --aoe4-statsage3: rgba(72, 38, 0, 0.5);
+    --aoe4-statsage4: rgba(75, 0, 0, 0.5);
+
+    --saga2-table: #282420;
+    --saga2-table-st: #282420;
+    --saga2-table-bg: #2764a500;
+    --saga2-table-1: #28242000;
+    --saga2-table-2: #28242000;
+
+    --laviva-blue: #282420;
+    --laviva-white: #282420;
+}
+
+body.layout-headless.theme-dark {
+    --text-title: #ffffff;
+    --tablet-html-bg: #1c1815;
+}
+
+
+/* =====================================================================
+   4. 背景图加载与夜间模式强制纯色重置 (100% 精准控制)
+   ===================================================================== */
+
+/* 日间默认背景加载规则 */
+body {
+    background-color: var(--bg-body-color);
+    background-image: url(https://seicing.com/res/img01.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+#wrapper {
+    background-image: url(https://seicing.com/res/img03lb2.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+#wrapper2 {
+    background-image: url(https://seicing.com/res/img02lb2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#wrapper3 {
+    background-image: url(https://seicing.com/res/img04lb2.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+/* 核心夜间覆写：强制移除所有背景图片，底色完全由 #373331 纯色填充 */
+body.theme-dark {
+    background-image: none !important;
+    background-color: #373331 !important;
+}
+
+body.theme-dark #wrapper,
+body.theme-dark #wrapper2,
+body.theme-dark #wrapper3 {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+
+/* =====================================================================
+   5. 核心样式主体 (应用尺寸与颜色变量，不改动一分一毫的像素/位置属性)
+   ===================================================================== */
+
+.special-text-link {
+    color: var(--special-text-link);
+}
+
+.aoe4title {
+    color: var(--aoe4-title);
+}
+
+.aoe4statsage1 {
+    background-color: var(--aoe4-statsage1);
+    color: var(--aoe4-statsagefont);
+}
+
+.aoe4statsage2 {
+    background-color: var(--aoe4-statsage2);
+    color: var(--aoe4-statsagefont);
+}
+
+.aoe4statsage3 {
+    background-color: var(--aoe4-statsage3);
+    color: var(--aoe4-statsagefont);
+}
+
+.aoe4statsage4 {
+    background-color: var(--aoe4-statsage4);
+    color: var(--aoe4-statsagefont);
+}
+
+.saga2tablebg {
+    background-color: var(--saga2-table-bg);
+}
+
+.saga2table {
+    background-color: var(--saga2-table);
+}
+
+.saga2tablest {
+    background-color: var(--saga2-table-st);
+}
+
+.saga2table1 {
+    background-color: var(--saga2-table-1);
+}
+
+.saga2table2 {
+    background-color: var(--saga2-table-2);
+}
+
+.lavivablue {
+    background-color: var(--laviva-blue);
+}
+
+.lavivawhite {
+    background-color: var(--laviva-white);
+}
 
 #scroll-2::-webkit-scrollbar {
     width: 10px;
@@ -18,35 +257,30 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 #scroll-2::-webkit-scrollbar-button {
-    background-color: rgb(172, 166, 151);
+    background-color: var(--scroll-thumb-bg);
     display: none;
 }
 
 #scroll-2::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
+    background: var(--scroll-track-bg-2);
 }
 
 #scroll-2::-webkit-scrollbar-thumb {
-    background: rgb(172, 166, 151);
+    background: var(--scroll-thumb-bg);
     border-radius: 4px;
 }
 
 #scroll-2::-webkit-scrollbar-corner {
-    background: rgb(172, 166, 151);
+    background: var(--scroll-thumb-bg);
 }
 
 #scroll-2::-webkit-scrollbar-resizer {
-    background: rgb(172, 166, 151);
+    background: var(--scroll-thumb-bg);
 }
 
-
 body {
-    margin: 0;
-    padding: 0;
-    background: #EEEBDA url(https://seicing.com/res/img01.png) repeat-x left top;
     font-size: 10pt;
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
-    color: #4D4D4D;
+    color: var(--text-primary);
 }
 
 h1,
@@ -55,8 +289,8 @@ h3 {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
-    color: #000000;
+    color: var(--text-title);
+    transition: color 0.3s ease;
 }
 
 h1 {
@@ -64,7 +298,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8em;
+    font-size: var(--h2-font-size);
 }
 
 h3 {
@@ -78,14 +312,21 @@ ol {
     line-height: 240%;
 }
 
-a {
+/* --- 提升超链接高权重选择器 --- */
+body a,
+body a:link,
+body a:visited,
+body a:active {
     text-decoration: none;
-    color: #949085;
+    color: var(--text-link);
+}
+
+body a:hover {
+    background-color: var(--text-link-hover-bg);
+    color: var(--text-link);
 }
 
 #wrapper {
-    background: url(https://seicing.com/res/img03lb2.png) repeat-y center top;
-    background-size: cover cover;
     z-index: -20;
 }
 
@@ -93,16 +334,6 @@ a {
     #wrapper {
         width: 1280px
     }
-}
-
-#wrapper2 {
-    background: url(https://seicing.com/res/img02lb2.png) no-repeat center top;
-    background-size: cover cover;
-}
-
-#wrapper3 {
-    background: url(https://seicing.com/res/img04lb2.png) no-repeat center bottom;
-    background-size: cover cover;
 }
 
 .container {
@@ -148,11 +379,11 @@ a {
 }
 
 #logo h1 span {
-    color: #CABC85;
+    color: var(--gold-muted);
 }
 
 #logo h1 a {
-    color: #FFFFFF;
+    color: var(--logo-link-color);
 }
 
 #logo p {
@@ -161,18 +392,18 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 12px;
-    color: #FFFFFF;
+    color: var(--logo-p-color);
 }
 
 #logo p a {
-    color: #FFFFFF;
+    color: var(--logo-link-color);
 }
 
 #logo a {
     border: none;
     background: none;
     text-decoration: none;
-    color: #000000;
+    color: var(--text-title);
 }
 
 
@@ -201,7 +432,7 @@ a {
     width: 170px;
     padding: 6px 5px 3px 5px;
     border: none;
-    background: #D0C9B7;
+    background: var(--search-bg);
     text-transform: lowercase;
     font: normal 11px Arial, Helvetica, sans-serif;
 }
@@ -210,8 +441,8 @@ a {
     width: 50px;
     height: 22px;
     border: none;
-    background: #1D1D1D;
-    color: #FFF;
+    background: var(--search-submit-bg);
+    color: var(--search-submit-color);
 }
 
 
@@ -246,10 +477,9 @@ a {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-size: 14px;
     font-weight: normal;
-    color: #FFFFFF;
+    color: var(--menu-link-color);
     border: none;
 }
 
@@ -295,7 +525,7 @@ a {
     text-transform: uppercase;
     font-size: 26px;
     font-weight: normal;
-    color: #949085;
+    color: var(--text-link);
 }
 
 .post .meta {
@@ -304,7 +534,6 @@ a {
     letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase;
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-size: 12px;
     font-weight: normal;
 }
@@ -320,7 +549,6 @@ a {
 .post .entry {
     padding: 0px 0px 30px 0px;
     padding-bottom: 20px;
-    /*text-align: justify;*/
 }
 
 .entry {
@@ -332,7 +560,6 @@ a {
     margin: 20px 0px 30px 0px;
     text-align: right;
     text-transform: uppercase;
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-size: 12px;
     font-weight: normal;
 }
@@ -357,7 +584,7 @@ a {
     float: left;
     width: 0px;
     margin: 0px;
-    color: #CABC85;
+    color: var(--sidebar-text);
 }
 
 #sidebar ul {
@@ -378,7 +605,7 @@ a {
 
 #sidebar li li {
     line-height: 35px;
-    border-bottom: 1px dashed #A5A08C;
+    border-bottom: var(--border-sidebar-li);
     margin: 0px 30px;
     font-size: 14px;
     font-weight: normal;
@@ -397,19 +624,18 @@ a {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: normal;
-    color: #2E2E2E;
+    color: var(--text-sidebar-h2);
 }
 
 #sidebar p {
     margin: 0 0px;
     padding: 0px 30px 20px 30px;
-    /*text-align: justify;*/
     font-size: 14px;
 }
 
 #sidebar a {
     border: none;
-    color: #949085;
+    color: var(--text-link);
 }
 
 #sidebar a:hover {
@@ -442,8 +668,8 @@ a {
     width: 940px;
     margin: 0px auto;
     padding: 20px 0px;
-    background: #3D3630;
-    color: #CABC85;
+    background: var(--bg-footer);
+    color: var(--text-footer);
 }
 
 #footer p {
@@ -454,13 +680,12 @@ a {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    /*font-family: "Hiragino Sans GB", 冬青黑体简体中文, 宋体, 微软雅黑;*/
     font-weight: normal;
     font-size: 10px;
 }
 
 #footer a {
-    color: #949085;
+    color: var(--text-link);
 }
 
 #banner {
@@ -500,10 +725,8 @@ a {
 /* --- 1. 基础样式 (所有分辨率通用) --- */
 #back-to-top-button {
     display: block !important;
-    /* 确保按钮总是可见 */
     position: fixed;
     z-index: 1000;
-    /* 比菜单按钮低一点，但仍然很高 */
     width: 40px;
     height: 40px;
     background-color: #333;
@@ -528,11 +751,8 @@ a {
 #back-to-top-button {
     bottom: auto;
     top: 20px;
-    /* 距离顶部 20px */
     left: auto;
-    /* 1. 释放左侧的“引力”，防止它赖在左边 */
     right: 20px;
-    /* 2. 设定距离右侧 20px (如果想紧贴边缘就写 0) */
 }
 
 
@@ -829,15 +1049,13 @@ a {
         top: 0;
         left: 0;
         right: 0;
-        /* ⭐ 背景铺满 */
         z-index: 999;
-        background: #fff;
+        background: var(--bg-body-color);
         outline: 1px solid black;
     }
 
     .control-inner {
         padding: 6px 64px 6px 6px;
-        /* ⭐ 右侧内缩避开按钮 */
         overflow: hidden;
     }
 
@@ -845,7 +1063,6 @@ a {
     /* 给下面内容让出空间 */
     #reski {
         margin-top: 48px;
-        /* 根据控制条真实高度微调 */
     }
 
     /* ★ 允许 Leaflet 接管触控 */
@@ -913,11 +1130,11 @@ a {
     }
 
     #wrapper {
-        background: #ffffff !important;
+        background: var(--tablet-wrapper-bg) !important;
     }
 
     html {
-        background: #e2ddca !important;
+        background: var(--tablet-html-bg) !important;
     }
 
     /* --- 第一部分：平板布局调整 --- */
@@ -933,11 +1150,8 @@ a {
 
     /* 3. 让内容区域(#content)本身居中并保持850px宽度 */
     #content {
-        /*   width: 800px !important;*/
         float: none !important;
-        /* 清除浮动，防止布局错乱 */
         margin: 0 auto !important;
-        /* 实现水平居中 */
     }
 
     /* --- 第二部分：抽屉侧边栏功能 (从手机端样式复制而来) --- */
