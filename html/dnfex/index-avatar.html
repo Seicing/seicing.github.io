@@ -47,6 +47,27 @@
         margin: 0 auto;
     }
 </style>
+<script>
+    // 使用全局捕获（Capture）模式，能拦截页面上所有图片的加载失败事件
+    window.addEventListener('error', function (event) {
+        var target = event.target;
+        // 判断触发错误的标签是否是图片
+        if (target && target.tagName === 'IMG') {
+
+            // 创建替代文本标签
+            var textSpan = document.createElement('span');
+            textSpan.innerText = '此职业无此装扮';
+            textSpan.style.color = '#999';
+            textSpan.style.fontSize = '12px';
+            textSpan.style.display = 'block'; // 保持块级居中样式
+
+            // 执行替换
+            if (target.parentNode) {
+                target.parentNode.replaceChild(textSpan, target);
+            }
+        }
+    }, true); // 这里的 true（捕获阶段）是关键，不可省略
+</script>
 <script language="javascript" src="https://seicing.com/js/boxmessageavatar.js" onload="tipsg('atext0','abutton0','0')"></script>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
