@@ -267,18 +267,27 @@ body.theme-dark img[src$="/n.png"] {
 
 .lavihaednoneoff {
     color: var(--lavihaednoneoff);
+    text-decoration-line: none;
 }
 
 .lavihaednoneon {
     color: var(--lavihaednoneon);
+    text-decoration-line: none;
 }
 
 .lavihaedhaoff {
     color: var(--lavihaedhaoff);
+    text-decoration-line: none;
 }
 
 .lavihaedhaon {
     color: var(--lavihaedhaon);
+    text-decoration-line: none;
+}
+
+.special-link {
+    color: var(--special-link-color) !important;
+    text-decoration-line: none;
 }
 
 #scroll-2::-webkit-scrollbar {
