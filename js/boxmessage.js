@@ -31,7 +31,7 @@ function cleargasek(a) {
     for (var g = 0; g < listButton.length; g++) {
         var btnElem = document.getElementById(listButton[g] + a);
         if (btnElem) {
-            btnElem.style.color = "#d0c9b7";
+            btnElem.style.color = "var(--text-link)";
             btnElem.classList.remove("special-link"); // 去掉 class
         }
     }
