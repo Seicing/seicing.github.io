@@ -6,7 +6,6 @@ function tipsg(targetTextId, targetButtonId, suffix) {
     // 1. 重置：隐藏所有内容，变灰所有按钮
     for (var i = 0; i < listPrefix.length; i++) {
         var prefix = listPrefix[i];
-        // 拼接ID，例如 'atext' + '0' -> 'atext0'
         var tempTextId = prefix + 'text' + suffix;
         var tempBtnId = prefix + 'button' + suffix;
 
@@ -14,8 +13,8 @@ function tipsg(targetTextId, targetButtonId, suffix) {
         var elBtn = document.getElementById(tempBtnId);
 
         if (elText) elText.style.display = "none";
-        if (elBtn) elBtn.classList.add("special-text-link"); // 去掉 class
-        if (elBtn) elBtn.classList.remove("special-link"); // 去掉 class
+        if (elBtn) elBtn.classList.add("special-text-link");
+        if (elBtn) elBtn.classList.remove("special-link");
     }
 
     // 2. 激活：显示当前点击的内容
@@ -27,17 +26,29 @@ function tipsg(targetTextId, targetButtonId, suffix) {
     if (currentBtn) currentBtn.classList.remove("special-text-link");
 
     // 3. 加载图片：只处理当前显示区域内的图片
-    // 这里的选择器只找当前 div 下的 img
     $("#" + targetTextId + " img").each(function () {
         var $this = $(this);
-
-        // 【关键修改】这里读取 data-mysrc
         var realSrc = $this.attr("data-mysrc");
 
         // 如果存在 data-mysrc 且 src 还没被赋值（避免重复加载）
         if (realSrc && $this.attr("src") !== realSrc) {
+
+            // 【新增修改】在赋予 src 之前，绑定 error 事件
+            // 使用 .one() 确保每个图片只触发一次该逻辑
+            $this.one("error", function () {
+                // 创建一个用于替代图片的 span 元素
+                var $textSpan = $("<span></span>")
+                    .text("此职业无此装扮")
+                    .css({
+                        "display": "block"     // 块级显示，保持在 textce 容器内居中
+                    });
+
+                // 将当前加载失败的 img 替换为文字 span
+                $this.replaceWith($textSpan);
+            });
+
+            // 触发图片加载
             $this.attr("src", realSrc);
-            // 顺便移除 data-mysrc 保持整洁（可选）
             $this.removeAttr("data-mysrc");
         }
     });
