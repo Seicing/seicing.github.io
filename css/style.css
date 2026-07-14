@@ -80,6 +80,9 @@
     --lavihaednoneon: #ff0000;
     --lavihaedhaoff: #D0C9B7;
     --lavihaedhaon: #0010ff;
+
+    --radar-grid: #D2CDC3;
+    /* 日间浅色雷达网格线 */
 }
 
 /* =====================================================================
@@ -170,6 +173,9 @@ body.theme-dark {
     --lavihaednoneon: #ff0000;
     --lavihaedhaoff: #8c8577;
     --lavihaedhaon: rgb(0, 255, 172);
+
+    --radar-grid: #544D47;
+    /* 夜间深色雷达网格线 */
 }
 
 /* 无头夜间特殊兼容 */
@@ -328,6 +334,45 @@ body.layout-headless.theme-dark #wrapper2 {
 .hiddeninpage {
     color: var(--hidden-inpage);
 }
+
+/* =====================================================================
+   雷达图自适应矢量样式
+   ===================================================================== */
+.radar-chart-container {
+    width: 100%;
+    max-width: 260px;
+    /* 控制雷达图的大小 */
+    margin: 0 auto;
+}
+
+.radar-grid-line {
+    fill: none;
+    stroke: var(--radar-grid);
+    stroke-width: 1px;
+    transition: stroke 0.3s ease;
+}
+
+.radar-axis-line {
+    stroke: var(--radar-grid);
+    stroke-width: 1px;
+    transition: stroke 0.3s ease;
+}
+
+.radar-data-area {
+    /* 采用原图偏暖红砂色的半透明填充和实色描边 */
+    fill: rgba(185, 126, 88, 0.4);
+    stroke: rgba(185, 126, 88, 0.85);
+    stroke-width: 2px;
+}
+
+.radar-chart-label {
+    font-size: 11px;
+    font-weight: bold;
+    fill: var(--text-primary);
+    /* 文字颜色自适应（日间暗灰，夜间沙白） */
+    transition: fill 0.3s ease;
+}
+
 
 body {
     margin: 0;

@@ -20,6 +20,24 @@
 </head>
 
 <body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
@@ -76,8 +94,7 @@ Select the flag to jump to the corresponding civilization section, <a href="http
 <br><br><br>
 <span class="golder"><b>[General]</b><br></span>
 Town Center can produces villager automatically with toggle ability<br>
-Hire Legion or Legion Commander and Research Crown Technology at the Keep.(Posthouse for Mongols,Fortified Outpost for
-Golden Horde)<br>
+Hire Legion or Legion Commander and Research Crown Technology at the Keep.(Posthouse for Mongols and Golden Horde)<br>
 Keep and Stone Wall Tower Cost reduce to 650/175 from 900/300<br>
 Handcannoneer fights with arquebus when serpentine powder researched<br>
 Excavates the Empire Ruin with Legion Commander in imperial age for obtains a stable stone income(except Mongols and
@@ -443,12 +460,12 @@ Golden Horde)<br>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/legion/viptech.png" width="30px">
             </td>
             <td>
-                <span class="golder3">Warrior Code</span>
-                : Increase the attack range of Heavy Melee Infantry and Cavalry by +0.5
+                <span class="golder3">The Last Stand</span>
+                : Increase the Damage of Iron Pagoda and Eruptor by +4
                 <br>
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300
-                <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500
+                <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>
             </td>
         </tr>
     </table>
@@ -1746,6 +1763,23 @@ Golden Horde)<br>
                 <br>
                 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>120
                 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>12<br>
+            </td>
+        </tr>
+    </table>
+
+    <span class="golder"><b>[New Building]</b><br></span>
+    <table>
+        <tr>
+            <td>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/legion/Posthouse.png" width="30px">
+            </td>
+            <td>
+                <span class="golder3">Posthouse</span>
+                : Produces all Units with lower cost and faster training time. Cannot benefit from Reinforcement
+                technology
+                <br>
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150
+                <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>
             </td>
         </tr>
     </table>
@@ -3160,12 +3194,11 @@ Golden Horde)<br>
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/legion/viptech.png" width="30px">
             </td>
             <td>
-                <span class="golder3">Devastating Charge</span>
-                : Increase the charge damage of
-                Cavalry by +12
+                <span class="golder3">Military Monasticism</span>
+                : Increase the movement speed of infantry units by +10%
                 <br>
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400
                 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>
             </td>
         </tr>

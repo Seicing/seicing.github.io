@@ -20,6 +20,24 @@
 </head>
 
 <body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
@@ -75,7 +93,7 @@ Github：<a href="https://github.com/Seicing/aoe4legion"
 <br><br><br>
 <span class="golder"><b>【通用机制】</b><br></span>
 城镇中心添加了自动生产村民的便利功能<br>
-在城堡(蒙古于驿站、金帐汗国于设防哨站)雇佣独特的军团混合部队以及独特的军事领袖，以及研发王冠科技<br>
+在城堡(蒙古和金帐汗国于驿站)雇佣独特的军团混合部队以及独特的军事领袖，以及研发王冠科技<br>
 城堡和石墙塔成本分别从900/300下调到650/175<br>
 火枪兵在研发蛇纹石粉末后使用火绳枪进行战斗<br>
 由军团长在帝王时代发掘帝国遗迹，获取稳定石头收入(蒙古和金帐汗国除外)<br>
@@ -439,12 +457,12 @@ Github：<a href="https://github.com/Seicing/aoe4legion"
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/legion/viptech.png" width="30px">
             </td>
             <td>
-                <span class="golder3">尚武精神(Warrior Code)</span>
-                : 重型近战步兵和骑兵的攻击范围 +0.5格
+                <span class="golder3">背水一战(The Last Stand)</span>
+                : 铁浮屠和爆破手的攻击力+4
                 <br>
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300
-                <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500
+                <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>
             </td>
         </tr>
     </table>
@@ -1728,6 +1746,22 @@ Github：<a href="https://github.com/Seicing/aoe4legion"
                 <br>
                 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>120
                 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>12<br>
+            </td>
+        </tr>
+    </table>
+
+    <span class="golder"><b>【新增建筑】</b><br></span>
+    <table>
+        <tr>
+            <td>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/legion/Posthouse.png" width="30px">
+            </td>
+            <td>
+                <span class="golder3">驿站(Posthouse)</span>
+                : 以更低的成本和更快的速度训练单位，无法从援军科技获得加成
+                <br>
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>150
+                <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>
             </td>
         </tr>
     </table>
@@ -3103,11 +3137,11 @@ Github：<a href="https://github.com/Seicing/aoe4legion"
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/legion/viptech.png" width="30px">
             </td>
             <td>
-                <span class="golder3">毁灭冲锋(Devastating Charge)</span>
-                : 骑兵冲锋伤害 +12
+                <span class="golder3">军事修道主义(Military Monasticism)</span>
+                : 步兵移动速度 +10%
                 <br>
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500
-                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>1000
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>800
+                <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400
                 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>
             </td>
         </tr>
