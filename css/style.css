@@ -67,6 +67,7 @@
 
     --saga2-table: #6da6e2;
     --saga2-table-st: #d2d2d2;
+    --saga2-table-bg: #2763a5;
     --saga2-table-1: #ffffff;
     --saga2-table-2: #f0f0f0;
 }
@@ -146,6 +147,7 @@ body.theme-dark {
 
     --saga2-table: #282420;
     --saga2-table-st: #282420;
+    --saga2-table-bg: #2764a500;
     --saga2-table-1: #28242000;
     --saga2-table-2: #28242000;
 }
@@ -257,6 +259,10 @@ body.layout-headless.theme-dark #wrapper2 {
 .aoe4statsage4 {
     background-color: var(--aoe4-statsage4);
     color: var(--aoe4-statsagefont);
+}
+
+.saga2tablebg {
+    background-color: var(--saga2-table-bg);
 }
 
 .saga2table {
