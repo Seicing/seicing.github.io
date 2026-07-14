@@ -53,7 +53,7 @@
         <td rowspan="5" colspan="4" width=50% style=" text-align: center">
             <div id="app">
                 <div class="radar-chart-container">
-                    <svg viewBox="0 0 240 240" style="width: 100%; height: auto;">
+                    <svg viewBox="-30 0 300 240" style="width: 100%; height: auto;">
                         <polygon points="120,45 185,82.5 185,157.5 120,195 55,157.5 55,82.5" class="radar-grid-line" />
                         <polygon points="120,60 172,90 172,150 120,180 68,150 68,90" class="radar-grid-line" />
                         <polygon points="120,75 159,97.5 159,142.5 120,165 81,142.5 81,97.5" class="radar-grid-line" />
@@ -78,7 +78,7 @@
                         <text x="45" y="80" text-anchor="end" class="radar-chart-label">攻击范围</text>
                     </svg>
                 </div>
-            </div><img src="https://data.seicing.com/seicingdepot/dnfclass3/png/枪炮师女1.png">
+            </div>
         </td>
     </tr>
     <tr>
@@ -2096,7 +2096,7 @@ barrel的转写，重型炮管的意思，世界服的一次觉醒名Demolitioni
             let characterid = '';
             // 1. 冰结师的六维属性数值（顺序：攻击力, 速度, 辅助, 控制, 攻击距离, 攻击范围）
             // 满分为 5 分
-            const charStats = ref([4.0, 3.2, 1.0, 3.5, 2.5, 3.8]); // 属性数值
+            const charStats = ref([4.0, 2.0, 0, 1.0, 5, 3.5]); // 属性数值
 
             const radarPoints = computed(() => {
                 const cx = 120;

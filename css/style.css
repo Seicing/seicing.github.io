@@ -340,7 +340,7 @@ body.layout-headless.theme-dark #wrapper2 {
    ===================================================================== */
 .radar-chart-container {
     width: 100%;
-    max-width: 260px;
+    max-width: 300px;
     /* 控制雷达图的大小 */
     margin: 0 auto;
 }
