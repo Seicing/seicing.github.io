@@ -73,6 +73,8 @@
 
     --laviva-blue: #cae5ff;
     --laviva-white: #eff7ff;
+
+    --hidden-inpage: #ffffff;
 }
 
 /* =====================================================================
@@ -156,6 +158,8 @@ body.theme-dark {
 
     --laviva-blue: #282420;
     --laviva-white: #282420;
+
+    --hidden-inpage: #1C1815;
 }
 
 /* 无头夜间特殊兼容 */
@@ -295,6 +299,10 @@ body.layout-headless.theme-dark #wrapper2 {
     background-color: var(--laviva-white);
 }
 
+
+.hiddeninpage {
+    color: var(--hidden-inpage);
+}
 
 
 body {
