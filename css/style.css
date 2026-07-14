@@ -75,6 +75,11 @@
     --laviva-white: #eff7ff;
 
     --hidden-inpage: #ffffff;
+
+    --lavihaednoneoff: #a0522d;
+    --lavihaednoneon: #ff0000;
+    --lavihaedhaoff: #D0C9B7;
+    --lavihaedhaon: #0010ff;
 }
 
 /* =====================================================================
@@ -160,6 +165,11 @@ body.theme-dark {
     --laviva-white: #282420;
 
     --hidden-inpage: #1C1815;
+
+    --lavihaednoneoff: #a0522d;
+    --lavihaednoneon: #ff0000;
+    --lavihaedhaoff: #8c8577;
+    --lavihaedhaon: rgb(0, 255, 172);
 }
 
 /* 无头夜间特殊兼容 */
@@ -299,11 +309,25 @@ body.layout-headless.theme-dark #wrapper2 {
     background-color: var(--laviva-white);
 }
 
+.lavihaednoneoff {
+    color: var(--lavihaednoneoff);
+}
+
+.lavihaednoneon {
+    color: var(--lavihaednoneon);
+}
+
+.lavihaedhaoff {
+    color: var(--lavihaedhaoff);
+}
+
+.lavihaedhaon {
+    color: var(--lavihaedhaon);
+}
 
 .hiddeninpage {
     color: var(--hidden-inpage);
 }
-
 
 body {
     margin: 0;
@@ -373,6 +397,36 @@ body {
 #scroll-2::-webkit-scrollbar-resizer {
     background: var(--scroll-thumb-bg);
 }
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--scroll-thumb-bg);
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scroll-track-bg-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-bg);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--scroll-thumb-bg);
+}
+
+::-webkit-scrollbar-resizer {
+    background: var(--scroll-thumb-bg);
+}
+
 
 a:hover {
     background-color: var(--text-link-hover-bg);

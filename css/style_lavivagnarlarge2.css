@@ -65,6 +65,11 @@
 
     --laviva-blue: #cae5ff;
     --laviva-white: #eff7ff;
+
+    --lavihaednoneoff: #a0522d;
+    --lavihaednoneon: #ff0000;
+    --lavihaedhaoff: #D0C9B7;
+    --lavihaedhaon: #0010ff;
 }
 
 /* =====================================================================
@@ -108,8 +113,8 @@ body.theme-dark {
     /* 页脚与特定模块夜间 */
     --bg-footer: #151311;
     --text-footer: #b0a170;
-    --tablet-html-bg: #1c1815;
-    --tablet-wrapper-bg: #373331;
+    --tablet-html-bg: #373331;
+    --tablet-wrapper-bg: #1C1815;
     /* 平板模式下的内容区同样设为夜间深色 */
 
     /* 控制台按钮夜间颜色 */
@@ -139,6 +144,11 @@ body.theme-dark {
 
     --laviva-blue: #282420;
     --laviva-white: #282420;
+
+    --lavihaednoneoff: #a0522d;
+    --lavihaednoneon: #ff0000;
+    --lavihaedhaoff: #8c8577;
+    --lavihaedhaon: rgb(0, 255, 172);
 }
 
 body.layout-headless.theme-dark {
@@ -194,6 +204,12 @@ body.theme-dark #wrapper3 {
 /* =====================================================================
    5. 核心样式主体 (应用尺寸与颜色变量，不改动一分一毫的像素/位置属性)
    ===================================================================== */
+
+body.theme-dark img[src*="n.png"] {
+    /* 降低不透明度至 35% ~ 40%，亮度降低，使其完美融入暗色背景 */
+    filter: opacity(0.4) brightness(0.8);
+    transition: filter 0.3s ease;
+}
 
 .special-text-link {
     color: var(--special-text-link);
@@ -251,6 +267,22 @@ body.theme-dark #wrapper3 {
     background-color: var(--laviva-white);
 }
 
+.lavihaednoneoff {
+    color: var(--lavihaednoneoff);
+}
+
+.lavihaednoneon {
+    color: var(--lavihaednoneon);
+}
+
+.lavihaedhaoff {
+    color: var(--lavihaedhaoff);
+}
+
+.lavihaedhaon {
+    color: var(--lavihaedhaon);
+}
+
 #scroll-2::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -275,6 +307,35 @@ body.theme-dark #wrapper3 {
 }
 
 #scroll-2::-webkit-scrollbar-resizer {
+    background: var(--scroll-thumb-bg);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--scroll-thumb-bg);
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scroll-track-bg-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-bg);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--scroll-thumb-bg);
+}
+
+::-webkit-scrollbar-resizer {
     background: var(--scroll-thumb-bg);
 }
 
@@ -310,20 +371,6 @@ ul,
 ol {
     margin-top: 0;
     line-height: 240%;
-}
-
-/* --- 提升超链接高权重选择器 --- */
-body a,
-body a:link,
-body a:visited,
-body a:active {
-    text-decoration: none;
-    color: var(--text-link);
-}
-
-body a:hover {
-    background-color: var(--text-link-hover-bg);
-    color: var(--text-link);
 }
 
 #wrapper {
