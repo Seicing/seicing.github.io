@@ -505,13 +505,31 @@
 </body>
 
 <style>
+    :root {
+        --co-civcellbanned: #f6d6d6;
+        --co-civcellwhite: #ffffff;
+        --co-civcellcan: #c9f8dc;
+        --co-civcellblack: #111111;
+    }
+
+    body.theme-dark {
+        --co-civcellbanned: #622b2b;
+        --co-civcellwhite: #ffffff00;
+        --co-civcellcan: #7ca48c;
+        --co-civcellblack: #11111100;
+    }
+
+    .aomix {
+        background-color: var(--co-aomix);
+    }
+
     .tech-table {
         table-layout: fixed;
         width: max-content;
     }
 
     .civcell.main-banned {
-        background-color: #f6d6d6 !important;
+        background-color: var(--co-civcellbanned) !important;
     }
 
     .civcell.main-banned img {
@@ -527,7 +545,7 @@
 
     .tech-table {
         border-collapse: collapse;
-        background: #ffffff;
+        background-color: var(--co-civcellwhite);
     }
 
     .tech-table th,
@@ -541,7 +559,7 @@
     }
 
     .tech-table td.civcell {
-        background: #ffffff;
+        background-color: var(--co-civcellwhite);
         width: 28px;
         min-width: 28px;
     }
@@ -560,11 +578,11 @@
     }
 
     .tech.available {
-        background-color: #c9f8dc;
+        background-color: var(--co-civcellcan);
     }
 
     .tech.unavailable {
-        background-color: #f6d6d6;
+        background-color: var(--co-civcellbanned);
     }
 
     .tech.unavailable img {
@@ -591,7 +609,7 @@
     .score {
         font-weight: bold;
         color: #ffd700;
-        background: #111;
+        background-color: var(--co-civcellblack);
     }
 
     #civList {

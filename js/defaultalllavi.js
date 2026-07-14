@@ -508,13 +508,13 @@ window.addEventListener('resize', debounce(function () {
         });
     }
 
-    // === 核心：暴力强制替换纯蓝色 (#0000ff / blue) 日间维持原色 / 夜间切换为明亮蓝色 #5252ff ===
+    // === 核心：暴力强制替换纯蓝色 (#0000ff / blue) 日间维持原色 / 夜间切换为明亮蓝色 #528eff ===
     function replaceBlueColors() {
         if (!document.body) return;
 
         const isDark = document.body.classList.contains("theme-dark");
-        // 日间维持原色 #0000ff，夜间自适应切换为明亮蓝色 #5252ff 防止看不清
-        const targetColor = isDark ? '#5252ff' : '#0000ff';
+        // 日间维持原色 #0000ff，夜间自适应切换为明亮蓝色 #528eff 防止看不清
+        const targetColor = isDark ? '#528eff' : '#0000ff';
 
         // 仅筛选带有 color 属性行内样式的元素，排除无关节点提高性能
         document.querySelectorAll('[style*="color" i]').forEach(el => {
@@ -525,8 +525,8 @@ window.addEventListener('resize', debounce(function () {
                 inlineColor === 'blue' ||
                 inlineColor === '#0000ff' ||
                 inlineColor === 'rgb(0,0,255)' ||
-                inlineColor === '#5252ff' ||
-                inlineColor === 'rgb(82,82,255)' // rgb(82, 82, 255) 是 #5252ff 的 WebKit 规范化写法
+                inlineColor === '#528eff' ||
+                inlineColor === 'rgb(82,142,255)' // rgb(82, 142, 255) 是 #528eff 的 WebKit 规范化写法
             ) {
                 el.style.color = targetColor;
             }
