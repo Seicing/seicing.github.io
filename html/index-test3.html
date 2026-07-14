@@ -13,6 +13,16 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
 <style>
+    :root {
+        --dialogueBox-background: #FFFFFF;
+        --dialogueBox-stagebackground: #f0f0f0;
+    }
+
+    body.theme-dark {
+        --dialogueBox-background: #1C1815;
+        --dialogueBox-stagebackground: #1C1815;
+    }
+
     .rows2 {
         display: flex;
         align-items: flex-start;
@@ -38,7 +48,7 @@
         height: 225px;
         border: 1px solid #aaa;
         margin-bottom: 10px;
-        background-color: #f0f0f0;
+        background-color: var(--dialogueBox-stagebackground);
     }
 
     .layer {
@@ -72,7 +82,7 @@
         min-height: 60px;
         padding: 8px 10px;
         border: 1px solid #555;
-        background: #fff;
+        background-color: var(--dialogueBox-background);
         font-size: 14px;
         line-height: 1.4;
         display: none;

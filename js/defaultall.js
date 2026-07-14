@@ -509,6 +509,31 @@ window.addEventListener('resize', debounce(function () {
         });
     }
 
+    // === 核心：暴力强制替换纯蓝色 (#0000ff / blue) 日间维持原色 / 夜间切换为明亮蓝色 #5252ff ===
+    function replaceBlueColors() {
+        if (!document.body) return;
+
+        const isDark = document.body.classList.contains("theme-dark");
+        // 日间维持原色 #0000ff，夜间自适应切换为明亮蓝色 #5252ff 防止看不清
+        const targetColor = isDark ? '#5252ff' : '#0000ff';
+
+        // 仅筛选带有 color 属性行内样式的元素，排除无关节点提高性能
+        document.querySelectorAll('[style*="color" i]').forEach(el => {
+            const inlineColor = el.style.color.toLowerCase().replace(/\s+/g, '');
+
+            // 匹配所有形式的纯蓝色，以及夜间被我们转换过的明亮蓝色，以便在主题来回切换时能双向同步
+            if (
+                inlineColor === 'blue' ||
+                inlineColor === '#0000ff' ||
+                inlineColor === 'rgb(0,0,255)' ||
+                inlineColor === '#5252ff' ||
+                inlineColor === 'rgb(82,82,255)' // rgb(82, 82, 255) 是 #5252ff 的 WebKit 规范化写法
+            ) {
+                el.style.color = targetColor;
+            }
+        });
+    }
+
     // === 状态初始化分配 ===
     const getSavedFont = () => localStorage.getItem('fontSize') || 'small';
     const getSavedTheme = () => getCookie('theme') || 'light';
@@ -516,6 +541,7 @@ window.addEventListener('resize', debounce(function () {
     const initAll = () => {
         applyFont(getSavedFont());
         applyTheme(getSavedTheme());
+        replaceBlueColors(); // 1. 初始化时暴力检测并应用颜色
     };
 
     // 尽早载入防止页面闪烁
@@ -536,11 +562,13 @@ window.addEventListener('resize', debounce(function () {
             if (smallBtn) {
                 localStorage.setItem('fontSize', 'small');
                 applyFont('small');
+                replaceBlueColors();
             }
 
             if (bigBtn) {
                 localStorage.setItem('fontSize', 'big');
                 applyFont('big');
+                replaceBlueColors();
             }
 
             if (darkBtn) {
@@ -548,6 +576,7 @@ window.addEventListener('resize', debounce(function () {
                 const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
                 setCookie('theme', newTheme);
                 applyTheme(newTheme);
+                replaceBlueColors(); // 2. 主题切换时动态双向变色
             }
         });
 
@@ -555,6 +584,7 @@ window.addEventListener('resize', debounce(function () {
         const observer = new MutationObserver(() => {
             applyFont(getSavedFont());
             applyTheme(getSavedTheme());
+            replaceBlueColors(); // 3. 异步加载新内容时暴力检测
         });
 
         observer.observe(document.body, {
