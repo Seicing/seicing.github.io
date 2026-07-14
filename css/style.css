@@ -98,8 +98,7 @@ body.theme-dark {
     /* 调深主体背景色 */
     --text-primary: #e2ddca;
     --text-title: #ffffff;
-    --text-link: rgb(0, 255, 172);
-    /* 夜间默认超链接变为霓虹绿 */
+    --text-link: #8c8577;
     --text-link-hover-bg: #2d2925;
     --special-link-color: rgb(0, 255, 172);
     --special-text-link: #8c8577;
