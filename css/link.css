@@ -1,15 +1,7 @@
-﻿a:link {
-    color: #0366D6
-}
-
-a:visited {
-    color: #0366D6
-}
-
+﻿a,
+a:link,
+a:visited,
+a:active,
 a:hover {
-    color: #0366D6
-}
-
-a:active {
-    color: #0366D6
+    color: var(--special-link-color);
 }
