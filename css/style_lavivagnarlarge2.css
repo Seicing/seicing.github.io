@@ -205,9 +205,15 @@ body.theme-dark #wrapper3 {
    5. 核心样式主体 (应用尺寸与颜色变量，不改动一分一毫的像素/位置属性)
    ===================================================================== */
 
-body.theme-dark img[src$="/n.png"] {
-    filter: opacity(1) brightness(0.1);
+
+img[src$="/n.png"] {
+    filter: brightness(10);
 }
+
+body.theme-dark img[src$="/n.png"] {
+    filter: none !important;
+}
+
 
 .special-text-link {
     color: var(--special-text-link);
