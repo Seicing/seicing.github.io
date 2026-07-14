@@ -113,8 +113,8 @@ body.theme-dark {
     /* 页脚与特定模块夜间 */
     --bg-footer: #151311;
     --text-footer: #b0a170;
-    --tablet-html-bg: #373331;
-    --tablet-wrapper-bg: #1C1815;
+    --tablet-html-bg: #1C1815;
+    --tablet-wrapper-bg: #373331;
     /* 平板模式下的内容区同样设为夜间深色 */
 
     /* 控制台按钮夜间颜色 */
@@ -190,7 +190,7 @@ body {
 /* 核心夜间覆写：强制移除所有背景图片，底色完全由 #373331 纯色填充 */
 body.theme-dark {
     background-image: none !important;
-    background-color: #373331 !important;
+    background-color: #1C1815 !important;
 }
 
 body.theme-dark #wrapper,
