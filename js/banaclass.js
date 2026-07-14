@@ -1,35 +1,35 @@
 function tipsbo(a) {
-    document.getElementById("Warrior3").style.color = "#d0c9b7";
-    document.getElementById("Phalanx3").style.color = "#d0c9b7";
-    document.getElementById("Skirmisher3").style.color = "#d0c9b7";
-    document.getElementById("Vanguard3").style.color = "#d0c9b7";
-    document.getElementById("Mage3").style.color = "#d0c9b7";
-    document.getElementById("Sorceress3").style.color = "#d0c9b7";
-    document.getElementById("Scholar3").style.color = "#d0c9b7";
-    document.getElementById("Cleric3").style.color = "#d0c9b7";
-    document.getElementById("Wizard3").style.color = "#d0c9b7";
-    document.getElementById("Ranger3").style.color = "#d0c9b7";
-    document.getElementById("Sentinel3").style.color = "#d0c9b7";
-    document.getElementById(a).style.color = "blue";
+    document.getElementById("Warrior3").style.color = "var(--special-text-link)";
+    document.getElementById("Phalanx3").style.color = "var(--special-text-link)";
+    document.getElementById("Skirmisher3").style.color = "var(--special-text-link)";
+    document.getElementById("Vanguard3").style.color = "var(--special-text-link)";
+    document.getElementById("Mage3").style.color = "var(--special-text-link)";
+    document.getElementById("Sorceress3").style.color = "var(--special-text-link)";
+    document.getElementById("Scholar3").style.color = "var(--special-text-link)";
+    document.getElementById("Cleric3").style.color = "var(--special-text-link)";
+    document.getElementById("Wizard3").style.color = "var(--special-text-link)";
+    document.getElementById("Ranger3").style.color = "var(--special-text-link)";
+    document.getElementById("Sentinel3").style.color = "var(--special-text-link)";
+    document.getElementById(a).style.color = "var(--special-link-color)";
     var aaposbo15 = document.querySelector("#Describe937");
     aaposbo15.innerHTML = a.slice(0, -1);
     loadPage();
 }
 
 function tipsgo(a) {
-    document.getElementById("WesternSeigine3").style.color = "#d0c9b7";
-    document.getElementById("CentralSeigine3").style.color = "#d0c9b7";
-    document.getElementById("SouthernSeigine3").style.color = "#d0c9b7";
-    document.getElementById("NorthernSeigine3").style.color = "#d0c9b7";
-    document.getElementById("EasternSeigine3").style.color = "#d0c9b7";
-    document.getElementById("GrandDelta3").style.color = "#d0c9b7";
-    document.getElementById("EasternAlterrata3").style.color = "#d0c9b7";
-    document.getElementById("WesternAlterrata3").style.color = "#d0c9b7";
-    document.getElementById("InnerAlterrata3").style.color = "#d0c9b7";
-    document.getElementById("IuireMainland3").style.color = "#d0c9b7";
-    document.getElementById("IuireSeparation3").style.color = "#d0c9b7";
-    document.getElementById("OuterSeigine3").style.color = "#d0c9b7";
-    document.getElementById(a).style.color = "blue";
+    document.getElementById("WesternSeigine3").style.color = "var(--special-text-link)";
+    document.getElementById("CentralSeigine3").style.color = "var(--special-text-link)";
+    document.getElementById("SouthernSeigine3").style.color = "var(--special-text-link)";
+    document.getElementById("NorthernSeigine3").style.color = "var(--special-text-link)";
+    document.getElementById("EasternSeigine3").style.color = "var(--special-text-link)";
+    document.getElementById("GrandDelta3").style.color = "var(--special-text-link)";
+    document.getElementById("EasternAlterrata3").style.color = "var(--special-text-link)";
+    document.getElementById("WesternAlterrata3").style.color = "var(--special-text-link)";
+    document.getElementById("InnerAlterrata3").style.color = "var(--special-text-link)";
+    document.getElementById("IuireMainland3").style.color = "var(--special-text-link)";
+    document.getElementById("IuireSeparation3").style.color = "var(--special-text-link)";
+    document.getElementById("OuterSeigine3").style.color = "var(--special-text-link)";
+    document.getElementById(a).style.color = "var(--special-link-color)";
     var aaposbo16 = document.querySelector("#Describe9372");
     aaposbo16.innerHTML = a.slice(0, -1);
     loadPage();
@@ -69,19 +69,19 @@ function tipsg(a, b) {
     aaposbo14.innerHTML = a;
 
 
-    document.getElementById("WesternSeigine2").style.color = "#d0c9b7";
-    document.getElementById("CentralSeigine2").style.color = "#d0c9b7";
-    document.getElementById("SouthernSeigine2").style.color = "#d0c9b7";
-    document.getElementById("NorthernSeigine2").style.color = "#d0c9b7";
-    document.getElementById("EasternSeigine2").style.color = "#d0c9b7";
-    document.getElementById("GrandDelta2").style.color = "#d0c9b7";
-    document.getElementById("EasternAlterrata2").style.color = "#d0c9b7";
-    document.getElementById("WesternAlterrata2").style.color = "#d0c9b7";
-    document.getElementById("InnerAlterrata2").style.color = "#d0c9b7";
-    document.getElementById("IuireMainland2").style.color = "#d0c9b7";
-    document.getElementById("IuireSeparation2").style.color = "#d0c9b7";
-    document.getElementById("OuterSeigine2").style.color = "#d0c9b7";
-    document.getElementById(b).style.color = "blue";
+    document.getElementById("WesternSeigine2").style.color = "var(--special-text-link)";
+    document.getElementById("CentralSeigine2").style.color = "var(--special-text-link)";
+    document.getElementById("SouthernSeigine2").style.color = "var(--special-text-link)";
+    document.getElementById("NorthernSeigine2").style.color = "var(--special-text-link)";
+    document.getElementById("EasternSeigine2").style.color = "var(--special-text-link)";
+    document.getElementById("GrandDelta2").style.color = "var(--special-text-link)";
+    document.getElementById("EasternAlterrata2").style.color = "var(--special-text-link)";
+    document.getElementById("WesternAlterrata2").style.color = "var(--special-text-link)";
+    document.getElementById("InnerAlterrata2").style.color = "var(--special-text-link)";
+    document.getElementById("IuireMainland2").style.color = "var(--special-text-link)";
+    document.getElementById("IuireSeparation2").style.color = "var(--special-text-link)";
+    document.getElementById("OuterSeigine2").style.color = "var(--special-text-link)";
+    document.getElementById(b).style.color = "var(--special-link-color)";
 }
 
 function tipsb(a, b) {
@@ -115,20 +115,20 @@ function tipsb(a, b) {
     aaposbo12.src = 'https://data.seicing.com/seicingdepot/fatcatpool/essay/forte/外西景' + a + '.png';
 
 
-    document.getElementById("Recruit2").style.color = "#d0c9b7";
-    document.getElementById("Warrior2").style.color = "#d0c9b7";
-    document.getElementById("Phalanx2").style.color = "#d0c9b7";
-    document.getElementById("Skirmisher2").style.color = "#d0c9b7";
-    document.getElementById("Vanguard2").style.color = "#d0c9b7";
-    document.getElementById("Mage2").style.color = "#d0c9b7";
-    document.getElementById("Sorceress2").style.color = "#d0c9b7";
-    document.getElementById("Scholar2").style.color = "#d0c9b7";
-    document.getElementById("Cleric2").style.color = "#d0c9b7";
-    document.getElementById("Wizard2").style.color = "#d0c9b7";
-    document.getElementById("Ranger2").style.color = "#d0c9b7";
-    document.getElementById("Sentinel2").style.color = "#d0c9b7";
-    document.getElementById("Citizen2").style.color = "#d0c9b7";
-    document.getElementById(b).style.color = "blue";
+    document.getElementById("Recruit2").style.color = "var(--special-text-link)";
+    document.getElementById("Warrior2").style.color = "var(--special-text-link)";
+    document.getElementById("Phalanx2").style.color = "var(--special-text-link)";
+    document.getElementById("Skirmisher2").style.color = "var(--special-text-link)";
+    document.getElementById("Vanguard2").style.color = "var(--special-text-link)";
+    document.getElementById("Mage2").style.color = "var(--special-text-link)";
+    document.getElementById("Sorceress2").style.color = "var(--special-text-link)";
+    document.getElementById("Scholar2").style.color = "var(--special-text-link)";
+    document.getElementById("Cleric2").style.color = "var(--special-text-link)";
+    document.getElementById("Wizard2").style.color = "var(--special-text-link)";
+    document.getElementById("Ranger2").style.color = "var(--special-text-link)";
+    document.getElementById("Sentinel2").style.color = "var(--special-text-link)";
+    document.getElementById("Citizen2").style.color = "var(--special-text-link)";
+    document.getElementById(b).style.color = "var(--special-link-color)";
 
 
 

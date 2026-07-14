@@ -1,179 +1,187 @@
-﻿    li {
-        line-height: 1.8
-    }
+﻿:root {
+    --keru-bg-body-color: #FFFFFF;
+}
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        .classer img {
-            width: 130px;
-            height: auto;
-        }
-    }
+body.theme-dark {
+    --keru-bg-body-color: #1C1815;
+}
 
-    .unit-card {
-        border-top: 1px solid #000;
-        border-left: 1px solid #000;
-        border-right: 1px solid #000;
-        width: 700px;
-        margin: 10px 0;
-        box-sizing: border-box;
-    }
+li {
+    line-height: 1.8
+}
 
-    .unit-header {
-        display: flex;
-        align-items: stretch;
-        /* 高度一致 */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .classer img {
+        width: 130px;
+        height: auto;
     }
+}
+
+.unit-card {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 700px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.unit-header {
+    display: flex;
+    align-items: stretch;
+    /* 高度一致 */
+}
+
+/* 图片容器，方便单边描边 */
+.img-wrapper {
+    background-color: var(--keru-bg-body-color);
+    display: flex;
+}
+
+.img-wrapperleft,
+.img-wrapperright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapperleft img {
+    display: block;
+    width: 150px;
+}
+
+.img-wrapperright img {
+    display: block;
+    width: 133px;
+}
+
+/* 左右图片描边 */
+.img-left {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.img-right {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+/* 中间内容 */
+.unit-center {
+    flex: 1;
+    background-color: var(--keru-bg-body-color);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    /* 下边描边 */
+}
+
+.unit-desc {
+    padding: 2px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #000;
+    min-height: 168px;
+}
+
+.unit-default {
+    padding: 2px;
+    font-style: italic;
+}
+
+/* 名字列表 */
+.unit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.unit-item {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--keru-bg-body-color);
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.unit-name {
+    min-height: 18px;
+    padding: 2px;
+    border-right: 1px solid #000;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.unit-star {
+    padding: 2px;
+    flex: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+/* 响应式手机模式 */
+@media (max-width: 700px) {
 
     /* 图片容器，方便单边描边 */
     .img-wrapper {
-        background-color: white;
+        background-color: var(--keru-bg-body-color);
         display: flex;
     }
 
     .img-wrapperleft,
     .img-wrapperright {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
-    }
-
-    .img-wrapperleft img {
-        display: block;
-        width: 150px;
-    }
-
-    .img-wrapperright img {
-        display: block;
-        width: 133px;
-    }
-
-    /* 左右图片描边 */
-    .img-left {
-        border-right: 1px solid #000;
-        border-bottom: 1px solid #000;
-    }
-
-    .img-right {
-        border-left: 1px solid #000;
-        border-bottom: 1px solid #000;
-    }
-
-    /* 中间内容 */
-    .unit-center {
-        flex: 1;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        border-bottom: 1px solid #000;
-        /* 下边描边 */
+        flex: none;
+        /* 不拉伸 */
     }
 
     .unit-desc {
         padding: 2px;
-        margin-bottom: 1px;
         border-bottom: 1px solid #000;
-        min-height: 168px;
+        border-top: 1px solid #000;
+        min-height: 20px;
     }
 
-    .unit-default {
-        padding: 2px;
-        font-style: italic;
+    /* 左右图片描边 */
+    .img-left {
+        border-right: none;
+        border-bottom: none;
     }
 
-    /* 名字列表 */
-    .unit-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
+    .img-right {
+        border-left: none;
+        border-bottom: none;
     }
 
-    .unit-item {
-        display: flex;
-        align-items: stretch;
-        background-color: white;
+    .unit-card {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+    }
+
+    .unit-header {
+        flex-wrap: wrap;
+    }
+
+    .img-wrapper {
+        width: calc(50% - 0.5px);
+        margin: 0;
+    }
+
+    .unit-center {
+        flex-basis: 100%;
+        order: 3;
         border-bottom: 1px solid #000;
-        box-sizing: border-box;
+        margin: 1px 0 0 0;
     }
 
     .unit-name {
-        min-height: 18px;
-        padding: 2px;
-        border-right: 1px solid #000;
-        width: 100px;
+        width: 80px;
         display: flex;
         align-items: center;
     }
-
-    .unit-star {
-        padding: 2px;
-        flex: 1;
-        text-align: left;
-        display: flex;
-        align-items: center;
-    }
-
-    /* 响应式手机模式 */
-    @media (max-width: 700px) {
-
-        /* 图片容器，方便单边描边 */
-        .img-wrapper {
-            background-color: white;
-            display: flex;
-        }
-
-        .img-wrapperleft,
-        .img-wrapperright {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            flex: none;
-            /* 不拉伸 */
-        }
-
-        .unit-desc {
-            padding: 2px;
-            border-bottom: 1px solid #000;
-            border-top: 1px solid #000;
-            min-height: 20px;
-        }
-
-        /* 左右图片描边 */
-        .img-left {
-            border-right: none;
-            border-bottom: none;
-        }
-
-        .img-right {
-            border-left: none;
-            border-bottom: none;
-        }
-
-        .unit-card {
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            width: 100%;
-        }
-
-        .unit-header {
-            flex-wrap: wrap;
-        }
-
-        .img-wrapper {
-            width: calc(50% - 0.5px);
-            margin: 0;
-        }
-
-        .unit-center {
-            flex-basis: 100%;
-            order: 3;
-            border-bottom: 1px solid #000;
-            margin: 1px 0 0 0;
-        }
-
-        .unit-name {
-            width: 80px;
-            display: flex;
-            align-items: center;
-        }
-    }
+}

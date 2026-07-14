@@ -70,6 +70,9 @@
     --saga2-table-bg: #2763a5;
     --saga2-table-1: #ffffff;
     --saga2-table-2: #f0f0f0;
+
+    --laviva-blue: #cae5ff;
+    --laviva-white: #eff7ff;
 }
 
 /* =====================================================================
@@ -150,6 +153,9 @@ body.theme-dark {
     --saga2-table-bg: #2764a500;
     --saga2-table-1: #28242000;
     --saga2-table-2: #28242000;
+
+    --laviva-blue: #282420;
+    --laviva-white: #282420;
 }
 
 /* 无头夜间特殊兼容 */
@@ -279,6 +285,14 @@ body.layout-headless.theme-dark #wrapper2 {
 
 .saga2table2 {
     background-color: var(--saga2-table-2);
+}
+
+.lavivablue {
+    background-color: var(--laviva-blue);
+}
+
+.lavivawhite {
+    background-color: var(--laviva-white);
 }
 
 
