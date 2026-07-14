@@ -12,6 +12,17 @@
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <!--<link href="https://seicing.com/css/link.css" rel="stylesheet" type="text/css" media="screen" />-->
 <style>
+    :root {
+        --keru-cell-color: #F5F8FA;
+        --keru-border-color: #dddddd;
+    }
+
+    body.theme-dark {
+        --keru-cell-color: #F5F8FA00;
+        --keru-border-color: #e2ddca;
+    }
+
+
     /* Basic styling for the new grid layout */
     .character-gallery {
         display: grid;
@@ -25,8 +36,8 @@
     }
 
     .character-item {
-        background-color: #F5F8FA;
-        border: 1px solid #ddd;
+        background-color: var(--keru-cell-color);
+        border: 1px solid var(--keru-border-color);
         border-radius: 8px;
         overflow: hidden;
         text-align: center;
@@ -47,7 +58,7 @@
         display: block;
         /* Remove extra space below image */
         margin: 0 auto;
-        border-bottom: 1px solid #eee;
+        /* border-bottom: 1px solid #eee;*/
         padding: 5px 0;
         /* Add some padding around the image for breathing room within its max-height container */
     }
@@ -722,7 +733,13 @@
                 <div id="sidebar" style="position:fixed; height:100%; width:220px">
                     <div id='scroll-1'
                         style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a><br><br>
+                        <b>
+    <a id="smallfonter" style="color:#6B1E1E;cursor:pointer;">小字体</a>
+    <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a>
+    <a id="darkmoder" style="color:#857E6E;cursor:pointer;">夜间模式</a>
+</b>
+<br><br>
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a><br><br>
 
 <a href="#aaposbo" onclick="tangut()">切换为觉醒模式</a><br>
 <a href="#aaposbo" onclick="chinese()">切换为普通模式</a>
