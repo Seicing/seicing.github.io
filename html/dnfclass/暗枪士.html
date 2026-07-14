@@ -50,7 +50,36 @@
     <tr>
         <td class="bcF5F8FA" width=10%>推荐<br>武器</td>
         <td width=10%><img img title="暗矛" src="https://data.seicing.com/seicingdepot/dfclass/icon/投枪.png"></td>
-        <td rowspan="5" colspan="4" width=50% style=" text-align: center"><img src="https://data.seicing.com/seicingdepot/dnfclass3/png/暗枪士1.png"></td>
+        <td rowspan="5" colspan="4" width=50% style=" text-align: center">
+            <div id="app">
+                <div class="radar-chart-container">
+                    <svg viewBox="0 0 240 240" style="width: 100%; height: auto;">
+                        <polygon points="120,45 185,82.5 185,157.5 120,195 55,157.5 55,82.5" class="radar-grid-line" />
+                        <polygon points="120,60 172,90 172,150 120,180 68,150 68,90" class="radar-grid-line" />
+                        <polygon points="120,75 159,97.5 159,142.5 120,165 81,142.5 81,97.5" class="radar-grid-line" />
+                        <polygon points="120,90 146,105 146,135 120,150 94,135 94,105" class="radar-grid-line" />
+                        <polygon points="120,105 133,112.5 133,127.5 120,135 107,127.5 107,112.5"
+                            class="radar-grid-line" />
+
+                        <line x1="120" y1="120" x2="120" y2="45" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="185" y2="82.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="185" y2="157.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="120" y2="195" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="55" y2="157.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="55" y2="82.5" class="radar-axis-line" />
+
+                        <polygon :points="radarPoints" class="radar-data-area" />
+
+                        <text x="120" y="32" text-anchor="middle" class="radar-chart-label">攻击力</text>
+                        <text x="195" y="80" text-anchor="start" class="radar-chart-label">速度</text>
+                        <text x="195" y="165" text-anchor="start" class="radar-chart-label">辅助</text>
+                        <text x="120" y="212" text-anchor="middle" class="radar-chart-label">控制</text>
+                        <text x="45" y="165" text-anchor="end" class="radar-chart-label">攻击距离</text>
+                        <text x="45" y="80" text-anchor="end" class="radar-chart-label">攻击范围</text>
+                    </svg>
+                </div>
+            </div><img src="https://data.seicing.com/seicingdepot/dnfclass3/png/暗枪士1.png">
+        </td>
     </tr>
     <tr>
         <td class="bcF5F8FA" style="height:56px">伤害<br>类型</td>
@@ -1895,5 +1924,72 @@
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/boxmessage.js"></script>
+<script src="https://seicing.com/js/vue3.js"></script>
+<script>
+    const { createApp, ref, onMounted, computed } = Vue;
+
+    const app = createApp({
+        setup() {
+            const aasb = ref([]);
+            let characterid = '';
+            // 1. 冰结师的六维属性数值（顺序：攻击力, 速度, 辅助, 控制, 攻击距离, 攻击范围）
+            // 满分为 5 分
+            const charStats = ref([4.0, 3.2, 1.0, 3.5, 2.5, 3.8]); // 属性数值
+
+            const radarPoints = computed(() => {
+                const cx = 120;
+                const cy = 120;
+                const r = 75;
+                const angles = [
+                    -Math.PI / 2, -Math.PI / 6, Math.PI / 6,
+                    Math.PI / 2, Math.PI * 5 / 6, -Math.PI * 5 / 6
+                ];
+                return charStats.value.map((val, i) => {
+                    const ratio = val / 5;
+                    const x = cx + ratio * r * Math.cos(angles[i]);
+                    const y = cy + ratio * r * Math.sin(angles[i]);
+                    return `${x.toFixed(1)},${y.toFixed(1)}`;
+                }).join(' ');
+            });
+
+            const copyText = (text) => {
+                navigator.clipboard.writeText(text);
+            };
+
+            onMounted(() => {
+                characterid = document.getElementById("overdrive").innerHTML;
+                fetch('https://seicing.com/js/dialog.json')
+                    .then(response => response.json())
+                    .then(json => {
+                        const processedData = json.map(item => {
+                            const faceid = item['name'].slice(5);
+                            return {
+                                ...item,
+                                faceid: faceid,
+                                faceid937: "no_" + faceid,
+                                attach5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/attach.png`,
+                                special5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/special.png`,
+                                sweat5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/sweat.png`,
+                                redface5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/red_face.png`,
+                                brow5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['brow']}.png`,
+                                eyeclose5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['eye3']}.png`,
+                                eye5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['eye']}.png`,
+                                mouth5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/${item['mouth']}.png`,
+                                base5: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base.png`,
+                                base6: `https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${characterid}/base2.png`
+                            };
+                        });
+                        aasb.value = processedData;
+                    });
+            });
+
+            return { aasb, copyText, charStats, radarPoints };
+        }
+    });
+    // 用 DOMContentLoaded 监听器包裹挂载指令，确保 HTML 树树加载完后再执行
+    document.addEventListener('DOMContentLoaded', () => {
+        app.mount('#app');
+    });
+</script>
 
 </html>

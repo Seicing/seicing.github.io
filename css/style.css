@@ -366,8 +366,6 @@ body.layout-headless.theme-dark #wrapper2 {
 }
 
 .radar-chart-label {
-    font-size: 11px;
-    font-weight: bold;
     fill: var(--text-primary);
     /* 文字颜色自适应（日间暗灰，夜间沙白） */
     transition: fill 0.3s ease;

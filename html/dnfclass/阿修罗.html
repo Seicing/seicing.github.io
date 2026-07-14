@@ -51,39 +51,33 @@
         <td class="bcF5F8FA" width=10%>推荐<br>武器</td>
         <td width=10%><img img title="短剑" src="https://data.seicing.com/seicingdepot/dfclass/icon/短剑.png"></td>
         <td rowspan="5" colspan="4" width=50% style=" text-align: center">
-            <div class="radar-chart-container">
-                <svg viewBox="0 0 240 240" style="width: 100%; height: auto;">
-                    <!-- 1. 背景同心六边形网格 (5层刻度圈) -->
-                    <!-- 100% 圈 -->
-                    <polygon points="120,45 185,82.5 185,157.5 120,195 55,157.5 55,82.5" class="radar-grid-line" />
-                    <!-- 80% 圈 -->
-                    <polygon points="120,60 172,90 172,150 120,180 68,150 68,90" class="radar-grid-line" />
-                    <!-- 60% 圈 -->
-                    <polygon points="120,75 159,97.5 159,142.5 120,165 81,142.5 81,97.5" class="radar-grid-line" />
-                    <!-- 40% 圈 -->
-                    <polygon points="120,90 146,105 146,135 120,150 94,135 94,105" class="radar-grid-line" />
-                    <!-- 20% 圈 -->
-                    <polygon points="120,105 133,112.5 133,127.5 120,135 107,127.5 107,112.5" class="radar-grid-line" />
+            <div id="app">
+                <div class="radar-chart-container">
+                    <svg viewBox="0 0 240 240" style="width: 100%; height: auto;">
+                        <polygon points="120,45 185,82.5 185,157.5 120,195 55,157.5 55,82.5" class="radar-grid-line" />
+                        <polygon points="120,60 172,90 172,150 120,180 68,150 68,90" class="radar-grid-line" />
+                        <polygon points="120,75 159,97.5 159,142.5 120,165 81,142.5 81,97.5" class="radar-grid-line" />
+                        <polygon points="120,90 146,105 146,135 120,150 94,135 94,105" class="radar-grid-line" />
+                        <polygon points="120,105 133,112.5 133,127.5 120,135 107,127.5 107,112.5"
+                            class="radar-grid-line" />
 
-                    <!-- 2. 六个维度的射线轴线 -->
-                    <line x1="120" y1="120" x2="120" y2="45" class="radar-axis-line" />
-                    <line x1="120" y1="120" x2="185" y2="82.5" class="radar-axis-line" />
-                    <line x1="120" y1="120" x2="185" y2="157.5" class="radar-axis-line" />
-                    <line x1="120" y1="120" x2="120" y2="195" class="radar-axis-line" />
-                    <line x1="120" y1="120" x2="55" y2="157.5" class="radar-axis-line" />
-                    <line x1="120" y1="120" x2="55" y2="82.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="120" y2="45" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="185" y2="82.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="185" y2="157.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="120" y2="195" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="55" y2="157.5" class="radar-axis-line" />
+                        <line x1="120" y1="120" x2="55" y2="82.5" class="radar-axis-line" />
 
-                    <!-- 3. 数据覆盖多边形 (核心：自动绑定计算属性 radarPoints) -->
-                    <polygon :points="radarPoints" class="radar-data-area" />
+                        <polygon :points="radarPoints" class="radar-data-area" />
 
-                    <!-- 4. 文字标签 (自动采用原图布局，对齐锚点已全部校准) -->
-                    <text x="120" y="32" text-anchor="middle" class="radar-chart-label">攻击力</text>
-                    <text x="195" y="80" text-anchor="start" class="radar-chart-label">速度</text>
-                    <text x="195" y="165" text-anchor="start" class="radar-chart-label">辅助</text>
-                    <text x="120" y="212" text-anchor="middle" class="radar-chart-label">控制</text>
-                    <text x="45" y="165" text-anchor="end" class="radar-chart-label">攻击距离</text>
-                    <text x="45" y="80" text-anchor="end" class="radar-chart-label">攻击范围</text>
-                </svg>
+                        <text x="120" y="32" text-anchor="middle" class="radar-chart-label">攻击力</text>
+                        <text x="195" y="80" text-anchor="start" class="radar-chart-label">速度</text>
+                        <text x="195" y="165" text-anchor="start" class="radar-chart-label">辅助</text>
+                        <text x="120" y="212" text-anchor="middle" class="radar-chart-label">控制</text>
+                        <text x="45" y="165" text-anchor="end" class="radar-chart-label">攻击距离</text>
+                        <text x="45" y="80" text-anchor="end" class="radar-chart-label">攻击范围</text>
+                    </svg>
+                </div>
             </div>
         </td>
     </tr>
@@ -1751,8 +1745,6 @@
 
 <script language="javascript" src="https://seicing.com/js/sound.js"></script>
 <script language="javascript" src="https://seicing.com/js/boxmessage.js"></script>
-
-
 <script src="https://seicing.com/js/vue3.js"></script>
 <script>
     const { createApp, ref, onMounted, computed } = Vue;
@@ -1815,7 +1807,10 @@
             return { aasb, copyText, charStats, radarPoints };
         }
     });
-    app.mount('#app');
+    // 用 DOMContentLoaded 监听器包裹挂载指令，确保 HTML 树树加载完后再执行
+    document.addEventListener('DOMContentLoaded', () => {
+        app.mount('#app');
+    });
 </script>
 
 </html>
