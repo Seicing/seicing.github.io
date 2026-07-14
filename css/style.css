@@ -103,7 +103,7 @@ body.layout-headless {
    3. 夜间模式配色覆写 (Night Mode Theme - 仅控制颜色)
    ===================================================================== */
 body.theme-dark {
-    --bg-body-color: #1c1815;
+    --bg-body-color: #373331;
     /* 调深主体背景色 */
     --text-primary: #e2ddca;
     --text-title: #ffffff;
