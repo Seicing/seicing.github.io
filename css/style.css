@@ -102,7 +102,7 @@ body.theme-dark {
     /* 夜间默认超链接变为霓虹绿 */
     --text-link-hover-bg: #2d2925;
     --special-link-color: rgb(0, 255, 172);
-    --special-text-link: rgb(9, 97, 68);
+    --special-text-link: #8c8577;
     /* 强行指定的特殊链接夜间也变为霓虹绿 */
 
     /* 侧边栏夜间高亮 */
