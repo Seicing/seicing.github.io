@@ -272,22 +272,580 @@ unser Blut und unsere Ruhe.<br>
         "ー": "",
     };
 
+    const PINYIN_RULES = {
+
+        // ===== a =====
+        "a": "𗼇",
+        "ai": "𗼈",
+        "an": "𗼉",
+        "ang": "𗼊",
+        "ao": "𗼋",
+
+
+        // ===== b =====
+        "ba": "𗼌",
+        "bai": "𗼍",
+        "ban": "𗼎",
+        "bang": "𗼏",
+        "bao": "𗼐",
+        "bei": "𗼑",
+        "ben": "𗼒",
+        "beng": "𗼓",
+        "bi": "𗼔",
+        "bian": "𗼕",
+        "biao": "𗼖",
+        "bie": "𗼗",
+        "bin": "𗼘",
+        "bing": "𗼙",
+        "bo": "𗼚",
+        "bu": "𗼛",
+
+
+        // ===== p =====
+        "pa": "𗼜",
+        "pai": "𗼝",
+        "pan": "𗼞",
+        "pang": "𗼟",
+        "pao": "𗼠",
+        "pei": "𗼡",
+        "pen": "𗼢",
+        "peng": "𗼣",
+        "pi": "𗼤",
+        "pian": "𗼥",
+        "piao": "𗼦",
+        "pie": "𗼧",
+        "pin": "𗼨",
+        "ping": "𗼩",
+        "po": "𗼪",
+        "pu": "𗼫",
+
+
+        // ===== m =====
+        "ma": "𗼬",
+        "mai": "𗼭",
+        "man": "𗼮",
+        "mang": "𗼯",
+        "mao": "𗼰",
+        "mei": "𗼱",
+        "men": "𗼲",
+        "meng": "𗼳",
+        "mi": "𗼴",
+        "mian": "𗼵",
+        "miao": "𗼶",
+        "mie": "𗼷",
+        "min": "𗼸",
+        "ming": "𗼹",
+        "mo": "𗼺",
+        "mou": "𗼻",
+        "mu": "𗼼",
+
+        // ===== f =====
+        "fa": "𗼽",
+        "fan": "𗼾",
+        "fang": "𗼿",
+        "fei": "𗽀",
+        "fen": "𗽁",
+        "feng": "𗽂",
+        "fo": "𗽃",
+        "fou": "𗽄",
+
+        // ===== d =====
+        "da": "𗽅",
+        "dai": "𗽆",
+        "dan": "𗽇",
+        "dang": "𗽈",
+        "dao": "𗽉",
+        "de": "𗽊",
+        "dei": "𗽋",
+        "den": "𗽌",
+        "deng": "𗽍",
+        "di": "𗽎",
+        "dian": "𗽏",
+        "diao": "𗽐",
+        "die": "𗽑",
+        "ding": "𗽒",
+        "diu": "𗽓",
+        "dong": "𗽔",
+        "dou": "𗽕",
+        "du": "𗽖",
+        "duan": "𗽗",
+        "dui": "𗽘",
+        "dun": "𗽙",
+        "duo": "𗽚",
+
+        // ===== t =====
+        "ta": "𗽛",
+        "tai": "𗽜",
+        "tan": "𗽝",
+        "tang": "𗽞",
+        "tao": "𗽟",
+        "te": "𗽠",
+        "teng": "𗽡",
+        "ti": "𗽢",
+        "tian": "𗽣",
+        "tiao": "𗽤",
+        "tie": "𗽥",
+        "ting": "𗽦",
+        "tong": "𗽧",
+        "tou": "𗽨",
+        "tu": "𗽩",
+        "tuan": "𗽪",
+        "tui": "𗽫",
+        "tun": "𗽬",
+        "tuo": "𗽭",
+
+        // ===== n =====
+        "na": "𗽮",
+        "nai": "𗽯",
+        "nan": "𗽰",
+        "nang": "𗽱",
+        "nao": "𗽲",
+        "ne": "𗽳",
+        "nei": "𗽴",
+        "nen": "𗽵",
+        "neng": "𗽶",
+        "ni": "𗽷",
+        "nian": "𗽸",
+        "niang": "𗽹",
+        "niao": "𗽺",
+        "nie": "𗽻",
+        "nin": "𗽼",
+        "ning": "𗽽",
+        "niu": "𗽾",
+        "nong": "𗽿",
+        "nou": "𗾀",
+        "nu": "𗾁",
+        "nuan": "𗾂",
+        "nue": "𗾃",
+        "nuo": "𗾄",
+
+        // ===== l =====
+        "la": "𗾅",
+        "lai": "𗾆",
+        "lan": "𗾇",
+        "lang": "𗾈",
+        "lao": "𗾉",
+        "le": "𗾊",
+        "lei": "𗾋",
+        "leng": "𗾌",
+        "li": "𗾍",
+        "lia": "𗾎",
+        "lian": "𗾏",
+        "liang": "𗾐",
+        "liao": "𗾑",
+        "lie": "𗾒",
+        "lin": "𗾓",
+        "ling": "𗾔",
+        "liu": "𗾕",
+        "long": "𗾖",
+        "lou": "𗾗",
+        "lu": "𗾘",
+        "lv": "𗾙",
+        "luan": "𗾚",
+        "lun": "𗾛",
+        "luo": "𗾜",
+
+        // ===== g =====
+        "ga": "𗾝",
+        "gai": "𗾞",
+        "gan": "𗾟",
+        "gang": "𗾠",
+        "gao": "𗾡",
+        "ge": "𗾢",
+        "gei": "𗾣",
+        "gen": "𗾤",
+        "geng": "𗾥",
+        "gong": "𗾦",
+        "gou": "𗾧",
+        "gu": "𗾨",
+        "gua": "𗾩",
+        "guai": "𗾪",
+        "guan": "𗾫",
+        "guang": "𗾬",
+        "gui": "𗾭",
+        "gun": "𗾮",
+        "guo": "𗾯",
+
+        // ===== k =====
+        "ka": "𗾰",
+        "kai": "𗾱",
+        "kan": "𗾲",
+        "kang": "𗾳",
+        "kao": "𗾴",
+        "ke": "𗾵",
+        "ken": "𗾶",
+        "keng": "𗾷",
+        "kong": "𗾸",
+        "kou": "𗾹",
+        "ku": "𗾺",
+        "kua": "𗾻",
+        "kuai": "𗾼",
+        "kuan": "𗾽",
+        "kuang": "𗾾",
+        "kui": "𗾿",
+        "kun": "𗿀",
+        "kuo": "𗿁",
+
+        // ===== h =====
+        "ha": "𗿂",
+        "hai": "𗿃",
+        "han": "𗿄",
+        "hang": "𗿅",
+        "hao": "𗿆",
+        "he": "𗿇",
+        "hei": "𗿈",
+        "hen": "𗿉",
+        "heng": "𗿊",
+        "hong": "𗿋",
+        "hou": "𗿌",
+        "hu": "𗿍",
+        "hua": "𗿎",
+        "huai": "𗿏",
+        "huan": "𗿐",
+        "huang": "𗿑",
+        "hui": "𗿒",
+        "hun": "𗿓",
+        "huo": "𗿔",
+
+        // ===== j =====
+        "ji": "𗿕",
+        "jia": "𗿖",
+        "jian": "𗿗",
+        "jiang": "𗿘",
+        "jiao": "𗿙",
+        "jie": "𗿚",
+        "jin": "𗿛",
+        "jing": "𗿜",
+        "jiong": "𗿝",
+        "jiu": "𗿞",
+        "ju": "𗿟",
+        "juan": "𗿠",
+        "jue": "𘀁",
+        "jun": "𘀂",
+
+        // ===== q =====
+        "qi": "𘀃",
+        "qia": "𘀄",
+        "qian": "𘀅",
+        "qiang": "𘀆",
+        "qiao": "𘀇",
+        "qie": "𘀈",
+        "qin": "𘀉",
+        "qing": "𘀊",
+        "qiong": "𘀋",
+        "qiu": "𘀌",
+        "qu": "𘀍",
+        "quan": "𘀎",
+        "que": "𘀏",
+        "qun": "𘀐",
+
+        // ===== x =====
+        "xi": "𘀑",
+        "xia": "𘀒",
+        "xian": "𘀓",
+        "xiang": "𘀔",
+        "xiao": "𘀕",
+        "xie": "𘀖",
+        "xin": "𘀗",
+        "xing": "𘀘",
+        "xiong": "𘀙",
+        "xiu": "𘀚",
+        "xu": "𘀛",
+        "xuan": "𘀜",
+        "xue": "𘀝",
+        "xun": "𘀞",
+
+        // ===== zh =====
+        "zha": "𘀟",
+        "zhai": "𘀠",
+        "zhan": "𘀡",
+        "zhang": "𘀢",
+        "zhao": "𘀣",
+        "zhe": "𘀤",
+        "zhen": "𘀥",
+        "zheng": "𘀦",
+        "zhi": "𘀧",
+        "zhong": "𘀨",
+        "zhou": "𘀩",
+        "zhu": "𘀪",
+        "zhua": "𘀫",
+        "zhuai": "𘀬",
+        "zhuan": "𘀭",
+        "zhuang": "𘀮",
+        "zhui": "𘀯",
+        "zhun": "𘀰",
+        "zhuo": "𘀱",
+
+        // ===== ch =====
+        "cha": "𘀲",
+        "chai": "𘀳",
+        "chan": "𘀴",
+        "chang": "𘀵",
+        "chao": "𘀶",
+        "che": "𘀷",
+        "chen": "𘀸",
+        "cheng": "𘀹",
+        "chi": "𘀺",
+        "chong": "𘀻",
+        "chou": "𘀼",
+        "chu": "𘀽",
+        "chua": "𘀾",
+        "chuai": "𘀿",
+        "chuan": "𘁀",
+        "chuang": "𘁁",
+        "chui": "𘁂",
+        "chun": "𘁃",
+        "chuo": "𘁄",
+
+        // ===== sh =====
+        "sha": "𘁅",
+        "shai": "𘁆",
+        "shan": "𘁇",
+        "shang": "𘁈",
+        "shao": "𘁉",
+        "she": "𘁊",
+        "shen": "𘁋",
+        "sheng": "𘁌",
+        "shi": "𘁍",
+        "shou": "𘁎",
+        "shu": "𘁏",
+        "shua": "𘁐",
+        "shuai": "𘁑",
+        "shuan": "𘁒",
+        "shuang": "𘁓",
+        "shui": "𘁔",
+        "shun": "𘁕",
+        "shuo": "𘁖",
+
+        // ===== r =====
+        "ran": "𘁗",
+        "rang": "𘁘",
+        "rao": "𘁙",
+        "re": "𘁚",
+        "ren": "𘁛",
+        "reng": "𘁜",
+        "ri": "𘁝",
+        "rong": "𘁞",
+        "rou": "𘁟",
+        "ru": "𘁠",
+        "ruan": "𘁡",
+        "rui": "𘁢",
+        "run": "𘁣",
+        "ruo": "𘁤",
+
+        // ===== z =====
+        "za": "𘁥",
+        "zai": "𘁦",
+        "zan": "𘁧",
+        "zang": "𘁨",
+        "zao": "𘁩",
+        "ze": "𘁪",
+        "zei": "𘁫",
+        "zen": "𘁬",
+        "zeng": "𘁭",
+        "zi": "𘁮",
+        "zong": "𘁯",
+        "zou": "𘁰",
+        "zu": "𘁱",
+        "zuan": "𘁲",
+        "zui": "𘁳",
+        "zun": "𘁴",
+        "zuo": "𘁵",
+
+        // ===== c =====
+        "ca": "𘁶",
+        "cai": "𘁷",
+        "can": "𘁸",
+        "cang": "𘁹",
+        "cao": "𘁺",
+        "ce": "𘁻",
+        "cen": "𘁼",
+        "ceng": "𘁽",
+        "ci": "𘁾",
+        "cong": "𘁿",
+        "cou": "𘂀",
+        "cu": "𘂁",
+        "cuan": "𘂂",
+        "cui": "𘂃",
+        "cun": "𘂄",
+        "cuo": "𘂅",
+
+        // ===== s =====
+        "sa": "𘂆",
+        "sai": "𘂇",
+        "san": "𘂈",
+        "sang": "𘂉",
+        "sao": "𘂊",
+        "se": "𘂋",
+        "sen": "𘂌",
+        "seng": "𘂍",
+        "si": "𘂎",
+        "song": "𘂏",
+        "sou": "𘂐",
+        "su": "𘂑",
+        "suan": "𘂒",
+        "sui": "𘂓",
+        "sun": "𘂔",
+        "suo": "𘂕",
+
+        // ===== 零声母 =====
+
+        "e": "𘂖",
+        "en": "𘂗",
+        "eng": "𘂘",
+        "er": "𘂙",
+
+        "ei": "𘂚",
+
+        "ou": "𘂛",
+        "o": "𘂜",
+
+
+        // ===== w 开头 =====
+
+        "wa": "𘂝",
+        "wai": "𘂞",
+        "wan": "𘂟",
+        "wang": "𘂠",
+        "wei": "𘂡",
+        "wen": "𘂢",
+        "weng": "𘂣",
+        "wo": "𘂤",
+
+
+        // ===== y 开头 =====
+
+        "ya": "𘂥",
+        "yai": "𘂦",
+        "yan": "𘂧",
+        "yang": "𘂨",
+        "yao": "𘂩",
+        "ye": "𘂪",
+        "yi": "𘂫",
+        "yin": "𘂬",
+        "ying": "𘂭",
+        "yo": "𘂮",
+        "yong": "𘂯",
+        "you": "𘂰",
+
+        "yu": "𘂱",
+        "yuan": "𘂲",
+        "yue": "𘂳",
+        "yun": "𘂴",
+
+
+        // ===== ü 系列 =====
+
+        "lv": "𘂵",
+        "lve": "𘂶",
+
+        "nv": "𘂷",
+        "nve": "𘂸",
+
+
+        // ===== j q x 补充 ü 音 =====
+
+        "ju": "𘂹",
+        "juan": "𘂺",
+        "jue": "𘂻",
+        "jun": "𘂼",
+
+        "qu": "𘂽",
+        "quan": "𘂾",
+        "que": "𘂿",
+        "qun": "𘃀",
+
+        "xu": "𘃁",
+        "xuan": "𘃂",
+        "xue": "𘃃",
+        "xun": "𘃄",
+
+
+        // ===== 特殊音节 =====
+
+        "zhi": "𘃅",
+        "chi": "𘃆",
+        "shi": "𘃇",
+        "ri": "𘃈",
+
+        "zi": "𘃉",
+        "ci": "𘃊",
+        "si": "𘃋",
+
+
+        // ===== 常见缺漏 =====
+
+        "dei": "𘃌",
+        "dia": "𘃍",
+        "den": "𘃎",
+
+        "dui": "𘃏",
+        "dun": "𘃐",
+
+        "tei": "𘃑",
+
+        "nei": "𘃒",
+
+        "nou": "𘃓",
+
+        "lei": "𘃔",
+
+        "neng": "𘃕",
+        "leng": "𘃖",
+
+        "geng": "𘃗",
+
+        "heng": "𘃘",
+
+        "weng": "𘃙",
+
+        "yue": "𘃚",
+    };
+
     // 转换函数
     function convert() {
 
         let text = document.getElementById("input").value;
 
+        let result = "";
 
-        // 长字符优先
-        for (let key of Object.keys(REPLACE_RULES)
-            .sort((a, b) => b.length - a.length)) {
+        for (let char of text) {
 
-            text = text.split(key)
-                .join(REPLACE_RULES[key]);
+
+            // 1. 固定字符
+            if (REPLACE_RULES[char]) {
+
+                result += REPLACE_RULES[char];
+
+            }
+
+
+            // 2. 汉字转普通话音节
+            else if (PINYIN_MAP[char]) {
+
+                let py = PINYIN_MAP[char];
+
+                if (PINYIN_RULES[py]) {
+                    result += PINYIN_RULES[py];
+                }
+                else {
+                    result += char;
+                }
+
+            }
+
+
+            // 3. 其他保留
+            else {
+
+                result += char;
+
+            }
+
         }
 
 
-        document.getElementById("result").innerText = text;
+        document.getElementById("result").innerText = result;
 
     }
 
