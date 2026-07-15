@@ -340,7 +340,7 @@ body .civ7line {
 }
 
 body.theme-dark .civ7line {
-    filter: invert(1);
+    filter: invert(0.6);
 }
 
 /* =====================================================================
