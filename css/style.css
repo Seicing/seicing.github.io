@@ -335,6 +335,14 @@ body.layout-headless.theme-dark #wrapper2 {
     color: var(--hidden-inpage);
 }
 
+body .civ7line {
+    filter: invert(0);
+}
+
+body.theme-dark .civ7line {
+    filter: invert(1);
+}
+
 /* =====================================================================
    雷达图自适应矢量样式
    ===================================================================== */
