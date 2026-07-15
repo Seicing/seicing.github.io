@@ -12,6 +12,7 @@
 <link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro"></script>
 <style>
     textarea {
         font-size: 1.25em;
@@ -100,7 +101,7 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry">
-<textarea id="input" placeholder="输入片假名以转换为尤伊语(异体假名)"></textarea>
+<textarea id="input" placeholder="片假名→尤伊语，汉字→西景语，拉丁字母→艾特拉塔语"></textarea>
 
 <div class="button-area">
     <button onclick="convert()">转换</button>
@@ -270,6 +271,35 @@ unser Blut und unsere Ruhe.<br>
         "ヮ": "𛄊",
         "ッ": "𛁪",
         "ー": "",
+
+        "th": "𐌸",
+        "þ": "𐌸",
+        "a": "𐌰",
+        "b": "𐌱",
+        "c": "𐌺",
+        "g": "𐌲",
+        "d": "𐌳",
+        "e": "𐌴",
+        "q": "𐌵",
+        "z": "𐌶",
+        "h": "𐌷",
+        "i": "𐌹",
+        "k": "𐌺",
+        "l": "𐌻",
+        "m": "𐌼",
+        "n": "𐌽",
+        "j": "𐌾",
+        "u": "𐌿",
+        "v": "𐍅",
+        "y": "𐌹",
+        "p": "𐍀",
+        "r": "𐍁",
+        "s": "𐍃",
+        "t": "𐍄",
+        "w": "𐍅",
+        "f": "𐍆",
+        "x": "𐍇",
+        "o": "𐍉"
     };
 
     const PINYIN_RULES = {
@@ -809,10 +839,11 @@ unser Blut und unsere Ruhe.<br>
 
         let result = "";
 
+
         for (let char of text) {
 
 
-            // 1. 固定字符
+            // 1. 固定词
             if (REPLACE_RULES[char]) {
 
                 result += REPLACE_RULES[char];
@@ -820,22 +851,30 @@ unser Blut und unsere Ruhe.<br>
             }
 
 
-            // 2. 汉字转普通话音节
-            else if (PINYIN_MAP[char]) {
+            // 2. 汉字自动拼音
+            else if (/[\u4e00-\u9fa5]/.test(char)) {
 
-                let py = PINYIN_MAP[char];
+
+                let py = pinyinPro.pinyin(char, {
+                    toneType: "none"
+                }).toLowerCase();
+
 
                 if (PINYIN_RULES[py]) {
+
                     result += PINYIN_RULES[py];
+
                 }
                 else {
+
                     result += char;
+
                 }
 
             }
 
 
-            // 3. 其他保留
+            // 3. 其他
             else {
 
                 result += char;
