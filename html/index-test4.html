@@ -124,6 +124,10 @@ Die erste Bürgerpflicht ist, seinem Vaterlande zu dienen. Wir streben danach mi
 unser Blut und unsere Ruhe.<br>
 ディー エアステ ビュルガープフリヒト イスト，ザイネム ファーターランデ ツー ディーネン。ヴィア シュトレーベン ダーナーハ ミット ウンゼレム ガンツェン ヴェーゼン，コステ エス アオホ ウンゼア ブルート ウント ウンゼレ
 ルーエ。<br>
+<br>
+xšāyaθiya<br>
+koshitana ala mu<br>
+真不敢相信你会说出那样的话，我真的很失望。<br>
 </div>
                     </div>
                 </div>
@@ -332,6 +336,15 @@ unser Blut und unsere Ruhe.<br>
         "š": "𐏁",
         "sh": "𐏁",
 
+        "ça": "𐏂",
+        "çi": "𐏂",
+        "çu": "𐏂",
+        "tsa": "𐏂",
+        "tsi": "𐏂",
+        "tsu": "𐏂",
+        "ç": "𐏂",
+        "ts": "𐏂",
+
         "ka": "𐎣",
         "ki": "𐎣𐎡",
         "ku": "𐎤",
@@ -351,15 +364,6 @@ unser Blut und unsere Ruhe.<br>
         "ci": "𐎨",
         "cu": "𐎨",
         "c": "𐎨",
-
-        "ça": "𐏂",
-        "çi": "𐏂",
-        "çu": "𐏂",
-        "ka": "𐏂",
-        "ki": "𐏂",
-        "ku": "𐏂",
-        "ç": "𐏂",
-        "k": "𐏂",
 
         "ja": "𐎩",
         "ji": "𐎪",
@@ -989,19 +993,16 @@ unser Blut und unsere Ruhe.<br>
 
         }
         else {
-
             LATIN_RULES = GOTHIC_RULES;
-
+            // 哥特多字符预处理
+            text = text
+                .replace(/ß/g, "ss")
+                .replace(/æ/g, "ae")
+                .replace(/œ/g, "oe")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "");
         }
 
-
-        // 哥特多字符预处理
-        text = text
-            .replace(/ß/g, "ss")
-            .replace(/æ/g, "ae")
-            .replace(/œ/g, "oe")
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "");
 
 
         let keys = Object.keys(LATIN_RULES)
