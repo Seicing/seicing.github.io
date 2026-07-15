@@ -1036,6 +1036,11 @@ div {
     display: block;
 }
 
+#mobile-drawer-container a {
+    border: none;
+    color: var(--text-sidebar-a);
+}
+
 @media (min-width: 1280px) {
     #mobile-drawer-container {
         display: none !important;
