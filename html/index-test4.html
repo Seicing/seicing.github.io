@@ -271,8 +271,16 @@ unser Blut und unsere Ruhe.<br>
         "ヮ": "𛄊",
         "ッ": "𛁪",
         "ー": "",
+    };
+
+    const GOTHIC_RULES = {
 
         "th": "𐌸",
+        "hw": "𐍈",
+        "gw": "𐍈",
+        "kw": "𐍈",
+        "kh": "𐌷",
+
         "þ": "𐌸",
         "a": "𐌰",
         "b": "𐌱",
@@ -832,18 +840,67 @@ unser Blut und unsere Ruhe.<br>
         "yue": "𘃚",
     };
 
-    // 转换函数
     function convert() {
 
         let text = document.getElementById("input").value;
 
         let result = "";
 
+        // 哥特多字符预处理
+        text = text
+            .replace(/ß/g, "ss")
+            .replace(/æ/g, "ae")
+            .replace(/œ/g, "oe")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
 
-        for (let char of text) {
+
+        let keys = Object.keys(GOTHIC_RULES)
+            .sort((a, b) => b.length - a.length);
 
 
-            // 1. 固定词
+        let i = 0;
+
+
+        while (i < text.length) {
+
+
+            let found = false;
+
+
+            // ===== 多字符哥特映射 =====
+            for (let key of keys) {
+
+                let part = text.substring(i, i + key.length)
+                    .toLowerCase();
+
+
+                if (part === key) {
+
+                    result += GOTHIC_RULES[key];
+
+                    i += key.length;
+
+                    found = true;
+
+                    break;
+
+                }
+
+            }
+
+
+            if (found) {
+                continue;
+            }
+
+
+
+            let char = text[i];
+
+
+
+            // 1. 固定字符（西夏、尤伊）
             if (REPLACE_RULES[char]) {
 
                 result += REPLACE_RULES[char];
@@ -851,7 +908,7 @@ unser Blut und unsere Ruhe.<br>
             }
 
 
-            // 2. 汉字自动拼音
+            // 2. 汉字 → 拼音 → 西夏
             else if (/[\u4e00-\u9fa5]/.test(char)) {
 
 
@@ -874,12 +931,23 @@ unser Blut und unsere Ruhe.<br>
             }
 
 
-            // 3. 其他
+            // 3. 单字符哥特
+            else if (GOTHIC_RULES[char.toLowerCase()]) {
+
+                result += GOTHIC_RULES[char.toLowerCase()];
+
+            }
+
+
+            // 4. 保留
             else {
 
                 result += char;
 
             }
+
+
+            i++;
 
         }
 
@@ -887,7 +955,6 @@ unser Blut und unsere Ruhe.<br>
         document.getElementById("result").innerText = result;
 
     }
-
 </script>
 
 </html>
