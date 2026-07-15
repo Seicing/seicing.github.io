@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>肥猫的秘密基地</title>
+<link href="https://seicing.com/css/lavibana.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<style>
+    .container {
+        width: 600px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        resize: vertical;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .button-area {
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .result {
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        min-height: 60px;
+        word-break: break-all;
+    }
+
+    body {
+        font-family: 'Tangut', 'Illazurydr', 'Iuire', system-ui;
+    }
+
+    body ruby rt {
+        font-size: 0.8em;
+    }
+
+    @font-face {
+        font-family: 'Tangut';
+        src: url('https://seicing.com/res/Tangut.ttf');
+        unicode-range: U+17000-187FF;
+    }
+
+    @font-face {
+        font-family: 'Iuire';
+        src: url('https://seicing.com/res/UniHentaiKana-Regular.otf');
+        unicode-range: U+1B001-1B11E;
+    }
+
+    @font-face {
+        font-family: 'Illazurydr';
+        src: url('https://seicing.com/res/Ponomar-Regular.ttf');
+        unicode-range: U+0400-04FF, U+0500-052F;
+    }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry">
+<textarea id="input" placeholder="输入片假名以转换为尤伊语(异体假名)"></textarea>
+
+<div class="button-area">
+    <button onclick="convert()">转换</button>
+</div>
+
+
+<div class="result" id="result"></div>
+
+</div>
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const REPLACE_RULES = {
+        "西": "𗪏",
+        "景": "𘊐",
+        "合": "𗊡",
+        "扎": "𗲁",
+        "儿": "𗄋",
+        "任": "𗕌",
+        "那": "𗢰",
+        "匈": "𗪌",
+        "奴": "𘊷",
+        "泖": "𗿋",
+        "支": "𗿌",
+        "於": "𗖱",
+        "夏": "𘒂",
+        "州": "𗍁",
+        "平": "𗦮",
+        "成": "𘌯",
+        "摄": "𘛣",
+        "崎": "𗒯",
+        "德": "𗁓",
+        "原": "𗤩",
+        "千": "𗣆",
+        "叶": "𗓵",
+        "高": "𗣛",
+
+        "ア": "𛀄",
+        "イ": "𛀆",
+        "ウ": "𛀍",
+        "ヴ": "𛀍",
+        "エ": "𛀒",
+        "オ": "𛀔",
+
+        "カ": "𛀙",
+        "キ": "𛀦",
+        "ク": "𛀬",
+        "ケ": "𛀶",
+        "コ": "𛀻",
+
+        "ガ": "𛀜",
+        "ギ": "𛀥",
+        "グ": "𛀰",
+        "ゲ": "𛀵",
+        "ゴ": "𛀹",
+
+        "サ": "𛀿",
+        "シ": "𛁅",
+        "ス": "𛁑",
+        "セ": "𛁒",
+        "ソ": "𛁛",
+
+        "ザ": "𛁂",
+        "ジ": "𛁄",
+        "ズ": "𛁏",
+        "ゼ": "𛁓",
+        "ゾ": "𛁝",
+
+        "タ": "𛁠",
+        "チ": "𛁢",
+        "ツ": "𛁪",
+        "テ": "𛁮",
+        "ト": "𛁷",
+
+        "ダ": "𛁟",
+        "ヂ": "𛁦",
+        "ヅ": "𛁭",
+        "デ": "𛁵",
+        "ド": "𛁽",
+
+        "ナ": "𛁿",
+        "ニ": "𛂌",
+        "ヌ": "𛂑",
+        "ネ": "𛂒",
+        "ノ": "𛂙",
+
+        "ハ": "𛂦",
+        "ヒ": "𛂪",
+        "フ": "𛂰",
+        "ヘ": "𛂹",
+        "ホ": "𛃀",
+
+        "バ": "𛂡",
+        "ビ": "𛂯",
+        "ブ": "𛂲",
+        "ベ": "𛂷",
+        "ボ": "𛂼",
+
+        "パ": "𛂨",
+        "ピ": "𛂬",
+        "プ": "𛂱",
+        "ペ": "𛂶",
+        "ポ": "𛂿",
+
+        "マ": "𛃄",
+        "ミ": "𛃉",
+        "ム": "𛃒",
+        "メ": "𛃔",
+        "モ": "𛃘",
+
+        "ヤ": "𛃡",
+        "ユ": "𛃤",
+        "ヨ": "𛃫",
+
+        "ラ": "𛃰",
+        "リ": "𛃶",
+        "ル": "𛃻",
+        "レ": "𛃿",
+        "ロ": "𛄃",
+
+        "ワ": "𛄊",
+        "ヰ": "𛄑",
+        "ヱ": "𛄓",
+        "ヲ": "𛄖",
+
+        "ン": "𛄞",
+
+        "ァ": "𛀄",
+        "ィ": "𛀆",
+        "ゥ": "𛀍",
+        "ェ": "𛀒",
+        "ォ": "𛀔",
+        "ャ": "𛃡",
+        "ュ": "𛃤",
+        "ョ": "𛃫",
+        "ヮ": "𛄊",
+        "ッ": "𛁪",
+        "ー": "",
+    };
+
+    // 转换函数
+    function convert() {
+
+        let text = document.getElementById("input").value;
+
+
+        // 长字符优先
+        for (let key of Object.keys(REPLACE_RULES)
+            .sort((a, b) => b.length - a.length)) {
+
+            text = text.split(key)
+                .join(REPLACE_RULES[key]);
+        }
+
+
+        document.getElementById("result").innerText = text;
+
+    }
+
+</script>
+
+</html>

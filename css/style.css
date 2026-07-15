@@ -30,6 +30,7 @@
     --text-sidebar-p: #726B63;
     --text-sidebar-h2: #2E2E2E;
     --text-sidebar-a: #857E6E;
+    --text-sidebar-a-2: #beb6a5;
     --border-sidebar-li: 1px dashed #A5A08C;
 
     /* --- 辅助元素与表格日间配色 --- */
@@ -128,6 +129,7 @@ body.theme-dark {
     --text-sidebar-p: #9c968a;
     --text-sidebar-h2: #e2ddca;
     --text-sidebar-a: #beb6a5;
+    --text-sidebar-a-2: #beb6a5;
     --border-sidebar-li: 1px dashed #4e4840;
 
     /* 辅助元素与表格夜间 */
@@ -1046,7 +1048,7 @@ div {
 
 #mobile-drawer-container a {
     border: none;
-    color: var(--text-sidebar-a);
+    color: var(--text-sidebar-a-2);
 }
 
 @media (min-width: 1280px) {
