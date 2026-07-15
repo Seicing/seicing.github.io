@@ -101,14 +101,14 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry">
-<textarea id="input" placeholder="片假名→尤伊语，汉字→西景语，拉丁字母→艾特拉塔语/卡哈扎塔语"></textarea>
+<textarea id="input" placeholder="片假名→尤伊字母，汉字→西景文字，拉丁字母→艾特拉塔字母/卡哈扎塔字母(根据开关决定)"></textarea>
 <div class="button-area">
     <button onclick="convert()">转换</button>
 </div>
 <div class="switch-area">
     <label>
         <input type="checkbox" id="persianMode">
-        拉丁字母→波斯式楔形文字
+        拉丁字母→卡哈扎塔字母
     </label>
 </div>
 <div class="result" id="result"></div>
@@ -1063,7 +1063,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
 
 
             // 1. 固定字符（西夏、尤伊）
-            if (REPLACE_RULES[char]) {
+            if (Object.hasOwn(REPLACE_RULES, char)) {
 
                 result += REPLACE_RULES[char];
 
