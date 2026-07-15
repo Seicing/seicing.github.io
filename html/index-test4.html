@@ -101,15 +101,20 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry">
-<textarea id="input" placeholder="片假名→尤伊语，汉字→西景语，拉丁字母→艾特拉塔语"></textarea>
-
+<textarea id="input" placeholder="片假名→尤伊语，汉字→西景语，拉丁字母→艾特拉塔语/卡哈扎塔语"></textarea>
 <div class="button-area">
     <button onclick="convert()">转换</button>
+</div>
+<div class="switch-area">
+    <label>
+        <input type="checkbox" id="persianMode">
+        切换到卡哈扎塔语
+    </label>
 </div>
 <div class="result" id="result"></div>
 <br><br><br>
 一些测试用的文字<br>
-I’m Anastasia, the divine of the Niederung, I'm curious—are you friend or foe?<br>
+I’m Anastasia, the Divine of the Niederung, I'm curious—are you friend or foe?<br>
 アイム アナスタシア，ザ ディヴァイン オブ ニーデルング，アイム キュリオス——アー ユー フレンド オア フォー？<br>
 <br>
 It is truly hard to believe that you would say something like that, I am really disappointed.<br>
@@ -274,13 +279,11 @@ unser Blut und unsere Ruhe.<br>
     };
 
     const GOTHIC_RULES = {
-
         "th": "𐌸",
         "hw": "𐍈",
         "gw": "𐍈",
         "kw": "𐍈",
         "kh": "𐌷",
-
         "þ": "𐌸",
         "a": "𐌰",
         "b": "𐌱",
@@ -310,20 +313,113 @@ unser Blut und unsere Ruhe.<br>
         "o": "𐍉"
     };
 
+    const PERSIAN_RULES = {
+        "a": "𐎠",
+        "i": "𐎡",
+        "u": "𐎢",
+
+        "ka": "𐎣",
+        "ku": "𐎤",
+
+        "xa": "𐎧",
+        "xi": "𐎧",
+        "xu": "𐎧",
+
+        "ga": "𐎥",
+        "gu": "𐎦",
+
+        "ca": "𐎨",
+        "ci": "𐎨",
+        "cu": "𐎨",
+
+        "ça": "𐏂",
+        "çi": "𐏂",
+        "çu": "𐏂",
+        "ka": "𐏂",
+        "ki": "𐏂",
+        "ku": "𐏂",
+
+        "ja": "𐎩",
+        "ji": "𐎪",
+
+        "ta": "𐎫",
+        "ti": "𐎫",
+        "tu": "𐎬",
+
+        "tha": "𐎰",
+        "thi": "𐎰",
+        "thu": "𐎰",
+
+        "da": "𐎭",
+        "di": "𐎮",
+        "du": "𐎯",
+
+        "pa": "𐎱",
+        "pi": "𐎱",
+        "pu": "𐎱",
+
+        "fa": "𐎳",
+        "fi": "𐎳",
+        "fu": "𐎳",
+
+        "ba": "𐎲",
+        "bi": "𐎲",
+        "bu": "𐎲",
+
+        "na": "𐎴",
+        "ni": "𐎴",
+        "nu": "𐎵",
+
+        "ma": "𐎶",
+        "mi": "𐎷",
+        "mu": "𐎸",
+
+        "ya": "𐎹",
+        "yi": "𐎹",
+        "yu": "𐎹",
+
+        "va": "𐎺",
+        "vi": "𐎺",
+
+        "ra": "𐎼",
+        "ri": "𐎼",
+        "ru": "𐎽",
+
+        "la": "𐎾",
+        "li": "𐎾",
+        "lu": "𐎾",
+
+        "sa": "𐎿",
+        "si": "𐎿",
+        "su": "𐎿",
+
+        "za": "𐏀",
+        "zi": "𐏀",
+        "zu": "𐏀",
+
+        "ša": "𐏁",
+        "ši": "𐏁",
+        "šu": "𐏁",
+        "sha": "𐏁",
+        "shi": "𐏁",
+        "shu": "𐏁",
+
+        "ha": "𐏃",
+        "hi": "𐏃",
+        "hu": "𐏃",
+    };
+
     const PINYIN_RULES = {
-        "a": "𗠝",
-        "ai": "𗙟",
-        "an": "𗑹",
-        "ang": "𗑹",
-        "ao": "𗸖",
-
-
-        // ===== b =====
-        "ba": "𘊿",
-        "bai": "𗼍",
-        "ban": "𗼎",
-        "bang": "𗼏",
-        "bao": "𗼐",
+        "a": "𗠝", // =====
+        "ai": "𗙟", // =====
+        "an": "𗑹", // =====
+        "ang": "𗑹", // =====
+        "ao": "𗸖", // =====
+        "ba": "𘊿", // =====
+        "bai": "𗥻", // =====
+        "ban": "𗦺",// =====
+        "bang": "𗦺",// =====
+        "bao": "𘜻",// =====
         "bei": "𗼑",
         "ben": "𗼒",
         "beng": "𗼓",
@@ -609,7 +705,7 @@ unser Blut und unsere Ruhe.<br>
         "zhua": "𘀫",
         "zhuai": "𘀬",
         "zhuan": "𘀭",
-        "zhuang": "𘀮",
+        "zhuang": "𗉋", // =====
         "zhui": "𘀯",
         "zhun": "𘀰",
         "zhuo": "𘀱",
@@ -841,11 +937,30 @@ unser Blut und unsere Ruhe.<br>
         "yue": "𘃚",
     };
 
+
+
     function convert() {
 
         let text = document.getElementById("input").value;
 
         let result = "";
+
+        let usePersian = document.getElementById("persianMode").checked;
+
+
+        let LATIN_RULES;
+
+        if (usePersian) {
+
+            LATIN_RULES = PERSIAN_RULES;
+
+        }
+        else {
+
+            LATIN_RULES = GOTHIC_RULES;
+
+        }
+
 
         // 哥特多字符预处理
         text = text
@@ -856,7 +971,7 @@ unser Blut und unsere Ruhe.<br>
             .replace(/[\u0300-\u036f]/g, "");
 
 
-        let keys = Object.keys(GOTHIC_RULES)
+        let keys = Object.keys(LATIN_RULES)
             .sort((a, b) => b.length - a.length);
 
 
@@ -878,7 +993,7 @@ unser Blut und unsere Ruhe.<br>
 
                 if (part === key) {
 
-                    result += GOTHIC_RULES[key];
+                    result += LATIN_RULES[key];
 
                     i += key.length;
 
@@ -933,9 +1048,9 @@ unser Blut und unsere Ruhe.<br>
 
 
             // 3. 单字符哥特
-            else if (GOTHIC_RULES[char.toLowerCase()]) {
+            else if (LATIN_RULES[char.toLowerCase()]) {
 
-                result += GOTHIC_RULES[char.toLowerCase()];
+                result += LATIN_RULES[char.toLowerCase()];
 
             }
 
