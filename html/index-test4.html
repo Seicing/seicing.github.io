@@ -161,84 +161,6 @@ margin-top:10px;"></pre></div>
 </body>
 
 <script id="pinyin_rules">
-    document.getElementById("toggleRules").onclick = function () {
-
-        const pre = document.getElementById("ruleOutput");
-
-        if (pre.style.display === "block") {
-            pre.style.display = "none";
-            this.textContent = "查看对照表";
-            return;
-        }
-
-        // 找到包含 PINYIN_RULES 的 script
-        let scriptText = "";
-
-        for (const s of document.scripts) {
-            if (s.textContent.includes("const PINYIN_RULES")) {
-                scriptText = s.textContent;
-                break;
-            }
-        }
-
-        if (!scriptText) {
-            pre.textContent = "未找到 PINYIN_RULES";
-            pre.style.display = "block";
-            return;
-        }
-
-        // 按行寻找 PINYIN_RULES 的开始和结束
-        const lines = scriptText.split("\n");
-
-        let start = -1;
-        let end = -1;
-        let depth = 0;
-
-        for (let i = 0; i < lines.length; i++) {
-
-            if (start === -1 && lines[i].includes("const PINYIN_RULES")) {
-                start = i;
-            }
-
-            if (start !== -1) {
-
-                depth += (lines[i].match(/{/g) || []).length;
-                depth -= (lines[i].match(/}/g) || []).length;
-
-                if (depth === 0 && i > start) {
-                    end = i;
-                    break;
-                }
-            }
-        }
-
-        if (start === -1 || end === -1) {
-            pre.textContent = "未找到 PINYIN_RULES";
-            pre.style.display = "block";
-            return;
-        }
-
-        // 取出 PINYIN_RULES
-        let text = lines.slice(start, end + 1);
-
-        // 没有注释的项补 //未确定
-        text = text.map(line => {
-
-            if (line.includes("//")) return line;
-
-            if (/^\s*"[^"]+"\s*:\s*"[^"]+",?\s*$/.test(line)) {
-                return line + " //未确定";
-            }
-
-            return line;
-
-        });
-
-        pre.textContent = text.join("\n");
-        pre.style.display = "block";
-        this.textContent = "隐藏对照表";
-    };
-
     const REPLACE_RULES = {
         "ア": "𛀄",
         "イ": "𛀆",
@@ -660,7 +582,7 @@ margin-top:10px;"></pre></div>
         "nie": "𘈬", // dji̱j 涅
         "nin": "𗙦", // dźjĩ 寧
         "ning": "𗙦", // dźjĩ 寧
-        "niu": "𗽾",
+        "niu": "𗜟", // gji̱w 牛
         "nong": "𗽿",
         "nou": "𗾀",
         "nuan": "𗾂",
@@ -729,10 +651,10 @@ margin-top:10px;"></pre></div>
         "kou": "𗾹",
         "ku": "𗾺",
         "kua": "𘋑", // kiwa 剩下
-        "kuai": "𗾼",
+        "kuai": "𗘒", // kwej 會
         "kuan": "𗾽",
         "kuang": "𗂀", // ko 果光
-        "kui": "𗾿",
+        "kui": "𗗰", // khjwɨ 葵
         "kun": "𗿀",
         "kuo": "𗦬", // gu 廓交
 
@@ -752,7 +674,7 @@ margin-top:10px;"></pre></div>
         "huai": "𗿏",
         "huan": "𗿐",
         "huang": "𘙾", // xow 黃璜皇和 
-        "hui": "𗿒",
+        "hui": "𗦃", // xwej 回
         "hun": "𗹋", // xwẽ 渾
         "huo": "𗿔",
 
@@ -1086,6 +1008,85 @@ margin-top:10px;"></pre></div>
         document.getElementById("result").innerText = result;
 
     }
+
+
+    document.getElementById("toggleRules").onclick = function () {
+
+        const pre = document.getElementById("ruleOutput");
+
+        if (pre.style.display === "block") {
+            pre.style.display = "none";
+            this.textContent = "查看对照表";
+            return;
+        }
+
+        // 找到包含 PINYIN_RULES 的 script
+        let scriptText = "";
+
+        for (const s of document.scripts) {
+            if (s.textContent.includes("const PINYIN_RULES")) {
+                scriptText = s.textContent;
+                break;
+            }
+        }
+
+        if (!scriptText) {
+            pre.textContent = "未找到 PINYIN_RULES";
+            pre.style.display = "block";
+            return;
+        }
+
+        // 按行寻找 PINYIN_RULES 的开始和结束
+        const lines = scriptText.split("\n");
+
+        let start = -1;
+        let end = -1;
+        let depth = 0;
+
+        for (let i = 0; i < lines.length; i++) {
+
+            if (start === -1 && lines[i].includes("const PINYIN_RULES")) {
+                start = i;
+            }
+
+            if (start !== -1) {
+
+                depth += (lines[i].match(/{/g) || []).length;
+                depth -= (lines[i].match(/}/g) || []).length;
+
+                if (depth === 0 && i > start) {
+                    end = i;
+                    break;
+                }
+            }
+        }
+
+        if (start === -1 || end === -1) {
+            pre.textContent = "未找到 PINYIN_RULES";
+            pre.style.display = "block";
+            return;
+        }
+
+        // 取出 PINYIN_RULES
+        let text = lines.slice(start, end + 1);
+
+        // 没有注释的项补 //未确定
+        text = text.map(line => {
+
+            if (line.includes("//")) return line;
+
+            if (/^\s*"[^"]+"\s*:\s*"[^"]+",?\s*$/.test(line)) {
+                return line + " //未确定";
+            }
+
+            return line;
+
+        });
+
+        pre.textContent = text.join("\n");
+        pre.style.display = "block";
+        this.textContent = "隐藏对照表";
+    };
 </script>
 
 </html>
