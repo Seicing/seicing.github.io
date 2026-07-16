@@ -128,7 +128,14 @@ unser Blut und unsere Ruhe.<br>
 xšāyaθiya<br>
 kunshtan al mu<br>
 Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
-你那帮乌合之众居然敢挑战世界主宰？真是愚蠢至极。<br></div>
+你那帮乌合之众居然敢挑战世界主宰？真是愚蠢至极。<br>
+<br>
+<button id="showRuleBtn">显示西夏文拼音对应表</button>
+<pre id="ruleList" style="display:none;
+font-family: 'Tangut', system-ui;
+border:1px solid #ccc;
+padding:10px;
+margin-top:10px;"></pre></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -154,6 +161,28 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
 </body>
 
 <script>
+    document.getElementById("toggleRules").onclick = function () {
+
+        const pre = document.getElementById("ruleOutput");
+
+        if (pre.style.display === "block") {
+            pre.style.display = "none";
+            this.textContent = "查看拼音对照表";
+            return;
+        }
+
+        const script = document.getElementById("pinyin_rules").textContent;
+
+        const text = script.replace(
+            /^(\s*"[^"]+"\s*:\s*"[^"]+",?)(?!\s*\/\/)/gm,
+            '$1 //未确定'
+        );
+
+        pre.textContent = text;
+        pre.style.display = "block";
+        this.textContent = "隐藏拼音对照表";
+    };
+
     const REPLACE_RULES = {
         "ア": "𛀄",
         "イ": "𛀆",
@@ -480,12 +509,12 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "pian": "𗼥",
         "piao": "𗼦",
         "pie": "𗁶", // phji̱j 撇
-        "pin": "𗼨",
+        "pin": "𗙚", // phjĩ 憑頻
         "ping": "𗦮", // phjij 平瓶病
         "po": "𗼪",
         "pu": "𗼫",
 
-        "ma": "𘈼", // ma 馬
+        "ma": "𗴺", // mja 媽母娘
         "mai": "𗼭",
         "man": "𗼮",
         "mang": "𗼯",
@@ -508,9 +537,9 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "fan": "𗏆", // xiwã 凡梵
         "fang": "𗐐", // xjow 方
         "fei": "𘋇", // xjwi 飛妃費
-        "fen": "𗽁",
-        "feng": "𗽂",
-        "fo": "𗽃",
+        "fen": "𗞖", // xjwĩ 分
+        "feng": "𗼵", // xjow 房方逢風匈興奉雄
+        "fo": "𘒶", // xwjɨ 佛
         "fou": "𗽄",
         "fu": "𗽄",
 
@@ -527,7 +556,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "dian": "𗽏",
         "diao": "𗽐",
         "die": "𗣠", // djịj 跌
-        "ding": "𗽒",
+        "ding": "𗅆", // djɨj 定
         "diu": "𗽓",
         "dong": "𗽔",
         "dou": "𗽕",
@@ -544,7 +573,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "tang": "𗁬", // thow 唐道陀拓桃糖通
         "tao": "𗽟",
         "te": "𗽠",
-        "teng": "𗽡",
+        "teng": "𗝜", // djɨr 藤
         "ti": "𗽢",
         "tian": "𗳏", // thjɨj 廷田天
         "tiao": "𗽤",
@@ -592,21 +621,21 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "lao": "𗾉",
         "le": "𗾊",
         "lei": "𗍧", // lẹ 累
-        "leng": "𗾌",
+        "leng": "𘖯", // rjɨr 唥
         "li": "𗚕", // lji  梨藜
         "lia": "𗾎",
         "lian": "𘍑", // ljɨj 靈林菱廉
         "liang": "𗽣", // ljow 量
         "liao": "𗾑",
         "lie": "𗾒",
-        "lin": "𗙓", // ljwĩ 臨倫琳輪林
+        "lin": "𗙃", // ljĩ 林檁鄰
         "ling": "𘟀", // ljij 禮麗令
         "liu": "𘛫", // ljiw 劉柳榴流留琉婁繚
         "long": "𘔾", // lhowr 龙
-        "lou": "𗾗",
+        "lou": "𗜪", // lew 楼
         "luan": "𗾚",
-        "lun": "𗾛",
-        "luo": "𗾜",
+        "lun": "𗙓", // ljwĩ 臨倫琳輪林
+        "luo": "𗥰", // lja 罗
         "lue": "𗕼", // lju 掠
         "lüe": "𗕼", // lju 掠
         "lu": "𗥡", // lu 魯陸盧
@@ -617,7 +646,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "gan": "𗾟",
         "gang": "𗾠",
         "gao": "𗣛", // kew 勾溝高告
-        "ge": "𗾢",
+        "ge": "𗫳", // kier 格
         "gei": "𗾣",
         "gen": "𗾤",
         "geng": "𗑌", //kiej 界芥更粳庚耕喈介
@@ -684,7 +713,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "ju": "𘉿", // tsju 且苴
         "juan": "𗿠",
         "jue": "𘀁",
-        "jun": "𘀂",
+        "jun": "𗑪", // kjwĩ 軍郡究
 
         "qi": "𗒯", // khji 奇錡起騎祗耆企崎卻杞忌靳岐
         "qia": "𘀳", // khja 恰
@@ -692,11 +721,11 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "qiang": "𘀆",
         "qiao": "𘀇",
         "qie": "𘀈",
-        "qin": "𘀉",
+        "qin": "𗍠", // khjĩ 琴禽清頃
         "qing": "𗓔", // tshjij 清青
         "qiong": "𘀋",
         "qiu": "𘀌",
-        "qu": "𘀍",
+        "qu": "𗻵", // kjụ 菊
         "quan": "𗪑", // khjwar 圈
         "que": "𘀏",
         "qun": "𘀐",
@@ -707,7 +736,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "xiang": "𘀔",
         "xiao": "𘀕",
         "xie": "𗾥", // sja 泄謝仙先
-        "xin": "𘀗",
+        "xin": "𗸹", // sjɨ 辛
         "xing": "𘀘",
         "xiong": "𗼵", // xjow 房方逢風匈興奉雄
         "xiu": "𘀚",
@@ -744,9 +773,9 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "che": "𘀷",
         "chen": "𘔜", // tśhjĩ 陈
         "cheng": "𘌯", // tśhjɨj 稱
-        "chi": "𘀺",
-        "chong": "𘀻",
-        "chou": "𘀼",
+        "chi": "𘍔", // tśjị 知
+        "chong": "𗕸", // tśhjow 重
+        "chou": "𗼔", // tśhjo 丑
         "chu": "𗤰", // tśhjwɨr 出
         "chua": "𘀾",
         "chuai": "𘀿",
@@ -781,7 +810,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "re": "𘁚",
         "ren": "𗕌", // źjĩ 任人壬
         "reng": "𘁜",
-        "ri": "𗎁", // rjir 日利
+        "ri": "𗱳", // rjijr 日
         "rong": "𘁞",
         "rou": "𘁟",
         "ru": "𘁠",
@@ -795,7 +824,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "zan": "𘁧",
         "zang": "𘁨",
         "zao": "𘁩",
-        "ze": "𘁪",
+        "ze": "𗩨", // tsə̣ 則
         "zei": "𘁫",
         "zen": "𗬌", // zẽ 
         "zeng": "𗻩", // zẽ 
@@ -805,13 +834,13 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "zu": "𘁱",
         "zuan": "𘁲",
         "zui": "𘁳",
-        "zun": "𘁴",
+        "zun": "𗵖", // tsjwĩ 遵
         "zuo": "𘁵",
 
         "ca": "𘀰", // tshja 擦
         "cai": "𘁷", // tshej 財菜裁蔡才
         "can": "𗚮", // tshow 燦
-        "cang": "𘁹",
+        "cang": "𗛹", // tshow 蒼
         "cao": "𗯒", // tsha 操粲朝
         "ce": "𘁻",
         "cen": "𘁼",
@@ -830,7 +859,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "san": "𘂈",
         "sang": "𘂉",
         "sao": "𘂊",
-        "se": "𘂋",
+        "se": "𘑣", // sjij 塞
         "sen": "𘂌",
         "seng": "𘂍",
         "si": "𘂎",
@@ -844,9 +873,9 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
 
         "wa": "𗬂", // war 娃
         "wai": "𗳟", // wəj 隗外韋偉
-        "wan": "𘂟",
-        "wang": "𘂠",
-        "wei": "𘂡",
+        "wan": "𗩩", // wjã 萬晚曼憲
+        "wang": "𗷮", // wow 王汪旺
+        "wei": "𗣃", // gjwi 危
         "wen": "𗣴", // wẽ 文汶聞
         "weng": "𗏛", // wẽ 翁
         "wo": "𘁾", // ŋwo 我
@@ -859,7 +888,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "yao": "𘂩",
         "ye": "𗓵", // ˑjijr 夜葉耶頁
         "yi": "𗫔", // ˑji 伊易裔醫雲
-        "yin": "𘂬",
+        "yin": "𘃻", // ˑjĩ 因寅殷
         "ying": "𘂭",
         "yo": "𘂮",
         "yong": "𘂯",
