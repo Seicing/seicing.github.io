@@ -171,37 +171,70 @@ margin-top:10px;"></pre></div>
             return;
         }
 
-        const script = document.getElementById("pinyin_rules").textContent;
+        // 找到包含 PINYIN_RULES 的 script
+        let scriptText = "";
 
-        // 只提取 PINYIN_RULES 这一段
-        const match = script.match(
-            /const\s+PINYIN_RULES\s*=\s*\{[\s\S]*?\n\};/
-        );
+        for (const s of document.scripts) {
+            if (s.textContent.includes("const PINYIN_RULES")) {
+                scriptText = s.textContent;
+                break;
+            }
+        }
 
-        if (!match) {
+        if (!scriptText) {
             pre.textContent = "未找到 PINYIN_RULES";
             pre.style.display = "block";
             return;
         }
 
-        let text = match[0];
+        // 按行寻找 PINYIN_RULES 的开始和结束
+        const lines = scriptText.split("\n");
 
-        // 逐行处理
-        text = text.split("\n").map(line => {
+        let start = -1;
+        let end = -1;
+        let depth = 0;
 
-            // 已有注释
+        for (let i = 0; i < lines.length; i++) {
+
+            if (start === -1 && lines[i].includes("const PINYIN_RULES")) {
+                start = i;
+            }
+
+            if (start !== -1) {
+
+                depth += (lines[i].match(/{/g) || []).length;
+                depth -= (lines[i].match(/}/g) || []).length;
+
+                if (depth === 0 && i > start) {
+                    end = i;
+                    break;
+                }
+            }
+        }
+
+        if (start === -1 || end === -1) {
+            pre.textContent = "未找到 PINYIN_RULES";
+            pre.style.display = "block";
+            return;
+        }
+
+        // 取出 PINYIN_RULES
+        let text = lines.slice(start, end + 1);
+
+        // 没有注释的项补 //未确定
+        text = text.map(line => {
+
             if (line.includes("//")) return line;
 
-            // 只有真正的映射行才补注释
             if (/^\s*"[^"]+"\s*:\s*"[^"]+",?\s*$/.test(line)) {
                 return line + " //未确定";
             }
 
             return line;
 
-        }).join("\n");
+        });
 
-        pre.textContent = text;
+        pre.textContent = text.join("\n");
         pre.style.display = "block";
         this.textContent = "隐藏对照表";
     };
@@ -666,8 +699,8 @@ margin-top:10px;"></pre></div>
 
         "ga": "𗿵", // ɣa  匣
         "gai": "𗾞",
-        "gan": "𗾟",
-        "gang": "𗾠",
+        "gan": "𘑫", // kã 甘
+        "gang": "𗐪", // khjow 亢
         "gao": "𗣛", // kew 勾溝高告
         "ge": "𗫳", // kier 格
         "gei": "𗾣",
@@ -885,7 +918,7 @@ margin-top:10px;"></pre></div>
         "se": "𘑣", // sjij 塞
         "sen": "𘂌",
         "seng": "𘂍",
-        "si": "𘂎",
+        "si": "𗢏", // sji 死
         "song": "𘂏",
         "sou": "𘂐",
         "su": "𘂑",
