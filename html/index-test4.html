@@ -130,8 +130,8 @@ kunshtan al mu<br>
 Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
 你那帮乌合之众居然敢挑战世界主宰？真是愚蠢至极。<br>
 <br>
-<button id="showRuleBtn">显示西夏文拼音对应表</button>
-<pre id="ruleList" style="display:none;
+<button id="toggleRules">显示西夏文拼音对应表</button>
+<pre id="ruleOutput" style="display:none;
 font-family: 'Tangut', system-ui;
 border:1px solid #ccc;
 padding:10px;
@@ -167,7 +167,7 @@ margin-top:10px;"></pre></div>
 
         if (pre.style.display === "block") {
             pre.style.display = "none";
-            this.textContent = "查看拼音对照表";
+            this.textContent = "查看对照表";
             return;
         }
 
@@ -180,7 +180,7 @@ margin-top:10px;"></pre></div>
 
         pre.textContent = text;
         pre.style.display = "block";
-        this.textContent = "隐藏拼音对照表";
+        this.textContent = "隐藏对照表";
     };
 
     const REPLACE_RULES = {
