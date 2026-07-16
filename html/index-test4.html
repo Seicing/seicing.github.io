@@ -173,10 +173,33 @@ margin-top:10px;"></pre></div>
 
         const script = document.getElementById("pinyin_rules").textContent;
 
-        const text = script.replace(
-            /^(\s*"[^"]+"\s*:\s*"[^"]+",?)(?!\s*\/\/)/gm,
-            '$1 //未确定'
+        // 只提取 PINYIN_RULES 这一段
+        const match = script.match(
+            /const\s+PINYIN_RULES\s*=\s*\{[\s\S]*?\n\};/
         );
+
+        if (!match) {
+            pre.textContent = "未找到 PINYIN_RULES";
+            pre.style.display = "block";
+            return;
+        }
+
+        let text = match[0];
+
+        // 逐行处理
+        text = text.split("\n").map(line => {
+
+            // 已有注释
+            if (line.includes("//")) return line;
+
+            // 只有真正的映射行才补注释
+            if (/^\s*"[^"]+"\s*:\s*"[^"]+",?\s*$/.test(line)) {
+                return line + " //未确定";
+            }
+
+            return line;
+
+        }).join("\n");
 
         pre.textContent = text;
         pre.style.display = "block";
@@ -561,7 +584,7 @@ margin-top:10px;"></pre></div>
         "dong": "𗽔",
         "dou": "𗽕",
         "du": "𗣑", // du 杜奴
-        "duan": "𗽗",
+        "duan": "𗌔", // thwã 段
         "dui": "𗽘",
         "dun": "𗽙",
         "duo": "𗽚",
@@ -616,9 +639,9 @@ margin-top:10px;"></pre></div>
 
         "la": "𗒉", // la  拉
         "lai": "𗾆",
-        "lan": "𗾇",
+        "lan": "𗻅", // lã 兰
         "lang": "𗾈",
-        "lao": "𗾉",
+        "lao": "𘓋", // ljow 牢
         "le": "𗾊",
         "lei": "𗍧", // lẹ 累
         "leng": "𘖯", // rjɨr 唥
@@ -633,7 +656,7 @@ margin-top:10px;"></pre></div>
         "liu": "𘛫", // ljiw 劉柳榴流留琉婁繚
         "long": "𘔾", // lhowr 龙
         "lou": "𗜪", // lew 楼
-        "luan": "𗾚",
+        "luan": "𗇬", // lwã 亂
         "lun": "𗙓", // ljwĩ 臨倫琳輪林
         "luo": "𗥰", // lja 罗
         "lue": "𗕼", // lju 掠
@@ -663,7 +686,7 @@ margin-top:10px;"></pre></div>
 
         "ka": "𗠽", // ka 哥
         "kai": "𗾱",
-        "kan": "𗾲",
+        "kan": "𗅘", // khã 坎
         "kang": "𗾳",
         "kao": "𗾴",
         "ke": "𗾵",
@@ -682,7 +705,7 @@ margin-top:10px;"></pre></div>
 
         "ha": "𗊡", // xa 哈合褐皓闔
         "hai": "𗿃",
-        "han": "𗿄",
+        "han": "𘟑", // xã 汗
         "hang": "𗿅",
         "hao": "𗿆",
         "he": "𗻟", // xẽ 贺
@@ -709,7 +732,7 @@ margin-top:10px;"></pre></div>
         "jin": "𗙾", // kiwəj 金
         "jing": "𘊐", // kjij 結敬雉鷄景荆涇
         "jiong": "𗿝",
-        "jiu": "𗿞",
+        "jiu": "𗹉", // gjow 旧
         "ju": "𘉿", // tsju 且苴
         "juan": "𗿠",
         "jue": "𘀁",
@@ -738,7 +761,7 @@ margin-top:10px;"></pre></div>
         "xie": "𗾥", // sja 泄謝仙先
         "xin": "𗸹", // sjɨ 辛
         "xing": "𘀘",
-        "xiong": "𗼵", // xjow 房方逢風匈興奉雄
+        "xiong": "𗂠", // xjow 雄
         "xiu": "𘀚",
         "xu": "𗹇", // sjwɨ 恤
         "xuan": "𗘬", //sjwa 宣修
@@ -792,7 +815,7 @@ margin-top:10px;"></pre></div>
         "shao": "𘁉",
         "she": "𘛣", // śja 捨奢闍苫叉繕 
         "shen": "𗨝", // śjĩ 申神深身
-        "sheng": "𘁌",
+        "sheng": "𗖦", // śjwow 升
         "shi": "𗫍", // śji 石食世植師使失什瑟
         "shou": "𘁎",
         "shu": "𗐨", // śie 率舒書
@@ -804,7 +827,7 @@ margin-top:10px;"></pre></div>
         "shun": "𗢆", // śjwɨ 舜
         "shuo": "𗮞", // śjwar 说
 
-        "ran": "𘁗",
+        "ran": "𘗉", // rã 然
         "rang": "𘁘",
         "rao": "𘁙",
         "re": "𘁚",
@@ -891,8 +914,8 @@ margin-top:10px;"></pre></div>
         "yin": "𘃻", // ˑjĩ 因寅殷
         "ying": "𘂭",
         "yo": "𘂮",
-        "yong": "𘂯",
-        "you": "𘂰",
+        "yong": "𘇧", // ˑjow 雍
+        "you": "𘚉", // ˑjo̱r 由
         "yu": "𘌈", // ˑju̱  余餘逾庾瑜由
         "yuan": "𗤩", // ɣjwã 袁元
         "yue": "𗇝", // ˑjwar 越
