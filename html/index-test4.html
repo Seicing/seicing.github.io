@@ -451,6 +451,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "ē": "𐎡",
         "ə": "𐎡",
         "o": "𐎢",
+        "ü": "𐎢",
 
         "q": "𐎨",
         "ḥ": "𐏃",
@@ -459,31 +460,30 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
     };
 
     const PINYIN_RULES = {
-        "a": "𗠝", // =====
-        "ai": "𗙟", // =====
-        "an": "𗑹", // =====
-        "ang": "𗑹", // =====
-        "ao": "𗸖", // =====
-        "ba": "𘊿", // =====
-        "bai": "𗥻", // =====
-        "ban": "𗦺",// =====
-        "bang": "𗦺",// =====
-        "bao": "𘜻",// =====
+        "a": "𗠝", // ˑja 阿
+        "ai": "𗙟", // ge̱j 愛艾哀
+        "an": "𗑹", // ã 安庵
+        "ang": "𗑹", // ã 安庵
+        "ao": "𗸖", // ga̱ 閼嚣奡敖
+
+        "ba": "𘊿", // pja 爸
+        "bai": "𗥻", // phie 白
+        "ban": "𗼬",// bã 纏、繞，音坂
+        "bang": "𗼬",// bã 纏、繞，音坂
+        "bao": "𘜻",// phia 包
         "bei": "𗼑",
         "ben": "𗼒",
         "beng": "𗼓",
-        "bi": "𗼔",
+        "bi": "𗢪",//pji 壁裨鼻畢秘比
         "bian": "𗼕",
         "biao": "𗼖",
         "bie": "𗼗",
         "bin": "𗼘",
         "bing": "𗼙",
-        "bo": "𗼚",
+        "bo": "𘄍",//ba 播嚩襪
         "bu": "𗼛",
 
-
-        // ===== p =====
-        "pa": "𗼜",
+        "pa": "𘄒",  // pa 般
         "pai": "𗼝",
         "pan": "𗼞",
         "pang": "𗼟",
@@ -500,9 +500,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "po": "𗼪",
         "pu": "𗼫",
 
-
-        // ===== m =====
-        "ma": "𗼬",
+        "ma": "𘈼", // ma 馬
         "mai": "𗼭",
         "man": "𗼮",
         "mang": "𗼯",
@@ -521,8 +519,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "mu": "𗼼",
         "me": "𗼼",
 
-        // ===== f =====
-        "fa": "𗼽",
+        "fa": "𗼽", //wa 伐
         "fan": "𗼾",
         "fang": "𗼿",
         "fei": "𗽀",
@@ -532,8 +529,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "fou": "𗽄",
         "fu": "𗽄",
 
-        // ===== d =====
-        "da": "𗽅",
+        "da": "𗍤",// da 達
         "dai": "𗽆",
         "dan": "𗽇",
         "dang": "𗽈",
@@ -556,8 +552,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "dun": "𗽙",
         "duo": "𗽚",
 
-        // ===== t =====
-        "ta": "𗽛",
+        "ta": "𘅪",  // ta 答
         "tai": "𗽜",
         "tan": "𗽝",
         "tang": "𗽞",
@@ -577,8 +572,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "tun": "𗽬",
         "tuo": "𗽭",
 
-        // ===== n =====
-        "na": "𗽮",
+        "na": "𗢰",// na 那
         "nai": "𗽯",
         "nan": "𗽰",
         "nang": "𗽱",
@@ -602,8 +596,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "nue": "𗾃",
         "nuo": "𗾄",
 
-        // ===== l =====
-        "la": "𗾅",
+        "la": "𗒉",// la  拉
         "lai": "𗾆",
         "lan": "𗾇",
         "lang": "𗾈",
@@ -628,8 +621,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "lun": "𗾛",
         "luo": "𗾜",
 
-        // ===== g =====
-        "ga": "𗾝",
+        "ga": "𗿵", // ɣa  匣
         "gai": "𗾞",
         "gan": "𗾟",
         "gang": "𗾠",
@@ -638,10 +630,10 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "gei": "𗾣",
         "gen": "𗾤",
         "geng": "𗾥",
-        "gong": "𗾦",
+        "gong": "𘓖", //kow 公翁軍貢工
         "gou": "𗾧",
         "gu": "𗾨",
-        "gua": "𗾩",
+        "gua": "𗽝",// kiwa 瓜
         "guai": "𗾪",
         "guan": "𗾫",
         "guang": "𗾬",
@@ -649,8 +641,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "gun": "𗾮",
         "guo": "𗾯",
 
-        // ===== k =====
-        "ka": "𗾰",
+        "ka": "𗠽", // ka 哥
         "kai": "𗾱",
         "kan": "𗾲",
         "kang": "𗾳",
@@ -658,10 +649,10 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "ke": "𗾵",
         "ken": "𗾶",
         "keng": "𗾷",
-        "kong": "𗾸",
+        "kong": "𗥴", //khow 穹空孔
         "kou": "𗾹",
         "ku": "𗾺",
-        "kua": "𗾻",
+        "kua": "𘋑",// kiwa 剩下
         "kuai": "𗾼",
         "kuan": "𗾽",
         "kuang": "𗾾",
@@ -669,30 +660,28 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "kun": "𗿀",
         "kuo": "𗿁",
 
-        // ===== h =====
-        "ha": "𗿂",
+        "ha": "𗊡",    // xa 哈合褐皓闔
         "hai": "𗿃",
         "han": "𗿄",
         "hang": "𗿅",
         "hao": "𗿆",
         "he": "𗿇",
-        "hei": "𗿈",
+        "hei": "𗬦", // xew 黑
         "hen": "𗿉",
         "heng": "𗿊",
         "hong": "𗿋",
-        "hou": "𗿌",
-        "hu": "𗿍",
-        "hua": "𗿎",
+        "hou": "𗺹", // xew 侯呼厚篌後
+        "hu": "𗍀", // ɣu 胡
+        "hua": "𗒆", // xiwa 華花反
         "huai": "𗿏",
         "huan": "𗿐",
-        "huang": "𗿑",
+        "huang": "𘙾", //xow黃璜皇和 
         "hui": "𗿒",
         "hun": "𗿓",
         "huo": "𗿔",
 
-        // ===== j =====
         "ji": "𗿕",
-        "jia": "𗿖",
+        "jia": "𗗧",  //kia 加
         "jian": "𗿗",
         "jiang": "𗿘",
         "jiao": "𗿙",
@@ -706,9 +695,8 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "jue": "𘀁",
         "jun": "𘀂",
 
-        // ===== q =====
         "qi": "𘀃",
-        "qia": "𘀄",
+        "qia": "𘀳", // khja 恰
         "qian": "𘀅",
         "qiang": "𘀆",
         "qiao": "𘀇",
@@ -722,13 +710,12 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "que": "𘀏",
         "qun": "𘀐",
 
-        // ===== x =====
         "xi": "𘀑",
-        "xia": "𘀒",
+        "xia": "𘒂", // xia 夏下孝
         "xian": "𘀓",
         "xiang": "𘀔",
         "xiao": "𘀕",
-        "xie": "𘀖",
+        "xie": "𗾥", // sja 泄謝仙先
         "xin": "𘀗",
         "xing": "𘀘",
         "xiong": "𘀙",
@@ -738,36 +725,34 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "xue": "𘀝",
         "xun": "𘀞",
 
-        // ===== zh =====
-        "zha": "𘀟",
+        "zha": "𗲁", //tśia 吒
         "zhai": "𘀠",
         "zhan": "𘀡",
-        "zhang": "𘀢",
+        "zhang": "𗔷",// tśiow 章張
         "zhao": "𘀣",
         "zhe": "𘀤",
         "zhen": "𘀥",
-        "zheng": "𘀦",
+        "zheng": "𗝿", //tśhjij 政鄭程
         "zhi": "𘀧",
         "zhong": "𘀨",
-        "zhou": "𘀩",
+        "zhou": "𗉔", //tśjiw 州周晝昭
         "zhu": "𘀪",
-        "zhua": "𘀫",
+        "zhua": "𘃓", //na̱ 抓
         "zhuai": "𘀬",
         "zhuan": "𘀭",
-        "zhuang": "𗉋", // =====
+        "zhuang": "𗉋", // tśiow 桌卓蒺涿莊淖
         "zhui": "𘀯",
         "zhun": "𘀰",
         "zhuo": "𘀱",
 
-        // ===== ch =====
-        "cha": "𘀲",
+        "cha": "𘛣", // śja 叉
         "chai": "𘀳",
         "chan": "𘀴",
         "chang": "𘀵",
         "chao": "𘀶",
         "che": "𘀷",
         "chen": "𘀸",
-        "cheng": "𘀹",
+        "cheng": "𗓓", //tśhjij 行 
         "chi": "𘀺",
         "chong": "𘀻",
         "chou": "𘀼",
@@ -780,8 +765,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "chun": "𘁃",
         "chuo": "𘁄",
 
-        // ===== sh =====
-        "sha": "𘁅",
+        "sha": "𗦰", //śiar 娑薩殺
         "shai": "𘁆",
         "shan": "𘁇",
         "shang": "𘁈",
@@ -800,7 +784,6 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "shun": "𘁕",
         "shuo": "𘁖",
 
-        // ===== r =====
         "ran": "𘁗",
         "rang": "𘁘",
         "rao": "𘁙",
@@ -816,8 +799,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "run": "𘁣",
         "ruo": "𘁤",
 
-        // ===== z =====
-        "za": "𘁥",
+        "za": "𗬄", //tswa 札
         "zai": "𘁦",
         "zan": "𘁧",
         "zang": "𘁨",
@@ -835,7 +817,6 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "zun": "𘁴",
         "zuo": "𘁵",
 
-        // ===== c =====
         "ca": "𘁶",
         "cai": "𘁷",
         "can": "𘁸",
@@ -853,8 +834,7 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "cun": "𘂄",
         "cuo": "𘂅",
 
-        // ===== s =====
-        "sa": "𘂆",
+        "sa": "𗉺", //śia灑
         "sai": "𘂇",
         "san": "𘂈",
         "sang": "𘂉",
@@ -866,25 +846,18 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "song": "𘂏",
         "sou": "𘂐",
         "su": "𘂑",
-        "suan": "𘂒",
-        "sui": "𘂓",
+        "suan": "𗢀", //swa 莎索鎖酸
+        "sui": "𘏽", //sjwi 隋遂隨瑞
         "sun": "𘂔",
         "suo": "𘂕",
-
-        // ===== 零声母 =====
 
         "e": "𘂖",
         "en": "𘂗",
         "eng": "𘂘",
         "er": "𘂙",
-
         "ei": "𘂚",
-
         "ou": "𘂛",
-        "o": "𘂜",
-
-
-        // ===== w 开头 =====
+        "o": "𗊖", //ˑo 酒
 
         "wa": "𘂝",
         "wai": "𘂞",
@@ -895,9 +868,6 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "weng": "𘂣",
         "wo": "𘂤",
         "wu": "𘂤",
-
-
-        // ===== y 开头 =====
 
         "ya": "𘂥",
         "yai": "𘂦",
@@ -917,17 +887,10 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "yue": "𘂳",
         "yun": "𘂴",
 
-
-        // ===== ü 系列 =====
-
         "lü": "𘂵",
         "lüe": "𘂶",
-
         "nü": "𘂷",
         "nüe": "𘂸",
-
-
-        // ===== j q x 补充 ü 音 =====
 
         "ju": "𘂹",
         "juan": "𘂺",
@@ -940,12 +903,9 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "qun": "𘃀",
 
         "xu": "𘃁",
-        "xuan": "𘃂",
+        "xuan": "𗘬", //sjwa 宣修
         "xue": "𘃃",
         "xun": "𘃄",
-
-
-        // ===== 特殊音节 =====
 
         "zhi": "𘃅",
         "chi": "𘃆",
@@ -956,33 +916,20 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
         "ci": "𘃊",
         "si": "𘃋",
 
-
-        // ===== 常见缺漏 =====
-
         "dei": "𘃌",
         "dia": "𘃍",
         "den": "𘃎",
-
         "dui": "𘃏",
         "dun": "𘃐",
-
         "tei": "𘃑",
-
         "nei": "𘃒",
-
         "nou": "𘃓",
-
         "lei": "𘃔",
-
         "neng": "𘃕",
         "leng": "𘃖",
-
-        "geng": "𘃗",
-
+        "geng": "𗑌",//kiej 界芥更粳庚耕喈介
         "heng": "𘃘",
-
         "weng": "𘃙",
-
         "yue": "𘃚",
     };
 
