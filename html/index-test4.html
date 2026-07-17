@@ -28,9 +28,9 @@
         margin-top: 5px;
     }
 
-    button {
+    .regbutton {
         padding: 8px 20px;
-        font-size: 16px;
+        font-size: 1.2em;
         cursor: pointer;
     }
 
@@ -100,10 +100,10 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry">
+                        <div class="entry">某些字体需要加载，在加载过程中会显示为方块<br>
 <textarea id="input" placeholder="片假名→尤伊字母，汉字→西景文字，拉丁字母→艾特拉塔字母/卡哈扎塔字母(根据开关决定)"></textarea>
 <div class="button-area">
-    <button onclick="convert()">转换</button>
+    <button class="regbutton" onclick="convert()">转换</button>
 </div>
 <div class="switch-area">
     <label>
@@ -251,7 +251,6 @@ margin-top:10px;"></pre></div>
         "ヲ": "𛄖",
 
         "ン": "𛄞",
-
         "ァ": "𛀄",
         "ィ": "𛀆",
         "ゥ": "𛀍",
@@ -592,7 +591,7 @@ margin-top:10px;"></pre></div>
         "nu": "𘊷", // nụ 奴怒
         "nü": "𗓗", // dźju̱ 女
 
-        "la": "𗒉", // la  拉
+        "la": "𗒉", // la 拉
         "lai": "𘅊", // lej 來賴
         "lan": "𗻅", // lã 兰
         "lang": "𗓽", // lo 郎
@@ -600,7 +599,7 @@ margin-top:10px;"></pre></div>
         "le": "𘒤", // le 樂
         "lei": "𗍧", // lẹ 累
         "leng": "𗛝", // lhejr 冷
-        "li": "𗚕", // lji  梨藜
+        "li": "𗚕", // lji 梨藜
         "lia": "𗊮", // lia 剌
         "lian": "𘍑", // ljɨj 靈林菱廉
         "liang": "𗽣", // ljow 量
