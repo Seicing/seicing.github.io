@@ -130,8 +130,6 @@ kunshtan al mu<br>
 Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
 你那帮乌合之众居然敢挑战世界主宰？真是愚蠢至极。<br>
 <br>
-<button id="toggleRules">显示西夏文拼音对应表</button>
-
 <button onclick="showRule('PINYIN_RULES')">显示西夏文拼音对应表</button>
 <button onclick="showRule('REPLACE_RULES')">显示变体假名对应表</button>
 <button onclick="showRule('GOTHIC_RULES')">显示哥特字母对应表</button>
@@ -1042,20 +1040,6 @@ margin-top:10px;"></pre></div>
 
 
         let text = lines.slice(start, end + 1);
-
-
-        text = text.map(line => {
-
-            if (line.includes("//")) return line;
-
-            if (/^\s*"[^"]+"\s*:\s*"[^"]+",?\s*$/.test(line)) {
-                return line + " //未确定";
-            }
-
-            return line;
-
-        });
-
 
         pre.textContent = text.join("\n");
         pre.style.display = "block";
