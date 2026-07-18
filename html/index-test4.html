@@ -131,8 +131,13 @@ Airiiθišai ahuruu-kāra-ta frāzəθra-tarəθraiti? Raθa asti.<br>
 你那帮乌合之众居然敢挑战世界主宰？真是愚蠢至极。<br>
 <br>
 <button id="toggleRules">显示西夏文拼音对应表</button>
+
+<button onclick="showRule('PINYIN_RULES')">显示西夏文拼音对应表</button>
+<button onclick="showRule('REPLACE_RULES')">显示变体假名对应表</button>
+<button onclick="showRule('GOTHIC_RULES')">显示哥特字母对应表</button>
+<button onclick="showRule('PERSIAN_RULES')">显示古波斯楔形字母对应表</button>
 <pre id="ruleOutput" style="display:none;
-font-family: 'Tangut', system-ui;
+font-family: 'Tangut','Illazurydr', 'Iuire', system-ui;
 border:1px solid #ccc;
 padding:10px;
 margin-top:10px;"></pre></div>
@@ -262,8 +267,6 @@ margin-top:10px;"></pre></div>
         "ヮ": "𛄊",
         "ッ": "𛁪",
         "ー": "",
-        "匈": "𗪌",
-        "州": "𗍁",
     };
 
     const GOTHIC_RULES = {
@@ -444,6 +447,9 @@ margin-top:10px;"></pre></div>
     };
 
     const PINYIN_RULES = {
+        "匈": "𗪌",
+        "州": "𗍁",
+
         "a": "𗠝", // ˑja 阿
         "ai": "𗙟", // ge̱j 愛艾哀
         "an": "𗑹", // ã 安庵
@@ -950,99 +956,75 @@ margin-top:10px;"></pre></div>
 
 
 
-            // 1. 固定字符（西夏、尤伊）
+            // 1. 固定字符（尤伊）
             if (Object.hasOwn(REPLACE_RULES, char)) {
-
                 result += REPLACE_RULES[char];
-
             }
-
 
             // 2. 汉字 → 拼音 → 西夏
             else if (/[\u4e00-\u9fa5]/.test(char)) {
-
-
-                let py = pinyinPro.pinyin(char, {
-                    toneType: "none"
-                }).toLowerCase();
-
-
-                if (PINYIN_RULES[py]) {
-
-                    result += PINYIN_RULES[py];
-
+                if (PINYIN_RULES[char]) {
+                    result += PINYIN_RULES[char];
                 }
+
                 else {
-
-                    result += char;
-
+                    let py = pinyinPro.pinyin(char, {
+                        toneType: "none"
+                    }).toLowerCase();
+                    if (PINYIN_RULES[py]) {
+                        result += PINYIN_RULES[py];
+                    }
+                    else {
+                        result += char;
+                    }
                 }
-
             }
-
 
             // 3. 单字符哥特
             else if (LATIN_RULES[char.toLowerCase()]) {
-
                 result += LATIN_RULES[char.toLowerCase()];
-
             }
-
 
             // 4. 保留
             else {
-
                 result += char;
-
             }
-
-
             i++;
-
         }
-
-
         document.getElementById("result").innerText = result;
-
     }
 
 
-    document.getElementById("toggleRules").onclick = function () {
+    function showRule(ruleName) {
 
         const pre = document.getElementById("ruleOutput");
 
-        if (pre.style.display === "block") {
-            pre.style.display = "none";
-            this.textContent = "查看对照表";
-            return;
-        }
-
-        // 找到包含 PINYIN_RULES 的 script
         let scriptText = "";
 
         for (const s of document.scripts) {
-            if (s.textContent.includes("const PINYIN_RULES")) {
+            if (s.textContent.includes("const " + ruleName)) {
                 scriptText = s.textContent;
                 break;
             }
         }
 
         if (!scriptText) {
-            pre.textContent = "未找到 PINYIN_RULES";
+            pre.textContent = "未找到 " + ruleName;
             pre.style.display = "block";
             return;
         }
 
-        // 按行寻找 PINYIN_RULES 的开始和结束
+
         const lines = scriptText.split("\n");
 
         let start = -1;
         let end = -1;
         let depth = 0;
 
+
         for (let i = 0; i < lines.length; i++) {
 
-            if (start === -1 && lines[i].includes("const PINYIN_RULES")) {
+            if (start === -1 && lines[i].includes("const " + ruleName)) {
                 start = i;
             }
 
@@ -1058,16 +1040,10 @@ margin-top:10px;"></pre></div>
             }
         }
 
-        if (start === -1 || end === -1) {
-            pre.textContent = "未找到 PINYIN_RULES";
-            pre.style.display = "block";
-            return;
-        }
 
-        // 取出 PINYIN_RULES
         let text = lines.slice(start, end + 1);
 
-        // 没有注释的项补 //未确定
+
         text = text.map(line => {
 
             if (line.includes("//")) return line;
@@ -1080,10 +1056,13 @@ margin-top:10px;"></pre></div>
 
         });
 
+
         pre.textContent = text.join("\n");
         pre.style.display = "block";
-        this.textContent = "隐藏对照表";
-    };
+
+    }
+
+
 </script>
 
 </html>
