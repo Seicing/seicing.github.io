@@ -339,10 +339,32 @@ body.layout-headless.theme-dark #wrapper2 {
 
 body .civ7line {
     filter: invert(0);
+    width: 100%;
+    max-width: 780px;
+    aspect-ratio: 780 / 50;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 body.theme-dark .civ7line {
     filter: invert(0.6);
+    width: 100%;
+    max-width: 780px;
+    aspect-ratio: 780 / 50;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body .civ72line {
+    width: 2px;
+    background-color: #000;
+}
+
+body.theme-dark .civ72line {
+    width: 2px;
+    background-color: #fff;
 }
 
 /* =====================================================================
