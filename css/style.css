@@ -347,7 +347,7 @@ body .civ7line {
     background-size: 100% 100%;
 }
 
-body .theme-dark .civ7line {
+body.theme-dark .civ7line {
     filter: invert(0.6);
     width: 100%;
     max-width: 780px;
@@ -362,7 +362,7 @@ body .civ72line {
     background-color: #000000;
 }
 
-body .theme-dark .civ72line {
+body.theme-dark .civ72line {
     width: 2px;
     background-color: #888888;
 }
@@ -1283,7 +1283,7 @@ div {
         display: none;
     }
 
-    body .theme-dark .civ72line {
+    body.theme-dark .civ72line {
         display: none;
     }
 
