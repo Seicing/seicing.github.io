@@ -85,28 +85,24 @@
     --radar-grid: #D2CDC3;
     /* 日间浅色雷达网格线 */
 
-    --civ7atta1: #ff0000;
-    --civ7atta2: #ff00ff;
-    --civ7atta3: #ff8c00;
-    --civ7atta4: #0000ff;
-    --civ7atta5: #00c000;
-    --civ7atta6: #808080;
+    --civ7at-red: #ff0000;
+    --civ7at-purple: #ff00ff;
+    --civ7at-orange: #ff8c00;
+    --civ7at-blue: #0000ff;
+    --civ7at-green: #00c000;
+    --civ7at-gray: #808080;
 
-
-    --aoe2player1: #0000ff;
-    --aoe2player2: #ff0000;
-    --aoe2player3: #00c000;
-    --aoe2player4: #e9c400;
-    --aoe2player5: #2bdede;
-
-    --aoe2player6: #ff00ff;
-    --aoe1player6: #a0522d;
-    --aoe4player6: #800080;
-
-    --aoe2player7: #808080;
-    --aoe4player7: #ff9cad;
-
-    --aoe2player8: #ff8c00;
+    --aoeat-blue: #0000ff;
+    --aoeat-red: #ff0000;
+    --aoeat-green: #00c000;
+    --aoeat-yellow: #e9c400;
+    --aoeat-cyan: #2bdede;
+    --aoeat-fuchsia: #ff00ff;
+    --aoeat-brown: #a0522d;
+    --aoeat-purple: #800080;
+    --aoeat-gray: #808080;
+    --aoeat-pink: #ff9cad;
+    --aoeat-orange: #ff8c00;
 }
 
 /* =====================================================================
@@ -202,30 +198,24 @@ body.theme-dark {
     --radar-grid: #544D47;
     /* 夜间深色雷达网格线 */
 
+    --civ7at-red: #ff0000;
+    --civ7at-purple: #ff00ff;
+    --civ7at-orange: #ffa500;
+    --civ7at-blue: #528eff;
+    --civ7at-green: #00ff00;
+    --civ7at-gray: #b8b8b8;
 
-    --civ7atta1: #ff0000;
-    --civ7atta2: #ff00ff;
-    --civ7atta3: #ffa500;
-    --civ7atta4: #528eff;
-    --civ7atta5: #00ff00;
-    --civ7atta6: #b8b8b8;
-
-
-    --aoe2player1: #528eff;
-    --aoe2player2: #ff0000;
-    --aoe2player3: #00ff00;
-    --aoe2player4: #ffff00;
-    --aoe2player5: #00ffff;
-
-    --aoe2player6: #ff00ff;
-    --aoe1player6: #b4785c;
-    --aoe4player6: #c14fc1;
-
-    --aoe2player7: #b8b8b8;
-    --aoe4player7: #ffc0cb;
-
-    --aoe2player8: #ffa500;
-
+    --aoeat-blue: #528eff;
+    --aoeat-red: #ff0000;
+    --aoeat-green: #00ff00;
+    --aoeat-yellow: #ffff00;
+    --aoeat-cyan: #00ffff;
+    --aoeat-fuchsia: #ff00ff;
+    --aoeat-brown: #b4785c;
+    --aoeat-purple: #c14fc1;
+    --aoeat-gray: #b8b8b8;
+    --aoeat-pink: #ffc0cb;
+    --aoeat-orange: #ffa500;
 }
 
 /* 无头夜间特殊兼容 */
@@ -366,72 +356,72 @@ body.layout-headless.theme-dark #wrapper2 {
 }
 
 
-.civ7atta1 {
-    color: var(--civ7atta1);
+.civ7at-red {
+    color: var(--civ7at-red);
 }
 
-.civ7atta2 {
-    color: var(--civ7atta2);
+.civ7at-purple {
+    color: var(--civ7at-purple);
 }
 
-.civ7atta3 {
-    color: var(--civ7atta3);
+.civ7at-orange {
+    color: var(--civ7at-orange);
 }
 
-.civ7atta4 {
-    color: var(--civ7atta4);
+.civ7at-blue {
+    color: var(--civ7at-blue);
 }
 
-.civ7atta5 {
-    color: var(--civ7atta5);
+.civ7at-green {
+    color: var(--civ7at-green);
 }
 
-.civ7atta6 {
-    color: var(--civ7atta6);
+.civ7at-gray {
+    color: var(--civ7at-gray);
 }
 
-.aoe2player1 {
-    color: var(--aoe2player1);
+.aoeat-blue {
+    color: var(--aoeat-blue);
 }
 
-.aoe2player2 {
-    color: var(--aoe2player2);
+.aoeat-red {
+    color: var(--aoeat-red);
 }
 
-.aoe2player3 {
-    color: var(--aoe2player3);
+.aoeat-green {
+    color: var(--aoeat-green);
 }
 
-.aoe2player4 {
-    color: var(--aoe2player4);
+.aoeat-yellow {
+    color: var(--aoeat-yellow);
 }
 
-.aoe2player5 {
-    color: var(--aoe2player5);
+.aoeat-cyan {
+    color: var(--aoeat-cyan);
 }
 
-.aoe2player6 {
-    color: var(--aoe2player6);
+.aoeat-fuchsia {
+    color: var(--aoeat-fuchsia);
 }
 
-.aoe1player6 {
-    color: var(--aoe1player6);
+.aoeat-brown {
+    color: var(--aoeat-brown);
 }
 
-.aoe4player6 {
-    color: var(--aoe4player6);
+.aoeat-purple {
+    color: var(--aoeat-purple);
 }
 
-.aoe2player7 {
-    color: var(--aoe2player7);
+.aoeat-gray {
+    color: var(--aoeat-gray);
 }
 
-.aoe4player7 {
-    color: var(--aoe4player7);
+.aoeat-pink {
+    color: var(--aoeat-pink);
 }
 
-.aoe2player8 {
-    color: var(--aoe2player8);
+.aoeat-orange {
+    color: var(--aoeat-orange);
 }
 
 
