@@ -8,7 +8,7 @@
 }
 
 body.theme-dark {
-    --skPlayer-1: #282420;
+    --skPlayer-1: #b6ffe7;
     --skPlayer-2: #E2DDCA;
     --skPlayer-3: #EBEBF2;
 }
@@ -159,13 +159,13 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-control p.skPlayer-name {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
     color: var(--skPlayer-1);
 }
 
 #skPlayer .skPlayer-control p.skPlayer-author {
-    font-size: 1.2em;
+    font-size: 1em;
     /* color: #666;  */
     max-width: 90%;
 }
@@ -208,13 +208,13 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-control .skPlayer-time {
-    font-size: 1.2em;
+    font-size: 1em;
     /* color: #666;  */
     float: left;
 }
 
 #skPlayer .skPlayer-control .skPlayer-volume {
-    width: 120px;
+    width: 100px;
     height: 14px;
     float: right;
     position: relative;
