@@ -89,21 +89,21 @@
     --civ7atta2: #ff00ff;
     --civ7atta3: #ff8c00;
     --civ7atta4: #0000ff;
-    --civ7atta5: #006522;
-    --civ7atta6: #565662;
+    --civ7atta5: #00c000;
+    --civ7atta6: #808080;
 
 
     --aoe2player1: #0000ff;
     --aoe2player2: #ff0000;
-    --aoe2player3: #00ff00;
-    --aoe2player4: #ffd700;
-    --aoe2player5: #00ffff;
+    --aoe2player3: #00c000;
+    --aoe2player4: #e9c400;
+    --aoe2player5: #2bdede;
     --aoe2player6: #ff00ff;
     --aoe1player6: #a0522d;
     --aoe4player6: #800080;
     --aoe2player7: #808080;
     --aoe4player7: #ff9cad;
-    --aoe2player8: #ffa500;
+    --aoe2player8: #ff8c00;
 }
 
 /* =====================================================================
@@ -202,9 +202,9 @@ body.theme-dark {
 
     --civ7atta1: #ff0000;
     --civ7atta2: #ff00ff;
-    --civ7atta3: #ff8c00;
+    --civ7atta3: #ffa500;
     --civ7atta4: #528eff;
-    --civ7atta5: #00ff55;
+    --civ7atta5: #00ff00;
     --civ7atta6: #b8b8b8;
 
 
@@ -218,7 +218,7 @@ body.theme-dark {
     --aoe4player6: #c14fc1;
     --aoe2player7: #b8b8b8;
     --aoe4player7: #ffc0cb;
-    --aoe2player8: #ff8c00;
+    --aoe2player8: #ffa500;
 
 }
 
