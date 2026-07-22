@@ -3,7 +3,7 @@
  */
 :root {
     --skPlayer-1: #6A6B6F;
-    --skPlayer-2: #E2DDCA;
+    --skPlayer-2: #7c7c7c;
     --skPlayer-3: #EBEBF2;
     --skPlayer-4: #E9E9E9;
     --skPlayer-5: #B0B0B0;
@@ -11,8 +11,8 @@
 }
 
 body.theme-dark {
-    --skPlayer-1: #91b0a6;
-    --skPlayer-2: #fff3c4;
+    --skPlayer-1: #9193b0;
+    --skPlayer-2: #7c7c7c;
     --skPlayer-3: #EBEBF2;
     --skPlayer-4: #363636;
     --skPlayer-5: #5e5e5e;
@@ -272,7 +272,7 @@ body.theme-dark {
 
 #skPlayer .skPlayer-control .skPlayer-volume .skPlayer-percent {
     position: absolute;
-    width: 110px;
+    width: 100px;
     height: 14px;
     background-color: var(--skPlayer-3);
     border-radius: 6px;
