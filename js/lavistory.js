@@ -30,7 +30,7 @@ createApp({
                         let tr2 = "";
                         let astyle = "";
 
-                        const commonAstyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);" +
+                        const commonAstyle = "padding: 5px;border-radius: 15px;background: var(--labibanadialog);" +
                             `background-image: url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${attach}.png),` +
                             `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${special}.png),` +
                             `url(https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/${item.char}/${sweat}.png),` +
@@ -76,7 +76,7 @@ createApp({
                                 bstyle = "float: left;position:relative;left:20%;";
                             }
                             tablelavivanar = "tablebana2";
-                            astyle = "padding: 5px;border-radius: 15px;background: rgb(37, 37, 37);";
+                            astyle = "padding: 5px;border-radius: 15px;background: var(--labibanadialog);";
                             tr1 = `<td><span>${item.string}</span></td>`;
                             tr2 = " ";
                         }

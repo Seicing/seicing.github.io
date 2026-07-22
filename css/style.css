@@ -103,6 +103,8 @@
     --aoeat-gray: #808080;
     --aoeat-pink: #ff9cad;
     --aoeat-orange: #ff8c00;
+
+    --labibanadialog: #252525;
 }
 
 /* =====================================================================
@@ -216,6 +218,8 @@ body.theme-dark {
     --aoeat-gray: #b8b8b8;
     --aoeat-pink: #ffc0cb;
     --aoeat-orange: #ffa500;
+
+    --labibanadialog: #5d5858;
 }
 
 /* 无头夜间特殊兼容 */
