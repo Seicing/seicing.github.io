@@ -84,6 +84,13 @@
 
     --radar-grid: #D2CDC3;
     /* 日间浅色雷达网格线 */
+
+    --civ7atta1: #ff0000;
+    --civ7atta2: #ff00ff;
+    --civ7atta3: #ff8c00;
+    --civ7atta4: #0000ff;
+    --civ7atta5: #006522;
+    --civ7atta6: #565662;
 }
 
 /* =====================================================================
@@ -178,6 +185,15 @@ body.theme-dark {
 
     --radar-grid: #544D47;
     /* 夜间深色雷达网格线 */
+
+
+    --civ7atta1: #ff0000;
+    --civ7atta2: #ff00ff;
+    --civ7atta3: #ff8c00;
+    --civ7atta4: #528eff;
+    --civ7atta5: #00ff55;
+    --civ7atta6: #b8b8b8;
+
 }
 
 /* 无头夜间特殊兼容 */
@@ -316,6 +332,34 @@ body.layout-headless.theme-dark #wrapper2 {
 .lavivawhite {
     background-color: var(--laviva-white);
 }
+
+
+.civ7atta1 {
+    background-color: var(--civ7atta1);
+}
+
+.civ7atta2 {
+    background-color: var(--civ7atta2);
+}
+
+.civ7atta3 {
+    background-color: var(--civ7atta3);
+}
+
+.civ7atta4 {
+    background-color: var(--civ7atta4);
+}
+
+.civ7atta5 {
+    background-color: var(--civ7atta5);
+}
+
+.civ7atta6 {
+    background-color: var(--civ7atta6);
+}
+
+
+
 
 .lavihaednoneoff {
     color: var(--lavihaednoneoff);
