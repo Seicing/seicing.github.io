@@ -5,12 +5,18 @@
     --skPlayer-1: #6A6B6F;
     --skPlayer-2: #E2DDCA;
     --skPlayer-3: #EBEBF2;
+    --skPlayer-4: #E9E9E9;
+    --skPlayer-5: #B0B0B0;
+    --skPlayer-6: #ffffff;
 }
 
 body.theme-dark {
-    --skPlayer-1: #b6ffe7;
-    --skPlayer-2: #E2DDCA;
+    --skPlayer-1: #91b0a6;
+    --skPlayer-2: #fff3c4;
     --skPlayer-3: #EBEBF2;
+    --skPlayer-4: #363636;
+    --skPlayer-5: #5e5e5e;
+    --skPlayer-6: #D3D3E0;
 }
 
 
@@ -23,7 +29,7 @@ body.theme-dark {
     -moz-user-select: none;
     -ms-user-select: none;
     cursor: default;
-    /*  background-color: #FFF; */
+    /*  background-color: var(--skPlayer-6);  */
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -100,9 +106,9 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-play-btn.skPlayer-pause .skPlayer-left {
-    border: 14px solid #FFF;
-    border-left: 2px solid #FFF;
-    border-right: 2px solid #FFF;
+    border: 14px solid var(--skPlayer-6);
+    border-left: 2px solid var(--skPlayer-6);
+    border-right: 2px solid var(--skPlayer-6);
 }
 
 #skPlayer .skPlayer-play-btn.skPlayer-pause .skPlayer-right {
@@ -124,7 +130,7 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-play-btn span.skPlayer-left {
-    border-left: 24px solid #FFF;
+    border-left: 24px solid var(--skPlayer-6);
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
     left: 21px;
@@ -132,9 +138,9 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-play-btn span.skPlayer-right {
-    border: 14px solid #FFF;
-    border-left: 2px solid #FFF;
-    border-right: 2px solid #FFF;
+    border: 14px solid var(--skPlayer-6);
+    border-left: 2px solid var(--skPlayer-6);
+    border-right: 2px solid var(--skPlayer-6);
     right: 21px;
     top: -76px;
 }
@@ -266,7 +272,7 @@ body.theme-dark {
 
 #skPlayer .skPlayer-control .skPlayer-volume .skPlayer-percent {
     position: absolute;
-    width: 120px;
+    width: 110px;
     height: 14px;
     background-color: var(--skPlayer-3);
     border-radius: 6px;
@@ -348,7 +354,7 @@ body.theme-dark {
     position: absolute;
     top: 100px;
     padding-top: 6px;
-    /*  background-color: #FFF; */
+    /*  background-color: var(--skPlayer-6);  */
     list-style: none;
     max-height: 171px;
     overflow-y: auto;
@@ -361,7 +367,7 @@ body.theme-dark {
     line-height: 32px;
     padding: 0 15px;
     font-size: 1em;
-    border-top: 1px solid #E9E9E9;
+    border-top: 1px solid var(--skPlayer-4);
     cursor: pointer;
     transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -370,11 +376,11 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-list li:hover {
-    background-color: #DDD;
+    background-color: var(--skPlayer-4);
 }
 
 #skPlayer .skPlayer-list li.skPlayer-curMusic {
-    background-color: #B0B0B0;
+    background-color: var(--skPlayer-5);
 }
 
 #skPlayer .skPlayer-list li.skPlayer-curMusic .skPlayer-list-sign {
@@ -386,7 +392,7 @@ body.theme-dark {
 }
 
 #skPlayer .skPlayer-list::-webkit-scrollbar-track {
-    border-left: 1px solid #E9E9E9;
+    border-left: 1px solid var(--skPlayer-4);
 }
 
 #skPlayer .skPlayer-list::-webkit-scrollbar-thumb {
