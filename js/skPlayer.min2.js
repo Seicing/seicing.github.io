@@ -1,18 +1,4 @@
 /*! SKPlayer */ ! function (t, e) { "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define("skPlayer", [], e) : "object" == typeof exports ? exports.skPlayer = e() : t.skPlayer = e() }(this, function () {
-
-    /* skPlayer external CSS loader */
-    (function () {
-        var cssPath = "https://seicing.com/css/skPlayer.css";
-        var exists = document.querySelector('link[data-skplayer-css]');
-        if (!exists) {
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = cssPath;
-            link.setAttribute("data-skplayer-css", "true");
-            document.head.appendChild(link);
-        }
-    })();
-
     return function (t) {
         function e(o) { if (n[o]) return n[o].exports; var r = n[o] = { i: o, l: !1, exports: {} }; return t[o].call(r.exports, r, r.exports, e), r.l = !0, r.exports }
         var n = {};
@@ -30,7 +16,7 @@
             }
             return function (e, n, o) { return n && t(e.prototype, n), o && t(e, o), e }
         }();
-        console.log("%cSKPlayer 3.0.8", "color:#E2DDCA"), n(1);
+        console.log("%cSKPlayer 3.0.8", "color:#E2DDCA");
         var s = {
             leftDistance: function (t) { for (var e = t.offsetLeft, n = void 0; t.offsetParent;) t = t.offsetParent, e += t.offsetLeft; return n = document.body.scrollLeft + document.documentElement.scrollLeft, e - n },
             timeFormat: function (t) {
