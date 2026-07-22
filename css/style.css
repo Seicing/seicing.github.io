@@ -91,6 +91,19 @@
     --civ7atta4: #0000ff;
     --civ7atta5: #006522;
     --civ7atta6: #565662;
+
+
+    --aoe2player1: #0000ff;
+    --aoe2player2: #ff0000;
+    --aoe2player3: #00ff00;
+    --aoe2player4: #ffd700;
+    --aoe2player5: #00ffff;
+    --aoe2player6: #ff00ff;
+    --aoe1player6: #a0522d;
+    --aoe4player6: #800080;
+    --aoe2player7: #808080;
+    --aoe4player7: #ff9cad;
+    --aoe2player8: #ffa500;
 }
 
 /* =====================================================================
@@ -193,6 +206,19 @@ body.theme-dark {
     --civ7atta4: #528eff;
     --civ7atta5: #00ff55;
     --civ7atta6: #b8b8b8;
+
+
+    --aoe2player1: #528eff;
+    --aoe2player2: #ff0000;
+    --aoe2player3: #00ff00;
+    --aoe2player4: #ffff00;
+    --aoe2player5: #00ffff;
+    --aoe2player6: #ff00ff;
+    --aoe1player6: #b4785c;
+    --aoe4player6: #c14fc1;
+    --aoe2player7: #b8b8b8;
+    --aoe4player7: #ffc0cb;
+    --aoe2player8: #ff8c00;
 
 }
 
@@ -335,29 +361,72 @@ body.layout-headless.theme-dark #wrapper2 {
 
 
 .civ7atta1 {
-    background-color: var(--civ7atta1);
+    color: var(--civ7atta1);
 }
 
 .civ7atta2 {
-    background-color: var(--civ7atta2);
+    color: var(--civ7atta2);
 }
 
 .civ7atta3 {
-    background-color: var(--civ7atta3);
+    color: var(--civ7atta3);
 }
 
 .civ7atta4 {
-    background-color: var(--civ7atta4);
+    color: var(--civ7atta4);
 }
 
 .civ7atta5 {
-    background-color: var(--civ7atta5);
+    color: var(--civ7atta5);
 }
 
 .civ7atta6 {
-    background-color: var(--civ7atta6);
+    color: var(--civ7atta6);
 }
 
+.aoe2player1 {
+    color: var(--aoe2player1);
+}
+
+.aoe2player2 {
+    color: var(--aoe2player2);
+}
+
+.aoe2player3 {
+    color: var(--aoe2player3);
+}
+
+.aoe2player4 {
+    color: var(--aoe2player4);
+}
+
+.aoe2player5 {
+    color: var(--aoe2player5);
+}
+
+.aoe2player6 {
+    color: var(--aoe2player6);
+}
+
+.aoe1player6 {
+    color: var(--aoe1player6);
+}
+
+.aoe4player6 {
+    color: var(--aoe4player6);
+}
+
+.aoe2player7 {
+    color: var(--aoe2player7);
+}
+
+.aoe4player7 {
+    color: var(--aoe4player7);
+}
+
+.aoe2player8 {
+    color: var(--aoe2player8);
+}
 
 
 
