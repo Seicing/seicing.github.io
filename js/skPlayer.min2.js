@@ -1,3 +1,12 @@
+
+(function () {
+    var css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "https://seicing.com/css/skPlayer.css";
+    css.setAttribute("data-skplayer-css", "true");
+    document.head.appendChild(css);
+})();
+
 /*! SKPlayer */ ! function (t, e) { "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define("skPlayer", [], e) : "object" == typeof exports ? exports.skPlayer = e() : t.skPlayer = e() }(this, function () {
     return function (t) {
         function e(o) { if (n[o]) return n[o].exports; var r = n[o] = { i: o, l: !1, exports: {} }; return t[o].call(r.exports, r, r.exports, e), r.l = !0, r.exports }
