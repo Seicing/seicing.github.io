@@ -97,12 +97,16 @@
     --aoeat-green: #00c000;
     --aoeat-yellow: #e9c400;
     --aoeat-cyan: #2bdede;
+
     --aoeat-fuchsia: #ff00ff;
     --aoeat-brown: #a0522d;
     --aoeat-purple: #800080;
+
     --aoeat-gray: #808080;
     --aoeat-pink: #ff9cad;
+
     --aoeat-orange: #ff8c00;
+    --aoeat-darkgreen: #005f00;
 
     --labibanadialog: #252525;
 }
@@ -212,12 +216,16 @@ body.theme-dark {
     --aoeat-green: #00ff00;
     --aoeat-yellow: #ffff00;
     --aoeat-cyan: #00ffff;
+
     --aoeat-fuchsia: #ff00ff;
     --aoeat-brown: #b4785c;
     --aoeat-purple: #c14fc1;
+
     --aoeat-gray: #b8b8b8;
     --aoeat-pink: #ffc0cb;
+
     --aoeat-orange: #ffa500;
+    --aoeat-darkgreen: #379c37;
 
     --labibanadialog: #505050;
 }
