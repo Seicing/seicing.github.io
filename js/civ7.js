@@ -966,7 +966,6 @@ let ayanami = {
     "三别抄I": /*html*/`三别抄I<br>【英文待补充】<br>【特色政策】`,
     "三别抄II": /*html*/`三别抄II<br>【英文待补充】<br>【特色政策】`,
 
-
     "壮勇营": /*html*/`壮勇营<br>Jangyongyoung<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "龟船": /*html*/`龟船<br>Turtle Ship<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "华城": /*html*/`华城<br>Hwaseong<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】`,
@@ -1007,9 +1006,6 @@ let ayanami = {
     "I": /*html*/`I<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "【待补充】": /*html*/`【待补充】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】`,
-
-
-
 }
 
 function showPic(e, taitou) {
