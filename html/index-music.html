@@ -11,14 +11,28 @@
 <title>游戏音乐</title>
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
 <style>
-    .spoiler {
-        color: #00000000 !important;
-        text-shadow: 0px 0px 12px #000000;
+    :root {
+        .spoiler {
+            color: #4D4D4D00 !important;
+            text-shadow: 0px 0px 12px #4D4D4D;
+        }
+
+        .spoiler:hover {
+            color: #4D4D4D;
+            text-shadow: 0px 0px 0px #4D4D4D;
+        }
     }
 
-    .spoiler:hover {
-        color: #000000;
-        text-shadow: 0px 0px 0px #000000;
+    body.theme-dark {
+        .spoiler {
+            color: #e2ddca00 !important;
+            text-shadow: 0px 0px 12px #e2ddca;
+        }
+
+        .spoiler:hover {
+            color: #e2ddca;
+            text-shadow: 0px 0px 0px #e2ddca;
+        }
     }
 </style>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
