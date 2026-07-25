@@ -438,158 +438,330 @@ window.addEventListener('resize', debounce(function () {
     function getCookie(name) {
         const nameEQ = name + "=";
         const ca = document.cookie.split(';');
+
         for (let i = 0; i < ca.length; i++) {
             let c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1, c.length);
+            }
+
+            if (c.indexOf(nameEQ) === 0) {
+                return c.substring(nameEQ.length, c.length);
+            }
         }
+
         return null;
     }
 
+
     // === 按钮颜色解析器 ===
     function getButtonColors() {
-        if (!document.body) return { active: 'var(--btn-active-color)', inactive: 'var(--btn-inactive-color)' };
 
-        // 检测是否存在 lavilavivagnar 类
-        if (document.body.classList.contains('lavilavivagnar')) {
+        if (!document.body) {
             return {
-                active: 'rgb(0, 255, 172)', // 专属霓虹绿
-                inactive: '#ffffff'         // 专属纯白
+                active: 'var(--btn-active-color)',
+                inactive: 'var(--btn-inactive-color)'
             };
         }
 
-        // 默认返回标准/夜间模式的 CSS 变量控制配色
+
+        // lavilavivagnar 专属颜色
+        if (document.body.classList.contains('lavilavivagnar')) {
+
+            return {
+                active: 'rgb(0, 255, 172)',
+                inactive: '#ffffff'
+            };
+        }
+
+
         return {
             active: 'var(--btn-active-color)',
             inactive: 'var(--btn-inactive-color)'
         };
     }
 
+
+
     // === 字体应用逻辑 ===
     function applyFont(size) {
+
         if (!document.body) return;
 
-        // 字体大小自适应
+
         if (size === 'big') {
             document.body.style.fontSize = '12pt';
-        } else {
+        }
+        else {
             document.body.style.fontSize = '9pt';
         }
 
+
         const colors = getButtonColors();
 
-        // 兼容单复数按钮，应用颜色
-        document.querySelectorAll('#smallfonter, #smallfonter2').forEach(el => {
-            el.style.color = size === 'small' ? colors.active : colors.inactive;
-        });
-        document.querySelectorAll('#bigfonter, #bigfonter2').forEach(el => {
-            el.style.color = size === 'big' ? colors.active : colors.inactive;
+
+        // 单一字体切换按钮
+        document.querySelectorAll('#bigfonter').forEach(el => {
+
+            el.style.color =
+                size === 'big'
+                    ? colors.active
+                    : colors.inactive;
+
         });
     }
+
+
+
 
     // === 夜间模式应用逻辑 ===
     function applyTheme(theme) {
+
         if (!document.body) return;
 
-        const isLavi = document.body.classList.contains('lavilavivagnar');
 
-        // 如果是 lavilavivagnar 模板，忽略夜间模式类挂载
+        const isLavi =
+            document.body.classList.contains('lavilavivagnar');
+
+
+        // lavilavivagnar 不启用 theme-dark
         if (theme === 'dark' && !isLavi) {
+
             document.body.classList.add('theme-dark');
+
         } else {
+
             document.body.classList.remove('theme-dark');
+
         }
+
+
 
         const colors = getButtonColors();
 
-        // 更新夜间模式按钮的颜色状态
-        document.querySelectorAll('#darkmoder, #darkmoder2').forEach(el => {
-            el.style.color = theme === 'dark' ? colors.active : colors.inactive;
-        });
+
+        document.querySelectorAll('#darkmoder, #darkmoder2')
+            .forEach(el => {
+
+                el.style.color =
+                    theme === 'dark'
+                        ? colors.active
+                        : colors.inactive;
+
+            });
+
     }
 
-    // === 核心：暴力强制替换纯蓝色 (#0000ff / blue) 日间维持原色 / 夜间切换为明亮蓝色 #528eff ===
+
+
+
+    // === 蓝色替换 ===
     function replaceBlueColors() {
+
         if (!document.body) return;
 
-        const isDark = document.body.classList.contains("theme-dark");
-        // 日间维持原色 #0000ff，夜间自适应切换为明亮蓝色 #528eff 防止看不清
-        const targetColor = isDark ? '#528eff' : '#0000ff';
 
-        // 仅筛选带有 color 属性行内样式的元素，排除无关节点提高性能
-        document.querySelectorAll('[style*="color" i]').forEach(el => {
-            const inlineColor = el.style.color.toLowerCase().replace(/\s+/g, '');
+        const isDark =
+            document.body.classList.contains("theme-dark");
 
-            // 匹配所有形式的纯蓝色，以及夜间被我们转换过的明亮蓝色，以便在主题来回切换时能双向同步
-            if (
-                inlineColor === 'blue' ||
-                inlineColor === '#0000ff' ||
-                inlineColor === 'rgb(0,0,255)' ||
-                inlineColor === '#528eff' ||
-                inlineColor === 'rgb(82,142,255)' // rgb(82, 142, 255) 是 #528eff 的 WebKit 规范化写法
-            ) {
-                el.style.color = targetColor;
-            }
-        });
+
+        const targetColor =
+            isDark
+                ? '#528eff'
+                : '#0000ff';
+
+
+
+        document.querySelectorAll('[style*="color" i]')
+            .forEach(el => {
+
+
+                const inlineColor =
+                    el.style.color
+                        .toLowerCase()
+                        .replace(/\s+/g, '');
+
+
+
+                if (
+                    inlineColor === 'blue' ||
+                    inlineColor === '#0000ff' ||
+                    inlineColor === 'rgb(0,0,255)' ||
+                    inlineColor === '#528eff' ||
+                    inlineColor === 'rgb(82,142,255)'
+                ) {
+
+                    el.style.color = targetColor;
+
+                }
+
+            });
+
     }
 
-    // === 状态初始化分配 ===
-    const getSavedFont = () => localStorage.getItem('fontSize') || 'small';
-    const getSavedTheme = () => getCookie('theme') || 'light';
 
-    const initAll = () => {
-        applyFont(getSavedFont());
-        applyTheme(getSavedTheme());
-        replaceBlueColors(); // 1. 初始化时暴力检测并应用颜色
+
+
+    // === 状态读取 ===
+
+    const getSavedFont = () => {
+        return localStorage.getItem('fontSize') || 'small';
     };
 
-    // 尽早载入防止页面闪烁
+
+    const getSavedTheme = () => {
+        return getCookie('theme') || 'light';
+    };
+
+
+
+
+    // === 初始化 ===
+
+    const initAll = () => {
+
+        applyFont(getSavedFont());
+
+        applyTheme(getSavedTheme());
+
+        replaceBlueColors();
+
+    };
+
+
+
+
+    // 页面已有 body 时立即执行
     if (document.body) {
+
         initAll();
+
     }
+
+
+
 
     document.addEventListener('DOMContentLoaded', () => {
 
+
         initAll();
 
-        // 点击切换事件监听（使用 closest 兼容内部子标签点击）
+
+
+        // 点击事件
+
         document.addEventListener('click', e => {
-            const smallBtn = e.target.closest('#smallfonter, #smallfonter2');
-            const bigBtn = e.target.closest('#bigfonter, #bigfonter2');
-            const darkBtn = e.target.closest('#darkmoder, #darkmoder2');
 
-            if (smallBtn) {
-                localStorage.setItem('fontSize', 'small');
-                applyFont('small');
+
+            const fontBtn =
+                e.target.closest('#bigfonter');
+
+
+            const darkBtn =
+                e.target.closest('#darkmoder, #darkmoder2');
+
+
+
+
+            // 字体开关
+
+            if (fontBtn) {
+
+
+                const currentFont =
+                    getSavedFont();
+
+
+
+                const newFont =
+                    currentFont === 'big'
+                        ? 'small'
+                        : 'big';
+
+
+
+                localStorage.setItem(
+                    'fontSize',
+                    newFont
+                );
+
+
+
+                applyFont(newFont);
+
                 replaceBlueColors();
+
             }
 
-            if (bigBtn) {
-                localStorage.setItem('fontSize', 'big');
-                applyFont('big');
-                replaceBlueColors();
-            }
+
+
+
+            // 夜间模式开关
 
             if (darkBtn) {
-                const currentTheme = getSavedTheme();
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                setCookie('theme', newTheme);
+
+
+                const currentTheme =
+                    getSavedTheme();
+
+
+
+                const newTheme =
+                    currentTheme === 'dark'
+                        ? 'light'
+                        : 'dark';
+
+
+
+                setCookie(
+                    'theme',
+                    newTheme
+                );
+
+
+
                 applyTheme(newTheme);
-                replaceBlueColors(); // 2. 主题切换时动态双向变色
+
+                replaceBlueColors();
+
             }
+
+
         });
 
-        // DOM 变动监听器（处理 Sidebar/浮层异步加载时的色彩同步）
-        const observer = new MutationObserver(() => {
-            applyFont(getSavedFont());
-            applyTheme(getSavedTheme());
-            replaceBlueColors(); // 3. 异步加载新内容时暴力检测
-        });
 
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
+
+
+
+
+        // 动态内容监听
+
+        const observer =
+            new MutationObserver(() => {
+
+
+                applyFont(getSavedFont());
+
+                applyTheme(getSavedTheme());
+
+                replaceBlueColors();
+
+
+            });
+
+
+
+        observer.observe(
+            document.body,
+            {
+                childList: true,
+                subtree: true
+            }
+        );
+
+
     });
+
 
 })();
