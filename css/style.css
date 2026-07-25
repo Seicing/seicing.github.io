@@ -23,6 +23,7 @@
     --text-link: #D0C9B7;
     --text-link-hover-bg: #ffffff;
     --special-link-color: #0010ff;
+    --special-link-color2: #D0C9B7;
     --special-text-link: #D0C9B7;
     /* 强行指定的特殊链接日间默认颜色 */
 
@@ -147,6 +148,7 @@ body.theme-dark {
     /*#b8954f #8c8577*/
     --text-link-hover-bg: #2d2925;
     --special-link-color: rgb(0, 255, 172);
+    --special-link-color2: rgb(0, 255, 172);
     --special-text-link: #8c8577;
     /* 强行指定的特殊链接夜间也变为霓虹绿 */
 
@@ -313,6 +315,10 @@ body.layout-headless.theme-dark #wrapper2 {
 
 .special-text-link {
     color: var(--special-text-link);
+}
+
+.special-text-link2 {
+    color: var(--special-text-link2);
 }
 
 .aoe4title {

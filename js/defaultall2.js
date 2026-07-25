@@ -9,7 +9,6 @@
 === v1.0: 修复resize失效问题。
 =====================================================================
 */
-
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // === 模块0: 辅助工具函数 (Helpers / Utilities) ===
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -22,11 +21,9 @@ function debounce(func, delay) {
         }, delay);
     };
 }
-
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // === 模块1: 核心功能函数 ===
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 /**
  * 颜色替换函数
  */
@@ -42,27 +39,20 @@ function conditionallyReplaceLinkColor(container) {
         }
     });
 }
-
 function loadTechnoseigineIfNeeded(root) {
     if (!root) return;
-
     const container = root.querySelector('#technoseigine');
     if (!container) return;
-
     if (container.dataset.loaded === 'true') return;
-
     const src = container.dataset.technoseigine;
     if (!src) return;
-
     container.dataset.loaded = 'true';
-
     $(container).load(src, function (response, status) {
         if (status !== 'success') {
             console.error('Technoseigine load failed:', src);
             container.dataset.loaded = 'false';
             return;
         }
-
         // =====================================================
         // === 【修改点】在这里把 root 作为上下文传入 ===
         // =====================================================
@@ -70,20 +60,16 @@ function loadTechnoseigineIfNeeded(root) {
             // 传递 root，告诉函数在桌面 sidebar 里执行
             AOE2_enableCivIconQuickJump(root);
         }
-
         if (typeof AOE2_activateCurrentCivIcon === 'function') {
             // 传递 root，告诉函数在桌面 sidebar 里执行
             AOE2_activateCurrentCivIcon(root);
         }
-
         const spanElement = container.querySelector('#techno123');
         if (spanElement) {
             spanElement.style.display = 'none';
         }
     });
 }
-
-
 /**
  * 【变体】内容复制器：负责将 #reske 的内容复制到抽屉中，并仅在手机模式下隐藏原内容和调整宽度。
  */
@@ -92,44 +78,36 @@ function cloneSidebarContent() {
     if (window.innerWidth >= 767) {
         return;
     }
-
     const originalReske = document.getElementById('reske');
     if (!originalReske) {
         console.error("#reske element not found for cloning.");
         return;
     }
-
     let attempts = 0;
     const maxAttempts = 20; // 尝试2秒
     const migrationInterval = setInterval(function () {
         attempts++;
         const contentSource = originalReske;
-
         if (contentSource.children.length > 0 || attempts >= maxAttempts) {
             clearInterval(migrationInterval);
             if (contentSource.children.length === 0) {
                 console.log("Source #reske is empty, cloning aborted.");
                 return;
             }
-
             let mobileDrawer = document.getElementById('mobile-drawer-container');
             if (!mobileDrawer) {
                 mobileDrawer = document.createElement('div');
                 mobileDrawer.id = 'mobile-drawer-container';
                 document.body.appendChild(mobileDrawer);
             }
-
             mobileDrawer.innerHTML = ''; // 清空以防万一
-
             // 从 #reske 复制所有子节点到抽屉
             for (const child of contentSource.childNodes) {
                 const clonedNode = child.cloneNode(true);
                 mobileDrawer.appendChild(clonedNode);
             }
-
             // 成功复制后，隐藏原始的 #reske
             originalReske.style.display = 'none';
-
             // 调整 #reski 的宽度以收回空间
             const reskiElement = document.getElementById('reski');
             if (reskiElement) {
@@ -137,7 +115,6 @@ function cloneSidebarContent() {
                 reskiElement.style.width = 'auto';
                 console.log("#reski width reset to 'auto' for mobile view.");
             }
-
             // 【修改】在抽屉内找到 #listlavivagnar，并将其中的图片宽度设为40px
             const listInDrawer = mobileDrawer.querySelector('#listlavivagnar');
             if (listInDrawer) {
@@ -146,11 +123,9 @@ function cloneSidebarContent() {
                     img.style.width = '45px';
                 });
             }
-
             conditionallyReplaceLinkColor(mobileDrawer);
             loadTechnoseigineIfNeeded(mobileDrawer);
             console.log("Success: #reske content has been cloned ONCE and the original is hidden.");
-
             // =================================================================
             // === 【集成点】在这里调用 essay.js 的改造函数 ===
             // =================================================================
@@ -162,7 +137,6 @@ function cloneSidebarContent() {
                 if (typeof AOE2_enableCivIconQuickJump === 'function') {
                     AOE2_enableCivIconQuickJump(mobileDrawer);
                 }
-
                 if (typeof AOE2_activateCurrentCivIcon === 'function') {
                     AOE2_activateCurrentCivIcon(mobileDrawer);
                 }
@@ -170,8 +144,6 @@ function cloneSidebarContent() {
         }
     }, 100);
 }
-
-
 /**
  * 事件绑定器：只执行一次，为按钮和遮罩层绑定永久的点击事件。
  */
@@ -179,9 +151,7 @@ function bindSidebarToggleEventsOnce() {
     const toggleButton = document.getElementById('sidebar-toggle-button');
     const overlay = document.getElementById('sidebar-overlay');
     const body = document.body;
-
     if (!toggleButton || !overlay || toggleButton.dataset.eventsBound) return;
-
     // === 点击固定展开/收起 ===
     function toggleSidebarByClick() {
         body.classList.toggle('sidebar-fixed');
@@ -191,13 +161,11 @@ function bindSidebarToggleEventsOnce() {
             body.classList.remove('sidebar-open');
         }
     }
-
     toggleButton.addEventListener('click', toggleSidebarByClick);
     overlay.addEventListener('click', () => {
         body.classList.remove('sidebar-fixed');
         body.classList.remove('sidebar-open');
     });
-
     // === 悬停触发：仅桌面、仅按钮可见 ===
     function canUseHover() {
         const btnStyle = getComputedStyle(toggleButton);
@@ -205,10 +173,8 @@ function bindSidebarToggleEventsOnce() {
         const hoverCapable = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
         return visible && hoverCapable;
     }
-
     if (canUseHover()) {
         let hoverTimer = null;
-
         // 实时计算抽屉与按钮的总范围
         function getCurrentHoverZone() {
             const btnRect = toggleButton.getBoundingClientRect();
@@ -224,20 +190,17 @@ function bindSidebarToggleEventsOnce() {
                 return btnRect;
             }
         }
-
         function isInHoverZone(e) {
             const z = getCurrentHoverZone();
             const x = e.clientX, y = e.clientY;
             return x >= z.left && x <= z.right && y >= z.top && y <= z.bottom;
         }
-
         // === 打开抽屉（临时） ===
         function openDrawerTemp() {
             if (!body.classList.contains('sidebar-fixed')) {
                 body.classList.add('sidebar-open');
             }
         }
-
         // === 鼠标移动时判断是否离开整个区域 ===
         function handleMouseMove(e) {
             if (body.classList.contains('sidebar-fixed')) return; // 固定模式不自动收起
@@ -248,17 +211,13 @@ function bindSidebarToggleEventsOnce() {
                 }, 200); // 离开200ms后收回
             }
         }
-
         // 鼠标指上去立即打开
         toggleButton.addEventListener('mouseenter', openDrawerTemp);
         // 鼠标移动全局监控
         document.addEventListener('mousemove', handleMouseMove);
     }
-
     toggleButton.dataset.eventsBound = 'true';
 }
-
-
 /**
  * 特殊页面背景处理器 (逻辑不变)
  */
@@ -274,7 +233,6 @@ function handleSpecialPageBackground() {
         });
     }
 }
-
 /**
  * 回到顶部按钮事件绑定器：v5.0 (终极兼容版)
  * - 修正了在 headless 模板电脑端无法找到主滚动条的问题。
@@ -282,18 +240,14 @@ function handleSpecialPageBackground() {
  */
 function bindBackToTopEventsOnce() {
     const backToTopButton = document.getElementById('back-to-top-button');
-
     if (backToTopButton && !backToTopButton.dataset.eventsBound) {
-
         function scrollToTop(event) {
             event.preventDefault();
-
             const internalScrollers = [
                 document.getElementById('content'),
                 document.getElementById('page')
             ];
             let internalScrollerFound = false;
-
             for (const element of internalScrollers) {
                 // 检查内部容器是否有滚动条
                 if (element && element.scrollHeight > element.clientHeight) {
@@ -302,26 +256,20 @@ function bindBackToTopEventsOnce() {
                     break;
                 }
             }
-
             // [核心修正] 如果没有找到任何内部滚动条，
             // 那么就假定是主页面在滚动，并同时命令所有可能的主滚动条。
             if (!internalScrollerFound) {
                 // 这个命令对 base.html 和 baselarge.html 有效
                 window.scrollTo({ top: 0, behavior: "auto" });
-
                 // 这个命令对 headless.html 的电脑端视图有效
                 document.body.scrollTo({ top: 0, behavior: "auto" });
             }
         }
-
         backToTopButton.addEventListener('click', scrollToTop);
         backToTopButton.addEventListener('touchstart', scrollToTop);
         backToTopButton.dataset.eventsBound = 'true';
     }
 }
-
-
-
 /**
  * [V3 - 带模板偏移修正] 动态定位“回到顶部”按钮。
  * - 通过检测“☰”按钮智能判断电脑/移动模式。
@@ -331,34 +279,27 @@ function positionBackToTopButton() {
     const backToTopButton = document.getElementById('back-to-top-button');
     const wrapper = document.getElementById('wrapper');
     const toggleButton = document.getElementById('sidebar-toggle-button');
-
     if (!backToTopButton || !wrapper) return;
-
     // 检查当前是否为移动端视图
     const isMobileView = toggleButton && getComputedStyle(toggleButton).display !== 'none';
-
     if (isMobileView) {
         // 移动端视图：清除 JS 样式，交还给 CSS 控制
         backToTopButton.style.left = '';
     } else {
         // 电脑端视图：执行精确定位
         const wrapperRect = wrapper.getBoundingClientRect();
-
         // 1. 先计算出基础的贴边位置
         let buttonLeft = wrapperRect.right + 20;
-
         // 2. [核心修改] 检查是否为 large 模板 (通过其唯一的 1850px 宽度)
         if (wrapper.offsetWidth === 1850) {
             // 如果是，就在基础位置上向左移动 25px
             buttonLeft -= 25;
         }
-
         // 3. 应用最终计算好的样式
         backToTopButton.style.left = buttonLeft + 'px';
     }
     backToTopButton.style.opacity = '1';
 }
-
 /**
  * 新增：宽度动态调整器，根据窗口大小调整 #reski 和 #reske 的布局。
  */
@@ -366,7 +307,6 @@ function adjustContentWidths() {
     const reski = document.getElementById('reski');
     const reske = document.getElementById('reske');
     if (!reski || !reske) return;
-
     if (window.innerWidth < 767) {
         // 手机模式: cloneSidebarContent 会处理 #reske 的隐藏和 #reski 的宽度。
         // 这里主要是确保在从桌面切换到移动时，宽度能被正确重置。
@@ -375,10 +315,8 @@ function adjustContentWidths() {
         // 桌面模式
         // 1. 确保 #reske 可见 (如果之前在手机模式下被隐藏了)
         reske.style.display = ''; // 恢复 CSS 控制的 display 属性
-
         // 2. 计算并设置 #reski 的宽度
         reski.style.width = (document.body.clientWidth - 330) + 'px';
-
         // 3. 同步 #reske 的高度
         // 为了避免内容跳动，延迟一点点执行
         setTimeout(() => {
@@ -386,12 +324,9 @@ function adjustContentWidths() {
         }, 50);
     }
 }
-
-
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // === 模块2: 主执行逻辑 (全新重构) ===
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 /**
  * [核心逻辑 V2] 条件化布局管理器 (带MutationObserver)
  * 这个函数会在需要时被调用，但内部有智能监控，确保内容加载后再执行克隆。
@@ -410,14 +345,12 @@ function conditionallyManageLayout() {
         }
         return;
     }
-
     // 步骤2：检查抽屉是否已经被填充过内容
     const mobileDrawer = document.getElementById('mobile-drawer-container');
     if (mobileDrawer && mobileDrawer.children.length > 0) {
         console.log("Drawer already populated. Skipping layout management.");
         return;
     }
-
     // 步骤3：如果代码能执行到这里，说明我们正处于手机/平板视图，且抽屉是空的。
     // 这时我们不再直接调用cloneSidebarContent，而是开始“监视”内容源 #reske。
     const contentSource = document.getElementById('reske');
@@ -425,7 +358,6 @@ function conditionallyManageLayout() {
         console.error("Content source #reske not found!");
         return;
     }
-
     // 检查 #reske 是否已经有内容了 (以防万一内容加载得很快)
     if (contentSource.children.length > 0) {
         console.log("#reske already has content. Cloning immediately.");
@@ -433,7 +365,6 @@ function conditionallyManageLayout() {
         handleSpecialPageBackground();
         return;
     }
-
     // 如果 #reske 当前是空的，就设置一个观察者
     console.log("#reske is empty. Setting up MutationObserver to wait for content...");
     const observer = new MutationObserver((mutationsList, obs) => {
@@ -449,27 +380,22 @@ function conditionallyManageLayout() {
             }
         }
     });
-
     // 配置观察者：我们想观察子列表的变化
     const config = { childList: true };
-
     // 开始观察目标节点
     observer.observe(contentSource, config);
-
     // 设置一个超时，以防万一内容永远加载不进来
     setTimeout(() => {
         observer.disconnect(); // 10秒后无论如何都停止观察
         console.log("Observer timed out after 10 seconds.");
     }, 10000);
 }
-
 // --- 页面加载时 ---
 document.addEventListener('DOMContentLoaded', function () {
     // 1. [只执行一次] 绑定永久的、纯粹的点击事件。
     bindSidebarToggleEventsOnce();
     // 2. [新增] [只执行一次] 绑定永久的回到顶部按钮点击事件。
     bindBackToTopEventsOnce();
-
     // ============================================================
     // === 【核心修改 2】 在这里添加 hashchange 事件监听器 ===
     // ============================================================
@@ -478,13 +404,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // 当URL的锚点变化时，立即调用更新函数
         window.addEventListener('hashchange', updateAllCivLinkHashes, false);
     }
-
     // 3. [执行一次] 首次加载时，立即进行一次条件化检查。
     adjustContentWidths();
     conditionallyManageLayout();
     positionBackToTopButton();
 });
-
 // --- 浏览器窗口大小改变时 ---
 // 仍然使用防抖模式，但现在调用的函数内部有了智能判断。
 window.addEventListener('resize', debounce(function () {
@@ -492,11 +416,7 @@ window.addEventListener('resize', debounce(function () {
     conditionallyManageLayout();
     positionBackToTopButton();
 }, 250));
-
-
-
 (function () {
-
     // === Cookie 辅助函数 ===
     function setCookie(name, value, days = 365) {
         const d = new Date();
@@ -504,156 +424,93 @@ window.addEventListener('resize', debounce(function () {
         const expires = "expires=" + d.toUTCString();
         document.cookie = name + "=" + value + ";" + expires + ";path=/";
     }
-
     function getCookie(name) {
         const nameEQ = name + "=";
         const ca = document.cookie.split(';');
-
         for (let i = 0; i < ca.length; i++) {
             let c = ca[i];
-
             while (c.charAt(0) === ' ') {
                 c = c.substring(1, c.length);
             }
-
             if (c.indexOf(nameEQ) === 0) {
                 return c.substring(nameEQ.length, c.length);
             }
         }
-
         return null;
     }
-
-
     // === 按钮颜色解析器 ===
     function getButtonColors() {
-
         if (!document.body) {
             return {
                 active: 'var(--btn-active-color)',
                 inactive: 'var(--btn-inactive-color)'
             };
         }
-
-
         // lavilavivagnar 专属颜色
         if (document.body.classList.contains('lavilavivagnar')) {
-
             return {
                 active: 'rgb(0, 255, 172)',
                 inactive: '#ffffff'
             };
         }
-
-
         return {
             active: 'var(--btn-active-color)',
             inactive: 'var(--btn-inactive-color)'
         };
     }
-
-
-
     // === 字体应用逻辑 ===
     function applyFont(size) {
-
         if (!document.body) return;
-
-
         if (size === 'big') {
             document.body.style.fontSize = '12pt';
         }
         else {
             document.body.style.fontSize = '9pt';
         }
-
-
         const colors = getButtonColors();
-
-
         // 单一字体切换按钮
         document.querySelectorAll('#bigfonter').forEach(el => {
-
             el.style.color =
                 size === 'big'
                     ? colors.active
                     : colors.inactive;
-
         });
     }
-
-
-
-
     // === 夜间模式应用逻辑 ===
     function applyTheme(theme) {
-
         if (!document.body) return;
-
-
         const isLavi =
             document.body.classList.contains('lavilavivagnar');
-
-
         // lavilavivagnar 不启用 theme-dark
         if (theme === 'dark' && !isLavi) {
-
             document.body.classList.add('theme-dark');
-
         } else {
-
             document.body.classList.remove('theme-dark');
-
         }
-
-
-
         const colors = getButtonColors();
-
-
         document.querySelectorAll('#darkmoder, #darkmoder2')
             .forEach(el => {
-
                 el.style.color =
                     theme === 'dark'
                         ? colors.active
                         : colors.inactive;
-
             });
-
     }
-
-
-
-
     // === 蓝色替换 ===
     function replaceBlueColors() {
-
         if (!document.body) return;
-
-
         const isDark =
             document.body.classList.contains("theme-dark");
-
-
         const targetColor =
             isDark
                 ? '#528eff'
                 : '#0000ff';
-
-
-
         document.querySelectorAll('[style*="color" i]')
             .forEach(el => {
-
-
                 const inlineColor =
                     el.style.color
                         .toLowerCase()
                         .replace(/\s+/g, '');
-
-
-
                 if (
                     inlineColor === 'blue' ||
                     inlineColor === '#0000ff' ||
@@ -661,167 +518,73 @@ window.addEventListener('resize', debounce(function () {
                     inlineColor === '#528eff' ||
                     inlineColor === 'rgb(82,142,255)'
                 ) {
-
                     el.style.color = targetColor;
-
                 }
-
             });
-
     }
-
-
-
-
     // === 状态读取 ===
-
     const getSavedFont = () => {
         return localStorage.getItem('fontSize') || 'small';
     };
-
-
     const getSavedTheme = () => {
         return getCookie('theme') || 'light';
     };
-
-
-
-
     // === 初始化 ===
-
     const initAll = () => {
-
         applyFont(getSavedFont());
-
         applyTheme(getSavedTheme());
-
         replaceBlueColors();
-
     };
-
-
-
-
     // 页面已有 body 时立即执行
     if (document.body) {
-
         initAll();
-
     }
-
-
-
-
     document.addEventListener('DOMContentLoaded', () => {
-
-
         initAll();
-
-
-
         // 点击事件
-
         document.addEventListener('click', e => {
-
-
             const fontBtn =
                 e.target.closest('#bigfonter');
-
-
             const darkBtn =
                 e.target.closest('#darkmoder, #darkmoder2');
-
-
-
-
             // 字体开关
-
             if (fontBtn) {
-
-
                 const currentFont =
                     getSavedFont();
-
-
-
                 const newFont =
                     currentFont === 'big'
                         ? 'small'
                         : 'big';
-
-
-
                 localStorage.setItem(
                     'fontSize',
                     newFont
                 );
-
-
-
                 applyFont(newFont);
-
                 replaceBlueColors();
-
             }
-
-
-
-
             // 夜间模式开关
-
             if (darkBtn) {
-
-
                 const currentTheme =
                     getSavedTheme();
-
-
-
                 const newTheme =
                     currentTheme === 'dark'
                         ? 'light'
                         : 'dark';
-
-
-
                 setCookie(
                     'theme',
                     newTheme
                 );
-
-
-
                 applyTheme(newTheme);
-
                 replaceBlueColors();
-
             }
-
-
         });
-
-
-
-
-
-
         // 动态内容监听
-
         const observer =
             new MutationObserver(() => {
-
-
                 applyFont(getSavedFont());
-
                 applyTheme(getSavedTheme());
-
                 replaceBlueColors();
-
-
             });
-
-
-
         observer.observe(
             document.body,
             {
@@ -829,9 +592,5 @@ window.addEventListener('resize', debounce(function () {
                 subtree: true
             }
         );
-
-
     });
-
-
 })();
