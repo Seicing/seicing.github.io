@@ -717,3 +717,74 @@ const avatarData = [
         content.appendChild(div);
     });
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    initAvatar();
+
+});
+
+function initAvatar() {
+
+
+    const menu =
+        document.getElementById("avatar-year-menu");
+
+
+    const content =
+        document.getElementById("avatar-content");
+
+
+    if (!menu || !content) {
+        console.log("avatar container missing");
+        return;
+    }
+
+
+
+    Object.keys(avatarData).forEach(function (year, index) {
+
+        console.log("生成年份:", year);
+
+
+        let data = avatarData[year];
+
+
+        let btn = document.createElement("a");
+
+        btn.id = data.id + "button0";
+
+        btn.href = "javascript:void(0);";
+
+        btn.className =
+            index === 0 ?
+                "special-link" :
+                "special-text-link";
+
+
+        btn.innerHTML = year + "年";
+
+
+        btn.onclick = function () {
+
+            tipsg(
+                data.id + "text0",
+                data.id + "button0",
+                "0"
+            );
+
+        };
+
+
+        menu.appendChild(btn);
+
+        menu.appendChild(
+            document.createTextNode(" ")
+        );
+
+
+    });
+
+
+
+}
