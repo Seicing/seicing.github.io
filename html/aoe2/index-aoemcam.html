@@ -12,6 +12,11 @@
 <link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
 <style>
+    /* 统一间距变量 */
+    :root {
+        --grid-gap: 8px;
+    }
+
     #filters.campaign-filter-panel {
         display: flex;
         flex-wrap: wrap;
@@ -27,7 +32,6 @@
         border: var(--border-table);
         padding: 6px 14px;
         cursor: pointer;
-        font-size: 13px;
         font-weight: bold;
         font-family: inherit;
         transition: all 0.2s ease;
@@ -62,16 +66,21 @@
         align-items: baseline;
     }
 
-    .campaign-section-title small {
-        font-size: 0.6em;
-        color: var(--text-sidebar-a);
-    }
-
+    /* 网格通用基准 */
     .level-grid {
         display: grid;
+        gap: var(--grid-gap);
+        margin-bottom: 12px;
+    }
+
+    /* 无章节：4个地图均分 100% */
+    .level-grid.no-chapter {
         grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
-        margin-bottom: 30px;
+    }
+
+    /* 有章节：章节占80px，3张地图保持标准25%宽度，右侧自然留空 */
+    .level-grid.has-chapter {
+        grid-template-columns: 80px repeat(3, calc((100% - 3 * var(--grid-gap)) / 4));
     }
 
     .level-card {
@@ -83,16 +92,18 @@
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
     }
 
     .level-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
+    /* 地图卡片图片：强制 1:1 正方形 */
     .level-card .img-container {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 1 / 1;
         background-color: var(--bg-body-color);
         overflow: hidden;
         border-bottom: var(--border-table);
@@ -105,17 +116,126 @@
         display: block;
     }
 
+    /* 标题与超链接 */
     .level-card .card-caption {
         color: var(--text-primary);
         flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 4px 2px;
     }
 
+    .level-card .card-caption a.title-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .level-card .card-caption a.title-link:hover .title-cn {
+        color: var(--btn-active-color);
+        text-decoration: underline;
+    }
+
+    .title-cn {
+        font-size: 1.0em;
+        font-weight: bold;
+        color: var(--text-title);
+        display: block;
+        word-break: break-all;
+    }
+
+    .title-en {
+        font-size: 0.8em;
+        color: var(--text-sidebar-a);
+        display: block;
+        word-break: break-all;
+    }
+
+    .year-tag {
+        margin-right: 3px;
+        color: var(--btn-active-color);
+    }
+
+    /* 章节卡片 (固定80px宽) */
+    .level-card.chapter-card {
+        width: 100%;
+        background-color: var(--bg-body-color);
+        border: var(--border-table);
+        justify-content: center;
+        align-items: center;
+        padding: 6px 2px;
+        box-sizing: border-box;
+    }
+
+    .chapter-card .chapter-icon-wrap {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+
+    .chapter-card .chapter-icon-wrap img {
+        width: 50px;
+        height: auto;
+        max-height: 50px;
+        object-fit: contain;
+    }
+
+    .chapter-card .chapter-name {
+        font-weight: bold;
+        color: var(--text-title);
+        line-height: 1.2;
+    }
+
+    /* 手机模式：消除右侧空隙，3张地图平分剩余宽度填满屏幕 */
     @media only screen and (max-width: 767px) {
+        :root {
+            --grid-gap: 4px;
+        }
+
         .level-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            margin-bottom: 8px;
+        }
+
+        /* 手机端：章节55px，其余3张地图平分剩余100%空间，空隙消失 */
+        .level-grid.has-chapter {
+            grid-template-columns: 55px repeat(3, 1fr);
+        }
+
+        .level-grid.no-chapter {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .chapter-card .chapter-icon-wrap {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 2px;
+        }
+
+        .chapter-card .chapter-icon-wrap img {
+            width: 30px;
+            max-height: 30px;
+        }
+
+        .chapter-card .chapter-name {
+            font-size: 1.0em;
+        }
+
+        .title-cn {
+            line-height: 1.1;
+        }
+
+        .title-en {
+            font-size: 1.0em;
+            line-height: 1.1;
+            transform: scale(0.88);
+        }
+
+        .level-card .card-caption {
+            padding: 2px 1px;
         }
     }
 </style>
