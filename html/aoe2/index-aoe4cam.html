@@ -60,17 +60,21 @@
         align-items: baseline;
     }
 
-    .campaign-section-title small {
-        font-size: 0.6em;
-        color: var(--text-sidebar-a);
-    }
-
-    /* 保证始终一行4个 (1章节+3地图 或 4地图) */
+    /* 网格控制：无章节一行4个地图；有章节时1个80px章节 + 3个地图 */
     .level-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
         margin-bottom: 12px;
+    }
+
+    .level-grid.has-chapter {
+        grid-template-columns: 80px repeat(3, 1fr);
+        /* 章节80px，地图均分 */
+    }
+
+    .level-grid.no-chapter {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4张地图均分 */
     }
 
     .level-card {
@@ -90,10 +94,11 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
-    /* 地图卡片图片 */
+    /* 地图卡片图片：强制正方形 1:1 */
     .level-card .img-container {
         width: 100%;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 1 / 1;
+        /* 正方形 */
         background-color: var(--bg-body-color);
         overflow: hidden;
         border-bottom: var(--border-table);
@@ -147,13 +152,15 @@
         color: var(--btn-active-color);
     }
 
-    /* 章节卡片专用样式 */
+    /* 章节卡片专用样式 (固定约80px宽) */
     .level-card.chapter-card {
+        width: 100%;
         background-color: var(--bg-body-color);
         border: var(--border-table);
         justify-content: center;
         align-items: center;
         padding: 6px 2px;
+        box-sizing: border-box;
     }
 
     .chapter-card .chapter-icon-wrap {
@@ -162,7 +169,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
     }
 
     .chapter-card .chapter-icon-wrap img {
@@ -176,24 +183,30 @@
         font-size: 12px;
         font-weight: bold;
         color: var(--text-title);
+        line-height: 1.2;
     }
 
-    /* 移动端手机模式：不换行，保持一行4列，等比例缩小尺寸 */
+    /* 移动端手机模式：保持排版，按比例缩小尺寸 */
     @media only screen and (max-width: 767px) {
         .level-grid {
             gap: 4px;
             margin-bottom: 8px;
         }
 
+        .level-grid.has-chapter {
+            grid-template-columns: 60px repeat(3, 1fr);
+            /* 移动端章节缩小至60px */
+        }
+
         .chapter-card .chapter-icon-wrap {
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             margin-bottom: 2px;
         }
 
         .chapter-card .chapter-icon-wrap img {
-            width: 28px;
-            max-height: 28px;
+            width: 32px;
+            max-height: 32px;
         }
 
         .chapter-card .chapter-name {
@@ -302,7 +315,80 @@
                 { "year": "1216", "title": "多佛围城战", "title_eng": "Siege of Dover", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/多佛围城战.png", "chapter": "叛乱" },
                 { "year": "1217", "title": "第二次林肯战役", "title_eng": "Second Battle of Lincoln", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/第二次林肯战役.png", "chapter": "叛乱" },
             ]
-        }
+        },
+        {
+            "id": "2",
+            "name": "莫斯科的崛起",
+            "levels": [
+                { "year": "1238", "title": "重建莫斯科", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/重建莫斯科.png", "chapter": "要塞到城市" },
+                { "year": "1375", "title": "进贡", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/进贡.png", "chapter": "城市到国家" },
+                { "year": "1380", "title": "库里科沃战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/库里科沃战役.png", "chapter": "城市到国家" },
+                { "year": "1382", "title": "抵抗金帐汗国", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/抵抗金帐汗国.png", "chapter": "国家到帝国" },
+                { "year": "1478", "title": "诺夫哥罗德共和国之殇", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/诺夫哥罗德共和国之殇.png", "chapter": "国家到帝国" },
+                { "year": "1480", "title": "乌格拉河对峙战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/乌格拉河对峙战.png", "chapter": "国家到帝国" },
+                { "year": "1515", "title": "莫斯科对立陶宛", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/莫斯科对立陶宛.png", "chapter": "帝国到超级大国" },
+                { "year": "1552", "title": "喀山围城战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/rus/喀山围城战.png", "chapter": "帝国到超级大国" },
+            ]
+        },
+        {
+            "id": "3",
+            "name": "百年战争",
+            "levels": [
+                { "year": "1351", "title": "三十人之战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/三十人之战.png", "chapter": "骑士精神" },
+                { "year": "1360", "title": "巴黎围城战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/巴黎围城战.png", "chapter": "骑士精神" },
+                { "year": "1364", "title": "动荡法兰西", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/动荡法兰西.png", "chapter": "纷扰" },
+                { "year": "1370", "title": "彭瓦扬战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/彭瓦扬战役.png", "chapter": "纷扰" },
+                { "year": "1429", "title": "奥尔良围城战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/奥尔良围城战.png", "chapter": "背水一战" },
+                { "year": "1429", "title": "帕泰战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/帕泰战役.png", "chapter": "背水一战" },
+                { "year": "1448", "title": "夺回诺曼底", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/夺回诺曼底.png", "chapter": "位居上风" },
+                { "year": "1450", "title": "福尔米尼战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/fre/福尔米尼战役.png", "chapter": "位居上风" },
+            ]
+        },
+        {
+            "id": "4",
+            "name": "蒙古帝国",
+            "levels": [
+                { "year": "1223", "title": "迦勒迦河战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/迦勒迦河战役.png", "chapter": "震惊与敬畏" },
+                { "year": "1213", "title": "长城", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/长城.png", "chapter": "震惊与敬畏" },
+                { "year": "1215", "title": "中都战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/中都战役.png", "chapter": "震惊与敬畏" },
+                { "year": "1240", "title": "基辅围城战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/基辅围城战.png", "chapter": "征服2" },
+                { "year": "1241", "title": "里格尼茨战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/里格尼茨战役.png", "chapter": "征服2" },
+                { "year": "1241", "title": "蒂萨河战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/蒂萨河战役.png", "chapter": "征服2" },
+                { "year": "1267", "title": "大宋咽喉", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/大宋咽喉.png", "chapter": "统治" },
+                { "year": "1268", "title": "鹿门山之障", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/鹿门山之障.png", "chapter": "统治" },
+                { "year": "1273", "title": "襄阳城破", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/mon/襄阳城破.png", "chapter": "统治" },
+            ]
+        },
+        {
+            "id": "5",
+            "name": "苏丹的崛起",
+            "levels": [
+                { "year": "1111", "title": "泰尔保卫战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/泰尔保卫战.png", "chapter": "入侵" },
+                { "year": "1163", "title": "进入埃及", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/进入埃及.png", "chapter": "萨拉丁" },
+                { "year": "1183", "title": "红海掠夺者", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/红海掠夺者.png", "chapter": "萨拉丁" },
+                { "year": "1187", "title": "海丁之角", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/海丁之角.png", "chapter": "萨拉丁" },
+                { "year": "1250", "title": "曼苏拉之战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/曼苏拉之战.png", "chapter": "从奴隶到苏丹" },
+                { "year": "1260", "title": "艾因贾鲁特战役", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/艾因贾鲁特战役.png", "chapter": "从奴隶到苏丹" },
+                { "year": "1291", "title": "阿克里攻城战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/阿克里攻城战.png", "chapter": "从奴隶到苏丹" },
+                { "year": "1426", "title": "入侵塞浦路斯", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/入侵塞浦路斯.png", "chapter": "地中海海盗" },
+            ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ];
 
     // =====================================================================
@@ -345,7 +431,7 @@
     }
 
     // =====================================================================
-    // 页面构建逻辑 (支持按章节分行：1章节+3地图 或 4地图)
+    // 页面构建逻辑 (支持按章节分行：80px章节+3正方形地图 或 4正方形地图)
     // =====================================================================
     function initCampaignPage() {
         const filtersContainer = document.getElementById('filters');
@@ -374,7 +460,7 @@
             titleDiv.innerHTML = `${camp.name}`;
             section.appendChild(titleDiv);
 
-            // C. 动态按行构建关卡网格 (处理章节与地图排版)
+            // C. 动态按行构建关卡网格
             const levels = camp.levels;
             let i = 0;
 
@@ -383,27 +469,27 @@
                 const hasChapter = !!currentLevel.chapter;
 
                 const rowGrid = document.createElement('div');
-                rowGrid.className = 'level-grid';
 
                 if (hasChapter) {
-                    const chapterName = currentLevel.chapter;
+                    rowGrid.className = 'level-grid has-chapter'; // 应用 80px 1fr 1fr 1fr
+                    const chapterRaw = currentLevel.chapter;
+                    const chapterDisplayName = chapterRaw.replace(/\d+$/g, ''); // 剔除末尾数字
 
-                    // 1. 生成左侧章节卡片
+                    // 1. 生成左侧章节卡片 (80px宽)
                     const chapterCard = document.createElement('div');
                     chapterCard.className = 'level-card chapter-card';
                     chapterCard.innerHTML = `
                         <div class="chapter-icon-wrap">
-                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chapter/${chapterName}.png" alt="${chapterName}" onerror="this.style.display='none'">
+                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chapter/${chapterRaw}.png" alt="${chapterDisplayName}" onerror="this.style.display='none'">
                         </div>
-                        <div class="chapter-name">${chapterName}</div>
+                        <div class="chapter-name">${chapterDisplayName}</div>
                     `;
                     rowGrid.appendChild(chapterCard);
 
-                    // 2. 填入最多 3 张同章节（或接续）的地图
+                    // 2. 填入最多 3 张正方形地图
                     let count = 0;
                     while (i < levels.length && count < 3) {
-                        // 如果遇到了新章节名，断开换下一行
-                        if (count > 0 && levels[i].chapter && levels[i].chapter !== chapterName) {
+                        if (count > 0 && levels[i].chapter && levels[i].chapter !== chapterRaw) {
                             break;
                         }
                         rowGrid.appendChild(createMapCard(levels[i]));
@@ -411,7 +497,8 @@
                         count++;
                     }
                 } else {
-                    // 没有章节：直接填入最多 4 张地图
+                    rowGrid.className = 'level-grid no-chapter'; // 应用 1fr 1fr 1fr 1fr
+                    // 没有章节：填入最多 4 张正方形地图
                     let count = 0;
                     while (i < levels.length && count < 4 && !levels[i].chapter) {
                         rowGrid.appendChild(createMapCard(levels[i]));
@@ -426,7 +513,6 @@
             campaignContainer.appendChild(section);
         });
 
-        // 支持 URL ?camp= 参数定位
         const urlCamp = new URLSearchParams(window.location.search).get("camp");
         if (urlCamp) {
             switchCampaign(urlCamp);
