@@ -18,8 +18,6 @@
         gap: 8px;
         margin-bottom: 20px;
         padding: 12px;
-        background-color: var(--bg-table-highlight);
-        border: var(--border-table);
         border-radius: 4px;
     }
 
@@ -55,7 +53,6 @@
     }
 
     .campaign-section-title {
-        font-size: 1.4em;
         color: var(--text-title);
         margin-bottom: 15px;
         padding-bottom: 5px;
@@ -109,24 +106,11 @@
     }
 
     .level-card .card-caption {
-        padding: 8px 4px;
-        font-size: 13px;
-        line-height: 1.4;
         color: var(--text-primary);
         flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .level-card .title-cn {
-        font-weight: bold;
-        color: var(--text-title);
-    }
-
-    .level-card .title-en {
-        font-size: 11px;
-        color: var(--special-link-color2);
     }
 
     @media only screen and (max-width: 767px) {
@@ -182,8 +166,7 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="35"></div>
 <div id="filters" class="campaign-filter-panel"></div>
-<div id="campaignContainer"></div>
-</div>
+<div id="campaignContainer"></div></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -204,81 +187,48 @@
 
 <script language="javascript" src="https://seicing.com/js/tech.js" onload="aoetechPoeRush()"></script>
 <script>
-    // =====================================================================
-    // 1. 战役关卡数据定义 (5-6个战役，数据结构严格匹配)
-    // =====================================================================
     const campaignsData = [
         {
-            "id": "atlantis",
-            "name": "三叉戟之落：亚特兰蒂斯",
-            "name_eng": "Fall of the Trident: Atlantis",
+            "id": "1",
+            "name": "三叉戟的陨落",
             "levels": [
-                { "title": "1.预兆", "title_eng": "Omens", "path": "https://seicing.com/res/aom/cam/1.png" },
-                { "title": "2.再次发航", "title_eng": "Setting Sail", "path": "https://seicing.com/res/aom/cam/2.png" },
-                { "title": "3.刮风破浪", "title_eng": "A Long Way from Home", "path": "https://seicing.com/res/aom/cam/3.png" },
-                { "title": "4.挖掘挖掘", "title_eng": "Digging Up Trouble", "path": "https://seicing.com/res/aom/cam/4.png" },
-                { "title": "5.居高临下", "title_eng": "I Don't Belong Here", "path": "https://seicing.com/res/aom/cam/5.png" },
-                { "title": "6.偷梁换柱", "title_eng": "Jackal's Stronghold", "path": "https://seicing.com/res/aom/cam/6.png" },
-                { "title": "7.假戏真做", "title_eng": "A Fine Siege", "path": "https://seicing.com/res/aom/cam/7.png" },
-                { "title": "8.奇迹再现", "title_eng": "More Trouble", "path": "https://seicing.com/res/aom/cam/8.png" }
+                { "title": "1.【待补充】", "title_eng": "Omens", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/AoMR_Omens_minimap.webp" },
+                { "title": "2.【待补充】", "title_eng": "Consequences", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/AoMR_Consequences_minimap.webp" },
+                { "title": "3.【待补充】", "title_eng": "Scratching the Surface", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/AoMR_Scratching_the_Surface_minimap.webp" },
+                { "title": "4.【待补充】", "title_eng": "A Fine Plan", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/AoMR_A_Fine_Plan_minimap.webp" },
+                { "title": "5.【待补充】", "title_eng": "Just Enough Rope", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/AoMR_Just_Enough_Rope_minimap.webp" },
+                { "title": "6.【待补充】", "title_eng": "I Hope This Works", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/AoMR_I_Hope_This_Works_minimap.webp" },
+                { "title": "7.【待补充】", "title_eng": "More Bandits", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/More_Bandits_minimap_AoMR.webp" },
+                { "title": "8.【待补充】", "title_eng": "Bad News", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Bad_News.webp" },
+                { "title": "9.【待补充】", "title_eng": "Revelation", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Revelation.webp" },
+                { "title": "10.【待补充】", "title_eng": "Strangers", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Strangers.webp" },
+                { "title": "11.【待补充】", "title_eng": "The Lost Relic", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/The_Lost_Relic_map.webp" },
+                { "title": "12.【待补充】", "title_eng": "Light Sleeper", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Light_Sleeper_map.webp" },
+                { "title": "13.【待补充】", "title_eng": "Tug of War", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Tug_of_War_map.webp" },
+                { "title": "14.【待补充】", "title_eng": "Isis, Hear My Plea", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Isis_Hear_My_Plea.webp" },
+                { "title": "15.【待补充】", "title_eng": "Let's Go", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Le_Go.webp" },
+                { "title": "16.【待补充】", "title_eng": "Good Advice", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Good_Advice_2.webp" },
+                { "title": "17.【待补充】", "title_eng": "The Jackal's Stronghold", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/The_Jackals_Stronghold.webp" },
+                { "title": "18.【待补充】", "title_eng": "A Long Way From Home", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/A_Long_Way_From_Home.webp" },
+                { "title": "19.【待补充】", "title_eng": "Watch That First Step", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Watch_That_First_Step.webp" },
+                { "title": "20.【待补充】", "title_eng": "Where They Belong", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Where_They_Belong.webp" },
+                { "title": "21.【待补充】", "title_eng": "Old Friends", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Old_Friends.webp" },
+                { "title": "22.【待补充】", "title_eng": "North", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/North_minimap.webp" },
+                { "title": "23.【待补充】", "title_eng": "The Dwarven Forge", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/The_Dwarven_Forge.webp" },
+                { "title": "24.【待补充】", "title_eng": "Not From Around Here", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Not_From_Around_Here.webp" },
+                { "title": "25.【待补充】", "title_eng": "Welcoming Committee", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Welcoming_Commitee.webp" },
+                { "title": "26.【待补充】", "title_eng": "Union", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Union.webp" },
+                { "title": "27.【待补充】", "title_eng": "The Well of Urd", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Well_of_Urd_map.webp" },
+                { "title": "28.【待补充】", "title_eng": "Beneath the Surface", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Beneath_the_Surface.webp" },
+                { "title": "29.【待补充】", "title_eng": "Unlikely Heroes", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Unlikely_Heroes.webp" },
+                { "title": "30.【待补充】", "title_eng": "All Is Not Lost", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/All_Is_Not_Lost.webp" },
+                { "title": "31.【待补充】", "title_eng": "Welcome Back", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/Welcome_Back.webp" },
+                { "title": "32.【待补充】", "title_eng": "A Place in My Dreams", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoem/cam/A_Place_In_My_Dreams.webp" },
             ]
         },
-        {
-            "id": "greece",
-            "name": "三叉戟之落：希腊",
-            "name_eng": "Fall of the Trident: Greece",
-            "levels": [
-                { "title": "9.特洛伊陷落", "title_eng": "Watch That First Step", "path": "https://seicing.com/res/aom/cam/9.png" },
-                { "title": "10.绝地逢生", "title_eng": "Where They Belong", "path": "https://seicing.com/res/aom/cam/10.png" },
-                { "title": "11.冥界深渊", "title_eng": "The Bad Place", "path": "https://seicing.com/res/aom/cam/11.png" },
-                { "title": "12.救赎之光", "title_eng": "Welcome Back", "path": "https://seicing.com/res/aom/cam/12.png" }
-            ]
-        },
-        {
-            "id": "egypt",
-            "name": "三叉戟之落：埃及",
-            "name_eng": "Fall of the Trident: Egypt",
-            "levels": [
-                { "title": "13.太阳神之剑", "title_eng": "Sword in the Statue", "path": "https://seicing.com/res/aom/cam/13.png" },
-                { "title": "14.搜寻片段", "title_eng": "Light's Out", "path": "https://seicing.com/res/aom/cam/14.png" },
-                { "title": "15.沙漠神殿", "title_eng": "Temple of the Damned", "path": "https://seicing.com/res/aom/cam/15.png" },
-                { "title": "16.围攻杰贝勒", "title_eng": "Siege of Jebel", "path": "https://seicing.com/res/aom/cam/16.png" },
-                { "title": "17.尼罗河之战", "title_eng": "Nile River Battle", "path": "https://seicing.com/res/aom/cam/17.png" }
-            ]
-        },
-        {
-            "id": "norse",
-            "name": "三叉戟之落：北欧",
-            "name_eng": "Fall of the Trident: Norse",
-            "levels": [
-                { "title": "18.极北之地", "title_eng": "The North Woods", "path": "https://seicing.com/res/aom/cam/18.png" },
-                { "title": "19.矮人铸造局", "title_eng": "Dwarven Forge", "path": "https://seicing.com/res/aom/cam/19.png" },
-                { "title": "20.巨锤重现", "title_eng": "Reclaiming the Hammer", "path": "https://seicing.com/res/aom/cam/20.png" },
-                { "title": "21.诸神黄昏", "title_eng": "Ragnarok", "path": "https://seicing.com/res/aom/cam/21.png" }
-            ]
-        },
-        {
-            "id": "golden_gift",
-            "name": "黄金礼物",
-            "name_eng": "The Golden Gift",
-            "levels": [
-                { "title": "1.兄弟争端", "title_eng": "Brothers' Feud", "path": "https://seicing.com/res/aom/cam/g1.png" },
-                { "title": "2.巨穴探索", "title_eng": "Giant's Cavern", "path": "https://seicing.com/res/aom/cam/g2.png" },
-                { "title": "3.夺回黄金", "title_eng": "Retrieving the Gold", "path": "https://seicing.com/res/aom/cam/g3.png" },
-                { "title": "4.再次合作", "title_eng": "Reunion", "path": "https://seicing.com/res/aom/cam/g4.png" }
-            ]
-        },
-        {
-            "id": "new_atlantis",
-            "name": "新亚特兰蒂斯",
-            "name_eng": "The New Atlantis",
-            "levels": [
-                { "title": "1.重建家园", "title_eng": "A New Home", "path": "https://seicing.com/res/aom/cam/n1.png" },
-                { "title": "2.泰坦觉醒", "title_eng": "Titan's Awakening", "path": "https://seicing.com/res/aom/cam/n2.png" },
-                { "title": "3.审判之日", "title_eng": "Day of Judgment", "path": "https://seicing.com/res/aom/cam/n3.png" },
-                { "title": "4.泰坦灭亡", "title_eng": "Fall of the Titans", "path": "https://seicing.com/res/aom/cam/n4.png" }
-            ]
-        }
+
+
+
     ];
 
     // =====================================================================
@@ -308,7 +258,7 @@
             // 标题区
             const titleDiv = document.createElement('div');
             titleDiv.className = 'campaign-section-title';
-            titleDiv.innerHTML = `${camp.name} <small>${camp.name_eng}</small>`;
+            titleDiv.innerHTML = `${camp.name}`;
             section.appendChild(titleDiv);
 
             // 关卡网格 (1行4个)
