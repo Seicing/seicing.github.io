@@ -28,19 +28,15 @@ function tipsg(targetTextId, targetButtonId, suffix) {
 
     // 3. 加载图片：只处理当前显示区域内的图片
     // 这里的选择器只找当前 div 下的 img
-    $("#" + targetTextId + " img").each(function () {
-        var $this = $(this);
-
-        // 【关键修改】这里读取 data-mysrc
-        var realSrc = $this.attr("data-mysrc");
-
-        // 如果存在 data-mysrc 且 src 还没被赋值（避免重复加载）
-        if (realSrc && $this.attr("src") !== realSrc) {
-            $this.attr("src", realSrc);
-            // 顺便移除 data-mysrc 保持整洁（可选）
-            $this.removeAttr("data-mysrc");
-        }
-    });
+    document
+        .querySelectorAll("#" + targetTextId + " img")
+        .forEach(function (img) {
+            var realSrc = img.getAttribute("data-mysrc");
+            if (realSrc && img.getAttribute("src") !== realSrc) {
+                img.setAttribute("src", realSrc);
+                img.removeAttribute("data-mysrc");
+            }
+        });
 }
 
 // ===== 自动头像页面生成系统 =====
