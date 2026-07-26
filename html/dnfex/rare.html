@@ -48,7 +48,7 @@
     }
 </style>
 <script>
-    // 使用全局捕获模式拦截图片加载错误
+    // 全局图片缺失处理
     window.addEventListener('error', function (event) {
         var target = event.target;
         if (target && target.tagName === 'IMG') {
@@ -125,7 +125,9 @@
                         <div class="entry"><div id="lavipage" page="7"></div>
 <div id="Layer1" style="display: none; position: absolute; z-index: 100;"></div>
 
-<!--天空套自动渲染容器-->
+<!--天空套菜单与内容容器-->
+<div id="avatar-rare-menu"></div>
+<br><br>
 <div id="avatar-rare-content"></div></div>
                     </div>
                 </div>

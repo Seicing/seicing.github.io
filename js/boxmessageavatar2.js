@@ -1,5 +1,8 @@
-// 定义 ID 前缀列表
-var listPrefix = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't', 'u', 'n', 'o'];
+// 定义 ID 前缀列表 (包含礼包 a-u 与天空套 ra1-ra3)
+var listPrefix = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+    'ra1', 'ra2', 'ra3'
+];
 
 function tipsg(targetTextId, targetButtonId, suffix) {
     // 1. 重置：隐藏所有内容，变灰所有按钮
@@ -24,7 +27,7 @@ function tipsg(targetTextId, targetButtonId, suffix) {
     if (currentBtn) currentBtn.classList.add("special-link");
     if (currentBtn) currentBtn.classList.remove("special-text-link");
 
-    // 3. 加载图片：只处理当前显示区域内的图片
+    // 3. 按需加载图片：把 data-mysrc 赋给 src 触发实际网络下载（节省流量）
     document
         .querySelectorAll("#" + targetTextId + " img")
         .forEach(function (img) {
@@ -70,7 +73,7 @@ function buildAvatarTableRows(path, isLazy = true) {
     return h;
 }
 
-// ===== 数据源：礼包装扮集 =====
+// ===== 数据源 1：礼包装扮集 =====
 const avatarData = [
     {
         "id": "a",
@@ -226,37 +229,6 @@ const avatarData = [
         ]
     },
     {
-        "id": "n",
-        "year": "国服未发售",
-        "sets": [
-            { "title": "アラドの勇者", "path": "aradyuusha" },
-            { "title": "浴衣", "path": "kimono" },
-            { "title": "드림 파이터", "path": "lunaby" },
-            { "title": "新撰組", "path": "sinsengumi" },
-            { "title": "고스트 헌터", "path": "dmc" },
-            { "title": "아라드의 유생", "path": "yusoeng" },
-            { "title": "퀴즈탐험 던파의 세계", "path": "kimyo" },
-            { "title": "鋼の錬金術師", "path": "ganglian" },
-            { "title": "사도의 후예 패키지", "path": "sado" },
-            { "title": "애프터 크리스마스", "path": "rabbit" },
-            { "title": "디멘션 아라드", "path": "dimension" },
-            { "title": "초원의 영혼", "path": "indian" },
-            { "title": "프로스트 킹덤", "path": "frostkingdom" },
-            { "title": "공모전", "path": "gongmu" }
-        ]
-    },
-    {
-        "id": "o",
-        "year": "特殊",
-        "sets": [
-            { "title": "대박기원 아라드협객단", "path": "xia" },
-            { "title": "5월의 신부", "path": "bride" },
-            { "title": "파워 아라드 레인저", "path": "ranja" },
-            { "title": "쇼콜라", "path": "chocolate" },
-            { "title": "크리스마스의 동물 패키지", "path": "animals" }
-        ]
-    },
-    {
         "id": "p",
         "year": "2021年",
         "sets": [
@@ -322,34 +294,83 @@ const avatarData = [
             { "title": "NBA", "path": "nba" },
             { "title": "果味一整夏", "path": "2026summer" }
         ]
+    },
+    {
+        "id": "n",
+        "year": "国服未发售",
+        "sets": [
+            { "title": "アラドの勇者", "path": "aradyuusha" },
+            { "title": "浴衣", "path": "kimono" },
+            { "title": "드림 파이터", "path": "lunaby" },
+            { "title": "新撰組", "path": "sinsengumi" },
+            { "title": "고스트 헌터", "path": "dmc" },
+            { "title": "아라드의 유생", "path": "yusoeng" },
+            { "title": "퀴즈탐험 던파의 세계", "path": "kimyo" },
+            { "title": "鋼の錬金術師", "path": "ganglian" },
+            { "title": "사도의 후예 패키지", "path": "sado" },
+            { "title": "애프터 크리스마스", "path": "rabbit" },
+            { "title": "디멘션 아라드", "path": "dimension" },
+            { "title": "초원의 영혼", "path": "indian" },
+            { "title": "프로스트 킹덤", "path": "frostkingdom" },
+            { "title": "공모전", "path": "gongmu" }
+        ]
+    },
+    {
+        "id": "o",
+        "year": "特殊",
+        "sets": [
+            { "title": "대박기원 아라드협객단", "path": "xia" },
+            { "title": "5월의 신부", "path": "bride" },
+            { "title": "파워 아라드 레인저", "path": "ranja" },
+            { "title": "쇼콜라", "path": "chocolate" },
+            { "title": "크리스마스의 동물 패키지", "path": "animals" }
+        ]
     }
 ];
 
-// ===== 数据源：天空装扮集 =====
+// ===== 数据源 2：天空装扮集（分为3个子板块） =====
 const rareData = [
-    { "title": "传奇之稀有装扮", "path": "rare/rare1" },
-    { "title": "冥域天空", "path": "rare/rare2" },
-    { "title": "天纵云霄", "path": "rare/rare3" },
-    { "title": "苍穹之翼", "path": "rare/rare4" },
-    { "title": "战灵天舞", "path": "rare/rare5" },
-    { "title": "冥光天羽", "path": "rare/rare6" },
-    { "title": "炽翎天痕", "path": "rare/rare7" },
-    { "title": "天光云影", "path": "rare/rare8" },
-    { "title": "极天幻翼", "path": "rare/rare9" },
-    { "title": "权倾天下", "path": "rare/rare10" },
-    { "title": "九天霜华", "path": "rare/rare11" },
-    { "title": "天羽夜华", "path": "rare/rare12" },
-    { "title": "鸿宇天绫", "path": "rare/rare13" },
-    { "title": "天神御临", "path": "rare/rare14" },
-    { "title": "神兽化灵", "path": "rare/rares1" },
-    { "title": "光翼天使", "path": "rare/rares2" },
-    { "title": "机甲", "path": "rare/rares3" },
-    { "title": "山海御灵", "path": "rare/rares4" }
+    {
+        "id": "ra1",
+        "title": "天空1-7",
+        "sets": [
+            { "title": "传奇之稀有装扮", "path": "rare/rare1" },
+            { "title": "冥域天空", "path": "rare/rare2" },
+            { "title": "天纵云霄", "path": "rare/rare3" },
+            { "title": "苍穹之翼", "path": "rare/rare4" },
+            { "title": "战灵天舞", "path": "rare/rare5" },
+            { "title": "冥光天羽", "path": "rare/rare6" },
+            { "title": "炽翎天痕", "path": "rare/rare7" }
+        ]
+    },
+    {
+        "id": "ra2",
+        "title": "天空8-14",
+        "sets": [
+            { "title": "天光云影", "path": "rare/rare8" },
+            { "title": "极天幻翼", "path": "rare/rare9" },
+            { "title": "权倾天下", "path": "rare/rare10" },
+            { "title": "九天霜华", "path": "rare/rare11" },
+            { "title": "天羽夜华", "path": "rare/rare12" },
+            { "title": "鸿宇天绫", "path": "rare/rare13" },
+            { "title": "天神御临", "path": "rare/rare14" }
+        ]
+    },
+    {
+        "id": "ra3",
+        "title": "神器天空",
+        "sets": [
+            { "title": "神兽化灵", "path": "rare/rares1" },
+            { "title": "光翼天使", "path": "rare/rares2" },
+            { "title": "机甲", "path": "rare/rares3" },
+            { "title": "山海御灵", "path": "rare/rares4" }
+        ]
+    }
 ];
 
 // ===== 页面渲染逻辑 =====
 
-// 1. 渲染礼包装扮集（带年份切换菜单）
+// 1. 渲染礼包装扮集
 function renderAvatarPage() {
     const menu = document.getElementById('avatar-year-menu');
     const content = document.getElementById('avatar-content');
@@ -397,14 +418,34 @@ function renderAvatarPage() {
     }
 }
 
-// 2. 渲染天空装扮集（无年份切换，按顺序平铺）
+// 2. 渲染天空装扮集（分类选项卡+按需加载图片）
 function renderRarePage() {
-    const rareContainer = document.getElementById('avatar-rare-content');
-    if (!rareContainer) return;
+    const menu = document.getElementById('avatar-rare-menu');
+    const content = document.getElementById('avatar-rare-content');
+    if (!menu || !content) return;
 
-    let html = '';
-    rareData.forEach(s => {
-        html += `
+    menu.innerHTML = '';
+    content.innerHTML = '';
+
+    rareData.forEach((group, i) => {
+        let a = document.createElement('a');
+        a.id = group.id + 'button0';
+        a.href = 'javascript:void(0);';
+        a.className = i === 0 ? 'special-link' : 'special-text-link';
+        a.innerHTML = group.title;
+        a.onclick = function () {
+            tipsg(group.id + 'text0', group.id + 'button0', '0');
+        };
+        menu.appendChild(a);
+        menu.appendChild(document.createTextNode(' '));
+
+        let div = document.createElement('div');
+        div.id = group.id + 'text0';
+        div.style.display = i === 0 ? 'block' : 'none';
+        div.style.textAlign = 'center';
+
+        group.sets.forEach(s => {
+            div.innerHTML += `
     <table id="customers" width="100%">
         <tr class="avatbg">
             <td colspan="4">
@@ -413,12 +454,16 @@ function renderRarePage() {
                 </span>
             </td>
         </tr>
-        ${buildAvatarTableRows(s.path, false)}
+        ${buildAvatarTableRows(s.path, true)}
     </table>
     <br><br>`;
+        });
+        content.appendChild(div);
     });
 
-    rareContainer.innerHTML = html;
+    if (rareData.length > 0) {
+        tipsg(rareData[0].id + 'text0', rareData[0].id + 'button0', '0');
+    }
 }
 
 // 统一入口初始化
