@@ -10,6 +10,11 @@
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>帝国时代IV 战役</title>
 <style>
+    /* 统一间距变量 */
+    :root {
+        --grid-gap: 8px;
+    }
+
     #filters.campaign-filter-panel {
         display: flex;
         flex-wrap: wrap;
@@ -60,21 +65,21 @@
         align-items: baseline;
     }
 
-    /* 网格控制：无章节一行4个地图；有章节时1个80px章节 + 3个地图 */
+    /* 网格通用基准 */
     .level-grid {
         display: grid;
-        gap: 8px;
+        gap: var(--grid-gap);
         margin-bottom: 12px;
     }
 
-    .level-grid.has-chapter {
-        grid-template-columns: 80px repeat(3, 1fr);
-        /* 章节80px，地图均分 */
-    }
-
+    /* 无章节：4个地图均分 100% */
     .level-grid.no-chapter {
         grid-template-columns: repeat(4, 1fr);
-        /* 4张地图均分 */
+    }
+
+    /* 有章节：章节占80px，3张地图保持标准25%宽度，右侧自然留空 */
+    .level-grid.has-chapter {
+        grid-template-columns: 80px repeat(3, calc((100% - 3 * var(--grid-gap)) / 4));
     }
 
     .level-card {
@@ -94,11 +99,10 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
-    /* 地图卡片图片：强制正方形 1:1 */
+    /* 地图卡片图片：强制 1:1 正方形 */
     .level-card .img-container {
         width: 100%;
         aspect-ratio: 1 / 1;
-        /* 正方形 */
         background-color: var(--bg-body-color);
         overflow: hidden;
         border-bottom: var(--border-table);
@@ -152,7 +156,7 @@
         color: var(--btn-active-color);
     }
 
-    /* 章节卡片专用样式 (固定约80px宽) */
+    /* 章节卡片 (固定80px宽) */
     .level-card.chapter-card {
         width: 100%;
         background-color: var(--bg-body-color);
@@ -186,27 +190,34 @@
         line-height: 1.2;
     }
 
-    /* 移动端手机模式：保持排版，按比例缩小尺寸 */
+    /* 手机模式：消除右侧空隙，3张地图平分剩余宽度填满屏幕 */
     @media only screen and (max-width: 767px) {
+        :root {
+            --grid-gap: 4px;
+        }
+
         .level-grid {
-            gap: 4px;
             margin-bottom: 8px;
         }
 
+        /* 手机端：章节55px，其余3张地图平分剩余100%空间，空隙消失 */
         .level-grid.has-chapter {
-            grid-template-columns: 60px repeat(3, 1fr);
-            /* 移动端章节缩小至60px */
+            grid-template-columns: 55px repeat(3, 1fr);
+        }
+
+        .level-grid.no-chapter {
+            grid-template-columns: repeat(4, 1fr);
         }
 
         .chapter-card .chapter-icon-wrap {
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             margin-bottom: 2px;
         }
 
         .chapter-card .chapter-icon-wrap img {
-            width: 32px;
-            max-height: 32px;
+            width: 30px;
+            max-height: 30px;
         }
 
         .chapter-card .chapter-name {
@@ -221,7 +232,7 @@
         .title-en {
             font-size: 8px;
             line-height: 1.1;
-            transform: scale(0.9);
+            transform: scale(0.88);
         }
 
         .level-card .card-caption {
@@ -311,8 +322,8 @@
                 { "year": "1119", "title": "布雷穆勒战役", "title_eng": "Battle of Brémule", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/布雷穆勒战役.png", "chapter": "占领" },
                 { "year": "1141", "title": "第一次林肯战役", "title_eng": "First Battle of Lincoln", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/第一次林肯战役.png", "chapter": "无政府状态" },
                 { "year": "1153", "title": "瓦灵福德围城战", "title_eng": "Siege of Wallingford", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/瓦灵福德围城战.png", "chapter": "无政府状态" },
-                { "year": "1215", "title": "罗彻斯特围城战", "title_eng": "Siege of Rochester", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/罗彻斯特围城战.png", "chapter": "叛乱" },
                 { "year": "1216", "title": "多佛围城战", "title_eng": "Siege of Dover", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/多佛围城战.png", "chapter": "叛乱" },
+                { "year": "1215", "title": "罗彻斯特围城战", "title_eng": "Siege of Rochester", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/罗彻斯特围城战.png", "chapter": "叛乱" },
                 { "year": "1217", "title": "第二次林肯战役", "title_eng": "Second Battle of Lincoln", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/第二次林肯战役.png", "chapter": "叛乱" },
             ]
         },
@@ -373,21 +384,40 @@
                 { "year": "1426", "title": "入侵塞浦路斯", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/abb/入侵塞浦路斯.png", "chapter": "地中海海盗" },
             ]
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        {
+            "id": "6",
+            "name": "岳飞的忠义传承",
+            "levels": [
+                { "year": "1127", "title": "逃往应天府", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/逃往应天府.png", "chapter": "星火希冀" },
+                { "year": "1129", "title": "建康保卫战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/建康保卫战.png", "chapter": "星火希冀" },
+                { "year": "1130", "title": "黄天荡之战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/黄天荡之战.png", "chapter": "星火希冀" },
+                { "year": "1131", "title": "南方叛军", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/南方叛军.png", "chapter": "力挽狂澜" },
+                { "year": "1132", "title": "德安围城战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/德安围城战.png", "chapter": "力挽狂澜" },
+                { "year": "1134", "title": "北伐", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/北伐.png", "chapter": "力挽狂澜" },
+                { "year": "1135", "title": "中原", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/中原.png", "chapter": "碧血忠魂" },
+                { "year": "1140", "title": "郾城之战", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chi/郾城之战.png", "chapter": "碧血忠魂" },
+            ]
+        },
+        {
+            "id": "0",
+            "name": "历史战役",
+            "levels": [
+                { "year": "1177", "title": "蒙吉萨", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/his/蒙吉萨.png" },
+                { "year": "1266", "title": "萨法德", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/his/萨法德.png" },
+                { "year": "1415", "title": "阿金库尔", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/his/阿金库尔.png" },
+                { "year": "1461", "title": "陶顿", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/his/陶顿.png" },
+            ]
+        },
+        {
+            "id": "9",
+            "name": "炼狱",
+            "levels": [
+                { "title": "寸草必争", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/寸草必争.png" },
+                { "title": "大名风云", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/大名风云.png" },
+                { "title": "森林之王", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/森林之王.png" },
+                { "title": "争夺海岸", "title_eng": "【待补充】", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/争夺海岸.png" },
+            ]
+        },
 
     ];
 
