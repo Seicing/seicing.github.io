@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>神话时代 战役地图</title>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    #filters.campaign-filter-panel {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        padding: 12px;
+        background-color: var(--bg-table-highlight);
+        border: var(--border-table);
+        border-radius: 4px;
+    }
+
+    .filterbtn {
+        background-color: transparent;
+        color: var(--btn-inactive-color);
+        border: var(--border-table);
+        padding: 6px 14px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: inherit;
+        transition: all 0.2s ease;
+    }
+
+    .filterbtn:hover {
+        color: var(--text-title);
+        background-color: var(--bg-body-color);
+    }
+
+    .filterbtn.active {
+        background-color: var(--btn-active-color) !important;
+        color: #ffffff !important;
+        border-color: var(--btn-active-color) !important;
+    }
+
+    .campaign-section {
+        display: none;
+    }
+
+    .campaign-section.active {
+        display: block;
+    }
+
+    .campaign-section-title {
+        font-size: 1.4em;
+        color: var(--text-title);
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: var(--hr-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .campaign-section-title small {
+        font-size: 0.6em;
+        color: var(--text-sidebar-a);
+    }
+
+    .level-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .level-card {
+        background-color: var(--bg-table-highlight);
+        border: var(--border-table);
+        border-radius: 2px;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .level-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .level-card .img-container {
+        width: 100%;
+        height: 110px;
+        background-color: var(--bg-body-color);
+        overflow: hidden;
+        border-bottom: var(--border-table);
+    }
+
+    .level-card .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .level-card .card-caption {
+        padding: 8px 4px;
+        font-size: 13px;
+        line-height: 1.4;
+        color: var(--text-primary);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .level-card .title-cn {
+        font-weight: bold;
+        color: var(--text-title);
+    }
+
+    .level-card .title-en {
+        font-size: 11px;
+        color: var(--special-link-color2);
+    }
+
+    @media only screen and (max-width: 767px) {
+        .level-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+</style>
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="35"></div>
+<div id="filters" class="campaign-filter-panel"></div>
+<div id="campaignContainer"></div>
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/tech.js" onload="aoetechPoeRush()"></script>
+<script>
+    // =====================================================================
+    // 1. 战役关卡数据定义 (5-6个战役，数据结构严格匹配)
+    // =====================================================================
+    const campaignsData = [
+        {
+            "id": "atlantis",
+            "name": "三叉戟之落：亚特兰蒂斯",
+            "name_eng": "Fall of the Trident: Atlantis",
+            "levels": [
+                { "title": "1.预兆", "title_eng": "Omens", "path": "https://seicing.com/res/aom/cam/1.png" },
+                { "title": "2.再次发航", "title_eng": "Setting Sail", "path": "https://seicing.com/res/aom/cam/2.png" },
+                { "title": "3.刮风破浪", "title_eng": "A Long Way from Home", "path": "https://seicing.com/res/aom/cam/3.png" },
+                { "title": "4.挖掘挖掘", "title_eng": "Digging Up Trouble", "path": "https://seicing.com/res/aom/cam/4.png" },
+                { "title": "5.居高临下", "title_eng": "I Don't Belong Here", "path": "https://seicing.com/res/aom/cam/5.png" },
+                { "title": "6.偷梁换柱", "title_eng": "Jackal's Stronghold", "path": "https://seicing.com/res/aom/cam/6.png" },
+                { "title": "7.假戏真做", "title_eng": "A Fine Siege", "path": "https://seicing.com/res/aom/cam/7.png" },
+                { "title": "8.奇迹再现", "title_eng": "More Trouble", "path": "https://seicing.com/res/aom/cam/8.png" }
+            ]
+        },
+        {
+            "id": "greece",
+            "name": "三叉戟之落：希腊",
+            "name_eng": "Fall of the Trident: Greece",
+            "levels": [
+                { "title": "9.特洛伊陷落", "title_eng": "Watch That First Step", "path": "https://seicing.com/res/aom/cam/9.png" },
+                { "title": "10.绝地逢生", "title_eng": "Where They Belong", "path": "https://seicing.com/res/aom/cam/10.png" },
+                { "title": "11.冥界深渊", "title_eng": "The Bad Place", "path": "https://seicing.com/res/aom/cam/11.png" },
+                { "title": "12.救赎之光", "title_eng": "Welcome Back", "path": "https://seicing.com/res/aom/cam/12.png" }
+            ]
+        },
+        {
+            "id": "egypt",
+            "name": "三叉戟之落：埃及",
+            "name_eng": "Fall of the Trident: Egypt",
+            "levels": [
+                { "title": "13.太阳神之剑", "title_eng": "Sword in the Statue", "path": "https://seicing.com/res/aom/cam/13.png" },
+                { "title": "14.搜寻片段", "title_eng": "Light's Out", "path": "https://seicing.com/res/aom/cam/14.png" },
+                { "title": "15.沙漠神殿", "title_eng": "Temple of the Damned", "path": "https://seicing.com/res/aom/cam/15.png" },
+                { "title": "16.围攻杰贝勒", "title_eng": "Siege of Jebel", "path": "https://seicing.com/res/aom/cam/16.png" },
+                { "title": "17.尼罗河之战", "title_eng": "Nile River Battle", "path": "https://seicing.com/res/aom/cam/17.png" }
+            ]
+        },
+        {
+            "id": "norse",
+            "name": "三叉戟之落：北欧",
+            "name_eng": "Fall of the Trident: Norse",
+            "levels": [
+                { "title": "18.极北之地", "title_eng": "The North Woods", "path": "https://seicing.com/res/aom/cam/18.png" },
+                { "title": "19.矮人铸造局", "title_eng": "Dwarven Forge", "path": "https://seicing.com/res/aom/cam/19.png" },
+                { "title": "20.巨锤重现", "title_eng": "Reclaiming the Hammer", "path": "https://seicing.com/res/aom/cam/20.png" },
+                { "title": "21.诸神黄昏", "title_eng": "Ragnarok", "path": "https://seicing.com/res/aom/cam/21.png" }
+            ]
+        },
+        {
+            "id": "golden_gift",
+            "name": "黄金礼物",
+            "name_eng": "The Golden Gift",
+            "levels": [
+                { "title": "1.兄弟争端", "title_eng": "Brothers' Feud", "path": "https://seicing.com/res/aom/cam/g1.png" },
+                { "title": "2.巨穴探索", "title_eng": "Giant's Cavern", "path": "https://seicing.com/res/aom/cam/g2.png" },
+                { "title": "3.夺回黄金", "title_eng": "Retrieving the Gold", "path": "https://seicing.com/res/aom/cam/g3.png" },
+                { "title": "4.再次合作", "title_eng": "Reunion", "path": "https://seicing.com/res/aom/cam/g4.png" }
+            ]
+        },
+        {
+            "id": "new_atlantis",
+            "name": "新亚特兰蒂斯",
+            "name_eng": "The New Atlantis",
+            "levels": [
+                { "title": "1.重建家园", "title_eng": "A New Home", "path": "https://seicing.com/res/aom/cam/n1.png" },
+                { "title": "2.泰坦觉醒", "title_eng": "Titan's Awakening", "path": "https://seicing.com/res/aom/cam/n2.png" },
+                { "title": "3.审判之日", "title_eng": "Day of Judgment", "path": "https://seicing.com/res/aom/cam/n3.png" },
+                { "title": "4.泰坦灭亡", "title_eng": "Fall of the Titans", "path": "https://seicing.com/res/aom/cam/n4.png" }
+            ]
+        }
+    ];
+
+    // =====================================================================
+    // 2. 页面初始化逻辑 (动态构建按钮与关卡网格)
+    // =====================================================================
+    function initCampaignPage() {
+        const filtersContainer = document.getElementById('filters');
+        const campaignContainer = document.getElementById('campaignContainer');
+
+        filtersContainer.innerHTML = '';
+        campaignContainer.innerHTML = '';
+
+        campaignsData.forEach((camp, index) => {
+            // A. 生成控制台按钮
+            const btn = document.createElement('button');
+            btn.className = `filterbtn ${index === 0 ? 'active' : ''}`;
+            btn.dataset.filter = camp.id;
+            btn.innerText = camp.name;
+            btn.onclick = () => switchCampaign(camp.id);
+            filtersContainer.appendChild(btn);
+
+            // B. 生成战役区块 (Section)
+            const section = document.createElement('div');
+            section.className = `campaign-section ${index === 0 ? 'active' : ''}`;
+            section.id = `camp-${camp.id}`;
+
+            // 标题区
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'campaign-section-title';
+            titleDiv.innerHTML = `${camp.name} <small>${camp.name_eng}</small>`;
+            section.appendChild(titleDiv);
+
+            // 关卡网格 (1行4个)
+            const grid = document.createElement('div');
+            grid.className = 'level-grid';
+
+            camp.levels.forEach(level => {
+                const card = document.createElement('div');
+                card.className = 'level-card';
+
+                // 图片上，文本下 (格式：中文名<br>英文名)
+                card.innerHTML = `
+                <div class="img-container">
+                    <img src="${level.path}" alt="${level.title}" onerror="this.style.opacity='0.2'">
+                </div>
+                <div class="card-caption">
+                    <span class="title-cn">${level.title}</span>
+                    <span class="title-en">${level.title_eng}</span>
+                </div>
+            `;
+                grid.appendChild(card);
+            });
+
+            section.appendChild(grid);
+            campaignContainer.appendChild(section);
+        });
+
+        // 支持 URL ?camp= 参数直接定位
+        const urlCamp = new URLSearchParams(window.location.search).get("camp");
+        if (urlCamp) {
+            switchCampaign(urlCamp);
+        }
+    }
+
+    // =====================================================================
+    // 3. 战役切换控制逻辑
+    // =====================================================================
+    function switchCampaign(campId) {
+        // 高亮对应按钮
+        document.querySelectorAll('#filters .filterbtn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.filter === campId);
+        });
+
+        // 显示对应战役表格
+        document.querySelectorAll('.campaign-section').forEach(sec => {
+            sec.classList.toggle('active', sec.id === `camp-${campId}`);
+        });
+
+        // 更新 URL 参数 (不刷新页面)
+        const url = new URL(window.location);
+        url.searchParams.set("camp", campId);
+        window.history.replaceState({}, "", url);
+    }
+
+    // 文档加载就绪后运行初始化
+    document.addEventListener('DOMContentLoaded', initCampaignPage);
+</script>
+
+</html>
