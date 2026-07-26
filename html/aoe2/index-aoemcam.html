@@ -331,12 +331,6 @@
             section.className = `campaign-section ${index === 0 ? 'active' : ''}`;
             section.id = `camp-${camp.id}`;
 
-            // 标题区
-            const titleDiv = document.createElement('div');
-            titleDiv.className = 'campaign-section-title';
-            titleDiv.innerHTML = `${camp.name}`;
-            section.appendChild(titleDiv);
-
             // 关卡网格 (1行4个)
             const grid = document.createElement('div');
             grid.className = 'level-grid';
