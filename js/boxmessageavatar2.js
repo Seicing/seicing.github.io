@@ -1,4 +1,4 @@
-// 定义 ID 前缀列表 (对应 HTML 中的 a, b, c ... u)
+// 定义 ID 前缀列表
 var listPrefix = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u'];
 
 function tipsg(targetTextId, targetButtonId, suffix) {
@@ -293,7 +293,7 @@ const avatarData = [
     }
 ];
 
-// 初始化生成结构
+// 初始化渲染页面
 function renderAvatarPage() {
     const menu = document.getElementById('avatar-year-menu');
     const content = document.getElementById('avatar-content');
@@ -302,22 +302,42 @@ function renderAvatarPage() {
     menu.innerHTML = '';
     content.innerHTML = '';
 
-    const rows = [['sm', 'ft', 'gn', 'mg', 'pr'], ['sg', 'mf', 'gg', 'mm', 'pg'], ['th', 'kn', 'dl', 'gb', 'ar']];
-    const names = [['鬼剑士男', '格斗家女', '神枪手男', '魔法师女', '圣职者男'], ['鬼剑士女', '格斗家男', '神枪手女', '魔法师男', '圣职者女'], ['暗夜使者', '守护者', '魔枪士', '枪剑士', '弓箭手']];
+    // 16职业配置 (4行 x 4列)
+    const rows = [
+        ['sm', 'ft', 'gn', 'mg'],
+        ['sg', 'mf', 'gg', 'mm'],
+        ['pr', 'th', 'kn', 'dl'],
+        ['pg', 'gb', 'ar', 'ik']
+    ];
+    const names = [
+        ['鬼剑士男', '格斗家女', '神枪手男', '魔法师女'],
+        ['鬼剑士女', '格斗家男', '神枪手女', '魔法师男'],
+        ['圣职者男', '暗夜使者', '守护者', '魔枪士'],
+        ['圣职者女', '枪剑士', '弓箭手', '帝国骑士']
+    ];
 
     function makeRows(path) {
         let h = '';
         rows.forEach((r, i) => {
+            // 图片行
             h += '<tr>';
-            r.forEach(x => h += `<td><div class="textce"><img data-mysrc="https://data.seicing.com/seicingdepot/3fatcatpool/avatar/${path}/${x}.gif"></div></td>`);
-            h += '</tr><tr class="avatbg">';
-            names[i].forEach(x => h += `<td><div class="textce"><span class="avat"><b>${x}</b></span></div></td>`);
+            r.forEach(x => {
+                h += `<td><div class="textce"><img data-mysrc="https://data.seicing.com/seicingdepot/3fatcatpool/avatar/${path}/${x}.gif"></div></td>`;
+            });
+            h += '</tr>';
+
+            // 名称行
+            h += '<tr class="avatbg">';
+            names[i].forEach(name => {
+                h += `<td><div class="textce"><b><span class="avat">${name}</span></b></div></td>`;
+            });
             h += '</tr>';
         });
         return h;
     }
 
     avatarData.forEach((y, i) => {
+        // 生成年份/分类按钮
         let a = document.createElement('a');
         a.id = y.id + 'button0';
         a.href = 'javascript:void(0);';
@@ -329,24 +349,36 @@ function renderAvatarPage() {
         menu.appendChild(a);
         menu.appendChild(document.createTextNode(' '));
 
+        // 生成套装面板
         let div = document.createElement('div');
         div.id = y.id + 'text0';
         div.style.display = i === 0 ? 'block' : 'none';
         div.style.textAlign = 'center';
 
         y.sets.forEach(s => {
-            div.innerHTML += `<table id="customers" width="100%"><tr class="avatbg"><td colspan="5"><span style="font-size:18px"><span class="avat"><b>${s.title}</b></span></span></td></tr>${makeRows(s.path)}</table><br><br>`;
+            div.innerHTML += `
+    <table id="customers" width="100%">
+        <tr class="avatbg">
+            <td colspan="4">
+                <span style="font-size:18px">
+                    <span class="avat"><b>${s.title}</b></span>
+                </span>
+            </td>
+        </tr>
+        ${makeRows(s.path)}
+    </table>
+    <br><br>`;
         });
         content.appendChild(div);
     });
 
-    // 初始化显示第一项并触发图片加载
+    // 默认展示并加载第1项图片
     if (avatarData.length > 0) {
         tipsg(avatarData[0].id + 'text0', avatarData[0].id + 'button0', '0');
     }
 }
 
-// 确保 DOM 加载完毕后再渲染
+// 确保 DOM 加载完毕后执行渲染
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderAvatarPage);
 } else {
