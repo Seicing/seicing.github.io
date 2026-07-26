@@ -9,6 +9,213 @@
     <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>帝国时代IV 战役</title>
+<style>
+    #filters.campaign-filter-panel {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    .filterbtn {
+        background-color: transparent;
+        color: var(--btn-inactive-color);
+        border: var(--border-table);
+        padding: 6px 14px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: inherit;
+        transition: all 0.2s ease;
+    }
+
+    .filterbtn:hover {
+        color: var(--text-title);
+        background-color: var(--bg-body-color);
+    }
+
+    .filterbtn.active {
+        background-color: var(--btn-active-color) !important;
+        color: #ffffff !important;
+        border-color: var(--btn-active-color) !important;
+    }
+
+    .campaign-section {
+        display: none;
+    }
+
+    .campaign-section.active {
+        display: block;
+    }
+
+    .campaign-section-title {
+        color: var(--text-title);
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: var(--hr-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .campaign-section-title small {
+        font-size: 0.6em;
+        color: var(--text-sidebar-a);
+    }
+
+    /* 保证始终一行4个 (1章节+3地图 或 4地图) */
+    .level-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .level-card {
+        background-color: var(--bg-table-highlight);
+        border: var(--border-table);
+        border-radius: 2px;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .level-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 地图卡片图片 */
+    .level-card .img-container {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-color: var(--bg-body-color);
+        overflow: hidden;
+        border-bottom: var(--border-table);
+    }
+
+    .level-card .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* 标题与超链接 */
+    .level-card .card-caption {
+        color: var(--text-primary);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4px 2px;
+    }
+
+    .level-card .card-caption a.title-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .level-card .card-caption a.title-link:hover .title-cn {
+        color: var(--btn-active-color);
+        text-decoration: underline;
+    }
+
+    .title-cn {
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--text-title);
+        display: block;
+        word-break: break-all;
+    }
+
+    .title-en {
+        font-size: 10px;
+        color: var(--text-sidebar-a);
+        display: block;
+        word-break: break-all;
+    }
+
+    .year-tag {
+        margin-right: 3px;
+        color: var(--btn-active-color);
+    }
+
+    /* 章节卡片专用样式 */
+    .level-card.chapter-card {
+        background-color: var(--bg-body-color);
+        border: var(--border-table);
+        justify-content: center;
+        align-items: center;
+        padding: 6px 2px;
+    }
+
+    .chapter-card .chapter-icon-wrap {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+
+    .chapter-card .chapter-icon-wrap img {
+        width: 50px;
+        height: auto;
+        max-height: 50px;
+        object-fit: contain;
+    }
+
+    .chapter-card .chapter-name {
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--text-title);
+    }
+
+    /* 移动端手机模式：不换行，保持一行4列，等比例缩小尺寸 */
+    @media only screen and (max-width: 767px) {
+        .level-grid {
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .chapter-card .chapter-icon-wrap {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 2px;
+        }
+
+        .chapter-card .chapter-icon-wrap img {
+            width: 28px;
+            max-height: 28px;
+        }
+
+        .chapter-card .chapter-name {
+            font-size: 9px;
+        }
+
+        .title-cn {
+            font-size: 9px;
+            line-height: 1.1;
+        }
+
+        .title-en {
+            font-size: 8px;
+            line-height: 1.1;
+            transform: scale(0.9);
+        }
+
+        .level-card .card-caption {
+            padding: 2px 1px;
+        }
+    }
+</style>
 <link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
 <script type="text/javascript">
@@ -55,256 +262,8 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="44"></div>
-<table id="customers" style="width:100%;">
-    <tr>
-        <td rowspan="4" class="bcF5F8FA">诺曼人</td>
-        <td class="textle">
-            征服
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/黑斯廷斯战役.html" class="special-link">1066 黑斯廷斯战役</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/北上约克.html" class="special-link">1069 北上约克</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            占领
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/巴约陷落.html" class="special-link">1105 巴约陷落</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/坦什布赖战役.html" class="special-link">1106 坦什布赖战役</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/布雷穆勒战役.html" class="special-link">1119 布雷穆勒战役</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            无政府状态
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/第一次林肯战役.html" class="special-link">1141 第一次林肯战役</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/瓦灵福德围城战.html" class="special-link">1153 瓦灵福德围城战</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            叛乱
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/多佛围城战.html" class="special-link">1216 多佛围城战 </a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/罗彻斯特围城战.html" class="special-link">1215 罗彻斯特围城战 </a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/第二次林肯战役.html" class="special-link">1217 第二次林肯战役 </a><br>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="4" class="bcF5F8FA">莫斯科的崛起</td>
-        <td class="textle">
-            要塞到城市
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/重建莫斯科.html" class="special-link">1238 重建莫斯科</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            城市到国家
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/进贡.html" class="special-link">1375 进贡</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/库里科沃战役.html" class="special-link">1380 库里科沃战役</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            国家到帝国
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/抵抗金帐汗国.html" class="special-link">1382 抵抗金帐汗国</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/诺夫哥罗德共和国之殇.html" class="special-link">1478 诺夫哥罗德共和国之殇</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/乌格拉河对峙战.html" class="special-link">1480 乌格拉河对峙战</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            帝国到超级大国
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/莫斯科对立陶宛.html" class="special-link">1515 莫斯科对立陶宛 </a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/喀山围城战.html" class="special-link">1552 喀山围城战 </a><br>
-        </td>
-    </tr>
-
-
-
-
-
-
-    <tr>
-        <td rowspan="4" class="bcF5F8FA">百年战争</td>
-        <td class="textle">
-            骑士精神
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/三十人之战.html" class="special-link">1351 三十人之战</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/巴黎围城战.html" class="special-link">1360 巴黎围城战</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            纷扰
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/动荡法兰西.html" class="special-link">1364 动荡法兰西</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/彭瓦扬战役.html" class="special-link">1370 彭瓦扬战役</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            背水一战
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/奥尔良围城战.html" class="special-link">1429 奥尔良围城战</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/帕泰战役.html" class="special-link">1429 帕泰战役</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            位居上风
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/夺回诺曼底.html" class="special-link">1448 夺回诺曼底 </a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/福尔米尼战役.html" class="special-link">1450 福尔米尼战役 </a><br>
-        </td>
-    </tr>
-
-
-
-
-    <tr>
-        <td rowspan="3" class="bcF5F8FA">蒙古帝国</td>
-        <td class="textle">
-            震惊与敬畏
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/迦勒迦河战役.html" class="special-link">1223 迦勒迦河战役</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/长城.html" class="special-link">1213 长城</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/中都战役.html" class="special-link">1215 中都战役</a><br>
-
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            征服
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/基辅围城战.html" class="special-link">1240 基辅围城战</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/里格尼茨战役.html" class="special-link">1241 里格尼茨战役</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/蒂萨河战役.html" class="special-link">1241 蒂萨河战役</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            统治
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/大宋咽喉.html" class="special-link">1267 大宋咽喉</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/鹿门山之障.html" class="special-link">1268 鹿门山之障</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/襄阳城破.html" class="special-link">1273 襄阳城破</a><br>
-        </td>
-    </tr>
-
-
-
-
-
-
-    <tr>
-        <td rowspan="4" class="bcF5F8FA">苏丹的崛起</td>
-        <td class="textle">
-            入侵
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/泰尔保卫战.html" class="special-link">1111 泰尔保卫战</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            萨拉丁
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/进入埃及.html" class="special-link">1163 进入埃及</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/红海掠夺者.html" class="special-link">1183 红海掠夺者</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/海丁之角.html" class="special-link">1187 海丁之角</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            从奴隶到苏丹
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/曼苏拉之战.html" class="special-link">1250 曼苏拉之战</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/艾因贾鲁特战役.html" class="special-link">1260 艾因贾鲁特战役</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/阿克里攻城战.html" class="special-link">1291 阿克里攻城战</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            地中海海盗
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/入侵塞浦路斯.html" class="special-link">1426 入侵塞浦路斯</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="1" class="bcF5F8FA">历史战役</td>
-        <td class="textle">
-            十字与玫瑰骑士
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/蒙吉萨.html" class="special-link">1177 蒙吉萨</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/萨法德.html" class="special-link">1266 萨法德</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/阿金库尔.html" class="special-link">1415 阿金库尔</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/陶顿.html" class="special-link">1461 陶顿</a><br>
-        </td>
-    </tr>
-
-
-
-    <tr>
-        <td rowspan="3" class="bcF5F8FA">岳飞的忠义传承</td>
-        <td class="textle">
-            星火希冀
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/逃往应天府.html" class="special-link">1127 逃往应天府</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/建康保卫战.html" class="special-link">1129 建康保卫战</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/黄天荡之战.html" class="special-link">1130 黄天荡之战</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            力挽狂澜
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/南方叛军.html" class="special-link">1131 南方叛军</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/德安围城战.html" class="special-link">1132 德安围城战</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/北伐.html" class="special-link">1134 北伐</a><br>
-        </td>
-    </tr>
-    <tr>
-        <td class="textle">
-            碧血忠魂
-        </td>
-        <td class="textle">
-            <a href="https://seicing.com/html/aoe2/cam4/中原.html" class="special-link">1135 中原</a><br>
-            <a href="https://seicing.com/html/aoe2/cam4/郾城之战.html" class="special-link">1140 郾城之战</a><br>
-        </td>
-    </tr>
-
-
-
-</table>
-<br>
-</div>
+<div id="filters" class="campaign-filter-panel"></div>
+<div id="campaignContainer"></div></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -323,5 +282,175 @@
     </div>
 </body>
 
+<script language="javascript" src="https://seicing.com/js/tech.js" onload="aoetechPoeRush()"></script>
+<script>
+    // 支持直接在 title 里写 "1066 黑斯廷斯战役"，或分开写 "year": "1066", "title": "黑斯廷斯战役"
+    // 支持 chapter: "征服" 字段
+    const campaignsData = [
+        {
+            "id": "1",
+            "name": "诺曼人",
+            "levels": [
+                { "year": "1066", "title": "黑斯廷斯战役", "title_eng": "Battle of Hastings", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/黑斯廷斯战役.png", "chapter": "征服" },
+                { "year": "1069", "title": "北上约克", "title_eng": "North to York", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/北上约克.png", "chapter": "征服" },
+                { "year": "1105", "title": "巴约陷落", "title_eng": "Fall of Bayeux", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/巴约陷落.png", "chapter": "占领" },
+                { "year": "1106", "title": "坦什布赖战役", "title_eng": "Battle of Tinchebray", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/坦什布赖战役.png", "chapter": "占领" },
+                { "year": "1119", "title": "布雷穆勒战役", "title_eng": "Battle of Brémule", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/布雷穆勒战役.png", "chapter": "占领" },
+                { "year": "1141", "title": "第一次林肯战役", "title_eng": "First Battle of Lincoln", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/第一次林肯战役.png", "chapter": "无政府状态" },
+                { "year": "1153", "title": "瓦灵福德围城战", "title_eng": "Siege of Wallingford", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/瓦灵福德围城战.png", "chapter": "无政府状态" },
+                { "year": "1215", "title": "罗彻斯特围城战", "title_eng": "Siege of Rochester", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/罗彻斯特围城战.png", "chapter": "叛乱" },
+                { "year": "1216", "title": "多佛围城战", "title_eng": "Siege of Dover", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/多佛围城战.png", "chapter": "叛乱" },
+                { "year": "1217", "title": "第二次林肯战役", "title_eng": "Second Battle of Lincoln", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/eng/第二次林肯战役.png", "chapter": "叛乱" },
+            ]
+        }
+    ];
+
+    // =====================================================================
+    // 单张地图卡片 DOM 生成函数
+    // =====================================================================
+    function createMapCard(level) {
+        let year = level.year || "";
+        let cleanTitle = level.title || "";
+
+        // 如果没有单独写 year，尝试从 title 自动提取开头的数字年份（如 "1066 黑斯廷斯战役"）
+        if (!year) {
+            const match = cleanTitle.match(/^(\d{3,4})\s*(.*)/);
+            if (match) {
+                year = match[1];
+                cleanTitle = match[2];
+            }
+        }
+
+        // 超链接去除年份数字，指向纯标题 HTML
+        const linkUrl = `https://seicing.com/html/aoe2/cam4/${cleanTitle}.html`;
+        const displayTitle = year ? `<span class="year-tag">${year}</span>${cleanTitle}` : cleanTitle;
+        const displayEng = level.title_eng || "";
+
+        const card = document.createElement('div');
+        card.className = 'level-card map-card';
+        card.innerHTML = `
+            <div class="img-container">
+                <a href="${linkUrl}">
+                    <img src="${level.path}" alt="${cleanTitle}" onerror="this.style.opacity='0.2'">
+                </a>
+            </div>
+            <div class="card-caption">
+                <a href="${linkUrl}" class="title-link">
+                    <span class="title-cn">${displayTitle}</span>
+                    <span class="title-en">${displayEng}</span>
+                </a>
+            </div>
+        `;
+        return card;
+    }
+
+    // =====================================================================
+    // 页面构建逻辑 (支持按章节分行：1章节+3地图 或 4地图)
+    // =====================================================================
+    function initCampaignPage() {
+        const filtersContainer = document.getElementById('filters');
+        const campaignContainer = document.getElementById('campaignContainer');
+
+        filtersContainer.innerHTML = '';
+        campaignContainer.innerHTML = '';
+
+        campaignsData.forEach((camp, index) => {
+            // A. 生成控制台按钮
+            const btn = document.createElement('button');
+            btn.className = `filterbtn ${index === 0 ? 'active' : ''}`;
+            btn.dataset.filter = camp.id;
+            btn.innerText = camp.name;
+            btn.onclick = () => switchCampaign(camp.id);
+            filtersContainer.appendChild(btn);
+
+            // B. 生成战役区块 (Section)
+            const section = document.createElement('div');
+            section.className = `campaign-section ${index === 0 ? 'active' : ''}`;
+            section.id = `camp-${camp.id}`;
+
+            // 标题区
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'campaign-section-title';
+            titleDiv.innerHTML = `${camp.name}`;
+            section.appendChild(titleDiv);
+
+            // C. 动态按行构建关卡网格 (处理章节与地图排版)
+            const levels = camp.levels;
+            let i = 0;
+
+            while (i < levels.length) {
+                const currentLevel = levels[i];
+                const hasChapter = !!currentLevel.chapter;
+
+                const rowGrid = document.createElement('div');
+                rowGrid.className = 'level-grid';
+
+                if (hasChapter) {
+                    const chapterName = currentLevel.chapter;
+
+                    // 1. 生成左侧章节卡片
+                    const chapterCard = document.createElement('div');
+                    chapterCard.className = 'level-card chapter-card';
+                    chapterCard.innerHTML = `
+                        <div class="chapter-icon-wrap">
+                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/chapter/${chapterName}.png" alt="${chapterName}" onerror="this.style.display='none'">
+                        </div>
+                        <div class="chapter-name">${chapterName}</div>
+                    `;
+                    rowGrid.appendChild(chapterCard);
+
+                    // 2. 填入最多 3 张同章节（或接续）的地图
+                    let count = 0;
+                    while (i < levels.length && count < 3) {
+                        // 如果遇到了新章节名，断开换下一行
+                        if (count > 0 && levels[i].chapter && levels[i].chapter !== chapterName) {
+                            break;
+                        }
+                        rowGrid.appendChild(createMapCard(levels[i]));
+                        i++;
+                        count++;
+                    }
+                } else {
+                    // 没有章节：直接填入最多 4 张地图
+                    let count = 0;
+                    while (i < levels.length && count < 4 && !levels[i].chapter) {
+                        rowGrid.appendChild(createMapCard(levels[i]));
+                        i++;
+                        count++;
+                    }
+                }
+
+                section.appendChild(rowGrid);
+            }
+
+            campaignContainer.appendChild(section);
+        });
+
+        // 支持 URL ?camp= 参数定位
+        const urlCamp = new URLSearchParams(window.location.search).get("camp");
+        if (urlCamp) {
+            switchCampaign(urlCamp);
+        }
+    }
+
+    // =====================================================================
+    // 战役切换控制逻辑
+    // =====================================================================
+    function switchCampaign(campId) {
+        document.querySelectorAll('#filters .filterbtn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.filter === campId);
+        });
+
+        document.querySelectorAll('.campaign-section').forEach(sec => {
+            sec.classList.toggle('active', sec.id === `camp-${campId}`);
+        });
+
+        const url = new URL(window.location);
+        url.searchParams.set("camp", campId);
+        window.history.replaceState({}, "", url);
+    }
+
+    document.addEventListener('DOMContentLoaded', initCampaignPage);
+</script>
 
 </html>
