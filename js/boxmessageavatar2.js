@@ -1,5 +1,5 @@
 // 定义 ID 前缀列表
-var listPrefix = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u'];
+var listPrefix = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't', 'u', 'n', 'o'];
 
 function tipsg(targetTextId, targetButtonId, suffix) {
     // 1. 重置：隐藏所有内容，变灰所有按钮
@@ -36,14 +36,46 @@ function tipsg(targetTextId, targetButtonId, suffix) {
         });
 }
 
-// ===== 自动头像页面生成数据源 =====
+// ===== 16 职业通用配置 (4列) =====
+const avatarRows = [
+    ['sm', 'ft', 'gn', 'mg'],
+    ['sg', 'mf', 'gg', 'mm'],
+    ['pr', 'th', 'kn', 'dl'],
+    ['pg', 'gb', 'ar', 'ik']
+];
+const avatarNames = [
+    ['鬼剑士男', '格斗家女', '神枪手男', '魔法师女'],
+    ['鬼剑士女', '格斗家男', '神枪手女', '魔法师男'],
+    ['圣职者男', '暗夜使者', '守护者', '魔枪士'],
+    ['圣职者女', '枪剑士', '弓箭手', '帝国骑士']
+];
+
+// 通用表格内容生成器
+function buildAvatarTableRows(path, isLazy = true) {
+    let h = '';
+    avatarRows.forEach((r, i) => {
+        h += '<tr>';
+        r.forEach(x => {
+            const imgAttr = isLazy
+                ? `data-mysrc="https://data.seicing.com/seicingdepot/3fatcatpool/avatar/${path}/${x}.gif"`
+                : `src="https://data.seicing.com/seicingdepot/3fatcatpool/avatar/${path}/${x}.gif"`;
+            h += `<td><div class="textce"><img ${imgAttr}></div></td>`;
+        });
+        h += '</tr><tr class="avatbg">';
+        avatarNames[i].forEach(name => {
+            h += `<td><div class="textce"><b><span class="avat">${name}</span></b></div></td>`;
+        });
+        h += '</tr>';
+    });
+    return h;
+}
+
+// ===== 数据源：礼包装扮集 =====
 const avatarData = [
     {
         "id": "a",
         "year": "2008年",
-        "sets": [
-            { "title": "国庆绝版套装", "path": "sunseeker" }
-        ]
+        "sets": [{ "title": "国庆绝版套装", "path": "sunseeker" }]
     },
     {
         "id": "b",
@@ -293,7 +325,31 @@ const avatarData = [
     }
 ];
 
-// 初始化渲染页面
+// ===== 数据源：天空装扮集 =====
+const rareData = [
+    { "title": "传奇之稀有装扮", "path": "rare/rare1" },
+    { "title": "冥域天空", "path": "rare/rare2" },
+    { "title": "天纵云霄", "path": "rare/rare3" },
+    { "title": "苍穹之翼", "path": "rare/rare4" },
+    { "title": "战灵天舞", "path": "rare/rare5" },
+    { "title": "冥光天羽", "path": "rare/rare6" },
+    { "title": "炽翎天痕", "path": "rare/rare7" },
+    { "title": "天光云影", "path": "rare/rare8" },
+    { "title": "极天幻翼", "path": "rare/rare9" },
+    { "title": "权倾天下", "path": "rare/rare10" },
+    { "title": "九天霜华", "path": "rare/rare11" },
+    { "title": "天羽夜华", "path": "rare/rare12" },
+    { "title": "鸿宇天绫", "path": "rare/rare13" },
+    { "title": "天神御临", "path": "rare/rare14" },
+    { "title": "神兽化灵", "path": "rare/rares1" },
+    { "title": "光翼天使", "path": "rare/rares2" },
+    { "title": "机甲", "path": "rare/rares3" },
+    { "title": "山海御灵", "path": "rare/rares4" }
+];
+
+// ===== 页面渲染逻辑 =====
+
+// 1. 渲染礼包装扮集（带年份切换菜单）
 function renderAvatarPage() {
     const menu = document.getElementById('avatar-year-menu');
     const content = document.getElementById('avatar-content');
@@ -302,42 +358,7 @@ function renderAvatarPage() {
     menu.innerHTML = '';
     content.innerHTML = '';
 
-    // 16职业配置 (4行 x 4列)
-    const rows = [
-        ['sm', 'ft', 'gn', 'mg'],
-        ['sg', 'mf', 'gg', 'mm'],
-        ['pr', 'th', 'kn', 'dl'],
-        ['pg', 'gb', 'ar', 'ik']
-    ];
-    const names = [
-        ['鬼剑士男', '格斗家女', '神枪手男', '魔法师女'],
-        ['鬼剑士女', '格斗家男', '神枪手女', '魔法师男'],
-        ['圣职者男', '暗夜使者', '守护者', '魔枪士'],
-        ['圣职者女', '枪剑士', '弓箭手', '帝国骑士']
-    ];
-
-    function makeRows(path) {
-        let h = '';
-        rows.forEach((r, i) => {
-            // 图片行
-            h += '<tr>';
-            r.forEach(x => {
-                h += `<td><div class="textce"><img data-mysrc="https://data.seicing.com/seicingdepot/3fatcatpool/avatar/${path}/${x}.gif"></div></td>`;
-            });
-            h += '</tr>';
-
-            // 名称行
-            h += '<tr class="avatbg">';
-            names[i].forEach(name => {
-                h += `<td><div class="textce"><b><span class="avat">${name}</span></b></div></td>`;
-            });
-            h += '</tr>';
-        });
-        return h;
-    }
-
     avatarData.forEach((y, i) => {
-        // 生成年份/分类按钮
         let a = document.createElement('a');
         a.id = y.id + 'button0';
         a.href = 'javascript:void(0);';
@@ -349,7 +370,6 @@ function renderAvatarPage() {
         menu.appendChild(a);
         menu.appendChild(document.createTextNode(' '));
 
-        // 生成套装面板
         let div = document.createElement('div');
         div.id = y.id + 'text0';
         div.style.display = i === 0 ? 'block' : 'none';
@@ -365,22 +385,50 @@ function renderAvatarPage() {
                 </span>
             </td>
         </tr>
-        ${makeRows(s.path)}
+        ${buildAvatarTableRows(s.path, true)}
     </table>
     <br><br>`;
         });
         content.appendChild(div);
     });
 
-    // 默认展示并加载第1项图片
     if (avatarData.length > 0) {
         tipsg(avatarData[0].id + 'text0', avatarData[0].id + 'button0', '0');
     }
 }
 
-// 确保 DOM 加载完毕后执行渲染
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderAvatarPage);
-} else {
+// 2. 渲染天空装扮集（无年份切换，按顺序平铺）
+function renderRarePage() {
+    const rareContainer = document.getElementById('avatar-rare-content');
+    if (!rareContainer) return;
+
+    let html = '';
+    rareData.forEach(s => {
+        html += `
+    <table id="customers" width="100%">
+        <tr class="avatbg">
+            <td colspan="4">
+                <span style="font-size:18px">
+                    <span class="avat"><b>${s.title}</b></span>
+                </span>
+            </td>
+        </tr>
+        ${buildAvatarTableRows(s.path, false)}
+    </table>
+    <br><br>`;
+    });
+
+    rareContainer.innerHTML = html;
+}
+
+// 统一入口初始化
+function initAvatarSystem() {
     renderAvatarPage();
+    renderRarePage();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAvatarSystem);
+} else {
+    initAvatarSystem();
 }
