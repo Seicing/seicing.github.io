@@ -510,42 +510,6 @@
         <a id="rrr"></a><b><span>专属事件</span></b>
     </H1>
     <hr class="hrsty">
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>巧夺天工的龟船</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_LEADER_YI_SUN_SIN]<br>【否】
-                [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES]
-                CivilizationType=CIVILIZATION_JOSEON<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,DyingUnitType,UNIT_TURTLE_SHIP,
-                GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Self,Hash,DyingUnitType,UNIT_TURTLE_SHIP_2,
-                GOSSIP_UNIT_COMBAT_DEATH03=Hash,OtherPlayer,Self,Hash,DyingUnitType,UNIT_TURTLE_SHIP_3,
-                Amount=1<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_YI_SUN_SIN]
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">
-                敌方的龟船沉入波涛之际，李舜臣不禁惊叹其设计之精妙。能够一边机动发炮，同时巧妙抵御敌方炮火。造出这等战船的，必是某位奇才。或许{1_civilization_adj}工匠也能研制出对策。
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">与工匠们一同绘制图纸。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">我方舰队的实力已绰绰有余。</td>
-        </tr>
-        <tr>
-            <td>所有定居点来自港湾的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +1</td>
-            <td>所有定居点来自港湾的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
-        </tr>
-    </table>
-    <br>
 
     <table id="aoe4de" class="aoe4posbo">
         <tr>
@@ -555,11 +519,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">[REQ_STORY_LEADER_YI_SUN_SIN]<br>[REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES]
-                CivilizationType=CIVILIZATION_JOSEON<br>[REQUIREMENT_PLAYER_IS_AT_PEACE_WITH_ALL_MAJORS]<br>[REQUIREMENT_COLLECTION_COUNT_ATLEAST]
-                Count=1, CollectionType=COLLECTION_PLAYER_CITIES,
-                RequirementSetId=SUBREQSET_10144A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_YI_SUN_SIN]
+            <td colspan="5">
+                扮演李舜臣<br>
+                拥有特色城区书院<br>
+                拥有华城
             </td>
         </tr>
         <tr>
@@ -575,10 +538,14 @@
             <td style="width: 25.3%;">游人往来，可振兴经济。</td>
         </tr>
         <tr>
-            <td>所有定居点专家 +1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，但所有定居点专家 -1 <img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物</td>
-            <td>所有定居点专家 +1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，但所有定居点专家 -1 <img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币</td>
+            <td>
+                专家 +1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值<br>
+                专家 -1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物
+            </td>
+            <td>
+                专家 +1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>
+                专家 -1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
+            </td>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +早期少量</td>
         </tr>
     </table>
@@ -592,14 +559,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_GORYEO_JIKJI, Amount=2<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_DIPLOMACY_ACTION_STARTED01,
-                GOSSIP_DIPLOMACY_ACTION_STARTED01=Hash,OtherPlayer,Other,Hash,DiplomacyActionType,DIPLOMACY_ACTION_CULTURAL_EXCHANGE,
-                DuplicateCount=6<br>[REQUIREMENT_COLLECTION_ANY_MET] CollectionType=COLLECTION_PLAYER_CAPITAL_CITY,
-                RequirementSetId=SUBREQSET_11184A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES]
-                CivilizationType=CIVILIZATION_JOSEON
+            <td colspan="3">
+                拥有2个NARRATIVE_TAG_GORYEO_JIKJI标签<br>
+                至少进行过6次文化交流外交努力<br>
+                位于和平状态<br>
+                玩家首都有一个博物馆<br>
             </td>
         </tr>
         <tr>
@@ -613,8 +577,11 @@
             <td style="width: 42%;">专注于保存我们手中现存之物。</td>
         </tr>
         <tr>
-            <td>任务：派遣探索者前往他国定居点研究文物<br>[11185B_NARRATIVE_MODIFIER] Amount=1, GreatWork=GREATWORK_ARTIFACT_JIKJI</td>
-            <td>所有定居点来自寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>
+                任务：派遣探索者前往他国定居点研究文物<br>
+                获得文物<img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/巨作.webp" width="15px">“直指”<br>
+            </td>
+            <td>寺庙的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
         </tr>
     </table>
     <br>
@@ -627,10 +594,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_CONSTRUCT_BUILDING,
-                GOSSIP_CONSTRUCT_BUILDING=Hash,ConstructibleType,WONDER_HWASEONG<br>已研发市政<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+            <td colspan="5">
+                建造华城<br>
+                曾扮演高丽<br>
             </td>
         </tr>
         <tr>
@@ -660,10 +626,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>【否】 [REQUIREMENT_PLAYER_HAS_UNIQUE_QUARTER]
-                UniqueQuarterType=QUARTER_SEOWON<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CAPITAL_CITY, RequirementSetId=SUBREQSET_11197A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+            <td colspan="5">
+                玩家没有独特城区书院<br>
+                首都位于不满状态<br>
+                已经过10个回合
             </td>
         </tr>
         <tr>
@@ -694,9 +660,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_11198A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置剧情]</b></span><br>在事件 <b>士林学者</b> 中选择：<b>将他们肃清！</b></td>
+            <td colspan="3">
+                在非城市建造独特城区书院<br>
+                “士林学者”事件中选择选项2“将他们肃清！”<br>
+            </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
@@ -709,10 +676,14 @@
             <td style="width: 42%;">莫理会那些士林——他们已不足为患。</td>
         </tr>
         <tr>
-            <td>特定地块额外产出：+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值，但书院特色城区特定地块额外产出：-2 <img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值</td>
-            <td>所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1，但城市所有定居点<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 -1</td>
+            <td>
+                书院特色城区 +4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值<br>
+                书院特色城区 -2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+            </td>
+            <td>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1<br>
+                城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 -1
+            </td>
         </tr>
     </table>
     <br>
@@ -725,9 +696,9 @@
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="5">
-                近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>拥有2座军事学院<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_UNIT_TYPE]
-                Amount=2, UnitTag=UNIT_CLASS_BYEONGSA<br>[REQUIREMENT_PLAYER_IS_AT_PEACE_WITH_ALL_MAJORS]<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+                拥有2座军事学院<br>
+                拥有2个壮勇营<br>
+                位于和平状态<br>
             </td>
         </tr>
         <tr>
@@ -745,7 +716,7 @@
         <tr>
             <td>步兵单位激活谨慎能力(防御时+3战斗力；进攻时-2战斗力)</td>
             <td>骑兵单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)</td>
-            <td>所有定居点来自军事学院的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
+            <td>军事学院的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1</td>
         </tr>
     </table>
     <br>
@@ -757,12 +728,8 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,GOSSIP_UNIT_COMBAT_DEATH02,GOSSIP_UNIT_COMBAT_DEATH03,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_TURTLE_SHIP,Hash,DomainType,DOMAIN_SEA,
-                GOSSIP_UNIT_COMBAT_DEATH02=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_TURTLE_SHIP_2,Hash,DomainType,DOMAIN_SEA,
-                GOSSIP_UNIT_COMBAT_DEATH03=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_TURTLE_SHIP_3,Hash,DomainType,DOMAIN_SEA,
-                Amount=1<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+            <td colspan="5">
+                使用龟船击败敌人<br>
             </td>
         </tr>
         <tr>
@@ -775,17 +742,21 @@
             <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
             <td style="width: 25.3%;">让我们最英勇的水手驾龟船出征。</td>
             <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
-            <td style="width: 25.3%;">在李舜臣的统御下，这支舰队将再无敌手。</td>
+            <td style="width: 25.3%;">在李舜臣的统御下，这支舰队将再无敌手。(仅李舜臣可选)</td>
         </tr>
         <tr>
-            <td>所有定居点训练单位+35% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用、建造/训练+35% <img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp'
-                    width='15px'>生产力效用龟船，但所有新生产的龟船初始受到50点伤害<br>[11200B_NARRATIVE_MODIFIER3] Amount=50</td>
-            <td>龟船激活坚决能力(+2战斗力)，但龟船维护费用+50%<br>建造/训练+-50% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用
+            <td>
+                制造龟船+35%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用<br>
+                购买龟船+35%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币效用<br>
+                所有新生产的龟船初始受到50点伤害<br>
             </td>
-            <td>拥有一名有2次晋升和4艘龟船的舰队指挥官<br>首都[11200D_NARRATIVE_MODIFIER] CommanderType=UNIT_FLEET_COMMANDER,
-                UnitTags=UNIT_CLASS_TURTLE_SHIP,UNIT_CLASS_TURTLE_SHIP,UNIT_CLASS_TURTLE_SHIP,UNIT_CLASS_TURTLE_SHIP,
-                Levels=2</td>
+            <td>
+                龟船激活坚决能力(+2战斗力)<br>
+                龟船维护费用 +50%<br>
+            </td>
+            <td>
+                获得1个有2次晋升和4艘龟船的舰队指挥官
+            </td>
         </tr>
     </table>
     <br>
@@ -799,9 +770,7 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_JOSEON_SAMGANG, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+                已研发市政三纲
             </td>
         </tr>
         <tr>
@@ -830,11 +799,9 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>已研发市政TRADITION_GWAGEO<br>[REQUIREMENT_COLLECTION_COUNT_ATLEAST]
-                Count=3, CollectionType=COLLECTION_PLAYER_CITIES,
-                RequirementSetId=SUBREQSET_11203A_NARRATIVE_CITIES<br>[REQUIREMENT_COLLECTION_COUNT_ATLEAST] Count=5,
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_11203A_NARRATIVE_TOWNS<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+                启用传统朝鲜科举II<br>
+                至少有3座城市建造了儒家学院<br>
+                至少有3座城镇建造了儒家学院<br>
             </td>
         </tr>
         <tr>
@@ -848,8 +815,8 @@
             <td style="width: 42%;">给予这位良人一个证明自己的机会。</td>
         </tr>
         <tr>
-            <td>城市所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +2</td>
-            <td>城镇所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +2</td>
+            <td>城镇<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
         </tr>
     </table>
     <br>
@@ -862,10 +829,8 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_TRADE_ROUTE_STARTED01, GOSSIP_TRADE_ROUTE_STARTED01=Hash,OtherPlayer,Other,
-                DuplicateCount=5<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+            <td colspan="3">
+                建立5条贸易路线<br>
             </td>
         </tr>
         <tr>
@@ -879,8 +844,8 @@
             <td style="width: 42%;">绝不能放任不管。</td>
         </tr>
         <tr>
-            <td>城镇所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
-            <td>城市所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +2</td>
+            <td>城镇<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
+            <td>城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +2</td>
         </tr>
     </table>
     <br>
@@ -893,10 +858,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>【否】
-                [REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES]
-                CivilizationType=CIVILIZATION_GORYEO, IsPastCivilization=True<br>已研发市政保护协会<br>拥有8座印刷坊<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+            <td colspan="3">
+                曾经没有扮演过高丽<br>
+                已研发市政保护协会<br>
+                拥有8座印刷坊
             </td>
         </tr>
         <tr>
@@ -910,8 +875,8 @@
             <td style="width: 42%;">这些资源另有更好的用途。</td>
         </tr>
         <tr>
-            <td>所有定居点来自印刷坊的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +1</td>
-            <td>所有定居点来自印刷坊的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +1</td>
+            <td>印刷坊的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +1</td>
+            <td>印刷坊的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 +1</td>
         </tr>
     </table>
     <br>
@@ -925,9 +890,8 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                古典时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_AQ_FOUNDATION, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+                古典时代事件<br>
+                已研发市政朝鲜根基<br>
             </td>
         </tr>
         <tr>
@@ -957,9 +921,8 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                探索时代事件<br>[REQ_STORY_CIVILIZATION_JOSEON]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_EX_HIERARCHY, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_JOSEON]
+                探索时代事件<br>
+                已研发市政朝鲜等级体系<br>
             </td>
         </tr>
         <tr>
@@ -978,35 +941,6 @@
         </tr>
     </table>
     <br>
-
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>黎刹医生在书院</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_TRADE_ROUTE_STARTED01,
-                GOSSIP_TRADE_ROUTE_STARTED01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_JOSEON<br><br><span
-                    style='color:#a8d08d'><b>[前置剧情]</b></span><br>在事件 <b>不安且好奇的好医生</b> 中选择：<b>人必须迈出前进的步伐。</b></td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">好医生黎刹离开银杏树的阴凉，步入书院庭院，被其间交融的学问气息与精神氛围所吸引。该从何处开始呢？</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">在宝塔下与学者们交谈论道。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">在祠堂祭拜先贤以表敬意。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +早期少量</td>
-            <td>所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物 +1</td>
-        </tr>
-    </table>
 </div>
                         </div>
                     </div>
