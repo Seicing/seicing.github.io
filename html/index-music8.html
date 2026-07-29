@@ -113,7 +113,6 @@
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <button id="toggleBtn">切换为滚动表格</button><br>
 
-
 <div id="civ7de" class="full-table">
     <table id="ciyaus" style="width: 784px;">
         <tr>
@@ -130,7 +129,7 @@
         </tr>
         <tr>
             <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/civ7/Egyptian.webp" width="40px"><br>
-                <a href="https://seicing.com/html/civ7/civ/埃及.html#ost" class="special-link">埃及</a>
+                <a onclick="player.switchMusicByName('埃及');" class="special-link">埃及</a>
             </td>
             <td>0:00 - 4:37</td>
             <td>原创</td>
@@ -1098,6 +1097,22 @@
             ]
         }
     });
+
+    // 在引入 skPlayer.min2.js 之后执行这段代码
+    skPlayer.prototype.switchMusicByName = function (name) {
+        var index = -1;
+        for (var i = 0; i < this.music.length; i++) {
+            if (this.music[i].name === name) {
+                index = i;
+                break;
+            }
+        }
+        if (index !== -1) {
+            this.switchMusic(index + 1);
+        } else {
+            console.error("未找到名为【" + name + "】的歌曲！");
+        }
+    };
 </script>
 <!--异步标签-->
 
