@@ -139,18 +139,18 @@
                 <a onclick="player.switchMusicByName('希腊');" class="special-link">希腊</a>
             </td>
             <td>
-                0:00 - 2:04 <br>
-                <a class="special-link" target="_blank" href="https://en.wikipedia.org/wiki/Delphic_Hymns">2:05 -
-                    3:22</a><br>
-                3:22 - 3:37 <br>
-                <a class="special-link" target="_blank" href="https://www.youtube.com/watch?v=3cZyv7UgOOY">3:37 -
-                    4:58</a><br>
+                <a onclick="player.switchMusicByName('希腊', '0:00');" class="special-link">0:00 - 2:04</a>
+                <a onclick="player.switchMusicByName('希腊', '2:05');" class="special-link">2:05 - 3:22</a>
+                <a onclick="player.switchMusicByName('希腊', '3:22');" class="special-link">3:22 - 3:37</a>
+                <a onclick="player.switchMusicByName('希腊', '3:37');" class="special-link">3:37 - 4:58</a>
             </td>
             <td>
+                原创 <br>
+                <a class="special-link" target="_blank" href="https://en.wikipedia.org/wiki/Delphic_Hymns">第一德尔斐赞歌(First
+                    Delphic Hymn)第1节</a><br>
                 原创<br>
-                第一德尔斐赞歌(First Delphic Hymn)第1节<br>
-                原创<br>
-                我如此哀叹(Katolophyromai)<br>
+                <a class="special-link" target="_blank" href="https://www.youtube.com/watch?v=3cZyv7UgOOY">
+                    我如此哀叹(Katolophyromai)</a><br>
             </td>
         </tr>
         <tr>
@@ -794,6 +794,65 @@
             this.switchMusic(index + 1);
         } else {
             console.error("未找到名为【" + name + "】的歌曲！");
+        }
+    };
+
+    // 时间格式转换助手：支持将 "3:22" 转换为 202 秒
+    function parseTimeToSeconds(time) {
+        if (typeof time === 'number') return time;
+        if (typeof time === 'string') {
+            var parts = time.split(':');
+            if (parts.length === 2) {
+                // "分:秒" 格式，例如 "3:22" -> 3 * 60 + 22 = 202
+                return parseInt(parts[0], 10) * 60 + parseFloat(parts[1]);
+            } else if (parts.length === 3) {
+                // "时:分:秒" 格式，例如 "1:02:15"
+                return parseInt(parts[0], 10) * 3600 + parseInt(parts[1], 10) * 60 + parseFloat(parts[2]);
+            }
+            return parseFloat(time) || 0;
+        }
+        return 0;
+    }
+
+    // 1. 切歌 + 可选时间跳转（支持 "3:22" 格式）
+    skPlayer.prototype.switchMusicByName = function (name, timeInput) {
+        if (!this.music) return;
+        var index = -1;
+        for (var i = 0; i < this.music.length; i++) {
+            if (this.music[i].name === name) {
+                index = i;
+                break;
+            }
+        }
+        if (index !== -1) {
+            this.switchMusic(index + 1);
+
+            if (timeInput !== undefined && timeInput !== null) {
+                var startTime = parseTimeToSeconds(timeInput);
+                var self = this;
+                var setTime = function () {
+                    self.audio.currentTime = startTime;
+                    self.audio.removeEventListener('canplay', setTime);
+                };
+                if (this.audio.readyState >= 2) {
+                    this.audio.currentTime = startTime;
+                } else {
+                    this.audio.addEventListener('canplay', setTime);
+                }
+            }
+        } else {
+            console.error("未找到名为【" + name + "】的歌曲！");
+        }
+    };
+
+    // 2. 不切歌，只跳转时间（支持 "3:22" 格式）
+    skPlayer.prototype.seekTime = function (timeInput) {
+        if (this.audio) {
+            var seconds = parseTimeToSeconds(timeInput);
+            this.audio.currentTime = seconds;
+            if (this.audio.paused) {
+                this.play();
+            }
         }
     };
 
