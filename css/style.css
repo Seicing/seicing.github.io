@@ -53,6 +53,7 @@
 
     /* --- 科技树专用变量 --- */
     --tech-active-shadow: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+    --tech-active-shadow2: drop-shadow(0 0 1px rgb(255, 208, 0));
     --tech-off-opacity: 0.3;
     --tech-off-filter: sepia(1) saturate(0) hue-rotate(-30deg);
 
@@ -1109,9 +1110,19 @@ div {
     opacity: 0.3;
 }
 
+#mobile-drawer-container .civ-active937 {
+    filter: var(--tech-active-shadow2);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
 #mobile-drawer-container .civ-active936 {
     opacity: 0.5;
     filter: grayscale(90%);
+}
+
+.theme-dark .civ-active937 {
+    filter: var(--tech-active-shadow2);
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 .theme-dark .civ-active936 {
