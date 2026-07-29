@@ -1129,11 +1129,8 @@ function AOE2_applyUnitCivDisable(funcName) {
     // 立即尝试一次
     tryApply();
 }
-
 /**
- * [已改造 v3] 为指定容器内的文明图标添加快速跳转链接
- * - 新增：会将当前页面的锚点(#hash)传递到新生成的链接中
- * - 新增：为生成的链接添加 'data-aoe2-civ-link' 标记，以便后续更新
+ * [已改造 v4] 为指定容器内的文明/领袖图标添加快速跳转链接
  * @param {HTMLElement} [container=document] 要操作的父容器，默认为整个文档
  */
 function AOE2_enableCivIconQuickJump(container) {
@@ -1146,14 +1143,16 @@ function AOE2_enableCivIconQuickJump(container) {
         const title = img.getAttribute("title");
         if (!title) return;
 
+        // 【关键逻辑】：自动检测元素自身或父级容器上的 data-type ("civ" 或 "leader")，默认为 "civ"
+        const type = img.dataset.type || img.closest('[data-type]')?.dataset.type || 'civ';
+
         const link = document.createElement("a");
 
-        // =====================================================
-        // === 【核心修改 1】 在这里添加一个自定义数据属性作为标记 ===
-        // =====================================================
+        // 添加统一标记，供后续更新锚点(#hash)使用
         link.dataset.aoe2CivLink = 'true';
 
-        let targetHref = `https://seicing.com/html/civ7/civ/${title}.html`;
+        // 根据识别到的类型动态拼接链接路径：https://seicing.com/html/civ7/civ/... 或 https://seicing.com/html/civ7/leader/...
+        let targetHref = `https://seicing.com/html/civ7/${type}/${title}.html`;
         if (aoe2Hash) {
             targetHref += aoe2Hash;
         }
@@ -1168,74 +1167,73 @@ function AOE2_enableCivIconQuickJump(container) {
 }
 
 /**
- * [新增] 一个独立的函数，专门负责更新所有文明链接的锚点
+ * 专门负责更新所有文明/领袖链接的锚点
  */
 function updateAllCivLinkHashes() {
-    // 1. 获取最新的锚点
     const currentHash = window.location.hash;
-
-    // 2. 找到所有被我们标记过的链接
     const civLinks = document.querySelectorAll('a[data-aoe2-civ-link="true"]');
 
     civLinks.forEach(link => {
-        // 3. 构建新的 href
-        // 先移除旧的锚点（如果有的话）
         const baseHref = link.href.split('#')[0];
-
-        // 4. 附加上新的锚点（如果新锚点存在）
         link.href = baseHref + currentHash;
     });
 }
 
 /**
- * [已改造] 在指定容器内高亮当前页面的文明图标
+ * [已改造 v4] 在指定容器内高亮当前页面的文明/领袖图标
  * @param {HTMLElement} [container=document] 要操作的父容器，默认为整个文档
  */
 function AOE2_activateCurrentCivIcon(container) {
     const path = location.pathname;
     if (!path.includes("/html/civ7/")) return;
 
-    // 如果没有提供容器，则默认为 document
+    // 1. 判断当前页面是 civ 页面还是 leader 页面
+    let pageType = 'civ';
+    if (path.includes("/html/civ7/leader/")) {
+        pageType = 'leader';
+    } else if (path.includes("/html/civ7/civ/")) {
+        pageType = 'civ';
+    }
+
     const scope = container || document;
 
     const fileName = path.split("/").pop();
     if (!fileName) return;
 
-    const civName = decodeURIComponent(
+    const entityName = decodeURIComponent(
         fileName.replace(/\.html$/i, "")
     ).trim();
 
-    // 在指定的容器(scope)内查找 technoseigine
-    const techno = scope.querySelector("#technoseigine");
-    if (!techno) { // 修正了变量名 technoseigine -> techno
-        // 在移动端克隆后，techno 容器肯定存在，如果在这里找不到，说明逻辑有问题
-        // console.warn("在指定容器内未找到 #technoseigine 元素");
-        return;
-    }
+    // 2. 查找图标所在的根节点：优先查 #technoseigine，查不到则查 #Aoe2techSp，再查不到则使用 scope 本身
+    const techno = scope.querySelector("#technoseigine") || scope.querySelector("#Aoe2techSp") || scope;
 
     let targetImg = null;
 
-    // 在 techno 容器内查找所有图标
+    // 3. 在根节点内查找所有带有 title 的图片
     techno.querySelectorAll("img[title]").forEach(img => {
         img.classList.add("civ-active936");
 
         const title = img.getAttribute("title").trim();
-        if (title.toLowerCase() === civName.toLowerCase()) { // 增加 toLowerCase() 以增强匹配鲁棒性
+        // 获取图片所在的容器类型
+        const imgType = img.dataset.type || img.closest('[data-type]')?.dataset.type || 'civ';
+
+        // 必须【名称匹配】且【页面类型与图标类型一致】才会被激活
+        if (title.toLowerCase() === entityName.toLowerCase() && imgType === pageType) {
             targetImg = img;
         }
     });
 
     if (!targetImg) {
-        console.warn("在当前容器内未找到文明图标：", civName);
+        // 如果页面不是对应的文明/领袖，找不到图标是正常的
         return;
     }
 
-    // 清理旧激活（仅在当前 techno 容器内）
+    // 清理旧激活状态
     techno.querySelectorAll(".civ-active937").forEach(el => {
         el.classList.remove("civ-active937");
     });
 
-    // 激活目标
+    // 激活目标图标
     targetImg.classList.remove("civ-active936");
     targetImg.classList.add("civ-active937");
 }
