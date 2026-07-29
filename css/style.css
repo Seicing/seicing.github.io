@@ -1109,6 +1109,12 @@ div {
     opacity: 0.3;
 }
 
+#mobile-drawer-container .civ-active936 {
+    opacity: 0.4;
+    filter: grayscale(50%);
+}
+
+
 /* 科技树关闭状态置灰滤镜 */
 .aoeTechIconOff {
     opacity: var(--tech-off-opacity);
