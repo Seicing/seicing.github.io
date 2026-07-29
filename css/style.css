@@ -1157,6 +1157,7 @@ div {
    ===================================================================== */
 .special-link {
     color: var(--special-link-color) !important;
+    cursor: pointer;
 }
 
 .active-page {
