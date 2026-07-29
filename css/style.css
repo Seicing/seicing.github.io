@@ -53,7 +53,7 @@
 
     /* --- 科技树专用变量 --- */
     --tech-active-shadow: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
-    --tech-active-shadow2: drop-shadow(0 0 1px rgb(255, 208, 0));
+    --tech-active-shadow2: drop-shadow(0 0 2px rgb(255, 208, 0));
     --tech-off-opacity: 0.3;
     --tech-off-filter: sepia(1) saturate(0) hue-rotate(-30deg);
 
