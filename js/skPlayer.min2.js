@@ -299,18 +299,3 @@
     }])
 });
 //# sourceMappingURL=skPlayer.min.js.map
-
-switchMusicByName: function (name) {
-    var index = -1;
-    for (var i = 0; i < this.music.length; i++) {
-        if (this.music[i].name === name) {
-            index = i;
-            break;
-        }
-    }
-    if (index !== -1) {
-        this.switchMusic(index + 1); // 找到对应索引后，调用原有的 switchMusic 方法切歌
-    } else {
-        console.error("未找到名为【" + name + "】的歌曲！");
-    }
-}

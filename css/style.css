@@ -239,7 +239,7 @@ body.theme-dark {
 
     --back-to-top-button-hover: #d4d4d4;
     --back-to-top-button-main: #999999;
-    --back-to-top-button-font: #979191;
+    --back-to-top-button-font: #424242;
 }
 
 /* 无头夜间特殊兼容 */
@@ -1366,8 +1366,8 @@ div {
         z-index: 1001;
         width: 40px;
         height: 40px;
-        background-color: #333;
-        color: white;
+        background-color: var(--back-to-top-button-main);
+        color: var(--back-to-top-button-font);
         border: none;
         border-radius: 50%;
         font-size: 24px;
@@ -1619,8 +1619,8 @@ div {
         z-index: 1001;
         width: 40px;
         height: 40px;
-        background-color: #333;
-        color: white;
+        background-color: var(--back-to-top-button-main);
+        color: var(--back-to-top-button-font);
         border: none;
         border-radius: 50%;
         font-size: 24px;
