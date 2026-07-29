@@ -1125,7 +1125,7 @@ div {
 }
 
 #mobile-drawer-container .civ-active936 {
-    opacity: 0.75;
+    opacity: 0.5;
     filter: grayscale(100);
 }
 
@@ -1135,7 +1135,7 @@ div {
 }
 
 .theme-dark .civ-active936 {
-    opacity: 0.75;
+    opacity: 0.5;
     filter: grayscale(100);
 }
 
