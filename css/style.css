@@ -111,6 +111,11 @@
     --aoeat-darkgreen: #005f00;
 
     --labibanadialog: #252525;
+
+    --back-to-top-button-hover: #555555;
+    --back-to-top-button-main: #333333;
+    --back-to-top-button-font: #ffffff;
+
 }
 
 /* =====================================================================
@@ -231,6 +236,10 @@ body.theme-dark {
     --aoeat-darkgreen: #379c37;
 
     --labibanadialog: #505050;
+
+    --back-to-top-button-hover: #d4d4d4;
+    --back-to-top-button-main: #999999;
+    --back-to-top-button-font: #979191;
 }
 
 /* 无头夜间特殊兼容 */
@@ -1243,8 +1252,8 @@ div {
     z-index: 1000;
     width: 40px;
     height: 40px;
-    background-color: #333;
-    color: white;
+    background-color: var(--back-to-top-button-main);
+    color: var(--back-to-top-button-font);
     border: none;
     border-radius: 50%;
     font-size: 20px;
@@ -1257,8 +1266,9 @@ div {
 }
 
 #back-to-top-button:hover {
-    background-color: #555;
+    background-color: var(--back-to-top-button-hover);
 }
+
 
 #back-to-top-button {
     bottom: auto;
