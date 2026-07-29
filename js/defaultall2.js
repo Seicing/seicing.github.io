@@ -462,10 +462,10 @@ window.addEventListener('resize', debounce(function () {
     function applyFont(size) {
         if (!document.body) return;
         if (size === 'big') {
-            document.body.style.fontSize = '12pt';
+            document.body.style.fontSize = '14pt';
         }
         else {
-            document.body.style.fontSize = '9pt';
+            document.body.style.fontSize = '10pt';
         }
         const colors = getButtonColors();
         // 单一字体切换按钮
