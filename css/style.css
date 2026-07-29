@@ -237,9 +237,9 @@ body.theme-dark {
 
     --labibanadialog: #505050;
 
-    --back-to-top-button-hover: #d4d4d4;
-    --back-to-top-button-main: #999999;
-    --back-to-top-button-font: #424242;
+    --back-to-top-button-hover: #999999;
+    --back-to-top-button-main: #7c7c7c;
+    --back-to-top-button-font: #d3d3e0;
 }
 
 /* 无头夜间特殊兼容 */

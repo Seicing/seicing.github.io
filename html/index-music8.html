@@ -797,6 +797,23 @@
     });
 </script>
 <script>
+
+    // 在引入 skPlayer.min2.js 之后执行这段代码
+    skPlayer.prototype.switchMusicByName = function (name) {
+        var index = -1;
+        for (var i = 0; i < this.music.length; i++) {
+            if (this.music[i].name === name) {
+                index = i;
+                break;
+            }
+        }
+        if (index !== -1) {
+            this.switchMusic(index + 1);
+        } else {
+            console.error("未找到名为【" + name + "】的歌曲！");
+        }
+    };
+
     var player = new skPlayer({
         autoplay: false,
         music: {
@@ -1098,21 +1115,6 @@
         }
     });
 
-    // 在引入 skPlayer.min2.js 之后执行这段代码
-    skPlayer.prototype.switchMusicByName = function (name) {
-        var index = -1;
-        for (var i = 0; i < this.music.length; i++) {
-            if (this.music[i].name === name) {
-                index = i;
-                break;
-            }
-        }
-        if (index !== -1) {
-            this.switchMusic(index + 1);
-        } else {
-            console.error("未找到名为【" + name + "】的歌曲！");
-        }
-    };
 </script>
 <!--异步标签-->
 
