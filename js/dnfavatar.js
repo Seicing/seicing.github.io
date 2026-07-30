@@ -292,7 +292,9 @@ const avatarData = [
             { "title": "命运序列", "path": "2026spring" },
             { "title": "银河系漫游", "path": "2026labor" },
             { "title": "NBA", "path": "nba" },
-            { "title": "果味一整夏", "path": "2026summer" }
+            { "title": "果味一整夏", "path": "2026summer" },
+            { "title": "青春回忆", "path": "youth" },
+            { "title": "异世相逢阿拉德", "path": "dimension" },
         ]
     },
     {
@@ -309,7 +311,6 @@ const avatarData = [
             { "title": "鋼の錬金術師", "path": "ganglian" },
             { "title": "사도의 후예 패키지", "path": "sado" },
             { "title": "애프터 크리스마스", "path": "rabbit" },
-            { "title": "디멘션 아라드", "path": "dimension" },
             { "title": "초원의 영혼", "path": "indian" },
             { "title": "프로스트 킹덤", "path": "frostkingdom" },
             { "title": "공모전", "path": "gongmu" }
