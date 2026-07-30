@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>编年史 战役地图</title>
+<link href="https://seicing.com/css/table_dnfclass.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    .title-cn {
+        font-size: 1.0em;
+        font-weight: bold;
+        color: var(--text-title);
+        display: block;
+        word-break: break-all;
+    }
+
+    .title-en {
+        font-size: 0.8em;
+        color: var(--text-sidebar-a);
+        display: block;
+        word-break: break-all;
+    }
+
+    #filters.campaign-filter-panel {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    .filterbtn {
+        border-radius: 4px;
+        background-color: transparent;
+        color: var(--btn-inactive-color);
+        border: var(--border-table);
+        padding: 4px 6px;
+        cursor: pointer;
+        font-size: 1.0em;
+        font-weight: bold;
+        font-family: inherit;
+        transition: all 0.2s ease;
+    }
+
+    .filterbtn:hover {
+        color: var(--text-title);
+        background-color: var(--bg-body-color);
+    }
+
+    .filterbtn.active {
+        background-color: var(--btn-active-color) !important;
+        color: #ffffff !important;
+        border-color: var(--btn-active-color) !important;
+    }
+
+    .campaign-section {
+        display: none;
+    }
+
+    .campaign-section.active {
+        display: block;
+    }
+
+    .campaign-section-title {
+        color: var(--text-title);
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: var(--hr-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .campaign-section-title small {
+        font-size: 0.6em;
+        color: var(--text-sidebar-a);
+    }
+
+    .level-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .level-card {
+        background-color: var(--bg-table-highlight);
+        border: var(--border-table);
+        border-radius: 2px;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .level-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .level-card .img-container {
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-body-color);
+        overflow: hidden;
+        border-bottom: var(--border-table);
+    }
+
+    .level-card .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .level-card .card-caption {
+        color: var(--text-primary);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .level-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+</style>
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="224"></div>
+<div class="campaign-control-bar">
+    <div id="filters" class="campaign-filter-panel"></div>
+    <button id="mapTypeToggleBtn" class="toggle-map-btn" onclick="toggleMapType()">切换成选关图小地图</button>
+</div>
+<div id="campaignContainer"></div></div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script language="javascript" src="https://seicing.com/js/tech.js" onload="aoetechPoeRush()"></script>
+<script>
+    // 全局地图模式状态 (false: path, true: path2)
+    let isPath2Active = false;
+
+    const campaignsData = [
+        {
+            "id": "1",
+            "name": "为希腊而战",
+            "levels": [
+                {
+                    "title": "1.众神之门",
+                    "title_eng": "Gates of the Gods",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Gates_of_the_Gods_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_1_icon.webp",
+                },
+                {
+                    "title": "2.送礼的希腊人",
+                    "title_eng": "Greeks Bearing Gifts",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Greeks_Bearing_Gifts_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_2_icon.webp",
+                },
+                {
+                    "title": "3.爱奥尼亚起义",
+                    "title_eng": "The Ionian Revolt",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/The_Ionian_Revolt_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_3_icon.webp",
+                },
+                {
+                    "title": "4.烈火焚城",
+                    "title_eng": "A City Ablaze",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/A_City_Ablaze_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_4_icon.webp",
+                },
+                {
+                    "title": "5.追逐烟雾",
+                    "title_eng": "Chasing Smoke",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chasing_Smoke_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_5_icon.webp",
+                },
+                {
+                    "title": "6.叛徒之死",
+                    "title_eng": "Death to Traitors",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Death_to_Traitors_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_6_icon.webp",
+                },
+                {
+                    "title": "7.土地和淡水",
+                    "title_eng": "Earth and Water",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Earth_and_Water_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_7_icon.webp",
+                },
+                {
+                    "title": "8.马拉松之战",
+                    "title_eng": "The Battle of Marathon",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/The_Battle_of_Marathon_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_8_icon.webp",
+                },
+                {
+                    "title": "9.扬起风帆",
+                    "title_eng": "Raise the Sails",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Raise_the_Sails_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_9_icon.webp",
+                },
+                {
+                    "title": "10.炽热之门",
+                    "title_eng": "The Hot Gates",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/The_Hot_Gates_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_10_icon.webp",
+                },
+                {
+                    "title": "11.神圣的萨拉米斯",
+                    "title_eng": "Divine Salamis",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Divine_Salamis_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_11_icon.webp",
+                },
+                {
+                    "title": "12.穿过酒色森幽的大海",
+                    "title_eng": "Across the Wine-Dark Sea",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Across_the_Wine-Dark_Sea_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_12_icon.webp",
+                },
+                {
+                    "title": "13.摄政王之怒",
+                    "title_eng": "Wrath of the Regent",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Wrath_of_the_Regent_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_13_icon.webp",
+                },
+                {
+                    "title": "14.帝国的果实",
+                    "title_eng": "The Fruits of Empire",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/The_Fruits_of_Empire_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_14_icon.webp",
+                },
+                {
+                    "title": "15.长墙之内",
+                    "title_eng": "Within the Long Walls",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Within_the_Long_Walls_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_15_icon.webp",
+                },
+                {
+                    "title": "16.我是伯拉西达",
+                    "title_eng": "I am Brasidas",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/I_am_Brasidas_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_16_icon.webp",
+                },
+                {
+                    "title": "17.海岸上的火葬堆",
+                    "title_eng": "Pyres on the Coast",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Pyres_on_the_Coast_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_17_icon.webp",
+                },
+                {
+                    "title": "18.文治武功",
+                    "title_eng": "Speeches and Spears",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Speeches_and_Spears_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_18_icon.webp",
+                },
+                {
+                    "title": "19.去城墙！",
+                    "title_eng": "To the Wall!",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/To_the_WallAoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_19_icon.webp",
+                },
+                {
+                    "title": "20.鲜血与黄金",
+                    "title_eng": "Blood and Gold",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Blood_and_Gold_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_20_icon.webp",
+                },
+                {
+                    "title": "21.雅典的衰落",
+                    "title_eng": "The Fall of Athens",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/The_Fall_of_Athens_AoEC_map.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Battle_for_Greece_scenario_21_icon.webp",
+                },
+            ]
+
+        },
+        {
+            "id": "2",
+            "name": "亚历山大大帝",
+            "levels": [
+                {
+                    "title": "1.战争教训",
+                    "title_eng": "A Lesson in Warfare",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap1.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_1_icon.webp",
+                },
+                {
+                    "title": "2.让王子决定",
+                    "title_eng": "Let the Prince Decide",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap2.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_2_icon.webp",
+                },
+                {
+                    "title": "3.奇罗尼亚之战",
+                    "title_eng": "The Battle of Chaeronea",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap3.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_3_icon.webp",
+                },
+                {
+                    "title": "4.争夺统治权",
+                    "title_eng": "Right to Rule",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap4.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_4_icon.webp",
+                },
+                {
+                    "title": "5.迅速致富",
+                    "title_eng": "Get Rich Quick",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap5.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_5_icon.webp",
+                },
+                {
+                    "title": "6.底比斯灾劫",
+                    "title_eng": "Woe unto Thebes",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap6.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_6_icon.webp",
+                },
+                {
+                    "title": "7.格拉尼卡斯之战",
+                    "title_eng": "The Battle of the Granicus",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap7.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_7_icon.webp",
+                },
+                {
+                    "title": "8.突破缺口",
+                    "title_eng": "Unto the Breach",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap8.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_8_icon.webp",
+                },
+                {
+                    "title": "9.西里西亚城门",
+                    "title_eng": "The Cilician Gates",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap9.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_9_icon.webp",
+                },
+                {
+                    "title": "10.提尔城必须倒塌",
+                    "title_eng": "Tyre Must Fall",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap10.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_10_icon.webp",
+                },
+                {
+                    "title": "11.高加米拉之战",
+                    "title_eng": "The Battle of Gaugamela",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap11.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_11_icon.webp",
+                },
+                {
+                    "title": "12.世界尽头的都市",
+                    "title_eng": "The City at the End of the World",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap12.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_12_icon.webp",
+                },
+                {
+                    "title": "13.在五河之地",
+                    "title_eng": "In the Land of the Five Rivers",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap13.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_13_icon.webp",
+                },
+                {
+                    "title": "14.海达斯佩斯河之战",
+                    "title_eng": "The Battle of the Hydaspes",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap14.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_14_icon.webp",
+                },
+                {
+                    "title": "15.无处可逃",
+                    "title_eng": "No Escape",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap15.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_15_icon.webp",
+                },
+                {
+                    "title": "16.撤退",
+                    "title_eng": "Katabasis",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap16.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_16_icon.webp",
+                },
+                {
+                    "title": "17.发现之旅",
+                    "title_eng": "A Voyage of Discovery",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap17.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_17_icon.webp",
+                },
+                {
+                    "title": "18.怒火",
+                    "title_eng": "Wrath",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/Chronicles2minimap18.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/Alexander_the_Great_scenario_18_icon.webp",
+                },
+            ]
+
+        },
+        {
+            "id": "3",
+            "name": "罗马共和国的崛起",
+            "levels": [
+                {
+                    "title": "1.【待补充】",
+                    "title_eng": "【待补充】",
+                    "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/【待补充】.webp",
+                    "path2": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/chronomap/icon/【待补充】.webp",
+                },
+            ]
+
+        },
+    ];
+
+    // =====================================================================
+    // 2. 页面初始化逻辑
+    // =====================================================================
+    function initCampaignPage() {
+        const filtersContainer = document.getElementById('filters');
+        const campaignContainer = document.getElementById('campaignContainer');
+
+        filtersContainer.innerHTML = '';
+        campaignContainer.innerHTML = '';
+
+        campaignsData.forEach((camp, index) => {
+            // A. 生成战役过滤按钮
+            const btn = document.createElement('button');
+            btn.className = `filterbtn ${index === 0 ? 'active' : ''}`;
+            btn.dataset.filter = camp.id;
+            btn.innerText = camp.name;
+            btn.onclick = () => switchCampaign(camp.id);
+            filtersContainer.appendChild(btn);
+
+            // B. 生成战役区块 (Section)
+            const section = document.createElement('div');
+            section.className = `campaign-section ${index === 0 ? 'active' : ''}`;
+            section.id = `camp-${camp.id}`;
+
+            const grid = document.createElement('div');
+            grid.className = 'level-grid';
+
+            camp.levels.forEach(level => {
+                const card = document.createElement('div');
+                card.className = 'level-card';
+
+                // 判断当前展示 path 还是 path2（无path2时回退使用path）
+                const path2Url = level.path2 && level.path2.trim() !== "" ? level.path2 : level.path;
+                const currentPath = isPath2Active ? path2Url : level.path;
+
+                // 将 path 和 path2 分别保存在 data- 属性中，方便后续无缝切换
+                card.innerHTML = `
+                    <div class="img-container">
+                        <img class="level-img" 
+                             src="${currentPath}" 
+                             data-path1="${level.path}" 
+                             data-path2="${path2Url}" 
+                             alt="${level.title}" 
+                             onerror="this.style.opacity='0.2'">
+                    </div>
+                    <div class="card-caption">
+                        <span class="title-cn">${level.title}</span>
+                        <span class="title-en">${level.title_eng}</span>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            section.appendChild(grid);
+            campaignContainer.appendChild(section);
+        });
+
+        // URL 参数定位
+        const urlCamp = new URLSearchParams(window.location.search).get("camp");
+        if (urlCamp) {
+            switchCampaign(urlCamp);
+        }
+    }
+
+    // =====================================================================
+    // 3. 战役切换控制逻辑
+    // =====================================================================
+    function switchCampaign(campId) {
+        document.querySelectorAll('#filters .filterbtn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.filter === campId);
+        });
+
+        document.querySelectorAll('.campaign-section').forEach(sec => {
+            sec.classList.toggle('active', sec.id === `camp-${campId}`);
+        });
+
+        const url = new URL(window.location);
+        url.searchParams.set("camp", campId);
+        window.history.replaceState({}, "", url);
+    }
+
+    // =====================================================================
+    // 4. 地图类型切换逻辑 (Path1 <-> Path2)
+    // =====================================================================
+    function toggleMapType() {
+        isPath2Active = !isPath2Active;
+
+        // 切换按钮高亮状态
+        const toggleBtn = document.getElementById('mapTypeToggleBtn');
+        if (toggleBtn) {
+            toggleBtn.classList.toggle('active', isPath2Active);
+        }
+
+        // 遍历所有卡片图片并更新 src
+        document.querySelectorAll('.level-img').forEach(img => {
+            const newSrc = isPath2Active ? img.dataset.path2 : img.dataset.path1;
+            if (newSrc) {
+                img.src = newSrc;
+            }
+        });
+    }
+
+    // 文档加载就绪后运行初始化
+    document.addEventListener('DOMContentLoaded', initCampaignPage);
+</script>
+
+</html>
