@@ -181,10 +181,7 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="224"></div>
-<div class="campaign-control-bar">
-    <div id="filters" class="campaign-filter-panel"></div>
-    <button id="mapTypeToggleBtn" class="toggle-map-btn" onclick="toggleMapType()">切换成选关图小地图</button>
-</div>
+<div id="filters" class="campaign-filter-panel"></div>
 <div id="campaignContainer"></div></div>
                     </div>
                 </div>
@@ -535,13 +532,20 @@
         if (urlCamp) {
             switchCampaign(urlCamp);
         }
+
+        const toggleBtn = document.createElement('button');
+        toggleBtn.id = 'mapTypeToggleBtn';
+        toggleBtn.className = `filterbtn ${isPath2Active ? 'active' : ''}`;
+        toggleBtn.innerText = '切换成选关图小地图';
+        toggleBtn.onclick = toggleMapType;
+        filtersContainer.appendChild(toggleBtn);
     }
 
     // =====================================================================
     // 3. 战役切换控制逻辑
     // =====================================================================
     function switchCampaign(campId) {
-        document.querySelectorAll('#filters .filterbtn').forEach(btn => {
+        document.querySelectorAll('#filters .filterbtn[data-filter]').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.filter === campId);
         });
 
