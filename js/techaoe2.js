@@ -1282,6 +1282,9 @@ function CommonAllTech() {
     document.getElementById("Tupi2").classList.remove("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.remove("aoeTechIconOff");
     document.getElementById("Muisca2").classList.remove("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Danes2").classList.remove("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.remove("aoeTechIconOff");
 }
 
 
