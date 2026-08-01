@@ -174,16 +174,9 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="4299"></div>
 
-<!-- 隐藏的侦察兵基准测量容器（确保缩放和限高 100% 精确） -->
-<div id="refScoutContainer"
-    style="position: absolute; top: -9999px; left: -9999px; visibility: hidden; pointer-events: none; width: 75%;">
-    <table style="width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 8px 10px;">
-        <tr>
-            <td style="width: 16.666%; padding: 0;">
-                <img id="refScoutImg" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png" style="width:100%; height:auto;">
-            </td>
-        </tr>
-    </table>
+<!-- 预加载侦察兵真实 PNG (用于精准获取侦察兵 naturalWidth 缩放基准) -->
+<div style="position: absolute; top: -9999px; left: -9999px; visibility: hidden; pointer-events: none;">
+    <img id="scoutRealImg" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png">
 </div>
 
 <!-- 兵种对比选择器 -->
@@ -282,7 +275,7 @@
             '步弓手': { default: '步弓手', zxl: '诸葛弩', hol: '英皇侍卫', otd: '镀金步弓手', mac: '波莫' },
             '弩手': { default: '弩手', jpn: '女武者', otd: '镀金弩手', mal: '掷枪兵' },
             '火枪兵': { default: '火枪兵', sen: '火绳枪足轻', otd: '镀金火枪兵' },
-            '僧侣': { default: '僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希', },
+            '僧侣': { default: '僧侣', zxl: '少林僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希' },
             '村民': { default: '村民男/村民女', jda: '贞德1', kcr: '朝圣者男/朝圣者女' }
         };
 
@@ -352,6 +345,11 @@
         let currentUnitCategory = '长矛兵';
         let currentAge = 4;
         const $table = $('#customers');
+
+        // 当侦察兵基准原图完成加载时触发一次计算
+        $('#scoutRealImg').on('load', function () {
+            syncImageScales();
+        });
 
         // =========================================================
         // 生成对比表格 (一行 6 个，附带国旗贴角)
@@ -462,7 +460,6 @@
             $(this).addClass('active');
             const widthPercent = parseInt($(this).data('width'));
             $('#customers').css('width', widthPercent + '%');
-            $('#refScoutContainer').css('width', widthPercent + '%'); // 同步测量容器宽度
 
             $table.find('img:not(.civ-flag)').css({ width: '', 'max-width': '100%' });
             requestAnimationFrame(function () { syncImageScales(); });
@@ -651,9 +648,10 @@
         }
 
         // =========================================================
-        // 同步缩放比例与裁切 (使用绝对精确的后台侦察兵测量基准)
+        // 同步缩放比例与裁切 (严格以侦察兵高清原图为 100% 绝对缩放基准)
         // =========================================================
         function syncImageScales() {
+            // 1. 重置非国旗可见图片为默认自适应样式
             $table.find('img:not(.civ-flag)').each(function () {
                 if ($(this).is(':visible')) {
                     $(this).css({
@@ -663,20 +661,27 @@
                 }
             });
 
-            // 从后台侦察兵基准测量容器中获取绝对标准的缩放比例
-            const refImg = document.getElementById('refScoutImg');
-            if (!refImg) return;
+            // 2. 获取侦察兵 1.png 的真实 PNG 高清天然宽度
+            const scoutImg = document.getElementById('scoutRealImg');
+            if (!scoutImg || scoutImg.naturalWidth <= 0) return;
 
-            const refNatW = refImg.naturalWidth;
-            if (refNatW <= 0) return;
+            const scoutNaturalWidth = scoutImg.naturalWidth; // 侦察兵真实高清宽度 (如 ~450px)
 
-            const refCurW = refImg.getBoundingClientRect().width;
-            const scaleRatio = refCurW / refNatW;
+            // 3. 获取表格第一列 <td> 的实际渲染像素宽度
+            const $firstTd = $table.find('td').first();
+            if (!$firstTd.length) return;
+
+            const cellWidth = $firstTd[0].getBoundingClientRect().width;
+            if (cellWidth <= 0) return;
+
+            // 核心公式：基准比例 = 单元格渲染宽度 / 侦察兵真实高清宽度
+            const scaleRatio = cellWidth / scoutNaturalWidth;
 
             const isHeightLimited = $('#limitHeightBtn').hasClass('active');
-            const scoutWidth = refCurW;
+            const scoutWidth = cellWidth;
             const maxAllowedHeight = scoutWidth * 1.5;
 
+            // 4. 按侦察兵的 100% 严格比例计算并设置所有兵种
             $table.find('img:not(.civ-flag)').each(function () {
                 const $img = $(this);
                 if ($img.is(':hidden') || $img.css('visibility') === 'hidden') return;
@@ -688,6 +693,7 @@
                 let multiplier = 1.0;
                 if ($img.hasClass('rakuda')) multiplier = 0.85;
 
+                // 计算出每个兵种基于侦察兵比例的精确像素宽度
                 const newWidth = naturalWidth * scaleRatio * multiplier;
                 const currentRenderHeight = naturalHeight * scaleRatio * multiplier;
                 const isNoCrop = $img.hasClass('no-crop');
