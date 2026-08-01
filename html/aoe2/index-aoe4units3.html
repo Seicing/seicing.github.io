@@ -181,16 +181,39 @@
 
 <!-- 兵种对比选择器 -->
 <div class="unit-selector">
-    <button class="unit-act-btn active" data-unit="长矛兵">长矛兵</button>
-    <button class="unit-act-btn" data-unit="武士">武士/步兵</button>
-    <button class="unit-act-btn" data-unit="侦察兵">侦察兵</button>
-    <button class="unit-act-btn" data-unit="骑手">轻骑兵</button>
-    <button class="unit-act-btn" data-unit="骑士">重骑兵/战象</button>
-    <button class="unit-act-btn" data-unit="步弓手">步弓手</button>
-    <button class="unit-act-btn" data-unit="弩手">弩手/投枪</button>
-    <button class="unit-act-btn" data-unit="火枪兵">火枪手/足轻</button>
-    <button class="unit-act-btn" data-unit="僧侣">宗教单位</button>
-    <button class="unit-act-btn" data-unit="村民">村民/平民</button>
+    <button class="unit-act-btn active" data-unit="长矛兵">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛兵.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="武士">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="侦察兵">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/侦察兵.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="骑手">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑手.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="骑士">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="步弓手">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/步弓手.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="弩手">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩手.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="火枪兵">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="僧侣">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="骑射手">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑射手.png" width="32px">
+    </button>
+    <button class="unit-act-btn" data-unit="村民">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/村民.png" width="32px">
+    </button>
 </div>
 
 <div id="topControls">
@@ -205,8 +228,8 @@
         <button class="table-size-btn" id="hideIconBtn">Hide Icon</button>
         <button class="table-size-btn" id="limitHeightBtn">Max Ht.</button>
         <button class="table-size-btn size-btn" data-width="50">50%</button>
-        <button class="table-size-btn size-btn active" data-width="75">75%</button>
-        <button class="table-size-btn size-btn" data-width="100">100%</button>
+        <button class="table-size-btn size-btn" data-width="75">75%</button>
+        <button class="table-size-btn size-btn active" data-width="100">100%</button>
     </div>
 </div>
 
@@ -270,13 +293,14 @@
             '长矛兵': { default: '长矛兵', mac: '阿特盖尔', otd: '镀金长矛兵' },
             '武士': { default: '武士', hol: '伯爵护卫', otd: '镀金武士', mal: '自由民战士' },
             '侦察兵': { default: '侦察兵' },
-            '骑手': { default: '骑手', otd: '镀金骑手', sen: '日本长枪骑兵' },
-            '骑士': { default: '骑士', otd: '镀金骑士', ayy: '骆驼长矛骑兵', tug: '突袭大象', mac: '瑞塔利' },
-            '步弓手': { default: '步弓手', zxl: '诸葛弩', hol: '英皇侍卫', otd: '镀金步弓手', mac: '波莫' },
-            '弩手': { default: '弩手', jpn: '女武者', otd: '镀金弩手', mal: '掷枪兵' },
-            '火枪兵': { default: '火枪兵', sen: '火绳枪足轻', otd: '镀金火枪兵' },
-            '僧侣': { default: '僧侣', zxl: '少林僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希' },
-            '村民': { default: '村民男/村民女', jda: '贞德1', kcr: '朝圣者男/朝圣者女' }
+            '骑手': { default: '骑手', otd: '镀金骑手', tug: '突袭大象', sen: '日本长枪骑兵' },
+            '骑士': { default: '骑士', otd: '镀金骑士', ayy: '骆驼长矛骑兵', mac: '瑞塔利' },
+            '步弓手': { default: '步弓手', zxl: '诸葛弩手', hol: '英皇侍卫', otd: '镀金步弓手', mac: '波莫' },
+            '弩手': { default: '弩手', otd: '镀金弩手' },
+            '火枪兵': { default: '火枪兵', sen: '火绳枪足轻', zxl: '掷弹兵', otd: '镀金火枪兵' },
+            '僧侣': { default: '僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希' },
+            '骑射手': { default: '骑射手', jpn: '女武者', abb: '骆驼射手', mon: '蒙古突骑', goh: '钦察弓兵', sul: '箭塔象', hre: '黑骑兵', ayy: '沙漠掠夺者', kcr: '标枪骑兵', },
+            '村民': { default: '村民男/村民女', }
         };
 
         // 隐藏规则
