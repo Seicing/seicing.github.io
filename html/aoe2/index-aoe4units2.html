@@ -228,6 +228,7 @@
         <button class="age-button active" data-age="4">IV</button>
     </div>
     <div id="tableSizeButtons">
+        <button class="table-size-btn" id="limitHeightBtn">限制高度</button>
         <button class="table-size-btn" data-width="50">50%</button>
         <button class="table-size-btn active" data-width="75">75%</button>
         <button class="table-size-btn" data-width="100">100%</button>
@@ -273,6 +274,10 @@
                     .removeClass(
                         'active'
                     );
+                $(document).on('click', '#limitHeightBtn', function () {
+                    $(this).toggleClass('active');
+                    syncImageScales();
+                });
                 $btn.addClass(
                     'active'
                 );
@@ -1000,81 +1005,67 @@
         // =========================================================
         // 同步缩放
         // =========================================================
+        // =========================================================
+        // 同步缩放（更新版：包含限制高度逻辑）
+        // =========================================================
         function syncImageScales() {
             $table.find('img').css({
                 width: '',
                 'max-width': '100%'
             });
+
             let $refImage = null;
-            $table.find('img')
-                .each(function () {
-                    const src =
-                        $(this).attr(
-                            'src'
-                        ) || '';
-                    if (
-                        src.includes(
-                            '侦察兵'
-                        )
-                    ) {
-                        $refImage =
-                            $(this);
-                        return false;
+            $table.find('img').each(function () {
+                const src = $(this).attr('src') || '';
+                if (src.includes('侦察兵')) {
+                    $refImage = $(this);
+                    return false;
+                }
+            });
+
+            if (!$refImage || !$refImage.length) return;
+            const refNaturalWidth = $refImage[0].naturalWidth;
+            if (refNaturalWidth <= 0) return;
+
+            const refCurrentWidth = $refImage[0].getBoundingClientRect().width;
+            const scaleRatio = refCurrentWidth / refNaturalWidth;
+
+            // 检查“限制高度”按钮是否处于激活状态
+            const isHeightLimited = $('#limitHeightBtn').hasClass('active');
+
+            $table.find('img').each(function () {
+                const $img = $(this);
+                if ($img.css('visibility') === 'hidden') return;
+
+                const naturalWidth = this.naturalWidth;
+                const naturalHeight = this.naturalHeight;
+                if (naturalWidth <= 0) return;
+
+                // 计算基础目标宽度
+                let newWidth = naturalWidth * scaleRatio;
+
+                if ($img.hasClass('rakuda')) {
+                    newWidth *= 0.85;
+                }
+                if ($img.hasClass('elephante')) {
+                    newWidth *= 1.2;
+                }
+
+                // --- 新增：高度限制计算 ---
+                if (isHeightLimited && naturalHeight > 0) {
+                    const aspectRatio = naturalHeight / naturalWidth; // 宽高比 (高/宽)
+                    // 如果高宽比大于 1.3，限制高度不超过 newWidth * 1.3
+                    if (aspectRatio > 1.3) {
+                        // 等比例缩小宽度，使得最终高度 = newWidth * 1.3
+                        newWidth = (newWidth * 1.3) / aspectRatio;
                     }
+                }
+
+                $img.css({
+                    width: newWidth + 'px',
+                    'max-width': 'none'
                 });
-            if (
-                !$refImage ||
-                !$refImage.length
-            ) return;
-            const refNaturalWidth =
-                $refImage[0]
-                    .naturalWidth;
-            if (
-                refNaturalWidth <= 0
-            ) return;
-            const refCurrentWidth =
-                $refImage[0].getBoundingClientRect().width;
-            const scaleRatio =
-                refCurrentWidth /
-                refNaturalWidth;
-            $table.find('img')
-                .each(function () {
-                    const $img =
-                        $(this);
-                    if (
-                        $img.css(
-                            'visibility'
-                        ) === 'hidden'
-                    ) return;
-                    const naturalWidth =
-                        this.naturalWidth;
-                    if (
-                        naturalWidth <= 0
-                    ) return;
-                    let newWidth =
-                        naturalWidth *
-                        scaleRatio;
-                    if (
-                        $img.hasClass(
-                            'rakuda'
-                        )
-                    ) {
-                        newWidth *= 0.85;
-                    }
-                    if (
-                        $img.hasClass(
-                            'elephante'
-                        )
-                    ) {
-                        newWidth *= 1.2;
-                    }
-                    $img.css({
-                        width:
-                            newWidth + 'px',
-                        'max-width':
-                            'none'
-                    });
-                });
+            });
         }
         // =========================================================
         // resize
