@@ -594,39 +594,31 @@
         // ========================================================= 
         const hidingRules = [
             {
-                conditions: { civ: 'chi', age: 2 },
+                conditions: { civ: 'chi', age: [1, 2] },
                 actions: [{ type: 'hideImage', imageName: '武士.png' },]
             },
             {
-                conditions: { civ: 'chi', age: 2 },
+                conditions: { civ: 'chi', age: [1, 2] },
                 actions: [{ type: 'hideImage', imageName: '火长矛骑兵.png' },]
             },
             {
-                conditions: { civ: 'chi', age: 3 },
+                conditions: { civ: 'chi', age: [1, 2, 3] },
                 actions: [{ type: 'hideImage', imageName: '掷弹兵.png' },]
             },
             {
-                conditions: { civ: 'eng', age: 1 },
+                conditions: { civ: 'eng', age: [1] },
                 actions: [{ type: 'hideImage', imageName: '长矛兵.png' },]
             },
             {
-                conditions: { civ: 'otd', age: 1 },
+                conditions: { civ: 'otd', age: [1, 2] },
                 actions: [{ type: 'hideImage', imageName: '僧侣.png' },]
             },
             {
-                conditions: { civ: 'otd', age: 2 },
+                conditions: { civ: 'tug', age: [1, 2] },
                 actions: [{ type: 'hideImage', imageName: '僧侣.png' },]
             },
             {
-                conditions: { civ: 'tug', age: 1 },
-                actions: [{ type: 'hideImage', imageName: '僧侣.png' },]
-            },
-            {
-                conditions: { civ: 'tug', age: 2 },
-                actions: [{ type: 'hideImage', imageName: '僧侣.png' },]
-            },
-            {
-                conditions: { civ: 'byz', age: 2 },
+                conditions: { civ: 'byz', age: [1, 2] },
                 actions: [{ type: 'hideImage', imageName: '武士.png' },]
             },
         ];
@@ -823,11 +815,12 @@
                 '.png';
             hidingRules.forEach(rule => {
                 let conditionsMet = true;
-                if (
-                    rule.conditions.age &&
-                    rule.conditions.age != age
-                ) {
-                    conditionsMet = false;
+                if (rule.conditions.age) {
+                    if (Array.isArray(rule.conditions.age)) {
+                        if (!rule.conditions.age.includes(age)) conditionsMet = false;
+                    } else if (rule.conditions.age != age) {
+                        conditionsMet = false;
+                    }
                 }
                 if (
                     rule.conditions.civ &&
