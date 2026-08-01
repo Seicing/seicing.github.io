@@ -10,6 +10,7 @@
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>帝国时代4 同兵种对比表</title>
 <link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 
 <style>
@@ -260,6 +261,7 @@
         <button class="age-button" id="alignBtn">A</button>
     </div>
     <div id="tableSizeButtons">
+        <button class="table-size-btn" id="exportPngBtn">Export PNG</button>
         <button class="table-size-btn" id="hideIconBtn">Hide Icon</button>
         <button class="table-size-btn" id="limitHeightBtn">Max Ht.</button>
         <button class="table-size-btn size-btn" data-width="50">50%</button>
@@ -776,8 +778,30 @@
             });
         }
 
+        // 导出透明底 PNG 图片
+        $(document).on('click', '#exportPngBtn', function () {
+            const $btn = $(this);
+            $btn.text('Exporting...');
+
+            html2canvas(document.getElementById('customers'), {
+                backgroundColor: null, // 关键：null 代表 100% 透明背景
+                useCORS: true,         // 允许跨域图片渲染
+                scale: 2               // 2倍高清导出
+            }).then(canvas => {
+                const a = document.createElement('a');
+                a.download = `AOE4_${currentUnitCategory}_Age${currentAge}.png`;
+                a.href = canvas.toDataURL('image/png');
+                a.click();
+                $btn.text('Export PNG');
+            }).catch(err => {
+                console.error('导出失败:', err);
+                alert('导出图片失败，请检查图片跨域设置。');
+                $btn.text('Export PNG');
+            });
+        });
+
         // =========================================================
-        // 同步缩放比例与裁切 (严格以侦察兵高清原图为 100% 绝对缩放基准)
+        // 同步缩放比例与裁切 (整个长矛兵组自动使用 1.2 裁切)
         // =========================================================
         function syncImageScales() {
             // 1. 重置非国旗可见图片为默认自适应样式
@@ -794,7 +818,7 @@
             const scoutImg = document.getElementById('scoutRealImg');
             if (!scoutImg || scoutImg.naturalWidth <= 0) return;
 
-            const scoutNaturalWidth = scoutImg.naturalWidth; // 侦察兵真实高清宽度 (如 ~450px)
+            const scoutNaturalWidth = scoutImg.naturalWidth;
 
             // 3. 获取表格第一列 <td> 的实际渲染像素宽度
             const $firstTd = $table.find('td').first();
@@ -808,7 +832,13 @@
 
             const isHeightLimited = $('#limitHeightBtn').hasClass('active');
             const scoutWidth = cellWidth;
-            const maxAllowedHeight = scoutWidth * 1.5;
+
+            // 整个长矛兵分类统一自动使用 1.2 裁切上限，其他分类使用 1.5
+            let limitRatio = 1.5;
+            if (currentUnitCategory === '长矛兵') {
+                limitRatio = 1.2;
+            }
+            const maxAllowedHeight = scoutWidth * limitRatio;
 
             // 4. 按侦察兵的 100% 严格比例计算并设置所有兵种
             $table.find('img:not(.civ-flag)').each(function () {
@@ -830,10 +860,10 @@
                 if (isHeightLimited && !isNoCrop && currentRenderHeight > maxAllowedHeight) {
                     $img.css({
                         width: newWidth + 'px',
-                        height: maxAllowedHeight + 'px',
+                        height: maxAllowedHeight + 'px',   // 强制高度上限
                         'max-width': 'none',
-                        'object-fit': 'cover',
-                        'object-position': 'bottom center',
+                        'object-fit': 'cover',             // 保持原有宽度不变形
+                        'object-position': 'bottom center', // 底部对齐，裁切顶部
                         'vertical-align': 'bottom',
                         'display': 'inline-block'
                     });
