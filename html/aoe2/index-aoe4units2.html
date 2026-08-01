@@ -151,6 +151,20 @@
             drop-shadow(0 0 1px rgba(0, 0, 0, 1)) drop-shadow(0 0 2px rgba(0, 0, 0, 1));
         transform: scale(1.08);
     }
+
+    /* 双单位并排容器 */
+    .dual-unit-box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 防止浏览器强制挤压图片宽度，保持正常 100% 比例 */
+    .dual-unit-img {
+        flex-shrink: 0;
+    }
 </style>
 
 </head>
@@ -333,7 +347,7 @@
                 civlinkname: 'chi',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '诸葛弩手', '火长矛骑兵', '掷弹兵'
                 ]
             },
@@ -342,8 +356,8 @@
                 civlinkname: 'chi',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '诸葛弩手', '弩手', '掷弹兵', '僧侣', '少林僧侣',
-                    '元朝掠夺者', '帝国卫队'
+                    '诸葛弩手', '弩手', '掷弹兵', '僧侣', '村民男/村民女',
+                    '少林僧侣', '元朝掠夺者', '帝国卫队'
                 ]
             },
             {
@@ -351,7 +365,7 @@
                 civlinkname: 'jin',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '靺鞨族人', '弩手', '火枪兵', '僧侣', '',
+                    '靺鞨族人', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '斩马刀', '猛安谋克守军', '骑马掷弹兵',
                 ]
             },
@@ -360,7 +374,7 @@
                 civlinkname: 'jpn',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '女武者', '火枪兵', '神道教神主', '佛教僧侣',
+                    '步弓手', '女武者', '火枪兵', '神道教神主/佛教僧侣', '村民男/村民女',
                     '女武艺者', '大筒兵', '忍者', '刀剑旗本武士', '弓箭旗本武士', '骑马旗本武士',
                 ]
             },
@@ -369,7 +383,7 @@
                 civlinkname: 'jpn',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '日本长枪骑兵', '骑士',
-                    '步弓手', '', '火绳枪足轻', '一向一揆僧侣', '',
+                    '步弓手', '', '火绳枪足轻', '一向一揆僧侣', '村民男/村民女',
                     '金碎棒日本武士', '大筒兵', '忍者', '大名',
                 ]
             },
@@ -378,7 +392,7 @@
                 civlinkname: 'hre',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '国土佣仆', '黑骑兵',
                 ]
             },
@@ -387,7 +401,7 @@
                 civlinkname: 'hre',
                 civunits: [
                     '镀金长矛兵', '镀金武士', '侦察兵', '镀金骑手', '镀金骑士',
-                    '镀金步弓手', '镀金弩手', '镀金火枪兵', '僧侣', '',
+                    '镀金步弓手', '镀金弩手', '镀金火枪兵', '僧侣', '村民男/村民女',
                     '镀金国土佣仆',
                 ]
             },
@@ -396,7 +410,7 @@
                 civlinkname: 'eng',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '国王', '温嘉德步兵', '温嘉德长弓兵',
                 ]
             },
@@ -405,7 +419,7 @@
                 civlinkname: 'eng',
                 civunits: [
                     '长矛兵', '伯爵护卫', '侦察兵', '骑马步兵', '骑士',
-                    '英皇侍卫', '弩手', '火枪兵', '僧侣', '',
+                    '英皇侍卫', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '兰开斯特领主', '短矛骑兵',
                 ]
             },
@@ -414,7 +428,7 @@
                 civlinkname: 'fre',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                 ]
             },
             {
@@ -422,7 +436,7 @@
                 civlinkname: 'fre',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '圣女贞德农民', '贞德的骑兵', '贞德的冠军剑士',
                 ]
             },
@@ -431,7 +445,7 @@
                 civlinkname: 'kcr',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '', '僧侣', '',
+                    '步弓手', '弩手', '', '僧侣', '村民男/村民女',
                     '同伴骑士', '医院骑士', '萨金特卫兵', '', '',
                     '标枪骑兵', '热那亚弩手', '重装长矛兵', '', '',
                     '什拉赫塔骑兵', '条顿骑士', '意大利佣兵', '', '',
@@ -442,7 +456,7 @@
                 civlinkname: 'abb',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '骆驼骑兵', '骆驼射手',
                 ]
             },
@@ -451,7 +465,7 @@
                 civlinkname: 'abb',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骆驼长矛骑兵',
-                    '步弓手', '弩手', '火枪兵', '德尔维希', '',
+                    '步弓手', '弩手', '火枪兵', '德尔维希', '村民男/村民女',
                     '沙漠掠夺者', '贝都因剑士', '贝都因掷矛手',
                 ]
             },
@@ -460,7 +474,7 @@
                 civlinkname: 'sul',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '战象', '箭塔象', '苏丹的精锐箭塔象',
                 ]
             },
@@ -469,8 +483,8 @@
                 civlinkname: 'sul',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '突袭大象', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '医疗大象',
-                    '战象', '弩炮大象', '埃米尔战士',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
+                    '战象', '弩炮大象', '医疗大象', '埃米尔战士',
                 ]
             },
             {
@@ -478,7 +492,7 @@
                 civlinkname: 'mon',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '蒙古突骑', '汗的猎人', '汗',
                 ]
             },
@@ -487,7 +501,7 @@
                 civlinkname: 'mon',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '钦察弓兵', '土尔扈特', '拔都汗', '肉盾', '罗斯贡品',
                 ]
             },
@@ -496,7 +510,7 @@
                 civlinkname: 'byz',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                 ]
             },
             {
@@ -504,7 +518,8 @@
                 civlinkname: 'byz',
                 civunits: [
                     '阿特盖尔', '武士', '侦察兵', '骑手', '瑞塔利',
-                    '波莫', '弩手', '火枪兵', '僧侣', '', '骑士',
+                    '波莫', '弩手', '火枪兵', '僧侣', '村民男/村民女',
+                    '骑士',
                 ]
             },
             {
@@ -512,7 +527,7 @@
                 civlinkname: 'rus',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '骑射手', '民兵长戟兵', '民兵火枪兵',
                 ]
             },
@@ -521,7 +536,7 @@
                 civlinkname: 'ott',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '骑射手', '奥斯曼军乐队',
                 ]
             },
@@ -530,7 +545,7 @@
                 civlinkname: 'mal',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '', '骑士',
-                    '步弓手', '掷枪兵', '火枪兵', '僧侣', '',
+                    '步弓手', '掷枪兵', '火枪兵', '僧侣', '村民男/村民女',
                     '自由民战士', '曼萨穆索法迪战士', '曼萨掷枪兵',
                 ]
             },
@@ -539,7 +554,7 @@
                 civlinkname: 'vik',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '狂战士', '盾女',
                 ]
             },
@@ -548,7 +563,7 @@
                 civlinkname: 'sco',
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
-                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
                     '边境突袭者', '氏族战士', '加洛格拉什',
                 ]
             },
@@ -694,7 +709,7 @@
             },
         };
         // =========================================================
-        // 自动生成表格
+        // 自动生成表格（支持斜杠 '/' 双单位平分格子）
         // =========================================================
         function generateTable() {
             $table.empty();
@@ -703,54 +718,51 @@
                     c => c.civname === currentCiv
                 );
             if (!civData) return;
-            const units =
-                civData.civunits;
+            const units = civData.civunits;
             const columnsPerRow = 5;
-            for (
-                let i = 0;
-                i < units.length;
-                i += columnsPerRow
-            ) {
-                const $tr =
-                    $('<tr></tr>');
-                const rowUnits =
-                    units.slice(
-                        i,
-                        i + columnsPerRow
-                    );
+
+            for (let i = 0; i < units.length; i += columnsPerRow) {
+                const $tr = $('<tr></tr>');
+                const rowUnits = units.slice(i, i + columnsPerRow);
+
                 rowUnits.forEach(unitName => {
-                    const $td =
-                        $('<td></td>');
-                    // 空格占位
-                    if (
-                        !unitName ||
-                        unitName.trim() === ''
-                    ) {
+                    const $td = $('<td></td>');
+
+                    if (!unitName || unitName.trim() === '') {
                         $td.html('&nbsp;');
-                    } else {
-                        const imgPath =
-                            `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${unitName}.png`;
-                        const $img =
-                            $('<img>');
-                        $img.attr(
-                            'data-aoe4unit',
-                            imgPath
-                        );
-                        $img.data(
-                            'original-src',
-                            imgPath
-                        );
+                    }
+                    // 处理双单位格式，如 "村民男/村民女"
+                    else if (unitName.includes('/')) {
+                        const subUnits = unitName.split('/');
+                        const $box = $('<div class="dual-unit-box"></div>');
+
+                        subUnits.forEach(subName => {
+                            subName = subName.trim();
+                            const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${subName}.png`;
+                            const $img = $('<img>');
+                            $img.addClass('dual-unit-img'); // 标记为双单位图片
+                            $img.attr('data-aoe4unit', imgPath);
+                            $img.data('original-src', imgPath);
+                            $box.append($img);
+                        });
+
+                        $td.append($box);
+                    }
+                    // 普通单单位格
+                    else {
+                        const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${unitName}.png`;
+                        const $img = $('<img>');
+                        $img.attr('data-aoe4unit', imgPath);
+                        $img.data('original-src', imgPath);
                         $td.append($img);
                     }
+
                     $tr.append($td);
                 });
-                // 补满5列
-                while (
-                    $tr.children().length < 5
-                ) {
-                    $tr.append(
-                        $('<td>&nbsp;</td>')
-                    );
+
+                // 补满 5 列
+                while ($tr.children().length < 5) {
+                    $tr.append($('<td>&nbsp;</td>'));
                 }
                 $table.append($tr);
             }
@@ -1080,7 +1092,7 @@
                 if ($img.hasClass('rakuda')) {
                     multiplier = 0.85;
                 } else if ($img.hasClass('elephante')) {
-                    multiplier = 1.2;
+                    multiplier = 1.0;
                 }
 
                 const newWidth = naturalWidth * scaleRatio * multiplier;
