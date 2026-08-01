@@ -48,7 +48,7 @@
 
     .table-size-btn {
         height: 30px;
-        min-width: 58px;
+        min-width: 35px;
         padding: 0 8px;
         display: inline-flex;
         justify-content: center;
@@ -73,7 +73,7 @@
 
     .age-button {
         height: 30px;
-        min-width: 58px;
+        min-width: 20px;
         padding: 0 8px;
         display: inline-flex;
         justify-content: center;
@@ -253,16 +253,17 @@
 </div>
 <div id="topControls">
     <div id="age-buttons">
-        <button class="age-button" data-age="1">Ⅰ</button>
-        <button class="age-button" data-age="2">Ⅱ</button>
-        <button class="age-button" data-age="3">Ⅲ</button>
-        <button class="age-button active" data-age="4">IV</button>
+        <button class="age-button age-select-btn" data-age="1">Ⅰ</button>
+        <button class="age-button age-select-btn" data-age="2">Ⅱ</button>
+        <button class="age-button age-select-btn" data-age="3">Ⅲ</button>
+        <button class="age-button age-select-btn active" data-age="4">IV</button>
+        <button class="age-button" id="alignBtn">对齐</button>
     </div>
     <div id="tableSizeButtons">
-        <button class="table-size-btn" id="limitHeightBtn">限制高度</button>
-        <button class="table-size-btn  size-btn" data-width="50">50%</button>
-        <button class="table-size-btn  size-btn active" data-width="75">75%</button>
-        <button class="table-size-btn  size-btn" data-width="100">100%</button>
+        <button class="table-size-btn" id="limitHeightBtn">限高</button>
+        <button class="table-size-btn size-btn" data-width="50">50%</button>
+        <button class="table-size-btn size-btn active" data-width="75">75%</button>
+        <button class="table-size-btn size-btn" data-width="100">100%</button>
     </div>
 </div>
 <div style="width:100%;">
@@ -789,35 +790,26 @@
             updateImageSources(currentAge);
         });
         // =========================================================
-        // 时代按钮
+        // 时代按钮 (Ⅰ, Ⅱ, Ⅲ, IV)
         // =========================================================
         $(document).on(
             'click',
-            '.age-button',
+            '.age-select-btn',
             function () {
-                const $btn =
-                    $(this);
-                if (
-                    $btn.hasClass(
-                        'active'
-                    )
-                ) return;
-                $('.age-button')
-                    .removeClass(
-                        'active'
-                    );
-                $btn.addClass(
-                    'active'
-                );
-                currentAge =
-                    parseInt(
-                        $btn.data('age')
-                    );
-                updateImageSources(
-                    currentAge
-                );
+                const $btn = $(this);
+                if ($btn.hasClass('active')) return;
+                $('.age-select-btn').removeClass('active');
+                $btn.addClass('active');
+                currentAge = parseInt($btn.data('age'));
+                updateImageSources(currentAge);
             }
         );
+
+        // “对齐”按钮独立开关事件
+        $(document).on('click', '#alignBtn', function () {
+            $(this).toggleClass('active');
+            updateImageSources(currentAge);
+        });
         // =========================================================
         // 应用隐藏规则
         // =========================================================
@@ -908,134 +900,104 @@
             });
         }
         // =========================================================
+        // 递归加载候选时代的图片（实现“对齐”寻找后续时代逻辑）
+        // =========================================================
+        function loadNextAgeImage($img, unitName, ageList, index, dfd) {
+            if (index >= ageList.length) {
+                $img.css('visibility', 'hidden');
+                dfd.resolve();
+                return;
+            }
+
+            const tryAge = ageList[index];
+            let finalFileName = unitName;
+
+            // 家族规则
+            const familyName = imageNameAliases[unitName];
+            if (familyName) {
+                const familyRule = imageFamilyRules[familyName];
+                if (familyRule && familyRule[tryAge]) {
+                    finalFileName = familyRule[tryAge];
+                }
+            } else {
+                const extension = unitName.substring(unitName.lastIndexOf('.'));
+                const filename = unitName.substring(0, unitName.lastIndexOf('.'));
+                const specialRule = specialUnitRules[unitName];
+
+                if (specialRule && specialRule.noAgeSuffix) {
+                    finalFileName = unitName;
+                } else {
+                    finalFileName = filename + tryAge + extension;
+                }
+            }
+
+            const newSrc = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${finalFileName}`;
+
+            $img.off('load error');
+            $img.one('load', function () {
+                syncImageScales();
+                dfd.resolve();
+            }).one('error', function () {
+                // 当前时代图片不存在（404），自动尝试下一个时代
+                loadNextAgeImage($img, unitName, ageList, index + 1, dfd);
+            });
+
+            $img.css('visibility', 'visible');
+            $img.attr('src', newSrc);
+        }
+
+        // =========================================================
         // 更新图片
         // =========================================================
         function updateImageSources(age) {
+            const isAlign = $('#alignBtn').hasClass('active');
             const imageLoadPromises = [];
-            const $imagesToLoad =
-                $table.find('img');
+            const $imagesToLoad = $table.find('img');
+
             $imagesToLoad.each(function () {
-                const $img =
-                    $(this);
-                const dfd =
-                    $.Deferred();
-                imageLoadPromises.push(
-                    dfd.promise()
-                );
-                const originalSrc =
-                    $img.data(
-                        'original-src'
-                    );
+                const $img = $(this);
+                const dfd = $.Deferred();
+                imageLoadPromises.push(dfd.promise());
+
+                const originalSrc = $img.data('original-src');
                 if (!originalSrc) {
                     dfd.resolve();
                     return;
                 }
-                const unitName =
-                    originalSrc
-                        .split('/')
-                        .pop();
-                let finalFileName =
-                    unitName;
-                // 家族规则
-                const familyName =
-                    imageNameAliases[
-                    unitName
-                    ];
-                if (familyName) {
-                    const familyRule =
-                        imageFamilyRules[
-                        familyName
-                        ];
-                    if (
-                        familyRule &&
-                        familyRule[age]
-                    ) {
-                        finalFileName =
-                            familyRule[age];
+
+                const unitName = originalSrc.split('/').pop();
+                const specialRule = specialUnitRules[unitName];
+
+                // 构建尝试的时代队列
+                let ageList = [];
+                if (isAlign) {
+                    let startAge = age;
+                    if (specialRule && specialRule.minAge) {
+                        startAge = Math.max(age, specialRule.minAge);
+                    }
+                    // 开启“对齐”时，从当前时代依次尝试到时代 4
+                    for (let a = startAge; a <= 4; a++) {
+                        ageList.push(a);
                     }
                 } else {
-                    const extension =
-                        unitName.substring(
-                            unitName.lastIndexOf('.')
-                        );
-                    const filename =
-                        unitName.substring(
-                            0,
-                            unitName.lastIndexOf('.')
-                        );
-                    // =========================
-                    // 特殊单位规则
-                    // =========================
-                    const specialRule =
-                        specialUnitRules[unitName];
-                    if (specialRule) {
-                        // 最小时代限制
-                        if (
-                            specialRule.minAge &&
-                            age < specialRule.minAge
-                        ) {
-                            $img.css(
-                                'visibility',
-                                'hidden'
-                            );
-                            dfd.resolve();
-                            return;
-                        }
-                        // 不带时代编号
-                        if (
-                            specialRule.noAgeSuffix
-                        ) {
-                            finalFileName =
-                                unitName;
-                        } else {
-                            finalFileName =
-                                filename +
-                                age +
-                                extension;
-                        }
+                    // 未开启“对齐”时，仅尝试当前时代
+                    if (specialRule && specialRule.minAge && age < specialRule.minAge) {
+                        ageList = [];
                     } else {
-                        // 默认规则
-                        finalFileName =
-                            filename +
-                            age +
-                            extension;
+                        ageList = [age];
                     }
                 }
-                // 注意这里已经改成 currentCivLink
-                const newSrc =
-                    `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${finalFileName}`;
-                $img.off(
-                    'load error'
-                );
-                $img.one(
-                    'load',
-                    function () {
-                        syncImageScales();
-                        dfd.resolve();
-                    }
-                ).one(
-                    'error',
-                    function () {
-                        $(this).css(
-                            'visibility',
-                            'hidden'
-                        );
-                        dfd.resolve();
-                    }
-                );
-                $img.css(
-                    'visibility',
-                    'visible'
-                );
-                $img.attr(
-                    'src',
-                    newSrc
-                );
+
+                if (ageList.length === 0) {
+                    $img.css('visibility', 'hidden');
+                    dfd.resolve();
+                    return;
+                }
+
+                loadNextAgeImage($img, unitName, ageList, 0, dfd);
             });
-            $.when.apply(
-                $,
-                imageLoadPromises
-            ).done(function () {
+
+            $.when.apply($, imageLoadPromises).done(function () {
                 applyHidingRules(age);
                 syncImageScales();
             });
