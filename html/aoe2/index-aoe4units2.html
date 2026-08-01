@@ -350,7 +350,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '诸葛弩手', '火长矛骑兵', '掷弹兵'
+                    '诸葛弩手', '火长矛骑兵', '掷弹兵', '朝廷命官'
                 ]
             },
             {
@@ -359,7 +359,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '诸葛弩手', '弩手', '掷弹兵', '僧侣', '村民男/村民女',
-                    '少林僧侣', '元朝掠夺者', '帝国卫队'
+                    '少林僧侣', '元朝掠夺者', '帝国卫队', '朝廷命官'
                 ]
             },
             {
@@ -368,7 +368,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '靺鞨族人', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '斩马刀', '猛安谋克守军', '骑马掷弹兵',
+                    '斩马刀', '猛安谋克守军', '骑马掷弹兵', '乡骑'
                 ]
             },
             {
@@ -377,7 +377,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '女武者', '火枪兵', '神道教神主/佛教僧侣', '村民男/村民女',
-                    '女武艺者', '大筒兵', '忍者/刀剑旗本武士/弓箭旗本武士/骑马旗本武士',
+                    '标签5', '女武艺者', '大筒兵', '忍者', '刀剑旗本武士', '弓箭旗本武士', '骑马旗本武士', '终止标签',
                 ]
             },
             {
@@ -458,7 +458,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '骆驼骑兵', '骆驼射手',
+                    '标签3', '骆驼骑兵', '骆驼射手', '终止标签',
                 ]
             },
             {
@@ -476,7 +476,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '战象', '箭塔象', '苏丹的精锐箭塔象',
+                    '标签4', '战象', '箭塔象', '苏丹的精锐箭塔象', '终止标签',
                 ]
             },
             {
@@ -485,7 +485,8 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '突袭大象', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '战象', '弩炮大象', '医疗大象', '埃米尔战士',
+                    '标签5', '战象', '弩炮大象', '医疗大象', '埃米尔战士', '终止标签',
+
                 ]
             },
             {
@@ -711,7 +712,7 @@
         };
 
         // =========================================================
-        // 自动生成表格（支持 1格2单位、2格3单位、3格4单位）
+        // 自动生成表格（支持 '标签5' / 'span:5' 标签包裹模式）
         // =========================================================
         function generateTable() {
             $table.empty();
@@ -722,36 +723,14 @@
             let $tr = $('<tr></tr>');
             let currentSpans = 0; // 记录当前行已占用的列数(上限 5)
 
-            units.forEach(unitName => {
-                if (!unitName || unitName.trim() === '') {
-                    if (currentSpans + 1 > 5) {
-                        while (currentSpans < 5) {
-                            $tr.append($('<td>&nbsp;</td>'));
-                            currentSpans++;
-                        }
-                        $table.append($tr);
-                        $tr = $('<tr></tr>');
-                        currentSpans = 0;
-                    }
-                    $tr.append($('<td>&nbsp;</td>'));
-                    currentSpans += 1;
-                    return;
-                }
+            // 标签解析状态变量
+            let inGroup = false;
+            let groupSpan = 1;
+            let groupUnits = [];
 
-                const subUnits = unitName.split('/').map(s => s.trim());
-                const count = subUnits.length;
-
-                // 智能计算占用列数：4个单位占3格，3个单位占2格，1-2个单位占1格
-                let cellSpan = 1;
-                if (count >= 4) {
-                    cellSpan = 3;
-                } else if (count === 3) {
-                    cellSpan = 2;
-                } else {
-                    cellSpan = 1;
-                }
-
-                // 如果当前行放不下，自动补充空格子并换行
+            // 渲染一个单元格（无论是单单位还是组合单位）的闭包函数
+            function renderCell(cellSpan, unitList) {
+                // 如果当前行放不下，补充空格子并换新行
                 if (currentSpans + cellSpan > 5) {
                     while (currentSpans < 5) {
                         $tr.append($('<td>&nbsp;</td>'));
@@ -764,14 +743,14 @@
 
                 const $td = $('<td></td>');
                 if (cellSpan > 1) {
-                    $td.attr('colspan', cellSpan); // 设置跨列数
+                    $td.attr('colspan', cellSpan); // 跨指定列数
                 }
 
-                // 多单位处理
-                if (count > 1) {
+                // 多单位平分空间
+                if (unitList.length > 1) {
                     const $box = $('<div class="multi-unit-box"></div>');
 
-                    subUnits.forEach(subName => {
+                    unitList.forEach(subName => {
                         const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${subName}.png`;
                         const $img = $('<img>');
                         $img.addClass('multi-unit-img');
@@ -782,18 +761,72 @@
 
                     $td.append($box);
                 }
-                // 单单位处理
-                else {
+                // 单单位或空格子
+                else if (unitList.length === 1 && unitList[0] !== '') {
+                    const unitName = unitList[0];
                     const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${unitName}.png`;
                     const $img = $('<img>');
                     $img.attr('data-aoe4unit', imgPath);
                     $img.data('original-src', imgPath);
                     $td.append($img);
+                } else {
+                    $td.html('&nbsp;');
                 }
 
                 $tr.append($td);
                 currentSpans += cellSpan;
+            }
+
+            units.forEach(item => {
+                if (!item) return;
+                const trimmedItem = item.trim();
+
+                // 1. 检查是否是【开头标签】(如 "标签5", "span:5", "span5")
+                const startMatch = trimmedItem.match(/^(?:span|标签)[:\s=]?(\d+)/i);
+                if (startMatch) {
+                    inGroup = true;
+                    groupSpan = Math.min(parseInt(startMatch[1]), 5); // 最多 5 格
+                    groupUnits = [];
+                    return;
+                }
+
+                // 2. 检查是否是【结束标签】(如 "终止标签", "span:end", "end")
+                const isEnd = /^(?:end|span:end|终止标签|\/span)$/i.test(trimmedItem);
+                if (isEnd && inGroup) {
+                    renderCell(groupSpan, groupUnits);
+                    inGroup = false;
+                    groupSpan = 1;
+                    groupUnits = [];
+                    return;
+                }
+
+                // 3. 如果在标签内部，收集单位名
+                if (inGroup) {
+                    groupUnits.push(trimmedItem);
+                    return;
+                }
+
+                // 4. 不在标签内，检查是否是斜杠单行多单位 "A/B/C"
+                if (trimmedItem.includes('/')) {
+                    const subUnits = trimmedItem.split('/').map(s => s.trim());
+                    let cellSpan = 1;
+                    if (subUnits.length >= 6) cellSpan = 5;
+                    else if (subUnits.length === 5) cellSpan = 4;
+                    else if (subUnits.length === 4) cellSpan = 3;
+                    else if (subUnits.length === 3) cellSpan = 2;
+
+                    renderCell(cellSpan, subUnits);
+                }
+                // 5. 普通单单位或空格
+                else {
+                    renderCell(1, [trimmedItem]);
+                }
             });
+
+            // 如果数组结束时标签未闭合，自动渲染剩余内容
+            if (inGroup && groupUnits.length > 0) {
+                renderCell(groupSpan, groupUnits);
+            }
 
             // 补齐最后一行
             if (currentSpans > 0) {
@@ -804,35 +837,7 @@
                 $table.append($tr);
             }
         }
-        // =========================================================
-        // 文明按钮
-        // =========================================================
-        $('.civ-selector a').on('click', function (e) {
-            e.preventDefault();
-            $('.civactbtn')
-                .removeClass('active');
-            $(this)
-                .addClass('active');
-            const id =
-                $(this).attr('id');
-            const civId =
-                id.replace(
-                    'Button0',
-                    ''
-                );
-            currentCiv =
-                civId;
-            const civData =
-                civTables.find(
-                    c => c.civname === civId
-                );
-            currentCivLink =
-                civData
-                    ? civData.civlinkname
-                    : civId;
-            generateTable();
-            updateImageSources(currentAge);
-        });
+
         // =========================================================
         // 时代按钮 (Ⅰ, Ⅱ, Ⅲ, IV)
         // =========================================================
