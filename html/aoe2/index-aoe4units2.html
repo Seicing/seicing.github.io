@@ -581,6 +581,8 @@
             rus: 'Rus',
             ott: 'Ottomans',
             mal: 'Malians',
+            vik: 'Vikings',
+            sco: 'Scots',
         };
         // =========================================================
         // 当前状态
@@ -804,11 +806,52 @@
             $(this).toggleClass('active');
             updateImageSources(currentAge);
         });
+
+
         // =========================================================
-        // 应用隐藏规则（隐藏时彻底归零高度，防止撑开行高）
+        // 判断某个单位在指定时代是否被 hidingRules 屏蔽
+        // =========================================================
+        function isUnitHiddenByRule(civ, age, unitName) {
+            if (!civ || !unitName) return false;
+            const currentCivIcon = 'CivIcon-' + civIconMap[civ] + '.png';
+            let isHidden = false;
+            const cleanUnitName = unitName.replace('.png', '');
+
+            hidingRules.forEach(rule => {
+                let conditionsMet = true;
+                if (rule.conditions.age) {
+                    if (Array.isArray(rule.conditions.age)) {
+                        if (!rule.conditions.age.includes(age)) conditionsMet = false;
+                    } else if (rule.conditions.age != age) {
+                        conditionsMet = false;
+                    }
+                }
+                if (rule.conditions.civ && rule.conditions.civ != civ) conditionsMet = false;
+                if (rule.conditions.civIcon && rule.conditions.civIcon != currentCivIcon) conditionsMet = false;
+
+                if (conditionsMet) {
+                    rule.actions.forEach(action => {
+                        if (action.type === 'hideImage') {
+                            const ruleImageName = action.imageName.replace('.png', '');
+                            if (ruleImageName === cleanUnitName) {
+                                isHidden = true;
+                            }
+                        }
+                    });
+                }
+            });
+
+            return isHidden;
+        }
+
+        // =========================================================
+        // 应用隐藏规则
         // =========================================================
         function applyHidingRules(age) {
-            // 当前文明对应的 icon 文件名
+            const isAlign = $('#alignBtn').hasClass('active');
+            // 开启“对齐”时，以 updateImageSources 算出的解锁时代为准，跳过二次强行隐藏
+            if (isAlign) return;
+
             const currentCivIcon =
                 'CivIcon-' +
                 civIconMap[currentCiv] +
@@ -877,6 +920,13 @@
             });
         }
 
+
+
+
+
+
+
+
         // =========================================================
         // 递归加载候选时代的图片
         // =========================================================
@@ -923,6 +973,8 @@
             $img.attr('src', newSrc);
         }
 
+
+
         // =========================================================
         // 更新图片
         // =========================================================
@@ -951,11 +1003,17 @@
                     if (specialRule && specialRule.minAge) {
                         startAge = Math.max(age, specialRule.minAge);
                     }
+                    // 开启对齐：从当前时代开始往后找，跳过该文明在早期被屏蔽的时代
                     for (let a = startAge; a <= 4; a++) {
-                        ageList.push(a);
+                        if (!isUnitHiddenByRule(currentCiv, a, unitName)) {
+                            ageList.push(a);
+                        }
                     }
                 } else {
-                    if (specialRule && specialRule.minAge && age < specialRule.minAge) {
+                    // 未开启对齐：如果在当前时代被屏蔽或未达到最小时代，直接隐藏
+                    if (isUnitHiddenByRule(currentCiv, age, unitName)) {
+                        ageList = [];
+                    } else if (specialRule && specialRule.minAge && age < specialRule.minAge) {
                         ageList = [];
                     } else {
                         ageList = [age];
@@ -976,6 +1034,7 @@
                 syncImageScales();
             });
         }
+
 
         // =========================================================
         // 同步缩放（正确吸附底部 & 忽略隐藏图片）
