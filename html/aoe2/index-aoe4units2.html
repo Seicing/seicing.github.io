@@ -152,18 +152,20 @@
         transform: scale(1.08);
     }
 
-    /* 双单位并排容器 */
-    .dual-unit-box {
+    /* 统一多单位容器样式 */
+    .multi-unit-box {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        /* 核心：在格子内均匀散开，拉开小人之间的间距 */
         align-items: flex-end;
+        /* 底部对齐 */
         width: 100%;
         height: 100%;
     }
 
-    /* 防止浏览器强制挤压图片宽度，保持正常 100% 比例 */
-    .dual-unit-img {
+    .multi-unit-img {
         flex-shrink: 0;
+        /* 保持图片 1:1 正常比例不被挤压 */
     }
 </style>
 
@@ -375,7 +377,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '女武者', '火枪兵', '神道教神主/佛教僧侣', '村民男/村民女',
-                    '女武艺者', '大筒兵', '忍者', '刀剑旗本武士', '弓箭旗本武士', '骑马旗本武士',
+                    '女武艺者', '大筒兵', '忍者/刀剑旗本武士/弓箭旗本武士/骑马旗本武士',
                 ]
             },
             {
@@ -446,9 +448,8 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '', '僧侣', '村民男/村民女',
-                    '同伴骑士', '医院骑士', '萨金特卫兵', '', '',
-                    '标枪骑兵', '热那亚弩手', '重装长矛兵', '', '',
-                    '什拉赫塔骑兵', '条顿骑士', '意大利佣兵', '', '',
+                    '同伴骑士', '医院骑士', '萨金特卫兵', '标枪骑兵', '热那亚弩手',
+                    '重装长矛兵', '什拉赫塔骑兵', '条顿骑士', '意大利佣兵', '',
                 ]
             },
             {
@@ -708,61 +709,97 @@
                 minAge: 2
             },
         };
+
         // =========================================================
-        // 自动生成表格（支持斜杠 '/' 双单位平分格子）
+        // 自动生成表格（支持 1格2单位、2格3单位、3格4单位）
         // =========================================================
         function generateTable() {
             $table.empty();
-            const civData =
-                civTables.find(
-                    c => c.civname === currentCiv
-                );
+            const civData = civTables.find(c => c.civname === currentCiv);
             if (!civData) return;
             const units = civData.civunits;
-            const columnsPerRow = 5;
 
-            for (let i = 0; i < units.length; i += columnsPerRow) {
-                const $tr = $('<tr></tr>');
-                const rowUnits = units.slice(i, i + columnsPerRow);
+            let $tr = $('<tr></tr>');
+            let currentSpans = 0; // 记录当前行已占用的列数(上限 5)
 
-                rowUnits.forEach(unitName => {
-                    const $td = $('<td></td>');
-
-                    if (!unitName || unitName.trim() === '') {
-                        $td.html('&nbsp;');
+            units.forEach(unitName => {
+                if (!unitName || unitName.trim() === '') {
+                    if (currentSpans + 1 > 5) {
+                        while (currentSpans < 5) {
+                            $tr.append($('<td>&nbsp;</td>'));
+                            currentSpans++;
+                        }
+                        $table.append($tr);
+                        $tr = $('<tr></tr>');
+                        currentSpans = 0;
                     }
-                    // 处理双单位格式，如 "村民男/村民女"
-                    else if (unitName.includes('/')) {
-                        const subUnits = unitName.split('/');
-                        const $box = $('<div class="dual-unit-box"></div>');
+                    $tr.append($('<td>&nbsp;</td>'));
+                    currentSpans += 1;
+                    return;
+                }
 
-                        subUnits.forEach(subName => {
-                            subName = subName.trim();
-                            const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${subName}.png`;
-                            const $img = $('<img>');
-                            $img.addClass('dual-unit-img'); // 标记为双单位图片
-                            $img.attr('data-aoe4unit', imgPath);
-                            $img.data('original-src', imgPath);
-                            $box.append($img);
-                        });
+                const subUnits = unitName.split('/').map(s => s.trim());
+                const count = subUnits.length;
 
-                        $td.append($box);
+                // 智能计算占用列数：4个单位占3格，3个单位占2格，1-2个单位占1格
+                let cellSpan = 1;
+                if (count >= 4) {
+                    cellSpan = 3;
+                } else if (count === 3) {
+                    cellSpan = 2;
+                } else {
+                    cellSpan = 1;
+                }
+
+                // 如果当前行放不下，自动补充空格子并换行
+                if (currentSpans + cellSpan > 5) {
+                    while (currentSpans < 5) {
+                        $tr.append($('<td>&nbsp;</td>'));
+                        currentSpans++;
                     }
-                    // 普通单单位格
-                    else {
-                        const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${unitName}.png`;
+                    $table.append($tr);
+                    $tr = $('<tr></tr>');
+                    currentSpans = 0;
+                }
+
+                const $td = $('<td></td>');
+                if (cellSpan > 1) {
+                    $td.attr('colspan', cellSpan); // 设置跨列数
+                }
+
+                // 多单位处理
+                if (count > 1) {
+                    const $box = $('<div class="multi-unit-box"></div>');
+
+                    subUnits.forEach(subName => {
+                        const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${subName}.png`;
                         const $img = $('<img>');
+                        $img.addClass('multi-unit-img');
                         $img.attr('data-aoe4unit', imgPath);
                         $img.data('original-src', imgPath);
-                        $td.append($img);
-                    }
+                        $box.append($img);
+                    });
 
-                    $tr.append($td);
-                });
+                    $td.append($box);
+                }
+                // 单单位处理
+                else {
+                    const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${currentCivLink}/${unitName}.png`;
+                    const $img = $('<img>');
+                    $img.attr('data-aoe4unit', imgPath);
+                    $img.data('original-src', imgPath);
+                    $td.append($img);
+                }
 
-                // 补满 5 列
-                while ($tr.children().length < 5) {
+                $tr.append($td);
+                currentSpans += cellSpan;
+            });
+
+            // 补齐最后一行
+            if (currentSpans > 0) {
+                while (currentSpans < 5) {
                     $tr.append($('<td>&nbsp;</td>'));
+                    currentSpans++;
                 }
                 $table.append($tr);
             }
