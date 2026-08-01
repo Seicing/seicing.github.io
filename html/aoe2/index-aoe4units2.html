@@ -317,24 +317,79 @@
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
 
-        // 导出透明底 PNG 图片
+        // =========================================================
+        // 高清透明底 PNG 导出 (解决右侧切边 & 解决图片压扁)
+        // =========================================================
         $(document).on('click', '#exportPngBtn', function () {
             const $btn = $(this);
             $btn.text('Exporting...');
 
-            html2canvas(document.getElementById('customers'), {
-                backgroundColor: null, // 关键：100% 透明底
-                useCORS: true,         // 允许跨域图片渲染
-                scale: 2               // 2倍高清导出
+            const $tableEl = $('#customers');
+            const el = $tableEl[0];
+
+            // 1. 临时保存原样式，并在后台瞬时清除限高，防止截图插件压扁小人
+            const $imgs = $tableEl.find('img:not(.civ-flag)');
+            const originalStyles = [];
+
+            $imgs.each(function () {
+                const $img = $(this);
+                originalStyles.push({
+                    $img: $img,
+                    width: $img.css('width'),
+                    height: $img.css('height'),
+                    maxWidth: $img.css('max-width'),
+                    objectFit: $img.css('object-fit'),
+                    objectPosition: $img.css('object-position')
+                });
+
+                // 瞬时恢复自适应高度
+                $img.css({
+                    height: 'auto',
+                    'object-fit': '',
+                    'object-position': ''
+                });
+            });
+
+            // 2. 使用 scrollWidth 捕获完整宽度（防止右侧切边），进行 2倍高清截图
+            html2canvas(el, {
+                backgroundColor: null,     // 100% 透明背景
+                useCORS: true,             // 支持跨域图片
+                scale: 2,                  // 2倍高清
+                width: el.scrollWidth,     // 关键：捕获完整内容宽度，防止右侧被切
+                height: el.scrollHeight    // 捕获完整高度
             }).then(canvas => {
+                // 3. 下载图片
                 const a = document.createElement('a');
-                a.download = `AOE4_${currentCiv}_Age${currentAge}.png`;
+                const titleText = (typeof currentCiv !== 'undefined') ? currentCiv : currentUnitCategory;
+                a.download = `AOE4_${titleText}_Age${currentAge}.png`;
                 a.href = canvas.toDataURL('image/png');
                 a.click();
+
+                // 4. 截图完成后，立刻恢复网页上的限高样式
+                originalStyles.forEach(item => {
+                    item.$img.css({
+                        width: item.width,
+                        height: item.height,
+                        'max-width': item.maxWidth,
+                        'object-fit': item.objectFit,
+                        'object-position': item.objectPosition
+                    });
+                });
+
                 $btn.text('Export PNG');
             }).catch(err => {
                 console.error('导出失败:', err);
-                alert('导出图片失败，请检查图片跨域设置。');
+                // 发生错误时也要还原样式
+                originalStyles.forEach(item => {
+                    item.$img.css({
+                        width: item.width,
+                        height: item.height,
+                        'max-width': item.maxWidth,
+                        'object-fit': item.objectFit,
+                        'object-position': item.objectPosition
+                    });
+                });
+                alert('导出图片失败，请检查网络或跨域设置。');
                 $btn.text('Export PNG');
             });
         });
