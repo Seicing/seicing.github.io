@@ -340,6 +340,26 @@
             $(this).toggleClass('active'); // 独立切换，互不干扰
             syncImageScales();
         });
+
+        // =========================================================
+        // 文明选择按钮点击事件（把补全的代码粘贴在这里）
+        // =========================================================
+        $(document).on('click', '.civ-selector a', function (e) {
+            e.preventDefault();
+            $('.civactbtn').removeClass('active');
+            $(this).addClass('active');
+
+            const id = $(this).attr('id');
+            const civId = id.replace('Button0', '');
+            currentCiv = civId;
+
+            const civData = civTables.find(c => c.civname === civId);
+            currentCivLink = civData ? civData.civlinkname : civId;
+
+            generateTable();
+            updateImageSources(currentAge);
+        });
+
         // =========================================================
         // 文明数据
         // =========================================================
@@ -449,7 +469,7 @@
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '', '僧侣', '村民男/村民女',
                     '同伴骑士', '医院骑士', '萨金特卫兵', '标枪骑兵', '热那亚弩手',
-                    '重装长矛兵', '什拉赫塔骑兵', '条顿骑士', '意大利佣兵', '',
+                    '重装长矛兵', '什拉赫塔骑兵', '条顿骑士', '意大利佣兵', '朝圣者男/朝圣者女',
                 ]
             },
             {
@@ -708,6 +728,18 @@
             '奥斯曼军乐队.png': {
                 noAgeSuffix: true,
                 minAge: 2
+            },
+            '朝圣者男.png': {
+                noAgeSuffix: true,
+                minAge: 1
+            },
+            '朝圣者女.png': {
+                noAgeSuffix: true,
+                minAge: 1
+            },
+            '使者.png': {
+                noAgeSuffix: true,
+                minAge: 1
             },
         };
 
