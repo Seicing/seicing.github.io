@@ -173,11 +173,17 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="4299"></div>
-<div style="width:0; height:0; overflow:hidden;">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png" style="display:none;">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵2.png" style="display:none;">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵3.png" style="display:none;">
-    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵4.png" style="display:none;">
+
+<!-- 隐藏的侦察兵基准测量容器（确保缩放和限高 100% 精确） -->
+<div id="refScoutContainer"
+    style="position: absolute; top: -9999px; left: -9999px; visibility: hidden; pointer-events: none; width: 75%;">
+    <table style="width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 8px 10px;">
+        <tr>
+            <td style="width: 16.666%; padding: 0;">
+                <img id="refScoutImg" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png" style="width:100%; height:auto;">
+            </td>
+        </tr>
+    </table>
 </div>
 
 <!-- 兵种对比选择器 -->
@@ -203,6 +209,7 @@
         <button class="age-button" id="alignBtn">A</button>
     </div>
     <div id="tableSizeButtons">
+        <button class="table-size-btn" id="hideIconBtn">Hide Icon</button>
         <button class="table-size-btn" id="limitHeightBtn">Max Ht.</button>
         <button class="table-size-btn size-btn" data-width="50">50%</button>
         <button class="table-size-btn size-btn active" data-width="75">75%</button>
@@ -238,14 +245,7 @@
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
 
-        // =========================================================
         // 文明顺序定义 (严格按照要求排布 25 个文明)
-        // Row 1: chi, zxl, fre, jda, hre, otd
-        // Row 2: eng, hol, sul, tug, abb, ayy
-        // Row 3: mon, goh, jpn, sen, byz, mac
-        // Row 4: rus, ott, mal, kcr, jin, vik
-        // Row 5: sco
-        // =========================================================
         const civOrder = [
             'chi', 'zxl', 'fre', 'jda', 'hre', 'otd',
             'eng', 'hol', 'sul', 'tug', 'abb', 'ayy',
@@ -256,31 +256,11 @@
 
         // 文明图标映射
         const civIconMap = {
-            chi: 'Chinese',
-            zxl: 'ZhuXiLegacy',
-            jin: 'Jindynasty',
-            jpn: 'Japanese',
-            sen: 'Sengokudaimyo',
-            hre: 'Holyromanempire',
-            otd: 'Orderofthedragon',
-            eng: 'English',
-            hol: 'Houseoflancaster',
-            fre: 'French',
-            jda: 'Jeannedarc',
-            kcr: 'Knightstemplar',
-            abb: 'Abbasiddynasty',
-            ayy: 'Ayyubids',
-            sul: 'Delhisultanate',
-            tug: 'Tughlaqdynasty',
-            mon: 'Mongols',
-            goh: 'Goldenhorde',
-            byz: 'Byzantines',
-            mac: 'Macedoniandynasty',
-            rus: 'Rus',
-            ott: 'Ottomans',
-            mal: 'Malians',
-            vik: 'Vikings',
-            sco: 'Scots',
+            chi: 'Chinese', zxl: 'ZhuXiLegacy', jin: 'Jindynasty', jpn: 'Japanese', sen: 'Sengokudaimyo',
+            hre: 'Holyromanempire', otd: 'Orderofthedragon', eng: 'English', hol: 'Houseoflancaster', fre: 'French',
+            jda: 'Jeannedarc', kcr: 'Knightstemplar', abb: 'Abbasiddynasty', ayy: 'Ayyubids', sul: 'Delhisultanate',
+            tug: 'Tughlaqdynasty', mon: 'Mongols', goh: 'Goldenhorde', byz: 'Byzantines', mac: 'Macedoniandynasty',
+            rus: 'Rus', ott: 'Ottomans', mal: 'Malians', vik: 'Vikings', sco: 'Scots',
         };
 
         // 文明资源路径映射
@@ -364,6 +344,8 @@
             '圣女贞德骑射手.png': { noAgeSuffix: true, minAge: 3 },
             '圣女贞德爆破加农炮.png': { noAgeSuffix: true, minAge: 4 },
             '圣女贞德神射手.png': { noAgeSuffix: true, minAge: 4 },
+            '贞德的骑兵.png': { noAgeSuffix: true, minAge: 2 },
+            '贞德的冠军剑士.png': { noAgeSuffix: true, minAge: 2 },
         };
 
         // 当前状态
@@ -378,6 +360,8 @@
             $table.empty();
             const columnsPerRow = 6;
             let $tr = $('<tr></tr>');
+
+            const isHideIcon = $('#hideIconBtn').hasClass('active');
 
             civOrder.forEach((civKey, index) => {
                 const civLink = civLinkMap[civKey] || civKey;
@@ -421,6 +405,9 @@
                 const $flag = $('<img>');
                 $flag.addClass('civ-flag');
                 $flag.attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
+                if (isHideIcon) {
+                    $flag.hide();
+                }
                 $td.append($flag);
 
                 $tr.append($td);
@@ -475,6 +462,8 @@
             $(this).addClass('active');
             const widthPercent = parseInt($(this).data('width'));
             $('#customers').css('width', widthPercent + '%');
+            $('#refScoutContainer').css('width', widthPercent + '%'); // 同步测量容器宽度
+
             $table.find('img:not(.civ-flag)').css({ width: '', 'max-width': '100%' });
             requestAnimationFrame(function () { syncImageScales(); });
         });
@@ -483,6 +472,16 @@
         $(document).on('click', '#limitHeightBtn', function () {
             $(this).toggleClass('active');
             syncImageScales();
+        });
+
+        // Hide Icon 隐藏国旗控制
+        $(document).on('click', '#hideIconBtn', function () {
+            $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+                $('.civ-flag').hide();
+            } else {
+                $('.civ-flag').show();
+            }
         });
 
         // =========================================================
@@ -651,7 +650,9 @@
             });
         }
 
-        // 同步缩放比例与裁切
+        // =========================================================
+        // 同步缩放比例与裁切 (使用绝对精确的后台侦察兵测量基准)
+        // =========================================================
         function syncImageScales() {
             $table.find('img:not(.civ-flag)').each(function () {
                 if ($(this).is(':visible')) {
@@ -662,32 +663,18 @@
                 }
             });
 
-            let scaleRatio = 1.0;
-            let refFound = false;
+            // 从后台侦察兵基准测量容器中获取绝对标准的缩放比例
+            const refImg = document.getElementById('refScoutImg');
+            if (!refImg) return;
 
-            // 寻找侦察兵或有效可见图片作为基准
-            $table.find('img:not(.civ-flag)').each(function () {
-                const src = $(this).attr('src') || '';
-                if (src.includes('侦察兵') && $(this).is(':visible')) {
-                    const refNatW = this.naturalWidth;
-                    if (refNatW > 0) {
-                        const refCurW = this.getBoundingClientRect().width;
-                        scaleRatio = refCurW / refNatW;
-                        refFound = true;
-                        return false;
-                    }
-                }
-            });
+            const refNatW = refImg.naturalWidth;
+            if (refNatW <= 0) return;
 
-            if (!refFound) {
-                const $firstImg = $table.find('img:not(.civ-flag):visible').first();
-                if ($firstImg.length && $firstImg[0].naturalWidth > 0) {
-                    scaleRatio = $firstImg[0].getBoundingClientRect().width / $firstImg[0].naturalWidth;
-                }
-            }
+            const refCurW = refImg.getBoundingClientRect().width;
+            const scaleRatio = refCurW / refNatW;
 
             const isHeightLimited = $('#limitHeightBtn').hasClass('active');
-            const scoutWidth = 100 * scaleRatio;
+            const scoutWidth = refCurW;
             const maxAllowedHeight = scoutWidth * 1.5;
 
             $table.find('img:not(.civ-flag)').each(function () {

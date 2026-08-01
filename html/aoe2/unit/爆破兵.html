@@ -1,75 +1,22 @@
-﻿<!DOCTYPE html>
-<html style="height:100%;">
+﻿<meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
-    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
-    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
-    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
-<title>爆破兵</title>
-<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#techno').load('https://seicing.com/js/list/AOE2DIC.html', function () {
-            document.getElementById("techno").style.display = "block";
-        })
-    })
-    $(document).ready(function () {
-        $('#Layer2').load('https://seicing.com/js/list/AOE2DIC3.html')
-    })
-</script>
-<style>
-    li {
-        line-height: 20px
-    }
-</style>
-</head>
+<!--Title-->
 
-<body class="layout-headless" style="height:100%;" id='scroll-2'>
-    <script>
-        (function () {
-            const getCookie = (name) => {
-                const nameEQ = name + "=";
-                const ca = document.cookie.split(';');
-                for (let i = 0; i < ca.length; i++) {
-                    let c = ca[i];
-                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-                }
-                return null;
-            };
-            const theme = getCookie('theme') || 'light';
-            if (theme === 'dark') {
-                document.body.classList.add('theme-dark');
-            }
-        })();
-    </script>
-    <button id="sidebar-toggle-button">☰</button>
-    <button id="back-to-top-button">▲</button>
-    <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
-        <div id="wrapper2" style="height:auto;">
-            <div id="page" style="height:100%;">
-                <div id="content">
-                    <div class="post">
-                        <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div class="rightline">
+<!--Content-->
+<div class="rightline">
     <table id="celp250">
         <tr class="bcF5F8FA textce">
             <td colspan="2"><span class="aoe4title">爆破兵(Petard)</span></td>
         </tr>
         <tr class="textce">
-            <td colspan="2"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/爆破兵.webp" width="200px"></td>
+            <td colspan="2"><img src="$res/3fatcatpool/aoe2/icon/爆破兵.webp" width="200px"></td>
         </tr>
         <tr class="bcF5F8FA textce">
             <td colspan="2"><span class="aoe4title">单位信息</span></td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span class="aoe4title">发行版本</span></td>
-            <td><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/征服者.png" width="20px">征服者</td>
+            <td><img src="$res/3fatcatpool/aoe2/version/征服者.png" width="20px">征服者</td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span class="aoe4title">兵种类型</span></td>
@@ -88,8 +35,8 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span class="aoe4title">成本</span></td>
-            <td><img width=20px src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png>65 <img width=20px
-                    src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png>20
+            <td><img width=20px src=$res/3fatcatpool/aoe4/tech/肉.png>65 <img width=20px
+                    src=$res/3fatcatpool/aoe4/tech/金.png>20
             </td>
         </tr>
         <tr class="textle">
@@ -224,13 +171,13 @@
     </H1>
     <hr class="hrsty">
     <ul>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Aztecs.png" width="25px">阿兹特克：<span class="阿兹特克训练速度"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Burmese.png" width="25px">缅甸：<span class="缅甸便宜修道院科技"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.png" width="25px">凯尔特：<span class="凯尔特视野锁定"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Chinese.png" width="25px">中国：<span class="中国便宜科技"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.png" width="25px">葡萄牙：<span class="葡萄牙黄金费用"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.png" width="25px">越南：<span class="越南免费征招"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Tupi.png" width="25px">图皮：<span class="图皮死亡回馈"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Aztecs.png" width="25px">阿兹特克：<span class="阿兹特克训练速度"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Burmese.png" width="25px">缅甸：<span class="缅甸便宜修道院科技"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Celts.png" width="25px">凯尔特：<span class="凯尔特视野锁定"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Chinese.png" width="25px">中国：<span class="中国便宜科技"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Portuguese.png" width="25px">葡萄牙：<span class="葡萄牙黄金费用"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Vietnamese.png" width="25px">越南：<span class="越南免费征招"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Tupi.png" width="25px">图皮：<span class="图皮死亡回馈"></span></li>
     </ul>
     <table width="500px" id="aoe4de" style="border:1px solid #222222;">
         <tr class="bcF5F8FA textce">
@@ -240,25 +187,25 @@
             <td class="bcF5F8FA"><span class="aoe4title">攻击力</span></td>
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);SiegeEngineers();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/攻城技师.webp" width="20px"></a>攻城技师(+40%对所有建筑伤害)<br>
+                        src="$res/3fatcatpool/aoe2/icon/tech/攻城技师.webp" width="20px"></a>攻城技师(+40%对所有建筑伤害)<br>
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span class="aoe4title">招降抵抗</span></td>
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/虔诚.webp" width="20px"></a>虔诚(被招降困难15%)<br>
+                        src="$res/3fatcatpool/aoe2/icon/tech/虔诚.webp" width="20px"></a>虔诚(被招降困难15%)<br>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Faith();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/信念.webp" width="20px"></a>信念(被招降困难50%)<br>
+                        src="$res/3fatcatpool/aoe2/icon/tech/信念.webp" width="20px"></a>信念(被招降困难50%)<br>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Heresy();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/异教.webp" width="20px"></a>异教(被招降时马上死亡)<br>
+                        src="$res/3fatcatpool/aoe2/icon/tech/异教.webp" width="20px"></a>异教(被招降时马上死亡)<br>
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA"><span class="aoe4title">生产速度</span></td>
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/征招.webp" width="20px"></a>征招(+33%)<br>
+                        src="$res/3fatcatpool/aoe2/icon/tech/征招.webp" width="20px"></a>征招(+33%)<br>
             </td>
         </tr>
     </table>
@@ -272,13 +219,13 @@
     </H1>
     <hr class="hrsty">
     <ul>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Berbers.png" width="25px">柏柏尔：研发<img
-                src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp" width="20px">土堡后，<span class="土堡"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.png" width="25px">葡萄牙：<span class="葡萄牙团队加成"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Lithuanians.png" width="25px">立陶宛：<span class="立陶宛团队加成"></span>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Berbers.png" width="25px">柏柏尔：研发<img
+                src="$res/3fatcatpool/aoe2/icon/tech/银冠科技.webp" width="20px">土堡后，<span class="土堡"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Portuguese.png" width="25px">葡萄牙：<span class="葡萄牙团队加成"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Lithuanians.png" width="25px">立陶宛：<span class="立陶宛团队加成"></span>
         </li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Teutons.png" width="25px">条顿：<span class="条顿团队加成"></span></li>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Malians.png" width="25px">马里：<span class="马里团队加成"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Teutons.png" width="25px">条顿：<span class="条顿团队加成"></span></li>
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Malians.png" width="25px">马里：<span class="马里团队加成"></span></li>
     </ul>
 </div>
 
@@ -302,7 +249,7 @@
 
     <b>最后的可汗</b>
     <ul>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Portuguese.png"
+        <li><img src="$res/3fatcatpool/aoe2/CivIcon-Portuguese.png"
                 width="25px">葡萄牙：39284版本后，黄金成本-20%，42848版本后，科技研发速度+30%</li>
     </ul>
 </div>
@@ -328,12 +275,12 @@
     <table id="empire">
         <tr>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/爆破兵.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/爆破兵.png"></a>
+                <a href="$res/3fatcatpool/aoe2/pic/爆破兵.png" target="_blank">
+                    <img src="$res/3fatcatpool/aoe2/pic/爆破兵.png"></a>
             </td>
             <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Petard_render.webp" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/Petard_render.webp"></a>
+                <a href="$res/3fatcatpool/aoe2/pic/Petard_render.webp" target="_blank">
+                    <img src="$res/3fatcatpool/aoe2/pic/Petard_render.webp"></a>
             </td>
         </tr>
         <tr>
@@ -348,42 +295,45 @@
 </div>
 
 
-                        </div>
-                    </div>
-                </div>
-                <div id="sidebar" style="position:fixed; height:100%; width:220px">
-                    <div id='scroll-1'
-                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
-                        <b>
+
+<!--List-->
+<b>
     <!--内部标记-->
     <a id="bigfonter" style="color:#857E6E;cursor:pointer;">大字体</a>
     <a id="darkmoder" style="color:#857E6E;cursor:pointer;">夜间模式</a>
 </b>
 <br><br>
-<a href="https://seicing.com/html/aoe2/index-aoe2units.html"><b>返回上一页</b></a><br><br>
+<a href="$html/aoe2/index-aoe2units.html"><b>返回上一页</b></a><br><br>
 <a href="#jia">简介</a><br>
 <a href="#sp">加成</a><br>
 <a href="#appeared">团队协同</a><br>
 <a href="#change">更新日志</a><br>
 <a href="#relk">历史</a><br>
 <a href="#oth">杂项</a><br>
-                    </div>
-                </div>
-                <div style="clear: both;">&nbsp;</div>
-                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
-                    
-<a href="https://seicing.com/html/aoe2/index-aoe2units.html"><b>返回上一页</b></a>
-                </div>
-                <div style="clear: both;">&nbsp;</div>
-            </div>
 
-        </div>
-    </div>
+<!--Bottom-->
+<a href="$html/aoe2/index-aoe2units.html"><b>返回上一页</b></a>
 
-</body>
+<!--Head-->
+<title>爆破兵</title>
+<link href="$css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="$js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#techno').load('$js/list/AOE2DIC.html', function () {
+            document.getElementById("techno").style.display = "block";
+        })
+    })
+    $(document).ready(function () {
+        $('#Layer2').load('$js/list/AOE2DIC3.html')
+    })
+</script>
+<style>
+    li {
+        line-height: 20px
+    }
+</style>
 
-
-<script language="javascript" src="https://seicing.com/js/sound.js"></script>
-<script language="javascript" src="https://seicing.com/js/techaoe2.js" onload="aoetechPoeRush()"></script>
-
-</html>
+<!--Tail-->
+<script language="javascript" src="$js/sound.js"></script>
+<script language="javascript" src="$js/techaoe2.js" onload="aoetechPoeRush()"></script>
