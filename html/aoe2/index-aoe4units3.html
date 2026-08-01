@@ -64,16 +64,42 @@
         border-color: #50473E;
     }
 
-    /* 兵种选择栏 */
+    /* 兵种选择栏 (去除常规按钮框，纯图标 + 橙色渐变外发光) */
     .unit-selector {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 10px;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
-    /* 表格与 6 列样式 */
+    .unit-act-btn {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        outline: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .unit-act-btn img {
+        width: 36px;
+        height: 36px;
+        display: block;
+        transition: filter 0.2s ease, transform 0.2s ease;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+    }
+
+    /* 激活状态：3px/6px 橙色发光光晕 */
+    .unit-act-btn.active img {
+        filter: drop-shadow(0 0 3px #ff8c00) drop-shadow(0 0 6px #ff8c00);
+        transform: scale(1.12);
+    }
+
+    /* 表格与 5 列样式 */
     #customers {
         width: 800px;
         max-width: 100%;
@@ -85,8 +111,8 @@
     }
 
     #customers td {
-        width: 16.666%;
-        /* 严格 6 列 = 100% / 6 */
+        width: 20%;
+        /* 严格 5 列 = 100% / 5 */
         text-align: center;
         vertical-align: bottom;
         border: none;
@@ -101,14 +127,21 @@
         vertical-align: bottom;
     }
 
-    /* 国旗图标贴在右下角 */
-    .civ-flag {
+    /* 国旗图标容器（支持并排显示双国旗） */
+    .flags-box {
         position: absolute;
         right: 2px;
         bottom: 2px;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .civ-flag {
         width: 20px;
         height: 20px;
-        z-index: 10;
         pointer-events: none;
         filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
     }
@@ -177,40 +210,40 @@
     <img id="scoutRealImg" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png">
 </div>
 
-<!-- 兵种对比选择器 -->
+<!-- 兵种对比选择器 (图标纯净版，带橙色渐变外发光) -->
 <div class="unit-selector">
     <button class="unit-act-btn active" data-unit="长矛兵">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛兵.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛兵.png">
     </button>
     <button class="unit-act-btn" data-unit="武士">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png">
     </button>
     <button class="unit-act-btn" data-unit="侦察兵">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/侦察兵.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/侦察兵.png">
     </button>
     <button class="unit-act-btn" data-unit="骑手">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑手.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑手.png">
     </button>
     <button class="unit-act-btn" data-unit="骑士">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png">
     </button>
     <button class="unit-act-btn" data-unit="步弓手">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/步弓手.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/步弓手.png">
     </button>
     <button class="unit-act-btn" data-unit="弩手">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩手.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩手.png">
     </button>
     <button class="unit-act-btn" data-unit="火枪兵">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png">
     </button>
     <button class="unit-act-btn" data-unit="僧侣">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣.png">
     </button>
     <button class="unit-act-btn" data-unit="骑射手">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑射手.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑射手.png">
     </button>
     <button class="unit-act-btn" data-unit="村民">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/村民.png" width="32px">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/村民.png">
     </button>
 </div>
 
@@ -226,14 +259,14 @@
         <button class="table-size-btn" id="hideIconBtn">Hide Icon</button>
         <button class="table-size-btn" id="limitHeightBtn">Max Ht.</button>
         <button class="table-size-btn size-btn" data-width="50">50%</button>
-        <button class="table-size-btn size-btn" data-width="75">75%</button>
-        <button class="table-size-btn size-btn active" data-width="100">100%</button>
+        <button class="table-size-btn size-btn active" data-width="75">75%</button>
+        <button class="table-size-btn size-btn" data-width="100">100%</button>
     </div>
 </div>
 
 <div style="width:100%;">
     <div>
-        <table id="customers" style="width:100%;float: left;">
+        <table id="customers" style="width:75%;float: left;">
         </table>
     </div>
 </div></div>
@@ -259,14 +292,27 @@
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
 
-        // 文明顺序定义 (严格按照要求排布 25 个文明)
+        // 文明顺序定义 (25 个文明)
         const civOrder = [
-            'chi', 'zxl', 'fre', 'jda', 'hre', 'otd',
-            'eng', 'hol', 'sul', 'tug', 'abb', 'ayy',
-            'mon', 'goh', 'jpn', 'sen', 'byz', 'mac',
-            'rus', 'ott', 'mal', 'kcr', 'jin', 'vik',
-            'sco'
+            'chi', 'fre', 'hre', 'eng', 'sul',
+            'abb', 'mon', 'jpn', 'byz', 'rus',
+            'ott', 'mal', 'vik', 'sco', 'kcr', 'jin',
+            'zxl', 'jda', 'otd', 'hol', 'tug',
+            'ayy', 'goh', 'sen', 'mac',
         ];
+
+        // 变体文明与本体文明的映射关系
+        const variantParentMap = {
+            zxl: 'chi',
+            jda: 'fre',
+            otd: 'hre',
+            hol: 'eng',
+            tug: 'sul',
+            ayy: 'abb',
+            goh: 'mon',
+            sen: 'jpn',
+            mac: 'byz'
+        };
 
         // 文明图标映射
         const civIconMap = {
@@ -289,7 +335,7 @@
         // 兵种分类与特色单位替代映射
         const unitCategoryMap = {
             '长矛兵': { default: '长矛兵', mac: '阿特盖尔', otd: '镀金长矛兵' },
-            '武士': { default: '武士', hol: '伯爵护卫', otd: '镀金武士', mal: '自由民战士' },
+            '武士': { default: '武士', hol: '伯爵护卫', otd: '镀金武士' },
             '侦察兵': { default: '侦察兵' },
             '骑手': { default: '骑手', otd: '镀金骑手', tug: '突袭大象', sen: '日本长枪骑兵' },
             '骑士': { default: '骑士', otd: '镀金骑士', ayy: '骆驼长矛骑兵', mac: '瑞塔利' },
@@ -297,8 +343,8 @@
             '弩手': { default: '弩手', otd: '镀金弩手' },
             '火枪兵': { default: '火枪兵', sen: '火绳枪足轻', zxl: '掷弹兵', otd: '镀金火枪兵' },
             '僧侣': { default: '僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希' },
-            '骑射手': { default: '骑射手', jpn: '女武者', abb: '骆驼射手', mon: '蒙古突骑', goh: '钦察弓兵', sul: '箭塔象', hre: '黑骑兵', ayy: '沙漠掠夺者', kcr: '标枪骑兵', },
-            '村民': { default: '村民男/村民女', }
+            '骑射手': { default: '骑射手', jpn: '女武者', abb: '骆驼射手', mon: '蒙古突骑', goh: '钦察弓兵', sul: '箭塔象', hre: '黑骑兵', ayy: '沙漠掠夺者', kcr: '标枪骑兵' },
+            '村民': { default: '村民男/村民女' }
         };
 
         // 隐藏规则
@@ -373,25 +419,54 @@
             syncImageScales();
         });
 
+        // 辅助函数：获取指定文明在指定时代的最终单位名
+        function getFinalUnitName(civKey, age) {
+            const catInfo = unitCategoryMap[currentUnitCategory] || {};
+            let rawUnitName = catInfo[civKey] || catInfo.default || currentUnitCategory;
+
+            if (imageFamilyRules[rawUnitName] && imageFamilyRules[rawUnitName][age]) {
+                rawUnitName = imageFamilyRules[rawUnitName][age];
+            }
+            return rawUnitName;
+        }
+
         // =========================================================
-        // 生成对比表格 (一行 6 个，附带国旗贴角)
+        // 生成对比表格 (一行 5 个，支持变体合并与双国旗)
         // =========================================================
         function generateTable() {
             $table.empty();
-            const columnsPerRow = 6;
+            const columnsPerRow = 5; // 每行 5 个
             let $tr = $('<tr></tr>');
+            let visibleCellCount = 0;
 
             const isHideIcon = $('#hideIconBtn').hasClass('active');
 
-            civOrder.forEach((civKey, index) => {
-                const civLink = civLinkMap[civKey] || civKey;
-                const catInfo = unitCategoryMap[currentUnitCategory] || {};
-                let rawUnitName = catInfo[civKey] || catInfo.default || currentUnitCategory;
+            // 智能判定变体文明合并状态
+            const mergedVariants = {};
+            const civExtraFlags = {};
 
-                // 检查世代进化规则
-                if (imageFamilyRules[rawUnitName] && imageFamilyRules[rawUnitName][currentAge]) {
-                    rawUnitName = imageFamilyRules[rawUnitName][currentAge];
+            Object.keys(variantParentMap).forEach(variantKey => {
+                const parentKey = variantParentMap[variantKey];
+                const variantUnit = getFinalUnitName(variantKey, currentAge);
+                const parentUnit = getFinalUnitName(parentKey, currentAge);
+
+                const variantHidden = isUnitHiddenByRule(variantKey, currentAge, variantUnit);
+                const parentHidden = isUnitHiddenByRule(parentKey, currentAge, parentUnit);
+
+                // 如果变体文明和本体文明图片完全相同，且均未被屏蔽，则合并显示
+                if (!variantHidden && !parentHidden && variantUnit === parentUnit) {
+                    mergedVariants[variantKey] = true;
+                    if (!civExtraFlags[parentKey]) civExtraFlags[parentKey] = [];
+                    civExtraFlags[parentKey].push(variantKey);
                 }
+            });
+
+            civOrder.forEach((civKey) => {
+                // 如果是被合并的变体文明，跳过独立单元格渲染
+                if (mergedVariants[civKey]) return;
+
+                const civLink = civLinkMap[civKey] || civKey;
+                let rawUnitName = getFinalUnitName(civKey, currentAge);
 
                 const $td = $('<td></td>');
                 $td.attr('data-civ', civKey);
@@ -421,26 +496,41 @@
                     $td.html('&nbsp;');
                 }
 
-                // 挂载国旗贴纸图标
+                // 挂载国旗容器（支持多国旗）
+                const $flagsBox = $('<div class="flags-box"></div>');
+
                 const $flag = $('<img>');
                 $flag.addClass('civ-flag');
                 $flag.attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
-                if (isHideIcon) {
-                    $flag.hide();
+                $flagsBox.append($flag);
+
+                // 如果有合并的变体文明，追加变体国旗
+                if (civExtraFlags[civKey]) {
+                    civExtraFlags[civKey].forEach(extraCiv => {
+                        const $extraFlag = $('<img>');
+                        $extraFlag.addClass('civ-flag');
+                        $extraFlag.attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${extraCiv}.png`);
+                        $flagsBox.append($extraFlag);
+                    });
                 }
-                $td.append($flag);
+
+                if (isHideIcon) {
+                    $flagsBox.hide();
+                }
+                $td.append($flagsBox);
 
                 $tr.append($td);
+                visibleCellCount++;
 
-                // 每 6 个换一行
-                if ((index + 1) % columnsPerRow === 0) {
+                // 每 5 个换一行
+                if (visibleCellCount % columnsPerRow === 0) {
                     $table.append($tr);
                     $tr = $('<tr></tr>');
                 }
             });
 
-            // 补齐最后一行不足 6 列的空格
-            const remaining = civOrder.length % columnsPerRow;
+            // 补齐最后一行不足 5 列的空格
+            const remaining = visibleCellCount % columnsPerRow;
             if (remaining > 0) {
                 for (let i = 0; i < columnsPerRow - remaining; i++) {
                     $tr.append($('<td>&nbsp;</td>'));
@@ -497,9 +587,9 @@
         $(document).on('click', '#hideIconBtn', function () {
             $(this).toggleClass('active');
             if ($(this).hasClass('active')) {
-                $('.civ-flag').hide();
+                $('.flags-box').hide();
             } else {
-                $('.civ-flag').show();
+                $('.flags-box').show();
             }
         });
 
