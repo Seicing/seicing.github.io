@@ -33,19 +33,38 @@
         }
     }
 
+    #tableSizeButtons {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        /* 统一按钮之间的间距 */
+    }
+
     .table-size-btn {
-        padding:
-            4px 10px;
-        margin-left: 5px;
+        height: 30px;
+        /* 统一高度 */
+        min-width: 58px;
+        /* 统一最小宽度，保证4个按钮尺寸几乎完全一致 */
+        padding: 0 8px;
+        /* 统一内边距 */
+        display: inline-flex;
+        justify-content: center;
+        /* 文字水平居中 */
+        align-items: center;
+        /* 文字垂直居中 */
+        box-sizing: border-box;
+        font-size: 13px;
+        /* 统一字号 */
+        font-weight: 500;
+        margin: 0;
+        /* 清除外边距，改用 gap 控制 */
         cursor: pointer;
-        border:
-            1px solid #ccc;
-        border-radius: 5px;
-        background:
-            #f0f0f0;
-        transition:
-            background 0.2s ease,
-            color 0.2s ease;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        /* 圆角效果 */
+        background: #f0f0f0;
+        color: #333;
+        transition: all 0.2s ease;
     }
 
     .table-size-btn.active {
@@ -1037,7 +1056,7 @@
             const isHeightLimited = $('#limitHeightBtn').hasClass('active');
 
             // 关键修正：以【侦察兵的宽度 * 1.3】作为全局统一的最大高度上限
-            const maxAllowedHeight = scoutWidth * 1.3;
+            const maxAllowedHeight = scoutWidth * 1.5;
 
             $table.find('img').each(function () {
                 const $img = $(this);
