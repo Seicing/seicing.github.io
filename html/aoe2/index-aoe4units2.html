@@ -276,6 +276,7 @@
         <button class="age-button age-select-btn" data-age="2">Ⅱ</button>
         <button class="age-button age-select-btn" data-age="3">Ⅲ</button>
         <button class="age-button age-select-btn active" data-age="4">IV</button>
+        <button class="age-button" id="spFromBtn">sp.from</button>
         <button class="age-button" id="alignBtn">A</button>
     </div>
     <div id="tableSizeButtons">
@@ -770,118 +771,145 @@
 
         const specialUnitRules = {
             '国王.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '猛安谋克守军.png': {
-                noAgeSuffix: true,
-                minAge: 3
+                noAgeSuffix: true, minAge: 3
             },
             '骑马掷弹兵.png': {
-                noAgeSuffix: true,
-                minAge: 4
+                noAgeSuffix: true, minAge: 4
             },
             '忍者.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '刀剑旗本武士.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '弓箭旗本武士.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '骑马旗本武士.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '一向一揆僧侣.png': {
-                noAgeSuffix: true,
-                minAge: 3
+                noAgeSuffix: true, minAge: 3
             },
             '兰开斯特领主.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '贝都因剑士.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '贝都因掷矛手.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '埃米尔战士.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '肉盾.png': {
-                noAgeSuffix: true,
-                minAge: 1
+                noAgeSuffix: true, minAge: 1
             },
             '民兵长戟兵.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '民兵火枪兵.png': {
-                noAgeSuffix: true,
-                minAge: 3
+                noAgeSuffix: true, minAge: 3
             },
             '奥斯曼军乐队.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '朝圣者男.png': {
-                noAgeSuffix: true,
-                minAge: 1
+                noAgeSuffix: true, minAge: 1
             },
             '朝圣者女.png': {
-                noAgeSuffix: true,
-                minAge: 1
+                noAgeSuffix: true, minAge: 1
             },
             '使者.png': {
-                noAgeSuffix: true,
-                minAge: 1
+                noAgeSuffix: true, minAge: 1
             },
             '阿塔贝格.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '屋台.png': {
-                noAgeSuffix: true,
-                minAge: 1
+                noAgeSuffix: true, minAge: 1
             },
             '圣女贞德农民.png': {
-                noAgeSuffix: true,
-                minAge: 1
+                noAgeSuffix: true, minAge: 1
             },
             '圣女贞德披甲女战士.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '圣女贞德猎人.png': {
-                noAgeSuffix: true,
-                minAge: 2
+                noAgeSuffix: true, minAge: 2
             },
             '圣女贞德骑士.png': {
-                noAgeSuffix: true,
-                minAge: 3
+                noAgeSuffix: true, minAge: 3
             },
             '圣女贞德骑射手.png': {
-                noAgeSuffix: true,
-                minAge: 3
+                noAgeSuffix: true, minAge: 3
             },
             '圣女贞德爆破加农炮.png': {
-                noAgeSuffix: true,
-                minAge: 4
+                noAgeSuffix: true, minAge: 4
             },
             '圣女贞德神射手.png': {
-                noAgeSuffix: true,
-                minAge: 4
+                noAgeSuffix: true, minAge: 4
             },
+
+            '靺鞨族人2.png': { noAgeSuffix: true, minAge: 2 },
+            '靺鞨族人3.png': { noAgeSuffix: true, minAge: 3 },
+            '靺鞨族人4.png': { noAgeSuffix: true, minAge: 4 },
         };
+
+
+        const spFromRules = [
+            {
+                civ: 'jin',
+                fromMap: {
+                    '骑射手2': '靺鞨族人2',
+                    '骑射手3': '靺鞨族人3',
+                    '骑射手4': '靺鞨族人4',
+                }
+            }
+        ];
+
+
+        // “sp.from” 按钮独立开关事件
+        $(document).on('click', '#spFromBtn', function () {
+            $(this).toggleClass('active');
+            generateTable();
+            updateImageSources(currentAge);
+        });
+
+        // 检查并获取 sp.from 精准 1 对 1 替换形态
+        function getSpFromOverride(civKey, age, unitName) {
+            const isSpFrom = $('#spFromBtn').hasClass('active');
+            if (!isSpFrom || !unitName) return unitName;
+
+            const cleanUnit = unitName.replace('.png', '').trim();
+            const currentWithAge = cleanUnit + age; // 如 "靺鞨族人2"
+
+            for (let rule of spFromRules) {
+                const matchCiv = Array.isArray(rule.civ) ? rule.civ.includes(civKey) : (rule.civ === civKey || rule.civ === 'all' || !rule.civ);
+                if (!matchCiv) continue;
+
+                // 1. 匹配 fromMap 文件名 1 对 1 映射 (如 '靺鞨族人2': '靺鞨族人5')
+                if (rule.fromMap) {
+                    if (rule.fromMap[currentWithAge]) return rule.fromMap[currentWithAge];
+                    if (rule.fromMap[cleanUnit]) return rule.fromMap[cleanUnit];
+                }
+
+                // 2. 匹配 age 时代 1 对 1 映射 (如 from: { 2: '靺鞨族人5', 3: '靺鞨族人4' })
+                if (rule.unit === cleanUnit && rule.from) {
+                    if (typeof rule.from === 'object' && rule.from[age]) {
+                        return rule.from[age];
+                    } else if (typeof rule.from === 'string') {
+                        return rule.from;
+                    }
+                }
+            }
+
+            return unitName;
+        }
 
         // =========================================================
         // 自动生成表格（支持 世代进化、跨格标签、不裁切、''空白占位）
@@ -964,6 +992,9 @@
 
                 // 核心改动：检查该单位是否定义了【世代进化规则】
                 let actualItem = item.trim();
+
+                actualItem = getSpFromOverride(currentCiv, currentAge, actualItem);
+
                 if (imageFamilyRules[actualItem] && imageFamilyRules[actualItem][currentAge]) {
                     actualItem = imageFamilyRules[actualItem][currentAge];
                 }

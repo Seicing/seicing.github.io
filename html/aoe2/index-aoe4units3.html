@@ -258,6 +258,7 @@
         <button class="age-button age-select-btn" data-age="2">Ⅱ</button>
         <button class="age-button age-select-btn" data-age="3">Ⅲ</button>
         <button class="age-button age-select-btn active" data-age="4">IV</button>
+        <button class="age-button" id="spFromBtn">sp.from</button>
         <button class="age-button" id="alignBtn">A</button>
     </div>
     <div id="tableSizeButtons">
@@ -426,7 +427,24 @@
             '圣女贞德神射手.png': { noAgeSuffix: true, minAge: 4 },
             '贞德的骑兵.png': { noAgeSuffix: true, minAge: 2 },
             '贞德的冠军剑士.png': { noAgeSuffix: true, minAge: 2 },
+
+            '靺鞨族人2.png': { noAgeSuffix: true, minAge: 2 },
+            '靺鞨族人3.png': { noAgeSuffix: true, minAge: 3 },
+            '靺鞨族人4.png': { noAgeSuffix: true, minAge: 4 },
         };
+
+
+
+        const spFromRules = [
+            {
+                civ: 'jin',
+                fromMap: {
+                    '骑射手2': '靺鞨族人2',
+                    '骑射手3': '靺鞨族人3',
+                    '骑射手4': '靺鞨族人4',
+                }
+            }
+        ];
 
         // 当前状态
         let currentUnitCategory = '长矛兵';
@@ -438,16 +456,60 @@
             syncImageScales();
         });
 
+
         // 辅助函数：获取指定文明在指定时代的最终单位名
         function getFinalUnitName(civKey, age) {
             const catInfo = unitCategoryMap[currentUnitCategory] || {};
             let rawUnitName = catInfo[civKey] || catInfo.default || currentUnitCategory;
+
+            rawUnitName = getSpFromOverride(civKey, age, rawUnitName);
 
             if (imageFamilyRules[rawUnitName] && imageFamilyRules[rawUnitName][age]) {
                 rawUnitName = imageFamilyRules[rawUnitName][age];
             }
             return rawUnitName;
         }
+
+
+
+        // “sp.from” 按钮独立开关事件
+        $(document).on('click', '#spFromBtn', function () {
+            $(this).toggleClass('active');
+            generateTable();
+            updateImageSources(currentAge);
+        });
+
+        // 检查并获取 sp.from 精准 1 对 1 替换形态
+        function getSpFromOverride(civKey, age, unitName) {
+            const isSpFrom = $('#spFromBtn').hasClass('active');
+            if (!isSpFrom || !unitName) return unitName;
+
+            const cleanUnit = unitName.replace('.png', '').trim();
+            const currentWithAge = cleanUnit + age; // 如 "靺鞨族人2"
+
+            for (let rule of spFromRules) {
+                const matchCiv = Array.isArray(rule.civ) ? rule.civ.includes(civKey) : (rule.civ === civKey || rule.civ === 'all' || !rule.civ);
+                if (!matchCiv) continue;
+
+                // 1. 匹配 fromMap 文件名 1 对 1 映射 (如 '靺鞨族人2': '靺鞨族人5')
+                if (rule.fromMap) {
+                    if (rule.fromMap[currentWithAge]) return rule.fromMap[currentWithAge];
+                    if (rule.fromMap[cleanUnit]) return rule.fromMap[cleanUnit];
+                }
+
+                // 2. 匹配 age 时代 1 对 1 映射 (如 from: { 2: '靺鞨族人5', 3: '靺鞨族人4' })
+                if (rule.unit === cleanUnit && rule.from) {
+                    if (typeof rule.from === 'object' && rule.from[age]) {
+                        return rule.from[age];
+                    } else if (typeof rule.from === 'string') {
+                        return rule.from;
+                    }
+                }
+            }
+
+            return unitName;
+        }
+
 
         // =========================================================
         // 生成对比表格 (一行 5 个，支持变体合并与双国旗)
@@ -891,7 +953,7 @@
             // 整个长矛兵分类统一自动使用 1.2 裁切上限，其他分类使用 1.5
             let limitRatio = 1.5;
             if (currentUnitCategory === '长矛兵') {
-                limitRatio = 1.0;
+                limitRatio = 1.05;
             }
             const maxAllowedHeight = scoutWidth * limitRatio;
 
