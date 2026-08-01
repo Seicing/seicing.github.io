@@ -260,9 +260,9 @@
     </div>
     <div id="tableSizeButtons">
         <button class="table-size-btn" id="limitHeightBtn">限制高度</button>
-        <button class="table-size-btn" data-width="50">50%</button>
-        <button class="table-size-btn active" data-width="75">75%</button>
-        <button class="table-size-btn" data-width="100">100%</button>
+        <button class="table-size-btn  size-btn" data-width="50">50%</button>
+        <button class="table-size-btn  size-btn active" data-width="75">75%</button>
+        <button class="table-size-btn  size-btn" data-width="100">100%</button>
     </div>
 </div>
 <div style="width:100%;">
@@ -297,42 +297,31 @@
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
         $(document).on(
             'click',
-            '.table-size-btn',
+            '.size-btn', // 仅监听百分比按钮
             function () {
-                const $btn =
-                    $(this);
-                $('.table-size-btn')
-                    .removeClass(
-                        'active'
-                    );
-                $(document).on('click', '#limitHeightBtn', function () {
-                    $(this).toggleClass('active');
-                    syncImageScales();
-                });
-                $btn.addClass(
-                    'active'
-                );
-                const widthPercent =
-                    parseInt(
-                        $btn.data('width')
-                    );
-                $('#customers').css(
-                    'width',
-                    widthPercent + '%'
-                );
-                // 关键修复：
+                const $btn = $(this);
+                $('.size-btn').removeClass('active'); // 仅清除百分比按钮的高亮，不影响“限高”
+                $btn.addClass('active');
+                const widthPercent = parseInt($btn.data('width'));
+                $('#customers').css('width', widthPercent + '%');
+
                 // 先恢复默认宽度
-                $table.find('img')
-                    .css({
-                        width: '',
-                        'max-width': '100%'
-                    });
+                $table.find('img').css({
+                    width: '',
+                    'max-width': '100%'
+                });
                 // 等 layout 更新后重新同步
                 requestAnimationFrame(function () {
                     syncImageScales();
                 });
             }
         );
+
+        // “限高”按钮的独立开关事件
+        $(document).on('click', '#limitHeightBtn', function () {
+            $(this).toggleClass('active'); // 独立切换，互不干扰
+            syncImageScales();
+        });
         // =========================================================
         // 文明数据
         // =========================================================
