@@ -15,6 +15,8 @@
 <link rel="preload" href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵3.png" as="image">
 <link rel="preload" href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵4.png" as="image">
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
 <style>
     #topControls {
         max-width: 100%;
@@ -277,6 +279,7 @@
         <button class="age-button" id="alignBtn">A</button>
     </div>
     <div id="tableSizeButtons">
+        <button class="table-size-btn" id="exportPngBtn">Export PNG</button>
         <button class="table-size-btn" id="limitHeightBtn">Max Ht.</button>
         <button class="table-size-btn size-btn" data-width="50">50%</button>
         <button class="table-size-btn size-btn active" data-width="85">85%</button>
@@ -313,6 +316,29 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+
+        // 导出透明底 PNG 图片
+        $(document).on('click', '#exportPngBtn', function () {
+            const $btn = $(this);
+            $btn.text('Exporting...');
+
+            html2canvas(document.getElementById('customers'), {
+                backgroundColor: null, // 关键：100% 透明底
+                useCORS: true,         // 允许跨域图片渲染
+                scale: 2               // 2倍高清导出
+            }).then(canvas => {
+                const a = document.createElement('a');
+                a.download = `AOE4_${currentCiv}_Age${currentAge}.png`;
+                a.href = canvas.toDataURL('image/png');
+                a.click();
+                $btn.text('Export PNG');
+            }).catch(err => {
+                console.error('导出失败:', err);
+                alert('导出图片失败，请检查图片跨域设置。');
+                $btn.text('Export PNG');
+            });
+        });
+
         $(document).on(
             'click',
             '.size-btn', // 仅监听百分比按钮
@@ -342,7 +368,7 @@
         });
 
         // =========================================================
-        // 文明选择按钮点击事件（把补全的代码粘贴在这里）
+        // 文明选择按钮点击事件
         // =========================================================
         $(document).on('click', '.civ-selector a', function (e) {
             e.preventDefault();
