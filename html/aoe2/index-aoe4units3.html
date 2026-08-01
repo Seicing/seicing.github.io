@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title>帝国时代4 兵种对比图表</title>
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+
+<style>
+    #topControls {
+        max-width: 100%;
+        margin: 10px auto 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    /* 手机端隐藏 */
+    @media screen and (max-width: 820px) {
+        #tableSizeButtons {
+            display: none;
+        }
+    }
+
+    #age-buttons,
+    #tableSizeButtons {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .table-size-btn,
+    .age-button,
+    .unit-act-btn {
+        height: 30px;
+        min-width: 32px;
+        padding: 0 8px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background: #f0f0f0;
+        color: #333;
+        transition: all 0.2s ease;
+    }
+
+    .table-size-btn.active,
+    .age-button.active,
+    .unit-act-btn.active {
+        background: #50473E;
+        color: white;
+        border-color: #50473E;
+    }
+
+    /* 兵种选择栏 */
+    .unit-selector {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    /* 表格与 6 列样式 */
+    #customers {
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 8px 10px;
+        /* 列间距 8px，行间距 10px */
+        table-layout: fixed;
+    }
+
+    #customers td {
+        width: 16.666%;
+        /* 严格 6 列 = 100% / 6 */
+        text-align: center;
+        vertical-align: bottom;
+        border: none;
+        padding: 0;
+        position: relative;
+    }
+
+    #customers td img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+
+    /* 国旗图标贴在右下角 */
+    .civ-flag {
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+        pointer-events: none;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
+    }
+
+    @media (max-width: 768px) {
+        #customers {
+            width: 100%;
+        }
+    }
+
+    /* 多单位容器 */
+    .multi-unit-box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+    }
+
+    .multi-unit-img {
+        flex-shrink: 0;
+    }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="4299"></div>
+<div style="width:0; height:0; overflow:hidden;">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png" style="display:none;">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵2.png" style="display:none;">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵3.png" style="display:none;">
+    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵4.png" style="display:none;">
+</div>
+
+<!-- 兵种对比选择器 -->
+<div class="unit-selector">
+    <button class="unit-act-btn active" data-unit="长矛兵">长矛兵</button>
+    <button class="unit-act-btn" data-unit="武士">武士/步兵</button>
+    <button class="unit-act-btn" data-unit="侦察兵">侦察兵</button>
+    <button class="unit-act-btn" data-unit="骑手">轻骑兵</button>
+    <button class="unit-act-btn" data-unit="骑士">重骑兵/战象</button>
+    <button class="unit-act-btn" data-unit="步弓手">步弓手</button>
+    <button class="unit-act-btn" data-unit="弩手">弩手/投枪</button>
+    <button class="unit-act-btn" data-unit="火枪兵">火枪手/足轻</button>
+    <button class="unit-act-btn" data-unit="僧侣">宗教单位</button>
+    <button class="unit-act-btn" data-unit="村民">村民/平民</button>
+</div>
+
+<div id="topControls">
+    <div id="age-buttons">
+        <button class="age-button age-select-btn" data-age="1">Ⅰ</button>
+        <button class="age-button age-select-btn" data-age="2">Ⅱ</button>
+        <button class="age-button age-select-btn" data-age="3">Ⅲ</button>
+        <button class="age-button age-select-btn active" data-age="4">IV</button>
+        <button class="age-button" id="alignBtn">A</button>
+    </div>
+    <div id="tableSizeButtons">
+        <button class="table-size-btn" id="limitHeightBtn">Max Ht.</button>
+        <button class="table-size-btn size-btn" data-width="50">50%</button>
+        <button class="table-size-btn size-btn active" data-width="75">75%</button>
+        <button class="table-size-btn size-btn" data-width="100">100%</button>
+    </div>
+</div>
+
+<div style="width:100%;">
+    <div>
+        <table id="customers" style="width:75%;float: left;">
+        </table>
+    </div>
+</div></div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    <a href="https://seicing.com/html/index-aoeseries.html"><b>返回上一页</b></a><br><br>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index-aoeseries.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
+
+        // =========================================================
+        // 文明顺序定义 (严格按照要求排布 25 个文明)
+        // Row 1: chi, zxl, fre, jda, hre, otd
+        // Row 2: eng, hol, sul, tug, abb, ayy
+        // Row 3: mon, goh, jpn, sen, byz, mac
+        // Row 4: rus, ott, mal, kcr, jin, vik
+        // Row 5: sco
+        // =========================================================
+        const civOrder = [
+            'chi', 'zxl', 'fre', 'jda', 'hre', 'otd',
+            'eng', 'hol', 'sul', 'tug', 'abb', 'ayy',
+            'mon', 'goh', 'jpn', 'sen', 'byz', 'mac',
+            'rus', 'ott', 'mal', 'kcr', 'jin', 'vik',
+            'sco'
+        ];
+
+        // 文明图标映射
+        const civIconMap = {
+            chi: 'Chinese',
+            zxl: 'ZhuXiLegacy',
+            jin: 'Jindynasty',
+            jpn: 'Japanese',
+            sen: 'Sengokudaimyo',
+            hre: 'Holyromanempire',
+            otd: 'Orderofthedragon',
+            eng: 'English',
+            hol: 'Houseoflancaster',
+            fre: 'French',
+            jda: 'Jeannedarc',
+            kcr: 'Knightstemplar',
+            abb: 'Abbasiddynasty',
+            ayy: 'Ayyubids',
+            sul: 'Delhisultanate',
+            tug: 'Tughlaqdynasty',
+            mon: 'Mongols',
+            goh: 'Goldenhorde',
+            byz: 'Byzantines',
+            mac: 'Macedoniandynasty',
+            rus: 'Rus',
+            ott: 'Ottomans',
+            mal: 'Malians',
+            vik: 'Vikings',
+            sco: 'Scots',
+        };
+
+        // 文明资源路径映射
+        const civLinkMap = {
+            chi: 'chi', zxl: 'chi', jin: 'jin', jpn: 'jpn', sen: 'jpn',
+            hre: 'hre', otd: 'hre', eng: 'eng', hol: 'eng', fre: 'fre',
+            jda: 'fre', kcr: 'kcr', abb: 'abb', ayy: 'abb', sul: 'sul',
+            tug: 'sul', mon: 'mon', goh: 'mon', byz: 'byz', mac: 'byz',
+            rus: 'rus', ott: 'ott', mal: 'mal', vik: 'vik', sco: 'sco'
+        };
+
+        // 兵种分类与特色单位替代映射
+        const unitCategoryMap = {
+            '长矛兵': { default: '长矛兵', mac: '阿特盖尔', otd: '镀金长矛兵' },
+            '武士': { default: '武士', hol: '伯爵护卫', otd: '镀金武士', mal: '自由民战士' },
+            '侦察兵': { default: '侦察兵' },
+            '骑手': { default: '骑手', otd: '镀金骑手', sen: '日本长枪骑兵' },
+            '骑士': { default: '骑士', otd: '镀金骑士', ayy: '骆驼长矛骑兵', tug: '突袭大象', mac: '瑞塔利' },
+            '步弓手': { default: '步弓手', jin: '靺鞨族人', hol: '英皇侍卫', otd: '镀金步弓手', mac: '波莫' },
+            '弩手': { default: '弩手', jpn: '女武者', otd: '镀金弩手', mal: '掷枪兵' },
+            '火枪兵': { default: '火枪兵', sen: '火绳枪足轻', otd: '镀金火枪兵' },
+            '僧侣': { default: '僧侣', zxl: '少林僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希', tug: '医疗大象' },
+            '村民': { default: '村民男/村民女', jda: '贞德1', kcr: '朝圣者男/朝圣者女' }
+        };
+
+        // 隐藏规则
+        const hidingRules = [
+            { conditions: { civ: 'chi', age: [1, 2] }, actions: [{ type: 'hideImage', imageName: '武士.png' }] },
+            { conditions: { civ: 'chi', age: [1, 2] }, actions: [{ type: 'hideImage', imageName: '火长矛骑兵.png' }] },
+            { conditions: { civ: 'chi', age: [1, 2, 3] }, actions: [{ type: 'hideImage', imageName: '掷弹兵.png' }] },
+            { conditions: { civ: 'eng', age: [1] }, actions: [{ type: 'hideImage', imageName: '长矛兵.png' }] },
+            { conditions: { civ: 'otd', age: [1, 2] }, actions: [{ type: 'hideImage', imageName: '僧侣.png' }] },
+            { conditions: { civ: 'tug', age: [1, 2] }, actions: [{ type: 'hideImage', imageName: '僧侣.png' }] },
+            { conditions: { civ: 'byz', age: [1, 2] }, actions: [{ type: 'hideImage', imageName: '武士.png' }] },
+        ];
+
+        // 家族/形态进化规则
+        const imageNameAliases = {};
+        const imageFamilyRules = {
+            '贞德1': {
+                1: '圣女贞德农民',
+                2: '圣女贞德披甲女战士',
+                3: '圣女贞德骑士',
+                4: '圣女贞德爆破加农炮'
+            },
+            '贞德2': {
+                1: '',
+                2: '圣女贞德猎人',
+                3: '圣女贞德骑射手',
+                4: '圣女贞德神射手'
+            }
+        };
+
+        // 特殊无编号单位
+        const specialUnitRules = {
+            '国王.png': { noAgeSuffix: true, minAge: 2 },
+            '猛安谋克守军.png': { noAgeSuffix: true, minAge: 3 },
+            '骑马掷弹兵.png': { noAgeSuffix: true, minAge: 4 },
+            '忍者.png': { noAgeSuffix: true, minAge: 2 },
+            '刀剑旗本武士.png': { noAgeSuffix: true, minAge: 2 },
+            '弓箭旗本武士.png': { noAgeSuffix: true, minAge: 2 },
+            '骑马旗本武士.png': { noAgeSuffix: true, minAge: 2 },
+            '一向一揆僧侣.png': { noAgeSuffix: true, minAge: 3 },
+            '兰开斯特领主.png': { noAgeSuffix: true, minAge: 2 },
+            '贝都因剑士.png': { noAgeSuffix: true, minAge: 2 },
+            '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 2 },
+            '埃米尔战士.png': { noAgeSuffix: true, minAge: 2 },
+            '肉盾.png': { noAgeSuffix: true, minAge: 1 },
+            '民兵长戟兵.png': { noAgeSuffix: true, minAge: 2 },
+            '民兵火枪兵.png': { noAgeSuffix: true, minAge: 3 },
+            '奥斯曼军乐队.png': { noAgeSuffix: true, minAge: 2 },
+            '朝圣者男.png': { noAgeSuffix: true, minAge: 1 },
+            '朝圣者女.png': { noAgeSuffix: true, minAge: 1 },
+            '使者.png': { noAgeSuffix: true, minAge: 1 },
+            '阿塔贝格.png': { noAgeSuffix: true, minAge: 2 },
+            '屋台.png': { noAgeSuffix: true, minAge: 1 },
+            '圣女贞德农民.png': { noAgeSuffix: true, minAge: 1 },
+            '圣女贞德披甲女战士.png': { noAgeSuffix: true, minAge: 2 },
+            '圣女贞德猎人.png': { noAgeSuffix: true, minAge: 2 },
+            '圣女贞德骑士.png': { noAgeSuffix: true, minAge: 3 },
+            '圣女贞德骑射手.png': { noAgeSuffix: true, minAge: 3 },
+            '圣女贞德爆破加农炮.png': { noAgeSuffix: true, minAge: 4 },
+            '圣女贞德神射手.png': { noAgeSuffix: true, minAge: 4 },
+        };
+
+        // 当前状态
+        let currentUnitCategory = '长矛兵';
+        let currentAge = 4;
+        const $table = $('#customers');
+
+        // =========================================================
+        // 生成对比表格 (一行 6 个，附带国旗贴角)
+        // =========================================================
+        function generateTable() {
+            $table.empty();
+            const columnsPerRow = 6;
+            let $tr = $('<tr></tr>');
+
+            civOrder.forEach((civKey, index) => {
+                const civLink = civLinkMap[civKey] || civKey;
+                const catInfo = unitCategoryMap[currentUnitCategory] || {};
+                let rawUnitName = catInfo[civKey] || catInfo.default || currentUnitCategory;
+
+                // 检查世代进化规则
+                if (imageFamilyRules[rawUnitName] && imageFamilyRules[rawUnitName][currentAge]) {
+                    rawUnitName = imageFamilyRules[rawUnitName][currentAge];
+                }
+
+                const $td = $('<td></td>');
+                $td.attr('data-civ', civKey);
+
+                const subUnits = rawUnitName ? rawUnitName.split('/').map(s => s.trim()) : [''];
+                const validUnits = subUnits.filter(s => s !== '');
+
+                if (validUnits.length > 1) {
+                    const $box = $('<div class="multi-unit-box"></div>');
+                    validUnits.forEach(subName => {
+                        const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${civLink}/${subName}.png`;
+                        const $img = $('<img>');
+                        $img.addClass('multi-unit-img');
+                        $img.attr('data-aoe4unit', imgPath);
+                        $img.data('original-src', imgPath);
+                        $box.append($img);
+                    });
+                    $td.append($box);
+                } else if (validUnits.length === 1) {
+                    const unitName = validUnits[0];
+                    const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${civLink}/${unitName}.png`;
+                    const $img = $('<img>');
+                    $img.attr('data-aoe4unit', imgPath);
+                    $img.data('original-src', imgPath);
+                    $td.append($img);
+                } else {
+                    $td.html('&nbsp;');
+                }
+
+                // 挂载国旗贴纸图标
+                const $flag = $('<img>');
+                $flag.addClass('civ-flag');
+                $flag.attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
+                $td.append($flag);
+
+                $tr.append($td);
+
+                // 每 6 个换一行
+                if ((index + 1) % columnsPerRow === 0) {
+                    $table.append($tr);
+                    $tr = $('<tr></tr>');
+                }
+            });
+
+            // 补齐最后一行不足 6 列的空格
+            const remaining = civOrder.length % columnsPerRow;
+            if (remaining > 0) {
+                for (let i = 0; i < columnsPerRow - remaining; i++) {
+                    $tr.append($('<td>&nbsp;</td>'));
+                }
+                $table.append($tr);
+            }
+        }
+
+        // =========================================================
+        // 兵种按钮点击事件
+        // =========================================================
+        $(document).on('click', '.unit-act-btn', function () {
+            $('.unit-act-btn').removeClass('active');
+            $(this).addClass('active');
+            currentUnitCategory = $(this).data('unit');
+            generateTable();
+            updateImageSources(currentAge);
+        });
+
+        // 时代按钮点击事件
+        $(document).on('click', '.age-select-btn', function () {
+            if ($(this).hasClass('active')) return;
+            $('.age-select-btn').removeClass('active');
+            $(this).addClass('active');
+            currentAge = parseInt($(this).data('age'));
+            generateTable();
+            updateImageSources(currentAge);
+        });
+
+        // “对齐”按钮点击事件
+        $(document).on('click', '#alignBtn', function () {
+            $(this).toggleClass('active');
+            updateImageSources(currentAge);
+        });
+
+        // 表格尺寸控制
+        $(document).on('click', '.size-btn', function () {
+            $('.size-btn').removeClass('active');
+            $(this).addClass('active');
+            const widthPercent = parseInt($(this).data('width'));
+            $('#customers').css('width', widthPercent + '%');
+            $table.find('img:not(.civ-flag)').css({ width: '', 'max-width': '100%' });
+            requestAnimationFrame(function () { syncImageScales(); });
+        });
+
+        // 限高控制
+        $(document).on('click', '#limitHeightBtn', function () {
+            $(this).toggleClass('active');
+            syncImageScales();
+        });
+
+        // =========================================================
+        // 检查屏蔽规则
+        // =========================================================
+        function isUnitHiddenByRule(civ, age, unitName) {
+            if (!civ || !unitName) return false;
+            const currentCivIcon = 'CivIcon-' + civIconMap[civ] + '.png';
+            let isHidden = false;
+            const cleanUnitName = unitName.replace('.png', '');
+
+            hidingRules.forEach(rule => {
+                let conditionsMet = true;
+                if (rule.conditions.age) {
+                    if (Array.isArray(rule.conditions.age)) {
+                        if (!rule.conditions.age.includes(age)) conditionsMet = false;
+                    } else if (rule.conditions.age != age) {
+                        conditionsMet = false;
+                    }
+                }
+                if (rule.conditions.civ && rule.conditions.civ != civ) conditionsMet = false;
+                if (rule.conditions.civIcon && rule.conditions.civIcon != currentCivIcon) conditionsMet = false;
+
+                if (conditionsMet) {
+                    rule.actions.forEach(action => {
+                        if (action.type === 'hideImage') {
+                            if (action.imageName.replace('.png', '') === cleanUnitName) {
+                                isHidden = true;
+                            }
+                        }
+                    });
+                }
+            });
+            return isHidden;
+        }
+
+        // 应用隐藏规则
+        function applyHidingRules(age) {
+            const isAlign = $('#alignBtn').hasClass('active');
+            if (isAlign) return;
+
+            $table.find('td').each(function () {
+                const civ = $(this).attr('data-civ');
+                if (!civ) return;
+
+                $(this).find('img:not(.civ-flag)').each(function () {
+                    const $img = $(this);
+                    const currentSrc = $img.attr('src') || '';
+                    hidingRules.forEach(rule => {
+                        if (rule.conditions.civ && rule.conditions.civ === civ) {
+                            if (rule.conditions.age && ((Array.isArray(rule.conditions.age) && rule.conditions.age.includes(age)) || rule.conditions.age == age)) {
+                                rule.actions.forEach(action => {
+                                    if (action.type === 'hideImage' && currentSrc.includes(action.imageName.replace('.png', ''))) {
+                                        $img.css({ 'visibility': 'hidden', 'display': 'none' });
+                                    }
+                                });
+                            }
+                        }
+                    });
+                });
+            });
+        }
+
+        // 递归加载候选时代图片
+        function loadNextAgeImage($img, civKey, unitName, ageList, index, dfd) {
+            if (index >= ageList.length) {
+                $img.css({ 'visibility': 'hidden', 'display': 'none' });
+                dfd.resolve();
+                return;
+            }
+
+            const tryAge = ageList[index];
+            const civLink = civLinkMap[civKey] || civKey;
+            let finalFileName = unitName;
+
+            const familyName = imageNameAliases[unitName];
+            if (familyName) {
+                const familyRule = imageFamilyRules[familyName];
+                if (familyRule && familyRule[tryAge]) {
+                    finalFileName = familyRule[tryAge];
+                }
+            } else {
+                const extension = unitName.substring(unitName.lastIndexOf('.'));
+                const filename = unitName.substring(0, unitName.lastIndexOf('.'));
+                const specialRule = specialUnitRules[unitName];
+
+                if (specialRule && specialRule.noAgeSuffix) {
+                    finalFileName = unitName;
+                } else {
+                    finalFileName = filename + tryAge + extension;
+                }
+            }
+
+            const newSrc = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${civLink}/${finalFileName}`;
+
+            $img.off('load error');
+            $img.one('load', function () {
+                $img.css({ 'visibility': 'visible', 'display': 'inline-block' });
+                syncImageScales();
+                dfd.resolve();
+            }).one('error', function () {
+                loadNextAgeImage($img, civKey, unitName, ageList, index + 1, dfd);
+            });
+
+            $img.attr('src', newSrc);
+        }
+
+        // 更新图片资源
+        function updateImageSources(age) {
+            const isAlign = $('#alignBtn').hasClass('active');
+            const imageLoadPromises = [];
+
+            $table.find('td').each(function () {
+                const civKey = $(this).attr('data-civ');
+                if (!civKey) return;
+
+                const $imgs = $(this).find('img:not(.civ-flag)');
+                $imgs.each(function () {
+                    const $img = $(this);
+                    const dfd = $.Deferred();
+                    imageLoadPromises.push(dfd.promise());
+
+                    const originalSrc = $img.data('original-src');
+                    if (!originalSrc) {
+                        dfd.resolve();
+                        return;
+                    }
+
+                    const unitName = originalSrc.split('/').pop();
+                    const specialRule = specialUnitRules[unitName];
+
+                    let ageList = [];
+                    if (isAlign) {
+                        let startAge = age;
+                        if (specialRule && specialRule.minAge) {
+                            startAge = Math.max(age, specialRule.minAge);
+                        }
+                        for (let a = startAge; a <= 4; a++) {
+                            if (!isUnitHiddenByRule(civKey, a, unitName)) {
+                                ageList.push(a);
+                            }
+                        }
+                    } else {
+                        if (isUnitHiddenByRule(civKey, age, unitName)) {
+                            ageList = [];
+                        } else if (specialRule && specialRule.minAge && age < specialRule.minAge) {
+                            ageList = [];
+                        } else {
+                            ageList = [age];
+                        }
+                    }
+
+                    if (ageList.length === 0) {
+                        $img.css({ 'visibility': 'hidden', 'display': 'none' });
+                        dfd.resolve();
+                        return;
+                    }
+
+                    loadNextAgeImage($img, civKey, unitName, ageList, 0, dfd);
+                });
+            });
+
+            $.when.apply($, imageLoadPromises).done(function () {
+                applyHidingRules(age);
+                syncImageScales();
+            });
+        }
+
+        // 同步缩放比例与裁切
+        function syncImageScales() {
+            $table.find('img:not(.civ-flag)').each(function () {
+                if ($(this).is(':visible')) {
+                    $(this).css({
+                        width: '', height: '', 'max-width': '100%',
+                        'object-fit': '', 'object-position': ''
+                    });
+                }
+            });
+
+            let scaleRatio = 1.0;
+            let refFound = false;
+
+            // 寻找侦察兵或有效可见图片作为基准
+            $table.find('img:not(.civ-flag)').each(function () {
+                const src = $(this).attr('src') || '';
+                if (src.includes('侦察兵') && $(this).is(':visible')) {
+                    const refNatW = this.naturalWidth;
+                    if (refNatW > 0) {
+                        const refCurW = this.getBoundingClientRect().width;
+                        scaleRatio = refCurW / refNatW;
+                        refFound = true;
+                        return false;
+                    }
+                }
+            });
+
+            if (!refFound) {
+                const $firstImg = $table.find('img:not(.civ-flag):visible').first();
+                if ($firstImg.length && $firstImg[0].naturalWidth > 0) {
+                    scaleRatio = $firstImg[0].getBoundingClientRect().width / $firstImg[0].naturalWidth;
+                }
+            }
+
+            const isHeightLimited = $('#limitHeightBtn').hasClass('active');
+            const scoutWidth = 100 * scaleRatio;
+            const maxAllowedHeight = scoutWidth * 1.5;
+
+            $table.find('img:not(.civ-flag)').each(function () {
+                const $img = $(this);
+                if ($img.is(':hidden') || $img.css('visibility') === 'hidden') return;
+
+                const naturalWidth = this.naturalWidth;
+                const naturalHeight = this.naturalHeight;
+                if (naturalWidth <= 0) return;
+
+                let multiplier = 1.0;
+                if ($img.hasClass('rakuda')) multiplier = 0.85;
+
+                const newWidth = naturalWidth * scaleRatio * multiplier;
+                const currentRenderHeight = naturalHeight * scaleRatio * multiplier;
+                const isNoCrop = $img.hasClass('no-crop');
+
+                if (isHeightLimited && !isNoCrop && currentRenderHeight > maxAllowedHeight) {
+                    $img.css({
+                        width: newWidth + 'px',
+                        height: maxAllowedHeight + 'px',
+                        'max-width': 'none',
+                        'object-fit': 'cover',
+                        'object-position': 'bottom center',
+                        'vertical-align': 'bottom',
+                        'display': 'inline-block'
+                    });
+                } else {
+                    $img.css({
+                        width: newWidth + 'px',
+                        height: 'auto',
+                        'max-width': 'none',
+                        'object-fit': '',
+                        'object-position': '',
+                        'vertical-align': 'bottom',
+                        'display': 'inline-block'
+                    });
+                }
+            });
+        }
+
+        // 窗口 resize 监听
+        $(window).on('resize', function () {
+            $table.find('img:not(.civ-flag)').css({ width: '', 'max-width': '100%' });
+            setTimeout(syncImageScales, 50);
+        });
+
+        // 初始化页面
+        generateTable();
+        updateImageSources(currentAge);
+    });
+
+    document.addEventListener('error', function (e) {
+        const target = e.target;
+        if (target.tagName === 'IMG' && target.closest('#customers') && !target.classList.contains('civ-flag')) {
+            target.src = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
+        }
+    }, true);
+</script>
+
+</html>
