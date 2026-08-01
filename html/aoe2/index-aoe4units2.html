@@ -406,7 +406,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '日本长枪骑兵', '骑士',
                     '步弓手', '', '火绳枪足轻', '一向一揆僧侣', '村民男/村民女',
-                    '金碎棒日本武士', '大筒兵', '忍者', '大名',
+                    '金碎棒日本武士', '大筒兵', '忍者', '大名', '屋台',
                 ]
             },
             {
@@ -451,6 +451,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
+                    '贞德1', '贞德2',
                 ]
             },
             {
@@ -459,7 +460,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '骑手', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '圣女贞德农民', '贞德的骑兵', '贞德的冠军剑士',
+                    '贞德的骑兵', '贞德的冠军剑士',
                 ]
             },
             {
@@ -505,7 +506,7 @@
                 civunits: [
                     '长矛兵', '武士', '侦察兵', '突袭大象', '骑士',
                     '步弓手', '弩手', '火枪兵', '僧侣', '村民男/村民女',
-                    '不裁切', '标签5', '战象', '弩炮大象', '医疗大象', '埃米尔战士', '终止标签', '不裁切结束',
+                    '不裁切', '标签4', '战象', '弩炮大象', '医疗大象', '终止标签', '不裁切结束', '埃米尔战士',
                 ]
             },
             {
@@ -663,6 +664,21 @@
         // 家族规则
         // =========================================================
         const imageNameAliases = {};
+        const imageFamilyRules = {
+            '贞德1': {
+                1: '圣女贞德农民',
+                2: '圣女贞德披甲女战士',
+                3: '圣女贞德骑士',
+                4: '圣女贞德爆破加农炮'
+            },
+            '贞德2': {
+                1: '',
+                2: '圣女贞德猎人',
+                3: '圣女贞德骑射手',
+                4: '圣女贞德神射手'
+            }
+        };
+
         const specialUnitRules = {
             '国王.png': {
                 noAgeSuffix: true,
@@ -747,7 +763,7 @@
         };
 
         // =========================================================
-        // 自动生成表格（支持 跨格标签、不裁切标签、'' 空白占位格）
+        // 自动生成表格（支持 世代进化、跨格标签、不裁切、''空白占位）
         // =========================================================
         function generateTable() {
             $table.empty();
@@ -760,13 +776,12 @@
 
             let inGroup = false;
             let groupSpan = 1;
-            let groupUnits = []; // 存储对象 { name: '单位名', noCrop: true/false }
+            let groupUnits = [];
 
             let inNoCrop = false; // 是否开启不裁切模式
 
             // 渲染单元格闭包函数
             function renderCell(cellSpan, unitObjs) {
-                // 如果当前行放不下，补充空格子并换新行
                 if (currentSpans + cellSpan > 5) {
                     while (currentSpans < 5) {
                         $tr.append($('<td>&nbsp;</td>'));
@@ -782,7 +797,6 @@
                     $td.attr('colspan', cellSpan);
                 }
 
-                // 过滤出真正有名字的单位
                 const validUnits = unitObjs.filter(u => u.name !== '');
 
                 // 多单位格
@@ -815,7 +829,7 @@
                     $img.data('original-src', imgPath);
                     $td.append($img);
                 }
-                // 纯空白格 '' 渲染 &nbsp;
+                // 纯空白格 ''
                 else {
                     $td.html('&nbsp;');
                 }
@@ -826,21 +840,26 @@
 
             units.forEach(item => {
                 if (item === null || item === undefined) return;
-                const trimmedItem = item.trim();
+
+                // 核心改动：检查该单位是否定义了【世代进化规则】
+                let actualItem = item.trim();
+                if (imageFamilyRules[actualItem] && imageFamilyRules[actualItem][currentAge]) {
+                    actualItem = imageFamilyRules[actualItem][currentAge];
+                }
 
                 // 1. 检查【不裁切开始标签】
-                if (/^(?:不裁切|nocrop|no-crop)$/i.test(trimmedItem)) {
+                if (/^(?:不裁切|nocrop|no-crop)$/i.test(actualItem)) {
                     inNoCrop = true;
                     return;
                 }
                 // 2. 检查【不裁切结束标签】
-                if (/^(?:不裁切结束|nocrop:end|endnocrop|\/nocrop)$/i.test(trimmedItem)) {
+                if (/^(?:不裁切结束|nocrop:end|endnocrop|\/nocrop)$/i.test(actualItem)) {
                     inNoCrop = false;
                     return;
                 }
 
                 // 3. 检查【跨格开头标签】(如 "标签5", "span:5")
-                const startMatch = trimmedItem.match(/^(?:span|标签)[:\s=]?(\d+)/i);
+                const startMatch = actualItem.match(/^(?:span|标签)[:\s=]?(\d+)/i);
                 if (startMatch) {
                     inGroup = true;
                     groupSpan = Math.min(parseInt(startMatch[1]), 5);
@@ -849,7 +868,7 @@
                 }
 
                 // 4. 检查【跨格结束标签】(如 "终止标签", "span:end")
-                const isEnd = /^(?:end|span:end|终止标签|\/span)$/i.test(trimmedItem);
+                const isEnd = /^(?:end|span:end|终止标签|\/span)$/i.test(actualItem);
                 if (isEnd && inGroup) {
                     renderCell(groupSpan, groupUnits);
                     inGroup = false;
@@ -860,17 +879,17 @@
 
                 // 5. 如果在跨格标签内部，收集单位
                 if (inGroup) {
-                    groupUnits.push({ name: trimmedItem, noCrop: inNoCrop });
+                    groupUnits.push({ name: actualItem, noCrop: inNoCrop });
                     return;
                 }
 
                 // 6. 空白占位标签 '' 渲染为空格子
-                if (trimmedItem === '') {
+                if (actualItem === '') {
                     renderCell(1, [{ name: '', noCrop: false }]);
                 }
-                // 7. 斜杠单行多单位 "A/B"
-                else if (trimmedItem.includes('/')) {
-                    const subUnits = trimmedItem.split('/').map(s => s.trim());
+                // 7. 斜杠单行多单位 "A/B" (包括进化出来的骑兵/冠军剑士)
+                else if (actualItem.includes('/')) {
+                    const subUnits = actualItem.split('/').map(s => s.trim());
                     let cellSpan = 1;
                     if (subUnits.length >= 6) cellSpan = 5;
                     else if (subUnits.length === 5) cellSpan = 4;
@@ -882,7 +901,7 @@
                 }
                 // 8. 普通单单位
                 else {
-                    renderCell(1, [{ name: trimmedItem, noCrop: inNoCrop }]);
+                    renderCell(1, [{ name: actualItem, noCrop: inNoCrop }]);
                 }
             });
 
@@ -898,7 +917,6 @@
                 $table.append($tr);
             }
         }
-
         // =========================================================
         // 时代按钮 (Ⅰ, Ⅱ, Ⅲ, IV)
         // =========================================================
@@ -911,6 +929,8 @@
                 $('.age-select-btn').removeClass('active');
                 $btn.addClass('active');
                 currentAge = parseInt($btn.data('age'));
+
+                generateTable(); // 重新根据新时代渲染 DOM (触发贞德等英雄进化)
                 updateImageSources(currentAge);
             }
         );
