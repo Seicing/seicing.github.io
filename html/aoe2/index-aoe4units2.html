@@ -33,35 +33,33 @@
         }
     }
 
+    #age-buttons {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
     #tableSizeButtons {
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        /* 统一按钮之间的间距 */
     }
+
 
     .table-size-btn {
         height: 30px;
-        /* 统一高度 */
         min-width: 58px;
-        /* 统一最小宽度，保证4个按钮尺寸几乎完全一致 */
         padding: 0 8px;
-        /* 统一内边距 */
         display: inline-flex;
         justify-content: center;
-        /* 文字水平居中 */
         align-items: center;
-        /* 文字垂直居中 */
         box-sizing: border-box;
         font-size: 13px;
-        /* 统一字号 */
         font-weight: 500;
         margin: 0;
-        /* 清除外边距，改用 gap 控制 */
         cursor: pointer;
         border: 1px solid #ccc;
         border-radius: 6px;
-        /* 圆角效果 */
         background: #f0f0f0;
         color: #333;
         transition: all 0.2s ease;
@@ -74,13 +72,22 @@
     }
 
     .age-button {
-        padding: 5px 10px;
-        margin: 5px;
+        height: 30px;
+        min-width: 58px;
+        padding: 0 8px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
         cursor: pointer;
         border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f0f0f0;
-        box-sizing: border-box;
+        border-radius: 6px;
+        background: #f0f0f0;
+        color: #333;
+        transition: all 0.2s ease;
     }
 
     .age-button.active {
@@ -112,7 +119,6 @@
         height: auto;
     }
 
-    /* 手机模式 */
     @media (max-width: 768px) {
         #customers {
             width: 100%;
@@ -216,6 +222,12 @@
             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png"></a>
     <a id="byzButton0" class="civactbtn" @click.prevent="showCiv('byz')"><img
             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/byz.png"></a>
+
+    <a id="vikButton0" class="civactbtn" @click.prevent="showCiv('vik')"><img
+            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/vik.png"></a>
+    <a id="scoButton0" class="civactbtn" @click.prevent="showCiv('sco')"><img
+            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></a>
+
     <a id="kcrButton0" class="civactbtn" @click.prevent="showCiv('kcr')"><img
             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/kcr.png"></a>
     <a id="jinButton0" class="civactbtn" @click.prevent="showCiv('jin')"><img
@@ -529,6 +541,24 @@
                     '长矛兵', '武士', '侦察兵', '', '骑士',
                     '步弓手', '掷枪兵', '火枪兵', '僧侣', '',
                     '自由民战士', '曼萨穆索法迪战士', '曼萨掷枪兵',
+                ]
+            },
+            {
+                civname: 'vik',
+                civlinkname: 'vik',
+                civunits: [
+                    '长矛兵', '武士', '侦察兵', '骑手', '骑士',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '狂战士', '盾女',
+                ]
+            },
+            {
+                civname: 'sco',
+                civlinkname: 'sco',
+                civunits: [
+                    '长矛兵', '武士', '侦察兵', '骑手', '骑士',
+                    '步弓手', '弩手', '火枪兵', '僧侣', '',
+                    '边境突袭者', '氏族战士', '加洛格拉什',
                 ]
             },
         ];
