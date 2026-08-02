@@ -72,7 +72,7 @@
                      title="${c.name}" 
                      src="${c.iconSrc}" 
                      width="25px" 
-                     style="cursor: pointer; margin-right: 3px; margin-bottom: 3px;">
+                     style="cursor: pointer;">
             `;
         });
         barHtml += `</div>`;
