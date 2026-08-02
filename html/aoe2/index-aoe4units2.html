@@ -924,10 +924,10 @@
             '长矛兵水滴盾4.png': { noAgeSuffix: true, minAge: 4 },
             '骑士水滴盾3.png': { noAgeSuffix: true, minAge: 3 },
             '骑士水滴盾4.png': { noAgeSuffix: true, minAge: 4 },
-
             '骑士5.png': { noAgeSuffix: true, minAge: 3 },
             '骑士6.png': { noAgeSuffix: true, minAge: 4 },
-
+            '骑士土耳其弯刀3.png': { noAgeSuffix: true, minAge: 3 },
+            '骑士土耳其弯刀4.png': { noAgeSuffix: true, minAge: 4 },
             '骑士近战2.png': { noAgeSuffix: true, minAge: 2 },
             '骑士近战3.png': { noAgeSuffix: true, minAge: 3 },
             '骑士近战4.png': { noAgeSuffix: true, minAge: 4 },
@@ -935,16 +935,63 @@
             '镀金骑士近战4.png': { noAgeSuffix: true, minAge: 4 },
             '骆驼长矛骑兵近战3.png': { noAgeSuffix: true, minAge: 3 },
             '骆驼长矛骑兵近战4.png': { noAgeSuffix: true, minAge: 4 },
+            '长矛兵火长矛1.png': { noAgeSuffix: true, minAge: 1 },
+            '长矛兵火长矛2.png': { noAgeSuffix: true, minAge: 2 },
+            '长矛兵火长矛3.png': { noAgeSuffix: true, minAge: 3 },
+            '长矛兵火长矛4.png': { noAgeSuffix: true, minAge: 4 },
+            '长矛兵风暴长矛1.png': { noAgeSuffix: true, minAge: 1 },
+            '长矛兵风暴长矛2.png': { noAgeSuffix: true, minAge: 2 },
+            '长矛兵风暴长矛3.png': { noAgeSuffix: true, minAge: 3 },
+            '长矛兵风暴长矛4.png': { noAgeSuffix: true, minAge: 4 },
+            '骑手火长矛2.png': { noAgeSuffix: true, minAge: 2 },
+            '骑手火长矛3.png': { noAgeSuffix: true, minAge: 3 },
+            '骑手火长矛4.png': { noAgeSuffix: true, minAge: 4 },
         };
 
         const spFromRules = [
+
+            {
+                civ: 'jin',
+                fromMap: {
+                    '骑射手2': '靺鞨族人2',
+                    '骑射手3': '靺鞨族人3',
+                    '骑射手4': '靺鞨族人4',
+                    '长矛兵1': '长矛兵火长矛1',
+                    '长矛兵2': '长矛兵火长矛2',
+                    '长矛兵3': '长矛兵火长矛3',
+                    '长矛兵4': '长矛兵火长矛4',
+                },
+            },
+            {
+                civ: 'chi',
+                fromMap: {
+                    '骑士3': '骑士近战3',
+                    '骑士4': '骑士近战4',
+                }
+            },
+            {
+                civ: 'zxl',
+                fromMap: {
+                    '骑士3': '骑士近战3',
+                    '骑士4': '骑士近战4',
+                    '长矛兵1': '长矛兵风暴长矛1',
+                    '长矛兵2': '长矛兵风暴长矛2',
+                    '长矛兵3': '长矛兵风暴长矛3',
+                    '长矛兵4': '长矛兵风暴长矛4',
+                    '骑手2': '骑手火长矛2',
+                    '骑手3': '骑手火长矛3',
+                    '骑手4': '骑手火长矛4',
+                }
+            },
+
+
             {
                 civ: 'sul',
                 fromMap: {
                     '武士3': '武士研磨剑刃3',
                     '武士4': '武士研磨剑刃4',
-                    '骑士3': '骑士近战3',
-                    '骑士4': '骑士近战4',
+                    '骑士3': '骑士土耳其弯刀3',
+                    '骑士4': '骑士土耳其弯刀4',
                 }
             },
             {
@@ -1101,20 +1148,6 @@
                 }
             },
 
-            {
-                civ: 'chi',
-                fromMap: {
-                    '骑士3': '骑士近战3',
-                    '骑士4': '骑士近战4',
-                }
-            },
-            {
-                civ: 'zxl',
-                fromMap: {
-                    '骑士3': '骑士近战3',
-                    '骑士4': '骑士近战4',
-                }
-            },
 
             {
                 civ: 'eng',
@@ -1154,16 +1187,7 @@
                     '骑士4': '骑士近战4',
                 }
             },
-            {
-                civ: 'jin',
-                fromMap: {
-                    '骑射手2': '靺鞨族人2',
-                    '骑射手3': '靺鞨族人3',
-                    '骑射手4': '靺鞨族人4',
-                },
-            }
         ];
-
 
         // “sp.from” 按钮独立开关事件
         $(document).on('click', '#spFromBtn', function () {
