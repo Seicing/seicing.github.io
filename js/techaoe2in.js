@@ -62,10 +62,18 @@
             $td.html(newHtml);
         });
 
-        // 3. 构建与 #techno 标签结构完全一致的原生纯图标栏（直接写 width="25px" HTML 属性，无 JS 样式干扰）
-        let barHtml = `<div id="auto-civ-filter-bar" style="text-align: left; margin: 10px 0 15px 0;">`;
+        // 3. 构建排版舒展、带 6px 舒适间距的 Flex 图标栏
+        let barHtml = `<div id="auto-civ-filter-bar" style="display: flex; flex-wrap: wrap; gap: 2px;">`;
         availableCivs.forEach(c => {
-            barHtml += `<img class="civ-filter-icon civ-active936" width="25px" data-civ="${c.id}" title="${c.name}" src="${c.iconSrc}">`;
+            barHtml += `
+                <img class="civ-filter-icon civ-active936" 
+                     width="25px" 
+                     height="25px" 
+                     data-civ="${c.id}" 
+                     title="${c.name}" 
+                     src="${c.iconSrc}" 
+                     style="cursor: pointer;">
+            `;
         });
         barHtml += `</div>`;
 
