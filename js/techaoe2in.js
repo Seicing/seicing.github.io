@@ -1,5 +1,5 @@
 (function () {
-    // 1. 直接从 #techno 内的 <img> 节点提取可用文明信息（零硬编码，完美适配 DIC 和 DIC2）
+    // 1. 直接从 #techno 内的 <img> 节点提取可用文明信息
     function detectAvailableCivsFromTechno() {
         const availableCivs = [];
 
@@ -27,7 +27,9 @@
     // 2. 主初始化逻辑
     function initCivFilterExtension() {
         const availableCivs = detectAvailableCivsFromTechno();
-        if (availableCivs.length === 0) return;
+
+        // 核心改进：如果可用文明小于等于 1 个（如文明独有单位），不生成筛选列表，维持网页原样！
+        if (availableCivs.length <= 1) return;
 
         const civMap = {};
         availableCivs.forEach(c => civMap[c.id] = c);
@@ -54,7 +56,7 @@
         });
 
         // 3. 构建与 #techno 完全一致的原生 25px 纯图标栏
-        let barHtml = `<div id="auto-civ-filter-bar" style="text-align: left;>`;
+        let barHtml = `<div id="auto-civ-filter-bar" style="text-align: left; margin: 0 0 0 0;">`;
         availableCivs.forEach(c => {
             barHtml += `
                 <img class="civ-filter-icon civ-active936" 
@@ -111,7 +113,7 @@
 
                     const token = getCivTokenFromElement(this);
 
-                    // 情况1：带 CivIcon 图片（专属科技/特定文明加成，如：札甲带 CivIcon-Khitans）
+                    // 情况1：带 CivIcon 图片（专属科技/特定文明加成）
                     if (token) {
                         if (token === selectedCiv.token) {
                             $(this).show();
