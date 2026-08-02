@@ -54,7 +54,7 @@
         });
 
         // 3. 构建与 #techno 完全一致的原生 25px 纯图标栏
-        let barHtml = `<div id="auto-civ-filter-bar" style="text-align: left; margin: 10px 0 15px 0;">`;
+        let barHtml = `<div id="auto-civ-filter-bar" style="text-align: left;>`;
         availableCivs.forEach(c => {
             barHtml += `
                 <img class="civ-filter-icon civ-active936" 
