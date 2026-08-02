@@ -63,7 +63,7 @@
         });
 
         // 3. 构建排版舒展、带 6px 舒适间距的 Flex 图标栏
-        let barHtml = `<div id="auto-civ-filter-bar" style="display: flex; flex-wrap: wrap; gap: 2px;">`;
+        let barHtml = `<div id="auto-civ-filter-bar" style="display: flex; flex-wrap: wrap; gap: 6px;">`;
         availableCivs.forEach(c => {
             barHtml += `
                 <img class="civ-filter-icon civ-active936" 
