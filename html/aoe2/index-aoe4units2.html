@@ -319,6 +319,51 @@
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
 
         // =========================================================
+        // 单位尺寸手动缩放比例配置表 (在此定义大型单位如骆驼系、大象系)
+        // 支持精确名称 (如 '战象') 或关键词 (如 '骆驼'、'大象')
+        // =========================================================
+        const unitMultiplierMap = {
+            '骆驼骑兵': 0.85,
+            '骆驼射手': 0.85,
+            '骆驼长矛骑兵': 0.85,
+            '沙漠掠夺者': 0.85,
+            '沙漠掠夺者弓箭': 0.85,
+            '战象': 0.85,
+            '箭塔象': 0.85,
+            '弩炮大象': 0.85,
+            '苏丹的精锐箭塔象': 0.85,
+            '医疗大象': 0.85,
+            '工作大象': 0.85,
+        };
+
+        // 计算单位手动缩放乘区系数
+        function getUnitScaleMultiplier($img) {
+            let multiplier = 1.0;
+            if ($img.hasClass('rakuda')) multiplier = 0.85;
+
+            const originalSrc = $img.data('original-src') || $img.attr('src') || '';
+            if (!originalSrc) return multiplier;
+
+            // 获取文件名（如 "战象4.png" -> "战象4"）
+            const fileName = originalSrc.split('/').pop().replace('.png', '').trim();
+            // 移除末尾时代数字（如 "战象4" -> "战象"）
+            const cleanName = fileName.replace(/[1-4]$/, '').trim();
+
+            // 1. 精确名称/无时代编号匹配
+            if (unitMultiplierMap[fileName] !== undefined) return unitMultiplierMap[fileName];
+            if (unitMultiplierMap[cleanName] !== undefined) return unitMultiplierMap[cleanName];
+
+            // 2. 关键词模糊匹配（如包含 "骆驼" 或 "大象"）
+            for (let key in unitMultiplierMap) {
+                if (fileName.includes(key) || cleanName.includes(key)) {
+                    return unitMultiplierMap[key];
+                }
+            }
+
+            return multiplier;
+        }
+
+        // =========================================================
         // 高清透明底 PNG 导出 (解决右侧切边 & 解决图片压扁)
         // =========================================================
         $(document).on('click', '#exportPngBtn', function () {
@@ -774,94 +819,39 @@
         };
 
         const specialUnitRules = {
-            '国王.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '猛安谋克守军.png': {
-                noAgeSuffix: true, minAge: 3
-            },
-            '骑马掷弹兵.png': {
-                noAgeSuffix: true, minAge: 4
-            },
-            '忍者.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '刀剑旗本武士.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '弓箭旗本武士.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '骑马旗本武士.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '一向一揆僧侣.png': {
-                noAgeSuffix: true, minAge: 3
-            },
-            '兰开斯特领主.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '贝都因剑士.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '贝都因掷矛手.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '埃米尔战士.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '肉盾.png': {
-                noAgeSuffix: true, minAge: 1
-            },
-            '民兵长戟兵.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '民兵火枪兵.png': {
-                noAgeSuffix: true, minAge: 3
-            },
-            '奥斯曼军乐队.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '朝圣者男.png': {
-                noAgeSuffix: true, minAge: 1
-            },
-            '朝圣者女.png': {
-                noAgeSuffix: true, minAge: 1
-            },
-            '使者.png': {
-                noAgeSuffix: true, minAge: 1
-            },
-            '阿塔贝格.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '屋台.png': {
-                noAgeSuffix: true, minAge: 1
-            },
-            '圣女贞德农民.png': {
-                noAgeSuffix: true, minAge: 1
-            },
-            '圣女贞德披甲女战士.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '圣女贞德猎人.png': {
-                noAgeSuffix: true, minAge: 2
-            },
-            '圣女贞德骑士.png': {
-                noAgeSuffix: true, minAge: 3
-            },
-            '圣女贞德骑射手.png': {
-                noAgeSuffix: true, minAge: 3
-            },
-            '圣女贞德爆破加农炮.png': {
-                noAgeSuffix: true, minAge: 4
-            },
-            '圣女贞德神射手.png': {
-                noAgeSuffix: true, minAge: 4
-            },
+            '国王.png': { noAgeSuffix: true, minAge: 2 },
+            '猛安谋克守军.png': { noAgeSuffix: true, minAge: 3 },
+            '骑马掷弹兵.png': { noAgeSuffix: true, minAge: 4 },
+            '忍者.png': { noAgeSuffix: true, minAge: 2 },
+            '刀剑旗本武士.png': { noAgeSuffix: true, minAge: 2 },
+            '弓箭旗本武士.png': { noAgeSuffix: true, minAge: 2 },
+            '骑马旗本武士.png': { noAgeSuffix: true, minAge: 2 },
+            '一向一揆僧侣.png': { noAgeSuffix: true, minAge: 3 },
+            '兰开斯特领主.png': { noAgeSuffix: true, minAge: 2 },
+            '贝都因剑士.png': { noAgeSuffix: true, minAge: 2 },
+            '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 2 },
+            '埃米尔战士.png': { noAgeSuffix: true, minAge: 2 },
+            '肉盾.png': { noAgeSuffix: true, minAge: 1 },
+            '民兵长戟兵.png': { noAgeSuffix: true, minAge: 2 },
+            '民兵火枪兵.png': { noAgeSuffix: true, minAge: 3 },
+            '奥斯曼军乐队.png': { noAgeSuffix: true, minAge: 2 },
+            '朝圣者男.png': { noAgeSuffix: true, minAge: 1 },
+            '朝圣者女.png': { noAgeSuffix: true, minAge: 1 },
+            '使者.png': { noAgeSuffix: true, minAge: 1 },
+            '阿塔贝格.png': { noAgeSuffix: true, minAge: 2 },
+            '屋台.png': { noAgeSuffix: true, minAge: 1 },
+            '圣女贞德农民.png': { noAgeSuffix: true, minAge: 1 },
+            '圣女贞德披甲女战士.png': { noAgeSuffix: true, minAge: 2 },
+            '圣女贞德猎人.png': { noAgeSuffix: true, minAge: 2 },
+            '圣女贞德骑士.png': { noAgeSuffix: true, minAge: 3 },
+            '圣女贞德骑射手.png': { noAgeSuffix: true, minAge: 3 },
+            '圣女贞德爆破加农炮.png': { noAgeSuffix: true, minAge: 4 },
+            '圣女贞德神射手.png': { noAgeSuffix: true, minAge: 4 },
+            '贞德的骑兵.png': { noAgeSuffix: true, minAge: 2 },
+            '贞德的冠军剑士.png': { noAgeSuffix: true, minAge: 2 },
 
             '民兵长戟兵.png': { noAgeSuffix: true, minAge: 2 },
             '民兵火枪兵.png': { noAgeSuffix: true, minAge: 3 },
-
             '奥斯曼军乐队.png': { noAgeSuffix: true, minAge: 2 },
             '猛安谋克守军.png': { noAgeSuffix: true, minAge: 3 },
             '骑马掷弹兵.png': { noAgeSuffix: true, minAge: 4 },
@@ -869,7 +859,6 @@
             '埃米尔战士.png': { noAgeSuffix: true, minAge: 2 },
             '贝都因剑士.png': { noAgeSuffix: true, minAge: 2 },
             '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 2 },
-
             '肉盾.png': { noAgeSuffix: true, minAge: 2 },
             '肉盾战场救援': { noAgeSuffix: true, minAge: 2 },
             '罗斯贡品莫斯科贡赋3.png': { noAgeSuffix: true, minAge: 3 },
@@ -878,7 +867,6 @@
             '土尔扈特莫斯科贡赋4.png': { noAgeSuffix: true, minAge: 4 },
             '镀金国土佣仆战戟3.png': { noAgeSuffix: true, minAge: 3 },
             '镀金国土佣仆战戟4.png': { noAgeSuffix: true, minAge: 4 },
-
             '靺鞨族人2.png': { noAgeSuffix: true, minAge: 2 },
             '靺鞨族人3.png': { noAgeSuffix: true, minAge: 3 },
             '靺鞨族人4.png': { noAgeSuffix: true, minAge: 4 },
@@ -905,6 +893,7 @@
             '武士4逆刀刃.png': { noAgeSuffix: true, minAge: 4 },
             '镀金国土佣仆战戟3.png': { noAgeSuffix: true, minAge: 3 },
             '镀金国土佣仆战戟4.png': { noAgeSuffix: true, minAge: 4 },
+            '工作大象.png': { noAgeSuffix: true, minAge: 1 },
             '武士双手武器重锤2.png': { noAgeSuffix: true, minAge: 2 },
             '武士双手武器重锤3.png': { noAgeSuffix: true, minAge: 3 },
             '武士双手武器重锤4.png': { noAgeSuffix: true, minAge: 4 },
@@ -1693,12 +1682,8 @@
                 const naturalHeight = this.naturalHeight;
                 if (naturalWidth <= 0) return;
 
-                let multiplier = 1.0;
-                if ($img.hasClass('rakuda')) {
-                    multiplier = 0.85;
-                } else if ($img.hasClass('elephante')) {
-                    multiplier = 1.0;
-                }
+                // 获取手动配置的缩放乘区系数
+                const multiplier = getUnitScaleMultiplier($img);
 
                 const newWidth = naturalWidth * scaleRatio * multiplier;
                 const currentRenderHeight = naturalHeight * scaleRatio * multiplier;
