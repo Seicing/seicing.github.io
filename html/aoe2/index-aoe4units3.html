@@ -65,16 +65,13 @@
         border-color: #50473E;
     }
 
-    /* 兵种选择栏 (图标纯净版，间距 10px) */
     .unit-selector {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        /* 图标间距 10px */
         align-items: center;
         margin-bottom: 12px;
-        padding-left: 2px;
-        /* 留出左侧发光边缘空间 */
+        padding-left: 15px;
     }
 
     .unit-act-btn {
@@ -241,18 +238,20 @@
     <button class="unit-act-btn" data-unit="火枪兵">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png">
     </button>
-    <button class="unit-act-btn" data-unit="僧侣">
-        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣.png">
-    </button>
+
     <button class="unit-act-btn" data-unit="村民">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/村民.png">
     </button>
+    <button class="unit-act-btn" data-unit="商人">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/商人.png">
+    </button>
 
-
+    <button class="unit-act-btn" data-unit="僧侣">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/僧侣.png">
+    </button>
     <button class="unit-act-btn" data-unit="骑射手">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑射手2.png">
     </button>
-
     <button class="unit-act-btn" data-unit="特殊步兵">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/兵营.png">
     </button>
@@ -396,9 +395,10 @@
             '火枪兵': { default: '火枪兵', sen: '火绳枪足轻', zxl: '掷弹兵', otd: '镀金火枪兵' },
             '僧侣': { default: '僧侣', jpn: '神道教神主/佛教僧侣', sen: '一向一揆僧侣', ayy: '德尔维希' },
             '村民': { default: '村民男/村民女' },
+            '商人': { default: '商人', abb: '贸易商队', ayy: '贸易商队', jin: '驯鹿商人', kcr: '威尼斯商人' },
             '骑射手': { default: '骑射手', jpn: '女武者', abb: '骆驼射手', mon: '蒙古突骑|汗的猎人|汗', goh: '钦察弓兵', sul: '箭塔象|苏丹的精锐箭塔象', tug: '弩炮大象', hre: '黑骑兵', ayy: '沙漠掠夺者弓箭', kcr: '标枪骑兵', jin: '骑射手|骑马掷弹兵' },
             '特殊弓兵': { chi: '诸葛弩手|掷弹兵', eng: '温嘉德长弓兵', rus: '民兵火枪兵', jpn: '大筒兵', sen: '大筒兵', ayy: '贝都因掷矛手', kcr: '热那亚弩手', mal: '掷枪兵', },
-            '特殊骑兵': { chi: '火长矛骑兵', zxl: '帝国卫队|元朝掠夺者', eng: '国王', hol: '短矛骑兵', sul: '战象', tug: '战象|医疗大象', goh: '土尔扈特', mac: '骑士', abb: '骆驼骑兵', ayy: '沙漠掠夺者', ott: '奥斯曼军乐队', jin: '猛安谋克守军', jda: '贞德的骑兵', kcr: '同伴骑士|什拉赫塔骑兵' },
+            '特殊骑兵': { chi: '火长矛骑兵', zxl: '帝国卫队|元朝掠夺者', eng: '国王', hol: '短矛骑兵', sul: '战象', tug: '战象|医疗大象', goh: '土尔扈特|拔都汗', mac: '骑士', abb: '骆驼骑兵', ayy: '沙漠掠夺者', ott: '奥斯曼军乐队', jin: '猛安谋克守军', jda: '贞德的骑兵', kcr: '同伴骑士|什拉赫塔骑兵' },
             '特殊步兵': { zxl: '少林僧侣', hol: '兰开斯特领主', eng: '温嘉德步兵', rus: '民兵长戟兵', hre: '国土佣仆', otd: '镀金国土佣仆', mal: '自由民战士', jpn: '女武艺者|忍者', sen: '金碎棒日本武士|忍者', jin: '斩马刀', ayy: '贝都因剑士', jda: '贞德的冠军剑士', tug: '埃米尔战士', goh: '罗斯贡品|肉盾', kcr: '条顿骑士|医院骑士|萨金特卫兵|重装长矛兵|意大利佣兵' },
         };
 

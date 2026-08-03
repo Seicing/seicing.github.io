@@ -115,6 +115,7 @@
     --back-to-top-button-hover: #555555;
     --back-to-top-button-main: #333333;
     --back-to-top-button-font: #ffffff;
+    --trader937: #fff4bf;
 
 }
 
@@ -240,6 +241,8 @@ body.theme-dark {
     --back-to-top-button-hover: #999999;
     --back-to-top-button-main: #7c7c7c;
     --back-to-top-button-font: #ffffff;
+
+    --trader937: #b3b3b38a;
 }
 
 /* 无头夜间特殊兼容 */
@@ -476,6 +479,10 @@ body.layout-headless.theme-dark #wrapper2 {
 
 .hiddeninpage {
     color: var(--hidden-inpage);
+}
+
+.trader937 {
+    color: var(--trader937);
 }
 
 body .civ7line {
