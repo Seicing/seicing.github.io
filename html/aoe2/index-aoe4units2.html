@@ -1037,7 +1037,6 @@
                     '武士4': '武士莫斯科贡赋4',
                 }
             },
-
             {
                 civ: 'rus',
                 fromMap: {
@@ -1152,8 +1151,6 @@
                     '骑士4': '骑士野太刀4',
                 }
             },
-
-
             {
                 civ: 'eng',
                 fromMap: {
@@ -1207,19 +1204,26 @@
             if (!isSpFrom || !unitName) return unitName;
 
             const cleanUnit = unitName.replace('.png', '').trim();
-            const currentWithAge = cleanUnit + age; // 如 "靺鞨族人2"
+            const currentWithAge = cleanUnit + age; // 如 "武士4"
 
             for (let rule of spFromRules) {
-                const matchCiv = Array.isArray(rule.civ) ? rule.civ.includes(civKey) : (rule.civ === civKey || rule.civ === 'all' || !rule.civ);
+                // 核心修改：严格判断 civKey，仅当规则的 civ 与当前选中的 civKey 完全匹配时才生效
+                let matchCiv = false;
+                if (Array.isArray(rule.civ)) {
+                    matchCiv = rule.civ.includes(civKey);
+                } else if (rule.civ) {
+                    matchCiv = (rule.civ === civKey || rule.civ === 'all');
+                }
+
                 if (!matchCiv) continue;
 
-                // 1. 匹配 fromMap 文件名 1 对 1 映射 (如 '靺鞨族人2': '靺鞨族人5')
+                // 1. 匹配 fromMap 文件名 1 对 1 映射 (如 '武士4': '武士8')
                 if (rule.fromMap) {
                     if (rule.fromMap[currentWithAge]) return rule.fromMap[currentWithAge];
                     if (rule.fromMap[cleanUnit]) return rule.fromMap[cleanUnit];
                 }
 
-                // 2. 匹配 age 时代 1 对 1 映射 (如 from: { 2: '靺鞨族人5', 3: '靺鞨族人4' })
+                // 2. 匹配 age 时代 1 对 1 映射
                 if (rule.unit === cleanUnit && rule.from) {
                     if (typeof rule.from === 'object' && rule.from[age]) {
                         return rule.from[age];
