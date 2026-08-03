@@ -29,6 +29,16 @@ body.theme-dark {
     border: 1px solid #888888;
 }
 
+
+.aoe2de {
+    border-collapse: collapse;
+}
+
+.aoe2de th,
+.aoe2de td {
+    border: 1px solid #888888;
+}
+
 #empire {
     border-collapse: collapse;
 }
