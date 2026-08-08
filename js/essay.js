@@ -1,6 +1,6 @@
 /*
 =====================================================================
-=== 文章列表交互模块 (Essay List Interaction Module) v2.0
+=== 文章列表交互模块 (Essay List Interaction Module) v2.1 (修复兼容版)
 === (专为 Global Layout Controller v4.0+ 集成设计)
 =====================================================================
 */
@@ -23,7 +23,6 @@ function getQueryVariable(variable) {
 // == 系统 1: 电脑模式专用函数 ==
 // =========================================================================
 function overstep(a, b) {
-    // 这个函数只操作原始ID，完全为电脑模式服务
     document.getElementById("hajimebutton").style.display = "block";
     document.getElementById("hattenbutton").style.display = "block";
     document.getElementById("tsuzukubutton").style.display = "block";
@@ -49,7 +48,6 @@ function overstep(a, b) {
 // == 系统 2: 手机/平板模式专用函数 ==
 // =========================================================================
 function overstep2(a, b) {
-    // 这个函数是overstep的副本，但只操作带 "2" 后缀的ID
     document.getElementById("hajimebutton2").style.display = "block";
     document.getElementById("hattenbutton2").style.display = "block";
     document.getElementById("tsuzukubutton2").style.display = "block";
@@ -84,8 +82,14 @@ function transformClonedEssayList(drawerContainer) {
     console.log("Essay Module: Transforming cloned content inside", drawerContainer.id);
 
     // a. 改造抽屉内部的所有ID，加上后缀 "2"
+    // 【修改点 1】特例排除 bigfonter 和 darkmoder，保留原始 ID，防止 defaultall.js 找不到
     $(drawerContainer).find('[id]').each(function () {
         var oldId = $(this).attr('id');
+        if (oldId === 'bigfonter' || oldId === 'darkmoder') {
+            // 给它们保留原 ID 的同时，加上 class 辅助识别
+            $(this).addClass(oldId + '2');
+            return;
+        }
         $(this).attr('id', oldId + '2');
     });
 
@@ -103,8 +107,7 @@ function transformClonedEssayList(drawerContainer) {
         }
     });
 
-    // c. 初始化抽屉内的状态：根据URL参数点击改造后的按钮
-    //    这一步确保了即使页面加载时是手机模式，抽屉里的列表也能正确展开
+    // c. 初始化抽屉内的状态
     var nenbun = getQueryVariable("nenbun");
     if (nenbun) {
         var mobileButtonId = nenbun + "button2";
@@ -117,7 +120,7 @@ function transformClonedEssayList(drawerContainer) {
 
 
 // =========================================================================
-// == 主逻辑: 初始化电脑版 ==
+// == 主逻辑: 初始化电脑版 & 字体按键兼容补丁 ==
 // =========================================================================
 $(document).ready(function () {
     // 加载基础内容到电脑版的 #sidebar
@@ -128,7 +131,6 @@ $(document).ready(function () {
         }
 
         // 初始化电脑模式：根据URL参数点击原始按钮
-        // 手机模式的状态将由布局控制器在克隆和改造后自行初始化
         var nenbun = getQueryVariable("nenbun");
         if (nenbun) {
             var desktopButtonId = nenbun + "button";
@@ -137,5 +139,30 @@ $(document).ready(function () {
                 desktopButton.click();
             }
         }
+    });
+
+    // =========================================================================
+    // 【修改点 2】专门补救 defaultall.js 漏掉的 #bigfonter2 / 移动端大字体点击
+    // =========================================================================
+    $(document).on('click', '#bigfonter, #bigfonter2, .bigfonter2', function () {
+        // 读取当前字体状态
+        var currentFont = 'small';
+        try { currentFont = localStorage.getItem('fontSize') || 'small'; } catch (e) { }
+
+        var newFont = (currentFont === 'big') ? 'small' : 'big';
+        try { localStorage.setItem('fontSize', newFont); } catch (e) { }
+
+        // 强行应用字体（不仅改 body，也强制应用到主要内容容器，解决 CSS 被覆盖问题）
+        var targetFontSize = (newFont === 'big') ? '12pt' : '9pt';
+        document.body.style.fontSize = targetFontSize;
+
+        $('#wrapper, #page, #content, .entry, .post, td, p').css('font-size', (newFont === 'big') ? '12pt' : '');
+
+        // 强行更新按钮高亮颜色
+        var isLavi = $(document.body).hasClass('lavilavivagnar');
+        var activeColor = isLavi ? 'rgb(0, 255, 172)' : 'var(--btn-active-color)';
+        var inactiveColor = isLavi ? '#ffffff' : 'var(--btn-inactive-color)';
+
+        $('#bigfonter, #bigfonter2, .bigfonter2').css('color', newFont === 'big' ? activeColor : inactiveColor);
     });
 });
