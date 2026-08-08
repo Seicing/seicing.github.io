@@ -166,3 +166,22 @@ $(document).ready(function () {
         $('#bigfonter, #bigfonter2, .bigfonter2').css('color', newFont === 'big' ? activeColor : inactiveColor);
     });
 });
+
+// 在 essay.js 最底部添加：不用等待 DOMContentLoaded，直接全局绑定
+$(document).on('click', '#bigfonter', function (e) {
+    e.preventDefault();
+    var currentFont = 'small';
+    try { currentFont = localStorage.getItem('fontSize') || 'small'; } catch (err) { }
+
+    var newFont = (currentFont === 'big') ? 'small' : 'big';
+    try { localStorage.setItem('fontSize', newFont); } catch (err) { }
+
+    // 应用字号
+    document.body.style.fontSize = (newFont === 'big') ? '12pt' : '9pt';
+
+    // 强行刷新按钮颜色
+    var isLavi = $(document.body).hasClass('lavilavivagnar');
+    var activeColor = isLavi ? 'rgb(0, 255, 172)' : 'var(--btn-active-color)';
+    var inactiveColor = isLavi ? '#ffffff' : 'var(--btn-inactive-color)';
+    $('#bigfonter').css('color', newFont === 'big' ? activeColor : inactiveColor);
+});
