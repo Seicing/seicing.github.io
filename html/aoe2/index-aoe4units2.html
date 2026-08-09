@@ -319,6 +319,50 @@
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
 
         // =========================================================
+        // 单位偏移坐标配置表 (在此定义特定文明单位的位置偏移)
+        // =========================================================
+        const unitOffsetRules = [
+            {
+                civ: 'hol',
+                unit: '兰开斯特领主',
+                top: '20px',
+            },
+            /* 在此添加更多规则，如:
+            {
+                civ: 'jpn',
+                unit: '武士',
+                left: '-5px',
+                top: '2px',
+            }
+            */
+        ];
+
+        // 查找指定文明单位的偏移坐标规则
+        function getUnitOffsetRule(civKey, unitName) {
+            if (!unitName) return null;
+            const rawName = unitName.replace('.png', '').trim();
+            const cleanName = rawName.replace(/[1-8]$/, '').trim();
+
+            for (let rule of unitOffsetRules) {
+                let matchCiv = false;
+                if (Array.isArray(rule.civ)) {
+                    matchCiv = rule.civ.includes(civKey);
+                } else if (rule.civ) {
+                    matchCiv = (rule.civ === civKey || rule.civ === 'all');
+                } else {
+                    matchCiv = true;
+                }
+
+                if (!matchCiv) continue;
+
+                if (rule.unit === rawName || rule.unit === cleanName || rule.unit === 'all') {
+                    return rule;
+                }
+            }
+            return null;
+        }
+
+        // =========================================================
         // 单位尺寸手动缩放比例配置表 (在此定义大型单位如骆驼系、大象系)
         // 支持精确名称 (如 '战象') 或关键词 (如 '骆驼'、'大象')
         // =========================================================
@@ -1288,6 +1332,7 @@
                         if (uObj.noCrop) $img.addClass('no-crop');
 
                         $img.attr('data-aoe4unit', imgPath);
+                        $img.attr('data-unit-name', subName); // 记录单位原始名称
                         $img.data('original-src', imgPath);
                         $box.append($img);
                     });
@@ -1303,6 +1348,7 @@
                     if (uObj.noCrop) $img.addClass('no-crop');
 
                     $img.attr('data-aoe4unit', imgPath);
+                    $img.attr('data-unit-name', unitName); // 记录单位原始名称
                     $img.data('original-src', imgPath);
                     $td.append($img);
                 }
@@ -1645,7 +1691,7 @@
 
 
         // =========================================================
-        // 同步缩放（支持限高豁免卡 .no-crop）
+        // 同步缩放（支持限高豁免卡 .no-crop & 单位专属坐标偏移）
         // =========================================================
         function syncImageScales() {
             // 重置基本样式
@@ -1719,6 +1765,35 @@
                         'object-position': '',
                         'vertical-align': 'bottom',
                         'display': 'inline-block'
+                    });
+                }
+
+                // =========================================================
+                // 应用特定单位坐标偏移
+                // =========================================================
+                const unitName = $img.attr('data-unit-name') || '';
+                const originalSrc = $img.data('original-src') || $img.attr('src') || '';
+                const fileName = originalSrc.split('/').pop() || '';
+
+                const offsetRule = getUnitOffsetRule(currentCiv, unitName) || getUnitOffsetRule(currentCiv, fileName);
+
+                if (offsetRule) {
+                    $img.css({
+                        'position': 'relative',
+                        'left': offsetRule.left || '',
+                        'right': offsetRule.right || '',
+                        'top': offsetRule.top || '',
+                        'bottom': offsetRule.bottom || '',
+                        'transform': offsetRule.transform || ''
+                    });
+                } else {
+                    $img.css({
+                        'position': '',
+                        'left': '',
+                        'right': '',
+                        'top': '',
+                        'bottom': '',
+                        'transform': ''
                     });
                 }
             });

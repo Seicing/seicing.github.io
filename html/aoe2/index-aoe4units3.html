@@ -310,6 +310,50 @@
     $(document).ready(function () {
         $('#sidebar').load('https://seicing.com/js/list/AoeOfEmpires.html');
 
+        // =========================================================
+        // 单位偏移坐标配置表 (在此定义特定文明单位的位置偏移)
+        // =========================================================
+        const unitOffsetRules = [
+            {
+                civ: 'hol',
+                unit: '兰开斯特领主',
+                top: '20px',
+            },
+            /* 在此添加更多规则，如:
+            {
+                civ: 'jpn',
+                unit: '武士',
+                left: '-5px',
+                top: '2px',
+            }
+            */
+        ];
+
+        // 查找指定文明单位的偏移坐标规则
+        function getUnitOffsetRule(civKey, unitName) {
+            if (!unitName) return null;
+            const rawName = unitName.replace('.png', '').trim();
+            const cleanName = rawName.replace(/[1-8]$/, '').trim();
+
+            for (let rule of unitOffsetRules) {
+                let matchCiv = false;
+                if (Array.isArray(rule.civ)) {
+                    matchCiv = rule.civ.includes(civKey);
+                } else if (rule.civ) {
+                    matchCiv = (rule.civ === civKey || rule.civ === 'all');
+                } else {
+                    matchCiv = true;
+                }
+
+                if (!matchCiv) continue;
+
+                if (rule.unit === rawName || rule.unit === cleanName || rule.unit === 'all') {
+                    return rule;
+                }
+            }
+            return null;
+        }
+
         // 文明顺序定义 (25 个文明)
         const civOrder = [
             'chi', 'zxl',
@@ -892,19 +936,25 @@
             if (!isSpFrom || !unitName) return unitName;
 
             const cleanUnit = unitName.replace('.png', '').trim();
-            const currentWithAge = cleanUnit + age; // 如 "靺鞨族人2"
+            const currentWithAge = cleanUnit + age; // 如 "武士4"
 
             for (let rule of spFromRules) {
-                const matchCiv = Array.isArray(rule.civ) ? rule.civ.includes(civKey) : (rule.civ === civKey || rule.civ === 'all' || !rule.civ);
+                let matchCiv = false;
+                if (Array.isArray(rule.civ)) {
+                    matchCiv = rule.civ.includes(civKey);
+                } else if (rule.civ) {
+                    matchCiv = (rule.civ === civKey || rule.civ === 'all');
+                }
+
                 if (!matchCiv) continue;
 
-                // 1. 匹配 fromMap 文件名 1 对 1 映射 (如 '靺鞨族人2': '靺鞨族人5')
+                // 1. 匹配 fromMap 文件名 1 对 1 映射
                 if (rule.fromMap) {
                     if (rule.fromMap[currentWithAge]) return rule.fromMap[currentWithAge];
                     if (rule.fromMap[cleanUnit]) return rule.fromMap[cleanUnit];
                 }
 
-                // 2. 匹配 age 时代 1 对 1 映射 (如 from: { 2: '靺鞨族人5', 3: '靺鞨族人4' })
+                // 2. 匹配 age 时代 1 对 1 映射
                 if (rule.unit === cleanUnit && rule.from) {
                     if (typeof rule.from === 'object' && rule.from[age]) {
                         return rule.from[age];
@@ -934,6 +984,7 @@
                     const $img = $('<img>');
                     $img.addClass('multi-unit-img');
                     $img.attr('data-aoe4unit', imgPath);
+                    $img.attr('data-unit-name', subName); // 记录单位原始名称
                     $img.data('original-src', imgPath);
                     $box.append($img);
                 });
@@ -943,6 +994,7 @@
                 const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${civLink}/${unitName}.png`;
                 const $img = $('<img>');
                 $img.attr('data-aoe4unit', imgPath);
+                $img.attr('data-unit-name', unitName); // 记录单位原始名称
                 $img.data('original-src', imgPath);
                 $td.append($img);
             } else {
@@ -1388,7 +1440,7 @@
         });
 
         // =========================================================
-        // 同步缩放比例与裁切 (整个长矛兵组自动使用 1.05 裁切)
+        // 同步缩放比例与裁切 (支持单位专属坐标偏移)
         // =========================================================
         function syncImageScales() {
             // 1. 重置非国旗可见图片为默认自适应样式
@@ -1463,6 +1515,36 @@
                         'object-position': '',
                         'vertical-align': 'bottom',
                         'display': 'inline-block'
+                    });
+                }
+
+                // =========================================================
+                // 【新增】应用特定文明单位坐标偏移 (精准从父级 td 识别文明)
+                // =========================================================
+                const tdCiv = $img.closest('td').attr('data-civ') || '';
+                const unitName = $img.attr('data-unit-name') || '';
+                const originalSrc = $img.data('original-src') || $img.attr('src') || '';
+                const fileName = originalSrc.split('/').pop() || '';
+
+                const offsetRule = getUnitOffsetRule(tdCiv, unitName) || getUnitOffsetRule(tdCiv, fileName);
+
+                if (offsetRule) {
+                    $img.css({
+                        'position': 'relative',
+                        'left': offsetRule.left || '',
+                        'right': offsetRule.right || '',
+                        'top': offsetRule.top || '',
+                        'bottom': offsetRule.bottom || '',
+                        'transform': offsetRule.transform || ''
+                    });
+                } else {
+                    $img.css({
+                        'position': '',
+                        'left': '',
+                        'right': '',
+                        'top': '',
+                        'bottom': '',
+                        'transform': ''
                     });
                 }
             });
