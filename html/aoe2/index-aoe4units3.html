@@ -179,6 +179,17 @@
         overflow: visible !important;
         /* 允许内部图片突破 800px 容器限制溢出显示 */
     }
+
+    @media screen and (max-width: 768px) {
+        #customers td img {
+            position: static !important;
+            left: auto !important;
+            right: auto !important;
+            top: auto !important;
+            bottom: auto !important;
+            transform: none !important;
+        }
+    }
 </style>
 </head>
 
