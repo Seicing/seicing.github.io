@@ -167,19 +167,17 @@
         flex-shrink: 0;
     }
 
-    #customers,
-    #customers td,
-    .multi-unit-box {
-        /* 允许图片超出单元格边界显示，不被边缘切断 */
+    /* =========================================================
+   【彻底解决模板裁切】重写外层 .post 和 .entry 容器的 overflow 规则
+   ========================================================= */
+    .post,
+    .entry,
+    #content,
+    #page,
+    #wrapper,
+    #wrapper2 {
         overflow: visible !important;
-    }
-
-    #customers td img:not(.civ-flag) {
-        /* 允许图片真实宽度突破格子的 100% 限制 */
-        max-width: none !important;
-        /* 提升层级，确保超出的武器/坐骑浮在格子上层，不被隔壁格子遮挡 */
-        position: relative;
-        z-index: 2;
+        /* 允许内部图片突破 800px 容器限制溢出显示 */
     }
 </style>
 </head>
