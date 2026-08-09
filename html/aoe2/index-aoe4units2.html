@@ -346,182 +346,46 @@
         // 单位偏移坐标配置表 (在此定义特定文明单位的位置偏移)
         // =========================================================
         const unitOffsetRules = [
-            {
-                civ: 'hol',
-                unit: '兰开斯特领主',
-                top: '25px',
-            },
-            {
-                civ: 'hol',
-                unit: '伯爵护卫',
-                left: '-20px',
-            },
-            {
-                civ: 'eng',
-                unit: '温嘉德步兵',
-                left: '25px',
-            },
-            {
-                civ: 'chi',
-                unit: '武士',
-                left: '-20px',
-            },
-            {
-                civ: 'zxl',
-                unit: '武士',
-                left: '-20px',
-            },
-            {
-                civ: 'jpn',
-                unit: '女武艺者',
-                left: '-30px',
-            },
-            {
-                civ: 'sen',
-                unit: '金碎棒日本武士',
-                left: '-30px',
-            },
-            {
-                civ: 'jin',
-                unit: '斩马刀',
-                left: '-25px',
-            },
-            {
-                civ: 'jpn',
-                unit: '武士',
-                left: '-30px',
-            },
-            {
-                civ: 'sen',
-                unit: '武士',
-                left: '-30px',
-            },
-            {
-                civ: 'kcr',
-                unit: '意大利佣兵',
-                left: '10px',
-            },
-            {
-                civ: 'kcr',
-                unit: '萨金特卫兵',
-                left: '30px',
-            },
-            {
-                civ: 'kcr',
-                unit: '重装长矛兵',
-                left: '-25px',
-            },
-            {
-                civ: 'goh',
-                unit: '罗斯贡品',
-                left: '-25px',
-            },
-            {
-                civ: 'goh',
-                unit: '罗斯贡品莫斯科贡赋',
-                left: '-25px',
-            },
-            {
-                civ: 'rus',
-                unit: '民兵长戟兵',
-                left: '-20px',
-            },
-            {
-                civ: 'chi',
-                unit: '诸葛弩手',
-                left: '-10px',
-            },
-            {
-                civ: 'zxl',
-                unit: '诸葛弩手',
-                left: '-10px',
-            },
-            {
-                civ: 'jpn',
-                unit: '步弓手',
-                left: '-10px',
-            },
-            {
-                civ: 'sen',
-                unit: '步弓手',
-                left: '-10px',
-            },
-            {
-                civ: 'ayy',
-                unit: '骆驼长矛骑兵',
-                left: '-15px',
-            },
-            {
-                civ: 'ayy',
-                unit: '骆驼长矛骑兵近战',
-                left: '-15px',
-            },
-            {
-                civ: 'rus',
-                unit: '火枪兵',
-                left: '-5px',
-            },
-            {
-                civ: 'abb',
-                unit: '商人',
-                left: '-30px',
-            },
-            {
-                civ: 'ayy',
-                unit: '商人',
-                left: '-30px',
-            },
-            {
-                civ: 'sul',
-                unit: '武士研磨剑刃',
-                left: '-20px',
-            },
-            {
-                civ: 'sul',
-                unit: '武士',
-                left: '-10px',
-            },
-            {
-                civ: 'tug',
-                unit: '武士印度坎达直剑训练',
-                left: '-10px',
-            },
-            {
-                civ: 'mac',
-                unit: '武士逆刀刃',
-                left: '-25px',
-            },
-            {
-                civ: 'otd',
-                unit: '镀金国土佣仆战戟',
-                left: '-70px',
-            },
-            {
-                civ: 'ayy',
-                unit: '德尔维希',
-                left: '-20px',
-            },
-            {
-                civ: 'ayy',
-                unit: '村民男',
-                left: '0px',
-            },
-
-            {
-                civ: 'otd',
-                unit: '镀金长矛兵',
-                left: '-10px',
-            },
-            {
-                civ: 'mac',
-                unit: '阿特盖尔',
-                left: '-10px',
-            },
-            {
-                unit: '长矛兵',
-                left: '-10px',
-            },
-
+            { civ: 'hol', unit: '兰开斯特领主', top: '25px', },
+            { civ: 'hol', unit: '伯爵护卫', left: '-20px', },
+            { civ: 'eng', unit: '温嘉德步兵', left: '25px', },
+            { civ: 'chi', unit: '武士', left: '-20px', },
+            { civ: 'zxl', unit: '武士', left: '-20px', },
+            { civ: 'jpn', unit: '女武艺者', left: '-30px', },
+            { civ: 'sen', unit: '金碎棒日本武士', left: '-30px', },
+            { civ: 'jin', unit: '斩马刀', left: '-25px', },
+            { civ: 'jpn', unit: '武士', left: '-30px', },
+            { civ: 'sen', unit: '武士', left: '-30px', },
+            { civ: 'kcr', unit: '意大利佣兵', left: '10px', },
+            { civ: 'kcr', unit: '萨金特卫兵', left: '30px', },
+            { civ: 'kcr', unit: '重装长矛兵', left: '-25px', },
+            { civ: 'goh', unit: '罗斯贡品', left: '-25px', },
+            { civ: 'goh', unit: '罗斯贡品莫斯科贡赋', left: '-25px', },
+            { civ: 'rus', unit: '民兵长戟兵', left: '-20px', },
+            { civ: 'chi', unit: '诸葛弩手', left: '-10px', },
+            { civ: 'zxl', unit: '诸葛弩手', left: '-10px', },
+            { civ: 'jpn', unit: '步弓手', left: '-10px', },
+            { civ: 'sen', unit: '步弓手', left: '-10px', },
+            { civ: 'ayy', unit: '骆驼长矛骑兵', left: '-15px', },
+            { civ: 'ayy', unit: '骆驼长矛骑兵近战', left: '-15px', },
+            { civ: 'rus', unit: '火枪兵', left: '-5px', },
+            { civ: 'abb', unit: '商人', left: '-30px', },
+            { civ: 'ayy', unit: '商人', left: '-30px', },
+            { civ: 'sul', unit: '武士研磨剑刃', left: '-20px', },
+            { civ: 'sul', unit: '武士', left: '-10px', },
+            { civ: 'tug', unit: '武士印度坎达直剑训练', left: '-10px', },
+            { civ: 'mac', unit: '武士逆刀刃', left: '-25px', },
+            { civ: 'otd', unit: '镀金国土佣仆战戟', left: '-70px', },
+            { civ: 'ayy', unit: '德尔维希', left: '-20px', },
+            { civ: 'ayy', unit: '村民男', left: '0px', },
+            { civ: 'otd', unit: '镀金长矛兵', left: '-10px', },
+            { civ: 'mac', unit: '阿特盖尔', left: '-10px', },
+            { civ: 'jpn', unit: '长矛兵日本长枪', left: '-10px', },
+            { civ: 'byz', unit: '长矛兵水滴盾', left: '-10px', },
+            { civ: 'jin', unit: '长矛兵风暴长矛', left: '-10px', },
+            { civ: 'tug', unit: '长矛兵内扎兵训练', left: '-10px', },
+            { civ: 'zxl', unit: '长矛兵火长矛', left: '-10px', },
+            { unit: '长矛兵', left: '-10px', },
         ];
 
         // 查找指定文明单位的偏移坐标规则
