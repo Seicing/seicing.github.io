@@ -453,6 +453,9 @@
 
         // 文明顺序定义 (25 个文明)
         const civOrder = [
+            
+            'all', // 这里会生成一个单元格展示单位，但右下角不会有任何国旗图标！
+            
             'chi', 'zxl',
             'fre', 'jda',
             'hre', 'otd',
@@ -470,7 +473,6 @@
             'kcr',
             'jin',
 
-            'all', // 这里会生成一个单元格展示单位，但右下角不会有任何国旗图标！
         ];
 
         // 变体文明与本体文明的映射关系
@@ -497,13 +499,12 @@
 
         // 文明资源路径映射
         const civLinkMap = {
+            all: 'siege',
             chi: 'chi', zxl: 'chi', jin: 'jin', jpn: 'jpn', sen: 'jpn',
             hre: 'hre', otd: 'hre', eng: 'eng', hol: 'eng', fre: 'fre',
             jda: 'fre', kcr: 'kcr', abb: 'abb', ayy: 'abb', sul: 'sul',
             tug: 'sul', mon: 'mon', goh: 'mon', byz: 'byz', mac: 'byz',
             rus: 'rus', ott: 'ott', mal: 'mal', vik: 'vik', sco: 'sco',
-
-            all: 'siege',
         };
 
         // =========================================================
@@ -1049,7 +1050,7 @@
             const catInfo = unitCategoryMap[currentUnitCategory] || {};
 
             // 【修改点1】：虚拟文明（如 'all'）不自动回退到 default，只有显式定义了才生效
-            const noIconCivs = ['all', 'common', 'none', 'universal'];
+            const noIconCivs = ['all',];
             let rawUnitStr = '';
             if (noIconCivs.includes(civKey)) {
                 rawUnitStr = catInfo[civKey] || ''; // 只有配置了 catInfo['all'] 才有值
@@ -1156,7 +1157,7 @@
 
             if (!shouldHideFlag) {
                 const $flagsBox = $('<div class="flags-box"></div>');
-                const noIconCivs = ['all', 'common', 'none', 'universal'];
+                const noIconCivs = ['all',];
 
                 if (flagsList && flagsList.length > 0) {
                     flagsList.forEach(flagCiv => {
@@ -1217,7 +1218,7 @@
                 const secondaryList = unitList.slice(1);
 
                 // 虚拟文明 all 在没有单位时跳过，避免末尾多出一个无意义空白格
-                const noIconCivs = ['all', 'common', 'none', 'universal'];
+                const noIconCivs = ['all',];
                 if (noIconCivs.includes(civKey) && primaryUnit === '' && secondaryList.length === 0) {
                     return;
                 }
