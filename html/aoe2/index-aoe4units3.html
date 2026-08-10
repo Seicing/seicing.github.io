@@ -1621,11 +1621,33 @@
             }
             const maxAllowedHeight = scoutWidth * limitRatio;
 
-            // 4. 按侦察兵的 100% 严格比例计算并设置所有兵种
+            const shipCategories = ['渔船', '商船', '运输船', '步弓手船', '扭力弩炮船', '爆破船', '战船', '特殊船只'];
+            const isShipCategory = shipCategories.includes(currentUnitCategory);
+
+            // 4. 设置所有兵种/船只样式
             $table.find('img:not(.civ-flag)').each(function () {
                 const $img = $(this);
                 if ($img.is(':hidden') || $img.css('visibility') === 'hidden') return;
 
+                // =========================================================
+                // 【特殊处理】船只系列：不按侦察兵缩放，直接自适应撑满格
+                // =========================================================
+                if (isShipCategory) {
+                    $img.css({
+                        'width': '100%',            // 宽度撑满格
+                        'max-width': '100%',        // 限制最大宽度
+                        'height': 'auto',           // 保持宽高比
+                        'object-fit': 'contain',    // 完整包含在格内
+                        'vertical-align': 'bottom',
+                        'display': 'inline-block',
+                        'position': '', 'left': '', 'right': '', 'top': '', 'bottom': '', 'transform': '' // 重置偏移
+                    });
+                    return; // 直接返回，跳过下方陆军的侦察兵缩放公式
+                }
+
+                // =========================================================
+                // 原有的陆军等比例缩放逻辑 (保持不变)
+                // =========================================================
                 const naturalWidth = this.naturalWidth;
                 const naturalHeight = this.naturalHeight;
                 if (naturalWidth <= 0) return;
