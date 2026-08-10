@@ -1414,7 +1414,7 @@
         }
 
         // =========================================================
-        // 高清透明底 PNG 导出 (解决右侧切边 & 解决图片压扁)
+        // 高清透明底 PNG 导出 (带左右安全缓冲区，防止长武器/平移单位被砍画布)
         // =========================================================
         $(document).on('click', '#exportPngBtn', function () {
             const $btn = $(this);
@@ -1423,7 +1423,14 @@
             const $tableEl = $('#customers');
             const el = $tableEl[0];
 
-            // 1. 临时保存原样式，并在后台瞬时清除限高，防止截图插件压扁小人
+            // 1. 临时保存表格原始 Padding，并瞬时加入 60px 左右安全缓冲区 (确保向左平移的武器不被截断)
+            const originalTablePadding = $tableEl.css('padding');
+            $tableEl.css({
+                'padding-left': '60px',
+                'padding-right': '60px'
+            });
+
+            // 2. 临时保存原图片样式，并在后台瞬时清除限高，防止截图插件压扁小人
             const $imgs = $tableEl.find('img:not(.civ-flag)');
             const originalStyles = [];
 
@@ -1446,22 +1453,23 @@
                 });
             });
 
-            // 2. 使用 scrollWidth 捕获完整宽度（防止右侧切边），进行 2倍高清截图
+            // 3. 使用 scrollWidth 捕获完整宽度，进行 2倍高清截图
             html2canvas(el, {
                 backgroundColor: null,     // 100% 透明背景
                 useCORS: true,             // 支持跨域图片
                 scale: 2,                  // 2倍高清
-                width: el.scrollWidth,     // 关键：捕获完整内容宽度，防止右侧被切
+                width: el.scrollWidth,     // 捕获完整内容宽度（含左右缓冲区）
                 height: el.scrollHeight    // 捕获完整高度
             }).then(canvas => {
-                // 3. 下载图片
+                // 4. 下载图片
                 const a = document.createElement('a');
                 const titleText = (typeof currentCiv !== 'undefined') ? currentCiv : currentUnitCategory;
                 a.download = `AOE4_${titleText}_Age${currentAge}.png`;
                 a.href = canvas.toDataURL('image/png');
                 a.click();
 
-                // 4. 截图完成后，立刻恢复网页上的限高样式
+                // 5. 截图完成后，立刻恢复网页上的原始样式与内边距
+                $tableEl.css('padding', originalTablePadding);
                 originalStyles.forEach(item => {
                     item.$img.css({
                         width: item.width,
@@ -1476,6 +1484,7 @@
             }).catch(err => {
                 console.error('导出失败:', err);
                 // 发生错误时也要还原样式
+                $tableEl.css('padding', originalTablePadding);
                 originalStyles.forEach(item => {
                     item.$img.css({
                         width: item.width,
