@@ -451,7 +451,7 @@
             return null;
         }
 
-        // 文明顺序定义 (24 个真实文明)
+        // 文明顺序定义
         const civOrder = [
             'chi', 'zxl',
             'fre', 'jda',
@@ -465,6 +465,8 @@
             'rus',
             'ott',
             'mal',
+            //  'vik',
+            //  'sco',
             'kcr',
             'jin',
         ];
@@ -553,8 +555,22 @@
             '君主': { default: '君主' },
             '特殊平民': { chi: '朝廷命官', zxl: '朝廷命官', kcr: '朝圣者男/朝圣者女', jin: '使者|乡骑', ayy: '阿塔贝格', tug: '工作大象', sen: '屋台', },
 
-            // 攻城器直接列出所有要展示的单位名列表
             '攻城器': { default: '攻城塔|攻城锤|轻型投石车|扭力弩炮|配重式巨型投石机|风琴炮|手推炮|长管炮|一窝蜂|弓床弩|加农炮|基耶罗喷火筒|战狼号巨型投石机|牵引式巨型投石机|回回炮|攻城锤就地坚守|苏丹之塔|重型火炮' },
+        };
+
+        const siegeCivMap = {
+            '一窝蜂': ['chi', 'zxl', 'jin'],
+            '弓床弩': ['chi', 'zxl', 'jin'],
+            '基耶罗喷火筒': ['byz', 'mac'],
+            '战狼号巨型投石机': ['eng', 'hol'],
+            '牵引式巨型投石机': ['mon', 'goh'],
+            '回回炮': ['mon', 'goh'],
+            '加农炮': ['fre', 'jda'],
+            '风琴炮': ['hre', 'otd'],
+            '长管炮': ['fre', 'jda', 'hre', 'otd'],
+            '苏丹之塔': ['sul', 'tug'],
+            '攻城锤就地坚守': ['abb', 'ayy'],
+            '重型火炮': ['ott'],
         };
 
         // 隐藏规则
@@ -1129,7 +1145,7 @@
             // =========================================================
             // 【控制】：攻城器或开启隐藏图标时，不生成/不挂载国旗
             // =========================================================
-            const shouldHideFlag = isHideIcon || currentUnitCategory === '攻城器';
+            const shouldHideFlag = isHideIcon;
 
             if (!shouldHideFlag) {
                 const $flagsBox = $('<div class="flags-box"></div>');
@@ -1139,11 +1155,12 @@
                         const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${flagCiv}.png`);
                         $flagsBox.append($flag);
                     });
-                } else if (civKey) {
+                    $td.append($flagsBox);
+                } else if (civKey && civKey !== 'siege') { // 过滤虚拟键 siege，避免加载错误国旗
                     const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
                     $flagsBox.append($flag);
+                    $td.append($flagsBox);
                 }
-                $td.append($flagsBox);
             }
 
             return $td;
@@ -1173,8 +1190,12 @@
                         finalName = imageFamilyRules[finalName][currentAge];
                     }
 
-                    // 创建无国旗单元格，civKey 设置为 'siege'
-                    const $td = createUnitCell('siege', finalName, [], true);
+                    // 获取当前攻城器的国旗列表
+                    const cleanName = finalName.replace(/[1-4]$/, '').replace('.png', '').trim();
+                    const flagsList = siegeCivMap[unitName] || siegeCivMap[cleanName] || [];
+
+                    // 传入 flagsList，并根据右上角隐藏图标按钮判断 isHideIcon
+                    const $td = createUnitCell('siege', finalName, flagsList, isHideIcon);
                     $tr.append($td);
                     visibleCellCount++;
 
