@@ -316,6 +316,8 @@
     </button>
     <button class="unit-act-btn" data-unit="特殊平民">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城镇中心.png">
+    </button> <button class="unit-act-btn" data-unit="攻城器">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器厂.png">
     </button>
 </div>
 
@@ -466,6 +468,8 @@
             //   'sco',
             'kcr',
             'jin',
+
+            'all', // 这里会生成一个单元格展示单位，但右下角不会有任何国旗图标！
         ];
 
         // 变体文明与本体文明的映射关系
@@ -496,7 +500,9 @@
             hre: 'hre', otd: 'hre', eng: 'eng', hol: 'eng', fre: 'fre',
             jda: 'fre', kcr: 'kcr', abb: 'abb', ayy: 'abb', sul: 'sul',
             tug: 'sul', mon: 'mon', goh: 'mon', byz: 'byz', mac: 'byz',
-            rus: 'rus', ott: 'ott', mal: 'mal', vik: 'vik', sco: 'sco'
+            rus: 'rus', ott: 'ott', mal: 'mal', vik: 'vik', sco: 'sco',
+
+            all: 'siege',
         };
 
         // =========================================================
@@ -550,6 +556,8 @@
             '特殊船只': { fre: '三桅战船', jda: '三桅战船', ott: '大型桨帆船', kcr: '威尼斯箭船', byz: '德罗蒙战舰', mac: '德罗蒙战舰', },
             '君主': { default: '君主' },
             '特殊平民': { chi: '朝廷命官', zxl: '朝廷命官', kcr: '朝圣者男/朝圣者女', jin: '使者|乡骑', ayy: '阿塔贝格', tug: '工作大象', sen: '屋台', },
+
+            '攻城器': { all: '攻城塔|攻城锤|轻型投石车|扭力弩炮|配重式巨型投石机|风琴炮|手推炮|长管炮|', chi: '一窝蜂', zxl: '一窝蜂', jin: '弓床弩|一窝蜂', fre: '加农炮', jda: '加农炮', mac: '基耶罗喷火筒', byz: '基耶罗喷火筒', hol: '配重式巨型投石机2', mon: '牵引式巨型投石机|回回炮', goh: '牵引式巨型投石机|攻城锤2', ayy: '苏丹之塔', ott: '重型火炮', },
         };
 
         // 隐藏规则
@@ -626,6 +634,7 @@
             '三桅战船.png': { noAgeSuffix: true, minAge: 3 },
             '大型桨帆船.png': { noAgeSuffix: true, minAge: 3 },
             '威尼斯箭船.png': { noAgeSuffix: true, minAge: 4 },
+            '君主.png': { noAgeSuffix: true, minAge: 1 },
 
             '民兵长戟兵.png': { noAgeSuffix: true, minAge: 2 },
             '民兵火枪兵.png': { noAgeSuffix: true, minAge: 3 },
@@ -636,6 +645,25 @@
             '埃米尔战士.png': { noAgeSuffix: true, minAge: 2 },
             '贝都因剑士.png': { noAgeSuffix: true, minAge: 2 },
             '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 2 },
+
+            '攻城塔.png': { noAgeSuffix: true, minAge: 2 },
+            '攻城锤.png': { noAgeSuffix: true, minAge: 2 },
+            '轻型投石车.png': { noAgeSuffix: true, minAge: 3 },
+            '扭力弩炮.png': { noAgeSuffix: true, minAge: 3 },
+            '配重式巨型投石机.png': { noAgeSuffix: true, minAge: 3 },
+            '风琴炮.png': { noAgeSuffix: true, minAge: 4 },
+            '手推炮.png': { noAgeSuffix: true, minAge: 4 },
+            '长管炮.png': { noAgeSuffix: true, minAge: 4 },
+            '一窝蜂.png': { noAgeSuffix: true, minAge: 3 },
+            '加农炮.png': { noAgeSuffix: true, minAge: 4 },
+            '基耶罗喷火筒.png': { noAgeSuffix: true, minAge: 2 },
+            '配重式巨型投石机2.png': { noAgeSuffix: true, minAge: 3 },
+            '牵引式巨型投石机.png': { noAgeSuffix: true, minAge: 3 },
+            '回回炮.png': { noAgeSuffix: true, minAge: 4 },
+            '攻城锤2.png': { noAgeSuffix: true, minAge: 3 },
+            '苏丹之塔.png': { noAgeSuffix: true, minAge: 3 },
+            '重型火炮.png': { noAgeSuffix: true, minAge: 4 },
+            '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 3 },
 
             '肉盾.png': { noAgeSuffix: true, minAge: 2 },
             '肉盾战场救援': { noAgeSuffix: true, minAge: 2 },
@@ -1118,8 +1146,12 @@
             // 国旗图标（支持多国旗并排）
             const $flagsBox = $('<div class="flags-box"></div>');
 
+            // 定义不需要显示图标的“虚拟文明Key”
+            const noIconCivs = ['all',];
+
             if (flagsList && flagsList.length > 0) {
                 flagsList.forEach(flagCiv => {
+                    if (noIconCivs.includes(flagCiv)) return;
                     const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${flagCiv}.png`);
                     $flagsBox.append($flag);
                 });
