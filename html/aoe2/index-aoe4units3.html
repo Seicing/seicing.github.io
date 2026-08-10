@@ -1414,7 +1414,7 @@
         }
 
         // =========================================================
-        // 高清透明底 PNG 导出 (带左右安全缓冲区，防止长武器/平移单位被砍画布)
+        // 高清透明底 PNG 导出 (智能检测：仅在图片飘出时动态增加安全缓冲区)
         // =========================================================
         $(document).on('click', '#exportPngBtn', function () {
             const $btn = $(this);
@@ -1423,16 +1423,10 @@
             const $tableEl = $('#customers');
             const el = $tableEl[0];
 
-            // 1. 临时保存表格原始 Padding，并瞬时加入 60px 左右安全缓冲区 (确保向左平移的武器不被截断)
-            const originalTablePadding = $tableEl.css('padding');
-            $tableEl.css({
-                'padding-left': '60px',
-                'padding-right': '60px'
-            });
-
-            // 2. 临时保存原图片样式，并在后台瞬时清除限高，防止截图插件压扁小人
+            // 1. 临时保存原样式，并在后台瞬时清除限高，防止截图插件压扁小人
             const $imgs = $tableEl.find('img:not(.civ-flag)');
             const originalStyles = [];
+            const originalTablePadding = $tableEl.css('padding');
 
             $imgs.each(function () {
                 const $img = $(this);
@@ -1453,22 +1447,56 @@
                 });
             });
 
-            // 3. 使用 scrollWidth 捕获完整宽度，进行 2倍高清截图
+            // 2. 智能检测是否有图片/武器飘出表格左右边界
+            const tableRect = el.getBoundingClientRect();
+            let maxLeftOverflow = 0;
+            let maxRightOverflow = 0;
+
+            $imgs.each(function () {
+                const $img = $(this);
+                if ($img.is(':hidden') || $img.css('visibility') === 'hidden') return;
+
+                const imgRect = this.getBoundingClientRect();
+                if (imgRect.width <= 0 || imgRect.height <= 0) return;
+
+                // 检测左侧向外突出距离
+                if (imgRect.left < tableRect.left - 2) {
+                    const diffLeft = tableRect.left - imgRect.left;
+                    if (diffLeft > maxLeftOverflow) maxLeftOverflow = diffLeft;
+                }
+                // 检测右侧向外突出距离
+                if (imgRect.right > tableRect.right + 2) {
+                    const diffRight = imgRect.right - tableRect.right;
+                    if (diffRight > maxRightOverflow) maxRightOverflow = diffRight;
+                }
+            });
+
+            // 3. 仅在检测到飘出时，动态计算精准的安全内边距（溢出距离 + 25px 余量）；无飘出则保持原样
+            if (maxLeftOverflow > 0 || maxRightOverflow > 0) {
+                const padLeft = maxLeftOverflow > 0 ? Math.ceil(maxLeftOverflow + 25) + 'px' : '0px';
+                const padRight = maxRightOverflow > 0 ? Math.ceil(maxRightOverflow + 25) + 'px' : '0px';
+                $tableEl.css({
+                    'padding-left': padLeft,
+                    'padding-right': padRight
+                });
+            }
+
+            // 4. 使用 2倍高清截图
             html2canvas(el, {
                 backgroundColor: null,     // 100% 透明背景
                 useCORS: true,             // 支持跨域图片
                 scale: 2,                  // 2倍高清
-                width: el.scrollWidth,     // 捕获完整内容宽度（含左右缓冲区）
+                width: el.scrollWidth,     // 捕获完整内容宽度
                 height: el.scrollHeight    // 捕获完整高度
             }).then(canvas => {
-                // 4. 下载图片
+                // 5. 下载图片
                 const a = document.createElement('a');
                 const titleText = (typeof currentCiv !== 'undefined') ? currentCiv : currentUnitCategory;
                 a.download = `AOE4_${titleText}_Age${currentAge}.png`;
                 a.href = canvas.toDataURL('image/png');
                 a.click();
 
-                // 5. 截图完成后，立刻恢复网页上的原始样式与内边距
+                // 6. 截图完毕，立刻恢复原样
                 $tableEl.css('padding', originalTablePadding);
                 originalStyles.forEach(item => {
                     item.$img.css({
