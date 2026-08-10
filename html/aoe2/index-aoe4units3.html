@@ -535,12 +535,12 @@
             '特殊步兵': { zxl: '少林僧侣', hol: '兰开斯特领主', eng: '温嘉德步兵', rus: '民兵长戟兵', hre: '国土佣仆', otd: '镀金国土佣仆', mal: '自由民战士', jpn: '女武艺者|忍者|刀剑旗本武士', sen: '金碎棒日本武士|忍者', jin: '斩马刀', ayy: '贝都因剑士', jda: '贞德的冠军剑士', tug: '埃米尔战士', goh: '罗斯贡品|肉盾', kcr: '条顿骑士|医院骑士|萨金特卫兵|重装长矛兵|意大利佣兵' },
 
             '渔船': { default: '渔船' },
-            '商船': { default: '商船', kcr: '' },
+            '商船': { default: '商船' },
             '运输船': { default: '运输船' },
             '步弓手船': { default: '步弓手船' },
             '扭力弩炮船': { default: '扭力弩炮船' },
             '爆破船': { default: '爆破船' },
-            '战船': { default: '战船', hol: '战船王冠舰船', kcr: '' },
+            '战船': { default: '战船', hol: '战船王冠舰船' },
             '特殊船只': { fre: '三桅战船', jda: '三桅战船', ott: '大型桨帆船', kcr: '威尼斯箭船' },
         };
 
@@ -556,6 +556,7 @@
             { conditions: { civ: 'eng', age: [3] }, actions: [{ type: 'hideImage', imageName: '火枪兵.png' },] },
             { conditions: { civ: 'jin', age: [3] }, actions: [{ type: 'hideImage', imageName: '火枪兵.png' },] },
             { conditions: { civ: 'jpn', age: [1, 2, 3] }, actions: [{ type: 'hideImage', imageName: '大筒兵.png' },] },
+            { conditions: { civ: 'kcr', age: [4] }, actions: [{ type: 'hideImage', imageName: '战船.png' },] },
         ];
 
         // 家族/形态进化规则
