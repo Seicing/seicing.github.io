@@ -411,15 +411,15 @@
             "id": "9",
             "name": "炼狱",
             "levels": [
-                { "title": "争夺海岸", "title_eng": "Contested Coastline", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/争夺海岸.png" },
-                { "title": "大名风云", "title_eng": "Daimyo Dynamics", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/大名风云.png" },
-                { "title": "森林之王", "title_eng": "Forest Lords", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/森林之王.png" },
-                { "title": "寸草必争", "title_eng": "Watch Your Steppe", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/寸草必争.png" },
+                { "title": "争夺海岸", "title_eng": "Contested Coastline", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/争夺海岸.png", "noLink": true },
+                { "title": "大名风云", "title_eng": "Daimyo Dynamics", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/大名风云.png", "noLink": true },
+                { "title": "森林之王", "title_eng": "Forest Lords", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/森林之王.png", "noLink": true },
+                { "title": "寸草必争", "title_eng": "Watch Your Steppe", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/寸草必争.png", "noLink": true },
 
-                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/争夺海岸.png" },
-                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/大名风云.png" },
-                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/森林之王.png" },
-                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/寸草必争.png" },
+                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/争夺海岸.png", "noLink": true },
+                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/大名风云.png", "noLink": true },
+                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/森林之王.png", "noLink": true },
+                { "title": "测试", "title_eng": "Test", "path": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/cam/cru/寸草必争.png", "noLink": true },
             ]
         },
 
@@ -442,25 +442,34 @@
         }
 
         // 超链接去除年份数字，指向纯标题 HTML
-        const linkUrl = `https://seicing.com/html/aoe2/cam4/${cleanTitle}.html`;
+        const linkUrl = level.noLink ? "" : `https://seicing.com/html/aoe2/cam4/${cleanTitle}.html`;
         const displayTitle = year ? `<span class="year-tag">${year}</span>${cleanTitle}` : cleanTitle;
         const displayEng = level.title_eng || "";
 
         const card = document.createElement('div');
         card.className = 'level-card map-card';
+        const imageHtml = level.noLink
+            ? `<img src="${level.path}" alt="${cleanTitle}" onerror="this.style.opacity='0.2'">`
+            : `<a href="${linkUrl}">
+           <img src="${level.path}" alt="${cleanTitle}" onerror="this.style.opacity='0.2'">
+       </a>`;
+
+        const titleHtml = level.noLink
+            ? `<span class="title-cn">${displayTitle}</span>
+       <span class="title-en">${displayEng}</span>`
+            : `<a href="${linkUrl}" class="title-link">
+           <span class="title-cn">${displayTitle}</span>
+           <span class="title-en">${displayEng}</span>
+       </a>`;
+
         card.innerHTML = `
-            <div class="img-container">
-                <a href="${linkUrl}">
-                    <img src="${level.path}" alt="${cleanTitle}" onerror="this.style.opacity='0.2'">
-                </a>
-            </div>
-            <div class="card-caption">
-                <a href="${linkUrl}" class="title-link">
-                    <span class="title-cn">${displayTitle}</span>
-                    <span class="title-en">${displayEng}</span>
-                </a>
-            </div>
-        `;
+    <div class="img-container">
+        ${imageHtml}
+    </div>
+    <div class="card-caption">
+        ${titleHtml}
+    </div>
+`;
         return card;
     }
 
