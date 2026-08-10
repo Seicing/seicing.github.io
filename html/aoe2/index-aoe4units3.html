@@ -370,6 +370,7 @@
             { civ: 'otd', unit: '镀金国土佣仆战戟', left: '-70px', },
             { civ: 'ayy', unit: '德尔维希', left: '-20px', },
             { civ: 'ayy', unit: '村民男', left: '0px', },
+            { civ: 'mal', unit: '长矛兵', left: '0px', },
             { civ: 'otd', unit: '镀金长矛兵', left: '-10px', },
             { civ: 'mac', unit: '阿特盖尔', left: '-10px', },
             { civ: 'jpn', unit: '长矛兵日本长枪', left: '-10px', },
@@ -1418,7 +1419,7 @@
         // =========================================================
         $(document).on('click', '#exportPngBtn', function () {
             const $btn = $(this);
-            $btn.text('Exporting...');
+            $btn.text('导出中...');
 
             const $tableEl = $('#customers');
             const el = $tableEl[0];
@@ -1508,7 +1509,7 @@
                     });
                 });
 
-                $btn.text('Export PNG');
+                $btn.text('导出PNG');
             }).catch(err => {
                 console.error('导出失败:', err);
                 // 发生错误时也要还原样式
@@ -1523,7 +1524,7 @@
                     });
                 });
                 alert('导出图片失败，请检查网络或跨域设置。');
-                $btn.text('Export PNG');
+                $btn.text('导出PNG');
             });
         });
 
