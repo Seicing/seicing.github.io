@@ -451,7 +451,7 @@
             return null;
         }
 
-        // 文明顺序定义 (25 个文明)
+        // 文明顺序定义 (24 个真实文明)
         const civOrder = [
             'chi', 'zxl',
             'fre', 'jda',
@@ -465,12 +465,8 @@
             'rus',
             'ott',
             'mal',
-            //   'vik',
-            //   'sco',
             'kcr',
             'jin',
-
-            'all',
         ];
 
         // 变体文明与本体文明的映射关系
@@ -502,8 +498,7 @@
             jda: 'fre', kcr: 'kcr', abb: 'abb', ayy: 'abb', sul: 'sul',
             tug: 'sul', mon: 'mon', goh: 'mon', byz: 'byz', mac: 'byz',
             rus: 'rus', ott: 'ott', mal: 'mal', vik: 'vik', sco: 'sco',
-
-            all: 'siege',
+            siege: 'siege', // 攻城器专用资源文件路径
         };
 
         // =========================================================
@@ -558,7 +553,8 @@
             '君主': { default: '君主' },
             '特殊平民': { chi: '朝廷命官', zxl: '朝廷命官', kcr: '朝圣者男/朝圣者女', jin: '使者|乡骑', ayy: '阿塔贝格', tug: '工作大象', sen: '屋台', },
 
-            '攻城器': { all: '攻城塔|攻城锤|轻型投石车|扭力弩炮|配重式巨型投石机|风琴炮|手推炮|长管炮|一窝蜂|弓床弩|加农炮|基耶罗喷火筒|战狼号巨型投石机|牵引式巨型投石机|回回炮|攻城锤就地坚守|苏丹之塔|重型火炮', },
+            // 攻城器直接列出所有要展示的单位名列表
+            '攻城器': { default: '攻城塔|攻城锤|轻型投石车|扭力弩炮|配重式巨型投石机|风琴炮|手推炮|长管炮|一窝蜂|弓床弩|加农炮|基耶罗喷火筒|战狼号巨型投石机|牵引式巨型投石机|回回炮|攻城锤就地坚守|苏丹之塔|重型火炮' },
         };
 
         // 隐藏规则
@@ -637,16 +633,6 @@
             '威尼斯箭船.png': { noAgeSuffix: true, minAge: 4 },
             '君主.png': { noAgeSuffix: true, minAge: 1 },
 
-            '民兵长戟兵.png': { noAgeSuffix: true, minAge: 2 },
-            '民兵火枪兵.png': { noAgeSuffix: true, minAge: 3 },
-            '奥斯曼军乐队.png': { noAgeSuffix: true, minAge: 2 },
-            '猛安谋克守军.png': { noAgeSuffix: true, minAge: 3 },
-            '骑马掷弹兵.png': { noAgeSuffix: true, minAge: 4 },
-            '兰开斯特领主.png': { noAgeSuffix: true, minAge: 2 },
-            '埃米尔战士.png': { noAgeSuffix: true, minAge: 2 },
-            '贝都因剑士.png': { noAgeSuffix: true, minAge: 2 },
-            '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 2 },
-
             '攻城塔.png': { noAgeSuffix: true, minAge: 2 },
             '攻城锤.png': { noAgeSuffix: true, minAge: 2 },
             '轻型投石车.png': { noAgeSuffix: true, minAge: 3 },
@@ -664,7 +650,6 @@
             '攻城锤就地坚守.png': { noAgeSuffix: true, minAge: 3 },
             '苏丹之塔.png': { noAgeSuffix: true, minAge: 3 },
             '重型火炮.png': { noAgeSuffix: true, minAge: 4 },
-            '贝都因掷矛手.png': { noAgeSuffix: true, minAge: 3 },
 
             '肉盾.png': { noAgeSuffix: true, minAge: 2 },
             '肉盾战场救援': { noAgeSuffix: true, minAge: 2 },
@@ -1047,15 +1032,7 @@
         // 辅助函数：获取指定文明在指定时代的最终单位名数组（拆分 | ）
         function getFinalUnitNames(civKey, age) {
             const catInfo = unitCategoryMap[currentUnitCategory] || {};
-
-            // 【修改点1】：虚拟文明（如 'all'）不自动回退到 default，只有显式定义了才生效
-            const noIconCivs = ['all',];
-            let rawUnitStr = '';
-            if (noIconCivs.includes(civKey)) {
-                rawUnitStr = catInfo[civKey] || ''; // 只有配置了 catInfo['all'] 才有值
-            } else {
-                rawUnitStr = catInfo[civKey] || catInfo.default || currentUnitCategory;
-            }
+            let rawUnitStr = catInfo[civKey] || catInfo.default || currentUnitCategory;
 
             if (!rawUnitStr) return [''];
 
@@ -1150,21 +1127,19 @@
             }
 
             // =========================================================
-            // 【核心控制】：在“攻城器”页面下，或者开启了隐藏图标，彻底不生成/不挂载国旗
+            // 【控制】：攻城器或开启隐藏图标时，不生成/不挂载国旗
             // =========================================================
             const shouldHideFlag = isHideIcon || currentUnitCategory === '攻城器';
 
             if (!shouldHideFlag) {
                 const $flagsBox = $('<div class="flags-box"></div>');
-                const noIconCivs = ['all',];
 
                 if (flagsList && flagsList.length > 0) {
                     flagsList.forEach(flagCiv => {
-                        if (noIconCivs.includes(flagCiv)) return;
                         const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${flagCiv}.png`);
                         $flagsBox.append($flag);
                     });
-                } else if (!noIconCivs.includes(civKey)) {
+                } else if (civKey) {
                     const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
                     $flagsBox.append($flag);
                 }
@@ -1176,14 +1151,55 @@
 
 
         // =========================================================
-        // 生成对比表格 (主列表智能合并，末尾同名多余单位自动合并)
+        // 生成对比表格 (支持攻城器独立紧凑连续展示)
         // =========================================================
         function generateTable() {
             $table.empty();
             const columnsPerRow = 5; // 每行 5 个
+
+            // =========================================================
+            // 【特例处理】：攻城器页面 - 独立连续紧凑排布，不生成国旗，不留空隙
+            // =========================================================
+            if (currentUnitCategory === '攻城器') {
+                const rawStr = (unitCategoryMap['攻城器'] && unitCategoryMap['攻城器'].default) || '';
+                const siegeList = rawStr.split('|').map(s => s.trim()).filter(Boolean);
+
+                let visibleCellCount = 0;
+                let $tr = $('<tr></tr>');
+
+                siegeList.forEach(unitName => {
+                    let finalName = getSpFromOverride('siege', currentAge, unitName);
+                    if (imageFamilyRules[finalName] && imageFamilyRules[finalName][currentAge]) {
+                        finalName = imageFamilyRules[finalName][currentAge];
+                    }
+
+                    // 创建无国旗单元格，civKey 设置为 'siege'
+                    const $td = createUnitCell('siege', finalName, [], true);
+                    $tr.append($td);
+                    visibleCellCount++;
+
+                    if (visibleCellCount % columnsPerRow === 0) {
+                        $table.append($tr);
+                        $tr = $('<tr></tr>');
+                    }
+                });
+
+                // 补齐最后一行的空白格
+                const remaining = visibleCellCount % columnsPerRow;
+                if (remaining > 0) {
+                    for (let i = 0; i < columnsPerRow - remaining; i++) {
+                        $tr.append($('<td>&nbsp;</td>'));
+                    }
+                    $table.append($tr);
+                }
+                return; // 攻城器专有模式生成完毕直接结束
+            }
+
+            // =========================================================
+            // 【常规兵种】：按文明矩阵排列并支持变体合并
+            // =========================================================
             let $tr = $('<tr></tr>');
             let visibleCellCount = 0;
-
             const isHideIcon = $('#hideIconBtn').hasClass('active');
 
             // 智能判定变体文明合并状态（只要主单位名称相同即可合并）
@@ -1216,14 +1232,6 @@
                 const primaryUnit = unitList[0] || '';
                 const secondaryList = unitList.slice(1);
 
-                // =========================================================
-                // 【核心修改】：在“攻城器”分类下，没有独有攻城器的文明直接跳过，避免生成 25 个空白格！
-                // （在长矛兵、骑士等其他分类下，依然保持生成空白格对齐矩阵）
-                // =========================================================
-                if (currentUnitCategory === '攻城器' && primaryUnit === '' && secondaryList.length === 0) {
-                    return;
-                }
-
                 // 收集当前文明及其关联的变体国旗
                 const currentFlags = [civKey];
                 if (civExtraFlags[civKey]) {
@@ -1253,7 +1261,7 @@
                 // 如果是被合并的主格变体文明，跳过主格渲染（因为已合并到本体文明单元格中）
                 if (mergedVariants[civKey]) return;
 
-                // 【正常生成单元格（即使是空白格也生成，维持对齐）】
+                // 正常生成单元格
                 const $td = createUnitCell(civKey, primaryUnit, currentFlags, isHideIcon);
                 $tr.append($td);
                 visibleCellCount++;
@@ -1274,7 +1282,7 @@
                 $table.append($tr);
             }
 
-            // 2. 渲染带有 | 的后续单位（同名单位已完美合并国旗，独立成格）
+            // 2. 渲染带有 | 的后续单位（同名单位已合并国旗）
             if (secondaryUnitsOrder.length > 0) {
                 let $secTr = $('<tr></tr>');
                 let secCount = 0;
@@ -1361,7 +1369,7 @@
         // =========================================================
         function isUnitHiddenByRule(civ, age, unitName) {
             if (!civ || !unitName) return false;
-            const currentCivIcon = 'CivIcon-' + civIconMap[civ] + '.png';
+            const currentCivIcon = civIconMap[civ] ? ('CivIcon-' + civIconMap[civ] + '.png') : '';
             let isHidden = false;
             const cleanUnitName = unitName.replace('.png', '');
 
@@ -1523,7 +1531,7 @@
         }
 
         // =========================================================
-        // 高清透明底 PNG 导出 (智能检测：仅在图片飘出时动态增加安全缓冲区)
+        // 高清透明底 PNG 导出
         // =========================================================
         $(document).on('click', '#exportPngBtn', function () {
             const $btn = $(this);
@@ -1532,7 +1540,6 @@
             const $tableEl = $('#customers');
             const el = $tableEl[0];
 
-            // 1. 临时保存原样式，并在后台瞬时清除限高，防止截图插件压扁小人
             const $imgs = $tableEl.find('img:not(.civ-flag)');
             const originalStyles = [];
             const originalTablePadding = $tableEl.css('padding');
@@ -1548,7 +1555,6 @@
                     objectPosition: $img.css('object-position')
                 });
 
-                // 瞬时恢复自适应高度
                 $img.css({
                     height: 'auto',
                     'object-fit': '',
@@ -1556,7 +1562,6 @@
                 });
             });
 
-            // 2. 智能检测是否有图片/武器飘出表格左右边界
             const tableRect = el.getBoundingClientRect();
             let maxLeftOverflow = 0;
             let maxRightOverflow = 0;
@@ -1568,19 +1573,16 @@
                 const imgRect = this.getBoundingClientRect();
                 if (imgRect.width <= 0 || imgRect.height <= 0) return;
 
-                // 检测左侧向外突出距离
                 if (imgRect.left < tableRect.left - 2) {
                     const diffLeft = tableRect.left - imgRect.left;
                     if (diffLeft > maxLeftOverflow) maxLeftOverflow = diffLeft;
                 }
-                // 检测右侧向外突出距离
                 if (imgRect.right > tableRect.right + 2) {
                     const diffRight = imgRect.right - tableRect.right;
                     if (diffRight > maxRightOverflow) maxRightOverflow = diffRight;
                 }
             });
 
-            // 3. 仅在检测到飘出时，动态计算精准的安全内边距（溢出距离 + 25px 余量）；无飘出则保持原样
             if (maxLeftOverflow > 0 || maxRightOverflow > 0) {
                 const padLeft = maxLeftOverflow > 0 ? Math.ceil(maxLeftOverflow + 25) + 'px' : '0px';
                 const padRight = maxRightOverflow > 0 ? Math.ceil(maxRightOverflow + 25) + 'px' : '0px';
@@ -1590,7 +1592,6 @@
                 });
             }
 
-            // 4. 使用 2倍高清截图
             html2canvas(el, {
                 backgroundColor: null,     // 100% 透明背景
                 useCORS: true,             // 支持跨域图片
@@ -1598,14 +1599,12 @@
                 width: el.scrollWidth,     // 捕获完整内容宽度
                 height: el.scrollHeight    // 捕获完整高度
             }).then(canvas => {
-                // 5. 下载图片
                 const a = document.createElement('a');
                 const titleText = (typeof currentCiv !== 'undefined') ? currentCiv : currentUnitCategory;
                 a.download = `AOE4_${titleText}_Age${currentAge}.png`;
                 a.href = canvas.toDataURL('image/png');
                 a.click();
 
-                // 6. 截图完毕，立刻恢复原样
                 $tableEl.css('padding', originalTablePadding);
                 originalStyles.forEach(item => {
                     item.$img.css({
@@ -1620,7 +1619,6 @@
                 $btn.text('导出PNG');
             }).catch(err => {
                 console.error('导出失败:', err);
-                // 发生错误时也要还原样式
                 $tableEl.css('padding', originalTablePadding);
                 originalStyles.forEach(item => {
                     item.$img.css({
@@ -1669,7 +1667,6 @@
             const isHeightLimited = $('#limitHeightBtn').hasClass('active');
             const scoutWidth = cellWidth;
 
-            // 整个长矛兵分类统一自动使用 1.05 裁切上限，其他分类使用 1.5
             let limitRatio = 1.5;
             if (currentUnitCategory === '长矛兵') {
                 limitRatio = 1.05;
@@ -1679,13 +1676,13 @@
             const shipCategories = ['渔船', '商船', '运输船', '步弓手船', '扭力弩炮船', '爆破船', '战船', '特殊船只', '攻城器'];
             const isShipCategory = shipCategories.includes(currentUnitCategory);
 
-            // 4. 设置所有兵种/船只样式
+            // 4. 设置所有兵种/船只/攻城器样式
             $table.find('img:not(.civ-flag)').each(function () {
                 const $img = $(this);
                 if ($img.is(':hidden') || $img.css('visibility') === 'hidden') return;
 
                 // =========================================================
-                // 【特殊处理】船只系列：不按侦察兵缩放，直接自适应撑满格
+                // 【特殊处理】船只与攻城器系列：不按侦察兵缩放，直接自适应撑满格
                 // =========================================================
                 if (isShipCategory) {
                     $img.css({
@@ -1695,22 +1692,20 @@
                         'object-fit': 'contain',    // 完整包含在格内
                         'vertical-align': 'bottom',
                         'display': 'inline-block',
-                        'position': '', 'left': '', 'right': '', 'top': '', 'bottom': '', 'transform': '' // 重置偏移
+                        'position': '', 'left': '', 'right': '', 'top': '', 'bottom': '', 'transform': ''
                     });
-                    return; // 直接返回，跳过下方陆军的侦察兵缩放公式
+                    return;
                 }
 
                 // =========================================================
-                // 原有的陆军等比例缩放逻辑 (保持不变)
+                // 陆军等比例缩放逻辑
                 // =========================================================
                 const naturalWidth = this.naturalWidth;
                 const naturalHeight = this.naturalHeight;
                 if (naturalWidth <= 0) return;
 
-                // 获取手动配置的缩放乘区系数
                 const multiplier = getUnitScaleMultiplier($img);
 
-                // 计算出每个兵种基于侦察兵比例的精确像素宽度
                 const newWidth = naturalWidth * scaleRatio * multiplier;
                 const currentRenderHeight = naturalHeight * scaleRatio * multiplier;
                 const isNoCrop = $img.hasClass('no-crop');
@@ -1718,10 +1713,10 @@
                 if (isHeightLimited && !isNoCrop && currentRenderHeight > maxAllowedHeight) {
                     $img.css({
                         width: newWidth + 'px',
-                        height: maxAllowedHeight + 'px',   // 强制高度上限
+                        height: maxAllowedHeight + 'px',
                         'max-width': 'none',
-                        'object-fit': 'cover',             // 保持原有宽度不变形
-                        'object-position': 'bottom center', // 底部对齐，裁切顶部
+                        'object-fit': 'cover',
+                        'object-position': 'bottom center',
                         'vertical-align': 'bottom',
                         'display': 'inline-block'
                     });
@@ -1737,9 +1732,7 @@
                     });
                 }
 
-                // =========================================================
-                // 【新增】应用特定文明单位坐标偏移 (精准从父级 td 识别文明)
-                // =========================================================
+                // 应用特定的绝对/相对坐标偏移
                 const tdCiv = $img.closest('td').attr('data-civ') || '';
                 const unitName = $img.attr('data-unit-name') || '';
                 const originalSrc = $img.data('original-src') || $img.attr('src') || '';
