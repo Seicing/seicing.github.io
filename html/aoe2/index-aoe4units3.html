@@ -453,9 +453,6 @@
 
         // 文明顺序定义 (25 个文明)
         const civOrder = [
-            
-            'all', // 这里会生成一个单元格展示单位，但右下角不会有任何国旗图标！
-            
             'chi', 'zxl',
             'fre', 'jda',
             'hre', 'otd',
@@ -473,6 +470,7 @@
             'kcr',
             'jin',
 
+            'all',
         ];
 
         // 变体文明与本体文明的映射关系
@@ -499,12 +497,13 @@
 
         // 文明资源路径映射
         const civLinkMap = {
-            all: 'siege',
             chi: 'chi', zxl: 'chi', jin: 'jin', jpn: 'jpn', sen: 'jpn',
             hre: 'hre', otd: 'hre', eng: 'eng', hol: 'eng', fre: 'fre',
             jda: 'fre', kcr: 'kcr', abb: 'abb', ayy: 'abb', sul: 'sul',
             tug: 'sul', mon: 'mon', goh: 'mon', byz: 'byz', mac: 'byz',
             rus: 'rus', ott: 'ott', mal: 'mal', vik: 'vik', sco: 'sco',
+
+            all: 'siege',
         };
 
         // =========================================================
@@ -552,10 +551,10 @@
             '商船': { default: '商船' },
             '运输船': { default: '运输船' },
             '步弓手船': { default: '步弓手船' },
-            '扭力弩炮船': { default: '扭力弩炮船' },
+            '扭力弩炮船': { default: '扭力弩炮船', byz: '德罗蒙战舰', mac: '德罗蒙战舰', },
             '爆破船': { default: '爆破船' },
             '战船': { default: '战船', hol: '战船王冠舰船' },
-            '特殊船只': { fre: '三桅战船', jda: '三桅战船', ott: '大型桨帆船', kcr: '威尼斯箭船', byz: '德罗蒙战舰', mac: '德罗蒙战舰', },
+            '特殊船只': { fre: '三桅战船', jda: '三桅战船', ott: '大型桨帆船', kcr: '威尼斯箭船', },
             '君主': { default: '君主' },
             '特殊平民': { chi: '朝廷命官', zxl: '朝廷命官', kcr: '朝圣者男/朝圣者女', jin: '使者|乡骑', ayy: '阿塔贝格', tug: '工作大象', sen: '屋台', },
 
@@ -1217,9 +1216,11 @@
                 const primaryUnit = unitList[0] || '';
                 const secondaryList = unitList.slice(1);
 
-                // 虚拟文明 all 在没有单位时跳过，避免末尾多出一个无意义空白格
-                const noIconCivs = ['all',];
-                if (noIconCivs.includes(civKey) && primaryUnit === '' && secondaryList.length === 0) {
+                // =========================================================
+                // 【核心修改】：在“攻城器”分类下，没有独有攻城器的文明直接跳过，避免生成 25 个空白格！
+                // （在长矛兵、骑士等其他分类下，依然保持生成空白格对齐矩阵）
+                // =========================================================
+                if (currentUnitCategory === '攻城器' && primaryUnit === '' && secondaryList.length === 0) {
                     return;
                 }
 
