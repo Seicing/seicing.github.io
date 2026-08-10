@@ -378,6 +378,7 @@
             { civ: 'jpn', unit: '弓箭旗本武士', left: '0px', },
             { civ: 'tug', unit: '工作大象', left: '20px', },
             { civ: 'ayy', unit: '贝都因剑士', left: '-10px', },
+            { civ: 'sen', unit: '屋台', left: '-20px', },
 
             { civ: 'hre', unit: '国土佣仆', left: '10px', },
             { civ: 'hol', unit: '兰开斯特领主', top: '25px', },
@@ -560,16 +561,14 @@
 
         const siegeCivMap = {
             '一窝蜂': ['chi', 'zxl', 'jin'],
-            '弓床弩': ['chi', 'zxl', 'jin'],
+            '弓床弩': ['jin'],
             '基耶罗喷火筒': ['byz', 'mac'],
-            '战狼号巨型投石机': ['eng', 'hol'],
+            '战狼号巨型投石机': ['hol'],
             '牵引式巨型投石机': ['mon', 'goh'],
-            '回回炮': ['mon', 'goh'],
+            '回回炮': ['mon',],
             '加农炮': ['fre', 'jda'],
-            '风琴炮': ['hre', 'otd'],
-            '长管炮': ['fre', 'jda', 'hre', 'otd'],
-            '苏丹之塔': ['sul', 'tug'],
-            '攻城锤就地坚守': ['abb', 'ayy'],
+            '苏丹之塔': ['ayy',],
+            '攻城锤就地坚守': ['goh',],
             '重型火炮': ['ott'],
         };
 
@@ -1143,7 +1142,7 @@
             }
 
             // =========================================================
-            // 【控制】：攻城器或开启隐藏图标时，不生成/不挂载国旗
+            // 【控制】：控制是否挂载国旗
             // =========================================================
             const shouldHideFlag = isHideIcon;
 
@@ -1173,9 +1172,10 @@
         function generateTable() {
             $table.empty();
             const columnsPerRow = 5; // 每行 5 个
+            const isHideIcon = $('#hideIconBtn').hasClass('active'); // 提前初始化 isHideIcon 变量
 
             // =========================================================
-            // 【特例处理】：攻城器页面 - 独立连续紧凑排布，不生成国旗，不留空隙
+            // 【特例处理】：攻城器页面 - 独立连续紧凑排布，按对照表挂载国旗
             // =========================================================
             if (currentUnitCategory === '攻城器') {
                 const rawStr = (unitCategoryMap['攻城器'] && unitCategoryMap['攻城器'].default) || '';
@@ -1221,7 +1221,6 @@
             // =========================================================
             let $tr = $('<tr></tr>');
             let visibleCellCount = 0;
-            const isHideIcon = $('#hideIconBtn').hasClass('active');
 
             // 智能判定变体文明合并状态（只要主单位名称相同即可合并）
             const mergedVariants = {};
