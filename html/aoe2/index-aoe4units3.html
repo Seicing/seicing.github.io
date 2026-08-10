@@ -316,7 +316,8 @@
     </button>
     <button class="unit-act-btn" data-unit="特殊平民">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/城镇中心.png">
-    </button> <button class="unit-act-btn" data-unit="攻城器">
+    </button>
+    <button class="unit-act-btn" data-unit="攻城器">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/攻城武器厂.png">
     </button>
 </div>
@@ -1045,11 +1046,18 @@
             return multiplier;
         }
 
-
         // 辅助函数：获取指定文明在指定时代的最终单位名数组（拆分 | ）
         function getFinalUnitNames(civKey, age) {
             const catInfo = unitCategoryMap[currentUnitCategory] || {};
-            let rawUnitStr = catInfo[civKey] || catInfo.default || currentUnitCategory;
+
+            // 【修改点1】：虚拟文明（如 'all'）不自动回退到 default，只有显式定义了才生效
+            const noIconCivs = ['all', 'common', 'none', 'universal'];
+            let rawUnitStr = '';
+            if (noIconCivs.includes(civKey)) {
+                rawUnitStr = catInfo[civKey] || ''; // 只有配置了 catInfo['all'] 才有值
+            } else {
+                rawUnitStr = catInfo[civKey] || catInfo.default || currentUnitCategory;
+            }
 
             if (!rawUnitStr) return [''];
 
@@ -1209,6 +1217,12 @@
                 const unitList = getFinalUnitNames(civKey, currentAge);
                 const primaryUnit = unitList[0] || '';
                 const secondaryList = unitList.slice(1);
+
+                // 【修改点2】：如果是虚拟文明 ('all')，且当前分类下没有给它配置单位，直接跳过不生成格子！
+                const noIconCivs = ['all', 'common', 'none', 'universal'];
+                if (noIconCivs.includes(civKey) && primaryUnit === '' && secondaryList.length === 0) {
+                    return;
+                }
 
                 // 收集当前文明及其关联的变体国旗
                 const currentFlags = [civKey];
