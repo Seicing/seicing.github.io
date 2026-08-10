@@ -1132,7 +1132,7 @@
                     const $img = $('<img>');
                     $img.addClass('multi-unit-img');
                     $img.attr('data-aoe4unit', imgPath);
-                    $img.attr('data-unit-name', subName); // 记录单位原始名称
+                    $img.attr('data-unit-name', subName);
                     $img.data('original-src', imgPath);
                     $box.append($img);
                 });
@@ -1142,34 +1142,34 @@
                 const imgPath = `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/${civLink}/${unitName}.png`;
                 const $img = $('<img>');
                 $img.attr('data-aoe4unit', imgPath);
-                $img.attr('data-unit-name', unitName); // 记录单位原始名称
+                $img.attr('data-unit-name', unitName);
                 $img.data('original-src', imgPath);
                 $td.append($img);
             } else {
-                $td.html('&nbsp;');
+                $td.html('&nbsp;'); // 保持空白格占位
             }
 
-            // 国旗图标（支持多国旗并排）
-            const $flagsBox = $('<div class="flags-box"></div>');
+            // =========================================================
+            // 【核心控制】：在“攻城器”页面下，或者开启了隐藏图标，彻底不生成/不挂载国旗
+            // =========================================================
+            const shouldHideFlag = isHideIcon || currentUnitCategory === '攻城器';
 
-            // 定义不需要显示图标的“虚拟文明Key”
-            const noIconCivs = ['all',];
+            if (!shouldHideFlag) {
+                const $flagsBox = $('<div class="flags-box"></div>');
+                const noIconCivs = ['all', 'common', 'none', 'universal'];
 
-            if (flagsList && flagsList.length > 0) {
-                flagsList.forEach(flagCiv => {
-                    if (noIconCivs.includes(flagCiv)) return;
-                    const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${flagCiv}.png`);
+                if (flagsList && flagsList.length > 0) {
+                    flagsList.forEach(flagCiv => {
+                        if (noIconCivs.includes(flagCiv)) return;
+                        const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${flagCiv}.png`);
+                        $flagsBox.append($flag);
+                    });
+                } else if (!noIconCivs.includes(civKey)) {
+                    const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
                     $flagsBox.append($flag);
-                });
-            } else {
-                const $flag = $('<img>').addClass('civ-flag').attr('src', `https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/${civKey}.png`);
-                $flagsBox.append($flag);
+                }
+                $td.append($flagsBox);
             }
-
-            if (isHideIcon) {
-                $flagsBox.hide();
-            }
-            $td.append($flagsBox);
 
             return $td;
         }
@@ -1216,7 +1216,7 @@
                 const primaryUnit = unitList[0] || '';
                 const secondaryList = unitList.slice(1);
 
-                // 【修改点2】：如果是虚拟文明 ('all')，且当前分类下没有给它配置单位，直接跳过不生成格子！
+                // 虚拟文明 all 在没有单位时跳过，避免末尾多出一个无意义空白格
                 const noIconCivs = ['all', 'common', 'none', 'universal'];
                 if (noIconCivs.includes(civKey) && primaryUnit === '' && secondaryList.length === 0) {
                     return;
@@ -1251,7 +1251,7 @@
                 // 如果是被合并的主格变体文明，跳过主格渲染（因为已合并到本体文明单元格中）
                 if (mergedVariants[civKey]) return;
 
-                // 生成主单元格
+                // 【正常生成单元格（即使是空白格也生成，维持对齐）】
                 const $td = createUnitCell(civKey, primaryUnit, currentFlags, isHideIcon);
                 $tr.append($td);
                 visibleCellCount++;
