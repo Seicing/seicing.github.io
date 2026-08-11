@@ -596,7 +596,7 @@ let ayanami = {
     "克察尔科亚特尔加成1": /*html*/`克察尔科亚特尔加成1<br>战斗祭司可在圣殿进行放血仪式`,
     "克察尔科亚特尔加成2": /*html*/`克察尔科亚特尔加成2<br>卡普利和其加建的成本-33%`,
     "克察尔科亚特尔加成3": /*html*/`克察尔科亚特尔加成3<br>贵族小屋士兵+10%生命值`,
-    "克察尔科亚特尔加成4": /*html*/`克察尔科亚特尔加成4<br>鹰勇士+1射程`,
+    "克察尔科亚特尔加成4": /*html*/`克察尔科亚特尔加成4<br>鹰战士+1射程`,
 
     "特斯卡特利波卡加成1": /*html*/`特斯卡特利波卡加成1<br>每损失2个神话单位，生成1个黑曜石碎片，如果黑曜石碎片维持了足够长的时间，它会召唤1个当前时代的免费神话单位`,
     "特斯卡特利波卡加成2": /*html*/`特斯卡特利波卡加成2<br>骷髅墙瞭望塔和陷阱建造快25%，造成+25%的攻击伤害`,
@@ -613,7 +613,7 @@ let ayanami = {
 
     "高级陷阱": /*html*/`高级陷阱<br>Advanced Trap<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>尖刺陷阱和烟雾陷阱升级为黑曜石陷阱和辣椒炸弹陷阱，攻击力+25%，烟雾陷阱的敌人视野减少率提高到80%，减速率提升到40%`,
     "南方之翼": /*html*/`南方之翼<br>Wings of the South<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>12 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>作战小屋士兵移动速度+10%，训练时间-40%`,
-    "特佩约尔洛特尔的领域": /*html*/`特佩约尔洛特尔的领域<br>Tepeyollotl's Reach<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>豹勇士和美洲豹骑兵的攻击力+15%，跳跃攻击的距离+2`,
+    "特佩约尔洛特尔的领域": /*html*/`特佩约尔洛特尔的领域<br>Tepeyollotl's Reach<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>10 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>豹猫战士和美洲豹骑兵的攻击力+15%，跳跃攻击的距离+2`,
     "丰饶之宴": /*html*/`丰饶之宴<br>Feast of Sustenance<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>可在圣殿献祭动物，使15秒内提高村民15%的所有采集效率`,
     "新火祭": /*html*/`新火祭<br>New Fire Ceremony<br>献祭3只牲畜，可获得额外的眷顾值，并提升牲畜变肥的速度`,
     "宇宙守卫": /*html*/`宇宙守卫<br>Cosmic Guard<br>献祭12个人类士兵，获得2个英雄时代神话单位和2个神话时代神话单位`,
@@ -684,7 +684,7 @@ let ayanami = {
     "腐化之地": /*html*/`腐化之地<br>Corrupted Ground<br>腐化指定区域，在此之上阵亡的敌人会重生为特拉卡尼奎米利为玩家而战`,
     "厄运火把": /*html*/`厄运火把<br>Torch of Misfortune<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>亡灵向导升级为亡灵大师，启用腐化之链能力`,
     "黄昏之星": /*html*/`黄昏之星<br>Evening Star<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>已建造和将来建造的每个大神庙都会生产1个免费的亡灵向导`,
-    "扭曲的肢体": /*html*/`扭曲的肢体<br>Twisted Limbs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>豹勇士跳跃攻击+25%伤害，生命值+20%`,
+    "扭曲的肢体": /*html*/`扭曲的肢体<br>Twisted Limbs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>豹猫战士跳跃攻击+25%伤害，生命值+20%`,
     "石肤奎那麦芩": /*html*/`石肤奎那麦芩<br>Stoneskin Quinametzin<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/电.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>奎那麦芩变成石肤奎那麦芩，攻击力+25%，生命值+30%，远距离攻击射程+2，视野+2`,
 
     "中级作战小屋士兵": /*html*/`中级作战小屋士兵<br>Medium War Hut Soldiers<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>作战小屋士兵+10%攻击力，+1视野，+10%生命值`,

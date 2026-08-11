@@ -51,16 +51,16 @@ export const aoe4list = [
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "豹勇士",
-        "img": "豹勇士",
-        "link": "https://seicing.com/html/aoe2/unitaoem/豹勇士"
+        "name": "豹猫战士",
+        "img": "豹猫战士",
+        "link": "https://seicing.com/html/aoe2/unitaoem/豹猫战士"
     },
     {
         "civ": "azt",
         "section": "军事单位",
-        "name": "鹰勇士",
-        "img": "鹰勇士",
-        "link": "https://seicing.com/html/aoe2/unitaoem/鹰勇士"
+        "name": "鹰战士",
+        "img": "鹰战士",
+        "link": "https://seicing.com/html/aoe2/unitaoem/鹰战士"
     },
     {
         "civ": "azt",
