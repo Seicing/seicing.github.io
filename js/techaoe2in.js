@@ -1,34 +1,66 @@
 (function () {
     let isInitialized = false;
 
-    // 需要排除的单位名称列表（匹配图片中的所有单位）
-    const EXCLUDED_NAMES = [
-        '希腊步兵', '精锐希腊步兵', '战车', '精锐战车', '精锐步兵',
-        '长生军', '将军', '三百卫士', '军事执政官',
-        '伙伴骑兵', '方阵步兵', '桑纳哈亚', '帕提尤达长弓兵', '长柄逆刃刀战士',
-        '小艇', '战争小艇', '重型小艇', '精锐小艇', '单列桨座战船',
-        '桡桨船', '三列桨座战船', '投石船', '中型投石船', '利维坦'
+
+    // ==============================
+    // 排除不生成文明筛选按钮的单位 ID
+    // ==============================
+    const EXCLUDED_IDS = [
+        '希腊步兵',
+        '精锐希腊步兵',
+        '战车',
+        '精锐战车',
+        '精锐步兵',
+        '长生军',
+        '将军',
+        '三百卫士',
+        '军事执政官',
+        '伙伴骑兵',
+        '方阵步兵',
+        '桑纳哈亚',
+        '帕提尤达长弓兵',
+        '长柄逆刃刀战士',
+        '小艇',
+        '战争小艇',
+        '重型小艇',
+        '精锐小艇',
+        '单列桨座战船',
+        '桡桨船',
+        '三列桨座战船',
+        '投石船',
+        '中型投石船',
+        '利维坦'
     ];
 
-    // 检查指定文本是否包含排除列表中的任意名称
-    function isExcluded(text) {
-        if (!text) return false;
-        return EXCLUDED_NAMES.some(name => text.includes(name));
-    }
 
     // 1. 从 #techno 内部提取所有真正点亮（不带 aoeTechIconOff）的可用文明
     function detectAvailableCivsFromTechno() {
+
         const availableCivs = [];
         const seenIds = new Set();
 
+
         $('#techno img').each(function () {
+
             const id = this.id;
+
+
+            // 排除指定单位
+            if (EXCLUDED_IDS.includes(id)) {
+                return;
+            }
+
+
             if (id && !seenIds.has(id) && !$(this).hasClass('aoeTechIconOff')) {
+
                 seenIds.add(id);
+
                 const title = $(this).attr('title') || id;
                 const src = $(this).attr('src');
+
                 const match = src.match(/CivIcon-[A-Za-z0-9_]+/);
                 const token = match ? match[0] : ('CivIcon-' + id);
+
 
                 availableCivs.push({
                     id: id,
@@ -36,204 +68,412 @@
                     token: token,
                     iconSrc: src
                 });
+
             }
+
         });
+
 
         return availableCivs;
     }
 
+
+
     // 2. 主初始化逻辑
     function safeInit() {
+
         if (isInitialized) return;
 
-        const $spContainer = $('#sp').closest('div');
-
-        // 【排除判断 1】：如果当前页面/标题属于排除名单中的单位，直接不运行此机制
-        const pageTitleText = $('#sp').text() + ' ' + $('title').text();
-        if (isExcluded(pageTitleText)) {
-            return;
-        }
 
         const availableCivs = detectAvailableCivsFromTechno();
 
-        // 如果可用文明小于等于 1 个（如独有单位），保持网页原样
+
+        // 如果可用文明小于等于 1 个，保持网页原样
         if (availableCivs.length <= 1) return;
+
 
         isInitialized = true;
 
+
         const civMap = {};
-        availableCivs.forEach(c => civMap[c.id] = c);
+
+        availableCivs.forEach(c => {
+            civMap[c.id] = c;
+        });
+
+
+
+        const $spContainer = $('#sp').closest('div');
 
         const $hr = $spContainer.find('hr.hrsty');
+
         if (!$hr.length) return;
 
-        // 预处理科技表格 #aoe4de (拆分多行科技为独立的 div)
+
+
+        // 预处理科技表格
         $('#aoe4de tr.textle').each(function () {
+
             const $td = $(this).find('td').eq(1);
+
             if (!$td.length) return;
 
-            const lines = $td.html().split(/<br\s*\/?>/i).filter(l => l.trim() !== '');
+
+            const lines = $td.html()
+                .split(/<br\s*\/?>/i)
+                .filter(l => l.trim() !== '');
+
+
             let newHtml = '';
 
+
             lines.forEach(line => {
-                const funcMatch = line.match(/showPic2\(event\);\s*([A-Za-z0-9_]+)\(\)/);
+
+                const funcMatch =
+                    line.match(/showPic2\(event\);\s*([A-Za-z0-9_]+)\(\)/);
+
+
                 const funcName = funcMatch ? funcMatch[1] : '';
-                newHtml += `<div class="tech-item" data-func="${funcName}" style="margin: 2px 0;">${line}</div>`;
+
+
+                newHtml +=
+                    `<div class="tech-item" data-func="${funcName}" style="margin:2px 0;">${line}</div>`;
+
             });
 
+
             $td.html(newHtml);
+
         });
 
-        // 3. 构建排版舒展、带 6px 舒适间距的 Flex 图标栏
-        let barHtml = `<div id="auto-civ-filter-bar" style="display: flex; flex-wrap: wrap; gap: 6px;margin: 3px 0 3px 0;">`;
+
+
+
+        // 3. 创建文明过滤栏
+
+        let barHtml =
+            `<div id="auto-civ-filter-bar" style="display:flex;flex-wrap:wrap;gap:6px;margin:3px 0;">`;
+
+
         availableCivs.forEach(c => {
+
             barHtml += `
-                <img class="civ-filter-icon civ-active936" 
-                     width="25px" 
-                     height="25px" 
-                     data-civ="${c.id}" 
-                     title="${c.name}" 
-                     src="${c.iconSrc}" 
-                     style="cursor: pointer;">
+            <img class="civ-filter-icon civ-active936"
+                 width="25px"
+                 height="25px"
+                 data-civ="${c.id}"
+                 title="${c.name}"
+                 src="${c.iconSrc}"
+                 style="cursor:pointer;">
             `;
+
         });
+
+
         barHtml += `</div>`;
+
 
         $hr.after(barHtml);
 
+
+
+
         function getCivTokenFromElement(el) {
+
             const $img = $(el).find('img[src*="CivIcon-"]');
+
+
             if ($img.length > 0) {
-                const match = $img.attr('src').match(/CivIcon-[A-Za-z0-9_]+/);
+
+                const match =
+                    $img.attr('src').match(/CivIcon-[A-Za-z0-9_]+/);
+
+
                 return match ? match[0] : null;
+
             }
+
+
             return null;
         }
 
-        // 4. 执行筛选的核心逻辑
+
+
+
+
+        // 4. 执行筛选
+
         function executeFilter(selectedCivId) {
+
+
             const selectedCiv = civMap[selectedCivId];
 
-            // A. 筛选加成 <ul> 列表
-            $spContainer.find('ul li').each(function () {
-                const text = $(this).text();
 
-                // 【排除判断 2】：文本中包含排除单位的条目，始终保持显示
-                if (isExcluded(text)) {
-                    $(this).show();
-                    return;
-                }
+
+            // A. 筛选加成列表
+
+            $spContainer.find('ul li').each(function () {
+
 
                 if (!selectedCivId) {
+
                     $(this).show();
+
                     return;
+
                 }
+
+
                 const token = getCivTokenFromElement(this);
+
+
                 if (token) {
-                    if (token === selectedCiv.token) $(this).show();
-                    else $(this).hide();
+
+                    if (token === selectedCiv.token)
+
+                        $(this).show();
+
+                    else
+
+                        $(this).hide();
+
+
                 } else {
+
                     $(this).show();
+
                 }
+
+
             });
 
-            // B. 筛选科技表格 #aoe4de
+
+
+
+
+            // B. 筛选科技
+
             $('#aoe4de tr.textle').each(function () {
+
+
                 let visibleCount = 0;
+
+
                 const $items = $(this).find('.tech-item');
 
-                $items.each(function () {
-                    const itemText = $(this).text();
 
-                    // 【排除判断 3】：包含排除单位的科技/单位条目，不进行变红/删除线处理
-                    if (isExcluded(itemText)) {
-                        $(this).css({ 'text-decoration': '', 'color': '' }).show();
-                        visibleCount++;
-                        return;
-                    }
+
+                $items.each(function () {
+
 
                     if (!selectedCivId) {
-                        $(this).css({ 'text-decoration': '', 'color': '' }).show();
+
+                        $(this)
+                            .css({ 'text-decoration': '', 'color': '' })
+                            .show();
+
                         visibleCount++;
+
                         return;
+
                     }
+
+
 
                     const token = getCivTokenFromElement(this);
 
-                    // 情况 1：带 CivIcon 图片（专属科技/特定文明加成） -> 不匹配直接隐藏
+
+
                     if (token) {
+
+
                         if (token === selectedCiv.token) {
-                            $(this).css({ 'text-decoration': '', 'color': '' }).show();
+
+                            $(this)
+                                .css({ 'text-decoration': '', 'color': '' })
+                                .show();
+
                             visibleCount++;
+
                         } else {
+
                             $(this).hide();
+
                         }
+
+
                         return;
+
                     }
 
-                    // 情况 2：通用科技（不带 CivIcon 图片） -> 不可用时红字+删除线
+
+
+
+
                     const funcName = $(this).attr('data-func');
+
+
                     let isAvailable = true;
 
+
+
                     if (funcName && typeof window[funcName] === 'function') {
-                        if (typeof CommonAllTech === 'function') CommonAllTech();
 
-                        window[funcName](); // 执行测试函数
 
-                        const $civDummyNode = $('#' + selectedCivId + '2');
-                        if ($civDummyNode.length && $civDummyNode.hasClass('aoeTechIconOff')) {
+                        if (typeof CommonAllTech === 'function')
+                            CommonAllTech();
+
+
+
+                        window[funcName]();
+
+
+
+                        const $civDummyNode =
+                            $('#' + selectedCivId + '2');
+
+
+
+                        if ($civDummyNode.length &&
+                            $civDummyNode.hasClass('aoeTechIconOff')) {
+
                             isAvailable = false;
+
                         }
 
-                        if (typeof CommonAllTech === 'function') CommonAllTech();
+
+
+                        if (typeof CommonAllTech === 'function')
+                            CommonAllTech();
+
                     }
+
+
+
+
 
                     if (isAvailable) {
-                        $(this).css({ 'text-decoration': '', 'color': '' }).show();
+
+                        $(this)
+                            .css({ 'text-decoration': '', 'color': '' })
+                            .show();
+
                     } else {
-                        $(this).css({ 'text-decoration': 'line-through', 'color': '#ff4d4d' }).show();
+
+                        $(this)
+                            .css({
+                                'text-decoration': 'line-through',
+                                'color': '#ff4d4d'
+                            })
+                            .show();
+
                     }
+
+
                     visibleCount++;
+
+
                 });
 
-                // C. 若整行没有任何科技符合条件，收起该 <tr>
-                if (visibleCount === 0) {
+
+
+
+                if (visibleCount === 0)
+
                     $(this).hide();
-                } else {
+
+                else
+
                     $(this).show();
-                }
+
+
             });
+
         }
 
-        // 5. 点击图标切换激活/未激活样式
+
+
+
+
+        // 5. 点击文明图标
+
         $(document).on('click', '.civ-filter-icon', function () {
+
+
             const $this = $(this);
+
             const civId = $this.attr('data-civ');
 
+
+
             if ($this.hasClass('civ-active937')) {
-                // 再次点击：恢复灰色未激活状态，恢复全部显示
-                $this.removeClass('civ-active937').addClass('civ-active936');
+
+
+                $this
+                    .removeClass('civ-active937')
+                    .addClass('civ-active936');
+
+
                 executeFilter(null);
+
+
             } else {
-                // 点击灰色图标：激活该图标，其他变灰，执行筛选
-                $('.civ-filter-icon').removeClass('civ-active936').addClass('civ-active937');
-                $this.removeClass('civ-active936').addClass('civ-active937');
+
+
+                $('.civ-filter-icon')
+                    .removeClass('civ-active937')
+                    .addClass('civ-active936');
+
+
+
+                $this
+                    .removeClass('civ-active936')
+                    .addClass('civ-active937');
+
+
+
                 executeFilter(civId);
+
             }
+
+
         });
+
+
     }
 
-    // 6. 监听 JQuery 的 AJAX 完成事件
+
+
+
+
+    // 6. AJAX监听
+
     $(document).ajaxComplete(function (event, xhr, settings) {
-        if (settings.url && settings.url.indexOf('AOE2DIC') !== -1) {
+
+        if (settings.url &&
+            settings.url.indexOf('AOE2DIC') !== -1) {
+
             setTimeout(safeInit, 60);
+
         }
+
     });
 
-    // 备用超时兜底
+
+
+    // 备用
+
     setTimeout(function () {
-        if (!isInitialized && $('#techno img').length > 0) {
+
+        if (!isInitialized &&
+            $('#techno img').length > 0) {
+
             safeInit();
+
         }
+
     }, 600);
+
+
+
 })();
