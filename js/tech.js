@@ -586,7 +586,7 @@ let ayanami = {
     "亚琛教堂效果": /*html*/`亚琛教堂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：高级教士驻扎在亚琛教堂后可激励大范围内的村民`,
     "神罗紧急修复": /*html*/`紧急修复<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令`,
     "神罗紧急修复2": /*html*/`紧急修复<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令`,
-    "学术宿舍": /*html*/`学术宿舍<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大学.png' width='20px'>学术宿舍：大学提供30人口，大学科技研究成本-10%`,
+    "学术宿舍": /*html*/`学术宿舍<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>学术宿舍：大学提供30人口，大学科技研究成本-10%`,
     "神罗便宜炮台": /*html*/`炮台建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：额外炮台便宜20%`,
     "神罗便宜炮台2": /*html*/`炮台建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>炮台建筑学：额外炮台便宜20%`,
     "神罗哨站视野": /*html*/`炮台建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：哨站视野+20%`,
