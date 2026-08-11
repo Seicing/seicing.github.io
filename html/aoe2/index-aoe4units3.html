@@ -525,6 +525,8 @@
             '突袭大象': 1.05,
             '工作大象': 0.9,
             '商人': 0.85,
+            '一窝蜂': 0.85,
+            '一窝蜂箭猪防御': 1.2,
         };
 
         // 兵种分类与特色单位替代映射 (使用 | 分隔不同独立展示的单位)
@@ -1665,7 +1667,8 @@
                 if ($(this).is(':visible')) {
                     $(this).css({
                         width: '', height: '', 'max-width': '100%',
-                        'object-fit': '', 'object-position': ''
+                        'object-fit': '', 'object-position': '',
+                        margin: '', 'margin-left': ''
                     });
                 }
             });
@@ -1707,6 +1710,37 @@
                 // 【特殊处理】船只与攻城器系列：不按侦察兵缩放，直接自适应撑满格
                 // =========================================================
                 if (isShipCategory) {
+                    const originalSrc = $img.data('original-src') || $img.attr('src') || '';
+                    const rawName = ($img.attr('data-unit-name') || originalSrc.split('/').pop() || '').replace('.png', '').trim();
+                    const cleanName = rawName.replace(/[1-4]$/, '').trim();
+
+                    // 攻城器页面特例处理：一窝蜂与一窝蜂箭猪防御
+                    if (cleanName === '一窝蜂') {
+                        $img.css({
+                            'width': '85%',
+                            'max-width': '85%',
+                            'height': 'auto',
+                            'object-fit': 'contain',
+                            'vertical-align': 'bottom',
+                            'display': 'inline-block',
+                            'margin': '0 auto',
+                            'position': '', 'left': '', 'right': '', 'top': '', 'bottom': '', 'transform': ''
+                        });
+                        return;
+                    } else if (cleanName === '一窝蜂箭猪防御') {
+                        $img.css({
+                            'width': '120%',
+                            'max-width': 'none',
+                            'height': 'auto',
+                            'object-fit': 'contain',
+                            'vertical-align': 'bottom',
+                            'display': 'inline-block',
+                            'margin-left': '-10%',
+                            'position': '', 'left': '', 'right': '', 'top': '', 'bottom': '', 'transform': ''
+                        });
+                        return;
+                    }
+
                     $img.css({
                         'width': '100%',            // 宽度撑满格
                         'max-width': '100%',        // 限制最大宽度
