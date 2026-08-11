@@ -83,7 +83,6 @@ let ayanami = {
     "战意激昂": /*html*/`战意激昂<br>Inspired Warriors<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>高级教士的移动速度提高 10%，可鼓舞军事单位，使他们的护甲 +1 和伤害 +10%`,
     "西多会修道院": /*html*/`西多会修道院<br>Cistercian Abbeys<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>修道院可以自给自足，通过俗人兄弟耕种他们的土地。村民可以将资源存放在修道院。高级教士可以驻扎在修道院中，鼓舞附近的所有村民，提升他们的采集速度`,
     "凹透镜": /*html*/`凹透镜<br>Concave Lense<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>150 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>350 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>所有单位和船只的视野 +2 格`,
-    "学术宿舍": /*html*/`学术宿舍<br>大学提供30人口，大学科技研究成本-10%`,
 
     "柚木桅杆": /*html*/`柚木桅杆<br>Teak Masts<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>军事船只的生命值增加 +10%`,
     "新鲜食品": /*html*/`新鲜食品<br>Fresh Foodstuffs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>75  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>生产村民成本 -40%`,
@@ -587,6 +586,7 @@ let ayanami = {
     "亚琛教堂效果": /*html*/`亚琛教堂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/亚琛教堂.png' width='20px'>亚琛教堂：高级教士驻扎在亚琛教堂后可激励大范围内的村民`,
     "神罗紧急修复": /*html*/`紧急修复<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令`,
     "神罗紧急修复2": /*html*/`紧急修复<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>紧急修复：城镇中心影响力范围内可以执行紧急修理命令`,
+    "学术宿舍": /*html*/`学术宿舍<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/大学.png' width='20px'>学术宿舍：大学提供30人口，大学科技研究成本-10%`,
     "神罗便宜炮台": /*html*/`炮台建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：额外炮台便宜20%`,
     "神罗便宜炮台2": /*html*/`炮台建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙之骑士团.png' width='20px'>炮台建筑学：额外炮台便宜20%`,
     "神罗哨站视野": /*html*/`炮台建筑学<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/神圣罗马帝国.png' width='20px'>炮台建筑学：哨站视野+20%`,
