@@ -113,6 +113,15 @@
         function executeFilter(selectedCivId) {
             const selectedCiv = civMap[selectedCivId];
 
+            // 【关键修补】备份 #techno 中所有图标原本的 aoeTechIconOff 状态，防止被 CommonAllTech 全局点亮
+            const technoStateBackup = [];
+            $('#techno img').each(function () {
+                technoStateBackup.push({
+                    el: this,
+                    isOff: $(this).hasClass('aoeTechIconOff')
+                });
+            });
+
             // A. 筛选加成 <ul> 列表
             $spContainer.find('ul li').each(function () {
                 if (!selectedCivId) {
@@ -166,8 +175,6 @@
                         if ($civDummyNode.length && $civDummyNode.hasClass('aoeTechIconOff')) {
                             isAvailable = false;
                         }
-
-                        if (typeof CommonAllTech === 'function') CommonAllTech();
                     }
 
                     if (isAvailable) {
@@ -185,6 +192,15 @@
                     $(this).show();
                 }
             });
+
+            // 【关键修补】还原 #techno 页面顶部的原始点亮/变灰状态
+            technoStateBackup.forEach(item => {
+                if (item.isOff) {
+                    $(item.el).addClass('aoeTechIconOff');
+                } else {
+                    $(item.el).removeClass('aoeTechIconOff');
+                }
+            });
         }
 
         // 5. 点击图标切换激活/未激活样式
@@ -198,7 +214,7 @@
                 executeFilter(null);
             } else {
                 // 点击灰色图标：激活该图标，其他变灰，执行筛选
-                $('.civ-filter-icon').removeClass('civ-active936').addClass('civ-active937');
+                $('.civ-filter-icon').removeClass('civ-active937').addClass('civ-active936');
                 $this.removeClass('civ-active936').addClass('civ-active937');
                 executeFilter(civId);
             }
