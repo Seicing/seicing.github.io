@@ -259,7 +259,7 @@ let ayanami = {
     "火炮术": /*html*/`火炮术<br>Artillery<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>650 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>炮塔、手推炮和炮舰射程+2`,
     "钦察": /*html*/`钦察<br>Kipchak<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>库曼独特骑射手，快速射出多支箭矢攻击`,
     "精锐钦察": /*html*/`精锐钦察<br>Elite Kipchak<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>库曼独特骑射手，快速射出多支箭矢攻击<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65`,
-    "大草原畜牧": /*html*/`大草原畜牧<br>Steppe Husbandry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>斥候骑兵、骑射手和草原枪兵的训练速度快50%`,
+    "大草原畜牧": /*html*/`大草原畜牧<br>Steppe Husbandry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>斥候骑兵、骑射手和草原枪兵的训练效率+100%(减少50%训练时间)`,
     "库曼雇佣兵": /*html*/`库曼雇佣兵<br>Cuman Mercenarie<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>团队成员每拥有1个城堡就生成5个免费的精锐钦察，同时解锁在城堡训练钦察佣兵，训练时间为12秒`,
     "火焰骆驼": /*html*/`火焰骆驼<br>Flaming Camel<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>承载易燃的干草的燃烧骆驼，对坚固的部队造成额外伤害，尤其大象，对射手和步兵较弱，使用时会自爆`,
     "怯薛": /*html*/`怯薛<br>Keshik<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>16<br>鞑靼独特部队，和其它部队作战时产生黄金`,
@@ -354,7 +354,7 @@ let ayanami = {
     "投石手": /*html*/`投石手<br>Slinger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>50 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>南美独特远程部队，擅长攻击步兵`,
     "印加枪兵长": /*html*/`印加枪兵长<br>Kamayuk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>10<br>印加独特部队，具有攻击距离的反骑兵近战步兵`,
     "精锐印加枪兵长": /*html*/`精锐印加枪兵长<br>Elite Kamayuk<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>30 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>10<br>印加独特部队，具有攻击距离的反骑兵近战步兵<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
-    "安第斯弹弓": /*html*/`安第斯弹弓<br>Andean Sling<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>掷矛手和投石手最小射程删除`,
+    "安第斯弹弓": /*html*/`安第斯弹弓<br>Andean Sling<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>200 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>掷矛手和投石手最小射程删除，投石手攻击力+1`,
     "织物盾": /*html*/`织物盾<br>Fabric Shields<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>印加枪兵长、投石手、蔷琵战士近战护甲+1，远程护甲+1`,
     "羽箭手": /*html*/`羽箭手<br>Plumed Archer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>16<br>玛雅独特射手，强大快速而且高耐久度，但是攻击较低`,
     "精锐羽箭手": /*html*/`精锐羽箭手<br>Elite Plumed Archer<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>16<br>玛雅独特射手，强大快速而且高耐久度，但是攻击较低<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>700 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>1000 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
@@ -404,7 +404,7 @@ let ayanami = {
 
 
     "萨拉森市场税": /*html*/`萨拉森市场税<br>市场成本只需75木材，交易花费只有5%`,
-    "萨拉森运输船": /*html*/`萨拉森运输船<br>运输船两倍生命值，运输量+5`,
+    "萨拉森运输船": /*html*/`萨拉森运输船<br>运输船两倍生命值，运输量+20`,
     "萨拉森箭船加成": /*html*/`萨拉森箭船加成<br>箭船攻击间隔-20%`,
     "萨拉森骆驼血量": /*html*/`萨拉森骆驼血量<br>骆驼单位+25%生命值`,
     "萨拉森团队加成": /*html*/`萨拉森团队加成<br>步弓兵对标准建筑附加2伤害`,
@@ -471,7 +471,7 @@ let ayanami = {
     "高棉团队加成": /*html*/`高棉团队加成<br>弩炮射程+1`,
 
     "马来快速升级": /*html*/`马来快速升级<br>升级到下一个时代的时间-40%`,
-    "马来便宜渔场": /*html*/`马来便宜渔场<br>渔场便宜33%，食物量+300%`,
+    "马来便宜渔场": /*html*/`马来便宜渔场<br>渔场便宜33%，食物量+200%`,
     "马来便宜象兵": /*html*/`马来便宜象兵<br>象兵在城堡时代便宜25%，在帝王时代便宜35%`,
     "马来免费步兵护甲": /*html*/`马来免费步兵护甲<br>步兵护甲免费升级`,
     "马来团队加成": /*html*/`马来团队加成<br>船坞视野+6`,
@@ -491,7 +491,7 @@ let ayanami = {
     "条顿士兵护甲": /*html*/`条顿士兵护甲<br>兵营单位和马厩单位在城堡时代和帝王时代各获得1近战护甲(总计2)`,
     "条顿团队加成": /*html*/`条顿团队加成<br>单位对僧侣招降抵抗加强`,
 
-    "维京步兵血量": /*html*/`维京步兵血量<br>步兵从封建时代开始生命值+10%`,
+    "维京步兵血量": /*html*/`维京步兵血量<br>步兵从封建时代开始生命值+20%`,
     "维京便宜战船": /*html*/`维京便宜战船<br>战船在封建/城堡/帝王时代便宜10%/15%/20%`,
     "维京免费科技": /*html*/`维京免费科技<br>独轮手推车和手推车免费`,
     "维京团队加成": /*html*/`维京团队加成<br>船坞便宜15%`,
@@ -566,7 +566,7 @@ let ayanami = {
     "意大利团队加成": /*html*/`意大利团队加成<br>帝王时代可以训练意大利佣兵`,
 
     "葡萄牙黄金费用": /*html*/`葡萄牙黄金费用<br>所有单位的黄金费用便宜20%`,
-    "葡萄牙船只血量": /*html*/`葡萄牙船只血量<br>船只生命值在黑暗/封建/城堡/帝王时代+10%/10%/15%/20%`,
+    "葡萄牙船只血量": /*html*/`葡萄牙船只血量<br>船只生命值在封建/城堡/帝王时代+10%/15%/20%`,
     "葡萄牙大商站": /*html*/`葡萄牙大商站<br>帝王时代可以建造大商站`,
     "葡萄牙果丛加成": /*html*/`葡萄牙果丛加成<br>村民从果丛获得额外的33%木材`,
     "葡萄牙团队加成": /*html*/`葡萄牙团队加成<br>科技研究速度+25%`,
@@ -582,7 +582,7 @@ let ayanami = {
     "西班牙铁匠铺折扣": /*html*/`西班牙铁匠铺折扣<br>铁匠铺升级免黄金`,
     "西班牙炮舰弹道学": /*html*/`西班牙炮舰弹道学<br>炮舰射击更快更准确`,
     "西班牙科技返金": /*html*/`西班牙科技返金<br>每研究一个科技获得20金`,
-    "西班牙火药攻速": /*html*/`西班牙火药攻速<br>火药单位攻击速度+15%`,
+    "西班牙火药攻速": /*html*/`西班牙火药攻速<br>火药单位攻击速度+18%`,
     "西班牙团队加成": /*html*/`西班牙团队加成<br>贸易单位产生多25%黄金`,
 
     "西西里建筑加速": /*html*/`西西里建筑加速<br>城镇中心建造速度提高100%，防御设施建造速度提高50%`,
@@ -599,7 +599,7 @@ let ayanami = {
 
     "马里建筑降价": /*html*/`马里建筑降价<br>建筑便宜15%木材`,
     "马里兵营盾牌": /*html*/`马里兵营盾牌<br>从封建时代开始，兵营单位每个时代远程护甲+1`,
-    "马里金矿加成": /*html*/`马里金矿加成<br>金矿开采延长10%，金矿工携带量+15%，开采黄金效率+15%`,
+    "马里金矿加成": /*html*/`马里金矿加成<br>金矿开采寿命延长10%，金矿工携带量+10%，开采黄金效率+10%`,
     "马里团队加成": /*html*/`马里团队加成<br>大学工作效率提升80%`,
 
     "阿兹特克携带量": /*html*/`阿兹特克携带量<br>村民携带量多3`,
@@ -615,7 +615,7 @@ let ayanami = {
 
     "印加羊驼加成": /*html*/`印加羊驼加成<br>开始多一只羊驼`,
     "印加武装村民": /*html*/`印加武装村民<br>城堡时代开始，铁匠铺的步兵科技能升级村民的攻防`,
-    "印加步兵降价": /*html*/`印加步兵降价<br>步兵单位在每个时代减少15%/20%/25%/30%食物成本`,
+    "印加步兵降价": /*html*/`印加步兵降价<br>军事单位在每个时代减少15%/20%/25%/30%食物成本`,
     "印加房子人口": /*html*/`印加房子人口<br>每个房子和定居点能支持10人口`,
     "印加石头降价": /*html*/`印加石头降价<br>建筑便宜15%石头`,
     "印加团队加成": /*html*/`印加团队加成<br>团队成员获得1只羊驼`,
@@ -702,7 +702,7 @@ let ayanami = {
 
 
     "魏动员令": /*html*/`魏动员令<br>每完成一项经济科技，获得1个村民`,
-    "魏骑兵加成": /*html*/`魏骑兵加成<br>黑光铠骑兵和鲜卑掠骑兵在城堡/帝王时代生命值+15%/+30%`,
+    "魏骑兵加成": /*html*/`魏骑兵加成<br>黑光铠骑兵和鲜卑掠骑兵在城堡/帝王时代生命值+20%/+30%`,
     "魏攻城费用": /*html*/`魏攻城费用<br>牵引抛石机和中式楼船费用-25%`,
     "魏团队加成": /*html*/`魏团队加成<br>骑兵对攻城器攻击力+2`,
 
