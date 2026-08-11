@@ -1,6 +1,21 @@
 (function () {
     let isInitialized = false;
 
+    // 需要排除的单位名称列表（匹配图片中的所有单位）
+    const EXCLUDED_NAMES = [
+        '希腊步兵', '精锐希腊步兵', '战车', '精锐战车', '精锐步兵',
+        '长生军', '将军', '三百卫士', '军事执政官',
+        '伙伴骑兵', '方阵步兵', '桑纳哈亚', '帕提尤达长弓兵', '长柄逆刃刀战士',
+        '小艇', '战争小艇', '重型小艇', '精锐小艇', '单列桨座战船',
+        '桡桨船', '三列桨座战船', '投石船', '中型投石船', '利维坦'
+    ];
+
+    // 检查指定文本是否包含排除列表中的任意名称
+    function isExcluded(text) {
+        if (!text) return false;
+        return EXCLUDED_NAMES.some(name => text.includes(name));
+    }
+
     // 1. 从 #techno 内部提取所有真正点亮（不带 aoeTechIconOff）的可用文明
     function detectAvailableCivsFromTechno() {
         const availableCivs = [];
@@ -31,6 +46,14 @@
     function safeInit() {
         if (isInitialized) return;
 
+        const $spContainer = $('#sp').closest('div');
+
+        // 【排除判断 1】：如果当前页面/标题属于排除名单中的单位，直接不运行此机制
+        const pageTitleText = $('#sp').text() + ' ' + $('title').text();
+        if (isExcluded(pageTitleText)) {
+            return;
+        }
+
         const availableCivs = detectAvailableCivsFromTechno();
 
         // 如果可用文明小于等于 1 个（如独有单位），保持网页原样
@@ -41,7 +64,6 @@
         const civMap = {};
         availableCivs.forEach(c => civMap[c.id] = c);
 
-        const $spContainer = $('#sp').closest('div');
         const $hr = $spContainer.find('hr.hrsty');
         if (!$hr.length) return;
 
@@ -94,6 +116,14 @@
 
             // A. 筛选加成 <ul> 列表
             $spContainer.find('ul li').each(function () {
+                const text = $(this).text();
+
+                // 【排除判断 2】：文本中包含排除单位的条目，始终保持显示
+                if (isExcluded(text)) {
+                    $(this).show();
+                    return;
+                }
+
                 if (!selectedCivId) {
                     $(this).show();
                     return;
@@ -113,6 +143,15 @@
                 const $items = $(this).find('.tech-item');
 
                 $items.each(function () {
+                    const itemText = $(this).text();
+
+                    // 【排除判断 3】：包含排除单位的科技/单位条目，不进行变红/删除线处理
+                    if (isExcluded(itemText)) {
+                        $(this).css({ 'text-decoration': '', 'color': '' }).show();
+                        visibleCount++;
+                        return;
+                    }
+
                     if (!selectedCivId) {
                         $(this).css({ 'text-decoration': '', 'color': '' }).show();
                         visibleCount++;
@@ -177,7 +216,7 @@
                 executeFilter(null);
             } else {
                 // 点击灰色图标：激活该图标，其他变灰，执行筛选
-                $('.civ-filter-icon').removeClass('civ-active937').addClass('civ-active936');
+                $('.civ-filter-icon').removeClass('civ-active936').addClass('civ-active937');
                 $this.removeClass('civ-active936').addClass('civ-active937');
                 executeFilter(civId);
             }
@@ -197,4 +236,4 @@
             safeInit();
         }
     }, 600);
-})(); 
+})();
