@@ -2,6 +2,8 @@
    1. CSS 变量定义区 (仅控制颜色，绝不涉及任何物理像素大小)
    ===================================================================== */
 :root {
+    --tech-active-shadow2: drop-shadow(0 0 2px rgb(255, 208, 0));
+
     /* --- 日间模式基础配色变量 --- */
     --bg-body-color: #EEEBDA;
     --text-primary: #4D4D4D;
@@ -84,6 +86,8 @@ body.layout-headless {
    3. 夜间模式配色覆写 (全部统一为 #373331 纯色，无任何背景图)
    ===================================================================== */
 body.theme-dark {
+    --tech-active-shadow2: drop-shadow(0 0 2px rgb(255, 208, 0));
+
     --bg-body-color: #1C1815;
     /* 统一底色为 #373331 */
     --text-primary: #e2ddca;
@@ -352,6 +356,17 @@ body {
     font-size: 9pt;
     color: var(--text-primary);
 }
+
+.civ-active938 {
+    filter: var(--tech-active-shadow2);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.theme-dark .civ-active938 {
+    filter: var(--tech-active-shadow2);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
 
 h1,
 h2,
