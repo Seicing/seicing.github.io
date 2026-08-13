@@ -137,9 +137,7 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><a href="https://seicing.com/html/largelv/chars.html" target="_blank">复制内部id(英文)</a>到输入框后加载切换角色<br>
-
-<input id="charId" value="YoEmpireFlower">
+                        <div class="entry"><input id="charId" value="YoEmpireFlower">
 <button onclick="loadChar()">加载</button>
 <span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
 
@@ -177,13 +175,16 @@
     <button onclick="startDialogue('今天过得如何？')">
         测试用对话3
     </button>
+    <button onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。')">
+        测试用对话4
+    </button>
 </div>
 
 
 <h4>说话模式</h4>
 <!-- 默认改为动画序列 -->
-<button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
-<button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
+<button class="talkModeBtn" onclick="setTalkMode(1,this)">现有帧序列动画</button>
+<button class="talkModeBtn active" onclick="setTalkMode(2,this)">专用帧序列动画</button>
 
 
 <h4>配件</h4>
@@ -195,48 +196,11 @@
 
 <hr>
 <div id="faces"></div>
+<div id="lavivagnar"></div>
 
-<br>
-AlterrataCleric
-AlterrataWizard
-AragonCoastal
-Aziz
-Byinn
-Chunlan
-CiyauCleric
-CiyauPhalanx
-IrisEpisode
-IrisMrazKralitsata
-IrisPratenitsa
-IuimiAcalanatha
-IuimiAcolyte
-IuimiFlameEmpress
-SP
-Khazard
-KhazatarCleric
-Kruv
-KruvAtavism
-Meirei
-Okichi
-Prithvi
-SarchlentAdventurer
-SarchlentConqueror
-SeicingAcolyte
-SeicingAcolyte2
-SeicingEmpireJade
-SeicingWanderer
-SeigineScholar
-Sherazard
-Sri
-VenAcolyte
-VenCelestial
-VenHierophant
-YoBorteCino
-Yunpyeng
-YoEmpireFlower
-YoEmpress
-YoTngriDaruga
-YoTngriDarugaAtavism</div>
+
+
+</div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -726,6 +690,82 @@ YoTngriDarugaAtavism</div>
 
         typeNext();
     }
+
+
+    /* ========= 加载并改造 lavivagnar.html ========= */
+    function loadLavivagnar() {
+        fetch('https://seicing.com/js/list/lavivagnar.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`lavivagnar.html 加载失败: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(html => {
+                const container = document.getElementById("lavivagnar");
+                if (!container) return;
+
+                // 先把 HTML 转成 DOM，方便逐项改造
+                const temp = document.createElement("div");
+                temp.innerHTML = html;
+
+                // 去掉原来的固定宽度/float
+                const list = temp.querySelector("#listlavivagnar");
+                if (list) {
+                    list.style.removeProperty("float");
+                    list.style.removeProperty("width");
+                }
+
+                // 所有 <a> 都取消超链接，但保留里面的内容和 id/style。
+                temp.querySelectorAll("a").forEach(a => {
+                    const replacement = document.createElement("span");
+
+                    // 保留原来的属性（包括 bigfonter、darkmoder 等 id）
+                    for (const attr of a.attributes) {
+                        if (attr.name.toLowerCase() !== "href") {
+                            replacement.setAttribute(attr.name, attr.value);
+                        }
+                    }
+
+                    while (a.firstChild) {
+                        replacement.appendChild(a.firstChild);
+                    }
+
+                    a.replaceWith(replacement);
+                });
+
+                // 所有图片宽度改为 30px。
+                // 点击图片时复制 ClickUp/xxxx.png 中的 xxxx。
+                temp.querySelectorAll("img").forEach(img => {
+                    img.removeAttribute("width");
+                    img.style.width = "30px";
+
+                    img.addEventListener("click", () => {
+                        const src = img.getAttribute("src") || "";
+                        const cleanSrc = src.split("?")[0].split("#")[0];
+                        const fileName = cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
+                        const name = fileName.replace(/\.[^.]+$/, "");
+
+                        if (!name) return;
+
+                        navigator.clipboard.writeText(name)
+                            .then(() => {
+                                console.log("已复制:", name);
+                            })
+                            .catch(err => {
+                                console.error("复制失败:", err);
+                            });
+                    });
+                });
+
+                container.replaceChildren(...Array.from(temp.childNodes));
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    }
+
+    loadLavivagnar();
 
     loadChar();
 </script>
