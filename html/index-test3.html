@@ -189,8 +189,8 @@
 
 <h4>说话模式</h4>
 <!-- 默认改为动画序列 -->
-<button class="talkModeBtn" onclick="setTalkMode(1,this)">现有帧序列动画</button>
-<button class="talkModeBtn active" onclick="setTalkMode(2,this)">专用帧序列动画</button>
+<button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
+<button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
 
 
 <h4>配件</h4>
@@ -434,6 +434,7 @@
     }
 
     /* ========= 加载 (修改版) ========= */
+    /* ========= 加载 (修改版 - 含智能说话模式切换) ========= */
     function loadChar() {
         const id = document.getElementById("charId").value;
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
@@ -452,8 +453,7 @@
         const closeEyeBtn = document.getElementById("closeEyeBtn");
         if (closeEyeBtn) closeEyeBtn.classList.remove("active");
 
-        // 【新增】重置所有按钮的 disabled 状态
-        // 每次加载新角色前，先把之前的禁用状态清空，否则切到正常角色也没法用了
+        // 重置所有按钮的 disabled 状态
         document.querySelectorAll("button.disabled").forEach(b => {
             b.classList.remove("disabled");
             b.title = "";
@@ -463,6 +463,22 @@
         preloadImages((failedSet) => {
             // 1. 禁用坏掉的按钮
             checkBrokenResources(failedSet);
+
+            // ================= 【新增：智能检测动画模式】 =================
+            const mode1Btn = document.querySelector('button[onclick*="setTalkMode(1"]');
+            const mode2Btn = document.querySelector('button[onclick*="setTalkMode(2"]');
+
+            // 检查 mouth_ani1 是否加载失败
+            const hasMouthAni1 = !failedSet.has("mouth_ani1");
+
+            if (hasMouthAni1) {
+                // 存在 mouth_ani1 → 自动切换为 专用帧序列动画 (Mode 2)
+                if (mode2Btn) setTalkMode(2, mode2Btn);
+            } else {
+                // 不存在 mouth_ani1 → 自动切换为 现有帧序列动画 (Mode 1)
+                if (mode1Btn) setTalkMode(1, mode1Btn);
+            }
+            // ==============================================================
 
             // 2. 决定默认表情
             let defaultFace = "smile";
@@ -485,10 +501,6 @@
             // 3. 开始眨眼
             startBlink();
         });
-
-
-
-
     }
 
     /* ========= 表情 ========= */
