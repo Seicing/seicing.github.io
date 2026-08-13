@@ -26,7 +26,6 @@
     .rows2 {
         display: flex;
         align-items: flex-end;
-        /* 原来是 flex-start，改为 flex-end */
     }
 
     .left {
@@ -73,12 +72,10 @@
         border: 1px solid #a93226;
     }
 
-    /* 2. 修改 #dialogueBox：删除 margin-top，改为 margin-bottom */
     #dialogueBox {
         width: 220px;
         min-height: 60px;
         box-sizing: border-box;
-        /* 推荐加上，防止 padding 撑大宽度 */
         padding: 8px 10px;
         border: 1px solid #555;
         background-color: var(--dialogueBox-background);
@@ -86,16 +83,13 @@
         line-height: 1.4;
         display: none;
         margin-left: 5px;
-
-        /* 🔴 删掉原本的 margin-top: 150px; */
-        /* 🟢 改用 margin-bottom 固定底部间距（根据需要调整数值，例如 15px 或 20px） */
         margin-bottom: 15px;
-
         text-align: left;
     }
 
     #dialogueText {
         word-break: break-all;
+        white-space: pre-wrap;
     }
 
     button.disabled {
@@ -186,7 +180,8 @@
     <button onclick="startDialogue('今天过得如何？')">
         测试用对话3
     </button>
-    <button onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。')">
+    <button
+        onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。\n感电状态：在此状态下，目标会变得脆弱，余可以对目标发动掠夺。发动掠夺后，当前场地上所有感电状态将会消失，并根据触发感电的数量提高电量。\n部分敌人免疫感电状态，无法进入感电状态中。')">
         测试用对话4
     </button>
 </div>
