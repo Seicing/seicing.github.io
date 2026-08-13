@@ -197,9 +197,6 @@
 <hr>
 <div id="faces"></div>
 <div id="lavivagnar"></div>
-
-
-
 </div>
                     </div>
                 </div>
@@ -757,7 +754,12 @@
 
                     /* ========= 所有 <a> 取消超链接 ========= */
                     list.querySelectorAll("a").forEach(a => {
+                        a.style.display = "inline-block";
+                        a.style.margin = "0 2px";
+
                         const replacement = document.createElement("span");
+                        replacement.style.display = "inline-block";
+                        replacement.style.margin = "0 2px";
 
                         // 保留原来的属性，但去掉 href
                         for (const attr of a.attributes) {
@@ -774,20 +776,15 @@
                     });
 
 
-                    /* ========= 图片改为 30px，并点击复制文件名 ========= */
                     list.querySelectorAll("img").forEach(img => {
-
                         img.removeAttribute("width");
                         img.style.width = "30px";
-
+                        img.style.display = "block";
                         img.style.cursor = "pointer";
 
                         img.addEventListener("click", () => {
                             const imgSrc = img.getAttribute("src") || "";
-
-                            const cleanSrc = imgSrc
-                                .split("?")[0]
-                                .split("#")[0];
+                            const cleanSrc = imgSrc.split("?")[0].split("#")[0];
 
                             const fileName =
                                 cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
@@ -797,12 +794,8 @@
                             if (!name) return;
 
                             navigator.clipboard.writeText(name)
-                                .then(() => {
-                                    console.log("已复制:", name);
-                                })
-                                .catch(err => {
-                                    console.error("复制失败:", err);
-                                });
+                                .then(() => console.log("已复制:", name))
+                                .catch(err => console.error("复制失败:", err));
                         });
                     });
                 }
