@@ -736,6 +736,12 @@
                     list.style.float = "left";
                     list.style.width = "100%";
 
+                    // 🟢🟢🟢 【新增】：将隐藏的“特殊形态” div 在本页面解封显示 🟢🟢🟢
+                    const specialForms = list.querySelectorAll('#specialForms, div[style*="display: none"], div[style*="display:none"]');
+                    specialForms.forEach(el => {
+                        el.style.display = "block";
+                    });
+
                     /* ========= 删除“大字体 / 夜间模式” ========= */
                     const bigfonter = list.querySelector("#bigfonter");
                     const darkmoder = list.querySelector("#darkmoder");
