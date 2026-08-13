@@ -232,7 +232,7 @@ function activateCurrentCiv() {
             const imageName = filename.replace(/\.[^/.]+$/, "");
 
             if (imageName === currentName) {
-                img.classList.add("civ-active937");
+                img.classList.add("civ-active938");
                 found = true;
             }
         });

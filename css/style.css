@@ -1116,6 +1116,18 @@ div {
     background: rgba(255, 255, 255, 0.7);
 }
 
+.civ-active938 {
+    filter: var(--tech-active-shadow2);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.theme-dark .civ-active938 {
+    filter: var(--tech-active-shadow2);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+
+
 .civ-active937 {
     filter: var(--tech-active-shadow);
     transition: filter 0.2s ease, transform 0.2s ease;
