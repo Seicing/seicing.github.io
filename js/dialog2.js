@@ -34,11 +34,16 @@ const app = createApp({
                         };
                     });
                     aasb.value = processedData;
+
+                    Vue.nextTick(() => {
+                        activateCurrentCiv();
+                    });
                 })
                 .catch(error => console.error('Error fetching dialog.json:', error));
 
             setTimeout(() => {
                 const reskiElement = document.getElementById("reski");
+                activateCurrentCiv();
                 if (reskiElement) {
                     const aposr = reskiElement.offsetHeight;
                     $("#reske").height(aposr);
@@ -65,7 +70,6 @@ $(window).resize(function () {
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
-    activateCurrentCiv();
 });
 
 
@@ -188,29 +192,61 @@ function CEswitch2() {
 }
 
 
-// 根据当前网页名，让 #reski 中同名图片获得 civ-active937
 function activateCurrentCiv() {
-    const path = window.location.pathname;
+    // 获取当前网页文件名
+    // 例如：
+    // https://seicing.com/html/largelv/list/IuireCleric.html
+    // → IuireCleric
+    const pathname = window.location.pathname;
+    const filename = pathname.substring(pathname.lastIndexOf('/') + 1);
+    const currentName = filename.replace(/\.[^/.]+$/, '');
 
-    // 获取当前网页文件名，例如 IuireCleric.html → IuireCleric
-    const filename = path.split('/').pop();
-    const currentPageName = filename.replace(/\.[^/.]+$/, '');
+    if (!currentName) {
+        console.log("无法获取当前网页名称");
+        return;
+    }
 
-    if (!currentPageName) return;
+    console.log("当前网页名称：", currentName);
 
-    $("#reski img").each(function () {
-        const src = $(this).attr("src");
+    const reski = document.getElementById("reski");
+
+    if (!reski) {
+        console.log("#reski 不存在");
+        return;
+    }
+
+    const images = reski.querySelectorAll("img");
+
+    console.log("#reski 中找到图片：", images.length);
+
+    images.forEach(img => {
+        // 优先读取 src
+        const src = img.getAttribute("src");
+
         if (!src) return;
 
-        // 去掉查询参数和 hash
+        // 去掉 ?xxx 和 #xxx
         const cleanSrc = src.split('?')[0].split('#')[0];
 
-        // 获取图片文件名，例如 IuireCleric.png → IuireCleric
-        const imageFilename = cleanSrc.split('/').pop();
+        // 获取最后的文件名
+        const imageFilename = cleanSrc.substring(
+            cleanSrc.lastIndexOf('/') + 1
+        );
+
+        // 去掉扩展名
         const imageName = imageFilename.replace(/\.[^/.]+$/, '');
 
-        if (imageName === currentPageName) {
-            $(this).addClass("civ-active937");
+        console.log("检测图片：", imageName);
+
+        if (imageName === currentName) {
+            img.classList.add("civ-active937");
+
+            console.log(
+                "已激活：",
+                img,
+                "class =",
+                img.className
+            );
         }
     });
 }
