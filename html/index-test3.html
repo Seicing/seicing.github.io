@@ -74,7 +74,7 @@
 
     #dialogueBox {
         width: 220px;
-        min-height: 60px;
+        min-height: 80px;
         box-sizing: border-box;
         padding: 8px 10px;
         border: 1px solid #555;
@@ -181,7 +181,7 @@
         测试用对话3
     </button>
     <button
-        onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。\n感电状态：在此状态下，目标会变得脆弱，余可以对目标发动掠夺。发动掠夺后，当前场地上所有感电状态将会消失，并根据触发感电的数量提高电量。\n部分敌人免疫感电状态，无法进入感电状态中。')">
+        onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。\n感电状态：在此状态下，目标会变得脆弱，余可以对目标发动掠夺。发动掠夺后，当前场地上所有感电状态将会消失，并根据触发感电的数量提高电量。')">
         测试用对话4
     </button>
 </div>
@@ -433,13 +433,28 @@
         }
     }
 
-    /* ========= 加载 (修改版) ========= */
-    /* ========= 加载 (修改版 - 含智能说话模式切换) ========= */
+    /* ========= 加载 (彻底修复残留 Bug 版) ========= */
     function loadChar() {
         const id = document.getElementById("charId").value;
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
 
+        // 🟢 【关键修复 1】：彻底重置说话与对话定时器，关闭说话状态
+        if (talkTimer) clearInterval(talkTimer);
+        if (dialogueTimer) clearTimeout(dialogueTimer);
+        talking = false;
+        isTyping = false;
+
+        const talkBtn = document.getElementById("talkBtn");
+        if (talkBtn) talkBtn.classList.remove("active");
+
+        const dialogueBox = document.getElementById("dialogueBox");
+        if (dialogueBox) dialogueBox.style.display = "none";
+
+        // 🟢 【关键修复 2】：加载新角色前清空五官，防止残留上一个角色的图像
         base.src = src("base");
+        eye.src = "";
+        brow.src = "";
+        mouth.src = "";
 
         // 重置所有配件
         Object.values(acc).forEach(x => {
@@ -464,64 +479,54 @@
             // 1. 禁用坏掉的按钮
             checkBrokenResources(failedSet);
 
-            // ================= 【新增：智能检测动画模式】 =================
+            // 2. 智能检测动画模式
             const mode1Btn = document.querySelector('button[onclick*="setTalkMode(1"]');
             const mode2Btn = document.querySelector('button[onclick*="setTalkMode(2"]');
-
-            // 检查 mouth_ani1 是否加载失败
             const hasMouthAni1 = !failedSet.has("mouth_ani1");
 
             if (hasMouthAni1) {
-                // 存在 mouth_ani1 → 自动切换为 专用帧序列动画 (Mode 2)
                 if (mode2Btn) setTalkMode(2, mode2Btn);
             } else {
-                // 不存在 mouth_ani1 → 自动切换为 现有帧序列动画 (Mode 1)
                 if (mode1Btn) setTalkMode(1, mode1Btn);
             }
-            // ==============================================================
 
-            // 2. 决定默认表情
-            let defaultFace = "smile";
+            // 3. 🟢 【关键修复 3】：寻找第一个无缺失图片的有效表情
+            let defaultFace = Object.keys(faces).find(faceName => {
+                const req = faces[faceName];
+                return !failedSet.has(req[0]) && !failedSet.has(req[3]) && !failedSet.has(req[4]);
+            }) || Object.keys(faces)[0];
 
-            // smile 不存在 或 smile 资源缺失 → 回退 serene
-            if (
-                !faces.smile ||
-                faces.smile.some(img => failedSet.has(img))
-            ) {
-                defaultFace = "serene";
-            }
+            // 强制设置表情（传入 true 表示系统强制初始化）
+            setFace(defaultFace, true);
 
-            // 兜底：serene 也不存在的话，用 faces 的第一个
-            if (!faces[defaultFace]) {
-                defaultFace = Object.keys(faces)[0];
-            }
-
-            setFace(defaultFace);
-
-            // 3. 开始眨眼
+            // 4. 开始眨眼
             startBlink();
         });
     }
 
-    /* ========= 表情 ========= */
-    function setFace(name) {
-        // 如果这个表情按钮被禁用了（虽然 UI 上点不了，但代码调用可能触发），做一个防御
+    /* ========= 表情设置 (修复拦截 Bug 版) ========= */
+    function setFace(name, isInit = false) {
         const btn = document.getElementById("face_" + name);
-        if (btn && btn.classList.contains("disabled")) {
+
+        // 只有在【非初始化】且【按钮被禁用】时才拦截点击
+        if (!isInit && btn && btn.classList.contains("disabled")) {
             console.warn(`表情 ${name} 资源缺失，跳过切换`);
             return;
         }
 
         currentFace = faces[name];
+        if (!currentFace) return;
 
+        // 设置眼睛
         if (isClosedEyes) {
             eye.src = src(currentFace[2]);
         } else {
             eye.src = src(currentFace[0]);
         }
 
+        // 🟢 强制刷新眉毛和嘴巴
         brow.src = src(currentFace[3]);
-        if (!talking) mouth.src = src(currentFace[4]);
+        mouth.src = src(currentFace[4]);
 
         document.querySelectorAll(".faceBtn").forEach(b => b.classList.remove("active"));
         if (btn) btn.classList.add("active");
@@ -647,7 +652,7 @@
         b.textContent = k;
         b.id = "face_" + k;
         b.className = "faceBtn";
-        b.onclick = () => setFace(k);
+        b.onclick = () => setFace(k, false);
         box.appendChild(b);
     }
 
