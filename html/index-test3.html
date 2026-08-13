@@ -196,6 +196,7 @@
 
 <hr>
 <div id="faces"></div>
+<br>
 <div id="lavivagnar"></div>
 </div>
                     </div>
@@ -780,27 +781,25 @@
                     });
 
 
-                    list.querySelectorAll("img").forEach(img => {
-                        img.removeAttribute("width");
-                        img.style.width = "30px";
-                        img.style.display = "block";
-                        img.style.cursor = "pointer";
+                    img.addEventListener("click", () => {
+                        const imgSrc = img.getAttribute("src") || "";
+                        const cleanSrc = imgSrc.split("?")[0].split("#")[0];
 
-                        img.addEventListener("click", () => {
-                            const imgSrc = img.getAttribute("src") || "";
-                            const cleanSrc = imgSrc.split("?")[0].split("#")[0];
+                        const fileName =
+                            cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
 
-                            const fileName =
-                                cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
+                        const name = fileName.replace(/\.[^.]+$/, "");
 
-                            const name = fileName.replace(/\.[^.]+$/, "");
+                        if (!name) return;
 
-                            if (!name) return;
+                        // 修改角色 ID
+                        const charId = document.getElementById("charId");
+                        if (!charId) return;
 
-                            navigator.clipboard.writeText(name)
-                                .then(() => console.log("已复制:", name))
-                                .catch(err => console.error("复制失败:", err));
-                        });
+                        charId.value = name;
+
+                        // 加载角色
+                        loadChar();
                     });
                 }
 
