@@ -713,11 +713,10 @@
 
                     /* ========= 恢复 float:left ========= */
                     list.style.float = "left";
-
+                    list.style.width = "100%";
                     // 如果原文件有 width，也可以继续保持
                     // 不需要删除 width
                     // list.style.width = "285px";
-
 
                     /* ========= 删除“大字体 / 夜间模式” ========= */
                     const bigfonter = list.querySelector("#bigfonter");
