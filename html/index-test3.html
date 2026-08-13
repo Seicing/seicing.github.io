@@ -689,7 +689,6 @@
         typeNext();
     }
 
-
     /* ========= 加载并改造 lavivagnar.html ========= */
     function loadLavivagnar() {
         fetch('https://seicing.com/js/list/lavivagnar.html')
@@ -709,15 +708,10 @@
 
                 const list = temp.querySelector("#listlavivagnar");
 
-
                 if (list) {
-
                     /* ========= 恢复 float:left ========= */
                     list.style.float = "left";
                     list.style.width = "100%";
-                    // 如果原文件有 width，也可以继续保持
-                    // 不需要删除 width
-                    // list.style.width = "285px";
 
                     /* ========= 删除“大字体 / 夜间模式” ========= */
                     const bigfonter = list.querySelector("#bigfonter");
@@ -725,7 +719,6 @@
 
                     if (bigfonter) bigfonter.remove();
                     if (darkmoder) darkmoder.remove();
-
 
                     /* ========= 删除顶部的返回上一页 / 复位 / 一览 ========= */
                     list.querySelectorAll('a.special-text-link').forEach(a => {
@@ -743,11 +736,8 @@
                         br.remove();
                     });
 
-                    // 删除前几个多余的空 br
-                    // 这里针对已经没有内容的 br 做清理
-                    const children = Array.from(list.childNodes);
-
-                    children.forEach(node => {
+                    // 删除空文本节点
+                    Array.from(list.childNodes).forEach(node => {
                         if (
                             node.nodeType === Node.TEXT_NODE &&
                             !node.textContent.trim()
@@ -756,12 +746,8 @@
                         }
                     });
 
-
                     /* ========= 所有 <a> 取消超链接 ========= */
                     list.querySelectorAll("a").forEach(a => {
-                        a.style.display = "inline-block";
-                        a.style.margin = "0 2px";
-
                         const replacement = document.createElement("span");
                         replacement.style.display = "inline-block";
                         replacement.style.margin = "0 2px";
@@ -780,35 +766,36 @@
                         a.replaceWith(replacement);
                     });
 
+                    /* ========= 选中所有图片添加点击事件 (正确遍历) ========= */
+                    list.querySelectorAll("img").forEach(img => {
+                        img.style.cursor = "pointer"; // 增加手型光标提示可点击
+                        img.addEventListener("click", () => {
+                            const imgSrc = img.getAttribute("src") || "";
+                            const cleanSrc = imgSrc.split("?")[0].split("#")[0];
+                            const fileName = cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
+                            const name = fileName.replace(/\.[^.]+$/, "");
 
-                    img.addEventListener("click", () => {
-                        const imgSrc = img.getAttribute("src") || "";
-                        const cleanSrc = imgSrc.split("?")[0].split("#")[0];
+                            if (!name) return;
 
-                        const fileName =
-                            cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
+                            // 修改角色 ID
+                            const charId = document.getElementById("charId");
+                            if (!charId) return;
 
-                        const name = fileName.replace(/\.[^.]+$/, "");
+                            charId.value = name;
 
-                        if (!name) return;
-
-                        // 修改角色 ID
-                        const charId = document.getElementById("charId");
-                        if (!charId) return;
-
-                        charId.value = name;
-
-                        // 加载角色
-                        loadChar();
+                            // 加载角色
+                            loadChar();
+                        });
                     });
                 }
 
                 container.replaceChildren(...Array.from(temp.childNodes));
             })
             .catch(error => {
-                console.error(error);
+                console.error("加载 lavivagnar 失败:", error);
             });
     }
+
 
     loadLavivagnar();
 
