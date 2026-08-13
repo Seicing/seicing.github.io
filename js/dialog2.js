@@ -54,7 +54,12 @@ const app = createApp({
 });
 
 app.mount('#app');
-activateCurrentCiv();
+
+$(document).ready(function () {
+    setTimeout(function () {
+        activateCurrentCiv();
+    }, 100);
+});
 
 $(window).resize(function () {
     var cliWidth = document.body.clientWidth - 330;
@@ -188,8 +193,6 @@ function CEswitch2() {
 }
 
 function activateCurrentCiv() {
-    // 获取当前网页文件名
-    // IuireCleric.html → IuireCleric
     const pathname = window.location.pathname;
     const filename = pathname.substring(pathname.lastIndexOf("/") + 1);
     const currentName = filename.replace(/\.[^/.]+$/, "");
@@ -198,29 +201,59 @@ function activateCurrentCiv() {
         return;
     }
 
-    // 只在左侧文明列表 #reske 中寻找
     const reske = document.getElementById("reske");
 
     if (!reske) {
         return;
     }
 
-    const images = reske.querySelectorAll("img");
+    function checkImages() {
+        const images = reske.querySelectorAll("img");
 
-    images.forEach(function (img) {
-        const src = img.getAttribute("src");
-
-        if (!src) {
-            return;
+        if (images.length === 0) {
+            return false;
         }
 
-        // 获取图片文件名
-        // .../IuireCleric.png → IuireCleric
-        const filename = src.split("?")[0].split("#")[0].split("/").pop();
-        const imageName = filename.replace(/\.[^/.]+$/, "");
+        let found = false;
 
-        if (imageName === currentName) {
-            img.classList.add("civ-active937");
+        images.forEach(function (img) {
+            const src = img.getAttribute("src");
+
+            if (!src) {
+                return;
+            }
+
+            const filename = src
+                .split("?")[0]
+                .split("#")[0]
+                .split("/")
+                .pop();
+
+            const imageName = filename.replace(/\.[^/.]+$/, "");
+
+            if (imageName === currentName) {
+                img.classList.add("civ-active937");
+                found = true;
+            }
+        });
+
+        return found;
+    }
+
+    // 先立即检查一次
+    if (checkImages()) {
+        return;
+    }
+
+    // 如果列表是动态生成的，监听 #reske
+    const observer = new MutationObserver(function () {
+        if (checkImages()) {
+            observer.disconnect();
         }
+    });
+
+    observer.observe(reske, {
+        childList: true,
+        subtree: true
     });
 }
