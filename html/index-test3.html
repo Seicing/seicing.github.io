@@ -25,7 +25,8 @@
 
     .rows2 {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
+        /* 原来是 flex-start，改为 flex-end */
     }
 
     .left {
@@ -72,12 +73,12 @@
         border: 1px solid #a93226;
     }
 
-
+    /* 2. 修改 #dialogueBox：删除 margin-top，改为 margin-bottom */
     #dialogueBox {
-        left: 170px;
-        top: 20px;
         width: 220px;
         min-height: 60px;
+        box-sizing: border-box;
+        /* 推荐加上，防止 padding 撑大宽度 */
         padding: 8px 10px;
         border: 1px solid #555;
         background-color: var(--dialogueBox-background);
@@ -85,7 +86,11 @@
         line-height: 1.4;
         display: none;
         margin-left: 5px;
-        margin-top: 150px;
+
+        /* 🔴 删掉原本的 margin-top: 150px; */
+        /* 🟢 改用 margin-bottom 固定底部间距（根据需要调整数值，例如 15px 或 20px） */
+        margin-bottom: 15px;
+
         text-align: left;
     }
 
