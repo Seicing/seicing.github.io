@@ -103,15 +103,6 @@
         height: auto;
         display: inline-block;
     }
-
-    #lavivagnar {
-        clear: both;
-        display: flow-root;
-    }
-
-    #specialForms {
-        margin-top: 10px;
-    }
 </style>
 </head>
 
@@ -774,15 +765,15 @@
                         br.remove();
                     });
 
-                    // 删除空文本节点
-                    Array.from(list.childNodes).forEach(node => {
-                        if (
-                            node.nodeType === Node.TEXT_NODE &&
-                            !node.textContent.trim()
-                        ) {
-                            node.remove();
+                    // 🟢 修改为：深层清理整个列表（包含 #specialForms 内部）的所有 HTML 换行与空格文本
+                    const walker = document.createTreeWalker(list, NodeFilter.SHOW_TEXT, null, false);
+                    const emptyTextNodes = [];
+                    while (walker.nextNode()) {
+                        if (!walker.currentNode.textContent.trim()) {
+                            emptyTextNodes.push(walker.currentNode);
                         }
-                    });
+                    }
+                    emptyTextNodes.forEach(node => node.remove());
 
                     /* ========= 所有 <a> 取消超链接 ========= */
                     list.querySelectorAll("a").forEach(a => {
