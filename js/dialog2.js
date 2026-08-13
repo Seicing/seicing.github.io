@@ -34,16 +34,11 @@ const app = createApp({
                         };
                     });
                     aasb.value = processedData;
-
-                    Vue.nextTick(() => {
-                        activateCurrentCiv();
-                    });
                 })
                 .catch(error => console.error('Error fetching dialog.json:', error));
 
             setTimeout(() => {
                 const reskiElement = document.getElementById("reski");
-                activateCurrentCiv();
                 if (reskiElement) {
                     const aposr = reskiElement.offsetHeight;
                     $("#reske").height(aposr);
@@ -59,6 +54,7 @@ const app = createApp({
 });
 
 app.mount('#app');
+activateCurrentCiv();
 
 $(window).resize(function () {
     var cliWidth = document.body.clientWidth - 330;
@@ -191,62 +187,40 @@ function CEswitch2() {
     document.getElementById("CEswitch").style.display = "block";
 }
 
-
 function activateCurrentCiv() {
     // 获取当前网页文件名
-    // 例如：
-    // https://seicing.com/html/largelv/list/IuireCleric.html
-    // → IuireCleric
+    // IuireCleric.html → IuireCleric
     const pathname = window.location.pathname;
-    const filename = pathname.substring(pathname.lastIndexOf('/') + 1);
-    const currentName = filename.replace(/\.[^/.]+$/, '');
+    const filename = pathname.substring(pathname.lastIndexOf("/") + 1);
+    const currentName = filename.replace(/\.[^/.]+$/, "");
 
     if (!currentName) {
-        console.log("无法获取当前网页名称");
         return;
     }
 
-    console.log("当前网页名称：", currentName);
+    // 只在左侧文明列表 #reske 中寻找
+    const reske = document.getElementById("reske");
 
-    const reski = document.getElementById("reski");
-
-    if (!reski) {
-        console.log("#reski 不存在");
+    if (!reske) {
         return;
     }
 
-    const images = reski.querySelectorAll("img");
+    const images = reske.querySelectorAll("img");
 
-    console.log("#reski 中找到图片：", images.length);
-
-    images.forEach(img => {
-        // 优先读取 src
+    images.forEach(function (img) {
         const src = img.getAttribute("src");
 
-        if (!src) return;
+        if (!src) {
+            return;
+        }
 
-        // 去掉 ?xxx 和 #xxx
-        const cleanSrc = src.split('?')[0].split('#')[0];
-
-        // 获取最后的文件名
-        const imageFilename = cleanSrc.substring(
-            cleanSrc.lastIndexOf('/') + 1
-        );
-
-        // 去掉扩展名
-        const imageName = imageFilename.replace(/\.[^/.]+$/, '');
-
-        console.log("检测图片：", imageName);
+        // 获取图片文件名
+        // .../IuireCleric.png → IuireCleric
+        const filename = src.split("?")[0].split("#")[0].split("/").pop();
+        const imageName = filename.replace(/\.[^/.]+$/, "");
 
         if (imageName === currentName) {
             img.classList.add("civ-active937");
-
-            console.log(
-                "已激活：",
-                img,
-                "class =",
-                img.className
-            );
         }
     });
 }
