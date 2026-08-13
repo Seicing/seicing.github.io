@@ -737,6 +737,11 @@
                         }
                     });
 
+                    /* ========= 删除所有 <br> ========= */
+                    list.querySelectorAll("br").forEach(br => {
+                        br.remove();
+                    });
+
                     // 删除前几个多余的空 br
                     // 这里针对已经没有内容的 br 做清理
                     const children = Array.from(list.childNodes);
