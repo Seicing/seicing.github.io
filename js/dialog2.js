@@ -65,6 +65,7 @@ $(window).resize(function () {
 $(document).ready(function () {
     var cliWidth = document.body.clientWidth - 330;
     $("#reski").width(cliWidth);
+    activateCurrentCiv();
 });
 
 
@@ -184,4 +185,32 @@ function CEswitch2() {
     }
     document.getElementById("CEswitch2").style.display = "none";
     document.getElementById("CEswitch").style.display = "block";
+}
+
+
+// 根据当前网页名，让 #reski 中同名图片获得 civ-active937
+function activateCurrentCiv() {
+    const path = window.location.pathname;
+
+    // 获取当前网页文件名，例如 IuireCleric.html → IuireCleric
+    const filename = path.split('/').pop();
+    const currentPageName = filename.replace(/\.[^/.]+$/, '');
+
+    if (!currentPageName) return;
+
+    $("#reski img").each(function () {
+        const src = $(this).attr("src");
+        if (!src) return;
+
+        // 去掉查询参数和 hash
+        const cleanSrc = src.split('?')[0].split('#')[0];
+
+        // 获取图片文件名，例如 IuireCleric.png → IuireCleric
+        const imageFilename = cleanSrc.split('/').pop();
+        const imageName = imageFilename.replace(/\.[^/.]+$/, '');
+
+        if (imageName === currentPageName) {
+            $(this).addClass("civ-active937");
+        }
+    });
 }
