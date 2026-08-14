@@ -1051,6 +1051,16 @@ div {
     margin-bottom: 20px;
 }
 
+#celp280 {
+    border: var(--border-table);
+    width: 250px;
+}
+
+#celp280 td {
+    padding: 5px;
+}
+
+
 #celp250 {
     border: var(--border-table);
     width: 250px;
