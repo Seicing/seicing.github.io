@@ -92,7 +92,7 @@
             <div class="textce">百度的话，会找到这个解释</div>
             <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsybzxlqvej20g90bcdh0.jpg"><br />
             <div class="textce">当然意思绝对不会是雪碧</div>
-            <div class="textce">顾名思义，sprite就是所谓的“精灵”的意思</div>
+            <div class="textce">顾名思义，sprite就是所谓的&ldquo;精灵&rdquo;的意思</div>
             <div class="textce">
                 sprite在游戏里是指一个图形控件，指的是把一张或者一堆图像进行封装，命名为一个sprite对象，而这个sprite可以接受放大、缩小、动画播放、混合模式等一系列的属性调控，作为一个独立的渲染对象而存在的图像封装就是sprite
             </div>
@@ -104,7 +104,7 @@
             <div class="textce">可以看出游戏里面的动画就是一张张透明底的png以一定的顺序播放之后获得的连续图像</div>
             <br /> dnf这个游戏实际上就是一大堆png通过程序的安排在不同的地点组合播放形成画面
         </div>
-        <div class="textce">这是大部分2d游戏的成像机制，有很多人根据这样的原理，吐槽dnf就是一个“贴图游戏”</div>
+        <div class="textce">这是大部分2d游戏的成像机制，有很多人根据这样的原理，吐槽dnf就是一个&ldquo;贴图游戏&rdquo;</div>
         <div class="textce">实际上这个说法是错误的，包括3d在内的所有游戏都是所谓的贴图（texture）游戏</div>
         <br />
         <br />
@@ -113,7 +113,7 @@
         <br />
         <div class="textce"><strong>Draw Call</strong></div>
         <br />
-        <div class="textce">Draw Call，简称DC，顾名思义，就是“描绘请求”的意思</div>
+        <div class="textce">Draw Call，简称DC，顾名思义，就是&ldquo;描绘请求&rdquo;的意思</div>
         <div class="textce">
             DC是游戏利用cpu去调用gpu的渲染指令的一个过程，非常直观，cpu处理游戏的描绘的时候，意识到这里需要显卡去进行描绘，就会命令显卡去描绘这个地方，这样的一次请求发送就是称之为一次DC</div>
         <br />
@@ -126,7 +126,7 @@
         <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsyc5y6cc5j208a0bs757.jpg"><br />
         <div class="textce">dnf作为一个2d游戏，DC数在战斗时可以接近过千，是一个名副其实的高端游戏（实际上这个数量比大部分主机游戏还要凶残很多）</div>
         <div class="textce">
-            如果抱着2d游戏=落后的思想去看待游戏的话，这个思想本身就是落后的，其实可以把2d游戏的每一个贴图都看成一个3d多边形面，这样可以理解成dnf压根不吃显卡的多边形性能，也就是显卡的“质”，而是吃它的&quot;量&quot;，显存+显卡的运算速度
+            如果抱着2d游戏=落后的思想去看待游戏的话，这个思想本身就是落后的，其实可以把2d游戏的每一个贴图都看成一个3d多边形面，这样可以理解成dnf压根不吃显卡的多边形性能，也就是显卡的&ldquo;质&rdquo;，而是吃它的&quot;量&quot;，显存+显卡的运算速度
         </div>
         <div class="textce">很多人认为dnf吃显卡就是来自于这个理解，至于是不是真的吃，那就见仁见智</div>
         <div class="textce">这也是用垃圾板载显卡都能玩这游戏的原因</div>
@@ -187,7 +187,7 @@
         在渲染的时候实际上是把里面的独立帧单独抽出来渲染，例如地图上有十只哥布林，他们的动作是不可能协调一致的，即使有两只哥布林恰好处于相同帧数，实际上这堆哥布林在一帧里面也要提交至少9次的dc</div>
     <div class="textce">更不用说两个下面提到过的更加可怕的东西</div>
     <br />
-    <div class="textce">而Sprite Sheet就是解决这样的情况的一个手段了，把几十帧“封装”为1张图片，dc认这一张图片，对这个图片进行整体的渲染</div>
+    <div class="textce">而Sprite Sheet就是解决这样的情况的一个手段了，把几十帧&ldquo;封装&rdquo;为1张图片，dc认这一张图片，对这个图片进行整体的渲染</div>
     <div class="textce">
         而这十个哥布林用的实际上是同一个纹理（Texture）文件，地图上存在重复的哥布林的时候，只要他们是使用图表集分割的动画，就是共用连续的纹理，不需要分开十次dc，而是整合为1次</div>
     <br />
@@ -198,7 +198,7 @@
     </div>
     <br />
     <div class="textce">
-        原先的11次的dc变成了3次，上面提到了“连续”一词，那是因为鬼剑士夹在这堆哥布林中间，遮住鬼剑士的哥布林和被鬼剑士遮住的哥布林绘图顺序是有先后的，纹理在描绘鬼剑士的时候停止了连续，所以要先描绘了鬼剑士然后再描绘剩下的哥布林，造成了3次dc的情况
+        原先的11次的dc变成了3次，上面提到了&ldquo;连续&rdquo;一词，那是因为鬼剑士夹在这堆哥布林中间，遮住鬼剑士的哥布林和被鬼剑士遮住的哥布林绘图顺序是有先后的，纹理在描绘鬼剑士的时候停止了连续，所以要先描绘了鬼剑士然后再描绘剩下的哥布林，造成了3次dc的情况
     </div>
     <br />
     <div class="textce">当然上面提到的ui也可以用图表集封装为一张tex，让原先需要消耗3次dc的ui变成一次</div>
@@ -227,7 +227,7 @@
     </div>
     <div class="textce"><br /> Avatar来自于印度语，意思是化身
     </div>
-    <div class="textce">来到游戏里面，是指“纸娃娃系统”</div>
+    <div class="textce">来到游戏里面，是指&ldquo;纸娃娃系统&rdquo;</div>
     <div class="textce">所谓的纸娃娃其实就是时装系统，大部分网游为了骗钱，都是把角色设定为可以自由换装改变外形的</div>
     <div class="textce">纸娃娃系统就是为了实现这个换装系统的重要措施</div>
     <br />
@@ -301,7 +301,7 @@
     <div class="textce"><strong>混合模式和辉光</strong></div>
     <br />
     <div class="textce">混合模式是一个图像术语，指的是把一个图片作为底图，在上面铺上一个作为混合层的图片进行混合，两个图片的rgb指根据图像混合的公式进行计算，得到最终的效果</div>
-    <div class="textce">最常见的混合模式就是加法，也就是我们所说的“发光图层”</div>
+    <div class="textce">最常见的混合模式就是加法，也就是我们所说的&ldquo;发光图层&rdquo;</div>
     <div class="textce">加法的原理相当简单，就是把两个图的rgb的数值混合起来，得到最终rgb值</div>
     <br />
     <div class="textce">例子：鱿鱼站在草地上，作为一个底图</div>
@@ -358,7 +358,7 @@
     <div class="textce"><strong>粒子效果</strong></div>
     <br />
     <div class="textce">dnf里面也有粒子效果（Particle Effect）</div>
-    <div class="textce">不要看到粒子效果就觉得都是圆形的粒子，实际上粒子（Particle）的原意是“小碎块”</div>
+    <div class="textce">不要看到粒子效果就觉得都是圆形的粒子，实际上粒子（Particle）的原意是&ldquo;小碎块&rdquo;</div>
     <div class="textce">粒子效果是一个脚本文件，他定义了一个发射器，发射器是使用何种的方向和力度去发射粒子，发射器发射粒子的数量有多少，粒子的外形，还有粒子是否受重力影响等等</div>
     <br />
     <div class="textce"><img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsydds2av4g207n06a7wh.gif"><br />
@@ -436,11 +436,11 @@
     <div class="textce">120fps和60fps的确有完全不同的感受，这是很多人都能感受出来的</div>
     <br />
     <div class="textce">那么为什么动画片24帧就让我们感觉到足够流畅呢，而游戏连60帧都不够</div>
-    <div class="textce">这里就要谈到“动态模糊”这个概念了</div>
+    <div class="textce">这里就要谈到&ldquo;动态模糊&rdquo;这个概念了</div>
     <br />
     <div class="textce">动画本质上是快速的画面替换让人类的眼睛受到欺骗</div>
     <div class="textce">但是实际上人类的眼睛能识别的帧数是很高的，24帧一秒的fps对于人眼来说可以说肉眼都可以看到卡顿</div>
-    <div class="textce">动画之所以流畅的原因是因为动画并不是按照帧去存放视频的，而是以“时间段”的格式去存放视频</div>
+    <div class="textce">动画之所以流畅的原因是因为动画并不是按照帧去存放视频的，而是以&ldquo;时间段&rdquo;的格式去存放视频</div>
     <div class="textce">举个例子，第一帧的时候世清在这里，第二帧的时候世清来到了这里</div>
     <div class="textce">
         <img src="https://data.seicing.com/seicingdepot/fatcatpool/21/669bb82egy1fsydvyqcdoj207y05n769.jpg"><br />
@@ -481,7 +481,7 @@
     <div class="textce">以上就是dnf作为一个2d游戏的一些图像运作机制了，不知道各位经过了解之后会不会对2d游戏进行改观呢？</div>
     <div class="textce">2d游戏并不是落后的代名词，相反，高精度的2d游戏占据硬盘容量超过20G简直是正常不过了</div>
     <div class="textce">
-        2d游戏的执行比起3d游戏来说更卡也是很常见的，dnf为例，尽管本身优化垃圾，但是也侧面看出了一点很多东西是“极限”，而不是“不想做”</div>
+        2d游戏的执行比起3d游戏来说更卡也是很常见的，dnf为例，尽管本身优化垃圾，但是也侧面看出了一点很多东西是&ldquo;极限&rdquo;，而不是&ldquo;不想做&rdquo;</div>
     <div class="textce">实际上按现在dnf的情形来讲，已经很难取得突破了，所以说彻底的架构重组才是出路啊</div>
     <div class="textce">这期的内容就到这里结束了<br />
         <br />
