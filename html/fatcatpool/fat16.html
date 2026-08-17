@@ -71,7 +71,7 @@
     <div class="textce">
         dnf是一个非常强调浮空的2d游戏，在原本的x和y轴的基础上还添予了一个&quot;z轴&quot;，显得角色很像在一个三维的环境中战斗，所以有些人也因此把dnf称为3d游戏</div>
     <div class="textce">
-        但到底这个z轴到底是什么一回事，这个&ldquo;z轴&rdquo;真的是我们理解中的z轴吗？下面就以dnf的&ldquo;<strong>判定</strong>&rdquo;为主题对dnf的一些基本的运作原理进行讲解
+        但到底这个z轴到底是什么一回事，这个“z轴”真的是我们理解中的z轴吗？下面就以dnf的“<strong>判定</strong>”为主题对dnf的一些基本的运作原理进行讲解
     </div>
     <br />
     <br />
@@ -98,7 +98,7 @@
     <div class="textce"><img src="https://data.seicing.com/seicingdepot/fatcatpool/16/forum(4).png"><br />
     </div>
     <div class="textce">可以这样说，换句通俗点的说法，dnf里面使用了一些手段，保留了原来的X轴</div>
-    <div class="textce">然后把Y轴（左右）拆解成实际上并不成立的&ldquo;y轴&rdquo;（上下）和&ldquo;z轴&rdquo;（高低），这样三条轴就这样出来了</div>
+    <div class="textce">然后把Y轴（左右）拆解成实际上并不成立的“y轴”（上下）和“z轴”（高低），这样三条轴就这样出来了</div>
     <div class="textce"><img src="https://data.seicing.com/seicingdepot/fatcatpool/16/forum(5).png"><br />
     </div>
     <br />
@@ -151,14 +151,14 @@
     <div class="textce"><img src="https://data.seicing.com/seicingdepot/fatcatpool/16/forum(15).png"></div>
     <div class="textce">加入红色判定框的话，角色的攻击就会按照这个地面框所定义的位置进行判定</div>
     <div class="textce">敌人发射的剑气摸到了角色，但是红色的地面框并不在同一条x轴上，就算两个白框进行了碰撞，也无法产生判定</div>
-    <div class="textce">使用额外的判断条件来判定就是dnf里面的&ldquo;z轴&rdquo;的基础原理，必须要同时满足两种判定框的判定条件，才会反馈正确的碰撞判定</div>
+    <div class="textce">使用额外的判断条件来判定就是dnf里面的“z轴”的基础原理，必须要同时满足两种判定框的判定条件，才会反馈正确的碰撞判定</div>
     <br />
     <br />
     <div class="textce">使用这个方法模拟了z轴之后，接下来就是dnf里面最精髓的系统：浮空</div>
     <div class="textce">角色的浮空有两个最基本的数值：击退以及浮空，这两个值是角色在浮空时不断地进行变动的函数值，模拟出重力加速度这一个物理系统出来（dnf是没有物理引擎的）</div>
-    <div class="textce">浮空值就是角色确定地面判定后，离开地面的高度值，实际上，这个值就是所谓的&ldquo;z轴&rdquo;</div>
+    <div class="textce">浮空值就是角色确定地面判定后，离开地面的高度值，实际上，这个值就是所谓的“z轴”</div>
     <div class="textce">
-        角色浮空值为50的话，就是在z轴的位置以-50为开始了，这时候角色没有了-49到0这一段&ldquo;z轴&rdquo;上面的判断，也就是说角色&ldquo;离地&rdquo;了</div>
+        角色浮空值为50的话，就是在z轴的位置以-50为开始了，这时候角色没有了-49到0这一段“z轴”上面的判断，也就是说角色“离地”了</div>
     <div class="textce"><img src="https://data.seicing.com/seicingdepot/fatcatpool/16/forum(16).png"></div>
     <br />
     <div class="textce">角色原地跳跃，y轴进行了50个单位的真位移，这时候角色的状态是这样的：</div>
