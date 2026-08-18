@@ -205,16 +205,16 @@
         测试用对话4
     </button>
 </div>
-
-<button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
-<button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
-
-<button class="accBtn" onclick="toggleAcc('attach', this)">attach(AT)</button>
-<button class="accBtn" onclick="toggleAcc('special', this)">special(SP)</button>
-<button class="accBtn" onclick="toggleAcc('sweat', this)">sweat(SW)</button>
-<button class="accBtn" onclick="toggleAcc('red_face', this)">red_face(RF)</button>
-
-<hr>
+<div style="display: none;">
+    <button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
+    <button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
+</div>
+<div>
+    <button class="accBtn" onclick="toggleAcc('attach', this)">attach(AT)</button>
+    <button class="accBtn" onclick="toggleAcc('special', this)">special(SP)</button>
+    <button class="accBtn" onclick="toggleAcc('sweat', this)">sweat(SW)</button>
+    <button class="accBtn" onclick="toggleAcc('red_face', this)">red_face(RF)</button>
+</div>
 <div id="faces"></div>
 <br>
 <div id="lavivagnar"></div>
