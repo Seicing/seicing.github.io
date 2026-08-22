@@ -3549,6 +3549,12 @@ function HeavyCamelRider() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
 
+function TrebuchetCommon() {
+    document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Wu2").classList.add("aoeTechIconOff");
+}
+
 function BombardCannon() {
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Chinese2").classList.add("aoeTechIconOff");
@@ -4006,6 +4012,7 @@ const AOE2_TECH_NAME_MAP = {
     "游侠": "Paladin",
     "骆驼兵": "CamelRider",
     "重装骆驼兵": "HeavyCamelRider",
+    "巨型投石机": "TrebuchetCommon",
 
     "炮舰": "CannonGalleon",
     "精锐炮舰": "EliteCannonGalleon",
