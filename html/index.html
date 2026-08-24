@@ -130,7 +130,7 @@ B站空间：<a class="special-text-link2" href="https://space.bilibili.com/6771
         <img src="https://seicing.com/res/131414.png" alt="">
     </div>
 </div><br>
-<div style="width:720px;">
+<div id="search-wrapper" style="width:800px; clear:both; margin-bottom: 50px;">
     <div id="search"></div>
 </div>
 
@@ -250,6 +250,50 @@ B站空间：<a class="special-text-link2" href="https://space.bilibili.com/6771
 </body>
 
 <script src="https://seicing.com/_pagefind/pagefind-ui.js"></script>
+<style>
+    #search-wrapper {
+        width: 800px !important;
+        display: block !important;
+        box-sizing: border-box !important;
+    }
+
+    .pagefind-ui {
+        width: 100% !important;
+        font-family: inherit !important;
+    }
+
+    .pagefind-ui__form {
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    .pagefind-ui__search-input {
+        width: 100% !important;
+        height: 42px !important;
+        border: 1px solid #857E6E !important;
+        background-color: transparent !important;
+        color: inherit !important;
+        padding: 0 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    .pagefind-ui__drawer {
+        position: static !important;
+        width: 100% !important;
+        margin-top: 15px !important;
+    }
+
+    .pagefind-ui__result {
+        border-top: 1px dashed #d0c9b7 !important;
+        padding: 15px 0 !important;
+    }
+
+    .pagefind-ui__result-link {
+        color: #857E6E !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+</style>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({
