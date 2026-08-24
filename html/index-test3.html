@@ -41,7 +41,7 @@
         width: 100%;
         max-width: 492px;
         min-height: 120px;
-        background-color: #202020;
+        background-color: var(--labibanadialog);
         border-radius: 10px;
         padding: 10px 10px;
         box-sizing: border-box;
@@ -432,8 +432,8 @@
         smile: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_smile"],
         serene: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_serene"],
         sad: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_sad"],
-        depress: ["eye_depress1", "eye_default2", "eye_default3", "brow_default", "mouth_depress"],
-        sinister: ["eye_depress1", "eye_default2", "eye_default3", "brow_default", "mouth_sinister"],
+        depress: ["eye_depress1", "eye_depress2", "eye_default3", "brow_default", "mouth_depress"],
+        sinister: ["eye_depress1", "eye_depress2", "eye_default3", "brow_default", "mouth_sinister"],
         surprise: ["eye_surprise1", "eye_default2", "eye_default3", "brow_default", "mouth_surprise"],
         side: ["eye_side1", "eye_side2", "eye_default3", "brow_default", "mouth_serene"],
         shy: ["eye_side1", "eye_side2", "eye_default3", "brow_default", "mouth_smile"],
@@ -445,7 +445,7 @@
         crysurprise: ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_surprise"],
         cryhappy: ["eye_cry1", "eye_cry2", "eye_cry3", "brow_sad", "mouth_happy"],
         fear: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_panic"],
-        endure: ["eye_depress1", "eye_default2", "eye_default3", "brow_sad", "mouth_endure"],
+        endure: ["eye_depress1", "eye_depress2", "eye_default3", "brow_sad", "mouth_endure"],
         uncomfortable: ["eye_default1", "eye_default2", "eye_default3", "brow_sad", "mouth_cry"],
         angry: ["eye_surprise1", "eye_default2", "eye_default3", "brow_angry", "mouth_angry"],
         excited: ["eye_surprise1", "eye_default2", "eye_default3", "brow_angry", "mouth_excited"],
@@ -1036,116 +1036,141 @@
         }
     });
 
-    /* ========= 加载并改造 lavivagnar.html ========= */
+
+    /* ========= 增强版：带 DOM 监听与时序保底的 lavivagnar 注入 ========= */
+    let lavivagnarRawHtml = ""; // 全局缓存 HTML 字符串
+
+    // 构建列表 DOM 的核心函数
+    function buildAvatarListDOM(html, isSidebar = false) {
+        const temp = document.createElement("div");
+        temp.innerHTML = html;
+
+        const list = temp.querySelector("#listlavivagnar");
+        if (!list) return null;
+
+        list.style.float = "left";
+        list.style.width = "100%";
+        if (isSidebar) {
+            list.classList.add("sidebar-lavivagnar");
+        }
+
+        // 解封特殊形态
+        const specialForms = list.querySelectorAll('#specialForms, div[style*="display: none"], div[style*="display:none"]');
+        specialForms.forEach(el => el.style.display = "block");
+
+        // 清理多余标签
+        const bigfonter = list.querySelector("#bigfonter");
+        const darkmoder = list.querySelector("#darkmoder");
+        if (bigfonter) bigfonter.remove();
+        if (darkmoder) darkmoder.remove();
+
+        list.querySelectorAll('a.special-text-link').forEach(a => a.remove());
+        list.querySelectorAll("b").forEach(b => {
+            if (!b.textContent.trim() && !b.querySelector("img")) b.remove();
+        });
+        list.querySelectorAll("br").forEach(br => br.remove());
+
+        const walker = document.createTreeWalker(list, NodeFilter.SHOW_TEXT, null, false);
+        const emptyTextNodes = [];
+        while (walker.nextNode()) {
+            if (!walker.currentNode.textContent.trim()) emptyTextNodes.push(walker.currentNode);
+        }
+        emptyTextNodes.forEach(node => node.remove());
+
+        // 转换 <a> 为 <span>
+        list.querySelectorAll("a").forEach(a => {
+            const replacement = document.createElement("span");
+            replacement.className = "avatar-wrap";
+            for (const attr of a.attributes) {
+                if (attr.name.toLowerCase() !== "href") {
+                    replacement.setAttribute(attr.name, attr.value);
+                }
+            }
+            while (a.firstChild) replacement.appendChild(a.firstChild);
+            a.replaceWith(replacement);
+        });
+
+        // 为头像标记 data 属性与角标
+        list.querySelectorAll("img").forEach(img => {
+            img.style.cursor = "pointer";
+            const imgSrc = img.getAttribute("src") || "";
+            const cleanSrc = imgSrc.split("?")[0].split("#")[0];
+            const fileName = cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
+            const name = fileName.replace(/\.[^.]+$/, "");
+
+            if (!name) return;
+            img.dataset.charId = name;
+
+            if (fullyAnimatedList.includes(name)) {
+                const badge = document.createElement("img");
+                badge.src = BADGE_IMG_SRC;
+                badge.className = "avatar-badge";
+                if (img.parentNode) img.parentNode.appendChild(badge);
+            }
+        });
+
+        return list;
+    }
+
+    // 执行注入到所有目标容器（防重复）
+    function performAllInjections() {
+        if (!lavivagnarRawHtml) return;
+
+        // 1. 注入页面底部主容器
+        const mainContainer = document.getElementById("lavivagnar");
+        if (mainContainer && !mainContainer.querySelector("#listlavivagnar")) {
+            const mainList = buildAvatarListDOM(lavivagnarRawHtml, false);
+            if (mainList) mainContainer.replaceChildren(mainList);
+        }
+
+        // 2. 注入侧边栏与手机抽屉
+        const sidebarTargets = [
+            document.getElementById("sidebarLavivagnar"),
+            document.getElementById("sidebar"),
+            document.querySelector(".sidebar"),
+            document.querySelector(".mobile-drawer-container")
+        ].filter(Boolean);
+
+        sidebarTargets.forEach(container => {
+            // 如果该容器内还没有头像列表，执行注入
+            if (!container.querySelector(".sidebar-lavivagnar")) {
+                const sidebarList = buildAvatarListDOM(lavivagnarRawHtml, true);
+                if (sidebarList) {
+                    container.appendChild(sidebarList);
+                }
+            }
+        });
+    }
+
     function loadLavivagnar() {
         fetch('https://seicing.com/js/list/lavivagnar.html')
             .then(response => {
-                if (!response.ok) {
-                    throw new Error(`lavivagnar.html 加载失败: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`lavivagnar.html 加载失败: ${response.status}`);
                 return response.text();
             })
             .then(html => {
-                function buildAvatarList(isSidebar = false) {
-                    const temp = document.createElement("div");
-                    temp.innerHTML = html;
+                lavivagnarRawHtml = html;
 
-                    const list = temp.querySelector("#listlavivagnar");
-                    if (!list) return null;
+                // 立即尝试注入
+                performAllInjections();
 
-                    list.style.float = "left";
-                    list.style.width = "100%";
-                    if (isSidebar) {
-                        list.classList.add("sidebar-lavivagnar");
-                    }
+                // 🟢 保底机制 1：延迟 500ms、1500ms、3000ms 多次检查补刀（应对慢速加载的侧边栏模版）
+                setTimeout(performAllInjections, 500);
+                setTimeout(performAllInjections, 1500);
+                setTimeout(performAllInjections, 3000);
 
-                    // 解封特殊形态
-                    const specialForms = list.querySelectorAll('#specialForms, div[style*="display: none"], div[style*="display:none"]');
-                    specialForms.forEach(el => el.style.display = "block");
-
-                    // 清理多余元素
-                    const bigfonter = list.querySelector("#bigfonter");
-                    const darkmoder = list.querySelector("#darkmoder");
-                    if (bigfonter) bigfonter.remove();
-                    if (darkmoder) darkmoder.remove();
-
-                    list.querySelectorAll('a.special-text-link').forEach(a => a.remove());
-                    list.querySelectorAll("b").forEach(b => {
-                        if (!b.textContent.trim() && !b.querySelector("img")) b.remove();
-                    });
-                    list.querySelectorAll("br").forEach(br => br.remove());
-
-                    const walker = document.createTreeWalker(list, NodeFilter.SHOW_TEXT, null, false);
-                    const emptyTextNodes = [];
-                    while (walker.nextNode()) {
-                        if (!walker.currentNode.textContent.trim()) emptyTextNodes.push(walker.currentNode);
-                    }
-                    emptyTextNodes.forEach(node => node.remove());
-
-                    // 转换 <a> 为 <span>
-                    list.querySelectorAll("a").forEach(a => {
-                        const replacement = document.createElement("span");
-                        replacement.className = "avatar-wrap";
-                        for (const attr of a.attributes) {
-                            if (attr.name.toLowerCase() !== "href") {
-                                replacement.setAttribute(attr.name, attr.value);
-                            }
-                        }
-                        while (a.firstChild) replacement.appendChild(a.firstChild);
-                        a.replaceWith(replacement);
-                    });
-
-                    // 为头像打上 data 标识并插入角标
-                    list.querySelectorAll("img").forEach(img => {
-                        img.style.cursor = "pointer";
-                        const imgSrc = img.getAttribute("src") || "";
-                        const cleanSrc = imgSrc.split("?")[0].split("#")[0];
-                        const fileName = cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
-                        const name = fileName.replace(/\.[^.]+$/, "");
-
-                        if (!name) return;
-
-                        // 🟢 关键：标记角色 ID，供全局事件委托拾取
-                        img.dataset.charId = name;
-
-                        if (fullyAnimatedList.includes(name)) {
-                            const badge = document.createElement("img");
-                            badge.src = BADGE_IMG_SRC;
-                            badge.className = "avatar-badge";
-                            if (img.parentNode) img.parentNode.appendChild(badge);
-                        }
-                    });
-
-                    return list;
-                }
-
-                // 1. 注入底部常规容器
-                const mainContainer = document.getElementById("lavivagnar");
-                if (mainContainer) {
-                    const mainList = buildAvatarList(false);
-                    if (mainList) mainContainer.replaceChildren(mainList);
-                }
-
-                // 2. 注入侧边栏容器
-                const sidebarContainer = document.getElementById("sidebarLavivagnar") || document.getElementById("sidebar") || document.querySelector(".sidebar");
-                if (sidebarContainer) {
-                    const sidebarList = buildAvatarList(true);
-                    if (sidebarList) {
-                        sidebarContainer.appendChild(sidebarList);
-                    }
-                }
-
-                // 3. （可选）如果手机抽屉容器已经存在于页面上，也直接注入一份
-                const mobileDrawer = document.querySelector(".mobile-drawer-container") || document.getElementById("mobile-drawer-container");
-                if (mobileDrawer && !sidebarContainer) {
-                    const drawerList = buildAvatarList(true);
-                    if (drawerList) mobileDrawer.appendChild(drawerList);
-                }
+                // 🟢 保底机制 2：DOM 变动监听器（一旦手机抽屉被创建或重写，立刻自动注入）
+                const observer = new MutationObserver(() => {
+                    performAllInjections();
+                });
+                observer.observe(document.body, { childList: true, subtree: true });
             })
             .catch(error => {
                 console.error("加载 lavivagnar 失败:", error);
             });
     }
+
+
 
     const savedCharId = getCookie("saved_char_id");
     const charInput = document.getElementById("charId");
