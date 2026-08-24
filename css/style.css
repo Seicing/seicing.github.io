@@ -888,6 +888,16 @@ a {
     color: #1c1917 !important;
 }
 
+/* 修复：点击/激活输入框时，消除自带的奇怪黑框、轮廓线和背景色 */
+.pagefind-ui__search-input:focus,
+.pagefind-ui__search-input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-color: var(--special-link-color) !important;
+    /* 聚焦时边框稍微变亮高亮 */
+}
+
 
 
 
