@@ -10,6 +10,7 @@
     <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
 <title>肥猫的秘密基地</title>
 <link href="https://seicing.com/css/故事.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/board.js?v=final_fix"></script>
@@ -119,9 +120,23 @@ B站空间：<a class="special-text-link2" href="https://space.bilibili.com/6771
 <s>补充现有已实装剧情角色对话立绘的眨眼、说话动画<br></s>
 长生天 余模型<br>
 女帝 余模型<br>
+<br><br><br>
 
+
+<!-- =============== 新增：站内搜索模块 =============== -->
+<div style="position:relative;">
+    <span style="font-family:宋体;color:#857E6E;font-size:24px"><b>站内搜索</b></span>
+    <div style="position:absolute; z-index:2; top:20px">
+        <img src="https://seicing.com/res/131414.png" alt="">
+    </div>
+</div><br>
+<div style="width:720px;">
+    <div id="search"></div>
+</div>
 
 <br><br><br>
+<!-- ================================================= -->
+
 
 <div style="position:relative;">
     <span id="lauyinban" style="font-family:宋体;color:#d0c9b7;font-size:24px"><b>留言板</b></span>
@@ -234,5 +249,24 @@ B站空间：<a class="special-text-link2" href="https://space.bilibili.com/6771
     </div>
 </body>
 
+<script src="/_pagefind/pagefind-ui.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            showImages: false,
+            translations: {
+                placeholder: "站内关键词搜索……",
+                clear_search: "清除",
+                load_more: "加载更多结果",
+                zero_results: "未找到关于 [SEARCH_TERM] 的内容",
+                many_results: "找到 [COUNT] 条相关结果",
+                one_result: "找到 [COUNT] 条相关结果",
+                searching: "正在搜索 [SEARCH_TERM]..."
+            }
+        });
+    });
+</script>
 
 </html>
