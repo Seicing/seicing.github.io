@@ -175,10 +175,6 @@
         z-index: 10;
     }
 
-    #listlavivagnar {
-        width: 220px;
-    }
-
     .sidebar-lavivagnar {
         width: 220px;
         display: block;
@@ -704,7 +700,12 @@
 
     /* ========= 加载角色 ========= */
     function loadChar() {
-        const id = document.getElementById("charId").value.trim();
+        const charInput = document.getElementById("charId");
+        const id = charInput.value.trim();
+        if (!id) return;
+
+        setCookie("saved_char_id", id, 30);
+
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
 
         // 更新金色角色名字
@@ -1013,6 +1014,8 @@
                     const list = temp.querySelector("#listlavivagnar");
                     if (!list) return null;
 
+                    list.style.float = "left";
+                    list.style.width = "220px";
                     if (isSidebar) {
                         list.classList.add("sidebar-lavivagnar");
                     }
@@ -1103,6 +1106,12 @@
             .catch(error => {
                 console.error("加载 lavivagnar 失败:", error);
             });
+    }
+
+    const savedCharId = getCookie("saved_char_id");
+    const charInput = document.getElementById("charId");
+    if (savedCharId && charInput) {
+        charInput.value = savedCharId;
     }
 
     // 初始化运行
