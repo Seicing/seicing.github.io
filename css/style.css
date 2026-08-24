@@ -840,7 +840,7 @@ a {
 .pagefind-ui__result-link {
     color: var(--special-link-color) !important;
     font-weight: bold !important;
-    font-size: 1.2em !important;
+    font-size: 1.0em !important;
 }
 
 /* 5. 修复：正文摘要文字颜色变亮，清晰可读 */
