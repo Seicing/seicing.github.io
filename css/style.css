@@ -815,6 +815,7 @@ a {
     cursor: pointer !important;
     padding: 3px 8px !important;
     line-height: 1 !important;
+    font-size: 1.0em;
 }
 
 .pagefind-ui__drawer {
@@ -833,12 +834,13 @@ a {
 .pagefind-ui__result {
     border-top: 1px dashed #d0c9b7 !important;
     padding: 15px 0 !important;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 .pagefind-ui__result-link {
     color: var(--special-link-color) !important;
     font-weight: bold !important;
+    font-size: 1.2em;
 }
 
 /* 5. 修复：正文摘要文字颜色变亮，清晰可读 */
@@ -862,6 +864,7 @@ a {
     font-weight: bold !important;
     padding: 0 2px !important;
     border-radius: 2px !important;
+    font-size: 1.0em;
 }
 
 /* 6. 修复：“加载更多结果”按钮样式（暗色透明风） */
@@ -876,6 +879,7 @@ a {
     cursor: pointer !important;
     font-weight: bold !important;
     transition: all 0.2s ease !important;
+    font-size: 1.0em;
 }
 
 /* 鼠标悬停在“加载更多”按钮上时的反色高亮 */
