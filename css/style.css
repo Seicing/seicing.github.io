@@ -833,6 +833,7 @@ a {
 .pagefind-ui__result {
     border-top: 1px dashed #d0c9b7 !important;
     padding: 15px 0 !important;
+    font-size: 1.2em;
 }
 
 .pagefind-ui__result-link {
@@ -851,6 +852,7 @@ a {
     text-overflow: ellipsis !important;
     line-height: 1.6 !important;
     margin-top: 6px !important;
+    font-size: 1.0em;
 }
 
 /* 高亮黄色的关键词 */
