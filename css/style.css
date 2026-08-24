@@ -764,6 +764,9 @@ a {
     box-sizing: border-box !important;
 }
 
+
+
+
 .pagefind-ui {
     width: 100% !important;
     font-family: inherit !important;
@@ -774,19 +777,54 @@ a {
     position: relative !important;
 }
 
+/* 左侧放大镜图标：半透明自适应，夜间不突兀 */
+.pagefind-ui__form::before {
+    opacity: 0.6 !important;
+    filter: invert(0.8) !important;
+}
+
+/* 输入框：留出左右空隙，避免遮挡图标和清除按钮 */
 .pagefind-ui__search-input {
     width: 100% !important;
     height: 42px !important;
     border: 1px solid var(--text-primary) !important;
     background-color: transparent !important;
     color: var(--text-primary) !important;
+    padding-left: 45px !important;
+    padding-right: 45px !important;
     box-sizing: border-box !important;
+}
+
+/* 占位提示符：“站内关键词搜索……” */
+.pagefind-ui__search-input::placeholder {
+    color: var(--text-primary) !important;
+    opacity: 0.6 !important;
+}
+
+/* 右侧“清除”按钮：透明背景，垂直居中对齐 */
+.pagefind-ui__search-clear {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--text-primary) !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    padding: 3px 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    right: 10px !important;
 }
 
 .pagefind-ui__drawer {
     position: static !important;
     width: 100% !important;
     margin-top: 15px !important;
+}
+
+/* “找到 X 条结果” 或 “未找到关于 XXX 的内容” 提示信息 */
+.pagefind-ui__message {
+    color: var(--text-primary) !important;
+    font-weight: bold !important;
+    margin: 15px 0 !important;
 }
 
 .pagefind-ui__result {
@@ -809,6 +847,7 @@ a {
     line-height: 1.6 !important;
     margin-top: 6px !important;
 }
+
 
 
 /* Menu */
