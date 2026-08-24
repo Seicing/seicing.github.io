@@ -24,13 +24,14 @@
         align-items: flex-end;
         margin-top: 10px;
         margin-bottom: 25px;
+        min-height: 190px;
     }
 
     /* 仿游戏黑底圆角对话框 */
     .game-dialogue-box {
         position: relative;
         width: 492px;
-        min-height: 190px;
+        min-height: 120px;
         background-color: #202020;
         border-radius: 10px;
         padding: 10px 10px;
@@ -97,9 +98,17 @@
         mask-image: linear-gradient(to right, transparent 0px, black 20px, black 100%);
     }
 
+    /* 让立绘所有图层的右下角带有 10px 圆角，贴合对话框 */
+    .stage img {
+        width: 150px;
+        display: block;
+        border-bottom-right-radius: 10px;
+        /* 👈 关键：仅裁切右下角 */
+    }
+
     .layer {
         position: absolute;
-        bottom: 1;
+        bottom: 0;
         left: 0;
     }
 
