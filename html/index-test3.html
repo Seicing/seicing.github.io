@@ -22,22 +22,20 @@
         position: relative;
         display: inline-flex;
         align-items: flex-end;
-        margin-top: 130px;
-        /* 留出立绘上半身探出对话框的高度 */
+        margin-top: 145px;
         margin-bottom: 25px;
     }
 
     /* 仿游戏黑底圆角对话框 */
     .game-dialogue-box {
         position: relative;
-        width: 580px;
-        min-height: 105px;
+        width: 492px;
+        min-height: 120px;
         background-color: #202020;
-        border-radius: 18px;
-        padding: 12px 18px;
+        border-radius: 10px;
+        padding: 10px 10px;
         box-sizing: border-box;
         display: flex;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         z-index: 1;
     }
 
@@ -80,19 +78,18 @@
 
     /* 右侧为立绘占位空间 */
     .character-placeholder {
-        width: 135px;
+        width: 140px;
         flex-shrink: 0;
     }
 
-    /* 立绘图层容器：绝对定位贴合在右侧，突破向上突出 */
+    /* 立绘图层容器：贴住右边和下边，仅 1px 间距 */
     .stage {
         position: absolute;
-        right: 10px;
-        bottom: 0px;
+        right: 1px;
+        bottom: 1px;
         width: 150px;
         height: 225px;
         pointer-events: none;
-        /* 防止遮挡点击 */
         z-index: 10;
     }
 
@@ -107,14 +104,8 @@
         display: block;
     }
 
-    /* 自定义对话面板 */
-    .custom-input-panel {
-        margin-bottom: 15px;
-        max-width: 580px;
-    }
-
-    .custom-input-panel textarea {
-        width: 100%;
+    #customDialogueInput {
+        width: 492px;
         height: 60px;
         padding: 8px;
         box-sizing: border-box;
@@ -122,20 +113,8 @@
         border: 1px solid #999;
         font-size: 14px;
         resize: vertical;
-    }
-
-    .play-btn {
-        background-color: #2e7d32;
-        color: white;
-        font-weight: bold;
-        border: 1px solid #1b5e20;
-        border-radius: 4px;
-        padding: 6px 14px;
-        margin-top: 5px;
-    }
-
-    .play-btn:hover {
-        background-color: #388e3c;
+        margin-bottom: 10px;
+        display: block;
     }
 
     button {
@@ -217,24 +196,19 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div style="margin-bottom: 10px;">
-    <input id="charId" value="YoEmpireFlower">
-    <button onclick="loadChar()">加载</button>
-    <span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
-</div>
-
+                        <div class="entry">
 <!-- 游戏风格对话框与立绘展示区 -->
 <div class="dialogue-stage-wrapper">
     <div class="game-dialogue-box">
         <div class="dialogue-content-area">
             <div id="speakerName" class="speaker-title">余</div>
             <div class="speaker-divider"></div>
-            <div id="dialogueText" class="dialogue-text">孱仔是这样的</div>
+            <div id="dialogueText" class="dialogue-text">点击下方控制面板进行对话模拟控制，点击最下方头像列表快速加载头像id</div>
         </div>
         <div class="character-placeholder"></div>
     </div>
 
-    <!-- 立绘层：不再限制在框内，突破上边界完全展示 -->
+    <!-- 立绘层：贴合右侧与底部 1px 间距 -->
     <div class="stage" id="stageContainer">
         <div class="layer" style="z-index:2"><img id="base"></div>
         <div class="layer" style="z-index:4"><img id="eye"></div>
@@ -248,14 +222,13 @@
     </div>
 </div>
 
-<!-- 自定义对话输入区 (Cookie 记录) -->
-<div class="custom-input-panel">
-    <textarea id="customDialogueInput" placeholder="输入自定义对话内容，内容会自动保存在Cookie中..."></textarea>
-    <br>
-    <button onclick="playCustomDialogue()" class="play-btn">▶ 播放自定义对话</button>
+<!-- 状态控制区 -->
+<div style="margin-bottom: 10px;">
+    <input id="charId" value="YoEmpireFlower">
+    <button onclick="loadChar()">加载</button>
+    <span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
 </div>
 
-<!-- 状态控制区 -->
 <div style="margin-bottom: 10px;">
     <button id="talkBtn" onclick="toggleTalk(this)">说话(talk)</button>
     <button id="closeEyeBtn" onclick="toggleCloseEyes(this)">闭眼(CE)</button>
@@ -267,14 +240,19 @@
     <button onclick="startDialogue('要说更长的对话吗？那就……拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~')">
         测试用对话2
     </button>
-    <button onclick="startDialogue('孱仔是这样的')">
+    <button onclick="startDialogue('今天过得如何？')">
         测试用对话3
     </button>
-    <button
-        onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。\n感电状态：在此状态下，目标会变得脆弱，余可以对目标发动掠夺。发动掠夺后，当前场地上所有感电状态将会消失，并根据触发感电的数量提高电量。')">
+    <button onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。')">
         测试用对话4
     </button>
+    <button onclick="playCustomDialogue()">
+        自定义对话
+    </button>
 </div>
+
+<textarea id="customDialogueInput" placeholder="请输入自定义对话内容。"></textarea>
+
 <div style="display: none;">
     <button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
     <button class="talkModeBtn" onclick="setTalkMode(2,this)">专用帧序列动画</button>
@@ -323,6 +301,43 @@
             const parts = v.split('=');
             return parts[0] === name ? decodeURIComponent(parts[1]) : r;
         }, '');
+    }
+
+    /* ========= 角色名字映射表 ========= */
+    const charNameMap = {};
+
+    function updateSpeakerName(id) {
+        id = id || document.getElementById("charId").value.trim();
+        const speakerNameEl = document.getElementById("speakerName");
+        if (!speakerNameEl) return;
+        if (charNameMap[id]) {
+            speakerNameEl.textContent = charNameMap[id];
+        } else {
+            speakerNameEl.textContent = "余"; // 查不到时默认回退
+        }
+    }
+
+    async function loadCharNameMap() {
+        try {
+            const [res1, res2] = await Promise.allSettled([
+                fetch('https://seicing.com/js/dialogid.json').then(r => r.ok ? r.json() : []),
+                fetch('https://seicing.com/js/dialogid2.json').then(r => r.ok ? r.json() : [])
+            ]);
+
+            const list1 = res1.status === 'fulfilled' && Array.isArray(res1.value) ? res1.value : [];
+            const list2 = res2.status === 'fulfilled' && Array.isArray(res2.value) ? res2.value : [];
+
+            [...list1, ...list2].forEach(item => {
+                if (item && item.inner) {
+                    charNameMap[item.inner] = item.outer || item.inner;
+                }
+            });
+
+            // 映射表加载完成后立即更新一次当前角色名
+            updateSpeakerName();
+        } catch (err) {
+            console.error("加载名字对照表失败:", err);
+        }
     }
 
     /* ========= 表情表 ========= */
@@ -510,8 +525,11 @@
 
     /* ========= 加载角色 ========= */
     function loadChar() {
-        const id = document.getElementById("charId").value;
+        const id = document.getElementById("charId").value.trim();
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
+
+        // 更新金色角色名字
+        updateSpeakerName(id);
 
         if (talkTimer) clearInterval(talkTimer);
         if (dialogueTimer) clearTimeout(dialogueTimer);
@@ -887,6 +905,8 @@
             });
     }
 
+    // 初始化运行
+    loadCharNameMap();
     loadLavivagnar();
     loadChar();
 </script>
