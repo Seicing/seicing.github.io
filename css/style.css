@@ -777,9 +777,9 @@ a {
 .pagefind-ui__search-input {
     width: 100% !important;
     height: 42px !important;
-    border: 1px solid var(--special-link-color) !important;
+    border: 1px solid var(--text-primary) !important;
     background-color: transparent !important;
-    color: inherit !important;
+    color: var(--text-primary) !important;
     box-sizing: border-box !important;
 }
 
