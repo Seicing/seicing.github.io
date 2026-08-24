@@ -14,7 +14,7 @@
 <script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
 <style>
     #back-to-top-button {
-        line-height: 40px !important;
+        line-height: 0px !important;
     }
 
     body {
@@ -178,6 +178,24 @@
     .sidebar-lavivagnar {
         width: 220px;
         display: block;
+    }
+
+    /* 🟢 仅在电脑模式（宽屏）下向左偏移 10px */
+    @media screen and (min-width: 769px) {
+        .sidebar-lavivagnar {
+            margin-left: -10px;
+        }
+    }
+
+    /* 🟢 手机模式 / 手机抽屉容器内：保持原位不偏移 */
+    @media screen and (max-width: 768px) {
+        .sidebar-lavivagnar {
+            margin-left: 0;
+        }
+    }
+
+    .mobile-drawer-container .sidebar-lavivagnar {
+        margin-left: 0 !important;
     }
 
     .sidebar-lavivagnar img {
