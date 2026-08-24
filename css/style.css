@@ -758,6 +758,47 @@ a {
     color: #000000;
 }
 
+#search-wrapper {
+    width: 800px !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+.pagefind-ui {
+    width: 100% !important;
+    font-family: inherit !important;
+}
+
+.pagefind-ui__form {
+    width: 100% !important;
+    position: relative !important;
+}
+
+.pagefind-ui__search-input {
+    width: 100% !important;
+    height: 42px !important;
+    border: 1px solid #857E6E !important;
+    background-color: transparent !important;
+    color: inherit !important;
+    box-sizing: border-box !important;
+}
+
+.pagefind-ui__drawer {
+    position: static !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+}
+
+.pagefind-ui__result {
+    border-top: 1px dashed #d0c9b7 !important;
+    padding: 15px 0 !important;
+}
+
+.pagefind-ui__result-link {
+    color: #857E6E !important;
+    font-weight: bold !important;
+}
+
 
 /* Menu */
 #menu {
