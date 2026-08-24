@@ -802,7 +802,7 @@ a {
 .pagefind-ui__result-excerpt {
     display: -webkit-box !important;
     -webkit-line-clamp: 3 !important;
-    /* 限制显示 3 行，如果想更短可改成 2 */
+    line-clamp: 3 !important;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
