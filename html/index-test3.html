@@ -430,69 +430,54 @@
         return charPath + name + ".png";
     }
 
-    /* ========= 预加载函数 ========= */
+    /* ========= 升级版：带自动重试的预加载 ========= */
     function preloadImages(callback) {
         const allImages = new Set();
         const failedImages = new Set();
 
         allImages.add("base");
-
-        Object.values(faces).forEach(arr => {
-            arr.forEach(imgName => allImages.add(imgName));
-        });
-
+        Object.values(faces).forEach(arr => arr.forEach(imgName => allImages.add(imgName)));
         if (typeof talkRandomFrames !== 'undefined') talkRandomFrames.forEach(n => allImages.add(n));
         if (typeof talkSeqFrames !== 'undefined') talkSeqFrames.forEach(n => allImages.add(n));
-
         Object.keys(acc).forEach(k => allImages.add(k));
 
         const total = allImages.size;
-        let loadedCount = 0;
+        let completedCount = 0;
         const statusEl = document.getElementById("loadStatus");
-        const btn = document.getElementById("loadBtn");
+        const MAX_RETRY = 2; // 失败最多重试2次
 
-        if (btn) btn.disabled = true;
-
-        if (total === 0) {
-            if (callback) callback(failedImages);
-            return;
-        }
-
-        allImages.forEach(imgName => {
+        function loadOne(imgName, retryCount) {
             const img = new Image();
             img.onload = () => {
-                loadedCount++;
-                updateProgress();
+                completedCount++;
+                onProgress();
             };
             img.onerror = () => {
-                failedImages.add(imgName);
-                loadedCount++;
-                updateProgress();
+                if (retryCount < MAX_RETRY) {
+                    // 延迟 300ms 后自动重试
+                    setTimeout(() => loadOne(imgName, retryCount + 1), 300 * (retryCount + 1));
+                } else {
+                    failedImages.add(imgName); // 最终重试失败才记为缺失
+                    completedCount++;
+                    onProgress();
+                }
             };
             img.src = src(imgName);
-        });
+        }
 
-        function updateProgress() {
-            if (statusEl) statusEl.textContent = `资源预加载: ${loadedCount}/${total}`;
-
-            if (loadedCount >= total) {
+        function onProgress() {
+            if (statusEl) statusEl.textContent = `资源加载: ${completedCount}/${total}`;
+            if (completedCount >= total) {
                 if (statusEl) {
-                    if (failedImages.size > 0) {
-                        statusEl.textContent = `加载完成，${failedImages.size}个资源缺失`;
-                        statusEl.style.color = "red";
-                    } else {
-                        statusEl.textContent = "加载完成！";
-                        statusEl.style.color = "blue";
-                    }
+                    statusEl.textContent = failedImages.size > 0 ? `完成，${failedImages.size}个资源缺失` : "加载完成！";
+                    statusEl.style.color = failedImages.size > 0 ? "red" : "blue";
                     setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
-                }
-                if (btn) {
-                    btn.disabled = false;
-                    btn.textContent = "加载";
                 }
                 if (callback) callback(failedImages);
             }
         }
+
+        allImages.forEach(imgName => loadOne(imgName, 0));
     }
 
     /* ========= 检查并禁用损坏按钮 ========= */
