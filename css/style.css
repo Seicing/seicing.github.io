@@ -821,7 +821,7 @@ a {
 .pagefind-ui__drawer {
     position: static !important;
     width: 100% !important;
-    margin-top: 15px !important;
+    display: block !important;
 }
 
 /* “找到 X 条结果” 或 “未找到关于 XXX 的内容” 提示信息 */
