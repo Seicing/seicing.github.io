@@ -50,11 +50,11 @@
 
     /* 角色名 */
     .speaker-title {
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 900;
         color: #f7e8aa;
-        letter-spacing: 2px;
         line-height: 1.2;
+        font-style: italic;
     }
 
     /* 分割线 */
@@ -66,7 +66,7 @@
 
     /* 对话内容文字 */
     .dialogue-text {
-        font-size: 17px;
+        font-size: 18px;
         font-weight: bold;
         font-style: italic;
         color: #ffffff;
@@ -91,11 +91,15 @@
         height: 225px;
         pointer-events: none;
         z-index: 10;
+
+        /* 关键：左侧 0~20px 渐变透明遮罩 (兼容 Webkit 内核) */
+        -webkit-mask-image: linear-gradient(to right, transparent 0px, black 20px, black 100%);
+        mask-image: linear-gradient(to right, transparent 0px, black 20px, black 100%);
     }
 
     .layer {
         position: absolute;
-        top: 0;
+        bottom: 1;
         left: 0;
     }
 
