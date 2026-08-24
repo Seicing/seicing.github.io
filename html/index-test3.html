@@ -13,40 +13,87 @@
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://seicing.com/js/vue3.js"></script>
 <style>
-    :root {
-        --dialogueBox-background: #FFFFFF;
-        --dialogueBox-stagebackground: #f0f0f0;
-    }
-
-    body.theme-dark {
-        --dialogueBox-background: #1C1815;
-        --dialogueBox-stagebackground: #1C1815;
-    }
-
-    .rows2 {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .left {
-        width: 150px;
-    }
-
-    .right {
-        margin-left: 10px;
-    }
-
     body {
         font-family: sans-serif;
     }
 
-    .stage {
+    /* 整体容器：留出顶部空间以便立绘探头 */
+    .dialogue-stage-wrapper {
         position: relative;
+        display: inline-flex;
+        align-items: flex-end;
+        margin-top: 130px;
+        /* 留出立绘上半身探出对话框的高度 */
+        margin-bottom: 25px;
+    }
+
+    /* 仿游戏黑底圆角对话框 */
+    .game-dialogue-box {
+        position: relative;
+        width: 580px;
+        min-height: 105px;
+        background-color: #202020;
+        border-radius: 18px;
+        padding: 12px 18px;
+        box-sizing: border-box;
+        display: flex;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .dialogue-content-area {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 15px;
+        z-index: 2;
+    }
+
+    /* 角色名 */
+    .speaker-title {
+        font-size: 22px;
+        font-weight: 900;
+        color: #f7e8aa;
+        letter-spacing: 2px;
+        line-height: 1.2;
+    }
+
+    /* 分割线 */
+    .speaker-divider {
+        width: 100%;
+        border-bottom: 2px solid rgb(208, 201, 183);
+        margin: 6px 0 10px 0;
+    }
+
+    /* 对话内容文字 */
+    .dialogue-text {
+        font-size: 17px;
+        font-weight: bold;
+        font-style: italic;
+        color: #ffffff;
+        line-height: 1.45;
+        word-break: break-all;
+        white-space: pre-wrap;
+        min-height: 25px;
+    }
+
+    /* 右侧为立绘占位空间 */
+    .character-placeholder {
+        width: 135px;
+        flex-shrink: 0;
+    }
+
+    /* 立绘图层容器：绝对定位贴合在右侧，突破向上突出 */
+    .stage {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
         width: 150px;
         height: 225px;
-        border: 1px solid #aaa;
-        margin-bottom: 10px;
-        background-color: var(--dialogueBox-stagebackground);
+        pointer-events: none;
+        /* 防止遮挡点击 */
+        z-index: 10;
     }
 
     .layer {
@@ -58,6 +105,37 @@
     img {
         width: 150px;
         display: block;
+    }
+
+    /* 自定义对话面板 */
+    .custom-input-panel {
+        margin-bottom: 15px;
+        max-width: 580px;
+    }
+
+    .custom-input-panel textarea {
+        width: 100%;
+        height: 60px;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: 1px solid #999;
+        font-size: 14px;
+        resize: vertical;
+    }
+
+    .play-btn {
+        background-color: #2e7d32;
+        color: white;
+        font-weight: bold;
+        border: 1px solid #1b5e20;
+        border-radius: 4px;
+        padding: 6px 14px;
+        margin-top: 5px;
+    }
+
+    .play-btn:hover {
+        background-color: #388e3c;
     }
 
     button {
@@ -72,26 +150,6 @@
         border: 1px solid #a93226;
     }
 
-    #dialogueBox {
-        width: 220px;
-        min-height: 80px;
-        box-sizing: border-box;
-        padding: 8px 10px;
-        border: 1px solid #555;
-        background-color: var(--dialogueBox-background);
-        font-size: 14px;
-        line-height: 1.4;
-        display: none;
-        margin-left: 5px;
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    #dialogueText {
-        word-break: break-all;
-        white-space: pre-wrap;
-    }
-
     button.disabled {
         opacity: 0.4;
         cursor: not-allowed;
@@ -104,7 +162,6 @@
         display: inline-block;
     }
 
-    /* 头像包装容器 */
     .avatar-wrap {
         position: relative;
         display: inline-block;
@@ -112,7 +169,6 @@
         vertical-align: middle;
     }
 
-    /* 覆盖在头像上方的标记图片 */
     .avatar-badge {
         position: absolute;
         top: 0;
@@ -120,7 +176,6 @@
         width: 100% !important;
         height: 100% !important;
         pointer-events: none;
-        /* 关键：点击穿透，不阻挡下方头像点击 */
         z-index: 10;
     }
 </style>
@@ -162,12 +217,25 @@
                     <div class="post">
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><input id="charId" value="YoEmpireFlower">
-<button onclick="loadChar()">加载</button>
-<span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
+                        <div class="entry"><div style="margin-bottom: 10px;">
+    <input id="charId" value="YoEmpireFlower">
+    <button onclick="loadChar()">加载</button>
+    <span id="loadStatus" style="font-size:12px; color:blue; margin-left:10px;"></span>
+</div>
 
-<div class="rows2">
-    <div class="stage left">
+<!-- 游戏风格对话框与立绘展示区 -->
+<div class="dialogue-stage-wrapper">
+    <div class="game-dialogue-box">
+        <div class="dialogue-content-area">
+            <div id="speakerName" class="speaker-title">余</div>
+            <div class="speaker-divider"></div>
+            <div id="dialogueText" class="dialogue-text">孱仔是这样的</div>
+        </div>
+        <div class="character-placeholder"></div>
+    </div>
+
+    <!-- 立绘层：不再限制在框内，突破上边界完全展示 -->
+    <div class="stage" id="stageContainer">
         <div class="layer" style="z-index:2"><img id="base"></div>
         <div class="layer" style="z-index:4"><img id="eye"></div>
         <div class="layer" style="z-index:6"><img id="brow"></div>
@@ -178,16 +246,18 @@
         <div class="layer" style="z-index:39"><img id="sweat"></div>
         <div class="layer" style="z-index:38"><img id="red_face"></div>
     </div>
-    <div class="right" id="dialogueBox">
-        <div id="dialogueText"></div>
-    </div>
 </div>
 
+<!-- 自定义对话输入区 (Cookie 记录) -->
+<div class="custom-input-panel">
+    <textarea id="customDialogueInput" placeholder="输入自定义对话内容，内容会自动保存在Cookie中..."></textarea>
+    <br>
+    <button onclick="playCustomDialogue()" class="play-btn">▶ 播放自定义对话</button>
+</div>
 
 <!-- 状态控制区 -->
 <div style="margin-bottom: 10px;">
     <button id="talkBtn" onclick="toggleTalk(this)">说话(talk)</button>
-    <!-- 新增闭眼按钮 -->
     <button id="closeEyeBtn" onclick="toggleCloseEyes(this)">闭眼(CE)</button>
 </div>
 <div style="margin-bottom:10px;">
@@ -197,7 +267,7 @@
     <button onclick="startDialogue('要说更长的对话吗？那就……拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~拉比巴那~')">
         测试用对话2
     </button>
-    <button onclick="startDialogue('今天过得如何？')">
+    <button onclick="startDialogue('孱仔是这样的')">
         测试用对话3
     </button>
     <button
@@ -217,8 +287,7 @@
 </div>
 <div id="faces"></div>
 <br>
-<div id="lavivagnar"></div>
-</div>
+<div id="lavivagnar"></div></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -243,6 +312,19 @@
 </body>
 
 <script>
+    /* ========= Cookie 存取工具函数 ========= */
+    function setCookie(name, value, days = 30) {
+        const expires = new Date(Date.now() + days * 864e5).toUTCString();
+        document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+    }
+
+    function getCookie(name) {
+        return document.cookie.split('; ').reduce((r, v) => {
+            const parts = v.split('=');
+            return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+        }, '');
+    }
+
     /* ========= 表情表 ========= */
     const faces = {
         smile: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_smile"],
@@ -273,10 +355,8 @@
     };
 
     const fullyAnimatedList = [
-        "YoEmpireFlower", "YoTngriDaruga", "YoTngriDarugaAtavism", "YoEmpress", "YoBorteCino", "VenAcolyte", "VenHierophant", "VenCelestial", "VenEpisode", "IrisMrazKralitsata", "IrisPratenitsa", "IrisEpisode", "IuimiAcolyte", "IuimiFlameEmpress", "IuimiAcalanatha", "IuimiEpisode2", "IuimiEpisode3", "IuimiEpisode", "SeigineScholar", "SeicingAcolyte", "SeicingAcolyte2", "SeicingEmpireJade", "SeicingWanderer", "AlterrataCleric", "AlterrataWizard", "CiyauCleric", "CiyauPhalanx", "CiyauSkirmisher", "CiyauSentinel", "KhazatarCommonFemale", "KhazatarRanger", "KhazatarCleric", "Kruv", "KruvAtavism", "Khazard", "Sherazard", "AragonCoastal", "Aziz", "Byinn", "Chunlan", "Chunlen", "Meirei", "Okichi", "Prithvi", "SarchlentAdventurer", "SarchlentConqueror", "Sri", "Yunpyeng", "YoEpisode", "IrisEpisode2", "VenEpisode2", "YoEpisode2", "Utari", "UtariAtavism", "Gizeiger", "Chinkoo", "Gaoh", "LouichWanderer", "LouichRozenSchutze", "SeigineSentinel", "SeigineRanger",    /*    "Seigent"  ,   "Souun"  ,    "Chen"  ,   "CiyauDevastator"  ,   "Chimon"  ,   "Orlok"  ,   "OrlokAtavism"  ,   "Gennai"  ,   "SeigineMage"  ,   "SeigineCleric"  ,   "SeigineWizard"  ,   "CiyauCommonMale"  ,  "CiyauCommonFemale"  ,   "SeigineCommonMale"  ,   "SeigineCommonFemale"  ,   "CiyauRecruit"  ,   "AlterrataCommonMale"  ,   "AlterrataCommonFemale"  ,         "SeigentAtavism"  ,        */
+        "YoEmpireFlower", "YoTngriDaruga", "YoTngriDarugaAtavism", "YoEmpress", "YoBorteCino", "VenAcolyte", "VenHierophant", "VenCelestial", "VenEpisode", "IrisMrazKralitsata", "IrisPratenitsa", "IrisEpisode", "IuimiAcolyte", "IuimiFlameEmpress", "IuimiAcalanatha", "IuimiEpisode2", "IuimiEpisode3", "IuimiEpisode", "SeigineScholar", "SeicingAcolyte", "SeicingAcolyte2", "SeicingEmpireJade", "SeicingWanderer", "AlterrataCleric", "AlterrataWizard", "CiyauCleric", "CiyauPhalanx", "CiyauSkirmisher", "CiyauSentinel", "KhazatarCommonFemale", "KhazatarRanger", "KhazatarCleric", "Kruv", "KruvAtavism", "Khazard", "Sherazard", "AragonCoastal", "Aziz", "Byinn", "Chunlan", "Chunlen", "Meirei", "Okichi", "Prithvi", "SarchlentAdventurer", "SarchlentConqueror", "Sri", "Yunpyeng", "YoEpisode", "IrisEpisode2", "VenEpisode2", "YoEpisode2", "Utari", "UtariAtavism", "Gizeiger", "Chinkoo", "Gaoh", "LouichWanderer", "LouichRozenSchutze", "SeigineSentinel", "SeigineRanger", "Alitta", "Seigent", "SeigentAtavism", "SeicingEpisode2", "Souun", "Chen", "Chimon", "Orlok", "OrlokAtavism", "Gennai", "SeigineMage", "SeigineCleric", "SeigineWizard", "SeigineCommonMale", "SeigineCommonFemale", "CiyauCommonMale", "CiyauCommonFemale", "CiyauRecruit", "CiyauDevastator", "AlterrataCommonMale", "AlterrataCommonFemale",
     ];
-
-
 
     const BADGE_IMG_SRC = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/mark.png";
 
@@ -310,17 +390,11 @@
 
     /* ========= 说话帧 ========= */
     const talkRandomFrames = [
-        "mouth_serene",
-        "mouth_endure",
-        "mouth_surprise",
-        "mouth_endure",
+        "mouth_serene", "mouth_endure", "mouth_surprise", "mouth_endure",
     ];
 
     const talkSeqFrames = [
-        "mouth_ani1",
-        "mouth_ani2",
-        "mouth_ani3",
-        "mouth_ani2"
+        "mouth_ani1", "mouth_ani2", "mouth_ani3", "mouth_ani2",
     ];
 
     /* ========= 工具 ========= */
@@ -328,13 +402,11 @@
         return charPath + name + ".png";
     }
 
-    /* ========= 【修改版】预加载函数 ========= */
-    // callback 现在接收一个参数 failedSet，包含所有加载失败的图片名
+    /* ========= 预加载函数 ========= */
     function preloadImages(callback) {
         const allImages = new Set();
-        const failedImages = new Set(); // 新增：记录失败的图片
+        const failedImages = new Set();
 
-        // 1. 收集所有需要用到的图片名
         allImages.add("base");
 
         Object.values(faces).forEach(arr => {
@@ -346,7 +418,6 @@
 
         Object.keys(acc).forEach(k => allImages.add(k));
 
-        // 2. 开始下载
         const total = allImages.size;
         let loadedCount = 0;
         const statusEl = document.getElementById("loadStatus");
@@ -361,20 +432,15 @@
 
         allImages.forEach(imgName => {
             const img = new Image();
-
-            // 成功加载
             img.onload = () => {
                 loadedCount++;
                 updateProgress();
             };
-
-            // 失败加载 (404等)
             img.onerror = () => {
-                failedImages.add(imgName); // 记录失败名
+                failedImages.add(imgName);
                 loadedCount++;
                 updateProgress();
             };
-
             img.src = src(imgName);
         });
 
@@ -383,7 +449,6 @@
 
             if (loadedCount >= total) {
                 if (statusEl) {
-                    // 如果有失败的，提示一下
                     if (failedImages.size > 0) {
                         statusEl.textContent = `加载完成，${failedImages.size}个资源缺失`;
                         statusEl.style.color = "red";
@@ -397,29 +462,19 @@
                     btn.disabled = false;
                     btn.textContent = "加载";
                 }
-                // 执行回调，并传入失败列表
                 if (callback) callback(failedImages);
             }
         }
     }
 
-    /* ========= 检查并禁用损坏按钮 (修改版) ========= */
+    /* ========= 检查并禁用损坏按钮 ========= */
     function checkBrokenResources(failedSet) {
         if (failedSet.size === 0) return;
 
-        console.log("缺失图片列表:", Array.from(failedSet));
-
-        // 1. 检查表情按钮 (Faces)
         for (let faceName in faces) {
             const requiredImages = faces[faceName];
-
-            // 修改点：使用 .some(item, index) 来判断
             const isBroken = requiredImages.some((img, index) => {
-                // 如果是第2个(index=1) 或 第3个(index=2)，跳过检测
-                // 返回 false 代表“这张图不算坏”，继续检查下一张
                 if (index === 1 || index === 2) return false;
-
-                // 检查第1(0)、第4(3)、第5(4)张图是否在失败列表中
                 return failedSet.has(img);
             });
 
@@ -430,7 +485,6 @@
             }
         }
 
-        // 2. 检查配件按钮 (Accessories) - 保持不变
         Object.keys(acc).forEach(accName => {
             if (failedSet.has(accName)) {
                 const btn = document.querySelector(`button[onclick*="'${accName}'"]`);
@@ -441,7 +495,6 @@
             }
         });
 
-        // 3. 检查说话模式 (Talk Modes) - 保持不变
         const randomBroken = talkRandomFrames.some(img => failedSet.has(img));
         if (randomBroken) {
             const btn = document.querySelector(`button[onclick*="setTalkMode(1"]`);
@@ -455,12 +508,11 @@
         }
     }
 
-    /* ========= 加载 (彻底修复残留 Bug 版) ========= */
+    /* ========= 加载角色 ========= */
     function loadChar() {
         const id = document.getElementById("charId").value;
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
 
-        // 🟢 【关键修复 1】：彻底重置说话与对话定时器，关闭说话状态
         if (talkTimer) clearInterval(talkTimer);
         if (dialogueTimer) clearTimeout(dialogueTimer);
         talking = false;
@@ -469,39 +521,29 @@
         const talkBtn = document.getElementById("talkBtn");
         if (talkBtn) talkBtn.classList.remove("active");
 
-        const dialogueBox = document.getElementById("dialogueBox");
-        if (dialogueBox) dialogueBox.style.display = "none";
-
-        // 🟢 【关键修复 2】：加载新角色前清空五官，防止残留上一个角色的图像
         base.src = src("base");
         eye.src = "";
         brow.src = "";
         mouth.src = "";
 
-        // 重置所有配件
         Object.values(acc).forEach(x => {
             x.style.display = "none";
             x.src = "";
         });
         document.querySelectorAll(".accBtn").forEach(b => b.classList.remove("active"));
 
-        // 重置闭眼
         isClosedEyes = false;
         const closeEyeBtn = document.getElementById("closeEyeBtn");
         if (closeEyeBtn) closeEyeBtn.classList.remove("active");
 
-        // 重置所有按钮的 disabled 状态
         document.querySelectorAll("button.disabled").forEach(b => {
             b.classList.remove("disabled");
             b.title = "";
         });
 
-        // 预加载并检查
         preloadImages((failedSet) => {
-            // 1. 禁用坏掉的按钮
             checkBrokenResources(failedSet);
 
-            // 2. 智能检测动画模式
             const mode1Btn = document.querySelector('button[onclick*="setTalkMode(1"]');
             const mode2Btn = document.querySelector('button[onclick*="setTalkMode(2"]');
             const hasMouthAni1 = !failedSet.has("mouth_ani1");
@@ -512,25 +554,20 @@
                 if (mode1Btn) setTalkMode(1, mode1Btn);
             }
 
-            // 3. 🟢 【关键修复 3】：寻找第一个无缺失图片的有效表情
             let defaultFace = Object.keys(faces).find(faceName => {
                 const req = faces[faceName];
                 return !failedSet.has(req[0]) && !failedSet.has(req[3]) && !failedSet.has(req[4]);
             }) || Object.keys(faces)[0];
 
-            // 强制设置表情（传入 true 表示系统强制初始化）
             setFace(defaultFace, true);
-
-            // 4. 开始眨眼
             startBlink();
         });
     }
 
-    /* ========= 表情设置 (修复拦截 Bug 版) ========= */
+    /* ========= 表情设置 ========= */
     function setFace(name, isInit = false) {
         const btn = document.getElementById("face_" + name);
 
-        // 只有在【非初始化】且【按钮被禁用】时才拦截点击
         if (!isInit && btn && btn.classList.contains("disabled")) {
             console.warn(`表情 ${name} 资源缺失，跳过切换`);
             return;
@@ -539,14 +576,12 @@
         currentFace = faces[name];
         if (!currentFace) return;
 
-        // 设置眼睛
         if (isClosedEyes) {
             eye.src = src(currentFace[2]);
         } else {
             eye.src = src(currentFace[0]);
         }
 
-        // 🟢 强制刷新眉毛和嘴巴
         brow.src = src(currentFace[3]);
         mouth.src = src(currentFace[4]);
 
@@ -612,10 +647,7 @@
     }
 
     /* ========= 说话 ========= */
-    /* ========= 说话 (已移除拦截逻辑) ========= */
     function toggleTalk(btn) {
-        // 这里删除了原本的 if(modeBtn && modeBtn.classList.contains("disabled")) 判断
-
         talking = !talking;
         btn.classList.toggle("active", talking);
 
@@ -637,7 +669,6 @@
     }
 
     function setTalkMode(mode, btn) {
-        // 如果该模式按钮被禁用，不允许切换
         if (btn.classList.contains("disabled")) return;
 
         talkMode = mode;
@@ -648,7 +679,6 @@
 
     /* ========= 配件 ========= */
     function toggleAcc(name, btn) {
-        // 防御：如果按钮禁用，不做反应
         if (btn.classList.contains("disabled")) return;
 
         const el = acc[name];
@@ -687,13 +717,13 @@
     const END_TALK_DELAY = 400;
 
     function startDialogue(text) {
-        if (isTyping) return;
+        if (isTyping) {
+            clearTimeout(dialogueTimer);
+            isTyping = false;
+        }
         isTyping = true;
 
-        const box = document.getElementById("dialogueBox");
         const textEl = document.getElementById("dialogueText");
-
-        box.style.display = "block";
         textEl.textContent = "";
 
         let index = 0;
@@ -708,8 +738,6 @@
             index++;
 
             if (!talking) {
-                // 如果说话中途因为某种原因停了（比如外部干扰），尝试恢复
-                // 但如果按钮坏了，toggleTalk 内部会拦截，这里就不做额外处理了
                 toggleTalk(document.getElementById("talkBtn"));
             }
 
@@ -734,6 +762,30 @@
         typeNext();
     }
 
+    /* ========= 自定义对话 & Cookie 记忆 ========= */
+    const COOKIE_KEY = "saved_custom_dialogue";
+    const customInput = document.getElementById("customDialogueInput");
+
+    // 初始化时从 Cookie 恢复文本
+    const savedDialogue = getCookie(COOKIE_KEY);
+    if (savedDialogue) {
+        customInput.value = savedDialogue;
+    } else {
+        customInput.value = "孱仔是这样的"; // 默认初始值
+    }
+
+    // 实时监听输入，写入 Cookie
+    customInput.addEventListener("input", () => {
+        setCookie(COOKIE_KEY, customInput.value, 30);
+    });
+
+    function playCustomDialogue() {
+        const text = customInput.value.trim();
+        if (!text) return;
+        setCookie(COOKIE_KEY, text, 30);
+        startDialogue(text);
+    }
+
     /* ========= 加载并改造 lavivagnar.html ========= */
     function loadLavivagnar() {
         fetch('https://seicing.com/js/list/lavivagnar.html')
@@ -756,13 +808,11 @@
                     list.style.float = "left";
                     list.style.width = "100%";
 
-                    // 解封显示特殊形态
                     const specialForms = list.querySelectorAll('#specialForms, div[style*="display: none"], div[style*="display:none"]');
                     specialForms.forEach(el => {
                         el.style.display = "block";
                     });
 
-                    // 删除不需要的元素
                     const bigfonter = list.querySelector("#bigfonter");
                     const darkmoder = list.querySelector("#darkmoder");
                     if (bigfonter) bigfonter.remove();
@@ -776,7 +826,6 @@
                     });
                     list.querySelectorAll("br").forEach(br => br.remove());
 
-                    // 清理多余空文本节点
                     const walker = document.createTreeWalker(list, NodeFilter.SHOW_TEXT, null, false);
                     const emptyTextNodes = [];
                     while (walker.nextNode()) {
@@ -786,10 +835,9 @@
                     }
                     emptyTextNodes.forEach(node => node.remove());
 
-                    /* ========= 所有 <a> 取消超链接，转为包裹 span ========= */
                     list.querySelectorAll("a").forEach(a => {
                         const replacement = document.createElement("span");
-                        replacement.className = "avatar-wrap"; // 设为相对定位容器
+                        replacement.className = "avatar-wrap";
 
                         for (const attr of a.attributes) {
                             if (attr.name.toLowerCase() !== "href") {
@@ -804,7 +852,6 @@
                         a.replaceWith(replacement);
                     });
 
-                    /* ========= 选中所有头像图片：添加点击事件与额外标记 ========= */
                     list.querySelectorAll("img").forEach(img => {
                         img.style.cursor = "pointer";
 
@@ -815,7 +862,6 @@
 
                         if (!name) return;
 
-                        // 1. 绑定点击切换角色
                         img.addEventListener("click", () => {
                             const charId = document.getElementById("charId");
                             if (!charId) return;
@@ -823,12 +869,10 @@
                             loadChar();
                         });
 
-                        // 2. 如果在列表内，生成覆盖标记图
                         if (fullyAnimatedList.includes(name)) {
                             const badge = document.createElement("img");
                             badge.src = BADGE_IMG_SRC;
                             badge.className = "avatar-badge";
-                            // 将标记插入到父级容器中（覆盖在原图上方）
                             if (img.parentNode) {
                                 img.parentNode.appendChild(badge);
                             }
@@ -843,9 +887,7 @@
             });
     }
 
-
     loadLavivagnar();
-
     loadChar();
 </script>
 
