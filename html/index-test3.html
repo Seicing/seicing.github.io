@@ -430,7 +430,7 @@
         return charPath + name + ".png";
     }
 
-    /* ========= 改造版：核心保底优先 + 失败二次复检预加载 ========= */
+    /* ========= 改造版：首轮即刻可用 + 后台静默复检补救 ========= */
     function preloadImages(callback) {
         const statusEl = document.getElementById("loadStatus");
         const btn = document.getElementById("loadBtn");
@@ -438,7 +438,7 @@
 
         // 1. 必备的核心图片（优先加载 + 强行重试）
         const CORE_IMAGES = ["base", "eye_default1", "brow_default"];
-        const finalFailedImages = new Set();
+        const failedImages = new Set();
 
         // 2. 收集所有其他待检测图片
         const otherImages = new Set();
@@ -459,7 +459,7 @@
             }
         }
 
-        // --- 【环节 1】核心图片加载器（带失败立即重试） ---
+        // --- 核心图片加载器（带失败立即重试） ---
         function loadCoreImage(imgName, retryCount = 0) {
             return new Promise(resolve => {
                 const img = new Image();
@@ -470,12 +470,11 @@
                 };
                 img.onerror = () => {
                     if (retryCount < 2) {
-                        // 失败立即重试
                         setTimeout(() => {
                             loadCoreImage(imgName, retryCount + 1).then(resolve);
                         }, 100);
                     } else {
-                        finalFailedImages.add(imgName);
+                        failedImages.add(imgName);
                         completedCount++;
                         updateProgress();
                         resolve(false);
@@ -485,7 +484,7 @@
             });
         }
 
-        // --- 【环节 2】通用单轮批量加载器 ---
+        // --- 通用单轮批量加载器 ---
         function batchLoad(imageSet, isPass1 = true) {
             return new Promise(resolve => {
                 if (imageSet.size === 0) {
@@ -531,38 +530,96 @@
                 return batchLoad(otherImages, true);
             })
             .then(({ failed: pass1Failed }) => {
-                // 第 3 步：第二轮复检（仅对第一轮失败的图片发起重试，成功的直接忽略）
-                if (pass1Failed.size > 0) {
-                    updateProgress(`复检缺失资源中(${pass1Failed.size})...`);
-                    return batchLoad(pass1Failed, false);
-                } else {
-                    return { failed: new Set() };
-                }
-            })
-            .then(({ failed: pass2Failed }) => {
-                // 两轮均失败的图片确定为缺失
-                pass2Failed.forEach(name => finalFailedImages.add(name));
+                // 将第一轮失败的图片加入缺失集合
+                pass1Failed.forEach(name => failedImages.add(name));
 
-                // 收尾与状态更新
-                if (statusEl) {
-                    if (finalFailedImages.size > 0) {
-                        statusEl.textContent = `加载完成，${finalFailedImages.size}个资源缺失`;
-                        statusEl.style.color = "red";
-                    } else {
-                        statusEl.textContent = "加载完成！";
-                        statusEl.style.color = "blue";
-                    }
-                    setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
-                }
-
+                // 🟢 【关键修改 1】：第一轮结束，立刻解锁 UI、解除加载按钮禁用并执行回调（立即可用）
                 if (btn) {
                     btn.disabled = false;
                     btn.textContent = "加载";
                 }
 
-                // 执行原有回调与损坏按钮检测
-                if (callback) callback(finalFailedImages);
+                if (statusEl) {
+                    if (failedImages.size > 0) {
+                        statusEl.textContent = `加载完成，${failedImages.size}个资源缺失`;
+                        statusEl.style.color = "red";
+                    } else {
+                        statusEl.textContent = "加载完成！";
+                        statusEl.style.color = "blue";
+                    }
+                    setTimeout(() => {
+                        if (statusEl && (statusEl.textContent.includes("加载完成") || statusEl.textContent.includes("资源缺失"))) {
+                            statusEl.textContent = "";
+                        }
+                    }, 2500);
+                }
+
+                // 立即让用户开始使用（禁用第一轮缺失的按钮）
+                if (callback) callback(failedImages);
+
+                // 🟢 【关键修改 2】：完全后台静默执行第二轮复检（不阻塞任何操作）
+                if (pass1Failed.size > 0) {
+                    batchLoad(pass1Failed, false).then(({ succeeded: recoveredImages }) => {
+                        // 如果后台复检发现有之前漏掉的图片重新加载成功了
+                        if (recoveredImages.size > 0) {
+                            // 从缺失集合中移除恢复成功的图片
+                            recoveredImages.forEach(name => failedImages.delete(name));
+
+                            // 提示用户
+                            if (statusEl) {
+                                statusEl.textContent = `已重新加载(${recoveredImages.size})个缺失图片`;
+                                statusEl.style.color = "green";
+                                setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
+                            }
+
+                            // 动态解封之前误禁用的按钮
+                            unlockRecoveredButtons(failedImages);
+                        }
+                    });
+                }
             });
+    }
+
+    /* ========= 辅助函数：后台补救成功后，动态解除对应按钮的禁用 ========= */
+    function unlockRecoveredButtons(currentFailedSet) {
+        // 1. 检查并解封表情按钮
+        for (let faceName in faces) {
+            const requiredImages = faces[faceName];
+            const isStillBroken = requiredImages.some((img, index) => {
+                if (index === 1 || index === 2) return false;
+                return currentFailedSet.has(img);
+            });
+
+            if (!isStillBroken) {
+                const btn = document.getElementById("face_" + faceName);
+                if (btn && btn.classList.contains("disabled")) {
+                    btn.classList.remove("disabled");
+                    btn.title = "";
+                }
+            }
+        }
+
+        // 2. 检查并解封配件按钮
+        Object.keys(acc).forEach(accName => {
+            if (!currentFailedSet.has(accName)) {
+                const btn = document.querySelector(`button[onclick*="'${accName}'"]`);
+                if (btn && btn.classList.contains("disabled")) {
+                    btn.classList.remove("disabled");
+                    btn.title = "";
+                }
+            }
+        });
+
+        // 3. 检查说话模式
+        if (typeof talkSeqFrames !== 'undefined') {
+            const seqBroken = talkSeqFrames.some(img => currentFailedSet.has(img));
+            if (!seqBroken) {
+                const btn = document.querySelector(`button[onclick*="setTalkMode(2"]`);
+                if (btn && btn.classList.contains("disabled")) {
+                    btn.classList.remove("disabled");
+                }
+            }
+        }
     }
 
     /* ========= 检查并禁用损坏按钮 ========= */
