@@ -170,6 +170,33 @@
         pointer-events: none;
         z-index: 10;
     }
+
+    /* 侧边栏专属样式：头像尺寸缩小一半 (25px) */
+    .sidebar-lavivagnar img {
+        width: 25px !important;
+        height: auto;
+        display: inline-block;
+    }
+
+    .sidebar-lavivagnar .avatar-wrap {
+        margin: 0 1px;
+        vertical-align: middle;
+    }
+
+    /* 侧边栏与手机抽屉内：头像尺寸缩小一半 (25px) */
+    .sidebar-lavivagnar img,
+    .mobile-drawer-container .sidebar-lavivagnar img,
+    .mobile-drawer-container #listlavivagnar img {
+        width: 25px !important;
+        height: auto;
+        display: inline-block;
+    }
+
+    .sidebar-lavivagnar .avatar-wrap,
+    .mobile-drawer-container .avatar-wrap {
+        margin: 0 1px;
+        vertical-align: middle;
+    }
 </style>
 </head>
 
@@ -944,6 +971,19 @@
         startDialogue(text);
     }
 
+    /* ========= 全局事件委托：保证无论怎么复制到手机抽屉，点击都永远有效 ========= */
+    document.addEventListener("click", (e) => {
+        // 寻找被点击的头像元素
+        const img = e.target.closest(".avatar-wrap img");
+        if (img && img.dataset.charId) {
+            const charId = document.getElementById("charId");
+            if (charId) {
+                charId.value = img.dataset.charId;
+                loadChar();
+            }
+        }
+    });
+
     /* ========= 加载并改造 lavivagnar.html ========= */
     function loadLavivagnar() {
         fetch('https://seicing.com/js/list/lavivagnar.html')
@@ -954,23 +994,24 @@
                 return response.text();
             })
             .then(html => {
-                const container = document.getElementById("lavivagnar");
-                if (!container) return;
+                function buildAvatarList(isSidebar = false) {
+                    const temp = document.createElement("div");
+                    temp.innerHTML = html;
 
-                const temp = document.createElement("div");
-                temp.innerHTML = html;
+                    const list = temp.querySelector("#listlavivagnar");
+                    if (!list) return null;
 
-                const list = temp.querySelector("#listlavivagnar");
-
-                if (list) {
                     list.style.float = "left";
                     list.style.width = "100%";
+                    if (isSidebar) {
+                        list.classList.add("sidebar-lavivagnar");
+                    }
 
+                    // 解封特殊形态
                     const specialForms = list.querySelectorAll('#specialForms, div[style*="display: none"], div[style*="display:none"]');
-                    specialForms.forEach(el => {
-                        el.style.display = "block";
-                    });
+                    specialForms.forEach(el => el.style.display = "block");
 
+                    // 清理多余元素
                     const bigfonter = list.querySelector("#bigfonter");
                     const darkmoder = list.querySelector("#darkmoder");
                     if (bigfonter) bigfonter.remove();
@@ -978,41 +1019,33 @@
 
                     list.querySelectorAll('a.special-text-link').forEach(a => a.remove());
                     list.querySelectorAll("b").forEach(b => {
-                        if (!b.textContent.trim() && !b.querySelector("img")) {
-                            b.remove();
-                        }
+                        if (!b.textContent.trim() && !b.querySelector("img")) b.remove();
                     });
                     list.querySelectorAll("br").forEach(br => br.remove());
 
                     const walker = document.createTreeWalker(list, NodeFilter.SHOW_TEXT, null, false);
                     const emptyTextNodes = [];
                     while (walker.nextNode()) {
-                        if (!walker.currentNode.textContent.trim()) {
-                            emptyTextNodes.push(walker.currentNode);
-                        }
+                        if (!walker.currentNode.textContent.trim()) emptyTextNodes.push(walker.currentNode);
                     }
                     emptyTextNodes.forEach(node => node.remove());
 
+                    // 转换 <a> 为 <span>
                     list.querySelectorAll("a").forEach(a => {
                         const replacement = document.createElement("span");
                         replacement.className = "avatar-wrap";
-
                         for (const attr of a.attributes) {
                             if (attr.name.toLowerCase() !== "href") {
                                 replacement.setAttribute(attr.name, attr.value);
                             }
                         }
-
-                        while (a.firstChild) {
-                            replacement.appendChild(a.firstChild);
-                        }
-
+                        while (a.firstChild) replacement.appendChild(a.firstChild);
                         a.replaceWith(replacement);
                     });
 
+                    // 为头像打上 data 标识并插入角标
                     list.querySelectorAll("img").forEach(img => {
                         img.style.cursor = "pointer";
-
                         const imgSrc = img.getAttribute("src") || "";
                         const cleanSrc = imgSrc.split("?")[0].split("#")[0];
                         const fileName = cleanSrc.substring(cleanSrc.lastIndexOf("/") + 1);
@@ -1020,25 +1053,42 @@
 
                         if (!name) return;
 
-                        img.addEventListener("click", () => {
-                            const charId = document.getElementById("charId");
-                            if (!charId) return;
-                            charId.value = name;
-                            loadChar();
-                        });
+                        // 🟢 关键：标记角色 ID，供全局事件委托拾取
+                        img.dataset.charId = name;
 
                         if (fullyAnimatedList.includes(name)) {
                             const badge = document.createElement("img");
                             badge.src = BADGE_IMG_SRC;
                             badge.className = "avatar-badge";
-                            if (img.parentNode) {
-                                img.parentNode.appendChild(badge);
-                            }
+                            if (img.parentNode) img.parentNode.appendChild(badge);
                         }
                     });
+
+                    return list;
                 }
 
-                container.replaceChildren(...Array.from(temp.childNodes));
+                // 1. 注入底部常规容器
+                const mainContainer = document.getElementById("lavivagnar");
+                if (mainContainer) {
+                    const mainList = buildAvatarList(false);
+                    if (mainList) mainContainer.replaceChildren(mainList);
+                }
+
+                // 2. 注入侧边栏容器
+                const sidebarContainer = document.getElementById("sidebarLavivagnar") || document.getElementById("sidebar") || document.querySelector(".sidebar");
+                if (sidebarContainer) {
+                    const sidebarList = buildAvatarList(true);
+                    if (sidebarList) {
+                        sidebarContainer.appendChild(sidebarList);
+                    }
+                }
+
+                // 3. （可选）如果手机抽屉容器已经存在于页面上，也直接注入一份
+                const mobileDrawer = document.querySelector(".mobile-drawer-container") || document.getElementById("mobile-drawer-container");
+                if (mobileDrawer && !sidebarContainer) {
+                    const drawerList = buildAvatarList(true);
+                    if (drawerList) mobileDrawer.appendChild(drawerList);
+                }
             })
             .catch(error => {
                 console.error("加载 lavivagnar 失败:", error);
