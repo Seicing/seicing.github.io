@@ -766,24 +766,24 @@ a {
 
 
 
-
 .pagefind-ui {
     width: 100% !important;
     font-family: inherit !important;
 }
 
+/* 1. 搜索表单外壳：作为定位基准 */
 .pagefind-ui__form {
     width: 100% !important;
     position: relative !important;
 }
 
-/* 左侧放大镜图标：半透明自适应，夜间不突兀 */
+/* 2. 左侧放大镜图标 */
 .pagefind-ui__form::before {
     opacity: 0.6 !important;
     filter: invert(0.8) !important;
 }
 
-/* 输入框：留出左右空隙，避免遮挡图标和清除按钮 */
+/* 3. 输入框本体 */
 .pagefind-ui__search-input {
     width: 100% !important;
     height: 42px !important;
@@ -791,27 +791,30 @@ a {
     background-color: transparent !important;
     color: var(--text-primary) !important;
     padding-left: 45px !important;
-    padding-right: 45px !important;
+    padding-right: 55px !important;
     box-sizing: border-box !important;
 }
 
-/* 占位提示符：“站内关键词搜索……” */
+/* 占位提示文字 */
 .pagefind-ui__search-input::placeholder {
     color: var(--text-primary) !important;
     opacity: 0.6 !important;
 }
 
-/* 右侧“清除”按钮：透明背景，垂直居中对齐 */
+/* 4. 修复：右侧“清除”按钮死死锁在输入框右侧内 */
 .pagefind-ui__search-clear {
+    position: absolute !important;
+    top: 21px !important;
+    /* 42px 高度的一半，严格居中 */
+    transform: translateY(-50%) !important;
+    right: 10px !important;
     background: transparent !important;
     color: var(--text-primary) !important;
     border: 1px solid var(--text-primary) !important;
     border-radius: 4px !important;
     cursor: pointer !important;
     padding: 3px 8px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    right: 10px !important;
+    line-height: 1 !important;
 }
 
 .pagefind-ui__drawer {
@@ -837,7 +840,9 @@ a {
     font-weight: bold !important;
 }
 
+/* 5. 修复：正文摘要文字颜色变亮，清晰可读 */
 .pagefind-ui__result-excerpt {
+    color: var(--text-primary) !important;
     display: -webkit-box !important;
     -webkit-line-clamp: 3 !important;
     line-clamp: 3 !important;
@@ -847,6 +852,37 @@ a {
     line-height: 1.6 !important;
     margin-top: 6px !important;
 }
+
+/* 高亮黄色的关键词 */
+.pagefind-ui__result-excerpt mark {
+    background-color: #ffeb3b !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    padding: 0 2px !important;
+    border-radius: 2px !important;
+}
+
+/* 6. 修复：“加载更多结果”按钮样式（暗色透明风） */
+.pagefind-ui__button {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--text-primary) !important;
+    border-radius: 4px !important;
+    padding: 8px 24px !important;
+    margin: 25px auto 10px auto !important;
+    display: block !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    transition: all 0.2s ease !important;
+}
+
+/* 鼠标悬停在“加载更多”按钮上时的反色高亮 */
+.pagefind-ui__button:hover {
+    background: var(--text-primary) !important;
+    color: #1c1917 !important;
+}
+
+
 
 
 
