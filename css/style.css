@@ -758,42 +758,6 @@ a {
     color: #000000;
 }
 
-/* Search */
-#search {
-    float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0px 0px 0px;
-}
-
-#search form {
-    height: 41px;
-    margin: 0;
-    padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-#search-text {
-    width: 170px;
-    padding: 6px 5px 3px 5px;
-    border: none;
-    background: var(--text-link);
-    text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
-}
-
-#search-submit {
-    width: 50px;
-    height: 22px;
-    border: none;
-    background: #1D1D1D;
-    color: #FFF;
-}
 
 /* Menu */
 #menu {
