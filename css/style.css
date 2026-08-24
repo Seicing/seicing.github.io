@@ -799,6 +799,17 @@ a {
     font-weight: bold !important;
 }
 
+.pagefind-ui__result-excerpt {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    /* 限制显示 3 行，如果想更短可改成 2 */
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.6 !important;
+    margin-top: 6px !important;
+}
+
 
 /* Menu */
 #menu {
