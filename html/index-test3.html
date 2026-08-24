@@ -175,15 +175,13 @@
         z-index: 10;
     }
 
-    .sidebar-lavivagnar {
-        width: 220px;
-        display: block;
-    }
 
     /* 🟢 仅在电脑模式（宽屏）下向左偏移 10px */
     @media screen and (min-width: 769px) {
         .sidebar-lavivagnar {
             margin-left: -10px;
+            width: 220px;
+            display: none;
         }
     }
 
@@ -330,7 +328,7 @@
 </div>
 <div id="faces"></div>
 <br>
-<div id="lavivagnar" style="display: none;"></div></div>
+<div id="lavivagnar"></div></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -1033,7 +1031,7 @@
                     if (!list) return null;
 
                     list.style.float = "left";
-                    list.style.width = "220px";
+                    list.style.width = "100%";
                     if (isSidebar) {
                         list.classList.add("sidebar-lavivagnar");
                     }
