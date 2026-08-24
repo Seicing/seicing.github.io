@@ -256,7 +256,7 @@
     <button onclick="startDialogue('今天过得如何？')">
         测试用对话3
     </button>
-    <button onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态。')">
+    <button onclick="startDialogue('凭借本能放出大量静电感知周围的危险，可让特定的来自敌人的攻击物体进入感电状态。余的暴击也会携带着巨量的静电，让被击中的敌人进入感电状态')">
         测试用对话4
     </button>
     <button onclick="playCustomDialogue()">
@@ -264,7 +264,7 @@
     </button>
 </div>
 
-<textarea id="customDialogueInput" placeholder="请输入自定义对话内容。"></textarea>
+<textarea id="customDialogueInput" placeholder="请输入自定义对话内容"></textarea>
 
 <div style="display: none;">
     <button class="talkModeBtn active" onclick="setTalkMode(1,this)">现有帧序列动画</button>
@@ -430,55 +430,123 @@
         return charPath + name + ".png";
     }
 
-    /* ========= 预加载函数 ========= */
+    /* ========= 改造版：核心保底优先 + 失败二次复检预加载 ========= */
     function preloadImages(callback) {
-        const allImages = new Set();
-        const failedImages = new Set();
-
-        allImages.add("base");
-
-        Object.values(faces).forEach(arr => {
-            arr.forEach(imgName => allImages.add(imgName));
-        });
-
-        if (typeof talkRandomFrames !== 'undefined') talkRandomFrames.forEach(n => allImages.add(n));
-        if (typeof talkSeqFrames !== 'undefined') talkSeqFrames.forEach(n => allImages.add(n));
-
-        Object.keys(acc).forEach(k => allImages.add(k));
-
-        const total = allImages.size;
-        let loadedCount = 0;
         const statusEl = document.getElementById("loadStatus");
         const btn = document.getElementById("loadBtn");
-
         if (btn) btn.disabled = true;
 
-        if (total === 0) {
-            if (callback) callback(failedImages);
-            return;
+        // 1. 必备的核心图片（优先加载 + 强行重试）
+        const CORE_IMAGES = ["base", "eye_default1", "brow_default"];
+        const finalFailedImages = new Set();
+
+        // 2. 收集所有其他待检测图片
+        const otherImages = new Set();
+        Object.values(faces).forEach(arr => arr.forEach(imgName => otherImages.add(imgName)));
+        if (typeof talkRandomFrames !== 'undefined') talkRandomFrames.forEach(n => otherImages.add(n));
+        if (typeof talkSeqFrames !== 'undefined') talkSeqFrames.forEach(n => otherImages.add(n));
+        Object.keys(acc).forEach(k => otherImages.add(k));
+
+        // 排除核心图片，避免重复
+        CORE_IMAGES.forEach(name => otherImages.delete(name));
+
+        const totalTasks = CORE_IMAGES.length + otherImages.size;
+        let completedCount = 0;
+
+        function updateProgress(text) {
+            if (statusEl) {
+                statusEl.textContent = text || `资源预加载: ${completedCount}/${totalTasks}`;
+            }
         }
 
-        allImages.forEach(imgName => {
-            const img = new Image();
-            img.onload = () => {
-                loadedCount++;
-                updateProgress();
-            };
-            img.onerror = () => {
-                failedImages.add(imgName);
-                loadedCount++;
-                updateProgress();
-            };
-            img.src = src(imgName);
-        });
+        // --- 【环节 1】核心图片加载器（带失败立即重试） ---
+        function loadCoreImage(imgName, retryCount = 0) {
+            return new Promise(resolve => {
+                const img = new Image();
+                img.onload = () => {
+                    completedCount++;
+                    updateProgress();
+                    resolve(true);
+                };
+                img.onerror = () => {
+                    if (retryCount < 2) {
+                        // 失败立即重试
+                        setTimeout(() => {
+                            loadCoreImage(imgName, retryCount + 1).then(resolve);
+                        }, 100);
+                    } else {
+                        finalFailedImages.add(imgName);
+                        completedCount++;
+                        updateProgress();
+                        resolve(false);
+                    }
+                };
+                img.src = src(imgName);
+            });
+        }
 
-        function updateProgress() {
-            if (statusEl) statusEl.textContent = `资源预加载: ${loadedCount}/${total}`;
+        // --- 【环节 2】通用单轮批量加载器 ---
+        function batchLoad(imageSet, isPass1 = true) {
+            return new Promise(resolve => {
+                if (imageSet.size === 0) {
+                    resolve({ succeeded: new Set(), failed: new Set() });
+                    return;
+                }
 
-            if (loadedCount >= total) {
+                const succeeded = new Set();
+                const failed = new Set();
+                let count = 0;
+                const total = imageSet.size;
+
+                imageSet.forEach(imgName => {
+                    const img = new Image();
+                    img.onload = () => {
+                        succeeded.add(imgName);
+                        count++;
+                        if (isPass1) {
+                            completedCount++;
+                            updateProgress();
+                        }
+                        if (count >= total) resolve({ succeeded, failed });
+                    };
+                    img.onerror = () => {
+                        failed.add(imgName);
+                        count++;
+                        if (isPass1) {
+                            completedCount++;
+                            updateProgress();
+                        }
+                        if (count >= total) resolve({ succeeded, failed });
+                    };
+                    img.src = src(imgName);
+                });
+            });
+        }
+
+        // --- 执行主流程 ---
+        // 第 1 步：优先加载 3 张核心必备图片
+        Promise.all(CORE_IMAGES.map(name => loadCoreImage(name)))
+            .then(() => {
+                // 第 2 步：第一轮加载其余所有图片
+                return batchLoad(otherImages, true);
+            })
+            .then(({ failed: pass1Failed }) => {
+                // 第 3 步：第二轮复检（仅对第一轮失败的图片发起重试，成功的直接忽略）
+                if (pass1Failed.size > 0) {
+                    updateProgress(`复检缺失资源中(${pass1Failed.size})...`);
+                    return batchLoad(pass1Failed, false);
+                } else {
+                    return { failed: new Set() };
+                }
+            })
+            .then(({ failed: pass2Failed }) => {
+                // 两轮均失败的图片确定为缺失
+                pass2Failed.forEach(name => finalFailedImages.add(name));
+
+                // 收尾与状态更新
                 if (statusEl) {
-                    if (failedImages.size > 0) {
-                        statusEl.textContent = `加载完成，${failedImages.size}个资源缺失`;
+                    if (finalFailedImages.size > 0) {
+                        statusEl.textContent = `加载完成，${finalFailedImages.size}个资源缺失`;
                         statusEl.style.color = "red";
                     } else {
                         statusEl.textContent = "加载完成！";
@@ -486,13 +554,15 @@
                     }
                     setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
                 }
+
                 if (btn) {
                     btn.disabled = false;
                     btn.textContent = "加载";
                 }
-                if (callback) callback(failedImages);
-            }
-        }
+
+                // 执行原有回调与损坏按钮检测
+                if (callback) callback(finalFailedImages);
+            });
     }
 
     /* ========= 检查并禁用损坏按钮 ========= */
@@ -802,7 +872,7 @@
     if (savedDialogue) {
         customInput.value = savedDialogue;
     } else {
-        customInput.value = "孱仔是这样的"; // 默认初始值
+        customInput.value = "请输入自定义对话内容"; // 默认初始值
     }
 
     // 实时监听输入，写入 Cookie
