@@ -377,7 +377,7 @@
 </body>
 
 <script>
-    /* ========= Cookie 存取工具函数 ========= */
+    /* ========= 1. Cookie 存取工具函数 ========= */
     function setCookie(name, value, days = 30) {
         const expires = new Date(Date.now() + days * 864e5).toUTCString();
         document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
@@ -390,7 +390,7 @@
         }, '');
     }
 
-    /* ========= 角色名字映射表 ========= */
+    /* ========= 2. 角色名字映射表 ========= */
     const charNameMap = {};
 
     function updateSpeakerName(id) {
@@ -420,14 +420,13 @@
                 }
             });
 
-            // 映射表加载完成后立即更新一次当前角色名
             updateSpeakerName();
         } catch (err) {
             console.error("加载名字对照表失败:", err);
         }
     }
 
-    /* ========= 表情表 ========= */
+    /* ========= 3. 表情与动画配置 ========= */
     const faces = {
         smile: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_smile"],
         serene: ["eye_default1", "eye_default2", "eye_default3", "brow_default", "mouth_serene"],
@@ -457,12 +456,12 @@
     };
 
     const fullyAnimatedList = [
-        "YoEmpireFlower", "YoTngriDaruga", "YoTngriDarugaAtavism", "YoEmpress", "YoBorteCino", "VenAcolyte", "VenHierophant", "VenCelestial", "VenEpisode", "IrisMrazKralitsata", "IrisPratenitsa", "IrisEpisode", "IuimiAcolyte", "IuimiFlameEmpress", "IuimiAcalanatha", "IuimiEpisode2", "IuimiEpisode3", "IuimiEpisode", "SeigineScholar", "SeicingAcolyte", "SeicingAcolyte2", "SeicingEmpireJade", "SeicingWanderer", "AlterrataCleric", "AlterrataWizard", "CiyauCleric", "CiyauPhalanx", "CiyauSkirmisher", "CiyauSentinel", "KhazatarCommonFemale", "KhazatarRanger", "KhazatarCleric", "Kruv", "KruvAtavism", "Khazard", "Sherazard", "AragonCoastal", "Aziz", "Byinn", "Chunlan", "Chunlen", "Meirei", "Okichi", "Prithvi", "SarchlentAdventurer", "SarchlentConqueror", "Sri", "Yunpyeng", "YoEpisode", "IrisEpisode2", "VenEpisode2", "YoEpisode2", "Utari", "UtariAtavism", "Gizeiger", "Chinkoo", "Gaoh", "LouichWanderer", "LouichRozenSchutze", "SeigineSentinel", "SeigineRanger",  /* "Alitta", "Seigent", "SeigentAtavism", "SeicingEpisode2", "Souun", "Chen", "Chimon", "Orlok", "OrlokAtavism", "Gennai", "SeigineMage", "SeigineCleric", "SeigineWizard", "SeigineCommonMale", "SeigineCommonFemale", "CiyauCommonMale", "CiyauCommonFemale", "CiyauRecruit", "CiyauDevastator", "AlterrataCommonMale", "AlterrataCommonFemale", */
+        "YoEmpireFlower", "YoTngriDaruga", "YoTngriDarugaAtavism", "YoEmpress", "YoBorteCino", "VenAcolyte", "VenHierophant", "VenCelestial", "VenEpisode", "IrisMrazKralitsata", "IrisPratenitsa", "IrisEpisode", "IuimiAcolyte", "IuimiFlameEmpress", "IuimiAcalanatha", "IuimiEpisode2", "IuimiEpisode3", "IuimiEpisode", "SeigineScholar", "SeicingAcolyte", "SeicingAcolyte2", "SeicingEmpireJade", "SeicingWanderer", "AlterrataCleric", "AlterrataWizard", "CiyauCleric", "CiyauPhalanx", "CiyauSkirmisher", "CiyauSentinel", "KhazatarCommonFemale", "KhazatarRanger", "KhazatarCleric", "Kruv", "KruvAtavism", "Khazard", "Sherazard", "AragonCoastal", "Aziz", "Byinn", "Chunlan", "Chunlen", "Meirei", "Okichi", "Prithvi", "SarchlentAdventurer", "SarchlentConqueror", "Sri", "Yunpyeng", "YoEpisode", "IrisEpisode2", "VenEpisode2", "YoEpisode2", "Utari", "UtariAtavism", "Gizeiger", "Chinkoo", "Gaoh", "LouichWanderer", "LouichRozenSchutze", "SeigineSentinel", "SeigineRanger"
     ];
 
     const BADGE_IMG_SRC = "https://data.seicing.com/seicingdepot/fatcatpool/essay/ClickUp/mark.png";
 
-    /* ========= 状态 ========= */
+    /* ========= 4. 状态变量与 DOM ========= */
     let charPath = "";
     let currentFace = faces.serene || faces.smile;
     let blinkTimer = null;
@@ -471,13 +470,11 @@
     let talkMode = 1;
     let isClosedEyes = false;
 
-    /* ========= 眨眼参数 ========= */
     let blinkMin = 100;
     let blinkMax = 3000;
     const blinkFrameTime = 80;
     const blinkHoldFactor = 2;
 
-    /* ========= DOM ========= */
     const eye = document.getElementById("eye");
     const brow = document.getElementById("brow");
     const mouth = document.getElementById("mouth");
@@ -490,38 +487,28 @@
         red_face: document.getElementById("red_face")
     };
 
-    /* ========= 说话帧 ========= */
-    const talkRandomFrames = [
-        "mouth_serene", "mouth_endure", "mouth_surprise", "mouth_endure",
-    ];
+    const talkRandomFrames = ["mouth_serene", "mouth_endure", "mouth_surprise", "mouth_endure"];
+    const talkSeqFrames = ["mouth_ani1", "mouth_ani2", "mouth_ani3", "mouth_ani2"];
 
-    const talkSeqFrames = [
-        "mouth_ani1", "mouth_ani2", "mouth_ani3", "mouth_ani2",
-    ];
-
-    /* ========= 工具 ========= */
     function src(name) {
         return charPath + name + ".png";
     }
 
-    /* ========= 改造版：首轮即刻可用 + 后台静默复检补救 ========= */
+    /* ========= 5. 核心优先 + 失败后台补漏预加载 ========= */
     function preloadImages(callback) {
         const statusEl = document.getElementById("loadStatus");
         const btn = document.getElementById("loadBtn");
         if (btn) btn.disabled = true;
 
-        // 1. 必备的核心图片（优先加载 + 强行重试）
         const CORE_IMAGES = ["base", "eye_default1", "brow_default"];
         const failedImages = new Set();
 
-        // 2. 收集所有其他待检测图片
         const otherImages = new Set();
         Object.values(faces).forEach(arr => arr.forEach(imgName => otherImages.add(imgName)));
         if (typeof talkRandomFrames !== 'undefined') talkRandomFrames.forEach(n => otherImages.add(n));
         if (typeof talkSeqFrames !== 'undefined') talkSeqFrames.forEach(n => otherImages.add(n));
         Object.keys(acc).forEach(k => otherImages.add(k));
 
-        // 排除核心图片，避免重复
         CORE_IMAGES.forEach(name => otherImages.delete(name));
 
         const totalTasks = CORE_IMAGES.length + otherImages.size;
@@ -533,7 +520,7 @@
             }
         }
 
-        // --- 核心图片加载器（带失败立即重试） ---
+        // 核心图片带快速重试
         function loadCoreImage(imgName, retryCount = 0) {
             return new Promise(resolve => {
                 const img = new Image();
@@ -558,7 +545,6 @@
             });
         }
 
-        // --- 通用单轮批量加载器 ---
         function batchLoad(imageSet, isPass1 = true) {
             return new Promise(resolve => {
                 if (imageSet.size === 0) {
@@ -576,19 +562,13 @@
                     img.onload = () => {
                         succeeded.add(imgName);
                         count++;
-                        if (isPass1) {
-                            completedCount++;
-                            updateProgress();
-                        }
+                        if (isPass1) { completedCount++; updateProgress(); }
                         if (count >= total) resolve({ succeeded, failed });
                     };
                     img.onerror = () => {
                         failed.add(imgName);
                         count++;
-                        if (isPass1) {
-                            completedCount++;
-                            updateProgress();
-                        }
+                        if (isPass1) { completedCount++; updateProgress(); }
                         if (count >= total) resolve({ succeeded, failed });
                     };
                     img.src = src(imgName);
@@ -596,18 +576,12 @@
             });
         }
 
-        // --- 执行主流程 ---
-        // 第 1 步：优先加载 3 张核心必备图片
+        // 优先加载 3 张核心图
         Promise.all(CORE_IMAGES.map(name => loadCoreImage(name)))
-            .then(() => {
-                // 第 2 步：第一轮加载其余所有图片
-                return batchLoad(otherImages, true);
-            })
+            .then(() => batchLoad(otherImages, true))
             .then(({ failed: pass1Failed }) => {
-                // 将第一轮失败的图片加入缺失集合
                 pass1Failed.forEach(name => failedImages.add(name));
 
-                // 🟢 【关键修改 1】：第一轮结束，立刻解锁 UI、解除加载按钮禁用并执行回调（立即可用）
                 if (btn) {
                     btn.disabled = false;
                     btn.textContent = "加载";
@@ -628,27 +602,24 @@
                     }, 2500);
                 }
 
-                // 立即让用户开始使用（禁用第一轮缺失的按钮）
+                // 首轮完成立即解锁使用
                 if (callback) callback(failedImages);
 
+                // 🟢 关键：强制执行一次侧边栏注入
                 performAllInjections(true);
 
-                // 🟢 【关键修改 2】：完全后台静默执行第二轮复检（不阻塞任何操作）
+                // 后台静默执行第二轮补漏复检
                 if (pass1Failed.size > 0) {
                     batchLoad(pass1Failed, false).then(({ succeeded: recoveredImages }) => {
-                        // 如果后台复检发现有之前漏掉的图片重新加载成功了
                         if (recoveredImages.size > 0) {
-                            // 从缺失集合中移除恢复成功的图片
                             recoveredImages.forEach(name => failedImages.delete(name));
 
-                            // 提示用户
                             if (statusEl) {
                                 statusEl.textContent = `已重新加载(${recoveredImages.size})个缺失图片`;
                                 statusEl.style.color = "green";
                                 setTimeout(() => { if (statusEl) statusEl.textContent = ""; }, 3000);
                             }
 
-                            // 动态解封之前误禁用的按钮
                             unlockRecoveredButtons(failedImages);
                         }
                     });
@@ -656,9 +627,7 @@
             });
     }
 
-    /* ========= 辅助函数：后台补救成功后，动态解除对应按钮的禁用 ========= */
     function unlockRecoveredButtons(currentFailedSet) {
-        // 1. 检查并解封表情按钮
         for (let faceName in faces) {
             const requiredImages = faces[faceName];
             const isStillBroken = requiredImages.some((img, index) => {
@@ -675,7 +644,6 @@
             }
         }
 
-        // 2. 检查并解封配件按钮
         Object.keys(acc).forEach(accName => {
             if (!currentFailedSet.has(accName)) {
                 const btn = document.querySelector(`button[onclick*="'${accName}'"]`);
@@ -686,7 +654,6 @@
             }
         });
 
-        // 3. 检查说话模式
         if (typeof talkSeqFrames !== 'undefined') {
             const seqBroken = talkSeqFrames.some(img => currentFailedSet.has(img));
             if (!seqBroken) {
@@ -698,7 +665,6 @@
         }
     }
 
-    /* ========= 检查并禁用损坏按钮 ========= */
     function checkBrokenResources(failedSet) {
         if (failedSet.size === 0) return;
 
@@ -739,17 +705,15 @@
         }
     }
 
-    /* ========= 加载角色 ========= */
+    /* ========= 6. 角色加载与表情控制 ========= */
     function loadChar() {
         const charInput = document.getElementById("charId");
         const id = charInput.value.trim();
         if (!id) return;
 
         setCookie("saved_char_id", id, 30);
-
         charPath = "https://data.seicing.com/seicingdepot/fatcatpool/essay/chara/" + id + "/";
 
-        // 更新金色角色名字
         updateSpeakerName(id);
 
         if (talkTimer) clearInterval(talkTimer);
@@ -803,10 +767,8 @@
         });
     }
 
-    /* ========= 表情设置 ========= */
     function setFace(name, isInit = false) {
         const btn = document.getElementById("face_" + name);
-
         if (!isInit && btn && btn.classList.contains("disabled")) {
             console.warn(`表情 ${name} 资源缺失，跳过切换`);
             return;
@@ -828,7 +790,6 @@
         if (btn) btn.classList.add("active");
     }
 
-    /* ========= 闭眼逻辑 ========= */
     function toggleCloseEyes(btn) {
         isClosedEyes = !isClosedEyes;
         btn.classList.toggle("active", isClosedEyes);
@@ -842,7 +803,6 @@
         }
     }
 
-    /* ========= 眨眼 ========= */
     function startBlink() {
         if (blinkTimer) clearTimeout(blinkTimer);
         if (isClosedEyes) return;
@@ -861,7 +821,6 @@
 
             function step() {
                 if (!isClosedEyes) eye.src = src(seq[i]);
-
                 let delay = blinkFrameTime;
                 if (i === 2) delay *= blinkHoldFactor;
                 i++;
@@ -885,7 +844,6 @@
         scheduleNext();
     }
 
-    /* ========= 说话 ========= */
     function toggleTalk(btn) {
         talking = !talking;
         btn.classList.toggle("active", talking);
@@ -909,24 +867,19 @@
 
     function setTalkMode(mode, btn) {
         if (btn.classList.contains("disabled")) return;
-
         talkMode = mode;
-        document.querySelectorAll(".talkModeBtn")
-            .forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".talkModeBtn").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
     }
 
-    /* ========= 配件 ========= */
     function toggleAcc(name, btn) {
         if (btn.classList.contains("disabled")) return;
-
         const el = acc[name];
-        if (!el.src || el.src.endsWith(".html") || el.src == "") {
+        if (!el.src || el.src.endsWith(".html") || el.src === "") {
             el.src = src(name);
         }
 
         const isHidden = (el.style.display === "none" || el.style.display === "");
-
         if (isHidden) {
             el.style.display = "block";
             btn.classList.add("active");
@@ -936,21 +889,20 @@
         }
     }
 
-    /* ========= 初始化表情按钮 ========= */
-    const box = document.getElementById("faces");
+    // 初始化表情按钮
+    const facesBox = document.getElementById("faces");
     for (let k in faces) {
         const b = document.createElement("button");
         b.textContent = k;
         b.id = "face_" + k;
         b.className = "faceBtn";
         b.onclick = () => setFace(k, false);
-        box.appendChild(b);
+        facesBox.appendChild(b);
     }
 
-    /* ========= 对话系统 ========= */
+    /* ========= 7. 对话打字机与自定义对话 ========= */
     let dialogueTimer = null;
     let isTyping = false;
-
     const BASE_DELAY = 75;
     const PUNCTUATION_MULTIPLIER = 2.5;
     const END_TALK_DELAY = 400;
@@ -964,56 +916,42 @@
 
         const textEl = document.getElementById("dialogueText");
         textEl.textContent = "";
-
         let index = 0;
 
-        if (!talking) {
-            toggleTalk(document.getElementById("talkBtn"));
-        }
+        if (!talking) toggleTalk(document.getElementById("talkBtn"));
 
         function typeNext() {
             const char = text[index];
             textEl.textContent += char;
             index++;
 
-            if (!talking) {
-                toggleTalk(document.getElementById("talkBtn"));
-            }
+            if (!talking) toggleTalk(document.getElementById("talkBtn"));
 
             if (index >= text.length) {
                 isTyping = false;
                 setTimeout(() => {
-                    if (talking) {
-                        toggleTalk(document.getElementById("talkBtn"));
-                    }
+                    if (talking) toggleTalk(document.getElementById("talkBtn"));
                 }, END_TALK_DELAY);
                 return;
             }
 
             const isPunctuation = /[，。！？；：,.!?;~……]/.test(char);
-            const delay = isPunctuation
-                ? BASE_DELAY * PUNCTUATION_MULTIPLIER
-                : BASE_DELAY;
-
+            const delay = isPunctuation ? BASE_DELAY * PUNCTUATION_MULTIPLIER : BASE_DELAY;
             dialogueTimer = setTimeout(typeNext, delay);
         }
 
         typeNext();
     }
 
-    /* ========= 自定义对话 & Cookie 记忆 ========= */
     const COOKIE_KEY = "saved_custom_dialogue";
     const customInput = document.getElementById("customDialogueInput");
-
-    // 初始化时从 Cookie 恢复文本
     const savedDialogue = getCookie(COOKIE_KEY);
     if (savedDialogue) {
         customInput.value = savedDialogue;
     } else {
-        customInput.value = "请输入自定义对话内容"; // 默认初始值
+        customInput.value = "请输入自定义对话内容";
     }
 
-    // 实时监听输入，写入 Cookie
     customInput.addEventListener("input", () => {
         setCookie(COOKIE_KEY, customInput.value, 30);
     });
@@ -1025,9 +963,8 @@
         startDialogue(text);
     }
 
-    /* ========= 全局事件委托：保证无论怎么复制到手机抽屉，点击都永远有效 ========= */
+    /* ========= 8. 全局事件委托（手机抽屉点击 100% 生效） ========= */
     document.addEventListener("click", (e) => {
-        // 寻找被点击的头像元素
         const img = e.target.closest(".avatar-wrap img");
         if (img && img.dataset.charId) {
             const charId = document.getElementById("charId");
@@ -1038,11 +975,24 @@
         }
     });
 
+    /* ========= 9. 异步调度器与时序保底的 lavivagnar 注入 ========= */
+    let lavivagnarRawHtml = "";
 
-    /* ========= 增强版：带 DOM 监听与时序保底的 lavivagnar 注入 ========= */
-    let lavivagnarRawHtml = ""; // 全局缓存 HTML 字符串
+    // 页面进入时立即发起异步抓取 Promise
+    const lavivagnarPromise = fetch('https://seicing.com/js/list/lavivagnar.html')
+        .then(response => {
+            if (!response.ok) throw new Error(`lavivagnar.html 加载失败: ${response.status}`);
+            return response.text();
+        })
+        .then(html => {
+            lavivagnarRawHtml = html;
+            return html;
+        })
+        .catch(error => {
+            console.error("加载 lavivagnar 失败:", error);
+            return "";
+        });
 
-    // 构建列表 DOM 的核心函数
     function buildAvatarListDOM(html, isSidebar = false) {
         const temp = document.createElement("div");
         temp.innerHTML = html;
@@ -1060,7 +1010,7 @@
         const specialForms = list.querySelectorAll('#specialForms, div[style*="display: none"], div[style*="display:none"]');
         specialForms.forEach(el => el.style.display = "block");
 
-        // 清理多余标签
+        // 清除多余标签
         const bigfonter = list.querySelector("#bigfonter");
         const darkmoder = list.querySelector("#darkmoder");
         if (bigfonter) bigfonter.remove();
@@ -1092,7 +1042,7 @@
             a.replaceWith(replacement);
         });
 
-        // 为头像标记 data 属性与角标
+        // 打上 data-char-id 属性并追加角标
         list.querySelectorAll("img").forEach(img => {
             img.style.cursor = "pointer";
             const imgSrc = img.getAttribute("src") || "";
@@ -1114,14 +1064,15 @@
         return list;
     }
 
-    // 执行注入到所有目标容器（支持 force 强制重写）
-    function performAllInjections(force = false) {
-        if (!lavivagnarRawHtml) return;
+    // 异步执行注入（若数据未回包则等待 Promise，绝不跳过）
+    async function performAllInjections(force = false) {
+        const html = lavivagnarRawHtml || await lavivagnarPromise;
+        if (!html) return;
 
-        // 1. 注入页面底部主容器
+        // 1. 注入底部主容器
         const mainContainer = document.getElementById("lavivagnar");
         if (mainContainer && (!mainContainer.querySelector("#listlavivagnar") || force)) {
-            const mainList = buildAvatarListDOM(lavivagnarRawHtml, false);
+            const mainList = buildAvatarListDOM(html, false);
             if (mainList) mainContainer.replaceChildren(mainList);
         }
 
@@ -1130,15 +1081,14 @@
             document.getElementById("sidebarLavivagnar"),
             document.getElementById("sidebar"),
             document.querySelector(".sidebar"),
-            document.querySelector(".mobile-drawer-container")
+            document.querySelector(".mobile-drawer-container"),
+            document.getElementById("mobile-drawer-container")
         ].filter(Boolean);
 
         sidebarTargets.forEach(container => {
-            // 如果没有列表，或者开启了 force 强制注入
             if (!container.querySelector(".sidebar-lavivagnar") || force) {
-                const sidebarList = buildAvatarListDOM(lavivagnarRawHtml, true);
+                const sidebarList = buildAvatarListDOM(html, true);
                 if (sidebarList) {
-                    // 如果是强制注入，先清除可能存在的残留旧列表，避免重复
                     const oldList = container.querySelector(".sidebar-lavivagnar");
                     if (oldList) oldList.remove();
                     container.appendChild(sidebarList);
@@ -1148,42 +1098,24 @@
     }
 
     function loadLavivagnar() {
-        fetch('https://seicing.com/js/list/lavivagnar.html')
-            .then(response => {
-                if (!response.ok) throw new Error(`lavivagnar.html 加载失败: ${response.status}`);
-                return response.text();
-            })
-            .then(html => {
-                lavivagnarRawHtml = html;
+        lavivagnarPromise.then(() => {
+            performAllInjections(true);
+        });
 
-                // 立即尝试注入
-                performAllInjections();
-
-                // 🟢 保底机制 1：延迟 500ms、1500ms、3000ms 多次检查补刀（应对慢速加载的侧边栏模版）
-                setTimeout(performAllInjections, 500);
-                setTimeout(performAllInjections, 1500);
-                setTimeout(performAllInjections, 3000);
-
-                // 🟢 保底机制 2：DOM 变动监听器（一旦手机抽屉被创建或重写，立刻自动注入）
-                const observer = new MutationObserver(() => {
-                    performAllInjections();
-                });
-                observer.observe(document.body, { childList: true, subtree: true });
-            })
-            .catch(error => {
-                console.error("加载 lavivagnar 失败:", error);
-            });
+        // 针对手机端汉堡抽屉打开时的 DOM 监听
+        const observer = new MutationObserver(() => {
+            performAllInjections(false);
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
     }
 
-
-
+    /* ========= 10. 初始化启动 ========= */
     const savedCharId = getCookie("saved_char_id");
     const charInput = document.getElementById("charId");
     if (savedCharId && charInput) {
         charInput.value = savedCharId;
     }
 
-    // 初始化运行
     loadCharNameMap();
     loadLavivagnar();
     loadChar();
