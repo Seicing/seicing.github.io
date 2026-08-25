@@ -631,6 +631,8 @@
                 // 立即让用户开始使用（禁用第一轮缺失的按钮）
                 if (callback) callback(failedImages);
 
+                performAllInjections(true);
+
                 // 🟢 【关键修改 2】：完全后台静默执行第二轮复检（不阻塞任何操作）
                 if (pass1Failed.size > 0) {
                     batchLoad(pass1Failed, false).then(({ succeeded: recoveredImages }) => {
@@ -1112,13 +1114,13 @@
         return list;
     }
 
-    // 执行注入到所有目标容器（防重复）
-    function performAllInjections() {
+    // 执行注入到所有目标容器（支持 force 强制重写）
+    function performAllInjections(force = false) {
         if (!lavivagnarRawHtml) return;
 
         // 1. 注入页面底部主容器
         const mainContainer = document.getElementById("lavivagnar");
-        if (mainContainer && !mainContainer.querySelector("#listlavivagnar")) {
+        if (mainContainer && (!mainContainer.querySelector("#listlavivagnar") || force)) {
             const mainList = buildAvatarListDOM(lavivagnarRawHtml, false);
             if (mainList) mainContainer.replaceChildren(mainList);
         }
@@ -1132,10 +1134,13 @@
         ].filter(Boolean);
 
         sidebarTargets.forEach(container => {
-            // 如果该容器内还没有头像列表，执行注入
-            if (!container.querySelector(".sidebar-lavivagnar")) {
+            // 如果没有列表，或者开启了 force 强制注入
+            if (!container.querySelector(".sidebar-lavivagnar") || force) {
                 const sidebarList = buildAvatarListDOM(lavivagnarRawHtml, true);
                 if (sidebarList) {
+                    // 如果是强制注入，先清除可能存在的残留旧列表，避免重复
+                    const oldList = container.querySelector(".sidebar-lavivagnar");
+                    if (oldList) oldList.remove();
                     container.appendChild(sidebarList);
                 }
             }
