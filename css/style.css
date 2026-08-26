@@ -898,7 +898,20 @@ a {
     /* 聚焦时边框稍微变亮高亮 */
 }
 
+/* 搜索提示里的可点击标签样式 */
+.search-tag {
+    color: var(--special-link-color) !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    margin-right: 6px !important;
+    display: inline-block !important;
+    transition: opacity 0.2s !important;
+}
 
+.search-tag:hover {
+    text-decoration: underline !important;
+    opacity: 0.8 !important;
+}
 
 
 

@@ -90,9 +90,18 @@ B站空间：<a class="special-text-link" href="https://space.bilibili.com/67718
     <details>
         替代、系列标签(例：搜索“磨坊”可以搜索到“大酒庄”、“双子宣礼塔神学院”；搜索“轻骑兵”可以搜索到“斥候骑兵”、“轻骑兵”、“翼骑兵”、“波兰翼骑兵”)<br>
         <br>
-        #帝国时代1 #帝国时代2 #神话时代 #帝国时代4 #部队 #建筑 #独特部队 #区域部队 #通用部队 #火药部队 #城堡独特部队 #石制防御建筑 #编年史部队 #编辑器部队 #神话单位 #次神 #主神<br>
-        (帝国4专用)#近战步兵 #远程步兵 #远程骑兵 #近战骑兵 #战斗舰船 #非战斗舰船<br>
-        (文明7专用)#古典时代文明 #探索时代文明 #近世时代文明 #无最强文明<br>
+        <a class="search-tag">#帝国时代1</a> <a class="search-tag">#帝国时代2</a> <a class="search-tag">#神话时代</a> <a
+            class="search-tag">#帝国时代4</a> <a class="search-tag">#部队</a> <a class="search-tag">#建筑</a> <a
+            class="search-tag">#独特部队</a> <a class="search-tag">#区域部队</a> <a class="search-tag">#通用部队</a> <a
+            class="search-tag">#火药部队</a> <a class="search-tag">#城堡独特部队</a> <a class="search-tag">#石制防御建筑</a> <a
+            class="search-tag">#编年史部队</a> <a class="search-tag">#编辑器部队</a> <a class="search-tag">#神话单位</a> <a
+            class="search-tag">#次神</a> <a class="search-tag">#主神</a><br>
+
+        (帝国4专用)<a class="search-tag">#近战步兵</a> <a class="search-tag">#远程步兵</a> <a class="search-tag">#远程骑兵</a> <a
+            class="search-tag">#近战骑兵</a> <a class="search-tag">#战斗舰船</a> <a class="search-tag">#非战斗舰船</a><br>
+
+        (文明7专用)<a class="search-tag">#古典时代文明</a> <a class="search-tag">#探索时代文明</a> <a class="search-tag">#近世时代文明</a> <a
+            class="search-tag">#无最强文明</a><br>
     </details>
 </div>
 <div id="search-wrapper" style="width:800px; clear:both; margin-bottom: 50px;">
@@ -252,6 +261,39 @@ B站空间：<a class="special-text-link" href="https://space.bilibili.com/67718
             }
         });
     });
+
+    document.addEventListener("click", function (e) {
+        if (e.target && e.target.classList.contains("search-tag")) {
+            e.preventDefault();
+
+            // 1. 获取点击的标签名（去掉 # 号）
+            const keyword = e.target.textContent.replace(/^#/, '').trim();
+
+            const input = document.querySelector(".pagefind-ui__search-input");
+            if (input) {
+                // 2. 获取输入框当前已有的词，按空格拆分成数组
+                let currentText = input.value.trim();
+                let words = currentText ? currentText.split(/\s+/) : [];
+
+                // 3. 智能判断：
+                const index = words.indexOf(keyword);
+                if (index > -1) {
+                    // 如果已经点过了，再次点击就“取消选中”（从输入框移除）
+                    words.splice(index, 1);
+                } else {
+                    // 如果没有，就追加在后面
+                    words.push(keyword);
+                }
+
+                // 4. 用空格连接多个词重新填入输入框
+                input.value = words.join(" ");
+
+                // 5. 触发 Pagefind 进行组合多词搜索
+                input.dispatchEvent(new Event("input", { bubbles: true }));
+                input.focus();
+            }
+        }
+    }); 
 </script>
 
 </html>
