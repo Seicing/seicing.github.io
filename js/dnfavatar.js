@@ -313,7 +313,8 @@ const avatarData = [
             { "title": "애프터 크리스마스", "path": "rabbit" },
             { "title": "초원의 영혼", "path": "indian" },
             { "title": "프로스트 킹덤", "path": "frostkingdom" },
-            { "title": "공모전", "path": "gongmu" }
+            { "title": "공모전", "path": "gongmu" },
+            { "title": "숲속의 유랑악단", "path": "forestband" },
         ]
     },
     {
