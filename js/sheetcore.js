@@ -53,7 +53,7 @@
         {
             name: "DNF_Icon",
             jsonUrl: "https://seicing.com/js/sheet/dnficon.json",
-            sheetUrl: "https://seicing.com/res/dnficon.png",
+            sheetUrl: "https://data.seicing.com/seicingdepot/dfclass/equipment/dnficon.png",
             rootMatch: "dfclass/",
             folders: [
                 "equipment", "equipment2", "equipment3", "equipment4",
@@ -68,23 +68,15 @@
         {
             name: "DNF_skillicon",
             jsonUrl: "https://seicing.com/js/sheet/dnfskillicon.json",
-            sheetUrl: "https://seicing.com/res/dnfskillicon.png",
+            sheetUrl: "https://data.seicing.com/seicingdepot/dfclass/dnfskillicon.png",
             rootMatch: "dfclass/",
             folders: ["skillicon", "characters"]
         },
-        // === 第 1 组：DNF 装备与图标 ===
-        //   {
-        //       name: "DNF_skillicon_new",
-        //        jsonUrl: "https://seicing.com/js/sheet/dnfskilliconnew.json",
-        //      sheetUrl: "https://seicing.com/res/dnfskilliconnew.png",
-        //     rootMatch: "dfclass/",
-        //      folders: ["characters"]
-        //   },
 
         {
             name: "lolsprite",
             jsonUrl: "https://seicing.com/js/sheet/lolsprite.json",
-            sheetUrl: "https://seicing.com/res/lolsprite.jpg",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/lol/lolsprite.jpg",
             rootMatch: "3fatcatpool/",
             folders: ["lol"]
         },
@@ -92,7 +84,7 @@
         {
             name: "magiccard",
             jsonUrl: "https://seicing.com/js/sheet/magiccard.json",
-            sheetUrl: "https://seicing.com/res/magiccard.png",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/magiccard/magiccard.png",
             rootMatch: "3fatcatpool/",
             folders: ["magiccard"]
         },
@@ -100,7 +92,7 @@
         {
             name: "lang2",
             jsonUrl: "https://seicing.com/js/sheet/lang2.json",
-            sheetUrl: "https://seicing.com/res/lang2.png",
+            sheetUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/lang2/lang2.png",
             rootMatch: "2fatcatpool/",
             folders: ["lang2"]
         },
@@ -108,7 +100,7 @@
         {
             name: "Genghis",
             jsonUrl: "https://seicing.com/js/sheet/Genghis.json",
-            sheetUrl: "https://seicing.com/res/Genghis.png",
+            sheetUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/Genghis.png",
             rootMatch: "2fatcatpool/",
             folders: ["Genghis"]
         },
@@ -116,9 +108,25 @@
         {
             name: "riseofnations",
             jsonUrl: "https://seicing.com/js/sheet/riseofnations.json",
-            sheetUrl: "https://seicing.com/res/riseofnations.jpg",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/ron/riseofnations.jpg",
             rootMatch: "3fatcatpool/ron/",
             folders: ["commonmini", "resourcemini", "wondermini"]
+        },
+
+        {
+            name: "aoe2tech",
+            jsonUrl: "https://seicing.com/js/sheet/aoe2tech.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树/aoe2tech.jpg",
+            rootMatch: "3fatcatpool/",
+            folders: ["科技树",]
+        },
+
+        {
+            name: "aoe1tech",
+            jsonUrl: "https://seicing.com/js/sheet/aoe1tech.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树古代/aoe1tech.jpg",
+            rootMatch: "3fatcatpool/",
+            folders: ["科技树古代", "科技树1",]
         },
     ];
 
