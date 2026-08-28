@@ -3327,8 +3327,7 @@ function CavalryArcher() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
-
-    document.getElementById("Franks").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
     document.getElementById("Celts2").classList.add("aoeTechIconOff");
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
@@ -3358,8 +3357,7 @@ function HeavyCavalryArcher() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
-
-    document.getElementById("Franks").classList.add("aoeTechIconOff");
+    document.getElementById("Franks2").classList.add("aoeTechIconOff");
     document.getElementById("Celts2").classList.add("aoeTechIconOff");
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
