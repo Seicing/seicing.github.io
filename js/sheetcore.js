@@ -115,10 +115,10 @@
 
         {
             name: "aoe2tech",
-            jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树/aoe2tech.json",
-            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树/aoe2tech.jpg",
+            jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/techtree2/aoe2tech.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/techtree2/aoe2tech.jpg",
             rootMatch: "3fatcatpool/",
-            folders: ["科技树",]
+            folders: ["techtree2",]
         },
         {
             name: "aoe2common",
@@ -129,10 +129,10 @@
         },
         {
             name: "aoe1tech",
-            jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树古代/aoe1tech.json",
-            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/科技树古代/aoe1tech.jpg",
+            jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/techtree1/aoe1tech.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/techtree1/aoe1tech.jpg",
             rootMatch: "3fatcatpool/",
-            folders: ["科技树古代", "科技树1",]
+            folders: ["techtree", "techtree1",]
         },
         {
             name: "aoe1common",
