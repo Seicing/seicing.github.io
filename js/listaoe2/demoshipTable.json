@@ -142,6 +142,20 @@
             "civ": "Italians"
         },
         {
+            "tech": "丹麦掠夺",
+            "showId": "丹麦掠夺",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Danes.png",
+            "score": 1,
+            "civ": "Danes"
+        },
+        {
+            "tech": "丹麦速度",
+            "showId": "丹麦速度",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Danes.png",
+            "score": 1,
+            "civ": "Danes"
+        },
+        {
             "tech": "波斯工作效率",
             "showId": "波斯工作效率",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Persians.png",
@@ -220,6 +234,54 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/精锐龙头战舰.webp",
             "score": 2,
             "civ": "Vikings",
+            "replace": "HeavyDemolitionShip"
+        },
+        {
+            "tech": "Longboat2",
+            "showId": "龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/龙头战舰.webp",
+            "score": 1,
+            "civ": "Saxons",
+            "replace": "DemolitionShip"
+        },
+        {
+            "tech": "EliteLongboat2",
+            "showId": "精锐龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/精锐龙头战舰.webp",
+            "score": 2,
+            "civ": "Saxons",
+            "replace": "HeavyDemolitionShip"
+        },
+        {
+            "tech": "Longboat3",
+            "showId": "龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/龙头战舰.webp",
+            "score": 1,
+            "civ": "Danes",
+            "replace": "DemolitionShip"
+        },
+        {
+            "tech": "EliteLongboat3",
+            "showId": "精锐龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/精锐龙头战舰.webp",
+            "score": 2,
+            "civ": "Danes",
+            "replace": "HeavyDemolitionShip"
+        },
+        {
+            "tech": "Longboat4",
+            "showId": "龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/龙头战舰.webp",
+            "score": 1,
+            "civ": "Varangians",
+            "replace": "DemolitionShip"
+        },
+        {
+            "tech": "EliteLongboat4",
+            "showId": "精锐龙头战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/精锐龙头战舰.webp",
+            "score": 2,
+            "civ": "Varangians",
             "replace": "HeavyDemolitionShip"
         },
         {
