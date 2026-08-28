@@ -99,8 +99,8 @@
 
         {
             name: "Genghis",
-            jsonUrl: "https://seicing.com/js/sheet/Genghis.json",
-            sheetUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/Genghis.png",
+            jsonUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/Genghis/Genghis.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/Genghis/Genghis.png",
             rootMatch: "2fatcatpool/",
             folders: ["Genghis"]
         },
@@ -122,8 +122,8 @@
         },
         {
             name: "aoe2common",
-            jsonUrl: "https://seicing.com/js/sheet/aoe2common.json",
-            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe/common/aoe2common.jpg",
+            jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/aoe2common.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/aoe2common.jpg",
             rootMatch: "3fatcatpool/aoe2/",
             folders: ["common",]
         },
