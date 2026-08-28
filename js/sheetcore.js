@@ -141,6 +141,13 @@
             rootMatch: "3fatcatpool/aoe/",
             folders: ["common",]
         },
+        {
+            name: "clickUp",
+            jsonUrl: "https://data.seicing.com/seicingdepot/essay/clickUp/clickUp.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/essay/clickUp/clickUp.png",
+            rootMatch: "essay/",
+            folders: ["clickUp",]
+        },
     ];
 
     /* ================= 2. 缓存管理 ================= */
