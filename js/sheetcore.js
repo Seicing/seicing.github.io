@@ -98,11 +98,11 @@
         },
 
         {
-            name: "Genghis",
-            jsonUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/Genghis/Genghis.json",
-            sheetUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/Genghis/Genghis.png",
+            name: "genghis",
+            jsonUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/genghis/genghis.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/2fatcatpool/genghis/genghis.png",
             rootMatch: "2fatcatpool/",
-            folders: ["Genghis"]
+            folders: ["genghis"]
         },
 
         {
