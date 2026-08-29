@@ -3542,6 +3542,9 @@ function CamelRider() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function HeavyCamelRider() {
@@ -3586,6 +3589,9 @@ function HeavyCamelRider() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function TrebuchetCommon() {
