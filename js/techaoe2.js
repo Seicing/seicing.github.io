@@ -845,7 +845,7 @@ let ayanami = {
     "撒克逊加成4": /*html*/`撒克逊加成4<br>【待补充】`,
     "撒克逊团队加成": /*html*/`撒克逊团队加成<br>【待补充】`,
 
-    "狂战士之怒": /*html*/`狂战士之怒<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵生命值越少，造成的伤害越强`,
+    "狂战士之怒": /*html*/`狂战士之怒<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵生命值越少，伤害越高`,
     "北民之怒": /*html*/`北民之怒<br>Northmen’s Fury<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>攻城单位和攻城船对建筑伤害 +40%，投石车和攻城船攻击距离+1`,
     "丹麦额外食物": /*html*/`丹麦额外食物<br>村民和渔船提交5%的额外食物`,
     "丹麦升级": /*html*/`丹麦升级<br>兵营和攻城武器厂升级黄金-66%`,
