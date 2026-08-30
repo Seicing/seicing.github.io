@@ -341,21 +341,49 @@ body.layout-headless.theme-dark #wrapper2 {
 .aoe4statsage1 {
     background-color: var(--aoe4-statsage1);
     color: var(--aoe4-statsagefont);
+    width: 30px;
 }
 
 .aoe4statsage2 {
     background-color: var(--aoe4-statsage2);
     color: var(--aoe4-statsagefont);
+    width: 30px;
 }
 
 .aoe4statsage3 {
     background-color: var(--aoe4-statsage3);
     color: var(--aoe4-statsagefont);
+    width: 30px;
 }
 
 .aoe4statsage4 {
     background-color: var(--aoe4-statsage4);
     color: var(--aoe4-statsagefont);
+    width: 30px;
+}
+
+.aoe4statsspage1 {
+    background-color: var(--aoe4-statsage1);
+    color: var(--aoe4-statsagefont);
+    width: auto;
+}
+
+.aoe4statsspage2 {
+    background-color: var(--aoe4-statsage2);
+    color: var(--aoe4-statsagefont);
+    width: auto;
+}
+
+.aoe4statsspage3 {
+    background-color: var(--aoe4-statsage3);
+    color: var(--aoe4-statsagefont);
+    width: auto;
+}
+
+.aoe4statsspage4 {
+    background-color: var(--aoe4-statsage4);
+    color: var(--aoe4-statsagefont);
+    width: auto;
 }
 
 .saga2tablebg {
