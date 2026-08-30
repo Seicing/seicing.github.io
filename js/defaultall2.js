@@ -463,9 +463,11 @@ window.addEventListener('resize', debounce(function () {
         if (!document.body) return;
         if (size === 'big') {
             document.body.style.fontSize = '12pt';
+            document.body.classList.add('font-big');    // 标记开启大字体
         }
         else {
             document.body.style.fontSize = '9pt';
+            document.body.classList.remove('font-big'); // 标记关闭大字体
         }
         const colors = getButtonColors();
         // 单一字体切换按钮

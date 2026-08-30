@@ -1225,6 +1225,10 @@ div {
     width: 80px;
 }
 
+body.font-big .crychic {
+    width: 100px;
+}
+
 .hrsty {
     height: 1px;
     border: none;
