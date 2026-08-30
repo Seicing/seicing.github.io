@@ -1203,8 +1203,17 @@ body.font-big #celp255 td {
     width: 250px;
 }
 
+body.font-big #celp250 {
+    border: var(--border-table);
+    width: 265px;
+}
+
 #celp250 td {
     padding: 5px;
+}
+
+body.font-big #celp250 td {
+    padding: 4px;
 }
 
 #celp220 {
