@@ -1194,6 +1194,10 @@ body.font-big #celp255 {
     width: 265px;
 }
 
+body.font-big #celp255 td {
+    padding: 4px;
+}
+
 #celp250 {
     border: var(--border-table);
     width: 250px;
