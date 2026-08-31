@@ -3785,6 +3785,7 @@ function CannonGalleon() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function EliteCannonGalleon() {
@@ -3821,6 +3822,7 @@ function EliteCannonGalleon() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Galleon() {
