@@ -837,16 +837,16 @@ let ayanami = {
     "龙头战舰": /*html*/`龙头战舰<br>Longship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>北欧区域部队，连续发射多支箭矢`,
     "精锐龙头战舰": /*html*/`精锐龙头战舰<br>Elite Longship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>北欧区域部队，连续发射多支箭矢<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>750 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>475 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60`,
 
-    "撒克逊银冠": /*html*/`撒克逊银冠<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>【待补充】`,
-    "撒克逊金冠": /*html*/`撒克逊金冠<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>【待补充】`,
-    "撒克逊加成1": /*html*/`撒克逊加成1<br>【待补充】`,
-    "撒克逊加成2": /*html*/`撒克逊加成2<br>【待补充】`,
-    "撒克逊加成3": /*html*/`撒克逊加成3<br>【待补充】`,
-    "撒克逊加成4": /*html*/`撒克逊加成4<br>【待补充】`,
-    "撒克逊团队加成": /*html*/`撒克逊团队加成<br>【待补充】`,
+    "文员募集": /*html*/`文员募集<br>Clerical Recruitment<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>僧侣射程+1，训练速度+33%`,
+    "盾墙": /*html*/`盾墙<br>Shield Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵在靠近时获得额外护甲`,
+    "撒克逊虚空石头": /*html*/`撒克逊虚空石头<br>建造资源投放建筑后，获得额外的50食物和10石头`,
+    "撒克逊步兵成本": /*html*/`撒克逊步兵成本<br>每个被玩家控制的城镇中心和城堡减少5%步行士兵的成本(最大-20%)`,
+    "撒克逊塔楼": /*html*/`撒克逊塔楼<br>塔和城堡在城堡时代发射+100%的基础箭矢`,
+    "撒克逊海军": /*html*/`撒克逊海军<br>龙头战舰和大型投石战舰+20%生命值`,
+    "撒克逊团队加成": /*html*/`撒克逊团队加成<br>修理工工作速度+25%`,
 
     "狂战士之怒": /*html*/`狂战士之怒<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵生命值越少，伤害越高`,
-    "北民之怒": /*html*/`北民之怒<br>Northmen’s Fury<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>攻城单位和攻城船对建筑伤害 +40%，投石车和攻城船攻击距离+1`,
+    "北民之怒": /*html*/`北民之怒<br>Northmen’s Fury<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>攻城单位和攻城船 +40%对所有建筑伤害，投石车和攻城船攻击距离 +1`,
     "丹麦额外食物": /*html*/`丹麦额外食物<br>村民和渔船提交5%的额外食物`,
     "丹麦升级": /*html*/`丹麦升级<br>兵营和攻城武器厂升级黄金-66%`,
     "丹麦掠夺": /*html*/`丹麦掠夺<br>摧毁建筑物掠夺25黄金 + 15%被摧毁建筑建造成本的资源`,
@@ -1792,10 +1792,10 @@ let ayanabi = {
         "魏团队加成",
     ],
     "撒克逊加成": [
-        "撒克逊加成1",
-        "撒克逊加成2",
-        "撒克逊加成3",
-        "撒克逊加成4",
+        "撒克逊虚空石头",
+        "撒克逊步兵成本",
+        "撒克逊塔楼",
+        "撒克逊海军",
         "撒克逊团队加成",
     ],
     "丹麦加成": [
@@ -2359,6 +2359,7 @@ function BlastFurnace() {
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Arson() {
@@ -2541,6 +2542,7 @@ function ParthianTactics() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function ThumbRing() {
@@ -2625,6 +2627,7 @@ function PlateBardingArmor() {
     document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 
@@ -2738,6 +2741,7 @@ function Fervor() {
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Herbal() {
@@ -2884,6 +2888,7 @@ function StoneShaftMining() {
     document.getElementById("Armenians2").classList.add("aoeTechIconOff");
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 function GoldShaftMining() {
     document.getElementById("Dravidians2").classList.add("aoeTechIconOff");
@@ -3166,6 +3171,7 @@ function BombardTower() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Militia() {
@@ -3321,6 +3327,7 @@ function HandCannoneer() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Scoutcavalry() {
@@ -3498,6 +3505,7 @@ function Paladin() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 
@@ -3630,6 +3638,7 @@ function BombardCannon() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Mangonel() {
@@ -3688,6 +3697,7 @@ function SiegeOnager() {
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function BatteringRam() {
@@ -3838,6 +3848,7 @@ function FastFireShip() {
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Vikings2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionRaft() {
@@ -3846,6 +3857,7 @@ function DemolitionRaft() {
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionShip() {
@@ -3854,6 +3866,7 @@ function DemolitionShip() {
     document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function HeavyDemolitionShip() {
@@ -3885,6 +3898,7 @@ function HeavyDemolitionShip() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 
@@ -3898,6 +3912,9 @@ function Carrack() {
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
 }
 
+function ClinkerConstruction() {
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+}
 
 function CarvelHull() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
@@ -3912,6 +3929,7 @@ function CarvelHull() {
     document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 function Siphons() {
@@ -3985,6 +4003,7 @@ function Incendiaries() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Saxons2").classList.add("aoeTechIconOff");
 }
 
 const AOE2_TECH_NAME_MAP = {
@@ -4023,6 +4042,7 @@ const AOE2_TECH_NAME_MAP = {
     "行会": "Guilds",
     "干船坞": "DryDock",
     "造船匠": "Shipwright",
+    "鱼鳞式建造法": "ClinkerConstruction",
     "外板平接船体": "CarvelHull",
     "虹吸管": "Siphons",
     "燃烧弹": "Incendiaries",

@@ -185,7 +185,7 @@
 
 <div>
     <div id="techno"></div>
-    “【待补充】”
+    “使用剑盾进行战斗的撒克逊精锐步兵，周期性地投掷标枪攻击敌人”
     <br>
     <div style='text-align:right'>——游戏内说明书</div>
     <div id="Layer2" style="display: none; position: absolute; z-index: 100;"></div>
@@ -208,9 +208,10 @@
         <a id="sp"></a><b><span>加成</span></b>
     </H1>
     <hr class="hrsty">
-    【待补充】
+
+    由于火炉部队是撒克逊专属部队，所以只显示撒克逊拥有的技术
     <ul>
-        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vikings.png" width="25px">维京：<span class="维京便宜战船"></span></li>
+        <li><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Saxons.png" width="25px">撒克逊：<span class="撒克逊步兵成本"></span></li>
     </ul>
     <table width="500px" id="aoe4de" style="border:1px solid #222222;">
         <tr class="bcF5F8FA textce">
@@ -218,63 +219,35 @@
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                        src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/远程伤害.png>远程伤害</span></td>
+                        src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/近战伤害.png>近战伤害</span></td>
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/羽箭.webp" width="20px"></a>羽箭(+1)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/锥子箭.webp" width="20px"></a>锥子箭(+1)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Bracer();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/护腕.webp" width="20px"></a>护腕(+1)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/化学.webp" width="20px"></a>化学(+1)<br>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp" width="20px">博格斯维加尔(+1)<br>
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/锻造.webp" width="20px"></a>锻造(+1)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);IronCasting();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/铸铁.webp" width="20px"></a>铸铁(+1)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Arson();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/纵火.webp" width="20px"></a>纵火(+2对标准建筑伤害)<br>
             </td>
         </tr>
-        <tr class="textle">
-            <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                        src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/射程.png>射程</span></td>
-            <td>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/羽箭.webp" width="20px"></a>羽箭(+1)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/锥子箭.webp" width="20px"></a>锥子箭(+1)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Bracer();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/护腕.webp" width="20px"></a>护腕(+1)<br>
-            </td>
-        </tr>
-        <tr class="textle">
-            <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                        src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/命中率.png>命中率</span></td>
-            <td>
-
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/弹道学.webp" width="20px"></a>弹道学(命中移动目标)<br>
-            </td>
-        </tr>
-
-
-
-
         <tr class="textle">
             <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
                         src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/近战护甲.png>近战护甲/<br><img width=20px
                         src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/远程护甲.png>远程护甲</span></td>
             <td>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/修船厂.webp" width="20px"></a>修船厂(+0/+1)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);DryDock();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/干船坞.webp" width="20px"></a>干船坞(+0/+1)<br>
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/步兵鳞甲.webp" width="20px"></a>步兵鳞甲(+1/+1)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);ChainMailArmor();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/步兵锁甲.webp" width="20px"></a>步兵锁甲(+1/+1)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);PlateMailArmor();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/步兵钢甲.webp" width="20px"></a>步兵钢甲(+1/+2)<br>
             </td>
         </tr>
         <tr class="textle">
             <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
                         src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/移动速度.png>移动速度</span></td>
             <td>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/鱼鳞式建造法.webp" width="20px"></a>鱼鳞式建造法(+10%)<br>
-                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CarvelHull();"><img
-                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/外板平接船体.webp" width="20px"></a>外板平接船体(+10%)<br>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Squires();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/护卫.webp" width="20px"></a>护卫(+10%)<br>
             </td>
         </tr>
         <tr class="textle">
@@ -287,6 +260,21 @@
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/信念.webp" width="20px"></a>信念(基础/最大招降时间+4/+4)<br>
                 <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);Heresy();"><img
                         src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/异教.webp" width="20px"></a>异教(被招降时马上死亡)<br>
+            </td>
+        </tr>
+        <tr class="textle">
+            <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
+                        src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/stats/训练时间.png>训练速度</span></td>
+            <td>
+                <a onmouseout="hiddenPic2();" onmousemove="showPic2(event);CommonAllTech();"><img
+                        src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/征招.webp" width="20px"></a>征招(+33%)<br>
+            </td>
+        </tr>
+        <tr class="textle">
+            <td class="bcF5F8FA"><span class="aoe4title">其他</span></td>
+            <td>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/金冠科技.webp" width="20px">盾墙(步兵在靠近时获得额外护甲，<img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Saxons.png" width="20px">仅撒克逊)<br>
             </td>
         </tr>
     </table>

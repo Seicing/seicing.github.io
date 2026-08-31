@@ -1221,6 +1221,15 @@ body.font-big .aoe2mater td {
 }
 
 
+.aoe1mater {
+    width: 500px;
+}
+
+body.font-big .aoe1mater {
+    width: 600px;
+}
+
+
 #celp250 {
     border: var(--border-table);
     width: 250px;
