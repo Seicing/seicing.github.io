@@ -1203,6 +1203,24 @@ body.font-big #celp255 td {
     padding: 4px;
 }
 
+
+.aoe2mater {
+    width: 650px;
+}
+
+.aoe2mater td {
+    width: 14.3%;
+}
+
+body.font-big .aoe2mater {
+    width: 800px;
+}
+
+body.font-big .aoe2mater td {
+    width: 14.3%;
+}
+
+
 #celp250 {
     border: var(--border-table);
     width: 250px;
