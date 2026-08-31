@@ -163,6 +163,13 @@
             "civ": "Tupi"
         },
         {
+            "tech": "撒克逊海军",
+            "showId": "撒克逊海军",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Saxons.png",
+            "score": 1,
+            "civ": "Saxons"
+        },
+        {
             "tech": "凯尔特视野锁定",
             "showId": "凯尔特视野锁定",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.png",
@@ -402,6 +409,14 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/大型投石战舰.webp",
             "score": 2,
             "civ": "Danes",
+            "replace": "EliteCannonGalleon"
+        },
+        {
+            "tech": "CatapultGalleon8",
+            "showId": "大型投石战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/大型投石战舰.webp",
+            "score": 2,
+            "civ": "Saxons",
             "replace": "EliteCannonGalleon"
         },
         {
