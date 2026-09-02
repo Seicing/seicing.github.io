@@ -125,10 +125,10 @@
 <div id="filterBar">
     <button data-filter="aoe1">帝国时代</button>
     <button data-filter="aoe2">帝国时代2</button>
-    <button data-filter="aoe3">帝国时代3</button>
+    <button data-filter="aoe3" class="off">帝国时代3</button>
     <button data-filter="aoe4">帝国时代4</button>
-    <button data-filter="aoem">神话时代</button>
-    <button data-filter="aoec">编年史</button>
+    <button data-filter="aoem" class="off">神话时代</button>
+    <button data-filter="aoec" class="off">编年史</button>
 </div>
 </div>
                     </div>
@@ -271,14 +271,14 @@
     };
 
     // ============================
-    // ★ 筛选状态（默认全开）
+    // ★ 筛选状态
     // ============================
     const filterState = {
         aoe1: true,
         aoe2: true,
         aoe3: false,
         aoe4: true,
-        aoem: true,
+        aoem: false,
         aoec: false,
     };
 
