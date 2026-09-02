@@ -128,6 +128,7 @@
     <button data-filter="aoe3">帝国时代3</button>
     <button data-filter="aoe4">帝国时代4</button>
     <button data-filter="aoem">神话时代</button>
+    <button data-filter="aoec">编年史</button>
 </div>
 </div>
                     </div>
@@ -263,6 +264,9 @@
         },
         aoem: {
             match: name => name.startsWith("神话时代")
+        },
+        aoec: {
+            match: name => name.startsWith("编年史")
         }
     };
 
@@ -272,9 +276,10 @@
     const filterState = {
         aoe1: true,
         aoe2: true,
-        aoe3: true,
+        aoe3: false,
         aoe4: true,
-        aoem: true
+        aoem: true,
+        aoec: false,
     };
 
     // ============================
