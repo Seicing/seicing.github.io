@@ -840,8 +840,8 @@ let ayanami = {
     "文员募集": /*html*/`文员募集<br>Clerical Recruitment<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>僧侣射程+1，训练速度+33%`,
     "盾墙": /*html*/`盾墙<br>Shield Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵在靠近时获得额外护甲`,
     "撒克逊虚空石头": /*html*/`撒克逊虚空石头<br>建造资源投放建筑后，获得额外的50食物和10石头`,
-    "撒克逊步兵成本": /*html*/`撒克逊步兵成本<br>每个被玩家控制的城镇中心和城堡减少5%步行士兵的成本(最大-20%)`,
-    "撒克逊塔楼": /*html*/`撒克逊塔楼<br>塔和城堡在城堡时代发射+100%的基础箭矢`,
+    "撒克逊步兵成本": /*html*/`撒克逊步兵成本<br>每个被玩家控制的城镇中心和城堡，可减少5%的步行士兵成本，最大减少20%`,
+    "撒克逊塔楼": /*html*/`撒克逊塔楼<br>从城堡时代开始，塔/城堡默认发射2/10支箭矢`,
     "撒克逊海军": /*html*/`撒克逊海军<br>龙头战舰和大型投石战舰+20%生命值`,
     "撒克逊团队加成": /*html*/`撒克逊团队加成<br>修理工工作速度+25%`,
 
