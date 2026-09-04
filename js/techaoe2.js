@@ -3208,6 +3208,7 @@ function TwoHandedSwordsman() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
+
 function Champion() {
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -3225,12 +3226,14 @@ function Champion() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Crossbowman() {
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
     document.getElementById("Spanish2").classList.add("aoeTechIconOff");
 }
+
 function Arbalester() {
     document.getElementById("Spanish2").classList.add("aoeTechIconOff");
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
