@@ -170,6 +170,13 @@
             "civ": "Saxons"
         },
         {
+            "tech": "瓦兰吉海军",
+            "showId": "瓦兰吉海军",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Varangians.png",
+            "score": 1,
+            "civ": "Varangians"
+        },
+        {
             "tech": "凯尔特视野锁定",
             "showId": "凯尔特视野锁定",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Celts.png",
@@ -417,6 +424,14 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/大型投石战舰.webp",
             "score": 2,
             "civ": "Saxons",
+            "replace": "EliteCannonGalleon"
+        },
+        {
+            "tech": "CatapultGalleon9",
+            "showId": "大型投石战舰",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/大型投石战舰.webp",
+            "score": 2,
+            "civ": "Varangians",
             "replace": "EliteCannonGalleon"
         },
         {

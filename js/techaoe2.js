@@ -838,13 +838,13 @@ let ayanami = {
     "丹麦速度": /*html*/`丹麦速度<br>瓦兰吉卫队和龙头战舰移动速度+10%`,
     "丹麦团队加成": /*html*/`丹麦团队加成<br>攻城器视野+2`,
 
-    "瓦兰吉银冠": /*html*/`瓦兰吉银冠<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>【待补充】`,
-    "瓦兰吉金冠": /*html*/`瓦兰吉金冠<br>【待补充】<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>【待补充】`,
-    "瓦兰吉加成1": /*html*/`瓦兰吉加成1<br>【待补充】`,
-    "瓦兰吉加成2": /*html*/`瓦兰吉加成2<br>【待补充】`,
-    "瓦兰吉加成3": /*html*/`瓦兰吉加成3<br>【待补充】`,
-    "瓦兰吉加成4": /*html*/`瓦兰吉加成4<br>【待补充】`,
-    "瓦兰吉团队加成": /*html*/`瓦兰吉团队加成<br>【待补充】`,
+    "文德尔的传承": /*html*/`文德尔的传承<br>Vendel Legacy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑士系造成践踏伤害`,
+    "哥特舞": /*html*/`哥特舞<br>Gothikon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>瓦兰吉卫队周期性投掷斧头`,
+    "瓦兰吉生产黄金": /*html*/`瓦兰吉生产黄金<br>畜牧、捕鱼和狩猎生成黄金`,
+    "瓦兰吉科技特效": /*html*/`瓦兰吉科技特效<br>血统和大篷车效果+50%`,
+    "瓦兰吉瓦兰吉卫队": /*html*/`瓦兰吉瓦兰吉卫队<br>瓦兰吉卫队攻击速度+25%，生成的黄金数量+50%`,
+    "瓦兰吉海军": /*html*/`瓦兰吉海军<br>龙头战舰和大型投石战舰攻击速度+15%`,
+    "瓦兰吉团队加成": /*html*/`瓦兰吉团队加成<br>骑士系+1对步兵伤害`,
 
     "征兵": /*html*/`征兵<br>Levy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>基础的步兵剑士，便宜，生产快速`,
     "链锤兵": /*html*/`链锤兵<br>Maceman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>20 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>21<br>比征兵更强大，便宜，生产快速<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>40 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40`,
@@ -1791,10 +1791,10 @@ let ayanabi = {
         "丹麦团队加成",
     ],
     "瓦兰吉加成": [
-        "瓦兰吉加成1",
-        "瓦兰吉加成2",
-        "瓦兰吉加成3",
-        "瓦兰吉加成4",
+        "瓦兰吉生产黄金",
+        "瓦兰吉科技特效",
+        "瓦兰吉瓦兰吉卫队",
+        "瓦兰吉海军",
         "瓦兰吉团队加成",
     ],
 };
@@ -2441,6 +2441,7 @@ function Heresy() {
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Bloodlines() {
@@ -2528,6 +2529,7 @@ function ParthianTactics() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function ThumbRing() {
@@ -2552,6 +2554,7 @@ function ThumbRing() {
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function LeatherArcherArmor() {
@@ -2688,7 +2691,6 @@ function Shipwright() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
 }
 
-
 function Sanctity() {
     document.getElementById("Berbers2").classList.add("aoeTechIconOff");
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -2698,7 +2700,9 @@ function Sanctity() {
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
     document.getElementById("Vikings2").classList.add("aoeTechIconOff");
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
+
 function BlockPrinting() {
     document.getElementById("Berbers2").classList.add("aoeTechIconOff");
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -2716,6 +2720,7 @@ function BlockPrinting() {
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Fervor() {
@@ -2738,6 +2743,7 @@ function Herbal() {
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
 }
+
 function Redemption() {
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
     document.getElementById("Celts2").classList.add("aoeTechIconOff");
@@ -2762,7 +2768,9 @@ function Redemption() {
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
+
 function Atonement() {
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -2781,6 +2789,7 @@ function Atonement() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
 }
+
 function Illumination() {
     document.getElementById("Celts2").classList.add("aoeTechIconOff");
     document.getElementById("Cumans2").classList.add("aoeTechIconOff");
@@ -2798,6 +2807,7 @@ function Illumination() {
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
 }
+
 function Theocracy() {
     document.getElementById("Burgundians2").classList.add("aoeTechIconOff");
     document.getElementById("Celts2").classList.add("aoeTechIconOff");
@@ -2832,7 +2842,9 @@ function Sapper() {
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
     document.getElementById("Shu2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
+
 function TwoManSaw() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
     document.getElementById("Berbers2").classList.add("aoeTechIconOff");
@@ -2888,6 +2900,7 @@ function GoldShaftMining() {
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
     document.getElementById("Georgians2").classList.add("aoeTechIconOff");
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 function TreadmillCrane() {
     document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
@@ -2965,6 +2978,7 @@ function Hoardings() {
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 function HeatedShot() {
     document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
@@ -3010,7 +3024,9 @@ function ArrowSlits() {
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Wu2").classList.add("aoeTechIconOff");
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
+
 function CropRotation() {
     document.getElementById("Bohemians2").classList.add("aoeTechIconOff");
     document.getElementById("Britons2").classList.add("aoeTechIconOff");
@@ -3117,6 +3133,7 @@ function KeepTower() {
     document.getElementById("Khitans2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function BombardTower() {
@@ -3157,6 +3174,7 @@ function BombardTower() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Militia() {
@@ -3239,6 +3257,7 @@ function Arbalester() {
     document.getElementById("Wei2").classList.add("aoeTechIconOff");
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function LightCavalry() {
@@ -3313,6 +3332,7 @@ function HandCannoneer() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Scoutcavalry() {
@@ -3491,6 +3511,7 @@ function Paladin() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 
@@ -3624,6 +3645,7 @@ function BombardCannon() {
     document.getElementById("Muisca2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Mangonel() {
@@ -3683,6 +3705,7 @@ function SiegeOnager() {
     document.getElementById("Mapuche2").classList.add("aoeTechIconOff");
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function BatteringRam() {
@@ -3771,6 +3794,7 @@ function CannonGalleon() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function EliteCannonGalleon() {
@@ -3808,6 +3832,7 @@ function EliteCannonGalleon() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function Galleon() {
@@ -3845,6 +3870,7 @@ function DemolitionRaft() {
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function DemolitionShip() {
@@ -3854,6 +3880,7 @@ function DemolitionShip() {
     document.getElementById("Romans2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 function HeavyDemolitionShip() {
@@ -3886,6 +3913,7 @@ function HeavyDemolitionShip() {
     document.getElementById("Tupi2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
     document.getElementById("Saxons2").classList.add("aoeTechIconOff");
+    document.getElementById("Varangians2").classList.add("aoeTechIconOff");
 }
 
 
