@@ -620,7 +620,6 @@ let ayanami = {
     "印加石头降价": /*html*/`印加石头降价<br>建筑便宜15%石头`,
     "印加团队加成": /*html*/`印加团队加成<br>团队成员获得1只羊驼`,
 
-
     "罗马经济加成": /*html*/`罗马经济加成<br>村民收集、建造、维修速度+5%`,
     "罗马舰船加成": /*html*/`罗马舰船加成<br>战舰系和德罗蒙战舰近战护甲和远程护甲+1`,
     "罗马铁匠铺加成": /*html*/`罗马铁匠铺加成<br>步兵获得铁匠铺护甲科技双倍收益`,
@@ -639,10 +638,8 @@ let ayanami = {
 
     "强化教堂": /*html*/`强化教堂<br>Fortified Church<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>拥有防御能力，生产和升级僧侣，驻扎遗物产生黄金`,
 
-
     "复合弓箭手": /*html*/`复合弓箭手<br>Composite Bowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>12<br>无视敌方护甲的亚美尼亚独特射手部队`,
     "精锐复合弓箭手": /*html*/`精锐复合弓箭手<br>Elite Composite Bowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>35 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>10<br>无视敌方护甲的亚美尼亚独特射手部队<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
-
 
     "莫纳斯帕": /*html*/`莫纳斯帕<br>Monaspa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>11<br>格鲁吉亚独特部队，附近莫纳斯帕和骑士数量越多他会变得越强大`,
     "精锐莫纳斯帕": /*html*/`精锐莫纳斯帕<br>Elite Monaspa<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>60 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>11<br>格鲁吉亚独特部队，附近莫纳斯帕和骑士数量越多他会变得越强大<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>700 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
@@ -655,10 +652,9 @@ let ayanami = {
     "格鲁吉亚强化教堂": /*html*/`格鲁吉亚强化教堂<br>强化教堂为周围9格范围内的村民提供+10%工作效率`,
     "格鲁吉亚对抗力": /*html*/`格鲁吉亚对抗力<br>居高临下作战时受到的伤害额外-15%(从-25%增加到-40%)`,
     "格鲁吉亚骑兵": /*html*/`格鲁吉亚骑兵<br>骑兵在封建时代/城堡时代/帝王时代每分钟恢复2/8/14生命值`,
+    "格鲁吉亚团队加成": /*html*/`格鲁吉亚团队加成<br>修理建筑消耗资源量-25%`,
     "斯万箭塔": /*html*/`斯万箭塔<br>Svan Tower<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>防御建筑攻击力+2，箭塔发射的箭矢穿透复数目标`,
     "阿兹瑙里骑兵": /*html*/`阿兹瑙里骑兵<br>Aznauri Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>550 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45<br>骑兵人口占据量-20%`,
-
-    "格鲁吉亚团队加成": /*html*/`格鲁吉亚团队加成<br>修理建筑消耗资源量-25%`,
 
     "亚美尼亚骡车开局": /*html*/`亚美尼亚骡车开局<br>骡车成本-25%，骡车科技效果+40%`,
     "亚美尼亚强化教堂": /*html*/`亚美尼亚强化教堂<br>第一个建造的强化教堂会提供1个免费圣物`,
@@ -668,44 +664,34 @@ let ayanami = {
     "奇里乞亚舰队": /*html*/`奇里乞亚舰队<br>Cilician Fleet<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>爆破船伤害区域+20%，箭船和德莱蒙战舰+1射程`,
     "费雷特斯": /*html*/`费雷特斯<br>Fereters<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>550 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>除长枪兵系外的步兵生命值+30，牧师战士恢复速度+100%`,
 
-
-
-
     "女真腐烂": /*html*/`女真腐烂<br>猎物和牲畜不会腐烂`,
     "女真攻速": /*html*/`女真攻速<br>封建时代开始，骑马部队和火矛兵攻击速度+25%`,
     "女真攻城技师": /*html*/`女真攻城技师<br>攻城技师城堡时代可用`,
     "女真攻城器": /*html*/`女真攻城器<br>攻城和防御工事升级木材费用-75%，研究速度+100%`,
     "女真误伤": /*html*/`女真误伤<br>单位受到友军误伤伤害-50%`,
     "女真团队加成": /*html*/`女真团队加成<br>火药单位视野+2`,
-
     "加固堡垒": /*html*/`加固堡垒<br>Fortified Bastions<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>防御工事每分钟恢复500生命值`,
     "霹雳炸弹": /*html*/`霹雳炸弹<br>Thunderclap Bombs<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>900 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火箭推车、掷弹兵、楼船在死亡时爆炸，发射的子弹会产生额外爆炸`,
-
 
     "契丹牧场": /*html*/`契丹牧场<br>牧场取代农田`,
     "契丹近战升级": /*html*/`契丹近战升级<br>近战攻击升级效果翻倍`,
     "契丹加速": /*html*/`契丹加速<br>掷矛手、长矛兵和斥候骑兵系列训练和升级速度+15%`,
     "契丹骑射手": /*html*/`契丹骑射手<br>重装骑射手可在城堡时代升级，升级成本-50%`,
     "契丹团队加成": /*html*/`契丹团队加成<br>步兵对远程士兵攻击力+2`,
-
     "札甲": /*html*/`札甲<br>Lamellar Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>步兵和掷矛手反弹25%所受近战伤害`,
     "斡鲁朵骑兵": /*html*/`斡鲁朵骑兵<br>Ordo Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>骑兵战斗时每分钟恢复150%的最大生命值`,
-
 
     "蜀伐木": /*html*/`蜀伐木<br>伐木工在伐木时获取7%的额外食物`,
     "蜀科技费用": /*html*/`蜀科技费用<br>弓兵单位靶场和铁匠铺科技费用-25%`,
     "蜀攻城器": /*html*/`蜀攻城器<br>攻城器和攻城船在城堡/帝王时代移动速度+10%/+15%`,
     "蜀团队加成": /*html*/`蜀团队加成<br>步弓手视野+2`,
-
     "盘蛇阵": /*html*/`盘蛇阵<br>Coiled Serpent Array<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>15格范围内的长矛兵和白毦兵彼此获得额外生命值，每个0.5%，最大增加15%`,
     "弩匣": /*html*/`弩匣<br>Bolt Magazine<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>750 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>射手、连弩战车+2额外弩箭，掩护模式连弩战车和楼船射箭模式+3额外弩箭`,
-
 
     "魏动员令": /*html*/`魏动员令<br>每完成一项经济科技，获得1个村民`,
     "魏骑兵加成": /*html*/`魏骑兵加成<br>黑光铠骑兵和鲜卑掠骑兵在城堡/帝王时代生命值+20%/+30%`,
     "魏攻城费用": /*html*/`魏攻城费用<br>牵引抛石机和楼船费用-25%`,
     "魏团队加成": /*html*/`魏团队加成<br>骑兵对攻城器攻击力+2`,
-
     "屯田": /*html*/`屯田<br>Tuntian<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>步兵、射手、骑兵每分钟被动生产1.8食物`,
     "明光铠": /*html*/`明光铠<br>Ming Guang Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>65 <br>骑兵单位近战护甲+4`,
 
@@ -714,7 +700,6 @@ let ayanami = {
     "吴攻击力": /*html*/`吴攻击力<br>刀剑手和黑光铠骑兵在帝王时代攻击力+2`,
     "吴造船厂": /*html*/`吴造船厂<br>修船厂、干船坞免费研发`,
     "吴团队加成": /*html*/`吴团队加成<br>房屋建造速度+100%`,
-
     "赤壁战术": /*html*/`赤壁战术<br>Red Cliffs Tactics<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>350 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>火焰弓箭手和爆破船对建筑和船只造成持续5秒的火焰伤害，每秒造成1(火焰弓箭手)和5(爆破船)伤害`,
     "卧虎": /*html*/`卧虎<br>Sitting Tiger<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40 <br>牵引抛石机和楼船巨投武器发射2枚额外炮弹(10近战伤害，+40对建筑伤害)`,
     "烟火之术": /*html*/`烟火之术<br>Pirotechnia<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>50 <br>火枪手命中率+15%，子弹会穿透敌人，对非主要目标造成15%的伤害`,
