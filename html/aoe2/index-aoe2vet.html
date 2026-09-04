@@ -188,9 +188,12 @@
             html += "<tr>";
 
             /* ===== 文明图标（受 main 控制） ===== */
+            // 如果该文明有替代当前 main 科技的单位，则不视为 banned
+            const hasMainReplace = MAIN_TECH && !!replaceMapByCiv[civ]?.[MAIN_TECH.tech];
             const mainBanned =
                 MAIN_TECH &&
-                DISABLED_TECH_MAP[MAIN_TECH.tech]?.[civ];
+                DISABLED_TECH_MAP[MAIN_TECH.tech]?.[civ] &&
+                !hasMainReplace;
 
             html += `
 <td class="civcell ${mainBanned ? 'main-banned' : ''}">
