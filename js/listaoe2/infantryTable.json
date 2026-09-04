@@ -2,6 +2,13 @@
     "tableId": "infantryTable",
     "common": [
         {
+            "tech": "Militia",
+            "showId": "民兵",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/pic/民兵.webp",
+            "score": 0,
+            "main": 1
+        },
+        {
             "tech": "ManatArms",
             "showId": "剑士",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到剑士.webp",
