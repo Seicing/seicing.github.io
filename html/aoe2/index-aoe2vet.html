@@ -187,16 +187,21 @@
 
             html += "<tr>";
 
-            /* ===== 文明图标（受 main 控制） ===== */
-            // 只要该文明拥有本兵种线的任意替代科技，就不视为 main-banned
-            const hasAnyReplace = Object.keys(replaceMapByCiv[civ] || {}).length > 0;
-            const mainBanned =
-                MAIN_TECH &&
-                DISABLED_TECH_MAP[MAIN_TECH.tech]?.[civ] &&
-                !hasAnyReplace;
+            /* ===== 文明图标状态判定 ===== */
+            const hasReplacement = replaceMapByCiv[civ] && Object.keys(replaceMapByCiv[civ]).length > 0;
+            const isMainBanned = MAIN_TECH && DISABLED_TECH_MAP[MAIN_TECH.tech]?.[civ];
+
+            let civCellClass = "";
+            if (isMainBanned) {
+                if (hasReplacement) {
+                    civCellClass = "main-replaced"; // 有替代单位：淡蓝色
+                } else {
+                    civCellClass = "main-banned";   // 无替代单位：红色
+                }
+            }
 
             html += `
-<td class="civcell ${mainBanned ? 'main-banned' : ''}">
+<td class="civcell ${civCellClass}">
   <a onmousemove="showPic(event,'civ_${civ}');"
      onmouseout="hiddenPic();">
     <img src="${civObj.icon}">
@@ -513,6 +518,8 @@
         --co-civcellwhite: #ffffff;
         --co-civcellcan: #c9f8dc;
         --co-civcellblack: #111111;
+        --co-civcellreplaced: #d6e8ff;
+        /* 浅色模式：淡蓝色 */
     }
 
     body.theme-dark {
@@ -520,6 +527,13 @@
         --co-civcellwhite: #ffffff00;
         --co-civcellcan: #7ca48c;
         --co-civcellblack: #11111100;
+        --co-civcellreplaced: #213d61;
+        /* 暗色模式：淡深蓝 */
+    }
+
+    /* 替代单位文明格淡蓝背景 */
+    .civcell.main-replaced {
+        background-color: var(--co-civcellreplaced) !important;
     }
 
     .aomix {
