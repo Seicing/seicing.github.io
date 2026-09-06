@@ -124,9 +124,9 @@ function transformClonedEssayList(drawerContainer) {
 // =========================================================================
 $(document).ready(function () {
     // 加载基础内容到电脑版的 #sidebar
-    $('#sidebar').load("/js/list/essay.html", function (response, status, xhr) {
+    $('#sidebar').load("/js/list/list_essay.html", function (response, status, xhr) {
         if (status !== "success") {
-            console.error("Essay Module: Failed to load /js/list/essay.html");
+            console.error("Essay Module: Failed to load /js/list/list_essay.html");
             return;
         }
 

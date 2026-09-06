@@ -1,6 +1,6 @@
 function AutoTermLink() {
 
-    $.getJSON("https://seicing.com/js/noun.json", function (terms) {
+    $.getJSON("https://seicing.com/js/terms.json", function (terms) {
 
         // ---------- 构建词库 ----------
         const words = [];

@@ -981,7 +981,7 @@
     let lavivagnarRawHtml = "";
 
     // 页面进入时立即发起异步抓取 Promise
-    const lavivagnarPromise = fetch('https://seicing.com/js/list/lavivagnar.html')
+    const lavivagnarPromise = fetch('https://seicing.com/js/list/side_dialogue.html')
         .then(response => {
             if (!response.ok) throw new Error(`lavivagnar.html 加载失败: ${response.status}`);
             return response.text();
