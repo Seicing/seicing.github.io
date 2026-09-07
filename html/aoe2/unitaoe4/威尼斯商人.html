@@ -474,52 +474,49 @@
     // 初始化计算
     updateGoldTrade();
 
-    document.addEventListener("DOMContentLoaded", function () {
+    (function () {
 
-        document.querySelectorAll("[data-save]").forEach(function (element) {
+        const key = "seicing_trade-distance";
 
-            const key = "seicing_" + element.dataset.save;
+        function restoreDistance() {
+            const distance = document.getElementById("distance");
+            if (!distance) return;
 
-            // 读取保存的值
-            const savedValue = localStorage.getItem(key);
+            const saved = localStorage.getItem(key);
 
-            if (savedValue !== null) {
-                element.textContent = savedValue;
-            } else if (element.dataset.base !== undefined) {
-                element.textContent = element.dataset.base;
+            if (saved !== null) {
+                distance.innerText = saved;
             }
+        }
 
+        // 页面加载后读取
+        document.addEventListener("DOMContentLoaded", function () {
 
-            // 用户手动修改时保存
-            element.addEventListener("input", function () {
-                const value = this.textContent.trim();
+            // 等公共代码初始化完毕后再恢复
+            setTimeout(restoreDistance, 0);
+
+            const distance = document.getElementById("distance");
+            if (!distance) return;
+
+            // 用户修改数值时保存
+            distance.addEventListener("input", function () {
+                const value = this.innerText.trim();
 
                 if (value !== "") {
                     localStorage.setItem(key, value);
                 }
             });
 
-
-            // 防止其他代码重新把数值改回默认值
-            const observer = new MutationObserver(function () {
-
-                const saved = localStorage.getItem(key);
-
-                if (saved !== null && element.textContent.trim() !== saved) {
-                    element.textContent = saved;
-                }
-
-            });
-
-            observer.observe(element, {
-                childList: true,
-                characterData: true,
-                subtree: true
+            // 点击模拟器按钮后恢复
+            document.querySelectorAll(".filterbtn").forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    setTimeout(restoreDistance, 0);
+                });
             });
 
         });
 
-    });
+    })();
 </script>
 
 </html>
