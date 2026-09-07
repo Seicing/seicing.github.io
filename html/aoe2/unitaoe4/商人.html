@@ -1906,8 +1906,12 @@
     updateGoldTrade();
 
     document.addEventListener("DOMContentLoaded", function () {
+
         document.querySelectorAll("[data-save]").forEach(function (element) {
+
             const key = "seicing_" + element.dataset.save;
+
+            // 读取保存的值
             const savedValue = localStorage.getItem(key);
 
             if (savedValue !== null) {
@@ -1916,10 +1920,36 @@
                 element.textContent = element.dataset.base;
             }
 
+
+            // 用户手动修改时保存
             element.addEventListener("input", function () {
-                localStorage.setItem(key, this.textContent.trim());
+                const value = this.textContent.trim();
+
+                if (value !== "") {
+                    localStorage.setItem(key, value);
+                }
             });
+
+
+            // 防止其他代码重新把数值改回默认值
+            const observer = new MutationObserver(function () {
+
+                const saved = localStorage.getItem(key);
+
+                if (saved !== null && element.textContent.trim() !== saved) {
+                    element.textContent = saved;
+                }
+
+            });
+
+            observer.observe(element, {
+                childList: true,
+                characterData: true,
+                subtree: true
+            });
+
         });
+
     });
 </script>
 
