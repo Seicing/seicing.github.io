@@ -100,8 +100,8 @@
     },
     {
         "name": "古典时代 亚述",
-        "x": 2770,
-        "y": 1540,
+        "x": 2750,
+        "y": 1560,
         "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/civ7/Assyrian.webp",
         "url": "https://seicing.com/html/civ7/civ/亚述.html",
         "width": 36,
@@ -131,6 +131,24 @@
         "y": 1547,
         "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/civ7/Heian_Japanese.webp",
         "url": "https://seicing.com/html/civ7/civ/平安日本.html",
+        "width": 36,
+        "height": 36
+    },
+    {
+        "name": "古典时代 高卢",
+        "x": 2200,
+        "y": 1700,
+        "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/civ7/Gauls.webp",
+        "url": "https://seicing.com/html/civ7/civ/高卢.html",
+        "width": 36,
+        "height": 36
+    },
+    {
+        "name": "古典时代 巴比伦",
+        "x": 2780,
+        "y": 1520,
+        "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/civ7/Babylon.webp",
+        "url": "https://seicing.com/html/civ7/civ/巴比伦.html",
         "width": 36,
         "height": 36
     },
@@ -288,6 +306,15 @@
         "height": 36
     },
     {
+        "name": "探索时代 英格兰",
+        "x": 2200,
+        "y": 1820,
+        "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/civ7/England.webp",
+        "url": "https://seicing.com/html/civ7/civ/英格兰.html",
+        "width": 36,
+        "height": 36
+    },
+    {
         "name": "近世时代 美国",
         "x": 1173,
         "y": 1590,
@@ -379,7 +406,7 @@
     },
     {
         "name": "近世时代 大不列颠",
-        "x": 2177,
+        "x": 2200,
         "y": 1810,
         "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/civ7/Great_Britain.webp",
         "url": "https://seicing.com/html/civ7/civ/大不列颠.html",
