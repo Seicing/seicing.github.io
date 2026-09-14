@@ -128,6 +128,13 @@
             "civ": "Gurjaras"
         },
         {
+            "tech": "敕令连队",
+            "showId": "敕令连队",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
+            "score": 2,
+            "civ": "Franks"
+        },
+        {
             "tech": "派",
             "showId": "派",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/tech/银冠科技.webp",
@@ -296,13 +303,6 @@
             "civ": "Turks"
         },
         {
-            "tech": "越南射手血量",
-            "showId": "越南射手血量",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.png",
-            "score": 1,
-            "civ": "Vietnamese"
-        },
-        {
             "tech": "越南免费征招",
             "showId": "越南免费征招",
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/CivIcon-Vietnamese.png",
@@ -445,17 +445,17 @@
         },
         {
             "tech": "MountedCrossbowman5",
-            "showId": "重装骑马弩手",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
-            "score": 2,
+            "showId": "骑马弩手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/骑马弩手.webp",
+            "score": 1,
             "civ": "Burgundians",
             "replace": "HeavyCavalryArcher"
         },
         {
             "tech": "MountedCrossbowman6",
-            "showId": "重装骑马弩手",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
-            "score": 2,
+            "showId": "骑马弩手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/骑马弩手.webp",
+            "score": 1,
             "civ": "Vikings",
             "replace": "HeavyCavalryArcher"
         },
@@ -477,17 +477,17 @@
         },
         {
             "tech": "MountedCrossbowman9",
-            "showId": "重装骑马弩手",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
-            "score": 2,
+            "showId": "骑马弩手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/骑马弩手.webp",
+            "score": 1,
             "civ": "Bohemians",
             "replace": "HeavyCavalryArcher"
         },
         {
             "tech": "MountedCrossbowman10",
-            "showId": "重装骑马弩手",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
-            "score": 2,
+            "showId": "骑马弩手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/骑马弩手.webp",
+            "score": 1,
             "civ": "Italians",
             "replace": "HeavyCavalryArcher"
         },
@@ -501,9 +501,9 @@
         },
         {
             "tech": "MountedCrossbowman12",
-            "showId": "重装骑马弩手",
-            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
-            "score": 2,
+            "showId": "骑马弩手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/骑马弩手.webp",
+            "score": 1,
             "civ": "Portuguese",
             "replace": "HeavyCavalryArcher"
         },
@@ -521,6 +521,14 @@
             "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
             "score": 2,
             "civ": "Teutons",
+            "replace": "HeavyCavalryArcher"
+        },
+        {
+            "tech": "MountedCrossbowman15",
+            "showId": "重装骑马弩手",
+            "icon": "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/icon/upgrade/升级到重装骑马弩手.webp",
+            "score": 2,
+            "civ": "Poles",
             "replace": "HeavyCavalryArcher"
         }
     ]
