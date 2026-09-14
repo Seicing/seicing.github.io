@@ -4093,6 +4093,7 @@ const AOE2_TECH_NAME_MAP = {
     "畜牧": "Husbandry",
     "帕提亚战术": "ParthianTactics",
     "扳指": "ThumbRing",
+    "便携弯弩装置": "Cranequins",
 
     "铸铁": "IronCasting",
     "鼓风炉": "BlastFurnace",
