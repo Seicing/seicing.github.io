@@ -325,6 +325,9 @@ let ayanami = {
     "掷斧兵": /*html*/`掷斧兵<br>Throwing Axeman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>13<br>法兰克独特部队，远程攻击的步兵`,
     "精锐掷斧兵": /*html*/`精锐掷斧兵<br>Elite Throwing Axeman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>55 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>13<br>法兰克独特部队，远程攻击的步兵<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>850 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>550 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
     "芒刺斧": /*html*/`芒刺斧<br>Bearded Axe<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60<br>掷斧兵攻击射程+2`,
+
+    "敕令连队": /*html*/`敕令连队<br>Ordonnance Companies<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>400 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>250 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>骑马弩手的黄金成本-40%`,
+
     "骑士精神": /*html*/`骑士精神<br>Chivalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>提升马厩工作效率40%`,
     "靛蓝突袭者": /*html*/`靛蓝突袭者<br>Woad Raider<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>10<br>凯尔特独特部队，快速步兵`,
     "精锐靛蓝突袭者": /*html*/`精锐靛蓝突袭者<br>Elite Woad Raider<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>70 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>25 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>10<br>凯尔特独特部队，快速步兵<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>800 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45`,
@@ -804,43 +807,45 @@ let ayanami = {
     "箭毒": /*html*/`箭毒<br>Curare<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>650 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>600 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>黑檀木弓箭手/步弓手/防御设施在箭矢上涂毒，在15秒内造成2/5/7.5点伤害`,
     "定居点": /*html*/`定居点<br>Settlement<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>40<br>增加人口上限，并可作为所有资源的存放点`,
 
-    "首领": /*html*/`首领<br>Jarl<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>【待补充】`,
-    "精锐首领": /*html*/`精锐首领<br>Elite Jarl<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "鹤机": /*html*/`鹤机<br>Cranequins<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>300 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑马弩手射程+1，对长矛兵攻击力+2`,
 
-    "约姆斯维京": /*html*/`约姆斯维京<br>Jomsviking<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>【待补充】`,
-    "精锐约姆斯维京": /*html*/`精锐约姆斯维京<br>Elite Jomsviking<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "首领": /*html*/`首领<br>Jarl<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>投掷战斧的快速骑兵，擅长对付步兵`,
+    "精锐首领": /*html*/`精锐首领<br>Elite Jarl<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>75 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>55 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>投掷战斧的快速骑兵，擅长对付步兵<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
-    "火炉部队": /*html*/`火炉部队<br>Hearth Troop<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>【待补充】`,
-    "精锐火炉部队": /*html*/`精锐火炉部队<br>Elite Hearth Troop<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "约姆斯维京": /*html*/`约姆斯维京<br>Jomsviking<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>手持长矛和盾牌作战的精锐维京战士，在攻击建筑物和船只时，会投掷火把将其点燃`,
+    "精锐约姆斯维京": /*html*/`精锐约姆斯维京<br>Elite Jomsviking<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>15 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>手持长矛和盾牌作战的精锐维京战士，在攻击建筑物和船只时，会投掷火把将其点燃<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
-    "瓦兰吉卫队": /*html*/`瓦兰吉卫队<br>Varangian Guard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>18<br>【待补充】`,
-    "精锐瓦兰吉卫队": /*html*/`精锐瓦兰吉卫队<br>Elite Varangian Guard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "火炉部队": /*html*/`火炉部队<br>Hearth Troop<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>使用剑盾进行战斗的撒克逊精锐步兵，周期性地投掷标枪攻击敌人`,
+    "精锐火炉部队": /*html*/`精锐火炉部队<br>Elite Hearth Troop<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>80 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>35 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>使用剑盾进行战斗的撒克逊精锐步兵，周期性地投掷标枪攻击敌人<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
-    "骑马弩手": /*html*/`骑马弩手<br>Mounted Crossbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】`,
-    "重装骑马弩手": /*html*/`重装骑马弩手<br>Heavy Mounted Crossbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>【待补充】<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+    "瓦兰吉卫队": /*html*/`瓦兰吉卫队<br>Varangian Guard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>强力的冲击步兵，在和其他单位战斗时掠夺黄金`,
+    "精锐瓦兰吉卫队": /*html*/`精锐瓦兰吉卫队<br>Elite Varangian Guard<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>65 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>45 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>强力的冲击步兵，在和其他单位战斗时掠夺黄金<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>750 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>475 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
+
+    "骑马弩手": /*html*/`骑马弩手<br>Mounted Crossbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>速度缓慢但攻击力更强的骑射手`,
+    "重装骑马弩手": /*html*/`重装骑马弩手<br>Heavy Mounted Crossbowman<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>40 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>65 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】<br>速度缓慢但攻击力更强的骑射手<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>1000 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>650 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】`,
 
     "龙头战舰": /*html*/`龙头战舰<br>Longship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>北欧区域部队，连续发射多支箭矢`,
     "精锐龙头战舰": /*html*/`精锐龙头战舰<br>Elite Longship<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>100 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>25<br>北欧区域部队，连续发射多支箭矢<br><br>升级成本<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>750 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>475 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>60`,
 
     "文员募集": /*html*/`文员募集<br>Clerical Recruitment<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>僧侣射程+1，训练速度+33%`,
-    "盾墙": /*html*/`盾墙<br>Shield Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵在靠近时获得额外护甲`,
-    "撒克逊虚空石头": /*html*/`撒克逊虚空石头<br>建造资源投放建筑后，获得额外的50食物和10石头`,
+    "盾墙": /*html*/`盾墙<br>Shield Wall<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>每聚集15个步兵，护甲+1/+1，最多+3`,
+    "撒克逊虚空石头": /*html*/`撒克逊虚空石头<br>建造资源投放建筑后，获得额外的35食物和10石头`,
     "撒克逊步兵成本": /*html*/`撒克逊步兵成本<br>每个被玩家控制的城镇中心和城堡，可减少5%的步行士兵成本，最大减少20%`,
     "撒克逊塔楼": /*html*/`撒克逊塔楼<br>从城堡时代开始，塔/城堡默认发射2/10支箭矢`,
     "撒克逊海军": /*html*/`撒克逊海军<br>龙头战舰和大型投石战舰+20%生命值`,
     "撒克逊团队加成": /*html*/`撒克逊团队加成<br>修理工工作速度+25%`,
 
-    "狂战士之怒": /*html*/`狂战士之怒<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵生命值越少，伤害越高`,
-    "北民之怒": /*html*/`北民之怒<br>Northmen’s Fury<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>攻城单位和攻城船 +40%对所有建筑伤害，投石车和攻城船攻击距离 +1`,
+    "狂战士之怒": /*html*/`狂战士之怒<br>Hamask<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>250 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>450 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>步兵每减少10%生命值，伤害+1`,
+    "北民之怒": /*html*/`北民之怒<br>Northmen’s Fury<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>950 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>攻城单位和攻城船 +40%对所有建筑伤害，投石车和攻城船攻击距离 +1`,
     "丹麦额外食物": /*html*/`丹麦额外食物<br>村民和渔船提交5%的额外食物`,
     "丹麦升级": /*html*/`丹麦升级<br>兵营和攻城武器厂升级黄金-66%`,
     "丹麦掠夺": /*html*/`丹麦掠夺<br>摧毁建筑物掠夺25黄金 + 15%被摧毁建筑建造成本的资源`,
     "丹麦速度": /*html*/`丹麦速度<br>瓦兰吉卫队和龙头战舰移动速度+10%`,
     "丹麦团队加成": /*html*/`丹麦团队加成<br>攻城器视野+2`,
 
-    "文德尔的传承": /*html*/`文德尔的传承<br>Vendel Legacy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑士系造成践踏伤害`,
+    "文德尔的传承": /*html*/`文德尔的传承<br>Vendel Legacy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑士系造成0.5格的5点践踏伤害`,
     "哥特舞": /*html*/`哥特舞<br>Gothikon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>瓦兰吉卫队周期性投掷斧头`,
-    "瓦兰吉生产黄金": /*html*/`瓦兰吉生产黄金<br>畜牧、捕鱼和狩猎生成黄金`,
+    "瓦兰吉生产黄金": /*html*/`瓦兰吉生产黄金<br>进行畜牧、捕鱼和狩猎的村民/渔船每采集10/20食物生成1黄金`,
     "瓦兰吉科技特效": /*html*/`瓦兰吉科技特效<br>血统和大篷车效果+50%`,
     "瓦兰吉瓦兰吉卫队": /*html*/`瓦兰吉瓦兰吉卫队<br>瓦兰吉卫队攻击速度+25%，生成的黄金数量+50%`,
     "瓦兰吉海军": /*html*/`瓦兰吉海军<br>龙头战舰和大型投石战舰攻击速度+15%`,
@@ -2190,7 +2195,7 @@ const AOE2_TECH_LINK_EXCLUDE = new Set([
     "银冠", "金冠", "采金法", "钻井采金法", "采石法", "钻井采石法", "信念", "神权", "围墙",
     "工兵", "征招", "间谍", "驯化术", "畜牧业", "畜牧季移", "鱼鳞式建造法", "虹吸管", "钓线", "外板平接船体", "燃烧弹",
     "化学波希米亚", "勃艮第采金法", "勃艮第采石法", "勃艮第刺网", "勃艮第独轮手推车", "勃艮第弓锯", "勃艮第轮作", "勃艮第马轭", "勃艮第手推车",
-    "勃艮第双人锯", "勃艮第双刃斧", "勃艮第重犁", "勃艮第钻井采金法", "勃艮第钻井采石法"
+    "勃艮第双人锯", "勃艮第双刃斧", "勃艮第重犁", "勃艮第钻井采金法", "勃艮第钻井采石法", "鹤机",
 ]);
 
 const AOE2_TECH_NAME_ALIAS = {
@@ -2329,6 +2334,61 @@ function toggleTechTreeQuickJump() {
     }
 }
 
+
+
+
+function Cranequins() {
+    document.getElementById("Byzantines2").classList.remove("aoeTechIconOff");
+    document.getElementById("Gurjaras2").classList.remove("aoeTechIconOff");
+    document.getElementById("Koreans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Malians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Vietnamese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Goths2").classList.remove("aoeTechIconOff");
+    document.getElementById("Tatars2").classList.remove("aoeTechIconOff");
+    document.getElementById("Bengalis2").classList.remove("aoeTechIconOff");
+    document.getElementById("Hindustanis2").classList.remove("aoeTechIconOff");
+    document.getElementById("Huns2").classList.remove("aoeTechIconOff");
+    document.getElementById("Khmer2").classList.remove("aoeTechIconOff");
+    document.getElementById("Lithuanians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Magyars2").classList.remove("aoeTechIconOff");
+    document.getElementById("Romans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Aztecs2").classList.remove("aoeTechIconOff");
+    document.getElementById("Bulgarians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Burmese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Celts2").classList.remove("aoeTechIconOff");
+    document.getElementById("Dravidians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Japanese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Malay2").classList.remove("aoeTechIconOff");
+    document.getElementById("Persians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Saracens2").classList.remove("aoeTechIconOff");
+    document.getElementById("Slavs2").classList.remove("aoeTechIconOff");
+    document.getElementById("Spanish2").classList.remove("aoeTechIconOff");
+    document.getElementById("Teutons2").classList.remove("aoeTechIconOff");
+    document.getElementById("Vikings2").classList.remove("aoeTechIconOff");
+    document.getElementById("Berbers2").classList.remove("aoeTechIconOff");
+    document.getElementById("Bohemians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Burgundians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Chinese2").classList.remove("aoeTechIconOff");
+    document.getElementById("Cumans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Ethiopians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Inca2").classList.remove("aoeTechIconOff");
+    document.getElementById("Italians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Maya2").classList.remove("aoeTechIconOff");
+    document.getElementById("Mongols2").classList.remove("aoeTechIconOff");
+    document.getElementById("Poles2").classList.remove("aoeTechIconOff");
+    document.getElementById("Turks2").classList.remove("aoeTechIconOff");
+    document.getElementById("Armenians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Georgians2").classList.remove("aoeTechIconOff");
+    document.getElementById("Shu2").classList.remove("aoeTechIconOff");
+    document.getElementById("Wei2").classList.remove("aoeTechIconOff");
+    document.getElementById("Khitans2").classList.remove("aoeTechIconOff");
+    document.getElementById("Wu2").classList.remove("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.remove("aoeTechIconOff");
+    document.getElementById("Tupi2").classList.remove("aoeTechIconOff");
+    document.getElementById("Mapuche2").classList.remove("aoeTechIconOff");
+    document.getElementById("Muisca2").classList.remove("aoeTechIconOff");
+}
 
 
 
