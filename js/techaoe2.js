@@ -839,7 +839,7 @@ let ayanami = {
     "丹麦团队加成": /*html*/`丹麦团队加成<br>攻城器视野+2`,
 
     "文德尔之遗": /*html*/`文德尔之遗<br>Vendel Legacy<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>500 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>骑士系造成0.5格的5点践踏伤害`,
-    "哥瑟砍": /*html*/`哥瑟砍<br>Gothikon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>【待补充】 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>【待补充】 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>瓦兰吉卫队周期性投掷斧头`,
+    "哥瑟砍": /*html*/`哥瑟砍<br>Gothikon<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>475 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>400 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>瓦兰吉卫队每30秒充能2次掷斧攻击，在3射程外造成普通攻击伤害`,
     "瓦兰吉生产黄金": /*html*/`瓦兰吉生产黄金<br>进行畜牧、捕鱼和狩猎的村民/渔船工作时生产10%/5%的额外黄金`,
     "瓦兰吉科技特效": /*html*/`瓦兰吉科技特效<br>血统和大篷车效果+50%`,
     "瓦兰吉瓦兰吉卫队": /*html*/`瓦兰吉瓦兰吉卫队<br>瓦兰吉卫队攻击速度+25%，生成的黄金数量+50%`,
@@ -2815,6 +2815,7 @@ function Redemption() {
     document.getElementById("Maya2").classList.add("aoeTechIconOff");
     document.getElementById("Mongols2").classList.add("aoeTechIconOff");
     document.getElementById("Persians2").classList.add("aoeTechIconOff");
+    document.getElementById("Portuguese2").classList.add("aoeTechIconOff");
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
     document.getElementById("Sicilians2").classList.add("aoeTechIconOff");
     document.getElementById("Vietnamese2").classList.add("aoeTechIconOff");
