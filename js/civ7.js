@@ -984,6 +984,55 @@ let ayanami = {
     "良法美意I": /*html*/`良法美意I<br>Yangbeobmiui<br>首都每拥有1人口，便+0.5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，拥有任意重心的城镇+15%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
     "良法美意II": /*html*/`良法美意II<br>Yangbeobmiui<br>首都和拥有书院的城市每拥有1人口，便+0.5<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，其他城市-10%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值，拥有任意重心的城镇+15%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物`,
 
+    "【特色单位】": /*html*/`【特色单位】<br>Tamkāru<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "【特色单位】": /*html*/`【特色单位】<br>Qašti<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "【特色建筑】": /*html*/`【特色建筑】<br>Kirimāḫu<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+
+    "【特色政策】": /*html*/`【特色政策】<br>Ammī-ditāna's Hymn<br>【特色政策】`,
+    "【特色政策】": /*html*/`【特色政策】<br>Mār-banê<br>【特色政策】`,
+    "I": /*html*/`I<br>Harrānu<br>【特色政策】`,
+    "II": /*html*/`II<br>Harrānu<br>【特色政策】`,
+    "I": /*html*/`I<br>Muballitum<br>【特色政策】`,
+    "II": /*html*/`II<br>Muballitum<br>【特色政策】`,
+    "I": /*html*/`I<br>Ugārum<br>【特色政策】`,
+    "II": /*html*/`II<br>Ugārum<br>【特色政策】`,
+
+    "【特色单位】": /*html*/`【特色单位】<br>Druid<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "【特色单位】": /*html*/`【特色单位】<br>Gaisatai<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "【特色建筑】": /*html*/`【特色建筑】<br>Nemeton<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+    "【特色建筑】": /*html*/`【特色建筑】<br>Goben<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+    "【特色城区】": /*html*/`【特色城区】<br>Dūnon<br>【特色城区】`,
+
+    "【特色政策】": /*html*/`【特色政策】<br>Terror Cimbricus<br>【特色政策】`,
+    "I": /*html*/`I<br>Balkan Expedition<br>【特色政策】`,
+    "II": /*html*/`II<br>Balkan Expedition<br>【特色政策】`,
+    "I": /*html*/`I<br>Giamilos<br>【特色政策】`,
+    "II": /*html*/`II<br>Giamilos<br>【特色政策】`,
+    "I": /*html*/`I<br>Harmonic Exchange<br>【特色政策】`,
+    "II": /*html*/`II<br>Harmonic Exchange<br>【特色政策】`,
+    "【待补充】": /*html*/`【待补充】<br>Vix<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】`,
+
+    "【特色单位】": /*html*/`【特色单位】<br>Merchant Adventurer<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "【特色单位】": /*html*/`【特色单位】<br>Longbow<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
+
+    "【特色建筑】": /*html*/`【特色建筑】<br>Chapter House<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+    "【特色建筑】": /*html*/`【特色建筑】<br>Chapel<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
+    "【特色城区】": /*html*/`【特色城区】<br>Abbey<br>【特色城区】`,
+
+    "【特色政策】": /*html*/`【特色政策】<br>Act of Supremacy<br>【特色政策】`,
+    "I": /*html*/`I<br>Albion<br>【特色政策】`,
+    "II": /*html*/`II<br>Albion<br>【特色政策】`,
+    "I": /*html*/`I<br>Charter of the Forest<br>【特色政策】`,
+    "II": /*html*/`II<br>Charter of the Forest<br>【特色政策】`,
+    "I": /*html*/`I<br>Rights of Englishmen<br>【特色政策】`,
+    "II": /*html*/`II<br>Rights of Englishmen<br>【特色政策】`,
+    "【待补充】": /*html*/`【待补充】<br>Globe Theatre<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】`,
+
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "【特色单位】": /*html*/`【特色单位】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>近战攻击力 【待补充】<br>移动力 【待补充】<br>视野范围 【待补充】<br>【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币`,
     "【特色建筑】": /*html*/`【特色建筑】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】<br>维护费 : 【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币、【待补充】<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值`,
@@ -997,6 +1046,7 @@ let ayanami = {
     "I": /*html*/`I<br>【英文待补充】<br>【特色政策】`,
     "II": /*html*/`II<br>【英文待补充】<br>【特色政策】`,
     "【待补充】": /*html*/`【待补充】<br>【英文待补充】<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>【待补充】<br>基础产量：【待补充】`,
+
 }
 
 function showPic(e, taitou) {
