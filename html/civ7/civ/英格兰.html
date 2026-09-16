@@ -505,6 +505,430 @@
         <a id="rrr"></a><b><span>专属事件</span></b>
     </H1>
     <hr class="hrsty">
+    修订中……<br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>我们幸福的少数人</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">探索时代事件<br><b>(满足以下任一):</b><br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_LONGBOW,Hash,DyingUnitType,UNIT_KNIGHT,
+                DuplicateCount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_LONGBOW_2,Hash,DyingUnitType,UNIT_KNIGHT,
+                DuplicateCount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
+                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_LONGBOW_3,Hash,DyingUnitType,UNIT_KNIGHT,
+                DuplicateCount=3<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">铁骑冲锋，大地震颤，耕农义勇兵紧握长弓。他们齐齐引弦，发出致命的一轮齐射。刹那间，箭矢的呼啸压过了战马的嘶鸣与号角的啸叫。随后传来千百声凶狠的闷响——箭雨找到了自己的归宿。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">骑士的时代结束了。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">强劲的箭矢配得上更坚固的甲胄。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">法兰西终将败于英格兰脚下。</td>
+        </tr>
+        <tr>
+            <td>长弓手单位激活坚决能力(+2战斗力)</td>
+            <td>骑兵单位激活掩护能力(对抗远程单位+2战斗力)</td>
+            <td>首都[11255D_NARRATIVE_MODIFIER] UnitTag=UNIT_CLASS_LONGBOW, Amount=1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>占星家</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">
+                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_X_CITIES_WITH_BUILDING_SET]
+                Count=1, ConstructibleType=BUILDING_OBSERVATORY,BUILDING_HOSPITAL<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">熙攘街道旁的一间小书房里，一位占星家凝神倾听，病人正向他倾诉近来接连遭遇的不幸。莫非有仇家在远处暗中对她下咒？占星家握住她的手，宽慰道：上天自有答案。随后他转过身去，向星辰求解。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">人应当永远信赖上天。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">此人有行医执照吗？</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +早期中量</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期中量</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>戏剧评册</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
+                NarrativeTagType=NARRATIVE_TAG_ENGLAND_GLOBE, Amount=1<br>拥有1座牛津大学<br>拥有1座环球剧院</td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">牛津的历史学家们正在梳理数百年前一位占星家留下的浩繁病案。在问诊记录与星象解读之间，夹着一册小书，记录着他对同时代一位著名剧作家戏剧作品的品评。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">它们提供了关于这些作品宝贵的同时代见解。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">他的见解和他的医术一样可疑。</td>
+        </tr>
+        <tr>
+            <td>所有定居点来自牛津大学的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2、所有定居点来自环球剧院的<img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
+            <td>所有定居点来自牛津大学的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +2、所有定居点来自环球剧院的<img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +2</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>边地豪族</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_PILLAGE01,
+                GOSSIP_PILLAGE01=Hash,OtherPlayer,Self,Hash,IsMinorPlayer,True<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">在英格兰边境，劫掠者专挑软弱无备之人下手。他们挥舞长矛，掳走牲畜，勒索乡民以充实自家仓廪，将胆敢反抗者尽数吊死，还把自己的劫掠事迹编成歌谣传唱。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">将这些匪徒当场拿获！</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">这就是边境地带的残酷法则。</td>
+        </tr>
+        <tr>
+            <td>骑兵单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +早期中量</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>方言礼拜</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">
+                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>拥有1座寺庙<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01, GOSSIP_CONSTRUCT_BUILDING01=Hash,UniqueQuarter,QUARTER_ABBEY,
+                DuplicateCount=2<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">世世代代的英格兰信众从未亲自读过圣典。他们并不通晓礼拜仪式所用的语言，只能借神父的诠释来领受经文。而近来，方言译本开始流传，人人皆可亲自阅读圣言、自行体悟。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">灵性成长是个人的修行。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">羊群需要牧人方能兴旺。</td>
+        </tr>
+        <tr>
+            <td>修道院特色城区特定地块额外产出：+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值</td>
+            <td>修道院特色城区特定地块额外产出：+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>此受造之人</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_X_GREAT_WORKS]
+                Count=4, IncludeArchived=False<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS_FOREIGN_HEMISPHERE]
+                Count=2<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">抄书人四处散播一位妇人的自传，她自称与古时的圣者们渊源匪浅。在一段段远古往事的亲历见闻之间，她对常规的英格兰世俗生活发起挑战，劝导读者舍弃物质追逐，踏上属于自己的灵性之旅。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">拯救灵魂高于一切。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">社会规范是帝国的根基。</td>
+        </tr>
+        <tr>
+            <td>所有巨作+4[icon:YIELD_CULTURE]文化值，但[11260B_NARRATIVE_MODIFIER]
+                MultiplierType=REWARD_TYPE_MEDIUM_LATE<br>所有定居点巨作的+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
+                    width='15px'>文化值</td>
+            <td>所有巨作+4[icon:YIELD_GOLD]金币，但<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+                -后期中量<br>所有定居点巨作的+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>战争进行曲</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_GOVERNMENT]
+                GovernmentType=GOVERNMENT_FEUDAL_MONARCHY<br>[REQUIREMENT_PLAYER_HAS_UNHAPPY_CITIES]
+                Count=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_TECH_EX_CASTLES, MinDepth=1<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">权势煊赫的诸侯们群起抗议：一门贵族坐拥众多头衔，其声势之盛几乎压过宫廷中所有人。结盟的各大家族对和解的尝试不屑一顾，他们要求将仇敌流放——否则后果自负。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">这里奉行君主政体，不容寡头政治。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">流放一门家族，以较小代价换取和平。</td>
+        </tr>
+        <tr>
+            <td>等级最高的指挥官获得免费晋升，但所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                -1<br>[11261B_NARRATIVE_MODIFIER2] Amount=1</td>
+            <td>所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>剧院一日</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">
+                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>拥有1座环球剧院<br>[REQUIREMENT_PLAYER_TOTAL_POPULATION]
+                Amount=200<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">成千上万的观众涌入环球剧院，只为一睹那位著名剧作家笔下的剧目。这些剧作借古喻今，或诙谐，或悲怆；无论贩夫走卒还是王公贵族，皆为之心驰神往。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">英格兰人在舞台上照见自己。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">这些故事用来消磨午后时光，再精彩不过了。</td>
+        </tr>
+        <tr>
+            <td>所有定居点来自环球剧院的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
+            <td>所有定居点来自环球剧院的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +2</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="6" style="background-color: black;text-align:center"><span
+                    style="color: #FFFFFF"><b>远隔重洋的母邦</b></span></td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="5">
+                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_EX_ENGLAND_BOARD_OF_TRADES, MinDepth=1<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="5">
+                当英格兰的目光飘向疆界之外的土地，贸易委员会不断接到质询：这些新定居点应当如何治理？多数人认同，殖民地理应以物产偿还开拓的投入。但一丝隐忧挥之不去——当地文化或许会潜移默化地让殖民地偏离英格兰的生活方式。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 25.3%;">殖民地的使命就是让本土富足。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 25.3%;">英格兰将向世界学习。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项3</span></td>
+            <td style="width: 25.3%;">或许有朝一日，这些殖民地会走出自己的路……</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点 +1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>林肯绿</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
+                GossipTypes=GOSSIP_PLUNDER_TRADE_ROUTE01,
+                GOSSIP_PLUNDER_TRADE_ROUTE01=Hash,OtherPlayer,Self,Hash,DomainType,DOMAIN_LAND<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">一条穿越古老森林的通衢大道上，一位法外之徒率领他的快乐伙伴们，劫取过往旅人的财物。他们宣称劫富济贫，令当地治安官怒火中烧，却也让农民们愈发拥戴这伙强人。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">定要铲除这群祸害。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">真是浪漫的传说！</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期中量、<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
+                    width='15px'>幸福值 -早期中量</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +早期中量、[11264C_NARRATIVE_MODIFIER2]
+                MultiplierType=REWARD_TYPE_MEDIUM_EARLY</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>复合隐喻辞</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">
+                古典时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_AQ_FOUNDATION, MinDepth=1<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">石之厅堂、狼之屏障、书之宝库、牛之栖所——这些便是最早的英格兰城镇得到的复合隐喻语。泥泞与炊烟筑成的城市，被英格兰的歌者们唱成了诗。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">让他们唱吧。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">只要别耽误贸易的正事就好。</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>低俗小说</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">
+                近世时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
+                ProgressionTreeNodeType=NODE_CIVIC_MO_ADMINISTRATION, MinDepth=1<br><br><span
+                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">一股新兴的印刷风潮席卷英格兰——《大商贾历险记》，装帧华美又批量印制的冒险商人列传，其中的冒险故事愈发天马行空。特许公司担心这类读物会催生不切实际的幻想……但架不住它们确实畅销。
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">下期预告：《五万毒猿奇案》。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">下期预告：《查尔斯与复利》。</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点 +1</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>好医生在英格兰</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
+                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_ENGLAND<br><br><span
+                    style='color:#a8d08d'><b>[前置剧情]</b></span><br>在事件 <b>好医生与不断扩张的世界</b> 中选择：<b>探索世界。</b></td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">座无虚席的英格兰剧院里，黎刹医生在楼座上欣赏一出喜剧。台上，一场认错人的闹剧引得满堂哄笑，一浪高过一浪。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">这无疑是门赚钱的生意。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">这是不折不扣的英式幽默。</td>
+        </tr>
+        <tr>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期少量</td>
+            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +早期少量</td>
+        </tr>
+    </table>
+
+
+
 </div>
                         </div>
                     </div>
