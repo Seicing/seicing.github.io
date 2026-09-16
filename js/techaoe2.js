@@ -834,7 +834,7 @@ let ayanami = {
     "北方人之怒": /*html*/`北方人之怒<br>Northmen’s Fury<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>950 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>900 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>【待补充】 <br>攻城单位和攻城船 +40%对所有建筑伤害，投石车和攻城船攻击距离 +1`,
     "丹麦额外食物": /*html*/`丹麦额外食物<br>村民和渔船提交5%的额外食物`,
     "丹麦升级": /*html*/`丹麦升级<br>兵营和攻城武器厂升级黄金-66%`,
-    "丹麦掠夺": /*html*/`丹麦掠夺<br>摧毁建筑物掠夺25黄金 + 15%被摧毁建筑建造成本的资源`,
+    "丹麦掠夺": /*html*/`丹麦掠夺<br>摧毁建筑物25%被摧毁建筑建造成本的资源(墙壁除外)`,
     "丹麦速度": /*html*/`丹麦速度<br>瓦兰吉卫队和维京长船移动速度+10%`,
     "丹麦团队加成": /*html*/`丹麦团队加成<br>攻城器视野+2`,
 

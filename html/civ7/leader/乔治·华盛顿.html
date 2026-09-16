@@ -355,6 +355,7 @@
         <a id="rrr"></a><b><span>专属事件</span></b>
     </H1>
     <hr class="hrsty">
+
     <table id="aoe4de" class="aoe4posbo">
         <tr>
             <td colspan="4" style="background-color: black;text-align:center">
@@ -363,10 +364,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_TOTAL_POPULATION]
-                Amount=15<br>【否】 [REQUIREMENT_PLAYER_HAS_X_CITIES_WITH_BUILDING_SET] Count=1,
-                ConstructibleType=BUILDING_GRANARY<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                古典时代事件<br>
+                玩家人口达到15<br>
+                所有定居点都没有粮仓<br>
             </td>
         </tr>
         <tr>
@@ -380,9 +381,14 @@
             <td style="width: 42%;">华盛顿可以扶持新的定居点。成立一家公司，有序开发腹地。</td>
         </tr>
         <tr>
-            <td>首都获得单位: 开拓者 x1</td>
-            <td>城镇首都获得单位: 开拓者 x1、所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
-                +1，但[10197C_NARRATIVE_MODIFIER3] MultiplierType=REWARD_TYPE_MINOR_LATE</td>
+            <td>
+                首都获得1个开拓者
+            </td>
+            <td>
+                首都获得1个开拓者<br>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -后期少量<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -395,9 +401,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_10198A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                古典时代事件<br>
+                拥有至少拥有3个沼泽地块的定居点<br>
             </td>
         </tr>
         <tr>
@@ -411,9 +417,13 @@
             <td style="width: 42%;">沼泽自有其用途。</td>
         </tr>
         <tr>
-            <td>特定地块额外产出：+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物，但沼泽地块特定地块额外产出：-1 <img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力</td>
-            <td>沼泽地块特定地块额外产出：+1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值</td>
+            <td>
+                沼泽地块<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物 +2<br>
+                沼泽地块<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 -1
+            </td>
+            <td>
+                沼泽地块<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -426,11 +436,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_RANDOM_EVENT_UNIT_KILLED01,
-                GOSSIP_RANDOM_EVENT_UNIT_KILLED01=Hash,EventClass,CLASS_BLIZZARD,Hash,IsDyingUnitPlotOwner,False,
-                TurnWindow=0, DuplicateCount=2<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                探索时代事件<br>
+                暴风雪导致单位死亡，死亡单位所处地块不属于玩家
             </td>
         </tr>
         <tr>
@@ -444,8 +452,12 @@
             <td style="width: 42%;">在严寒中挣扎的士兵学会了如何生存。</td>
         </tr>
         <tr>
-            <td>所有现有指挥官所有指挥官获得 10 点经验值</td>
-            <td>步兵单位免疫暴风雪伤害<br>[10199C_NARRATIVE_MODIFIER] RandomEventClass=CLASS_BLIZZARD</td>
+            <td>
+                所有现有指挥官获得 10 点经验值
+            </td>
+            <td>
+                步兵单位免疫暴风雪伤害
+            </td>
         </tr>
     </table>
     <br>
@@ -458,9 +470,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>【否】 [REQUIREMENT_PLAYER_HAS_X_ALLIANCES]
-                Amount=1<br>[REQUIREMENT_PLAYER_AT_PEACE_X_TURNS_AGO] TurnsAgo=5<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                探索时代事件<br>
+                没有任何联盟<br>
+                维持了5回合的和平状态<br>
             </td>
         </tr>
         <tr>
@@ -474,8 +487,13 @@
             <td style="width: 42%;">华盛顿宣布他的土地为中立领土。</td>
         </tr>
         <tr>
-            <td>任务：在{1_turn_timer}内向你本土上的一位玩家宣战<br>首都获得单位: 剑士 x2</td>
-            <td>首都获得单位: 移民 x1</td>
+            <td>
+                任务：在{1_turn_timer}内向你本土上的一位玩家宣战<br>
+                首都获得2个剑士<br>
+            </td>
+            <td>
+                首都获得单位1个移民
+            </td>
         </tr>
     </table>
     <br>
@@ -488,10 +506,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH,
-                GOSSIP_UNIT_COMBAT_DEATH=Hash,OtherPlayer,Self,Hash,IsKillingUnitInfantry,True,Hash,FromRiver,True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                近世时代事件<br>
+                使用河流的步兵击杀单位<br>
             </td>
         </tr>
         <tr>
@@ -505,8 +522,12 @@
             <td style="width: 42%;">等待增援。</td>
         </tr>
         <tr>
-            <td>步兵单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)</td>
-            <td>步兵单位所有定居点训练单位+20% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用</td>
+            <td>
+                步兵单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)
+            </td>
+            <td>
+                训练步兵单位+20% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用
+            </td>
         </tr>
     </table>
     <br>
@@ -520,10 +541,9 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                近世时代事件<br>[REQ_STORY_CIVILIZATION_GREAT_BRITAIN_WASHINGTON]<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH,
-                GOSSIP_UNIT_COMBAT_DEATH=Hash,DyingCivilization,CIVILIZATION_AMERICA,Hash,OtherPlayer,Self<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_GREAT_BRITAIN_WASHINGTON]<br>[REQ_STORY_LEADER_WASHINGTON]
+                近世时代事件<br>
+                扮演大不列颠文明<br>
+                击杀美国文明的单位 <br>
             </td>
         </tr>
         <tr>
@@ -537,8 +557,8 @@
             <td style="width: 42%;">请奏《华盛顿统治海洋》</td>
         </tr>
         <tr>
-            <td>首都获得单位: 胸甲骑兵 x1</td>
-            <td>获得单位: 风帆战列舰 x1</td>
+            <td>首都获得1个胸甲骑兵</td>
+            <td>获得1个风帆战列舰</td>
         </tr>
     </table>
     <br>
@@ -550,11 +570,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">近世时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_HAS_X_RESOURCES]
-                ResourceType=RESOURCE_GOLD,RESOURCE_IVORY,RESOURCE_HARDWOOD,
-                Amount=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_MAIN_MODERNIZATION, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="5">
+                近世时代事件<br>
+                拥有黄金、象牙或硬木中的任意1个<br>
+                已研发市政现代化 <br>
             </td>
         </tr>
         <tr>
@@ -570,9 +589,18 @@
             <td style="width: 25.3%;">定制一副象牙打造的新假牙。</td>
         </tr>
         <tr>
-            <td>任务：改良一处黄金资源<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1</td>
-            <td>任务：改良一处硬木资源<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点 +1</td>
-            <td>任务：改良一处象牙资源<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/军事属性点.webp' width='15px'>军事属性点 +1</td>
+            <td>
+                任务：改良一处黄金资源<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1
+            </td>
+            <td>
+                任务：改良一处硬木资源<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点 +1
+            </td>
+            <td>
+                任务：改良一处象牙资源<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/军事属性点.webp' width='15px'>军事属性点 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -585,9 +613,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_HAS_X_WARS] Amount=2<br>【否】
-                [REQUIREMENT_PLAYER_YIELD_PER_TURN_LEAD_RATIO] YieldType=YIELD_HAPPINESS, PlayerRatio=50<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                近世时代事件<br>
+                参与2场战争<br>
+                玩家每回合幸福度产出领先比例没有达到50%<br>
             </td>
         </tr>
         <tr>
@@ -601,10 +630,16 @@
             <td style="width: 42%;">让步妥协。</td>
         </tr>
         <tr>
-            <td>城镇所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1，但首都<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力 降低75% (3回合)</td>
-            <td>所有战争+1战争支持，但城镇所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
-                -2<br>[10208C_NARRATIVE_MODIFIER2] ActionType=DIPLOMACY_ACTION_DECLARE_WAR, Amount=1</td>
+            <td>
+                所有城镇<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1<br>
+                首都<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力降低75% (持续3回合)
+            </td>
+            <td>
+                所有战争+1战争支持<br>
+                所有城镇<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
+                -2<br>
+                宣战次数+1？
+            </td>
         </tr>
     </table>
     <br>
@@ -617,9 +652,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_ALLIED01, GOSSIP_ALLIED01=Hash,Leader,LEADER_LAFAYETTE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                近世时代事件<br>
+                与拉斐特结盟<br>
             </td>
         </tr>
         <tr>
@@ -633,8 +668,12 @@
             <td style="width: 42%;">这是一位可贵的挚友。</td>
         </tr>
         <tr>
-            <td>防御工事所有定居点来自FORTIFICATION建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1</td>
-            <td>所有定居点来自市立公园的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>
+                防御工事<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1
+            </td>
+            <td>
+                市立公园<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -647,10 +686,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_DIPLOMACY_ACTION_STARTED,
-                GOSSIP_DIPLOMACY_ACTION_STARTED=Hash,OtherPlayer,Self,Hash,DiplomacyActionGroup,DIPLOMACY_ACTION_GROUP_SANCTION,Hash,OriginalCivilization,CIVILIZATION_GREAT_BRITAIN<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                近世时代事件<br>
+                对原始文明为大不列颠的玩家进行制裁<br>
             </td>
         </tr>
         <tr>
@@ -665,10 +703,14 @@
             <td style="width: 42%;">英国佬终于露出了鸡的原形。</td>
         </tr>
         <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +早期少量</td>
-            <td>城市所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +1，但与大不列颠的关系-10<br>[10210C_NARRATIVE_MODIFIER2] Amount=-10,
-                TargetCivilization=CIVILIZATION_GREAT_BRITAIN</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +早期少量
+            </td>
+            <td>
+                所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                +1<br>
+                与大不列颠的关系-10<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -681,10 +723,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQ_STORY_LEADER_WASHINGTON]<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_GOLDEN_AGE<br>[REQUIREMENT_PLAYER_HAS_GOVERNMENT]
-                GovernmentType=GOVERNMENT_BUREAUCRATIC_MONARCHY<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON]
+            <td colspan="3">
+                近世时代事件<br>
+                触发庆典<br>
+                已选择官僚君主政体<br>
             </td>
         </tr>
         <tr>
@@ -698,9 +740,11 @@
             <td style="width: 42%;">拒绝王冠。拒绝佩剑。拒绝尊号。</td>
         </tr>
         <tr>
-            <td>的幸福值建筑首都来自幸福值建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
-            <td>所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +1，但政体变更为选举共和<br>[10211C_NARRATIVE_MODIFIER2] GovernmentType=GOVERNMENT_ELECTIVE_REPUBLIC</td>
+            <td> 首都幸福值建筑<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1</td>
+            <td>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1<br>
+                政体变更为选举共和<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -712,9 +756,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">古典时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_FOUND_CITY01,
-                DuplicateCount=2<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="5">
+                古典时代事件<br>
+                建造2个定居点<br>
             </td>
         </tr>
         <tr>
@@ -730,11 +774,20 @@
             <td style="width: 25.3%;">秩序源自士兵。</td>
         </tr>
         <tr>
-            <td>任务：在{1_capital}拥有一座金币建筑，且人口达到至少15<br>城市所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>任务：拥有4座设有非默认重心的城镇<br>城镇所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td>幸福值建筑所有定居点建造建筑+20% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用</td>
+            <td>
+                任务：在{1_capital}拥有一座金币建筑，且人口达到至少15<br>
+                所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +1<br>
+                进入<span class="aoeat-red">分支1</span>(视为完成1次<span class="aoeat-red">分支1</span>任务)
+            </td>
+            <td>
+                任务：拥有4座设有非默认重心的城镇<br>
+                所有城镇<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                +1<br>
+                进入<span class="aoeat-blue">分支2</span>(视为完成1次<span class="aoeat-blue">分支2</span>任务)
+            </td>
+            <td>
+                建造幸福值建筑 +20%<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用
+            </td>
         </tr>
     </table>
     <br>
@@ -747,9 +800,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_X_WORKERS]
-                Amount=4<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                <span class="aoeat-red">分支1</span><br>
+                古典时代事件<br>
+                拥有4个工人单位
             </td>
         </tr>
         <tr>
@@ -763,9 +817,14 @@
             <td style="width: 42%;">华盛顿需要的是朋友，不是正襟危坐的顾问。</td>
         </tr>
         <tr>
-            <td>任务：拥有一座建有祭坛、兵营、花园、图书馆、市场和纪念碑的定居点<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>城市所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>
+                任务：拥有一座建有祭坛、兵营、花园、图书馆、市场和纪念碑的定居点<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点
+                +1<br>
+            </td>
+            <td>
+                所有城市<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -778,12 +837,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS]
-                CountPerConqueredSettlement=1, CountPerOwnSettlement=1, RequiredCount=4,
-                OnlyTowns=True<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS] CountPerConqueredSettlement=1,
-                CountPerOwnSettlement=1, RequiredCount=2, OnlyCities=True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                <span class="aoeat-blue">分支2</span><br>
+                古典时代事件<br>
+                拥有4个城镇<br>
+                拥有2个城市<br>
             </td>
         </tr>
         <tr>
@@ -797,9 +855,14 @@
             <td style="width: 42%;">无视它们。</td>
         </tr>
         <tr>
-            <td>任务：拥有4座城市<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td>城镇所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>
+                任务：拥有4座城市<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点
+                +1<br>
+            </td>
+            <td>
+                所有城镇<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -812,10 +875,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_IS_AGE_COUNT]
-                AgeCount=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_EX_MAIN_AUTHORITY, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                古典时代未选择分支<br>
+                探索时代事件<br>
+                完成市政权威
             </td>
         </tr>
         <tr>
@@ -831,8 +894,8 @@
             <td style="width: 42%;">专注于庄园。</td>
         </tr>
         <tr>
-            <td>故事仍在继续<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>故事仍在继续<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td>进入<span class="aoeat-red">分支1</span>(视为完成1次<span class="aoeat-red">分支1</span>任务)</td>
+            <td>进入<span class="aoeat-blue">分支2</span>(视为完成1次<span class="aoeat-blue">分支2</span>任务)</td>
         </tr>
     </table>
     <br>
@@ -845,12 +908,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_TRADE_ROUTE_STARTED01,GOSSIP_TRADE_ROUTE_STARTED02,
-                GOSSIP_TRADE_ROUTE_STARTED01=Hash,OtherPlayer,Other,Hash,RelationshipLevel,PLAYER_RELATIONSHIP_HOSTILE,
-                GOSSIP_TRADE_ROUTE_STARTED02=Hash,OtherPlayer,Other,Hash,RelationshipLevel,PLAYER_RELATIONSHIP_UNFRIENDLY,
-                Amount=1<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                <span class="aoeat-red">分支1</span><br>
+                探索时代事件<br>
+                与关系为敌对或不友好的玩家建立贸易路线<br>
             </td>
         </tr>
         <tr>
@@ -864,9 +925,10 @@
             <td style="width: 42%;">谴责恐怖分子，无惧他们报复。</td>
         </tr>
         <tr>
-            <td>任务：发起5次制裁。任务进行期间，所有定居点-4[icon:YIELD_HAPPINESS]幸福值<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp'
-                    width='15px'>外交属性点 +1<br>所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                -2<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td>
+                任务：发起5次制裁。任务进行期间，所有定居点 -4<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点 +1<br>
+            </td>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +早期中量</td>
         </tr>
     </table>
@@ -880,10 +942,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_X_RELATIONSHIPS] Amount=3,
-                DiplomacyPlayerRelationships=PLAYER_RELATIONSHIP_HOSTILE<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                <span class="aoeat-red">分支1</span><br>
+                探索时代事件<br>
+                少有3个玩家与自己处于敌对关系<br>
             </td>
         </tr>
         <tr>
@@ -896,8 +958,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：发起5次和解外交努力<br>贸易路线+2[icon:YIELD_DIPLOMACY]影响力<br><img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +2<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td colspan="1">
+                任务：发起5次和解外交努力<br>
+                贸易路线<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +2<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -910,10 +974,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONQUER_CITY01, GOSSIP_CONQUER_CITY01=Hash,OtherPlayer,Other<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                <span class="aoeat-blue">分支2</span><br>
+                探索时代事件<br>
+                征服其他玩家的都市<br>
             </td>
         </tr>
         <tr>
@@ -927,10 +991,13 @@
             <td style="width: 42%;">鼓励异乡人入乡随俗。</td>
         </tr>
         <tr>
-            <td>任务：在10个回合内（可不连续），每回合[icon:YIELD_HAPPINESS]幸福值收益位居所有玩家的前75%之列<br><img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点 +1<br>NARRATIVE_TAG_LEADER_CHAIN_B
+            <td>
+                任务：在10个回合内（可不连续），每回合幸福值收益位居所有玩家的前75%之列<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点 +1<br>
             </td>
-            <td>的专家+1[icon:YIELD_CULTURE]文化值<br>首都专家 +1 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值</td>
+            <td>
+                首都专家 +1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+            </td>
         </tr>
     </table>
     <br>
@@ -943,12 +1010,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS] CountPerConqueredSettlement=1,
-                CountPerOwnSettlement=1, RequiredCount=8,
-                OnlyCities=True<br>[REQUIREMENT_PLAYER_YIELD_PER_TURN_LEAD_RATIO] YieldType=YIELD_GOLD,
-                PlayerRatio=75<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                <span class="aoeat-blue">分支2</span><br>
+                探索时代事件<br>
+                拥有8个定居点<br>
+                每回合金币收益位居所有玩家的前75%之列 <br>
             </td>
         </tr>
         <tr>
@@ -961,8 +1027,11 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：改良一处黄金资源<br>金币建筑所有定居点来自金币建筑的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td colspan="1">
+                任务：改良一处黄金资源<br>
+                金币建筑<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
+                +1<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -975,11 +1044,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A,
-                Amount=3<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_MAIN_SOCIAL_QUESTION, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                领袖分支任务<span class="aoeat-red">分支1</span>完成3次<br>
+                近世时代事件<br>
+                完成市政社会问题<br>
+                (如果领袖分支任务<span class="aoeat-red">分支1</span>完成4次则会额外奖励立即进入庆典)
             </td>
         </tr>
         <tr>
@@ -992,41 +1061,14 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：研究“民族主义”。任务进行期间，所有定居点-9[icon:YIELD_GOLD]金币<br>所有定居点<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -3<br><img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点 +1<br>触发庆典</td>
+            <td colspan="1">
+                任务：研究“民族主义”。任务进行期间，所有定居点-9<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点 +1<br>
+            </td>
         </tr>
     </table>
     <br>
 
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>政党政治</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_MAIN_NATIONALISM, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置剧情]</b></span><br>完成事件 <b>政党政治</b></td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>“身为国家的一员，”华盛顿宣告，“就必须永远将光荣的爱国主义，置于任何个人效忠之上。”</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">关闭。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">关闭。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点 +1</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/外交属性点.webp' width='15px'>外交属性点 +1并进入庆典<br>触发庆典</td>
-        </tr>
-    </table>
-    <br>
 
     <table id="aoe4de" class="aoe4posbo">
         <tr>
@@ -1036,13 +1078,12 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B,
-                Amount=3<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_TECH_MO_INDUSTRIALIZATION,
-                MinDepth=1<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS] CountPerConqueredSettlement=1,
-                CountPerOwnSettlement=1, RequiredCount=6, OnlyCities=True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_WASHINGTON_ONLY]
+            <td colspan="3">
+                领袖分支任务<span class="aoeat-blue">分支2</span>完成3次<br>
+                近世时代事件<br>
+                已完成科技工业化<br>
+                拥有6个以上定居点<br>
+                (如果领袖分支任务<span class="aoeat-blue">分支2</span>完成4次则会额外奖励立即进入庆典)
             </td>
         </tr>
         <tr>
@@ -1055,42 +1096,14 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：在每个定居点拥有一座火车站<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点
-                +1<br>触发庆典</td>
+            <td colspan="1">
+                任务：在每个定居点拥有一座火车站<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点
+                +1<br>
+            </td>
         </tr>
     </table>
     <br>
-
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>维系之链</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_X_CITIES_WITH_BUILDING_SET]
-                ConstructibleType=BUILDING_RAIL_STATION<br><br><span style='color:#a8d08d'><b>[前置剧情]</b></span><br>完成事件
-                <b>维系之链</b>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>以钢铁为线，蒸汽为针，这个国家被精妙地织成一体。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">关闭。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">关闭。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点 +1</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/扩张属性点.webp' width='15px'>扩张属性点 +1并进入庆典<br>触发庆典</td>
-        </tr>
-    </table>
-    <br>
-
 </div>
                         </div>
                     </div>

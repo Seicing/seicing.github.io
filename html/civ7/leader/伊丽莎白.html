@@ -376,10 +376,9 @@
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="5">
-                古典时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_AQ_MAIN_LITERACY, MinDepth=1<br>[REQUIREMENT_PLAYER_TRADITION_SLOTS]
-                MinFilled=6, SlotTypes=POLICY_CULTURE_SLOT,TRADITION_CULTURE_SLOT<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+                古典时代事件<br>
+                已研发市政文化程度<br>
+                已配置6个政策槽位<br>
             </td>
         </tr>
         <tr>
@@ -395,10 +394,17 @@
             <td style="width: 25.3%;">历史是公众之福祉。</td>
         </tr>
         <tr>
-            <td>[10172B_NARRATIVE_MODIFIER] BuildingType=BUILDING_VILLA, Amount=1<br>NARRATIVE_TAG_TACITUS</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +后期少量</td>
-            <td>方形会堂+1巨作槽位<br>所有定居点+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp'
-                    width='15px'>GREATWORKSLOT_WRITING<br>NARRATIVE_TAG_TACITUS</td>
+            <td>
+                免费购买1个庄园<br>
+                获得标签NARRATIVE_TAG_TACITUS
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +后期少量
+            </td>
+            <td>
+                方形会堂+1巨作槽位<br>
+                获得标签NARRATIVE_TAG_TACITUS
+            </td>
         </tr>
     </table>
     <br>
@@ -411,11 +417,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_HAS_GOVERNMENT]
-                GovernmentType=GOVERNMENT_FEUDAL_MONARCHY<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_TACITUS, Amount=1<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CAPITAL_CITY, RequirementSetId=SUBREQSET_10173A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="3">
+                探索时代事件<br>
+                已选择封建君主政体<br>
+                拥有标签NARRATIVE_TAG_TACITUS<br>
+                城市中拥有大学<br>
             </td>
         </tr>
         <tr>
@@ -443,11 +449,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_HAS_COMMANDERS_WITH_X_LEVELS]
-                CommanderCount=2, DomainType=DOMAIN_SEA, LevelCount=5<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_MAKE_DOW,
-                GOSSIP_MAKE_DOW=Hash,OtherPlayer,Self,Numeric,NavalStrengthRatio,200<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="5">
+                探索时代事件<br>
+                拥有2名达到5级的海军指挥官<br>
+                对其他玩家宣战，对方海军的数量是我方的两倍<br>
             </td>
         </tr>
         <tr>
@@ -466,9 +471,14 @@
         </tr>
         <tr>
             <td>海上单位激活鲁莽能力(进攻时+3战斗力；防御时-2战斗力)</td>
-            <td>激活坚决能力(+2战斗力)，但轻型海上单位维护费用+3<br>[10174C_NARRATIVE_MODIFIER2] Amount=-3, UnitTag=UNIT_CLASS_LIGHT</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +后期少量、[10174D_NARRATIVE_MODIFIER2]
-                UnitTag=UNIT_CLASS_HEAVY, Amount=1</td>
+            <td>
+                轻型海上单位激活坚决能力(+2战斗力)<br>
+                轻型海上单位维护费用+3<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币<br>
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +后期少量<br>
+                获得1个重型海军单位<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -481,9 +491,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CAPITAL_CITY, RequirementSetId=SUBREQSET_10175A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="3">
+                探索时代事件<br>
+                首都拥有银行和地牢<br>
             </td>
         </tr>
         <tr>
@@ -497,9 +507,13 @@
             <td style="width: 42%;">以宽恕换取忠诚。</td>
         </tr>
         <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +后期少量</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +后期中量，但[10175C_NARRATIVE_MODIFIER2]
-                MultiplierType=REWARD_TYPE_MEDIUM_LATE</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +后期少量
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +后期中量<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -后期中量<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -512,14 +526,14 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_PLOT_YIELDS, RequirementSetId=SUBREQSET_10176A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="3">
+                探索时代事件<br>
+                地块建造亭台，且拥有至少15点文化产出 <br>
             </td>
         </tr>
         <tr>
             <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">廷臣们屏息静立，诗人开始吟诵他的最新诗作，双眼却只望着女王一人。[n][n]“可否将君比夏日？君比夏日更温婉。”[n][n]几声爱慕的轻叹，从唇边悄然逸出。</td>
+            <td colspan="3">廷臣们屏息静立，诗人开始吟诵他的最新诗作，双眼却只望着女王一人。<br><br>“可否将君比夏日？君比夏日更温婉。”<br><br>几声爱慕的轻叹，从唇边悄然逸出。</td>
         </tr>
         <tr>
             <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
@@ -528,9 +542,13 @@
             <td style="width: 42%;">不如撒手人寰，忘却情为何物。</td>
         </tr>
         <tr>
-            <td>亭台+1巨作槽位<br>所有定居点+1<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp' width='15px'>GREATWORKSLOT_RELIC</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +后期少量，但<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 -后期少量</td>
+            <td>
+                亭台+1巨作槽位
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +后期少量<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 -后期少量
+            </td>
         </tr>
     </table>
     <br>
@@ -542,10 +560,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_TRADES_WITH_X_PLAYERS]
-                Percent=100<br>[REQUIREMENT_COLLECTION_ANY_MET] CollectionType=COLLECTION_PLAYER_CITIES,
-                RequirementSetId=SUBREQSET_10177A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="5">
+                探索时代事件<br>
+                和所有玩家建立贸易路线<br>
+                城市中拥有集市，且位于遥远大陆<br>
             </td>
         </tr>
         <tr>
@@ -562,12 +580,18 @@
             <td style="width: 25.3%;">我们将称它为东印度公司。</td>
         </tr>
         <tr>
-            <td>贸易路线+1[icon:YIELD_GOLD]金币，但-1[icon:YIELD_HAPPINESS]<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'
-                    width='15px'>金币 +1<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +后期中量，但[10177C_NARRATIVE_MODIFIER2]
-                MultiplierType=REWARD_TYPE_MEDIUM_LATE</td>
-            <td>进口资源+1[icon:YIELD_GOLD]金币，但-1[icon:YIELD_HAPPINESS]<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp'
-                    width='15px'>金币 +1<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1</td>
+            <td>
+                贸易路线<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1<br>
+                贸易路线<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +后期中量<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 -后期中量<br>
+            </td>
+            <td>
+                进口资源<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +1<br>
+                进口资源<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1
+            </td>
         </tr>
     </table>
     <br>
@@ -580,10 +604,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH,
-                GOSSIP_UNIT_COMBAT_DEATH=Hash,OtherPlayer,Self,Hash,AtWar,False<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="3">
+                探索时代事件<br>
+                未宣战状态下，造成单位死亡<br>
             </td>
         </tr>
         <tr>
@@ -598,7 +621,7 @@
             <td style="width: 42%;">安抚敌对宫廷。</td>
         </tr>
         <tr>
-            <td>所有现有舰队指挥官所有指挥官获得 10 点经验值</td>
+            <td>所有现有舰队指挥官获得 10 点经验值</td>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 +后期少量</td>
         </tr>
     </table>
@@ -612,12 +635,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CAPITAL_CITY,
-                RequirementSetId=SUBREQSET_10179A_NARRATIVE<br>[REQUIREMENT_PLAYER_MET_IMMEDIATE_GOSSIP]
-                GossipTypes=GOSSIP_TRAIN_UNIT,
-                GOSSIP_TRAIN_UNIT=Hash,UnitType,UNIT_KNIGHT,Hash,IsCapital,True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="3">
+                探索时代事件<br>
+                首都宫殿建筑与河流相邻<br>
+                在首都训练了1个骑士 <br>
             </td>
         </tr>
         <tr>
@@ -631,10 +652,14 @@
             <td style="width: 42%;">围着乡间炉火，付之一笑。</td>
         </tr>
         <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +早期中量，但中最近生产的骑士[10179B_NARRATIVE_MODIFIER2]
-                Amount=99</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +早期中量，但<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 -早期中量</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +早期中量<br>
+                但首都最近生产的骑士-99%生命值
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +早期中量<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/影响力.webp' width='15px'>影响力 -早期中量
+            </td>
         </tr>
     </table>
     <br>
@@ -647,10 +672,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_MEET_INDEPENDENT01,
-                GOSSIP_MEET_INDEPENDENT01=Hash,IsForeignHemisphere,True,Equal,Influence,0<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+            <td colspan="3">
+                探索时代事件<br>
+                遇到遥远大陆的独立势力，且关系值为0<br>
             </td>
         </tr>
         <tr>
@@ -664,37 +688,13 @@
             <td style="width: 42%;">贸易是天平的砝码。</td>
         </tr>
         <tr>
-            <td>任务：在遥远土地上建立一个定居点<br>所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物
-                +1<br>NARRATIVE_TAG_ROANOKE</td>
-            <td>首都获得单位: 商人 x1</td>
-        </tr>
-    </table>
-    <br>
-
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>罗阿诺克</b></span>
+            <td>
+                任务：在遥远土地上建立一个定居点<br><br>
+                新生的殖民地正站在命运的十字路口。祈愿吧，愿命运垂青。<br>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物 +1<br>
+                获得标签NARRATIVE_TAG_ROANOKE
             </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_FOUND_CITY01,
-                GOSSIP_FOUND_CITY01=Hash,IsForeignHemisphere,True, AfterInit=True<br><br><span
-                    style='color:#a8d08d'><b>[前置剧情]</b></span><br>完成事件 <b>罗阿诺克</b></td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>新生的殖民地正站在命运的十字路口。祈愿吧，愿命运垂青。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 84%;" colspan="1">这是失落的殖民地啊。</td>
-            <td rowspan="2" colspan="2" style="width: 8%;"> </td>
-        </tr>
-        <tr>
-            <td colspan="1">遥远土地定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物
-                +1<br>NARRATIVE_TAG_ROANOKE</td>
+            <td>首都获得1个商人</td>
         </tr>
     </table>
     <br>
@@ -708,10 +708,9 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                近世时代事件<br>[REQ_STORY_LEADER_ELIZABETH]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_ROANOKE, Amount=1<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES, RequirementSetId=SUBREQSET_10182A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH]
+                近世时代事件<br>
+                拥有标签NARRATIVE_TAG_ROANOKE<br>
+                拥有位于遥远大陆的城市 <br>
             </td>
         </tr>
         <tr>
@@ -725,8 +724,12 @@
             <td style="width: 42%;">黄金在哪里都价值不菲。</td>
         </tr>
         <tr>
-            <td>遥远土地定居点+1资源槽位<br>所有定居点资源容量+1</td>
-            <td>[10182C_NARRATIVE_MODIFIER] BuildingType=BUILDING_STOCK_EXCHANGE, Amount=2</td>
+            <td>
+                遥远土地定居点+1资源槽位<br>
+            </td>
+            <td>
+                可免费购买2座证券交易所<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -738,8 +741,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">古典时代事件<br>拥有1座港湾<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="5">
+                古典时代事件<br>
+                拥有1座港湾<br>
             </td>
         </tr>
         <tr>
@@ -755,10 +759,19 @@
             <td style="width: 25.3%;">这地方充斥着鱼腥味。</td>
         </tr>
         <tr>
-            <td>任务：在{1_capital}建造一座奇观<br>所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>任务：开启一条贸易路线，并在{1_capital}拥有一座市场<br>+1资源上限<br>首都资源容量+1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td>所有定居点来自港湾的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物 +1</td>
+            <td>
+                任务：在{1_capital}建造一座奇观<br>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +1<br>
+                进入<span class="aoeat-red">分支1</span>(视为完成1次<span class="aoeat-red">分支1</span>任务)
+            </td>
+            <td>
+                任务：开启一条贸易路线，并在{1_capital}拥有一座市场<br>
+                首都资源容量+1<br>
+                进入<span class="aoeat-blue">分支2</span>(视为完成1次<span class="aoeat-blue">分支2</span>任务)
+            </td>
+            <td>
+                港湾<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/食物.webp' width='15px'>食物 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -771,9 +784,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                <span class="aoeat-red">分支1</span><br>
+                古典时代事件<br>
             </td>
         </tr>
         <tr>
@@ -788,9 +801,12 @@
             <td style="width: 42%;">国库无钱为琐事挥霍。</td>
         </tr>
         <tr>
-            <td>任务：在圆形剧场上放置一名专家<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>金币建筑所有定居点建造建筑+20% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用</td>
+            <td>
+                任务：在圆形剧场上放置一名专家<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点
+                +1<br>
+            </td>
+            <td>建造金币建筑+20% <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/生产力.webp' width='15px'>生产力效用</td>
         </tr>
     </table>
     <br>
@@ -803,10 +819,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">古典时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B,
-                Amount=1<br>[REQUIREMENT_PLAYER_HAS_X_TRADE_ROUTES_WITH_PLAYER] Amount=2, AllPlayers=True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                <span class="aoeat-blue">分支2</span><br>
+                古典时代事件<br>
+                和一个玩家拥有2条以上贸易路线<br>
             </td>
         </tr>
         <tr>
@@ -820,8 +836,11 @@
             <td style="width: 42%;">索要一份利润分成。</td>
         </tr>
         <tr>
-            <td>任务：拥有4条贸易路线<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td>
+                任务：拥有4条贸易路线<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点
+                +1<br>
+            </td>
             <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期少量</td>
         </tr>
     </table>
@@ -835,10 +854,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_IS_AGE_COUNT]
-                AgeCount=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_TECH_EX_CARTOGRAPHY, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                古典时代未选择分支<br>
+                探索时代事件<br>
+                完成科技制图学
             </td>
         </tr>
         <tr>
@@ -853,8 +872,8 @@
             <td style="width: 42%;">大海终将献出她的宝藏。</td>
         </tr>
         <tr>
-            <td>故事仍在继续<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>故事仍在继续<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td>进入<span class="aoeat-red">分支1</span>(视为完成1次<span class="aoeat-red">分支1</span>任务)</td>
+            <td>进入<span class="aoeat-blue">分支2</span>(视为完成1次<span class="aoeat-blue">分支2</span>任务)</td>
         </tr>
     </table>
     <br>
@@ -867,10 +886,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_FOUND_CITY01, GOSSIP_FOUND_CITY01=Hash,IsForeignHemisphere,True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                <span class="aoeat-red">分支1</span><br>
+                探索时代事件<br>
+                在遥远土地建立定居点<br>
             </td>
         </tr>
         <tr>
@@ -886,9 +905,12 @@
             <td style="width: 42%;">派他们去寻找贸易伙伴。</td>
         </tr>
         <tr>
-            <td>任务：已在遥远土地上建立3座定居点<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
-            <td>首都获得单位: 商人 x1</td>
+            <td>
+                任务：在遥远土地上建立3座定居点<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点
+                +1<br>
+            </td>
+            <td>首都获得1个商人</td>
         </tr>
     </table>
     <br>
@@ -902,9 +924,9 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                探索时代事件<br>[REQUIREMENT_PLAYER_FOUNDED_RELIGION]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+                <span class="aoeat-red">分支1</span><br>
+                探索时代事件<br>
+                已创建宗教<br>
             </td>
         </tr>
         <tr>
@@ -917,8 +939,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：让你的所有定居点皈依你创立的宗教<br>宫殿+2巨作槽位<br>所有定居点+2<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/传统槽位.webp'
-                    width='15px'>GREATWORKSLOT_RELIC<br>NARRATIVE_TAG_LEADER_CHAIN_A</td>
+            <td colspan="1">
+                任务：让你的所有定居点皈依你创立的宗教<br>
+                宫殿+2巨作槽位<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -931,11 +955,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br>[REQUIREMENT_COLLECTION_ANY_MET]
-                CollectionType=COLLECTION_PLAYER_CITIES,
-                RequirementSetId=SUBREQSET_LEADER_CHAIN_1326A_NARRATIVE<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                <span class="aoeat-blue">分支2</span><br>
+                探索时代事件<br>
+                位于遥远土地的定居点建造了拥有“水”标签的建筑<br>
             </td>
         </tr>
         <tr>
@@ -950,9 +973,12 @@
             <td style="width: 42%;">贸易是通往富庶的道路。</td>
         </tr>
         <tr>
-            <td>任务：让4支宝藏护送队卸载货物<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点
-                +1<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
-            <td>首都获得单位: 商人 x1</td>
+            <td>
+                任务：让4支宝藏护送队卸载货物<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点
+                +1<br>
+            </td>
+            <td>首都获得1个商人</td>
         </tr>
     </table>
     <br>
@@ -965,11 +991,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01,
-                GOSSIP_CONSTRUCT_BUILDING01=Hash,ConstructibleType,BUILDING_SHIPYARD,Hash,IsForeignHemisphere,False<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                <span class="aoeat-blue">分支2</span><br>
+                探索时代事件<br>
+                在本土大陆建造造船厂<br>
             </td>
         </tr>
         <tr>
@@ -983,7 +1008,10 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：拥有8个私掠船单位<br>私掠船单位激活坚决能力(+2战斗力)<br>NARRATIVE_TAG_LEADER_CHAIN_B</td>
+            <td colspan="1">
+                任务：拥有8个私掠船单位<br>
+                私掠船单位激活坚决能力(+2战斗力)<br>
+            </td>
         </tr>
     </table>
     <br>
@@ -996,10 +1024,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_A, Amount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_TRAIN_UNIT01, GOSSIP_TRAIN_UNIT01=Hash,UnitTypeReplaces,UNIT_EXPLORER<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                领袖分支任务<span class="aoeat-red">分支1</span>完成3次<br>
+                近世时代事件<br>
+                训练探索者<br>
+                (如果领袖分支任务<span class="aoeat-red">分支1</span>完成4次则会额外奖励立即进入庆典)
             </td>
         </tr>
         <tr>
@@ -1012,42 +1041,14 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：在遥远土地挖掘3件文物<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点
-                +1<br>触发庆典</td>
+            <td colspan="1">
+                任务：在遥远土地挖掘3件文物<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点 +1
+            </td>
         </tr>
     </table>
     <br>
 
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>历史静候</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_ARTIFACT_EXTRACTED01, GOSSIP_ARTIFACT_EXTRACTED01=Hash,IsForeignHemisphere,True,
-                AfterInit=True, DuplicateCount=3<br><br><span style='color:#a8d08d'><b>[前置剧情]</b></span><br>完成事件
-                <b>历史静候</b>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>一位策展人正筹备展览，陈列新近运抵都城的文物珍藏。知识的财富自此纳入囊中，帝国的故事由此娓娓道来。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">关闭。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">关闭。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点 +1</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/文化属性点.webp' width='15px'>文化属性点 +1并进入庆典<br>触发庆典</td>
-        </tr>
-    </table>
-    <br>
 
     <table id="aoe4de" class="aoe4posbo">
         <tr>
@@ -1057,9 +1058,11 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_LEADER_CHAIN_B, Amount=3<br>拥有1座工厂<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_LEADER_ELIZABETH_ONLY]
+            <td colspan="3">
+                领袖分支任务<span class="aoeat-blue">分支2</span>完成3次<br>
+                近世时代事件<br>
+                拥有1座工厂<br>
+                (如果领袖分支任务<span class="aoeat-blue">分支2</span>完成4次则会额外奖励立即进入庆典)
             </td>
         </tr>
         <tr>
@@ -1072,40 +1075,13 @@
             <td rowspan="2" colspan="2" style="width: 8%;"> </td>
         </tr>
         <tr>
-            <td colspan="1">任务：拥有7座工厂<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1<br>触发庆典
+            <td colspan="1">
+                任务：拥有7座工厂<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1 <br>
             </td>
         </tr>
     </table>
     <br>
-
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>工业之声</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>拥有7座工厂<br><br><span style='color:#a8d08d'><b>[前置剧情]</b></span><br>完成事件 <b>工业之声</b>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">{1_child_reward}<br><br>帝国各地的工厂一座接一座，伴着金属与蒸汽的节拍，源源不断地生产着财富。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">关闭。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">关闭。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/icon/经济属性点.webp' width='15px'>经济属性点 +1并进入庆典<br>触发庆典</td>
-        </tr>
-    </table>
-    <br>
-
 </div>
                         </div>
                     </div>
