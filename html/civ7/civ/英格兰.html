@@ -514,17 +514,8 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="5">探索时代事件<br><b>(满足以下任一):</b><br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_LONGBOW,Hash,DyingUnitType,UNIT_KNIGHT,
-                DuplicateCount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_LONGBOW_2,Hash,DyingUnitType,UNIT_KNIGHT,
-                DuplicateCount=3<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_UNIT_COMBAT_DEATH01,
-                GOSSIP_UNIT_COMBAT_DEATH01=Hash,OtherPlayer,Self,Hash,KillingUnitType,UNIT_LONGBOW_3,Hash,DyingUnitType,UNIT_KNIGHT,
-                DuplicateCount=3<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            <td colspan="5">
+                使用长弓手击杀3个骑士
             </td>
         </tr>
         <tr>
@@ -542,7 +533,7 @@
         <tr>
             <td>长弓手单位激活坚决能力(+2战斗力)</td>
             <td>骑兵单位激活掩护能力(对抗远程单位+2战斗力)</td>
-            <td>首都[11255D_NARRATIVE_MODIFIER] UnitTag=UNIT_CLASS_LONGBOW, Amount=1</td>
+            <td>首都获得一个长弓手</td>
         </tr>
     </table>
     <br>
@@ -556,9 +547,7 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_X_CITIES_WITH_BUILDING_SET]
-                Count=1, ConstructibleType=BUILDING_OBSERVATORY,BUILDING_HOSPITAL<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+                拥有至少一座建有天文台或医院的城市
             </td>
         </tr>
         <tr>
@@ -579,35 +568,6 @@
     </table>
     <br>
 
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>戏剧评册</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">近世时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS]
-                NarrativeTagType=NARRATIVE_TAG_ENGLAND_GLOBE, Amount=1<br>拥有1座牛津大学<br>拥有1座环球剧院</td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">牛津的历史学家们正在梳理数百年前一位占星家留下的浩繁病案。在问诊记录与星象解读之间，夹着一册小书，记录着他对同时代一位著名剧作家戏剧作品的品评。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">它们提供了关于这些作品宝贵的同时代见解。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">他的见解和他的医术一样可疑。</td>
-        </tr>
-        <tr>
-            <td>所有定居点来自牛津大学的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2、所有定居点来自环球剧院的<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
-            <td>所有定居点来自牛津大学的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +2、所有定居点来自环球剧院的<img
-                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +2</td>
-        </tr>
-    </table>
-    <br>
 
     <table id="aoe4de" class="aoe4posbo">
         <tr>
@@ -617,10 +577,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_PILLAGE01,
-                GOSSIP_PILLAGE01=Hash,OtherPlayer,Self,Hash,IsMinorPlayer,True<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            <td colspan="3">
+                探索时代事件<br>
+                被小型势力掠夺<br>
             </td>
         </tr>
         <tr>
@@ -649,10 +608,8 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>拥有1座寺庙<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_CONSTRUCT_BUILDING01, GOSSIP_CONSTRUCT_BUILDING01=Hash,UniqueQuarter,QUARTER_ABBEY,
-                DuplicateCount=2<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+                拥有1座寺庙<br>
+                拥有2个修道院特色城区<br>
             </td>
         </tr>
         <tr>
@@ -666,8 +623,8 @@
             <td style="width: 42%;">羊群需要牧人方能兴旺。</td>
         </tr>
         <tr>
-            <td>修道院特色城区特定地块额外产出：+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值</td>
-            <td>修道院特色城区特定地块额外产出：+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值</td>
+            <td>修道院特色城区+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值</td>
+            <td>修道院特色城区+4 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值</td>
         </tr>
     </table>
     <br>
@@ -680,9 +637,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_X_GREAT_WORKS]
-                Count=4, IncludeArchived=False<br>[REQUIREMENT_PLAYER_HAS_X_SETTLEMENTS_FOREIGN_HEMISPHERE]
-                Count=2<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            <td colspan="3">
+                探索时代事件<br>
+                拥有4个巨作<br>
+                拥有2个遥远大陆定居点<br>
             </td>
         </tr>
         <tr>
@@ -696,11 +654,12 @@
             <td style="width: 42%;">社会规范是帝国的根基。</td>
         </tr>
         <tr>
-            <td>所有巨作+4[icon:YIELD_CULTURE]文化值，但[11260B_NARRATIVE_MODIFIER]
-                MultiplierType=REWARD_TYPE_MEDIUM_LATE<br>所有定居点巨作的+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp'
-                    width='15px'>文化值</td>
-            <td>所有巨作+4[icon:YIELD_GOLD]金币，但<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
-                -后期中量<br>所有定居点巨作的+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币</td>
+            <td>
+                巨作+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值
+            </td>
+            <td>
+                巨作+2 <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币
+            </td>
         </tr>
     </table>
     <br>
@@ -713,11 +672,10 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_GOVERNMENT]
-                GovernmentType=GOVERNMENT_FEUDAL_MONARCHY<br>[REQUIREMENT_PLAYER_HAS_UNHAPPY_CITIES]
-                Count=1<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_TECH_EX_CASTLES, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            <td colspan="3">
+                选择封建君主政体<br>
+                已研发城堡科技<br>
+                拥有1座不满的城市<br>
             </td>
         </tr>
         <tr>
@@ -731,9 +689,13 @@
             <td style="width: 42%;">流放一门家族，以较小代价换取和平。</td>
         </tr>
         <tr>
-            <td>等级最高的指挥官获得免费晋升，但所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值
-                -1<br>[11261B_NARRATIVE_MODIFIER2] Amount=1</td>
-            <td>所有定居点所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1</td>
+            <td>
+                等级最高的指挥官获得免费晋升<br>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -1
+            </td>
+            <td>
+                所有定居点<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +1
+            </td>
         </tr>
     </table>
     <br>
@@ -747,8 +709,9 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>拥有1座环球剧院<br>[REQUIREMENT_PLAYER_TOTAL_POPULATION]
-                Amount=200<br><br><span style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+                探索时代事件 <br>
+                拥有环球剧院<br>
+                人口总计达到200<br>
             </td>
         </tr>
         <tr>
@@ -762,8 +725,8 @@
             <td style="width: 42%;">这些故事用来消磨午后时光，再精彩不过了。</td>
         </tr>
         <tr>
-            <td>所有定居点来自环球剧院的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
-            <td>所有定居点来自环球剧院的<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +2</td>
+            <td>环球剧院<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
+            <td>环球剧院<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +2</td>
         </tr>
     </table>
     <br>
@@ -776,9 +739,7 @@
         <tr>
             <td style="background-color: black; width: 8%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="5">
-                探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_EX_ENGLAND_BOARD_OF_TRADES, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+                已完成市政贸易委员会
             </td>
         </tr>
         <tr>
@@ -811,10 +772,9 @@
         </tr>
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS]
-                GossipTypes=GOSSIP_PLUNDER_TRADE_ROUTE01,
-                GOSSIP_PLUNDER_TRADE_ROUTE01=Hash,OtherPlayer,Self,Hash,DomainType,DOMAIN_LAND<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+            <td colspan="3">
+                探索时代事件<br>
+                贸易路线被掠夺<br>
             </td>
         </tr>
         <tr>
@@ -828,13 +788,52 @@
             <td style="width: 42%;">真是浪漫的传说！</td>
         </tr>
         <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期中量、<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp'
-                    width='15px'>幸福值 -早期中量</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +早期中量、[11264C_NARRATIVE_MODIFIER2]
-                MultiplierType=REWARD_TYPE_MEDIUM_EARLY</td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期中量<br>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 -早期中量<br>
+            </td>
+            <td>
+                <img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/幸福值.webp' width='15px'>幸福值 +早期中量<br>
+            </td>
         </tr>
     </table>
     <br>
+
+
+    <table id="aoe4de" class="aoe4posbo">
+        <tr>
+            <td colspan="4" style="background-color: black;text-align:center">
+                <span style="color: #FFFFFF"><b>戏剧评册</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
+            <td colspan="3">
+                近世时代事件<br>
+                拥有牛津大学<br>
+                拥有环球剧院<br>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
+            <td colspan="3">牛津的历史学家们正在梳理数百年前一位占星家留下的浩繁病案。在问诊记录与星象解读之间，夹着一册小书，记录着他对同时代一位著名剧作家戏剧作品的品评。</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
+            <td style="width: 42%;">它们提供了关于这些作品宝贵的同时代见解。</td>
+            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
+            <td style="width: 42%;">他的见解和他的医术一样可疑。</td>
+        </tr>
+        <tr>
+            <td>牛津大学<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2、环球剧院<img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +2</td>
+            <td>牛津大学<img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +2、环球剧院<img
+                    src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/科技值.webp' width='15px'>科技值 +2</td>
+        </tr>
+    </table>
+    <br>
+
+
 
     <table id="aoe4de" class="aoe4posbo">
         <tr>
@@ -845,9 +844,8 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                古典时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_AQ_FOUNDATION, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+                古典时代事件<br>
+                已研发市政英格兰根基<br>
             </td>
         </tr>
         <tr>
@@ -876,9 +874,8 @@
         <tr>
             <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
             <td colspan="3">
-                近世时代事件<br>[REQ_STORY_CIVILIZATION_ENGLAND]<br>[REQUIREMENT_PLAYER_HAS_COMPLETED_PROGRESSION_TREE_NODE]
-                ProgressionTreeNodeType=NODE_CIVIC_MO_ADMINISTRATION, MinDepth=1<br><br><span
-                    style='color:#a8d08d'><b>[前置绑定要求]</b></span><br>[REQ_STORY_CIVILIZATION_ENGLAND]
+                近世时代事件<br>
+                已研发市政英格兰行政体系<br>
             </td>
         </tr>
         <tr>
@@ -898,34 +895,6 @@
         </tr>
     </table>
     <br>
-
-    <table id="aoe4de" class="aoe4posbo">
-        <tr>
-            <td colspan="4" style="background-color: black;text-align:center">
-                <span style="color: #FFFFFF"><b>好医生在英格兰</b></span>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: black; width: 10%;"><span style="color: #FFFFFF">条件</span></td>
-            <td colspan="3">探索时代事件<br>[REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS] GossipTypes=GOSSIP_PLAYERS_MEET01,
-                GOSSIP_PLAYERS_MEET01=Hash,OtherPlayer,Other,Hash,Civilization,CIVILIZATION_ENGLAND<br><br><span
-                    style='color:#a8d08d'><b>[前置剧情]</b></span><br>在事件 <b>好医生与不断扩张的世界</b> 中选择：<b>探索世界。</b></td>
-        </tr>
-        <tr>
-            <td style="background-color: black;"><span style="color: #FFFFFF">描述</span></td>
-            <td colspan="3">座无虚席的英格兰剧院里，黎刹医生在楼座上欣赏一出喜剧。台上，一场认错人的闹剧引得满堂哄笑，一浪高过一浪。</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项1</span></td>
-            <td style="width: 42%;">这无疑是门赚钱的生意。</td>
-            <td rowspan="2" style="background-color: black; width: 8%;"><span style="color: #FFFFFF">选项2</span></td>
-            <td style="width: 42%;">这是不折不扣的英式幽默。</td>
-        </tr>
-        <tr>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/金币.webp' width='15px'>金币 +早期少量</td>
-            <td><img src='https://data.seicing.com/seicingdepot/3fatcatpool/civ7/文化值.webp' width='15px'>文化值 +早期少量</td>
-        </tr>
-    </table>
 
 
 
