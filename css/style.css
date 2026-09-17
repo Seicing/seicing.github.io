@@ -1203,6 +1203,37 @@ body.font-big #celp255 td {
     padding: 4px;
 }
 
+.civ7cityname {
+    border: 1px solid #222222;
+    width: 500px;
+}
+
+body.font-big .civ7cityname {
+    border: 1px solid #222222;
+    width: 800px;
+}
+
+.civ7cityname600 {
+    border: 1px solid #222222;
+    width: 600px;
+}
+
+body.font-big .civ7cityname600 {
+    border: 1px solid #222222;
+    width: 800px;
+}
+
+.civ7cityname700 {
+    border: 1px solid #222222;
+    width: 700px;
+}
+
+body.font-big .civ7cityname700 {
+    border: 1px solid #222222;
+    width: 800px;
+}
+
+
 
 .aoe2mater {
     width: 650px;
