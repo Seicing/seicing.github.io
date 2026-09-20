@@ -84,7 +84,7 @@
         {
             name: "lordmonarch",
             jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/lordmonarch/lordmonarch.json",
-            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/lordmonarch/lordmonarch.jpg",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/lordmonarch/lordmonarch.png",
             rootMatch: "3fatcatpool/",
             folders: ["lordmonarch"]
         },
