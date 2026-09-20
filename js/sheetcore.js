@@ -82,6 +82,14 @@
         },
 
         {
+            name: "lordmonarch",
+            jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/lordmonarch/lordmonarch.json",
+            sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/lordmonarch/lordmonarch.jpg",
+            rootMatch: "3fatcatpool/",
+            folders: ["lordmonarch"]
+        },
+
+        {
             name: "magiccard",
             jsonUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/magiccard/magiccard.json",
             sheetUrl: "https://data.seicing.com/seicingdepot/3fatcatpool/magiccard/magiccard.png",
