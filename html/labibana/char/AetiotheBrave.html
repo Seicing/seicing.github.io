@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="height:100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
 </head>
 
-<body id='scroll-2'>
+<body class="layout-headless" style="height:100%;" id='scroll-2'>
     <script>
         (function () {
             const getCookie = (name) => {
@@ -43,21 +43,13 @@
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="width:1280px ; margin:auto">
-        <div id="wrapper2">
-            <div id="header" class="container">
-                <div id="logo">
-                    <H1>
-                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
-                    </H1>
-                </div>
-            </div>
-            <div id="page">
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
                 <div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div id="lavipage" page="3"></div>
+                        <div class="entry" style="min-height:720px;"><div id="lavipage" page="3"></div>
 <b data-pagefind-weight="9999">勇者埃提奥(公元前1950年-公元前1918年)</b><br>
 <br>
 埃提奥是水之弑神者阿修丽亚的后代，他的父亲阿维图继承了弑神者母亲的名望，成为了普罗瓦迪亚王国(远古时代的伊拉修莱德王国)的国王，作为王子，埃提奥在他的哥哥和父亲的爱中长大，王国的居民们都说埃提奥是个很聪明乖巧的孩子，日后一定可以很好地辅助他的哥哥管理王国的……这种和平的日子在埃提奥15岁那年画上了句号<br><br>
@@ -89,11 +81,15 @@
     <div data-pagefind-weight="30">埃提奥</div>
     <div data-pagefind-weight="30">匈奴</div>
 </div>
-<!--PAGEFIND_AUTO_TAGS_END--></div>
+<!--PAGEFIND_AUTO_TAGS_END-->
+                        </div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:relative; left:-20px">
-                    
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        
+                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -101,11 +97,11 @@
 <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
-
             </div>
 
         </div>
     </div>
+
 </body>
 
 

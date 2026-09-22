@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="height:100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
 </head>
 
-<body id='scroll-2'>
+<body class="layout-headless" style="height:100%;" id='scroll-2'>
     <script>
         (function () {
             const getCookie = (name) => {
@@ -43,21 +43,13 @@
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="width:1280px ; margin:auto">
-        <div id="wrapper2">
-            <div id="header" class="container">
-                <div id="logo">
-                    <H1>
-                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
-                    </H1>
-                </div>
-            </div>
-            <div id="page">
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
                 <div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div id="lavipage" page="6"></div>
+                        <div class="entry" style="min-height:720px;"><div id="lavipage" page="6"></div>
 <b data-pagefind-weight="9999">价王(公元970年-公元1996年)</b><br>
 安德烈·阿尔怀恩(Andre
 Alwyn)，尤伊帝国高等克里格种姓成员，和那时候很多克里格一样，愚蠢、自大、不学无术，他和丞·伊格雷本就读于同一所机械学院，非常看不起和嫉妒出身于贱民巴里阿却成绩名列前茅的丞，可悲的是，丞甚至没有正眼看过他<br><br>
@@ -88,11 +80,15 @@ Alwyn)，尤伊帝国高等克里格种姓成员，和那时候很多克里格�
     <div data-pagefind-weight="30">价王</div>
     <div data-pagefind-weight="30">尤伊</div>
 </div>
-<!--PAGEFIND_AUTO_TAGS_END--></div>
+<!--PAGEFIND_AUTO_TAGS_END-->
+                        </div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:relative; left:-20px">
-                    
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        
+                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -100,11 +96,11 @@ Alwyn)，尤伊帝国高等克里格种姓成员，和那时候很多克里格�
 <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
-
             </div>
 
         </div>
     </div>
+
 </body>
 
 

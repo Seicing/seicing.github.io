@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="height:100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
 </head>
 
-<body id='scroll-2'>
+<body class="layout-headless" style="height:100%;" id='scroll-2'>
     <script>
         (function () {
             const getCookie = (name) => {
@@ -43,21 +43,13 @@
     <button id="sidebar-toggle-button">☰</button>
     <button id="back-to-top-button">▲</button>
     <div id="sidebar-overlay"></div>
-    <div id="wrapper" style="width:1280px ; margin:auto">
-        <div id="wrapper2">
-            <div id="header" class="container">
-                <div id="logo">
-                    <H1>
-                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
-                    </H1>
-                </div>
-            </div>
-            <div id="page">
+    <div id="wrapper" style="height:auto;width:1280px ; margin:auto">
+        <div id="wrapper2" style="height:auto;">
+            <div id="page" style="height:100%;">
                 <div id="content">
                     <div class="post">
-                        <h2 class="title"><a href="#"><b></b></a></h2>
                         <div style="clear: both;">&nbsp;</div>
-                        <div class="entry"><div id="lavipage" page="11"></div>
+                        <div class="entry" style="min-height:720px;"><div id="lavipage" page="11"></div>
 <b data-pagefind-weight="9999">圣痕虚目世系</b><br>
 文的祖先在大洪水时代生活在西景大陆的东南部，位于现代伊萨赫尔、坎斯坦穆赫室利刹陀罗之间缓冲地带的小部落，他们也不像匈奴人一样到处游牧——他们跟现代世界任何一个帝国的都不像，仅仅是大洪水中被完全毁灭的无数无名种群的其中一个，文的祖先名字也和他的部落一样，永远地湮灭在了历史当中<br><br>
 
@@ -93,11 +85,15 @@
     <div data-pagefind-weight="30">自觉</div>
     <div data-pagefind-weight="30">世清</div>
 </div>
-<!--PAGEFIND_AUTO_TAGS_END--></div>
+<!--PAGEFIND_AUTO_TAGS_END-->
+                        </div>
                     </div>
                 </div>
-                <div id="sidebar" style="position:relative; left:-20px">
-                    
+                <div id="sidebar" style="position:fixed; height:100%; width:220px">
+                    <div id='scroll-1'
+                        style="position:relative; left:-30px; height:90%; overflow-x:hidden; overflow-y:auto;">
+                        
+                    </div>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
                 <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
@@ -105,11 +101,11 @@
 <a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
-
             </div>
 
         </div>
     </div>
+
 </body>
 
 
