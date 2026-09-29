@@ -41,13 +41,16 @@
     #version-filter-container img {
         cursor: pointer;
         transition: 0.2s;
-        margin: 2px;
         border: 2px solid transparent;
     }
 
     #civ-filter-container img:hover,
     #version-filter-container img:hover {
         transform: scale(1.1);
+    }
+
+    #version-filter-container img {
+        margin: 3px;
     }
 </style>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
@@ -373,7 +376,7 @@
     });
 
     // 3. 渲染英雄列表（isGrouped 为 true 时显示版本+分类+英雄的三列结构）
-    function renderHeroes(data, isGrouped = false) {
+    function renderHeroes(data, isGrouped = false, civInfo = null) {
         let container = $('#filtered-heroes-container');
         let html = "";
 
@@ -406,7 +409,9 @@
                 html += `</table>`;
             });
         } else {
-            // 文明筛选模式：平铺展示
+            // 文明筛选模式
+            const civImg = civInfo ? civInfo.img : '';
+            const civName = civInfo ? civInfo.name : '';
             html = `<table id="customers2"><tr><td width="60px" class="bcF5F8FA" style="vertical-align: middle; text-align: center;"><img src="${civInfo?.img || ''}" width="40px"><br>${civInfo?.name || ''}
                         </td><td style="text-align: left;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
             data.forEach(h => html += createHeroCell(h));
