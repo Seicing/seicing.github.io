@@ -120,273 +120,294 @@
 
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
 <script>
-    function renderAll() {
-        let container = $('#display-container');
-        container.empty();
-
-        // 按版本分组
-        const versions = [...new Set(heroLibrary.map(h => h.version))];
-        versions.forEach(ver => {
-            let verSection = `<table id="customers2"><tr><td width="60px" class="bcF5F8FA"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}</td><td>`;
-
-            const types = [...new Set(heroLibrary.filter(h => h.version === ver).map(h => h.type))];
-            types.forEach(type => {
-                verSection += `<div style="margin: 5px 0;"><strong>${type}</strong><div style="display: flex; flex-wrap: wrap;">`;
-                const heroes = heroLibrary.filter(h => h.version === ver && h.type === type);
-                heroes.forEach(h => verSection += createHeroCell(h));
-                verSection += `</div></div>`;
-            });
-
-            verSection += `</td></tr></table><br>`;
-            container.append(verSection);
-        });
-    }
-
-    // 2. 生成单个英雄单元格的模板
+    // 1. 渲染英雄单元格 (自动生成 data-src，触发 sheetcore.js)
     function createHeroCell(h) {
         return `
     <table style="border-collapse: collapse; margin: 4px;">
-        <tr><td width="48px" height="48px" style="border: 0;"><a href="https://seicing.com/html/aoe2/heroes/${h.link}"><img data-src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/${h.img}" width="48px"></a></td></tr>
-        <tr><td width="48px" style="border: 0;text-align: center"><a href="https://seicing.com/html/aoe2/heroes/${h.link}" class="special-link">${h.name}</a></td></tr>
+        <tr>
+            <td width="48px" height="48px" style="border: 0;">
+                <a href="https://seicing.com/html/aoe2/heroes/${h.link}">
+                    <!-- sheetcore.js 会自动扫描此 data-src 并替换为 blob -->
+                    <img data-src="${h.img}" width="48px">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="48px" style="border: 0;text-align: center">
+                <a href="https://seicing.com/html/aoe2/heroes/${h.link}" class="special-link">${h.name}</a>
+            </td>
+        </tr>
     </table>`;
     }
 
-    // 3. 文明点击筛选
+    // 2. 初始化加载
+    $(document).ready(function () {
+        // 注入文明图标
+        $('#civ-filter-container').load('https://seicing.com/js/list/side_aoe2_civ.html', function () {
+            $(this).find('#techno123').hide();
+        });
+
+        // 初始渲染全部
+        renderHeroes(heroLibrary);
+    });
+
+    // 3. 渲染逻辑
+    function renderHeroes(data) {
+        let container = $('#display-container');
+        container.empty();
+
+        // 如果是完整列表，按版本分组
+        if (data === heroLibrary) {
+            const versions = [...new Set(heroLibrary.map(h => h.version))];
+            versions.forEach(ver => {
+                let html = `<table id="customers2"><tr><td width="60px" class="bcF5F8FA"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}</td><td>`;
+                const types = [...new Set(heroLibrary.filter(h => h.version === ver).map(h => h.type))];
+                types.forEach(t => {
+                    html += `<div><strong>${t}</strong><div style="display: flex; flex-wrap: wrap;">`;
+                    heroLibrary.filter(h => h.version === ver && h.type === t).forEach(h => html += createHeroCell(h));
+                    html += `</div></div>`;
+                });
+                html += `</td></tr></table><br>`;
+                container.append(html);
+            });
+        } else {
+            // 筛选列表，直接显示
+            let html = `<table id="customers2"><tr><td><div style="display: flex; flex-wrap: wrap;">`;
+            data.forEach(h => html += createHeroCell(h));
+            html += `</div></td></tr></table>`;
+            container.append(html);
+        }
+
+        // 关键：通知 sheetcore 重新扫描新注入的 img[data-src]
+        // 触发 sheetcore 的 DOMContentLoaded 流程或手动调用扫描函数
+        // 如果你的 sheetcore 逻辑是写在自执行函数里的，建议将其封装为一个函数
+    }
+
+    // 4. 点击筛选
     $(document).on('click', '#civ-filter-container img', function () {
         const civ = $(this).attr('title');
         if ($(this).hasClass('active-civ')) {
             $(this).removeClass('active-civ');
-            renderAll(); // 恢复全部
+            renderHeroes(heroLibrary);
         } else {
             $('#civ-filter-container img').removeClass('active-civ');
             $(this).addClass('active-civ');
-
-            // 渲染筛选结果（扁平化表格）
-            const filtered = heroLibrary.filter(h => h.civ.includes(civ));
-            let html = `<table id="customers2"><tr><th class="bcF5F8FA">文明：${civ} 的专属英雄</th></tr><tr><td><div style="display: flex; flex-wrap: wrap;">`;
-            filtered.forEach(h => html += createHeroCell(h));
-            html += `</div></td></tr></table>`;
-            $('#display-container').html(html);
+            renderHeroes(heroLibrary.filter(h => h.civ.includes(civ)));
         }
     });
 
-    // 页面加载时执行
-    $(document).ready(function () {
-        renderAll();
-    });
-
     const heroLibrary = [
-        { name: "大主教", version: "国王时代", type: "非军事单位", civ: ["无"], img: "大主教.png", link: "大主教.html" },
-        { name: "装在桶里的皇帝", version: "国王时代", type: "非军事单位", civ: ["条顿"], img: "装在桶里的皇帝.png", link: "装在桶里的皇帝.html" },
-        { name: "塔克修士", version: "国王时代", type: "非军事单位", civ: ["不列颠"], img: "塔克修士.png", link: "塔克修士.html" },
-        { name: "猎狼", version: "国王时代", type: "非军事单位", civ: ["无"], img: "猎狼.png", link: "猎狼.html" },
-        { name: "灰狼欧鲁", version: "国王时代", type: "非军事单位", civ: ["无"], img: "灰狼欧鲁.png", link: "灰狼欧鲁.html" },
-        { name: "沙阿王", version: "国王时代", type: "非军事单位", civ: ["波斯"], img: "沙阿王.png", link: "沙阿王.html" },
-        { name: "查理曼", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "查理曼.png", link: "查理曼.html" },
-        { name: "查理马特", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "查理马特.png", link: "查理马特.html" },
-        { name: "熙德", version: "国王时代", type: "步兵", civ: ["西班牙"], img: "熙德.png", link: "熙德.html" },
-        { name: "源氏", version: "国王时代", type: "步兵", civ: ["日本"], img: "源氏.png", link: "源氏.html" },
-        { name: "齐格菲", version: "国王时代", type: "步兵", civ: ["条顿"], img: "齐格菲.png", link: "齐格菲.html" },
-        { name: "首领罗夫", version: "国王时代", type: "步兵", civ: ["丹麦"], img: "首领罗夫.png", link: "首领罗夫.html" },
-        { name: "村女贞德", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "村女贞德.png", link: "村女贞德.html" },
-        { name: "亚瑟王", version: "国王时代", type: "步兵", civ: ["不列颠"], img: "亚瑟王.png", link: "亚瑟王.html" },
-        { name: "北畠氏", version: "国王时代", type: "步兵", civ: ["日本"], img: "北畠氏.png", link: "北畠氏.html" },
-        { name: "拉海尔", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "拉海尔.png", link: "拉海尔.html" },
-        { name: "诺丁安的郡长", version: "国王时代", type: "步兵", civ: ["不列颠"], img: "诺丁安的郡长.png", link: "诺丁安的郡长.html" },
-        { name: "哥特人狄奥多利克", version: "国王时代", type: "步兵", civ: ["哥特"], img: "哥特人狄奥多利克.png", link: "哥特人狄奥多利克.html" },
-        { name: "威廉·华莱士", version: "国王时代", type: "步兵", civ: ["凯尔特"], img: "威廉·华莱士.png", link: "威廉·华莱士.html" },
-        { name: "艾特尔弗里思", version: "国王时代", type: "步兵", civ: ["凯尔特"], img: "艾特尔弗里思.png", link: "艾特尔弗里思.html" },
-        { name: "红衣艾里克", version: "国王时代", type: "步兵", civ: ["维京"], img: "红衣艾里克.png", link: "红衣艾里克.html" },
-        { name: "神眼步弓手", version: "国王时代", type: "射手", civ: ["萨拉森"], img: "神眼步弓手.png", link: "神眼步弓手.html" },
-        { name: "格拉维尔领主", version: "国王时代", type: "射手", civ: ["法兰克"], img: "格拉维尔领主.png", link: "格拉维尔领主.html" },
-        { name: "罗宾汉", version: "国王时代", type: "射手", civ: ["不列颠"], img: "罗宾汉.png", link: "罗宾汉.html" },
-        { name: "贝利沙鲁斯", version: "国王时代", type: "骑兵", civ: ["拜占庭"], img: "贝利沙鲁斯.png", link: "贝利沙鲁斯.html" },
-        { name: "理查蒙长官", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "理查蒙长官.png", link: "理查蒙长官.html" },
-        { name: "诺曼底公爵", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "诺曼底公爵.png", link: "诺曼底公爵.html" },
-        { name: "法兰克游侠", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "法兰克游侠.png", link: "法兰克游侠.html" },
-        { name: "高文爵士", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "高文爵士.png", link: "高文爵士.html" },
-        { name: "盖佐斯尔立", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "盖佐斯尔立.png", link: "盖佐斯尔立.html" },
-        { name: "圣女贞德", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "圣女贞德.png", link: "圣女贞德.html" },
-        { name: "屈出律", version: "国王时代", type: "骑兵", civ: ["契丹"], img: "屈出律.png", link: "屈出律.html" },
-        { name: "兰斯洛特", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "兰斯洛特.png", link: "兰斯洛特.html" },
-        { name: "圣殿骑士团首领", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "圣殿骑士团首领.png", link: "圣殿骑士团首领.html" },
-        { name: "莫德雷德", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "莫德雷德.png", link: "莫德雷德.html" },
-        { name: "沙蒂永的雷纳德", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "沙蒂永的雷纳德.png", link: "沙蒂永的雷纳德.html" },
-        { name: "狮心王理查", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "狮心王理查.png", link: "狮心王理查.html" },
-        { name: "罗兰", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "罗兰.png", link: "罗兰.html" },
-        { name: "贝查德爵士", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "贝查德爵士.png", link: "贝查德爵士.html" },
-        { name: "梅兹爵士", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "梅兹爵士.png", link: "梅兹爵士.html" },
-        { name: "约翰法斯托夫爵士", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "约翰法斯托夫爵士.png", link: "约翰法斯托夫爵士.html" },
-        { name: "黑亲王", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "黑亲王.png", link: "黑亲王.html" },
-        { name: "成吉思汗", version: "国王时代", type: "骑射手", civ: ["蒙古"], img: "成吉思汗.png", link: "成吉思汗.html" },
-        { name: "速不台", version: "国王时代", type: "骑射手", civ: ["蒙古"], img: "速不台.png", link: "速不台.html" },
-        { name: "帖木儿", version: "国王时代", type: "骑射手", civ: ["鞑靼"], img: "帖木儿.png", link: "帖木儿.html" },
-        { name: "坏邻居", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "坏邻居.png", link: "坏邻居.html" },
-        { name: "神之弓", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "神之弓.png", link: "神之弓.html" },
-        { name: "让·彼罗", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "让·彼罗.png", link: "让·彼罗.html" },
-        { name: "让·德·洛兰", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "让·德·洛兰.png", link: "让·德·洛兰.html" },
-        { name: "破坏者", version: "国王时代", type: "攻城武器", civ: ["无"], img: "破坏者.png", link: "破坏者.html" },
-        { name: "阿訇", version: "征服者", type: "非军事单位", civ: ["无"], img: "阿訇.png", link: "阿訇.html" },
-        { name: "阿方索国王", version: "征服者", type: "非军事单位", civ: ["西班牙"], img: "阿方索国王.png", link: "阿方索国王.html" },
-        { name: "桑丘国王", version: "征服者", type: "非军事单位", civ: ["西班牙"], img: "桑丘国王.png", link: "桑丘国王.html" },
-        { name: "罗马教皇里奥一世", version: "征服者", type: "非军事单位", civ: ["罗马", "意大利"], img: "罗马教皇里奥一世.png", link: "罗马教皇里奥一世.html" },
-        { name: "哈拉尔·哈德拉达", version: "征服者", type: "步兵", civ: ["维京"], img: "哈拉尔·哈德拉达.png", link: "哈拉尔·哈德拉达.html" },
-        { name: "织田信长", version: "征服者", type: "步兵", civ: ["日本"], img: "织田信长.png", link: "织田信长.html" },
-        { name: "斯基泰的野女人", version: "征服者", type: "步兵", civ: ["无"], img: "斯基泰的野女人.png", link: "斯基泰的野女人.html" },
-        { name: "亚历山大·涅夫斯基", version: "征服者", type: "骑兵", civ: ["斯拉夫"], img: "亚历山大·涅夫斯基.png", link: "亚历山大·涅夫斯基.html" },
-        { name: "匈奴王阿提拉", version: "征服者", type: "骑兵", civ: ["匈奴"], img: "匈奴王阿提拉.png", link: "匈奴王阿提拉.html" },
-        { name: "匈奴王布莱达", version: "征服者", type: "骑兵", civ: ["匈奴"], img: "匈奴王布莱达.png", link: "匈奴王布莱达.html" },
-        { name: "熙德·坎培多尔", version: "征服者", type: "骑兵", civ: ["西班牙"], img: "熙德·坎培多尔.png", link: "熙德·坎培多尔.html" },
-        { name: "亨利五世", version: "征服者", type: "骑兵", civ: ["不列颠"], img: "亨利五世.png", link: "亨利五世.html" },
-        { name: "斯基泰斥候", version: "征服者", type: "骑兵", civ: ["无"], img: "斯基泰斥候.png", link: "斯基泰斥候.html" },
-        { name: "征服者威廉", version: "征服者", type: "骑兵", civ: ["不列颠", "法兰克"], img: "征服者威廉.png", link: "征服者威廉.html" },
-        { name: "李舜臣将军", version: "征服者", type: "船", civ: ["高丽"], img: "李舜臣将军.png", link: "李舜臣将军.html" },
-        { name: "昌德·菩达一", version: "失落帝国", type: "非军事单位", civ: ["瞿折罗"], img: "昌德·菩达一.png", link: "昌德·菩达一.html" },
-        { name: "女王", version: "失落帝国", type: "非军事单位", civ: ["无"], img: "女王.png", link: "女王.html" },
-        { name: "姗悦姬妲", version: "失落帝国", type: "非军事单位", civ: ["瞿折罗"], img: "姗悦姬妲.png", link: "姗悦姬妲.html" },
-        { name: "瓜特穆斯", version: "失落帝国", type: "步兵", civ: ["阿兹特克"], img: "瓜特穆斯.png", link: "瓜特穆斯.html" },
-        { name: "弗朗切斯科·斯福尔扎", version: "失落帝国", type: "步兵", civ: ["意大利"], img: "弗朗切斯科·斯福尔扎.png", link: "弗朗切斯科·斯福尔扎.html" },
-        { name: "腓特烈·巴巴罗萨", version: "失落帝国", type: "步兵", civ: ["条顿"], img: "腓特烈·巴巴罗萨.png", link: "腓特烈·巴巴罗萨.html" },
-        { name: "布里陀毗", version: "失落帝国", type: "射手", civ: ["瞿折罗"], img: "布里陀毗.png", link: "布里陀毗.html" },
-        { name: "北欧酋长", version: "失落帝国", type: "骑兵", civ: ["维京", "瓦兰吉", "丹麦"], img: "北欧酋长.png", link: "北欧酋长.html" },
-        { name: "萨拉丁", version: "失落帝国", type: "骑兵", civ: ["萨拉森"], img: "萨拉丁.png", link: "萨拉丁.html" },
-        { name: "弗拉德·德古拉", version: "失落帝国", type: "骑兵", civ: ["斯拉夫"], img: "弗拉德·德古拉.png", link: "弗拉德·德古拉.html" },
-        { name: "弗朗西斯科·德·奥雷利亚纳", version: "失落帝国", type: "骑射手", civ: ["西班牙"], img: "弗朗西斯科·德·奥雷利亚纳.png", link: "弗朗西斯科·德·奥雷利亚纳.html" },
-        { name: "贡萨洛·皮萨罗", version: "失落帝国", type: "骑射手", civ: ["西班牙"], img: "贡萨洛·皮萨罗.png", link: "贡萨洛·皮萨罗.html" },
-        { name: "霍斯劳", version: "失落帝国", type: "骑射手", civ: ["波斯"], img: "霍斯劳.png", link: "霍斯劳.html" },
-        { name: "奥斯曼", version: "失落帝国", type: "骑射手", civ: ["土耳其"], img: "奥斯曼.png", link: "奥斯曼.html" },
-        { name: "布里陀毗罗阇", version: "失落帝国", type: "骑射手", civ: ["瞿折罗"], img: "布里陀毗罗阇.png", link: "布里陀毗罗阇.html" },
-        { name: "游娣特公主", version: "非洲王国", type: "非军事单位", civ: ["埃塞俄比亚"], img: "游娣特公主.png", link: "游娣特公主.html" },
-        { name: "极大汗", version: "非洲王国", type: "步兵", civ: ["埃塞俄比亚"], img: "极大汗.png", link: "极大汗.html" },
-        { name: "亨利二世", version: "非洲王国", type: "步兵", civ: ["不列颠"], img: "亨利二世.png", link: "亨利二世.html" },
-        { name: "伊兹科阿图", version: "非洲王国", type: "步兵", civ: ["阿兹特克"], img: "伊兹科阿图.png", link: "伊兹科阿图.html" },
-        { name: "小约翰", version: "非洲王国", type: "步兵", civ: ["不列颠"], img: "小约翰.png", link: "小约翰.html" },
-        { name: "帕查库提", version: "非洲王国", type: "步兵", civ: ["印加"], img: "帕查库提.png", link: "帕查库提.html" },
-        { name: "耶库诺·阿姆拉克", version: "非洲王国", type: "步兵", civ: ["埃塞俄比亚"], img: "耶库诺·阿姆拉克.png", link: "耶库诺·阿姆拉克.html" },
-        { name: "游娣特", version: "非洲王国", type: "步兵", civ: ["埃塞俄比亚"], img: "游娣特.png", link: "游娣特.html" },
-        { name: "古列尔莫·安布里科", version: "非洲王国", type: "射手", civ: ["意大利"], img: "古列尔莫·安布里科.png", link: "古列尔莫·安布里科.html" },
-        { name: "瓦伊纳·卡帕克", version: "非洲王国", type: "射手", civ: ["印加"], img: "瓦伊纳·卡帕克.png", link: "瓦伊纳·卡帕克.html" },
-        { name: "穆斯塔法帕夏", version: "非洲王国", type: "射手", civ: ["土耳其"], img: "穆斯塔法帕夏.png", link: "穆斯塔法帕夏.html" },
-        { name: "帕柯二世", version: "非洲王国", type: "射手", civ: ["玛雅"], img: "帕柯二世.png", link: "帕柯二世.html" },
-        { name: "苏定方", version: "非洲王国", type: "射手", civ: ["中国"], img: "苏定方.png", link: "苏定方.html" },
-        { name: "阿伯拉哈战象", version: "非洲王国", type: "骑兵", civ: ["埃塞俄比亚"], img: "阿伯拉哈战象.png", link: "阿伯拉哈战象.html" },
-        { name: "巴布尔", version: "非洲王国", type: "骑兵", civ: ["印度斯坦"], img: "巴布尔.png", link: "巴布尔.html" },
-        { name: "米克罗斯·陶笛", version: "非洲王国", type: "骑兵", civ: ["马扎尔"], img: "米克罗斯·陶笛.png", link: "米克罗斯·陶笛.html" },
-        { name: "理查·德·克莱尔伯爵", version: "非洲王国", type: "骑兵", civ: ["不列颠"], img: "理查·德·克莱尔伯爵.png", link: "理查·德·克莱尔伯爵.html" },
-        { name: "苏曼古鲁", version: "非洲王国", type: "骑兵", civ: ["马里"], img: "苏曼古鲁.png", link: "苏曼古鲁.html" },
-        { name: "松迪亚塔", version: "非洲王国", type: "骑兵", civ: ["马里"], img: "松迪亚塔.png", link: "松迪亚塔.html" },
-        { name: "崔斯坦爵士", version: "非洲王国", type: "骑兵", civ: ["不列颠"], img: "崔斯坦爵士.png", link: "崔斯坦爵士.html" },
-        { name: "兹瓦斯艾黑骑士", version: "非洲王国", type: "骑兵", civ: ["波兰"], img: "兹瓦斯艾黑骑士.png", link: "兹瓦斯艾黑骑士.html" },
-        { name: "达纳罕", version: "非洲王国", type: "骑射手", civ: ["埃塞俄比亚"], img: "达纳罕.png", link: "达纳罕.html" },
-        { name: "穆萨·伊本·奴萨尔", version: "非洲王国", type: "骑射手", civ: ["萨拉森", "柏柏尔"], img: "穆萨·伊本·奴萨尔.png", link: "穆萨·伊本·奴萨尔.html" },
-        { name: "塔里克·伊本·齐亚德", version: "非洲王国", type: "骑射手", civ: ["柏柏尔"], img: "塔里克·伊本·齐亚德.png", link: "塔里克·伊本·齐亚德.html" },
-        { name: "裴备", version: "蛮王崛起", type: "非军事单位", civ: ["越南"], img: "裴备.png", link: "裴备.html" },
-        { name: "贾亚纳加拉", version: "蛮王崛起", type: "非军事单位", civ: ["马来"], img: "贾亚纳加拉.png", link: "贾亚纳加拉.html" },
-        { name: "乌达雅迭耶跋摩一世", version: "蛮王崛起", type: "非军事单位", civ: ["高棉"], img: "乌达雅迭耶跋摩一世.png", link: "乌达雅迭耶跋摩一世.html" },
-        { name: "加扎·玛达", version: "蛮王崛起", type: "步兵", civ: ["马来"], img: "加扎·玛达.png", link: "加扎·玛达.html" },
-        { name: "阇耶毗罗跋摩", version: "蛮王崛起", type: "步兵", civ: ["高棉"], img: "阇耶毗罗跋摩.png", link: "阇耶毗罗跋摩.html" },
-        { name: "黎利", version: "蛮王崛起", type: "步兵", civ: ["越南"], img: "黎利.png", link: "黎利.html" },
-        { name: "李篆", version: "蛮王崛起", type: "步兵", civ: ["越南"], img: "李篆.png", link: "李篆.html" },
-        { name: "巽他皇家斗士", version: "蛮王崛起", type: "步兵", civ: ["马来"], img: "巽他皇家斗士.png", link: "巽他皇家斗士.html" },
-        { name: "刘仁澍", version: "蛮王崛起", type: "射手", civ: ["越南"], img: "刘仁澍.png", link: "刘仁澍.html" },
-        { name: "黎来", version: "蛮王崛起", type: "骑兵", civ: ["越南"], img: "黎来.png", link: "黎来.html" },
-        { name: "莽应龙", version: "蛮王崛起", type: "骑兵", civ: ["缅甸"], img: "莽应龙.png", link: "莽应龙.html" },
-        { name: "丁礼", version: "蛮王崛起", type: "骑兵", civ: ["越南"], img: "丁礼.png", link: "丁礼.html" },
-        { name: "使者", version: "蛮王崛起", type: "骑兵", civ: ["缅甸"], img: "使者.png", link: "使者.html" },
-        { name: "拉登甲亮", version: "蛮王崛起", type: "骑兵", civ: ["马来"], img: "拉登甲亮.png", link: "拉登甲亮.html" },
-        { name: "苏耶跋摩一世", version: "蛮王崛起", type: "骑兵", civ: ["高棉"], img: "苏耶跋摩一世.png", link: "苏耶跋摩一世.html" },
-        { name: "王通", version: "蛮王崛起", type: "骑兵", civ: ["中国"], img: "王通.png", link: "王通.html" },
-        { name: "莽瑞体", version: "蛮王崛起", type: "骑射手", civ: ["缅甸"], img: "莽瑞体.png", link: "莽瑞体.html" },
-        { name: "贝拉四世", version: "最后的可汗", type: "非军事单位", civ: ["马扎尔"], img: "贝拉四世.png", link: "贝拉四世.html" },
-        { name: "阿陶尔夫", version: "最后的可汗", type: "步兵", civ: ["哥特"], img: "阿陶尔夫.png", link: "阿陶尔夫.html" },
-        { name: "库西·尤潘基", version: "最后的可汗", type: "步兵", civ: ["印加"], img: "库西·尤潘基.png", link: "库西·尤潘基.html" },
-        { name: "索索人护卫", version: "最后的可汗", type: "步兵", civ: ["马里"], img: "索索人护卫.png", link: "索索人护卫.html" },
-        { name: "托巴·尤潘基", version: "最后的可汗", type: "步兵", civ: ["印加"], img: "托巴·尤潘基.png", link: "托巴·尤潘基.html" },
-        { name: "哥特国王阿拉里克", version: "最后的可汗", type: "骑兵", civ: ["哥特"], img: "哥特国王阿拉里克.png", link: "哥特国王阿拉里克.html" },
-        { name: "库曼首领", version: "最后的可汗", type: "骑兵", civ: ["库曼"], img: "库曼首领.png", link: "库曼首领.html" },
-        { name: "猛狮亨利", version: "最后的可汗", type: "骑兵", civ: ["条顿"], img: "猛狮亨利.png", link: "猛狮亨利.html" },
-        { name: "伊瓦依洛", version: "最后的可汗", type: "骑兵", civ: ["保加利亚"], img: "伊瓦依洛.png", link: "伊瓦依洛.html" },
-        { name: "脱脱迷失汗", version: "最后的可汗", type: "骑兵", civ: ["鞑靼"], img: "脱脱迷失汗.png", link: "脱脱迷失汗.html" },
-        { name: "康斯坦丁沙皇", version: "最后的可汗", type: "骑兵", civ: ["保加利亚"], img: "康斯坦丁沙皇.png", link: "康斯坦丁沙皇.html" },
-        { name: "维陶塔斯大帝", version: "最后的可汗", type: "骑兵", civ: ["立陶宛"], img: "维陶塔斯大帝.png", link: "维陶塔斯大帝.html" },
-        { name: "乌鲁斯汗", version: "最后的可汗", type: "骑射手", civ: ["鞑靼"], img: "乌鲁斯汗.png", link: "乌鲁斯汗.html" },
-        { name: "吉艮汗", version: "最后的可汗", type: "骑射手", civ: ["库曼"], img: "吉艮汗.png", link: "吉艮汗.html" },
-        { name: "可泰安汗", version: "最后的可汗", type: "骑射手", civ: ["库曼"], img: "可泰安汗.png", link: "可泰安汗.html" },
-        { name: "莱夫·埃里克松", version: "最后的可汗", type: "船", civ: ["维京"], img: "莱夫·埃里克松.png", link: "莱夫·埃里克松.html" },
-        { name: "爆破推车", version: "最后的可汗", type: "船", civ: ["无"], img: "爆破推车.png", link: "爆破推车.html" },
-        { name: "瓦斯科·达·伽马", version: "最后的可汗", type: "船", civ: ["葡萄牙"], img: "瓦斯科·达·伽马.png", link: "瓦斯科·达·伽马.html" },
-        { name: "埃诺的杰奎琳", version: "西方霸主", type: "非军事单位", civ: ["勃艮第"], img: "埃诺的杰奎琳.png", link: "埃诺的杰奎琳.html" },
-        { name: "达菲德·阿颇·格鲁菲德", version: "西方霸主", type: "步兵", civ: ["不列颠"], img: "达菲德·阿颇·格鲁菲德.png", link: "达菲德·阿颇·格鲁菲德.html" },
-        { name: "卢埃林·阿颇·格鲁菲德", version: "西方霸主", type: "步兵", civ: ["不列颠"], img: "卢埃林·阿颇·格鲁菲德.png", link: "卢埃林·阿颇·格鲁菲德.html" },
-        { name: "阿马尼亚克的伯纳德", version: "西方霸主", type: "骑兵", civ: ["法兰克"], img: "阿马尼亚克的伯纳德.png", link: "阿马尼亚克的伯纳德.html" },
-        { name: "博希蒙德", version: "西方霸主", type: "骑兵", civ: ["西西里"], img: "博希蒙德.png", link: "博希蒙德.html" },
-        { name: "长腿爱德华", version: "西方霸主", type: "骑兵", civ: ["不列颠"], img: "长腿爱德华.png", link: "长腿爱德华.html" },
-        { name: "吉尔伯特·德·克莱尔", version: "西方霸主", type: "骑兵", civ: ["不列颠"], img: "吉尔伯特·德·克莱尔.png", link: "吉尔伯特·德·克莱尔.html" },
-        { name: "无畏的约翰", version: "西方霸主", type: "骑兵", civ: ["勃艮第"], img: "无畏的约翰.png", link: "无畏的约翰.html" },
-        { name: "好人腓力", version: "西方霸主", type: "骑兵", civ: ["勃艮第"], img: "好人腓力.png", link: "好人腓力.html" },
-        { name: "罗伯特·吉斯卡尔", version: "西方霸主", type: "骑兵", civ: ["西西里"], img: "罗伯特·吉斯卡尔.png", link: "罗伯特·吉斯卡尔.html" },
-        { name: "罗杰·博索", version: "西方霸主", type: "骑兵", civ: ["西西里"], img: "罗杰·博索.png", link: "罗杰·博索.html" },
-        { name: "战狼号巨型投石机", version: "西方霸主", type: "攻城武器", civ: ["不列颠"], img: "战狼号巨型投石机.png", link: "战狼号巨型投石机.html" },
-        { name: "年轻的雅德维加", version: "公爵的崛起", type: "步兵", civ: ["波兰"], img: "年轻的雅德维加.png", link: "年轻的雅德维加.html" },
-        { name: "阿基尔达斯", version: "公爵的崛起", type: "骑兵", civ: ["立陶宛"], img: "阿基尔达斯.png", link: "阿基尔达斯.html" },
-        { name: "莫斯科的德米特里", version: "公爵的崛起", type: "骑兵", civ: ["斯拉夫"], img: "莫斯科的德米特里.png", link: "莫斯科的德米特里.html" },
-        { name: "西吉斯蒙德皇帝", version: "公爵的崛起", type: "骑兵", civ: ["条顿"], img: "西吉斯蒙德皇帝.png", link: "西吉斯蒙德皇帝.html" },
-        { name: "雅德维加", version: "公爵的崛起", type: "骑兵", civ: ["波兰"], img: "雅德维加.png", link: "雅德维加.html" },
-        { name: "扬·杰式卡", version: "公爵的崛起", type: "骑兵", civ: ["波希米亚"], img: "扬·杰式卡.png", link: "扬·杰式卡.html" },
-        { name: "约盖拉", version: "公爵的崛起", type: "骑兵", civ: ["立陶宛"], img: "约盖拉.png", link: "约盖拉.html" },
-        { name: "科斯图提斯", version: "公爵的崛起", type: "骑兵", civ: ["立陶宛"], img: "科斯图提斯.png", link: "科斯图提斯.html" },
-        { name: "特维尔亲王米哈伊尔", version: "公爵的崛起", type: "骑兵", civ: ["斯拉夫"], img: "特维尔亲王米哈伊尔.png", link: "特维尔亲王米哈伊尔.html" },
-        { name: "乌尔里希·冯·容金根", version: "公爵的崛起", type: "骑兵", civ: ["条顿"], img: "乌尔里希·冯·容金根.png", link: "乌尔里希·冯·容金根.html" },
-        { name: "阿目佉跋沙", version: "印度王朝", type: "步兵", civ: ["达罗毗荼"], img: "阿目佉跋沙.png", link: "阿目佉跋沙.html" },
-        { name: "昔班尼汗", version: "印度王朝", type: "骑射手", civ: ["库曼"], img: "昔班尼汗.png", link: "昔班尼汗.html" },
-        { name: "忽格鲁特", version: "印度王朝", type: "骑射手", civ: ["鞑靼"], img: "忽格鲁特.png", link: "忽格鲁特.html" },
-        { name: "易卜拉欣·洛迪", version: "印度王朝", type: "骑射手", civ: ["印度斯坦"], img: "易卜拉欣·洛迪.png", link: "易卜拉欣·洛迪.html" },
-        { name: "迷企罗·波阇", version: "印度王朝", type: "骑兵", civ: ["瞿折罗"], img: "迷企罗·波阇.png", link: "迷企罗·波阇.html" },
-        { name: "拉金德拉·朱罗", version: "印度王朝", type: "骑兵", civ: ["达罗毗荼"], img: "拉金德拉·朱罗.png", link: "拉金德拉·朱罗.html" },
-        { name: "年轻的巴布尔", version: "印度王朝", type: "骑兵", civ: ["印度斯坦"], img: "年轻的巴布尔.png", link: "年轻的巴布尔.html" },
-        { name: "阿瑞扬将军", version: "印度王朝", type: "骑兵", civ: ["达罗毗荼"], img: "阿瑞扬将军.png", link: "阿瑞扬将军.html" },
-        { name: "塔玛尔", version: "皇家山脉", type: "宗教部队", civ: ["格鲁吉亚"], img: "塔玛尔.png", link: "塔玛尔.html" },
-        { name: "尤里", version: "皇家山脉", type: "步兵", civ: ["斯拉夫", "格鲁吉亚"], img: "尤里.png", link: "尤里.html" },
-        { name: "扎卡雷", version: "皇家山脉", type: "步兵", civ: ["亚美尼亚", "格鲁吉亚"], img: "扎卡雷.png", link: "扎卡雷.html" },
-        { name: "斯蒂芬", version: "皇家山脉", type: "步兵", civ: ["亚美尼亚"], img: "斯蒂芬.png", link: "斯蒂芬.html" },
-        { name: "梅萊", version: "皇家山脉", type: "步兵", civ: ["亚美尼亚"], img: "梅萊.png", link: "梅萊.html" },
-        { name: "亦思马因", version: "皇家山脉", type: "骑兵", civ: ["波斯"], img: "亦思马因.png", link: "亦思马因.html" },
-        { name: "沙阿王亦思马因", version: "皇家山脉", type: "骑兵", civ: ["波斯"], img: "沙阿王亦思马因.png", link: "沙阿王亦思马因.html" },
-        { name: "冷酷者塞利姆", version: "皇家山脉", type: "骑兵", civ: ["土耳其"], img: "冷酷者塞利姆.png", link: "冷酷者塞利姆.html" },
-        { name: "索罗斯", version: "皇家山脉", type: "骑兵", civ: ["亚美尼亚"], img: "索罗斯.png", link: "索罗斯.html" },
-        { name: "伊万", version: "皇家山脉", type: "骑兵", civ: ["亚美尼亚", "格鲁吉亚"], img: "伊万.png", link: "伊万.html" },
-        { name: "于吉", version: "三国", type: "非军事单位", civ: ["中国"], img: "于吉.png", link: "于吉.html" },
-        { name: "张角", version: "三国", type: "非军事单位", civ: ["中国"], img: "张角.png", link: "张角.html" },
-        { name: "诸葛亮", version: "三国", type: "非军事单位", civ: ["中国", "蜀"], img: "诸葛亮.png", link: "诸葛亮.html" },
-        { name: "草垫中的皇帝", version: "三国", type: "非军事单位", civ: ["中国"], img: "草垫中的皇帝.png", link: "草垫中的皇帝.html" },
-        { name: "刘备", version: "三国", type: "步兵", civ: ["中国", "蜀"], img: "刘备2.png", link: "刘备.html" },
-        { name: "张飞", version: "三国", type: "步兵", civ: ["中国", "蜀"], img: "张飞.png", link: "张飞.html" },
-        { name: "关羽", version: "三国", type: "骑兵", civ: ["中国", "蜀"], img: "关羽.png", link: "关羽.html" },
-        { name: "赵云", version: "三国", type: "骑兵", civ: ["中国", "蜀"], img: "赵云.png", link: "赵云.html" },
-        { name: "曹操", version: "三国", type: "骑兵", civ: ["中国", "魏"], img: "曹操2.png", link: "曹操.html" },
-        { name: "孙坚", version: "三国", type: "骑兵", civ: ["中国", "吴"], img: "孙坚2.png", link: "孙坚.html" },
-        { name: "孙策", version: "三国", type: "骑兵", civ: ["中国", "吴"], img: "孙策.png", link: "孙策.html" },
-        { name: "吕布", version: "三国", type: "骑兵", civ: ["中国"], img: "吕布.png", link: "吕布.html" },
-        { name: "董卓", version: "三国", type: "骑兵", civ: ["中国"], img: "董卓.png", link: "董卓.html" },
-        { name: "严白虎", version: "三国", type: "骑兵", civ: ["中国"], img: "严白虎.png", link: "严白虎.html" },
-        { name: "孙权", version: "三国", type: "射手", civ: ["中国", "吴"], img: "孙权.png", link: "孙权.html" },
-        { name: "袁绍", version: "三国", type: "射手", civ: ["中国"], img: "袁绍.png", link: "袁绍.html" },
-        { name: "周瑜", version: "三国", type: "射手", civ: ["中国", "吴"], img: "周瑜.png", link: "周瑜.html" },
-        { name: "刘表", version: "三国", type: "攻城单位", civ: ["中国"], img: "刘表.png", link: "刘表.html" },
-        { name: "帕坎奇克", version: "最后的酋长", type: "步兵", civ: ["穆伊斯卡"], img: "帕坎奇克.png", link: "帕坎奇克.html" },
-        { name: "阿拉里博亚", version: "最后的酋长", type: "步兵", civ: ["图皮"], img: "阿拉里博亚.png", link: "阿拉里博亚.html" },
-        { name: "加尔瓦里诺", version: "最后的酋长", type: "步兵", civ: ["马普切"], img: "加尔瓦里诺.png", link: "加尔瓦里诺.html" },
-        { name: "昆汉贝贝", version: "最后的酋长", type: "步兵", civ: ["图皮"], img: "昆汉贝贝.png", link: "昆汉贝贝.html" },
-        { name: "瓜科尔达", version: "最后的酋长", type: "步兵", civ: ["马普切"], img: "瓜科尔达.png", link: "瓜科尔达.html" },
-        { name: "劳塔罗", version: "最后的酋长", type: "骑兵", civ: ["马普切"], img: "劳塔罗.png", link: "劳塔罗.html" },
-        { name: "哈拉尔", version: "维京传奇", type: "步兵", civ: ["维京"], img: "哈拉尔.png", link: "哈拉尔.html" },
-        { name: "乌尔夫·奥斯帕克松", version: "维京传奇", type: "步兵", civ: ["维京"], img: "乌尔夫·奥斯帕克松.png", link: "乌尔夫·奥斯帕克松.html" },
-        { name: "哈尔多尔·斯诺拉松", version: "维京传奇", type: "步兵", civ: ["维京"], img: "哈尔多尔·斯诺拉松.png", link: "哈尔多尔·斯诺拉松.html" },
-        { name: "芬恩·阿纳森", version: "维京传奇", type: "步兵", civ: ["维京"], img: "芬恩·阿纳森.png", link: "芬恩·阿纳森.html" },
-        { name: "卡尔夫·阿纳森", version: "维京传奇", type: "步兵", civ: ["维京"], img: "卡尔夫·阿纳森.png", link: "卡尔夫·阿纳森.html" },
-        { name: "神射手埃纳尔", version: "维京传奇", type: "射手", civ: ["维京"], img: "神射手埃纳尔.png", link: "神射手埃纳尔.html" },
-        { name: "托斯蒂格·葛温森", version: "维京传奇", type: "骑兵", civ: ["撒克逊"], img: "托斯蒂格·葛温森.png", link: "托斯蒂格·葛温森.html" },
-        { name: "维京龙船", version: "维京传奇", type: "海军", civ: ["维京", "瓦兰吉", "丹麦"], img: "维京龙船.png", link: "维京龙船.html" }
+        { name: "大主教", version: "国王时代", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/大主教.png", link: "大主教.html" },
+        { name: "装在桶里的皇帝", version: "国王时代", type: "非军事单位", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/装在桶里的皇帝.png", link: "装在桶里的皇帝.html" },
+        { name: "塔克修士", version: "国王时代", type: "非军事单位", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/塔克修士.png", link: "塔克修士.html" },
+        { name: "猎狼", version: "国王时代", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/猎狼.png", link: "猎狼.html" },
+        { name: "灰狼欧鲁", version: "国王时代", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/灰狼欧鲁.png", link: "灰狼欧鲁.html" },
+        { name: "沙阿王", version: "国王时代", type: "非军事单位", civ: ["波斯"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/沙阿王.png", link: "沙阿王.html" },
+        { name: "查理曼", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/查理曼.png", link: "查理曼.html" },
+        { name: "查理马特", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/查理马特.png", link: "查理马特.html" },
+        { name: "熙德", version: "国王时代", type: "步兵", civ: ["西班牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/熙德.png", link: "熙德.html" },
+        { name: "源氏", version: "国王时代", type: "步兵", civ: ["日本"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/源氏.png", link: "源氏.html" },
+        { name: "齐格菲", version: "国王时代", type: "步兵", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/齐格菲.png", link: "齐格菲.html" },
+        { name: "首领罗夫", version: "国王时代", type: "步兵", civ: ["丹麦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/首领罗夫.png", link: "首领罗夫.html" },
+        { name: "村女贞德", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/村女贞德.png", link: "村女贞德.html" },
+        { name: "亚瑟王", version: "国王时代", type: "步兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/亚瑟王.png", link: "亚瑟王.html" },
+        { name: "北畠氏", version: "国王时代", type: "步兵", civ: ["日本"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/北畠氏.png", link: "北畠氏.html" },
+        { name: "拉海尔", version: "国王时代", type: "步兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/拉海尔.png", link: "拉海尔.html" },
+        { name: "诺丁安的郡长", version: "国王时代", type: "步兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/诺丁安的郡长.png", link: "诺丁安的郡长.html" },
+        { name: "哥特人狄奥多利克", version: "国王时代", type: "步兵", civ: ["哥特"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/哥特人狄奥多利克.png", link: "哥特人狄奥多利克.html" },
+        { name: "威廉·华莱士", version: "国王时代", type: "步兵", civ: ["凯尔特"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/威廉·华莱士.png", link: "威廉·华莱士.html" },
+        { name: "艾特尔弗里思", version: "国王时代", type: "步兵", civ: ["凯尔特"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/艾特尔弗里思.png", link: "艾特尔弗里思.html" },
+        { name: "红衣艾里克", version: "国王时代", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/红衣艾里克.png", link: "红衣艾里克.html" },
+        { name: "神眼步弓手", version: "国王时代", type: "射手", civ: ["萨拉森"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/神眼步弓手.png", link: "神眼步弓手.html" },
+        { name: "格拉维尔领主", version: "国王时代", type: "射手", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/格拉维尔领主.png", link: "格拉维尔领主.html" },
+        { name: "罗宾汉", version: "国王时代", type: "射手", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/罗宾汉.png", link: "罗宾汉.html" },
+        { name: "贝利沙鲁斯", version: "国王时代", type: "骑兵", civ: ["拜占庭"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/贝利沙鲁斯.png", link: "贝利沙鲁斯.html" },
+        { name: "理查蒙长官", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/理查蒙长官.png", link: "理查蒙长官.html" },
+        { name: "诺曼底公爵", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/诺曼底公爵.png", link: "诺曼底公爵.html" },
+        { name: "法兰克游侠", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/法兰克游侠.png", link: "法兰克游侠.html" },
+        { name: "高文爵士", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/高文爵士.png", link: "高文爵士.html" },
+        { name: "盖佐斯尔立", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/盖佐斯尔立.png", link: "盖佐斯尔立.html" },
+        { name: "圣女贞德", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/圣女贞德.png", link: "圣女贞德.html" },
+        { name: "屈出律", version: "国王时代", type: "骑兵", civ: ["契丹"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/屈出律.png", link: "屈出律.html" },
+        { name: "兰斯洛特", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/兰斯洛特.png", link: "兰斯洛特.html" },
+        { name: "圣殿骑士团首领", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/圣殿骑士团首领.png", link: "圣殿骑士团首领.html" },
+        { name: "莫德雷德", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/莫德雷德.png", link: "莫德雷德.html" },
+        { name: "沙蒂永的雷纳德", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/沙蒂永的雷纳德.png", link: "沙蒂永的雷纳德.html" },
+        { name: "狮心王理查", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/狮心王理查.png", link: "狮心王理查.html" },
+        { name: "罗兰", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/罗兰.png", link: "罗兰.html" },
+        { name: "贝查德爵士", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/贝查德爵士.png", link: "贝查德爵士.html" },
+        { name: "梅兹爵士", version: "国王时代", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/梅兹爵士.png", link: "梅兹爵士.html" },
+        { name: "约翰法斯托夫爵士", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/约翰法斯托夫爵士.png", link: "约翰法斯托夫爵士.html" },
+        { name: "黑亲王", version: "国王时代", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/黑亲王.png", link: "黑亲王.html" },
+        { name: "成吉思汗", version: "国王时代", type: "骑射手", civ: ["蒙古"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/成吉思汗.png", link: "成吉思汗.html" },
+        { name: "速不台", version: "国王时代", type: "骑射手", civ: ["蒙古"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/速不台.png", link: "速不台.html" },
+        { name: "帖木儿", version: "国王时代", type: "骑射手", civ: ["鞑靼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/帖木儿.png", link: "帖木儿.html" },
+        { name: "坏邻居", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/坏邻居.png", link: "坏邻居.html" },
+        { name: "神之弓", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/神之弓.png", link: "神之弓.html" },
+        { name: "让·彼罗", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/让·彼罗.png", link: "让·彼罗.html" },
+        { name: "让·德·洛兰", version: "国王时代", type: "攻城武器", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/让·德·洛兰.png", link: "让·德·洛兰.html" },
+        { name: "破坏者", version: "国王时代", type: "攻城武器", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/破坏者.png", link: "破坏者.html" },
+        { name: "阿訇", version: "征服者", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿訇.png", link: "阿訇.html" },
+        { name: "阿方索国王", version: "征服者", type: "非军事单位", civ: ["西班牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿方索国王.png", link: "阿方索国王.html" },
+        { name: "桑丘国王", version: "征服者", type: "非军事单位", civ: ["西班牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/桑丘国王.png", link: "桑丘国王.html" },
+        { name: "罗马教皇里奥一世", version: "征服者", type: "非军事单位", civ: ["罗马", "意大利"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/罗马教皇里奥一世.png", link: "罗马教皇里奥一世.html" },
+        { name: "哈拉尔·哈德拉达", version: "征服者", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/哈拉尔·哈德拉达.png", link: "哈拉尔·哈德拉达.html" },
+        { name: "织田信长", version: "征服者", type: "步兵", civ: ["日本"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/织田信长.png", link: "织田信长.html" },
+        { name: "斯基泰的野女人", version: "征服者", type: "步兵", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/斯基泰的野女人.png", link: "斯基泰的野女人.html" },
+        { name: "亚历山大·涅夫斯基", version: "征服者", type: "骑兵", civ: ["斯拉夫"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/亚历山大·涅夫斯基.png", link: "亚历山大·涅夫斯基.html" },
+        { name: "匈奴王阿提拉", version: "征服者", type: "骑兵", civ: ["匈奴"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/匈奴王阿提拉.png", link: "匈奴王阿提拉.html" },
+        { name: "匈奴王布莱达", version: "征服者", type: "骑兵", civ: ["匈奴"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/匈奴王布莱达.png", link: "匈奴王布莱达.html" },
+        { name: "熙德·坎培多尔", version: "征服者", type: "骑兵", civ: ["西班牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/熙德·坎培多尔.png", link: "熙德·坎培多尔.html" },
+        { name: "亨利五世", version: "征服者", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/亨利五世.png", link: "亨利五世.html" },
+        { name: "斯基泰斥候", version: "征服者", type: "骑兵", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/斯基泰斥候.png", link: "斯基泰斥候.html" },
+        { name: "征服者威廉", version: "征服者", type: "骑兵", civ: ["不列颠", "法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/征服者威廉.png", link: "征服者威廉.html" },
+        { name: "李舜臣将军", version: "征服者", type: "船", civ: ["高丽"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/李舜臣将军.png", link: "李舜臣将军.html" },
+        { name: "昌德·菩达一", version: "失落帝国", type: "非军事单位", civ: ["瞿折罗"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/昌德·菩达一.png", link: "昌德·菩达一.html" },
+        { name: "女王", version: "失落帝国", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/女王.png", link: "女王.html" },
+        { name: "姗悦姬妲", version: "失落帝国", type: "非军事单位", civ: ["瞿折罗"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/姗悦姬妲.png", link: "姗悦姬妲.html" },
+        { name: "瓜特穆斯", version: "失落帝国", type: "步兵", civ: ["阿兹特克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/瓜特穆斯.png", link: "瓜特穆斯.html" },
+        { name: "弗朗切斯科·斯福尔扎", version: "失落帝国", type: "步兵", civ: ["意大利"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/弗朗切斯科·斯福尔扎.png", link: "弗朗切斯科·斯福尔扎.html" },
+        { name: "腓特烈·巴巴罗萨", version: "失落帝国", type: "步兵", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/腓特烈·巴巴罗萨.png", link: "腓特烈·巴巴罗萨.html" },
+        { name: "布里陀毗", version: "失落帝国", type: "射手", civ: ["瞿折罗"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/布里陀毗.png", link: "布里陀毗.html" },
+        { name: "北欧酋长", version: "失落帝国", type: "骑兵", civ: ["维京", "瓦兰吉", "丹麦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/北欧酋长.png", link: "北欧酋长.html" },
+        { name: "萨拉丁", version: "失落帝国", type: "骑兵", civ: ["萨拉森"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/萨拉丁.png", link: "萨拉丁.html" },
+        { name: "弗拉德·德古拉", version: "失落帝国", type: "骑兵", civ: ["斯拉夫"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/弗拉德·德古拉.png", link: "弗拉德·德古拉.html" },
+        { name: "弗朗西斯科·德·奥雷利亚纳", version: "失落帝国", type: "骑射手", civ: ["西班牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/弗朗西斯科·德·奥雷利亚纳.png", link: "弗朗西斯科·德·奥雷利亚纳.html" },
+        { name: "贡萨洛·皮萨罗", version: "失落帝国", type: "骑射手", civ: ["西班牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/贡萨洛·皮萨罗.png", link: "贡萨洛·皮萨罗.html" },
+        { name: "霍斯劳", version: "失落帝国", type: "骑射手", civ: ["波斯"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/霍斯劳.png", link: "霍斯劳.html" },
+        { name: "奥斯曼", version: "失落帝国", type: "骑射手", civ: ["土耳其"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/奥斯曼.png", link: "奥斯曼.html" },
+        { name: "布里陀毗罗阇", version: "失落帝国", type: "骑射手", civ: ["瞿折罗"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/布里陀毗罗阇.png", link: "布里陀毗罗阇.html" },
+        { name: "游娣特公主", version: "非洲王国", type: "非军事单位", civ: ["埃塞俄比亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/游娣特公主.png", link: "游娣特公主.html" },
+        { name: "极大汗", version: "非洲王国", type: "步兵", civ: ["埃塞俄比亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/极大汗.png", link: "极大汗.html" },
+        { name: "亨利二世", version: "非洲王国", type: "步兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/亨利二世.png", link: "亨利二世.html" },
+        { name: "伊兹科阿图", version: "非洲王国", type: "步兵", civ: ["阿兹特克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/伊兹科阿图.png", link: "伊兹科阿图.html" },
+        { name: "小约翰", version: "非洲王国", type: "步兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/小约翰.png", link: "小约翰.html" },
+        { name: "帕查库提", version: "非洲王国", type: "步兵", civ: ["印加"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/帕查库提.png", link: "帕查库提.html" },
+        { name: "耶库诺·阿姆拉克", version: "非洲王国", type: "步兵", civ: ["埃塞俄比亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/耶库诺·阿姆拉克.png", link: "耶库诺·阿姆拉克.html" },
+        { name: "游娣特", version: "非洲王国", type: "步兵", civ: ["埃塞俄比亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/游娣特.png", link: "游娣特.html" },
+        { name: "古列尔莫·安布里科", version: "非洲王国", type: "射手", civ: ["意大利"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/古列尔莫·安布里科.png", link: "古列尔莫·安布里科.html" },
+        { name: "瓦伊纳·卡帕克", version: "非洲王国", type: "射手", civ: ["印加"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/瓦伊纳·卡帕克.png", link: "瓦伊纳·卡帕克.html" },
+        { name: "穆斯塔法帕夏", version: "非洲王国", type: "射手", civ: ["土耳其"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/穆斯塔法帕夏.png", link: "穆斯塔法帕夏.html" },
+        { name: "帕柯二世", version: "非洲王国", type: "射手", civ: ["玛雅"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/帕柯二世.png", link: "帕柯二世.html" },
+        { name: "苏定方", version: "非洲王国", type: "射手", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/苏定方.png", link: "苏定方.html" },
+        { name: "阿伯拉哈战象", version: "非洲王国", type: "骑兵", civ: ["埃塞俄比亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿伯拉哈战象.png", link: "阿伯拉哈战象.html" },
+        { name: "巴布尔", version: "非洲王国", type: "骑兵", civ: ["印度斯坦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/巴布尔.png", link: "巴布尔.html" },
+        { name: "米克罗斯·陶笛", version: "非洲王国", type: "骑兵", civ: ["马扎尔"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/米克罗斯·陶笛.png", link: "米克罗斯·陶笛.html" },
+        { name: "理查·德·克莱尔伯爵", version: "非洲王国", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/理查·德·克莱尔伯爵.png", link: "理查·德·克莱尔伯爵.html" },
+        { name: "苏曼古鲁", version: "非洲王国", type: "骑兵", civ: ["马里"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/苏曼古鲁.png", link: "苏曼古鲁.html" },
+        { name: "松迪亚塔", version: "非洲王国", type: "骑兵", civ: ["马里"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/松迪亚塔.png", link: "松迪亚塔.html" },
+        { name: "崔斯坦爵士", version: "非洲王国", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/崔斯坦爵士.png", link: "崔斯坦爵士.html" },
+        { name: "兹瓦斯艾黑骑士", version: "非洲王国", type: "骑兵", civ: ["波兰"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/兹瓦斯艾黑骑士.png", link: "兹瓦斯艾黑骑士.html" },
+        { name: "达纳罕", version: "非洲王国", type: "骑射手", civ: ["埃塞俄比亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/达纳罕.png", link: "达纳罕.html" },
+        { name: "穆萨·伊本·奴萨尔", version: "非洲王国", type: "骑射手", civ: ["萨拉森", "柏柏尔"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/穆萨·伊本·奴萨尔.png", link: "穆萨·伊本·奴萨尔.html" },
+        { name: "塔里克·伊本·齐亚德", version: "非洲王国", type: "骑射手", civ: ["柏柏尔"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/塔里克·伊本·齐亚德.png", link: "塔里克·伊本·齐亚德.html" },
+        { name: "裴备", version: "蛮王崛起", type: "非军事单位", civ: ["越南"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/裴备.png", link: "裴备.html" },
+        { name: "贾亚纳加拉", version: "蛮王崛起", type: "非军事单位", civ: ["马来"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/贾亚纳加拉.png", link: "贾亚纳加拉.html" },
+        { name: "乌达雅迭耶跋摩一世", version: "蛮王崛起", type: "非军事单位", civ: ["高棉"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/乌达雅迭耶跋摩一世.png", link: "乌达雅迭耶跋摩一世.html" },
+        { name: "加扎·玛达", version: "蛮王崛起", type: "步兵", civ: ["马来"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/加扎·玛达.png", link: "加扎·玛达.html" },
+        { name: "阇耶毗罗跋摩", version: "蛮王崛起", type: "步兵", civ: ["高棉"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阇耶毗罗跋摩.png", link: "阇耶毗罗跋摩.html" },
+        { name: "黎利", version: "蛮王崛起", type: "步兵", civ: ["越南"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/黎利.png", link: "黎利.html" },
+        { name: "李篆", version: "蛮王崛起", type: "步兵", civ: ["越南"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/李篆.png", link: "李篆.html" },
+        { name: "巽他皇家斗士", version: "蛮王崛起", type: "步兵", civ: ["马来"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/巽他皇家斗士.png", link: "巽他皇家斗士.html" },
+        { name: "刘仁澍", version: "蛮王崛起", type: "射手", civ: ["越南"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/刘仁澍.png", link: "刘仁澍.html" },
+        { name: "黎来", version: "蛮王崛起", type: "骑兵", civ: ["越南"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/黎来.png", link: "黎来.html" },
+        { name: "莽应龙", version: "蛮王崛起", type: "骑兵", civ: ["缅甸"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/莽应龙.png", link: "莽应龙.html" },
+        { name: "丁礼", version: "蛮王崛起", type: "骑兵", civ: ["越南"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/丁礼.png", link: "丁礼.html" },
+        { name: "使者", version: "蛮王崛起", type: "骑兵", civ: ["缅甸"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/使者.png", link: "使者.html" },
+        { name: "拉登甲亮", version: "蛮王崛起", type: "骑兵", civ: ["马来"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/拉登甲亮.png", link: "拉登甲亮.html" },
+        { name: "苏耶跋摩一世", version: "蛮王崛起", type: "骑兵", civ: ["高棉"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/苏耶跋摩一世.png", link: "苏耶跋摩一世.html" },
+        { name: "王通", version: "蛮王崛起", type: "骑兵", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/王通.png", link: "王通.html" },
+        { name: "莽瑞体", version: "蛮王崛起", type: "骑射手", civ: ["缅甸"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/莽瑞体.png", link: "莽瑞体.html" },
+        { name: "贝拉四世", version: "最后的可汗", type: "非军事单位", civ: ["马扎尔"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/贝拉四世.png", link: "贝拉四世.html" },
+        { name: "阿陶尔夫", version: "最后的可汗", type: "步兵", civ: ["哥特"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿陶尔夫.png", link: "阿陶尔夫.html" },
+        { name: "库西·尤潘基", version: "最后的可汗", type: "步兵", civ: ["印加"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/库西·尤潘基.png", link: "库西·尤潘基.html" },
+        { name: "索索人护卫", version: "最后的可汗", type: "步兵", civ: ["马里"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/索索人护卫.png", link: "索索人护卫.html" },
+        { name: "托巴·尤潘基", version: "最后的可汗", type: "步兵", civ: ["印加"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/托巴·尤潘基.png", link: "托巴·尤潘基.html" },
+        { name: "哥特国王阿拉里克", version: "最后的可汗", type: "骑兵", civ: ["哥特"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/哥特国王阿拉里克.png", link: "哥特国王阿拉里克.html" },
+        { name: "库曼首领", version: "最后的可汗", type: "骑兵", civ: ["库曼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/库曼首领.png", link: "库曼首领.html" },
+        { name: "猛狮亨利", version: "最后的可汗", type: "骑兵", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/猛狮亨利.png", link: "猛狮亨利.html" },
+        { name: "伊瓦依洛", version: "最后的可汗", type: "骑兵", civ: ["保加利亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/伊瓦依洛.png", link: "伊瓦依洛.html" },
+        { name: "脱脱迷失汗", version: "最后的可汗", type: "骑兵", civ: ["鞑靼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/脱脱迷失汗.png", link: "脱脱迷失汗.html" },
+        { name: "康斯坦丁沙皇", version: "最后的可汗", type: "骑兵", civ: ["保加利亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/康斯坦丁沙皇.png", link: "康斯坦丁沙皇.html" },
+        { name: "维陶塔斯大帝", version: "最后的可汗", type: "骑兵", civ: ["立陶宛"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/维陶塔斯大帝.png", link: "维陶塔斯大帝.html" },
+        { name: "乌鲁斯汗", version: "最后的可汗", type: "骑射手", civ: ["鞑靼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/乌鲁斯汗.png", link: "乌鲁斯汗.html" },
+        { name: "吉艮汗", version: "最后的可汗", type: "骑射手", civ: ["库曼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/吉艮汗.png", link: "吉艮汗.html" },
+        { name: "可泰安汗", version: "最后的可汗", type: "骑射手", civ: ["库曼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/可泰安汗.png", link: "可泰安汗.html" },
+        { name: "莱夫·埃里克松", version: "最后的可汗", type: "船", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/莱夫·埃里克松.png", link: "莱夫·埃里克松.html" },
+        { name: "爆破推车", version: "最后的可汗", type: "船", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/爆破推车.png", link: "爆破推车.html" },
+        { name: "瓦斯科·达·伽马", version: "最后的可汗", type: "船", civ: ["葡萄牙"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/瓦斯科·达·伽马.png", link: "瓦斯科·达·伽马.html" },
+        { name: "埃诺的杰奎琳", version: "西方霸主", type: "非军事单位", civ: ["勃艮第"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/埃诺的杰奎琳.png", link: "埃诺的杰奎琳.html" },
+        { name: "达菲德·阿颇·格鲁菲德", version: "西方霸主", type: "步兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/达菲德·阿颇·格鲁菲德.png", link: "达菲德·阿颇·格鲁菲德.html" },
+        { name: "卢埃林·阿颇·格鲁菲德", version: "西方霸主", type: "步兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/卢埃林·阿颇·格鲁菲德.png", link: "卢埃林·阿颇·格鲁菲德.html" },
+        { name: "阿马尼亚克的伯纳德", version: "西方霸主", type: "骑兵", civ: ["法兰克"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿马尼亚克的伯纳德.png", link: "阿马尼亚克的伯纳德.html" },
+        { name: "博希蒙德", version: "西方霸主", type: "骑兵", civ: ["西西里"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/博希蒙德.png", link: "博希蒙德.html" },
+        { name: "长腿爱德华", version: "西方霸主", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/长腿爱德华.png", link: "长腿爱德华.html" },
+        { name: "吉尔伯特·德·克莱尔", version: "西方霸主", type: "骑兵", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/吉尔伯特·德·克莱尔.png", link: "吉尔伯特·德·克莱尔.html" },
+        { name: "无畏的约翰", version: "西方霸主", type: "骑兵", civ: ["勃艮第"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/无畏的约翰.png", link: "无畏的约翰.html" },
+        { name: "好人腓力", version: "西方霸主", type: "骑兵", civ: ["勃艮第"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/好人腓力.png", link: "好人腓力.html" },
+        { name: "罗伯特·吉斯卡尔", version: "西方霸主", type: "骑兵", civ: ["西西里"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/罗伯特·吉斯卡尔.png", link: "罗伯特·吉斯卡尔.html" },
+        { name: "罗杰·博索", version: "西方霸主", type: "骑兵", civ: ["西西里"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/罗杰·博索.png", link: "罗杰·博索.html" },
+        { name: "战狼号巨型投石机", version: "西方霸主", type: "攻城武器", civ: ["不列颠"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/战狼号巨型投石机.png", link: "战狼号巨型投石机.html" },
+        { name: "年轻的雅德维加", version: "公爵的崛起", type: "步兵", civ: ["波兰"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/年轻的雅德维加.png", link: "年轻的雅德维加.html" },
+        { name: "阿基尔达斯", version: "公爵的崛起", type: "骑兵", civ: ["立陶宛"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿基尔达斯.png", link: "阿基尔达斯.html" },
+        { name: "莫斯科的德米特里", version: "公爵的崛起", type: "骑兵", civ: ["斯拉夫"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/莫斯科的德米特里.png", link: "莫斯科的德米特里.html" },
+        { name: "西吉斯蒙德皇帝", version: "公爵的崛起", type: "骑兵", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/西吉斯蒙德皇帝.png", link: "西吉斯蒙德皇帝.html" },
+        { name: "雅德维加", version: "公爵的崛起", type: "骑兵", civ: ["波兰"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/雅德维加.png", link: "雅德维加.html" },
+        { name: "扬·杰式卡", version: "公爵的崛起", type: "骑兵", civ: ["波希米亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/扬·杰式卡.png", link: "扬·杰式卡.html" },
+        { name: "约盖拉", version: "公爵的崛起", type: "骑兵", civ: ["立陶宛"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/约盖拉.png", link: "约盖拉.html" },
+        { name: "科斯图提斯", version: "公爵的崛起", type: "骑兵", civ: ["立陶宛"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/科斯图提斯.png", link: "科斯图提斯.html" },
+        { name: "特维尔亲王米哈伊尔", version: "公爵的崛起", type: "骑兵", civ: ["斯拉夫"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/特维尔亲王米哈伊尔.png", link: "特维尔亲王米哈伊尔.html" },
+        { name: "乌尔里希·冯·容金根", version: "公爵的崛起", type: "骑兵", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/乌尔里希·冯·容金根.png", link: "乌尔里希·冯·容金根.html" },
+        { name: "阿目佉跋沙", version: "印度王朝", type: "步兵", civ: ["达罗毗荼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿目佉跋沙.png", link: "阿目佉跋沙.html" },
+        { name: "昔班尼汗", version: "印度王朝", type: "骑射手", civ: ["库曼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/昔班尼汗.png", link: "昔班尼汗.html" },
+        { name: "忽格鲁特", version: "印度王朝", type: "骑射手", civ: ["鞑靼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/忽格鲁特.png", link: "忽格鲁特.html" },
+        { name: "易卜拉欣·洛迪", version: "印度王朝", type: "骑射手", civ: ["印度斯坦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/易卜拉欣·洛迪.png", link: "易卜拉欣·洛迪.html" },
+        { name: "迷企罗·波阇", version: "印度王朝", type: "骑兵", civ: ["瞿折罗"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/迷企罗·波阇.png", link: "迷企罗·波阇.html" },
+        { name: "拉金德拉·朱罗", version: "印度王朝", type: "骑兵", civ: ["达罗毗荼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/拉金德拉·朱罗.png", link: "拉金德拉·朱罗.html" },
+        { name: "年轻的巴布尔", version: "印度王朝", type: "骑兵", civ: ["印度斯坦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/年轻的巴布尔.png", link: "年轻的巴布尔.html" },
+        { name: "阿瑞扬将军", version: "印度王朝", type: "骑兵", civ: ["达罗毗荼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿瑞扬将军.png", link: "阿瑞扬将军.html" },
+        { name: "塔玛尔", version: "皇家山脉", type: "宗教部队", civ: ["格鲁吉亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/塔玛尔.png", link: "塔玛尔.html" },
+        { name: "尤里", version: "皇家山脉", type: "步兵", civ: ["斯拉夫", "格鲁吉亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/尤里.png", link: "尤里.html" },
+        { name: "扎卡雷", version: "皇家山脉", type: "步兵", civ: ["亚美尼亚", "格鲁吉亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/扎卡雷.png", link: "扎卡雷.html" },
+        { name: "斯蒂芬", version: "皇家山脉", type: "步兵", civ: ["亚美尼亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/斯蒂芬.png", link: "斯蒂芬.html" },
+        { name: "梅萊", version: "皇家山脉", type: "步兵", civ: ["亚美尼亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/梅萊.png", link: "梅萊.html" },
+        { name: "亦思马因", version: "皇家山脉", type: "骑兵", civ: ["波斯"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/亦思马因.png", link: "亦思马因.html" },
+        { name: "沙阿王亦思马因", version: "皇家山脉", type: "骑兵", civ: ["波斯"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/沙阿王亦思马因.png", link: "沙阿王亦思马因.html" },
+        { name: "冷酷者塞利姆", version: "皇家山脉", type: "骑兵", civ: ["土耳其"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/冷酷者塞利姆.png", link: "冷酷者塞利姆.html" },
+        { name: "索罗斯", version: "皇家山脉", type: "骑兵", civ: ["亚美尼亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/索罗斯.png", link: "索罗斯.html" },
+        { name: "伊万", version: "皇家山脉", type: "骑兵", civ: ["亚美尼亚", "格鲁吉亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/伊万.png", link: "伊万.html" },
+        { name: "于吉", version: "三国", type: "非军事单位", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/于吉.png", link: "于吉.html" },
+        { name: "张角", version: "三国", type: "非军事单位", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/张角.png", link: "张角.html" },
+        { name: "诸葛亮", version: "三国", type: "非军事单位", civ: ["中国", "蜀"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/诸葛亮.png", link: "诸葛亮.html" },
+        { name: "草垫中的皇帝", version: "三国", type: "非军事单位", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/草垫中的皇帝.png", link: "草垫中的皇帝.html" },
+        { name: "刘备", version: "三国", type: "步兵", civ: ["中国", "蜀"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/刘备2.png", link: "刘备.html" },
+        { name: "张飞", version: "三国", type: "步兵", civ: ["中国", "蜀"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/张飞.png", link: "张飞.html" },
+        { name: "关羽", version: "三国", type: "骑兵", civ: ["中国", "蜀"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/关羽.png", link: "关羽.html" },
+        { name: "赵云", version: "三国", type: "骑兵", civ: ["中国", "蜀"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/赵云.png", link: "赵云.html" },
+        { name: "曹操", version: "三国", type: "骑兵", civ: ["中国", "魏"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/曹操2.png", link: "曹操.html" },
+        { name: "孙坚", version: "三国", type: "骑兵", civ: ["中国", "吴"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/孙坚2.png", link: "孙坚.html" },
+        { name: "孙策", version: "三国", type: "骑兵", civ: ["中国", "吴"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/孙策.png", link: "孙策.html" },
+        { name: "吕布", version: "三国", type: "骑兵", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/吕布.png", link: "吕布.html" },
+        { name: "董卓", version: "三国", type: "骑兵", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/董卓.png", link: "董卓.html" },
+        { name: "严白虎", version: "三国", type: "骑兵", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/严白虎.png", link: "严白虎.html" },
+        { name: "孙权", version: "三国", type: "射手", civ: ["中国", "吴"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/孙权.png", link: "孙权.html" },
+        { name: "袁绍", version: "三国", type: "射手", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/袁绍.png", link: "袁绍.html" },
+        { name: "周瑜", version: "三国", type: "射手", civ: ["中国", "吴"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/周瑜.png", link: "周瑜.html" },
+        { name: "刘表", version: "三国", type: "攻城单位", civ: ["中国"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/刘表.png", link: "刘表.html" },
+        { name: "帕坎奇克", version: "最后的酋长", type: "步兵", civ: ["穆伊斯卡"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/帕坎奇克.png", link: "帕坎奇克.html" },
+        { name: "阿拉里博亚", version: "最后的酋长", type: "步兵", civ: ["图皮"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/阿拉里博亚.png", link: "阿拉里博亚.html" },
+        { name: "加尔瓦里诺", version: "最后的酋长", type: "步兵", civ: ["马普切"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/加尔瓦里诺.png", link: "加尔瓦里诺.html" },
+        { name: "昆汉贝贝", version: "最后的酋长", type: "步兵", civ: ["图皮"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/昆汉贝贝.png", link: "昆汉贝贝.html" },
+        { name: "瓜科尔达", version: "最后的酋长", type: "步兵", civ: ["马普切"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/瓜科尔达.png", link: "瓜科尔达.html" },
+        { name: "劳塔罗", version: "最后的酋长", type: "骑兵", civ: ["马普切"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/劳塔罗.png", link: "劳塔罗.html" },
+        { name: "哈拉尔", version: "维京传奇", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/哈拉尔.png", link: "哈拉尔.html" },
+        { name: "乌尔夫·奥斯帕克松", version: "维京传奇", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/乌尔夫·奥斯帕克松.png", link: "乌尔夫·奥斯帕克松.html" },
+        { name: "哈尔多尔·斯诺拉松", version: "维京传奇", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/哈尔多尔·斯诺拉松.png", link: "哈尔多尔·斯诺拉松.html" },
+        { name: "芬恩·阿纳森", version: "维京传奇", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/芬恩·阿纳森.png", link: "芬恩·阿纳森.html" },
+        { name: "卡尔夫·阿纳森", version: "维京传奇", type: "步兵", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/卡尔夫·阿纳森.png", link: "卡尔夫·阿纳森.html" },
+        { name: "神射手埃纳尔", version: "维京传奇", type: "射手", civ: ["维京"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/神射手埃纳尔.png", link: "神射手埃纳尔.html" },
+        { name: "托斯蒂格·葛温森", version: "维京传奇", type: "骑兵", civ: ["撒克逊"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/托斯蒂格·葛温森.png", link: "托斯蒂格·葛温森.html" },
+        { name: "维京龙船", version: "维京传奇", type: "海军", civ: ["维京", "瓦兰吉", "丹麦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/维京龙船.png", link: "维京龙船.html" }
     ];
 
 
