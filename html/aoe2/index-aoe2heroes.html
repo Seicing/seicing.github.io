@@ -381,12 +381,12 @@
                     // 版本列通过 rowspan 合并居中
                     if (index === 0) {
                         html += `
-                        <td width="70px" rowspan="${types.length}" class="bcF5F8FA" style="vertical-align: middle; text-align: center;">
-                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br><b>${ver}</b>
+                        <td width="60px" rowspan="${types.length}" class="bcF5F8FA" style="vertical-align: middle; text-align: center;">
+                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}
                         </td>`;
                     }
                     // 分类列独立靠左展示
-                    html += `<td width="75px" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(255,255,255,0.03);">${t}</td>`;
+                    html += `<td width="60px" style="vertical-align: middle; text-align: center;">${t}</td>`;
 
                     // 英雄列表展示区
                     html += `<td style="vertical-align: middle; text-align: left;"><div style="display: flex; flex-wrap: wrap;">`;
@@ -421,16 +421,25 @@
 
     // 5. 点击文明图标进行剔除/恢复
     $(document).on('click', '#civ-filter-container img', function () {
-        const civ = $(this).attr('title');
+        // 兼容获取 title（防止 title 写在父级 a 标签上，并去除多余空格）
+        const civ = ($(this).attr('title') || $(this).parent().attr('title') || '').trim();
+        if (!civ) return;
+
         if ($(this).hasClass('active-civ')) {
-            // 再次点击取消剔除
+            // 再次点击取消：恢复显示全部英雄
             $(this).removeClass('active-civ');
             renderHeroes(heroLibrary);
         } else {
-            // 点击剔除该文明的英雄
             $('#civ-filter-container img').removeClass('active-civ');
             $(this).addClass('active-civ');
-            renderHeroes(heroLibrary.filter(h => !h.civ.includes(civ)));
+
+            // 双向模糊匹配（自动兼容“法兰克”与“法兰克人”）
+            // 【情况 A：如果你是要“隐藏/剔除”该文明的英雄，保留其他英雄】：
+            renderHeroes(heroLibrary.filter(h => !h.civ.some(c => c !== "无" && (civ.includes(c) || c.includes(civ)))));
+
+            // 【情况 B：如果你是要“只筛选出”该文明的英雄】：
+            // 如果你的本意是只看这个文明，把上面那行换成下面这行即可：
+            // renderHeroes(heroLibrary.filter(h => h.civ.some(c => civ.includes(c) || c.includes(civ))));
         }
     });
 </script>
