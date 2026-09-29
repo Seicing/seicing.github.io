@@ -387,7 +387,7 @@
                     html += `<td width="60px" style="vertical-align: middle; text-align: center;">${t}</td>`;
 
                     // 英雄列表展示区
-                    html += `<td style="vertical-align: top; text-align: left;"><div style="display: flex; flex-wrap: wrap;">`;
+                    html += `<td style="vertical-align: top; text-align: left;"><div style="display: flex; flex-wrap: wrap; flex-start;">`;
                     heroLibrary.filter(h => h.version === ver && h.type === t).forEach(h => {
                         html += createHeroCell(h);
                     });
