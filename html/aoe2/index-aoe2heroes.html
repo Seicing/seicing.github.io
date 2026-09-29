@@ -407,7 +407,8 @@
             });
         } else {
             // 文明筛选模式：平铺展示
-            html = `<table id="customers2"><tr><td style="text-align: left;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
+            html = `<table id="customers2"><tr><td width="60px" class="bcF5F8FA" style="vertical-align: middle; text-align: center;"><img src="${civInfo?.img || ''}" width="40px"><br>${civInfo?.name || ''}
+                        </td><td style="text-align: left;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
             data.forEach(h => html += createHeroCell(h));
             html += `</div></td></tr></table>`;
         }
@@ -444,6 +445,7 @@
     // 5. 点击文明图标：平铺展示该文明英雄，与版本按钮互斥
     $(document).on('click', '#civ-filter-container img', function () {
         const civ = ($(this).attr('title') || $(this).parent().attr('title') || '').trim();
+        const civImg = $(this).attr('src'); // 获取当前点击的文明图标路径
         if (!civ) return;
 
         // 清除版本按钮状态
@@ -455,7 +457,8 @@
         } else {
             $('#civ-filter-container img').removeClass('active-civ');
             $(this).addClass('active-civ');
-            renderHeroes(heroLibrary.filter(h => h.civ.some(c => civ.includes(c) || c.includes(civ))), false);
+            const filtered = heroLibrary.filter(h => h.civ.some(c => civ.includes(c) || c.includes(civ)));
+            renderHeroes(filtered, false, { name: civ, img: civImg });
         }
     });
 
