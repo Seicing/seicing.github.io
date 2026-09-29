@@ -14,6 +14,7 @@
     #customers2 {
         border-collapse: collapse;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     #customers2 td,
@@ -332,14 +333,15 @@
         { name: "托斯蒂格·葛温森", version: "维京传奇", type: "骑兵", civ: ["撒克逊"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/托斯蒂格·葛温森.png", link: "托斯蒂格·葛温森.html" },
         { name: "维京龙船", version: "维京传奇", type: "海军", civ: ["维京", "瓦兰吉", "丹麦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/维京龙船.png", link: "维京龙船.html" }
     ];
-    // 1. 渲染英雄单元格
+
+    // 1. 渲染英雄单元格：严禁写 src 属性，只保留 data-src 供 sheetcore.js 识别转换
     function createHeroCell(h) {
         return `
         <table style="border-collapse: collapse; margin: 4px; display: inline-table;">
             <tr>
                 <td width="48px" height="48px" style="border: 0; padding: 0;">
                     <a href="https://seicing.com/html/aoe2/heroes/${h.link}">
-                        <img src="${h.img}" data-src="${h.img}" width="48px" height="48px">
+                        <img data-src="${h.img}" width="48px" height="48px">
                     </a>
                 </td>
             </tr>
@@ -361,13 +363,13 @@
         renderHeroes(heroLibrary);
     });
 
-    // 3. 表格渲染函数
+    // 3. 渲染英雄列表
     function renderHeroes(data) {
         let container = $('#filtered-heroes-container');
         let html = "";
 
         if (data === heroLibrary) {
-            // 完整模式：版本(第1列) -> 分类(第2列) -> 英雄列表(第3列)
+            // 完整默认视图：版本列 -> 分类列 -> 英雄区
             const versions = [...new Set(heroLibrary.map(h => h.version))];
 
             versions.forEach(ver => {
@@ -376,17 +378,17 @@
 
                 types.forEach((t, index) => {
                     html += `<tr>`;
-                    // 第一列：仅在第1个分类行生成版本列，通过 rowspan 合并占位
+                    // 版本列通过 rowspan 合并居中
                     if (index === 0) {
                         html += `
                         <td width="70px" rowspan="${types.length}" class="bcF5F8FA" style="vertical-align: middle; text-align: center;">
                             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br><b>${ver}</b>
                         </td>`;
                     }
-                    // 第二列：分类名称独立占一列，左对齐/居中，且行之间有完整边框
+                    // 分类列独立靠左展示
                     html += `<td width="75px" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(255,255,255,0.03);">${t}</td>`;
 
-                    // 第三列：英雄列表展示区
+                    // 英雄列表展示区
                     html += `<td style="vertical-align: middle; text-align: left;"><div style="display: flex; flex-wrap: wrap;">`;
                     heroLibrary.filter(h => h.version === ver && h.type === t).forEach(h => {
                         html += createHeroCell(h);
@@ -399,32 +401,33 @@
                 html += `</table>`;
             });
         } else {
-            // 剔除筛选模式：扁平表格展示
+            // 剔除筛选模式：平铺展示
             html = `<table id="customers2"><tr><td style="text-align: left; vertical-align: middle;"><div style="display: flex; flex-wrap: wrap;">`;
             data.forEach(h => html += createHeroCell(h));
             html += `</div></td></tr></table>`;
         }
 
         container.html(html);
+
+        // 触发 sheet 扫描加载
         triggerSheetScanner();
     }
 
-    // 重新触发图片加载器扫描
+    // 4. 触发 sheetcore.js 扫描
     function triggerSheetScanner() {
-        if (document.querySelectorAll("img[data-src]:not([src])").length > 0) {
-            document.dispatchEvent(new Event('DOMContentLoaded'));
-        }
+        // 确保新节点已挂载到 DOM，单次派发事件让 sheetcore 执行识别
+        document.dispatchEvent(new Event('DOMContentLoaded'));
     }
 
-    // 4. 点击文明图标进行剔除/恢复
+    // 5. 点击文明图标进行剔除/恢复
     $(document).on('click', '#civ-filter-container img', function () {
         const civ = $(this).attr('title');
         if ($(this).hasClass('active-civ')) {
-            // 取消剔除，恢复显示所有英雄
+            // 再次点击取消剔除
             $(this).removeClass('active-civ');
             renderHeroes(heroLibrary);
         } else {
-            // 单选剔除：高亮当前图标，并排除该文明的英雄
+            // 点击剔除该文明的英雄
             $('#civ-filter-container img').removeClass('active-civ');
             $(this).addClass('active-civ');
             renderHeroes(heroLibrary.filter(h => !h.civ.includes(civ)));
