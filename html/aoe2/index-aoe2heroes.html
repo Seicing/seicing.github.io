@@ -37,29 +37,17 @@
         border-radius: 4px;
     }
 
-    #civ-filter-container img {
+    #civ-filter-container img,
+    #version-filter-container img {
         cursor: pointer;
         transition: 0.2s;
         margin: 2px;
         border: 2px solid transparent;
-        /* 默认无边框 */
     }
 
-    #civ-filter-container img:hover {
-        transform: scale(1.1);
-    }
-
-    /* 版本图标样式 */
-    #version-filter-container img {
-        cursor: pointer;
-        transition: 0.2s;
-        margin: 3px 6px;
-        border: 2px solid transparent;
-        vertical-align: middle;
-    }
-
+    #civ-filter-container img:hover,
     #version-filter-container img:hover {
-        transform: scale(1.15);
+        transform: scale(1.1);
     }
 </style>
 <script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
@@ -109,8 +97,7 @@
                         <div class="entry"><div id="lavipage" page="24"></div>
 
 <div id="civ-filter-container"></div>
-<div id="version-filter-container" style="margin: 8px 0 15px 0;"></div>
-
+<div id="version-filter-container"></div>
 
 <div id="filtered-heroes-container" style="margin: 20px 0;"></div>
 
@@ -369,77 +356,59 @@
 
     // 2. 初始化加载
     $(document).ready(function () {
-        // 注入文明图标
+        // 动态生成版本筛选图标
+        const versions = [...new Set(heroLibrary.map(h => h.version))];
+        let verHtml = '';
+        versions.forEach(ver => {
+            verHtml += `<img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" title="${ver}" width="25px">`;
+        });
+        $('#version-filter-container').html(verHtml);
+
         $('#civ-filter-container').load('https://seicing.com/js/list/side_aoe2_civ.html', function () {
             $(this).find('#techno123').hide();
         });
 
-        // 自动提取所有版本并生成版本筛选图标
-        const versions = [...new Set(heroLibrary.map(h => h.version))];
-        let verHtml = '<div style="display: flex; flex-wrap: wrap; align-items: center;">';
-        versions.forEach(ver => {
-            verHtml += `<img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="38px" height="38px" title="${ver}" class="ver-filter-btn">`;
-        });
-        verHtml += '</div>';
-        $('#version-filter-container').html(verHtml);
-
-        // 初始渲染全部英雄
-        renderHeroes('all');
+        // 初始渲染全部英雄（三列完整模式）
+        renderHeroes(heroLibrary, true);
     });
 
-    // 3. 核心表格生成函数（支持全部版本或指定单版本的3列排版）
-    function build3ColTable(versionsList, dataList) {
-        let html = "";
-        versionsList.forEach(ver => {
-            const heroesInVer = dataList.filter(h => h.version === ver);
-            if (heroesInVer.length === 0) return;
-
-            const types = [...new Set(heroesInVer.map(h => h.type))];
-            html += `<table id="customers2">`;
-
-            types.forEach((t, index) => {
-                html += `<tr>`;
-                // 第1列：版本列，垂直居中
-                if (index === 0) {
-                    html += `
-                    <td width="60px" rowspan="${types.length}" class="bcF5F8FA" style="vertical-align: middle; text-align: center;">
-                        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br><b>${ver}</b>
-                    </td>`;
-                }
-                // 第2列：分类列
-                html += `<td width="60px" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(255,255,255,0.03);">${t}</td>`;
-
-                // 第3列：英雄列表
-                html += `<td style="vertical-align: middle; text-align: left;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
-                heroesInVer.filter(h => h.type === t).forEach(h => {
-                    html += createHeroCell(h);
-                });
-                html += `</div></td>`;
-                html += `</tr>`;
-            });
-
-            html += `</table>`;
-        });
-        return html;
-    }
-
-    // 4. 总渲染控制
-    function renderHeroes(mode, targetValue) {
+    // 3. 渲染英雄列表（isGrouped 为 true 时显示版本+分类+英雄的三列结构）
+    function renderHeroes(data, isGrouped = false) {
         let container = $('#filtered-heroes-container');
         let html = "";
 
-        if (mode === 'all') {
-            // 全部显示：所有版本按3列渲染
-            const allVersions = [...new Set(heroLibrary.map(h => h.version))];
-            html = build3ColTable(allVersions, heroLibrary);
-        } else if (mode === 'version') {
-            // 版本筛选：选中的单个版本按标准3列渲染
-            html = build3ColTable([targetValue], heroLibrary);
-        } else if (mode === 'civ') {
-            // 文明筛选：平铺展示
-            const filtered = heroLibrary.filter(h => h.civ.some(c => targetValue.includes(c) || c.includes(targetValue)));
-            html = `<table id="customers2"><tr><td style="text-align: left; vertical-align: middle;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
-            filtered.forEach(h => html += createHeroCell(h));
+        if (isGrouped) {
+            // 三列完整视图：版本列 -> 分类列 -> 英雄区
+            const versions = [...new Set(data.map(h => h.version))];
+
+            versions.forEach(ver => {
+                const verHeroes = data.filter(h => h.version === ver);
+                const types = [...new Set(verHeroes.map(h => h.type))];
+                html += `<table id="customers2">`;
+
+                types.forEach((t, index) => {
+                    html += `<tr>`;
+                    if (index === 0) {
+                        html += `
+                        <td width="60px" rowspan="${types.length}" class="bcF5F8FA" style="vertical-align: middle; text-align: center;">
+                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}
+                        </td>`;
+                    }
+                    html += `<td width="60px" style="vertical-align: middle; text-align: center;">${t}</td>`;
+                    html += `<td style="vertical-align: top; text-align: left;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
+                    verHeroes.filter(h => h.type === t).forEach(h => {
+                        html += createHeroCell(h);
+                    });
+                    html += `</div></td>`;
+                    html += `</tr>`;
+                });
+
+                html += `</table>`;
+            });
+        } else {
+            // 文明筛选模式：平铺展示
+            html = `<table id="customers2"><tr><td style="text-align: left;"><div style="display: flex; flex-wrap: wrap; align-items: flex-start;">`;
+            data.forEach(h => html += createHeroCell(h));
             html += `</div></td></tr></table>`;
         }
 
@@ -447,39 +416,64 @@
         triggerSheetScanner();
     }
 
-    // 5. 点击文明图标筛选（与版本互斥）
+    // 4. 触发 sheetcore.js 扫描
+    // 重新触发 sheet 扫描，同时精准屏蔽核心 JS 的重复绑定
+    function triggerSheetScanner() {
+        const origAdd = document.addEventListener;
+        const origObserve = MutationObserver.prototype.observe;
+
+        // 1. 临时守卫：在派发事件期间，禁止任何脚本重复绑定 click 和创建 Observer
+        document.addEventListener = function (type) {
+            if (type === 'click') return; // 吃掉核心 JS 的重复点击监听
+            return origAdd.apply(this, arguments);
+        };
+        MutationObserver.prototype.observe = function () {
+            return; // 防止核心 JS 创建多个重复的 DOM 观察器
+        };
+
+        try {
+            // 2. 正常派发事件，sheetcore.js 此时会正常进行雪碧图切片！
+            document.dispatchEvent(new Event('DOMContentLoaded'));
+        } finally {
+            // 3. 瞬间恢复浏览器的原生功能，不影响后续任何正常操作
+            document.addEventListener = origAdd;
+            MutationObserver.prototype.observe = origObserve;
+        }
+    }
+
+    // 5. 点击文明图标：平铺展示该文明英雄，与版本按钮互斥
     $(document).on('click', '#civ-filter-container img', function () {
         const civ = ($(this).attr('title') || $(this).parent().attr('title') || '').trim();
         if (!civ) return;
 
-        // 清除所有版本的选中状态
-        $('#version-filter-container img').removeClass('active-filter');
+        // 清除版本按钮状态
+        $('#version-filter-container img').removeClass('active-civ');
 
-        if ($(this).hasClass('active-filter')) {
-            $(this).removeClass('active-filter');
-            renderHeroes('all');
+        if ($(this).hasClass('active-civ')) {
+            $(this).removeClass('active-civ');
+            renderHeroes(heroLibrary, true);
         } else {
-            $('#civ-filter-container img').removeClass('active-filter');
-            $(this).addClass('active-filter');
-            renderHeroes('civ', civ);
+            $('#civ-filter-container img').removeClass('active-civ');
+            $(this).addClass('active-civ');
+            renderHeroes(heroLibrary.filter(h => h.civ.some(c => civ.includes(c) || c.includes(civ))), false);
         }
     });
 
-    // 6. 点击版本图标筛选（与文明互斥，正常生成3列）
+    // 6. 点击版本图标：完整三列展示该版本英雄，与文明按钮互斥
     $(document).on('click', '#version-filter-container img', function () {
         const ver = ($(this).attr('title') || '').trim();
         if (!ver) return;
 
-        // 清除所有文明的选中状态
-        $('#civ-filter-container img').removeClass('active-filter');
+        // 清除文明按钮状态
+        $('#civ-filter-container img').removeClass('active-civ');
 
-        if ($(this).hasClass('active-filter')) {
-            $(this).removeClass('active-filter');
-            renderHeroes('all');
+        if ($(this).hasClass('active-civ')) {
+            $(this).removeClass('active-civ');
+            renderHeroes(heroLibrary, true);
         } else {
-            $('#version-filter-container img').removeClass('active-filter');
-            $(this).addClass('active-filter');
-            renderHeroes('version', ver);
+            $('#version-filter-container img').removeClass('active-civ');
+            $(this).addClass('active-civ');
+            renderHeroes(heroLibrary.filter(h => h.version === ver), true);
         }
     });
 </script>
