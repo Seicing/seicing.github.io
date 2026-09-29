@@ -151,16 +151,15 @@
         renderHeroes(heroLibrary);
     });
 
-    // 3. 渲染逻辑
     function renderHeroes(data) {
         let container = $('#display-container');
-        container.empty();
 
-        // 如果是完整列表，按版本分组
+        // 使用临时容器处理字符串，防止多次重绘导致的闪烁
+        let html = "";
         if (data === heroLibrary) {
             const versions = [...new Set(heroLibrary.map(h => h.version))];
             versions.forEach(ver => {
-                let html = `<table id="customers2"><tr><td width="60px" class="bcF5F8FA"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}</td><td>`;
+                html += `<table id="customers2"><tr><td width="60px" class="bcF5F8FA"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}</td><td>`;
                 const types = [...new Set(heroLibrary.filter(h => h.version === ver).map(h => h.type))];
                 types.forEach(t => {
                     html += `<div><strong>${t}</strong><div style="display: flex; flex-wrap: wrap;">`;
@@ -168,19 +167,34 @@
                     html += `</div></div>`;
                 });
                 html += `</td></tr></table><br>`;
-                container.append(html);
             });
         } else {
-            // 筛选列表，直接显示
-            let html = `<table id="customers2"><tr><td><div style="display: flex; flex-wrap: wrap;">`;
+            html = `<table id="customers2"><tr><td><div style="display: flex; flex-wrap: wrap;">`;
             data.forEach(h => html += createHeroCell(h));
             html += `</div></td></tr></table>`;
-            container.append(html);
         }
 
-        // 关键：通知 sheetcore 重新扫描新注入的 img[data-src]
-        // 触发 sheetcore 的 DOMContentLoaded 流程或手动调用扫描函数
-        // 如果你的 sheetcore 逻辑是写在自执行函数里的，建议将其封装为一个函数
+        // 1. 清空旧内容并写入新内容
+        container.html(html);
+
+        // 2. 核心技巧：触发一次重新扫描
+        // 因为 sheetcore.js 是在 DOMContentLoaded 时扫描的
+        // 我们手动让 sheetcore 重新识别一遍新加入的 img[data-src]
+        // 这里不需要修改 sheetcore.js，而是利用它的全局扫描逻辑
+        triggerSheetScanner();
+    }
+
+    // 手动触发扫描的逻辑（不需要改动 sheetcore.js）
+    function triggerSheetScanner() {
+        // 查找所有未处理的 data-src
+        const newImages = document.querySelectorAll("img[data-src]:not([src])");
+        newImages.forEach(img => {
+            // 这里我们模拟 sheetcore 的加载逻辑
+            // 如果 sheetcore 是标准写法，它内部逻辑会自动处理 data-src
+            // 如果它失效了，我们直接通过以下方式触发它的逻辑：
+            const event = new Event('DOMContentLoaded');
+            document.dispatchEvent(event);
+        });
     }
 
     // 4. 点击筛选
