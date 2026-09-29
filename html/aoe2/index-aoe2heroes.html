@@ -13,6 +13,7 @@
 <style>
     #customers2 {
         border-collapse: collapse;
+        width: 100%;
     }
 
     #customers2 td,
@@ -116,90 +117,7 @@
 </body>
 
 <script>
-    // 1. 渲染英雄单元格 (自动生成 data-src，触发 sheetcore.js)
-    function createHeroCell(h) {
-        return `
-    <table style="border-collapse: collapse; margin: 4px;">
-        <tr>
-            <td width="48px" height="48px" style="border: 0;">
-                <a href="https://seicing.com/html/aoe2/heroes/${h.link}">
-                    <!-- sheetcore.js 会自动扫描此 data-src 并替换为 blob -->
-                    <img data-src="${h.img}" width="48px">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td width="48px" style="border: 0;text-align: center">
-                <a href="https://seicing.com/html/aoe2/heroes/${h.link}" class="special-link">${h.name}</a>
-            </td>
-        </tr>
-    </table>`;
-    }
 
-    // 2. 初始化加载
-    $(document).ready(function () {
-        // 注入文明图标
-        $('#civ-filter-container').load('https://seicing.com/js/list/side_aoe2_civ.html', function () {
-            $(this).find('#techno123').hide();
-        });
-
-        // 初始渲染全部
-        renderHeroes(heroLibrary);
-    });
-
-    function renderHeroes(data) {
-        let container = $('#filtered-heroes-container');
-
-        // 使用临时容器处理字符串，防止多次重绘导致的闪烁
-        let html = "";
-        if (data === heroLibrary) {
-            const versions = [...new Set(heroLibrary.map(h => h.version))];
-            versions.forEach(ver => {
-                html += `<table id="customers2"><tr><td width="60px" class="bcF5F8FA"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br>${ver}</td><td>`;
-                const types = [...new Set(heroLibrary.filter(h => h.version === ver).map(h => h.type))];
-                types.forEach(t => {
-                    html += `<div><strong>${t}</strong><div style="display: flex; flex-wrap: wrap;">`;
-                    heroLibrary.filter(h => h.version === ver && h.type === t).forEach(h => html += createHeroCell(h));
-                    html += `</div></div>`;
-                });
-                html += `</td></tr></table><br>`;
-            });
-        } else {
-            html = `<table id="customers2"><tr><td><div style="display: flex; flex-wrap: wrap;">`;
-            data.forEach(h => html += createHeroCell(h));
-            html += `</div></td></tr></table>`;
-        }
-
-        // 1. 清空旧内容并写入新内容
-        container.html(html);
-
-        // 2. 核心技巧：触发一次重新扫描
-        // 因为 sheetcore.js 是在 DOMContentLoaded 时扫描的
-        // 我们手动让 sheetcore 重新识别一遍新加入的 img[data-src]
-        // 这里不需要修改 sheetcore.js，而是利用它的全局扫描逻辑
-        triggerSheetScanner();
-    }
-
-    // 手动触发扫描的逻辑（不需要改动 sheetcore.js）
-    function triggerSheetScanner() {
-        if (document.querySelectorAll("img[data-src]:not([src])").length > 0) {
-            // 如果 sheetcore 确实通过监听该事件工作，且只能这么触发，确保单次触发
-            document.dispatchEvent(new Event('DOMContentLoaded'));
-        }
-    }
-
-    // 4. 点击筛选
-    $(document).on('click', '#civ-filter-container img', function () {
-        const civ = $(this).attr('title');
-        if ($(this).hasClass('active-civ')) {
-            $(this).removeClass('active-civ');
-            renderHeroes(heroLibrary);
-        } else {
-            $('#civ-filter-container img').removeClass('active-civ');
-            $(this).addClass('active-civ');
-            renderHeroes(heroLibrary.filter(h => h.civ.includes(civ)));
-        }
-    });
 
     const heroLibrary = [
         { name: "大主教", version: "国王时代", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/大主教.png", link: "大主教.html" },
@@ -414,8 +332,104 @@
         { name: "托斯蒂格·葛温森", version: "维京传奇", type: "骑兵", civ: ["撒克逊"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/托斯蒂格·葛温森.png", link: "托斯蒂格·葛温森.html" },
         { name: "维京龙船", version: "维京传奇", type: "海军", civ: ["维京", "瓦兰吉", "丹麦"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/维京龙船.png", link: "维京龙船.html" }
     ];
+    // 1. 渲染英雄单元格
+    function createHeroCell(h) {
+        return `
+        <table style="border-collapse: collapse; margin: 4px; display: inline-table;">
+            <tr>
+                <td width="48px" height="48px" style="border: 0; padding: 0;">
+                    <a href="https://seicing.com/html/aoe2/heroes/${h.link}">
+                        <img src="${h.img}" data-src="${h.img}" width="48px" height="48px">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td width="48px" style="border: 0; padding: 2px 0 0 0; text-align: center; font-size: 12px; line-height: 1.2;">
+                    <a href="https://seicing.com/html/aoe2/heroes/${h.link}" class="special-link">${h.name}</a>
+                </td>
+            </tr>
+        </table>`;
+    }
 
+    // 2. 初始化加载
+    $(document).ready(function () {
+        $('#civ-filter-container').load('https://seicing.com/js/list/side_aoe2_civ.html', function () {
+            $(this).find('#techno123').hide();
+        });
 
+        // 初始渲染全部英雄
+        renderHeroes(heroLibrary);
+    });
+
+    // 3. 表格渲染函数
+    function renderHeroes(data) {
+        let container = $('#filtered-heroes-container');
+        let html = "";
+
+        if (data === heroLibrary) {
+            // 完整模式：版本(第1列) -> 分类(第2列) -> 英雄列表(第3列)
+            const versions = [...new Set(heroLibrary.map(h => h.version))];
+
+            versions.forEach(ver => {
+                const types = [...new Set(heroLibrary.filter(h => h.version === ver).map(h => h.type))];
+                html += `<table id="customers2">`;
+
+                types.forEach((t, index) => {
+                    html += `<tr>`;
+                    // 第一列：仅在第1个分类行生成版本列，通过 rowspan 合并占位
+                    if (index === 0) {
+                        html += `
+                        <td width="70px" rowspan="${types.length}" class="bcF5F8FA" style="vertical-align: middle; text-align: center;">
+                            <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/version/${ver}.png" width="40px"><br><b>${ver}</b>
+                        </td>`;
+                    }
+                    // 第二列：分类名称独立占一列，左对齐/居中，且行之间有完整边框
+                    html += `<td width="75px" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(255,255,255,0.03);">${t}</td>`;
+
+                    // 第三列：英雄列表展示区
+                    html += `<td style="vertical-align: middle; text-align: left;"><div style="display: flex; flex-wrap: wrap;">`;
+                    heroLibrary.filter(h => h.version === ver && h.type === t).forEach(h => {
+                        html += createHeroCell(h);
+                    });
+                    html += `</div></td>`;
+
+                    html += `</tr>`;
+                });
+
+                html += `</table>`;
+            });
+        } else {
+            // 剔除筛选模式：扁平表格展示
+            html = `<table id="customers2"><tr><td style="text-align: left; vertical-align: middle;"><div style="display: flex; flex-wrap: wrap;">`;
+            data.forEach(h => html += createHeroCell(h));
+            html += `</div></td></tr></table>`;
+        }
+
+        container.html(html);
+        triggerSheetScanner();
+    }
+
+    // 重新触发图片加载器扫描
+    function triggerSheetScanner() {
+        if (document.querySelectorAll("img[data-src]:not([src])").length > 0) {
+            document.dispatchEvent(new Event('DOMContentLoaded'));
+        }
+    }
+
+    // 4. 点击文明图标进行剔除/恢复
+    $(document).on('click', '#civ-filter-container img', function () {
+        const civ = $(this).attr('title');
+        if ($(this).hasClass('active-civ')) {
+            // 取消剔除，恢复显示所有英雄
+            $(this).removeClass('active-civ');
+            renderHeroes(heroLibrary);
+        } else {
+            // 单选剔除：高亮当前图标，并排除该文明的英雄
+            $('#civ-filter-container img').removeClass('active-civ');
+            $(this).addClass('active-civ');
+            renderHeroes(heroLibrary.filter(h => !h.civ.includes(civ)));
+        }
+    });
 </script>
 
 </html>
