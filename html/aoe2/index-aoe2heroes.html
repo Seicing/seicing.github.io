@@ -118,6 +118,26 @@
 </body>
 
 <script>
+        // 【核心 JS 防重复锁】拦截二次 DOMContentLoaded，防止夜间模式和大字体被重复绑定抵消
+        (function () {
+            const originalAdd = document.addEventListener;
+            let coreLoaded = false;
+            document.addEventListener = function (type, listener, options) {
+                // 检测是否是核心 JS 的初始化代码
+                if (type === 'DOMContentLoaded' && typeof listener === 'function') {
+                    const code = listener.toString();
+                    if (code.includes('bigfonter') || code.includes('applyTheme') || code.includes('initAll')) {
+                        return originalAdd.call(document, type, function (e) {
+                            if (coreLoaded) return; // 核心JS只允许执行第1次，后续派发的事件直接忽略
+                            coreLoaded = true;
+                            listener.apply(this, arguments);
+                        }, options);
+                    }
+                }
+                return originalAdd.call(document, type, listener, options);
+            };
+        })();
+
     const heroLibrary = [
         { name: "大主教", version: "国王时代", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/大主教.png", link: "大主教.html" },
         { name: "装在桶里的皇帝", version: "国王时代", type: "非军事单位", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/装在桶里的皇帝.png", link: "装在桶里的皇帝.html" },
@@ -249,7 +269,7 @@
         { name: "库曼首领", version: "最后的可汗", type: "骑兵", civ: ["库曼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/库曼首领.png", link: "库曼首领.html" },
         { name: "猛狮亨利", version: "最后的可汗", type: "骑兵", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/猛狮亨利.png", link: "猛狮亨利.html" },
         { name: "伊瓦依洛", version: "最后的可汗", type: "骑兵", civ: ["保加利亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/伊瓦依洛.png", link: "伊瓦依洛.html" },
-        { name: "脱脱迷失汗", version: "最后的可汗", type: "骑兵", civ: ["鞑靼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/脱脱迷失汗.png", link: "脱脱迷失汗.html" },
+        { name: "脱脱迷失汗", version: "最后的可汗", type: "骑兵", civ: ["鞑靼", "蒙古"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/脱脱迷失汗.png", link: "脱脱迷失汗.html" },
         { name: "康斯坦丁沙皇", version: "最后的可汗", type: "骑兵", civ: ["保加利亚"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/康斯坦丁沙皇.png", link: "康斯坦丁沙皇.html" },
         { name: "维陶塔斯大帝", version: "最后的可汗", type: "骑兵", civ: ["立陶宛"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/维陶塔斯大帝.png", link: "维陶塔斯大帝.html" },
         { name: "乌鲁斯汗", version: "最后的可汗", type: "骑射手", civ: ["鞑靼"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/乌鲁斯汗.png", link: "乌鲁斯汗.html" },
@@ -413,7 +433,7 @@
 
     // 4. 触发 sheetcore.js 扫描
     function triggerSheetScanner() {
-        window.dispatchEvent(new Event('DOMContentLoaded'));
+        document.dispatchEvent(new Event('DOMContentLoaded'));
     }
 
     // 5. 点击文明图标：只筛选出该文明的英雄
