@@ -118,26 +118,6 @@
 </body>
 
 <script>
-        // 【核心 JS 防重复锁】拦截二次 DOMContentLoaded，防止夜间模式和大字体被重复绑定抵消
-        (function () {
-            const originalAdd = document.addEventListener;
-            let coreLoaded = false;
-            document.addEventListener = function (type, listener, options) {
-                // 检测是否是核心 JS 的初始化代码
-                if (type === 'DOMContentLoaded' && typeof listener === 'function') {
-                    const code = listener.toString();
-                    if (code.includes('bigfonter') || code.includes('applyTheme') || code.includes('initAll')) {
-                        return originalAdd.call(document, type, function (e) {
-                            if (coreLoaded) return; // 核心JS只允许执行第1次，后续派发的事件直接忽略
-                            coreLoaded = true;
-                            listener.apply(this, arguments);
-                        }, options);
-                    }
-                }
-                return originalAdd.call(document, type, listener, options);
-            };
-        })();
-
     const heroLibrary = [
         { name: "大主教", version: "国王时代", type: "非军事单位", civ: ["无"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/大主教.png", link: "大主教.html" },
         { name: "装在桶里的皇帝", version: "国王时代", type: "非军事单位", civ: ["条顿"], img: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe2/common/装在桶里的皇帝.png", link: "装在桶里的皇帝.html" },
@@ -364,7 +344,7 @@
                 </td>
             </tr>
             <tr>
-                <td width="48px" style="border: 0; padding: 2px 0 0 0; text-align: center; font-size: 12px; line-height: 1.2;">
+                <td width="48px" style="border: 0; padding: 2px 0 0 0; text-align: center;">
                     <a href="https://seicing.com/html/aoe2/heroes/${h.link}" class="special-link">${h.name}</a>
                 </td>
             </tr>
@@ -407,7 +387,7 @@
                     html += `<td width="60px" style="vertical-align: middle; text-align: center;">${t}</td>`;
 
                     // 英雄列表展示区
-                    html += `<td style="vertical-align: middle; text-align: left;"><div style="display: flex; flex-wrap: wrap;">`;
+                    html += `<td style="vertical-align: top; text-align: left;"><div style="display: flex; flex-wrap: wrap;">`;
                     heroLibrary.filter(h => h.version === ver && h.type === t).forEach(h => {
                         html += createHeroCell(h);
                     });
@@ -432,8 +412,28 @@
     }
 
     // 4. 触发 sheetcore.js 扫描
+    // 重新触发 sheet 扫描，同时精准屏蔽核心 JS 的重复绑定
     function triggerSheetScanner() {
-        document.dispatchEvent(new Event('DOMContentLoaded'));
+        const origAdd = document.addEventListener;
+        const origObserve = MutationObserver.prototype.observe;
+
+        // 1. 临时守卫：在派发事件期间，禁止任何脚本重复绑定 click 和创建 Observer
+        document.addEventListener = function (type) {
+            if (type === 'click') return; // 吃掉核心 JS 的重复点击监听
+            return origAdd.apply(this, arguments);
+        };
+        MutationObserver.prototype.observe = function () {
+            return; // 防止核心 JS 创建多个重复的 DOM 观察器
+        };
+
+        try {
+            // 2. 正常派发事件，sheetcore.js 此时会正常进行雪碧图切片！
+            document.dispatchEvent(new Event('DOMContentLoaded'));
+        } finally {
+            // 3. 瞬间恢复浏览器的原生功能，不影响后续任何正常操作
+            document.addEventListener = origAdd;
+            MutationObserver.prototype.observe = origObserve;
+        }
     }
 
     // 5. 点击文明图标：只筛选出该文明的英雄
