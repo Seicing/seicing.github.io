@@ -16,12 +16,17 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "平民与宗教单位",
+        "name": "商人",
+        "img": "商人",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/商人"
+    },
+    {
+        "civ": "sco",
+        "section": "平民与宗教单位",
         "name": "君主",
         "img": "君主",
         "link": "https://seicing.com/html/aoe2/unitaoe4/君主"
     },
-
-
     {
         "civ": "sco",
         "section": "军事单位",
@@ -46,11 +51,10 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "加洛格拉什",
-        "img": "加洛格拉什",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/加洛格拉什"
+        "name": "加洛格拉斯",
+        "img": "加洛格拉斯",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/加洛格拉斯"
     },
-
     {
         "civ": "sco",
         "section": "军事单位",
@@ -68,11 +72,10 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "边境突袭者",
-        "img": "边境突袭者",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/边境突袭者"
+        "name": "骑士",
+        "img": "骑士",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/骑士"
     },
-
     {
         "civ": "sco",
         "section": "军事单位",
@@ -90,13 +93,179 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "火枪兵",
-        "img": "火枪兵",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/火枪兵"
+        "name": "高地兵",
+        "img": "高地兵",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/高地兵"
+    },
+    {
+        "civ": "sco",
+        "section": "军事单位",
+        "name": "边境突袭者",
+        "img": "边境突袭者",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/边境突袭者"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "扭力弩炮",
+        "img": "扭力弩炮",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "轻型投石车",
+        "img": "轻型投石车",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/轻型投石车"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "配重式巨型投石机",
+        "img": "配重式巨型投石机",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/配重式巨型投石机"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "手推炮",
+        "img": "手推炮",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/手推炮"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "攻城塔",
+        "img": "攻城塔",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/攻城塔"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "攻城锤",
+        "img": "攻城锤",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/攻城锤"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "渔船",
+        "img": "渔船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/渔船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "商船",
+        "img": "商船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/商船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "运输船",
+        "img": "运输船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/运输船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "箭船",
+        "img": "箭船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "趸船",
+        "img": "趸船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/扭力弩炮船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "爆破船",
+        "img": "爆破船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/爆破船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "大帆船",
+        "img": "大帆船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/战船"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "房屋",
+        "img": "房屋",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/房屋"
     },
 
-
-
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "磨坊",
+        "img": "磨坊",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/磨坊"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "伐木场",
+        "img": "伐木场",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/伐木场"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "采矿场",
+        "img": "采矿场",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/采矿场"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "农田",
+        "img": "农田",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/农田"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "兵营",
+        "img": "兵营",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/兵营"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "码头",
+        "img": "码头",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/码头"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "哨站",
+        "img": "哨站",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/哨站"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "木栅栏",
+        "img": "木栅栏",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/木栅栏"
+    },
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "木城门",
+        "img": "木城门",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/木城门"
+    },
     {
         "civ": "sco",
         "section": "黑暗时代建筑",
@@ -111,13 +280,144 @@ export const aoe4list = [
         "img": "集结大厅",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/集结大厅"
     },
-
-
+    {
+        "civ": "sco",
+        "section": "黑暗时代建筑",
+        "name": "公共鱼塘",
+        "img": "公共鱼塘",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/公共鱼塘"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "铁匠铺",
+        "img": "铁匠铺",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/铁匠铺"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "市场",
+        "img": "市场",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/市场"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "城镇中心",
+        "img": "城镇中心",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/城镇中心"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "靶场",
+        "img": "靶场",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/靶场"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "马厩",
+        "img": "马厩",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/马厩"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "石墙塔",
+        "img": "石墙塔",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/石墙塔"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "石墙",
+        "img": "石墙",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/石墙"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "石墙城门",
+        "img": "石墙城门",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/石墙城门"
+    },
+    {
+        "civ": "sco",
+        "section": "城堡时代建筑",
+        "name": "修道院",
+        "img": "修道院",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/修道院"
+    },
+    {
+        "civ": "sco",
+        "section": "城堡时代建筑",
+        "name": "攻城武器厂",
+        "img": "攻城武器厂",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/攻城武器厂"
+    },
     {
         "civ": "sco",
         "section": "城堡时代建筑",
         "name": "城堡",
         "img": "城堡",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/城堡"
+    },
+    {
+        "civ": "sco",
+        "section": "帝王时代建筑",
+        "name": "大学",
+        "img": "大学",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/大学"
+    },
+    {
+        "civ": "sco",
+        "section": "帝王时代建筑",
+        "name": "苏格兰世界奇观",
+        "img": "苏格兰世界奇观",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/苏格兰世界奇观"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "苏格兰地标1",
+        "img": "苏格兰地标1",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标1"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "苏格兰地标2",
+        "img": "苏格兰地标2",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标2"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "苏格兰地标3",
+        "img": "苏格兰地标3",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标3"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "苏格兰地标4",
+        "img": "苏格兰地标4",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标4"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "苏格兰地标5",
+        "img": "苏格兰地标5",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标5"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "苏格兰地标6",
+        "img": "苏格兰地标6",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标6"
     },
 ];
