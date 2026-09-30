@@ -184,13 +184,6 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "黑暗时代建筑",
-        "name": "房屋",
-        "img": "房屋",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/房屋"
-    },
-    {
-        "civ": "vik",
-        "section": "黑暗时代建筑",
         "name": "磨坊",
         "img": "磨坊",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/磨坊"
