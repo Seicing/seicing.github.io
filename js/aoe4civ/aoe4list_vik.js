@@ -9,9 +9,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "平民与宗教单位",
-        "name": "祭司",
-        "img": "祭司",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/祭司"
+        "name": "渥尔娃女巫",
+        "img": "渥尔娃女巫",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/渥尔娃女巫"
     },
     {
         "civ": "vik",
@@ -163,16 +163,16 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "船只",
-        "name": "箭船",
-        "img": "箭船",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手船"
+        "name": "维京长船",
+        "img": "维京长船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/维京长船"
     },
     {
         "civ": "vik",
         "section": "船只",
-        "name": "维京长船",
-        "img": "维京长船",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/维京长船"
+        "name": "维京龙船",
+        "img": "维京龙船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/维京龙船"
     },
     {
         "civ": "vik",
@@ -319,21 +319,21 @@ export const aoe4list = [
         "section": "帝王时代建筑",
         "name": "维京世界奇观",
         "img": "维京世界奇观",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/维京世界奇观"
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "维京地标1",
-        "img": "维京地标1",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标1"
+        "name": "特雷勒堡",
+        "img": "特雷勒堡",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/特雷勒堡"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "维京地标2",
-        "img": "维京地标2",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标2"
+        "name": "神圣树林",
+        "img": "神圣树林",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/神圣树林"
     },
     {
         "civ": "vik",
@@ -359,8 +359,8 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "维京地标6",
-        "img": "维京地标6",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标6"
+        "name": "卡尔玛城堡",
+        "img": "卡尔玛城堡",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/卡尔玛城堡"
     },
 ];

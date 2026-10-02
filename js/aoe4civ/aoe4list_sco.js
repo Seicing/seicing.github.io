@@ -369,7 +369,7 @@ export const aoe4list = [
         "section": "帝王时代建筑",
         "name": "苏格兰世界奇观",
         "img": "苏格兰世界奇观",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/苏格兰世界奇观"
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
     },
     {
         "civ": "sco",
@@ -381,23 +381,23 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "苏格兰地标2",
-        "img": "苏格兰地标2",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标2"
+        "name": "斯诺登门",
+        "img": "斯诺登门",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯诺登门"
     },
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "苏格兰地标3",
-        "img": "苏格兰地标3",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标3"
+        "name": "邓弗姆林修道院",
+        "img": "邓弗姆林修道院",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/邓弗姆林修道院"
     },
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "苏格兰地标4",
-        "img": "苏格兰地标4",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标4"
+        "name": "艾琳多南城堡",
+        "img": "艾琳多南城堡",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/艾琳多南城堡"
     },
     {
         "civ": "sco",
