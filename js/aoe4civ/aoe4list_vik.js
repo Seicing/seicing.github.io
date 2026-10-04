@@ -253,6 +253,13 @@ export const aoe4list = [
     },
     {
         "civ": "vik",
+        "section": "黑暗时代建筑",
+        "name": "神圣树林",
+        "img": "神圣树林",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/神圣树林"
+    },
+    {
+        "civ": "vik",
         "section": "封建时代建筑",
         "name": "铁匠铺",
         "img": "铁匠铺",
@@ -331,9 +338,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "神圣树林",
-        "img": "神圣树林",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/神圣树林"
+        "name": "维京地标2",
+        "img": "维京地标2",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标2"
     },
     {
         "civ": "vik",
