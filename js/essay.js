@@ -139,7 +139,49 @@ $(document).ready(function () {
                 desktopButton.click();
             }
         }
+
+        // =============================================================
+        // == 根据 <script> 标签的 data-click-id 自动点击指定按钮
+        // =============================================================
+        //
+        // 页面中可以这样使用：
+        //
+        // <script src="https://seicing.com/js/essay.js" data-click-id="hajimebutton"></script>
+        //
+        // 加载 list_essay.html 完成后，会自动点击 #hajimebutton
+        //
+        // =============================================================
+
+        var essayScript = document.querySelector(
+            'script[src*="essay.js"][data-click-id]'
+        );
+
+        if (essayScript) {
+            var clickId = essayScript.getAttribute("data-click-id");
+            var clickButton = document.getElementById(clickId);
+
+            if (clickButton) {
+                // 按钮已经存在，直接点击
+                clickButton.click();
+            } else {
+                // 按钮暂时不存在，等待动态加载
+                var clickTimer = setInterval(function () {
+                    var btn = document.getElementById(clickId);
+
+                    if (btn) {
+                        clearInterval(clickTimer);
+                        btn.click();
+                    }
+                }, 50);
+
+                // 最多等待10秒
+                setTimeout(function () {
+                    clearInterval(clickTimer);
+                }, 10000);
+            }
+        }
     });
+
 
     // =========================================================================
     // 【修改点 2】专门补救 defaultall.js 漏掉的 #bigfonter2 / 移动端大字体点击
@@ -152,36 +194,23 @@ $(document).ready(function () {
         var newFont = (currentFont === 'big') ? 'small' : 'big';
         try { localStorage.setItem('fontSize', newFont); } catch (e) { }
 
-        // 强行应用字体（不仅改 body，也强制应用到主要内容容器，解决 CSS 被覆盖问题）
+        // 强行应用字体
         var targetFontSize = (newFont === 'big') ? '12pt' : '9pt';
         document.body.style.fontSize = targetFontSize;
 
-        $('#wrapper, #page, #content, .entry, .post, td, p').css('font-size', (newFont === 'big') ? '12pt' : '');
+        $('#wrapper, #page, #content, .entry, .post, td, p').css(
+            'font-size',
+            (newFont === 'big') ? '12pt' : ''
+        );
 
         // 强行更新按钮高亮颜色
         var isLavi = $(document.body).hasClass('lavilavivagnar');
         var activeColor = isLavi ? 'rgb(0, 255, 172)' : 'var(--btn-active-color)';
         var inactiveColor = isLavi ? '#ffffff' : 'var(--btn-inactive-color)';
 
-        $('#bigfonter, #bigfonter2, .bigfonter2').css('color', newFont === 'big' ? activeColor : inactiveColor);
+        $('#bigfonter, #bigfonter2, .bigfonter2').css(
+            'color',
+            newFont === 'big' ? activeColor : inactiveColor
+        );
     });
-});
-
-// 在 essay.js 最底部添加：不用等待 DOMContentLoaded，直接全局绑定
-$(document).on('click', '#bigfonter', function (e) {
-    e.preventDefault();
-    var currentFont = 'small';
-    try { currentFont = localStorage.getItem('fontSize') || 'small'; } catch (err) { }
-
-    var newFont = (currentFont === 'big') ? 'small' : 'big';
-    try { localStorage.setItem('fontSize', newFont); } catch (err) { }
-
-    // 应用字号
-    document.body.style.fontSize = (newFont === 'big') ? '12pt' : '9pt';
-
-    // 强行刷新按钮颜色
-    var isLavi = $(document.body).hasClass('lavilavivagnar');
-    var activeColor = isLavi ? 'rgb(0, 255, 172)' : 'var(--btn-active-color)';
-    var inactiveColor = isLavi ? '#ffffff' : 'var(--btn-inactive-color)';
-    $('#bigfonter').css('color', newFont === 'big' ? activeColor : inactiveColor);
 });
