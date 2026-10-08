@@ -183,34 +183,5 @@ $(document).ready(function () {
     });
 
 
-    // =========================================================================
-    // 【修改点 2】专门补救 defaultall.js 漏掉的 #bigfonter2 / 移动端大字体点击
-    // =========================================================================
-    $(document).on('click', '#bigfonter, #bigfonter2, .bigfonter2', function () {
-        // 读取当前字体状态
-        var currentFont = 'small';
-        try { currentFont = localStorage.getItem('fontSize') || 'small'; } catch (e) { }
 
-        var newFont = (currentFont === 'big') ? 'small' : 'big';
-        try { localStorage.setItem('fontSize', newFont); } catch (e) { }
-
-        // 强行应用字体
-        var targetFontSize = (newFont === 'big') ? '12pt' : '9pt';
-        document.body.style.fontSize = targetFontSize;
-
-        $('#wrapper, #page, #content, .entry, .post, td, p').css(
-            'font-size',
-            (newFont === 'big') ? '12pt' : ''
-        );
-
-        // 强行更新按钮高亮颜色
-        var isLavi = $(document.body).hasClass('lavilavivagnar');
-        var activeColor = isLavi ? 'rgb(0, 255, 172)' : 'var(--btn-active-color)';
-        var inactiveColor = isLavi ? '#ffffff' : 'var(--btn-inactive-color)';
-
-        $('#bigfonter, #bigfonter2, .bigfonter2').css(
-            'color',
-            newFont === 'big' ? activeColor : inactiveColor
-        );
-    });
 });
