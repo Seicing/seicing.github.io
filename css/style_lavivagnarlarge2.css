@@ -2,7 +2,7 @@
    1. CSS 变量定义区 (仅控制颜色，绝不涉及任何物理像素大小)
    ===================================================================== */
 :root {
-    --tech-active-shadow2: drop-shadow(0 0 4px rgb(255, 208, 0));
+    --tech-active-shadow2: drop-shadow(0 0 2px rgb(255, 0, 0));
 
     /* --- 日间模式基础配色变量 --- */
     --bg-body-color: #ffffff;
@@ -161,18 +161,16 @@ body.theme-winter {
    ===================================================================== */
 body.theme-winter {
     background-image: none;
-    /* 如果没有雪景图，可改成 url(https://seicing.com/res/img01.png) 或 none */
 }
 
 body.theme-winter #wrapper {
-    background-image: url(https://seicing.com/res/img03_winter.png);
+    background-image: none;
 }
 
 body.theme-winter #wrapper2 {
-    background-image: url(https://seicing.com/res/img02_winter.png);
+    background-image: none;
 }
 
-/* 大屏布局下的冬季背景覆写 */
 body.layout-large.theme-winter #wrapper {
     background-image: url(https://seicing.com/res/img03b_winter.png);
 }
@@ -252,18 +250,16 @@ body.theme-spring {
 
 body.theme-spring {
     background-image: none;
-    /* 如果没有雪景图，可改成 url(https://seicing.com/res/img01.png) 或 none */
 }
 
 body.theme-spring #wrapper {
-    background-image: url(https://seicing.com/res/img03_spring.png);
+    background-image: none;
 }
 
 body.theme-spring #wrapper2 {
-    background-image: url(https://seicing.com/res/img02_spring.png);
+    background-image: none;
 }
 
-/* 大屏布局下的冬季背景覆写 */
 body.layout-large.theme-spring #wrapper {
     background-image: url(https://seicing.com/res/img03b_spring.png);
 }
