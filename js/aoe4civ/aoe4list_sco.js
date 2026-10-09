@@ -374,6 +374,13 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
+        "name": "艾奥纳修道院",
+        "img": "艾奥纳修道院",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/艾奥纳修道院"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
         "name": "命运之石",
         "img": "命运之石",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/命运之石"
