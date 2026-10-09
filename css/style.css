@@ -217,7 +217,7 @@ body.theme-winter {
     --lavihaednoneoff: #a0522d;
     --lavihaednoneon: #ff0000;
     --lavihaedhaoff: #b4bacb;
-    --lavihaedhaon: #1E6B9E;
+    --lavihaedhaon: #004f84;
 }
 
 /* =====================================================================
@@ -246,78 +246,73 @@ body.layout-large.theme-winter #wrapper2 {
     background-image: url(https://seicing.com/res/img02b_winter.png);
 }
 
-
-
-
-
-
 /* =====================================================================
    春季日间模式配色覆写 (Spring Mode Theme)
    ===================================================================== */
 body.theme-spring {
     img[src*="1121314.png"] {
-        /* 将原本的棕褐色通过色相旋转和滤镜变成柔和的樱花粉/紫红调 */
-        filter: hue-rotate(310deg) saturate(0.85) brightness(1.1);
+        /* 将原本的棕褐色通过色相旋转变成高贵清冷的铃兰紫调 */
+        filter: hue-rotate(250deg) saturate(0.7) brightness(1.1);
         transition: filter 0.3s ease;
     }
 
-    --bg-body-color: #F2ECF6;
-    /* 淡淡的樱花粉白背景 */
-    --text-primary: #5C4A52;
-    /* 柔和的暗紫灰正文 */
-    --text-title: #3A252E;
-    /* 深梅子色标题 */
-    --text-link: #C47A9E;
-    /* 樱花粉链接 */
-    --text-link3: #C47A9E;
-    --text-link-hover-bg: #F7EBEF;
-    /* 悬停微粉白背景 */
-    --special-link-color: #9C3868;
-    /* 艳樱桃红特殊链接 */
-    --special-link-color2: #9B7D8A;
-    --special-text-link: #C47A9E;
+    --bg-body-color: #F3EFEF;
+    /* 铃兰幽谷淡紫灰背景 */
+    --text-primary: #524B5C;
+    /* 幽暗的紫灰色正文 */
+    --text-title: #322B3D;
+    /* 深邃铃兰紫标题 */
+    --text-link: #8A73A9;
+    /* 铃兰淡紫链接 */
+    --text-link3: #8A73A9;
+    --text-link-hover-bg: #EAE5F2;
+    /* 悬停微紫白背景 */
+    --special-link-color: #6A4C93;
+    /* 浓郁铃兰紫特殊链接 */
+    --special-link-color2: #807393;
+    --special-text-link: #8A73A9;
 
-    --text-sidebar-p: #7A636F;
-    --text-sidebar-h2: #3A252E;
-    --text-sidebar-a: #C47A9E;
-    --text-sidebar-a-2: #E0B1C6;
-    --border-sidebar-li: 1px dashed #E8D0DC;
+    --text-sidebar-p: #6E647D;
+    --text-sidebar-h2: #322B3D;
+    --text-sidebar-a: #8A73A9;
+    --text-sidebar-a-2: #B3A4C7;
+    --border-sidebar-li: 1px dashed #D4C9E2;
 
-    --border-table: #E3C5D3;
-    --bg-table-highlight: #FBF0F4;
-    --hr-color: 1px solid #D6B2C2;
+    --border-table: #D1C5E0;
+    --bg-table-highlight: #F5EEFC;
+    --hr-color: 1px solid #B8A9CC;
 
-    --scroll-track-bg-1: #F0E2E8;
-    --scroll-track-bg-2: #F9F2F5;
-    --scroll-thumb-bg: #D6B2C2;
+    --scroll-track-bg-1: #E4DCF0;
+    --scroll-track-bg-2: #F0EBF7;
+    --scroll-thumb-bg: #B8A9CC;
 
-    --bg-footer: #423038;
-    /* 深紫棕色页脚 */
-    --text-footer: #D6B2C2;
-    --tablet-html-bg: #F2E4EC;
+    --bg-footer: #30283D;
+    /* 幽紫深灰页脚 */
+    --text-footer: #B8A9CC;
+    --tablet-html-bg: #E8E0F2;
     --tablet-wrapper-bg: #FFFFFF;
 
-    --btn-active-color: #A84274;
-    --btn-inactive-color: #e1c9d3;
+    --btn-active-color: #6A4C93;
+    --btn-inactive-color: #B3A4C7;
 
-    --aoe4-title: #8C5F73;
-    --aoe4-statsagefont: #5C4A52;
-    --aoe4-statsage1: #FDF2F5;
-    --aoe4-statsage2: #FFF5F7;
-    --aoe4-statsage3: #FFF0E6;
+    --aoe4-title: #7D6B9E;
+    --aoe4-statsagefont: #524B5C;
+    --aoe4-statsage1: #F0EBF7;
+    --aoe4-statsage2: #F4F0FA;
+    --aoe4-statsage3: #FAF5E6;
     --aoe4-statsage4: #FCE8E8;
 
-    --radar-grid: #E3C5D3;
-    /* 樱花粉雷达网格线 */
-    --back-to-top-button-hover: #C47A9E;
-    --back-to-top-button-main: #5C4A52;
+    --radar-grid: #D1C5E0;
+    /* 铃兰紫雷达网格线 */
+    --back-to-top-button-hover: #8A7A96;
+    --back-to-top-button-main: #3C324D;
     --back-to-top-button-font: #FFFFFF;
-    --trader937: #FDF2F5;
+    --trader937: #F0EBF7;
 
     --lavihaednoneoff: #a0522d;
     --lavihaednoneon: #ff0000;
-    --lavihaedhaoff: #e1c9d3;
-    --lavihaedhaon: #A84274;
+    --lavihaedhaoff: #C4B8D4;
+    --lavihaedhaon: #6A4C93;
 }
 
 body.theme-spring {
@@ -341,9 +336,6 @@ body.layout-large.theme-spring #wrapper {
 body.layout-large.theme-spring #wrapper2 {
     background-image: url(https://seicing.com/res/img02b_spring.png);
 }
-
-
-
 
 /* =====================================================================
    3. 夜间模式配色覆写 (Night Mode Theme - 仅控制颜色)
