@@ -540,40 +540,72 @@ window.addEventListener('resize', debounce(function () {
 
 /*
 =====================================================================
-=== 强制冬季日间模式控制器 (Forced Winter Mode - 纯净精简版)
-=== 仅控制 body 类名切换，图片变色交由 CSS 滤镜处理
+=== 多主题控制器 (Summer / Winter / Spring)
+=== 支持全局默认定义 + Cookie 优先覆盖
 =====================================================================
 */
 (function () {
-    // ==========================================
-    // === 【总开关】 true = 开启冬季模式 | false = 关闭冬季模式 ===
-    // ==========================================
-    const IS_WINTER_ACTIVE = false;
+    // =====================================================================
+    // === 【全局默认开关】当访客没有任何 Cookie 记录时默认显示的主题
+    // === 可选值: 'summer' (夏季) | 'winter' (冬季) | 'spring' (春季)
+    // =====================================================================
+    const GLOBAL_DEFAULT_THEME = 'summer';
 
-    function applyForcedWinter() {
-        if (!document.body) return;
+    // === Cookie 辅助函数 (挂载到 window 方便你在备忘录的 <a> 标签里调用) ===
+    window.setCookie = function (name, value, days = 365) {
+        const d = new Date();
+        d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
+    };
 
-        if (IS_WINTER_ACTIVE) {
-            document.body.classList.add('theme-winter');
-        } else {
-            document.body.classList.remove('theme-winter');
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
         }
+        return null;
     }
 
-    // 页面加载时立即执行
+    window.deleteCookie = function (name) {
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
+    };
+
+    // === 主题应用核心逻辑 ===
+    function applyThemeMode() {
+        if (!document.body) return;
+
+        // 核心逻辑：优先读取 Cookie，如果没有 Cookie 则采用你上面定义的 GLOBAL_DEFAULT_THEME
+        const activeTheme = getCookie('theme_mode') || GLOBAL_DEFAULT_THEME;
+
+        // 清理旧的主题类名
+        document.body.classList.remove('theme-winter', 'theme-spring');
+
+        // 赋予对应的主题类名
+        if (activeTheme === 'winter') {
+            document.body.classList.add('theme-winter');
+        } else if (activeTheme === 'spring') {
+            document.body.classList.add('theme-spring');
+        }
+        // 如果是 'summer'，则保持干净（不加额外类，走默认夏季样式）
+    }
+
+    // 页面加载时立即执行一次
     if (document.body) {
-        applyForcedWinter();
+        applyThemeMode();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        applyForcedWinter();
+        applyThemeMode();
 
-        // 配合 MutationObserver，确保动态加载的内容也能正确附带冬季类名
-        const forceWinterObserver = new MutationObserver(() => {
-            applyForcedWinter();
+        // 配合 MutationObserver，确保动态加载的内容也能正确附带主题类名
+        const themeObserver = new MutationObserver(() => {
+            applyThemeMode();
         });
 
-        forceWinterObserver.observe(document.body, {
+        themeObserver.observe(document.body, {
             childList: true,
             subtree: true
         });
