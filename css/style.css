@@ -75,8 +75,8 @@
     --saga2-table-1: #ffffff;
     --saga2-table-2: #f0f0f0;
 
-    --laviva-blue: #cae5ff;
-    --laviva-white: #eff7ff;
+    --laviva-blue: #e1d9d0;
+    --laviva-white: #faf5ef;
 
     --hidden-inpage: #ffffff;
 
@@ -117,6 +117,10 @@
     --back-to-top-button-main: #333333;
     --back-to-top-button-font: #ffffff;
     --trader937: #fff4bf;
+
+    --saic-01: #888888;
+    --saic-02: #ffffff;
+    --saic-03: #faf5ef;
 
 }
 
@@ -218,6 +222,13 @@ body.theme-winter {
     --lavihaednoneon: #ff0000;
     --lavihaedhaoff: #b4bacb;
     --lavihaedhaon: #004f84;
+
+    --saic-01: #888888;
+    --saic-02: #ffffff;
+    --saic-03: #F5F8FA;
+    --laviva-blue: #cae5ff;
+    --laviva-white: #eff7ff;
+
 }
 
 /* =====================================================================
@@ -267,7 +278,7 @@ body.theme-spring {
     --text-link3: #8A73A9;
     --text-link-hover-bg: #EAE5F2;
     /* 悬停微紫白背景 */
-    --special-link-color: #6c00ff;
+    --special-link-color: #0029ff;
     /* 浓郁铃兰紫特殊链接 */
     --special-link-color2: #807393;
     --special-text-link: #C4B8D4;
@@ -292,7 +303,7 @@ body.theme-spring {
     --tablet-html-bg: #E8E0F2;
     --tablet-wrapper-bg: #FFFFFF;
 
-    --btn-active-color: #6c00ff;
+    --btn-active-color: #0029ff;
     --btn-inactive-color: #B3A4C7;
 
     --aoe4-title: #7D6B9E;
@@ -312,7 +323,14 @@ body.theme-spring {
     --lavihaednoneoff: #a0522d;
     --lavihaednoneon: #ff0000;
     --lavihaedhaoff: #C4B8D4;
-    --lavihaedhaon: #6c00ff;
+    --lavihaedhaon: #0029ff;
+
+    --saic-01: #888888;
+    --saic-02: #1C1815;
+    --saic-03: #f5eefc;
+    --laviva-blue: #d9caff;
+    --laviva-white: #f5eefc;
+
 }
 
 body.theme-spring {
@@ -438,6 +456,9 @@ body.theme-dark {
     --back-to-top-button-font: #ffffff;
 
     --trader937: #b3b3b38a;
+    --saic-01: #888888;
+    --saic-02: #1C1815;
+    --saic-03: #282420;
 }
 
 /* 无头夜间特殊兼容 */
