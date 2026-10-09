@@ -13,8 +13,8 @@
     --entry-min-height: 500px;
     --sidebar-display: block;
 
-    /* --- 排版字号变量 --- */
-    --h2-font-size: 2em;
+    /* --- 排版字号变量 
+    --h2-font-size: 2em;--- */
 
     /* --- 日间模式基础配色变量 --- */
     --bg-body-color: #EEEBDA;
