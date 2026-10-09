@@ -289,7 +289,7 @@ body.theme-spring {
     --text-sidebar-a-2: #B3A4C7;
     --border-sidebar-li: 1px dashed #D4C9E2;
 
-    --border-table: #D1C5E0;
+    --border-table: 1px solid #D1C5E0;
     --bg-table-highlight: #F5EEFC;
     --hr-color: 1px solid #B8A9CC;
 
@@ -328,7 +328,7 @@ body.theme-spring {
     --saic-01: #888888;
     --saic-02: #ffffff;
     --saic-03: #f5eefc;
-    --laviva-blue: #d9caff;
+    --laviva-blue: #e7ddff;
     --laviva-white: #f5eefc;
 
 }
