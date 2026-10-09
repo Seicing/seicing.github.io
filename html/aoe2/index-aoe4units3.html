@@ -24,7 +24,6 @@
         flex-wrap: wrap;
     }
 
-    /* 手机端隐藏 */
     @media screen and (max-width: 820px) {
         #tableSizeButtons {
             display: none;
@@ -91,31 +90,26 @@
         height: 38px;
         display: block;
         border-radius: 4px;
-        /* 匹配图标圆角 */
         transition: all 0.2s ease;
         filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
     }
 
-    /* 激活状态：橙色渐变外发光光晕 */
     .unit-act-btn.active img {
         box-shadow: 0 0 0 2px #ff8c00, 0 0 10px #ff8c00;
         transform: scale(1.06);
     }
 
-    /* 表格与 5 列样式 (格与格之间 10px gap) */
     #customers {
         width: 800px;
         max-width: 100%;
         margin: 0 auto;
         border-collapse: separate;
         border-spacing: 10px 10px;
-        /* 列间距 10px，行间距 10px */
         table-layout: fixed;
     }
 
     #customers td {
         width: 20%;
-        /* 严格 5 列 = 100% / 5 */
         text-align: center;
         vertical-align: bottom;
         border: none;
@@ -130,7 +124,6 @@
         vertical-align: bottom;
     }
 
-    /* 国旗图标容器（支持并排显示多国旗） */
     .flags-box {
         position: absolute;
         right: 2px;
@@ -154,7 +147,6 @@
         }
     }
 
-    /* 多单位容器 */
     .multi-unit-box {
         display: flex;
         justify-content: space-evenly;
@@ -167,9 +159,6 @@
         flex-shrink: 0;
     }
 
-    /* =========================================================
-   【彻底解决模板裁切】重写外层 .post 和 .entry 容器的 overflow 规则
-   ========================================================= */
     .post,
     .entry,
     #content,
@@ -177,7 +166,6 @@
     #wrapper,
     #wrapper2 {
         overflow: visible !important;
-        /* 允许内部图片突破 800px 容器限制溢出显示 */
     }
 
     @media screen and (max-width: 767px) {
@@ -231,12 +219,10 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="4299"></div>
 
-<!-- 预加载侦察兵真实 PNG (用于精准获取侦察兵 naturalWidth 缩放基准) -->
 <div style="position: absolute; top: -9999px; left: -9999px; visibility: hidden; pointer-events: none;">
     <img id="scoutRealImg" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/chi/侦察兵1.png">
 </div>
 
-<!-- 兵种对比选择器 (图标纯净版，带橙色渐变外发光) -->
 <div class="unit-selector">
     <button class="unit-act-btn active" data-unit="长矛兵">
         <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛兵.png">
