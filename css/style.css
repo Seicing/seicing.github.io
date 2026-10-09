@@ -21,6 +21,7 @@
     --text-primary: #4D4D4D;
     --text-title: #25201c;
     --text-link: #D0C9B7;
+    --text-link3: #7d7b74;
     --text-link-hover-bg: #ffffff;
     --special-link-color: #0010ff;
     --special-link-color2: #857E6E;
@@ -154,6 +155,7 @@ body.theme-winter {
     --text-title: #1E2D3D;
     /* 极夜深蓝标题 */
     --text-link: #4A7A96;
+    --text-link3: #4A7A96;
     /* 冰晶蓝链接 */
     --text-link-hover-bg: #F0F6FC;
     /* 悬停微白背景 */
@@ -188,7 +190,7 @@ body.theme-winter {
 
     /* --- 控制台按钮冬季颜色 --- */
     --btn-active-color: #1E6B9E;
-    --btn-inactive-color: #9b9b9b;
+    --btn-inactive-color: #b4bacb;
 
     /* --- 游戏 UI 元素冬季微调 --- */
     --aoe4-title: #4B6F96;
@@ -245,6 +247,7 @@ body.theme-dark {
     --text-primary: #e2ddca;
     --text-title: #ffffff;
     --text-link: #8c8577;
+    --text-link3: #8c8577;
     /*#b8954f #8c8577*/
     --text-link-hover-bg: #2d2925;
     --special-link-color: rgb(0, 255, 172);
@@ -1088,7 +1091,7 @@ a {
     text-transform: uppercase;
     font-size: 26px;
     font-weight: normal;
-    color: var(--text-link);
+    color: var(--text-link3);
 }
 
 .post .meta {
@@ -1946,7 +1949,7 @@ body.font-big .crychic {
     }
 
     html {
-        background: var(--tablet-html-bg) !important;
+        background: var(--bg-body-color) !important;
     }
 
     /* 平板布局调整 */

@@ -547,7 +547,7 @@ window.addEventListener('resize', debounce(function () {
     // ==========================================
     // === 【总开关】 true = 开启冬季模式 | false = 关闭冬季模式 ===
     // ==========================================
-    const IS_WINTER_ACTIVE = false;
+    const IS_WINTER_ACTIVE = true;
 
     function applyForcedWinter() {
         if (!document.body) return;
