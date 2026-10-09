@@ -540,7 +540,8 @@ window.addEventListener('resize', debounce(function () {
 
 /*
 =====================================================================
-=== 强制冬季日间模式控制器 (Forced Winter Mode + 图片自动替换)
+=== 强制冬季日间模式控制器 (Forced Winter Mode - 纯净精简版)
+=== 仅控制 body 类名切换，图片变色交由 CSS 滤镜处理
 =====================================================================
 */
 (function () {
@@ -554,38 +555,9 @@ window.addEventListener('resize', debounce(function () {
 
         if (IS_WINTER_ACTIVE) {
             document.body.classList.add('theme-winter');
-            replaceImagesToWinter(true);
         } else {
             document.body.classList.remove('theme-winter');
-            replaceImagesToWinter(false);
         }
-    }
-
-    // === 图片路径动态替换函数 ===
-    function replaceImagesToWinter(isWinter) {
-        // 查找页面中所有包含特定图片名的 img 标签
-        const imgs = document.querySelectorAll('img');
-
-        imgs.forEach(img => {
-            const src = img.getAttribute('src') || '';
-
-            if (isWinter) {
-                // 如果是冬季，并且图片还没被换成 _winter，且不是夜间模式
-                // 检查它是否是你要替换的目标图片（例如 1121314.png）
-                if (src.includes('1121314.png') && !src.includes('_winter.png')) {
-                    img.setAttribute('src', src.replace('1121314.png', '1121314_winter.png'));
-                }
-                // 如果你还有其他图片要批量替换，可以仿照上面再加几行：
-                // if (src.includes('other.png') && !src.includes('_winter.png')) {
-                //     img.setAttribute('src', src.replace('other.png', 'other_winter.png'));
-                // }
-            } else {
-                // 如果关闭冬季，把 _winter 改回原图
-                if (src.includes('_winter.png')) {
-                    img.setAttribute('src', src.replace('_winter.png', '.png'));
-                }
-            }
-        });
     }
 
     // 页面加载时立即执行
@@ -596,7 +568,7 @@ window.addEventListener('resize', debounce(function () {
     document.addEventListener('DOMContentLoaded', () => {
         applyForcedWinter();
 
-        // 配合 MutationObserver，如果页面有动态加载的内容，也能自动把图片换成冬季版
+        // 配合 MutationObserver，确保动态加载的内容也能正确附带冬季类名
         const forceWinterObserver = new MutationObserver(() => {
             applyForcedWinter();
         });

@@ -147,6 +147,12 @@ body.layout-headless {
 
 
 body.theme-winter {
+
+    img[src*="1121314.png"] {
+        filter: hue-rotate(185deg) saturate(0.6) brightness(1.05);
+        transition: filter 0.3s ease;
+    }
+
     /* --- 冬季日间模式基础配色变量 --- */
     --bg-body-color: #ECEEF6;
     /* 冰川浅蓝灰背景 */
@@ -1922,12 +1928,6 @@ body.font-big .crychic {
    8. 平板/小尺寸桌面专属样式 (768px - 1279px)
    ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-
-    html,
-    body {
-        background-color: var(--bg-body-color);
-    }
-
     .container {
         width: 100%;
     }
@@ -1949,7 +1949,7 @@ body.font-big .crychic {
     }
 
     html {
-        background: var(--bg-body-color) !important;
+        background: var(--tablet-html-bg) !important;
     }
 
     /* 平板布局调整 */
