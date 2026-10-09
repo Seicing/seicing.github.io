@@ -201,7 +201,7 @@ body.theme-spring {
     --text-link3: #8A73A9;
     --text-link-hover-bg: #EAE5F2;
     /* 悬停微紫白背景 */
-    --special-link-color: #6A4C93;
+    --special-link-color: #6c00ff;
     /* 浓郁铃兰紫特殊链接 */
     --special-link-color2: #807393;
     --special-text-link: #C4B8D4;
@@ -226,7 +226,7 @@ body.theme-spring {
     --tablet-html-bg: #E8E0F2;
     --tablet-wrapper-bg: #FFFFFF;
 
-    --btn-active-color: #6A4C93;
+    --btn-active-color: #6c00ff;
     --btn-inactive-color: #B3A4C7;
 
     --aoe4-title: #7D6B9E;
@@ -246,7 +246,7 @@ body.theme-spring {
     --lavihaednoneoff: #a0522d;
     --lavihaednoneon: #ff0000;
     --lavihaedhaoff: #C4B8D4;
-    --lavihaedhaon: #6A4C93;
+    --lavihaedhaon: #6c00ff;
 }
 
 body.theme-spring {
