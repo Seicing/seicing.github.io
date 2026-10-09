@@ -144,6 +144,7 @@ body.layout-headless {
 
 
 
+
 body.theme-winter {
     /* --- 冬季日间模式基础配色变量 --- */
     --bg-body-color: #ECEEF6;
@@ -187,7 +188,7 @@ body.theme-winter {
 
     /* --- 控制台按钮冬季颜色 --- */
     --btn-active-color: #1E6B9E;
-    --btn-inactive-color: #3e4347;
+    --btn-inactive-color: #9b9b9b;
 
     /* --- 游戏 UI 元素冬季微调 --- */
     --aoe4-title: #4B6F96;
@@ -1649,6 +1650,7 @@ body.font-big .crychic {
 
     html,
     body {
+        background-color: var(--bg-body-color);
         width: 100%;
         overflow-x: hidden;
         margin: 0;
@@ -1917,6 +1919,12 @@ body.font-big .crychic {
    8. 平板/小尺寸桌面专属样式 (768px - 1279px)
    ===================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+    html,
+    body {
+        background-color: var(--bg-body-color);
+    }
+
     .container {
         width: 100%;
     }
