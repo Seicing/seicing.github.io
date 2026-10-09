@@ -374,9 +374,16 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "苏格兰地标1",
-        "img": "苏格兰地标1",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标1"
+        "name": "命运之石",
+        "img": "命运之石",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/命运之石"
+    },
+    {
+        "civ": "sco",
+        "section": "地标建筑",
+        "name": "斯凯之塔",
+        "img": "斯凯之塔",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯凯之塔"
     },
     {
         "civ": "sco",
@@ -388,13 +395,6 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "邓弗姆林修道院",
-        "img": "邓弗姆林修道院",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/邓弗姆林修道院"
-    },
-    {
-        "civ": "sco",
-        "section": "地标建筑",
         "name": "艾琳多南城堡",
         "img": "艾琳多南城堡",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/艾琳多南城堡"
@@ -402,15 +402,8 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "苏格兰地标5",
-        "img": "苏格兰地标5",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标5"
-    },
-    {
-        "civ": "sco",
-        "section": "地标建筑",
-        "name": "苏格兰地标6",
-        "img": "苏格兰地标6",
+        "name": "爱丁堡",
+        "img": "爱丁堡",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标6"
     },
 ];

@@ -65,9 +65,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "骑士",
-        "img": "骑士",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/骑士"
+        "name": "日德兰骑士",
+        "img": "日德兰骑士",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/日德兰骑士"
     },
     {
         "civ": "vik",
@@ -324,8 +324,8 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "帝王时代建筑",
-        "name": "维京世界奇观",
-        "img": "维京世界奇观",
+        "name": "木板教堂",
+        "img": "木板教堂",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
     },
     {
@@ -338,30 +338,23 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "维京地标2",
-        "img": "维京地标2",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标2"
+        "name": "国王大厅",
+        "img": "国王大厅",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/国王大厅"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "维京地标3",
-        "img": "维京地标3",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标3"
+        "name": "瓦尔德玛城堡",
+        "img": "瓦尔德玛城堡",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/瓦尔德玛城堡"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "维京地标4",
-        "img": "维京地标4",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标4"
-    },
-    {
-        "civ": "vik",
-        "section": "地标建筑",
-        "name": "维京地标5",
-        "img": "维京地标5",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/维京地标5"
+        "name": "国王之门大教堂",
+        "img": "国王之门大教堂",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/国王之门大教堂"
     },
     {
         "civ": "vik",
