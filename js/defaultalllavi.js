@@ -537,3 +537,45 @@ window.addEventListener('resize', debounce(function () {
         );
     });
 })();
+
+/*
+=====================================================================
+=== 强制冬季日间模式控制器 (Forced Winter Mode)
+=== 修改 IS_WINTER_ACTIVE 的布尔值即可全局开启或关闭冬季模式
+=====================================================================
+*/
+(function () {
+    // ==========================================
+    // === 【总开关】 true = 开启冬季模式 | false = 关闭冬季模式 ===
+    // ==========================================
+    const IS_WINTER_ACTIVE = true;
+
+    function applyForcedWinter() {
+        if (!document.body) return;
+
+        if (IS_WINTER_ACTIVE) {
+            document.body.classList.add('theme-winter');
+        } else {
+            document.body.classList.remove('theme-winter');
+        }
+    }
+
+    // 页面加载时立即执行
+    if (document.body) {
+        applyForcedWinter();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        applyForcedWinter();
+
+        // 配合你的 MutationObserver，防止动态加载内容时类名丢失
+        const forceWinterObserver = new MutationObserver(() => {
+            applyForcedWinter();
+        });
+
+        forceWinterObserver.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+})();
