@@ -1949,7 +1949,8 @@ body.font-big .crychic {
     }
 
     html {
-        background: var(--tablet-html-bg) !important;
+        /* background: var(--tablet-html-bg) !important; */
+        background: transparent !important;
     }
 
     /* 平板布局调整 */
