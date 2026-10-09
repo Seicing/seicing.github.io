@@ -1657,7 +1657,10 @@ body.font-big .crychic {
         bottom: auto;
     }
 
-    html,
+    html {
+        background: transparent !important;
+    }
+
     body {
         background-color: var(--bg-body-color);
         width: 100%;
