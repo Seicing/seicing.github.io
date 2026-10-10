@@ -16,6 +16,13 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "平民与宗教单位",
+        "name": "教会官员",
+        "img": "教会官员",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/教会官员"
+    },
+    {
+        "civ": "sco",
+        "section": "平民与宗教单位",
         "name": "商人",
         "img": "商人",
         "link": "https://seicing.com/html/aoe2/unitaoe4/商人"
@@ -395,9 +402,9 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "斯凯之塔",
-        "img": "斯凯之塔",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯凯之塔"
+        "name": "斯凯塔",
+        "img": "斯凯塔",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯凯塔"
     },
     {
         "civ": "sco",
@@ -416,8 +423,8 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "爱丁堡",
-        "img": "爱丁堡",
+        "name": "爱丁堡城堡",
+        "img": "爱丁堡城堡",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标6"
     },
 ];
