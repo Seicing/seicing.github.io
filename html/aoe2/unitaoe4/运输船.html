@@ -16,6 +16,7 @@
         $('#techno').load('https://seicing.com/js/list/mat_aoe4_civ_true.html', function () {
             document.getElementById("techno").style.display = "block";
             document.getElementById("rus").classList.add("aoeTechIconOff");
+            document.getElementById("vik").classList.add("aoeTechIconOff");
         })
     })
 </script>
@@ -187,6 +188,11 @@
         <a id="senButton0" onclick="showCiv('sen')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></a>
         <a id="macButton0" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
         <a id="jinButton0" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
+        <a id="scoButton0" onclick="showCiv('sco')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></a>
+    </div>
+
+
+    <div id="scoText0" style="text-align:left;display:block">
 
     </div>
     <div id="abbText0" style="text-align:left;display:block">
@@ -436,10 +442,6 @@
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sco/运输船.png" target="_blank">
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sco/运输船.png"></a>
             </td>
-            <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/vik/运输船.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/vik/运输船.png"></a>
-            </td>
         </tr>
         <tr>
             <td class="textce bcF5F8FA">
@@ -450,9 +452,6 @@
             </td>
             <td class="textce bcF5F8FA">
                 苏格兰运输船
-            </td>
-            <td class="textce bcF5F8FA">
-                维京运输船
             </td>
         </tr>
     </table>
@@ -515,6 +514,8 @@
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jpn.png"></div>
                     <div class="filterbtn" data-filter="sen" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></div>
+                    <div class="filterbtn" data-filter="sco" data-keep="true"><img
+                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></div>
                 </div>
             </td>
         </tr>

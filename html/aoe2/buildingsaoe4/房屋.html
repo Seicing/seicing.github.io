@@ -19,6 +19,7 @@
             document.getElementById("jpn").classList.add("aoeTechIconOff");
             document.getElementById("goh").classList.add("aoeTechIconOff");
             document.getElementById("sen").classList.add("aoeTechIconOff");
+            document.getElementById("vik").classList.add("aoeTechIconOff");
         })
     })
 </script>
@@ -168,7 +169,8 @@
     </h1>
     <hr class="hrsty">
     房屋是最基础的建筑物，为玩家的文明提供更大的人口加成<br>
-    蒙古人因为开始游戏就拥有最大人口，所以他们没有房屋<br>
+    蒙古人因为开始游戏就拥有最大人口，所以他们没有房屋；日本人的<a href="https://seicing.com/html/aoe2/buildingsaoe4/农舍.html?civ=jpn" class="special-link">农舍</a>、维京人的<a
+        href="https://seicing.com/html/aoe2/buildingsaoe4/长屋.html?civ=vik" class="special-link">长屋</a>取代了普通的房屋<br>
     马里人的房屋显得更加轻量化，更便宜、提供人口数更少<br>
 </div>
 
@@ -199,6 +201,7 @@
         <a id="tugButton0" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
         <a id="macButton0" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
         <a id="jinButton0" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
+        <a id="scoButton0" onclick="showCiv('sco')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></a>
     </div>
 
     <div id="abbText0" style="text-align: left;display:block">
@@ -290,6 +293,9 @@
     <div id="holText0" style="text-align: left;display:none">
         这座建筑物没有科技可以研发
     </div>
+    <div id="scoText0" style="text-align: left;display:none">
+        这座建筑物没有科技可以研发
+    </div>
 </div>
 
 <br><br><br>
@@ -319,12 +325,11 @@
         <a id="tugButton1" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
         <a id="macButton1" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
         <a id="jinButton1" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
-
+        <a id="scoButton1" onclick="showCiv('sco')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></a>
     </div>
 
     <div id="abbText1" style="text-align: left;display:block">
         <span class="智慧宫效果"></span><br>
-
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
@@ -610,6 +615,18 @@
             </tr>
         </table>
     </div>
+
+    <div id="scoText1" style="text-align: left;display:none">
+        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
+            <tr class="textle">
+                <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
+                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/hp.png>生命值</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/宫廷建筑师.png" width="20px">宫廷建筑师(+30%)<br>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <br><br><br>
@@ -675,6 +692,7 @@
         <a id="tugButton2" onclick="showCiv('tug')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/tug.png"></a>
         <a id="macButton2" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
         <a id="jinButton2" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
+        <a id="scoButton2" onclick="showCiv('sco')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></a>
     </div>
 
     <div id="abbText2" style="text-align:center;display:none">
@@ -3081,6 +3099,118 @@
                 <td>
                     <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/byz/房屋c4.png" target="_blank">
                         <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/byz/mini/房屋c4.png">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    帝王时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代房屋
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="scoText2" style="text-align:center;display:none">
+        <table id="empire">
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋a1.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋a1.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋b1.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋b1.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋c1.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋c1.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋a2.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋a2.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋b2.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋b2.png">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    黑暗时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    黑暗时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    黑暗时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    封建时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    封建时代房屋
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋c2.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋c2.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋a3.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋a3.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋b3.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋b3.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋c3.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋c3.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋a4.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋a4.png">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="textce bcF5F8FA">
+                    封建时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    城堡时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    城堡时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    城堡时代房屋
+                </td>
+                <td class="textce bcF5F8FA">
+                    帝王时代房屋
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋b4.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋b4.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/房屋c4.png" target="_blank">
+                        <img alt="" src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/architecture/sco/mini/房屋c4.png">
                     </a>
                 </td>
             </tr>

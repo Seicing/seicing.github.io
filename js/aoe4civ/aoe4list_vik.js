@@ -16,6 +16,13 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "平民与宗教单位",
+        "name": "僧侣",
+        "img": "僧侣",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/僧侣"
+    },
+    {
+        "civ": "vik",
+        "section": "平民与宗教单位",
         "name": "商人",
         "img": "商人",
         "link": "https://seicing.com/html/aoe2/unitaoe4/商人"
@@ -30,16 +37,16 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "侍从",
-        "img": "侍从",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/侍从"
+        "name": "农兵",
+        "img": "农兵",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/农兵"
     },
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "亲随战士",
-        "img": "亲随战士",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/亲随战士"
+        "name": "扈从战士",
+        "img": "扈从战士",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/扈从战士"
     },
     {
         "civ": "vik",
