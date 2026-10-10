@@ -203,12 +203,12 @@ body.theme-winter {
     --btn-inactive-color: #b4bacb;
 
     /* --- 游戏 UI 元素冬季微调 --- */
-    --aoe4-title: #4B6F96;
-    --aoe4-statsagefont: #384C5E;
-    --aoe4-statsage1: #E1F0FF;
-    --aoe4-statsage2: #E8F4E8;
-    --aoe4-statsage3: #FFF4E1;
-    --aoe4-statsage4: #FFE1E1;
+    --aoe4-title: #6e6e85;
+    --aoe4-statsagefont: #4D4D4D;
+    --aoe4-statsage1: #ddffda;
+    --aoe4-statsage2: #faffde;
+    --aoe4-statsage3: #fff1e1;
+    --aoe4-statsage4: #fce1e1;
 
     --radar-grid: #B8CCE2;
     /* 冬季冰蓝雷达网格线 */
@@ -306,12 +306,12 @@ body.theme-spring {
     --btn-active-color: #3b00ff;
     --btn-inactive-color: #B3A4C7;
 
-    --aoe4-title: #524B5C;
-    --aoe4-statsagefont: #524B5C;
-    --aoe4-statsage1: #F0EBF7;
-    --aoe4-statsage2: #F4F0FA;
-    --aoe4-statsage3: #FAF5E6;
-    --aoe4-statsage4: #FCE8E8;
+    --aoe4-title: #6e6e85;
+    --aoe4-statsagefont: #4D4D4D;
+    --aoe4-statsage1: #ddffda;
+    --aoe4-statsage2: #faffde;
+    --aoe4-statsage3: #fff1e1;
+    --aoe4-statsage4: #fce1e1;
 
     --radar-grid: #D1C5E0;
     /* 铃兰紫雷达网格线 */
