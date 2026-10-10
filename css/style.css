@@ -897,6 +897,10 @@ h3 {
 }
 
 h1 {
+    font-size: 2em;
+}
+
+body.font-big h1 {
     font-size: 1.7em;
 }
 
