@@ -233,16 +233,16 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "黑暗时代建筑",
-        "name": "山寨墙",
-        "img": "山寨墙",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/山寨墙"
+        "name": "木栅栏",
+        "img": "木栅栏",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/木栅栏"
     },
     {
         "civ": "vik",
         "section": "黑暗时代建筑",
-        "name": "山寨城门",
-        "img": "山寨城门",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/山寨城门"
+        "name": "木城门",
+        "img": "木城门",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/木城门"
     },
     {
         "civ": "vik",
@@ -257,13 +257,6 @@ export const aoe4list = [
         "name": "神圣树林",
         "img": "神圣树林",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/神圣树林"
-    },
-    {
-        "civ": "vik",
-        "section": "封建时代建筑",
-        "name": "铁匠铺",
-        "img": "铁匠铺",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/铁匠铺"
     },
     {
         "civ": "vik",
@@ -341,6 +334,13 @@ export const aoe4list = [
         "name": "国王大厅",
         "img": "国王大厅",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/国王大厅"
+    },
+    {
+        "civ": "vik",
+        "section": "地标建筑",
+        "name": "多纳尔橡树",
+        "img": "多纳尔橡树",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/多纳尔橡树"
     },
     {
         "civ": "vik",

@@ -128,9 +128,16 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "攻城武器",
-        "name": "手推炮",
-        "img": "手推炮",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/手推炮"
+        "name": "长管炮",
+        "img": "长管炮",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/长管炮"
+    },
+    {
+        "civ": "sco",
+        "section": "攻城武器",
+        "name": "风琴炮",
+        "img": "风琴炮",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/风琴炮"
     },
     {
         "civ": "sco",
