@@ -418,6 +418,6 @@ export const aoe4list = [
         "section": "地标建筑",
         "name": "爱丁堡城堡",
         "img": "爱丁堡城堡",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/苏格兰地标6"
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/爱丁堡城堡"
     },
 ];
