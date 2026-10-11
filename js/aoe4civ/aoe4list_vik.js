@@ -331,9 +331,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "特雷勒堡",
-        "img": "特雷勒堡",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/特雷勒堡"
+        "name": "环形要塞",
+        "img": "环形要塞",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/环形要塞"
     },
     {
         "civ": "vik",

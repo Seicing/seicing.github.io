@@ -289,13 +289,6 @@ export const aoe4list = [
     },
     {
         "civ": "sco",
-        "section": "黑暗时代建筑",
-        "name": "公共鱼塘",
-        "img": "公共鱼塘",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/公共鱼塘"
-    },
-    {
-        "civ": "sco",
         "section": "封建时代建筑",
         "name": "铁匠铺",
         "img": "铁匠铺",
