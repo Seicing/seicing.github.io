@@ -355,6 +355,108 @@ body.layout-large.theme-spring #wrapper2 {
     background-image: url(https://seicing.com/res/img02b_spring.png);
 }
 
+
+/* =====================================================================
+   秋季金秋日间模式配色覆写 (Autumn Golden Theme)
+   ===================================================================== */
+body.theme-autumn {
+    img[src*="1121314.png"] {
+        /* 将原本的棕褐色旋转成深秋的金红/琥珀枫叶色调 */
+        filter: hue-rotate(35deg) saturate(1.2) brightness(1.05);
+        transition: filter 0.3s ease;
+    }
+
+    /* --- 秋季日间模式基础配色变量 --- */
+    --bg-body-color: #F7F3EC;          /* 暖麦色/浅秋香米色背景 */
+    --text-primary: #594D3F;           /* 浓郁的秋褐灰正文 */
+    --text-title: #382A1B;             /* 栗木深棕标题 */
+    
+    /* 链接统一使用夜间模式的霓虹绿色 */
+    --text-link: rgb(0, 255, 172);
+    --text-link3: rgb(0, 255, 172);
+    
+    --text-link-hover-bg: #EFE8DC;     /* 悬停微暖背景 */
+    --special-link-color: rgb(0, 255, 172);
+    --special-link-color2: #A67C52;    
+    --special-text-link: #C49A6C;
+
+    /* --- 侧边栏秋季配色 --- */
+    --text-sidebar-p: #73614E;
+    --text-sidebar-h2: #382A1B;
+    --text-sidebar-a: rgb(0, 255, 172);
+    --text-sidebar-a-2: #C49A6C;
+    --border-sidebar-li: 1px dashed #D9C3A9;
+
+    /* --- 辅助元素与表格秋季配色 --- */
+    --border-table: 1px solid #D9C3A9;
+    --bg-table-highlight: #FAF5EE;
+    --hr-color: 1px solid #A67C52;
+
+    /* --- 滚动条秋季配色 --- */
+    --scroll-track-bg-1: #EFE6D8;
+    --scroll-track-bg-2: #F7F3EC;
+    --scroll-thumb-bg: #C49A6C;
+
+    /* --- 页脚与平板特定秋季配色 --- */
+    --bg-footer: #2C2117;              /* 深琥珀/栗木色页脚 */
+    --text-footer: #C49A6C;
+    --tablet-html-bg: #EAE2D5;
+    --tablet-wrapper-bg: #FFFFFF;
+
+    /* --- 控制台按钮秋季颜色 --- */
+    --btn-active-color: rgb(0, 255, 172);
+    --btn-inactive-color: #C49A6C;
+
+    /* --- 游戏 UI 元素秋季微调 --- */
+    --aoe4-title: #8C6A47;
+    --aoe4-statsagefont: #594D3F;
+    --aoe4-statsage1: #FDF5E6;
+    --aoe4-statsage2: #FFF8E7;
+    --aoe4-statsage3: #FFF0E0;
+    --aoe4-statsage4: #FCE8E8;
+
+    --radar-grid: #D9C3A9;             /* 秋季暖色雷达网格线 */
+    --back-to-top-button-hover: #A67C52;
+    --back-to-top-button-main: #382A1B;
+    --back-to-top-button-font: #FFFFFF;
+    --trader937: #FDF5E6;
+
+    --lavihaednoneoff: #a0522d;
+    --lavihaednoneon: #ff0000;
+    --lavihaedhaoff: #C49A6C;
+    --lavihaedhaon: rgb(0, 255, 172);
+
+    --saic-01: #888888;
+    --saic-02: #ffffff;
+    --saic-03: #FAF5EE;
+    --laviva-blue: #F7EBD0;
+    --laviva-white: #FFFBF2;
+}
+
+/* =====================================================================
+   秋季背景图定义
+   ===================================================================== */
+body.theme-autumn {
+    background-image: url(https://seicing.com/res/img01.png);
+}
+
+body.theme-autumn #wrapper {
+    background-image: url(https://seicing.com/res/img03.png);
+}
+
+body.theme-autumn #wrapper2 {
+    background-image: url(https://seicing.com/res/img02.png);
+}
+
+body.layout-large.theme-autumn #wrapper {
+    background-image: url(https://seicing.com/res/img03b.png);
+}
+
+body.layout-large.theme-autumn #wrapper2 {
+    background-image: url(https://seicing.com/res/img02b.png);
+}
+
+
 /* =====================================================================
    3. 夜间模式配色覆写 (Night Mode Theme - 仅控制颜色)
    ===================================================================== */

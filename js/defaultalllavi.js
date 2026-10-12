@@ -581,13 +581,14 @@ window.addEventListener('resize', debounce(function () {
         const activeTheme = getCookie('theme_mode') || GLOBAL_DEFAULT_THEME;
 
         // 清理旧的主题类名
-        document.body.classList.remove('theme-winter', 'theme-spring');
+        document.body.classList.remove('theme-winter', 'theme-spring', 'theme-autumn');
 
-        // 赋予对应的主题类名
         if (activeTheme === 'winter') {
             document.body.classList.add('theme-winter');
         } else if (activeTheme === 'spring') {
             document.body.classList.add('theme-spring');
+        } else if (activeTheme === 'autumn') {
+            document.body.classList.add('theme-autumn');
         }
         // 如果是 'summer'，则保持干净（不加额外类，走默认夏季样式）
     }
