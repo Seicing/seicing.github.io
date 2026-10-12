@@ -201,8 +201,8 @@ body.theme-spring {
         transition: filter 0.3s ease;
     }
 
-    --bg-body-color: #F3EFEF;
-    /* 铃兰幽谷淡紫灰背景 */
+    --bg-body-color: #ffffff;
+    /* 铃兰幽谷淡紫灰背景 F3EFEF */
     --text-primary: #524B5C;
     /* 幽暗的紫灰色正文 */
     --text-title: #322B3D;
@@ -276,7 +276,7 @@ body.theme-spring #wrapper {
 }
 
 body.theme-spring #wrapper2 {
-    background-image: none;
+    background-color: none;
 }
 
 body.layout-large.theme-spring #wrapper {
@@ -295,28 +295,28 @@ body.layout-large.theme-spring #wrapper2 {
 body.theme-autumn {
     img[src*="1121314.png"] {
         /* 将原本的棕褐色旋转成深秋的金红/琥珀枫叶色调 */
-        filter: hue-rotate(35deg) saturate(1.2) brightness(1.05);
+        filter: hue-rotate(300deg) saturate(1.2) brightness(1.05);
         transition: filter 0.3s ease;
     }
 
     /* --- 秋季日间模式基础配色变量 --- */
-    --bg-body-color: #F2E0D6;          /* 暖麦色/浅秋香米色背景 */
+    --bg-body-color: #ffffff;          /* 暖麦色/浅秋香米色背景 */
     --text-primary: #594D3F;           /* 浓郁的秋褐灰正文 */
     --text-title: #382A1B;             /* 栗木深棕标题 */
     
     /* 链接统一使用夜间模式的霓虹绿色 */
-    --text-link: #c20000;
-    --text-link3: #c20000;
+    --text-link: #9e0000;
+    --text-link3: #9e0000;
     
     --text-link-hover-bg: #EFE8DC;     /* 悬停微暖背景 */
-    --special-link-color: #c20000;
+    --special-link-color: #9e0000;
     --special-link-color2: #A67C52;    
     --special-text-link: #C49A6C;
 
     /* --- 侧边栏秋季配色 --- */
     --text-sidebar-p: #73614E;
     --text-sidebar-h2: #382A1B;
-    --text-sidebar-a: #C49A6C;
+    --text-sidebar-a: #815f3b;
     --text-sidebar-a-2: #C49A6C;
     --border-sidebar-li: 1px dashed #D9C3A9;
 
@@ -337,11 +337,11 @@ body.theme-autumn {
     --tablet-wrapper-bg: #FFFFFF;
 
     /* --- 控制台按钮秋季颜色 --- */
-    --btn-active-color: #c20000;
+    --btn-active-color: #9e0000;
     --btn-inactive-color: #C49A6C;
 
     /* --- 游戏 UI 元素秋季微调 --- */
-    --aoe4-title: #6e6e85;
+    --aoe4-title: #8C6A47;
     --aoe4-statsagefont: #4D4D4D;
     --aoe4-statsage1: #ddffda;
     --aoe4-statsage2: #faffde;
@@ -355,15 +355,15 @@ body.theme-autumn {
     --trader937: #FDF5E6;
 
     --lavihaednoneoff: #350037;
-    --lavihaednoneon: #7c007c;
+    --lavihaednoneon: #e600e6;
     --lavihaedhaoff: #C49A6C;
-    --lavihaedhaon: #c20000;
+    --lavihaedhaon: #9e0000;
 
     --saic-01: #888888;
     --saic-02: #ffffff;
-    --saic-03: #f0f6fd;
-    --laviva-blue: #e7ddff;
-    --laviva-white: #f5eefc;
+    --saic-03: #FAF5EE;
+    --laviva-blue: #ded2c1;
+    --laviva-white: #FAF5EE;
 }
 
 /* =====================================================================
