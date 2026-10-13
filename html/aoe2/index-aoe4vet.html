@@ -56,15 +56,13 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="419"></div>
 帝国时代4的阵营差异度达到了史无前例的惊人程度，然而因为现实和成本原因依旧存在大量复用现象，本页面会对各文明的差异程度进行统计<br>
-<br>
 颜色说明：绿色-完全独特、黄色-半独特、红色-低独特性<br>
-单位：独特单位模型数量，变体仅计算差异于本体的数量<br>
-建筑：独特建筑模型数量，变体仅计算差异于本体的数量<br>
-地标：独特地标模型数量，变体仅计算差异于本体的数量，单地标文明的地标模型会产生变化，但仍算作1<br>
-音声：绿色-独特音乐和语音、黄色-独特音乐复用语音、红色-复用音乐和语音<br>
-机制：拥有的独特宏机制，除单位属性加成外，作用于整个文明的核心机制<br>
 <br>
+变体仅计算差异于本体的数量<br>
+每个单位和建筑模型算1分，每个地标算2分，单地标文明存在时代变化，算4分<br>
 *磨坊、伐木场、采矿营地、木栅栏和木城门、农田、君主、通用攻城器不计算在内<br>
+音声分语音和音乐，每拥有1项获得10分<br>
+机制：除单位属性加成外作用于整个文明的独特宏机制，独特的20分，复用但内容更变的10分，完全复用的0分<br>
 圣殿骑士团、金朝、苏格兰的单位建筑存在部分复用模型但完全重做材质的现象，虽视作独特id的模型，但作为补正，将总分减少20<br>
 <br>
 
@@ -147,7 +145,7 @@
 
         </td>
     </tr>
-    <tr>
+    <tr data-score-adjust="2">
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Abbasiddynasty.png">
         </td>
@@ -331,7 +329,7 @@
 
         </td>
     </tr>
-    <tr data-score-adjust="-20">
+    <tr data-score-adjust="-18">
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Knightstemplar.png">
         </td>
@@ -377,7 +375,7 @@
 
         </td>
     </tr>
-    <tr>
+    <tr data-score-adjust="2">
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Goldenhorde.png">
         </td>
@@ -895,7 +893,7 @@
                 const mechanic = getMechanicScore(cells[MECHANIC_COL]);
 
                 const adjustment = Number(row.dataset.scoreAdjust) || 0;
-                const total = unit + building + landmark + audio + mechanic + adjustment;
+                const total = unit + building + landmark * 2 + audio + mechanic + adjustment;
 
                 // 写入总分列
                 cells[TOTAL_COL].textContent = total;
