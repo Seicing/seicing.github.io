@@ -65,17 +65,17 @@
 机制：拥有的独特宏机制数量，除单位属性加成外，作用于整个文明的核心机制<br>
 <br>
 *磨坊、伐木场、采矿营地、木栅栏和木城门、农田、君主、通用攻城器不计算在内<br>
-圣殿骑士团、金朝、苏格兰的单位建筑存在部分复用模型但完全重做材质的现象，虽视作独特id的模型，但作为补正，将总分减少20<br>
+圣殿骑士团、金朝、苏格兰的单位建筑存在部分复用模型但完全重做材质的现象(已用蓝色标出)，虽视作独特id的模型，但作为补正，将总分减少20<br>
 <br>
 
-<table style="width: 500px" class="tech-table">
+<table style="width: 550px" class="tech-table">
     <tr>
         <td></td>
         <td>单位</td>
         <td>建筑</td>
         <td>地标</td>
         <td>音声</td>
-        <td style="width: 40%;">机制</td>
+        <td style="width: 50%;">机制</td>
         <td>总分</td>
     </tr>
     <tr>
@@ -128,10 +128,10 @@
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Jindynasty.png">
         </td>
-        <td class="tech available ">
+        <td class="tech reavailable ">
             48
         </td>
-        <td class="tech available ">
+        <td class="tech reavailable ">
             45
         </td>
         <td class="tech available ">
@@ -335,10 +335,10 @@
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Knightstemplar.png">
         </td>
-        <td class="tech available ">
+        <td class="tech reavailable ">
             60
         </td>
-        <td class="tech available ">
+        <td class="tech reavailable ">
             41
         </td>
         <td class="tech available ">
@@ -634,10 +634,10 @@
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Scots.png">
         </td>
-        <td class="tech available ">
+        <td class="tech reavailable ">
             48
         </td>
-        <td class="tech available ">
+        <td class="tech reavailable ">
             46
         </td>
         <td class="tech available ">
@@ -765,6 +765,10 @@
 
     .tech.unavailable {
         background-color: var(--co-civcellred);
+    }
+
+    .tech.reavailable {
+        background-color: var(--co-civcellreplaced);
     }
 
     .tech.unavailable img {
