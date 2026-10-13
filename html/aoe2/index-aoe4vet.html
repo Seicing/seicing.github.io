@@ -60,8 +60,8 @@
 <br>
 变体仅计算差异于本体的数量<br>
 每个单位和建筑模型算1分，每个地标(包括奇观)算2分，单地标文明存在时代变化，算4分<br>
-*磨坊、伐木场、采矿营地、木栅栏和木城门、农田、君主、通用攻城器不计算在内<br>
-音声分语音和音乐，每拥有1项获得10分<br>
+*磨坊、伐木场、采矿营地、木栅栏和木城门、石墙、农田、君主、通用攻城器不计算在内；石墙塔、石墙城门和独特攻城器、建筑会进行计算<br>
+音声分为语音和音乐，每拥有1项获得10分<br>
 机制：除单位属性加成外作用于整个文明的独特宏机制，独特的20分，复用但内容更变的10分，完全复用的0分<br>
 圣殿骑士团、金朝、苏格兰的单位建筑存在部分复用模型但完全重做材质的现象，虽视作独特id的模型，但作为补正，将总分减少20<br>
 <br>
@@ -81,10 +81,10 @@
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Chinese.png">
         </td>
         <td class="tech available ">
-            51
+            49
         </td>
         <td class="tech available ">
-            48
+            47
         </td>
         <td class="tech available ">
             7
@@ -130,7 +130,7 @@
             48
         </td>
         <td class="tech reavailable ">
-            45
+            43
         </td>
         <td class="tech available ">
             6
@@ -153,7 +153,7 @@
             47
         </td>
         <td class="tech available ">
-            47
+            44
         </td>
         <td class="tech anavailable ">
             2
@@ -199,7 +199,7 @@
             48
         </td>
         <td class="tech available ">
-            46
+            44
         </td>
         <td class="tech available ">
             7
@@ -245,7 +245,7 @@
             47
         </td>
         <td class="tech available ">
-            45
+            44
         </td>
         <td class="tech available ">
             7
@@ -291,7 +291,7 @@
             44
         </td>
         <td class="tech available ">
-            45
+            42
         </td>
         <td class="tech available ">
             7
@@ -360,7 +360,7 @@
             55
         </td>
         <td class="tech available ">
-            36
+            32
         </td>
         <td class="tech available ">
             7
@@ -406,7 +406,7 @@
             48
         </td>
         <td class="tech available ">
-            47
+            44
         </td>
         <td class="tech available ">
             7
@@ -452,7 +452,7 @@
             48
         </td>
         <td class="tech available ">
-            44
+            45
         </td>
         <td class="tech available ">
             7
@@ -475,7 +475,7 @@
             49
         </td>
         <td class="tech available ">
-            46
+            48
         </td>
         <td class="tech available ">
             7
@@ -498,7 +498,7 @@
             50
         </td>
         <td class="tech available ">
-            45
+            46
         </td>
         <td class="tech available ">
             7
@@ -521,7 +521,7 @@
             42
         </td>
         <td class="tech available ">
-            46
+            47
         </td>
         <td class="tech available ">
             7
@@ -567,7 +567,7 @@
             59
         </td>
         <td class="tech available ">
-            46
+            47
         </td>
         <td class="tech available ">
             7
@@ -653,6 +653,16 @@
     </tr>
 </table>
 
+标准模型：<br>
+单位得分41分(村民8+商人3+僧侣2+长矛兵4+武士2+侦察兵4+骑手3+骑士2+步弓手3+弩手2+火枪兵+船只7)<br>
+建筑得分44分(房屋12+兵营4+码头2+哨塔2+铁匠铺3+市场3+城镇中心4+靶场3+马厩3+石墙塔+石墙城门+修道院2+攻城武器厂2+城堡+大学)<br>
+地标得分14分(6个地标+世界奇观，每个2分)<br>
+语音和音乐20分(各10分)<br>
+独特机制20分<br>
+<br>
+最接近标准单位组的文明是拜占庭(42分)，所有部队一一对应，仅多了一个独特的基耶罗喷火筒<br>
+很多文明都接近标准的44分建筑得分，只是因为复用和独特建筑导致数量有浮动，例如：法国和德里复用了神罗和大食的石墙系建模，所以少了2<br>
+
 </div>
                     </div>
                 </div>
@@ -685,7 +695,7 @@
     body.theme-dark {
         --co-civcellred: #622b2b;
         --co-civcellyellow: #62572b;
-        --co-civcellgreen: #7ca48c;
+        --co-civcellgreen: #3c5647;
         --co-civcellwhite: #ffffff00;
         --co-civcellblack: #11111100;
         --co-civcellreplaced: #213d61;
