@@ -126,7 +126,7 @@
 
         </td>
     </tr>
-    <tr>
+    <tr data-score-adjust="-20">
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Jindynasty.png">
         </td>
@@ -339,7 +339,7 @@
 
         </td>
     </tr>
-    <tr>
+    <tr data-score-adjust="-20">
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Knightstemplar.png">
         </td>
@@ -649,7 +649,7 @@
 
         </td>
     </tr>
-    <tr>
+    <tr data-score-adjust="-20">
         <td class="civcell">
             <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Scots.png">
         </td>
@@ -706,7 +706,7 @@
 
     body.theme-dark {
         --co-civcellred: #622b2b;
-        --co-civcellred: #62572b;
+        --co-civcellyellow: #62572b;
         --co-civcellgreen: #7ca48c;
         --co-civcellwhite: #ffffff00;
         --co-civcellblack: #11111100;
@@ -909,7 +909,8 @@
                 const audio = getNumber(cells[AUDIO_COL]);
                 const mechanic = getMechanicScore(cells[MECHANIC_COL]);
 
-                const total = unit + building + landmark + audio + mechanic;
+                const adjustment = Number(row.dataset.scoreAdjust) || 0;
+                const total = unit + building + landmark + audio + mechanic + adjustment;
 
                 // 写入总分列
                 cells[TOTAL_COL].textContent = total;
