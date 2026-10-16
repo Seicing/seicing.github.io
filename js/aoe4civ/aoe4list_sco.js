@@ -374,8 +374,8 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "帝王时代建筑",
-        "name": "苏格兰世界奇观",
-        "img": "苏格兰世界奇观",
+        "name": "自由纪念碑",
+        "img": "自由纪念碑",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
     },
     {
