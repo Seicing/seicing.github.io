@@ -682,7 +682,7 @@ let ayanami = {
     "契丹骑射手": /*html*/`契丹骑射手<br>可在城堡时代升级重装骑射手，升级成本-50%`,
     "契丹团队加成": /*html*/`契丹团队加成<br>步兵对远程士兵攻击力+2`,
     "札甲": /*html*/`札甲<br>Lamellar Armor<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>450 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>步兵和掷矛手系反弹25%所受近战伤害`,
-    "斡鲁朵骑兵": /*html*/`斡鲁朵骑兵<br>Ordo Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>骑兵战斗时每分钟恢复150%的最大生命值`,
+    "斡鲁朵骑兵": /*html*/`斡鲁朵骑兵<br>Ordo Cavalry<br><img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/肉.png'>600 <img width='20px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>300 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>45 <br>近战骑兵战斗时每分钟恢复150%的最大生命值`,
 
     "蜀伐木": /*html*/`蜀伐木<br>伐木工在伐木时获取7%的额外食物`,
     "蜀科技费用": /*html*/`蜀科技费用<br>弓兵单位靶场和铁匠铺科技费用-25%`,
