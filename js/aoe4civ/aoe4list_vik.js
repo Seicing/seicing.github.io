@@ -182,7 +182,7 @@ export const aoe4list = [
         "link": "https://seicing.com/html/aoe2/unitaoe4/爆破船"
     },
     {
-        "civ": "sco",
+        "civ": "vik",
         "section": "船只",
         "name": "大帆船",
         "img": "大帆船",
