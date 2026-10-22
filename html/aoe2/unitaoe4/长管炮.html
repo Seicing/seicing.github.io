@@ -425,6 +425,7 @@
 
 
     <div id="scoText0" style="text-align:left;display:none">
+        <span class="敦埃丁降价"></span><br>
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
@@ -449,9 +450,9 @@
             </tr>
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png>训练效率</span></td>
+                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/attackspeed.png>攻击速度</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/暂搁旧怨.png" width="20px">暂搁旧怨(+20%)<br>
                 </td>
             </tr>
         </table>
@@ -629,6 +630,14 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" class="special-link" style="display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="sco" data-mode="add add" data-type="cost3 range" data-value="-100 1"><a
+                onmousemove="showPic(event,'敦埃丁降价');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/敦埃丁.png" width="30px"></a></div>
+
+        <div class="icon" data-game="sco" data-mode="diffMul" data-type="attackspeed" data-value="0.833">
+            <a onmousemove="showPic(event,'暂搁旧怨');" onmouseout="hiddenPic();">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/暂搁旧怨.png" width="30px"></a>
+        </div>
 
         <div class="icon" data-game="ayy" data-mode="diffMul" data-type="buildtime" data-value="0.8333"><a
                 onmousemove="showPic(event,'阿尤布黄金时代阶段III');" onmouseout="hiddenPic();"><img
@@ -665,7 +674,7 @@
                 onmousemove="showPic(event,'化学');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/化学.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="sameMul" data-over="ott goh" data-type="buildtime" data-value="-0.25"><a
+        <div class="icon" data-mode="sameMul" data-over="ott goh vik sco" data-type="buildtime" data-value="-0.25"><a
                 onmousemove="showPic(event,'军事学院');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="30px"></a>
         </div>

@@ -9,9 +9,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "平民与宗教单位",
-        "name": "渥尔娃女巫",
-        "img": "渥尔娃女巫",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/渥尔娃女巫"
+        "name": "维勒尔",
+        "img": "维勒尔",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/维勒尔"
     },
     {
         "civ": "vik",
@@ -37,16 +37,16 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "农兵",
-        "img": "农兵",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/农兵"
+        "name": "邦地",
+        "img": "邦地",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/邦地"
     },
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "扈从战士",
-        "img": "扈从战士",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/扈从战士"
+        "name": "亲随战士",
+        "img": "亲随战士",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/亲随战士"
     },
     {
         "civ": "vik",
@@ -86,9 +86,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "民兵弩手",
-        "img": "民兵弩手",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/民兵弩手"
+        "name": "斯科讷弩手",
+        "img": "斯科讷弩手",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/斯科讷弩手"
     },
     {
         "civ": "vik",
@@ -100,9 +100,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "军事单位",
-        "name": "盾女",
-        "img": "盾女",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/盾女"
+        "name": "持盾女战士",
+        "img": "持盾女战士",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/持盾女战士"
     },
     {
         "civ": "vik",
@@ -149,9 +149,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "船只",
-        "name": "渔船",
-        "img": "渔船",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/渔船"
+        "name": "捕鱼挪威商船",
+        "img": "捕鱼挪威商船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/捕鱼挪威商船"
     },
     {
         "civ": "vik",
@@ -163,13 +163,6 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "船只",
-        "name": "运输船",
-        "img": "运输船",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/运输船"
-    },
-    {
-        "civ": "vik",
-        "section": "船只",
         "name": "维京长船",
         "img": "维京长船",
         "link": "https://seicing.com/html/aoe2/unitaoe4/维京长船"
@@ -177,9 +170,9 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "船只",
-        "name": "维京龙船",
-        "img": "维京龙船",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/维京龙船"
+        "name": "德拉卡尔",
+        "img": "德拉卡尔",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/德拉卡尔"
     },
     {
         "civ": "vik",
@@ -187,6 +180,13 @@ export const aoe4list = [
         "name": "爆破船",
         "img": "爆破船",
         "link": "https://seicing.com/html/aoe2/unitaoe4/爆破船"
+    },
+    {
+        "civ": "sco",
+        "section": "船只",
+        "name": "大帆船",
+        "img": "大帆船",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/战船"
     },
     {
         "civ": "vik",
@@ -331,43 +331,43 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "环形要塞",
-        "img": "环形要塞",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/环形要塞"
+        "name": "抱格尔堡垒",
+        "img": "抱格尔堡垒",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/抱格尔堡垒"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "国王大厅",
-        "img": "国王大厅",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/国王大厅"
+        "name": "康恩格礼堂",
+        "img": "康恩格礼堂",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/康恩格礼堂"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "多纳尔橡树",
-        "img": "多纳尔橡树",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/多纳尔橡树"
+        "name": "古林神庙",
+        "img": "古林神庙",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/古林神庙"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "瓦尔德玛城堡",
-        "img": "瓦尔德玛城堡",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/瓦尔德玛城堡"
+        "name": "瓦尔德马尔城堡",
+        "img": "瓦尔德马尔城堡",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/瓦尔德马尔城堡"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "国王之门大教堂",
-        "img": "国王之门大教堂",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/国王之门大教堂"
+        "name": "康京斯多尔大教堂",
+        "img": "康京斯多尔大教堂",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/康京斯多尔大教堂"
     },
     {
         "civ": "vik",
         "section": "地标建筑",
-        "name": "卡尔玛城堡",
-        "img": "卡尔玛城堡",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/卡尔玛城堡"
+        "name": "里凯茨尼克尔城堡",
+        "img": "里凯茨尼克尔城堡",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/里凯茨尼克尔城堡"
     },
 ];

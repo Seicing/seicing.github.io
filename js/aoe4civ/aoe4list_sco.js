@@ -9,16 +9,9 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "平民与宗教单位",
-        "name": "僧侣",
-        "img": "僧侣",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/僧侣"
-    },
-    {
-        "civ": "sco",
-        "section": "平民与宗教单位",
-        "name": "教会官员",
-        "img": "教会官员",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/教会官员"
+        "name": "柯克曼",
+        "img": "柯克曼",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/柯克曼"
     },
     {
         "civ": "sco",
@@ -36,10 +29,17 @@ export const aoe4list = [
     },
     {
         "civ": "sco",
+        "section": "平民与宗教单位",
+        "name": "高地牛",
+        "img": "高地牛",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/高地牛"
+    },
+    {
+        "civ": "sco",
         "section": "军事单位",
-        "name": "长矛兵",
-        "img": "长矛兵",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/长矛兵"
+        "name": "长枪兵",
+        "img": "长枪兵",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/长枪兵"
     },
     {
         "civ": "sco",
@@ -51,23 +51,23 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "氏族战士",
-        "img": "氏族战士",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/氏族战士"
+        "name": "卡特蓝",
+        "img": "卡特蓝",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/卡特蓝"
     },
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "加洛格拉斯",
-        "img": "加洛格拉斯",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/加洛格拉斯"
+        "name": "武装侍从",
+        "img": "武装侍从",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/武装侍从"
     },
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "侦察兵",
-        "img": "侦察兵",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/侦察兵"
+        "name": "吉利侍从",
+        "img": "吉利侍从",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/吉利侍从"
     },
     {
         "civ": "sco",
@@ -86,9 +86,9 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "步弓手",
-        "img": "步弓手",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/步弓手"
+        "name": "高地弓兵",
+        "img": "高地弓兵",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/高地弓兵"
     },
     {
         "civ": "sco",
@@ -100,16 +100,16 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "高地兵",
-        "img": "高地兵",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/高地兵"
+        "name": "泰克斯曼",
+        "img": "泰克斯曼",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/泰克斯曼"
     },
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "边境突袭者",
-        "img": "边境突袭者",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/边境突袭者"
+        "name": "边境袭击者",
+        "img": "边境袭击者",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/边境袭击者"
     },
     {
         "civ": "sco",
@@ -216,7 +216,6 @@ export const aoe4list = [
         "img": "房屋",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/房屋"
     },
-
     {
         "civ": "sco",
         "section": "黑暗时代建筑",
@@ -276,16 +275,9 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "黑暗时代建筑",
-        "name": "塔楼房屋",
-        "img": "塔楼房屋",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/塔楼房屋"
-    },
-    {
-        "civ": "sco",
-        "section": "黑暗时代建筑",
-        "name": "集结大厅",
-        "img": "集结大厅",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/集结大厅"
+        "name": "塔楼",
+        "img": "塔楼",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/塔楼"
     },
     {
         "civ": "sco",
@@ -345,6 +337,20 @@ export const aoe4list = [
     },
     {
         "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "集合厅",
+        "img": "集合厅",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/集合厅"
+    },
+    {
+        "civ": "sco",
+        "section": "封建时代建筑",
+        "name": "鱼塘",
+        "img": "鱼塘",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/鱼塘"
+    },
+    {
+        "civ": "sco",
         "section": "城堡时代建筑",
         "name": "修道院",
         "img": "修道院",
@@ -374,16 +380,16 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "帝王时代建筑",
-        "name": "自由纪念碑",
-        "img": "自由纪念碑",
+        "name": "苏格兰守护者",
+        "img": "苏格兰守护者",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
     },
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "艾奥纳修道院",
-        "img": "艾奥纳修道院",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/艾奥纳修道院"
+        "name": "爱奥那修道院",
+        "img": "爱奥那修道院",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/爱奥那修道院"
     },
     {
         "civ": "sco",
@@ -395,29 +401,29 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "斯凯塔",
-        "img": "斯凯塔",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯凯塔"
+        "name": "斯凯岛之塔",
+        "img": "斯凯岛之塔",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯凯岛之塔"
     },
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "斯诺登门",
-        "img": "斯诺登门",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯诺登门"
+        "name": "斯诺当大门",
+        "img": "斯诺当大门",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/斯诺当大门"
     },
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "艾琳多南城堡",
-        "img": "艾琳多南城堡",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/艾琳多南城堡"
+        "name": "三湖瞭望台",
+        "img": "三湖瞭望台",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/三湖瞭望台"
     },
     {
         "civ": "sco",
         "section": "地标建筑",
-        "name": "爱丁堡城堡",
-        "img": "爱丁堡城堡",
-        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/爱丁堡城堡"
+        "name": "敦埃丁",
+        "img": "敦埃丁",
+        "link": "https://seicing.com/html/aoe2/buildingsaoe4/landmark/敦埃丁"
     },
 ];

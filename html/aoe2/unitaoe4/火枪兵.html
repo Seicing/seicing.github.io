@@ -1040,6 +1040,9 @@
 
 
     <div id="vikText0" style="text-align:left;display:block">
+        <span class="靠土地生活"></span><br>
+        <span class="比约恩的搜寻萨迦"></span><br>
+        <span class="哈明贾"></span><br>
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
@@ -1052,8 +1055,8 @@
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
                             src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorm.png>近战护甲</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="20px">合身皮具(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="20px">绝缘头盔(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重装紧身上衣.png" width="20px">重装紧身上衣(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/锁子甲衫.png" width="20px">锁子甲衫(+1)<br>
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="20px">铁匠大师(+1)<br>
                 </td>
             </tr>
@@ -1061,16 +1064,9 @@
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
                             src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/armorr.png>远程护甲</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="20px">铁制底网(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="20px">楔形铆钉(+1)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="20px">斜面(+1)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png>训练效率</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重装紧身上衣.png" width="20px">重装紧身上衣(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/锁子甲衫.png" width="20px">锁子甲衫(+1)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/札甲金属板.png" width="20px">札甲金属板(+1)<br>
                 </td>
             </tr>
             <tr class="textle">
@@ -1361,6 +1357,9 @@
         <tr>
             <td>其他加成</td>
             <td colspan="5">
+                <span id="Extra215" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/维京.png"
+                        width="20px">靠土地生活：军事单位在浆果丛、鱼、鹿或野猪等自然食物来源每3秒消耗1食物，每秒回复0.4/1.2/1.6/2.0生命值<br></span>
+
                 <span id="Extra207" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
                         width="20px">汗国：同时训练2个单位<br></span>
                 <span id="Extra207-a" style="display:none;"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/金帐汗国.png"
@@ -1436,6 +1435,36 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" class="special-link" style="display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="vik" data-text="Extra215">
+            <a onmousemove="showPic(event,'靠土地生活');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/靠土地生活.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="vik" data-mode="diffMul" data-type="hp" data-value="1.1"><a
+                onmousemove="showPic(event,'比约恩的搜寻萨迦');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/比约恩的搜寻萨迦.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="vik" data-mode="add add" data-type="armorm armorr" data-value="1 1"
+            data-noauto="1">
+            <a onmousemove="showPic(event,'哈明贾');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/哈明贾.png" width="30px"></a>
+        </div>
+
+
+        <div class="icon" data-mode="add" data-game="vik" data-type="armorm armorr" data-value="1 1"><a
+                onmousemove="showPic(event,'重装紧身上衣');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/重装紧身上衣.png" width="30px"></a>
+        </div>
+        <div class="icon" data-mode="add" data-game="vik" data-type="armorm armorr" data-value="1 1"><a
+                onmousemove="showPic(event,'锁子甲衫');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/锁子甲衫.png" width="30px"></a>
+        </div>
+        <div class="icon" data-mode="add" data-game="vik" data-type="armorm armorr" data-value="1 1"><a
+                onmousemove="showPic(event,'札甲金属板');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/札甲金属板.png" width="30px"></a>
+        </div>
+
+
+
         <div class="icon" data-game="jpn" data-mode="diffMul" data-type="damage" data-value="1.15"><a
                 onmousemove="showPic(event,'弓箭旗本武士光环');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/弓箭旗本武士光环.png" width="30px"></a>
@@ -1570,8 +1599,8 @@
         <div class="icon" data-game="hol" data-mode="diffMul" data-text="Extra23" data-type="cost" data-value="0.75"><a
                 onmousemove="showPic(event,'勃艮地进口货物');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/勃艮地进口货物.png" width="30px"></a></div>
-        <div class="icon" data-mode="add" data-over="mac" data-text="Extra22" data-type="bonusdamage1" data-value="5"><a
-                onmousemove="showPic(event,'蛇纹石粉末');" onmouseout="hiddenPic();">
+        <div class="icon" data-mode="add" data-over="mac sco" data-text="Extra22" data-type="bonusdamage1"
+            data-value="5"><a onmousemove="showPic(event,'蛇纹石粉末');" onmouseout="hiddenPic();">
                 <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/蛇纹石粉末.png" width="30px"></a></div>
         <div class="icon" data-game="abb" data-mode="diffMul" data-type="hp" data-value="1.15"><a
                 onmousemove="showPic(event,'新兵训练营');" onmouseout="hiddenPic();">
@@ -1621,31 +1650,31 @@
             <a onmousemove="showPic(event,'札甲');" onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/札甲.png"
                     width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="armorm" data-value="1"><a
                 onmousemove="showPic(event,'合身皮具');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/合身皮具.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="armorm" data-value="1"><a
                 onmousemove="showPic(event,'绝缘头盔');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/绝缘头盔.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorm" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="armorm" data-value="1"><a
                 onmousemove="showPic(event,'铁匠大师');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁匠大师.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="armorr" data-value="1"><a
                 onmousemove="showPic(event,'铁制底网');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/铁制底网.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="armorr" data-value="1"><a
                 onmousemove="showPic(event,'楔形铆钉');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/楔形铆钉.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="armorr" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="armorr" data-value="1"><a
                 onmousemove="showPic(event,'斜面');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斜面.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="sameMul" data-over="ott goh" data-type="buildtime" data-value="-0.25"><a
+        <div class="icon" data-mode="sameMul" data-over="ott goh vik sco" data-type="buildtime" data-value="-0.25"><a
                 onmousemove="showPic(event,'军事学院');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="30px"></a>
         </div>
@@ -1732,10 +1761,10 @@
         </div>
         <div>
             <div>
-                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/高地兵.png" width="48px">
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/泰克斯曼.png" width="48px">
             </div>
             <div style="width:48px;text-align:center;">
-                <a href="https://seicing.com/html/aoe2/unitaoe4/高地兵.html?civ=sco" class="special-link">高地兵</a>
+                <a href="https://seicing.com/html/aoe2/unitaoe4/泰克斯曼.html?civ=sco" class="special-link">泰克斯曼</a>
             </div>
         </div>
     </div>

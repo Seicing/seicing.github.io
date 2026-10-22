@@ -1081,6 +1081,7 @@
 
 
     <div id="scoText0" style="text-align:left;display:block">
+        <span class="仙子之选"></span><br>
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
@@ -1111,9 +1112,16 @@
             </tr>
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/time.png>训练效率</span></td>
+                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png>移动速度</span></td>
                 <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="20px">军事学院(+33%)<br>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/搏林克鲁斯帆船.png" width="20px">搏林克鲁斯帆船(+15%)<br>
+                </td>
+            </tr>
+            <tr class="textle">
+                <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
+                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/attackspeed.png>攻击速度</span></td>
+                <td>
+                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/搏林克鲁斯帆船.png" width="20px">搏林克鲁斯帆船(+20%)<br>
                 </td>
             </tr>
         </table>
@@ -1430,6 +1438,14 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" class="special-link" style="display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="sco" data-mode="add" data-type="armorr" data-value="2"><a
+                onmousemove="showPic(event,'仙子之选');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/仙子之选.png" width="30px"></a>
+        </div>
+        <div class="icon" data-game="sco" data-mode="diffMul diffMul" data-type="speed attackspeed"
+            data-value="1.5 0.8333"><a onmousemove="showPic(event,'搏林克鲁斯帆船');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/搏林克鲁斯帆船.png" width="30px"></a>
+        </div>
 
         <div class="icon" data-game="tug" data-mode="diffMul" data-type="buildtime" data-value="0.7692"><a
                 onmousemove="showPic(event,'腾格拉卡巴德堡垒瞭望');" onmouseout="hiddenPic();"><img
@@ -1539,14 +1555,15 @@
         <div class="icon" data-text="Extra41"><a onmousemove="showPic(event,'加热射击');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/加热射击.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-type="brust" data-value="1"><a onmousemove="showPic(event,'额外吊床');"
-                onmouseout="hiddenPic();"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/额外吊床.png" width="30px"></a>
+        <div class="icon" data-over="vik" data-mode="add" data-type="brust" data-value="1"><a
+                onmousemove="showPic(event,'额外吊床');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/额外吊床.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="diffMul add" data-type="hp armorr" data-value="1.2 1"><a
+        <div class="icon" data-over="vik" data-mode="diffMul add" data-type="hp armorr" data-value="1.2 1"><a
                 onmousemove="showPic(event,'装甲船身');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/装甲船身.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="diffMul add" data-type="hp armorr" data-value="1.2 1"><a
+        <div class="icon" data-over="vik" data-mode="diffMul add" data-type="hp armorr" data-value="1.2 1"><a
                 onmousemove="showPic(event,'造船工');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/造船工.png" width="30px"></a>
         </div>
@@ -1574,19 +1591,19 @@
                 onmousemove="showPic(event,'磨刀石');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/磨刀石.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="damage" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="damage" data-value="1"><a
                 onmousemove="showPic(event,'钢制箭头');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/钢制箭头.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="damage" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="damage" data-value="1"><a
                 onmousemove="showPic(event,'平衡炮弹');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/平衡炮弹.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="add" data-over="mac" data-type="damage" data-value="1"><a
+        <div class="icon" data-mode="add" data-over="mac vik" data-type="damage" data-value="1"><a
                 onmousemove="showPic(event,'箭头穿孔板甲');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/箭头穿孔板甲.png" width="30px"></a>
         </div>
-        <div class="icon" data-mode="sameMul" data-over="ott goh" data-type="buildtime" data-value="-0.25"><a
+        <div class="icon" data-mode="sameMul" data-over="ott goh vik sco" data-type="buildtime" data-value="-0.25"><a
                 onmousemove="showPic(event,'军事学院');" onmouseout="hiddenPic();"><img
                     src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/军事学院.png" width="30px"></a>
         </div>

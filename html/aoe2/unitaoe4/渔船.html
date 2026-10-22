@@ -242,7 +242,6 @@
         <a id="macButton0" onclick="showCiv('mac')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/mac.png"></a>
         <a id="senButton0" onclick="showCiv('sen')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sen.png"></a>
         <a id="jinButton0" onclick="showCiv('jin')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/jin.png"></a>
-        <a id="vikButton0" onclick="showCiv('vik')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/vik.png"></a>
         <a id="scoButton0" onclick="showCiv('sco')"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></a>
     </div>
     <div id="abbText0" style="text-align:left;display:block">
@@ -929,36 +928,8 @@
     </div>
 
 
-
-
-    <div id="vikText0" style="text-align:left;display:none">
-        <table id="aoe4de" style="border:1px solid #222222;" width="500px">
-            <tr class="textle">
-                <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/gather11.png>采集效率(食物)</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/延绳钓.png" width="20px">延绳钓(+15%)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/流刺网.png" width="20px">流刺网(+10%)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/cap.png>运载量</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/延绳钓.png" width="20px">延绳钓(+10)<br>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/流刺网.png" width="20px">流刺网(+20)<br>
-                </td>
-            </tr>
-            <tr class="textle">
-                <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
-                            src=https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/stats/speed.png>移动速度</span></td>
-                <td>
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/流刺网.png" width="20px">流刺网(+10%)<br>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div id="scoText0" style="text-align:left;display:none">
+        <span class="仙子之选"></span><br>
         <table id="aoe4de" style="border:1px solid #222222;" width="500px">
             <tr class="textle">
                 <td class="bcF5F8FA crychic"><span class="aoe4title aoe4stats"><img width=20px
@@ -1173,10 +1144,6 @@
                 <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sco/渔船.png" target="_blank">
                     <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/sco/渔船.png"></a>
             </td>
-            <td>
-                <a href="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/vik/渔船.png" target="_blank">
-                    <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/unit/vik/渔船.png"></a>
-            </td>
         </tr>
         <tr>
             <td class="textce bcF5F8FA">
@@ -1187,9 +1154,6 @@
             </td>
             <td class="textce bcF5F8FA">
                 苏格兰渔船
-            </td>
-            <td class="textce bcF5F8FA">
-                维京渔船
             </td>
         </tr>
     </table>
@@ -1259,8 +1223,6 @@
 
                     <div class="filterbtn" data-filter="sco" data-keep="true"><img
                             src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/sco.png"></div>
-                    <div class="filterbtn" data-filter="vik" data-keep="true"><img
-                            src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/civicon/vik.png"></div>
                 </div>
             </td>
         </tr>
@@ -1343,6 +1305,10 @@
     <div style="display: inline-block;width: 20px;"> </div>
     <div onclick="resetFilters()" class="special-link" style="display:inline;cursor:pointer;">不进行文明筛选</div><br><br>
     <div id="icons" style="width: 523px;">
+        <div class="icon" data-game="sco" data-mode="add" data-type="armorr" data-value="2"><a
+                onmousemove="showPic(event,'仙子之选');" onmouseout="hiddenPic();"><img
+                    src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/仙子之选.png" width="30px"></a>
+        </div>
 
         <div class="icon" data-game="tug" data-mode="diffMul" data-type="buildtime" data-value="0.7692"><a
                 onmousemove="showPic(event,'腾格拉卡巴德堡垒瞭望');" onmouseout="hiddenPic();"><img
@@ -1493,6 +1459,14 @@
             </div>
             <div style="width:48px;text-align:center;">
                 <a href="https://seicing.com/html/aoe2/unitaoe4/罗德亚渔船.html?civ=rus" class="special-link">罗德亚渔船</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/捕鱼挪威商船.png" width="48px">
+            </div>
+            <div style="width:48px;text-align:center;">
+                <a href="https://seicing.com/html/aoe2/unitaoe4/捕鱼挪威商船.html?civ=vik" class="special-link">捕鱼挪威商船</a>
             </div>
         </div>
     </div>
