@@ -1601,7 +1601,7 @@ function setDefaultVisibleSpansForCiv(civ) {
         hre: ["Extra201", "Extra206", "Extra204",],
         otd: ["Extra201", "Extra206", "Extra204",],
         jin: ["Extra201", "Extra206", "Extra204",],
-        vik: ["Extra201", "Extra206", "Extra204", "Extra216", "Extra220",],
+        vik: ["Extra201", "Extra206", "Extra204", "Extra215", "Extra216", "Extra220",],
     };
 
     const list = civDefaults[civ];
