@@ -135,13 +135,6 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "攻城武器",
-        "name": "攻城塔",
-        "img": "攻城塔",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/攻城塔"
-    },
-    {
-        "civ": "vik",
-        "section": "攻城武器",
         "name": "攻城锤",
         "img": "攻城锤",
         "link": "https://seicing.com/html/aoe2/unitaoe4/攻城锤"
