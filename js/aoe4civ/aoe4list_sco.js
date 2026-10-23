@@ -107,9 +107,9 @@ export const aoe4list = [
     {
         "civ": "sco",
         "section": "军事单位",
-        "name": "边境袭击者",
-        "img": "边境袭击者",
-        "link": "https://seicing.com/html/aoe2/unitaoe4/边境袭击者"
+        "name": "边境掠夺者",
+        "img": "边境掠夺者",
+        "link": "https://seicing.com/html/aoe2/unitaoe4/边境掠夺者"
     },
     {
         "civ": "sco",
