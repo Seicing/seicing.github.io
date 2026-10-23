@@ -954,7 +954,7 @@ let ayanami = {
     "哈明贾": /*html*/`哈明贾<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/哈明贾.png' width='20px'>哈明贾：靠近神圣树林的单位获得 1 近战与远程护甲`,
     "抱格尔堡垒兵营": /*html*/`抱格尔堡垒兵营<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/抱格尔堡垒.png' width='20px'>抱格尔堡垒：所有兵营工作速度提升 25% ，科技成本降低 15%，邦地和狂战士免费升级到坚韧级别`,
     "古林神庙解锁": /*html*/`古林神庙解锁<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/古林神庙.png' width='20px'>古林神庙：允许维勒尔在圣地建立神圣树林`,
-    "瓦尔德马尔城堡骑士": /*html*/`瓦尔德马尔城堡骑士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/瓦尔德马尔城堡.png' width='20px'>瓦尔德马尔城堡：日德兰骑士被击杀时可额外获得 20 黄金`,
+    "瓦尔德马尔城堡骑士": /*html*/`瓦尔德马尔城堡骑士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/瓦尔德马尔城堡.png' width='20px'>瓦尔德马尔城堡：日德兰骑士被击杀时可再额外获得 20 黄金`,
     "里凯茨尼克尔城堡降价": /*html*/`里凯茨尼克尔城堡降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/里凯茨尼克尔城堡.png' width='20px'>里凯茨尼克尔城堡：所有单位升级科技成本降低 50%`,
     "蜂箱": /*html*/`蜂箱<br>Bee Skeps<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>20<br>为长屋添加蜂箱，每分钟产出50黄金，长屋生命值提升500，蜂箱最多只能被6个长屋升级`,
     "农庄": /*html*/`农庄<br>Farmstead<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200  <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>2<br>长屋变成食物提交点，并生成两块可供村民采集的蔬菜田，采集效率比普通农田快50%，长屋生命值提升500，农庄最多只能被6个长屋升级`,
