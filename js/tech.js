@@ -938,7 +938,7 @@ let ayanami = {
     "弓床弩炮台": /*html*/`弓床弩炮台<br>Bed Crossbow Emplacement<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>50 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/石.png'>125 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>30<br>为该建筑增加一座用于防御的弓床弩炮台`,
     "火雨": /*html*/`火雨<br>Rain of Fire<br><img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/金.png'>500 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/木.png'>200 <img width='16px' src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/时间.png'>90<br>城堡和石墙塔可使用手榴弹攻击附近单位，对其造成爆炸伤害`,
 
-    "靠土地生活": /*html*/`靠土地生活<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/维京.png' width='20px'>靠土地生活：军事单位在浆果丛、鱼、鹿或野猪等自然食物来源每3秒消耗1食物，每秒回复0.4/1.2/1.6/2.0生命值`,
+    "靠土地生活": /*html*/`靠土地生活<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/靠土地生活.png' width='20px'>靠土地生活：军事单位在浆果丛、鱼、鹿或野猪等自然食物来源每3秒消耗1食物，每秒回复0.4/1.2/1.6/2.0生命值`,
     "维京便宜船只": /*html*/`维京便宜船只<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/维京.png' width='20px'>影响力：码头影响力范围内每座长屋减少4%的船只成本，最多减少16%`,
     "比约恩的搜寻萨迦": /*html*/`比约恩的搜寻萨迦<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/比约恩的搜寻萨迦.png' width='20px'>比约恩的搜寻萨迦：步兵生命值 +10%，冲锋距离 +2`,
     "福克尔的村庄萨迦": /*html*/`福克尔的村庄萨迦<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/福克尔的村庄萨迦.png' width='20px'>福克尔的村庄萨迦：村民招募速度减少2秒，长屋附加费用减少20%`,
@@ -1010,7 +1010,7 @@ let ayanami = {
     "命运之石柯克曼": /*html*/`命运之石柯克曼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/命运之石.png' width='20px'>命运之石：提前一个时代生产柯克曼`,
     "三湖瞭望台充能": /*html*/`三湖瞭望台充能<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三湖瞭望台.png' width='20px'>三湖瞭望台：为集合厅或三湖瞭望台增加 3 次集合冲锋，通过集合获得的战士数量提升 75%`,
     "敦埃丁降价": /*html*/`敦埃丁降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/敦埃丁.png' width='20px'>敦埃丁：火药攻城器械黄金成本-100 黄金，射程提升 1 格`,
-    "圣徒之遗": /*html*/`圣徒之遗<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/圣徒之遗.png' width='20px'>爱奥那修道院：圣徒之遗可提升 135% 的研究与生产速度`,
+    "圣徒之遗": /*html*/`圣徒之遗<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/爱奥那修道院.png' width='20px'>爱奥那修道院：圣徒之遗可提升 135% 的研究与生产速度`,
     "命运之石返还黄金": /*html*/`命运之石返还黄金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/命运之石.png' width='20px'>命运之石：返还 30% 的建造费用为黄金`,
     "斯凯岛之塔树林": /*html*/`斯凯岛之塔树林<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斯凯岛之塔.png' width='20px'>斯凯岛之塔：塔楼可通过“仙子之佑”生成浓密树林，并使得步兵在浓密森林中时伤害提升 15%`,
     "仙子之选": /*html*/`仙子之选<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/仙子之选.png' width='20px'>仙子之选：箭船激活技能可提升周围舰船的远程护甲 2，建造斯凯岛之塔以解锁能力`,
