@@ -1012,7 +1012,7 @@ let ayanami = {
 
     "命运之石柯克曼": /*html*/`命运之石柯克曼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/命运之石.png' width='20px'>命运之石：提前一个时代生产柯克曼`,
     "三湖瞭望台充能": /*html*/`三湖瞭望台充能<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三湖瞭望台.png' width='20px'>三湖瞭望台：为集合厅或三湖瞭望台增加 3 次集合冲锋，通过集合获得的战士数量提升 75%`,
-    "敦埃丁降价": /*html*/`敦埃丁降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/敦埃丁.png' width='20px'>敦埃丁：火药攻城器械黄金成本-100 黄金，射程提升 1 格`,
+    "敦埃丁降价": /*html*/`敦埃丁降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/敦埃丁.png' width='20px'>敦埃丁：火药攻城器械黄金成本 -100 黄金，射程提升 1 格`,
     "圣徒之遗": /*html*/`圣徒之遗<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/爱奥那修道院.png' width='20px'>爱奥那修道院：圣徒之遗可在军事和科技建筑间移动，提升放置建筑 135% 的研究与生产速度`,
     "命运之石返还黄金": /*html*/`命运之石返还黄金<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/命运之石.png' width='20px'>命运之石：在命运之石 10 格范围内建造的建筑物返还 30% 的建造费用为黄金`,
     "斯凯岛之塔树林": /*html*/`斯凯岛之塔树林<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/斯凯岛之塔.png' width='20px'>斯凯岛之塔：塔楼可通过“仙子之佑”生成浓密树林，步兵处于浓密森林时伤害提升 15%`,
