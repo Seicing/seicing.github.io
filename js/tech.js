@@ -1001,15 +1001,13 @@ let ayanami = {
 
     "高地伏击": /*html*/`高地伏击<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高地伏击.png' width='20px'>高地伏击：无视浓密森林视野惩罚，在浓密森林内部移动时移动速度 +10%`,
     "费尔泰克": /*html*/`费尔泰克<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/费尔泰克.png' width='20px'>费尔泰克：攻击后提升附近其他高地人 1 点伤害`,
-    "低地与高地": /*html*/`低地与高地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>低地与高地：升级时代选择低地或高地地标，减少对应时代的集合厅科技50%的成本`,
+    "低地与高地": /*html*/`低地与高地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>低地与高地：选择高地或低地地标升级到下一个时代，6个地标对应6个集合厅科技，建造对应的地标减少该科技50%的成本`,
     "修道院鱼塘": /*html*/`修道院鱼塘<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/鱼塘.png' width='20px'>鱼塘：半径7格范围内村民采集速度 +10%，研究炖池后提升到20%`,
     "城堡遗迹": /*html*/`城堡遗迹<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>城堡遗迹：城堡被摧毁时焦土化附近土地，减少敌人作战能力，可花费600石头修复焦土化的城堡`,
     "湖泊防御网络": /*html*/`湖泊防御网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>湖泊防御网络：码头防御射箭槽价格降低50%`,
-
     "集合厅等级1": /*html*/`集合厅等级1<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅1级：在集合厅附近建造 3 座军事生产建筑升级到等级1，解锁集合高地弓兵，并增加一次集合次数`,
-    "集合厅等级2": /*html*/`集合厅等级2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅2级：在集合厅附近建造 6 座军事生产建筑升级到等级2，降低集合成本，并增加一次集合次数`,
-    "集合厅等级3": /*html*/`集合厅等级3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅3级：在集合厅附近建造 10 座军事生产建筑升级到等级3，降低集合成本，并增加一次集合次数。这批集合的战士生命值 +20%`,
-
+    "集合厅等级2": /*html*/`集合厅等级2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅2级：在集合厅附近建造 6 座军事生产建筑升级到等级2，降低20%集合成本，并增加一次集合次数`,
+    "集合厅等级3": /*html*/`集合厅等级3<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅3级：在集合厅附近建造 10 座军事生产建筑升级到等级3，再降低20%集合成本(总降低40%)，并增加一次集合次数。这批集合的战士生命值 +20%`,
     "命运之石柯克曼": /*html*/`命运之石柯克曼<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/命运之石.png' width='20px'>命运之石：提前一个时代生产柯克曼`,
     "三湖瞭望台充能": /*html*/`三湖瞭望台充能<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/三湖瞭望台.png' width='20px'>三湖瞭望台：为集合厅或三湖瞭望台增加 3 次集合冲锋，通过集合获得的战士数量提升 75%`,
     "敦埃丁降价": /*html*/`敦埃丁降价<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/敦埃丁.png' width='20px'>敦埃丁：火药攻城器械黄金成本 -100 黄金，射程提升 1 格`,
