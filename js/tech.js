@@ -1001,7 +1001,7 @@ let ayanami = {
 
     "高地伏击": /*html*/`高地伏击<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/高地伏击.png' width='20px'>高地伏击：无视浓密森林视野惩罚，在浓密森林内部移动时移动速度 +10%`,
     "费尔泰克": /*html*/`费尔泰克<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/费尔泰克.png' width='20px'>费尔泰克：攻击后提升附近其他高地人 1 点伤害`,
-    "低地与高地": /*html*/`低地与高地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>低地与高地：每个时代都有高地与低地地标以及对应的高地与低地集合厅科技，建造对应的地标减少该科技50%的成本`,
+    "低地与高地": /*html*/`低地与高地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>低地与高地：每个时代选择1个高地或低地地标进入新时代，根据已建造的高地/低地地标数量，减少集合厅高地/低地科技50% / 75% / 87.5%的成本`,
     "修道院鱼塘": /*html*/`修道院鱼塘<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/鱼塘.png' width='20px'>鱼塘：半径7格范围内村民采集速度 +10%，研究炖池后提升到20%`,
     "城堡遗迹": /*html*/`城堡遗迹<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>城堡遗迹：城堡被摧毁时焦土化附近土地，减少敌人作战能力，可花费600石头修复焦土化的城堡`,
     "湖泊防御网络": /*html*/`湖泊防御网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>湖泊防御网络：码头防御射箭槽价格降低50%`,
