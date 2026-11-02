@@ -1003,7 +1003,7 @@ let ayanami = {
     "费尔泰克": /*html*/`费尔泰克<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/费尔泰克.png' width='20px'>费尔泰克：攻击后提升附近其他高地人 1 点伤害`,
     "低地与高地": /*html*/`低地与高地<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>低地与高地：每个时代选择1个高地或低地地标进入新时代，根据已建造的高地/低地地标数量，减少集合厅高地/低地科技50% / 75% / 87.5%的成本`,
     "修道院鱼塘": /*html*/`修道院鱼塘<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/鱼塘.png' width='20px'>鱼塘：半径7格范围内村民采集速度 +10%，研究炖池后提升到20%`,
-    "城堡遗迹": /*html*/`城堡遗迹<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>城堡遗迹：城堡被摧毁时焦土化附近土地，减少敌人作战能力，可花费600石头修复焦土化的城堡`,
+    "城堡遗迹": /*html*/`城堡遗迹<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>城堡遗迹：城堡被摧毁时焦土化附近土地，减少敌人15的攻击速度和25%的移动速度，可在60秒内花费600石头上限修复焦土化的城堡`,
     "湖泊防御网络": /*html*/`湖泊防御网络<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/苏格兰.png' width='20px'>湖泊防御网络：码头防御射箭槽价格降低50%`,
     "集合厅等级1": /*html*/`集合厅等级1<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅1级：在集合厅附近建造 3 座军事生产建筑升级到等级1，解锁集合高地弓兵，并增加一次集合次数`,
     "集合厅等级2": /*html*/`集合厅等级2<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/集合厅.png' width='20px'>集合厅2级：在集合厅附近建造 6 座军事生产建筑升级到等级2，降低20%集合成本，并增加一次集合次数`,
