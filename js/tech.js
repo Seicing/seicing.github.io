@@ -947,7 +947,7 @@ let ayanami = {
     "乌尔佛的护林人萨迦": /*html*/`乌尔佛的护林人萨迦<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/乌尔佛的护林人萨迦.png' width='20px'>乌尔佛的护林人萨迦：近战步兵火炬伤害 +5，火炬攻击距离 +1`,
     "尤尔蒙甘德的贸易萨迦": /*html*/`尤尔蒙甘德的贸易萨迦<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/尤尔蒙甘德的贸易萨迦.png' width='20px'>尤尔蒙甘德的贸易萨迦：船只与攻城武器费用降低8%`,
     "龙船神庙萨迦": /*html*/`龙船神庙萨迦<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/龙船神庙萨迦.png' width='20px'>龙船神庙萨迦：神圣树林产出狂战士速度 +15%`,
-    "神圣树林狂战士": /*html*/`神圣树林狂战士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/神圣树林.png' width='20px'>神圣树林：在封建/城堡/帝王时代免费每 98/55/34 秒生成 1 个狂战士`,
+    "神圣树林狂战士": /*html*/`神圣树林狂战士<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/神圣树林.png' width='20px'>神圣树林：在封建/城堡/帝王时代免费每 98/57/34 秒生成 1 个狂战士`,
     "维京免费村民": /*html*/`维京免费村民<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/ability/维京.png' width='20px'>北方迁移：村民训练时间 +2秒，但可以免费地自动训练，限制 10 个，每个长屋提高 10 个村民上限`,
     "维京长船驻扎": /*html*/`维京长船驻扎<br><img src='https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/维京长船.png' width='20px'>维京长船：每驻扎 1 个非村民单位，维京长船驻扎射箭 +1，生命值 +30`,
 
