@@ -47,32 +47,18 @@
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        z-index: 10;
-    }
-
-    /* 面板展开/收起切换按钮 */
-    #togglePanelBtn {
-        background: rgba(30, 30, 30, 0.85);
-        color: #eee;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        border-radius: 20px;
-        padding: 5px 14px;
-        cursor: pointer;
-        font-size: 12px;
-        backdrop-filter: blur(5px);
-        transition: all 0.2s ease;
-    }
-
-    #togglePanelBtn:hover {
-        background: rgba(50, 50, 50, 0.95);
-        color: #fff;
+        justify-content: center;
+        width: 100%;
+        z-index: 9999;
+        /* 极高层级，防止被网站其他元素遮挡 */
+        pointer-events: none;
+        /* 容器本身不阻挡点击，让点击穿透到网页 */
     }
 
     /* 旗帜选择面板 */
     #panel {
+        pointer-events: auto;
+        /* 恢复面板本身的点击响应 */
         display: flex;
         align-items: center;
         gap: 8px;
@@ -83,7 +69,6 @@
         border-radius: 8px;
         max-width: 90vw;
         overflow-x: auto;
-        /* 超过容器支持左右滚动 */
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
@@ -91,7 +76,8 @@
     #panel.hidden {
         opacity: 0;
         pointer-events: none;
-        transform: translateY(10px);
+        /* 隐藏时不再响应点击 */
+        transform: translateY(20px);
     }
 
     /* 单个旗帜按钮 - 宽度限定 50px */
@@ -113,6 +99,8 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        pointer-events: none;
+        /* 防止图片吞掉点击事件 */
     }
 
     .flag-btn:hover {
@@ -156,18 +144,13 @@
                         <h2 class="title"><a href="#"><b></b></a></h2>
                         <div class="entry"><div id="lavipage" page="4192"></div>
 <div id="container">
-    <canvas id="flagCanvas" width="1920" height="1080"></canvas>
+    <canvas id="flagCanvas"></canvas>
 
     <div id="toolbar-container">
         <!-- 旗帜选择面板 -->
         <div id="panel"></div>
-        <!-- 面板显隐切换按钮 -->
-        <button id="togglePanelBtn">隐藏/展开面板</button>
     </div>
-</div>
-
-
-</div>
+</div></div>
                     </div>
                 </div>
                 <div id="sidebar" style="position:relative; left:-20px">
@@ -195,21 +178,18 @@
 
 <script>
     // ========================
-    // 1. 旗帜列表数据配置（可自由增减）
-    // icon: 按钮显示的缩略图路径 (50px 宽)
-    // flag: 画布中飘动展示的大图路径
+    // 1. 旗帜列表数据配置
     // ========================
     const flagList = [
         { id: 1, name: "拜占庭", icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Byzantines.png", flag: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/flag/flag_byzantine.webp" },
         { id: 2, name: "神圣罗马帝国", icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Holyromanempire.png", flag: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/flag/flag_hre.webp" },
-
     ];
 
     // ========================
     // 2. 动画与渲染核心
     // ========================
     const canvas = document.getElementById("flagCanvas");
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", { alpha: false }); // 优化性能
 
     const settings = {
         amplitude: 10,
@@ -225,20 +205,33 @@
 
     // 切换旗帜大图函数
     function switchFlag(flagSrc) {
-        animationReady = false; // 加载过程中暂停绘制新帧或保持旧图
+        animationReady = false;
         const tempImg = new Image();
         tempImg.src = flagSrc;
         tempImg.onload = () => {
             currentImg = tempImg;
             animationReady = true;
         };
-        tempImg.onerror = () => {
-            console.error("旗帜图片加载失败，请检查路径:", flagSrc);
-        };
     }
 
     function drawFlag(time) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // 修复缩小不显示的问题：动态获取实际渲染尺寸并赋予 canvas 真实分辨率
+        const rect = canvas.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+            const dpr = window.devicePixelRatio || 1;
+            const targetW = Math.round(rect.width * dpr);
+            const targetH = Math.round(rect.height * dpr);
+
+            if (canvas.width !== targetW || canvas.height !== targetH) {
+                canvas.width = targetW;
+                canvas.height = targetH;
+            }
+        } else {
+            return; // 如果容器完全不可见则跳过绘制
+        }
+
+        ctx.fillStyle = "#252525"; // 填充背景防黑边
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         const cols = settings.segments;
         const rows = Math.ceil(cols * currentImg.height / currentImg.width);
@@ -257,35 +250,28 @@
             for (let x = 0; x < cols; x++) {
                 const sx = x * cellW;
                 const sy = y * cellH;
-                const sw = Math.min(cellW + 1, currentImg.width - sx);
-                const sh = Math.min(cellH + 1, currentImg.height - sy);
+                const sw = Math.min(cellW, currentImg.width - sx);
+                const sh = Math.min(cellH, currentImg.height - sy);
+
+                if (sw <= 0 || sh <= 0) continue; // 防止浏览器绘制异常
 
                 const nx = sx / currentImg.width;
                 const ny = sy / currentImg.height;
                 const waveStrength = Math.pow(nx, 0.8);
 
                 const phase = nx * currentImg.width / settings.wavelength - time;
-
-                const wave = Math.sin(phase * Math.PI * 2 + ny * 0.8)
-                    * settings.amplitude * waveStrength;
-
-                const secondary = Math.sin(phase * Math.PI * 4 - time * 0.6)
-                    * settings.amplitude * 0.2 * waveStrength;
-
+                const wave = Math.sin(phase * Math.PI * 2 + ny * 0.8) * settings.amplitude * waveStrength;
+                const secondary = Math.sin(phase * Math.PI * 4 - time * 0.6) * settings.amplitude * 0.2 * waveStrength;
                 const displacement = wave + secondary;
 
                 const dx = offsetX + sx * scale;
                 const dy = offsetY + (sy + displacement) * scale;
-                const dw = sw * scale + 1;
-                const dh = sh * scale + 1;
+                const dw = sw * scale + 1.2; // 稍微增加补偿，防止网格裂缝
+                const dh = sh * scale + 1.2;
 
-                // 绘制旗帜网格
                 ctx.drawImage(currentImg, sx, sy, sw, sh, dx, dy, dw, dh);
 
-                // 布料光影
-                const light = Math.cos(phase * Math.PI * 2 + ny * 0.8)
-                    * settings.shading * waveStrength;
-
+                const light = Math.cos(phase * Math.PI * 2 + ny * 0.8) * settings.shading * waveStrength;
                 if (light < 0) {
                     ctx.fillStyle = `rgba(0,0,0,${-light})`;
                 } else {
@@ -306,10 +292,9 @@
     requestAnimationFrame(animate);
 
     // ========================
-    // 3. 面板与按钮逻辑
+    // 3. 面板与全局点击逻辑
     // ========================
     const panel = document.getElementById("panel");
-    const toggleBtn = document.getElementById("togglePanelBtn");
 
     // 动态生成按钮
     flagList.forEach((item, index) => {
@@ -319,11 +304,9 @@
 
         const iconImg = document.createElement("img");
         iconImg.src = item.icon;
-        iconImg.alt = item.name;
 
         btn.appendChild(iconImg);
 
-        // 点击切换旗帜
         btn.addEventListener("click", () => {
             document.querySelectorAll(".flag-btn").forEach(b => b.classList.remove("active"));
             btn.classList.add("active");
@@ -333,15 +316,20 @@
         panel.appendChild(btn);
     });
 
-    // 默认激活并加载第 1 个旗帜
+    // 默认激活加载第一项
     if (flagList.length > 0) {
         const firstBtn = panel.querySelector(".flag-btn");
         if (firstBtn) firstBtn.classList.add("active");
         switchFlag(flagList[0].flag);
     }
 
-    // 面板隐藏/展开循环切换
-    toggleBtn.addEventListener("click", () => {
+    // 点击网页任意位置隐藏/显示面板
+    document.addEventListener("click", (e) => {
+        // 如果点击的是面板里面的按钮，则不触发隐藏/显示（让按钮的正常功能执行）
+        if (panel.contains(e.target)) {
+            return;
+        }
+        // 点击网页的其他地方则翻转面板状态
         panel.classList.toggle("hidden");
     });
 </script>
