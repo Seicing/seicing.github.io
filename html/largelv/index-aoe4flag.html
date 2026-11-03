@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall2.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style_lavivagnarlarge2.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title data-pagefind-meta="title">旗帜动态效果</title>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://seicing.com/css/leaflet.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background: #252525;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container {
+        position: relative;
+        width: min(100vw, calc(100vh * 16 / 9));
+        aspect-ratio: 16 / 9;
+    }
+
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 底部工具条定位容器 */
+    #toolbar-container {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+    }
+
+    /* 面板展开/收起切换按钮 */
+    #togglePanelBtn {
+        background: rgba(30, 30, 30, 0.85);
+        color: #eee;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        padding: 5px 14px;
+        cursor: pointer;
+        font-size: 12px;
+        backdrop-filter: blur(5px);
+        transition: all 0.2s ease;
+    }
+
+    #togglePanelBtn:hover {
+        background: rgba(50, 50, 50, 0.95);
+        color: #fff;
+    }
+
+    /* 旗帜选择面板 */
+    #panel {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        background: rgba(15, 15, 15, 0.85);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        max-width: 90vw;
+        overflow-x: auto;
+        /* 超过容器支持左右滚动 */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* 面板隐藏样式 */
+    #panel.hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+    }
+
+    /* 单个旗帜按钮 - 宽度限定 50px */
+    .flag-btn {
+        width: 50px;
+        height: 32px;
+        flex-shrink: 0;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        background: #333;
+        padding: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .flag-btn img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .flag-btn:hover {
+        transform: scale(1.08);
+        border-color: #888;
+    }
+
+    .flag-btn.active {
+        border-color: #ffcc00;
+        box-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+    }
+</style>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1850px ; margin:auto">
+        <div id="wrapper2">
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div class="entry"><div id="lavipage" page="4192"></div>
+<div id="container">
+    <canvas id="flagCanvas" width="1920" height="1080"></canvas>
+
+    <div id="toolbar-container">
+        <!-- 旗帜选择面板 -->
+        <div id="panel"></div>
+        <!-- 面板显隐切换按钮 -->
+        <button id="togglePanelBtn">隐藏/展开面板</button>
+    </div>
+</div>
+
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div
+                    style="float:right; width:1800px; text-align:right; border-top: 0px dashed #FFF49F; position:relative; right:20px">
+                    <br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+            <div id="wrapper3">
+                <div id="lowder" class="container">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    // ========================
+    // 1. 旗帜列表数据配置（可自由增减）
+    // icon: 按钮显示的缩略图路径 (50px 宽)
+    // flag: 画布中飘动展示的大图路径
+    // ========================
+    const flagList = [
+        { id: 1, name: "拜占庭", icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Byzantines.png", flag: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/flag/flag_byzantine.webp" },
+        { id: 2, name: "神圣罗马帝国", icon: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Holyromanempire.png", flag: "https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/flag/flag_hre.webp" },
+
+    ];
+
+    // ========================
+    // 2. 动画与渲染核心
+    // ========================
+    const canvas = document.getElementById("flagCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const settings = {
+        amplitude: 10,
+        wavelength: 600,
+        speed: 0.5,
+        segments: 100,
+        shading: 0.2
+    };
+
+    let currentImg = new Image();
+    let animationReady = false;
+    let animationStart = performance.now();
+
+    // 切换旗帜大图函数
+    function switchFlag(flagSrc) {
+        animationReady = false; // 加载过程中暂停绘制新帧或保持旧图
+        const tempImg = new Image();
+        tempImg.src = flagSrc;
+        tempImg.onload = () => {
+            currentImg = tempImg;
+            animationReady = true;
+        };
+        tempImg.onerror = () => {
+            console.error("旗帜图片加载失败，请检查路径:", flagSrc);
+        };
+    }
+
+    function drawFlag(time) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const cols = settings.segments;
+        const rows = Math.ceil(cols * currentImg.height / currentImg.width);
+        const cellW = currentImg.width / cols;
+        const cellH = currentImg.height / rows;
+
+        const scale = Math.min(
+            canvas.width / currentImg.width,
+            canvas.height / currentImg.height
+        );
+
+        const offsetX = (canvas.width - currentImg.width * scale) / 2;
+        const offsetY = (canvas.height - currentImg.height * scale) / 2;
+
+        for (let y = 0; y < rows; y++) {
+            for (let x = 0; x < cols; x++) {
+                const sx = x * cellW;
+                const sy = y * cellH;
+                const sw = Math.min(cellW + 1, currentImg.width - sx);
+                const sh = Math.min(cellH + 1, currentImg.height - sy);
+
+                const nx = sx / currentImg.width;
+                const ny = sy / currentImg.height;
+                const waveStrength = Math.pow(nx, 0.8);
+
+                const phase = nx * currentImg.width / settings.wavelength - time;
+
+                const wave = Math.sin(phase * Math.PI * 2 + ny * 0.8)
+                    * settings.amplitude * waveStrength;
+
+                const secondary = Math.sin(phase * Math.PI * 4 - time * 0.6)
+                    * settings.amplitude * 0.2 * waveStrength;
+
+                const displacement = wave + secondary;
+
+                const dx = offsetX + sx * scale;
+                const dy = offsetY + (sy + displacement) * scale;
+                const dw = sw * scale + 1;
+                const dh = sh * scale + 1;
+
+                // 绘制旗帜网格
+                ctx.drawImage(currentImg, sx, sy, sw, sh, dx, dy, dw, dh);
+
+                // 布料光影
+                const light = Math.cos(phase * Math.PI * 2 + ny * 0.8)
+                    * settings.shading * waveStrength;
+
+                if (light < 0) {
+                    ctx.fillStyle = `rgba(0,0,0,${-light})`;
+                } else {
+                    ctx.fillStyle = `rgba(255,255,255,${light * 0.45})`;
+                }
+                ctx.fillRect(dx, dy, dw, dh);
+            }
+        }
+    }
+
+    function animate(now) {
+        if (animationReady) {
+            const time = (now - animationStart) / 1000 * settings.speed;
+            drawFlag(time);
+        }
+        requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+
+    // ========================
+    // 3. 面板与按钮逻辑
+    // ========================
+    const panel = document.getElementById("panel");
+    const toggleBtn = document.getElementById("togglePanelBtn");
+
+    // 动态生成按钮
+    flagList.forEach((item, index) => {
+        const btn = document.createElement("button");
+        btn.className = "flag-btn";
+        btn.title = item.name || `旗帜 ${index + 1}`;
+
+        const iconImg = document.createElement("img");
+        iconImg.src = item.icon;
+        iconImg.alt = item.name;
+
+        btn.appendChild(iconImg);
+
+        // 点击切换旗帜
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".flag-btn").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            switchFlag(item.flag);
+        });
+
+        panel.appendChild(btn);
+    });
+
+    // 默认激活并加载第 1 个旗帜
+    if (flagList.length > 0) {
+        const firstBtn = panel.querySelector(".flag-btn");
+        if (firstBtn) firstBtn.classList.add("active");
+        switchFlag(flagList[0].flag);
+    }
+
+    // 面板隐藏/展开循环切换
+    toggleBtn.addEventListener("click", () => {
+        panel.classList.toggle("hidden");
+    });
+</script>
+
+</html>
