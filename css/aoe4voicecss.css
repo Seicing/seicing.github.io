@@ -4,10 +4,8 @@
         }
 
         .vc {
-            margin: 1.5em 0 .55em;
-            font-size: 1.05em;
-            font-weight: 600;
-            letter-spacing: .08em
+            margin: 1.5em 0 .55em; 
+            font-weight: 600; 
         }
 
         .vr {
@@ -56,9 +54,7 @@
         }
 
         .vt {
-            flex: 1;
-            font-size: 1.12rem;
-            line-height: 1.4
+            flex: 1; 
         }
 
         .va {
