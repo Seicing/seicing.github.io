@@ -1,0 +1,106 @@
+﻿.vl {
+            font-family: inherit;
+            color: inherit
+        }
+
+        .vc {
+            margin: 1.5em 0 .55em;
+            font-size: 1.05em;
+            font-weight: 600;
+            letter-spacing: .08em
+        }
+
+        .vr {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-height: 76px;
+            padding: 12px 20px;
+            margin: 2px 0;
+            background: #f5f2eb;
+            border: 1px solid #ded9cf;
+            border-radius: 8px;
+            box-sizing: border-box
+        }
+
+        .vp {
+            flex: 0 0 52px;
+            width: 52px;
+            height: 52px;
+            padding: 0;
+            border: 2px solid #e5c47e;
+            border-radius: 50%;
+            background: #f4ecda;
+            color: #ad8845;
+            display: grid;
+            place-items: center;
+            cursor: pointer
+        }
+
+        .vp:before {
+            content: "";
+            display: block;
+            margin-left: 4px;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-left: 17px solid currentColor
+        }
+
+        .vp.p:before {
+            width: 13px;
+            height: 18px;
+            margin: 0;
+            border: 0;
+            border-left: 5px solid currentColor;
+            border-right: 5px solid currentColor
+        }
+
+        .vt {
+            flex: 1;
+            font-size: 1.12rem;
+            line-height: 1.4
+        }
+
+        .va {
+            font-weight: 600;
+            color: #ad8845;
+            min-width: 2em;
+            text-align: right
+        }
+
+        .vn {
+            margin-top: 2em;
+            padding: 12px 18px;
+            background: #f5f2eb;
+            border: 1px solid #ded9cf;
+            border-radius: 8px;
+            line-height: 2
+        }
+
+        .vn a {
+            margin-right: 1em;
+            color: inherit;
+            text-decoration: none
+        }
+
+        .vn a:hover {
+            color: #ad8845;
+            text-decoration: underline
+        }
+
+        @media(max-width:600px) {
+            .vr {
+                gap: 10px;
+                padding: 10px 12px
+            }
+
+            .vp {
+                width: 44px;
+                height: 44px;
+                flex-basis: 44px
+            }
+
+            .vt {
+                font-size: 1rem
+            }
+        } 
