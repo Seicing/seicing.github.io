@@ -1,0 +1,1646 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title data-pagefind-meta="title">帝国时代IV 语音</title>
+<style>
+    .aoe4-voice-list {
+        font-family: inherit;
+        color: inherit
+    }
+
+    .aoe4-voice-category {
+        margin: 1.5em 0 .55em;
+        font-size: 1.05em;
+        font-weight: 600;
+        letter-spacing: .08em;
+        text-transform: uppercase
+    }
+
+    .aoe4-voice-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-height: 76px;
+        padding: 12px 20px;
+        margin: 2px 0;
+        background: #f5f2eb;
+        border: 1px solid #ded9cf;
+        border-radius: 8px;
+        box-sizing: border-box
+    }
+
+    .aoe4-voice-play {
+        flex: 0 0 52px;
+        width: 52px;
+        height: 52px;
+        border: 2px solid #e5c47e;
+        border-radius: 50%;
+        background: #f4ecda;
+        color: #ad8845;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        font-size: 0
+    }
+
+    .aoe4-voice-play:before {
+        content: "";
+        display: block;
+        margin-left: 4px;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-left: 17px solid currentColor
+    }
+
+    .aoe4-voice-play.is-playing:before {
+        width: 13px;
+        height: 18px;
+        margin: 0;
+        border: 0;
+        border-left: 5px solid currentColor;
+        border-right: 5px solid currentColor
+    }
+
+    .aoe4-voice-text {
+        flex: 1;
+        font-size: 1.12rem;
+        line-height: 1.4
+    }
+
+    .aoe4-voice-age {
+        font-weight: 600;
+        color: #ad8845;
+        min-width: 2em;
+        text-align: right
+    }
+
+    @media(max-width:600px) {
+        .aoe4-voice-row {
+            gap: 10px;
+            padding: 10px 12px
+        }
+
+        .aoe4-voice-play {
+            width: 44px;
+            height: 44px;
+            flex-basis: 44px
+        }
+
+        .aoe4-voice-text {
+            font-size: 1rem
+        }
+    }
+</style>
+<link href="https://seicing.com/css/table.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar').load('https://seicing.com/js/list/list_aoe.html');
+    })
+</script>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="page_4193"></div>
+<div class="aoe4-voice-list">
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">一般命令回应</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/1f/Chinese_manatarms_acknowledge_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223648">Play</button>
+            <span class="aoe4-voice-text">知道了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9e/Chinese_manatarms_acknowledge_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223751">Play</button>
+            <span class="aoe4-voice-text">我在服從你的命令。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/19/Chinese_manatarms_acknowledge_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223744">Play</button>
+            <span class="aoe4-voice-text">我會聽從你的命令。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/ec/Chinese_manatarms_acknowledge_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223752">Play</button>
+            <span class="aoe4-voice-text">我會執行你的命令。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/1e/Chinese_manatarms_acknowledge_ihigh_cmed_05_mp3.mp3/revision/latest?cb=20230715223752">Play</button>
+            <span class="aoe4-voice-text">我已知道服從命令。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/57/Chinese_manatarms_acknowledge_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223759">Play</button>
+            <span class="aoe4-voice-text">我會按您的指令行事。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e7/Chinese_manatarms_acknowledge_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223802">Play</button>
+            <span class="aoe4-voice-text">收到指令立即行動。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/13/Chinese_manatarms_acknowledge_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223750">Play</button>
+            <span class="aoe4-voice-text">我會遵照您的指令。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d1/Chinese_manatarms_acknowledge_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223749">Play</button>
+            <span class="aoe4-voice-text">好的，我可以立刻去做。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/df/Chinese_manatarms_acknowledge_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223743">Play</button>
+            <span class="aoe4-voice-text">您的命令會被執行。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">小队命令回应</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/79/Chinese_manatarms_acknowledgegmr_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223640">Play</button>
+            <span class="aoe4-voice-text">好的。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/fc/Chinese_manatarms_acknowledgegmr_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223645">Play</button>
+            <span class="aoe4-voice-text">沒問題。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/fd/Chinese_manatarms_acknowledgegmr_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223644">Play</button>
+            <span class="aoe4-voice-text">是的。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8a/Chinese_manatarms_acknowledgegmr_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223641">Play</button>
+            <span class="aoe4-voice-text">明白。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/11/Chinese_manatarms_acknowledgegmr_ihigh_cmed_05_mp3.mp3/revision/latest?cb=20230715223649">Play</button>
+            <span class="aoe4-voice-text">這就去。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8d/Chinese_manatarms_acknowledgegmr_ihigh_cmed_06_mp3.mp3/revision/latest?cb=20230715223649">Play</button>
+            <span class="aoe4-voice-text">知道了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5a/Chinese_manatarms_acknowledgegmr_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223641">Play</button>
+            <span class="aoe4-voice-text">好的。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/89/Chinese_manatarms_acknowledgegmr_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223648">Play</button>
+            <span class="aoe4-voice-text">沒問題。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/06/Chinese_manatarms_acknowledgegmr_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223642">Play</button>
+            <span class="aoe4-voice-text"></span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9d/Chinese_manatarms_acknowledgegmr_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223646">Play</button>
+            <span class="aoe4-voice-text">明白。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/69/Chinese_manatarms_acknowledgegmr_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223648">Play</button>
+            <span class="aoe4-voice-text">這就去。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e1/Chinese_manatarms_acknowledgegmr_ihigh_chigh_06_mp3.mp3/revision/latest?cb=20230715223649">Play</button>
+            <span class="aoe4-voice-text">知道了。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">单个单位命令·选择</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bd/Chinese_manatarms_select_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223709">Play</button>
+            <span class="aoe4-voice-text">您有何命令？</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a7/Chinese_manatarms_select_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223714">Play</button>
+            <span class="aoe4-voice-text">讓我去幹活吧。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/29/Chinese_manatarms_select_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223733">Play</button>
+            <span class="aoe4-voice-text">您意願是什麼？</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/22/Chinese_manatarms_select_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223808">Play</button>
+            <span class="aoe4-voice-text">已準備好流血與戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9f/Chinese_manatarms_select_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223759">Play</button>
+            <span class="aoe4-voice-text">正在等待命令與榮耀。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/cf/Chinese_manatarms_select_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223736">Play</button>
+            <span class="aoe4-voice-text">讓我去戰鬥吧</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/3f/Chinese_manatarms_select_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223723">Play</button>
+            <span class="aoe4-voice-text">讓我前進吧。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/81/Chinese_manatarms_select_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223807">Play</button>
+            <span class="aoe4-voice-text">聽候差遣，我準備好了。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">单个单位命令·移动</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5c/Chinese_manatarms_movesu_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223736">Play</button>
+            <span class="aoe4-voice-text">正在向戰鬥進發。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/16/Chinese_manatarms_movesu_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223730">Play</button>
+            <span class="aoe4-voice-text">向勝利進軍</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/3c/Chinese_manatarms_movesu_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223652">Play</button>
+            <span class="aoe4-voice-text">移動命令。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bf/Chinese_manatarms_movesu_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223746">Play</button>
+            <span class="aoe4-voice-text">我按照您的指揮前進。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/ad/Chinese_manatarms_movesu_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223700">Play</button>
+            <span class="aoe4-voice-text">走向榮耀。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/10/Chinese_manatarms_movesu_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223741">Play</button>
+            <span class="aoe4-voice-text">去迎接我的命運。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4a/Chinese_manatarms_movesu_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223725">Play</button>
+            <span class="aoe4-voice-text">按照命令前往。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9f/Chinese_manatarms_movesu_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223803">Play</button>
+            <span class="aoe4-voice-text">前進，向戰鬥進軍。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">单个单位命令·攻击</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4d/Chinese_manatarms_attack_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223657">Play</button>
+            <span class="aoe4-voice-text">擊退敵人。*</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/0c/Chinese_manatarms_attack_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223758">Play</button>
+            <span class="aoe4-voice-text">我依您的命令殺戮。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d5/Chinese_manatarms_attack_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223745">Play</button>
+            <span class="aoe4-voice-text">該敵人已死亡。*</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bb/Chinese_manatarms_attack_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223738">Play</button>
+            <span class="aoe4-voice-text">我會狩獵敵人。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d9/Chinese_manatarms_attack_ihigh_cmed_05_mp3.mp3/revision/latest?cb=20230715223804">Play</button>
+            <span class="aoe4-voice-text">我的攻擊會摧毀他們。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e2/Chinese_manatarms_attack_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223806">Play</button>
+            <span class="aoe4-voice-text">沒有敵人可以活著離開。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8d/Chinese_manatarms_attack_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223806">Play</button>
+            <span class="aoe4-voice-text">摧毁我們邪惡的敵人。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/25/Chinese_manatarms_attack_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223807">Play</button>
+            <span class="aoe4-voice-text">該地的敵人已死亡，攻擊！*</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/46/Chinese_manatarms_attack_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223808">Play</button>
+            <span class="aoe4-voice-text">美德會強健我的臂膀。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/84/Chinese_manatarms_attack_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223810">Play</button>
+            <span class="aoe4-voice-text">對您大義的信念即是我的盔甲，。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">单个单位命令·移动攻击</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/ad/Chinese_manatarms_attackmovesu_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223744">Play</button>
+            <span class="aoe4-voice-text">前進！小心敵人。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c8/Chinese_manatarms_attackmovesu_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223726">Play</button>
+            <span class="aoe4-voice-text">向敵人前進。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a2/Chinese_manatarms_attackmovesu_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223806">Play</button>
+            <span class="aoe4-voice-text">衝向戰場，衝向榮耀。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/6e/Chinese_manatarms_attackmovesu_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223803">Play</button>
+            <span class="aoe4-voice-text">前去挑起一場戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/91/Chinese_manatarms_attackmovesu_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223804">Play</button>
+            <span class="aoe4-voice-text">前進！我能聞到敵人的味道。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4a/Chinese_manatarms_attackmovesu_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223805">Play</button>
+            <span class="aoe4-voice-text">尋找敵人，進行屠殺。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/27/Chinese_manatarms_attackmovesu_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223758">Play</button>
+            <span class="aoe4-voice-text">正在向著敵人進發。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c2/Chinese_manatarms_attackmovesu_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223756">Play</button>
+            <span class="aoe4-voice-text">行進中，正在等待敵人。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">同类单位小队命令·选择</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4f/Chinese_manatarms_selectsametypegc_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223801">Play</button>
+            <span class="aoe4-voice-text">士兵已做好戰鬥準備</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/ae/Chinese_manatarms_selectsametypegc_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223720">Play</button>
+            <span class="aoe4-voice-text">大家都準備好了</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/60/Chinese_manatarms_selectsametypegc_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223734">Play</button>
+            <span class="aoe4-voice-text">重騎兵等待中。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/b1/Chinese_manatarms_selectsametypegc_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223806">Play</button>
+            <span class="aoe4-voice-text">士兵已做好行動準備。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/63/Chinese_manatarms_selectsametypegc_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223806">Play</button>
+            <span class="aoe4-voice-text">您的士兵已做好戰鬥準備。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/83/Chinese_manatarms_selectsametypegc_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223804">Play</button>
+            <span class="aoe4-voice-text">我們隨時準備接受指揮</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4c/Chinese_manatarms_selectsametypegc_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223811">Play</button>
+            <span class="aoe4-voice-text">榮耀和勝利在等著我們兄弟們。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bf/Chinese_manatarms_selectsametypegc_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223801">Play</button>
+            <span class="aoe4-voice-text">士兵，準備履行職責。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">同类单位小队命令·移动攻击</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5f/Chinese_manatarms_movesametypegc_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223811">Play</button>
+            <span class="aoe4-voice-text">還有土地需要探索，重騎兵。*</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/92/Chinese_manatarms_movesametypegc_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223743">Play</button>
+            <span class="aoe4-voice-text">重騎兵我們出發了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/b3/Chinese_manatarms_movesametypegc_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223731">Play</button>
+            <span class="aoe4-voice-text">我們正在前進。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/3f/Chinese_manatarms_movesametypegc_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223758">Play</button>
+            <span class="aoe4-voice-text">前往目的地，重騎兵。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/f3/Chinese_manatarms_movesametypegc_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223802">Play</button>
+            <span class="aoe4-voice-text">來吧，是時候散散步了</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/87/Chinese_manatarms_movesametypegc_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">重騎兵，出發！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/61/Chinese_manatarms_movesametypegc_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223757">Play</button>
+            <span class="aoe4-voice-text">時候出發了，士兵！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/78/Chinese_manatarms_movesametypegc_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223805">Play</button>
+            <span class="aoe4-voice-text">&#x27; 04 又該出發了，重騎兵。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">同类单位小队命令·攻击</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/79/Chinese_manatarms_attacksametypegc_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223742">Play</button>
+            <span class="aoe4-voice-text">攻擊，重騎兵。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/fa/Chinese_manatarms_attacksametypegc_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223645">Play</button>
+            <span class="aoe4-voice-text">戰吧</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/19/Chinese_manatarms_attacksametypegc_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223808">Play</button>
+            <span class="aoe4-voice-text">狠狠教訓他們一頓，兄弟們！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/b4/Chinese_manatarms_attacksametypegc_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223808">Play</button>
+            <span class="aoe4-voice-text">攻擊！沒有寬恕可給。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/12/Chinese_manatarms_attacksametypegc_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223801">Play</button>
+            <span class="aoe4-voice-text">重騎兵，衝向敵人吧！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/76/Chinese_manatarms_attacksametypegc_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223810">Play</button>
+            <span class="aoe4-voice-text">前進！讓他們看看你的厲害。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·选择</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/0e/Chinese_manatarms_selectgc_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223745">Play</button>
+            <span class="aoe4-voice-text">你們知道接下來會怎樣。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/0e/Chinese_manatarms_selectgc_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223741">Play</button>
+            <span class="aoe4-voice-text">準備行指令。*</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9c/Chinese_manatarms_selectgc_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">安靜！命令來了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/38/Chinese_manatarms_selectgc_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223756">Play</button>
+            <span class="aoe4-voice-text">不要瞌睡了，有命令了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/16/Chinese_manatarms_selectgc_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223808">Play</button>
+            <span class="aoe4-voice-text">準備行動，兄弟們，行指令。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/32/Chinese_manatarms_selectgc_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223802">Play</button>
+            <span class="aoe4-voice-text">準備好，上面下命令了。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c8/Chinese_manatarms_selectgc_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223745">Play</button>
+            <span class="aoe4-voice-text">士兵們，服從命令。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/44/Chinese_manatarms_selectgc_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223805">Play</button>
+            <span class="aoe4-voice-text">命令來了，這回很有趣。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·移动</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/05/Chinese_manatarms_movegc_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">是時候出發了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/25/Chinese_manatarms_movegc_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223715">Play</button>
+            <span class="aoe4-voice-text">不要懶了，走！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/ed/Chinese_manatarms_movegc_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223701">Play</button>
+            <span class="aoe4-voice-text">拿起武器。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/97/Chinese_manatarms_movegc_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223658">Play</button>
+            <span class="aoe4-voice-text">邁開步子。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/2b/Chinese_manatarms_movegc_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223730">Play</button>
+            <span class="aoe4-voice-text">向榮耀前進。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9b/Chinese_manatarms_movegc_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223807">Play</button>
+            <span class="aoe4-voice-text">出發，讓我們活動一下腿腳。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d9/Chinese_manatarms_movegc_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223810">Play</button>
+            <span class="aoe4-voice-text">呼吸到新鮮空氣，走路真是愉快。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9f/Chinese_manatarms_movegc_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223810">Play</button>
+            <span class="aoe4-voice-text">我們拿著軍餉，不是為了傻站著。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·移动攻击</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/79/Chinese_manatarms_attackmovegc_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223749">Play</button>
+            <span class="aoe4-voice-text">動起來，拿上裝備。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/52/Chinese_manatarms_attackmovegc_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223751">Play</button>
+            <span class="aoe4-voice-text">找到死與殺死之人。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e8/Chinese_manatarms_attackmovegc_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223711">Play</button>
+            <span class="aoe4-voice-text">準備好武器。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/44/Chinese_manatarms_attackmovegc_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223800">Play</button>
+            <span class="aoe4-voice-text">敵人需要殺戮，前進！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/ed/Chinese_manatarms_attackmovegc_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223752">Play</button>
+            <span class="aoe4-voice-text">動起來準備戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a9/Chinese_manatarms_attackmovegc_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223805">Play</button>
+            <span class="aoe4-voice-text">拿起武器開始行軍</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/df/Chinese_manatarms_attackmovegc_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223809">Play</button>
+            <span class="aoe4-voice-text">對麻煩早有準備，走吧！弟兄們！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5b/Chinese_manatarms_attackmovegc_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223755">Play</button>
+            <span class="aoe4-voice-text">武器就緒，前進！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·变换阵型</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/86/Chinese_manatarms_changeformation_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223752">Play</button>
+            <span class="aoe4-voice-text">正在變換至新的陣型。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/fa/Chinese_manatarms_changeformation_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223739">Play</button>
+            <span class="aoe4-voice-text">馬上變換為新的陣型。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/f3/Chinese_manatarms_changeformation_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223738">Play</button>
+            <span class="aoe4-voice-text">我將立即依令變換。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d1/Chinese_manatarms_changeformation_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223713">Play</button>
+            <span class="aoe4-voice-text">我正在變換陣型。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/ca/Chinese_manatarms_changeformation_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223731">Play</button>
+            <span class="aoe4-voice-text">遵命，我將變換陣型。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/28/Chinese_manatarms_changeformation_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223711">Play</button>
+            <span class="aoe4-voice-text">我將變換陣型。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·驻扎</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c1/Chinese_manatarms_garrison_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223655">Play</button>
+            <span class="aoe4-voice-text">馬上進去。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4c/Chinese_manatarms_garrison_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223658">Play</button>
+            <span class="aoe4-voice-text">奉命進去 。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/3e/Chinese_manatarms_garrison_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223719">Play</button>
+            <span class="aoe4-voice-text">我會藏身其中。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/22/Chinese_manatarms_garrison_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223722">Play</button>
+            <span class="aoe4-voice-text">不受天氣影響。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/36/Chinese_manatarms_garrison_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223723">Play</button>
+            <span class="aoe4-voice-text">頭頂上有屋頂了。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/00/Chinese_manatarms_garrison_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223736">Play</button>
+            <span class="aoe4-voice-text">我這就佔領此地。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·坚守</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c9/Chinese_manatarms_hold_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223731">Play</button>
+            <span class="aoe4-voice-text">我正在堅守陣地。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8f/Chinese_manatarms_hold_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223724">Play</button>
+            <span class="aoe4-voice-text">我將在此堅守。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/eb/Chinese_manatarms_hold_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223758">Play</button>
+            <span class="aoe4-voice-text">我將在此處堅守陣地。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/7e/Chinese_manatarms_hold_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223721">Play</button>
+            <span class="aoe4-voice-text">我將堅守此處。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·停止</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c1/Chinese_manatarms_stop_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223656">Play</button>
+            <span class="aoe4-voice-text">我已停止。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/40/Chinese_manatarms_stop_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223757">Play</button>
+            <span class="aoe4-voice-text">遵照命令，暫停行動。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/46/Chinese_manatarms_stop_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223733">Play</button>
+            <span class="aoe4-voice-text">按照命令停止中。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8e/Chinese_manatarms_stop_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223803">Play</button>
+            <span class="aoe4-voice-text">奉您指揮，正在停止。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">混合单位小队命令·建造攻城器</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5b/Chinese_manatarms_structurebuild_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223737">Play</button>
+            <span class="aoe4-voice-text">好的，我可以建造。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/3a/Chinese_manatarms_structurebuild_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223734">Play</button>
+            <span class="aoe4-voice-text">是的，我這就建造。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/06/Chinese_manatarms_structurebuild_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223741">Play</button>
+            <span class="aoe4-voice-text">現在就開始幹活。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9b/Chinese_manatarms_structurebuild_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223807">Play</button>
+            <span class="aoe4-voice-text">按照您的要求，開始施工。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 进军</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/7e/Chinese_manatarms_marchingidle_inorm_cmed_01_mp3.mp3/revision/latest?cb=20230715223756">Play</button>
+            <span class="aoe4-voice-text">又生鏽了，需要清理。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/55/Chinese_manatarms_marchingidle_inorm_cmed_02_mp3.mp3/revision/latest?cb=20230715223748">Play</button>
+            <span class="aoe4-voice-text">冷水都把我凍僵了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c1/Chinese_manatarms_marchingidle_inorm_cmed_03_mp3.mp3/revision/latest?cb=20230715223721">Play</button>
+            <span class="aoe4-voice-text">有人聽到那個鳥嗎？</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/12/Chinese_manatarms_marchingidle_inorm_cmed_04_mp3.mp3/revision/latest?cb=20230715223707">Play</button>
+            <span class="aoe4-voice-text">誰有食物？</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/14/Chinese_manatarms_marchingidle_inorm_cmed_05_mp3.mp3/revision/latest?cb=20230715223811">Play</button>
+            <span class="aoe4-voice-text">下次擊殺，我要取走他的靴子</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a1/Chinese_manatarms_marchingidle_inorm_chigh_01_mp3.mp3/revision/latest?cb=20230715223754">Play</button>
+            <span class="aoe4-voice-text">行軍遠好過戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9d/Chinese_manatarms_marchingidle_inorm_chigh_02_mp3.mp3/revision/latest?cb=20230715223811">Play</button>
+            <span class="aoe4-voice-text">他父親進去了，所以我快速離開並歸隊。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d0/Chinese_manatarms_marchingidle_inorm_chigh_03_mp3.mp3/revision/latest?cb=20230715223811">Play</button>
+            <span class="aoe4-voice-text">哎！沒人提過，多半是等待。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bc/Chinese_manatarms_marchingidle_inorm_chigh_04_mp3.mp3/revision/latest?cb=20230715223801">Play</button>
+            <span class="aoe4-voice-text">我喜歡沒人是屠殺我的時候。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/db/Chinese_manatarms_marchingidle_inorm_chigh_05_mp3.mp3/revision/latest?cb=20230715223810">Play</button>
+            <span class="aoe4-voice-text">我喜歡帥氣的軍裝，可惜這套不是</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 作战</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/6e/Chinese_manatarms_ambientcombat_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223659">Play</button>
+            <span class="aoe4-voice-text">擊退他們。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d9/Chinese_manatarms_ambientcombat_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223659">Play</button>
+            <span class="aoe4-voice-text">繼續戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/f3/Chinese_manatarms_ambientcombat_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223732">Play</button>
+            <span class="aoe4-voice-text">我會殺死你。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bd/Chinese_manatarms_ambientcombat_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223809">Play</button>
+            <span class="aoe4-voice-text">你可以看見他們的恐懼。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/06/Chinese_manatarms_ambientcombat_ihigh_cmed_05_mp3.mp3/revision/latest?cb=20230715223715">Play</button>
+            <span class="aoe4-voice-text">保護好自己。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9f/Chinese_manatarms_ambientcombat_ihigh_cmed_06_mp3.mp3/revision/latest?cb=20230715223710">Play</button>
+            <span class="aoe4-voice-text">碾碎敵人。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/87/Chinese_manatarms_ambientcombat_ihigh_cmed_01-imported_mp3.mp3/revision/latest?cb=20230715223800">Play</button>
+            <span class="aoe4-voice-text">i 不給他們任何機會。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/45/Chinese_manatarms_ambientcombat_ihigh_cmed_02-imported_mp3.mp3/revision/latest?cb=20230715223728">Play</button>
+            <span class="aoe4-voice-text">i 誰也不准撤退。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/9a/Chinese_manatarms_ambientcombat_ihigh_cmed_03-imported_mp3.mp3/revision/latest?cb=20230715223721">Play</button>
+            <span class="aoe4-voice-text">i 他們會潰散的</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/25/Chinese_manatarms_ambientcombat_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223757">Play</button>
+            <span class="aoe4-voice-text">讓你的武器變鈍吧。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/38/Chinese_manatarms_ambientcombat_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223806">Play</button>
+            <span class="aoe4-voice-text">我們的敵人唯有一死。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/23/Chinese_manatarms_ambientcombat_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223759">Play</button>
+            <span class="aoe4-voice-text">把他們送進棺材。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/1c/Chinese_manatarms_ambientcombat_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223705">Play</button>
+            <span class="aoe4-voice-text">拋下憐憫。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/32/Chinese_manatarms_ambientcombat_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223759">Play</button>
+            <span class="aoe4-voice-text">兄弟們，繼續戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4a/Chinese_manatarms_ambientcombat_ihigh_chigh_06_mp3.mp3/revision/latest?cb=20230715223807">Play</button>
+            <span class="aoe4-voice-text">戰到奄奄一息為止。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e5/Chinese_manatarms_ambientcombat_ihigh_chigh_01-imported_mp3.mp3/revision/latest?cb=20230715223651">Play</button>
+            <span class="aoe4-voice-text">i 瞄準他們。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a4/Chinese_manatarms_ambientcombat_ihigh_chigh_02-imported_mp3.mp3/revision/latest?cb=20230715223737">Play</button>
+            <span class="aoe4-voice-text">i 懷著怒火戰鬥吧</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/b7/Chinese_manatarms_ambientcombat_ihigh_chigh_03-imported_mp3.mp3/revision/latest?cb=20230715223737">Play</button>
+            <span class="aoe4-voice-text">i 他們無法戰勝我們。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 发现敌人</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4b/Chinese_manatarms_enemyspotted_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223759">Play</button>
+            <span class="aoe4-voice-text">有敵人！惡臭味！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/ec/Chinese_manatarms_enemyspotted_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223728">Play</button>
+            <span class="aoe4-voice-text">我看到了敵人。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d1/Chinese_manatarms_enemyspotted_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">敵人就在附近。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/2e/Chinese_manatarms_enemyspotted_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223805">Play</button>
+            <span class="aoe4-voice-text">啊哈！我看到了敵人。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d2/Chinese_manatarms_enemyspotted_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223701">Play</button>
+            <span class="aoe4-voice-text">敵人在這。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/2c/Chinese_manatarms_enemyspotted_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223744">Play</button>
+            <span class="aoe4-voice-text">我們找到了敵人。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 摧毁目标</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/47/Chinese_manatarms_targetdestroyed_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223731">Play</button>
+            <span class="aoe4-voice-text">敵人已倒下。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/7b/Chinese_manatarms_targetdestroyed_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223703">Play</button>
+            <span class="aoe4-voice-text">光榮的勝利。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5b/Chinese_manatarms_targetdestroyed_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223753">Play</button>
+            <span class="aoe4-voice-text">我活著只為戰鬥。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/70/Chinese_manatarms_targetdestroyed_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223747">Play</button>
+            <span class="aoe4-voice-text">我是個偉大的戰士。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/60/Chinese_manatarms_targetdestroyed_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223756">Play</button>
+            <span class="aoe4-voice-text">榮光照耀著我們。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/2e/Chinese_manatarms_targetdestroyed_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223812">Play</button>
+            <span class="aoe4-voice-text">哈！他現在的氣味比活著時還要臭。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/81/Chinese_manatarms_targetdestroyed_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223809">Play</button>
+            <span class="aoe4-voice-text">勝利！我們粉碎了他們。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/ba/Chinese_manatarms_targetdestroyed_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223804">Play</button>
+            <span class="aoe4-voice-text">我會晚些再搜刮尸體</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 受到攻击</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/7e/Chinese_manatarms_underattack_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223805">Play</button>
+            <span class="aoe4-voice-text">受到攻擊，危險！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/56/Chinese_manatarms_underattack_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223801">Play</button>
+            <span class="aoe4-voice-text">敵軍射擊了，預備！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e7/Chinese_manatarms_underattack_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">我們被瞄準了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/07/Chinese_manatarms_underattack_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223753">Play</button>
+            <span class="aoe4-voice-text">我們找到的攻擊。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/7e/Chinese_manatarms_underattack_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223750">Play</button>
+            <span class="aoe4-voice-text">敵人的射擊很準</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/cc/Chinese_manatarms_underattack_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223750">Play</button>
+            <span class="aoe4-voice-text">我們怎麼會被攻擊</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 建造攻城器后</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/6c/Chinese_manatarms_reactproud_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223648">Play</button>
+            <span class="aoe4-voice-text">完成了。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/da/Chinese_manatarms_reactproud_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223729">Play</button>
+            <span class="aoe4-voice-text">事情已經完成。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8e/Chinese_manatarms_reactproud_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223730">Play</button>
+            <span class="aoe4-voice-text">任務已經完成。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bd/Chinese_manatarms_reactproud_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223714">Play</button>
+            <span class="aoe4-voice-text">事情已經做完。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">环境语音 · 庆祝</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/02/Chinese_manatarms_celebrate_inorm_cmed_01_mp3.mp3/revision/latest?cb=20230715223712">Play</button>
+            <span class="aoe4-voice-text">萬歲！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/b3/Chinese_manatarms_celebrate_inorm_cmed_02_mp3.mp3/revision/latest?cb=20230715223715">Play</button>
+            <span class="aoe4-voice-text">為人民而戰</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c5/Chinese_manatarms_celebrate_inorm_cmed_03_mp3.mp3/revision/latest?cb=20230715223709">Play</button>
+            <span class="aoe4-voice-text">衝向勝利</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/91/Chinese_manatarms_celebrate_inorm_cmed_04_mp3.mp3/revision/latest?cb=20230715223654">Play</button>
+            <span class="aoe4-voice-text">幹得漂亮。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/36/Chinese_manatarms_celebrate_inorm_chigh_01_mp3.mp3/revision/latest?cb=20230715223642">Play</button>
+            <span class="aoe4-voice-text">萬歲！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/79/Chinese_manatarms_celebrate_inorm_chigh_02_mp3.mp3/revision/latest?cb=20230715223706">Play</button>
+            <span class="aoe4-voice-text">為人民而戰。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/69/Chinese_manatarms_celebrate_inorm_chigh_03_mp3.mp3/revision/latest?cb=20230715223713">Play</button>
+            <span class="aoe4-voice-text">衝向勝利。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/7/7c/Chinese_manatarms_celebrate_inorm_chigh_04_mp3.mp3/revision/latest?cb=20230715223657">Play</button>
+            <span class="aoe4-voice-text">幹得漂亮。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/cd/Chinese_manatarms_celebrate_inorm_cnone_01_mp3.mp3/revision/latest?cb=20230715223647">Play</button>
+            <span class="aoe4-voice-text">哈！</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/af/Chinese_manatarms_celebrate_inorm_cnone_02_mp3.mp3/revision/latest?cb=20230715223646">Play</button>
+            <span class="aoe4-voice-text">哈哈！</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e7/Chinese_manatarms_celebrate_inorm_cnone_03_mp3.mp3/revision/latest?cb=20230715223726">Play</button>
+            <span class="aoe4-voice-text">齁齁？齁齁！</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/2/22/Chinese_manatarms_celebrate_inorm_cnone_04_mp3.mp3/revision/latest?cb=20230715223724">Play</button>
+            <span class="aoe4-voice-text">衝向勝利。</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d2/Chinese_manatarms_celebrate_inorm_cnone_05_mp3.mp3/revision/latest?cb=20230715223715">Play</button>
+            <span class="aoe4-voice-text">幹得漂亮。</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 狩猎</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d4/Chinese_manatarms_resourcehunt_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223746">Play</button>
+            <span class="aoe4-voice-text">正在獵捕那隻動物。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/9/90/Chinese_manatarms_resourcehunt_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223714">Play</button>
+            <span class="aoe4-voice-text">我會去獵捕它。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/aa/Chinese_manatarms_resourcehunt_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223740">Play</button>
+            <span class="aoe4-voice-text">正在獵捕那隻獵物。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/0c/Chinese_manatarms_resourcehunt_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223752">Play</button>
+            <span class="aoe4-voice-text">我現在就去獵捕那隻動物。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 冲突</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/19/Chinese_manatarms_engage_ihigh_cmed_01_mp3.mp3/revision/latest?cb=20230715223730">Play</button>
+            <span class="aoe4-voice-text">哈！死吧。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/ea/Chinese_manatarms_engage_ihigh_cmed_02_mp3.mp3/revision/latest?cb=20230715223703">Play</button>
+            <span class="aoe4-voice-text">嚐嚐這個！</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/30/Chinese_manatarms_engage_ihigh_cmed_03_mp3.mp3/revision/latest?cb=20230715223703">Play</button>
+            <span class="aoe4-voice-text">送你上西天。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e9/Chinese_manatarms_engage_ihigh_cmed_04_mp3.mp3/revision/latest?cb=20230715223747">Play</button>
+            <span class="aoe4-voice-text">不勝利，毋寧死。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/41/Chinese_manatarms_engage_ihigh_cmed_05_mp3.mp3/revision/latest?cb=20230715223653">Play</button>
+            <span class="aoe4-voice-text">為了榮耀。</span>
+            <span class="aoe4-voice-age">Ⅲ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/cb/Chinese_manatarms_engage_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223702">Play</button>
+            <span class="aoe4-voice-text">哈！死吧。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/cc/Chinese_manatarms_engage_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223653">Play</button>
+            <span class="aoe4-voice-text">嚐嚐這個！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/48/Chinese_manatarms_engage_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223700">Play</button>
+            <span class="aoe4-voice-text">送你上西天。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/1/1c/Chinese_manatarms_engage_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223743">Play</button>
+            <span class="aoe4-voice-text">不勝利，毋寧死。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/d/d6/Chinese_manatarms_engage_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223655">Play</button>
+            <span class="aoe4-voice-text">為了榮耀。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/64/Chinese_manatarms_engage_ihigh_cnone_01_mp3.mp3/revision/latest?cb=20230715223706">Play</button>
+            <span class="aoe4-voice-text">哈！死吧。</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/bb/Chinese_manatarms_engage_ihigh_cnone_02_mp3.mp3/revision/latest?cb=20230715223706">Play</button>
+            <span class="aoe4-voice-text">嚐嚐這個！</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e4/Chinese_manatarms_engage_ihigh_cnone_03_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">送你上西天。</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4e/Chinese_manatarms_engage_ihigh_cnone_04_mp3.mp3/revision/latest?cb=20230715223754">Play</button>
+            <span class="aoe4-voice-text">不勝利，毋寧死。</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/58/Chinese_manatarms_engage_ihigh_cnone_05_mp3.mp3/revision/latest?cb=20230715223717">Play</button>
+            <span class="aoe4-voice-text">為了榮耀。</span>
+            <span class="aoe4-voice-age"></span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 选择手推炮</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/ee/Chinese_manatarms_selectbombard_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223702">Play</button>
+            <span class="aoe4-voice-text">炮火已就緒。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/6/6c/Chinese_manatarms_selectbombard_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223742">Play</button>
+            <span class="aoe4-voice-text">我們，即是炮火。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 设置</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e3/Chinese_manatarms_setup_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223734">Play</button>
+            <span class="aoe4-voice-text">正在準備開火。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/b/b9/Chinese_manatarms_setup_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223708">Play</button>
+            <span class="aoe4-voice-text">即將發射。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/e/e2/Chinese_manatarms_setup_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223728">Play</button>
+            <span class="aoe4-voice-text">正在準備彈藥。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 拆解</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/f/fa/Chinese_manatarms_teardown_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223652">Play</button>
+            <span class="aoe4-voice-text">馬上移動。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/01/Chinese_manatarms_teardown_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223729">Play</button>
+            <span class="aoe4-voice-text">正在準備出發。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/3/3e/Chinese_manatarms_teardown_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223716">Play</button>
+            <span class="aoe4-voice-text">準備移動。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 武器瞄准</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/0/03/Chinese_manatarms_weaponaim_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223727">Play</button>
+            <span class="aoe4-voice-text">瞄準，穩住！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/8c/Chinese_manatarms_weaponaim_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223747">Play</button>
+            <span class="aoe4-voice-text">千萬仔細瞄準。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c8/Chinese_manatarms_weaponaim_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223750">Play</button>
+            <span class="aoe4-voice-text">選擇目標，士兵！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a0/Chinese_manatarms_weaponaim_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223706">Play</button>
+            <span class="aoe4-voice-text">武器？瞄準。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/a/a4/Chinese_manatarms_weaponaim_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223648">Play</button>
+            <span class="aoe4-voice-text">瞄準。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+    <section class="aoe4-voice-group">
+        <h3 class="aoe4-voice-category">语音 · 武器发射</h3>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/c/c0/Chinese_manatarms_weaponfire_ihigh_chigh_01_mp3.mp3/revision/latest?cb=20230715223758">Play</button>
+            <span class="aoe4-voice-text">開火，勇敢的士兵！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/5a/Chinese_manatarms_weaponfire_ihigh_chigh_02_mp3.mp3/revision/latest?cb=20230715223751">Play</button>
+            <span class="aoe4-voice-text">放箭！低位瞄準。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/5/50/Chinese_manatarms_weaponfire_ihigh_chigh_03_mp3.mp3/revision/latest?cb=20230715223809">Play</button>
+            <span class="aoe4-voice-text">釋放出地獄之火吧士兵。</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/8/83/Chinese_manatarms_weaponfire_ihigh_chigh_04_mp3.mp3/revision/latest?cb=20230715223812">Play</button>
+            <span class="aoe4-voice-text">放！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+        <div class="aoe4-voice-row">
+            <button class="aoe4-voice-play" type="button" aria-label="Play voice"
+                data-audio="https://static.wikia.nocookie.net/ageofempires/images/4/4f/Chinese_manatarms_weaponfire_ihigh_chigh_05_mp3.mp3/revision/latest?cb=20230715223650">Play</button>
+            <span class="aoe4-voice-text">放箭！</span>
+            <span class="aoe4-voice-age">Ⅳ</span>
+        </div>
+    </section>
+</div></div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+        (() => {
+            const root = document.currentScript.closest(".aoe4-voice-list");
+            if (!root || root.dataset.bound) return; root.dataset.bound = "1";
+            let currentAudio = null, currentButton = null;
+            root.addEventListener("click", async event => {
+                const button = event.target.closest(".aoe4-voice-play"); if (!button) return;
+                if (currentButton === button && currentAudio && !currentAudio.paused) { currentAudio.pause(); button.classList.remove("is-playing"); return; }
+                if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; }
+                if (currentButton) currentButton.classList.remove("is-playing");
+                currentAudio = new Audio(button.dataset.audio); currentButton = button;
+                currentAudio.addEventListener("ended", () => { button.classList.remove("is-playing"); currentAudio = null; currentButton = null; }, { once: true });
+                button.classList.add("is-playing");
+                try { await currentAudio.play(); } catch (error) { button.classList.remove("is-playing"); console.error("Voice playback failed:", error); }
+            });
+        })();
+</script>
+
+</html>
