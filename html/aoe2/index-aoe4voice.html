@@ -17,10 +17,7 @@
 
     .aoe4-voice-category {
         margin: 1.5em 0 .55em;
-        font-size: 1.05em;
         font-weight: 600;
-        letter-spacing: .08em;
-        text-transform: uppercase
     }
 
     .aoe4-voice-row {
@@ -54,6 +51,7 @@
         content: "";
         display: block;
         margin-left: 4px;
+        margin-top: 8px;
         border-top: 11px solid transparent;
         border-bottom: 11px solid transparent;
         border-left: 17px solid currentColor
@@ -70,8 +68,6 @@
 
     .aoe4-voice-text {
         flex: 1;
-        font-size: 1.12rem;
-        line-height: 1.4
     }
 
     .aoe4-voice-age {
@@ -1627,18 +1623,58 @@
 
 <script>
         (() => {
-            const root = document.currentScript.closest(".aoe4-voice-list");
-            if (!root || root.dataset.bound) return; root.dataset.bound = "1";
-            let currentAudio = null, currentButton = null;
+            const root = document.querySelector(".aoe4-voice-list");
+            if (!root || root.dataset.bound) return;
+            root.dataset.bound = "1";
+
+            let currentAudio = null;
+            let currentButton = null;
+
             root.addEventListener("click", async event => {
-                const button = event.target.closest(".aoe4-voice-play"); if (!button) return;
-                if (currentButton === button && currentAudio && !currentAudio.paused) { currentAudio.pause(); button.classList.remove("is-playing"); return; }
-                if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; }
-                if (currentButton) currentButton.classList.remove("is-playing");
-                currentAudio = new Audio(button.dataset.audio); currentButton = button;
-                currentAudio.addEventListener("ended", () => { button.classList.remove("is-playing"); currentAudio = null; currentButton = null; }, { once: true });
+                const button = event.target.closest(".aoe4-voice-play");
+                if (!button) return;
+
+                if (currentButton === button && currentAudio && !currentAudio.paused) {
+                    currentAudio.pause();
+                    button.classList.remove("is-playing");
+                    return;
+                }
+
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+
+                if (currentButton) {
+                    currentButton.classList.remove("is-playing");
+                }
+
+                currentAudio = new Audio(button.dataset.audio);
+                currentButton = button;
+
+                const audio = currentAudio;
+
+                audio.addEventListener("ended", () => {
+                    button.classList.remove("is-playing");
+                    if (currentAudio === audio) {
+                        currentAudio = null;
+                        currentButton = null;
+                    }
+                }, { once: true });
+
                 button.classList.add("is-playing");
-                try { await currentAudio.play(); } catch (error) { button.classList.remove("is-playing"); console.error("Voice playback failed:", error); }
+
+                try {
+                    await audio.play();
+                } catch (error) {
+                    button.classList.remove("is-playing");
+                    console.error("Voice playback failed:", error);
+
+                    if (currentAudio === audio) {
+                        currentAudio = null;
+                        currentButton = null;
+                    }
+                }
             });
         })();
 </script>
