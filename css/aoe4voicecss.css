@@ -15,8 +15,8 @@
             min-height: 76px;
             padding: 12px 20px;
             margin: 2px 0;
-            background: #f5f2eb;
-            border: 1px solid #ded9cf;
+            background: var(--bg-body-color);
+            border: var(--hr-color);
             border-radius: 8px;
             box-sizing: border-box
         }
@@ -26,10 +26,10 @@
             width: 52px;
             height: 52px;
             padding: 0;
-            border: 2px solid #e5c47e;
+            border: 2px solid var(--text-sidebar-a);
             border-radius: 50%;
-            background: #f4ecda;
-            color: #ad8845;
+            background: var(--tablet-html-bg);
+            color: var(--text-sidebar-a);
             display: grid;
             place-items: center;
             cursor: pointer
@@ -59,7 +59,7 @@
 
         .va {
             font-weight: 600;
-            color: #ad8845;
+            color: var(--text-sidebar-a);
             min-width: 2em;
             text-align: right
         }
@@ -80,7 +80,7 @@
         }
 
         .vn a:hover {
-            color: #ad8845;
+            color: var(--text-sidebar-a);
             text-decoration: underline
         }
 
