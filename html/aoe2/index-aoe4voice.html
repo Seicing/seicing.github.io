@@ -16,6 +16,40 @@
         $('#sidebar').load('https://seicing.com/js/list/list_aoe.html');
     })
 </script>
+<style>
+    .civ-voice-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+    }
+
+    .civ-flag {
+        width: 70px;
+        min-width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .civ-flag img {
+        width: 70px;
+        height: auto;
+    }
+
+    .civ-units {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .civ-units img {
+        width: 40px;
+        height: auto;
+        display: block;
+    }
+</style>
 </head>
 
 <body id='scroll-2'>
@@ -56,21 +90,30 @@
                         <div style="clear: both;">&nbsp;</div>
                         <div class="entry"><div id="lavipage" page="page_4193"></div>
 点击对应文明的兵种来进入对应语音页面<br><br>
-
-<img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Chinese.png" width="65px">
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_spearman.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛兵.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_manatarms.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_horseman.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑手.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_knight.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_archer.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/步弓手.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_crossbowman.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩手.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_handcannoneer.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png" width="40px"></a>
-<a href="https://seicing.com/html/aoe2/voiceaoe4/chi_grenadier.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/掷弹兵.png" width="40px"></a>
-
-<br>
-
-<img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Japanese.png" width="65px">
-<a href="https://seicing.com/html/aoe2/voiceaoe4/jpn_manatarms.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png" width="40px"></a>
+<div class="civ-voice-row">
+    <div class="civ-flag">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Chinese.png">
+    </div>
+    <div class="civ-units">
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_spearman.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/长矛兵.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_manatarms.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_horseman.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑手.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_knight.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/骑士.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_archer.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/步弓手.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_crossbowman.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/弩手.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_handcannoneer.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火枪兵.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_firelancer.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/火长矛骑兵.png"></a>
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/chi_grenadier.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/掷弹兵.png"></a>
+    </div>
+</div>
+<div class="civ-voice-row">
+    <div class="civ-flag">
+        <img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/CivIcon-Japanese.png">
+    </div>
+    <div class="civ-units">
+        <a href="https://seicing.com/html/aoe2/voiceaoe4/jpn_manatarms.html"><img src="https://data.seicing.com/seicingdepot/3fatcatpool/aoe4/tech/武士.png"></a>
+    </div>
+</div>
 </div>
                     </div>
                 </div>
