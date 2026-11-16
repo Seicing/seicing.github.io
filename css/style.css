@@ -18,6 +18,7 @@
 
     /* --- 日间模式基础配色变量 --- */
     --bg-body-color: #EEEBDA;
+    --bg-body-color2: #faf9f3;
     --text-primary: #4D4D4D;
     --text-title: #25201c;
     --text-link: #D0C9B7;
@@ -159,6 +160,7 @@ body.theme-winter {
 
     /* --- 冬季日间模式基础配色变量 --- */
     --bg-body-color: #ECEEF6;
+    --bg-body-color2: #ECEEF6;
     /* 冰川浅蓝灰背景 */
     --text-primary: #384C5E;
     /* 深蓝灰色正文 */
@@ -268,6 +270,7 @@ body.theme-spring {
     }
 
     --bg-body-color: #F3EFEF;
+    --bg-body-color2: #F3EFEF;
     /* 铃兰幽谷淡紫灰背景 */
     --text-primary: #524B5C;
     /* 幽暗的紫灰色正文 */
@@ -368,6 +371,7 @@ body.theme-autumn {
 
     /* --- 秋季日间模式基础配色变量 --- */
     --bg-body-color: #F2E0D6;          /* 暖麦色/浅秋香米色背景 */
+    --bg-body-color2: #F2E0D6;          /* 暖麦色/浅秋香米色背景 */
     --text-primary: #594D3F;           /* 浓郁的秋褐灰正文 */
     --text-title: #382A1B;             /* 栗木深棕标题 */
     
@@ -462,6 +466,7 @@ body.layout-large.theme-autumn #wrapper2 {
    ===================================================================== */
 body.theme-dark {
     --bg-body-color: #373331;
+    --bg-body-color2: #373331;
     /* 调深主体背景色 */
     --text-primary: #e2ddca;
     --text-title: #ffffff;
