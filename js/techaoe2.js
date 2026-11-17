@@ -2472,6 +2472,7 @@ function Faith() {
     document.getElementById("Magyars2").classList.add("aoeTechIconOff");
     document.getElementById("Tatars2").classList.add("aoeTechIconOff");
     document.getElementById("Danes2").classList.add("aoeTechIconOff");
+    document.getElementById("Jurchens2").classList.add("aoeTechIconOff");
 }
 function Heresy() {
     document.getElementById("Bengalis2").classList.add("aoeTechIconOff");
@@ -3107,7 +3108,6 @@ function CropRotation() {
 
 function Guilds() {
     document.getElementById("Aztecs2").classList.add("aoeTechIconOff");
-    document.getElementById("Bulgarians2").classList.add("aoeTechIconOff");
     document.getElementById("Chinese2").classList.add("aoeTechIconOff");
     document.getElementById("Franks2").classList.add("aoeTechIconOff");
     document.getElementById("Gurjaras2").classList.add("aoeTechIconOff");
