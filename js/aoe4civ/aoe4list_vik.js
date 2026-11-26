@@ -317,7 +317,7 @@ export const aoe4list = [
     {
         "civ": "vik",
         "section": "帝王时代建筑",
-        "name": "木板教堂",
+        "name": "龙型木板教堂",
         "img": "木板教堂",
         "link": "https://seicing.com/html/aoe2/buildingsaoe4/世界奇观"
     },
