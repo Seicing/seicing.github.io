@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://seicing.com/res/favicon.ico" />
+    <script language="javascript" src="https://seicing.com/js/defaultall.js"></script>
+    <script language="javascript" src="https://seicing.com/js/sheetcore.js"></script>
+    <link href="https://seicing.com/css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+<title data-pagefind-meta="title">UI概念案-状态</title>
+<link href="https://seicing.com/css/table_dnfclass.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="https://seicing.com/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://seicing.com/js/essay.js" data-click-id="zibanyabutton"></script>
+</head>
+
+<body id='scroll-2'>
+    <script>
+        (function () {
+            const getCookie = (name) => {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            const theme = getCookie('theme') || 'light';
+            if (theme === 'dark') {
+                document.body.classList.add('theme-dark');
+            }
+        })();
+    </script>
+    <button id="sidebar-toggle-button">☰</button>
+    <button id="back-to-top-button">▲</button>
+    <div id="sidebar-overlay"></div>
+    <div id="wrapper" style="width:1280px ; margin:auto">
+        <div id="wrapper2">
+            <div id="header" class="container">
+                <div id="logo">
+                    <H1>
+                        <span style="color: #FFFFFF">肥猫的秘密基地</span>
+                    </H1>
+                </div>
+            </div>
+            <div id="page">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"><a href="#"><b><span style="font-family:宋体" data-pagefind-weight="30">UI概念案-状态</span>
+<span style="display: none;font-family:宋体" data-pagefind-weight="5">2026年11月28日</span>
+<hr class="hrsty"></b></a></h2>
+                        <div style="clear: both;">&nbsp;</div>
+                        <div class="entry"><div id="lavipage" page="380"></div>
+<img src="https://data.seicing.com/seicingdepot/essay/补充/主UI1.png" width="500px"><br>
+<ul>
+    <li>
+        1——角色的生命值(红色)和气力值(蓝色)
+        <ul>
+            <li>生命值分成实际生命值(红色)、重伤(灰暗红色)和已损失生命值(被扣减的部分)
+                <ul>
+                    <li>实际生命值扣空时角色死亡</li>
+                    <li>重伤会缓慢地减少，但可以通过特定的手段恢复为实际生命值</li>
+                    <li>已损失生命值即确实地被扣减的生命值</li>
+                </ul>
+            </li>
+            <li>气力值分成实际气力值(蓝色)、重度疲劳(灰暗蓝色)和已损失气力值(被扣减的部分)
+                <ul>
+                    <li>实际气力值是当前角色可以消耗的技能施放资源</li>
+                    <li>重度疲劳不会缓慢减少，仅能通过造访龙脉缓解，施放buff技能或其他特定途径会造成重度疲劳</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        2——角色目前的增益或减益状态图标
+        <ul>
+            <li>鼠标移动到上面显示增益或减益状态的信息</li>
+        </ul>
+    </li>
+    <li>
+        3——决战槽
+        <ul>
+            <li>施放决战技(角色大招)所需要的资源，最大100点</li>
+            <li>决战槽为全队通用的资源，队伍里所有角色施放决战技，都需要消耗同一条决战槽的能量</li>
+            <li>当主控角色任意一个决战技可以被使用时，决战槽左边的宝石(实际版本会改成红色)会出现，并显示显眼的外发光(画面内未表示)，否则消失</li>
+        </ul>
+    </li>
+    <li>
+        4——战斗风格
+        <ul>
+            <li>用来标记角色目前战斗风格的状态栏</li>
+            <li>余目前不需要这个UI会产生变化，固定为“游兵”</li>
+        </ul>
+    </li>
+    <li>
+        5——角色专用资源槽
+        <ul>
+            <li>不同的主控角色所使用的专属能量条</li>
+            <li>余的专属能量是“电量”，请参考实际技能说明</li>
+        </ul>
+    </li>
+    <li>
+        6——角色头像
+        <ul>
+            <li>角色头像会马上反馈出目前模型的表情，根据全局角色表情变量，更变角色头像目前的表情</li>
+            <li>例：挨打时，角色会从smile(常态微笑)短暂地更变为endure(受击)表情</li>
+        </ul>
+    </li>
+</ul>
+
+
+<img src="https://data.seicing.com/seicingdepot/essay/补充/主UI2.png" width="500px"><br>
+队友UI，放置于屏幕左右两侧<br>
+<ul>
+    <li>
+        1——队友决战技图标
+        <ul>
+            <li>队友决战技的图标，灰色的部分显示了目前对应队友决战技的冷却时间，技能图标完全变亮时表示冷却完毕</li>
+        </ul>
+    </li>
+    <li>
+        2——队友的头像
+        <ul>
+            <li>和主UI一样，队友的头像也会根据当前全局表情变量的状态改变表情</li>
+        </ul>
+    </li>
+    <li>
+        3——队友决战技快捷键
+        <ul>
+            <li>显示发动队友决战技的按键名称</li>
+        </ul>
+    </li>
+    <li>
+        4——变亮的队友决战技图标
+        <ul>
+            <li>当目前的决战槽能量值足以施放队友决战技、且队友决战技不处于冷却时间时显示</li>
+            <li>使用显眼的光效来提示玩家现在可以发动决战技了</li>
+        </ul>
+    </li>
+</ul>
+
+</div>
+                    </div>
+                </div>
+                <div id="sidebar" style="position:relative; left:-20px">
+                    
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div style="float:right; width:850px; text-align:right; border-top: 1px dashed #CACACA;"><br>
+                    
+<a href="https://seicing.com/html/index.html"><b>返回上一页</b></a>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<style>
+    li {
+        line-height: 1.8
+    }
+</style>
+
+</html>
